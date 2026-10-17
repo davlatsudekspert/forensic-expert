@@ -9207,4 +9207,8 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get deleteAccountSocialNote =>
       'This account was created with Google or Apple, so no password is needed. Confirm below to delete it.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app\'s access to your Apple ID will be revoked.';
 }

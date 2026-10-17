@@ -293,7 +293,10 @@ class HttpAuthRepository implements AuthRepository {
   }
 
   @override
-  Future<AuthOutcome> deleteAccount({required String password}) async {
+  Future<AuthOutcome> deleteAccount({
+    required String password,
+    String? appleAuthorizationCode,
+  }) async {
     if (!_state.signedIn) {
       return const AuthOutcome.fail(AuthFailure.notSignedIn);
     }

@@ -9170,4 +9170,8 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get deleteAccountSocialNote =>
       'Bu akkaunt Google yoki Apple orqali ochilgan, shuning uchun parol kerak emas. O‘chirish uchun pastda tasdiqlang.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'Bu akkaunt Apple orqali ochilgan, shuning uchun parol kerak emas. Tasdiqlaganingizdan so‘ng Apple o‘zingizni tasdiqlashni so‘raydi va ilovaning Apple ID’ingizga kirish huquqi bekor qilinadi.';
 }

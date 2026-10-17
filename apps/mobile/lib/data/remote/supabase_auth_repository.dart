@@ -391,7 +391,10 @@ class SupabaseAuthRepository implements AuthRepository {
   /// Akkauntni o‘chirish — `delete-account` Edge Function (server
   /// tomonda service-role bilan; `supabase/functions/delete-account`).
   @override
-  Future<AuthOutcome> deleteAccount({required String password}) async {
+  Future<AuthOutcome> deleteAccount({
+    required String password,
+    String? appleAuthorizationCode,
+  }) async {
     if (!_state.signedIn) {
       return const AuthOutcome.fail(AuthFailure.notSignedIn);
     }
@@ -400,7 +403,12 @@ class SupabaseAuthRepository implements AuthRepository {
         'POST',
         _cfg.url.resolve('functions/v1/delete-account'),
         headers: _headers(auth: true),
-        jsonBody: const {'confirm': true},
+        jsonBody: {
+          'confirm': true,
+          if (appleAuthorizationCode != null &&
+              appleAuthorizationCode.isNotEmpty)
+            'apple_authorization_code': appleAuthorizationCode,
+        },
       );
       final f = failureFor(r);
       if (f != null) return AuthOutcome.fail(f);

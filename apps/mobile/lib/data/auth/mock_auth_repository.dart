@@ -330,7 +330,10 @@ class MockAuthRepository implements AuthRepository {
   }
 
   @override
-  Future<AuthOutcome> deleteAccount({required String password}) async {
+  Future<AuthOutcome> deleteAccount({
+    required String password,
+    String? appleAuthorizationCode,
+  }) async {
     final a = _state.account;
     if (a == null) return const AuthOutcome.fail(AuthFailure.notSignedIn);
     final u = _users[a.email]!;

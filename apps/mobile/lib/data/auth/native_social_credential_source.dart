@@ -93,6 +93,9 @@ class NativeSocialCredentialSource implements SocialCredentialSource {
           idToken: token,
           rawNonce: raw,
           fullName: name.isEmpty ? null : name,
+          authorizationCode: cred.authorizationCode.isEmpty
+              ? null
+              : cred.authorizationCode,
         ),
       );
     } on SignInWithAppleAuthorizationException catch (e) {

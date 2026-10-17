@@ -30,6 +30,7 @@ class SocialCredential {
     required this.idToken,
     this.rawNonce,
     this.fullName,
+    this.authorizationCode,
   });
 
   final SocialProvider provider;
@@ -41,6 +42,11 @@ class SocialCredential {
 
   /// Apple ismni **faqat birinchi kirishda** beradi — shu paytda saqlanadi.
   final String? fullName;
+
+  /// Apple `authorizationCode` — bir martalik, qisqa muddatli. Saqlanmaydi:
+  /// faqat akkauntni o‘chirishdagi qayta tasdiqlashda serverga yuboriladi
+  /// (Apple tokenini bekor qilish uchun). Google uchun `null`.
+  final String? authorizationCode;
 }
 
 @immutable

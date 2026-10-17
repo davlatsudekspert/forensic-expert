@@ -83,7 +83,10 @@ class OfflineAuthRepository implements AuthRepository {
   Future<void> signOut() async {}
 
   @override
-  Future<AuthOutcome> deleteAccount({required String password}) async => _nc;
+  Future<AuthOutcome> deleteAccount({
+    required String password,
+    String? appleAuthorizationCode,
+  }) async => _nc;
 
   @override
   Future<String?> accessToken() async => null;

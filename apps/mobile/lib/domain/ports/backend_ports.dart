@@ -119,7 +119,13 @@ abstract interface class AuthRepository {
   /// Akkauntni o‘chirish (Apple 5.1.1(v), Google Play account deletion).
   /// Parol qayta so‘raladi. Lokal qurilma ma’lumotlarini o‘chirish — alohida
   /// amal (`UserDataController.deleteAllLocalData`).
-  Future<AuthOutcome> deleteAccount({required String password});
+  ///
+  /// [appleAuthorizationCode]: Apple akkaunti uchun qayta tasdiqlashda olingan
+  /// bir martalik kod — server Apple tokenini bekor qiladi (best-effort).
+  Future<AuthOutcome> deleteAccount({
+    required String password,
+    String? appleAuthorizationCode,
+  });
 
   /// Server so‘rovlari uchun qisqa muddatli token (bo‘lmasa `null`).
   Future<String?> accessToken();

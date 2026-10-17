@@ -18,7 +18,7 @@ ortida birga yoqiladi. Email OTP/parol kirishi o‘zgarmagan.
 | Native token | `lib/data/auth/native_social_credential_source.dart` (`google_sign_in ^7.2.0`, `sign_in_with_apple ^8.2.0`) |
 | Supabase | `SupabaseAuthRepository.signInWithIdToken` — `POST {url}/auth/v1/token?grant_type=id_token` `{provider, id_token, nonce}`; so‘ng `PUT /auth/v1/user` bilan `user_metadata` ga `full_name` (Apple faqat birinchi kirishda beradi) va `accepted_terms_version` |
 | UI | `social_sign_in_buttons.dart` — Kirish, Ro‘yxatdan o‘tish va Email-kod ekranlarida «yoki» ajratgichi + tugmalar |
-| Akkaunt o‘chirish | Google/Apple akkauntida parol so‘ralmaydi (`AuthAccount.isSocial`); server funksiyasi (`delete-account`) o‘zgarmagan, auth foydalanuvchini (identity’lar bilan) o‘chiradi |
+| Akkaunt o‘chirish | Google/Apple akkauntida parol so‘ralmaydi (`AuthAccount.isSocial`); `delete-account` auth foydalanuvchini (identity’lar bilan) o‘chiradi; Apple akkauntida avval Apple bilan qayta tasdiqlash va token revoke (3-bo‘lim) |
 | Matnlar | `tool/l10n_social_auth.py` (idempotent, en/ru/uz) → `flutter gen-l10n` |
 | iOS | `ios/Runner/Runner.entitlements` (`com.apple.developer.applesignin = Default`), `Info.plist` Google URL scheme `$(GOOGLE_REVERSED_CLIENT_ID)`, `ios/Flutter/Social.xcconfig` (placeholder + gitignored `SocialLocal.xcconfig`), `project.pbxproj` da `CODE_SIGN_ENTITLEMENTS` |
 
@@ -94,7 +94,7 @@ Supabase Dashboard’da va parol menejerida.
 3. **URL Configuration**: web oqimi ishlatilmaydi, lekin Redirect URL ro‘yxatida
    `https://<project-ref>.supabase.co/auth/v1/callback` Apple/Google konsollariga kerak bo‘lsa shu manzil.
 4. **Sign In / Providers → Allow manual linking**: o‘chiq qoldiring. *Automatic linking* haqida 4-bo‘limga qarang.
-5. Edge function deploy **qilinmagan** (men deploy qilmadim). Hozirgi `delete-account` o‘zgarishsiz ishlaydi.
+5. Edge function deploy **qilinmagan**. `delete-account` yangi versiyasi (Apple revoke) deploy kutmoqda — 3-bo‘lim.
 
 ### (d) App Store Connect — Review Notes’ga yozish (ingliz tilida)
 
@@ -120,18 +120,52 @@ bilan kengaydi — siyosat matnini shunga moslang.
 3. **Real Android qurilma**: faqat Google tugmasi ko‘rinishi, kirish, SHA-1 to‘g‘ri bo‘lmasa xato.
 4. Bayroq o‘chiq yig‘mada tugmalar yo‘qligini tekshiring (standart).
 
-## 3. Hisobni o‘chirish va Apple tokenini bekor qilish
+## 3. Hisobni o‘chirish va Apple tokenini bekor qilish (kod tayyor, deploy va sinov kutilmoqda)
 
-* Ilovada o‘chirish (5.1.1(v)) social akkaunt uchun parolsiz ishlaydi (test: `social_sign_in_test.dart`).
-* **BAJARILMAGAN (ochiq xavf):** Apple talabiga ko‘ra Apple bilan ochilgan akkaunt o‘chirilganda
-  Apple tokeni bekor qilinishi (`POST https://appleid.apple.com/auth/revoke`) kerak. Buning uchun
-  server (a) kirishda Apple `authorizationCode` ni `https://appleid.apple.com/auth/token` da refresh tokenga
-  almashtirishi va xavfsiz saqlashi, (b) o‘chirishda `client_secret` (Team ID, Key ID, `.p8` dan JWT) bilan
-  revoke qilishi kerak. Supabase native `id_token` oqimida Apple refresh tokenini saqlamaydi, shuning uchun
-  ilova `authorizationCode` ni serverga yuborishi va `delete-account` Edge Function kengaytirilishi kerak.
-  Bu men deploy qilmaydigan server ishi; App Review’gacha bajarilishi tavsiya etiladi (aks holda 5.1.1(v) bo‘yicha rad etilishi mumkin).
-  `.p8` Edge Function secret’ida (`APPLE_TEAM_ID`, `APPLE_KEY_ID`, `APPLE_PRIVATE_KEY`) saqlanadi — egasi qo‘shadi.
-* Google uchun alohida revoke majburiy emas (ixtiyoriy: `https://oauth2.googleapis.com/revoke`).
+**Oqim.** Apple `authorizationCode` bir martalik va qisqa muddatli, shuning uchun u kirishda **saqlanmaydi**.
+Apple bilan ochilgan akkauntni o‘chirishda ilova foydalanuvchini Apple bilan **qayta tasdiqlatadi**
+(`SocialCredentialSource.obtain(apple)` → yangi `authorizationCode`) va uni `delete-account` ga yuboradi:
+
+```
+POST /functions/v1/delete-account          (Authorization: foydalanuvchi JWT)
+{ "confirm": true, "apple_authorization_code": "<faqat provider==apple bo‘lsa>" }
+→ 200 { "ok": true, "apple_revoked": true|false, "apple_revoke_reason": "ok|not_configured|no_apple_identity|token_http_400|revoke_http_503|subject_mismatch|no_token|error_<Name>" }
+```
+
+* Server: kod → `POST https://appleid.apple.com/auth/token` (client_secret = ES256 JWT, `.p8` dan) →
+  `refresh_token` → `POST https://appleid.apple.com/auth/revoke`. So‘ng (har qanday natijada) auth foydalanuvchi o‘chiriladi.
+* **Best-effort:** secret’lar yo‘q / Apple xato bersa / tarmoq uzilsa o‘chirish **bloklanmaydi**; `apple_revoked:false`.
+  Jurnalga faqat qisqa sabab kodi yoziladi (kod, token, kalit hech qachon).
+* Xavfsizlik: kod boshqa Apple akkauntiga tegishli bo‘lsa (`id_token.sub` ≠ foydalanuvchining Apple identity’si) revoke qilinmaydi.
+* Ilovada: foydalanuvchi Apple oynasini **bekor qilsa o‘chirish to‘xtatiladi**; Apple oynasi texnik sabab bilan ishlamasa
+  o‘chirish kodsiz davom etadi (akkauntni o‘chirish huquqi bloklanmaydi).
+* Fayllar: `supabase/functions/delete-account/{index.ts, apple_revoke.ts, apple_revoke_test.ts}`,
+  `auth_screens.dart` (`_delete`), `SocialCredential.authorizationCode`, `AuthRepository.deleteAccount(appleAuthorizationCode:)`,
+  matn `tool/l10n_apple_revoke.py` (`deleteAccountAppleNote`).
+* Google uchun revoke majburiy emas (ixtiyoriy: `https://oauth2.googleapis.com/revoke`) — qilinmagan.
+
+### EGASI QILADIGAN ISHLAR (revoke uchun)
+
+1. Apple Developer → Certificates, Identifiers & Profiles → **Keys** → «+» → **Sign in with Apple** yoqing →
+   Configure → Primary App ID = `uz.forensicexpert.app` → Register → `.p8` ni **bir marta** yuklab oling.
+   **Key ID** (10 belgi) va **Team ID** (Membership sahifasi) ni yozib oling. `.p8` ni repoga/chatga qo‘ymang.
+2. Supabase Dashboard → Edge Functions → **Secrets** ga qo‘shing (qiymatlar repoga yozilmaydi):
+   * `APPLE_TEAM_ID` — Team ID
+   * `APPLE_KEY_ID` — 1-qadamdagi Key ID
+   * `APPLE_CLIENT_ID` — bundle ID: `uz.forensicexpert.app` (native oqim uchun; Supabase Apple provayderidagi Client ID bilan bir xil)
+   * `APPLE_PRIVATE_KEY` — `.p8` faylining to‘liq matni (`-----BEGIN PRIVATE KEY-----` … `-----END PRIVATE KEY-----`;
+     qatorlar `\n` bilan bir qatorda yozilsa ham o‘qiladi)
+3. `delete-account` funksiyasini deploy qiling (yangi kod: `apple_revoke.ts` bilan birga).
+4. Sinash (TestFlight, **real Apple akkaunt**, test akkaunt production foydalanuvchilarga aralashmasin):
+   Apple bilan ro‘yxatdan o‘ting → Profil → Akkauntni o‘chirish → tasdiqlang → Apple oynasida Face ID/parol →
+   javobda `apple_revoked:true` (Supabase Functions logs) → iPhone: Settings → Apple ID → Sign-In & Security →
+   **Sign in with Apple** (yoki appleid.apple.com → Sign-In and Security) da ilova **yo‘qolganini** tekshiring →
+   keyin yana Apple bilan kirsangiz ilova ismni/emailni qaytadan so‘rashi (yangi birinchi kirish) kerak.
+   Qo‘shimcha: secret’larsiz holatda o‘chirish baribir ishlashini (`apple_revoked:false`, `not_configured`) tekshiring.
+
+**SINALMADI:** real Apple bilan qayta tasdiqlash oynasi, real `appleid.apple.com/auth/token|revoke` chaqiruvi, `.p8` bilan imzo
+(birlik testda vaqtinchalik P-256 kalit ishlatilgan; Apple tomonidan qabul qilinishi tekshirilmagan), deploy qilingan funksiya,
+TestFlight. Avtomatik sinalgan: Deno birlik testlar (mock fetch) va Flutter widget testlar.
 
 ## 4. Xavfsizlik: email bo‘yicha hisoblarni birlashtirish
 

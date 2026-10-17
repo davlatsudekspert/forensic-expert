@@ -9260,4 +9260,8 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get deleteAccountSocialNote =>
       'Этот аккаунт создан через Google или Apple, пароль не нужен. Подтвердите ниже, чтобы удалить его.';
+
+  @override
+  String get deleteAccountAppleNote =>
+      'Этот аккаунт создан через Apple, пароль не нужен. После подтверждения Apple попросит подтвердить, что это вы, и доступ приложения к вашему Apple ID будет отозван.';
 }

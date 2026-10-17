@@ -16,6 +16,7 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/auth/auth_models.dart';
+import '../../../domain/auth/social_sign_in.dart';
 import 'social_sign_in_buttons.dart';
 
 /// Joriy Shartlar / Maxfiylik versiyasi (ro‘yxatdan o‘tishda serverga
@@ -914,9 +915,33 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
       _busy = true;
       _error = null;
     });
+    // Apple akkaunti: Apple tokenini bekor qilish (5.1.1(v)) uchun yangi,
+    // bir martalik authorizationCode kerak — foydalanuvchi Apple bilan qayta
+    // tasdiqlaydi. Bekor qilsa o‘chirilmaydi; Apple oynasi umuman ishlamasa
+    // (xato) o‘chirish kodsiz davom etadi — o‘chirish bloklanmaydi.
+    String? appleCode;
+    if (ref.read(authStateProvider).account?.provider == 'apple') {
+      try {
+        final res = await ref
+            .read(socialCredentialSourceProvider)
+            .obtain(SocialProvider.apple);
+        if (!mounted) return;
+        if (res.failure == AuthFailure.cancelled) {
+          setState(() => _busy = false);
+          return;
+        }
+        appleCode = res.credential?.authorizationCode;
+      } on Object {
+        appleCode = null;
+      }
+      if (!mounted) return;
+    }
     final r = await ref
         .read(authRepositoryProvider)
-        .deleteAccount(password: _password.text);
+        .deleteAccount(
+          password: _password.text,
+          appleAuthorizationCode: appleCode,
+        );
     if (!mounted) return;
     setState(() => _busy = false);
     if (r.ok) {
@@ -970,7 +995,9 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
             )
           else
             Text(
-              l.deleteAccountSocialNote,
+              state.account?.provider == 'apple'
+                  ? l.deleteAccountAppleNote
+                  : l.deleteAccountSocialNote,
               key: const Key('auth.delete.socialNote'),
               style: t.bodyMedium?.copyWith(color: c.textSecondary),
             ),

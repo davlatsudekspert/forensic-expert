@@ -165,30 +165,135 @@ void main() {
     });
   });
 
-  testWidgets('Google/Apple akkauntini o‘chirish: parol so‘ralmaydi', (
-    tester,
-  ) async {
-    final calls = <Uri>[];
+  /// Social akkaunt bilan kirgan repo + o‘chirish ekrani; `bodies` — server
+  /// `delete-account` ga yuborilgan JSON.
+  Future<List<Object?>> deleteFlow(
+    WidgetTester tester, {
+    required String provider,
+    required SocialCredentialSource source,
+    List<Uri>? calls,
+  }) async {
+    final bodies = <Object?>[];
     final repo = SupabaseAuthRepository(
       config: SupabaseConfig(
         url: Uri.parse('https://fe-test.supabase.co/'),
         anonKey: 'anon-public-test-key',
       ),
       sessionStore: InMemorySessionStore(),
-      transport: _FakeTransport((m, u) {
-        calls.add(u);
+      transport: _FakeTransport((m, u, body) {
+        calls?.add(u);
+        if (u.path.endsWith('delete-account')) bodies.add(body);
         return u.path.endsWith('/token')
-            ? const RestResponse(200, {
+            ? RestResponse(200, {
                 'access_token': 'a',
                 'refresh_token': 'r',
                 'user': {
                   'id': 'u1',
                   'email': 'x@privaterelay.appleid.com',
-                  'app_metadata': {'provider': 'apple'},
+                  'app_metadata': {'provider': provider},
                 },
               })
             : const RestResponse(200, {'ok': true});
       }),
+    );
+    await repo.signInWithIdToken(
+      provider: provider == 'apple'
+          ? SocialProvider.apple
+          : SocialProvider.google,
+      idToken: 't',
+      nonce: 'n',
+    );
+    final c = await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      initialLocation: Routes.profile,
+      overrides: [
+        authRepositoryProvider.overrideWithValue(repo),
+        socialCredentialSourceProvider.overrideWithValue(source),
+      ],
+    );
+    c.read(routerProvider).go(Routes.accountDelete);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('auth.password')), findsNothing);
+    await show(tester, find.byKey(const Key('auth.delete.understand')));
+    await tester.tap(find.byKey(const Key('auth.delete.understand')));
+    await tester.pumpAndSettle();
+    await show(tester, find.byKey(const Key('auth.delete.submit')));
+    await tester.tap(find.byKey(const Key('auth.delete.submit')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('auth.delete.final')));
+    await tester.pumpAndSettle();
+    return bodies;
+  }
+
+  testWidgets(
+    'Google akkauntini o‘chirish: parol ham, Apple qayta tasdig‘i ham yo‘q',
+    (tester) async {
+      final src = _CodeSource.ok('should-not-be-used');
+      final calls = <Uri>[];
+      final bodies = await deleteFlow(
+        tester,
+        provider: 'google',
+        source: src,
+        calls: calls,
+      );
+      expect(find.byKey(const Key('auth.delete.socialNote')), findsNothing);
+      expect(src.asked, isEmpty);
+      expect(calls.any((u) => u.path.endsWith('delete-account')), isTrue);
+      expect(bodies.single, {'confirm': true});
+    },
+  );
+
+  testWidgets(
+    'Apple akkaunti: qayta tasdiqlanadi va authorizationCode yuboriladi',
+    (tester) async {
+      final src = _CodeSource.ok('fresh-apple-code');
+      final bodies = await deleteFlow(tester, provider: 'apple', source: src);
+      expect(src.asked, [SocialProvider.apple]);
+      expect(bodies.single, {
+        'confirm': true,
+        'apple_authorization_code': 'fresh-apple-code',
+      });
+    },
+  );
+
+  testWidgets('Apple qayta tasdiqlashni bekor qilsa: akkaunt o‘chirilmaydi', (
+    tester,
+  ) async {
+    final src = _CodeSource.fail(AuthFailure.cancelled);
+    final bodies = await deleteFlow(tester, provider: 'apple', source: src);
+    expect(src.asked, [SocialProvider.apple]);
+    expect(bodies, isEmpty);
+    expect(find.byKey(const Key('screen.deleteAccount')), findsOneWidget);
+  });
+
+  testWidgets('Apple oynasi ishlamasa: o‘chirish kodsiz davom etadi', (
+    tester,
+  ) async {
+    final src = _CodeSource.fail(AuthFailure.socialUnavailable);
+    final bodies = await deleteFlow(tester, provider: 'apple', source: src);
+    expect(bodies.single, {'confirm': true});
+  });
+
+  testWidgets('Apple akkaunt uchun maxsus izoh ko‘rsatiladi', (tester) async {
+    final src = _CodeSource.ok('c');
+    final repo = SupabaseAuthRepository(
+      config: SupabaseConfig(
+        url: Uri.parse('https://fe-test.supabase.co/'),
+        anonKey: 'anon-public-test-key',
+      ),
+      sessionStore: InMemorySessionStore(),
+      transport: _FakeTransport(
+        (m, u, b) => const RestResponse(200, {
+          'access_token': 'a',
+          'refresh_token': 'r',
+          'user': {
+            'id': 'u1',
+            'email': 'x@y.z',
+            'app_metadata': {'provider': 'apple'},
+          },
+        }),
+      ),
     );
     await repo.signInWithIdToken(
       provider: SocialProvider.apple,
@@ -199,28 +304,46 @@ void main() {
       tester,
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.profile,
-      overrides: [authRepositoryProvider.overrideWithValue(repo)],
+      overrides: [
+        authRepositoryProvider.overrideWithValue(repo),
+        socialCredentialSourceProvider.overrideWithValue(src),
+      ],
     );
     c.read(routerProvider).go(Routes.accountDelete);
     await tester.pumpAndSettle();
-    expect(find.byKey(const Key('auth.password')), findsNothing);
     expect(find.byKey(const Key('auth.delete.socialNote')), findsOneWidget);
-    await show(tester, find.byKey(const Key('auth.delete.understand')));
-    await tester.tap(find.byKey(const Key('auth.delete.understand')));
-    await tester.pumpAndSettle();
-    await show(tester, find.byKey(const Key('auth.delete.submit')));
-    await tester.tap(find.byKey(const Key('auth.delete.submit')));
-    await tester.pumpAndSettle();
-    await tester.tap(find.byKey(const Key('auth.delete.final')));
-    await tester.pumpAndSettle();
-    expect(calls.any((u) => u.path.endsWith('delete-account')), isTrue);
+    expect(
+      find.textContaining('Apple o‘zingizni tasdiqlashni'),
+      findsOneWidget,
+    );
   });
+}
+
+class _CodeSource implements SocialCredentialSource {
+  _CodeSource.ok(String code)
+    : _result = SocialCredentialResult.ok(
+        SocialCredential(
+          provider: SocialProvider.apple,
+          idToken: 'id',
+          authorizationCode: code,
+        ),
+      );
+  _CodeSource.fail(AuthFailure f) : _result = SocialCredentialResult.fail(f);
+
+  final SocialCredentialResult _result;
+  final asked = <SocialProvider>[];
+
+  @override
+  Future<SocialCredentialResult> obtain(SocialProvider provider) async {
+    asked.add(provider);
+    return _result;
+  }
 }
 
 class _FakeTransport implements RestTransport {
   _FakeTransport(this.handler);
 
-  final RestResponse Function(String method, Uri uri) handler;
+  final RestResponse Function(String method, Uri uri, Object? body) handler;
 
   @override
   Future<RestResponse> send(
@@ -230,5 +353,5 @@ class _FakeTransport implements RestTransport {
     Object? jsonBody,
     List<int>? bytes,
     String? contentType,
-  }) async => handler(method, uri);
+  }) async => handler(method, uri, jsonBody);
 }

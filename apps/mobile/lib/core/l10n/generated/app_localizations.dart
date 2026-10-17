@@ -16022,6 +16022,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This account was created with Google or Apple, so no password is needed. Confirm below to delete it.'**
   String get deleteAccountSocialNote;
+
+  /// Delete-account screen note for Apple accounts: Apple re-confirmation step.
+  ///
+  /// In en, this message translates to:
+  /// **'This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app\'s access to your Apple ID will be revoked.'**
+  String get deleteAccountAppleNote;
 }
 
 class _AppLocalizationsDelegate
