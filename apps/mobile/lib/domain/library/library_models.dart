@@ -257,6 +257,14 @@ class ClaimView {
   String? locatorFor(String languageCode) =>
       _localized(_i18n('locator_i18n'), languageCode);
 
+  /// `value.statement` faqat asl tilda (masalan, o‘zbekcha) va [languageCode]
+  /// uchun tarjima hali qo‘shilmagan — matn asl tilda ko‘rsatiladi va
+  /// «tarjima kutilmoqda» belgisi chiqadi (tarjima to‘qilmaydi).
+  bool statementTranslationPending(String languageCode) =>
+      localeOnly == null &&
+      hasStatement &&
+      !_i18n('statement').containsKey(languageCode);
+
   /// Tarjima holati (`authored` / `machine_draft` …) shu til uchun.
   String? translationStatusFor(String languageCode) =>
       _i18n('translation_status')[languageCode];

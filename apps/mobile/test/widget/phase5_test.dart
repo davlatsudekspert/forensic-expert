@@ -74,8 +74,11 @@ void main() {
             expect(c.value['specimen'], isNotEmpty, reason: c.claimId);
             expect(c.value['context'], isNotNull, reason: c.claimId);
             expect(c.sources, isNotEmpty, reason: c.claimId);
-          } else if (c.field != 'identity') {
+          } else if (c.field != 'identity' &&
+              c.value['analytical_performance'] != true) {
             // Konsentratsiya qiymati faqat banner ostidagi bo‘limda.
+            // (`analytical_performance: true` — raqam usul / test ko‘rsatkichi:
+            // LOD/LOQ, kross-reaktivlik; namunadagi konsentratsiya emas.)
             expect(
               concentrationUnit.hasMatch(text),
               isFalse,

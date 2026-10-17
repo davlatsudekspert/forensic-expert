@@ -19,6 +19,10 @@ Bu katalogdagi har bir qiymat **real so‘rov yoki tekshiruv** natijasida olinga
 - `tools/claim_source_audit.py` — da’vo ↔ manba yaxlitligi tekshiruvi (joylashuv, to‘liq matn/annotatsiya,
   scope, umumiy qoida); `--check` CI’da. Qo‘lda ko‘riklar: `tools/claim_source_reviews.json`; natija:
   `docs/qa/CLAIM_SOURCE_AUDIT.md`. Kontent matni o‘zgargach qayta ishga tushiring (`python3 content/tools/claim_source_audit.py`).
+- `tools/build_analysis_fill.py` — «Tahlil» tabining 3 bo‘limi (Test / Sifat / Miqdoriy) uchun yozuvlar (`C-AS-*`):
+  ustoz kitobi (TOKS-2025, faqat o‘zbekcha, bet bilan; `analysis_fill_data.py`) va ochiq PMC maqolalaridan aynan jumla
+  (`analysis_fill_lit.json`; `--verify` jumla va litsenziyani PMC BioC / Europe PMC da tekshiradi). Idempotent.
+  `tools/analysis_structure_audit.py` — modda → 3 bo‘lim qamrovi (`docs/ANALYSIS_STRUCTURE_AUDIT_2026-10-17.md`).
 - `pilot/candidates/` — qidiruv nomzodlari. Ular ishonchli emas: faqat tekshiruvdan o‘tgani ishlatiladi.
 
 Qayta yig‘ish (repo ildizidan):

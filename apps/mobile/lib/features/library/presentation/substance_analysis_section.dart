@@ -1,3 +1,4 @@
+import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -52,100 +53,104 @@ class SubstanceAnalysisSection extends ConsumerWidget {
       child: Text(text, style: t.bodySmall?.copyWith(color: c.textSecondary)),
     );
 
-    // Kitob qo‘llanmalari (Yuldashev GMT/TOKS va b.) bo‘yicha moddaga xos
-    // tahlil yozuvlari — tartib: ekspress → rangli → mikrokristall →
-    // TLC → spektr → tasdiqlovchi → suyuqlanish. Har biri to‘liq matn va
-    // aniq joyi bilan.
-    const bookOrder = [
-      'immunoassay_screen',
-      'colour_test',
-      'odour_test',
-      'microcrystal_test',
-      'tlc_system',
-      'uv_spectrum',
-      'photometric_assay',
-      'confirmatory_method',
-      'melting_point',
-      'method_caveat',
-    ];
+    // «Tahlil» — egasi belgilagan 3 bo‘lim (2026-10-17): 1) test (ekspress /
+    // skrining), 2) sifat reaksiyalari (rangli reaktivlar), 3) miqdoriy
+    // aniqlash (GC-MS, LC-MS/MS, spektrofotometriya). Har bir bo‘lim faqat
+    // paketdagi manbali yozuvlardan yig‘iladi; yozuv bo‘lmasa — halol bo‘sh
+    // holat («manba kerak»), hech narsa to‘qilmaydi. Tasdiqlangan manba
+    // (ustoz kitoblari) yozuvlari har bo‘limda birinchi, keyin adabiyot
+    // (xalqaro maqola, UNODC, SWGDRUG) — har biri o‘z holati va dalil
+    // darajasi bilan (ClaimCard).
     final own = visibleClaims(
       library.byId(entityId)?.details?.claims ?? const <ClaimView>[],
       lang,
     );
-    final bookClaims = [
-      for (final f in bookOrder)
-        for (final cl in own)
-          if (cl.field == f && cl.fromConfirmedSource && cl.hasStatement) cl,
-    ];
-    // 2-qatlam: tasdiqlanmagan (xalqaro maqola, tezis, SWGDRUG/UNODC) dalillar
-    // — GC-MS / LC-MS/MS usullari, sud-tibbiy holatlar, metabolizm.
-    const litOrder = [
-      'immunoassay_screen',
-      'colour_test',
-      'odour_test',
-      'chemical_test',
-      'microcrystal_test',
-      'tlc_system',
-      'uv_spectrum',
-      'photometric_assay',
-      'confirmatory_method',
-      'melting_point',
+    // Graf qatori allaqachon asos qilib ko‘rsatgan `analytical_method` yozuvi
+    // ikkinchi marta karta bo‘lib chiqmaydi.
+    final graphBasis = <String>{
+      for (final m in a.analyticalMethods) ...m.basisIds,
+      for (final m in a.confirmationMethods) ...m.basisIds,
+      for (final s in a.screenings) ...s.basisIds,
+    };
+    final sectionClaims = [
+      for (final s in [1, 2, 3])
+        analysisSectionClaims(
+          own,
+          s,
+          skipIds: s == 3 ? graphBasis : const <String>{},
+        ),
     ];
 
-    final litClaims = [
-      for (final f in litOrder)
-        for (final cl in own)
-          if (cl.field == f && !cl.fromConfirmedSource) cl,
+    // Graf qatorlari ham egasi tartibida bo‘linadi: rangli / mikrokristall
+    // sinamalar va TLC — «Sifat reaksiyalari»; qolgan skrining testlari —
+    // «Test»; instrumental / spektrofotometrik metodlar — «Miqdoriy aniqlash».
+    final screeningsTest = [
+      for (final s in a.screenings)
+        if (!analysisQualitativeScreeningIds.contains(s.screeningId)) s,
     ];
-    final hasExtra = litClaims.isNotEmpty || !a.isEmpty;
-    Widget litBlock() => Column(
-      key: Key('analysis.lit.$entityId'),
+    final screeningsQual = [
+      for (final s in a.screenings)
+        if (analysisQualitativeScreeningIds.contains(s.screeningId)) s,
+    ];
+    final methodsQual = [
+      for (final m in a.analyticalMethods)
+        if (analysisQualitativeMethodIds.contains(m.methodId)) m,
+    ];
+    final methodsQuant = [
+      for (final m in a.analyticalMethods)
+        if (!analysisQualitativeMethodIds.contains(m.methodId)) m,
+    ];
+
+    Widget claimList(List<ClaimView> claims) => Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        subheader(l.litClaimsTitle),
-        for (final cl in litClaims)
+        for (final cl in claims)
           Padding(
             padding: const EdgeInsets.only(bottom: FeSpace.xs),
-            child: ClaimCard(claim: cl),
+            // Namuna tayyorlash kabi «usul rejimi» yozuvlari yorlig‘i bilan
+            // (ular bu sahifada faqat shu yerda, «Usul rejimi»da takrorlanmaydi).
+            child: methodRecordFields.contains(cl.field)
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: FeSpace.xxs),
+                        child: Text(
+                          methodRecordLabel(l, cl.field),
+                          key: Key('methodRecord.label.${cl.claimId}'),
+                          style: t.labelLarge,
+                        ),
+                      ),
+                      ClaimCard(claim: cl),
+                    ],
+                  )
+                : ClaimCard(claim: cl),
           ),
       ],
     );
-    Widget bookBlock() => Column(
-      key: Key('analysis.book.$entityId'),
+    Widget section(
+      int n,
+      String title,
+      String intro, {
+      required bool empty,
+      required List<Widget> children,
+    }) => Column(
+      key: Key('analysis.s$n.$entityId'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        subheader(l.bookMethodsTitle),
-        note(l.bookMethodsNote),
-        for (final cl in bookClaims)
-          Padding(
-            padding: const EdgeInsets.only(bottom: FeSpace.xs),
-            child: ClaimCard(claim: cl),
-          ),
+        subheader(title),
+        note(intro),
+        if (empty)
+          FeEmptyState(
+            key: Key('analysis.s$n.empty.$entityId'),
+            icon: Icons.menu_book_outlined,
+            body: l.analysisSectionEmpty,
+            compact: true,
+          )
+        else
+          ...children,
       ],
     );
-
-    if (a.isEmpty && (bookClaims.isNotEmpty || litClaims.isNotEmpty)) {
-      return Column(
-        key: Key('analysis.$entityId'),
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          if (bookClaims.isNotEmpty) bookBlock(),
-          if (litClaims.isNotEmpty) ...[
-            subheader(l.extraInfoTitle),
-            FeBanner(icon: Icons.menu_book_outlined, text: l.extraInfoNote),
-            litBlock(),
-          ],
-        ],
-      );
-    }
-    if (a.isEmpty) {
-      return FeEmptyState(
-        key: Key('analysis.empty.$entityId'),
-        icon: Icons.biotech_outlined,
-        body: l.analysisEmpty,
-        compact: true,
-      );
-    }
 
     return Column(
       key: Key('analysis.$entityId'),
@@ -157,164 +162,273 @@ class SubstanceAnalysisSection extends ConsumerWidget {
           tone: FeBannerTone.review,
         ),
         // Pro: shu moddaning to‘liq tahlil rejasi (bepulda qisqa ko‘rinish).
-        AnalysisPlanEntry(entityId: entityId),
-        // 1-qatlam: kitob qo‘llanmalari. 2-qatlam: ilmiy adabiyot
-        // (qo‘shimcha) — aralashtirilmaydi, har biri o‘z sarlavhasi ostida.
-        if (bookClaims.isNotEmpty) bookBlock(),
-        if (hasExtra) ...[
-          subheader(l.extraInfoTitle),
-          FeBanner(
-            key: Key('analysis.extra.$entityId'),
-            icon: Icons.menu_book_outlined,
-            text: l.extraInfoNote,
-          ),
-        ],
-        // Namunalar (biologik ob’ektlar) — adabiyotdan.
-        subheader(l.analysisSpecimensTitle),
-        if (a.specimens.isEmpty)
-          FeEmptyState(
-            key: Key('analysis.noSpecimens.$entityId'),
-            icon: Icons.water_drop_outlined,
-            body: l.analysisNoSpecimens,
-            compact: true,
-          )
-        else ...[
-          note(l.analysisSpecimensNote),
-          for (final s in a.specimens)
-            AnalysisRow(
-              // Eski kalit saqlanadi (testlar va chuqur havolalar).
-              key: Key('measured.$entityId.${s.specimenId}'),
-              icon: Icons.water_drop_outlined,
-              title: sName(s.specimenId),
-              details: [
-                if (s.methodIds.isNotEmpty)
-                  l.analysisSpecimenMethods(names(s.methodIds, kName)),
-                if (s.basisIds.length > 1)
-                  l.analysisSourcedRecords(s.basisIds.length),
-              ],
-              claim: s.basisClaims.firstOrNull,
-              onTap: () => context.push(Routes.specimen(s.specimenId)),
-            ),
-        ],
-        // 2. Skrining (taxminiy) — tasdiqlash shart.
-        if (a.screenings.isNotEmpty) ...[
-          subheader(l.analysisScreeningTitle),
-          FeBanner(
-            icon: Icons.warning_amber_rounded,
-            text: l.analysisScreeningNote,
-            tone: FeBannerTone.critical,
-          ),
-          const SizedBox(height: FeSpace.xs),
-          for (final s in a.screenings)
-            AnalysisRow(
-              key: Key('screened.$entityId.${s.screeningId}'),
-              icon: Icons.filter_alt_outlined,
-              title: kName(s.screeningId),
-              details: [
-                if (s.confirmationMethodIds.isNotEmpty)
-                  l.analysisConfirmedBy(names(s.confirmationMethodIds, kName)),
-              ],
-              claim: s.basisClaims.firstOrNull,
-              onTap: () => context.push(Routes.knowledgeEntry(s.screeningId)),
-            ),
-        ],
-        // 3. Tasdiqlovchi metodlar (skrining → tasdiqlash).
-        if (a.confirmationMethods.isNotEmpty) ...[
-          subheader(l.analysisConfirmationTitle),
-          for (final m in a.confirmationMethods)
-            AnalysisRow(
-              key: Key('analysis.confirm.$entityId.${m.methodId}'),
-              icon: Icons.science_outlined,
-              title: kName(m.methodId),
-              details: [
-                l.analysisAfterScreening(names(m.afterScreeningIds, kName)),
-              ],
-              claim: m.basisClaims.firstOrNull,
-              onTap: () => context.push(Routes.knowledgeEntry(m.methodId)),
-            ),
-        ],
-        // 4. Manbalardagi tahlil metodlari (modda darajasida).
-        if (a.analyticalMethods.isNotEmpty) ...[
-          subheader(l.analysisMethodsTitle),
-          // Bitta izoh: «namunaga bog‘lanmagan» + «tasdiqlangan protsedura
-          // emas» — ikki alohida banner/izoh o‘rniga.
-          if (!a.methodsLinkedToSpecimens) ...[
-            FeBanner(
-              key: Key('analysis.notPaired.$entityId'),
-              icon: Icons.info_outline,
-              text:
-                  '${l.analysisMethodsNotPaired} '
-                  '${l.analysisMethodsRoleNote}',
-            ),
-            const SizedBox(height: FeSpace.xs),
-          ] else
-            note(l.analysisMethodsRoleNote),
-          for (final m in a.analyticalMethods)
-            AnalysisRow(
-              key: Key('analysis.method.$entityId.${m.methodId}'),
-              icon: Icons.biotech_outlined,
-              title: kName(m.methodId),
-              details: [
-                if (m.basisIds.length > 1)
-                  l.analysisSourcedRecords(m.basisIds.length),
-              ],
-              claim: m.basisClaims.firstOrNull,
-              onTap: () => context.push(Routes.knowledgeEntry(m.methodId)),
-            ),
-        ],
-        // 5. Izlanadigan metabolitlar.
-        if (a.metabolites.isNotEmpty) ...[
-          subheader(l.analysisMetabolitesTitle),
-          for (final m in a.metabolites)
-            Builder(
-              builder: (context) {
-                final r = m.relation;
-                final entry = r.metaboliteId == null
-                    ? null
-                    : library.byId(r.metaboliteId!);
-                // Kutubxonada yozuvi yo‘q metabolit — manbadagi nom
-                // (`metabolite_name` tarjimasi bo‘lsa — u, aks holda asl).
-                final name = entry == null
-                    ? ref
-                          .watch(contentTranslationsProvider)
-                          .resolve(
-                            ContentTextKind.metaboliteName,
-                            r.id,
-                            source: r.metaboliteName,
-                            sameTextKinds: const {ContentTextKind.listItem},
-                            lang: lang,
-                          )
-                    : null;
-                return AnalysisRow(
-                  key: Key('analysis.metabolite.$entityId.${r.id}'),
-                  icon: Icons.subdirectory_arrow_right,
-                  title: entry?.name.resolve(lang) ?? name!.text,
-                  titleLocale: name == null ? null : Locale(name.textLang),
+        if (!a.isEmpty) AnalysisPlanEntry(entityId: entityId),
+        // 1. Test (ekspress / skrining).
+        section(
+          1,
+          l.analysisS1Title,
+          l.analysisS1Note,
+          empty: sectionClaims[0].isEmpty && screeningsTest.isEmpty,
+          children: [
+            if (screeningsTest.isNotEmpty) ...[
+              FeBanner(
+                icon: Icons.warning_amber_rounded,
+                text: l.analysisScreeningNote,
+                tone: FeBannerTone.critical,
+              ),
+              const SizedBox(height: FeSpace.xs),
+              for (final s in screeningsTest)
+                AnalysisRow(
+                  key: Key('screened.$entityId.${s.screeningId}'),
+                  icon: Icons.filter_alt_outlined,
+                  title: kName(s.screeningId),
                   details: [
-                    if (name != null && name.missingTranslation)
-                      l.trInOriginalLanguage(
-                        contentLanguageName(l, name.originalLang),
-                      ),
-                    l.metaboliteKindLabel(r.kind),
-                    if (m.specimenIds.isNotEmpty)
-                      l.analysisMetaboliteSpecimens(
-                        names(m.specimenIds, sName),
+                    if (s.confirmationMethodIds.isNotEmpty)
+                      l.analysisConfirmedBy(
+                        names(s.confirmationMethodIds, kName),
                       ),
                   ],
-                  claim: m.basisClaim,
-                  // Kutubxonada yozuvi bo‘lmasa — faqat manba tugmasi.
-                  onTap: entry == null
+                  claim: s.basisClaims.firstOrNull,
+                  onTap: () =>
+                      context.push(Routes.knowledgeEntry(s.screeningId)),
+                ),
+            ],
+            claimList(sectionClaims[0]),
+          ],
+        ),
+        // 2. Sifat reaksiyalari (rangli reaktivlar va boshqa taxminiy sinamalar).
+        section(
+          2,
+          l.analysisS2Title,
+          l.analysisS2Note,
+          empty:
+              sectionClaims[1].isEmpty &&
+              screeningsQual.isEmpty &&
+              methodsQual.isEmpty,
+          children: [
+            claimList(sectionClaims[1]),
+            for (final s in screeningsQual)
+              AnalysisRow(
+                key: Key('screened.$entityId.${s.screeningId}'),
+                icon: Icons.filter_alt_outlined,
+                title: kName(s.screeningId),
+                details: [
+                  if (s.confirmationMethodIds.isNotEmpty)
+                    l.analysisConfirmedBy(
+                      names(s.confirmationMethodIds, kName),
+                    ),
+                ],
+                claim: s.basisClaims.firstOrNull,
+                onTap: () => context.push(Routes.knowledgeEntry(s.screeningId)),
+              ),
+            for (final m in methodsQual)
+              AnalysisRow(
+                key: Key('analysis.method.$entityId.${m.methodId}'),
+                icon: Icons.biotech_outlined,
+                title: kName(m.methodId),
+                claim: m.basisClaims.firstOrNull,
+                onTap: () => context.push(Routes.knowledgeEntry(m.methodId)),
+              ),
+          ],
+        ),
+        // 3. Miqdoriy aniqlash (GC-MS, LC-MS/MS, spektrofotometriya …).
+        section(
+          3,
+          l.analysisS3Title,
+          l.analysisS3Note,
+          empty:
+              sectionClaims[2].isEmpty &&
+              a.confirmationMethods.isEmpty &&
+              methodsQuant.isEmpty,
+          children: [
+            claimList(sectionClaims[2]),
+            // Skriningdan keyingi tasdiqlovchi metodlar.
+            if (a.confirmationMethods.isNotEmpty) ...[
+              subheader(l.analysisConfirmationTitle),
+              for (final m in a.confirmationMethods)
+                AnalysisRow(
+                  key: Key('analysis.confirm.$entityId.${m.methodId}'),
+                  icon: Icons.science_outlined,
+                  title: kName(m.methodId),
+                  details: [
+                    l.analysisAfterScreening(names(m.afterScreeningIds, kName)),
+                  ],
+                  claim: m.basisClaims.firstOrNull,
+                  onTap: () => context.push(Routes.knowledgeEntry(m.methodId)),
+                ),
+            ],
+            // Manbalardagi tahlil metodlari (modda darajasida).
+            if (methodsQuant.isNotEmpty) ...[
+              subheader(l.analysisMethodsTitle),
+              // Bitta izoh: «namunaga bog‘lanmagan» + «tasdiqlangan protsedura
+              // emas» — ikki alohida banner/izoh o‘rniga.
+              if (!a.methodsLinkedToSpecimens) ...[
+                FeBanner(
+                  key: Key('analysis.notPaired.$entityId'),
+                  icon: Icons.info_outline,
+                  text:
+                      '${l.analysisMethodsNotPaired} '
+                      '${l.analysisMethodsRoleNote}',
+                ),
+                const SizedBox(height: FeSpace.xs),
+              ] else
+                note(l.analysisMethodsRoleNote),
+              for (final m in methodsQuant)
+                AnalysisRow(
+                  key: Key('analysis.method.$entityId.${m.methodId}'),
+                  icon: Icons.biotech_outlined,
+                  title: kName(m.methodId),
+                  details: [
+                    if (m.basisIds.length > 1)
+                      l.analysisSourcedRecords(m.basisIds.length),
+                  ],
+                  claim: m.basisClaims.firstOrNull,
+                  onTap: () => context.push(Routes.knowledgeEntry(m.methodId)),
+                ),
+            ],
+          ],
+        ),
+        // Namunalar (biologik ob’ektlar) va metabolitlar — 3 bo‘limdan keyin.
+        if (!a.isEmpty) ...[
+          // Namunalar (biologik ob’ektlar) — adabiyotdan.
+          subheader(l.analysisSpecimensTitle),
+          if (a.specimens.isEmpty)
+            FeEmptyState(
+              key: Key('analysis.noSpecimens.$entityId'),
+              icon: Icons.water_drop_outlined,
+              body: l.analysisNoSpecimens,
+              compact: true,
+            )
+          else ...[
+            note(l.analysisSpecimensNote),
+            for (final s in a.specimens)
+              AnalysisRow(
+                // Eski kalit saqlanadi (testlar va chuqur havolalar).
+                key: Key('measured.$entityId.${s.specimenId}'),
+                icon: Icons.water_drop_outlined,
+                title: sName(s.specimenId),
+                details: [
+                  if (s.methodIds.isNotEmpty)
+                    l.analysisSpecimenMethods(names(s.methodIds, kName)),
+                  if (s.basisIds.length > 1)
+                    l.analysisSourcedRecords(s.basisIds.length),
+                ],
+                claim: s.basisClaims.firstOrNull,
+                onTap: () => context.push(Routes.specimen(s.specimenId)),
+              ),
+          ],
+          // 5. Izlanadigan metabolitlar.
+          if (a.metabolites.isNotEmpty) ...[
+            subheader(l.analysisMetabolitesTitle),
+            for (final m in a.metabolites)
+              Builder(
+                builder: (context) {
+                  final r = m.relation;
+                  final entry = r.metaboliteId == null
                       ? null
-                      : () => context.push(Routes.libraryEntry(entry.id)),
-                );
-              },
-            ),
+                      : library.byId(r.metaboliteId!);
+                  // Kutubxonada yozuvi yo‘q metabolit — manbadagi nom
+                  // (`metabolite_name` tarjimasi bo‘lsa — u, aks holda asl).
+                  final name = entry == null
+                      ? ref
+                            .watch(contentTranslationsProvider)
+                            .resolve(
+                              ContentTextKind.metaboliteName,
+                              r.id,
+                              source: r.metaboliteName,
+                              sameTextKinds: const {ContentTextKind.listItem},
+                              lang: lang,
+                            )
+                      : null;
+                  return AnalysisRow(
+                    key: Key('analysis.metabolite.$entityId.${r.id}'),
+                    icon: Icons.subdirectory_arrow_right,
+                    title: entry?.name.resolve(lang) ?? name!.text,
+                    titleLocale: name == null ? null : Locale(name.textLang),
+                    details: [
+                      if (name != null && name.missingTranslation)
+                        l.trInOriginalLanguage(
+                          contentLanguageName(l, name.originalLang),
+                        ),
+                      l.metaboliteKindLabel(r.kind),
+                      if (m.specimenIds.isNotEmpty)
+                        l.analysisMetaboliteSpecimens(
+                          names(m.specimenIds, sName),
+                        ),
+                    ],
+                    claim: m.basisClaim,
+                    // Kutubxonada yozuvi bo‘lmasa — faqat manba tugmasi.
+                    onTap: entry == null
+                        ? null
+                        : () => context.push(Routes.libraryEntry(entry.id)),
+                  );
+                },
+              ),
+          ],
         ],
-        if (litClaims.isNotEmpty) litBlock(),
       ],
     );
   }
 }
+
+/// «Tahlil» bo‘limlari bo‘yicha claim maydonlari (egasi tartibi, 2026-10-17):
+/// 1 — test (ekspress / skrining); 2 — sifat reaksiyalari (rangli reaktivlar
+/// va boshqa taxminiy sinamalar); 3 — miqdoriy / instrumental aniqlash.
+/// Maydon ro‘yxatda bo‘lmasa, claim «Tahlil»ga kirmaydi (boshqa bo‘limda
+/// ko‘rsatiladi). Ro‘yxat tartibi — ko‘rsatish tartibi.
+const analysisSectionFields = <int, List<String>>{
+  1: ['express_test', 'immunoassay_screen', 'odour_test'],
+  2: [
+    'colour_test',
+    'chemical_test',
+    'microcrystal_test',
+    'tlc_system',
+    'melting_point',
+    'method_caveat',
+  ],
+  3: [
+    'confirmatory_method',
+    'analytical_method',
+    'sample_preparation',
+    'uv_spectrum',
+    'photometric_assay',
+    'spectroscopy',
+  ],
+};
+
+/// [section] (1–3) uchun [claims] dan tanlanadi: maydon tartibida; har
+/// maydon ichida tasdiqlangan manba (ustoz kitoblari, to‘liq matni bilan)
+/// birinchi, keyin adabiyot yozuvlari. [skipIds] — boshqa qatorda allaqachon
+/// asos sifatida ko‘rsatilgan `analytical_method` claim’lari (ikki marta
+/// chiqmasligi uchun; boshqa maydonlarda to‘liq matn kartasi saqlanadi).
+List<ClaimView> analysisSectionClaims(
+  List<ClaimView> claims,
+  int section, {
+  Set<String> skipIds = const {},
+}) {
+  final result = <ClaimView>[];
+  for (final f in analysisSectionFields[section] ?? const <String>[]) {
+    final ofField = [
+      for (final cl in claims)
+        if (cl.field == f &&
+            !(f == 'analytical_method' && skipIds.contains(cl.claimId)))
+          cl,
+    ];
+    result.addAll(
+      ofField.where((c) => c.fromConfirmedSource && c.hasStatement),
+    );
+    result.addAll(ofField.where((c) => !c.fromConfirmedSource));
+  }
+  return result;
+}
+
+/// Graf: «Sifat reaksiyalari» ga tegishli skrining testlari va metodlar
+/// (qolgan skrining testlari «Test», qolgan metodlar «Miqdoriy aniqlash»da).
+const analysisQualitativeScreeningIds = {
+  'scr-colour-tests',
+  'scr-microcrystal-tests',
+};
+const analysisQualitativeMethodIds = {'method-tlc'};
 
 /// Tahlil qatori: ikonka, nom, izoh qatorlari, asos claim holati + dalil
 /// darajasi, manba tugmasi va (bo‘lsa) sahifaga o‘tish.
