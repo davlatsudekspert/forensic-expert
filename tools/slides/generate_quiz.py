@@ -18,8 +18,8 @@ N_HARD = 15            # qiyin / amaliy-vaziyat
 TRANSLATE_CHUNK = 10   # bir tarjima chaqiruvida savollar soni
 # uz batchlari: (oson-o'rta soni, qiyin soni) -- jami 6 tadan, 5 batch
 UZ_BATCHES = [(6, 0), (6, 0), (3, 3), (0, 6), (0, 6)]
-UZ_MAX_TOKENS = 8000
-TR_MAX_TOKENS = 12000
+UZ_MAX_TOKENS = 16000
+TR_MAX_TOKENS = 16000
 QUIZ_OUT_TOK_EST = 60000   # 30 uz + 2x30 tarjima, eng yomon holat
 STATUS = {"uz": "source", "ru": "auto_unreviewed", "en": "auto_unreviewed"}
 SIM_LIMIT = 0.88           # dublikat deb hisoblanadigan matn o'xshashligi
