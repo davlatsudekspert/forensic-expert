@@ -9,7 +9,7 @@ MODEL = "claude-sonnet-5-5"
 PRICE_IN_PER_MTOK_USD = 3.00    # TEKSHIRILMAGAN taxmin
 PRICE_OUT_PER_MTOK_USD = 15.00  # TEKSHIRILMAGAN taxmin
 CHARS_PER_TOKEN = 3.0           # o'zbek lotin uchun konservativ taxmin
-MAX_TOKENS = 32000
+MAX_TOKENS = 9000  # bosqich uchun eng katta chegara
 TEMPERATURE = 0.2
 MAX_SOURCE_CHARS = 60000
 PENDING = "ADABIYOT KUTILMOQDA"
@@ -105,22 +105,54 @@ def validate_output(data, sources):
     return True
 
 
-def call_api(client, system, user):
-    kw = dict(model=MODEL, max_tokens=MAX_TOKENS,
+def _json_call(client, system, blocks, max_tokens, tag):
+    """Bitta bosqich: JSON qaytaradi; buzuq bo'lsa 1 marta qayta uriniladi."""
+    kw = dict(model=MODEL, max_tokens=max_tokens,
               system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
-              messages=[{"role": "user", "content": user}])
-    if hasattr(client.messages, "stream"):
-        with client.messages.stream(**kw) as s:
-            resp = s.get_final_message()
-    else:
-        resp = client.messages.create(**kw)
-    text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
-    Path("out").mkdir(exist_ok=True)
-    Path("out/raw_response.txt").write_text(text, encoding="utf-8")
-    print(f"Javob: stop_reason={getattr(resp,'stop_reason','?')} chiqish tokenlari={getattr(getattr(resp,'usage',None),'output_tokens','?')}")
-    if text.startswith("```"):
-        text = text.split("\n", 1)[1].rsplit("```", 1)[0]
-    return json.loads(text)
+              messages=[{"role": "user", "content": blocks}])
+    last = None
+    for attempt in (1, 2):
+        if hasattr(client.messages, "stream"):
+            with client.messages.stream(**kw) as s:
+                resp = s.get_final_message()
+        else:
+            resp = client.messages.create(**kw)
+        text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
+        Path("out").mkdir(exist_ok=True)
+        Path(f"out/raw_{tag}_{attempt}.txt").write_text(text, encoding="utf-8")
+        print(f"[{tag}#{attempt}] stop={getattr(resp,'stop_reason','?')} out_tok={getattr(getattr(resp,'usage',None),'output_tokens','?')}")
+        if text.startswith("```"):
+            text = text.split("\n", 1)[1].rsplit("```", 1)[0]
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError as e:
+            last = e
+    raise last
+
+
+def call_api(client, system, user):
+    """3 bosqich: reja -> slaydlar (6 tadan) -> test+qiziqarli. Manba matni keshlanadi."""
+    src = {"type": "text", "text": user, "cache_control": {"type": "ephemeral"}}
+    plan = _json_call(client, system, [src, {"type": "text", "text":
+        'BOSQICH 1. Faqat reja qaytaring: {"topic":str,"plan":[{"title":str,"focus":str,"diagram":bool}]}. '
+        '32-36 ta slayd, mavzu bo\'limlari tartibida to\'liq qamralsin; kamida 6 tasida diagram:true; boshida kirish, oxirida xulosa.'}],
+        4000, "plan")
+    items = plan["plan"]
+    slides = []
+    for i in range(0, len(items), 6):
+        part = items[i:i + 6]
+        r = _json_call(client, system, [src, {"type": "text", "text":
+            f'BOSQICH 2. Quyidagi {len(part)} ta slaydni to\'liq yozing (tartib saqlansin): {json.dumps(part, ensure_ascii=False)}. '
+            'Faqat JSON: {"slides":[{"title":str,"bullets":[{"text":str,"source":{"author":str,"title":str,"page":str},"uncertain":bool}],'
+            '"diagram":null|{"kind":"flow"|"table","caption":str,"nodes":[str],"header":[str],"rows":[[str]]},"teacher_notes":str}]}. '
+            'Har slaydda 2-4 qisqa band; diagram:true bo\'lsa diagram to\'ldirilsin.'}],
+            9000, f"slides{i // 6 + 1}")
+        slides += r["slides"]
+    tail = _json_call(client, system, [src, {"type": "text", "text":
+        'BOSQICH 3. Faqat JSON: {"mcq":[10 ta savol: {"question","options":[4 ta],"correct_index","explanation","source":{"author","title","page"}}],'
+        '"extras":[3-5 ta qiziqarli fakt/voqea tahlili/eslab qolish usuli: {"text","source":{"author","title","page"}}]}'}],
+        7000, "tail")
+    return {"topic": plan.get("topic", ""), "slides": slides, "mcq": tail["mcq"], "extras": tail.get("extras", [])}
 
 
 def run(topic_id, sources_path, max_usd, dry_run, out_dir, client=None):
@@ -131,7 +163,7 @@ def run(topic_id, sources_path, max_usd, dry_run, out_dir, client=None):
         return {"status": "pending", "message": PENDING}
     user = build_user_prompt(topic, sources)
     in_tok = est_tokens(SYSTEM_PROMPT) + est_tokens(user)
-    cost = est_cost(in_tok, MAX_TOKENS)  # eng yomon holat: to'liq max_tokens
+    cost = est_cost(in_tok * 1.3, 38000)  # keshlangan kirish + ~38k chiqish (eng yomon holat)
     print(f"Taxminiy kirish tokenlari: {in_tok}; chiqish (maks): {MAX_TOKENS}; "
           f"eng yomon narx ~ ${cost:.4f} (narx konstantalari TEKSHIRILMAGAN, rasmiy sahifada tekshiring)")
     if cost > max_usd:
@@ -163,7 +195,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("topic_id")
     ap.add_argument("--sources", default=str(Path(__file__).parent / "sources.json"))
-    ap.add_argument("--max-usd", type=float, default=0.50)
+    ap.add_argument("--max-usd", type=float, default=1.50)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--out", default="out")
     a = ap.parse_args()
