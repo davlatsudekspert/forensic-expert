@@ -32,11 +32,13 @@ jobs:
         run: |
           FLAG=""; [ "$DRY" = "true" ] && FLAG="--dry-run"
           SRC=""; [ -f sources_private/sources.json ] && SRC="--sources sources_private/sources.json"
+          BAD=0
           for T in ${TOPIC//,/ }; do
             echo "=== $T ==="
-            python generate.py "$T" --max-usd "$MAXUSD" $SRC $FLAG || echo "FAIL $T"
-            if [ -f "out/$T.json" ]; then python build_pptx.py "out/$T.json" || echo "PPTX FAIL $T"; fi
+            python generate.py "$T" --max-usd "$MAXUSD" $SRC $FLAG || { echo "FAIL $T"; BAD=1; }
+            if [ -f "out/$T.json" ]; then python build_pptx.py "out/$T.json" || echo "PPTX FAIL $T"; BAD=1; fi
           done
+          exit $BAD
       - uses: actions/upload-artifact@v4
         if: ${{ always() && inputs.dry_run != true }}
         with:

@@ -136,7 +136,7 @@ def call_api(client, system, user):
     plan = _json_call(client, system, [src, {"type": "text", "text":
         'BOSQICH 1. Faqat reja qaytaring: {"topic":str,"plan":[{"title":str,"focus":str,"diagram":bool}]}. '
         '32-36 ta slayd, mavzu bo\'limlari tartibida to\'liq qamralsin; kamida 6 tasida diagram:true; boshida kirish, oxirida xulosa.'}],
-        4000, "plan")
+        10000, "plan")
     items = plan["plan"]
     slides = []
     for i in range(0, len(items), 3):
