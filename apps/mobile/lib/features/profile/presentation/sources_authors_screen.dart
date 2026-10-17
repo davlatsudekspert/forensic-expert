@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/aby_flag.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -122,35 +123,36 @@ class SourcesAuthorsScreen extends StatelessWidget {
                     key: const Key('sourcesAuthors.intro'),
                     style: t.bodyMedium,
                   ),
-                  for (final (title, rows) in entries) ...[
-                    FeSectionHeader(title),
-                    FeCard(
-                      padding: const EdgeInsets.all(FeSpace.sm),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          for (final (label, value) in rows)
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                bottom: FeSpace.xxs,
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    label,
-                                    style: t.labelMedium?.copyWith(
-                                      color: c.textSecondary,
+                  for (final (title, rows) in entries)
+                    if (abyContentEnabled || !title.contains('(ABY)')) ...[
+                      FeSectionHeader(title),
+                      FeCard(
+                        padding: const EdgeInsets.all(FeSpace.sm),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            for (final (label, value) in rows)
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  bottom: FeSpace.xxs,
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      label,
+                                      style: t.labelMedium?.copyWith(
+                                        color: c.textSecondary,
+                                      ),
                                     ),
-                                  ),
-                                  Text(value, style: t.bodyMedium),
-                                ],
+                                    Text(value, style: t.bodyMedium),
+                                  ],
+                                ),
                               ),
-                            ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),

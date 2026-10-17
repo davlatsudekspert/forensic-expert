@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/aby_flag.dart';
 
 import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
@@ -11,6 +12,10 @@ import '../helpers/pump_app.dart';
 /// manba» deb ko‘rinadi; xorijiy maqola/tezis — «tasdiqlash kerak».
 /// «Bu ma’lumot qayerdan?» oynasida esa tahlilning o‘zi ko‘rinadi.
 void main() {
+  // ABY yashirin bo‘lsa-da, ABY kontentining o‘zi shu testda tekshiriladi.
+  setUpAll(() => abyContentEnabled = true);
+  tearDownAll(() => abyContentEnabled = false);
+
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 

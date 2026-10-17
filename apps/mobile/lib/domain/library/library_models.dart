@@ -4,6 +4,8 @@ library;
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/foundation.dart';
 
+import '../../core/aby_flag.dart';
+
 enum LibrarySection { substances, methods, specimens, references, glossary }
 
 /// Ko‘p tilli nom: `en`, `ru`, `uz`.
@@ -248,7 +250,9 @@ class ClaimView {
 
   /// Yozuv [languageCode] interfeysida ko‘rinishi kerakmi.
   bool visibleIn(String languageCode) =>
-      localeOnly == null || localeOnly == languageCode;
+      (abyContentEnabled ||
+          !isAbyClaim(claimId, [for (final s in sources) s.sourceId])) &&
+      (localeOnly == null || localeOnly == languageCode);
 
   Map<String, String> _i18n(String key) {
     final m = value[key];

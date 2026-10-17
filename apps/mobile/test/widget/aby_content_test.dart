@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/aby_flag.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
 import 'package:forensic_expert/features/profile/presentation/sources_authors_screen.dart';
@@ -20,6 +21,10 @@ import '../helpers/study_fixtures.dart';
 ///   * bepul (paywall ortida emas);
 ///   * yo‘riqnoma faylining o‘zi repoda / paketda yo‘q.
 void main() {
+  // ABY yashirin bo‘lsa-da, ABY kontentining o‘zi shu testda tekshiriladi.
+  setUpAll(() => abyContentEnabled = true);
+  tearDownAll(() => abyContentEnabled = false);
+
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 

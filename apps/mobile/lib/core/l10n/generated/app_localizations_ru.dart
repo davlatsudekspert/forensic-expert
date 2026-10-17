@@ -9163,6 +9163,10 @@ class AppLocalizationsRu extends AppLocalizations {
       'На основе подтверждённого источника: национальное руководство (ABY) или учебник преподавателя. Точное место указано.';
 
   @override
+  String get confirmedSourceBannerTextbook =>
+      'На основе подтверждённого источника: учебник преподавателя. Точное место указано.';
+
+  @override
   String get confirmedSourceChip => 'Подтверждённый источник';
 
   @override

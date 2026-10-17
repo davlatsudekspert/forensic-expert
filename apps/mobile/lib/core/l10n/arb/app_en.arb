@@ -11785,6 +11785,10 @@
   "@confirmedSourceBanner": {
     "description": "Banner for claims resting on an owner-confirmed source."
   },
+  "confirmedSourceBannerTextbook": "Based on a confirmed source: the teacher's textbook. The exact place is given.",
+  "@confirmedSourceBannerTextbook": {
+    "description": "Banner for owner-confirmed textbook sources (ABY hidden)."
+  },
   "confirmedSourceChip": "Confirmed source",
   "@confirmedSourceChip": {
     "description": "Chip: the claim's source is confirmed."

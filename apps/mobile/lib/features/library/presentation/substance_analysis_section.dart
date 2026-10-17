@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/pro_tools.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
+import '../../../core/aby_flag.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -58,7 +59,8 @@ class SubstanceAnalysisSection extends ConsumerWidget {
     // tilida ko‘rinadi (`locale_only: uz`), shuning uchun boshqa tilda bo‘sh.
     final abyTopics = [
       for (final x in ref.watch(evidenceDataProvider).linksFrom(entityId))
-        if (x.relation == LinkRelation.relatedTopic &&
+        if (abyContentEnabled &&
+            x.relation == LinkRelation.relatedTopic &&
             x.basis == 'editorial:aby-order')
           if (knowledge.byId(x.toId) case final e?)
             (e, visibleClaims(e.claims, lang)),

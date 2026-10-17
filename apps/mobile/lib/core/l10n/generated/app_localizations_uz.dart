@@ -9073,6 +9073,10 @@ class AppLocalizationsUz extends AppLocalizations {
       'Tasdiqlangan manba asosida: milliy yo‘riqnoma (ABY) yoki ustoz kitobi. Aniq joyi ko‘rsatilgan.';
 
   @override
+  String get confirmedSourceBannerTextbook =>
+      'Tasdiqlangan manba asosida: ustoz kitobi. Aniq joyi ko‘rsatilgan.';
+
+  @override
   String get confirmedSourceChip => 'Tasdiqlangan manba';
 
   @override

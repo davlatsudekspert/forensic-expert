@@ -9110,6 +9110,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Based on a confirmed source: the national guide (ABY) or the teacher\'s textbook. The exact place is given.';
 
   @override
+  String get confirmedSourceBannerTextbook =>
+      'Based on a confirmed source: the teacher\'s textbook. The exact place is given.';
+
+  @override
   String get confirmedSourceChip => 'Confirmed source';
 
   @override

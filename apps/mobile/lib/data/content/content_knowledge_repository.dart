@@ -51,6 +51,7 @@ abstract final class ContentKnowledgeLoader {
         _ => null,
       };
       if (kind == null) continue;
+      if (prov.abyHiddenEntities.contains(id)) continue;
       final claims = prov.claimsByEntity[id] ?? const <ClaimView>[];
       final ownStatus = ScientificStatus.fromCode(
         r.read<String>('review_status'),

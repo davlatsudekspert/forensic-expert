@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/aby_flag.dart';
 import 'package:forensic_expert/domain/evidence/evidence_models.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
@@ -21,6 +22,10 @@ import '../helpers/study_fixtures.dart';
 /// 3) `value.locale_only`: bitta tilga bog‘langan yozuv boshqa tilda umuman
 ///    ko‘rinmaydi (bo‘sh joy ham, «tarjima yo‘q» ham chiqmaydi).
 void main() {
+  // ABY yashirin bo‘lsa-da, ABY kontentining o‘zi shu testda tekshiriladi.
+  setUpAll(() => abyContentEnabled = true);
+  tearDownAll(() => abyContentEnabled = false);
+
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 

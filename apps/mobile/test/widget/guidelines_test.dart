@@ -9,6 +9,7 @@ import 'package:forensic_expert/app/guidelines.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/aby_flag.dart';
 import 'package:forensic_expert/domain/admin/admin_models.dart';
 import 'package:forensic_expert/domain/guidelines/guideline_models.dart';
 import 'package:forensic_expert/domain/guidelines/practice_catalog.dart';
@@ -122,6 +123,10 @@ class _Account implements AccountService {
 }
 
 void main() {
+  // ABY yashirin bo‘lsa-da, ABY kontentining o‘zi shu testda tekshiriladi.
+  setUpAll(() => abyContentEnabled = true);
+  tearDownAll(() => abyContentEnabled = false);
+
   test('model: VERIFIED fayl ham NEEDS_REVIEW; fallback til belgilanadi', () {
     final b = GuidelineBundle.fromJson(
       (jsonDecode(_bundle) as Map).cast<String, Object?>(),

@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/providers.dart';
 import '../../../app/referral.dart';
 import '../../../app/routes.dart';
+import '../../../core/aby_flag.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
@@ -134,7 +135,9 @@ class EntryDetailScreen extends ConsumerWidget {
                       FeBanner(
                         key: const Key('entry.confirmedSource'),
                         icon: Icons.verified_outlined,
-                        text: l.confirmedSourceBanner,
+                        text: (abyContentEnabled
+                            ? l.confirmedSourceBanner
+                            : l.confirmedSourceBannerTextbook),
                         tone: FeBannerTone.info,
                       )
                     else

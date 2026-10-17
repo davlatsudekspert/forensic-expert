@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/aby_flag.dart';
 
 import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
@@ -11,6 +12,10 @@ import '../helpers/pump_app.dart';
 /// «Tahlil» bo‘limi (modda sahifasi) va namuna sahifasidagi teskari ro‘yxat —
 /// HAQIQIY pilot paket, o‘zbek tilida.
 void main() {
+  // ABY yashirin bo‘lsa-da, ABY kontentining o‘zi shu testda tekshiriladi.
+  setUpAll(() => abyContentEnabled = true);
+  tearDownAll(() => abyContentEnabled = false);
+
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 

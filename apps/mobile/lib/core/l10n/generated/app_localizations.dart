@@ -15849,6 +15849,12 @@ abstract class AppLocalizations {
   /// **'Based on a confirmed source: the national guide (ABY) or the teacher\'s textbook. The exact place is given.'**
   String get confirmedSourceBanner;
 
+  /// Banner for owner-confirmed textbook sources (ABY hidden).
+  ///
+  /// In en, this message translates to:
+  /// **'Based on a confirmed source: the teacher\'s textbook. The exact place is given.'**
+  String get confirmedSourceBannerTextbook;
+
   /// Chip: the claim's source is confirmed.
   ///
   /// In en, this message translates to:

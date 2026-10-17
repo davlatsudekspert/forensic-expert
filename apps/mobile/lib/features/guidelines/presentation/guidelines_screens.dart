@@ -8,6 +8,7 @@ import '../../../app/account.dart';
 import '../../../app/glossary.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/routes.dart';
+import '../../../core/aby_flag.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
@@ -108,7 +109,7 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
                     ),
                     onChanged: (v) => setState(() => _query = v),
                   ),
-                  if (isAdmin) ...[
+                  if (isAdmin && abyContentEnabled) ...[
                     const SizedBox(height: FeSpace.sm),
                     const RestrictedCatalogEntry(),
                   ],
