@@ -13,7 +13,7 @@ on:
         type: boolean
         default: true
 permissions:
-  contents: read
+  contents: write
 jobs:
   slides:
     runs-on: ubuntu-latest
@@ -39,3 +39,15 @@ jobs:
           name: slides-${{ inputs.topic_id }}
           path: tools/slides/out/
           if-no-files-found: ignore
+      - name: Natijani slides-out branchiga saqlash (maxfiy repo, ilovaga tushmaydi)
+        if: ${{ always() && inputs.dry_run != true }}
+        env:
+          TOPIC: ${{ inputs.topic_id }}
+        run: |
+          [ -d tools/slides/out ] || exit 0
+          mkdir -p /tmp/o && cp -r tools/slides/out/. /tmp/o/
+          git config user.name "slides-bot"; git config user.email "slides-bot@users.noreply.github.com"
+          git fetch origin slides-out 2>/dev/null && git checkout -B slides-out origin/slides-out || git checkout --orphan slides-out
+          git rm -rfq . 2>/dev/null || true
+          mkdir -p "$TOPIC" && cp -r /tmp/o/. "$TOPIC/"
+          git add "$TOPIC" && git commit -qm "slides output: $TOPIC" && git push -q origin slides-out
