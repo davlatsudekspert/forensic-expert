@@ -2,23 +2,57 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../data/class_quiz/class_quiz_bank.dart';
 import '../data/class_quiz/fake_class_quiz_service.dart';
 import '../domain/class_quiz/class_quiz_models.dart';
 import '../domain/ports/class_quiz_ports.dart';
 import 'providers.dart';
 
+export '../data/class_quiz/class_quiz_bank.dart'
+    show ClassQuizBank, ClassQuizBankGroup, ClassQuizBankTopicMeta;
+
+/// Savollar banki assetini o‘qish (testlarda almashtiriladi).
+/// `rootBundle.load` + utf8 (loadString katta fayl uchun alohida isolate
+/// ishlatadi — widget testlarida soxta vaqt ichida osilib qoladi).
+final classQuizBankLoaderProvider = Provider<Future<String> Function()>(
+  (ref) => () async {
+    final data = await rootBundle.load(classQuizBankAsset);
+    return utf8.decode(data.buffer.asUint8List());
+  },
+);
+
+/// Savollar banki: mavzular kurs/fan guruhlari va uch tildagi nomlari bilan
+/// (server mavzulari ham shu ID’lar bo‘yicha guruhlanadi). O‘qib bo‘lmasa —
+/// bo‘sh bank (to‘qilmaydi).
+final classQuizBankProvider = FutureProvider<ClassQuizBank>((ref) async {
+  try {
+    return ClassQuizBank.parse(await ref.watch(classQuizBankLoaderProvider)());
+  } on Object {
+    return ClassQuizBank.empty;
+  }
+});
+
 /// Demo uchun xotiradagi “server” (ma’lumot faqat shu qurilmada). Demo
 /// foydalanuvchi ustoz hisoblanadi; sinfga 3 ta “DEMO” ishtirokchi qo‘shiladi.
-final classQuizDemoBackendProvider = Provider<FakeClassQuizBackend>(
-  (ref) => FakeClassQuizBackend(
+/// Mavzular — ilovadagi haqiqiy savollar banki; «DEMO: oddiy savollar»
+/// to‘plami faqat debug/test yig‘masida (release’da ko‘rinmaydi).
+final classQuizDemoBackendProvider = Provider<FakeClassQuizBackend>((ref) {
+  final load = ref.watch(classQuizBankLoaderProvider);
+  return FakeClassQuizBackend(
     teachers: {'demo-user'},
     allowSelfJoin: true,
     demoBots: 3,
-  ),
-);
+    topics: classQuizLocalTopics(
+      ClassQuizBank.empty,
+      includeDemo: !kReleaseMode,
+    ),
+    topicLoader: () async => ClassQuizBank.parse(await load()).variants,
+  );
+});
 
 /// Bootstrap’da Supabase sozlangan bo‘lsa [SupabaseClassQuizService] bilan
 /// almashtiriladi; aks holda DEMO (Fake) adapter ishlaydi.

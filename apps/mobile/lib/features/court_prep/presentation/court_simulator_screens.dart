@@ -58,7 +58,7 @@ class _Frame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: Text(title)),
+    appBar: AppBar(title: FeAppBarTitle(title)),
     body: SafeArea(
       child: ListView(
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -150,7 +150,7 @@ class CourtScenarioScreen extends ConsumerWidget {
     final bundle = ref.watch(courtPrepProvider).value ?? CourtPrepBundle.empty;
     final s = bundle.scenario(scenarioId);
     if (s == null) {
-      return Scaffold(appBar: AppBar(title: Text(l.courtSimulator)));
+      return Scaffold(appBar: AppBar(title: FeAppBarTitle(l.courtSimulator)));
     }
     final openList = bundle.scenarios;
     final next = openList.length < 2 || !openList.contains(s)

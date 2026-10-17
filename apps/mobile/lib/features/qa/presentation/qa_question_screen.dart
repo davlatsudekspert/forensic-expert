@@ -171,7 +171,7 @@ class _QaQuestionScreenState extends ConsumerState<QaQuestionScreen> {
     return QaGate(
       title: l.qaTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.qaTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.qaTitle)),
         body: SafeArea(
           child: switch (async) {
             AsyncData(value: final q?) => _body(context, l, q, me),

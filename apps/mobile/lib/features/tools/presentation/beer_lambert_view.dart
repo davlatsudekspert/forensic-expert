@@ -224,19 +224,21 @@ class _BeerLambertState extends State<BeerLambertView> with CalcInputsMixin {
             controller: _path,
             k: 'calc.path',
           ),
-          unit: DropdownButtonFormField<PathLengthUnit>(
-            style: Theme.of(context).textTheme.bodyLarge,
-            key: const Key('calc.pathUnit'),
-            initialValue: _pathUnit,
-            isExpanded: true,
-            decoration: InputDecoration(labelText: l.calcUnit),
-            items: [
-              for (final u in PathLengthUnit.values)
-                DropdownMenuItem(value: u, child: Text(u.symbol)),
-            ],
-            onChanged: (u) {
-              if (u != null) changed(() => _pathUnit = u);
-            },
+          unit: CalcLabeled(
+            label: l.calcUnit,
+            child: DropdownButtonFormField<PathLengthUnit>(
+              style: Theme.of(context).textTheme.bodyLarge,
+              key: const Key('calc.pathUnit'),
+              initialValue: _pathUnit,
+              isExpanded: true,
+              items: [
+                for (final u in PathLengthUnit.values)
+                  DropdownMenuItem(value: u, child: Text(u.symbol)),
+              ],
+              onChanged: (u) {
+                if (u != null) changed(() => _pathUnit = u);
+              },
+            ),
           ),
         ),
         if (_unknown == BeerLambertUnknown.concentration)

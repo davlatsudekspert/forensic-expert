@@ -66,7 +66,7 @@ class ReferralScreen extends ConsumerWidget {
         (!auth.signedIn || (dashboard != null && !dashboard.hasReferrer));
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.referralTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.referralTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,

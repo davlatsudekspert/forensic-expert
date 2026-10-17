@@ -1076,7 +1076,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get screeningBanner =>
-      'SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.';
+      'A screening result is not a confirmed identification. A positive screen is presumptive and requires a validated confirmatory method.';
 
   @override
   String get screeningAnalyte => 'Analyte';
@@ -9704,4 +9704,51 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get calcWarnZeroMeasured =>
       'No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.';
+
+  @override
+  String get calcTechInfo => 'Technical details';
+
+  @override
+  String calcTechModule(String id, String version) {
+    return 'Calculation module: $id, version $version';
+  }
+
+  @override
+  String classSourceLineNoPage(String author, String title) {
+    return 'Source: $author, $title';
+  }
+
+  @override
+  String classSourceLineLocator(String author, String title, String locator) {
+    return 'Source: $author, $title, $locator';
+  }
+
+  @override
+  String get classTopicSearchHint => 'Search a topic or course';
+
+  @override
+  String get classTopicGroupOther => 'Other topics';
+
+  @override
+  String get classTopicNoMatch => 'No matching topics.';
+
+  @override
+  String get classTopicSelected => 'Selected topic';
+
+  @override
+  String classTopicGroupCount(int count) {
+    return '$count topics';
+  }
+
+  @override
+  String ghsPCodesDetails(int count) {
+    return 'Details: precautionary statements ($count P-codes)';
+  }
+
+  @override
+  String get studyExamUnavailableHub =>
+      'Sets marked “Practice only” have no exam: their questions are generated automatically or lack an explanation or page in the source. Use Practice for them.';
+
+  @override
+  String get studyQuizAboutPractice => 'About practice mode and options';
 }

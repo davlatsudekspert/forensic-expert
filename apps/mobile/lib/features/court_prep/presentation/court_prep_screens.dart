@@ -38,7 +38,7 @@ class _CourtScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: Text(title), actions: actions),
+    appBar: AppBar(title: FeAppBarTitle(title), actions: actions),
     body: SafeArea(
       child: ListView(
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -412,7 +412,7 @@ class CourtTopicScreen extends ConsumerWidget {
     final uz = ref.watch(courtUzbekistanProvider);
     final topic = bundle.topic(topicId);
     if (topic == null) {
-      return Scaffold(appBar: AppBar(title: Text(l.courtTitle)));
+      return Scaffold(appBar: AppBar(title: FeAppBarTitle(l.courtTitle)));
     }
     final questions = bundle.questionsOf(topic.id, uzbekistan: uz);
     return _CourtScaffold(
@@ -467,7 +467,7 @@ class CourtQuestionScreen extends ConsumerWidget {
     final uz = ref.watch(courtUzbekistanProvider);
     final q = bundle.question(questionId);
     if (q == null) {
-      return Scaffold(appBar: AppBar(title: Text(l.courtTitle)));
+      return Scaffold(appBar: AppBar(title: FeAppBarTitle(l.courtTitle)));
     }
     final topic = bundle.topic(q.topicId);
     final siblings = bundle.questionsOf(q.topicId, uzbekistan: uz);

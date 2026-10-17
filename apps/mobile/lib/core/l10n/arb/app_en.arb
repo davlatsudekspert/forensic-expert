@@ -1397,7 +1397,7 @@
   "@reagentOpenCalculator": {
     "description": "Button to the solution preparation calculator."
   },
-  "screeningBanner": "SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.",
+  "screeningBanner": "A screening result is not a confirmed identification. A positive screen is presumptive and requires a validated confirmatory method.",
   "@screeningBanner": {
     "description": "Permanent screening disclaimer."
   },
@@ -12571,5 +12571,90 @@
   "calcWarnZeroMeasured": "No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.",
   "@calcWarnZeroMeasured": {
     "description": "Back-calculation warning when the measured concentration is zero."
+  },
+  "calcTechInfo": "Technical details",
+  "@calcTechInfo": {
+    "description": "Collapsed section on a calculator page with the module id and version."
+  },
+  "calcTechModule": "Calculation module: {id}, version {version}",
+  "@calcTechModule": {
+    "description": "Technical line inside the collapsed 'Technical details' section.",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "classSourceLineNoPage": "Source: {author}, {title}",
+  "@classSourceLineNoPage": {
+    "description": "Class quiz source line when the source has no page.",
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "classSourceLineLocator": "Source: {author}, {title}, {locator}",
+  "@classSourceLineLocator": {
+    "description": "Class quiz source line when the place is a chapter/section, not a page number.",
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      },
+      "locator": {
+        "type": "String"
+      }
+    }
+  },
+  "classTopicSearchHint": "Search a topic or course",
+  "@classTopicSearchHint": {
+    "description": "Search field above the grouped topic list (teacher, new class quiz)."
+  },
+  "classTopicGroupOther": "Other topics",
+  "@classTopicGroupOther": {
+    "description": "Group title for topics without a course/subject in the question bank index."
+  },
+  "classTopicNoMatch": "No matching topics.",
+  "@classTopicNoMatch": {
+    "description": "Topic search returned nothing."
+  },
+  "classTopicSelected": "Selected topic",
+  "@classTopicSelected": {
+    "description": "Label above the selected topic summary."
+  },
+  "classTopicGroupCount": "{count} topics",
+  "@classTopicGroupCount": {
+    "description": "Number of topics in a course group.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ghsPCodesDetails": "Details: precautionary statements ({count} P-codes)",
+  "@ghsPCodesDetails": {
+    "description": "Collapsed list of GHS precautionary P-codes under a hazard note.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "studyExamUnavailableHub": "Sets marked “Practice only” have no exam: their questions are generated automatically or lack an explanation or page in the source. Use Practice for them.",
+  "@studyExamUnavailableHub": {
+    "description": "One note at the top of the study hub (replaces the repeated per-set text and disabled Exam buttons)."
+  },
+  "studyQuizAboutPractice": "About practice mode and options",
+  "@studyQuizAboutPractice": {
+    "description": "Title of the single collapsible info box on the first practice question."
   }
 }

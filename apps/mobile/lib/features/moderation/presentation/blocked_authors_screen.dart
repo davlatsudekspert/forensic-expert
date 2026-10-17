@@ -26,7 +26,7 @@ class BlockedAuthorsScreen extends ConsumerWidget {
     return QaGate(
       title: l.blkTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.blkTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.blkTitle)),
         body: SafeArea(
           child: switch (data) {
             AsyncData(:final value?) when value.isEmpty => ListView(

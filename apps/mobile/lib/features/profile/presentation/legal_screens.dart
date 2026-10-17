@@ -32,7 +32,7 @@ class LegalDocumentScreen extends StatelessWidget {
       LegalDocument.aiDisclaimer => (l.aiDisclaimerLink, l.aiDisclaimerBody),
     };
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(title: FeAppBarTitle(title)),
       body: SafeArea(
         child: FeScrollableBody(
           padding: const EdgeInsets.symmetric(vertical: FeSpace.md),
@@ -89,7 +89,7 @@ class AboutScreen extends StatelessWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     return Scaffold(
-      appBar: AppBar(title: Text(l.aboutApp)),
+      appBar: AppBar(title: FeAppBarTitle(l.aboutApp)),
       body: SafeArea(
         child: FeScrollableBody(
           padding: const EdgeInsets.symmetric(vertical: FeSpace.xl),

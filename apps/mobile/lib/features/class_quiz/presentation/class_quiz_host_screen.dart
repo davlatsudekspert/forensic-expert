@@ -11,6 +11,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'class_quiz_widgets.dart';
@@ -33,6 +34,7 @@ class _CreateBody extends ConsumerStatefulWidget {
 
 class _CreateBodyState extends ConsumerState<_CreateBody> {
   String? _topicId;
+  String _query = '';
   var _settings = const ClassQuizSettings();
   bool _busy = false;
   String? _error;
@@ -68,6 +70,8 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
     final c = FeTheme.of(context);
     final topics = ref.watch(classTopicsProvider);
     final list = topics.value?.value ?? const <ClassTopic>[];
+    final lang = Localizations.localeOf(context).languageCode;
+    final bank = ref.watch(classQuizBankProvider).value ?? ClassQuizBank.empty;
     final selected = list.where((x) => x.id == _topicId).firstOrNull;
     final maxQ = selected == null
         ? ClassQuizRules.maxQuestions
@@ -96,55 +100,73 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
     } else {
       final enough =
           selected != null && selected.count >= ClassQuizRules.minQuestions;
+      final groups = _groupTopics(list, bank, lang, l, _query);
       body = Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           FeSectionHeader(l.classTopicSection),
-          for (final topic in list)
-            Padding(
-              padding: const EdgeInsets.only(bottom: FeSpace.xs),
-              child: FeCard(
-                key: Key('class.topic.${topic.id}'),
-                color: topic.id == _topicId ? c.accentContainer : null,
-                onTap: () => setState(() {
-                  _topicId = topic.id;
-                  _settings = _settings.copyWith(
-                    questionCount: min(_settings.questionCount, topic.count),
-                  );
-                }),
-                child: Row(
-                  children: [
-                    Icon(
-                      topic.id == _topicId
-                          ? Icons.radio_button_checked
-                          : Icons.radio_button_unchecked,
-                      color: c.accent,
-                    ),
-                    const SizedBox(width: FeSpace.sm),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(topic.title, style: t.titleSmall),
-                          Text(
-                            l.classQuestionsAvailable(topic.count),
-                            style: t.bodySmall?.copyWith(
-                              color: c.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    if (topic.isDemo)
-                      StatusChip(
-                        icon: Icons.science_outlined,
-                        label: l.classDemoChip,
-                        color: c.warning,
-                      ),
-                  ],
-                ),
-              ),
+          TextField(
+            key: const Key('class.topicSearch'),
+            onTapOutside: (_) => FocusScope.of(context).unfocus(),
+            onChanged: (v) => setState(() => _query = v),
+            textInputAction: TextInputAction.search,
+            decoration: InputDecoration(
+              hintText: l.classTopicSearchHint,
+              prefixIcon: const Icon(Icons.search),
+              isDense: true,
             ),
+          ),
+          const SizedBox(height: FeSpace.sm),
+          if (groups.isEmpty)
+            FeEmptyState(
+              key: const Key('class.topicNoMatch'),
+              icon: Icons.search_off,
+              body: l.classTopicNoMatch,
+              compact: true,
+            ),
+          for (final g in groups)
+            _TopicGroup(
+              // Qidiruv boshlanganda/tozalanganda ochiq-yopiq holati qayta
+              // o‘rnatiladi.
+              key: Key('class.group.${g.id}.${_query.trim().isEmpty ? 0 : 1}'),
+              title: g.title,
+              count: g.items.length,
+              initiallyExpanded:
+                  _query.trim().isNotEmpty ||
+                  groups.length == 1 ||
+                  g.items.any((x) => x.topic.id == _topicId),
+              children: [
+                for (final item in g.items)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                    child: _TopicCard(
+                      item: item,
+                      selected: item.topic.id == _topicId,
+                      onTap: () => setState(() {
+                        _topicId = item.topic.id;
+                        _settings = _settings.copyWith(
+                          questionCount: min(
+                            _settings.questionCount,
+                            item.topic.count,
+                          ),
+                        );
+                      }),
+                    ),
+                  ),
+              ],
+            ),
+          if (selected != null) ...[
+            const SizedBox(height: FeSpace.sm),
+            Text(
+              l.classTopicSelected,
+              style: t.labelMedium?.copyWith(color: c.textSecondary),
+            ),
+            Text(
+              _choiceTitle(selected, bank, lang),
+              key: const Key('class.selectedTopic'),
+              style: t.titleSmall,
+            ),
+          ],
           if (selected != null && !enough)
             FeNote(
               icon: Icons.info_outline,
@@ -216,7 +238,7 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.classNewTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.classNewTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -234,6 +256,194 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Ro‘yxatdagi bitta mavzu: server/qurilma mavzusi (tanlangan til varianti)
+/// va bankdagi metama’lumoti.
+class _TopicChoice {
+  const _TopicChoice({required this.topic, required this.title, this.meta});
+
+  final ClassTopic topic;
+  final String title;
+  final ClassQuizBankTopicMeta? meta;
+
+  /// Savollar avtomatik tarjima (ru/en, tekshirilmagan) bo‘lsa — belgi.
+  bool get machineTranslated {
+    final vl = ClassQuizBank.variantLang(topic.id);
+    return meta?.isMachineTranslation(vl) ?? (vl != 'uz');
+  }
+}
+
+class _TopicGroupData {
+  _TopicGroupData(this.id, this.title, this.order);
+
+  final String id;
+  final String title;
+  final int order;
+  final items = <_TopicChoice>[];
+}
+
+String _choiceTitle(ClassTopic t, ClassQuizBank bank, String lang) =>
+    bank.meta(t.id)?.title(ClassQuizBank.variantLang(t.id)) ?? t.title;
+
+/// Mavzularni kurs/fan bo‘yicha guruhlaydi. Bir mavzuning til variantlari
+/// (`<id>`, `<id>~ru`, `<id>~en`) bitta qatorga yig‘iladi — ilova tilidagi
+/// variant tanlanadi (bo‘lmasa — asl o‘zbekcha).
+List<_TopicGroupData> _groupTopics(
+  List<ClassTopic> topics,
+  ClassQuizBank bank,
+  String lang,
+  AppLocalizations l,
+  String query,
+) {
+  final byBase = <String, Map<String, ClassTopic>>{};
+  for (final t in topics) {
+    final variants = byBase.putIfAbsent(ClassQuizBank.baseId(t.id), () => {});
+    variants[ClassQuizBank.variantLang(t.id)] = t;
+  }
+  final q = query.trim().toLowerCase();
+  final groups = <String, _TopicGroupData>{};
+  for (final e in byBase.entries) {
+    final v = e.value;
+    final topic = v[lang] ?? v['uz'] ?? v.values.first;
+    final meta = bank.meta(e.key);
+    final g = meta == null ? null : bank.group(meta.groupId);
+    final gid = g?.id ?? '_other';
+    final group = groups.putIfAbsent(
+      gid,
+      () => _TopicGroupData(
+        gid,
+        g?.title(lang) ?? l.classTopicGroupOther,
+        g?.order ?? 1 << 20,
+      ),
+    );
+    final title = _choiceTitle(topic, bank, lang);
+    if (q.isNotEmpty &&
+        !title.toLowerCase().contains(q) &&
+        !group.title.toLowerCase().contains(q)) {
+      continue;
+    }
+    group.items.add(_TopicChoice(topic: topic, title: title, meta: meta));
+  }
+  final out = [
+    for (final g in groups.values)
+      if (g.items.isNotEmpty) g,
+  ]..sort((a, b) => a.order.compareTo(b.order));
+  for (final g in out) {
+    g.items.sort((a, b) {
+      final c = (a.meta?.number ?? 0).compareTo(b.meta?.number ?? 0);
+      return c != 0 ? c : a.title.compareTo(b.title);
+    });
+  }
+  return out;
+}
+
+class _TopicGroup extends StatelessWidget {
+  const _TopicGroup({
+    super.key,
+    required this.title,
+    required this.count,
+    required this.initiallyExpanded,
+    required this.children,
+  });
+
+  final String title;
+  final int count;
+  final bool initiallyExpanded;
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    return Theme(
+      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+      child: ExpansionTile(
+        initiallyExpanded: initiallyExpanded,
+        tilePadding: EdgeInsets.zero,
+        childrenPadding: EdgeInsets.zero,
+        title: Text(title, style: t.titleSmall),
+        subtitle: Text(
+          l.classTopicGroupCount(count),
+          style: t.bodySmall?.copyWith(color: c.textSecondary),
+        ),
+        children: children,
+      ),
+    );
+  }
+}
+
+class _TopicCard extends StatelessWidget {
+  const _TopicCard({
+    required this.item,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final _TopicChoice item;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    final topic = item.topic;
+    return FeCard(
+      key: Key('class.topic.${topic.id}'),
+      color: selected ? c.accentContainer : null,
+      onTap: onTap,
+      child: Row(
+        children: [
+          Icon(
+            selected
+                ? Icons.radio_button_checked
+                : Icons.radio_button_unchecked,
+            color: c.accent,
+          ),
+          const SizedBox(width: FeSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(item.title, style: t.titleSmall),
+                Text(
+                  l.classQuestionsAvailable(topic.count),
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+                if (item.machineTranslated)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Row(
+                      children: [
+                        Icon(Icons.translate, size: 14, color: c.textSecondary),
+                        const SizedBox(width: FeSpace.xxs),
+                        Flexible(
+                          child: Text(
+                            l.trStatusMachineDraft,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+              ],
+            ),
+          ),
+          if (topic.isDemo)
+            StatusChip(
+              icon: Icons.science_outlined,
+              label: l.classDemoChip,
+              color: c.warning,
+            ),
+        ],
       ),
     );
   }
@@ -596,7 +806,13 @@ class _Lobby extends ConsumerWidget {
           children: [
             Expanded(
               flex: 5,
-              child: Center(child: SingleChildScrollView(child: join)),
+              child: Center(
+                child: SingleChildScrollView(
+                  keyboardDismissBehavior:
+                      ScrollViewKeyboardDismissBehavior.onDrag,
+                  child: join,
+                ),
+              ),
             ),
             const SizedBox(width: FeSpace.lg),
             Expanded(
@@ -604,7 +820,13 @@ class _Lobby extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Expanded(child: SingleChildScrollView(child: people)),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      keyboardDismissBehavior:
+                          ScrollViewKeyboardDismissBehavior.onDrag,
+                      child: people,
+                    ),
+                  ),
                   const SizedBox(height: FeSpace.sm),
                   start,
                 ],
@@ -822,6 +1044,8 @@ class _Running extends StatelessWidget {
             Expanded(
               flex: 6,
               child: SingleChildScrollView(
+                keyboardDismissBehavior:
+                    ScrollViewKeyboardDismissBehavior.onDrag,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -838,7 +1062,14 @@ class _Running extends StatelessWidget {
               ),
             ),
             const SizedBox(width: FeSpace.lg),
-            Expanded(flex: 3, child: SingleChildScrollView(child: live)),
+            Expanded(
+              flex: 3,
+              child: SingleChildScrollView(
+                keyboardDismissBehavior:
+                    ScrollViewKeyboardDismissBehavior.onDrag,
+                child: live,
+              ),
+            ),
           ],
         ),
       );

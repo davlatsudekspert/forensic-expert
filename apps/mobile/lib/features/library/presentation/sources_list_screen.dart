@@ -52,7 +52,7 @@ class _SourcesListScreenState extends ConsumerState<SourcesListScreen> {
                 e,
           ];
     return Scaffold(
-      appBar: AppBar(title: Text(l.libraryReferences)),
+      appBar: AppBar(title: FeAppBarTitle(l.libraryReferences)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,

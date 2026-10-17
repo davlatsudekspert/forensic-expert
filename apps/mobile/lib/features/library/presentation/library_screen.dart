@@ -125,7 +125,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: Text(_section.label(l))),
+      appBar: AppBar(title: FeAppBarTitle(_section.label(l))),
       body: SafeArea(
         bottom: false,
         child: ListView(
@@ -534,7 +534,7 @@ class LibraryScreen extends ConsumerWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.libraryTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.libraryTitle)),
       body: SafeArea(
         bottom: false,
         child: ListView(
@@ -594,7 +594,7 @@ class StandardsScreen extends ConsumerWidget {
       style: t.labelSmall?.copyWith(color: c.textSecondary),
     );
     return Scaffold(
-      appBar: AppBar(title: Text(l.libraryStandards)),
+      appBar: AppBar(title: FeAppBarTitle(l.libraryStandards)),
       body: SafeArea(
         bottom: false,
         child: ListView(

@@ -102,7 +102,7 @@ class _AuthScaffold extends ConsumerWidget {
     return Scaffold(
       key: screenKey,
       appBar: AppBar(
-        title: Text(title),
+        title: FeAppBarTitle(title),
         actions: [
           IconButton(
             key: const Key('auth.language'),
@@ -184,29 +184,79 @@ class _ErrorText extends StatelessWidget {
   }
 }
 
-class _EmailField extends StatelessWidget {
-  const _EmailField({required this.controller});
+/// Email maydoni. Noto‘g‘ri manzil (masalan «abc») — maydon ostida
+/// tushunarli inline xato (faqat o‘chirilgan tugma emas). Xato yozish
+/// paytida emas, maydondan chiqilganda yoki «Keyingi» bosilganda chiqadi;
+/// tuzatilishi bilan yo‘qoladi.
+class _EmailField extends StatefulWidget {
+  const _EmailField({required this.controller, this.parentShowsError = false});
 
   final TextEditingController controller;
 
+  /// Yuborishda ekran o‘zi xatoni ko‘rsatgan bo‘lsa — takrorlanmaydi.
+  final bool parentShowsError;
+
   @override
-  Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.only(bottom: FeSpace.sm),
-    child: TextField(
-      onTapOutside: (_) => FocusScope.of(context).unfocus(),
-      key: const Key('auth.email'),
-      controller: controller,
-      keyboardType: TextInputType.emailAddress,
-      autofillHints: const [AutofillHints.email],
-      autocorrect: false,
-      enableSuggestions: false,
-      textInputAction: TextInputAction.next,
-      decoration: InputDecoration(
-        labelText: AppLocalizations.of(context).accountEmail,
-        border: const OutlineInputBorder(),
+  State<_EmailField> createState() => _EmailFieldState();
+}
+
+class _EmailFieldState extends State<_EmailField> {
+  final _focus = FocusNode();
+  bool _touched = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _focus.addListener(() {
+      if (!_focus.hasFocus && widget.controller.text.trim().isNotEmpty) {
+        setState(() => _touched = true);
+      }
+    });
+    widget.controller.addListener(_onText);
+  }
+
+  void _onText() {
+    if (mounted && _touched) setState(() {});
+  }
+
+  @override
+  void dispose() {
+    widget.controller.removeListener(_onText);
+    _focus.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final text = widget.controller.text.trim();
+    final invalid =
+        _touched &&
+        !widget.parentShowsError &&
+        text.isNotEmpty &&
+        !EmailAddress.isValid(EmailAddress.normalize(text));
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.sm),
+      child: TextField(
+        onTapOutside: (_) => FocusScope.of(context).unfocus(),
+        key: const Key('auth.email'),
+        focusNode: _focus,
+        controller: widget.controller,
+        keyboardType: TextInputType.emailAddress,
+        autofillHints: const [AutofillHints.email],
+        autocorrect: false,
+        enableSuggestions: false,
+        textInputAction: TextInputAction.next,
+        onSubmitted: (_) => setState(() => _touched = true),
+        decoration: InputDecoration(
+          labelText: l.accountEmail,
+          border: const OutlineInputBorder(),
+          errorText: invalid ? l.authErrInvalidEmail : null,
+          errorMaxLines: 2,
+        ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 class _PasswordField extends StatefulWidget {
@@ -402,7 +452,10 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       brand: true,
       title: l.accountSignIn,
       children: [
-        _EmailField(controller: _email),
+        _EmailField(
+          controller: _email,
+          parentShowsError: _error == AuthFailure.invalidEmail,
+        ),
         _PasswordField(
           controller: _password,
           label: l.accountPassword,
@@ -508,7 +561,10 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
           style: t.bodyMedium?.copyWith(color: c.textSecondary),
         ),
         const SizedBox(height: FeSpace.md),
-        _EmailField(controller: _email),
+        _EmailField(
+          controller: _email,
+          parentShowsError: _error == AuthFailure.invalidEmail,
+        ),
         _PasswordField(
           controller: _password,
           label: l.accountPassword,
@@ -730,7 +786,10 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
       children: [
         Text(l.forgotBody, style: t.bodyLarge),
         const SizedBox(height: FeSpace.md),
-        _EmailField(controller: _email),
+        _EmailField(
+          controller: _email,
+          parentShowsError: _error == AuthFailure.invalidEmail,
+        ),
         _ErrorText(_error),
         _Submit(
           label: l.forgotSubmit,
@@ -1139,7 +1198,10 @@ class _EmailCodeScreenState extends ConsumerState<EmailCodeScreen> {
         if (sent == null) ...[
           Text(l.emailCodeSubtitle, style: t.bodyLarge),
           const SizedBox(height: FeSpace.md),
-          _EmailField(controller: _email),
+          _EmailField(
+            controller: _email,
+            parentShowsError: _error == AuthFailure.invalidEmail,
+          ),
           _ErrorText(_error),
           _Submit(
             label: l.emailCodeSend,

@@ -25,7 +25,7 @@ class QaRulesScreen extends StatelessWidget {
     return QaGate(
       title: l.qaRulesTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.qaRulesTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.qaRulesTitle)),
         body: SafeArea(
           child: ListView(
             key: const Key('qa.rules'),

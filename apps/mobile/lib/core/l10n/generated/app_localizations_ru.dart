@@ -1078,7 +1078,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get screeningBanner =>
-      'РЕЗУЛЬТАТ СКРИНИНГА ≠ ПОДТВЕРЖДЁННАЯ ИДЕНТИФИКАЦИЯ. Положительный скрининг предварителен и требует валидированного подтверждающего метода.';
+      'Результат скрининга — не подтверждённая идентификация. Положительный скрининг предварителен и требует валидированного подтверждающего метода.';
 
   @override
   String get screeningAnalyte => 'Аналит';
@@ -9755,4 +9755,51 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get calcWarnZeroMeasured =>
       'Этанол в образце не обнаружен (0): обратный расчёт не может показать уровень на момент события — этанол мог полностью выйти до взятия образца.';
+
+  @override
+  String get calcTechInfo => 'Техническая информация';
+
+  @override
+  String calcTechModule(String id, String version) {
+    return 'Расчётный модуль: $id, версия $version';
+  }
+
+  @override
+  String classSourceLineNoPage(String author, String title) {
+    return 'Источник: $author, $title';
+  }
+
+  @override
+  String classSourceLineLocator(String author, String title, String locator) {
+    return 'Источник: $author, $title, $locator';
+  }
+
+  @override
+  String get classTopicSearchHint => 'Поиск темы или курса';
+
+  @override
+  String get classTopicGroupOther => 'Другие темы';
+
+  @override
+  String get classTopicNoMatch => 'Подходящих тем не найдено.';
+
+  @override
+  String get classTopicSelected => 'Выбранная тема';
+
+  @override
+  String classTopicGroupCount(int count) {
+    return 'Тем: $count';
+  }
+
+  @override
+  String ghsPCodesDetails(int count) {
+    return 'Подробнее: меры предосторожности (P-коды: $count)';
+  }
+
+  @override
+  String get studyExamUnavailableHub =>
+      'В наборах с отметкой «Только тренировка» экзамена нет: вопросы созданы автоматически или у них нет пояснения либо страницы источника. Для них используйте тренировку.';
+
+  @override
+  String get studyQuizAboutPractice => 'О режиме тренировки и вариантах';
 }

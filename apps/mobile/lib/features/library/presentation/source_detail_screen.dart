@@ -109,7 +109,7 @@ class SourceDetailScreen extends ConsumerWidget {
     final entry = ref.watch(sourceIndexProvider)[sourceId];
     return Scaffold(
       appBar: AppBar(
-        title: Text(l.sourceDetailTitle),
+        title: FeAppBarTitle(l.sourceDetailTitle),
         actions: [
           if (entry != null)
             ShareButton(

@@ -1080,7 +1080,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get screeningBanner =>
-      'SKRINING NATIJASI ≠ TASDIQLANGAN IDENTIFIKATSIYA. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi usulni talab qiladi.';
+      'Skrining natijasi — tasdiqlangan identifikatsiya emas. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi usulni talab qiladi.';
 
   @override
   String get screeningAnalyte => 'Analit';
@@ -9668,4 +9668,51 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get calcWarnZeroMeasured =>
       'Namunada etanol aniqlanmagan (0): teskari hisob hodisa paytidagi darajani ko‘rsata olmaydi — etanol namuna olinguncha to‘liq chiqib ketgan bo‘lishi mumkin.';
+
+  @override
+  String get calcTechInfo => 'Texnik ma’lumot';
+
+  @override
+  String calcTechModule(String id, String version) {
+    return 'Hisoblash moduli: $id, versiya $version';
+  }
+
+  @override
+  String classSourceLineNoPage(String author, String title) {
+    return 'Manba: $author, $title';
+  }
+
+  @override
+  String classSourceLineLocator(String author, String title, String locator) {
+    return 'Manba: $author, $title, $locator';
+  }
+
+  @override
+  String get classTopicSearchHint => 'Mavzu yoki kursni qidiring';
+
+  @override
+  String get classTopicGroupOther => 'Boshqa mavzular';
+
+  @override
+  String get classTopicNoMatch => 'Mos mavzu topilmadi.';
+
+  @override
+  String get classTopicSelected => 'Tanlangan mavzu';
+
+  @override
+  String classTopicGroupCount(int count) {
+    return '$count ta mavzu';
+  }
+
+  @override
+  String ghsPCodesDetails(int count) {
+    return 'Batafsil: ehtiyot choralari (P-kodlar, $count ta)';
+  }
+
+  @override
+  String get studyExamUnavailableHub =>
+      '«Faqat mashq» belgili to‘plamlarda imtihon yo‘q: savollar avtomatik tuzilgan yoki ularda izoh yoki manbadagi sahifa yo‘q. Ular bo‘yicha mashq rejimidan foydalaning.';
+
+  @override
+  String get studyQuizAboutPractice => 'Mashq rejimi va variantlar haqida';
 }

@@ -33,7 +33,12 @@ void main() {
   );
 
   Future<void> calculate(WidgetTester tester) async {
-    await tester.ensureVisible(find.byKey(const Key('calc.calculate')));
+    // Markazga: pastki suzuvchi navigatsiya tugmani yopib qo‘ymasin.
+    await Scrollable.ensureVisible(
+      tester.element(find.byKey(const Key('calc.calculate'))),
+      alignment: 0.5,
+    );
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('calc.calculate')));
     await tester.pumpAndSettle();
   }
@@ -113,7 +118,11 @@ void main() {
       await calculate(tester);
       // A = 157,8 g; min = 157,8·0,7/56 − 0,4; max = 157,8·0,9/56 − 0,2.
       expect(find.text('1,57–2,34 ‰'), findsOneWidget);
-      await tester.ensureVisible(find.byKey(const Key('calc.copy')));
+      await Scrollable.ensureVisible(
+        tester.element(find.byKey(const Key('calc.copy'))),
+        alignment: 0.5,
+      );
+      await tester.pumpAndSettle();
       await tester.tap(find.byKey(const Key('calc.copy')));
       await tester.pumpAndSettle();
       expect(copied, contains(uz.toolWidmarkName));

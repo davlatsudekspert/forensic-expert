@@ -97,7 +97,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(e.name.resolve(lang)),
+        title: FeAppBarTitle(e.name.resolve(lang)),
         actions: [
           ShareButton(
             text: (l) => recordShareText(
@@ -440,7 +440,9 @@ class _NoteCard extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(left: FeSpace.sm),
                 child: localized
-                    ? Text(note.resolve(lang), style: t.bodyMedium)
+                    ? (note.kind == 'ghs'
+                          ? _GhsNoteText(text: note.resolve(lang))
+                          : Text(note.resolve(lang), style: t.bodyMedium))
                     // Manbadan asl izoh: tarjima birinchi, asl «Asl matn».
                     : LocalizedContentText(
                         kind: ContentTextKind.entityNote,
@@ -469,6 +471,66 @@ class _NoteCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// GHS izohidagi ehtiyot choralari P-kodlari (masalan, 25 ta) uzun ro‘yxat
+/// bo‘lib turmasin: xavf bayonotlari (H) va piktogrammalar ko‘rinadi,
+/// P-kodlar «Batafsil» ostida yig‘ilgan.
+(String, List<String>)? splitGhsPCodes(String text) {
+  final m = RegExp(
+    r'\s*[^.;]*\(P-[^)]*\)\s*:\s*((?:P\d{3}(?:\+P\d{3})*(?:,\s*)?)+)\.?\s*$',
+  ).firstMatch(text);
+  if (m == null) return null;
+  final codes = [
+    for (final c in m.group(1)!.split(RegExp(r',\s*')))
+      if (c.trim().isNotEmpty) c.trim(),
+  ];
+  if (codes.isEmpty) return null;
+  return (text.substring(0, m.start).trim(), codes);
+}
+
+class _GhsNoteText extends StatelessWidget {
+  const _GhsNoteText({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    final split = splitGhsPCodes(text);
+    if (split == null) return Text(text, style: t.bodyMedium);
+    final (summary, codes) = split;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(summary, style: t.bodyMedium),
+        Theme(
+          data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+          child: ExpansionTile(
+            key: const Key('reagent.ghs.pcodes'),
+            dense: true,
+            tilePadding: EdgeInsets.zero,
+            childrenPadding: const EdgeInsets.only(bottom: FeSpace.xs),
+            expandedAlignment: AlignmentDirectional.centerStart,
+            visualDensity: VisualDensity.compact,
+            title: Text(
+              l.ghsPCodesDetails(codes.length),
+              style: t.labelLarge?.copyWith(color: c.accent),
+            ),
+            children: [
+              Text(
+                codes.join(', '),
+                style: FeThemeBuilder.numeric(t.bodySmall!)
+                    .copyWith(color: c.textSecondary),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

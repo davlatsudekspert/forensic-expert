@@ -1993,7 +1993,7 @@ abstract class AppLocalizations {
   /// Permanent screening disclaimer.
   ///
   /// In en, this message translates to:
-  /// **'SCREENING RESULT ≠ CONFIRMED IDENTIFICATION. A positive screen is presumptive and requires a validated confirmatory method.'**
+  /// **'A screening result is not a confirmed identification. A positive screen is presumptive and requires a validated confirmatory method.'**
   String get screeningBanner;
 
   /// Screening field.
@@ -16892,6 +16892,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.'**
   String get calcWarnZeroMeasured;
+
+  /// Collapsed section on a calculator page with the module id and version.
+  ///
+  /// In en, this message translates to:
+  /// **'Technical details'**
+  String get calcTechInfo;
+
+  /// Technical line inside the collapsed 'Technical details' section.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculation module: {id}, version {version}'**
+  String calcTechModule(String id, String version);
+
+  /// Class quiz source line when the source has no page.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {author}, {title}'**
+  String classSourceLineNoPage(String author, String title);
+
+  /// Class quiz source line when the place is a chapter/section, not a page number.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {author}, {title}, {locator}'**
+  String classSourceLineLocator(String author, String title, String locator);
+
+  /// Search field above the grouped topic list (teacher, new class quiz).
+  ///
+  /// In en, this message translates to:
+  /// **'Search a topic or course'**
+  String get classTopicSearchHint;
+
+  /// Group title for topics without a course/subject in the question bank index.
+  ///
+  /// In en, this message translates to:
+  /// **'Other topics'**
+  String get classTopicGroupOther;
+
+  /// Topic search returned nothing.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching topics.'**
+  String get classTopicNoMatch;
+
+  /// Label above the selected topic summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected topic'**
+  String get classTopicSelected;
+
+  /// Number of topics in a course group.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} topics'**
+  String classTopicGroupCount(int count);
+
+  /// Collapsed list of GHS precautionary P-codes under a hazard note.
+  ///
+  /// In en, this message translates to:
+  /// **'Details: precautionary statements ({count} P-codes)'**
+  String ghsPCodesDetails(int count);
+
+  /// One note at the top of the study hub (replaces the repeated per-set text and disabled Exam buttons).
+  ///
+  /// In en, this message translates to:
+  /// **'Sets marked “Practice only” have no exam: their questions are generated automatically or lack an explanation or page in the source. Use Practice for them.'**
+  String get studyExamUnavailableHub;
+
+  /// Title of the single collapsible info box on the first practice question.
+  ///
+  /// In en, this message translates to:
+  /// **'About practice mode and options'**
+  String get studyQuizAboutPractice;
 }
 
 class _AppLocalizationsDelegate

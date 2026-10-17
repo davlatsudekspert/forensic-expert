@@ -8,6 +8,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/avatar.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../core/widgets/fe_components.dart';
 
 /// Profil rasmi tanlash oqimi: bottom sheet → galereya → moslash → saqlash.
 Future<void> showAvatarActions(BuildContext context, WidgetRef ref) async {
@@ -140,7 +141,7 @@ class _AvatarCropScreenState extends State<AvatarCropScreen> {
     final width = MediaQuery.sizeOf(context).width;
     final side = (width - FeSpace.lg * 2).clamp(200.0, 420.0);
     return Scaffold(
-      appBar: AppBar(title: Text(l.avatarCropTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.avatarCropTitle)),
       body: SafeArea(
         child: Column(
           children: [

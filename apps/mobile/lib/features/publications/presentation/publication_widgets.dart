@@ -49,7 +49,7 @@ class PublicationsGate extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     if (ref.watch(publicationsVisibleProvider)) return child;
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(title: FeAppBarTitle(title)),
       body: SafeArea(
         child: FeEmptyState(
           key: const Key('publications.unavailable'),

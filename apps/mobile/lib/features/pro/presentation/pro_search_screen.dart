@@ -65,7 +65,7 @@ class _ProSearchScreenState extends ConsumerState<ProSearchScreen> {
     final lang = Localizations.localeOf(context).languageCode;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.proSearchTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.proSearchTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,

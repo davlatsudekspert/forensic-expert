@@ -7,6 +7,7 @@ import '../../../app/routes.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/widgets/fe_components.dart';
 import '../../../domain/qa/qa_models.dart';
 import '../../moderation/presentation/moderation_widgets.dart';
 import '../qa_strings.dart';
@@ -81,7 +82,7 @@ class _QaAskScreenState extends ConsumerState<QaAskScreen> {
     return QaGate(
       title: l.qaAskTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.qaAskTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.qaAskTitle)),
         body: SafeArea(
           child: ListView(
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,

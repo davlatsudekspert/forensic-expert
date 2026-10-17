@@ -8,6 +8,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/settings/settings_controller.dart';
+import '../../../core/widgets/fe_components.dart';
 import 'onboarding_progress.dart';
 
 /// Ilmiy ogohlantirish. Onboarding’da — uchta qisqa band va «To‘liq
@@ -40,7 +41,7 @@ class DisclaimerScreen extends ConsumerWidget {
 
     if (readOnly) {
       return Scaffold(
-        appBar: AppBar(title: Text(l.disclaimerTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.disclaimerTitle)),
         body: SafeArea(
           child: FeScrollableBody(
             padding: const EdgeInsets.symmetric(vertical: FeSpace.md),

@@ -106,7 +106,7 @@ class ProfileScreen extends ConsumerWidget {
     // yordam → tasdiqlash → ma’lumotlar → ilova haqida. Har bo‘lim —
     // bitta guruhlangan karta.
     return Scaffold(
-      appBar: AppBar(title: Text(l.profileTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.profileTitle)),
       body: SafeArea(
         bottom: false,
         child: ListView(

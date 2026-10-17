@@ -76,7 +76,9 @@ class ClassPlayScreen extends ConsumerWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(st?.session.topicTitle ?? l.classQuizTitle)),
+      appBar: AppBar(
+        title: FeAppBarTitle(st?.session.topicTitle ?? l.classQuizTitle),
+      ),
       body: SafeArea(
         child: Column(
           children: [
@@ -536,9 +538,16 @@ class _MistakeCard extends StatelessWidget {
     String textOf(String? id) =>
         item.options.where((o) => o.id == id).firstOrNull?.text ?? '';
     final src = item.source;
+    // Bet bo‘sh («-», «--») bo‘lsa — betsiz; «I bob, 1.4» kabi joy — «-bet»
+    // qo‘shilmaydi.
+    final page = src.cleanPage;
     final cite = src.isEmpty
         ? null
-        : l.classSourceLine(src.author, src.title, src.page);
+        : page == null
+        ? l.classSourceLineNoPage(src.author, src.title)
+        : src.pageIsNumeric
+        ? l.classSourceLine(src.author, src.title, page)
+        : l.classSourceLineLocator(src.author, src.title, page);
     return FeCard(
       key: Key('class.mistake.${item.index}'),
       child: Column(
@@ -574,6 +583,22 @@ class _MistakeCard extends StatelessWidget {
               cite,
               key: Key('class.source.${item.index}'),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ],
+          if (src.isMachineTranslation) ...[
+            const SizedBox(height: 2),
+            Row(
+              key: Key('class.machineTranslation.${item.index}'),
+              children: [
+                Icon(Icons.translate, size: 14, color: c.textSecondary),
+                const SizedBox(width: FeSpace.xxs),
+                Flexible(
+                  child: Text(
+                    l.trStatusMachineDraft,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                ),
+              ],
             ),
           ],
         ],

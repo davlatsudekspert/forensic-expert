@@ -109,8 +109,28 @@ select 'mavzu-id', 'Mavzu nomi', ord::int, q->>'question', q->'options', (q->>'c
 from jsonb_array_elements('<mcq JSON massivi>'::jsonb) with ordinality t(q, ord);
 ```
 ABY asosidagi savollar CLAUDE.md qoidalariga bo'ysunadi (so'zma-so'z iqtibos yo'q, aniq joyi bilan, faqat o'zbekcha).
-Hozir ilovada slayd/test kontenti yo'q (`tools/slides/out` bo'sh), shuning uchun **DEMO** fixture:
-`lib/data/class_quiz/class_quiz_demo_bank.dart` — 10 ta oddiy umumiy savol, hammasi «DEMO» belgili, ilmiy manba emas.
+### 5.1 Haqiqiy savollar banki (2026-10-17)
+Manba: `slides-out` branchidagi `quiz/*.json` (`tools/slides/generate_quiz.py` chiqishi; uz asl + ru/en
+`auto_unreviewed`). Import — takror ishga tushiriladigan skript:
+```
+git fetch origin slides-out
+python3 tools/class_quiz/import_quiz_bank.py --git-ref origin/slides-out      # → ilova asseti
+python3 tools/class_quiz/import_quiz_bank.py --git-ref origin/slides-out --check   # yangilanganmi
+python3 tools/class_quiz/import_quiz_bank.py --git-ref origin/slides-out --sql build/class_quiz_bank_seed.sql
+```
+* Natija: `apps/mobile/assets/content/class_quiz/class_quiz_bank.json` — hozir **18 mavzu, 540 savol** (har biri uz/ru/en),
+  4 guruh (Bioetika 2-kurs; Sud tibbiyoti 4-kurs davolash / pediatriya; 5-kurs tibbiy profilaktika). Guruh — `topic_id`
+  prefiksidan (yangi prefiks bo'lsa skriptdagi `GROUPS` ga qo'shing, aks holda «Boshqa mavzular»).
+* Tekshiruv: 4 variant, `correct_index` 0–3, har tilda savol/izoh, manba muallif+sarlavha+bet; bet bo'sh yoki «-»/«--» bo'lsa
+  savol **kirmaydi** (hozir o'tkazilgan: 0).
+* Ilovada: har mavzu uch til varianti — `<id>` (uz), `<id>~ru`, `<id>~en`; ustoz ilova tilidagi variantni ko'radi, ru/en da
+  «Avtomatik tarjima — tekshirilmagan» belgisi (mavzu kartasida va natijadagi manba ostida). «Test o'tkazish»: qidiruv +
+  kurs/fan bo'yicha yig'iladigan guruhlar; savollar soni — mavjud slayder (5–20).
+* Manba qatori: raqamli bet — «…, 263-bet»; joy («I bob, 1.4») — o'zicha; bet yo'q — betsiz (avvalgi «-- bet» yo'q).
+* Server (Supabase) rejimida mavzular `class_quiz_questions` dan keladi: `--sql` bilan yaratilgan seed (shu `~ru/~en`
+  variantlari bilan) **egasi tasdig'i bilan** qo'llanadi — bu agent production DB'ga hech narsa yozmadi.
+* **DEMO** to'plam (`lib/data/class_quiz/class_quiz_demo_bank.dart`, «DEMO: oddiy savollar») faqat debug/test yig'masida
+  (`kReleaseMode` da ko'rinmaydi).
 
 ## 6. Realtime tanlovi: 2 s polling
 

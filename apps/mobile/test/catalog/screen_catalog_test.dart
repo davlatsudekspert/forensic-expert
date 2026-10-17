@@ -31,6 +31,7 @@ import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/support.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
+import 'package:forensic_expert/data/class_quiz/class_quiz_bank.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/data/support/in_memory_support_service.dart';
 import 'package:forensic_expert/domain/admin/admin_models.dart';
@@ -164,14 +165,14 @@ Act enterKey(String key, String text) => (t, c) async {
   await t.pumpAndSettle();
 };
 
-Act calc(String fill) => seq([
-  enterAll(fill),
+/// Hisoblash tugmasi, so‘ng natija (yoki xato) ekranga keltiriladi.
+Act _calculateAndShow() => seq([
   (t, c) async {
     final b = find.byKey(const Key('calc.calculate'));
     if (b.evaluate().isNotEmpty) await _tap(t, b);
   },
   (t, c) async {
-    for (final k in ['calc.result', 'calc.error']) {
+    for (final k in ['calc.error', 'calc.result']) {
       final f = find.byKey(Key(k));
       if (f.evaluate().isNotEmpty) {
         await t.ensureVisible(f.first);
@@ -180,6 +181,62 @@ Act calc(String fill) => seq([
       }
     }
   },
+]);
+
+/// Xato kiritish: har maydonga bir xil qiymat.
+Act calc(String fill) => seq([enterAll(fill), _calculateAndShow()]);
+
+/// To‘g‘ri kiritish: har kalkulyator uchun ma’lum javobli namuna qiymatlar
+/// (o‘nlik vergul bilan — uz klaviaturasi). Maydon kaliti → qiymat.
+/// Kutilgan javoblar `test/widget/calc_correct_input_test.dart` da.
+const calcSamples = <String, List<(String, String)>>{
+  'tool.fm.pmi_henssge': [
+    ('calc.rectal', '30'),
+    ('calc.ambient', '15'),
+    ('calc.weight', '70'),
+  ],
+  'tool.tox.widmark': [
+    ('calc.weight', '70'),
+    ('calc.drink.0.volume', '100'),
+    ('calc.drink.0.abv', '40'),
+    ('calc.hours', '1'),
+  ],
+  'tool.tox.back_calculation': [('calc.bac', '0,5'), ('calc.hours', '2')],
+  'tool.lab.dilution': [
+    ('calc.field.c1', '10'),
+    ('calc.field.c2', '1'),
+    ('calc.field.v2', '100'),
+  ],
+  'tool.lab.solution': [
+    ('calc.solution.conc', '10'),
+    ('calc.solution.vol', '100'),
+  ],
+  'tool.lab.percent': [('calc.percent', '5'), ('calc.total', '200')],
+  'tool.lab.molarity': [
+    ('calc.mass', '584,4'),
+    ('calc.mm', '58,44'),
+    ('calc.volume', '100'),
+  ],
+  'tool.lab.calibration': [
+    ('calc.points', '0 0,02\n1 0,21\n2 0,39\n5 1,01\n10 1,98'),
+  ],
+  'tool.lab.lod_loq': [
+    ('calc.points', '0 0,02\n1 0,21\n2 0,39\n5 1,01\n10 1,98'),
+  ],
+  'tool.lab.descriptive_stats': [('calc.values', '0,52 0,49 0,55 0,51 0,50')],
+  'tool.conv.concentration_units': [('calc.value', '1,5')],
+  'tool.conv.ethanol_units': [('calc.value', '0,8')],
+  'tool.lab.beer_lambert': [
+    ('calc.absorbance', '0,45'),
+    ('calc.absorptivity', '15000'),
+    ('calc.path', '1'),
+  ],
+};
+
+Act calcSample(String toolId) => seq([
+  for (final (k, v) in calcSamples[toolId]!) enterKey(k, v),
+  if (toolId == 'tool.lab.lod_loq') tapKey('calc.regress'),
+  _calculateAndShow(),
 ]);
 
 // ---------------------------------------------------------- sinf «serveri»
@@ -195,10 +252,15 @@ class _Share implements ClassFileShare {
 
 class ClassWorld {
   ClassWorld() {
+    // Haqiqiy savollar banki (ilova asseti); DEMO to‘plam yo‘q.
     backend = FakeClassQuizBackend(
       clock: () => now,
       rng: Random(5),
       teachers: {'t1'},
+      topics: const [],
+      topicLoader: () async =>
+          ClassQuizBank.parse(File(classQuizBankAsset).readAsStringSync())
+              .variants,
     );
     teacher = FakeClassQuizService(backend, userId: 't1', demo: false);
     student = FakeClassQuizService(backend, userId: 'stu', demo: false);
@@ -214,7 +276,8 @@ ClassWorld? _world;
 Future<ClassSessionInfo> _session({int students = 3}) async {
   final w = _world!;
   final s = (await w.teacher.createSession(
-    topicId: 'demo-topic',
+    // Sud-tibbiy toksikologiya (4-kurs, davolash) — ilova tilidagi variant.
+    topicId: ClassQuizBank.variantId('4-kurs-davolash-10', _lang),
     settings: const ClassQuizSettings(questionCount: 5, studentLimit: 30),
   )).value!;
   for (final n in ['Ali', 'Gulnora', 'Bekzod'].take(students)) {
@@ -228,6 +291,9 @@ Future<ClassSessionInfo> _session({int students = 3}) async {
 
 /// Ustoz/talaba ko‘rinishi: `asStudent` bo‘lsa talaba xizmati provayderda.
 bool _asStudent = false;
+
+/// Joriy variant tili (sinf mavzusi shu tildagi varianti tanlanadi).
+String _lang = 'uz';
 
 // ------------------------------------------------------------------ katalog
 
@@ -324,6 +390,25 @@ final shots = <Shot>[
     Routes.classNew,
     classWorld: true,
     important: true,
+  ),
+  Shot(
+    'sinf_yaratish',
+    'Ustoz: test yaratish (mavzu tanlash)',
+    Routes.classNew,
+    state: 'qidiruv «toksik» + mavzu tanlangan',
+    classWorld: true,
+    important: true,
+    act: seq([
+      (t, c) async {
+        await enterKey('class.topicSearch', switch (_lang) {
+          'ru' => 'токсик',
+          'en' => 'toxic',
+          _ => 'toksik',
+        })(t, c);
+      },
+      tapPrefix('class.topic.4-kurs-davolash-10'),
+      scrollTo('class.createSubmit'),
+    ]),
   ),
   Shot(
     'sinf_kod_qr',
@@ -677,8 +762,8 @@ final shots = <Shot>[
       'Kalkulyator: ${tool.id}',
       Routes.tool(tool.id),
       persona: Persona.expert,
-      state: 'to‘g‘ri kiritish (har maydon «2»)',
-      act: calc('2'),
+      state: 'to‘g‘ri kiritish (namuna qiymatlar)',
+      act: calcSample(tool.id),
     ),
     Shot(
       'kalk_${tool.id.split('.').last}',
@@ -819,7 +904,15 @@ final shots = <Shot>[
     'Kirish: email kod',
     Routes.accountEmailCode,
     state: 'noto‘g‘ri email xatosi',
-    act: seq([enterAll('abc'), tapKey('emailCode.send')]),
+    act: seq([
+      enterAll('abc'),
+      (t, c) async {
+        // Maydondan chiqish — inline xato shu paytda ko‘rinadi.
+        FocusManager.instance.primaryFocus?.unfocus();
+        await t.pumpAndSettle();
+      },
+      tapKey('emailCode.send'),
+    ]),
   ),
   const Shot('kirish_parol', 'Kirish (parol)', Routes.accountSignIn),
   const Shot('royxatdan_otish', 'Ro‘yxatdan o‘tish', Routes.accountRegister),
@@ -929,7 +1022,25 @@ final shots = <Shot>[
     'Snackbar: natija nusxalandi',
     Routes.tool('tool.lab.dilution'),
     persona: Persona.expert,
-    act: seq([calc('2'), tapKey('calc.copy')]),
+    act: seq([
+      calcSample('tool.lab.dilution'),
+      (t, c) async {
+        // Testda platforma kanaliga javob beruvchi yo‘q: Clipboard.setData
+        // kutib qolardi va snackbar chiqmasdi (avvalgi katalogda 163 bo‘sh).
+        t.binding.defaultBinaryMessenger.setMockMethodCallHandler(
+          SystemChannels.platform,
+          (call) async => null,
+        );
+      },
+      tapKey('calc.copy'),
+      (t, c) async {
+        await t.pump(const Duration(milliseconds: 400));
+        t.binding.defaultBinaryMessenger.setMockMethodCallHandler(
+          SystemChannels.platform,
+          null,
+        );
+      },
+    ]),
   ),
   Shot(
     'dialog_ustoz_tugatish',
@@ -1078,6 +1189,7 @@ ${rows.join('\n')}
       testWidgets('$num ${shot.title} · ${shot.state} · ${v.name}', (t) async {
         debugDisableShadows = false;
         _asStudent = false;
+        _lang = v.lang;
         _world = shot.classWorld ? ClassWorld() : null;
         final settings =
             shot.settings?.call(v) ??
@@ -1103,6 +1215,9 @@ ${rows.join('\n')}
             () async => File(abbreviationGlossaryAsset).readAsStringSync(),
           ),
           supportServiceProvider.overrideWithValue(_support()),
+          classQuizBankLoaderProvider.overrideWithValue(
+            () async => File(classQuizBankAsset).readAsStringSync(),
+          ),
           publicationsFlagProvider.overrideWithValue(true),
           if (admin) ...[
             authRepositoryProvider.overrideWithValue(await signedInMockAuth()),

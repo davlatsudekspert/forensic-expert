@@ -95,7 +95,7 @@ class _CompareJurisdictionsScreenState
     ]..sort((a, b) => a.id.compareTo(b.id));
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.compareTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.compareTitle)),
       body: SafeArea(
         child: ListView(
           key: const Key('compare.list'),

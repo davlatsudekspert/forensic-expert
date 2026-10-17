@@ -87,8 +87,22 @@ void main() {
       await qa.tapFinder(find.byKey(const Key('teacher.run')));
       qa.expectText(l.classNewTitle, s);
     });
+    await qa.step('USTOZ: mavzu qidiruvi (haqiqiy savollar banki)', (s) async {
+      // Mavzular kurs/fan bo‘yicha guruhlangan; DEMO emas, ilovadagi bank.
+      qa.expectText('Sud tibbiyoti · 4-kurs, davolash ishi', s);
+      await qa.enterText(find.byKey(const Key('class.topicSearch')), 'toksik');
+      if (find
+          .byKey(const Key('class.topic.4-kurs-davolash-10'))
+          .evaluate()
+          .isEmpty) {
+        s.passed = false;
+        s.notes.add('qidiruvda «toksik» mavzusi topilmadi');
+      }
+    });
     await qa.step('USTOZ: mavzu → kod va QR', (s) async {
-      await qa.tapFinder(find.byKey(const Key('class.topic.demo-topic')));
+      await qa.tapFinder(
+        find.byKey(const Key('class.topic.4-kurs-davolash-10')),
+      );
       await qa.tapFinder(find.byKey(const Key('class.createSubmit')));
       await qa.settle(maxMs: 4000);
       if (find.byKey(const Key('class.code')).evaluate().isEmpty) {

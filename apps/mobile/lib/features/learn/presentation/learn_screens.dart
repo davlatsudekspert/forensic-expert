@@ -59,7 +59,7 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
     final noCards = repo.flashcards().isEmpty;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.moduleLearn)),
+      appBar: AppBar(title: FeAppBarTitle(l.moduleLearn)),
       body: SafeArea(
         child: ListView(
           children: [
@@ -451,7 +451,7 @@ class _ExamScreenState extends ConsumerState<ExamScreen> {
         .length;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.learnExam)),
+      appBar: AppBar(title: FeAppBarTitle(l.learnExam)),
       body: SafeArea(
         child: ListView(
           children: [
@@ -610,7 +610,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     final questions = ref.watch(learnRepositoryProvider).quiz();
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.learnQuiz)),
+      appBar: AppBar(title: FeAppBarTitle(l.learnQuiz)),
       body: SafeArea(
         child: questions.isEmpty
             ? const AvailabilityStateView(kind: AvailabilityKind.noReviewedData)
@@ -740,7 +740,7 @@ class _FlashcardsScreenState extends ConsumerState<FlashcardsScreen> {
     final lang = Localizations.localeOf(context).languageCode;
     final cards = ref.watch(learnRepositoryProvider).flashcards();
     return Scaffold(
-      appBar: AppBar(title: Text(l.learnFlashcards)),
+      appBar: AppBar(title: FeAppBarTitle(l.learnFlashcards)),
       body: SafeArea(
         child: cards.isEmpty
             ? const AvailabilityStateView(kind: AvailabilityKind.noReviewedData)

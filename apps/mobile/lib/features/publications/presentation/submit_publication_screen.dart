@@ -126,7 +126,7 @@ class _SubmitPublicationScreenState
     return PublicationsGate(
       title: title,
       child: Scaffold(
-        appBar: AppBar(title: Text(title)),
+        appBar: AppBar(title: FeAppBarTitle(title)),
         body: SafeArea(
           child: signedIn
               ? _form(context, l)

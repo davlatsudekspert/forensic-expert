@@ -60,7 +60,7 @@ class _AdminInboxScreenState extends ConsumerState<AdminInboxScreen> {
     return AdminGate(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.admNavInbox),
+          title: FeAppBarTitle(l.admNavInbox),
           actions: [
             IconButton(
               tooltip: l.adminRefresh,
@@ -269,7 +269,7 @@ class _AdminThreadScreenState extends ConsumerState<AdminThreadScreen> {
     return AdminGate(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.admNavInbox),
+          title: FeAppBarTitle(l.admNavInbox),
           actions: [
             PopupMenuButton<SupportStatus>(
               key: const Key('admin.status'),
@@ -361,7 +361,7 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
         );
     return AdminGate(
       child: Scaffold(
-        appBar: AppBar(title: Text(l.admNavUsers)),
+        appBar: AppBar(title: FeAppBarTitle(l.admNavUsers)),
         body: SafeArea(
           child: ListView(
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -621,7 +621,7 @@ class AdminAuditScreen extends ConsumerWidget {
     return AdminGate(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.admNavAudit),
+          title: FeAppBarTitle(l.admNavAudit),
           actions: [
             IconButton(
               tooltip: l.adminRefresh,

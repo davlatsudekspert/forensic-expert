@@ -4,6 +4,52 @@ import '../design/theme.dart';
 import '../design/tokens.dart';
 import '../l10n/generated/app_localizations.dart';
 
+/// AppBar sarlavhasi: bir qatorga sig‘sa — odatdagi 20 sp serif; sig‘masa —
+/// biroz kichikroq shrift bilan **ikki qator** (uzun modda/usul nomlari
+/// «GC (gaz xromat…» bo‘lib kesilmasin). Ikki qatorga ham sig‘masa — oxiri
+/// «…» bilan.
+class FeAppBarTitle extends StatelessWidget {
+  const FeAppBarTitle(this.text, {super.key});
+
+  final String text;
+
+  /// Ikki qatorli rejimdagi shrift (toolbar 60 dp ga 2 qator sig‘adi).
+  static const double twoLineFontSize = 16.5;
+
+  @override
+  Widget build(BuildContext context) {
+    final base = DefaultTextStyle.of(context).style;
+    final scaler = MediaQuery.textScalerOf(context);
+    final dir = Directionality.of(context);
+    return LayoutBuilder(
+      builder: (context, box) {
+        final one = TextPainter(
+          text: TextSpan(text: text, style: base),
+          maxLines: 1,
+          textDirection: dir,
+          textScaler: scaler,
+        )..layout(maxWidth: box.maxWidth);
+        final fits = !one.didExceedMaxLines;
+        one.dispose();
+        if (fits) {
+          return Text(text, maxLines: 1, overflow: TextOverflow.ellipsis);
+        }
+        return Text(
+          text,
+          maxLines: 2,
+          softWrap: true,
+          overflow: TextOverflow.ellipsis,
+          style: base.copyWith(
+            fontSize: twoLineFontSize,
+            height: 1.15,
+            letterSpacing: -0.1,
+          ),
+        );
+      },
+    );
+  }
+}
+
 /// Bo‘lim sarlavhasi (header semantikasi bilan) va ixtiyoriy amal.
 class FeSectionHeader extends StatelessWidget {
   const FeSectionHeader(
@@ -204,7 +250,15 @@ class FeBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
     final (bg, fg, border, width) = switch (tone) {
-      FeBannerTone.critical => (c.surface, c.textPrimary, c.danger, 2.0),
+      // Mayin xavf foni (qattiq qizil ramka va KATTA HARF o‘rniga): daraja
+      // ikonka shakli, qizil ikonka va ekran o‘quvchisi uchun nomi bilan
+      // ajraladi.
+      FeBannerTone.critical => (
+        Color.alphaBlend(c.danger.withValues(alpha: 0.07), c.surface),
+        c.textPrimary,
+        c.danger.withValues(alpha: 0.35),
+        1.0,
+      ),
       FeBannerTone.warning => (
         c.warningContainer,
         c.onWarningContainer,
@@ -270,7 +324,7 @@ class FeBanner extends StatelessWidget {
                     color: fg,
                     height: 1.45,
                     fontWeight: tone == FeBannerTone.critical
-                        ? FontWeight.w600
+                        ? FontWeight.w500
                         : null,
                   ),
                 ),

@@ -345,12 +345,14 @@ class _Results extends ConsumerWidget {
         final local = term.textIn(lang);
         return term.translation.localized.values.contains(m) ? local : m;
       }
+      // Modda/bilim yozuvi: sarlavha doim joriy tildagi nom (uz rejimida
+      // «methyl alcohol» emas, «Metanol»). Sinonim sarlavhaga chiqarilmaydi —
+      // u boshqa tilda bo‘lishi mumkin (aralash til).
       final name =
           library.byId(hit.entityId)?.name ??
           knowledge.byId(hit.entityId)?.name;
       if (name == null) return m;
-      final local = name.resolve(lang);
-      return name.values.values.contains(m) ? local : m;
+      return name.resolve(lang);
     }
 
     /// Natija nima ekanini aniq ko‘rsatadi: kategoriya · (asosiy yozuv) ·

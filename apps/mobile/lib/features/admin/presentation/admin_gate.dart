@@ -43,7 +43,7 @@ class NotAuthorizedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(l.admNotAuthorizedTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.admNotAuthorizedTitle)),
       body: SafeArea(
         child: Center(
           child: Padding(

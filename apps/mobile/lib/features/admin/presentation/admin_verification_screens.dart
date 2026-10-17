@@ -47,7 +47,7 @@ class AdminVerificationsScreen extends ConsumerWidget {
     return AdminGate(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.admNavVerify),
+          title: FeAppBarTitle(l.admNavVerify),
           actions: [
             IconButton(
               key: const Key('adminVerify.refresh'),
@@ -238,7 +238,7 @@ class AdminVerificationDetailScreen extends ConsumerWidget {
     };
     return AdminGate(
       child: Scaffold(
-        appBar: AppBar(title: Text(l.admNavVerify)),
+        appBar: AppBar(title: FeAppBarTitle(l.admNavVerify)),
         body: SafeArea(
           child: switch (data) {
             AsyncLoading() => Padding(

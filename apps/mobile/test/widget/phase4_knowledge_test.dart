@@ -237,7 +237,12 @@ void main() {
       ),
       '100',
     );
-    await tester.ensureVisible(find.byKey(const Key('calc.calculate')));
+    // Markazga: pastki suzuvchi navigatsiya tugmani yopib qo‘ymasin.
+    await Scrollable.ensureVisible(
+      tester.element(find.byKey(const Key('calc.calculate'))),
+      alignment: 0.5,
+    );
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('calc.calculate')));
     await tester.pumpAndSettle();
     // 0.1 g/L × 0.1 L = 0.01 g = 10 mg (ta’rifiy hisob).

@@ -315,7 +315,7 @@
   "reagentDisposal": "Utilizatsiya",
   "reagentQc": "Sifat nazorati",
   "reagentOpenCalculator": "Eritma tayyorlash kalkulyatori",
-  "screeningBanner": "SKRINING NATIJASI ≠ TASDIQLANGAN IDENTIFIKATSIYA. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi usulni talab qiladi.",
+  "screeningBanner": "Skrining natijasi — tasdiqlangan identifikatsiya emas. Ijobiy skrining dastlabki natija bo‘lib, validatsiyadan o‘tgan tasdiqlovchi usulni talab qiladi.",
   "screeningAnalyte": "Analit",
   "screeningSpecimen": "Namuna",
   "screeningPrinciple": "Prinsip",
@@ -2797,5 +2797,17 @@
   "referralHow3": "Siz faqat umumiy sonlarni ko‘rasiz — ismlar va ma’lumotlar ko‘rinmaydi.",
   "pubEmptyTitle": "Hali maqola yo‘q",
   "pubEmptyBody": "Tajribangiz bilan birinchi bo‘lib bo‘lishing: «Maqola yuborish» tugmasi pastda. Moderatsiyadan so‘ng maqola shu yerda chiqadi.",
-  "calcWarnZeroMeasured": "Namunada etanol aniqlanmagan (0): teskari hisob hodisa paytidagi darajani ko‘rsata olmaydi — etanol namuna olinguncha to‘liq chiqib ketgan bo‘lishi mumkin."
+  "calcWarnZeroMeasured": "Namunada etanol aniqlanmagan (0): teskari hisob hodisa paytidagi darajani ko‘rsata olmaydi — etanol namuna olinguncha to‘liq chiqib ketgan bo‘lishi mumkin.",
+  "calcTechInfo": "Texnik ma’lumot",
+  "calcTechModule": "Hisoblash moduli: {id}, versiya {version}",
+  "classSourceLineNoPage": "Manba: {author}, {title}",
+  "classSourceLineLocator": "Manba: {author}, {title}, {locator}",
+  "classTopicSearchHint": "Mavzu yoki kursni qidiring",
+  "classTopicGroupOther": "Boshqa mavzular",
+  "classTopicNoMatch": "Mos mavzu topilmadi.",
+  "classTopicSelected": "Tanlangan mavzu",
+  "classTopicGroupCount": "{count} ta mavzu",
+  "ghsPCodesDetails": "Batafsil: ehtiyot choralari (P-kodlar, {count} ta)",
+  "studyExamUnavailableHub": "«Faqat mashq» belgili to‘plamlarda imtihon yo‘q: savollar avtomatik tuzilgan yoki ularda izoh yoki manbadagi sahifa yo‘q. Ular bo‘yicha mashq rejimidan foydalaning.",
+  "studyQuizAboutPractice": "Mashq rejimi va variantlar haqida"
 }

@@ -105,7 +105,7 @@ class DisciplinesScreen extends ConsumerWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.disciplinesTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.disciplinesTitle)),
       body: SafeArea(
         child: ListView(
           key: const Key('disciplines.list'),
@@ -189,7 +189,7 @@ class DisciplineScreen extends ConsumerWidget {
         if (e.discipline == d) e,
     ];
     return Scaffold(
-      appBar: AppBar(title: Text(l.disciplineName(d))),
+      appBar: AppBar(title: FeAppBarTitle(l.disciplineName(d))),
       body: SafeArea(
         child: ListView(
           key: Key('disciplineDetail.${d.code}'),

@@ -110,7 +110,7 @@ class ClassTeacherGate extends ConsumerWidget {
     return switch (me) {
       AsyncData(:final value) when value.value?.isTeacher ?? false => child,
       AsyncData() => Scaffold(
-        appBar: AppBar(title: Text(l.classQuizTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.classQuizTitle)),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(FeSpace.lg),
@@ -124,11 +124,11 @@ class ClassTeacherGate extends ConsumerWidget {
         ),
       ),
       AsyncError() => Scaffold(
-        appBar: AppBar(title: Text(l.classQuizTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.classQuizTitle)),
         body: Center(child: Text(l.classErrServer)),
       ),
       _ => Scaffold(
-        appBar: AppBar(title: Text(l.classQuizTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.classQuizTitle)),
         body: const Center(child: CircularProgressIndicator()),
       ),
     };

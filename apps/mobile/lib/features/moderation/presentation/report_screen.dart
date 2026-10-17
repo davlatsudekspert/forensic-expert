@@ -87,7 +87,7 @@ class _ReportScreenState extends ConsumerState<ReportScreen> {
     final signedIn = ref.watch(authStateProvider).signedIn;
     final mine = signedIn ? ref.watch(myReportsProvider).value : null;
     return Scaffold(
-      appBar: AppBar(title: Text(l.repTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.repTitle)),
       body: SafeArea(
         child: ListView(
           key: const Key('report.list'),

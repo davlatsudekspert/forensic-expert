@@ -411,6 +411,12 @@ def build_research(known_entities):
     merged, stats = {}, {"input": 0, "duplicates": 0, "rejected_animal": 0}
     rejected = []
     title_index = {}
+    ex_path = "pilot/research_excluded.json"
+    excluded_ids = (
+        {e["research_id"] for e in json.load(open(ex_path))["excluded"]}
+        if os.path.exists(ex_path)
+        else set()
+    )
     for part in ("pubmed", "crossref", "epmc"):
         path = P + f"research_{part}.json"
         if not os.path.exists(path):
@@ -436,6 +442,10 @@ def build_research(known_entities):
                                  reason="animal/veterinary study — out of scope for human forensic library"))
             continue
         rid = "RS-" + hashlib.sha1(k.encode()).hexdigest()[:12]
+        # Mavzuga aloqasiz deb chiqarilganlar (content/tools/research_relevance.py).
+        if rid in excluded_ids:
+            stats["excluded_offtopic"] = stats.get("excluded_offtopic", 0) + 1
+            continue
         links = [REAGENT(x) if x.startswith("rea-") else x for x in r.get("links", [])]
         out.append(dict(research_id=rid, kind=r["kind"], title=r["title"], authors=r.get("authors", []),
                         organization=r.get("organization"), container=r.get("container"),

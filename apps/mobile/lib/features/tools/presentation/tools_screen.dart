@@ -22,7 +22,7 @@ class ToolsScreen extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(l.toolsTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.toolsTitle)),
       body: SafeArea(
         bottom: false,
         child: ListView(

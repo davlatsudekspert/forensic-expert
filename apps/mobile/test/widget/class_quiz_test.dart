@@ -294,6 +294,13 @@ void main() {
       expect(find.byKey(const Key('class.mistake.0')), findsOneWidget);
       expect(find.byKey(const Key('class.source.0')), findsOneWidget);
       expect(find.textContaining('DEMO'), findsWidgets);
+      // DEMO manbasining beti «-» — «--bet» / «- bet» kabi bo‘sh qiymat
+      // ko‘rsatilmaydi.
+      final src = tester
+          .widget<Text>(find.byKey(const Key('class.source.0')))
+          .data!;
+      expect(src, isNot(contains('-bet')));
+      expect(src, isNot(contains('- bet')));
       await _close(tester);
     },
   );

@@ -59,7 +59,7 @@ class _AdminReportsScreenState extends ConsumerState<AdminReportsScreen> {
     return AdminGate(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.admxReportsTitle),
+          title: FeAppBarTitle(l.admxReportsTitle),
           actions: [
             IconButton(
               key: const Key('adminReports.refresh'),

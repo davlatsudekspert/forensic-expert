@@ -75,7 +75,7 @@ class _ClassQuizHubState extends ConsumerState<ClassQuizHubScreen> {
     final scanner = ref.watch(classScannerAvailableProvider);
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.classQuizTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.classQuizTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -365,7 +365,7 @@ class _ClassJoinState extends ConsumerState<ClassJoinScreen> {
     final needSignIn = svc.requiresSignIn && !signedIn;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.classJoinTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.classJoinTitle)),
       body: SafeArea(
         child: ListView(
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -494,7 +494,7 @@ class _ClassScanState extends State<ClassScanScreen> {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(l.classScanTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.classScanTitle)),
       body: Stack(
         fit: StackFit.expand,
         children: [

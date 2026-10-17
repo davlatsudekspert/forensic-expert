@@ -88,7 +88,7 @@ class _QaVerifyScreenState extends ConsumerState<QaVerifyScreen> {
     return QaGate(
       title: l.qaVerifyTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.qaVerifyTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.qaVerifyTitle)),
         body: SafeArea(
           child: ListView(
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,

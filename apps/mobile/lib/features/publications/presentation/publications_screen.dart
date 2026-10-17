@@ -62,7 +62,7 @@ class _PublicationsScreenState extends ConsumerState<PublicationsScreen> {
       title: l.pubTitle,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.pubTitle),
+          title: FeAppBarTitle(l.pubTitle),
           actions: [
             if (signedIn)
               IconButton(
@@ -262,7 +262,7 @@ class PublicationDetailScreen extends ConsumerWidget {
       title: l.pubTitle,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.pubTitle),
+          title: FeAppBarTitle(l.pubTitle),
           actions: [
             if (signedIn && data.value?.status == PublicationStatus.published)
               IconButton(

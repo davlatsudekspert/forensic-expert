@@ -125,7 +125,7 @@ class ModuleHubScreen extends ConsumerWidget {
     final available = links.where((x) => x.$4 > 0).toList();
 
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(title: FeAppBarTitle(title)),
       body: SafeArea(
         child: ListView(
           children: [

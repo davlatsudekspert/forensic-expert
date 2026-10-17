@@ -83,7 +83,7 @@ class EntryDetailScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(entry.name.resolve(lang)),
+        title: FeAppBarTitle(entry.name.resolve(lang)),
         actions: [
           ShareButton(
             text: (l) => recordShareText(

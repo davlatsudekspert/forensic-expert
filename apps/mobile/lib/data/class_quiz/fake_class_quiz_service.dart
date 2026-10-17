@@ -77,18 +77,39 @@ class FakeClassQuizBackend {
     DateTime Function()? clock,
     Random? rng,
     List<ClassBankTopic>? topics,
+    this.topicLoader,
     Set<String>? teachers,
     this.allowSelfJoin = false,
     this.demoBots = 0,
   }) : now = clock ?? DateTime.now,
        _rng = rng ?? Random(),
-       topics = topics ?? [classQuizDemoTopic],
+       topics = [
+         ...(topics ?? [classQuizDemoTopic]),
+       ],
        teachers = teachers ?? <String>{};
 
   final DateTime Function() now;
   final Random _rng;
   final List<ClassBankTopic> topics;
   final Set<String> teachers;
+
+  /// Savollar banki (ilova asseti) — birinchi so‘rovda bir marta yuklanadi.
+  final Future<List<ClassBankTopic>> Function()? topicLoader;
+  Future<void>? _loading;
+
+  /// Bank yuklanmagan bo‘lsa yuklaydi (xato bo‘lsa — mavjud mavzular bilan
+  /// davom etadi; hech narsa to‘qilmaydi).
+  Future<void> ensureLoaded() => _loading ??= () async {
+    final load = topicLoader;
+    if (load == null) return;
+    try {
+      for (final t in await load()) {
+        if (!topics.any((x) => x.id == t.id)) topics.add(t);
+      }
+    } on Object {
+      // Asset o‘qilmadi — bank bo‘sh holati UI’da ko‘rsatiladi.
+    }
+  }();
 
   /// Demo: bitta qurilmada ustoz o‘z sinfiga ham qo‘shila oladi.
   final bool allowSelfJoin;
@@ -772,13 +793,20 @@ class FakeClassQuizService implements ClassQuizService {
   Future<ClassResult<ClassQuizMe>> me() async =>
       ClassResult.ok(backend.me(userId));
   @override
-  Future<ClassResult<List<ClassTopic>>> topics() async =>
-      backend.listTopics(userId);
+  Future<ClassResult<List<ClassTopic>>> topics() async {
+    await backend.ensureLoaded();
+    return backend.listTopics(userId);
+  }
+
   @override
   Future<ClassResult<ClassSessionInfo>> createSession({
     required String topicId,
     required ClassQuizSettings settings,
-  }) async => backend.create(userId, topicId, settings);
+  }) async {
+    await backend.ensureLoaded();
+    return backend.create(userId, topicId, settings);
+  }
+
   @override
   Future<ClassResult<List<ClassSessionInfo>>> mySessions() async =>
       backend.mine(userId);

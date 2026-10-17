@@ -259,10 +259,15 @@ void main() {
         find.byKey(const Key('calc.points')),
         '0 0.1\n1 2.0\n2 4.1\n3 5.9\n4 8.1',
       );
-      await tester.tap(find.byKey(const Key('calc.regress')));
-      await tester.pumpAndSettle();
-      await tester.ensureVisible(find.byKey(const Key('calc.calculate')));
-      await tester.tap(find.byKey(const Key('calc.calculate')));
+      for (final k in ['calc.regress', 'calc.calculate']) {
+        await Scrollable.ensureVisible(
+          tester.element(find.byKey(Key(k))),
+          alignment: 0.5,
+        );
+        await tester.pumpAndSettle();
+        await tester.tap(find.byKey(Key(k)));
+        await tester.pumpAndSettle();
+      }
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('calc.result')), findsOneWidget);
       // PHASE 7 (RG-25): havola ICH Q2(R2) ga ko‘chirildi.

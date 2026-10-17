@@ -208,7 +208,7 @@ class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
       _Period.older => l.researchPeriodOlder,
     };
     return Scaffold(
-      appBar: AppBar(title: Text(l.researchTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.researchTitle)),
       body: SafeArea(
         child: CustomScrollView(
           key: const Key('research.list'),
@@ -419,7 +419,7 @@ class ResearchDetailScreen extends ConsumerWidget {
         (l.researchRelevance, rel),
     ];
     return Scaffold(
-      appBar: AppBar(title: Text(l.researchKindName(r.kind))),
+      appBar: AppBar(title: FeAppBarTitle(l.researchKindName(r.kind))),
       body: SafeArea(
         child: ListView(
           key: Key('researchDetail.${r.id}'),

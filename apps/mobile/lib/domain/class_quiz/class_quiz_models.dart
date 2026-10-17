@@ -414,19 +414,44 @@ class ClassOption {
 /// Savol manbasi (muallif, sarlavha, bet).
 @immutable
 class ClassSource {
-  const ClassSource({this.author = '', this.title = '', this.page = ''});
+  const ClassSource({
+    this.author = '',
+    this.title = '',
+    this.page = '',
+    this.translation = '',
+  });
 
   factory ClassSource.fromJson(Map<String, Object?> j) => ClassSource(
     author: _str(j['author']),
     title: _str(j['title']),
     page: _str(j['page']),
+    translation: _str(j['translation']),
   );
 
   final String author;
   final String title;
+
+  /// Bet raqami («263», «12–23») yoki joy («I bob, 1.4»). «-», «--» — bo‘sh.
   final String page;
 
+  /// Savol matni tarjima holati: bo‘sh — asl til; `auto_unreviewed` —
+  /// avtomatik tarjima, tekshirilmagan (ilova shu belgini ko‘rsatadi).
+  final String translation;
+
   bool get isEmpty => author.isEmpty && title.isEmpty;
+
+  bool get isMachineTranslation => translation == 'auto_unreviewed';
+
+  /// Bet/joy bo‘sh yoki faqat chiziqcha bo‘lsa `null`.
+  String? get cleanPage {
+    final p = page.trim();
+    return RegExp(r'^[\s\-–—.]*$').hasMatch(p) ? null : p;
+  }
+
+  /// Faqat raqamlar va oraliq («263», «12–23», «85, 86») — «-bet» qo‘shiladi;
+  /// aks holda («I bob, 1.4») joy sifatida o‘zicha ko‘rsatiladi.
+  bool get pageIsNumeric =>
+      cleanPage != null && RegExp(r'^[0-9][0-9\s,–—\-]*$').hasMatch(cleanPage!);
 }
 
 /// Talabaga ko‘rinadigan savol (to‘g‘ri javobsiz).

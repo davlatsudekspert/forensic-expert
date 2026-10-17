@@ -26,7 +26,7 @@ class QaGate extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final signedIn = ref.watch(authStateProvider).signedIn;
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(title: FeAppBarTitle(title)),
       body: SafeArea(
         child: FeContentFrameOrSelf(
           child: Column(

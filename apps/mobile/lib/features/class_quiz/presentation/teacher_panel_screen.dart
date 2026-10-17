@@ -33,7 +33,7 @@ class TeacherPanelScreen extends ConsumerWidget {
     final svc = ref.watch(classQuizServiceProvider);
     final teacher = watchIsTeacher(ref);
     return Scaffold(
-      appBar: AppBar(title: Text(l.teacherPanelTitle)),
+      appBar: AppBar(title: FeAppBarTitle(l.teacherPanelTitle)),
       body: ListView(
         key: const Key('teacher.panel'),
         padding: EdgeInsets.only(
@@ -208,7 +208,7 @@ class TeacherResultsScreen extends ConsumerWidget {
     final failure = async.value?.failure;
     return ClassTeacherGate(
       child: Scaffold(
-        appBar: AppBar(title: Text(l.teacherResultsTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.teacherResultsTitle)),
         body: ListView(
           key: const Key('teacher.resultsList'),
           padding: EdgeInsets.only(

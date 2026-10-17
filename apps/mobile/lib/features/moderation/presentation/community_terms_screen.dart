@@ -51,7 +51,7 @@ class _CommunityTermsScreenState extends ConsumerState<CommunityTermsScreen> {
     return QaGate(
       title: l.ctTitle,
       child: Scaffold(
-        appBar: AppBar(title: Text(l.ctTitle)),
+        appBar: AppBar(title: FeAppBarTitle(l.ctTitle)),
         body: SafeArea(
           child: ListView(
             key: const Key('terms.list'),

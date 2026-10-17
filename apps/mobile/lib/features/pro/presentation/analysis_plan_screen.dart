@@ -366,7 +366,7 @@ class AnalysisPlanScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(l.planTitle),
+        title: FeAppBarTitle(l.planTitle),
         actions: [
           if (!plan.isEmpty)
             IconButton(

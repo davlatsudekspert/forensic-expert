@@ -40,7 +40,7 @@ class _QaFeedScreenState extends ConsumerState<QaFeedScreen> {
       title: l.qaTitle,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l.qaTitle),
+          title: FeAppBarTitle(l.qaTitle),
           actions: [
             IconButton(
               key: const Key('qa.rules'),

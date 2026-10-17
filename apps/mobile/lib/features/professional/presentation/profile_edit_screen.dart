@@ -269,7 +269,9 @@ class _ProfileEditScreenState extends ConsumerState<ProfileEditScreen> {
     final pendingDocs = ref.watch(pendingCredentialsProvider).length;
     return Scaffold(
       appBar: AppBar(
-        title: Text(isStudent ? l.profileStudentTitle : l.profileProTitle),
+        title: FeAppBarTitle(
+          isStudent ? l.profileStudentTitle : l.profileProTitle,
+        ),
       ),
       body: SafeArea(
         child: ListView(
