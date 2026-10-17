@@ -55,21 +55,21 @@ grant execute on function pg_temp.cq_as(text), pg_temp.cq_anon(),
 -- t1 teacher, t2 another teacher, ad identity_admin (may host too),
 -- s1..s6 students, n1 an ordinary user, out outsider.
 insert into auth.users (id, email, created_at, email_confirmed_at) values
- ('70000000-0000-0000-0000-0000000000a1', 'teacher-one@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000a2', 'teacher-two@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000a3', 'admin@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000b1', 'student-one@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000b2', 'student-two@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000b3', 'student-three@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000b4', 'student-four@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000b5', 'student-five@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000b6', 'student-six@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000c1', 'plain@secret.example', now(), now()),
- ('70000000-0000-0000-0000-0000000000c2', 'outsider@secret.example', now(), now());
+ ('79000000-0000-0000-0000-0000000000a1', 'teacher-one@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000a2', 'teacher-two@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000a3', 'admin@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000b1', 'student-one@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000b2', 'student-two@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000b3', 'student-three@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000b4', 'student-four@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000b5', 'student-five@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000b6', 'student-six@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000c1', 'plain@secret.example', now(), now()),
+ ('79000000-0000-0000-0000-0000000000c2', 'outsider@secret.example', now(), now());
 insert into account_roles (user_id, role, granted_by) values
- ('70000000-0000-0000-0000-0000000000a1', 'teacher', null),
- ('70000000-0000-0000-0000-0000000000a2', 'teacher', null),
- ('70000000-0000-0000-0000-0000000000a3', 'identity_admin', null);
+ ('79000000-0000-0000-0000-0000000000a1', 'teacher', null),
+ ('79000000-0000-0000-0000-0000000000a2', 'teacher', null),
+ ('79000000-0000-0000-0000-0000000000a3', 'identity_admin', null);
 
 -- Question bank: 8 DEMO questions in topic 'demo-topic', 2 in 'tiny-topic'.
 insert into public.class_quiz_questions
@@ -125,7 +125,7 @@ select pg_temp.cq_blocked($$select public.class_join_session('123456', 'Ali')$$,
   'anon cannot join');
 reset role;
 
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b1');
 select pg_temp.cq_blocked($$select * from public.class_sessions$$,
   'a student cannot read class_sessions directly');
 select pg_temp.cq_blocked($$select * from public.class_quiz_questions$$,
@@ -149,12 +149,12 @@ select pg_temp.cq_forbidden($$select public.class_create_session('demo-topic', 5
 select pg_temp.cq_forbidden($$select public.class_topics()$$,
   'a student cannot list the question topics');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000c1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000c1');
 select pg_temp.cq_forbidden($$select public.class_create_session('demo-topic', 5, 5, 30)$$,
   'a user without the teacher role cannot create a session (403)');
 reset role;
 
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select pg_temp.cq_check((public.class_status()->>'is_teacher')::boolean, 'the teacher role is read from the server');
 select pg_temp.cq_check((public.class_topics()->0->>'count')::int in (2, 8),
   'a teacher sees topics with question counts');
@@ -185,7 +185,7 @@ select pg_temp.cq_check(not exists (
   'shuffling the options keeps the correct answer attached to its text');
 
 -- --------------------------------------------------------------- joining
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b1');
 select pg_temp.cq_check((public.class_join_session('12', 'Ali')->>'error') = 'bad_code', 'short code refused');
 select pg_temp.cq_check((public.class_join_session('000000', 'Ali')->>'error') = 'not_found' or :'scode' = '000000',
   'unknown code refused');
@@ -198,35 +198,35 @@ select pg_temp.cq_check((public.class_join_session(:'scode', 'Boshqa')->>'nickna
   'joining again re-enters under the same nickname');
 reset role;
 
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b2');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b2');
 select public.class_join_session(:'scode', 'ali')->>'participant_id' as p2 \gset
 reset role;
 select pg_temp.cq_check((select nickname = 'ali2' from public.class_participants where id = :'p2'),
   'a duplicate nickname gets a number appended');
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b3');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b3');
 select public.class_join_session(:'scode', 'Gulnora')->>'participant_id' as p3 \gset
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b4');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b4');
 select public.class_join_session(:'scode', 'Sardor')->>'participant_id' as p4 \gset
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b5');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b5');
 select public.class_join_session(:'scode', 'Dilnoza')->>'participant_id' as p5 \gset
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b6');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b6');
 select pg_temp.cq_check((public.class_join_session(:'scode', 'Otabek')->>'error') = 'full',
   'a full class (limit 5) refuses the sixth student');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select pg_temp.cq_check((public.class_join_session(:'scode', 'Ustoz')->>'error') = 'own_session',
   'the teacher cannot join their own session as a student');
 reset role;
 
 -- the joined participant is bound to the account on the server
-select pg_temp.cq_check((select user_id = '70000000-0000-0000-0000-0000000000b1'
+select pg_temp.cq_check((select user_id = '79000000-0000-0000-0000-0000000000b1'
   from public.class_participants where id = :'p1'), 'the participant is bound to the account');
 
 -- ---------------------------------------------------------- rate limiting
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000c2');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000c2');
 select pg_temp.cq_check(bool_and((public.class_join_session('99999' || (g % 10), 'Mehmon')->>'error') in ('not_found', 'bad_code', 'finished')),
   'the first 30 wrong-code attempts get ordinary answers')
   from generate_series(1, 30) g;
@@ -236,11 +236,11 @@ select pg_temp.cq_check((public.class_join_session(:'scode', 'Mehmon')->>'error'
   'even the right code is refused once the limit is hit');
 reset role;
 select pg_temp.cq_check((select n >= 31 from public.class_join_attempts
-  where key = 'u:70000000-0000-0000-0000-0000000000c2'),
+  where key = 'u:79000000-0000-0000-0000-0000000000c2'),
   'failed attempts are counted and survive (no rollback)');
 
 -- ---------------------------------------------------------- start / state
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b1');
 select pg_temp.cq_forbidden(format($$select public.class_start(%L)$$, :'sid'),
   'a student cannot start a session');
 select pg_temp.cq_forbidden(format($$select public.class_teacher_dashboard(%L)$$, :'sid'),
@@ -253,7 +253,7 @@ select pg_temp.cq_check((public.class_session_state(:'sid')->>'phase') = 'lobby'
 select pg_temp.cq_check(not (public.class_session_state(:'sid') ? 'question'), 'no question before the start');
 reset role;
 
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a2');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a2');
 select pg_temp.cq_forbidden(format($$select public.class_start(%L)$$, :'sid'),
   'another teacher cannot start my session');
 select pg_temp.cq_forbidden(format($$select public.class_teacher_dashboard(%L)$$, :'sid'),
@@ -261,7 +261,7 @@ select pg_temp.cq_forbidden(format($$select public.class_teacher_dashboard(%L)$$
 select pg_temp.cq_check((public.class_my_sessions()) = '[]'::jsonb, 'a teacher lists only their own sessions');
 reset role;
 
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select pg_temp.cq_check((public.class_start(:'sid2')->>'error') = 'no_participants', 'cannot start an empty class');
 select pg_temp.cq_check((public.class_teacher_dashboard(:'sid')->>'joined')::int = 5, 'the dashboard counts five joined');
 select pg_temp.cq_check((public.class_start(:'sid')->>'ok')::boolean, 'the owner starts the session');
@@ -274,7 +274,7 @@ select 'o' || correct_index as c0 from public.class_session_questions
 select case when :'c0' = 'o0' then 'o1' else 'o0' end as w0 \gset
 
 -- ------------------------------------------------------ secrecy while open
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b1');
 select pg_temp.cq_check((public.class_session_state(:'sid')->>'phase') = 'open', 'question 0 is open');
 select pg_temp.cq_check(jsonb_array_length(public.class_session_state(:'sid')->'question'->'options') = 4,
   'the student gets four options');
@@ -284,7 +284,7 @@ select pg_temp.cq_check(public.class_session_state(:'sid')::text !~ 'explanation
   'the open question payload carries no explanation');
 select pg_temp.cq_check(public.class_session_state(:'sid')::text !~ '@', 'the student state has no e-mail');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000c2');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000c2');
 select pg_temp.cq_forbidden(format($$select public.class_session_state(%L)$$, :'sid'),
   'an outsider cannot read another session state');
 select pg_temp.cq_forbidden(format($$select public.class_submit_answer(%L, 0, 'o0')$$, :'sid'),
@@ -294,7 +294,7 @@ select pg_temp.cq_forbidden(format($$select public.class_my_results(%L)$$, :'sid
 reset role;
 
 -- ------------------------------------------------------------- answering
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b1');
 select pg_temp.cq_check((public.class_submit_answer(:'sid', 0, :'c0')) = '{"ok": true}'::jsonb,
   'an answer is accepted and the reply does not say whether it was right');
 select pg_temp.cq_check((public.class_submit_answer(:'sid', 0, :'w0')->>'error') = 'already_answered',
@@ -307,10 +307,10 @@ select pg_temp.cq_check((public.class_session_state(:'sid')->>'my_option') = :'c
 select pg_temp.cq_check(not (public.class_session_state(:'sid') ? 'reveal'),
   'still no reveal while the question is open');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b2');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b2');
 select public.class_submit_answer(:'sid', 0, :'w0');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b3');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b3');
 select public.class_submit_answer(:'sid', 0, :'c0');
 reset role;
 
@@ -321,7 +321,7 @@ select pg_temp.cq_check((select not is_correct and points = 0 from public.class_
   where participant_id = :'p2' and question_index = 0), 'a wrong answer earns 0');
 
 -- teacher dashboard: live aggregates, nicknames only
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select public.class_teacher_dashboard(:'sid')::text as dash \gset
 select pg_temp.cq_check((public.class_teacher_dashboard(:'sid')->'current'->>'answered')::int = 3, 'three answers so far');
 select pg_temp.cq_check((public.class_teacher_dashboard(:'sid')->'current'->>'correct_count')::int = 2, 'two of them right');
@@ -333,7 +333,7 @@ reset role;
 -- time runs out on the server clock
 update public.class_sessions set question_started_at = clock_timestamp() - interval '30.5 seconds'
   where id = :'sid';
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b4');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b4');
 select pg_temp.cq_check((public.class_session_state(:'sid')->>'phase') = 'closed', 'after 30 s the phase is closed');
 select pg_temp.cq_check(not (public.class_session_state(:'sid') ? 'reveal'),
   'the right answer is still held back during the 1.5 s settling window');
@@ -342,7 +342,7 @@ select pg_temp.cq_check((public.class_submit_answer(:'sid', 0, :'c0')->>'ok')::b
 reset role;
 update public.class_sessions set question_started_at = clock_timestamp() - interval '40 seconds'
   where id = :'sid';
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b5');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b5');
 select pg_temp.cq_check((public.class_submit_answer(:'sid', 0, :'c0')->>'error') = 'time_over',
   'an answer after the time is refused (server clock)');
 select pg_temp.cq_check((public.class_session_state(:'sid')->'reveal'->>'correct_option') = :'c0',
@@ -354,14 +354,14 @@ select pg_temp.cq_check((select count(*) = 4 from public.class_answers where que
   'four stored answers: the late one was not stored');
 
 -- ------------------------------------------------------- next / kick / end
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select pg_temp.cq_check((public.class_next(:'sid')->>'finished')::boolean = false, 'next moves to question 1');
 select pg_temp.cq_check((public.class_teacher_dashboard(:'sid')->>'current_index')::int = 1, 'current index is 1');
 select pg_temp.cq_check((public.class_kick(:'sid', :'p2')->>'ok')::boolean, 'the teacher removes a participant');
 select pg_temp.cq_check((public.class_teacher_dashboard(:'sid')->>'joined')::int = 4, 'the kicked participant is not counted');
 select pg_temp.cq_check(public.class_teacher_dashboard(:'sid')::text !~ 'ali2', 'the kicked nickname leaves the dashboard');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b2');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b2');
 select pg_temp.cq_check((public.class_session_state(:'sid')->>'kicked')::boolean, 'the kicked student sees they were removed');
 select pg_temp.cq_forbidden(format($$select public.class_submit_answer(%L, 1, 'o0')$$, :'sid'),
   'a kicked student cannot answer');
@@ -370,7 +370,7 @@ select pg_temp.cq_check((public.class_join_session(:'scode', 'ali2')->>'error') 
 reset role;
 
 -- close early, then finish through next
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select pg_temp.cq_check((public.class_close_question(:'sid')->>'ok')::boolean, 'the teacher can close a question early');
 select pg_temp.cq_check((public.class_teacher_dashboard(:'sid')->>'phase') = 'closed', 'closed right away');
 select public.class_next(:'sid'); select public.class_next(:'sid'); select public.class_next(:'sid');
@@ -381,7 +381,7 @@ select pg_temp.cq_check((select expires_at > now() + interval '29 days' and expi
   from public.class_sessions where id = :'sid'), 'a finished session expires in 30 days');
 
 -- results
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b1');
 select pg_temp.cq_check((public.class_my_results(:'sid')->>'ok')::boolean, 'results are available after the end');
 select pg_temp.cq_check(jsonb_array_length(public.class_my_results(:'sid')->'items') = 5, 'one result item per question');
 select pg_temp.cq_check((public.class_my_results(:'sid')->'items'->0->>'explanation') like 'DEMO izoh%'
@@ -391,7 +391,7 @@ select pg_temp.cq_check(jsonb_array_length(public.class_session_state(:'sid')->'
   'the finished state shows at most five leaderboard rows');
 select pg_temp.cq_check(public.class_session_state(:'sid')::text !~ '@', 'no e-mail in the leaderboard');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select public.class_export_results(:'sid')::text as exp \gset
 select pg_temp.cq_check((public.class_export_results(:'sid')->'rows'->0->>'nickname') is not null
   and :'exp' !~ '@', 'the export has nicknames and no e-mail');
@@ -400,19 +400,19 @@ select pg_temp.cq_check(jsonb_array_length(public.class_export_results(:'sid')->
 reset role;
 
 -- a second session is isolated from the first
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b1');
 select pg_temp.cq_forbidden(format($$select public.class_session_state(%L)$$, :'sid2'),
   'a student of one class cannot read another class');
 reset role;
 
 -- ------------------------------------------------------------- reporting
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b3');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b3');
 select pg_temp.cq_check((public.class_report_nickname(:'sid', :'p4', 'Nomaqbul laqab')->>'ok')::boolean, 'a student reports a nickname');
 select public.class_report_nickname(:'sid', :'p4', 'Nomaqbul laqab');
 select pg_temp.cq_check((public.class_report_nickname(:'sid', :'p4', 'x')->>'error') = 'bad_reason', 'a too short reason is refused');
 reset role;
 select pg_temp.cq_check((select count(*) = 1 from public.class_reports), 'a second report by the same student is not duplicated');
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000c2');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000c2');
 select pg_temp.cq_forbidden(format($$select public.class_report_nickname(%L, %L, 'Nomaqbul')$$, :'sid', :'p4'),
   'an outsider cannot report');
 reset role;
@@ -422,7 +422,7 @@ reset role;
 -- limit every reader to their own rows and the answer tables stay empty.
 grant select on public.class_sessions, public.class_participants, public.class_answers,
   public.class_session_questions, public.class_quiz_questions to authenticated;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000b1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000b1');
 select pg_temp.cq_check((select count(*) = 0 from public.class_sessions), 'RLS: a student sees no session rows');
 select pg_temp.cq_check((select count(*) = 1 from public.class_participants), 'RLS: a student sees only their own participant row');
 select pg_temp.cq_check((select count(*) <= 5 from public.class_answers), 'RLS: a student sees only their own answers');
@@ -431,17 +431,17 @@ select pg_temp.cq_check((select count(*) = 0 from public.class_answers
 select pg_temp.cq_check((select count(*) = 0 from public.class_session_questions), 'RLS: session questions stay closed');
 select pg_temp.cq_check((select count(*) = 0 from public.class_quiz_questions), 'RLS: the question bank stays closed');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select pg_temp.cq_check((select count(*) = 2 from public.class_sessions), 'RLS: a teacher sees exactly their own sessions');
 reset role;
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a2');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a2');
 select pg_temp.cq_check((select count(*) = 0 from public.class_sessions), 'RLS: another teacher sees none of them');
 reset role;
 revoke select on public.class_sessions, public.class_participants, public.class_answers,
   public.class_session_questions, public.class_quiz_questions from authenticated;
 
 -- ----------------------------------------------- identity_admin may host
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a3');
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a3');
 select pg_temp.cq_check((public.class_create_session('demo-topic', 5, 10, 60)->>'ok')::boolean,
   'identity_admin can host a session too');
 reset role;
@@ -463,8 +463,8 @@ select pg_temp.cq_check(not exists (select 1 from public.class_participants wher
   'cleanup also removes participants, answers and the copied questions');
 
 -- a teacher who loses the role loses the control at once
-delete from account_roles where user_id = '70000000-0000-0000-0000-0000000000a2' and role = 'teacher';
-select pg_temp.cq_as('70000000-0000-0000-0000-0000000000a2');
+delete from account_roles where user_id = '79000000-0000-0000-0000-0000000000a2' and role = 'teacher';
+select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a2');
 select pg_temp.cq_forbidden($$select public.class_create_session('demo-topic', 5, 5, 30)$$,
   'a revoked teacher cannot create sessions');
 reset role;
