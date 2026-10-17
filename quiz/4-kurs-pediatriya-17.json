@@ -1,0 +1,1386 @@
+{
+  "topic_id": "4-kurs-pediatriya-17",
+  "source_lang": "uz",
+  "title_i18n": {
+    "uz": "Amaliy mashgʻulot: Ashyoviy dalillar sud tibbiy ekspertizasi. O’zb. Res. SSVning 2026-yil 15 apreldagi 130-son buyrug‘i.",
+    "ru": "Практическое занятие: Судебно-медицинская экспертиза вещественных доказательств. Приказ № 130 Министерства здравоохранения Республики Узбекистан от 15 апреля 2026 года.",
+    "en": "Practical session: Forensic medical examination of physical evidence. Order No. 130 of the Ministry of Health of the Republic of Uzbekistan dated April 15, 2026."
+  },
+  "translation_status": {
+    "uz": "source",
+    "ru": "auto_unreviewed",
+    "en": "auto_unreviewed"
+  },
+  "questions": [
+    {
+      "id": "4-kurs-pediatriya-17-q01",
+      "question_i18n": {
+        "uz": "Hodisa joyida topilgan sigaret qoldig‘ida so‘lak borligini aniqlash qaysi fermentni topishga asoslanadi?",
+        "ru": "Обнаружение слюны на окурке сигареты, найденном на месте происшествия, основано на выявлении какого фермента?",
+        "en": "Detection of saliva on a cigarette butt found at a crime scene is based on identifying which enzyme?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Peroksidaza",
+          "Katalaza",
+          "Amilaza",
+          "Xolinesteraza"
+        ],
+        "ru": [
+          "Пероксидаза",
+          "Каталаза",
+          "Амилаза",
+          "Холинэстераза"
+        ],
+        "en": [
+          "Peroxidase",
+          "Catalase",
+          "Amylase",
+          "Cholinesterase"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "So‘lakning borligi undagi amilaza fermentini aniqlash orqali isbotlanadi. Peroksidaza va katalaza qon uchun taxminiy sinamalarga, xolinesteraza esa qonning ferment guruhiy tizimlariga tegishli.",
+        "ru": "Наличие слюны доказывается путём определения в ней фермента амилазы. Пероксидаза и каталаза относятся к ориентировочным пробам на кровь, а холинэстераза — к ферментным групповым системам крови.",
+        "en": "The presence of saliva is proven by detecting the enzyme amylase in it. Peroxidase and catalase relate to presumptive tests for blood, while cholinesterase relates to the enzyme group systems of blood."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "311"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q02",
+      "question_i18n": {
+        "uz": "Siydik dog‘ining tur mansubligi odatda nima uchun aniqlanmaydi?",
+        "ru": "Почему видовая принадлежность пятна мочи обычно не определяется?",
+        "en": "Why is the species origin of a urine stain usually not determined?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Siydikda tur uchun spetsifik oqsillar bo‘lmaydi",
+          "Siydikda guruhiy antigenlar umuman bo‘lmaydi",
+          "Siydik dog‘lari ultrabinafsha nurda nurlanish bermaydi",
+          "Siydikdagi kreatinin tez parchalanib ketadi"
+        ],
+        "ru": [
+          "В моче нет видоспецифических белков",
+          "В моче групповые антигены полностью отсутствуют",
+          "Пятна мочи не дают свечения в ультрафиолетовых лучах",
+          "Креатинин в моче быстро разрушается"
+        ],
+        "en": [
+          "Urine does not contain species-specific proteins",
+          "Urine contains no group antigens at all",
+          "Urine stains do not fluoresce under ultraviolet light",
+          "Creatinine in urine breaks down quickly"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Tur mansublikni spetsifik zardoblar bilan aniqlash uchun tur uchun xos oqsil kerak, siydikda esa bunday oqsillar yo‘q. Guruhiy mansublik esa AVO tizimi bo‘yicha aniqlanishi mumkin, kreatinin esa siydik borligini aniqlash uchun ishlatiladi.",
+        "ru": "Для определения видовой принадлежности с помощью специфических сывороток необходим видоспецифический белок, а в моче таких белков нет. Групповая принадлежность же может быть определена по системе АВО, а креатинин используется для установления наличия мочи.",
+        "en": "To determine species origin using specific sera, a species-specific protein is required, and urine does not contain such proteins. Group origin, however, can be determined using the ABO system, and creatinine is used to establish the presence of urine."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "312"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q03",
+      "question_i18n": {
+        "uz": "Sud-gistologik tekshiruvdan so‘ng gistologik preparatlar va to‘qima bo‘lakchalari quyilgan bloklar kamida qancha muddat saqlanadi?",
+        "ru": "Как долго после судебно-гистологического исследования хранятся гистологические препараты и блоки с залитыми кусочками тканей (минимальный срок)?",
+        "en": "After a forensic histological examination, for at least how long are the histological slides and the blocks embedded with tissue pieces stored?"
+      },
+      "options_i18n": {
+        "uz": [
+          "1 yil",
+          "2 yil",
+          "5 yil",
+          "3 yil"
+        ],
+        "ru": [
+          "1 год",
+          "2 года",
+          "5 лет",
+          "3 года"
+        ],
+        "en": [
+          "1 year",
+          "2 years",
+          "5 years",
+          "3 years"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Preparatlar va bloklar kamida 3 yil saqlanadi. 2 yil muddat esa murda a’zo va to‘qimalarining birlamchi (formalinli) arxiviga tegishli, shuning uchun u chalg‘ituvchi variant.",
+        "ru": "Препараты и блоки хранятся не менее 3 лет. Срок 2 года относится к первичному (формалиновому) архиву органов и тканей трупа, поэтому этот вариант является отвлекающим.",
+        "en": "Slides and blocks are stored for at least 3 years. The 2-year period relates to the primary (formalin) archive of cadaveric organs and tissues, so it is a misleading option."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "317"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q04",
+      "question_i18n": {
+        "uz": "Sud-kimyo laboratoriyasiga faqat etil spirtini aniqlash uchun yuborilgan qon va siydik namunalari konservatsiyasiz sovutkichda qancha saqlanadi?",
+        "ru": "Как долго хранятся без консервации в холодильнике образцы крови и мочи, направленные в судебно-химическую лабораторию только для определения этилового спирта?",
+        "en": "For how long are blood and urine samples sent to the forensic chemistry laboratory solely for ethyl alcohol determination stored in a refrigerator without preservation?"
+      },
+      "options_i18n": {
+        "uz": [
+          "1 yil",
+          "30 kun",
+          "3 oy",
+          "2 yil"
+        ],
+        "ru": [
+          "1 год",
+          "30 суток",
+          "3 месяца",
+          "2 года"
+        ],
+        "en": [
+          "1 year",
+          "30 days",
+          "3 months",
+          "2 years"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Faqat etil spirtini aniqlash uchun olingan qon va siydik namunalari konservatsiyasiz sovutkichda 30 kun saqlanadi. Boshqa biologik ob’ektlar esa etil spirti bilan konservatsiyalanib, sovutkichda bir yilgacha arxivda turadi.",
+        "ru": "Образцы крови и мочи, взятые только для определения этилового спирта, хранятся без консервации в холодильнике 30 суток. Другие биологические объекты консервируют этиловым спиртом и хранят в архиве в холодильнике до одного года.",
+        "en": "Blood and urine samples taken solely for ethyl alcohol determination are stored in a refrigerator without preservation for 30 days. Other biological objects are preserved with ethyl alcohol and kept in the archive in a refrigerator for up to one year."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "320"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q05",
+      "question_i18n": {
+        "uz": "Sochning muayyan shaxsga tegishliligini aniqlash uchun boshning besh sohasidan namuna olinganda, har bir sohadan nechta soch tolasidan iborat tutam kesib olinadi?",
+        "ru": "При взятии образцов с пяти областей головы для установления принадлежности волос определённому лицу из каждой области срезается пучок из скольких волос?",
+        "en": "When hair samples are collected from five areas of the head to establish whether the hair belongs to a particular person, how many hair fibers should each cut tuft from each area contain?"
+      },
+      "options_i18n": {
+        "uz": [
+          "5–10 tola",
+          "10–15 tola",
+          "20–30 tola",
+          "40–50 tola"
+        ],
+        "ru": [
+          "5–10 волос",
+          "10–15 волос",
+          "20–30 волос",
+          "40–50 волос"
+        ],
+        "en": [
+          "5–10 fibers",
+          "10–15 fibers",
+          "20–30 fibers",
+          "40–50 fibers"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Peshona, tepa, ikki chekka va ensa qismlaridan 20–30 tolalik tutamlar imkon qadar teriga yaqin kesib olinadi va alohida qog‘ozlarga o‘raladi. Boshqa sonlar kitobda keltirilgan miqdorga mos kelmaydi.",
+        "ru": "Из лобной, теменной, двух височных и затылочной областей пучки по 20–30 волос срезаются как можно ближе к коже и заворачиваются в отдельные бумажки. Другие числа не соответствуют количеству, приведённому в книге.",
+        "en": "Tufts of 20–30 fibers are cut as close to the skin as possible from the frontal, parietal, two temporal, and occipital regions and wrapped in separate sheets of paper. The other numbers do not correspond to the amount given in the textbook."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "313"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q06",
+      "question_i18n": {
+        "uz": "Gumondordan olinadigan suyuq qon namunasi ekspertizaga yuborish uchun qanday tayyorlanadi?",
+        "ru": "Как подготавливается для направления на экспертизу образец жидкой крови, взятый у подозреваемого?",
+        "en": "How is a liquid blood sample taken from a suspect prepared for submission for examination?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Kamida 3 ml, konservantsiz, toza probirkada, toza tiqin bilan yopiladi",
+          "Kamida 3 ml, konservant qo‘shilgan, paxta tampon bilan yopiladi",
+          "1 ml atrofida, antikoagulyant qo‘shilgan, doka bilan yopiladi",
+          "Kamida 3 ml, konservantsiz, muzlatkichda -20 °C da muzlatiladi"
+        ],
+        "ru": [
+          "Не менее 3 мл, без консерванта, в чистой пробирке, закрывается чистой пробкой",
+          "Не менее 3 мл, с добавлением консерванта, закрывается ватным тампоном",
+          "Около 1 мл, с добавлением антикоагулянта, закрывается марлей",
+          "Не менее 3 мл, без консерванта, замораживается в морозильной камере при -20 °C"
+        ],
+        "en": [
+          "At least 3 ml, without preservative, in a clean test tube, closed with a clean stopper",
+          "At least 3 ml, with preservative added, closed with a cotton swab",
+          "About 1 ml, with anticoagulant added, closed with gauze",
+          "At least 3 ml, without preservative, frozen in a freezer at -20 °C"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Qon kamida 3 ml miqdorda, hech qanday konservantsiz toza probirka yoki flakonga olinib, toza tiqin bilan yopiladi, doka yoki paxta tampon ishlatilmaydi. Agar darrov yuborib bo‘lmasa, suyuq qon +4…+8 °C da saqlanadi, muzlatilmaydi.",
+        "ru": "Кровь в количестве не менее 3 мл без какого-либо консерванта помещают в чистую пробирку или флакон и закрывают чистой пробкой; марля или ватный тампон не используются. Если отправить сразу невозможно, жидкую кровь хранят при +4…+8 °C, не замораживая.",
+        "en": "Blood is collected in an amount of at least 3 ml, without any preservative, into a clean test tube or vial and closed with a clean stopper; gauze or cotton swabs are not used. If it cannot be sent immediately, liquid blood is stored at +4…+8 °C and is not frozen."
+      },
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "195"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q07",
+      "question_i18n": {
+        "uz": "Qon dog‘idan yuvma olishda yangi doka yoki bint bo‘laklaridan foydalanish nima sababdan tavsiya etilmaydi?",
+        "ru": "Почему при взятии смыва с пятна крови не рекомендуется использовать новые кусочки марли или бинта?",
+        "en": "Why is the use of new pieces of gauze or bandage not recommended when taking a wash from a blood stain?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Yangi doka qon dog‘ini yetarli darajada namlay olmaydi",
+          "Yangi doka quriganda qon oqsillarini mexanik buzib yuboradi",
+          "Tarkibidagi appreturalar serologik reaksiyalarga salbiy ta’sir qiladi",
+          "Yangi doka kontrol namuna sifatida butunlay yaroqsiz bo‘ladi"
+        ],
+        "ru": [
+          "Новая марля недостаточно хорошо смачивает пятно крови",
+          "Новая марля при высыхании механически разрушает белки крови",
+          "Содержащиеся в ней аппретуры отрицательно влияют на серологические реакции",
+          "Новая марля становится совершенно непригодной в качестве контрольного образца"
+        ],
+        "en": [
+          "New gauze cannot moisten the blood stain sufficiently",
+          "When dry, new gauze mechanically damages blood proteins",
+          "The finishing agents (appretures) it contains adversely affect serological reactions",
+          "New gauze becomes completely unsuitable as a control sample"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Yangi doka va bint kimyoviy ishlov natijasida appreturalar saqlaydi, bu moddalar keyingi serologik reaksiyalarni buzishi mumkin. Boshqa variantlar darslikda ko‘rsatilgan sabab emas.",
+        "ru": "Новая марля и бинт в результате химической обработки содержат аппретуры, которые могут исказить последующие серологические реакции. Остальные варианты не являются причиной, указанной в учебнике.",
+        "en": "New gauze and bandage contain finishing agents (appretures) as a result of chemical treatment, and these substances may distort subsequent serological reactions. The other options are not reasons given in the textbook."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "304"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q08",
+      "question_i18n": {
+        "uz": "Qorda qon izlari topilganda, ekspertiza uchun namuna qaysi tartibda olinadi?",
+        "ru": "В каком порядке берётся образец для экспертизы при обнаружении следов крови на снегу?",
+        "en": "When blood traces are found in snow, in what order is the sample taken for examination?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qor isitkich yonida tez eritilib, suyuqlik probirkaga quyiladi",
+          "Qor ustiga filtr qog‘ozi bosilib, nam qog‘oz quritiladi",
+          "Qor muzlatgichda qotirilib, muz holida laboratoriyaga yuboriladi",
+          "Qor qoshiq bilan shisha idishga olinib, xona sharoitida eritiladi"
+        ],
+        "ru": [
+          "Снег быстро растапливают возле обогревателя, жидкость переливают в пробирку",
+          "На снег прижимают фильтровальную бумагу, влажную бумагу высушивают",
+          "Снег замораживают в морозильной камере и отправляют в лабораторию в виде льда",
+          "Снег набирают ложкой в стеклянную ёмкость и растапливают при комнатной температуре"
+        ],
+        "en": [
+          "The snow is quickly melted near a heater and the liquid is poured into a test tube",
+          "A filter paper is pressed onto the snow and the wet paper is dried",
+          "The snow is frozen in a freezer and sent to the laboratory as ice",
+          "The snow is scooped with a spoon into a glass container and melted at room temperature"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Qorni shisha idishga solib xona sharoitida eritish kerak, so‘ng hosil bo‘lgan suyuqlikdan doka bo‘lagiga namuna olinadi. Kontrol uchun toza qordan ham xuddi shunday namuna tayyorlanadi. Isitish yoki muzlatish bu tartibga kirmaydi.",
+        "ru": "Снег нужно поместить в стеклянную ёмкость и растопить при комнатной температуре, затем из полученной жидкости взять образец на кусочек марли. Для контроля таким же образом готовят образец из чистого снега. Нагревание или замораживание в этот порядок не входят.",
+        "en": "The snow should be placed in a glass container and melted at room temperature, after which a sample is taken from the resulting liquid onto a piece of gauze. For control, a similar sample is prepared from clean snow. Heating or freezing is not part of this procedure."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "305"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q09",
+      "question_i18n": {
+        "uz": "Teyxman va Takayama mikrokristallik sinamalari nima uchun amaliy diagnostik ahamiyatga ega emas deb hisoblanadi?",
+        "ru": "Почему микрокристаллические пробы Тейхмана и Такаяма считаются не имеющими практического диагностического значения?",
+        "en": "Why are the Teichmann and Takayama microcrystalline tests considered to have no practical diagnostic value?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ular faqat hayvon qonida gemoglobin kristallari hosil qiladi",
+          "Ularning sezgirligi past",
+          "Ularda qon hujayralarining ko‘rinishi qisqa vaqtda o‘zgarib ketadi",
+          "Ular qonning faqat guruhiy mansubligini ko‘rsatadi"
+        ],
+        "ru": [
+          "Они образуют кристаллы гемоглобина только в крови животных",
+          "Их чувствительность низкая",
+          "При них вид клеток крови за короткое время изменяется",
+          "Они показывают только групповую принадлежность крови"
+        ],
+        "en": [
+          "They form hemoglobin crystals only in animal blood",
+          "Their sensitivity is low",
+          "In them, the appearance of blood cells changes within a short time",
+          "They show only the group origin of blood"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Mikrokristallik usullar gemoglobin hosilalari kristallarini aniqlaydi, lekin sezgirligi pastligi sababli amaliyotda qo‘llanilmaydi. Qon hujayralarining tez o‘zgarishi esa mikroskopik usulning cheklovidir. Mikrokristallik usullar qon borligini aniqlashga xizmat qiladi, guruhiy mansublikka emas.",
+        "ru": "Микрокристаллические методы выявляют кристаллы производных гемоглобина, но из-за низкой чувствительности на практике не применяются. Быстрое изменение клеток крови — это ограничение микроскопического метода. Микрокристаллические методы служат для установления наличия крови, а не групповой принадлежности.",
+        "en": "Microcrystalline methods detect crystals of hemoglobin derivatives, but they are not used in practice because of their low sensitivity. The rapid change of blood cells, however, is a limitation of the microscopic method. Microcrystalline methods serve to detect the presence of blood, not group origin."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "306"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q10",
+      "question_i18n": {
+        "uz": "Qon izlarining vujudga kelish muddatini aniqlash nima uchun faqat taxminiy tarzda amalga oshirilishi mumkin?",
+        "ru": "Почему установление давности образования следов крови может быть выполнено только ориентировочно?",
+        "en": "Why can determination of the age (time of origin) of blood traces be carried out only approximately?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Izlardagi o‘zgarishlar muddatdan tashqari atrof-muhit sharoiti va dog‘ saqlovchi predmet xususiyatlariga ham bog‘liq",
+          "Qon dog‘ida gemoglobin vaqt o‘tishi bilan umuman o‘zgarmaydi",
+          "Qon fermentlarining aktivligi muddatga bog‘liq bo‘lmagan holda doimiy qoladi",
+          "Qon izlari laboratoriyada faqat DNK tekshiruvi bilan baholanadi"
+        ],
+        "ru": [
+          "Изменения в следах зависят не только от давности, но и от условий окружающей среды и свойств предмета, на котором находится пятно",
+          "Гемоглобин в пятне крови со временем вообще не изменяется",
+          "Активность ферментов крови остаётся постоянной независимо от давности",
+          "Следы крови в лаборатории оцениваются только путём ДНК-исследования"
+        ],
+        "en": [
+          "Changes in the traces depend not only on time but also on environmental conditions and the properties of the object bearing the stain",
+          "Hemoglobin in a blood stain does not change at all over time",
+          "The activity of blood enzymes remains constant regardless of time",
+          "Blood traces are assessed in the laboratory only by DNA testing"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Muddatni baholash gemoglobin o‘zgarishi va fermentlar aktivligining pasayishiga tayanadi. Biroq bu o‘zgarishlarga harorat, namlik, shamol va predmet xususiyatlari ham ta’sir qiladi, shuning uchun natija aniq emas. Boshqa variantlar manbadagi ma’lumotga zid.",
+        "ru": "Оценка давности основывается на изменении гемоглобина и снижении активности ферментов. Однако на эти изменения влияют также температура, влажность, ветер и свойства предмета, поэтому результат неточен. Остальные варианты противоречат сведениям из источника.",
+        "en": "Age estimation relies on changes in hemoglobin and a decrease in enzyme activity. However, temperature, humidity, wind, and the properties of the object also affect these changes, so the result is not exact. The other options contradict the information in the source."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "308"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q11",
+      "question_i18n": {
+        "uz": "Kiyim-bosh yoki yotoq anjomlaridagi dog‘da ter borligi qaysi moddani aniqlash orqali hal etiladi?",
+        "ru": "Наличие пота в пятне на одежде или постельных принадлежностях устанавливается путём обнаружения какого вещества?",
+        "en": "The presence of sweat in a stain on clothing or bedding is established by detecting which substance?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Serin aminokislotasini topish",
+          "Amilaza fermentini topish",
+          "Kreatinin va mochevinani topish",
+          "Xolin, spermin va nordon fosfatazani topish"
+        ],
+        "ru": [
+          "Обнаружение аминокислоты серина",
+          "Обнаружение фермента амилазы",
+          "Обнаружение креатинина и мочевины",
+          "Обнаружение холина, спермина и кислой фосфатазы"
+        ],
+        "en": [
+          "Detection of the amino acid serine",
+          "Detection of the enzyme amylase",
+          "Detection of creatinine and urea",
+          "Detection of choline, spermine and acid phosphatase"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Ter tarkibida serin aminokislotasi ko‘p bo‘ladi, shu sababli dog‘da ter borligi shu modda orqali aniqlanadi. Amilaza so‘lak, kreatinin va mochevina siydik, xolin bilan spermin esa maniy izlari uchun xarakterli.",
+        "ru": "В составе пота много аминокислоты серина, поэтому наличие пота в пятне определяют по этому веществу. Амилаза характерна для слюны, креатинин и мочевина — для мочи, а холин и спермин — для следов семенной жидкости.",
+        "en": "Sweat is rich in the amino acid serine, so the presence of sweat in a stain is established by detecting this substance. Amylase is characteristic of saliva, creatinine and urea of urine, and choline and spermine of semen traces."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "312"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q12",
+      "question_i18n": {
+        "uz": "Mikroskopda tekshirilgan sochning ildiz qismida ilmoqsimon piyozcha va uning ustida qin xaltasi qoldiqlari aniqlandi. Bu soch haqida qanday xulosa qilinadi?",
+        "ru": "В корневой части волоса, исследованного под микроскопом, обнаружены петлеобразная луковица и над ней остатки волосяного влагалища. Какой вывод делается об этом волосе?",
+        "en": "On microscopic examination of a hair, a hook-shaped bulb with remnants of the follicular sheath above it was found at the root. What conclusion is drawn about this hair?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Soch o‘zi tushgan, chunki ildiz qismi kolbasimon shaklda",
+          "Soch yuqori harorat ta’sirida buralgan va ko‘mirlangan",
+          "Soch yulib olingan, chunki ildizida piyozcha va qin xaltasi saqlangan",
+          "Soch bo‘yalgan, chunki bo‘yoq ildiz qismida to‘plangan"
+        ],
+        "ru": [
+          "Волос выпал сам, так как корневая часть имеет колбовидную форму",
+          "Волос скручен и обуглен под воздействием высокой температуры",
+          "Волос вырван, так как в корне сохранены луковица и волосяное влагалище",
+          "Волос окрашен, так как краситель скопился в корневой части"
+        ],
+        "en": [
+          "The hair fell out on its own, because the root has a club-like shape",
+          "The hair was twisted and charred by the effect of high temperature",
+          "The hair was pulled out, because the bulb and follicular sheath are preserved at its root",
+          "The hair was dyed, because the dye has accumulated at the root"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Yulib olingan sochning ildizida ilmoqsimon piyozcha va uning ustida qin xaltasi qoldiqlari qoladi. O‘zi to‘kilgan sochning ildizi ovalsimon yoki kolbasimon bo‘lib, qin xaltasi bo‘lmaydi. Bo‘yalgan sochda bo‘yoq kutikulada bo‘ladi, ildizda emas.",
+        "ru": "В корне вырванного волоса остаются петлеобразная луковица и над ней остатки волосяного влагалища. Корень самопроизвольно выпавшего волоса имеет овальную или колбовидную форму, а волосяного влагалища нет. В окрашенном волосе краситель находится в кутикуле, а не в корне.",
+        "en": "The root of a forcibly pulled-out hair retains a hook-shaped bulb with remnants of the follicular sheath above it. The root of a naturally shed hair is oval or club-shaped and has no follicular sheath. In dyed hair the dye is in the cuticle, not in the root."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "315"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q13",
+      "question_i18n": {
+        "uz": "Sud-tibbiy ekspertiza muassasasining tibbiy-kriminalistika bo‘limida ballistik tekshiruvlar qaysi holatlarda o‘tkaziladi?",
+        "ru": "В каких случаях в медико-криминалистическом отделении учреждения судебно-медицинской экспертизы проводятся баллистические исследования?",
+        "en": "In which cases are ballistic examinations performed in the medical-criminalistics department of a forensic medical examination institution?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Pichoq bilan etkazilgan kesilgan jarohatlar va transport travmasi holatlarida",
+          "Termik kuyish va elektr shikastlari holatlarida",
+          "O‘qotar jarohatlar va portlash travmasi holatlarida",
+          "Shaxsi noma’lum murdaning suyak qoldiqlari topilgan holatlarda"
+        ],
+        "ru": [
+          "При резаных повреждениях, причинённых ножом, и транспортной травме",
+          "При термических ожогах и электротравме",
+          "При огнестрельных повреждениях и взрывной травме",
+          "При обнаружении костных останков неопознанного трупа"
+        ],
+        "en": [
+          "In cases of incised wounds inflicted with a knife and of transport trauma",
+          "In cases of thermal burns and electrical injuries",
+          "In cases of firearm injuries and explosion trauma",
+          "In cases where skeletal remains of an unidentified corpse are found"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Ballistik tekshiruv o‘qotar quroldan yetkazilgan jarohatlar va portlash travmasiga tegishli. Kesilgan jarohat va transport travmasi asosan trassologik tekshiruv sohasi, suyak qoldiqlari esa identifikatsion tekshiruv sohasidir. Kuyish va elektr shikastlari ballistik tekshiruv ob’ekti emas.",
+        "ru": "Баллистическое исследование относится к повреждениям, причинённым из огнестрельного оружия, и к взрывной травме. Резаные повреждения и транспортная травма — в основном область трасологического исследования, а костные останки — область идентификационного исследования. Ожоги и электротравма не являются объектом баллистического исследования.",
+        "en": "Ballistic examination concerns injuries inflicted by firearms and explosion trauma. Incised wounds and transport trauma mainly fall within the field of trace evidence (traceological) examination, and skeletal remains within the field of identification examination. Burns and electrical injuries are not objects of ballistic examination."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "317"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q14",
+      "question_i18n": {
+        "uz": "Tibbiy-kriminalistikadagi situatsion (vaziyatli) tekshiruvlarda asosan qaysi masala o‘rganiladi?",
+        "ru": "Какой вопрос в основном изучается при ситуационных исследованиях в медицинской криминалистике?",
+        "en": "What issue is mainly studied in situational examinations in medical criminalistics?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Taxmin etilayotgan shart-sharoitda muayyan harakatni sodir etish imkoniyati bor-yo‘qligi",
+          "Shaxsi noma’lum murdaning muayyan shaxsga tegishli ekanligi",
+          "O‘qotar quroldan otilgan snaryadning turi va xususiyatlari",
+          "Kiyim-boshdagi kichik o‘lchamli mikrozarralarning mavjudligi"
+        ],
+        "ru": [
+          "Возможность совершения определённого действия в предполагаемых условиях",
+          "Принадлежность неопознанного трупа конкретному лицу",
+          "Вид и свойства снаряда, выпущенного из огнестрельного оружия",
+          "Наличие мелких микрочастиц на одежде"
+        ],
+        "en": [
+          "Whether it was possible to perform a particular action under the presumed circumstances",
+          "Whether an unidentified corpse belongs to a specific person",
+          "The type and characteristics of a projectile fired from a firearm",
+          "The presence of small-sized microparticles on clothing"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Situatsion tekshiruv voqeaning taxmin qilingan sharoitida ma’lum harakat yoki jarohat hosil bo‘lishi mumkinmi, degan savolga javob beradi. Murda aynanligi identifikatsion, snaryad turi ballistik, mikrozarralar esa mikrologik tekshiruv vazifasidir.",
+        "ru": "Ситуационное исследование отвечает на вопрос, возможно ли совершение определённого действия или образование повреждения в предполагаемых условиях происшествия. Установление личности трупа — задача идентификационного исследования, вид снаряда — баллистического, а микрочастицы — микрологического.",
+        "en": "A situational examination answers the question of whether a certain action or injury could have occurred under the presumed circumstances of the event. Identification of a corpse is the task of identification examination, the type of projectile of ballistic examination, and microparticles of micrological examination."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "319"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q15",
+      "question_i18n": {
+        "uz": "Sud-kimyoviy toksikologik tekshiruvlarda dori yoki zaharli moddani aniqlashda qanday yondashuv tavsiya etiladi?",
+        "ru": "Какой подход рекомендуется при обнаружении лекарственного или ядовитого вещества в судебно-химических токсикологических исследованиях?",
+        "en": "What approach is recommended when detecting a drug or poisonous substance in forensic chemical toxicological examinations?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Faqat bitta, eng sezgir instrumental usulning o‘zi yetarli deb hisoblanadi",
+          "Imkon qadar turli fizik va kimyoviy prinsiplarga asoslangan kamida ikkita usul qo‘llanadi",
+          "Faqat rangli reaksiyalar bilan cheklanib, natija taxminiy deb qabul qilinadi",
+          "Faqat gaz-suyuqlik xromatografiyasi qo‘llanib, boshqa usullar kerak bo‘lmaydi"
+        ],
+        "ru": [
+          "Считается достаточным только одного, наиболее чувствительного инструментального метода",
+          "По возможности применяются не менее двух методов, основанных на разных физических и химических принципах",
+          "Ограничиваются только цветными реакциями, а результат принимается как ориентировочный",
+          "Применяется только газожидкостная хроматография, другие методы не нужны"
+        ],
+        "en": [
+          "A single, most sensitive instrumental method alone is considered sufficient",
+          "At least two methods based on different physical and chemical principles are used whenever possible",
+          "Only color reactions are used, and the result is accepted as presumptive",
+          "Only gas-liquid chromatography is used, and no other methods are needed"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Natijaning ishonchliligi uchun kamida ikkita usul, ular bir-birini tasdiqlashi uchun turli prinsiplarga asoslangan bo‘lishi tavsiya etiladi. Rangli reaksiyalar faqat dastlabki usul hisoblanadi. Bitta usulning o‘zi, eng sezgir bo‘lsa ham, yetarli deb sanalmaydi.",
+        "ru": "Для достоверности результата рекомендуется применять не менее двух методов, основанных на разных принципах, чтобы они подтверждали друг друга. Цветные реакции считаются только предварительным методом. Одного метода, даже самого чувствительного, недостаточно.",
+        "en": "For the reliability of the result, at least two methods are recommended, based on different principles so that they confirm each other. Color reactions are only a preliminary method. A single method alone, even the most sensitive one, is not considered sufficient."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "320"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q16",
+      "question_i18n": {
+        "uz": "Qotillik ishida gumondorning qurolida jabrlanuvchi to‘qimasining mayda zarralari, jabrlanuvchi kiyimida esa qurol materialining zarralari topildi. Tergovchi shu zarralarning o‘zaro o‘tganligini aniqlashni so‘radi. Qaysi tekshiruv o‘tkaziladi?",
+        "ru": "По делу об убийстве на оружии подозреваемого обнаружены мелкие частицы ткани потерпевшего, а на одежде потерпевшего — частицы материала оружия. Следователь просил установить взаимный перенос этих частиц. Какое исследование проводится?",
+        "en": "In a murder case, tiny particles of the victim's tissue were found on the suspect's weapon, and particles of the weapon's material were found on the victim's clothing. The investigator asked to establish the mutual transfer of these particles. Which examination is performed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Trassologik tekshiruv, chunki u jarohat shakli bo‘yicha shikastlovchi omilni aniqlaydi",
+          "Identifikatsion tekshiruv, chunki u noma’lum murdaning shaxsini aniqlaydi",
+          "Situatsion tekshiruv, chunki u voqeani qayta tiklash imkoniyatini baholaydi",
+          "Mikrologik tekshiruv, chunki u mikroizlar va mikrozarralarning o‘tishini o‘rganadi"
+        ],
+        "ru": [
+          "Трасологическое исследование, так как оно по форме повреждения определяет травмирующий фактор",
+          "Идентификационное исследование, так как оно устанавливает личность неопознанного трупа",
+          "Ситуационное исследование, так как оно оценивает возможность воспроизведения события",
+          "Микрологическое исследование, так как оно изучает перенос микроследов и микрочастиц"
+        ],
+        "en": [
+          "Traceological examination, because it determines the damaging factor from the shape of the wound",
+          "Identification examination, because it establishes the identity of an unknown corpse",
+          "Situational examination, because it assesses the possibility of reconstructing the event",
+          "Micrological examination, because it studies the transfer of microtraces and microparticles"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Mikrologik tekshiruvda qurol va jabrlanuvchi tanasi yoki kiyimi o‘rtasida moddalar hamda mikroob’ektlarning o‘tishi yoki uning aksi aniqlanadi. Trassologik tekshiruv jarohat va izlar bo‘yicha shikastlovchi omilga qaratilgan. Identifikatsion tekshiruv murda shaxsini, situatsion tekshiruv esa harakat imkoniyatini o‘rganadi.",
+        "ru": "При микрологическом исследовании устанавливается перенос веществ и микрообъектов между оружием и телом или одеждой потерпевшего либо его обратное направление. Трасологическое исследование направлено на установление травмирующего фактора по повреждениям и следам. Идентификационное исследование изучает личность трупа, а ситуационное — возможность совершения действия.",
+        "en": "Micrological examination establishes the transfer of substances and micro-objects between the weapon and the victim's body or clothing, or the reverse. Traceological examination is directed at the damaging factor based on wounds and traces. Identification examination studies the identity of a corpse, and situational examination the possibility of an action."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "318-319"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q17",
+      "question_i18n": {
+        "uz": "Murda ekspertizasi o‘tkazilmoqda, ichki a’zolar ancha chirigan. Yordamchi ekspert chirish sababli gistologik tekshiruv uchun material olishni lozim emas deb hisoblaydi. Amaldagi qoidalarga ko‘ra qaysi fikr to‘g‘ri?",
+        "ru": "Проводится экспертиза трупа, внутренние органы значительно изменены гниением. Помощник эксперта считает, что из-за гниения брать материал для гистологического исследования не нужно. Какое мнение верно согласно действующим правилам?",
+        "en": "A postmortem examination of a corpse is being performed, and the internal organs are markedly putrefied. The assistant expert believes that, because of putrefaction, there is no need to take material for histological examination. According to the current rules, which statement is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Chirigan a’zolardan material olinmaydi, uning o‘rniga diatom tekshiruvi o‘tkaziladi",
+          "Material baribir olinadi, chunki chirish gistologik tekshiruvni rad etishga asos bo‘lmaydi",
+          "Material faqat tergovchi alohida so‘rasa olinadi, boshqa holatda talab qilinmaydi",
+          "Material olinadi, ammo chirigan bo‘lsa tekshiruvsiz yo‘q qilinadi va arxivga qo‘yilmaydi"
+        ],
+        "ru": [
+          "Из гнилостно изменённых органов материал не берётся, вместо этого проводится диатомовое исследование",
+          "Материал всё равно берётся, так как гниение не является основанием для отказа от гистологического исследования",
+          "Материал берётся только по особому запросу следователя, в иных случаях не требуется",
+          "Материал берётся, но если он гнилостно изменён, уничтожается без исследования и не помещается в архив"
+        ],
+        "en": [
+          "Material is not taken from putrefied organs; a diatom test is performed instead",
+          "Material is taken regardless, because putrefaction is not grounds for refusing histological examination",
+          "Material is taken only if the investigator specifically requests it; otherwise it is not required",
+          "Material is taken, but if putrefied it is destroyed without examination and is not placed in the archive"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Murda ekspertizasi o‘tkazilgan barcha holatlarda gistologik material olinishi kerak, chirish va boshqa o‘limdan keyingi o‘zgarishlar tekshiruvni rad etish uchun asos emas. Tekshiruv o‘tkazilmasa, material birlamchi arxiv sifatida saqlanadi. Diatom tekshiruvi esa boshqa masalani hal qiladi va gistologik tekshiruv o‘rnini bosmaydi.",
+        "ru": "Во всех случаях проведения экспертизы трупа должен быть взят материал для гистологического исследования; гниение и другие посмертные изменения не являются основанием для отказа от исследования. Если исследование не проведено, материал хранится как первичный архив. Диатомовое исследование решает другой вопрос и не заменяет гистологическое исследование.",
+        "en": "In all cases where a postmortem examination is performed, histological material must be taken; putrefaction and other postmortem changes are not grounds for refusing the examination. If the examination is not performed, the material is stored as a primary archive. A diatom test addresses a different question and does not replace histological examination."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "316"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q18",
+      "question_i18n": {
+        "uz": "Hodisa joyidan olingan qon dog‘lari uchun ekspert quruq qoldiq miqdorini aniqladi: u jami 105 g. Bir litr suyuq qondan o‘rtacha 210 g quruq qoldiq qolishini hisobga olsak, tashqariga quyilgan qon miqdori taxminan qancha?",
+        "ru": "Для пятен крови с места происшествия эксперт определил количество сухого остатка: всего 105 г. Учитывая, что из одного литра жидкой крови в среднем остаётся 210 г сухого остатка, сколько примерно крови вылилось наружу?",
+        "en": "For bloodstains collected at the scene, the expert determined the amount of dry residue: it totals 105 g. Given that on average 210 g of dry residue remains from one liter of liquid blood, approximately how much blood was shed externally?"
+      },
+      "options_i18n": {
+        "uz": [
+          "0,5 litr atrofida",
+          "0,25 litr atrofida",
+          "1 litr atrofida",
+          "2 litr atrofida"
+        ],
+        "ru": [
+          "Около 0,5 литра",
+          "Около 0,25 литра",
+          "Около 1 литра",
+          "Около 2 литров"
+        ],
+        "en": [
+          "About 0.5 liters",
+          "About 0.25 liters",
+          "About 1 liter",
+          "About 2 liters"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Qon miqdori quruq qoldiqni 1 litrga to‘g‘ri keladigan qoldiqqa bo‘lish bilan topiladi: 105 g / 210 g/l = 0,5 litr. Boshqa variantlar nisbatni noto‘g‘ri qo‘llash natijasidir.",
+        "ru": "Количество крови находится делением сухого остатка на остаток, приходящийся на 1 литр: 105 г / 210 г/л = 0,5 литра. Остальные варианты — результат неверного применения соотношения.",
+        "en": "The amount of blood is found by dividing the dry residue by the residue corresponding to 1 liter: 105 g / 210 g/l = 0.5 liters. The other options result from applying the ratio incorrectly."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "308"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q19",
+      "question_i18n": {
+        "uz": "Hodisa joyida devorda qonli kaft izi topildi. Izning shakli va o‘lchamlari devorga tekkan kaft yuzasiga to‘liq mos keladi, sirpanish alomatlari yo‘q. Bu iz qaysi turga kiradi?",
+        "ru": "На месте происшествия на стене обнаружен кровавый след ладони. Форма и размеры следа полностью соответствуют поверхности ладони, соприкоснувшейся со стеной, признаков скольжения нет. К какому виду относится этот след?",
+        "en": "A bloody palm mark was found on a wall at the scene. The shape and dimensions of the mark fully correspond to the palm surface that touched the wall, and there are no signs of sliding. Which type does this mark belong to?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qon ko‘lmagi",
+          "Surtma ko‘rinishidagi iz",
+          "Bosma iz",
+          "Oqma shaklidagi iz"
+        ],
+        "ru": [
+          "Лужа крови",
+          "След в виде мазка",
+          "Отпечаток",
+          "След в виде потёка"
+        ],
+        "en": [
+          "Pool of blood",
+          "Smear-type mark",
+          "Imprint (contact print) mark",
+          "Flow-type (trickle) mark"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Qon bilan ifloslangan yuza boshqa yuza bilan sirpanmasdan tekkanda bosma iz qoladi, uning shakli va o‘lchamlari ta’sir etgan yuzaga mos bo‘ladi. Surtma iz sirpanishdan hosil bo‘ladi, oqma qonning qiya yuza bo‘ylab oqishidan, ko‘lmak esa ko‘p qon yo‘qotilganda vujudga keladi.",
+        "ru": "Когда загрязнённая кровью поверхность соприкасается с другой поверхностью без скольжения, остаётся отпечаток, форма и размеры которого соответствуют воздействовавшей поверхности. Мазок образуется при скольжении, потёк — при стекании крови по наклонной поверхности, а лужа — при большой потере крови.",
+        "en": "When a surface contaminated with blood touches another surface without sliding, an imprint mark is left, and its shape and dimensions correspond to the contacting surface. A smear mark results from sliding, a flow mark from blood running along an inclined surface, and a pool from a large blood loss."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "304"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q20",
+      "question_i18n": {
+        "uz": "Gumon qilinayotgan qon dog‘i juda kichik, undagi agglyutinogenlar esa kuchsiz ifodalangan. Guruhiy xususiyatni aniqlash uchun qaysi reaksiya tavsiya etiladi?",
+        "ru": "Подозреваемое пятно крови очень мало, а агглютиногены в нём слабо выражены. Какая реакция рекомендуется для определения групповой принадлежности?",
+        "en": "The suspected bloodstain is very small, and the agglutinogens in it are weakly expressed. Which reaction is recommended for determining the group characteristic?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Absorbsiya-elyusiya reaksiyasi",
+          "Shiff usuli bo‘yicha sentrifugalab ajratish",
+          "Qoplama oyna (Lyates) usuli",
+          "Chistovich–Ulengut pretsipitatsiya reaksiyasi"
+        ],
+        "ru": [
+          "Реакция абсорбции-элюции",
+          "Разделение центрифугированием по методу Шиффа",
+          "Метод покровного стекла (Латтеса)",
+          "Реакция преципитации Чистовича–Уленгута"
+        ],
+        "en": [
+          "Absorption-elution reaction",
+          "Separation by centrifugation according to the Schiff method",
+          "Cover glass (Lattes) method",
+          "Chistovich–Uhlenhuth precipitation reaction"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Dog‘ kam bo‘lganda va antigenlar kuchsiz bo‘lganda absorbsiya-elyusiya eng sezgir usul sifatida tavsiya etiladi. Shiff usuli suyuq qon uchun, Lyates usuli dog‘dagi agglyutininlar uchun, pretsipitatsiya reaksiyasi esa guruhni emas, tur mansubligini aniqlash uchun qo‘llanadi.",
+        "ru": "При малом количестве материала в пятне и слабых антигенах реакция абсорбции-элюции рекомендуется как наиболее чувствительный метод. Метод Шиффа применяется для жидкой крови, метод Латтеса — для агглютининов в пятне, а реакция преципитации — для определения не группы, а видовой принадлежности.",
+        "en": "When the stain is scant and the antigens are weak, absorption-elution is recommended as the most sensitive method. The Schiff method is used for liquid blood, the Lattes method for agglutinins in a stain, and the precipitation reaction to determine species origin, not the blood group."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "307"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q21",
+      "question_i18n": {
+        "uz": "Ayolga tegishli qon dog‘ida homiladorlik fermenti oksitotsinaza topildi. Ekspert homiladorlik haqida qanday xulosa chiqarishi to‘g‘ri bo‘ladi?",
+        "ru": "У женщины в пятне крови обнаружен фермент беременности окситоциназа. Какой вывод о беременности эксперту сделать правильно?",
+        "en": "A blood stain belonging to a woman was found to contain the pregnancy enzyme oxytocinase. What conclusion about pregnancy would be correct for the expert to draw?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ferment faqat homiladorlikning birinchi oyida paydo bo‘lgani uchun muddatni aniq belgilaydi",
+          "Ferment dog‘da o‘n yildan ko‘p saqlangani uchun dog‘ davri haqida xulosa beradi",
+          "Ferment topilishi ayolning yaqinda tuqqanini aniq isbotlaydi",
+          "Ferment tug‘ruqdan keyin dog‘da 2-3 oy saqlanishi mumkin, shu sabab homiladorlikni qat’iy aniqlab bo‘lmaydi"
+        ],
+        "ru": [
+          "Фермент появляется только в первом месяце беременности, поэтому точно определяет срок",
+          "Поскольку фермент сохраняется в пятне более десяти лет, он позволяет судить о давности пятна",
+          "Обнаружение фермента достоверно доказывает, что женщина недавно рожала",
+          "Фермент может сохраняться в пятне 2-3 месяца после родов, поэтому наличие беременности нельзя установить категорично"
+        ],
+        "en": [
+          "The enzyme determines the gestational age precisely because it appears only in the first month of pregnancy",
+          "Because the enzyme persisted in the stain for more than ten years, it allows a conclusion about the age of the stain",
+          "Detection of the enzyme definitively proves that the woman has recently given birth",
+          "The enzyme can persist in the stain for 2-3 months after childbirth, therefore pregnancy cannot be firmly established"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Oksitotsinaza homiladorlikda qonda paydo bo‘ladi, lekin tug‘ruqdan keyin ham qon dog‘ida bir necha oy saqlanadi. Shuning uchun qon dog‘i bo‘yicha homiladorlik mavjudligi qat’iy aniqlanmaydi. Boshqa variantlar fermentning saqlanish xususiyatini noto‘g‘ri talqin qiladi.",
+        "ru": "Окситоциназа появляется в крови при беременности, но сохраняется в пятнах крови несколько месяцев и после родов. Поэтому наличие беременности по пятну крови категорично не устанавливается. Остальные варианты неверно трактуют свойства сохранения фермента.",
+        "en": "Oxytocinase appears in the blood during pregnancy, but it also persists in a blood stain for several months after childbirth. Therefore, the presence of pregnancy cannot be definitively established from a blood stain. The other options misinterpret the persistence characteristics of the enzyme."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "308"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q22",
+      "question_i18n": {
+        "uz": "Mikroskopda tekshirilgan sochning uzilgan uchi zinasimon yuza hosil qilgan. Soch qanday ta’sirdan uzilgan?",
+        "ru": "Оборванный конец волоса, исследованный под микроскопом, образует ступенчатую поверхность. Каким воздействием был оборван волос?",
+        "en": "The torn end of a hair examined under the microscope formed a stepped surface. By what action was the hair torn?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Keskin, tez harakat bilan uzilgan",
+          "Sekinroq harakat bilan uzilgan",
+          "O‘tkir jism bilan kesilgan",
+          "O‘tmas jism ta’sirida ezilgan"
+        ],
+        "ru": [
+          "Оборван резким, быстрым движением",
+          "Оборван более медленным движением",
+          "Срезан острым предметом",
+          "Раздавлен действием тупого предмета"
+        ],
+        "en": [
+          "Torn by a sharp, fast movement",
+          "Torn by a slower movement",
+          "Cut by a sharp object",
+          "Crushed by a blunt object"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Sekinroq harakat bilan uzilganda soch uchida zinasimon yuza qoladi, keskin uzilganda esa yuza tekis bo‘ladi. O‘tkir jism bilan kesilgan sochning uchi tekis yoki mayda tishli bo‘ladi, o‘tmas jism esa sterjenni ezadi va tolalantiradi.",
+        "ru": "При обрыве более медленным движением на конце волоса остаётся ступенчатая поверхность, а при резком обрыве поверхность ровная. Конец волоса, срезанного острым предметом, ровный или мелкозубчатый, а тупой предмет раздавливает стержень и расщепляет его на волокна.",
+        "en": "When a hair is torn by a slower movement, a stepped surface remains at its tip, whereas with abrupt tearing the surface is flat. The tip of a hair cut by a sharp object is flat or finely serrated, while a blunt object crushes the shaft and splits it into fibers."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "315"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q23",
+      "question_i18n": {
+        "uz": "Gumondorning shimida najasga o‘xshash dog‘ topildi. Ekspert dog‘ni mikroskopda ko‘rib, qaysi masalani ishonchli hal eta oladi?",
+        "ru": "На брюках подозреваемого обнаружено пятно, похожее на кал. Какой вопрос эксперт может достоверно решить, рассматривая пятно под микроскопом?",
+        "en": "A feces-like stain was found on a suspect's trousers. By examining the stain microscopically, which question can the expert reliably resolve?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Najasning odamga tegishli ekanligini pretsipitatsiya bilan",
+          "Najasning AVO tizimi bo‘yicha guruhiy mansubligini",
+          "Dog‘da najas borligini: ovqat qoldiqlari, mikroorganizmlar, gelmint tuxumlari bo‘yicha",
+          "Najasning aynan gumondorga tegishli ekanligini"
+        ],
+        "ru": [
+          "Принадлежность кала человеку — реакцией преципитации",
+          "Групповую принадлежность кала по системе АВО",
+          "Наличие кала в пятне: по остаткам пищи, микроорганизмам, яйцам гельминтов",
+          "Принадлежность кала именно подозреваемому"
+        ],
+        "en": [
+          "That the feces belong to a human, by the precipitin test",
+          "The ABO group affiliation of the feces",
+          "The presence of feces in the stain: based on food remnants, microorganisms, and helminth eggs",
+          "That the feces belong specifically to the suspect"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Najas borligi mikroskopik tekshiruvda ovqat qoldiqlari, mikroorganizmlar va gelmint tuxumlarini topish orqali isbotlanadi. Najasda antigen bo‘ladigan oqsillar parchalangan bo‘ladi, shu sababli tur va guruhiy mansublikni, demak shaxsga tegishlilikni ham aniqlab bo‘lmaydi.",
+        "ru": "Наличие кала доказывается при микроскопическом исследовании обнаружением остатков пищи, микроорганизмов и яиц гельминтов. Белки, содержащие антигены, в кале расщеплены, поэтому видовую и групповую принадлежность, а значит и принадлежность конкретному лицу, установить нельзя.",
+        "en": "The presence of feces is proven by finding food remnants, microorganisms, and helminth eggs on microscopic examination. The proteins that carry antigens in feces are broken down, so species and group affiliation, and therefore attribution to a particular person, cannot be determined."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "312"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q24",
+      "question_i18n": {
+        "uz": "Gorizontal yuzada qon dog‘i dumaloq shaklda, chetlari mayda tishsimon, atrofida ikkilamchi sachralar yo‘q. Tomchining tushish balandligi haqida qanday xulosa to‘g‘ri?",
+        "ru": "На горизонтальной поверхности пятно крови имеет круглую форму, края мелкозубчатые, вокруг вторичных брызг нет. Какой вывод о высоте падения капли верен?",
+        "en": "On a horizontal surface, the blood stain is round, with finely serrated edges, and there are no secondary splashes around it. What conclusion about the drop's fall height is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tomchi 10-15 sm dan balandroqdan tushgan, lekin sachra hosil qiladigan balandlikka yetmagan",
+          "Tomchi 10-15 sm gacha balandlikdan, o‘z og‘irligi bilan tushgan",
+          "Tomchi harakatdagi tana qismidan qiya yuzaga tushgan",
+          "Tomchi juda katta balandlikdan tushgan, sachralar esa keyin artib yuborilgan"
+        ],
+        "ru": [
+          "Капля упала с высоты более 10-15 см, но не достигающей высоты, при которой образуются брызги",
+          "Капля упала с высоты до 10-15 см под собственным весом",
+          "Капля упала с движущейся части тела на наклонную поверхность",
+          "Капля упала с очень большой высоты, а брызги потом были вытерты"
+        ],
+        "en": [
+          "The drop fell from a height greater than 10-15 cm, but not high enough to produce splashes",
+          "The drop fell from a height of up to 10-15 cm, under its own weight",
+          "The drop fell onto an inclined surface from a moving body part",
+          "The drop fell from a very great height, and the splashes were wiped away later"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Taxminan 10-15 sm gacha balandlikdan tushgan tomchi tekis chetli dumaloq dog‘ qoldiradi. Balandlik kattalashsa chetlari mayda tishsimon bo‘ladi, yanada kattalashganda esa atrofida sachralar paydo bo‘ladi. Tishsimon chet bor-u sachra yo‘q bo‘lsa, balandlik oraliq bo‘ladi. Harakatdagi tana qismi yoki qiya yuza esa noksimon shakl beradi.",
+        "ru": "Капля, упавшая с высоты примерно до 10-15 см, оставляет круглое пятно с ровными краями. При увеличении высоты края становятся мелкозубчатыми, а при дальнейшем увеличении вокруг появляются брызги. Если есть зубчатый край, а брызг нет, высота промежуточная. Движущаяся часть тела или наклонная поверхность дают грушевидную форму.",
+        "en": "A drop falling from a height of up to about 10-15 cm leaves a round stain with smooth edges. As the height increases, the edges become finely serrated, and with a further increase splashes appear around the stain. If there are serrated edges but no splashes, the height is intermediate. A moving body part or an inclined surface produces a pear-shaped stain."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "304"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q25",
+      "question_i18n": {
+        "uz": "Hodisa joyidan olingan qon dog‘i taxminan bir oy avval hosil bo‘lgan. Tergovchi dog‘ yangi tug‘ilgan chaqaloqqa yoki katta yoshli odamga tegishli ekanini hal qilishni so‘radi. Ekspertning qaysi javobi to‘g‘ri?",
+        "ru": "Пятно крови с места происшествия образовалось примерно месяц назад. Следователь просит решить, принадлежит ли пятно новорождённому или взрослому человеку. Какой ответ эксперта верен?",
+        "en": "A blood stain taken from the scene was formed about one month earlier. The investigator asked for a determination of whether the stain belongs to a newborn infant or an adult. Which expert answer is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ishqoriy denaturatsiya usuli HbA va HbF ni farqlaydi, shuning uchun dog‘ yoshidan qat’i nazar masala hal bo‘ladi",
+          "Dog‘dagi oksitotsinaza fermentining miqdoriga qarab, qon chaqaloqqa mansubligi aniqlanadi",
+          "Bunday eski dog‘da katta yoshli va go‘dak qonini farqlash imkoni bo‘lmaydi",
+          "Faqat Y-xromatinni aniqlash orqali qon go‘dakka yoki kattaga mansubligi hal etiladi"
+        ],
+        "ru": [
+          "Метод щелочной денатурации различает HbA и HbF, поэтому вопрос решается независимо от давности пятна",
+          "По количеству фермента окситоциназы в пятне определяется принадлежность крови новорождённому",
+          "В таком старом пятне различить кровь взрослого и младенца невозможно",
+          "Только по определению Y-хроматина решается, принадлежит кровь младенцу или взрослому"
+        ],
+        "en": [
+          "The alkaline denaturation method distinguishes HbA and HbF, so the question can be resolved regardless of the age of the stain",
+          "Based on the amount of the enzyme oxytocinase in the stain, the blood's origin from a newborn is determined",
+          "In such an old stain it is not possible to distinguish adult blood from infant blood",
+          "Only by detecting Y-chromatin can it be decided whether the blood belongs to an infant or an adult"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kattalar va go‘daklar qonini gemoglobin turi (HbA yoki HbF) bo‘yicha farqlash faqat nisbatan yangi dog‘larda mumkin. 15-20 kunlik dog‘larda bu imkoniyat qolmaydi. Oksitotsinaza homiladorlik bilan, Y-xromatin esa jins bilan bog‘liq, ular yosh toifasini ajratmaydi.",
+        "ru": "Различить кровь взрослых и младенцев по типу гемоглобина (HbA или HbF) можно только в относительно свежих пятнах. В пятнах давностью 15-20 суток такой возможности нет. Окситоциназа связана с беременностью, а Y-хроматин — с полом, они не разделяют возрастные категории.",
+        "en": "Distinguishing adult and infant blood by hemoglobin type (HbA or HbF) is possible only in relatively fresh stains. In stains 15-20 days old this possibility is lost. Oxytocinase is related to pregnancy and Y-chromatin to sex; they do not distinguish the age category."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "308"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q26",
+      "question_i18n": {
+        "uz": "Mikroskopda tekshirilgan sochning sterjeni buralgan, malla rang tusga kirgan, ichida turli o‘lchamdagi havo bilan to‘lgan bo‘shliqlar ko‘rinadi. Qaysi ta’sir ehtimoli eng yuqori?",
+        "ru": "Стержень волоса, исследованного под микроскопом, закручен, приобрёл рыжеватый оттенок, внутри видны заполненные воздухом полости разных размеров. Какое воздействие наиболее вероятно?",
+        "en": "The shaft of a hair examined under the microscope is twisted, has taken on a reddish-brown tint, and air-filled cavities of various sizes are visible inside. Which effect is most likely?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Yuqori harorat ta’siri",
+          "Sochning sekin harakat bilan yulib olinishi",
+          "O‘tmas jism zarbi natijasida ezilish va tolalanish",
+          "O‘tkir jism bilan kesilish"
+        ],
+        "ru": [
+          "Действие высокой температуры",
+          "Вырывание волоса медленным движением",
+          "Раздавливание и расщепление на волокна при ударе тупым предметом",
+          "Срез острым предметом"
+        ],
+        "en": [
+          "Effect of high temperature",
+          "Slow pulling out of the hair",
+          "Crushing and splitting into fibers as a result of a blunt object blow",
+          "Cutting with a sharp object"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Sterjenning buralishi, malla tus va havo bilan to‘lgan bo‘shliqlar termik ta’sirning belgilari. O‘tmas jism sterjenni ezadi va tolalaydi, o‘tkir jism tekis yoki mayda tishli uch qoldiradi. Yulib olish esa asosan ildiz qismidagi o‘zgarishlarda ko‘rinadi.",
+        "ru": "Закручивание стержня, рыжеватый оттенок и заполненные воздухом полости — признаки термического воздействия. Тупой предмет раздавливает стержень и расщепляет его на волокна, острый предмет оставляет ровный или мелкозубчатый конец. Вырывание проявляется главным образом изменениями в корневой части.",
+        "en": "Twisting of the shaft, a reddish-brown tint, and air-filled cavities are signs of thermal action. A blunt object crushes the shaft and splits it into fibers, while a sharp object leaves a flat or finely serrated tip. Pulling out is seen mainly as changes in the root part."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "315"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q27",
+      "question_i18n": {
+        "uz": "Ekspert qon dog‘idan ajratilgan hujayralarda jinsni aniqlash uchun sitologik tekshiruv o‘tkazmoqda. Quyidagi topilmalardan qaysi biri erkak jinsiga mos keladi?",
+        "ru": "Эксперт проводит цитологическое исследование клеток, выделенных из пятна крови, для определения пола. Какая из следующих находок соответствует мужскому полу?",
+        "en": "The expert is performing a cytological examination to determine sex in cells isolated from a blood stain. Which of the following findings corresponds to male sex?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Azur-eozin bilan bo‘yalgan hujayralarda X-xromatinning topilishi",
+          "Gematoksilin-eozin bilan bo‘yalgan preparatda yadroning yirik bo‘lishi",
+          "Qon zardobida xoriongonadotrop gormonning aniqlanishi",
+          "Akrixin bilan bo‘yalgan hujayra yadrolarida lyuminessent mikroskopiyada xromatinning topilishi"
+        ],
+        "ru": [
+          "Обнаружение X-хроматина в клетках, окрашенных азур-эозином",
+          "Крупные ядра в препарате, окрашенном гематоксилин-эозином",
+          "Определение хорионического гонадотропина в сыворотке крови",
+          "Обнаружение хроматина в ядрах клеток, окрашенных акрихином, при люминесцентной микроскопии"
+        ],
+        "en": [
+          "Detection of X-chromatin in cells stained with azure-eosin",
+          "A large nucleus in a preparation stained with hematoxylin-eosin",
+          "Detection of chorionic gonadotropin hormone in blood serum",
+          "Detection of chromatin under fluorescence microscopy in cell nuclei stained with quinacrine"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Y-xromatin akrixin bilan bo‘yalib, lyuminessent mikroskopiyada erkaklar hujayralarining yadrosida ko‘rinadi. X-xromatin esa asos bo‘yoqlar (azur-eozin) bilan ayollarning hujayralarida aniqlanadi. Xoriongonadotrop gormon homiladorlik bilan bog‘liq, jinsni ko‘rsatmaydi.",
+        "ru": "Y-хроматин, окрашенный акрихином, виден в ядрах мужских клеток при люминесцентной микроскопии. X-хроматин выявляется в клетках женщин основными красителями (азур-эозин). Хорионический гонадотропин связан с беременностью и пол не указывает.",
+        "en": "Y-chromatin, stained with quinacrine, is visible under fluorescence microscopy in the nuclei of male cells. X-chromatin, on the other hand, is detected in female cells with basic dyes (azure-eosin). Chorionic gonadotropin is related to pregnancy and does not indicate sex."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "307-308"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q28",
+      "question_i18n": {
+        "uz": "Yo‘l chetida qum ustida, qon chuqur shimilgan dog‘ topildi. Ekspertiza uchun namuna qaysi tartibda olinadi?",
+        "ru": "На обочине дороги на песке обнаружено пятно с глубоко впитавшейся кровью. В каком порядке берётся образец для экспертизы?",
+        "en": "A stain with deeply soaked blood was found on sand by the roadside. In what manner is the sample taken for examination?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qumdan toza skalpel bilan yupqa qirindi olinib, kukun kabi toza qog‘ozga o‘raladi",
+          "Qon shimilgan qalinlikdagi qum to‘liq tarelkaga olinib, xona haroratida quritiladi, kontrol uchun ifloslanmagan qum olinadi",
+          "Qum suv bilan namlangan doka bilan artilib yuvma olinadi va quyosh nurida quritiladi",
+          "Qum shisha flakonga solinib, suv bilan aralashtiriladi va xona haroratida eritiladi"
+        ],
+        "ru": [
+          "Чистым скальпелем берётся тонкий соскоб с песка и заворачивается в чистую бумагу как порошок",
+          "Песок на всю толщину впитавшейся крови берётся целиком в тарелку, высушивается при комнатной температуре, для контроля берётся незагрязнённый песок",
+          "Песок протирается марлей, смоченной водой, берётся смыв и высушивается на солнце",
+          "Песок помещается в стеклянный флакон, смешивается с водой и растворяется при комнатной температуре"
+        ],
+        "en": [
+          "A thin scraping is taken from the sand with a clean scalpel and wrapped in clean paper like a powder",
+          "The entire thickness of sand soaked with blood is taken onto a plate and dried at room temperature, and uncontaminated sand is taken as a control",
+          "The sand is wiped with gauze moistened with water to obtain a wash, and dried in sunlight",
+          "The sand is put into a glass vial, mixed with water, and dissolved at room temperature"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Tuproq va qumdagi qon dog‘i shimilgan qalinligi bo‘yicha butunlay olinadi, xona haroratida quritiladi va toza qog‘ozga o‘raladi. Qirindi olish qattiq yuzalar uchun, doka bilan yuvma esa qattiq yuzalardagi izlar uchun mos. Quyoshda quritish namunaga zarar yetkazadi.",
+        "ru": "Пятно крови на почве и песке берётся целиком на всю толщину пропитывания, высушивается при комнатной температуре и заворачивается в чистую бумагу. Соскоб подходит для твёрдых поверхностей, а смыв марлей — для следов на твёрдых поверхностях. Сушка на солнце портит образец.",
+        "en": "A blood stain on soil and sand is taken in full, through its entire soaked thickness, dried at room temperature, and wrapped in clean paper. Scraping is suitable for hard surfaces, and a gauze wash is suitable for traces on hard surfaces. Drying in the sun damages the sample."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "305"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q29",
+      "question_i18n": {
+        "uz": "O‘q otar qurol jarohati bo‘lgan teri bo‘lagi tibbiy-kriminalistik tekshiruvga yuborilmoqda. Bo‘lak jarohat atrofidagi shikastlanmagan teri bilan birga olindi. Kontrol uchun teri qayerdan olinishi kerak?",
+        "ru": "Кожный лоскут с огнестрельной раной направляется на медико-криминалистическое исследование. Лоскут взят вместе с неповреждённой кожей вокруг раны. Откуда следует брать кожу для контроля?",
+        "en": "A skin fragment with a firearm wound is being sent for forensic medical-criminalistic examination. The fragment was taken together with the undamaged skin around the wound. Where should the control skin be taken from?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tananing simmetrik sohasidan",
+          "Shu jarohat chetidan, bir bo‘lak ichida",
+          "Jarohatdan olingan bo‘lakning o‘zidan, uni ikkiga bo‘lib",
+          "Kiyimning shikastlanmagan qismidan"
+        ],
+        "ru": [
+          "Из симметричного участка тела",
+          "С края этой раны, в пределах одного лоскута",
+          "Из самого лоскута, взятого с раны, разделив его надвое",
+          "Из неповреждённой части одежды"
+        ],
+        "en": [
+          "From a symmetrical area of the body",
+          "From the edge of the same wound, within the same piece",
+          "From the fragment taken from the wound itself, by dividing it in two",
+          "From an undamaged part of the clothing"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Tekshiruv uchun jarohat atrofidagi shikastlanmagan teri bilan birga olinadi, bu begona qo‘shilmalar va qo‘shimcha omillar izlarini topish uchun kerak. Kontrol uchun esa tananing simmetrik sohasidan preparat kesib olinadi. Jarohat chetidagi teri yoki kiyim kontrol bo‘la olmaydi.",
+        "ru": "Для исследования кожа берётся вместе с неповреждённой кожей вокруг раны, это нужно для выявления следов посторонних наложений и дополнительных факторов. Для контроля же препарат вырезается из симметричного участка тела. Кожа с края раны или одежда контролем быть не могут.",
+        "en": "For examination, the wound is taken together with the undamaged skin around it; this is needed to find traces of foreign inclusions and additional factors. For control, a specimen is cut from a symmetrical area of the body. Skin at the wound edge or clothing cannot serve as a control."
+      },
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "203-204"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-17-q30",
+      "question_i18n": {
+        "uz": "Sud-gistologik bo‘limda arxiv materiallari saqlash muddatlari tekshirilmoqda. Quyidagi materiallardan qaysi birining belgilangan minimal saqlash muddati eng qisqa?",
+        "ru": "В судебно-гистологическом отделении проверяются сроки хранения архивных материалов. У какого из следующих материалов установленный минимальный срок хранения самый короткий?",
+        "en": "Archive material storage periods are being checked in the forensic histology department. Which of the following materials has the shortest established minimum storage period?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Gistologik preparatlar",
+          "To‘qima bo‘lakchalari quyilgan bloklar",
+          "Murda a’zo va to‘qimalarining birlamchi (formalinli) arxivi",
+          "Diatom planktoni tekshiruvidan keyin qolgan mineralizatlar"
+        ],
+        "ru": [
+          "Гистологические препараты",
+          "Блоки с залитыми кусочками тканей",
+          "Первичный (формалиновый) архив органов и тканей трупа",
+          "Минерализаты, оставшиеся после исследования на диатомовый планктон"
+        ],
+        "en": [
+          "Histological slides",
+          "Blocks embedded with tissue pieces",
+          "Primary (formalin) archive of cadaveric organs and tissues",
+          "Mineralizates remaining after diatom plankton examination"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Birlamchi (formalinli) arxiv kamida 2 yil saqlanadi. Gistologik preparatlar, bloklar va diatom tekshiruvidan qolgan mineralizatlar uchun minimal muddat kamida 3 yil.",
+        "ru": "Первичный (формалиновый) архив хранится не менее 2 лет. Для гистологических препаратов, блоков и минерализатов, оставшихся после диатомового исследования, минимальный срок — не менее 3 лет.",
+        "en": "The primary (formalin) archive is stored for at least 2 years. For histological slides, blocks, and mineralizates left after diatom examination, the minimum period is at least 3 years."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "317"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "Bob 13. Ashyoviy dalillarni sud-tibbiy tekshirish"
+    },
+    {
+      "author": "Ромодановский П.О., Баринов Е.Х.",
+      "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2017,
+      "pages": "7-modul. Ashyoviy dalillar ekspertizasi; bet 460-491"
+    },
+    {
+      "author": "Харин Г.М. (Kharin G.M.)",
+      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2006,
+      "pages": "X bo‘lim. Biologik ashyoviy dalillar tekshiruvi; bet 192-213"
+    }
+  ]
+}

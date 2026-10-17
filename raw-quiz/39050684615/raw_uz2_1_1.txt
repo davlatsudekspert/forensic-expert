@@ -1,0 +1,108 @@
+```json
+{
+  "questions": [
+    {
+      "question": "Simpson’s Forensic Medicine bo‘yicha tirik shaxsning yoshini skelet bo‘yicha baholashda dastlab qaysi sohaning rentgenogrammalari tahlil qilinadi?",
+      "options": [
+        "Tizza bo‘g‘imi va katta boldir suyagi proksimal uchi",
+        "Qo‘l panjasi va bilak bo‘g‘imi (kaft–bilak sohasi)",
+        "Kalla suyagining yon proyeksiyadagi rentgenogrammasi",
+        "Chanoq suyaklari va son suyagining bo‘yin qismi"
+      ],
+      "correct_index": 1,
+      "explanation": "Skelet yoshini baholashda birinchi navbatda kaft–bilak sohasi rentgenogrammalari avval chop etilgan standartlar bilan solishtiriladi. Boshqa sohalar bu tartibda dastlabki tanlov sifatida ko‘rsatilmagan.",
+      "difficulty": "easy",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "40"
+      }
+    },
+    {
+      "question": "Hayotlik davrdagi kalla suyagi rentgenogrammasi mavjud bo‘lsa, murda shaxsini deyarli shubhasiz tasdiqlash uchun qaysi tuzilma konturi solishtiriladi?",
+      "options": [
+        "Ko‘z kosasi yuqori qirrasining shakli",
+        "Pastki jag‘ burchagining ochiqligi",
+        "Ensa suyagining tashqi bo‘rtig‘i",
+        "Peshona bo‘shlig‘i (frontal sinus) konturi"
+      ],
+      "correct_index": 3,
+      "explanation": "Ikki kishida peshona bo‘shlig‘ining tashqi konturi bir xil bo‘lmaydi, shuning uchun hayotlik va o‘limdan keyingi rentgenogrammalarni solishtirish ishonchli natija beradi. Boshqa variantlar bunday yakkalik darajasiga ega deb ko‘rsatilmagan.",
+      "difficulty": "medium",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "38"
+      }
+    },
+    {
+      "question": "G‘iyosov darsligiga ko‘ra, tibbiy abort ayolning xohishiga ko‘ra homiladorlikning qancha haftalik muddatigacha o‘tkaziladi?",
+      "options": [
+        "12 haftagacha",
+        "6 haftagacha",
+        "16 haftagacha",
+        "22 haftagacha"
+      ],
+      "correct_index": 0,
+      "explanation": "Ayolning xohishiga ko‘ra tibbiy abort 12 haftalik muddatgacha qilinadi, undan keyin faqat tibbiy va ijtimoiy ko‘rsatmalar bo‘lsa. 22 hafta esa abort tushunchasining yuqori chegarasi, ya’ni homiladorlikning shu muddatgacha uzilishi.",
+      "difficulty": "easy",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "294"
+      }
+    },
+    {
+      "question": "Chiqarilayotgan havoda alkogolni aniqlash uchun Rapoport sinamasi (kaliy permanganat) o‘tkazilganda, alkogol mavjudligida nima kuzatiladi?",
+      "options": [
+        "Eritmaning sariq rangi yashil rangga o‘tadi",
+        "Probirkada ko‘k rangli cho‘kma hosil bo‘ladi",
+        "Eritma rangsizlanadi",
+        "Eritma qizg‘ish rangini yanada to‘qlashtiradi"
+      ],
+      "correct_index": 2,
+      "explanation": "Sulfat kislota ishtirokida alkogol oksidlanadi, kaliy permanganat qaytarilib eritma birinchi daqiqada rangsizlanadi, nazorat probirkada esa qizg‘ish rang saqlanadi. Sariq rangning yashilga o‘tishi kaliy bixromat (Arxangelov) sinamasiga xos.",
+      "difficulty": "medium",
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun)",
+        "page": "407-408"
+      }
+    },
+    {
+      "question": "Tirik shaxs ekspertizasi militsiya yoki xalq sudining yo‘llanmasi asosida o‘tkazilganda, tuzilgan hujjat qanday ataladi?",
+      "options": [
+        "Ekspertizaning tekshiruv akti",
+        "Ekspert xulosasi",
+        "Tibbiy ko‘rik bayonnomasi",
+        "Ekspert-maslahatchi ma’lumotnomasi"
+      ],
+      "correct_index": 0,
+      "explanation": "Yo‘llanma bo‘yicha o‘tkazilgan ekspertiza natijasi «Ekspertizaning tekshiruv akti» shaklida rasmiylashtiriladi. «Ekspert xulosasi» esa tergovchi qarori yoki sud ajrimi asosidagi ekspertizada tuziladi.",
+      "difficulty": "easy",
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun)",
+        "page": "356"
+      }
+    },
+    {
+      "question": "G‘iyosov darsligiga ko‘ra, tananing silliqlanmaydigan badburushligi mavjudligini aniqlash kimning vakolatiga kiradi?",
+      "options": [
+        "Sud-tibbiy ekspertning",
+        "Plastik jarroh-konsultantning",
+        "Sudning",
+        "Tergovchining"
+      ],
+      "correct_index": 2,
+      "explanation": "Badburushlikning mavjudligini sud aniqlaydi, chunki bu huquqiy baho. Sud-tibbiy ekspertiza esa jarohat izlarining silliqlanish yoki silliqlanmaslik xususiyatini aniqlaydi, klinitsistlar ishtirokida.",
+      "difficulty": "medium",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "283"
+      }
+    }
+  ]
+}
+```

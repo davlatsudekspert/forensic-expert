@@ -1,0 +1,108 @@
+```json
+{
+  "questions": [
+    {
+      "question": "Bir shaxsga avval bir hodisada o‘rtacha og‘ir jarohat, bir necha oy o‘tib esa boshqa holatda yengil jarohat yetkazilgan. Jarohatlar bir-biriga aloqador emas. Og‘irlik darajasi qanday aniqlanadi?",
+      "options": [
+        "Ikkala jarohat uchun birgalikda, og‘irroq jarohatga mos mezon bo‘yicha",
+        "Har bir jarohat uchun alohida-alohida",
+        "Faqat oxirgi yetkazilgan jarohat bo‘yicha",
+        "Ikkala jarohat sog‘liq buzilish kunlari qo‘shilib, bitta umumiy hisob bo‘yicha"
+      ],
+      "correct_index": 1,
+      "explanation": "Jarohatlar turli muddatlarda yetkazilgan bo‘lsa, og‘irlik darajasi har biri uchun alohida belgilanadi. Umumiy baholash faqat bir vaqtda, bir hodisada yetkazilib, bir-birining kechishini og‘irlashtirgan jarohatlarga qo‘llanadi. Qolgan variantlar bu qoidaga zid.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "283"
+      }
+    },
+    {
+      "question": "Jabrlanuvchining bir ko‘zi jarohatdan oldin ham ko‘rmas edi. Shikastlanish natijasida aynan shu ko‘z olib tashlandi. Tan jarohati og‘irligi qaysi mezon bo‘yicha aniqlanadi?",
+      "options": [
+        "Hayot uchun xavf mezoni bo‘yicha",
+        "Umumiy mehnat qobiliyatining turg‘un yo‘qotilishi foizi bo‘yicha",
+        "Biron-bir a’zoning yo‘qotilishi mezoni bo‘yicha, og‘ir jarohat sifatida",
+        "Sog‘liqning buzilish davomiyligi mezoni bo‘yicha"
+      ],
+      "correct_index": 3,
+      "explanation": "Jarohatgacha sog‘ bo‘lgan ko‘zning yo‘qotilishi mehnat qobiliyati foizi bo‘yicha og‘ir deb baholanadi. Ko‘rish qobiliyati bo‘lmagan ko‘z olib tashlanganda esa oqibat shu mezon bilan o‘lchanmaydi, shuning uchun og‘irlik sog‘liq buzilishining davomiyligi bo‘yicha belgilanadi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "281"
+      }
+    },
+    {
+      "question": "Bahsli otalik ekspertizasida ona qon guruhi O (I), taxmin qilinuvchi ota guruhi AB (IV), bolaning guruhi esa O (I) ekani aniqlandi. AVO tizimi bo‘yicha qanday xulosa to‘g‘ri?",
+      "options": [
+        "Otalik inkor etiladi, chunki AB (IV) guruhli ota bolaga A yoki B genini albatta beradi",
+        "Otalik tasdiqlanadi, chunki ona O (I) bo‘lgani uchun bola ham O (I) bo‘la oladi",
+        "Otalik inkor etilmaydi, chunki bola retsessiv O genini otadan olgan bo‘lishi mumkin",
+        "Savol hal bo‘lmaydi, chunki AVO tizimi bo‘yicha xulosa chiqarib bo‘lmaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "Ota yoki onadan biri AB (IV) guruhli bo‘lsa, bolada O (I) guruhi bo‘lishi mumkin emas, chunki AB guruhli ota A yoki B genidan birini albatta beradi. Shu sabab otalik inkor etiladi. Bu AVO tizimining o‘zi yetarli bo‘ladigan holat.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun)",
+        "page": "396"
+      }
+    },
+    {
+      "question": "Ginekologik ko‘rikda qizlik pardasining oldingi segmentida nuqson topildi. Quyidagi belgilar majmuidan qaysi biri uni eski yorilish emas, balki tabiiy o‘yiq ekanini ko‘rsatadi?",
+      "options": [
+        "Parda asosigacha yetadi, chetlari qalin va oqimtir, chetlari bir-biriga mos tushadi",
+        "Orqa segmentda joylashgan, tubi o‘tkir burchakli, ultrabinafsha nurda ko‘kimtir yorug‘lik beradi",
+        "Parda asosigacha yetmaydi, chetlari yupqa, silliq va yumaloqlashgan, rangi parda bilan bir xil",
+        "Chetlari ajralib turadi, yuzasi notekis, to‘qimasi zichlashgan va chandiqlangan"
+      ],
+      "correct_index": 2,
+      "explanation": "Tabiiy o‘yiq odatda parda asosigacha yetmaydi. Uning chetlari yupqa, silliq, yumaloq va qolgan parda bilan bir xil rangda bo‘ladi. Boshqa variantlardagi belgilar (asosgacha yetish, qalin yoki oqimtir chetlar, orqa segment, ultrabinafsha nurda yorug‘lik, chandiq) eski yorilishga xos.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Ромодановский П.О., Баринов Е.Х.",
+        "title": "Судебная медицина в схемах и рисунках: учебное пособие",
+        "page": "447"
+      }
+    },
+    {
+      "question": "Ekspert ko‘rigida bolaning ikkala kafti bo‘ylab ‘qo‘lqop‘ shaklidagi, chetlari tekis va sog‘ teridan aniq ajralgan, chuqurligi bir tekis kuyish topildi. Bu naqsh qaysi xulosaga ko‘proq mos keladi?",
+      "options": [
+        "Qo‘llar qaynoq suyuqlikka majburan botirilgan, ya’ni zo‘rlik ishlatilgan",
+        "Qaynoq suyuqlik tasodifan sachragan, shuning uchun chetlari tekis",
+        "Bola qaynoq predmetga o‘zi tasodifan tegib ketgan, shuning uchun chuqurlik bir xil",
+        "Kuyish oqibatida chegara o‘z-o‘zidan xiralashgan, shuning uchun bu naqsh majburiy botirishga xos emas"
+      ],
+      "correct_index": 0,
+      "explanation": "Qo‘l yoki oyoqda ‘qo‘lqop‘, ‘paypoq‘ shaklidagi, chegarasi aniq va chuqurligi bir tekis kuyish botirishga xos belgi bo‘lib, bolaga nisbatan zo‘rlikdan dalolat beradi. Tasodifiy kuyishlar odatda tomchi yoki sachrash shaklida, chegarasi xira va chuqurligi notekis bo‘ladi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Ромодановский П.О., Баринов Е.Х.",
+        "title": "Судебная медицина в схемах и рисунках: учебное пособие",
+        "page": "427"
+      }
+    },
+    {
+      "question": "Alkogolni miqdoriy aniqlash uchun tekshiriluvchining barmog‘idan qon olinmoqda. Teri qaysi vosita bilan artilishi kerak?",
+      "options": [
+        "Etil spirti bilan namlangan paxta",
+        "Yodning spirtli eritmasi",
+        "Benzin bilan namlangan paxta",
+        "Simob ikki xloridning 1:1000 eritmasi"
+      ],
+      "correct_index": 3,
+      "explanation": "Barmoq terisi simob ikki xloridning 1:1000 eritmasi bilan artiladi. Spirt, yodning spirtli eritmasi va benzin ishlatilmaydi, chunki ular alkogolni aniqlash natijasini buzadi. Asboblar va idishlarni ham spirt bilan artish mumkin emas.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun)",
+        "page": "411"
+      }
+    }
+  ]
+}
+```
