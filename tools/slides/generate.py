@@ -173,16 +173,17 @@ def call_api(client, system, user):
         slides += r["slides"]
     n = len(slides)
     mcq = []
-    for k, (lo, hi) in enumerate([(0, n // 2), (n // 2, n)], 1):
+    q = n // 4
+    for k, (lo, hi) in enumerate([(0, q), (q, 2 * q), (2 * q, 3 * q), (3 * q, n)], 1):
         titles = [s.get("title", "") for s in slides[lo:hi]]
         r = _json_call(client, system, [src, {"type": "text", "text":
-            f'BOSQICH 3.{k}. Faqat JSON: {{"mcq":[10 ta savol, FAQAT quyidagi slaydlar mavzulari bo\'yicha: {json.dumps(titles, ensure_ascii=False)}; '
+            f'BOSQICH 3.{k}. Faqat JSON: {{"mcq":[5 ta savol, FAQAT quyidagi slaydlar mavzulari bo\'yicha: {json.dumps(titles, ensure_ascii=False)}; '
             'kamida 3 tasi vaziyatli (qo\'llash) savol; har savolda FAQAT bitta narsa so\'ralsin; variantlar uzunligi teng; to\'g\'ri javob o\'rni A/B/C/D bo\'ylab teng taqsimlansin; '
             'har biri: {"question","options":[4 ta],"correct_index","explanation","source":{"author","title","page"}}]}}'}],
-            7000, f"mcq{k}")
+            8000, f"mcq{k}")
         mcq += r["mcq"]
     ex = _json_call(client, system, [src, {"type": "text", "text":
-        'BOSQICH 3.3. Faqat JSON: {"extras":[3-5 ta qiziqarli fakt/hodisa tahlili/eslab qolish usuli, manbali: {"text","source":{"author","title","page"}}]}'}],
+        'BOSQICH 3.9. Faqat JSON: {"extras":[3-5 ta qiziqarli fakt/hodisa tahlili/eslab qolish usuli, manbali: {"text","source":{"author","title","page"}}]}'}],
         3000, "extras")
     tail = {"mcq": mcq, "extras": ex.get("extras", [])}
     return {"topic": plan.get("topic", ""), "slides": slides, "mcq": tail["mcq"], "extras": tail.get("extras", [])}
@@ -196,7 +197,7 @@ def run(topic_id, sources_path, max_usd, dry_run, out_dir, client=None):
         return {"status": "pending", "message": PENDING}
     user = build_user_prompt(topic, sources)
     in_tok = est_tokens(SYSTEM_PROMPT) + est_tokens(user)
-    cost = est_cost(in_tok * 1.3, 38000)  # keshlangan kirish + ~38k chiqish (eng yomon holat)
+    cost = est_cost(in_tok * 1.3, 80000)  # keshlangan kirish + ~80k chiqish (eng yomon holat)
     print(f"Taxminiy kirish tokenlari: {in_tok}; chiqish (maks): {MAX_TOKENS}; "
           f"eng yomon narx ~ ${cost:.4f} (narx konstantalari TEKSHIRILMAGAN, rasmiy sahifada tekshiring)")
     if cost > max_usd:

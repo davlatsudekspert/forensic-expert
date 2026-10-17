@@ -61,7 +61,7 @@ def test_mock_generate_and_pptx(tmp_path):
                 elif "BOSQICH 2" in txt:
                     n = txt.count('"focus"')
                     out = {"slides": good["slides"][:n]}
-                elif "BOSQICH 3.3" in txt:
+                elif "BOSQICH 3.9" in txt:
                     out = {"extras": []}
                 else:
                     out = {"mcq": good["mcq"]}
