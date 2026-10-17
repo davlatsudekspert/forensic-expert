@@ -110,6 +110,7 @@ class ProfileScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(title: Text(l.profileTitle)),
       body: SafeArea(
+        bottom: false,
         child: ListView(
           children: [
             FeContentFrame(

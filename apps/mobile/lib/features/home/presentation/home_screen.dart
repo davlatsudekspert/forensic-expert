@@ -11,6 +11,7 @@ import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/flags.dart';
+import '../../../core/floating_nav_flag.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/settings/app_settings.dart';
@@ -241,8 +242,13 @@ class HomeScreen extends ConsumerWidget {
     return Scaffold(
       body: SafeArea(
         top: false,
+        // Suzuvchi menyu: pastki padding (menyu balandligi) ListView’ga
+        // beriladi — kontent menyu ostida ko‘rinadi, oxirida to‘silmaydi.
+        bottom: false,
         child: ListView(
-          padding: const EdgeInsets.only(bottom: FeSpace.xs),
+          padding: EdgeInsets.only(
+            bottom: FeSpace.xs + MediaQuery.paddingOf(context).bottom,
+          ),
           children: [
             const _HomeHero(),
             FeContentFrame(
@@ -1018,6 +1024,12 @@ class _HomeHero extends ConsumerWidget {
                         prominent: true,
                         onTap: () => context.push(Routes.search),
                       ),
+                      // Kutubxona suzuvchi menyuda tab emas — Asosiy
+                      // tepasida katta tugma (eski menyuda tab bor).
+                      if (floatingNavEnabled) ...[
+                        const SizedBox(height: FeSpace.sm),
+                        const _LibraryCta(),
+                      ],
                       const SizedBox(height: FeSpace.xxs),
                       const _JurisdictionContext(),
                     ],
@@ -1027,6 +1039,54 @@ class _HomeHero extends ConsumerWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Kutubxonaga katta, ajralib turuvchi kirish (suzuvchi menyuda tab yo‘q).
+/// Marshrut o‘zgarmaydi: `/library` (shell ichidagi alohida branch).
+class _LibraryCta extends StatelessWidget {
+  const _LibraryCta();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      key: const Key('home.library'),
+      color: c.accentContainer,
+      padding: const EdgeInsets.symmetric(
+        horizontal: FeSpace.md,
+        vertical: FeSpace.sm,
+      ),
+      onTap: () => context.go(Routes.library),
+      child: _EntryLayout(
+        leading: DecoratedBox(
+          decoration: BoxDecoration(
+            color: c.surfaceRaised,
+            borderRadius: BorderRadius.circular(FeRadius.md),
+            border: Border.all(color: c.accentBorder),
+          ),
+          child: SizedBox.square(
+            dimension: 48,
+            child: Icon(
+              Icons.local_library_outlined,
+              color: c.accent,
+              size: 26,
+            ),
+          ),
+        ),
+        title: Text(
+          l.libraryTitle,
+          style: t.titleMedium?.copyWith(
+            fontWeight: FontWeight.w700,
+            color: c.onAccentContainer,
+          ),
+        ),
+        body: l.homeLibraryBody,
+        trailing: Icon(Icons.chevron_right, color: c.onAccentContainer),
       ),
     );
   }
