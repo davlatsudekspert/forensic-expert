@@ -76,6 +76,12 @@ void main() {
     'offerPriceLine',
     // Fayl hajmi: «KB» — o‘zbekchada ham xalqaro birlik belgisi (ru: «КБ»).
     'fileSizeKb',
+    // «Sinfda test»: «DEMO» belgisi o‘zbekchada ham aynan shunday; sessiya
+    // qatori faqat o‘rin belgilari va «·» ({code} · {status}).
+    'classDemoChip',
+    'classSessionLine',
+    // «{seconds} s» — soniya belgisi o‘zbekchada ham «s».
+    'classSecondsShort',
   };
 
   // ICU argumentlari: `{name}` yoki `{name, select, …}`; select/plural

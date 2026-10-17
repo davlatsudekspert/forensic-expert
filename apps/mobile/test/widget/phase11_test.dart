@@ -39,12 +39,24 @@ void main() {
       expect(m, contains('android:usesCleartextTraffic="false"'));
       for (final p in [
         'ACCESS_FINE_LOCATION',
-        'CAMERA',
         'READ_CONTACTS',
         'RECORD_AUDIO',
       ]) {
         expect(m, isNot(contains(p)));
       }
+      // CAMERA faqat «Sinfda test» QR skaneri uchun (docs/CLASS_QUIZ.md):
+      // kamera qurilmada bo‘lishi shart emas — kod qo‘lda ham kiritiladi.
+      final perms = RegExp(
+        r'uses-permission android:name="android\.permission\.(\w+)"',
+      ).allMatches(m).map((x) => x[1]).toSet();
+      expect(perms, {'INTERNET', 'CAMERA'});
+      expect(
+        m,
+        contains(
+          '<uses-feature android:name="android.hardware.camera" '
+          'android:required="false"/>',
+        ),
+      );
     });
 
     test('Android: kalit/parol repozitoriyda yo‘q; imzo himoyasi bor', () {
