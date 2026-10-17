@@ -39,6 +39,7 @@ RULES:
 STYLE: each bullet <= 220 characters (1-2 short sentences, own words); 3-4 bullets per slide, ~60 words; do NOT write [author, page] citations inside bullet text (they belong in the source field); spell out abbreviations at first use (PMI = post-mortem interval, SIDS ...); use the normal apostrophe '.
 DIAGRAMS: at least half of the slides carry a diagram; on a slide with a diagram use at most 3 bullets, each <= 110 characters (the diagram must not repeat the text); flow <= 5 nodes, each node <= 32 characters; table <= 4 rows (excluding header), <= 3 columns, cell <= 45 characters, header <= 14 characters; NEVER a 4-column table; slide title <= 55 characters; do not write service fields (_note etc.); use a table/flow for timelines, comparisons (A vs B), process chains and calculation examples; keep captions short.
 ENGAGEMENT: after each section one "Case analysis" slide (a short scenario built from the source facts + a question); a "Quick question" slide every 6-8 slides; a "Caution: common error" bullet where the source distinguishes similar things (e.g. A is not B); a "Remember" mnemonic where the source supports one. teacher_notes (in English): time (min), 1-2 discussion questions, a whiteboard task, a typical mistake. Every bullet carries a source (author, title, page) taken ONLY from the given list.
+SOURCE FIELDS: in every "source" copy "author" and "title" EXACTLY as written in the SOURCE header (character for character, keep the original spelling and apostrophes, e.g. G‘iyosov; do not translate or transliterate them); put the chapter/section/page only into "page".
 CITING PAGES: the source text contains page markers like "[p. 45]" = printed page of the book. Use the number of the marker preceding the passage as "page" (e.g. "45"). If a source has no markers, use the chapter/section given in its header.
 3b. NEVER invent numbers, pages, percentages or dates. If it is not in the sources, do not write it.
 4. Mark any doubtful bullet or one not clearly stated in the sources with "uncertain": true.
@@ -166,8 +167,46 @@ def clean_text(data, lang="uz"):
     return walk(data)
 
 
-def canonicalize_sources(data, sources):
-    """Model manbani qisqartirib yozishi mumkin: yagona manba bo'lsa, author/title ni aniq nomga almashtiradi (bet saqlanadi)."""
+_CYR = dict(zip("абвгдеёжзийклмнопрстуфхцчшщъыьэюяў", ["a", "b", "v", "g", "d", "e", "e", "zh", "z", "i", "y", "k", "l", "m", "n", "o", "p",
+               "r", "s", "t", "u", "f", "kh", "ts", "ch", "sh", "shch", "", "y", "", "e", "yu", "ya", "o"]))
+
+
+def _norm(s):
+    """Taqqoslash uchun: kichik harf, apostroflar (' ‘ ’ ʻ ʼ `) olib tashlanadi, kirill -> lotin, faqat harf/raqam/bo'shliq."""
+    s = "".join(_CYR.get(c, c) for c in (s or "").lower())
+    s = re.sub(r"['‘’ʻʼ`´]", "", s)
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+def _surnames(author):
+    """Muallif qatoridagi familiyalar (normallashtirilgan, >=4 harf): 'Payne-James J., Jones R.' -> {'payne', 'james', 'jones'}."""
+    return {w for w in _norm(author).split() if len(w) >= 4}
+
+
+def _fuzzy_source(src, sources):
+    """Inglizcha rejim: model apostrof/translit/qisqa sarlavha bilan yozgan manbani ro'yxatdagi aniq manbaga bog'laydi.
+    Familiya (prefiks 6 harf) mos bo'lishi shart; bir nechta kitob bo'lsa sarlavha so'zlari kesishmasi bo'yicha tanlanadi."""
+    first = lambda x: next((w[:6] for w in _norm(x).split() if len(w) >= 4), None)
+    a = {w[:6] for w in _surnames(src.get("author"))}
+    if not a:
+        return None
+    cands = [s for s in sources if first(s["author"]) == first(src.get("author"))]  # birinchi muallif ustuvor
+    cands = cands or [s for s in sources if a & {w[:6] for w in _surnames(s["author"])}]
+    books = {(s["author"], s["title"]): s for s in cands}
+    if len(books) == 1:
+        return next(iter(books.values()))
+    if not books:
+        return None
+    tw = set(_norm(src.get("title")).split())
+    score = sorted(((len(tw & set(_norm(t).split())), k) for k in books for t in [k[1]]), reverse=True)
+    if score[0][0] > 0 and (len(score) == 1 or score[0][0] > score[1][0]):
+        return books[score[0][1]]
+    return None
+
+
+def canonicalize_sources(data, sources, lang="uz"):
+    """Model manbani qisqartirib yozishi mumkin: yagona manba bo'lsa, author/title ni aniq nomga almashtiradi (bet saqlanadi).
+    lang="en": qo'shimcha ravishda apostrof/translit farqlari (G'iyosov ~ G‘iyosov, Romodanovsky ~ Ромодановский) ham bog'lanadi."""
     def fix(src):
         if not isinstance(src, dict) or not src.get("page"):
             return
@@ -177,6 +216,10 @@ def canonicalize_sources(data, sources):
             if len(sources) == 1 or a in sa or sa in a or t in st or st in t:
                 src["author"], src["title"] = s["author"], s["title"]
                 return
+        if lang == "en":
+            s = _fuzzy_source(src, sources)
+            if s:
+                src["author"], src["title"] = s["author"], s["title"]
     for sl in data.get("slides", []):
         for b in sl.get("bullets", []):
             fix(b.get("source"))
@@ -334,7 +377,7 @@ def run(topic_id, sources_path, max_usd, dry_run, out_dir, client=None, lang="uz
         client = anthropic.Anthropic(api_key=key)
     data = call_api(client, system, user, lang) if lang == "en" else call_api(client, system, user)
     data.update(clean_text({k: data[k] for k in ('slides', 'mcq', 'extras') if k in data}, lang))
-    canonicalize_sources(data, sources)
+    canonicalize_sources(data, sources, lang)
     Path(out_dir).mkdir(parents=True, exist_ok=True)
     (Path(out_dir) / f"{topic_id}{suffix}.unvalidated.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     validate_output(data, sources, lang)

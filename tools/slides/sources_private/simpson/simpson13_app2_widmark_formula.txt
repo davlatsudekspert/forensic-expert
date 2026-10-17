@@ -1,0 +1,19 @@
+Payne-James J., Jones R., Karch S.B., Manlove J. Simpson's Forensic Medicine, 13th ed. London: Hodder Arnold, 2011. ISBN 978 0 340 986 035.
+Appendix 2. Widmark's formula, pp. 243-243. Page markers [p. N] = printed book page numbers (PDF page = printed page + 11). Text extracted from the owner's PDF (ebook; some figures are not included in it for copyright reasons): two-column order restored, line-end hyphenation and running heads/page numbers removed. Figure captions are marked [Figure caption]; text labels inside figures [Figure text]; tables [Table] with cells separated by ' | ' and rows by ' || '; [sym] = a mathematical symbol (e.g. minus, plus-minus, beta) that the PDF does not encode as text. Text is the book's own; nothing added.
+
+[p. 243]
+During the early part of this century, E.M.P. Widmark, a Swedish physician did much of the foundational research regarding alcohol pharmacokinetics in the human body. In addition, he developed an algebraic equation allowing one to estimate any one of six variables given the other five. Typically, we are interested in determining either the amount of alcohol consumed by an individual or the associated blood alcohol concentration (BAC) given the values of the other variables. According to Widmark’s equation, the amount of alcohol consumed (A) is a function of these several variables:
+From Equation 1
+N = f(W, r, Ct, [sym] , t, z)
+where: N = amount consumed W = body weight r = the volume of distribution (a constant) Ct = blood alcohol concentration (BAC) [sym] = the alcohol elimination rate t = time since the first drink z = the fluid ounces of alcohol per drink
+Widmark’s equation relates these variables according to:
+Equation 2
+N = Wr(Ct + [sym] t)
+0.8z where: N = the number of drinks consumed W = body weight in ounces r = volume of distribution (a constant relating the distribution of water in the body in L/Kg) Ct = the blood alcohol concentration (BAC) in Kg/L [sym] = the alcohol elimination rate in Kg/L/hr t = time since the first drink in hours z = the fluid ounces of alcohol per drink 0.8 = the density of ethanol (0.8 oz per fluid ounce)
+■ Worked example
+Assume that we are interested in determining the amount of alcohol consumed (number of drinks) given certain information. The information we are given includes: a male weighing 185 lb, r = 0.68 L/ kg, Ct = 0.15 g/100 ml, [sym] = 0.015 g/100 ml/h, t = 5 h, and drinking 12 fl oz beers with 4% alcohol by volume. We introduce this information into Equation 2 according to:
+N = (180 lb)(16 oz/lb)(0.68 L/kg)(0.0015 kg/L + (0.00015 kg/L/h)(5 h))
+(0.8)(0.48 fl oz/drink)
+Note that we had to convert the 0.15 g/100ml and the 0.015 g/100ml/h to Kg/L which simply amounts to moving the decimal two places to the left. Solving for A we find:
+N = 1958.4(0.00225)
+0.384 = 11.5 drinks

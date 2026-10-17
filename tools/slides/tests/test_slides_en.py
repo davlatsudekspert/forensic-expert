@@ -116,3 +116,38 @@ def test_en_clean_text_keeps_apostrophe():
     d = g.clean_text({"slides": [{"title": "Simpson's guide", "bullets": [{"text": "dog's bite [Simpson, p. 5]"}]}]}, "en")
     assert d["slides"][0]["title"] == "Simpson's guide" and d["slides"][0]["bullets"][0]["text"] == "dog's bite"
     assert "‘" not in json.dumps(d, ensure_ascii=False)
+
+
+def test_en_canonicalize_apostrophe_and_translit():
+    """Run #22 (4-kurs-davolash-01:en) yiqilishi: model "G'iyosov Z.A." / qisqa sarlavha yozdi -> 'manbasiz band'."""
+    import copy
+    giy = {"author": "G‘iyosov Z.A.", "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik)", "year": 2018, "pages": "Bob 8"}
+    rom = {"author": "Ромодановский П.О., Баринов Е.Х.", "title": "Судебная медицина в схемах и рисунках", "year": 2017, "pages": "2-modul"}
+    pig = {"author": "Пиголкин Ю.И., Баринов Е.Х.", "title": "Судебная медицина: учебник", "year": 2002, "pages": "6-bob"}
+    srcs = [giy, {**SIM}, rom, pig]
+    d = _en_good()
+    d["slides"][3]["bullets"][0]["source"] = {"author": "G'iyosov Z.A.", "title": "Sud tibbiyoti, Bob 8 (8.1)", "page": "217"}
+    d["slides"][4]["bullets"][0]["source"] = {"author": "Romodanovsky P.O., Barinov E.Kh.", "title": "Forensic medicine in diagrams", "page": "41"}
+    d["slides"][5]["bullets"][0]["source"] = {"author": "Pigolkin Yu.I. et al.", "title": "Forensic medicine textbook", "page": "70"}
+    d["mcq"][0]["source"] = {"author": "Payne-James J, Jones R", "title": "Simpson's Forensic Medicine", "page": "42"}
+    with pytest.raises(ValueError):
+        g.validate_output(d, srcs, "en")
+    uz = copy.deepcopy(d)
+    g.canonicalize_sources(uz, srcs)  # uz rejim xulqi o'zgarmagan: fuzzy bog'lash yo'q
+    assert uz["slides"][3]["bullets"][0]["source"]["author"] == "G'iyosov Z.A."
+    g.canonicalize_sources(d, srcs, "en")
+    assert d["slides"][3]["bullets"][0]["source"]["author"] == giy["author"]
+    assert d["slides"][4]["bullets"][0]["source"]["title"] == rom["title"]
+    assert d["slides"][5]["bullets"][0]["source"]["author"] == pig["author"]
+    assert d["slides"][3]["bullets"][0]["source"]["page"] == "217"  # bet saqlanadi
+    assert g.validate_output(d, srcs, "en")
+    # noma'lum muallif baribir rad etiladi
+    d["slides"][0]["bullets"][0]["source"] = {"author": "Knight B.", "title": "Forensic Pathology", "page": "1"}
+    g.canonicalize_sources(d, srcs, "en")
+    with pytest.raises(ValueError):
+        g.validate_output(d, srcs, "en")
+
+
+def test_en_prompt_requires_exact_source_fields():
+    assert "EXACTLY as written in the SOURCE header" in g.SYSTEM_PROMPT_EN
+    assert "EXACTLY" not in g.SYSTEM_PROMPT
