@@ -5,6 +5,7 @@ import 'dart:math';
 import 'package:crypto/crypto.dart';
 
 import '../../domain/auth/auth_models.dart';
+import '../../domain/auth/social_sign_in.dart';
 import '../../domain/ports/backend_ports.dart';
 
 /// MOCK email (haqiqiy xat yuborilmaydi). Faqat testlar va
@@ -211,6 +212,15 @@ class MockAuthRepository implements AuthRepository {
     _sendVerify(u);
     return const AuthOutcome.ok();
   }
+
+  @override
+  Future<AuthOutcome> signInWithIdToken({
+    required SocialProvider provider,
+    required String idToken,
+    String? nonce,
+    String? fullName,
+    String? acceptedTermsVersion,
+  }) async => const AuthOutcome.fail(AuthFailure.backendNotConfigured);
 
   @override
   Future<AuthOutcome> signIn({

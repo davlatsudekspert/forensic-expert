@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import '../../domain/auth/auth_models.dart';
+import '../../domain/auth/social_sign_in.dart';
 import '../../domain/ports/backend_ports.dart';
 
 /// Akkaunt backend’i ulanmagan holat (hozirgi production standarti).
@@ -35,6 +36,15 @@ class OfflineAuthRepository implements AuthRepository {
   Future<AuthOutcome> verifyEmailCode({
     required String email,
     required String code,
+  }) async => _nc;
+
+  @override
+  Future<AuthOutcome> signInWithIdToken({
+    required SocialProvider provider,
+    required String idToken,
+    String? nonce,
+    String? fullName,
+    String? acceptedTermsVersion,
   }) async => _nc;
 
   @override

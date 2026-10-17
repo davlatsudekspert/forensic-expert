@@ -9186,4 +9186,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Evidence from the literature (in full)';
+
+  @override
+  String get socialOr => 'or';
+
+  @override
+  String get socialContinueGoogle => 'Continue with Google';
+
+  @override
+  String get socialContinueApple => 'Continue with Apple';
+
+  @override
+  String get socialErrUnavailable =>
+      'Sign-in with this provider is unavailable right now. Try again or use your email.';
+
+  @override
+  String get socialTermsNote =>
+      'By continuing you accept the Terms of Use and the Privacy Policy.';
+
+  @override
+  String get deleteAccountSocialNote =>
+      'This account was created with Google or Apple, so no password is needed. Confirm below to delete it.';
 }

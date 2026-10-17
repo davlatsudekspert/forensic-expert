@@ -11,6 +11,7 @@ library;
 import 'package:flutter/foundation.dart';
 
 import '../auth/auth_models.dart';
+import '../auth/social_sign_in.dart';
 
 enum AuthStatus { signedOut, signedIn }
 
@@ -68,6 +69,18 @@ abstract interface class AuthRepository {
   Future<AuthOutcome> verifyEmailCode({
     required String email,
     required String code,
+  });
+
+  /// Google/Apple native ID-token bilan kirish (Supabase `grant_type=id_token`).
+  /// Apple uchun [nonce] — xom qiymat (SDK’ga uning SHA-256 xeshi berilgan).
+  /// [fullName] Apple faqat birinchi kirishda beradi — profilga saqlanadi.
+  /// Token va nonce jurnalga yozilmaydi.
+  Future<AuthOutcome> signInWithIdToken({
+    required SocialProvider provider,
+    required String idToken,
+    String? nonce,
+    String? fullName,
+    String? acceptedTermsVersion,
   });
 
   /// Yaroqli kirishda har doim `ok` (email band bo‘lsa ham — server egasiga

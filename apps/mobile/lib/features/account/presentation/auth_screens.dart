@@ -16,6 +16,7 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/auth/auth_models.dart';
+import 'social_sign_in_buttons.dart';
 
 /// Joriy Shartlar / Maxfiylik versiyasi (ro‘yxatdan o‘tishda serverga
 /// yuboriladi; matn o‘zgarsa oshiriladi).
@@ -37,6 +38,8 @@ String authFailureText(AppLocalizations l, AuthFailure f) => switch (f) {
   AuthFailure.backendNotConfigured => l.authErrNotConfigured,
   AuthFailure.requiresRecentLogin => l.authErrRecentLogin,
   AuthFailure.notSignedIn => l.authErrNotSignedIn,
+  AuthFailure.cancelled => '',
+  AuthFailure.socialUnavailable => l.socialErrUnavailable,
 };
 
 /// Akkaunt ekranlari uchun umumiy karkas: backend holati banneri (ulanmagan
@@ -410,6 +413,10 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           buttonKey: const Key('auth.submit'),
           onPressed: configured ? _submit : null,
         ),
+        SocialSignInButtons(
+          onSignedIn: () => context.go(Routes.profile),
+          onError: (f) => setState(() => _error = f),
+        ),
         TextButton(
           key: const Key('auth.toForgot'),
           onPressed: () => context.push(Routes.accountForgot),
@@ -541,6 +548,10 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
           busy: _busy,
           buttonKey: const Key('auth.submit'),
           onPressed: configured ? _submit : null,
+        ),
+        SocialSignInButtons(
+          onSignedIn: () => context.go(Routes.profile),
+          onError: (f) => setState(() => _error = f),
         ),
         TextButton(
           key: const Key('auth.toSignIn'),
@@ -924,6 +935,7 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
     final t = Theme.of(context).textTheme;
     final state = ref.watch(authStateProvider);
     final signedIn = state.signedIn;
+    final needsPassword = !(state.account?.isSocial ?? false);
     return _AuthScaffold(
       screenKey: const Key('screen.deleteAccount'),
       title: l.deleteAccountTitle,
@@ -949,12 +961,19 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
           const SizedBox(height: FeSpace.md),
           Text(state.account!.email, style: t.titleSmall),
           const SizedBox(height: FeSpace.sm),
-          _PasswordField(
-            controller: _password,
-            label: l.deleteAccountPassword,
-            fieldKey: const Key('auth.password'),
-            onChanged: (_) => setState(() {}),
-          ),
+          if (needsPassword)
+            _PasswordField(
+              controller: _password,
+              label: l.deleteAccountPassword,
+              fieldKey: const Key('auth.password'),
+              onChanged: (_) => setState(() {}),
+            )
+          else
+            Text(
+              l.deleteAccountSocialNote,
+              key: const Key('auth.delete.socialNote'),
+              style: t.bodyMedium?.copyWith(color: c.textSecondary),
+            ),
           CheckboxListTile(
             key: const Key('auth.delete.understand'),
             value: _understood,
@@ -969,7 +988,10 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
             child: FilledButton(
               key: const Key('auth.delete.submit'),
               style: FilledButton.styleFrom(backgroundColor: c.danger),
-              onPressed: _busy || !_understood || _password.text.isEmpty
+              onPressed:
+                  _busy ||
+                      !_understood ||
+                      (needsPassword && _password.text.isEmpty)
                   ? null
                   : _delete,
               child: Text(l.deleteAccountConfirm),
@@ -1102,6 +1124,16 @@ class _EmailCodeScreenState extends ConsumerState<EmailCodeScreen> {
             busy: _busy,
             buttonKey: const Key('emailCode.send'),
             onPressed: configured ? _send : null,
+          ),
+          SocialSignInButtons(
+            onSignedIn: () {
+              if (context.canPop()) {
+                context.pop(true);
+              } else {
+                context.go(Routes.profile);
+              }
+            },
+            onError: (f) => setState(() => _error = f),
           ),
         ] else ...[
           Text(

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import '../../domain/auth/auth_models.dart';
+import '../../domain/auth/social_sign_in.dart';
 import '../../domain/ports/backend_ports.dart';
 
 /// Akkaunt backend’ining HTTP adapteri (REST kontrakti:
@@ -209,6 +210,15 @@ class HttpAuthRepository implements AuthRepository {
       'accepted_terms_version': acceptedTermsVersion,
     },
   );
+
+  @override
+  Future<AuthOutcome> signInWithIdToken({
+    required SocialProvider provider,
+    required String idToken,
+    String? nonce,
+    String? fullName,
+    String? acceptedTermsVersion,
+  }) async => const AuthOutcome.fail(AuthFailure.backendNotConfigured);
 
   @override
   Future<AuthOutcome> signIn({

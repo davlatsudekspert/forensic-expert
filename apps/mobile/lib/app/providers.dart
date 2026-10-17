@@ -11,6 +11,7 @@ import '../core/flags.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
 import '../core/telemetry/telemetry.dart';
+import '../data/auth/native_social_credential_source.dart';
 import '../data/content/content_evidence_loader.dart';
 import '../data/content/content_knowledge_repository.dart';
 import '../data/content/content_library_repository.dart';
@@ -26,6 +27,7 @@ import '../domain/ai/ai_architecture.dart';
 import '../domain/ai/local_retrieval.dart';
 import '../domain/ai/provenance_retrieval.dart';
 import '../domain/ai/rag_pipeline.dart';
+import '../domain/auth/social_sign_in.dart';
 import '../domain/evidence/content_translations.dart';
 import '../domain/evidence/evidence_models.dart';
 import '../domain/evidence/provenance_models.dart';
@@ -46,6 +48,15 @@ import 'account.dart';
 
 final authRepositoryProvider = Provider<AuthRepository>(
   (ref) => const OfflineAuthRepository(),
+);
+
+/// Native Google/Apple token manbai (testlarda soxta bilan almashtiriladi).
+final socialCredentialSourceProvider = Provider<SocialCredentialSource>(
+  (ref) => NativeSocialCredentialSource(),
+);
+
+final socialSignInServiceProvider = Provider<SocialSignInService>(
+  (ref) => SocialSignInService(ref.watch(socialCredentialSourceProvider)),
 );
 
 /// Akkaunt holati. Akkaunt ixtiyoriy — `signedOut` normal holat.

@@ -9149,4 +9149,25 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Adabiyotdagi dalillar (to‘liq)';
+
+  @override
+  String get socialOr => 'yoki';
+
+  @override
+  String get socialContinueGoogle => 'Google bilan davom etish';
+
+  @override
+  String get socialContinueApple => 'Apple bilan davom etish';
+
+  @override
+  String get socialErrUnavailable =>
+      'Bu usulda kirish hozir mavjud emas. Qayta urinib ko‘ring yoki email orqali kiring.';
+
+  @override
+  String get socialTermsNote =>
+      'Davom etib, Foydalanish shartlari va Maxfiylik siyosatiga rozilik bildirasiz.';
+
+  @override
+  String get deleteAccountSocialNote =>
+      'Bu akkaunt Google yoki Apple orqali ochilgan, shuning uchun parol kerak emas. O‘chirish uchun pastda tasdiqlang.';
 }

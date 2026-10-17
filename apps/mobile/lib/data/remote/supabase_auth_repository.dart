@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import '../../domain/auth/auth_models.dart';
+import '../../domain/auth/social_sign_in.dart';
 import '../../domain/ports/backend_ports.dart';
 import 'supabase_rest.dart';
 
@@ -93,6 +94,8 @@ class SupabaseAuthRepository implements AuthRepository {
       'invalid_grant' => AuthFailure.invalidCredentials,
       'email_not_confirmed' => AuthFailure.emailNotVerified,
       'reauthentication_needed' => AuthFailure.requiresRecentLogin,
+      'provider_disabled' => AuthFailure.backendNotConfigured,
+      'bad_id_token' || 'bad_jwt' => AuthFailure.socialUnavailable,
       _ =>
         r.status == 403
             ? AuthFailure.codeInvalid
@@ -140,6 +143,10 @@ class SupabaseAuthRepository implements AuthRepository {
     final id = user['id'];
     final email = user['email'];
     if (id is! String || email is! String) return false;
+    final meta = user['app_metadata'];
+    final provider = meta is Map && meta['provider'] is String
+        ? meta['provider'] as String
+        : 'email';
     _access = access;
     await _session.write(refresh);
     _set(
@@ -149,6 +156,7 @@ class SupabaseAuthRepository implements AuthRepository {
           userId: id,
           email: email,
           emailVerified: user['email_confirmed_at'] != null,
+          provider: provider,
         ),
       ),
     );
@@ -226,6 +234,71 @@ class SupabaseAuthRepository implements AuthRepository {
       'email': EmailAddress.normalize(email),
       'code': code.trim(),
     }, opensSession: true);
+  }
+
+  /// Google/Apple: native ID-token → Supabase sessiyasi
+  /// (`POST /auth/v1/token?grant_type=id_token`). Server tokenni provayder
+  /// kalitlari bilan tekshiradi (Apple: nonce xom qiymat bilan solishtiriladi).
+  /// Ism (Apple faqat birinchi kirishda beradi) va Shartlar versiyasi
+  /// `user_metadata` ga yoziladi — xato bo‘lsa kirish bekor qilinmaydi.
+  @override
+  Future<AuthOutcome> signInWithIdToken({
+    required SocialProvider provider,
+    required String idToken,
+    String? nonce,
+    String? fullName,
+    String? acceptedTermsVersion,
+  }) async {
+    if (idToken.isEmpty) {
+      return const AuthOutcome.fail(AuthFailure.socialUnavailable);
+    }
+    try {
+      final r = await _http.send(
+        'POST',
+        _u('token?grant_type=id_token'),
+        headers: _headers(),
+        jsonBody: {
+          'provider': provider.wire,
+          'id_token': idToken,
+          if (nonce != null && nonce.isNotEmpty) 'nonce': nonce,
+        },
+      );
+      // Provayder yoqilmagan: GoTrue 400 `validation_failed` (Unsupported
+      // provider) — «email noto‘g‘ri» deb aytilmasin.
+      final code = '${r.map['error_code'] ?? r.map['code'] ?? ''}';
+      if (!r.ok && r.status == 400 && code == 'validation_failed') {
+        return const AuthOutcome.fail(AuthFailure.backendNotConfigured);
+      }
+      final f = failureFor(r);
+      if (f != null) return AuthOutcome.fail(f);
+      if (!await _applySession(r.map)) {
+        return const AuthOutcome.fail(AuthFailure.server);
+      }
+    } on SocketException {
+      return const AuthOutcome.fail(AuthFailure.offline);
+    } on TimeoutException {
+      return const AuthOutcome.fail(AuthFailure.offline);
+    } on HandshakeException {
+      return const AuthOutcome.fail(AuthFailure.offline);
+    }
+    final name = fullName?.trim();
+    final data = <String, Object?>{
+      if (name != null && name.isNotEmpty) 'full_name': name,
+      'accepted_terms_version': ?acceptedTermsVersion,
+    };
+    if (data.isNotEmpty) {
+      try {
+        await _http.send(
+          'PUT',
+          _u('user'),
+          headers: _headers(auth: true),
+          jsonBody: {'data': data},
+        );
+      } on Object {
+        // Profil yozuvi muvaffaqiyatsiz — sessiya baribir ochiq.
+      }
+    }
+    return const AuthOutcome.ok();
   }
 
   @override
