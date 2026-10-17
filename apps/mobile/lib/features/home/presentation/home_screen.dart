@@ -1014,7 +1014,7 @@ class _HomeHero extends ConsumerWidget {
                       _RoleChip(
                         icon: student
                             ? Icons.school_outlined
-                            : Icons.workspace_premium_outlined,
+                            : Icons.badge_outlined,
                         label: l.homeRoleChip(modeLabel),
                       ),
                       const SizedBox(height: FeSpace.sm),

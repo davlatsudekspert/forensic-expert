@@ -152,6 +152,18 @@ abstract final class FeThemeBuilder {
         ),
       ),
       dividerTheme: DividerThemeData(color: c.border, thickness: 1, space: 1),
+      // Snackbar: bitta uslub — suzuvchi, yumaloq, brend rangida (matn
+      // kontrasti textOnBrand/brand juftligi bilan kafolatlangan).
+      snackBarTheme: SnackBarThemeData(
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: c.brand,
+        contentTextStyle: text.bodyMedium?.copyWith(color: c.textOnBrand),
+        actionTextColor: c.textOnBrand,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(FeRadius.md),
+        ),
+      ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           backgroundColor: c.brand,

@@ -753,20 +753,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'The app version and the scientific database version are tracked separately.';
 
   @override
-  String get storeNotConnected =>
-      'The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.';
-
-  @override
-  String get restorePurchases => 'Restore purchases';
-
-  @override
-  String get restoreNothing => 'No active subscriptions to restore.';
-
-  @override
-  String get subscriptionSafetyNote =>
-      'Disclaimers, limitations and sources are never behind a paywall.';
-
-  @override
   String get moduleHubTools => 'Tools in this section';
 
   @override
@@ -820,33 +806,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Change jurisdiction';
-
-  @override
-  String get purchaseTitle => 'Plans';
-
-  @override
-  String get purchaseCta => 'See plans';
-
-  @override
-  String get purchaseFreeTitle => 'Free';
-
-  @override
-  String get purchaseFreeBody =>
-      'Core offline reference, search and basic calculators — no account required.';
-
-  @override
-  String get purchaseAiNote =>
-      'Professional AI features become available only when the AI service is connected; limits will be stated before purchase.';
-
-  @override
-  String get purchaseOwned => 'Your subscription is active';
-
-  @override
-  String get purchaseUnavailableSnack =>
-      'Purchases are not available in this build.';
-
-  @override
-  String get accessFree => 'Free';
 
   @override
   String get homePilotNotice =>
@@ -961,24 +920,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Included in Student Pro and Professional Pro';
-
-  @override
-  String get lockedBody =>
-      'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.';
-
-  @override
-  String get freeDemoBadge => 'Free';
-
-  @override
-  String get lockedBadge => 'Pro';
-
-  @override
-  String searchMoreLocked(int count) {
-    return '$count more results with a paid plan';
-  }
-
-  @override
   String get learnEmptyCourses =>
       'Courses will appear after expert review of the learning content.';
 
@@ -990,31 +931,8 @@ class AppLocalizationsEn extends AppLocalizations {
       'The scientific database is not installed in this build.';
 
   @override
-  String get purchasePending =>
-      'Purchase is waiting for confirmation from the store.';
-
-  @override
-  String get purchaseFailed => 'The purchase was not completed.';
-
-  @override
-  String get purchaseCancelled => 'Purchase cancelled.';
-
-  @override
-  String get purchaseSuccess => 'Subscription activated. Thank you!';
-
-  @override
   String get aboutTrademarkPending =>
       'Name and logo: trademark clearance pending.';
-
-  @override
-  String get diagPurchaseNone => 'Subscription: none confirmed by the store';
-
-  @override
-  String get diagPurchaseStore =>
-      'Subscription: confirmed by the store only — server verification not connected (release blocker)';
-
-  @override
-  String get diagPurchaseServer => 'Subscription: verified by the server';
 
   @override
   String get statusDraft => 'Draft';
@@ -3348,132 +3266,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.';
+      'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database and your account are not affected — use “Delete account” to delete the account.';
 
   @override
   String get deleteLocalDataConfirm => 'Delete';
 
   @override
   String get deleteLocalDataDone => 'Local data deleted';
-
-  @override
-  String get tierStudentPro => 'Student Pro';
-
-  @override
-  String get tierProfessionalPro => 'Professional Pro';
-
-  @override
-  String get tierInstitution => 'Institution';
-
-  @override
-  String get tierCurrent => 'Current plan';
-
-  @override
-  String get tierFreeF1 =>
-      'Offline scientific database with safety warnings and sources';
-
-  @override
-  String get tierFreeF2 => 'Search and selected reference entries';
-
-  @override
-  String get tierFreeF3 => 'Basic calculators';
-
-  @override
-  String get tierStudentF1 =>
-      'Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions';
-
-  @override
-  String get tierStudentF2 =>
-      'All courses, quizzes, flashcards and exam practice';
-
-  @override
-  String get tierStudentF3 => 'Unlimited search results';
-
-  @override
-  String get tierProF1 => 'Everything in Student Pro';
-
-  @override
-  String get tierProF2 => 'Professional calculators and laboratory tools';
-
-  @override
-  String get tierProF3 => 'Analytical methods, research and evidence tools';
-
-  @override
-  String get tierProF4 =>
-      'Professional AI features — when the AI service is connected';
-
-  @override
-  String get periodMonthly => 'Monthly';
-
-  @override
-  String get periodYearly => 'Yearly';
-
-  @override
-  String get periodUnknown => 'Subscription';
-
-  @override
-  String offerPriceLine(String price, String period) {
-    return '$price · $period';
-  }
-
-  @override
-  String get offerSubscribe => 'Subscribe';
-
-  @override
-  String get offerPriceFromStore =>
-      'Price is shown by the App Store / Google Play';
-
-  @override
-  String get subscriptionTerms =>
-      'Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.';
-
-  @override
-  String get manageSubscription => 'Manage subscription';
-
-  @override
-  String get manageSubscriptionFailed =>
-      'Could not open the store subscription settings.';
-
-  @override
-  String get planLabel => 'Plan';
-
-  @override
-  String get subscriptionStateLabel => 'Subscription status';
-
-  @override
-  String get stActive => 'Active';
-
-  @override
-  String get stExpired => 'Expired';
-
-  @override
-  String get stGrace => 'Payment issue — grace period';
-
-  @override
-  String get stBillingRetry => 'Payment issue — access paused';
-
-  @override
-  String stCancelled(String date) {
-    return 'Cancelled — active until $date';
-  }
-
-  @override
-  String get stCancelledNoDate =>
-      'Cancelled — active until the end of the period';
-
-  @override
-  String get stRevoked => 'Revoked by the store';
-
-  @override
-  String get stUnknown => 'Status unknown';
-
-  @override
-  String get stNone => 'No subscription';
-
-  @override
-  String stRenewsOn(String date) {
-    return 'Renews or ends on $date';
-  }
 
   @override
   String get accountOptionalNote =>
@@ -3674,10 +3473,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'This permanently deletes your account and the data linked to it on our servers (email, sign-in sessions, synced data, cloud entitlement records). This cannot be undone.';
 
   @override
-  String get deleteAccountStoreNote =>
-      'Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.';
-
-  @override
   String get deleteAccountLocalNote =>
       'Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.';
 
@@ -3706,9 +3501,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get accountSection => 'Account';
-
-  @override
-  String get subscriptionSection => 'Subscription';
 
   @override
   String get availNoDataTitle => 'No records yet';
@@ -4002,9 +3794,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get accountNeedSync => 'Synchronisation between devices';
-
-  @override
-  String get accountNeedSubscriptions => 'Subscriptions across devices';
 
   @override
   String get accountNeedCloudAi => 'Cloud AI (when connected)';
@@ -4749,24 +4538,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get referralStatPending => 'Pending';
 
   @override
-  String get referralStatCredits => 'FORENSIC Credits';
-
-  @override
-  String referralCreditsPending(String amount) {
-    return '$amount credits awaiting confirmation';
-  }
-
-  @override
-  String referralCreditsFuture(String percent) {
-    return 'When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — $percent% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.';
-  }
-
-  @override
-  String referralCreditsActive(String percent) {
-    return 'You receive FORENSIC Credits worth $percent% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.';
-  }
-
-  @override
   String get referralPrivacyNote =>
       'Only totals are shown. Your colleagues’ names, emails, profiles and documents are never shared — neither with you nor in the invitation.';
 
@@ -4917,10 +4688,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Open-access article (PubMed Central via Europe PMC). Opens in your device’s PDF viewer or browser.';
 
   @override
-  String get fullTextPdfPro =>
-      'Downloading full-text PDFs is available with Pro.';
-
-  @override
   String get fullTextOpenFailed =>
       'Couldn’t open the PDF. Check your connection.';
 
@@ -4955,9 +4722,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get adminReferrals => 'Referrals';
 
   @override
-  String get adminProGrants => 'Pro granted';
-
-  @override
   String get adminRegions => 'Countries (device region)';
 
   @override
@@ -4975,27 +4739,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get adminPrivacyNote =>
       'Contains personal data (emails). Do not share screenshots.';
-
-  @override
-  String get adminGrantTitle => 'Give or remove Pro';
-
-  @override
-  String get adminEmail => 'User email';
-
-  @override
-  String get adminGrantPro => 'Give Professional Pro';
-
-  @override
-  String get adminRevoke => 'Remove';
-
-  @override
-  String get adminGranted => 'Pro granted.';
-
-  @override
-  String get adminRevoked => 'Access removed.';
-
-  @override
-  String get adminNotFound => 'No user with this email.';
 
   @override
   String get adminFailed => 'Action failed. Check the connection.';
@@ -5663,9 +5406,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pubEditTitle => 'Edit draft';
-
-  @override
-  String get pubPaidNote => 'A paid subscription does not affect moderation.';
 
   @override
   String get pubRequired => 'Required';
@@ -6373,12 +6113,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get admStatActive30d => 'Active in 30 days';
 
   @override
-  String get admStatPro => 'Pro (server grants)';
-
-  @override
-  String get admStatFree => 'Free';
-
-  @override
   String get admStatAwaiting => 'Requests awaiting reply';
 
   @override
@@ -6403,10 +6137,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get admActiveNote =>
       'Active = signed in, opened the app (device check-in) or asked the AI within the window.';
-
-  @override
-  String get admProNote =>
-      'Pro counts server grants only; store purchases are verified on the device.';
 
   @override
   String get admChart14d => 'Last 14 days: sign-ups and AI questions';
@@ -6498,15 +6228,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get admRoleModerator => 'Moderators';
-
-  @override
-  String get admTierAny => 'Any plan';
-
-  @override
-  String get admTierFree => 'Free';
-
-  @override
-  String get admTierPro => 'Pro plan';
 
   @override
   String get admUsersEmpty => 'No users match the filter.';
@@ -6699,13 +6420,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get calcEstimatedRange => 'Estimated range';
 
   @override
-  String get calcLockedTitle => 'Included in Expert Pro';
-
-  @override
-  String get calcLockedBody =>
-      'This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.';
-
-  @override
   String get calcLodUnitNote =>
       'DL and QL are in the concentration units of the calibration x axis.';
 
@@ -6774,10 +6488,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String rdGlanceMore(int count) {
     return '+$count more';
   }
-
-  @override
-  String get rdGlanceLockedHint =>
-      'Details below open with Pro. Names, warnings and sources stay free.';
 
   @override
   String get rdJumpTo => 'Go to section';
@@ -7306,28 +7016,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String courtProTitle(String tier) {
-    return 'Advanced preparation in $tier';
-  }
-
-  @override
-  String get courtProBody =>
-      'Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.';
-
-  @override
-  String get courtProBadge => 'Pro';
-
-  @override
-  String get courtAiPro => 'AI analysis (Pro)';
-
-  @override
   String courtScoreSemantics(String criterion, int score) {
     return '$criterion: $score of 2';
   }
-
-  @override
-  String get courtSimFreeNote =>
-      'Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.';
 
   @override
   String get courtDrill => 'Role drill';
@@ -8041,15 +7732,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.';
 
   @override
-  String proSearchLockedTitle(String tier) {
-    return 'Advanced search — $tier';
-  }
-
-  @override
-  String get proSearchLockedBody =>
-      'Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.';
-
-  @override
   String get proSearchHint => 'Name, synonym or \"phrase\"';
 
   @override
@@ -8219,15 +7901,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String planSummary(int s, int p, int c, int l) {
     return 'Specimens: $s · Presumptive tests: $p · Confirmation: $c · Limits: $l';
   }
-
-  @override
-  String planLockedTitle(String tier) {
-    return 'Full analysis plan — $tier';
-  }
-
-  @override
-  String get planLockedBody =>
-      'The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.';
 
   @override
   String get planSecSpecimens => 'Specimens and sampling notes';
@@ -8949,34 +8622,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.';
 
   @override
-  String get adminGrantStudent => 'Grant Student Pro';
-
-  @override
-  String get adminGrantHint =>
-      'Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.';
-
-  @override
-  String get adminEmailInvalid => 'This is not an e-mail address.';
-
-  @override
-  String adminGrantedTier(String tier) {
-    return 'Granted: $tier';
-  }
-
-  @override
-  String get adminRevokeConfirmTitle => 'Remove access?';
-
-  @override
-  String get adminRevokeConfirmBody =>
-      'The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.';
-
-  @override
-  String get adminTierStudent => 'Student Pro';
-
-  @override
-  String get adminTierProfessional => 'Professional Pro';
-
-  @override
   String get provOwnWordsNote =>
       'The content of the source is given in our own words; the original text is not copied. The exact place is below.';
 
@@ -9446,7 +9091,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Online now: not available (there is no activity tracking).';
 
   @override
-  String get admxStoresTitle => 'Downloads and sales';
+  String get admxStoresTitle => 'Downloads';
 
   @override
   String get admxDownloadsNote =>

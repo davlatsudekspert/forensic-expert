@@ -96,6 +96,32 @@ void main() {
     expect(tester.getSize(navBar).width, fullW);
   });
 
+  testWidgets('snackbar suzuvchi menyuni yopmaydi (menyu ustida turadi)', (
+    tester,
+  ) async {
+    await pumpApp(tester, settings: completedSettings());
+    final ctx = tester.element(find.byType(HomeScreen));
+    ScaffoldMessenger.of(
+      ctx,
+    ).showSnackBar(const SnackBar(content: Text('Hisobga kirdingiz — sinov')));
+    await tester.pumpAndSettle();
+    // Ko‘rinadigan snackbar yuzasi (tashqi masofa hisobga olinmaydi).
+    final snack = tester.getRect(
+      find
+          .descendant(
+            of: find.byType(SnackBar),
+            matching: find.byType(Material),
+          )
+          .first,
+    );
+    final nav = tester.getRect(navBar);
+    expect(snack.bottom, lessThanOrEqualTo(nav.top + 0.5));
+    // AI tugmasi snackbar ostida emas — bosiladi.
+    await tester.tap(find.byKey(const Key('nav.ai')));
+    await tester.pumpAndSettle();
+    expect(find.byType(AiScreen), findsOneWidget);
+  });
+
   testWidgets('klaviatura ochilganda menyu yashirinadi', (tester) async {
     await pumpApp(tester, settings: completedSettings());
     expect(navBar, findsOneWidget);

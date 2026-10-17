@@ -35,10 +35,6 @@ class _FakeAccount implements AccountService {
 
   @override
   Future<AdminDashboard?> dashboard() async => null;
-
-  @override
-  Future<AdminGrantResult> setAccess(String email, String? tier) async =>
-      AdminGrantResult.failed;
 }
 
 class _FakePublications implements PublicationService {

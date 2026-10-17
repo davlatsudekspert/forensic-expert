@@ -12,7 +12,7 @@ import '../library/library_models.dart';
 
 enum KnowledgeKind { topic, reagent, screeningTest, method, emergingIssue }
 
-/// Paywall’ga hech qachon tushmaydigan claim maydonlari: cheklovlar,
+/// Doim ochiq claim maydonlari: cheklovlar,
 /// cross-reactivity, «presumptive» tabiati (xavfsizlik ma’lumoti).
 const safetyClaimFields = {
   'limitation',
@@ -57,7 +57,7 @@ class KnowledgeEntry {
   /// Manbali claim’lar (ta’rif, marker, cheklov…).
   final List<ClaimView> claims;
 
-  /// Yozuvning o‘ziga bog‘langan manbalar (paywall ortida emas).
+  /// Yozuvning o‘ziga bog‘langan manbalar (hamma uchun ochiq).
   final List<SourceView> sources;
 
   final ForensicMedicineTopic? forensicMedicineTopic;

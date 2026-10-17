@@ -80,7 +80,7 @@ class _AdminReportsScreenState extends ConsumerState<AdminReportsScreen> {
                   children: [
                     const SizedBox(height: FeSpace.sm),
                     FeBanner(
-                      icon: Icons.lock_outline,
+                      icon: Icons.privacy_tip_outlined,
                       text: l.adminPrivacyNote,
                     ),
                     const SizedBox(height: FeSpace.sm),

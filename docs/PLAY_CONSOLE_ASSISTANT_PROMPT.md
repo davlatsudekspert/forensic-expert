@@ -22,7 +22,7 @@ o'sha ekranda nima bosishim kerakligini ayt.
   raqamlari bilan), reaktiv tayyorlash retseptlari, kalkulyatorlar, ilmiy
   manbalar kutubxonasi, sudda so'roqqa tayyorgarlik bo'limi, test rejimi,
   AI yordamchi (javoblar manbalarga asoslanadi).
-- Tarif: asosiy qism bepul; Pro — ilova ichidagi obuna.
+- Narx: hamma funksiya bepul va ochiq; ilova ichida xaridlar va obunalar yo‘q.
 - Backend: Supabase (email OTP orqali kirish). Hisobsiz ham ishlaydi.
 - Ilova ichida akkauntni butunlay o'chirish imkoni bor.
 - Reklama yo'q. Bolalar uchun emas — 18+.

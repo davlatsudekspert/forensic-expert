@@ -755,20 +755,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Версия приложения и версия научной базы данных учитываются раздельно.';
 
   @override
-  String get storeNotConnected =>
-      'В этой сборке App Store / Google Play не подключены. Цены и покупки появятся только из магазина.';
-
-  @override
-  String get restorePurchases => 'Восстановить покупки';
-
-  @override
-  String get restoreNothing => 'Нет активных подписок для восстановления.';
-
-  @override
-  String get subscriptionSafetyNote =>
-      'Предупреждения, ограничения и источники никогда не скрываются за подпиской.';
-
-  @override
   String get moduleHubTools => 'Инструменты раздела';
 
   @override
@@ -822,32 +808,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Сменить юрисдикцию';
-
-  @override
-  String get purchaseTitle => 'Тарифы';
-
-  @override
-  String get purchaseCta => 'Посмотреть тарифы';
-
-  @override
-  String get purchaseFreeTitle => 'Бесплатно';
-
-  @override
-  String get purchaseFreeBody =>
-      'Базовый офлайн-справочник, поиск и основные калькуляторы — без аккаунта.';
-
-  @override
-  String get purchaseAiNote =>
-      'Профессиональные функции ИИ станут доступны только после подключения ИИ-сервиса; лимиты будут указаны до покупки.';
-
-  @override
-  String get purchaseOwned => 'Ваша подписка активна';
-
-  @override
-  String get purchaseUnavailableSnack => 'Покупки недоступны в этой сборке.';
-
-  @override
-  String get accessFree => 'Бесплатно';
 
   @override
   String get homePilotNotice =>
@@ -963,24 +923,6 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Входит в Student Pro и Professional Pro';
-
-  @override
-  String get lockedBody =>
-      'Названия, предупреждения и источники остаются открытыми. Научные данные и юрисдикционный слой открываются в платном тарифе.';
-
-  @override
-  String get freeDemoBadge => 'Бесплатно';
-
-  @override
-  String get lockedBadge => 'Pro';
-
-  @override
-  String searchMoreLocked(int count) {
-    return 'Ещё $count результатов в платном тарифе';
-  }
-
-  @override
   String get learnEmptyCourses =>
       'Курсы появятся после экспертной проверки учебного контента.';
 
@@ -992,30 +934,8 @@ class AppLocalizationsRu extends AppLocalizations {
       'В этой сборке научная база не установлена.';
 
   @override
-  String get purchasePending => 'Покупка ожидает подтверждения магазина.';
-
-  @override
-  String get purchaseFailed => 'Покупка не завершена.';
-
-  @override
-  String get purchaseCancelled => 'Покупка отменена.';
-
-  @override
-  String get purchaseSuccess => 'Подписка активирована. Спасибо!';
-
-  @override
   String get aboutTrademarkPending =>
       'Название и логотип: проверка товарного знака не завершена.';
-
-  @override
-  String get diagPurchaseNone => 'Подписка: магазин не подтвердил';
-
-  @override
-  String get diagPurchaseStore =>
-      'Подписка: подтверждена только магазином — серверная проверка не подключена (блокирует релиз)';
-
-  @override
-  String get diagPurchaseServer => 'Подписка: проверена сервером';
 
   @override
   String get statusDraft => 'Черновик';
@@ -3357,132 +3277,13 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены только с этого устройства. Научная база, аккаунт и подписки в магазине не затрагиваются — для удаления аккаунта используйте «Удалить аккаунт».';
+      'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены только с этого устройства. Научная база и аккаунт не затрагиваются — для удаления аккаунта используйте «Удалить аккаунт».';
 
   @override
   String get deleteLocalDataConfirm => 'Удалить';
 
   @override
   String get deleteLocalDataDone => 'Локальные данные удалены';
-
-  @override
-  String get tierStudentPro => 'Student Pro';
-
-  @override
-  String get tierProfessionalPro => 'Professional Pro';
-
-  @override
-  String get tierInstitution => 'Организация';
-
-  @override
-  String get tierCurrent => 'Текущий тариф';
-
-  @override
-  String get tierFreeF1 =>
-      'Офлайн научная база с предупреждениями и источниками';
-
-  @override
-  String get tierFreeF2 => 'Поиск и избранные справочные записи';
-
-  @override
-  String get tierFreeF3 => 'Основные калькуляторы';
-
-  @override
-  String get tierStudentF1 =>
-      'Полный справочник: вещества, методы, реактивы, судебная медицина, стандарты, юрисдикции';
-
-  @override
-  String get tierStudentF2 =>
-      'Все курсы, тесты, карточки и подготовка к экзамену';
-
-  @override
-  String get tierStudentF3 => 'Поиск без ограничения результатов';
-
-  @override
-  String get tierProF1 => 'Всё из Student Pro';
-
-  @override
-  String get tierProF2 =>
-      'Профессиональные калькуляторы и лабораторные инструменты';
-
-  @override
-  String get tierProF3 =>
-      'Аналитические методы, исследования и инструменты доказательств';
-
-  @override
-  String get tierProF4 =>
-      'Профессиональные функции ИИ — после подключения ИИ-сервиса';
-
-  @override
-  String get periodMonthly => 'Ежемесячно';
-
-  @override
-  String get periodYearly => 'Ежегодно';
-
-  @override
-  String get periodUnknown => 'Подписка';
-
-  @override
-  String offerPriceLine(String price, String period) {
-    return '$price · $period';
-  }
-
-  @override
-  String get offerSubscribe => 'Оформить подписку';
-
-  @override
-  String get offerPriceFromStore => 'Цену показывает App Store / Google Play';
-
-  @override
-  String get subscriptionTerms =>
-      'Подписка продлевается автоматически, пока вы её не отмените. Оплата списывается с аккаунта App Store / Google Play. Отменить можно не позднее чем за 24 часа до конца периода в настройках аккаунта магазина.';
-
-  @override
-  String get manageSubscription => 'Управлять подпиской';
-
-  @override
-  String get manageSubscriptionFailed =>
-      'Не удалось открыть настройки подписки в магазине.';
-
-  @override
-  String get planLabel => 'Тариф';
-
-  @override
-  String get subscriptionStateLabel => 'Статус подписки';
-
-  @override
-  String get stActive => 'Активна';
-
-  @override
-  String get stExpired => 'Истекла';
-
-  @override
-  String get stGrace => 'Проблема с оплатой — льготный период';
-
-  @override
-  String get stBillingRetry => 'Проблема с оплатой — доступ приостановлен';
-
-  @override
-  String stCancelled(String date) {
-    return 'Отменена — действует до $date';
-  }
-
-  @override
-  String get stCancelledNoDate => 'Отменена — действует до конца периода';
-
-  @override
-  String get stRevoked => 'Отозвана магазином';
-
-  @override
-  String get stUnknown => 'Статус неизвестен';
-
-  @override
-  String get stNone => 'Нет подписки';
-
-  @override
-  String stRenewsOn(String date) {
-    return 'Продление или окончание: $date';
-  }
 
   @override
   String get accountOptionalNote =>
@@ -3681,10 +3482,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Аккаунт и связанные с ним данные на наших серверах (эл. почта, сессии входа, синхронизированные данные, записи о правах) будут удалены безвозвратно. Это действие нельзя отменить.';
 
   @override
-  String get deleteAccountStoreNote =>
-      'Удаление аккаунта не отменяет подписку App Store / Google Play. Отмените её в настройках аккаунта магазина, чтобы прекратить списания.';
-
-  @override
   String get deleteAccountLocalNote =>
       'Данные на этом устройстве (закладки, история) удаляются отдельно: «Удалить данные на этом устройстве».';
 
@@ -3712,9 +3509,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get accountSection => 'Аккаунт';
-
-  @override
-  String get subscriptionSection => 'Подписка';
 
   @override
   String get availNoDataTitle => 'Записей пока нет';
@@ -4009,9 +3803,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get accountNeedSync => 'Синхронизации между устройствами';
-
-  @override
-  String get accountNeedSubscriptions => 'Подписок на нескольких устройствах';
 
   @override
   String get accountNeedCloudAi => 'Облачного ИИ (после подключения)';
@@ -4757,24 +4548,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralStatPending => 'Ожидают';
 
   @override
-  String get referralStatCredits => 'Кредиты FORENSIC';
-
-  @override
-  String referralCreditsPending(String amount) {
-    return '$amount кредитов ожидают подтверждения';
-  }
-
-  @override
-  String referralCreditsFuture(String percent) {
-    return 'После запуска платных услуг подходящие покупки приглашённых вами коллег могут приносить вам FORENSIC Credits — $percent% от суммы покупки. Кредиты — внутренний промо-бонус, а не деньги; за регистрацию они не начисляются.';
-  }
-
-  @override
-  String referralCreditsActive(String percent) {
-    return 'Вы получаете FORENSIC Credits в размере $percent% от подходящих покупок приглашённых коллег. Кредиты подтверждаются после периода возврата. Это внутренний промо-бонус, а не деньги.';
-  }
-
-  @override
   String get referralPrivacyNote =>
       'Показываются только итоговые числа. Имена, email, профили и документы коллег никогда не передаются — ни вам, ни в приглашении.';
 
@@ -4924,9 +4697,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Статья открытого доступа (PubMed Central через Europe PMC). Открывается в программе просмотра PDF или браузере устройства.';
 
   @override
-  String get fullTextPdfPro => 'Загрузка полного текста (PDF) доступна в Pro.';
-
-  @override
   String get fullTextOpenFailed =>
       'Не удалось открыть PDF. Проверьте соединение.';
 
@@ -4961,9 +4731,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get adminReferrals => 'Приглашения';
 
   @override
-  String get adminProGrants => 'Выдано Pro';
-
-  @override
   String get adminRegions => 'Страны (регион устройства)';
 
   @override
@@ -4981,27 +4748,6 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get adminPrivacyNote =>
       'Содержит персональные данные (email). Не пересылайте скриншоты.';
-
-  @override
-  String get adminGrantTitle => 'Выдать или снять Pro';
-
-  @override
-  String get adminEmail => 'Email пользователя';
-
-  @override
-  String get adminGrantPro => 'Выдать Professional Pro';
-
-  @override
-  String get adminRevoke => 'Снять';
-
-  @override
-  String get adminGranted => 'Pro выдан.';
-
-  @override
-  String get adminRevoked => 'Доступ снят.';
-
-  @override
-  String get adminNotFound => 'Пользователь с таким email не найден.';
 
   @override
   String get adminFailed => 'Не удалось. Проверьте соединение.';
@@ -5672,9 +5418,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get pubEditTitle => 'Редактировать черновик';
-
-  @override
-  String get pubPaidNote => 'Платная подписка не влияет на модерацию.';
 
   @override
   String get pubRequired => 'Обязательно';
@@ -6392,12 +6135,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admStatActive30d => 'Активные за 30 дней';
 
   @override
-  String get admStatPro => 'Pro (серверный доступ)';
-
-  @override
-  String get admStatFree => 'Бесплатно';
-
-  @override
   String get admStatAwaiting => 'Обращения без ответа';
 
   @override
@@ -6422,10 +6159,6 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get admActiveNote =>
       'Активный — вход, запуск приложения (отметка устройства) или вопрос к ИИ за период.';
-
-  @override
-  String get admProNote =>
-      'Pro учитывает только серверный доступ; покупки в магазине проверяются на устройстве.';
 
   @override
   String get admChart14d => 'Последние 14 дней: регистрации и вопросы к ИИ';
@@ -6519,15 +6252,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get admRoleModerator => 'Модераторы';
-
-  @override
-  String get admTierAny => 'Любой тариф';
-
-  @override
-  String get admTierFree => 'Бесплатный';
-
-  @override
-  String get admTierPro => 'Тариф Pro';
 
   @override
   String get admUsersEmpty => 'Нет пользователей по фильтру.';
@@ -6722,13 +6446,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcEstimatedRange => 'Оценочный диапазон';
 
   @override
-  String get calcLockedTitle => 'Входит в Эксперт Pro';
-
-  @override
-  String get calcLockedBody =>
-      'Этот калькулятор доступен в тарифе Эксперт Pro. Разведение и конвертер единиц концентрации — бесплатны.';
-
-  @override
   String get calcLodUnitNote =>
       'DL и QL — в единицах концентрации оси x калибровки.';
 
@@ -6799,10 +6516,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String rdGlanceMore(int count) {
     return 'ещё $count';
   }
-
-  @override
-  String get rdGlanceLockedHint =>
-      'Подробности ниже открываются в Pro. Названия, предупреждения и источники остаются бесплатными.';
 
   @override
   String get rdJumpTo => 'Перейти к разделу';
@@ -7338,28 +7051,9 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String courtProTitle(String tier) {
-    return 'Расширенная подготовка — в тарифе $tier';
-  }
-
-  @override
-  String get courtProBody =>
-      'Полный симулятор (все сценарии), последовательные ролевые тренировки, ИИ-анализ (скоро), личная статистика и история. Карточки вопросов с источниками бесплатны для всех.';
-
-  @override
-  String get courtProBadge => 'В Pro';
-
-  @override
-  String get courtAiPro => 'ИИ-анализ (Pro)';
-
-  @override
   String courtScoreSemantics(String criterion, int score) {
     return '$criterion: $score из 2';
   }
-
-  @override
-  String get courtSimFreeNote =>
-      'Бесплатно: базовые сценарии. Остальные сценарии, ролевые тренировки и статистика — в Pro.';
 
   @override
   String get courtDrill => 'Ролевая тренировка';
@@ -8080,15 +7774,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Сузьте поиск по образцу, методу, реагенту, уровню доказательности и другим признакам или перейдите от образца, метода или реагента к веществам, для которых они задокументированы.';
 
   @override
-  String proSearchLockedTitle(String tier) {
-    return 'Расширенный поиск — $tier';
-  }
-
-  @override
-  String get proSearchLockedBody =>
-      'Фильтры (дисциплина, класс, образец, метод, реагент, уровень доказательности, статус проверки, юрисдикция, год), поиск по точной фразе и обратный поиск доступны по платному тарифу. Обычный поиск остаётся доступным всем.';
-
-  @override
   String get proSearchHint => 'Название, синоним или «фраза»';
 
   @override
@@ -8263,15 +7948,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String planSummary(int s, int p, int c, int l) {
     return 'Образцы: $s · Предварительные тесты: $p · Подтверждение: $c · Ограничения: $l';
   }
-
-  @override
-  String planLockedTitle(String tier) {
-    return 'Полный план анализа — $tier';
-  }
-
-  @override
-  String get planLockedBody =>
-      'Бесплатный просмотр показывает количество и образцы. Платный тариф добавляет предварительные тесты с реагентами, лабораторные и подтверждающие этапы, помехи, ограничения, памятку для заключения и копируемый текст с полными ссылками.';
 
   @override
   String get planSecSpecimens => 'Образцы и заметки о взятии';
@@ -8999,34 +8675,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Текст, похожий на материалы дела, автоматически отправляется на проверку. Жалобы трёх разных пользователей скрывают публикацию или приостанавливают подтверждение специалиста до решения администратора. Публикация, направленная против закона, удаляется вместе с подтверждением.';
 
   @override
-  String get adminGrantStudent => 'Выдать «Студент Pro»';
-
-  @override
-  String get adminGrantHint =>
-      'Укажите адрес, с которым человек вошёл в приложение. Учётная запись должна уже существовать; приглашение отсюда не отправляется.';
-
-  @override
-  String get adminEmailInvalid => 'Это не адрес электронной почты.';
-
-  @override
-  String adminGrantedTier(String tier) {
-    return 'Выдано: $tier';
-  }
-
-  @override
-  String get adminRevokeConfirmTitle => 'Убрать доступ?';
-
-  @override
-  String get adminRevokeConfirmBody =>
-      'Человек сразу потеряет платные разделы. Покупки в магазине это не затрагивает — только выдачу из этой панели.';
-
-  @override
-  String get adminTierStudent => '«Студент Pro»';
-
-  @override
-  String get adminTierProfessional => '«Специалист Pro»';
-
-  @override
   String get provOwnWordsNote =>
       'Содержание источника изложено своими словами; оригинальный текст не копировался. Точное место — ниже.';
 
@@ -9497,7 +9145,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Сейчас в системе: недоступно (нет отслеживания активности).';
 
   @override
-  String get admxStoresTitle => 'Загрузки и продажи';
+  String get admxStoresTitle => 'Загрузки';
 
   @override
   String get admxDownloadsNote =>

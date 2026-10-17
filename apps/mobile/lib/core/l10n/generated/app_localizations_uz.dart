@@ -757,20 +757,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ilova versiyasi va ilmiy baza versiyasi alohida yuritiladi.';
 
   @override
-  String get storeNotConnected =>
-      'App Store / Google Play hozircha mavjud emas. Narx va xarid faqat do‘kon bergandagina paydo bo‘ladi.';
-
-  @override
-  String get restorePurchases => 'Xaridlarni tiklash';
-
-  @override
-  String get restoreNothing => 'Tiklanadigan faol obuna yo‘q.';
-
-  @override
-  String get subscriptionSafetyNote =>
-      'Ogohlantirishlar, cheklovlar va manbalar hech qachon pullik obuna ortida yashirilmaydi.';
-
-  @override
   String get moduleHubTools => 'Bo‘lim vositalari';
 
   @override
@@ -824,32 +810,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get detailChangeJurisdiction => 'Yurisdiksiyani o‘zgartirish';
-
-  @override
-  String get purchaseTitle => 'Tariflar';
-
-  @override
-  String get purchaseCta => 'Tariflarni ko‘rish';
-
-  @override
-  String get purchaseFreeTitle => 'Bepul';
-
-  @override
-  String get purchaseFreeBody =>
-      'Asosiy oflayn ma’lumotnoma, qidiruv va oddiy kalkulyatorlar — hisobsiz.';
-
-  @override
-  String get purchaseAiNote =>
-      'Professional AI funksiyalari faqat AI xizmati ulanganda ishlaydi; cheklovlar xariddan oldin ko‘rsatiladi.';
-
-  @override
-  String get purchaseOwned => 'Obunangiz faol';
-
-  @override
-  String get purchaseUnavailableSnack => 'Xarid hozircha mavjud emas.';
-
-  @override
-  String get accessFree => 'Bepul';
 
   @override
   String get homePilotNotice =>
@@ -965,24 +925,6 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get lockedTitle => 'Talaba Pro va Mutaxassis Pro tarkibida';
-
-  @override
-  String get lockedBody =>
-      'Nomlar, ogohlantirishlar va manbalar ochiq qoladi. Ilmiy tafsilotlar va yurisdiksiya qatlami pullik tarifda ochiladi.';
-
-  @override
-  String get freeDemoBadge => 'Bepul';
-
-  @override
-  String get lockedBadge => 'Pro';
-
-  @override
-  String searchMoreLocked(int count) {
-    return 'Pullik tarifda yana $count ta natija';
-  }
-
-  @override
   String get learnEmptyCourses =>
       'Kurslar o‘quv kontenti ekspert tekshiruvidan o‘tgach paydo bo‘ladi.';
 
@@ -993,30 +935,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get libraryNotInstalled => 'Ilmiy baza hozircha o‘rnatilmagan.';
 
   @override
-  String get purchasePending => 'Xarid do‘kon tasdig‘ini kutmoqda.';
-
-  @override
-  String get purchaseFailed => 'Xarid yakunlanmadi.';
-
-  @override
-  String get purchaseCancelled => 'Xarid bekor qilindi.';
-
-  @override
-  String get purchaseSuccess => 'Obuna faollashtirildi. Rahmat!';
-
-  @override
   String get aboutTrademarkPending =>
       'Nom va logo: tovar belgisi tekshiruvi yakunlanmagan.';
-
-  @override
-  String get diagPurchaseNone => 'Obuna: do‘kon tasdiqlamagan';
-
-  @override
-  String get diagPurchaseStore =>
-      'Obuna: faqat do‘kon tasdiqlagan — server tekshiruvi ulanmagan (reliz to‘sig‘i)';
-
-  @override
-  String get diagPurchaseServer => 'Obuna: server tomonidan tekshirilgan';
 
   @override
   String get statusDraft => 'Qoralama';
@@ -3354,130 +3274,13 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get deleteLocalDataBody =>
-      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati faqat shu qurilmadan o‘chiriladi. Ilmiy baza, hisobingiz va do‘kondagi obunalarga ta’sir qilmaydi — hisobni o‘chirish uchun «Hisobni o‘chirish» dan foydalaning.';
+      'Saralanganlar, qidiruv tarixi, yaqinda ko‘rilgan yozuvlar va darslar holati faqat shu qurilmadan o‘chiriladi. Ilmiy baza va hisobingizga ta’sir qilmaydi — hisobni o‘chirish uchun «Hisobni o‘chirish» dan foydalaning.';
 
   @override
   String get deleteLocalDataConfirm => 'O‘chirish';
 
   @override
   String get deleteLocalDataDone => 'Qurilmadagi ma’lumotlar o‘chirildi';
-
-  @override
-  String get tierStudentPro => 'Talaba Pro';
-
-  @override
-  String get tierProfessionalPro => 'Mutaxassis Pro';
-
-  @override
-  String get tierInstitution => 'Muassasa';
-
-  @override
-  String get tierCurrent => 'Joriy tarif';
-
-  @override
-  String get tierFreeF1 => 'Ogohlantirish va manbalari bilan oflayn ilmiy baza';
-
-  @override
-  String get tierFreeF2 => 'Qidiruv va tanlangan ma’lumotnoma yozuvlari';
-
-  @override
-  String get tierFreeF3 => 'Oddiy kalkulyatorlar';
-
-  @override
-  String get tierStudentF1 =>
-      'To‘liq ma’lumotnoma: moddalar, usullar, reaktivlar, sud tibbiyoti, standartlar, yurisdiksiyalar';
-
-  @override
-  String get tierStudentF2 =>
-      'Barcha kurslar, testlar, kartochkalar va imtihonga tayyorgarlik';
-
-  @override
-  String get tierStudentF3 => 'Cheklanmagan qidiruv natijalari';
-
-  @override
-  String get tierProF1 => 'Talaba Pro’dagi barcha imkoniyatlar';
-
-  @override
-  String get tierProF2 =>
-      'Professional kalkulyatorlar va laboratoriya vositalari';
-
-  @override
-  String get tierProF3 => 'Analitik usullar, tadqiqot va dalillar vositalari';
-
-  @override
-  String get tierProF4 => 'Professional AI funksiyalari — AI xizmati ulanganda';
-
-  @override
-  String get periodMonthly => 'Oylik';
-
-  @override
-  String get periodYearly => 'Yillik';
-
-  @override
-  String get periodUnknown => 'Obuna';
-
-  @override
-  String offerPriceLine(String price, String period) {
-    return '$price · $period';
-  }
-
-  @override
-  String get offerSubscribe => 'Obuna bo‘lish';
-
-  @override
-  String get offerPriceFromStore => 'Narxni App Store / Google Play ko‘rsatadi';
-
-  @override
-  String get subscriptionTerms =>
-      'Obuna bekor qilinmaguncha avtomatik yangilanadi. To‘lov App Store / Google Play hisobingizdan olinadi. Davr tugashidan kamida 24 soat oldin do‘kon hisobi sozlamalarida bekor qilishingiz mumkin.';
-
-  @override
-  String get manageSubscription => 'Obunani boshqarish';
-
-  @override
-  String get manageSubscriptionFailed =>
-      'Do‘kondagi obuna sozlamalarini ochib bo‘lmadi.';
-
-  @override
-  String get planLabel => 'Tarif';
-
-  @override
-  String get subscriptionStateLabel => 'Obuna holati';
-
-  @override
-  String get stActive => 'Faol';
-
-  @override
-  String get stExpired => 'Muddati tugagan';
-
-  @override
-  String get stGrace => 'To‘lov muammosi — imtiyozli davr';
-
-  @override
-  String get stBillingRetry => 'To‘lov muammosi — kirish to‘xtatilgan';
-
-  @override
-  String stCancelled(String date) {
-    return 'Bekor qilingan — $date gacha amal qiladi';
-  }
-
-  @override
-  String get stCancelledNoDate =>
-      'Bekor qilingan — davr oxirigacha amal qiladi';
-
-  @override
-  String get stRevoked => 'Do‘kon tomonidan bekor qilingan';
-
-  @override
-  String get stUnknown => 'Holat noma’lum';
-
-  @override
-  String get stNone => 'Obuna yo‘q';
-
-  @override
-  String stRenewsOn(String date) {
-    return 'Yangilanish yoki tugash sanasi: $date';
-  }
 
   @override
   String get accountOptionalNote =>
@@ -3676,10 +3479,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Hisobingiz va serverlarimizdagi unga bog‘liq ma’lumotlar (elektron pochta, kirish sessiyalari, sinxronlangan ma’lumotlar, bulutdagi huquq yozuvlari) butunlay o‘chiriladi. Buni qaytarib bo‘lmaydi.';
 
   @override
-  String get deleteAccountStoreNote =>
-      'Hisobni o‘chirish App Store / Google Play obunasini bekor qilmaydi. Keyingi to‘lovlarni to‘xtatish uchun uni do‘kon hisobi sozlamalarida bekor qiling.';
-
-  @override
   String get deleteAccountLocalNote =>
       'Qurilmadagi ma’lumotlar (saralanganlar, tarix) alohida amal: «Qurilmadagi ma’lumotlarni o‘chirish».';
 
@@ -3708,9 +3507,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accountSection => 'Hisob';
-
-  @override
-  String get subscriptionSection => 'Obuna';
 
   @override
   String get availNoDataTitle => 'Hozircha yozuvlar yo‘q';
@@ -4004,9 +3800,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accountNeedSync => 'Qurilmalar o‘rtasida sinxronlash';
-
-  @override
-  String get accountNeedSubscriptions => 'Bir nechta qurilmada obuna';
 
   @override
   String get accountNeedCloudAi => 'Bulutli AI (ulanganda)';
@@ -4737,24 +4530,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get referralStatPending => 'Kutilmoqda';
 
   @override
-  String get referralStatCredits => 'FORENSIC kreditlari';
-
-  @override
-  String referralCreditsPending(String amount) {
-    return '$amount kredit tasdiqlanishini kutmoqda';
-  }
-
-  @override
-  String referralCreditsFuture(String percent) {
-    return 'Pullik xizmatlar ishga tushgach, taklif qilgan hamkasblaringizning mos xaridlaridan sizga FORENSIC Credits hisoblanishi mumkin — xarid qiymatining $percent%. Kreditlar pul emas, ichki promo-bonus; ro‘yxatdan o‘tish uchun berilmaydi.';
-  }
-
-  @override
-  String referralCreditsActive(String percent) {
-    return 'Taklif qilgan hamkasblaringizning mos xaridlaridan $percent% miqdorida FORENSIC Credits olasiz. Kreditlar qaytarish muddatidan keyin tasdiqlanadi. Ular pul emas, ichki promo-bonus.';
-  }
-
-  @override
   String get referralPrivacyNote =>
       'Faqat umumiy sonlar ko‘rsatiladi. Hamkasblaringizning ismi, elektron pochtasi, profili va hujjatlari hech qachon ulashilmaydi — na sizga, na taklifda.';
 
@@ -4907,10 +4682,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ochiq kirishdagi maqola (PubMed Central, Europe PMC orqali). Qurilmangizdagi PDF ko‘ruvchi yoki brauzerda ochiladi.';
 
   @override
-  String get fullTextPdfPro =>
-      'To‘liq matnni (PDF) yuklab olish Pro versiyada mavjud.';
-
-  @override
   String get fullTextOpenFailed => 'PDF ochilmadi. Aloqani tekshiring.';
 
   @override
@@ -4945,9 +4716,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get adminReferrals => 'Takliflar';
 
   @override
-  String get adminProGrants => 'Pro berilganlar';
-
-  @override
   String get adminRegions => 'Davlatlar (qurilma hududi)';
 
   @override
@@ -4965,27 +4733,6 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get adminPrivacyNote =>
       'Shaxsiy ma’lumot (elektron pochta) bor. Skrinshotlarni tarqatmang.';
-
-  @override
-  String get adminGrantTitle => 'Pro berish yoki olib tashlash';
-
-  @override
-  String get adminEmail => 'Foydalanuvchi elektron pochtasi';
-
-  @override
-  String get adminGrantPro => 'Mutaxassis Pro berish';
-
-  @override
-  String get adminRevoke => 'Olib tashlash';
-
-  @override
-  String get adminGranted => 'Pro berildi.';
-
-  @override
-  String get adminRevoked => 'Kirish olib tashlandi.';
-
-  @override
-  String get adminNotFound => 'Bunday elektron pochtali foydalanuvchi yo‘q.';
 
   @override
   String get adminFailed => 'Bajarilmadi. Aloqani tekshiring.';
@@ -5655,10 +5402,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get pubEditTitle => 'Qoralamani tahrirlash';
-
-  @override
-  String get pubPaidNote =>
-      'Pullik obuna moderatsiya natijasiga ta’sir qilmaydi.';
 
   @override
   String get pubRequired => 'Majburiy';
@@ -6361,12 +6104,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get admStatActive30d => '30 kunda faol';
 
   @override
-  String get admStatPro => 'Pro (server ruxsati)';
-
-  @override
-  String get admStatFree => 'Bepul';
-
-  @override
   String get admStatAwaiting => 'Javob kutayotgan murojaatlar';
 
   @override
@@ -6391,10 +6128,6 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get admActiveNote =>
       'Faol — davr ichida hisobga kirgan, ilovani ochgan (qurilma belgisi) yoki AI’ga savol bergan.';
-
-  @override
-  String get admProNote =>
-      'Pro faqat server ruxsatini sanaydi; do‘kon xaridlari qurilmada tekshiriladi.';
 
   @override
   String get admChart14d => 'So‘nggi 14 kun: ro‘yxatdan o‘tish va AI savollari';
@@ -6486,15 +6219,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get admRoleModerator => 'Moderatorlar';
-
-  @override
-  String get admTierAny => 'Har qanday tarif';
-
-  @override
-  String get admTierFree => 'Bepul';
-
-  @override
-  String get admTierPro => 'Pro tarif';
 
   @override
   String get admUsersEmpty => 'Saralashga mos foydalanuvchi yo‘q.';
@@ -6680,13 +6404,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get calcEstimatedRange => 'Baholangan oraliq';
 
   @override
-  String get calcLockedTitle => 'Mutaxassis Pro tarkibida';
-
-  @override
-  String get calcLockedBody =>
-      'Bu kalkulyator Mutaxassis Pro tarifida ochiladi. Suyultirish va konsentratsiya birliklari konvertori — bepul.';
-
-  @override
   String get calcLodUnitNote =>
       'DL va QL kalibrlash x o‘qidagi konsentratsiya birligida.';
 
@@ -6753,10 +6470,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String rdGlanceMore(int count) {
     return 'yana $count ta';
   }
-
-  @override
-  String get rdGlanceLockedHint =>
-      'Quyidagi tafsilotlar Pro’da ochiladi. Nomlar, ogohlantirishlar va manbalar bepul qoladi.';
 
   @override
   String get rdJumpTo => 'Bo‘limga o‘tish';
@@ -7275,28 +6988,9 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String courtProTitle(String tier) {
-    return 'Kengaytirilgan tayyorgarlik — $tier tarifida';
-  }
-
-  @override
-  String get courtProBody =>
-      'To‘liq simulyator (barcha ssenariylar), ketma-ket rol mashqlari, AI tahlili (tez orada), shaxsiy statistika va tarix. Manbali savol-javob kartalari hamma uchun bepul.';
-
-  @override
-  String get courtProBadge => 'Pro’da';
-
-  @override
-  String get courtAiPro => 'AI tahlili (Pro)';
-
-  @override
   String courtScoreSemantics(String criterion, int score) {
     return '$criterion: 2 dan $score';
   }
-
-  @override
-  String get courtSimFreeNote =>
-      'Bepul: asosiy ssenariylar. Qolgan ssenariylar, rol mashqlari va statistika — Pro’da.';
 
   @override
   String get courtDrill => 'Rol mashqi';
@@ -8014,15 +7708,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Qidiruvni namuna, usul, reagent, dalil darajasi va boshqa belgilar bo‘yicha toraytiring yoki namuna, usul yoki reagentdan unga hujjatlashtirilgan moddalarga o‘ting.';
 
   @override
-  String proSearchLockedTitle(String tier) {
-    return 'Kengaytirilgan qidiruv — $tier';
-  }
-
-  @override
-  String get proSearchLockedBody =>
-      'Filtrlar (fan, sinf, namuna, usul, reagent, dalil darajasi, tekshiruv holati, yurisdiksiya, yil), aniq ibora bo‘yicha qidiruv va teskari qidiruv pullik tarifga kiradi. Oddiy qidiruv hammaga ochiq.';
-
-  @override
   String get proSearchHint => 'Nom, sinonim yoki «ibora»';
 
   @override
@@ -8181,15 +7866,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String planSummary(int s, int p, int c, int l) {
     return 'Namunalar: $s · Taxminiy testlar: $p · Tasdiqlash: $c · Cheklovlar: $l';
   }
-
-  @override
-  String planLockedTitle(String tier) {
-    return 'To‘liq tahlil rejasi — $tier';
-  }
-
-  @override
-  String get planLockedBody =>
-      'Bepul ko‘rinishda sonlar va namunalar ko‘rsatiladi. Pullik tarif reagentli taxminiy testlar, stol usullari va tasdiqlash bosqichlari, halaqitlar, cheklovlar, xulosa uchun eslatma hamda to‘liq iqtiboslar bilan nusxalanadigan matnni qo‘shadi.';
 
   @override
   String get planSecSpecimens => 'Namunalar va namuna olish bo‘yicha izohlar';
@@ -8910,34 +8586,6 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ish materialiga o‘xshagan matn avtomatik tekshiruvga tushadi. Uch xil foydalanuvchining shikoyati postni yashiradi yoki mutaxassis belgisini administrator qaroriga qadar to‘xtatadi. Qonunga qarshi qaratilgan post o‘chiriladi, belgi ham u bilan birga ketadi.';
 
   @override
-  String get adminGrantStudent => 'Talaba Pro berish';
-
-  @override
-  String get adminGrantHint =>
-      'Odam ilovaga qaysi pochta bilan kirgan bo‘lsa, shuni yozing. Hisob allaqachon mavjud bo‘lishi kerak; bu yerdan taklif yuborilmaydi.';
-
-  @override
-  String get adminEmailInvalid => 'Bu elektron pochta manzili emas.';
-
-  @override
-  String adminGrantedTier(String tier) {
-    return 'Berildi: $tier';
-  }
-
-  @override
-  String get adminRevokeConfirmTitle => 'Kirishni olib tashlansinmi?';
-
-  @override
-  String get adminRevokeConfirmBody =>
-      'Odam pullik bo‘limlarni darhol yo‘qotadi. Do‘kondan qilingan xaridga bu ta’sir qilmaydi — faqat shu paneldan berilgan huquqqa.';
-
-  @override
-  String get adminTierStudent => 'Talaba Pro';
-
-  @override
-  String get adminTierProfessional => 'Mutaxassis Pro';
-
-  @override
   String get provOwnWordsNote =>
       'Manbadagi mazmun o‘z so‘zlarimiz bilan berilgan; asl matn ko‘chirilmagan. Aniq joyi quyida.';
 
@@ -9409,7 +9057,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Hozir tizimda: mavjud emas (faol kuzatuv yo‘q).';
 
   @override
-  String get admxStoresTitle => 'Yuklab olishlar va sotuvlar';
+  String get admxStoresTitle => 'Yuklab olishlar';
 
   @override
   String get admxDownloadsNote =>

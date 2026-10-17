@@ -108,7 +108,10 @@ class _Body extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: FeSpace.sm),
-              FeBanner(icon: Icons.lock_outline, text: l.adminPrivacyNote),
+              FeBanner(
+                icon: Icons.privacy_tip_outlined,
+                text: l.adminPrivacyNote,
+              ),
               const SizedBox(height: FeSpace.sm),
               const _AdminSections(),
               const _AdminOverview(),

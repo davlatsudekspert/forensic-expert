@@ -21,7 +21,6 @@ import '../data/fixtures/test_fixtures.dart';
 import '../data/local/content_store.dart';
 import '../data/offline/offline_ai.dart';
 import '../data/offline/offline_backend.dart';
-import '../data/offline/offline_billing.dart';
 import '../domain/ai/ai_architecture.dart';
 import '../domain/ai/local_retrieval.dart';
 import '../domain/ai/provenance_retrieval.dart';
@@ -35,9 +34,9 @@ import '../domain/jurisdiction/jurisdiction_catalog.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/learn_models.dart';
 import '../domain/library/library_models.dart';
+import '../domain/ports/ai_entitlement.dart';
 import '../domain/ports/ai_ports.dart';
 import '../domain/ports/backend_ports.dart';
-import '../domain/ports/billing_ports.dart';
 
 /// Dependency injection nuqtasi. Feature’lar `lib/data` ni to‘g‘ridan-to‘g‘ri
 /// import qilmaydi — faqat shu provayderlar orqali (architecture testi).
@@ -83,7 +82,7 @@ final contentUpdateRepositoryProvider = Provider<ContentUpdateRepository>(
   (ref) => const DisabledContentUpdateRepository(),
 );
 
-/// Forensic AI ruxsati tarifdan alohida (server xarajati bor).
+/// Forensic AI ruxsati: kirgan foydalanuvchiga server kvotasi doirasida.
 final aiEntitlementServiceProvider = Provider<AiEntitlementService>(
   (ref) => const NoAiEntitlementService(),
 );

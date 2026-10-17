@@ -111,12 +111,8 @@ void main() {
     await qa.step('[$mode] Bog‘liq vosita → Ber–Lambert sahifasi', (s) async {
       await qa.tapText(l.toolBeerLambertName);
       await qa.settle();
-      if (pro) {
-        qa.expectText(l.calcBeerBasis, s);
-      } else {
-        // Talaba (Pro’siz): aniq tarif nomi bilan qulf kartasi.
-        qa.expectText(l.calcLockedTitle, s);
-      }
+      // Hamma vosita bepul va ochiq: qulf kartasi yo‘q.
+      qa.expectText(l.calcBeerBasis, s);
     });
 
     if (pro) {

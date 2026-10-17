@@ -20,8 +20,8 @@ library;
 
 import 'package:flutter/foundation.dart';
 
+import '../ports/ai_entitlement.dart';
 import '../ports/ai_ports.dart';
-import '../ports/billing_ports.dart';
 import 'ai_architecture.dart';
 
 /// Savol domeni (qidiruv va reviewer roli uchun).

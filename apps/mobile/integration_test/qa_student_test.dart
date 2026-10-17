@@ -137,7 +137,11 @@ void main() {
     });
 
     await qa.step('Kutubxona markazi', (s) async {
-      await qa.tapTooltip('Kutubxona');
+      // Kutubxona suzuvchi menyuda tab emas — Asosiy tepasidagi katta tugma.
+      goTo(tester, Routes.home);
+      await qa.settle();
+      await qa.scrollToTop();
+      await qa.tapFinder(find.byKey(const Key('home.library')));
       qa.expectText('Moddalar', s);
       qa.expectText('Yo‘riqnomalar', s);
     }, shot: false);
@@ -161,14 +165,13 @@ void main() {
       qa.expectText('Tahlil usullari', s);
     });
 
-    await qa.step('Manba iqtibosi + o‘zbekcha tarjima', (s) async {
+    await qa.step('Metabolitlar → tadqiqotlar va dalillar bloki', (s) async {
       await qa.tapText('Metabolitlar');
-      // Tarjima belgisi endi yuqoridagi bo‘limlarda ham uchraydi, shuning uchun
-      // aynan iqtibos blokigacha aylantiriladi.
-      await qa.scrollUntil(find.text('Manbadan iqtibos'));
-      qa.expectText('Manbadan iqtibos', s);
-      qa.expectText('Avtomatik tarjima', s);
-      qa.expectText('atsetaldegid', s);
+      // Tahlil bo‘limi 3 qismga bo‘lingandan keyin «Manbadan iqtibos» bloki
+      // modda sahifasining shu yo‘lida emas: dalil kartalari «Tadqiqotlar va
+      // dalillar» bo‘limida (tahlil: docs/UX_AUDIT_2026-10-17.md).
+      await qa.scrollUntil(find.text('Tadqiqotlar va dalillar'));
+      qa.expectText('Tadqiqotlar va dalillar', s);
       qa.expectNoText('untitled opening section', s, why: 'xom bo‘lim izohi');
     });
 

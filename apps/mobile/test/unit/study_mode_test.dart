@@ -683,8 +683,7 @@ void main() {
           isTrue,
           reason: i.id,
         );
-        final card = guidelines.byId(i.originId)!;
-        expect(card.isFree, isTrue, reason: i.id);
+        expect(guidelines.byId(i.originId), isNotNull, reason: i.id);
       }
     });
 

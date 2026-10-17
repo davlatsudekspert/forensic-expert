@@ -13,8 +13,6 @@ import 'package:forensic_expert/data/offline/offline_ai.dart';
 import 'package:forensic_expert/domain/ai/ai_architecture.dart';
 import 'package:forensic_expert/domain/jurisdiction/country_directory.dart';
 import 'package:forensic_expert/domain/jurisdiction/jurisdiction_catalog.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
-import 'package:forensic_expert/domain/ports/product_tiers.dart';
 import 'package:forensic_expert/domain/privacy/telemetry_policy.dart';
 
 import '../helpers/pilot_content.dart';
@@ -389,13 +387,7 @@ void main() {
     });
   });
 
-  group('Billing va maxfiylik arxitekturasi', () {
-    test('darajalar: faqat store’da mavjud mahsulot xarid qilinadi', () {
-      expect(ProductTiers.purchasableProductIds, ProductIds.all);
-      expect(ProductTiers.tierOf(Entitlements.free), PlanTier.free);
-      expect(PlanTier.values.length, 4);
-    });
-
+  group('Maxfiylik arxitekturasi', () {
     test('telemetriya: so‘rov, matn va ID’lar hech qachon o‘tmaydi', () {
       final out = TelemetryPolicy.sanitize({
         'event': 'screen_view',

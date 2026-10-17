@@ -251,10 +251,7 @@ class InMemorySupportService implements SupportService {
             (filter.role == null ||
                 (filter.role == 'admin' && u.isAdmin) ||
                 (filter.role == 'moderator' &&
-                    u.roles.contains('publication_moderator'))) &&
-            (filter.tier == null ||
-                (filter.tier == 'free' && u.tier == null) ||
-                (filter.tier == 'pro' && u.tier != null)))
+                    u.roles.contains('publication_moderator'))))
           u,
     ];
     return AdminPage(

@@ -46,3 +46,14 @@ Birlashtirilgan: no-paywall → analysis-structure → admin-ext → apple-revok
 | `test/widget/class_quiz_test.dart` (ustoz UI oqimi, talaba UI oqimi, rol, 320 dp qorong‘i, 16:9 landshaft, deep link) | 10/10 PASS |
 | `flutter analyze` | No issues |
 | Arxitektura/l10n/a11y/to‘liq suite | **ISHGA TUSHMADI** — sandbox diski to‘lgan (`No space left on device`). Qo‘lda statik tekshiruv: hardcoded matn yo‘q, TextField/onTapOutside/keyboardDismiss mos, ARB 3 tilda 2776 kalit. CI/lokal qayta ishga tushirilishi shart. |
+
+
+## UX polish + Pro tozalash (2026-10-17, branch `claude/ux-polish`)
+
+| Nima | Natija |
+|---|---|
+| `flutter analyze --fatal-infos` | No issues |
+| To‘liq `flutter test` (bir marta, oxirida) | 2873 PASS, 1 skip, 2 FAIL → tuzatildi va qayta sinaldi (support_admin_test: snackbar bannerni yopib turadi — test snackbar’ni tozalaydi; supabase_support_test: `p_tier` olib tashlandi): 15/15 PASS. Goldenlar o‘zgarmadi (tolerans ichida) |
+| Real-app harness (Linux, Xvfb, MOCK) | STUDENT 46/46 (avval 40/6), EXPERT 37/37, ADMIN 23/23, UX-AUDIT 48/48 |
+| `nopaywall` (Pro/tarif/qulf so‘zi yoki ikonkasi = 0) | STUDENT, MUTAXASSIS, ADMIN × uz/ru/en: 15/15, 15/15, 22/22 PASS (9 yurish) |
+| Sinalmadi | real iOS/Android qurilma, haqiqiy OTP/Google/Apple, haqiqiy Supabase; eski `qa_court/qa_pro_tools/qa_reading/qa_reagents` harnesslari (Pro tarmoqlari eskirgan — ishga tushirilmadi) |

@@ -141,7 +141,7 @@ class ReferralDashboard {
   /// Server sozlamasi (standart 10 %).
   final double rewardPercent;
 
-  /// Pullik xizmatlar ishga tushganda yoqiladi.
+  /// Server tomonidan yoqiladi.
   final bool rewardsEnabled;
 
   /// Bu akkaunt o‘zi taklif orqali kelganmi (kod kiritish maydonini yashirish).

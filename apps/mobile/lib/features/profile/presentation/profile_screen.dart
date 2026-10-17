@@ -648,9 +648,12 @@ class _IdentityCard extends ConsumerWidget {
             final r? => l.professionalRoleLabel(r),
             null => null,
           };
+    final modeText = isStudent ? l.modeStudent : l.modeProfessional;
     final subtitle = [
-      isStudent ? l.modeStudent : l.modeProfessional,
-      ?role,
+      modeText,
+      // «Talaba · Talaba» takrori bo‘lmasin: rol rejim nomi bilan bir xil
+      // bo‘lsa, bir marta ko‘rsatiladi.
+      if (role != null && role != modeText) role,
       if (!isStudent)
         if (profile.professional case final p?)
           l.specialtyLabel(p.primarySpecialty),

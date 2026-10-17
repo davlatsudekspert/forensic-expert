@@ -32,7 +32,6 @@ void main() {
     'toolLodName',
     'calcFormula',
     'detailBiomarker',
-    'lockedBadge',
     'tech_gc',
     'tech_gcFid',
     'tech_gcMs',
@@ -54,11 +53,6 @@ void main() {
     'citeStyleApa',
     'metKindMarker',
     'reagentPh',
-    // Tarif nomlari — mahsulot brendi, har tilda bir xil.
-    'tierStudentPro',
-    'tierProfessionalPro',
-    // Faqat o‘rin belgilari (narx va davr store/lokalizatsiyadan).
-    'offerPriceLine',
   };
   // Allowlist’dagi kalit qiymati (masalan, «Lifetime» brendi) boshqa
   // kalitda ham uchrasa — u ham ruxsat etilgan.

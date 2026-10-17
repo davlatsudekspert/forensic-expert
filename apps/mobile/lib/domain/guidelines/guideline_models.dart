@@ -321,15 +321,6 @@ enum GuidelineArea {
   }
 }
 
-/// Karta kirish darajasi (`access`). Belgilanmagan — bepul.
-enum GuidelineAccess {
-  free,
-  pro;
-
-  static GuidelineAccess parse(Object? v) =>
-      '$v'.toLowerCase() == 'pro' ? pro : free;
-}
-
 @immutable
 class GuidelineCard {
   const GuidelineCard({
@@ -343,7 +334,6 @@ class GuidelineCard {
     this.keywords = const {},
     this.translationStatus = const {},
     this.relatedToolIds = const [],
-    this.access = GuidelineAccess.free,
     this.quiz = const [],
     this.termIds = const [],
   });
@@ -380,7 +370,6 @@ class GuidelineCard {
       relatedToolIds: [
         for (final t in (j['related_tool_ids'] as List? ?? const [])) '$t',
       ],
-      access: GuidelineAccess.parse(j['access']),
       quiz: [
         for (final q in (j['quiz'] as List? ?? const []))
           ?GuidelineQuizItem.fromJson(q),
@@ -414,17 +403,12 @@ class GuidelineCard {
   final Map<String, GuidelineTranslationStatus> translationStatus;
   final List<String> relatedToolIds;
 
-  /// Kirish darajasi. Yo‘riqnomalar bepul; `pro` faqat aniq belgilansa.
-  final GuidelineAccess access;
-
   /// O‘quv rejimi uchun savollar (bo‘lmasa — bo‘sh).
   final List<GuidelineQuizItem> quiz;
 
   /// «Ilmiy lug‘at» atamalari (`term_translations.term_id`) — kartada
   /// ishlatilgan atamalarning aniq ro‘yxati (`content/tools/toks_terms.py`).
   final List<String> termIds;
-
-  bool get isFree => access == GuidelineAccess.free;
 
   GuidelineArea get area => GuidelineArea.forCodes(disciplineCodes);
 

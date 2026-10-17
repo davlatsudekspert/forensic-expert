@@ -945,22 +945,6 @@
   "@aboutVersions": {
     "description": "About text."
   },
-  "storeNotConnected": "The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.",
-  "@storeNotConnected": {
-    "description": "Banner."
-  },
-  "restorePurchases": "Restore purchases",
-  "@restorePurchases": {
-    "description": "Button."
-  },
-  "restoreNothing": "No active subscriptions to restore.",
-  "@restoreNothing": {
-    "description": "Snackbar."
-  },
-  "subscriptionSafetyNote": "Disclaimers, limitations and sources are never behind a paywall.",
-  "@subscriptionSafetyNote": {
-    "description": "Subscription principle."
-  },
   "moduleHubTools": "Tools in this section",
   "@moduleHubTools": {
     "description": "Module hub section."
@@ -1029,38 +1013,6 @@
   "detailChangeJurisdiction": "Change jurisdiction",
   "@detailChangeJurisdiction": {
     "description": "Action."
-  },
-  "purchaseTitle": "Plans",
-  "@purchaseTitle": {
-    "description": "Paywall title."
-  },
-  "purchaseCta": "See plans",
-  "@purchaseCta": {
-    "description": "Locked-content button."
-  },
-  "purchaseFreeTitle": "Free",
-  "@purchaseFreeTitle": {
-    "description": "Tier name."
-  },
-  "purchaseFreeBody": "Core offline reference, search and basic calculators — no account required.",
-  "@purchaseFreeBody": {
-    "description": "Free tier summary."
-  },
-  "purchaseAiNote": "Professional AI features become available only when the AI service is connected; limits will be stated before purchase.",
-  "@purchaseAiNote": {
-    "description": "Paywall note."
-  },
-  "purchaseOwned": "Your subscription is active",
-  "@purchaseOwned": {
-    "description": "Snackbar after restore."
-  },
-  "purchaseUnavailableSnack": "Purchases are not available in this build.",
-  "@purchaseUnavailableSnack": {
-    "description": "Purchase tapped while store unavailable."
-  },
-  "accessFree": "Free",
-  "@accessFree": {
-    "description": "Plan name."
   },
   "homePilotNotice": "The scientific database is under expert review. Every entry is shown with its sources and review status and is not a final conclusion.",
   "@homePilotNotice": {
@@ -1233,31 +1185,6 @@
       }
     }
   },
-  "lockedTitle": "Included in Student Pro and Professional Pro",
-  "@lockedTitle": {
-    "description": "Locked content title."
-  },
-  "lockedBody": "Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.",
-  "@lockedBody": {
-    "description": "Locked content body."
-  },
-  "freeDemoBadge": "Free",
-  "@freeDemoBadge": {
-    "description": "Access chip on a free entry (permanently free, not a time-limited demo)."
-  },
-  "lockedBadge": "Pro",
-  "@lockedBadge": {
-    "description": "Badge."
-  },
-  "searchMoreLocked": "{count} more results with a paid plan",
-  "@searchMoreLocked": {
-    "description": "Search.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "learnEmptyCourses": "Courses will appear after expert review of the learning content.",
   "@learnEmptyCourses": {
     "description": "No real courses yet."
@@ -1270,37 +1197,9 @@
   "@libraryNotInstalled": {
     "description": "No pack."
   },
-  "purchasePending": "Purchase is waiting for confirmation from the store.",
-  "@purchasePending": {
-    "description": "Store pending."
-  },
-  "purchaseFailed": "The purchase was not completed.",
-  "@purchaseFailed": {
-    "description": "Purchase failed."
-  },
-  "purchaseCancelled": "Purchase cancelled.",
-  "@purchaseCancelled": {
-    "description": "Purchase cancelled."
-  },
-  "purchaseSuccess": "Subscription activated. Thank you!",
-  "@purchaseSuccess": {
-    "description": "Snackbar."
-  },
   "aboutTrademarkPending": "Name and logo: trademark clearance pending.",
   "@aboutTrademarkPending": {
     "description": "Brand status."
-  },
-  "diagPurchaseNone": "Subscription: none confirmed by the store",
-  "@diagPurchaseNone": {
-    "description": "Diagnostics."
-  },
-  "diagPurchaseStore": "Subscription: confirmed by the store only — server verification not connected (release blocker)",
-  "@diagPurchaseStore": {
-    "description": "Diagnostics."
-  },
-  "diagPurchaseServer": "Subscription: verified by the server",
-  "@diagPurchaseServer": {
-    "description": "Diagnostics."
   },
   "statusDraft": "Draft",
   "@statusDraft": {
@@ -1407,7 +1306,7 @@
   },
   "knowledgeSafety": "Limitations & safety",
   "@knowledgeSafety": {
-    "description": "Section: limitations and safety (never paywalled)."
+    "description": "Section: limitations and safety (always open)."
   },
   "knowledgeSources": "Sources",
   "@knowledgeSources": {
@@ -4381,7 +4280,7 @@
   "@deleteLocalData": {
     "description": "Profile action."
   },
-  "deleteLocalDataBody": "Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.",
+  "deleteLocalDataBody": "Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database and your account are not affected — use “Delete account” to delete the account.",
   "@deleteLocalDataBody": {
     "description": "Dialog."
   },
@@ -4392,164 +4291,6 @@
   "deleteLocalDataDone": "Local data deleted",
   "@deleteLocalDataDone": {
     "description": "Snackbar."
-  },
-  "tierStudentPro": "Student Pro",
-  "@tierStudentPro": {
-    "description": "Tier name."
-  },
-  "tierProfessionalPro": "Professional Pro",
-  "@tierProfessionalPro": {
-    "description": "Tier name."
-  },
-  "tierInstitution": "Institution",
-  "@tierInstitution": {
-    "description": "Tier name."
-  },
-  "tierCurrent": "Current plan",
-  "@tierCurrent": {
-    "description": "Badge."
-  },
-  "tierFreeF1": "Offline scientific database with safety warnings and sources",
-  "@tierFreeF1": {
-    "description": "Feature."
-  },
-  "tierFreeF2": "Search and selected reference entries",
-  "@tierFreeF2": {
-    "description": "Feature."
-  },
-  "tierFreeF3": "Basic calculators",
-  "@tierFreeF3": {
-    "description": "Feature."
-  },
-  "tierStudentF1": "Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions",
-  "@tierStudentF1": {
-    "description": "Feature."
-  },
-  "tierStudentF2": "All courses, quizzes, flashcards and exam practice",
-  "@tierStudentF2": {
-    "description": "Feature."
-  },
-  "tierStudentF3": "Unlimited search results",
-  "@tierStudentF3": {
-    "description": "Feature."
-  },
-  "tierProF1": "Everything in Student Pro",
-  "@tierProF1": {
-    "description": "Feature."
-  },
-  "tierProF2": "Professional calculators and laboratory tools",
-  "@tierProF2": {
-    "description": "Feature."
-  },
-  "tierProF3": "Analytical methods, research and evidence tools",
-  "@tierProF3": {
-    "description": "Feature."
-  },
-  "tierProF4": "Professional AI features — when the AI service is connected",
-  "@tierProF4": {
-    "description": "Feature."
-  },
-  "periodMonthly": "Monthly",
-  "@periodMonthly": {
-    "description": "Billing period."
-  },
-  "periodYearly": "Yearly",
-  "@periodYearly": {
-    "description": "Billing period."
-  },
-  "periodUnknown": "Subscription",
-  "@periodUnknown": {
-    "description": "Billing period."
-  },
-  "offerPriceLine": "{price} · {period}",
-  "@offerPriceLine": {
-    "description": "Price line.",
-    "placeholders": {
-      "price": {
-        "type": "String"
-      },
-      "period": {
-        "type": "String"
-      }
-    }
-  },
-  "offerSubscribe": "Subscribe",
-  "@offerSubscribe": {
-    "description": "Button."
-  },
-  "offerPriceFromStore": "Price is shown by the App Store / Google Play",
-  "@offerPriceFromStore": {
-    "description": "Note."
-  },
-  "subscriptionTerms": "Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.",
-  "@subscriptionTerms": {
-    "description": "Apple/Google required disclosure."
-  },
-  "manageSubscription": "Manage subscription",
-  "@manageSubscription": {
-    "description": "Button."
-  },
-  "manageSubscriptionFailed": "Could not open the store subscription settings.",
-  "@manageSubscriptionFailed": {
-    "description": "Snackbar."
-  },
-  "planLabel": "Plan",
-  "@planLabel": {
-    "description": "Profile row."
-  },
-  "subscriptionStateLabel": "Subscription status",
-  "@subscriptionStateLabel": {
-    "description": "Profile row."
-  },
-  "stActive": "Active",
-  "@stActive": {
-    "description": "Status."
-  },
-  "stExpired": "Expired",
-  "@stExpired": {
-    "description": "Status."
-  },
-  "stGrace": "Payment issue — grace period",
-  "@stGrace": {
-    "description": "Status."
-  },
-  "stBillingRetry": "Payment issue — access paused",
-  "@stBillingRetry": {
-    "description": "Status."
-  },
-  "stCancelled": "Cancelled — active until {date}",
-  "@stCancelled": {
-    "description": "Status.",
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
-  },
-  "stCancelledNoDate": "Cancelled — active until the end of the period",
-  "@stCancelledNoDate": {
-    "description": "Status."
-  },
-  "stRevoked": "Revoked by the store",
-  "@stRevoked": {
-    "description": "Status."
-  },
-  "stUnknown": "Status unknown",
-  "@stUnknown": {
-    "description": "Status."
-  },
-  "stNone": "No subscription",
-  "@stNone": {
-    "description": "Status."
-  },
-  "stRenewsOn": "Renews or ends on {date}",
-  "@stRenewsOn": {
-    "description": "Status detail.",
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
   },
   "accountOptionalNote": "An account is optional. The offline scientific reference works without signing in; an account is needed only for cloud services.",
   "@accountOptionalNote": {
@@ -4801,10 +4542,6 @@
   "@deleteAccountBody": {
     "description": "Body."
   },
-  "deleteAccountStoreNote": "Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.",
-  "@deleteAccountStoreNote": {
-    "description": "Body."
-  },
   "deleteAccountLocalNote": "Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.",
   "@deleteAccountLocalNote": {
     "description": "Body."
@@ -4839,10 +4576,6 @@
   },
   "accountSection": "Account",
   "@accountSection": {
-    "description": "Section."
-  },
-  "subscriptionSection": "Subscription",
-  "@subscriptionSection": {
     "description": "Section."
   },
   "availNoDataTitle": "No records yet",
@@ -5211,10 +4944,6 @@
   },
   "accountNeedSync": "Synchronisation between devices",
   "@accountNeedSync": {
-    "description": "Item."
-  },
-  "accountNeedSubscriptions": "Subscriptions across devices",
-  "@accountNeedSubscriptions": {
     "description": "Item."
   },
   "accountNeedCloudAi": "Cloud AI (when connected)",
@@ -6176,37 +5905,6 @@
   "@referralStatPending": {
     "description": "Stat."
   },
-  "referralStatCredits": "FORENSIC Credits",
-  "@referralStatCredits": {
-    "description": "Stat."
-  },
-  "referralCreditsPending": "{amount} credits awaiting confirmation",
-  "@referralCreditsPending": {
-    "description": "Pending credits line.",
-    "placeholders": {
-      "amount": {
-        "type": "String"
-      }
-    }
-  },
-  "referralCreditsFuture": "When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — {percent}% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.",
-  "@referralCreditsFuture": {
-    "description": "Credits note (rewards not live).",
-    "placeholders": {
-      "percent": {
-        "type": "String"
-      }
-    }
-  },
-  "referralCreditsActive": "You receive FORENSIC Credits worth {percent}% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.",
-  "@referralCreditsActive": {
-    "description": "Credits note (rewards live).",
-    "placeholders": {
-      "percent": {
-        "type": "String"
-      }
-    }
-  },
   "referralPrivacyNote": "Only totals are shown. Your colleagues’ names, emails, profiles and documents are never shared — neither with you nor in the invitation.",
   "@referralPrivacyNote": {
     "description": "Privacy note."
@@ -6393,10 +6091,6 @@
   "@fullTextPdfNote": {
     "description": "Note."
   },
-  "fullTextPdfPro": "Downloading full-text PDFs is available with Pro.",
-  "@fullTextPdfPro": {
-    "description": "Locked note."
-  },
   "fullTextOpenFailed": "Couldn’t open the PDF. Check your connection.",
   "@fullTextOpenFailed": {
     "description": "Snackbar."
@@ -6441,10 +6135,6 @@
   "@adminReferrals": {
     "description": "Stat."
   },
-  "adminProGrants": "Pro granted",
-  "@adminProGrants": {
-    "description": "Stat."
-  },
   "adminRegions": "Countries (device region)",
   "@adminRegions": {
     "description": "Section."
@@ -6469,34 +6159,6 @@
   "adminPrivacyNote": "Contains personal data (emails). Do not share screenshots.",
   "@adminPrivacyNote": {
     "description": "Note."
-  },
-  "adminGrantTitle": "Give or remove Pro",
-  "@adminGrantTitle": {
-    "description": "Section."
-  },
-  "adminEmail": "User email",
-  "@adminEmail": {
-    "description": "Field."
-  },
-  "adminGrantPro": "Give Professional Pro",
-  "@adminGrantPro": {
-    "description": "Action."
-  },
-  "adminRevoke": "Remove",
-  "@adminRevoke": {
-    "description": "Action."
-  },
-  "adminGranted": "Pro granted.",
-  "@adminGranted": {
-    "description": "Result."
-  },
-  "adminRevoked": "Access removed.",
-  "@adminRevoked": {
-    "description": "Result."
-  },
-  "adminNotFound": "No user with this email.",
-  "@adminNotFound": {
-    "description": "Result."
   },
   "adminFailed": "Action failed. Check the connection.",
   "@adminFailed": {
@@ -7343,10 +7005,6 @@
   "pubEditTitle": "Edit draft",
   "@pubEditTitle": {
     "description": "Screen title."
-  },
-  "pubPaidNote": "A paid subscription does not affect moderation.",
-  "@pubPaidNote": {
-    "description": "Note."
   },
   "pubRequired": "Required",
   "@pubRequired": {
@@ -8271,14 +7929,6 @@
   "@admStatActive30d": {
     "description": "Stat card."
   },
-  "admStatPro": "Pro (server grants)",
-  "@admStatPro": {
-    "description": "Stat card."
-  },
-  "admStatFree": "Free",
-  "@admStatFree": {
-    "description": "Stat card."
-  },
   "admStatAwaiting": "Requests awaiting reply",
   "@admStatAwaiting": {
     "description": "Stat card."
@@ -8310,10 +7960,6 @@
   "admActiveNote": "Active = signed in, opened the app (device check-in) or asked the AI within the window.",
   "@admActiveNote": {
     "description": "Definition of active users."
-  },
-  "admProNote": "Pro counts server grants only; store purchases are verified on the device.",
-  "@admProNote": {
-    "description": "Definition of Pro count."
   },
   "admChart14d": "Last 14 days: sign-ups and AI questions",
   "@admChart14d": {
@@ -8435,18 +8081,6 @@
   },
   "admRoleModerator": "Moderators",
   "@admRoleModerator": {
-    "description": "Filter chip."
-  },
-  "admTierAny": "Any plan",
-  "@admTierAny": {
-    "description": "Filter chip."
-  },
-  "admTierFree": "Free",
-  "@admTierFree": {
-    "description": "Filter chip."
-  },
-  "admTierPro": "Pro plan",
-  "@admTierPro": {
     "description": "Filter chip."
   },
   "admUsersEmpty": "No users match the filter.",
@@ -8697,14 +8331,6 @@
   "@calcEstimatedRange": {
     "description": "Headline row: estimated min–max range."
   },
-  "calcLockedTitle": "Included in Expert Pro",
-  "@calcLockedTitle": {
-    "description": "Locked calculator card title."
-  },
-  "calcLockedBody": "This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.",
-  "@calcLockedBody": {
-    "description": "Locked calculator card body."
-  },
   "calcLodUnitNote": "DL and QL are in the concentration units of the calibration x axis.",
   "@calcLodUnitNote": {
     "description": "Note under LOD/LOQ result."
@@ -8788,10 +8414,6 @@
         "type": "int"
       }
     }
-  },
-  "rdGlanceLockedHint": "Details below open with Pro. Names, warnings and sources stay free.",
-  "@rdGlanceLockedHint": {
-    "description": "Summary card when details are locked: what is behind Pro (counts only)."
   },
   "rdJumpTo": "Go to section",
   "@rdJumpTo": {
@@ -9482,27 +9104,6 @@
       }
     }
   },
-  "courtProTitle": "Advanced preparation in {tier}",
-  "@courtProTitle": {
-    "description": "Pro features card title.",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "courtProBody": "Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.",
-  "@courtProBody": {
-    "description": "Pro features card body."
-  },
-  "courtProBadge": "Pro",
-  "@courtProBadge": {
-    "description": "Small badge on Pro-only entries."
-  },
-  "courtAiPro": "AI analysis (Pro)",
-  "@courtAiPro": {
-    "description": "AI analysis button label for free users."
-  },
   "courtScoreSemantics": "{criterion}: {score} of 2",
   "@courtScoreSemantics": {
     "description": "Screen-reader label of a score bar.",
@@ -9515,13 +9116,9 @@
       }
     }
   },
-  "courtSimFreeNote": "Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.",
-  "@courtSimFreeNote": {
-    "description": "Simulator list note for free users."
-  },
   "courtDrill": "Role drill",
   "@courtDrill": {
-    "description": "Pro: sequential role drill."
+    "description": "Sequential role drill."
   },
   "courtDrillBody": "Judge → prosecutor → defence → another expert, one after another",
   "@courtDrillBody": {
@@ -9549,7 +9146,7 @@
   },
   "courtStats": "Statistics and history",
   "@courtStats": {
-    "description": "Pro: statistics and history."
+    "description": "Statistics and history."
   },
   "courtStatsBody": "Your scores and attempt history — stored on this device only",
   "@courtStatsBody": {
@@ -9582,7 +9179,7 @@
   },
   "courtAi": "AI analysis",
   "@courtAi": {
-    "description": "Pro: AI analysis of the answer."
+    "description": "AI analysis of the answer."
   },
   "courtAiUnavailable": "AI analysis is not connected yet — coming soon. Your answer was not sent anywhere.",
   "@courtAiUnavailable": {
@@ -10428,28 +10025,15 @@
   },
   "proSearchTitle": "Advanced search",
   "@proSearchTitle": {
-    "description": "Title of the Pro advanced search screen."
+    "description": "Title of the advanced search screen."
   },
   "proSearchEntry": "Filters and reverse lookups",
   "@proSearchEntry": {
-    "description": "Chip on the search screen that opens the Pro advanced search."
+    "description": "Chip on the search screen that opens the advanced search."
   },
   "proSearchIntro": "Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.",
   "@proSearchIntro": {
     "description": "Intro text of the advanced search screen."
-  },
-  "proSearchLockedTitle": "Advanced search — {tier}",
-  "@proSearchLockedTitle": {
-    "description": "Paywall card title on the advanced search screen. {tier} is the plan name.",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "proSearchLockedBody": "Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.",
-  "@proSearchLockedBody": {
-    "description": "Paywall card body on the advanced search screen."
   },
   "proSearchHint": "Name, synonym or \"phrase\"",
   "@proSearchHint": {
@@ -10663,19 +10247,6 @@
         "type": "int"
       }
     }
-  },
-  "planLockedTitle": "Full analysis plan — {tier}",
-  "@planLockedTitle": {
-    "description": "Paywall card title on the plan. {tier} is the plan name.",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "planLockedBody": "The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.",
-  "@planLockedBody": {
-    "description": "Paywall card body on the plan."
   },
   "planSecSpecimens": "Specimens and sampling notes",
   "@planSecSpecimens": {
@@ -11559,43 +11130,6 @@
   "@qaRulesEnforceBody": {
     "description": "Body of the enforcement section in the Q&A rules."
   },
-  "adminGrantStudent": "Grant Student Pro",
-  "@adminGrantStudent": {
-    "description": "Admin panel button that gives the Student Pro tier to an e-mail."
-  },
-  "adminGrantHint": "Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.",
-  "@adminGrantHint": {
-    "description": "Helper text under the e-mail field in the admin grant section."
-  },
-  "adminEmailInvalid": "This is not an e-mail address.",
-  "@adminEmailInvalid": {
-    "description": "Validation message for the admin grant e-mail field."
-  },
-  "adminGrantedTier": "Granted: {tier}",
-  "@adminGrantedTier": {
-    "description": "Confirmation after granting, naming the tier that was given.",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "adminRevokeConfirmTitle": "Remove access?",
-  "@adminRevokeConfirmTitle": {
-    "description": "Title of the confirmation dialog before revoking a grant."
-  },
-  "adminRevokeConfirmBody": "The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.",
-  "@adminRevokeConfirmBody": {
-    "description": "Body of the confirmation dialog before revoking a grant."
-  },
-  "adminTierStudent": "Student Pro",
-  "@adminTierStudent": {
-    "description": "Name of the Student Pro tier in the admin panel."
-  },
-  "adminTierProfessional": "Professional Pro",
-  "@adminTierProfessional": {
-    "description": "Name of the Professional Pro tier in the admin panel."
-  },
   "provOwnWordsNote": "The content of the source is given in our own words; the original text is not copied. The exact place is below.",
   "@provOwnWordsNote": {
     "description": "Note under a claim written in our own words, shown in the provenance sheet."
@@ -12195,7 +11729,7 @@
   "@admxOnlineNote": {
     "description": "Honest note: no real-time presence."
   },
-  "admxStoresTitle": "Downloads and sales",
+  "admxStoresTitle": "Downloads",
   "@admxStoresTitle": {
     "description": "Section title."
   },

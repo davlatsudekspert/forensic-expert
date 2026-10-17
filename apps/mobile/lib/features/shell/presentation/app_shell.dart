@@ -133,70 +133,86 @@ class _AppShellState extends State<AppShell> {
         label: l.navProfile,
       ),
     ];
-    return Scaffold(
-      body: Stack(
-        children: [
-          Positioned.fill(
-            child: NotificationListener<ScrollNotification>(
-              onNotification: _onScroll,
-              // Kontent menyu ostida to‘liq ko‘rinadi; SafeArea / ListView
-              // pastki padding sifatida menyu balandligini hisobga oladi.
-              child: Builder(
-                builder: (context) {
-                  final m = MediaQuery.of(context);
-                  return MediaQuery(
-                    data: m.copyWith(
-                      padding: m.padding.copyWith(bottom: reserved),
-                      viewPadding: m.viewPadding.copyWith(bottom: reserved),
-                    ),
-                    child: shell,
-                  );
-                },
-              ),
-            ),
+    final base = Theme.of(context);
+    return Theme(
+      // Snackbar suzuvchi menyuni yopib qo‘ymasligi uchun: ildiz Scaffold
+      // (ScaffoldMessenger snackbar’ni shu yerda chizadi) snackbar’ni menyu
+      // balandligicha yuqoriga suradi.
+      data: base.copyWith(
+        snackBarTheme: base.snackBarTheme.copyWith(
+          insetPadding: EdgeInsets.fromLTRB(
+            kFloatingNavSideMargin,
+            0,
+            kFloatingNavSideMargin,
+            reserved + FeSpace.xxs,
           ),
-          if (!keyboard)
-            Positioned(
-              left: 0,
-              right: 0,
-              bottom: floatingNavBottomOffset(safeBottom),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: kFloatingNavSideMargin,
-                    ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(FeRadius.lg),
-                      child: _SupportReplyBanner(
-                        hidden: shell.currentIndex == 4,
+        ),
+      ),
+      child: Scaffold(
+        body: Stack(
+          children: [
+            Positioned.fill(
+              child: NotificationListener<ScrollNotification>(
+                onNotification: _onScroll,
+                // Kontent menyu ostida to‘liq ko‘rinadi; SafeArea / ListView
+                // pastki padding sifatida menyu balandligini hisobga oladi.
+                child: Builder(
+                  builder: (context) {
+                    final m = MediaQuery.of(context);
+                    return MediaQuery(
+                      data: m.copyWith(
+                        padding: m.padding.copyWith(bottom: reserved),
+                        viewPadding: m.viewPadding.copyWith(bottom: reserved),
                       ),
-                    ),
-                  ),
-                  MediaQuery.withClampedTextScaling(
-                    maxScaleFactor: navLabelMaxTextScale(media.size.width),
-                    child: ValueListenableBuilder<bool>(
-                      valueListenable: _compact,
-                      builder: (context, compact, _) => FloatingNavBar(
-                        items: items,
-                        selected: slot,
-                        compact: compact,
-                        blur: floatingNavBlurEnabled,
-                        onSelect: (i) {
-                          final branch = AppShell.floatingBranches[i];
-                          shell.goBranch(
-                            branch,
-                            initialLocation: branch == shell.currentIndex,
-                          );
-                        },
-                      ),
-                    ),
-                  ),
-                ],
+                      child: shell,
+                    );
+                  },
+                ),
               ),
             ),
-        ],
+            if (!keyboard)
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: floatingNavBottomOffset(safeBottom),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: kFloatingNavSideMargin,
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(FeRadius.lg),
+                        child: _SupportReplyBanner(
+                          hidden: shell.currentIndex == 4,
+                        ),
+                      ),
+                    ),
+                    MediaQuery.withClampedTextScaling(
+                      maxScaleFactor: navLabelMaxTextScale(media.size.width),
+                      child: ValueListenableBuilder<bool>(
+                        valueListenable: _compact,
+                        builder: (context, compact, _) => FloatingNavBar(
+                          items: items,
+                          selected: slot,
+                          compact: compact,
+                          blur: floatingNavBlurEnabled,
+                          onSelect: (i) {
+                            final branch = AppShell.floatingBranches[i];
+                            shell.goBranch(
+                              branch,
+                              initialLocation: branch == shell.currentIndex,
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }

@@ -1,6 +1,5 @@
-/// Akkaunt (identifikatsiya) domeni. Huquq (obuna) — alohida
-/// (`billing_ports.dart`): akkaunt bo‘lishi Pro degani emas, Pro esa
-/// akkauntsiz ham store orqali bo‘lishi mumkin.
+/// Akkaunt (identifikatsiya) domeni. Hamma funksiya bepul va ochiq: akkaunt
+/// faqat sinxronlash va bulutli AI uchun.
 ///
 /// Minimal ma’lumot: faqat email. Ism, kasb, muassasa, sud-ekspert
 /// ma’lumotlari so‘ralmaydi va saqlanmaydi. Parol mijozda saqlanmaydi va

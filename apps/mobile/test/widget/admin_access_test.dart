@@ -6,7 +6,6 @@ import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/domain/admin/admin_models.dart';
 import 'package:forensic_expert/domain/ports/account_ports.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
@@ -18,7 +17,6 @@ class _FakeAccount implements AccountService {
   final ServerAccess access;
   final AdminDashboard? data;
   final devices = <String>[];
-  final grants = <(String, String?)>[];
 
   @override
   bool get isConfigured => true;
@@ -36,12 +34,6 @@ class _FakeAccount implements AccountService {
 
   @override
   Future<AdminDashboard?> dashboard() async => access.isAdmin ? data : null;
-
-  @override
-  Future<AdminGrantResult> setAccess(String email, String? tier) async {
-    grants.add((email, tier));
-    return AdminGrantResult.granted;
-  }
 }
 
 final _dash = AdminDashboard.fromJson({
@@ -58,33 +50,17 @@ final _dash = AdminDashboard.fromJson({
       'email': 'expert@lab.uz',
       'platforms': 'android',
       'region': 'UZ',
-      'tier': 'professionalPro',
       'is_admin': true,
     },
   ],
 });
 
 void main() {
-  group('server grant', () {
-    test('grant store’dan yuqori bo‘lsa — Pro (server tasdiqlagan)', () {
-      final e = mergeServerGrant(
-        Entitlements.free,
-        const ServerAccess(tier: PlanTier.professionalPro),
-      );
-      expect(e.effectiveTier, PlanTier.professionalPro);
-      expect(e.verification, EntitlementVerification.serverVerified);
-      expect(
-        mergeServerGrant(Entitlements.free, ServerAccess.none),
-        same(Entitlements.free),
-      );
-      expect(
-        ServerAccess.fromJson({'tier': 'hacker', 'is_admin': 'yes'}).tier,
-        isNull,
-      );
-      expect(
-        ServerAccess.fromJson({'tier': 'hacker', 'is_admin': 'yes'}).isAdmin,
-        isFalse,
-      );
+  group('server access', () {
+    test('admin faqat server javobidan; begona qiymat admin bermaydi', () {
+      expect(ServerAccess.fromJson({'is_admin': true}).isAdmin, isTrue);
+      expect(ServerAccess.fromJson({'is_admin': 'yes'}).isAdmin, isFalse);
+      expect(ServerAccess.none.isAdmin, isFalse);
     });
   });
 
@@ -109,7 +85,7 @@ void main() {
   });
 
   testWidgets(
-    'admin: Profil’da panel va statistika; «Pro berish» bo‘limi yo‘q',
+    'admin: Profil’da panel va statistika; tarif berish bo‘limi yo‘q',
     (tester) async {
       final acc = _FakeAccount(
         access: const ServerAccess(isAdmin: true),
@@ -143,7 +119,6 @@ void main() {
           reason: k,
         );
       }
-      expect(acc.grants, isEmpty);
     },
   );
 

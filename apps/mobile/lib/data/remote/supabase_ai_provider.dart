@@ -2,9 +2,9 @@ import 'dart:async';
 import 'dart:io';
 
 import '../../domain/ai/ai_architecture.dart';
+import '../../domain/ports/ai_entitlement.dart';
 import '../../domain/ports/ai_ports.dart';
 import '../../domain/ports/backend_ports.dart';
-import '../../domain/ports/billing_ports.dart';
 import 'supabase_rest.dart';
 
 /// Gemini — faqat server orqali (`supabase/functions/ai-answer`).

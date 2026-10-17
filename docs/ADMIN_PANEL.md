@@ -22,6 +22,11 @@ Yangilangan: 2026-10-09; kengaytma 2026-10-17 (§9). Migratsiya: `supabase/migra
   tablarda pastki banner («Ko‘rish» / yashirish). Push/email hozir YO‘Q (§6).
 
 **Admin (faqat server `my_access.is_admin` = identity_admin)**
+> **2026-10-17 yangilanish:** ilovada Pro/tarif qatlami butunlay olib tashlangan (egasi qarori: hamma funksiya
+> bepul). Quyidagi «Pro berish/sovg‘a», «tarif saralash» va «Pro (server ruxsati)» kartasi **ilovada yo‘q**;
+> mijoz kodi `admin_set_access`/`p_tier` ni chaqirmaydi. Server tomonidagi SQL funksiyalar o‘zgartirilmagan
+> (deploy yo‘q) — ularni keyingi migratsiyada olib tashlash mumkin (`docs/BACKLOG.md`). Quyidagi matn tarixiy.
+
 - Boshqaruv paneli: bo‘limlar (Murojaatlar qutisi, Foydalanuvchilar, Amallar
   jurnali, Maqolalar moderatsiyasi), `admin_stats()` kartalari, 14 kunlik ustunli
   diagramma (ro‘yxatdan o‘tish + AI savollari), turkumlar bo‘yicha ustunlar, eski

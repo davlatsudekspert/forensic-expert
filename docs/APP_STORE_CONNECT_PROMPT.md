@@ -20,7 +20,7 @@ ruxsat alohida beriladi. Hozirgi maqsad — TestFlight orqali ichki sinov.
 build raqami **168** (148 emas).
 TestFlight’da ikkita build ko‘rinsa, **eng kattasini** oling: unda bugungi
 to‘rtta tuzatish bor (klaviatura, kichik ekranlar, Savol-javob qoidalari).
-Qaror 2026-10-17: ilovada to‘lov/Pro qatlami yo‘q — hamma funksiya bepul va ochiq.
+Qaror 2026-10-17: ilovada to‘lov qatlami yo‘q — hamma funksiya bepul va ochiq.
 
 ### 1. App Information
 
@@ -41,7 +41,7 @@ Qaror 2026-10-17: ilovada to‘lov/Pro qatlami yo‘q — hamma funksiya bepul v
 
 ### 2. Pricing and Availability
 
-- **Price:** Free. Ilovada ilova ichida xaridlar (In-App Purchase), obunalar va Pro tarif YO‘Q — hamma funksiya bepul va ochiq (egasi qarori, 2026-10-17). ASC’da In-App Purchases / Subscriptions bo‘limini bo‘sh qoldiring.
+- **Price:** Free. Ilovada ilova ichida xaridlar (In-App Purchase), obunalar va tariflar YO‘Q — hamma funksiya bepul va ochiq (egasi qarori, 2026-10-17). ASC’da In-App Purchases / Subscriptions bo‘limini bo‘sh qoldiring.
 - **Availability:** barcha mamlakatlar (yoki egasi aytgan ro‘yxat).
 
 ### 3. App Privacy

@@ -8,14 +8,20 @@
 // qulf ikonkasi va paywall yo‘li ham.
 //
 // Muhit: QA_LANG=uz|ru|en  QA_OUT=<katalog>  QA_MODE=student|professional
+//   QA_MODE=admin — ADMIN: panel, murojaatlar, foydalanuvchilar, jurnal (FIXTURE).
 //   QA_LANG=ru ./tool/qa_real_app.sh nopaywall
 import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/app/account.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/app/support.dart';
+import 'package:forensic_expert/core/settings/settings_controller.dart';
+import 'package:forensic_expert/data/support/in_memory_support_service.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
+import 'package:forensic_expert/domain/support/support_models.dart';
 import 'package:integration_test/integration_test.dart';
 
 import 'qa/harness.dart';
@@ -42,17 +48,46 @@ void main() {
   ) async {
     final net = NoNetworkOverrides();
     HttpOverrides.global = net;
+    final admin = mode == 'admin';
+    final support = InMemorySupportService(isAdmin: true, stats: qaAdminStats)
+      ..users.addAll(qaAdminUsers());
+    if (admin) {
+      support.seedThread(
+        category: SupportCategory.suggestion,
+        subject: 'Taklif',
+        body: 'Sinov murojaati.',
+        authorEmail: 'student@example.test',
+      );
+    }
     final qa = await launchRealApp(
       tester,
       role: 'nopaywall',
+      overrides: admin
+          ? [
+              accountServiceProvider.overrideWithValue(
+                QaAccountService(admin: true),
+              ),
+              supportServiceProvider.overrideWithValue(support),
+            ]
+          : const [],
       prefs: {
-        'fe.settings.locale': lang,
+        // ADMIN: kirish ekrani o‘zbekcha yuritiladi, so‘ng til almashtiriladi.
+        'fe.settings.locale': admin ? 'uz' : lang,
         'fe.settings.theme': 'light',
-        'fe.settings.mode': mode,
+        'fe.settings.mode': admin ? 'professional' : mode,
         'fe.settings.disclaimer_version': 1,
       },
     );
     qa.lang = lang;
+    if (admin) {
+      goTo(tester, Routes.accountEmailCode);
+      await qa.settle();
+      await mockSignIn(qa, tester, 'qa.admin@example.test');
+      await containerOf(tester)
+          .read(settingsControllerProvider.notifier)
+          .setLocale(Locale(lang));
+      await qa.settle();
+    }
 
     /// Joriy ekranni tepadan pastgacha aylantirib, ko‘ringan barcha matn va
     /// tile kalitlarini yig‘adi.
@@ -114,6 +149,18 @@ void main() {
         .read(libraryRepositoryProvider)
         .entries(LibrarySection.substances);
 
+    if (admin) {
+      await checkScreen('ADMIN Profil', Routes.profile);
+      await checkScreen('ADMIN Boshqaruv paneli', Routes.admin);
+      await checkScreen('ADMIN Murojaatlar qutisi', Routes.adminInbox);
+      await checkScreen('ADMIN Foydalanuvchilar', Routes.adminUsers);
+      await checkScreen('ADMIN Amallar jurnali', Routes.adminAudit);
+      await checkScreen('ADMIN Hisobotlar', Routes.adminReports);
+      await checkScreen(
+        'ADMIN Tasdiqlash arizalari',
+        Routes.adminVerifications,
+      );
+    }
     await checkScreen('Asosiy', Routes.home);
     await checkScreen('Kutubxona (markaz)', Routes.library);
 

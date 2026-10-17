@@ -1438,30 +1438,6 @@ abstract class AppLocalizations {
   /// **'The app version and the scientific database version are tracked separately.'**
   String get aboutVersions;
 
-  /// Banner.
-  ///
-  /// In en, this message translates to:
-  /// **'The App Store / Google Play is not connected in this build. Prices and purchases appear only when the store provides them.'**
-  String get storeNotConnected;
-
-  /// Button.
-  ///
-  /// In en, this message translates to:
-  /// **'Restore purchases'**
-  String get restorePurchases;
-
-  /// Snackbar.
-  ///
-  /// In en, this message translates to:
-  /// **'No active subscriptions to restore.'**
-  String get restoreNothing;
-
-  /// Subscription principle.
-  ///
-  /// In en, this message translates to:
-  /// **'Disclaimers, limitations and sources are never behind a paywall.'**
-  String get subscriptionSafetyNote;
-
   /// Module hub section.
   ///
   /// In en, this message translates to:
@@ -1557,54 +1533,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Change jurisdiction'**
   String get detailChangeJurisdiction;
-
-  /// Paywall title.
-  ///
-  /// In en, this message translates to:
-  /// **'Plans'**
-  String get purchaseTitle;
-
-  /// Locked-content button.
-  ///
-  /// In en, this message translates to:
-  /// **'See plans'**
-  String get purchaseCta;
-
-  /// Tier name.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get purchaseFreeTitle;
-
-  /// Free tier summary.
-  ///
-  /// In en, this message translates to:
-  /// **'Core offline reference, search and basic calculators — no account required.'**
-  String get purchaseFreeBody;
-
-  /// Paywall note.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional AI features become available only when the AI service is connected; limits will be stated before purchase.'**
-  String get purchaseAiNote;
-
-  /// Snackbar after restore.
-  ///
-  /// In en, this message translates to:
-  /// **'Your subscription is active'**
-  String get purchaseOwned;
-
-  /// Purchase tapped while store unavailable.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchases are not available in this build.'**
-  String get purchaseUnavailableSnack;
-
-  /// Plan name.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get accessFree;
 
   /// Home review notice.
   ///
@@ -1786,36 +1714,6 @@ abstract class AppLocalizations {
   /// **'No national legal content has been loaded for {name} yet.'**
   String legalNoNational(String name);
 
-  /// Locked content title.
-  ///
-  /// In en, this message translates to:
-  /// **'Included in Student Pro and Professional Pro'**
-  String get lockedTitle;
-
-  /// Locked content body.
-  ///
-  /// In en, this message translates to:
-  /// **'Names, warnings and sources stay open. Scientific details and the jurisdiction layer unlock with a paid plan.'**
-  String get lockedBody;
-
-  /// Access chip on a free entry (permanently free, not a time-limited demo).
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get freeDemoBadge;
-
-  /// Badge.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro'**
-  String get lockedBadge;
-
-  /// Search.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} more results with a paid plan'**
-  String searchMoreLocked(int count);
-
   /// No real courses yet.
   ///
   /// In en, this message translates to:
@@ -1834,53 +1732,11 @@ abstract class AppLocalizations {
   /// **'The scientific database is not installed in this build.'**
   String get libraryNotInstalled;
 
-  /// Store pending.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchase is waiting for confirmation from the store.'**
-  String get purchasePending;
-
-  /// Purchase failed.
-  ///
-  /// In en, this message translates to:
-  /// **'The purchase was not completed.'**
-  String get purchaseFailed;
-
-  /// Purchase cancelled.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchase cancelled.'**
-  String get purchaseCancelled;
-
-  /// Snackbar.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription activated. Thank you!'**
-  String get purchaseSuccess;
-
   /// Brand status.
   ///
   /// In en, this message translates to:
   /// **'Name and logo: trademark clearance pending.'**
   String get aboutTrademarkPending;
-
-  /// Diagnostics.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription: none confirmed by the store'**
-  String get diagPurchaseNone;
-
-  /// Diagnostics.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription: confirmed by the store only — server verification not connected (release blocker)'**
-  String get diagPurchaseStore;
-
-  /// Diagnostics.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription: verified by the server'**
-  String get diagPurchaseServer;
 
   /// Scientific status: draft, not yet submitted for review.
   ///
@@ -2014,7 +1870,7 @@ abstract class AppLocalizations {
   /// **'Sourced statements'**
   String get knowledgeStatements;
 
-  /// Section: limitations and safety (never paywalled).
+  /// Section: limitations and safety (always open).
   ///
   /// In en, this message translates to:
   /// **'Limitations & safety'**
@@ -6151,7 +6007,7 @@ abstract class AppLocalizations {
   /// Dialog.
   ///
   /// In en, this message translates to:
-  /// **'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database, your account and store subscriptions are not affected — use “Delete account” to delete the account.'**
+  /// **'Bookmarks, search history, recently viewed records and lesson progress will be deleted from this device only. The scientific database and your account are not affected — use “Delete account” to delete the account.'**
   String get deleteLocalDataBody;
 
   /// Button.
@@ -6165,216 +6021,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Local data deleted'**
   String get deleteLocalDataDone;
-
-  /// Tier name.
-  ///
-  /// In en, this message translates to:
-  /// **'Student Pro'**
-  String get tierStudentPro;
-
-  /// Tier name.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional Pro'**
-  String get tierProfessionalPro;
-
-  /// Tier name.
-  ///
-  /// In en, this message translates to:
-  /// **'Institution'**
-  String get tierInstitution;
-
-  /// Badge.
-  ///
-  /// In en, this message translates to:
-  /// **'Current plan'**
-  String get tierCurrent;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Offline scientific database with safety warnings and sources'**
-  String get tierFreeF1;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Search and selected reference entries'**
-  String get tierFreeF2;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Basic calculators'**
-  String get tierFreeF3;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Full reference: substances, methods, reagents, forensic medicine, standards, jurisdictions'**
-  String get tierStudentF1;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'All courses, quizzes, flashcards and exam practice'**
-  String get tierStudentF2;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Unlimited search results'**
-  String get tierStudentF3;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Everything in Student Pro'**
-  String get tierProF1;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional calculators and laboratory tools'**
-  String get tierProF2;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Analytical methods, research and evidence tools'**
-  String get tierProF3;
-
-  /// Feature.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional AI features — when the AI service is connected'**
-  String get tierProF4;
-
-  /// Billing period.
-  ///
-  /// In en, this message translates to:
-  /// **'Monthly'**
-  String get periodMonthly;
-
-  /// Billing period.
-  ///
-  /// In en, this message translates to:
-  /// **'Yearly'**
-  String get periodYearly;
-
-  /// Billing period.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription'**
-  String get periodUnknown;
-
-  /// Price line.
-  ///
-  /// In en, this message translates to:
-  /// **'{price} · {period}'**
-  String offerPriceLine(String price, String period);
-
-  /// Button.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscribe'**
-  String get offerSubscribe;
-
-  /// Note.
-  ///
-  /// In en, this message translates to:
-  /// **'Price is shown by the App Store / Google Play'**
-  String get offerPriceFromStore;
-
-  /// Apple/Google required disclosure.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscriptions renew automatically until cancelled. Payment is charged to your App Store / Google Play account. You can cancel at least 24 hours before the end of the period in your store account settings.'**
-  String get subscriptionTerms;
-
-  /// Button.
-  ///
-  /// In en, this message translates to:
-  /// **'Manage subscription'**
-  String get manageSubscription;
-
-  /// Snackbar.
-  ///
-  /// In en, this message translates to:
-  /// **'Could not open the store subscription settings.'**
-  String get manageSubscriptionFailed;
-
-  /// Profile row.
-  ///
-  /// In en, this message translates to:
-  /// **'Plan'**
-  String get planLabel;
-
-  /// Profile row.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription status'**
-  String get subscriptionStateLabel;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Active'**
-  String get stActive;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Expired'**
-  String get stExpired;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Payment issue — grace period'**
-  String get stGrace;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Payment issue — access paused'**
-  String get stBillingRetry;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Cancelled — active until {date}'**
-  String stCancelled(String date);
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Cancelled — active until the end of the period'**
-  String get stCancelledNoDate;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Revoked by the store'**
-  String get stRevoked;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'Status unknown'**
-  String get stUnknown;
-
-  /// Status.
-  ///
-  /// In en, this message translates to:
-  /// **'No subscription'**
-  String get stNone;
-
-  /// Status detail.
-  ///
-  /// In en, this message translates to:
-  /// **'Renews or ends on {date}'**
-  String stRenewsOn(String date);
 
   /// Profile note.
   ///
@@ -6727,12 +6373,6 @@ abstract class AppLocalizations {
   /// Body.
   ///
   /// In en, this message translates to:
-  /// **'Deleting the account does not cancel an App Store / Google Play subscription. Cancel it in your store account settings to stop future charges.'**
-  String get deleteAccountStoreNote;
-
-  /// Body.
-  ///
-  /// In en, this message translates to:
   /// **'Data on this device (bookmarks, history) is a separate action: “Delete data on this device”.'**
   String get deleteAccountLocalNote;
 
@@ -6783,12 +6423,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Account'**
   String get accountSection;
-
-  /// Section.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription'**
-  String get subscriptionSection;
 
   /// Empty state.
   ///
@@ -7341,12 +6975,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Synchronisation between devices'**
   String get accountNeedSync;
-
-  /// Item.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscriptions across devices'**
-  String get accountNeedSubscriptions;
 
   /// Item.
   ///
@@ -8643,30 +8271,6 @@ abstract class AppLocalizations {
   /// **'Pending'**
   String get referralStatPending;
 
-  /// Stat.
-  ///
-  /// In en, this message translates to:
-  /// **'FORENSIC Credits'**
-  String get referralStatCredits;
-
-  /// Pending credits line.
-  ///
-  /// In en, this message translates to:
-  /// **'{amount} credits awaiting confirmation'**
-  String referralCreditsPending(String amount);
-
-  /// Credits note (rewards not live).
-  ///
-  /// In en, this message translates to:
-  /// **'When paid services launch, eligible purchases by colleagues you invite may earn you FORENSIC Credits — {percent}% of the purchase value. Credits are an internal promotional bonus, not cash, and are not awarded for registration.'**
-  String referralCreditsFuture(String percent);
-
-  /// Credits note (rewards live).
-  ///
-  /// In en, this message translates to:
-  /// **'You receive FORENSIC Credits worth {percent}% of eligible purchases by colleagues you invite. Credits are confirmed after the refund period. They are an internal promotional bonus, not cash.'**
-  String referralCreditsActive(String percent);
-
   /// Privacy note.
   ///
   /// In en, this message translates to:
@@ -8919,12 +8523,6 @@ abstract class AppLocalizations {
   /// **'Open-access article (PubMed Central via Europe PMC). Opens in your device’s PDF viewer or browser.'**
   String get fullTextPdfNote;
 
-  /// Locked note.
-  ///
-  /// In en, this message translates to:
-  /// **'Downloading full-text PDFs is available with Pro.'**
-  String get fullTextPdfPro;
-
   /// Snackbar.
   ///
   /// In en, this message translates to:
@@ -8991,12 +8589,6 @@ abstract class AppLocalizations {
   /// **'Referrals'**
   String get adminReferrals;
 
-  /// Stat.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro granted'**
-  String get adminProGrants;
-
   /// Section.
   ///
   /// In en, this message translates to:
@@ -9026,48 +8618,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Contains personal data (emails). Do not share screenshots.'**
   String get adminPrivacyNote;
-
-  /// Section.
-  ///
-  /// In en, this message translates to:
-  /// **'Give or remove Pro'**
-  String get adminGrantTitle;
-
-  /// Field.
-  ///
-  /// In en, this message translates to:
-  /// **'User email'**
-  String get adminEmail;
-
-  /// Action.
-  ///
-  /// In en, this message translates to:
-  /// **'Give Professional Pro'**
-  String get adminGrantPro;
-
-  /// Action.
-  ///
-  /// In en, this message translates to:
-  /// **'Remove'**
-  String get adminRevoke;
-
-  /// Result.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro granted.'**
-  String get adminGranted;
-
-  /// Result.
-  ///
-  /// In en, this message translates to:
-  /// **'Access removed.'**
-  String get adminRevoked;
-
-  /// Result.
-  ///
-  /// In en, this message translates to:
-  /// **'No user with this email.'**
-  String get adminNotFound;
 
   /// Result.
   ///
@@ -10251,12 +9801,6 @@ abstract class AppLocalizations {
   /// **'Edit draft'**
   String get pubEditTitle;
 
-  /// Note.
-  ///
-  /// In en, this message translates to:
-  /// **'A paid subscription does not affect moderation.'**
-  String get pubPaidNote;
-
   /// Field error.
   ///
   /// In en, this message translates to:
@@ -11382,18 +10926,6 @@ abstract class AppLocalizations {
   /// Stat card.
   ///
   /// In en, this message translates to:
-  /// **'Pro (server grants)'**
-  String get admStatPro;
-
-  /// Stat card.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get admStatFree;
-
-  /// Stat card.
-  ///
-  /// In en, this message translates to:
   /// **'Requests awaiting reply'**
   String get admStatAwaiting;
 
@@ -11438,12 +10970,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Active = signed in, opened the app (device check-in) or asked the AI within the window.'**
   String get admActiveNote;
-
-  /// Definition of Pro count.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro counts server grants only; store purchases are verified on the device.'**
-  String get admProNote;
 
   /// Chart title.
   ///
@@ -11600,24 +11126,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Moderators'**
   String get admRoleModerator;
-
-  /// Filter chip.
-  ///
-  /// In en, this message translates to:
-  /// **'Any plan'**
-  String get admTierAny;
-
-  /// Filter chip.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get admTierFree;
-
-  /// Filter chip.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro plan'**
-  String get admTierPro;
 
   /// Empty list.
   ///
@@ -11949,18 +11457,6 @@ abstract class AppLocalizations {
   /// **'Estimated range'**
   String get calcEstimatedRange;
 
-  /// Locked calculator card title.
-  ///
-  /// In en, this message translates to:
-  /// **'Included in Expert Pro'**
-  String get calcLockedTitle;
-
-  /// Locked calculator card body.
-  ///
-  /// In en, this message translates to:
-  /// **'This calculator opens with the Expert Pro plan. Dilution and the concentration unit converter are free.'**
-  String get calcLockedBody;
-
   /// Note under LOD/LOQ result.
   ///
   /// In en, this message translates to:
@@ -12056,12 +11552,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'+{count} more'**
   String rdGlanceMore(int count);
-
-  /// Summary card when details are locked: what is behind Pro (counts only).
-  ///
-  /// In en, this message translates to:
-  /// **'Details below open with Pro. Names, warnings and sources stay free.'**
-  String get rdGlanceLockedHint;
 
   /// Semantics hint: tap to jump to a section on this page.
   ///
@@ -12909,43 +12399,13 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 scenario} other{{count} scenarios}}'**
   String courtScenarioCount(int count);
 
-  /// Pro features card title.
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced preparation in {tier}'**
-  String courtProTitle(String tier);
-
-  /// Pro features card body.
-  ///
-  /// In en, this message translates to:
-  /// **'Full simulator (all scenarios), sequential role drills, AI analysis (coming soon), personal statistics and history. Q&A cards with sources are free for everyone.'**
-  String get courtProBody;
-
-  /// Small badge on Pro-only entries.
-  ///
-  /// In en, this message translates to:
-  /// **'Pro'**
-  String get courtProBadge;
-
-  /// AI analysis button label for free users.
-  ///
-  /// In en, this message translates to:
-  /// **'AI analysis (Pro)'**
-  String get courtAiPro;
-
   /// Screen-reader label of a score bar.
   ///
   /// In en, this message translates to:
   /// **'{criterion}: {score} of 2'**
   String courtScoreSemantics(String criterion, int score);
 
-  /// Simulator list note for free users.
-  ///
-  /// In en, this message translates to:
-  /// **'Free: basic scenarios. The other scenarios, role drills and statistics are in Pro.'**
-  String get courtSimFreeNote;
-
-  /// Pro: sequential role drill.
+  /// Sequential role drill.
   ///
   /// In en, this message translates to:
   /// **'Role drill'**
@@ -12975,7 +12435,7 @@ abstract class AppLocalizations {
   /// **'Role drill complete'**
   String get courtDrillDone;
 
-  /// Pro: statistics and history.
+  /// Statistics and history.
   ///
   /// In en, this message translates to:
   /// **'Statistics and history'**
@@ -13017,7 +12477,7 @@ abstract class AppLocalizations {
   /// **'Clear history'**
   String get courtStatsClear;
 
-  /// Pro: AI analysis of the answer.
+  /// AI analysis of the answer.
   ///
   /// In en, this message translates to:
   /// **'AI analysis'**
@@ -14103,13 +13563,13 @@ abstract class AppLocalizations {
   /// **'Based on the source (not a direct quotation)'**
   String get detailSourcedStatement;
 
-  /// Title of the Pro advanced search screen.
+  /// Title of the advanced search screen.
   ///
   /// In en, this message translates to:
   /// **'Advanced search'**
   String get proSearchTitle;
 
-  /// Chip on the search screen that opens the Pro advanced search.
+  /// Chip on the search screen that opens the advanced search.
   ///
   /// In en, this message translates to:
   /// **'Filters and reverse lookups'**
@@ -14120,18 +13580,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Narrow the offline pack by specimen, method, reagent, evidence level and more, or go from a specimen, method or reagent to the substances documented for it.'**
   String get proSearchIntro;
-
-  /// Paywall card title on the advanced search screen. {tier} is the plan name.
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced search — {tier}'**
-  String proSearchLockedTitle(String tier);
-
-  /// Paywall card body on the advanced search screen.
-  ///
-  /// In en, this message translates to:
-  /// **'Filters (discipline, class, specimen, method, reagent, evidence, review status, jurisdiction, year), exact-phrase search and reverse lookups need a paid plan. The regular search stays available to everyone.'**
-  String get proSearchLockedBody;
 
   /// Hint of the advanced search text field.
   ///
@@ -14378,18 +13826,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Specimens: {s} · Presumptive tests: {p} · Confirmation: {c} · Limits: {l}'**
   String planSummary(int s, int p, int c, int l);
-
-  /// Paywall card title on the plan. {tier} is the plan name.
-  ///
-  /// In en, this message translates to:
-  /// **'Full analysis plan — {tier}'**
-  String planLockedTitle(String tier);
-
-  /// Paywall card body on the plan.
-  ///
-  /// In en, this message translates to:
-  /// **'The free preview shows the counts and the specimens. The paid plan adds presumptive tests with reagents, bench and confirmation steps, interferences, limits, the note for your conclusion and a copyable text with full citations.'**
-  String get planLockedBody;
 
   /// Plan section title.
   ///
@@ -15567,54 +15003,6 @@ abstract class AppLocalizations {
   /// **'Text that looks like case material is held for review automatically. Reports from three different users hide a post, or suspend a specialist badge, until an administrator decides. A post that works against the law is removed and the badge goes with it.'**
   String get qaRulesEnforceBody;
 
-  /// Admin panel button that gives the Student Pro tier to an e-mail.
-  ///
-  /// In en, this message translates to:
-  /// **'Grant Student Pro'**
-  String get adminGrantStudent;
-
-  /// Helper text under the e-mail field in the admin grant section.
-  ///
-  /// In en, this message translates to:
-  /// **'Enter the e-mail the person signed in with. The account must already exist; an invitation is not sent from here.'**
-  String get adminGrantHint;
-
-  /// Validation message for the admin grant e-mail field.
-  ///
-  /// In en, this message translates to:
-  /// **'This is not an e-mail address.'**
-  String get adminEmailInvalid;
-
-  /// Confirmation after granting, naming the tier that was given.
-  ///
-  /// In en, this message translates to:
-  /// **'Granted: {tier}'**
-  String adminGrantedTier(String tier);
-
-  /// Title of the confirmation dialog before revoking a grant.
-  ///
-  /// In en, this message translates to:
-  /// **'Remove access?'**
-  String get adminRevokeConfirmTitle;
-
-  /// Body of the confirmation dialog before revoking a grant.
-  ///
-  /// In en, this message translates to:
-  /// **'The person loses the paid sections at once. A purchase made in the store is not affected — only a grant given from here.'**
-  String get adminRevokeConfirmBody;
-
-  /// Name of the Student Pro tier in the admin panel.
-  ///
-  /// In en, this message translates to:
-  /// **'Student Pro'**
-  String get adminTierStudent;
-
-  /// Name of the Professional Pro tier in the admin panel.
-  ///
-  /// In en, this message translates to:
-  /// **'Professional Pro'**
-  String get adminTierProfessional;
-
   /// Note under a claim written in our own words, shown in the provenance sheet.
   ///
   /// In en, this message translates to:
@@ -16464,7 +15852,7 @@ abstract class AppLocalizations {
   /// Section title.
   ///
   /// In en, this message translates to:
-  /// **'Downloads and sales'**
+  /// **'Downloads'**
   String get admxStoresTitle;
 
   /// Honest note about downloads.

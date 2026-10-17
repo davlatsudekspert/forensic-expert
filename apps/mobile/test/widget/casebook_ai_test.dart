@@ -5,8 +5,8 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/domain/ai/rag_pipeline.dart';
 import 'package:forensic_expert/domain/casebook/casebook_models.dart';
+import 'package:forensic_expert/domain/ports/ai_entitlement.dart';
 import 'package:forensic_expert/domain/ports/ai_ports.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';

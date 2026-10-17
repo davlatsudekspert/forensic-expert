@@ -5,10 +5,9 @@ import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/data/auth/mock_auth_repository.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 
-/// Release: akkaunt va obuna ekranlari (MOCK backend, TEST narx).
+/// Release: akkaunt ekranlari (MOCK backend).
 /// Nusxa: `docs/screenshots/release/`.
 void main() {
   Future<MockAuthRepository> signedIn() async {
@@ -30,7 +29,6 @@ void main() {
           ThemeMode theme,
           String route,
           bool auth,
-          FakeStore store,
           Key? scrollTo,
         })
       >[
@@ -40,7 +38,6 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.accountRegister,
           auth: false,
-          store: FakeStore(),
           scrollTo: null,
         ),
         (
@@ -49,7 +46,6 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.accountSignIn,
           auth: false,
-          store: FakeStore(),
           scrollTo: null,
         ),
         (
@@ -58,7 +54,6 @@ void main() {
           theme: ThemeMode.dark,
           route: Routes.accountVerify,
           auth: false,
-          store: FakeStore(),
           scrollTo: null,
         ),
         (
@@ -67,7 +62,6 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.profile,
           auth: true,
-          store: FakeStore(),
           scrollTo: const Key('profile.deleteAccount'),
         ),
         (
@@ -76,7 +70,6 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.accountDelete,
           auth: true,
-          store: FakeStore(),
           scrollTo: null,
         ),
         (
@@ -85,7 +78,6 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.profile,
           auth: false,
-          store: FakeStore(),
           scrollTo: const Key('profile.emailCode'),
         ),
       ];

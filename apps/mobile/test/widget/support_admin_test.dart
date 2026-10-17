@@ -97,6 +97,11 @@ void main() {
       c.read(routerProvider).go(Routes.home);
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('support.replyBanner')), findsOneWidget);
+      // «Yuborildi» snackbar’i (4 s) bannerni vaqtincha yopib turadi.
+      ScaffoldMessenger.of(
+        tester.element(find.byKey(const Key('support.replyBanner'))),
+      ).clearSnackBars();
+      await tester.pumpAndSettle();
       await _tap(tester, find.byKey(const Key('support.replyBanner.open')));
       expect(find.byKey(const Key('support.list')), findsOneWidget);
       await _tap(

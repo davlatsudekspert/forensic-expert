@@ -4,7 +4,7 @@ import '../../core/l10n/generated/app_localizations.dart';
 import '../../domain/pro/analysis_plan.dart';
 import '../../domain/pro/pro_search.dart';
 
-/// Pro vositalar matnlari (ARB: `l10n_pro_tools.py`).
+/// Kengaytirilgan qidiruv va tahlil rejasi matnlari (ARB: `l10n_pro_tools.py`).
 extension ProStrings on AppLocalizations {
   String familyName(MethodFamily f) => proFamilyName(f.name);
 

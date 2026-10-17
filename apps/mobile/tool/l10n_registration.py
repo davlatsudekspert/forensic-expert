@@ -68,7 +68,6 @@ k("accountNeededFor","Section.","An account is needed for","Учётная за�
 k("accountNeedVerification","Item.","Professional verification","Профессионального подтверждения","Professional maqomni tasdiqlash")
 k("accountNeedReviews","Item.","Professional reviews of scientific content","Профессиональных рецензий научных материалов","Ilmiy materiallarga mutaxassis taqrizi")
 k("accountNeedSync","Item.","Synchronisation between devices","Синхронизации между устройствами","Qurilmalar o‘rtasida sinxronlash")
-k("accountNeedSubscriptions","Item.","Subscriptions across devices","Подписок на нескольких устройствах","Bir nechta qurilmada obuna")
 k("accountNeedCloudAi","Item.","Cloud AI (when connected)","Облачного ИИ (после подключения)","Bulutli AI (ulanganda)")
 k("accountNeedInstitution","Item.","Institutional features","Функций для организаций","Muassasa funksiyalari")
 k("accountFillProfile","Action.","Fill in profile now (optional)","Заполнить профиль сейчас (необязательно)","Profilni hozir to‘ldirish (ixtiyoriy)")

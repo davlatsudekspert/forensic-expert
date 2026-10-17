@@ -528,7 +528,7 @@ class CourtQuestionScreen extends ConsumerWidget {
   }
 }
 
-/// Halollik tamoyillari — hamma uchun ochiq (pullik devor ortida emas).
+/// Halollik tamoyillari — hamma uchun ochiq (hamma uchun bepul).
 class CourtPrinciplesScreen extends ConsumerWidget {
   const CourtPrinciplesScreen({super.key});
 

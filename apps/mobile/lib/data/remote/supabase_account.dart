@@ -69,20 +69,4 @@ class SupabaseAccountService implements AccountService {
     final r = await _rpc('admin_dashboard', const {});
     return r != null && r.ok ? AdminDashboard.fromJson(r.map) : null;
   }
-
-  @override
-  Future<AdminGrantResult> setAccess(String email, String? tier) async {
-    final r = await _rpc('admin_set_access', {
-      'p_email': email.trim(),
-      'p_tier': tier,
-    });
-    if (r == null || !r.ok) return AdminGrantResult.failed;
-    return switch (r.json) {
-      'GRANTED' => AdminGrantResult.granted,
-      'REVOKED' => AdminGrantResult.revoked,
-      'NOT_FOUND' => AdminGrantResult.notFound,
-      'INVALID_TIER' => AdminGrantResult.invalid,
-      _ => AdminGrantResult.failed,
-    };
-  }
 }
