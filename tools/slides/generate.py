@@ -171,10 +171,20 @@ def call_api(client, system, user):
             'Har slaydda 3-4 band (<=220 belgi); diagram:true bo\'lsa diagram to\'ldirilsin.'}],
             12000, f"slides{i // 3 + 1}")
         slides += r["slides"]
-    tail = _json_call(client, system, [src, {"type": "text", "text":
-        'BOSQICH 3. Faqat JSON: {"mcq":[20 ta savol, barcha bo\'limlarni qamrasin, kamida 30% vaziyatli (qo\'llash) savol, har savolda FAQAT bitta narsa so\'ralsin, variantlar uzunligi teng, to\'g\'ri javob o\'rni A/B/C/D bo\'ylab teng taqsimlansin: {"question","options":[4 ta],"correct_index","explanation","source":{"author","title","page"}}],'
-        '"extras":[3-5 ta qiziqarli fakt/voqea tahlili/eslab qolish usuli: {"text","source":{"author","title","page"}}]}'}],
-        14000, "tail")
+    n = len(slides)
+    mcq = []
+    for k, (lo, hi) in enumerate([(0, n // 2), (n // 2, n)], 1):
+        titles = [s.get("title", "") for s in slides[lo:hi]]
+        r = _json_call(client, system, [src, {"type": "text", "text":
+            f'BOSQICH 3.{k}. Faqat JSON: {{"mcq":[10 ta savol, FAQAT quyidagi slaydlar mavzulari bo\'yicha: {json.dumps(titles, ensure_ascii=False)}; '
+            'kamida 3 tasi vaziyatli (qo\'llash) savol; har savolda FAQAT bitta narsa so\'ralsin; variantlar uzunligi teng; to\'g\'ri javob o\'rni A/B/C/D bo\'ylab teng taqsimlansin; '
+            'har biri: {"question","options":[4 ta],"correct_index","explanation","source":{"author","title","page"}}]}}'}],
+            7000, f"mcq{k}")
+        mcq += r["mcq"]
+    ex = _json_call(client, system, [src, {"type": "text", "text":
+        'BOSQICH 3.3. Faqat JSON: {"extras":[3-5 ta qiziqarli fakt/hodisa tahlili/eslab qolish usuli, manbali: {"text","source":{"author","title","page"}}]}'}],
+        3000, "extras")
+    tail = {"mcq": mcq, "extras": ex.get("extras", [])}
     return {"topic": plan.get("topic", ""), "slides": slides, "mcq": tail["mcq"], "extras": tail.get("extras", [])}
 
 

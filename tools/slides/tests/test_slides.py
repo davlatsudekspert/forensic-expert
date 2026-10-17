@@ -61,8 +61,10 @@ def test_mock_generate_and_pptx(tmp_path):
                 elif "BOSQICH 2" in txt:
                     n = txt.count('"focus"')
                     out = {"slides": good["slides"][:n]}
+                elif "BOSQICH 3.3" in txt:
+                    out = {"extras": []}
                 else:
-                    out = {"mcq": good["mcq"], "extras": []}
+                    out = {"mcq": good["mcq"]}
                 return SimpleNamespace(content=[SimpleNamespace(type="text", text=json.dumps(out))])
     r = g.run("4-kurs-davolash-01", _sources(tmp_path), 2.0, False, tmp_path, client=C())
     assert r["status"] == "ok" and calls["model"] == "claude-sonnet-5-5"
