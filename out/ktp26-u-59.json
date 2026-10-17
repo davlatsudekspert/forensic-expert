@@ -1,0 +1,2248 @@
+{
+  "topic": "Asab tizimini tekshirish texnikasining xususiyatlari",
+  "slides": [
+    {
+      "title": "Kirish: asab tizimini tekshirish va mavzu maqsadi",
+      "bullets": [
+        {
+          "text": "Markaziy asab tizimi (MNT) topilmalari sud-tibbiyotda o‘lim sababini aniqlashda va sud jarayonida hal qiluvchi ahamiyatga ega bo‘lishi mumkin.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948; DOI 10.1007/s12024-023-00672-9"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja, 1-qism: Oura va hamkasblari sharhi. 2010–2022 yillardagi 122 ta original maqola tahlil qilingan.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948; DOI 10.1007/s12024-023-00672-9"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja, 2-qism: Farhat jamoasi usuli. 7 Tesla magnit-rezonans tomografiya (MRI) va 3D bosma qolip yordamida oq modda o‘choqlaridan namuna olinadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja, 3-qism: Matschke 2026 yangilanishi. Zo‘ravonlik bosh jarohati, epilepsiyada kutilmagan o‘lim (SUDEP) va sun’iy intellekt ko‘rib chiqiladi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama savollari: 1) MNT topilmalari sud jarayonida nima uchun muhim? 2) Uch manba bir-birini qanday to‘ldiradi? Doskada chizish: mavzuning uch qismli rejasini (sharh, MRI usuli, 2026 yangiliklari) uchta ustun qilib chizing. Tipik xato: talabalar uch manbani bitta usul deb o‘ylaydi, aslida ular turli yo‘nalishlar."
+    },
+    {
+      "title": "Nevropatologiya va sud patologiyasi: farqi",
+      "bullets": [
+        {
+          "text": "Nevropatologiya mayda to‘qima namunalarini ilg‘or usullar bilan batafsil o‘rganadi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud patologiyasi o‘lim sababi va usulini asosan makroskopik topilmalar orqali aniqlaydi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: nevropatologiya ≠ sud patologiyasi. Sud nevropatologiyasi ikkalasining kuchini birlashtiradi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Nevropatologiya va sud patologiyasi",
+        "nodes": [],
+        "header": [
+          "Jihat",
+          "Nevropat.",
+          "Sud pat."
+        ],
+        "rows": [
+          [
+            "Yondashuv",
+            "Mayda namunalarni batafsil tahlil",
+            "Makroskopik topilma va vaziyat bahosi"
+          ],
+          [
+            "Usullar",
+            "Gistologiya, immunogistokimyo, sekvenirlash",
+            "Makroskopik ko‘rik"
+          ],
+          [
+            "Maqsad",
+            "—",
+            "O‘lim sababi va usulini aniqlash"
+          ],
+          [
+            "Muammo",
+            "—",
+            "Xolislik, takrorlanuvchanlik shubhasi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama savollari: 1) Makroskopik topilmaga tayanish qanday xavf tug‘diradi? 2) Ikki fanni birlashtirish nima beradi? Doskada chizish: ikki doira (Venn diagrammasi) chizib, kesishmasiga sud nevropatologiyasini yozing. Tipik xato: sud patologiyasi mikroskopik usullarni umuman qo‘llamaydi deb o‘ylash. Manbada faqat asosiy tayanch usul ko‘rsatilgan. Jadvalda tanqid qatori sud patologiyasiga tegishli."
+    },
+    {
+      "title": "MNT tekshiruvi nega muhim",
+      "bullets": [
+        {
+          "text": "Nevrologik kasalliklar va MNT jarohati dunyoda o‘limning keng tarqalgan sabablari qatoriga kiradi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948; DOI 10.1007/s12024-023-00672-9"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MNT ni o‘limdan keyin to‘liq tekshirish ko‘pincha maxsus mahorat va murakkab to‘qima ishlov usullarini talab qiladi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948; DOI 10.1007/s12024-023-00672-9"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu sababli nevropatologik tajriba klinik va sud patologiyasida yuqori qadrlanadi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948; DOI 10.1007/s12024-023-00672-9"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Klinik nevropatologiyaga nisbatan sud yo‘nalishidagi tadqiqotlar kamroq uchraydi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948; DOI 10.1007/s12024-023-00672-9"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Tezkor savol: MNT tekshiruvi nega oddiy autopsiyadan murakkabroq? Muhokama savoli: sud yo‘nalishidagi tadqiqotlar nega kam? Doskada chizish: MNT jarohati, nevrologik kasallik va o‘lim sababi o‘rtasidagi bog‘liqlik strelkalarini chizing. Tipik xato: MNT tekshiruvini faqat miyani tortish deb tushunish; bu murakkab to‘qima ishlovini ham o‘z ichiga oladi."
+    },
+    {
+      "title": "Skoping sharh: qidiruv va tanlov jarayoni",
+      "bullets": [
+        {
+          "text": "Qidiruv MEDLINE bazasida 2022-yil 12-fevralda o‘tkazildi; 2010-yil 1-yanvardan boshlangan davr olindi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Inson namunasida nevropatologik usul qo‘llangan, inglizcha original maqolalar tanlandi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nevropatologik usulsiz, faqat tasvir, suyuqlik, shaxsni aniqlash yoki suyak sinishi ishlari chiqarildi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Maqolalarni saralash zanjiri",
+        "nodes": [
+          "5053 ta dastlabki natija",
+          "2864 ta maqola (maqsad davri)",
+          "Sarlavha va annotatsiya ko‘rigi",
+          "Kerak bo‘lsa to‘liq matn ko‘rigi",
+          "122 ta maqola kiritildi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Skoping sharh tizimli sharhdan nimasi bilan farq qiladi (savol keng, adabiyot avval umumlashtirilmagan bo‘lsa qo‘l keladi)? 2) Nega ko‘p maqola chiqarildi (asosan noto‘g‘ri kontekst, masalan sud psixiatriyasi, yoki original maqola bo‘lmagani uchun)? Doskada: 5053 → 2864 → 122 zanjirini chizing va 122 ta maqola davr ichidagilarning 4,3% ini tashkil etishini hisoblang. Tipik xato: 5053 ni kiritilgan maqolalar soni deb o‘ylash; kiritilgani 122 ta."
+    },
+    {
+      "title": "Nashrlar hajmi va geografiyasi",
+      "bullets": [
+        {
+          "text": "Butun dunyoda yiliga atigi 3–17 maqola chop etilgan; ilmiy faollik nisbatan past.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘pchilik maqola sud-tibbiyot jurnallarida chiqqan; jurnallarning median impakt-faktori 2,3.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Amerika guruhlarining maqolalari kam, butun davrda Afrikadan faqat ikkita maqola chiqqan.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Nashrlar: asosiy ko‘rsatkichlar",
+        "nodes": [],
+        "header": [
+          "Ko‘rsatkich",
+          "Qiymat"
+        ],
+        "rows": [
+          [
+            "Yiliga maqola soni",
+            "3–17 ta"
+          ],
+          [
+            "Evropadan maqolalar",
+            "39,3%"
+          ],
+          [
+            "Osiyodan maqolalar",
+            "36,1%"
+          ],
+          [
+            "Sud-tibbiyot jurnallari",
+            "57,4%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega sud nevropatologiyasi klinik nevropatologiyadan orqada qolgan (klinikaning translyatsion imkoniyati va klinitsistlar bilan hamkorlik)? 2) Qaysi mintaqalarda tadqiqot yetishmaydi va nega (resurs va siyosat to‘siqlari)? Qo‘shimcha: klinik jurnallar 23,0%, patologiya jurnallari 8,2%, impakt-faktorsiz jurnallar 11,5%. Doskada: jadvaldagi ulushlardan oddiy ustunli diagramma chizing. Tipik xato: Evropa va Osiyo ulushini nashr turlari ulushi bilan aralashtirish; bular boshqa-boshqa taqsimot."
+    },
+    {
+      "title": "Namuna xususiyatlari va nazorat guruhlari",
+      "bullets": [
+        {
+          "text": "Median namuna 57 ta shaxs; kvartillar oralig‘i 29–101, to‘liq oralig‘i 4–1222.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yoshning median quyi va yuqori chegarasi 16 va 80 yosh; ishlarning chorak qismidan ko‘pida yosh yozilmagan.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nazorat guruhi tadqiqotlarning yarmidan kamida bo‘lgan, shuning uchun ko‘pchilik ish tavsifiy xarakterda.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Namuna xususiyatlari (122 ta ish)",
+        "nodes": [],
+        "header": [
+          "Ko‘rsatkich",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Median namuna hajmi",
+            "57 ta shaxs"
+          ],
+          [
+            "Nazorat guruhi bor",
+            "43,4%"
+          ],
+          [
+            "Faqat kattalar namunasi",
+            "30,3%"
+          ],
+          [
+            "Yoshi ko‘rsatilmagan",
+            "27,0%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nazorat guruhisiz xulosa nega cheklangan (taqqoslash ko‘p ilmiy xulosa uchun shart)? 2) Keng yosh oralig‘i qulaymi yoki xavflimi (umumlashtirish oshadi, lekin kichik namunada bir xillik kamayadi)? Qo‘shimcha: kattalar va voyaga yetmaganlar aralash namuna 30,3%, faqat voyaga yetmaganlar 12,3%; quvvat hisobi kam keltirilgan. Doskada: namuna hajmi uchun median va kvartillar oralig‘ini sxematik chizing. Tipik xato: 43,4% ni nazorat guruhi yo‘q ishlar ulushi deb o‘qish; aslida nazorat guruhi borlari ulushi."
+    },
+    {
+      "title": "Tadqiqot mavzulari reytingi",
+      "bullets": [
+        {
+          "text": "Eng ko‘p tadqiqot travmatik intrakranial jarohatga bag‘ishlangan: 122 maqolaning 24,6 foizi shu mavzuda.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kam o‘rganilgan: o‘z joniga qasd, asfiksiya, cho‘kish, gipo- va gipertermiya, o‘lim muddatini baholash.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: anatomiya ko‘p yozilgan, ammo sud neyropatologiyasiga qo‘shgan hissasi nisbatan kichik.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Mavzular ulushi (122 maqola)",
+        "nodes": [],
+        "header": [
+          "Mavzu",
+          "Ulush",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "Travmatik intrakranial jarohat",
+            "24,6%",
+            "Eng ko‘p o‘rganilgan"
+          ],
+          [
+            "Anatomiya",
+            "12,3%",
+            "Tomirlar, miya vazni"
+          ],
+          [
+            "Giyohvandlik",
+            "11,5%",
+            "Spirt, opioid, stimulyator"
+          ],
+          [
+            "Chaqaloq/bolalarda kutilmagan o‘lim",
+            "6,6%",
+            "Kam ulush"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun travma eng ko‘p o‘rganiladi? Kam o‘rganilgan mavzularni nega rivojlantirish kerak? Doskada: mavzular ulushini ustunli diagramma shaklida chizdiring. Tipik xato: anatomiya mavzusini sud neyropatologiyasining asosiy yo‘nalishi deb o‘ylash."
+    },
+    {
+      "title": "Qo‘llanilgan usullar: immunotexnika va makroskopiya",
+      "bullets": [
+        {
+          "text": "Immunotexnikalar (immunogistokimyo, immunoblotting) eng keng qo‘llangan: tadqiqotlarning 31,1 foizi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "An’anaviy gistologiya asosiy usul sifatida oz holda ishlatilgan; genetik usullar turli maqsadda qo‘llangan.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: dastlabki topilma ≠ tasdiqlangan usul; ko‘p yangi natija hali qo‘shimcha tekshiruv talab qiladi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Usullarning kuchli va zaif tomonlari",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Kuchli tomon",
+          "Zaif tomon"
+        ],
+        "rows": [
+          [
+            "Immunotexnika, 31,1%",
+            "Jarohat belgisi va yoshini aniqlaydi",
+            "Topilmalar dastlabki, tasdiq kerak"
+          ],
+          [
+            "Makroskopiya, 21,3%",
+            "Jarohat shakllarini ko‘rsatadi",
+            "Ko‘pincha faqat tavsif bilan cheklanadi"
+          ],
+          [
+            "Genetik usullar",
+            "To‘qima aniqlash, gen ifodasi tahlili",
+            "Topilmalar dastlabki, tasdiq kerak"
+          ],
+          [
+            "Miya vaznini o‘lchash",
+            "Sodda o‘lchov",
+            "Qo‘pol usul, natija ko‘pincha yo‘q"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: qaysi usul jarohat yoshini aniqlashga yaxshiroq mos? Nega makroskopiya yolg‘iz yetarli emas? Doskada: usul → topilma → tasdiqlash zanjirini chizdiring. Tipik xato: miya vaznini o‘lchashni aniq diagnostik usul deb hisoblash.",
+      "uncertain": false
+    },
+    {
+      "title": "Voqea tahlili: kichik namuna va nazoratsiz ish",
+      "bullets": [
+        {
+          "text": "Vaziyat: tadqiqotchi kichik namunada immunotexnika bilan yangi belgi topdi, nazorat guruhi yo‘q. Manbada o‘rtacha (mediana) namuna 57 kishi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nazorat guruhi tadqiqotlarning faqat 43,4 foizida bo‘lgan; solishtirma dizayn ko‘p ilmiy xulosa uchun shart.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Namuna kichik bo‘lsa ham, statistik quvvat hisobi kamdan-kam keltirilgan; yosh oralig‘i keng bo‘lsa, guruh bir xil bo‘lmay qoladi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bunday xulosaga qanchalik ishonish mumkin? Javob: u dastlabki hisoblanadi va yirik, nazoratli tadqiqotda tasdiqlanishi kerak.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nazorat guruhi bo‘lmasa qanday xulosa chiqarish mumkin? Namuna hajmini qanday asoslash kerak? Doskada: ‘namuna – nazorat – xulosa’ sxemasini chizdiring. Tipik xato: qiziqarli topilmani darhol tasdiqlangan usul deb qabul qilish."
+    },
+    {
+      "title": "Tezkor savol 1: sharh natijalari",
+      "bullets": [
+        {
+          "text": "Savol: 2010–2022 yillardagi 122 ta original maqolada eng ko‘p o‘rganilgan mavzu qaysi edi?",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: eng ko‘p qo‘llangan usul qaysi va u maqolalarning qancha ulushida ishlatilgan?",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yordam: butun dunyo bo‘yicha yiliga atigi 3–17 ta maqola chop etilgan, ya‘ni soha tadqiqotlari kam.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi — anatomiya (12.3%) ikkinchi, moddalar suiste‘moli (11.5%) uchinchi o‘rinda; birinchi emas.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daq. Javoblar: eng ko‘p mavzu — travmatik intrakranial jarohat (24.6%); eng ko‘p usul — immunotexnikalar (31.1%), so‘ng makroskopik kuzatuv (21.3%). Muhokama: nega sohada nashrlar kam (klinik neyropatologiya bilan solishtiring)? Nega nazorat guruhi kam ishlatilgan (43.4%)? Doskada: uch mavzu va ikki usulning ulushlarini ustunli sxema qilib chizdiring. Tipik xato: moddalar suiste‘moli yoki anatomiyani eng ko‘p uchraydigan mavzu deb aytish."
+    },
+    {
+      "title": "Oq modda lezyonlari: MRI belgilari",
+      "bullets": [
+        {
+          "text": "Oq modda lezyonlari — magnit-rezonans tomografiyada (MRI) qarishning eng keng tarqalgan belgilaridan.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Lezyon yuki ortishi insult, kognitiv pasayish, demensiya va o‘lim xavfi bilan kuchli bog‘liq.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gistologik darajada lezyonlar hali yetarli o‘rganilmagan, shu sababli MRI bilan gistologiyani bog‘lash kerak.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "T2 va T1 solishtirma jadvali",
+        "nodes": [],
+        "header": [
+          "Ketma-ketlik",
+          "MRI belgisi"
+        ],
+        "rows": [
+          [
+            "T2-vaznli",
+            "Giperintens (yorqin) soha"
+          ],
+          [
+            "T1-vaznli",
+            "Gipointens (qorong‘i) soha"
+          ],
+          [
+            "Mumkin sabablar",
+            "Demielinizatsiya, aksonal yo‘qotish, glioz"
+          ],
+          [
+            "Klinik bog‘liqlik",
+            "Qarish, qon tomir xavfi, neyrodegeneratsiya"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nega lezyonning aniq tabiati faqat MRI ga qarab aytilmaydi? Qaysi klinik xavf omillari lezyonlar bilan bog‘liq (gipertoniya, diabet)? Doskada: T2 va T1 da lezyon qanday ko‘rinishini ikkita doira bilan chizing (yorqin va qorong‘i). Tipik xato: T2 va T1 belgilarini almashtirib yuborish."
+    },
+    {
+      "title": "MRI-yo‘naltirilgan namuna olishning umumiy sxemasi",
+      "bullets": [
+        {
+          "text": "Chap yarimsharni agar-saxaroza muhitiga joylash to‘qimani qimirlashdan va deformatsiyadan saqlaydi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kesilgan har bir plastinka yuzasi suratga olinadi (blokface) va MRI kesimlariga moslashtiriladi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Chuqur o‘rganish modeli T1 da lezyonni topadi; neyropatolog maska bo‘yicha namuna oladi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Ish jarayoni zanjiri",
+        "nodes": [
+          "Agar-saxarozaga joylash",
+          "7 Tesla (7T) MRI skanerlash",
+          "3D yo‘naltirgich bilan kesish",
+          "MRI–blokface moslashtirish",
+          "Lezyondan namuna olish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nega kesish yo‘naltirgichi kerak? MRI va blokface suratni moslashtirish nima uchun zarur? Doskada: besh bosqichli zanjirni strelkalar bilan chizing. Tipik xato: kesishni MRI dan oldin bajarish deb o‘ylash; to‘g‘ri tartibda avval MRI, keyin kesish."
+    },
+    {
+      "title": "Agar-saxaroza muhiti: dielektrik moslik",
+      "bullets": [
+        {
+          "text": "Agar-saxaroza muhiti harakat artefaktini kamaytiradi va miyani kesish paytida deformatsiyadan saqlaydi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "7 T magnit-rezonans tomografiyada (MRT) muhitning dielektrik xossalari miyaga yaqin bo‘lishi kerak.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Agarga saxaroza qo‘shilsa, nisbiy singdiruvchanlik 78 dan 68 gacha tushadi va miyaga yaqinlashadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Nisbiy singdiruvchanlik (permittivity)",
+        "nodes": [],
+        "header": [
+          "Muhit",
+          "Qiymat",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "Suv va oddiy agar",
+            "~78",
+            "Miyadan yuqori"
+          ],
+          [
+            "Miya to‘qimasi",
+            "~58",
+            "Mo‘ljal qiymat"
+          ],
+          [
+            "Agar + saxaroza",
+            "68",
+            "Miyaga yaqinroq"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega muhit singdiruvchanligi miyaga yaqin bo‘lishi kerak? 2) Agar-saxaroza formalinga nisbatan qanday afzallik beradi (manbada signal-shovqin va kontrast-shovqin nisbati yaxshilanishi aytilgan)? Doskada: uch ustunli ustunli diagramma chizing (78, 68, 58) va farqni ko‘rsating. Tipik xato: 68 ni 58 bilan bir xil deb o‘ylash. Diqqat: 68 ≠ 58, saxaroza qiymatni faqat yaqinlashtiradi."
+    },
+    {
+      "title": "Miyani agarga joylash bosqichlari",
+      "bullets": [
+        {
+          "text": "Miya 10% formalindan olinib, gyruslarga iliq eritma pipetka bilan sekin quyiladi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qorinchalar avval to‘ldiriladi, so‘ng atrofiga massaj qilib quyiladi — pufaklar chiqadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miya 2–3 daqiqa botirib ushlanadi, agar quyuqlashib, suzib chiqishiga yo‘l qo‘ymasin.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Joylash zanjiri",
+        "nodes": [
+          "Agar 1,5% va saxaroza 30%",
+          "65–68°C da 2–3 soat isitish",
+          "42°C gacha sovitish",
+          "Miyani joylash, pufak chiqarish",
+          "2–3 soat qotish, qopqoq yopish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega eritma 42°C gacha sovitiladi va avval qorinchalar to‘ldiriladi? 2) Pufaklar qanday artefakt beradi (manbada GRE tasvirlarda sulkus va gippokamp yaqinida suseptibilitet artefakti aytilgan)? Doskada: besh bosqichni o‘q bilan chizib, harorat va vaqtlarni yozing. Tipik xato: miyani lateral tomoni yuqorida joylash (dastlab formalindan ko‘chirishda lateral tomon yuqorida, konteynerda esa lateral tomon pastda, qorinchalar yuqoriga qaragan)."
+    },
+    {
+      "title": "3D chop etilgan konteyner va kesish yo‘naltirgichi",
+      "bullets": [
+        {
+          "text": "Ustunlar kamar bo‘ylab joylashgan; qalinligi 0,5 mm pichoq ular orasidan o‘tkaziladi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qopqoqdagi kirish teshigidan yopilgach agar qo‘shiladi, chiqish teshigidan havo so‘riladi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uch qism ham 3D bosmada chop etiladi; bitta to‘plam taxminan 30 ta miyaga yetadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Konteyner qismlari",
+        "nodes": [],
+        "header": [
+          "Qism",
+          "Vazifa",
+          "Tuzilishi"
+        ],
+        "rows": [
+          [
+            "Korpus",
+            "Skanerlashda deformatsiyadan saqlash",
+            "Devor va tub qalinligi 3 mm"
+          ],
+          [
+            "Yo‘naltirgich",
+            "Pichoqni koronal tekislikda ushlaydi",
+            "28 yuqori, 29 pastki ustun"
+          ],
+          [
+            "Ustunlar",
+            "Pichoq oralig‘iga mo‘ljallangan",
+            "Diametr 4 mm, oralig‘i 0,6 mm"
+          ],
+          [
+            "Qopqoq",
+            "Korpusni yopadi, agar qo‘shishga imkon beradi",
+            "Kirish va chiqish teshigi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Ikki teshikli qopqoq nima uchun muhim? 2) Qayta ishlatiladigan yo‘naltirgich har bir miya uchun alohida qolip yasashdan qanday afzal? Doskada: yon tomondan ustunlar va pichoq o‘tadigan oraliqni chizing. Tipik xato: to‘rtta to‘rtburchak burchak ustunini kesish ustuni deb o‘ylash; manbada ular yo‘naltirgichni korpusdan ajratishda tutqich vazifasini bajaradi. Yo‘naltirgich butun miyani qoplamaydi, shuning uchun ayrim joylar qo‘lda kesiladi."
+    },
+    {
+      "title": "7T MRI ketma-ketliklari",
+      "bullets": [
+        {
+          "text": "T2-SPACE tasvirlarida ustunlar qora ko‘rinadi; moslashtirish aynan shu ketma-ketlikda bajarildi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "T1w MP2RAGE tasvirida chuqur o‘rganish modeli oq modda o‘zgarishlarini avtomatik ajratdi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "GRE ning maqsadi matnda aniq yozilmagan; havo pufakchalari GRE da sezuvchanlik artefaktini beradi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Uch ketma-ketlik parametrlari",
+        "nodes": [],
+        "header": [
+          "Ketma-ketlik",
+          "Voksel (mm)",
+          "Vaqt"
+        ],
+        "rows": [
+          [
+            "GRE",
+            "0,37 × 0,37 × 0,37",
+            "36 daq 59 s"
+          ],
+          [
+            "T2-SPACE",
+            "0,41 × 0,41 × 0,41",
+            "46 daq 19 s"
+          ],
+          [
+            "T1w MP2RAGE",
+            "0,37 × 0,37 × 0,37",
+            "32 daq 28 s"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: nima uchun T2-SPACE moslashtirishda, T1w MP2RAGE esa o‘zgarishlarni avtomatik ajratishda qo‘llangan? Skaner 7 T Siemens Magnetom ekanini eslatib o‘ting. Doskada jadvalni o‘zlari chizishsin. Tipik xato: T2-SPACE va T1w MP2RAGE rollarini, ya‘ni qaysi biri moslashtirish, qaysi biri segmentatsiya uchun ishlatilganini aralashtirish."
+    },
+    {
+      "title": "Miyani yo‘naltirilgan holda kesish",
+      "bullets": [
+        {
+          "text": "Muhit devor bo‘ylab bo‘shatilib, yo‘naltirgich to‘rtburchak ustunlardan tutib ajratib olinadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Pichoq 0,5 mm; har kesishda ikki juft ustun o‘tkazib yuboriladi. Keyin pichoq izlari suratga olinadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ustunlar qamramagan qismlar qo‘lda kesiladi; bo‘laklar bir haftagacha 10% formalinda saqlanadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kesish bosqichlari",
+        "nodes": [
+          "Qopqoq olinadi",
+          "Yo‘naltirgich ajratiladi",
+          "Koronal kesish (ustunlar orasi)",
+          "Pichoq izlari suratga olinadi",
+          "Qo‘lda kesish; formalin"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: pichoq izlari nega suratga olinadi? Qo‘lda kesilgan bo‘laklar nega yo‘naltirilgan kesimlarga parallel bo‘lishi kerak? Doskada zanjirni chizdiring. Tipik xato: yo‘naltirgich butun miyani qamrab oladi deb o‘ylash; aslida ayrim qismlar qo‘lda kesiladi. Mashhur misol: har bir miyada 18 ta koronal bo‘lakdan 4 tasi qo‘lda kesilgan."
+    },
+    {
+      "title": "MRI va blokface suratlarini moslashtirish",
+      "bullets": [
+        {
+          "text": "Ustunlar blokface da oq, T2-SPACE da qora ko‘rinib, ishonchli belgi (fiducial) vazifasini bajaradi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Pichoq ustunlar juftligi orasida koronal virtual tekislik bo‘ylab yurgan deb faraz qilindi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "RadiAnt ko‘ruvchisida tekislik pichoq iziga moslanadi; moslik ko‘z bilan, ya‘ni sifat jihatidan tasdiqlanadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Moslashtirish zanjiri",
+        "nodes": [
+          "Ustunlar — belgi vazifasida",
+          "Virtual koronal tekislik",
+          "RadiAnt MPR da sozlash",
+          "Vizual tasdiq, keyingi kesim",
+          "Maska blokface ga o‘tkaziladi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: nima uchun ustunlar yaxshi belgi hisoblanadi? Vizual tasdiqlashning kamchiligi nima (miqdoriy ko‘rsatkich yo‘qligi)? Doskada zanjirni chizdiring. Tipik xato: fiducial deb anatomik tuzilmani tushunish; bu yerda belgi vazifasini sun‘iy ustunlar bajaradi. Eslatma: yo‘naltirilgan 14 ta bo‘lakni moslash taxminan 30 daqiqa, qo‘lda kesilganlari esa bittasi taxminan bir soat olgan."
+    },
+    {
+      "title": "Lezyonni segmentatsiya qilish va namuna olish",
+      "bullets": [
+        {
+          "text": "Oq modda lezyonlari magnit-rezonans tomografiya (MRT)da T1 va T2 ketma-ketliklarida ko‘rinadi va namuna olishni yo‘naltiradi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mualliflarning o‘z chuqur o‘rganish (deep learning) modeli lezyonlarni T1 tasvirda avtomatik aniqladi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Lezyon niqobi MRT dan blokface suratiga o‘tkazildi. Blokface — kesilgan bo‘lak yuzasining fotosurati.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nevropatolog niqob va saqlangan moslashtirishdan foydalanib, jismoniy bo‘lakdagi aniq joydan gistologik namuna oldi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega niqobni MRT dan blokface suratiga o‘tkazish kerak? 2) Nevropatolog modelning qaysi natijasiga tayanadi? Doskada chizing: T1 tasvir → model niqobi → blokface surati → namuna joyi. Tipik xato: blokface ni MRT tasviri deb o‘ylash; u bo‘lak yuzasining fotosurati."
+    },
+    {
+      "title": "Natijalar: ikki miyada sinov",
+      "bullets": [
+        {
+          "text": "Yo‘naltirilgan 14 bo‘lakni moslashtirish har miyada taxminan 30 daqiqa oldi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qo‘lda kesilgan to‘rt bo‘lak ko‘proq vaqt oldi: har biri taxminan bir soat.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkala miyada lezyonlar periventrikulyar sohada old tomondan orqaga cho‘zilgan.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki miya natijasi",
+        "nodes": [],
+        "header": [
+          "Ko‘rsatkich",
+          "Miya 1",
+          "Miya 2"
+        ],
+        "rows": [
+          [
+            "Koronal bo‘laklar jami",
+            "18",
+            "18"
+          ],
+          [
+            "Yo‘naltirgich bilan kesilgan",
+            "14",
+            "14"
+          ],
+          [
+            "Qo‘lda kesilgan",
+            "4",
+            "4"
+          ],
+          [
+            "Lezyonlar",
+            "Periventrikulyar + 2 chuqur o‘choq",
+            "Periventrikulyar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega qo‘lda kesilgan bo‘laklarni moslashtirish uzoq davom etdi? 2) Muvaffaqiyatli moslashuv qanday tasdiqlandi? Doskada jadvalni chizing va 14+4=18 ni yozing. Tipik xato: moslashtirish vaqtini bitta bo‘lak uchun 30 daqiqa deb o‘ylash; bu 14 bo‘lakning umumiy vaqti."
+    },
+    {
+      "title": "Usulning afzalliklari va cheklovlari",
+      "bullets": [
+        {
+          "text": "Komplekt taxminan 60 dollar, taxminan 30 miyaga yetadi; har bir miyaga taxminan 2 dollar.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Pufakchalar gradient-exo (GRE) tasvirda sulkus va gippokamp yaqinida artefakt beradi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Moslashtirish vizual baholandi; kelajakda miqdoriy o‘lchovlar qo‘shish mumkin.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Afzallik va cheklov",
+        "nodes": [],
+        "header": [
+          "Jihat",
+          "Afzallik",
+          "Cheklov"
+        ],
+        "rows": [
+          [
+            "Narx",
+            "Qayta ishlatiladigan komplekt, arzon",
+            "Bitta komplekt ~42 soat chop etiladi"
+          ],
+          [
+            "Miya hajmi",
+            "Turli o‘lchamga mos; hech biri chetlatilmadi",
+            "Yo‘naltirgich butun miyani qoplamaydi"
+          ],
+          [
+            "Agar muhiti",
+            "Harakat artefaktlari kamayadi",
+            "Pufakchalar artefakt beradi"
+          ],
+          [
+            "Kesish",
+            "Bo‘laklar takrorlanuvchan, bir xil",
+            "Qotishdan oldin yo‘nalishni rejalash kerak"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi cheklov eng ko‘p vaqt yo‘qotishga olib keladi? 2) Nega agar qotgach miyaning holatini o‘zgartirib bo‘lmaydi? Doskada afzallik va cheklov ustunlarini chizing. Tipik xato: bitta komplektni bir marta ishlatiladi deb o‘ylash; u taxminan 30 miyaga yetadi."
+    },
+    {
+      "title": "Diqqat va eslab qoling: tipik xatolar",
+      "bullets": [
+        {
+          "text": "Diqqat: oq modda o‘choqlari T2 da giperintens (yorqin), T1 da gipointens (qorong‘i) ko‘rinadi. Ikkalasini chalkashtirmang.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: yo‘naltirgichli kesish ≠ qo‘lda kesish. Yo‘naltirgich qamramidan chiqqan joylar qo‘lda, lekin kesimlarga parallel kesiladi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkala miyada ham 18 ta koronal bo‘lakning 14 tasi yo‘naltirgich bilan, 4 tasi qo‘lda kesilgan. Qo‘lda kesilganlarni moslashtirish ancha uzoq (~1 soat).",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eslab qoling (tartib): Agar → MRI → Kesish → Moslashtirish → Namuna olish. Bosh harflar: A-M-K-M-N.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega T2 va T1 da o‘choq belgisi qarama-qarshi? 2) Qo‘lda kesish nega ko‘proq vaqt oladi? Doskaga A-M-K-M-N zanjirini chizdiring va har bosqichni bir jumlada izohlating. Tipik xato: T1 va T2 belgilarini almashtirib yuborish; barcha bo‘laklar yo‘naltirgich bilan kesilgan deb o‘ylash. Mnemonika (A-M-K-M-N) o‘qituvchi tomonidan manbadagi bosqichlar tartibi asosida tuzilgan."
+    },
+    {
+      "title": "Voqea tahlili: pufakchali agar va artefakt",
+      "bullets": [
+        {
+          "text": "Vaziyat: agarda havo pufakchalari qolgan miya gradient exo (GRE) tasvirida sulkuslar va gippokamp yaqinida artefakt berdi. Savol: sababi nima, qanday kamaytiriladi?",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sabab: agar ichida qolgan havo pufakchalari magnit sezuvchanlik artefaktini keltiradi. Bu asosan GRE tasvirlarga ta’sir qiladi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamaytirish: qopqoqdagi kirish va chiqish portlari orqali havo so‘rilib, agar qo‘shiladi. Qorincha avval to‘ldirilib, quyishda massaj qilinadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cheklov: usulni takomillashtirishga qaramay, pufakchalarni to‘liq yo‘qotish hanuzgacha qiyin.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega artefakt aynan sulkus va gippokamp atrofida seziladi? 2) Qopqoqdagi ikki port qanday yordam beradi? Doskaga konteyner, kirish va chiqish portlari sxemasini chizdiring. Tipik xato: pufakchalar barcha ketma-ketliklarga bir xil ta’sir qiladi deb o‘ylash (manbada asosan GRE tilga olingan)."
+    },
+    {
+      "title": "Tezkor savol 2: MRI usuli",
+      "bullets": [
+        {
+          "text": "Savol: koronal bo‘lak taxminan necha mm qalinlikda? Javob: taxminan 9,8 mm; yo‘naltirgich bir xil kesishni ta’minlaydi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: fiducial belgi vazifasini nima bajaradi? Javob: yo‘naltirgich ustunlari; blokface fotoda oq, T2-SPACE tasvirda qora ko‘rinadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: saxaroza nega qo‘shiladi? Javob: agarning nisbiy dielektrik o‘tkazuvchanligi 78 dan 68 ga tushadi, miyaning ~58 qiymatiga yaqinlashadi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: tasvir aniqligi qancha? Javob: 7 Tesla maydonda 370 µm izotrop aniqlik.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483; DOI 10.1111/jon.70094"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Talabalarga avval savolni o‘qing, 20 soniya o‘ylashga bering, so‘ng javobni oching. Muhokama: saxaroza qo‘shilmasa tasvir sifati qanday o‘zgarishi mumkin? Doskaga 78 → 68 → ~58 qatorini yozdiring. Tipik xato: fiducial belgini anatomik tuzilma deb o‘ylash; aslida u yo‘naltirgichning ustunlari."
+    },
+    {
+      "title": "Postmortem radiologiya: PMCT va PMMR",
+      "bullets": [
+        {
+          "text": "PMCT — postmortem kompyuter tomografiyasi; jarohatni invaziv bo‘lmagan usulda hujjatlaydi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "PMMR — postmortem magnit-rezonans tasvirlash; 1990-yilda birinchi marta bayon etilgan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "ESPR (Evropa pediatrik radiologiya jamiyati) protokollarini 2021 va 2025-yillarda yangiladi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "ESPR PMMR protokollari",
+        "nodes": [],
+        "header": [
+          "Protokol",
+          "Vaqt",
+          "Tarkib"
+        ],
+        "rows": [
+          [
+            "Erta versiyalar",
+            "90 daqiqagacha",
+            "Kundalik ishga juda uzun"
+          ],
+          [
+            "ESPR 2021",
+            "30–60 daqiqa",
+            "Ekspertlar kelishgan standart"
+          ],
+          [
+            "Minimal (2025)",
+            "30 daqiqadan kam",
+            "3-D T2 va T1: miya va tana"
+          ],
+          [
+            "Ideal (2025)",
+            "Ko‘proq vaqt bo‘lganda",
+            "Butun tana 3-D; miyada SWI va DWI"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega tasvirni tekshiruvdan oldin ko‘rish rejalashtirish va nishonli namuna olish uchun foydali (maqola PMCTni sud-tibbiy patologiyadagi so‘nggi 25 yilning muhim yutug‘i deydi)? 2) Nega 90 daqiqalik protokol kundalik ishga noqulay (skaner band, vaqt cheklangan)? Doskada: to‘rt qatorli vaqt chizig‘ini (1990 → 2021 → 2025) chizing. Tipik xato: minimal va ideal protokollarni aralashtirish. Minimal — 30 daqiqadan kam, 3-D T2/T1; ideal — butun tana va miyada SWI (qon quyilish) hamda DWI (to‘qima tafsiloti) bor. Maqola PMMRga atigi bitta qisqa xatboshi ajratgan, PMCT ko‘proq yoritilgan. Ekspert guruhi kichik bo‘lgan (19 mutaxassis, 17 markaz) va ba’zi qit’alar vakillari yo‘q."
+    },
+    {
+      "title": "Likvor biomarkerlari bilan o‘lim vaqtini baholash",
+      "bullets": [
+        {
+          "text": "PMI (o‘lim vaqti) klassik belgilarda noaniq; likvor (CSF) va shishasimon tana (VH) tahlil qilinadi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cecchi va boshq. 35 kishini o‘rgandi: o‘rtacha PMI 2,94 kun, oralig‘i 1–6 kun.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "GFAP, S100B va NSE ayniqsa dastlabki 2 kunda istiqbolli; ko‘proq kuzatuv zarur.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Biomarkerlar dinamikasi",
+        "nodes": [],
+        "header": [
+          "Marker",
+          "Likvor (CSF)",
+          "Shishasimon"
+        ],
+        "rows": [
+          [
+            "GFAP",
+            "3-kungacha oshadi, so‘ng biroz kamayadi",
+            "Ko‘pchiligida aniqlanmadi"
+          ],
+          [
+            "S100B",
+            "5-kungacha PMI bilan birga oshadi",
+            "Ma’lumot keltirilmagan"
+          ],
+          [
+            "NSE",
+            "Tartibsiz o‘zgaradi",
+            "Tartibsiz o‘zgaradi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega tana harorati, rigor mortis va livor mortis usullari noaniq hisoblanadi? 2) Nega faqat 35 kishilik tanlanma ehtiyotkorlik talab qiladi? Doskada: GFAP va S100B egri chiziqlarini kunlar o‘qida (1–6 kun) sxematik chizing. Tipik xato: biomarker ’o‘lim vaqtini aniq beradi’ deb o‘ylash; muallif faqat ’istiqbolli’ deydi. Eslatma: manba GFAP, S100B va NSE qisqartmalarini ochib bermagan, shuning uchun slaydda ham ochilmadi. Tanlanmada asab tizimi patologiyasi yo‘q, o‘lim vaqti ma’lum shaxslar bo‘lgan."
+    },
+    {
+      "title": "Voqea tahlili: o‘lim vaqtini aniqlash",
+      "bullets": [
+        {
+          "text": "Vaziyat: jasad topildi, o‘lim vaqti noma’lum; harorat, rigor mortis va livor mortis atrof-muhit hamda shaxsga bog‘liq omillar ta’sirida noaniq.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yondashuv: likvorda GFAP va S100B o‘lchanadi. GFAP taxminan 3 kungacha ko‘tariladi, S100B esa 5-kungacha oshadi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cheklov: asos 35 kishilik tadqiqot (asab tizimi patologiyasi yo‘q, o‘rtacha PMI 2,94 kun); NSE o‘zgarishi tartibsiz bo‘lgan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu usul qanchalik ishonchli? Muallif uni ayniqsa dastlabki 2 kunda istiqbolli deydi, lekin ko‘proq odamli tadqiqotlar kerak.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Talabalar 2–3 kishilik guruhda ishlaydi. Muhokama: 1) Usul ishonchli deb bo‘ladimi yoki hozircha tadqiqot bosqichidami? Dalil keltiring. 2) GFAP 3-kundan keyin kamaysa, bitta o‘lchov natijasini sharhlashda qanday qiyinchilik tug‘iladi (bu o‘qituvchi xulosasi, manbada bevosita aytilmagan)? Doskada: ’klassik belgilar + biokimyo‘ ko‘p usulli yondashuv sxemasini chizing. Tipik xato: kichik tanlanmadagi natijani ishonchli xulosa deb qabul qilish; shuningdek, shishasimon tanada GFAP ko‘pincha aniqlanmaganini unutish."
+    },
+    {
+      "title": "Bolalarda zo‘ravon bosh jarohati: biomexanika",
+      "bullets": [
+        {
+          "text": "Zo‘ravon bosh jarohati (AHT) — chaqaloqda urilish yoki kuchli silkitishdan kelib chiqqan jarohatlar sindromi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Modellar: 2 hayvon, 5 fizik, 10 matematik tadqiqot. Jarohat chegaralari katta yoshlilar yoki hayvonlardan olingan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sagittal burchak tezlanishi asosiy mexanizm hisoblanadi; AHT ko‘pincha 2–4 oyliklarda uchraydi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 1-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki maneken tajribasi",
+        "nodes": [],
+        "header": [
+          "Ko‘rsatkich",
+          "6 haftalik",
+          "1 yoshli"
+        ],
+        "rows": [
+          [
+            "Bosh va tana tezlanishi",
+            "Yuqoriroq",
+            "Pastroq"
+          ],
+          [
+            "Jarohat kinematikasiga mosligi",
+            "Ko‘proq mos",
+            "Kamroq mos"
+          ],
+          [
+            "Datchiklar",
+            "Giroskop, akselerometr",
+            "Xuddi shunday"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega maneken natijasi to‘g‘ridan-to‘g‘ri isbot emas? 2) Nega yosh kichikligi tezlanishga ta’sir qiladi? Doskada: ikki maneken uchun tezlanish farqini ustunli sxema qiling. Tipik xato: model natijasini isbotlangan sabab deb qabul qilish."
+    },
+    {
+      "title": "AHT: ensefalopatiya va neyroradiologiya",
+      "bullets": [
+        {
+          "text": "Asosiy topilmalar: gipoksik-ishemik ensefalopatiya (HIE), travmatik aksonal jarohat (TAI), subdural va retinal qon quyilish.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 1–2-bo‘limlar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gipoteza: quyi miya ustunida yurak-nafas yadrolari yaqinida fokal TAI nafas to‘xtashiga olib keladi; hali to‘liq isbotlanmagan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 2-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hahnemann tadqiqotida 61 bolaning 31 tasida (50,8 %) lezyon bor; miya ustuni lezyoni topilmadi, ko‘pchilik tirik qolgan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 2-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: neyroradiologiyada ko‘rinmaslik ≠ patologiyada yo‘qlik. Kichik lezyonlar ko‘rinmasligi mumkin; klinik-patologik moslik kerak.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 2-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega tirik qolganlar tanlamasi natijani buzishi mumkin? 2) Prospektiv moslik tadqiqoti nimani aniqlaydi? Doskada: silkitish → HIE → miya shishi zanjirini yozing, gipoteza bo‘g‘inini belgilang. Tipik xato: gipotezani isbotlangan mexanizm deb yozish."
+    },
+    {
+      "title": "Surunkali travmatik ensefalopatiya va oila zo‘ravonligi",
+      "bullets": [
+        {
+          "text": "Takroriy travmatik bosh miya jarohati (TBI) ta’siri asr yaqin oldin «punch drunk» deb atalgan; hozir CTE. Omalu ishi qiziqishni oshirdi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1990-yilgi ayol holida CTE ekani noaniq qoldi. Sherik zo‘ravonligi (IPV) qurboni yosh ayolda birinchi aniq CTE holi 2021-yilda yozilgan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IPV tarixli 14 ayolda CTE topilmadi; sabab tanlama tarkibi bo‘lishi mumkin. Zarba soni va kuchini miqdoriy baholash deyarli imkonsiz.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "LETBI loyihasida 47 donor miyadan 7 tasida (14,9 %) aniq CTE bor; yakka TBI CTE bilan kam bog‘liq bo‘lgan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192, 3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega CTE topilmagan tadqiqot CTE yo‘qligini isbotlamaydi? 2) CTE sudda dalil bo‘lishi uchun nima kerak? Doskada: takroriy TBI → CTE bog‘liqligi va uni buzuvchi omillarni yozing. Tipik xato: yakka TBI va takroriy TBI ni farqlamaslik."
+    },
+    {
+      "title": "SUDEP: istisno tashxisi",
+      "bullets": [
+        {
+          "text": "SUDEP — epilepsiyada kutilmagan o‘lim; tashxis boshqa sabablar istisno qilingandan keyin qo‘yiladi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2500 dan ortiq bemorli kuzatuvda 38 nafari (1,54%) SUDEPdan vafot etgan: 1000 kishi-yilga 4,76.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: SUDEP ≠ status epilepticus; ikkalasi ham epilepsiyaning bevosita o‘lim sabablari.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "SUDEP va bolalik o‘limlari",
+        "nodes": [],
+        "header": [
+          "Jihat",
+          "SUDEP",
+          "SUID/SUDC"
+        ],
+        "rows": [
+          [
+            "Uyqu va yuztuban holat",
+            "Umumiy xususiyat",
+            "Umumiy xususiyat"
+          ],
+          [
+            "Natriy kanal genlari",
+            "Variantlar ko‘proq uchraydi",
+            "Variantlar ko‘proq uchraydi"
+          ],
+          [
+            "Gippokamp",
+            "Nozik anomaliyalar topilgan",
+            "Nozik anomaliyalar topilgan"
+          ],
+          [
+            "Xavf omili",
+            "Yolg‘iz yashash, uzoq apnoe",
+            "Manbada ko‘rsatilmagan"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Qisqartmalar: SUDEP — epilepsiyada kutilmagan o‘lim; SUID — chaqaloqlarda kutilmagan o‘lim; SIDS — uning eng ko‘p uchraydigan turi (chaqaloqlarning kutilmagan o‘lim sindromi); SUDC — bolalikdagi tushuntirilmagan o‘lim. Xavf omillari: yolg‘iz yashash, bir yilda uch va undan ko‘p generalizatsiyalangan tutqanoq, uzoq markaziy apnoe. Muhokama: nega SUDEP istisno tashxisi hisoblanadi? Nevropatolog yana qanday foyda keltirishi mumkin (yashirin epileptogen sababni topish)? Doskada: istisno algoritmini chizdiring (boshqa sabab topilmadi → SUDEP). Tipik xato: SUDEPni gistologik belgisi bor tashxis deb o‘ylash. Gippokamp anomaliyasi tutqanoq sababi yoki oqibati ekani noma’lum."
+    },
+    {
+      "title": "Sun’iy intellekt sud nevropatologiyasida",
+      "bullets": [
+        {
+          "text": "Treglia va hammualliflari sistematik sharhi (PRISMA) 2014–2024-yil may oralig‘ida 34 ta ishni topgan: TBI (bosh miya travmasi) va epilepsiya bo‘yicha.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TBI bo‘yicha atigi 6 ta ish bor, hammasi radiologik. CNN (konvolyutsion neyron tarmoq) PMCT (o‘limdan keyingi kompyuter tomografiya)da o‘limga olib kelgan bosh jarohatini ajratgan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Epilepsiya va o‘smalar bo‘yicha 28 ta ish: AI o‘smalarni yuqori aniqlikda tasniflagan, fokal kortikal displaziyani tuberoz sklerozdan 90% dan yuqori aniqlikda ajratgan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "AI ob’yektiv, takrorlanuvchi dalil berishi mumkin, lekin murakkab usullarning kundalik amaliyotga kirishi hozircha ehtimoldan yiroq.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: AI sud majlisida ob’yektiv dalil bo‘la oladimi? Nega TBI bo‘yicha ishlar kam (6 ta), epilepsiya bo‘yicha ko‘p (28 ta)? Doskada: ikki guruh (TBI va epilepsiya) va ular ostida ishlar sonini chizdiring. Tipik xato: ’AI kundalik amaliyotga kirdi’ deb o‘ylash. Manba aksincha, bu hozircha uzoq maqsad deydi. Qo‘shimcha: PMCT va PRISMA qisqartmalarini talabalar bilan takrorlang."
+    },
+    {
+      "title": "Serebellum, miya morfologiyasi va alkogol",
+      "bullets": [
+        {
+          "text": "Serebellum ‘guvoh qutisi’: valproat yoki alkogol zaharlanishini (yuqori vermis atrofiyasi, tiamin tanqisligi) va gerniyani ko‘rsatishi mumkin.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Supratentorial TBI serebellum to‘g‘ridan-to‘g‘ri shikastlanmasa ham, yillar o‘tib, ayniqsa bolalarda, atrofiya chaqirishi mumkin.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "17 ta jinoiy xulqli fokal shikastlanish tasvirida o‘ng uncinate fasciculus uzilishi topilgan, lekin tasvirning o‘zi sababiy bog‘liqlikni isbotlamaydi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alkogol bilan bog‘liq miya shikastlanishi (ARBD) ishchi xotira va diqqatni buzadi; so‘nggi ishlar neyron yo‘qolishidan ko‘ra mikroglia o‘zgarishini ko‘rsatgan.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: nega serebellum ’guvoh qutisi’ deyiladi? Miya tasviridagi topilma xulq sababi ekanini nega aytib bo‘lmaydi? Doskada: serebellumdan uchta ko‘rsatkich (dori, alkogol, gerniya) chizig‘ini chizdiring. Tipik xato: tasvirdagi o‘zgarishni to‘g‘ridan-to‘g‘ri jinoiy xulq sababi deb talqin qilish. Manba mualliflari aynan shu xavfdan ogohlantiradi. Qo‘shimcha: Whitman holati o‘sma va xulq o‘rtasida aloqa o‘rnatib bo‘lmasligiga misol."
+    },
+    {
+      "title": "Voqea tahlili: SUDEP va otopsiya topilmasi",
+      "bullets": [
+        {
+          "text": "Vaziyat: epilepsiyasi bor shaxs o‘lik topildi. Otopsiyada boshqa o‘lim sababi aniqlanmadi. Savol: nevropatolog qanday xulosa qiladi?",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "SUDEP — epilepsiyali shaxsning kutilmagan, baxtsiz hodisa bo‘lmagan o‘limi. Otopsiyada boshqa sabab topilmasa, shu tashxis qo‘yiladi. U istisno tashxisi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nevropatologning asosiy vazifasi — o‘limning boshqa sabablarini istisno qilish. U ilgari noma’lum bo‘lgan epileptogen holatni ham topishi mumkin.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi! SUDEP ≠ status epilepticus. Ikkalasi ham epilepsiyaning bevosita o‘lim sababi, lekin SUDEP boshqa sabab topilmaganda qo‘yiladi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega SUDEP istisno tashxisi hisoblanadi? 2) Nevropatolog otopsiyada qaysi boshqa sabablarni istisno qiladi? Doskada: ‘epilepsiya → o‘lim’ yo‘lini ikki shoxga chizing: bevosita sabab (SUDEP, status epilepticus) va bilvosita sabab (baxtsiz hodisa, hamroh kasalliklar). Tipik xato: talabalar SUDEPni otopsiyada aniq morfologik belgisi bor tashxis deb o‘ylaydi. Aslida u boshqa sabab topilmaganda qo‘yiladi."
+    },
+    {
+      "title": "Tezkor savol 3: yangi yo‘nalishlar",
+      "bullets": [
+        {
+          "text": "1-savol (AHT): chaqaloqlarda tipik jarohatlarni hosil qiluvchi asosiy mexanizm qaysi kinematik ko‘rsatkich bilan bog‘lanadi?",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol (SUDEP): bu tashxis qaysi turga kiradi va xavfni oshiruvchi omillardan uchtasini ayting.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol (likvor): o‘lim vaqtini baholash uchun likvorda qaysi uch biomarker o‘rganilgan?",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-savol (PMMR): postmortem MRI (PMMR) ning ‘minimal’ protokoli qancha vaqtdan kam davom etadi va nimani qamraydi?",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Javoblar: 1) sagittal burchak tezlanishi, kichik aylanish radiusi bilan. 2) istisno tashxisi; yolg‘iz yashash, bir yilda 3 va undan ko‘p generalizatsiyalangan tutqanoq, uzoqroq apnoe. 3) GFAP, S100B, NSE. 4) 30 daqiqadan kam; miya va tananing 3D T2 va T1 skanlari. Muhokama: qaysi yo‘nalish amaliyotga tezroq kirib keladi? Doskada: 4 savolning kalit so‘zlarini jadvalga yozing. Tipik xato: S100B ni NSE bilan aralashtirish; NSE’ning tendensiyasi tartibsiz edi."
+    },
+    {
+      "title": "Xulosa: sud nevropatologiyasi texnikasining xususiyatlari",
+      "bullets": [
+        {
+          "text": "Soha tavsifiy yordamchi fandan integrativ fanga aylanmoqda. Makroskopik topilmalar biomexanika, neyroradiologiya, genetika va bioinformatika bilan birga talqin qilinadi.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MRI va gistologiyani bog‘lash: 7 Tesla MRI, 3D bosma kesish yo‘naltirgichlari va MRI–blokface moslashuvi oq modda o‘choqlaridan nishonli namuna olishga imkon beradi.",
+          "source": {
+            "author": "Nadim Farhat va boshq.",
+            "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+            "page": "PMID 41126483"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cheklov: yiliga 3–17 maqola chop etilgan, namunalar o‘rtacha 57 kishi, nazorat guruhi 43,4% ishda bor. Ko‘p topilmalar dastlabki, tasdiqlashni talab qiladi.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyingi qadamlar: sud patologlari, neyroradiologlar va bioinjenerlar hamkorligi, yetarli namuna hajmi, nazorat guruhlari va prospektiv klinikopatologik korrelyatsiya.",
+          "source": {
+            "author": "Matschke J va boshq.",
+            "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+            "page": "PMID 42170192"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega bitta usul (masalan, faqat makroskopiya) hozir yetarli emas? 2) Kichik namuna va nazoratsiz tadqiqotlar xulosalarga qanday ta’sir qiladi? Doskada: markazda ‘nevropatolog’, atrofida to‘rt hamkor (sud patologi, neyroradiolog, bioinjener, genetik) va har biri nima beradi. Tipik xato: talabalar tasviriy topilma (masalan, MRI) o‘zi sababiy bog‘liqlikni isbotlaydi deb o‘ylaydi. Aslida u tasdiqlash va kontekstli talqinni talab qiladi."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Miya to‘qimasining mayda namunalari gistopatologiya va immunogistokimyo bilan tahlil qilindi. Bu yondashuv qaysi fanning asosiy xususiyati?",
+      "options": [
+        "Sud patologiyasining makroskopik topilmalarga tayanuvchi yondashuvi",
+        "Nevropatologiyaning mikroskopik to‘qima tahliliga tayanuvchi yondashuvi",
+        "Sud psixiatriyasining klinik suhbatga tayanuvchi yondashuvi",
+        "Shaxsni aniqlashning genetik ekspertizaga tayanuvchi yondashuvi"
+      ],
+      "correct_index": 1,
+      "explanation": "Nevropatologiya mayda to‘qima namunalarini gistopatologiya, immunogistokimyo kabi usullar bilan batafsil tahlil qiladi. Sud patologiyasi esa o‘lim sababi va usulini asosan makroskopik topilmalar hamda holatga asoslangan xulosa bilan aniqlaydi.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192"
+      }
+    },
+    {
+      "question": "Nima uchun markaziy asab tizimi (MNT) tekshiruvi sud-tibbiyotda muhim hisoblanadi?",
+      "options": [
+        "U faqat klinik tashxis uchun kerak, sud jarayoniga aloqasi yo‘q",
+        "U faqat jarohatlarda foydali, kasalliklarda esa ahamiyatga ega emas",
+        "U faqat tasvirlash orqali o‘tadi, to‘qimani qayta ishlash talab etilmaydi",
+        "MNT topilmalari o‘lim sababini aniqlashda va sud jarayonida hal qiluvchi bo‘lishi mumkin"
+      ],
+      "correct_index": 3,
+      "explanation": "Asab kasalliklari va MNT jarohatlari o‘limning keng tarqalgan sabablari. MNTni to‘liq tekshirish maxsus mahorat va murakkab to‘qima ishlovini talab qiladi. Topilmalar o‘lim sababini aniqlashda va huquqiy jarayonlarda hal qiluvchi ahamiyatga ega bo‘lishi mumkin.",
+      "source": {
+        "author": "Oura P va boshq.",
+        "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+        "page": "PMID 37439948"
+      }
+    },
+    {
+      "question": "Skoping sharh muallifi bir maqolani ko‘rdi: unda faqat o‘limdan keyingi tasvirlash o‘rganilgan, neyropatologik usul qo‘llanmagan. Maqola taqdiri qanday bo‘ladi?",
+      "options": [
+        "Sharh mezonlariga mos kelmagani uchun chiqarib tashlanadi",
+        "Sud mavzusiga tegishli bo‘lgani uchun sharhga kiritiladi",
+        "Agar nazorat guruhi bo‘lsa, sharhga kiritiladi",
+        "Faqat inglizcha bo‘lmagani uchun chiqarib tashlanadi"
+      ],
+      "correct_index": 0,
+      "explanation": "Mezonlarga ko‘ra neyropatologik usulni (MNT to‘qimasini makroskopik yoki mikroskopik tekshirishni) qo‘llagan maqolalar olinadi. Faqat o‘limdan keyingi tasvirlashga, tana suyuqliklari tahliliga, shaxsni aniqlashga yoki bosh suyagi sinishiga bag‘ishlangan ishlar chiqarib tashlangan.",
+      "source": {
+        "author": "Oura P va boshq.",
+        "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+        "page": "PMID 37439948"
+      }
+    },
+    {
+      "question": "Tadqiqotchi 122 ta maqola ichidan eng ko‘p o‘rganilgan tadqiqot mavzusini aniqlamoqchi. U qaysi mavzuni tanlaydi?",
+      "options": [
+        "Anatomiya, ya’ni miya tuzilmalari va qon tomirlari variantlari (12,3%)",
+        "Moddalar suiiste’moli, ya’ni spirt, opioid va stimulyatorlar (11,5%)",
+        "Travmatik bosh ichi jarohatlari, ya’ni o‘choqli va diffuz jarohatlar (24,6%)",
+        "Go‘daklik va bolalikdagi kutilmagan o‘lim holatlari tadqiqoti (6,6%)"
+      ],
+      "correct_index": 2,
+      "explanation": "Eng keng tarqalgan mavzu travmatik bosh ichi jarohati (24,6%) bo‘ldi. Undan keyin anatomiya (12,3%) va moddalar suiiste’moli (11,5%) keldi. Kutilmagan bolalik o‘limlari esa 6,6% edi.",
+      "source": {
+        "author": "Oura P va boshq.",
+        "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+        "page": "PMID 37439948"
+      }
+    },
+    {
+      "question": "Tadqiqotchi kichik namunada yangi to‘qima belgisini topdi, lekin nazorat guruhi yo‘q. Sharh mualliflari nuqtai nazaridan qaysi xulosa to‘g‘ri?",
+      "options": [
+        "Natija yakuniy hisoblanadi va darhol amaliyotga joriy qilinadi",
+        "Natija dastlabki, tasdiqlash uchun yetarli hajm va nazorat guruhi kerak",
+        "Tavsifiy ish eng kuchli dalil bo‘lgani uchun natija to‘liq ishonchli",
+        "Yosh oralig‘i keng bo‘lgani uchun natija barcha guruhlarga mos"
+      ],
+      "correct_index": 1,
+      "explanation": "Sharhda ko‘p yangi topilmalar dastlabki xarakterda ekani va tasdiqlanishi kerakligi aytilgan. Maqolalarning yarmidan ko‘pi nazorat guruhisiz, ya’ni tavsifiy bo‘lgan. Mualliflar yetarli namuna hajmi va taqqoslash dizaynidan foydalanishni tavsiya qiladi.",
+      "source": {
+        "author": "Oura P va boshq.",
+        "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+        "page": "PMID 37439948"
+      }
+    },
+    {
+      "question": "Talaba Oura va hamkasblarining sharhi hajmini tushuntirmoqda. 2010–2022 yillar oralig‘ida yakuniy sharhga nechta original maqola kiritilgan?",
+      "options": [
+        "57 ta maqola",
+        "122 ta maqola",
+        "2864 ta maqola",
+        "5053 ta maqola"
+      ],
+      "correct_index": 1,
+      "explanation": "Dastlab 5053 ta topilma bo‘lgan, shundan 2864 tasi maqsadli davrga tushgan. Yakuniy sharhga 122 ta original maqola kiritilgan. 57 soni esa tanlanmaning medianasi (subyektlar soni).",
+      "source": {
+        "author": "Oura P va boshq.",
+        "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+        "page": "PMID 37439948"
+      }
+    },
+    {
+      "question": "Laborant miyani joylash uchun agar eritmasiga saxaroza qo‘shmoqda. Saxaroza qo‘shishdan asosiy maqsad nima?",
+      "options": [
+        "Muhit dielektrik xossalarini miya to‘qimasiga yaqinlashtirish",
+        "Muhitni miya to‘qimasini mustahkamlovchi fiksatorga aylantirish",
+        "Pichoq harakatini yengillashtirish uchun muhitni sirpanchiq qilish",
+        "Agarning qotish tezligini bir necha daqiqagacha oshirish"
+      ],
+      "correct_index": 0,
+      "explanation": "Agar va suvning nisbiy dielektrik o‘tkazuvchanligi taxminan 78, miyaniki esa taxminan 58. Saxaroza uni 68 gacha tushirib, miya xossalariga yaqinlashtiradi. Bu 7 Tesla (7T) yuqori maydonli MRI uchun muhim.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "question": "Laborant agar-saxaroza aralashmasini 65–68°C da to‘liq eritib, isitishni o‘chirdi. Miyani joylash uchun eritma qaysi haroratgacha sovishi kerak?",
+      "options": [
+        "65–68°C gacha",
+        "42°C gacha",
+        "58°C gacha",
+        "30°C gacha"
+      ],
+      "correct_index": 1,
+      "explanation": "Isitish o‘chirilgach, eritma suv hammomida aralashtirilib 42°C gacha sovitiladi. Shundan keyin u miyani joylashga tayyor hisoblanadi.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "question": "Tadqiqotchi qalinligi 0,5 mm bo‘lgan patologik pichoq uchun kesish yo‘naltirgichi loyihalamoqda. Silindrsimon ustunlar orasidagi masofa qancha bo‘ladi?",
+      "options": [
+        "4 mm",
+        "9,8 mm",
+        "0,37 mm",
+        "0,6 mm"
+      ],
+      "correct_index": 3,
+      "explanation": "Ustunlar diametri 4 mm, ular orasidagi masofa esa 0,6 mm bo‘lib, 0,5 mm li pichoqqa moslangan. 9,8 mm kesilgan bo‘lakning qalinligi, 0,37 mm esa MRI voksel o‘lchami.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "question": "Kesishdan so‘ng agar yuzasida pichoq izlari ko‘rindi. MRI da mos kesim tekisligini topishda qaysi element reper (fiducial) vazifasini bajaradi?",
+      "options": [
+        "Qopqoqdagi havo so‘ruvchi chiqish porti",
+        "Konteyner devori va tagining qalinligi",
+        "Yo‘naltirgichning silindrsimon ustunlari",
+        "Qabul g‘altagining ichki o‘lchamlari"
+      ],
+      "correct_index": 2,
+      "explanation": "Ustunlar noyob joylashgan va oson ajraladi: blokface suratlarida oq, T2-SPACE MRI da qora ko‘rinadi. Shu sabab ular ishonchli reper bo‘lib, pichoq izini MRI tekisligiga moslashtirishga imkon beradi.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "question": "Neyropatolog MRI‘da topilgan oq modda lezyonini kesilgan miya plastinkasida aniq topishi kerak. Qaysi yondashuv to‘g‘ri?",
+      "options": [
+        "Lezyonni T2-SPACE tasvirida ustunlarni sanab, qo‘lda belgilash",
+        "Avtomatik lezyon maskasini saqlangan MRI–blokfeys moslashuvi bilan ishlatish",
+        "Plastinkalarni bir hafta formalinda saqlab, lezyonni ko‘z bilan izlash",
+        "GRE tasvirida lezyonni chizib, moslashtirmasdan namuna olish"
+      ],
+      "correct_index": 1,
+      "explanation": "Lezyonlarni T1w ketma-ketlikda chuqur o‘rganish modeli avtomatik aniqlagan. Neyropatolog bu maskalarni saqlangan MRI–blokfeys moslashuvlari bilan birga ishlatib, plastinkadagi aniq joydan namuna olgan.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "question": "Tadqiqotchi 18 plastinkali miyada 14 tasi yo‘naltirgich bilan kesilganini bilib, moslashtirish vaqtini rejalashtirmoqda. Yo‘naltirilgan plastinkalar uchun qancha vaqt kerak?",
+      "options": [
+        "Har bir miya uchun taxminan 10 daqiqa",
+        "Har bir plastinka uchun taxminan 1 soat",
+        "Har bir miya uchun taxminan 4 soat",
+        "Har bir miya uchun taxminan 30 daqiqa"
+      ],
+      "correct_index": 3,
+      "explanation": "14 ta yo‘naltirilgan plastinkani moslashtirish odatda bir miya uchun taxminan 30 daqiqa oldi. Yo‘naltirgichsiz kesilgan to‘rt plastinkaning har biriga taxminan bir soat ketdi.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "question": "Agar-saxarozaga ko‘milgan miyaning GRE tasvirida egatlar va gippokamp yaqinida artefakt ko‘rindi. Eng ehtimoliy sabab qaysi?",
+      "options": [
+        "Agar ichida qolgan havo pufakchalari keltirgan susseptibilik artefakti",
+        "Kesish yo‘naltirgichi ustunlari orasi 0,6 mm bo‘lgani",
+        "Saxaroza qo‘shilgani sababli dielektrik xossalar o‘zgargani",
+        "Polikarbonat filament qatlamlarining yetarli yopishmagani"
+      ],
+      "correct_index": 0,
+      "explanation": "Agar ba’zan havo pufakchalarini hosil qiladi. Bu asosan GRE tasvirlarda egatlar va gippokamp atrofida susseptibilik artefaktlariga olib keladi va pufakchalarni to‘liq yo‘qotish qiyin.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "question": "Kutilmagan o‘lim holatida skaner vaqti cheklangan: PMMR uchun 30 daqiqadan kam vaqt bor. Qaysi standart protokol mos keladi?",
+      "options": [
+        "Ideal protokol: butun tanani 3D skanerlash, SWI va DWI bilan",
+        "Dastlabki 90 daqiqagacha cho‘zilgan eski protokollar",
+        "Minimal protokol: miya va tananing 3D T2 va T1 skanerlari",
+        "Faqat bitta SWI ketma-ketligi bilan qisqa skanerlash"
+      ],
+      "correct_index": 2,
+      "explanation": "ESPR mutaxassislari ikki protokolni kelishdi. Minimal protokol 30 daqiqadan qisqa bo‘lib, miya va tananing 3D T2 hamda T1 skanerlarini o‘z ichiga oladi. Ideal protokol vaqt ko‘p bo‘lganda qo‘llanadi.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192"
+      }
+    },
+    {
+      "question": "Cecchi va hammualliflari tadqiqotida likvorda GFAP konsentratsiyasi o‘lim vaqtidan (PMI) necha kungacha asta-sekin oshib, keyin o‘rtacha pasaydi?",
+      "options": [
+        "1 kungacha",
+        "3 kungacha",
+        "5 kungacha",
+        "6 kungacha"
+      ],
+      "correct_index": 1,
+      "explanation": "Likvorda GFAP 3 kungacha asta-sekin oshib, so‘ng o‘rtacha kamaydi. S100B esa 5-kungacha oshdi. Mualliflar GFAP, NSE va S100B ni, ayniqsa dastlabki 2 kunda, istiqbolli biomarker deb hisoblaydi.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192"
+      }
+    },
+    {
+      "question": "Tadqiqotchilar 6 haftalik va 1 yoshli chaqaloqni taqlid qiluvchi qo‘g‘irchoqlarni silkitdi. Qaysi qo‘g‘irchoqda bosh va tana tezlanishi yuqori chiqdi?",
+      "options": [
+        "Katta (1 yoshli) qo‘g‘irchoqda tezlanish yuqori chiqdi",
+        "Kichik (6 haftalik) qo‘g‘irchoqda tezlanish yuqori chiqdi",
+        "Ikkala qo‘g‘irchoqda tezlanish bir xil chiqdi",
+        "Faqat tana tezlanishi ikki qo‘g‘irchoqda farq qildi"
+      ],
+      "correct_index": 1,
+      "explanation": "Ishtirokchilar kichik qo‘g‘irchoqni silkitganda bosh va tana tezlanishini yuqoriroq hosil qilgan. Kichik qo‘g‘irchoqda sagittal burchakli tezlanish ham yuqori bo‘lgan. Bu natija zo‘ravon bosh jarohatining (AHT) asosan 2–4 oylik chaqaloqlarda uchrashiga mos keladi.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+      }
+    },
+    {
+      "question": "Neyroradiolog 61 ta AHT qurbonida miya poyasining lokal shikastini topmadi. Neyropatolog buni qanday izohlashi mumkin?",
+      "options": [
+        "Miya poyasida aksonal shikast hech qachon hosil bo‘lmaydi",
+        "Miya poyasida faqat keng ko‘lamli shikast hosil bo‘lishi mumkin",
+        "Poyasdagi o‘choqli shikast neyroradiologiya uchun juda mayda bo‘lishi mumkin",
+        "Tasvirlash natijasi gipoksik-ishemik ensefalopatiyani butunlay inkor etadi"
+      ],
+      "correct_index": 2,
+      "explanation": "Neyropatologik dalillarga ko‘ra, poyasdagi o‘choqli shikastlar neyroradiologiya aniqlay olmaydigan darajada kichik bo‘lishi mumkin. Shu sababli neyropatologiya va neyroradiologiya o‘rtasidagi bog‘liqlikni o‘rganuvchi prospektiv tadqiqotlar zarur.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+      }
+    },
+    {
+      "question": "Yosh ayol qurbonida takroriy oila zo‘ravonligi (IPV) fonida surunkali travmatik ensefalopatiyaning (CTE) birinchi aniq holati qaysi yili e’lon qilingan?",
+      "options": [
+        "2002-yilda e’lon qilingan",
+        "1990-yilda e’lon qilingan",
+        "2025-yilda e’lon qilingan",
+        "2021-yilda e’lon qilingan"
+      ],
+      "correct_index": 3,
+      "explanation": "Yosh IPV qurbonida CTE haqidagi birinchi aniq hol 2021-yilda e’lon qilingan. 1990-yilgi Roberts hisobotida esa faqat oz miqdordagi tugunlar topilgan, shuning uchun u CTE ekani noaniq qolgan.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+      }
+    },
+    {
+      "question": "Epilepsiya bilan kasallangan bemor to‘satdan o‘ldi. Otopsiyada boshqa o‘lim sababi topilmadi. Bunda qanday xulosa to‘g‘ri bo‘ladi?",
+      "options": [
+        "SUDEP — istisno tashxisi sifatida qo‘yiladi",
+        "Status epileptikus — faqat shu tashxis qo‘yiladi",
+        "SIDS — tashxis epilepsiyaga qaramay qo‘yiladi",
+        "Baxtsiz hodisa — epilepsiya e’tiborga olinmaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "SUDEP epilepsiyali odamning to‘satdan, baxtsiz hodisasiz o‘limi bo‘lib, otopsiyada boshqa sabab topilmasa qo‘yiladi. Neyropatologning asosiy vazifasi boshqa sabablarni istisno qilishdir, shuning uchun bu istisno tashxisidir.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+      }
+    },
+    {
+      "question": "Laboratoriya sud nevropatologiyasida sun’iy intellektni (AI) kundalik ishga joriy etmoqchi. 2025-yilgi sharhga ko‘ra, bu yo‘nalishning holati qanday?",
+      "options": [
+        "AI allaqachon barcha rutin tekshiruvlarda qo‘llanmoqda",
+        "AI faqat gistologiyada ishlaydi, radiologiyada qo‘llanmaydi",
+        "AI istiqbolli, ammo rutin qo‘llanishi hozircha uzoq maqsad",
+        "AI klassik otopsiya tekshiruvini butunlay almashtirmoqda"
+      ],
+      "correct_index": 2,
+      "explanation": "Sharhda AI radiologik va gistopatologik ma’lumotlarni tahlil qilishda istiqbolli ekani aytilgan. Biroq murakkab va texnik jihatdan qiyin qo‘llanmalarning rutin tashxis jarayoniga kirishi ehtimoldan yiroq. AI klassik tekshiruvni to‘ldirishi mumkin, uni almashtirmaydi.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Arzon yechim: korpus, qirqish yo‘naltirgichi va qopqoqdan iborat bitta to‘plam taxminan 60 dollar turadi. U taxminan 30 ta miya uchun yetadi, ya‘ni bitta miyaga taxminan 2 dollardan to‘g‘ri keladi. Eslab qoling: bir marta chop etiladi, ko‘p marta ishlatiladi.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli (agar-saxaroza muhiti): suv va agarda nisbiy dielektrik o‘tkazuvchanlik taxminan 78, miyada taxminan 58. Saxaroza qo‘shilsa u 68 gacha tushadi. Ya‘ni “78 dan 68 ga, miya (58) ga yaqinlashtiramiz”.",
+      "source": {
+        "author": "Nadim Farhat va boshq.",
+        "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+        "page": "PMID 41126483"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: 1966-yilda Charles Whitman 16 kishini o‘ldirdi. Autopsiyada amigdalani bosgan kichik o‘sma topildi. Mutaxassislar o‘sma va xatti-harakat orasidagi sabab bog‘liqligi isbotlanmaganini ta‘kidladi. Xulosa: tasvir yoki morfologik topilma yolg‘iz o‘zi sababni isbotlamaydi.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192"
+      }
+    },
+    {
+      "text": "Eslab qoling: SUDEP (epilepsiyada kutilmagan to‘satdan o‘lim) bu istisno tashxisi. Autopsiyada boshqa o‘lim sababi topilmasa qo‘yiladi. Neyropatologning asosiy vazifasi boshqa sabablarni chiqarib tashlashdir.",
+      "source": {
+        "author": "Matschke J va boshq.",
+        "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+        "page": "PMID 42170192"
+      }
+    },
+    {
+      "text": "Sud neyropatologiyasi tadqiqotlari tahlili: 2010–2022-yillarda yiliga atigi 3–17 ta maqola chiqqan. Tanlanma mediani 57 kishi bo‘lgan, nazorat guruhi tadqiqotlarning 43,4 foizida ishlatilgan. Demak, ko‘p ishlar tavsifiy xarakterda va topilmalar qo‘shimcha tasdiqlashni talab qiladi.",
+      "source": {
+        "author": "Oura P va boshq.",
+        "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+        "page": "PMID 37439948"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Nadim Farhat va boshq.",
+      "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
+      "year": 2025,
+      "pages": "PMID 41126483; DOI 10.1111/jon.70094"
+    },
+    {
+      "author": "Matschke J va boshq.",
+      "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
+      "year": 2026,
+      "pages": "PMID 42170192; DOI 10.17879/freeneuropathology-2026-9343"
+    },
+    {
+      "author": "Oura P va boshq.",
+      "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+      "year": 2023,
+      "pages": "PMID 37439948; DOI 10.1007/s12024-023-00672-9"
+    }
+  ]
+}

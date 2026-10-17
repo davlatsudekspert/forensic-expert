@@ -1,0 +1,2219 @@
+{
+  "topic": "Gistologik usulning potentsiallari",
+  "slides": [
+    {
+      "title": "Kirish: gistologik usul va uning sud-tibbiy o‘rni",
+      "bullets": [
+        {
+          "text": "Mikroskopiya suyakning o‘limdan keyingi buzilishini mikrostruktura darajasida baholashga imkon beradi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri jarohatlarida immunogistokimyo (IHC) biokimyo va molekulyar biologiya qatori jarohat yoshini o‘rganishda eng ko‘p qo‘llanadigan usullardandir.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyakda yupqa kesmalar bo‘yaladi, shunda tafonomik (o‘limdan keyingi muhit ta’siridagi) o‘zgarishga uchraydigan kollagen va osteotsitlar ko‘rinadi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyak sharhida 45 ta istiqbolli bo‘yoq aniqlangan, ammo tafonomik tadqiqotlarda ularning faqat 3 tasi sinalgan.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama savollari: 1) Nega gistologik usul sud-tibbiyotda vaqtni baholashda qo‘llanadi? 2) Teri va suyak qanday farq qiladi? Doskada: mavzu nomini yozib, ikki shoxli sxema (teri – IHC, suyak – bo‘yash) chizdiring. Tipik xato: IHC ni faqat teriga, bo‘yash usullarini faqat suyakka xos deb o‘ylash va ularning maqsadini aralashtirish.",
+      "diagram_note_removed": null
+    },
+    {
+      "title": "Gistologik usulning sud-tibbiy vazifalari",
+      "bullets": [
+        {
+          "text": "Teri: avval jarohat tirik paytda hosil bo‘lganini (vitalligi) aniqlash muhim.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vitallik tasdiqlansa, jarohatdan keyingi vaqt (PTI) travma va o‘lim bog‘liqligini asoslaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyak: o‘zgarishlar o‘limdan keyingi vaqt (PMI) yoki ko‘milish davri (BI) bilan bog‘liq bo‘lishi mumkin.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki ob‘ekt: teri va suyak",
+        "nodes": [],
+        "header": [
+          "Ob‘ekt",
+          "Usul",
+          "Aniqlanadi"
+        ],
+        "rows": [
+          [
+            "Teri jarohati",
+            "IHC va immunoflyuoressensiya (IF)",
+            "Vitallik va PTI"
+          ],
+          [
+            "Suyak",
+            "Yupqa kesmani bo‘yash",
+            "PMI yoki BI"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama savollari: 1) Vitallikni aniqlash nega PTI dan oldin keladi? 2) PMI va BI qanday farqlanadi? Doskada: teri va suyak ustunli jadvalni o‘zlari chizsin. Tipik xato: PTI (jarohatdan keyingi vaqt) bilan PMI (o‘limdan keyingi vaqt) ni aralashtirish: PTI ≠ PMI."
+    },
+    {
+      "title": "Jarohat yoshini baholash muammosi va IHC afzalligi",
+      "bullets": [
+        {
+          "text": "Jarohat yoshini baholash sud patologiyasida muhim muammo: oltin standart tizim taklif etilmagan, aniq vaqtni belgilash hamon qiyin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IHC bo‘yicha adabiyotda dalillar ko‘p; keng marker tanlovi (to‘qima molekulalari, sitokinlar, o‘sish omillari) vitallikni aniqlashga yordam beradi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IHC qulay, ishonchli va boshqa usullardan farqli ravishda kerakli molekulalar joylashuvini (lokalizatsiyasini) tahlil qila oladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: IHC natijalari ba’zan bir-biriga zid; bitta marker emas, marker paneli jarohat yoshini aniqlashda ishonchliroq bo‘lishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama savollari: 1) Oltin standart yo‘qligi amaliyotga qanday ta’sir qiladi? 2) Nega molekulalar lokalizatsiyasi muhim? Doskada: ‘IHC afzalliklari’ ro‘yxatini (marker tanlovi, qulaylik, ishonchlilik, lokalizatsiya) yozdiring. Tipik xato: IHC ni ‘oltin standart’ deb hisoblash; manbada bunday standart yo‘qligi aytilgan."
+    },
+    {
+      "title": "Vitallik va PTI: nima uchun muhim",
+      "bullets": [
+        {
+          "text": "Vital jarohat tirikligida hosil bo‘ladi; uni o‘limdan keyingi teri o‘zgarishidan ajratish asosiy vazifa.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vitallik tasdiqlangach, jarohatdan keyingi interval (PTI, post-trauma interval) baholanadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: vitallik ≠ PTI. Jarohat yoshini baholashning oltin standarti hali taklif etilmagan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Vitallikdan PTI gacha zanjir",
+        "nodes": [
+          "Teri jarohati aniqlandi",
+          "Vitallik: tirikligidami?",
+          "PTI baholanadi",
+          "Jarohat–o‘lim sababiy aloqasi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega avval vitallik, keyin PTI aniqlanadi? 2) PTI sababiy bog‘liqlik uchun nimani beradi? Doskada: to‘rt bosqichli zanjirni chizdiring. Tipik xato: vitallik va jarohat yoshini bir narsa deb o‘ylash."
+    },
+    {
+      "title": "Sharh metodikasi: qidiruv va PRISMA",
+      "bullets": [
+        {
+          "text": "Qidiruv 2023-yil 18-fevralda boshlandi: PubMed va Scopus, 1973–2022-yillardagi maqolalar.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunohistokimyo (IHC), immunofluoressensiya (IF) o‘rganildi; PRISMA (hisobot qoidalari) asos bo‘ldi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqolalarni uch tadqiqotchi mustaqil baholadi; kelishmovchilik kelishuv orqali hal qilindi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Maqolalarni saralash yo‘li",
+        "nodes": [
+          "PubMed va Scopus qidiruvi",
+          "326 ta maqola topildi",
+          "Mezonlar bo‘yicha saralash",
+          "29 ta maqola + bibliografiyadan",
+          "Jami 46 ta maqola"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bir necha tadqiqotchi mustaqil baholaydi? 2) Ikki bazadan qidirishning afzalligi nima? Doskada: 326 dan 46 gacha saralash voronkasini chizdiring. Tipik xato: sharhni yangi tajriba deb tushunish; bu mavjud adabiyot tahlili."
+    },
+    {
+      "title": "Kiritish va chiqarish mezonlari",
+      "bullets": [
+        {
+          "text": "Kiritish: ingliz tilidagi original, prospektiv va retrospektiv kohort tadqiqotlar.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Namuna: murda terisi, tirik odam biopsiyasi hamda sichqon, kalamush va cho‘chqa terisi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Chiqarish: ingliz tilida bo‘lmagan, sharh maqolalar va IHC dan boshqa usullar.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Mezonlar jadvali",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Kiritildi",
+          "Chiqarildi"
+        ],
+        "rows": [
+          [
+            "Til",
+            "Ingliz tilidagi to‘liq matn",
+            "Ingliz tilida bo‘lmagan"
+          ],
+          [
+            "Maqola turi",
+            "Original, prospektiv/retrospektiv kohort",
+            "Sharh va tizimli sharhlar"
+          ],
+          [
+            "Usul",
+            "IHC va IF orqali PTI aniqlash",
+            "IHC dan boshqa usullar"
+          ],
+          [
+            "Namuna",
+            "Odam va tajriba hayvonlari terisi",
+            "Teridan boshqa to‘qima"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega sharh maqolalar chiqarib tashlandi? 2) Hayvon namunalarini kiritish qanday foyda beradi? Doskada: to‘rt qatorli mezon jadvalini ko‘chiring. Tipik xato: IF ni IHC dan butunlay alohida va mezondan tashqari deb o‘ylash; ikkalasi ham kiritilgan."
+    },
+    {
+      "title": "Natijalar: maqolalarni saralash va usullar ulushi",
+      "bullets": [
+        {
+          "text": "326 maqoladan (PubMed 288, Scopus 38) 29 tasi kiritildi; ro‘yxatlardan qo‘shilib jami 46 ta bo‘ldi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "25 tadqiqotda ko‘p markerli, 21 tasida bitta markerli yondashuv qo‘llangan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "31 tadqiqotda statistik tahlil bo‘lgan, 15 tasida faqat sifat kuzatuvlari berilgan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Usullar ulushi (46 maqola)",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Soni",
+          "Ulushi"
+        ],
+        "rows": [
+          [
+            "Faqat IHC (immunogistokimyo)",
+            "32",
+            "70%"
+          ],
+          [
+            "Faqat IF (immunofluoressensiya)",
+            "5",
+            "10%"
+          ],
+          [
+            "IHC va IF birgalikda",
+            "9",
+            "20%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ko‘p markerli tadqiqotlar ko‘proq uchraydi? 2) Statistik tahlilsiz tadqiqotga qanchalik ishonish mumkin? Doskada: 326 dan 46 gacha torayuvchi voronka chizing. Tipik xato: 46 ta maqolani faqat qidiruv natijasi deb o‘ylash; 17 tasi ro‘yxatlardan qo‘shilgan."
+    },
+    {
+      "title": "Voqea tahlili 1: maqolalarni saralash",
+      "bullets": [
+        {
+          "text": "Vaziyat: tadqiqotchilar PubMed va Scopus bazalaridan jarohat yoshini baholashga oid 326 ta maqola topdi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Chiqarilganlar: 19 tasi ingliz tilida emas, 14 tasi sharh, 235 tasi boshqa usul yoki boshqa to‘qima, 29 tasi dublikat.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hisob: 19+14+235+29 = 297 ta chiqarildi, qolgan 29 ta maqola tahlilga kiritildi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: nega aynan shu mezonlar (til, maqola turi, usul, to‘qima) bo‘yicha saralash kerak bo‘lgan?",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Sharhlarni chiqarish nima uchun kerak (ikkilamchi ma’lumot)? 2) Teri o‘rniga boshqa to‘qimani olsak natija qanday o‘zgaradi? Doskada: chiqarish sabablarini ustunli diagramma shaklida chizdiring. Tipik xato: dublikatlarni ham ‘boshqa usul’ toifasiga qo‘shib hisoblash."
+    },
+    {
+      "title": "Tezkor savol 1",
+      "bullets": [
+        {
+          "text": "1-savol: PTI nima? Javob: post-trauma interval, ya’ni jarohat hosil bo‘lgandan keyin o‘tgan vaqt.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: PTI nima uchun muhim? Javob: jarohat bilan o‘lim o‘rtasidagi sababiy bog‘liqlikni aniqlashga yordam beradi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol: IHC ning asosiy ustunligi? Javob: qo‘llash oson, ishonchli va molekulalar joylashuvini tahlil qila oladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: IHC va IF jarohat holati va rivojini kuzatadi, lekin o‘lim vaqtini (post-mortem interval) aniq belgilay olmaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Talabalar javobni yopiq daftarda yozsin, so‘ng birgalikda tekshiring. Muhokama: PTI va PMI (o‘lim vaqti) farqi nimada? Doskada: vaqt chizig‘ida jarohat – o‘lim – ekspertiza nuqtalarini belgilang, PTI oralig‘ini ko‘rsating. Tipik xato: PTI ni post-mortem interval bilan adashtirish."
+    },
+    {
+      "title": "Jarohat bitishining bosqichlari",
+      "bullets": [
+        {
+          "text": "Jarohat paydo bo‘lishi bilan bitish jarayoni darhol boshlanadi; avval qon oqishi to‘xtatiladi (gemostaz).",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyin yallig‘lanish, hujayralar ko‘chishi va ko‘payishi, yangi qon tomirlar hosil bo‘lishi davom etadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oxirida epiteliy jarohatni qoplaydi, kollagen sintezlanib to‘qimaga mustahkamlik beradi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Bitish zanjiri",
+        "nodes": [
+          "Gemostaz",
+          "Yallig‘lanish",
+          "Proliferatsiya, migratsiya",
+          "Angiogenez",
+          "Re-epitelizatsiya, kollagen"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega markerlar vaqt zanjiriga bog‘lanadi? 2) Qaysi bosqichda qaysi hujayra ustun bo‘ladi? Doskada: 5 bosqichli zanjirni chizib, har bosqich ostiga mumkin bo‘lgan marker guruhini yozdiring. Tipik xato: bosqichlarni qat’iy ajratilgan deb o‘ylash; ular bir-birining ustiga chiqadi."
+    },
+    {
+      "title": "Koagulyatsiya omillari: dastlabki soatlar",
+      "bullets": [
+        {
+          "text": "Van de Goot fibronektin, CD62p, VIII omil asosida jarohat yoshini baholovchi ballik tizim tuzgan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yangi jarohatlarda uchala markerning immunogistokimyo (IHC) bali nazoratdagi sog‘ teridan yuqori (p < 0,001).",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu markerlar erta jarohatda, ayniqsa jarohatdan keyingi interval (PTI) 0–1 soatda, musbat bo‘yaladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Van de Goot markerlari",
+        "nodes": [],
+        "header": [
+          "Marker",
+          "Yangi jarohat",
+          "Nazorat"
+        ],
+        "rows": [
+          [
+            "Fibronektin",
+            "IHC bali sezilarli oshgan",
+            "Past"
+          ],
+          [
+            "CD62p",
+            "IHC bali sezilarli oshgan",
+            "Past"
+          ],
+          [
+            "VIII omil",
+            "IHC bali sezilarli oshgan",
+            "Past"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega nazorat sifatida jarohatsiz teri olinadi? 2) Ballik tizim oddiy sanashdan nimasi bilan yaxshi? Doskada: PTI o‘qini chizib, 0–1 soat oralig‘ini belgilang. Tipik xato: bu markerlar kechki jarohat yoshini ham aniqlaydi deb o‘ylash; manbada ular erta davr uchun ko‘rsatilgan."
+    },
+    {
+      "title": "FVIIIra, CD15 va triptaza: sezgirlik va o‘ziga xoslik",
+      "bullets": [
+        {
+          "text": "Gauchotte teshilgan teri jarohatlari vaqtini FVIIIra, CD15 va triptaza markerlari bilan o‘rgangan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "FVIIIra jarrohlik va nazorat jarohatlarida ham oshgan (53%), shu sababli o‘ziga xosligi past.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: sezgirlik ≠ o‘ziga xoslik; yuqori sezgirlik markerni hali ishonchli qilmaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Markerlarni solishtirish",
+        "nodes": [],
+        "header": [
+          "Marker",
+          "Ko‘rsatkich",
+          "Baho"
+        ],
+        "rows": [
+          [
+            "FVIIIra",
+            "Sezgirlik 100%, o‘ziga xoslik 47%",
+            "Sezgir, lekin o‘ziga xos emas"
+          ],
+          [
+            "CD15",
+            "Yangi ante-mortem va post-mortemni ajratadi",
+            "Foydaliroq marker"
+          ],
+          [
+            "Triptaza",
+            "Yangi ante-mortem va post-mortemni ajratadi",
+            "Foydaliroq marker"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Sezgirlik va o‘ziga xoslik farqi nima? 2) FVIIIra jarrohlik jarohatida ham oshsa, ekspertizada qanday xavf tug‘iladi? Doskada: ikki ustunli chizma bilan sezgirlik (100%) va o‘ziga xoslik (47%) ni solishtiring. Tipik xato: sezgirlik va o‘ziga xoslikni bir narsa deb aralashtirish."
+    },
+    {
+      "title": "Diqqat: sezgirlik ≠ o‘ziga xoslik",
+      "bullets": [
+        {
+          "text": "Gauchotte va hamkasblari FVIIIra markerini tekshirdi. Uning sezgirligi 100% bo‘ldi, o‘ziga xosligi esa atigi 47%.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "FVIIIra ning ortishi jarrohlik va salbiy nazorat jarohatlarida ham kuzatildi (53%). Ya’ni marker tirik jarohatga xos emas.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuning uchun FVIIIra jarohat vitalligining yuqori sezgir, lekin o‘ziga xos bo‘lmagan markeri hisoblanadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yaqin vaqtdagi tirik jarohatni o‘limdan keyingisidan ajratishda CD15 va triptaza foydaliroq deb hisoblanadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Sezgirlik 100% bo‘lsa, nega marker yolg‘iz o‘zi yetarli emas? 2) Nazorat jarohatlarida musbat natija nimani anglatadi? Doskada: ikki ustunli ‘sezgirlik / o‘ziga xoslik’ sxemasini chizdiring va FVIIIra, CD15, triptazani joylashtiring. Tipik xato: ‘marker musbat bo‘lsa, jarohat albatta tirik’ deb o‘ylash. Talabalarga yuqori sezgirlik faqat kasallikni o‘tkazib yubormaslikni bildirishini, tasdiqlash uchun o‘ziga xoslik kerakligini eslatib o‘ting."
+    },
+    {
+      "title": "Yallig‘lanish sitokinlarining vaqt cho‘qqilari",
+      "bullets": [
+        {
+          "text": "Kondo (1996): TNFα va IL-1β ning statistik ahamiyatli cho‘qqisi jarohatdan 3 soat o‘tgach topildi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IL-1β ning kichikroq, lekin muhim cho‘qqisi 6 soatda, IL-6 cho‘qqisi esa 12 soatda kuzatildi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Neytrofillar 3–6 soatda, fagotsitlar 24 soatda (o‘tish fazasi) shu sitokinlar uchun musbat bo‘yaldi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Sitokin cho‘qqilari vaqt chizig‘i",
+        "nodes": [],
+        "header": [
+          "Sitokin",
+          "Vaqt",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "TNFα",
+            "3 soat",
+            "Ahamiyatli cho‘qqi"
+          ],
+          [
+            "IL-1β",
+            "3 soat",
+            "Birinchi cho‘qqi"
+          ],
+          [
+            "IL-1β",
+            "6 soat",
+            "Kichikroq, lekin muhim"
+          ],
+          [
+            "IL-6",
+            "12 soat",
+            "Kechroq cho‘qqi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bitta sitokin cho‘qqisi o‘rniga bir nechta sitokin birga baholanadi? 2) IL-1β ning ikki cho‘qqisi nimani anglatishi mumkin? Doskada: 0 dan 24 soatgacha vaqt o‘qini chizib, TNFα, IL-1β va IL-6 cho‘qqilarini belgilang. Tipik xato: IL-6 ni erta marker deb o‘ylash. Aslida u 12 soatda cho‘qqiga chiqadi, TNFα va IL-1β esa 3 soatda."
+    },
+    {
+      "title": "IL-1α, IL-8, MCP-1 va MIP-1α",
+      "bullets": [
+        {
+          "text": "Kondo (1999): neytrofillar jarohatdan 4 soat o‘tib paydo bo‘ldi. Ularning sitoplazmasi anti-IL-1α bilan bo‘yalib, bir sutkagacha musbat qoldi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IL-1α musbat hujayralar ulushi 30% dan oshsa, jarohat yoshi bir sutka yoki undan kam bo‘lishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Grellner: IL-1, IL-6 va TNF-α tirik jarohatda erta paydo bo‘ladi. Eng erta javob 15 daqiqada kuzatilib, bir necha soat saqlandi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kondo (2002): IL-8, MCP-1 (monotsit xemoattraktant oqsili) va MIP-1α dastlab 12 soatgacha neytrofillarda, keyin makrofag va fibroblastlarda topildi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Neytrofillardan makrofaglarga o‘tish jarohat yoshini baholashda qanday yordam beradi? 2) IL-1α ning 30% chegarasi nimani ko‘rsatadi? Doskada: neytrofil (0–12 soat) dan makrofag va fibroblastga o‘tish strelkasini chizib, har bosqichga mos markerlarni yozing. Tipik xato: 30% chegarasini aniq yosh deb qabul qilish. U faqat ‘bir sutka yoki kamroq’ degan ehtimoliy ko‘rsatkich."
+    },
+    {
+      "title": "Immun hujayralar: neytrofil, makrofag, limfotsit",
+      "bullets": [
+        {
+          "text": "Fronczek tirik odamlar teri biopsiyasini o‘rgangan: immun hujayralar jarohat yoshiga qarab vaqtga bog‘liq naqsh beradi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Neytrofillar va MIP-1 musbat yallig‘lanish hujayralari 0,2–4 kunlik jarohatda sezilarli ko‘p bo‘ladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: epidermisdagi IL-8 ifodasi jarohat yoshi bilan bog‘liq emas.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Fronczek: hujayralar cho‘qqisi",
+        "nodes": [],
+        "header": [
+          "Hujayra",
+          "Marker",
+          "Cho‘qqi davri"
+        ],
+        "rows": [
+          [
+            "Neytrofil",
+            "Hujayra soni",
+            "0,2–4 kun"
+          ],
+          [
+            "Faol makrofag",
+            "CD68",
+            "2–4 kun"
+          ],
+          [
+            "Limfotsit",
+            "CD45",
+            "0,2–2 kun"
+          ],
+          [
+            "Limfotsit kamayishi",
+            "CD45",
+            "10 kungacha pasayadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega limfotsitlar makrofaglardan oldinroq cho‘qqiga chiqadi deb o‘ylaysiz? 2) Bitta hujayra turi yoshni aniq berishi mumkinmi? Doskada: vaqt o‘qini (0–10 kun) chizib, uch hujayraning cho‘qqi oraliqlarini turli rangda belgilang. Tipik xato: IL-8 ni yosh markeri deb hisoblash; manbada u epidermisda yosh bilan bog‘liq emas. Eslab qoling: avval limfotsit va neytrofil, keyin makrofag. CD45 = limfotsit, CD68 = makrofag."
+    },
+    {
+      "title": "CD14 va dendritik hujayralar",
+      "bullets": [
+        {
+          "text": "Yagi: CD14 jarohatdan keyin 2–5 kunda sezilarli ortadi. 1–5 kunlik jarohatni aniqlashda sezgirlik 100%, o‘ziga xoslik 87,2%.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "CD14, CD32B va CD68 uchalasi musbat bo‘lsa jarohat 1–5 kunlik; uchalasi manfiy bo‘lsa, bir kundan yosh deb baholanadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fouad: CD14 cho‘qqisi 1–3 kunda (96,40 ± 3,78%), 3 kundan keyin keskin pasayadi (14,80 ± 3,49%). Diqqat: Yagi va Fouad oraliqlari farq qiladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuninaka: CD11c+/HLA-DRα+ dendritik hujayralar soni 50 dan oshsa, jarohat yoshi 4–14 kun. Boshqa markerlar bilan oraliq toraytiriladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega Yagi (1–5 kun) va Fouad (1–3 kun) oraliqlari farq qilishi mumkin? 2) Dendritik hujayralar >50 qanday holatda foydali? Doskada: CD14 uchun ikki mualliflning oraliqlarini ikki parallel chiziq bilan chizib, farqni ko‘rsating. Tipik xato: CD14 oraliqlarini bir xil deb yodlash; manbada Yagi 1–5, Fouad 1–3 kun. Dendritik hujayralar chegarasi (>50) faqat 4–14 kun uchun ishlatiladi."
+    },
+    {
+      "title": "Mast hujayralar, gistamin va VCAM-1",
+      "bullets": [
+        {
+          "text": "Bonelli: tirik jarohatda mast hujayralar soni 1–3 soatda cho‘qqiga chiqadi; o‘limdan keyingi holatlarda ular sezilarli kam.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jebur: dermada mast hujayra zichligi nazoratdagidan yuqori va jarohatdan o‘tgan vaqt bilan to‘g‘ridan-to‘g‘ri bog‘liq.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zhong va Zhen: odam va kalamush terisida gistamin miqdori jarohatdan keyin 30 daqiqagacha asta-sekin ortadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dressler: VCAM-1 (tomir hujayra adgeziya molekulasi-1) ifodasi 4–6 soatda cho‘qqiga chiqib, so‘ng pasayadi. Yolg‘iz u jarohat yoshini baholashga yetmaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Mast hujayralarning o‘limdan keyin kamayishi hayotiylikni baholashda nimani bildiradi? 2) VCAM-1 nega yolg‘iz yetarli emas va qanday markerlar bilan birga qo‘llanadi? Doskada: 0–6 soatlik qisqa vaqt chizig‘ida gistamin (30 daqiqagacha), mast hujayra (1–3 soat) va VCAM-1 (4–6 soat) nuqtalarini belgilang. Tipik xato: VCAM-1 ni yagona marker sifatida yosh aniqlashda ishlatish; manbada bu yetarli emas deyilgan."
+    },
+    {
+      "title": "Voqea tahlili 2: sitokin va immun markerlar",
+      "bullets": [
+        {
+          "text": "Vaziyat: biopsiyada CD14 yuqori, CD14/CD32B/CD68 uchligi musbat. Yagi tadqiqotida CD14 jarohatdan 2–5 kun o‘tgach sezilarli oshgan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "CD14/CD32B/CD68 uchligi musbat bo‘lsa jarohat yoshi 1–5 kun; uchlik manfiy bo‘lsa 1 kundan kam deb baholangan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fouad: CD14 cho‘qqisi 1–3 kunda (96,40 ± 3,78%), 3 kundan keyin keskin pasaygan (14,80 ± 3,49%). Taxminiy yosh: 1–3 kun.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nega bitta marker yetmaydi: VCAM-1 yolg‘iz o‘zi aniq yosh uchun yetarli emas. Marker paneli bitta markerdan ishonchliroq.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.3 va 4-bo‘limlar"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6–7 daq. Muhokama: 1) CD14 yuqori bo‘lsa, nega 1–3 kun va 1–5 kun diapazonlari farq qiladi? 2) Nega marker paneli kerak? Doskada: vaqt o‘qini chizib, CD14 cho‘qqisi va uchlik musbat oralig‘ini belgilang. Tipik xato: bitta markerga tayanib aniq soat yoki kun aytish."
+    },
+    {
+      "title": "Tezkor savol 2",
+      "bullets": [
+        {
+          "text": "1-savol: qaysi markerlar erta, 0–1 soatda musbat bo‘ladi? Javob: fibronektin/CD62p/faktor VIII va FVIIIra/CD15/triptaza.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: sitokinlarda 3 soatlik cho‘qqi kimda? Javob: TNFα va IL-1β; IL-6 cho‘qqisi esa jarohatdan 12 soat keyin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.2-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol: qaysi ko‘rsatkich kechroq, 4–14 kunni bildiradi? Javob: dendritik hujayralar soni >50 (CD11c+/HLA-DRα+).",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi. FVIIIra sezgirligi 100%, o‘ziga xosligi 47%; sezgirlik ≠ o‘ziga xoslik, yolg‘iz dalil bo‘lmaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4–5 daq. Talabalar javobni yozib, so‘ng guruhda tekshiradi. Muhokama: sezgirlik va o‘ziga xoslik farqi nimada? FVIIIra qachon yordam beradi? Doskada: erta (0–1 soat) va kech (4–14 kun) markerlarini ikki ustunga ajrating. Tipik xato: sezgirlikni o‘ziga xoslik bilan aralashtirish."
+    },
+    {
+      "title": "O‘sish omillari: TGF va VEGF",
+      "bullets": [
+        {
+          "text": "TGF-α va TGF-β1 jarohatdan 10 daqiqada javob beradi, 30–60 daqiqada keskin kuchayadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TGF-α EGFga o‘xshash, erta angiogenezni boshqaradi; TGF-α va TGF-β1 o‘zaro bog‘liq emas.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "VEGF-musbat hujayralar >50% bo‘lsa, jarohat yoshi 7–14 kun bo‘lishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.4-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "O‘sish omillari zanjiri",
+        "nodes": [
+          "TGF-α/β1: 10 daqiqa",
+          "Kuchayish: 30–60 daqiqa",
+          "VEGF-siz neytrofil: 4 s–1 kun",
+          "VEGF+ >50%: 7–14 kun",
+          "Kalamush: cho‘qqi 5–7 kun"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5–6 daq. Muhokama: 1) Nega TGF erta, VEGF kech omil hisoblanadi? 2) Hayvon (kalamush) ma’lumotini odamga o‘tkazishda nimani hisobga olish kerak? Doskada: daqiqalardan kunlargacha vaqt chizig‘ini chizib, omillarni joylashtiring. Tipik xato: TGF-α va TGF-β1 o‘zaro bog‘liq deb o‘ylash."
+    },
+    {
+      "title": "Fermentlar: esteraza, MMP, COX-2",
+      "bullets": [
+        {
+          "text": "Nospetsifik esteraza vital jarohatlarning ~40% ida topilgan (1 soat–5 kun oralig‘ida).",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MMP-2+ va MMP-9+ makrofaglar yara yoshi bilan ko‘payadi; MMP-9 oralig‘i manbada 4–14 va 3–14 kun deb berilgan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5-bo‘lim"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Diqqat: COX-2 (siklooksigenaza-2) >40% bo‘lsa 8 soat–3 kun; >50% sud-tibbiy ahamiyatli bo‘lishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ferment belgilari chegaralari",
+        "nodes": [],
+        "header": [
+          "Marker",
+          "Chegara",
+          "Yara yoshi"
+        ],
+        "rows": [
+          [
+            "Nospetsifik esteraza",
+            "~40% namunada",
+            "1 soat–5 kun"
+          ],
+          [
+            "MMP-2+ makrofaglar",
+            ">25 hujayra",
+            "9–12 kun"
+          ],
+          [
+            "MMP-9+ makrofaglar",
+            ">30 hujayra",
+            "3–14 kun"
+          ],
+          [
+            "COX-2",
+            "musbat ulush >40%",
+            "8 soat–3 kun"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bitta ferment o‘rniga markerlar paneli ishonchliroq? 2) MMP-9 uchun manbadagi ikki xil oraliq (4–14 va 3–14 kun) nimani anglatadi? Doskada: to‘rt qatorli chegaralar jadvalini ko‘chirib chizdiring va vaqt o‘qida joylashtiring. Tipik xato: MMP-2 (9–12 kun) va MMP-9 (3–14 kun) chegaralarini, hujayra sonlarini (25 va 30) almashtirib yuborish. MMP — matriks metalloproteinaza."
+    },
+    {
+      "title": "Kollagenlar va bazal membrana vaqt chizig‘i",
+      "bullets": [
+        {
+          "text": "Kollagen III 2,5 kundan oldin ko‘rinmaydi; V uch kunda paydo bo‘ladi va III dan kuchsizroq bo‘ladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "I va VI kollagen ~6–7 kunda paydo bo‘ladi; yo‘qligi yara 6–7 kundan yosh ekaniga ishora qiladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: VII tur — bazal membrana kollageni; bo‘laklari ~4 kunda, to‘liq qayta tuzilishi 8+ kunda.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kollagenlar paydo bo‘lish vaqti",
+        "nodes": [],
+        "header": [
+          "Kollagen",
+          "Turi",
+          "Belgi"
+        ],
+        "rows": [
+          [
+            "III",
+            "Interstitsial",
+            "<2,5 kunda yo‘q; >5 kunda kuchayadi"
+          ],
+          [
+            "V",
+            "Interstitsial",
+            "~3 kun; III dan kuchsizroq"
+          ],
+          [
+            "I va VI",
+            "Interstitsial",
+            "~6–7 kun"
+          ],
+          [
+            "VII",
+            "Bazal membrana",
+            "~4 kun bo‘lak; 8+ kun to‘liq"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Kollagen I va VI yo‘qligi nimadan dalolat beradi? 2) Interstitsial va bazal membrana kollagenlari qanday farqlanadi? Doskada: 0 dan 8+ kungacha vaqt chizig‘ini chizib, III, V, VII, I/VI paydo bo‘lish nuqtalarini belgilang. Tipik xato: kollagen VII ni interstitsial deb o‘ylash (u bazal membranaga xos). Eslab qoling: interstitsial — I, III, V, VI; bazal membrana — IV va VII."
+    },
+    {
+      "title": "Miofibroblast, laminin, fibronektin, tenastsin, selektin",
+      "bullets": [
+        {
+          "text": "α-SMA (alfa-silliq mushak aktini) pozitiv miofibroblastlar ~5 kunda paydo bo‘ladi; ular ~5 kun va undan eski yarani ko‘rsatadi, lekin keksa yarani aniq belgilay olmaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miofibroblast atrofida laminin va HSPG (geparan sulfat proteoglikan) kamida 1,5 kunlik yarani bildiradi; laminin ko‘proq hujayra va yarada topilgani uchun foydaliroq.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: fibronektin vitallik belgisi sifatida o‘rganilgan, ammo o‘limdan keyingi musbat reaksiya qon komponentlarining passiv transudatsiyasidan bo‘lishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tenastsin bo‘yalishi yara yoshi bilan susayadi (~1,5 oyda ham ko‘rinadi); E-selektin 1 soat–17 kun topiladi, 12 soatda sezilarli kamayadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Fibronektin musbat bo‘lsa, jarohat vital deb aytish mumkinmi? Passiv transudatsiya nimani o‘zgartiradi? 2) Nega laminin HSPG ga qaraganda foydaliroq? Doskada: miofibroblast atrofida laminin va HSPG joylashuvini sodda sxema qilib chizdiring, ~5 kun va 1,5 kun belgilarini yozing. Tipik xato: α-SMA ni yara yoshining aniq o‘lchovi deb hisoblash (u faqat taxminan 5 kun va undan ko‘p degan ma’no beradi). Qisqa voqea: yara namunasida fibronektin kuchli musbat — qanday qo‘shimcha markerlar kerak?"
+    },
+    {
+      "title": "Boshqa markerlar: AQP, ORP150, ubikvitin, CHI3L1, EPC",
+      "bullets": [
+        {
+          "text": "Akvaporinlar (AQP) – suv tashuvchi kanal oqsillari bo‘lib, hujayralar ko‘chishida ishtirok etadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.7-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ubikvitin: erta bosqichda neytrofillar va yadro ichida kuchli musbat reaksiya kuzatiladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.7-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "ORP150 – hujayra stressida ortadigan oqsil; EPC – endotelial progenitor hujayralar.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.7-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kech bosqich markerlari",
+        "nodes": [],
+        "header": [
+          "Marker",
+          "Ko‘rsatkich",
+          "Jarohat yoshi"
+        ],
+        "rows": [
+          [
+            "AQP3",
+            "musbat hujayralar soni >300",
+            "5–10 kun"
+          ],
+          [
+            "ORP150",
+            "musbat ulush >50%",
+            "7–14 kun"
+          ],
+          [
+            "EPC",
+            "2-kundan paydo bo‘ladi, ko‘payadi",
+            "2 kundan keyin"
+          ],
+          [
+            "CHI3L1",
+            "4–6-kunda keskin ko‘payadi",
+            "cho‘qqi 4–6 kun"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ORP150 va AQP3 faqat kechroq bosqichlar uchun qulay? 2) CHI3L1 7–13-kunlarda nega kamayadi deb o‘ylaysiz? Doskada chizish: yuqoridagi jadvalni 4 qator qilib ko‘chiring va har markerga kun o‘qini chizing. Tipik xato: AQP3 ko‘rsatkichini (>300) ORP150 ulushi (>50%) bilan aralashtirish – biri hujayralar soni, ikkinchisi foiz."
+    },
+    {
+      "title": "Markerlar guruhlari bo‘yicha vaqt xaritasi",
+      "bullets": [
+        {
+          "text": "Koagulyatsiya omillari (fibronektin, CD62p, VIII omil) birinchi soatda eng aniq musbat bo‘ladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1 va 5-bo‘limlar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sitokin va immun markerlar 1 soatdan 5 kungacha; dendritik hujayralar >50 bo‘lsa, 14 kungacha.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.3 va 5-bo‘limlar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: bitta marker ishonchsiz; ko‘p markerli panel eng ishonchli yondashuv hisoblanadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4 va 5-bo‘limlar"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Guruhlar va vaqt oralig‘i",
+        "nodes": [],
+        "header": [
+          "Guruh",
+          "Vaqt",
+          "Misol"
+        ],
+        "rows": [
+          [
+            "Koagulyatsiya",
+            "0–1 soat",
+            "fibronektin, CD62p, VIII omil"
+          ],
+          [
+            "Sitokin va immun",
+            "1 soat–5 kun",
+            "IL-1, TNFα, CD14, makrofaglar"
+          ],
+          [
+            "Dendritik hujayralar",
+            "14 kungacha",
+            "CD11c+/HLA-DRα+ soni >50"
+          ],
+          [
+            "Boshqa markerlar",
+            "2–14 kun",
+            "AQP, ORP150, ubikvitin, EPC"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi guruh eng erta jarohatni ajratadi? 2) Nega bir nechta guruhni birga qo‘llash aniqroq natija beradi? Doskada chizish: 0 dan 14 kungacha vaqt o‘qini chizib, har guruh oralig‘ini rangli chiziq bilan belgilang. Tipik xato: dendritik hujayralar (14 kungacha) oralig‘ini butun sitokin guruhiga umumlashtirish."
+    },
+    {
+      "title": "Voqea tahlili 3: fermentlar va kollagenlar",
+      "bullets": [
+        {
+          "text": "Vaziyat: jarohat namunasida siklooksigenaza-2 (COX-2) musbat hujayralar ulushi >40%, kollagen I va VI topilmadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5 va 4.6-bo‘limlar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "COX-2 ulushi >40% jarohat yoshi 8 soatdan 3 kungacha ekanini ko‘rsatadi; >50% sud-tibbiy ahamiyatga ega bo‘lishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5 va 5-bo‘limlar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kollagen I va VI odatda 6–7-kunlarda paydo bo‘ladi; ular yo‘qligi jarohat yoshi 6–7 kundan kam ekanini bildiradi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xulosa: ikki natija bir-biriga zid emas, jarohat taxminan 8 soat–3 kun oralig‘ida. Savol: qaysi qo‘shimcha marker buni aniqlaydi?",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5, 4.6 va 5-bo‘limlar"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Ikki markerning oraliqlari qanday kesishadi? 2) Qo‘shimcha qaysi marker (masalan, CD14 yoki MMP-9) xulosani toraytirishi mumkin? Doskada chizish: COX-2 (8 soat–3 kun) va kollagen I/VI yo‘qligi (<6–7 kun) oraliqlarini bitta o‘qda chizib, kesishmasini bo‘yang. Tipik xato: kollagen yo‘qligini ‘jarohat juda yangi’ deb xulosa qilish – u faqat 6–7 kundan yoshroq degani, 8 soat–3 kun oralig‘ini COX-2 beradi."
+    },
+    {
+      "title": "Teri bo‘limi xulosasi: ko‘p markerli yondashuv",
+      "bullets": [
+        {
+          "text": "Bir nechta marker va usul birga qo‘llanganda sezgirlik va o‘ziga xoslik yuqori bo‘ladi, ammo ish ko‘proq vaqt va murakkablik talab qiladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marker paneli yolg‘iz markerdan ishonchliroq. Ko‘p markerli yondashuv jarohat yoshini baholashning eng ishonchli usuli deb hisoblanadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: immunogistokimyo (IHC) va immunofluoressensiya (IF) jarohat rivoji va hayotiyligini kuzatadi, lekin o‘limdan keyingi intervalni aniq belgilay olmaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kelgusida o‘limdan keyingi jarohat yoshini baholash uchun yuqori sezgir va o‘ziga xos marker topish uchun yangi tadqiqotlar kerak.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega bitta marker o‘rniga panel ishonchliroq? 2) Panelning kamchiligi nima? Doskada chizish: «bitta marker» va «marker paneli» ustunlari bilan ikki tomonlama afzallik/kamchilik jadvali. Tipik xato: talabalar IHC/IF jarohat yoshi va o‘limdan keyingi intervalni bir xil narsa deb o‘ylaydi."
+    },
+    {
+      "title": "Suyak gistologiyasi: diagenez va tafonomik muhit",
+      "bullets": [
+        {
+          "text": "Diagenez — suyakning kimyoviy va fizik o‘zgarishi: kollagen va gidroksiapatit nisbati siljiydi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Harorat 10 °C ko‘tarilsa, reaksiya tezligi, jumladan mikrob faolligi, ikki baravar oshadi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: o‘limdan keyingi interval (PMI) va ko‘milish davri (BI) muhitga bog‘liq baholanadi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Suyak diagenezi zanjiri",
+        "nodes": [
+          "Jasad parchalanishi",
+          "Atmosfera, litosfera, biosfera",
+          "Harorat, namlik, pH, mikroblar",
+          "Organik va noorganik nisbat",
+          "PMI/BI bilan bog‘lanish ehtimoli"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega bir xil ko‘milish muddatida suyak holati har xil bo‘lishi mumkin? 2) Qaysi muhit omillari diagenezni tezlashtiradi? Doskada chizish: zanjirni chizib, har bosqichga bitta muhit omilini yozing. Tipik xato: diagenezni faqat vaqtga bog‘liq jarayon deb hisoblash."
+    },
+    {
+      "title": "Suyakning tuzilishi, autoliz va chirish",
+      "bullets": [
+        {
+          "text": "Suyak ~20% g‘ovak va ~80% zich moddadan iborat. Tarkibi: organik qism 25%, noorganik 60–70%, suv 9,7%. Organik qism asosan I tip kollagen.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Autolizda fermentlar (proteaza, DNaza) suyak hujayralarini parchalaydi. Kollagen kabi hujayradan tashqari oqsillar autolizga chidamli.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Chirishda kislotali metabolitlar matritsani qisman eritadi. Mikroorganizmlar ichkariga kirib, kollagenazalar yordamida kollagenni gidroliz qiladi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hackett bo‘yicha tunnel turlari: Wedl (zamburug‘), chiziqli bo‘ylama, kurtakli va qatlamli (uchalasi bakterial).",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Autoliz va chirishning farqi nimada? 2) Tunnel turlari qaysi mikroorganizmlarga bog‘liq? Doskada chizish: suyak tarkibi (organik, noorganik, suv) va tunnel turlari ro‘yxati bilan sxema. Tipik xato: kollagenni autolizda parchalanadi deb o‘ylash; aslida u autolizga chidamli, uni mikrob kollagenazalari parchalaydi."
+    },
+    {
+      "title": "Kislota va ishqorning suyakka ta‘siri",
+      "bullets": [
+        {
+          "text": "Kuchli kislotada (masalan, xlorid kislota, HCl) suyak soatlar ichida eriydi; kortikal suyak chidamliroq.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, 'The bone matrix and taphonomic agents' bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sulfat kislota suyakni 7 kunda eritadi; ishqor esa faqat ilik bo‘shlig‘i mazmunini eritadi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, 'The bone matrix and taphonomic agents' bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislota minerallarga, ishqor ilik bo‘shlig‘iga ta’sir etadi; kislota ta’siri dekaltsifikatsiyaga o‘xshaydi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, 'The bone matrix and taphonomic agents' bo‘limi"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kimyoviy muhit ta’siri",
+        "nodes": [],
+        "header": [
+          "Muhit",
+          "Ta’sir vaqti",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "10% HCl",
+            "19 soat",
+            "Gistologik tuzilma ta’sirlanadi"
+          ],
+          [
+            "37% HCl",
+            "3 soat",
+            "To‘liq parchalanadi"
+          ],
+          [
+            "Sulfat kislota",
+            "1 kun / 7 kun",
+            "Yaxlitlik yo‘qoladi / eriydi"
+          ],
+          [
+            "Ishqor (lye)",
+            "Vaqt keltirilmagan",
+            "Ilik mazmuni eriydi, tuzilma saqlanadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Nega laboratoriya tajribalari uzoq muddatli tabiiy diagenezni aks ettirmaydi? (2) Kislota va ishqor suyakning qaysi qismiga ta’sir qiladi? Doskada: jadvalni ko‘chirib, har muhit uchun ’mineral’ yoki ’ilik bo‘shlig‘i’ deb belgilang. Tipik xato: ishqor ham suyak mineralini eritadi deb o‘ylash; manbada ishqor tuzilma va rangni o‘zgartirmaydi. Diqqat: HCl bilan qisqa muddatli tajriba ≠ yerdagi uzoq muddatli diagenez."
+    },
+    {
+      "title": "45 ta bo‘yoq va protokollar bo‘shlig‘i",
+      "bullets": [
+        {
+          "text": "Kollagen va osteotsitni ko‘rsatadi: Mallory, Gomori trichrome, Weigert rezortsin-fuksin usullari.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, Abstract"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dekaltsifikatsiyalanmagan kesmada organik va noorganik qismlar nisbatini baholash mumkin.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, Introduction"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Protokol yetishmasligi va 42 bo‘yoqning sinalmaganligi keyingi tadqiqot yo‘nalishini belgilaydi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, Abstract; Discussion"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Bo‘yoqlar va protokollar",
+        "nodes": [],
+        "header": [
+          "Ko‘rsatkich",
+          "Soni"
+        ],
+        "rows": [
+          [
+            "Istiqbolli bo‘yoqlar",
+            "45"
+          ],
+          [
+            "Protokol: embedded",
+            "8"
+          ],
+          [
+            "Protokol: non-embedded",
+            "2"
+          ],
+          [
+            "Sinalgan / sinalmagan",
+            "3 / 42"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: (1) Nega aynan dekaltsifikatsiyalanmagan kesmalar tanlangan? (2) Protokolning kamligi amaliyotga qanday to‘sqinlik qiladi? Doskada: 45 ni 3 va 42 ga bo‘luvchi oddiy sxema chizing. Tipik xato: ’embedded’ (joylangan) va ’non-embedded’ (joylanmagan) kesmalarni chalkashtirish; protokol soni 8 va 2, sinalganlar soni esa 3."
+    },
+    {
+      "title": "Sinalgan bo‘yoqlar: Sirius Red/Fast Green, PSR, HE",
+      "bullets": [
+        {
+          "text": "Sirius Red/Fast Green cho‘chqa va odam suyagida o‘lim muddati (PMI) oralig‘ini toraytirishga yordam beradi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, Discussion"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "HE suyak morfologiyasini va yaxlitlik indeksini (osteotsit yadrolari/bo‘shliqlar nisbati) ko‘rsatadi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, Discussion"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Noma’lum PMI ni bashorat qiluvchi model hali yo‘q; u tuproq va muhit sharoitiga moslanishi kerak.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841, Discussion"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Uch bo‘yoqni solishtirish",
+        "nodes": [],
+        "header": [
+          "Bo‘yoq",
+          "Ko‘rsatadi",
+          "PMI uchun"
+        ],
+        "rows": [
+          [
+            "Sirius Red/Fast Green",
+            "Kollagen yaxlitligi o‘zgarishi",
+            "Statistik ahamiyatli o‘zgarish"
+          ],
+          [
+            "Picrosirius Red",
+            "Kollagen parchalanishi",
+            "Vaqtga bog‘liq o‘zgarish"
+          ],
+          [
+            "HE (gematoksilin–eozin)",
+            "Morfologiya, yaxlitlik indeksi",
+            "Hozircha PMI uchun yaramaydi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Nega HE yaxlitlik indeksi uchun yaroqli, lekin PMI uchun hozircha yaramaydi? (2) Nima uchun PMI modeli muhitga xos bo‘lishi kerak? Doskada: yaxlitlik indeksi = osteotsit yadrolari / bo‘shliqlar nisbatini yozing. Tipik xato: bo‘yoq natijasini darhol aniq PMI deb talqin qilish; manbada u faqat dastlabki maslahat sifatida tavsiya etiladi. Diqqat: HE ≠ PMI hisoblash vositasi."
+    },
+    {
+      "title": "Voqea tahlili 4 va tezkor savol: suyak gistologiyasi",
+      "bullets": [
+        {
+          "text": "Vaziyat: ko‘milgan suyak kesmasida osteotsit yadrolarining lakunalarga nisbati past. Bu suyakning yomon saqlanganini bildiradi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘milish davri suyak butunligi indeksi bilan teskari bog‘liq: davr uzaysa, indeks pasayadi. Indeks yadro/lakuna nisbatiga tayanadi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Indeksni PMI (o‘limdan keyingi davr) bilan bog‘lovchi tasdiqlangan usul yo‘q. Tuproq kimyosi va gidrologiya natijani o‘zgartiradi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tezkor savol: nega past indeks aniq muddatni bermaydi? Diqqat: saqlanish darajasi ≠ PMI; u ko‘mish sharoitiga ham bog‘liq.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Indeks nimani ko‘rsatadi va nimani ko‘rsatmaydi? 2) Qaysi tashqi omillar (tuproq, harorat, namlik) natijani buzishi mumkin? Doskada: ‘yadro soni / lakuna soni’ kasrini chizing va ko‘milish davri bilan teskari bog‘liqlik strelkasini ko‘rsating. Tipik xato: past indeksni to‘g‘ridan-to‘g‘ri aniq PMI deb talqin qilish."
+    },
+    {
+      "title": "Cheklovlar, sub‘ektivlik va sun‘iy intellekt istiqboli",
+      "bullets": [
+        {
+          "text": "Mikroskopik rasmni baholash asosan sub‘ektiv: u tekshiruvchining tajribasi va talqiniga bog‘liq. Natijada talqin o‘zgaruvchan bo‘lishi mumkin.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kompakt va g‘ovak suyak bo‘yoqqa turlicha javob beradi. G‘ovak suyak bo‘shliqlarida bo‘yalgan noorganik modda kollagen nisbatini o‘zgartirgan.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gistologik rasmlar ko‘pincha Hedges indeksi bilan yoki muayyan belgilarning bor-yo‘qligiga qarab baholanadi. Sub‘ektivlikni bir nechta ekspert kamaytiradi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kelajakda Cellpose kabi sun’iy intellekt (AI) vositalari tuzilmalarni tanib, organik va noorganik nisbatni hisoblashi mumkin. Bu inson xatosini kamaytiradi.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Sub‘ektivlikni kamaytirishning qanday yo‘llari bor? 2) AI sudda qanday sifat talablariga javob berishi kerak? Doskada: kompakt va g‘ovak suyak uchun ikki ustunli ‘bo‘yalish farqi’ sxemasini chizing. Tipik xato: barcha suyak turlarida bir xil bo‘yalish kutish."
+    },
+    {
+      "title": "Umumiy xulosa: gistologik usul potentsiali",
+      "bullets": [
+        {
+          "text": "Teri jarohati yoshini baholashda ko‘p markerli yondashuv eng ishonchli usul deb hisoblanadi. U sezgirlik va o‘ziga xoslikni oshiradi, lekin ko‘proq vaqt va murakkablik talab qiladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunogistokimyo (IHC) va immunofluoressensiya jarohat rivoji va tirik vaqtda hosil bo‘lganini kuzatishda samarali. Ular o‘limdan keyingi intervalni aniq belgilay olmaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyakda 45 ta bo‘yoq istiqbolli deb topilgan, ammo faqat 3 tasi sinalgan. Kollagen va osteotsit degradatsiyasi muddat ko‘rsatkichi bo‘lishi mumkin, tasdiqlangan model esa yo‘q.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyingi qadam: qolgan bo‘yoqlarni dekalsifikatsiyalanmagan suyak kesmalarida sinash, ularni birlashtirish va usulni turli sharoitda tekshirib tasdiqlash.",
+          "source": {
+            "author": "Sluis I va boshq.",
+            "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+            "page": "PMID 40637841"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega bitta marker o‘rniga panel afzal? 2) Suyak gistologiyasi sudga taqdim etilishidan oldin qanday tasdiqlash kerak? Doskada: ikki ustunli xulosa jadvali (teri | suyak) va har biriga ‘bor’ hamda ‘yetishmaydi’ qatorini yozing. Tipik xato: teri va suyak natijalarini aralashtirish yoki ‘istiqbolli’ ni ‘tasdiqlangan’ deb tushunish."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Tadqiqotchi 326 ta maqoladan 29 tasini tanladi. Yana bibliografiyadan 17 ta mos maqola topildi. Tahlilga jami nechta maqola kirdi?",
+      "options": [
+        "Jami 63 ta maqola kirdi",
+        "Jami 46 ta maqola kirdi",
+        "Jami 29 ta maqola kirdi",
+        "Jami 17 ta maqola kirdi"
+      ],
+      "correct_index": 1,
+      "explanation": "Saralashdan keyin 29 ta tadqiqot qoldi. Bibliografiyadan topilgan 17 ta maqola qo‘shilib, jami 46 ta maqola tahlil qilindi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Talaba teri jarohati yoshi haqidagi inglizcha tizimli sharhni topdi va uni tahlilga qo‘shmoqchi. Qaysi mezon bo‘yicha u chiqarib tashlanadi?",
+      "options": [
+        "Til mezoni bo‘yicha: matn inglizcha",
+        "Namuna mezoni bo‘yicha: teri to‘qimasi",
+        "Maqola turi mezoni bo‘yicha: sharh",
+        "Maqsad mezoni bo‘yicha: PTI aniqlash"
+      ],
+      "correct_index": 2,
+      "explanation": "Kiritish mezonlariga original maqolalar va kohort tadqiqotlar kiradi. Sharhlar va tizimli sharhlar chiqarish mezoniga kiradi. Inglizcha til, teri namunasi va PTI maqsadi esa kiritish mezonlari hisoblanadi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Ekspert murdadagi teri jarohatining tirik paytda hosil bo‘lganini (vitalligini) tasdiqladi. Jarohat va o‘lim o‘rtasidagi sababiy bog‘liqlikni asoslash uchun keyin nimani baholaydi?",
+      "options": [
+        "Postmortem intervalni, ya’ni o‘lim vaqtini",
+        "Jarohatning chiziqli o‘lchamlarini va shaklini",
+        "Namuna olingan mamlakat va nashr yilini",
+        "Travmadan keyingi intervalni (PTI)"
+      ],
+      "correct_index": 3,
+      "explanation": "Vitallik tasdiqlangach, travmadan keyingi interval (PTI) baholanadi. Bu travma va o‘lim o‘rtasidagi sababiy bog‘liqlikni aniqlash uchun muhim.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Immunogistokimyo (IHC) jarohat yoshini baholashda boshqa usullarga nisbatan qaysi alohida imkoniyati bilan ajralib turadi?",
+      "options": [
+        "Kerakli molekulalar joylashuvini to‘qimada tahlil qila oladi",
+        "Jarohat yoshini faqat bitta marker bilan aniq beradi",
+        "Jarohat yoshini hech qanday statistikasiz aniqlaydi",
+        "Postmortem intervalni aniq hisoblab chiqarib beradi"
+      ],
+      "correct_index": 0,
+      "explanation": "IHC qo‘llash qulayligi va ishonchliligi bilan birga, molekulalar lokalizatsiyasini tahlil qila olishi bilan ham afzal. Sharhda yagona oltin standart yo‘qligi va postmortem intervalni aniq aniqlay olmasligi ta’kidlangan.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Tahlilga kiritilgan 46 ta tadqiqotning qancha qismida immunogistokimyo (IHC) va immunofluoressensiya (IF) birga qo‘llangan?",
+      "options": [
+        "Taxminan 10 foizida (5 ta tadqiqot)",
+        "Taxminan 70 foizida (32 ta tadqiqot)",
+        "Taxminan 20 foizida (9 ta tadqiqot)",
+        "Taxminan 54 foizida (25 ta tadqiqot)"
+      ],
+      "correct_index": 2,
+      "explanation": "32 ta (70%) tadqiqotda faqat IHC, 5 ta (10%) da faqat IF, qolgan 9 ta (20%) da ikkalasi birga qo‘llangan. 54,3% esa Yevropada o‘tkazilgan tadqiqotlar ulushi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Pichoq jarohatida FVIIIra musbat chiqdi. Shu marker haqida qaysi xulosa to‘g‘ri?",
+      "options": [
+        "Sezgirligi yuqori, o‘ziga xosligi past; yolg‘iz o‘zi yetarli emas",
+        "O‘ziga xosligi yuqori, sezgirligi past; yolg‘iz o‘zi yetarli bo‘ladi",
+        "Sezgirligi va o‘ziga xosligi mutlaq; yolg‘iz o‘zi yetarli bo‘ladi",
+        "Sezgirligi va o‘ziga xosligi past; hech qanday ma’lumot bermaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "FVIIIra sezgirligi 100%, o‘ziga xosligi esa 47% edi. U jarrohlik va nazorat jarohatlarida ham ortiqcha ifodalangan. Shuning uchun u sezgir, lekin o‘ziga xos emas. Erta antemortem jarohatni postmortemdan ajratishda CD15 va triptaza foydaliroq hisoblanadi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Biopsiyada jarohatning post-travmatik intervali 0–1 soat deb taxmin qilinmoqda. Qaysi uchlik odatda musbat bo‘yaladi?",
+      "options": [
+        "Kollagen III, kollagen V va laminin birikmasi",
+        "Fibronektin, CD62p va VIII omil birikmasi",
+        "Alfa-SMA, VEGF va TGF-β1 birikmasi",
+        "MMP-2, MMP-9 va CD34 birikmasi"
+      ],
+      "correct_index": 1,
+      "explanation": "Fibronektin/CD62p/VIII omil va FVIIIra/CD15/triptaza komplekslari erta jarohatda, ayniqsa 0–1 soatda musbat bo‘yalishga moyil. Boshqa variantlar kechroq bosqichlarga xos belgilar.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Kondo (1996) tadqiqotiga ko‘ra, TNFα va IL-1β ning asosiy cho‘qqisi qaysi vaqtda kuzatilgan?",
+      "options": [
+        "Jarohatdan 15 daqiqa o‘tgach",
+        "Jarohatdan 12 soat o‘tgach",
+        "Jarohatdan 3 soat o‘tgach",
+        "Jarohatdan 5 kun o‘tgach"
+      ],
+      "correct_index": 2,
+      "explanation": "TNFα va IL-1β ning statistik ahamiyatli cho‘qqisi 3 soatlik intervalda topilgan. IL-1β ning kichikroq cho‘qqisi 6 soatda, IL-6 cho‘qqisi esa 12 soatda kuzatilgan.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Inson teri jarohatida CD11c+/HLA-DRα+ dendritik hujayralar soni 50 dan oshdi. Jarohat yoshi qaysi oraliqqa mos?",
+      "options": [
+        "0 dan 1 soatgacha bo‘lgan oraliq",
+        "1 sutkadan kam bo‘lgan oraliq",
+        "15 daqiqadan 6 soatgacha oraliq",
+        "4 kundan 14 kungacha bo‘lgan oraliq"
+      ],
+      "correct_index": 3,
+      "explanation": "Kuninaka tadqiqotida dendritik hujayralar soni 50 dan ortiq bo‘lsa, jarohat yoshi 4–14 kunga mos kelishi aytilgan. Bu oraliqni boshqa markerlar bilan birga baholab toraytirish mumkin.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Jasaddan olingan namunada mast hujayralar boshqa guruhlarga nisbatan sezilarli kam topildi. Eng ehtimoliy talqin qaysi?",
+      "options": [
+        "Jarohat o‘limdan keyin hosil bo‘lgan bo‘lishi mumkin",
+        "Jarohat 1–3 soatlik hayotiy jarohat ekani isbotlandi",
+        "Jarohat bir necha kunlik, bitish bosqichidagi jarohat",
+        "Jarohat 30 daqiqadan oldin hosil bo‘lgan, gistamin oshgan"
+      ],
+      "correct_index": 0,
+      "explanation": "Bonelli tadqiqotida hayotiy jarohatlarda mast hujayralar 1–3 soatda cho‘qqiga chiqqan. Postmortem holatlarda esa ular boshqa guruhlarga nisbatan sezilarli kam bo‘lgan. Bu hayotiylik bahosiga yordam beradi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Jarohat biopsiyasida CD14 ifodasi 96% ga yetgan, dermada makrofag va limfotsitlar keng infiltratsiya qilgan. Bu qaysi jarohat yoshiga mos?",
+      "options": [
+        "Jarohat 30 daqiqadan kam vaqt oldin hosil bo‘lgan",
+        "Jarohat 7–14 sutka oldin hosil bo‘lgan",
+        "Jarohat 1–3 sutka oldin hosil bo‘lgan",
+        "Jarohat 3 sutkadan ancha oldin hosil bo‘lgan"
+      ],
+      "correct_index": 2,
+      "explanation": "Fouad va hamkorlar ma’lumotiga ko‘ra, jarohatdan keyingi 1–3 sutkada CD14 ifodasi eng yuqori (96,40 ± 3,78%) bo‘ladi, bu makrofag va limfotsitlarning keng infiltratsiyasiga mos keladi. 3 sutkadan keyin ifoda keskin pasayadi (14,80 ± 3,49%).",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045, 4.3-bo‘lim (Immunity Cells and Factors)"
+      }
+    },
+    {
+      "question": "Gauchotte va hamkorlar tadqiqotiga ko‘ra, FVIIIra jarohat tirikligi markeri sifatida qanday baholanadi?",
+      "options": [
+        "Sezgirligi 100%, o‘ziga xosligi 47% bo‘lgan sezgir marker",
+        "Sezgirligi past, o‘ziga xosligi 100% bo‘lgan aniq marker",
+        "Sezgirligi ham, o‘ziga xosligi ham 100% bo‘lgan marker",
+        "Faqat 7 sutkadan keyin aniqlanadigan kechki marker"
+      ],
+      "correct_index": 0,
+      "explanation": "FVIIIra sezgirligi 100%, ammo o‘ziga xosligi 47%. U jarrohlik va manfiy nazorat jarohatlarida ham (53%) ortiqcha ifodalangan, shuning uchun sezgir, lekin o‘ziga xos emas. Tirik va o‘limdan keyingi jarohatni ajratishda CD15 va triptaza foydaliroq hisoblanadi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045, 4.1-bo‘lim (Coagulation Factors)"
+      }
+    },
+    {
+      "question": "Jarohat namunasida VEGF (qon tomir endoteliy o‘sish omili) musbat hujayralar ulushi 50% dan yuqori. Bu qaysi jarohat yoshini ko‘rsatishi mumkin?",
+      "options": [
+        "Jarohat 4 soatdan 1 sutkagacha bo‘lgan",
+        "Jarohat 15 daqiqagacha bo‘lgan eng erta",
+        "Jarohat 2 sutkadan 3 sutkagacha bo‘lgan",
+        "Jarohat 7 sutkadan 14 sutkagacha bo‘lgan"
+      ],
+      "correct_index": 3,
+      "explanation": "Hayashi va hamkorlar 4 soatdan 1 sutkagacha bo‘lgan namunalarda VEGF ijobiy bo‘lmagan neytrofillarni topgan. VEGF-musbat ulush 50% dan oshsa, jarohat yoshi 7 sutka va undan ko‘p, 14 sutkagacha bo‘lishi mumkin.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045, 4.4-bo‘lim (Growth Factors)"
+      }
+    },
+    {
+      "question": "Teri jarohatida COX-2 (siklooksigenaza-2) musbat hujayralar ulushi 40% dan oshgan. Bu qaysi jarohat yoshiga mos keladi?",
+      "options": [
+        "Jarohat 30 daqiqadan kam vaqt oldingi",
+        "Jarohat 8 soatdan 3 sutkagacha bo‘lgan",
+        "Jarohat 7 sutkadan 14 sutkagacha bo‘lgan",
+        "Jarohat 9 sutkadan 12 sutkagacha bo‘lgan"
+      ],
+      "correct_index": 1,
+      "explanation": "Ishida va hamkorlar bo‘yicha COX-2 musbat ulushi >40% jarohat yoshi 8 soatdan 3 sutkagacha ekanini ko‘rsatadi, 50% dan yuqori ulush sud-tibbiy ahamiyatga ega bo‘lishi mumkin. 30 daqiqadan yosh jarohatda COX-2 ni faqat bir necha rezident hujayra ifodalaydi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045, 4.5-bo‘lim (Enzymes)"
+      }
+    },
+    {
+      "question": "Jarohat namunasida I va VI tur kollagenlar umuman topilmadi. Betz va hamkorlar bahosiga ko‘ra, bu qanday jarohat yoshini ko‘rsatishi mumkin?",
+      "options": [
+        "Jarohat 6–7 sutkadan yosh bo‘lishi mumkin",
+        "Jarohat 6–7 sutkadan katta bo‘lishi mumkin",
+        "Jarohat taxminan 1,5 oylik bo‘lishi mumkin",
+        "Jarohat o‘limdan keyin hosil bo‘lgan bo‘lishi mumkin"
+      ],
+      "correct_index": 0,
+      "explanation": "I va VI tur interstitsial kollagenlar odam teri jarohatida doimiy ravishda taxminan 6–7 sutkadan keyin paydo bo‘ladi. Shuning uchun ularning yo‘qligi jarohat yoshi 6–7 sutkadan kam ekanini bildirishi mumkin.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045, 4.6-bo‘lim (Glycoproteins and Basal Membrane Components)"
+      }
+    },
+    {
+      "question": "Ekspert teri jarohatining yoshini baholamoqda, lekin bitta marker natijasi noaniq chiqdi. Qaysi yondashuv eng ishonchli hisoblanadi?",
+      "options": [
+        "Faqat eng sezgir bitta markerga tayanish",
+        "Bir nechta markerdan iborat panelni qo‘llash",
+        "Faqat jarohatning tashqi ko‘rinishini baholash",
+        "Marker o‘rniga faqat jarohat chuqurligini o‘lchash"
+      ],
+      "correct_index": 1,
+      "explanation": "Sharhga ko‘ra, ko‘p markerli yondashuv jarohat yoshini aniqlashning eng ishonchli usuli hisoblanadi. Bir nechta marker va usul sezgirlik hamda o‘ziga xoslikni oshiradi, lekin ko‘proq vaqt va murakkablikni talab qiladi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Suyak hujayralarining proteaza va DNaza fermentlari ta’sirida o‘z-o‘zidan yemirilishi qanday ataladi?",
+      "options": [
+        "Chirish (putrefaksiya)",
+        "Diagenez",
+        "Mineralizatsiya",
+        "Autoliz"
+      ],
+      "correct_index": 3,
+      "explanation": "Autoliz — suyak hujayralarining fermentlar (proteaza, DNaza) yordamida o‘z-o‘zini yemirishi. Chirish esa endogen bakteriyalar chaqiradigan parchalanishdir. Suyakning hujayradan tashqari oqsillari, masalan kollagen, autolizga sezgir emas.",
+      "source": {
+        "author": "Sluis I va boshq.",
+        "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+        "page": "PMID 40637841"
+      }
+    },
+    {
+      "question": "Laboratoriya tajribasida suyak namunasi ishqor (lye) eritmasiga solindi. Suyakda qanday o‘zgarish kutiladi?",
+      "options": [
+        "Ilik bo‘shlig‘i mazmuni eriydi, suyak tuzilishi va rangi o‘zgarmaydi",
+        "Suyak bir necha soat ichida butunlay erib ketadi",
+        "Suyakning mineral qismi dekalsifikatsiyaga uchraydi",
+        "Suyak butunligi bir sutkada batamom yo‘qoladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Ishqor ilik bo‘shlig‘ining mazmunini eritadi, lekin suyak tuzilishi va rangini o‘zgartirmaydi. Mineral qismga asosan kislotali muhit ta’sir qiladi, bu dekalsifikatsiyaga o‘xshaydi.",
+      "source": {
+        "author": "Sluis I va boshq.",
+        "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+        "page": "PMID 40637841"
+      }
+    },
+    {
+      "question": "Tadqiqotchi dekalsifikatsiyalanmagan, qolipga joylanmagan (non-embedded) suyak kesmasini bo‘yamoqchi. 45 ta bo‘yoqdan nechtasi uchun protokol topilgan?",
+      "options": [
+        "8 ta",
+        "3 ta",
+        "2 ta",
+        "45 ta"
+      ],
+      "correct_index": 2,
+      "explanation": "Qolipga joylanmagan dekalsifikatsiyalanmagan kesmalar uchun protokol 45 ta bo‘yoqdan faqat 2 tasida bor. Qolipga joylangan kesmalar uchun 8 tasida bor, taphonomik tadqiqotda esa 3 ta bo‘yoq sinalgan.",
+      "source": {
+        "author": "Sluis I va boshq.",
+        "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+        "page": "PMID 40637841"
+      }
+    },
+    {
+      "question": "Bir xil gistologik tasvirni turli mutaxassislar turlicha baholamoqda. Sharhda subyektivlikni kamaytirish uchun qaysi istiqbolli vosita tilga olingan?",
+      "options": [
+        "Faqat bitta mutaxassis bahosiga tayanish",
+        "Sun‘iy intellekt vositalari, masalan Cellpose",
+        "Namunani qalinroq kesmalarga ajratib ko‘rish",
+        "Bo‘yash bosqichini butunlay olib tashlash"
+      ],
+      "correct_index": 1,
+      "explanation": "Mikroskopik tasvirni baholash asosan sub‘ektiv bo‘ladi. Buni kamaytirish uchun bir nechta ekspert ko‘rishi mumkin, kelajakda esa Cellpose kabi sun‘iy intellekt vositalari qonuniyatlarni aniqlashga va organik va noorganik qismlar nisbatini hisoblashga yordam beradi.",
+      "source": {
+        "author": "Sluis I va boshq.",
+        "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+        "page": "PMID 40637841"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Sezgirlik va o‘ziga xoslik bir narsa emas. FVIIIra yara hayotiyligini 100% sezgirlik bilan ko‘rsatgan, lekin o‘ziga xosligi atigi 47% bo‘lgan: u jarrohlik va nazorat yaralarida ham ortiqcha ifodalangan. Shu sababli recent ante-mortem yaralarni o‘limdan keyingilaridan ajratishda CD15 va triptaza foydaliroq hisoblangan. Eslab qoling: sezgir ≠ o‘ziga xos.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli — yara yoshi zinapoyasi. 0–1 soat: fibronektin, CD62p, VIII omil. 3 soat: TNFα va IL-1β cho‘qqisi. 1–5 kun: CD14 va makrofaglar. Taxminan 5 kun va undan keyin: alfa-SMA musbat miofibroblastlar. 6–7 kundan: I va VI tur kollagen. Ketma-ketlik: qon ivishi → yallig‘lanish → biriktiruvchi to‘qima.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: tadqiqotchilar suyakni bo‘yash uchun 45 ta bo‘yoq usulini istiqbolli deb topgan. Taponomik tadqiqotlarda esa faqat 3 tasi sinalgan: Sirius Red/Fast Green, gematoksilin–eozin va Picrosirius Red. Ya’ni 42 ta usul hali umuman sinalmagan. Bu o‘limdan keyingi vaqtni (PMI) suyak gistologiyasi orqali aniqlashdagi katta bilim bo‘shlig‘ini ko‘rsatadi.",
+      "source": {
+        "author": "Sluis I va boshq.",
+        "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+        "page": "PMID 40637841"
+      }
+    },
+    {
+      "text": "Harorat suyak parchalanishini tezlashtiradi: Arrhenius tenglamasiga ko‘ra 10 °C ko‘tarilish reaksiya tezligini, jumladan mikrob faolligini, ikki baravar oshiradi. Biroq bakteriyalarning o‘z optimal diapazoni bor. Shuning uchun suyak gistologiyasi bo‘yicha PMI baholashda atrof-muhit va ob-havo ma’lumotlari albatta hisobga olinishi kerak.",
+      "source": {
+        "author": "Sluis I va boshq.",
+        "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+        "page": "PMID 40637841"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: Astolphi va hamkasblari ko‘milgan davr bilan suyak yaxlitlik indeksi (osteotsit yadrolari va lakunalar nisbati) o‘rtasida teskari bog‘liqlik topgan. Matritsa yo‘qolishi esa ko‘milish davriga bog‘liq bo‘lmagan, chunki tuproq kimyosi va gidrologiya har xil edi. Xulosa: indeks istiqbolli, ammo tasdiqlangan baholash modeli hali yo‘q.",
+      "source": {
+        "author": "Sluis I va boshq.",
+        "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+        "page": "PMID 40637841"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Luca Tomassini va boshq.",
+      "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+      "year": 2024,
+      "pages": "PMID 38248045; DOI 10.3390/diagnostics14020168"
+    },
+    {
+      "author": "Sluis I va boshq.",
+      "title": "Bone histology for forensic anthropology: a technical review on the advances in microstructural analysis of taphonomically altered buried or subaerially exposed bone, International Journal of Legal Medicine",
+      "year": 2025,
+      "pages": "PMID 40637841; DOI 10.1007/s00414-025-03536-9"
+    }
+  ]
+}

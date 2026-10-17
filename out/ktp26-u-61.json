@@ -1,0 +1,2217 @@
+{
+  "topic": "Suyak rezorbsiyasi shakllari",
+  "slides": [
+    {
+      "title": "Kirish: suyak rezorbsiyasi nima?",
+      "bullets": [
+        {
+          "text": "Skelet tayanch vazifasini bajaradi, miya va yurak kabi a’zolarni himoya qiladi hamda kalsiy va boshqa elementlar zaxirasi bo‘lib xizmat qiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rezorbsiya — osteoklastlarning suyak mineral va organik qismini yemirishi. Suyak massasi rezorbsiya va osteoblastlar hosil qilgan yangi suyak muvozanatiga bog‘liq.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Muvozanat buzilsa, rezorbsiya umumiy suyak yo‘qolishiga (osteoporoz) yoki mahalliy, rentgenda litik o‘choqlarga olib keladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qo‘shma protezdan keyin ortiqcha rezorbsiya hosil bo‘lishdan oshib ketsa, periprostetik osteoliz (PPO) yuzaga keladi va implant bo‘shashadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama savoli: 1) Nega suyak faqat tayanch emas, kalsiy zaxirasi hamdir? 2) Rezorbsiya har doim kasallikmi? Doskada chizish: ikki pallali tarozi (osteoklast va osteoblast). Shakllar tasnifi: fiziologik qayta qurilish, umumiy yo‘qolish (osteoporoz), mahalliy litik o‘choqlar, implant atrofidagi osteoliz. Tipik xato: rezorbsiyani doim patologiya deb tushunish — normal qayta qurilishning ajralmas bosqichi."
+    },
+    {
+      "title": "Suyak qayta qurilishi sikli",
+      "bullets": [
+        {
+          "text": "Osteoklastlar mikroskopik eskirgan yoki shikastlangan suyakni yemiradi, osteoblastlar uning o‘rniga yangi suyak qo‘yadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Osteoklast ~60 µm chuqur zovur — suyak qayta qurilish birligi (BRU) — hosil qiladi; zovur tubi qaytish chizig‘i bilan belgilanadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Matriksdan va osteoklastdan ajralgan bog‘lovchi omillar osteoblast avlodlarini rezorbsiya joyiga chaqiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama savoli: 1) Rezorbsiya joyiga osteoblastlarni nima chaqiradi? 2) Qaytish chizig‘i nimani ko‘rsatadi? Doskada chizish: trabekula yuzasida zovur va uning tubidagi qaytish chizig‘i. Tipik xato: osteoklast va osteoblast ishini bir vaqtda, bir joyda deb o‘ylash; avval rezorbsiya, keyin shakllanish. Diqqat: qaytish chizig‘i ≠ yangi suyak qatlami; u zovur tubining belgisi. Patologiyada chiziq tartibsiz bo‘ladi (mozaik ko‘rinish, Paget kasalligida)."
+    },
+    {
+      "title": "Osteoklast suyakni qanday yemiradi",
+      "bullets": [
+        {
+          "text": "Ruffled border — membrananing barmoqsimon burmalari; kislota va ferment ajratish yuzasini oshiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sealing zone — suyakka zich yopishgan halqa; lakunani yopiq lizosomal bo‘shliqqa aylantiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Lakuna, ko‘rinishidan, yupqa kollagen qopqoq — kanopi — bilan yopiladi; u qo‘shni ilikni himoya qiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama savoli: 1) Nega katepsin K faqat mineral erigandan keyin samarali ishlaydi? 2) Sealing zone buzilsa nima bo‘ladi? Doskada chizish: osteoklast kesimi — ruffled border, sealing zone, lakuna va kanopi. Qo‘shimcha: osteoklast avval xlorid kislota ajratib mineralni eritadi, keyin metalloproteazalar va katepsin K kollagen matriksni parchalaydi; parchalar hujayra orqali o‘tib sinusoidlar orqali qonga chiqariladi. Tipik xato: kislota kollagenni ham eritadi deb o‘ylash — kollagenni fermentlar parchalaydi."
+    },
+    {
+      "title": "G‘ovak va kortikal suyakda rezorbsiya",
+      "bullets": [
+        {
+          "text": "Osteoklastlar g‘ovak suyak yuzasida transhey shaklidagi qayta qurish birligini (BRU) hosil qiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Transheya o‘rtacha ~60 μm chuqurlikkacha yemiriladi. Uning tubi qaytish chizig‘i bilan belgilanadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zich kortikal suyakda osteoklastlar dumaloq tunnel ochadi. Tunnel yangi suyak bilan to‘lib, osteonga aylanadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki suyak turida rezorbsiya",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "G‘ovak suyak",
+          "Kortikal suyak"
+        ],
+        "rows": [
+          [
+            "Joylashuvi",
+            "G‘ovak (trabekulyar) yuzalar",
+            "Zich qatlam, g‘ovak suyakni o‘rab turadi"
+          ],
+          [
+            "Rezorbsiya shakli",
+            "Transhey shaklidagi BRU",
+            "Deyarli dumaloq tunnellar"
+          ],
+          [
+            "Keyingi holat",
+            "Qaytish chizig‘i bilan belgilanadi",
+            "Yangi suyak bilan to‘lib, osteon bo‘ladi"
+          ],
+          [
+            "Markaziy tuzilma",
+            "Qayd etilmagan",
+            "Kichik arteriya va vena"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega transheya silliq tubli bo‘ladi? 2) Osteon ichida qanday tomirlar bor? Doskada: g‘ovak suyakdagi transheya va kortikal suyakdagi tunnelning kesimini yonma-yon chizing, qaytish chizig‘ini belgilang. Tipik xato: BRU ni faqat kortikal suyakka xos deb o‘ylash, yoki osteonni rezorbsiya o‘chog‘ining o‘zi deb hisoblash."
+    },
+    {
+      "title": "Fiziologik va patologik rezorbsiya",
+      "bullets": [
+        {
+          "text": "Me‘yorda osteoklastlar silliq tubli transheya hosil qiladi, keyin osteoblastlar yangi suyak qo‘yadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Infeksiya, yallig‘lanish, endokrin buzilish va metastazda BRU soni oshadi, suyak hosil bo‘lishi esa susayadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natija umumiy suyak yo‘qolishi (osteoporoz) yoki rentgenda ko‘rinadigan mahalliy litik o‘choq bo‘ladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Me‘yor va kasallik solishtirmasi",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Me‘yor",
+          "Kasallik"
+        ],
+        "rows": [
+          [
+            "BRU soni",
+            "Kattalarda >1 million",
+            "Ko‘payadi"
+          ],
+          [
+            "Qaytish chizig‘i",
+            "Silliq, tartibli",
+            "Notekis, tartibsiz"
+          ],
+          [
+            "Suyak hosil bo‘lishi",
+            "Rezorbsiya joyiga bog‘langan",
+            "Odatda susayadi"
+          ],
+          [
+            "Oqibat",
+            "Skelet yangilanadi",
+            "Osteoporoz yoki litik o‘choq"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi kasalliklarda BRU soni ortadi? 2) Umumiy suyak yo‘qolishi bilan mahalliy litik o‘choq qanday farq qiladi? Doskada: ikki ustunli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: osteoporozni faqat mahalliy jarayon deb hisoblash. Aslida u umumiy suyak yo‘qolishi."
+    },
+    {
+      "title": "Voqea tahlili: mozaik tasvirli suyak",
+      "bullets": [
+        {
+          "text": "Vaziyat: gistologik kesmada (H&E bo‘yash) qaytish chiziqlari notekis, suyak mozaika ko‘rinishida.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rezorbsiya tezligi oshganda osteoklastlar tartibsiz ishlaydi. Klassik misol — Paget kasalligi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu qanday rezorbsiya shakli va chiziqlar nima uchun tartibsiz?",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: silliq tubli transheya me‘yorni, notekis chiziq kuchaygan (patologik) rezorbsiyani bildiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Javob: bu patologik, kuchaygan rezorbsiya; tezlik oshgani uchun osteoklastlar tartibsiz ishlaydi va chiziqlar notekis bo‘ladi. Muhokama: 1) Mozaika ko‘rinishi nimani bildiradi? 2) Normal qaytish chizig‘i qanday ko‘rinadi? Doskada: silliq va notekis qaytish chizig‘ini ikki xil chizib solishtiring. Tipik xato: qaytish chizig‘ini o‘zi patologiya belgisi deb o‘ylash. Aslida normada ham bor, patologiyada uning tartibsizligi muhim."
+    },
+    {
+      "title": "Tezkor savol: rezorbsiya asoslari",
+      "bullets": [
+        {
+          "text": "Savol 1: osteoklast suyak mineralini nima bilan eritadi? Javob: kislota. Proton nasoslari H+ ionlarini, xlor kanallari Cl− ionlarini ajratadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol 2: mineral erigach, kollagenli matriksni nima parchalaydi? Javob: metalloproteazalar; asosiy proteolitik ferment — katepsin K.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol 3: katepsin K qaysi pH da eng samarali, sealing zone nima qiladi? Javob: pH ~5,5; sealing zone yopiq lizosomal bo‘shliq hosil qilib, hujayralarni kislotadan himoya qiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi — demineralizatsiya (kislota bilan mineralning erishi) ≠ matriks parchalanishi (ferment); ular ketma-ket bosqichlar.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Nima uchun mineral avval erishi kerak? 2) Sealing zone bo‘lmasa nima o‘zgaradi? Doskada chizish: osteoklast osti — ruffled border, sealing zone va lakunani sxematik chizing, H+ va katepsin K ni belgilang. Tipik xato: talabalar kislota kollagenni ham eritadi deb o‘ylaydi; aslida kollagenni ferment parchalaydi."
+    },
+    {
+      "title": "Osteoklastning kelib chiqishi",
+      "bullets": [
+        {
+          "text": "Osteoklastlar suyak ko‘migidagi gemopoetik miyeloid prekursorlarning qo‘shilishidan hosil bo‘lgan ko‘p yadroli hujayralardir.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "M-CSF prekursorlarda RANK ifodasini oshiradi; RANKL ta’sirida ular differensiallanib, bir-biri bilan qo‘shiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "RANKL va M-CSF osteoklastni lakunada saqlaydi; o‘rtacha umri taxminan 30 kun.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Osteoklast hosil bo‘lish zanjiri",
+        "nodes": [
+          "Miyeloid prekursor (ko‘mik)",
+          "M-CSF: RANK ifodasi ↑",
+          "RANKL: differensiallanish",
+          "Prekursorlar qo‘shiladi",
+          "Ko‘p yadroli osteoklast"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun ikkala sitokin (M-CSF va RANKL) ham kerak? 2) Qo‘shilish rezorbtiv faollikka qanday ta’sir qiladi? Doskada chizish: besh tugunli zanjirni strelkalar bilan chizing va har bosqichga sitokin nomini yozing. Tipik xato: osteoklastni osteoblast yoki mezenximal hujayradan kelib chiqadi deb adashtirish; u miyeloid (gemopoetik) qatordan."
+    },
+    {
+      "title": "RANKL/RANK/OPG tizimi",
+      "bullets": [
+        {
+          "text": "RANKL osteoblast, osteotsit va immun hujayralarda ifodalanadi; RANK esa osteoklast prekursorlarida joylashgan.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eslab qoling: OPG – tabiiy tormoz; RANKL ni RANK dan kuchliroq bog‘lab, osteoklastni cheklaydi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "RANKL/OPG nisbati normal va kasal holatda suyak rezorbsiyasi darajasini belgilaydi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Tizim ishtirokchilari",
+        "nodes": [],
+        "header": [
+          "Ishtirokchi",
+          "Tabiati",
+          "Vazifasi"
+        ],
+        "rows": [
+          [
+            "RANKL",
+            "Ligand; TNFSF11 geni",
+            "Prekursorni osteoklastga aylantiradi"
+          ],
+          [
+            "RANK",
+            "Retseptor; TNFRSF11A geni",
+            "RANKL ni bog‘laydi, TRAF6 ni chaqiradi"
+          ],
+          [
+            "OPG",
+            "Yolg‘on retseptor; TNFRSF11B",
+            "RANKL ni bog‘lab, RANK dan ushlab qoladi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) RANKL ko‘payib, OPG kamaysa suyakda nima bo‘ladi? 2) Nima uchun OPG ‘yolg‘on retseptor’ deyiladi? Doskada chizish: RANKL, RANK va OPG ni uch shakl sifatida chizib, OPG RANKL ni ushlab qolishini ko‘rsating. Tipik xato: OPG ni RANK bilan almashtirish; RANK membrana retseptori, OPG esa eruvchan yolg‘on retseptor."
+    },
+    {
+      "title": "RANKL manbalari va aksessuar hujayralar",
+      "bullets": [
+        {
+          "text": "RANKL (NF-κB retseptori faollashtiruvchisi ligandi)ni osteoblast va stromal hujayralar, B va T limfositlar ifodalaydi. Ular aksessuar hujayralar deyiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Osteositlar suyakdagi eng ko‘p hujayralar bo‘lib, membranali va ajraluvchi RANKL chiqaradi. Embrionda bu RANKL shart emas, o‘smir va kattalarda remodellash uchun zarur.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Revmatoid artritda yallig‘langan bo‘g‘imda sinovitsitlar RANKLning asosiy manbai. O‘sma nekrozi omili (TNF) aksessuar hujayralarda RANKLni oshiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yallig‘langan suyak muhitida qon tomir endotelial hujayralari ham RANKL ajratib, osteoklast hosil bo‘lishiga hissa qo‘shadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Nega osteosit RANKLi embrionda kerak emas, kattalarda esa zarur? 2) Yallig‘lanishda qaysi hujayralar RANKL manbaiga qo‘shiladi? Doskada chizing: markazda osteoklast prekursori, atrofida 5 ta RANKL manbai (osteoblast, osteosit, T/B limfosit, sinovitsit, endotelial hujayra) strelkalar bilan. Tipik xato: faqat osteoblastni RANKL manbai deb o‘ylash."
+    },
+    {
+      "title": "RANKL/OPG nisbati buzilishi",
+      "bullets": [
+        {
+          "text": "RANKL osteoklast hosil bo‘lishi uchun asosiy omil. OPG esa RANKLni tutib, rezorbsiyani cheklaydi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "RANKL va OPG nisbati norma va kasallikda rezorbsiya darajasini belgilovchi asosiy omil.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: zich suyak ≠ mustahkam suyak. Osteopetrozda suyak to‘qilgan (woven) turda va mo‘rt.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "RANKL va OPG yetishmasligi",
+        "nodes": [],
+        "header": [
+          "Ko‘rsatkich",
+          "RANKL yo‘q",
+          "OPG yo‘q"
+        ],
+        "rows": [
+          [
+            "Osteoklastlar",
+            "Hosil bo‘lmaydi",
+            "Haddan ko‘p faol"
+          ],
+          [
+            "Suyak holati",
+            "Osteopetroz",
+            "Erta osteoporoz"
+          ],
+          [
+            "Oqibat",
+            "Zich, lekin mo‘rt suyak",
+            "Ko‘p rezorbsiya, sinishlar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega osteopetroz suyagi rentgenda zich, lekin sinuvchan? 2) RANKL/OPG nisbati periprotez osteolizida qanday o‘zgaradi? Doskada chizing: tarozi, bir pallada RANKL, ikkinchisida OPG, ikki xil og‘ish. Tipik xato: osteopetrozni osteoporoz bilan aralashtirish yoki zich suyakni mustahkam deb hisoblash. Jadvaldagi OPG qatori ma’lumotlari Yin va boshq. (PMID 40932933) dan: OPG-nokaut sichqonlarda erta osteoporoz va sinuvchanlik."
+    },
+    {
+      "title": "Wnt signali va LGR4 ning roli",
+      "bullets": [
+        {
+          "text": "Wnt/β-katenin signali mezenximal ildiz hujayralaridan osteoblast hosil bo‘lishini boshqaradi. Kanonik yo‘l osteoblastlarda OPG ifodasini ham oshiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Wnt3a va Wnt16 RANKL keltirib chiqargan NF-κB–NFATc1 (T-hujayralar yadro omili) ifodasini to‘sib, rezorbsiyani cheklaydi. Wnt4a ham osteoklast hosil bo‘lishini to‘sadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Wnt5a osteoklast prekursorlarida RANK ifodasini oshiradi. β-katenin erta prekursorlarda differensiatsiyani kuchaytiradi, yetilganlarda to‘sadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "LGR4 (leysinga boy takrorli G-oqsil bilan bog‘liq retseptor 4) RANKL uchun qo‘shimcha retseptor; RANK bilan raqobatlashib, Gαq va GSK3-β orqali NFATc1 ni bostiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Nega Wnt signalini osteoklastogenezda ikki yoqlama deyish mumkin? 2) LGR4 RANK bilan qanday raqobatlashadi va natija nima? Doskada chizing: RANKL ikki retseptor (RANK va LGR4) o‘rtasida, RANK tomoni NFATc1 ni oshiradi, LGR4 tomoni bostiradi. Tipik xato: barcha Wnt oqsillarini bir xil ta’sir qiladi deb o‘ylash (Wnt5a RANKni oshiradi, Wnt3a/16/4a cheklaydi)."
+    },
+    {
+      "title": "Voqea tahlili: RANKL‘siz sichqonlar",
+      "bullets": [
+        {
+          "text": "Vaziyat: RANKL yoki RANK geni o‘chirilgan sichqonlarda osteoklast va TRAP (tartratga chidamli kislotali fosfataza) bo‘yalishi yo‘q; iligi bo‘shlig‘ini zich suyak to‘ldiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savolga javob: osteoklast bo‘lmasa, mineralli suyak matritsasi uzun suyaklar va umurtqalar iligi bo‘shlig‘idan olib tashlanmaydi. Bu holat osteopetroz deyiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Osteopetrotik suyak rentgenda nur o‘tkazmaydi, uchlari kolbasimon. Zich ko‘rinsa ham, to‘qilgan (woven) suyakdan iborat bo‘lgani uchun normal suyakdan zaif.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: zich suyak ≠ mustahkam suyak. Osteoklast yo‘qligi suyakni kuchli emas, aksincha mo‘rt qiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Osteoklast yo‘q bo‘lsa remodeling nima uchun to‘xtaydi? 2) Nima uchun rentgenda suyak oq, lekin sinishga moyil? Doskada: normal va RANK−/− sichqon boldir suyagining o‘q kesimini chizing (o‘sish plastinkasi, iligi bo‘shlig‘i, zich suyak). Tipik xato: talabalar zich suyakni kuchli suyak deb o‘ylaydi."
+    },
+    {
+      "title": "NF-κB signal yo‘li: ikki tarmoq",
+      "bullets": [
+        {
+          "text": "Kanonik yo‘lda IκB kinaza (IKK) kompleksi IKKβ orqali IκBα ni fosforlaydi, RelA/p50 yadroga o‘tadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Noan‘anaviy yo‘lda NIK (NF-κB induksiyalovchi kinaza) IKKα ni faollaydi, p100 esa p52 ga ishlanadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "p50 va p52 ikkalasi o‘chirilgan sichqonlarda osteoklast hosil bo‘lmaydi (og‘ir osteopetroz).",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "NF-κB: ikki yo‘l solishtirmasi",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Kanonik",
+          "Noan‘anaviy"
+        ],
+        "rows": [
+          [
+            "Qo‘zg‘atuvchi",
+            "TNF-α, IL-1β, TLR",
+            "CD40, BAFF-R"
+          ],
+          [
+            "Asosiy kinaza",
+            "IKKβ (IκBα parchalanadi)",
+            "NIK → IKKα"
+          ],
+          [
+            "Faol dimer",
+            "RelA/p50",
+            "RelB/p52 (p100→p52)"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun p50/p52 o‘chirilsa osteoklast hosil bo‘lmaydi? 2) Qaysi yo‘l yallig‘lanish sitokinlari bilan bog‘liq? Doskada: ikki ustunli sxema chizing: retseptor → kinaza → dimer → yadro. Tipik xato: p100 ni p52 ga aylanishini kanonik yo‘lga bog‘lash."
+    },
+    {
+      "title": "TRAF oilasi: TRAF6 va TRAF3",
+      "bullets": [
+        {
+          "text": "RANK kinaza faolligiga ega emas; u TRAF oqsillarini jalb qilib, MAPK, NF-κB va AP-1 yo‘llarini yoqadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "RANK jalb qiladigan TRAFlardan faqat TRAF6 nokaut sichqonlari osteopetrotik: TRAF6 zarur.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TRAF3 osteoklastogenezni cheklaydi; RANKL uni parchalaganda p52 ko‘payib, osteoklast hosil bo‘ladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "TRAF6 va TRAF3 taqqoslash",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "TRAF6",
+          "TRAF3"
+        ],
+        "rows": [
+          [
+            "Osteoklastga roli",
+            "Hosil bo‘lishi uchun zarur",
+            "Zarur emas, cheklaydi"
+          ],
+          [
+            "Nokaut natijasi",
+            "Osteopetroz",
+            "Erta osteoporoz (prekursorda)"
+          ],
+          [
+            "Mexanizm",
+            "NF-κB, JNK, NFATc1 yoqiladi",
+            "NIK parchalanadi, p100→p52 to‘xtaydi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun TRAF3 ni ‘tormoz’, TRAF6 ni ‘gaz pedali’ deb atash mumkin? 2) TRAF3 parchalanishini to‘xtatish nimaga olib keladi? Doskada: RANK → TRAF6 (yoqadi) va TRAF3 (parchalanadi) sxemasini chizing. Tipik xato: TRAF3 ham osteoklast uchun zarur deb o‘ylash."
+    },
+    {
+      "title": "TRAF3 parchalanishi va NIK",
+      "bullets": [
+        {
+          "text": "Tinch holatda TRAF3/TRAF2/cIAP kompleksi NIK ni proteasomada parchalab turadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "RANKL TRAF3 ning autofagolizosomal parchalanishini chaqiradi, natijada NIK to‘planadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroxin lizosoma yo‘lini to‘sib, TRAF3 ni saqlaydi va osteoklast hosil bo‘lishini kamaytiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "RANKL → TRAF3 → NIK zanjiri",
+        "nodes": [
+          "RANKL RANK ga bog‘lanadi",
+          "TRAF3 lizosomada parchalanadi",
+          "NIK to‘planadi, IKKα faol",
+          "p100 → p52, p52/RelB yadroga",
+          "Osteoklast shakllanadi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega TRAF3 “tormoz” deyiladi? 2) Xloroxin zanjirning qaysi bo‘g‘inini to‘sadi? Doskada: 5 bosqichli zanjirni o‘qlar bilan chizdirib, TRAF3 va NIK ni rangli belgilang. Tipik xato: TRAF3 ni osteoklast hosil bo‘lishi uchun zarur deb o‘ylash. Aslida u uni cheklaydi, RANKL esa uni parchalaydi."
+    },
+    {
+      "title": "MAPK: ERK, p38 va JNK",
+      "bullets": [
+        {
+          "text": "ERK prekursor proliferatsiyasi va erta differensiyani, JNK va p38 esa yetilish va qo‘shilishni qo‘llab-quvvatlaydi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "ERK DUSP orqali JNK ni bosadi. ERK to‘silsa, p38 va JNK kompensator tarzda faollashadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu sababli U0126 yoki SB203580 kabi yakka inhibitorlar yetarli samara bermasligi mumkin.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "MAPK tarmoqlarini solishtirish",
+        "nodes": [],
+        "header": [
+          "Tarmoq",
+          "Qo‘zg‘atuvchi",
+          "Vazifa"
+        ],
+        "rows": [
+          [
+            "ERK",
+            "M-CSF",
+            "c-Fos, NFATc1; proliferatsiya"
+          ],
+          [
+            "p38",
+            "RANKL, sitokinlar",
+            "CREB orqali c-Fos, NFATc1"
+          ],
+          [
+            "JNK",
+            "TNF-α, RANKL",
+            "AP-1; TRAP va CTSK geni"
+          ],
+          [
+            "Kompensatsiya",
+            "Bitta tarmoq to‘silsa",
+            "Boshqalari faollashadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega bitta MAPK inhibitori yetarli emas? 2) ERK va JNK o‘rtasidagi teskari aloqa nimaga xizmat qiladi? Doskada: uchta tarmoq va ularning qo‘zg‘atuvchilarini uchta ustunli sxemada chizdiring. Tipik xato: uchala tarmoqni bir xil vazifali deb hisoblash. ERK erta bosqichga, JNK va p38 yetilish va qo‘shilishga ko‘proq xos."
+    },
+    {
+      "title": "Tezkor savol: signal yo‘llari",
+      "bullets": [
+        {
+          "text": "Savol 1: RANK kinaza faolligiga ega emas. U qaysi adaptor oqsillarni jalb qiladi va qaysi biri osteoklast uchun zarur?",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol 2: NFATc1 signal zanjirida qayerda turadi? NF-κB va c-Fos ga nisbatan joyini ayting.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol 3: TRAF3 miqdori pasaysa, NIK, p100 va osteoklast shakllanishida nima o‘zgaradi?",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi: TRAF6 ≠ TRAF3. TRAF6 osteoklast hosil bo‘lishi uchun zarur, TRAF3 esa uni cheklaydi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Javoblar: 1) RANK TRAF 1, 2, 3, 5 va 6 ni jalb qiladi, faqat TRAF6 zarur. 2) NFATc1 (va c-Fos) NF-κB dan keyin joylashadi; c-Fos NFATc1 ning yuqorisida turadi. 3) NIK to‘planadi, p100 p52 ga ko‘proq o‘tadi, osteoklast shakllanishi ortadi (sichqonlarda erta osteoporoz). Muhokama: nega bir xil oila oqsillari qarama-qarshi rol o‘ynaydi? Doskada: TRAF6 (+) va TRAF3 (–) belgili ikki o‘qli sxema. Tipik xato: TRAF raqamlarini aralashtirish."
+    },
+    {
+      "title": "TNF orqali rezorbsiya",
+      "bullets": [
+        {
+          "text": "TNF (o‘sma nekrozi omili) RANKLsiz ham osteoklast hosil qila oladi; bu masala bahsli.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Revmatoid artritda (RA) TNF RANKL ifodasini oshiradi; yallig‘langan bo‘g‘imda RANKL manbai asosan sinovitsitlar.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TNF ham NF-κB/c-fos/NFATc1 yo‘lini ketma-ket yoqadi va IκB-α fosforlanishini kuchaytiradi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "RANKL va TNF solishtirmasi",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "RANKL",
+          "TNF"
+        ],
+        "rows": [
+          [
+            "Adapter oqsil",
+            "TRAF6",
+            "TRAF2 (TRAF6 emas)"
+          ],
+          [
+            "TRAF3 darajasi",
+            "Parchalanadi",
+            "Oshadi"
+          ],
+          [
+            "p100 → p52",
+            "Samarali ishlanadi",
+            "Samarali ishlanmaydi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) TNF nima uchun RANKLdan ‘kuchsizroq’ osteoklast hosil qiladi? 2) RA da sinovitsitlarning roli nima? Doskada chizing: RANKL va TNF ustunli jadval, TRAF6/TRAF2 va TRAF3 o‘qlari bilan. Tipik xato: TNF ham TRAF6 ni jalb qiladi deb o‘ylash (aslida TRAF2). Diqqat: TRAF3 ≠ TRAF6 — TRAF3 cheklaydi, TRAF6 zarur. Bahsli jihat: ba’zi mualliflar TNF ta’siri uchun RANKL bilan oldindan tayyorlash kerak deydi."
+    },
+    {
+      "title": "Voqea tahlili: xloroxin va suyak yo‘qotilishi",
+      "bullets": [
+        {
+          "text": "Xloroxin oddiy sichqonlarda ovariektomiya (tuxumdonlarni olib tashlash) keltirib chiqargan suyak yo‘qotilishini va osteoklast hosil bo‘lishini to‘sadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TRAF3 osteoklast prekursorlarida o‘chirilgan sichqonlarda xloroxin bu yo‘qotilishni to‘sa olmadi; ular ovariektomiyadan keyin og‘irroq suyak yo‘qotdi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: nima uchun? Xloroxin lizosoma orqali boradigan TRAF3 parchalanishini to‘sadi; TRAF3 bo‘lmasa, dori ta’sir qiladigan nishon yo‘q.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TRAF3 NF-κB-induksiyalovchi kinazani (NIK) parchalatib, p100 ning p52 ga ishlanishini cheklaydi; RANKL esa TRAF3 ni yo‘qotadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Talabalarga avval ‘nima uchun?’ savolini bering, 1 daqiqa juftlikda o‘ylashsin. Muhokama: 1) Dori nishoni bo‘lmasa nima bo‘ladi? 2) Bu natija TRAF3 ni dori nishoni sifatida qanday asoslaydi? Doskada chizing: RANKL → TRAF3 parchalanishi → NIK to‘planishi → p52/RelB zanjiri, xloroxin to‘sadigan joyni belgilang. Tipik xato: xloroxin RANKL ni to‘sadi deb o‘ylash (aslida TRAF3 parchalanishini to‘sadi)."
+    },
+    {
+      "title": "Periprostetik osteoliz (PPO) mexanizmi",
+      "bullets": [
+        {
+          "text": "Implant–suyak chegarasidagi eskirish zarrachalari surunkali yallig‘lanishni qo‘zg‘atadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Makrofaglar zarrachani yutib, sitokinlar ajratadi; ular RANKL ni oshirib, OPG ni kamaytiradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Osteoklast ortiqcha faollashib, suyak hosil bo‘lishidan o‘zib ketadi; natijada implant bo‘shashadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "PPO zanjiri",
+        "nodes": [
+          "Eskirish zarrachalari",
+          "Makrofag fagotsitozi",
+          "Sitokinlar: TNF-α, IL-1β, IL-6",
+          "RANKL ortishi, OPG kamayishi",
+          "Osteoklast ↑, implant bo‘shashi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun bu jarayon ‘o‘z-o‘zini davom ettiruvchi’ doira deyiladi? 2) Zarracha o‘lchami va shakli yallig‘lanishga qanday ta’sir qiladi? Doskada chizing: 5 bosqichli zanjir va undan makrofagga qaytuvchi teskari strelka. Tipik xato: PPO ni infeksiya natijasi deb o‘ylash — bu steril yallig‘lanishli suyak yemirilishi. Diqqat: RANKL oshadi, OPG kamayadi — ikkalasi bir yo‘nalishda emas."
+    },
+    {
+      "title": "Eskirish zarrachalari xususiyatlari",
+      "bullets": [
+        {
+          "text": "Zarralar implant va suyak chegarasida mexanik eskirish hamda korroziya natijasida hosil bo‘ladi. Ular polietilen, metall, keramika va suyak sementi qoldiqlaridir.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zarra o‘lchami (0,1–10 µm), shakli (o‘tkir qirrali yoki sharsimon) va kimyoviy tarkibi uning bioreaktivligini va yallig‘lantirish kuchini belgilaydi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Submikron o‘lchamli va cho‘ziq zarralar kattaroq yoki sharsimon zarralarga nisbatan kuchliroq yallig‘lantiruvchi ta’sir ko‘rsatadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xavf faqat zarra miqdoriga bog‘liq emas. Metall qoldiqlar esa kechikkan yuqori sezuvchanlik reaksiyasini ham chaqirishi mumkin.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun submikron zarra kattaroq zarradan xavfliroq bo‘lishi mumkin? 2) Zarra shakli yallig‘lanishga qanday ta’sir qiladi? Doskada: zarra turlari (PE, metall, keramika, sement) va xususiyatlari (o‘lcham, shakl, tarkib) ro‘yxatini chizdiring. Tipik xato: talabalar faqat polietilenni zarra manbai deb o‘ylaydi, metall, keramika va sementni unutadi.\n"
+    },
+    {
+      "title": "PPO dagi asosiy sitokinlar",
+      "bullets": [
+        {
+          "text": "IL-10 MMP-9 va MMP-13 ni bosib, TIMP-1 ni oshiradi va kollagen parchalanishini kamaytiradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IFN-γ ikki xil ishlaydi: TRAF6 parchalanishi orqali osteoklastni bosadi, MHC II ni esa oshiradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "PGE2 roli munozarali: ba’zi modellarda uni olib tashlash rezorbsiyani kamaytirmagan.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Asosiy sitokinlar va ta’siri",
+        "nodes": [],
+        "header": [
+          "Sitokin",
+          "Asosiy ta’sir",
+          "Mexanizm"
+        ],
+        "rows": [
+          [
+            "TNF-α",
+            "Osteoklast hosil bo‘lishini kuchaytiradi",
+            "RANKLga bog‘liq va bog‘liq bo‘lmagan"
+          ],
+          [
+            "IL-1β",
+            "Osteoklastni bevosita differensiyalaydi",
+            "MMP-2, -3, -9, -13 va PGE2 ni oshiradi"
+          ],
+          [
+            "IL-6",
+            "RANKL/OPG muvozanatini buzadi",
+            "Prekursorning RANKLga sezgirligini oshiradi"
+          ],
+          [
+            "IL-17",
+            "Suyak hosil bo‘lishini to‘xtatadi",
+            "SOST↑, Wnt/β-katenin↓, RANKL↑"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun TNF-α markaziy tartibga soluvchi hisoblanadi? 2) IFN-γ nega ikki tomonlama ta’sir ko‘rsatadi? Doskada: jadvaldagi to‘rt sitokinni ustunlarga bo‘lib, ularning suyakka ta’sirini o‘qlar bilan chizdiring. Tipik xato: IL-10 ni ham rezorbsiyani kuchaytiruvchi sitokin deb o‘ylash, aslida u matriks buzilishini cheklaydi.\n"
+    },
+    {
+      "title": "Makrofag qutblanishi: M1 va M2",
+      "bullets": [
+        {
+          "text": "Makrofaglar muhitga qarab M1 yoki M2 fenotipiga o‘tadi; qutblanish osteoklastogenezni belgilaydi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "PMMA zarralarini fagotsitlagan makrofaglar asosan M1 ga qutblanadi va yallig‘lantiruvchi sitokin chiqaradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: M2 suyak hosil bo‘lishiga faqat yo‘l ochadi; kuchli signalni BMP-2 yoki Wnt beradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "M1 va M2 solishtiruvi",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "M1",
+          "M2"
+        ],
+        "rows": [
+          [
+            "Sharoit",
+            "Erta yallig‘lanish muhiti",
+            "Yallig‘lanishsiz sharoit"
+          ],
+          [
+            "Mahsulot",
+            "TNF-α, IL-1, IL-6, PGE2, NO",
+            "IL-10, TGF-β"
+          ],
+          [
+            "Ta’sir",
+            "Osteoklastni faollashtiradi",
+            "Tiklanish; osteoblastda OPG ni oshiradi"
+          ],
+          [
+            "Xavf",
+            "Rezorbsiya kuchayadi",
+            "Erta ortiqcha M2: fibroz kapsula xavfi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun erta bosqichda M2 ning ortiqcha bo‘lishi zararli? 2) PMMA zarralari makrofagni qaysi yo‘nalishga siljitadi? Doskada: M1 va M2 uchun ikki ustunli solishtirma sxema chizdiring. Tipik xato: M2 ni har doim foydali deb hisoblash, vaholanki erta va ortiqcha M2 suyak o‘rniga fibroz to‘qima hosil qilishi mumkin.\n"
+    },
+    {
+      "title": "Osteositlar va mexanik yuklama",
+      "bullets": [
+        {
+          "text": "Osteositlar suyakdagi asosiy mexanosensor hujayralar bo‘lib, yuklamaning o‘zgarishini sezadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 3.3.4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yuklama kamayganda (uzoq yotish, og‘riq) osteositlar sklerostinni pasaytiradi va RANKLni sezilarli oshiradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 3.3.4-bo‘lim"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Artroplastikadan keyingi harakatsizlik disuse osteoporozga o‘xshash holat yaratib, periprostetik osteoliz (PPO)ni tezlashtiradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 3.3.4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Orqa oyoq yuklamadan chiqarilgan sichqonlarda 5 kun ichida osteosit apoptozi 3–4 baravar oshib, RANKL ko‘tarilgan.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 3.3.4-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega operatsiyadan keyin bemorni umuman harakatsiz qoldirish xavfli? 2) Barqaror fiksatsiya va erta yuklama qanday muvozanatlanadi? Doskada chizing: yuklama kamayishi → osteosit → RANKL ↑ → osteoklast ↑ → PPO. Tipik xato: osteositni faqat passiv hujayra deb o‘ylash. Manbada sklerostin pasayishi va uning RANKLni rag‘batlantirishi haqidagi gaplar o‘zaro mos emas, shuning uchun bu band ‘ishonchsiz’ deb belgilangan. Talabalarga shuni ochiq ayting."
+    },
+    {
+      "title": "Voqea tahlili: yuqumsiz bo‘shashgan protez",
+      "bullets": [
+        {
+          "text": "Vaziyat: bo‘g‘imi almashtirilgan bemorda implant infeksiyasiz, ya’ni aseptik tarzda bo‘shashgan.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Implant atrofidagi to‘qimada RANKL yuqori, OPG past; rentgenda suyak yo‘qolishi ko‘rinadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 3.2-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: qaysi molekulyar zanjir ishlayapti? Javobni yeyilish zarrachalaridan boshlab bosqichma-bosqich tushuntiring.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 2.1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: aseptik ≠ yallig‘lanishsiz. PPO steril bo‘lsa ham, surunkali yallig‘lanish bilan suyakni yemiradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 2.2-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Javob kaliti: implant-suyak chegarasida yeyilish zarrachalari → makrofaglar fagotsitozi → TNF-α, IL-1β, IL-6 ↑ → osteoblast va fibroblastlarda RANKL ↑, OPG ↓ → osteoklast giperfaolligi → suyak yo‘qolishi → implant bo‘shashishi. Muhokama: 1) Zarracha o‘lchami va shakli yallig‘lanishga qanday ta’sir qiladi? 2) Bu bemorda nega antibiotik yordam bermaydi? Doskada chizing: zarracha → makrofag → sitokinlar → RANKL/OPG → osteoliz. Tipik xato: bo‘shashishning hammasini infeksiyaga bog‘lash."
+    },
+    {
+      "title": "Gormonal omillar: estrogen, GK, PTH",
+      "bullets": [
+        {
+          "text": "Estrogen yetishmasligi RANKLni oshirib, OPGni kamaytiradi; postmenopauzada rezorbsiya kuchayadi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 3.3.1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Glyukokortikoidlar (GK) OPGni kamaytirib, RANKLni oshiradi; D3 vitamini buni tiklashi mumkin.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 3.3.1-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paratireoid gormon (PTH): doimiy ta’sir rezorbsiyani, intermittent ta’sir suyak hosil bo‘lishini kuchaytiradi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933, 3.3.1-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Gormonlar va RANKL/OPG",
+        "nodes": [],
+        "header": [
+          "Omil",
+          "RANKL/OPG",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Estrogen yetishmasligi",
+            "RANKL ↑, OPG ↓",
+            "Rezorbsiya ↑, osteoporoz"
+          ],
+          [
+            "Glyukokortikoidlar (GK)",
+            "RANKL ↑, OPG ↓",
+            "Osteoklast faollashadi"
+          ],
+          [
+            "Doimiy PTH",
+            "RANKL/OPG nisbati ↑",
+            "Osteoklastogenez ↑"
+          ],
+          [
+            "Intermittent PTH",
+            "Sklerostin ↓, Wnt ↑",
+            "Anabolik: suyak hosil bo‘lishi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega postmenopauzada suyak yo‘qolishi tezlashadi? 2) Bir xil PTH nega ham katabolik, ham anabolik bo‘lishi mumkin? Doskada jadvalni o‘zlari chizib, har qatorga ‘RANKL ↑ yoki ↓’ belgisini qo‘ysin. Tipik xato: doimiy PTH ≠ intermittent PTH. Ularning natijasi qarama-qarshi, ikkalasini bir xil deb yozish xatodir. D3 vitamini haqidagi ma’lumot tajriba modeliga tegishli, buni klinik tavsiya sifatida o‘qitmang."
+    },
+    {
+      "title": "Skeletdan tashqari osteoklastlar",
+      "bullets": [
+        {
+          "text": "Osteoklastlar suyakdan tashqarida ham hosil bo‘ladi, masalan tendon qobig‘i gigant hujayrali o‘smasida.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘choqdagi mezenximal hujayralar RANKL va M-CSF chiqaradi, bu ehtimol qondan prekursorlarni jalb qiladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Ba‘zi karsinomalarda (ko‘krak, o‘pka, oshqozon osti bezi, qovuq) ham osteoklast uchraydi, mexanizmi noma‘lum.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "TRAP-musbat va TRAP-manfiy hujayralar",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "TRAP-musbat",
+          "TRAP-manfiy"
+        ],
+        "rows": [
+          [
+            "Hujayra turi",
+            "Ko‘p yadroli osteoklast",
+            "Ko‘p yadroli gigant hujayra"
+          ],
+          [
+            "Suyakni eritadimi",
+            "Ha, suyakni rezorbsiya qiladi",
+            "Yo‘q, suyakni eritmaydi"
+          ],
+          [
+            "Vazifasi",
+            "Suyak matriksini parchalash",
+            "Begona agent va xolesterinni parchalash"
+          ],
+          [
+            "Qayerda ko‘rinadi",
+            "Suyak va ba‘zi o‘smalarda",
+            "Xolesterin yoriqlari yonida"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun suyakdan tashqaridagi o‘smada osteoklast paydo bo‘lishi mumkin? 2) Gigant hujayra ko‘p yadroli bo‘lsa ham, nega uni osteoklast deb bo‘lmaydi? Doskada: ikki ustunli jadvalni (TRAP-musbat va TRAP-manfiy) talabalar bilan birga to‘ldiring. Tipik xato: har qanday ko‘p yadroli gigant hujayrani suyakni eritadi deb hisoblash. Diqqat: osteoklast ≠ TRAP-manfiy gigant hujayra."
+    },
+    {
+      "title": "Osteoklast qo‘shilishi (fuziya)",
+      "bullets": [
+        {
+          "text": "RANKL ta‘sirida NFATc1 DC-STAMP va Atp6v0d2 ifodasini oshiradi; ular qo‘shilish uchun zarur.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Siglec-15 sialillangan TLR2 ni taniydi; fosfatidilserin (PS) ochilishi “meni qo‘sh” signalidir.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "DC-STAMP yo‘q sichqonlarda ko‘p yadroli hujayralar hosil bo‘lmaydi, osteopetroz rivojlanadi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Fuziya bosqichlari zanjiri",
+        "nodes": [
+          "Migratsiya (jalb bo‘lish)",
+          "Tanish: Siglec-15 + TLR2",
+          "Yopishish (adgeziya)",
+          "Fuziogenlar: DC-STAMP, OC-STAMP",
+          "Membrana qo‘shilishi (PS)"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Fuziya nima uchun rezorbsiya kuchini oshiradi? 2) Fuziyani tanlab to‘xtatish nega ba‘zi muolajalarda foydali bo‘lishi mumkin? Doskada: besh bosqichli zanjirni chizing va har bosqich ostiga mos molekulani yozing. Tipik xato: DC-STAMP va OC-STAMP ni bir xil, o‘zaro almashadigan molekula deb o‘ylash; manbada ular bir-birini to‘liq almashtirmaydi. Eslab qoling: oldin tanish, keyin yopishish, oxirida membrana qo‘shiladi."
+    },
+    {
+      "title": "Osteoklast qutblanishi (polyarizatsiya)",
+      "bullets": [
+        {
+          "text": "Qutblangan osteoklastda podosomalar halqa va sealing zone hosil qiladi; u rezorbsiya lakunasini yopadi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ruffled borderda V-ATPaza va ClC-7 mineralni eritadi, MMP9 va katepsin K organik matriksni parchalaydi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "LRRK1 c-Src va Rac1/Cdc42 yo‘llarini bog‘laydi; yetishmasa sealing zone va ruffled border hosil bo‘lmaydi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Qutblanish signal zanjiri",
+        "nodes": [
+          "αvβ3 integrin bilan yopishish",
+          "c-Src–Pyk2 kompleksi",
+          "RhoA, Rac, Cdc42 GTPazalari",
+          "Aktin halqa: sealing zone",
+          "Ruffled border hosil bo‘lishi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega sealing zone yopiq bo‘lishi rezorbsiya uchun muhim? 2) Qutblanishni to‘xtatish fuziyani to‘xtatishdan qanday farq qilishi mumkin? Doskada: osteoklastning suyakka qaragan yuzasini chizing: sealing zone, ruffled border, lakuna. Tipik xato: ruffled border bilan sealing zone ni aralashtirish. Diqqat: sealing zone ≠ ruffled border; birinchisi yopuvchi halqa, ikkinchisi sekretsiya qiladigan burmali membrana. Eslab qoling: oldin yopishadi, keyin halqa yopadi, so‘ng burmali membrana kislota va ferment chiqaradi."
+    },
+    {
+      "title": "Tezkor savol: fuziya va qutblanish",
+      "bullets": [
+        {
+          "text": "1-savol: DC-STAMP (dendritik hujayraga xos transmembran oqsil) vazifasi nima? Javob: u preosteoklastlarning o‘zaro qo‘shilishi, ya’ni fuziyasi uchun zarur.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: Src o‘chirilsa nima bo‘ladi? Javob: burmali chegara va zichlovchi zona hosil bo‘lmaydi, og‘ir osteopetroz rivojlanadi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol: LRRK1 (leysinga boy takroriy kinaza 1) roli? Javob: c-Src va Rho-oilasi GTPazalarini birlashtiradi; usiz osteoklast farqlanadi, lekin zichlovchi zona hosil qilmaydi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: fuziya ≠ qutblanish. Fuziya — ko‘p yadroli hujayra hosil bo‘lishi; qutblanish — yetuk hujayrada sitoskelet qayta tashkillanishi va burmali chegara paydo bo‘lishi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Fuziya buzilsa ham osteoklast bo‘ladimi? 2) Qutblanish buzilsa-chi? Doskaga chizing: preosteoklast → fuziya → ko‘p yadroli hujayra → qutblanish → burmali chegara. Tipik xato: fuziya va qutblanishni bitta jarayon deb o‘ylash."
+    },
+    {
+      "title": "Mavjud antirezorbtiv dorilar",
+      "bullets": [
+        {
+          "text": "Azotsiz bisfosfonatlar (etidronat) ATP analogiga aylanib, osteoklast apoptoziga olib keladi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Azotli turlari (alendronat) mevalonat yo‘lidagi farnezil pirofosfat sintazani bosadi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Denosumabni birdan to‘xtatish suyak almashinuvi rebound sakrashi va ko‘p umurtqa sinishi xavfini beradi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Bisfosfonat va denosumab",
+        "nodes": [],
+        "header": [
+          "Xususiyat",
+          "Bisfosfonatlar",
+          "Denosumab"
+        ],
+        "rows": [
+          [
+            "Nishon",
+            "Osteoklast ichida mevalonat yo‘li",
+            "Hujayradan tashqarida RANKL"
+          ],
+          [
+            "Mexanizm",
+            "Azotli — prenillanish to‘xtaydi",
+            "RANKL ni bog‘lab, osteoklastogenezni bosadi"
+          ],
+          [
+            "Yon ta’sir",
+            "Atipik sinish, jag nekrozi, gipokalsemiya",
+            "Gipokalsemiya, jag nekrozi, rebound"
+          ],
+          [
+            "Suyakda qolishi",
+            "Suyak mineraliga yuqori moyillik",
+            "Qaytar; suyakda to‘planmaydi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega denosumabni to‘satdan to‘xtatish xavfli? 2) Uzoq muddatli bisfosfonat nega atipik sinishga olib kelishi mumkin? Doskaga: ikki dori uchun ta’sir zanjirini chizing. Tipik xato: bisfosfonat ham RANKL ni bloklaydi deb o‘ylash."
+    },
+    {
+      "title": "Yangi nishonlar va dorilar",
+      "bullets": [
+        {
+          "text": "PKN3 (protein kinaza N3) nishoni: SB202190 aktin halqa va rezorbsiyani kamaytirdi, suyak yo‘qolishini oldi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu vositalar suyak hosil bo‘lishiga ta’sir qilmasdan rezorbsiyani bosish maqsadida o‘rganilmoqda.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hammasi tajriba bosqichida; odamda samaradorlik va xavfsizlik hali isbotlanmagan.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Yangi nishonlar",
+        "nodes": [],
+        "header": [
+          "Nishon",
+          "Modda",
+          "Bosqich"
+        ],
+        "rows": [
+          [
+            "DC-STAMP (fuziya)",
+            "E8431",
+            "Tuxumdoni olingan sichqonlar"
+          ],
+          [
+            "Siglec-15 (fuziya)",
+            "Antitana 32A1; DS-1501a",
+            "Hujayra va kalamush modeli"
+          ],
+          [
+            "Dock5 (qutblanish)",
+            "C21",
+            "Sichqon modellari"
+          ],
+          [
+            "LRRK1 (qutblanish)",
+            "IN04",
+            "Faqat hujayra darajasida"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Fuziyani yoki qutblanishni to‘sish qaysi jihatdan afzal? 2) Nega klinikadan oldin odamda xavfsizlikni tekshirish shart? Doskaga: nishon → modda → bosqich jadvalini ko‘chiring. Tipik xato: tajriba natijalarini tasdiqlangan davo deb qabul qilish."
+    },
+    {
+      "title": "Kupling omillar va PDGF-BB xavfi",
+      "bullets": [
+        {
+          "text": "Osteoklast faqat suyakni yemirmaydi: u S1P, Wnt10b, BMP6 va CTHRC1 kabi kupling omillarni ajratib, osteoblastlarni jalb qiladi va mineralizatsiyani qo‘llab-quvvatlaydi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir yadroli pre-osteoklastlar PDGF-BB (trombotsitdan olingan o‘sish omili-BB) ajratadi; u H turdagi qon tomirlar va suyak hosil bo‘lishini rag‘batlantiradi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: PDGF-BB ortiqcha bo‘lsa, tomir kalsifikatsiyasi, ateroskleroz yoki miya tomirlari buzilishi mumkin; osteoartrozda og‘riq ham kuchayadi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu sabab pre-osteoklastlarni ko‘paytirish strategiyasi ayrim bemorlarda qarshi ko‘rsatma bo‘lishi mumkin; muqobil — qo‘shilishni emas, osteoklast qutblanishini bostirish.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun osteoklastni butunlay o‘chirish yaxshi emas? 2) PDGF-BB foydasi va xavfi qayerda? Doskada: osteoklast markazda, atrofida S1P, Wnt10b, BMP6, CTHRC1 o‘qlari osteoblastga, PDGF-BB o‘qi tomirga. Tipik xato: PDGF-BB ni faqat foydali omil deb o‘ylash; manbada ortiqcha miqdori xavfli deyiladi."
+    },
+    {
+      "title": "Voqea tahlili: denosumabni to‘xtatish",
+      "bullets": [
+        {
+          "text": "Denosumab (RANKLga qarshi antitana) to‘satdan to‘xtatilsa, suyak aylanishi markerlari (kollagen o‘zaro bog‘i CTX, prokollagen propeptidi P1NP) keskin oshadi — “rebound”.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘xtatgandan 6 oy o‘tgach bemorlar zardobida RANKL oshgan, so‘ng osteoklast faolligi markeri TRAcP5b (tartratga chidamli kislotali fosfataza 5b) ko‘tarilgan.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyak mineral zichligi (BMD) tez yo‘qoladi; boshqa antirezorbtivga ketma-ket o‘tilmasa, ko‘p umurtqa sinishi xavfi oshadi.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bunday bemorda to‘xtatishdan keyin qanday chiqish strategiyasini tanlaysiz va nima uchun?",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega RANKL to‘xtatishdan keyin to‘planib, osteoklastlarni oshiradi? 2) Chiqish strategiyasi nimani oldini oladi? Doskada: vaqt o‘qi — davolash, to‘xtatish, 6 oy, RANKL va TRAcP5b o‘sishi, BMD tushishi. Tipik xato: denosumabni bisfosfonat kabi suyakda qoladi deb o‘ylash; u suyakka joylashmaydi, ta’siri qaytuvchan."
+    },
+    {
+      "title": "Xulosa: rezorbsiya shakllari va yo‘nalishlar",
+      "bullets": [
+        {
+          "text": "Fiziologik rezorbsiya: remodellanishda osteoklastlar eskirgan yoki shikastlangan suyak sohalarini yemiradi, so‘ng osteoblastlar o‘rniga yangisini qo‘yadi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yallig‘lanishli rezorbsiya (periprostetik osteoliz, artrit): TNF-α va IL-1β RANKLni oshirib, OPGni kamaytiradi; estrogen yetishmasligi ham shunday ta’sir qiladi.",
+          "source": {
+            "author": "Yin L va boshq.",
+            "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+            "page": "PMID 40932933"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Infeksiya, endokrin buzilish va suyakka tarqalgan o‘smalar rezorbsiyani kuchaytirib, suyak hosil bo‘lishini susaytiradi; natijada osteoporoz yoki litik o‘choqlar paydo bo‘ladi.",
+          "source": {
+            "author": "Boyce BF va boshq.",
+            "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+            "page": "PMID 30323820"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kelajak: bisfosfonat/denosumab bilan soni kamaytirish, qo‘shilishni va qutblanishni tanlab to‘sish — hosil bo‘lishni saqlagan holda rezorbsiyani jilovlash.",
+          "source": {
+            "author": "Shunsuke Uehara va boshq.",
+            "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+            "page": "PMID 42328629"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi shaklda RANKL/OPG muvozanati buziladi? 2) Nega bitta nishonli davo yetarli emas? Doskada: to‘rt shakl (fiziologik, yallig‘lanishli, gormonal, o‘smaga bog‘liq) va ularni bog‘lovchi yo‘llar RANKL/RANK/OPG, NF-κB, MAPK/ERK. Tipik xato: barcha rezorbsiyani patologik deb hisoblash; remodellanishda u normal jarayon."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Suyak kesmasida reversiya chiziqlari tartibsiz bo‘lib, to‘qima mozaika tusini olgan. Bu naqsh klassik tarzda qaysi holatda uchraydi?",
+      "options": [
+        "Osteopetrozda, osteoklastlar umuman bo‘lmaganda",
+        "Suyakning Paget kasalligida, rezorbsiya tezlashganda",
+        "Sog‘lom kattalar suyagida, odatdagi qayta qurilishda",
+        "Revmatoid artritda, bo‘g‘im yallig‘lanishi tufayli"
+      ],
+      "correct_index": 1,
+      "explanation": "Normal qayta qurilishda osteoklastlar silliq tubli tarnov hosil qiladi. Rezorbsiya tezlashgan patologik jarayonlarda tartibsiz reversiya chiziqlari paydo bo‘lib, suyakka mozaika tusini beradi. Bu eng klassik tarzda Paget kasalligida ko‘rinadi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "Tadqiqotchi osteoklastning proton nasoslari va xlor kanallarini bloklab qo‘ydi. Rezorbsiyaning qaysi bosqichi birinchi bo‘lib buziladi?",
+      "options": [
+        "Kollagen matriksning metalloproteazalar bilan parchalanishi",
+        "Rezorbsiya chuqurchasiga osteoblastlarning jalb etilishi",
+        "Osteoklastning apoptoz orqali o‘lishi bosqichi",
+        "Suyak mineralining kislota bilan eritilishi bosqichi"
+      ],
+      "correct_index": 3,
+      "explanation": "Osteoklast avval H+ ionlari va Cl− ionlari orqali xlorid kislota hosil qilib suyak mineralini eritadi, shundan keyingina metalloproteazalar kollagen matriksni parchalaydi. Demineralizatsiyada ishtirok etuvchi genlardagi mutatsiyalar odamdagi osteopetroz holatlarining ko‘pchiligiga sabab bo‘ladi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "Osteoklastlar qaysi hujayralarning o‘zaro qo‘shilishidan hosil bo‘ladi?",
+      "options": [
+        "Suyak iligidagi gemopoetik miyeloid prekursorlar",
+        "Mezenximadan chiqqan osteoblast prekursorlari",
+        "Suyak ichiga ko‘milgan yetuk osteotsitlar",
+        "Xaftaga xos gipertrofik xondrotsitlar"
+      ],
+      "correct_index": 0,
+      "explanation": "Osteoklastlar ko‘p yadroli hujayralar bo‘lib, odatda suyak yuzasi yaqinidagi suyak iligida gemopoetik miyeloid prekursorlarning qo‘shilishidan hosil bo‘ladi. Osteoblastlar esa mezenximadan kelib chiqadi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "Protez atrofidagi bo‘shashgan implantli bemor to‘qimasida RANKL yuqori, OPG past topildi. Bundan qanday natija kutiladi?",
+      "options": [
+        "Osteoklast hosil bo‘lishi pasayib, suyak zichlashadi",
+        "Osteoklast faolligi o‘zgarmay, muvozanat saqlanadi",
+        "Osteoklast faolligi oshib, osteoliz tezlashadi",
+        "Osteoblast prekursorlari rezorbsiyani to‘xtatadi"
+      ],
+      "correct_index": 2,
+      "explanation": "OPG RANKLni bog‘lab, uning RANK bilan o‘zaro ta’sirini to‘sadigan ‘‘o‘lja’’ retseptor. RANKL ko‘payib OPG kamayganda osteoklastlar ortiqcha faollashadi, rezorbsiya va osteoliz tezlashadi. Implant bo‘shashgan bemorlarning to‘qimasida aynan shu holat kuzatilgan.",
+      "source": {
+        "author": "Yin L va boshq.",
+        "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+        "page": "PMID 40932933"
+      }
+    },
+    {
+      "question": "Kortikal suyakda yumaloq tunnel hosil bo‘lib, uni yangi suyak deyarli to‘ldirgan; markazda mayda arteriya va vena qolgan. Bu qanday tuzilma?",
+      "options": [
+        "Rezorbsiya chuqurchasini yopuvchi yupqa kanopi pardasi",
+        "Yangi suyak bilan to‘lgan tunnel, ya’ni osteon tuzilmasi",
+        "Trabekula yuzasidagi reversiya chizig‘li tarnov tuzilmasi",
+        "Osteoklast pastki yuzasidagi gofrirlangan chekka tuzilmasi"
+      ],
+      "correct_index": 1,
+      "explanation": "Osteoklastlar zich kortikal suyakni yumaloq tunnellar hosil qilib yemiradi. Bu tunnellar yangi suyak bilan deyarli to‘lib osteonlarni hosil qiladi; osteonda kichik markaziy oziqlantiruvchi arteriya va vena bo‘ladi. G‘ovak suyakda esa tarnov shaklidagi qayta qurilish birliklari hosil bo‘ladi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "Voyaga yetgan sichqonda RANKL geni faqat osteotsitlarda o‘chirildi. Qanday natija kutiladi?",
+      "options": [
+        "Osteoklastlar ko‘payib, osteoporoz rivojlanadi",
+        "Osteoklastlar hosil bo‘lmay, osteopetroz rivojlanadi",
+        "Osteoblastlar yo‘qolib, suyak hosil bo‘lmaydi",
+        "Embrional skelet rivojlanishi butunlay to‘xtaydi"
+      ],
+      "correct_index": 1,
+      "explanation": "Osteotsitlar RANKL ning muhim manbai hisoblanadi. Osteotsitda RANKL o‘chirilganda osteoklast hosil bo‘lishi buziladi va og‘ir osteopetroz rivojlanadi. Osteotsit RANKL‘i embrional davrdagi osteoklastlar uchun shart emas, lekin o‘smir va voyaga yetgan skeletdagi normal remodeling uchun zarur.",
+      "source": {
+        "author": "Yin L va boshq.",
+        "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+        "page": "PMID 40932933"
+      }
+    },
+    {
+      "question": "Endoprotezdan keyin implanti bo‘shashgan bemorning periprotez to‘qimasida RANKL/OPG nisbati qanday o‘zgargan bo‘ladi?",
+      "options": [
+        "RANKL ham, OPG ham bir xil darajada kamaygan bo‘ladi",
+        "RANKL kamaygan, OPG esa sezilarli darajada oshgan bo‘ladi",
+        "RANKL darajasi oshgan, OPG darajasi esa kamaygan bo‘ladi",
+        "RANKL ham, OPG ham deyarli o‘zgarmagan bo‘ladi"
+      ],
+      "correct_index": 2,
+      "explanation": "Yeyilish zarralari TNF-α va IL-1β ni ko‘paytiradi. Bu sitokinlar RANKL ni oshiradi va OPG ni kamaytiradi. Implanti bo‘shashgan bemorlarning periprotez to‘qimalarida RANKL yuqori, OPG past topilgan. Bu osteolizning tezlashishi bilan bog‘liq.",
+      "source": {
+        "author": "Yin L va boshq.",
+        "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+        "page": "PMID 40932933"
+      }
+    },
+    {
+      "question": "LGR4 retseptori osteoklast hosil bo‘lishini qaysi mexanizm orqali cheklaydi?",
+      "options": [
+        "RANKL ni parchalab, uning miqdorini kamaytirish orqali",
+        "M-CSF retseptorini bloklab, prekursorlarni kamaytirish orqali",
+        "TRAF6 ni faollashtirib, NF-κB signalini kuchaytirish orqali",
+        "RANKL uchun RANK bilan raqobatlashib, NFATc1 ni bostirish orqali"
+      ],
+      "correct_index": 3,
+      "explanation": "LGR4 RANKL ning qo‘shimcha retseptori bo‘lib, RANK bilan raqobatlashadi. U Gαq va GSK3-β signalini faollashtiradi. Bu signal osteoklast shakllanishi uchun zarur transkripsiya omili NFATc1 ning ifodasini va faolligini bostiradi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "RANKL‘siz sichqonning katta suyagi kesmasi TRAP bilan bo‘yaldi. Qanday ko‘rinish kuzatiladi?",
+      "options": [
+        "TRAP-musbat osteoklastlar yo‘q, ilik bo‘shlig‘i qayta shakllanmagan suyak bilan to‘lgan",
+        "TRAP-musbat osteoklastlar ko‘p, ilik bo‘shlig‘i kengaygan va suyak yupqalashgan",
+        "TRAP-musbat osteoklastlar normal miqdorda, ilik bo‘shlig‘i ham odatdagidek ochiq",
+        "TRAP-musbat osteoklastlar yo‘q, ilik bo‘shlig‘i esa mutlaqo bo‘sh qolgan"
+      ],
+      "correct_index": 0,
+      "explanation": "RANKL yoki RANK yetishmasa, osteoklastlar hosil bo‘lmaydi va osteopetroz rivojlanadi. Suyak qayta shakllanmaydi va ilik bo‘shlig‘i zich suyak bilan to‘ladi. RANK−/− sichqon suyagida TRAP-musbat hujayralar ko‘rinmaydi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "RANKL bilan qo‘zg‘atilgan osteoklast prekursorlariga xloroxin qo‘shildi. Qanday natija kuzatiladi?",
+      "options": [
+        "TRAF3 parchalanishi kuchayib, NIK to‘planadi va osteoklastlar ko‘payadi",
+        "TRAF3 parchalanishi kuchayib, p100 to‘liq p52 ga aylanadi va osteoklastlar ko‘payadi",
+        "TRAF3 parchalanmay saqlanadi, NIK parchalanadi va osteoklast hosil bo‘lishi kamayadi",
+        "TRAF3 parchalanmay saqlanadi, NIK to‘planadi va osteoklast hosil bo‘lishi kuchayadi"
+      ],
+      "correct_index": 2,
+      "explanation": "RANKL TRAF3 ning lizosoma yo‘li bilan parchalanishiga olib keladi. Shunda NIK to‘planadi va p100 p52 ga aylanadi. Xloroxin lizosomal parchalanishni to‘sadi va TRAF3 saqlanib qoladi. TRAF3 NIK ning proteasomal parchalanishini ta’minlaydi, natijada osteoklast hosil bo‘lishi kamayadi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "Revizion jarrohlikda periprotez to‘qimasida turli eskirish zarrachalari topildi. Qaysi zarracha eng kuchli yallig‘lantiruvchi ta’sir ko‘rsatishi ehtimol?",
+      "options": [
+        "Yirik sharsimon polietilen zarrasi",
+        "Submikron o‘lchamli cho‘zinchoq zarra",
+        "Yirik silliq sharsimon seramika zarrasi",
+        "Kattaroq o‘lchamli sharsimon metall zarra"
+      ],
+      "correct_index": 1,
+      "explanation": "Submikron o‘lchamli va cho‘zinchoq zarralar kattaroq yoki sharsimon zarralarga nisbatan kuchliroq yallig‘lantiruvchi ta’sir ko‘rsatadi. Zarraning o‘lchami, shakli va kimyoviy tarkibi uning bioreaktivligini belgilaydi.",
+      "source": {
+        "author": "Yin L va boshq.",
+        "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+        "page": "PMID 40932933"
+      }
+    },
+    {
+      "question": "TRAF3 osteoklast prekursorlarida o‘chirilgan sichqonlarda tuxumdonlar olib tashlangach, xloroxin berildi. Xloroxin ta’siri qanday bo‘ldi?",
+      "options": [
+        "Suyak yo‘qotilishi to‘liq oldi olindi",
+        "Osteoklastlar soni normadan ham kamaydi",
+        "Osteoblastlar soni keskin ko‘paydi",
+        "Suyak yo‘qotilishi oldi olinmadi"
+      ],
+      "correct_index": 3,
+      "explanation": "Xloroxin TRAF3 parchalanishini to‘xtatish orqali ishlaydi. TRAF3 butunlay o‘chirilgan sichqonlarda xloroxinning nishoni yo‘q, shuning uchun u ovariektomiyadan keyingi suyak yo‘qotilishini to‘xtata olmadi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "Bemor uzoq muddat glyukokortikoid (deksametazon) qabul qilmoqda. Osteoblastlarda qaysi o‘zgarish suyak rezorbsiyasini kuchaytiradi?",
+      "options": [
+        "OPG kamayadi, RANKL ortadi",
+        "OPG ortadi, RANKL kamayadi",
+        "OPG ham, RANKL ham bir xil kamayadi",
+        "OPG ham, RANKL ham o‘zgarishsiz qoladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Glyukokortikoidlar osteoblastlarda OPG ifodasini pasaytiradi va RANKL ifodasini oshiradi. Natijada osteoklastlar faollashadi, rezorbsiya kuchayadi va osteoporoz rivojlanadi.",
+      "source": {
+        "author": "Yin L va boshq.",
+        "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+        "page": "PMID 40932933"
+      }
+    },
+    {
+      "question": "Osteoklast prekursorlarida TRAF3 miqdoriga RANKL va TNF qanday ta’sir qiladi?",
+      "options": [
+        "Ikkalasi ham TRAF3 ni parchalaydi",
+        "RANKL TRAF3 ni oshiradi, TNF kamaytiradi",
+        "RANKL TRAF3 ni parchalaydi, TNF oshiradi",
+        "Ikkalasi ham TRAF3 ni oshiradi"
+      ],
+      "correct_index": 2,
+      "explanation": "RANKL TRAF3 degradatsiyasini chaqirib, p100 ning p52 ga o‘tishini va osteoklast hosil bo‘lishini kuchaytiradi. TNF esa TRAF3 va p100 miqdorini oshiradi, bu esa osteoklast hosil bo‘lishini cheklaydi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "Artroplastikadan keyin og‘riq tufayli bemor oyog‘iga yuklamani keskin kamaytirdi. Osteositlarda qaysi o‘zgarish periprostetik osteolizni tezlashtiradi?",
+      "options": [
+        "RANKL ifodasining ortishi",
+        "OPG ifodasining ortishi",
+        "Osteositlar apoptozining kamayishi",
+        "Makrofaglarning M2 turga o‘tishi"
+      ],
+      "correct_index": 0,
+      "explanation": "Mexanik yuklama kamayganda osteositlarda RANKL ifodasi sezilarli ortadi, bu osteoklastlar differensiatsiyasini bevosita faollashtiradi. Shu tariqa protezdan keyingi harakatsizlik osteolizni tezlashtiradi.",
+      "source": {
+        "author": "Yin L va boshq.",
+        "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+        "page": "PMID 40932933"
+      }
+    },
+    {
+      "question": "Tendon qobig‘ining gigant hujayrali o‘smasi biopsiyasida TRAP-musbat (tartratga chidamli kislotali fosfataza) va TRAP-manfiy ko‘p yadroli hujayralar topildi. Qaysi hujayralar suyakni rezorbsiya qiladi?",
+      "options": [
+        "TRAP-manfiy, xolesterin yoriqlari yonidagi yot jism gigant hujayralari",
+        "TRAP-musbat hujayralar, ya’ni o‘smadagi haqiqiy osteoklastlar",
+        "Ikkala turdagi ko‘p yadroli hujayralar suyakni bir xil darajada rezorbsiya qiladi",
+        "O‘sma stromasidagi bir yadroli mononuklear hujayralar suyakni rezorbsiya qiladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Skeletdan tashqari lezyonlarda TRAP-musbat osteoklastlar ham, TRAP-manfiy ko‘p yadroli hujayralar ham bo‘lishi mumkin. TRAP-manfiy polikarionlar suyakni rezorbsiya qilmaydi. Ular xolesterin va yot agentlarni parchalaydi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "question": "Sichqonda DC-STAMP (dendritik hujayraga xos transmembran oqsil) geni o‘chirildi. Osteoklast markerlari ifodasi normal. Tadqiqotchilar qanday natijani kutadi?",
+      "options": [
+        "Osteoklast markerlari yo‘qoladi va osteoklastlar umuman hosil bo‘lmaydi",
+        "Osteoklastlar o‘ta yirik bo‘lib, suyak rezorbsiyasi keskin kuchayadi",
+        "Faqat qutblanish buziladi, ko‘p yadroli osteoklastlar odatdagidek hosil bo‘ladi",
+        "Ko‘p yadroli hujayralar hosil bo‘lmaydi, rezorbsiya susayib osteopetroz rivojlanadi"
+      ],
+      "correct_index": 3,
+      "explanation": "DC-STAMP osteoklast fuziyasi uchun zarur. Gomozigotalarda markerlar normal bo‘lsa ham ko‘p yadroli hujayra hosil bo‘lishi to‘liq to‘xtaydi. Natijada rezorbsiya pasayadi va osteopetroz paydo bo‘ladi.",
+      "source": {
+        "author": "Shunsuke Uehara va boshq.",
+        "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+        "page": "PMID 42328629"
+      }
+    },
+    {
+      "question": "Sichqonda LRRK1 (leysinga boy takroriy kinaza 1) geni o‘chirilgan. Osteoklastlar M-CSF va RANKL ta’sirida normal differensiatsiyalanadi. Qaysi funksiya buziladi?",
+      "options": [
+        "Muhrlovchi zona va burmali chegara hosil bo‘lishi, F-aktin tartibi buziladi",
+        "Bir yadroli preosteoklastlarning o‘zaro qo‘shilishi (fuziya) to‘liq to‘xtaydi",
+        "RANK retseptorining prekursor hujayra yuzasida ifodalanishi butunlay yo‘qoladi",
+        "Prekursorlarning M-CSF ta’sirida osteoklastga differensiatsiyalanishi to‘xtaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "LRRK1 yetishmasa osteoklastlar normal differensiatsiyalanadi. Lekin ular muhrlovchi zona va burmali chegara hosil qila olmaydi, F-aktin tartibsiz bo‘ladi va kislota hamda proteazalar sekretsiyasi buziladi. Natijada og‘ir osteopetroz rivojlanadi.",
+      "source": {
+        "author": "Shunsuke Uehara va boshq.",
+        "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+        "page": "PMID 42328629"
+      }
+    },
+    {
+      "question": "Osteoporozli bemor denosumabni birdaniga to‘xtatdi va boshqa antirezorbtiv dori boshlanmadi. Qaysi xavf ko‘proq kutiladi?",
+      "options": [
+        "Osteoklastlar apoptozi kuchayadi va suyak zichligi uzoq muddat saqlanib qoladi",
+        "Suyak almashinuvi haddan tashqari bostirilgani uchun atipik son suyagi sinishi ortadi",
+        "Suyak almashinuv belgilari (CTX, P1NP) keskin oshadi va ko‘p umurtqa sinishi xavfi ortadi",
+        "Suyak yangilanishi to‘liq to‘xtaydi va jag‘ osteonekrozi xavfi butunlay yo‘qoladi"
+      ],
+      "correct_index": 2,
+      "explanation": "Denosumab RANKL ni neytrallaydi, ta’siri qaytar. Uni birdaniga to‘xtatish suyak almashinuv belgilari (CTX, P1NP) keskin oshishiga, mineral zichlikning tez yo‘qolishiga va ko‘p umurtqa sinishi xavfiga olib kelishi mumkin. Shuning uchun antirezorbtiv ketma-ketlik (“exit strategy”) kerak. Atipik son sinishi uzoq muddatli bisfosfonat bilan bog‘liq.",
+      "source": {
+        "author": "Shunsuke Uehara va boshq.",
+        "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+        "page": "PMID 42328629"
+      }
+    },
+    {
+      "question": "Fuziyani ingibitsiyalab PDGF-BB ishlab chiqaruvchi preosteoklastlar sonini oshirish strategiyasida qaysi xavf ko‘rsatilgan?",
+      "options": [
+        "Gipokalsemiyaning keskin rivojlanishi va qalqonsimon bez funksiyasining buzilishi",
+        "PDGF-BB ortiqcha bo‘lsa qon tomir kalsifikatsiyasi, ateroskleroz va miya qon tomirlari buzilishi mumkin",
+        "Jag‘ osteonekrozi xavfining onkologik dozalardagi darajaga yetishi",
+        "H tip qon tomirlar kamayishi va suyak hosil bo‘lishining to‘xtashi"
+      ],
+      "correct_index": 1,
+      "explanation": "PDGF-BB haddan tashqari ko‘p ishlab chiqarilsa tomir devori hujayralarining osteogen differensiatsiyasi mumkin. Bu ateroskleroz va miya qon tomirlari kalsifikatsiyasiga olib keladi. Shuning uchun PDGF-BB darajasini nazorat qilish zarur. Ba’zi bemorlarda bu strategiya kontrendikatsiya bo‘lishi mumkin.",
+      "source": {
+        "author": "Shunsuke Uehara va boshq.",
+        "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+        "page": "PMID 42328629"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Eslab qolish usuli: RANKL – osteoklast uchun «gaz pedali», OPG – «tormoz». OPG yolg‘onchi (tuzoq) retseptor bo‘lib, RANKLni RANKdan oldin tutib oladi. Gaz va tormoz muvozanati suyak rezorbsiyasi darajasini belgilaydi.",
+      "source": {
+        "author": "Yin L va boshq.",
+        "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+        "page": "PMID 40932933"
+      }
+    },
+    {
+      "text": "Qiziqarli hodisa: osteoklastlar suyakdan tashqarida ham paydo bo‘ladi, masalan tendon qobig‘ining gigant hujayrali o‘smasida. U yerda ko‘p yadroli hujayralarning hammasi ham suyakni yemaydi. TRAP-manfiy gigant hujayralar suyakni rezorbsiya qilmaydi, TRAP-musbatlari esa qiladi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: denosumab (RANKLga qarshi antitana) to‘xtatilgach, taxminan 6 oydan keyin zardobda RANKL ko‘payadi. Keyin osteoklast faolligi markeri TRAcP5b (tartratga chidamli kislotali fosfataza 5b) ham ortadi. Natijada suyak rezorbsiyasi «qaytma» tarzida kuchayadi. Xulosa: davolashni to‘satdan to‘xtatish xavfli.",
+      "source": {
+        "author": "Yin L va boshq.",
+        "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+        "page": "PMID 40932933"
+      }
+    },
+    {
+      "text": "Eslab qoling: TRAF3 – osteoklast hosil bo‘lishining «qo‘riqchisi». RANKL signali qo‘riqchini lizosomada parchalaydi, shunda NIK to‘planadi va osteoklast hosil bo‘lishi tezlashadi. Xloroxin qo‘riqchining parchalanishini to‘sib, osteoklast hosil bo‘lishini kamaytiradi.",
+      "source": {
+        "author": "Boyce BF va boshq.",
+        "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+        "page": "PMID 30323820"
+      }
+    },
+    {
+      "text": "Fikrni kengaytiring: osteoklast faqat «buzuvchi» emas. U S1P, Wnt10b, BMP6, CTHRC1 kabi bog‘lovchi omillarni ajratadi. Bir yadroli pre-osteoklastlar PDGF-BB orqali H-tipli qon tomirlarini hosil qiladi. Shu sababli dori suyak hosil bo‘lishini ham so‘ndirmasligi kerak.",
+      "source": {
+        "author": "Shunsuke Uehara va boshq.",
+        "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+        "page": "PMID 42328629"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yin L va boshq.",
+      "title": "Critical signaling pathways in osteoclast differentiation and bone resorption: mechanisms and therapeutic implications for periprosthetic osteolysis, Frontiers in Cell and Developmental Biology",
+      "year": 2025,
+      "pages": "PMID 40932933; DOI 10.3389/fcell.2025.1639430"
+    },
+    {
+      "author": "Boyce BF va boshq.",
+      "title": "Bone Remodeling and the Role of TRAF3 in Osteoclastic Bone Resorption, Frontiers in Immunology",
+      "year": 2018,
+      "pages": "PMID 30323820; DOI 10.3389/fimmu.2018.02263"
+    },
+    {
+      "author": "Shunsuke Uehara va boshq.",
+      "title": "Beyond resorption: targeting osteoclast fusion and polarization to restore balanced bone remodeling, Frontiers in Pharmacology",
+      "year": 2026,
+      "pages": "PMID 42328629; DOI 10.3389/fphar.2026.1821755"
+    }
+  ]
+}

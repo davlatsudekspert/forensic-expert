@@ -1,0 +1,2154 @@
+{
+  "topic": "Suyak kallusining tuzilishi va yumshoq to'qimalarning gistologik ko'rinishi asosida shikastlanish yoshini aniqlash",
+  "slides": [
+    {
+      "title": "Mavzuning dolzarbligi va maqsadi",
+      "bullets": [
+        {
+          "text": "Sinish yoshini aniqlash klinikada davolash yo‘lini tanlash va bitish jarayonini kuzatib, davoni o‘zgartirish uchun kerak.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud-tibbiyotda suyak shikastlari voqea holatlari haqida ma’lumot beradi va kerak bo‘lsa o‘lim sababini aniqlashga yordam beradi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bola zo‘ravonligi gumon qilinsa, bitish darajasi jarohatlar xronologiyasini va bola kim bilan bo‘lganini aniqlashga ko‘mak beradi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yara yoshi jinoyat joyini tiklashga yordam beradi. Ko‘p jarohatda ularning vaqti va tartibi aniqlanadi, chunki jazo og‘irlikka qarab farq qiladi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Introduction)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega klinik va sud-tibbiy maqsad farq qiladi? 2) Jarohat vaqti jinoiy javobgarlikka qanday ta’sir qiladi? Doskaga chizing: ‘jarohat → tekshiruv → xulosa’ sodda zanjiri. Tipik xato: sinish yoshi va yara yoshini bir xil usul bilan aniqlanadi deb o‘ylash."
+    },
+    {
+      "title": "Vitallik va yara yoshi: ikki asosiy savol",
+      "bullets": [
+        {
+          "text": "Asosiy savollar: jarohat tirik paytda, agoniyada yoki o‘limdan keyin berilganmi va jabrlanuvchi necha vaqt yashagan?",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vitallik — jarohatga tirik organizm reaksiyalari: qon quyilishi, yallig‘lanish hujayralari infiltratsiyasi, granulyatsiya to‘qimasi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vitallik tasdiqlansa, jarohatdan keyingi interval (PTI) jarohat va o‘lim orasidagi sababiy bog‘liqlikni asoslaydi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045 (Introduction)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Vitallikdan yara yoshigacha",
+        "nodes": [
+          "Jarohat yetkazildi",
+          "Vitallik reaksiyalari",
+          "Qon quyilishi, yallig‘lanish",
+          "Granulyatsiya to‘qimasi",
+          "Vitallik va yara yoshi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega avval vitallik, keyin yara yoshi aniqlanadi? 2) PTI nimani isbotlaydi? Doskaga flow sxemani o‘quvchilar bilan chizdiring. Diqqat: vitallik ≠ yara yoshi (birinchisi tirik/o‘lik savoli, ikkinchisi vaqt savoli). Tipik xato: ikkalasini bitta tushuncha deb olish."
+    },
+    {
+      "title": "Uch manba: nimani o‘rganadi",
+      "bullets": [
+        {
+          "text": "Lawrence: 2025 yildagi sharh 21 ta nashrni solishtirib, sinish yoshini aniqlashda tasvir usullarini baholaydi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499 (Abstract)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Li: yara yoshi va vitallikni ko‘rib chiqadi; PubMed va Xitoy CNKI bazasidagi maqolalar tahlil qilingan.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tomassini: teri jarohati yoshini immunogistokimyo (IHC) va immunofluoressensiya (IF) markerlari bilan o‘rganadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045 (Abstract)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Uch manba solishtirmasi",
+        "header": [
+          "Manba",
+          "Ob’ekt",
+          "Usul"
+        ],
+        "rows": [
+          [
+            "Lawrence",
+            "Suyak sinishi yoshi",
+            "21 nashr; asosan 2D rentgen"
+          ],
+          [
+            "Li",
+            "Yara yoshi: teri, mushak, miya",
+            "PubMed va Xitoy CNKI bazasi"
+          ],
+          [
+            "Tomassini",
+            "Teri jarohati yoshi",
+            "Immunogistokimyo va immunofluoressensiya"
+          ]
+        ],
+        "header_note": null
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Qaysi manba suyakka, qaysi yumshoq to‘qimaga tegishli? 2) Nega bir nechta manba birga kerak? Doskaga jadvalni ko‘chirtiring. Tipik xato: CNKI va PubMed ni usul emas, ma’lumotlar bazasi ekanini unutish. CNKI — China National Knowledge Infrastructure."
+    },
+    {
+      "title": "Suyak sinishi yoshini aniqlash: qiyinchiliklar",
+      "bullets": [
+        {
+          "text": "Bitishda bir nechta biologik belgi bor, lekin bosqichlar bir-biriga qoplanadi. Har kim ulardan o‘z tezligida o‘tadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yosh va sog‘liq holati bitish tezligiga ta’sir qiladi, deb hisoblanadi. Ammo har guruh bo‘yicha ma’lumot kam, ta’sirni o‘lchash qiyin.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zo‘ravonlik holatida davolanish kechikishi mumkin va sinish joyi harakatda qoladi. Natijada suyak noto‘g‘ri yoki sekin bitishi mumkin.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: bitta sinishda bir vaqtning o‘zida bir nechta bitish bosqichi ko‘rinishi mumkin. ‘Bir bosqich = bir aniq muddat’ deb o‘ylamang.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama savollari: 1) Nega sinish yoshini aniqlash klinik va sud-tibbiy ishda ham qiyin? 2) Davolanishning kechikishi bitish ko‘rinishini qanday o‘zgartiradi? Doskada chizish: ikki-uch bitish bosqichini bir-biriga qoplanuvchi gorizontal chiziqlar sifatida chizdiring. Tipik xato: talabalar bosqichlarni qat’iy, ketma-ket va bir-biridan ajralgan deb tushunadi."
+    },
+    {
+      "title": "Sharh: qidiruv va tanlov bosqichlari",
+      "bullets": [
+        {
+          "text": "Ish hakamlik qilingan, ingliz tilida va inson ma’lumotiga asoslangan bo‘lishi shart.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ish metodikaga qaratilgan bo‘lsin, alohida holat bayoni emas; bosqichlar va ularning muddati aniq berilsin.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qidiruv 2024-yil yozida o‘tkazilgan, 2024-yil iyulgacha bo‘lgan yozuvlar ko‘rilgan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Maqolalarni saralash zanjiri",
+        "nodes": [
+          "6 baza: 1328 natija",
+          "Sarlavha/annotatsiya: 259",
+          "Takrorlar chiqarildi: 86",
+          "To‘liq matn: 10 ta mos",
+          "+11 havoladan = 21 nashr"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama savollari: 1) Nega faqat inson ma’lumotiga asoslangan ishlar tanlangan? 2) Havolalardan qo‘shimcha ish topish nimani ko‘rsatadi? Doskada chizish: saralash voronkasini 1328 dan 21 gacha chizing. Tipik xato: 259 va 86 raqamlarini aralashtirish; 86 takrorlar chiqarilgandan keyingi son."
+    },
+    {
+      "title": "Adabiyot demografiyasi",
+      "bullets": [
+        {
+          "text": "1987–2010 yillarda atigi 4 ish chiqqan; 2011–2023 yillarda yana 16 ish nashr etilgan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sinish yoshi aniq bo‘lishi tug‘ruq jarohati yoki batafsil klinik yozuvlarga asoslangan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: tirik bemorlar ko‘p, postmortem kam; bu sud-tibbiy amaliyotga to‘liq mos kelmasligi mumkin.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "21 ta nashr tarkibi",
+        "nodes": [],
+        "header": [
+          "Ko‘rsatkich",
+          "Soni",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "Davr",
+            "21 ta ish",
+            "1987–2024, jami 37 yil"
+          ],
+          [
+            "Tirik / postmortem",
+            "14 / 5",
+            "19 ta aniq namunali ishdan"
+          ],
+          [
+            "Bolalar / kattalar",
+            "15 / 5",
+            "1 ta ish yoshni ko‘rsatmagan"
+          ],
+          [
+            "Sinish yoshi aniq",
+            "14 ta",
+            "yana 3 tasida taxminiy"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama savollari: 1) Pediatrik ishlarning ko‘pligi kattalar uchun xulosalarga qanday ta’sir qiladi? 2) Sinish yoshi noma’lum bo‘lsa, usulni tekshirish nega qiyin? Doskada chizish: jadvaldagi tirik va postmortem ishlar nisbatini ustunli diagramma qilib chizing. Tipik xato: 21 ta nashr bilan namunali 19 ta ishni aralashtirish; 14 va 5 raqamlari 19 ga tegishli."
+    },
+    {
+      "title": "Tezkor savol: sharh va namunalar",
+      "bullets": [
+        {
+          "text": "Tezkor savol 1: sharhga nechta nashr kiritildi? Javob: 21 ta nashr, ular 1987–2024 yillar oralig‘ini qamrab oladi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tezkor savol 2: qaysi populyatsiya ustun? Javob: bolalar. 21 ta ishdan 15 tasi (71,43%) faqat pediatrik guruhni o‘rgangan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tezkor savol 3: qaysi usul eng ko‘p qo‘llangan? Javob: oddiy 2D rentgen. 21 ta usuldan 15 tasi (71,43%) faqat shuni ishlatgan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi. Eng ko‘p qo‘llanadigan usul (2D rentgen) ≠ eng aniq usul; oltin standart — gistologiya.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Annotatsiya"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Talabalardan uchta savolga javobni yopiq kitob bilan so‘rang. Muhokama: nega tadqiqotlarning aksariyati bolalarda va rentgen bilan o‘tkazilgan? Doskada: ’ko‘p qo‘llanadi’ va ’eng aniq’ degan ikki ustun chizib, rentgen va gistologiyani joylashtirishni topshiring. Tipik xato: eng ko‘p ishlatiladigan usulni eng ishonchli deb o‘ylash."
+    },
+    {
+      "title": "Qaysi suyaklar o‘rganilgan",
+      "bullets": [
+        {
+          "text": "Namunalarning ko‘pchiligi (1289 tadan 851 tasi, 66,02%) uzun suyaklardan; eng ko‘pi radius (250 ta, 19,39%).",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bosh suyagidan 158 ta (12,26%), qovurg‘alardan atigi 32 ta (2,48%) namuna o‘rganilgan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud-tibbiyot uchun muhim qovurg‘a va uzun suyak metafizi jarohatlari kam o‘rganilgan; qovurg‘a faqat 4 ta ishda bor.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Klavikula o‘ziga xos: u endoxondral va intramembranoz ossifikatsiyadan hosil bo‘ladi, uzun suyaklar esa faqat endoxondraldan. Natijani umumlashtirish qiyin.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nega radius eng ko‘p o‘rganilgan (manbaga ko‘ra bolalikda eng tez-tez tasodifiy sinadigan suyak), qovurg‘a esa kam? Doskada: skelet sxemasi chizib, ko‘p va kam o‘rganilgan suyaklarni ikki rangda belgilang. Tipik xato: ko‘p o‘rganilgan suyakni sud-tibbiyot uchun eng muhim deb hisoblash."
+    },
+    {
+      "title": "Tasvirlash usullari taqsimoti",
+      "bullets": [
+        {
+          "text": "21 ta ishdan 15 tasi (71,43%) faqat oddiy 2D rentgen qo‘llagan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gistologiya — oltin standart, lekin buzuvchi va faqat o‘limdan keyin qo‘llanadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Annotatsiya"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir ish kompyuter tomografiya (KT) qo‘shgan; bitta ish magnit-rezonans tomografiya (MRT) bilan cheklangan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Usullar bo‘yicha ishlar (jami 21)",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Ishlar soni",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "Faqat 2D rentgen",
+            "15",
+            "Eng ko‘p (71,43%)"
+          ],
+          [
+            "Rentgen + gistologiya (± KT)",
+            "2",
+            "Biri KT ni ham qo‘shgan"
+          ],
+          [
+            "Faqat gistologiya",
+            "2",
+            "Faqat o‘limdan keyin"
+          ],
+          [
+            "Makroskopiya / MRT",
+            "1 / 1",
+            "Quruq suyak / faqat MRT"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nega gistologiya aniq, lekin jonli odamlarda qo‘llanmaydi? Nega rentgen ko‘p ishlatiladi? Doskada: jadvalni ko‘chirib, 15+2+2+2=21 yig‘indisini tekshirishni topshiring. Tipik xato: rentgen+gistologiya+KT ishini alohida ’KT usuli’ deb sanash."
+    },
+    {
+      "title": "Radiografik bitish bosqichlari zanjiri",
+      "bullets": [
+        {
+          "text": "SPNBF — suyak usti pardasi ostidagi yangi suyak hosil bo‘lishi (subperiosteal new bone formation).",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, 1-jadval"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2D rentgen bo‘yicha 17 ishning bosqichlari 7 ta o‘zaro qoplanuvchi, uzluksiz bosqichga umumlashtirilgan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar (1-jadval)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: bosqichlar qat‘iy ketma-ket emas, bitish fazalari bir-birini ancha qoplaydi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Kirish"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Umumlashtirilgan 7 bosqich (5 guruhda)",
+        "nodes": [
+          "1-2: shish, bo‘shliq kengayishi",
+          "3: periostal reaksiya (SPNBF)",
+          "4: yumshoq, so‘ng qattiq kallus",
+          "5-6: chiziq yo‘qolishi, ko‘prik",
+          "7: remodellanish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bosqichlar bir-birini qoplaydi va bu baholashga qanday ta’sir qiladi? 2) Nima uchun bitta jarohat bir vaqtda bir necha bosqichni ko‘rsatishi mumkin? Doskada: 5 ta qutidan iborat zanjirni chizing va 1-2 hamda 5-6 qutilarni ajratib yozing. Tipik xato: bosqichlarni qat‘iy kalendar muddatlari deb o‘ylash."
+    },
+    {
+      "title": "Bosqichlar va mezonlar chastotasi",
+      "bullets": [
+        {
+          "text": "Rentgen usullarida bosqichlar soni 2 dan 8 gacha, o‘rtacha 5, mod (eng ko‘p uchraydigan) 6 ta.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oltita bosqichli tizimlarning ikkitasi ham bir xil mezonlar kombinatsiyasini baholamaydi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: bir xil jarayon turli ishlarda turlicha nomlanadi — terminologiya standartlashmagan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar va Muhokama"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Mezonlar 17 ta rentgen ishida",
+        "nodes": [],
+        "header": [
+          "Bosqich/mezon",
+          "Ishlar soni",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "Kallus hosil bo‘lishi",
+            "Barcha 17 ta ishda",
+            "Yumshoq va qattiq alohida: 12 ta ishda"
+          ],
+          [
+            "Periostal reaksiya",
+            "13 ta",
+            "Ikkinchi eng ko‘p uchraydigan mezon"
+          ],
+          [
+            "Remodellanish",
+            "12 ta",
+            "Bitishning yakuniy bosqichi"
+          ],
+          [
+            "Ko‘prik hosil bo‘lishi",
+            "10 ta",
+            "Kallus va remodellanish oralig‘ida"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Mezonlar kombinatsiyasi har xil bo‘lsa, usullarni solishtirish nega qiyin? 2) Nima uchun kallus hamma ishda uchraydi? Doskada: jadvalni 4 qatorli qilib ko‘chiring va chastotani ustun shaklida chizing. Tipik xato: bosqichlar soni 6 bo‘lsa, mezonlar ham bir xil deb o‘ylash."
+    },
+    {
+      "title": "Gistologik usul: oltin standart",
+      "bullets": [
+        {
+          "text": "Gistologiya hujayra darajasida ko‘rsatadi; dastlabki haftalardagi hujayra hodisalari kaskadini rentgen ko‘rsata olmaydi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "De Boer 13 ta belgini (1–2+ yilgacha), Naqvi 14 ta belgini (≤1 yosh), Moirangthem 4 bosqichni (dastlabki 5 kun) bergan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Natijalar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jarohatdan vaqt o‘tgan sari gistologik baho ham o‘zgaruvchan, noaniq va keng oraliqli bo‘lib boradi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: usul destruktiv va faqat postmortem; u faqat o‘lim paytidagi bitish holatini ko‘rsatadi, tirikda qo‘llanmaydi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Oltin standart bo‘lsa ham, nega gistologiya tirik bolada qo‘llanmaydi? 2) Dastlabki kunlarda gistologiya rentgendan nimasi bilan ustun? Doskada: vaqt o‘qini chizing, unga Moirangthem (5 kun) va De Boer (1–2+ yil) oraliqlarini belgilang. Tipik xato: oltin standart degani cheksiz aniq degan fikr."
+    },
+    {
+      "title": "Tezkor savol: gistologiya va rentgen",
+      "bullets": [
+        {
+          "text": "Gistologiya hujayra darajasini ko‘rsatadi. Dastlabki haftalarda rentgenda ko‘rinmaydigan hujayra hodisalari kaskadi faqat shu usulda aniqlanadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gistologiya suyakni buzadi, shuning uchun faqat postmortem qo‘llanadi. U o‘lim paytidagi bitish holatining ‘surati’ni beradi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tezkor savol: nega gistologiyani tirik bemorda qo‘llab bo‘lmaydi? Qaysi usul dastlabki haftalarda hujayra kaskadini ko‘rsatadi?",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi! SPNBF (suyak usti pardasi ostida yangi suyak hosil bo‘lishi) ≠ kallus. Jadvalda bular alohida bosqichlar.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Gistologiya nega ‘oltin standart’, lekin tirik odamda yaroqsiz? 2) Rentgen dastlabki haftalarda nimani ko‘rsata olmaydi? Doskada: ikki ustunli jadval chizing (gistologiya va rentgen) va har biriga ‘tirik/o‘lik’, ‘hujayra/suyak’ belgilarini yozdiring. Tipik xato: talabalar SPNBF va kallusni bitta bosqich deb o‘ylaydi, gistologiyani esa tirik shaxs uchun mos deb hisoblaydi."
+    },
+    {
+      "title": "Voqea tahlili: bir sinishda bir necha bosqich",
+      "bullets": [
+        {
+          "text": "Vaziyat: zo‘ravonlik holatlarida tibbiy yordam kechikishi mumkin. Sinish uchlari harakatlanib qoladi va suyak ishlatilishda davom etadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oqibatda bo‘laklar noto‘g‘ri birikishi yoki bitish kechikishi mumkin. Shunda bitta shikastda bir vaqtning o‘zida bir necha bitish bosqichi ko‘rinadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bitish bosqichlari bir-biriga qisman qoplanadi va tezligi har kishida har xil. Shuning uchun sinish yoshi bir sana emas, oraliq sifatida baholanadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bunday sinish yoshini baholashda qanday xato bo‘lishi mumkin? Bitta bosqichga qarab xulosa chiqarish nega xavfli?",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bir sinishda ham erta, ham kech belgilar ko‘rinsa, ekspert nimaga tayanadi? 2) Yordamning kechikishi bitish tezligiga qanday ta’sir qiladi? Doskada: vaqt chizig‘ini chizib, unda bosqichlarning bir-biriga qoplanadigan oraliqlarini ko‘rsating. Tipik xato: eng ilg‘or belgiga qarab butun sinishni ‘eski’ deb baholash."
+    },
+    {
+      "title": "Radiografiya cheklovlari: klinik va sud talqini",
+      "bullets": [
+        {
+          "text": "Klinik rentgen asosan moslashuvni baholash uchun olinadi; gips esa tasvir tafsilotini kamaytiradi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kech bosqichda kuzatuv kam: nur dozasi klinik foydani oqlamaydi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Halliday: oltita belgidan faqat SPNBF observerlar o‘rtasida ishonchli aniqlangan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "A vs B: gipsli va gipssiz sinish",
+        "nodes": [],
+        "header": [
+          "Jihat",
+          "A: gipsli",
+          "B: gipssiz"
+        ],
+        "rows": [
+          [
+            "Maqsad",
+            "Moslashuvni baholash",
+            "Yordam kechikishi/to‘silishi mumkin"
+          ],
+          [
+            "Tasvir",
+            "Gips tafsilotni kamaytiradi",
+            "Gipsli jadval mos kelmasligi mumkin"
+          ],
+          [
+            "Mikrotravma",
+            "Immobilizatsiya bor",
+            "Ikkilamchi mikrotravma mumkin"
+          ],
+          [
+            "Kech bosqich",
+            "Nur dozasi tufayli kuzatuv kam",
+            "Kech bosqichda yosh oralig‘i kengayadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Gipslangan klinik sinish asosida tuzilgan jadval zo‘ravonlik sinishiga nega to‘liq mos kelmasligi mumkin? 2) Observerlar kelishuvi past bo‘lsa, sud ekspertizasida qanday ehtiyot choralari kerak? Doskada: A va B ustunli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: klinik jadvalni sud holatlariga o‘zgartirishsiz qo‘llash va rentgen bahosini aniq sana deb talqin qilish."
+    },
+    {
+      "title": "KT, MRT va mikro-KT: taqqoslash",
+      "bullets": [
+        {
+          "text": "MRT nurlanishsiz usul sifatida taklif qilingan; u erta, o‘tkir fazadagi o‘zgarishlarni yaxshi ajratadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "KT (kompyuter tomografiya) 2D rentgendan aniqroq, lekin 2D bosqichlarga tayansa, aniqligi cheklanadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikro-KT suyakni buzmay 3D ko‘rsatadi va 60 µm gacha tafsilotga yetadi, ammo faqat postmortem qo‘llanadi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Usullar solishtirmasi",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Afzalligi",
+          "Cheklovi"
+        ],
+        "rows": [
+          [
+            "MRT",
+            "Ionlashtiruvchi nurlanishsiz",
+            "Nozik belgilar ko‘rinmaydi, o‘tkir faza"
+          ],
+          [
+            "KT",
+            "2D rentgendan aniqroq (Cappella)",
+            "Gistologiyadan past aniqlik"
+          ],
+          [
+            "Mikro-KT",
+            "60 µm gacha, 3D, nobud qilmaydi",
+            "Faqat postmortem; doza yuqori"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega tirik bolada mikro-KT qo‘llab bo‘lmaydi? 2) MRT qaysi muddatda foydali, nega keyinchalik emas? Doskada: 3 ustunli solishtirma jadvalni talabalar bilan to‘ldiring. Diqqat: MRT ≠ KT ≠ mikro-KT; tipik xato — mikro-KT ni klinik usul deb o‘ylash (u faqat postmortem). Gistologiya hamon oltin standart ekanini eslating."
+    },
+    {
+      "title": "Mikro-KT parametrlari va sun’iy intellekt",
+      "bullets": [
+        {
+          "text": "Viero kallusda beshta gistomorfometrik parametrni topdi: anizotropiya, bog‘lanish zichligi, mineral hajm, trabekula ajralishi va qalinligi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu parametrlar kallus yoshi va yetukligi bilan o‘lchanadigan farq berdi; keyingi tekshiruvdan so‘ng ob’ektiv baho bera olishi mumkin.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sanchez: 2D rentgenda ham kallus qalinligini o‘lchash an’anaviy sifat belgilaridan ishonchliroq baho berdi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sun’iy intellekt (Hržić, Kyllonen, Tsai) sinaldi: Tsai modeli 83,7% hollarda 1 hafta aniqlikda baholadi, lekin faqat ≤3 oylik chaqaloqlarda.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega o‘lchanadigan (miqdoriy) parametr sifat belgilaridan ob’ektivroq? 2) Nega Tsai modelini boshqa yoshlarga ko‘chirib bo‘lmaydi? Doskada: kallus kesimida 5 parametrni belgilab chizing. Tipik xato — sun’iy intellekt qo‘lda usuldan aniqroq deb o‘ylash; Kyllonen ishida qo‘lda Malone usuli aniqroq bo‘lgan."
+    },
+    {
+      "title": "Standartlashtirish va validatsiya muammosi",
+      "bullets": [
+        {
+          "text": "Terminologiya bir xil emas: eng ko‘p ishlatilgan olti bosqichli tizimlarning hech ikkitasi bir xil belgilar to‘plamini baholamagan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hozirgacha faqat bitta ish (Cappella) avval chop etilgan usulni (De Boer) tekshirish maqsadida o‘tkazilgan.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Drury va Cunningham uch usulni 96 bolada 112 uzun suyak sinishida solishtirdi; ba’zi baholar deyarli 2 oyga farq qildi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kelajak: usullarni yoshi ma’lum sinishlarda sinash, ularning aniqligi, ketma-ketligi va barqarorligini baholash.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499, Muhokama"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega bir xil sinishga turli usullar turli yosh beradi? 2) Sudda bunday baho qanchalik ishonchli? Doskada: uch usul bergan vaqt oraliqlarini uchta chiziq bilan chizib, farqni ko‘rsating. Tipik xato — usul chop etilgan bo‘lsa, tekshirilgan deb o‘ylash; aslida validatsiya juda kam. Yodda tuting: Drury va Cunningham sinishlarning haqiqiy yoshi noma’lum bo‘lgan."
+    },
+    {
+      "title": "Voqea tahlili: usullar mos kelmaganda",
+      "bullets": [
+        {
+          "text": "Vaziyat: Drury va Cunningham 96 bolaning 112 ta uzun suyak sinishini uch xil usulda baholadi. Sinishlarning haqiqiy yoshi noma’lum edi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natija: hech bir usul to‘liq mos kelmadi. Vaqt oralig‘ining uzunligi, boshlanish va tugash sanalari farq qildi, ba’zan deyarli 2 oygacha.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi. Taxminiy yosh ≠ aniq yosh. Sinish yoshini baholash noaniq usul hisoblanadi, sud ishida ehtiyotkorlik kerak.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: ekspert xulosasida nimaga ehtiyot bo‘lish kerak? Bitta usulga tayanib aniq muddat yozish nega xavfli? Usullarni yoshi ma’lum sinishlarda sinash nega zarur?",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: 1) Uch usul turlicha muddat bersa, ekspert xulosani qanday yozadi? 2) Haqiqiy yoshi ma’lum sinishlarda sinash nima beradi? Doskada: uch usulning vaqt oralig‘ini uchta kesma sifatida chizib, ular qanchalik farq qilishini ko‘rsating. Tipik xato: talabalar eng yaqin ikki usulni ‘to‘g‘ri’ deb hisoblaydi, holbuki bu ularning aniqligini isbotlamaydi."
+    },
+    {
+      "title": "Yara bitishi fazalari: yumshoq to‘qima",
+      "bullets": [
+        {
+          "text": "Uch faza: yallig‘lanish, proliferatsiya, yetilish; hujayra va eruvchi omillar o‘zaro ta’sirlashadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri: re-epitelizatsiya va yangi granulyatsiya to‘qimasi yara yuzasini yopadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mushak: yo‘ldosh (satellit) hujayralar ko‘payib, miotsitga aylanadi va shikastni tiklaydi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Yallig‘lanish hujayralarining paydo bo‘lishi va yo‘qolishi yara yoshini aniqlashda nega muhim? 2) Teri va mushak proliferatsiyasi nimasi bilan farq qiladi? Doskada: uch fazali zanjirni chizib, tagiga teri va mushak jarayonlarini yozing. Tipik xato: fazalarni aniq chegarali deb o‘ylash, aslida ular uzluksiz o‘tadi."
+    },
+    {
+      "title": "Tadqiqot namunalari: hayvon, autopsiya, tirik",
+      "bullets": [
+        {
+          "text": "Tadqiqotlar asosan hayvon va autopsiya namunalariga, ba’zan tirik odamlarga tayangan.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tirik odamdan namuna olish uchun mahalliy etika qo‘mitasi ruxsati kerak.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: autopsiya namunasida chirish, parchalanish, qurish va yosh natijaga ta’sir qiladi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Nima uchun hayvon natijalarini odamga to‘g‘ridan-to‘g‘ri ko‘chirib bo‘lmaydi? 2) Tirik odam namunalari nega sog‘lom odamlarni aks ettirmaydi? Doskada: uch ustunli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: autopsiya namunasini har doim eng yaxshi deb hisoblash, holbuki hujjatlari ko‘pincha yetarli bo‘lmaydi."
+    },
+    {
+      "title": "Morfologik tahlil va ko‘karish rangi",
+      "bullets": [
+        {
+          "text": "Morfologik tahlil eng ko‘p qo‘llanadigan usul. U ko‘rish orqali baholanadi, obyektiv va markerning joylashuvini ko‘rsatadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Morphological analysis)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘karish rangiga qarab yoshni baholash juda o‘zgaruvchan. Rang chuqurlik, joylashuv va teri rangiga bog‘liq.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Morphological analysis)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gematoksilin-eozin (HE) va Berlin ko‘k bo‘yog‘i jarohatdan 6 soat o‘tgach o‘zgarishni ko‘rsatadi, lekin amaliy qo‘llanishi cheklangan.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Morphological analysis)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunogistokimyo (IHC) va immunofluoresensiya (IF) erta bosqich uchun foydali. Raqamli skaner subyektiv omilni kamaytiradi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Morphological analysis)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ko‘z bilan baholash sud-tibbiy xulosa uchun yetarli emas? 2) IHC va IF oddiy gistologiyadan nimasi bilan ustun? Doskada chizish: jarohat vaqti o‘qi (0 dan 6 soatgacha va undan keyin), unda HE ko‘rsatadigan davrni belgilang. Tipik xato: ko‘karish rangi aniq kun beradi deb o‘ylash."
+    },
+    {
+      "title": "Tezkor savol: yumshoq to‘qima usullari",
+      "bullets": [
+        {
+          "text": "TEZKOR SAVOL 1: nega ko‘karish rangi bo‘yicha jarohat yoshini aniqlash ishonchsiz hisoblanadi?",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Morphological analysis)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Javob: rang va paydo bo‘lish vaqti chuqurlik, joylashuv va teri rangiga bog‘liq, shuning uchun juda o‘zgaruvchan.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Morphological analysis)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TEZKOR SAVOL 2: erta yaralar uchun qaysi usul mos? Javob: mRNK (matritsa RNK) asosidagi, chunki u oqsildan oldin o‘zgaradi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Molecular biological analysis)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi! Eritrotsitlar ekstravazatsiyasi vitallik belgisi hisoblanadi, lekin postmortem ham paydo bo‘ladi, shuning uchun ishonchsiz.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Other methods)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Talabalarga javob berishdan oldin 1 daqiqa o‘ylash vaqti bering. Muhokama: 1) Eritrotsitlar ekstravazatsiyasi nima uchun yagona dalil bo‘la olmaydi? 2) Morfologik va molekulyar parametrlarni birga ishlatish xatoni qanday kamaytiradi? Doskada chizish: ikki ustunli jadval ’vitallikni isbotlaydi’ va ’postmortem ham uchraydi’. Tipik xato: eritrotsitlar ekstravazatsiyasini mutlaq vitallik belgisi deb hisoblash."
+    },
+    {
+      "title": "Molekulyar usullar: mRNK, oqsil, yuqori o‘tkazuvchan",
+      "bullets": [
+        {
+          "text": "mRNK oqsildan va morfologiyadan oldin o‘zgaradi, shuning uchun erta yaralarga mos.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Molecular biological analysis)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "PCRda referens gen bilan normallashtirish shart; ba’zi genlar jarohatdan so‘ng o‘zgarib ketadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Molecular biological analysis)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yuqori o‘tkazuvchan usullar o‘nlab-yuzlab genni birdan tahlil qilib, xarajatni kamaytiradi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306 (Molecular biological analysis)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Molekulyar usullar solishtiruvi",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Nimani ko‘radi",
+          "Xususiyati"
+        ],
+        "rows": [
+          [
+            "Real-time PCR (zanjir reaksiyasi)",
+            "mRNK darajasi",
+            "Juda sezgir; mRNK oqsildan oldin o‘zgaradi"
+          ],
+          [
+            "Western blot; ferment-immunoanaliz (ELISA)",
+            "Oqsil miqdori",
+            "IHC dan sezgirroq"
+          ],
+          [
+            "Oqsil mikromassivi",
+            "Ko‘p oqsil bir namunada",
+            "Yuqori o‘tkazuvchan, sezgir"
+          ],
+          [
+            "Gen chiplari",
+            "O‘nlab-yuzlab gen",
+            "Arzon, takrorlanuvchan natija"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega mRNK oqsildan oldin o‘zgargani erta yoshni aniqlashda qulay? 2) Western blot va ELISA ning kamchiligi nima (laboratoriyalar o‘rtasida solishtirish qiyin)? Doskada chizish: namuna, mRNK, oqsil, gistomorfologiya ketma-ketligini vaqt o‘qida chizing. Tipik xato: referens gen barqaror deb faraz qilish."
+    },
+    {
+      "title": "Postmortem barqarorlik: marker tanlash",
+      "bullets": [
+        {
+          "text": "Chirish va qurish mRNK (axborot RNK) hamda oqsilni buzadi; bu o‘limdan so‘ng muqarrar.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marker tanlashda o‘limdan keyin ma’lum muddat barqaror qoladigan moddalar afzal ko‘riladi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: barqarorlik markerga bog‘liq; 3 soat bilan 4 kun orasida katta farq bor.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Postmortem barqarorlik",
+        "nodes": [],
+        "header": [
+          "Marker",
+          "Turi",
+          "Barqarorlik"
+        ],
+        "rows": [
+          [
+            "Argininosuksinat liaza",
+            "mRNK",
+            "18 soat"
+          ],
+          [
+            "SNAT2 (aminokislota tashuvchi)",
+            "mRNK",
+            "48 soat"
+          ],
+          [
+            "LC3-II va p62",
+            "Oqsil",
+            "4 kun"
+          ],
+          [
+            "Kannabinoid retseptor-2",
+            "mRNK",
+            "3 soatda parchalanadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: nega postmortem barqaror marker tanlash kerak? Nazorat guruhi nima uchun zarur? Doskada chizish: marker nomlarini barqarorlik muddati bo‘yicha (3 soat – 4 kun) vaqt o‘qida joylashtiring. Tipik xato: barcha mRNKni bir xil barqaror deb o‘ylash."
+    },
+    {
+      "title": "Miya jarohati biomarkerlari",
+      "bullets": [
+        {
+          "text": "Markaziy nerv sistemasi (MNS) shikastdan keyingi yallig‘lanishi teri va skelet mushagiga o‘xshaydi, ammo glial hujayralar migratsiyasi kabi mahalliy reaksiya MNSga xos.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Neyronlar yangilanmagani uchun miya shikasti qaytmas. Qon quyilishining yoshi gematoksilin-eozin va immunogistokimyoviy bo‘yash bilan baholanadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diffuz aksonal shikastda β-amiloid prekursor akson uzilganda shikast joyida aniqlanadi; u sezgir va o‘ziga xos marker hisoblanadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Takamiya (2007) miya jarohatida 27 sitokinning vaqtga bog‘liq ifodasi jarohat yoshini baholashga yordam berishi mumkinligini ko‘rsatdi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: miya yallig‘lanishi teridan nimasi bilan farq qiladi? Nega diffuz aksonal shikastda erta tashxis qiyin? Doskada chizish: neyron tanasidan akson uzilish joyigacha β-amiloid prekursor harakatini sxemada ko‘rsating. Tipik xato: MNS reaksiyasini teri reaksiyasi bilan butunlay bir xil deb hisoblash."
+    },
+    {
+      "title": "Ko‘p markerli yondashuv va matematik modellar",
+      "bullets": [
+        {
+          "text": "Jarohat tiklanishiga ichki va tashqi omillar ta’sir qiladi, shuning uchun bitta parametr yetarli emas; bir necha parametrni birga qo‘llash xatoni kamaytiradi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sun to‘rt mRNKdan iborat oshish/o‘zgarmaslik/pasayish modelini yaratdi; u jarohat yoshi oralig‘ini toraytirdi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yagi CD14, CD32B va CD68 (differensiatsiya klasterlari)ni birga baholab, bitta markerdan aniqroq natija oldi. Van de Goot va Fronczek ehtimollik ballari tizimini tuzdi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘p markerlardan foydalanishning yagona tizimi yoki modeli hali taklif etilmagan; natijaga operator mahorati ham ta’sir qiladi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bitta marker o‘rniga markerlar paneli ishonchliroq? Ob-havo bashorati bilan o‘xshashlik nimani anglatadi? Doskada chizish: bitta marker oralig‘i va uch marker kesishmasi orqali toraygan oralig‘ni ikki chiziq bilan ko‘rsating. Tipik xato: ko‘p markerli yondashuvni tayyor yagona standart deb o‘ylash."
+    },
+    {
+      "title": "Voqea tahlili: diabetik shaxsda yara",
+      "bullets": [
+        {
+          "text": "Vaziyat (o‘quv misoli): marhumda qandli diabet bo‘lgan, yara yoshini aniqlash uchun sog‘lom odamga mo‘ljallangan belgilar qo‘llanmoqda.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306, 'Biomarkers of wound aging' bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sichqonlarda diabetik yara bitishi oddiy yaradan farq qiladi, shuning uchun me‘yoriy yara parametrlari unga mos kelmasligi mumkin.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306, 'Biomarkers of wound aging' bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Periferik qon tomir kasalligida yara bitishi qiyin, immunosupressiyada (immunitet susayishi) esa kechikadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306, 'Biomarkers of wound aging' bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: oddiy parametrlar qo‘llansa xato qanday bo‘ladi? Kechikkan bitish tufayli yara yoshi noto‘g‘ri, ehtimol kichikroq baholanishi mumkin.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306, 'Biomarkers of wound aging' bo‘limi"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Nega kasallik fonida yara bitishi o‘zgaradi? 2) Bunday holda ekspert qanday qo‘shimcha parametrlarni izlashi kerak? Doskada: ’sog‘lom yara’ va ’diabetik yara’ vaqt chizig‘ini ikki qatorda chizdiring, bitish kechikishini ko‘rsating. Tipik xato: talabalar barcha shaxslarda bitish tezligi bir xil deb o‘ylaydi. Manbada bu holat sichqon modelida o‘rganilgan; xulosani odamga to‘g‘ridan-to‘g‘ri ko‘chirmang."
+    },
+    {
+      "title": "Teri IHC/IF sharhi: tanlov va natijalar",
+      "bullets": [
+        {
+          "text": "Qidiruv PubMed va Scopus’da o‘tkazildi; IHC — immunogistokimyo, IF — immunofluoressensiya.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 2–3-bo‘limlar (Materiallar va Natijalar)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IHC ishlatish oson, ishonchli va kerakli molekulalarning to‘qimadagi joylashuvini ko‘rsata oladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 1-bo‘lim (Kirish)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: IHC ≠ IF; 46 ishning 32 tasida faqat IHC, 5 tasida faqat IF, 9 tasida ikkalasi birga qo‘llangan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 3-bo‘lim (Natijalar)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Maqolalarni tanlash zanjiri",
+        "nodes": [
+          "326 maqola topildi",
+          "29 ta mos maqola",
+          "+17 ta havoladan",
+          "Jami 46 ta maqola",
+          "IHC 32, IF 5, ikkalasi 9"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega aksariyat maqolalar tanlovdan chiqib ketgan (boshqa usul, boshqa to‘qima, dublikat)? 2) IHC ning lokalizatsiyani ko‘rsatishi nima uchun muhim? Doskada: tanlash voronkasini chizing. Tipik xato: 29 + 17 = 46 hisobini unutish; matnda havoladan olingan ishlar soni bir joyda 17 deb berilgan, shuni aniq ayting. Foizlar: 70% IHC, 10% IF, 20% ikkalasi."
+    },
+    {
+      "title": "Erta markerlar: koagulyatsiya va sitokinlar",
+      "bullets": [
+        {
+          "text": "Koagulyatsiya markerlari 0–1 soatda musbat; FVIIIra sezgirligi 100%, o‘ziga xosligi esa 47%.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim (Coagulation Factors)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sitokinlar: TNFα (o‘sma nekrozi omili) va IL-1β (interleykin-1β) 3 soatda, IL-6 12 soatda cho‘qqiga chiqadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.2-bo‘lim (Proinflammatory Cytokines)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: sezgir ≠ o‘ziga xos; antemortem va postmortemni ajratishda CD15 va triptaza foydaliroq.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.1-bo‘lim (Coagulation Factors)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Erta markerlar va vaqt oralig‘i",
+        "nodes": [],
+        "header": [
+          "Marker",
+          "Vaqt",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "Fibronektin/CD62p/FVIII",
+            "0–1 soat",
+            "Yangi jarohatda IHC bahosi oshgan"
+          ],
+          [
+            "FVIIIra/CD15/triptaza",
+            "0–1 soat",
+            "FVIIIra: sezgir, o‘ziga xos emas"
+          ],
+          [
+            "TNFα, IL-1β (IL-6)",
+            "3 soat (IL-6: 12 soat)",
+            "Proinflammator sitokinlar cho‘qqisi"
+          ],
+          [
+            "IL-1α musbat hujayra >30%",
+            "≤1 kun",
+            "Yara yoshi bir kun yoki kamroq"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Nega yuqori sezgirlikdagi marker yara hayotiyligini isbotlay olmaydi? 2) IL-1α >30% qoidasi ekspertga nimani beradi? Doskada: 0 dan 24 soatgacha o‘q chizib, markerlarni mos vaqt nuqtalariga joylang. Tipik xato: sezgirlik va o‘ziga xoslikni aralashtirish; FVIIIra jarrohlik va nazorat jarohatlarida ham oshgan (53%). PTI — jarohatdan keyingi interval."
+    },
+    {
+      "title": "Immun hujayralar va o‘sish omillari",
+      "bullets": [
+        {
+          "text": "Mast hujayralar vital jarohatda 1–3 soatda cho‘qqiga chiqadi; o‘limdan keyingi holatda ular sezilarli kam bo‘ladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TGF-α (transformatsiyalovchi o‘sish omili-α) dastlabki javobi 10 daqiqada, aniq javobi 30–60 daqiqada ko‘rinadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: bitta belgi emas, CD14/CD32B/CD68 birikmasi 1–5 kunni aniqroq ko‘rsatadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Belgi va jarohat yoshi",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Shart",
+          "Jarohat yoshi"
+        ],
+        "rows": [
+          [
+            "CD14 makrofag belgisi (Yagi)",
+            "Sezilarli oshadi",
+            "1–5 kun"
+          ],
+          [
+            "Dendrit hujayralar",
+            "Soni >50 bo‘lsa",
+            "4–14 kun"
+          ],
+          [
+            "Mast hujayralar",
+            "Vital jarohatda cho‘qqi",
+            "1–3 soat"
+          ],
+          [
+            "VEGF (tomir o‘sish omili)",
+            "Musbat ulush >50%",
+            "7–14 kun"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bitta belgi o‘rniga belgilar majmuasi afzal? 2) Mast hujayralar kamligi nimani anglatishi mumkin? Doskada: vaqt o‘qi (soat → 14 kun) chizib, belgilarni joylashtiring. Tipik xato: dendrit hujayralar >50 va VEGF >50% chegaralarini aralashtirish; birinchisi 4–14 kun, ikkinchisi 7–14 kun."
+    },
+    {
+      "title": "Fermentlar va COX-2 chegaralari",
+      "bullets": [
+        {
+          "text": "COX-2 (siklooksigenaza-2) musbat ulushi >40% bo‘lsa, jarohat yoshi 8 soatdan 3 kungacha bo‘lishi mumkin; >50% sud-tibbiy ahamiyatga ega bo‘lishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MMP-2 (matriks metalloproteinaza-2) musbat hujayralar >25 bo‘lsa 9–12 kun; MMP-9 musbat hujayralar >30 bo‘lsa 3–14 kun taxmin qilinadi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nospetsifik esteraza 1 soatdan 5 kungacha bo‘lgan vital teri jarohatlarining 40% namunasida topilgan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: COX-2 (8 soat–3 kun) va MMP-2 (9–12 kun) chegaralari bir xil emas; ularni aralashtirmang.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.5-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega fermentlar uchun musbat ulush yoki hujayra soni chegarasi qo‘yiladi? 2) Nospetsifik esteraza 40% namunada topilsa, uning yolg‘iz o‘zi yetarlimi? Doskada: COX-2, MMP-2 va MMP-9 oraliqlarini uchta gorizontal kesma bilan chizing. Tipik xato: %li chegarani (COX-2) hujayra soni chegarasi (MMP) bilan almashtirish."
+    },
+    {
+      "title": "Kollagen, glikoproteinlar va bazal membrana",
+      "bullets": [
+        {
+          "text": "α-SMA (silliq mushak aktini) musbat miofibroblastlar taxminan 5 kunda paydo bo‘ladi: jarohat ~5 kun yoki undan eski.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "I va VI kollagen yo‘qligi jarohat 6–7 kundan yosh ekanini ko‘rsatishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: V kollagen (3 kun) III kollagendan (2,5 kun) kechroq chiqadi va kuchsizroq bo‘ladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045, 4.6-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kollagenlar paydo bo‘lish muddati",
+        "nodes": [],
+        "header": [
+          "Kollagen",
+          "Belgisi",
+          "Muddat"
+        ],
+        "rows": [
+          [
+            "III tur",
+            "2,5 kungacha aniqlanmaydi",
+            "> 2,5 kun"
+          ],
+          [
+            "V tur",
+            "III turdan kuchsizroq",
+            "~3 kun"
+          ],
+          [
+            "I va VI tur",
+            "Doimiy paydo bo‘ladi",
+            "6–7 kun"
+          ],
+          [
+            "VII tur (bazal membrana)",
+            "Parchalar, so‘ng to‘liq tiklanish",
+            "4 va 8+ kun"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega kollagenning yo‘qligi ham sud-tibbiy ma’lumot beradi? 2) Bazal membrana parchalari va to‘liq tiklanishi qaysi muddatlarda kuzatiladi? Doskada: kollagen III → V → I/VI → VII ketma-ketligini vaqt o‘qida chizing. Tipik xato: kollagen turlarini (III, V, VII) raqamlari bo‘yicha chalkashtirish."
+    },
+    {
+      "title": "Voqea tahlili: 5 kunlik yara",
+      "bullets": [
+        {
+          "text": "Vaziyat: autopsiyada teri yarasida α-SMA (silliq mushak aktini) musbat miofibroblastlar topildi, kollagen I va VI aniqlanmadi, CD14 ifodasi yuqori.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "α-SMA-musbat miofibroblastlar taxminan 5-kundan ko‘rinadi. Kollagen I va VI odatda 6–7-kunda paydo bo‘ladi, ularning yo‘qligi yara 6–7 kundan yosh ekanini bildirishi mumkin.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "CD14 1–3 kunlik yaralarda eng yuqori bo‘lib, 3 kundan keyin keskin kamayadi. Boshqa ishda esa 2–5 kun oralig‘ida ortishi qayd etilgan.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu yara yoshi qanday oraliqda bo‘lishi mumkin va nega bitta markerga tayanib bo‘lmaydi?",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6–8 daq. Muhokama: (1) Qaysi markerlar yara yoshini 5 kun atrofida toraytiradi? (2) CD14 yuqori bo‘lishi 5 kunlik yaraga to‘liq mos keladimi? Doskada chizish: 0–14 kun o‘qi va unda α-SMA (≥5 kun), kollagen I/VI (6–7 kun), CD14 (1–3 va 2–5 kun) oraliqlarini belgilang. Kutilgan javob: taxminan 5 kundan 6–7 kungacha, lekin bu taxminiy. Tipik xato: yagona markerga tayanib aniq kun aytish; miofibroblastlar eski yaralarning yoshini aniq ko‘rsatmaydi."
+    },
+    {
+      "title": "Suyak va yumshoq to‘qima: taqqoslash",
+      "bullets": [
+        {
+          "text": "Suyak kallusi bosqichlari kunlardan yillargacha cho‘ziladi; baholash radiografiya, gistologiya va mikro-KT (kompyuter tomografiya) bilan olib boriladi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri yarasi markerlari birinchi daqiqalardan taxminan 14 kungacha o‘zgaradi; asosiy usullar IHC (immunogistokimyo) va mRNK tahlili.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkala sohada ham usullar va markerlarni birga qo‘llash xatoni kamaytiradi, bitta ko‘rsatkich yetarli emas.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Nega suyakda vaqt shkalasi uzunroq? (2) Standartlashtirish muammosi ikkala sohada qanday ko‘rinadi? Doskada chizish: ikki ustunli jadvalni talabalar daftariga ko‘chirtiring va har qatorga bittadan misol qo‘shtiring. Tipik xato: suyak va teri vaqt shkalalarini aralashtirish yoki gistologiyani suyak uchun ham tirik odamda qo‘llash mumkin deb o‘ylash."
+    },
+    {
+      "title": "Xulosa va eslab qolish qoidalari",
+      "bullets": [
+        {
+          "text": "Yosh bahosi hech qachon mutlaq bo‘lmaydi. Suyakda gistologiya oltin standart, mikro-KT esa istiqbolli: u 3D va buzmaydigan usul sifatida gistologiyani to‘ldiradi.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yara yoshini baholashda ko‘p markerli yondashuv eng ishonchli hisoblanadi, ammo u murakkabroq va ko‘proq vaqt talab qiladi.",
+          "source": {
+            "author": "Luca Tomassini va boshq.",
+            "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+            "page": "PMID 38248045"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eslab qoling: vitallik ≠ yara yoshi. Vitallik jarohat tirikligida yetkazilganini bildiradi, yara yoshi esa undan keyin qancha vaqt o‘tganini ko‘rsatadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eslab qoling: SPNBF ≠ kallus. SPNBF (suyak usti pardasi ostida yangi suyak hosil bo‘lishi) va kallus hosil bo‘lishi alohida bosqichlardir.",
+          "source": {
+            "author": "Charlotte G. Lawrence va boshq.",
+            "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+            "page": "PMID 41051499"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: (1) Nega bitta usul yoki bitta marker yetarli emas? (2) Gistologiya oltin standart bo‘lsa ham, tirik odamda nega qo‘llanmaydi? Doskada chizish: ikki ustun, ’Vitallik’ va ’Yara yoshi’, hamda ’SPNBF’ va ’Kallus’ juftliklarini farqlari bilan yozing. Tipik xato: vitallikni yara yoshi bilan, SPNBFni kallus bilan bir narsa deb hisoblash; baho aniq kun sifatida beriladi deb o‘ylash."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Jasadda bir nechta jarohat topildi. Vitallik reaksiyalarini baholash, eng avvalo, qaysi savolga javob berishga yordam beradi?",
+      "options": [
+        "Jarohat qaysi qurol bilan yetkazilganiga",
+        "Jabrlanuvchining o‘limdan oldingi yoshiga",
+        "Jarohat tirik paytda yetkazilgan-yetkazilmaganiga",
+        "Jarohat atrofidagi to‘qima turini belgilashga"
+      ],
+      "correct_index": 2,
+      "explanation": "Qon quyilishi, yallig‘lanish hujayralari infiltratsiyasi va granulyatsion to‘qima hosil bo‘lishi kabi reaksiyalar birgalikda “vitallik” deyiladi. Ular jarohat tirik paytda, agonal davrda yoki o‘limdan keyin yetkazilganini farqlashga yordam beradi. Ikkinchi asosiy savol — jabrlanuvchi jarohatdan keyin qancha yashagani.",
+      "source": {
+        "author": "Li N va boshq.",
+        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+        "page": "Kirish bo‘limi (Introduction)"
+      }
+    },
+    {
+      "question": "Zo‘ravonlik shubhasi bor bolaning sinishi davolanmagan, oyoq-qo‘l harakatda qolgan. Rentgenda bitta sinishda bir nechta tuzalish bosqichi ko‘rindi. Bu nimaga bog‘liq bo‘lishi mumkin?",
+      "options": [
+        "Kechikkan davolanish tufayli sinish joyi harakatchan qolganiga",
+        "Sinish joyi gips bilan qattiq mahkamlab qo‘yilganiga",
+        "Suyakning faqat bitta hujayra bosqichidan o‘tganiga",
+        "Rentgen nurining sinish chizig‘ini yo‘qotib qo‘yganiga"
+      ],
+      "correct_index": 0,
+      "explanation": "Zo‘ravonlik holatlarida tibbiy yordam kechikishi mumkin va suyak ishlatilishda davom etadi. Natijada sinish joyi harakatchan qoladi, suyak bo‘laklari noto‘g‘ri bitishi yoki tuzalish sekinlashishi mumkin. Shu sababli bitta jarohatda bir vaqtning o‘zida bir nechta tuzalish bosqichi ko‘rinishi mumkin.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "Introduction (PMID 41051499)"
+      }
+    },
+    {
+      "question": "Talaba PRISMA oqimini ko‘rmoqda: 86 ta matn to‘liq baholangan. Ulardan nechtasi kiritish mezonlariga mos keldi?",
+      "options": [
+        "259 ta",
+        "173 ta",
+        "21 ta",
+        "10 ta"
+      ],
+      "correct_index": 3,
+      "explanation": "Qidiruvda 1328 natija chiqqan, sarlavha va annotatsiya bo‘yicha 259 ta ajratilgan, 173 dublikat olib tashlangan. Qolgan 86 matndan 10 tasi mezonga mos kelgan. Ularning havolalaridan yana 11 nashr topilib, jami 21 ta nashr bo‘lgan. 21 — yakuniy son, 86 matndan o‘tganlar soni emas.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "Materials and methods, Paper selection (PMID 41051499)"
+      }
+    },
+    {
+      "question": "Ekspert o‘limdan keyingi namunada sinish yoshini hujayra darajasida aniqlashi kerak. Qaysi usul oltin standart hisoblanadi?",
+      "options": [
+        "Oddiy 2D rentgenografiya",
+        "Gistologik tekshiruv",
+        "Magnit-rezonans tomografiya (MRT)",
+        "Quruq suyakni makroskopik ko‘rish"
+      ],
+      "correct_index": 1,
+      "explanation": "Gistologiya sinish yoshini aniqlashda oltin standart hisoblanadi: yuqori ruxsat tufayli tuzalish belgilari hujayra darajasida ko‘rinadi. Kamchiligi — u buzuvchi va faqat o‘limdan keyin qo‘llanadi. 21 ta nashrning 15 tasi faqat 2D rentgendan foydalangan, lekin bu eng ko‘p ishlatilishini bildiradi, aniqligini emas.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "Abstract; Discussion (PMID 41051499)"
+      }
+    },
+    {
+      "question": "Sinish yoshi bo‘yicha sharhga kirgan namunalarda qaysi suyak eng ko‘p o‘rganilgan?",
+      "options": [
+        "Qovurg‘a suyagi",
+        "O‘mrov suyagi",
+        "Bilak suyagi (radius)",
+        "Bosh suyagi"
+      ],
+      "correct_index": 2,
+      "explanation": "Namunalarning 66,02 foizi uzun naysimon suyaklardan, ayniqsa radiusdan (n = 250, 19,39 foiz). Buning sababi radius bolalikda tasodifiy sinadigan eng tez-tez suyak ekani va tadqiqot uchun klinik rentgenlar ko‘pligidir. Sud-tibbiyot uchun muhim qovurg‘alar kam o‘rganilgan.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "Results; Discussion (PMID 41051499)"
+      }
+    },
+    {
+      "question": "Eksperti o‘lgan chaqaloqdagi qovurg‘a sinishining jarohatdan keyingi dastlabki haftalardagi hujayra hodisalarini aniqlamoqchi. Qaysi usul eng aniq natija beradi?",
+      "options": [
+        "Oddiy 2D rentgenografiya",
+        "Gistologik tekshiruv",
+        "Faqat makroskopik ko‘rik",
+        "Klinik anamnez tahlili"
+      ],
+      "correct_index": 1,
+      "explanation": "Gistologiya oltin standart hisoblanadi. U dastlabki haftalardagi bashorat qilinadigan hujayra hodisalarini ko‘rsata oladi, rentgenda esa bu hodisalarni aniqlab bo‘lmaydi.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    },
+    {
+      "question": "17 ta 2D rentgen tadqiqotida barcha usullarda doimiy qayd etilgan yagona bitish bosqichi qaysi?",
+      "options": [
+        "Remodellanish (qayta qurilish)",
+        "Subperiostal yangi suyak hosil bo‘lishi",
+        "Ko‘prik hosil bo‘lishi (bridging)",
+        "Kallus shakllanishi bosqichi"
+      ],
+      "correct_index": 3,
+      "explanation": "Kallus shakllanishi barcha usullarda uchragan. Periostal reaksiya 13 ta, remodellanish 12 ta, ko‘prik hosil bo‘lishi 10 ta maqolada qayd etilgan.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    },
+    {
+      "question": "Zo‘ravonlik holatida bolaga tibbiy yordam kechikdi va sinish joyi immobilizatsiyasiz harakatda qoldi. Radiografik jadvallardan foydalanishdagi asosiy xavf nima?",
+      "options": [
+        "Immobilizatsiyalangan sinishlardan tuzilgan jadval mos kelmasligi",
+        "Rentgen nuri dozasi bosqich muddatini o‘zgartirishi",
+        "Kallus bu holatda hech qachon hosil bo‘lmasligi",
+        "Bitish har doim jadvaldagidan tezroq o‘tishi"
+      ],
+      "correct_index": 0,
+      "explanation": "Immobilizatsiyasiz sinish joyida ikkilamchi mikrotravmalar bo‘lishi mumkin. Shu sababli immobilizatsiyalangan sinishlardan tuzilgan bitish jadvallari bunday holatga mos kelmasligi mumkin.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    },
+    {
+      "question": "Ekspert postmortem namunada kallusning ichki mikrotuzilishini 3D ko‘rinishda va namunani buzmasdan, gistologiyaga yaqin aniqlikda ko‘rmoqchi. Qaysi usul mos keladi?",
+      "options": [
+        "Oddiy 2D rentgenografiya",
+        "Standart tibbiy kompyuter tomografiya",
+        "Mikro-kompyuter tomografiya",
+        "Oddiy magnit-rezonans tomografiya"
+      ],
+      "correct_index": 2,
+      "explanation": "Mikro-KT yuqori ajratish qobiliyatiga (60 μm gacha), 3D va buzmaydigan xususiyatga ega. Tibbiy KT ajratish qobiliyati esa taxminan 600 μm bilan cheklangan.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    },
+    {
+      "question": "Tadqiqotchi sinish yoshini baholash uchun yangi bosqichlar jadvalini ishlab chiqdi. Uni amaliyotga tavsiya etishdan oldin eng muhim qadam qaysi?",
+      "options": [
+        "Jadvalga yana yangi bosqichlarni qo‘shish",
+        "Jadvalni yoshi ma’lum sinishlarda sinash",
+        "Bosqich atamalarini o‘zgartirib qo‘llash",
+        "Faqat bitta kuzatuvchi bahosiga tayanish"
+      ],
+      "correct_index": 1,
+      "explanation": "Usullarni yoshi ma’lum sinishlarda sinash — birinchi darajali vazifa. Hozirgacha faqat bitta ish oldingi usulni tasdiqlash maqsadida chop etilgan, shuning uchun validatsiya yetishmaydi.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    },
+    {
+      "question": "Jasad o‘limdan 3 sutka o‘tgach tekshirildi. Jarohat yoshini baholash uchun qaysi marker barqaror bo‘lgani uchun mos keladi?",
+      "options": [
+        "Kannabinoid retseptor-2 mRNKsi",
+        "Matriks metalloproteinaza-2 mRNKsi",
+        "LC3-II va p62 oqsil markerlari",
+        "Arginino-suksinat liaza mRNKsi"
+      ],
+      "correct_index": 2,
+      "explanation": "LC3-II va p62 oqsillari o‘limdan keyin 4 sutkagacha barqaror. Kannabinoid retseptor-2 mRNKsi 3 soatdayoq, metalloproteinaza-2 mRNKsi 12 soatda sezilarli parchalanadi. Arginino-suksinat liaza mRNKsi esa 18 soat barqaror, xolos. Shuning uchun postmortem davrda barqaror markerni tanlash kerak.",
+      "source": {
+        "author": "Li N va boshq.",
+        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+        "page": "PMID 32490306"
+      }
+    },
+    {
+      "question": "Jarohatdan keyin bir necha daqiqa yoki soat o‘tgan. Gistologiya jarohat hayotlikdami yoki o‘limdan keyinmi ekanini ayta olmaydi. Qaysi usul erta bosqichga mos?",
+      "options": [
+        "mRNK darajasini real-time PCR bilan o‘lchash",
+        "Gematoksilin-eozin bilan standart bo‘yash",
+        "Berlin ko‘ki bilan temirni bo‘yab ko‘rish",
+        "Ko‘karish rangini ko‘z bilan kuzatish"
+      ],
+      "correct_index": 0,
+      "explanation": "Jarohatdan keyin sitokin va fermentlarning mRNK darajasi oqsil darajasi va gistomorfologiyadan oldinroq o‘zgaradi. Shu sababli mRNKga asoslangan tahlillar erta bosqichdagi jarohat yoshini baholashga mos. Gematoksilin-eozin va Berlin ko‘ki o‘zgarishni faqat taxminan 6 soatdan keyin ko‘rsatadi.",
+      "source": {
+        "author": "Li N va boshq.",
+        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+        "page": "PMID 32490306"
+      }
+    },
+    {
+      "question": "Tadqiqotchi jarohatdan keyingi vaqtni o‘zi belgilashi va natijalarni takrorlay olishi kerak. Qaysi namuna turi eng mos?",
+      "options": [
+        "Autopsiya paytida olingan namunalar",
+        "Jarrohlik vaqtida olingan tirik namuna",
+        "Tirik odamdan olingan surtma namuna",
+        "Laboratoriya hayvonlaridagi tajribalar"
+      ],
+      "correct_index": 3,
+      "explanation": "Hayvon tajribalarida jarohatdan keyingi vaqtni nazorat qilish mumkin, shuning uchun natijalarning takrorlanuvchanligi va ishonchliligi yuqori bo‘ladi. Kamchiligi: natijalar odamga qay darajada tatbiq etilishi aniq emas. Autopsiya namunalarida ma‘lumot ko‘pincha yetarli bo‘lmaydi.",
+      "source": {
+        "author": "Li N va boshq.",
+        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+        "page": "PMID 32490306"
+      }
+    },
+    {
+      "question": "Nima uchun ko‘karish rangiga qarab uning yoshini aniqlash amalda yaroqsiz deb topilgan?",
+      "options": [
+        "Rang faqat o‘limdan keyingi jarayonlarda shakllanishi uchun",
+        "Rang va chiqish vaqti chuqurlik, joy, teri rangiga bog‘liq",
+        "Rangni faqat molekulyar usullar bilan ko‘rib bo‘lishi uchun",
+        "Rang barcha jarohatlarda bir xil muddatda o‘zgarishi uchun"
+      ],
+      "correct_index": 1,
+      "explanation": "Ko‘karishning paydo bo‘lish vaqti va rangiga uning chuqurligi, joylashgan o‘rni va teri rangi ta‘sir qiladi. Shu sababli vizual usul juda o‘zgaruvchan va amaliy foydasi kam. Muammoga ilmiy tajribalar bilan yondashish lozim.",
+      "source": {
+        "author": "Li N va boshq.",
+        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+        "page": "PMID 32490306"
+      }
+    },
+    {
+      "question": "Bitta marker keng yoki ziddiyatli yosh oralig‘ini bersa, nima qilish maqsadga muvofiq?",
+      "options": [
+        "Eng sezgir bitta markerga tayanib qolish",
+        "Jarohat yoshini faqat ko‘z bilan baholash",
+        "Bir nechta markerni birgalikda qo‘llash",
+        "Namunani uzoqroq saqlab qayta tekshirish"
+      ],
+      "correct_index": 2,
+      "explanation": "Jarohat bitishiga ichki va tashqi omillar ta‘sir qiladi, shuning uchun bitta parametr yetarli emas. Bir nechta markerni birga ishlatish xatoni kamaytiradi. Masalan, CD14, CD32B va CD68 birikmasi bitta markerga qaraganda aniqroq va torroq yosh oralig‘ini berdi.",
+      "source": {
+        "author": "Li N va boshq.",
+        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+        "page": "PMID 32490306"
+      }
+    },
+    {
+      "question": "Otopsiyada diabetik kasal shaxsda yara topildi. Yara yoshini baholashda qaysi holat hisobga olinishi kerak?",
+      "options": [
+        "Diabetda yara bitishi oddiy holatdan farq qilmaydi, mezonlar bir xil",
+        "Diabetik yarada faqat qon quyilishi belgisi yara yoshini aniqlaydi",
+        "Oddiy yara mezonlari diabetik yaraga mos kelmasligi, boshqa mezon kerak",
+        "Diabetda yara bitishi tezlashadi, shuning uchun yosh kam baholanadi"
+      ],
+      "correct_index": 2,
+      "explanation": "Sichqonlarda o‘tkazilgan tadqiqotda diabetik yara bitishi oddiy yaradan farq qilgan. Shu sababli oddiy yara yoshini baholash parametrlari diabetik yaraga mos kelmasligi mumkin va boshqa parametrlar izlash kerak. Qon tomir kasalligi va immunosupressiya ham bitishni qiyinlashtiradi yoki kechiktiradi.",
+      "source": {
+        "author": "Li N va boshq.",
+        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+        "page": "PMID 32490306"
+      }
+    },
+    {
+      "question": "Teri yarasida FVIIIra markeri 100% sezgir, ixtisosligi esa 47% bo‘ldi. Jarrohlik yaralarida ham ortiq ifodalandi. Bu marker qanday baholanadi?",
+      "options": [
+        "Yuqori sezgir, ammo o‘ziga xos bo‘lmagan yara hayotiyligi markeri",
+        "Yuqori ixtisosli, ammo sezgirligi past yara hayotiyligi markeri",
+        "Faqat o‘limdan keyingi jarohatni ishonchli ajratadigan aniq marker",
+        "Yara yoshini kunlar aniqligida beradigan yagona ishonchli marker"
+      ],
+      "correct_index": 0,
+      "explanation": "FVIIIra sezgirligi 100%, ixtisosligi esa 47% bo‘lgan. Jarrohlik va nazorat yaralarida ham ortiq ifodalangan (53%). Shuning uchun u sezgir, ammo o‘ziga xos bo‘lmagan marker. Yangi tirik davrdagi jarohatni o‘limdan keyingisidan ajratishda CD15 va triptaza foydaliroq hisoblanadi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Teri yarasi namunasida COX-2 (siklooksigenaza-2) musbat hujayralar ulushi 45% chiqdi. Bu qaysi yara yoshini ko‘rsatadi?",
+      "options": [
+        "Yara yoshi 30 daqiqadan kam, leykotsit jalb bo‘lishi deyarli yo‘q",
+        "Yara yoshi 7 kundan 14 kungacha, ORP150 kabi kech marker davri",
+        "Yara yoshi 9 kundan 12 kungacha, MMP-2 musbat hujayralar davri",
+        "Yara yoshi 8 soatdan 3 sutkagacha, neytrofillar COX-2 ifodalagan davr"
+      ],
+      "correct_index": 3,
+      "explanation": "COX-2 musbat ulushi 40% dan yuqori bo‘lsa, yara yoshi 8 soat bilan 3 sutka oralig‘ida bo‘lishi mumkin. 50% dan yuqori ulush sud-tibbiy ahamiyatga ega bo‘lishi mumkin. 30 daqiqagacha bo‘lgan yaralarda COX-2 ni faqat bir necha rezident hujayra ifodalaydi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Teri yarasi namunasida I va VI tur kollagenlar immunogistokimyoda aniqlanmadi. Bu yara yoshi haqida nimani ko‘rsatishi mumkin?",
+      "options": [
+        "Yara yoshi 6–7 kundan ortiq bo‘lishi shart",
+        "Yara yoshi 6–7 kundan kam bo‘lishi mumkin",
+        "Yara o‘limdan keyin hosil bo‘lgan bo‘ladi",
+        "Yara yoshi bir oydan ortiq bo‘lishi mumkin"
+      ],
+      "correct_index": 1,
+      "explanation": "I va VI tur kollagenlar odam teri yaralarida doimiy ravishda taxminan 6–7 kundan keyin paydo bo‘ladi. Ularning yo‘qligi yara yoshi 6–7 kundan kam bo‘lishini ko‘rsatishi mumkin. Bu belgi yara hayotiyligi haqida xulosa bermaydi.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    },
+    {
+      "question": "Tirik go‘dakda suyak sinishining yoshini aniqlash kerak. Nima uchun gistologiya bu holatda qo‘llanib bo‘lmaydi?",
+      "options": [
+        "U suyak shifo jarayonini hujayra darajasida ko‘rsata olmaydi",
+        "U dastlabki haftalardagi hujayra o‘zgarishlarini aniqlab bera olmaydi",
+        "U buzuvchi usul bo‘lib, faqat o‘limdan keyin qo‘llanishi mumkin",
+        "U yuqori nurlanish dozasi tufayli bolalarda umuman ishlatilmaydi"
+      ],
+      "correct_index": 2,
+      "explanation": "Gistologiya suyak sinishi yoshini aniqlashda oltin standart hisoblanadi va hujayra darajasini ko‘rsatadi. Ammo u buzuvchi usul bo‘lgani uchun faqat o‘limdan keyingi tahlilda qo‘llanadi. Tirik bemor uchun aniq va ishonchli usul hali yetishmaydi.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Eslab qolish usuli (o‘zimiz tuzgan): suyak sinishi rentgenida eng ko‘p uchraydigan bosqichlarni «K-P-R-B» deb yodlang: Kallus (hammasida bor), Periost reaksiyasi (13 ta usulda), Remodellanish (12 ta), Bridging, ya’ni ko‘prik hosil bo‘lishi (10 ta). Bu tartib 17 ta rentgen usuli solishtirilganda aniqlangan.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: oddiy tibbiy KT (kompyuter tomografiya) taxminan 600 μm ajrata oladi, mikro-KT esa 60 μm gacha, ya’ni taxminan 10 barobar aniqroq. Shuning uchun mikro-KT gistologiyaga yaqin 3D ko‘rinish beradi va namunani buzmaydi. Lekin u faqat o‘lgandan keyin qo‘llanadi.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    },
+    {
+      "text": "Qiziqarli fakt: Halliday guruhi rentgenda oltita bitish belgisidan faqat suyak usti pardasi ostidagi yangi suyak hosil bo‘lishini (SPNBF) kuzatuvchilar bir xil aniqlaganini topdi. Mualliflar natijani «ko‘ngilsiz va ajablanarli» deb atadi. Boshqa tadqiqotda esa belgi umumiyroq olinsa, kelishuv oshgan.",
+      "source": {
+        "author": "Charlotte G. Lawrence va boshq.",
+        "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+        "page": "PMID 41051499"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: jarohat yoshini aniqlashda mRNK o‘zgarishi oqsil va gistomorfologiyadan oldin boshlanadi. Jadvalga ko‘ra gistologik ko‘rsatkichlar odatda 24 soatdan keyin, mRNK va oqsil o‘zgarishlari esa 12 soatdan keyin seziladi. Muallif bu murakkab masalani ob-havo bashoratiga o‘xshatadi: bir nechta belgi birgalikda xatoni kamaytiradi.",
+      "source": {
+        "author": "Li N va boshq.",
+        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+        "page": "PMID 32490306"
+      }
+    },
+    {
+      "text": "Diqqat: sezgirlik ≠ o‘ziga xoslik. FVIIIra teri jarohatida sezgirligi 100%, o‘ziga xosligi esa 47% bo‘lgan, ya’ni jarrohlik va nazorat jarohatlarida ham ortgan. Shuning uchun u hayotiylik uchun o‘ziga xos emas. CD15 va triptaza esa yangi tirik vaqtdagi jarohatni o‘limdan keyingisidan ajratishda foydaliroq deb baholangan.",
+      "source": {
+        "author": "Luca Tomassini va boshq.",
+        "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+        "page": "PMID 38248045"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Charlotte G. Lawrence va boshq.",
+      "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+      "year": 2025,
+      "pages": "PMID 41051499; DOI 10.1007/s00414-025-03589-w"
+    },
+    {
+      "author": "Li N va boshq.",
+      "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+      "year": 2018,
+      "pages": "PMID 32490306; DOI 10.1080/20961790.2018.1445441"
+    },
+    {
+      "author": "Luca Tomassini va boshq.",
+      "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+      "year": 2024,
+      "pages": "PMID 38248045; DOI 10.3390/diagnostics14020168"
+    }
+  ]
+}
