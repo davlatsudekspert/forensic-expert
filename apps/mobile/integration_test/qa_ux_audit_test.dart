@@ -73,6 +73,46 @@ void main() {
     await qa.step('TALABA Sinfda test', (s) async {
       await open(Routes.classQuiz);
     });
+    // ------------------------------------------- USTOZ PANELI (premium dizayn)
+    // Demo sinf serveri (ma’lumot shu qurilmada; demo foydalanuvchi ustoz).
+    await qa.step('USTOZ paneli: Asosiydan 1 bosish', (s) async {
+      await open(Routes.home);
+      await qa.tapFinder(find.byKey(const Key('home.teacher')));
+      qa.expectText(l.teacherPanelTitle, s);
+      qa.expectText(l.teacherRunTitle, s);
+      qa.expectText(l.teacherResultsTitle, s);
+      qa.expectText(l.teacherJoinTitle, s);
+    });
+    await qa.step('USTOZ: Test o‘tkazish → mavzu (2-bosish)', (s) async {
+      await qa.tapFinder(find.byKey(const Key('teacher.run')));
+      qa.expectText(l.classNewTitle, s);
+    });
+    await qa.step('USTOZ: mavzu → kod va QR', (s) async {
+      await qa.tapFinder(find.byKey(const Key('class.topic.demo-topic')));
+      await qa.tapFinder(find.byKey(const Key('class.createSubmit')));
+      await qa.settle(maxMs: 4000);
+      if (find.byKey(const Key('class.code')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('kod ko‘rinmadi');
+      }
+    });
+    await qa.step('USTOZ: Natijalar va CSV (2-bosish)', (s) async {
+      await open(Routes.teacher);
+      await qa.tapFinder(find.byKey(const Key('teacher.results')));
+      qa.expectText(l.teacherResultsTitle, s);
+      if (find.byKey(const Key('teacher.resultsList')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('natijalar ro‘yxati yo‘q');
+      }
+    });
+    await qa.step('USTOZ: Sinfga qo‘shilish (talaba, 2-bosish)', (s) async {
+      await open(Routes.teacher);
+      await qa.tapFinder(find.byKey(const Key('teacher.join')));
+      if (find.byKey(const Key('class.codeField')).evaluate().isEmpty) {
+        s.passed = false;
+        s.notes.add('kod maydoni yo‘q');
+      }
+    });
     await qa.step('TALABA Yo‘riqnomalar', (s) async {
       await open(Routes.guidelines);
     });
@@ -124,6 +164,12 @@ void main() {
     await qa.step('QORONG‘I Sinfda test', (s) async {
       await open(Routes.classQuiz);
     });
+    await qa.step('QORONG‘I Ustoz paneli', (s) async {
+      await open(Routes.teacher);
+    });
+    await qa.step('QORONG‘I Modda: Etanol', (s) async {
+      await open(Routes.libraryEntry('ethanol'));
+    });
     await settings().setThemeMode(ThemeMode.light);
 
     // ------------------------------------------------------------ 320 dp
@@ -134,6 +180,8 @@ void main() {
       'Vositalar': Routes.tools,
       'O‘qish': Routes.learn,
       'Sinfda test': Routes.classQuiz,
+      'Ustoz paneli': Routes.teacher,
+      'Modda Etanol': Routes.libraryEntry('ethanol'),
       'Yo‘riqnomalar': Routes.guidelines,
       'AI': Routes.ai,
       'Profil': Routes.profile,

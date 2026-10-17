@@ -133,46 +133,47 @@ xatosi (masalan, overflow); bo‘sh bo‘lsa — xato yo‘q.
 | 118 | Ekspert ish daftari | `/tools/casebook` | yangi yozuv | expert | [uz.png](118_ish_daftari_yangi_uz.png) [uzdark.png](118_ish_daftari_yangi_uzdark.png) |  |
 | 119 | Forensic AI | `/ai` | bo‘sh | student | [uz.png](119_ai_bosh_uz.png) [uzdark.png](119_ai_bosh_uzdark.png) [ru.png](119_ai_bosh_ru.png) [en.png](119_ai_bosh_en.png) [uz320.png](119_ai_bosh_uz320.png) |  |
 | 120 | Forensic AI | `/ai` | savol + oflayn manbalar (AI serveri yo‘q) | student | [uz.png](120_ai_savol_uz.png) [uzdark.png](120_ai_savol_uzdark.png) [ru.png](120_ai_savol_ru.png) [en.png](120_ai_savol_en.png) [uz320.png](120_ai_savol_uz320.png) |  |
-| 121 | Forensic AI | `/ai` | shaxsiy ma’lumot ogohlantirishi | student | [uz.png](121_ai_shaxsiy_uz.png) [uzdark.png](121_ai_shaxsiy_uzdark.png) |  |
-| 122 | Profil (mehmon) | `/profile` | standart | student | [uz.png](122_profil_uz.png) [uzdark.png](122_profil_uzdark.png) [ru.png](122_profil_ru.png) [en.png](122_profil_en.png) [uz320.png](122_profil_uz320.png) |  |
-| 123 | Profil (mehmon) | `/profile` | pastki qism | student | [uz.png](123_profil_pastki_uz.png) [uzdark.png](123_profil_pastki_uzdark.png) |  |
-| 124 | Profil (kirgan admin) | `/profile` | standart | admin | [uz.png](124_profil_admin_uz.png) [uzdark.png](124_profil_admin_uzdark.png) |  |
-| 125 | Sozlama: til | `/profile/language` | standart | student | [uz.png](125_sozlama_til_uz.png) [uzdark.png](125_sozlama_til_uzdark.png) |  |
-| 126 | Sozlama: rejim | `/profile/mode` | standart | student | [uz.png](126_sozlama_rejim_uz.png) [uzdark.png](126_sozlama_rejim_uzdark.png) |  |
-| 127 | Sozlama: yurisdiksiya | `/profile/jurisdiction` | standart | student | [uz.png](127_sozlama_yurisdiksiya_uz.png) [uzdark.png](127_sozlama_yurisdiksiya_uzdark.png) |  |
-| 128 | Ilmiy ogohlantirish | `/profile/disclaimer` | standart | student | [uz.png](128_sozlama_ogohlantirish_uz.png) [uzdark.png](128_sozlama_ogohlantirish_uzdark.png) |  |
-| 129 | Profilni tahrirlash | `/profile/edit` | standart | student | [uz.png](129_profil_tahrir_uz.png) [uzdark.png](129_profil_tahrir_uzdark.png) |  |
-| 130 | Maxfiylik siyosati | `/profile/privacy` | standart | student | [uz.png](130_maxfiylik_uz.png) [uzdark.png](130_maxfiylik_uzdark.png) |  |
-| 131 | Foydalanish shartlari | `/profile/terms` | standart | student | [uz.png](131_shartlar_uz.png) [uzdark.png](131_shartlar_uzdark.png) |  |
-| 132 | Ilova haqida | `/profile/about` | standart | student | [uz.png](132_ilova_haqida_uz.png) [uzdark.png](132_ilova_haqida_uzdark.png) |  |
-| 133 | Manbalar va mualliflar | `/profile/about/sources` | standart | student | [uz.png](133_manbalar_mualliflar_uz.png) [uzdark.png](133_manbalar_mualliflar_uzdark.png) |  |
-| 134 | AI ogohlantirishi | `/profile/ai-disclaimer` | standart | student | [uz.png](134_ai_ogohlantirish_uz.png) [uzdark.png](134_ai_ogohlantirish_uzdark.png) |  |
-| 135 | Professional tasdiqlash | `/profile/verification` | standart | expert | [uz.png](135_tasdiqlash_uz.png) [uzdark.png](135_tasdiqlash_uzdark.png) |  |
-| 136 | Tasdiqlash: hujjatlar | `/profile/verification/documents` | standart | expert | [uz.png](136_tasdiqlash_hujjatlar_uz.png) [uzdark.png](136_tasdiqlash_hujjatlar_uzdark.png) |  |
-| 137 | Taqriz ish joyi | `/profile/reviews` | standart | expert | [uz.png](137_taqriz_paneli_uz.png) [uzdark.png](137_taqriz_paneli_uzdark.png) |  |
-| 138 | Hamkasbni taklif qilish | `/profile/invite` | standart | student | [uz.png](138_taklif_uz.png) [uzdark.png](138_taklif_uzdark.png) |  |
-| 139 | Taklif va murojaatlar | `/profile/support` | standart | admin | [uz.png](139_murojaatlar_uz.png) [uzdark.png](139_murojaatlar_uzdark.png) |  |
-| 140 | Yangi murojaat | `/profile/support/new` | standart | admin | [uz.png](140_murojaat_yozish_uz.png) [uzdark.png](140_murojaat_yozish_uzdark.png) |  |
-| 141 | Murojaat suhbati | `/profile/support/thread/thread-1` | standart | admin | [uz.png](141_murojaat_suhbat_uz.png) [uzdark.png](141_murojaat_suhbat_uzdark.png) |  |
-| 142 | Shikoyat yuborish | `/profile/report` | standart | student | [uz.png](142_shikoyat_uz.png) [uzdark.png](142_shikoyat_uzdark.png) |  |
-| 143 | Kirish: email kod (Google/Apple tugmalari) | `/profile/account/email` | standart | student | [uz.png](143_kirish_email_kod_uz.png) [uzdark.png](143_kirish_email_kod_uzdark.png) [ru.png](143_kirish_email_kod_ru.png) [en.png](143_kirish_email_kod_en.png) [uz320.png](143_kirish_email_kod_uz320.png) |  |
-| 144 | Kirish: email kod | `/profile/account/email` | noto‘g‘ri email xatosi | student | [uz.png](144_kirish_email_kod_notogri_uz.png) [uzdark.png](144_kirish_email_kod_notogri_uzdark.png) |  |
-| 145 | Kirish (parol) | `/profile/account/sign-in` | standart | student | [uz.png](145_kirish_parol_uz.png) [uzdark.png](145_kirish_parol_uzdark.png) |  |
-| 146 | Ro‘yxatdan o‘tish | `/profile/account/register` | standart | student | [uz.png](146_royxatdan_otish_uz.png) [uzdark.png](146_royxatdan_otish_uzdark.png) |  |
-| 147 | Parolni tiklash | `/profile/account/forgot` | standart | student | [uz.png](147_parol_tiklash_uz.png) [uzdark.png](147_parol_tiklash_uzdark.png) |  |
-| 148 | Hisobni o‘chirish | `/profile/account/delete` | standart | admin | [uz.png](148_hisobni_ochirish_uz.png) [uzdark.png](148_hisobni_ochirish_uzdark.png) |  |
-| 149 | Ekspert maqolalari | `/library/publications` | server ulanmagan | expert | [uz.png](149_maqolalar_server_uz.png) [uzdark.png](149_maqolalar_server_uzdark.png) |  |
-| 150 | Maqola yuborish | `/library/publications/submit` | standart | expert | [uz.png](150_maqola_yuborish_uz.png) [uzdark.png](150_maqola_yuborish_uzdark.png) |  |
-| 151 | Mening maqolalarim | `/library/publications/mine` | standart | expert | [uz.png](151_maqolalarim_uz.png) [uzdark.png](151_maqolalarim_uzdark.png) |  |
-| 152 | Boshqaruv paneli | `/profile/admin` | standart | admin | [uz.png](152_admin_panel_uz.png) [uzdark.png](152_admin_panel_uzdark.png) [ru.png](152_admin_panel_ru.png) [en.png](152_admin_panel_en.png) [uz320.png](152_admin_panel_uz320.png) |  |
-| 153 | Admin: murojaatlar qutisi | `/profile/admin/inbox` | standart | admin | [uz.png](153_admin_murojaatlar_uz.png) [uzdark.png](153_admin_murojaatlar_uzdark.png) |  |
-| 154 | Admin: murojaat | `/profile/admin/inbox/thread-3` | standart | admin | [uz.png](154_admin_suhbat_uz.png) [uzdark.png](154_admin_suhbat_uzdark.png) |  |
-| 155 | Admin: foydalanuvchilar | `/profile/admin/users` | standart | admin | [uz.png](155_admin_foydalanuvchilar_uz.png) [uzdark.png](155_admin_foydalanuvchilar_uzdark.png) |  |
-| 156 | Admin: amallar jurnali | `/profile/admin/audit` | standart | admin | [uz.png](156_admin_jurnal_uz.png) [uzdark.png](156_admin_jurnal_uzdark.png) |  |
-| 157 | Admin: shikoyatlar | `/profile/admin/reports` | standart | admin | [uz.png](157_admin_shikoyatlar_uz.png) [uzdark.png](157_admin_shikoyatlar_uzdark.png) |  |
-| 158 | Admin: tasdiqlash arizalari | `/profile/admin/verifications` | standart | admin | [uz.png](158_admin_tasdiqlash_uz.png) [uzdark.png](158_admin_tasdiqlash_uzdark.png) |  |
-| 159 | Admin: maqolalar moderatsiyasi | `/library/publications/moderation` | standart | admin | [uz.png](159_admin_moderatsiya_uz.png) [uzdark.png](159_admin_moderatsiya_uzdark.png) |  |
-| 160 | Dialog: ish daftarini tozalash | `/tools/casebook` | standart | expert | [uz.png](160_dialog_daftar_tozalash_uz.png) [uzdark.png](160_dialog_daftar_tozalash_uzdark.png) |  |
-| 161 | Bottom sheet: iqtibos (ГОСТ/APA) | `/library/entry/ethanol` | standart | student | [uz.png](161_sheet_iqtibos_uz.png) [uzdark.png](161_sheet_iqtibos_uzdark.png) |  |
-| 162 | Snackbar: natija nusxalandi | `/tools/tool/tool.lab.dilution` | standart | expert | [uz.png](162_snackbar_nusxa_uz.png) [uzdark.png](162_snackbar_nusxa_uzdark.png) |  |
-| 163 | Dialog: sinfni tugatish | `/class-host` | standart | student | [uz.png](163_dialog_ustoz_tugatish_uz.png) [uzdark.png](163_dialog_ustoz_tugatish_uzdark.png) |  |
+| 121 | Forensic AI | `/ai` | javob uslubi (Qisqa / Batafsil) | student | [uz.png](121_ai_javob_uz.png) [uzdark.png](121_ai_javob_uzdark.png) [ru.png](121_ai_javob_ru.png) [en.png](121_ai_javob_en.png) [uz320.png](121_ai_javob_uz320.png) |  |
+| 122 | Forensic AI | `/ai` | shaxsiy ma’lumot ogohlantirishi | student | [uz.png](122_ai_shaxsiy_uz.png) [uzdark.png](122_ai_shaxsiy_uzdark.png) |  |
+| 123 | Profil (mehmon) | `/profile` | standart | student | [uz.png](123_profil_uz.png) [uzdark.png](123_profil_uzdark.png) [ru.png](123_profil_ru.png) [en.png](123_profil_en.png) [uz320.png](123_profil_uz320.png) |  |
+| 124 | Profil (mehmon) | `/profile` | pastki qism | student | [uz.png](124_profil_pastki_uz.png) [uzdark.png](124_profil_pastki_uzdark.png) |  |
+| 125 | Profil (kirgan admin) | `/profile` | standart | admin | [uz.png](125_profil_admin_uz.png) [uzdark.png](125_profil_admin_uzdark.png) |  |
+| 126 | Sozlama: til | `/profile/language` | standart | student | [uz.png](126_sozlama_til_uz.png) [uzdark.png](126_sozlama_til_uzdark.png) |  |
+| 127 | Sozlama: rejim | `/profile/mode` | standart | student | [uz.png](127_sozlama_rejim_uz.png) [uzdark.png](127_sozlama_rejim_uzdark.png) |  |
+| 128 | Sozlama: yurisdiksiya | `/profile/jurisdiction` | standart | student | [uz.png](128_sozlama_yurisdiksiya_uz.png) [uzdark.png](128_sozlama_yurisdiksiya_uzdark.png) |  |
+| 129 | Ilmiy ogohlantirish | `/profile/disclaimer` | standart | student | [uz.png](129_sozlama_ogohlantirish_uz.png) [uzdark.png](129_sozlama_ogohlantirish_uzdark.png) |  |
+| 130 | Profilni tahrirlash | `/profile/edit` | standart | student | [uz.png](130_profil_tahrir_uz.png) [uzdark.png](130_profil_tahrir_uzdark.png) |  |
+| 131 | Maxfiylik siyosati | `/profile/privacy` | standart | student | [uz.png](131_maxfiylik_uz.png) [uzdark.png](131_maxfiylik_uzdark.png) |  |
+| 132 | Foydalanish shartlari | `/profile/terms` | standart | student | [uz.png](132_shartlar_uz.png) [uzdark.png](132_shartlar_uzdark.png) |  |
+| 133 | Ilova haqida | `/profile/about` | standart | student | [uz.png](133_ilova_haqida_uz.png) [uzdark.png](133_ilova_haqida_uzdark.png) |  |
+| 134 | Manbalar va mualliflar | `/profile/about/sources` | standart | student | [uz.png](134_manbalar_mualliflar_uz.png) [uzdark.png](134_manbalar_mualliflar_uzdark.png) |  |
+| 135 | AI ogohlantirishi | `/profile/ai-disclaimer` | standart | student | [uz.png](135_ai_ogohlantirish_uz.png) [uzdark.png](135_ai_ogohlantirish_uzdark.png) |  |
+| 136 | Professional tasdiqlash | `/profile/verification` | standart | expert | [uz.png](136_tasdiqlash_uz.png) [uzdark.png](136_tasdiqlash_uzdark.png) |  |
+| 137 | Tasdiqlash: hujjatlar | `/profile/verification/documents` | standart | expert | [uz.png](137_tasdiqlash_hujjatlar_uz.png) [uzdark.png](137_tasdiqlash_hujjatlar_uzdark.png) |  |
+| 138 | Taqriz ish joyi | `/profile/reviews` | standart | expert | [uz.png](138_taqriz_paneli_uz.png) [uzdark.png](138_taqriz_paneli_uzdark.png) |  |
+| 139 | Hamkasbni taklif qilish | `/profile/invite` | standart | student | [uz.png](139_taklif_uz.png) [uzdark.png](139_taklif_uzdark.png) |  |
+| 140 | Taklif va murojaatlar | `/profile/support` | standart | admin | [uz.png](140_murojaatlar_uz.png) [uzdark.png](140_murojaatlar_uzdark.png) |  |
+| 141 | Yangi murojaat | `/profile/support/new` | standart | admin | [uz.png](141_murojaat_yozish_uz.png) [uzdark.png](141_murojaat_yozish_uzdark.png) |  |
+| 142 | Murojaat suhbati | `/profile/support/thread/thread-1` | standart | admin | [uz.png](142_murojaat_suhbat_uz.png) [uzdark.png](142_murojaat_suhbat_uzdark.png) |  |
+| 143 | Shikoyat yuborish | `/profile/report` | standart | student | [uz.png](143_shikoyat_uz.png) [uzdark.png](143_shikoyat_uzdark.png) |  |
+| 144 | Kirish: email kod (Google/Apple tugmalari) | `/profile/account/email` | standart | student | [uz.png](144_kirish_email_kod_uz.png) [uzdark.png](144_kirish_email_kod_uzdark.png) [ru.png](144_kirish_email_kod_ru.png) [en.png](144_kirish_email_kod_en.png) [uz320.png](144_kirish_email_kod_uz320.png) |  |
+| 145 | Kirish: email kod | `/profile/account/email` | noto‘g‘ri email xatosi | student | [uz.png](145_kirish_email_kod_notogri_uz.png) [uzdark.png](145_kirish_email_kod_notogri_uzdark.png) |  |
+| 146 | Kirish (parol) | `/profile/account/sign-in` | standart | student | [uz.png](146_kirish_parol_uz.png) [uzdark.png](146_kirish_parol_uzdark.png) |  |
+| 147 | Ro‘yxatdan o‘tish | `/profile/account/register` | standart | student | [uz.png](147_royxatdan_otish_uz.png) [uzdark.png](147_royxatdan_otish_uzdark.png) |  |
+| 148 | Parolni tiklash | `/profile/account/forgot` | standart | student | [uz.png](148_parol_tiklash_uz.png) [uzdark.png](148_parol_tiklash_uzdark.png) |  |
+| 149 | Hisobni o‘chirish | `/profile/account/delete` | standart | admin | [uz.png](149_hisobni_ochirish_uz.png) [uzdark.png](149_hisobni_ochirish_uzdark.png) |  |
+| 150 | Ekspert maqolalari | `/library/publications` | server ulanmagan | expert | [uz.png](150_maqolalar_server_uz.png) [uzdark.png](150_maqolalar_server_uzdark.png) |  |
+| 151 | Maqola yuborish | `/library/publications/submit` | standart | expert | [uz.png](151_maqola_yuborish_uz.png) [uzdark.png](151_maqola_yuborish_uzdark.png) |  |
+| 152 | Mening maqolalarim | `/library/publications/mine` | standart | expert | [uz.png](152_maqolalarim_uz.png) [uzdark.png](152_maqolalarim_uzdark.png) |  |
+| 153 | Boshqaruv paneli | `/profile/admin` | standart | admin | [uz.png](153_admin_panel_uz.png) [uzdark.png](153_admin_panel_uzdark.png) [ru.png](153_admin_panel_ru.png) [en.png](153_admin_panel_en.png) [uz320.png](153_admin_panel_uz320.png) |  |
+| 154 | Admin: murojaatlar qutisi | `/profile/admin/inbox` | standart | admin | [uz.png](154_admin_murojaatlar_uz.png) [uzdark.png](154_admin_murojaatlar_uzdark.png) |  |
+| 155 | Admin: murojaat | `/profile/admin/inbox/thread-3` | standart | admin | [uz.png](155_admin_suhbat_uz.png) [uzdark.png](155_admin_suhbat_uzdark.png) |  |
+| 156 | Admin: foydalanuvchilar | `/profile/admin/users` | standart | admin | [uz.png](156_admin_foydalanuvchilar_uz.png) [uzdark.png](156_admin_foydalanuvchilar_uzdark.png) |  |
+| 157 | Admin: amallar jurnali | `/profile/admin/audit` | standart | admin | [uz.png](157_admin_jurnal_uz.png) [uzdark.png](157_admin_jurnal_uzdark.png) |  |
+| 158 | Admin: shikoyatlar | `/profile/admin/reports` | standart | admin | [uz.png](158_admin_shikoyatlar_uz.png) [uzdark.png](158_admin_shikoyatlar_uzdark.png) |  |
+| 159 | Admin: tasdiqlash arizalari | `/profile/admin/verifications` | standart | admin | [uz.png](159_admin_tasdiqlash_uz.png) [uzdark.png](159_admin_tasdiqlash_uzdark.png) |  |
+| 160 | Admin: maqolalar moderatsiyasi | `/library/publications/moderation` | standart | admin | [uz.png](160_admin_moderatsiya_uz.png) [uzdark.png](160_admin_moderatsiya_uzdark.png) |  |
+| 161 | Dialog: ish daftarini tozalash | `/tools/casebook` | standart | expert | [uz.png](161_dialog_daftar_tozalash_uz.png) [uzdark.png](161_dialog_daftar_tozalash_uzdark.png) |  |
+| 162 | Bottom sheet: iqtibos (ГОСТ/APA) | `/library/entry/ethanol` | standart | student | [uz.png](162_sheet_iqtibos_uz.png) [uzdark.png](162_sheet_iqtibos_uzdark.png) |  |
+| 163 | Snackbar: natija nusxalandi | `/tools/tool/tool.lab.dilution` | standart | expert | [uz.png](163_snackbar_nusxa_uz.png) [uzdark.png](163_snackbar_nusxa_uzdark.png) |  |
+| 164 | Dialog: sinfni tugatish | `/class-host` | standart | student | [uz.png](164_dialog_ustoz_tugatish_uz.png) [uzdark.png](164_dialog_ustoz_tugatish_uzdark.png) |  |

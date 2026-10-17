@@ -77,8 +77,8 @@ class FloatingNavBar extends StatelessWidget {
 
     return TweenAnimationBuilder<double>(
       tween: Tween<double>(end: compact ? 0 : 1),
-      duration: duration,
-      curve: Curves.easeOutCubic,
+      duration: FeMotion.of(context, duration),
+      curve: FeMotion.curve,
       builder: (context, t, _) {
         final w = lerpDouble(compactW, fullW, t)!;
         final h = lerpDouble(

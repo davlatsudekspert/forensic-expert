@@ -19,6 +19,20 @@ Edge function (`ai-answer`) uchun Deno type-check bu muhitda yo‘q — deployda
 **CI holati (2026-10-08):** GitHub Actions barcha ishga tushirishlarda `startup_failure` (hisob darajasida — ehtimol Actions daqiqalari/billing). Workflow YAML’lari to‘g‘ri. Egasi GitHub Billing’ni tekshirishi kerak.
 
 
+## Premium dizayn (2026-10-17, branch `claude/design-premium`)
+
+Asos: `claude/ux-polish`. Lokal Linux konteyner; real iOS/Android qurilma emas.
+
+| Nima | Natija |
+|---|---|
+| `flutter analyze --fatal-infos`, `dart format --set-exit-if-changed` | No issues / 0 changed |
+| Ta’sirlangan testlar (widget, a11y, l10n, unit, architecture) | 2664 PASS; yangi: `teacher_panel_test` (4), `nav_inset_test` (3: talaba/mutaxassis 390, talaba 320 — har ekranda kontent menyu ostida qolmaydi), `method_short_name_test` (2) |
+| Goldenlar | 210 tasi ongli yangilandi (global tema: AppBar 20 sp serif, radius 14→20, mayin soya, palitra, banner chiziqsiz, holat chipi, usul chiplari, nomlar). Turlar: final 31, phase6 27, registration 26, phase7 26, phase5 24, polish 12, referral 9, phase4 7, release 6, trilingual 4, pilot 4, lux 4, home 4, qolgan 26 (admin/support, search, tools, ai, onboarding, language, entry, chain, typography, learn, library, jurisdiction, quiz, profile) |
+| Real-app harness (Linux, Xvfb, MOCK, tarmoq o‘chiq) | STUDENT 46/46, EXPERT 37/37, ADMIN 23/23, UX-AUDIT 57/57 (+5 ustoz paneli qadami, qorong‘i/320 ustoz paneli va modda), nopaywall talaba/mutaxassis 15/15 va admin 22/22 × uz/ru/en — hammasi PASS |
+| Ekranlar katalogi (`--tags catalog`) | 409 render (162 holat; uz yorug‘ + qorong‘i, muhimlari ru/en/320), Flutter xatosi/overflow 0 |
+| To‘liq `flutter test` (bir marta, oxirida) | **2887 PASS, 2 skip, 0 FAIL** |
+| Sinalmagan | real iOS/Android qurilma (shrift, safe area, Reduce Motion OS sozlamasi), haqiqiy Supabase’da ustoz roli va sinf (faqat demo/soxta server), haqiqiy CSV ulashish oynasi |
+
 ## Integratsiya 0.3.0 (2026-10-17, branch `claude/integration-0.3.0`)
 
 Birlashtirilgan: no-paywall → analysis-structure → admin-ext → apple-revoke (social-sign-in bilan) → class-quiz (asos: `claude/phase-8-12-final-release`, ABY’siz). Lokal Linux konteyner; real qurilma emas.
