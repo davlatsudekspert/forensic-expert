@@ -1,0 +1,1410 @@
+{
+  "topic_id": "4-kurs-pediatriya-11",
+  "source_lang": "uz",
+  "title_i18n": {
+    "uz": "№5. Maʻruza: Sud tibbiy toksikologiyasi. Ayrim fizik omillarning organizmga ta’siri.",
+    "ru": "№5. Лекция: Судебно-медицинская токсикология. Действие некоторых физических факторов на организм.",
+    "en": "№5. Lecture: Forensic toxicology. The effects of certain physical factors on the body."
+  },
+  "translation_status": {
+    "uz": "source",
+    "ru": "auto_unreviewed",
+    "en": "auto_unreviewed"
+  },
+  "questions": [
+    {
+      "id": "4-kurs-pediatriya-11-q01",
+      "question_i18n": {
+        "uz": "Zo‘raki o‘lim tuzilmasida zaharlanishlardan oldin qaysi ikkita sabab turadi?",
+        "ru": "Какие две причины стоят впереди отравлений в структуре насильственной смерти?",
+        "en": "In the structure of violent death, which two causes rank ahead of poisonings?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Mexanik jarohatlar va yuqori harorat ta’siri",
+          "Elektr toki ta’siri va mexanik asfiksiya",
+          "Mexanik jarohatlar va mexanik asfiksiya",
+          "Mexanik asfiksiya va ionlovchi nurlanish"
+        ],
+        "ru": [
+          "Механические повреждения и действие высокой температуры",
+          "Действие электрического тока и механическая асфиксия",
+          "Механические повреждения и механическая асфиксия",
+          "Механическая асфиксия и ионизирующее излучение"
+        ],
+        "en": [
+          "Mechanical injuries and the effects of high temperature",
+          "The effects of electric current and mechanical asphyxia",
+          "Mechanical injuries and mechanical asphyxia",
+          "Mechanical asphyxia and ionizing radiation"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Darslikda zaharlanishlar zo‘raki o‘lim tuzilmasida mexanik jarohatlar va mexanik asfiksiyadan keyin uchinchi o‘rinni egallashi aytilgan. Boshqa variantlarda sanalgan fizik omillar bu qatorda zaharlanishdan oldin turmaydi.",
+        "ru": "В учебнике указано, что в структуре насильственной смерти отравления занимают третье место после механических повреждений и механической асфиксии. Физические факторы, перечисленные в других вариантах, в этом ряду не стоят перед отравлениями.",
+        "en": "The textbook states that in the structure of violent death, poisonings rank third, after mechanical injuries and mechanical asphyxia. The physical factors listed in the other options do not precede poisoning in this ranking."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "132"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q02",
+      "question_i18n": {
+        "uz": "Giyohvand moddani takroran qabul qilib, bog‘liqlik shakllangan shaxs uni qabul qilmaganda qanday holat kuzatiladi?",
+        "ru": "Какое состояние наблюдается у лица, у которого после повторного приёма наркотического вещества сформировалась зависимость, при прекращении его приёма?",
+        "en": "What condition is observed when a person who has developed dependence after repeated use of a narcotic substance stops taking it?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Idiosinkraziya",
+          "Abstinensiya sindromi",
+          "Kumulyasiya",
+          "Tolerantlik"
+        ],
+        "ru": [
+          "Идиосинкразия",
+          "Абстинентный синдром",
+          "Кумуляция",
+          "Толерантность"
+        ],
+        "en": [
+          "Idiosyncrasy",
+          "Withdrawal (abstinence) syndrome",
+          "Cumulation",
+          "Tolerance"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Ruhiy va jismoniy bog‘liqlik tufayli moddani qabul qilmaganda abstinensiya sindromi rivojlanadi. Tolerantlik moddaga o‘rganib qolish, idiosinkraziya o‘ta sezgirlik, kumulyasiya esa moddaning to‘planishidir.",
+        "ru": "Вследствие психической и физической зависимости при прекращении приёма вещества развивается абстинентный синдром. Толерантность — это привыкание к веществу, идиосинкразия — повышенная чувствительность, а кумуляция — накопление вещества.",
+        "en": "Due to psychological and physical dependence, withdrawal (abstinence) syndrome develops when the substance is not taken. Tolerance is habituation to the substance, idiosyncrasy is hypersensitivity, and cumulation is the accumulation of the substance."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "134"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q03",
+      "question_i18n": {
+        "uz": "Quyidagi zaharlardan qaysi biri sud-tibbiy tasnifda destruktiv zaharlar guruhiga kiradi?",
+        "ru": "Какой из следующих ядов относится к группе деструктивных ядов в судебно-медицинской классификации?",
+        "en": "Which of the following poisons belongs to the group of destructive poisons in the forensic classification?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Margimush birikmalari",
+          "Sianidlar",
+          "Etil spirti",
+          "Barbituratlar"
+        ],
+        "ru": [
+          "Соединения мышьяка",
+          "Цианиды",
+          "Этиловый спирт",
+          "Барбитураты"
+        ],
+        "en": [
+          "Arsenic compounds",
+          "Cyanides",
+          "Ethyl alcohol",
+          "Barbiturates"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Destruktiv zaharlarga simob, qo‘rg‘oshin, rux, margimush, fosfor va ularning birikmalari kiradi. Sianidlar, etil spirti va barbituratlar funksional zaharlar bo‘lib, asosan markaziy nerv tizimiga ta’sir qiladi.",
+        "ru": "К деструктивным ядам относятся ртуть, свинец, цинк, мышьяк, фосфор и их соединения. Цианиды, этиловый спирт и барбитураты являются функциональными ядами, действующими преимущественно на центральную нервную систему.",
+        "en": "Destructive poisons include mercury, lead, zinc, arsenic, phosphorus, and their compounds. Cyanides, ethyl alcohol, and barbiturates are functional poisons that act mainly on the central nervous system."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "139"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q04",
+      "question_i18n": {
+        "uz": "Kislotalar to‘qimalarga shikastlovchi ta’sirini asosan qaysi zarrachalar orqali ko‘rsatadi?",
+        "ru": "Через какие частицы кислоты преимущественно оказывают повреждающее действие на ткани?",
+        "en": "Through which particles do acids mainly exert their damaging effect on tissues?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Gidroksil anionlari",
+          "Ammoniy kationlari",
+          "Og‘ir metall ionlari",
+          "Erkin vodorod ionlari"
+        ],
+        "ru": [
+          "Гидроксильные анионы",
+          "Катионы аммония",
+          "Ионы тяжёлых металлов",
+          "Свободные ионы водорода"
+        ],
+        "en": [
+          "Hydroxyl anions",
+          "Ammonium cations",
+          "Heavy metal ions",
+          "Free hydrogen ions"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Kislotalarning shikastlovchi ta’sirini erkin vodorod ionlari beradi: ular to‘qimani suvsizlantirib, oqsilni ivitadi va quruq nekroz hosil qiladi. Gidroksil anionlari esa ishqorlarga xos.",
+        "ru": "Повреждающее действие кислот обусловлено свободными ионами водорода: они обезвоживают ткань, свёртывают белок и вызывают сухой некроз. Гидроксильные анионы характерны для щелочей.",
+        "en": "The damaging effect of acids is produced by free hydrogen ions: they dehydrate tissue, coagulate protein, and cause dry necrosis. Hydroxyl anions are characteristic of alkalis."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "140"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q05",
+      "question_i18n": {
+        "uz": "Sulema bilan zaharlanganda yo‘g‘on ichakning yuqoriga ko‘tariluvchi qismida difteritik yallig‘lanish va iflos-kulrang tubli yaralar paydo bo‘ladi. Bu o‘zgarish qanday nomlanadi?",
+        "ru": "При отравлении сулемой в восходящем отделе толстой кишки возникают дифтеритическое воспаление и язвы с грязно-серым дном. Как называется это изменение?",
+        "en": "In mercuric chloride (corrosive sublimate) poisoning, diphtheritic inflammation and ulcers with a dirty-gray base appear in the ascending part of the large intestine. What is this change called?"
+      },
+      "options_i18n": {
+        "uz": [
+          "“Sulema dizenteriyasi”",
+          "“Sulema buyragi”",
+          "Simobli stomatit",
+          "Simobli gingivit"
+        ],
+        "ru": [
+          "«Сулемовая дизентерия»",
+          "«Сулемовая почка»",
+          "Ртутный стоматит",
+          "Ртутный гингивит"
+        ],
+        "en": [
+          "\"Sublimate dysentery\"",
+          "\"Sublimate kidney\"",
+          "Mercurial stomatitis",
+          "Mercurial gingivitis"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Yo‘g‘on ichakdagi bu o‘zgarish “sulema dizenteriyasi” deyiladi. “Sulema buyragi” buyrakdagi o‘zgarishni, stomatit va gingivit esa og‘iz bo‘shlig‘idagi o‘zgarishlarni bildiradi.",
+        "ru": "Это изменение в толстой кишке называется «сулемовая дизентерия». «Сулемовая почка» обозначает изменение в почках, а стоматит и гингивит — изменения в полости рта.",
+        "en": "This change in the large intestine is called \"sublimate dysentery.\" \"Sublimate kidney\" refers to the change in the kidney, while stomatitis and gingivitis refer to changes in the oral cavity."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "146"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q06",
+      "question_i18n": {
+        "uz": "Zaharlilikni solishtirish uchun ishlatiladigan LD50 ko‘rsatkichi nimani bildiradi?",
+        "ru": "Что означает показатель LD50, используемый для сравнения токсичности?",
+        "en": "What does the LD50 indicator, used to compare toxicity, mean?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tajriba hayvonlarining yarmida terapevtik effekt beradigan eng kichik doza",
+          "Barcha tajriba hayvonlari uch sutkada halok bo‘ladigan eng kichik doza",
+          "Uch sutka ichida tajriba hayvonlarining yarmi halok bo‘ladigan o‘rtacha doza",
+          "Qondagi zahar konsentratsiyasi ikki marta kamayadigan doza"
+        ],
+        "ru": [
+          "Наименьшая доза, дающая терапевтический эффект у половины подопытных животных",
+          "Наименьшая доза, при которой все подопытные животные погибают в течение трёх суток",
+          "Средняя доза, при которой в течение трёх суток погибает половина подопытных животных",
+          "Доза, при которой концентрация яда в крови уменьшается в два раза"
+        ],
+        "en": [
+          "The smallest dose producing a therapeutic effect in half of the experimental animals",
+          "The smallest dose at which all experimental animals die within three days",
+          "The average dose at which half of the experimental animals die within three days",
+          "The dose at which the blood concentration of the poison decreases by half twice"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "LD50 – yuborilgandan keyin uch sutka ichida tajriba hayvonlarining 50 foizi halok bo‘ladigan o‘rtacha doza bo‘lib, mg/kg da ifodalanadi. Boshqa variantlar terapevtik effekt, 100% o‘lim yoki chiqarilish tezligini tasvirlaydi, bu LD50 emas.",
+        "ru": "LD50 — средняя доза, при которой в течение трёх суток после введения погибает 50 % подопытных животных; выражается в мг/кг. Остальные варианты описывают терапевтический эффект, 100 % летальность или скорость выведения, а это не LD50.",
+        "en": "LD50 is the average dose after administration of which 50 percent of experimental animals die within three days, expressed in mg/kg. The other options describe a therapeutic effect, 100% mortality, or elimination rate, which are not LD50."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "78"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q07",
+      "question_i18n": {
+        "uz": "Zaharli moddaning organizmga kirishi, turli a’zo va to‘qimalarda taqsimlanishi, metabolizmi hamda organizmdan chiqarilishi jarayonlari majmuini ifodalovchi tushuncha qaysi?",
+        "ru": "Какое понятие описывает совокупность процессов поступления токсического вещества в организм, его распределения в различных органах и тканях, метаболизма и выведения из организма?",
+        "en": "Which concept describes the set of processes of a toxic substance's entry into the body, distribution in various organs and tissues, metabolism, and elimination from the body?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Toksikodinamika",
+          "Biotransformatsiya",
+          "Toksikokinetika",
+          "Kumulyatsiya"
+        ],
+        "ru": [
+          "Токсикодинамика",
+          "Биотрансформация",
+          "Токсикокинетика",
+          "Кумуляция"
+        ],
+        "en": [
+          "Toxicodynamics",
+          "Biotransformation",
+          "Toxicokinetics",
+          "Cumulation"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Toksikokinetika zaharning organizmdagi miqdoriy va sifat o‘zgarishlarini, ya’ni kirishi, taqsimlanishi, metabolizmi va chiqarilishini qamrab oladi. Toksikodinamika esa zahar bilan organizmning o‘zaro ta’sir mexanizmini bildiradi. Biotransformatsiya toksikokinetikaning faqat bir qismi, kumulyatsiya esa moddaning to‘planish xususiyatidir.",
+        "ru": "Токсикокинетика охватывает количественные и качественные изменения яда в организме, то есть его поступление, распределение, метаболизм и выведение. Токсикодинамика обозначает механизм взаимодействия яда с организмом. Биотрансформация — лишь часть токсикокинетики, а кумуляция — свойство вещества накапливаться.",
+        "en": "Toxicokinetics covers the quantitative and qualitative changes of a poison in the body, i.e., its entry, distribution, metabolism, and elimination. Toxicodynamics refers to the mechanism of interaction between the poison and the body. Biotransformation is only one part of toxicokinetics, and cumulation is the property of a substance to accumulate."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "136-137"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q08",
+      "question_i18n": {
+        "uz": "Metil spirti bilan zaharlanishda dastlabki narkotik ta’sirdan keyin rivojlanadigan kardiotoksik, nefrotoksik va neyrotoksik o‘zgarishlar qaysi metabolit ta’siri bilan tushuntiriladi?",
+        "ru": "Действием какого метаболита объясняются кардиотоксические, нефротоксические и нейротоксические изменения, развивающиеся после первоначального наркотического действия при отравлении метиловым спиртом?",
+        "en": "In methyl alcohol poisoning, the cardiotoxic, nephrotoxic, and neurotoxic changes that develop after the initial narcotic effect are explained by the action of which metabolite?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Formaldegid",
+          "Atsetaldegid",
+          "Oksalat kislotasi",
+          "Sirka kislotasi"
+        ],
+        "ru": [
+          "Формальдегид",
+          "Ацетальдегид",
+          "Щавелевая кислота",
+          "Уксусная кислота"
+        ],
+        "en": [
+          "Formaldehyde",
+          "Acetaldehyde",
+          "Oxalic acid",
+          "Acetic acid"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Metil spirti oksidlanganda formaldegid hosil bo‘ladi va keyingi organ zararlanishlari shu metabolitga bog‘lanadi. Atsetaldegid etil spirtining, oksalat kislotasi esa etilenglikolning oksidlanish mahsuloti. Sirka kislotasi bu zaharlanishda asosiy toksik metabolit sifatida ko‘rsatilmagan.",
+        "ru": "При окислении метилового спирта образуется формальдегид, и последующие поражения органов связаны с этим метаболитом. Ацетальдегид — продукт окисления этилового спирта, а щавелевая кислота — этиленгликоля. Уксусная кислота при этом отравлении не указана как основной токсичный метаболит.",
+        "en": "Oxidation of methyl alcohol produces formaldehyde, and the subsequent organ damage is attributed to this metabolite. Acetaldehyde is the oxidation product of ethyl alcohol, and oxalic acid is that of ethylene glycol. Acetic acid is not indicated as the main toxic metabolite in this poisoning."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "138"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q09",
+      "question_i18n": {
+        "uz": "Uchuvchan moddalar organizmdan asosan qaysi a’zo orqali chiqariladi?",
+        "ru": "Через какой орган преимущественно выводятся из организма летучие вещества?",
+        "en": "Through which organ are volatile substances mainly eliminated from the body?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Buyrak",
+          "Jigar (o‘t bilan)",
+          "Yo‘g‘on ichak",
+          "O‘pka"
+        ],
+        "ru": [
+          "Почки",
+          "Печень (с желчью)",
+          "Толстая кишка",
+          "Лёгкие"
+        ],
+        "en": [
+          "Kidney",
+          "Liver (with bile)",
+          "Large intestine",
+          "Lung"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Uchuvchan moddalar asosan nafas bilan, ya’ni o‘pka orqali chiqadi. Suvda eruvchi moddalar buyrak orqali, og‘ir metall birikmalari yo‘g‘on ichak orqali, yog‘da eruvchilar esa o‘t bilan chiqariladi.",
+        "ru": "Летучие вещества выводятся преимущественно с дыханием, то есть через лёгкие. Водорастворимые вещества выводятся через почки, соединения тяжёлых металлов — через толстую кишку, а жирорастворимые — с желчью.",
+        "en": "Volatile substances are eliminated mainly with respiration, i.e., through the lungs. Water-soluble substances are excreted through the kidneys, heavy metal compounds through the large intestine, and fat-soluble substances with bile."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "137"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q10",
+      "question_i18n": {
+        "uz": "Margimushning valentligiga ko‘ra birikmalari zaharliligini solishtirganda qaysi fikr to‘g‘ri?",
+        "ru": "Какое утверждение верно при сравнении токсичности соединений мышьяка в зависимости от валентности?",
+        "en": "When comparing the toxicity of arsenic compounds according to valence, which statement is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Besh valentli birikmalari zaharliroq",
+          "Uch valentli birikmalari zaharliroq",
+          "Ikkala valentlikdagi birikmalar teng zaharli",
+          "Faqat havoda oksidlanmagan toza holati zaharli"
+        ],
+        "ru": [
+          "Пятивалентные соединения токсичнее",
+          "Трёхвалентные соединения токсичнее",
+          "Соединения обеих валентностей одинаково токсичны",
+          "Токсичен только чистый, не окисленный на воздухе мышьяк"
+        ],
+        "en": [
+          "Pentavalent compounds are more toxic",
+          "Trivalent compounds are more toxic",
+          "Compounds of both valences are equally toxic",
+          "Only the pure, non-oxidized form in air is toxic"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Margimushning barcha birikmalari zaharli, lekin uch valentli birikmalari besh valentlilarga nisbatan zaharliroq. Toza margimush suvda va yog‘da erimagani uchun zaharli emas, havoda oksidlanganda esa zaharli birikmalar hosil bo‘ladi.",
+        "ru": "Все соединения мышьяка токсичны, но трёхвалентные соединения токсичнее пятивалентных. Чистый мышьяк нерастворим в воде и жирах, поэтому не токсичен, а при окислении на воздухе образуются токсичные соединения.",
+        "en": "All arsenic compounds are toxic, but trivalent compounds are more toxic than pentavalent ones. Pure arsenic is not toxic because it is insoluble in water and fat, but when oxidized in air it forms toxic compounds."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "148"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q11",
+      "question_i18n": {
+        "uz": "Organizmda o‘limga olib kelmaydigan, lekin patologik o‘zgarishlar chaqiradigan doza qanday ataladi?",
+        "ru": "Как называется доза, которая не приводит к смерти организма, но вызывает патологические изменения?",
+        "en": "What is the dose called that does not cause death in the body but induces pathological changes?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Terapevtik doza",
+          "Letal doza",
+          "Subtoksik doza",
+          "Toksik doza"
+        ],
+        "ru": [
+          "Терапевтическая доза",
+          "Летальная доза",
+          "Субтоксическая доза",
+          "Токсическая доза"
+        ],
+        "en": [
+          "Therapeutic dose",
+          "Lethal dose",
+          "Subtoxic dose",
+          "Toxic dose"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Toksik doza patologik o‘zgarishlarni chaqiradi, lekin o‘limga olib kelmaydi. Terapevtik doza davolovchi ta’sir beradi, letal doza organizm halokatiga sabab bo‘ladi. Subtoksik dozalar esa surunkali zaharlanishda uzoq muddat oz-ozdan kirgan miqdorlar bo‘lib, bu ta’rifga mos kelmaydi.",
+        "ru": "Токсическая доза вызывает патологические изменения, но не приводит к смерти. Терапевтическая доза оказывает лечебное действие, летальная доза приводит к гибели организма. Субтоксические дозы — это небольшие количества, поступающие в организм в течение длительного времени при хроническом отравлении, и под это определение они не подходят.",
+        "en": "A toxic dose causes pathological changes but does not lead to death. A therapeutic dose produces a curative effect, while a lethal dose causes the death of the organism. Subtoxic doses are small amounts entering gradually over a long period in chronic poisoning and do not fit this definition."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "78"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q12",
+      "question_i18n": {
+        "uz": "Barbituratlar nima uchun oshqozonda yaxshi so‘riladi?",
+        "ru": "Почему барбитураты хорошо всасываются в желудке?",
+        "en": "Why are barbiturates well absorbed in the stomach?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Oshqozon pH i taxminan 1 bo‘lgani uchun ular dissotsiatsiyalanmagan molekula shaklida qoladi",
+          "Oshqozon kislotasi ularni tuzga aylantirib, yaxshi dissotsiatsiyalanadigan shaklga o‘tkazadi",
+          "Oshqozondan so‘rilgan moddalar jigarni chetlab o‘tib, to‘g‘ridan to‘g‘ri umumiy qonga tushadi",
+          "Oshqozonning ishqoriy muhiti ularning ionlanishini kuchaytirib, o‘tkazuvchanlikni oshiradi"
+        ],
+        "ru": [
+          "Так как pH желудка около 1, они остаются в виде недиссоциированных молекул",
+          "Соляная кислота желудка превращает их в соли, переводя в хорошо диссоциирующую форму",
+          "Вещества, всосавшиеся в желудке, минуя печень, попадают непосредственно в общий кровоток",
+          "Щелочная среда желудка усиливает их ионизацию и повышает проницаемость"
+        ],
+        "en": [
+          "Because the gastric pH is approximately 1, they remain in the form of undissociated molecules",
+          "Gastric acid converts them into a salt, transforming them into a readily dissociating form",
+          "Substances absorbed from the stomach bypass the liver and enter the systemic blood directly",
+          "The alkaline environment of the stomach enhances their ionization and increases permeability"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Oshqozon sharbatining pH i taxminan birga teng, bu muhitda kislotali moddalarning dissotsiatsiyasi bostiriladi va ular dissotsiatsiyalanmagan molekula shaklida yaxshi so‘riladi. Asosli moddalar (alkaloidlar) esa aksincha, kislotada yaxshi dissotsiatsiyalanuvchi tuzlarga aylanib, oshqozonda so‘rilmaydi. Oshqozon muhiti ishqoriy emas, so‘rilgan moddalar esa jigar orqali o‘tadi.",
+        "ru": "pH желудочного сока приблизительно равен единице; в такой среде диссоциация кислотных веществ подавляется, и они хорошо всасываются в виде недиссоциированных молекул. Основные вещества (алкалоиды), напротив, в кислой среде превращаются в хорошо диссоциирующие соли и в желудке не всасываются. Среда желудка не является щелочной, а всосавшиеся вещества проходят через печень.",
+        "en": "The pH of gastric juice is approximately one; in this environment the dissociation of acidic substances is suppressed and they are well absorbed as undissociated molecules. Basic substances (alkaloids), on the contrary, are converted in acid into readily dissociating salts and are not absorbed in the stomach. The gastric environment is not alkaline, and absorbed substances pass through the liver."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "62"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q13",
+      "question_i18n": {
+        "uz": "Etilenglikol organizmda oksidlanganda hosil bo‘ladigan va gepato- hamda nefrotoksik ta’sir ko‘rsatadigan metabolit qaysi?",
+        "ru": "Какой метаболит образуется при окислении этиленгликоля в организме и оказывает гепато- и нефротоксическое действие?",
+        "en": "Which metabolite, formed during oxidation of ethylene glycol in the body, exerts hepatotoxic and nephrotoxic effects?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Formaldegid",
+          "Oksalat kislotasi",
+          "Atsetaldegid",
+          "Sirka kislotasi"
+        ],
+        "ru": [
+          "Формальдегид",
+          "Щавелевая кислота",
+          "Ацетальдегид",
+          "Уксусная кислота"
+        ],
+        "en": [
+          "Formaldehyde",
+          "Oxalic acid",
+          "Acetaldehyde",
+          "Acetic acid"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Etilenglikolning butun molekulasi narkotik ta’sir qiladi, uning metaboliti oksalat kislotasi esa jigar va buyrakni shikastlaydi. Formaldegid metil spirtining, atsetaldegid esa etil spirtining metabolitidir.",
+        "ru": "Целая молекула этиленгликоля оказывает наркотическое действие, а его метаболит — щавелевая кислота — повреждает печень и почки. Формальдегид является метаболитом метилового спирта, а ацетальдегид — этилового спирта.",
+        "en": "The intact ethylene glycol molecule has a narcotic effect, while its metabolite, oxalic acid, damages the liver and kidneys. Formaldehyde is a metabolite of methyl alcohol, and acetaldehyde is a metabolite of ethyl alcohol."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "138"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q14",
+      "question_i18n": {
+        "uz": "Simobning organik birikmalari (masalan, granozan) bilan zaharlanish anorganik birikmalari (sulema) bilan zaharlanishdan qaysi jihati bilan farq qiladi?",
+        "ru": "Чем отравление органическими соединениями ртути (например, гранозаном) отличается от отравления неорганическими соединениями (сулемой)?",
+        "en": "In what respect does poisoning with organic mercury compounds (e.g., granosan) differ from poisoning with inorganic compounds (corrosive sublimate)?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Buyrak va yo‘g‘on ichak shikastlanishi kuchliroq, simobli stomatit yaqqol rivojlanadi",
+          "Asosan o‘yuvchi mahalliy ta’sir ustun bo‘lib, og‘iz shilliq qavatida nekroz yuzaga keladi",
+          "Yashirin davr bo‘lmaydi va o‘lim odatda birinchi soatlarda kollapsdan sodir bo‘ladi",
+          "Neyrotoksik ta’sir kuchliroq, buyrak va yo‘g‘on ichak shikastlanishi kuchsizroq, stomatit rivojlanmaydi"
+        ],
+        "ru": [
+          "Поражение почек и толстой кишки выражено сильнее, развивается выраженный ртутный стоматит",
+          "Преобладает преимущественно прижигающее местное действие, на слизистой оболочке рта возникает некроз",
+          "Скрытого периода нет, смерть обычно наступает в первые часы от коллапса",
+          "Нейротоксическое действие сильнее, поражение почек и толстой кишки слабее, стоматит не развивается"
+        ],
+        "en": [
+          "Damage to the kidneys and large intestine is more severe, and mercurial stomatitis develops prominently",
+          "A predominantly corrosive local effect prevails, with necrosis of the oral mucosa",
+          "There is no latent period, and death usually occurs within the first hours from collapse",
+          "The neurotoxic effect is stronger, damage to the kidneys and large intestine is milder, and stomatitis does not develop"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Organik simob birikmalarida asosiy zarar markaziy nerv tizimiga tushadi (toksik ensefalopatiya, falajlar), buyrak va yo‘g‘on ichak esa kamroq shikastlanadi. Aksincha, sulema uchun stomatit, “sulema dizenteriyasi” va “sulema buyragi” xos. Organik birikmalar bilan zaharlanish surunkali kechadi va oylar davom etadigan yashirin davrga ega.",
+        "ru": "При органических соединениях ртути основной ущерб приходится на центральную нервную систему (токсическая энцефалопатия, параличи), а почки и толстая кишка поражаются в меньшей степени. Напротив, для сулемы характерны стоматит, «сулемовый колит (дизентерия)» и «сулемовая почка». Отравление органическими соединениями протекает хронически и имеет скрытый период, длящийся месяцами.",
+        "en": "In organic mercury compounds the main damage affects the central nervous system (toxic encephalopathy, paralyses), while the kidneys and large intestine are less affected. In contrast, stomatitis, \"sublimate dysentery\" and \"sublimate kidney\" are characteristic of corrosive sublimate. Poisoning with organic compounds is chronic in course and has a latent period lasting months."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "146"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q15",
+      "question_i18n": {
+        "uz": "Fenol (karbol kislotasi) bilan zaharlangan shaxsning siydigi havo bilan kontaktda qanday tusga kiradi?",
+        "ru": "Какой цвет приобретает моча человека, отравившегося фенолом (карболовой кислотой), при контакте с воздухом?",
+        "en": "What color does the urine of a person poisoned with phenol (carbolic acid) turn upon contact with air?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Yashil-jigarrang",
+          "Qizil-pushti",
+          "Sargish-to‘q sariq",
+          "Rangsiz, tiniq"
+        ],
+        "ru": [
+          "Зелёно-коричневый",
+          "Красно-розовый",
+          "Желтовато-оранжевый",
+          "Бесцветная, прозрачная"
+        ],
+        "en": [
+          "Green-brown",
+          "Red-pink",
+          "Yellowish-dark orange",
+          "Colorless, clear"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Fenolning hosilasi xingidrin siydikda bo‘lgani uchun siydik havoda yashil-jigarrang tus oladi. Boshqa variantlar fenol zaharlanishiga xos bo‘lgan rang o‘zgarishi emas.",
+        "ru": "Поскольку в моче содержится производное фенола — хингидрон, на воздухе моча приобретает зелёно-коричневый цвет. Остальные варианты не являются изменением цвета, характерным для отравления фенолом.",
+        "en": "Because the phenol derivative quinhydrone is present in the urine, the urine turns green-brown in air. The other options are not color changes characteristic of phenol poisoning."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "142"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q16",
+      "question_i18n": {
+        "uz": "Spirtli ichimlik ichganini rad etgan shaxsdan alkogolga qon olindi. Namuna xona haroratida 2 sutka saqlangach, qonda 0,8‰ etanol aniqlandi. Bu natijani qanday baholash to‘g‘ri?",
+        "ru": "У лица, отрицавшего употребление спиртных напитков, была взята кровь на алкоголь. После хранения образца при комнатной температуре в течение 2 суток в крови обнаружен этанол 0,8‰. Как правильно оценить этот результат?",
+        "en": "Blood was drawn for alcohol from a person who denied drinking alcoholic beverages. After the sample was stored at room temperature for 2 days, 0.8‰ ethanol was detected in the blood. What is the correct assessment of this result?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Natija ishonchli: 0,8‰ shaxsning spirtli ichimlik qabul qilganini har doim isbotlaydi",
+          "Natija yolg‘on manfiy bo‘lishi mumkin, chunki saqlash vaqtida etanol parchalanib ketadi",
+          "Natija yolg‘on musbat bo‘lishi mumkin, chunki uzoq saqlashda qonning o‘zida etanol hosil bo‘ladi",
+          "Natijaga saqlash sharoiti ta’sir qilmaydi, chunki xona harorati namunani o‘zgartirmaydi"
+        ],
+        "ru": [
+          "Результат достоверен: 0,8‰ всегда доказывает, что лицо употребляло спиртное",
+          "Результат может быть ложноотрицательным, так как при хранении этанол распадается",
+          "Результат может быть ложноположительным, так как при длительном хранении этанол образуется в самой крови",
+          "Условия хранения на результат не влияют, так как комнатная температура не изменяет образец"
+        ],
+        "en": [
+          "The result is reliable: 0.8‰ always proves that the person consumed alcohol",
+          "The result may be false negative, because ethanol breaks down during storage",
+          "The result may be false positive, because ethanol is formed in the blood itself during prolonged storage",
+          "Storage conditions do not affect the result, because room temperature does not alter the sample"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Qon xona haroratida bir sutkadan ortiq saqlansa, unda taxminan 1‰ gacha etanol hosil bo‘lishi mumkin va bu yolg‘on musbat natijaga olib keladi. Shu sababli namuna sovuqda saqlanishi, teri esa etanol bilan artilmasligi kerak.",
+        "ru": "Если кровь хранится при комнатной температуре более суток, в ней может образоваться этанол в количестве примерно до 1‰, что приводит к ложноположительному результату. Поэтому образец следует хранить в холоде, а кожу нельзя протирать этанолом.",
+        "en": "If blood is stored at room temperature for more than one day, up to approximately 1‰ ethanol may form in it, leading to a false positive result. Therefore, the sample must be stored cold, and the skin must not be wiped with ethanol."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "124"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q17",
+      "question_i18n": {
+        "uz": "Ishchi etillangan benzin bilan ishlagandan so‘ng qisqa yashirin davrdan keyin tana haroratining pasayishi, bradikardiya, gipotoniya, terlash, so‘lak oqishi va o‘tkir psixoz alomatlari paydo bo‘ldi. Shu manzaraning asosiy biokimyoviy sababi nima?",
+        "ru": "У рабочего после работы с этилированным бензином, после короткого скрытого периода, появились снижение температуры тела, брадикардия, гипотония, потливость, слюнотечение и признаки острого психоза. Какова основная биохимическая причина этой картины?",
+        "en": "After working with leaded (ethylated) gasoline, a worker developed, following a short latent period, decreased body temperature, bradycardia, hypotension, sweating, salivation, and symptoms of acute psychosis. What is the main biochemical cause of this picture?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Miyada xolinesteraza va piruvatdegidrogenaza bloklanishi, atsetilxolin hamda piruvatning to‘planishi",
+          "Gemoglobinning metgemoglobinga aylanib, to‘qimalarga kislorod tashilishining buzilishi",
+          "Sitoxromoksidazaning bloklanishi va to‘qima nafasining to‘xtashi",
+          "Sulfgidril guruhlarining bog‘lanishi va buyrak kanalchalarining nekrozi"
+        ],
+        "ru": [
+          "Блокада холинэстеразы и пируватдегидрогеназы в головном мозге, накопление ацетилхолина и пирувата",
+          "Превращение гемоглобина в метгемоглобин с нарушением транспорта кислорода к тканям",
+          "Блокада цитохромоксидазы и прекращение тканевого дыхания",
+          "Связывание сульфгидрильных групп и некроз почечных канальцев"
+        ],
+        "en": [
+          "Blockade of cholinesterase and pyruvate dehydrogenase in the brain, with accumulation of acetylcholine and pyruvate",
+          "Conversion of hemoglobin to methemoglobin, impairing oxygen transport to tissues",
+          "Blockade of cytochrome oxidase and cessation of tissue respiration",
+          "Binding of sulfhydryl groups and necrosis of the renal tubules"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Tetraetilqo‘rg‘oshin miya to‘qimasida xolinesteraza va piruvatdegidrogenaza fermentlarini to‘sib, atsetilxolin va pirouzum kislotasi to‘planishiga olib keladi. Shu sababdan xolinergik alomatlar (bradikardiya, so‘lak oqishi, terlash) va psixoz rivojlanadi. Qolgan variantlar boshqa zaharlar (metgemoglobin hosil qiluvchilar, sianidlar, og‘ir metallar) mexanizmiga xos.",
+        "ru": "Тетраэтилсвинец блокирует в ткани головного мозга ферменты холинэстеразу и пируватдегидрогеназу, что приводит к накоплению ацетилхолина и пировиноградной кислоты. Поэтому развиваются холинергические симптомы (брадикардия, слюнотечение, потливость) и психоз. Остальные варианты характерны для механизма действия других ядов (метгемоглобинобразователей, цианидов, тяжёлых металлов).",
+        "en": "Tetraethyl lead inhibits the enzymes cholinesterase and pyruvate dehydrogenase in brain tissue, leading to accumulation of acetylcholine and pyruvic acid. This results in cholinergic symptoms (bradycardia, salivation, sweating) and psychosis. The remaining options correspond to the mechanisms of other poisons (methemoglobin-forming agents, cyanides, heavy metals)."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "147"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q18",
+      "question_i18n": {
+        "uz": "Murda chuqur chirigan, ko‘krak va qorin bo‘shliqlaridagi ichki a’zolar bir-biridan ajratib bo‘lmaydigan aralashmaga aylangan. Zaharlanish manbai noma’lum. Toksikologik tekshiruv uchun qanday namuna olinadi?",
+        "ru": "Труп глубоко гнилостно изменён, внутренние органы грудной и брюшной полостей превратились в неразделимую смесь. Источник отравления неизвестен. Какой образец берётся для токсикологического исследования?",
+        "en": "The corpse is deeply decomposed, and the internal organs of the thoracic and abdominal cavities have turned into an inseparable mixture. The source of poisoning is unknown. What sample is taken for toxicological examination?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Faqat jigarning uchdan bir qismi va butun buyrak siydik bilan",
+          "Ko‘krak va qorin bo‘shliqlaridagi ichki a’zolar aralashmasidan 1,5–2,0 kg “o‘rta sinama”",
+          "Faqat oshqozon ichidagi massa va 100–200 ml qon",
+          "Faqat bosh miyaning uchdan bir qismi va o‘pkaning to‘rtdan bir qismi"
+        ],
+        "ru": [
+          "Только треть печени и целая почка с мочой",
+          "«Средняя проба» 1,5–2,0 кг из смеси внутренних органов грудной и брюшной полостей",
+          "Только содержимое желудка и 100–200 мл крови",
+          "Только треть головного мозга и четверть лёгкого"
+        ],
+        "en": [
+          "Only one third of the liver and an entire kidney with urine",
+          "An \"average sample\" of 1.5–2.0 kg from the mixture of internal organs of the thoracic and abdominal cavities",
+          "Only the stomach contents and 100–200 ml of blood",
+          "Only one third of the brain and one quarter of the lung"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Chuqur chirish holatida a’zolarni alohida ajratib bo‘lmaydi, shu sababli ularning aralashmasidan 1,5–2,0 kg miqdorida “o‘rta sinama” olinadi. Boshqa variantlar a’zolari saqlangan murdada olinadigan alohida namunalarga yoki ularning bir qismiga mos keladi.",
+        "ru": "При глубоком гниении органы невозможно разделить, поэтому из их смеси берётся «средняя проба» в количестве 1,5–2,0 кг. Остальные варианты соответствуют отдельным образцам, берущимся из трупа с сохранными органами, или их части.",
+        "en": "In deep decomposition the organs cannot be separated individually, so an \"average sample\" of 1.5–2.0 kg is taken from their mixture. The other options correspond to separate samples, or parts of them, taken from a corpse with preserved organs."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "136"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q19",
+      "question_i18n": {
+        "uz": "Chet el sud-tibbiy amaliyotida gaz-suyuqlik xromatografiyasi yordamida morfin kiritilganidan o‘limgacha o‘tgan vaqt baholanadi. Uzunchoq miya va miyacha tekshirilganda «uzunchoq miyadagi morfin / miyachadagi morfin» nisbati 1,4 chiqdi. Bu natijadan qanday xulosa chiqariladi?",
+        "ru": "В зарубежной судебно-медицинской практике с помощью газожидкостной хроматографии оценивают время, прошедшее от введения морфина до наступления смерти. При исследовании продолговатого мозга и мозжечка отношение «морфин в продолговатом мозге / морфин в мозжечке» составило 1,4. Какой вывод следует из этого результата?",
+        "en": "In foreign forensic practice, the time from morphine administration to death is estimated using gas-liquid chromatography. When the medulla oblongata and cerebellum were examined, the ratio \"morphine in the medulla oblongata / morphine in the cerebellum\" was 1.4. What conclusion is drawn from this result?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Morfin kiritilganidan o‘limgacha juda qisqa vaqt o‘tgan, o‘lim deyarli darhol kelgan",
+          "O‘lim morfin tufayli emas, boshqa narkotik moddaning ta’siridan sodir bo‘lgan",
+          "Morfin kiritilganidan beri kamida bir necha soat o‘tgan",
+          "Nisbat vaqtni bildirmaydi, u faqat surunkali intoksikatsiyaning isboti hisoblanadi"
+        ],
+        "ru": [
+          "От введения морфина до смерти прошло очень мало времени, смерть наступила почти мгновенно",
+          "Смерть наступила не от морфина, а от действия другого наркотического вещества",
+          "С момента введения морфина прошло не менее нескольких часов",
+          "Отношение не отражает время, оно служит лишь доказательством хронической интоксикации"
+        ],
+        "en": [
+          "A very short time passed from morphine administration to death; death occurred almost immediately",
+          "Death was caused not by morphine but by the effect of another narcotic substance",
+          "At least several hours have passed since morphine administration",
+          "The ratio does not indicate time; it is considered only proof of chronic intoxication"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Nisbat 1 dan kichik bo‘lsa, kiritilganidan beri vaqt qisqa; 1 dan katta bo‘lsa, kamida bir necha soat o‘tgan. 1,4 ikkinchi holatga mos keladi. Boshqa variantlar nisbatning bunday talqiniga to‘g‘ri kelmaydi.",
+        "ru": "Если отношение меньше 1, с момента введения прошло мало времени; если больше 1 — прошло не менее нескольких часов. Значение 1,4 соответствует второму случаю. Остальные варианты не соответствуют такой интерпретации отношения.",
+        "en": "If the ratio is less than 1, the time since administration is short; if greater than 1, at least several hours have passed. 1.4 corresponds to the second case. The other options do not correspond to this interpretation of the ratio."
+      },
+      "source": {
+        "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+        "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "99"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q20",
+      "question_i18n": {
+        "uz": "Barbituratlar (kuchsiz organik kislotalar) bilan zaharlangan bemorda zaharning siydik bilan ajralishini tezlashtirish kerak. Siydik reaksiyasi qanday bo‘lsa, ajralish yaxshiroq bo‘ladi?",
+        "ru": "У больного, отравившегося барбитуратами (слабыми органическими кислотами), необходимо ускорить выведение яда с мочой. При какой реакции мочи выведение происходит лучше?",
+        "en": "In a patient poisoned with barbiturates (weak organic acids), excretion of the poison in the urine must be accelerated. With what urine reaction is excretion better?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qon plazmasiga nisbatan ishqoriyroq bo‘lsa, kuchsiz kislotali moddalar siydikka yaxshi o‘tadi",
+          "Kislotali bo‘lsa, chunki kuchsiz kislotalar kislotali muhitda ko‘proq ionlanadi",
+          "Siydik pH ahamiyatsiz, chunki barbituratlar kuchli elektrolitlar sifatida ajraladi",
+          "Siydik pH ahamiyatsiz, chunki lipofil birikmalar buyrak orqali baribir to‘liq ajraladi"
+        ],
+        "ru": [
+          "Если она более щелочная по сравнению с плазмой крови, слабокислотные вещества лучше переходят в мочу",
+          "Если она кислая, так как слабые кислоты в кислой среде ионизируются сильнее",
+          "pH мочи не имеет значения, так как барбитураты выводятся как сильные электролиты",
+          "pH мочи не имеет значения, так как липофильные соединения всё равно полностью выводятся почками"
+        ],
+        "en": [
+          "If it is more alkaline relative to blood plasma, weakly acidic substances pass into the urine better",
+          "If it is acidic, because weak acids are ionized more in an acidic environment",
+          "Urine pH is irrelevant, because barbiturates are excreted as strong electrolytes",
+          "Urine pH is irrelevant, because lipophilic compounds are completely excreted by the kidneys anyway"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Kuchsiz kislotali moddalar (barbituratlar, salitsil kislota) plazmadan ishqoriyroq siydikka yaxshi o‘tadi. Kuchsiz asoslar esa kislotali siydikda yaxshi ajraladi. Faqat kuchli elektrolitlar pH ga bog‘liq emas, lipofil moddalar esa buyrak orqali deyarli ajralmaydi.",
+        "ru": "Слабокислотные вещества (барбитураты, салициловая кислота) хорошо переходят из плазмы в более щелочную мочу. Слабые основания, напротив, хорошо выводятся с кислой мочой. От pH не зависят только сильные электролиты, а липофильные вещества почками практически не выводятся.",
+        "en": "Weakly acidic substances (barbiturates, salicylic acid) pass better from plasma into more alkaline urine. Weak bases, on the other hand, are excreted well in acidic urine. Only strong electrolytes are independent of pH, and lipophilic substances are hardly excreted by the kidneys at all."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "74"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q21",
+      "question_i18n": {
+        "uz": "Zaharlanish gumon qilingan murdaning oshqozon tarkibidan suvli so‘rim tayyorlandi: qizil lakmus ko‘kardi, fenolftalein qizil rangga bo‘yaldi. Unga bariy xlorid eritmasi qo‘shilganda fenolftalein rangi yo‘qolmadi. Qaysi xulosa to‘g‘ri?",
+        "ru": "Из содержимого желудка трупа при подозрении на отравление приготовлено водное извлечение: красная лакмусовая бумага посинела, фенолфталеин окрасился в красный цвет. При добавлении к нему раствора хлорида бария окраска фенолфталеина не исчезла. Какой вывод верен?",
+        "en": "An aqueous extract was prepared from the stomach contents of a corpse with suspected poisoning: red litmus turned blue and phenolphthalein turned red. When barium chloride solution was added to it, the phenolphthalein color did not disappear. Which conclusion is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Muhit ishqoriy reaksiyasi natriy karbonat bilan bog‘liq",
+          "Namunada ko‘p miqdorda mineral kislotalar bor",
+          "Muhit reaksiyasi sirka kislotasi bug‘lari bilan bog‘liq",
+          "Namunada o‘yuvchi ishqor yoki ammiak bor"
+        ],
+        "ru": [
+          "Щелочная реакция среды обусловлена карбонатом натрия",
+          "В образце содержится большое количество минеральных кислот",
+          "Реакция среды обусловлена парами уксусной кислоты",
+          "В образце присутствует едкая щёлочь или аммиак"
+        ],
+        "en": [
+          "The alkaline reaction of the medium is due to sodium carbonate",
+          "The sample contains large amounts of mineral acids",
+          "The reaction of the medium is due to acetic acid vapors",
+          "The sample contains a caustic alkali or ammonia"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Kuchli ishqor yoki ammiak bo‘lsa, bariy xlorid qo‘shilganda ham gidroksil ionlari qoladi va rang saqlanadi. Natriy karbonatda esa bariy karbonat cho‘kmaga tushib, rang yo‘qoladi. Kislotali moddalar fenolftaleinni umuman qizartirmaydi.",
+        "ru": "При наличии сильной щёлочи или аммиака после добавления хлорида бария гидроксид-ионы остаются, и окраска сохраняется. В случае карбоната натрия карбонат бария выпадает в осадок, и окраска исчезает. Кислые вещества вообще не окрашивают фенолфталеин в красный цвет.",
+        "en": "If a strong alkali or ammonia is present, hydroxide ions remain even after barium chloride is added, and the color persists. With sodium carbonate, however, barium carbonate precipitates and the color disappears. Acidic substances do not turn phenolphthalein red at all."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "136"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q22",
+      "question_i18n": {
+        "uz": "Zaharlanishdan shubha qilingan bemorda hayotligida ko‘z qorachig‘ining torayishi (miyoz), tirnoq plastinkalarida oqish ko‘ndalang yo‘llar va soch to‘kilishi (alopetsiya) kuzatilgan. Bu uch belgining kesishuvi qaysi zaharga mos keladi?",
+        "ru": "У больного с подозрением на отравление при жизни наблюдались сужение зрачков (миоз), беловатые поперечные полосы на ногтевых пластинках и выпадение волос (алопеция). Какому яду соответствует сочетание этих трёх признаков?",
+        "en": "In a patient suspected of poisoning, the following were observed during life: pupillary constriction (miosis), whitish transverse bands on the nail plates, and hair loss (alopecia). The combination of these three signs corresponds to which poison?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Simob birikmalari",
+          "Talliy birikmalari",
+          "Fosfororganik birikmalar",
+          "Atropin"
+        ],
+        "ru": [
+          "Соединения ртути",
+          "Соединения таллия",
+          "Фосфорорганические соединения",
+          "Атропин"
+        ],
+        "en": [
+          "Mercury compounds",
+          "Thallium compounds",
+          "Organophosphorus compounds",
+          "Atropine"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Miyoz fosfororganik birikmalar, opiatlar va talliyda uchraydi. Tirnoqdagi oqish yo‘llar talliy va margimushga, alopetsiya talliy va simobga xos. Faqat talliy uchala belgini qamrab oladi. Atropinda esa qorachiq kengayadi.",
+        "ru": "Миоз встречается при отравлении фосфорорганическими соединениями, опиатами и таллием. Беловатые полосы на ногтях характерны для таллия и мышьяка, алопеция — для таллия и ртути. Только таллий объединяет все три признака. При действии атропина зрачок, напротив, расширяется.",
+        "en": "Miosis occurs with organophosphorus compounds, opiates and thallium. Whitish bands on the nails are characteristic of thallium and arsenic, and alopecia of thallium and mercury. Only thallium covers all three signs. With atropine, the pupils dilate."
+      },
+      "source": {
+        "author": "Ромодановский П.О., Баринов Е.Х.",
+        "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "406"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q23",
+      "question_i18n": {
+        "uz": "Margimush birikmalarini katta miqdorda og‘iz orqali qabul qilgan odamda kuchli bosh og‘rig‘i, alahsirash va qisqa muddatda koma rivojlandi, oshqozon-ichak alomatlari deyarli bo‘lmadi, o‘lim dastlabki soatlarda yuz berdi. Murdada morfologik o‘zgarishlar minimal, bosh miya pardalari keskin shishgan. Bu zaharlanishning qaysi turi?",
+        "ru": "У человека, принявшего внутрь большое количество соединений мышьяка, развились сильная головная боль, бред и в короткий срок кома, желудочно-кишечных симптомов практически не было, смерть наступила в первые часы. На трупе морфологические изменения минимальны, оболочки головного мозга резко отёчны. Какая это форма отравления?",
+        "en": "A person who orally ingested a large amount of arsenic compounds developed severe headache, delirium and, within a short time, coma. Gastrointestinal symptoms were almost absent, and death occurred within the first hours. At autopsy, morphological changes are minimal and the meninges of the brain are markedly swollen. Which type of poisoning is this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Oshqozon-ichak turi, vaboga o‘xshash ich ketish bilan",
+          "Surunkali turi, soch to‘kilishi va polineyropatiya bilan",
+          "Gemolitik turi, o‘tkir buyrak yetishmovchiligi bilan",
+          "Paralitik turi, nafas va yurak-qon tomir markazlari falajlanishi bilan"
+        ],
+        "ru": [
+          "Желудочно-кишечная форма с холероподобным поносом",
+          "Хроническая форма с выпадением волос и полинейропатией",
+          "Гемолитическая форма с острой почечной недостаточностью",
+          "Паралитическая форма с параличом дыхательного и сердечно-сосудистого центров"
+        ],
+        "en": [
+          "Gastrointestinal type, with cholera-like diarrhea",
+          "Chronic type, with hair loss and polyneuropathy",
+          "Hemolytic type, with acute renal failure",
+          "Paralytic type, with paralysis of the respiratory and cardiovascular centers"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Zahar katta miqdorda qabul qilinganda yoki parenteral yuborilganda paralitik tur rivojlanadi. Unda ensefalopatiya belgilari yaqqol, hazm tizimi alomatlari kuchsiz, o‘lim esa markazlar falaji tufayli dastlabki soatlarda keladi. Oshqozon-ichak turida esa tez-tez qusish va ich ketishi bo‘ladi.",
+        "ru": "При приёме яда в большом количестве или при парентеральном введении развивается паралитическая форма. При ней выражены признаки энцефалопатии, симптомы со стороны пищеварительной системы слабые, а смерть наступает в первые часы вследствие паралича центров. При желудочно-кишечной форме, напротив, бывают частая рвота и понос.",
+        "en": "The paralytic type develops when the poison is taken in a large amount or administered parenterally. It features prominent signs of encephalopathy, weak digestive symptoms, and death in the first hours due to paralysis of the vital centers. The gastrointestinal type, by contrast, involves frequent vomiting and diarrhea."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "148-149"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q24",
+      "question_i18n": {
+        "uz": "Murda ko‘milganiga ancha vaqt bo‘lgan, qazib olinib sud-kimyoviy tekshiruvga namuna olinmoqda. Zaharlanish gumon qilingan zaharlardan qaysi birini shu muddatdan keyin aniqlash eng ehtimolli?",
+        "ru": "Труп захоронен достаточно давно, после эксгумации берутся образцы для судебно-химического исследования. Какой из предполагаемых ядов наиболее вероятно удастся обнаружить по прошествии такого срока?",
+        "en": "A corpse was buried a long time ago and has been exhumed, and samples are being taken for forensic chemical examination. Which of the suspected poisons is most likely to be detected after this period?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Etil spirti",
+          "Kaliy tsianidi",
+          "Strixnin",
+          "Atropin"
+        ],
+        "ru": [
+          "Этиловый спирт",
+          "Цианид калия",
+          "Стрихнин",
+          "Атропин"
+        ],
+        "en": [
+          "Ethyl alcohol",
+          "Potassium cyanide",
+          "Strychnine",
+          "Atropine"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Strixnin, margimush va og‘ir metall tuzlari yaxshi saqlanadi, shuning uchun ko‘milgan murdada ham topilishi mumkin. Alkogol va kaliy tsianidi hayotda va o‘limdan keyin tez parchalanadi. Atropin ham o‘limdan keyin emirilishga moyil.",
+        "ru": "Стрихнин, мышьяк и соли тяжёлых металлов хорошо сохраняются, поэтому могут быть обнаружены и в захороненном трупе. Алкоголь и цианид калия быстро разрушаются как при жизни, так и после смерти. Атропин также склонен к разрушению после смерти.",
+        "en": "Strychnine, arsenic and heavy metal salts are well preserved, so they can be found even in a buried corpse. Alcohol and potassium cyanide break down quickly both in life and after death. Atropine is also prone to postmortem degradation."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "298-299"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q25",
+      "question_i18n": {
+        "uz": "Tajribada kurare teri ostiga yuborilganda mushaklar tez falajlandi, xuddi shu miqdor oshqozon orqali berilganda esa hech qanday ta’sir kuzatilmadi. Bu farqni qaysi qoidaga asoslanib tushuntirish to‘g‘ri?",
+        "ru": "В эксперименте при подкожном введении кураре быстро наступил паралич мышц, а при введении того же количества через желудок никакого действия не наблюдалось. На каком правиле верно основано объяснение этой разницы?",
+        "en": "In an experiment, when curare was injected subcutaneously the muscles were rapidly paralyzed, whereas the same amount given through the stomach produced no effect. Which principle correctly explains this difference?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Kurare faqat jigarda faollashadi, shuning uchun teri ostiga yuborilganda ham dastlab zaharsiz bo‘ladi",
+          "Oshqozon shirasi har qanday zaharni to‘liq neytrallaydi, shu sababli og‘iz orqali kirgan modda ta’sir ko‘rsatmaydi",
+          "Ayrim zaharlar faqat aniq yo‘llar orqali kirgandagina ta’sir ko‘rsatadi, shuning uchun kirish yo‘li natijani belgilaydi",
+          "Teri ostiga yuborilganda ta’sir qiluvchi doza tana vazniga nisbatan kattaroq bo‘lgani uchun falaj tez rivojlanadi"
+        ],
+        "ru": [
+          "Кураре активируется только в печени, поэтому при подкожном введении оно сначала тоже нетоксично",
+          "Желудочный сок полностью нейтрализует любой яд, поэтому вещество, попавшее через рот, не действует",
+          "Некоторые яды действуют только при поступлении определёнными путями, поэтому путь поступления определяет результат",
+          "При подкожном введении действующая доза относительно массы тела больше, поэтому паралич развивается быстро"
+        ],
+        "en": [
+          "Curare is activated only in the liver, so it is initially non-toxic even when injected subcutaneously",
+          "Gastric juice completely neutralizes any poison, so a substance entering orally has no effect",
+          "Some poisons act only when they enter by specific routes, so the route of entry determines the outcome",
+          "With subcutaneous injection the effective dose is larger relative to body weight, so paralysis develops quickly"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Zaharning ta’siri uning organizmga kirish yo‘liga bog‘liq: kurare teri ostiga yuborilganda mushaklarni tez falajlaydi, oshqozon orqali kirganda esa ta’sirsiz qoladi. Boshqa variantlar umumlashtirilgan yoki to‘qima xato mexanizmlarni keltiradi, kitobda bunday izoh yo‘q.",
+        "ru": "Действие яда зависит от пути его поступления в организм: при подкожном введении кураре быстро парализует мышцы, а при поступлении через желудок остаётся без действия. Остальные варианты приводят обобщённые или вымышленные ошибочные механизмы, в книге такого объяснения нет.",
+        "en": "The action of a poison depends on its route of entry into the body: curare rapidly paralyzes muscles when injected subcutaneously, but remains ineffective when it enters through the stomach. The other options offer overgeneralized or tissue-error mechanisms; the book gives no such explanation."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "288-289"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q26",
+      "question_i18n": {
+        "uz": "Gumon qilingan ammiakni aniqlash uchun kolba tiqiniga uchta qog‘oz yopishtirildi: namlangan qizil lakmus, qo‘rg‘oshin atsetat bilan ho‘llangan va ishqoriy mis sulfat bilan ho‘llangan. Chirigan obyekt isitilganda lakmus va “mis” qog‘ozi ko‘kardi, “qo‘rg‘oshin” qog‘ozi qoraydi. Qaysi xulosa to‘g‘ri?",
+        "ru": "Для обнаружения предполагаемого аммиака к пробке колбы приклеены три бумажки: увлажнённая красная лакмусовая, смоченная ацетатом свинца и смоченная щелочным раствором сульфата меди. При нагревании гнилостного объекта лакмусовая и «медная» бумажки посинели, «свинцовая» почернела. Какой вывод верен?",
+        "en": "To detect suspected ammonia, three paper strips were attached to the stopper of a flask: moistened red litmus, one wetted with lead acetate, and one wetted with alkaline copper sulfate. When the putrefied specimen was heated, the litmus and the \"copper\" paper turned blue, and the \"lead\" paper turned black. Which conclusion is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Obyektda chirish natijasida vodorod sulfid va ammiak hosil bo‘lgan, shuning uchun ammiakni bu obyektda aniqlab bo‘lmaydi",
+          "Ammiak bilan zaharlanish isbotlandi, chunki lakmus va mis qog‘ozi ko‘karishi ammiak uchun xos belgidir",
+          "Obyektda faqat vodorod sulfid bor, ammiak mutlaqo yo‘q, shuning uchun ammiak bilan zaharlanish istisno qilinadi",
+          "Qora rang qo‘rg‘oshin qog‘ozida ammiak borligini tasdiqlaydi, ko‘k ranglar esa chirishga xos emas"
+        ],
+        "ru": [
+          "В объекте в результате гниения образовались сероводород и аммиак, поэтому аммиак в этом объекте обнаружить нельзя",
+          "Отравление аммиаком доказано, так как посинение лакмусовой и медной бумажек является характерным признаком аммиака",
+          "В объекте имеется только сероводород, аммиака нет совсем, поэтому отравление аммиаком исключается",
+          "Чёрный цвет свинцовой бумажки подтверждает наличие аммиака, а синие окраски не характерны для гниения"
+        ],
+        "en": [
+          "Hydrogen sulfide and ammonia were formed in the specimen by putrefaction, so ammonia cannot be reliably detected in this specimen",
+          "Ammonia poisoning is proven, because the blue color of the litmus and copper paper is characteristic of ammonia",
+          "The specimen contains only hydrogen sulfide and no ammonia at all, so ammonia poisoning is excluded",
+          "The black color on the lead paper confirms the presence of ammonia, and blue colors are not characteristic of putrefaction"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Sof ammiakda faqat lakmus va mis qog‘ozi ko‘karadi, qo‘rg‘oshin qog‘ozi o‘zgarmaydi. Uchala qog‘ozning rangi o‘zgarishi chirishda hosil bo‘lgan endogen H2S va NH3 ni ko‘rsatadi, shu sabab ammiakni ishonchli aniqlab bo‘lmaydi.",
+        "ru": "При чистом аммиаке синеют только лакмусовая и медная бумажки, свинцовая бумажка не изменяется. Изменение цвета всех трёх бумажек указывает на эндогенные H2S и NH3, образовавшиеся при гниении, поэтому достоверно обнаружить аммиак невозможно.",
+        "en": "With pure ammonia, only the litmus and copper papers turn blue, while the lead paper does not change. A color change in all three papers indicates endogenous H2S and NH3 formed during putrefaction, which is why ammonia cannot be reliably detected."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "136-137"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q27",
+      "question_i18n": {
+        "uz": "Sportchi anabolik steroid stanozololni bir necha hafta qabul qilgan va musobaqadan bir oy oldin to‘xtatgan. Musobaqa kuni siydik tahlili manfiy chiqdi. Qaysi namunani tekshirish qabul qilish faktini yil va undan keyin ham aniqlashi mumkin?",
+        "ru": "Спортсмен принимал анаболический стероид станозолол в течение нескольких недель и прекратил приём за месяц до соревнований. В день соревнований анализ мочи оказался отрицательным. Исследование какого образца может выявить факт приёма и через год и позже?",
+        "en": "An athlete took the anabolic steroid stanozolol for several weeks and stopped one month before a competition. On the day of the competition, the urine test was negative. Which sample can reveal the fact of intake even a year or more later?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Musobaqadan keyin olingan qon zardobi, chunki qonda steroidlar uzoq saqlanadi",
+          "Qayta olingan siydik, chunki steroid metabolitlari siydikda bir yil davomida to‘planadi",
+          "Oshqozon yuvindi suvi, chunki modda ichak devorida yillab ushlanib qoladi",
+          "Soch, chunki dori moddalari sochda metabolizmga uchramay uzoq muddat saqlanadi"
+        ],
+        "ru": [
+          "Сыворотка крови, взятая после соревнований, так как стероиды долго сохраняются в крови",
+          "Повторно взятая моча, так как метаболиты стероидов накапливаются в моче в течение года",
+          "Промывные воды желудка, так как вещество годами задерживается в стенке кишечника",
+          "Волосы, так как лекарственные вещества сохраняются в волосах длительное время, не подвергаясь метаболизму"
+        ],
+        "en": [
+          "Blood serum taken after the competition, because steroids persist in the blood for a long time",
+          "Repeat urine, because steroid metabolites accumulate in urine for a year",
+          "Gastric lavage fluid, because the substance is retained in the intestinal wall for years",
+          "Hair, because drugs and medications are stored in hair for a long time without being metabolized"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Soch qulay olinadigan va saqlanadigan substrat bo‘lib, undagi giyohvand va dori moddalari metabolizmga uchramaydi. Stanozolol siydikda topilmaganda ham sochda bir yil va undan ortiq vaqt o‘tgach aniqlangan. Qolgan namunalarda modda tez chiqib ketadi.",
+        "ru": "Волосы — удобный для взятия и хранения субстрат, наркотические и лекарственные вещества в них не подвергаются метаболизму. Станозолол обнаруживали в волосах через год и более, даже когда в моче он не находился. В остальных образцах вещество быстро выводится.",
+        "en": "Hair is a conveniently collected and stored substrate, and the narcotic and drug substances in it do not undergo metabolism. Even when stanozolol was not found in urine, it was detected in hair a year or more later. In the other samples, the substance is eliminated quickly."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "148"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q28",
+      "question_i18n": {
+        "uz": "Opiatlarni aniqlash bo‘yicha siydik tahlilida 437 ta musbat natijadan 7 tasi, 273 ta manfiy natijadan esa 13 tasi xato bo‘lib chiqdi. Manfiy natijalar orasidagi xatolar ulushi taxminan qancha?",
+        "ru": "При анализе мочи на опиаты из 437 положительных результатов 7 оказались ошибочными, а из 273 отрицательных результатов — 13. Какова примерно доля ошибок среди отрицательных результатов?",
+        "en": "In a urine analysis for opiates, 7 of 437 positive results and 13 of 273 negative results turned out to be erroneous. What is the approximate proportion of errors among the negative results?"
+      },
+      "options_i18n": {
+        "uz": [
+          "1,6%",
+          "4,8%",
+          "3,0%",
+          "2,6%"
+        ],
+        "ru": [
+          "1,6%",
+          "4,8%",
+          "3,0%",
+          "2,6%"
+        ],
+        "en": [
+          "1.6%",
+          "4.8%",
+          "3.0%",
+          "2.6%"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Manfiy natijalardagi xato ulushi 13/273 ≈ 4,8% ni beradi. 1,6% bu 7/437 bo‘lib, musbat natijalardagi xatoga tegishli; qolgan variantlar bo‘linuvchi-bo‘luvchini aralashtirishdan chiqadi. Manfiy natijalar ishonchliligining pastroq ekani manbadagi umumiy fikrga mos.",
+        "ru": "Доля ошибок среди отрицательных результатов составляет 13/273 ≈ 4,8%. Значение 1,6% — это 7/437, относящееся к ошибкам среди положительных результатов; остальные варианты получаются при путанице делимого и делителя. Более низкая достоверность отрицательных результатов соответствует общему выводу источника.",
+        "en": "The proportion of errors among negative results is 13/273 ≈ 4.8%. The 1.6% figure is 7/437 and relates to errors among positive results; the other options come from mixing up the numerator and denominator. The lower reliability of negative results is consistent with the general idea in the source."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "123"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q29",
+      "question_i18n": {
+        "uz": "Murdadan mishyak va simob kabi “metall zaharlar”ni ajratish kerak; ular biologik materialda oqsillarning sulfgidril guruhlari bilan kovalent bog‘ hosil qilgan. Qaysi ajratish usuli mantiqan to‘g‘ri?",
+        "ru": "Из трупа необходимо выделить «металлические яды», такие как мышьяк и ртуть; в биологическом материале они образовали ковалентную связь с сульфгидрильными группами белков. Какой метод выделения логически верен?",
+        "en": "\"Metallic poisons\" such as arsenic and mercury must be isolated from a corpse; in biological material they have formed covalent bonds with the sulfhydryl groups of proteins. Which isolation method is logically correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Materialni sovuq suv bilan ivitib, suvli so‘rim olish",
+          "Materialni kislotali spirtda uzoq muddat ivitish",
+          "Oksidlovchi kislotalar bilan qizdirib, organik moddalarni parchalash (minerallashtirish)",
+          "Materialni suv bug‘i bilan haydash"
+        ],
+        "ru": [
+          "Настаивание материала с холодной водой для получения водного извлечения",
+          "Длительное настаивание материала в подкисленном спирте",
+          "Разрушение органических веществ нагреванием с окисляющими кислотами (минерализация)",
+          "Перегонка материала с водяным паром"
+        ],
+        "en": [
+          "Soaking the material in cold water to obtain an aqueous extract",
+          "Prolonged soaking of the material in acidified alcohol",
+          "Heating with oxidizing acids to destroy organic matter (mineralization)",
+          "Steam distillation of the material"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kovalent bog‘ eng mustahkam bo‘lgani uchun oddiy ivitish uni uzmaydi. Metallarni ajratish uchun organik moddalar oksidlovchi kislotalar bilan qizdirib parchalanadi. Ivitish ionli va kuchsizroq bog‘lar uchun, haydash uchun esa uchuvchan zaharlar mos keladi.",
+        "ru": "Так как ковалентная связь наиболее прочная, обычное настаивание её не разрывает. Для выделения металлов органические вещества разрушают нагреванием с окисляющими кислотами. Настаивание подходит для ионных и более слабых связей, а перегонка — для летучих ядов.",
+        "en": "Because the covalent bond is the strongest, simple soaking does not break it. To isolate metals, the organic matter is destroyed by heating with oxidizing acids. Soaking is suited to ionic and weaker bonds, and distillation to volatile poisons."
+      },
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "69"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-pediatriya-11-q30",
+      "question_i18n": {
+        "uz": "Zaharlanishga shubha bilan murdani sud-tibbiy ochishda ichki a’zolarni tekshirish tartibi odatdagidan farq qiladi. Qaysi variant to‘g‘ri tartibni ko‘rsatadi?",
+        "ru": "При судебно-медицинском вскрытии трупа с подозрением на отравление порядок исследования внутренних органов отличается от обычного. Какой вариант указывает правильный порядок?",
+        "en": "When a corpse is examined at forensic autopsy for suspected poisoning, the order of examination of the internal organs differs from the usual. Which option shows the correct order?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Avval oshqozon tarkibi suv bilan yuviladi, so‘ng ichaklar ajratiladi, qon esa eng oxirida olinadi",
+          "Avval yurak kesilib qon olinadi, keyin kirish va chiqish joyi bog‘langan oshqozon va ichaklar ajratiladi",
+          "Avval ichaklar kesilib bo‘shatiladi, so‘ng yurak ochiladi, namunalar formalinda qotiriladi",
+          "Avval jigar va buyraklar ajratilib antiseptik eritmada yuviladi, so‘ng qon olinadi"
+        ],
+        "ru": [
+          "Сначала содержимое желудка промывается водой, затем выделяются кишечник, а кровь берётся в самом конце",
+          "Сначала вскрывается сердце и берётся кровь, затем выделяются желудок и кишечник с перевязанными входным и выходным концами",
+          "Сначала вскрывается и опорожняется кишечник, затем вскрывается сердце, образцы фиксируются в формалине",
+          "Сначала выделяются печень и почки и промываются антисептическим раствором, затем берётся кровь"
+        ],
+        "en": [
+          "First the stomach contents are rinsed with water, then the intestines are removed, and blood is taken last",
+          "First the heart is incised and blood is taken, then the stomach and intestines are removed with their inlet and outlet ends ligated",
+          "First the intestines are opened and emptied, then the heart is opened, and the samples are fixed in formalin",
+          "First the liver and kidneys are removed and washed in an antiseptic solution, then blood is taken"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Zaharlanishga shubhada birinchi bo‘lib yurakdan qon olinadi, so‘ng oshqozon va ichaklar uchlari bog‘lab ajratiladi. Suv va antiseptiklar ishlatilmaydi, chunki zahar yuvilib ketishi mumkin, namunalar formalin yoki spirt bilan qotirilmaydi.",
+        "ru": "При подозрении на отравление первой берётся кровь из сердца, затем выделяются желудок и кишечник с перевязанными концами. Вода и антисептики не используются, так как яд может быть смыт; образцы не фиксируют формалином или спиртом.",
+        "en": "When poisoning is suspected, blood is taken from the heart first, and then the stomach and intestines are removed with their ends ligated. Water and antiseptics are not used, because the poison may be washed away, and the samples are not fixed with formalin or alcohol."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "296"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "Bob 6. Sud-tibbiy toksikologiya"
+    },
+    {
+      "author": "Baizoldanov T. (Байзолданов Т.)",
+      "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+      "year": 2021,
+      "pages": "1-qism, 3-bob: zaharlanishlar tasnifi va toksikokinetika, s.53-119"
+    },
+    {
+      "author": "Baizoldanov T. (Байзолданов Т.)",
+      "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+      "year": 2021,
+      "pages": "1-qism, 4-bob: kimyoviy-toksikologik tahlil metodologiyasi, s.120-151"
+    },
+    {
+      "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+      "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+      "year": null,
+      "pages": "XIII-bob. Sud-tibbiy toksikologiya; bet 284-350"
+    },
+    {
+      "author": "Ромодановский П.О., Баринов Е.Х.",
+      "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2017,
+      "pages": "5-modul. Zaharlovchi moddalar ta’siridan jarohat va o‘lim; bet 375-407"
+    },
+    {
+      "author": "Харин Г.М. (Kharin G.M.)",
+      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2006,
+      "pages": "VI bo‘lim, 15-bob. Zaharlar va zaharlanishlar haqida umumiy ma’lumot; test nazorati; bet 129-138"
+    },
+    {
+      "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+      "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2004,
+      "pages": "2-bob. Narkotik intoksikatsiyalarni sud-tibbiy diagnostika qilishning yangi metodologik yondashuvlari (kitob beti 89-124); bet 89-124"
+    }
+  ]
+}
