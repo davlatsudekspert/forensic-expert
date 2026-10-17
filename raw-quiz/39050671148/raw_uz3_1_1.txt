@@ -1,0 +1,108 @@
+```json
+{
+  "questions": [
+    {
+      "question": "Chaqaloq murdasi o‘pkasining mikroskopik tekshiruvida alveolalar yoyilmagan, alveolalararo to‘siqlar qalin, kapillyarlarda qon yo‘q. Bunday o‘pkada alveolyar epiteliy qanday shaklda bo‘ladi?",
+      "options": [
+        "Yassi shaklda",
+        "Kubsimon shaklda",
+        "Silindrsimon shaklda",
+        "Ko‘p qatlamli yassi shaklda"
+      ],
+      "correct_index": 1,
+      "explanation": "Nafas olmagan (o‘lik tug‘ilgan) go‘dakning o‘pkasida alveolalar yoyilmagan bo‘lib, epiteliy kubsimon shaklda qoladi. Nafas olgan o‘pkada alveolalar yoyilgani sababli epiteliy yassilashadi, to‘siqlar ingichkalashadi va kapillyarlar qonga to‘ladi. Boshqa variantlar nafas olmagan o‘pka uchun xos emas.",
+      "difficulty": "easy",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "261"
+      }
+    },
+    {
+      "question": "Chaqaloq o‘pkasidagi kichik va o‘rta kalibrli arteriyalar ichida “kurtaksimon” va “yostiqsimon” bo‘rtiqlar (N.A. Mityaeva belgisi) topildi. Bu belgi qaysi go‘dak uchun xos?",
+      "options": [
+        "Ikkilamchi atelektaz rivojlangan, bir necha soat yashagan go‘dak",
+        "Sun’iy nafas oldirilgan, keyin o‘lgan go‘dak",
+        "Gialin membranali, tirik tug‘ilgan noraso go‘dak",
+        "O‘lik tug‘ilgan go‘dak"
+      ],
+      "correct_index": 3,
+      "explanation": "Arteriya ichidagi bunday bo‘rtiqlar o‘lik tug‘ilgan go‘daklarda aniqlanadi, nafas olgan o‘pkada esa uchramaydi. Gialin membranalar aksincha tirik tug‘ilgan norasolarda uchraydi. Shu sababli bu belgi tirik tug‘ilganlikni inkor etishda yordam beradi.",
+      "difficulty": "medium",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "261"
+      }
+    },
+    {
+      "question": "Chaqaloq murdasida barabon bo‘shlig‘i suv ostida ochildi: havo pufakchalari chiqmadi, bo‘shliqda shilimshiq bor. Quloq (Vent–Vreden) sinamasining bunday natijasi nimani ko‘rsatadi?",
+      "options": [
+        "Go‘dak o‘lik tug‘ilgan, nafas harakatlari bo‘lmagan",
+        "Go‘dak tirik tug‘ilgan, havo keyinchalik so‘rilib ketgan",
+        "Go‘dak tirik tug‘ilgan, ammo hayotga layoqatsiz bo‘lgan",
+        "Go‘dak nafas olgan, lekin atigi bir necha daqiqa yashagan"
+      ],
+      "correct_index": 0,
+      "explanation": "Birinchi nafas harakatlarida havo eshitish nayi orqali barabon bo‘shlig‘iga kiradi. Havo bo‘lmasdan faqat shilimshiq topilsa, bu o‘lik tug‘ilganlikning isboti hisoblanadi. Boshqa variantlar sinamaning mantiqiga zid.",
+      "difficulty": "medium",
+      "source": {
+        "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+        "title": "Судебная медицина: учебник для вузов",
+        "page": "33"
+      }
+    },
+    {
+      "question": "Ekspertizaga bir homilali go‘dak murdasi keltirildi: tana uzunligi 46 sm, vazni 2400 g. Yetuklik mezonlariga ko‘ra qaysi xulosa to‘g‘ri?",
+      "options": [
+        "Yetuk va raso, chunki tana uzunligi talabga javob beradi",
+        "Yetuk, chunki vazn 2500 g dan bir oz kam bo‘lishi muhim emas",
+        "Yetuk emas, chunki vazni 2500 g dan kam",
+        "Yetuk emas, chunki tana uzunligi 50 sm dan kam"
+      ],
+      "correct_index": 2,
+      "explanation": "Yetuk deb hisoblanishi uchun tana uzunligi kamida 45 sm bo‘lishi va vazn 2500 g dan kam bo‘lmasligi kerak. Bu go‘dakda uzunlik yetarli, ammo vazn me’yordan past, shuning uchun yetuk emas. 50 sm yetuklik chegarasi emas, u raso go‘daklarning o‘rtacha ko‘rsatkichiga yaqin.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "262"
+      }
+    },
+    {
+      "question": "Murda ochilganda go‘dak o‘pkasida nafas olish belgilari aniqlandi. Angliya va Uels qonunchiligi sharoitida ekspert shu asosda go‘dakning “alohida mavjudligi” mutlaq isbotlandi, deb xulosa qila oladimi?",
+      "options": [
+        "Ha, chunki nafas olish alohida mavjudlikning mutlaq isbotidir",
+        "Yo‘q, chunki bosh va ko‘krak tug‘ilgach, tananing pastki qismi tug‘ilmasdan ham go‘dak nafas olishi mumkin",
+        "Yo‘q, chunki nafas olganlikni murdada umuman aniqlab bo‘lmaydi",
+        "Ha, chunki nafas faqat go‘dak onadan to‘liq ajralgandan keyin boshlanadi"
+      ],
+      "correct_index": 1,
+      "explanation": "Bosh bilan tug‘ilishda go‘dak bosh va ko‘krak qafasi tug‘ilgach, tananing pastki qismi hali ona tanasida bo‘lsa ham nafas olishi mumkin. Shu sababli nafas olish belgisi yagona o‘zi to‘liq ajralishni isbotlamaydi. Nafas olganlikni aniqlash esa ayrim hollarda mumkin, shuning uchun uchinchi variant xato.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "66-67"
+      }
+    },
+    {
+      "question": "Tirik tug‘ilgan noraso go‘dak o‘pkasida ham gialin membranalar, ham ikkilamchi atelektaz aniqlandi. Shu ikki belgiga tayanib, go‘dak ona organizmidan tashqarida kamida qancha yashagan deb hisoblanadi?",
+      "options": [
+        "Kamida 30 daqiqa",
+        "Kamida 1–2 soat",
+        "Kamida 24 soat",
+        "Kamida 5–6 soat"
+      ],
+      "correct_index": 3,
+      "explanation": "Gialin membranalar hosil bo‘lishi uchun kamida 1–2 soat yashash kerak. Ikkilamchi atelektaz esa kamida 5–6 soatdan keyin rivojlanadi. Ikki belgi birga bo‘lganda uzoqroq talab qiladigan belgi minimal muddatni belgilaydi, ya’ni 5–6 soat.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "264"
+      }
+    }
+  ]
+}
+```

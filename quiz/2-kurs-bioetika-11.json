@@ -1,0 +1,1392 @@
+{
+  "topic_id": "2-kurs-bioetika-11",
+  "source_lang": "uz",
+  "title_i18n": {
+    "uz": "Inson huquqlari va biotibbiyot to‘g‘risidagi Yevropa konventsiyasi (1997); shifokor–bemor va hamshira–bemor munosabat modellari; klinik xavf va tibbiy yordam xavfsizligi (A3)",
+    "ru": "Европейская конвенция о правах человека и биомедицине (1997); модели отношений врач–пациент и медсестра–пациент; клинический риск и безопасность медицинской помощи (A3)",
+    "en": "European Convention on Human Rights and Biomedicine (1997); physician–patient and nurse–patient relationship models; clinical risk and patient safety in healthcare (A3)"
+  },
+  "translation_status": {
+    "uz": "source",
+    "ru": "auto_unreviewed",
+    "en": "auto_unreviewed"
+  },
+  "questions": [
+    {
+      "id": "2-kurs-bioetika-11-q01",
+      "question_i18n": {
+        "uz": "R. Vitch bo‘yicha injenerlik (texnik) tipidagi modelda bemor murakkab mexanizmga, shifokor esa shu texnika bo‘yicha mutaxassisga o‘xshatiladi. Bu model tibbiy amaliyotning qaysi holatida qo‘llanadi?",
+        "ru": "В инженерной (технической) модели по Р. Витчу пациент уподобляется сложному механизму, а врач — специалисту по этой технике. В какой ситуации медицинской практики применяется эта модель?",
+        "en": "In R. Veatch's engineering (technical) model, the patient is likened to a complex mechanism and the physician to a specialist in that technology. In which situation of medical practice is this model applied?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Yuqori va murakkab texnologiyalarga asoslangan muolajalarni o‘tkazishda",
+          "Bemor hushsiz bo‘lib, o‘z xohish-irodasini ifodalay olmagan holatlarda",
+          "Kompetent bemorlarda asosan surunkali kasalliklarni uzoq davolashda",
+          "Tomonlar yozma shartnoma tuzib, jarayonni birgalikda nazorat qilganda"
+        ],
+        "ru": [
+          "При проведении процедур, основанных на высоких и сложных технологиях",
+          "Когда пациент без сознания и не может выразить свою волю",
+          "В основном у компетентных пациентов при длительном лечении хронических заболеваний",
+          "Когда стороны заключают письменный договор и совместно контролируют процесс"
+        ],
+        "en": [
+          "When performing procedures based on advanced and complex technologies",
+          "When the patient is unconscious and unable to express their will",
+          "In long-term treatment of chronic diseases, mainly in competent patients",
+          "When the parties conclude a written contract and jointly supervise the process"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Injenerlik modelida shifokor faqat obyektiv ma’lumotlarga tayanadi, shu sababli u texnologik jihatdan murakkab muolajalarda qo‘l keladi. Hushsiz bemorlar uchun sakral, surunkali kasalliklar uchun kollegial, shartnomaviy munosabat uchun kontrakt model xos.",
+        "ru": "В инженерной модели врач опирается только на объективные данные, поэтому она подходит для технологически сложных процедур. Для пациентов без сознания характерна сакральная модель, для хронических заболеваний — коллегиальная, для договорных отношений — контрактная.",
+        "en": "In the engineering model the physician relies only on objective data, so it is useful in technologically complex procedures. The sacral model is typical for unconscious patients, the collegial model for chronic diseases, and the contract model for contractual relationships."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "53"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q02",
+      "question_i18n": {
+        "uz": "Xabardor rozilikni tahlil qilishda uning «bo‘sag‘a elementlari» deb nimalar ataladi?",
+        "ru": "Что при анализе информированного согласия называют его «пороговыми элементами»?",
+        "en": "When analyzing informed consent, what are called its \"threshold elements\"?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Muhim ma’lumotlarni uzatish tartibi va tavsiyalar berish",
+          "Qaror qabul qilish va muayyan rejani tasdiqlash (avtorizatsiya)",
+          "Bemorning malakasi va qaror qabul qilishning ixtiyoriyligi",
+          "Tushunish akti va tavsiyalar berish bilan birga rozilik shakli"
+        ],
+        "ru": [
+          "Порядок передачи важной информации и выдача рекомендаций",
+          "Принятие решения и утверждение определённого плана (авторизация)",
+          "Компетентность пациента и добровольность принятия решения",
+          "Акт понимания и форма согласия вместе с выдачей рекомендаций"
+        ],
+        "en": [
+          "The procedure for conveying essential information and making recommendations",
+          "Decision-making and approval of a particular plan (authorization)",
+          "The patient's competence and the voluntariness of decision-making",
+          "The act of understanding and the form of consent together with making recommendations"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Rozilik jarayoni uchun avvalo bemor kompetent bo‘lishi va qarorni ixtiyoriy qabul qilishi kerak, shuning uchun bu ikkisi bo‘sag‘a elementlari hisoblanadi. Ma’lumot berish bilan bog‘liq jihatlar xabar berish elementlariga, qaror va avtorizatsiya esa rozilik elementlariga kiradi.",
+        "ru": "Для процесса согласия прежде всего необходимо, чтобы пациент был компетентным и принимал решение добровольно, поэтому эти два элемента считаются пороговыми. Аспекты, связанные с предоставлением информации, относятся к элементам информирования, а решение и авторизация — к элементам согласия.",
+        "en": "For the consent process, the patient must first be competent and make the decision voluntarily, so these two are the threshold elements. Aspects related to providing information belong to the disclosure elements, while the decision and authorization belong to the consent elements."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "47"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q03",
+      "question_i18n": {
+        "uz": "Klinik xavf sharoitida «mas’uliyatning konsentratsiyasi» prinsipi nimani nazarda tutadi?",
+        "ru": "Что предполагает принцип «концентрации ответственности» в условиях клинического риска?",
+        "en": "In the setting of clinical risk, what does the principle of \"concentration of responsibility\" imply?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Xavfli muolajalarda har qanday boshqa klinik mulohazalardan avval bemor xavfsizligini qo‘yish",
+          "Xavf bilan bog‘liq masalalar bo‘yicha qarorni faqat muassasa rahbariyatiga topshirish",
+          "Xavf darajasini nazorat qilish va kamaytirishda tibbiy xodimlarning shaxsiy mas’uliyatini kuchaytirish va jamlash",
+          "Muolajaning ijobiy natijasi salbiy oqibatdan ancha salmoqli bo‘lishini ta’minlash"
+        ],
+        "ru": [
+          "При рискованных процедурах ставить безопасность пациента выше любых других клинических соображений",
+          "Передавать решение по вопросам, связанным с риском, только руководству учреждения",
+          "Усиливать и сосредоточивать личную ответственность медицинских работников за контроль и снижение уровня риска",
+          "Обеспечивать, чтобы положительный результат процедуры был значительно весомее негативных последствий"
+        ],
+        "en": [
+          "In risky procedures, placing patient safety before any other clinical considerations",
+          "Delegating decisions on risk-related issues solely to the institution's management",
+          "Strengthening and concentrating the personal responsibility of medical staff in controlling and reducing the level of risk",
+          "Ensuring that the positive outcome of a procedure significantly outweighs the negative consequence"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Tibbiy xavf har doim shaxsga qaratilgan harakat bo‘lgani uchun muolajani bajarayotgan xodimning shaxsiy mas’uliyati jamlanadi. Birinchi variant ustuvorlik prinsipiga, to‘rtinchisi qo‘sh effektdagi mutanosiblikka tegishli.",
+        "ru": "Поскольку медицинский риск всегда связан с действием, направленным на конкретного человека, личная ответственность сосредоточивается на работнике, выполняющем процедуру. Первый вариант относится к принципу приоритетности, четвёртый — к соразмерности при двойном эффекте.",
+        "en": "Because medical risk is always an action directed at a person, the personal responsibility of the staff member performing the procedure is concentrated. The first option relates to the priority principle, and the fourth to proportionality in the double effect."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "73"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q04",
+      "question_i18n": {
+        "uz": "Tibbiy xatolarni o‘rganishda qo‘llaniladigan «o‘zak sabablar tahlili» usulida «beshta nega» texnikasi nima uchun ishlatiladi?",
+        "ru": "Для чего в методе «анализа первопричин», применяемом при изучении медицинских ошибок, используется техника «пяти почему»?",
+        "en": "In the \"root cause analysis\" method used to study medical errors, why is the \"five whys\" technique used?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Xatoga aybdor xodimni tezda aniqlab, unga nisbatan jazo choralarini belgilash uchun",
+          "Muassasaning ko‘rsatkichlarini boshqa tibbiy muassasalar bilan taqqoslab baholash uchun",
+          "Bemor va uning yaqinlarining shikoyatlari sonini statistik jihatdan hisoblab chiqish uchun",
+          "Har bir hodisada bir necha marta «nega» deb so‘rab, tizimli chuqur sabablarni aniqlash uchun"
+        ],
+        "ru": [
+          "Чтобы быстро выявить виновного в ошибке сотрудника и назначить ему меры наказания",
+          "Чтобы оценить показатели учреждения в сравнении с другими медицинскими учреждениями",
+          "Чтобы статистически подсчитать количество жалоб пациентов и их близких",
+          "Чтобы, многократно задавая вопрос «почему» по каждому случаю, выявить глубинные системные причины"
+        ],
+        "en": [
+          "To quickly identify the staff member at fault for the error and determine punitive measures against them",
+          "To evaluate the institution's indicators by comparing them with other medical institutions",
+          "To statistically count the number of complaints from patients and their relatives",
+          "To identify deep systemic causes by asking \"why\" several times about each incident"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Texnika ketma-ket «nima uchun» savollari orqali ko‘rinib turgan sababdan ortda yotgan tizimli omillargacha boradi. Maqsad kamchilikni takrorlamaslik, jazolash yoki taqqoslash emas.",
+        "ru": "Техника с помощью последовательных вопросов «почему» идёт от видимой причины к системным факторам, лежащим за ней. Цель — не допустить повторения недостатка, а не наказание или сравнение.",
+        "en": "Through successive \"why\" questions, the technique goes from the apparent cause to the systemic factors lying behind it. The aim is to prevent the shortcoming from recurring, not to punish or to compare."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "79"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q05",
+      "question_i18n": {
+        "uz": "Nyurnberg kodeksida (1947) odamlarda tajriba o‘tkazishga qo‘yilgan birinchi talab qaysi?",
+        "ru": "Какое первое требование к проведению экспериментов на людях установлено в Нюрнбергском кодексе (1947)?",
+        "en": "What is the first requirement for conducting experiments on humans in the Nuremberg Code (1947)?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Inson ishtirokidagi tadqiqot loyihasini etika qo‘mitasi ko‘rib chiqib ma’qullashi",
+          "Insonning ixtiyoriy roziligi bo‘lishi",
+          "Tadqiqotdan keyin ishtirokchilarga kompensatsiya berilishi",
+          "Tajriba oldin hayvonlarda sinab ko‘rilgan bo‘lishi"
+        ],
+        "ru": [
+          "Рассмотрение и одобрение проекта исследования с участием человека комитетом по этике",
+          "Наличие добровольного согласия человека",
+          "Выплата компенсации участникам после исследования",
+          "Предварительная проверка эксперимента на животных"
+        ],
+        "en": [
+          "That an ethics committee review and approve the research project involving human subjects",
+          "That the person's voluntary consent be obtained",
+          "That participants be compensated after the research",
+          "That the experiment have been previously tested on animals"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Kodeks talablari ichida eng avvalgisi sub’ektning ixtiyoriy roziligidir. Etika qo‘mitasi ekspertizasi Xelsinki deklaratsiyasida, kompensatsiya Belmont prinsiplarida, hayvonlarda oldindan sinash esa JTA hujjatlarida ta’kidlanadi.",
+        "ru": "Первым среди требований кодекса стоит добровольное согласие субъекта. Экспертиза комитета по этике подчёркивается в Хельсинкской декларации, компенсация — в Бельмонтских принципах, а предварительные испытания на животных — в документах ВМА.",
+        "en": "Among the Code's requirements, the earliest is the voluntary consent of the subject. Ethics committee review is emphasized in the Declaration of Helsinki, compensation in the Belmont principles, and prior testing on animals in World Medical Association (WMA) documents."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "144"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q06",
+      "question_i18n": {
+        "uz": "Buyuk Britaniyada 16 yoshgacha bo‘lgan bolaning davolanishga rozilik berish layoqati «Gillick kompetentligi» tushunchasiga ko‘ra nimaga bog‘liq?",
+        "ru": "От чего, согласно понятию «компетентность по Гиллику», в Великобритании зависит способность ребёнка младше 16 лет дать согласие на лечение?",
+        "en": "In the United Kingdom, according to the concept of \"Gillick competence,\" what does the capacity of a child under 16 to consent to treatment depend on?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Muolaja vaqtida ota-onadan kamida biri shifoxonada hozir bo‘lishiga",
+          "Bola muolajaning maqsadi, mohiyati, oqibati va xavfini anglash uchun yetarli tushuncha va aqlga ega ekanligiga",
+          "Faqat bolaning pasportdagi yoshi va sud tomonidan belgilangan layoqatiga",
+          "Bolaning kasallik tarixida avval shunday muolaja o‘tkazilgan bo‘lishiga"
+        ],
+        "ru": [
+          "От того, что во время процедуры в больнице присутствует хотя бы один из родителей",
+          "От того, обладает ли ребёнок достаточными знаниями и разумом, чтобы понимать цель, суть, последствия и риск процедуры",
+          "Только от возраста ребёнка по паспорту и дееспособности, определённой судом",
+          "От того, что в истории болезни ребёнка ранее проводилась такая же процедура"
+        ],
+        "en": [
+          "On at least one parent being present in the hospital during the procedure",
+          "On whether the child has sufficient understanding and intelligence to comprehend the purpose, nature, consequences and risk of the procedure",
+          "Only on the child's age in the passport and capacity determined by a court",
+          "On whether the same procedure has previously been performed in the child's medical history"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Kitobda layoqat qat’iy yosh chegarasi bilan emas, bolaning muolaja mohiyati, oqibati va xavfini baholay olishi, tibbiy maslahatni tahlil qila olishi bilan belgilanishi aytiladi. Xronologik yosh bitta omil, xolos; qolgan variantlar bunday shart qo‘ymaydi.",
+        "ru": "В учебнике сказано, что дееспособность определяется не строгой возрастной границей, а способностью ребёнка оценивать суть, последствия и риск процедуры, анализировать медицинский совет. Хронологический возраст — лишь один из факторов; остальные варианты такого условия не выдвигают.",
+        "en": "The textbook states that capacity is determined not by a strict age limit but by the child's ability to assess the nature, consequences and risk of the procedure and to analyze medical advice. Chronological age is only one factor; the other options impose no such condition."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "20"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q07",
+      "question_i18n": {
+        "uz": "R. Vitch bo‘yicha qaysi modelda shifokor va bemor tenglik va o‘zaro ishonch asosida hamkor bo‘ladi? Bu model asosan ma’lum darajada kompetent bemorlarda, surunkali kasalliklarni davolashda qo‘llanadi.",
+        "ru": "В какой модели по Р. Витчу врач и пациент становятся партнёрами на основе равенства и взаимного доверия? Эта модель применяется в основном у пациентов, в определённой степени компетентных, при лечении хронических заболеваний.",
+        "en": "In which of R. Veatch's models are the physician and patient partners based on equality and mutual trust? This model is mainly applied in patients who are competent to a certain degree, in the treatment of chronic diseases."
+      },
+      "options_i18n": {
+        "uz": [
+          "Sakral (pastor) tipidagi model",
+          "Injenerlik (texnik) tipidagi model",
+          "Kollegial tipdagi model",
+          "Kontrakt (shartnoma) tipidagi model"
+        ],
+        "ru": [
+          "Модель сакрального (пасторского) типа",
+          "Модель инженерного (технического) типа",
+          "Модель коллегиального типа",
+          "Модель контрактного (договорного) типа"
+        ],
+        "en": [
+          "Sacral (pastoral) type model",
+          "Engineering (technical) type model",
+          "Collegial type model",
+          "Contract type model"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kollegial model nopatemalistik yondashuvga asoslangan va tomonlarning tengligini nazarda tutadi. Sakral va injenerlik modellarida bemorning qaror qabul qilishdagi roli yo‘q yoki deyarli yo‘q. Kontrakt modeli esa tomonlar o‘rtasidagi shartnoma shartlariga tayanadi.",
+        "ru": "Коллегиальная модель основана на непатерналистском подходе и предполагает равенство сторон. В сакральной и инженерной моделях роль пациента в принятии решений отсутствует или почти отсутствует. Контрактная модель опирается на условия договора между сторонами.",
+        "en": "The collegial model is based on a non-paternalistic approach and presumes equality of the parties. In the sacral and engineering models the patient has no or almost no role in decision-making. The contract model relies on the terms of the agreement between the parties."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "53"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q08",
+      "question_i18n": {
+        "uz": "Shifokor bemor uchun ustoz va do‘st sifatida masalalarni muhokama qiladi va bemor qadriyatlariga imkon qadar mos keladigan eng yaxshi variantni tanlashga yordam beradi. Emanuel va Emanuel (1992) bo‘yicha bu qaysi model?",
+        "ru": "Врач обсуждает вопросы с пациентом как наставник и друг и помогает выбрать лучший вариант, максимально соответствующий ценностям пациента. Какая это модель по Эмануэлю и Эмануэлю (1992)?",
+        "en": "The physician discusses issues with the patient as a teacher and friend and helps them choose the best option that matches the patient's values as far as possible. According to Emanuel and Emanuel (1992), which model is this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Paternalistik model",
+          "Ma’lumot berish modeli",
+          "Talqin qilish modeli",
+          "Kengashish modeli"
+        ],
+        "ru": [
+          "Патерналистская модель",
+          "Информативная модель",
+          "Интерпретационная модель",
+          "Совещательная модель"
+        ],
+        "en": [
+          "Paternalistic model",
+          "Informative model",
+          "Interpretive model",
+          "Deliberative model"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Kengashish modelida shifokor bemorning qadriyatlarini hisobga olib, eng maqbul variantni birga tanlashga yordam beradi. Talqin qilish modelida shifokor muolajaning maqsadi, xavf omillari va oqibatlarini tushuntiruvchi maslahatchi bo‘ladi. Ma’lumot berish modelida shifokor faqat ma’lumot beradi, paternalistik modelda esa qarorni o‘zi qabul qiladi.",
+        "ru": "В совещательной модели врач, учитывая ценности пациента, помогает совместно выбрать наиболее приемлемый вариант. В интерпретационной модели врач — консультант, разъясняющий цель процедуры, факторы риска и последствия. В информативной модели врач лишь предоставляет информацию, а в патерналистской — принимает решение сам.",
+        "en": "In the deliberative model, the physician, taking the patient's values into account, helps choose the most suitable option together. In the interpretive model, the physician is an advisor who explains the purpose, risk factors and consequences of the procedure. In the informative model the physician only provides information, while in the paternalistic model the physician makes the decision alone."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "54"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q09",
+      "question_i18n": {
+        "uz": "Hamshira–bemor munosabatlarining qaysi modelida hamshiraning vazifasi faqat belgilangan muolajalarni texnik jihatdan bajarish bilan cheklanadi?",
+        "ru": "В какой модели отношений медсестра–пациент задача медсестры ограничивается лишь техническим выполнением назначенных процедур?",
+        "en": "In which model of the nurse–patient relationship is the nurse's role limited only to technically performing prescribed procedures?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Texnik model",
+          "Ona o‘rnini bosuvchi hamshira modeli",
+          "Kontrakt klinik model",
+          "Kollegial model"
+        ],
+        "ru": [
+          "Техническая модель",
+          "Модель медсестры, заменяющей мать",
+          "Контрактная клиническая модель",
+          "Коллегиальная модель"
+        ],
+        "en": [
+          "Technical model",
+          "Substitute-mother nurse model",
+          "Contract clinical model",
+          "Collegial model"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Texnik modelda hamshira faqat tayinlangan muolajalarni bajaradi. Ona o‘rnini bosuvchi modelda u bemor hayoti va sog‘lig‘i uchun to‘liq javobgar bo‘ladi. Kontrakt klinik modelda hamshira bemor qarorlarini amalga oshiradi. Kollegial model esa Vitchning shifokor–bemor modeli bo‘lib, hamshira–bemor modellariga kirmaydi.",
+        "ru": "В технической модели медсестра выполняет только назначенные процедуры. В модели, заменяющей мать, она полностью отвечает за жизнь и здоровье пациента. В контрактной клинической модели медсестра реализует решения пациента. Коллегиальная модель — это модель врач–пациент по Витчу, и в модели медсестра–пациент она не входит.",
+        "en": "In the technical model, the nurse only performs prescribed procedures. In the substitute-mother model, she is fully responsible for the patient's life and health. In the contract clinical model, the nurse carries out the patient's decisions. The collegial model is Veatch's physician–patient model and is not among the nurse–patient models."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "55"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q10",
+      "question_i18n": {
+        "uz": "Klinik xavfning ikki negizidan biri muolajadan oldin bemorning salomatlik holati bilan bog‘liq xavfdir. Bu xavf qanday ataladi?",
+        "ru": "Одна из двух основ клинического риска — риск, связанный с состоянием здоровья пациента до процедуры. Как называется этот риск?",
+        "en": "One of the two bases of clinical risk is the risk related to the patient's health condition before the procedure. What is this risk called?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ya’ni iatrogen xavf",
+          "Morbid xavf",
+          "Kontekstual xavf",
+          "Tizimli xavf"
+        ],
+        "ru": [
+          "То есть ятрогенный риск",
+          "Морбидный риск",
+          "Контекстуальный риск",
+          "Системный риск"
+        ],
+        "en": [
+          "That is, iatrogenic risk",
+          "Morbid risk",
+          "Contextual risk",
+          "Systemic risk"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Muolajadan oldingi salomatlik holatidan kelib chiqadigan xavf morbid xavf deyiladi. Iatrogen xavf esa muolajani o‘tkazishning o‘zi bilan bog‘liq. Kontekstual holatlar to‘rt kvadrat usulidagi tushuncha, tizimli xatolar esa yordam ko‘rsatishni tashkil etishdagi nuqsonlar bilan bog‘liq.",
+        "ru": "Риск, обусловленный состоянием здоровья до процедуры, называется морбидным риском. Ятрогенный риск связан с самим проведением процедуры. Контекстуальные обстоятельства — понятие из метода четырёх квадрантов, а системные ошибки связаны с недостатками в организации оказания помощи.",
+        "en": "The risk arising from the health condition before the procedure is called morbid risk. Iatrogenic risk, by contrast, is related to the performance of the procedure itself. Contextual circumstances are a concept in the four-quadrant method, while systemic errors are related to deficiencies in the organization of care delivery."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "72"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q11",
+      "question_i18n": {
+        "uz": "Zamonaviy bioetikaning yo‘nalishlaridan biri bo‘lgan tashkiliy bioetika asosan nimani o‘rganadi?",
+        "ru": "Что в основном изучает организационная биоэтика — одно из направлений современной биоэтики?",
+        "en": "What does organizational bioethics, one of the branches of modern bioethics, mainly study?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Hayvonlarda tajriba o‘tkazishning xalqaro standartlarini ishlab chiqishni",
+          "Shifokorlar o‘rtasidagi korporativ munosabatlarning tarixiy shakllanishini",
+          "Yordam ko‘rsatishdagi tashkiliy shart-sharoitlarning sifatga ta’sirini va undan kelib chiqadigan axloqiy muammolarni",
+          "Tibbiy xizmatlar narxini bozor mexanizmlari orqali belgilash tartibini"
+        ],
+        "ru": [
+          "Разработку международных стандартов проведения экспериментов на животных",
+          "Историческое формирование корпоративных отношений между врачами",
+          "Влияние организационных условий оказания помощи на качество и вытекающие из этого этические проблемы",
+          "Порядок определения стоимости медицинских услуг через рыночные механизмы"
+        ],
+        "en": [
+          "Developing international standards for conducting experiments on animals",
+          "The historical formation of corporate relations among physicians",
+          "The impact of organizational conditions of care delivery on quality, and the ethical problems arising from it",
+          "The procedure for setting the prices of medical services through market mechanisms"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Tashkiliy bioetika tibbiy yordam ko‘rsatishdagi tizimli shart-sharoitlarni, ularning sifatga ta’sirini va klinik xavf hamda xavfsizlik bilan bog‘liq axloqiy muammolarni tahlil qiladi. Boshqa variantlar bu fanning predmetiga kirmaydi.",
+        "ru": "Организационная биоэтика анализирует системные условия оказания медицинской помощи, их влияние на качество, а также этические проблемы, связанные с клиническим риском и безопасностью. Остальные варианты не входят в предмет этой науки.",
+        "en": "Organizational bioethics analyzes the systemic conditions of medical care delivery, their impact on quality, and the ethical problems related to clinical risk and safety. The other options do not fall within the subject matter of this discipline."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "77"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q12",
+      "question_i18n": {
+        "uz": "Yevropa Kengashining 1997-yilda qabul qilingan biotibbiyot va inson huquqlari to‘g‘risidagi konventsiyasining 17-moddasi qaysi shaxslarning himoyasiga oid talablarni belgilaydi?",
+        "ru": "Статья 17 Конвенции Совета Европы о биомедицине и правах человека, принятой в 1997 году, устанавливает требования о защите каких лиц?",
+        "en": "Article 17 of the Council of Europe's 1997 Convention on Human Rights and Biomedicine sets out requirements for the protection of which persons?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tadqiqotda ishtirok etishga rozilik berish qobiliyatiga ega bo‘lmagan shaxslarni",
+          "Organ donorlari bo‘lgan shaxslarni",
+          "Genetik test o‘tkazayotgan shaxslarni",
+          "Rozilik berib, keyin uni qaytarib olgan shaxslarni"
+        ],
+        "ru": [
+          "Лиц, не способных дать согласие на участие в исследовании",
+          "Лиц, являющихся донорами органов",
+          "Лиц, проходящих генетическое тестирование",
+          "Лиц, давших согласие, а затем отозвавших его"
+        ],
+        "en": [
+          "Persons who are not able to consent to participation in research",
+          "Persons who are organ donors",
+          "Persons undergoing genetic testing",
+          "Persons who gave consent and then withdrew it"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "17-modda rozilik berishga qodir bo‘lmagan shaxslarning tadqiqotlarda ishtirokidagi himoyasiga bag‘ishlangan. 16-modda esa tadqiqot ishtirokchilari himoyasini, ularning ongli roziligini va uni istalgan vaqtda qaytarib olish huquqini ko‘zda tutadi.",
+        "ru": "Статья 17 посвящена защите лиц, не способных дать согласие, при их участии в исследованиях. Статья 16 же предусматривает защиту участников исследований, их осознанное согласие и право отозвать его в любое время.",
+        "en": "Article 17 is devoted to the protection of persons who are unable to consent when they participate in research. Article 16, in turn, provides for the protection of research participants, their informed consent, and their right to withdraw it at any time."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "147-148"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q13",
+      "question_i18n": {
+        "uz": "Bemor kompetent bo‘lsa-da, o‘zini shifokor ixtiyoriga topshiradi va uning ko‘rsatmalarini so‘zsiz bajaradi. T. Shash va M. Hollender (1956) bo‘yicha bu qaysi model?",
+        "ru": "Пациент, хотя и компетентен, вверяет себя воле врача и беспрекословно выполняет его указания. Какая это модель по Т. Сасу и М. Холлендеру (1956)?",
+        "en": "Although the patient is competent, he entrusts himself to the physician's discretion and follows the physician's instructions unconditionally. According to T. Szasz and M. Hollender (1956), which model is this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Faollik–passivlik modeli",
+          "Rahbarlik–kooperatsiya modeli",
+          "Hamkorlik modeli",
+          "Kollegial model"
+        ],
+        "ru": [
+          "Модель «активность–пассивность»",
+          "Модель «руководство–сотрудничество»",
+          "Модель партнёрства",
+          "Коллегиальная модель"
+        ],
+        "en": [
+          "Activity–passivity model",
+          "Guidance–cooperation model",
+          "Mutual participation model",
+          "Collegial model"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Rahbarlik–kooperatsiya modelida bemor qaror qobiliyatiga ega, lekin shifokor qarorini tan olib, ko‘rsatmalariga so‘zsiz amal qiladi. Faollik–passivlik modelida bemorning irodasi umuman hisobga olinmaydi, hamkorlik modelida esa bemor nisbatan mustaqil. Kollegial model esa Vitch tasnifiga tegishli.",
+        "ru": "В модели «руководство–сотрудничество» пациент способен принимать решения, но признаёт решение врача и беспрекословно следует его указаниям. В модели «активность–пассивность» воля пациента вообще не учитывается, а в модели партнёрства пациент относительно самостоятелен. Коллегиальная модель относится к классификации Витча.",
+        "en": "In the guidance–cooperation model, the patient is capable of making decisions but accepts the physician's decision and follows the instructions unconditionally. In the activity–passivity model, the patient's will is not taken into account at all, while in the mutual participation model the patient is relatively independent. The collegial model belongs to Veatch's classification."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "52"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q14",
+      "question_i18n": {
+        "uz": "Shifokor ma’lumot berish bilan birga, bemor yaxshi tushunishi uchun muolajalarning maqsadi, xavf omillari va ehtimoliy nohush oqibatlarini maslahatchi sifatida izohlab beradi. Emanuel va Emanuel (1992) bo‘yicha bu qaysi model?",
+        "ru": "Врач, наряду с предоставлением информации, выступая в роли консультанта, разъясняет цели процедур, факторы риска и возможные неблагоприятные последствия, чтобы пациент хорошо понял их. Какая это модель по Эмануэлу и Эмануэл (1992)?",
+        "en": "In addition to providing information, the physician acts as a counselor and explains the purpose of the procedures, the risk factors, and the possible adverse outcomes so that the patient understands them well. According to Emanuel and Emanuel (1992), which model is this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Paternalistik model",
+          "Ma’lumot berish modeli",
+          "Kengashish modeli",
+          "Talqin qilish modeli"
+        ],
+        "ru": [
+          "Патерналистская модель",
+          "Информативная модель",
+          "Совещательная модель",
+          "Интерпретационная модель"
+        ],
+        "en": [
+          "Paternalistic model",
+          "Informative model",
+          "Deliberative model",
+          "Interpretive model"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Talqin qilish modelida shifokor shunchaki ma’lumot bermaydi, balki uning ma’nosini maslahatchi sifatida tushuntiradi. Ma’lumot berish modelida vazifa faqat ma’lumot uzatish bilan cheklanadi. Kengashish modelida shifokor ustoz va do‘st sifatida bemor qadriyatlariga mos variantni tanlashga yordam beradi.",
+        "ru": "В интерпретационной модели врач не просто даёт информацию, а как консультант разъясняет её смысл. В информативной модели задача ограничивается лишь передачей информации. В совещательной модели врач как наставник и друг помогает выбрать вариант, соответствующий ценностям пациента.",
+        "en": "In the interpretive model, the physician does not merely provide information but explains its meaning as a counselor. In the informative model, the task is limited to transmitting information. In the deliberative model, the physician, as a teacher and friend, helps the patient choose the option that fits the patient's values."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "54"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q15",
+      "question_i18n": {
+        "uz": "Hamshira–bemor munosabatlarining qaysi modelida bemor o‘z maqsad va manfaatlarini mustaqil belgilaydi, hamshira esa uning huquqlariga rioya qilgan holda qabul qilingan qarorlarni amalga oshiradi?",
+        "ru": "В какой модели отношений медсестры и пациента пациент самостоятельно определяет свои цели и интересы, а медсестра осуществляет принятые решения, соблюдая его права?",
+        "en": "In which model of the nurse–patient relationship does the patient independently determine his own goals and interests, while the nurse carries out the decisions made, respecting the patient's rights?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Kontrakt klinik model",
+          "Texnik model",
+          "Ona o‘rnini bosuvchi hamshira modeli",
+          "Kengashish modeli"
+        ],
+        "ru": [
+          "Контрактная клиническая модель",
+          "Техническая модель",
+          "Модель медсестры, заменяющей мать",
+          "Совещательная модель"
+        ],
+        "en": [
+          "Contractual clinical model",
+          "Technical model",
+          "Surrogate mother nurse model",
+          "Deliberative model"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Kontrakt klinik modelda qaror bemorda, hamshira esa uni bajaruvchi. Texnik modelda hamshira faqat belgilangan muolajalarni texnik bajaradi. Ona o‘rnini bosuvchi modelda hamshira bemor hayoti va sog‘lig‘i uchun to‘liq javobgar bo‘ladi.",
+        "ru": "В контрактной клинической модели решение принадлежит пациенту, а медсестра является его исполнителем. В технической модели медсестра лишь технически выполняет назначенные процедуры. В модели, заменяющей мать, медсестра несёт полную ответственность за жизнь и здоровье пациента.",
+        "en": "In the contractual clinical model, the decision rests with the patient, and the nurse is the one who carries it out. In the technical model, the nurse only technically performs the prescribed procedures. In the surrogate model, the nurse is fully responsible for the patient's life and health."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "55"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q16",
+      "question_i18n": {
+        "uz": "Shifokor muolajani ezgu niyat bilan o‘tkazmoqda, harakat mohiyatan axloqan maqbul, salbiy effekt maqsad ham, vosita ham emas. Biroq kutilgan ijobiy natija kichik, kutilayotgan zarar esa undan ancha og‘ir. Qo‘sh effekt prinsipining qaysi talabi buzilgan?",
+        "ru": "Врач проводит процедуру с благим намерением, действие по сути морально допустимо, отрицательный эффект не является ни целью, ни средством. Однако ожидаемый положительный результат невелик, а ожидаемый вред значительно тяжелее. Какое требование принципа двойного эффекта нарушено?",
+        "en": "A physician is performing a procedure with good intentions; the act is morally acceptable in its nature, and the negative effect is neither the goal nor the means. However, the expected positive outcome is small, while the expected harm is much more severe. Which requirement of the principle of double effect has been violated?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Harakat mohiyatining axloqiy maqbulligi",
+          "Harakat subyektining ezgu niyati",
+          "Ijobiy va salbiy effektlarning mutanosibligi",
+          "Vosita bilan oqibat natijani farqlash"
+        ],
+        "ru": [
+          "Моральная допустимость сути действия",
+          "Благое намерение субъекта действия",
+          "Соразмерность положительного и отрицательного эффектов",
+          "Различение средства и следствия"
+        ],
+        "en": [
+          "The moral acceptability of the nature of the act",
+          "The good intention of the agent",
+          "The proportionality of the positive and negative effects",
+          "Distinguishing the means from the consequence"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Stemda mohiyat, niyat va vosita bilan oqibatning farqi saqlangan. Buzilgan narsa mutanosiblik: maqsad qilingan ijobiy natija salbiy oqibatdan ancha salmoqli bo‘lishi kerak. Qolgan uch talab shartda bajarilgan.",
+        "ru": "В условии сохранены суть действия, намерение и различие между средством и следствием. Нарушена соразмерность: преследуемый положительный результат должен быть значительно весомее отрицательного последствия. Остальные три требования в условии выполнены.",
+        "en": "In the scenario, the nature of the act, the intention, and the distinction between the means and the consequence are preserved. What is violated is proportionality: the intended positive outcome must be considerably weightier than the negative consequence. The other three requirements are met in the scenario."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "75-76"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q17",
+      "question_i18n": {
+        "uz": "Tibbiy muassasada mablag‘ni tejash maqsadida diagnostik tekshiruvlar hajmi qisqartirildi, davolash choralari esa norasional bo‘lib qoldi. Britaniya tibbiyot assotsiatsiyasi tavsiya etgan yo‘nalishlardan bo‘yicha bu qaysi xavf?",
+        "ru": "В медицинском учреждении с целью экономии средств сократили объём диагностических обследований, а лечебные меры стали нерациональными. Какой это риск согласно направлениям, рекомендованным Британской медицинской ассоциацией?",
+        "en": "In a medical institution, the scope of diagnostic examinations was reduced in order to save funds, and treatment measures became irrational. According to the categories recommended by the British Medical Association, which risk is this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tibbiy xizmatga ajratilgan mablag‘ni tejash bilan bog‘liq xavf",
+          "Tizimli xato-kamchiliklar natijasidagi xavf",
+          "Klinik muolaja xususiyatidan kelib chiqadigan, bartaraf etib bo‘lmaydigan xavf",
+          "Bemor tomonidan xavfning noto‘g‘ri qabul qilinishi bilan bog‘liq xavf"
+        ],
+        "ru": [
+          "Риск, связанный с экономией средств, выделенных на медицинскую помощь",
+          "Риск вследствие системных ошибок и недостатков",
+          "Неустранимый риск, вытекающий из особенностей клинической процедуры",
+          "Риск, связанный с неверным восприятием риска пациентом"
+        ],
+        "en": [
+          "Risk associated with saving funds allocated to medical services",
+          "Risk resulting from systemic errors and deficiencies",
+          "Risk arising from the nature of the clinical procedure that cannot be eliminated",
+          "Risk associated with the patient's misperception of risk"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Stemda tekshiruvlar hajmi va davolashning cheklanishi aynan mablag‘ tejash oqibati sifatida ko‘rsatilgan. Tizimli xato muassasa faoliyatini tashkil etishdagi muammolardan kelib chiqadi. Bartaraf etib bo‘lmaydigan xavf muolajaning mohiyatiga bog‘liq, bemor tomonidan qabul qilish esa uning haddan tashqari umidlariga oid.",
+        "ru": "В условии ограничение объёма обследований и лечения указано именно как следствие экономии средств. Системная ошибка возникает из-за проблем в организации деятельности учреждения. Неустранимый риск зависит от сути процедуры, а восприятие со стороны пациента связано с его чрезмерными ожиданиями.",
+        "en": "In the scenario, the restriction of the scope of examinations and treatment is presented precisely as a consequence of saving funds. Systemic error arises from problems in how the institution's work is organized. An irreducible risk depends on the nature of the procedure itself, while the patient's perception relates to the patient's excessive expectations."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "78"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q18",
+      "question_i18n": {
+        "uz": "Tadqiqotchi odam ishtirokida yangi tibbiy tadqiqotni boshlamoqchi. Jahon tibbiyot assotsiatsiyasining Xelsinki deklaratsiyasiga ko‘ra tadqiqot loyihasi bilan qanday tartibda ish yuritilishi kerak?",
+        "ru": "Исследователь намерен начать новое медицинское исследование с участием человека. В каком порядке, согласно Хельсинкской декларации Всемирной медицинской ассоциации, следует работать с проектом исследования?",
+        "en": "A researcher intends to begin a new medical study involving human participants. According to the World Medical Association's Declaration of Helsinki, how should the research project be handled?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Loyiha faqat tadqiqot tugagach etika qo‘mitasiga taqdim etiladi",
+          "Loyihani tadqiqot rahbari o‘zi maqullaydi, qo‘mita nazorat qilmaydi",
+          "Ishtirokchilar roziligi olingan bo‘lsa, qo‘mita ko‘rib chiqishi shart emas",
+          "Loyiha oldindan etika qo‘mitasida ko‘rilib maqullanadi, jarayon ham nazorat qilinadi"
+        ],
+        "ru": [
+          "Проект представляется в этический комитет только после завершения исследования",
+          "Проект утверждает сам руководитель исследования, комитет не осуществляет контроль",
+          "Если получено согласие участников, рассмотрение комитетом не обязательно",
+          "Проект предварительно рассматривается и одобряется этическим комитетом, процесс исследования также контролируется"
+        ],
+        "en": [
+          "The project is submitted to the ethics committee only after the study is completed",
+          "The project is approved by the principal investigator himself, and the committee does not oversee it",
+          "If the participants' consent has been obtained, committee review is not required",
+          "The project is reviewed and approved by the ethics committee in advance, and the process is also monitored"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Deklaratsiyaga ko‘ra loyiha tadqiqotdan oldin etika qo‘mitasi tomonidan ko‘rib chiqilib maqullanishi, tadqiqot jarayoni esa qo‘mita nazoratida bo‘lishi zarur. Ishtirokchi roziligi qo‘mita ekspertizasini bekor qilmaydi, tadqiqotchining o‘zi maqullashi yoki keyin taqdim etishi esa talabga zid.",
+        "ru": "Согласно Декларации, проект должен быть рассмотрен и одобрен этическим комитетом до начала исследования, а ход исследования должен находиться под контролем комитета. Согласие участников не отменяет экспертизу комитета, а самостоятельное одобрение исследователем или представление проекта впоследствии противоречит требованию.",
+        "en": "According to the Declaration, the project must be reviewed and approved by the ethics committee before the study, and the conduct of the study must be under the committee's oversight. Participant consent does not replace committee review, and approval by the researcher himself or submission afterward contradicts the requirement."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "145"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q19",
+      "question_i18n": {
+        "uz": "Avtohalokatdan so‘ng hushsiz holda shoshilinch bo‘limga keltirilgan bemorga zudlik bilan tibbiy aralashuv kerak. Qonuniy vakil yo‘q, bemor o‘z irodasini bildira olmaydi. Uning hujjatlari orasidan avval yozib qo‘yilgan shaxsiy bayonot topildi: unda u aynan shunga o‘xshash vaziyatda bunday aralashuvga rozi bo‘lmasligini aniq ko‘rsatgan. Amsterdam deklaratsiyasiga ko‘ra shifokor qanday yo‘l tutishi lozim?",
+        "ru": "После автокатастрофы пациент в бессознательном состоянии доставлен в отделение неотложной помощи, ему требуется срочное медицинское вмешательство. Законного представителя нет, пациент не может выразить свою волю. Среди его документов найдено ранее составленное личное заявление: в нём он чётко указал, что в точно такой же ситуации не согласился бы на такое вмешательство. Как должен поступить врач согласно Амстердамской декларации?",
+        "en": "A patient who was brought unconscious to the emergency department after a car accident urgently needs medical intervention. There is no legal representative, and the patient cannot express his will. Among his documents, a previously written personal statement was found, in which he clearly stated that in exactly such a situation he would not consent to such an intervention. According to the Declaration of Amsterdam, how should the physician proceed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Vaziyat shoshilinch bo‘lgani uchun rozilik taxmin qilinadi va aralashuv baribir o‘tkaziladi",
+          "Rozilik taxmin qilinmaydi, chunki bemor ilgari shunga o‘xshash vaziyatda rozi bo‘lmasligini bildirgan",
+          "Aralashuvdan oldin albatta sud qarori kutiladi, hayot xavf ostida bo‘lsa ham",
+          "Qaror shifokorlar konsiliumiga topshiriladi va ko‘pchilik ovoz bilan hal qilinadi"
+        ],
+        "ru": [
+          "Так как ситуация неотложная, согласие предполагается, и вмешательство всё равно проводится",
+          "Согласие не предполагается, поскольку пациент ранее заявил, что в подобной ситуации не дал бы согласия",
+          "Перед вмешательством обязательно ожидается решение суда, даже если жизнь находится под угрозой",
+          "Решение передаётся консилиуму врачей и принимается большинством голосов"
+        ],
+        "en": [
+          "Because the situation is urgent, consent is presumed and the intervention is performed anyway",
+          "Consent is not presumed, because the patient previously stated that he would not consent in a similar situation",
+          "A court decision must certainly be awaited before the intervention, even if life is at risk",
+          "The decision is handed over to a medical consilium and decided by majority vote"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Deklaratsiyada bemor o‘z irodasini bildira olmasa va aralashuv shoshilinch bo‘lsa, rozilik taxmin qilinadi. Istisno: bemor ilgari shunga o‘xshash holatda rozi bo‘lmasligini aytgan bo‘lsa. Shuning uchun birinchi variant xato. Sud qarori yoki konsilium bunday tartibning mazmuniga mos kelmaydi.",
+        "ru": "Согласно Декларации, если пациент не может выразить свою волю, а вмешательство неотложно, согласие предполагается. Исключение: если пациент ранее заявил, что в подобной ситуации не дал бы согласия. Поэтому первый вариант неверен. Решение суда или консилиум не соответствуют содержанию такого порядка.",
+        "en": "Under the Declaration, if the patient cannot express his will and the intervention is urgent, consent is presumed. The exception is when the patient has previously stated that he would not consent in a similar situation. Therefore, the first option is wrong. A court decision or a consilium does not correspond to the substance of this procedure."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "311"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q20",
+      "question_i18n": {
+        "uz": "Biotibbiyot ustaxonasida quyidagi takliflar muhokama qilindi. Yevropa Kengashining inson huquqlari va biotibbiyot to‘g‘risidagi konventsiyasida keltirilgan qoidalarga ko‘ra qaysi harakat joiz?",
+        "ru": "На семинаре по биомедицине обсуждались следующие предложения. Какое действие допустимо согласно положениям Конвенции Совета Европы о правах человека и биомедицине?",
+        "en": "The following proposals were discussed at a biomedicine workshop. According to the provisions of the Council of Europe's Convention on Human Rights and Biomedicine, which action is permissible?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ilmiy tadqiqot maqsadida inson embrionlarini maxsus yaratish",
+          "Sog‘lom bolaning qobiliyatlarini oshirish uchun uning genomiga aralashish",
+          "Tirik donorning buyragini bemorga haq evaziga sotish sharti bilan olish",
+          "Tirik donordan organni faqat uning roziligi bilan va faqat qabul qiluvchini davolash uchun olish"
+        ],
+        "ru": [
+          "Специальное создание эмбрионов человека в целях научного исследования",
+          "Вмешательство в геном здорового ребёнка для повышения его способностей",
+          "Получение почки у живого донора при условии продажи её пациенту за плату",
+          "Получение органа у живого донора только с его согласия и только для лечения реципиента"
+        ],
+        "en": [
+          "Specially creating human embryos for scientific research purposes",
+          "Intervening in a healthy child's genome to enhance his abilities",
+          "Obtaining a living donor's kidney on the condition that it is sold to the patient for payment",
+          "Removing an organ from a living donor only with the donor's consent and only for the treatment of the recipient"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Konventsiyaga ko‘ra tirik donordan organ faqat uning roziligi bilan va faqat qabul qiluvchini davolash maqsadida olinadi. Tadqiqot uchun embrion yaratish taqiqlangan. Genomga aralashuv faqat profilaktik, terapevtik yoki diagnostik maqsadda mumkin. Inson tanasi va uning qismlari moliyaviy daromad manbai bo‘lmasligi kerak.",
+        "ru": "Согласно Конвенции, орган у живого донора берётся только с его согласия и только с целью лечения реципиента. Создание эмбрионов для исследований запрещено. Вмешательство в геном возможно только в профилактических, терапевтических или диагностических целях. Тело человека и его части не должны быть источником финансовой выгоды.",
+        "en": "According to the Convention, an organ may be removed from a living donor only with the donor's consent and only for the purpose of treating the recipient. Creating embryos for research is prohibited. Intervention in the genome is possible only for preventive, therapeutic, or diagnostic purposes. The human body and its parts must not be a source of financial gain."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "82"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q21",
+      "question_i18n": {
+        "uz": "Tibbiyot universitetining fiziologiya laboratoriyasi hayvonlar ustidagi tajribalarni Rassell va Berchning «3 R» qoidasiga moslashtirmoqda. Quyidagi o‘zgarishlardan qaysi biri aynan Refinement (yaxshilash) talabiga mos keladi?",
+        "ru": "Физиологическая лаборатория медицинского университета приводит эксперименты на животных в соответствие с правилом «3 R» Рассела и Берча. Какое из следующих изменений соответствует именно требованию Refinement (улучшение)?",
+        "en": "The physiology laboratory of a medical university is adapting its animal experiments to Russell and Burch's \"3 Rs\" principle. Which of the following changes corresponds specifically to the Refinement requirement?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Og‘riq va stressni kamaytirish uchun anestetik qo‘llash, kam travmatik asboblar tanlash va hayvonlarni saqlash sharoitini yaxshilash",
+          "Ilmiy ma’lumot sifati pasaymasligini ta’minlagan holda tajribadagi hayvonlar sonini kamaytirish",
+          "Hayvonlar o‘rniga kompyuter dasturlari va virtual modellardan foydalanish",
+          "Tajriba protokolini qayta mustaqil ekspertizaga yuborish va natijalarni nashr etish"
+        ],
+        "ru": [
+          "Применение анестетика для уменьшения боли и стресса, выбор менее травматичных инструментов и улучшение условий содержания животных",
+          "Уменьшение числа животных в эксперименте при условии, что качество научных данных не снижается",
+          "Использование вместо животных компьютерных программ и виртуальных моделей",
+          "Повторное направление протокола эксперимента на независимую экспертизу и публикация результатов"
+        ],
+        "en": [
+          "Using an anesthetic to reduce pain and stress, choosing less traumatic instruments, and improving the housing conditions of the animals",
+          "Reducing the number of animals used in the experiment while ensuring that the quality of scientific data does not decline",
+          "Using computer programs and virtual models instead of animals",
+          "Resubmitting the experimental protocol for independent expert review and publishing the results"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Refinement tajriba usulini takomillashtirish va hayvonlarga salbiy ta’sirni (og‘riq, stress) kamaytirishni anglatadi. Ikkinchi variant Reduction, uchinchisi Replacement talabi. To‘rtinchisi 3 R ning tarkibiga kirmaydi.",
+        "ru": "Refinement означает совершенствование методики эксперимента и уменьшение негативного воздействия на животных (боль, стресс). Второй вариант соответствует требованию Reduction, третий — Replacement. Четвёртый не входит в состав 3 R.",
+        "en": "Refinement means improving the experimental method and reducing the adverse effects on animals (pain, stress). The second option is Reduction, and the third is the Replacement requirement. The fourth is not part of the 3 Rs."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "149"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q22",
+      "question_i18n": {
+        "uz": "Jarroh rejali operatsiyadan oldin bemorga jiddiy jarohat yetkazish ehtimoli kichik, ammo yaxshi ma’lum xavf borligini aytmaslikka qaror qildi, chunki ehtimol past. Chester v Afshar (2004) ishida Lord Bingham bayon etgan fikrga ko‘ra bu qaror qanday baholanadi?",
+        "ru": "Хирург перед плановой операцией решил не сообщать пациенту о небольшой вероятности серьёзной травмы, но хорошо известном риске, поскольку вероятность низкая. Как оценивается это решение согласно мнению лорда Бингема в деле Chester v Afshar (2004)?",
+        "en": "Before an elective operation, a surgeon decided not to tell the patient about a well-known risk of serious injury that has a small probability, because the likelihood is low. According to the view expressed by Lord Bingham in Chester v Afshar (2004), how is this decision assessed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Xavf kichik bo‘lgani uchun ogohlantirmaslik asosli, chunki ogohlantirish bemorni keraksiz qo‘rqitadi",
+          "Xavfni faqat bemor o‘zi so‘ragandagina aytish yetarli hisoblanadi",
+          "Jarroh ogohlantirishi shart, chunki bemor kichik, ammo aniq xavf haqida xabardor bo‘lish huquqiga ega",
+          "Ogohlantirish faqat xavf ehtimoli yuqori bo‘lgandagina talab qilinadi"
+        ],
+        "ru": [
+          "Отказ от предупреждения обоснован, поскольку риск мал, а предупреждение излишне напугает пациента",
+          "Достаточно сообщить о риске только тогда, когда пациент сам об этом спросит",
+          "Хирург обязан предупредить, поскольку пациент имеет право знать о небольшом, но определённом риске",
+          "Предупреждение требуется только при высокой вероятности риска"
+        ],
+        "en": [
+          "Not warning is justified because the risk is small, as a warning would needlessly frighten the patient",
+          "It is sufficient to disclose the risk only if the patient asks about it",
+          "The surgeon must warn, because the patient has the right to be informed of a small but definite risk",
+          "A warning is required only when the probability of the risk is high"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Bingham fikricha, jarroh bemorni jiddiy xavflar haqida ogohlantirishi shart. Faqat juda istisno holatlarda bundan ozod bo‘lish mumkin. Zamonaviy huquqda tibbiy paternalizm hukmron emas. Xavf kichik, ammo yaxshi ma’lum bo‘lsa ham, bemor bu haqda xabardor bo‘lish huquqiga ega.",
+        "ru": "По мнению Бингема, хирург обязан предупредить пациента о серьёзных рисках. Освобождение от этой обязанности возможно лишь в очень исключительных случаях. В современном праве медицинский патернализм не является преобладающим. Даже если риск мал, но хорошо известен, пациент имеет право быть об этом осведомлён.",
+        "en": "In Bingham's view, the surgeon must warn the patient of serious risks. Exemption from this is possible only in very exceptional circumstances. In modern law, medical paternalism is not dominant. Even if the risk is small but well known, the patient has the right to be informed of it."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "20"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q23",
+      "question_i18n": {
+        "uz": "Yangi dori vositasining klinik sinovida ishtirok etayotgan ko‘ngilli bemorda g‘ayritabiiy reaktsiya rivojlandi va bu uning sog‘lig‘iga tahdid solmoqda. O‘zbekiston Respublikasining dori vositalari to‘g‘risidagi qonuni bo‘yicha klinik tadqiqot rahbari nima qilishi shart?",
+        "ru": "У пациента-добровольца, участвующего в клиническом испытании нового лекарственного средства, развилась необычная реакция, угрожающая его здоровью. Что обязан сделать руководитель клинического исследования согласно закону Республики Узбекистан о лекарственных средствах?",
+        "en": "A volunteer patient participating in a clinical trial of a new medicinal product developed an abnormal reaction that threatens their health. According to the law of the Republic of Uzbekistan on medicinal products, what must the head of the clinical study do?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Sinovni davom ettiradi, dozani kamaytiradi va holatni yakuniy hisobotda qayd etadi",
+          "Sinovni to‘xtatib turadi va bu haqda Sog‘liqni saqlash vazirligiga xabar beradi",
+          "Faqat dori vositasini taqdim etgan homiy tashkilotga xabar beradi va ko‘rsatma kutadi",
+          "Sinov tugagunicha kutadi, so‘ng sug‘urta tashkilotiga murojaat qiladi"
+        ],
+        "ru": [
+          "Продолжит испытание, снизит дозу и отразит ситуацию в итоговом отчёте",
+          "Приостановит испытание и сообщит об этом в Министерство здравоохранения",
+          "Сообщит только организации-спонсору, предоставившей лекарственное средство, и будет ждать указаний",
+          "Дождётся окончания испытания, затем обратится в страховую организацию"
+        ],
+        "en": [
+          "Continue the trial, reduce the dose, and record the situation in the final report",
+          "Suspend the trial and notify the Ministry of Health",
+          "Notify only the sponsor organization that supplied the medicinal product and wait for instructions",
+          "Wait until the end of the trial, then contact the insurance company"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Sinovda ko‘ngilli bemor sog‘lig‘iga yoki hayotiga tahdid soluvchi g‘ayritabiiy reaktsiya yuz bersa, rahbar sinovni to‘xtatishi va vazirlikka xabar berishi shart. Davom ettirish, faqat homiyga xabar berish yoki kutish bu talabga zid.",
+        "ru": "Если во время испытания у пациента-добровольца возникает необычная реакция, угрожающая его здоровью или жизни, руководитель обязан приостановить испытание и сообщить в министерство. Продолжение испытания, уведомление только спонсора или ожидание противоречат этому требованию.",
+        "en": "If a volunteer patient in a trial experiences an abnormal reaction that threatens their health or life, the head must suspend the trial and notify the ministry. Continuing, notifying only the sponsor, or waiting contradicts this requirement."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "82"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q24",
+      "question_i18n": {
+        "uz": "Kompetent voyaga yetgan ayol shifokorga oilaviy zo‘ravonlik qurboni ekanini aytdi. Boshqa odamlar, jumladan bolalar xavf ostida emas. Shifokor politsiyaga xabar berish uning manfaatiga bo‘lishini o‘ylaydi, ammo bemor oshkor qilishga rozilik bermayapti. Shifokor qanday yo‘l tutishi kerak?",
+        "ru": "Компетентная взрослая женщина сообщила врачу, что является жертвой домашнего насилия. Другие люди, включая детей, не подвергаются опасности. Врач считает, что сообщение в полицию было бы в её интересах, но пациентка не даёт согласия на раскрытие информации. Как должен поступить врач?",
+        "en": "A competent adult woman told a doctor that she is a victim of domestic violence. Other people, including children, are not at risk. The doctor thinks that reporting to the police would be in her interest, but the patient does not consent to disclosure. How should the doctor proceed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Rad etishini hurmat qiladi va nima uchun oshkor qilish uning manfaatiga bo‘lishi mumkinligini to‘liq tushuntiradi",
+          "Zo‘ravonlik og‘ir jinoyat bo‘lgani uchun darhol politsiyaga xabar beradi",
+          "Ma’lumotni uning yaqinlariga va ish beruvchisiga aytadi, ular himoya qilishi uchun",
+          "Sir saqlash majburiyati mutlaq deb hisoblab, sababini bemorga tushuntirmaydi"
+        ],
+        "ru": [
+          "Уважает её отказ и полностью объясняет, почему раскрытие информации может отвечать её интересам",
+          "Поскольку насилие является тяжким преступлением, немедленно сообщает в полицию",
+          "Сообщает информацию её близким и работодателю, чтобы они её защитили",
+          "Считая обязанность соблюдения тайны абсолютной, не объясняет пациентке причину"
+        ],
+        "en": [
+          "Respects her refusal and fully explains why disclosure might be in her interest",
+          "Immediately reports to the police because violence is a serious crime",
+          "Tells her relatives and employer so that they can protect her",
+          "Considers the duty of confidentiality absolute and does not explain the reasons to the patient"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Sir saqlash asosiy, ammo mutlaq bo‘lmagan burch. Kompetent bemorning oshkor qilishga rad javobi hurmat qilinadi, faqat unga sabablar tushuntiriladi. Roziliksiz oshkor qilish asosan boshqalar jiddiy xavf ostida bo‘lsa oqlanadi. Bu yerda bunday xavf yo‘q.",
+        "ru": "Соблюдение тайны — основная, но не абсолютная обязанность. Отказ компетентной пациентки от раскрытия информации уважается, ей лишь разъясняются причины. Раскрытие без согласия оправдано главным образом тогда, когда другие люди подвергаются серьёзной опасности. Здесь такой опасности нет.",
+        "en": "Confidentiality is a fundamental but not absolute duty. A competent patient's refusal to permit disclosure is respected, and only the reasons are explained to her. Disclosure without consent is mainly justified when others are at serious risk. There is no such risk here."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "19"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q25",
+      "question_i18n": {
+        "uz": "Buyuk Britaniyada Bosh tibbiy kengash (General Medical Council, GMC) shifokorga qarshi shikoyatni tekshirayotgan paytda Vaqtinchalik buyruqlar hay’ati (Interim Orders Panel) shifokorning ro‘yxatdan o‘tishini 18 oy muddatga to‘xtatib qo‘ydi. Buyruq kuchga kirgandan keyin u eng kechi bilan qancha muddat ichida birinchi marta qayta ko‘rib chiqilishi shart?",
+        "ru": "В Великобритании во время рассмотрения Генеральным медицинским советом (General Medical Council, GMC) жалобы на врача Комиссия по временным распоряжениям (Interim Orders Panel) приостановила регистрацию врача на срок 18 месяцев. В течение какого максимального срока после вступления распоряжения в силу оно должно быть впервые пересмотрено?",
+        "en": "In the United Kingdom, while the General Medical Council (GMC) was investigating a complaint against a doctor, the Interim Orders Panel suspended the doctor's registration for 18 months. After the order takes effect, within what period at the latest must it first be reviewed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "3 oy ichida",
+          "12 oy ichida",
+          "6 oy ichida",
+          "muddat tugagach, ya’ni 18 oydan keyin"
+        ],
+        "ru": [
+          "в течение 3 месяцев",
+          "в течение 12 месяцев",
+          "в течение 6 месяцев",
+          "по истечении срока, то есть через 18 месяцев"
+        ],
+        "en": [
+          "Within 3 months",
+          "Within 12 months",
+          "Within 6 months",
+          "After the term expires, i.e. after 18 months"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Hay’at buyrug‘i eng ko‘pi bilan 18 oyga chiqariladi. Biroq u berilgan kundan boshlab 6 oy ichida, keyin esa 6 oydan oshmaydigan oraliqlarda qayta ko‘rib chiqiladi. Boshqa variantlar ko‘rib chiqish muddatini noto‘g‘ri uzaytiradi yoki qisqartiradi.",
+        "ru": "Распоряжение комиссии выносится максимум на 18 месяцев. Однако оно пересматривается в течение 6 месяцев со дня вынесения, а затем с интервалами не более 6 месяцев. Остальные варианты неверно удлиняют или сокращают срок пересмотра.",
+        "en": "A panel order is issued for a maximum of 18 months. However, it is reviewed within 6 months of the date it was imposed, and then at intervals not exceeding 6 months. The other options incorrectly lengthen or shorten the review period."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "22"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q26",
+      "question_i18n": {
+        "uz": "Kompetent bemor shifokordan o‘ziga bir dori yozib berishni qat’iy talab qilmoqda. Shifokor esa bu davo bemorga umuman foyda keltirmaydi, deb hisoblaydi. Simpson darsligidagi rozilik bosqichlariga ko‘ra shifokor qanday yo‘l tutishi kerak?",
+        "ru": "Компетентный пациент настойчиво требует от врача назначить ему определённое лекарство. Врач же считает, что это лечение не принесёт пациенту никакой пользы. Как, согласно этапам получения согласия по учебнику Симпсона, должен поступить врач?",
+        "en": "A competent patient firmly demands that the doctor prescribe a certain medication. The doctor, however, believes that this treatment will not benefit the patient at all. According to the stages of consent in Simpson's textbook, how should the doctor proceed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bu davoni berishga majbur emas, lekin sabablarini bemorga tushuntirishi shart",
+          "Bemor qaror qabul qiluvchi bo‘lgani uchun davoni so‘zsiz yozib berishi shart",
+          "Davoni sababsiz rad etishi mumkin, tushuntirish majburiy emas",
+          "Avval bemorning qarindoshlaridan rozilik olib, keyin davoni berishi kerak"
+        ],
+        "ru": [
+          "Он не обязан назначать это лечение, но обязан объяснить пациенту причины",
+          "Поскольку решение принимает пациент, врач обязан безоговорочно назначить лечение",
+          "Он может отказать в лечении без объяснения причин, объяснение необязательно",
+          "Он должен сначала получить согласие родственников пациента, а затем назначить лечение"
+        ],
+        "en": [
+          "Is not obliged to provide this treatment, but must explain the reasons to the patient",
+          "Because the patient is the decision-maker, must prescribe the treatment unconditionally",
+          "May refuse the treatment without giving a reason; explanation is not mandatory",
+          "Must first obtain consent from the patient's relatives, and then provide the treatment"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Qaror bemorniki, ammo shifokor umumiy foydasi yo‘q deb hisoblagan davoni berishga majbur emas. Shu bilan birga rad etish sabablarini bemorga tushuntirishi shart. Shuning uchun so‘zsiz bajarish ham, tushuntirmasdan rad etish ham xato.",
+        "ru": "Решение принадлежит пациенту, однако врач не обязан назначать лечение, которое, по его мнению, не приносит общей пользы. Вместе с тем он обязан объяснить пациенту причины отказа. Поэтому ошибочны и безоговорочное выполнение, и отказ без объяснения.",
+        "en": "The decision belongs to the patient, but the doctor is not obliged to provide a treatment that they believe has no overall benefit. At the same time, they must explain the reasons for refusal to the patient. Therefore, both unconditional compliance and refusal without explanation are wrong."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "20"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q27",
+      "question_i18n": {
+        "uz": "Shifokor ko‘krak bezlarini intim ko‘rikdan o‘tkazishdan oldin bemorga hamroh (chaperone) taklif qildi, bemor esa uni rad etdi. Keyinchalik harakatlarini asoslay olishi uchun shifokor qaysi qadamni bajarishi kerak?",
+        "ru": "Перед интимным осмотром молочных желёз врач предложил пациентке сопровождающее лицо (chaperone), а пациентка отказалась. Какой шаг должен выполнить врач, чтобы впоследствии иметь возможность обосновать свои действия?",
+        "en": "Before an intimate breast examination, a doctor offered the patient a chaperone, and the patient declined. Which step should the doctor take so as to be able to justify their actions later?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bemorning qarindoshini hamroh sifatida majburan chaqirishi",
+          "Hamrohsiz ko‘rikdan bosh tortib, bemorni boshqa shifokorga yuborishi",
+          "Hech narsa yozmasligi, chunki bu bemorning shaxsiy qarori",
+          "Taklif qilingani va rad etilganini tibbiy yozuvda qayd etishi"
+        ],
+        "ru": [
+          "Принудительно вызвать родственника пациентки в качестве сопровождающего",
+          "Отказаться от осмотра без сопровождающего и направить пациентку к другому врачу",
+          "Ничего не записывать, так как это личное решение пациентки",
+          "Зафиксировать в медицинской документации, что сопровождающее лицо было предложено и пациентка отказалась"
+        ],
+        "en": [
+          "Forcibly summoning the patient's relative as a chaperone",
+          "Refusing to examine without a chaperone and referring the patient to another doctor",
+          "Recording nothing, since this is the patient's personal decision",
+          "Recording in the medical record that a chaperone was offered and declined"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Bemor hamroh istamasa, shifokor taklif qilinganini va rad etilganini yozib qo‘yishi kerak. Yozuv keyinchalik harakatni asoslash imkonini beradi. Qarindoshni majburan chaqirish yoki ko‘rikni rad etish talab qilinmaydi, yozuvsiz qoldirish esa xavfli.",
+        "ru": "Если пациентка не желает сопровождающего, врач должен записать, что оно было предложено и что пациентка отказалась. Запись впоследствии позволяет обосновать действия. Принудительный вызов родственника или отказ от осмотра не требуются, а оставлять без записи опасно.",
+        "en": "If the patient does not want a chaperone, the doctor should record that one was offered and declined. The record later makes it possible to justify the action. Forcibly summoning a relative or refusing the examination is not required, and leaving it unrecorded is risky."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "16"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q28",
+      "question_i18n": {
+        "uz": "Shoshilinch bo‘lmagan holatda voyaga yetmagan bemorning qonuniy vakili kerakli tibbiy aralashuvga rozilik bermayapti. Shifokor esa aralashuv bemor manfaatiga mos, deb hisoblaydi. Evropada bemor huquqlarini ta’minlash siyosati deklaratsiyasiga (Amsterdam deklaratsiyasi) ko‘ra qaror kim tomonidan qabul qilinishi kerak?",
+        "ru": "В нессрочной (неэкстренной) ситуации законный представитель несовершеннолетнего пациента не даёт согласия на необходимое медицинское вмешательство. Врач же считает, что вмешательство соответствует интересам пациента. Кем, согласно Декларации о политике обеспечения прав пациентов в Европе (Амстердамская декларация), должно быть принято решение?",
+        "en": "In a non-emergency situation, the legal representative of a minor patient does not consent to a necessary medical intervention. The doctor, however, believes that the intervention is in the patient's best interests. According to the Declaration on the Promotion of Patients' Rights in Europe (Amsterdam Declaration), by whom should the decision be made?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Shifokor mustaqil ravishda, vakilni ogohlantirib, aralashuvni o‘tkazadi",
+          "Sud yoki boshqa hakamlik instansiyasi qaror qiladi",
+          "Davolash muassasasining boshlig‘i yakka o‘zi qaror qiladi",
+          "Bemor voyaga yetguncha aralashuv kechiktiriladi"
+        ],
+        "ru": [
+          "Врач самостоятельно, предупредив представителя, проводит вмешательство",
+          "Решение принимает суд или другая арбитражная инстанция",
+          "Руководитель лечебного учреждения единолично принимает решение",
+          "Вмешательство откладывается до достижения пациентом совершеннолетия"
+        ],
+        "en": [
+          "The doctor independently carries out the intervention, after warning the representative",
+          "A court or other arbitration body decides",
+          "The head of the medical institution decides alone",
+          "The intervention is postponed until the patient comes of age"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Vakil rozilik bermasa-yu, shifokor aralashuv bemor manfaatiga mos deb hisoblasa, qaror sud yoki boshqa hakamlik instansiyasiga topshiriladi. Vakilning roziligisiz harakat qilish faqat vaziyat shoshilinch bo‘lib, uni kutishning iloji bo‘lmaganda mumkin.",
+        "ru": "Если представитель не даёт согласия, а врач считает вмешательство соответствующим интересам пациента, решение передаётся в суд или другую арбитражную инстанцию. Действовать без согласия представителя можно лишь тогда, когда ситуация экстренная и ожидание невозможно.",
+        "en": "If the representative does not consent but the doctor believes the intervention is in the patient's best interests, the decision is referred to a court or other arbitration body. Acting without the representative's consent is possible only when the situation is urgent and waiting for it is not possible."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "311"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q29",
+      "question_i18n": {
+        "uz": "Bemor o‘z kasallik tarixidan nusxa so‘radi. Hujjat ichida uning qarindoshining sog‘lig‘iga oid ma’lumotlar ham bor. Amsterdam deklaratsiyasiga ko‘ra qaysi yo‘l to‘g‘ri?",
+        "ru": "Пациент запросил копию своей истории болезни. В документе есть также сведения о здоровье его родственника. Какой путь правильный согласно Амстердамской декларации?",
+        "en": "A patient requested a copy of their medical history. The document also contains information about a relative's health. According to the Amsterdam Declaration, which course of action is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Nusxa beriladi, lekin uchinchi shaxsga tegishli ma’lumotlar berilmaydi",
+          "Faqat ko‘rsatiladi, nusxa olishga ruxsat berilmaydi",
+          "Butun hujjatni berish rad etiladi, chunki unda uchinchi shaxs ma’lumoti bor",
+          "Barcha ma’lumotlar to‘liq beriladi, chunki hujjat bemorniki"
+        ],
+        "ru": [
+          "Копия выдаётся, но сведения, относящиеся к третьему лицу, не предоставляются",
+          "Документ только показывается, снимать копию не разрешается",
+          "В выдаче всего документа отказывается, поскольку в нём есть сведения о третьем лице",
+          "Все сведения предоставляются полностью, поскольку документ принадлежит пациенту"
+        ],
+        "en": [
+          "A copy is provided, but information relating to third parties is not disclosed",
+          "It is only shown, and making a copy is not permitted",
+          "Providing the whole document is refused because it contains third-party information",
+          "All information is provided in full because the document belongs to the patient"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Bemorning tashxis va davolash materiallaridan foydalanish hamda nusxa olish huquqi bor. Uchinchi shaxsga oid ma’lumotlar esa unga berilmasligi kerak. Shuning uchun butunlay rad etish yoki to‘liq berish noto‘g‘ri.",
+        "ru": "Пациент имеет право на доступ к материалам своего диагноза и лечения и на получение их копий. Сведения же, относящиеся к третьему лицу, не должны ему предоставляться. Поэтому и полный отказ, и полная выдача неверны.",
+        "en": "The patient has the right to access materials on their diagnosis and treatment and to obtain a copy. However, information relating to a third party must not be given to them. Therefore, both complete refusal and full disclosure are incorrect."
+      },
+      "source": {
+        "author": "Muxamedova Z.M.",
+        "title": "Bioetika (darslik), Toshkent",
+        "page": "312"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "2-kurs-bioetika-11-q30",
+      "question_i18n": {
+        "uz": "Kasalxonada bir shifokor hamkasbining bemorlarida takroriy xatolar bo‘layotganini ko‘rdi. Hamkasb o‘qimagan va malakasi past, bemorlarga zarar yetishi mumkin. Tibbiy deontologiyadagi korporativlik talabiga ko‘ra shifokor qanday yo‘l tutishi lozim?",
+        "ru": "В больнице один врач заметил повторяющиеся ошибки в лечении пациентов коллеги. Коллега необразован и малоквалифицирован, пациентам может быть причинён вред. Как, согласно требованию корпоративности в медицинской деонтологии, должен поступить врач?",
+        "en": "In a hospital, a doctor saw that a colleague's patients are repeatedly experiencing errors. The colleague is uneducated and poorly qualified, and may harm patients. According to the requirement of collegiality in medical deontology, how should the doctor proceed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Korporativ hurmat tufayli hamkasbni har qanday holatda qo‘llab-quvvatlashi",
+          "Bemorning yaqinlariga hamkasb haqida salbiy fikr aytib, bemorni o‘ziga o‘tkazishi",
+          "Bunday hamkasbning faoliyatiga to‘sqinlik qilib, bemorga zarar yetishiga yo‘l qo‘ymasligi",
+          "Hamkasbning davolash jarayoniga aralashmay, hech narsa demasligi"
+        ],
+        "ru": [
+          "Поддерживать коллегу в любой ситуации из корпоративного уважения",
+          "Высказать родственникам пациента негативное мнение о коллеге и перевести пациента к себе",
+          "Воспрепятствовать деятельности такого коллеги, не допустив причинения вреда пациенту",
+          "Не вмешиваться в процесс лечения коллеги и ничего не говорить"
+        ],
+        "en": [
+          "Supporting the colleague in every situation out of professional solidarity",
+          "Making negative remarks about the colleague to the patients' relatives and taking the patient over",
+          "Hindering the activity of such a colleague and not allowing harm to come to patients",
+          "Not interfering in the colleague's treatment process and saying nothing"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Korporativlik ko‘r-ko‘rona qo‘llab-quvvatlashni anglatmaydi. Bemorga yoki boshqa xodimlarga zarar yetmasligi uchun ko‘nikmasi past hamkasb faoliyatiga to‘sqinlik qilish kerak. Hamkasbni obro‘sizlantirish yoki bemorni o‘ziga o‘tkazib olish esa axloqqa zid.",
+        "ru": "Корпоративность не означает слепой поддержки. Чтобы не был причинён вред пациенту или другим сотрудникам, необходимо воспрепятствовать деятельности коллеги с низкими навыками. Дискредитация коллеги или переманивание пациента к себе противоречат этике.",
+        "en": "Collegiality does not mean blind support. To prevent harm to patients or other staff, the activity of a colleague with poor skills should be hindered. Discrediting a colleague or taking over their patient is contrary to ethics."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "58"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "year": 2022,
+      "pages": "V, VIII, XIV boblar (modellar, klinik xavf, Oviedo), kitob betlari 51-59; 72-80; 143-150"
+    },
+    {
+      "author": "Egasining manba taqdimoti (G‘iyosov Z.A., Indiaminov S.I., Bioetika, Samarqand, 2022 asosida tayyorlangan)",
+      "title": "Bioetika 3 mavzu taqdimot - manba.pptx (egasining manba taqdimoti, kitob matni EMAS), 15-28-slaydlar",
+      "year": 2026,
+      "pages": "Slaydlarda ko‘rsatilgan: G‘iyosov va Indiaminov 2022, 51-56 (munosabat modellari), 72-77 (klinik xavf), 147-148 (Oviedo); Council of Europe ETS 164, 5/10/16/17-moddalar"
+    },
+    {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "year": 2021,
+      "pages": "III bob (47-49); IV bob (67-69, 80-84); 3-ilova (306-313)"
+    },
+    {
+      "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+      "title": "Simpson's Forensic Medicine, 13th ed.",
+      "year": 2011,
+      "pages": "Chapter 2. The ethics of medical practice, pp. 12–23"
+    }
+  ]
+}
