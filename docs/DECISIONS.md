@@ -230,3 +230,7 @@ model bilan chiqiladi, haqiqiy foydalanish ko'ringandan keyin qayta qaraladi.
     bu belgini o'chirmaydi (`manual = manual or excluded.manual`), ya'ni
     qo'lda tekshirilgan maqom AI qarori bilan yo'qolmaydi. Email hech
     qayerda saqlanmaydi — faqat seed chaqirig'ida argument.
+
+## 2026-10-17 — Pro/pullik funksiyalar to‘xtatildi (Apple 2.5.19, 2.1)
+Egasi qarori: ilovaga yangi to‘lov/paywall/yashirin bayroq qo‘shilmaydi; hamma funksiya bepul. Server tomonida faqat `plan` (free/pro, `pro_until`) tayyorgarligi mumkin. Pro tayyor bo‘lganda to‘liq ishlaydigan yangi versiya sifatida yuboriladi (do‘kon mahsulotlari, sandbox, server tekshiruvi, restore, ekranda shartlar, intro-offer). Tafsilot: CLAUDE.md.
+Mavjud kod (paywall_screen.dart, billing_ports.dart, 4 ta store mahsuloti ID, entitlement/gating) repoda BOR — uni olib tashlash/o‘chirish qarori egasidan kutilmoqda.
