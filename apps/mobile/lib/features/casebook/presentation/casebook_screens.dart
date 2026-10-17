@@ -272,6 +272,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
 
   Future<void> _addLink() async {
     final link = await showModalBottomSheet<CasebookLink>(
+      useRootNavigator: true,
       context: context,
       isScrollControlled: true,
       showDragHandle: true,
@@ -286,6 +287,7 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
   Future<void> _addBlock() async {
     final bundle = ref.read(guidelinesProvider).value ?? GuidelineBundle.empty;
     final pick = await showModalBottomSheet<(GuidelineCard, GuidelineSection)>(
+      useRootNavigator: true,
       context: context,
       isScrollControlled: true,
       showDragHandle: true,

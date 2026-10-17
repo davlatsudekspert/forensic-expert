@@ -115,56 +115,57 @@ class ReviewStatusBadge extends StatelessWidget {
   }
 }
 
-/// «Ekspert tasdig‘i kerak» eslatmasi — xato emas, ilmiy holat:
-/// tonal teal panel, chap chiziq, aniq matn (ogohlantirish qizil emas).
+/// «Ekspert tasdig‘i kerak» belgisi — xato emas, ilmiy holat: ixcham,
+/// mayin bitta qatorli holat chipi (yumaloq, tonal oltin fon, ikonka).
+/// Ekranda qisqa matn; to‘liq ma’no ([AppLocalizations.unverifiedBanner])
+/// ekran o‘quvchisi va uzoq bosishdagi maslahatda — halollik saqlanadi.
 class UnverifiedBanner extends StatelessWidget {
   const UnverifiedBanner({super.key});
 
   @override
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
+    final l = AppLocalizations.of(context);
     final hc = FeTheme.isHighContrast(context);
     return Semantics(
       container: true,
       liveRegion: true,
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          color: c.accentContainer,
-          borderRadius: BorderRadius.circular(FeRadius.md),
-          border: hc ? Border.all(color: c.accent, width: 1.5) : null,
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(FeRadius.md),
-          child: IntrinsicHeight(
+      label: l.unverifiedBanner,
+      excludeSemantics: true,
+      child: Tooltip(
+        message: l.unverifiedBanner,
+        excludeFromSemantics: true,
+        child: DecoratedBox(
+          key: const Key('entry.unverifiedChip'),
+          decoration: BoxDecoration(
+            color: c.accentContainer,
+            borderRadius: BorderRadius.circular(FeRadius.pill),
+            border: Border.all(
+              color: hc ? c.accent : c.accentBorder,
+              width: hc ? 1.5 : 1,
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: FeSpace.sm,
+              vertical: 6,
+            ),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Container(width: 3, color: c.accent),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(FeSpace.sm),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Icon(
-                          Icons.pending_actions_outlined,
-                          color: c.onAccentContainer,
-                          size: 20,
-                        ),
-                        const SizedBox(width: FeSpace.xs),
-                        Expanded(
-                          child: Text(
-                            AppLocalizations.of(context).unverifiedBanner,
-                            style: Theme.of(context).textTheme.labelLarge
-                                ?.copyWith(
-                                  color: c.onAccentContainer,
-                                  fontWeight: FontWeight.w600,
-                                  letterSpacing: 0.2,
-                                  height: 1.35,
-                                ),
-                          ),
-                        ),
-                      ],
+                Icon(
+                  Icons.hourglass_top_rounded,
+                  color: c.onAccentContainer,
+                  size: 15,
+                ),
+                const SizedBox(width: 6),
+                Flexible(
+                  child: Text(
+                    l.unverifiedChip,
+                    style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                      color: c.onAccentContainer,
+                      fontWeight: FontWeight.w600,
+                      height: 1.25,
                     ),
                   ),
                 ),

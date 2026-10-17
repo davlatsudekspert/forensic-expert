@@ -36,10 +36,17 @@ class ReferralScreen extends ConsumerWidget {
         dashboard: value.dashboard!,
       ),
       AsyncData(:final value) => switch (value.failure) {
-        ReferralFailure.notConfigured => FeNote(
-          key: const Key('referral.notConfigured'),
-          icon: Icons.cloud_off_outlined,
-          text: l.referralNotConfigured,
+        // Xizmat ulanmagan: halol izoh + qanday ishlashi (bo‘sh sahifa emas).
+        ReferralFailure.notConfigured => Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            FeNote(
+              key: const Key('referral.notConfigured'),
+              icon: Icons.cloud_off_outlined,
+              text: l.referralNotConfigured,
+            ),
+            const _HowItWorks(),
+          ],
         ),
         ReferralFailure.notSignedIn => const _SignInCard(),
         _ => _ErrorCard(
@@ -612,6 +619,56 @@ class _ClaimSectionState extends ConsumerState<_ClaimSection> {
                     ],
                   ),
                 ),
+        ),
+      ],
+    );
+  }
+}
+
+/// «Qanday ishlaydi» — uch qadam (maxfiylik qoidalariga mos: faqat umumiy
+/// sonlar, ismlar ko‘rinmaydi).
+class _HowItWorks extends StatelessWidget {
+  const _HowItWorks();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final steps = [
+      (Icons.ios_share, l.referralHow1),
+      (Icons.person_add_alt_1_outlined, l.referralHow2),
+      (Icons.lock_outline, l.referralHow3),
+    ];
+    return Column(
+      key: const Key('referral.how'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeSectionHeader(l.referralHowTitle),
+        FeCard(
+          child: Column(
+            children: [
+              for (final (i, (icon, text)) in steps.indexed) ...[
+                if (i > 0) const SizedBox(height: FeSpace.md),
+                Row(
+                  children: [
+                    DecoratedBox(
+                      decoration: BoxDecoration(
+                        color: c.accentContainer,
+                        shape: BoxShape.circle,
+                      ),
+                      child: SizedBox.square(
+                        dimension: 40,
+                        child: Icon(icon, size: 20, color: c.accent),
+                      ),
+                    ),
+                    const SizedBox(width: FeSpace.md),
+                    Expanded(child: Text(text, style: t.bodyMedium)),
+                  ],
+                ),
+              ],
+            ],
+          ),
         ),
       ],
     );

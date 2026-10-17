@@ -104,9 +104,10 @@ s("homeDbHumanVerified", en="Expert verified (2 independent experts): {count}", 
 # 29.
 s("learnBookmarks", en="Favorites", ru="Избранное", uz="Saralanganlar")
 s("learnBookmarksEmpty", en="Mark a topic with the star to find it here.", ru="Отметьте тему звёздочкой, чтобы найти её здесь.")
-# 30. AI uslubi.
-s("aiExperienceProfessional", en="Short answer", ru="Коротко", uz="Qisqa javob")
-s("aiExperienceTutor", en="Explain it to me", ru="Объясните подробно", uz="Tushuntirib bering")
+# 30. AI uslubi. Premium dizayn (2026-10-17): 320 dp da segment bir qatorda —
+# qisqa yorliq, ma’no ostidagi izohda (l10n_design_premium.py bilan bir xil).
+s("aiExperienceProfessional", en="Short", ru="Коротко", uz="Qisqa")
+s("aiExperienceTutor", en="Detailed", ru="Подробно", uz="Batafsil")
 # 33.
 # 35. Qisqaroq hisoblagich.
 s("emailCodeResendIn", en="Resend ({seconds})", ru="Повторить ({seconds})", uz="Qayta yuborish ({seconds})")

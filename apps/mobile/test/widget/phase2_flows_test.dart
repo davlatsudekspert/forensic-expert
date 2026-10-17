@@ -222,7 +222,8 @@ void main() {
           of: jur,
           matching: find.textContaining('No legal or procedural content'),
         ),
-        findsNWidgets(2),
+        // Huquqiy maqom va milliy metodikalar uchun bitta izoh (takror yo‘q).
+        findsOneWidget,
       );
     });
 

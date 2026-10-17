@@ -133,7 +133,10 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                     const SizedBox(height: FeSpace.xs),
                   ],
                   if (e.status != ScientificStatus.verified) ...[
-                    const UnverifiedBanner(),
+                    const Align(
+                      alignment: AlignmentDirectional.centerStart,
+                      child: UnverifiedBanner(),
+                    ),
                     const SizedBox(height: FeSpace.sm),
                   ],
                   if (e.kind == KnowledgeKind.screeningTest) ...[

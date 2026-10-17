@@ -192,6 +192,7 @@ class ProvenanceButton extends StatelessWidget {
 
 Future<void> showProvenanceSheet(BuildContext context, ClaimView claim) =>
     showModalBottomSheet<void>(
+      useRootNavigator: true,
       context: context,
       isScrollControlled: true,
       showDragHandle: true,

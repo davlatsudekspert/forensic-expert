@@ -43,8 +43,8 @@ void main() {
       'Forensic Medicine',
       'Forensic Toxicology',
       'Laboratory',
-      'Substance Library',
-      'Learn',
+      'Substances',
+      'Learning',
       'Forensic AI',
     ]) {
       expect(find.text(m), findsOneWidget, reason: m);
@@ -155,7 +155,7 @@ void main() {
     Offset at(String key) => tester.getTopLeft(find.byKey(Key(key)));
     // Talaba: o‘qish, yo‘riqnomalar, moddalar, AI — bo‘limlardan oldin.
     await pumpApp(tester, settings: completedSettings(mode: UserMode.student));
-    expect(find.text('Study & quizzes'), findsOneWidget);
+    expect(find.text('Learning'), findsOneWidget);
     expect(
       at('home.module.learn').dy,
       lessThan(at('home.module.toxicology').dy),

@@ -27,6 +27,7 @@ import '../features/casebook/presentation/casebook_screens.dart';
 import '../features/class_quiz/presentation/class_quiz_host_screen.dart';
 import '../features/class_quiz/presentation/class_quiz_hub_screen.dart';
 import '../features/class_quiz/presentation/class_quiz_play_screen.dart';
+import '../features/class_quiz/presentation/teacher_panel_screen.dart';
 import '../features/court_prep/presentation/court_prep_screens.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
@@ -233,6 +234,16 @@ final routerProvider = Provider<GoRouter>((ref) {
                         builder: (c, s) => ProSearchScreen(
                           initialText: s.uri.queryParameters['q'] ?? '',
                         ),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'teacher',
+                    builder: (c, s) => const TeacherPanelScreen(),
+                    routes: [
+                      GoRoute(
+                        path: 'results',
+                        builder: (c, s) => const TeacherResultsScreen(),
                       ),
                     ],
                   ),

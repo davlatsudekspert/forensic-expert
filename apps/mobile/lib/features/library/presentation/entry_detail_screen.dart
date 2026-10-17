@@ -110,34 +110,44 @@ class EntryDetailScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  // Sarlavha qatori: bo‘lim + holat chipi (ixcham, bitta
+                  // qatorda; tor ekranda chip keyingi qatorga o‘tadi).
                   Wrap(
                     spacing: FeSpace.xs,
-                    runSpacing: FeSpace.xxs,
+                    runSpacing: FeSpace.xs,
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
-                      Icon(entry.section.icon, size: 18, color: c.accent),
-                      Text(entry.section.label(l), style: t.labelLarge),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(entry.section.icon, size: 18, color: c.accent),
+                          const SizedBox(width: FeSpace.xs),
+                          Flexible(
+                            child: Text(
+                              entry.section.label(l),
+                              style: t.labelLarge,
+                            ),
+                          ),
+                        ],
+                      ),
                       if (entry.isTestData) const TestDataBadge(),
+                      // Hamma da’vo egasi bergan manbaga (ustoz kitobi)
+                      // tayansa — banner pastda; aks holda «tasdiqlanmagan»
+                      // holat chipi shu qatorda.
+                      if (entry.status != ScientificStatus.verified &&
+                          !_allConfirmed(entry))
+                        const UnverifiedBanner(),
                     ],
                   ),
                   const SizedBox(height: FeSpace.sm),
-                  if (entry.status != ScientificStatus.verified)
-                    // Hamma da’vo egasi bergan manbaga (ustoz kitobi)
-                    // tayansa — «tasdiqlangan manba»; aralash yoki xorijiy
-                    // adabiyot bo‘lsa — avvalgi «tasdiqlanmagan» ogohlantirish.
-                    if (entry.details != null &&
-                        entry.details!.claims.isNotEmpty &&
-                        entry.details!.claims.every(
-                          (c) => c.fromConfirmedSource,
-                        ))
-                      FeBanner(
-                        key: const Key('entry.confirmedSource'),
-                        icon: Icons.verified_outlined,
-                        text: l.confirmedSourceBannerTextbook,
-                        tone: FeBannerTone.info,
-                      )
-                    else
-                      const UnverifiedBanner(),
+                  if (entry.status != ScientificStatus.verified &&
+                      _allConfirmed(entry))
+                    FeBanner(
+                      key: const Key('entry.confirmedSource'),
+                      icon: Icons.verified_outlined,
+                      text: l.confirmedSourceBannerTextbook,
+                      tone: FeBannerTone.info,
+                    ),
                   if (entry.details == null) ...[
                     FeSectionHeader(l.detailEvidenceStatus),
                     _KeyValue(
@@ -186,6 +196,7 @@ class EntryDetailScreen extends ConsumerWidget {
                       icon: const Icon(Icons.format_quote_outlined),
                       label: Text(l.sourcesButton),
                       onPressed: () => showModalBottomSheet<void>(
+                        useRootNavigator: true,
                         context: context,
                         showDragHandle: true,
                         builder: (_) => _SourcesSheet(entry: entry),
@@ -263,21 +274,21 @@ class _JurisdictionLayer extends ConsumerWidget {
           ),
           const SizedBox(height: FeSpace.xs),
         ],
-        for (final (icon, title) in [
-          (Icons.gavel_outlined, l.detailLegalStatus),
-          (Icons.rule_folder_outlined, l.detailNationalMethods),
-        ]) ...[
-          Padding(
-            padding: const EdgeInsets.only(top: FeSpace.xs, bottom: 4),
-            child: Text(title, style: Theme.of(context).textTheme.titleSmall),
-          ),
-          if (view.rules.isEmpty)
-            FeEmptyState(
-              icon: icon,
-              body: l.jurisdictionNoContent,
-              compact: true,
+        // Huquqiy maqom va milliy metodikalar: kontent yo‘q bo‘lsa — bitta
+        // ixcham izoh (avval ikki bo‘limda bir xil uzun matn takrorlanardi).
+        if (view.rules.isEmpty)
+          FeEmptyState(
+            key: const Key('entry.legal.empty'),
+            icon: Icons.gavel_outlined,
+            body: l.jurisdictionNoContent,
+            compact: true,
+          )
+        else
+          for (final title in [l.detailLegalStatus, l.detailNationalMethods])
+            Padding(
+              padding: const EdgeInsets.only(top: FeSpace.xs, bottom: 4),
+              child: Text(title, style: Theme.of(context).textTheme.titleSmall),
             ),
-        ],
       ],
     );
   }
@@ -387,3 +398,9 @@ class _SourcesSheet extends StatelessWidget {
     );
   }
 }
+
+/// Hamma da’vo egasi bergan (tasdiqlangan) manbaga tayanadimi.
+bool _allConfirmed(LibraryEntry entry) =>
+    entry.details != null &&
+    entry.details!.claims.isNotEmpty &&
+    entry.details!.claims.every((c) => c.fromConfirmedSource);

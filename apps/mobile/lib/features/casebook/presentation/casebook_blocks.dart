@@ -118,6 +118,7 @@ Future<String?> chooseCasebookEntry(
   final l = AppLocalizations.of(context);
   final entries = ref.read(casebookProvider);
   final choice = await showModalBottomSheet<String>(
+    useRootNavigator: true,
     context: context,
     isScrollControlled: true,
     showDragHandle: true,

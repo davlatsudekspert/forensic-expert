@@ -58,6 +58,8 @@ const onboardingScreens = <String>[
 /// yuradi, shunda yangi bo‘lim qo‘shilganda u ham avtomatik sinaladi.
 const everyScreen = <String>[
   Routes.home,
+  Routes.teacher,
+  Routes.teacherResults,
   Routes.search,
   Routes.proSearch,
   Routes.learn,

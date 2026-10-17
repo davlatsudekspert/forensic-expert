@@ -14,6 +14,7 @@ Future<void> showAvatarActions(BuildContext context, WidgetRef ref) async {
   final l = AppLocalizations.of(context);
   final has = ref.read(avatarProvider).value != null;
   final action = await showModalBottomSheet<String>(
+    useRootNavigator: true,
     context: context,
     showDragHandle: true,
     builder: (ctx) => SafeArea(

@@ -6,6 +6,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/knowledge/method_short_name.dart';
 import '../../../domain/library/library_models.dart';
 import '../../evidence/presentation/localized_content.dart';
 
@@ -29,6 +30,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
   final ValueChanged<String> onJump;
 
   static const _maxNames = 3;
+  static const _maxChips = 5;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -59,6 +61,10 @@ class SubstanceGlanceCard extends ConsumerWidget {
       for (final id in a.allMethodIds)
         knowledge.byId(id)?.name.resolve(lang) ?? id,
     ];
+    // Usullar — qisqa nom chiplari (GC-MS, LC-MS/MS…); to‘liq nom «Tahlil»
+    // bo‘limida va semantik yorliqda.
+    final methodChips = <String>{for (final m in methods) methodShortName(m)}
+        .toList();
     // Kutubxonada yozuvi yo‘q metabolit — manbadagi nom (`metabolite_name`
     // tarjimasi bo‘lsa — u); UI tilida bo‘lmasa, qator oxirida ochiq belgi.
     final translations = ref.watch(contentTranslationsProvider);
@@ -113,7 +119,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
           'methods',
           Icons.biotech_outlined,
           l.rdGlanceMethods,
-          names(methods),
+          methods.join(FeGlyphs.listSeparator),
           'analysis',
         ),
       if (metabolites.isNotEmpty)
@@ -178,6 +184,13 @@ class SubstanceGlanceCard extends ConsumerWidget {
               icon: icon,
               label: label,
               value: value,
+              chips: key == 'methods'
+                  ? [
+                      ...methodChips.take(_maxChips),
+                      if (methodChips.length > _maxChips)
+                        l.rdGlanceMore(methodChips.length - _maxChips),
+                    ]
+                  : null,
               hint: l.rdJumpTo,
               onTap: () => onJump(target),
             ),
@@ -195,11 +208,17 @@ class _GlanceRow extends StatelessWidget {
     required this.value,
     required this.hint,
     required this.onTap,
+    this.chips,
   });
 
   final IconData icon;
   final String label;
+
+  /// To‘liq qiymat (ekran o‘quvchisi uchun ham).
   final String value;
+
+  /// Berilsa — qiymat o‘rniga ixcham chiplar (to‘liq [value] semantikada).
+  final List<String>? chips;
   final String hint;
   final VoidCallback onTap;
 
@@ -207,9 +226,12 @@ class _GlanceRow extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final chips = this.chips;
     return Semantics(
       button: true,
       hint: hint,
+      label: chips == null ? null : '$label: $value',
+      excludeSemantics: chips != null,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(FeRadius.sm),
@@ -231,12 +253,24 @@ class _GlanceRow extends StatelessWidget {
                         label,
                         style: t.labelMedium?.copyWith(color: c.textSecondary),
                       ),
-                      Text(
-                        value,
-                        style: t.bodyMedium?.copyWith(
-                          fontWeight: FontWeight.w600,
+                      if (chips == null)
+                        Text(
+                          value,
+                          style: t.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )
+                      else
+                        Padding(
+                          padding: const EdgeInsets.only(top: FeSpace.xxs),
+                          child: Wrap(
+                            spacing: 6,
+                            runSpacing: 6,
+                            children: [
+                              for (final chip in chips) _MiniChip(label: chip),
+                            ],
+                          ),
                         ),
-                      ),
                     ],
                   ),
                 ),
@@ -245,6 +279,35 @@ class _GlanceRow extends StatelessWidget {
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Bosilmaydigan ixcham belgi (qator o‘zi bosiladi).
+class _MiniChip extends StatelessWidget {
+  const _MiniChip({required this.label});
+
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: c.surface,
+        borderRadius: BorderRadius.circular(FeRadius.sm),
+        border: Border.all(color: c.border),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        child: Text(
+          label,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: Theme.of(context).textTheme.labelLarge
+              ?.copyWith(fontWeight: FontWeight.w600, height: 1.2),
         ),
       ),
     );

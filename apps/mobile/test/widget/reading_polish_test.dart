@@ -46,16 +46,22 @@ void main() {
   testWidgets('etanol: «Qisqacha» — formula, usullar, metabolitlar, manbalar', (
     tester,
   ) async {
+    final semantics = tester.ensureSemantics();
     await open(tester, Routes.libraryEntry('ethanol'));
     expect(find.byKey(const Key('entry.glance.ethanol')), findsOneWidget);
     // Identifikatsiya claim’idan (PubChem) — yangi fakt emas.
     expect(inGlance('ethanol', find.text('C2H6O · 46.07 g/mol')), findsOne);
-    // Usullar — «Tahlil» bo‘limidagi manbali bog‘lanishlar nomlari.
+    // Usullar — «Tahlil» bo‘limidagi manbali bog‘lanishlar: ekranda qisqa
+    // nom chiplari, to‘liq nom — semantik yorliqda (yangi fakt yo‘q).
+    expect(inGlance('ethanol', find.text('GC-FID')), findsOne);
+    expect(inGlance('ethanol', find.text('LC-MS/MS')), findsOne);
     expect(
       inGlance(
         'ethanol',
-        find.textContaining(
-          'GC-FID (alanga-ionlanish detektorli gaz xromatografiyasi)',
+        find.bySemanticsLabel(
+          RegExp(
+            'GC-FID \\(alanga-ionlanish detektorli gaz xromatografiyasi\\)',
+          ),
         ),
       ),
       findsOne,
@@ -70,8 +76,10 @@ void main() {
     expect(find.byKey(const Key('entry.glance.row.specimens')), findsNothing);
     expect(find.byKey(const Key('entry.glance.row.sources')), findsOne);
     // Holat ogohlantirishi va «Ma’lumotlar kelib chiqishi» joyida.
+    // Ixcham holat chipi; to‘liq ma’no semantik yorliqda.
+    expect(find.text('Ekspert hali tasdiqlamagan'), findsOne);
     expect(
-      find.text('Ma’lumot hali ekspert tomonidan tasdiqlanmagan'),
+      find.bySemanticsLabel('Ma’lumot hali ekspert tomonidan tasdiqlanmagan'),
       findsOne,
     );
     expect(find.byKey(const Key('entry.provenance')), findsOne);
@@ -90,6 +98,7 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(pubchem.hitTestable(), findsOne);
+    semantics.dispose();
   });
 
   testWidgets('morfin: «Qisqacha» to‘liq — qulf belgisi va «Pro» yo‘q', (

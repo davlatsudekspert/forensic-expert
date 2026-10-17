@@ -351,25 +351,8 @@ class _HostBodyState extends ConsumerState<_HostBody> {
     return ok ?? false;
   }
 
-  Future<void> _export(ClassSessionInfo s) async {
-    final l = AppLocalizations.of(context);
-    final messenger = ScaffoldMessenger.of(context);
-    final share = ref.read(classFileShareProvider);
-    final r = await ref.read(classQuizServiceProvider).exportResults(s.id);
-    if (!mounted) return;
-    final ex = r.value;
-    if (ex == null) {
-      messenger.showSnackBar(
-        SnackBar(content: Text(classFailureText(l, r.failure!))),
-      );
-      return;
-    }
-    await share.shareCsv(
-      fileName: ClassResultsCsv.fileName(s.code, DateTime.now()),
-      content: ClassResultsCsv.build(ex.rows),
-      subject: l.classCsvSubject,
-    );
-  }
+  Future<void> _export(ClassSessionInfo s) =>
+      exportClassResultsCsv(context, ref, s);
 
   @override
   Widget build(BuildContext context) {

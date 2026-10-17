@@ -116,7 +116,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get moduleLaboratory => 'Лаборатория';
 
   @override
-  String get moduleSubstances => 'Библиотека веществ';
+  String get moduleSubstances => 'Вещества';
 
   @override
   String get moduleLearn => 'Обучение';
@@ -179,7 +179,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get themeDark => 'Тёмное';
 
   @override
-  String get settingsMode => 'Режим использования';
+  String get settingsMode => 'Режим: студент или специалист';
 
   @override
   String get scientificDatabaseLabel => 'Научная база данных';
@@ -1407,7 +1407,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiExperienceProfessional => 'Коротко';
 
   @override
-  String get aiExperienceTutor => 'Объясните подробно';
+  String get aiExperienceTutor => 'Подробно';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -5187,7 +5187,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeResourcesHeading => 'Библиотека и инструменты';
 
   @override
-  String get homeLibraryBody => 'Вещества, методы, стандарты и источники';
+  String get homeLibraryBody =>
+      'Все разделы: вещества, методы, стандарты, источники';
 
   @override
   String get homeContinueSaved => 'Продолжить и сохранённое';
@@ -5495,7 +5496,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get studyTitle => 'Режим обучения';
+  String get studyTitle => 'Упражнения';
 
   @override
   String get studyEntrySubtitle =>
@@ -6379,10 +6380,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeAreasTitle => 'Разделы';
 
   @override
-  String get homeActLearnTitle => 'Учёба и тесты';
+  String get homeActLearnTitle => 'Обучение';
 
   @override
-  String get homeActLearnBody => 'Карточки, тесты, экзамен';
+  String get homeActLearnBody => 'Курсы, упражнения, тест в классе';
 
   @override
   String get homeActGuidelinesBody => 'Практические руководства по дисциплинам';
@@ -9672,4 +9673,82 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get classErrBadReason => 'Причина слишком короткая.';
+
+  @override
+  String get unverifiedChip => 'Эксперт ещё не подтвердил';
+
+  @override
+  String get legalNationalMethodsEmpty =>
+      'Национальные методики ещё не загружены.';
+
+  @override
+  String get teacherPanelTitle => 'Панель преподавателя';
+
+  @override
+  String get teacherPanelHomeBody =>
+      'Проведите тест в классе и получите результаты в CSV';
+
+  @override
+  String get teacherPanelHomeBodyStudent =>
+      'Войдите в тест в классе по коду преподавателя';
+
+  @override
+  String get teacherPanelIntro =>
+      'Три простых действия: проведите тест, посмотрите результаты, а студенты войдут по коду.';
+
+  @override
+  String get teacherRunTitle => 'Провести тест';
+
+  @override
+  String get teacherRunBody =>
+      'Выберите тему — для класса появятся 6-значный код и QR';
+
+  @override
+  String get teacherResultsTitle => 'Результаты и CSV';
+
+  @override
+  String get teacherResultsBody => 'Проведённые тесты, рейтинг и файл CSV';
+
+  @override
+  String get teacherJoinTitle => 'Войти в класс (студент)';
+
+  @override
+  String get teacherJoinBody => 'По коду или QR от преподавателя';
+
+  @override
+  String get teacherRoleNeeded =>
+      'Нужна роль преподавателя — см. примечание ниже';
+
+  @override
+  String get teacherResultsEmpty =>
+      'Тестов ещё не было. Начните с «Провести тест» — результаты появятся здесь.';
+
+  @override
+  String get disciplineNextTitle => 'Что дальше';
+
+  @override
+  String get disciplineSearchCta => 'Искать по этой дисциплине';
+
+  @override
+  String get disciplineSearchBody => 'Среди веществ, методов и источников';
+
+  @override
+  String get referralHowTitle => 'Как это работает';
+
+  @override
+  String get referralHow1 => 'Вы отправляете коллеге личный код или ссылку.';
+
+  @override
+  String get referralHow2 => 'Коллега создаёт новый аккаунт с этим кодом.';
+
+  @override
+  String get referralHow3 =>
+      'Вы видите только общие числа — без имён и данных.';
+
+  @override
+  String get pubEmptyTitle => 'Статей пока нет';
+
+  @override
+  String get pubEmptyBody =>
+      'Поделитесь опытом первым: кнопка «Отправить статью» внизу. После модерации статья появится здесь.';
 }

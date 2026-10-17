@@ -55,6 +55,19 @@ final classQuizMeProvider =
       return ref.watch(classQuizServiceProvider).me();
     });
 
+/// Asosiy sahifa va «Ustoz paneli» uchun: ustoz roli bormi. Keep-alive (tab
+/// almashganda qayta so‘ralmaydi), xato/tarmoqsizlikda — `false` (qayta
+/// urinish taymerlari yo‘q). Faqat UI qulayligi; chegara — serverdagi 403.
+final classIsTeacherProvider = FutureProvider<bool>((ref) async {
+  ref.watch(authStateProvider.select((s) => s.userId));
+  try {
+    final r = await ref.watch(classQuizServiceProvider).me();
+    return r.value?.isTeacher ?? false;
+  } on Object {
+    return false;
+  }
+});
+
 final classTopicsProvider =
     FutureProvider.autoDispose<ClassResult<List<ClassTopic>>>(
       (ref) => ref.watch(classQuizServiceProvider).topics(),

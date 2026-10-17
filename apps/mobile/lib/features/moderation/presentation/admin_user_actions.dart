@@ -18,6 +18,7 @@ import '../moderation_strings.dart';
 /// o‘zgartirib bo‘lmaydi, ilmiy reviewer roli bu yerdan berilmaydi.
 Future<void> showUserActionsSheet(BuildContext context, AdminUserSummary user) {
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     isScrollControlled: true,
     showDragHandle: true,

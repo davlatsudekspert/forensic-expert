@@ -192,6 +192,10 @@ abstract final class Routes {
       '/home/learn/class/play/${Uri.encodeComponent(id)}';
   static const classScan = '/home/learn/class/scan';
 
+  /// Ustoz paneli (Asosiydan 1 bosish) va natijalar ro‘yxati.
+  static const teacher = '/home/teacher';
+  static const teacherResults = '/home/teacher/results';
+
   // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
   static const accountSignIn = '/profile/account/sign-in';
   static const accountRegister = '/profile/account/register';

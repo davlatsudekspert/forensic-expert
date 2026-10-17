@@ -67,10 +67,48 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  FeSectionHeader(
-                    l.learnProgress,
-                    padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                  const SizedBox(height: FeSpace.xs),
+                  // «Sinfda test» — O‘qish bo‘limining tepasida (Asosiydan
+                  // 2 bosish; ustozlar uchun — Asosiydagi «Ustoz paneli»).
+                  FeCard(
+                    key: const Key('learn.classQuiz'),
+                    onTap: () => context.push(Routes.classQuiz),
+                    child: Row(
+                      children: [
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            color: c.accentContainer,
+                            borderRadius: BorderRadius.circular(FeRadius.md),
+                          ),
+                          child: SizedBox.square(
+                            dimension: 44,
+                            child: Icon(
+                              Icons.groups_2_outlined,
+                              color: c.accent,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: FeSpace.md),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(l.classQuizTitle, style: t.titleSmall),
+                              const SizedBox(height: 2),
+                              Text(
+                                l.classQuizCardSubtitle,
+                                style: t.bodySmall?.copyWith(
+                                  color: c.textSecondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Icon(Icons.chevron_right, color: c.textSecondary),
+                      ],
+                    ),
                   ),
+                  FeSectionHeader(l.learnProgress),
                   if (lessons.isEmpty)
                     FeEmptyState(
                       icon: Icons.insights_outlined,
@@ -347,6 +385,7 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
   void _showLessons(BuildContext context, Course course, String lang) {
     final l = AppLocalizations.of(context);
     showModalBottomSheet<void>(
+      useRootNavigator: true,
       context: context,
       showDragHandle: true,
       builder: (context) => Consumer(

@@ -295,13 +295,13 @@ abstract class AppLocalizations {
   /// Home module.
   ///
   /// In en, this message translates to:
-  /// **'Substance Library'**
+  /// **'Substances'**
   String get moduleSubstances;
 
   /// Home module.
   ///
   /// In en, this message translates to:
-  /// **'Learn'**
+  /// **'Learning'**
   String get moduleLearn;
 
   /// Home module.
@@ -415,7 +415,7 @@ abstract class AppLocalizations {
   /// Settings row.
   ///
   /// In en, this message translates to:
-  /// **'Usage mode'**
+  /// **'Mode: student or professional'**
   String get settingsMode;
 
   /// Settings row showing content pack version.
@@ -2593,13 +2593,13 @@ abstract class AppLocalizations {
   /// AI experience toggle.
   ///
   /// In en, this message translates to:
-  /// **'Short answer'**
+  /// **'Short'**
   String get aiExperienceProfessional;
 
   /// AI experience toggle.
   ///
   /// In en, this message translates to:
-  /// **'Explain it to me'**
+  /// **'Detailed'**
   String get aiExperienceTutor;
 
   /// AI experience hint.
@@ -9366,7 +9366,7 @@ abstract class AppLocalizations {
   /// Home: subtitle of the scientific library entry.
   ///
   /// In en, this message translates to:
-  /// **'Substances, methods, standards and references'**
+  /// **'Everything: substances, methods, standards, references'**
   String get homeLibraryBody;
 
   /// Home section: recently viewed, recent tools, favourites, recent searches.
@@ -9936,7 +9936,7 @@ abstract class AppLocalizations {
   /// Study mode title.
   ///
   /// In en, this message translates to:
-  /// **'Study mode'**
+  /// **'Practice'**
   String get studyTitle;
 
   /// Learn screen entry.
@@ -11352,13 +11352,13 @@ abstract class AppLocalizations {
   /// Quick action.
   ///
   /// In en, this message translates to:
-  /// **'Study & quizzes'**
+  /// **'Learning'**
   String get homeActLearnTitle;
 
   /// Quick action hint.
   ///
   /// In en, this message translates to:
-  /// **'Flashcards, quizzes, exam practice'**
+  /// **'Courses, practice, class quiz'**
   String get homeActLearnBody;
 
   /// Quick action hint.
@@ -16748,6 +16748,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reason is too short.'**
   String get classErrBadReason;
+
+  /// Short one-line status chip on a record page. Full meaning is unverifiedBanner (read by screen readers).
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet expert-confirmed'**
+  String get unverifiedChip;
+
+  /// Short empty note under 'National methods and procedures' when legal rules exist.
+  ///
+  /// In en, this message translates to:
+  /// **'National methods are not loaded yet.'**
+  String get legalNationalMethodsEmpty;
+
+  /// Home card and screen title: teacher tools for the class quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher panel'**
+  String get teacherPanelTitle;
+
+  /// Home card subtitle for users with the teacher role.
+  ///
+  /// In en, this message translates to:
+  /// **'Run a class quiz and get the results as CSV'**
+  String get teacherPanelHomeBody;
+
+  /// Home card subtitle for users without the teacher role.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a class quiz with your teacher\'s code'**
+  String get teacherPanelHomeBodyStudent;
+
+  /// Intro line on the teacher panel.
+  ///
+  /// In en, this message translates to:
+  /// **'Three simple actions: run a quiz, see the results, and students join with a code.'**
+  String get teacherPanelIntro;
+
+  /// Teacher panel action: create and host a class quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Run a quiz'**
+  String get teacherRunTitle;
+
+  /// Teacher panel action subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a topic — a 6-digit code and QR appear for the class'**
+  String get teacherRunBody;
+
+  /// Teacher panel action and screen title: past class quizzes with CSV export.
+  ///
+  /// In en, this message translates to:
+  /// **'Results and CSV'**
+  String get teacherResultsTitle;
+
+  /// Teacher panel action subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Past quizzes, leaderboard and a CSV file'**
+  String get teacherResultsBody;
+
+  /// Teacher panel action: the student join flow.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a class (student)'**
+  String get teacherJoinTitle;
+
+  /// Teacher panel action subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'With the code or QR from the teacher'**
+  String get teacherJoinBody;
+
+  /// Subtitle of a disabled teacher action for users without the teacher role.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher role required — see the note below'**
+  String get teacherRoleNeeded;
+
+  /// Empty state of the teacher results list.
+  ///
+  /// In en, this message translates to:
+  /// **'No quizzes yet. Start with “Run a quiz” — the results will appear here.'**
+  String get teacherResultsEmpty;
+
+  /// Section heading at the end of a discipline page.
+  ///
+  /// In en, this message translates to:
+  /// **'Next steps'**
+  String get disciplineNextTitle;
+
+  /// Discipline page tile: opens search pre-filled with the discipline name.
+  ///
+  /// In en, this message translates to:
+  /// **'Search this discipline'**
+  String get disciplineSearchCta;
+
+  /// Subtitle of the discipline search tile.
+  ///
+  /// In en, this message translates to:
+  /// **'Across substances, methods and sources'**
+  String get disciplineSearchBody;
+
+  /// Heading of the three referral steps.
+  ///
+  /// In en, this message translates to:
+  /// **'How it works'**
+  String get referralHowTitle;
+
+  /// Referral step 1.
+  ///
+  /// In en, this message translates to:
+  /// **'You send your personal code or link to a colleague.'**
+  String get referralHow1;
+
+  /// Referral step 2.
+  ///
+  /// In en, this message translates to:
+  /// **'Your colleague creates a new account with that code.'**
+  String get referralHow2;
+
+  /// Referral step 3 (privacy).
+  ///
+  /// In en, this message translates to:
+  /// **'You see only totals — never names or personal data.'**
+  String get referralHow3;
+
+  /// Title of the empty published-articles list.
+  ///
+  /// In en, this message translates to:
+  /// **'No articles yet'**
+  String get pubEmptyTitle;
+
+  /// Body of the empty published-articles list.
+  ///
+  /// In en, this message translates to:
+  /// **'Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.'**
+  String get pubEmptyBody;
 }
 
 class _AppLocalizationsDelegate

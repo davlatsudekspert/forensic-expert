@@ -51,6 +51,7 @@ String authFailureText(AppLocalizations l, AuthFailure f) => switch (f) {
 Future<void> _showLanguageSheet(BuildContext context, WidgetRef ref) {
   final current = ref.read(settingsControllerProvider).locale;
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     showDragHandle: true,
     builder: (sheet) => SafeArea(

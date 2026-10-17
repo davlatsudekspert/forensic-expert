@@ -111,11 +111,11 @@ class FeColorTokens {
 abstract final class FePalette {
   // Fil suyagi sahifa, oq kartalar, grafit matn, iliq bronza aksent.
   static const light = FeColorTokens(
-    background: Color(0xFFF7F5EF),
-    surface: Color(0xFFEFECE4),
+    background: Color(0xFFF8F6F1),
+    surface: Color(0xFFF1EEE7),
     surfaceRaised: Color(0xFFFFFFFF),
-    surfaceSunken: Color(0xFFE8E4DA),
-    border: Color(0xFFE3DED3),
+    surfaceSunken: Color(0xFFEAE6DD),
+    border: Color(0xFFE9E4DA),
     borderStrong: Color(0xFF85807A),
     textPrimary: Color(0xFF161B22),
     textSecondary: Color(0xFF525A66),
@@ -124,13 +124,13 @@ abstract final class FePalette {
     brandContainer: Color(0xFFE9E6DE),
     accent: Color(0xFF7D5F27),
     onAccent: Color(0xFFFFFFFF),
-    accentContainer: Color(0xFFF3EBD8),
+    accentContainer: Color(0xFFF5EEDF),
     onAccentContainer: Color(0xFF4A3810),
-    accentBorder: Color(0xFFD9C9A3),
+    accentBorder: Color(0xFFE2D5B6),
     verified: Color(0xFF1B6E47),
     reviewed: Color(0xFF2350A0),
     warning: Color(0xFF8A5A00),
-    warningContainer: Color(0xFFFFF3D6),
+    warningContainer: Color(0xFFFBF3E2),
     onWarningContainer: Color(0xFF5C3B00),
     outdated: Color(0xFF5B6575),
     danger: Color(0xFFB42318),
@@ -139,11 +139,11 @@ abstract final class FePalette {
 
   // Grafit / deyarli qora qatlamlar, iliq fil suyagi matn, shampan oltini.
   static const dark = FeColorTokens(
-    background: Color(0xFF0B1017),
-    surface: Color(0xFF121A25),
-    surfaceRaised: Color(0xFF192332),
-    surfaceSunken: Color(0xFF080C12),
-    border: Color(0xFF253042),
+    background: Color(0xFF0D131B),
+    surface: Color(0xFF141C27),
+    surfaceRaised: Color(0xFF1A2432),
+    surfaceSunken: Color(0xFF0A0F15),
+    border: Color(0xFF243041),
     borderStrong: Color(0xFF6B7789),
     textPrimary: Color(0xFFF4F4F1),
     textSecondary: Color(0xFF9AA4B2),
@@ -152,13 +152,13 @@ abstract final class FePalette {
     brandContainer: Color(0xFF1E2A3B),
     accent: Color(0xFFC8A86B),
     onAccent: Color(0xFF0B1017),
-    accentContainer: Color(0xFF2A2417),
+    accentContainer: Color(0xFF2A2418),
     onAccentContainer: Color(0xFFE9D3A6),
-    accentBorder: Color(0xFF4A3F2B),
+    accentBorder: Color(0xFF453B29),
     verified: Color(0xFF6ED3A0),
     reviewed: Color(0xFF8AB4F8),
     warning: Color(0xFFF2C14E),
-    warningContainer: Color(0xFF3A2B05),
+    warningContainer: Color(0xFF30260F),
     onWarningContainer: Color(0xFFFFE3A3),
     outdated: Color(0xFF9AA4B2),
     danger: Color(0xFFF97066),
@@ -251,7 +251,7 @@ abstract final class FeBrand {
   static const ivory = Color(0xFFF4F4F1);
 }
 
-/// Masofa shkalasi — 4 pt grid.
+/// Masofa shkalasi — 8 pt ritm (4 — faqat ichki mayda bo‘shliq).
 abstract final class FeSpace {
   static const double xxs = 4;
   static const double xs = 8;
@@ -262,34 +262,61 @@ abstract final class FeSpace {
   static const double xxl = 48;
 }
 
+/// Radiuslar — yumshoq, katta (premium 2026-10-17: 16–24).
 abstract final class FeRadius {
-  static const double sm = 8;
-  static const double md = 12;
+  /// Chip, kichik belgi.
+  static const double sm = 10;
+
+  /// Tugma, input, banner, ichki blok.
+  static const double md = 14;
 
   /// Kartalar — bitta radius butun ilovada.
-  static const double card = 14;
-  static const double lg = 16;
+  static const double card = 20;
+  static const double lg = 20;
 
-  /// Brend «hero» panellari (Home, AI, Profil sarlavhasi).
+  /// Brend «hero» panellari (Home, AI, Profil sarlavhasi), dialog, sheet.
   static const double hero = 24;
+
+  /// To‘liq yumaloq (pill) — holat chiplari.
+  static const double pill = 999;
 }
 
-/// Yengil soya — faqat yorug‘ mavzuda (qorong‘ida tonal sirtlar).
+/// Mayin soyalar: past shaffoflik, katta blur, biroz pastga siljigan —
+/// karta «suzib» turadi, qattiq chiziq yo‘q. Qorong‘ida — juda xira,
+/// chuqurlik asosan tonal sirtlar bilan.
 abstract final class FeShadow {
   static List<BoxShadow> card(Brightness b) => b == Brightness.dark
-      ? const []
+      ? const [
+          BoxShadow(
+            color: Color(0x33000000),
+            blurRadius: 24,
+            spreadRadius: -6,
+            offset: Offset(0, 8),
+          ),
+        ]
       : const [
           BoxShadow(
-            color: Color(0x0F161B22),
-            blurRadius: 2,
+            color: Color(0x05161B22),
+            blurRadius: 3,
             offset: Offset(0, 1),
           ),
           BoxShadow(
-            color: Color(0x08161B22),
-            blurRadius: 14,
-            offset: Offset(0, 3),
+            color: Color(0x0B1A212C),
+            blurRadius: 28,
+            spreadRadius: -6,
+            offset: Offset(0, 10),
           ),
         ];
+
+  /// Suzuvchi elementlar (pastki menyu, FAB): biroz chuqurroq, baribir mayin.
+  static List<BoxShadow> floating(Brightness b) => [
+    BoxShadow(
+      color: Color(b == Brightness.dark ? 0x59000000 : 0x141A212C),
+      blurRadius: 32,
+      spreadRadius: -4,
+      offset: const Offset(0, 12),
+    ),
+  ];
 }
 
 /// Fanlar uchun vazmin, ammo farqlanadigan ranglar (bitta tizim ichida).
@@ -357,10 +384,15 @@ abstract final class FeHues {
   );
 }
 
-/// Harakat davomiyliklari. Reduced motion yoqilganda nolga tushiriladi.
+/// Harakat davomiyliklari (150–250 ms) va egri chiziq. Reduced motion
+/// yoqilganda nolga tushiriladi.
 abstract final class FeMotion {
   static const fast = Duration(milliseconds: 150);
-  static const standard = Duration(milliseconds: 220);
+  static const standard = Duration(milliseconds: 200);
+  static const page = Duration(milliseconds: 250);
+
+  /// Yagona «mayin» egri chiziq — bosish, ochilish, sahifa o‘tishi.
+  static const Curve curve = Curves.easeOutCubic;
 
   static Duration of(BuildContext context, Duration d) =>
       MediaQuery.maybeDisableAnimationsOf(context) ?? false ? Duration.zero : d;

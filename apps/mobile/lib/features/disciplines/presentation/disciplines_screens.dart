@@ -291,12 +291,85 @@ class DisciplineScreen extends ConsumerWidget {
                       body: l.disciplineEmpty,
                     ),
                   ],
+                  // Keyingi qadam: fan nomi bilan qidiruv va AI — sahifa
+                  // qisqa bo‘lsa ham «boshi berk» emas.
+                  FeSectionHeader(l.disciplineNextTitle),
+                  _NextStepTile(
+                    key: const Key('discipline.search'),
+                    icon: Icons.search,
+                    title: l.disciplineSearchCta,
+                    body: l.disciplineSearchBody,
+                    onTap: () =>
+                        context.push(Routes.searchWith(l.disciplineName(d))),
+                  ),
+                  const SizedBox(height: FeSpace.sm),
+                  _NextStepTile(
+                    key: const Key('discipline.ai'),
+                    icon: Icons.auto_awesome_outlined,
+                    title: l.moduleAi,
+                    body: l.homeActAiBody,
+                    onTap: () => context.go(Routes.ai),
+                  ),
                   const SizedBox(height: FeSpace.xl),
                 ],
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Fan sahifasidagi «keyingi qadam» plitasi.
+class _NextStepTile extends StatelessWidget {
+  const _NextStepTile({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.body,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String title;
+  final String body;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      onTap: onTap,
+      child: Row(
+        children: [
+          DecoratedBox(
+            decoration: BoxDecoration(
+              color: c.accentContainer,
+              borderRadius: BorderRadius.circular(FeRadius.md),
+            ),
+            child: SizedBox.square(
+              dimension: 44,
+              child: Icon(icon, color: c.accent, size: 22),
+            ),
+          ),
+          const SizedBox(width: FeSpace.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title, style: t.titleSmall),
+                const SizedBox(height: 2),
+                Text(
+                  body,
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              ],
+            ),
+          ),
+          Icon(Icons.chevron_right, color: c.textSecondary),
+        ],
       ),
     );
   }

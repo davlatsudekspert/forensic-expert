@@ -127,6 +127,7 @@ class ProfessionalReviewSection extends ConsumerWidget {
           OutlinedButton.icon(
             key: Key('review.write.$recordId'),
             onPressed: () => showModalBottomSheet<void>(
+              useRootNavigator: true,
               context: context,
               isScrollControlled: true,
               useSafeArea: true,

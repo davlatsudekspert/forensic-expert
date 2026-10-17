@@ -129,6 +129,8 @@ abstract final class FeThemeBuilder {
 
     return base.copyWith(
       textTheme: text,
+      // AppBar sarlavhasi: aniq o‘lcham (serif 20 sp) — `text.titleLarge`
+      // bu yerda hali mahalliylashtirilmagan (fontSize null → 14 sp edi).
       appBarTheme: AppBarTheme(
         backgroundColor: c.background,
         foregroundColor: c.textPrimary,
@@ -136,10 +138,18 @@ abstract final class FeThemeBuilder {
         elevation: 0,
         scrolledUnderElevation: 0,
         centerTitle: false,
-        titleTextStyle: text.titleLarge?.copyWith(
+        toolbarHeight: 60,
+        titleSpacing: FeSpace.xxs,
+        titleTextStyle: TextStyle(
+          fontFamily: FeFonts.serif,
+          fontSize: 20,
+          height: 1.2,
           fontWeight: FontWeight.w600,
+          letterSpacing: -0.2,
           color: c.textPrimary,
         ),
+        iconTheme: IconThemeData(color: c.textPrimary, size: 24),
+        actionsIconTheme: IconThemeData(color: c.textPrimary, size: 24),
       ),
       cardTheme: CardThemeData(
         color: c.surfaceRaised,
@@ -152,6 +162,47 @@ abstract final class FeThemeBuilder {
         ),
       ),
       dividerTheme: DividerThemeData(color: c.border, thickness: 1, space: 1),
+      dialogTheme: DialogThemeData(
+        backgroundColor: c.surfaceRaised,
+        surfaceTintColor: Colors.transparent,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(FeRadius.hero),
+        ),
+        titleTextStyle: text.titleLarge?.copyWith(
+          fontSize: 20,
+          color: c.textPrimary,
+        ),
+      ),
+      bottomSheetTheme: BottomSheetThemeData(
+        backgroundColor: c.surfaceRaised,
+        surfaceTintColor: Colors.transparent,
+        elevation: 0,
+        dragHandleColor: c.borderStrong.withValues(alpha: 0.5),
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            top: Radius.circular(FeRadius.hero),
+          ),
+        ),
+      ),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        backgroundColor: c.surfaceRaised,
+        foregroundColor: c.textPrimary,
+        elevation: 2,
+        focusElevation: 2,
+        hoverElevation: 3,
+        highlightElevation: 1,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(FeRadius.lg),
+          side: BorderSide(color: c.border),
+        ),
+      ),
+      progressIndicatorTheme: ProgressIndicatorThemeData(
+        color: c.accent,
+        linearTrackColor: c.surfaceSunken,
+        linearMinHeight: 6,
+        borderRadius: BorderRadius.circular(FeRadius.pill),
+      ),
       // Snackbar: bitta uslub — suzuvchi, yumaloq, brend rangida (matn
       // kontrasti textOnBrand/brand juftligi bilan kafolatlangan).
       snackBarTheme: SnackBarThemeData(
@@ -169,6 +220,21 @@ abstract final class FeThemeBuilder {
           backgroundColor: c.brand,
           foregroundColor: c.textOnBrand,
           minimumSize: const Size(FeTouch.minTarget * 2, 52),
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(FeRadius.md),
+          ),
+          textStyle: text.labelLarge?.copyWith(
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.1,
+          ),
+          animationDuration: FeMotion.fast,
+        ),
+      ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          foregroundColor: c.accent,
+          minimumSize: const Size(FeTouch.minTarget, FeTouch.minTarget),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(FeRadius.md),
           ),
@@ -183,6 +249,7 @@ abstract final class FeThemeBuilder {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(FeRadius.md),
           ),
+          animationDuration: FeMotion.fast,
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
@@ -192,7 +259,7 @@ abstract final class FeThemeBuilder {
         prefixIconColor: c.textSecondary,
         contentPadding: const EdgeInsets.symmetric(
           horizontal: FeSpace.md,
-          vertical: FeSpace.sm,
+          vertical: FeSpace.md,
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(FeRadius.md),
@@ -268,6 +335,9 @@ abstract final class FeThemeBuilder {
         builders: {
           TargetPlatform.android: FePageTransitionsBuilder(),
           TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+          TargetPlatform.linux: FePageTransitionsBuilder(),
+          TargetPlatform.macOS: CupertinoPageTransitionsBuilder(),
+          TargetPlatform.windows: FePageTransitionsBuilder(),
         },
       ),
     );
@@ -298,7 +368,7 @@ class FePageTransitionsBuilder extends PageTransitionsBuilder {
   const FePageTransitionsBuilder();
 
   @override
-  Duration get transitionDuration => const Duration(milliseconds: 240);
+  Duration get transitionDuration => FeMotion.page;
 
   @override
   Duration get reverseTransitionDuration => const Duration(milliseconds: 200);
@@ -314,7 +384,7 @@ class FePageTransitionsBuilder extends PageTransitionsBuilder {
     if (MediaQuery.maybeDisableAnimationsOf(context) ?? false) return child;
     final curved = CurvedAnimation(
       parent: animation,
-      curve: Curves.easeOutCubic,
+      curve: FeMotion.curve,
       reverseCurve: Curves.easeInCubic,
     );
     return FadeTransition(

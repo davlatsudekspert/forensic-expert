@@ -87,10 +87,12 @@ class _ClassQuizHubState extends ConsumerState<ClassQuizHubScreen> {
                 children: [
                   const SizedBox(height: FeSpace.sm),
                   const ClassDemoBanner(),
-                  FeBanner(
-                    icon: Icons.groups_2_outlined,
-                    text: l.classQuizIntro,
-                    tone: FeBannerTone.review,
+                  // Kirish izohi — banner emas, sokin matn (tepada bitta
+                  // ogohlantirish yetarli).
+                  Text(
+                    l.classQuizIntro,
+                    key: const Key('class.intro'),
+                    style: t.bodyMedium?.copyWith(color: c.textSecondary),
                   ),
                   if (!svc.isConfigured) ...[
                     const SizedBox(height: FeSpace.md),

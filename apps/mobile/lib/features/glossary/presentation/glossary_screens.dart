@@ -399,6 +399,7 @@ Future<void> showGlossaryTermSheet(
   final home = inHome ?? _inHomeTab(context);
   final l = AppLocalizations.of(context);
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     isScrollControlled: true,
     showDragHandle: true,

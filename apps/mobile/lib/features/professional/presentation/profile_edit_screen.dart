@@ -667,6 +667,7 @@ class _CountryField extends StatelessWidget {
         borderRadius: BorderRadius.circular(FeRadius.sm),
         onTap: () async {
           final code = await showModalBottomSheet<String>(
+            useRootNavigator: true,
             context: context,
             isScrollControlled: true,
             useSafeArea: true,

@@ -376,7 +376,7 @@ void main() {
 
   testWidgets('qorong‘i rejim va o‘zbekcha: xatosiz chiziladi', (tester) async {
     await open(tester, Routes.study, theme: ThemeMode.dark, lang: 'uz');
-    expect(find.text('O‘quv rejimi'), findsOneWidget);
+    expect(find.text('Mashqlar'), findsOneWidget);
     await tap(tester, 'study.quiz.$guidelineDeck');
     expect(find.textContaining('TEST mazmun g'), findsWidgets);
     expect(tester.takeException(), isNull);

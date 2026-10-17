@@ -879,15 +879,21 @@ class _ContentJurisdictionLayer extends ConsumerWidget {
               onPressed: () => context.push(Routes.compare),
             ),
           ),
-        Padding(
-          padding: const EdgeInsets.only(top: FeSpace.xs, bottom: 4),
-          child: Text(l.detailNationalMethods, style: t.titleSmall),
-        ),
-        FeEmptyState(
-          icon: Icons.rule_folder_outlined,
-          body: l.jurisdictionNoContent,
-          compact: true,
-        ),
+        // Milliy metodikalar hali yuklanmagan. Huquqiy qoidalar ham bo‘sh
+        // bo‘lsa, yuqoridagi bitta izoh («huquqiy va protsessual kontent»)
+        // ikkalasini qamraydi — bir xil uzun matn takrorlanmaydi.
+        if (rules.isNotEmpty) ...[
+          Padding(
+            padding: const EdgeInsets.only(top: FeSpace.xs, bottom: 4),
+            child: Text(l.detailNationalMethods, style: t.titleSmall),
+          ),
+          FeEmptyState(
+            key: const Key('legal.nationalMethods.empty'),
+            icon: Icons.rule_folder_outlined,
+            body: l.legalNationalMethodsEmpty,
+            compact: true,
+          ),
+        ],
       ],
     );
   }

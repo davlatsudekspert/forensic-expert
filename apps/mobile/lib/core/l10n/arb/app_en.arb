@@ -136,11 +136,11 @@
   "@moduleLaboratory": {
     "description": "Home module."
   },
-  "moduleSubstances": "Substance Library",
+  "moduleSubstances": "Substances",
   "@moduleSubstances": {
     "description": "Home module."
   },
-  "moduleLearn": "Learn",
+  "moduleLearn": "Learning",
   "@moduleLearn": {
     "description": "Home module."
   },
@@ -216,7 +216,7 @@
   "@themeDark": {
     "description": "Theme option."
   },
-  "settingsMode": "Usage mode",
+  "settingsMode": "Mode: student or professional",
   "@settingsMode": {
     "description": "Settings row."
   },
@@ -1827,11 +1827,11 @@
   "@legalStatusRepealed": {
     "description": "Instrument legal status."
   },
-  "aiExperienceProfessional": "Short answer",
+  "aiExperienceProfessional": "Short",
   "@aiExperienceProfessional": {
     "description": "AI experience toggle."
   },
-  "aiExperienceTutor": "Explain it to me",
+  "aiExperienceTutor": "Detailed",
   "@aiExperienceTutor": {
     "description": "AI experience toggle."
   },
@@ -6704,7 +6704,7 @@
   "@homeResourcesHeading": {
     "description": "Home section: scientific library and professional tools."
   },
-  "homeLibraryBody": "Substances, methods, standards and references",
+  "homeLibraryBody": "Everything: substances, methods, standards, references",
   "@homeLibraryBody": {
     "description": "Home: subtitle of the scientific library entry."
   },
@@ -7109,7 +7109,7 @@
       }
     }
   },
-  "studyTitle": "Study mode",
+  "studyTitle": "Practice",
   "@studyTitle": {
     "description": "Study mode title."
   },
@@ -8254,11 +8254,11 @@
   "@homeAreasTitle": {
     "description": "Home section: subject areas."
   },
-  "homeActLearnTitle": "Study & quizzes",
+  "homeActLearnTitle": "Learning",
   "@homeActLearnTitle": {
     "description": "Quick action."
   },
-  "homeActLearnBody": "Flashcards, quizzes, exam practice",
+  "homeActLearnBody": "Courses, practice, class quiz",
   "@homeActLearnBody": {
     "description": "Quick action hint."
   },
@@ -12475,5 +12475,97 @@
   "classErrBadReason": "Reason is too short.",
   "@classErrBadReason": {
     "description": "Error."
+  },
+  "unverifiedChip": "Not yet expert-confirmed",
+  "@unverifiedChip": {
+    "description": "Short one-line status chip on a record page. Full meaning is unverifiedBanner (read by screen readers)."
+  },
+  "legalNationalMethodsEmpty": "National methods are not loaded yet.",
+  "@legalNationalMethodsEmpty": {
+    "description": "Short empty note under 'National methods and procedures' when legal rules exist."
+  },
+  "teacherPanelTitle": "Teacher panel",
+  "@teacherPanelTitle": {
+    "description": "Home card and screen title: teacher tools for the class quiz."
+  },
+  "teacherPanelHomeBody": "Run a class quiz and get the results as CSV",
+  "@teacherPanelHomeBody": {
+    "description": "Home card subtitle for users with the teacher role."
+  },
+  "teacherPanelHomeBodyStudent": "Join a class quiz with your teacher's code",
+  "@teacherPanelHomeBodyStudent": {
+    "description": "Home card subtitle for users without the teacher role."
+  },
+  "teacherPanelIntro": "Three simple actions: run a quiz, see the results, and students join with a code.",
+  "@teacherPanelIntro": {
+    "description": "Intro line on the teacher panel."
+  },
+  "teacherRunTitle": "Run a quiz",
+  "@teacherRunTitle": {
+    "description": "Teacher panel action: create and host a class quiz."
+  },
+  "teacherRunBody": "Pick a topic — a 6-digit code and QR appear for the class",
+  "@teacherRunBody": {
+    "description": "Teacher panel action subtitle."
+  },
+  "teacherResultsTitle": "Results and CSV",
+  "@teacherResultsTitle": {
+    "description": "Teacher panel action and screen title: past class quizzes with CSV export."
+  },
+  "teacherResultsBody": "Past quizzes, leaderboard and a CSV file",
+  "@teacherResultsBody": {
+    "description": "Teacher panel action subtitle."
+  },
+  "teacherJoinTitle": "Join a class (student)",
+  "@teacherJoinTitle": {
+    "description": "Teacher panel action: the student join flow."
+  },
+  "teacherJoinBody": "With the code or QR from the teacher",
+  "@teacherJoinBody": {
+    "description": "Teacher panel action subtitle."
+  },
+  "teacherRoleNeeded": "Teacher role required — see the note below",
+  "@teacherRoleNeeded": {
+    "description": "Subtitle of a disabled teacher action for users without the teacher role."
+  },
+  "teacherResultsEmpty": "No quizzes yet. Start with “Run a quiz” — the results will appear here.",
+  "@teacherResultsEmpty": {
+    "description": "Empty state of the teacher results list."
+  },
+  "disciplineNextTitle": "Next steps",
+  "@disciplineNextTitle": {
+    "description": "Section heading at the end of a discipline page."
+  },
+  "disciplineSearchCta": "Search this discipline",
+  "@disciplineSearchCta": {
+    "description": "Discipline page tile: opens search pre-filled with the discipline name."
+  },
+  "disciplineSearchBody": "Across substances, methods and sources",
+  "@disciplineSearchBody": {
+    "description": "Subtitle of the discipline search tile."
+  },
+  "referralHowTitle": "How it works",
+  "@referralHowTitle": {
+    "description": "Heading of the three referral steps."
+  },
+  "referralHow1": "You send your personal code or link to a colleague.",
+  "@referralHow1": {
+    "description": "Referral step 1."
+  },
+  "referralHow2": "Your colleague creates a new account with that code.",
+  "@referralHow2": {
+    "description": "Referral step 2."
+  },
+  "referralHow3": "You see only totals — never names or personal data.",
+  "@referralHow3": {
+    "description": "Referral step 3 (privacy)."
+  },
+  "pubEmptyTitle": "No articles yet",
+  "@pubEmptyTitle": {
+    "description": "Title of the empty published-articles list."
+  },
+  "pubEmptyBody": "Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.",
+  "@pubEmptyBody": {
+    "description": "Body of the empty published-articles list."
   }
 }

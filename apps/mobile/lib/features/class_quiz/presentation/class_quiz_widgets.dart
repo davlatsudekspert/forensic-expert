@@ -46,6 +46,31 @@ String classFailureText(AppLocalizations l, ClassFailure f) => switch (f) {
   ClassFailure.badReason => l.classErrBadReason,
 };
 
+/// Sinf natijasini CSV fayl sifatida saqlash/ulashish (ustoz paneli va
+/// yakuniy ekran uchun bitta yo‘l). Xato bo‘lsa — tushunarli snackbar.
+Future<void> exportClassResultsCsv(
+  BuildContext context,
+  WidgetRef ref,
+  ClassSessionInfo s,
+) async {
+  final l = AppLocalizations.of(context);
+  final messenger = ScaffoldMessenger.of(context);
+  final share = ref.read(classFileShareProvider);
+  final r = await ref.read(classQuizServiceProvider).exportResults(s.id);
+  final ex = r.value;
+  if (ex == null) {
+    messenger.showSnackBar(
+      SnackBar(content: Text(classFailureText(l, r.failure!))),
+    );
+    return;
+  }
+  await share.shareCsv(
+    fileName: ClassResultsCsv.fileName(s.code, DateTime.now()),
+    content: ClassResultsCsv.build(ex.rows),
+    subject: l.classCsvSubject,
+  );
+}
+
 /// Variant belgisi: A, B, C, D (tartib raqami bo‘yicha).
 String classOptionLetter(int i) => String.fromCharCode(0x41 + i);
 

@@ -116,10 +116,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moduleLaboratory => 'Laboratory';
 
   @override
-  String get moduleSubstances => 'Substance Library';
+  String get moduleSubstances => 'Substances';
 
   @override
-  String get moduleLearn => 'Learn';
+  String get moduleLearn => 'Learning';
 
   @override
   String get moduleAi => 'Forensic AI';
@@ -179,7 +179,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get themeDark => 'Dark';
 
   @override
-  String get settingsMode => 'Usage mode';
+  String get settingsMode => 'Mode: student or professional';
 
   @override
   String get scientificDatabaseLabel => 'Scientific database';
@@ -1403,10 +1403,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get legalStatusRepealed => 'Repealed';
 
   @override
-  String get aiExperienceProfessional => 'Short answer';
+  String get aiExperienceProfessional => 'Short';
 
   @override
-  String get aiExperienceTutor => 'Explain it to me';
+  String get aiExperienceTutor => 'Detailed';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -5177,7 +5177,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeResourcesHeading => 'Library & tools';
 
   @override
-  String get homeLibraryBody => 'Substances, methods, standards and references';
+  String get homeLibraryBody =>
+      'Everything: substances, methods, standards, references';
 
   @override
   String get homeContinueSaved => 'Continue & saved';
@@ -5483,7 +5484,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get studyTitle => 'Study mode';
+  String get studyTitle => 'Practice';
 
   @override
   String get studyEntrySubtitle =>
@@ -6355,10 +6356,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeAreasTitle => 'Areas';
 
   @override
-  String get homeActLearnTitle => 'Study & quizzes';
+  String get homeActLearnTitle => 'Learning';
 
   @override
-  String get homeActLearnBody => 'Flashcards, quizzes, exam practice';
+  String get homeActLearnBody => 'Courses, practice, class quiz';
 
   @override
   String get homeActGuidelinesBody => 'Practical guidance by discipline';
@@ -9620,4 +9621,83 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classErrBadReason => 'Reason is too short.';
+
+  @override
+  String get unverifiedChip => 'Not yet expert-confirmed';
+
+  @override
+  String get legalNationalMethodsEmpty =>
+      'National methods are not loaded yet.';
+
+  @override
+  String get teacherPanelTitle => 'Teacher panel';
+
+  @override
+  String get teacherPanelHomeBody =>
+      'Run a class quiz and get the results as CSV';
+
+  @override
+  String get teacherPanelHomeBodyStudent =>
+      'Join a class quiz with your teacher\'s code';
+
+  @override
+  String get teacherPanelIntro =>
+      'Three simple actions: run a quiz, see the results, and students join with a code.';
+
+  @override
+  String get teacherRunTitle => 'Run a quiz';
+
+  @override
+  String get teacherRunBody =>
+      'Pick a topic — a 6-digit code and QR appear for the class';
+
+  @override
+  String get teacherResultsTitle => 'Results and CSV';
+
+  @override
+  String get teacherResultsBody => 'Past quizzes, leaderboard and a CSV file';
+
+  @override
+  String get teacherJoinTitle => 'Join a class (student)';
+
+  @override
+  String get teacherJoinBody => 'With the code or QR from the teacher';
+
+  @override
+  String get teacherRoleNeeded => 'Teacher role required — see the note below';
+
+  @override
+  String get teacherResultsEmpty =>
+      'No quizzes yet. Start with “Run a quiz” — the results will appear here.';
+
+  @override
+  String get disciplineNextTitle => 'Next steps';
+
+  @override
+  String get disciplineSearchCta => 'Search this discipline';
+
+  @override
+  String get disciplineSearchBody => 'Across substances, methods and sources';
+
+  @override
+  String get referralHowTitle => 'How it works';
+
+  @override
+  String get referralHow1 =>
+      'You send your personal code or link to a colleague.';
+
+  @override
+  String get referralHow2 =>
+      'Your colleague creates a new account with that code.';
+
+  @override
+  String get referralHow3 =>
+      'You see only totals — never names or personal data.';
+
+  @override
+  String get pubEmptyTitle => 'No articles yet';
+
+  @override
+  String get pubEmptyBody =>
+      'Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.';
 }

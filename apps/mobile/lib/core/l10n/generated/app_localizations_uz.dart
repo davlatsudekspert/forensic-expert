@@ -116,10 +116,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get moduleLaboratory => 'Laboratoriya';
 
   @override
-  String get moduleSubstances => 'Moddalar kutubxonasi';
+  String get moduleSubstances => 'Moddalar';
 
   @override
-  String get moduleLearn => 'Ta’lim';
+  String get moduleLearn => 'O‘qish';
 
   @override
   String get moduleAi => 'Forensic AI';
@@ -181,7 +181,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get themeDark => 'Qorong‘i';
 
   @override
-  String get settingsMode => 'Foydalanish rejimi';
+  String get settingsMode => 'Rejim: talaba yoki mutaxassis';
 
   @override
   String get scientificDatabaseLabel => 'Ilmiy baza';
@@ -522,7 +522,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get searchGroupTools => 'Vositalar';
 
   @override
-  String get searchGroupLearning => 'Ta’lim';
+  String get searchGroupLearning => 'O‘qish';
 
   @override
   String get searchClearHistory => 'Tarixni tozalash';
@@ -1407,10 +1407,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get legalStatusRepealed => 'Kuchini yo‘qotgan';
 
   @override
-  String get aiExperienceProfessional => 'Qisqa javob';
+  String get aiExperienceProfessional => 'Qisqa';
 
   @override
-  String get aiExperienceTutor => 'Tushuntirib bering';
+  String get aiExperienceTutor => 'Batafsil';
 
   @override
   String get aiExperienceProfessionalHint =>
@@ -5170,7 +5170,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeResourcesHeading => 'Kutubxona va vositalar';
 
   @override
-  String get homeLibraryBody => 'Moddalar, usullar, standartlar va manbalar';
+  String get homeLibraryBody =>
+      'Hamma bo‘limlar: moddalar, usullar, standartlar, manbalar';
 
   @override
   String get homeContinueSaved => 'Davom ettirish va saqlanganlar';
@@ -5479,7 +5480,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get studyTitle => 'O‘quv rejimi';
+  String get studyTitle => 'Mashqlar';
 
   @override
   String get studyEntrySubtitle =>
@@ -6345,10 +6346,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeAreasTitle => 'Bo‘limlar';
 
   @override
-  String get homeActLearnTitle => 'O‘qish va testlar';
+  String get homeActLearnTitle => 'O‘qish';
 
   @override
-  String get homeActLearnBody => 'Kartochkalar, testlar, imtihon';
+  String get homeActLearnBody => 'Kurslar, mashqlar, sinfda test';
 
   @override
   String get homeActGuidelinesBody => 'Fanlar bo‘yicha amaliy yo‘riqlar';
@@ -9585,4 +9586,82 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classErrBadReason => 'Sabab juda qisqa.';
+
+  @override
+  String get unverifiedChip => 'Ekspert hali tasdiqlamagan';
+
+  @override
+  String get legalNationalMethodsEmpty =>
+      'Milliy metodikalar hali yuklanmagan.';
+
+  @override
+  String get teacherPanelTitle => 'Ustoz paneli';
+
+  @override
+  String get teacherPanelHomeBody =>
+      'Sinfda test o‘tkazing, natijalarni CSV’da oling';
+
+  @override
+  String get teacherPanelHomeBodyStudent =>
+      'Ustoz kodi bilan sinfda testga qo‘shiling';
+
+  @override
+  String get teacherPanelIntro =>
+      'Uchta oddiy amal: test o‘tkazing, natijalarni ko‘ring, talabalar esa kod bilan qo‘shiladi.';
+
+  @override
+  String get teacherRunTitle => 'Test o‘tkazish';
+
+  @override
+  String get teacherRunBody =>
+      'Mavzuni tanlang — sinf uchun 6 xonali kod va QR chiqadi';
+
+  @override
+  String get teacherResultsTitle => 'Natijalar va CSV';
+
+  @override
+  String get teacherResultsBody => 'O‘tkazilgan testlar, reyting va CSV fayl';
+
+  @override
+  String get teacherJoinTitle => 'Sinfga qo‘shilish (talaba)';
+
+  @override
+  String get teacherJoinBody => 'Ustoz bergan kod yoki QR bilan';
+
+  @override
+  String get teacherRoleNeeded => 'Ustoz roli kerak — pastdagi izohga qarang';
+
+  @override
+  String get teacherResultsEmpty =>
+      'Hali test o‘tkazilmagan. «Test o‘tkazish»dan boshlang — natijalar shu yerda chiqadi.';
+
+  @override
+  String get disciplineNextTitle => 'Keyingi qadam';
+
+  @override
+  String get disciplineSearchCta => 'Shu fan bo‘yicha qidirish';
+
+  @override
+  String get disciplineSearchBody => 'Moddalar, usullar va manbalar ichidan';
+
+  @override
+  String get referralHowTitle => 'Qanday ishlaydi';
+
+  @override
+  String get referralHow1 =>
+      'Shaxsiy kodingiz yoki havolangizni hamkasbingizga yuborasiz.';
+
+  @override
+  String get referralHow2 => 'Hamkasbingiz shu kod bilan yangi hisob ochadi.';
+
+  @override
+  String get referralHow3 =>
+      'Siz faqat umumiy sonlarni ko‘rasiz — ismlar va ma’lumotlar ko‘rinmaydi.';
+
+  @override
+  String get pubEmptyTitle => 'Hali maqola yo‘q';
+
+  @override
+  String get pubEmptyBody =>
+      'Tajribangiz bilan birinchi bo‘lib bo‘lishing: «Maqola yuborish» tugmasi pastda. Moderatsiyadan so‘ng maqola shu yerda chiqadi.';
 }

@@ -134,7 +134,8 @@ class _PublicationsScreenState extends ConsumerState<PublicationsScreen> {
             FeEmptyState(
               key: const Key('publications.empty'),
               icon: Icons.article_outlined,
-              body: l.pubEmpty,
+              title: l.pubEmptyTitle,
+              body: l.pubEmptyBody,
             ),
           ];
         }

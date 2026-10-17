@@ -3,6 +3,7 @@ import 'dart:ui' show ImageFilter, lerpDouble;
 import 'package:flutter/material.dart';
 
 import '../../../core/design/theme.dart';
+import '../../../core/design/tokens.dart';
 
 /// Suzuvchi menyudagi bitta bo‘lim.
 class FloatingNavItem {
@@ -95,7 +96,9 @@ class FloatingNavBar extends StatelessWidget {
           decoration: BoxDecoration(
             color: fill,
             borderRadius: radius,
-            border: Border.all(color: c.borderStrong.withValues(alpha: 0.55)),
+            border: Border.all(
+              color: c.borderStrong.withValues(alpha: dark ? 0.45 : 0.28),
+            ),
           ),
           child: Row(
             children: [
@@ -123,13 +126,9 @@ class FloatingNavBar extends StatelessWidget {
         return DecoratedBox(
           decoration: BoxDecoration(
             borderRadius: radius,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: dark ? 0.45 : 0.16),
-                blurRadius: 18,
-                offset: const Offset(0, 6),
-              ),
-            ],
+            boxShadow: FeShadow.floating(
+              dark ? Brightness.dark : Brightness.light,
+            ),
           ),
           child: SizedBox(
             key: const Key('nav.floating'),
