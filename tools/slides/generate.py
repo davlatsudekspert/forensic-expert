@@ -97,7 +97,7 @@ def call_api(client, system, user):
     text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
     Path("out").mkdir(exist_ok=True)
     Path("out/raw_response.txt").write_text(text, encoding="utf-8")
-    print(f"Javob: stop_reason={getattr(resp,'stop_reason','?')} chiqish tokenlari={getattr(resp.usage,'output_tokens','?')}")
+    print(f"Javob: stop_reason={getattr(resp,'stop_reason','?')} chiqish tokenlari={getattr(getattr(resp,'usage',None),'output_tokens','?')}")
     if text.startswith("```"):
         text = text.split("\n", 1)[1].rsplit("```", 1)[0]
     return json.loads(text)
