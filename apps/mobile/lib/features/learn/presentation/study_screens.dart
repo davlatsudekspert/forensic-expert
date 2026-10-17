@@ -96,6 +96,39 @@ class StudyHubScreen extends ConsumerWidget {
                     text: l.studyIntro,
                     tone: FeBannerTone.review,
                   ),
+                  const SizedBox(height: FeSpace.sm),
+                  FeCard(
+                    key: const Key('study.classQuiz'),
+                    onTap: () => context.push(Routes.classQuiz),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.groups_2_outlined,
+                          color: FeTheme.of(context).accent,
+                        ),
+                        const SizedBox(width: FeSpace.sm),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                l.classQuizTitle,
+                                style: Theme.of(context).textTheme.titleSmall,
+                              ),
+                              Text(
+                                l.classQuizCardSubtitle,
+                                style: Theme.of(context).textTheme.bodySmall
+                                    ?.copyWith(
+                                      color: FeTheme.of(context).textSecondary,
+                                    ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Icon(Icons.chevron_right),
+                      ],
+                    ),
+                  ),
                   if (catalog.isEmpty)
                     Padding(
                       padding: const EdgeInsets.only(top: FeSpace.lg),

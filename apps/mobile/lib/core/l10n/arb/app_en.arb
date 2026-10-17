@@ -12278,5 +12278,668 @@
   "deleteAccountAppleNote": "This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app's access to your Apple ID will be revoked.",
   "@deleteAccountAppleNote": {
     "description": "Delete-account screen note for Apple accounts: Apple re-confirmation step."
+  },
+  "classQuizTitle": "Class quiz",
+  "@classQuizTitle": {
+    "description": "Class quiz title."
+  },
+  "classQuizCardSubtitle": "Live quiz run by your teacher: join with a code or QR",
+  "@classQuizCardSubtitle": {
+    "description": "Study hub card subtitle."
+  },
+  "classQuizIntro": "The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.",
+  "@classQuizIntro": {
+    "description": "Hub intro."
+  },
+  "classDemoBanner": "Demo mode: data stays on this device only. A real class needs the server connection.",
+  "@classDemoBanner": {
+    "description": "Demo adapter banner."
+  },
+  "classDemoChip": "DEMO",
+  "@classDemoChip": {
+    "description": "Demo chip."
+  },
+  "classJoinSection": "Join a class",
+  "@classJoinSection": {
+    "description": "Section."
+  },
+  "classJoinHint": "Enter the 6-digit code from the teacher’s screen or scan the QR.",
+  "@classJoinHint": {
+    "description": "Hint."
+  },
+  "classJoinTitle": "Join class",
+  "@classJoinTitle": {
+    "description": "Join screen title."
+  },
+  "classJoinAction": "Join",
+  "@classJoinAction": {
+    "description": "Button."
+  },
+  "classCodeLabel": "Class code",
+  "@classCodeLabel": {
+    "description": "Field label."
+  },
+  "classCodeSpoken": "Class code {code}",
+  "@classCodeSpoken": {
+    "description": "Screen reader.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "classNickLabel": "Nickname",
+  "@classNickLabel": {
+    "description": "Field label."
+  },
+  "classNickHelper": "2–20 characters. The teacher sees only this nickname — not your name or e-mail.",
+  "@classNickHelper": {
+    "description": "Helper."
+  },
+  "classScanAction": "Scan QR",
+  "@classScanAction": {
+    "description": "Button."
+  },
+  "classScanTitle": "Scan class QR",
+  "@classScanTitle": {
+    "description": "Scan screen title."
+  },
+  "classScanHint": "Point the camera at the QR on the teacher’s screen.",
+  "@classScanHint": {
+    "description": "Hint."
+  },
+  "classScanPermission": "Camera access is off. Allow it in Settings or enter the code by hand.",
+  "@classScanPermission": {
+    "description": "Camera denied."
+  },
+  "classScanUnavailable": "The camera can’t be used here. Enter the code by hand.",
+  "@classScanUnavailable": {
+    "description": "Camera unavailable."
+  },
+  "classScanManual": "Enter code by hand",
+  "@classScanManual": {
+    "description": "Button."
+  },
+  "classResume": "Continue: {topic}",
+  "@classResume": {
+    "description": "Resume card.",
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "classTeacherSection": "For teachers",
+  "@classTeacherSection": {
+    "description": "Section."
+  },
+  "classNotTeacherNote": "The test is run by a teacher. The teacher role is granted by the FORENSIC EXPERT team on the server; ask us if you teach a class.",
+  "@classNotTeacherNote": {
+    "description": "Not a teacher note."
+  },
+  "classNewAction": "New class quiz",
+  "@classNewAction": {
+    "description": "Button."
+  },
+  "classNewTitle": "New class quiz",
+  "@classNewTitle": {
+    "description": "Screen title."
+  },
+  "classRecentSection": "Recent classes",
+  "@classRecentSection": {
+    "description": "Section."
+  },
+  "classSessionLine": "{code} · {status}",
+  "@classSessionLine": {
+    "description": "Session subtitle.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "classStatusLobby": "Waiting for students",
+  "@classStatusLobby": {
+    "description": "Status."
+  },
+  "classStatusRunning": "In progress",
+  "@classStatusRunning": {
+    "description": "Status."
+  },
+  "classStatusFinished": "Finished",
+  "@classStatusFinished": {
+    "description": "Status."
+  },
+  "classPrivacyNote": "The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.",
+  "@classPrivacyNote": {
+    "description": "Privacy note."
+  },
+  "classSignInTitle": "Sign in to join",
+  "@classSignInTitle": {
+    "description": "Sign-in card."
+  },
+  "classSignInBody": "Your result is tied to your account on the server. Other students and the teacher only see your nickname.",
+  "@classSignInBody": {
+    "description": "Sign-in body."
+  },
+  "classSignInAction": "Sign in",
+  "@classSignInAction": {
+    "description": "Button."
+  },
+  "classTeacherOnlyTitle": "Teachers only",
+  "@classTeacherOnlyTitle": {
+    "description": "Forbidden title."
+  },
+  "classTeacherOnlyBody": "This screen is available to accounts with the teacher role. The server enforces this.",
+  "@classTeacherOnlyBody": {
+    "description": "Forbidden body."
+  },
+  "classTopicSection": "Topic",
+  "@classTopicSection": {
+    "description": "Section."
+  },
+  "classNoTopics": "No question bank is available yet.",
+  "@classNoTopics": {
+    "description": "Empty topics."
+  },
+  "classQuestionsAvailable": "{count} questions",
+  "@classQuestionsAvailable": {
+    "description": "Topic subtitle.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classSettingsSection": "Settings",
+  "@classSettingsSection": {
+    "description": "Section."
+  },
+  "classQuestionCount": "Number of questions",
+  "@classQuestionCount": {
+    "description": "Slider label."
+  },
+  "classStudentLimit": "Student limit",
+  "@classStudentLimit": {
+    "description": "Slider label."
+  },
+  "classSecondsPerQuestion": "Time per question",
+  "@classSecondsPerQuestion": {
+    "description": "Label."
+  },
+  "classSecondsShort": "{seconds} s",
+  "@classSecondsShort": {
+    "description": "Segment.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "classSecondsLeft": "{seconds} seconds left",
+  "@classSecondsLeft": {
+    "description": "Screen reader.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "classCreateAction": "Create class",
+  "@classCreateAction": {
+    "description": "Button."
+  },
+  "classHostJoinHint": "Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:",
+  "@classHostJoinHint": {
+    "description": "Projector hint."
+  },
+  "classQrSemantics": "QR code to join the class",
+  "@classQrSemantics": {
+    "description": "Screen reader."
+  },
+  "classJoinedCount": "Joined: {joined} / {limit}",
+  "@classJoinedCount": {
+    "description": "Counter.",
+    "placeholders": {
+      "joined": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "classWaitingForStudents": "Waiting for students to join…",
+  "@classWaitingForStudents": {
+    "description": "Empty lobby."
+  },
+  "classReportsCount": "{count} nickname report(s) — review the list",
+  "@classReportsCount": {
+    "description": "Reports.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classStartAction": "Start",
+  "@classStartAction": {
+    "description": "Button."
+  },
+  "classKickTitle": "Remove from class?",
+  "@classKickTitle": {
+    "description": "Dialog title."
+  },
+  "classKickBody": "“{nickname}” will be removed and cannot rejoin.",
+  "@classKickBody": {
+    "description": "Dialog body.",
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "classKickAction": "Remove",
+  "@classKickAction": {
+    "description": "Button."
+  },
+  "classCancel": "Cancel",
+  "@classCancel": {
+    "description": "Button."
+  },
+  "classQuestionOf": "Question {n} of {total}",
+  "@classQuestionOf": {
+    "description": "Header.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classAnswered": "Answered: {count} of {total}",
+  "@classAnswered": {
+    "description": "Live stat.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classCorrectPct": "{pct}% correct",
+  "@classCorrectPct": {
+    "description": "Live stat.",
+    "placeholders": {
+      "pct": {
+        "type": "int"
+      }
+    }
+  },
+  "classLeaderboard": "Leaderboard",
+  "@classLeaderboard": {
+    "description": "Section."
+  },
+  "classNoScoresYet": "No scores yet.",
+  "@classNoScoresYet": {
+    "description": "Empty."
+  },
+  "classCloseQuestion": "Close question",
+  "@classCloseQuestion": {
+    "description": "Button."
+  },
+  "classNextQuestion": "Next question",
+  "@classNextQuestion": {
+    "description": "Button."
+  },
+  "classFinishAction": "Finish quiz",
+  "@classFinishAction": {
+    "description": "Button."
+  },
+  "classEndAction": "End quiz",
+  "@classEndAction": {
+    "description": "Button."
+  },
+  "classEndTitle": "End the quiz now?",
+  "@classEndTitle": {
+    "description": "Dialog."
+  },
+  "classEndBody": "Students will see their results. This can’t be undone.",
+  "@classEndBody": {
+    "description": "Dialog."
+  },
+  "classFinishedTitle": "Quiz finished",
+  "@classFinishedTitle": {
+    "description": "Title."
+  },
+  "classFinishedSummary": "{students} students · {questions} questions",
+  "@classFinishedSummary": {
+    "description": "Summary.",
+    "placeholders": {
+      "students": {
+        "type": "int"
+      },
+      "questions": {
+        "type": "int"
+      }
+    }
+  },
+  "classHardestTitle": "Hardest questions",
+  "@classHardestTitle": {
+    "description": "Section."
+  },
+  "classNoAnswersYet": "No answers recorded.",
+  "@classNoAnswersYet": {
+    "description": "Empty."
+  },
+  "classExportCsv": "Save / share results (CSV)",
+  "@classExportCsv": {
+    "description": "Button."
+  },
+  "classCsvSubject": "Class quiz results",
+  "@classCsvSubject": {
+    "description": "Share subject."
+  },
+  "classDone": "Done",
+  "@classDone": {
+    "description": "Button."
+  },
+  "classRetentionNote": "The class is deleted automatically {days} days after it ends.",
+  "@classRetentionNote": {
+    "description": "Retention.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "classRetry": "Try again",
+  "@classRetry": {
+    "description": "Button."
+  },
+  "classExit": "Leave",
+  "@classExit": {
+    "description": "Button."
+  },
+  "classLobbyWelcome": "You’re in, {nickname}!",
+  "@classLobbyWelcome": {
+    "description": "Lobby.",
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "classLobbyWait": "Wait for the teacher to start the quiz.",
+  "@classLobbyWait": {
+    "description": "Lobby."
+  },
+  "classChooseAnswer": "Choose an answer.",
+  "@classChooseAnswer": {
+    "description": "Status."
+  },
+  "classAnswerAccepted": "Answer received. The result appears when the time is up.",
+  "@classAnswerAccepted": {
+    "description": "Status."
+  },
+  "classTimeUpWaiting": "Time’s up. Checking the answer…",
+  "@classTimeUpWaiting": {
+    "description": "Status."
+  },
+  "classResultCorrect": "Correct! +{points} points",
+  "@classResultCorrect": {
+    "description": "Status.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "classResultWrong": "Not correct.",
+  "@classResultWrong": {
+    "description": "Status."
+  },
+  "classResultNoAnswer": "No answer given.",
+  "@classResultNoAnswer": {
+    "description": "Status."
+  },
+  "classWaitNext": "Wait for the teacher to open the next question.",
+  "@classWaitNext": {
+    "description": "Status."
+  },
+  "classScoreLine": "Score: {score}",
+  "@classScoreLine": {
+    "description": "Score.",
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "classRankLine": "Rank {rank} of {total}",
+  "@classRankLine": {
+    "description": "Rank.",
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classCorrectOfTotal": "{correct} of {total} correct",
+  "@classCorrectOfTotal": {
+    "description": "Result.",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classTopFive": "Top 5",
+  "@classTopFive": {
+    "description": "Section."
+  },
+  "classMistakesTitle": "Questions to review",
+  "@classMistakesTitle": {
+    "description": "Section."
+  },
+  "classNoMistakes": "Every answer was correct. Well done!",
+  "@classNoMistakes": {
+    "description": "Empty."
+  },
+  "classQuestionNumber": "Question {n}",
+  "@classQuestionNumber": {
+    "description": "Label.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "classYourAnswer": "Your answer: {text}",
+  "@classYourAnswer": {
+    "description": "Label.",
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "classCorrectAnswer": "Correct answer: {text}",
+  "@classCorrectAnswer": {
+    "description": "Label.",
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "classSourceLine": "Source: {author}, {title}, p. {page}",
+  "@classSourceLine": {
+    "description": "Source.",
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "classOptionCorrect": "correct",
+  "@classOptionCorrect": {
+    "description": "Option tag."
+  },
+  "classOptionWrong": "your answer, wrong",
+  "@classOptionWrong": {
+    "description": "Option tag."
+  },
+  "classOptionChosen": "your choice",
+  "@classOptionChosen": {
+    "description": "Option tag."
+  },
+  "classReportTitle": "Report this nickname?",
+  "@classReportTitle": {
+    "description": "Dialog."
+  },
+  "classReportBody": "“{nickname}” will be sent to the teacher for review.",
+  "@classReportBody": {
+    "description": "Dialog.",
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "classReportAction": "Report",
+  "@classReportAction": {
+    "description": "Button."
+  },
+  "classReportReason": "Inappropriate nickname",
+  "@classReportReason": {
+    "description": "Report reason sent to the server."
+  },
+  "classReportSent": "Report sent. Thank you.",
+  "@classReportSent": {
+    "description": "Snackbar."
+  },
+  "classErrNotConfigured": "Class quiz will be available once the FORENSIC EXPERT server is connected.",
+  "@classErrNotConfigured": {
+    "description": "Error."
+  },
+  "classErrNotSignedIn": "Please sign in first.",
+  "@classErrNotSignedIn": {
+    "description": "Error."
+  },
+  "classErrOffline": "No connection. Check the internet and try again.",
+  "@classErrOffline": {
+    "description": "Error."
+  },
+  "classErrServer": "Something went wrong on the server. Try again in a moment.",
+  "@classErrServer": {
+    "description": "Error."
+  },
+  "classErrForbidden": "You don’t have access to this class.",
+  "@classErrForbidden": {
+    "description": "Error."
+  },
+  "classErrBadCode": "Enter the 6-digit code.",
+  "@classErrBadCode": {
+    "description": "Error."
+  },
+  "classErrNotFound": "No class with this code. Check it and try again.",
+  "@classErrNotFound": {
+    "description": "Error."
+  },
+  "classErrRateLimited": "Too many attempts. Try again in an hour.",
+  "@classErrRateLimited": {
+    "description": "Error."
+  },
+  "classErrOwnSession": "You are the teacher of this class and can’t join it as a student.",
+  "@classErrOwnSession": {
+    "description": "Error."
+  },
+  "classErrFinished": "This quiz has already finished.",
+  "@classErrFinished": {
+    "description": "Error."
+  },
+  "classErrKicked": "The teacher removed you from this class.",
+  "@classErrKicked": {
+    "description": "Error."
+  },
+  "classErrAlreadyStarted": "The quiz has already started — new students can’t join.",
+  "@classErrAlreadyStarted": {
+    "description": "Error."
+  },
+  "classErrFull": "This class is full.",
+  "@classErrFull": {
+    "description": "Error."
+  },
+  "classErrNickLength": "Nickname must be 2–20 characters.",
+  "@classErrNickLength": {
+    "description": "Error."
+  },
+  "classErrNickChars": "This nickname contains characters that aren’t allowed.",
+  "@classErrNickChars": {
+    "description": "Error."
+  },
+  "classErrNickBlocked": "Please choose a different nickname.",
+  "@classErrNickBlocked": {
+    "description": "Error."
+  },
+  "classErrInvalidSettings": "Check the settings: 5–20 questions, 5–200 students, 15/30/45/60 seconds.",
+  "@classErrInvalidSettings": {
+    "description": "Error."
+  },
+  "classErrTooManySessions": "Too many open classes. Finish one first.",
+  "@classErrTooManySessions": {
+    "description": "Error."
+  },
+  "classErrNotEnoughQuestions": "This topic has too few questions (at least 5 are needed).",
+  "@classErrNotEnoughQuestions": {
+    "description": "Error."
+  },
+  "classErrBadState": "That action isn’t possible right now.",
+  "@classErrBadState": {
+    "description": "Error."
+  },
+  "classErrNoParticipants": "Wait until at least one student has joined.",
+  "@classErrNoParticipants": {
+    "description": "Error."
+  },
+  "classErrNotCurrent": "This question is already closed.",
+  "@classErrNotCurrent": {
+    "description": "Error."
+  },
+  "classErrTimeOver": "Time is up — your answer was not counted.",
+  "@classErrTimeOver": {
+    "description": "Error."
+  },
+  "classErrAlreadyAnswered": "You have already answered this question.",
+  "@classErrAlreadyAnswered": {
+    "description": "Error."
+  },
+  "classErrNotFinished": "Results will be available when the quiz ends.",
+  "@classErrNotFinished": {
+    "description": "Error."
+  },
+  "classErrBadReason": "Reason is too short.",
+  "@classErrBadReason": {
+    "description": "Error."
   }
 }

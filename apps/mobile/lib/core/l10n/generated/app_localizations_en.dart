@@ -9512,4 +9512,467 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get deleteAccountAppleNote =>
       'This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app\'s access to your Apple ID will be revoked.';
+
+  @override
+  String get classQuizTitle => 'Class quiz';
+
+  @override
+  String get classQuizCardSubtitle =>
+      'Live quiz run by your teacher: join with a code or QR';
+
+  @override
+  String get classQuizIntro =>
+      'The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.';
+
+  @override
+  String get classDemoBanner =>
+      'Demo mode: data stays on this device only. A real class needs the server connection.';
+
+  @override
+  String get classDemoChip => 'DEMO';
+
+  @override
+  String get classJoinSection => 'Join a class';
+
+  @override
+  String get classJoinHint =>
+      'Enter the 6-digit code from the teacher’s screen or scan the QR.';
+
+  @override
+  String get classJoinTitle => 'Join class';
+
+  @override
+  String get classJoinAction => 'Join';
+
+  @override
+  String get classCodeLabel => 'Class code';
+
+  @override
+  String classCodeSpoken(String code) {
+    return 'Class code $code';
+  }
+
+  @override
+  String get classNickLabel => 'Nickname';
+
+  @override
+  String get classNickHelper =>
+      '2–20 characters. The teacher sees only this nickname — not your name or e-mail.';
+
+  @override
+  String get classScanAction => 'Scan QR';
+
+  @override
+  String get classScanTitle => 'Scan class QR';
+
+  @override
+  String get classScanHint =>
+      'Point the camera at the QR on the teacher’s screen.';
+
+  @override
+  String get classScanPermission =>
+      'Camera access is off. Allow it in Settings or enter the code by hand.';
+
+  @override
+  String get classScanUnavailable =>
+      'The camera can’t be used here. Enter the code by hand.';
+
+  @override
+  String get classScanManual => 'Enter code by hand';
+
+  @override
+  String classResume(String topic) {
+    return 'Continue: $topic';
+  }
+
+  @override
+  String get classTeacherSection => 'For teachers';
+
+  @override
+  String get classNotTeacherNote =>
+      'The test is run by a teacher. The teacher role is granted by the FORENSIC EXPERT team on the server; ask us if you teach a class.';
+
+  @override
+  String get classNewAction => 'New class quiz';
+
+  @override
+  String get classNewTitle => 'New class quiz';
+
+  @override
+  String get classRecentSection => 'Recent classes';
+
+  @override
+  String classSessionLine(String code, String status) {
+    return '$code · $status';
+  }
+
+  @override
+  String get classStatusLobby => 'Waiting for students';
+
+  @override
+  String get classStatusRunning => 'In progress';
+
+  @override
+  String get classStatusFinished => 'Finished';
+
+  @override
+  String get classPrivacyNote =>
+      'The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.';
+
+  @override
+  String get classSignInTitle => 'Sign in to join';
+
+  @override
+  String get classSignInBody =>
+      'Your result is tied to your account on the server. Other students and the teacher only see your nickname.';
+
+  @override
+  String get classSignInAction => 'Sign in';
+
+  @override
+  String get classTeacherOnlyTitle => 'Teachers only';
+
+  @override
+  String get classTeacherOnlyBody =>
+      'This screen is available to accounts with the teacher role. The server enforces this.';
+
+  @override
+  String get classTopicSection => 'Topic';
+
+  @override
+  String get classNoTopics => 'No question bank is available yet.';
+
+  @override
+  String classQuestionsAvailable(int count) {
+    return '$count questions';
+  }
+
+  @override
+  String get classSettingsSection => 'Settings';
+
+  @override
+  String get classQuestionCount => 'Number of questions';
+
+  @override
+  String get classStudentLimit => 'Student limit';
+
+  @override
+  String get classSecondsPerQuestion => 'Time per question';
+
+  @override
+  String classSecondsShort(int seconds) {
+    return '$seconds s';
+  }
+
+  @override
+  String classSecondsLeft(int seconds) {
+    return '$seconds seconds left';
+  }
+
+  @override
+  String get classCreateAction => 'Create class';
+
+  @override
+  String get classHostJoinHint =>
+      'Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:';
+
+  @override
+  String get classQrSemantics => 'QR code to join the class';
+
+  @override
+  String classJoinedCount(int joined, int limit) {
+    return 'Joined: $joined / $limit';
+  }
+
+  @override
+  String get classWaitingForStudents => 'Waiting for students to join…';
+
+  @override
+  String classReportsCount(int count) {
+    return '$count nickname report(s) — review the list';
+  }
+
+  @override
+  String get classStartAction => 'Start';
+
+  @override
+  String get classKickTitle => 'Remove from class?';
+
+  @override
+  String classKickBody(String nickname) {
+    return '“$nickname” will be removed and cannot rejoin.';
+  }
+
+  @override
+  String get classKickAction => 'Remove';
+
+  @override
+  String get classCancel => 'Cancel';
+
+  @override
+  String classQuestionOf(int n, int total) {
+    return 'Question $n of $total';
+  }
+
+  @override
+  String classAnswered(int count, int total) {
+    return 'Answered: $count of $total';
+  }
+
+  @override
+  String classCorrectPct(int pct) {
+    return '$pct% correct';
+  }
+
+  @override
+  String get classLeaderboard => 'Leaderboard';
+
+  @override
+  String get classNoScoresYet => 'No scores yet.';
+
+  @override
+  String get classCloseQuestion => 'Close question';
+
+  @override
+  String get classNextQuestion => 'Next question';
+
+  @override
+  String get classFinishAction => 'Finish quiz';
+
+  @override
+  String get classEndAction => 'End quiz';
+
+  @override
+  String get classEndTitle => 'End the quiz now?';
+
+  @override
+  String get classEndBody =>
+      'Students will see their results. This can’t be undone.';
+
+  @override
+  String get classFinishedTitle => 'Quiz finished';
+
+  @override
+  String classFinishedSummary(int students, int questions) {
+    return '$students students · $questions questions';
+  }
+
+  @override
+  String get classHardestTitle => 'Hardest questions';
+
+  @override
+  String get classNoAnswersYet => 'No answers recorded.';
+
+  @override
+  String get classExportCsv => 'Save / share results (CSV)';
+
+  @override
+  String get classCsvSubject => 'Class quiz results';
+
+  @override
+  String get classDone => 'Done';
+
+  @override
+  String classRetentionNote(int days) {
+    return 'The class is deleted automatically $days days after it ends.';
+  }
+
+  @override
+  String get classRetry => 'Try again';
+
+  @override
+  String get classExit => 'Leave';
+
+  @override
+  String classLobbyWelcome(String nickname) {
+    return 'You’re in, $nickname!';
+  }
+
+  @override
+  String get classLobbyWait => 'Wait for the teacher to start the quiz.';
+
+  @override
+  String get classChooseAnswer => 'Choose an answer.';
+
+  @override
+  String get classAnswerAccepted =>
+      'Answer received. The result appears when the time is up.';
+
+  @override
+  String get classTimeUpWaiting => 'Time’s up. Checking the answer…';
+
+  @override
+  String classResultCorrect(int points) {
+    return 'Correct! +$points points';
+  }
+
+  @override
+  String get classResultWrong => 'Not correct.';
+
+  @override
+  String get classResultNoAnswer => 'No answer given.';
+
+  @override
+  String get classWaitNext => 'Wait for the teacher to open the next question.';
+
+  @override
+  String classScoreLine(int score) {
+    return 'Score: $score';
+  }
+
+  @override
+  String classRankLine(int rank, int total) {
+    return 'Rank $rank of $total';
+  }
+
+  @override
+  String classCorrectOfTotal(int correct, int total) {
+    return '$correct of $total correct';
+  }
+
+  @override
+  String get classTopFive => 'Top 5';
+
+  @override
+  String get classMistakesTitle => 'Questions to review';
+
+  @override
+  String get classNoMistakes => 'Every answer was correct. Well done!';
+
+  @override
+  String classQuestionNumber(int n) {
+    return 'Question $n';
+  }
+
+  @override
+  String classYourAnswer(String text) {
+    return 'Your answer: $text';
+  }
+
+  @override
+  String classCorrectAnswer(String text) {
+    return 'Correct answer: $text';
+  }
+
+  @override
+  String classSourceLine(String author, String title, String page) {
+    return 'Source: $author, $title, p. $page';
+  }
+
+  @override
+  String get classOptionCorrect => 'correct';
+
+  @override
+  String get classOptionWrong => 'your answer, wrong';
+
+  @override
+  String get classOptionChosen => 'your choice';
+
+  @override
+  String get classReportTitle => 'Report this nickname?';
+
+  @override
+  String classReportBody(String nickname) {
+    return '“$nickname” will be sent to the teacher for review.';
+  }
+
+  @override
+  String get classReportAction => 'Report';
+
+  @override
+  String get classReportReason => 'Inappropriate nickname';
+
+  @override
+  String get classReportSent => 'Report sent. Thank you.';
+
+  @override
+  String get classErrNotConfigured =>
+      'Class quiz will be available once the FORENSIC EXPERT server is connected.';
+
+  @override
+  String get classErrNotSignedIn => 'Please sign in first.';
+
+  @override
+  String get classErrOffline =>
+      'No connection. Check the internet and try again.';
+
+  @override
+  String get classErrServer =>
+      'Something went wrong on the server. Try again in a moment.';
+
+  @override
+  String get classErrForbidden => 'You don’t have access to this class.';
+
+  @override
+  String get classErrBadCode => 'Enter the 6-digit code.';
+
+  @override
+  String get classErrNotFound =>
+      'No class with this code. Check it and try again.';
+
+  @override
+  String get classErrRateLimited => 'Too many attempts. Try again in an hour.';
+
+  @override
+  String get classErrOwnSession =>
+      'You are the teacher of this class and can’t join it as a student.';
+
+  @override
+  String get classErrFinished => 'This quiz has already finished.';
+
+  @override
+  String get classErrKicked => 'The teacher removed you from this class.';
+
+  @override
+  String get classErrAlreadyStarted =>
+      'The quiz has already started — new students can’t join.';
+
+  @override
+  String get classErrFull => 'This class is full.';
+
+  @override
+  String get classErrNickLength => 'Nickname must be 2–20 characters.';
+
+  @override
+  String get classErrNickChars =>
+      'This nickname contains characters that aren’t allowed.';
+
+  @override
+  String get classErrNickBlocked => 'Please choose a different nickname.';
+
+  @override
+  String get classErrInvalidSettings =>
+      'Check the settings: 5–20 questions, 5–200 students, 15/30/45/60 seconds.';
+
+  @override
+  String get classErrTooManySessions =>
+      'Too many open classes. Finish one first.';
+
+  @override
+  String get classErrNotEnoughQuestions =>
+      'This topic has too few questions (at least 5 are needed).';
+
+  @override
+  String get classErrBadState => 'That action isn’t possible right now.';
+
+  @override
+  String get classErrNoParticipants =>
+      'Wait until at least one student has joined.';
+
+  @override
+  String get classErrNotCurrent => 'This question is already closed.';
+
+  @override
+  String get classErrTimeOver => 'Time is up — your answer was not counted.';
+
+  @override
+  String get classErrAlreadyAnswered =>
+      'You have already answered this question.';
+
+  @override
+  String get classErrNotFinished =>
+      'Results will be available when the quiz ends.';
+
+  @override
+  String get classErrBadReason => 'Reason is too short.';
 }

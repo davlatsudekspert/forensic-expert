@@ -10,6 +10,7 @@ import '../core/perf/navigation_timing.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
+import '../domain/class_quiz/class_quiz_models.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/study_models.dart' show StudyQuizMode;
 import '../domain/library/library_models.dart';
@@ -23,6 +24,9 @@ import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/admin/presentation/admin_verification_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/casebook/presentation/casebook_screens.dart';
+import '../features/class_quiz/presentation/class_quiz_host_screen.dart';
+import '../features/class_quiz/presentation/class_quiz_hub_screen.dart';
+import '../features/class_quiz/presentation/class_quiz_play_screen.dart';
 import '../features/court_prep/presentation/court_prep_screens.dart';
 import '../features/disciplines/presentation/disciplines_screens.dart';
 import '../features/evidence/presentation/provenance_screens.dart';
@@ -77,6 +81,7 @@ import '../features/support/presentation/support_screens.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
+import 'class_quiz.dart';
 import 'referral.dart';
 import 'routes.dart';
 import 'user_data.dart';
@@ -161,6 +166,18 @@ final routerProvider = Provider<GoRouter>((ref) {
         }
         return onboardingRedirect(settings, Routes.referral) ?? Routes.referral;
       }
+      // Sinf havolasi (QR / deep link): kod xotirada saqlanadi, so‘ng
+      // qo‘shilish ekrani (kirish kerak bo‘lsa — o‘sha ekranda so‘raladi).
+      if (state.uri.path.startsWith(Routes.joinPrefix)) {
+        final code = ClassCode.extract(state.uri);
+        if (code != null) {
+          ref.read(pendingClassCodeProvider.notifier).remember(code);
+          final target = Routes.classJoinWith(code);
+          return onboardingRedirect(settings, target) ?? target;
+        }
+        return onboardingRedirect(settings, Routes.classQuiz) ??
+            Routes.classQuiz;
+      }
       _recordFirstStep(ref, state.matchedLocation);
       return onboardingRedirect(settings, state.matchedLocation);
     },
@@ -177,6 +194,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       // Faqat moslik uchun: redirect har doim taklif sahifasiga yo‘naltiradi.
       GoRoute(
         path: '${Routes.invitePrefix}:code',
+        builder: (c, s) => const SizedBox.shrink(),
+      ),
+      // Faqat moslik uchun: redirect har doim qo‘shilish ekraniga yo‘naltiradi.
+      GoRoute(
+        path: '${Routes.joinPrefix}:code',
         builder: (c, s) => const SizedBox.shrink(),
       ),
       GoRoute(
@@ -229,6 +251,43 @@ final routerProvider = Provider<GoRouter>((ref) {
                       GoRoute(
                         path: 'exam',
                         builder: (c, s) => const ExamScreen(),
+                      ),
+                      GoRoute(
+                        path: 'class',
+                        builder: (c, s) => const ClassQuizHubScreen(),
+                        routes: [
+                          GoRoute(
+                            path: 'new',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const ClassCreateScreen(),
+                          ),
+                          GoRoute(
+                            path: 'join',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => ClassJoinScreen(
+                              initialCode: s.uri.queryParameters['code'],
+                            ),
+                          ),
+                          GoRoute(
+                            path: 'scan',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const ClassScanScreen(),
+                          ),
+                          GoRoute(
+                            path: 'host/:id',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => ClassHostScreen(
+                              sessionId: s.pathParameters['id']!,
+                            ),
+                          ),
+                          GoRoute(
+                            path: 'play/:id',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => ClassPlayScreen(
+                              sessionId: s.pathParameters['id']!,
+                            ),
+                          ),
+                        ],
                       ),
                       GoRoute(
                         path: 'study',

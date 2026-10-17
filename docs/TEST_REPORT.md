@@ -17,3 +17,16 @@ To‘liq suite va goldenlar agentlar birlashtirilgandan keyin qayta ishga tushir
 Edge function (`ai-answer`) uchun Deno type-check bu muhitda yo‘q — deploydan oldin tekshirilishi kerak.
 
 **CI holati (2026-10-08):** GitHub Actions barcha ishga tushirishlarda `startup_failure` (hisob darajasida — ehtimol Actions daqiqalari/billing). Workflow YAML’lari to‘g‘ri. Egasi GitHub Billing’ni tekshirishi kerak.
+
+
+## Sinfda test (2026-10-17, branch `claude/class-quiz`)
+
+| Nima | Natija |
+|---|---|
+| SQL: `bash supabase/tests/run_local.sh` (PostgreSQL 16; `class_quiz_test.sql` + RLS matritsa yangi 7 jadval bilan) | **472 PASS, 0 FAIL** (shundan ~120 ta sinf testi) |
+| `test/unit/class_quiz_test.dart` (kod, laqab filtri, ball, aralashtirish, CSV, JSON, bank formati) | 28/28 PASS |
+| `test/unit/class_quiz_fake_test.dart` (Fake adapter = server qoidalari, to‘liq oqim) | 26/26 PASS |
+| `test/unit/class_quiz_supabase_test.dart` (RPC adapteri, xato xaritasi) | 5/5 PASS |
+| `test/widget/class_quiz_test.dart` (ustoz UI oqimi, talaba UI oqimi, rol, 320 dp qorong‘i, 16:9 landshaft, deep link) | 10/10 PASS |
+| `flutter analyze` | No issues |
+| Arxitektura/l10n/a11y/to‘liq suite | **ISHGA TUSHMADI** — sandbox diski to‘lgan (`No space left on device`). Qo‘lda statik tekshiruv: hardcoded matn yo‘q, TextField/onTapOutside/keyboardDismiss mos, ARB 3 tilda 2776 kalit. CI/lokal qayta ishga tushirilishi shart. |

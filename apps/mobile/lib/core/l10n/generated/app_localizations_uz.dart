@@ -9476,4 +9476,465 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get deleteAccountAppleNote =>
       'Bu hisob Apple orqali ochilgan, shuning uchun parol kerak emas. Tasdiqlaganingizdan so‘ng Apple o‘zingizni tasdiqlashni so‘raydi va ilovaning Apple ID’ingizga kirish huquqi bekor qilinadi.';
+
+  @override
+  String get classQuizTitle => 'Sinfda test';
+
+  @override
+  String get classQuizCardSubtitle =>
+      'Ustoz boshqaradigan jonli test: kod yoki QR bilan qo‘shiling';
+
+  @override
+  String get classQuizIntro =>
+      'Ustoz ekranda 6 xonali kod va QR ko‘rsatadi. Talabalar laqab bilan qo‘shiladi va har bir savolga vaqt tugaguncha javob beradi.';
+
+  @override
+  String get classDemoBanner =>
+      'Demo rejim: ma’lumot faqat shu qurilmada qoladi. Haqiqiy sinf uchun server ulanishi kerak.';
+
+  @override
+  String get classDemoChip => 'DEMO';
+
+  @override
+  String get classJoinSection => 'Sinfga qo‘shilish';
+
+  @override
+  String get classJoinHint =>
+      'Ustoz ekranidagi 6 xonali kodni kiriting yoki QR kodni skanerlang.';
+
+  @override
+  String get classJoinTitle => 'Sinfga qo‘shilish';
+
+  @override
+  String get classJoinAction => 'Qo‘shilish';
+
+  @override
+  String get classCodeLabel => 'Sinf kodi';
+
+  @override
+  String classCodeSpoken(String code) {
+    return 'Sinf kodi $code';
+  }
+
+  @override
+  String get classNickLabel => 'Laqab';
+
+  @override
+  String get classNickHelper =>
+      '2–20 belgi. Ustozga faqat shu laqab ko‘rinadi — ismingiz va elektron pochtangiz emas.';
+
+  @override
+  String get classScanAction => 'QR skanerlash';
+
+  @override
+  String get classScanTitle => 'Sinf QR kodini skanerlash';
+
+  @override
+  String get classScanHint => 'Kamerani ustoz ekranidagi QR kodga qarating.';
+
+  @override
+  String get classScanPermission =>
+      'Kameraga ruxsat berilmagan. Sozlamalardan ruxsat bering yoki kodni qo‘lda kiriting.';
+
+  @override
+  String get classScanUnavailable =>
+      'Kameradan bu yerda foydalanib bo‘lmaydi. Kodni qo‘lda kiriting.';
+
+  @override
+  String get classScanManual => 'Kodni qo‘lda kiritish';
+
+  @override
+  String classResume(String topic) {
+    return 'Davom etish: $topic';
+  }
+
+  @override
+  String get classTeacherSection => 'Ustozlar uchun';
+
+  @override
+  String get classNotTeacherNote =>
+      'Testni ustoz o‘tkazadi. Ustoz rolini FORENSIC EXPERT jamoasi serverda beradi; dars o‘tsangiz, bizga yozing.';
+
+  @override
+  String get classNewAction => 'Yangi sinf testi';
+
+  @override
+  String get classNewTitle => 'Yangi sinf testi';
+
+  @override
+  String get classRecentSection => 'So‘nggi sinflar';
+
+  @override
+  String classSessionLine(String code, String status) {
+    return '$code · $status';
+  }
+
+  @override
+  String get classStatusLobby => 'Talabalar kutilmoqda';
+
+  @override
+  String get classStatusRunning => 'Davom etmoqda';
+
+  @override
+  String get classStatusFinished => 'Tugagan';
+
+  @override
+  String get classPrivacyNote =>
+      'Ustoz faqat laqabingizni ko‘radi. Tugagan sinflar 30 kundan keyin avtomatik o‘chiriladi. Nomaqbul laqabga shikoyat qilish mumkin, u olib tashlanadi.';
+
+  @override
+  String get classSignInTitle => 'Qo‘shilish uchun hisobga kiring';
+
+  @override
+  String get classSignInBody =>
+      'Natijangiz serverda hisobingizga bog‘lanadi. Boshqa talabalar va ustoz faqat laqabingizni ko‘radi.';
+
+  @override
+  String get classSignInAction => 'Hisobga kirish';
+
+  @override
+  String get classTeacherOnlyTitle => 'Faqat ustozlar uchun';
+
+  @override
+  String get classTeacherOnlyBody =>
+      'Bu ekran ustoz roli bor hisoblarga ochiq. Buni server tekshiradi.';
+
+  @override
+  String get classTopicSection => 'Mavzu';
+
+  @override
+  String get classNoTopics => 'Savollar banki hozircha mavjud emas.';
+
+  @override
+  String classQuestionsAvailable(int count) {
+    return '$count ta savol';
+  }
+
+  @override
+  String get classSettingsSection => 'Sozlamalar';
+
+  @override
+  String get classQuestionCount => 'Savollar soni';
+
+  @override
+  String get classStudentLimit => 'Talabalar chegarasi';
+
+  @override
+  String get classSecondsPerQuestion => 'Har savolga vaqt';
+
+  @override
+  String classSecondsShort(int seconds) {
+    return '$seconds s';
+  }
+
+  @override
+  String classSecondsLeft(int seconds) {
+    return '$seconds soniya qoldi';
+  }
+
+  @override
+  String get classCreateAction => 'Sinfni yaratish';
+
+  @override
+  String get classHostJoinHint =>
+      'FORENSIC EXPERT → Sinfda test bo‘limida shu kodni kiriting yoki QR kodni skanerlang:';
+
+  @override
+  String get classQrSemantics => 'Sinfga qo‘shilish QR kodi';
+
+  @override
+  String classJoinedCount(int joined, int limit) {
+    return 'Qo‘shilganlar: $joined / $limit';
+  }
+
+  @override
+  String get classWaitingForStudents => 'Talabalar qo‘shilishi kutilmoqda…';
+
+  @override
+  String classReportsCount(int count) {
+    return 'Laqabga shikoyatlar: $count — ro‘yxatni tekshiring';
+  }
+
+  @override
+  String get classStartAction => 'Boshlash';
+
+  @override
+  String get classKickTitle => 'Sinfdan chiqarilsinmi?';
+
+  @override
+  String classKickBody(String nickname) {
+    return '«$nickname» chiqariladi va qayta qo‘shila olmaydi.';
+  }
+
+  @override
+  String get classKickAction => 'Chiqarish';
+
+  @override
+  String get classCancel => 'Bekor qilish';
+
+  @override
+  String classQuestionOf(int n, int total) {
+    return '$n-savol / $total';
+  }
+
+  @override
+  String classAnswered(int count, int total) {
+    return 'Javob berdi: $count / $total';
+  }
+
+  @override
+  String classCorrectPct(int pct) {
+    return '$pct% to‘g‘ri';
+  }
+
+  @override
+  String get classLeaderboard => 'Reyting jadvali';
+
+  @override
+  String get classNoScoresYet => 'Hozircha ball yo‘q.';
+
+  @override
+  String get classCloseQuestion => 'Savolni yopish';
+
+  @override
+  String get classNextQuestion => 'Keyingi savol';
+
+  @override
+  String get classFinishAction => 'Testni yakunlash';
+
+  @override
+  String get classEndAction => 'Testni tugatish';
+
+  @override
+  String get classEndTitle => 'Test hozir tugatilsinmi?';
+
+  @override
+  String get classEndBody =>
+      'Talabalar natijalarini ko‘radi. Buni bekor qilib bo‘lmaydi.';
+
+  @override
+  String get classFinishedTitle => 'Test yakunlandi';
+
+  @override
+  String classFinishedSummary(int students, int questions) {
+    return 'Talabalar: $students · savollar: $questions';
+  }
+
+  @override
+  String get classHardestTitle => 'Eng qiyin savollar';
+
+  @override
+  String get classNoAnswersYet => 'Javoblar qayd etilmagan.';
+
+  @override
+  String get classExportCsv => 'Natijani saqlash / ulashish (CSV)';
+
+  @override
+  String get classCsvSubject => 'Sinf testi natijalari';
+
+  @override
+  String get classDone => 'Tayyor';
+
+  @override
+  String classRetentionNote(int days) {
+    return 'Sinf tugagach $days kundan keyin avtomatik o‘chiriladi.';
+  }
+
+  @override
+  String get classRetry => 'Qayta urinish';
+
+  @override
+  String get classExit => 'Chiqish';
+
+  @override
+  String classLobbyWelcome(String nickname) {
+    return 'Siz qo‘shildingiz, $nickname!';
+  }
+
+  @override
+  String get classLobbyWait => 'Ustoz testni boshlashini kuting.';
+
+  @override
+  String get classChooseAnswer => 'Javobni tanlang.';
+
+  @override
+  String get classAnswerAccepted =>
+      'Javob qabul qilindi. Natija vaqt tugagach ko‘rinadi.';
+
+  @override
+  String get classTimeUpWaiting => 'Vaqt tugadi. Javob tekshirilmoqda…';
+
+  @override
+  String classResultCorrect(int points) {
+    return 'To‘g‘ri! +$points ball';
+  }
+
+  @override
+  String get classResultWrong => 'Noto‘g‘ri.';
+
+  @override
+  String get classResultNoAnswer => 'Javob berilmagan.';
+
+  @override
+  String get classWaitNext => 'Ustoz keyingi savolni ochishini kuting.';
+
+  @override
+  String classScoreLine(int score) {
+    return 'Ball: $score';
+  }
+
+  @override
+  String classRankLine(int rank, int total) {
+    return '$rank-o‘rin / $total';
+  }
+
+  @override
+  String classCorrectOfTotal(int correct, int total) {
+    return '$total tadan $correct tasi to‘g‘ri';
+  }
+
+  @override
+  String get classTopFive => 'Eng yaxshi beshlik';
+
+  @override
+  String get classMistakesTitle => 'Takrorlash kerak bo‘lgan savollar';
+
+  @override
+  String get classNoMistakes => 'Barcha javoblar to‘g‘ri. Barakalla!';
+
+  @override
+  String classQuestionNumber(int n) {
+    return '$n-savol';
+  }
+
+  @override
+  String classYourAnswer(String text) {
+    return 'Sizning javobingiz: $text';
+  }
+
+  @override
+  String classCorrectAnswer(String text) {
+    return 'To‘g‘ri javob: $text';
+  }
+
+  @override
+  String classSourceLine(String author, String title, String page) {
+    return 'Manba: $author, $title, $page-bet';
+  }
+
+  @override
+  String get classOptionCorrect => 'to‘g‘ri';
+
+  @override
+  String get classOptionWrong => 'sizning javobingiz, noto‘g‘ri';
+
+  @override
+  String get classOptionChosen => 'sizning tanlovingiz';
+
+  @override
+  String get classReportTitle => 'Bu laqabga shikoyat qilinsinmi?';
+
+  @override
+  String classReportBody(String nickname) {
+    return '«$nickname» ustozga ko‘rib chiqish uchun yuboriladi.';
+  }
+
+  @override
+  String get classReportAction => 'Shikoyat qilish';
+
+  @override
+  String get classReportReason => 'Nomaqbul laqab';
+
+  @override
+  String get classReportSent => 'Shikoyat yuborildi. Rahmat.';
+
+  @override
+  String get classErrNotConfigured =>
+      'Sinfda test FORENSIC EXPERT serveri ulangach ishlaydi.';
+
+  @override
+  String get classErrNotSignedIn => 'Avval hisobga kiring.';
+
+  @override
+  String get classErrOffline =>
+      'Aloqa yo‘q. Internetni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get classErrServer =>
+      'Serverda xatolik. Birozdan so‘ng qayta urinib ko‘ring.';
+
+  @override
+  String get classErrForbidden => 'Bu sinfga kirish huquqingiz yo‘q.';
+
+  @override
+  String get classErrBadCode => '6 xonali kodni kiriting.';
+
+  @override
+  String get classErrNotFound =>
+      'Bunday kodli sinf topilmadi. Kodni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get classErrRateLimited =>
+      'Urinishlar juda ko‘p. Bir soatdan keyin qayta urinib ko‘ring.';
+
+  @override
+  String get classErrOwnSession =>
+      'Siz bu sinfning ustozisiz, talaba sifatida qo‘shila olmaysiz.';
+
+  @override
+  String get classErrFinished => 'Bu test allaqachon tugagan.';
+
+  @override
+  String get classErrKicked => 'Ustoz sizni bu sinfdan chiqargan.';
+
+  @override
+  String get classErrAlreadyStarted =>
+      'Test allaqachon boshlangan — yangi talaba qo‘shila olmaydi.';
+
+  @override
+  String get classErrFull => 'Sinf to‘lgan.';
+
+  @override
+  String get classErrNickLength => 'Laqab 2–20 belgidan iborat bo‘lishi kerak.';
+
+  @override
+  String get classErrNickChars => 'Laqabda ruxsat etilmagan belgilar bor.';
+
+  @override
+  String get classErrNickBlocked => 'Boshqa laqab tanlang.';
+
+  @override
+  String get classErrInvalidSettings =>
+      'Sozlamalarni tekshiring: 5–20 savol, 5–200 talaba, 15/30/45/60 soniya.';
+
+  @override
+  String get classErrTooManySessions =>
+      'Ochiq sinflar juda ko‘p. Avval birini tugating.';
+
+  @override
+  String get classErrNotEnoughQuestions =>
+      'Bu mavzuda savollar yetarli emas (kamida 5 ta kerak).';
+
+  @override
+  String get classErrBadState => 'Hozir bu amalni bajarib bo‘lmaydi.';
+
+  @override
+  String get classErrNoParticipants =>
+      'Kamida bitta talaba qo‘shilishini kuting.';
+
+  @override
+  String get classErrNotCurrent => 'Bu savol allaqachon yopilgan.';
+
+  @override
+  String get classErrTimeOver => 'Vaqt tugadi — javobingiz hisobga olinmadi.';
+
+  @override
+  String get classErrAlreadyAnswered =>
+      'Bu savolga allaqachon javob bergansiz.';
+
+  @override
+  String get classErrNotFinished => 'Natijalar test tugagach ko‘rinadi.';
+
+  @override
+  String get classErrBadReason => 'Sabab juda qisqa.';
 }

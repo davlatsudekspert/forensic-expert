@@ -127,7 +127,16 @@ insert into matrix_tables values
  ('public.user_reports',           'reporter_id',  false, false, 'body'),
  ('public.user_blocks',            'blocker_id',   false, false, 'created_at'),
  ('public.user_terms',             'user_id',      false, false, 'version'),
- ('public.account_suspensions',    'user_id',      false, false, 'reason');
+ ('public.account_suspensions',    'user_id',      false, false, 'reason'),
+ -- «Sinfda test»: table privileges revoked, answers/questions never readable;
+ -- everything goes through SECURITY DEFINER class_* functions.
+ ('public.class_quiz_questions',   null,           false, false, 'question'),
+ ('public.class_sessions',         'teacher_id',   false, false, 'status'),
+ ('public.class_session_questions', null,          false, false, 'question'),
+ ('public.class_participants',     'user_id',      false, false, 'nickname'),
+ ('public.class_answers',          null,           false, false, 'option_id'),
+ ('public.class_reports',          'reporter_id',  false, false, 'reason'),
+ ('public.class_join_attempts',    null,           false, false, 'n');
 grant select on matrix_tables to anon, authenticated;
 
 -- Fix the column used for the no-op UPDATE to a real column of each table.
@@ -296,6 +305,33 @@ insert into user_blocks (blocker_id, blocked_id)
 values ('50000000-0000-0000-0000-00000000000d', '50000000-0000-0000-0000-00000000000a');
 insert into account_suspensions (user_id, reason)
 values ('50000000-0000-0000-0000-00000000000d', 'matritsa testi uchun sabab');
+
+-- «Sinfda test» rows: a hosts, b joined and answered, d reported b's nickname.
+insert into class_quiz_questions (topic_id, topic_title, question, options,
+  correct_index, source, is_demo)
+values ('matrix', 'Matritsa', 'Matritsa testi savoli', '["a","b","c","d"]'::jsonb, 1,
+  '{"author":"DEMO","title":"DEMO","page":"-"}'::jsonb, true);
+insert into class_sessions (id, teacher_id, code, topic_id, settings)
+values ('60000000-0000-0000-0000-0000000000c1'::uuid,
+        '50000000-0000-0000-0000-00000000000a', '123456', 'matrix',
+        '{"question_count":5,"student_limit":5,"seconds":30}'::jsonb);
+insert into class_session_questions (session_id, idx, question, options, correct_index)
+values ('60000000-0000-0000-0000-0000000000c1'::uuid, 0, 'Matritsa testi savoli',
+        '["a","b","c","d"]'::jsonb, 1);
+insert into class_participants (id, session_id, user_id, nickname)
+values ('60000000-0000-0000-0000-0000000000c2'::uuid,
+        '60000000-0000-0000-0000-0000000000c1'::uuid,
+        '50000000-0000-0000-0000-00000000000b', 'Matritsa');
+insert into class_answers (session_id, participant_id, question_index, option_id,
+  elapsed_ms, is_correct, points)
+values ('60000000-0000-0000-0000-0000000000c1'::uuid,
+        '60000000-0000-0000-0000-0000000000c2'::uuid, 0, 'o1', 1000, true, 900);
+insert into class_reports (session_id, participant_id, reporter_id, reason)
+values ('60000000-0000-0000-0000-0000000000c1'::uuid,
+        '60000000-0000-0000-0000-0000000000c2'::uuid,
+        '50000000-0000-0000-0000-00000000000d', 'matritsa testi');
+insert into class_join_attempts (key, hour, n)
+values ('u:matrix', date_trunc('hour', now()), 1);
 
 -- Every table must hold rows, otherwise "0 rows touched" proves nothing.
 do $$
