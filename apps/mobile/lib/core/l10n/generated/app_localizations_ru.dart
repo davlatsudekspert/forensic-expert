@@ -9293,10 +9293,10 @@ class AppLocalizationsRu extends AppLocalizations {
       'Тест проводит преподаватель. Роль преподавателя выдаёт команда FORENSIC EXPERT на сервере; если вы ведёте занятия, напишите нам.';
 
   @override
-  String get classNewAction => 'Новый тест для класса';
+  String get classNewAction => 'Провести тест';
 
   @override
-  String get classNewTitle => 'Новый тест для класса';
+  String get classNewTitle => 'Провести тест';
 
   @override
   String get classRecentSection => 'Недавние занятия';
@@ -9751,4 +9751,8 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get pubEmptyBody =>
       'Поделитесь опытом первым: кнопка «Отправить статью» внизу. После модерации статья появится здесь.';
+
+  @override
+  String get calcWarnZeroMeasured =>
+      'Этанол в образце не обнаружен (0): обратный расчёт не может показать уровень на момент события — этанол мог полностью выйти до взятия образца.';
 }

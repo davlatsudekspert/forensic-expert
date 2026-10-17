@@ -190,6 +190,7 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               DropdownButtonFormField<String>(
+                style: Theme.of(context).textTheme.bodyLarge,
                 key: const Key('submit.discipline'),
                 initialValue: _discipline,
                 isExpanded: true,
@@ -211,6 +212,7 @@ class _SubmitPublicationScreenState
               ),
               gap(),
               DropdownButtonFormField<PublicationLanguage>(
+                style: Theme.of(context).textTheme.bodyLarge,
                 key: const Key('submit.language'),
                 initialValue: _language,
                 // Kattalashtirilgan shriftda til nomi qatorga sig‘masdi.

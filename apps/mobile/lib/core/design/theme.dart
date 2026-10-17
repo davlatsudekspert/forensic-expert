@@ -139,7 +139,6 @@ abstract final class FeThemeBuilder {
         scrolledUnderElevation: 0,
         centerTitle: false,
         toolbarHeight: 60,
-        titleSpacing: FeSpace.xxs,
         titleTextStyle: TextStyle(
           fontFamily: FeFonts.serif,
           fontSize: 20,

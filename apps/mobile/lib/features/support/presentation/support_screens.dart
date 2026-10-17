@@ -272,6 +272,7 @@ class _NewSupportThreadScreenState
                     children: [
                       const SizedBox(height: FeSpace.sm),
                       DropdownButtonFormField<SupportCategory>(
+                        style: Theme.of(context).textTheme.bodyLarge,
                         key: const Key('supportNew.category'),
                         initialValue: _category,
                         isExpanded: true,

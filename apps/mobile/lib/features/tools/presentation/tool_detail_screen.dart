@@ -691,6 +691,7 @@ class _QuantityField extends StatelessWidget {
         Expanded(
           flex: 2,
           child: DropdownButtonFormField<Unit>(
+            style: Theme.of(context).textTheme.bodyLarge,
             initialValue: unit,
             isExpanded: true,
             decoration: InputDecoration(labelText: unitLabel),

@@ -1,3 +1,5 @@
 tags:
   screenshots:
     skip: "Preview skrinshotlari: flutter test --tags screenshots --run-skipped --update-goldens"
+  catalog:
+    skip: "Ekranlar katalogi: flutter test --tags catalog --run-skipped test/catalog"

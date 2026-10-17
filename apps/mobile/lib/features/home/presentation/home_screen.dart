@@ -460,12 +460,12 @@ class _ResourceTile extends StatelessWidget {
       child: _EntryLayout(
         leading: DecoratedBox(
           decoration: BoxDecoration(
-            color: c.surface,
+            color: c.accentContainer,
             borderRadius: BorderRadius.circular(FeRadius.md),
           ),
           child: SizedBox.square(
-            dimension: 40,
-            child: Icon(icon, color: c.textPrimary, size: 21),
+            dimension: 44,
+            child: Icon(icon, color: c.accent, size: 22),
           ),
         ),
         title: Text(title, style: t.titleSmall),

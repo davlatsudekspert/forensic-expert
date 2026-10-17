@@ -148,6 +148,13 @@ NEW = {
         "You see only totals — never names or personal data.",
         "Referral step 3 (privacy).",
     ),
+    # Kalkulyator: o‘lchangan etanol 0 (avval xom «zero_measured» kodi chiqardi).
+    "calcWarnZeroMeasured": (
+        "Namunada etanol aniqlanmagan (0): teskari hisob hodisa paytidagi darajani ko‘rsata olmaydi — etanol namuna olinguncha to‘liq chiqib ketgan bo‘lishi mumkin.",
+        "Этанол в образце не обнаружен (0): обратный расчёт не может показать уровень на момент события — этанол мог полностью выйти до взятия образца.",
+        "No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.",
+        "Back-calculation warning when the measured concentration is zero.",
+    ),
     # Maqolalar: bo‘sh holat.
     "pubEmptyTitle": (
         "Hali maqola yo‘q",
@@ -183,6 +190,9 @@ SET = {
         "Все разделы: вещества, методы, стандарты, источники",
         "Everything: substances, methods, standards, references",
     ),
+    # Ustoz paneli amali bilan bir xil nom (yaratish ekrani va tugma).
+    "classNewTitle": ("Test o‘tkazish", "Провести тест", "Run a quiz"),
+    "classNewAction": ("Test o‘tkazish", "Провести тест", "Run a quiz"),
     # AI: 320 dp da bir qatorda (izoh ostidagi matnda).
     "aiExperienceProfessional": ("Qisqa", "Коротко", "Short"),
     "aiExperienceTutor": ("Batafsil", "Подробно", "Detailed"),

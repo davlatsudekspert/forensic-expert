@@ -358,6 +358,7 @@ class FeEmptyState extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(
         vertical: compact ? FeSpace.xs : FeSpace.lg,
+        horizontal: compact ? 0 : FeSpace.lg,
       ),
       child: compact
           ? Row(children: children)

@@ -109,6 +109,7 @@ class _ReportScreenState extends ConsumerState<ReportScreen> {
                     Text(l.repIntro, style: t.bodyMedium),
                     const SizedBox(height: FeSpace.sm),
                     DropdownButtonFormField<ReportKind>(
+                      style: Theme.of(context).textTheme.bodyLarge,
                       key: const Key('report.kind'),
                       initialValue: _kind,
                       isExpanded: true,

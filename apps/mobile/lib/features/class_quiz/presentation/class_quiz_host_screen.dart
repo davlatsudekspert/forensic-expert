@@ -581,7 +581,10 @@ class _Lobby extends ConsumerWidget {
       label: Text(l.classStartAction),
       style: FilledButton.styleFrom(
         minimumSize: const Size.fromHeight(56),
-        textStyle: t.titleMedium,
+        textStyle: t.titleMedium?.copyWith(
+          fontFamily: FeFonts.sans,
+          fontWeight: FontWeight.w600,
+        ),
       ),
     );
 
@@ -729,7 +732,10 @@ class _Running extends StatelessWidget {
               Text(
                 l.classAnswered(cur.answered, d.joined),
                 key: const Key('class.answeredCount'),
-                style: t.titleMedium,
+                style: t.titleMedium?.copyWith(
+                  fontFamily: FeFonts.sans,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
               const SizedBox(height: FeSpace.xs),
               LinearProgressIndicator(
@@ -866,7 +872,11 @@ class _LeaderRowView extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
-    final style = (compact ? t.bodyMedium : t.titleMedium);
+    // Ism va ball — sans (jadval o‘qilishi); sarlavhalar serif.
+    final style = (compact ? t.bodyMedium : t.titleMedium)?.copyWith(
+      fontFamily: FeFonts.sans,
+      fontWeight: compact ? null : FontWeight.w600,
+    );
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 2),
       child: Row(

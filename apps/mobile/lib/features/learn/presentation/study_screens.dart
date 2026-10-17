@@ -102,11 +102,20 @@ class StudyHubScreen extends ConsumerWidget {
                     onTap: () => context.push(Routes.classQuiz),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.groups_2_outlined,
-                          color: FeTheme.of(context).accent,
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            color: FeTheme.of(context).accentContainer,
+                            borderRadius: BorderRadius.circular(FeRadius.md),
+                          ),
+                          child: SizedBox.square(
+                            dimension: 44,
+                            child: Icon(
+                              Icons.groups_2_outlined,
+                              color: FeTheme.of(context).accent,
+                            ),
+                          ),
                         ),
-                        const SizedBox(width: FeSpace.sm),
+                        const SizedBox(width: FeSpace.md),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,

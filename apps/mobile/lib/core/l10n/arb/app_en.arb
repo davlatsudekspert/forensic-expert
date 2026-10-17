@@ -11911,11 +11911,11 @@
   "@classNotTeacherNote": {
     "description": "Not a teacher note."
   },
-  "classNewAction": "New class quiz",
+  "classNewAction": "Run a quiz",
   "@classNewAction": {
     "description": "Button."
   },
-  "classNewTitle": "New class quiz",
+  "classNewTitle": "Run a quiz",
   "@classNewTitle": {
     "description": "Screen title."
   },
@@ -12567,5 +12567,9 @@
   "pubEmptyBody": "Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.",
   "@pubEmptyBody": {
     "description": "Body of the empty published-articles list."
+  },
+  "calcWarnZeroMeasured": "No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.",
+  "@calcWarnZeroMeasured": {
+    "description": "Back-calculation warning when the measured concentration is zero."
   }
 }

@@ -459,6 +459,7 @@ class _UnitDropdown extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => DropdownButtonFormField<Unit>(
+    style: Theme.of(context).textTheme.bodyLarge,
     initialValue: value,
     isExpanded: true,
     decoration: InputDecoration(labelText: label),
@@ -823,6 +824,7 @@ class _PercentState extends State<PercentSolutionView> with CalcInputsMixin {
       descriptor: _calc.descriptor,
       inputs: [
         DropdownButtonFormField<PercentBasis>(
+          style: Theme.of(context).textTheme.bodyLarge,
           initialValue: _basis,
           isExpanded: true,
           decoration: InputDecoration(labelText: l.calcPercentBasis),
@@ -1112,6 +1114,7 @@ class _CalibrationState extends State<CalibrationView> with CalcInputsMixin {
             style: Theme.of(context).textTheme.bodySmall,
           ),
         DropdownButtonFormField<SigmaBasis>(
+          style: Theme.of(context).textTheme.bodyLarge,
           initialValue: _basis,
           isExpanded: true,
           decoration: InputDecoration(labelText: l.calcLodSigmaBasis),

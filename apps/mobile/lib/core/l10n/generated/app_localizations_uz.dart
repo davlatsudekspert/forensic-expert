@@ -9205,10 +9205,10 @@ class AppLocalizationsUz extends AppLocalizations {
       'Testni ustoz o‘tkazadi. Ustoz rolini FORENSIC EXPERT jamoasi serverda beradi; dars o‘tsangiz, bizga yozing.';
 
   @override
-  String get classNewAction => 'Yangi sinf testi';
+  String get classNewAction => 'Test o‘tkazish';
 
   @override
-  String get classNewTitle => 'Yangi sinf testi';
+  String get classNewTitle => 'Test o‘tkazish';
 
   @override
   String get classRecentSection => 'So‘nggi sinflar';
@@ -9664,4 +9664,8 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get pubEmptyBody =>
       'Tajribangiz bilan birinchi bo‘lib bo‘lishing: «Maqola yuborish» tugmasi pastda. Moderatsiyadan so‘ng maqola shu yerda chiqadi.';
+
+  @override
+  String get calcWarnZeroMeasured =>
+      'Namunada etanol aniqlanmagan (0): teskari hisob hodisa paytidagi darajani ko‘rsata olmaydi — etanol namuna olinguncha to‘liq chiqib ketgan bo‘lishi mumkin.';
 }

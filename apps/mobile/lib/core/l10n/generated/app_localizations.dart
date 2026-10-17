@@ -16110,13 +16110,13 @@ abstract class AppLocalizations {
   /// Button.
   ///
   /// In en, this message translates to:
-  /// **'New class quiz'**
+  /// **'Run a quiz'**
   String get classNewAction;
 
   /// Screen title.
   ///
   /// In en, this message translates to:
-  /// **'New class quiz'**
+  /// **'Run a quiz'**
   String get classNewTitle;
 
   /// Section.
@@ -16886,6 +16886,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.'**
   String get pubEmptyBody;
+
+  /// Back-calculation warning when the measured concentration is zero.
+  ///
+  /// In en, this message translates to:
+  /// **'No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.'**
+  String get calcWarnZeroMeasured;
 }
 
 class _AppLocalizationsDelegate

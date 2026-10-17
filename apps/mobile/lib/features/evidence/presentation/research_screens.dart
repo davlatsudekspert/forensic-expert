@@ -271,6 +271,7 @@ class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
                       children: [
                         Expanded(
                           child: DropdownButtonFormField<_Period>(
+                            style: Theme.of(context).textTheme.bodyLarge,
                             key: const Key('research.filter.period'),
                             initialValue: _period,
                             isExpanded: true,
@@ -293,6 +294,7 @@ class _ResearchLibraryScreenState extends ConsumerState<ResearchLibraryScreen> {
                           const SizedBox(width: FeSpace.xs),
                           Expanded(
                             child: DropdownButtonFormField<ForensicDiscipline?>(
+                              style: Theme.of(context).textTheme.bodyLarge,
                               key: const Key('research.filter.discipline'),
                               initialValue: _discipline,
                               isExpanded: true,

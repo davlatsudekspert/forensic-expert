@@ -126,6 +126,7 @@ class _AdminInboxScreenState extends ConsumerState<AdminInboxScreen> {
                     ),
                     const SizedBox(height: FeSpace.xs),
                     DropdownButtonFormField<SupportCategory?>(
+                      style: Theme.of(context).textTheme.bodyLarge,
                       key: const Key('adminInbox.category'),
                       initialValue: _filter.category,
                       isExpanded: true,

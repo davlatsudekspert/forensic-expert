@@ -214,15 +214,15 @@ class DisciplineScreen extends ConsumerWidget {
                   ],
                   if (modules.isNotEmpty) ...[
                     FeSectionHeader(l.disciplineModules),
-                    for (final m in modules)
-                      ListTile(
+                    for (final (i, m) in modules.indexed) ...[
+                      if (i > 0) const SizedBox(height: FeSpace.sm),
+                      _NextStepTile(
                         key: Key('discipline.module.${m.name}'),
-                        contentPadding: EdgeInsets.zero,
-                        leading: Icon(m.icon, color: c.accent),
-                        title: Text(m.label(l)),
-                        trailing: const Icon(Icons.chevron_right),
+                        icon: m.icon,
+                        title: m.label(l),
                         onTap: () => context.push(m.route),
                       ),
+                    ],
                   ],
                   if (ownTopics.isNotEmpty) ...[
                     FeSectionHeader(l.disciplineSourcedTopics),
@@ -327,13 +327,13 @@ class _NextStepTile extends StatelessWidget {
     super.key,
     required this.icon,
     required this.title,
-    required this.body,
     required this.onTap,
+    this.body,
   });
 
   final IconData icon;
   final String title;
-  final String body;
+  final String? body;
   final VoidCallback onTap;
 
   @override
@@ -360,11 +360,10 @@ class _NextStepTile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(title, style: t.titleSmall),
-                const SizedBox(height: 2),
-                Text(
-                  body,
-                  style: t.bodySmall?.copyWith(color: c.textSecondary),
-                ),
+                if (body case final b?) ...[
+                  const SizedBox(height: 2),
+                  Text(b, style: t.bodySmall?.copyWith(color: c.textSecondary)),
+                ],
               ],
             ),
           ),

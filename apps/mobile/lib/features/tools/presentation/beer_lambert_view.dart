@@ -225,6 +225,7 @@ class _BeerLambertState extends State<BeerLambertView> with CalcInputsMixin {
             k: 'calc.path',
           ),
           unit: DropdownButtonFormField<PathLengthUnit>(
+            style: Theme.of(context).textTheme.bodyLarge,
             key: const Key('calc.pathUnit'),
             initialValue: _pathUnit,
             isExpanded: true,

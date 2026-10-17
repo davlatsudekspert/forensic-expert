@@ -44,6 +44,7 @@ String _warningFor(AppLocalizations l, CalcWarning w) => switch (w.code) {
   'absorption_phase' => l.calcWarnAbsorption,
   'no_cooling' => l.calcWarnNoCooling,
   'late_phase' => l.calcWarnLatePhase,
+  'zero_measured' => l.calcWarnZeroMeasured,
   _ => w.code,
 };
 
@@ -164,6 +165,7 @@ class _WidmarkState extends State<WidmarkView> with CalcInputsMixin {
       descriptor: _calc.descriptor,
       inputs: [
         DropdownButtonFormField<BiologicalSex>(
+          style: Theme.of(context).textTheme.bodyLarge,
           key: const Key('calc.sex'),
           initialValue: _sex,
           isExpanded: true,
@@ -374,6 +376,7 @@ class _BackCalcState extends State<BackCalculationView> with CalcInputsMixin {
             Expanded(
               flex: 2,
               child: DropdownButtonFormField<EthanolUnit>(
+                style: Theme.of(context).textTheme.bodyLarge,
                 key: const Key('calc.bacUnit'),
                 initialValue: _unit,
                 isExpanded: true,
@@ -512,6 +515,7 @@ class _EthanolUnitsState extends State<EthanolUnitsView> with CalcInputsMixin {
             k: 'calc.value',
           ),
           unit: DropdownButtonFormField<EthanolUnit>(
+            style: Theme.of(context).textTheme.bodyLarge,
             key: const Key('calc.ethanolUnit'),
             initialValue: _unit,
             isExpanded: true,
@@ -526,6 +530,7 @@ class _EthanolUnitsState extends State<EthanolUnitsView> with CalcInputsMixin {
           ),
         ),
         DropdownButtonFormField<EthanolMatrix>(
+          style: Theme.of(context).textTheme.bodyLarge,
           key: const Key('calc.matrix'),
           initialValue: _matrix,
           isExpanded: true,
@@ -702,6 +707,7 @@ class _HenssgeState extends State<HenssgeView> with CalcInputsMixin {
           k: 'calc.weight',
         ),
         DropdownButtonFormField<double>(
+          style: Theme.of(context).textTheme.bodyLarge,
           key: const Key('calc.factor'),
           initialValue: _factor,
           isExpanded: true,

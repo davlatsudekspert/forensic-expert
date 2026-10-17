@@ -358,7 +358,9 @@ class ClassOptionTile extends StatelessWidget {
       ),
       ClassOptionState.neutral => (c.surfaceRaised, c.borderStrong, null, null),
     };
+    // Variant matni — sans (savol sarlavhasi serif), o‘qilishi oson.
     final style = (big ? t.headlineSmall : t.titleMedium)?.copyWith(
+      fontFamily: FeFonts.sans,
       color: c.textPrimary,
       fontWeight: FontWeight.w600,
     );

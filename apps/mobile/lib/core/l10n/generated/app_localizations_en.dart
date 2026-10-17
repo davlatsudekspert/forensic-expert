@@ -9239,10 +9239,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'The test is run by a teacher. The teacher role is granted by the FORENSIC EXPERT team on the server; ask us if you teach a class.';
 
   @override
-  String get classNewAction => 'New class quiz';
+  String get classNewAction => 'Run a quiz';
 
   @override
-  String get classNewTitle => 'New class quiz';
+  String get classNewTitle => 'Run a quiz';
 
   @override
   String get classRecentSection => 'Recent classes';
@@ -9700,4 +9700,8 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get pubEmptyBody =>
       'Be the first to share your experience: the “Submit an article” button is below. After moderation the article appears here.';
+
+  @override
+  String get calcWarnZeroMeasured =>
+      'No ethanol in the sample (0): back-calculation cannot show the level at the time of the event — the ethanol may have been fully eliminated before sampling.';
 }
