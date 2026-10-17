@@ -1,0 +1,2098 @@
+{
+  "topic": "Zamonaviy va innovatsion biotibbiyot texnologiyalari, inson tabiatiga aralashishning axloqiy masalalari, konvergent texnologiyalar, tibbiyot xodimlarining roli (M6; M7)",
+  "slides": [
+    {
+      "title": "Kirish: mavzu, maqsad va reja",
+      "bullets": [
+        {
+          "text": "Mavzu: genom, gen terapiyasi, ildiz hujayra va klonlashni qo‘llashdagi axloqiy muammolar hamda biohavfsizlik masalalari.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqsad: genetika yutuqlarining foydasini ham, xavfini ham axloq nuqtayi nazaridan chuqur tahlil qilishni o‘rganish.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja: genetik prognoz, gen terapiyasi, inson genomi deklaratsiyasi, ildiz hujayra va klonlash masalalari.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159, 175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natija: talaba yangi texnologiyalar oqibatlarini oldindan tahlil qilish zarurligini tushuntirib bera oladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159, 175"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Yangi texnologiya foydasi va xavfi nega birga o‘rganilishi kerak? 2) Talabalar genetikadan qanday yangiliklarni eshitgan? Doskada: dars rejasining 4 bandini ro‘yxat qilib yozing. Tipik xato: mavzuni faqat texnik yutuqlar deb tushunish, axloqiy tomonni unutish."
+    },
+    {
+      "title": "Genom o‘rganilishi va genetik prognoz",
+      "bullets": [
+        {
+          "text": "Genom chuqur o‘rganilgach, irsiy kasalliklar diagnostikasi va terapiyasi imkoniyatlari kengaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genetik prognoz kasallik belgisi chiqmasdan, hatto bola tug‘ilmasdan xavfni aniqlashga imkon beradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: prognoz kelajakdagi xavfni ko‘rsatadi, u hali boshlangan kasallik tashxisi emas.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Genomdan prognozgacha",
+        "nodes": [
+          "Inson genomini o‘rganish",
+          "Genetik diagnostika kengayadi",
+          "Genetik prognoz paydo bo‘ladi",
+          "Xavfni oldindan bilish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Tug‘ilmagan bola xavfini bilish qanday axloqiy savollar tug‘diradi? 2) Prognoz va tashxis nima bilan farq qiladi? Doskada: zanjirni o‘zingiz chizib, har strelkaga bittadan misol yozing. Tipik xato: genetik prognozni aniq kasallik tashxisi bilan aralashtirish."
+    },
+    {
+      "title": "Buyuk kashfiyotning ikki yoqlama xavfi",
+      "bullets": [
+        {
+          "text": "XX asr birinchi yarmida yadro fizikasidagi kashfiyotlar katta foyda keltirdi, lekin jiddiy xavf ham tug‘dirdi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Salbiy oqibatlar atom va vodorod bombalari urushda qo‘llangach (Xirosima, Nagasaki) va Chernobil halokatidan keyin ma’lum bo‘ldi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nobel mukofoti sovrindori Jan Dasse fikricha, genetika kashfiyotlarini chuqur nazariy tahlilsiz qo‘llash falokatga olib kelishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu sababli zamonaviy biogenetik tadqiqotlar axloq nuqtayi nazaridan chuqur tahlil qilinishi lozim.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Voqea tahlili: yadro fizikasi misolida oqibatlar kashfiyotdan keyin ma’lum bo‘ldi — genetikada buning oldini qanday olish mumkin? Muhokama: 1) Nega oqibatlarni oldindan tahlil qilish kerak? 2) Qaysi genetik texnologiyada shunga o‘xshash xavf bo‘lishi mumkin? Doskada: ikki ustun — ‘foyda’ va ‘xavf’ — chizib to‘ldiring. Tipik xato: ilmiy kashfiyotning o‘zini yomon deb baholash; manbada gap uni tahlilsiz qo‘llash xavfi haqida."
+    },
+    {
+      "title": "Dasse ogohlantirishi: biologik cheklash",
+      "bullets": [
+        {
+          "text": "Jan Dasse (Nobel sovrindori): oqibati tahlil qilinmagan texnologiya insoniyat uchun fojiali bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genetik bashorat inson hayotini boshqarishning tibbiy-biologik vositasiga aylanib, erkinligini biologik jihatdan cheklashi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: genetik prognoz ≠ kasallik. U kelajakdagi xavfni ko‘rsatadi, klinik belgi hali yo‘q bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Bashoratdan cheklashgacha",
+        "nodes": [
+          "Yangi genetik kashfiyot",
+          "Genetik bashorat",
+          "Hayotni boshqarish vositasi",
+          "Biologik cheklash",
+          "Erkinlik yo‘qolish xavfi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega buyuk kashfiyot ham xavf tug‘dirishi mumkin? 2) Biologik cheklash erkinlikka qanday ta’sir qiladi? Doskada: zanjirni chizdiring va har bosqichga bittadan misol keltirtiring. Qo‘shimcha: manbada yadro fizikasi misoli (Xirosima, Nagasaki, Chernobil) keltirilgan, salbiy oqibatlar keyinroq ma’lum bo‘lgan. Tipik xato: prognozni tashxis bilan aralashtirish."
+    },
+    {
+      "title": "Voqea tahlili: genetik prognoz va erkinlik",
+      "bullets": [
+        {
+          "text": "Vaziyat: bola tug‘ilishidan oldin genetik tekshiruv unga kelajakda qanday kasalliklar xavf solishini ko‘rsatdi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Foyda: irsiy kasalliklar diagnostikasi va terapiyasi imkoniyatlari kengaydi, xavfni oldindan bilish mumkin bo‘ldi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xavf: bashorat inson hayotini boshqarish vositasiga aylanib, uning erkinligini biologik jihatdan cheklashi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Muhokama savoli: bu bashorat bolaga yordammi yoki cheklovmi? Javobingizni manbadagi dalillar bilan asoslang.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "159"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Talabalarni ikki guruhga bo‘ling: ‘yordam’ va ‘cheklov’ tarafi. Qo‘shimcha savol: bunday ma’lumotni bilish huquqi kimda (manba, 162-bet: bu masala alohida axloqiy muammo sifatida qayd etilgan)? Doskada: ikki ustunli ‘foyda / xavf’ jadvalini chizdiring. Tipik xato: faqat bir tomonni (faqat foyda yoki faqat xavfni) ko‘rish."
+    },
+    {
+      "title": "Gen terapiyasi: ikki usul",
+      "bullets": [
+        {
+          "text": "Gen terapiyasi ikki usulda amalga oshiriladi: somatik hujayralar orqali va jinsiy hujayralar orqali.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Somatik usulda o‘zgarish faqat shu shaxsga tegishli, naslga ta’sir qilmaydi, shuning uchun axloqan zararsiz.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: jinsiy hujayra o‘zgarishi naslga o‘tadi, shu sabab UNESCO uni 1994-yilda (hozircha) taqiqlagan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Somatik va jinsiy hujayra terapiyasi",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Somatik",
+          "Jinsiy hujayra"
+        ],
+        "rows": [
+          [
+            "Nimani o‘zgartiradi",
+            "Mutant genni sog‘lom genga almashtirish",
+            "Jinsiy hujayralar irsiy materiali"
+          ],
+          [
+            "Ta’sir doirasi",
+            "Faqat shu shaxs; naslga o‘tmaydi",
+            "Avloddan avlodga o‘tadi"
+          ],
+          [
+            "Axloqiy baho",
+            "Inson uchun zararsiz",
+            "UNESCO 1994: hozircha taqiqlangan"
+          ]
+        ],
+        "header_note": null
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega naslga o‘tish axloqiy bahoni o‘zgartiradi? 2) Kelajak avlodlar roziligi masalasi qanday hal bo‘ladi? Doskada: jadvalni talabalar bilan birga to‘ldiring. Eslatma: manbada homila (fetal) terapiyasi ham tilga olingan; ba’zilar uni an’anaviy axloq buzilishi deb hisoblaydi. Manba OCR matni noaniq, jinsiy hujayra usulining nomi manbada ‘homila terapiyasi’ deb berilgan, shuni aniqlashtiring. Tipik xato: somatik va jinsiy hujayra terapiyasini aralashtirish."
+    },
+    {
+      "title": "Somatik terapiya va fetal terapiya",
+      "bullets": [
+        {
+          "text": "Gen terapiyasining birinchi usuli – somatik hujayra terapiyasi. Unda mutant gen sog‘lom gen bilan almashtiriladi, ayrim muvaffaqiyatli natijalarga erishilgan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Somatik hujayrada irsiyat o‘zgarsa, natija faqat o‘sha shaxsga tegishli bo‘ladi va uning naslga ta’sir qilmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuning uchun somatik usul axloqiy jihatdan inson uchun zararsiz hisoblanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fetal terapiyada homila hujayralari ishlatiladi. Buni an’anaviy axloq va etika qoidalarining buzilishi deb talqin qiluvchilar oz emas.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega somatik o‘zgarish naslga o‘tmasligi uni axloqan xavfsizroq qiladi? 2) Nega homila hujayralaridan foydalanish e’tiroz uyg‘otadi? Doskada: ikki ustunli sxema chizing – «Somatik terapiya» va «Fetal terapiya», har biriga asosiy belgisini yozing. Tipik xato: fetal terapiyani ham somatik terapiya kabi to‘liq «zararsiz» deb hisoblash. Manbadagi fetal terapiya haqidagi OCR matni aniq emas, shuning uchun bu band ehtiyotkorlik bilan berilsin."
+    },
+    {
+      "title": "Jinsiy hujayra terapiyasi va UNESKO taqiqi",
+      "bullets": [
+        {
+          "text": "Ikkinchi usulda jinsiy hujayralarning irsiy materiali o‘zgartiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunday o‘zgarishlar avloddan avlodga o‘tadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UNESKO (BMT Ta’lim, fan va madaniyat tashkiloti) 1994 yilda uni hozircha qat’iy taqiqlagan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Jinsiy hujayra terapiyasi zanjiri",
+        "nodes": [
+          "Jinsiy hujayra o‘zgartiriladi",
+          "O‘zgarish avlodga o‘tadi",
+          "Nasl taqdiriga ta’sir",
+          "UNESKO taqiqi (1994)"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nasldan naslga o‘tuvchi o‘zgarish nega alohida xavf tug‘diradi? 2) «Hozircha» so‘zi taqiqning kelajakda o‘zgarishi mumkinligini bildiradimi? Doskada: zanjir sxemasini chizib, har bir strelkaga «nima uchun?» savolini yozing. Tipik xato: taqiq yilini va tashkilotni adashtirish (1994, UNESKO)."
+    },
+    {
+      "title": "Diqqat: somatik ≠ jinsiy hujayra terapiyasi",
+      "bullets": [
+        {
+          "text": "Xato xavfi: ikkala usulni bir xil baholash. Asosiy farq – o‘zgarish naslga o‘tish-o‘tmasligida.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Somatik usul faqat bitta bemorga tegadi, jinsiy hujayra usuli esa kelajak avlodlarga ham tegadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reproduktiv aralashuv avlodlar taqdiriga bog‘liq, shu uchun chuqur axloqiy tahlil zarur.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki usulni solishtirish",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Somatik",
+          "Jinsiy hujayra"
+        ],
+        "rows": [
+          [
+            "Nasl uchun oqibati",
+            "Naslga o‘tmaydi",
+            "Avlodlarga o‘tadi"
+          ],
+          [
+            "Axloqiy baho",
+            "Inson uchun zararsiz",
+            "Chuqur axloqiy tahlil kerak"
+          ],
+          [
+            "Taqiq holati",
+            "Manbada taqiq qayd etilmagan",
+            "UNESKO 1994: hozircha taqiqlangan"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Qaysi mezon bo‘yicha usullar eng ko‘p farq qiladi? 2) Reproduktiv funksiyaga aralashuvga nega alohida qonuniy normativ kerak? Doskada: jadvalni talabalar yopiq kitob bilan o‘zlari to‘ldirsin. Tipik xato: «jinsiy hujayra» va «somatik» tushunchalarini almashtirib yuborish. Eslatma: kitobda jinsiy hujayra usuli «homila terapiyasi» deb ham atalgan."
+    },
+    {
+      "title": "Tezkor savol: gen terapiyasi",
+      "bullets": [
+        {
+          "text": "Savol: qaysi usul naslga o‘tadi? Javob: jinsiy hujayralarning irsiy materiali o‘zgartiriladigan usul. Bu o‘zgarishlar avloddan avlodga o‘tadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: nega taqiqlangan? Javob: u kelajak avlodlar taqdiriga ta’sir qiladi. 1994-yilda UNESKO uni (hozircha) qat’iy taqiqlagan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: somatik hujayra terapiyasi-chi? Javob: natija faqat shu shaxsga tegishli, naslga ta’sir qilmaydi, shuning uchun axloqan zararsiz.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi! Somatik hujayra terapiyasi ≠ jinsiy hujayra terapiyasi. Birinchisi naslga o‘tmaydi, ikkinchisi o‘tadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega naslga o‘tadigan o‘zgarish alohida axloqiy xavf tug‘diradi? 2) Somatik terapiya nega zararsiz hisoblanadi? Doskada: ikki ustunli taqqoslash (somatik | jinsiy hujayra) chizdiring. Tipik xato: talabalar ikkala usulni bir xil axloqiy baholaydi. Eslatma: manbada jinsiy hujayra usuli ‘homila terapiyasi’ deb atalgan, atamani aniqlashtiring. UNESKO = BMTning ta’lim, fan va madaniyat masalalari tashkiloti.",
+      "speaker_notes": ""
+    },
+    {
+      "title": "Voqea tahlili: gen terapiyasini tanlash",
+      "bullets": [
+        {
+          "text": "Vaziyat: oilada irsiy kasallik aniqlangan. Shifokor mutant genni sog‘lom gen bilan almashtirish usulini ko‘rib chiqmoqda.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Somatik hujayralarda o‘zgarish faqat o‘sha shaxsga tegishli bo‘ladi va naslga ta’sir qilmaydi. Shu sabab usul axloqan zararsiz.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jinsiy hujayralarni o‘zgartirish avlodlarga o‘tadi va UNESKO tomonidan taqiqlangan. Homila hujayralarini ishlatishni ayrimlar axloq buzilishi deb biladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu oila uchun qaysi hujayra turi axloqan maqbul va nega? Jinsiy hujayra usulini tanlash qanday oqibatlarga olib keladi?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Talabalarni 3-4 kishilik guruhlarga bo‘ling. Muhokama: 1) Somatik usulni tanlashning axloqiy asosi nima? 2) Kelajak avlodlar roziligi masalasi qanday hal bo‘ladi? Doskada: qaror daraxti chizing (usul turi → naslga ta’siri → axloqiy baho). Tipik xato: ‘davolash maqsadi bo‘lsa, jinsiy hujayra usuli ham mumkin’ deb o‘ylash. Manbada u hozircha qat’iy taqiqlangan.",
+      "speaker_notes": ""
+    },
+    {
+      "title": "UNESKO Deklaratsiyasi: qabul qilinish xronologiyasi",
+      "bullets": [
+        {
+          "text": "Deklaratsiyaning 1-bo‘limi: inson genomi barcha odamlar birligi, qadr-qimmati va xilma-xilligini e’tirof etish asosida yotadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-modda: inson genomi tabiiy holatda daromad manbai bo‘la olmaydi, shuning uchun genom qismini patentlab bo‘lmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: 1997 (UNESKO qabuli) ≠ 1998 (BMT Bosh Assambleyasi qarori). Sanalarni aralashtirmang.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Vaqt chizig‘i",
+        "nodes": [],
+        "header": [
+          "Yil",
+          "Voqea",
+          "Mazmuni"
+        ],
+        "rows": [
+          [
+            "1994",
+            "UNESKO taqiqi",
+            "Jinsiy hujayra terapiyasi taqiqlandi"
+          ],
+          [
+            "1997, 11-noyabr",
+            "UNESKO Bosh konferensiyasi",
+            "Genom deklaratsiyasi qabul qilindi"
+          ],
+          [
+            "1998",
+            "BMT Bosh Assambleyasi",
+            "Deklaratsiya tamoyillari qabul qilindi"
+          ],
+          [
+            "2000",
+            "Okinava uchrashuvi",
+            "Yetakchi sakkiz davlat konsepsiyani tasdiqladi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. BMT = Birlashgan Millatlar Tashkiloti. Muhokama: 1) Nega genomni patentlash mumkin emas? 2) Deklaratsiya tadqiqotchi va bemor huquqlarini qanday muvozanatlaydi? Doskada: 1994–2000 yillar vaqt o‘qini chizib, to‘rt voqeani joylashtiring. Tipik xato: 1997 va 1998-yildagi qarorlarni bitta tashkilotga bog‘lash. 1998-yil qaydi manbada qisqa berilgan, uni aniqlashtiring.",
+      "speaker_notes": ""
+    },
+    {
+      "title": "Genom va inson qadr-qimmati",
+      "bullets": [
+        {
+          "text": "Deklaratsiyaning 1-bo‘limiga ko‘ra, genom barcha odamlarning birligi, ularning qadr-qimmati va xilma-xilligini e’tirof etish asosida yotadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genom inson qadr-qimmatini ifodalaydi. Bu g‘oya barcha odamlar va har bir shaxsning tengligi hamda rang-barangligini asoslaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Insoniyat yagona genlar to‘plami asosida rivojlangan, bu genlar avloddan avlodga o‘tib kelgan. Genlar variantlari odamlarni rang-barang, ammo teng qadrli qilgan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Deklaratsiyaning 1-moddasiga binoan genom insoniyat mulki hisoblanadi. Shu sababli unga adolatli munosabat talab etiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "177"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega genom ‘insoniyat mulki’ deb ataladi? 2) Genetik xilma-xillik tenglikka qanday zid emas? Doskada: ‘Genom → birlik + qadr-qimmat + xilma-xillik’ sxemasini chizdiring. Tipik xato: talabalar genomni yagona ‘bir xil’ genlar deb tushunadi; aslida gap umumiy genlar to‘plami va uning rang-barang variantlari haqida."
+    },
+    {
+      "title": "2 va 4-moddalar: kamsitmaslik va patent masalasi",
+      "bullets": [
+        {
+          "text": "2-modda: har bir inson irsiy xususiyatidan qat’i nazar, o‘z huquq va qadr-qimmati hurmat qilinishiga ega.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-modda: inson genomi tabiiy holatda daromad manbai bo‘la olmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Demak, tadqiqotchi tasvirlagan genom qismini patentlab, tijoratga aylantirib bo‘lmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki modda mantiqi",
+        "nodes": [],
+        "header": [
+          "Qoida",
+          "Mazmuni",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "2-modda",
+            "Irsiyatidan qat’i nazar hurmat",
+            "Kamsitish mumkin emas"
+          ],
+          [
+            "4-modda",
+            "Genom tabiiy holatda daromad manbai emas",
+            "Genom qismi patentlanmaydi"
+          ],
+          [
+            "Okinava, 2000",
+            "Yetakchi sakkiz davlat rahbarlari tasdiqladi",
+            "Insoniyat manfaatiga xizmat qiladi"
+          ]
+        ],
+        "header_note": null
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Genom qismini patentlash tijorat manfaatini oshirishi mumkinmi, bu 4-moddaga qanday zid? 2) Irsiy kasallikka moyil odamni ishga olmaslik 2-moddaga qanday zid? Doskada: 2 va 4-moddalarni ikki ustunli jadval qilib chizdiring. Diqqat: xato qilish xavfi — ‘genom qismini patentlash’ ≠ ‘foydali ixtiroga patent’; manbada ikkinchisi alohida mavzu sifatida (176-bet) ko‘rsatilgan, ularni aralashtirmang. Tipik xato: 2-moddani faqat irqiy kamsitishga tegishli deb o‘ylash."
+    },
+    {
+      "title": "Genetik ma’lumot sirliligi va tadqiqot chegarasi",
+      "bullets": [
+        {
+          "text": "Shaxsni aniqlash mumkin bo‘lgan, saqlanayotgan yoki qayta ishlanayotgan genetik ma’lumotlarning sirliligi qonun bilan himoyalanishi lozim.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Deklaratsiyaning ‘C’ bo‘limida bemor yoki sog‘lom odam huquqlari bilan tadqiqotchining ilm bilan shug‘ullanish huquqi birga ko‘riladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genomga oid hech bir tadqiqot inson yoki odamlar guruhining huquqi, asosiy erkinligi va qadr-qimmatidan ustun qo‘yilishi mumkin emas.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qadr-qimmatni kamsituvchi amaliyotga, jumladan inson yaratish maqsadidagi klonlashga yo‘l qo‘yilmaydi. Ilmiy ishlar emas, aynan shu amaliyot taqiqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161-162"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Genetik ma’lumot sirligi buzilsa, bemorga qanday zarar yetishi mumkin? 2) Tadqiqotchi erkinligi va bemor huquqi to‘qnashsa, qaysi biri ustun? Doskada: ‘Tadqiqot ←→ Inson huquqi’ tarozisini chizdiring (huquq og‘irroq). Tipik xato: deklaratsiya klonlash bo‘yicha barcha ilmiy ishlarni taqiqlaydi deb o‘ylash; aslida inson yaratish maqsadidagi klonlash taqiqlanadi."
+    },
+    {
+      "title": "Deklaratsiya muqaddimasidagi tamoyillar",
+      "bullets": [
+        {
+          "text": "UNESKO Ustavi muqaddimasida shaxs qadr-qimmatini hurmat qilish, insonlarning teng huquqliligi va o‘zaro hurmat tamoyillari e’lon qilingan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "174"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Muqaddima millatlar va irqlar tengsizligi doktrinasini rad etadi. Dunyo insoniyatning intellektual va axloqiy birdamligiga tayanishi shart, deyiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "174"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UNESKOga biologiya va genetikadagi taraqqiyot oqibatlariga qarshi choralar ishlab chiqish va axloqiy tadqiqotlarni rag‘batlantirish vazifasi yuklangan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "174"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genom bo‘yicha tadqiqotlar odam yoki guruhning qadr-qimmati, erkinliklari va huquqlarini to‘liq hurmat qilishi lozim, deb qayd etilgan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "174"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega Deklaratsiya muqaddimasida tenglik va qadr-qimmat tamoyillari birinchi o‘rinda turadi? 2) UNESKOning vazifasi tadqiqotni to‘xtatishmi yoki oqibatlarini nazorat qilishmi? Doskada chizish: «Tamoyil → UNESKO vazifasi → tadqiqotchi majburiyati» zanjirini chizdiring. Tipik xato: talabalar Deklaratsiyani ilmiy tadqiqotni butunlay taqiqlaydi, deb o‘ylaydi. Aslida u tadqiqot inson qadr-qimmatidan ustun qo‘yilmasligini talab qiladi."
+    },
+    {
+      "title": "Voqea tahlili: genom va patent",
+      "bullets": [
+        {
+          "text": "Vaziyat: tadqiqotchilar guruhi inson genomining bir qismini tavsifladi va uni patentlab, tijorat foydasi olmoqchi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Deklaratsiyaning 4-moddasi: inson genomi tabiiy holatda daromad manbai bo‘lishi mumkin emas.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Demak, tadqiqotchi tavsiflagan genom qismini patentlab, tijorat predmetiga aylantirib bo‘lmaydi. 2000-yilgi Okinava uchrashuvida sakkiz yetakchi davlat rahbari ham shu g‘oyani tasdiqlagan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: 4-modda nuqtai nazaridan bu guruhning rejasini qanday baholaysiz va nima uchun?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Genom qismini tavsiflash uni ixtiro qilish bilan teng keladimi? 2) Bu tamoyil butun insoniyat manfaatiga qanday xizmat qiladi? Doskada chizish: «tadqiqotchi — genom qismi — patent — tijorat» sxemasini chizib, 4-modda to‘sig‘ini belgilang. Tipik xato: talabalar genomni tabiiy holatda ham, tavsiflangan qism sifatida ham bir xil deb oladi. Ularni ikki guruhga bo‘lib, 4-modda talqinini bahslashtiring."
+    },
+    {
+      "title": "Shifokor va bemor: ota-onalar qarori",
+      "bullets": [
+        {
+          "text": "Tibbiyotning ko‘p sohasida asosiy masala shifokor va bemor munosabatining maqbul axloqiy me’yorlarini belgilashdir.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yuqumli va tug‘ma kasalliklar sohasida shifokor bitta bemor bilan emas, kasallikni boshqalarga yuqtirish xavfi katta guruh bilan ishlaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Irsiy patologiya ota-onadan bolaga, keyin keyingi avlodlarga o‘tadi. Ko‘p shakllari bola tug‘ilmasdan, onaning qornida rivojlanadi va tug‘ma nuqson bo‘lib chiqadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: oldini olish yoki davolash haqida qarorni bemorning o‘zi emas, homilador ayol yoki ota-onalar qabul qiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega tug‘ma kasalliklarda qaror qabul qiluvchi shaxs bemorning o‘zi bo‘lmaydi? 2) Shifokorning mas’uliyati yakka bemordan oila va avlodlarga qanday kengayadi? Doskada chizish: «ota-ona → homila → keyingi avlod» irsiy o‘tish strelkalarini chizdiring. Tipik xato: bemorni faqat shifokor qarshisidagi odam deb tushunish. Bu sohada qaror qabul qiluvchi va oqibatni ko‘taruvchi tomonlar har xil bo‘lishi mumkin."
+    },
+    {
+      "title": "Erta aniqlash va ikki o‘zaro bog‘liq muammo",
+      "bullets": [
+        {
+          "text": "Zamonaviy biotexnologiya genom buzilishini kasallik belgisi hali yo‘q bosqichda ham aniqlay oladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Misol: Alsgeymer kasalligi va Gentington xoreyasi odam 40 dan, ba’zan 70 yoshdan oshganda belgi beradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu holat ikki o‘zaro bog‘liq axloqiy muammoni keltirib chiqaradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki axloqiy muammo",
+        "nodes": [],
+        "header": [
+          "Muammo",
+          "Mazmuni"
+        ],
+        "rows": [
+          [
+            "1. Bilish huquqi",
+            "Kim bo‘lajak irsiy belgilarni bilishi mumkin"
+          ],
+          [
+            "2. Genotipga aralashish",
+            "Genotipni qo‘llash va o‘zgartirish chegarasi"
+          ],
+          [
+            "Qaror egasi",
+            "Ko‘pincha homilador ayol yoki ota-ona"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Alomatsiz bosqichda aniqlangan xavfni kim bilishi kerak? (2) Farzandning irsiy ma’lumotini ota-ona hal qilsa, nimani yo‘qotamiz? Doskada: ikki ustunli jadval (1-muammo / 2-muammo) chizdiring va har biriga bittadan misol yozdiring. Tipik xato: genomdagi buzilishni aniqlashni kasallik boshlanganiga tenglashtirish."
+    },
+    {
+      "title": "Tibbiyot xodimining roli: “Zarar yetkazma”",
+      "bullets": [
+        {
+          "text": "Gippokratdan qolgan “Zarar yetkazma” tamoyili bugungi kunda ancha murakkablashdi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sabab: irsiy davolash, embrion to‘qimasidan foydalanish, umrni uzaytirish va klonlash muammolari.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiy texnologiyalar doirasi kengaydi: bemorga foyda ham, tavakkal darajasi ham ortdi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Foyda va xavf zanjiri",
+        "nodes": [
+          "Tibbiy texnologiyalar kengayadi",
+          "Bemorga tegadigan foyda ortadi",
+          "Xavf (tavakkal) darajasi ortadi",
+          "“Zarar yetkazma” murakkablashadi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Yangi texnologiya foyda bersa ham, shifokor nega ehtiyotkor bo‘lishi kerak? (2) Ildiz hujayra yoki klonlash misolida foyda va xavfni solishtiring. Doskada: foyda va xavf tarozisini chizib, ikkala pallaga misol yozdiring. Tipik xato: “Zarar yetkazma” tamoyili bekor bo‘ldi deb o‘ylash; u bekor bo‘lmagan, faqat murakkablashgan."
+    },
+    {
+      "title": "Tezkor savol: shifokor va genetik axborot",
+      "bullets": [
+        {
+          "text": "Savol 1: o‘zining, farzandlari yoki avlodining bo‘lajak irsiy belgilarini bilishga kim huquqli? Manba buni hal etilishi kerak bo‘lgan axloqiy savol deb qo‘yadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol 2: “Zarar yetkazma” tamoyili nega murakkablashdi? Javob: tibbiy aralashuv doirasi kengayib, foyda bilan birga tavakkal ham oshdi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi. Genom buzilishini aniqlash ≠ kasallik alomatlari mavjudligi; alomat hali bo‘lmasligi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daq. Talabalar javobni 30 soniya ichida juftlikda aytadi. Muhokama: ikkala savolda shifokor qaysi tomonga ko‘proq javobgar? Doskada: ikki savolni yozib, javob kalit so‘zlarini (huquq; foyda va tavakkal) belgilang. Tipik xato: bilish huquqi masalasiga bitta tayyor javob berish; manbada bu ochiq savol sifatida qo‘yilgan."
+    },
+    {
+      "title": "Voqea tahlili: alomatsiz Gentington xavfi",
+      "bullets": [
+        {
+          "text": "Vaziyat: odamda kasallik belgisi yo‘q, ammo genetik test Gentington xoreyasi xavfini ko‘rsatdi. Natijani kimga aytish kerak?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zamonaviy biotexnologiya genom buzilishini alomatlar hali yo‘q bosqichda ham aniqlaydi. Misol: Alsgeymer kasalligi va Gentington xoreyasi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Birinchi muammo: o‘zining, farzandlarining, avlodlarining va bemorlarining kelajakdagi irsiy belgilarini bilishga kim haqli, kim haqli emas?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkinchi muammo: muayyan patologik genotipdan klinik foydalanishga yo‘l qo‘ymaslik va uni izchil o‘zgartirish masalalari.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "162"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Test natijasini bemorning o‘ziga aytish majburiymi? 2) Farzandlar va qarindoshlarning bilish huquqi qanday hal qilinadi? Doskada: ikki ustunli jadval chizdiring: ’bilish huquqi’ va ’bilmaslik huquqi’. Tipik xato: genetik xavfni aniq kasallik bilan tenglashtirish. Test faqat xavfni ko‘rsatadi, kasallik hali boshlanmagan. Vaziyat misoli o‘qituvchi tomonidan manba mazmuniga tayanib tuzilgan."
+    },
+    {
+      "title": "Biotexnologiya va biohavfsizlik muammolari",
+      "bullets": [
+        {
+          "text": "Biotibbiyot va biotexnologiyaning tez rivoji axloqiy jihatdan o‘ta murakkab masalalarni kun tartibiga qo‘ydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ular qatoriga inson hujayra va to‘qimalarini klonlash, irsiy testlash, ildiz hujayralardan foydalanish va irsiy injeneriya kiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Inson a’zo va to‘qimalarini transplantatsiya qilish ham shu qatorda. Bunday aralashuv oqibatini oldindan ko‘rish juda qiyin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiy texnologiyalar kengayib, bemorga foyda ortdi, ammo tavakkal darajasi ham oshdi. Bu Gippokratning “Zarar yetkazma” prinsipini murakkablashtirdi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega yangi texnologiya foyda bilan birga xavfni ham oshiradi? 2) “Zarar yetkazma” prinsipi nima uchun murakkablashdi? Doskada: 5 ta texnologiyani ro‘yxat qilib, har biri yoniga bitta axloqiy savol yozdiring. Tipik xato: talabalar texnologiyani faqat xavfli yoki faqat foydali deb baholaydi. Kitobda ikkala tomon ham ko‘rsatilgan."
+    },
+    {
+      "title": "Ildiz hujayra: xavf noaniqligi",
+      "bullets": [
+        {
+          "text": "Ildiz hujayralar har narsaga aylanishi mumkin, shuning uchun aralashuv oqibatini oldindan aytish qiyin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Klinik tadqiqotlarning o‘zi bunday aralashuv xavfsizligini kafolatlash uchun yetarli emas.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jigar va miya funksiyasini tiklashda foydali bo‘lishi mumkin; bo‘g‘im tog‘ayida tajriba katta.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Xavf noaniqligi zanjiri",
+        "nodes": [
+          "Ildiz hujayra kiritiladi",
+          "Har xil to‘qimaga aylanishi",
+          "Donor geni o‘tishi haqida fikr",
+          "Nazariy xavf: saraton (taxmin)",
+          "Uzoq oqibat o‘rganilmagan"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega klinik tadqiqot xavfsizlikka kafolat bermaydi? 2) Foyda aniq, xavf noaniq bo‘lsa, bemorga qanday ma’lumot berish kerak? Doskada: zanjirni o‘zlari chizsin va har bosqichga savol belgisi qo‘ysin. Tipik xato: saraton xavfini isbotlangan fakt deb aytish. Kitobda bu faqat nazariy taxmin va donor geni o‘tishi haqidagi fikr ham aniq isbotlanmagan."
+    },
+    {
+      "title": "Ildiz hujayra bilan davolash istiqbollari",
+      "bullets": [
+        {
+          "text": "Ildiz hujayra jigar va bosh miyaning shikastlangan vazifalarini tiklashda foydali bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "G‘oya: tug‘ilganda kindik hujayralaridan bank yaratib, 40–50 yildan so‘ng organni o‘stirish.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "178"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uzoq oqibatlar yetarli o‘rganilmagan; klinik tadqiqotlarning o‘zi xavfsizlikka kafolat bermaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Imkoniyat va cheklov",
+        "nodes": [],
+        "header": [
+          "Yo‘nalish",
+          "Imkoniyat",
+          "Cheklov"
+        ],
+        "rows": [
+          [
+            "Jigar, bosh miya",
+            "Shikastlangan vazifani tiklash",
+            "Uzoq oqibatlar o‘rganilmagan"
+          ],
+          [
+            "Bo‘g‘im tog‘ayi",
+            "Mexanik shikastda katta tajriba",
+            "Ko‘p jihatlari hali yaxshi o‘rganilmagan"
+          ],
+          [
+            "Hujayra banki",
+            "Organni sun’iy o‘stirib almashtirish",
+            "Professor Tarantul fikriga asoslangan"
+          ],
+          [
+            "Uzoq xavf",
+            "—",
+            "Yillar o‘tib saraton: faqat nazariy faraz"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega klinik tadqiqotlarning o‘zi xavfsizlikni kafolatlamaydi? 2) Hujayra banki g‘oyasi qanday axloqiy savollar tug‘diradi? Doskada: imkoniyat va xavf jadvalini talabalar bilan birga chizing. Tipik xato: saraton xavfini isbotlangan fakt deb tushunish; manbada u faqat nazariy faraz sifatida berilgan."
+    },
+    {
+      "title": "Embrional ildiz hujayra: kurashli bahslar",
+      "bullets": [
+        {
+          "text": "Embrional ildiz hujayralar ustidagi tadqiqotlar bugun keskin bahslarga sabab bo‘lmoqda.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Umid: Parkinson, Alsgeymer, tarqoq skleroz kabi hozircha davosiz kasalliklarni davolash va ko‘chirib o‘tkazish uchun organ, to‘qima yaratish.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Ildiz hujayralar asosan embriondan olinadi. Savol: tadqiqot uchun sun’iy embrion yaratish mumkinmi va zarurmi?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Faqat farzand ko‘rishga mo‘ljallanmagan embrionlar ishlatilsa, natijani qanday aniqlash va ota-ona donorlar huquqini qanday ta’minlash mumkin?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Davolash umidi embrionning axloqiy maqomidan ustun turadimi? 2) Ota-ona donorning roziligi qanday bo‘lishi kerak? Doskada: ikki ustun chizing, chapda umid, o‘ngda axloqiy savollar. Tipik xato: ilmiy tadqiqotni ta’qiqlash va uni cheklash masalasini aralashtirish. Eslatma: Parkinson kasalligi nomi OCR matnida aniq o‘qilmagan, shuning uchun band ‘ishonchsiz’ deb belgilangan."
+    },
+    {
+      "title": "UNESKO: embrion hujayralariga uch yondashuv",
+      "bullets": [
+        {
+          "text": "UNESKO (ta’lim, fan, madaniyat tashkiloti) qo‘mitasi uch yondashuvni qayd etgan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hujjatga ko‘ra, embrion hujayrasi tadqiqotining axloqiy asosi ko‘p jihatdan embrion maqomiga bog‘liq.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkinchi pozitsiya faqat tibbiy maqsad va qat’iy shartlar bajarilgandagina ruxsat beradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Uch pozitsiya",
+        "nodes": [],
+        "header": [
+          "Pozitsiya",
+          "Mazmuni",
+          "Xulosa"
+        ],
+        "rows": [
+          [
+            "1-yondashuv",
+            "Embriondan foydalanish mutlaqo axloqqa zid",
+            "Butunlay rad etiladi"
+          ],
+          [
+            "2-yondashuv",
+            "Faqat tibbiy maqsad, qat’iy shartlar",
+            "Shartli maqbul"
+          ],
+          [
+            "3-yondashuv",
+            "Xavf va axloqiy oqibatlar sababli",
+            "Tadqiqot taqiqlanishi lozim"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Siz qaysi pozitsiyaga yaqinsiz va nega? 2) Qat’iy shartlar nimalardan iborat bo‘lishi mumkin? Doskada: uch pozitsiyani ‘rad etish – shartli ruxsat – taqiqlash’ shkalasi ko‘rinishida chizing. Tipik xato: ikkinchi pozitsiyani to‘liq ruxsat deb tushunish; u faqat tibbiy maqsad va qat’iy shartlar bilan cheklangan."
+    },
+    {
+      "title": "Voqea tahlili: embrional ildiz hujayra tadqiqoti",
+      "bullets": [
+        {
+          "text": "Vaziyat: laboratoriya ota-onaning bola ko‘rishiga mo‘ljallanmagan embrionlardan ildiz hujayra olishni taklif qiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YUNESKO Bioetika xalqaro qo‘mitasi hujjatida uch yondashuv bor: mutlaqo axloqqa zid; faqat qat’iy shartlarda o‘rinli; xavf sababli taqiqlash lozim.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ochiq savol: bunday tadqiqot natijasini qanday aniqlash va ota-ona donorlar huquqini qanday ta’minlash mumkin?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Embrionlardan sun’iy o‘stirilgan ildiz hujayra texnologiyasiga kitobda e‘tiroz bildirilmaydi. Buyuk Britaniyada u tibbiy maqsadda ruxsat etilgan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "179"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Uch yondashuvdan qaysi biri taklifni qanday baholaydi? 2) Embrion maqomi nima uchun hal qiluvchi? Doskada: uch ustunli ro‘yxat (a – mutlaq man, b – shartli ruxsat, v – taqiq) chizdiring va talabalar fikrini belgilang. Tipik xato: uch yondashuvni bitta pozitsiya deb aralashtirish yoki ildiz hujayrani faqat embriondan olinadi deb o‘ylash."
+    },
+    {
+      "title": "Genetik ma’lumot egasi va patentlash",
+      "bullets": [
+        {
+          "text": "Savol: irsiy axborot egasi kim? Materialini bergan odammi, tavsiflagan olimmi, qo‘llagan tadqiqotchimi yoki mablag‘ bergan firmami?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mohiyatan faqat foyda beradigan yoki sanoatda qo‘llanadigan haqiqiy kashfiyotni patentlash mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YUNESKO deklaratsiyasining 4-moddasi: genom tabiiy holatda daromad manbai bo‘lmaydi, tavsiflangan genom qismi patentlanib tijoratga aylantirilmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genetik ma’lumotlarni to‘plash, qayta ishlash, saqlash va undan foydalanish ham axloqiy savollar tug‘diradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "176"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ma’lumot egasi sifatida kim eng ko‘p huquqqa ega? 2) Genom qismini kashf qilish bilan uni patentlash orasida qanday farq bor? Doskada: to‘rt ishtirokchi (donor, olim, tadqiqotchi, firma) va ularning ‘da’vosi’ni strelkalar bilan chizing. Tipik xato: har qanday gen topilmasini patentlash mumkin deb o‘ylash; kitobda faqat foydali, sanoatda qo‘llanadigan kashfiyot haqida gap boradi."
+    },
+    {
+      "title": "Ma’lumot to‘plash, biopiratlik va adolat",
+      "bullets": [
+        {
+          "text": "Xabardor rozilik tub xalqlar uchun ma’noga egami? Ular zarur axborotni qaysi tilda oladi?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "177"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Donor jamoa daromaddan ulush olmasa, bu “biologik qaroqchilik” bo‘lmaydimi — deb savol qo‘yiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "177"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bioetika xalqaro qo‘mitasi genom ma’lumotidan olinadigan daromad uchun maxsus xalqaro mexanizm taklif qildi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "177"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Biopiratlik savoli zanjiri",
+        "nodes": [
+          "Jamoa genetik materiali olinadi",
+          "Tadqiqot natija beradi",
+          "Natija patentlanadi",
+          "Donor jamoa daromaddan ulushsiz",
+          "Biologik qaroqchilik?"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Ilg‘or jamiyatlardagi xabardor rozilik tub xalqlarda nega muammo tug‘diradi? 2) Daromadni adolatli taqsimlash qanday bo‘lishi mumkin? Doskada: zanjirni chizib, qaysi bosqichda adolat buzilishini talabalar belgilasin. Tipik xato: ‘biologik qaroqchilik’ni isbotlangan holat deb qabul qilish; kitobda bu savol shaklida qo‘yilgan."
+    },
+    {
+      "title": "Klonlash jarayoni bosqichlari",
+      "bullets": [
+        {
+          "text": "Avval tuxum hujayradan mikroxirurgiya bilan yadro olib tashlanadi (enukleatsiya).",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "178"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yadro kiritilgach, elektr razryad yoki kimyoviy ta’sir bilan hujayra bo‘linishni boshlaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "179"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surrogat ona donorning genetik egizak nusxasini dunyoga keltiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "179"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Klonlash zanjiri",
+        "nodes": [
+          "Somatik hujayradan yadro olinadi",
+          "Tuxum yadrosi olib tashlanadi",
+          "Yadro tuxum hujayraga kiritiladi",
+          "Bo‘linish va embrion hosil bo‘lishi",
+          "Surrogat onaga implantatsiya"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bu jarayon spermatozoid bilan urug‘lanishga o‘xshatiladi? 2) Klonda genetik material kimdan olinadi? Doskada: 5 bosqichli zanjirni talabalar chizsin va har bosqichga bir so‘z yozsin. Tipik xato: klon sperma va tuxum qo‘shilishidan hosil bo‘ladi deb o‘ylash; aslida yadro somatik hujayradan olinadi. Eslatma: YuNESKO — BMTning ta’lim, fan va madaniyat tashkiloti."
+    },
+    {
+      "title": "Klonlash: tarafdorlar va qarshilar",
+      "bullets": [
+        {
+          "text": "Klon donorning genetik egizagi; u asl nusxadan bir necha o‘n yilga yosh bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "179"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qarshilar fikricha, genetik farq kamayib, jamiyat epidemiyalar oldida zaiflashadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "179"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: klon genetik nusxa, lekin barmoq izi boshqa bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "179"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Klonlash: ijobiy va salbiy",
+        "nodes": [],
+        "header": [
+          "Soha",
+          "Tarafdorlar",
+          "Qarshilar"
+        ],
+        "rows": [
+          [
+            "Tibbiyot",
+            "Transplantatsiya uchun sog‘lom organ",
+            "Klonlarda tug‘ma nuqson xavfi yuqori"
+          ],
+          [
+            "Ilm",
+            "Daholar ilmiy ishini davom ettirish",
+            "Genetik xilma-xillik kamayadi"
+          ],
+          [
+            "Oila",
+            "Halokatda o‘lgan bolani qaytarish",
+            "Boylar faqat o‘zi uchun organ oladi"
+          ],
+          [
+            "Boshqa",
+            "Klon asl nusxadan yosh, barmoq izi boshqa",
+            "Diktator minglab klon yaratishi mumkin"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qaysi ijobiy dalil sizga eng kuchli tuyuladi va nega? 2) Suiiste’mol xavfini qonun bilan qanday cheklash mumkin? Doskada: ikki ustunli jadvalni (tarafdor/qarshi) talabalar o‘zlari to‘ldirsin. Tipik xato: klonni asl nusxaning aynan o‘zi (barmoq izi ham bir xil) deb hisoblash. Qarshilar ro‘yxatidagi boylar haqidagi band matni OCR sifatida qisman xira, ehtiyotkorlik bilan izohlang."
+    },
+    {
+      "title": "Reproduktiv va terapevtik klonlash",
+      "bullets": [
+        {
+          "text": "Inson yaratish maqsadidagi klonlash inson qadr-qimmatini kamsitadi va ruxsat etilmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Og‘ir kasallikni davolovchi klonlashga ruxsat berish mumkinmi — bu masala hali hal bo‘lmagan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ruxsat nasl uchun klonlashga yo‘l ochishi mumkin degan xavotir bor; yana embrion muammosi chiqadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "180"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Klonlash turlari",
+        "nodes": [],
+        "header": [
+          "Turi",
+          "Maqsad",
+          "Holati"
+        ],
+        "rows": [
+          [
+            "Reproduktiv",
+            "Klon bola tug‘ilishi uchun",
+            "Ko‘p mamlakatda qonun bilan taqiqlangan"
+          ],
+          [
+            "Terapevtik",
+            "Og‘ir kasallikni davolash",
+            "Ruxsat masalasi hal bo‘lmagan"
+          ],
+          [
+            "Embrion masalasi",
+            "Ildiz hujayra olish uchun maxsus embrion",
+            "Axloqiy bahs: embrion maqomi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Davolash uchun klonlash nasl uchun klonlashga olib kelmaydimi? 2) Davolash maqsadida yaratilgan embrionning maqomi qanday bo‘lishi kerak? Doskada: ikki turni solishtiruvchi jadval chizdiring. Tipik xato: klonlash fanini butunlay taqiqlangan deb o‘ylash; taqiqlanayotgani faqat inson yaratish amaliyoti. Qo‘shimcha: shu slayddan keyin qisqa Voqea tahlili o‘tkazish mumkin."
+    },
+    {
+      "title": "Voqea tahlili: klonlash va davolash maqsadi",
+      "bullets": [
+        {
+          "text": "Vaziyat: og‘ir, davosiz kasallikni davolash uchun klon embrion yaratish taklif qilindi. Bu taklif davolash maqsadini ko‘zlaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hujayra yadrosini ko‘chirib klonlash faqat o‘zak (ildiz) hujayra olish uchun xos embrion yaratilishiga olib keladi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: davolash uchun klonlashga ruxsat berilsa, bu nasl qoldirish maqsadidagi klonlashga yo‘l ochmaydimi?",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: davolash uchun klonlash ≠ nasl uchun klonlash. Xalqaro hamjamiyat faqat nasl qoldirish maqsadidan voz kechgan, birinchisi hal bo‘lmagan.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "180"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Davolash uchun klonlash ruxsat etilsa, qanday xavf paydo bo‘ladi? 2) Embrion maqomi bu masalada nima uchun muhim? Doskada: ikki ustunli sxema chizdiring (davolash maqsadi | nasl qoldirish maqsadi) va har biriga hozirgi xalqaro holatni yozdiring. Tipik xato: ikki xil klonlashni aralashtirish va ‘klonlash butunlay taqiqlangan’ deb o‘ylash."
+    },
+    {
+      "title": "Konvergent texnologiyalar: manbadagi kesishuv",
+      "bullets": [
+        {
+          "text": "Manbada “konvergent texnologiyalar” atamasi uchramaydi; slayd manbadagi kesishuvni umumlashtiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "178"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Genetika, klonlash va o‘zak hujayralar birgalikda tibbiyot va jamiyatga ta’sir ko‘rsatadi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "178"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Yadro ko‘chirib klonlash o‘zak hujayra olishga mo‘ljallangan embrion yaratadi; bu axloqiy savol tug‘diradi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "180"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Texnologiyalar kesishuvi (talqin)",
+        "nodes": [
+          "Genom va genetik diagnostika",
+          "Klonlash (yadro ko‘chirish)",
+          "O‘zak hujayralar",
+          "Davolash imkoniyati",
+          "Axloqiy savollar va xavf"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Uchala yo‘nalish bir-biriga qanday bog‘liq? 2) Nima uchun manbada bu atama yo‘qligini bilish muhim? Doskada: sxemani talabalar bilan to‘ldiring, har tugun yoniga bitta axloqiy savol yozdiring. Tipik xato: talqinni muallifning o‘z so‘zi deb qabul qilish."
+    },
+    {
+      "title": "Xulosa: erkinlik, mas’uliyat va shifokor roli",
+      "bullets": [
+        {
+          "text": "Inson geni qadr-qimmatni ifodalaydi; genom daromad manbai bo‘lmaydi, shaxsni aniqlaydigan genetik ma’lumot sirini qonun himoya qilishi kerak.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jinsiy hujayra genini o‘zgartirish naslga o‘tgani uchun hozircha taqiqlangan. Inson yaratish uchun klonlashga ham yo‘l qo‘yilmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "160, 161, 180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Genetik tadqiqotda ishtirok ixtiyoriy bo‘lishi va qatnashchi to‘liq ma’lumotga ega bo‘lishi (xabardor rozilik) lozim.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "177"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yangi texnologiyalar foydani ham, tavakkalni ham oshirdi; Gippokratning “Zarar yetkazma” tamoyili murakkablashdi.",
+          "source": {
+            "author": "G‘iyosov Z.A., Indiaminov S.I.",
+            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+            "page": "175"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Shifokor genetik ma’lumot sirini qanday saqlaydi? 2) “Zarar yetkazma” tamoyili yangi texnologiyalarda nega qiyinlashdi? Doskada: to‘rt tamoyilni (qadr-qimmat, sir, rozilik, taqiq) ustun qilib yozdiring va har biriga bitta misol keltiring. Tipik xato: somatik va jinsiy hujayra terapiyasini bir xil deb o‘ylash."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Tug‘ilmagan bolada kelajakdagi kasallik xavfi aniqlandi, ammo klinik belgilar hali yo‘q. Bu imkoniyat qanday ataladi?",
+      "options": [
+        "Somatik gen terapiyasi",
+        "Genetik prognoz berish",
+        "Reproduktiv klonlash",
+        "Jinsiy hujayra terapiyasi"
+      ],
+      "correct_index": 1,
+      "explanation": "Genom chuqur o‘rganilgach genetik prognoz paydo bo‘ldi: kasallik belgilari ko‘rinishidan ancha oldin, hatto bola tug‘ilgunga qadar xavfni aniqlash mumkin. Gen terapiyasi va klonlash esa davolash yoki nusxa yaratish usullari bo‘lib, xavfni oldindan aytib berish emas.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "159"
+      }
+    },
+    {
+      "question": "Kitobda Xirosima, Nagasaki va Chernobil misollari nimani ko‘rsatish uchun keltirilgan?",
+      "options": [
+        "Yadro texnologiyasi xavfsizligi isbotlanganini",
+        "Genetika yadro fizikasidan xavfsizroq ekanini",
+        "Urushlarning ilmiy rivojlanishga ta’sirini",
+        "Kashfiyot oqibati ancha keyin ayon bo‘lishini"
+      ],
+      "correct_index": 3,
+      "explanation": "Yadro fizikasidagi buyuk kashfiyotlarning salbiy natijalari atom bombalari urushda qo‘llangandan va Chernobil halokatidan keyingina ma’lum bo‘ldi. Muallif shu orqali genetik kashfiyotlar ham katta xavf tug‘dirishi mumkinligini eslatadi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "159"
+      }
+    },
+    {
+      "question": "Shifokor bemorning genetik prognoziga tayanib, uning hayotini boshqarmoqchi bo‘lsa, qaysi xavf yuzaga keladi?",
+      "options": [
+        "Inson erkinligining biologik cheklanishi",
+        "Kasalliklar diagnostikasi aniqligining pasayishi",
+        "Inson genomini o‘rganish imkoniyatining tugashi",
+        "Ilmiy tadqiqotlar uchun mablag‘ning kamayishi"
+      ],
+      "correct_index": 0,
+      "explanation": "Genetik prognoz inson hayoti ustidan hukmronlik va uni boshqarishning tibbiy-biologik vositasiga aylanishi mumkin. Bu inson erkinligini biologik jihatdan cheklaydi, shu sababli biogenetik tadqiqotlar etik nuqtai nazardan chuqur tahlil qilinishi kerak.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "159"
+      }
+    },
+    {
+      "question": "Bemorning somatik hujayralarida mutant gen sog‘lom genga almashtirildi. Bu usul nega etik jihatdan zararsiz baholanadi?",
+      "options": [
+        "Nasldan naslga o‘tib, avlodlarni himoya qilgani uchun",
+        "Faqat homila hujayralari bilan bajarilgani uchun",
+        "O‘zgarish faqat shu shaxsga tegishli, naslga o‘tmaydi",
+        "UNESKO tomonidan majburiy qilib belgilangani uchun"
+      ],
+      "correct_index": 2,
+      "explanation": "Somatik hujayralarda irsiyatning o‘zgarishi faqat o‘sha shaxsga taalluqli bo‘ladi va uning naslini o‘zgartirmaydi. Shu sababli bu usul etik tomondan inson uchun zararsiz hisoblanadi. Nasldan naslga o‘tish jinsiy hujayra o‘zgarishining xususiyatidir.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "160"
+      }
+    },
+    {
+      "question": "Klinika jinsiy hujayralar irsiy materialini o‘zgartirib, bu o‘zgarish nasldan naslga o‘tishini rejalashtirmoqda. UNESKO 1994 yildagi pozitsiyasi qanday?",
+      "options": [
+        "Faqat nodir kasalliklarda ruxsat etilgan",
+        "Hozircha qat’iy taqiqlangan usul sanaladi",
+        "Davlat xohishiga ko‘ra erkin qo‘llanadi",
+        "Faqat tadqiqot maqsadida tavsiya etilgan"
+      ],
+      "correct_index": 1,
+      "explanation": "Jinsiy hujayralar irsiy materialini o‘zgartirish o‘zgarishlarning avlodlarga o‘tishiga olib keladi. Shuning uchun bu usul 1994 yilda UNESKO tomonidan (hozircha) qat’iy taqiqlangan.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "160"
+      }
+    },
+    {
+      "question": "Gen terapiyasining qaysi usuli UNESKO tomonidan 1994-yilda (hozircha) qat‘iy taqiqlangan?",
+      "options": [
+        "Somatik hujayralarda genni almashtirish",
+        "Jinsiy hujayralar irsiy materialini o‘zgartirish",
+        "Bemorning o‘z hujayralarini davolash",
+        "Ildiz hujayralar bilan davolashning barcha turi"
+      ],
+      "correct_index": 1,
+      "explanation": "Jinsiy hujayralar irsiy materialini o‘zgartirish naslga o‘tadi, shuning uchun u taqiqlangan. Somatik terapiya faqat shu shaxsga tegishli bo‘ladi va naslga ta’sir qilmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "160"
+      }
+    },
+    {
+      "question": "Bemorga somatik hujayralarda mutant genni sog‘lom gen bilan almashtirish taklif qilindi. Bu usul nima uchun axloqan zararsiz hisoblanadi?",
+      "options": [
+        "O‘zgarish avlodlarga o‘tib, naslni himoya qiladi",
+        "Usul faqat homila hujayralarida o‘tkaziladi",
+        "Natijani patentlab, daromad olish mumkin bo‘ladi",
+        "O‘zgarish faqat shu shaxsga tegishli, naslga ta’sir qilmaydi"
+      ],
+      "correct_index": 3,
+      "explanation": "Somatik hujayralarda irsiyat o‘zgarishining natijasi faqat o‘sha shaxsga tegishli. U naslga ta’sir qilmaydi, shu sababli usul etik jihatdan inson uchun zararsiz sanaladi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "160"
+      }
+    },
+    {
+      "question": "Inson genomi va inson huquqlari to‘g‘risidagi Umumiy deklaratsiya UNESKO Bosh konferensiyasining 29-sessiyasida qachon qabul qilindi?",
+      "options": [
+        "1997-yil 11-noyabrda",
+        "1994-yilda",
+        "1998-yilda",
+        "2000-yilda"
+      ],
+      "correct_index": 0,
+      "explanation": "Deklaratsiya 1997-yil 11-noyabrda qabul qilindi. 1994 — germinal terapiyaning taqiqlanishi, 1998 — BMT Bosh assambleyasining rezolyutsiyasi, 2000 — Okinava uchrashuvi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "160"
+      }
+    },
+    {
+      "question": "Tadqiqotchilar guruhi inson genomining tavsiflangan qismini patentlab, tijorat foydasini olmoqchi. Deklaratsiyaning 4-moddasiga ko‘ra bu qanday baholanadi?",
+      "options": [
+        "Mumkin, chunki genomni tavsiflagan olim uning egasi",
+        "Mumkin, agar tadqiqotga firma mablag‘ ajratgan bo‘lsa",
+        "Mumkin emas, tabiiy holatdagi genom daromad manbai bo‘lolmaydi",
+        "Mumkin, agar donorga ma’lumot berilgan bo‘lsa"
+      ],
+      "correct_index": 2,
+      "explanation": "4-moddaga ko‘ra inson genomi tabiiy holatda daromad manbai bo‘la olmaydi. Shuning uchun tavsiflangan genom qismini patentlab, tijorat predmetiga aylantirib bo‘lmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "161"
+      }
+    },
+    {
+      "question": "Homilada tug‘ma nuqson rivojlanishi aniqlandi. Uning oldini olish yoki davolash haqidagi qarorni odatda kim qabul qiladi?",
+      "options": [
+        "Faqat davolovchi shifokor o‘zi hal qiladi",
+        "Homilador ayol yoki ota-onalar qaror qiladi",
+        "Rivojlanayotgan homilaning o‘zi qaror qiladi",
+        "Faqat tibbiy muassasa ma’muriyati qaror qiladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Ko‘p irsiy patologiya tug‘ilishdan oldin rivojlanadi. Uning oldini olish yoki davolash haqida bemorlarning o‘zi emas, homilador ayollar yoki ota-onalar qaror qabul qiladi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "162"
+      }
+    },
+    {
+      "question": "Genetik test alomatsiz odamda kelajakdagi irsiy kasallik xavfini aniqladi. Birinchi axloqiy muammo nima haqida?",
+      "options": [
+        "Testni o‘tkazishning eng arzon usulini tanlash masalasi haqida",
+        "Kasallikda dori vositalarini tanlash masalasi haqida",
+        "Bo‘lajak irsiy belgilarni bilish huquqi kimlarga tegishliligi haqida",
+        "Genetik laboratoriyani qaysi hududda ochish masalasi haqida"
+      ],
+      "correct_index": 2,
+      "explanation": "Erta aniqlash ikki o‘zaro bog‘liq axloqiy muammo tug‘diradi. Birinchisi: o‘zining, farzandlarining, bemorlarining bo‘lajak irsiy belgilarini bilish huquqi kimlarda bor yoki yo‘q. Ikkinchisi: patologik genotipdan klinik foydalanish va uni izchil o‘zgartirishga yo‘l qo‘ymaslik masalasi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "162"
+      }
+    },
+    {
+      "question": "Gippokratdan qolgan “Zarar yetkazma” tamoyili zamonaviy biotexnologiyalar sharoitida nima uchun murakkablashdi?",
+      "options": [
+        "Tibbiy aralashuvlar kengayib, foyda bilan birga tavakkal darajasi ham ortdi",
+        "Tibbiy aralashuvlar kamayib, shifokorning javobgarligi butunlay yo‘qoldi",
+        "Genetik ma’lumotlar hammaga ochiq bo‘lgani uchun tavakkal batamom tugadi",
+        "Bemorlar davolanishdan butunlay voz kechgani uchun tamoyil kuchsizlandi"
+      ],
+      "correct_index": 0,
+      "explanation": "Irsiy davolash, embrion to‘qimalaridan foydalanish, umrni uzaytirish va klonlash tamoyilni murakkablashtirdi. Tibbiy texnologiyalar doirasi kengaydi, bemorlarga foyda ham ortdi, lekin tavakkal darajasi ham ko‘paydi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "175"
+      }
+    },
+    {
+      "question": "Prenatal tekshiruvda homilada irsiy nuqson aniqlandi. Uning oldini olish yoki davolash haqida kim qaror qabul qiladi?",
+      "options": [
+        "Faqat homilani kuzatayotgan davolovchi shifokorning o‘zi qaror qiladi",
+        "Faqat tibbiyot muassasasining rahbari qaror qabul qilib beradi",
+        "Faqat genetik laboratoriya xodimi yakuniy qarorni chiqaradi",
+        "Homilador ayol yoki ota-onalar qarorni o‘zlari qabul qiladilar"
+      ],
+      "correct_index": 3,
+      "explanation": "Ko‘pgina irsiy patologiyalar tug‘ilishdan oldin, ona qornida rivojlanadi. Ularning oldini olish yoki davolash haqida bemorning o‘zi emas, homilador ayollar yoki ota-onalar qaror qabul qiladi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "162"
+      }
+    },
+    {
+      "question": "Komissiya a’zosi embrion ildiz hujayralari tadqiqoti faqat aniq tibbiy maqsadda va qat’iy shartlarga rioya qilinsa o‘rinli, dedi. U qaysi yondashuvni qo‘lladi?",
+      "options": [
+        "Embrionlardan foydalanish mutlaqo axloqqa zid, degan yondashuvni",
+        "Shartli ruxsat: tibbiy maqsad va qat’iy shartlar bilan o‘rinli, degan yondashuvni",
+        "Xavf-xatar sababli tadqiqot taqiqlanishi lozim, degan yondashuvni",
+        "Hech qanday cheklovsiz ruxsat berilishi lozim, degan yondashuvni"
+      ],
+      "correct_index": 1,
+      "explanation": "UNESKO Bioetika bo‘yicha xalqaro qo‘mitasi hujjatida uchta yondashuv bor. Birinchisi: embrionlardan foydalanish mutlaqo axloqqa zid. Ikkinchisi: faqat aniq tibbiy maqsad va qat’iy shartlar bilan axloqan o‘rinli. Uchinchisi: xavf-xatar tufayli tadqiqot taqiqlanishi lozim. Cheklovsiz ruxsat bu uchtaning hech birida yo‘q.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "176"
+      }
+    },
+    {
+      "question": "Ildiz hujayra bilan davolangan bemorda uzoq muddatli xavfni qanday baholash to‘g‘ri bo‘ladi?",
+      "options": [
+        "Xavf yo‘q, chunki ildiz hujayralar faqat bitta to‘qimaga aylanadi",
+        "Klinik tadqiqotlarning o‘zi xavfsizlikni to‘liq kafolatlash uchun yetarli",
+        "Yillar o‘tib saraton ehtimoli nazariy faraz sifatida mavjud, kafolat yo‘q",
+        "Saraton rivojlanishi bu usulda isbotlangan, qat’iy qonuniyatdir"
+      ],
+      "correct_index": 2,
+      "explanation": "Ildiz hujayralar har narsaga aylanishi mumkin, shuning uchun oqibatlarni oldindan ko‘rish qiyin. Nazariy jihatdan yillar o‘tib saraton ham rivojlanishi mumkin, lekin bu faqat faraz. Xavfsizlikni kafolatlash uchun klinik tadqiqotlarning o‘zi yetarli emas.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "175"
+      }
+    },
+    {
+      "question": "Etika komissiyasi inson embrional hujayralarida o‘tkaziladigan tadqiqotning axloqiy asoslanganligini baholamoqda. UNESCO Bioetika bo‘yicha xalqaro qo‘mitasi hujjatiga ko‘ra, bu asosan nimaga bog‘liq?",
+      "options": [
+        "Donorning yoshi va jinsiga",
+        "Embrionning axloqiy maqomiga",
+        "Laboratoriya jihozlari narxiga",
+        "Natijani e’lon qilish tezligiga"
+      ],
+      "correct_index": 1,
+      "explanation": "Hujjatda inson embrional hujayralaridagi tadqiqotlarning axloqiy asoslanganligi ko‘p jihatdan embrion maqomiga bog‘liq deyilgan. Shu sababli hujjatda uchta qarash keltirilgan: mutlaq taqiqlash, qat‘iy shartlar bilan ruxsat berish va tadqiqotni butunlay taqiqlash.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "176"
+      }
+    },
+    {
+      "question": "Tadqiqotchilar guruhi o‘zi tavsiflagan genom qismini patentlab, tijorat predmetiga aylantirmoqchi. Deklaratsiyaning 4-moddasiga ko‘ra bu qanday baholanadi?",
+      "options": [
+        "Mablag‘ ajratgan firma bo‘lsa, ruxsat etiladi",
+        "Tavsiflagan olim bo‘lsa, ruxsat etiladi",
+        "Faqat donor roziligi bilan ruxsat etiladi",
+        "Mumkin emas: genom daromad manbai bo‘lolmaydi"
+      ],
+      "correct_index": 3,
+      "explanation": "Deklaratsiyaning 4-moddasiga ko‘ra inson genomi tabiiy holatda daromad manbai bo‘la olmaydi. Shuning uchun tadqiqotchi tavsiflagan genom qismini patentlab, tijorat predmetiga aylantirib bo‘lmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "161"
+      }
+    },
+    {
+      "question": "Laboratoriyada klonlash o‘tkazilmoqda: urg‘ochi organizmdan tuxum hujayra olindi. Somatik hujayra yadrosini kiritishdan oldin tuxum hujayrada nima qilinadi?",
+      "options": [
+        "Yadrosi mikroxirurgiya bilan olib tashlanadi",
+        "Yadrosi ikkilantirib, hujayra bo‘linadi",
+        "Spermatozoid bilan tabiiy urug‘lantiriladi",
+        "Surrogat onaning bachadoniga ko‘chiriladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Avval tuxum hujayradan mikroxirurgiya usulida yadro olib tashlanadi (enukleatsiya). Keyin unga somatik hujayra yadrosi kiritiladi va homila rivojlanishi boshlanadi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "178"
+      }
+    },
+    {
+      "question": "Quyidagi dalillardan qaysi biri kitobda klonlashga qarshi dalil sifatida keltirilgan?",
+      "options": [
+        "Klon asl nusxadan bir necha o‘n yilga yosh bo‘ladi",
+        "Transplantatsiya uchun sog‘lom a’zolar yaratish mumkin",
+        "Klonlarda tug‘ma nuqsonlar xavfi yuqori bo‘ladi",
+        "Halokatda o‘lgan bolani ota-onaga qaytarish mumkin"
+      ],
+      "correct_index": 2,
+      "explanation": "Qarshi dalillar qatorida klonlarda tug‘ma nuqsonlar xavfi yuqoriligi, genetik xilma-xillik kamayib epidemiyalarga bardoshlik pasayishi, boylar a’zolari uchun klonlashi va diktatorlar klonlardan foydalanishi keltirilgan. Boshqa uchta variant tarafdorlar dalillari.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "179"
+      }
+    },
+    {
+      "question": "Munozarada davolash maqsadidagi klonlashga ruxsat berish taklif qilindi. Kitobda aytilgan asosiy xavotirga ko‘ra, bu ruxsat nimaga olib kelishi mumkin?",
+      "options": [
+        "Ildiz hujayralar bankining yopilishiga",
+        "Nasl qoldirish maqsadidagi klonlashga yo‘l ochilishiga",
+        "Genetik tahlillarning butunlay to‘xtashiga",
+        "Embrionlardan foydalanishning to‘liq tugashiga"
+      ],
+      "correct_index": 1,
+      "explanation": "Kitobda savol qo‘yilgan: davolash maqsadidagi klonlashga ruxsat berilsa, bu nasl qoldirish maqsadidagi klonlashga olib kelmaydimi. Yadroni ko‘chirish usuli faqat ildiz hujayra olish uchun maxsus embrion yaratadi, shu sababli embrion muammosi yana yuzaga chiqadi.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "180"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Hodisa tahlili: yadro fizikasi kashfiyotlarining salbiy oqibatlari atom bombasi (Xirosima, Nagasaki) va Chernobil halokatidan keyingina ma‘lum bo‘lgan. Nobel mukofoti sohibi Jan Dosse ham genetika yangiliklarini chuqur nazariy tahlilsiz qo‘llashni xavfli, deb hisoblagan. Savol: genetik prognoz bilan bog‘liq qanday xavflarni oldindan ko‘ra olamiz?",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "159"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli: gen terapiyasi ikki xil. Somatik hujayra terapiyasi faqat o‘sha shaxsga ta’sir qiladi, naslga o‘tmaydi, shuning uchun axloqiy jihatdan zararsiz hisoblanadi. Jinsiy hujayra terapiyasi o‘zgarishni avlodlarga o‘tkazadi. YuNESKO uni 1994 yilda (hozircha) qat’iy taqiqlagan. Qisqacha: soma – shaxs, jinsiy hujayra – nasl.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "160"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli: klonlash zanjiri. Somatik hujayra olinadi, yadrosi ajratiladi va yadrosi olib tashlangan (enukleatsiya) tuxum hujayraga kiritiladi. Tuxum bo‘linadi, embrion hosil bo‘ladi, u surrogat onaga joylanadi. Natijada genetik egizak-nusxa tug‘iladi. Bola tug‘dirish maqsadidagi reproduktiv klonlash ko‘p mamlakatlarda qonun bilan taqiqlangan.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "178-179"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: tub xalq jamoasidan genetik material olinib, tadqiqot natijasi patentlandi, jamoa esa daromaddan ulush olmadi. Kitobda bunday holat «biologik qaroqchilik» bo‘lmaydimi, deb so‘raladi. Shuningdek, ilg‘or jamiyatdagi xabardor rozilik tub xalqlarda qanday ma’no kasb etishi masalasi ko‘tariladi. Savol: rozilik qaysi tilda va qanday olinishi kerak?",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "177"
+      }
+    },
+    {
+      "text": "Diqqat: xato qilish xavfi. Genomning tabiiy holati daromad manbai bo‘lolmaydi va uning tavsiflangan qismini patentlab bo‘lmaydi. Ammo foyda beradigan, sanoatda qo‘llanadigan haqiqiy kashfiyotni patentlash mumkin. «Genom» va «undan olingan kashfiyot» bir narsa emas.",
+      "source": {
+        "author": "G‘iyosov Z.A., Indiaminov S.I.",
+        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+        "page": "161, 176"
+      }
+    }
+  ]
+}
