@@ -1,0 +1,2214 @@
+{
+  "topic": "Teletibbiyot, telestomatologiya; raqamli tibbiyotda biotibbiyot ma’lumotlari va katta ma’lumotlar (A12)",
+  "slides": [
+    {
+      "title": "Kirish: mavzu va dars maqsadlari",
+      "bullets": [
+        {
+          "text": "Dars teletibbiyot (masofadan tibbiy xizmat) va telestomatologiyaning etik hamda huquqiy muammolarini ko‘rib chiqadi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259 (Abstract)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Katta ma’lumotlar sog‘liqni saqlash va tadqiqotda keng ishlatiladi. Sun’iy intellekt (SI) kabi texnologiyalar katta ma’lumotlarsiz rivojlana olmaydi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314 (Background)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Raqamli salomatlik tadqiqotida qaror qabul qilish 5 doiraga tayanadi: maxfiylik, xavf va foyda, qulaylik, ma’lumotlarni boshqarish, etik tamoyillar.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535 (Decision-making framework)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etik doira javobni tayyor bermaydi. U qadriyatlarni aniqlab, ularni tortib ko‘rishga va qarorni asoslashga bosqichma-bosqich yordam beradi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314 (What is an Ethical Decision-making Framework?)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Telefon orqali shifokor bilan gaplashgan bo‘lsangiz, qanday xavotir paydo bo‘ldi? 2) Sog‘liq ma’lumotingiz kimda saqlanishini bilasizmi? Doskada: mavzuning 3 ustunini chizing (teletibbiyot, katta ma’lumotlar, raqamli salomatlik va SI). Tipik xato: talabalar etik doirani qonun yoki nazariya deb o‘ylaydi, aslida u qaror qabul qilishga yordam beruvchi vosita."
+    },
+    {
+      "title": "Teletibbiyot: tarix va ta’riflar",
+      "bullets": [
+        {
+          "text": "Teletibbiyot atamasi 1970-yillarda “masofadan davolash” ma’nosida kiritilgan.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "JSST (Jahon sog‘liqni saqlash tashkiloti) 1998-yilda masofa hal qiluvchi omil bo‘lgan xizmatni AKT orqali ko‘rsatish deb ta’rifladi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: telesalomatlik ≠ yuzma-yuz qabul o‘rnini bosuvchi xizmat; yuzma-yuz maslahat hamon oltin standart.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259 (Introduction, Conclusions)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ta’riflar vaqt chizig‘i",
+        "nodes": [],
+        "header": [
+          "Davr",
+          "Kim/nima",
+          "Mazmuni"
+        ],
+        "rows": [
+          [
+            "1970-yillar",
+            "Atama paydo bo‘ldi",
+            "“Masofadan davolash”"
+          ],
+          [
+            "1998",
+            "JSST ta’rifi",
+            "Masofa muhim; AKT orqali xizmat"
+          ],
+          [
+            "2020",
+            "AQSh CMS ta’rifi",
+            "Elektron aloqa orqali tibbiy ma’lumot almashish"
+          ],
+          [
+            "Hozirgi",
+            "Butunjahon tibbiyot assotsiatsiyasi",
+            "Yuzma-yuz qabul — oltin standart"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) JSST va CMS ta’riflari qaysi jihati bilan farq qiladi? 2) Nega “oltin standart” yuzma-yuz maslahat deb qoladi? Doskada: 4 qatorli vaqt chizig‘ini ko‘chiring. Tipik xato: AKT (axborot-kommunikatsiya texnologiyalari) va CMS (AQShdagi Medicare va Medicaid xizmatlari markazlari) qisqartmalarini aralashtirish."
+    },
+    {
+      "title": "Teletibbiyotning foydalari",
+      "bullets": [
+        {
+          "text": "Teletibbiyot bemor va shifokor orasidagi masofani qisqartiradi, ayniqsa yetib borish qiyin hududlarda.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Og‘ir bo‘lmagan bemorlar uyda davolanib, kasalxonada yotish muddatini qisqartirishi mumkin.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259 (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "COVID-19 pandemiyasida yuzma-yuz aloqani kamaytirib, bemor va xodimlar uchun yuqish xavfini pasaytirdi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259 (Introduction)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kim qanday foyda oladi",
+        "nodes": [],
+        "header": [
+          "Kim",
+          "Qanday foyda"
+        ],
+        "rows": [
+          [
+            "Olis hudud aholisi, dengizchilar",
+            "Tibbiy muassasaga osonroq yetib borish"
+          ],
+          [
+            "Harakati cheklangan, keksa bemorlar",
+            "Shifokorga murojaat qilish osonlashadi"
+          ],
+          [
+            "Yengil kasal bemorlar",
+            "Uyda davolanish, yotish qisqarishi"
+          ],
+          [
+            "Sog‘liqni saqlash tizimi",
+            "Adolatli kirish, tez jalb, arzonroq xarajat"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yashash joyingizdan eng yaqin mutaxassisgacha masofa qancha va teletibbiyot qaysi holatda yordam bergan bo‘lardi? 2) “Arzonroq xarajat” har doim to‘g‘rimi? Doskada: bemor–internet–shifokor zanjirini chizing. Tipik xato: adolatli kirish va’da qilingan imkoniyat deb emas, tayyor natija deb tushunish (manbada bu hali munozarali)."
+    },
+    {
+      "title": "COVID-19 davrida teletibbiyotning kengayishi",
+      "bullets": [
+        {
+          "text": "COVID-19 pandemiyasida teletibbiyot yuqumdan saqlanish uchun zarur xizmatga aylandi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yuzma-yuz aloqa kamaydi, shu sabab bemor va tibbiyot xodimlarining yuqish xavfi pasaydi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teletibbiyot qamragan tibbiyot sohalari soni pandemiya davrida ortdi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Teletibbiyot qamragan sohalar",
+        "nodes": [],
+        "header": [
+          "Guruh",
+          "Misollar"
+        ],
+        "rows": [
+          [
+            "Klinik fanlar",
+            "Dermatologiya, kardiologiya, nevrologiya"
+          ],
+          [
+            "Ona va bola",
+            "Pediatriya (perinatal, neonatal), ginekologiya"
+          ],
+          [
+            "Sezgi va tayanch a’zolar",
+            "Oftalmologiya, otorinolaringologiya, ortopediya"
+          ],
+          [
+            "Davomiy parvarish",
+            "Surunkali kasalliklar, COVID-19, kuzatuv"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega pandemiya teletibbiyot sohalarini kengaytirdi? 2) Qaysi sohada masofaviy ko‘rik ayniqsa qiyin bo‘lishi mumkin? Doskada: jadvalni chizing va talabalar yana bir sohani qo‘shsin. Tipik xato: teletibbiyotni faqat videoqo‘ng‘iroq deb tushunish; manbada telefon va yozishmalar ham aytilgan. Jadvaldagi guruhlash o‘qituvchi tomonidan soddalashtirilgan."
+    },
+    {
+      "title": "Tezkor savol: ta’riflar va foydalar",
+      "bullets": [
+        {
+          "text": "1-savol: JSST (1998) ta’rifida teletibbiyotning o‘ziga xos sharti nima? Javob: masofa muhim omil bo‘lgan holatda axborot-kommunikatsiya texnologiyalaridan foydalanish.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: 2020 yilgi CMS ta’rifi nimani nazarda tutadi? Javob: tibbiy ma’lumotni bir joydan boshqasiga elektron aloqa orqali almashish. CMS — AQShdagi Medicare va Medicaid xizmatlari markazlari.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol: Asosiy foydalari qaysilar? Javob: tibbiy yordamga kirish osonlashadi, shifokor bilan masofa qisqaradi; uzoq hududlar, dengizchilar va harakati cheklangan bemorlar uchun muhim.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi — teletibbiyot ≠ yuzma-yuz ko‘rikning o‘rnini bosuvchi xizmat. Butunjahon tibbiyot assotsiatsiyasiga ko‘ra, yuzma-yuz maslahat klinik yordamning ‘oltin standarti‘ bo‘lib qoladi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Savollarni og‘zaki so‘rang, talabalar javobini yopiq daftarda yozsin. Muhokama: nima uchun yuzma-yuz ko‘rik ‘oltin standart‘ deyiladi? Doskada: ‘teletibbiyot = qo‘shimcha, almashtiruvchi emas‘ formulasini yozing. Tipik xato: teletibbiyotni an’anaviy yordamning to‘liq o‘rnini bosuvchi deb o‘ylash."
+    },
+    {
+      "title": "Etik-huquqiy muammolar xaritasi",
+      "bullets": [
+        {
+          "text": "Tahlil uchun 85 ta maqoladan 24 tasi saralandi; ularda etik va huquqiy masalalar o‘zaro bog‘liq ko‘rsatilgan.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maxfiylik 57%, adolatli kirish va xizmat sifati 30% dan, kasb egasi–bemor munosabati 22% maqolada uchradi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonun-qoidalar masalasi 83% maqolada ko‘tarilgan: davlatlar o‘rtasida qoidalar yo‘q yoki farq qiladi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Eng ko‘p uchragan muammolar",
+        "nodes": [],
+        "header": [
+          "Muammo",
+          "Ulushi"
+        ],
+        "rows": [
+          [
+            "Rozilik va avtonomiya",
+            "87%"
+          ],
+          [
+            "Bemor privatligi",
+            "78%"
+          ],
+          [
+            "Ma’lumot himoyasi va xavfsizligi",
+            "74%"
+          ],
+          [
+            "Xato va kasbiy mas’uliyat",
+            "70%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega rozilik eng ko‘p tilga olingan? 2) Qonunlar farqi bemorga qanday ta’sir qiladi? Doskada: jadvalni to‘ldirib, qolgan muammolarni (maxfiylik, adolat, sifat) strelkalar bilan qo‘shing. Tipik xato: privatlik (shaxsiy hayot) va maxfiylik (ishonch munosabatida aytilgan ma’lumotni oshkor qilmaslik) tushunchalarini aralashtirish."
+    },
+    {
+      "title": "Rozilik va avtonomiya telemeditsinada",
+      "bullets": [
+        {
+          "text": "Telemeditsinada axborotli rozilik an’anaviy tibbiy xizmatdagi bilan bir xil asosiy talablarga javob berishi kerak. Telemeditsina xizmatning boshqacha shakli, natijasi esa bir xil bo‘lishi lozim.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bemorga masofaviy davolashning xavf va foydalari tushuntirilishi shart. Ko‘rib chiqilgan maqolalarning 87 foizida rozilik va avtonomiya masalasi ko‘tarilgan.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Telesog‘liqni saqlash tashrifi bemorning og‘zaki roziligi bilan ham o‘tkazilishi mumkin. Rozilik tibbiy yozuvga qayd etiladi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: og‘zaki rozilik ≠ rozilik shart emas. Imzolangan shakl kerak bo‘lsa, bemor portali yoki pochta orqali olinadi; imzoni kutish shart emas.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Nega telemeditsinada ham rozilik an’anaviy xizmatdagi talablarga teng bo‘lishi kerak? 2) Og‘zaki rozilik qaysi holatda yozuvga qayd etilishi muhim? Doskada: rozilik zanjirini chizdiring (ma’lumot berish → bemor roziligi → tibbiy yozuvga qayd). Tipik xato: og‘zaki rozilikni ’rozilik shart emas’ deb tushunish.",
+      "diagram_note": null
+    },
+    {
+      "title": "Maxfiylik, privatlik va ma’lumot xavfsizligi",
+      "bullets": [
+        {
+          "text": "Privatlik shaxs haqidagi ma’lumotga kirishni nazorat qilishdir. Maxfiylik esa ishonch munosabatida aytilgan ma’lumotni oshkor qilmaslik majburiyatidir.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: privatlik ≠ maxfiylik. Ular yaqin, lekin alohida tushunchalar; maxfiylikni privatlik bilan birga ko‘rib chiqish tavsiya etiladi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Telesog‘liqni saqlash video, telefon, elektron pochta yoki matnli xabar orqali bo‘lishi mumkin. Rasm, laboratoriya natijalari va hayotiy ko‘rsatkichlar xavfsiz saqlanishi kerak.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shifokor klinika yoki ofis kabi shaxsiy joydan ulanishi kerak. Bemor ommaviy yoki yarim ommaviy joyda xizmat olmasligi lozim, roziligi yoki shoshilinch holat bo‘lmasa.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Privatlik va maxfiylik farqini o‘z misolingiz bilan tushuntiring. 2) Bemor ommaviy joyda telekonsultatsiya olsa, qanday xavf bor? Doskada: ikki ustunli qisqa taqqoslash (privatlik | maxfiylik). Tipik xato: ikki tushunchani bir xil deb hisoblash.",
+      "diagram_note": null
+    },
+    {
+      "title": "Kasbiy mas’uliyat va huquqiy tartibga solish",
+      "bullets": [
+        {
+          "text": "Malpraktika va kasbiy mas’uliyat masalasi ko‘rib chiqilgan maqolalarning 70 foizida uchragan. Qonun va tartibga solish masalalari esa 83 foizida tilga olingan.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Davlatlar o‘rtasida qoidalar yo‘q yoki bir-biridan farq qiladi. Shuning uchun yo‘riqnomalar, eng yaxshi amaliyotlar va xizmatlarni standartlashtirish kerak.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ochiq savollar: xizmat narxi va to‘lovni qaytarish, sug‘urta qoplamasi, virtual dori retsepti, akkreditatsiya, litsenziya, tijoratlashtirish. Yozib olish bahsli soha hisoblanadi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maxsus qoidalar bo‘lmaganda amaldagi amaliyot umumiy huquqiy asosga mosligi jihatidan baholanadi. Telemeditsina hozircha an’anaviy xizmatning to‘ldiruvchisi, o‘rnini bosuvchi emas.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7-8 daq. Muhokama: 1) Nega davlatlar o‘rtasidagi qoidalar farqi shifokor va bemor uchun muammo? 2) Telekonsultatsiyani yozib olish nega bahsli? Doskada: ochiq huquqiy masalalar ro‘yxatini (’narx, sug‘urta, retsept, akkreditatsiya, litsenziya, tijorat, yozib olish’) yozdiring. Tipik xato: telemeditsinani an’anaviy tibbiyotning to‘liq o‘rnini bosuvchi deb hisoblash.",
+      "diagram_note": null
+    },
+    {
+      "title": "Adolat va teng kirish masalasi",
+      "bullets": [
+        {
+          "text": "Adolat tamoyili: yordamga teng kirish va texnikani chetda qolgan jamoalarga adolatli taqsimlash.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Internet yoki smartfon yo‘qligi bolaning tibbiy yordamga kirishiga to‘siq bo‘lmasligi kerak.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: teng kirish — va’da, haqiqat emas; pandemiyada tengsizlik va xarajat muammosi kuchaydi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Teletibbiyot: imkoniyat va xavf",
+        "nodes": [],
+        "header": [
+          "Jihat",
+          "Imkoniyat",
+          "Xavf"
+        ],
+        "rows": [
+          [
+            "Masofa",
+            "Olis hududlarga yetib borish",
+            "Internet bo‘lmasa, kirish yopiladi"
+          ],
+          [
+            "Xarajat",
+            "Qatnov va qabul harajati kamayadi",
+            "Xizmat uchun to‘lov tizimida barqaror emas"
+          ],
+          [
+            "Bemorlar",
+            "Nogiron va keksalarga qulay",
+            "Smartfonsizlar chetda qoladi"
+          ],
+          [
+            "Sifat",
+            "Tez aloqa va jalb qilish",
+            "Sifat ko‘rsatkichlari yetarli emas"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Qishloqdagi keksa bemor smartfonsiz bo‘lsa, adolat qanday ta’minlanadi? 2) Xarajat kim hisobidan barqaror bo‘ladi? Doskada: ikki ustunli jadval chizing (imkoniyat va xavf), talabalar misol qo‘shsin. Tipik xato: telemeditsina avtomatik ravishda teng kirishni beradi deb o‘ylash."
+    },
+    {
+      "title": "Shifokor uchun amaliy ko‘rsatmalar",
+      "bullets": [
+        {
+          "text": "Shifokor klinika yoki ofisdan ulansin; bemor ommaviy yoki yarim ommaviy joyda xizmat olmasin.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rozilik og‘zaki olinib, tibbiy yozuvga qayd etilishi mumkin; imzolangan blankani kutish shart emas.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Telesalomatlik qabuli yuzma-yuz qabuldek o‘tkaziladi; bemor savol berishdan tortinmasin.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Telekonsultatsiya bosqichlari",
+        "nodes": [
+          "Shaxsiy joy tanlash",
+          "Bemordan og‘zaki rozilik olish",
+          "Rozilikni kartaga yozib qo‘yish",
+          "Qabulni yuzma-yuz kabi o‘tkazish",
+          "Savol va tushuntirish imkoni"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega og‘zaki rozilik ham yozib qo‘yilishi kerak? 2) Bemor kafeda ulansa, shifokor nima qilishi kerak? Doskada: besh bosqichli zanjirni talabalar o‘zi chizib, har bosqichga bitta xavfni yozsin. Tipik xato: og‘zaki rozilikni qayd etmaslik yoki konsultatsiyani ommaviy joyda o‘tkazish."
+    },
+    {
+      "title": "Telestomatologiya va telefarmatsiya: chegaralar",
+      "bullets": [
+        {
+          "text": "Telefarmatsiya — farmatsevt va bemor bir joyda emas, aloqa axborot-kommunikatsiya texnologiyalari (AKT) orqali bo‘ladigan dori yordami.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Virtual retsept va telefarmatsiyada huquqiy oqibatlar kabi hal etilmagan cheklovlar bor.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teletibbiyot an‘anaviy xizmatni to‘ldiradi, uning o‘rnini to‘liq bosmaydi; qoidalar hali standartlashtirilmagan.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Telestomatologiya manbalarda alohida yoritilmagan; unga umumiy teletibbiyot tamoyillari (rozilik, maxfiylik) qo‘llanadi deb hisoblanadi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Virtual retsept qanday huquqiy muammolar tug‘diradi? 2) Stomatologik ko‘rikda qaysi bosqichlarni masofadan o‘tkazib bo‘lmaydi? Doskada: telefarmatsiya ishtirokchilari (farmatsevt, bemor, AKT) sxemasini chizing. Tipik xato: telestomatologiya uchun manbada alohida qoida bor deb aytish — bu faqat umumiy tamoyillardan kelib chiqqan taxmin."
+    },
+    {
+      "title": "Teletibbiyot: to‘ldiruvchi, o‘rnini bosmaydi",
+      "bullets": [
+        {
+          "text": "Videokonsultatsiya dalili kam, lekin samaradorlik, xavfsizlik va qoniqishga ishora qiladi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teletibbiyotni baholash kelgusi tadqiqotlarning ustuvor vazifasi hisoblanadi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: teletibbiyot yuzma-yuz yordamning o‘rnini bosmaydi, u faqat qo‘shimcha vosita.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Yuzma-yuz va teletibbiyot",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Yuzma-yuz",
+          "Teletibbiyot"
+        ],
+        "rows": [
+          [
+            "Maqom",
+            "Klinik yordamning oltin standarti",
+            "To‘ldiruvchi, qo‘shimcha vosita"
+          ],
+          [
+            "Imkoniyat",
+            "Uzoq joylarda yetib borish qiyin",
+            "Masofani qisqartiradi, kirishni yengillatadi"
+          ],
+          [
+            "Yuqish xavfi",
+            "Jismoniy aloqa saqlanadi",
+            "Aloqa kamayadi, yuqish xavfi pasayadi"
+          ],
+          [
+            "Rozilik",
+            "Odatiy talablar",
+            "Xuddi shunday asosiy talablar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega videokonsultatsiya yuzma-yuz qabulning o‘rnini bosa olmaydi? 2) Dalil kamligi amaliyotga qanday ta’sir qiladi? Doskada: ikki ustunli taqqoslash jadvalini o‘zlari chizsin. Tipik xato: talabalar teletibbiyotni to‘liq almashtirish deb o‘ylaydi, aslida u qo‘shimcha vosita."
+    },
+    {
+      "title": "Voqea tahlili: teletibbiyot",
+      "bullets": [
+        {
+          "text": "Vaziyat: uzoq hududdagi bemorga shifokor videokonsultatsiya taklif qiladi, ammo bemorda internet yoki smartfon yo‘q.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Adolat tamoyili teng kirishni va texnologiyani chetda qolgan jamoalarga adolatli taqsimlashni talab qiladi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bemor jamoat yoki yarim jamoat joyidan ulansa, bu rozilik yoki shoshilinch holatsiz tavsiya etilmaydi; shifokor ham xususiy joyda bo‘lishi kerak.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu holatda qaysi tamoyillar xavf ostida va rozilik qanday olinib, qayerda qayd etilishi kerak?",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Internet yo‘q bemorga qanday adolatli muqobil taklif qilish mumkin? 2) Og‘zaki rozilik tibbiy yozuvda qanday qayd etiladi? Doskada: vaziyat bo‘yicha tamoyillar (adolat, maxfiylik, rozilik) xaritasini chizdiring. Tipik xato: rozilik faqat imzolangan blankada bo‘lishi shart deb o‘ylash; manbaga ko‘ra og‘zaki rozilik ham mumkin."
+    },
+    {
+      "title": "Tezkor savol: teletibbiyot etikasi",
+      "bullets": [
+        {
+          "text": "1-savol (rozilik): og‘zaki rozilik yetarlimi? Javob: ha, u tibbiy yozuvda qayd etilsa; imzolangan blankani kutish shart emas.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol (maxfiylik): qayerdan ulanish kerak? Javob: shifokor ham, bemor ham xususiy joyda bo‘lishi kerak; jamoat joyi odatda mumkin emas.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol (adolat): internetsiz bemorlarda nima muhim? Javob: texnologiyaga teng kirish va uning chetda qolgan jamoalarga adolatli taqsimlanishi.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-savol (mas’uliyat): qaysi jihatlar noaniq? Javob: litsenziya, akkreditatsiya, virtual retsept, qoplash va javobgarlik qoidalari mamlakatlarda turlicha.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Teletibbiyotda maxfiylikni saqlash uchun shifokor nimalarga e’tibor beradi? 2) Qoidalar mamlakatlarda turlicha bo‘lsa, bemor qanday xavfga duch keladi? Doskada: 4 ustunli emas, ro‘yxat ko‘rinishida rozilik, maxfiylik, adolat, mas’uliyatni yozdiring. Tipik xato: maxfiylik va rozilikni aralashtirish."
+    },
+    {
+      "title": "Katta ma‘lumotlar nima: uch ‘V’",
+      "bullets": [
+        {
+          "text": "Hajm (volume): ma‘lumot miqdori — qancha odam va har biri haqida qanchalik batafsil ma‘lumot bor.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xilma-xillik (variety): ma‘lumot shakllari (tuzilgan, tuzilmagan, rasm, audio) va manbalari turlicha.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tezlik (velocity): ma‘lumotni juda tez uzatish va tahlil qilish imkoniyati.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Manbadan tahlilgacha",
+        "nodes": [
+          "Ilmiy, veb, foydalanuvchi",
+          "Xilma-xil shakllar",
+          "Katta hajm",
+          "Tez uzatish",
+          "Tahlil"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Eslab qoling: 3V = Hajm, Xilma-xillik, Tezlik (inglizcha Volume, Variety, Velocity) — uchala so‘z V harfi bilan boshlanadi. Muhokama: 1) Bemor yozuvlari, rasmlar va fitnes-qurilma ma‘lumoti qaysi ‘V’ ga mos keladi? 2) Nega tezlik axloqiy xavf tug‘diradi? Doskada chizish: manbalar → shakllar → hajm → tezlik → tahlil zanjirini chizing, har bosqichga bitta sog‘liq misoli yozing. Tipik xato: hajmni faqat fayl o‘lchami deb tushunish; manbaga ko‘ra hajm odamlar soni va har bir odam haqidagi tafsilotni ham o‘z ichiga oladi."
+    },
+    {
+      "title": "3V dan 7V gacha: xususiyatlar",
+      "bullets": [
+        {
+          "text": "Katta ma‘lumotning ta’riflari turlicha; xususiyatlar ro‘yxati 3V dan 7V gacha kengayadi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mualliflar o‘z ta’rifini bermaydi; hamma e’tirof etgan hajm, xilma-xillik va tezlikka tayanadi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu xususiyatlar murakkablikni ko‘rsatadi va sog‘liqni saqlashda alohida axloqiy muammolar tug‘diradi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Modellar tarkibi",
+        "nodes": [],
+        "header": [
+          "Model",
+          "Tarkibi",
+          "Qo‘shilgan V"
+        ],
+        "rows": [
+          [
+            "3V",
+            "Hajm, xilma-xillik, tezlik",
+            "Asosiy uchlik"
+          ],
+          [
+            "4V",
+            "3V + o‘zgaruvchanlik",
+            "Variability"
+          ],
+          [
+            "6V",
+            "4V + ishonchlilik, qiymat",
+            "Veracity, value"
+          ],
+          [
+            "7V",
+            "6V + vizuallashtirish",
+            "Visualisation"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Tezkor savol: 6V modelida qaysi ikki ‘V’ 4V ga qo‘shiladi? Muhokama: 1) Nega mualliflar aynan 3V ga e‘tibor qaratdi? 2) Ishonchlilik (veracity) tibbiy qarorlarga qanday ta’sir qiladi? Doskada chizish: 3V dan 7V gacha ‘narvon’ chizing, har pog‘onaga yangi V ni yozing. Tipik xato: 3V va 7V ni bir xil model deb o‘ylash. Diqqat: 3V ≠ 7V — bular turli mualliflar taklif qilgan ro‘yxatlar, mualliflar esa umumiy asosga tayanadi."
+    },
+    {
+      "title": "Foydalar va uch xil muammo",
+      "bullets": [
+        {
+          "text": "Foydalar: yaxshiroq davolash, samaraliroq xizmat va sog‘liqni saqlash tashkilotlari uchun xarajat tejash.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bevosita bemorga ta’sir qiladigan foyda — klinik qarorlarning sifati va aniqligi oshishi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Muammolar uch xil: ma‘lumot, jarayon va boshqaruv; mualliflar asosan boshqaruv muammolariga e’tibor beradi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Uch turdagi muammo",
+        "nodes": [
+          "Katta ma‘lumot",
+          "Ma‘lumot: xususiyatlari",
+          "Jarayon: yig‘ish, tahlil",
+          "Boshqaruv: maxfiylik, egalik"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Klinik qaror aniqligi oshishi bemor uchun qanday foyda beradi? 2) Maxfiylik va ma‘lumot egaligi nega ‘boshqaruv’ muammosi hisoblanadi? Doskada chizish: ikki ustun — ‘Foyda’ va ‘Muammo’; muammo ustunini uch toifaga bo‘ling. Tipik xato: uch muammo guruhini bir-biriga bog‘liq emas deb o‘ylash; manbaga ko‘ra ular o‘zaro ta’sir qiladi. Voqea tahlili (qisqa): shifoxona turli manbalardan ma‘lumot birlashtirmoqchi — bu qaysi toifadagi muammolarni keltirib chiqaradi?"
+    },
+    {
+      "title": "Anonimlashtirish cheklovlari",
+      "bullets": [
+        {
+          "text": "Maskalash va deidentifikatsiya katta ma’lumotlarda ishonchli emas: qayta aniqlash xavfi oshadi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maxfiylik modellari dastlab statik to‘plamlar uchun ishlab chiqilgan, shuning uchun mukammal emas.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oshkor bo‘lish xavfi faqat ma’lumot umuman ulashilmasa to‘liq yo‘qoladi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Maxfiylik modeli xususiyatlari",
+        "nodes": [],
+        "header": [
+          "Xususiyat",
+          "Ma’nosi"
+        ],
+        "rows": [
+          [
+            "Bog‘lanuvchanlik",
+            "Anonim ma’lumot bog‘lanuvchan qolishi"
+          ],
+          [
+            "Kompozitsiyalik",
+            "Ko‘p manba birlashsa ham himoya kafolati"
+          ],
+          [
+            "Kam hisoblash",
+            "Algoritm kam vaqt va xotira sarflashi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ‘anonim’ ma’lumot ham to‘liq xavfsiz emas? 2) Ma’lumot qiymatini yo‘qotmasdan maxfiylikni saqlash mumkinmi? Doskada chizish: maskalash -> ko‘p manbani birlashtirish -> qayta aniqlash xavfi zanjirini chizing. Tipik xato: ‘anonimlashtirilgan = to‘liq xavfsiz’ deb o‘ylash."
+    },
+    {
+      "title": "Oshkor bo‘lish xavfi turlari",
+      "bullets": [
+        {
+          "text": "Maskalangan ma’lumotda ham uch xil oshkor bo‘lish xavfi qayta aniqlashga olib kelishi mumkin.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xulosaviy oshkorlikda ma’lumot aytilmaydi, lekin chiqarilgan ma’lumotdan yuqori ishonch bilan taxmin qilinadi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: identifikatsion ≠ atributiv — birida shaxs aniqlanadi, ikkinchisida guruh a’zoligi oshkor bo‘ladi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Uch turdagi oshkorlik",
+        "nodes": [],
+        "header": [
+          "Tur",
+          "Ma’nosi",
+          "Misol"
+        ],
+        "rows": [
+          [
+            "Identifikatsion",
+            "Ma’lumot X shaxsga bog‘lanadi",
+            "Qatorning egasi X deb aniqlanadi"
+          ],
+          [
+            "Atributiv",
+            "X ma’lum guruh a’zosi ekani oshkor bo‘ladi",
+            "Saraton registri a’zoligi"
+          ],
+          [
+            "Xulosaviy",
+            "X haqida yuqori ishonch bilan taxmin",
+            "Alohida misol keltirilmagan"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Bemor saraton registrida ekani oshkor bo‘lsa, unga qanday zarar yetishi mumkin? 2) Xulosaviy oshkorlik nega yashirin xavf? Doskada chizish: uch turli jadvalni daftarga ko‘chirib, har biriga o‘z misolingizni yozing. Tipik xato: atributiv oshkorlikni identifikatsion bilan aralashtirish."
+    },
+    {
+      "title": "Rozilik rolining pasayishi",
+      "bullets": [
+        {
+          "text": "Xabardor rozilik uzoq vaqt tadqiqotga kiritishning asosiy talabi bo‘lgan: shaxs ishtirok xavfini o‘z zimmasiga olishga rozilik beradi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Katta ma’lumotlarda rozilikka tayanish qiyinlashadi: ma’lumot dastlabki manbadan uzoq tizimlarda bog‘lanib ishlatilishi mumkin.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shaxsga qayta murojaat qilish mumkin bo‘lsa ham, ma’lumot turli foydalanuvchilar qo‘lida qanday ishlatilishini to‘liq tushuntirib bo‘lmaydi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishtirokchilar ko‘pligi, mablag‘ va muddat cheklovlari qayta bog‘lanishni ham qiyinlashtiradi, shuning uchun muqobil himoya mexanizmlari kerak.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ma’lumot yillar o‘tib boshqa maqsadda ishlatilsa, dastlabki rozilik yetarlimi? 2) Rozilik o‘rniga qanday qo‘shimcha himoya choralari o‘ylash mumkin? Doskada chizish: ma’lumot manbadan ko‘p tizimlarga tarqalish sxemasini chizing. Tipik xato: rozilik butunlay kerak emas degan xulosa chiqarish; manbada u faqat yagona tayanch bo‘la olmasligi aytilgan."
+    },
+    {
+      "title": "Voqea tahlili: katta ma‘lumotlar",
+      "bullets": [
+        {
+          "text": "Faraz qilaylik, tadqiqotchilar saraton reyestridagi anonimlashtirilgan yozuvlarni boshqa manbalar bilan birlashtirmoqchi. Rozilik faqat dastlabki maqsad uchun olingan.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ma’lumotlar bog‘lansa, yashirilgan shaxs qayta aniqlanishi mumkin. Reyestrga a’zolikning o‘zi ham oshkor bo‘ladi (atribut oshkorligi).",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ma’lumot asl manbadan uzoq tizimlarda ishlatiladi. Bemorni qayta topish mumkin bo‘lsa ham, barcha foydalanishlar haqida to‘liq xabar berish qiyin.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: qaysi qadriyatlar to‘qnashadi (masalan, jamoat manfaati va maxfiylik)? Rozilikdan tashqari qanday himoya mexanizmi o‘ylab topish mumkin?",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Anonimlashtirilgan ma’lumot to‘liq xavfsizmi? 2) Rozilik o‘rniga qanday muqobil himoya mumkin? Doskada: ma’lumot manbalari → birlashtirish → qayta aniqlash xavfi zanjirini chizdiring. Tipik xato: ‘anonimlashtirilgan’ degani ‘xavfsiz’ deb o‘ylash. Vaziyat manbadagi ma’lumotlar asosida tuzilgan taxminiy misol.”"
+    },
+    {
+      "title": "Tezkor savol: katta ma‘lumotlar",
+      "bullets": [
+        {
+          "text": "1-savol: katta ma’lumotlarning uchta asosiy xususiyati (3V) qaysilar? Javob: hajm (volume), xilma-xillik (variety) va tezlik (velocity).",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: maskalashga qaramay qayta aniqlashning uch xavfi qaysi? Javob: shaxsni aniqlash, atribut (guruh a’zoligi) va xulosa chiqarish orqali oshkor bo‘lish.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol: nega rozilikka tayanish qiyinlashmoqda? Javob: ma’lumot ko‘plab tizimlarda ishlatiladi, ishtirokchilar soni katta, mablag‘ va muddat cheklangan.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi. Xavfni butunlay yo‘qotish faqat ma’lumot umuman almashilmasa mumkin; maxfiylik modellari ham mukammal emas.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Savollarni og‘zaki so‘rang, talabalar javobini avval eshiting. Muhokama: 3V ichidan qaysi biri maxfiylikka eng ko‘p xavf tug‘diradi? Doskada: 3V ni uch ustun qilib yozdiring. Tipik xato: oshkorlik turlarini (shaxs, atribut, xulosa) aralashtirib yuborish.”"
+    },
+    {
+      "title": "Etik qaror qabul qilish doirasi",
+      "bullets": [
+        {
+          "text": "Doira tayyor javob bermaydi. U qadriyatlarni ochiq ko‘rsatib, masala ustida o‘ylashga va javobga kelishga yordam beruvchi vositadir.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Doira nazariya ham, murakkab masalani soddalashtiruvchi model ham emas. U nazariyalar bilan bog‘lanishi mumkin, lekin real dilemmalarga qaratilgan.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yaxshi doira: maqsadi aniq, amaliy, qadriyatlar ochiq (boshida teng vaznli), moslashuvchan va tuzilgan savollar orqali nimani ko‘rish kerakligini ko‘rsatadi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Auditoriya: biotibbiyot tadqiqotchilari, siyosatchilar va etika qo‘mitalari, ma’lumot nazoratchilari; shuningdek bemorlar va qiziquvchilar.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Etik doira qonundan nimasi bilan farq qiladi? 2) Nega qadriyatlar boshida teng vaznli deb olinadi? Doskada: yaxshi doiraning 6 xususiyatini ro‘yxat qilib yozdiring. Tipik xato: doirani qat’iy qoidalar to‘plami yoki nazariya deb tushunish.”"
+    },
+    {
+      "title": "Hurmat va ijtimoiy litsenziya",
+      "bullets": [
+        {
+          "text": "Shaxsga hurmat — boshqalarga bo‘lgan axloqiy munosabat. U ko‘pincha muloqotda ko‘rinadi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ochiq, tushunarli axborot va jamoatchilik fikrini tinglash ishonchni mustahkamlaydi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ijtimoiy litsenziya — keng ta’sirli faoliyat qonuniyligiga nisbatan jamoatchilikning ijobiy kutishi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Hurmatdan litsenziyagacha",
+        "nodes": [
+          "Ochiq muloqot",
+          "Jamoatchilikni tinglash",
+          "Ishonch",
+          "Ijtimoiy litsenziya",
+          "Muloqotni davom ettirish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Rozilik olingan bo‘lsa, ijtimoiy litsenziya avtomatik mavjud bo‘ladimi? 2) Jamoatchilik bilan muloqot nega loyiha boshida boshlanishi kerak? Doskada: muloqot → ishonch → litsenziya zanjirini chizdiring. Tipik xato: ijtimoiy litsenziyani yakka shaxsning rozilik varaqasi bilan aralashtirish. Muallif rozilik olinganda ham litsenziyani oldindan taxmin qilmaslikni aytadi. Qo‘shimcha misol: Shotlandiya sog‘liq informatikasi dasturi jamoatchilikning qo‘llab-quvvatlashiga erishgan."
+    },
+    {
+      "title": "Zaiflik va kuch munosabatlari",
+      "bullets": [
+        {
+          "text": "Zaiflik — zarar yoki haqsizlikka moyillik. U ko‘pincha kontekstga bog‘liq.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir vaziyatda zaif odam boshqasida zaif bo‘lmasligi mumkin; vaziyat o‘zgarsa, holat ham o‘zgaradi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: zaif shaxs ≠ zaiflashtiruvchi vaziyat. Muammo ko‘pincha odamda emas, vaziyatda.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Zaiflik turlari",
+        "nodes": [],
+        "header": [
+          "Turi",
+          "Mohiyat",
+          "Misol"
+        ],
+        "rows": [
+          [
+            "Tug‘ma",
+            "Har bir inson hayotiga xos",
+            "Kasallikka moyillik"
+          ],
+          [
+            "Vaziyatga bog‘liq",
+            "Axborot muhitidagi o‘rniga bog‘liq",
+            "Ma’lumotdan noto‘g‘ri foydalanish"
+          ],
+          [
+            "Patogen",
+            "Zulm, adolatsizlikdan kelib chiqadi",
+            "Yagona davo — tadqiqot: rozilik shubhali"
+          ]
+        ],
+        "header_note": ""
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Bir odam qaysi vaziyatda zaif, qaysida zaif emas? 2) Zaiflikni kamaytirish urinishi uni kuchaytirishi mumkinmi (masalan, homilador ayollarni tadqiqotdan chiqarish)? Doskada: uch turli zaiflik jadvalini chizdiring va har biriga o‘z misolingizni qo‘shing. Tipik xato: butun guruhni zaif deb hisoblash. Manba: guruhning hamma a’zosi zaif bo‘lavermaydi. Shuningdek, zaiflik iqtisodiy, siyosiy yoki intellektual kuch munosabatlari orqali tahlil qilinadi."
+    },
+    {
+      "title": "Ma‘lumot tafovuti, guruh zarari, hamboshqaruv",
+      "bullets": [
+        {
+          "text": "Tafovut: bazani boshqaruvchi «saralovchilar» va faqat unda qayd etilgan «saralanuvchilar» o‘rtasida.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Guruh zarari jamoaning umumiy manfaatiga tegadi; har bir a’zo zarar ko‘rishi shart emas.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hamboshqaruv hammaga so‘z beradi, lekin katta guruhda amalga oshmaydi va nizolarni hal qilmaydi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Uch tushuncha",
+        "nodes": [],
+        "header": [
+          "Tushuncha",
+          "Mohiyat",
+          "Yechim"
+        ],
+        "rows": [
+          [
+            "Ma’lumot tafovuti",
+            "Foyda notekis taqsimlanadi",
+            "Adolat va hamjihatlik"
+          ],
+          [
+            "Guruh zarari",
+            "Jamoa manfaatiga zarar",
+            "Ehtiyotkor yondashuv"
+          ],
+          [
+            "Hamboshqaruv",
+            "Barcha manfaatdorlar qarorda ishtirok etadi",
+            "Shaffoflik va hisobdorlik"
+          ]
+        ],
+        "header_note": ""
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Genetik ma’lumot davlat mulki deyilsa (Meksika misoli), guruh himoyalanadimi yoki huquqi cheklanadimi? 2) Hamboshqaruvda vakil tanlash qanday muammo tug‘diradi? Doskada: «saralovchilar — saralanuvchilar» sxemasini chizdiring. Tipik xato: hamboshqaruvni barcha muammoning yechimi deb o‘ylash. Manbada u ideal bo‘lishi mumkin, to‘liq bo‘lmasa ham shaffoflik va hisobdorlik hurmatni ko‘rsatadi."
+    },
+    {
+      "title": "16 etik qadriyat: mazmuniy va protsessual",
+      "bullets": [
+        {
+          "text": "Ishchi guruh big data uchun 16 ta etik qadriyatni ajratdi: 9 tasi mazmuniy, 7 tasi protsessual.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mazmuniy qadriyatlar qaror natijasida amalga oshishi kerak bo‘lgan jihatlardir.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Protsessual qadriyatlar muhokama va qaror qabul qilish jarayonining o‘zini yo‘naltiradi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki tur qadriyatlardan misollar",
+        "nodes": [],
+        "header": [
+          "Tur",
+          "Qadriyat",
+          "Ma’nosi"
+        ],
+        "rows": [
+          [
+            "Mazmuniy",
+            "Adolat",
+            "Foyda va yukning teng taqsimlanishi"
+          ],
+          [
+            "Mazmuniy",
+            "Privatlik",
+            "Axborotga kirishni nazorat qilish"
+          ],
+          [
+            "Protsessual",
+            "Shaffoflik",
+            "Qarorlar jamoatchilik nazoriga ochiq"
+          ],
+          [
+            "Protsessual",
+            "Hisobdorlik",
+            "Qaror uchun javobgar bo‘la olish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega natija va jarayon qadriyatlarini alohida ajratish kerak? 2) Shaffoflik adolatni qanday qo‘llab-quvvatlaydi? Doskada: ikki ustunli jadval chizing, har ustunga o‘zingiz tanlagan bittadan qadriyat yozing. Tipik xato: talabalar protsessual qadriyatni qaror natijasi deb o‘ylaydi; qadriyatlar ro‘yxati to‘liq emasligini ham eslating.",
+      "uncertain": false
+    },
+    {
+      "title": "Qadriyatlar to‘qnashuvi va muvozanat",
+      "bullets": [
+        {
+          "text": "Barcha qadriyatni bir vaqtda qondirish odatda mumkin emas. Masalan, ma’lumot almashish ommaviy foydaga xizmat qilsa-da, privatlikka putur yetkazishi mumkin.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qaysi qadriyat ustun turishini qaror qabul qiluvchi o‘zi baholaydi. Framework ustuvorlik tartibi bo‘yicha ko‘rsatma bermaydi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qondirilgan va buzilgan qadriyatlar ro‘yxati uzunligini solishtirish yetarli emas. Birini ustun qo‘yish asoslanishi va zararni kamaytiruvchi mexanizmlar bo‘lishi kerak.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: mazmun bo‘yicha kelishmovchilik ≠ protsedura bo‘yicha kelishmovchilik. Ehtiyojlarga ustuvorlik berish bahsli bo‘lsa ham, xarajat qarorlarining adolatli tartibiga kelishish mumkin.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ommaviy foyda privatlik bilan qachon to‘qnashadi? 2) Cheklangan resurslarda qanday adolatli tartib kelishish mumkin? Doskada: ikki pallali tarozi chizib, bir pallaga ommaviy foyda, ikkinchisiga privatlikni qo‘ying. Tipik xato: ko‘p qadriyat qondirilgan variantni avtomatik to‘g‘ri deb hisoblash.",
+      "uncertain": false
+    },
+    {
+      "title": "Olti qadamli qaror jarayoni",
+      "bullets": [
+        {
+          "text": "Qadamlar takrorlanishi mumkin: yangi variant ko‘rib chiqilganda qo‘shimcha qadriyatlar ochilib qoladi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eng qiyin bosqich — to‘rtinchisi: ziddiyatli qadriyatlarni asoslab tortish.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tanlovga shaxsiy yoki guruh manfaatlari qanday ta’sir qilganini ham o‘ylab ko‘rish kerak.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Qaror qadamlari (1–6)",
+        "nodes": [
+          "1-2. Muammo va qadriyatlar",
+          "3. Harakat variantlari",
+          "4. Tarozida tortish",
+          "5. Tanlash va refleksiya",
+          "6. Shaffof xabar qilish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega qaror barcha manfaatdor tomonlarga shaffof aytilishi kerak? 2) Refleksiya qarorni qanday yaxshilaydi? Doskada: 6 qadamni zanjir qilib chizing (1-qadamda muammo, 2-qadamda qadriyatlar alohida). Tipik xato: 2-qadamda faqat mazmuniy qadriyatlarni olib, protsessualarini unutish.",
+      "uncertain": false
+    },
+    {
+      "title": "Voqea tahlili: qadriyatlar to‘qnashuvi",
+      "bullets": [
+        {
+          "text": "Vaziyat: kam uchraydigan kasallik tadqiqoti uchun turli manbalardagi tibbiy yozuvlar birlashtirilmoqchi. Bunday yig‘ish tadqiqotni ancha osonlashtiradi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xavf: ma‘lumotlarni birlashtirish anonimlikni buzish, ya‘ni shaxsni qayta aniqlash (de-anonimlashtirish) ehtimolini oshiradi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘qnashuv: jamoat foydasi bilan privatlik (shaxsiy ma‘lumotni nazorat qilish) qarama-qarshi turadi. Xavf shu qadar katta bo‘lmasligi mumkin, shuning uchun tadqiqotdan voz kechish shart emas.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: qaysi qadriyat ustun? Diqqat: ustuvorlikni qadriyatlar ro‘yxatining uzunligi emas, asosli izoh hal qiladi.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Jamoat foydasi va privatlik to‘qnashganda qaror qanday asoslanadi? 2) Natijani ishtirokchilarga qanday shaffof yetkazish kerak? Doskaga: qadriyatlar to‘qnashuvi sxemasini chizdiring (muammo, qadriyatlar, variantlar, tanlov, e‘lon). Tipik xato: qaysi tomonda ko‘proq qadriyat bo‘lsa, o‘sha g‘olib deb o‘ylash.",
+      "extras_placeholder": null
+    },
+    {
+      "title": "Raqamli salomatlik: ‘Yovvoyi G‘arb‘",
+      "bullets": [
+        {
+          "text": "Ilovalar, kiyiladigan sensorlar va ijtimoiy tarmoq ma‘lumotlari odamni ‘tabiiy sharoitda’ kun bo‘yi kuzatishga imkon beradi. Sun‘iy intellekt (SI) ham kengayib bormoqda.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yangi ishtirokchilar: texnologiya gigantlari, startaplar, notijorat tashkilotlar, fuqaro olimlar. Ularga akademik tadqiqot qoidalari tarixan majburiy bo‘lmagan.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "‘Mahsulot bepul bo‘lsa, siz mahsulotsiz‘: bosish va yozishlaringiz ma‘lumotga aylanadi. ‘Qabul qilaman‘ tugmasi orqali T&C (foydalanish shartlari) bo‘yicha rozilik olinadi.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etik komissiya akademik tadqiqotda majburiy: AQShda IRB, Buyuk Britaniya va Yevropa Ittifoqida REC. Texnologiya kompaniyalari uchun bunday talab yo‘q.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) T&C orqali olingan rozilik haqiqiy xabardor rozilikmi? 2) Nega kompaniya mahsuloti tekshiruvi ham tadqiqotga o‘xshab ketadi? Doskaga: ‘foydalanuvchi – ma‘lumot – algoritm – reklama/mahsulot‘ zanjirini chizdiring. Tipik xato: IRB va REC ni ikki xil mazmundagi tuzilma deb o‘ylash, aslida ular turli hududlardagi nomlar.",
+      "extras_placeholder": null
+    },
+    {
+      "title": "Raqamli qaror doirasining beshta domeni",
+      "bullets": [
+        {
+          "text": "Doira tadqiqotchilarga raqamli texnologiyani tanlashda asosli qaror qabul qilishga yordam beradi.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Beshta domen o‘zaro kesishadi va ularga hamroh nazorat ro‘yxati (checklist) tuzilgan.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etik tamoyillar: shaxsni hurmat qilish, ezgulik (beneficence) va adolat.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Beshta domen (kesishuvchi)",
+        "nodes": [
+          "1. Ishtirokchi privatligi",
+          "2. Xavf va foyda",
+          "3. Kirish va qulaylik",
+          "4. Ma‘lumot boshqaruvi",
+          "5. Etik tamoyillar"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) MoodFlex misolida qaysi domenlar buzilgan? 2) Nega domenlar kesishuvchi deb ko‘rsatiladi? Doskaga: beshta kesishuvchi doira chizib, har biriga bittadan savol yozdiring. Tipik xato: domenlarni mustaqil, ketma-ket bosqich deb qabul qilish. Eslab qoling: P-X-K-M-E (privatlik, xavf, kirish, ma‘lumot, etika)."
+    },
+    {
+      "title": "Voqea tahlili: MoodFlex ilovasi",
+      "bullets": [
+        {
+          "text": "MoodFlex ilovasining xavfsiz va ishonchli ekani haqida dalil yo‘q; algoritm yopiq, tashqaridan tekshirib bo‘lmaydi.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rozilik faqat Terms and Conditions (T&C) orqali olinadi; ma’lumotlar kompaniyaga tegishli.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tadqiqot rejasini tashqi etika kengashi ko‘rishi, rozilik esa alohida, tushunarli shaklda olinishi kerak.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Tahlil oqimi",
+        "nodes": [
+          "1. Samaradorlik isboti bormi?",
+          "2. Etika kengashi (REC/IRB)",
+          "3. Xabardor rozilik",
+          "4. Ma’lumotlarni boshqarish rejasi",
+          "5. Zaif guruhni himoyalash"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Vaziyatni o‘qing: ilova yozish va ovoz belgilaridan ruhiy salomatlikni aniqlaydi, shahar xizmatlariga kiritilmoqda. Muhokama: 1) Nima xato? 2) Nega T&C ichidagi rozilik qabul qilinmaydi? Doskada 5 bosqichli tahlil oqimini chizdiring. Tipik xato: ilova klinik tashxis qo‘ymasa, tekshiruv shart emas deb o‘ylash. REC va IRB — tadqiqot etikasi kengashlari (REC — Buyuk Britaniya va Yevropa Ittifoqida, IRB — AQShda)."
+    },
+    {
+      "title": "Bo‘shliqlar, tashabbuslar va mas’uliyat",
+      "bullets": [
+        {
+          "text": "Bo‘shliqlar: fanlararo uzilish, texnologik savodxonlik va sun’iy intellekt (AI) standartlari yo‘qligi.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Texnologlar bemor ehtiyojini, shifokorlar esa murakkab ma’lumot va AI qarorini yetarli bilmasligi mumkin.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tashabbuslar ko‘p, ammo ko‘pchiligi keng qamrovli, ustma-ust tushadi va aniqlikka ega emas.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "AI etikasi tashabbuslari",
+        "nodes": [],
+        "header": [
+          "Tashabbus",
+          "Maqsad",
+          "Hamkor"
+        ],
+        "rows": [
+          [
+            "Partnership on AI",
+            "Eng yaxshi amaliyotlarni sinash va ulashish",
+            "80+ hamkor, 13 mamlakat"
+          ],
+          [
+            "AI Now Institute",
+            "Dalilga asoslangan tadqiqot",
+            "Nyu-York universiteti"
+          ],
+          [
+            "Avtonom tizimlar etikasi tashabbusi",
+            "Standart va kodekslar ishlab chiqish",
+            "IEEE va ACM"
+          ],
+          [
+            "Yuqori darajali ekspertlar guruhi",
+            "Sun’iy intellekt siyosati tavsiyalari",
+            "Yevropa Komissiyasi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega texnolog, shifokor va etika kengashi bir-birini tushunmasligi xavfli? 2) Standartlar bo‘lmasa, kim mas’ul? Doskada uch bo‘shliqni uchta ustun qilib chizdiring va har biriga bitta yechim yozdiring. Tipik xato: tashabbuslarni qonun deb o‘ylash; ular standart ishlab chiqishga qaratilgan, majburiy emas. IEEE va ACM — muhandislik va hisoblash bo‘yicha kasbiy birlashmalar."
+    },
+    {
+      "title": "Xulosa va asosiy xabarlar",
+      "bullets": [
+        {
+          "text": "Teletibbiyot an’anaviy tibbiy xizmatni to‘ldiradi, uning o‘rnini to‘liq bosa olmaydi. Aniq standart va qoidalar hali kerak.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teletibbiyotda asosiy masalalar: xabardor rozilik, maxfiylik, ma’lumotlar himoyasi, javobgarlik, teng kirish va xizmat sifati.",
+          "source": {
+            "author": "Solimini et al.",
+            "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+            "page": "PMID 34946259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Katta ma’lumotda qadriyatlar to‘qnashadi, masalan, jamoat manfaati va maxfiylik. Qarorni asoslab, shaffof bildirish kerak.",
+          "source": {
+            "author": "Xafis et al.",
+            "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+            "page": "PMID 33717314"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Raqamli sog‘liqda mahsulot qo‘llanishidan oldin uning qiymati, ya’ni to‘g‘riligi va ishonchliligi, ilmiy isbotlanishi shart.",
+          "source": {
+            "author": "Nebeker et al.",
+            "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+            "page": "PMID 31311535"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Tezkor savol: teletibbiyot an’anaviy xizmatni almashtiradimi? (Yo‘q, to‘ldiradi.) Muhokama: katta ma’lumotda qaysi ikki qadriyat ko‘p to‘qnashadi va nega? Doskada uch mavzu (teletibbiyot, katta ma’lumot, raqamli sog‘liq) va har birining bitta asosiy xabarini yozdiring. Tipik xato: qadriyatlar ro‘yxatini qiyoslab, ko‘pi qondirilgan variantni avtomatik tanlash; kerakli narsa asoslangan muvozanat. Yakunda uchala xabarni talabalar o‘z so‘zlari bilan takrorlasin."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Jahon sog‘liqni saqlash tashkiloti (JSST) 1998 yilgi hisobotida teletibbiyot ta’rifida qaysi omil hal qiluvchi deb ko‘rsatilgan?",
+      "options": [
+        "Bemorning yoshi va jinsi",
+        "Bemor va shifokor orasidagi masofa",
+        "Shifokorning ish staji",
+        "Dori vositalarining narxi"
+      ],
+      "correct_index": 1,
+      "explanation": "JSST ta’rifiga ko‘ra, teletibbiyot – masofa muhim omil bo‘lgan holda axborot-kommunikatsiya texnologiyalari yordamida tibbiy xizmat ko‘rsatish. Boshqa variantlar ta’rifda hal qiluvchi omil sifatida keltirilmagan.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259, 1-bo‘lim (Kirish)"
+      }
+    },
+    {
+      "question": "Poliklinika bemor bilan video qabulni imzolangan rozilik varaqasi kelmaguncha boshlamayapti. Tavsiyalarga ko‘ra, qaysi yo‘l joiz?",
+      "options": [
+        "Qabul faqat imzolangan qog‘oz kelgach boshlanadi",
+        "Rozilik so‘ralmaydi, chunki qabul masofaviy",
+        "Rozilik shartlar oynasidagi tugma bilan o‘rnini bosadi",
+        "Og‘zaki rozilik olinib, tibbiy hujjatga yozib qo‘yiladi"
+      ],
+      "correct_index": 3,
+      "explanation": "Tavsiyalarga ko‘ra, rozilikni og‘zaki olish va tibbiy yozuvga qayd etish mumkin; imzolangan shaklni kutish shart emas. Imzo kerak bo‘lsa, bemor portali yoki pochtadan foydalaniladi.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259, 4-bo‘lim (Discussion)"
+      }
+    },
+    {
+      "question": "Bemor video qabulga gavjum jamoat joyidan ulanmoqda, uning roziligi yo‘q. Telesog‘liqni saqlash tavsiyalariga ko‘ra, bu holatda nima to‘g‘ri?",
+      "options": [
+        "Shifokor va bemor shaxsiy joyda bo‘lishi talab etiladi",
+        "Jamoat joyi ruxsat etiladi, chunki aloqa yaxshi",
+        "Faqat shifokor shaxsiy joyda bo‘lsa, yetarli",
+        "Bemor joyi ahamiyatga ega emas, muhimi – ilova"
+      ],
+      "correct_index": 0,
+      "explanation": "Tavsiyada telesog‘liqni saqlash shaxsiy joylarda o‘tkazilishi, bemor esa rozilik yoki shoshilinch holat bo‘lmasa, jamoat yoki yarim jamoat joyida xizmat olmasligi aytilgan. Bu maxfiylikni himoya qiladi.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259, 4-bo‘lim (Discussion)"
+      }
+    },
+    {
+      "question": "Karantindagi, COVID-19 bilan kasallanmagan bemorga davolanishning uzluksizligi kerak. Italiya Oliy sog‘liqni saqlash instituti qaysi yondashuvni tavsiya qilgan?",
+      "options": [
+        "Teletibbiyotni butunlay taqiqlash",
+        "Faqat yuzma-yuz qabulni kutib turish",
+        "Sog‘liq holatini teletibbiyot orqali faol kuzatish",
+        "Bemorni kasalxonaga majburan yotqizish"
+      ],
+      "correct_index": 2,
+      "explanation": "Institut karantin, izolyatsiya yoki uyda ajratilgan, kasalxonadan chiqarilgan odamlarning sog‘lig‘ini teletibbiyot xizmatlari bilan faol kuzatishni tavsiya qilgan, hatto ular kasallanmagan bo‘lsa ham.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259, 4-bo‘lim (Discussion)"
+      }
+    },
+    {
+      "question": "Ko‘rib chiqilgan 24 ta maqolada etik-huquqiy muammolar ichida eng ko‘p tilga olingani qaysi?",
+      "options": [
+        "Axborotli rozilik va avtonomiya (87%)",
+        "Bemor privatligi (78%)",
+        "Ma’lumotlarni himoya qilish (74%)",
+        "Kasbiy mas’uliyat va xato (70%)"
+      ],
+      "correct_index": 0,
+      "explanation": "Maqolada axborotli rozilik va avtonomiya 87% bilan birinchi o‘rinda, so‘ng privatlik 78%, ma’lumotlar himoyasi 74% va kasbiy mas’uliyat 70% keladi.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259, 3-bo‘lim (Results)"
+      }
+    },
+    {
+      "question": "Qishloqdagi oilada Internet va smartfon yo‘q, shu sabab bola teletibbiy xizmatdan foydalana olmayapti. Qaysi tamoyil buzilmoqda?",
+      "options": [
+        "Adolat: texnologiyaga teng kirish imkoniyati",
+        "Xayrixohlik: boshqalar foydasiga harakat qilish",
+        "Zarar yetkazmaslik: zararning oldini olish",
+        "Avtonomiya: mustaqil qaror qabul qilish"
+      ],
+      "correct_index": 0,
+      "explanation": "Manbaga ko‘ra adolat tamoyili tibbiy yordamga teng kirishni va texnologiyaning chetda qolgan jamoalar o‘rtasida adolatli taqsimlanishini o‘z ichiga oladi. Internet yoki smartfon yo‘qligi bolani tibbiy tizimdan chetlatmasligi kerak.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259"
+      }
+    },
+    {
+      "question": "Bemor uyda, shifokor teletashrif o‘tkazmoqchi, ammo bemor imzolangan shaklni hozir topshira olmaydi. Shifokor nima qilishi kerak?",
+      "options": [
+        "Imzolangan qog‘oz kelguncha qabulni butunlay kechiktirish",
+        "Og‘zaki rozilikni olib, tibbiy yozuvda qayd etish",
+        "Rozilikni so‘ramasdan, qabulni darhol boshlash",
+        "Rozilikni faqat jamoat joyida bemordan so‘rash"
+      ],
+      "correct_index": 1,
+      "explanation": "Manbadagi ko‘rsatmaga ko‘ra rozilikni og‘zaki olib, tibbiy yozuvga kiritish mumkin. Imzolangan shaklni kutish shart emas. Imzo kerak bo‘lsa, bemor portali yoki pochtadan foydalaniladi.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259"
+      }
+    },
+    {
+      "question": "Shifokor video-maslahatdan keyin dorini masofadan retsept qilmoqchi, mamlakatda esa aniq qoida yo‘q. Manbaga ko‘ra bu qanday masala?",
+      "options": [
+        "Barcha mamlakatlarda yagona qoida bilan to‘liq hal etilgan",
+        "Faqat texnik masala bo‘lib, huquqiy jihati umuman yo‘q",
+        "Mamlakatlarda farq qiluvchi, hali hal bo‘lmagan huquqiy masala",
+        "Faqat bemorning shaxsiy ishi, tartibga solish talab etilmaydi"
+      ],
+      "correct_index": 2,
+      "explanation": "Manbada dorilarni virtual retsept qilish tartibga solish talab qiladigan huquqiy savollar qatoriga kiritilgan. Qoidalar mamlakatlar o‘rtasida farq qiladi yoki yo‘q. Telefarmatsiya ham hal bo‘lmagan cheklovlarga ega.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259"
+      }
+    },
+    {
+      "question": "Klinika rahbari barcha yuzma-yuz qabullarni to‘xtatib, faqat teletibbiyotga o‘tishni taklif qildi. Manbadagi xulosaga ko‘ra bu qanday baholanadi?",
+      "options": [
+        "To‘g‘ri, teletibbiyot an’anaviy yordamning to‘liq o‘rnini bosadi",
+        "To‘g‘ri, chunki yuzma-yuz qabul endi zamonaviy standart emas",
+        "To‘g‘ri, agar bemorlar xohlasa, sifat tekshirilishi shart emas",
+        "Noto‘g‘ri, teletibbiyot faqat to‘ldiruvchi vosita bo‘lishi kerak"
+      ],
+      "correct_index": 3,
+      "explanation": "Manbada teletibbiyot hozircha an’anaviy xizmatga qo‘shimcha yoki to‘ldiruvchi vosita sifatida ishlatilishi, to‘liq almashtirmasligi aytilgan. Yuzma-yuz maslahat klinik yordamning oltin standarti bo‘lib qolmoqda.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259"
+      }
+    },
+    {
+      "question": "Mualliflar katta ma‘lumotlarning barcha ta’riflarida uchraydigan asosiy uchta xususiyat sifatida qaysi qatorni ko‘rsatgan?",
+      "options": [
+        "Hajm, qiymat va vizualizatsiya",
+        "Hajm, xilma-xillik va tezlik",
+        "Haqiqiylik, o‘zgaruvchanlik va qiymat",
+        "Tezlik, vizualizatsiya va haqiqiylik"
+      ],
+      "correct_index": 1,
+      "explanation": "Mualliflar hamma tomonidan e’tirof etilgan asosiy xususiyatlar sifatida hajm (volume), xilma-xillik (variety) va tezlik (velocity)ni tanlagan. Qolganlari kengaytirilgan 4V, 6V va 7V ro‘yxatlarida uchraydi.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "Klinika katta ma‘lumotlar loyihasida ismlari olib tashlangan bazani ulashmoqchi va xavf yo‘q deb hisoblaydi. Bu ishonch nega asossiz?",
+      "options": [
+        "Anonimlashtirish qonunan taqiqlangan va qo‘llanilmaydi",
+        "Maxfiylik modellari dastlab statik to‘plamlar uchun yaratilgan",
+        "Katta ma‘lumotlar faqat tasvir shaklidagi fayllardan iborat",
+        "Ismi olib tashlangan ma‘lumot doim ochiq ma‘lumot sanaladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Maxfiylik modellari dastlab statik ma‘lumotlar uchun ishlab chiqilgan, shuning uchun katta ma‘lumotlar muhitida mukammal emas. Ma‘lumotlarning xilma-xilligi qayta aniqlash xavfini ham oshiradi. Xavfni to‘liq yo‘qotish faqat ma‘lumot umuman ulashilmasa mumkin.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "Anonimlashtirilgan saraton reyestri ma‘lumotlaridan X shaxs shu reyestr a‘zosi ekani aniqlandi. Bu qaysi oshkor bo‘lish turi?",
+      "options": [
+        "Shaxsni yozuvga bog‘lash orqali oshkor bo‘lish (identity)",
+        "Ma‘lumotdan xulosa chiqarish orqali oshkor bo‘lish (inferential)",
+        "Guruhga a‘zolikning oshkor bo‘lishi (attribute disclosure)",
+        "Ma‘lumotni ulashmaslik orqali xavfni to‘liq yo‘qotish"
+      ],
+      "correct_index": 2,
+      "explanation": "Shaxs ma‘lum guruhga (masalan, saraton reyestriga) tegishli deb aniqlansa, bu attribute disclosure, ya‘ni a‘zolikning oshkor bo‘lishi. Identity disclosure da ma‘lumot to‘g‘ridan-to‘g‘ri shaxsga bog‘lanadi. Inferential disclosure da shaxs haqidagi axborot yuqori ishonch bilan chiqariladi.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "Tadqiqotchi biobank ishtirokchilarining ma‘lumotini turli tizimlarda ulab ishlatmoqchi. Har bir foydalanish uchun rozilik olish nega amalda qiyin?",
+      "options": [
+        "Rozilik faqat bolalar ishtirokidagi tadqiqotlarda talab etiladi",
+        "Ishtirokchilarni qayta bog‘lash har doim mutlaqo imkonsizdir",
+        "Shifokorlar rozilikni umuman talab qilmaslikka kelishgan",
+        "Ma‘lumotdan foydalanishning barcha yo‘nalishini oldindan aytib bo‘lmaydi"
+      ],
+      "correct_index": 3,
+      "explanation": "Katta ma‘lumotlar asl manbadan uzoq tizimlarda bog‘lanib ishlatilishi mumkin. Ishtirokchini ba‘zan qayta bog‘lash mumkin bo‘lsa ham, barcha qo‘llanishlar haqida to‘liq xabar berib bo‘lmaydi. Shu sababli rozilikka haddan tashqari tayanish samarasiz bo‘lib bormoqda.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "Katta ma‘lumotlar bo‘yicha etik qaror qabul qilish doirasida (Framework) birinchi qadam qaysi?",
+      "options": [
+        "Mavjud etik muammoni aniq ifodalash",
+        "Mos protsessual qadriyatlarni sanab chiqish",
+        "Eng kuchli variantni tanlab olish",
+        "Qarorni barcha manfaatdorlarga yetkazish"
+      ],
+      "correct_index": 0,
+      "explanation": "Doira muammoni aniq ifodalashdan boshlanadi. Keyin qadriyatlar aniqlanadi, mumkin bo‘lgan harakatlar topiladi va ular tortib ko‘riladi. So‘ngra variant tanlanadi va qaror shaffof tarzda yetkaziladi.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "Kompaniya katta ma‘lumotlar bazasini boshqaradi, bazadagi shaxslar esa kim ularning qanday ma‘lumotini saqlayotganini bilmaydi. Bu qaysi tushunchaga mos?",
+      "options": [
+        "Hamboshqaruv, ya‘ni ulushlarni teng taqsimlash",
+        "Ma‘lumotlar tafovuti (big data divide)",
+        "Guruh zarari, ya‘ni jamoa manfaatiga ziyon",
+        "Ijtimoiy litsenziya, ya‘ni jamoatchilik qo‘llab-quvvatlashi"
+      ],
+      "correct_index": 1,
+      "explanation": "Ma‘lumotlar tafovuti ma‘lumotlar bazasini boshqaruvchilar va faqat bazada qayd etilganlar o‘rtasidagi farqni bildiradi. Bunda foyda notekis taqsimlanadi. Hamboshqaruv esa shunday muammolarni yumshatishga qaratilgan yondashuvdir.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "Tadqiqotchilar kasallik registri ma’lumotlarini ulashmoqchi: bu jamoat manfaatini oshiradi, ammo maxfiylikni susaytiradi. Qaror qabul qiluvchilar nima qilishi kerak?",
+      "options": [
+        "Qadriyatlar ro‘yxati uzunligini solishtirib, ko‘prog‘ini tanlash",
+        "Birini ustun qo‘yishni asoslab, zararni kamaytirish choralarini ko‘rish",
+        "Barcha qadriyatlarni bir vaqtda to‘liq qondirishga erishish",
+        "Faqat qonunda yozilgan qadriyatni avtomatik ustun qo‘yish"
+      ],
+      "correct_index": 1,
+      "explanation": "Qadriyatlar to‘qnashganda hammasini birdaniga qondirib bo‘lmaydi. Qaror qabul qiluvchi ma’lum qadriyatni ustun qo‘yishi yoki cheklashini asoslashi va zararni kamaytiruvchi mexanizm joriy etishi kerak. Qaysi qadriyat ustun ekanini qadriyatlar sonini taqqoslab aniqlab bo‘lmaydi.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "Katta ma’lumotlar bo‘yicha etik doirada quyidagilardan qaysi biri protsessual qadriyat hisoblanadi?",
+      "options": [
+        "Adolat",
+        "Daxlsizlik",
+        "Mutanosiblik",
+        "Shaffoflik"
+      ],
+      "correct_index": 3,
+      "explanation": "Shaffoflik, hisobdorlik, izchillik, jalb etish, mantiqiylik, refleksivlik va ishonchlilik protsessual qadriyatlardir. Adolat, daxlsizlik va mutanosiblik qarorning natijasida ro‘yobga chiqishi kerak bo‘lgan mazmuniy qadriyatlardir.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "Qaror qabul qiluvchi muammoni aniq ifodaladi. Olti qadamli jarayonda keyingi qadam qaysi?",
+      "options": [
+        "Tegishli mazmuniy va protsessual qadriyatlarni aniqlash",
+        "Variantlarning nisbiy axloqiy og‘irligini taqqoslash",
+        "Qarorni barcha manfaatdorlarga ochiq yetkazish",
+        "Eng kuchli variantni tanlab, o‘z ta’sirini aks ettirish"
+      ],
+      "correct_index": 0,
+      "explanation": "Birinchi qadam muammoni aniqlash, ikkinchisi tegishli qadriyatlarni (mazmuniy va protsessual) topishdir. Variantlarni taqqoslash to‘rtinchi, tanlash va aks ettirish beshinchi, qarorni yetkazish oltinchi qadamdir.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "question": "MoodFlex ilovasi tadqiqotga rozilikni faqat foydalanish shartlari (T&C) ichiga joylamoqchi. Bu nega maqbul emas?",
+      "options": [
+        "Ilova klinik tashxis qo‘yishni da’vo qilgani uchun",
+        "Ma’lumotlar egaligi sotuvchida qolishi sababli",
+        "Rozilik yetarli va tushunarli axborotga asoslanishi shart",
+        "Algoritm tijorat siri bo‘lgani uchun taqiqlangani"
+      ],
+      "correct_index": 2,
+      "explanation": "Tadqiqot roziligi odamning yetarli va tushunarli ma’lumot asosida erkin tanlov qilishini ta’minlashi kerak (shaxsga hurmat). Rozilik matnini foydalanish shartlariga joylash maqbul emas. Boshqa variantlar ilovadagi alohida muammolardir.",
+      "source": {
+        "author": "Nebeker et al.",
+        "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+        "page": "PMID 31311535"
+      }
+    },
+    {
+      "question": "Tadqiqotchi raqamli sensorni tanlayapti, lekin uni ingliz tilini bilmaydigan ishtirokchilar ishlata olmaydi. Qaysi domen birinchi navbatda e’tibor talab qiladi?",
+      "options": [
+        "Ishtirokchi maxfiyligi",
+        "Foydalanish imkoniyati va qulaylik",
+        "Ma’lumotlarni boshqarish",
+        "Etik tamoyillar"
+      ],
+      "correct_index": 1,
+      "explanation": "Raqamli qaror doirasining beshta domenidan “Foydalanish imkoniyati va qulaylik” texnologiyani turli odamlar ishlata olishiga qaratilgan. Til to‘siqlari sababli ba’zi odamlar chetda qolishi mumkin, shuning uchun texnologiyani moslashtirish kerak.",
+      "source": {
+        "author": "Nebeker et al.",
+        "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+        "page": "PMID 31311535"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Tarixiy fakt: “teletibbiyot” atamasi 1970-yillarda “masofadan davolash” ma’nosida paydo bo‘lgan. Jahon sog‘liqni saqlash tashkiloti (JSST) 1998-yilgi hisobotida uni axborot-kommunikatsiya texnologiyalari orqali masofadan tibbiy xizmat ko‘rsatish deb ta’riflagan. JSST o‘sha paytdayoq maxfiylik, bemor daxlsizligi va axborot tizimlari yaxlitligi kabi axloqiy muammolarga ishora qilgan.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259"
+      }
+    },
+    {
+      "text": "Amaliy hodisa tahlili: telesalomatlik tashrifida bemorning og‘zaki roziligi yetarli bo‘lishi mumkin. Uni tibbiy yozuvda qayd etish kerak, imzolangan shakl kelishini kutish shart emas. Shifokor xizmatni xususiy joydan ko‘rsatishi kerak. Telekonsultatsiyani yuzma-yuz qabul bilan bir xil jiddiylikda olib borish lozim.",
+      "source": {
+        "author": "Solimini et al.",
+        "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+        "page": "PMID 34946259"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli: katta ma’lumotlarning asosiy “3 V” xususiyati. Volume (hajm) ma’lumot miqdori va tafsilotini bildiradi. Variety (xilma-xillik) ma’lumot shakllari va manbalarini bildiradi. Velocity (tezlik) uzatish va tahlil tezligini bildiradi. Kengroq ta’riflarda variability, veracity, value va visualisation qo‘shiladi.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    },
+    {
+      "text": "Qiziqarli hodisa: “mahsulot bepul bo‘lsa, mahsulot — sizning o‘zingizsiz” degan gap bor. Qidiruvlar, bosishlar va teruvlar algoritmlarni o‘qitadigan ma’lumotga aylanadi. Foydalanuvchi “Qabul qilaman” tugmasini bosganda shartlarni o‘qimasligi mumkin. Bu tadqiqot roziligining o‘rnini bosmaydi.",
+      "source": {
+        "author": "Nebeker et al.",
+        "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+        "page": "PMID 31311535"
+      }
+    },
+    {
+      "text": "Paradoks tahlili: homilador ayollarni tadqiqotlardan himoya qilish uchun chiqarib tashlash niyati yaxshi. Lekin bu ular uchun yetarli sinalgan dorilar yo‘qligiga olib keladi va zaifligini oshiradi. Demak, himoya choralari ham yangi zaiflik yaratishi mumkin. Shuning uchun har bir qarorning oqibatini ikki tomonlama baholash kerak.",
+      "source": {
+        "author": "Xafis et al.",
+        "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+        "page": "PMID 33717314"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Solimini et al.",
+      "title": "Ethical and Legal Challenges of Telemedicine in the Era of the COVID-19 Pandemic, Medicina",
+      "year": 2021,
+      "pages": "PMID 34946259; DOI 10.3390/medicina57121314"
+    },
+    {
+      "author": "Xafis et al.",
+      "title": "An Ethics Framework for Big Data in Health and Research, Asian Bioethics Review",
+      "year": 2019,
+      "pages": "PMID 33717314; DOI 10.1007/s41649-019-00099-x"
+    },
+    {
+      "author": "Nebeker et al.",
+      "title": "Building the case for actionable ethics in digital health research supported by artificial intelligence, BMC Medicine",
+      "year": 2019,
+      "pages": "PMID 31311535; DOI 10.1186/s12916-019-1377-7"
+    }
+  ]
+}

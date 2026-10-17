@@ -1,0 +1,2108 @@
+{
+  "topic": "Pozitsion siqilish sindromining sud-tibbiy diagnostikasi",
+  "slides": [
+    {
+      "title": "Kirish: siqilish sindromi va mavzuning dolzarbligi",
+      "bullets": [
+        {
+          "text": "Yer silkinishi, ko‘chki, portlash, bino qulashi kabi ofatlar va baxtsiz hodisalar so‘nggi yillarda tez-tez sodir bo‘lmoqda.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ofatlarning og‘ir oqibatlaridan biri siqilish sindromi (crush syndrome, CS). U og‘ir mushak shikastining butun organizmdagi ko‘rinishidir.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2023-yilgi Turkiya va Suriya zilzilasida 47 000 dan ortiq odam halok bo‘lgan. Bunday ofatlarda CS keng uchraydigan jiddiy shikastdir.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ma’ruza maqsadi: CS sabablari, mexanizmi, belgilari, diagnostikasi, davosi, asoratlari va kelajakdagi yo‘nalishlarini ko‘rib chiqish.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega ofatlarda siqilish sindromi ko‘p uchraydi? 2) Sud-tibbiyot ekspertiga bu mavzu nima uchun kerak? Doskada chizish: «Ofat → ezilish → CS» qisqa strelkali sxema. Tipik xato: CS ni oddiy mahalliy jarohat deb tushunish. U tizimli holat ekanini ta’kidlang."
+    },
+    {
+      "title": "Ma’ruza rejasi: bo‘limlar zanjiri",
+      "bullets": [
+        {
+          "text": "Reja Usuda sharhi tuzilishiga tayanadi: sabab, mexanizm, belgilar, diagnostika, davo, asoratlar.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Guo maqolasi diagnostikadagi bahslarni va jarohat mexanizmi bo‘yicha tasnifni to‘ldiradi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ofat sharoitida davoni imkon qadar erta boshlash o‘limni kamaytiruvchi eng muhim omil sanaladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Ma’ruza bo‘limlari ketma-ketligi",
+        "nodes": [
+          "Siqilish shikasti va mexanizm",
+          "Diagnostika",
+          "Mexanizm bo‘yicha tasnif",
+          "Davolash",
+          "Asoratlar va kelajak"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: 1) Nega diagnostikadan keyin mexanizm bo‘yicha tasnif keladi? 2) Davolash qaysi bosqichlarga bog‘liq? Doskada chizish: besh bosqichli zanjirni talabalar bilan birga chizing. Tipik xato: bo‘limlar tartibini aralashtirish, masalan davoni diagnostikadan oldin qo‘yish."
+    },
+    {
+      "title": "Siqilish shikasti (CI) va sindrom (CS): farqi",
+      "bullets": [
+        {
+          "text": "Siqilish shikasti (crush injury, CI) — tananing bevosita ezilishi; ko‘pincha oyoqlarda uchraydi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "CS — ezilgan mushakning tizimli ko‘rinishi; Bywaters va Beall 1941-yilda tasvirlagan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: CI ≠ CS — shikast to‘qimada, sindrom esa butun organizmda namoyon bo‘ladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "CI va CS: solishtirma jadval",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "CI",
+          "CS"
+        ],
+        "rows": [
+          [
+            "Ta’rif",
+            "To‘qimaning bevosita shikasti",
+            "Tizimli belgilar bilan kechadi"
+          ],
+          [
+            "Daraja",
+            "Mahalliy to‘qima zarari",
+            "Butun organizmga ta’sir"
+          ],
+          [
+            "Misol",
+            "Oyoq mushak, suyak, teri shikasti",
+            "Buyrak yetishmovchiligi, giperkaliemiya"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Bemorda faqat mahalliy ezilish bo‘lsa, uni CS deyish mumkinmi? 2) Ekspertiza xulosasida CI va CS atamalari nima uchun aralashmasligi kerak? Doskada chizish: CI doirasi va uni o‘rab turuvchi CS doirasini chizing. Tipik xato: CI va CS ni sinonim deb ishlatish."
+    },
+    {
+      "title": "Tarixi: Messina 1901 va Bywaters 1941",
+      "bullets": [
+        {
+          "text": "Ezilish sindromi (CS) birinchi marta 1901 yilgi Messina zilzilasida (Italiya) kuzatilgan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "London bombardimonida soatlab ko‘milganlar otopsiyasida buyrak kanalchalarida qo‘ng‘ir pigment topildi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1941 yilda Bywaters va hamkasblari pigment bilan mushak nekrozi o‘rtasidagi aloqani tasvirladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kashfiyot vaqt chizig‘i",
+        "nodes": [
+          "1901: Messina zilzilasi",
+          "London bombardimonlari (II jahon urushi)",
+          "Otopsiya: buyrakda qo‘ng‘ir pigment",
+          "1941: Bywaters aloqani tasvirladi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega otopsiya CS tarixida hal qiluvchi bo‘ldi? 2) Sud-tibbiy ekspert buyrak kanalchalaridan nimani qidiradi? Doskada: 4 bosqichli vaqt chizig‘ini chizdiring. Tipik xato: 1901 (birinchi kuzatuv) va 1941 (birinchi ilmiy tasvir) sanalarini aralashtirish. Manbada pigment ‘qo‘ng‘ir pigment’ deb yozilgan, uni mustaqil ravishda boshqa nom bilan atamang."
+    },
+    {
+      "title": "Epidemiologiya: uchrash va o‘lim ko‘rsatkichlari",
+      "bullets": [
+        {
+          "text": "Zilzilada omon qolganlar orasida CS uchrashi tizimli sharhda 2–15% deb xabar qilingan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘lim 48% gacha yetgan. Omon qolish uchun buyrak disfunksiyasini cheklash va a’zolar funksiyasini qo‘llab-quvvatlash zarur bo‘lgan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘g‘ridan-to‘g‘ri jarohatdan keyin CS zilzilada o‘limning ikkinchi eng ko‘p uchraydigan sababidir.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "CS jarohatdan keyin atigi 1 soatdayoq boshlanishi mumkin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) 2–15% va 48% qaysi ko‘rsatkichlarni anglatadi? 2) Nega o‘lim holatlarida CS tashxisi sud-tibbiy ekspert uchun muhim? Doskada: ikki ustun chizing: ‘Uchrash 2–15%’ va ‘O‘lim ≤48%’. Diqqat: xato qilish xavfi — uchrash ko‘rsatkichi (2–15%) bilan o‘lim ko‘rsatkichini (48% gacha) aralashtirmang."
+    },
+    {
+      "title": "Tezkor savol 1: asosiy tushunchalar",
+      "bullets": [
+        {
+          "text": "1-savol: ezilish jarohati (CI) va CS farqi nima? Javob: CI — to‘qima jarohati; CS — tizimli belgilar bilan kechadigan ezilish jarohati.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: CS ta’rifi qanday? Javob: og‘ir travmatik mushak jarohatining tizimli ko‘rinishi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol: kim va qachon tasvirlagan? Javob: Bywaters va hamkasblari, 1941 yil; birinchi kuzatuv — Messina, 1901 yil.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-savol: ko‘rsatkichlar? Javob: uchrashi 2–15%, o‘lim 48% gacha, boshlanishi 1 soatdan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Talabalar javobni yopiq daftarda yozadi, so‘ng tekshiriladi. Muhokama: CI ‘to‘qima’, CS ‘tizim’ darajasi degani nimani bildiradi? Doskada: ikki pog‘onali sxema — CI → (tizimli belgilar) → CS. Tipik xato: CI va CS tushunchalarini bir xil deb hisoblash."
+    },
+    {
+      "title": "Siqilish shikasti: sabablari va joylashuvi",
+      "bullets": [
+        {
+          "text": "Siqilish shikasti (CI) tananing to‘g‘ridan-to‘g‘ri jismoniy zarbasi va bosilishidan kelib chiqadi. Eng ko‘p pastki oyoq-qo‘llar shikastlanadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sabablari: yo‘l-transport hodisalari, zilzila, ko‘chki, shaxta halokati, portlash, bino qulashi, terror hujumi va urush.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri, mushak-paylar, suyak va bo‘g‘imlar birga shikastlanadi. Hayotiy a’zolar zararlanmasa ham, ayniqsa oyoq-qo‘lda shikast hayot uchun xavfli bo‘lishi mumkin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "AQSh kohort tadqiqotida CI o‘tkir kompartment sindromi (ACS) ehtimolini oshirgan (OR 1,83). Bolalarda CI kam uchraydi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega hayotiy a’zolar shikastlanmasa ham oyoq-qo‘l siqilishi o‘limga olib kelishi mumkin? 2) Sud-tibbiy ekspertizada shikast sharoitini (zilzila, avtohalokat) aniqlash nimaga kerak? Doskaga chizing: tana sxemasi va unda siqilish shikastlari eng ko‘p uchraydigan pastki oyoq-qo‘llar. Tipik xato: siqilish shikasti (CI, to‘qima shikasti) va siqilish sindromi (CS, tizimli oqibatlar bilan) ni aralashtirish."
+    },
+    {
+      "title": "Ko‘krak va qorin siqilish shikastlari",
+      "bullets": [
+        {
+          "text": "Ko‘krak siqilishida tez aralashuv, erta tashxis va jarrohlik tiklash asoratlarni va nafas funksiyasi yo‘qolishini kamaytiradi. Yuqori ko‘krak shikasti traxeya uzilishiga olib kelishi mumkin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xitoy tadqiqotida ko‘krak va qo‘l siqilish sindromi og‘ir va tez kechishiga CO bilan zaharlanish, mastlik va tana a’zolarining bir-biriga bosilishi sabab bo‘lgan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Og‘ir qorin siqilishi tayanch-harakat, siydik, yurak-qon tomir, teri va hazm tizimlariga ta’sir qiladi. Ichak tutqichi yirtilsa kuchli qon ketadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qon ketishi gemorragik shok va ko‘p a’zo yetishmovchiligiga olib keladi. Suyak sinishi ham arterial qon ketishi orqali shokni chaqirishi mumkin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qorin siqilishida o‘lim sababini sud-tibbiy jihatdan qanday asoslaysiz? 2) Ko‘krak siqilishida nafas yetishmovchiligi mexanizmi qanday? Doskaga chizing: qorin siqilishi, ichak tutqichi yirtilishi, qon ketishi, gemorragik shok va ko‘p a’zo yetishmovchiligi zanjiri. Tipik xato: faqat tashqi belgilarga qarab ichki a’zo shikastini inkor etish."
+    },
+    {
+      "title": "Chanoq qon tomir shikastlari",
+      "bullets": [
+        {
+          "text": "Chanoq qon tomir shikastlari odatda yuqori energiyali travma natijasida yuzaga keladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘pchiligi yo‘l-transport to‘qnashuvlaridan, qolgani yiqilish yoki sanoatdagi siqilish shikastlaridan bo‘ladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ular ko‘pincha chanoq halqasi uzilishi bilan birga keladi. Chanoqdagi qon ketishidan shok rivojlanib, o‘lim darajasi yuqori bo‘ladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Erta ko‘p qatlamli kompyuter tomografiyasi (KT) bilan aniqlanib, tezda davolansa, qon ketishdan o‘lim oldini olinishi yoki qaytarilishi mumkin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Chanoq halqasi uzilishida o‘lim nega aynan qon ketishi va shokdan bo‘ladi? 2) Erta KT natijasi o‘lim sababini aniqlashda qanday ahamiyatga ega? Doskaga chizing: yuqori energiyali travma, chanoq halqasi uzilishi, chanoq qon ketishi, shok, o‘lim. Tipik xato: chanoq shikastini faqat suyak sinishi deb baholab, qon tomir shikastini unutish."
+    },
+    {
+      "title": "Voqea tahlili 1: qulagan bino ostidagi shaxs",
+      "bullets": [
+        {
+          "text": "Vaziyat: bino qulaganda shaxs bir necha soat vayronalar ostida qolgan. Oyoqlari uzoq siqilgan, tashqi shikast esa kam ko‘rinadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi! Siqilish shikasti (CI) ≠ siqilish sindromi (CS). CI — to‘qima shikasti, CS — tizimli belgilar bilan kechadigan CI.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "CS belgilari: hujayralardan kaliy, ferment va mioglobin chiqadi. Kech bosqichda gipovolemik shok, giperkaliemiya va metabolik asidoz paydo bo‘ladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu CI mi yoki CS mi? Teri shikasti kam bo‘lsa ham, shishgan oyoq, shok, mioglobinuriya va buyrak yetishmovchiligi CS dalolati.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) CI va CS ni qaysi belgilar farqlaydi? 2) Tashqi shikast kam bo‘lishi nega xavfli? Doskaga chizish: ikki ustunli ro‘yxat — CI (mahalliy to‘qima shikasti) va CS (tizimli belgilar). Tipik xato: talabalar CI va CS ni bir xil tushuncha deb hisoblaydi."
+    },
+    {
+      "title": "Siqilish mexanizmi: bosim va to‘qima shikasti",
+      "bullets": [
+        {
+          "text": "Ezuvchi kuch qon tomirlardagi siqilmaydigan qonga ta’sir qiladi va to‘qima bosimini keskin oshiradi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kechikkan yallig‘lanish shikast zonasini kengaytiradi va dastlab shikast og‘irligini yashirishi mumkin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bo‘lma ichi bosimi kapillyar perfuziya bosimidan oshsa, mushak va nerv to‘qimasi ishemiyaga uchraydi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Siqilishdan to‘qima shikastigacha",
+        "nodes": [
+          "Ezuvchi kuch",
+          "To‘qima bosimi oshadi",
+          "Suyak, tomir, nerv zararlanadi",
+          "Kechikkan yallig‘lanish",
+          "Shikast og‘irligi yashirinadi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega dastlabki ko‘rikda shikast og‘irligi kam baholanadi? 2) Bo‘lma ichi bosimi qachon xavfli bo‘ladi? Doskaga chizish: sxemadagi 5 bosqichni strelkalar bilan chizing. Tipik xato: faqat teri ko‘rinishiga qarab xulosa qilish."
+    },
+    {
+      "title": "Ishemiya-reperfuziya (IR) shikasti",
+      "bullets": [
+        {
+          "text": "IR shikasti: qon oqimi tiklanganda rivojlanadigan o‘tkir yallig‘lanish, mahalliy va tizimli ta’sirli.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Patofiziologiya o‘zini kuchaytiruvchi shish–ishemiya halqasiga asoslanadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mushak 2–4 soat chidaydi deb hisoblangan, ammo qaytmas o‘zgarishlar 1 soatdayoq boshlanishi mumkin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "IR shikasti zanjiri",
+        "nodes": [
+          "Uzoq ishemiya",
+          "Qon oqimi tiklanadi",
+          "Neytrofillar kirib keladi",
+          "Shish va ishemiya halqasi",
+          "Mushak shikasti kuchayadi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qon oqimi tiklanishi nega zararni kuchaytirishi mumkin? 2) 1 soat va 2–4 soat chegarasi sud-tibbiy baholashda nimani anglatadi? Doskaga chizish: shish–ishemiya doiraviy halqasini chizing. Tipik xato: reperfuziyani faqat foydali jarayon deb o‘ylash."
+    },
+    {
+      "title": "Mioglobin va o‘tkir buyrak shikasti (AKI)",
+      "bullets": [
+        {
+          "text": "Uzoq ishemiyada hujayra membranasi o‘tkazuvchanligi oshadi; hujayradan kaliy, ferment va mioglobin chiqadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mioglobin buyrak kanalchalarida cho‘kib, temir va oksidlovchi stress orqali ularni bevosita shikastlaydi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ferroptoz (temir ortiqchaligi, lipid perokidlanishi) tilga olinadi, ammo CS-AKIdagi mexanizmi noaniq.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Mioglobin → AKI zanjiri",
+        "nodes": [
+          "Mushak ishemiyasi va nekrozi",
+          "Mioglobin qonga chiqadi",
+          "Kanalchalarda cho‘kish",
+          "Temir, oksidlovchi stress",
+          "Hujayra o‘limi → AKI"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5-6 daq. Muhokama: 1) Nima uchun mioglobin aynan buyrak kanalchalariga zarar yetkazadi? 2) Ferroptoz haqida nimani aniq aytish mumkin, nimani yo‘q? Doskada chizish: zanjirni chizib, har bosqich yoniga sud-tibbiy topshiriqni yozing (jasad ochishda buyrak kanalchalarini qidirish). Qo‘shimcha: Bywaters 1941 yilda o‘lganlarning buyrak kanalchalarida jigarrang pigmentni topgan; gipotenziya bilan birga o‘tkir kanalchalar nekrozi va uremiyaga olib keladi. Tipik xato: ferroptoz mexanizmi isbotlangan, deb aytish – manbada uning roli noaniq deyilgan."
+    },
+    {
+      "title": "Tizimli belgilar: erta va kech",
+      "bullets": [
+        {
+          "text": "Diqqat: siqilish jarohati (CI) ≠ siqilish sindromi (CS): CI – to‘qima jarohati, CS – tizimli belgilar bilan kechadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Giperkaliemiya va metabolik atsidoz hayot uchun xavfli; o‘lim ko‘pincha gipovolemiya va giperkaliemiyadan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘tkir buyrak shikasti (AKI) CS dan o‘limning yetakchi sababi sifatida ko‘rsatilgan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "CS belgilari dinamikasi",
+        "nodes": [],
+        "header": [
+          "Davr",
+          "Belgilar"
+        ],
+        "rows": [
+          [
+            "Erta",
+            "Yurak/buyrak yetishmovchiligi, shok, sepsis"
+          ],
+          [
+            "Kech",
+            "Gipovolemik shok, giperkaliemiya, atsidoz"
+          ],
+          [
+            "Juda kech",
+            "DVS (tomir ichi tarqoq ivish) sindromi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) CI va CS farqi sud-tibbiy xulosada nega muhim? 2) O‘lim sababini aniqlashda qaysi belgilar kechki davrga xos? Doskada chizish: jadvalni ko‘chirib, har davrga bittadan klinik misol yozing. Tipik xato: CI va CS ni bir xil tushuncha deb olish; DVS ni erta belgi deb hisoblash (manbada u juda kech holatlarda uchraydi)."
+    },
+    {
+      "title": "Tezkor savol 2: mexanizm zanjiri",
+      "bullets": [
+        {
+          "text": "Savol: reperfuziya, mushak ishemiyasi, buyrak shikasti va mioglobin chiqishini to‘g‘ri ketma-ketlikka tering.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Javob: uzoq mushak ishemiyasi → reperfuziya (bosim olingach) → mioglobin va kaliy chiqishi → buyrak shikasti.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: kaliy bu zanjirda qanday xavf tug‘diradi? Javob: ekstrikatsiyadan so‘ng giperkaliemiya xavfi bor, aritmiya mumkin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daq. Talabalarga kartochkalarda to‘rt bosqichni berib, 1 daqiqada tartiblatib, keyin kaliy rolini so‘rang. Muhokama: nima uchun xavf aynan bosim olingan paytda oshadi? Doskada chizish: to‘rt bosqichli o‘q chizig‘i, kaliy uchun alohida shox. Tipik xato: reperfuziyani zararsiz bosqich deb o‘ylash – manbada u yallig‘lanish va mushak shikastini kuchaytiradi."
+    },
+    {
+      "title": "Voqea tahlili 2: ozod qilingandan keyingi holat",
+      "bullets": [
+        {
+          "text": "Vaziyat: uzoq qamalgan jabrlanuvchi ozod qilingach ahvoli yomonlashdi. Savol: reperfuziya va giperkaliemiya xavfi qanday bog‘liq?",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uzoq ishemiya hujayra membranasini o‘tkazuvchan qiladi: hujayralar kaliy, ferment va mioglobin chiqaradi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qon qayta oqqanda (reperfuziya) yallig‘lanish boshlanadi, neytrofillar mushak shikastini kuchaytiradi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ozod qilingach giperkaliemiya (qonda kaliy oshishi) xavfi bor; asosiy davo — vena ichiga suyuqlik, kaliysiz eritma, imkon bo‘lsa ozod qilishdan oldin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ahvol aynan ozod qilingandan keyin yomonlashishi mumkin? 2) Nega suyuqlikda kaliy bo‘lmasligi muhim? Doskada: ishemiya → ozod qilish → reperfuziya → kaliy, mioglobin chiqishi zanjirini chizing. Tipik xato: reperfuziyani faqat foydali jarayon deb o‘ylash; u qo‘shimcha shikast ham beradi."
+    },
+    {
+      "title": "O‘tkir kompartment sindromi (ACS): ta’rif",
+      "bullets": [
+        {
+          "text": "ACS — jarohat yoki boshqa sabab qon ketish, shish yoki perfuziya buzilishini keltirib chiqargan klinik holat.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yopiq fastsial bo‘shliqda bosim oshadi, qon oqimi va to‘qima perfuziyasi kamayadi; ishemik og‘riq, to‘qima shikasti va oyoq-qo‘l xavfi paydo bo‘ladi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu jarrohlik shoshilinchligi; ko‘pincha boldir, bilak, son, oyoq kafti, dumba, qo‘l va qorinda uchraydi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: ACS ko‘pincha crush sindromi bilan aralashtiriladi. Crush sindromi — tizimli holat, ACS — yopiq bo‘shliqdagi bosim holati.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Fastsial bo‘shliq yopiq bo‘lishi bosimga qanday ta’sir qiladi? 2) ACS va crush sindromi farqi nimada? Doskada: yopiq qobiq ichida shish → bosim → perfuziya pasayishi sxemasi. Tipik xato: ACS va crush sindromini bir xil tushuncha deb yozish."
+    },
+    {
+      "title": "Klinik belgilar: 5P mnemonikasi",
+      "bullets": [
+        {
+          "text": "5P: nomutanosib og‘riq, oqarish, paresteziya, falaj va puls yo‘qligi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "5P ishonchsiz: belgilar ACS bo‘lmaganlarda ham uchraydi, ongi buzilgan bemorda foydasiz.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu belgilar mushak nekrozini, ya’ni kech va qaytmas bosqichni bildiradi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "5P belgilari",
+        "nodes": [
+          "Pain: nomutanosib og‘riq",
+          "Pallor: oqarish",
+          "Paresthesia: uvishish",
+          "Paralysis: falaj",
+          "Pulselessness: puls yo‘q"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Eslab qoling: 5P — pain, pallor, paresteziya, paralysis, pulselessness. Muhokama: 1) Nega falaj va puls yo‘qligini kutish xavfli? 2) Ongi buzilgan bemorda ACS ni qanday gumon qilamiz? Doskada: 5P ni yozib, kech belgilarni (falaj, puls yo‘qligi) alohida belgilang. Tipik xato: 5P ni erta va ishonchli diagnostik mezon deb hisoblash."
+    },
+    {
+      "title": "Klinik tekshiruvning cheklovlari",
+      "bullets": [
+        {
+          "text": "Kompartment sindromining klinik belgilari 5P: og‘riq kuchi o‘zgarishga mos kelmaydi, rang oqarishi, paresteziya, falaj va puls yo‘qligi. Bu belgilar ishonchli aniqlovchi emas, ACS bo‘lmaganda ham uchraydi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ongi pasaygan, hushsiz yoki sezgisiz bemorda 5P foydasiz. Diqqat: belgilar paydo bo‘lgan bo‘lsa, bu ko‘pincha mushak nekrozi, ya’ni kech va qaytmas bosqich.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ulmer ma’lumotiga ko‘ra klinik tekshiruvning sezgirligi past, manfiy bashoratli qiymati yuqori. Demak, u ACSni tasdiqlashdan ko‘ra inkor etishda yaxshiroq.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Subyektiv baho standartlashtirilmaydi, tajribali shifokorda ham ishonchsiz. Natijada keraksiz keng fasciotomiya va yara infeksiyasi xavfi oshadi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega 5P belgilari kech bosqichni ko‘rsatadi? 2) Sezgirligi past, lekin inkor qilish qobiliyati yaxshi test nimani anglatadi? Doskaga 5P ro‘yxatini yozdiring va har birining yonida kech belgi ekanini belgilatting. Tipik xato: 5P bo‘lmasa ACS yo‘q, deb xulosa qilish, yoki 5Pni erta belgi deb hisoblash."
+    },
+    {
+      "title": "Kompartment bosimini o‘lchash usullari",
+      "bullets": [
+        {
+          "text": "Cadaver tizzalarida to‘g‘ri texnikada ham o‘lchovlarning 40% haqiqiy bosimdan 5 mmHg dan ortiq farq qilgan.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bosim kompartmentda bir tekis emas. Eng yuqori bosim sinish joyidan 5 sm ichida bo‘ladi, o‘lchash ham shu yerda tavsiya etilgan.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ofat hududlarida doimiy o‘lchash texnologiyasi chuqur to‘qimada sezgir emas va faqat tayyorlangan xodimga mos. Tashxis kechikadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Invasiv o‘lchash usullari",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Xususiyati",
+          "Cheklov"
+        ],
+        "rows": [
+          [
+            "Whitesides manometri",
+            "Invasiv igna bilan o‘lchash",
+            "Mushak va qon laxtasi to‘sib qo‘yadi"
+          ],
+          [
+            "Chok/fitil kateter",
+            "Invasiv kateter usuli",
+            "Mushak va laxta bilan to‘silib qoladi"
+          ],
+          [
+            "STIC monitor",
+            "Portativ, yon teshikli igna, raqamli ekran",
+            "Joy, holat, igna uchi to‘qimasi ta’sir etadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega o‘lchash joyi natijani o‘zgartiradi? 2) Zilzila hududida qaysi usul real? Doskaga sinish joyi va undan 5 sm radiusni chizib, bosim qayerda yuqori ekanini ko‘rsatishni so‘rang. Tipik xato: bitta nuqtadagi bosimni butun kompartmentga xos deb hisoblash."
+    },
+    {
+      "title": "Bosim chegaralari: mutlaq qiymat va ΔP",
+      "bullets": [
+        {
+          "text": "Mutlaq 30 mmHg chegarasi aniq emas: 30 mmHg dan yuqori bosim ham oqibatsiz chidalgan holatlar bor.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mutlaq qiymat o‘rniga ΔP qabul qilindi: diastolik bosimdan kompartment bosimi ayirmasi 30 mmHg dan kam bo‘lsa.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bitta o‘lchov faqat lahzalik perfuziyani aks ettiradi, shuning uchun vaqt omilini ham hisobga olish kerak.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Bosim mezonlarini solishtirish",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Mazmuni",
+          "Muammo"
+        ],
+        "rows": [
+          [
+            "Mutlaq 30 mmHg",
+            "Fasciotomiya uchun taklif qilingan chegara",
+            "Noaniq; 30 dan yuqori ham chidalgan"
+          ],
+          [
+            "ΔP < 30 mmHg",
+            "Diastolik minus kompartment bosimi",
+            "Yolg‘iz o‘zi ishonchsiz"
+          ],
+          [
+            "ΔP bilan operatsiya",
+            "45,4% bemorga fasciotomiya qilinardi",
+            "Keraksiz operatsiya va asoratlar"
+          ],
+          [
+            "Doimiy kuzatuv",
+            "2 soatda sezgirlik 94%",
+            "Hushyor bemorda tavsiya etilmagan"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega ΔP mutlaq qiymatdan afzal deb qabul qilindi? 2) ΔP asosida keraksiz operatsiyani qanday kamaytirish mumkin? Doskaga ΔP = diastolik bosim − kompartment bosimi formulasini yozdiring va misol uchun qiymat qo‘ydiring. Tipik xato: ΔP ni kompartment bosimining o‘zi bilan adashtirish yoki bosimni klinikadan ajratib baholash."
+    },
+    {
+      "title": "Tezkor savol 3: Diqqat — bosim va diagnoz",
+      "bullets": [
+        {
+          "text": "Diqqat: yuqori bosim ≠ albatta o‘tkir kompartment sindromi (ACS). Boldir diafizi sinishida yuqori bosim tez-tez uchraydi, lekin bu sindrom borligini bildirmaydi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bosim sinish joyining 5 sm atrofida eng yuqori bo‘ladi, shuning uchun o‘lchash nuqtasi natijaga ta’sir qiladi. Zararlanish zonasidan tashqarida o‘lchash kerakmi — bu bo‘yicha yagona standart yo‘q.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bitta o‘lchov faqat shu zamondagi qon oqimini ko‘rsatadi. Diagnozda vaqt omili ham hisobga olinadi; bir joyda o‘lchangan bosim butun qavatni aks ettirmasligi mumkin.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tezkor savol: nima uchun yagona va sinishdan uzoqda o‘lchangan bosimga ishonib bo‘lmaydi? Bosim qavat ichida bir tekis taqsimlanmagan.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega sinish yaqinida bosim yuqoriroq? 2) Bitta o‘lchov o‘rniga nima qilish mumkin? Doskada: boldir qavati va sinish chizig‘ini chizib, 5 sm zonani belgilang. Tipik xato: yuqori bosimni avtomatik ACS deb hisoblash.",
+      "slide_type": "quick_question"
+    },
+    {
+      "title": "Voqea tahlili 3: noaniq klinika, yuqori bosim",
+      "bullets": [
+        {
+          "text": "Vaziyat: boldir sinishi bor bemorda klinik belgilar noaniq, kompartment bosimi esa yuqori. Fasciotomy (fastsiyani kesish) qilinsinmi?",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Faqat bosimga tayanish xavfli. Bosim farqi (diastolik minus kompartment bosimi) 30 mm Hg dan past mezonida bemorlarning 45,4% i keraksiz operatsiyaga tushardi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sinishda yuqori bosim ko‘pincha sindromga teng emas. Ortiqcha fasciotomy yara infeksiyasi va boshqa asoratlar xavfini oshiradi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yana nimani hisobga olish kerak: ortib borayotgan og‘riq, bosimning vaqt bo‘yicha o‘zgarishi, shikast mexanizmi va teridagi pufakchalar.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Faqat bosimga tayanish qanday xatolarga olib keladi? 2) Bosim noaniq bo‘lsa, qaysi klinik va mexanizm belgilariga qaraysiz? Doskada: qaror daraxti — klinika, bosim, vaqt, mexanizm. Tipik xato: bosim raqamini yagona mezon deb olish.",
+      "slide_type": "case_analysis"
+    },
+    {
+      "title": "Shikast mexanizmi bo‘yicha tasnif",
+      "bullets": [
+        {
+          "text": "Siqilish sindromi uzoq davom etgan bosimdan kelib chiqadi: oyoq-qo‘l shishadi, shok, mioglobinuriya va buyrak yetishmovchiligi rivojlanadi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: siqilish sindromi ≠ Volkmann kontrakturasi; ikkinchisi o‘tkazib yuborilgan tomir shikastining kech holati.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sinish ACS ning asosiy omili (taxminan 75%); bunda qavat ichi tuzilishi buzilmagan bo‘ladi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Mexanizm va taktika",
+        "nodes": [],
+        "header": [
+          "Tur",
+          "Xususiyat",
+          "Taktika"
+        ],
+        "rows": [
+          [
+            "Yumshoq to‘qima (siqilish)",
+            "Uzoq bosim, mioglobinuriya",
+            "Erta debridman; fasciotomy bahsli"
+          ],
+          [
+            "Tomir shikasti",
+            "Reperfuziya, Volkmann xavfi",
+            "Tomir jarrohi maslahati"
+          ],
+          [
+            "Sinish bilan bog‘liq",
+            "Tuzilish saqlangan, pufakcha",
+            "Ortiqcha davolashdan qochish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega har bir mexanizmda taktika farq qiladi? 2) Siqilish sindromi va Volkmann kontrakturasi qanday farqlanadi? Doskada: uch ustunli jadvalni talabalar bilan to‘ldiring. Tipik xato: siqilish sindromi va Volkmann kontrakturasini bir tushuncha deb olish.",
+      "slide_type": "diagram"
+    },
+    {
+      "title": "Sinish pufakchalari: bosimni bo‘shatish belgisi",
+      "bullets": [
+        {
+          "text": "Sinishga bog‘liq o‘tkir kompartment sindromida (ACS) kompartment ichidagi tuzilma, siqilish jarohatidan farqli, aslida buzilmagan bo‘ladi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Siqilishda hujayra nobud bo‘lib, tarkibi to‘qima oralig‘iga chiqadi. Suyuqlik to‘planib, ichki bosim yanada ortadi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sinishda bosim butun fastsiya atrofidagi mexanizmlar orqali chiqishi mumkin. Boldirda suyuqlik yoki qon to‘lgan pufakchalar 6 soatdan keyin ko‘rinadi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: pufakcha bosimni bo‘shatadi degani mualliflar farazi. Laboratoriya dalili yetarli emas, tekshiruv rejalashtirilgan.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega sinishda va siqilishda bosim ortishi mexanizmi farq qiladi? 2) Pufakchani qanday talqin qilish mumkin? Doskada: ikki ustunli sxema chizing, “Sinish: fastsiya butun, hujayra o‘limi kam” va “Siqilish: hujayra o‘limi, osmotik suyuqlik”. Tipik xato: pufakchani isbotlangan xavfsizlik belgisi deb o‘ylash."
+    },
+    {
+      "title": "Voqea tahlili 4: sinish yoki siqilish?",
+      "bullets": [
+        {
+          "text": "Vaziyat A: boldir suyagi sinishi, terida suyuqlik yoki qon to‘lgan pufakchalar bor. Vaziyat B: qulagan konstruksiya ostida uzoq qolgan oyoq.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: qaysi birida fasciotomiya (fastsiyani kesib bosimni tushirish) ehtiyotkorlik bilan tanlanadi va nega?",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sinishda ortiqcha davolashdan qochish uchun qo‘shimcha tekshiruv kerak, ayniqsa pufakcha bo‘lsa. Fasciotomiya ko‘rsatmasi qat’iy nazoratda bo‘lishi lozim.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Siqilishda fasciotomiya yopiq jarohatni ochiqqa aylantirib, infeksiya xavfini oshiradi. Ochiq jarohat yoki qon aylanishi pasaymasa, konservativ yo‘l tavsiya etilgan.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Ikkala vaziyatda ehtiyotkorlik sabablari qanday farq qiladi? 2) Qaysi holatda fasciotomiyaga ko‘rsatma qat’iy bo‘ladi? Doskada: A va B uchun “mexanizm – xavf – qaror” uch qatorli jadval chizing. Tipik xato: fasciotomiyani siqilishda ham har doim majburiy deb hisoblash. Aniq javob: mexanizmni aniqlash qarorning asosi."
+    },
+    {
+      "title": "Fasciotomiya vaqti va natijalar",
+      "bullets": [
+        {
+          "text": "Mushak nekrozi 3 soatdan boshlanib, 8 soatda doimiy bo‘lishi mumkin; nerv uchun 4 va 12 soat muhim.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "12 soat ichida davolangan 22 bemorning 68 foizi, keyin davolanganlarning 8 foizi tiklandi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bolalar bosimga uzoqroq chidaydi; aniq vaqtni belgilash qiyin, xavf va foyda tortiladi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Vaqt va natija",
+        "nodes": [],
+        "header": [
+          "Vaqt",
+          "Holat",
+          "Izoh"
+        ],
+        "rows": [
+          [
+            "3 soat",
+            "Mushak nekrozi ko‘rina boshlaydi",
+            "8 soatda doimiy bo‘lishi mumkin"
+          ],
+          [
+            "4 soat",
+            "Nerv o‘tkazuvchanligi tiklanadi",
+            "Bosim miqdoridan qat’i nazar"
+          ],
+          [
+            "12 soat",
+            "Nerv o‘tkazuvchanligi tiklanmaydi",
+            "12 soat ichida 68%, keyin 8% tiklangan"
+          ],
+          [
+            "Bolalar",
+            "Bosimga chidamlilik yuqoriroq",
+            "24 soatda ham tiklanish mumkin"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega aniq soat belgilash qiyin? 2) Nega kechikkan fasciotomiya ba’zan zararli bo‘ladi? Doskada: 0–12 soatlik vaqt chizig‘ini chizib, 3, 4, 8 va 12 soatni belgilang. Tipik xato: bu raqamlarni qat’iy chegara deb qabul qilish; manbada tadqiqotlar natijalari bir-biridan farq qiladi."
+    },
+    {
+      "title": "Fasciotomiya bahsi: foyda va xavf",
+      "bullets": [
+        {
+          "text": "Erta fasciotomiya mushakning keyingi shikastlanishini oldini olishi mumkin; ba’zi mualliflar uni tavsiya qiladi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fasciotomiya yopiq jarohatni ochiq qiladi: infeksiya, sepsis va amputatsiya xavfi oshadi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oyoq periferik pulslari paypaslanmasa, jarrohlik dekompressiyasi zarur; bunda bahs yo‘q.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Fasciotomiya: foyda va xavf",
+        "nodes": [],
+        "header": [
+          "Jihat",
+          "Foyda",
+          "Xavf"
+        ],
+        "rows": [
+          [
+            "Vaqt",
+            "Erta qilinsa mushak shikasti kamayadi",
+            "Kechiksa natija yomonlashadi"
+          ],
+          [
+            "Jarohat",
+            "To‘qima bosimi pasayadi",
+            "Yopiq jarohat ochiq bo‘lib qoladi"
+          ],
+          [
+            "Asorat",
+            "Oyoq va funksiya saqlanishi mumkin",
+            "Infeksiya, sepsis, amputatsiya"
+          ],
+          [
+            "Puls yo‘q",
+            "Dekompressiya shart",
+            "Bahs yo‘q"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: 1) Nega ezilish sindromida fasciotomiya bahsli, sinish bilan bog‘liq ACSda esa boshqacha? 2) Qaysi holatda dekompressiya shubhasiz zarur? Doskaga chizing: ikki ustunli «foyda — xavf» jadvali va pulssiz oyoq uchun alohida strelka. Tipik xato: fasciotomiyani ezilish sindromida har doim foydali deb o‘ylash. Manbada natijani yaxshilashi aniq isbotlanmagan, kechiktirilgani esa yomon oqibat bilan bog‘langan. Ezilish jarohatida ayrim mualliflar fasciotomiya emas, erta debridman tavsiya qiladi."
+    },
+    {
+      "title": "Dastlabki davolash: suyuqlik terapiyasi",
+      "bullets": [
+        {
+          "text": "Vena ichiga suyuqlik ozod qilishdan oldin boshlanadi; tarkibida kaliy bo‘lgan eritmalardan qochiladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqsad: kattalarda siydik kamida 300 ml/soat, kamida dastlabki 24 soat davomida.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natriy bikarbonat va mannitol faqat ko‘rsatma bo‘lsa beriladi; ular tasodifiy sinovda faqat suyuqlik bilan solishtirilmagan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Suyuqlik terapiyasi ketma-ketligi",
+        "nodes": [
+          "Ozod qilishdan oldin vena yo‘li",
+          "Kaliysiz eritma boshlanadi",
+          "Siydik ≥300 ml/soat",
+          "Kamida 24 soat davom etadi",
+          "Bikarbonat, mannitol: ko‘rsatma"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega ozod qilishdan oldin suyuqlik boshlash muhim (ishemiya-reperfuziya)? 2) Nega kaliyli eritmalardan qochiladi? Doskaga chizing: suyuqlik, siydik hajmi va 24 soat zanjiri. Tipik xato: bikarbonat va mannitolni hamma bemorga majburiy berish. Manbada ular faqat asidoz tuzatish yoki siydik hajmini saqlash uchun zarur bo‘lganda tavsiya etilgan."
+    },
+    {
+      "title": "Turniket va amputatsiya qarori",
+      "bullets": [
+        {
+          "text": "Og‘ir ezilish jarohatida prehospital turniket kuchli tavsiya etiladi, ammo bu masala hali bahsli.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Amputatsiya odatda quyidagi uch guruhdan kamida ikkitasida omil bo‘lganda qilinadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MESS (Mangled Extremity Severity Score) yordam beradi; u asosan pastki oyoq jarohatiga tayangan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Amputatsiya omillari (≥2 guruh)",
+        "nodes": [],
+        "header": [
+          "Guruh",
+          "Omil"
+        ],
+        "rows": [
+          [
+            "Umumiy bemor",
+            "Nazoratsiz gemodinamik beqarorlik"
+          ],
+          [
+            "Oyoq xususiyati",
+            "Keng birga kelgan shikast; uzoq ishemiya"
+          ],
+          [
+            "Shikast mexanizmi",
+            "To‘mtoq arteriya travmasi; ezilish jarohati"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: 1) Nima uchun bitta omil amputatsiyaga yetarli emas? 2) Nega shkalalar yuqori oyoqda ishonchsiz? Doskaga chizing: uch guruh va «≥2» qoidasi. Tipik xato: turniketni ezilish sindromining oldini oluvchi umumiy usul deb o‘ylash. Manbada ozod qilishdan oldin keng tavsiya etilmaydi, lekin og‘ir jarohatda prehospital qo‘llash kuchli tavsiya etiladi va masala bahsli. MESS bilan Mangled Extremity Syndrome Index ni aralashtirmang."
+    },
+    {
+      "title": "Tezkor savol 4: davolash taktikasi",
+      "bullets": [
+        {
+          "text": "Suyuqlik: vena ichiga imkon qadar erta (ideal holda 6 soat ichida), ajratib olishdan oldin ham boshlanadi. Kaliyli eritmalardan qoching; kattalarda diurez kamida 300 mL/soat bo‘lsin.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Turniket ezilishda hali bahsli. Fasciotomiya foydasi aniq isbotlanmagan, lekin oyoqda tomir urishi paypaslanmasa, jarrohlik dekompressiya shart.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Amputatsiya: gemodinamika nazoratsiz, oyoq jarohati keng yoki ishemiya uzoq bo‘lsa o‘ylanadi. Odatda kamida ikki guruh omili birga bo‘ladi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: kattalarda infuziya paytida minimal diurez qancha bo‘lishi kerak va kamida necha soat davom ettiriladi?",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Javob: kamida 300 mL/soat, kamida dastlabki 24 soat. Muhokama: 1) nega suyuqlik ajratib olishdan oldin boshlanadi? 2) turniket va fasciotomiya nega bahsli? Doskada: davolash bosqichlari zanjirini chizdiring (voqea joyi → suyuqlik → asoratlar → jarrohlik). Tipik xato: kaliyli eritma tanlash yoki fasciotomiyani har doim majburiy deb o‘ylash."
+    },
+    {
+      "title": "Asoratlar va prognoz",
+      "bullets": [
+        {
+          "text": "Mushak zarari uch vaqtda bo‘ladi: ezilish paytida, ishemiya davrida va reperfuziya vaqtida.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Giperkaliemiya va o‘tkir buyrak yetishmovchiligi (ARF) xavfli; buyrak almashtirish terapiyasi bo‘lsa, ARF natijasi yaxshi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘tkazib yuborilgan kompartment sindromi shifokorlarga qarshi da’volarning eng ko‘p sabablaridan biri.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Asoratlar va prognoz",
+        "nodes": [],
+        "header": [
+          "Guruh",
+          "Misollar"
+        ],
+        "rows": [
+          [
+            "Asoratlar",
+            "ARF, giperkaliemiya, aritmiya, atsidoz"
+          ],
+          [
+            "ARF bashorati",
+            "Qamalish vaqti, kreatinkinaza (CK) darajasi"
+          ],
+          [
+            "O‘lim sababi",
+            "Gipovolemiya, giperkaliemiya; AKI yetakchi"
+          ],
+          [
+            "Xavf",
+            "O‘tkazib yuborilgan kompartment sindromi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) nega ARF bashoratchilari orasida qamalish vaqti bor? 2) sud-tibbiy ekspertizada o‘tkazib yuborilgan kompartment sindromi qanday ahamiyatga ega? Doskada: ezilish → ishemiya → reperfuziya → asoratlar sxemasini chizdiring. Tipik xato: AKI (o‘tkir buyrak shikastlanishi) va ARF ni butunlay boshqa holat deb o‘ylash; manbada o‘lim sababi sifatida AKI yetakchi deyilgan."
+    },
+    {
+      "title": "Haqiqiy ofatlardan tajriba: Kobe, Bam, Haiti",
+      "bullets": [
+        {
+          "text": "Kobe modeli dala va kasalxonada baholab, og‘ir CS xavfi yuqori qurbonlarni ajratishga yordam beradi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bam: ARF bilan bemorlar uzoq qamalgan; erta ajratib olish va tez gospitalizatsiya hal qiluvchi bo‘ldi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Haitida buyrak yetishmovchiligi bor bemorlarning yarmidan ko‘pi buyrak almashtirish terapiyasiga muhtoj bo‘lgan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Uch ofat solishtiruvi",
+        "nodes": [],
+        "header": [
+          "Ofat",
+          "Ma’lumot",
+          "Xulosa"
+        ],
+        "rows": [
+          [
+            "1995, Kobe",
+            "372 ta ezilish bemori",
+            "Ikki bosqichli triaj modeli"
+          ],
+          [
+            "2003, Bam",
+            "2086 ta bemor (10 kun)",
+            "Uzoq qamalish — ARF ko‘proq"
+          ],
+          [
+            "Haiti",
+            "CS — 25% gacha qurbon",
+            "CS-ARF: 0,5–25%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Kobe triaj modelini cheklangan resurslarda qanday qo‘llash mumkin? 2) Haitida ARF ulushi nega 0,5–25% oralig‘ida o‘zgargan (zilzila kuchi, vayronada qolish vaqti)? Doskada: uch ofat uchun qamalish vaqti → ARF → o‘lim bog‘liqligini chizing. Tipik xato: 25% ni ARF ulushi deb o‘ylash; u CS ko‘rgan qurbonlar ulushi, CS-ARF esa 0,5–25%."
+    },
+    {
+      "title": "Voqea tahlili 5: ommaviy zilzila jabrlanuvchilari",
+      "bullets": [
+        {
+          "text": "Vaziyat: Bam (Eron, 2003) zilzilasidan keyingi dastlabki 10 kunda jarohat bilan yotqizilgan 2 086 bemorning ma‘lumotlar bazasi tahlil qilingan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Buyrak o‘tkir yetishmovchiligi (ARF) rivojlangan bemorlar vayrona ostida uzoqroq qolgan, kechroq va uzoqroq yotqizilgan. Ularda asorat va o‘lim ko‘proq bo‘lgan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "ARF xavfini oshiradigan omillar: vayronada qolgan vaqt, bir nechta ezilish shikasti, erkak jinsi, infeksiya va kreatinkinaza darajasi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: erta ozod qilish va triaj nega muhim? Kobe (1995) tajribasida 372 bemor asosida tuzilgan modellar yuqori xavfli jabrlanuvchini ajratishga yordam bergan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6–7 daq. Muhokama: 1) Resurs cheklangan bo‘lsa, ozod qilish va yotqizish tartibini nima belgilaydi? 2) Vayrona ostida qolish vaqti sud-tibbiy ekspertizada o‘lim sababini baholashga qanday ta‘sir qiladi? Doskada chizish: ‘vayrona ostida qolish vaqti → ARF → o‘lim’ zanjirini va uning yoniga xavf omillarini chizing. Tipik xato: talabalar triajni faqat tashqi jarohat og‘irligiga qarab o‘tkazadi, vaholanki ezilish sindromi dastlab yashirin bo‘lishi mumkin."
+    },
+    {
+      "title": "Kelajak yo‘nalishlari: diagnostika va yangi davolar",
+      "bullets": [
+        {
+          "text": "Yangi diagnostika g‘oyalari: yallig‘lanish mediatorlarini marker sifatida ishlatish, ultrafiltratsiya kateteri, yaqin infraqizil spektroskopiya, radiochastotali implantlar.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hayvon modellarida (asosan kalamush) yallig‘lanishga va oksidlanishga qarshi dorilar, ruh xelatorlari, natriy nitrit, CO bilan boyitilgan eritrotsitlar, deksametazon va anizodamin sinalgan.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu davolar klinikada hali yetarlicha o‘rganilmagan va xavfsizligi tekshirilishi kerak. Maqsad — ularni jabrlanuvchini ozod qilishdan oldin yoki paytida qo‘llash.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ofat tibbiyoti standartlari: JSST va Xalqaro Qizil Xoch qo‘mitasi shoshilinch tibbiy guruhlar (EMT) tasnifi va jarohatlarni davolash yo‘riqnomasini tuzgan. Yagona triaj yo‘q.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5–6 daq. Muhokama: 1) Hayvon modelida samarali dori nega odamda darhol qo‘llanmaydi? 2) Yangi diagnostik usullar bugungi qaysi kamchilikni to‘ldirishi kerak? Doskada chizish: ‘hayvon modeli → klinik tadqiqot → dala sharoitida qo‘llash’ yo‘lini chizing. Tipik xato: kalamush modelidagi natijani odamda isbotlangan davo deb hisoblash."
+    },
+    {
+      "title": "Xulosa va asosiy xulosalar",
+      "bullets": [
+        {
+          "text": "Ezilish shikasti (CI) — to‘qima jarohati; tizimli belgilar qo‘shilsa, ezilish sindromi (CS) deyiladi. Asosiy mexanizm: uzoq ishemiya va undan keyingi reperfuziya jarohati.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Davolashni zudlik bilan boshlash ofatdagi CS o‘limini kamaytiradigan eng muhim omil. Suyuqlik berish imkon bo‘lsa, ozod qilishdan oldin boshlanadi.",
+          "source": {
+            "author": "Usuda et al.",
+            "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+            "page": "PMID 37653520"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘tkir kompartment sindromi (ACS) tashxisida 5P belgilari ishonchsiz, bosim chegarasi bahsli. Klinika va bosimni birga olganda ham yagona standart mezon yo‘q.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shikast mexanizmini aniq tasniflash (yumshoq to‘qima, tomir, suyak sinishi) davoni belgilaydi. Ezilishda fasciotomiya o‘rni bahsli, erta debridman ko‘rib chiqiladi.",
+          "source": {
+            "author": "Guo et al.",
+            "title": "Acute compartment syndrome, Medicine",
+            "page": "PMID 31277147"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) CI va CS farqini o‘z so‘zingiz bilan ayting. 2) ACS tashxisida nima uchun bitta belgi yoki bitta bosim ko‘rsatkichiga tayanib bo‘lmaydi? Doskada chizish: mavzu bo‘yicha ‘CI → ishemiya → reperfuziya → CS → asoratlar’ umumiy zanjirini chizing. Tipik xato: bosim farqi chegarasi manbalarda turlicha berilgan (Usuda: <20 mm Hg, Guo: <30 mm Hg) — bitta raqamni mutlaq deb o‘rgatmang; CI ≠ CS ekanini ta‘kidlang."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Zilzilada vayron bo‘lgan binodan chiqarilgan bemorda oyoqda faqat mahalliy to‘qima shikasti bor, tizimli belgilar yo‘q. Bu holatga qaysi atama mos keladi?",
+      "options": [
+        "Siqilish sindromi (crush syndrome, CS) – tizimli belgilar bilan",
+        "Siqilish shikasti (crush injury, CI) – mahalliy to‘qima shikasti",
+        "Ishemiya-reperfuziya sindromi – umumiy yallig‘lanish bilan",
+        "Rabdomiolizdan kelib chiqqan o‘tkir buyrak yetishmovchiligi"
+      ],
+      "correct_index": 1,
+      "explanation": "Manbaga ko‘ra «siqilish shikasti» to‘qima shikastini bildiradi. «Siqilish sindromi» esa tizimli belgilar bilan kechadigan siqilish shikastlari uchun ishlatiladi. Bemorda tizimli belgilar yo‘q, shuning uchun CI to‘g‘ri atama.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Patolog London bombardimonida bir necha soat ko‘milib qolganlar otopsiyasida mushak nekrozi bilan buyrak kanalchalaridagi qo‘ng‘ir pigment bog‘liqligini aniqladi. Bu qaysi tarixiy tavsifga mos?",
+      "options": [
+        "Messina zilzilasi kuzatuvlari, 1901-yil",
+        "Kobe zilzilasi tahlili, 1995-yil",
+        "Bywaters va hamkasblari tavsifi, 1941-yil",
+        "Bam zilzilasi tadqiqoti, 2003-yil"
+      ],
+      "correct_index": 2,
+      "explanation": "Bywaters va hamkasblari 1941-yilda London bombardimonlari qurbonlarida mushak nekrozi va buyrak kanalchalaridagi qo‘ng‘ir pigment o‘rtasidagi bog‘liqlikni tasvirlagan. Sindrom birinchi marta 1901-yilgi Messina zilzilasida kuzatilgan, ammo bu pigment bog‘liqligining tavsifi emas.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Zilzilaning sud-tibbiy tahlilida ekspert sistematik sharhga tayanib, omon qolganlar orasida siqilish sindromining uchrash chastotasini baholamoqchi. Qaysi ko‘rsatkich to‘g‘ri?",
+      "options": [
+        "Taxminan 2–15 foiz oralig‘ida",
+        "Taxminan 48 foiz atrofida",
+        "Taxminan 10,6 foiz atrofida",
+        "Taxminan 0,5–25 foiz oralig‘ida"
+      ],
+      "correct_index": 0,
+      "explanation": "Sistematik sharhga ko‘ra zilzila omon qolganlarida CS uchrashi 2–15 foiz. 48 foiz — o‘lim ko‘rsatkichining yuqori chegarasi, 10,6 foiz — travmatik yurak to‘xtashidagi tirik qolish, 0,5–25 foiz — Gaitidagi CS bilan bog‘liq o‘tkir buyrak yetishmovchiligi uchrashi.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Yuqori energiyali avtohalokatdan keyin chanoq halqasi uzilgan, chanoq qon tomirlari shikastlangan bemorda yuqori o‘limning asosiy sababi nima?",
+      "options": [
+        "Buyrak kanalchalarida miyoglobin to‘planishi",
+        "Yuqori ko‘krakdagi traxeyaning uzilishi",
+        "Ichak tutqichining (mezenteriya) yirtilishi",
+        "Chanoqdan qon ketishi sababli shok"
+      ],
+      "correct_index": 3,
+      "explanation": "Chanoq qon tomir shikastlari odatda yuqori energiyali travmadan bo‘ladi, chanoq halqasi uzilishi bilan birga keladi. Yuqori o‘lim chanoqdagi qon ketishidan kelib chiqqan shok bilan bog‘liq. Erta ko‘p qatlamli kompyuter tomografiyasi (CT) va tezkor davo holatni o‘zgartirishi mumkin.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Og‘ir qorin siqilish shikastida ichak tutqichining (mezenteriya) yirtilishi qaysi xavfli holatga olib kelishi mumkin?",
+      "options": [
+        "Faqat teri osti gematomasi paydo bo‘lishi",
+        "Yuqori nafas yo‘lining traxeya uzilishi",
+        "Gemorragik shok va ko‘p a’zo yetishmovchiligi",
+        "Faqat mushak kompartment sindromi rivojlanishi"
+      ],
+      "correct_index": 2,
+      "explanation": "Manbada mezenterial yirtilish kuchli qon ketishga, bu esa gemorragik shok va ko‘p a’zo yetishmovchiligiga olib kelishi mumkinligi aytilgan. Traxeya uzilishi esa yuqori ko‘krak siqilish shikastlariga xos.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Zilziladan keyin qulagan bino ostida bir necha soat qolgan, oyog‘i ezilgan shaxs hali ozod qilinmagan. Birinchi navbatda qaysi tadbir tavsiya etiladi?",
+      "options": [
+        "Ozod qilishdan oldin kaliysiz eritmani venaga yuborish",
+        "Infuziyani kasalxonaga yetkazilgandan keyin boshlash",
+        "Ozod qilingach kaliyli eritma bilan infuziya boshlash",
+        "Suyuqlik yuborishni ozod etilgach bir sutkaga kechiktirish"
+      ],
+      "correct_index": 0,
+      "explanation": "Ezilish sindromida erta suyuqlik berish muhim. Uni ozod qilishdan oldin boshlash va kaliyli eritmalardan qochish tavsiya etiladi. Ozod qilingach giperkaliemiya xavfi ortadi.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Mushak bo‘limida shish va qon ketishi tufayli to‘qima suyuqligi bosimi mushak va nerv kapillyar perfuziya bosimidan oshdi. Bu qanday oqibatga olib keladi?",
+      "options": [
+        "Qon oqimi kuchayib, mushak to‘qimasi tezda to‘liq tiklanadi",
+        "To‘qimalar ishemiyaga uchrab, kompartment sindromi belgilari boshlanadi",
+        "Faqat teri ustki qatlami shikastlanadi, mushak esa sog‘lom qoladi",
+        "Suyuqlik bosimi o‘z-o‘zidan pasayib, perfuziya yaxshilanadi"
+      ],
+      "correct_index": 1,
+      "explanation": "Fassial qobiq ichida bosim perfuziya bosimidan oshsa, mushak va nerv to‘qimalari ishemik bo‘ladi. Skelet mushagi kompartment sindromining belgilari paydo bo‘ladi.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Uzoq ezilgan oyoq ozod qilindi va ishemik mushakka qon qayta oqdi. Mushak shikastini kuchaytiruvchi, birinchi kiradigan hujayralar qaysi?",
+      "options": [
+        "Limfotsitlar — ular birinchi bo‘lib mushakka kiradi",
+        "Trombotsitlar — ular birinchi bo‘lib mushakka kiradi",
+        "Neytrofillar — ular birinchi bo‘lib mushakka kiradi",
+        "Eritrotsitlar — ular birinchi bo‘lib mushakka kiradi"
+      ],
+      "correct_index": 2,
+      "explanation": "Ishemik mushakka qon qayta kirganda darhol yallig‘lanish javobi boshlanadi. Neytrofillar birinchi infiltratsiya qilib, mushak shikastini kuchaytiradi (ishemiya-reperfuziya shikasti).",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Ezilish sindromi bemorida shikastlangan mushakdan ko‘p mioglobin qonga chiqdi. Buyrak kanalchalarida nima yuz beradi?",
+      "options": [
+        "Mioglobin kanalchalar hujayralarini himoya qilib, ishini yaxshilaydi",
+        "Mioglobin faqat qon tomirida qolib, buyrak kanalchalariga o‘tmaydi",
+        "Mioglobin buyrak koptokchalarida qon ivishini to‘xtatib qo‘yadi",
+        "Mioglobin kanalchalarda to‘planib, temir va oksidlovchi stress bilan buzadi"
+      ],
+      "correct_index": 3,
+      "explanation": "Shikastlangan mushakdan ajralgan mioglobin buyrak kanalchalarida to‘planib, ularning ishini buzadi. Temir miqdorining oshishi va oksidlovchi stress kanalchalarni to‘g‘ridan-to‘g‘ri zararlaydi. Bu o‘tkir buyrak shikasti (AKI) asosidir.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Boldir sinishidan keyin bemorda pulsizlik va falaj aniqlandi. Manbaga ko‘ra, 5P belgilarining bu qismi odatda nimani bildiradi?",
+      "options": [
+        "ACS ning eng erta va osonlik bilan qaytadigan bosqichi",
+        "Mushak nekrozini bildiruvchi eng og‘ir, qaytmas bosqich",
+        "Faqat nerv qisilishini bildiruvchi, mushak sog‘lom bosqich",
+        "Bemor bezovtaligidan kelib chiqqan yolg‘on, ahamiyatsiz belgilar"
+      ],
+      "correct_index": 1,
+      "explanation": "5P (og‘riq, oqarish, paresteziya, falaj, pulsizlik) ishonchsiz mezon. Bu belgilar paydo bo‘lishi odatda mushak nekrozini va ACS ning eng og‘ir, qaytmas bosqichini bildiradi.",
+      "source": {
+        "author": "Guo et al.",
+        "title": "Acute compartment syndrome, Medicine",
+        "page": "PMID 31277147"
+      }
+    },
+    {
+      "question": "Hushsiz holatdagi bemorda 5P belgilariga tayanishning asosiy cheklovi qaysi?",
+      "options": [
+        "Bu belgilar faqat bolalarda uchraydi, kattalarda uchramaydi",
+        "Barcha 5P belgilari bosim o‘lchagich bilan to‘liq almashtiriladi",
+        "Bemor og‘riq va sezgi haqida fikr-mulohaza bera olmaydi",
+        "Bu belgilar kasallikning juda erta bosqichida yo‘qolib ketadi"
+      ],
+      "correct_index": 2,
+      "explanation": "5P belgilari (og‘riq, rangsizlik, parestezi, falaj, pulssizlik) hushsiz yoki sezgisiz bemorlarda foydasiz, chunki ular fikr-mulohaza bera olmaydi. Bu belgilar ko‘pincha kechki, qaytmas bosqichni bildiradi. Ular arterial ishemiya belgisi ham bo‘lishi mumkin. Shuning uchun klinik tekshiruv ACS ni tasdiqlashdan ko‘ra istisno qilishda yaxshiroq.",
+      "source": {
+        "author": "Guo et al.",
+        "title": "Acute compartment syndrome, Medicine",
+        "page": "PMID 31277147"
+      }
+    },
+    {
+      "question": "Whitesides igna manometri va fitil (wick) kateteri kabi invaziv qurilmalarning asosiy kamchiligi nima?",
+      "options": [
+        "Mushak bo‘lakchalari va qon laxtalari bilan tiqilib qolishi",
+        "Faqat hushyor bemorlarda ishlashi va bolalarda qo‘llanmasligi",
+        "Bosimni faqat teri yuzasidan, ignasiz o‘lchashga asoslanishi",
+        "Natijani faqat bir necha kundan keyin berishi va qimmatligi"
+      ],
+      "correct_index": 0,
+      "explanation": "Manbada Whitesides igna manometri, slit va wick kateterlarining kamchiligi shundaki, ular mushak bo‘laklari va qon laxtalari bilan osongina tiqilib qoladi. O‘lchash natijasiga bemor holati, o‘lchash joyi va igna uchidagi to‘qima ham ta’sir qiladi. Boshqa variantlar manbada keltirilmagan.",
+      "source": {
+        "author": "Guo et al.",
+        "title": "Acute compartment syndrome, Medicine",
+        "page": "PMID 31277147"
+      }
+    },
+    {
+      "question": "Boldir diafizi sinishi bor bemorda klinika noaniq, bitta o‘lchovda kompartment bosimi yuqori chiqdi. Qaysi xulosa to‘g‘ri?",
+      "options": [
+        "Yuqori bosim har doim ACS ni isbotlaydi, darhol operatsiya shart",
+        "Bosim ko‘rsatkichi diagnozda umuman e’tiborga olinmasligi kerak",
+        "Bosim tushguncha kuzatuvsiz fasciotomiyani kechiktirish zarur",
+        "Yuqori bosim o‘zi ACS emas; vaqt omili va klinika ham hisobga olinadi"
+      ],
+      "correct_index": 3,
+      "explanation": "Boldir diafizi sinishida yuqori bosim ko‘pincha uchraydi, lekin u ko‘p hollarda ACS borligini bildirmaydi. Bitta o‘lchov faqat lahzalik perfuziyani aks ettiradi. Shuning uchun diagnozda vaqt omili, klinik ko‘rinish va bosim birga baholanadi. Bosim o‘lchash noaniq klinikada tasdiqlash yoki istisno qilish uchun foydali.",
+      "source": {
+        "author": "Guo et al.",
+        "title": "Acute compartment syndrome, Medicine",
+        "page": "PMID 31277147"
+      }
+    },
+    {
+      "question": "Sheridan va Matsen kuzatuvida 12 soat ichida davolangan 22 bemorning necha foizida oyoq funksiyasi tiklandi?",
+      "options": [
+        "8%",
+        "68%",
+        "20%",
+        "90%"
+      ],
+      "correct_index": 1,
+      "explanation": "Sheridan va Matsen: 12 soat ichida davolanganlarning 68 foizida pastki oyoq funksiyasi normallashgan, 12 soatdan keyin davolanganlarda esa atigi 8 foizda. 20% va 90% qiymatlari Labbe bo‘yicha ishemiya 3 va 5 soat bo‘lgandagi mushak nekrozi darajasiga tegishli.",
+      "source": {
+        "author": "Guo et al.",
+        "title": "Acute compartment syndrome, Medicine",
+        "page": "PMID 31277147"
+      }
+    },
+    {
+      "question": "Boldir sinishi bor bemorda 6 soatdan keyin sinish joyida tiniq suyuqlikli pufakcha paydo bo‘ldi. Qaysi yondashuv to‘g‘ri?",
+      "options": [
+        "Pufakcha ko‘ringanidan so‘ng darhol fasciotomiya qilish shart",
+        "Pufakchani oddiy teri infeksiyasi deb hisoblab, bosimni e’tiborsiz qoldirish",
+        "Pufakchani bosim bo‘shalishi belgisi deb hisoblab, fasciotomiya zaruratini ehtiyotkor baholash",
+        "Sinish holatida ACS bo‘lmaydi, shuning uchun kuzatuvni to‘xtatish"
+      ],
+      "correct_index": 2,
+      "explanation": "Mualliflar farazi: sinish pufakchasi kompartmentdagi g‘ayritabiiy yuqori bosimni bo‘shatish mexanizmi bo‘lishi mumkin. Sinishda kompartment tuzilmasi buzilmaydi, siqilishdan farqli ravishda hujayra nobud bo‘lishi kam uchraydi. Shuning uchun sinish bilan bog‘liq holatlarda fasciotomiya zarurati ehtiyotkorlik bilan baholanishi kerak. Faraz laboratoriya natijalari bilan hali yetarli tasdiqlanmagan.",
+      "source": {
+        "author": "Guo et al.",
+        "title": "Acute compartment syndrome, Medicine",
+        "page": "PMID 31277147"
+      }
+    },
+    {
+      "question": "Ezilgan oyoqda periferik pulslar paypaslanmayapti. Bu holatda qanday davo choraси zarur deb hisoblanadi?",
+      "options": [
+        "Faqat muz bilan davolash va kuzatish",
+        "Jarrohlik yo‘li bilan dekompressiya qilish",
+        "Faqat natriy bikarbonat yuborish",
+        "Faqat gipербарik kislorodni qo‘llash"
+      ],
+      "correct_index": 1,
+      "explanation": "Fasciotomiya ezilish sindromida bahsli. Biroq oyoq-qo‘l pulslari paypaslanmasa, jarrohlik dekompressiyasi zarurligi haqida munozara yo‘q. Muz, bikarbonat va gipербарik kislorod bu holatda jarrohlik o‘rnini bosmaydi.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Qutqaruvchilar vayrona ostidagi jabrlanuvchini hali chiqarmagan. Suyuqlik terapiyasi bo‘yicha qaysi harakat tavsiya etiladi?",
+      "options": [
+        "Kaliy saqlovchi eritma bilan infuziyani boshlash",
+        "Suyuqlikni faqat kasalxonada boshlash",
+        "Venaga suyuqlikni ajratib olishdan oldin boshlash",
+        "Siydik chiqishini ataylab kamaytirish"
+      ],
+      "correct_index": 2,
+      "explanation": "Erta va faol suyuqlik berish, ideal holda jabrlanuvchi ajratib olinishidan oldin boshlanadi. Kaliy saqlovchi eritmalardan qochish kerak, chunki giperkaliemiya xavfi bor.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Oyoq-qo‘lni saqlab qolish va amputatsiya o‘rtasida tanlashda amputatsiya odatda qachon amalga oshiriladi?",
+      "options": [
+        "Kamida ikkita kichik guruh omillari mavjud bo‘lganda",
+        "Faqat bitta kichik guruh omili aniqlanganda",
+        "Faqat jarohat mexanizmi asosida qaror qilinganda",
+        "Uchala guruh omillari to‘liq bo‘lgandagina"
+      ],
+      "correct_index": 0,
+      "explanation": "Omillar uch guruhga bo‘linadi: umumiy bemor omillari, oyoq-qo‘lga xos omillar va jarohat mexanizmi omillari. Amputatsiya odatda kamida ikki guruh omillari bo‘lganda amalga oshiriladi.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Ezilish jabrlanuvchisiga yetarli suyuqlik berilmoqda, lekin diurez soatiga 300 mL dan past. Qaysi chora qo‘shiladi?",
+      "options": [
+        "Infuziyani to‘xtatib, kuzatuvga o‘tish",
+        "Kaliy saqlovchi eritmani qo‘shib yuborish",
+        "Natriy bikarbonatni majburiy berishni boshlash",
+        "Mannitolni siydik hajmini ushlash uchun qo‘shish"
+      ],
+      "correct_index": 3,
+      "explanation": "Mannitol faqat yetarli suyuqlikka qaramay kattalarda siydik chiqishini kamida 300 mL/soat ushlab turish uchun beriladi. Bikarbonat esa faqat tizimli atsidozni to‘g‘rilash zarur bo‘lganda qo‘llanadi.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "question": "Bam zilzilasi tajribasiga ko‘ra, o‘tkir buyrak yetishmovchiligi (OBY) va o‘limni oldini olishda nima hal qiluvchi bo‘ldi?",
+      "options": [
+        "Kech bo‘lsa ham jarrohlik amaliyotlarini ko‘paytirish",
+        "Bemorlarni imkon qadar kechroq yotqizish",
+        "Erta ajratib olish va tez kasalxonaga yotqizish",
+        "Yordamni faqat yosh bemorlar bilan cheklash"
+      ],
+      "correct_index": 2,
+      "explanation": "Bam tahlilida OBY bo‘lgan bemorlar uzoqroq qamalib qolgan, kechroq yotqizilgan va ko‘proq asoratga uchragan. Erta ajratib olish va tez ko‘p tarmoqli yordam hal qiluvchi bo‘ldi.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Tarixiy fakt: Bywaters va hamkasblari 1941-yilda London bombardimonida bir necha soat vayrona ostida qolganlar o‘limidan keyin buyrak kanalchalarida qo‘ng‘ir pigment topdi. Ular uni mushak nekrozi bilan bog‘ladi. Bu sud-tibbiy yorishda ham muhim kuzatuv. Sindrom ilk bor 1901-yilgi Messina zilzilasida kuzatilgan.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli: “Jarohat – to‘qima, sindrom – butun tana”. Crush injury (CI) faqat to‘qima shikastini bildiradi. Crush syndrome (CS) esa ezilish jarohatining tizimli belgilari bilan kechishidir. Ikkalasini ekspertiza xulosasida aralashtirmang.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "text": "Hodisa tahlili: Bam (Eron, 2003) zilzilasida 2086 bemor tahlil qilingan. O‘tkir buyrak yetishmovchiligi bor bemorlar vayrona ostida uzoqroq qolgan, kechroq yotqizilgan va ko‘proq asorat hamda o‘lim kuzatilgan. Sud-tibbiy xulosa: o‘lim sababini baholashda vayrona ostida qolish davomiyligini hisobga oling.",
+      "source": {
+        "author": "Usuda et al.",
+        "title": "Crush syndrome: a review for prehospital providers and emergency clinicians, Journal of Translational Medicine",
+        "page": "PMID 37653520"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli: 5P belgilari – og‘riq, oqarish, paresteziya, falaj, pulssizlik (pain, pallor, paresthesias, paralysis, pulselessness). Ammo bu belgilar ishonchsiz. Ko‘pincha ular mushak nekrozi allaqachon boshlangan kech bosqichni ko‘rsatadi. Ongi pasaygan bemorda ularni baholab bo‘lmaydi.",
+      "source": {
+        "author": "Guo et al.",
+        "title": "Acute compartment syndrome, Medicine",
+        "page": "PMID 31277147"
+      }
+    },
+    {
+      "text": "Qiziqarli kuzatuv: yuqori energiyali sinishlarda teri pufakchalari 2,9% hollarda uchraydi. Mualliflar farazicha, pufakcha kompartmentdagi bosimni pasaytiruvchi mexanizm bo‘lishi mumkin. Bu faraz laboratoriyada hali isbotlanmagan. Ekspertizada pufakchani faqat teri shikasti deb talqin qilishga shoshilmang.",
+      "source": {
+        "author": "Guo et al.",
+        "title": "Acute compartment syndrome, Medicine",
+        "page": "PMID 31277147"
+      }
+    }
+  ]
+}

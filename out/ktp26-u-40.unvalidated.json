@@ -1,0 +1,2133 @@
+{
+  "topic": "Immunohistokimyoviy tekshiruvning asosiy tamoyillari",
+  "slides": [
+    {
+      "title": "Mavzu va dars maqsadi",
+      "bullets": [
+        {
+          "text": "Immunohistokimyo (IHK) to‘qima va hujayra antigenlarini qidiradi: aminokislota, oqsil, infeksion agent va aniq hujayra populyatsiyalari. Buning uchun maxsus antikorlar ishlatiladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Abstract; The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gematoksilin-eozin (G-E) bilan odatiy tahlilda aniqlab bo‘lmaydigan differensial tashxislarda IHK qo‘shimcha usul vazifasini bajaradi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Abstract; History"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud-tibbiyotdan misol: travmatik bosh miya jarohati (TBI) o‘limida FOXO3a oqsili 15 ta holatning hammasida musbat, 15 ta nazoratda manfiy chiqqan.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, Abstract; Results"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dars rejasi: usulning tarixi, qo‘llanilishi, cheklovlari, natijani talqin qilish va miqdoriy baholash, so‘ng sud-tibbiy tadqiqot tahlili.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Abstract"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) G-E bo‘yash nimani ko‘rsata oladi va nimani ko‘rsata olmaydi? 2) Sud-tibbiyotda marker aniqlash nimaga kerak bo‘lishi mumkin? Doskada: ikki ustunli jadval chizing, chapda “G-E”, o‘ngda “IHK”, talabalar to‘ldirsin. Tipik xato: IHK G-E o‘rnini bosadi deb o‘ylash. Aslida u qo‘shimcha usul."
+    },
+    {
+      "title": "IHK nima? Hujayralar bilan “suhbat”",
+      "bullets": [
+        {
+          "text": "IHK — to‘qima tarkibiy qismlari (antigenlar)ni maxsus antikorlar bilan aniqlaydigan usullarning umumiy nomi. Antikor bo‘yalish orqali ko‘rinadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: hujayra preparatlarida usul immunositokimyo deyiladi. Ba’zi mualliflar bu atamani to‘qima kesmalariga ham qo‘llaydi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Brandtzaeg fikricha, hujayra markerlarini bo‘yash hujayralar bilan “suhbat” qilishdir. To‘g‘ri antikorlar bilan hujayra kelib chiqishi va tirik organizmdagi vazifasi aniqlanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Brandtzaeg IHKni faqat tavsifiy usul deb atashni noo‘rin hisoblaydi. In vitro va in situ tajribalar in vivo holatning “suratlari” bo‘lib, biotibbiy tadqiqotning tayanchidir.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) “Hujayralar bilan suhbat” iborasi nimani anglatadi? 2) Nega IHKni faqat “bo‘yash” deb atash noto‘g‘ri bo‘lishi mumkin? Doskada: antigen, antikor va ko‘rinadigan bo‘yoq o‘rtasidagi bog‘lanishni oddiy strelkalar bilan chizing. Tipik xato: immunositokimyo va IHKni butunlay bir xil deb olish. Manbada atama ishlatilishi mualliflarga qarab farq qiladi."
+    },
+    {
+      "title": "IHK texnikasining ikki bosqichi",
+      "bullets": [
+        {
+          "text": "1-bosqich: preparat tayyorlash (fiksatsiya, to‘qima ishlovi) va reaksiya bosqichlari.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tartib: antigenni ochish, nospetsifik joy va endogen peroksidazani bloklash, birlamchi antikor.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-bosqich: olingan ekspressiyani talqin qilish va miqdoriy baholash.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "IHK ketma-ketligi",
+        "nodes": [
+          "Fiksatsiya, to‘qima ishlovi",
+          "Antigenni ochish, bloklash",
+          "Birlamchi antikor, deteksiya",
+          "Vizualizatsiya, qarama-bo‘yash",
+          "Talqin va miqdoriy baholash"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qaysi bosqichdagi xato natijani eng ko‘p buzishi mumkin? 2) Nega talqin alohida bosqich hisoblanadi? Doskada: 5 ta tugunli zanjirni talabalar daftariga chizib, har tugun yoniga bitta so‘z bilan maqsadini yozsin. Tipik xato: faqat laboratoriya reaksiyasini IHK deb hisoblash. Manbada talqin va miqdoriy baholash ham texnikaning ikkinchi bosqichi."
+    },
+    {
+      "title": "Tarix: Marrack va Coons dan Nakanegacha",
+      "bullets": [
+        {
+          "text": "Marrack tifo va vabo mikroblariga qarshi reagentlar yaratdi; ularda qizil bo‘yoq biriktirilgan edi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Coons 1940-yillar boshida pnevmokokkka qarshi ftorestseinli antikor bilan antigenni to‘qimada topdi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: Coons usuli floresent mikroskopda, Nakane fermentli usuli oddiy optik mikroskopda ko‘rinadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Vaqt chizig‘i",
+        "nodes": [
+          "Marrack: qizil bo‘yoqli reagent",
+          "Coons: ftorestseinli antikor",
+          "Nakane: fermentli antikor",
+          "1960-yillar: optik mikroskop"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega Coons qizil rang sezgirligini past deb hisobladi? 2) Fermentli belgilash usulni qanday qilib ko‘plab laboratoriyaga yetkazdi? Doskada: Marrack, Coons va Nakane vaqt chizig‘ini chizdiring va har biriga mikroskop turini yozdiring. Tipik xato: talabalar floresent usulni (Coons) fermentli usul (Nakane) bilan aralashtiradi."
+    },
+    {
+      "title": "PAP, APAAP, DAB va kolloid oltin",
+      "bullets": [
+        {
+          "text": "PAP (peroksidaza–antiperoksidaza) va APAAP (ishqoriy fosfataza) — belgilanmagan antikor usullari.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "DAB (diaminobenzidin) — peroksidaza uchun eng ko‘p ishlatiladigan xromogen, elektron zich cho‘kma beradi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kolloid oltin zarrachalari keyinchalik hujayra ichi (subcellular) immunobo‘yash usuliga olib keldi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Usullar va ahamiyati",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Mazmuni",
+          "Ahamiyati"
+        ],
+        "rows": [
+          [
+            "PAP (Sternberger)",
+            "Belgilanmagan antikor, peroksidaza",
+            "Qo‘llanish doirasi sezilarli kengaydi"
+          ],
+          [
+            "APAAP (Mason)",
+            "Belgilanmagan antikor, ishqoriy fosfataza",
+            "Qo‘llanish doirasi sezilarli kengaydi"
+          ],
+          [
+            "DAB",
+            "Peroksidaza xromogeni",
+            "Elektron mikroskopda ferritin o‘rniga"
+          ],
+          [
+            "Kolloid oltin",
+            "Immunobo‘yoq zarrachalari",
+            "Hujayra ichi bo‘yash usuli"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Belgilanmagan antikor usuli nimasi bilan oldingi usullardan farq qiladi? 2) DAB elektron mikroskopiyada nega foydali? Doskada: jadvalni chizib, har bir usulga muallifni yozdiring. APAAP to‘liq nomi: ishqoriy fosfataza–anti-ishqoriy fosfataza. Tipik xato: PAP (peroksidaza) va APAAP (ishqoriy fosfataza) fermentlarini almashtirib yuborish."
+    },
+    {
+      "title": "Antigenni ochish va ABC/LSAB tizimlari",
+      "bullets": [
+        {
+          "text": "Antigenni ochish usuli Huang tomonidan kashf etildi: epitoplar ochilib, antikor bog‘lanishi osonlashdi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hsu: ABC (avidin–biotin–peroksidaza) va LSAB (streptavidin–biotin) ikkilamchi antikor tizimlari.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Formalin–parafin to‘qimada isbotlangach usul kundalik tashxisga kirdi (“jigarrang inqilob”).",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History bo‘limi"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kundalik tashxisga yo‘l",
+        "nodes": [
+          "Antigenni ochish (Huang)",
+          "ABC/LSAB tizimlari (Hsu)",
+          "Formalin–parafinda aniqlash",
+          "Kundalik tashxisga kirdi",
+          "“Jigarrang inqilob”"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Antigenni ochish formalin bilan fiksatsiyalangan to‘qimada nega kerak? 2) Ikkilamchi antikor tizimi nima uchun ishlatiladi? Doskada: jarayon zanjirini chizing. Qo‘shimcha: ABC va LSAB yangi namunalarda ham, fiksatsiyalangan to‘qimada ham qo‘llanishga imkon berdi. Tipik xato: ABC va LSAB ni birlamchi antikor deb o‘ylash."
+    },
+    {
+      "title": "Voqea tahlili: tarix bo‘limi",
+      "bullets": [
+        {
+          "text": "Vaziyat: 1940-yillar boshida Coons pnevmokokk antitanalarini fluorestsein bilan bo‘yab, antigenni ultrabinafsha nurda (ftorestsent mikroskopda) ko‘rdi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1960-yillarda Nakane antitanalarni ferment bilan belgiladi. Reaksiyani oddiy yorug‘lik mikroskopida ko‘rish mumkin bo‘ldi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natijada usul ftorestsent mikroskopli laboratoriyalardan chiqib, ko‘plab tadqiqotchi va patologlarga tarqaldi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: qaysi kashfiyot hal qiluvchi bo‘ldi? Kundalik amaliyotga esa formalinda fiksatsiyalangan, parafinlangan to‘qimada antigenni ko‘rsatish imkoni kirgizdi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, History"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega fermentli belgi ftorestsent belgidan qulay bo‘ldi? 2) Formalin-parafin to‘qimada IHK nega muhim edi? Doskaga: Coons → Nakane → formalin-parafin zanjirini chizdiring. Tipik xato: Coons usulini (fluorestsein) Nakane usuli (ferment) bilan aralashtirish.",
+      "diagram_note": null
+    },
+    {
+      "title": "IHK qo‘llanish sohalari",
+      "bullets": [
+        {
+          "text": "Immunohistokimyo (IHK) o‘smaning genezisi va subtipini aniqlashda yordamchi usul sifatida ishlatiladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Applications and importance"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usul birlamchi o‘choqni, prognostik omillarni va davo ko‘rsatmalarini izlashda ham qo‘llanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Applications and importance"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hujayralar ajratgan tuzilma, organizm va moddalar ham aniqlanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Applications and importance"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "IHK qo‘llanish sohalari",
+        "nodes": [
+          "O‘sma genezisini aniqlash",
+          "Subtiplash (masalan, limfoma)",
+          "Birlamchi o‘choqni aniqlash",
+          "Prognostik omillarni izlash",
+          "Yaxshi/yomon sifatni ajratish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Differensiallanmagan o‘smada IHK nima beradi? 2) Yaxshi va yomon sifatli proliferatsiyani ajratish nega muhim? Doskaga: besh sohani markaziy ’IHK’ atrofida chizdiring. Tipik xato: IHK gematoksilin-eozinni almashtiradi deb o‘ylash; u faqat to‘ldiruvchi usul."
+    },
+    {
+      "title": "Werner tadqiqoti: IHK foydasi",
+      "bullets": [
+        {
+          "text": "Werner tadqiqotida 3760 namuna baholandi; 64% holatda IHK diagnostik maqsadda qo‘llangan.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Applications and importance"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "835 diagnostik holatning 83% ida aniq tashxisga hissa qo‘shdi, noaniq tashxislar 12% ga kamaydi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Applications and importance"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "5% da yordam bermadi: namuna kichik, nekroz keng yoki o‘sma juda differensiallanmagan. Umumiy foyda 95%.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Applications and importance"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "3760 namuna: maqsadlar",
+        "header": [
+          "Maqsad",
+          "Ulushi (3760)"
+        ],
+        "rows": [
+          [
+            "Prognostik omil, proliferatsiya indeksi",
+            "19%"
+          ],
+          [
+            "Mikroorganizm, hujayra, tuzilma aniqlash",
+            "17%"
+          ],
+          [
+            "Diagnostik qo‘llanish",
+            "64%"
+          ],
+          [
+            "835 diagnostik holatda aniq tashxis",
+            "83%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega 83% va 95% bir narsa emas? 2) IHK samarasiz bo‘lishining sabablari qanday? Doskaga: 3760 ni 19/17/64% ga bo‘lgan doira diagrammasini chizdiring. Tipik xato: 83% ni barcha namunalarga nisbatan deb o‘ylash; u faqat 835 diagnostik holatga tegishli."
+    },
+    {
+      "title": "Voqea tahlili: qo‘llanish bo‘limi",
+      "bullets": [
+        {
+          "text": "Vaziyat: biopsiyadagi o‘sma morfologik jihatdan differensiallanmagan, gematoksilin-eozin (G-E) bo‘yog‘i tur haqida javob bermaydi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunohistokimyo (IHK) o‘smaning gistogenezini, turini va birlamchi o‘chog‘ini aniqlaydi, prognostik omillarni va benign/malign o‘sishni ajratadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Werner tahlilida 5% holatda IHK yordam bermadi: namuna juda kichik, nekroz keng yoki o‘sma haddan tashqari differensiallanmagan edi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu vaziyatda IHK qaysi maqsadda qo‘llanadi va qaysi holatlarda natija bermasligi mumkin?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) G-E nega yetarli bo‘lmay qolishi mumkin? 2) IHK 5% holatda nega yordam bermaydi? Doskaga chizish: ikki ustun (IHK yordam beradi / bermaydi) va ularga misollar. Tipik xato: IHK ni mustaqil usul deb o‘ylash. Manbada u G-E ni to‘ldiruvchi (komplementar) usul. Werner ma’lumotiga ko‘ra, 3760 namunaning 64% diagnostik maqsadda tekshirilgan, 95% holatda IHK yordamchi usul bo‘lgan."
+    },
+    {
+      "title": "Tezkor savol 1",
+      "bullets": [
+        {
+          "text": "1-savol: IHK nima? Hujayra surtmalarida qo‘llanganda u qanday ataladi?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: Coons 1940-yillar boshida qanday belgili antikor bilan antigenni ko‘rsatdi? Nakane yangiligi nimani o‘zgartirdi?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol: Diaminobenzidin (DAB) nima uchun muhim? U elektron mikroskopiyada nimani almashtirdi?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-savol: Werner tahlilida 3760 namunaning necha foizi diagnostik maqsadda tekshirilgan va IHK qancha holatda aniq tashxisga hissa qo‘shdi?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Javoblar: 1) IHK — maxsus antikorlar yordamida to‘qima antigenlarini aniqlovchi, bo‘yalish orqali ko‘rinadigan usullar yig‘indisi; hujayra preparatlarida immunositokimyo. 2) Coons — Streptococcus pneumoniae ga qarshi fluorestsein bilan belgilangan antikor, ultrabinafsha nurda ko‘rilgan; Nakane — ferment bilan belgilangan antikorlar, reaksiyani oddiy optik mikroskopda ko‘rish imkoni. 3) DAB — peroksidaza uchun eng ko‘p ishlatiladigan xromogen; elektronzich cho‘kma hosil qilib, ferritinni almashtirgan. 4) Diagnostik maqsad 64%; 835 holatdan 83% da aniq tashxisga hissa, aniqlanmagan tashxislar 12% ga kamaygan. Doskaga chizish: tarixiy vaqt chizig‘i (Coons → Nakane → DAB). Tipik xato: Coons usulini ferment usuli bilan aralashtirish. Coons fluorestsent, Nakane fermentli. Diqqat: Coons ≠ Nakane."
+    },
+    {
+      "title": "Reaksiya bosqichlarining ketma-ketligi",
+      "bullets": [
+        {
+          "text": "Preparat tayyorlangach (fiksatsiya, to‘qimani qayta ishlash), reaksiya bosqichlari belgilangan tartibda o‘tadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiyadan keyin ikkinchi bosqich: hosil bo‘lgan ekspressiyani talqin qilish va miqdoriy baholash.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: reagentlar tartibi qat’iy bo‘lishi shart; ish sxemasi yolg‘on natijalardan saqlaydi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Antigenni ochish nega birinchi turadi? 2) Nega bosqichlar tartibini buzish yolg‘on natija beradi? Doskaga chizish: 5 tugunli zanjir; ‘Nospetsifik/peroksidaza bloki’ ni ikkita alohida bosqichga ajrating, ‘Aniqlash va ochish’ ni ham ikkiga bo‘ling (jami 7 bosqich). Oxirida preparatni yopish (mounting) va saqlash bor. Tipik xato: birlamchi antikorni antigenni ochishdan oldin qo‘yish yoki endogen peroksidazani bloklashni unutish."
+    },
+    {
+      "title": "Fiksatsiya: formalin va spirt",
+      "bullets": [
+        {
+          "text": "Formalin fiksatsiyasi immunreaktivlikni qaytar tarzda kamaytiradi: ba’zi antitelo bog‘lanish joylari yopiladi yoki shikastlanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Epitoplar tiklash usullari bilan ochiladi, ammo aniqlash tizimi baribir kuchli signal beradigan darajada sezgir bo‘lishi shart.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alves tadqiqotida (tuxumdon o‘smasi) etanolda fiksatsiya sitokeratin va vimentinni yaxshiroq ko‘rsatdi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Formalin va etanol: Alves tadqiqoti",
+        "nodes": [],
+        "header": [
+          "Ko‘rsatkich",
+          "Formalin",
+          "Etanol"
+        ],
+        "rows": [
+          [
+            "Asosiy ta’siri",
+            "Epitoplar yopilishi mumkin",
+            "Reaktivlik yuqoriroq topilgan"
+          ],
+          [
+            "Sitokeratin",
+            "Tripsin bilan yaxshiroq",
+            "Yuqori reaktivlik"
+          ],
+          [
+            "Vimentin",
+            "Tripsin zarar yetkazdi",
+            "Yuqori reaktivlik"
+          ],
+          [
+            "Saqlash",
+            "Fiksatsiya kechikishi xavfli",
+            "60 kungacha saqlanganda ham yaxshi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega operatsiya xonasida fiksatorni tanlash muhim? 2) Tripsin bilan ishlov berish nega bir markerga foyda, boshqasiga zarar? Doskada: formalin va etanol uchun ikki ustunli solishtirish jadvalini chizing. Tipik xato: formalin eng yaxshi fiksator deb, barcha epitoplar uchun mos deb o‘ylash."
+    },
+    {
+      "title": "Kesma qalinligi va parafin harorati",
+      "bullets": [
+        {
+          "text": "Blokdan olinadigan kesma qalinligi 3 dan 7 mikrometrgacha (μm) bo‘lgani ma’qul.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3 μm dan yupqa kesma juda zaif bo‘yaladi; 7 μm dan qalin kesma shishadan ajralib ketishi yoki bahoni qiyinlashtirishi mumkin.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kesma oldindan yopishtiruvchi (silan yoki polilizin) surtilgan shishaga qo‘yiladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi! Parafinga joylash odatda 60 °C dan yuqori haroratda antigenlikni buzishi mumkin.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Juda yupqa va juda qalin kesma natijaga qanday ta’sir qiladi? 2) Yuqori harorat nimani buzadi? Doskada: 3 va 7 μm chegaralarini sonlar o‘qida belgilang. Tipik xato: yupqaroq kesma doim aniqroq natija beradi deb o‘ylash; aslida 3 μm dan yupqasi zaif bo‘yaladi."
+    },
+    {
+      "title": "Namuna miqdori va tanlash",
+      "bullets": [
+        {
+          "text": "Kichik namunalar bilan aniq tashxis qo‘yish talab etilmoqda, shuning uchun namuna miqdori muhokama qilinadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘p hollarda bitta blok yetarli, ayniqsa unda o‘sma va atrofdagi parenxima chegarasi bo‘lsa.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Blok qon quyilgan yoki keng nekrozli joylardan uzoqdan olinadi; o‘smadan uzoqdagi vakillik to‘qima ham foydali.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Imkon bo‘lsa, avval muzlatilgan holda tekshirilgan to‘qimadan qochish kerak.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Nega qon quyilgan va nekrotik joy mos emas? 2) Chegara zonasi nima uchun qimmatli? Doskada: o‘sma, chegara, atrofdagi parenxima va nekroz zonasini sxema qilib, blok olinadigan joyni belgilang. Tipik xato: eng katta nekrotik qismdan blok tanlash."
+    },
+    {
+      "title": "Antigenni ochish va aniqlash tizimlari",
+      "bullets": [
+        {
+          "text": "Antigenni ochish (HIER, issiqlik bilan epitopni ochish) mikroto‘lqin yoki bosimli nam bug‘ orqali bajariladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "ABC (avidin-biotin-peroksidaza kompleksi) va LSAB (streptavidin-biotin) – asosiy kuchaytirish tizimlari.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paradoks: tizimlar yangi musbatlar berdi, ammo nospetsifiklik oshdi; Swanson universal usulni rad etdi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Usullar taraqqiyoti zanjiri",
+        "nodes": [
+          "1. Antigenni ochish (HIER)",
+          "2. Ikkilamchi antikor: ABC/LSAB",
+          "3. EPOS: bir bosqichli polimer",
+          "4. CARD: katalizli cho‘ktirish",
+          "5. Paradoks: yutuq va xatar"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega kuchaytirish kuchi oshganda nospetsifik reaksiya xavfi ham ortadi? 2) Swansonning ‘universal usul yo‘q’ fikri amaliyotda nimani anglatadi? Doskada: 5 bosqichli zanjirni chizib, har bosqich yoniga ‘foyda’ va ‘xavf’ yozdiring. Tipik xato: HIER va ABC ni bir xil narsa deb o‘ylash – biri epitopni ochadi, ikkinchisi signalni kuchaytiradi."
+    },
+    {
+      "title": "Poliklonal va monoklonal antikorlar",
+      "bullets": [
+        {
+          "text": "Birlamchi antikorlar poliklonal yoki monoklonal bo‘ladi; ikkalasining imkoniyati har xil.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har yangi seriya yoki klon titrlanadi; haqiqiy musbat va fon kontrasti eng katta suyultma tanlanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: ko‘p epitop ≠ yuqori o‘ziga xoslik – poliklonal sezgir, monoklonal esa o‘ziga xos.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Antikor turlarini solishtirish",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Poliklonal",
+          "Monoklonal"
+        ],
+        "rows": [
+          [
+            "Olinishi",
+            "Hayvonni immunlash (quyon, echki va b.)",
+            "Gibridlardan yaratiladi"
+          ],
+          [
+            "Epitop",
+            "Bir antigenning ko‘p epitopi",
+            "Faqat bitta epitop"
+          ],
+          [
+            "Afzalligi",
+            "Yuqori sezuvchanlik",
+            "Yuqori o‘ziga xoslik"
+          ],
+          [
+            "Yangi seriya",
+            "Qayta titrlash kerak",
+            "Qayta titrlash kerak"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi holatda sezuvchanlik, qaysida o‘ziga xoslik muhimroq? 2) Titrlash nega har yangi seriyada takrorlanadi? Doskada: bitta antigenda ko‘p epitopni va bitta epitopni chizib, antikorlarni ulang. Tipik xato: monoklonal antikorni doim ‘yaxshiroq’ deb hisoblash."
+    },
+    {
+      "title": "Antikor panelini tanlash",
+      "bullets": [
+        {
+          "text": "Antikor panelini tanlash immunohistokimyoning eng muhim jihatlaridan biri bo‘lib, usulning to‘g‘ri qo‘llanishini belgilaydi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jensen va hamkasblari: panel tanlovi hamda har bir holatda reaksiya naqshini talqin qilish yakuniy tashxisga eng ko‘p ta’sir qiladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tanlangan panelning sezuvchanligi usulni buyuruvchi patolog tajribasi va klinik ma’lumotlar tahlili bilan birga oshadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Prescott va hamkasblari immunohistokimyodagi tashxis nomuvofiqliklarining 42,1 foizini yomon antikor tanlashga bog‘lagan.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega klinik ma’lumotsiz panel tanlash xavfli? 2) 42,1 foiz raqami laboratoriya nazoratiga nimani o‘rgatadi? Doskada: ‘klinik savol → panel → naqsh talqini → tashxis’ zanjirini chizdiring. Tipik xato: ko‘p antikor tanlashni yaxshi panel deb o‘ylash; gap antikorlar sonida emas, mantiqiy tanlovda."
+    },
+    {
+      "title": "Ichki va tashqi nazorat",
+      "bullets": [
+        {
+          "text": "Tashqi nazorat — har bir antitana uchun maxsus to‘qima kesmasi. U har bir panelga kiritiladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tashqi nazorat sinov namunalari bilan bir xil fiksatsiya qilinadi va reaksiyaning bir xil bosqichlaridan o‘tadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: ichki nazorat — o‘rganilayotgan preparatning o‘zidagi tuzilmalar, alohida kesma emas.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Nazorat turlari",
+        "nodes": [],
+        "header": [
+          "Nazorat turi",
+          "Misol",
+          "Vazifasi"
+        ],
+        "rows": [
+          [
+            "Tashqi",
+            "Antitanaga mos maxsus to‘qima kesmasi",
+            "Natijalarni tasdiqlash"
+          ],
+          [
+            "Ichki musbat",
+            "Tomirlar; o‘simta yonidagi ko‘krak yo‘llari",
+            "Kutilgan musbat reaksiya"
+          ],
+          [
+            "Ichki manfiy",
+            "Tomir ichidagi eritrotsitlar",
+            "Bir xil ishlov olgan manfiy fon"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega tashqi nazorat sinov namunasi bilan bir xil sharoitda fiksatsiya qilinishi kerak? 2) Preparatning qaysi tuzilmalari ichki nazorat bo‘la oladi? Doskada chizish: bitta preparat sxemasini chizib, unda tomir, ko‘krak yo‘li va eritrotsitlarni belgilang. Tipik xato: talabalar ichki nazoratni tashqi nazorat bilan aralashtiradi."
+    },
+    {
+      "title": "Xato manbalari: reaksiya va talqin",
+      "bullets": [
+        {
+          "text": "Bias — natijani og‘diruvchi xato. Usul sodda bo‘lsa-da, natijalar ehtiyotkorlik bilan talqin qilinadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natija reaksiyani bajargan qo‘l va uni talqin qilgan ko‘z tajribasiga to‘g‘ridan-to‘g‘ri bog‘liq.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: reaksiya biasi ≠ talqin biasi. Birinchisi texnik, ikkinchisi tanlov va baholash xatosi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Bias turlari",
+        "nodes": [],
+        "header": [
+          "Bias",
+          "Bosqich",
+          "Misol"
+        ],
+        "rows": [
+          [
+            "Reaksiya",
+            "Namuna tayyorlash",
+            "Fiksatsiya, to‘qima ishlovi"
+          ],
+          [
+            "Reaksiya",
+            "Reaksiyaning o‘zi",
+            "Antigenni ochish, aniqlash tizimi"
+          ],
+          [
+            "Talqin",
+            "Tanlov",
+            "Antitana paneli va klonini tanlash"
+          ],
+          [
+            "Talqin",
+            "Baholash",
+            "Natija va adabiyotni talqin qilish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Fiksatsiya xatosi qaysi bias turiga kiradi? 2) Noto‘g‘ri panel tanlash natijaga qanday ta’sir qiladi? Doskada chizish: ikki ustunli sxema — chapda reaksiya biasi, o‘ngda talqin biasi, har biriga uchta misol yozing. Tipik xato: talabalar panel va klon tanlashni texnik (reaksiya) xato deb hisoblaydi."
+    },
+    {
+      "title": "Sifat nazorati dasturlari",
+      "bullets": [
+        {
+          "text": "Fransiya patologiya jamiyatining immunogistokimyo sifat nazorati qo‘mitasi 1997-yilda hisobot e’lon qildi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hisobotga ko‘ra, tashxis xatosining ikki asosiy sababi: antigenni ochish usullarini qo‘llamaslik va kuchsiz kuchaytirish usullaridan foydalanish.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Boshqa xalqaro dasturlar: Immunoquery elektron bazasi va UK NEQAS — Britaniya tashqi sifat baholash sxemasi (immunotsitokimyo uchun).",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reagentlar ketma-ketligini ish sxemalari bilan nazorat qilish yolg‘on natijalardan saqlaydi. Har bosqich va har antitana naqshini yozib borish ham tavsiya etiladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Nega reagentlar ketma-ketligini qat’iy saqlash kerak? 2) Yozuvlar yuritish laboratoriyaga qanday foyda beradi? Doskada chizish: reaksiya bosqichlarining ish sxemasini ketma-ketlikda yozing. Tipik xato: talabalar Immunoquery va UK NEQAS ni bir xil turdagi dastur deb o‘ylaydi — biri elektron baza, ikkinchisi tashqi sifat baholash sxemasi."
+    },
+    {
+      "title": "Voqea tahlili: texnik xatolar",
+      "bullets": [
+        {
+          "text": "Vaziyat: uzoq fiksatsiyada bo‘lgan yoki 12 hafta saqlangan ko‘krak bezi saratoni preparatida p53 va Bcl-2 kuchsiz bo‘yaldi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sabab: yangi namuna uzoq fiksatsiyaga tushsa, antigenlik sezilarli kamayadi. Shishada xona haroratida 12 hafta saqlash ham antigenlikni yo‘qotadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Formaldegid epitoplarni niqoblaydi yoki buzadi. Fiksatsiyaning kechikishi ham ayrim antikorlarda immunoreaktivlikni yo‘qotishi mumkin.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: oldini olish uchun nima qilinadi? Fiksatsiya va yetkazishni nazorat qilish, antigenni tiklash va paraffin harorati 60 °C dan oshmasligi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun paraffin blokdagi namuna shishadagi kesmadan uzoq saqlanadi? 2) Operatsiya xonasida fiksatorni noto‘g‘ri tanlash keyin qanday qiyinchilik tug‘diradi? Doskada chizish: namuna olishdan bo‘yashgacha zanjir, xavfli bosqichlarni qizil bilan belgilang. Tipik xato: 12 haftalik yo‘qotish paraffin blokka ham tegishli deb o‘ylash. Manbada blokda 10 yildan ortiq bunday yo‘qotish kuzatilmagan."
+    },
+    {
+      "title": "Tezkor savol 2",
+      "bullets": [
+        {
+          "text": "Savol 1: IHK uchun blok kesmasi qalinligi qaysi oraliqda tanlanadi? 3 mkm dan yupqa yoki 7 mkm dan qalin bo‘lsa nima bo‘ladi?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol 2: formaldegid bilan fiksatsiyada antikor bog‘lanish joylariga nima bo‘ladi va u qanday tuzatiladi?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol 3: poliklonal va monoklonal birlamchi antikorlar qaysi jihatdan farqlanadi? Qaysi biri sezgirroq, qaysi biri o‘ziga xosroq?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol 4: tashqi va ichki nazoratlarga misol keltiring. Qaysi tuzilma ichki manfiy nazorat bo‘la oladi?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Javoblar: 1) 3–7 mkm; yupqasi juda kuchsiz bo‘yaladi, qalini shishadan to‘qima ko‘chishiga va tahlilning qiyinlashishiga olib keladi. 2) Formaldegid epitoplarni niqoblaydi, antigenni tiklash usullari ularni ochadi. 3) Poliklonal bir antigenning ko‘p epitopini taniydi, sezgirroq. Monoklonal bitta epitopni taniydi, o‘ziga xosroq. 4) Tashqi nazorat: har bir antikor uchun o‘sha sharoitda fiksatsiyalangan maxsus to‘qima kesmasi. Ichki musbat: tomirlar vimentin uchun, ko‘krak naylari estrogen va progesteron retseptorlari uchun. Ichki manfiy: qon tomirlaridagi eritrotsitlar, ular endogen peroksidaza manbai. Doskada chizish: ikki ustunli jadval, poliklonal va monoklonal. Tipik xato: poliklonal antikorni o‘ziga xosroq deb hisoblash."
+    },
+    {
+      "title": "Natija talqini: sifat va subyektivlik",
+      "bullets": [
+        {
+          "text": "Talqin odatda sifat jihatidan va subyektiv bajariladi, miqdoriy baholash ko‘pincha kam ahamiyatli hisoblanadi. Qaror ko‘pincha molekulaning bor-yo‘qligiga tayanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Adabiyotdagi qarama-qarshi natijalarning o‘sib borayotgan sababi: “musbat” natija nima ekani aniq ta’riflanmagan.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "S-100 uchun ayrim mualliflar yadro va sitoplazma bo‘yalishini talab qiladi, boshqalari faqat sitoplazmani yetarli deb biladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: HER2 da faqat hujayra membranasi bo‘yalishi gen amplifikatsiyasi bilan bog‘liq. Sof sitoplazmatik bo‘yalish ≠ membranali bo‘yalish.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bir xil bo‘yalish turli mualliflarda musbat yoki manfiy deb baholanishi mumkin? 2) Molekulaning vazifasini bilish talqinga qanday yordam beradi? Doskada chizish: hujayrani chizib, yadro, sitoplazma va membranani belgilang, HER2 va S-100 bo‘yalish joylarini ko‘rsating. Tipik xato: har qanday jigarrang bo‘yalishni klinik jihatdan ahamiyatli musbat deb qabul qilish. Manbaga ko‘ra jigarrang bo‘yalgan preparat musbat hisoblanadi, so‘ng molekula ifodasi klinik-morfologik kontekstda tahlil qilinadi."
+    },
+    {
+      "title": "“Musbat” natija: S-100 va HER2 misoli",
+      "bullets": [
+        {
+          "text": "Ko‘p tadqiqotda “musbat” deganda to‘qimaning istalgan qismidagi jigarrang bo‘yalish (peroksidaza) tushuniladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "S-100: ba’zi mualliflar yadro va sitoplazmani talab qiladi, boshqalar faqat sitoplazmani yetarli deb biladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: HER2 da sitoplazma ≠ membrana; faqat membrana bo‘yalishi gen amplifikatsiyasi bilan bog‘liq.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "“Musbat” talqinidagi farqlar",
+        "nodes": [],
+        "header": [
+          "Marker",
+          "Bo‘yalish joyi",
+          "Talqin"
+        ],
+        "rows": [
+          [
+            "S-100",
+            "Yadro + sitoplazma",
+            "Ba’zi mualliflar: musbat"
+          ],
+          [
+            "S-100",
+            "Faqat sitoplazma",
+            "Boshqalar: musbat deb hisoblaydi"
+          ],
+          [
+            "HER2",
+            "Faqat sitoplazma",
+            "Ba’zi ishlarda musbat hisoblangan"
+          ],
+          [
+            "HER2",
+            "Hujayra membranasi",
+            "Gen amplifikatsiyasi bilan bog‘liq"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) “Musbat” ta’rifi nega turli mualliflarda har xil? 2) Nega HER2 da bo‘yalish joyi muhim? Doskada: jadvalni chizib, har qatorga “musbat/shubhali” belgisini talabalar qo‘ysin. Tipik xato: har qanday jigarrang bo‘yalishni HER2 gen amplifikatsiyasi deb o‘ylash."
+    },
+    {
+      "title": "Joylashuv qoidasi va natijani tasdiqlash",
+      "bullets": [
+        {
+          "text": "Antigenning joylashuvi ma’lum bo‘lsa, immunoreaktivlik naqshi uning mikroanatomik yoki hujayra ichidagi taqsimotiga mos kelishi kerak.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sitoplazmatik pufakchalardagi molekulalar (xromogranin, von Willebrand omili, HMB-45) donador intrasitoplazmatik bo‘yalish beradi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bo‘yalish kutilganidek bo‘lmasa, ko‘pchilik buni soxta musbat deydi; lekin molekulaning hali tavsiflanmagan vazifasi ham bo‘lishi mumkin.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shubhali holatda bir molekulaning boshqa epitoplariga antikorlar yoki bog‘liq markerlar (sinaptofizin va xromogranin) bilan natija tasdiqlanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Donador naqsh qaysi markerlar uchun kutiladi? 2) Nega bitta marker o‘rniga bog‘liq markerlar juftligi ishonchliroq? Doskada: hujayra sxemasini chizib, membrana, sitoplazma va yadroni belgilang. Tipik xato: kutilmagan bo‘yalishni darhol soxta musbat deb hisoblash."
+    },
+    {
+      "title": "Voqea tahlili: talqin bo‘limi",
+      "bullets": [
+        {
+          "text": "Vaziyat: HER2 ga qarshi antikor bilan preparat jigarrang bo‘yaldi, ammo bo‘yalish faqat sitoplazmada, membranada yo‘q.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu natijani musbat deyish mumkinmi va nega klinik-morfologik kontekst kerak?",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yo‘nalish: bo‘yalish bor, lekin gen amplifikatsiyasi bilan faqat membranali bo‘yalish bog‘liq. Turli bo‘limlardagi ekspressiya turli vazifani bildirishi mumkin.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xulosa: jigarrang bo‘yalishni musbat deb qayd eting, so‘ng molekula vazifasi va klinik-morfologik kontekstda talqin qiling.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Faqat sitoplazmatik HER2 bo‘yalishi bilan davo tanlash mumkinmi? 2) Klinik-morfologik kontekst qanday ma’lumotlarni o‘z ichiga oladi? Doskada: “bo‘yalish joyi → talqin → xulosa” zanjirini chizing. Tipik xato: bo‘yalish joyini hisobga olmay, faqat rang borligiga qarab xulosa qilish."
+    },
+    {
+      "title": "IHK va ELISA: umumiy tamoyil",
+      "bullets": [
+        {
+          "text": "IHK (immunohistokimyo) to‘qima kesmasida joyida o‘tkaziladigan immunologik testdir.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "ELISA (ferment bog‘langan immunosorbent tahlil) reagentlari parafin kesmada IHK uchun ham ishlaydi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IHK miqdoriy bahosi Western blot va immunoferment usullari bilan statistik bog‘liq.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "IHK va ELISA taqqosi",
+        "nodes": [],
+        "header": [
+          "Jihat",
+          "ELISA",
+          "IHK"
+        ],
+        "rows": [
+          [
+            "Namuna",
+            "Zardob",
+            "Parafin blokdagi kesma"
+          ],
+          [
+            "Reagentlar",
+            "Bir xil reagentlar",
+            "Bir xil reagentlar"
+          ],
+          [
+            "Natija atamasi",
+            "Miqdoriy deb tan olingan",
+            "Ko‘pincha shunchaki “bo‘yalish”"
+          ],
+          [
+            "Tasdiqlash",
+            "Keng e‘tirof etilgan",
+            "Western blot bilan bog‘liq"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bir xil tamoyil ELISA da «miqdoriy», IHK da «bo‘yalish» deyiladi? 2) Western blot bilan korrelyatsiya nimani isbotlaydi? Doskada: ELISA va IHK ustunli taqqoslash jadvalini chizdiring. Tipik xato: IHK ni faqat tasviriy (deskriptiv) usul deb o‘ylash."
+    },
+    {
+      "title": "Yarim miqdoriy tahlil",
+      "bullets": [
+        {
+          "text": "Intensivlik darajalari (nol, kuchsiz, o‘rtacha, kuchli) tajribaga bog‘liq, shuning uchun nomaqbul.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tarqalish — bo‘yalgan hujayralar foizi; Ki67, p53, p21 sanog‘ida takrorlanuvchanlik past.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ball tizimlari farqni kamaytirish uchun kiritilgan, lekin mehnat talab qiladi va charchatadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Yarim miqdoriy mezonlar",
+        "nodes": [],
+        "header": [
+          "Mezon",
+          "Nimani baholaydi",
+          "Cheklov"
+        ],
+        "rows": [
+          [
+            "Intensivlik",
+            "Nol/kuchsiz/o‘rtacha/kuchli",
+            "Tajribaga bog‘liq, subyektiv"
+          ],
+          [
+            "Tarqalish",
+            "Bo‘yalgan hujayralar foizi",
+            "Sanash “ko‘z bilan” ham bo‘lishi mumkin"
+          ],
+          [
+            "Ki67, p53, p21",
+            "Hujayra sikli ko‘rsatkichlari",
+            "Takrorlanuvchanligi past"
+          ],
+          [
+            "Ball tizimi",
+            "Davolash uchun bemor tanlash",
+            "Mehnat talab, charchatadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Intensivlikni baholashda nazorat namunalari nega kerak? 2) Ball tizimi qaysi markerlar uchun ayniqsa muhim? Doskada: 4 qatorli mezonlar jadvalini chizdiring. Tipik xato: yarim miqdoriy bahoni to‘liq miqdoriy natija deb qabul qilish."
+    },
+    {
+      "title": "Kompyuter tahlili va istiqbollar",
+      "bullets": [
+        {
+          "text": "Kompyuter yordamidagi rasm tahlili 1980-yillardan qo‘llanadi va ko‘pgina markerlarda yarim miqdoriy usuldan aniqroq natija beradi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nazorat sharoitida tizim ko‘p kuzatuvchining qo‘l usulidan ustun chiqqan va ball tizimlarining takrorlanuvchanlik muammosini hal qiladi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kelajak: bir bosqichli reaksiya (EPOS) inkubatsiya bosqichlarini kamaytiradi; yarim avtomatik apparatlar va mikroarray texnologiyasi ham ishlab chiqilgan.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Patolog va klinitsist bir tilda gaplashib, bilimlarini birlashtirishi bemor foydasi uchun muhim.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega kichik laboratoriyalarda kompyuter tahlili kam uchragan? 2) Patolog va klinitsist hamkorligi sud-tibbiy ekspertizada qanday foyda beradi? Doskada: IHK usullari rivojini «qo‘l bahosi → ball → kompyuter» chizig‘i ko‘rinishida chizdiring. Tipik xato: EPOS ni yangi antitana turi deb o‘ylash; u inkubatsiya bosqichlarini kamaytiruvchi polimer tizimdir."
+    },
+    {
+      "title": "Tezkor savol 3",
+      "bullets": [
+        {
+          "text": "1-savol: IHK da “musbat” natija odatda nimani bildiradi? Javob: to‘qimaning biror qismida jigarrang (peroksidaza) bo‘yalish borligini.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-savol: HER2 da qaysi bo‘yalish gen amplifikatsiyasi bilan bog‘liq? Javob: faqat hujayra membranasi bo‘yalishi. Diqqat: sitoplazma ≠ membrana.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-savol: IHK qaysi tahlilga o‘xshaydi? Javob: ELISA (ferment bog‘langan immunosorbent tahlil): reagentlar va immunologik tamoyil bir xil.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-savol: Yarim miqdoriy ballardan nima ustun? Javob: kompyuter yordamidagi tasvir tahlili; nazoratli sharoitda ko‘p kuzatuvchining qo‘lda tahlilidan ham yaxshi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Savollarni avval talabalarga bering, so‘ng javobni oching. Muhokama: nega ELISA bilan solishtirish IHK ni “faqat bo‘yash” deb atashga qarshi dalil bo‘ladi? Hujayra bo‘laklari (membrana, sitoplazma, yadro) bo‘yalishini doskada chizdiring. Tipik xato: har qanday jigarrang bo‘yalishni klinik jihatdan ahamiyatli deb hisoblash; HER2 da faqat membrana bo‘yalishi gen amplifikatsiyasi bilan bog‘liq."
+    },
+    {
+      "title": "Sud-tibbiyot: TBI va FOXO3a mohiyati",
+      "bullets": [
+        {
+          "text": "Bosh miya jarohati (TBI) — boshga tashqi kuch ta’sirida miya faoliyati buzilishi yoki miya patologiyasi belgilari.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Birlamchi zarar darhol, ikkilamchi zarar kun-haftalarda: ishemiya, oksidlovchi stress, apoptoz.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "FOXO3a transkripsiya omili: apoptoz, neyroyallig‘lanish va oksidlovchi stressga javobni boshqaradi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "TBI dan FOXO3a gacha",
+        "nodes": [
+          "Tashqi kuch (travma)",
+          "Birlamchi zarar (darhol)",
+          "Ikkilamchi zarar (ishemiya)",
+          "FOXO3a faollashuvi",
+          "Apoptoz, yallig‘lanish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: nega birlamchi zararni davolash qiyin, ikkilamchisini esa oldini olish mumkin? FOXO3a sud-tibbiy diagnostikada qanday foyda berishi mumkin? Doskada TBI dan apoptozgacha zanjirni chizdiring. Tipik xato: birlamchi va ikkilamchi zararni alohida jarayon deb o‘ylash; ular ko‘pincha birga uchraydi, bo‘linish didaktik."
+    },
+    {
+      "title": "FOXO3a tadqiqotining dizayni va IHK protokoli",
+      "bullets": [
+        {
+          "text": "15 ta TBI o‘limi va 15 ta nontravmatik miya o‘limi; chirigan jasadlar ikkala guruhdan chiqarilgan.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kiritish mezoni: o‘lim sababi TBI, jarohat oldingi 24 soat ichida, surunkali kasallik tarixi yo‘q.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antigenni ochish EDTA buferida, bosimli bug‘da 100 °C da 90 daqiqa; poliklonal anti-FOXO3a ishlatilgan.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "IHK protokoli bosqichlari",
+        "nodes": [
+          "Holatlar: 15 TBI, 15 nazorat",
+          "10% formalin, parafinga quyish",
+          "4 mkm kesma, antigenni ochish",
+          "+ nazorat: ko‘krak saratoni",
+          "Ball 0–4, ikki kuzatuvchi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: nega musbat nazorat sifatida ko‘krak saratoni ishlatilgan? Nega ikki mustaqil kuzatuvchi va uchinchi hakam kerak? Doskada protokol bosqichlarini tartib bilan chizdiring. Tipik xato: kesma qalinligi va fiksatsiya sharoitini e’tiborsiz qoldirish; bu natijaga ta’sir qiladi. Tadqiqot kichik (30 holat), shuning uchun dastlabki deb baholanadi."
+    },
+    {
+      "title": "FOXO3a natijalari va baholash shkalasi",
+      "bullets": [
+        {
+          "text": "Travmatik miya jarohati (TBI) bilan o‘lgan 15 holatning barchasida FOXO3a musbat, 15 ta nazoratda manfiy bo‘ldi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya 0 dan +4 gacha ball bilan baholandi. Ikki tadqiqotchi ko‘rdi, kelishmasa uchinchisi hal qildi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jarohatdan keyin yashash vaqti uzaygan sari FOXO3a reaksiyasi kuchaydi (maksimum 6 soat).",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "FOXO3a ball shkalasi",
+        "nodes": [],
+        "header": [
+          "Ball",
+          "Ma’nosi"
+        ],
+        "rows": [
+          [
+            "0",
+            "Bo‘yalish yo‘q (nazorat)"
+          ],
+          [
+            "1–2",
+            "Taxminan 25% va 50% bo‘yalish"
+          ],
+          [
+            "3",
+            "Taxminan 75% bo‘yalish"
+          ],
+          [
+            "4",
+            "100% bo‘yalish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega baholashni ikki mustaqil kishi ko‘r usulda o‘tkazadi? 2) Nazorat guruhi nimani ko‘rsatadi? Doskada: 0–4 shkalani chizib, har ballga bo‘yalish ulushini yozdiring. Tipik xato: ball shkalasini ’kuchli/kuchsiz’ degan subyektiv baho bilan aralashtirish; bu yerda ball bo‘yalgan maydon ulushiga asoslangan."
+    },
+    {
+      "title": "Voqea tahlili: FOXO3a va post-mortem tashxis",
+      "bullets": [
+        {
+          "text": "Vaziyat: jarohatdan bir necha soat o‘tib vafot etgan shaxs miyasida jarohat yaqinidagi neyronlarda FOXO3a musbat chiqdi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu FOXO3a ning TBIdan keyingi ikkilamchi jarohatda, neyron apoptozi va autofagiyasini boshqarishda ishtirokini ko‘rsatadi. U post-mortem tashxisda istiqbolli vosita bo‘lishi mumkin.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cheklov: holatlar kam (15 ta TBI va 15 ta nazorat), tadqiqot dastlabki. Mualliflar holatlar sonini oshirishni rejalashtirgan.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: xato qilish xavfi. Tadqiqotda maksimal yashash vaqti 6 soat edi; undan uzoq davr haqida shu ma’lumotdan xulosa chiqarib bo‘lmaydi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Musbat FOXO3a jarohat vaqtini aniq aytib beradimi? 2) Kichik tanlama sud-tibbiy xulosaga qanday ta’sir qiladi? Doskada: jarohat → ikkilamchi jarohat → FOXO3a ortishi → IHK da musbat zanjirini chizdiring. Tipik xato: dastlabki natijani tasdiqlangan diagnostik mezon deb qabul qilish."
+    },
+    {
+      "title": "Xulosa va asosiy tamoyillar",
+      "bullets": [
+        {
+          "text": "IHK ikki bosqichdan iborat: preparat tayyorlash va reaksiya o‘tkazish, so‘ngra ifodani talqin qilish va miqdoriy baholash.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fiksatsiya, antigenni tiklash, musbat va manfiy nazoratlar hamda antitelo panelini to‘g‘ri tanlash natija ishonchliligini belgilaydi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Talqin ehtiyotkorlik talab qiladi; ball tizimlari subyektiv bo‘lishi mumkin, kompyuter tahlili esa aniqroq miqdoriy natija beradi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud-tibbiyotda FOXO3a TBIni post-mortem aniqlashda istiqbolli vosita sifatida taklif etilgan, ammo qo‘shimcha tadqiqotlar kerak.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) IHK natijasiga ta’sir qiluvchi 3 omilni sanang. 2) Nega sud-tibbiyotda nazorat guruhi shart? Doskada: IHK bosqichlarini (tayyorlash → reaksiya → talqin → miqdoriy baho) zanjir qilib chizdiring. Tipik xato: IHK ni faqat ’bo‘yash’ deb qarab, nazorat va talqinni e’tibordan chetda qoldirish."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Gematoksilin-eozin bo‘yash bilan o‘smaning to‘qima manbasini aniqlab bo‘lmadi: hujayralar morfologik jihatdan differensiatsiyalanmagan. IHK (immunohistokimyo)ning qaysi qo‘llanish sohasi aynan shu holatga mos keladi?",
+      "options": [
+        "Kesma qalinligini standartlashtirish ishi",
+        "O‘smaning gistogenetik tashxisini qo‘yish",
+        "Parafin blokni uzoq muddat saqlash ishi",
+        "Fiksatsiya vaqtini soatlarda hisoblash"
+      ],
+      "correct_index": 1,
+      "explanation": "IHK ning asosiy qo‘llanish sohalaridan biri morfologik jihatdan differensiatsiyalanmagan neoplaziyalarning gistogenetik tashxisidir. Boshqa variantlar texnik jarayonlarga tegishli bo‘lib, tashxis vazifasini bajarmaydi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Laboratoriyada floressent mikroskop yo‘q, faqat oddiy yorug‘lik mikroskopi bor. Qaysi kashfiyot IHK reaksiyasini aynan shunday mikroskopda ko‘rishga imkon berdi?",
+      "options": [
+        "Coons: floresseinli antitanalar va UB nuri",
+        "Marrack: qizil bo‘yoqli reagentni qo‘llash",
+        "Sternberger: PAP usulining kashf etilishi",
+        "Nakane: fermentlar bilan belgilangan antitana"
+      ],
+      "correct_index": 3,
+      "explanation": "Nakane fermentlar bilan belgilangan antitanalarni kiritdi. Shu tufayli reaksiyani oddiy optik mikroskopda ko‘rish mumkin bo‘ldi va usul floressent mikroskopli laboratoriyalardan tashqariga tarqaldi. Coons usuli ultrabinafsha nuri va floressent mikroskopni talab qilardi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Laboratoriya texnigi IHK reaksiyasida antigenni ochish (antigen retrieval) bosqichini tugatdi. Manbadagi tartibga ko‘ra, keyingi bosqich qaysi?",
+      "options": [
+        "Nospetsifik joylarni bloklash bosqichi",
+        "Birlamchi antitana bilan inkubatsiya",
+        "Qarshi bo‘yash (counterstaining) bosqichi",
+        "Slaydni muhrlash va saqlash bosqichi"
+      ],
+      "correct_index": 0,
+      "explanation": "Reaksiya tartibi: antigenni ochish, nospetsifik joylarni bloklash, endogen peroksidazani bloklash, birlamchi antitana bilan inkubatsiya, so‘ng detektsiya, ochish va qarshi bo‘yash, slaydni muhrlash va saqlash.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Peroksidaza reaksiyasi uchun hozir eng ko‘p ishlatiladigan xromogen qaysi? U elektron mikroskopiyada ishlatiladigan elektronzich cho‘kma hosil qilib, ferritin o‘rnini ham bosadi.",
+      "options": [
+        "Kolloid oltin zarrachalari",
+        "Ferritin oqsili molekulasi",
+        "Diaminobenzidin (DAB) molekulasi",
+        "Fluorestsein bo‘yog‘i"
+      ],
+      "correct_index": 2,
+      "explanation": "Diaminobenzidin (DAB) peroksidaza uchun hozir eng ko‘p ishlatiladigan xromogendir. U elektronzich cho‘kma hosil qiladi va elektron mikroskopiyada ferritin o‘rnini bosdi. Kolloid oltin esa subhujayraviy immunobo‘yash usuliga olib keldi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Werner tadqiqotida 3760 namunaning 64% i tashxis maqsadida o‘rganilgan (835 holat). Shu toifada IHK necha foiz holatda aniq tashxisga hissa qo‘shdi?",
+      "options": [
+        "64% holatda",
+        "83% holatda",
+        "95% holatda",
+        "12% holatda"
+      ],
+      "correct_index": 1,
+      "explanation": "835 ta tashxis holatining 83% ida IHK aniq tashxisga yordam berdi. 64% bu tashxis maqsadidagi holatlar ulushi, 12% aniqlanmagan tashxislar kamayishi, 95% esa umumiy foydali holatlar ulushidir.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Laborant antigenni ochish (retrieval) bosqichini tugatdi. Manbadagi ketma-ketlikda keyingi bosqich qaysi?",
+      "options": [
+        "Birlamchi antikor bilan inkubatsiya qilish",
+        "Nospetsifik joylarni bloklash bosqichi",
+        "Kesmani kontrastlab bo‘yash bosqichi",
+        "Kesmani yopish va saqlash bosqichi"
+      ],
+      "correct_index": 1,
+      "explanation": "Reaksiya bosqichlari tartibi: antigenni ochish, nospetsifik joylarni bloklash, endogen peroksidazani bloklash, birlamchi antikor bilan inkubatsiya, aniqlash tizimi, kontrastlab bo‘yash, kesmani yopish va saqlash. Antigenni ochishdan keyin nospetsifik joylar bloklanadi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Laborant parafin blokdan 9 μm qalinlikdagi kesma tayyorladi. Manbaga ko‘ra eng ehtimoliy muammo qaysi?",
+      "options": [
+        "Immunobo‘yalish juda zaif chiqadi",
+        "Antigenlar to‘liq parchalanib ketadi",
+        "Antikor kesmaga umuman kira olmaydi",
+        "To‘qima shishadan ko‘chib, tahlil qiyinlashadi"
+      ],
+      "correct_index": 3,
+      "explanation": "Kesma qalinligi 3–7 μm bo‘lishi kerak. 3 μm dan yupqa kesmada immunobo‘yalish juda zaif bo‘ladi. 7 μm dan qalin kesmada to‘qima shishadan ko‘chishi yoki bo‘yalishni tahlil qilish qiyinlashishi mumkin.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Patolog faqat bitta antigen epitopiga qaratilgan, aniqroq (spetsifik) natija beradigan birlamchi antikor tanlamoqchi. Qaysi tur mos keladi?",
+      "options": [
+        "Monoklonal antikor (gibridalardan olinadi)",
+        "Poliklonal antikor (hayvon immunizatsiyasi)",
+        "Poliklonal va monoklonal aralashmasi",
+        "Faqat nishonlanmagan ikkilamchi antikor"
+      ],
+      "correct_index": 0,
+      "explanation": "Monoklonal antikorlar gibridalardan olinadi va antigenning faqat bitta epitopini taniydi, shuning uchun natija spetsifikroq. Poliklonal antikorlar ko‘p epitopni taniydi va sezgirligi yuqoriroq bo‘ladi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Formalinda fiksatsiyalangan tuxumdon o‘smasi kesmasida sitokeratin yaxshi ochilishi uchun tripsin ishlatildi. Bu qaysi markerni aniqlashga zarar yetkazadi?",
+      "options": [
+        "Sitokeratin markeri",
+        "Xromogranin markeri",
+        "Vimentin markeri",
+        "Sinaptofizin markeri"
+      ],
+      "correct_index": 2,
+      "explanation": "Alves va hamkasblari ishida formalinda fiksatsiyalangan kesmada tripsin sitokeratin reaksiyasini yaxshilagan, lekin vimentinni aniqlashga zarar yetkazgan. Spirtda fiksatsiyalangan kesmalarda esa ikkala marker yaxshiroq reaksiya bergan.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Prescott va hamkasblari immunohistokimyodagi diagnostik nomuvofiqliklarning 42,1 foizini qaysi sababga bog‘lagan?",
+      "options": [
+        "Kesmaning juda qalin kesilishi",
+        "Antikorlarni yomon tanlash",
+        "Parafinning yuqori harorati",
+        "Formalinda uzoq saqlash"
+      ],
+      "correct_index": 1,
+      "explanation": "Manbada diagnostik nomuvofiqliklarning 42,1 foizi antikorlarni yomon tanlash bilan bog‘langan. Antikor panelini tanlash va har bir holatdagi reaksiya naqshini sharhlash yakuniy tashxis uchun eng muhim omillardan biri hisoblanadi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Laborant o‘sma yonidagi sut yo‘llarini estrogen va progesteron retseptorlari uchun tekshirmoqda. Bu yo‘llar qanday nazorat vazifasini bajaradi?",
+      "options": [
+        "Tashqi musbat nazorat vazifasini",
+        "Ichki musbat nazorat vazifasini",
+        "Ichki manfiy nazorat vazifasini",
+        "Tashqi manfiy nazorat vazifasini"
+      ],
+      "correct_index": 1,
+      "explanation": "Shu preparatning o‘zida joylashgan va marker uchun ma’lum musbat tuzilmalar ichki musbat nazorat bo‘ladi. Misol: o‘smaga qo‘shni sut yo‘llari estrogen va progesteron retseptorlari uchun. Tashqi nazorat esa alohida to‘qima kesmasi bo‘lib, har panelga qo‘shiladi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918, Limitations bo‘limi (nazorat haqida)"
+      }
+    },
+    {
+      "question": "Patolog tekshiruv uchun antitana panelini va klonini noto‘g‘ri tanladi. Bu xato qaysi toifaga kiradi?",
+      "options": [
+        "Reaksiya xatosi: namunani fiksatsiya qilish",
+        "Reaksiya xatosi: antigenni ochish bosqichi",
+        "Reaksiya xatosi: aniqlash tizimini tanlash",
+        "Talqin xatosi: panel va klonni tanlash"
+      ],
+      "correct_index": 3,
+      "explanation": "Manbada xatolar ikki guruhga bo‘linadi. Reaksiya xatosiga fiksatsiya, to‘qimani qayta ishlash, antigenni ochish va aniqlash tizimi kiradi. Talqin xatosiga antitana panelini, uning sezgirligini, antitana turi va klonini tanlash kiradi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918, Limitations bo‘limi (reaksiya va talqin xatolari)"
+      }
+    },
+    {
+      "question": "Fransiya patologiya jamiyati sifat nazorati qo‘mitasining 1997-yilgi hisobotiga ko‘ra, immunogistokimyoda diagnostik xatolarning asosiy sabablaridan biri qaysi?",
+      "options": [
+        "Antigenni ochish usullarini qo‘llamaslik",
+        "Parafin bloklarini 10 yildan ortiq saqlash",
+        "Kesmalarni 5 mkm qalinlikda tayyorlash",
+        "Kuchli kuchaytirish usullarini qo‘llash"
+      ],
+      "correct_index": 0,
+      "explanation": "Hisobotda ikki asosiy sabab ko‘rsatilgan: antigenni ochish usullarining qo‘llanmasligi va kuchsiz kuchaytirish usullaridan foydalanish. Kuchli kuchaytirish xato sababi emas, aksincha kuchsizi xato beradi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918, Limitations bo‘limi (sifat nazorati dasturlari)"
+      }
+    },
+    {
+      "question": "Yangi olingan namuna tasodifan uzoq muddat fiksatsiyada qoldi, reaksiya esa kutilganidan ancha zaif chiqdi. Eng ehtimoliy sabab qaysi?",
+      "options": [
+        "Antitana monoklonal turda bo‘lgani",
+        "Kesma qalinligi 5 mkm bo‘lgani",
+        "Antigenlikning sezilarli yo‘qolishi",
+        "Preparatda ichki nazorat bo‘lmagani"
+      ],
+      "correct_index": 2,
+      "explanation": "Yangi namunalar uzoq fiksatsiyaga tushib qolsa, antigenlikni sezilarli yo‘qotishi mumkin. Formaldegid ham ba’zi epitoplarni niqoblaydi yoki shikastlaydi. 3–7 mkm qalinlik esa me’yoriy oraliq hisoblanadi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918, Limitations bo‘limi (texnik xatolar)"
+      }
+    },
+    {
+      "question": "Ko‘krak bezi saratonida HER2 oqsili bo‘yalishi faqat sitoplazmada ko‘rindi. Qaysi bo‘yalish joylashuvi gen amplifikatsiyasi bilan bog‘liq deb ma’lum?",
+      "options": [
+        "Faqat yadrodagi bo‘yalish holati",
+        "Faqat sitoplazmadagi bo‘yalish holati",
+        "Faqat hujayra membranasidagi bo‘yalish",
+        "Faqat hujayralararo matriksdagi bo‘yalish"
+      ],
+      "correct_index": 2,
+      "explanation": "Ayrim ishlarda faqat sitoplazmatik bo‘yalish ham musbat hisoblangan. Biroq molekulyar usullar bo‘yicha gen amplifikatsiyasi faqat hujayra membranasi bo‘yalgan holatlar bilan bog‘liq. Shuning uchun bo‘yalish joylashuvini hisobga olish kerak.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918, Interpretation of Immunohistochemistry Expression bo‘limi (HER2 misoli)"
+      }
+    },
+    {
+      "question": "Laboratoriya ELISA (fermentga bog‘langan immunosorbent tahlil) reagentlarini paraffin blokdagi kesmada sinadi. Muallif fikricha, IHK mohiyatan nima?",
+      "options": [
+        "IHK — to‘qima kesmasida o‘tkaziladigan immunologik sinov",
+        "IHK — faqat sifat jihatidan baholanadigan oddiy bo‘yash",
+        "IHK — ELISAdan farqli, miqdoriy bo‘la olmaydigan usul",
+        "IHK — faqat floressent mikroskopda ko‘rinadigan reaksiya"
+      ],
+      "correct_index": 0,
+      "explanation": "Muallif IHKni to‘qima kesmalarida joyida o‘tkaziladigan immunologik sinov deb hisoblaydi. Bo‘yalish natijasi ELISA natijasiga o‘xshaydi, ikkalasida bir xil reagentlar ishlatilishi mumkin. Shu sababli IHK shunchaki «bo‘yash» emas, miqdoriy natija ham berishi mumkin.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Patolog bo‘yalish intensivligini «yo‘q, kuchsiz, o‘rtacha, kuchli» toifalariga ajratib baholadi. Manbaga ko‘ra bu yondashuv qanday?",
+      "options": [
+        "Eng aniq va natijalari takrorlanuvchan usul hisoblanadi",
+        "Tadqiqotchi tajribasiga bog‘liq, shu sababli mos emas",
+        "Faqat avtomatik bo‘yash qo‘llanganda ishlatiladi",
+        "Ki67 hisoblash uchun majburiy baholash tartibi sanaladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Intensivlikni null, kuchsiz, o‘rtacha va kuchli toifalarga ajratish sub’ektiv ball hisoblanadi. U tadqiqotchi tajribasiga ko‘p bog‘liq, shuning uchun mos emas deb baholanadi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Bir nechta kuzatuvchi bir xil kesmalarni qo‘lda ballab baholadi, natijalar mos kelmadi. Manbaga ko‘ra qaysi yechim afzal?",
+      "options": [
+        "Ballarni qisqartirib, kesmani «bir qarash» bilan baholash",
+        "Kesma qalinligini 7 mkm dan oshirib, signalni kuchaytirish",
+        "Kompyuter yordamida tasvir tahlilini qo‘llab, miqdoriy natija olish",
+        "Birlamchi antitanani almashtirib, boshqa klonga o‘tish"
+      ],
+      "correct_index": 2,
+      "explanation": "Nazorat ostidagi sharoitda kompyuter yordamida tasvir tahlili ko‘p kuzatuvchi qo‘lda baholashidan ustun bo‘lgan. U yarim miqdoriy ballarning takrorlanuvchanligi muammosiga yechim bo‘ladi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "question": "Faollashgan FOXO3a yadroda qaysi juft molekula ifodasini oshirib, apoptozni kuchaytiradi?",
+      "options": [
+        "FLIP va AKT molekulalari ifodasini",
+        "AMPK va JNK2 molekulalari ifodasini",
+        "ERK va calpain molekulalari ifodasini",
+        "BIM va PUMA molekulalari ifodasini"
+      ],
+      "correct_index": 3,
+      "explanation": "FOXO3a yadroda proapoptotik BIM va PUMA genlarini faollashtiradi. Antiapoptotik FLIP genini esa susaytiradi, shuning uchun FLIP to‘g‘ri javob emas. Ikkala yo‘l ham hujayra o‘limini kuchaytiradi.",
+      "source": {
+        "author": "Maiese et al.",
+        "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+        "page": "PMID 36768906"
+      }
+    },
+    {
+      "question": "Bosh miya jarohatidan so‘ng bir necha soat yashagan shaxsning miya namunasi FOXO3a bilan tekshirildi. Qanday natija kutiladi?",
+      "options": [
+        "Nazoratda kuchli ijobiy, jarohatli miyada manfiy bo‘yalish",
+        "Jarohat yaqinida ijobiy, yashash uzaysa bo‘yalish kuchayadi",
+        "Barcha namunada bir xil ijobiy, vaqtga bog‘liq bo‘lmaydi",
+        "Faqat 24 soatdan keyin ijobiy, undan oldin manfiy bo‘ladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Barcha 15 ta jarohat holatida jarohat yonidagi neyronlarda FOXO3a ijobiy chiqdi. Nazorat namunalari manfiy edi. Omon qolish vaqti uzaygan sari ijobiylik kuchaydi (tadqiqotda maksimum 6 soat).",
+      "source": {
+        "author": "Maiese et al.",
+        "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+        "page": "PMID 36768906"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "“Jigarrang inqilob”: immunogistokimyo patologik anatomiya laboratoriyasiga kirib kelgach, bu o‘zgarish shunday nomlandi. Peroksidaza uchun eng ko‘p ishlatiladigan xromogen DAB (diaminobenzidin) jigarrang cho‘kma beradi, shuning uchun nom shundan kelib chiqqan. DAB hosil qilgan cho‘kma elektron mikroskopiyada ham ishlatiladi.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "text": "Eslab qolish usuli (bosqichlar tartibi, manbadagi ro‘yxat asosida): ANTIGENNI ochish → NOSPETSIFIK joyni to‘sish → ENDOGEN peroksidazani to‘sish → BIRLAMCHI antitana → ANIQLASH tizimi → XROMOGEN → QO‘SHIMCHA bo‘yash → YOPISH va saqlash. Tartibni doskada o‘qlar bilan chizib, har bosqichga bittadan so‘z biriktiring.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "text": "Hodisa tahlili (HER2): bo‘yalish faqat sitoplazmada bo‘lsa ham, ba’zi mualliflar uni musbat deb hisoblagan. Biroq gen amplifikatsiyasi bilan faqat hujayra membranasidagi bo‘yalish bog‘liq ekani ma’lum. Shu sababli musbat natijani joylashuvi va klinik-morfologik kontekst bilan birga baholash kerak. Diqqat: “jigarrang bo‘yalish bor” va “klinik jihatdan ahamiyatli musbat” bir narsa emas.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "text": "Fiksatsiya tanlovi natijaga ta’sir qiladi: tuxumdon kistadenofibrokarsinomasi holida etanolda fiksatsiya qilingan kesmalarda sitokeratin va vimentin reaktivligi yaxshiroq bo‘lgan. Formalinda fiksatsiyada tripsin sitokeratinni yaxshilagan, lekin vimentinni aniqlashga zarar yetkazgan. Xulosa: turli epitoplar turli fiksatorni talab qilishi mumkin, shuning uchun operatsiya xonasidagi tanlov muhim.",
+      "source": {
+        "author": "de Matos et al.",
+        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+        "page": "PMID 20212918"
+      }
+    },
+    {
+      "text": "Sud-tibbiy qo‘llanish: bosh miya jarohatidan (TBI) o‘lgan 15 holatning hammasida jarohat yonidagi neyronlarda FOXO3a musbat chiqdi. Jarohatsiz sabablardan o‘lgan 15 holatlik nazorat guruhida hammasi manfiy bo‘ldi. Jarohatdan keyin o‘tgan vaqt uzaygan sari (eng ko‘pi 6 soat) musbatlik kuchaygan. Muallifler namunalar soni kichikligini cheklov deb ta’kidlagan.",
+      "source": {
+        "author": "Maiese et al.",
+        "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+        "page": "PMID 36768906"
+      }
+    }
+  ]
+}
