@@ -1,0 +1,1398 @@
+{
+  "topic_id": "4-kurs-davolash-03",
+  "source_lang": "uz",
+  "title_i18n": {
+    "uz": "№2. Ma’ruza: Sud-tibbiy travmatologiya.",
+    "ru": "№2. Лекция: Судебно-медицинская травматология.",
+    "en": "№2. Lecture: Forensic Traumatology."
+  },
+  "translation_status": {
+    "uz": "source",
+    "ru": "auto_unreviewed",
+    "en": "auto_unreviewed"
+  },
+  "questions": [
+    {
+      "id": "4-kurs-davolash-03-q01",
+      "question_i18n": {
+        "uz": "Travmatologiya atamasi grekcha so‘zlardan olingan. Shu atamadagi “trauma” so‘zi nimani anglatadi?",
+        "ru": "Термин «травматология» происходит от греческих слов. Что означает слово «травма» в этом термине?",
+        "en": "The term traumatology is derived from Greek words. What does the word \"trauma\" in this term mean?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ta’limot",
+          "Shikast",
+          "Davolash",
+          "Profilaktika"
+        ],
+        "ru": [
+          "Учение",
+          "Повреждение",
+          "Лечение",
+          "Профилактика"
+        ],
+        "en": [
+          "Doctrine",
+          "Injury",
+          "Treatment",
+          "Prevention"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Grekcha “trauma” shikast degan ma’noni beradi. “Logos” esa ta’limot demakdir, shuning uchun travmatologiya shikastlanishlar haqidagi fan hisoblanadi. Davolash va profilaktika esa klinik travmatologiyaning vazifalari bo‘lib, so‘zning tarjimasi emas.",
+        "ru": "Греческое «trauma» означает повреждение. «Logos» означает учение, поэтому травматология — это наука о повреждениях. Лечение и профилактика — задачи клинической травматологии, а не перевод этого слова.",
+        "en": "The Greek \"trauma\" means injury. \"Logos\" means doctrine (study), so traumatology is the science of injuries. Treatment and prevention are tasks of clinical traumatology, not the translation of the word."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "25"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q02",
+      "question_i18n": {
+        "uz": "Jarohatlarni tasniflashda qaysi holat “murakkab jarohat” deb nomlanadi?",
+        "ru": "При классификации повреждений какое состояние называется «комбинированным повреждением»?",
+        "en": "In the classification of injuries, which condition is called a \"complex injury\"?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bitta shikastlovchi omil ta’sirida paydo bo‘lgan jarohat",
+          "Ikki va undan ortiq anatomik sohani qamragan jarohat",
+          "Bir xil jarohatning bir necha marta takrorlanishi",
+          "Ikki va undan ortiq turdagi tashqi ta’sir natijasidagi jarohat"
+        ],
+        "ru": [
+          "Повреждение, возникшее под действием одного травмирующего фактора",
+          "Повреждение, охватывающее две и более анатомические области",
+          "Многократное повторение одного и того же повреждения",
+          "Повреждение в результате воздействия двух и более видов внешних факторов"
+        ],
+        "en": [
+          "An injury caused by a single damaging factor",
+          "An injury involving two or more anatomical regions",
+          "The repetition of the same injury several times",
+          "An injury resulting from two or more types of external action"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Murakkab jarohat ikki va undan ortiq turdagi tashqi ta’sir (masalan, mexanik va termik) natijasida hosil bo‘ladi. Bitta omildan paydo bo‘lgan jarohat oddiy deyiladi. Shikastlangan sohalar soni esa murakkablikni emas, balki cheklangan yoki qo‘sh jarohatni belgilaydi.",
+        "ru": "Комбинированное повреждение возникает в результате воздействия двух и более видов внешних факторов (например, механического и термического). Повреждение, возникшее от одного фактора, называется простым. Количество поврежденных областей определяет не сложность повреждения, а ограниченное или двойное повреждение.",
+        "en": "A complex injury results from two or more types of external action (for example, mechanical and thermal). An injury caused by a single factor is called simple. The number of injured regions does not determine complexity; rather, it defines a limited or double injury."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "26"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q03",
+      "question_i18n": {
+        "uz": "O‘pka va bosh miyaning muzlatilgan kesmalari Sudan IV bilan bo‘yalganda, yog‘ emboliyasida qon tomir bo‘shlig‘idagi yog‘ tomchilari qaysi rangda ko‘rinadi?",
+        "ru": "При окраске замороженных срезов легких и головного мозга Суданом IV в каком цвете видны капли жира в просвете сосудов при жировой эмболии?",
+        "en": "When frozen sections of the lung and brain are stained with Sudan IV, what color do the fat droplets in the vascular lumen appear in fat embolism?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qora",
+          "Olovrang qizil",
+          "Yashil",
+          "Ko‘k"
+        ],
+        "ru": [
+          "Черный",
+          "Огненно-красный",
+          "Зеленый",
+          "Синий"
+        ],
+        "en": [
+          "Black",
+          "Orange-red",
+          "Green",
+          "Blue"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Sudan IV yog‘ tomchilarini qora rangga bo‘yaydi. Sudan III esa olovrang qizil tus beradi, shuning uchun ikkinchi variant boshqa bo‘yoqqa tegishli. Yashil va ko‘k ranglar bu usul uchun xos emas.",
+        "ru": "Судан IV окрашивает капли жира в черный цвет. Судан III дает огненно-красный оттенок, поэтому второй вариант относится к другому красителю. Зеленый и синий цвета для этого метода не характерны.",
+        "en": "Sudan IV stains fat droplets black. Sudan III, by contrast, gives an orange-red color, so the second option belongs to a different stain. Green and blue colors are not characteristic of this method."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "32"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q04",
+      "question_i18n": {
+        "uz": "Murdada havo emboliyasiga shubha qilinganda Sunsov sinamasi o‘tkaziladi. Bunda perikard bo‘shlig‘iga suv quyilib, o‘ng qorincha devori teshiladi. Qaysi natija sinamani musbat qiladi?",
+        "ru": "При подозрении на воздушную эмболию на трупе проводится проба Сунсова. При этом в полость перикарда наливают воду и прокалывают стенку правого желудочка. Какой результат делает пробу положительной?",
+        "en": "When air embolism is suspected in a corpse, the Sunsov test is performed. In it, water is poured into the pericardial cavity and the wall of the right ventricle is punctured. Which result makes the test positive?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Suvning qon bilan qizarishi",
+          "Qorincha devoridan qonning otilib chiqishi",
+          "Suvdan havo pufakchalarining chiqishi",
+          "Perikarddagi suv sathining pasayishi"
+        ],
+        "ru": [
+          "Покраснение воды от крови",
+          "Выбрасывание крови струей из стенки желудочка",
+          "Выделение пузырьков воздуха из воды",
+          "Понижение уровня воды в перикарде"
+        ],
+        "en": [
+          "The water turning red with blood",
+          "Blood spurting out of the ventricular wall",
+          "Air bubbles escaping through the water",
+          "A drop in the water level in the pericardium"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Yurak o‘ng qorinchasi teshilganda suv ostida havo pufakchalari chiqsa, yurakda havo borligi tasdiqlanadi va sinama musbat hisoblanadi. Suvning rangi o‘zgarishi yoki qon oqishi havo emboliyasini isbotlamaydi. Suv sathining pasayishi ham bu sinamaning mezoni emas.",
+        "ru": "Если при проколе правого желудочка сердца под водой выходят пузырьки воздуха, это подтверждает наличие воздуха в сердце, и проба считается положительной. Изменение цвета воды или вытекание крови не доказывает воздушную эмболию. Понижение уровня воды также не является критерием этой пробы.",
+        "en": "If air bubbles escape under water when the right ventricle of the heart is punctured, the presence of air in the heart is confirmed and the test is considered positive. A change in the color of the water or the outflow of blood does not prove air embolism. A drop in the water level is also not a criterion of this test."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "32"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q05",
+      "question_i18n": {
+        "uz": "O‘tmas jismlarning ta’sir mexanizmlaridan biri siqilish hisoblanadi. Qaysi xususiyat aynan siqilish mexanizmiga xos?",
+        "ru": "Одним из механизмов действия тупых предметов является сдавление. Какая особенность характерна именно для механизма сдавления?",
+        "en": "Compression is one of the mechanisms of action of blunt objects. Which feature is specific to the compression mechanism?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tashqi jarohatlarga nisbatan ichki a’zolar va suyaklar shikasti jiddiyroq bo‘ladi",
+          "Jarohat og‘irligi asosan jismning harakat tezligiga bog‘liq bo‘ladi",
+          "Faqat bilvosita jarohatlar hosil bo‘ladi",
+          "Asosan faqat yuzaki shilinmalar paydo bo‘ladi"
+        ],
+        "ru": [
+          "Повреждения внутренних органов и костей тяжелее, чем наружные повреждения",
+          "Тяжесть повреждения зависит в основном от скорости движения предмета",
+          "Образуются только непрямые повреждения",
+          "В основном образуются лишь поверхностные ссадины"
+        ],
+        "en": [
+          "Damage to internal organs and bones is more severe than external injuries",
+          "The severity of the injury depends mainly on the speed of movement of the object",
+          "Only indirect injuries are formed",
+          "Mainly only superficial abrasions appear"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Siqilishda shikastlovchi jism katta massali va sekin harakatlanadi. Shu sababli jarohat xususiyati massa va ta’sir yuzasiga bog‘liq bo‘ladi, tezlikka emas. Ichki a’zolar va suyaklar tashqi jarohatlarga qaraganda og‘irroq shikastlanadi. Bu mexanizmda bevosita ham, bilvosita ham jarohatlar uchraydi, shilinma esa ishqalanishga xos.",
+        "ru": "При сдавлении травмирующий предмет имеет большую массу и движется медленно. Поэтому характер повреждения зависит от массы и площади воздействия, а не от скорости. Внутренние органы и кости повреждаются тяжелее, чем наружные покровы. При этом механизме встречаются как прямые, так и непрямые повреждения, а ссадина характерна для трения.",
+        "en": "In compression, the damaging object has a large mass and moves slowly. Therefore, the nature of the injury depends on the mass and the area of contact, not on speed. Internal organs and bones are damaged more severely than the external injuries. In this mechanism both direct and indirect injuries occur, while abrasion is characteristic of friction."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "35"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q06",
+      "question_i18n": {
+        "uz": "Ekspertiza jarayonida o‘tmas jism ta’siridan teri yorilishini yaradan farqlash muhim. Qaysi belgi yorilishni yaradan ajratadi?",
+        "ru": "В ходе экспертизы важно отличать разрыв кожи от действия тупого предмета от раны. Какой признак отличает разрыв от раны?",
+        "en": "In forensic examination, it is important to distinguish skin rupture caused by a blunt object from a wound. Which feature distinguishes a rupture from a wound?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Chetlari notekis va shilingan bo‘ladi",
+          "Chetlari tekis, shilinish alomatlarisiz bo‘ladi",
+          "Chekka devorlari orasida to‘qima ko‘prikchalari bo‘ladi",
+          "Yara tubi notekis sathli bo‘ladi"
+        ],
+        "ru": [
+          "Края неровные и осаднённые",
+          "Края ровные, без признаков осаднения",
+          "Между краями стенок имеются тканевые перемычки",
+          "Дно раны неровное"
+        ],
+        "en": [
+          "The edges are uneven and abraded",
+          "The edges are smooth, without signs of abrasion",
+          "There are tissue bridges between the wound walls",
+          "The base of the wound has an uneven surface"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Yorilish bilvosita jarohat bo‘lib, uning chetlari tekis, shilinishsiz, devorlari tikka, tubi bir sathda bo‘ladi. Notekis shilingan chetlar, to‘qima ko‘prikchalari va notekis tub esa o‘tmas jismdan hosil bo‘lgan yaraga xos belgilardir.",
+        "ru": "Разрыв является непрямым повреждением: его края ровные, без осаднения, стенки отвесные, дно находится на одном уровне. Неровные осаднённые края, тканевые перемычки и неровное дно характерны для раны, образованной тупым предметом.",
+        "en": "A rupture is an indirect injury; its edges are smooth and not abraded, its walls are vertical, and its base lies at one level. Uneven abraded edges, tissue bridges, and an uneven base are features of a wound formed by a blunt object."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "40"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q07",
+      "question_i18n": {
+        "uz": "O‘tmas jismning ta’sir yuzasi shikastlangan soha yuzasidan kichik bo‘lsa, shikastlovchi yuza qanday deb baholanadi?",
+        "ru": "Если площадь воздействия тупого предмета меньше площади поврежденной области, как оценивается травмирующая поверхность?",
+        "en": "If the contact surface of a blunt object is smaller than the area of the injured region, how is the damaging surface assessed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Cheklanmagan, keng yuza",
+          "Cheklangan yuza",
+          "Murakkab shakldagi yuza",
+          "G‘adir-budur relefli yuza"
+        ],
+        "ru": [
+          "Неограниченная, широкая поверхность",
+          "Ограниченная поверхность",
+          "Поверхность сложной формы",
+          "Поверхность с шероховатым рельефом"
+        ],
+        "en": [
+          "Unlimited, broad surface",
+          "Limited surface",
+          "Surface of complex shape",
+          "Surface with a rough relief"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Cheklangan va cheklanmagan yuzalarga bo‘lish nisbiy bo‘lib, jism yuzasi bilan shikastlangan soha yuzasining o‘zaro nisbatiga qarab belgilanadi. Jism yuzasi shikastlangan sohadan kichik bo‘lsa, u cheklangan hisoblanadi. Boshqa variantlar yuzaning o‘lchamini emas, shakli yoki relefini ifodalaydi.",
+        "ru": "Деление на ограниченную и неограниченную поверхности относительно и определяется соотношением площади поверхности предмета и площади поврежденной области. Если поверхность предмета меньше поврежденной области, она считается ограниченной. Остальные варианты отражают не размер поверхности, а ее форму или рельеф.",
+        "en": "The division into limited and unlimited surfaces is relative and is determined by the ratio of the surface of the object to the area of the injured region. If the surface of the object is smaller than the injured region, it is considered limited. The other options describe the shape or relief of the surface, not its size."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "33-34"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q08",
+      "question_i18n": {
+        "uz": "Murda ekspertizasida teri sathida yoki undan biroz pastroqda joylashgan sariq-jigarrang quruq dog‘ topildi. Unda qoplama hosil bo‘lmagan va hayotiy jarohatga xos o‘zgarishlar aniqlanmadi. Bu qanday o‘zgarish?",
+        "ru": "При экспертизе трупа на уровне поверхности кожи или чуть ниже обнаружено желто-коричневое сухое пятно. Корочка не образовалась, изменений, характерных для прижизненного повреждения, не выявлено. Что это за изменение?",
+        "en": "During a postmortem examination, a yellow-brown dry spot was found at the level of the skin surface or slightly below it. No crust had formed on it, and no changes characteristic of a vital injury were detected. What kind of change is this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Chuqur shilinma",
+          "Qontalash",
+          "Murda dog‘i",
+          "Pergament dog‘i"
+        ],
+        "ru": [
+          "Глубокая ссадина",
+          "Кровоподтек",
+          "Трупное пятно",
+          "Пергаментное пятно"
+        ],
+        "en": [
+          "Deep abrasion",
+          "Bruise",
+          "Livor mortis (postmortem lividity)",
+          "Parchment-like spot"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "O‘limdan keyin terining qurishi natijasida hosil bo‘lgan pergament dog‘i shilinmaga o‘xshaydi. Biroq unda hayotiy shilinmadagi qoplama va reaktiv o‘zgarishlar bo‘lmaydi, shuning uchun ularni farqlash mumkin. Chuqur shilinma va qontalashda hayotiy reaksiya belgilari topiladi. Murda dog‘i esa qonning pastga cho‘kishi bilan bog‘liq.",
+        "ru": "Пергаментное пятно, образующееся в результате высыхания кожи после смерти, похоже на ссадину. Однако в нем нет корочки и реактивных изменений, свойственных прижизненной ссадине, поэтому их можно различить. При глубокой ссадине и кровоподтеке обнаруживаются признаки прижизненной реакции. Трупное пятно связано со стеканием крови в нижележащие части.",
+        "en": "A parchment-like spot formed by drying of the skin after death resembles an abrasion. However, it lacks the crust and reactive changes seen in a vital abrasion, so they can be distinguished. Signs of vital reaction are found in deep abrasions and bruises. Livor mortis is associated with the settling of blood downward."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "37"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q09",
+      "question_i18n": {
+        "uz": "Angliya va Uelsdagi Offences against the Person Act 1861 (Shaxsga qarshi jinoyatlar to‘g‘risidagi qonun) ning 18-bo‘limida nazarda tutilgan jinoyatning asosiy elementi nima?",
+        "ru": "Что является основным элементом преступления, предусмотренного статьей 18 Offences against the Person Act 1861 (Закон о преступлениях против личности) в Англии и Уэльсе?",
+        "en": "What is the main element of the offence provided for in section 18 of the Offences against the Person Act 1861 in England and Wales?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Og‘ir tan jarohati yetkazishga qaratilgan niyat (qasd)",
+          "Jabrlanganning o‘limga uchrashi",
+          "Jabrlanganga tibbiy davolash zarurligi",
+          "Jarohat yetkazishda o‘tkir qurol ishlatilgani"
+        ],
+        "ru": [
+          "Умысел (намерение), направленный на причинение тяжкого телесного повреждения",
+          "Наступление смерти потерпевшего",
+          "Необходимость медицинского лечения потерпевшего",
+          "Использование острого оружия при причинении повреждения"
+        ],
+        "en": [
+          "Intent to cause grievous bodily harm",
+          "The death of the victim",
+          "The need for medical treatment of the victim",
+          "The use of a sharp weapon in inflicting the injury"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "18-bo‘limda asosiy belgi qasd, ya’ni og‘ir tan jarohati yetkazish niyatidir. Qasdsiz og‘ir tan jarohati yetkazish nisbatan yengilroq 20-bo‘limga kiradi. O‘lim, davolanish zarurati yoki qurol turi bu bo‘limning asosiy elementi emas.",
+        "ru": "В статье 18 основным признаком является умысел, то есть намерение причинить тяжкое телесное повреждение. Причинение тяжкого телесного повреждения без умысла относится к более мягкой статье 20. Смерть, необходимость лечения или вид оружия не являются основным элементом этой статьи.",
+        "en": "The main feature in section 18 is intent, that is, the intention to cause grievous bodily harm. Causing grievous bodily harm without intent falls under the comparatively less serious section 20. Death, the need for treatment, or the type of weapon is not the main element of this section."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "77"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q10",
+      "question_i18n": {
+        "uz": "Katta qon yo‘qotish (50% dan ortiq, ya’ni 2,5 litr va undan ko‘p) bir necha soat davomida sekin yuz berganda murdada qaysi belgi xos?",
+        "ru": "Какой признак характерен для трупа при массивной кровопотере (более 50%, то есть 2,5 литра и более), развившейся медленно в течение нескольких часов?",
+        "en": "When massive blood loss (more than 50%, that is, 2.5 liters or more) occurs slowly over several hours, which feature is characteristic in the corpse?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Taloq odatdagidek qon bilan to‘yingan bo‘ladi",
+          "Minakov dog‘lari har doim topiladi",
+          "Murda dog‘lari kech paydo bo‘ladi va kam bo‘ladi",
+          "Mushak qotishi sust rivojlanadi"
+        ],
+        "ru": [
+          "Селезенка, как обычно, насыщена кровью",
+          "Пятна Минакова обнаруживаются всегда",
+          "Трупные пятна появляются поздно и бывают скудными",
+          "Трупное окоченение развивается слабо"
+        ],
+        "en": [
+          "The spleen is saturated with blood as usual",
+          "Minakov spots are always found",
+          "Livor mortis appears late and is scanty",
+          "Rigor mortis develops weakly"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Sekin kechgan katta qon yo‘qotishda organizmda umumiy kamqonlik rivojlanib ulguradi. Shu sababli murda dog‘lari kech paydo bo‘ladi va kam ifodalanadi. Taloq esa qisqargan va kamqon bo‘ladi, mushak qotishi kuchliroq rivojlanadi. Minakov dog‘lari faqat ayrim hollarda topiladi, ular tez, o‘tkir qon yo‘qotishga xos.",
+        "ru": "При медленной массивной кровопотере в организме успевает развиться общее малокровие. Поэтому трупные пятна появляются поздно и слабо выражены. Селезенка сокращена и малокровна, трупное окоченение развивается сильнее. Пятна Минакова обнаруживаются лишь в отдельных случаях, они характерны для быстрой, острой кровопотери.",
+        "en": "In slowly developing massive blood loss, general anemia has time to develop in the body. Therefore, livor mortis appears late and is poorly expressed. The spleen is contracted and anemic, and rigor mortis develops more strongly. Minakov spots are found only in some cases; they are characteristic of rapid, acute blood loss."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "31"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q11",
+      "question_i18n": {
+        "uz": "Epidural gematomada jarohat etkazilgan paytdan miyaning bosilish belgilari rivojlanguncha odatda qaysi davr kuzatiladi?",
+        "ru": "Какой период обычно наблюдается при эпидуральной гематоме от момента травмы до развития признаков сдавления головного мозга?",
+        "en": "In epidural hematoma, which period is usually observed between the time of injury and the development of signs of brain compression?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Agonal davr",
+          "Terminal pauza",
+          "Latent yallig‘lanish davri",
+          "Yorug‘ oraliq"
+        ],
+        "ru": [
+          "Агональный период",
+          "Терминальная пауза",
+          "Латентный период воспаления",
+          "Светлый промежуток"
+        ],
+        "en": [
+          "Agonal period",
+          "Terminal pause",
+          "Latent inflammatory period",
+          "Lucid interval"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Epidural gematomada qon asta-sekin to‘planib, miya bosilishi kechroq rivojlanadi. Shuning uchun jabrlanuvchi ma’lum vaqt xushi joyida, bunga yorug‘ oraliq deyiladi. Bunday vaqtda u harakatlanishi, hatto janjallashishi mumkin. Boshqa nomlar bu holatni ifodalamaydi.",
+        "ru": "При эпидуральной гематоме кровь накапливается постепенно, и сдавление головного мозга развивается позже. Поэтому пострадавший некоторое время находится в сознании, и это называется светлым промежутком. В таком состоянии он может двигаться и даже драться. Другие названия не описывают это состояние.",
+        "en": "In epidural hematoma, blood accumulates gradually and brain compression develops later. Therefore the victim remains conscious for a certain time, which is called the lucid interval. During this time he may move around and even get into fights. The other terms do not describe this condition."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "63"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q12",
+      "question_i18n": {
+        "uz": "Temir yo‘l g‘ildiragi tanani bosib o‘tib, uni bo‘laklarga ajratganda hosil bo‘ladigan kesishgan (klinsimon) nuqsonning uchi qaysi tomonga qaragan bo‘ladi?",
+        "ru": "Когда колесо железнодорожного состава проезжает по телу и разделяет его на части, в какую сторону обращена вершина образующегося рассечённого (клиновидного) дефекта?",
+        "en": "When a railway wheel runs over the body and separates it into pieces, toward which side does the apex of the resulting cut (wedge-shaped) defect point?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Relsga qaragan",
+          "G‘ildirak tomoniga qaragan",
+          "Poyezd harakati yo‘nalishiga qaragan",
+          "Reborda (g‘ildirak gardishi) tomoniga qaragan"
+        ],
+        "ru": [
+          "Обращена к рельсу",
+          "Обращена в сторону колеса",
+          "Обращена по направлению движения поезда",
+          "Обращена в сторону реборды (гребня колеса)"
+        ],
+        "en": [
+          "Toward the rail",
+          "Toward the wheel side",
+          "Toward the direction of train movement",
+          "Toward the flange (wheel rim) side"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "G‘ildirak tomonidan shikastlanish hajmi relsga nisbatan katta bo‘ladi. Shu sababli nuqsonning keng asosi g‘ildirak tomonida, uchi esa relsga qaragan bo‘ladi. Bu temir yo‘l g‘ildiragi bosib o‘tganining muhim belgisi hisoblanadi. Boshqa variantlar nuqson yo‘nalishiga mos kelmaydi.",
+        "ru": "Со стороны колеса объём повреждения больше, чем со стороны рельса. Поэтому широкое основание дефекта расположено со стороны колеса, а вершина обращена к рельсу. Это важный признак переезда колесом железнодорожного состава. Остальные варианты не соответствуют направлению дефекта.",
+        "en": "The extent of damage on the wheel side is greater than on the rail side. Therefore the wide base of the defect is on the wheel side, and its apex points toward the rail. This is an important sign that a railway wheel has run over the body. The other options do not match the direction of the defect."
+      },
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "81"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q13",
+      "question_i18n": {
+        "uz": "Zarbdan so‘ng teri ustida qizargan soha paydo bo‘ldi. Uni qizil rangli qontalashdan farqlash uchun qaysi belgiga e’tibor beriladi?",
+        "ru": "После удара на коже появилась покрасневшая область. На какой признак обращают внимание, чтобы отличить её от кровоподтёка красного цвета?",
+        "en": "After a blow, a reddened area appeared on the skin. Which sign is used to distinguish it from a red-colored bruise?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qizargan joyda qon laxtalarining ko‘z bilan ko‘rinishi",
+          "Qizargan joyda terining sovib, harorati pasayishi",
+          "Barmoq bilan bosilganda qizil rangning vaqtincha oqarishi",
+          "Joy chetlarida quruq qoplamaning hosil bo‘lishi"
+        ],
+        "ru": [
+          "Видимые невооружённым глазом сгустки крови в месте покраснения",
+          "Похолодание кожи и снижение температуры в месте покраснения",
+          "Временное побледнение красного цвета при надавливании пальцем",
+          "Образование сухого налёта по краям участка"
+        ],
+        "en": [
+          "Visible blood clots in the reddened area",
+          "Cooling of the skin with lowered temperature in the reddened area",
+          "Temporary blanching of the red color on pressure with a finger",
+          "Formation of a dry crust at the edges of the area"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Qizarishda qon oqimi ko‘payadi, ammo tomirlar yorilmaydi. Shu sababli bosim ostida rang oqaradi. Qontalashda qon tomirdan tashqariga chiqib to‘qimaga singib ketgan, shuning uchun bosim bilan oqarmaydi.",
+        "ru": "При покраснении кровоток усиливается, но сосуды не разрываются. Поэтому под давлением цвет бледнеет. При кровоподтёке кровь вышла за пределы сосуда и пропитала ткань, поэтому при надавливании он не бледнеет.",
+        "en": "In reddening, blood flow increases but the vessels do not rupture. Therefore the color blanches under pressure. In a bruise, blood has escaped from the vessel and infiltrated the tissue, so it does not blanch with pressure."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "79"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q14",
+      "question_i18n": {
+        "uz": "Zamonaviy sud-tibbiy qarashga ko‘ra qontalash rangiga qarab uning yoshini baholash qabul qilinmaydi. Bu qoidaning yagona istisnosi qaysi?",
+        "ru": "Согласно современным судебно-медицинским представлениям, оценка давности кровоподтёка по его цвету не принимается. Что является единственным исключением из этого правила?",
+        "en": "According to the modern forensic medical view, assessing the age of a bruise by its color is not accepted. What is the only exception to this rule?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Sariq tusli qontalash 18 soatdan ortiq vaqt oldin hosil bo‘lgan bo‘lishi mumkin",
+          "Yashil tusli qontalash aynan 5 sutka oldin hosil bo‘lgan bo‘ladi",
+          "Ko‘kimtir tusli qontalash 6 soatdan kam vaqt oldin paydo bo‘lgan bo‘ladi",
+          "Qizg‘ish tusli qontalash 3 sutkadan ortiq vaqt oldin hosil bo‘lgan bo‘ladi"
+        ],
+        "ru": [
+          "Кровоподтёк жёлтого оттенка может быть образован более 18 часов назад",
+          "Кровоподтёк зелёного оттенка образовался ровно 5 суток назад",
+          "Кровоподтёк синюшного оттенка появился менее 6 часов назад",
+          "Кровоподтёк красноватого оттенка образовался более 3 суток назад"
+        ],
+        "en": [
+          "A yellowish bruise may have formed more than 18 hours ago",
+          "A green bruise has formed exactly 5 days ago",
+          "A bluish bruise has appeared less than 6 hours ago",
+          "A reddish bruise has formed more than 3 days ago"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Rang idrokiga ko‘ruvchining ko‘rish qobiliyati, kuzatuvchilar o‘rtasidagi farq va teri rangi ta’sir qiladi. Shuning uchun faqat sariq tus ancha kech belgi sifatida e’tirof etiladi va qontalashning 18 soatdan ortiq eskiligini ko‘rsatishi mumkin. Boshqa variantlardagi aniq muddatlar bunday ishonchlilikka ega emas.",
+        "ru": "На восприятие цвета влияют зрение наблюдателя, различия между наблюдателями и цвет кожи. Поэтому лишь жёлтый оттенок признаётся достаточно поздним признаком и может указывать на давность кровоподтёка более 18 часов. Точные сроки в других вариантах такой надёжностью не обладают.",
+        "en": "Color perception is affected by the observer's vision, differences between observers, and skin color. Therefore only a yellow tint is recognized as a fairly late sign, and it may indicate that a bruise is older than 18 hours. The exact time frames in the other options do not have such reliability."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "82"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q15",
+      "question_i18n": {
+        "uz": "Tanaga markazdan qochuvchi yo‘nalishda ikki yoki undan ortiq kuch ta’sir etib, yirtma yaralar, to‘qima yorilishlari va tana qismlarining ajralishi hosil bo‘ldi. Bu o‘tmas jism ta’sirining qaysi mexanizmiga xos?",
+        "ru": "На тело в центробежном направлении воздействовали две или более силы, в результате образовались рваные раны, разрывы тканей и отделение частей тела. Для какого механизма действия тупого предмета это характерно?",
+        "en": "Two or more forces acted on the body in diverging (centrifugal) directions, producing lacerations, tissue ruptures, and separation of body parts. Which mechanism of blunt object action is this typical of?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Siqilish",
+          "Cho‘zilish",
+          "Ishqalanish",
+          "Buralish"
+        ],
+        "ru": [
+          "Сжатие",
+          "Растяжение",
+          "Трение",
+          "Скручивание"
+        ],
+        "en": [
+          "Compression",
+          "Tension (stretching)",
+          "Friction",
+          "Torsion (twisting)"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Cho‘zilishda kuchlar tanani turli tomonga tortadi va asosan bilvosita jarohatlar hosil bo‘ladi: yirtma yaralar, yorilishlar, tana qismlarining ajralishi. Siqilishda kuchlar bir-biriga qarab yo‘nalgan, ishqalanish asosan shilinma beradi, buralish esa suyaklarda spiralsimon sinish chiqaradi.",
+        "ru": "При растяжении силы тянут тело в разные стороны, и образуются преимущественно непрямые повреждения: рваные раны, разрывы, отделение частей тела. При сжатии силы направлены навстречу друг другу, трение даёт в основном ссадины, а скручивание вызывает спиральные переломы костей.",
+        "en": "In tension, forces pull the body in different directions, and mainly indirect injuries are produced: lacerations, ruptures, separation of body parts. In compression, the forces are directed toward each other; friction mainly produces abrasions; and torsion produces spiral fractures in bones."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "35"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q16",
+      "question_i18n": {
+        "uz": "Qorin sohasidagi sanchma-kesma yarani tekshirishda yara kanalining uzunligi shubhalanilayotgan pichoq tig‘ining uzunligidan katta chiqdi. Qaysi izoh eng to‘g‘ri?",
+        "ru": "При исследовании колото-резаной раны в области живота длина раневого канала оказалась больше длины клинка предполагаемого ножа. Какое объяснение наиболее верно?",
+        "en": "When examining a stab-cut wound of the abdominal region, the length of the wound track turned out to be greater than the length of the suspected knife blade. Which explanation is most correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Pichoqni tanadan chiqarishda kanal cho‘zilib uzayib ketgan",
+          "Pichoqning o‘tmas tomoni suyakka tiralib, kanalni uzaytirgan",
+          "Kanal uzunligi faqat ichki a’zolarning siljishi hisobiga ortgan",
+          "Zarb kuchli bo‘lib, dasta yoki qo‘l bilan qorin devori botib kirgan"
+        ],
+        "ru": [
+          "При извлечении ножа из тела канал растянулся и удлинился",
+          "Тупая сторона (обух) ножа упёрлась в кость и удлинила канал",
+          "Длина канала увеличилась только за счёт смещения внутренних органов",
+          "Удар был сильным, и рукоятью или рукой брюшная стенка была вдавлена"
+        ],
+        "en": [
+          "The track stretched and lengthened when the knife was withdrawn from the body",
+          "The blunt edge of the knife pressed against bone and lengthened the track",
+          "The track length increased only due to displacement of the internal organs",
+          "The blow was forceful, and the abdominal wall was depressed inward by the handle or the hand"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Kuchli zarbda tig‘ning dastasi yoki pichoq ushlagan qo‘l qorin devorini ichkariga botiradi. Shu sababli kanal tig‘ uzunligidan ham uzun bo‘lishi mumkin. Boshqa variantlar kanal uzunligini bu mexanizm bilan izohlamaydi.",
+        "ru": "При сильном ударе рукоять клинка или рука, держащая нож, вдавливает брюшную стенку внутрь. Поэтому канал может быть длиннее клинка. Другие варианты не объясняют длину канала этим механизмом.",
+        "en": "With a forceful blow, the knife handle or the hand holding the knife depresses the abdominal wall inward. Therefore the track can be even longer than the blade. The other options do not explain the track length by this mechanism."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "88"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q17",
+      "question_i18n": {
+        "uz": "Murdada bilak oldingi yuzasi va bo‘yin old sohasida ko‘p sonli, asosan parallel, ayrimlari yuzaki kesma yaralar topildi. Kaft ichki yuzasida jarohat yo‘q, ko‘z, lab va jinsiy a’zolar sog‘. Qaysi xulosa eng ehtimolli?",
+        "ru": "На трупе на передней поверхности предплечий и в передней области шеи обнаружены многочисленные, преимущественно параллельные, местами поверхностные резаные раны. На ладонной поверхности кистей повреждений нет, глаза, губы и половые органы не повреждены. Какой вывод наиболее вероятен?",
+        "en": "On a cadaver, numerous, mostly parallel incised wounds, some of them superficial, were found on the anterior surface of the forearm and the anterior neck. There are no injuries on the palmar surface; the eyes, lips, and genitals are intact. Which conclusion is most probable?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Mudofaa jarohatlari: jabrlangan pichoq tig‘ini qo‘li bilan ushlashga urinishi",
+          "Qiynoq natijasi, chunki jarohatlar tananing hamma qismiga tarqaladi",
+          "O‘z-o‘ziga etkazilgan, yuzaki ikkilanish jarohatlari bilan kechgan o‘z joniga qasd qilish urinishi",
+          "Arralovchi jism bilan tasodifan, baxtsiz hodisa tarzida etkazilgan jarohatlar"
+        ],
+        "ru": [
+          "Оборонительные повреждения: попытка пострадавшего схватить клинок ножа рукой",
+          "Результат пыток, так как повреждения распространяются на все части тела",
+          "Самопричинённые повреждения: попытка самоубийства с поверхностными пробными ранами (ранами нерешительности)",
+          "Повреждения, случайно причинённые пилящим предметом в результате несчастного случая"
+        ],
+        "en": [
+          "Defensive wounds: the victim tried to grasp the knife blade with the hand",
+          "The result of torture, since the injuries are spread over all parts of the body",
+          "A self-inflicted suicide attempt with superficial hesitation wounds",
+          "Injuries inflicted accidentally by a sawing object"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "O‘z joniga qasd qilishda kesma yaralar ko‘pincha bilak old yuzasi va bo‘yinda joylashadi, bir-biriga parallel bo‘ladi va yuzaki ikkilanish jarohatlari uchraydi. Mudofaa jarohatlari kaft ichki yuzasida va qo‘l-bilak yozuvchi tomonida bo‘ladi, bu holda ular yo‘q. Bu belgilar yakuniy dalil emas, faqat ehtimolni kuchaytiradi.",
+        "ru": "При самоубийстве резаные раны часто располагаются на передней поверхности предплечий и на шее, параллельны друг другу, встречаются поверхностные пробные раны (раны нерешительности). Оборонительные повреждения бывают на ладонной поверхности и на разгибательной стороне кисти и предплечья; в данном случае их нет. Эти признаки не являются окончательным доказательством, а лишь повышают вероятность.",
+        "en": "In suicide, incised wounds are often located on the anterior surface of the forearm and on the neck, are parallel to each other, and superficial hesitation wounds are present. Defensive wounds are located on the palmar surface and on the extensor side of the hand and forearm; they are absent here. These signs are not conclusive evidence; they only increase the probability."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "92"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q18",
+      "question_i18n": {
+        "uz": "Tekis yuzaga o‘z bo‘yi balandligidan yiqilgan deb taxmin qilingan shaxsda bosh jarohatidan tashqari tizza va kaft yuzalarida shilinma va qontalashlar topildi. Yiqilish yo‘nalishi haqida qaysi xulosa to‘g‘ri?",
+        "ru": "У лица, предположительно упавшего на ровную поверхность с высоты собственного роста, помимо травмы головы, на коленях и ладонях обнаружены ссадины и кровоподтёки. Какой вывод о направлении падения верен?",
+        "en": "In a person presumed to have fallen from standing height onto a flat surface, abrasions and bruises were found on the knees and palms in addition to the head injury. Which conclusion about the direction of the fall is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Oldinga, yuz tomonga yiqilish ehtimoli yuqori",
+          "Orqaga, tirsak sohalariga tayanib yiqilish ehtimoli yuqori",
+          "Balandlikdan bosqichli yiqilish ehtimoli yuqori",
+          "Transport vositasidan yiqilish ehtimoli yuqori"
+        ],
+        "ru": [
+          "Высока вероятность падения вперёд, на лицо",
+          "Высока вероятность падения назад, с опорой на локти",
+          "Высока вероятность ступенчатого падения с высоты",
+          "Высока вероятность падения с транспортного средства"
+        ],
+        "en": [
+          "A forward fall onto the face is highly probable",
+          "A backward fall, landing on the elbows, is highly probable",
+          "A stepwise fall from a height is highly probable",
+          "A fall from a vehicle is highly probable"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Yuzaga yiqilishda oldinga yiqilganda tizza va kaftlar, orqaga yiqilganda tirsaklar jarohatlanadi. Shuning uchun tizza va kaftdagi shilinmalar oldinga yiqilishni ko‘rsatadi. Bosqichli yoki transportdan yiqilish bu holatga mos kelmaydi.",
+        "ru": "При падении на плоскость при падении вперёд повреждаются колени и ладони, при падении назад — локти. Поэтому ссадины на коленях и ладонях указывают на падение вперёд. Ступенчатое падение или падение с транспорта этой ситуации не соответствуют.",
+        "en": "In a fall onto a surface, the knees and palms are injured in a forward fall, and the elbows in a backward fall. Therefore abrasions on the knees and palms indicate a forward fall. A stepwise fall or a fall from a vehicle does not fit this situation."
+      },
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "85"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q19",
+      "question_i18n": {
+        "uz": "Tekis yuzaga yiqilgan deb taxmin qilingan shaxsning boshida jarohatlar “shlyapa chetlari” chizig‘idan yuqori sohada joylashgan. Bu holat qaysi xulosaga ko‘proq mos keladi?",
+        "ru": "У лица, предположительно упавшего на ровную поверхность, повреждения на голове расположены выше линии «полей шляпы». Какому выводу это больше соответствует?",
+        "en": "In a person presumed to have fallen onto a flat surface, the head injuries are located above the \"hat brim\" line. Which conclusion does this finding best support?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Jarohatlar yiqilishdan ko‘ra boshga zarb berilganini ko‘proq ko‘rsatadi",
+          "Jarohatlar tekis yuzaga yiqilish uchun xos bo‘lib, zarb gumonini inkor etadi",
+          "Jarohatlar o‘limdan keyin murdaga etkazilganidan dalolat beradi",
+          "Jarohatlar faqat bilvosita zarb mexanizmida hosil bo‘lganini bildiradi"
+        ],
+        "ru": [
+          "Повреждения больше указывают на удар по голове, чем на падение",
+          "Повреждения характерны для падения на ровную поверхность и исключают предположение об ударе",
+          "Повреждения свидетельствуют о том, что они причинены трупу после смерти",
+          "Повреждения указывают на то, что они образовались только по механизму непрямого удара"
+        ],
+        "en": [
+          "The injuries indicate a blow to the head rather than a fall",
+          "The injuries are typical of a fall onto a flat surface and rule out suspicion of a blow",
+          "The injuries indicate that they were inflicted on the body after death",
+          "The injuries indicate that they were formed only by an indirect impact mechanism"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "“Shlyapa chetlari” qoidasiga ko‘ra, bu chiziqdan yuqoridagi jarohatlar (hech bo‘lmaganda tekis yuzaga yiqilishda) yiqilishdan ko‘ra zarbdan hosil bo‘lgan deb baholanadi. Boshqa variantlar bu qoidaga yoki jarohatning hayotiyligi masalasiga mos kelmaydi.",
+        "ru": "Согласно правилу «полей шляпы», повреждения выше этой линии (по крайней мере при падении на плоскость) оцениваются как образовавшиеся от удара, а не от падения. Другие варианты не соответствуют этому правилу или вопросу прижизненности повреждения.",
+        "en": "According to the \"hat brim\" rule, injuries above this line (at least in a fall onto a flat surface) are assessed as resulting from a blow rather than from a fall. The other options do not correspond to this rule or to the question of the vitality of the injury."
+      },
+      "source": {
+        "author": "Ромодановский П.О., Баринов Е.Х.",
+        "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "161, 168"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q20",
+      "question_i18n": {
+        "uz": "Murdada kalla suyagida ikkita sinish chizig‘i topildi: A chizig‘i B chizig‘iga yetib kelib, uni kesib o‘tmasdan to‘xtagan. Sinishlar ketma-ketligi haqida qaysi xulosa to‘g‘ri?",
+        "ru": "На трупе в костях черепа обнаружены две линии перелома: линия A доходит до линии B и останавливается, не пересекая её. Какой вывод о последовательности переломов верен?",
+        "en": "Two fracture lines were found in the skull of a cadaver: line A reaches line B and stops without crossing it. Which conclusion about the sequence of the fractures is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "A chizig‘i B chizig‘idan oldin hosil bo‘lgan",
+          "B chizig‘i A chizig‘idan oldin hosil bo‘lgan",
+          "Ikkala chiziq bir vaqtda hosil bo‘lgan, ketma-ketlikni aniqlab bo‘lmaydi",
+          "Ketma-ketlikni faqat sinish chetlarining rangiga qarab aniqlash mumkin"
+        ],
+        "ru": [
+          "Линия A образовалась раньше линии B",
+          "Линия B образовалась раньше линии A",
+          "Обе линии образовались одновременно, последовательность определить невозможно",
+          "Последовательность можно определить только по цвету краёв переломов"
+        ],
+        "en": [
+          "Line A was formed before line B",
+          "Line B was formed before line A",
+          "Both lines were formed at the same time; the sequence cannot be determined",
+          "The sequence can be determined only by the color of the fracture edges"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Hosil bo‘layotgan sinish chizig‘i faqat mavjud sinish chizig‘igacha tarqaladi va uni kesib o‘tmaydi. Shuning uchun to‘xtagan A chizig‘i keyin hosil bo‘lgan, B esa avval. Rang bo‘yicha ketma-ketlikni aniqlash bu qoidaning mohiyatiga kirmaydi.",
+        "ru": "Образующаяся линия перелома распространяется только до уже существующей линии перелома и не пересекает её. Поэтому остановившаяся линия A образовалась позже, а B — раньше. Определение последовательности по цвету не относится к сути этого правила.",
+        "en": "A newly forming fracture line propagates only up to an existing fracture line and does not cross it. Therefore line A, which stopped, formed later, and B formed earlier. Determining the sequence by color is not part of the essence of this rule."
+      },
+      "source": {
+        "author": "Ромодановский П.О., Баринов Е.Х.",
+        "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "168"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q21",
+      "question_i18n": {
+        "uz": "Frontal to‘qnashuvda rul g‘ildiragiga ko‘krak va qo‘llari bilan urilgan haydovchida qaysi jarohatlar majmui ko‘proq kutiladi?",
+        "ru": "Какой комплекс повреждений наиболее вероятен у водителя, ударившегося при лобовом столкновении о рулевое колесо грудью и руками?",
+        "en": "In a frontal collision, which complex of injuries is most expected in a driver who struck the steering wheel with the chest and hands?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Orqa yuzada ko‘plab parallel shilinmalar va bo‘yin umurtqalarining bukilishdan sinishi",
+          "Tizza va boldirning old yuzasida bamper tipidagi sinishlar hamda qo‘ng‘iroqsimon yaralar",
+          "Yoysimon shilinma va qontalashlar, to‘sh suyagi va qobirg‘alar sinishi, bosh va ko‘rsatkich barmoq orasida teri yorilishi",
+          "Tananing bir yonida cho‘ziq shilinmalar, tovon suyaklari sinishi va ichki a’zolarning chayqalish belgilari"
+        ],
+        "ru": [
+          "Множественные параллельные ссадины на задней поверхности и сгибательные переломы шейных позвонков",
+          "Бамперные переломы на передней поверхности коленей и голеней, а также колоколообразные раны",
+          "Дугообразные ссадины и кровоподтёки, переломы грудины и рёбер, разрыв кожи между большим и указательным пальцами",
+          "Протяжённые ссадины на одной боковой стороне тела, переломы пяточных костей и признаки сотрясения внутренних органов"
+        ],
+        "en": [
+          "Multiple parallel abrasions on the back surface and flexion fractures of the cervical vertebrae",
+          "Bumper-type fractures and bell-shaped wounds on the anterior surface of the knee and shin",
+          "Arc-shaped abrasions and bruises, fractures of the sternum and ribs, and a skin tear between the thumb and index finger",
+          "Elongated abrasions on one side of the body, fractures of the calcaneus, and signs of concussion of the internal organs"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Rulga urilganda tananing old yuzasida yoysimon shilinma va qontalashlar, to‘sh va qobirg‘alar sinishi, kistlarda esa birinchi va ikkinchi barmoqlar orasida teri yorilishi hamda suyak shikastlari uchraydi. Boshqa variantlar piyodani urib ketish, orqadan zarb yoki balandlikdan yiqilishga xos.",
+        "ru": "При ударе о руль на передней поверхности тела образуются дугообразные ссадины и кровоподтёки, переломы грудины и рёбер, а в области кистей — разрыв кожи между первым и вторым пальцами, а также костные повреждения. Остальные варианты характерны для наезда на пешехода, удара сзади или падения с высоты.",
+        "en": "On striking the steering wheel, arc-shaped abrasions and bruises and fractures of the sternum and ribs occur on the anterior surface of the body, while in the hands a skin tear between the first and second fingers and bone injuries occur. The other options are typical of a pedestrian being struck, a blow from behind, or a fall from a height."
+      },
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "79"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q22",
+      "question_i18n": {
+        "uz": "Boshga ko‘ndalang kesimi taxminan 25 sm² bo‘lgan keng yuzali qattiq o‘tmas jism bilan kuchli zarb berildi. Kalla suyagida qaysi sinish ko‘proq kutiladi?",
+        "ru": "По голове нанесён сильный удар твёрдым тупым предметом с широкой поверхностью, площадь поперечного сечения которого около 25 см². Какой перелом костей черепа наиболее вероятен?",
+        "en": "A forceful blow was delivered to the head with a hard blunt object with a broad surface and a cross-section of approximately 25 cm². Which skull fracture is most expected?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tuynuksimon sinish",
+          "Ichki plastinkada cheklangan darz ketish",
+          "Faqat tashqi plastinkaning yuzaki sinishi",
+          "Parchalanib sinish"
+        ],
+        "ru": [
+          "Дырчатый перелом",
+          "Ограниченная трещина во внутренней пластинке",
+          "Только поверхностный перелом наружной пластинки",
+          "Оскольчатый перелом"
+        ],
+        "en": [
+          "Perforating (punched-out) fracture",
+          "Limited fissure in the inner table",
+          "Superficial fracture of the outer table only",
+          "Comminuted fracture"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Tuynuksimon sinish kesimi 9-16 sm² dan kichik jism bilan kuchli zarbda hosil bo‘ladi. Kesimi bundan katta keng yuzali o‘tmas vositalar esa parchalanib sinishni keltirib chiqaradi. 25 sm² bu chegaradan ancha yuqori.",
+        "ru": "Дырчатый перелом образуется при сильном ударе предметом с площадью сечения менее 9-16 см². Тупые предметы с широкой поверхностью и большей площадью сечения вызывают оскольчатый перелом. 25 см² значительно превышает эту границу.",
+        "en": "A perforating fracture forms from a forceful blow with an object whose cross-section is smaller than 9-16 cm². Broad-surfaced blunt objects with a larger cross-section cause a comminuted fracture. 25 cm² is well above this threshold."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "53"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q23",
+      "question_i18n": {
+        "uz": "Jabrlanuvchi boshiga beysbol tayoqchasi bilan zarb yo‘nalganda qo‘llarini ko‘tarib himoyalangan. Qontalashlar qaysi sohada ko‘proq kutiladi?",
+        "ru": "При замахе бейсбольной битой по голове потерпевший защищался поднятыми руками. В какой области наиболее вероятны кровоподтёки?",
+        "en": "When a blow with a baseball bat was directed at the victim's head, he defended himself by raising his arms. In which region are bruises most expected?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bilak va yelkaning ichki (bukuvchi) yuzasida",
+          "Kaft va barmoqlarning ichki yuzasida",
+          "Qorin va ko‘krakning old yuzasida",
+          "Bilak va yelkaning yozuvchi (tashqi) yuzasida"
+        ],
+        "ru": [
+          "На внутренней (сгибательной) поверхности предплечья и плеча",
+          "На внутренней поверхности ладони и пальцев",
+          "На передней поверхности живота и груди",
+          "На разгибательной (наружной) поверхности предплечья и плеча"
+        ],
+        "en": [
+          "On the inner (flexor) surface of the forearm and upper arm",
+          "On the inner surface of the palm and fingers",
+          "On the anterior surface of the abdomen and chest",
+          "On the extensor (outer) surface of the forearm and upper arm"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "O‘tmas qurol bilan zarbdan himoyalanganda qo‘llar boshni himoya qilish uchun ko‘tariladi va jarohatlar qo‘l hamda yelkaning yozuvchi yuzasida hosil bo‘ladi. Kaft ichki yuzasidagi jarohatlar esa o‘tkir pichoq tig‘ini ushlaganda xos.",
+        "ru": "При защите от удара тупым оружием руки поднимаются для защиты головы, и повреждения образуются на разгибательной поверхности предплечья и плеча. Повреждения на внутренней поверхности ладони характерны для случаев, когда схватывают лезвие острого ножа.",
+        "en": "When defending against a blow with a blunt weapon, the arms are raised to protect the head, and the injuries form on the extensor surface of the arm and upper arm. Injuries on the inner surface of the palm, by contrast, are typical of grasping the blade of a sharp knife."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "91"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q24",
+      "question_i18n": {
+        "uz": "Orqa terida bir-biriga parallel ikki qontalash yo‘lagi bor, ular orasida deyarli zararlanmagan teri qolgan. Qaysi jism zarbi ehtimoli katta?",
+        "ru": "На коже спины имеются две параллельные друг другу полосы кровоподтёков, между которыми остался почти не повреждённый участок кожи. Удар каким предметом наиболее вероятен?",
+        "en": "On the skin of the back there are two parallel bands of bruising with almost undamaged skin left between them. A blow from which object is most likely?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Silindrsimon qattiq jism (tayoq, politsiya tayoqchasi) zarbi",
+          "Cheklanmagan yassi yuzali jism zarbi",
+          "Sferik yuzali jism zarbi",
+          "Uch chekkali qirrali jism zarbi"
+        ],
+        "ru": [
+          "Удар твёрдым цилиндрическим предметом (палкой, полицейской дубинкой)",
+          "Удар предметом с неограниченной плоской поверхностью",
+          "Удар предметом со сферической поверхностью",
+          "Удар предметом с трёхгранными рёбрами"
+        ],
+        "en": [
+          "A blow from a hard cylindrical object (stick, police baton)",
+          "A blow from an object with an unbounded flat surface",
+          "A blow from an object with a spherical surface",
+          "A blow from a three-edged object with ridges"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Uzunchoq silindrsimon jism zarbida qon zarb nuqtasidan yon tomonlarga siqib chiqariladi va jism ikki yonidagi tomirlar yoriladi, natijada ikkita parallel (“tramvay izi”) qontalash hosil bo‘ladi. Yassi, sferik yoki qirrali jismlar bunday rasm bermaydi.",
+        "ru": "При ударе удлинённым цилиндрическим предметом кровь вытесняется из места удара в стороны, и сосуды по обе стороны предмета разрываются, в результате чего образуются два параллельных кровоподтёка («трамвайные пути»). Плоские, сферические или гранёные предметы такой картины не дают.",
+        "en": "When an elongated cylindrical object strikes, blood is squeezed out sideways from the point of impact and the vessels on both sides of the object rupture, resulting in two parallel (\"tram-track\") bruises. Flat, spherical, or edged objects do not produce such a pattern."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "81"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q25",
+      "question_i18n": {
+        "uz": "Ekspert tanadagi sanchma yarani tekshirmoqda. Yara chetlarida shilinish va ifloslanish hoshiyasi bor, lekin u yaraning faqat bir tomonida, o‘tkir burchak tomonida yarim segment shaklida joylashgan. Qaysi xulosa to‘g‘ri?",
+        "ru": "Эксперт исследует колотую рану на теле. По краям раны имеется поясок осаднения и загрязнения, но он расположен только с одной стороны раны, со стороны острого угла, в виде полусегмента. Какой вывод верен?",
+        "en": "An expert is examining a stab wound on the body. The wound edges have a rim of abrasion and contamination, but it is located on only one side of the wound, on the acute-angle side, in the shape of a half-segment. Which conclusion is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Sanchuvchi jism tanaga nisbatan qiya ta’sir qilgan",
+          "Sanchuvchi jism tanaga nisbatan tikka ta’sir qilgan",
+          "Bu chiqish teshigi, chunki hoshiya faqat shu teshikka xos",
+          "Jism sanchma-kesma bo‘lgan, hoshiya tig‘ning o‘tmas qirrasidan"
+        ],
+        "ru": [
+          "Колющий предмет воздействовал на тело под углом",
+          "Колющий предмет воздействовал на тело перпендикулярно",
+          "Это выходное отверстие, так как поясок характерен только для него",
+          "Предмет был колюще-режущим, поясок образован обушком клинка"
+        ],
+        "en": [
+          "The stabbing object acted obliquely relative to the body",
+          "The stabbing object acted perpendicularly relative to the body",
+          "This is an exit wound, since the rim is characteristic only of such an opening",
+          "The object was a stab-cut type, and the rim is from the blunt edge of the blade"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Tikka ta’sirda shilinish va ifloslanish hoshiyasi yara atrofida to‘liq halqa (sirkulyar) bo‘ladi. Qiya ta’sirda u faqat o‘tkir burchak tomonida segment shaklida qoladi. Chiqish teshigi chetlarida hoshiya yo‘q yoki juda kam, shuning uchun u chiqish teshigiga xos emas.",
+        "ru": "При перпендикулярном воздействии поясок осаднения и загрязнения образует полное кольцо (циркулярный) вокруг раны. При косом воздействии он остаётся только со стороны острого угла в виде сегмента. По краям выходного отверстия пояска нет или он очень незначителен, поэтому он не характерен для выходного отверстия.",
+        "en": "With perpendicular action, the rim of abrasion and contamination forms a complete ring (circular) around the wound. With oblique action, it remains only on the acute-angle side in the shape of a segment. The edges of an exit wound have no rim or very little, so it is not characteristic of an exit wound."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "50"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q26",
+      "question_i18n": {
+        "uz": "Murdada tovon va g‘altaksimon suyaklar sinishi, boldir-oshiq bo‘g‘imi boylamlarining yorilishi, boldir suyaklarining qoqma sinishi hamda kalla asosida halqasimon sinish topildi. Ichki a’zolarning shikastlanishi bosh bilan yiqilgan holatdagidan jiddiyroq. Shaxs balandlikdan qaysi holatda yerga tushgan?",
+        "ru": "На трупе обнаружены переломы пяточной и таранной костей, разрывы связок голеностопного сустава, вколоченный перелом костей голени, а также кольцевидный перелом основания черепа. Повреждения внутренних органов тяжелее, чем при падении на голову. В каком положении человек приземлился при падении с высоты?",
+        "en": "On a corpse, fractures of the calcaneus and talus, ruptures of the ankle joint ligaments, impacted fractures of the leg bones, and a ring fracture of the skull base were found. Damage to the internal organs is more severe than in a head-first fall. In which position did the person land on the ground from a height?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Dumba bilan, tana yonboshga og‘gan holda",
+          "Oyoq panjasi bilan tushgan",
+          "Tizza bilan, tananing old tomoniga qarab",
+          "Orqa yuzasi bilan, tanasi gorizontal holatda"
+        ],
+        "ru": [
+          "Ягодицами, при наклоне тела набок",
+          "Стопами",
+          "Коленями, передней стороной тела",
+          "Задней поверхностью тела, в горизонтальном положении"
+        ],
+        "en": [
+          "On the buttocks, with the body tilted to the side",
+          "On the feet",
+          "On the knees, facing forward",
+          "On the back, with the body in a horizontal position"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Oyoq panjasi bilan tushganda birlamchi bevosita jarohatlar tovon, g‘altaksimon suyaklar va boldir-oshiq bo‘g‘imida bo‘ladi. Boldir suyaklarining qoqma sinishi va kalla asosidagi halqasimon sinish esa bilvosita jarohatlar hisoblanadi. Umumiy chayqalish tufayli ichki a’zolar shikasti bunda bosh bilan tushishdagidan og‘irroq bo‘ladi. Tizza, dumba yoki tana bilan tushishda jarohatlar boshqa sohalarda joylashadi.",
+        "ru": "При падении на стопы первичные прямые повреждения возникают в пяточной, таранной костях и голеностопном суставе. Вколоченный перелом костей голени и кольцевидный перелом основания черепа являются непрямыми повреждениями. Вследствие общего сотрясения повреждения внутренних органов при этом тяжелее, чем при падении на голову. При падении на колени, ягодицы или тело повреждения располагаются в других областях.",
+        "en": "When landing on the feet, the primary direct injuries occur in the calcaneus, the talus, and the ankle joint. Impacted fractures of the leg bones and a ring fracture of the skull base are considered indirect injuries. Because of the general concussion, injury to the internal organs is more severe in this case than in a head-first landing. When landing on the knees, buttocks, or body, the injuries are located in other regions."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "45-46"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q27",
+      "question_i18n": {
+        "uz": "Jabrlanuvchining bilagi bir tomonida 1–2 sm o‘lchamli, 3–4 ta kichik oval qontalashlar guruhi, qarama-qarshi tomonida esa bitta kattaroq qontalash topildi. Qaysi mexanizm ehtimoli eng katta?",
+        "ru": "На предплечье потерпевшего с одной стороны обнаружена группа из 3–4 мелких овальных кровоподтёков размером 1–2 см, а с противоположной стороны — один более крупный кровоподтёк. Какой механизм наиболее вероятен?",
+        "en": "On one side of the victim's forearm, a group of 3-4 small oval bruises measuring 1–2 cm was found, and on the opposite side one larger bruise. Which mechanism is most likely?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Musht bilan zarb berilishi",
+          "Silindrsimon tayoq bilan urilish",
+          "Qo‘l barmoqlari bilan qattiq ushlash",
+          "So‘rish natijasida hosil bo‘lgan qontalash"
+        ],
+        "ru": [
+          "Удар кулаком",
+          "Удар цилиндрической палкой",
+          "Сильное сдавление пальцами руки",
+          "Кровоподтёк, образовавшийся в результате засоса"
+        ],
+        "en": [
+          "A blow with a fist",
+          "A blow with a cylindrical stick",
+          "A forceful grip with the fingers of a hand",
+          "A bruise resulting from sucking"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kichik oval qontalashlar guruhi barmoq uchlari bosimini, qarama-qarshi tomondagi bitta kattaroq qontalash esa bosh barmoqni bildiradi. Musht zarbasi odatda to‘rtta 1–2 sm li dumaloq qontalash qatorini beradi. Silindrsimon jism «tramvay izi» ko‘rinishidagi qontalash qoldiradi. So‘rishdan bo‘yinda o‘ziga xos qontalash hosil bo‘ladi.",
+        "ru": "Группа мелких овальных кровоподтёков указывает на давление кончиков пальцев, а один более крупный кровоподтёк с противоположной стороны — на большой палец. Удар кулаком обычно даёт ряд из четырёх округлых кровоподтёков по 1–2 см. Цилиндрический предмет оставляет кровоподтёк в виде «трамвайных путей». От засоса на шее образуется характерный кровоподтёк.",
+        "en": "A group of small oval bruises indicates the pressure of fingertips, and one larger bruise on the opposite side indicates the thumb. A fist blow usually produces a row of four round bruises of 1–2 cm. A cylindrical object leaves a bruise in the form of a \"tram track\". Sucking produces a characteristic bruise on the neck."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "82"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q28",
+      "question_i18n": {
+        "uz": "Suyak ustida joylashgan sohada chetlari juda aniq, ingichka chiziqsimon yara topildi va uni dastlab o‘tkir jism ta’siridan hosil bo‘lgan deb o‘ylashdi. Qaysi topilma uni yirtilgan (lat yegan) yara, ya’ni o‘tmas kuch natijasi ekanini tasdiqlaydi?",
+        "ru": "В области над костью обнаружена рана с очень чёткими краями, тонкая, линейная, и её первоначально сочли причинённой острым предметом. Какая находка подтверждает, что это ушибленная рана, то есть результат действия тупой силы?",
+        "en": "A thin linear wound with very sharp edges was found in a region lying over bone, and it was initially thought to have been caused by a sharp object. Which finding confirms that it is a lacerated (contused) wound, that is, the result of blunt force?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Yara uchlari o‘tkir va chetlari yaqinlashtirilganda chiziqsimon bo‘ladi",
+          "Yara chuqurligi uning teri sathidagi uzunligidan ancha katta",
+          "Yara tashqi qon ketishi bilan kechgan va qon ketishi kuchli",
+          "Chetlarda ezilish va qontalash, yara ichida to‘qima ko‘prikchalari bor"
+        ],
+        "ru": [
+          "Концы раны острые, а при сближении краёв она становится линейной",
+          "Глубина раны значительно больше её длины на уровне кожи",
+          "Рана сопровождалась наружным кровотечением, причём сильным",
+          "По краям имеются размозжение и кровоизлияния, внутри раны — тканевые перемычки"
+        ],
+        "en": [
+          "The ends of the wound are sharp and it becomes linear when the edges are brought together",
+          "The depth of the wound is much greater than its length at skin level",
+          "The wound was accompanied by external bleeding and the bleeding is heavy",
+          "Crushing and bruising at the edges, and tissue bridges inside the wound"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Suyak ustida ingichka, to‘g‘ri jism teriga siqilib ham aniq chetli yara hosil qilishi mumkin. Chetlarni diqqat bilan ko‘rsak ezilish va qontalash topiladi, yara ichida esa asab va fastsiya tolalaridan iborat ko‘prikchalar saqlanib qoladi. Kesuvchi tig‘ esa yo‘lidagi hamma narsani kesib, ko‘prikchalar qoldirmaydi. Qolgan belgilar ikkala yara turida ham uchrashi mumkin.",
+        "ru": "Над костью тонкий прямой предмет, сдавливая кожу, может образовать рану с чёткими краями. При внимательном осмотре краёв обнаруживаются размозжение и кровоизлияния, а внутри раны сохраняются перемычки из нервных и фасциальных волокон. Режущий клинок же рассекает всё на своём пути и перемычек не оставляет. Остальные признаки могут встречаться при обоих видах ран.",
+        "en": "A thin, straight object pressing the skin against bone can also produce a wound with sharp edges. On careful examination of the edges, crushing and bruising are found, while bridges consisting of nerve and fascial fibers remain inside the wound. A cutting blade, by contrast, cuts everything in its path and leaves no bridges. The other signs can occur in both types of wounds."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "85"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q29",
+      "question_i18n": {
+        "uz": "Bir xil o‘tkir pichoq bilan bilakda ikkita kesma yara etkazilgan. Birinchisining chetlari keng ochilib turibdi, ikkinchisiniki deyarli ochilmagan. Qaysi omil bu farqni eng to‘g‘ri tushuntiradi?",
+        "ru": "Одним и тем же острым ножом на предплечье нанесены две резаные раны. Края первой широко зияют, края второй почти не зияют. Какой фактор наиболее правильно объясняет эту разницу?",
+        "en": "Two incised wounds were inflicted on the forearm with the same sharp knife. The edges of the first gape widely, while those of the second hardly gape. Which factor explains this difference most correctly?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ikkinchi yara chuqurroq bo‘lgani uchun chetlari yaqin turadi",
+          "Kesish tezligi har xil bo‘lgani uchun chetlar turlicha ochiladi",
+          "Yara yo‘nalishi mushak va biriktiruvchi to‘qima tolalariga parallel bo‘lsa, chetlar kamroq ochiladi",
+          "Ochilish darajasi faqat teri burmalari borligiga bog‘liq"
+        ],
+        "ru": [
+          "Вторая рана глубже, поэтому её края расположены близко",
+          "Скорость разреза была разной, поэтому края расходятся по-разному",
+          "Если направление раны параллельно волокнам мышечной и соединительной ткани, края зияют меньше",
+          "Степень зияния зависит только от наличия складок кожи"
+        ],
+        "en": [
+          "The second wound is deeper, so its edges lie close together",
+          "The cutting speed was different, so the edges gape differently",
+          "If the direction of the wound is parallel to the fibers of the muscle and connective tissue, the edges gape less",
+          "The degree of gaping depends only on the presence of skin folds"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Kesma yara chetlarining ochilish darajasi shikastlangan sohadagi biriktiruvchi va mushak to‘qimasi tolalari yo‘nalishiga bog‘liq. Yara va tolalar yo‘nalishi qanchalik parallel bo‘lsa, chekkalar shunchalik kam ochiladi, tolalarni ko‘ndalang kesganda esa keng ochiladi. Boshqa variantlar kitobda ochilish darajasini belgilovchi omil sifatida keltirilmagan.",
+        "ru": "Степень зияния краёв резаной раны зависит от направления волокон соединительной и мышечной ткани в повреждённой области. Чем более параллельны направления раны и волокон, тем меньше зияют края, а при поперечном пересечении волокон они зияют широко. Остальные варианты в книге не приводятся как факторы, определяющие степень зияния.",
+        "en": "The degree of gaping of the edges of an incised wound depends on the direction of the connective and muscle tissue fibers in the injured region. The more parallel the direction of the wound and the fibers, the less the edges gape, while cutting across the fibers makes them gape widely. The other options are not given in the textbook as factors determining the degree of gaping."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "48"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-03-q30",
+      "question_i18n": {
+        "uz": "Boshdagi yarani ekspert bolta bilan etkazilgan deb baholadi. Yaraning bir uchi o‘tkir, ikkinchi uchi esa o‘tmas va qo‘shimcha yoriqlar bilan tugaydi. Chopqining tanaga kirishi haqida qaysi xulosa to‘g‘ri?",
+        "ru": "Эксперт оценил рану на голове как причинённую топором. Один конец раны острый, а другой тупой и заканчивается дополнительными надрывами. Какой вывод о погружении рубящего предмета в тело верен?",
+        "en": "An expert assessed a head wound as inflicted with an axe. One end of the wound is sharp, while the other end is blunt and terminates with additional tears. Which conclusion about the penetration of the axe blade into the body is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Chopqi tanaga to‘liq kirgan, shuning uchun ikkala uch ham o‘tmas bo‘lgan",
+          "Chopqining faqat old yoki orqa uchi kirgan, chuqurroq kirgan uchi o‘tmas",
+          "Faqat o‘tkir damning yoyi ta’sir qilgan, shuning uchun ikkala uch o‘tkir",
+          "Chopqi tanaga qiya tegib, yara o‘rniga faqat yoysimon shilinish hosil bo‘lgan"
+        ],
+        "ru": [
+          "Рубящий предмет вошёл в тело полностью, поэтому оба конца тупые",
+          "Вошёл только передний или задний конец рубящего предмета, а конец, вошедший глубже, тупой",
+          "Воздействовала только дуга острого лезвия, поэтому оба конца острые",
+          "Рубящий предмет коснулся тела по касательной, и вместо раны образовалась только дугообразная ссадина"
+        ],
+        "en": [
+          "The axe blade fully penetrated the body, so both ends were blunt",
+          "Only the front or rear end of the blade penetrated, and the end that penetrated deeper is blunt",
+          "Only the arc of the sharp edge acted, so both ends are sharp",
+          "The axe blade struck the body obliquely, and only an arc-shaped abrasion formed instead of a wound"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Chopqi qisman kirganda yaraning o‘tkir damga mos uchi o‘tkir bo‘ladi, chuqurroq kirgan qismga mos uchi esa o‘tmas va qo‘shimcha yoriqlar bilan tugaydi. To‘liq kirishda ikkala uch o‘tmas bo‘ladi, faqat yoy ta’sir qilsa ikkala uch ham o‘tkir bo‘ladi. Shilinishdan boshqa yara hosil bo‘lgani uchun oxirgi variant mos kelmaydi.",
+        "ru": "При частичном погружении рубящего предмета конец раны, соответствующий острому лезвию, остаётся острым, а конец, соответствующий глубже вошедшей части, тупой и заканчивается дополнительными надрывами. При полном погружении оба конца тупые, а если воздействует только дуга, оба конца острые. Последний вариант не подходит, так как образовалась рана, а не ссадина.",
+        "en": "When the blade penetrates partially, the end of the wound corresponding to the sharp edge is sharp, while the end corresponding to the deeper-penetrating part is blunt and terminates with additional tears. With full penetration both ends are blunt, and if only the arc acts, both ends are sharp. The last option does not fit because a wound other than an abrasion was formed."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "53-54"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "Bob 2. Sud-tibbiy travmatologiya"
+    },
+    {
+      "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+      "title": "Simpson's Forensic Medicine, 13th ed.",
+      "year": 2011,
+      "pages": "Chapter 8. Assessment, classification and documentation of injury, pp. 76–92 (partial: chapter text extracted only to p. 92)"
+    },
+    {
+      "author": "Ромодановский П.О., Баринов Е.Х.",
+      "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2017,
+      "pages": "3-modul. O‘tmas jismlardan jarohatlar; bet 101-201"
+    },
+    {
+      "author": "Харин Г.М. (Kharin G.M.)",
+      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2006,
+      "pages": "III bo‘lim (7-9-boblar). Umumiy travmatologiya; o‘tmas predmetlardan jarohatlar; bet 68-91"
+    },
+    {
+      "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+      "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+      "year": null,
+      "pages": "V-bob. Sud-tibbiy travmatologiya, mexanik jarohat; bet 38-73"
+    }
+  ]
+}

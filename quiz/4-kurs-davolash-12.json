@@ -1,0 +1,1398 @@
+{
+  "topic_id": "4-kurs-davolash-12",
+  "source_lang": "uz",
+  "title_i18n": {
+    "uz": "Amaliy mashg’ulot: Tirik shaxslar sud-tibbiy ekspertizasi.",
+    "ru": "Практическое занятие: Судебно-медицинская экспертиза живых лиц.",
+    "en": "Practical session: Forensic medical examination of living persons."
+  },
+  "translation_status": {
+    "uz": "source",
+    "ru": "auto_unreviewed",
+    "en": "auto_unreviewed"
+  },
+  "questions": [
+    {
+      "id": "4-kurs-davolash-12-q01",
+      "question_i18n": {
+        "uz": "Ko‘rish qobiliyatining yo‘qotilishi deb baholanishi uchun ikkala ko‘zda qayta tiklanmas ko‘rish o‘tkirligi qaysi darajada yoki undan past bo‘lishi kerak?",
+        "ru": "При каком уровне необратимой остроты зрения на обоих глазах или ниже он оценивается как потеря зрения?",
+        "en": "To be assessed as loss of vision, at what level or below must the irreversible visual acuity be in both eyes?"
+      },
+      "options_i18n": {
+        "uz": [
+          "0,1 va undan past",
+          "0,04 va undan past",
+          "0,2 va undan past",
+          "0,3 va undan past"
+        ],
+        "ru": [
+          "0,1 и ниже",
+          "0,04 и ниже",
+          "0,2 и ниже",
+          "0,3 и ниже"
+        ],
+        "en": [
+          "0,1 or lower",
+          "0,04 or lower",
+          "0,2 or lower",
+          "0,3 or lower"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Ikkala ko‘zda doimiy to‘liq ko‘rlik yoki ko‘rish o‘tkirligining 0,04 va undan pastga tushishi ko‘rish qobiliyatini yo‘qotish hisoblanadi va og‘ir tan jarohati deb baholanadi. Boshqa qiymatlar qoidada belgilangan chegaraga mos kelmaydi.",
+        "ru": "Стойкая полная слепота на оба глаза или снижение остроты зрения до 0,04 и ниже считается потерей зрения и оценивается как тяжкий вред здоровью. Остальные значения не соответствуют границе, установленной правилами.",
+        "en": "Permanent complete blindness in both eyes, or a decrease in visual acuity to 0,04 or lower, is considered loss of vision and is assessed as grave bodily injury. The other values do not correspond to the threshold set by the rule."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "281"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q02",
+      "question_i18n": {
+        "uz": "Shikastlanish natijasida faqat bitta quloqda eshitish qobiliyati qayta tiklanmas yo‘qotilgan, ikkinchi quloq sog‘. Bu jarohat qanday og‘irlik darajasida baholanadi?",
+        "ru": "В результате травмы утрачен слух только на одно ухо без возможности восстановления, второе ухо здорово. Как оценивается степень тяжести этого повреждения?",
+        "en": "As a result of trauma, hearing has been irreversibly lost in only one ear, while the other ear is healthy. What degree of severity is this injury assessed as?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Og‘ir tan jarohati",
+          "Yengil tan jarohati",
+          "O‘rtacha og‘ir tan jarohati",
+          "Sog‘liqning qisqa muddatga buzilishiga olib kelgan yengil tan jarohati"
+        ],
+        "ru": [
+          "Тяжкий вред здоровью",
+          "Легкий вред здоровью",
+          "Вред здоровью средней тяжести",
+          "Легкий вред здоровью, повлекший кратковременное расстройство здоровья"
+        ],
+        "en": [
+          "Grave bodily injury",
+          "Light bodily injury",
+          "Moderately severe bodily injury",
+          "Light bodily injury causing a short-term health disorder"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Og‘ir deb baholash uchun ikkala quloqda karlik talab qilinadi. Bir quloqning yo‘qotilishi umumiy mehnat qobiliyatining uchdan biridan kamrog‘ini yo‘qotishga olib keladi, shuning uchun jarohat o‘rtacha og‘ir hisoblanadi.",
+        "ru": "Для оценки как тяжкого вреда необходима глухота на оба уха. Потеря слуха на одно ухо приводит к утрате менее одной трети общей трудоспособности, поэтому повреждение считается вредом здоровью средней тяжести.",
+        "en": "Deafness in both ears is required for an injury to be assessed as grave. Loss of one ear results in the loss of less than one third of general working capacity, so the injury is considered moderately severe."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "282"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q03",
+      "question_i18n": {
+        "uz": "Jabrlanuvchi o‘zida bor kasallik belgilarini bo‘rttirib ko‘rsatadi, shuningdek vrach tavsiyalariga ongli ravishda rioya qilmaydi va davo muolajalarini qabul qilmaydi. Bu qanday holat?",
+        "ru": "Пострадавший преувеличивает имеющиеся у него признаки заболевания, а также сознательно не соблюдает рекомендации врача и отказывается от лечебных процедур. Как называется это состояние?",
+        "en": "The victim exaggerates the symptoms of an existing disease, and also deliberately fails to follow the physician's recommendations and does not accept treatment procedures. What condition is this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Simulyasiya",
+          "Dissimulyasiya",
+          "A’zobuzarlik",
+          "Aggravatsiya"
+        ],
+        "ru": [
+          "Симуляция",
+          "Диссимуляция",
+          "Членовредительство",
+          "Аггравация"
+        ],
+        "en": [
+          "Simulation",
+          "Dissimulation",
+          "Self-mutilation",
+          "Aggravation"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Mavjud kasallik yoki travma belgilarini og‘irroq qilib ko‘rsatish aggravatsiya deyiladi; davolanishdan ongli bosh tortish ham shu holatga kiradi. Simulyasiyada kasallik umuman yo‘q, dissimulyasiyada kasallik yashiriladi, a’zobuzarlikda esa qasddan o‘ziga shikast yetkaziladi.",
+        "ru": "Преувеличение признаков имеющегося заболевания или травмы называется аггравацией; сознательный отказ от лечения также относится к этому состоянию. При симуляции заболевания нет вовсе, при диссимуляции заболевание скрывается, а при членовредительстве повреждение наносится себе умышленно.",
+        "en": "Presenting the signs of an existing disease or trauma as more severe is called aggravation; deliberate refusal of treatment also falls under this condition. In simulation there is no disease at all, in dissimulation the disease is concealed, and in self-mutilation an injury is deliberately inflicted on oneself."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "285"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q04",
+      "question_i18n": {
+        "uz": "Qizlarda jinsiy yetuklikni aniqlashda umumiy jismoniy rivojlanishni baholash uchun tana uzunligi tik holatda kamida qancha bo‘lishi kerak?",
+        "ru": "Какой должна быть минимальная длина тела в вертикальном положении для оценки общего физического развития при определении половой зрелости у девочек?",
+        "en": "When determining sexual maturity in girls, what is the minimum standing body height for assessing general physical development?"
+      },
+      "options_i18n": {
+        "uz": [
+          "150 sm",
+          "160 sm",
+          "140 sm",
+          "155 sm"
+        ],
+        "ru": [
+          "150 см",
+          "160 см",
+          "140 см",
+          "155 см"
+        ],
+        "en": [
+          "150 sm",
+          "160 sm",
+          "140 sm",
+          "155 sm"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Jinsiy yetuklik hollarida tana uzunligi tik holatda 150 smdan kam bo‘lmasligi lozim deb ko‘rsatiladi. Bu ko‘rsatkich nisbiy ahamiyatga ega va faqat belgilar majmui bilan birga baholanadi.",
+        "ru": "Указано, что при половой зрелости длина тела в вертикальном положении должна быть не менее 150 см. Этот показатель имеет относительное значение и оценивается только в совокупности с другими признаками.",
+        "en": "In cases of sexual maturity, the standing body height is stated to be not less than 150 sm. This indicator is of relative significance and is assessed only together with the whole set of signs."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "289"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q05",
+      "question_i18n": {
+        "uz": "O‘zbekiston Respublikasi Jinoyat kodeksining 120-moddasiga ko‘ra, zo‘rlik ishlatilmagan holda sodir etilgan besoqolbozlikda kim jinoiy javobgarlikka tortiladi?",
+        "ru": "Кто привлекается к уголовной ответственности по статье 120 Уголовного кодекса Республики Узбекистан за мужеложство, совершённое без применения насилия?",
+        "en": "According to Article 120 of the Criminal Code of the Republic of Uzbekistan, who is held criminally liable for sodomy committed without the use of violence?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Faqat aktiv qatnashchi",
+          "Aktiv ham, passiv ham qatnashchi",
+          "Faqat passiv qatnashchi",
+          "Passiv qatnashchi jabrlanuvchi sanalib, javobgar bo‘lmaydi"
+        ],
+        "ru": [
+          "Только активный участник",
+          "И активный, и пассивный участник",
+          "Только пассивный участник",
+          "Пассивный участник считается потерпевшим и не несёт ответственности"
+        ],
+        "en": [
+          "Only the active participant",
+          "Both the active and the passive participant",
+          "Only the passive participant",
+          "The passive participant is considered a victim and is not liable"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Besoqolbozlik zo‘rliksiz sodir bo‘lganda ikkala qatnashchi ham jinoyat sub’ekti hisoblanadi. Passiv qatnashchi jabrlanuvchi sanalishi faqat zo‘rlik, qo‘rqitish yoki ojizlikdan foydalanilgan holatda (119-modda) to‘g‘ri keladi.",
+        "ru": "При мужеложстве, совершённом без насилия, оба участника являются субъектами преступления. Пассивный участник считается потерпевшим только в случае применения насилия, угрозы или использования беспомощного состояния (статья 119).",
+        "en": "When sodomy is committed without violence, both participants are considered subjects of the crime. The passive participant is considered a victim only where violence, threats, or exploitation of helplessness are involved (Article 119)."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "297"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q06",
+      "question_i18n": {
+        "uz": "Shaxsni identifikatsiya qilishda birlamchi (primary) mezonlarga qaysi biri kiradi?",
+        "ru": "Что относится к первичным (primary) критериям при идентификации личности?",
+        "en": "Which of the following is included among the primary criteria in personal identification?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Kiyim-bosh va shaxsiy buyumlar",
+          "Chandiqlar va tug‘ma deformatsiyalar",
+          "Barmoq izlari",
+          "Fotosuratlar va topilgan joy"
+        ],
+        "ru": [
+          "Одежда и личные вещи",
+          "Рубцы и врождённые деформации",
+          "Отпечатки пальцев",
+          "Фотографии и место обнаружения"
+        ],
+        "en": [
+          "Clothing and personal belongings",
+          "Scars and congenital deformities",
+          "Fingerprints",
+          "Photographs and the place of discovery"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Birlamchi mezonlar: barmoq izlari, DNK, tish holati va noyob tibbiy xususiyatlar. Deformatsiya, chandiq, rentgenogramma, shaxsiy buyumlar va o‘ziga xos kiyim ikkilamchi mezonlar; kiyim, fotosurat va joylashuv esa faqat yordamchi ahamiyatga ega.",
+        "ru": "Первичные критерии: отпечатки пальцев, ДНК, состояние зубов и уникальные медицинские особенности. Деформации, рубцы, рентгенограммы, личные вещи и характерная одежда относятся к вторичным критериям; одежда, фотографии и место обнаружения имеют лишь вспомогательное значение.",
+        "en": "Primary criteria: fingerprints, DNA, dental status, and unique medical features. Deformities, scars, radiographs, personal belongings, and distinctive clothing are secondary criteria; clothing, photographs, and location have only auxiliary significance."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "36"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q07",
+      "question_i18n": {
+        "uz": "Qizlik pardasidagi yoriqlarni tabiiy o‘yiqlardan farqlashda, yoriqlar ko‘pincha soat siferblati bo‘yicha qaysi oralig‘da aniqlanadi?",
+        "ru": "При отличии разрывов девственной плевы от естественных вырезок в каком промежутке по циферблату часов чаще всего обнаруживаются разрывы?",
+        "en": "When distinguishing tears of the hymen from natural notches, in which range on the clock-face are tears most often found?"
+      },
+      "options_i18n": {
+        "uz": [
+          "11–1 oralig‘ida (yuqori segment)",
+          "5–7 oralig‘ida (pastki segment)",
+          "2–4 oralig‘ida (o‘ng yon segment)",
+          "8–10 oralig‘ida (chap yon segment)"
+        ],
+        "ru": [
+          "В промежутке 11–1 (верхний сегмент)",
+          "В промежутке 5–7 (нижний сегмент)",
+          "В промежутке 2–4 (правый боковой сегмент)",
+          "В промежутке 8–10 (левый боковой сегмент)"
+        ],
+        "en": [
+          "Between 11–1 (upper segment)",
+          "Between 5–7 (lower segment)",
+          "Between 2–4 (right lateral segment)",
+          "Between 8–10 (left lateral segment)"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Yoriqlar asosan pastki segmentlarda, soat siferblati bo‘yicha 5–7 oralig‘ida uchraydi. Tabiiy o‘yiqlar esa pardaning istalgan segmentida bo‘lishi mumkin. Boshqa oraliqlar yoriqlar uchun xos joylashuv emas.",
+        "ru": "Разрывы встречаются преимущественно в нижних сегментах, в промежутке 5–7 по циферблату часов. Естественные вырезки могут находиться в любом сегменте плевы. Остальные промежутки не являются характерной локализацией разрывов.",
+        "en": "Tears occur mainly in the lower segments, between 5–7 on the clock-face. Natural notches, however, can be located in any segment of the hymen. The other ranges are not typical locations for tears."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "292"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q08",
+      "question_i18n": {
+        "uz": "Jinsiy aloqadan keyin maniy odatda qinda qancha vaqt saqlanadi?",
+        "ru": "Как долго сперма обычно сохраняется во влагалище после полового акта?",
+        "en": "How long does semen usually remain in the vagina after sexual intercourse?"
+      },
+      "options_i18n": {
+        "uz": [
+          "taxminan 12 soatgacha",
+          "taxminan 2 haftagacha",
+          "taxminan 1 oygacha",
+          "taxminan 3–5 kungacha"
+        ],
+        "ru": [
+          "примерно до 12 часов",
+          "примерно до 2 недель",
+          "примерно до 1 месяца",
+          "примерно до 3–5 дней"
+        ],
+        "en": [
+          "up to approximately 12 hours",
+          "up to approximately 2 weeks",
+          "up to approximately 1 month",
+          "up to approximately 3–5 days"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Maniy qinda odatda 3–5 kungacha saqlanadi, shuning uchun laboratoriya namunasi qanchalik tez olinsa, natija shunchalik ishonchli bo‘ladi. Boshqa muddatlar darslikda keltirilgan saqlanish davriga mos kelmaydi.",
+        "ru": "Сперма во влагалище обычно сохраняется до 3–5 дней, поэтому чем раньше взят лабораторный образец, тем надёжнее результат. Остальные сроки не соответствуют периоду сохранения, приведённому в учебнике.",
+        "en": "Semen usually remains in the vagina for up to 3–5 days, so the sooner the laboratory sample is taken, the more reliable the result. The other time periods do not correspond to the retention period given in the textbook."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "292"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q09",
+      "question_i18n": {
+        "uz": "O‘n olti yoshga to‘lmagan shaxslarga nisbatan uyatsiz-buzuq (fahsh) harakatlar sodir etganlik uchun javobgarlik O‘zbekiston Respublikasi Jinoyat kodeksining qaysi moddasida ko‘zda tutilgan?",
+        "ru": "В какой статье Уголовного кодекса Республики Узбекистан предусмотрена ответственность за совершение развратных действий в отношении лиц, не достигших шестнадцати лет?",
+        "en": "Which article of the Criminal Code of the Republic of Uzbekistan provides for liability for committing depraved (lewd) acts against persons under sixteen years of age?"
+      },
+      "options_i18n": {
+        "uz": [
+          "129-modda",
+          "118-modda",
+          "119-modda",
+          "120-modda"
+        ],
+        "ru": [
+          "Статья 129",
+          "Статья 118",
+          "Статья 119",
+          "Статья 120"
+        ],
+        "en": [
+          "Article 129",
+          "Article 118",
+          "Article 119",
+          "Article 120"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Fahsh harakatlari uchun javobgarlik Kodeksning 129-moddasida belgilangan. 118-modda nomusga tegishni, 119-modda jinsiy ehtiyojni g‘ayritabiiy usulda qondirishni, 120-modda besoqolbozlikni tartibga soladi.",
+        "ru": "Ответственность за развратные действия установлена статьёй 129 Кодекса. Статья 118 регулирует изнасилование, статья 119 — удовлетворение половой потребности противоестественным способом, статья 120 — мужеложство.",
+        "en": "Liability for depraved acts is established in Article 129 of the Code. Article 118 regulates rape, Article 119 regulates satisfaction of sexual desire in an unnatural manner, and Article 120 regulates sodomy."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "298"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q10",
+      "question_i18n": {
+        "uz": "Teri ostiga shprits yordamida parafin yoki vazelin kabi yaxshi so‘rilmaydigan moddalar yuborilganda qanday sun’iy o‘zgarish paydo bo‘ladi?",
+        "ru": "Какое искусственное изменение возникает при введении шприцем под кожу плохо рассасывающихся веществ, таких как парафин или вазелин?",
+        "en": "What artificial change appears when poorly absorbable substances such as paraffin or vaseline are injected under the skin with a syringe?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Sun’iy dermatit",
+          "Sun’iy abssess",
+          "Sun’iy o‘sma",
+          "Sun’iy shishish"
+        ],
+        "ru": [
+          "Искусственный дерматит",
+          "Искусственный абсцесс",
+          "Искусственная опухоль",
+          "Искусственный отёк"
+        ],
+        "en": [
+          "Artificial dermatitis",
+          "Artificial abscess",
+          "Artificial tumor",
+          "Artificial swelling"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Sog‘liq uchun nisbatan ziyonsiz, so‘rilmaydigan moddalar teri ostida sun’iy o‘sma hosil qiladi. Dermatit mexanik, kimyoviy yoki termik ta’sirdan, abssess infeksiya yoki kimyoviy moddalar yuborilishidan, shishish esa oyoq-qo‘lni siqib bog‘lashdan yoki ko‘p marta urishdan chiqadi.",
+        "ru": "Относительно безвредные для здоровья, не рассасывающиеся вещества образуют под кожей искусственную опухоль. Дерматит возникает от механического, химического или термического воздействия, абсцесс — от инфекции или введения химических веществ, а отёк — от сдавливающего перетягивания конечности или многократных ударов.",
+        "en": "Relatively harmless, non-absorbable substances form an artificial tumor under the skin. Dermatitis results from mechanical, chemical, or thermal action, an abscess from infection or injection of chemical substances, and swelling from tight binding of a limb or repeated blows."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "286"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q11",
+      "question_i18n": {
+        "uz": "Quyidagi harakatlardan qaysi biri tan jarohati yetkazishning alohida usuli sifatida “azoblash” tushunchasiga mos keladi?",
+        "ru": "Какое из следующих действий соответствует понятию «мучение» как особому способу причинения телесных повреждений?",
+        "en": "Which of the following actions corresponds to the concept of \"torment\" (deprivation) as a distinct method of inflicting bodily injury?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tanaga ko‘p marta urish",
+          "Tanani issiq predmetlar bilan kuydirish",
+          "Tanaga igna bilan ko‘plab sanchish",
+          "Odamni ovqat va issiqlikdan uzoq mahrum qilish"
+        ],
+        "ru": [
+          "Многократные удары по телу",
+          "Прижигание тела горячими предметами",
+          "Множественные уколы иглой в тело",
+          "Длительное лишение человека пищи и тепла"
+        ],
+        "en": [
+          "Repeatedly striking the body",
+          "Burning the body with hot objects",
+          "Repeatedly piercing the body with a needle",
+          "Depriving a person of food and warmth for a prolonged period"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Azoblash — odamni zarur sharoitlardan (ovqat, suv, havo, issiqlik, yorug‘lik) mahrum qilishdir. Kuydirish va igna sanchish og‘riq yetkazish orqali qiynashga, ko‘p marta urish esa do‘pposlashga kiradi.",
+        "ru": "Мучение — это лишение человека необходимых условий (пища, вода, воздух, тепло, свет). Прижигание и уколы иглой относятся к истязанию путём причинения боли, а многократные удары — к избиению.",
+        "en": "Torment (deprivation) is depriving a person of necessary conditions (food, water, air, warmth, light). Burning and needle piercing fall under torture by inflicting pain, while repeated striking falls under beating."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "365"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q12",
+      "question_i18n": {
+        "uz": "Alkogolga taxminiy kaliy permanganat (Rapoport) sinamasida tekshiriluvchi puflagan havoda alkogol bo‘lsa, nima kuzatiladi?",
+        "ru": "Что наблюдается при ориентировочной пробе на алкоголь с перманганатом калия (по Раппорту), если в воздухе, выдыхаемом испытуемым, есть алкоголь?",
+        "en": "In the approximate potassium permanganate (Rapoport) test for alcohol, what is observed if the exhaled air of the person being tested contains alcohol?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Eritma yashil rangga o‘tadi",
+          "Eritma qizg‘ish rangda o‘zgarmay qoladi",
+          "Eritma bir daqiqa ichida rangsizlanadi",
+          "Eritmada sariq cho‘kma hosil bo‘ladi"
+        ],
+        "ru": [
+          "Раствор становится зелёным",
+          "Раствор остаётся розовато-красным без изменений",
+          "Раствор обесцвечивается в течение одной минуты",
+          "В растворе образуется жёлтый осадок"
+        ],
+        "en": [
+          "The solution turns green",
+          "The solution remains reddish and unchanged",
+          "The solution becomes colorless within one minute",
+          "A yellow precipitate forms in the solution"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Sulfat kislotasi ishtirokida alkogol oksidlanadi, kaliy permanganat qaytariladi va eritma birinchi daqiqada rangsizlanadi. Yashil rangga o‘tish kaliy bixromat sinamasiga xos. Qizg‘ish rang esa kontrol probirkada, ya’ni alkogolsiz holatda saqlanadi.",
+        "ru": "В присутствии серной кислоты алкоголь окисляется, перманганат калия восстанавливается, и раствор обесцвечивается в течение первой минуты. Переход в зелёный цвет характерен для пробы с бихроматом калия. Розовато-красная окраска сохраняется в контрольной пробирке, то есть без алкоголя.",
+        "en": "In the presence of sulfuric acid, alcohol is oxidized, potassium permanganate is reduced, and the solution becomes colorless within the first minute. A change to green is characteristic of the potassium dichromate test. The reddish color is retained in the control tube, i.e., in the absence of alcohol."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "407–408"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q13",
+      "question_i18n": {
+        "uz": "Doimiy tishlar orasida birinchi molyarlar (katta oziq tishlar) odatda qaysi yoshda chiqadi?",
+        "ru": "В каком возрасте обычно прорезываются первые моляры (большие коренные зубы) среди постоянных зубов?",
+        "en": "At what age do the first molars (large chewing teeth) usually erupt among the permanent teeth?"
+      },
+      "options_i18n": {
+        "uz": [
+          "7 yoshda",
+          "8–8,5 yoshda",
+          "5–6 yoshda",
+          "12–13 yoshda"
+        ],
+        "ru": [
+          "В 7 лет",
+          "В 8–8,5 лет",
+          "В 5–6 лет",
+          "В 12–13 лет"
+        ],
+        "en": [
+          "At 7 years",
+          "At 8–8.5 years",
+          "At 5–6 years",
+          "At 12–13 years"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Birinchi doimiy molyarlar 5–6 yoshda chiqadi. 7 yosh o‘rtadagi kesuvchi tishlarga, 8–8,5 yosh yonboshdagi kesuvchilarga, 12–13 yosh ikkinchi molyarlarga to‘g‘ri keladi.",
+        "ru": "Первые постоянные моляры прорезываются в 5–6 лет. 7 лет соответствует центральным резцам, 8–8,5 лет — боковым резцам, 12–13 лет — вторым молярам.",
+        "en": "The first permanent molars erupt at 5–6 years. Age 7 corresponds to the central incisors, 8–8.5 years to the lateral incisors, and 12–13 years to the second molars."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "404"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q14",
+      "question_i18n": {
+        "uz": "Bosh suyagining hayotlik davridagi va o‘limdan keyingi rentgenogrammalari solishtirilganda, har bir odamda yakka bo‘lgani uchun shaxsni ishonchli aniqlashga imkon beradigan belgi qaysi?",
+        "ru": "Какой признак при сопоставлении прижизненной и посмертной рентгенограмм черепа, будучи индивидуальным у каждого человека, позволяет достоверно установить личность?",
+        "en": "When comparing antemortem and postmortem radiographs of the skull, which feature allows reliable identification of a person because it is unique to each individual?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Peshona bo‘shlig‘i (frontal sinus) konturi",
+          "Bosh suyagining umumiy o‘lchamlari",
+          "Kalla suyagi choklarining bitish darajasi",
+          "Pastki jag‘ burchagining kattaligi"
+        ],
+        "ru": [
+          "Контур лобной пазухи (sinus frontalis)",
+          "Общие размеры черепа",
+          "Степень зарастания швов черепа",
+          "Величина угла нижней челюсти"
+        ],
+        "en": [
+          "The contour of the frontal sinus",
+          "The overall dimensions of the skull",
+          "The degree of fusion of the cranial sutures",
+          "The size of the angle of the mandible"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Manbaga ko‘ra ikki kishida peshona bo‘shlig‘ining konturi bir xil bo‘lmaydi, shuning uchun solishtirish ishonchli. Umumiy o‘lcham va jag‘ burchagi ko‘p odamlarda o‘xshash bo‘ladi, choklarning bitishi esa asosan yoshni baholashda ishlatiladi.",
+        "ru": "Согласно источнику, у двух людей контур лобной пазухи не бывает одинаковым, поэтому сопоставление достоверно. Общие размеры и угол челюсти у многих людей сходны, а зарастание швов используется главным образом для оценки возраста.",
+        "en": "According to the source, the contour of the frontal sinus is not identical in any two people, so comparison is reliable. Overall dimensions and the mandibular angle are similar in many people, while suture fusion is mainly used for age estimation."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "38"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q15",
+      "question_i18n": {
+        "uz": "Alkogolni miqdoriy aniqlash uchun barmoqdan qon olishdan oldin teri qaysi vosita bilan artiladi?",
+        "ru": "Чем обрабатывается кожа перед взятием крови из пальца для количественного определения алкоголя?",
+        "en": "Before taking a blood sample from a finger for quantitative determination of alcohol, with what agent is the skin wiped?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Etil spirti bilan namlangan paxta",
+          "Yodning spirtli eritmasi",
+          "Benzin bilan namlangan doka",
+          "Simob ikki xloridning 1:1000 nisbatdagi eritmasi"
+        ],
+        "ru": [
+          "Ватой, смоченной этиловым спиртом",
+          "Спиртовым раствором йода",
+          "Марлей, смоченной бензином",
+          "Раствором сулемы (дихлорида ртути) в соотношении 1:1000"
+        ],
+        "en": [
+          "Cotton moistened with ethyl alcohol",
+          "Alcoholic solution of iodine",
+          "Gauze moistened with gasoline",
+          "Mercuric chloride solution in a 1:1000 ratio"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Terini simob ikki xlorid eritmasi bilan artish kerak. Spirt, yodning spirtli eritmasi va benzin aniqlash natijasiga salbiy ta’sir qilishi mumkin, shu sababli ulardan foydalanilmaydi.",
+        "ru": "Кожу следует протирать раствором дихлорида ртути. Спирт, спиртовой раствор йода и бензин могут негативно повлиять на результат определения, поэтому их не используют.",
+        "en": "The skin should be wiped with a mercuric chloride solution. Alcohol, alcoholic iodine solution, and gasoline may adversely affect the result of the determination, so they are not used."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "411"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q16",
+      "question_i18n": {
+        "uz": "Bahsli otalik ekspertizasida onaning qon guruhi O (I), bolaniki A (II), taxmin qilinuvchi otaniki O (I) ekanligi aniqlandi. Ekspertning xulosasi qanday bo‘ladi?",
+        "ru": "При спорной экспертизе отцовства установлено, что группа крови матери — O (I), ребёнка — A (II), предполагаемого отца — O (I). Каким будет заключение эксперта?",
+        "en": "In a disputed paternity examination, the mother's blood group was found to be O (I), the child's A (II), and the alleged father's O (I). What will the expert's conclusion be?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Otalikni inkor etib bo‘lmaydi, chunki retsessiv O geni bolaga A antigenini berishi mumkin",
+          "Bola bu otadan bo‘lishi mumkin emas, chunki A antigeni ikkala ota-onada ham yo‘q",
+          "Otalik qat’iy tasdiqlanadi, chunki ota va onaning qon guruhlari bir xil",
+          "Xulosa berib bo‘lmaydi, chunki guruh antigenlari bolalik davrida o‘zgarib turadi"
+        ],
+        "ru": [
+          "Отцовство нельзя исключить, так как рецессивный ген O может передать ребёнку антиген A",
+          "Ребёнок не может быть от этого отца, так как антиген A отсутствует у обоих родителей",
+          "Отцовство категорически подтверждается, так как группы крови отца и матери одинаковы",
+          "Заключение дать невозможно, так как групповые антигены изменяются в детском возрасте"
+        ],
+        "en": [
+          "Paternity cannot be excluded, because the recessive O gene can give the child the A antigen",
+          "The child cannot be from this father, because the A antigen is absent in both parents",
+          "Paternity is conclusively confirmed, because the father's and mother's blood groups are the same",
+          "No conclusion can be given, because group antigens change during childhood"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Bolada A antigeni bo‘lsa, kamida bitta ota-onada u bo‘lishi shart. Ikkala ota-ona O guruhli bo‘lgani uchun bolaga A antigeni o‘tishi mumkin emas, demak otalik inkor etiladi. Qon guruhi antigenlari butun umr sifat jihatdan o‘zgarmaydi.",
+        "ru": "Если у ребёнка есть антиген A, он обязательно должен быть хотя бы у одного из родителей. Поскольку оба родителя имеют группу O, антиген A ребёнку передаться не может, следовательно, отцовство исключается. Антигены групп крови качественно не изменяются в течение всей жизни.",
+        "en": "If the child has the A antigen, at least one parent must have it. Since both parents are group O, the A antigen cannot be passed to the child, so paternity is excluded. Blood group antigens do not change qualitatively throughout life."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "396"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q17",
+      "question_i18n": {
+        "uz": "Erkakning urug‘ suyuqligi tekshirilganda faqat bitta spermatozoid topildi. Sud tibbiyoti nuqtai nazaridan ekspert qanday xulosa qila oladi?",
+        "ru": "При исследовании семенной жидкости мужчины обнаружен только один сперматозоид. Какое заключение может дать эксперт с точки зрения судебной медицины?",
+        "en": "Only one spermatozoon was found when a man's seminal fluid was examined. From a forensic medicine standpoint, what conclusion can the expert draw?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Shaxs azospermiya tufayli urug‘lantirishga qodir emas deb xulosa qiladi",
+          "Shaxs nekrospermiya sababli bepusht deb tan olinadi",
+          "Bitta spermatozoid topilishi shaxs urug‘lantirishga qodir emas deyishga asos bo‘lmaydi",
+          "Shaxs impotensiya tufayli jinsiy aloqaga qodir emas deb xulosa qiladi"
+        ],
+        "ru": [
+          "Заключит, что лицо неспособно к оплодотворению из-за азооспермии",
+          "Лицо будет признано бесплодным из-за некроспермии",
+          "Обнаружение одного сперматозоида не даёт оснований утверждать, что лицо неспособно к оплодотворению",
+          "Заключит, что лицо неспособно к половому сношению из-за импотенции"
+        ],
+        "en": [
+          "Concludes that the person is unable to fertilize due to azoospermia",
+          "The person is deemed infertile due to necrospermia",
+          "Finding one spermatozoon is not grounds to say that the person is unable to fertilize",
+          "Concludes that the person is unable to have sexual intercourse due to impotence"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Azospermiya spermatozoidlar umuman bo‘lmasligini bildiradi, bu yerda esa spermatozoid topilgan. Hatto bitta spermatozoid bo‘lsa ham urug‘lantirish qobiliyati yo‘q deb aytishga asos yo‘q. Impotensiya esa jinsiy aloqa qilish qobiliyatiga tegishli bo‘lib, urug‘ suyuqligi tahlilidan aniqlanmaydi.",
+        "ru": "Азооспермия означает полное отсутствие сперматозоидов, здесь же сперматозоид обнаружен. Даже при наличии одного сперматозоида нет оснований утверждать, что способности к оплодотворению нет. Импотенция же относится к способности совершать половой акт и по анализу семенной жидкости не определяется.",
+        "en": "Azoospermia means the complete absence of spermatozoa, whereas here a spermatozoon was found. Even if there is a single spermatozoon, there is no basis to say that the ability to fertilize is absent. Impotence relates to the ability to have sexual intercourse and is not determined from seminal fluid analysis."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "381"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q18",
+      "question_i18n": {
+        "uz": "Sud ekspertdan tirik shaxsning aniq 20 yoshdami yoki 21 yoshdami ekanini aniqlashni so‘radi. Ekspertning to‘g‘ri yondashuvi qaysi?",
+        "ru": "Суд поручил эксперту установить, ровно 20 лет или 21 год живому лицу. Каков правильный подход эксперта?",
+        "en": "The court asked the expert to determine whether a living person is exactly 20 or 21 years old. What is the expert's correct approach?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Buni aniq aytib bo‘lmasligini bildirib, ehtimoliy yosh oralig‘ini ko‘rsatish",
+          "Rentgen va tish ma’lumotlariga tayanib, yoshni bir yillik aniqlikda qat’iy belgilash",
+          "Shubha bo‘lsa, kichikroq yoshni qabul qilib, yosh oralig‘ini toraytirish",
+          "Faqat tashqi ko‘rik natijasiga asoslanib, eng ehtimolli yoshni nomlash"
+        ],
+        "ru": [
+          "Указать, что точно определить это невозможно, и привести вероятный возрастной интервал",
+          "Опираясь на рентгенологические и зубные данные, категорически установить возраст с точностью до одного года",
+          "При сомнении принять меньший возраст и сузить возрастной интервал",
+          "Опираясь только на результаты наружного осмотра, назвать наиболее вероятный возраст"
+        ],
+        "en": [
+          "To state that this cannot be determined precisely and indicate the probable age range",
+          "To rely on X-ray and dental data and establish the age definitively with one-year accuracy",
+          "In case of doubt, to adopt the lower age and narrow the age range",
+          "To name the most probable age based only on the results of external examination"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "20 yoshlik baho tug‘ilgan kundan boshlab 364 kunni qamrab oladi va 21 yoshlik bahodan atigi bir kun uzoqlikda turadi. Shuning uchun bu ikki yoshni ishonch bilan ajratib bo‘lmaydi. Shubha bo‘lsa, oraliq kengaytiriladi, toraytirilmaydi.",
+        "ru": "Оценка «20 лет» охватывает 364 дня со дня рождения и отстоит от оценки «21 год» всего на один день. Поэтому эти два возраста нельзя уверенно разграничить. При сомнении интервал расширяется, а не сужается.",
+        "en": "An age estimate of 20 years covers 364 days from the birthday and is only one day away from an estimate of 21 years. Therefore, these two ages cannot be reliably distinguished. In case of doubt, the range is widened, not narrowed."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "39"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q19",
+      "question_i18n": {
+        "uz": "Jabrlanuvchida son suyagining yopiq sinishi aniqlangan. Davolash asoratsiz o‘tdi, sog‘liq buzilishi 40 kun davom etdi, mehnat qobiliyati qisman tiklandi. Tan jarohatlarining og‘irlik darajasini sud-tibbiy aniqlash qoidalarining alohida bandiga ko‘ra bu jarohat qanday baholanadi?",
+        "ru": "У потерпевшего выявлен закрытый перелом бедренной кости. Лечение прошло без осложнений, расстройство здоровья длилось 40 дней, трудоспособность восстановилась частично. Как оценивается эта травма по отдельному пункту правил судебно-медицинского определения степени тяжести телесных повреждений?",
+        "en": "A closed femoral fracture was found in a victim. Treatment was uncomplicated, the health disorder lasted 40 days, and work capacity was partially restored. According to the specific clause of the rules for forensic medical determination of the severity of bodily injuries, how is this injury assessed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "O‘rtacha og‘ir, chunki sog‘liq buzilishi yigirma bir kundan ortiq davom etgan",
+          "Sog‘liqning qisqa muddatga buzilishiga olib kelgan yengil, chunki hayot uchun xavf belgisi yo‘q",
+          "Og‘ir, chunki bunday sinish real oqibatidan qat’i nazar mehnat qobiliyatining uchdan biridan ortig‘ini yo‘qotishga olib keladi",
+          "O‘rtacha og‘ir, chunki og‘irlik faqat ishga yaroqsizlik varaqasidagi kunlarga qarab belgilanadi"
+        ],
+        "ru": [
+          "Средней тяжести, так как расстройство здоровья длилось более двадцати одного дня",
+          "Лёгкий, повлёкший кратковременное расстройство здоровья, так как признаков опасности для жизни нет",
+          "Тяжкий, так как такой перелом независимо от реального исхода влечёт утрату более одной трети трудоспособности",
+          "Средней тяжести, так как тяжесть определяется только по дням в листке нетрудоспособности"
+        ],
+        "en": [
+          "Moderate, because the health disorder lasted more than twenty-one days",
+          "Mild, resulting in a short-term health disorder, because there is no sign of danger to life",
+          "Severe, because such a fracture leads to loss of more than one third of work capacity, regardless of its actual outcome",
+          "Moderate, because severity is determined only by the days on the sick-leave certificate"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Qoidalarda umumiy mehnat qobiliyatining uchdan biridan ko‘pini yo‘qotishga olib keladigan jarohatlar ro‘yxati bor, unga son suyagining ochiq yoki yopiq sinishi ham kiradi. Bunday jarohat real oqibati va tibbiy yordam ko‘rsatilganidan qat’i nazar og‘ir hisoblanadi. Kunlarga asoslangan variantlar bu bandni hisobga olmaydi.",
+        "ru": "В правилах есть перечень повреждений, влекущих утрату более одной трети общей трудоспособности, в него входит и открытый или закрытый перелом бедренной кости. Такое повреждение считается тяжким независимо от реального исхода и оказания медицинской помощи. Варианты, основанные на днях, этот пункт не учитывают.",
+        "en": "The rules contain a list of injuries leading to loss of more than one third of general work capacity, which includes open or closed fracture of the femur. Such an injury is considered severe regardless of its actual outcome and of whether medical care was provided. Options based on the number of days do not take this clause into account."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "280"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q20",
+      "question_i18n": {
+        "uz": "Bir shaxsga ikki xil sanada, turli hodisalarda ikkita tan jarohati yetkazilgan. Ekspert og‘irlik darajasini qanday aniqlaydi?",
+        "ru": "Одному лицу в разные даты при разных событиях причинены два телесных повреждения. Как эксперт определяет степень тяжести?",
+        "en": "Two bodily injuries were inflicted on one person on two different dates, in different incidents. How does the expert determine the severity?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Har bir jarohat uchun og‘irlik darajasi alohida aniqlanadi",
+          "Ikkala jarohat majmui uchun yagona umumiy daraja belgilanadi",
+          "Ikkalasidan og‘irrog‘iga mos daraja butun holatga qo‘llanadi",
+          "Ikkala jarohat bo‘yicha sog‘liq buzilgan kunlar qo‘shilib baholanadi"
+        ],
+        "ru": [
+          "Степень тяжести определяется отдельно для каждого повреждения",
+          "Для совокупности обоих повреждений устанавливается единая общая степень",
+          "Ко всей ситуации применяется степень, соответствующая более тяжкому из двух",
+          "Дни расстройства здоровья по обоим повреждениям суммируются и оцениваются вместе"
+        ],
+        "en": [
+          "The severity is determined separately for each injury",
+          "A single overall grade is assigned for the totality of both injuries",
+          "The grade corresponding to the more severe of the two is applied to the whole case",
+          "The days of health disorder from both injuries are added together and assessed"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Yagona umumiy baho faqat bir vaqtda, bir hodisada yetkazilgan va bir-birining kechishini og‘irlashtirgan jarohatlar uchun beriladi. Jarohatlar turli muddatlarda yetkazilganda ularning har biri alohida baholanadi. Boshqa variantlar bu qoidani buzadi.",
+        "ru": "Единая общая оценка даётся только для повреждений, причинённых одновременно, в одном событии и отягощавших течение друг друга. Когда повреждения причинены в разные сроки, каждое оценивается отдельно. Остальные варианты нарушают это правило.",
+        "en": "A single overall assessment is given only for injuries inflicted at the same time, in the same incident, and which aggravated each other's course. When injuries are inflicted at different times, each of them is assessed separately. The other options violate this rule."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "283"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q21",
+      "question_i18n": {
+        "uz": "Shifokor sog‘lom shaxsda simulyasiya bo‘lishi mumkin deb gumon qilmoqda, ammo diagnoz hali aniqlanmagan. Qaysi taktika to‘g‘ri?",
+        "ru": "Врач подозревает у здорового лица симуляцию, однако диагноз ещё не установлен. Какая тактика верна?",
+        "en": "A physician suspects that a healthy person may be simulating (malingering), but the diagnosis has not yet been established. Which tactic is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Gumonni tekshirish uchun darhol to‘liq davo kursini boshlash",
+          "Shubhani tekshiriluvchiga ochiq aytib, uni iqror bo‘lishga undash",
+          "Barcha tekshiruvlarni oldindan kelishib, bir marta o‘tkazish",
+          "Diagnoz aniqlanmaguncha davo tayinlamaslik, chunki davo kasallikni bilvosita tasdiqlaydi"
+        ],
+        "ru": [
+          "Немедленно начать полный курс лечения для проверки подозрения",
+          "Открыто сообщить обследуемому о подозрении и побудить его к признанию",
+          "Заранее согласовать все обследования и провести их один раз",
+          "Не назначать лечение, пока диагноз не установлен, так как лечение косвенно подтверждает заболевание"
+        ],
+        "en": [
+          "Immediately start a full course of treatment to test the suspicion",
+          "Tell the examinee the suspicion openly and urge them to confess",
+          "Conduct all examinations once, after agreeing on them in advance",
+          "Do not prescribe treatment until the diagnosis is established, because treatment indirectly confirms the disease"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Tayinlangan davo choralari kasallik mavjudligini bilvosita tasdiqlab qo‘yadi, shuning uchun diagnoz aniq bo‘lmaguncha davo tayinlanmaydi. Simulyasiyani aniqlash uchun shaxs davomli kuzatiladi, ayrim tekshiruvlar esa ogohlantirmasdan, to‘satdan va takroran o‘tkazilgani ma’qul. Qolgan variantlar bu tamoyillarga zid.",
+        "ru": "Назначенные лечебные меры косвенно подтверждают наличие заболевания, поэтому до уточнения диагноза лечение не назначается. Для выявления симуляции за лицом ведётся длительное наблюдение, а отдельные обследования желательно проводить без предупреждения, внезапно и повторно. Остальные варианты противоречат этим принципам.",
+        "en": "Prescribed treatment measures indirectly confirm that the disease exists, so no treatment is prescribed until the diagnosis is clear. To detect simulation, the person is observed over a prolonged period, and it is preferable to perform some examinations without warning, suddenly and repeatedly. The remaining options contradict these principles."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "285"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q22",
+      "question_i18n": {
+        "uz": "Ekspertizada qiz jinsiy aloqada bo‘lganini aytadi, ammo qizlik pardasida defloratsiya belgisi topilmadi. Qaysi tuzilishdagi pardada jinsiy aloqa defloratsiyasiz kechishi mumkin?",
+        "ru": "На экспертизе девушка сообщает, что имела половую жизнь, однако признаков дефлорации на девственной плеве не обнаружено. При какой структуре плевы половое сношение может протекать без дефлорации?",
+        "en": "During an expert examination, a girl states that she has had sexual intercourse, but no signs of defloration were found on the hymen. In which hymen structure can sexual intercourse occur without defloration?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qalin, zich, go‘shtsimon, balandligi katta, tabiiy o‘yiqlari yo‘q pardada",
+          "Elastik, cho‘ziluvchan, balandligi past, tabiiy o‘yiqlari ko‘p pardada",
+          "Yupqa, zich, balandligi katta, teshigi juda tor pardada",
+          "Qalin, cho‘ziluvchanligi past, bitta chuqur o‘yiqli pardada"
+        ],
+        "ru": [
+          "В толстой, плотной, мясистой плеве большой высоты без естественных вырезок",
+          "В эластичной, растяжимой плеве малой высоты с множеством естественных вырезок",
+          "В тонкой, плотной плеве большой высоты с очень узким отверстием",
+          "В толстой плеве с низкой растяжимостью и одной глубокой вырезкой"
+        ],
+        "en": [
+          "A thick, dense, fleshy hymen of great height without natural notches",
+          "An elastic, distensible hymen of low height with many natural notches",
+          "A thin, dense hymen of great height with a very narrow opening",
+          "A thick hymen with low distensibility and a single deep notch"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Ayrim hollarda jinsiy aloqada defloratsiya bo‘lmaydi, bu asosan elastik, cho‘ziluvchan, balandligi past va tabiiy o‘yiqlari ko‘p pardalarga xos. Qalin, zich yoki baland pardalar cho‘zilmaydi va ko‘proq yoriladi.",
+        "ru": "В ряде случаев при половом сношении дефлорации не происходит; это характерно главным образом для эластичных, растяжимых плев малой высоты с множеством естественных вырезок. Толстые, плотные или высокие плевы не растягиваются и чаще разрываются.",
+        "en": "In some cases, sexual intercourse does not result in defloration; this is typical mainly of hymens that are elastic, distensible, low in height and have many natural notches. Thick, dense or high hymens do not stretch and are more likely to tear."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "291"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q23",
+      "question_i18n": {
+        "uz": "Besoqolbozlikda passiv qatnashchi deb gumon qilingan erkakda orqa teshik sohasida o‘zgarishlar bor, ammo u surunkali bavosil va proktit bilan og‘rigan. Ekspert qanday yo‘l tutishi kerak?",
+        "ru": "У мужчины, подозреваемого в пассивном участии в мужеложстве, имеются изменения в области заднего прохода, однако он страдает хроническим геморроем и проктитом. Как должен поступить эксперт?",
+        "en": "A man suspected of being a passive participant in pederasty has changes in the anal region, but he has suffered from chronic hemorrhoids and proctitis. How should the expert proceed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "O‘zgarishlarni muntazam passiv jinsiy aloqaning isboti sifatida qabul qiladi",
+          "So‘rovda bu kasalliklarga e’tibor beradi va kerak bo‘lsa proktolog maslahatini oladi",
+          "Ko‘rikni to‘xtatib, hech qanday xulosa bermasdan ishni qaytaradi",
+          "Kasalliklarni inobatga olmay, faqat shilliq qavat rangiga qarab baho beradi"
+        ],
+        "ru": [
+          "Примет изменения как доказательство регулярных пассивных половых актов",
+          "Обратит внимание на эти заболевания при опросе и при необходимости получит консультацию проктолога",
+          "Прекратит осмотр и вернёт дело, не давая никакого заключения",
+          "Не учитывая заболевания, оценит только по цвету слизистой оболочки"
+        ],
+        "en": [
+          "Accept the changes as proof of regular passive sexual intercourse",
+          "Pay attention to these diseases during the interview and, if necessary, obtain a proctologist's consultation",
+          "Stop the examination and return the case without giving any conclusion",
+          "Disregard the diseases and make an assessment based solely on the color of the mucous membrane"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Qabziyat, ich ketishi, proktit, paraproktit, bavosil yoki oldingi jarrohlik izlari muntazam passiv besoqolbozlik belgilari deb noto‘g‘ri talqin qilinishi mumkin. Shu sababli so‘rovda bu masalalarga e’tibor beriladi, zarur bo‘lsa proktologning maslahati olinadi.",
+        "ru": "Запор, понос, проктит, парапроктит, геморрой или следы прежних операций могут быть ошибочно истолкованы как признаки регулярного пассивного мужеложства. Поэтому при опросе уделяется внимание этим вопросам, при необходимости получают консультацию проктолога.",
+        "en": "Constipation, diarrhea, proctitis, paraproctitis, hemorrhoids or traces of previous surgery may be wrongly interpreted as signs of habitual passive pederasty. Therefore, attention is paid to these issues during the interview, and if necessary a proctologist's consultation is obtained."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "298"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q24",
+      "question_i18n": {
+        "uz": "Jinoiy ish doirasida tirik o‘smirning yoshini skelet bo‘yicha baholash rejalashtirilgan. Bu usul haqida qaysi fikr to‘g‘ri?",
+        "ru": "В рамках уголовного дела планируется оценка возраста живого подростка по скелету. Какое утверждение об этом методе верно?",
+        "en": "Within a criminal case, an age assessment of a living adolescent by skeletal examination is planned. Which statement about this method is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Vizual bajarilmaydi, texnologiyaga tayanadi; nurlanish xavfi tufayli xabardor rozilik bilan o‘tkaziladi",
+          "Tashqi ko‘rik bilan to‘liq almashtirilishi mumkin, shuning uchun rozilik talab qilinmaydi",
+          "Faqat intraoral ko‘rikka tayanadi va ionlashtiruvchi nurlanishni talab qilmaydi",
+          "Aniq kalendar yoshni beradi, shu sababli boshqa usullar bilan solishtirish shart emas"
+        ],
+        "ru": [
+          "Не выполняется визуально, опирается на технологии; из-за риска облучения проводится с информированного согласия",
+          "Может быть полностью заменена внешним осмотром, поэтому согласие не требуется",
+          "Опирается только на внутриротовой осмотр и не требует ионизирующего излучения",
+          "Даёт точный календарный возраст, поэтому сопоставление с другими методами не обязательно"
+        ],
+        "en": [
+          "It cannot be done visually and relies on technology; because of the radiation risk, it is carried out with informed consent",
+          "It can be fully replaced by external examination, so consent is not required",
+          "It relies only on intraoral examination and does not require ionizing radiation",
+          "It gives the exact calendar age, so comparison with other methods is not necessary"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Skelet bo‘yicha baholashni ko‘z bilan bajarib bo‘lmaydi, u texnologiyaga tayanadi. Texnologiyaning ko‘pchiligi ionlashtiruvchi nurlanish xavfini tug‘diradi, shuning uchun faqat xabardor rozilik bilan o‘tkaziladi. Qancha ko‘p usul qo‘llansa, natija haqiqiy yoshga shuncha yaqin bo‘ladi.",
+        "ru": "Оценку по скелету нельзя выполнить на глаз, она опирается на технологии. Большинство технологий несёт риск ионизирующего излучения, поэтому проводится только с информированного согласия. Чем больше методов применяется, тем ближе результат к истинному возрасту.",
+        "en": "Skeletal assessment cannot be performed by eye; it relies on technology. Most of these technologies carry a risk of ionizing radiation, so they are used only with informed consent. The more methods are applied, the closer the result is to the true age."
+      },
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "40"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q25",
+      "question_i18n": {
+        "uz": "Tirik shaxsning qonida 1-tip gaptoglobin (genotipi 1-1) aniqlangan bola va taxmin qilinuvchi otada 2-tip gaptoglobin (genotipi 2-2) topilgan. Bahsli otalik ekspertizasida bu holat qanday talqin etiladi?",
+        "ru": "У живого лица в крови ребёнка определён гаптоглобин типа 1 (генотип 1-1), а у предполагаемого отца обнаружен гаптоглобин типа 2 (генотип 2-2). Как трактуется эта ситуация в экспертизе спорного отцовства?",
+        "en": "In a living person's blood, the child has haptoglobin type 1 (genotype 1-1), and the alleged father has haptoglobin type 2 (genotype 2-2). How is this interpreted in a disputed paternity examination?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Otalik inkor etiladi: bolada 2-gen bo‘lmaydi, ota va bola qarama-qarshi gomozigota",
+          "Otalik tasdiqlanadi, chunki otadan bolaga gaptoglobinning ikkala geni birdan beriladi",
+          "Otalik inkor etilmaydi, chunki bola genotipini faqat ona geni belgilaydi",
+          "Masala hal bo‘lmaydi, chunki bunday holatda yashirin allel doim otalikni inkor etishga to‘sqinlik qiladi"
+        ],
+        "ru": [
+          "Отцовство исключается: у ребёнка не может быть гена 2, отец и ребёнок — противоположные гомозиготы",
+          "Отцовство подтверждается, так как от отца ребёнку передаются сразу оба гена гаптоглобина",
+          "Отцовство не исключается, так как генотип ребёнка определяется только геном матери",
+          "Вопрос не решается, так как в такой ситуации скрытый аллель всегда препятствует исключению отцовства"
+        ],
+        "en": [
+          "Paternity is excluded: the child cannot have the 2 gene, and the father and child are opposite homozygotes",
+          "Paternity is confirmed, because both haptoglobin genes are passed from father to child at once",
+          "Paternity is not excluded, because the child's genotype is determined only by the mother's gene",
+          "The question cannot be resolved, because in such a case a silent allele always prevents the exclusion of paternity"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Haqiqiy ota bolasiga albatta bitta gen beradi. Ota 2-2 gomozigota bo‘lsa, bolada 2-gen bo‘lishi shart, bola esa 1-1. Yashirin allel imkoniyati faqat gomozigota bo‘lmagan holatlarda ko‘riladi, bu yerda esa u qo‘llanmaydi.",
+        "ru": "Настоящий отец обязательно передаёт ребёнку один ген. Если отец — гомозигота 2-2, у ребёнка должен быть ген 2, а ребёнок — 1-1. Возможность скрытого аллеля рассматривается только в негомозиготных случаях, здесь же она не применяется.",
+        "en": "A true father necessarily passes one gene to his child. If the father is a 2-2 homozygote, the child must have a 2 gene, but the child is 1-1. The possibility of a silent allele is considered only in non-homozygous cases, and here it does not apply."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "399"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q26",
+      "question_i18n": {
+        "uz": "Jabrlanuvchida sistolik qon bosimi 60 mm sim. ust., Algover shok indeksi 1,2 dan yuqori, qon yo‘qotish taxminan 1,8 l, ong esa sopor holatida. Travmatik shokning qaysi darajasi mos keladi?",
+        "ru": "У пострадавшего систолическое артериальное давление 60 мм рт. ст., шоковый индекс Альговера выше 1,2, кровопотеря около 1,8 л, сознание — сопор. Какая степень травматического шока соответствует?",
+        "en": "A victim has a systolic blood pressure of 60 mm Hg, an Allgöwer shock index above 1.2, a blood loss of approximately 1.8 L, and consciousness at the stupor (sopor) level. Which grade of traumatic shock corresponds to this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "I daraja",
+          "III daraja",
+          "II daraja",
+          "IV daraja (terminal holat)"
+        ],
+        "ru": [
+          "I степень",
+          "III степень",
+          "II степень",
+          "IV степень (терминальное состояние)"
+        ],
+        "en": [
+          "Grade I",
+          "Grade III",
+          "Grade II",
+          "Grade IV (terminal state)"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "III darajada sistolik bosim 50–70 mm sim. ust., indeks 1,2 dan yuqori, qon yo‘qotish 1,5–2 l va ong sopor holatida bo‘ladi. I va II darajada ong saqlangan, indeks past, qon yo‘qotish kam. IV darajada terminal holat bo‘lib, sistolik bosim 50 dan ham past.",
+        "ru": "При III степени систолическое давление 50–70 мм рт. ст., индекс выше 1,2, кровопотеря 1,5–2 л, сознание в состоянии сопора. При I и II степени сознание сохранено, индекс низкий, кровопотеря небольшая. При IV степени — терминальное состояние, систолическое давление ниже 50.",
+        "en": "In grade III, systolic pressure is 50–70 mm Hg, the index is above 1.2, blood loss is 1.5–2 L, and consciousness is at the stupor (sopor) level. In grades I and II, consciousness is preserved, the index is lower, and blood loss is smaller. Grade IV is a terminal state, with systolic pressure even below 50."
+      },
+      "source": {
+        "author": "Ромодановский П.О., Баринов Е.Х.",
+        "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "413"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q27",
+      "question_i18n": {
+        "uz": "Shaxs soat 20:00 da 40 foizli aroqdan 200 ml ichdi. Chiqarilayotgan havoda alkogolga qilinadigan taxminiy (indikator naychasi) sinama taxminan qaysi vaqtgacha musbat natija berishi kutiladi?",
+        "ru": "Лицо в 20:00 выпило 200 мл 40-процентной водки. До какого времени ориентировочная проба (индикаторной трубкой) на алкоголь в выдыхаемом воздухе, как ожидается, будет давать положительный результат?",
+        "en": "A person drank 200 ml of 40% vodka at 20:00. Until approximately what time is the approximate (indicator tube) test for alcohol in exhaled air expected to give a positive result?"
+      },
+      "options_i18n": {
+        "uz": [
+          "21:00–21:30 gacha",
+          "23:00–23:30 gacha",
+          "02:00–02:30 gacha",
+          "05:00 gacha"
+        ],
+        "ru": [
+          "До 21:00–21:30",
+          "До 23:00–23:30",
+          "До 02:00–02:30",
+          "До 05:00"
+        ],
+        "en": [
+          "Until 21:00–21:30",
+          "Until 23:00–23:30",
+          "Until 02:00–02:30",
+          "Until 05:00"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Darslikdagi ma’lumotga ko‘ra 200 ml 40 foizli aroq ichilganda alkogolni chiqarilayotgan havodan taxminan 6–6,5 soat davomida topish mumkin. 20:00 ga 6–6,5 soat qo‘shilsa, 02:00–02:30 chiqadi. Qolgan variantlar 50 ml, 100 ml va 250 ml dozalarga mos keladi.",
+        "ru": "По данным учебника, при употреблении 200 мл 40-процентной водки алкоголь в выдыхаемом воздухе можно обнаружить примерно в течение 6–6,5 часов. Если прибавить 6–6,5 часов к 20:00, получится 02:00–02:30. Остальные варианты соответствуют дозам 50 мл, 100 мл и 250 мл.",
+        "en": "According to the textbook, after drinking 200 ml of 40% vodka, alcohol can be detected in exhaled air for approximately 6–6.5 hours. Adding 6–6.5 hours to 20:00 gives 02:00–02:30. The other options correspond to doses of 50 ml, 100 ml and 250 ml."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "409"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q28",
+      "question_i18n": {
+        "uz": "Harbiy xizmatchida to‘g‘ri ichak tushishi aniqlandi; to‘g‘ri ichak shilliq qavati va orqa teshik sohasida jarohatlar bor, hodisa tafsilotini tushuntirib bera olmaydi. Ekspert birinchi navbatda qaysi taxminni ko‘rib chiqadi?",
+        "ru": "У военнослужащего выявлено выпадение прямой кишки; на слизистой оболочке прямой кишки и в области заднего прохода имеются повреждения, обстоятельства случившегося объяснить он не может. Какое предположение эксперт рассмотрит в первую очередь?",
+        "en": "A rectal prolapse was detected in a serviceman; there are injuries on the rectal mucosa and in the anal region, and he cannot explain the circumstances of the incident. Which hypothesis will the expert consider first?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Chin to‘g‘ri ichak tushishi, jarohatlar esa uning ikkilamchi oqibati",
+          "Aggravatsiya, ya’ni mavjud kasallik belgilarini bo‘rttirib ko‘rsatish",
+          "Dissimulyatsiya, ya’ni mavjud kasallikni yashirishga urinish",
+          "Mexanik usul bilan sun’iy chaqirilgan to‘g‘ri ichak tushishi"
+        ],
+        "ru": [
+          "Истинное выпадение прямой кишки, а повреждения — его вторичное последствие",
+          "Аггравация, то есть преувеличение признаков существующего заболевания",
+          "Диссимуляция, то есть попытка скрыть существующее заболевание",
+          "Искусственно вызванное механическим способом выпадение прямой кишки"
+        ],
+        "en": [
+          "True rectal prolapse, with the injuries as its secondary consequence",
+          "Aggravation, i.e., exaggeration of the signs of an existing disease",
+          "Dissimulation, i.e., an attempt to conceal an existing disease",
+          "Rectal prolapse artificially induced by a mechanical method"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Sun’iy tushishda ichak ichiga bo‘kadigan narsali tasmali qopcha kiritilib tortiladi. Chin tushishdan farqli ravishda shilliq qavat va orqa teshik atrofida jarohatlar qoladi. Bu aynan sun’iy kasallikka xos belgi, boshqa variantlar bu topilmani tushuntirmaydi.",
+        "ru": "При искусственном выпадении в кишку вводят ленточный мешочек с набухающим веществом и вытягивают его. В отличие от истинного выпадения, остаются повреждения слизистой оболочки и вокруг заднего прохода. Это признак именно искусственного заболевания, другие варианты эту находку не объясняют.",
+        "en": "In artificial prolapse, a pouch with a strap containing a swelling substance is inserted into the rectum and pulled. Unlike in true prolapse, injuries remain on the mucous membrane and around the anus. This is a sign specific to an artificially induced (factitious) condition; the other options do not explain this finding."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "287"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q29",
+      "question_i18n": {
+        "uz": "Ekspert statsionarda davolanayotgan bemorni sud-tibbiy ko‘rikdan o‘tkazishi kerak. Qaysi tartib to‘g‘ri?",
+        "ru": "Эксперт должен провести судебно-медицинское освидетельствование больного, находящегося на лечении в стационаре. Какой порядок верен?",
+        "en": "An expert must perform a forensic medical examination of a patient being treated in a hospital. Which procedure is correct?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ko‘rik muassasa rahbarining ruxsati bilan istalgan holatda o‘tkaziladi va faqat ekspert ishtirok etadi",
+          "Ko‘rik faqat ekspertiza tayinlagan shaxsning ishtirokida o‘tkaziladi, tibbiyot xodimi qatnashmaydi",
+          "Ko‘rik bemor ahvolidan qat’i nazar o‘tkaziladi, natija esa faqat ekspert hujjatida qayd etiladi",
+          "Ko‘rik bemor sog‘lig‘i ruxsat bergandagina, tayinlagan shaxs yoki vakili va bo‘lim mudiri (davolovchi vrach) ishtirokida o‘tkaziladi, kasallik tarixiga yoziladi"
+        ],
+        "ru": [
+          "Освидетельствование проводится с разрешения руководителя учреждения в любом состоянии и только в присутствии эксперта",
+          "Освидетельствование проводится только в присутствии лица, назначившего экспертизу, медицинский работник не участвует",
+          "Освидетельствование проводится независимо от состояния больного, а результат фиксируется только в документе эксперта",
+          "Освидетельствование проводится только если позволяет состояние здоровья больного, в присутствии назначившего лица или его представителя и заведующего отделением (лечащего врача), и записывается в историю болезни"
+        ],
+        "en": [
+          "The examination is conducted in any condition with the permission of the head of the institution, and only the expert takes part",
+          "The examination is conducted only in the presence of the person who ordered the expert examination, and no medical staff take part",
+          "The examination is conducted regardless of the patient's condition, and the result is recorded only in the expert's document",
+          "The examination is conducted only if the patient's health permits, in the presence of the person who ordered it or their representative and the head of the department (attending physician), and is recorded in the medical history"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Ko‘rik avvalo bemorning sog‘lig‘i yo‘l qo‘yganda mumkin. Unda ekspertiza tayinlagan shaxs yoki uning vakili hamda davolash muassasasi xodimi qatnashadi. Ko‘rik o‘tkazilgani kasallik tarixida aks ettiriladi. Boshqa variantlar bu shartlarni buzadi.",
+        "ru": "Освидетельствование возможно прежде всего тогда, когда это допускает состояние здоровья больного. В нём участвуют лицо, назначившее экспертизу, или его представитель и работник лечебного учреждения. Факт проведения освидетельствования отражается в истории болезни. Остальные варианты нарушают эти условия.",
+        "en": "The examination is possible primarily when the patient's health allows it. It is attended by the person who ordered the expert examination or their representative, and by a staff member of the medical institution. The fact that the examination was performed is recorded in the medical history. The other options violate these conditions."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "301"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-12-q30",
+      "question_i18n": {
+        "uz": "3 yoshli bolada ikkala qo‘lda ‘‘qo‘lqop’’ shaklidagi, chegarasi tekis va sog‘ teridan aniq ajralgan, chuqurligi nisbatan bir xil kuyish topildi. Bu belgilar qaysi holat uchun ko‘proq xos?",
+        "ru": "У 3-летнего ребёнка на обеих руках обнаружен ожог в виде «перчаток» с ровными краями, чётко отграниченный от здоровой кожи, относительно одинаковой глубины. Для какой ситуации эти признаки более характерны?",
+        "en": "In a 3-year-old child, 'glove'-shaped burns on both hands were found, with smooth borders sharply demarcated from healthy skin and relatively uniform depth. For which situation are these signs more characteristic?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qaynoq suyuqlik tasodifan sachraganda hosil bo‘lgan tomchi-sachrama shaklidagi kuyish",
+          "Ota-ona nazoratisiz qolgan bolaning issiq idishga tasodifan tegishi oqibatidagi kuyish",
+          "Qo‘llar qaynoq suyuqlikka botirilgan holatdagi zo‘ravonlik oqibatidagi kuyish",
+          "Quyosh nuri yoki issiqlik manbaining uzoq ta’siridagi termik dermatit"
+        ],
+        "ru": [
+          "Ожог в виде капель-брызг, возникший при случайном разбрызгивании кипятка",
+          "Ожог в результате случайного прикосновения оставшегося без присмотра родителей ребёнка к горячей посуде",
+          "Ожог вследствие насилия при погружении рук в кипящую жидкость",
+          "Термический дерматит при длительном воздействии солнечных лучей или источника тепла"
+        ],
+        "en": [
+          "A drop-and-splash burn formed when boiling liquid accidentally splashed",
+          "A burn resulting from a child left without parental supervision accidentally touching a hot vessel",
+          "A burn resulting from abuse, with the hands immersed in boiling liquid",
+          "Thermal dermatitis from prolonged exposure to sunlight or a heat source"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Zo‘ravonlik oqibatidagi kuyishlarda cheti tekis, botirilgan daraja bo‘yicha (qo‘lqop yoki paypoq shaklida) aniq chegaralangan, chuqurlik nisbatan bir tekis bo‘ladi. Tasodifiy kuyishlarda esa tomchi shaklidagi, chegarasi xira, chuqurligi notekis va sayoz o‘choqlar uchraydi. Zo‘ravonlik faktini tergov va sud belgilaydi, ekspert esa jarohat xususiyatini baholaydi.",
+        "ru": "При ожогах вследствие насилия края ровные, чётко ограничены по уровню погружения (в виде перчатки или носка), глубина относительно равномерная. При случайных ожогах встречаются каплевидные, поверхностные очаги с нечёткими границами и неравномерной глубиной. Факт насилия устанавливают следствие и суд, а эксперт оценивает характер повреждения.",
+        "en": "In burns resulting from abuse, the edge is smooth, sharply demarcated according to the level of immersion (glove or sock shape), and the depth is relatively uniform. In accidental burns, drop-shaped foci with blurred borders, uneven depth and shallow extent are found. The fact of abuse is established by the investigation and the court, while the expert assesses the nature of the injury."
+      },
+      "source": {
+        "author": "Ромодановский П.О., Баринов Е.Х.",
+        "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "427"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "Bob 12. Tirik shaxslar sud-tibbiy ekspertizasi"
+    },
+    {
+      "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+      "title": "Simpson's Forensic Medicine, 13th ed.",
+      "year": 2011,
+      "pages": "Chapter 4. Identification of the living and the dead, pp. 35–41"
+    },
+    {
+      "author": "Ромодановский П.О., Баринов Е.Х.",
+      "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2017,
+      "pages": "6-modul. Jabrlanuvchilar va boshqa shaxslar ekspertizasi (og‘irlik, jinsiy holat, yosh); bet 408-459"
+    },
+    {
+      "author": "Харин Г.М. (Kharin G.M.)",
+      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2006,
+      "pages": "VIII-IX bo‘limlar (19-23-boblar). Tirik shaxslar, jinsiy holatlar, identifikatsiya; bet 154-191"
+    },
+    {
+      "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+      "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+      "year": null,
+      "pages": "XIV-bob. Tirik shaxslar ekspertizasi; bet 351-413"
+    }
+  ]
+}
