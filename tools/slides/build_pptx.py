@@ -74,7 +74,7 @@ def _diagram(slide, d, x, y, w, h):
         rows = [d["header"]] + list(d.get("rows", []))[:5]
         cols = len(d["header"])
         fs = 13 if cols <= 2 else (12 if cols == 3 else 11)
-        lens = [max([len(str(r[j])) if j < len(r) else 0 for r in rows] + [8]) for j in range(cols)]
+        lens = [min(40, max([len(str(r[j])) if j < len(r) else 0 for r in rows] + [len(str(d["header"][j])) + 6, 16])) for j in range(cols)]
         tot = sum(lens)
         gs = slide.shapes.add_table(len(rows), cols, x, y, w, Inches(0.5) * len(rows))
         t = gs.table
