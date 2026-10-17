@@ -1,0 +1,108 @@
+```json
+{
+  "questions": [
+    {
+      "question": "Murdaning o‘ng o‘pkasida ikkita teshib o‘tgan o‘q otar jarohat bor. A jarohatda o‘pka ichidagi kirish va chiqish teshiklari bir-biriga to‘g‘ri kelmaydi, B jarohatda esa to‘g‘ri keladi. Ekspert jarohatlar ketma-ketligi haqida qanday xulosa qiladi?",
+      "options": [
+        "A birinchi, B ikkinchi: B o‘q gemopnevmotoraksdan keyin allaqachon puchaygan o‘pkadan o‘tgan",
+        "B birinchi, A ikkinchi: ikkinchi o‘q puchaygan o‘pkani siljitib, kanalni noto‘g‘ri yo‘naltirgan",
+        "Ikkala jarohat bir vaqtda etkazilgan: teshiklarning mos kelmasligi faqat o‘q tezligiga bog‘liq",
+        "B birinchi, A ikkinchi: birinchi o‘q o‘pka to‘qimasini ko‘proq siljitgan va kanalni buzgan"
+      ],
+      "correct_index": 0,
+      "explanation": "Birinchi o‘q o‘pka puchaymagan paytda o‘tadi, shuning uchun kirish va chiqish teshiklari bir chiziqqa tushmaydi. Hosil bo‘lgan gemopnevmotoraks o‘pkani puchaytiradi va ikkinchi o‘q kanali to‘g‘ri chiqadi. Boshqa variantlar bu tartibni teskari qo‘yadi yoki ketma-ketlikni aniqlab bo‘lmaydi deydi, bu esa noto‘g‘ri.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun)",
+        "page": "193-194"
+      }
+    },
+    {
+      "question": "Qorin bo‘shlig‘iga o‘q otar jarohat etkazilgan murdani kesib ko‘rishda pastki kovak venaning jarohati aniqlandi, lekin o‘q qorin bo‘shlig‘ida topilmadi. Ekspertning keyingi to‘g‘ri harakati qaysi?",
+      "options": [
+        "O‘q teshib chiqib ketgan deb hisoblab, qidiruvni to‘xtatadi",
+        "Rentgenografiya qiladi, yig‘ilgan qon va uyushmalarni tekshiradi, yurak bo‘shliqlarini ham qidiradi",
+        "Faqat qorin devori mushaklarini qavatma-qavat kesib, o‘qni shu yerda qidiradi",
+        "Qidiruvni yara kanali atrofi bilan cheklaydi, chunki o‘q qon oqimi bilan siljimaydi"
+      ],
+      "correct_index": 1,
+      "explanation": "Pastki kovak venaga tushgan o‘q qon oqimi bilan yurakka yetib borishi mumkin, shuning uchun uni birlamchi kanaldan uzoqda ham izlash kerak. Rentgenologik tekshiruv va qon uyushmalarini idishda ko‘zdan kechirish shu maqsadga xizmat qiladi. Qolgan variantlar qidiruvni asossiz toraytiradi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun)",
+        "page": "190"
+      }
+    },
+    {
+      "question": "Portlash hodisasida jabrlangan tanasining chap tomonida gazlarning eng kuchli emiruvchi ta’siri, qurumning eng zich cho‘kishi va parchalardan hosil bo‘lgan yara kanallarining chap tomonga yo‘nalishi aniqlandi. Ekspert portlovchi moslamaning joylashuvi haqida qanday xulosa qiladi?",
+      "options": [
+        "Moslama jabrlanganning o‘ng tomonida bo‘lgan, chunki zarb to‘lqini qarama-qarshi tomonni ko‘proq emiradi",
+        "Moslamaning joyini aniqlab bo‘lmaydi, chunki qurum va parcha izlari faqat portlash turiga bog‘liq",
+        "Moslama chap tomonda, yaqin joylashgan bo‘lgan: uchala belgi ham portlash markazi shu yoqda ekanini ko‘rsatadi",
+        "Moslama jabrlangan ustida bo‘lgan, chunki parcha kanallari faqat yuqoridan pastga yo‘nalgan bo‘ladi"
+      ],
+      "correct_index": 2,
+      "explanation": "Portlash markaziga nisbatan holat gazlarning eng kuchli emiruvchi joyi, qurum cho‘kishining eng zich zonasi, parchali yaralar joylashuvi va ularning kanal yo‘nalishi birgalikda baholanib aniqlanadi. Bu uch belgi bir tomonni ko‘rsatsa, markaz o‘sha yoqda deb xulosa qilinadi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие",
+        "page": "110-111"
+      }
+    },
+    {
+      "question": "Tergov ma’lumotiga ko‘ra jabrlanganga uzoq masofadan iz qoldiruvchi o‘q uzilgan. Kirish teshigi atrofida qurumga o‘xshash qora belbog‘ bor, lekin porox zarrachalari va metall zarrachalari yo‘q. Kiyim tanaga zich yopishgan. Qaysi xulosa asosli?",
+      "options": [
+        "Yaqin distansiyadan otilgan, chunki qurum faqat porox gazlari bilan birga keladi",
+        "Vinogradov fenomeni: zich kiyim sharoitida o‘qdan keyingi siyraklanish qurumni olib kelgan",
+        "To‘liq tirab otilgan, chunki qurum belbog‘i kirish teshigi atrofida paydo bo‘lgan",
+        "Belbog‘ iz qoldiruvchi o‘q moddasidan hosil bo‘lishi mumkin, shuning uchun yaqin distansiya deyish shoshilinchlik"
+      ],
+      "correct_index": 3,
+      "explanation": "Iz qoldiruvchi o‘q tarkibidagi bariy va magniy birikmalari uzoq masofadan otilganda ham yaqin otishdagi qurumga o‘xshash belbog‘ hosil qilishi mumkin. Porox va metall zarrachalarining yo‘qligi bunday xulosani qo‘llab-quvvatlaydi. Vinogradov fenomeni uchun kiyim tanaga zich yopishmagan bo‘lishi kerak.",
+      "difficulty": "hard",
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun)",
+        "page": "194"
+      }
+    },
+    {
+      "question": "Jabrlanganning bilak va ko‘krak sohasida jami ikkita kirish va ikkita chiqish teshigi topildi. Tanada boshqa o‘q izlari yo‘q, yara kanallari bir chiziqda joylashgan. Qaysi xulosa to‘g‘ri?",
+      "options": [
+        "Ikki marta o‘q uzilgan, chunki bitta o‘q ikkita kirish teshigi hosil qila olmaydi",
+        "Avtomatik qurolda navbat bilan otilgan, chunki teshiklar soni ikkitadan",
+        "Bitta o‘q avval bilakni, so‘ng ko‘krakni teshib o‘tgan bo‘lishi mumkin; teshiklar soni o‘qlar soniga teng bo‘lishi shart emas",
+        "Bitta o‘q faqat tegib o‘tgan, chunki ikkita kirish teshigi urinma jarohatga xos"
+      ],
+      "correct_index": 2,
+      "explanation": "Tananing qalin bo‘lmagan sohalarida (bilak, ko‘krak) bitta o‘qdan ikkita kirish va ikkita chiqish teshigi hosil bo‘lishi mumkin. Shu sababli o‘qlar sonini teshiklar soniga qarab bevosita aniqlab bo‘lmaydi, kanallar yo‘nalishi va joylashuvi ham hisobga olinadi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "90"
+      }
+    },
+    {
+      "question": "Portlashdan keyin jabrlanganda mexanik jarohatlar va o‘pkada baroakustik zarb to‘lqiniga xos qon quyilishlar topildi. Portlash gazlari, qurum va kiyim kuyishi belgilari yo‘q, jarohatlar portlovchi moslama bo‘laklari va ikkilamchi snaryadlardan ham etkazilgan. Bu portlashning qaysi distansiyasiga mos keladi?",
+      "options": [
+        "Nisbatan yaqin distansiya",
+        "Portlovchi moslamaning tana bilan kontakti",
+        "Yaqin distansiya",
+        "Yaqin bo‘lmagan distansiya"
+      ],
+      "correct_index": 0,
+      "explanation": "Nisbatan yaqin distansiyada jarohatlar zarb to‘lqini, moslama bo‘laklari va ikkilamchi snaryadlardan hosil bo‘ladi, detonatsiya mahsulotlari (gaz, qurum) ta’sir qilmaydi. Kontakt va yaqin distansiyada detonatsiya mahsulotlari ham ta’sir qiladi. Yaqin bo‘lmagan distansiyada zarb to‘lqini belgilari bo‘lmaydi, asosiy omil faqat bo‘laklar va ikkilamchi snaryadlar.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "101"
+      }
+    }
+  ]
+}
+```

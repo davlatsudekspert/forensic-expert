@@ -1,0 +1,1392 @@
+{
+  "topic_id": "4-kurs-davolash-08",
+  "source_lang": "uz",
+  "title_i18n": {
+    "uz": "№4. Ma’ruza: Kislorod tanqisligi natijasida organizmning jarohatlanishi va o‘lim.",
+    "ru": "№4. Лекция: Повреждение организма и смерть вследствие кислородной недостаточности.",
+    "en": "№4. Lecture: Injury to the body and death resulting from oxygen deficiency."
+  },
+  "translation_status": {
+    "uz": "source",
+    "ru": "auto_unreviewed",
+    "en": "auto_unreviewed"
+  },
+  "questions": [
+    {
+      "id": "4-kurs-davolash-08-q01",
+      "question_i18n": {
+        "uz": "Bolalar uchun havodagi karbonat angidrid konsentratsiyasining qaysi darajasi hayot uchun xavf tug‘diradi?",
+        "ru": "Какой уровень концентрации углекислого газа в воздухе опасен для жизни детей?",
+        "en": "For children, which level of carbon dioxide concentration in the air is life-threatening?"
+      },
+      "options_i18n": {
+        "uz": [
+          "0,5% ga yetganda",
+          "2,0–2,5% ga yetganda",
+          "5,0–6,0% ga yetganda",
+          "8–10% ga yetganda"
+        ],
+        "ru": [
+          "При достижении 0,5%",
+          "При достижении 2,0–2,5%",
+          "При достижении 5,0–6,0%",
+          "При достижении 8–10%"
+        ],
+        "en": [
+          "When it reaches 0.5%",
+          "When it reaches 2.0–2.5%",
+          "When it reaches 5.0–6.0%",
+          "When it reaches 8–10%"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Bolalarda xavfli daraja 2,0–2,5%. 0,5% da esa faqat nafas maromi tezlashadi va o‘pka ventilyatsiyasi kuchayadi. 8–10% kattalarda o‘limga olib keladigan daraja.",
+        "ru": "У детей опасный уровень составляет 2,0–2,5%. При 0,5% же лишь учащается ритм дыхания и усиливается вентиляция лёгких. 8–10% — уровень, приводящий к смерти у взрослых.",
+        "en": "In children the dangerous level is 2.0–2.5%. At 0.5%, only the respiratory rate increases and pulmonary ventilation intensifies. 8–10% is the level that is lethal in adults."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "130"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q02",
+      "question_i18n": {
+        "uz": "Mexanik asfiksiyadan o‘lim holatlarining taxminan qancha qismini osilish tashkil etadi?",
+        "ru": "Какую примерно часть случаев смерти от механической асфиксии составляет повешение?",
+        "en": "Approximately what proportion of deaths from mechanical asphyxia is accounted for by hanging?"
+      },
+      "options_i18n": {
+        "uz": [
+          "30–35%",
+          "45–50%",
+          "65–70%",
+          "85–90%"
+        ],
+        "ru": [
+          "30–35%",
+          "45–50%",
+          "65–70%",
+          "85–90%"
+        ],
+        "en": [
+          "30–35%",
+          "45–50%",
+          "65–70%",
+          "85–90%"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Osilish mexanik asfiksiyaning eng ko‘p uchraydigan turi bo‘lib, asfiksiyadan o‘lim holatlarining 65–70% ini tashkil etadi. Boshqa variantlar bu ulushni kam yoki ortiqcha ko‘rsatadi.",
+        "ru": "Повешение — наиболее часто встречающийся вид механической асфиксии, на него приходится 65–70% случаев смерти от асфиксии. Остальные варианты занижают или завышают эту долю.",
+        "en": "Hanging is the most common type of mechanical asphyxia and accounts for 65–70% of deaths from asphyxia. The other options understate or overstate this proportion."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "111"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q03",
+      "question_i18n": {
+        "uz": "Asfiktik (“quruq”) cho‘kishda suv traxeya va bronxlarga o‘tmaydi. Buning asosiy sababi nima?",
+        "ru": "При асфиктическом («сухом») утоплении вода не попадает в трахею и бронхи. Какова основная причина этого?",
+        "en": "In asphyxial (\"dry\") drowning, water does not enter the trachea and bronchi. What is the main reason for this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Retseptorlar ta’sirlanishidan hiqildoq spazmi yuz beradi",
+          "Yo‘tal refleksi kuchayib, suv butunlay chiqarib yuboriladi",
+          "Til osti suyagi sinib, traxeya yopilib qoladi",
+          "Alveolalar devori yorilib, suv bevosita qonga o‘tadi"
+        ],
+        "ru": [
+          "Вследствие раздражения рецепторов возникает спазм гортани",
+          "Кашлевой рефлекс усиливается, и вода полностью выбрасывается наружу",
+          "Перелом подъязычной кости приводит к закрытию трахеи",
+          "Стенки альвеол разрываются, и вода непосредственно попадает в кровь"
+        ],
+        "en": [
+          "Laryngospasm occurs due to irritation of receptors",
+          "The cough reflex intensifies and the water is expelled completely",
+          "The hyoid bone is fractured and the trachea becomes obstructed",
+          "The alveolar walls rupture and water passes directly into the blood"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Asfiktik cho‘kishda retseptorlar ta’sirlanishi hiqildoqning spazmiga olib keladi va suv pastki nafas yo‘llariga o‘tmaydi. Suvning alveolalar orqali qonga o‘tishi chin cho‘kishga xos. Til osti suyagi sinishi bu mexanizmga aloqador emas.",
+        "ru": "При асфиктическом утоплении раздражение рецепторов приводит к спазму гортани, и вода не попадает в нижние дыхательные пути. Проникновение воды в кровь через альвеолы характерно для истинного утопления. Перелом подъязычной кости к этому механизму отношения не имеет.",
+        "en": "In asphyxial drowning, receptor irritation causes laryngospasm and water does not enter the lower airways. The passage of water into the blood through the alveoli is characteristic of true (wet) drowning. A fractured hyoid bone is unrelated to this mechanism."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "121"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q04",
+      "question_i18n": {
+        "uz": "Asfiktik cho‘kishda laringospazm tufayli suv ko‘proq oshqozonga o‘tadi (Fegerlund belgisi). Oshqozonda eng ko‘pi bilan taxminan qancha suv aniqlanishi mumkin?",
+        "ru": "При асфиктическом утоплении из-за ларингоспазма вода в большей степени попадает в желудок (признак Фегерлунда). Какое максимальное количество воды можно примерно обнаружить в желудке?",
+        "en": "In asphyxial drowning, due to laryngospasm, more water enters the stomach (Fagerlund sign). At most, approximately how much water can be found in the stomach?"
+      },
+      "options_i18n": {
+        "uz": [
+          "100 ml gacha",
+          "300 ml gacha",
+          "500 ml gacha",
+          "1 l gacha"
+        ],
+        "ru": [
+          "До 100 мл",
+          "До 300 мл",
+          "До 500 мл",
+          "До 1 л"
+        ],
+        "en": [
+          "Up to 100 ml",
+          "Up to 300 ml",
+          "Up to 500 ml",
+          "Up to 1 l"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Asfiktik cho‘kishda suv nafas yo‘llariga o‘tolmagani uchun oshqozonda 1 l gacha suv topilishi mumkin. Chin cho‘kishda bu ko‘rsatkich 300 ml gacha. Shu sababli 300 ml chalg‘ituvchi variant.",
+        "ru": "При асфиктическом утоплении, поскольку вода не проникает в дыхательные пути, в желудке может быть обнаружено до 1 л воды. При истинном утоплении этот показатель составляет до 300 мл. Поэтому 300 мл — отвлекающий вариант.",
+        "en": "In asphyxial drowning, because water cannot enter the airways, up to 1 l of water may be found in the stomach. In true drowning this figure is up to 300 ml. Therefore 300 ml is a distractor option."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "123"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q05",
+      "question_i18n": {
+        "uz": "Murda suvda 2–3 hafta bo‘lgach, qo‘l va oyoq kaftlarining terisi timoqlar bilan birga ajralib qoladi. Bu belgi qanday nomlanadi?",
+        "ru": "После пребывания трупа в воде в течение 2–3 недель кожа кистей и стоп отделяется вместе с ногтями. Как называется этот признак?",
+        "en": "After a body has been in water for 2–3 weeks, the skin of the palms and soles separates together with the nails. What is this sign called?"
+      },
+      "options_i18n": {
+        "uz": [
+          "“kir yuvuvchi qo‘li”",
+          "“o‘lim qo‘lqopi”",
+          "“g‘oz terisi”",
+          "“mis sim belgisi”"
+        ],
+        "ru": [
+          "«рука прачки»",
+          "«перчатки смерти»",
+          "«гусиная кожа»",
+          "«признак медной проволоки»"
+        ],
+        "en": [
+          "\"washerwoman's hand\"",
+          "\"death glove\"",
+          "\"goose skin\"",
+          "\"copper wire sign\""
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "2–3 haftadan so‘ng teri timoqlar bilan “o‘lim qo‘lqopi” va “o‘lim paypog‘i” tarzida ajraladi. “Kir yuvuvchi qo‘li” bundan oldingi, bir necha kun ichidagi bosqichni bildiradi. “G‘oz terisi” sovuq suvda teri mushaklari qisqarishidan hosil bo‘ladi. “Mis sim belgisi” esa yumshoq sirtmoq izi.",
+        "ru": "Спустя 2–3 недели кожа отделяется вместе с ногтями в виде «перчаток смерти» и «носков смерти». «Рука прачки» обозначает более раннюю стадию — в течение нескольких дней. «Гусиная кожа» образуется в холодной воде вследствие сокращения мышц кожи. «Признак медной проволоки» — это след мягкой петли.",
+        "en": "After 2–3 weeks the skin separates together with the nails in the form of a \"death glove\" and a \"death sock\". \"Washerwoman's hand\" denotes an earlier stage, within the first few days. \"Goose skin\" is formed by contraction of the skin muscles in cold water. The \"copper wire sign\" is the mark of a soft ligature."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "127"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q06",
+      "question_i18n": {
+        "uz": "Murda nafas yo‘llarida qusuq moddalari topildi. Quyidagilardan qaysi biri bu moddalarning hayotiy aspiratsiya natijasi ekanini, ya’ni o‘limdan keyin tushmaganini ko‘proq tasdiqlaydi?",
+        "ru": "В дыхательных путях трупа обнаружены рвотные массы. Что из перечисленного в большей степени подтверждает, что эти массы попали туда в результате прижизненной аспирации, а не после смерти?",
+        "en": "Vomitus was found in the airways of a corpse. Which of the following more strongly confirms that this material resulted from vital aspiration, i.e., that it did not enter after death?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Massaning og‘iz bo‘shlig‘ida ham topilishi",
+          "Massaning faqat hiqildoqda oz miqdorda bo‘lishi",
+          "Massaning kichik bronxlar va alveolalargacha yetib borishi",
+          "Massaning chirish gazlari bilan birga aniqlanishi"
+        ],
+        "ru": [
+          "Обнаружение масс также в полости рта",
+          "Наличие масс только в гортани в небольшом количестве",
+          "Проникновение масс до мелких бронхов и альвеол",
+          "Обнаружение масс вместе с гнилостными газами"
+        ],
+        "en": [
+          "The mass is also found in the oral cavity",
+          "The mass is present only in the larynx in a small amount",
+          "The mass reaches the small bronchi and alveoli",
+          "The mass is found together with putrefactive gases"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Reanimatsiya, murdani tashish yoki chirish paytida nafas yo‘llariga tushgan massa nisbatan oz bo‘ladi va kichik bronxlar, alveolalarda topilmaydi. Hayotiy aspiratsiyada esa u mayda bronxlar va alveolalargacha kirib boradi. Boshqa variantlar hayotiylikni isbotlamaydi.",
+        "ru": "Массы, попавшие в дыхательные пути при реанимации, транспортировке трупа или гниении, бывают относительно скудными и не обнаруживаются в мелких бронхах и альвеолах. При прижизненной аспирации они проникают до мелких бронхов и альвеол. Остальные варианты прижизненность не доказывают.",
+        "en": "The mass that enters the airways during resuscitation, transportation of the corpse, or putrefaction is relatively small and is not found in the small bronchi and alveoli. In vital aspiration, however, it penetrates as far as the fine bronchi and alveoli. The other options do not prove vitality."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "120-121"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q07",
+      "question_i18n": {
+        "uz": "Murda tekshiruvida strangulyatsion egat sohasidan olingan teri laxtagi teri osti yog‘idan tozalanib, ikki predmet oynachasi orasida o‘tuvchi yorug‘likda ko‘rildi. Egat burmachasi sohasida to‘laqonlik va qon quyilishlar topildi. Bu topilma nimadan dalolat beradi?",
+        "ru": "При исследовании трупа кожный лоскут из области странгуляционной борозды, очищенный от подкожной жировой клетчатки, рассмотрели в проходящем свете между двумя предметными стёклами. В области валика борозды обнаружены полнокровие и кровоизлияния. О чём свидетельствует эта находка?",
+        "en": "During examination of a corpse, a skin flap taken from the area of a strangulation furrow was cleared of subcutaneous fat and examined in transmitted light between two glass slides. Hyperemia and hemorrhages were found in the area of the furrow ridge. What does this finding indicate?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Egat o‘limdan keyin murdaga sirtmoq solinishi natijasida hosil bo‘lganini",
+          "Sirtmoq qattiq materialdan tayyorlanganini va tugun orqada joylashganini",
+          "Egat hayotiy, ya’ni tirik paytda yetkazilganini (Bokarius sinamasi)",
+          "Egat faqat tana massasi ta’sirida, ya’ni to‘liq osilishda hosil bo‘lganini"
+        ],
+        "ru": [
+          "О том, что борозда образовалась в результате наложения петли на труп после смерти",
+          "О том, что петля была изготовлена из твёрдого материала, а узел расположен сзади",
+          "О том, что борозда прижизненная, то есть причинена при жизни (проба Бокариуса)",
+          "О том, что борозда образовалась только под действием массы тела, то есть при полном повешении"
+        ],
+        "en": [
+          "That the furrow resulted from a ligature being placed on the body after death",
+          "That the ligature was made of a hard material and the knot was located at the back",
+          "That the furrow was inflicted in vivo, i.e., during life (Bocarius test)",
+          "That the furrow was formed only under the influence of body weight, i.e., in complete hanging"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Qon quyilishlar va to‘laqonlik qon aylanishi saqlangan paytda hosil bo‘ladi, shuning uchun Bokarius sinamasi egatning hayotiyligini ko‘rsatadi. Boshqa variantlar sirtmoq turi, tugun joyi yoki osilish turiga oid bo‘lib, bu sinama bilan aniqlanmaydi.",
+        "ru": "Кровоизлияния и полнокровие образуются при сохранённом кровообращении, поэтому проба Бокариуса указывает на прижизненность борозды. Остальные варианты относятся к виду петли, расположению узла или виду повешения и этой пробой не определяются.",
+        "en": "Hemorrhages and hyperemia form while the circulation is preserved, so the Bocarius test shows the vitality of the furrow. The other options relate to the type of ligature, the position of the knot, or the type of hanging, which this test does not determine."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "116"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q08",
+      "question_i18n": {
+        "uz": "Asfiktik cho‘kishda murdada yurakning havo emboliyasini aniqlash uchun Sunsov sinamasi o‘tkaziladi. Bu sinamada nima qilinadi?",
+        "ru": "При асфиктическом утоплении для выявления воздушной эмболии сердца на трупе проводится проба Сунцова. Что делается при этой пробе?",
+        "en": "In asphyxial drowning, the Suntsov test is performed on the corpse to detect air embolism of the heart. What is done in this test?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Skalpelning uchi bilan yurakning chap qorinchasi teshiladi",
+          "Skalpelning uchi bilan yurakning o‘ng qorinchasi teshiladi",
+          "O‘pka arteriyasi suv ostida kesilib, ajralgan gaz aniqlanadi",
+          "Yurak qopi suyuqlik bilan to‘ldirilib, chap bo‘lmacha bosiladi"
+        ],
+        "ru": [
+          "Кончиком скальпеля прокалывают левый желудочек сердца",
+          "Кончиком скальпеля прокалывают правый желудочек сердца",
+          "Лёгочную артерию вскрывают под водой и определяют выделившийся газ",
+          "Сердечную сумку заполняют жидкостью и надавливают на левое предсердие"
+        ],
+        "en": [
+          "The left ventricle of the heart is punctured with the tip of a scalpel",
+          "The right ventricle of the heart is punctured with the tip of a scalpel",
+          "The pulmonary artery is cut under water and the released gas is detected",
+          "The pericardial sac is filled with fluid and the left atrium is compressed"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Asfiktik cho‘kishda havo o‘pka venalari orqali yurakning chap kameralarida to‘planadi, shu sababli chap qorincha teshiladi. Mexanik jarohatlardagi havo emboliyasini tekshirishda esa odatda o‘ng qorincha teshiladi, bu sinamaning farqi shunda.",
+        "ru": "При асфиктическом утоплении воздух через лёгочные вены накапливается в левых камерах сердца, поэтому прокалывают левый желудочек. При исследовании воздушной эмболии при механических повреждениях обычно прокалывают правый желудочек — в этом отличие данной пробы.",
+        "en": "In asphyxial drowning, air collects in the left chambers of the heart via the pulmonary veins, so the left ventricle is punctured. When examining air embolism in mechanical injuries, however, the right ventricle is usually punctured; this is the difference in the test."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "123"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q09",
+      "question_i18n": {
+        "uz": "Dengiz suvida cho‘kkanda sho‘r suvning osmotik bosimi qonnikidan ancha baland bo‘ladi. Shu sababli qonda qanday o‘zgarish kuzatiladi?",
+        "ru": "При утоплении в морской воде осмотическое давление солёной воды значительно выше, чем давление крови. Какое изменение крови наблюдается вследствие этого?",
+        "en": "In drowning in sea water, the osmotic pressure of the salt water is considerably higher than that of blood. What change in the blood is observed as a result?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Gemodilyusiya va eritrotsitlarning osmotik gemolizi",
+          "Chap qorincha qonining o‘ng qorinchadagidan ochroq bo‘lishi",
+          "Qonning suyulishi va murda dog‘larining pushti tusga kirishi",
+          "Gipovolemiya va qonning quyuqlashuvi (gemokonsentratsiya)"
+        ],
+        "ru": [
+          "Гемодилюция и осмотический гемолиз эритроцитов",
+          "Более светлая кровь левого желудочка по сравнению с правым",
+          "Разжижение крови и розовый оттенок трупных пятен",
+          "Гиповолемия и сгущение крови (гемоконцентрация)"
+        ],
+        "en": [
+          "Hemodilution and osmotic hemolysis of erythrocytes",
+          "Blood in the left ventricle being lighter than in the right ventricle",
+          "Thinning of the blood and pink coloration of postmortem lividity",
+          "Hypovolemia and thickening of the blood (hemoconcentration)"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Sho‘r suvda alveoladagi suv qonga o‘tmaydi, aksincha qonning suyuq qismi alveolaga chiqadi, elektrolitlar esa qonga o‘tadi. Natijada qon quyuqlashadi. Qolgan variantlar chuchuk suvda chin cho‘kishga xos o‘zgarishlardir.",
+        "ru": "В солёной воде вода из альвеол не переходит в кровь, напротив, жидкая часть крови выходит в альвеолы, а электролиты поступают в кровь. В результате кровь сгущается. Остальные варианты — изменения, характерные для истинного утопления в пресной воде.",
+        "en": "In salt water, the water in the alveoli does not pass into the blood; on the contrary, the liquid part of the blood moves into the alveoli, while electrolytes pass into the blood. As a result, the blood becomes thicker. The remaining options are changes characteristic of true drowning in fresh water."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "123"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q10",
+      "question_i18n": {
+        "uz": "Kompression asfiksiyada qisilish uzoq davom etganda o‘pka to‘qimasi yorqin qizil tusga kirib, “karmin shishishi” (Lakkasan belgisi) rivojlanadi. Bu holat nima bilan tushuntiriladi?",
+        "ru": "При компрессионной асфиксии при длительном сдавлении лёгочная ткань приобретает ярко-красный цвет и развивается «карминовый отёк» (признак Лаккасаня). Чем объясняется это состояние?",
+        "en": "In compression asphyxia, when the compression is prolonged, the lung tissue turns bright red and \"carmine edema\" (Lakkasan sign) develops. How is this explained?"
+      },
+      "options_i18n": {
+        "uz": [
+          "O‘pkada fibrinogenaza fermenti faolligining oshib ketishi bilan",
+          "Kuchsiz nafas olishda o‘pkada kislorodga to‘yingan qonning ko‘proq to‘planib qolishi bilan",
+          "Alveolalararo to‘siqlar yorilib, o‘pka venalariga havo o‘tishi bilan",
+          "Suv alveolalarga o‘tib, eritrotsitlarning gemolizga uchrashi bilan"
+        ],
+        "ru": [
+          "Повышением активности фермента фибриногеназы в лёгких",
+          "Накоплением в лёгких большего количества насыщенной кислородом крови при слабом дыхании",
+          "Разрывом межальвеолярных перегородок и попаданием воздуха в лёгочные вены",
+          "Попаданием воды в альвеолы и гемолизом эритроцитов"
+        ],
+        "en": [
+          "By an excessive increase in the activity of the enzyme fibrinogenase in the lungs",
+          "By more oxygen-saturated blood accumulating in the lungs during weak breathing",
+          "By rupture of the interalveolar septa and passage of air into the pulmonary veins",
+          "By water entering the alveoli and hemolysis of erythrocytes"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Qisilish uzoq davom etganda nafas kuchsiz bo‘ladi, o‘pkada boshqa a’zolarga qaraganda kislorodga to‘yingan qon ko‘proq qolib, to‘qima yorqin qizil tusga kiradi. Boshqa variantlar boshqa jarayonlarni (qonning suyuqligi, havo emboliyasi, cho‘kishdagi gemoliz) tushuntiradi.",
+        "ru": "При длительном сдавлении дыхание становится слабым, в лёгких, по сравнению с другими органами, остаётся больше насыщенной кислородом крови, и ткань приобретает ярко-красный цвет. Остальные варианты объясняют другие процессы (разжижение крови, воздушную эмболию, гемолиз при утоплении).",
+        "en": "When compression is prolonged, breathing becomes weak, and more oxygen-saturated blood remains in the lungs than in other organs, so the tissue turns bright red. The other options explain other processes (blood fluidity, air embolism, hemolysis in drowning)."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "129"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q11",
+      "question_i18n": {
+        "uz": "Bo‘yinni qo‘l bilan bo‘g‘ish natijasida o‘lgan shaxs murdasida tashqi va ichki jarohatlar o‘zaro qanday nisbatda bo‘ladi?",
+        "ru": "Каково соотношение наружных и внутренних повреждений на трупе лица, погибшего в результате удавления шеи руками?",
+        "en": "What is the relationship between external and internal injuries in the corpse of a person who died from manual strangulation of the neck?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Tashqi va ichki jarohatlar bir xil darajada yaqqol bo‘ladi",
+          "Tashqi jarohatlar ichkilarga nisbatan har doim ko‘lamliroq bo‘ladi",
+          "Ichki jarohatlar bo‘lmaydi, faqat teri ostida qontalashlar uchraydi",
+          "Ichki jarohatlar tashqiga nisbatan yaqqolroq va ko‘lamliroq bo‘ladi"
+        ],
+        "ru": [
+          "Наружные и внутренние повреждения выражены в одинаковой степени",
+          "Наружные повреждения всегда более обширны, чем внутренние",
+          "Внутренних повреждений нет, встречаются только подкожные кровоподтёки",
+          "Внутренние повреждения выражены ярче и обширнее наружных"
+        ],
+        "en": [
+          "External and internal injuries are equally pronounced",
+          "External injuries are always more extensive than internal ones",
+          "There are no internal injuries, only subcutaneous bruises are found",
+          "Internal injuries are more pronounced and more extensive than external ones"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Qo‘l bilan bo‘g‘ishda til osti suyagi va hiqildoq tog‘aylari sinishi, yumshoq to‘qimalarga qon quyilishi kabi ichki o‘zgarishlar terida ko‘rinadigan qontalash va shilinmalardan kuchliroq bo‘ladi. Yumshoq jism ustidan bo‘g‘ilganda tashqi izlar umuman bo‘lmasligi ham mumkin.",
+        "ru": "При удавлении руками внутренние изменения, такие как переломы подъязычной кости и хрящей гортани, кровоизлияния в мягкие ткани, выражены сильнее, чем видимые на коже кровоподтёки и ссадины. При удавлении через мягкий предмет наружные следы могут отсутствовать вовсе.",
+        "en": "In manual strangulation, internal changes such as fractures of the hyoid bone and laryngeal cartilages and hemorrhages into the soft tissues are more pronounced than the bruises and abrasions visible on the skin. When strangulation is performed through a soft object, external marks may be completely absent."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "118"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q12",
+      "question_i18n": {
+        "uz": "Hushsiz shaxs cheklangan bo‘shliqqa tushib qolib, boshi uzoq vaqt oldinga bukilgan holatda qoldi va pozitsion asfiksiyadan vafot etdi. Murda bo‘ynidagi qaysi holat bunga xos?",
+        "ru": "Лицо, находившееся в бессознательном состоянии, попало в ограниченное пространство, долгое время оставалось с головой, согнутой вперёд, и умерло от позиционной асфиксии. Какое состояние на шее трупа для этого характерно?",
+        "en": "An unconscious person fell into a confined space, remained with the head flexed forward for a long time, and died from positional asphyxia. Which finding on the neck of the corpse is characteristic of this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Strangulyatsion egat bo‘lmaydi, til osti suyagi va hiqildoq tog‘aylari shikastlanmaydi",
+          "Gorizontal, tutashgan egat bo‘lib, til osti suyagi shoxchalari sinadi",
+          "Qiyshiq-vertikal egat bo‘lib, uyqu arteriyasi intimasi ko‘ndalang yoriladi",
+          "Qalqonsimon tog‘ay sathida chuqur egat va tirnoq izli shilinmalar bo‘ladi"
+        ],
+        "ru": [
+          "Странгуляционной борозды нет, подъязычная кость и хрящи гортани не повреждены",
+          "Горизонтальная замкнутая борозда, переломы рогов подъязычной кости",
+          "Косо-вертикальная борозда, поперечные разрывы интимы сонной артерии",
+          "Глубокая борозда на уровне щитовидного хряща и ссадины со следами ногтей"
+        ],
+        "en": [
+          "No strangulation furrow is present, and the hyoid bone and laryngeal cartilages are not damaged",
+          "A horizontal, closed furrow with fractures of the hyoid bone horns",
+          "An obliquely vertical furrow with a transverse tear of the carotid artery intima",
+          "A deep furrow at the level of the thyroid cartilage and abrasions with fingernail marks"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Pozitsion asfiksiyada bo‘yinda haqiqiy strangulyatsion egat hosil bo‘lmaydi, faqat bukilish burmasi unga o‘xshashi mumkin. Til osti suyagi va hiqildoq tog‘aylari ham shikastlanmaydi. Boshqa variantlar sirtmoq yoki qo‘l bilan bo‘g‘ishga xos.",
+        "ru": "При позиционной асфиксии на шее не образуется истинной странгуляционной борозды, лишь складка сгибания может быть похожа на неё. Подъязычная кость и хрящи гортани также не повреждаются. Остальные варианты характерны для удавления петлёй или руками.",
+        "en": "In positional asphyxia, a true strangulation furrow does not form on the neck; only a flexion fold may resemble it. The hyoid bone and laryngeal cartilages are also not damaged. The other options are characteristic of ligature or manual strangulation."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "119"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q13",
+      "question_i18n": {
+        "uz": "Chin cho‘kishda visseral plevra ostida Tarde dog‘lariga nisbatan kattaroq, chetlari yoyilgan pushti-qizg‘ish qon quyilishlar (Rasskazov-Lukomskiy-Paltauf dog‘lari) topiladi. Ular qanday hosil bo‘ladi?",
+        "ru": "При истинном утоплении под висцеральной плеврой обнаруживаются более крупные по сравнению с пятнами Тардье розовато-красные кровоизлияния с расплывчатыми краями (пятна Rasskazov-Lukomskiy-Paltauf). Как они образуются?",
+        "en": "In true drowning, pinkish-red hemorrhages with blurred margins, larger than Tardieu spots, are found beneath the visceral pleura (Rasskazov-Lukomskiy-Paltauf spots). How do they form?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Ekspirator hansirash vaqtida plevra bo‘shlig‘idagi bosim ortib, tomirlar yorilishidan",
+          "Inspirator hansirashda paydo bo‘lgan qon quyilishlarning laringospazm ta’sirida kengayishidan",
+          "Inspirator hansirash bosqichidagi Tarde dog‘larining terminal nafas bosqichida suv bilan gemolizga uchrashidan",
+          "Qobirg‘alarning bosilishi natijasida o‘pka bo‘laklari oralig‘iga qon ketishidan"
+        ],
+        "ru": [
+          "Вследствие повышения давления в плевральной полости при экспираторной одышке и разрыва сосудов",
+          "Вследствие расширения под действием ларингоспазма кровоизлияний, возникших при инспираторной одышке",
+          "Вследствие гемолиза водой в терминальной стадии дыхания пятен Тардье, образовавшихся в стадии инспираторной одышки",
+          "Вследствие кровотечения в междолевые промежутки лёгких в результате сдавления рёбер"
+        ],
+        "en": [
+          "From rupture of vessels due to increased pressure in the pleural cavity during expiratory dyspnea",
+          "From enlargement, under the influence of laryngospasm, of hemorrhages that appeared during inspiratory dyspnea",
+          "From hemolysis by water, during the terminal respiratory stage, of the Tardieu spots formed during the inspiratory dyspnea stage",
+          "From bleeding into the spaces between the lung lobes as a result of compression of the ribs"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Dastlab inspirator hansirashda oddiy Tarde dog‘lari hosil bo‘ladi. Terminal nafas bosqichida alveolalardan o‘tgan suv ulardagi qonni gemolizga uchratadi, shu sababli dog‘lar kattalashib, och pushti tusga kiradi va chegarasi yoyiladi. Boshqa variantlar bu mexanizmni tushuntirmaydi.",
+        "ru": "Сначала в стадии инспираторной одышки образуются обычные пятна Тардье. В терминальной стадии дыхания вода, прошедшая через альвеолы, вызывает гемолиз крови в них, поэтому пятна увеличиваются, приобретают бледно-розовый оттенок, а их границы расплываются. Остальные варианты этот механизм не объясняют.",
+        "en": "Initially, ordinary Tardieu spots form during inspiratory dyspnea. During the terminal respiratory stage, water passing through the alveoli causes hemolysis of the blood in them, so the spots enlarge, take on a pale pink color, and their margins become blurred. The other options do not explain this mechanism."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "122"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q14",
+      "question_i18n": {
+        "uz": "Osilishda sirtmoq tuguni atipik (old yoki yon sohada) joylashganda oshqozondagi massaning nafas yo‘llariga aspiratsiyasi kuzatilishi mumkin. Buning sababi qaysi?",
+        "ru": "При повешении с атипичным расположением узла петли (спереди или сбоку) может наблюдаться аспирация желудочного содержимого в дыхательные пути. Чем это объясняется?",
+        "en": "In hanging, when the ligature knot is in an atypical location (anterior or lateral), aspiration of gastric contents into the airways may occur. What is the reason for this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qizilo‘ngach to‘liq berkilmaydi va adashgan nervning ta’sirlanishi qusishni keltirib chiqaradi",
+          "Qizilo‘ngach sirtmoq bilan to‘liq berkiladi va oshqozon massasi bosim ostida chiqib ketadi",
+          "Til osti suyagi sinib, hiqildoq kirish qismi ochiq qoladi",
+          "Uyqu arteriyalarining qisilishi natijasida bosh miyada shish rivojlanadi"
+        ],
+        "ru": [
+          "Пищевод не перекрывается полностью, и раздражение блуждающего нерва вызывает рвоту",
+          "Пищевод полностью перекрывается петлёй, и содержимое желудка выбрасывается под давлением",
+          "Перелом подъязычной кости, вход в гортань остаётся открытым",
+          "Сдавление сонных артерий приводит к развитию отёка головного мозга"
+        ],
+        "en": [
+          "The esophagus is not completely occluded, and irritation of the vagus nerve induces vomiting",
+          "The esophagus is completely occluded by the ligature, and the gastric contents are expelled under pressure",
+          "The hyoid bone is fractured, leaving the laryngeal inlet open",
+          "Cerebral edema develops as a result of compression of the carotid arteries"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Atipik tugunda qizilo‘ngach to‘liq yopilmaydi, adashgan nerv ta’sirlanadi va qusish paydo bo‘ladi, massa esa nafas yo‘llariga aspiratsiya bo‘ladi. Qizilo‘ngachning to‘liq berkilishi bu holatga xos emas. Til osti suyagi sinishi va miya shishi aspiratsiyani tushuntirmaydi.",
+        "ru": "При атипичном узле пищевод полностью не перекрывается, раздражается блуждающий нерв и возникает рвота, а содержимое аспирируется в дыхательные пути. Полное перекрытие пищевода для этого состояния не характерно. Перелом подъязычной кости и отёк мозга аспирацию не объясняют.",
+        "en": "With an atypical knot, the esophagus is not completely closed, the vagus nerve is irritated and vomiting occurs, and the contents are aspirated into the airways. Complete occlusion of the esophagus is not characteristic of this situation. A fractured hyoid bone and cerebral edema do not explain the aspiration."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "113-114"
+      },
+      "difficulty": "medium",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q15",
+      "question_i18n": {
+        "uz": "Osilishda bo‘yinning cho‘zilishi bilan bog‘liq belgilardan qaysi biri to‘sh-o‘mrov-so‘rg‘ichsimon mushakning pastki uchida qon quyilish va yorilishni bildiradi?",
+        "ru": "Какой из признаков, связанных с растяжением шеи при повешении, указывает на кровоизлияние и разрыв в нижнем конце грудино-ключично-сосцевидной мышцы?",
+        "en": "Which of the signs associated with stretching of the neck in hanging indicates hemorrhage and rupture at the lower end of the sternocleidomastoid muscle?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Amyuss belgisi",
+          "Martin belgisi",
+          "Simon belgisi",
+          "Valxer belgisi"
+        ],
+        "ru": [
+          "Признак Амюсса",
+          "Признак Мартина",
+          "Признак Симона",
+          "Признак Вальхера"
+        ],
+        "en": [
+          "Amussat sign",
+          "Martin sign",
+          "Simon sign",
+          "Walcher sign"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "To‘sh-o‘mrov-so‘rg‘ichsimon mushakning pastki uchidagi qon quyilish va yorilish Valxer belgisi deyiladi. Amyuss belgisi uyqu arteriyasi intimasining ko‘ndalang yorilishi, Martin belgisi arteriyaning tashqi qavatiga qon quyilish, Simon belgisi esa bo‘yin umurtqalararo disklariga qon quyilishdir.",
+        "ru": "Кровоизлияние и разрыв в нижнем конце грудино-ключично-сосцевидной мышцы называется признаком Вальхера. Признак Амюсса — поперечные разрывы интимы сонной артерии, признак Мартина — кровоизлияние в наружную оболочку артерии, а признак Симона — кровоизлияния в межпозвоночные диски шейного отдела.",
+        "en": "Hemorrhage and rupture at the lower end of the sternocleidomastoid muscle is called the Walcher sign. The Amussat sign is a transverse tear of the carotid artery intima, the Martin sign is hemorrhage into the outer layer of the artery, and the Simon sign is hemorrhage into the cervical intervertebral discs."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "116"
+      },
+      "difficulty": "easy",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q16",
+      "question_i18n": {
+        "uz": "Bo‘yinni qo‘l bilan bo‘g‘ishda jabrlanuvchi bo‘ynining har tarafida old yuzada 2-4 tadan, orqa yuzada esa bittadan qontalash va shilinma topildi. Bo‘g‘ish qaysi usulda amalga oshirilgan bo‘lishi ehtimoli yuqori?",
+        "ru": "При удавлении шеи руками на шее потерпевшего с каждой стороны на передней поверхности обнаружено по 2-4 кровоподтёка и ссадины, а на задней поверхности — по одному. Каким способом, вероятнее всего, осуществлено удавление?",
+        "en": "In manual strangulation, 2-4 bruises and abrasions on the front surface and one on the back surface were found on each side of the victim's neck. By which method was the strangulation most likely carried out?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Old tomondan ikki qo‘l bilan",
+          "Orqa tomondan ikki qo‘l bilan",
+          "Old tomondan bir qo‘l bilan",
+          "Yumshoq jism ustidan elka yoki bilak bilan"
+        ],
+        "ru": [
+          "Двумя руками спереди",
+          "Двумя руками сзади",
+          "Одной рукой спереди",
+          "Через мягкий предмет плечом или предплечьем"
+        ],
+        "en": [
+          "With both hands from the front",
+          "With both hands from behind",
+          "With one hand from the front",
+          "Through a soft object with the shoulder or forearm"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Orqa tomondan ikki qo‘l bilan bo‘g‘ilganda bo‘yinning har tarafida old yuzada 2-4 tadan, orqa yuzada bittadan iz qoladi. Old tomondan ikki qo‘l bilan bo‘g‘ishda aksincha bo‘ladi: old yuzada bittadan, orqa yuzada 2-4 tadan. Yumshoq jism ustidan yoki elka, bilak bilan qisishda tashqi izlar kam bo‘ladi yoki bo‘lmaydi.",
+        "ru": "При удавлении двумя руками сзади на каждой стороне шеи остаётся по 2-4 следа на передней поверхности и по одному на задней. При удавлении двумя руками спереди бывает наоборот: по одному на передней поверхности и по 2-4 на задней. При сдавлении через мягкий предмет или плечом, предплечьем наружных следов мало или они отсутствуют.",
+        "en": "In strangulation with both hands from behind, 2-4 marks are left on the front surface and one on the back surface on each side of the neck. In strangulation with both hands from the front, the opposite occurs: one on the front surface and 2-4 on the back surface. In compression through a soft object or with the shoulder or forearm, external marks are few or absent."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "118"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q17",
+      "question_i18n": {
+        "uz": "Tana massasi 70 kg bo‘lgan shaxs tizzalariga tayanib osilgan. Tizzalarga tayanib osilishda sirtmoq tana massasining 20%iga teng kuch bilan tortiladi. Sirtmoq taxminan qancha kuch bilan tortiladi?",
+        "ru": "Лицо с массой тела 70 кг повисло, опираясь на колени. При повешении с опорой на колени петля затягивается силой, равной 20% массы тела. Какой силой примерно затягивается петля?",
+        "en": "A person with a body weight of 70 kg is hanged while resting on the knees. In hanging with support on the knees, the ligature is pulled with a force equal to 20% of body weight. Approximately how much force is exerted on the ligature?"
+      },
+      "options_i18n": {
+        "uz": [
+          "14 kg",
+          "7 kg",
+          "35 kg",
+          "4-5 kg"
+        ],
+        "ru": [
+          "14 кг",
+          "7 кг",
+          "35 кг",
+          "4-5 кг"
+        ],
+        "en": [
+          "14 kg",
+          "7 kg",
+          "35 kg",
+          "4-5 kg"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "70 kg ning 20% i 14 kg ni tashkil qiladi. 7 kg (10%) va 35 kg (50%) noto‘g‘ri hisoblar. 4-5 kg esa yotgan holatdagi osilishda sirtmoqni tortuvchi boshning massasiga to‘g‘ri keladi.",
+        "ru": "20% от 70 кг составляют 14 кг. 7 кг (10%) и 35 кг (50%) — неверные расчёты. А 4-5 кг соответствует массе головы, затягивающей петлю при повешении в лежачем положении.",
+        "en": "20% of 70 kg is 14 kg. 7 kg (10%) and 35 kg (50%) are incorrect calculations. 4-5 kg corresponds to the weight of the head pulling the ligature in hanging in a lying position."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "112"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q18",
+      "question_i18n": {
+        "uz": "Ko‘ldan chiqarilgan murdada yurakning chap kameralaridagi qon o‘ng tomondagidan ochroq, chap kameralar endokardi qizg‘ish, qorin bo‘shlig‘ida taxminan 100 ml erkin suyuqlik va plevra ostida chetlari yoyilgan pushti-qizg‘ish qon quyilishlar bor. Bu manzara qaysi holatga xos?",
+        "ru": "На трупе, извлечённом из озера, кровь в левых камерах сердца светлее, чем в правых, эндокард левых камер красноватый, в брюшной полости около 100 мл свободной жидкости, а под плеврой имеются розовато-красные кровоизлияния с расплывчатыми краями. Для какого состояния характерна эта картина?",
+        "en": "In a corpse recovered from a lake, the blood in the left chambers of the heart is paler than on the right, the endocardium of the left chambers is reddish, there is approximately 100 ml of free fluid in the abdominal cavity, and pinkish-red hemorrhages with blurred margins are present beneath the pleura. Which condition does this picture indicate?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Dengiz suvida chin cho‘kishga",
+          "Chuchuk suvda asfiktik cho‘kishga",
+          "Chuchuk suvda chin cho‘kishga",
+          "Suvdagi to‘satdan (sinkopal) o‘limga"
+        ],
+        "ru": [
+          "Истинное утопление в морской воде",
+          "Асфиктическое утопление в пресной воде",
+          "Истинное утопление в пресной воде",
+          "Внезапная (синкопальная) смерть в воде"
+        ],
+        "en": [
+          "True drowning in sea water",
+          "Asphyxial drowning in fresh water",
+          "True drowning in fresh water",
+          "Sudden (syncopal) death in water"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Chuchuk suvda chin cho‘kishda suv alveolalar orqali qonga o‘tib, qonni suyultiradi va gemoliz chaqiradi. Shu sababli chap qorincha qoni ochroq bo‘ladi, endokard qizaradi, seroz bo‘shliqlarda suyuqlik to‘planadi va yoyilgan chetli dog‘lar hosil bo‘ladi. Dengiz suvida qon quyuqlashadi va bu dog‘lar paydo bo‘lmaydi. Asfiktik cho‘kishda suv alveolalargacha yetmaydi, sinkopal o‘limda esa asfiksiya belgilari rivojlanib ulgurmaydi.",
+        "ru": "При истинном утоплении в пресной воде вода через альвеолы переходит в кровь, разжижает её и вызывает гемолиз. Поэтому кровь левого желудочка светлее, эндокард краснеет, в серозных полостях накапливается жидкость и образуются пятна с расплывчатыми краями. В морской воде кровь сгущается, и этих пятен не бывает. При асфиктическом утоплении вода не доходит до альвеол, а при синкопальной смерти признаки асфиксии не успевают развиться.",
+        "en": "In true drowning in fresh water, water passes through the alveoli into the blood, diluting it and causing hemolysis. For this reason, the blood in the left ventricle is paler, the endocardium becomes reddened, fluid accumulates in the serous cavities, and spots with blurred margins form. In sea water, the blood thickens and these spots do not appear. In asphyxial drowning, water does not reach the alveoli, and in syncopal death, signs of asphyxia have no time to develop."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "122-123"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q19",
+      "question_i18n": {
+        "uz": "Ko‘ldan chiqarilgan murdada o‘pkalar keskin emfizemali, hajmi kattalashgan, visseral plevra ostida faqat Tarde dog‘lari bor. Parenximatoz a’zolar va suyak miyada diatom planktoni topilmadi. Plankton tekshiruvi uchun qaysi namuna eng ma’qul?",
+        "ru": "На трупе, извлечённом из озера, лёгкие резко эмфизематозные, увеличены в объёме, под висцеральной плеврой видны только пятна Тардье. В паренхиматозных органах и костном мозге диатомовый планктон не обнаружен. Какой образец наиболее предпочтителен для исследования на планктон?",
+        "en": "In a corpse recovered from a lake, the lungs are sharply emphysematous and enlarged, and only Tardieu spots are present beneath the visceral pleura. Diatom plankton was not found in the parenchymal organs or the bone marrow. Which sample is most appropriate for plankton examination?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Yurakning o‘ng qorinchasidagi qon namunasi",
+          "O‘pka to‘qimasidan olingan bo‘lakcha",
+          "Kalla asos suyagi bo‘shlig‘idan olingan suyuqlik",
+          "Oshqozon ichidagi suyuqlik namunasi"
+        ],
+        "ru": [
+          "Образец крови из правого желудочка сердца",
+          "Кусочек ткани лёгкого",
+          "Жидкость из полости основания черепа",
+          "Образец жидкости из желудка"
+        ],
+        "en": [
+          "A blood sample from the right ventricle of the heart",
+          "A piece of tissue taken from the lung",
+          "Fluid taken from the cavity of the skull base (sphenoid sinus)",
+          "A sample of fluid from the stomach"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Asfiktik cho‘kishda suv laringospazm tufayli alveolalargacha yetmaydi, shuning uchun plankton qonga o‘tmaydi va ichki a’zolarda topilmasligi mumkin. Bunday holda tekshiruv uchun kalla asos suyagi bo‘shlig‘idagi suyuqlik olinadi. O‘pka to‘qimasidagi plankton esa o‘limdan keyin suvga tushganda ham bo‘lishi mumkin, shuning uchun u diagnostik emas.",
+        "ru": "При асфиктическом утоплении вода из-за ларингоспазма не доходит до альвеол, поэтому планктон не попадает в кровь и может не обнаруживаться во внутренних органах. В таком случае для исследования берут жидкость из полости основания черепа. Планктон в ткани лёгкого может быть и при попадании трупа в воду после смерти, поэтому он не является диагностическим.",
+        "en": "In asphyxial drowning, water does not reach the alveoli because of laryngospasm, so plankton does not enter the blood and may not be found in the internal organs. In such cases, fluid from the cavity of the skull base bone is taken for examination. Plankton in lung tissue may also be present when the body enters the water after death, so it is not diagnostic."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "125"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q20",
+      "question_i18n": {
+        "uz": "Osilgan shaxs sirtmoqdan olinib, nafas va yurak faoliyati tiklangach, mushaklar tonusi va arterial bosim ko‘tarilgan, pay reflekslari kuchaygan, tonik talvasalar bor, yoyuvchi tipdagi patologik reflekslar kuzatilmoqda, tana harorati ko‘tarilgan. Bu postasfiktik holatning qaysi bosqichi?",
+        "ru": "После извлечения повешенного из петли и восстановления дыхания и сердечной деятельности повышены мышечный тонус и артериальное давление, усилены сухожильные рефлексы, имеются тонические судороги, наблюдаются патологические рефлексы разгибательного типа, температура тела повышена. Какая это стадия постасфиктического состояния?",
+        "en": "After a hanged person was removed from the ligature and breathing and cardiac activity were restored, muscle tone and arterial pressure are elevated, tendon reflexes are exaggerated, tonic convulsions are present, extensor-type pathological reflexes are observed, and body temperature is elevated. Which stage of the postasphyxial state is this?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Asfiktik koma davrining detserebratsion rigidlik bosqichi",
+          "Karaxtlik davrining sopor bosqichi",
+          "Dezorientatsiya va xotira buzilishi davri",
+          "Qoldiq oqibatlar davri"
+        ],
+        "ru": [
+          "Стадия децеребрационной ригидности периода асфиктической комы",
+          "Стадия сопора периода оглушённости",
+          "Период дезориентации и нарушения памяти",
+          "Период остаточных последствий"
+        ],
+        "en": [
+          "The decerebrate rigidity stage of the asphyxial coma period",
+          "The sopor stage of the stupor period",
+          "The period of disorientation and memory impairment",
+          "The period of residual effects"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Nafas va yurak tiklangach mushak tonusi oshishi, tonik talvasalar va yoyuvchi reflekslar asfiktik komadagi detserebratsion rigidlikka xos. Karaxtlikda jabrlanuvchi komadan chiqadi va talvasalar bo‘lmaydi. Dezorientatsiya davrida hush tiklangan bo‘ladi, qoldiq oqibatlar esa kechroq namoyon bo‘ladi.",
+        "ru": "Повышение мышечного тонуса, тонические судороги и разгибательные рефлексы после восстановления дыхания и сердечной деятельности характерны для децеребрационной ригидности при асфиктической коме. При оглушённости пострадавший выходит из комы, и судорог нет. В периоде дезориентации сознание восстановлено, а остаточные последствия проявляются позже.",
+        "en": "Increased muscle tone, tonic convulsions, and extensor reflexes after restoration of breathing and cardiac activity are characteristic of decerebrate rigidity in asphyxial coma. In stupor, the victim emerges from coma and convulsions are absent. In the period of disorientation, consciousness has been restored, and residual effects appear later."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "108"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q21",
+      "question_i18n": {
+        "uz": "Suvdan chiqarilgan murdada qo‘l barmoqlari oqargan va bujmaygan, bu o‘zgarish kaft yuzasini to‘liq qamragan, ammo oyoq tovon yuzasiga hali o‘tmagan. Murda suvda taxminan qancha vaqt bo‘lgan?",
+        "ru": "У извлечённого из воды трупа пальцы рук побелели и сморщены, это изменение полностью охватывает ладонную поверхность, но ещё не перешло на подошвенную поверхность стоп. Сколько примерно времени труп находился в воде?",
+        "en": "In a body recovered from water, the fingertips are blanched and wrinkled; this change has fully involved the palmar surface but has not yet extended to the plantar surface of the foot. About how long has the body been in the water?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bir necha soat",
+          "Taxminan 2-5 kun",
+          "Taxminan 10-15 kun",
+          "Taxminan 2-3 hafta"
+        ],
+        "ru": [
+          "Несколько часов",
+          "Примерно 2-5 дней",
+          "Примерно 10-15 дней",
+          "Примерно 2-3 недели"
+        ],
+        "en": [
+          "A few hours",
+          "About 2-5 days",
+          "About 10-15 days",
+          "About 2-3 weeks"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Bir necha soatdan so‘ng faqat barmoqlar oqarib bujmayadi. Kaft yuzasi 2-5 kun ichida to‘liq qamraladi, tovon esa 5-8 kun ichida. Sochlar 10-15 kunda, qo‘l va oyoq terisining “qo‘lqop” shaklida ajralishi 2-3 haftada kuzatiladi, shuning uchun bu variantlar mos kelmaydi.",
+        "ru": "Через несколько часов бледнеют и сморщиваются только пальцы. Ладонная поверхность полностью охватывается в течение 2-5 дней, подошвенная — в течение 5-8 дней. Волосы — через 10-15 дней, отслоение кожи кистей и стоп в виде «перчаток» наблюдается через 2-3 недели, поэтому эти варианты не подходят.",
+        "en": "After a few hours only the fingers become blanched and wrinkled. The palmar surface is fully involved within 2-5 days, and the sole within 5-8 days. Hair changes are seen at 10-15 days, and \"glove-like\" sloughing of the skin of the hands and feet at 2-3 weeks, so these options do not fit."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "127"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q22",
+      "question_i18n": {
+        "uz": "Murda bo‘ynida ikkita strangulyatsion egat topildi: biri gorizontal va tutashgan, ikkinchisi yuqoriga qiyshiq yo‘nalgan, ular orasida epidermis hoshiyalangan. Hodisa qanday kechgan bo‘lishi ehtimoli yuqori?",
+        "ru": "На шее трупа обнаружены две странгуляционные борозды: одна горизонтальная и замкнутая, другая косо направлена вверх, между ними имеется кайма эпидермиса. Как, вероятнее всего, произошёл случай?",
+        "en": "Two strangulation furrows were found on the neck of a body: one horizontal and continuous, the other directed obliquely upward, with an epidermal border between them. What is the most likely course of events?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Shaxs bir o‘ramli sirtmoqda o‘zi osilgan",
+          "Jabrlanuvchi qo‘l bilan bo‘g‘ib o‘ldirilgan",
+          "Pozitsion asfiksiya natijasida o‘lim yuz bergan",
+          "Avval sirtmoq bilan bo‘g‘ilgan, keyin shu sirtmoqda osilgan"
+        ],
+        "ru": [
+          "Человек повесился сам в одновитковой петле",
+          "Потерпевший задушен руками",
+          "Смерть наступила в результате позиционной асфиксии",
+          "Сначала задушен петлёй, затем повешен в этой же петле"
+        ],
+        "en": [
+          "The person hanged himself in a single-loop noose",
+          "The victim was manually strangled",
+          "Death occurred as a result of positional asphyxia",
+          "The person was first strangled with a ligature and then hanged in the same noose"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Gorizontal egat sirtmoq bilan bo‘g‘ishga, yuqoriga qiyshiq egat osilishga xos. Osilishda sirtmoq siljib, egatlar orasida epidermis hoshiyasi hosil bo‘ladi. Qo‘l bilan bo‘g‘ishda egat bo‘lmaydi, pozitsion asfiksiyada esa strangulyatsion egat hosil bo‘lmaydi.",
+        "ru": "Горизонтальная борозда характерна для удавления петлёй, косо направленная вверх — для повешения. При повешении петля смещается, и между бороздами образуется кайма эпидермиса. При удавлении руками борозды не бывает, а при позиционной асфиксии странгуляционная борозда не образуется.",
+        "en": "A horizontal furrow is typical of ligature strangulation, and an obliquely upward furrow is typical of hanging. In hanging the noose shifts, forming an epidermal border between the furrows. Manual strangulation leaves no furrow, and in positional asphyxia no strangulation furrow is formed."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "215-216"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q23",
+      "question_i18n": {
+        "uz": "Ona bolasini emizayotib uxlab qolgan, chaqaloq o‘lik topildi. Murdada faqat tez o‘limga xos belgilar bor, nafas teshiklarining yopilishiga xos o‘zgarishlar yo‘q. Ekspert o‘lim sababini aniqlash uchun nima qilishi kerak?",
+        "ru": "Мать уснула во время кормления ребёнка, младенец найден мёртвым. На трупе имеются только признаки быстрой смерти, изменений, характерных для закрытия дыхательных отверстий, нет. Что должен сделать эксперт для установления причины смерти?",
+        "en": "A mother fell asleep while breastfeeding, and the infant was found dead. The body shows only signs typical of rapid death, with no changes typical of obstruction of the respiratory openings. What should the expert do to determine the cause of death?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Pnevmoniya, bronxiolit kabi kasalliklarni istisno qilish uchun sinchiklab gistologik tekshiruv o‘tkazadi",
+          "Faqat tashqi ko‘rikka tayanib, asfiksiya deb xulosa beradi",
+          "Belgilar yo‘qligi sababli o‘lim sababini “aniqlab bo‘lmaydi” deb qoldiradi",
+          "Qotillik gumon qilib, jarohatlar yo‘qligini ko‘rsatadi"
+        ],
+        "ru": [
+          "Проведёт тщательное гистологическое исследование для исключения таких заболеваний, как пневмония, бронхиолит",
+          "Опираясь только на наружный осмотр, даст заключение об асфиксии",
+          "Из-за отсутствия признаков оставит причину смерти «невыясненной»",
+          "Заподозрив убийство, укажет на отсутствие повреждений"
+        ],
+        "en": [
+          "Perform a thorough histological examination to exclude diseases such as pneumonia and bronchiolitis",
+          "Rely on the external examination alone and conclude asphyxia",
+          "Because of the absence of signs, leave the cause of death as \"undetermined\"",
+          "Suspect homicide and state that injuries are absent"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Bunday holda o‘ziga xos belgi bo‘lmaydi, emizish paytida bola kasallikdan (pnevmoniya, bronxiolit) to‘satdan o‘lishi ham mumkin. Haqiqiy sababni gistologik tekshiruv aniqlab beradi. Faqat tashqi ko‘rik yoki taxmin bilan xulosa berish noto‘g‘ri.",
+        "ru": "В таком случае специфических признаков не бывает; во время кормления ребёнок может внезапно умереть и от заболевания (пневмония, бронхиолит). Истинную причину устанавливает гистологическое исследование. Давать заключение только по наружному осмотру или по предположению неправильно.",
+        "en": "In such a case there are no specific signs; during breastfeeding the infant may also die suddenly from a disease (pneumonia, bronchiolitis). Histological examination reveals the true cause. Giving a conclusion based only on external examination or on assumption is incorrect."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "220"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q24",
+      "question_i18n": {
+        "uz": "Prozektor suvdan topilgan murda a’zolarini vodoprovod suvi bilan yuvdi, keyin buyrak va suyak iligida diatom planktoni topildi. Nima uchun bu natijaga ishonib bo‘lmaydi?",
+        "ru": "Прозектор промыл органы трупа, найденного в воде, водопроводной водой, после чего в почках и костном мозге был обнаружен планктон диатомовых водорослей. Почему этому результату нельзя доверять?",
+        "en": "The prosector washed the organs of a body recovered from water with tap water, and then diatom plankton was found in the kidney and bone marrow. Why can this result not be trusted?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Vodoprovod suvida diatom bo‘lmaydi, shuning uchun natija soxta",
+          "Vodoprovod suvidagi plankton to‘qimaga o‘tib, natijani buzishi mumkin",
+          "Diatom faqat o‘pka to‘qimasida diagnostik ahamiyatga ega",
+          "Diatomni faqat sho‘r suvda cho‘kkanda topish mumkin"
+        ],
+        "ru": [
+          "В водопроводной воде диатомей не бывает, поэтому результат ложный",
+          "Планктон из водопроводной воды может проникнуть в ткань и исказить результат",
+          "Диатомеи имеют диагностическое значение только в ткани лёгких",
+          "Диатомеи можно обнаружить только при утоплении в солёной воде"
+        ],
+        "en": [
+          "Tap water contains no diatoms, so the result is false",
+          "Plankton in tap water may pass into the tissue and distort the result",
+          "Diatoms have diagnostic significance only in lung tissue",
+          "Diatoms can be found only in drowning in salt water"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Diatom planktoni vodoprovod suvida ham uchraydi, shu sababli cho‘kish gumon qilingan murdani tekshirishda vodoprovod suvini ishlatish man etiladi: plankton a’zo to‘qimasiga o‘tib qolishi mumkin. Diatom vodoprovod suvida bo‘lmaydi degan fikr xato, o‘pkadagi plankton esa aksincha diagnostik emas.",
+        "ru": "Планктон диатомовых водорослей встречается и в водопроводной воде, поэтому при исследовании трупа с подозрением на утопление использовать водопроводную воду запрещено: планктон может попасть в ткань органа. Мнение, что в водопроводной воде диатомей не бывает, ошибочно, а планктон в лёгких, напротив, не является диагностическим.",
+        "en": "Diatom plankton is also found in tap water, so using tap water is prohibited when examining a body suspected of drowning: the plankton may get into the organ tissue. The idea that tap water contains no diatoms is wrong, and plankton in the lungs, on the contrary, is not diagnostic."
+      },
+      "source": {
+        "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+        "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "230"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q25",
+      "question_i18n": {
+        "uz": "Hodisa joyida o‘lik topilgan shaxsning qo‘l-oyoqlarida shilinma va qontalashlar bor, atrofda qattiq jismlar joylashgan. Murdada ixtiyorsiz siydik va axlat ajralishi izlari ham aniqlangan. Bu jarohatlar o‘z-o‘zidan, talvasalar tufayli paydo bo‘lgan bo‘lishi mumkin. Asfiksiyaning qaysi bosqichida bunday talvasalar kuzatiladi?",
+        "ru": "На месте происшествия обнаружен труп; на конечностях имеются ссадины и кровоподтёки, вокруг расположены твёрдые предметы. На трупе также выявлены следы непроизвольного выделения мочи и кала. Эти повреждения могли возникнуть самопроизвольно из-за судорог. На какой стадии асфиксии наблюдаются такие судороги?",
+        "en": "A person found dead at the scene has abrasions and bruises on the limbs, and hard objects are located around the body. Traces of involuntary discharge of urine and feces were also found on the body. These injuries may have arisen spontaneously due to convulsions. In which stage of asphyxia are such convulsions observed?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Inspirator hansirash bosqichida",
+          "Ekspirator hansirash bosqichida",
+          "Nafasning qisqa vaqtga to‘xtashi bosqichida",
+          "Terminal nafas olish bosqichida"
+        ],
+        "ru": [
+          "На стадии инспираторной одышки",
+          "На стадии экспираторной одышки",
+          "На стадии кратковременной остановки дыхания",
+          "На стадии терминального дыхания"
+        ],
+        "en": [
+          "Inspiratory dyspnea stage",
+          "Expiratory dyspnea stage",
+          "Stage of brief respiratory arrest",
+          "Terminal respiration stage"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Siydik, maniy va axlat ajralishi bilan kechadigan kuchli klonik talvasalar ekspirator hansirash bosqichiga xos. Shu talvasalar tufayli tana atrofdagi jismlarga urilib jarohat olishi mumkin, uni o‘zga shaxs yetkazgan jarohatdan farqlash kerak. Inspirator bosqichda faqat oyoq-qo‘llarning tartibsiz harakati bo‘lishi mumkin, pauza bosqichida esa mushaklar bo‘shashadi.",
+        "ru": "Сильные клонические судороги с выделением мочи, семенной жидкости и кала характерны для стадии экспираторной одышки. Из-за этих судорог тело может удариться об окружающие предметы и получить повреждения, их необходимо отличать от повреждений, причинённых другим лицом. На инспираторной стадии возможны лишь беспорядочные движения конечностей, а на стадии паузы мышцы расслабляются.",
+        "en": "Strong clonic convulsions accompanied by discharge of urine, semen and feces are typical of the expiratory dyspnea stage. Because of these convulsions the body may strike surrounding objects and be injured; such injuries must be distinguished from those inflicted by another person. In the inspiratory stage only disorderly movements of the limbs may occur, while in the pause stage the muscles relax."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "106"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q26",
+      "question_i18n": {
+        "uz": "Semiz erkak tipik siltab osilgandan so‘ng sirtmoqdan o‘z vaqtida olindi va tirik qoldi. Tekshiruvda uyqu arteriyasi intimasi strangulyatsion egat proeksiyasidan pastroqda ko‘ndalang yorilgani (Amyuss belgisi) aniqlandi. Postasfiktik holatda bu shikastlanish qaysi asoratlarga sabab bo‘lishi mumkin?",
+        "ru": "Тучный мужчина после типичного повешения с рывком был своевременно извлечён из петли и остался жив. При обследовании выявлен поперечный разрыв интимы сонной артерии ниже проекции странгуляционной борозды (признак Амюсса). К каким осложнениям это повреждение может привести в постасфиктическом состоянии?",
+        "en": "An obese man was taken down from the noose in time after typical hanging with a sudden jerk and survived. Examination revealed a transverse tear of the carotid artery intima below the projection of the strangulation furrow (Amussat sign). In the postasphyxial state, which complications can this injury cause?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Gipostatik pnevmoniya va o‘pka shishi",
+          "Oshqozon-ichak perforatsiyasi va peritonit",
+          "O‘tkir jigar va buyrak yetishmovchiligi",
+          "Tromboz, tromboemboliya va anevrizma"
+        ],
+        "ru": [
+          "Гипостатическая пневмония и отёк лёгких",
+          "Перфорация желудочно-кишечного тракта и перитонит",
+          "Острая печёночная и почечная недостаточность",
+          "Тромбоз, тромбоэмболия и аневризма"
+        ],
+        "en": [
+          "Hypostatic pneumonia and pulmonary edema",
+          "Gastrointestinal perforation and peritonitis",
+          "Acute hepatic and renal failure",
+          "Thrombosis, thromboembolism and aneurysm"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Uyqu arteriyasi intimasining yorilishi tomir devorining shikastlanishi bo‘lib, tromboz, tromboemboliya va anevrizma xavfini tug‘diradi. Boshqa variantlar postasfiktik holatda uchraydigan asoratlar, lekin ular arteriya intimasi yorilishi bilan bevosita bog‘liq emas.",
+        "ru": "Разрыв интимы сонной артерии — это повреждение стенки сосуда, создающее риск тромбоза, тромбоэмболии и аневризмы. Остальные варианты — осложнения, встречающиеся в постасфиктическом состоянии, но они не связаны непосредственно с разрывом интимы артерии.",
+        "en": "A tear of the carotid artery intima is an injury of the vessel wall and carries a risk of thrombosis, thromboembolism and aneurysm. The other options are complications seen in the postasphyxial state, but they are not directly related to a tear of the arterial intima."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "116"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q27",
+      "question_i18n": {
+        "uz": "Sovuq suvda cho‘kib o‘lgan besh yoshli bolaning murdasi tekshirilmoqda. Cho‘kishning qaysi turi ehtimoli yuqori va qaysi topilma shu turga xos?",
+        "ru": "Исследуется труп пятилетнего ребёнка, утонувшего в холодной воде. Какой вид утопления более вероятен и какая находка характерна для этого вида?",
+        "en": "The body of a five-year-old child who drowned in cold water is being examined. Which type of drowning is most likely, and which finding is typical of this type?"
+      },
+      "options_i18n": {
+        "uz": [
+          "O‘pkalar keskin emfizemali, hajmi katta, kesmada quruq; nafas yo‘llarida suv va yot moddalar yo‘q",
+          "Nafas yo‘llarida suv o‘tlari va balchiq, o‘pkalar xamirsimon, plevra bo‘shliqlarini to‘ldirgan",
+          "Visseral plevra ostida yoyiq pushti dog‘lar va qonning suyulishi (gemodilyusiya)",
+          "Yurakning chap kameralaridagi qon o‘ngdagiga nisbatan ochroq, endokardi qizg‘ish"
+        ],
+        "ru": [
+          "Лёгкие резко эмфизематозные, большого объёма, на разрезе сухие; в дыхательных путях воды и инородных веществ нет",
+          "В дыхательных путях водоросли и ил, лёгкие тестоватой консистенции, заполняют плевральные полости",
+          "Под висцеральной плеврой обширные розовые пятна и разжижение крови (гемодилюция)",
+          "Кровь в левых камерах сердца светлее, чем в правых, эндокард красноватый"
+        ],
+        "en": [
+          "Lungs sharply emphysematous, enlarged in volume, dry on section; no water or foreign material in the airways",
+          "Water plants and silt in the airways, lungs doughy, filling the pleural cavities",
+          "Diffuse pink spots under the visceral pleura and thinning of the blood (hemodilution)",
+          "Blood in the left chambers of the heart paler than in the right, endocardium reddish"
+        ]
+      },
+      "correct_index": 0,
+      "explanation_i18n": {
+        "uz": "Past harorat va kichik yosh asfiktik cho‘kishga moyillik yaratadi. Bunda laringospazm tufayli suv nafas yo‘llariga o‘tmaydi, o‘pka keskin emfizemali va quruq bo‘ladi. Boshqa uchta variant suv alveolalargacha yetgan chin cho‘kishga xos.",
+        "ru": "Низкая температура и малый возраст предрасполагают к асфиктическому утоплению. При этом из-за ларингоспазма вода в дыхательные пути не проникает, лёгкие резко эмфизематозные и сухие. Остальные три варианта характерны для истинного утопления, при котором вода достигает альвеол.",
+        "en": "Low temperature and young age predispose to asphyxial drowning. In it, water does not enter the airways because of laryngospasm, and the lungs are sharply emphysematous and dry. The other three options are typical of true drowning, in which water has reached the alveoli."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "122-123"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q28",
+      "question_i18n": {
+        "uz": "Mast holatdagi yosh erkak suvga tushgan zahoti harakatsiz bo‘lib qoldi. Murdada asfiksiyaning umumiy belgilari rivojlanmagan, faqat tez o‘limga xos ayrim o‘zgarishlar bor. Eng to‘g‘ri baho va keyingi yo‘nalish qaysi?",
+        "ru": "Молодой мужчина в состоянии опьянения сразу после попадания в воду замер. На трупе общие признаки асфиксии не развились, имеются лишь некоторые изменения, характерные для быстрой смерти. Какова наиболее верная оценка и дальнейшее направление?",
+        "en": "A young intoxicated man became motionless as soon as he entered the water. The body lacks general signs of asphyxia and shows only some changes typical of rapid death. What is the most correct assessment and further direction?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Asfiktik cho‘kish; laringospazm tufayli suv o‘pkaga o‘tmagan",
+          "Chin cho‘kish; belgilar tez o‘lim sababli rivojlanib ulgurmagan",
+          "Suvdagi to‘satdan o‘lim; avvalo yurakda moyillik yaratuvchi o‘zgarishlar izlanadi",
+          "Cho‘kishning reflektor turi; qo‘shimcha tekshiruv talab qilinmaydi"
+        ],
+        "ru": [
+          "Асфиктическое утопление; из-за ларингоспазма вода в лёгкие не попала",
+          "Истинное утопление; признаки не успели развиться из-за быстрой смерти",
+          "Внезапная смерть в воде; прежде всего ищутся предрасполагающие изменения в сердце",
+          "Рефлекторный тип утопления; дополнительных исследований не требуется"
+        ],
+        "en": [
+          "Asphyxial drowning; water did not enter the lungs because of laryngospasm",
+          "True drowning; the signs did not have time to develop because of rapid death",
+          "Sudden death in water; changes in the heart that predispose to it are sought first",
+          "Reflex type of drowning; no additional examination is required"
+        ]
+      },
+      "correct_index": 2,
+      "explanation_i18n": {
+        "uz": "Tana suvga tushishi bilan yurak va nafas reflektor to‘xtasa, asfiksiya belgilari rivojlanmaydi. Bunday hodisani cho‘kish emas, suvdagi to‘satdan o‘lim deb baholash to‘g‘riroq. Sinchiklab tekshirilganda, birinchi navbatda yurakda to‘satdan o‘limga olib keluvchi yoki unga moyillik yaratuvchi o‘zgarishlar topiladi, mastlik esa moyillik omillaridan biri.",
+        "ru": "Если при попадании тела в воду рефлекторно остановились сердце и дыхание, признаки асфиксии не развиваются. Такой случай правильнее оценивать не как утопление, а как внезапную смерть в воде. При тщательном исследовании в первую очередь в сердце обнаруживаются изменения, ведущие к внезапной смерти или предрасполагающие к ней, а опьянение — один из предрасполагающих факторов.",
+        "en": "If the heart and breathing stop reflexively as soon as the body enters the water, signs of asphyxia do not develop. It is more correct to assess such an event as sudden death in water rather than drowning. On careful examination, changes in the heart that lead to sudden death or predispose to it are found first, and intoxication is one of the predisposing factors."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "124"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q29",
+      "question_i18n": {
+        "uz": "Chuqur quduqni tozalayotgan ishchi o‘lik topildi. Murda tekshiruvida faqat tez o‘limga xos umumasfiktik belgilar bor, asfiksiyaning bu turiga xos maxsus o‘zgarish yo‘q. Muhitdagi gipoksiya va giperkapniyadan tashqari o‘lim genezida odatda qaysi omil ahamiyatli bo‘ladi?",
+        "ru": "Рабочий, чистивший глубокий колодец, найден мёртвым. При исследовании трупа выявлены только общеасфиктические признаки быстрой смерти, специфических изменений, характерных для этого вида асфиксии, нет. Какой фактор, помимо гипоксии и гиперкапнии среды, обычно имеет значение в генезе смерти?",
+        "en": "A worker cleaning a deep well was found dead. Examination of the body shows only general asphyxial signs typical of rapid death, and no special changes specific to this type of asphyxia. Besides hypoxia and hypercapnia in the environment, which factor is usually significant in the genesis of death?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Bo‘yin qon tomirlari va nervlarining mexanik siqilishi",
+          "Bijg‘ish va chirish jarayonlarida paydo bo‘ladigan toksik moddalar",
+          "Qonning o‘pka venalari orqali yurakka havo emboliyasi tarzida o‘tishi",
+          "Suvning alveolalargacha aspiratsiyasi va gemodilyusiya"
+        ],
+        "ru": [
+          "Механическое сдавление сосудов и нервов шеи",
+          "Токсические вещества, образующиеся при процессах брожения и гниения",
+          "Попадание крови через лёгочные вены в сердце в виде воздушной эмболии",
+          "Аспирация воды до альвеол и гемодилюция"
+        ],
+        "en": [
+          "Mechanical compression of the neck vessels and nerves",
+          "Toxic substances formed during fermentation and putrefaction",
+          "Passage of blood to the heart through the pulmonary veins in the form of air embolism",
+          "Aspiration of water into the alveoli and hemodilution"
+        ]
+      },
+      "correct_index": 1,
+      "explanation_i18n": {
+        "uz": "Chuqur quduq kabi cheklangan notoliq yopiq muhitlarda o‘limga gipoksiya va giperkapniyadan tashqari bijg‘ish, chirish natijasida hosil bo‘lgan toksik moddalar ham ta’sir qiladi. Qolgan variantlar boshqa asfiksiya turlari yoki cho‘kish mexanizmlariga tegishli.",
+        "ru": "В ограниченных, не полностью замкнутых средах, таких как глубокий колодец, на наступление смерти, помимо гипоксии и гиперкапнии, влияют и токсические вещества, образовавшиеся в результате брожения и гниения. Остальные варианты относятся к другим видам асфиксии или механизмам утопления.",
+        "en": "In confined, incompletely enclosed environments such as a deep well, besides hypoxia and hypercapnia, toxic substances formed as a result of fermentation and putrefaction also contribute to death. The remaining options relate to other types of asphyxia or to mechanisms of drowning."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "130"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    },
+    {
+      "id": "4-kurs-davolash-08-q30",
+      "question_i18n": {
+        "uz": "Asfiksiyadan qutqarilgan shaxs shifoxonada kuzatilmoqda. Unda terining giperesteziyasi, gipergidroz, “qorachiqlar o‘yini”, qusish va ixtiyorsiz siydik ajralishi bor. Dastlabki soatlarda bulardan keyin qaysi o‘zgarish noxush prognostik belgi hisoblanadi?",
+        "ru": "Спасённый от асфиксии находится под наблюдением в больнице. У него гиперестезия кожи, гипергидроз, «игра зрачков», рвота и непроизвольное мочеиспускание. Какое изменение вслед за этим в первые часы считается неблагоприятным прогностическим признаком?",
+        "en": "A person rescued from asphyxia is being observed in hospital. He has skin hyperesthesia, hyperhidrosis, \"pupillary play\" (hippus), vomiting and involuntary urination. In the first hours, which subsequent change is considered an unfavorable prognostic sign?"
+      },
+      "options_i18n": {
+        "uz": [
+          "Qorachiqlarning galma-gal torayib kengayishi kuchayishi",
+          "Terining gipergidrozi davom etishi",
+          "Ixtiyorsiz siydik va axlat ajralishining takrorlanishi",
+          "O‘pka shishishining rivojlanishi"
+        ],
+        "ru": [
+          "Усиление поочерёдного сужения и расширения зрачков",
+          "Сохранение гипергидроза кожи",
+          "Повторение непроизвольного выделения мочи и кала",
+          "Развитие отёка лёгких"
+        ],
+        "en": [
+          "Intensification of alternating constriction and dilation of the pupils",
+          "Continued hyperhidrosis of the skin",
+          "Repeated involuntary discharge of urine and feces",
+          "Development of pulmonary edema"
+        ]
+      },
+      "correct_index": 3,
+      "explanation_i18n": {
+        "uz": "Terining giperesteziyasi, gipergidroz, qorachiqlar o‘yini, qusish va ixtiyorsiz ajralishlar vegetativ nerv tizimi buzilishining oddiy ko‘rinishlari. Dastlabki soatlarda o‘pka shishishining rivojlanishi esa noxush prognostik belgi hisoblanadi.",
+        "ru": "Гиперестезия кожи, гипергидроз, игра зрачков, рвота и непроизвольные выделения — обычные проявления нарушения вегетативной нервной системы. Развитие отёка лёгких в первые часы считается неблагоприятным прогностическим признаком.",
+        "en": "Skin hyperesthesia, hyperhidrosis, pupillary play, vomiting and involuntary discharges are ordinary manifestations of autonomic nervous system disturbance. The development of pulmonary edema in the first hours is considered an unfavorable prognostic sign."
+      },
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "109"
+      },
+      "difficulty": "hard",
+      "translation_status": {
+        "uz": "source",
+        "ru": "auto_unreviewed",
+        "en": "auto_unreviewed"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "Bob 5. Kislorod tanqisligi (asfiksiya)"
+    },
+    {
+      "author": "Ромодановский П.О., Баринов Е.Х.",
+      "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2017,
+      "pages": "4-modul. Kislorod tanqisligi (asfiksiya, cho‘kish), harorat, elektr, bosim, radiatsiya; bet 315-374"
+    },
+    {
+      "author": "Харин Г.М. (Kharin G.M.)",
+      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2006,
+      "pages": "VII bo‘lim (16-18-boblar). Mexanik asfiksiya; bet 139-153"
+    },
+    {
+      "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+      "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+      "year": null,
+      "pages": "XI-bob. Mexanik asfiksiya; bet 202-234"
+    }
+  ]
+}

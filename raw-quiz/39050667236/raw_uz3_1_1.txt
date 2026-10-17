@@ -1,0 +1,108 @@
+```json
+{
+  "questions": [
+    {
+      "question": "Darslikda keltirilgan tasnifga ko‘ra bug‘ qozonlari va gaz ballonlarining portlashi portlashning qaysi turiga kiradi?",
+      "options": [
+        "Tabiiy portlashlar",
+        "Qasddan portlashlar",
+        "Tasodifiy portlashlar",
+        "Pirotexnik portlashlar"
+      ],
+      "correct_index": 2,
+      "explanation": "Portlashlar tabiiy (yashin, vulqon, meteorit), qasddan (portlovchi moddalar, pirotexnik tarkiblar) va tasodifiy (gaz ballonlari, bug‘ qozonlari) turlarga bo‘linadi. Bug‘ qozoni va gaz ballonining portlashi odamning niyatisiz yuz beradi, shuning uchun u tasodifiy portlash hisoblanadi. “Pirotexnik portlashlar” esa alohida tur sifatida ajratilmagan.",
+      "difficulty": "easy",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "98"
+      }
+    },
+    {
+      "question": "Portlovchi moddaning detonatsiyasi uning oddiy yonishidan qaysi belgisi bilan farqlanadi?",
+      "options": [
+        "O‘zgarish zarb to‘lqini ta’sirida kechadi, tezligi bir necha ming m/sek.ga etadi",
+        "O‘zgarish doim sekin kechadi va faqat yopiq muhitda boshlanadi",
+        "O‘zgarish faqat tutunli poroxga xos bo‘lib, gaz bosimi hosil qilmaydi",
+        "O‘zgarish yonish orqali kechadi va tezligi 400 m/sek.dan oshmaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "Detonatsiyada modda zarb to‘lqini ta’sirida o‘zgaradi. Jarayon bir necha ming m/sek. tezlikda boradi va juda katta gaz bosimi hosil bo‘ladi (trotilda yuz ming atmosferadan ortiq). Yonish esa nisbatan sekin kechadi, qora poroxda ham yopiq muhitda tezlik 400 m/sek.ga etadi. Boshqa variantlar yonishga xos yoki umuman noto‘g‘ri.",
+      "difficulty": "medium",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "98"
+      }
+    },
+    {
+      "question": "Uzun naysimon suyak diafizining bir tomonida radial darzli dumaloq defekt, qarama-qarshi tomonida esa kattaroq defekt va undan uzunasiga yo‘nalgan darzlar topildi. Snaryadning harakat yo‘nalishi qanday?",
+      "options": [
+        "Kattaroq defektli tomondan radial darzli dumaloq defekt tomonga",
+        "Ikkala tomon ham kirish hisoblanadi, chunki o‘q suyakda ikkiga bo‘lingan",
+        "Dumaloq defekt tomoni chiqish, chunki kirish teshigi doim kattaroq bo‘ladi",
+        "Radial darzli dumaloq defekt tomondan kattaroq defektli tomonga"
+      ],
+      "correct_index": 3,
+      "explanation": "Naysimon suyakda o‘q kirgan tomonda radial darzlari bor dumaloq defekt bo‘ladi. Chiqqan tomonda defekt kattaroq, darzlari uzunasiga yo‘nalgan. Demak, snaryad dumaloq defektli tomondan katta defektli tomonga harakatlangan. Qolgan variantlar kirish va chiqish belgilarini teskari yoki noto‘g‘ri talqin qiladi.",
+      "difficulty": "medium",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "92"
+      }
+    },
+    {
+      "question": "Makarov pistoletidan 120 sm masofadan otilgan. Jabrlanganning kiyimida kirish teshigi atrofida porox va metall zarrachalari aniqlandi, qurum va porox gazlari ta’siri belgilari yo‘q. Bu holat yaqin distansiyaning qaysi zonasiga mos keladi?",
+      "options": [
+        "Birinchi zonaga, chunki barcha qo‘shimcha omillar birga ta’sir etgan",
+        "Uchinchi zonaga, chunki bu zona Makarovda 150 sm.gacha davom etadi",
+        "Ikkinchi zonaga, chunki porox zarrachalari faqat shu zonada uchraydi",
+        "Yaqin bo‘lmagan distansiyaga, chunki masofa 1 metrdan oshgan"
+      ],
+      "correct_index": 1,
+      "explanation": "Birinchi zona Makarovda taxminan 1 sm, ikkinchi zona odatda 25–35 sm bilan tugaydi. 120 sm bu ikkala zonadan tashqarida. Faqat porox va metall zarrachalari qoladigan uchinchi zona esa Makarovda 150 sm.gacha cho‘ziladi. Shu sababli 120 sm uchinchi zonaga to‘g‘ri keladi va otish hali yaqin distansiyaga kiradi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "88"
+      }
+    },
+    {
+      "question": "Portlash natijasida jabrlanganning portlash markaziga qaragan yuzasida turli mexanik jarohatlar bor. Qarama-qarshi yuzasida ham jarohatlar topildi. Ekspert shu jarohatlarning hosil bo‘lish mexanizmini qanday baholaydi?",
+      "options": [
+        "Atrof-muhit zarb to‘lqini to‘g‘ridan-to‘g‘ri shu yuzaga ta’sir etgan",
+        "Tananing atrofdagi jismlarga urilishi yoki yiqilishi natijasida paydo bo‘lgan",
+        "Portlash gazlarining kimyoviy ta’siri tufayli karboksigemoglobin hosil bo‘lgan",
+        "Portlovchi moslamaning bo‘laklari tananing orqasidan kirib kelgan"
+      ],
+      "correct_index": 1,
+      "explanation": "Zarb to‘lqini cheklanmagan yassi yuzali o‘tmas jism kabi ta’sir qiladi va mexanik jarohatlarni portlash markazi tomonidagi yuzada hosil qiladi. Qarama-qarshi yuzadagi shikastlar esa odatda tananing otilib atrofdagi jismlarga urilishi yoki yiqilishi bilan bog‘liq. Karboksigemoglobin kimyoviy ta’sir belgisi bo‘lib, mexanik jarohatlarni tushuntirmaydi.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "100"
+      }
+    },
+    {
+      "question": "Bosh suyagining yassi suyagida ikkita o‘q otar defekt bor. A defektdan boshlangan darz chiziqlari B defektdan boshlangan darzlarga yetib, ularni kesib o‘tmasdan tugaydi. Jarohatlar qanday ketma-ketlikda etkazilgan?",
+      "options": [
+        "A jarohat avval, B jarohat keyin etkazilgan",
+        "Ikkala jarohat bir vaqtda etkazilgan, chunki darzlar uchrashgan",
+        "Ketma-ketlikni darz chiziqlari bo‘yicha aniqlab bo‘lmaydi",
+        "B jarohat avval, A jarohat keyin etkazilgan"
+      ],
+      "correct_index": 3,
+      "explanation": "Keyingi defektdan boshlangan darz chiziqlari avvalroq hosil bo‘lgan jarohatning darzlarini kesib o‘tmaydi, ularga yetib to‘xtaydi. A defektning darzlari B ning darzlarida tugagani uchun A keyin, B esa avval etkazilgan. Ikkinchi va uchinchi variantlar bu qoidaga zid.",
+      "difficulty": "hard",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik",
+        "page": "97"
+      }
+    }
+  ]
+}
+```
