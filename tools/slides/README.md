@@ -30,3 +30,16 @@ pytest tests
 - Natija o'qituvchi tomonidan tekshirilmaguncha tasdiqlangan hisoblanmaydi.
 - ABY va cheklangan materiallar: CLAUDE.md qoidalariga amal qiling (ommaviy tarqatilmaydi).
 - `apps/` va `content/` ga tegmang.
+
+## Test banki (prezentatsiyadan alohida) — `generate_quiz.py`
+Har mavzu uchun 30 savol (15 oson-o‘rta + 15 qiyin/amaliy), UZ (asl) + RU + EN (avtomatik tarjima, `translation_status: auto_unreviewed`).
+```
+cd tools/slides
+python generate_quiz.py 4-kurs-davolash-01 --dry-run
+export ANTHROPIC_API_KEY=...        # faqat o‘z terminalingizda
+python generate_quiz.py 4-kurs-davolash-01 --sources sources_private/sources.json --existing ../../slides-out/out --max-usd 1.50
+python build_quiz_pptx.py out_quiz/4-kurs-davolash-01.json      # uz/ru/en .pptx
+```
+Chiqish: `out_quiz/<id>.json` (`{topic_id, title_i18n, questions:[{id, question_i18n, options_i18n, correct_index, explanation_i18n, source, difficulty}]}`).
+Tekshiruv: 4 variant, manba ruxsat etilgan ro‘yxatdan, dublikat nazorati (mavjud slayd MCQ lari bilan), tarjimada raqam/qisqartmalar uz bilan bir xil.
+Workflow: `.github/workflows/quiz.yml` (natija `slides-out` branchidagi `quiz/`).

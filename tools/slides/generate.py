@@ -128,7 +128,7 @@ def validate_output(data, sources):
     return True
 
 
-def _json_call(client, system, blocks, max_tokens, tag):
+def _json_call(client, system, blocks, max_tokens, tag, raw_dir="out"):
     """Bitta bosqich: JSON qaytaradi; buzuq bo'lsa 1 marta qayta uriniladi."""
     kw = dict(model=MODEL, max_tokens=max_tokens,
               system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
@@ -141,8 +141,8 @@ def _json_call(client, system, blocks, max_tokens, tag):
         else:
             resp = client.messages.create(**kw)
         text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
-        Path("out").mkdir(exist_ok=True)
-        Path(f"out/raw_{tag}_{attempt}.txt").write_text(text, encoding="utf-8")
+        Path(raw_dir).mkdir(parents=True, exist_ok=True)
+        Path(raw_dir, f"raw_{tag}_{attempt}.txt").write_text(text, encoding="utf-8")
         print(f"[{tag}#{attempt}] stop={getattr(resp,'stop_reason','?')} out_tok={getattr(getattr(resp,'usage',None),'output_tokens','?')}")
         if text.startswith("```"):
             text = text.split("\n", 1)[1].rsplit("```", 1)[0]
