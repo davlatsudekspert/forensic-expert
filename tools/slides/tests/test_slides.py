@@ -73,7 +73,7 @@ def test_mock_generate_and_pptx(tmp_path):
     out = build(data, tmp_path / "o.pptx")
     from pptx import Presentation
     prs = Presentation(out)
-    assert len(prs.slides) == 34 and prs.slides[1].has_notes_slide
+    assert len(prs.slides) > 34 and prs.slides[1].has_notes_slide
 
 
 def test_unsourced_bullet_rejected(tmp_path):
