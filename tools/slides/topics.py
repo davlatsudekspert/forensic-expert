@@ -3,6 +3,7 @@ import re
 from pathlib import Path
 
 DEFAULT = Path(__file__).resolve().parents[2] / "docs/curriculum/TOPICS.md"
+BIOETIKA = Path(__file__).resolve().parents[2] / "docs/curriculum/BIOETIKA_TOPICS.md"
 COURSE_RE = re.compile(r"^##\s+(.+?)\s*$")
 ITEM_RE = re.compile(r"^(\d+)\.\s+(.+?)\s*$")
 
@@ -31,6 +32,10 @@ def get_topic(topic_id, path=DEFAULT):
     for t in parse_topics(path):
         if t["id"] == topic_id:
             return t
+    if path == DEFAULT and BIOETIKA.exists():
+        for t in parse_topics(BIOETIKA):
+            if t["id"] == topic_id:
+                return t
     raise KeyError(topic_id)
 
 
