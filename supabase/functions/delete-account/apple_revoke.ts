@@ -76,7 +76,8 @@ export async function buildClientSecret(
   const signingInput = `${b64url(JSON.stringify(header))}.${b64url(JSON.stringify(payload))}`;
   const key = await crypto.subtle.importKey(
     "pkcs8",
-    pemToDer(cfg.privateKey),
+    // pemToDer returns a fresh, zero-offset array, so its buffer is exactly the DER bytes.
+    pemToDer(cfg.privateKey).buffer as ArrayBuffer,
     { name: "ECDSA", namedCurve: "P-256" },
     false,
     ["sign"],
