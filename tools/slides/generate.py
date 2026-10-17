@@ -9,7 +9,7 @@ MODEL = "claude-sonnet-5-5"
 PRICE_IN_PER_MTOK_USD = 3.00    # TEKSHIRILMAGAN taxmin
 PRICE_OUT_PER_MTOK_USD = 15.00  # TEKSHIRILMAGAN taxmin
 CHARS_PER_TOKEN = 3.0           # o'zbek lotin uchun konservativ taxmin
-MAX_TOKENS = 16000
+MAX_TOKENS = 32000
 TEMPERATURE = 0.2
 MAX_SOURCE_CHARS = 60000
 PENDING = "ADABIYOT KUTILMOQDA"
@@ -17,7 +17,7 @@ PENDING = "ADABIYOT KUTILMOQDA"
 SYSTEM_PROMPT = """Siz sud-tibbiyot fani o'qituvchisi uchun ma'ruza materiali tayyorlaysiz.
 QOIDALAR:
 1. Faqat o'zbek tili (lotin). Faqat quyida berilgan MANBA MATNLARIDAN foydalaning.
-2. KAMIDA 30 ta slayd (30-40). Mavzuning barcha bo'limlarini qamrang. Slaydlarning kamida 6 tasida "diagram" bo'lsin (o'zingiz chizgan sodda sxema: kind="flow" nodes=[matn...] yoki kind="table" header=[...] rows=[[...]]; jadvalni manbadan o'z so'zingiz bilan qayta tuzing, rasmni ko'chirmang, haqiqiy foto deb ko'rsatmang). Oxirida "extras": 3-5 ta qiziqarli fakt/hodisa tahlili/eslab qolish usuli (manbali). Matn sodda, tushunarli. Har slaydning har bir bandi oxirida [muallif, kitob, bet] ko'rsatilsin; manba va bet faqat berilgan ro'yxatdan.
+2. KAMIDA 30 ta slayd (30-40). Mavzuning barcha bo'limlarini qamrang. Slaydlarning kamida 6 tasida "diagram" bo'lsin (o'zingiz chizgan sodda sxema: kind="flow" nodes=[matn...] yoki kind="table" header=[...] rows=[[...]]; jadvalni manbadan o'z so'zingiz bilan qayta tuzing, rasmni ko'chirmang, haqiqiy foto deb ko'rsatmang). Oxirida "extras": 3-5 ta qiziqarli fakt/hodisa tahlili/eslab qolish usuli (manbali). Matn sodda, tushunarli. Har slaydda 2-4 qisqa band (har biri 1-2 jumla), teacher_notes 1-2 jumla — JSON qisqa bo'lsin. Har slaydning har bir bandi oxirida [muallif, kitob, bet] ko'rsatilsin; manba va bet faqat berilgan ro'yxatdan.
 3. Raqam, bet, foiz, sana TO'QIMANG. Manbada bo'lmasa yozmang.
 4. Ishonchsiz yoki manbada aniq bo'lmagan bandni "uncertain": true bilan belgilang.
 5. 10 ta MCQ: bitta to'g'ri javob, mantiqan yaqin chalg'ituvchi variantlar, tushuntirish, manba+bet.
@@ -86,12 +86,18 @@ def validate_output(data, sources):
 
 
 def call_api(client, system, user):
-    resp = client.messages.create(
-        model=MODEL, max_tokens=MAX_TOKENS,
-        system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
-        messages=[{"role": "user", "content": user}])
-    text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
-    text = text.strip()
+    kw = dict(model=MODEL, max_tokens=MAX_TOKENS,
+              system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
+              messages=[{"role": "user", "content": user}])
+    if hasattr(client.messages, "stream"):
+        with client.messages.stream(**kw) as s:
+            resp = s.get_final_message()
+    else:
+        resp = client.messages.create(**kw)
+    text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
+    Path("out").mkdir(exist_ok=True)
+    Path("out/raw_response.txt").write_text(text, encoding="utf-8")
+    print(f"Javob: stop_reason={getattr(resp,'stop_reason','?')} chiqish tokenlari={getattr(resp.usage,'output_tokens','?')}")
     if text.startswith("```"):
         text = text.split("\n", 1)[1].rsplit("```", 1)[0]
     return json.loads(text)

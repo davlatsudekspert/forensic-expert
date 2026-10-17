@@ -34,7 +34,7 @@ jobs:
           SRC=""; [ -f sources_private/sources.json ] && SRC="--sources sources_private/sources.json"; python generate.py "$TOPIC" --max-usd "$MAXUSD" $SRC $FLAG
           if [ -f "out/$TOPIC.json" ]; then python build_pptx.py "out/$TOPIC.json"; fi
       - uses: actions/upload-artifact@v4
-        if: ${{ inputs.dry_run != true }}
+        if: ${{ always() && inputs.dry_run != true }}
         with:
           name: slides-${{ inputs.topic_id }}
           path: tools/slides/out/
