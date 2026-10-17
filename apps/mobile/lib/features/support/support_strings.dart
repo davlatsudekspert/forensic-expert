@@ -34,15 +34,6 @@ extension SupportStrings on AppLocalizations {
     _ => admActOther,
   };
 
-  /// Server tarif kodi (`studentPro`…) → tarif nomi. Xom kod ko‘rsatilmaydi.
-  String admTierLabel(String? tier) => switch (tier) {
-    null => admTierFree,
-    'studentPro' => tierStudentPro,
-    'professionalPro' => tierProfessionalPro,
-    'institution' => tierInstitution,
-    _ => admTierPro,
-  };
-
   /// `android` / `ios` → «Android» / «iOS»; boshqasi o‘zgarmaydi.
   String admPlatformLabel(String p) => switch (p.toLowerCase()) {
     'android' => adminAndroid,
@@ -57,15 +48,12 @@ extension SupportStrings on AppLocalizations {
     _ => role,
   };
 
-  /// Jurnal tafsiloti (holat, tarif yoki rol kodi) → o‘qiladigan nom.
+  /// Jurnal tafsiloti (holat yoki rol kodi) → o‘qiladigan nom.
   String admAuditValue(String v) {
     for (final s in SupportStatus.values) {
       if (s.wire == v) return supStatus(s);
     }
-    return switch (v) {
-      'studentPro' || 'professionalPro' || 'institution' => admTierLabel(v),
-      _ => admRoleLabel(v),
-    };
+    return admRoleLabel(v);
   }
 }
 

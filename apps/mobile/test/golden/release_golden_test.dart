@@ -4,7 +4,6 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/data/auth/mock_auth_repository.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
 import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
@@ -35,33 +34,6 @@ void main() {
           Key? scrollTo,
         })
       >[
-        (
-          name: 'rc_01_paywall_en',
-          lang: 'en',
-          theme: ThemeMode.light,
-          route: Routes.purchase,
-          auth: false,
-          store: FakeStore(price: 'TEST 1.00'),
-          scrollTo: null,
-        ),
-        (
-          name: 'rc_02_paywall_pro_ru_dark',
-          lang: 'ru',
-          theme: ThemeMode.dark,
-          route: Routes.purchase,
-          auth: true,
-          store: FakeStore(price: 'TEST 1.00', owned: true),
-          scrollTo: const Key('paywall.tier.professionalPro'),
-        ),
-        (
-          name: 'rc_03_paywall_no_store_uz',
-          lang: 'uz',
-          theme: ThemeMode.light,
-          route: Routes.purchase,
-          auth: false,
-          store: FakeStore(withOffers: false),
-          scrollTo: null,
-        ),
         (
           name: 'rc_04_register_en',
           lang: 'en',
@@ -95,11 +67,8 @@ void main() {
           theme: ThemeMode.light,
           route: Routes.profile,
           auth: true,
-          store: FakeStore(
-            tier: PlanTier.studentPro,
-            status: EntitlementStatus.cancelledActiveUntilExpiry,
-          ),
-          scrollTo: const Key('profile.restore'),
+          store: FakeStore(),
+          scrollTo: const Key('profile.deleteAccount'),
         ),
         (
           name: 'rc_08_delete_account_en',
@@ -127,10 +96,7 @@ void main() {
       final container = await pumpApp(
         tester,
         settings: completedSettings(lang: c.lang, theme: c.theme),
-        overrides: [
-          authRepositoryProvider.overrideWithValue(auth),
-          entitlementServiceProvider.overrideWithValue(c.store),
-        ],
+        overrides: [authRepositoryProvider.overrideWithValue(auth)],
       );
       container.read(routerProvider).go(c.route, extra: 'expert@lab.uz');
       await tester.pumpAndSettle();

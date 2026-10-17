@@ -10,7 +10,7 @@ import '../../../core/widgets/fe_components.dart';
 /// bitta minnatdorchilik jumlasi, qolgani faktlar. Faqat o‘zbek tilida
 /// ko‘rsatiladi (ruscha/inglizcha interfeysda sahifaga havola ham chiqmaydi);
 /// matn hujjat nomlari va ismlardan iborat — ular tarjima qilinmaydi.
-/// Barcha foydalanuvchilar uchun bepul (paywall yo‘q).
+/// Barcha foydalanuvchilar uchun bepul.
 class SourcesAuthorsScreen extends StatelessWidget {
   const SourcesAuthorsScreen({super.key});
 

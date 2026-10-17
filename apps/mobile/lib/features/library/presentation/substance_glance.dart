@@ -14,21 +14,18 @@ import '../../evidence/presentation/localized_content.dart';
 /// Yangi ma’lumot YO‘Q: faqat sahifadagi manbali bo‘limlardan (identifikatsiya
 /// claim’i, «Tahlil» graf bog‘lanishlari, konsentratsiya claim’lari, manbalar)
 /// nomlar va sonlar yig‘iladi. Har qator o‘sha bo‘limga olib boradi — iqtibos,
-/// holat va manba bo‘lim ichida. Tafsilot yopiq bo‘lsa — faqat sonlar
-/// (manbalar har doim ochiq).
+/// holat va manba bo‘lim ichida.
 class SubstanceGlanceCard extends ConsumerWidget {
   const SubstanceGlanceCard({
     super.key,
     required this.entry,
-    required this.unlocked,
     required this.onJump,
   });
 
   final LibraryEntry entry;
-  final bool unlocked;
 
   /// Sahifa ichidagi bo‘limga o‘tish (`analysis`, `identity`,
-  /// `reported_concentration`, `sources`, `locked`).
+  /// `reported_concentration`, `sources`).
   final ValueChanged<String> onJump;
 
   static const _maxNames = 3;
@@ -92,7 +89,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
 
     // (kalit, ikonka, sarlavha, qiymat, bo‘lim)
     final rows = <(String, IconData, String, String, String)>[
-      if (unlocked && formula != null)
+      if (formula != null)
         (
           'formula',
           Icons.science_outlined,
@@ -108,30 +105,28 @@ class SubstanceGlanceCard extends ConsumerWidget {
           'specimens',
           Icons.water_drop_outlined,
           l.rdGlanceSpecimens,
-          unlocked ? names(specimens) : l.rdGlanceRecords(specimens.length),
-          unlocked ? 'analysis' : 'locked',
+          names(specimens),
+          'analysis',
         ),
       if (methods.isNotEmpty)
         (
           'methods',
           Icons.biotech_outlined,
           l.rdGlanceMethods,
-          unlocked ? names(methods) : l.rdGlanceRecords(methods.length),
-          unlocked ? 'analysis' : 'locked',
+          names(methods),
+          'analysis',
         ),
       if (metabolites.isNotEmpty)
         (
           'metabolites',
           Icons.subdirectory_arrow_right,
           l.rdGlanceMetabolites,
-          unlocked
-              ? [
-                  names(metabolites),
-                  for (final o in metaboliteOriginal)
-                    '(${l.trInOriginalLanguage(contentLanguageName(l, o))})',
-                ].join(' ')
-              : l.rdGlanceRecords(metabolites.length),
-          unlocked ? 'analysis' : 'locked',
+          [
+            names(metabolites),
+            for (final o in metaboliteOriginal)
+              '(${l.trInOriginalLanguage(contentLanguageName(l, o))})',
+          ].join(' '),
+          'analysis',
         ),
       if (concentrations > 0)
         (
@@ -139,7 +134,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
           Icons.show_chart,
           l.rdGlanceConcentrations,
           l.rdGlanceRecords(concentrations),
-          unlocked ? 'reported_concentration' : 'locked',
+          'reported_concentration',
         ),
       (
         'sources',
@@ -172,7 +167,7 @@ class SubstanceGlanceCard extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.only(right: FeSpace.xs),
             child: Text(
-              unlocked ? l.rdGlanceNote : l.rdGlanceLockedHint,
+              l.rdGlanceNote,
               style: t.bodySmall?.copyWith(color: c.textSecondary),
             ),
           ),
@@ -183,7 +178,6 @@ class SubstanceGlanceCard extends ConsumerWidget {
               icon: icon,
               label: label,
               value: value,
-              locked: target == 'locked',
               hint: l.rdJumpTo,
               onTap: () => onJump(target),
             ),
@@ -199,7 +193,6 @@ class _GlanceRow extends StatelessWidget {
     required this.icon,
     required this.label,
     required this.value,
-    required this.locked,
     required this.hint,
     required this.onTap,
   });
@@ -207,7 +200,6 @@ class _GlanceRow extends StatelessWidget {
   final IconData icon;
   final String label;
   final String value;
-  final bool locked;
   final String hint;
   final VoidCallback onTap;
 
@@ -248,11 +240,7 @@ class _GlanceRow extends StatelessWidget {
                     ],
                   ),
                 ),
-                Icon(
-                  locked ? Icons.lock_outline : Icons.chevron_right,
-                  size: 18,
-                  color: c.textSecondary,
-                ),
+                Icon(Icons.chevron_right, size: 18, color: c.textSecondary),
                 const SizedBox(width: FeSpace.xxs),
               ],
             ),

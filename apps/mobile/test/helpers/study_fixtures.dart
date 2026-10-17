@@ -45,7 +45,6 @@ KnowledgeEntry testTopic(
   String id, {
   KnowledgeArea area = KnowledgeArea.forensicMedicine,
   List<ClaimView>? claims,
-  EntryAccess access = EntryAccess.free,
   ScientificStatus status = ScientificStatus.needsReview,
 }) => KnowledgeEntry(
   id: id,
@@ -57,7 +56,6 @@ KnowledgeEntry testTopic(
     'uz': 'TEST mavzu $id',
   }),
   status: status,
-  access: access,
   isTestData: true,
   claims:
       claims ??
@@ -71,7 +69,6 @@ LibraryEntry testSubstance(
   String id, {
   String formula = 'TEST-F',
   String? group = 'test_group',
-  EntryAccess access = EntryAccess.free,
   List<SourceView>? sources,
 }) {
   final claim = testClaim('C-$id-IDENTITY', 'identity', {
@@ -83,7 +80,6 @@ LibraryEntry testSubstance(
     name: LocalizedText({'en': 'TEST substance $id'}),
     status: ScientificStatus.needsReview,
     isTestData: true,
-    access: access,
     group: group,
     details: EntryDetails(
       entityKind: 'substance',

@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../../app/providers.dart';
-import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../core/widgets/fe_components.dart';
 import '../../../domain/pro/analysis_plan.dart';
 import '../../evidence/presentation/provenance_widgets.dart';
 import '../../evidence/presentation/source_quote.dart';
@@ -24,55 +21,6 @@ String Function(String id) proNameResolver(WidgetRef ref, String lang) {
       knowledge.byId(id)?.name.resolve(lang) ??
       index.specimen(id)?.names.resolve(lang) ??
       id;
-}
-
-/// Pullik tarif taklifi (mavjud «locked» andozasi: ikonka, sarlavha,
-/// matn, tariflar tugmasi).
-class ProLockedCard extends StatelessWidget {
-  const ProLockedCard({
-    super.key,
-    required this.title,
-    required this.body,
-    required this.buttonKey,
-  });
-
-  final String title;
-  final String body;
-  final Key buttonKey;
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return FeCard(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            children: [
-              Icon(Icons.workspace_premium_outlined, color: c.accent),
-              const SizedBox(width: FeSpace.xs),
-              Expanded(
-                child: Semantics(
-                  header: true,
-                  child: Text(title, style: t.titleSmall),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: FeSpace.xs),
-          Text(body, style: t.bodySmall?.copyWith(color: c.textSecondary)),
-          const SizedBox(height: FeSpace.sm),
-          FilledButton(
-            key: buttonKey,
-            onPressed: () => context.push(Routes.purchase),
-            child: Text(l.purchaseCta),
-          ),
-        ],
-      ),
-    );
-  }
 }
 
 /// Reja iqtibosi: rol yorlig‘i, iqtibos (UI tilidagi tarjima birinchi,

@@ -5,8 +5,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/settings/settings_controller.dart';
 import '../domain/court_prep/court_prep_models.dart';
-import '../domain/ports/billing_ports.dart';
-import 'providers.dart';
 
 /// «Sudda so‘roq: tayyorgarlik» paketi (ilovaga qo‘shilgan, oflayn).
 const courtPrepAsset = 'assets/content/court_prep/court_prep_v1.json';
@@ -28,17 +26,6 @@ final courtPrepProvider = FutureProvider<CourtPrepBundle>((ref) async {
   }
 });
 
-/// Mutaxassis Pro: kengaytirilgan simulyator, rol mashqlari, AI tahlili
-/// (ulanmagan — «tez orada»), shaxsiy statistika va tarix. Savol-javob
-/// kartalari (A–I, manbalar bilan), mashq rejimi, halollik tamoyillari va
-/// asosiy ssenariylar — hamma uchun bepul.
-final courtPrepUnlockedProvider = Provider<bool>(
-  (ref) => AccessPolicy.unlocks(
-    ProductFeature.courtTestimonyPrep,
-    ref.watch(accessProvider),
-  ),
-);
-
 /// Bootstrap’da SharedPreferences bilan override qilinadi (faqat lokal).
 final courtHistoryStoreProvider = Provider<CourtHistoryStore>(
   (ref) => InMemoryCourtHistoryStore(),
@@ -49,7 +36,7 @@ final courtHistoryProvider =
       CourtHistoryController.new,
     );
 
-/// Shaxsiy tayyorgarlik tarixi (Pro) — faqat qurilmada saqlanadi.
+/// Shaxsiy tayyorgarlik tarixi — faqat qurilmada saqlanadi.
 class CourtHistoryController extends Notifier<List<CourtAttempt>> {
   @override
   List<CourtAttempt> build() => ref.read(courtHistoryStoreProvider).load();

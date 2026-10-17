@@ -329,7 +329,6 @@ void main() {
       ('320×640: Asosiy', Routes.home),
       ('320×640: Etanol yozuvi', Routes.libraryEntry('ethanol')),
       ('320×640: qidiruv «alkogol»', Routes.searchWith('alkogol')),
-      ('320×640: tariflar', Routes.purchase),
       ('320×640: Profil', Routes.profile),
     ]) {
       await qa.step(title, (s) async {

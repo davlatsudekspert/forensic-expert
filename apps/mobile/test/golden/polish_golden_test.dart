@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -74,14 +72,6 @@ void main() {
           store: false,
         ),
         (
-          name: 'pol_07_paywall_uz',
-          lang: 'uz',
-          theme: ThemeMode.light,
-          route: Routes.purchase,
-          scrollTo: null,
-          store: false,
-        ),
-        (
           name: 'pol_08_profile_uz',
           lang: 'uz',
           theme: ThemeMode.light,
@@ -129,14 +119,6 @@ void main() {
           scrollTo: null,
           store: false,
         ),
-        (
-          name: 'pol_14_paywall_ru',
-          lang: 'ru',
-          theme: ThemeMode.light,
-          route: Routes.purchase,
-          scrollTo: null,
-          store: false,
-        ),
       ];
 
   for (final c in cases) {
@@ -146,12 +128,7 @@ void main() {
         settings: completedSettings(lang: c.lang, theme: c.theme),
         initialLocation: c.route,
         testFixtures: false,
-        overrides: [
-          ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(
-            FakeStore(withOffers: c.store),
-          ),
-        ],
+        overrides: [...pilot.overrides],
       );
       await settleImages(tester);
       final target = c.scrollTo;

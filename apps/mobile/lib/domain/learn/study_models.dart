@@ -473,14 +473,10 @@ abstract final class StudyCatalogBuilder {
     return null;
   }
 
-  /// [substancesUnlocked] / [referencesUnlocked] — pullik yozuvlar
-  /// (`EntryAccess.lifetime`) faqat ruxsat bo‘lsa kiritiladi.
   static StudyCatalog build({
     KnowledgeRepository knowledge = const EmptyKnowledgeRepository(),
     LibraryRepository? library,
     GuidelineBundle guidelines = GuidelineBundle.empty,
-    bool substancesUnlocked = false,
-    bool referencesUnlocked = false,
   }) {
     final byDeck = <String, (StudyDeckKind, String, List<StudyItem>)>{};
     void add(StudyDeckKind kind, String key, StudyItem item) =>
@@ -489,7 +485,6 @@ abstract final class StudyCatalogBuilder {
     // 1. Bilim yozuvlari: nom ↔ manbadagi asl jumla.
     for (final kind in KnowledgeKind.values) {
       for (final e in knowledge.byKind(kind)) {
-        if (e.access != EntryAccess.free && !referencesUnlocked) continue;
         if (!_usableStatus(e.status)) continue;
         if (!_hasText(e.name.values)) continue;
         final claim = _topicClaim(e);
@@ -525,7 +520,6 @@ abstract final class StudyCatalogBuilder {
     for (final e
         in library?.entries(LibrarySection.substances) ??
             const <LibraryEntry>[]) {
-      if (e.access != EntryAccess.free && !substancesUnlocked) continue;
       if (!_hasText(e.name.values)) continue;
       final claim = e.details?.claim('identity');
       if (claim == null || !_usableClaim(claim)) continue;

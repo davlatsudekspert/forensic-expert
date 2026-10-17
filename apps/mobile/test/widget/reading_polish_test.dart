@@ -4,10 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/guidelines.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -22,7 +20,6 @@ void main() {
   Future<ProviderContainer> open(
     WidgetTester tester,
     String location, {
-    bool owned = true,
     Size size = const Size(390, 844),
     double textScale = 1,
   }) => pumpApp(
@@ -34,7 +31,6 @@ void main() {
     textScale: textScale,
     overrides: [
       ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
       // Haqiqiy yo‘riqnomalar fayli (ilova bilan birga keladigan).
       guidelineBundleLoaderProvider.overrideWithValue(
         () async =>
@@ -96,27 +92,24 @@ void main() {
     expect(pubchem.hitTestable(), findsOne);
   });
 
-  testWidgets('morfin (Pro, bepul rejim): faqat sonlar va qulf, manba ochiq', (
+  testWidgets('morfin: «Qisqacha» to‘liq — qulf belgisi va «Pro» yo‘q', (
     tester,
   ) async {
-    await open(tester, Routes.libraryEntry('morphine'), owned: false);
+    await open(tester, Routes.libraryEntry('morphine'));
     expect(find.byKey(const Key('entry.glance.morphine')), findsOneWidget);
-    // Yopiq tafsilot nomlari ko‘rinmaydi, faqat son.
-    expect(inGlance('morphine', find.textContaining('LC-MS/MS')), findsNothing);
-    expect(inGlance('morphine', find.text('Kimyoviy formula')), findsNothing);
-    expect(inGlance('morphine', find.byIcon(Icons.lock_outline)), findsWidgets);
+    expect(inGlance('morphine', find.byIcon(Icons.lock_outline)), findsNothing);
     expect(
-      inGlance('morphine', find.textContaining('Pro’da ochiladi')),
-      findsOne,
+      inGlance('morphine', find.textContaining(RegExp(r'\bPro\b'))),
+      findsNothing,
     );
     expect(find.byKey(const Key('entry.glance.row.sources')), findsOne);
-    // Qulf qatori qulf kartasiga olib boradi.
+    // Usullar qatori «Tahlil» bo‘limiga olib boradi (qulf kartasiga emas).
     await tester.tap(find.byKey(const Key('entry.glance.row.methods')));
     await tester.pumpAndSettle();
-    expect(find.byKey(const Key('locked.unlock')).hitTestable(), findsOne);
+    expect(find.byKey(const Key('locked.unlock')), findsNothing);
   });
 
-  testWidgets('morfin (Pro): konsentratsiya qatori → «chegara emas» bloki', (
+  testWidgets('morfin: konsentratsiya qatori → «chegara emas» bloki', (
     tester,
   ) async {
     await open(tester, Routes.libraryEntry('morphine'));
@@ -140,33 +133,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('qidiruv (bepul): Pro yozuvi oldindan belgilanadi', (
-    tester,
-  ) async {
-    await open(tester, Routes.searchWith('morfin'), owned: false);
-    await tester.pumpAndSettle();
-    final hit = find.byKey(const Key('search.hit.morphine'));
-    expect(hit, findsOne);
-    expect(
-      find.descendant(
-        of: hit,
-        matching: find.byKey(const Key('search.hit.locked')),
-      ),
-      findsOne,
-    );
-    // Bepul yozuv (etanol) — qulfsiz.
-    await tester.enterText(find.byKey(const Key('search.field')), 'etanol');
-    await tester.pumpAndSettle();
-    expect(
-      find.descendant(
-        of: find.byKey(const Key('search.hit.ethanol')),
-        matching: find.byKey(const Key('search.hit.locked')),
-      ),
-      findsNothing,
-    );
-  });
-
-  testWidgets('qidiruv (Pro): qulf belgisi yo‘q', (tester) async {
+  testWidgets('qidiruv: qulf belgisi yo‘q', (tester) async {
     await open(tester, Routes.searchWith('morfin'));
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('search.hit.morphine')), findsOne);

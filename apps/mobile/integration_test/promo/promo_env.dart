@@ -12,9 +12,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/bootstrap.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
-import 'package:forensic_expert/domain/ports/billing_ports.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class NoNet extends HttpOverrides {
@@ -60,19 +58,7 @@ class Promo {
       'fe.settings.mode': mode,
       'fe.settings.disclaimer_version': 1,
     });
-    await bootstrap(
-      testOverrides: <Override>[
-        if (pro)
-          accessProvider.overrideWithValue(
-            const Entitlements(
-              tier: PlanTier.professionalPro,
-              status: EntitlementStatus.active,
-              source: EntitlementSource.promo,
-              verification: EntitlementVerification.serverVerified,
-            ),
-          ),
-      ],
-    );
+    await bootstrap(testOverrides: <Override>[]);
     await settle(maxMs: 8000);
     // Sinxronizatsiya belgisi: 800 ms davomida to‘liq ekran magenta
     // (post-produksiyada aniqlanadi va kesib tashlanadi).

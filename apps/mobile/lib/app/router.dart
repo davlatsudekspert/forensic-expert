@@ -52,7 +52,6 @@ import '../features/professional/presentation/profile_edit_screen.dart';
 import '../features/professional/presentation/review_section.dart';
 import '../features/professional/presentation/verification_screens.dart';
 import '../features/profile/presentation/legal_screens.dart';
-import '../features/profile/presentation/paywall_screen.dart';
 import '../features/profile/presentation/profile_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
 import '../features/profile/presentation/sources_authors_screen.dart';
@@ -637,11 +636,6 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'disclaimer',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const DisclaimerScreen(readOnly: true),
-                  ),
-                  GoRoute(
-                    path: 'purchase',
-                    parentNavigatorKey: rootKey,
-                    builder: (c, s) => const PaywallScreen(),
                   ),
                   GoRoute(
                     path: 'ai-disclaimer',

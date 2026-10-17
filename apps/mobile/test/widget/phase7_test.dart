@@ -3,14 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/account.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/search_service.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
 import 'package:forensic_expert/domain/admin/admin_models.dart';
 import 'package:forensic_expert/domain/evidence/evidence_models.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -29,10 +27,7 @@ void main() {
     settings: completedSettings(lang: lang),
     initialLocation: location,
     testFixtures: false,
-    overrides: [
-      ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-    ],
+    overrides: [...pilot.overrides],
   );
 
   Future<void> see(WidgetTester tester, Finder f) async {
@@ -337,7 +332,6 @@ void main() {
       testFixtures: false,
       overrides: [
         ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
         serverAccessProvider.overrideWith(
           (ref) async => const ServerAccess(isAdmin: true),
         ),

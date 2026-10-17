@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -14,8 +13,6 @@ import '../core/settings/settings_controller.dart';
 import '../core/settings/settings_repository.dart';
 import '../data/auth/mock_auth_repository.dart';
 import '../data/auth/secure_session_store.dart';
-import '../data/billing/in_app_purchase_client.dart';
-import '../data/billing/store_entitlement_service.dart';
 import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/profile_store.dart';
@@ -24,7 +21,6 @@ import '../data/local/study_progress_store.dart';
 import '../data/local/user_data_repository.dart';
 import '../data/offline/offline_backend.dart';
 import '../data/remote/http_auth_repository.dart';
-import '../data/remote/http_purchase_verifier.dart';
 import '../data/remote/supabase_account.dart';
 import '../data/remote/supabase_ai_provider.dart';
 import '../data/remote/supabase_auth_repository.dart';
@@ -35,10 +31,8 @@ import '../data/remote/supabase_referral.dart';
 import '../data/remote/supabase_rest.dart';
 import '../data/remote/supabase_support.dart';
 import '../domain/ports/backend_ports.dart';
-import '../domain/ports/billing_ports.dart';
 import 'account.dart';
 import 'app.dart';
-import 'app_info.dart';
 import 'casebook.dart';
 import 'court_prep.dart';
 import 'professional.dart';
@@ -108,7 +102,7 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         studyProgressStoreProvider.overrideWithValue(
           SharedPrefsStudyProgressStore(prefs),
         ),
-        // «Sud so‘rog‘i simulyatori» tarixi (Pro) — faqat lokal.
+        // «Sud so‘rog‘i simulyatori» tarixi — faqat lokal.
         courtHistoryStoreProvider.overrideWithValue(
           SharedPrefsCourtHistoryStore(prefs),
         ),
@@ -150,20 +144,6 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
             SupabaseQaService(config: supabase, auth: auth),
           ),
         ],
-        // Obunalar: faqat mobil store’larda. Boshqa platformada — store yo‘q.
-        if (!kIsWeb && (Platform.isAndroid || Platform.isIOS))
-          entitlementServiceProvider.overrideWithValue(
-            StoreEntitlementService(
-              client: InAppPurchaseStoreClient(),
-              verifier: HttpPurchaseVerifier.fromEnvironment(
-                bundleId: AppInfo.applicationId,
-                accessToken: auth.accessToken,
-              ),
-              platformSource: Platform.isIOS
-                  ? EntitlementSource.appStore
-                  : EntitlementSource.playStore,
-            ),
-          ),
         ...testOverrides,
       ],
       child: const ForensicExpertApp(),

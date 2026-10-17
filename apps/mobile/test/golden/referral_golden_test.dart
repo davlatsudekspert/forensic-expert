@@ -7,7 +7,6 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/domain/referral/referral_models.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 import '../helpers/referral_fakes.dart';
@@ -139,9 +138,6 @@ void main() {
         testFixtures: false,
         overrides: [
           ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(
-            FakeStore(withOffers: false),
-          ),
           if (c.auth)
             ...await signedIn()
           else

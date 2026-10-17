@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/domain/pro/pro_search.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -19,7 +17,6 @@ void main() {
   Future<ProviderContainer> open(
     WidgetTester tester,
     String location, {
-    bool pro = true,
     String lang = 'uz',
     Size size = const Size(390, 844),
     ThemeMode theme = ThemeMode.light,
@@ -32,10 +29,7 @@ void main() {
         ? Brightness.dark
         : Brightness.light,
     testFixtures: false,
-    overrides: [
-      ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: pro)),
-    ],
+    overrides: [...pilot.overrides],
   );
 
   Future<void> see(WidgetTester tester, Finder f) async {
@@ -59,32 +53,34 @@ void main() {
   Finder block(String k) => find.byKey(Key('plan.block.$k'));
 
   group('Tahlil rejasi', () {
-    testWidgets('bepul: qisqa ko‘rinish va tarif taklifi, to‘liq reja yo‘q', (
+    testWidgets('kokain: to‘liq reja hamma uchun ochiq, qulf/taklif yo‘q', (
       tester,
     ) async {
-      await open(tester, Routes.homePlan('cocaine'), pro: false);
-      expect(find.byKey(const Key('plan.preview')), findsOneWidget);
-      expect(find.byKey(const Key('plan.summary')), findsOneWidget);
-      expect(find.byKey(const Key('plan.unlock')), findsOneWidget);
-      // Namunalar nomi ko‘rinadi, tafsilot va nusxalash yo‘q.
-      expect(find.byKey(const Key('plan.preview.specimens')), findsOneWidget);
-      expect(block('presumptive'), findsNothing);
-      expect(block('reminder'), findsNothing);
-      expect(find.byKey(const Key('plan.copy')), findsNothing);
+      await open(tester, Routes.homePlan('cocaine'));
+      expect(find.byKey(const Key('plan.preview')), findsNothing);
+      expect(find.byKey(const Key('plan.unlock')), findsNothing);
+      expect(block('presumptive'), findsOneWidget);
+      expect(block('reminder'), findsOneWidget);
+      expect(find.byKey(const Key('plan.copy')), findsOneWidget);
     });
 
-    testWidgets('kirish kartasi modda sahifasida (bepulda ham) va ochadi', (
+    testWidgets('kirish kartasi modda sahifasida (qulf belgisisiz) va ochadi', (
       tester,
     ) async {
-      await open(tester, Routes.libraryEntry('ethanol'), pro: false);
+      await open(tester, Routes.libraryEntry('ethanol'));
       final entry = find.byKey(const Key('analysis.plan.entry.ethanol'));
       await see(tester, entry);
+      expect(
+        find.descendant(of: entry, matching: find.byIcon(Icons.lock_outline)),
+        findsNothing,
+      );
       await tester.tap(entry);
       await tester.pumpAndSettle();
-      expect(find.byKey(const Key('plan.preview')), findsOneWidget);
+      expect(find.byKey(const Key('plan.preview')), findsNothing);
+      expect(find.byKey(const Key('plan.unlock')), findsNothing);
     });
 
-    testWidgets('Pro: kokain — 8 blok, har iqtibosda manba + joy + holat', (
+    testWidgets('kokain — 8 blok, har iqtibosda manba + joy + holat', (
       tester,
     ) async {
       await open(tester, Routes.homePlan('cocaine'));
@@ -130,7 +126,7 @@ void main() {
       expect(tester.takeException(), isNull);
     });
 
-    testWidgets('Pro: morfin — metod namunaga bog‘lanmagan, skrining yo‘q', (
+    testWidgets('morfin — metod namunaga bog‘lanmagan, skrining yo‘q', (
       tester,
     ) async {
       await open(tester, Routes.homePlan('morphine'));
@@ -155,7 +151,7 @@ void main() {
       );
     });
 
-    testWidgets('Pro: ma’lumoti yo‘q modda (GHB) — halol bo‘sh holat', (
+    testWidgets('ma’lumoti yo‘q modda (GHB) — halol bo‘sh holat', (
       tester,
     ) async {
       await open(tester, Routes.homePlan('ghb'));
@@ -202,7 +198,7 @@ void main() {
     for (final lang in ['uz', 'ru', 'en']) {
       for (final dark in [false, true]) {
         testWidgets(
-          'Pro, 320 dp, ${dark ? 'qorong‘i' : 'yorug‘'}, $lang: toshmaydi',
+          '320 dp, ${dark ? 'qorong‘i' : 'yorug‘'}, $lang: toshmaydi',
           (tester) async {
             await open(
               tester,
@@ -229,37 +225,40 @@ void main() {
       }
     }
 
-    testWidgets('bepul ko‘rinish 320 dp, ru: toshmaydi', (tester) async {
+    testWidgets('kokain 320 dp, ru: toshmaydi, qulf yo‘q', (tester) async {
       await open(
         tester,
         Routes.homePlan('cocaine'),
-        pro: false,
         lang: 'ru',
         size: const Size(320, 640),
       );
-      expect(find.byKey(const Key('plan.unlock')), findsOneWidget);
-      expect(find.textContaining('Полный план анализа'), findsOneWidget);
+      expect(find.byKey(const Key('plan.unlock')), findsNothing);
+      expect(block('presumptive'), findsOneWidget);
       expect(tester.takeException(), isNull);
     });
   });
 
   group('Kengaytirilgan qidiruv', () {
-    testWidgets('oddiy qidiruvda kirish bor; bepul: taklif, filtrlar yo‘q', (
+    testWidgets('oddiy qidiruvda kirish bor (qulfsiz); filtrlar ochiq', (
       tester,
     ) async {
-      await open(tester, Routes.searchWith('morfin'), pro: false);
+      await open(tester, Routes.searchWith('morfin'));
       final entry = find.byKey(const Key('search.pro.entry'));
       expect(entry, findsOneWidget);
+      expect(
+        find.descendant(of: entry, matching: find.byIcon(Icons.lock_outline)),
+        findsNothing,
+      );
       // Oddiy qidiruv o‘zgarmagan.
       expect(find.byKey(const Key('search.hit.morphine')), findsWidgets);
       await tester.tap(entry);
       await tester.pumpAndSettle();
-      expect(find.byKey(const Key('pro.preview')), findsOneWidget);
-      expect(find.byKey(const Key('pro.unlock')), findsOneWidget);
-      expect(find.byKey(const Key('pro.field')), findsNothing);
+      expect(find.byKey(const Key('pro.preview')), findsNothing);
+      expect(find.byKey(const Key('pro.unlock')), findsNothing);
+      expect(find.byKey(const Key('pro.field')), findsOneWidget);
     });
 
-    testWidgets('Pro: matn + namuna filtri + bo‘sh natija + tozalash', (
+    testWidgets('matn + namuna filtri + bo‘sh natija + tozalash', (
       tester,
     ) async {
       await open(tester, Routes.proSearch);
@@ -290,7 +289,7 @@ void main() {
       expect(find.byKey(const Key('pro.hit.ethanol')), findsOneWidget);
     });
 
-    testWidgets('Pro: teskari qidiruv — namuna → analitlar, metod → moddalar', (
+    testWidgets('teskari qidiruv — namuna → analitlar, metod → moddalar', (
       tester,
     ) async {
       await open(tester, Routes.proSearch);
@@ -319,7 +318,7 @@ void main() {
       expect(tester.takeException(), isNull);
     });
 
-    testWidgets('Pro, 320 dp, qorong‘i, ru: toshmaydi', (tester) async {
+    testWidgets('320 dp, qorong‘i, ru: toshmaydi', (tester) async {
       await open(
         tester,
         Routes.proSearch,

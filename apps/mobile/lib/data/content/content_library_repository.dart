@@ -100,9 +100,6 @@ class ContentLibraryRepository implements LibraryRepository {
           status: aggregateStatus([for (final c in claims) c.status]),
           isTestData: r.read<int>('is_test_data') == 1,
           lastReviewed: _date(r.data['last_reviewed_at']),
-          access: r.read<String>('tier_access') == 'free'
-              ? EntryAccess.free
-              : EntryAccess.lifetime,
           group: r.readNullable<String>('substance_group'),
           details: EntryDetails(
             entityKind: r.read<String>('entity_kind'),

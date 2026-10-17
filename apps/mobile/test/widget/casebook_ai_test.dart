@@ -8,7 +8,6 @@ import 'package:forensic_expert/domain/casebook/casebook_models.dart';
 import 'package:forensic_expert/domain/ports/ai_ports.dart';
 import 'package:forensic_expert/domain/ports/billing_ports.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -50,7 +49,6 @@ void main() {
       testFixtures: false,
       overrides: [
         ...pilot.overrides,
-        entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
         aiAssistantProvider.overrideWithValue(const _Available()),
         aiEntitlementServiceProvider.overrideWithValue(const _Entitled()),
         aiProviderProvider.overrideWithValue(MockAiProvider()),

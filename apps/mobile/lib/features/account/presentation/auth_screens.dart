@@ -934,12 +934,6 @@ class _DeleteAccountScreenState extends ConsumerState<DeleteAccountScreen> {
           tone: FeBannerTone.critical,
         ),
         const SizedBox(height: FeSpace.sm),
-        FeBanner(
-          key: const Key('auth.delete.storeNote'),
-          icon: Icons.storefront_outlined,
-          text: l.deleteAccountStoreNote,
-        ),
-        const SizedBox(height: FeSpace.sm),
         Text(
           l.deleteAccountLocalNote,
           key: const Key('auth.delete.localNote'),

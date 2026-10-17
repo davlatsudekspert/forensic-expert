@@ -3,13 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/features/home/presentation/home_screen.dart';
 import 'package:forensic_expert/features/library/presentation/library_screen.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -23,10 +21,7 @@ void main() {
     tester,
     settings: completedSettings(),
     testFixtures: false,
-    overrides: [
-      ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: true)),
-    ],
+    overrides: [...pilot.overrides],
   );
 
   bool hasBack(WidgetTester tester) =>
@@ -63,7 +58,6 @@ void main() {
     Routes.reviewDashboard,
     Routes.profileLanguage,
     Routes.profileMode,
-    Routes.purchase,
     Routes.privacy,
     Routes.about,
   ];

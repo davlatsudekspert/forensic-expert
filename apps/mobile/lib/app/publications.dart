@@ -15,8 +15,7 @@ final publicationServiceProvider = Provider<PublicationService>(
 final publicationsFlagProvider = Provider<bool>((ref) => FeFlags.publications);
 
 /// Bo‘lim (hub plitkasi, ro‘yxat, yuborish) ko‘rinadimi: bayroq yoqilgan
-/// yoki foydalanuvchi admin (egasi sinab ko‘rishi uchun). O‘qish bepul —
-/// obuna talab qilinmaydi.
+/// yoki foydalanuvchi admin (egasi sinab ko‘rishi uchun). O‘qish bepul.
 final publicationsVisibleProvider = Provider<bool>((ref) {
   if (ref.watch(publicationsFlagProvider)) return true;
   return ref.watch(serverAccessProvider).value?.isAdmin ?? false;

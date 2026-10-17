@@ -7,7 +7,6 @@ import '../../../core/design/tokens.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
-import '../../library/presentation/content_entry_sections.dart';
 
 /// Ro‘yxatdagi bilim yozuvi: nom, status, kirish darajasi, TEST belgisi.
 class KnowledgeTile extends StatelessWidget {
@@ -46,7 +45,6 @@ class KnowledgeTile extends StatelessWidget {
                     runSpacing: FeSpace.xxs,
                     children: [
                       ReviewStatusBadge(status: entry.status, compact: true),
-                      AccessBadge(access: entry.access),
                       if (entry.isTestData) const TestDataBadge(),
                     ],
                   ),

@@ -2,7 +2,6 @@ import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/search_service.dart';
@@ -18,7 +17,6 @@ import 'package:forensic_expert/domain/ports/billing_ports.dart';
 import 'package:forensic_expert/domain/ports/product_tiers.dart';
 import 'package:forensic_expert/domain/privacy/telemetry_policy.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -40,10 +38,7 @@ void main() {
         .copyWith(jurisdictionId: jurisdiction),
     initialLocation: location,
     testFixtures: false,
-    overrides: [
-      ...pilot.overrides,
-      entitlementServiceProvider.overrideWithValue(FakeStore(owned: owned)),
-    ],
+    overrides: [...pilot.overrides],
   );
 
   Future<void> see(WidgetTester tester, Finder f) async {

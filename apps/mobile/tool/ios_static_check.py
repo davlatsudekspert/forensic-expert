@@ -2,7 +2,7 @@
 """iOS statik tekshiruvi (macOS/Xcode’siz). Bu REAL iOS BUILD EMAS.
 
 Tekshiradi: Info.plist, bundle ID, deployment target, ikonlar (alpha yo‘q),
-launch screen, lokalizatsiyalar, StoreKit plagini, privacy manifest va
+launch screen, lokalizatsiyalar, to‘lov plagini yo‘qligi, privacy manifest va
 export compliance kaliti. Natija: PASS / FAIL / OPEN (inson qarori kerak).
 Ishga tushirish: apps/mobile ichida `python3 tool/ios_static_check.py`.
 """
@@ -52,7 +52,7 @@ for img in contents["images"]:
 check("AppIcon: barcha fayl mavjud, o‘lcham to‘g‘ri", not missing, "; ".join(missing))
 check("AppIcon: alpha kanal yo‘q (App Store talabi)", not alpha, "; ".join(alpha))
 check("1024×1024 marketing ikon", any(i.get("size") == "1024x1024" for i in contents["images"]))
-check("StoreKit plagini (in_app_purchase_storekit)", "in_app_purchase_storekit" in pub)
+check("To‘lov qatlami yo‘q (in_app_purchase plagini yo‘q)", "in_app_purchase" not in pub)
 check("Qurilma oilasi", True, "TARGETED_DEVICE_FAMILY = " + ",".join(set(re.findall(r'TARGETED_DEVICE_FAMILY = "([\d,]+)"', pbx)))
       + " (iPad layout real qurilmada tekshirilmagan)")
 # Privacy manifest: texnik talablar (fayl, loyiha resurslari, tracking yo‘q,

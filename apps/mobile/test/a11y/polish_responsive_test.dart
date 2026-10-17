@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -23,7 +21,6 @@ void main() {
     Routes.tools,
     Routes.tool('tool.lab.dilution'),
     Routes.ai,
-    Routes.purchase,
     Routes.profile,
   ];
 
@@ -41,12 +38,7 @@ void main() {
                 settings: completedSettings(lang: lang, theme: theme),
                 initialLocation: route,
                 testFixtures: false,
-                overrides: [
-                  ...pilot.overrides,
-                  entitlementServiceProvider.overrideWithValue(
-                    FakeStore(withOffers: false),
-                  ),
-                ],
+                overrides: [...pilot.overrides],
               );
               expect(tester.takeException(), isNull);
               final s = find.byType(Scrollable).hitTestable();

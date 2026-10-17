@@ -323,7 +323,7 @@ class _AdminThreadScreenState extends ConsumerState<AdminThreadScreen> {
   }
 }
 
-/// Admin: foydalanuvchilar — qidiruv, rol/tarif saralash, sahifalash.
+/// Admin: foydalanuvchilar — qidiruv, rol saralash, sahifalash.
 class AdminUsersScreen extends ConsumerStatefulWidget {
   const AdminUsersScreen({super.key});
 
@@ -407,29 +407,6 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
                               () => setState(
                                 () =>
                                     _f = _f.copyWith(role: () => v, offset: 0),
-                              ),
-                            ),
-                        ],
-                      ),
-                    ),
-                    SingleChildScrollView(
-                      keyboardDismissBehavior:
-                          ScrollViewKeyboardDismissBehavior.onDrag,
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: [
-                          for (final (v, label) in [
-                            (null, l.admTierAny),
-                            ('free', l.admTierFree),
-                            ('pro', l.admTierPro),
-                          ])
-                            chip(
-                              'adminUsers.tier.${v ?? 'any'}',
-                              label,
-                              _f.tier == v,
-                              () => setState(
-                                () =>
-                                    _f = _f.copyWith(tier: () => v, offset: 0),
                               ),
                             ),
                         ],
@@ -583,11 +560,6 @@ class _UserCard extends StatelessWidget {
                   label: statusLabel,
                   color: statusColor,
                 ),
-                StatusChip(
-                  icon: Icons.workspace_premium_outlined,
-                  label: l.admTierLabel(u.tier),
-                  color: u.tier == null ? c.textSecondary : c.accent,
-                ),
                 // Admin’dan boshqa rollar (masalan, maqolalar moderatori —
                 // admin huquqi YO‘Q).
                 for (final r in u.roles)
@@ -688,8 +660,6 @@ class AdminAuditScreen extends ConsumerWidget {
                                         e.detail['to'] != null)
                                       '${l.admAuditValue('${e.detail['from']}')} → '
                                           '${l.admAuditValue('${e.detail['to']}')}',
-                                    if (e.detail['tier'] != null)
-                                      l.admAuditValue('${e.detail['tier']}'),
                                     if (e.detail['role'] != null)
                                       l.admAuditValue('${e.detail['role']}'),
                                   ].where((x) => x.isNotEmpty).join(FeGlyphs.middleDot),

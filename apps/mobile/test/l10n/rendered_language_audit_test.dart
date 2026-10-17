@@ -3,10 +3,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -97,7 +95,6 @@ void main() {
     Routes.learn,
     Routes.ai,
     Routes.profile,
-    Routes.purchase,
     Routes.tool('tool.lab.lod_loq'),
   ];
 
@@ -109,12 +106,7 @@ void main() {
           settings: completedSettings(lang: lang),
           initialLocation: route,
           testFixtures: false,
-          overrides: [
-            ...pilot.overrides,
-            entitlementServiceProvider.overrideWithValue(
-              FakeStore(owned: true),
-            ),
-          ],
+          overrides: [...pilot.overrides],
         );
         final leaked = <String>{
           for (final w in tester.widgetList<Text>(find.byType(Text)))

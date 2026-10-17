@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
 
@@ -58,12 +56,7 @@ void main() {
         textScale: scale,
         initialLocation: Routes.home,
         testFixtures: false,
-        overrides: [
-          ...pilot.overrides,
-          entitlementServiceProvider.overrideWithValue(
-            FakeStore(withOffers: false),
-          ),
-        ],
+        overrides: [...pilot.overrides],
       );
       await settleImages(tester);
       await tester.scrollUntilVisible(

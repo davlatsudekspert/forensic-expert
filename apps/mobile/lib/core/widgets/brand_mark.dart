@@ -9,7 +9,7 @@ import '../l10n/generated/app_localizations.dart';
 /// * [full] — qalqon, Asklepiy tayog‘i va ilon, DNK spirali, tarozi
 ///   (≥ 57 dp: splash, kirish, About, til ekrani);
 /// * [small] — qalqon + tayoq/ilon, DNK va tarozisiz (≤ 56 dp: Home
-///   sarlavhasi, AppBar, paywall) — kichik o‘lchamda «loyqa» bo‘lmaydi.
+///   sarlavhasi, AppBar) — kichik o‘lchamda «loyqa» bo‘lmaydi.
 enum BrandTier { full, small }
 
 /// Brend emblemasi — egasi bergan premium logotipdan olingan qalqon

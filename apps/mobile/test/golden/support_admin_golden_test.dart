@@ -8,7 +8,6 @@ import 'package:forensic_expert/data/support/in_memory_support_service.dart';
 import 'package:forensic_expert/domain/admin/admin_models.dart';
 import 'package:forensic_expert/domain/support/support_models.dart';
 
-import '../helpers/fake_store.dart';
 import '../helpers/pump_app.dart';
 import '../helpers/referral_fakes.dart';
 import '../helpers/support_fakes.dart';
@@ -90,9 +89,6 @@ void main() {
         initialLocation: c.route,
         overrides: [
           authRepositoryProvider.overrideWithValue(await signedInMockAuth()),
-          entitlementServiceProvider.overrideWithValue(
-            FakeStore(withOffers: false),
-          ),
           accountServiceProvider.overrideWithValue(
             FakeAccountService(access: ServerAccess(isAdmin: c.admin)),
           ),

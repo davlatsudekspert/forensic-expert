@@ -14,8 +14,6 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
-import '../../../domain/library/library_models.dart';
-import '../../../domain/ports/billing_ports.dart';
 import '../../../domain/professional/review_models.dart';
 import '../../../domain/referral/share_text.dart';
 import '../../common/favorite_button.dart';
@@ -32,10 +30,7 @@ import '../knowledge_strings.dart';
 
 /// Bilim yozuvi sahifasi.
 ///
-/// Paywall qoidasi: nom, status, ogohlantirishlar, **cheklovlar va xavfsizlik**
-/// (cheklov, cross-reactivity, xavflar, «skrining ≠ tasdiqlash»), provenance
-/// va manbalar hech qachon yopilmaydi. Lifetime’siz faqat tuzilgan
-/// tafsilotlar va boshqa claim’lar yopiladi.
+/// Hamma bo‘lim hamma foydalanuvchiga bepul va ochiq.
 class KnowledgeDetailScreen extends ConsumerWidget {
   const KnowledgeDetailScreen({super.key, required this.entryId});
 
@@ -54,12 +49,6 @@ class KnowledgeDetailScreen extends ConsumerWidget {
         body: FeEmptyState(icon: Icons.inbox_outlined, body: l.knowledgeEmpty),
       );
     }
-    final unlocked =
-        e.access == EntryAccess.free ||
-        AccessPolicy.unlocks(
-          ProductFeature.verifiedReferences,
-          ref.watch(accessProvider),
-        );
     // Bir xil manba jumlasi sahifada bir marta: claim (status va dalil
     // darajasi bilan) tuzilgan izohdan ustun; retsept qadami esa claim’dan.
     final recipeSteps = {
@@ -186,10 +175,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                         child: ClaimCard(claim: x),
                       ),
                   ],
-                  if (!unlocked) ...[
-                    const SizedBox(height: FeSpace.md),
-                    const LockedContentCard(key: Key('knowledge.locked')),
-                  ] else ...[
+                  ...[
                     if (e.recipe case final r?)
                       _RecipeSection(recipe: r, entry: e),
                     if (e.screening case final s?)
@@ -207,7 +193,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                   ],
                   ScientificImageGallery(entityId: e.id),
                   RelatedSection(entityId: e.id),
-                  if (unlocked) TemplateCoverageCard(entry: e),
+                  TemplateCoverageCard(entry: e),
                   FeSectionHeader(l.knowledgeSources),
                   if (e.allSources.isEmpty)
                     Text(
@@ -261,7 +247,6 @@ class _Header extends StatelessWidget {
             runSpacing: FeSpace.xxs,
             children: [
               ReviewStatusBadge(status: entry.status),
-              AccessBadge(access: entry.access),
               StatusChip(
                 icon: Icons.category_outlined,
                 label: entry.method != null

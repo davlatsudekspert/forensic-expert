@@ -27,7 +27,6 @@ class LibraryEntry {
     required this.isTestData,
     this.synonyms = const [],
     this.lastReviewed,
-    this.access = EntryAccess.free,
     this.details,
     this.group,
   });
@@ -42,18 +41,12 @@ class LibraryEntry {
   final bool isTestData;
   final DateTime? lastReviewed;
 
-  /// Bepul demo yoki Lifetime ([EntryAccess]).
-  final EntryAccess access;
-
   /// Kontent paketidan kelgan to‘liq ma’lumot. TEST fixture’larda `null`.
   final EntryDetails? details;
 
   /// Tahririy guruh (masalan `opioids`) — navigatsiya uchun.
   final String? group;
 }
-
-/// Kutubxona yozuviga kirish darajasi (kontent paketidagi `tier_access`).
-enum EntryAccess { free, lifetime }
 
 /// Manba (provenance) — UI uchun.
 /// Egasi bergan va tasdiqlagan manbalar: ustoz kitoblari. Ekranda «tasdiqlangan manba» deb ko‘rsatiladi.
