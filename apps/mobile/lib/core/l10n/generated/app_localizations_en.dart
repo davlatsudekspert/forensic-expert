@@ -9186,4 +9186,416 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Evidence from the literature (in full)';
+
+  @override
+  String contactLine(String email) {
+    return 'Contact: $email';
+  }
+
+  @override
+  String get repTitle => 'Send a report';
+
+  @override
+  String get repProfileHint =>
+      'Inappropriate content, a bug, advertising or anything else';
+
+  @override
+  String get repIntro =>
+      'Tell us about inappropriate content, a bug or another problem. You can send a report without signing in.';
+
+  @override
+  String get repKindField => 'Type';
+
+  @override
+  String get repKindComplaint => 'Complaint';
+
+  @override
+  String get repKindInappropriate => 'Inappropriate content';
+
+  @override
+  String get repKindBug => 'Bug';
+
+  @override
+  String get repKindAdvertising => 'Advertising';
+
+  @override
+  String get repKindOther => 'Other';
+
+  @override
+  String get repBody => 'What happened?';
+
+  @override
+  String get repBodyHint =>
+      'Do not write personal data, case numbers or patient information.';
+
+  @override
+  String repBodyShort(int min) {
+    return 'Write at least $min characters.';
+  }
+
+  @override
+  String get repContact => 'E-mail for a reply (optional)';
+
+  @override
+  String get repContactHint =>
+      'If you are not signed in, leave an address if you want a reply.';
+
+  @override
+  String get repPrivacy =>
+      'The text is stored only to review your report. To fight spam, an irreversible hash of the device or network address is kept; the address itself is not.';
+
+  @override
+  String get repSend => 'Send';
+
+  @override
+  String get repSent => 'Your report was sent. Thank you.';
+
+  @override
+  String get repInvalid => 'Check the text and try again.';
+
+  @override
+  String repRateLimited(int n) {
+    return 'You can send up to $n reports per hour. Try again later.';
+  }
+
+  @override
+  String get repFailed => 'Not sent. Check your connection and try again.';
+
+  @override
+  String get repSuspended =>
+      'This account is suspended. Write to us by e-mail for help.';
+
+  @override
+  String get repUnavailable =>
+      'The report service is not connected in this build. Write to us by e-mail.';
+
+  @override
+  String get repMine => 'My reports';
+
+  @override
+  String get repStatusOpen => 'Under review';
+
+  @override
+  String get repStatusResolved => 'Resolved';
+
+  @override
+  String get ctTitle => 'Community rules';
+
+  @override
+  String get ctDraft =>
+      'This text is a draft and must be checked by a lawyer before the public release.';
+
+  @override
+  String get ctZeroTolerance =>
+      'Abusive, hateful, violent, illegal or spam content is not allowed. Every post has «Report» and «Block author» buttons. Content that breaks the rules can be removed and the account suspended.';
+
+  @override
+  String get ctOpenTerms => 'Terms of Use (draft)';
+
+  @override
+  String get ctAgree => 'I have read the rules and accept them';
+
+  @override
+  String get ctAccept => 'Accept';
+
+  @override
+  String get ctDecline => 'Not now';
+
+  @override
+  String get ctSaveFailed => 'Not saved. Try again.';
+
+  @override
+  String get blkTitle => 'Blocked authors';
+
+  @override
+  String get blkIntro =>
+      'Posts of blocked authors are hidden from you. You are not shown who they are.';
+
+  @override
+  String get blkEmpty => 'You have not blocked anyone.';
+
+  @override
+  String get blkItem => 'Blocked author';
+
+  @override
+  String blkSince(String date) {
+    return 'since $date';
+  }
+
+  @override
+  String get blkUnblock => 'Unblock';
+
+  @override
+  String get blkUnblocked => 'Unblocked.';
+
+  @override
+  String get blkAction => 'Block author';
+
+  @override
+  String get blkConfirmTitle => 'Block this author?';
+
+  @override
+  String get blkConfirmBody =>
+      'You will no longer see this author\'s questions and answers. You are not told who it is. You can undo this in the blocked list.';
+
+  @override
+  String get blkDone => 'Author blocked.';
+
+  @override
+  String get blkAlready => 'This author is already blocked.';
+
+  @override
+  String get blkSelf => 'You cannot block yourself.';
+
+  @override
+  String get blkFailed => 'Could not complete. Try again.';
+
+  @override
+  String get admxNavReports => 'Reports';
+
+  @override
+  String admxNavReportsHint(int n) {
+    return '$n open';
+  }
+
+  @override
+  String get admxReportsTitle => 'Reports';
+
+  @override
+  String get admxReportsSearch => 'Search by text or e-mail';
+
+  @override
+  String get admxOpen => 'Open';
+
+  @override
+  String get admxResolvedFilter => 'Resolved';
+
+  @override
+  String get admxAll => 'All';
+
+  @override
+  String get admxKindAny => 'All types';
+
+  @override
+  String get admxQaLink =>
+      'Open Q&A moderation (posts reported by three people)';
+
+  @override
+  String get admxReportsEmpty => 'No reports.';
+
+  @override
+  String get admxLoadMore => 'Load more';
+
+  @override
+  String get admxAnonymous => 'Not signed in';
+
+  @override
+  String admxContact(String value) {
+    return 'Contact: $value';
+  }
+
+  @override
+  String admxTarget(String type) {
+    return 'About: $type';
+  }
+
+  @override
+  String get admxNoteLabel => 'Note (admins only)';
+
+  @override
+  String get admxNoteSave => 'Save note';
+
+  @override
+  String get admxNoteSaved => 'Note saved.';
+
+  @override
+  String get admxResolve => 'Mark as resolved';
+
+  @override
+  String get admxReopen => 'Reopen';
+
+  @override
+  String get admxResolvedDone => 'Report marked as resolved.';
+
+  @override
+  String get admxReopened => 'Report reopened.';
+
+  @override
+  String get admxActionFailed => 'Action failed. Try again.';
+
+  @override
+  String get admxActions => 'Actions';
+
+  @override
+  String get admxActionsHint =>
+      'Every action is checked by the server and written to the audit log.';
+
+  @override
+  String get admxReason => 'Reason';
+
+  @override
+  String get admxReasonHint => 'At least 5 characters. Saved in the audit log.';
+
+  @override
+  String get admxReasonShort => 'The reason must be at least 5 characters.';
+
+  @override
+  String get admxCancel => 'Cancel';
+
+  @override
+  String get admxConfirm => 'Confirm';
+
+  @override
+  String get admxSelfNote =>
+      'You cannot change your own role or suspend your own account.';
+
+  @override
+  String get admxModeratorGrant => 'Make publication moderator';
+
+  @override
+  String get admxModeratorRemove => 'Remove moderator role';
+
+  @override
+  String get admxRemoveAdmin => 'Remove admin role';
+
+  @override
+  String get admxRemoveAdminTitle => 'Remove admin role?';
+
+  @override
+  String get admxRemoveAdminBody =>
+      'This person loses access to the admin panel at once. The last admin cannot be removed. A scientific reviewer role is separate and is not changed here.';
+
+  @override
+  String get admxAdminNotSuspendable => 'An admin account cannot be suspended.';
+
+  @override
+  String get admxSuspend => 'Suspend account';
+
+  @override
+  String get admxRestore => 'Restore account';
+
+  @override
+  String get admxSuspendTitle => 'Suspend this account?';
+
+  @override
+  String get admxSuspendConfirmBody =>
+      'The person is signed out everywhere and cannot sign in again until you restore the account. The action is written to the audit log.';
+
+  @override
+  String get admxRoleGranted => 'Role granted.';
+
+  @override
+  String get admxRoleRevoked => 'Role removed.';
+
+  @override
+  String get admxNoChange => 'Nothing changed.';
+
+  @override
+  String get admxUserNotFound => 'User not found.';
+
+  @override
+  String get admxRoleForbidden =>
+      'This role cannot be granted from the app. The owner does it on the server.';
+
+  @override
+  String get admxEmailUnconfirmed => 'The e-mail address is not confirmed.';
+
+  @override
+  String get admxSelfAdmin => 'You cannot change your own admin role.';
+
+  @override
+  String get admxLastAdmin => 'The last admin cannot be removed.';
+
+  @override
+  String get admxCannotSuspendAdmin => 'An admin cannot be suspended.';
+
+  @override
+  String get admxCannotSuspendSelf => 'You cannot suspend yourself.';
+
+  @override
+  String get admxSuspended => 'Account suspended. Its sessions were closed.';
+
+  @override
+  String get admxRestored => 'Account restored.';
+
+  @override
+  String get admxExtTitle => 'Roles, reports and objects';
+
+  @override
+  String get admxStatAdmins => 'Admins';
+
+  @override
+  String get admxStatModerators => 'Moderators';
+
+  @override
+  String get admxStatSuspended => 'Suspended';
+
+  @override
+  String get admxStatReportsOpen => 'Open reports';
+
+  @override
+  String get admxStatReportsResolved => 'Resolved reports';
+
+  @override
+  String get admxStatQaQuestions => 'Q&A questions';
+
+  @override
+  String get admxStatQaAnswers => 'Q&A answers';
+
+  @override
+  String get admxStatQaModeration => 'In moderation';
+
+  @override
+  String get admxStatBlocks => 'Blocks';
+
+  @override
+  String get admxCasebookNote =>
+      'Casebooks: stored on the device, not counted.';
+
+  @override
+  String get admxOnlineNote =>
+      'Online now: not available (there is no activity tracking).';
+
+  @override
+  String get admxStoresTitle => 'Downloads and sales';
+
+  @override
+  String get admxDownloadsNote =>
+      'Downloads: the server cannot see them. Open the store consoles.';
+
+  @override
+  String get admxSalesNote => 'Sales: 0 — there is no payment system.';
+
+  @override
+  String get admxOpenAsc => 'App Store Connect';
+
+  @override
+  String get admxOpenPlay => 'Google Play Console';
+
+  @override
+  String get admxOpenFailed => 'Could not open the link.';
+
+  @override
+  String get admActAdminRoleSet => 'Role changed from the panel';
+
+  @override
+  String get admActUserSuspended => 'Account suspended';
+
+  @override
+  String get admActUserRestored => 'Account restored';
+
+  @override
+  String get admActReportNote => 'Note on a report';
+
+  @override
+  String get admActReportResolved => 'Report resolved';
+
+  @override
+  String get admActReportReopened => 'Report reopened';
+
+  @override
+  String get admActAdminBootstrap => 'First admin assigned (owner bootstrap)';
+
+  @override
+  String get admActReportsView => 'Report list viewed';
 }

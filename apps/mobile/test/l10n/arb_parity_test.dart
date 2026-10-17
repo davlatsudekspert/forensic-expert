@@ -44,6 +44,9 @@ void main() {
     'tech_hplc',
     'tech_lcMsMs',
     'tech_headspaceGc',
+    // Do‘kon konsollarining rasmiy nomlari (admin paneli, 2026-10-17).
+    'admxOpenAsc',
+    'admxOpenPlay',
     // Admin panel: platforma nomlari va o‘zbekchada ham «Admin» belgisi.
     'adminAndroid',
     'adminIos',

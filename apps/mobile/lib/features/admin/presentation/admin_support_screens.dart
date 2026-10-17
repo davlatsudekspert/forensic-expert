@@ -12,6 +12,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/professional/professional_models.dart';
 import '../../../domain/support/support_models.dart';
+import '../../moderation/presentation/admin_user_actions.dart';
 import '../../professional/professional_strings.dart';
 import '../../support/presentation/support_screens.dart';
 import '../../support/presentation/support_widgets.dart';
@@ -571,6 +572,12 @@ class _UserCard extends StatelessWidget {
                       color: c.accent,
                     ),
                   ),
+                IconButton(
+                  key: Key('adminUsers.actions.${u.email}'),
+                  tooltip: l.admxActions,
+                  icon: const Icon(Icons.more_vert),
+                  onPressed: () => showUserActionsSheet(context, u),
+                ),
               ],
             ),
             const SizedBox(height: FeSpace.xxs),

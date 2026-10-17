@@ -8,6 +8,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../domain/qa/qa_models.dart';
+import '../../moderation/presentation/moderation_widgets.dart';
 import '../qa_strings.dart';
 import 'qa_widgets.dart';
 
@@ -42,6 +43,9 @@ class _QaAskScreenState extends ConsumerState<QaAskScreen> {
 
   Future<void> _send() async {
     final l = AppLocalizations.of(context);
+    // Birinchi yozishdan oldin hamjamiyat qoidalari qabul qilinadi.
+    if (!await ensureCommunityTerms(context, ref)) return;
+    if (!mounted) return;
     setState(() {
       _sending = true;
       _error = null;

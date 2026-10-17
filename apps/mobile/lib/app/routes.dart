@@ -89,6 +89,8 @@ abstract final class Routes {
   static const qaMine = '/library/qa/mine';
   static const qaVerify = '/library/qa/verify';
   static const qaModeration = '/library/qa/moderation';
+  static const qaTerms = '/library/qa/terms';
+  static const qaBlocked = '/library/qa/blocked';
   // Provenance qatlami.
   static const conflicts = '/library/conflicts';
   static String conflict(String id) => '/library/conflicts/$id';
@@ -151,9 +153,13 @@ abstract final class Routes {
       '/profile/admin/inbox/${Uri.encodeComponent(id)}';
   static const adminUsers = '/profile/admin/users';
   static const adminAudit = '/profile/admin/audit';
+  static const adminReports = '/profile/admin/reports';
   static const adminVerifications = '/profile/admin/verifications';
   static String adminVerification(String applicantId) =>
       '/profile/admin/verifications/${Uri.encodeComponent(applicantId)}';
+
+  /// Shikoyat yuborish (kirmagan foydalanuvchi ham).
+  static const report = '/profile/report';
 
   /// «Taklif va murojaatlar» (foydalanuvchi).
   static const support = '/profile/support';

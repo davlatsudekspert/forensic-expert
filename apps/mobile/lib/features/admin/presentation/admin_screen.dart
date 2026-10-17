@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/account.dart';
+import '../../../app/moderation.dart';
 import '../../../app/qa.dart';
 import '../../../app/routes.dart';
 import '../../../app/support.dart';
@@ -13,6 +14,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/admin/admin_models.dart';
+import '../../moderation/presentation/admin_ext_overview.dart';
 import 'admin_gate.dart';
 import 'admin_widgets.dart';
 
@@ -53,6 +55,7 @@ class _AdminDashboard extends ConsumerWidget {
             onPressed: () {
               ref.invalidate(adminDashboardProvider);
               ref.invalidate(adminStatsProvider);
+              ref.invalidate(adminStatsExtProvider);
             },
           ),
         ],
@@ -110,6 +113,7 @@ class _Body extends StatelessWidget {
               const SizedBox(height: FeSpace.sm),
               const _AdminSections(),
               const _AdminOverview(),
+              const AdminExtOverview(),
               FeSectionHeader(l.adminTitle),
               LayoutBuilder(
                 builder: (context, box) {
@@ -248,6 +252,17 @@ class _AdminSections extends ConsumerWidget {
           onTap: () => context.push(Routes.adminAudit),
         ),
       ],
+      if (ref.watch(reportAvailableProvider))
+        AdminNavTile(
+          key: const Key('admin.nav.reports'),
+          icon: Icons.report_gmailerrorred_outlined,
+          title: l.admxNavReports,
+          hint: l.admxNavReportsHint(
+            ref.watch(adminStatsExtProvider).value?.reportsOpen ?? 0,
+          ),
+          badge: ref.watch(adminStatsExtProvider).value?.reportsOpen ?? 0,
+          onTap: () => context.push(Routes.adminReports),
+        ),
       AdminNavTile(
         key: const Key('admin.nav.moderation'),
         icon: Icons.fact_check_outlined,

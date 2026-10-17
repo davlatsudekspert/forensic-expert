@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/account.dart';
 import '../../../app/app_info.dart';
 import '../../../app/avatar.dart';
+import '../../../app/moderation.dart';
 import '../../../app/professional.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -364,6 +365,21 @@ class ProfileScreen extends ConsumerWidget {
                     ],
                   ),
                   FeSectionHeader(l.profileSectionHelp),
+                  // Shikoyat: kirmagan foydalanuvchi ham yuboradi (Apple 1.2).
+                  if (ref.watch(reportAvailableProvider)) ...[
+                    _Group(
+                      children: [
+                        _Row(
+                          key: const Key('profile.report'),
+                          icon: Icons.report_gmailerrorred_outlined,
+                          title: l.repTitle,
+                          value: l.repProfileHint,
+                          onTap: () => context.push(Routes.report),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: FeSpace.sm),
+                  ],
                   if (supportOn) ...[
                     _Group(
                       children: [

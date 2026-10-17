@@ -11881,5 +11881,544 @@
   "litClaimsTitle": "Evidence from the literature (in full)",
   "@litClaimsTitle": {
     "description": "Heading of the full literature claims list."
+  },
+  "contactLine": "Contact: {email}",
+  "@contactLine": {
+    "description": "Visible support contact line; tapping opens the mail app.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "repTitle": "Send a report",
+  "@repTitle": {
+    "description": "Title of the report screen and the profile row."
+  },
+  "repProfileHint": "Inappropriate content, a bug, advertising or anything else",
+  "@repProfileHint": {
+    "description": "Subtitle of the profile row that opens the report form."
+  },
+  "repIntro": "Tell us about inappropriate content, a bug or another problem. You can send a report without signing in.",
+  "@repIntro": {
+    "description": "Intro text on the report form."
+  },
+  "repKindField": "Type",
+  "@repKindField": {
+    "description": "Label of the report type dropdown."
+  },
+  "repKindComplaint": "Complaint",
+  "@repKindComplaint": {
+    "description": "Report type: complaint."
+  },
+  "repKindInappropriate": "Inappropriate content",
+  "@repKindInappropriate": {
+    "description": "Report type: inappropriate content."
+  },
+  "repKindBug": "Bug",
+  "@repKindBug": {
+    "description": "Report type: bug."
+  },
+  "repKindAdvertising": "Advertising",
+  "@repKindAdvertising": {
+    "description": "Report type: advertising or spam."
+  },
+  "repKindOther": "Other",
+  "@repKindOther": {
+    "description": "Report type: other."
+  },
+  "repBody": "What happened?",
+  "@repBody": {
+    "description": "Label of the report text field."
+  },
+  "repBodyHint": "Do not write personal data, case numbers or patient information.",
+  "@repBodyHint": {
+    "description": "Helper text under the report text field."
+  },
+  "repBodyShort": "Write at least {min} characters.",
+  "@repBodyShort": {
+    "description": "Validation message for a too short report.",
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "repContact": "E-mail for a reply (optional)",
+  "@repContact": {
+    "description": "Label of the optional contact field."
+  },
+  "repContactHint": "If you are not signed in, leave an address if you want a reply.",
+  "@repContactHint": {
+    "description": "Helper text under the optional contact field."
+  },
+  "repPrivacy": "The text is stored only to review your report. To fight spam, an irreversible hash of the device or network address is kept; the address itself is not.",
+  "@repPrivacy": {
+    "description": "Privacy note under the report form."
+  },
+  "repSend": "Send",
+  "@repSend": {
+    "description": "Send button."
+  },
+  "repSent": "Your report was sent. Thank you.",
+  "@repSent": {
+    "description": "Confirmation after sending a report."
+  },
+  "repInvalid": "Check the text and try again.",
+  "@repInvalid": {
+    "description": "Server rejected the report as invalid."
+  },
+  "repRateLimited": "You can send up to {n} reports per hour. Try again later.",
+  "@repRateLimited": {
+    "description": "Rate limit message.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "repFailed": "Not sent. Check your connection and try again.",
+  "@repFailed": {
+    "description": "Network or server error while sending a report."
+  },
+  "repSuspended": "This account is suspended. Write to us by e-mail for help.",
+  "@repSuspended": {
+    "description": "Message for a suspended account."
+  },
+  "repUnavailable": "The report service is not connected in this build. Write to us by e-mail.",
+  "@repUnavailable": {
+    "description": "Honest empty state when no backend is connected."
+  },
+  "repMine": "My reports",
+  "@repMine": {
+    "description": "Section with the signed-in user's own reports."
+  },
+  "repStatusOpen": "Under review",
+  "@repStatusOpen": {
+    "description": "Report status: open."
+  },
+  "repStatusResolved": "Resolved",
+  "@repStatusResolved": {
+    "description": "Report status: resolved."
+  },
+  "ctTitle": "Community rules",
+  "@ctTitle": {
+    "description": "Title of the rules acceptance screen."
+  },
+  "ctDraft": "This text is a draft and must be checked by a lawyer before the public release.",
+  "@ctDraft": {
+    "description": "Draft label on the rules acceptance screen."
+  },
+  "ctZeroTolerance": "Abusive, hateful, violent, illegal or spam content is not allowed. Every post has «Report» and «Block author» buttons. Content that breaks the rules can be removed and the account suspended.",
+  "@ctZeroTolerance": {
+    "description": "Zero-tolerance statement shown before accepting the rules."
+  },
+  "ctOpenTerms": "Terms of Use (draft)",
+  "@ctOpenTerms": {
+    "description": "Button that opens the Terms of Use draft."
+  },
+  "ctAgree": "I have read the rules and accept them",
+  "@ctAgree": {
+    "description": "Checkbox label."
+  },
+  "ctAccept": "Accept",
+  "@ctAccept": {
+    "description": "Accept button."
+  },
+  "ctDecline": "Not now",
+  "@ctDecline": {
+    "description": "Decline button."
+  },
+  "ctSaveFailed": "Not saved. Try again.",
+  "@ctSaveFailed": {
+    "description": "Error when accepting the rules failed."
+  },
+  "blkTitle": "Blocked authors",
+  "@blkTitle": {
+    "description": "Title of the blocked authors screen."
+  },
+  "blkIntro": "Posts of blocked authors are hidden from you. You are not shown who they are.",
+  "@blkIntro": {
+    "description": "Explains blocking."
+  },
+  "blkEmpty": "You have not blocked anyone.",
+  "@blkEmpty": {
+    "description": "Empty state of the blocked list."
+  },
+  "blkItem": "Blocked author",
+  "@blkItem": {
+    "description": "Row title in the blocked list."
+  },
+  "blkSince": "since {date}",
+  "@blkSince": {
+    "description": "Row subtitle: block date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "blkUnblock": "Unblock",
+  "@blkUnblock": {
+    "description": "Unblock button."
+  },
+  "blkUnblocked": "Unblocked.",
+  "@blkUnblocked": {
+    "description": "Confirmation after unblocking."
+  },
+  "blkAction": "Block author",
+  "@blkAction": {
+    "description": "Block button on a post."
+  },
+  "blkConfirmTitle": "Block this author?",
+  "@blkConfirmTitle": {
+    "description": "Block confirmation title."
+  },
+  "blkConfirmBody": "You will no longer see this author's questions and answers. You are not told who it is. You can undo this in the blocked list.",
+  "@blkConfirmBody": {
+    "description": "Block confirmation body."
+  },
+  "blkDone": "Author blocked.",
+  "@blkDone": {
+    "description": "Confirmation after blocking."
+  },
+  "blkAlready": "This author is already blocked.",
+  "@blkAlready": {
+    "description": "Already blocked."
+  },
+  "blkSelf": "You cannot block yourself.",
+  "@blkSelf": {
+    "description": "Self block attempt."
+  },
+  "blkFailed": "Could not complete. Try again.",
+  "@blkFailed": {
+    "description": "Block or load failure."
+  },
+  "admxNavReports": "Reports",
+  "@admxNavReports": {
+    "description": "Admin section tile title."
+  },
+  "admxNavReportsHint": "{n} open",
+  "@admxNavReportsHint": {
+    "description": "Admin section tile subtitle with the open count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "admxReportsTitle": "Reports",
+  "@admxReportsTitle": {
+    "description": "Admin reports screen title."
+  },
+  "admxReportsSearch": "Search by text or e-mail",
+  "@admxReportsSearch": {
+    "description": "Search hint in the admin reports list."
+  },
+  "admxOpen": "Open",
+  "@admxOpen": {
+    "description": "Filter: open."
+  },
+  "admxResolvedFilter": "Resolved",
+  "@admxResolvedFilter": {
+    "description": "Filter: resolved."
+  },
+  "admxAll": "All",
+  "@admxAll": {
+    "description": "Filter: all."
+  },
+  "admxKindAny": "All types",
+  "@admxKindAny": {
+    "description": "Filter: any report type."
+  },
+  "admxQaLink": "Open Q&A moderation (posts reported by three people)",
+  "@admxQaLink": {
+    "description": "Link from the reports list to the existing Q&A moderation queue."
+  },
+  "admxReportsEmpty": "No reports.",
+  "@admxReportsEmpty": {
+    "description": "Empty admin reports list."
+  },
+  "admxLoadMore": "Load more",
+  "@admxLoadMore": {
+    "description": "Pagination."
+  },
+  "admxAnonymous": "Not signed in",
+  "@admxAnonymous": {
+    "description": "Reporter was not signed in."
+  },
+  "admxContact": "Contact: {value}",
+  "@admxContact": {
+    "description": "Contact given by the reporter.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "admxTarget": "About: {type}",
+  "@admxTarget": {
+    "description": "Target type of the report (technical code).",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "admxNoteLabel": "Note (admins only)",
+  "@admxNoteLabel": {
+    "description": "Admin note field."
+  },
+  "admxNoteSave": "Save note",
+  "@admxNoteSave": {
+    "description": "Save note button."
+  },
+  "admxNoteSaved": "Note saved.",
+  "@admxNoteSaved": {
+    "description": "Confirmation."
+  },
+  "admxResolve": "Mark as resolved",
+  "@admxResolve": {
+    "description": "Resolve button."
+  },
+  "admxReopen": "Reopen",
+  "@admxReopen": {
+    "description": "Reopen button."
+  },
+  "admxResolvedDone": "Report marked as resolved.",
+  "@admxResolvedDone": {
+    "description": "Confirmation."
+  },
+  "admxReopened": "Report reopened.",
+  "@admxReopened": {
+    "description": "Confirmation."
+  },
+  "admxActionFailed": "Action failed. Try again.",
+  "@admxActionFailed": {
+    "description": "Generic admin action error."
+  },
+  "admxActions": "Actions",
+  "@admxActions": {
+    "description": "Tooltip of the user actions button."
+  },
+  "admxActionsHint": "Every action is checked by the server and written to the audit log.",
+  "@admxActionsHint": {
+    "description": "Hint at the top of the user actions sheet."
+  },
+  "admxReason": "Reason",
+  "@admxReason": {
+    "description": "Reason field of the user actions sheet."
+  },
+  "admxReasonHint": "At least 5 characters. Saved in the audit log.",
+  "@admxReasonHint": {
+    "description": "Helper text for the reason."
+  },
+  "admxReasonShort": "The reason must be at least 5 characters.",
+  "@admxReasonShort": {
+    "description": "Validation."
+  },
+  "admxCancel": "Cancel",
+  "@admxCancel": {
+    "description": "Cancel button."
+  },
+  "admxConfirm": "Confirm",
+  "@admxConfirm": {
+    "description": "Confirm button."
+  },
+  "admxSelfNote": "You cannot change your own role or suspend your own account.",
+  "@admxSelfNote": {
+    "description": "Shown instead of actions when the admin opens their own row."
+  },
+  "admxModeratorGrant": "Make publication moderator",
+  "@admxModeratorGrant": {
+    "description": "Grant the publication_moderator role."
+  },
+  "admxModeratorRemove": "Remove moderator role",
+  "@admxModeratorRemove": {
+    "description": "Revoke the publication_moderator role."
+  },
+  "admxRemoveAdmin": "Remove admin role",
+  "@admxRemoveAdmin": {
+    "description": "Revoke identity_admin."
+  },
+  "admxRemoveAdminTitle": "Remove admin role?",
+  "@admxRemoveAdminTitle": {
+    "description": "Dialog title."
+  },
+  "admxRemoveAdminBody": "This person loses access to the admin panel at once. The last admin cannot be removed. A scientific reviewer role is separate and is not changed here.",
+  "@admxRemoveAdminBody": {
+    "description": "Dialog body."
+  },
+  "admxAdminNotSuspendable": "An admin account cannot be suspended.",
+  "@admxAdminNotSuspendable": {
+    "description": "Shown instead of the suspend button for admins."
+  },
+  "admxSuspend": "Suspend account",
+  "@admxSuspend": {
+    "description": "Suspend button."
+  },
+  "admxRestore": "Restore account",
+  "@admxRestore": {
+    "description": "Restore button."
+  },
+  "admxSuspendTitle": "Suspend this account?",
+  "@admxSuspendTitle": {
+    "description": "Dialog title."
+  },
+  "admxSuspendConfirmBody": "The person is signed out everywhere and cannot sign in again until you restore the account. The action is written to the audit log.",
+  "@admxSuspendConfirmBody": {
+    "description": "Dialog body."
+  },
+  "admxRoleGranted": "Role granted.",
+  "@admxRoleGranted": {
+    "description": "Result."
+  },
+  "admxRoleRevoked": "Role removed.",
+  "@admxRoleRevoked": {
+    "description": "Result."
+  },
+  "admxNoChange": "Nothing changed.",
+  "@admxNoChange": {
+    "description": "Result: already in that state."
+  },
+  "admxUserNotFound": "User not found.",
+  "@admxUserNotFound": {
+    "description": "Result."
+  },
+  "admxRoleForbidden": "This role cannot be granted from the app. The owner does it on the server.",
+  "@admxRoleForbidden": {
+    "description": "Result: role not grantable in-app."
+  },
+  "admxEmailUnconfirmed": "The e-mail address is not confirmed.",
+  "@admxEmailUnconfirmed": {
+    "description": "Result."
+  },
+  "admxSelfAdmin": "You cannot change your own admin role.",
+  "@admxSelfAdmin": {
+    "description": "Result."
+  },
+  "admxLastAdmin": "The last admin cannot be removed.",
+  "@admxLastAdmin": {
+    "description": "Result."
+  },
+  "admxCannotSuspendAdmin": "An admin cannot be suspended.",
+  "@admxCannotSuspendAdmin": {
+    "description": "Result."
+  },
+  "admxCannotSuspendSelf": "You cannot suspend yourself.",
+  "@admxCannotSuspendSelf": {
+    "description": "Result."
+  },
+  "admxSuspended": "Account suspended. Its sessions were closed.",
+  "@admxSuspended": {
+    "description": "Result."
+  },
+  "admxRestored": "Account restored.",
+  "@admxRestored": {
+    "description": "Result."
+  },
+  "admxExtTitle": "Roles, reports and objects",
+  "@admxExtTitle": {
+    "description": "Section title of the extended statistics."
+  },
+  "admxStatAdmins": "Admins",
+  "@admxStatAdmins": {
+    "description": "Stat label."
+  },
+  "admxStatModerators": "Moderators",
+  "@admxStatModerators": {
+    "description": "Stat label."
+  },
+  "admxStatSuspended": "Suspended",
+  "@admxStatSuspended": {
+    "description": "Stat label."
+  },
+  "admxStatReportsOpen": "Open reports",
+  "@admxStatReportsOpen": {
+    "description": "Stat label."
+  },
+  "admxStatReportsResolved": "Resolved reports",
+  "@admxStatReportsResolved": {
+    "description": "Stat label."
+  },
+  "admxStatQaQuestions": "Q&A questions",
+  "@admxStatQaQuestions": {
+    "description": "Stat label."
+  },
+  "admxStatQaAnswers": "Q&A answers",
+  "@admxStatQaAnswers": {
+    "description": "Stat label."
+  },
+  "admxStatQaModeration": "In moderation",
+  "@admxStatQaModeration": {
+    "description": "Stat label."
+  },
+  "admxStatBlocks": "Blocks",
+  "@admxStatBlocks": {
+    "description": "Stat label."
+  },
+  "admxCasebookNote": "Casebooks: stored on the device, not counted.",
+  "@admxCasebookNote": {
+    "description": "Honest note: casebooks are not on the server."
+  },
+  "admxOnlineNote": "Online now: not available (there is no activity tracking).",
+  "@admxOnlineNote": {
+    "description": "Honest note: no real-time presence."
+  },
+  "admxStoresTitle": "Downloads and sales",
+  "@admxStoresTitle": {
+    "description": "Section title."
+  },
+  "admxDownloadsNote": "Downloads: the server cannot see them. Open the store consoles.",
+  "@admxDownloadsNote": {
+    "description": "Honest note about downloads."
+  },
+  "admxSalesNote": "Sales: 0 — there is no payment system.",
+  "@admxSalesNote": {
+    "description": "Honest note about sales."
+  },
+  "admxOpenAsc": "App Store Connect",
+  "@admxOpenAsc": {
+    "description": "Button that opens App Store Connect."
+  },
+  "admxOpenPlay": "Google Play Console",
+  "@admxOpenPlay": {
+    "description": "Button that opens Google Play Console."
+  },
+  "admxOpenFailed": "Could not open the link.",
+  "@admxOpenFailed": {
+    "description": "External link failure."
+  },
+  "admActAdminRoleSet": "Role changed from the panel",
+  "@admActAdminRoleSet": {
+    "description": "Audit action label."
+  },
+  "admActUserSuspended": "Account suspended",
+  "@admActUserSuspended": {
+    "description": "Audit action label."
+  },
+  "admActUserRestored": "Account restored",
+  "@admActUserRestored": {
+    "description": "Audit action label."
+  },
+  "admActReportNote": "Note on a report",
+  "@admActReportNote": {
+    "description": "Audit action label."
+  },
+  "admActReportResolved": "Report resolved",
+  "@admActReportResolved": {
+    "description": "Audit action label."
+  },
+  "admActReportReopened": "Report reopened",
+  "@admActReportReopened": {
+    "description": "Audit action label."
+  },
+  "admActAdminBootstrap": "First admin assigned (owner bootstrap)",
+  "@admActAdminBootstrap": {
+    "description": "Audit action label."
+  },
+  "admActReportsView": "Report list viewed",
+  "@admActReportsView": {
+    "description": "Audit action label."
   }
 }

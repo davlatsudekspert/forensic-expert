@@ -9149,4 +9149,419 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get litClaimsTitle => 'Adabiyotdagi dalillar (to‘liq)';
+
+  @override
+  String contactLine(String email) {
+    return 'Aloqa: $email';
+  }
+
+  @override
+  String get repTitle => 'Shikoyat yuborish';
+
+  @override
+  String get repProfileHint =>
+      'Nomaqbul kontent, xato, reklama yoki boshqa muammo';
+
+  @override
+  String get repIntro =>
+      'Nomaqbul kontent, xato yoki boshqa muammo haqida xabar bering. Hisobga kirmasdan ham yuborish mumkin.';
+
+  @override
+  String get repKindField => 'Turi';
+
+  @override
+  String get repKindComplaint => 'Shikoyat';
+
+  @override
+  String get repKindInappropriate => 'Nomaqbul kontent';
+
+  @override
+  String get repKindBug => 'Xato';
+
+  @override
+  String get repKindAdvertising => 'Reklama';
+
+  @override
+  String get repKindOther => 'Boshqa';
+
+  @override
+  String get repBody => 'Nima bo‘ldi?';
+
+  @override
+  String get repBodyHint =>
+      'Shaxsiy ma’lumot, ish raqami yoki bemor ma’lumotini yozmang.';
+
+  @override
+  String repBodyShort(int min) {
+    return 'Kamida $min belgi yozing.';
+  }
+
+  @override
+  String get repContact => 'Javob uchun email (ixtiyoriy)';
+
+  @override
+  String get repContactHint =>
+      'Hisobga kirmagan bo‘lsangiz, javob olish uchun manzil qoldiring.';
+
+  @override
+  String get repPrivacy =>
+      'Matn faqat shikoyatni ko‘rib chiqish uchun saqlanadi. Spamdan himoya uchun qurilma yoki tarmoq manzilining qaytarib bo‘lmas xeshi saqlanadi, manzilning o‘zi saqlanmaydi.';
+
+  @override
+  String get repSend => 'Yuborish';
+
+  @override
+  String get repSent => 'Shikoyatingiz yuborildi. Rahmat.';
+
+  @override
+  String get repInvalid => 'Matnni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String repRateLimited(int n) {
+    return 'Soatiga $n tagacha shikoyat yuborish mumkin. Keyinroq urinib ko‘ring.';
+  }
+
+  @override
+  String get repFailed =>
+      'Yuborilmadi. Internetni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get repSuspended =>
+      'Hisob to‘xtatilgan. Yordam uchun email orqali yozing.';
+
+  @override
+  String get repUnavailable =>
+      'Bu yig‘mada shikoyat xizmati ulanmagan. Email orqali yozing.';
+
+  @override
+  String get repMine => 'Mening shikoyatlarim';
+
+  @override
+  String get repStatusOpen => 'Ko‘rib chiqilmoqda';
+
+  @override
+  String get repStatusResolved => 'Hal qilindi';
+
+  @override
+  String get ctTitle => 'Foydalanish qoidalari';
+
+  @override
+  String get ctDraft =>
+      'Bu matn qoralama — ommaviy chiqarishdan oldin yurist tekshirishi kerak.';
+
+  @override
+  String get ctZeroTolerance =>
+      'Haqoratli, nafrat uyg‘otuvchi, zo‘ravonlikka undovchi, noqonuniy kontent va spamga yo‘l qo‘yilmaydi. Har bir postda «Shikoyat» va «Muallifni bloklash» tugmalari bor. Qoidani buzgan kontent olib tashlanishi va hisob to‘xtatilishi mumkin.';
+
+  @override
+  String get ctOpenTerms => 'Foydalanish shartlari (qoralama)';
+
+  @override
+  String get ctAgree => 'Qoidalarni o‘qidim va qabul qilaman';
+
+  @override
+  String get ctAccept => 'Qabul qilish';
+
+  @override
+  String get ctDecline => 'Hozir emas';
+
+  @override
+  String get ctSaveFailed => 'Saqlanmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get blkTitle => 'Bloklangan mualliflar';
+
+  @override
+  String get blkIntro =>
+      'Bloklangan mualliflarning postlari sizga ko‘rinmaydi. Ular kimligi sizga ham ko‘rsatilmaydi.';
+
+  @override
+  String get blkEmpty => 'Hech kim bloklanmagan.';
+
+  @override
+  String get blkItem => 'Bloklangan muallif';
+
+  @override
+  String blkSince(String date) {
+    return '$date dan beri';
+  }
+
+  @override
+  String get blkUnblock => 'Blokdan chiqarish';
+
+  @override
+  String get blkUnblocked => 'Blokdan chiqarildi.';
+
+  @override
+  String get blkAction => 'Muallifni bloklash';
+
+  @override
+  String get blkConfirmTitle => 'Muallifni bloklaysizmi?';
+
+  @override
+  String get blkConfirmBody =>
+      'Siz bu muallifning savol va javoblarini endi ko‘rmaysiz. Muallif kimligi sizga ko‘rsatilmaydi. Keyinroq bloklanganlar ro‘yxatida qaytarishingiz mumkin.';
+
+  @override
+  String get blkDone => 'Muallif bloklandi.';
+
+  @override
+  String get blkAlready => 'Bu muallif allaqachon bloklangan.';
+
+  @override
+  String get blkSelf => 'O‘zingizni bloklab bo‘lmaydi.';
+
+  @override
+  String get blkFailed => 'Bajarilmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get admxNavReports => 'Shikoyatlar';
+
+  @override
+  String admxNavReportsHint(int n) {
+    return '$n ta ochiq';
+  }
+
+  @override
+  String get admxReportsTitle => 'Shikoyatlar';
+
+  @override
+  String get admxReportsSearch => 'Matn yoki email bo‘yicha qidirish';
+
+  @override
+  String get admxOpen => 'Ochiq';
+
+  @override
+  String get admxResolvedFilter => 'Hal qilingan';
+
+  @override
+  String get admxAll => 'Hammasi';
+
+  @override
+  String get admxKindAny => 'Barcha turlar';
+
+  @override
+  String get admxQaLink =>
+      'Savol-javob moderatsiyasini ochish (uch kishi shikoyat qilgan postlar)';
+
+  @override
+  String get admxReportsEmpty => 'Shikoyat yo‘q.';
+
+  @override
+  String get admxLoadMore => 'Yana yuklash';
+
+  @override
+  String get admxAnonymous => 'Kirmagan foydalanuvchi';
+
+  @override
+  String admxContact(String value) {
+    return 'Aloqa: $value';
+  }
+
+  @override
+  String admxTarget(String type) {
+    return 'Qaysi post: $type';
+  }
+
+  @override
+  String get admxNoteLabel => 'Izoh (faqat adminlar uchun)';
+
+  @override
+  String get admxNoteSave => 'Izohni saqlash';
+
+  @override
+  String get admxNoteSaved => 'Izoh saqlandi.';
+
+  @override
+  String get admxResolve => 'Hal qilindi deb belgilash';
+
+  @override
+  String get admxReopen => 'Qayta ochish';
+
+  @override
+  String get admxResolvedDone => 'Shikoyat hal qilindi.';
+
+  @override
+  String get admxReopened => 'Shikoyat qayta ochildi.';
+
+  @override
+  String get admxActionFailed => 'Amal bajarilmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get admxActions => 'Amallar';
+
+  @override
+  String get admxActionsHint =>
+      'Har bir amalni server tekshiradi va jurnalga yozadi.';
+
+  @override
+  String get admxReason => 'Sabab';
+
+  @override
+  String get admxReasonHint => 'Kamida 5 belgi. Jurnalga yoziladi.';
+
+  @override
+  String get admxReasonShort => 'Sabab kamida 5 belgi bo‘lsin.';
+
+  @override
+  String get admxCancel => 'Bekor qilish';
+
+  @override
+  String get admxConfirm => 'Tasdiqlash';
+
+  @override
+  String get admxSelfNote =>
+      'O‘zingizning rolingizni o‘zgartirib yoki hisobingizni to‘xtatib bo‘lmaydi.';
+
+  @override
+  String get admxModeratorGrant => 'Maqolalar moderatori qilish';
+
+  @override
+  String get admxModeratorRemove => 'Moderatorlikni olib tashlash';
+
+  @override
+  String get admxRemoveAdmin => 'Adminlikni olib tashlash';
+
+  @override
+  String get admxRemoveAdminTitle => 'Adminlik olib tashlansinmi?';
+
+  @override
+  String get admxRemoveAdminBody =>
+      'Odam admin panelga kirish huquqini darhol yo‘qotadi. Oxirgi adminni olib tashlab bo‘lmaydi. Ilmiy reviewer roli alohida va bu yerda o‘zgarmaydi.';
+
+  @override
+  String get admxAdminNotSuspendable => 'Admin hisobini to‘xtatib bo‘lmaydi.';
+
+  @override
+  String get admxSuspend => 'Hisobni to‘xtatish';
+
+  @override
+  String get admxRestore => 'Hisobni qayta yoqish';
+
+  @override
+  String get admxSuspendTitle => 'Hisob to‘xtatilsinmi?';
+
+  @override
+  String get admxSuspendConfirmBody =>
+      'Foydalanuvchi barcha qurilmalardan chiqariladi va hisob qayta yoqilmaguncha kira olmaydi. Amal jurnalga yoziladi.';
+
+  @override
+  String get admxRoleGranted => 'Rol berildi.';
+
+  @override
+  String get admxRoleRevoked => 'Rol olib tashlandi.';
+
+  @override
+  String get admxNoChange => 'O‘zgarish yo‘q.';
+
+  @override
+  String get admxUserNotFound => 'Foydalanuvchi topilmadi.';
+
+  @override
+  String get admxRoleForbidden =>
+      'Bu rolni ilovadan berib bo‘lmaydi. Egasi buni server orqali qiladi.';
+
+  @override
+  String get admxEmailUnconfirmed => 'Email manzili tasdiqlanmagan.';
+
+  @override
+  String get admxSelfAdmin =>
+      'O‘zingizning admin rolingizni o‘zgartirib bo‘lmaydi.';
+
+  @override
+  String get admxLastAdmin => 'Oxirgi adminni olib tashlab bo‘lmaydi.';
+
+  @override
+  String get admxCannotSuspendAdmin => 'Adminni to‘xtatib bo‘lmaydi.';
+
+  @override
+  String get admxCannotSuspendSelf => 'O‘zingizni to‘xtatib bo‘lmaydi.';
+
+  @override
+  String get admxSuspended => 'Hisob to‘xtatildi. Sessiyalari o‘chirildi.';
+
+  @override
+  String get admxRestored => 'Hisob qayta yoqildi.';
+
+  @override
+  String get admxExtTitle => 'Rollar, shikoyatlar va obyektlar';
+
+  @override
+  String get admxStatAdmins => 'Adminlar';
+
+  @override
+  String get admxStatModerators => 'Moderatorlar';
+
+  @override
+  String get admxStatSuspended => 'To‘xtatilgan';
+
+  @override
+  String get admxStatReportsOpen => 'Ochiq shikoyatlar';
+
+  @override
+  String get admxStatReportsResolved => 'Hal qilingan shikoyatlar';
+
+  @override
+  String get admxStatQaQuestions => 'Savol-javob: savollar';
+
+  @override
+  String get admxStatQaAnswers => 'Savol-javob: javoblar';
+
+  @override
+  String get admxStatQaModeration => 'Moderatsiyada';
+
+  @override
+  String get admxStatBlocks => 'Bloklashlar';
+
+  @override
+  String get admxCasebookNote =>
+      'Casebook: qurilmada saqlanadi, hisoblanmaydi.';
+
+  @override
+  String get admxOnlineNote =>
+      'Hozir tizimda: mavjud emas (faol kuzatuv yo‘q).';
+
+  @override
+  String get admxStoresTitle => 'Yuklab olishlar va sotuvlar';
+
+  @override
+  String get admxDownloadsNote =>
+      'Yuklab olishlar: serverga ko‘rinmaydi. Do‘kon konsollarini oching.';
+
+  @override
+  String get admxSalesNote => 'Sotuvlar: 0 — to‘lov tizimi yo‘q.';
+
+  @override
+  String get admxOpenAsc => 'App Store Connect';
+
+  @override
+  String get admxOpenPlay => 'Google Play Console';
+
+  @override
+  String get admxOpenFailed => 'Havola ochilmadi.';
+
+  @override
+  String get admActAdminRoleSet => 'Rol paneldan o‘zgartirildi';
+
+  @override
+  String get admActUserSuspended => 'Hisob to‘xtatildi';
+
+  @override
+  String get admActUserRestored => 'Hisob qayta yoqildi';
+
+  @override
+  String get admActReportNote => 'Shikoyatga izoh';
+
+  @override
+  String get admActReportResolved => 'Shikoyat hal qilindi';
+
+  @override
+  String get admActReportReopened => 'Shikoyat qayta ochildi';
+
+  @override
+  String get admActAdminBootstrap =>
+      'Birinchi admin tayinlandi (egasi bootstrap)';
+
+  @override
+  String get admActReportsView => 'Shikoyatlar ro‘yxati ko‘rildi';
 }

@@ -31,6 +31,14 @@ extension SupportStrings on AppLocalizations {
     'ROLE_GRANTED' => admActRoleGranted,
     'ROLE_REVOKED' => admActRoleRevoked,
     'ROLE_CHANGED' => admActRoleChanged,
+    'ADMIN_ROLE_SET' => admActAdminRoleSet,
+    'USER_SUSPENDED' => admActUserSuspended,
+    'USER_RESTORED' => admActUserRestored,
+    'REPORTS_VIEW' => admActReportsView,
+    'REPORT_NOTE' => admActReportNote,
+    'REPORT_RESOLVED' => admActReportResolved,
+    'REPORT_REOPENED' => admActReportReopened,
+    'ADMIN_BOOTSTRAP' => admActAdminBootstrap,
     _ => admActOther,
   };
 

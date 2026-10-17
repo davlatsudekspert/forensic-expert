@@ -15986,6 +15986,762 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Evidence from the literature (in full)'**
   String get litClaimsTitle;
+
+  /// Visible support contact line; tapping opens the mail app.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact: {email}'**
+  String contactLine(String email);
+
+  /// Title of the report screen and the profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a report'**
+  String get repTitle;
+
+  /// Subtitle of the profile row that opens the report form.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate content, a bug, advertising or anything else'**
+  String get repProfileHint;
+
+  /// Intro text on the report form.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell us about inappropriate content, a bug or another problem. You can send a report without signing in.'**
+  String get repIntro;
+
+  /// Label of the report type dropdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get repKindField;
+
+  /// Report type: complaint.
+  ///
+  /// In en, this message translates to:
+  /// **'Complaint'**
+  String get repKindComplaint;
+
+  /// Report type: inappropriate content.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate content'**
+  String get repKindInappropriate;
+
+  /// Report type: bug.
+  ///
+  /// In en, this message translates to:
+  /// **'Bug'**
+  String get repKindBug;
+
+  /// Report type: advertising or spam.
+  ///
+  /// In en, this message translates to:
+  /// **'Advertising'**
+  String get repKindAdvertising;
+
+  /// Report type: other.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get repKindOther;
+
+  /// Label of the report text field.
+  ///
+  /// In en, this message translates to:
+  /// **'What happened?'**
+  String get repBody;
+
+  /// Helper text under the report text field.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not write personal data, case numbers or patient information.'**
+  String get repBodyHint;
+
+  /// Validation message for a too short report.
+  ///
+  /// In en, this message translates to:
+  /// **'Write at least {min} characters.'**
+  String repBodyShort(int min);
+
+  /// Label of the optional contact field.
+  ///
+  /// In en, this message translates to:
+  /// **'E-mail for a reply (optional)'**
+  String get repContact;
+
+  /// Helper text under the optional contact field.
+  ///
+  /// In en, this message translates to:
+  /// **'If you are not signed in, leave an address if you want a reply.'**
+  String get repContactHint;
+
+  /// Privacy note under the report form.
+  ///
+  /// In en, this message translates to:
+  /// **'The text is stored only to review your report. To fight spam, an irreversible hash of the device or network address is kept; the address itself is not.'**
+  String get repPrivacy;
+
+  /// Send button.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get repSend;
+
+  /// Confirmation after sending a report.
+  ///
+  /// In en, this message translates to:
+  /// **'Your report was sent. Thank you.'**
+  String get repSent;
+
+  /// Server rejected the report as invalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the text and try again.'**
+  String get repInvalid;
+
+  /// Rate limit message.
+  ///
+  /// In en, this message translates to:
+  /// **'You can send up to {n} reports per hour. Try again later.'**
+  String repRateLimited(int n);
+
+  /// Network or server error while sending a report.
+  ///
+  /// In en, this message translates to:
+  /// **'Not sent. Check your connection and try again.'**
+  String get repFailed;
+
+  /// Message for a suspended account.
+  ///
+  /// In en, this message translates to:
+  /// **'This account is suspended. Write to us by e-mail for help.'**
+  String get repSuspended;
+
+  /// Honest empty state when no backend is connected.
+  ///
+  /// In en, this message translates to:
+  /// **'The report service is not connected in this build. Write to us by e-mail.'**
+  String get repUnavailable;
+
+  /// Section with the signed-in user's own reports.
+  ///
+  /// In en, this message translates to:
+  /// **'My reports'**
+  String get repMine;
+
+  /// Report status: open.
+  ///
+  /// In en, this message translates to:
+  /// **'Under review'**
+  String get repStatusOpen;
+
+  /// Report status: resolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved'**
+  String get repStatusResolved;
+
+  /// Title of the rules acceptance screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Community rules'**
+  String get ctTitle;
+
+  /// Draft label on the rules acceptance screen.
+  ///
+  /// In en, this message translates to:
+  /// **'This text is a draft and must be checked by a lawyer before the public release.'**
+  String get ctDraft;
+
+  /// Zero-tolerance statement shown before accepting the rules.
+  ///
+  /// In en, this message translates to:
+  /// **'Abusive, hateful, violent, illegal or spam content is not allowed. Every post has «Report» and «Block author» buttons. Content that breaks the rules can be removed and the account suspended.'**
+  String get ctZeroTolerance;
+
+  /// Button that opens the Terms of Use draft.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Use (draft)'**
+  String get ctOpenTerms;
+
+  /// Checkbox label.
+  ///
+  /// In en, this message translates to:
+  /// **'I have read the rules and accept them'**
+  String get ctAgree;
+
+  /// Accept button.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get ctAccept;
+
+  /// Decline button.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get ctDecline;
+
+  /// Error when accepting the rules failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Not saved. Try again.'**
+  String get ctSaveFailed;
+
+  /// Title of the blocked authors screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocked authors'**
+  String get blkTitle;
+
+  /// Explains blocking.
+  ///
+  /// In en, this message translates to:
+  /// **'Posts of blocked authors are hidden from you. You are not shown who they are.'**
+  String get blkIntro;
+
+  /// Empty state of the blocked list.
+  ///
+  /// In en, this message translates to:
+  /// **'You have not blocked anyone.'**
+  String get blkEmpty;
+
+  /// Row title in the blocked list.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocked author'**
+  String get blkItem;
+
+  /// Row subtitle: block date.
+  ///
+  /// In en, this message translates to:
+  /// **'since {date}'**
+  String blkSince(String date);
+
+  /// Unblock button.
+  ///
+  /// In en, this message translates to:
+  /// **'Unblock'**
+  String get blkUnblock;
+
+  /// Confirmation after unblocking.
+  ///
+  /// In en, this message translates to:
+  /// **'Unblocked.'**
+  String get blkUnblocked;
+
+  /// Block button on a post.
+  ///
+  /// In en, this message translates to:
+  /// **'Block author'**
+  String get blkAction;
+
+  /// Block confirmation title.
+  ///
+  /// In en, this message translates to:
+  /// **'Block this author?'**
+  String get blkConfirmTitle;
+
+  /// Block confirmation body.
+  ///
+  /// In en, this message translates to:
+  /// **'You will no longer see this author\'s questions and answers. You are not told who it is. You can undo this in the blocked list.'**
+  String get blkConfirmBody;
+
+  /// Confirmation after blocking.
+  ///
+  /// In en, this message translates to:
+  /// **'Author blocked.'**
+  String get blkDone;
+
+  /// Already blocked.
+  ///
+  /// In en, this message translates to:
+  /// **'This author is already blocked.'**
+  String get blkAlready;
+
+  /// Self block attempt.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot block yourself.'**
+  String get blkSelf;
+
+  /// Block or load failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not complete. Try again.'**
+  String get blkFailed;
+
+  /// Admin section tile title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports'**
+  String get admxNavReports;
+
+  /// Admin section tile subtitle with the open count.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} open'**
+  String admxNavReportsHint(int n);
+
+  /// Admin reports screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports'**
+  String get admxReportsTitle;
+
+  /// Search hint in the admin reports list.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by text or e-mail'**
+  String get admxReportsSearch;
+
+  /// Filter: open.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get admxOpen;
+
+  /// Filter: resolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved'**
+  String get admxResolvedFilter;
+
+  /// Filter: all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get admxAll;
+
+  /// Filter: any report type.
+  ///
+  /// In en, this message translates to:
+  /// **'All types'**
+  String get admxKindAny;
+
+  /// Link from the reports list to the existing Q&A moderation queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Q&A moderation (posts reported by three people)'**
+  String get admxQaLink;
+
+  /// Empty admin reports list.
+  ///
+  /// In en, this message translates to:
+  /// **'No reports.'**
+  String get admxReportsEmpty;
+
+  /// Pagination.
+  ///
+  /// In en, this message translates to:
+  /// **'Load more'**
+  String get admxLoadMore;
+
+  /// Reporter was not signed in.
+  ///
+  /// In en, this message translates to:
+  /// **'Not signed in'**
+  String get admxAnonymous;
+
+  /// Contact given by the reporter.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact: {value}'**
+  String admxContact(String value);
+
+  /// Target type of the report (technical code).
+  ///
+  /// In en, this message translates to:
+  /// **'About: {type}'**
+  String admxTarget(String type);
+
+  /// Admin note field.
+  ///
+  /// In en, this message translates to:
+  /// **'Note (admins only)'**
+  String get admxNoteLabel;
+
+  /// Save note button.
+  ///
+  /// In en, this message translates to:
+  /// **'Save note'**
+  String get admxNoteSave;
+
+  /// Confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Note saved.'**
+  String get admxNoteSaved;
+
+  /// Resolve button.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as resolved'**
+  String get admxResolve;
+
+  /// Reopen button.
+  ///
+  /// In en, this message translates to:
+  /// **'Reopen'**
+  String get admxReopen;
+
+  /// Confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Report marked as resolved.'**
+  String get admxResolvedDone;
+
+  /// Confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Report reopened.'**
+  String get admxReopened;
+
+  /// Generic admin action error.
+  ///
+  /// In en, this message translates to:
+  /// **'Action failed. Try again.'**
+  String get admxActionFailed;
+
+  /// Tooltip of the user actions button.
+  ///
+  /// In en, this message translates to:
+  /// **'Actions'**
+  String get admxActions;
+
+  /// Hint at the top of the user actions sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Every action is checked by the server and written to the audit log.'**
+  String get admxActionsHint;
+
+  /// Reason field of the user actions sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason'**
+  String get admxReason;
+
+  /// Helper text for the reason.
+  ///
+  /// In en, this message translates to:
+  /// **'At least 5 characters. Saved in the audit log.'**
+  String get admxReasonHint;
+
+  /// Validation.
+  ///
+  /// In en, this message translates to:
+  /// **'The reason must be at least 5 characters.'**
+  String get admxReasonShort;
+
+  /// Cancel button.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get admxCancel;
+
+  /// Confirm button.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get admxConfirm;
+
+  /// Shown instead of actions when the admin opens their own row.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot change your own role or suspend your own account.'**
+  String get admxSelfNote;
+
+  /// Grant the publication_moderator role.
+  ///
+  /// In en, this message translates to:
+  /// **'Make publication moderator'**
+  String get admxModeratorGrant;
+
+  /// Revoke the publication_moderator role.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove moderator role'**
+  String get admxModeratorRemove;
+
+  /// Revoke identity_admin.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove admin role'**
+  String get admxRemoveAdmin;
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove admin role?'**
+  String get admxRemoveAdminTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'This person loses access to the admin panel at once. The last admin cannot be removed. A scientific reviewer role is separate and is not changed here.'**
+  String get admxRemoveAdminBody;
+
+  /// Shown instead of the suspend button for admins.
+  ///
+  /// In en, this message translates to:
+  /// **'An admin account cannot be suspended.'**
+  String get admxAdminNotSuspendable;
+
+  /// Suspend button.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend account'**
+  String get admxSuspend;
+
+  /// Restore button.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore account'**
+  String get admxRestore;
+
+  /// Dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend this account?'**
+  String get admxSuspendTitle;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'The person is signed out everywhere and cannot sign in again until you restore the account. The action is written to the audit log.'**
+  String get admxSuspendConfirmBody;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Role granted.'**
+  String get admxRoleGranted;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Role removed.'**
+  String get admxRoleRevoked;
+
+  /// Result: already in that state.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing changed.'**
+  String get admxNoChange;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'User not found.'**
+  String get admxUserNotFound;
+
+  /// Result: role not grantable in-app.
+  ///
+  /// In en, this message translates to:
+  /// **'This role cannot be granted from the app. The owner does it on the server.'**
+  String get admxRoleForbidden;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'The e-mail address is not confirmed.'**
+  String get admxEmailUnconfirmed;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot change your own admin role.'**
+  String get admxSelfAdmin;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'The last admin cannot be removed.'**
+  String get admxLastAdmin;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'An admin cannot be suspended.'**
+  String get admxCannotSuspendAdmin;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot suspend yourself.'**
+  String get admxCannotSuspendSelf;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Account suspended. Its sessions were closed.'**
+  String get admxSuspended;
+
+  /// Result.
+  ///
+  /// In en, this message translates to:
+  /// **'Account restored.'**
+  String get admxRestored;
+
+  /// Section title of the extended statistics.
+  ///
+  /// In en, this message translates to:
+  /// **'Roles, reports and objects'**
+  String get admxExtTitle;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Admins'**
+  String get admxStatAdmins;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderators'**
+  String get admxStatModerators;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspended'**
+  String get admxStatSuspended;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Open reports'**
+  String get admxStatReportsOpen;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved reports'**
+  String get admxStatReportsResolved;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Q&A questions'**
+  String get admxStatQaQuestions;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Q&A answers'**
+  String get admxStatQaAnswers;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'In moderation'**
+  String get admxStatQaModeration;
+
+  /// Stat label.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocks'**
+  String get admxStatBlocks;
+
+  /// Honest note: casebooks are not on the server.
+  ///
+  /// In en, this message translates to:
+  /// **'Casebooks: stored on the device, not counted.'**
+  String get admxCasebookNote;
+
+  /// Honest note: no real-time presence.
+  ///
+  /// In en, this message translates to:
+  /// **'Online now: not available (there is no activity tracking).'**
+  String get admxOnlineNote;
+
+  /// Section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloads and sales'**
+  String get admxStoresTitle;
+
+  /// Honest note about downloads.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloads: the server cannot see them. Open the store consoles.'**
+  String get admxDownloadsNote;
+
+  /// Honest note about sales.
+  ///
+  /// In en, this message translates to:
+  /// **'Sales: 0 — there is no payment system.'**
+  String get admxSalesNote;
+
+  /// Button that opens App Store Connect.
+  ///
+  /// In en, this message translates to:
+  /// **'App Store Connect'**
+  String get admxOpenAsc;
+
+  /// Button that opens Google Play Console.
+  ///
+  /// In en, this message translates to:
+  /// **'Google Play Console'**
+  String get admxOpenPlay;
+
+  /// External link failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the link.'**
+  String get admxOpenFailed;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Role changed from the panel'**
+  String get admActAdminRoleSet;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Account suspended'**
+  String get admActUserSuspended;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Account restored'**
+  String get admActUserRestored;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Note on a report'**
+  String get admActReportNote;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Report resolved'**
+  String get admActReportResolved;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Report reopened'**
+  String get admActReportReopened;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'First admin assigned (owner bootstrap)'**
+  String get admActAdminBootstrap;
+
+  /// Audit action label.
+  ///
+  /// In en, this message translates to:
+  /// **'Report list viewed'**
+  String get admActReportsView;
 }
 
 class _AppLocalizationsDelegate
