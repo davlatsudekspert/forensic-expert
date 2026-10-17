@@ -47,7 +47,7 @@ jobs:
           [ -d tools/slides/out ] || exit 0
           mkdir -p /tmp/o && cp -r tools/slides/out/. /tmp/o/
           git config user.name "slides-bot"; git config user.email "slides-bot@users.noreply.github.com"
-          git fetch origin slides-out 2>/dev/null && git checkout -B slides-out origin/slides-out || git checkout --orphan slides-out
-          git rm -rfq . 2>/dev/null || true
+          if git fetch origin slides-out 2>/dev/null; then git checkout -B slides-out origin/slides-out
+          else git checkout --orphan slides-out; git rm -rfq . ; fi
           mkdir -p "$TOPIC" && cp -r /tmp/o/. "$TOPIC/"
           git add "$TOPIC" && git commit -qm "slides output: $TOPIC" && git push -q origin slides-out
