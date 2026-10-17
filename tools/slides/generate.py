@@ -60,6 +60,26 @@ def build_user_prompt(topic, sources):
     return "\n".join(parts)
 
 
+def canonicalize_sources(data, sources):
+    """Model manbani qisqartirib yozishi mumkin: yagona manba bo'lsa, author/title ni aniq nomga almashtiradi (bet saqlanadi)."""
+    def fix(src):
+        if not isinstance(src, dict) or not src.get("page"):
+            return
+        for s in sources:
+            a, t = (src.get("author") or "").strip().lower(), (src.get("title") or "").strip().lower()
+            sa, st = s["author"].strip().lower(), s["title"].strip().lower()
+            if len(sources) == 1 or a in sa or sa in a or t in st or st in t:
+                src["author"], src["title"] = s["author"], s["title"]
+                return
+    for sl in data.get("slides", []):
+        for b in sl.get("bullets", []):
+            fix(b.get("source"))
+    for e in data.get("extras", []) or []:
+        fix(e.get("source"))
+    for q in data.get("mcq", []):
+        fix(q.get("source"))
+
+
 def validate_output(data, sources):
     """Manbasiz band/savol rad etiladi; manba ro'yxatda bo'lishi shart."""
     allowed = {(s["author"].strip().lower(), s["title"].strip().lower()) for s in sources}
@@ -127,6 +147,9 @@ def run(topic_id, sources_path, max_usd, dry_run, out_dir, client=None):
         import anthropic
         client = anthropic.Anthropic(api_key=key)
     data = call_api(client, SYSTEM_PROMPT, user)
+    canonicalize_sources(data, sources)
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
+    (Path(out_dir) / f"{topic_id}.unvalidated.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     validate_output(data, sources)
     data["topic"] = topic["title"]
     data["sources"] = [{k: s.get(k) for k in ("author", "title", "year", "pages")} for s in sources]
