@@ -1,0 +1,27 @@
+name: l10n-api
+# Dispatch stub: the job that runs is the copy in the ref chosen at dispatch time.
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Vazifa: arb (ARB tekshiruvi), content (tarjimasiz kontent), both"
+        type: choice
+        options: [arb, content, both]
+        default: arb
+      max_usd:
+        description: "Umumiy byudjet (USD, taxminiy narx; both bo'lsa ikkalasiga bo'linadi)"
+        default: "3.00"
+      dry_run:
+        description: "Dry-run (API chaqirilmaydi, faqat narx taxmini)"
+        type: boolean
+        default: true
+      batch_limit:
+        description: "ARB: faqat dastlabki N batch (0 = hammasi; sinov uchun 1-2)"
+        default: "0"
+permissions:
+  contents: read
+jobs:
+  stub:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run this workflow from the feature branch ref (claude/phase-8-12-final-release)."
