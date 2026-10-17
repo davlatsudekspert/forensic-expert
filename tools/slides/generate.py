@@ -11,7 +11,7 @@ PRICE_OUT_PER_MTOK_USD = 15.00  # TEKSHIRILMAGAN taxmin
 CHARS_PER_TOKEN = 3.0           # o'zbek lotin uchun konservativ taxmin
 MAX_TOKENS = 9000  # bosqich uchun eng katta chegara
 TEMPERATURE = 0.2
-MAX_SOURCE_CHARS = 60000
+MAX_SOURCE_CHARS = 150000
 PENDING = "ADABIYOT KUTILMOQDA"
 
 SYSTEM_PROMPT = """Siz sud-tibbiyot fani o'qituvchisi uchun ma'ruza materiali tayyorlaysiz.

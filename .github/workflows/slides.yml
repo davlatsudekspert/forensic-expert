@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       topic_id:
-        description: "Mavzu id (masalan 4-kurs-davolash-01)"
+        description: "Mavzu id yoki vergul bilan ro'yxat"
         required: true
       max_usd:
         description: "Bir ishga tushirish byudjeti (USD)"
@@ -31,8 +31,12 @@ jobs:
           DRY: ${{ inputs.dry_run }}
         run: |
           FLAG=""; [ "$DRY" = "true" ] && FLAG="--dry-run"
-          SRC=""; [ -f sources_private/sources.json ] && SRC="--sources sources_private/sources.json"; python generate.py "$TOPIC" --max-usd "$MAXUSD" $SRC $FLAG
-          if [ -f "out/$TOPIC.json" ]; then python build_pptx.py "out/$TOPIC.json"; fi
+          SRC=""; [ -f sources_private/sources.json ] && SRC="--sources sources_private/sources.json"
+          for T in ${TOPIC//,/ }; do
+            echo "=== $T ==="
+            python generate.py "$T" --max-usd "$MAXUSD" $SRC $FLAG || echo "FAIL $T"
+            if [ -f "out/$T.json" ]; then python build_pptx.py "out/$T.json" || echo "PPTX FAIL $T"; fi
+          done
       - uses: actions/upload-artifact@v4
         if: ${{ always() && inputs.dry_run != true }}
         with:
@@ -49,5 +53,5 @@ jobs:
           git config user.name "slides-bot"; git config user.email "slides-bot@users.noreply.github.com"
           if git fetch origin slides-out 2>/dev/null; then git checkout -B slides-out origin/slides-out
           else git checkout --orphan slides-out; git rm -rfq . ; fi
-          mkdir -p "$TOPIC" && cp -r /tmp/o/. "$TOPIC/"
-          git add "$TOPIC" && git commit -qm "slides output: $TOPIC" && git push -q origin slides-out
+          mkdir -p out && cp -r /tmp/o/. out/
+          git add out && git commit -qm "slides output: $TOPIC" && git push -q origin slides-out
