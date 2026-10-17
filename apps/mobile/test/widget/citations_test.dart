@@ -137,6 +137,17 @@ void main() {
     bool isCite(Widget w) =>
         w.key is ValueKey<String> &&
         (w.key! as ValueKey<String>).value.startsWith('provenance.cite.');
+    // Sheet is a lazy ListView: the source block sits below the fold.
+    await tester.scrollUntilVisible(
+      find.byWidgetPredicate(isCite),
+      200,
+      scrollable: find
+          .descendant(
+            of: find.byKey(const Key('provenance.sheet')),
+            matching: find.byType(Scrollable),
+          )
+          .first,
+    );
     final cite = find.byWidgetPredicate(isCite).first;
     await tester.ensureVisible(cite);
     await tester.pumpAndSettle();

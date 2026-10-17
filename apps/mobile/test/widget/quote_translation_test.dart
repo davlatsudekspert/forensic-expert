@@ -143,7 +143,15 @@ void main() {
     await scrollTo(tester, card);
     expect(find.textContaining(original), findsOneWidget);
     expect(find.text('Eskirgan tarjima'), findsNothing);
-    expect(find.text('Avtomatik tarjima — tekshirilmagan'), findsNothing);
+    // The claim's own statement may carry its own draft badge; the excerpt
+    // card itself must not.
+    expect(
+      find.descendant(
+        of: card,
+        matching: find.text('Avtomatik tarjima — tekshirilmagan'),
+      ),
+      findsNothing,
+    );
     expect(
       find.text(
         'Bu matnning o‘zbekcha tarjimasi hali tayyorlanmagan — asl tili: ingliz',
