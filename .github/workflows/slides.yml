@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       topic_id:
-        description: "Mavzu id yoki vergul bilan ro'yxat"
+        description: "Mavzu id yoki vergul bilan ro'yxat. Inglizcha rejim: id oxiriga :en (masalan ktp26-u-29:en)"
         required: true
       max_usd:
         description: "Bir ishga tushirish byudjeti (USD)"
@@ -22,6 +22,11 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install anthropic python-pptx
+      - name: Artifact nomi (":" upload-artifact da taqiqlangan)
+        id: art
+        env:
+          TOPIC: ${{ inputs.topic_id }}
+        run: echo "name=slides-${TOPIC//:/_}" >> "$GITHUB_OUTPUT"
       - name: Generate
         working-directory: tools/slides
         env:
@@ -33,16 +38,19 @@ jobs:
           FLAG=""; [ "$DRY" = "true" ] && FLAG="--dry-run"
           SRC=""; [ -f sources_private/sources.json ] && SRC="--sources sources_private/sources.json"
           BAD=0
-          for T in ${TOPIC//,/ }; do
-            echo "=== $T ==="
-            python generate.py "$T" --max-usd "$MAXUSD" $SRC $FLAG || { echo "FAIL $T"; BAD=1; }
-            if [ -f "out/$T.json" ]; then python build_pptx.py "out/$T.json" || { echo "PPTX FAIL $T"; BAD=1; }; fi
+          for ITEM in ${TOPIC//,/ }; do
+            T="${ITEM%%:*}"; LANGX=""; OUTID="$T"; LANGFLAG=""
+            if [ "$ITEM" != "$T" ]; then LANGX="${ITEM#*:}"; fi
+            if [ "$LANGX" = "en" ]; then LANGFLAG="--lang en"; OUTID="$T.en"; fi
+            echo "=== $ITEM ==="
+            python generate.py "$T" --max-usd "$MAXUSD" $SRC $FLAG $LANGFLAG || { echo "FAIL $ITEM"; BAD=1; }
+            if [ -f "out/$OUTID.json" ]; then python build_pptx.py "out/$OUTID.json" || { echo "PPTX FAIL $ITEM"; BAD=1; }; fi
           done
           exit $BAD
       - uses: actions/upload-artifact@v4
         if: ${{ always() && inputs.dry_run != true }}
         with:
-          name: slides-${{ inputs.topic_id }}
+          name: ${{ steps.art.outputs.name }}
           path: tools/slides/out/
           if-no-files-found: ignore
       - name: Natijani slides-out branchiga saqlash (maxfiy repo, ilovaga tushmaydi)

@@ -12,6 +12,16 @@ W, H = Inches(13.333), Inches(7.5)
 MX = Inches(0.7)  # overscan uchun chekka
 
 
+STR = {
+    "uz": {"page": "-bet", "pages": "betlar", "source": "Manba", "subtitle": "Sud tibbiyoti · ma’ruza taqdimoti",
+           "extras": "Qiziqarli ma’lumotlar", "quiz": "Bilimingizni sinang", "nq": "{n} ta test savoli",
+           "q": "Savol {i} / {n}", "a": "Javob {i}: {c}", "refs": "Adabiyotlar"},
+    "en": {"page": "p.", "pages": "pp.", "source": "Source", "subtitle": "Forensic medicine · lecture presentation",
+           "extras": "Did you know?", "quiz": "Quiz", "nq": "{n} quiz questions",
+           "q": "Question {i} / {n}", "a": "Answer {i}: {c}", "refs": "References"},
+}
+
+
 def _box(slide, x, y, w, h, fill, shape=MSO_SHAPE.RECTANGLE):
     s = slide.shapes.add_shape(shape, x, y, w, h)
     s.fill.solid(); s.fill.fore_color.rgb = fill; s.line.fill.background(); s.shadow.inherit = False
@@ -30,13 +40,16 @@ def _text(slide, x, y, w, h, text, size, color, bold=False, font="Calibri", alig
     return tf
 
 
-def _src(b):
+def _src(b, lang="uz"):
     s = b.get("source") or {}
     t = (s.get("title") or "").split("(")[0].split(",")[0].strip()
-    return f"{(s.get('author') or '').rstrip('.')}., {t}, {s.get('page','')}-bet"
+    a = (s.get("author") or "").rstrip(".")
+    if lang == "en":
+        return f"{a}, {t}, p. {s.get('page','')}"
+    return f"{a}., {t}, {s.get('page','')}-bet"
 
 
-def _srcline(items):
+def _srcline(items, lang="uz"):
     by = {}
     for b in items:
         s = b.get("source") or {}
@@ -45,6 +58,8 @@ def _srcline(items):
         p = str(s.get("page", "")).strip()
         if p and p not in by[k]:
             by[k].append(p)
+    if lang == "en":
+        return "; ".join(f"{a}, {t}, pp. {', '.join(ps)}" for (a, t), ps in by.items())
     return "; ".join(f"{a}., {t}, betlar: {', '.join(ps)}" for (a, t), ps in by.items())
 
 
@@ -110,7 +125,9 @@ def _diagram(slide, d, x, y, w, h):
         _text(slide, x, y + h + Inches(0.05), w, Inches(0.4), d["caption"][:70], 11, GREY)
 
 
-def build(data, out_path):
+def build(data, out_path, lang=None):
+    lang = lang or data.get("lang") or "uz"
+    L = STR.get(lang, STR["uz"])
     prs = Presentation(); prs.slide_width, prs.slide_height = W, H
     topic = data.get("topic", "")
     slides, mcq, extras = data["slides"], data.get("mcq", []), data.get("extras", [])
@@ -119,7 +136,7 @@ def build(data, out_path):
     s = prs.slides.add_slide(prs.slide_layouts[6])
     _box(s, 0, 0, W, H, NAVY); _box(s, MX, Inches(4.45), Inches(3), Inches(0.08), GOLD)
     _text(s, MX, Inches(1.9), W - 2 * MX, Inches(2.4), topic, 40, WHITE, True, "Georgia", anchor=MSO_ANCHOR.BOTTOM)
-    _text(s, MX, Inches(4.75), W - 2 * MX, Inches(0.6), "Sud tibbiyoti · ma’ruza taqdimoti", 20, GOLD)
+    _text(s, MX, Inches(4.75), W - 2 * MX, Inches(0.6), L["subtitle"], 20, GOLD)
     for sl in slides:
         n += 1
         s = _frame(prs, sl["title"], n, total, topic)
@@ -131,20 +148,20 @@ def build(data, out_path):
         _bullets(s, sl["bullets"], MX, Inches(1.55), bw, Inches(4.9), size, 8 if has_d else 12)
         if has_d:
             _diagram(s, d, MX + Inches(6.15), Inches(1.6), W - 2 * MX - Inches(6.15), Inches(4.2))
-        _text(s, MX, Inches(6.62), W - 2 * MX, Inches(0.35), "Manba: " + _srcline(sl["bullets"]), 10, GREY)
+        _text(s, MX, Inches(6.62), W - 2 * MX, Inches(0.35), L["source"] + ": " + _srcline(sl["bullets"], lang), 10, GREY)
         s.notes_slide.notes_text_frame.text = sl.get("teacher_notes", "")
     if extras:
         n += 1
-        s = _frame(prs, "Qiziqarli ma’lumotlar", n, total, topic)
+        s = _frame(prs, L["extras"], n, total, topic)
         _bullets(s, [{"text": e["text"]} for e in extras], MX, Inches(1.6), W - 2 * MX, Inches(5.2), 18)
     if mcq:
         n += 1
         s = prs.slides.add_slide(prs.slide_layouts[6]); _box(s, 0, 0, W, H, NAVY)
-        _text(s, MX, Inches(2.6), W - 2 * MX, Inches(1.4), "Bilimingizni sinang", 44, WHITE, True, "Georgia", anchor=MSO_ANCHOR.MIDDLE)
-        _text(s, MX, Inches(4.1), W - 2 * MX, Inches(0.6), f"{len(mcq)} ta test savoli", 22, GOLD)
+        _text(s, MX, Inches(2.6), W - 2 * MX, Inches(1.4), L["quiz"], 44, WHITE, True, "Georgia", anchor=MSO_ANCHOR.MIDDLE)
+        _text(s, MX, Inches(4.1), W - 2 * MX, Inches(0.6), L["nq"].format(n=len(mcq)), 22, GOLD)
         for i, q in enumerate(mcq, 1):
             n += 1
-            s = _frame(prs, f"Savol {i} / {len(mcq)}", n, total, topic)
+            s = _frame(prs, L["q"].format(i=i, n=len(mcq)), n, total, topic)
             _text(s, MX, Inches(1.55), W - 2 * MX, Inches(1.6), q["question"], 24, INK, True)
             for k, opt in enumerate(q["options"][:4]):
                 yy = Inches(3.3) + k * Inches(0.82)
@@ -153,12 +170,12 @@ def build(data, out_path):
                 _text(s, MX + Inches(0.9), yy, W - 2 * MX - Inches(0.9), Inches(0.68), opt, 20, INK, anchor=MSO_ANCHOR.MIDDLE)
         for i, q in enumerate(mcq, 1):
             n += 1
-            s = _frame(prs, f"Javob {i}: {'ABCD'[q['correct_index']]}", n, total, topic)
+            s = _frame(prs, L["a"].format(i=i, c="ABCD"[q["correct_index"]]), n, total, topic)
             _text(s, MX, Inches(1.6), W - 2 * MX, Inches(1.0), f"{'ABCD'[q['correct_index']]}. {q['options'][q['correct_index']]}", 24, NAVY, True)
             _text(s, MX, Inches(2.6), W - 2 * MX, Inches(3.6), q["explanation"], 20, INK)
-            _text(s, MX, Inches(6.4), W - 2 * MX, Inches(0.5), "Manba: " + _src(q), 11, GREY)
+            _text(s, MX, Inches(6.4), W - 2 * MX, Inches(0.5), L["source"] + ": " + _src(q, lang), 11, GREY)
     n += 1
-    s = _frame(prs, "Adabiyotlar", n, total, topic)
+    s = _frame(prs, L["refs"], n, total, topic)
     _bullets(s, [{"text": f"{(x.get('author') or '').rstrip('.')}. {x.get('title')}. {x.get('year') or ''}. {x.get('pages')}"} for x in data.get("sources", [])], MX, Inches(1.6), W - 2 * MX, Inches(5), 20)
     prs.save(out_path)
     return out_path
