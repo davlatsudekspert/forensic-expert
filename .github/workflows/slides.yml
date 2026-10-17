@@ -51,9 +51,19 @@ jobs:
           TOPIC: ${{ inputs.topic_id }}
         run: |
           [ -d tools/slides/out ] || exit 0
-          mkdir -p /tmp/o && cp -r tools/slides/out/. /tmp/o/
+          mkdir -p /tmp/o/raw && cp tools/slides/out/*.json tools/slides/out/*.pptx /tmp/o/ 2>/dev/null || true
+          cp tools/slides/out/raw_*.txt /tmp/o/raw/ 2>/dev/null || true
           git config user.name "slides-bot"; git config user.email "slides-bot@users.noreply.github.com"
           if git fetch origin slides-out 2>/dev/null; then git checkout -B slides-out origin/slides-out
           else git checkout --orphan slides-out; git rm -rfq . ; fi
-          mkdir -p out && cp -r /tmp/o/. out/
-          git add out && git commit -qm "slides output: $TOPIC" && git push -q origin slides-out
+          mkdir -p out "raw/$GITHUB_RUN_ID"
+          cp /tmp/o/*.json /tmp/o/*.pptx out/ 2>/dev/null || true
+          cp /tmp/o/raw/* "raw/$GITHUB_RUN_ID/" 2>/dev/null || true
+          git add out raw
+          git commit -qm "slides output: $TOPIC" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git push -q origin slides-out && exit 0
+            git fetch -q origin slides-out && git rebase origin/slides-out || { git rebase --abort; exit 1; }
+            sleep $((RANDOM % 5 + 2))
+          done
+          exit 1
