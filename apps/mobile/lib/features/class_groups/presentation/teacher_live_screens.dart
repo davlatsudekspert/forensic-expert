@@ -420,11 +420,12 @@ class _BigBoard extends StatelessWidget {
     final l = AppLocalizations.of(context);
     return LayoutBuilder(
       builder: (context, box) {
-        // Shrift ekran balandligiga qarab (720p/1080p proyektor).
-        final scale = (min(
-          box.maxHeight / 620,
-          box.maxWidth / 1100,
-        )).clamp(0.55, 1.8);
+        // Tik telefon: QR tepada, qatorlar to‘liq kenglikda.
+        final portrait = box.maxWidth < box.maxHeight;
+        // Shrift ekran o‘lchamiga qarab (telefon / 720p / 1080p proyektor).
+        final scale = portrait
+            ? (box.maxWidth / 440).clamp(0.6, 1.2)
+            : (min(box.maxHeight / 620, box.maxWidth / 1100)).clamp(0.55, 1.8);
         final code = d.group.code ?? '';
         final link = GroupCode.link(
           code,
@@ -467,9 +468,12 @@ class _BigBoard extends StatelessWidget {
           ),
         );
         final rowH = 44 * scale;
-        final available = box.maxHeight - 32;
+        final header = portrait ? 200 * scale : 0.0;
+        final available = box.maxHeight - 32 - header;
         final perCol = max(1, (available / rowH).floor());
-        final cols = max(1, min(4, (d.rows.length / perCol).ceil()));
+        final cols = portrait
+            ? 1
+            : max(1, min(4, (d.rows.length / perCol).ceil()));
         final shown = d.rows.take(perCol * cols).toList();
         Widget cell(int i, GroupBoardRow r) => SizedBox(
           height: rowH,
@@ -532,6 +536,68 @@ class _BigBoard extends StatelessWidget {
               ),
             ),
         ];
+        final waiting = Center(
+          child: Text(
+            l.grpBoardWaiting,
+            style: TextStyle(color: Colors.white70, fontSize: 22 * scale),
+          ),
+        );
+        if (portrait) {
+          return Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SizedBox(
+                  height: header,
+                  child: Row(
+                    children: [
+                      ClassQr(data: link, size: 150 * scale),
+                      SizedBox(width: 16 * scale),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            GroupCodeText(
+                              code: code,
+                              fontSize: 30 * scale,
+                              color: FeBrand.ivory,
+                            ),
+                            SizedBox(height: 6 * scale),
+                            Text(
+                              l.grpCounts(
+                                d.count(BoardState.joined),
+                                d.count(BoardState.solving),
+                                d.count(BoardState.finished),
+                              ),
+                              key: const Key('grp.boardCounts'),
+                              style: TextStyle(
+                                color: FeBrand.goldOnDark,
+                                fontSize: 15 * scale,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: d.rows.isEmpty
+                      ? waiting
+                      : Column(
+                          children: [
+                            for (var i = 0; i < shown.length; i++)
+                              cell(i, shown[i]),
+                          ],
+                        ),
+                ),
+              ],
+            ),
+          );
+        }
         return Padding(
           padding: const EdgeInsets.all(16),
           child: Row(
@@ -541,15 +607,7 @@ class _BigBoard extends StatelessWidget {
               SizedBox(width: 24 * scale),
               Expanded(
                 child: d.rows.isEmpty
-                    ? Center(
-                        child: Text(
-                          l.grpBoardWaiting,
-                          style: TextStyle(
-                            color: Colors.white70,
-                            fontSize: 22 * scale,
-                          ),
-                        ),
-                      )
+                    ? waiting
                     : Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: columns,

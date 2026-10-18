@@ -26,7 +26,9 @@ class ScrollCompactHysteresis {
   /// Yangi holat (o‘zgarmasa — `null`).
   bool? update(ScrollNotification n) {
     if (n.metrics.axis != Axis.vertical) return null;
-    if (n is ScrollUpdateNotification) {
+    // Faqat foydalanuvchi barmog‘i bilan surish (dasturiy jumpTo/
+    // ensureVisible va qo‘yib yuborilgandan keyingi bounce emas).
+    if (n is ScrollUpdateNotification && n.dragDetails != null) {
       final d = inBoundsScrollDelta(n.metrics, n.scrollDelta ?? 0);
       if (d == 0) return null;
       if (d.sign != _acc.sign) _acc = 0;
