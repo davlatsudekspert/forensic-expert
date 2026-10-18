@@ -9873,4 +9873,31 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get lessonQuizSoon =>
       'Quiz questions for this topic will be added soon';
+
+  @override
+  String get aiWebLabel => 'From the internet — unverified';
+
+  @override
+  String get aiWebNote =>
+      'Not found in the app’s knowledge base. This answer comes from a web search and is NOT verified by experts. Check it against primary sources.';
+
+  @override
+  String get aiWebSourcesTitle => 'Web sources';
+
+  @override
+  String get aiWebSearch => 'Search the internet';
+
+  @override
+  String get aiWebSearching => 'Searching the internet…';
+
+  @override
+  String get aiErrQuota =>
+      'The AI service quota is temporarily exhausted. Results from the knowledge base are shown.';
+
+  @override
+  String get aiErrOverloaded =>
+      'The AI service is busy right now. Results from the knowledge base are shown; try again in a minute.';
+
+  @override
+  String get aiWebOpenFailed => 'Could not open the link.';
 }

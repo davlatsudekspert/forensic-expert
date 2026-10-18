@@ -13,52 +13,31 @@
 // * Requires a signed-in user (Supabase verifies the JWT); per-user rate
 //   limit; question text and answers are NOT logged.
 import { createClient } from "jsr:@supabase/supabase-js@2";
+import {
+  callModels,
+  discoverModels,
+  candidateList,
+  kbBody,
+  partsText,
+  webBody,
+  webSourcesOf,
+} from "./gemini.ts";
 
 const FENCE = "<<<FE_CONTEXT>>>";
 const MAX_CHUNKS = 8;
 const MAX_CHUNK_CHARS = 1800;
 const MAX_QUESTION_CHARS = 1200;
 const HOURLY_LIMIT = Number(Deno.env.get("FE_AI_HOURLY_LIMIT") ?? "30");
-const API = "https://generativelanguage.googleapis.com/v1beta";
 const PREFERRED = [Deno.env.get("FE_AI_MODEL"), "gemini-flash-latest"]
   .filter((m): m is string => !!m);
-const DEADLINE_MS = 45_000; // the app waits up to 60 s; every attempt must finish before this
-const ATTEMPT_MS = 20_000;
-const DISCOVERY_MS = 5_000;
 let discovered: string[] | null = null;
 
-// Models change over time (old names return 404): ask the API which "flash"
-// models this key can use for generateContent. Cached per instance.
+// Models change over time (old names return 404): ask the API which stable
+// "flash" models this key can use. Cached per instance.
 async function candidateModels(key: string): Promise<string[]> {
-  if (discovered === null) {
-    // Built in a local first: the compiler cannot narrow a module-level
-    // variable across the await below.
-    let found: string[] = [];
-    try {
-      const r = await fetch(`${API}/models?pageSize=200`, {
-        headers: { "x-goog-api-key": key },
-        signal: AbortSignal.timeout(DISCOVERY_MS),
-      });
-      if (r.ok) {
-        const out = await r.json();
-        found = (out?.models ?? [])
-          .filter((m: { name?: string; supportedGenerationMethods?: string[] }) =>
-            /flash/i.test(m.name ?? "") && !/(image|tts|audio|live|embedding)/i.test(m.name ?? "") &&
-            (m.supportedGenerationMethods ?? []).includes("generateContent"))
-          .map((m: { name: string }) => m.name.replace(/^models\//, ""))
-          .sort((a: string, b: string) => b.localeCompare(a)); // newest first
-      } else {
-        console.error("gemini_models_status", r.status);
-      }
-    } catch (e) {
-      console.error("gemini_models_failed", e instanceof Error ? e.name : "error");
-    }
-    discovered = found;
-  }
-  return [...new Set([...PREFERRED, ...discovered])].slice(0, 5);
+  discovered ??= await discoverModels(key);
+  return candidateList(PREFERRED, discovered);
 }
-
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const SYSTEM = `You are FORENSIC EXPERT's scientific reference assistant for
 forensic science professionals and students.
@@ -75,6 +54,22 @@ Rules (non-negotiable):
 5. Do not request or repeat personal or case data.
 6. Reply in the language code given as "lang". Be concise and professional.
 Return JSON: {"text": string, "cited": string[]}.`;
+
+const WEB_SYSTEM = `You are FORENSIC EXPERT's scientific reference assistant for
+forensic science professionals and students. The question is NOT covered by the
+app's verified knowledge base, so use Google Search and answer from the web.
+Rules (non-negotiable):
+1. Forensic / toxicology / chemistry / medical-science REFERENCE information
+   only. Prefer authoritative sources (peer-reviewed papers, guidelines, agency
+   and manufacturer documents).
+2. Never give an official forensic conclusion, cause or manner of death, a
+   legal verdict, guilt assessment, treatment or dosing advice.
+3. Never invent numbers, cut-offs, DOIs or sources. If the sources disagree or
+   you are unsure, say so plainly; if you cannot find reliable information,
+   say that instead of guessing.
+4. Do not request or repeat personal or case data.
+5. Reply in plain text (no JSON, no markdown tables) in the language code given
+   as "lang". Be concise and professional. Do not write source URLs in the text.`;
 
 type Chunk = { id: string; title?: string; text: string };
 
@@ -108,90 +103,63 @@ Deno.serve(async (req) => {
     .eq("user_id", u.user.id).gte("created_at", since);
   if ((count ?? 0) >= HOURLY_LIMIT) return json({ error: "too_many_requests" }, 429);
 
-  let body: { question?: string; lang?: string; experience?: string; chunks?: Chunk[] };
+  let body: {
+    question?: string;
+    lang?: string;
+    experience?: string;
+    mode?: string;
+    chunks?: Chunk[];
+  };
   try {
     body = await req.json();
   } catch {
     return json({ error: "bad_request" }, 400);
   }
+  const web = body.mode === "web";
   const chunks = (body.chunks ?? []).slice(0, MAX_CHUNKS)
     .filter((c) => typeof c?.id === "string" && typeof c?.text === "string");
   const question = clean(body.question, MAX_QUESTION_CHARS).trim();
-  if (!question || chunks.length === 0) return json({ error: "no_context" }, 422);
+  if (!question || (!web && chunks.length === 0)) return json({ error: "no_context" }, 422);
   const lang = /^(en|ru|uz)$/.test(body.lang ?? "") ? body.lang : "en";
   const tutor = body.experience === "tutor";
+  const style = tutor ? "educational, explain terms" : "concise professional";
 
-  const context = chunks.map((c) =>
-    `[${clean(c.id, 80)}] ${clean(c.title, 200)}\n${clean(c.text, MAX_CHUNK_CHARS)}`
-  ).join("\n\n");
-  const prompt = `lang: ${lang}\nstyle: ${tutor ? "educational, explain terms" : "concise professional"}\n` +
-    `${FENCE}\n${context}\n${FENCE}\nQUESTION: ${question}`;
+  let build: (thinking: boolean) => unknown;
+  let parsed: { text?: string; cited?: string[] } = {};
+  let webText = "";
+  let accept: (out: any) => boolean;
+  if (web) {
+    build = webBody(WEB_SYSTEM, `lang: ${lang}\nstyle: ${style}\nQUESTION: ${question}`);
+    accept = (out) => {
+      webText = partsText(out).trim();
+      return webText.length > 0;
+    };
+  } else {
+    const context = chunks.map((c) =>
+      `[${clean(c.id, 80)}] ${clean(c.title, 200)}\n${clean(c.text, MAX_CHUNK_CHARS)}`
+    ).join("\n\n");
+    build = kbBody(
+      SYSTEM,
+      `lang: ${lang}\nstyle: ${style}\n${FENCE}\n${context}\n${FENCE}\nQUESTION: ${question}`,
+    );
+    accept = (out) => {
+      try {
+        parsed = JSON.parse(partsText(out));
+        return true;
+      } catch {
+        return false;
+      }
+    };
+  }
 
   await db.from("ai_usage").insert({ user_id: u.user.id });
 
-  const started = Date.now();
-  for (const model of await candidateModels(key)) {
-    // Thinking off where supported; retry without it if the model rejects it.
-    for (const attempt of [0, 1, 2]) {
-      // Budget per attempt so the whole request ends before the client gives up.
-      const remaining = DEADLINE_MS - (Date.now() - started);
-      if (remaining < 3_000) {
-        return json({ error: "upstream" }, 504);
-      }
-      const ctl = new AbortController();
-      const timer = setTimeout(() => ctl.abort(), Math.min(ATTEMPT_MS, remaining));
-      try {
-        const generationConfig: Record<string, unknown> = {
-          temperature: 0.1,
-          maxOutputTokens: 4096, // JSON mode: a truncated object is unparsable
-          responseMimeType: "application/json",
-        };
-        if (attempt === 0) generationConfig.thinkingConfig = { thinkingBudget: 0 };
-        const r = await fetch(`${API}/models/${model}:generateContent`, {
-          method: "POST",
-          signal: ctl.signal,
-          headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-          body: JSON.stringify({
-            systemInstruction: { parts: [{ text: SYSTEM }] },
-            contents: [{ role: "user", parts: [{ text: prompt }] }],
-            generationConfig,
-          }),
-        });
-        if (!r.ok) {
-          // Only the status code is logged (never key, question or answer).
-          console.error("gemini_status", model, r.status, attempt);
-          if (r.status === 400 && attempt === 0) continue; // retry without thinking
-          if ((r.status === 503 || r.status === 429 || r.status === 500) && attempt < 2) {
-            await sleep(1200);
-            continue;
-          }
-          break; // next model
-        }
-        const out = await r.json();
-        if (out?.promptFeedback?.blockReason) {
-          console.error("gemini_blocked", model);
-          return json({ error: "blocked" }, 422);
-        }
-        const raw = out?.candidates?.[0]?.content?.parts
-          ?.map((p: { text?: string; thought?: boolean }) => (p.thought ? "" : p.text ?? ""))
-          .join("") ?? "";
-        let parsed: { text?: string; cited?: string[] };
-        try {
-          parsed = JSON.parse(raw);
-        } catch {
-          console.error("gemini_unparsable", model, out?.candidates?.[0]?.finishReason ?? "none");
-          break;
-        }
-        const known = new Set(chunks.map((c) => c.id));
-        const cited = (parsed.cited ?? []).filter((id) => known.has(id));
-        return json({ text: String(parsed.text ?? ""), cited });
-      } catch (e) {
-        console.error("gemini_fetch_failed", model, e instanceof Error ? e.name : "error");
-        break;
-      } finally {
-        clearTimeout(timer);
-      }
-    }
+  const res = await callModels(key, await candidateModels(key), build, accept);
+  if (!res.ok) return json({ error: res.error }, res.status);
+  if (web) {
+    return json({ text: webText, web_sources: webSourcesOf(res.out), mode: "web" });
   }
-  return json({ error: "upstream" }, 502);
+  const known = new Set(chunks.map((c) => c.id));
+  const cited = (parsed.cited ?? []).filter((id) => known.has(id));
+  return json({ text: String(parsed.text ?? ""), cited });
 });

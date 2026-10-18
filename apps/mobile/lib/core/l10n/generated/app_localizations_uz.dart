@@ -9832,4 +9832,31 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get lessonQuizSoon =>
       'Bu mavzu uchun test savollari tez orada qo‘shiladi';
+
+  @override
+  String get aiWebLabel => 'Internetdan — tekshirilmagan';
+
+  @override
+  String get aiWebNote =>
+      'Ilova bazasida javob topilmadi. Bu javob internet qidiruvidan olingan va mutaxassislar tomonidan TEKSHIRILMAGAN. Asl manbalar bilan solishtiring.';
+
+  @override
+  String get aiWebSourcesTitle => 'Internet manbalari';
+
+  @override
+  String get aiWebSearch => 'Internetdan qidirish';
+
+  @override
+  String get aiWebSearching => 'Internetdan qidirilmoqda…';
+
+  @override
+  String get aiErrQuota =>
+      'AI xizmati limiti vaqtincha tugadi. Bazadagi natijalar ko‘rsatildi.';
+
+  @override
+  String get aiErrOverloaded =>
+      'AI xizmati hozir band. Bazadagi natijalar ko‘rsatildi; bir daqiqadan so‘ng qayta urinib ko‘ring.';
+
+  @override
+  String get aiWebOpenFailed => 'Havolani ochib bo‘lmadi.';
 }

@@ -20,6 +20,7 @@ import '../../casebook/presentation/casebook_blocks.dart';
 import '../../evidence/presentation/localized_content.dart';
 import '../../library/presentation/source_detail_screen.dart';
 import 'rag_sections.dart';
+import 'web_answer_view.dart';
 
 /// Forensic AI. Production AI provayderi ulanmaguncha ekran yuqorisida
 /// «Namoyish · ulanmagan» holati ko‘rsatiladi, «Yuborish» o‘chiq va javob
@@ -42,7 +43,9 @@ class _AiScreenState extends ConsumerState<AiScreen> {
   List<PiiFinding> _pii = const [];
   AiExperience _experience = AiExperience.professional;
   RagAnswer? _rag;
+  RagAnswer? _web; // foydalanuvchi «Internetdan qidirish» bosgan javob
   bool _searching = false;
+  bool _webSearching = false;
 
   @override
   void initState() {
@@ -63,6 +66,7 @@ class _AiScreenState extends ConsumerState<AiScreen> {
     setState(() {
       _searching = true;
       _rag = null;
+      _web = null;
     });
     try {
       final base = ref.read(ragPipelineProvider(lang));
@@ -86,6 +90,31 @@ class _AiScreenState extends ConsumerState<AiScreen> {
       if (mounted) setState(() => _rag = rag);
     } finally {
       if (mounted) setState(() => _searching = false);
+    }
+  }
+
+  /// Foydalanuvchi aniq so‘radi: internetdan (tekshirilmagan) javob.
+  Future<void> _askWeb(String lang) async {
+    final text = _controller.text.trim();
+    if (text.isEmpty || _webSearching) return;
+    FocusScope.of(context).unfocus();
+    setState(() => _webSearching = true);
+    try {
+      final rag = await ref
+          .read(ragPipelineProvider(lang))
+          .askWeb(
+            AiQuestion(
+              text: text,
+              languageCode: lang,
+              jurisdictionId: ref
+                  .read(settingsControllerProvider)
+                  .jurisdictionId,
+            ),
+            experience: _experience,
+          );
+      if (mounted) setState(() => _web = rag);
+    } finally {
+      if (mounted) setState(() => _webSearching = false);
     }
   }
 
@@ -278,7 +307,45 @@ class _AiScreenState extends ConsumerState<AiScreen> {
                   if (_rag case final a?) ...[
                     _AiResultView(answer: a),
                     if (a.evidence.isNotEmpty) RagSectionsView(answer: a),
+                    if (available &&
+                        a.outcome != RagOutcome.webAnswer &&
+                        a.outcome != RagOutcome.blocked &&
+                        a.outcome != RagOutcome.jurisdictionRequired &&
+                        _web == null)
+                      Align(
+                        alignment: AlignmentDirectional.centerStart,
+                        child: OutlinedButton.icon(
+                          key: const Key('ai.webSearch'),
+                          icon: const Icon(Icons.public),
+                          label: Text(l.aiWebSearch),
+                          onPressed: _webSearching || kinds.isNotEmpty
+                              ? null
+                              : () => _askWeb(
+                                  Localizations.localeOf(context).languageCode,
+                                ),
+                        ),
+                      ),
                   ],
+                  if (_webSearching)
+                    Padding(
+                      key: const Key('ai.web.progress'),
+                      padding: const EdgeInsets.only(top: FeSpace.sm),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          const LinearProgressIndicator(),
+                          const SizedBox(height: FeSpace.xs),
+                          Text(
+                            l.aiWebSearching,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  if (_web case final w?)
+                    _AiResultView(answer: w, webFollowUp: true),
                   if (!available && !needsSignIn) ...[
                     FeSectionHeader(l.aiPreviewTitle),
                     const _AnswerPreview(),
@@ -298,12 +365,18 @@ class _AiScreenState extends ConsumerState<AiScreen> {
 /// oflayn bazadan topilgan manbalar. Oflayn natija hech qachon AI javobi
 /// sifatida ko‘rsatilmaydi.
 class _AiResultView extends ConsumerWidget {
-  const _AiResultView({required this.answer});
+  const _AiResultView({required this.answer, this.webFollowUp = false});
 
   final RagAnswer answer;
 
+  /// Baza natijasi ostidagi internet so‘rovi: «topilmadi» bo‘sh holati
+  /// takrorlanmaydi, faqat xato xabari.
+  final bool webFollowUp;
+
   String? _failure(AppLocalizations l) => switch (answer.failureCode) {
     null => null,
+    'quota' => l.aiErrQuota,
+    'overloaded' => l.aiErrOverloaded,
     'too_many_requests' || '429' => l.aiErrRateLimited,
     'unauthorized' || 'not_signed_in' || '401' => l.aiErrSignIn,
     'offline' => l.aiErrOffline,
@@ -395,12 +468,26 @@ class _AiResultView extends ConsumerWidget {
               ),
             ],
           ),
-          RagOutcome.noReliableContext => FeEmptyState(
-            key: const Key('ai.noContext'),
-            icon: Icons.search_off,
-            body: l.aiNoContext,
-            compact: true,
+          RagOutcome.noReliableContext => Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (!webFollowUp)
+                FeEmptyState(
+                  key: const Key('ai.noContext'),
+                  icon: Icons.search_off,
+                  body: l.aiNoContext,
+                  compact: true,
+                ),
+              if (failure != null)
+                FeBanner(
+                  key: Key('ai.failure.${answer.failureCode}'),
+                  icon: Icons.cloud_off_outlined,
+                  tone: FeBannerTone.warning,
+                  text: failure,
+                ),
+            ],
           ),
+          RagOutcome.webAnswer => WebAnswerView(answer: answer),
           RagOutcome.answered => Column(
             key: const Key('ai.answer'),
             crossAxisAlignment: CrossAxisAlignment.stretch,

@@ -16,7 +16,7 @@ import 'supabase_rest.dart';
 ///
 /// Yoqish: `--dart-define=FE_AI_REMOTE=true` va Supabase konfiguratsiyasi.
 /// Aks holda ilova «Namoyish · ulanmagan» holatida qoladi.
-class SupabaseAiProvider implements AiProvider {
+class SupabaseAiProvider implements AiProvider, WebAiProvider {
   SupabaseAiProvider({
     required SupabaseConfig config,
     required AuthRepository auth,
@@ -63,6 +63,55 @@ class SupabaseAiProvider implements AiProvider {
   }
 
   Future<AiDraft> _generate(AiPrompt prompt) async {
+    final map = await _call({
+      'mode': 'kb',
+      'question': prompt.question.text,
+      'lang': prompt.question.languageCode,
+      'experience': prompt.experience.name,
+      'chunks': [
+        for (final c in prompt.chunks)
+          {'id': c.chunkId, 'title': c.title ?? '', 'text': c.text},
+      ],
+    });
+    final cited = map['cited'];
+    return AiDraft(
+      text: '${map['text'] ?? ''}',
+      citedChunkIds: [
+        if (cited is List)
+          for (final id in cited)
+            if (id is String) id,
+      ],
+    );
+  }
+
+  /// Internet rejimi (`mode: "web"`): baza javob bermaganda yoki foydalanuvchi
+  /// o‘zi so‘raganda. Natija TEKSHIRILMAGAN; manbalar alohida ro‘yxat.
+  @override
+  Future<WebAnswer> askWeb(AiQuestion q, AiExperience experience) async {
+    final map = await _call({
+      'mode': 'web',
+      'question': q.text,
+      'lang': q.languageCode,
+      'experience': experience.name,
+    });
+    final text = '${map['text'] ?? ''}'.trim();
+    if (text.isEmpty) throw const AiUnavailable('upstream');
+    final raw = map['web_sources'];
+    return WebAnswer(
+      text: text,
+      sources: [
+        if (raw is List)
+          for (final s in raw)
+            if (s is Map && s['uri'] is String)
+              WebSource(
+                title: '${s['title'] ?? s['uri']}',
+                uri: s['uri'] as String,
+              ),
+      ],
+    );
+  }
+
+  Future<Map<String, dynamic>> _call(Map<String, dynamic> body) async {
     final token = await _authRepo.accessToken();
     if (token == null) throw const AiUnavailable('not_signed_in');
     try {
@@ -70,26 +119,11 @@ class SupabaseAiProvider implements AiProvider {
         'POST',
         _cfg.url.resolve('functions/v1/ai-answer'),
         headers: {'apikey': _cfg.anonKey, 'Authorization': 'Bearer $token'},
-        jsonBody: {
-          'question': prompt.question.text,
-          'lang': prompt.question.languageCode,
-          'experience': prompt.experience.name,
-          'chunks': [
-            for (final c in prompt.chunks)
-              {'id': c.chunkId, 'title': c.title ?? '', 'text': c.text},
-          ],
-        },
+        jsonBody: body,
       );
+      // Server kodlari: quota | overloaded | upstream | too_many_requests …
       if (!r.ok) throw AiUnavailable('${r.map['error'] ?? r.status}');
-      final cited = r.map['cited'];
-      return AiDraft(
-        text: '${r.map['text'] ?? ''}',
-        citedChunkIds: [
-          if (cited is List)
-            for (final id in cited)
-              if (id is String) id,
-        ],
-      );
+      return r.map;
     } on SocketException {
       throw const AiUnavailable('offline');
     } on TimeoutException {

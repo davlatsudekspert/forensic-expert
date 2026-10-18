@@ -145,6 +145,73 @@ void main() {
     expect(r.limitations, contains('expert_judgment_required'));
   });
 
+  group('internet rejimi (baza bo‘sh)', () {
+    RagPipeline withWeb(WebAiProvider? w) => RagPipeline(
+      safety: const SafetyPolicy(RegexPiiScanner()),
+      retrieve: (q, i, j) => retrieval.retrieve(q, i, jurisdictionId: j),
+      provider: const UnconfiguredAiProvider(),
+      knownSourceIds: knownSources,
+      web: w,
+    );
+    Future<RagAnswer> run(RagPipeline p, String q) => p.ask(
+      AiQuestion(text: q, languageCode: 'en'),
+      experience: AiExperience.professional,
+      entitlement: ent,
+    );
+
+    test('chunk yo‘q -> avtomatik internet, baza iqtiboslarisiz', () async {
+      final w = _FakeWeb(
+        const WebAnswer(
+          text: 'From web',
+          sources: [WebSource(title: 'T', uri: 'https://x.org')],
+        ),
+      );
+      final r = await run(withWeb(w), 'zxqv wpfk');
+      expect(w.calls, 1);
+      expect(r.outcome, RagOutcome.webAnswer);
+      expect(r.text, 'From web');
+      expect(r.webSources.single.uri, 'https://x.org');
+      expect(r.sources, isEmpty);
+      expect(r.evidence, isEmpty);
+      expect(r.limitations, contains('web_unverified'));
+    });
+
+    test('chunk bor -> internetga chiqilmaydi', () async {
+      final w = _FakeWeb(const WebAnswer(text: 'x'));
+      final r = await run(withWeb(w), 'morphine glucuronide metabolites');
+      expect(w.calls, 0);
+      expect(r.outcome, RagOutcome.retrievalOnly);
+    });
+
+    test('xavfsizlik bloki internetga chiqmaydi', () async {
+      final w = _FakeWeb(const WebAnswer(text: 'x'));
+      final r = await run(withWeb(w), 'Is the driver guilty?');
+      expect(w.calls, 0);
+      expect(r.outcome, RagOutcome.blocked);
+    });
+
+    test(
+      'xato kodi uzatiladi; internet provayderi yo‘q -> eski xulq',
+      () async {
+        final bad = _FakeWeb(null, error: const _Unavailable('quota'));
+        final r = await run(withWeb(bad), 'zxqv wpfk');
+        expect(r.outcome, RagOutcome.noReliableContext);
+        expect(r.failureCode, 'quota');
+        final none = await run(withWeb(null), 'zxqv wpfk');
+        expect(none.outcome, RagOutcome.noReliableContext);
+        expect(none.failureCode, isNull);
+      },
+    );
+
+    test('internet javobi ham xavfsizlik tekshiruvidan o‘tadi', () async {
+      final w = _FakeWeb(
+        const WebAnswer(text: 'The cause of death was poisoning'),
+      );
+      final r = await run(withWeb(w), 'zxqv wpfk');
+      expect(r.outcome, RagOutcome.rejectedSafety);
+    });
+  });
+
   group('gallyutsinatsiyaga chidamlilik (mock provayder)', () {
     test(
       'mock javob — answered, lekin «mock_provider» deb belgilanadi',
@@ -302,4 +369,19 @@ class _Unavailable implements Exception {
 
   @override
   String toString() => 'AiUnavailable($code)';
+}
+
+class _FakeWeb implements WebAiProvider {
+  _FakeWeb(this.answer, {this.error});
+
+  final WebAnswer? answer;
+  final Exception? error;
+  int calls = 0;
+
+  @override
+  Future<WebAnswer> askWeb(AiQuestion q, AiExperience e) async {
+    calls++;
+    if (error != null) throw error!;
+    return answer!;
+  }
 }

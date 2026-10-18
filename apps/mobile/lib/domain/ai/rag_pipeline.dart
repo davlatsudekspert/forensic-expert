@@ -243,6 +243,10 @@ enum RagOutcome {
   /// qamramaydi"). Model matni ko‘rsatilmaydi — faqat sabab.
   notCovered,
   answered,
+
+  /// Baza javob bermadi; javob INTERNETdan (tekshirilmagan). Manbalar —
+  /// [RagAnswer.webSources], baza iqtiboslari emas.
+  webAnswer,
 }
 
 /// Tuzilgan javob: JAVOB · MANBALAR · DALIL HOLATI · YURISDIKSIYA ·
@@ -262,9 +266,13 @@ class RagAnswer {
     this.excludedRetracted = 0,
     this.providerMode = AiProviderMode.none,
     this.failureCode,
+    this.webSources = const [],
   });
 
   final RagOutcome outcome;
+
+  /// Faqat [RagOutcome.webAnswer]: internet manbalari (tekshirilmagan).
+  final List<WebSource> webSources;
 
   /// Server/tarmoq xatosi kodi (`too_many_requests`, `unauthorized`,
   /// `offline`, `upstream`, `not_configured`…) — UI tushunarli xabar beradi.
@@ -302,7 +310,12 @@ class RagPipeline {
     required this.knownSourceIds,
     this.providerMode = AiProviderMode.none,
     this.limit = 6,
+    this.web,
   });
+
+  /// Internet rejimi (baza bo‘sh bo‘lganda avtomatik yoki foydalanuvchi
+  /// so‘rovi bilan). `null` — internetga chiqilmaydi.
+  final WebAiProvider? web;
 
   final SafetyPolicy safety;
 
@@ -318,6 +331,55 @@ class RagPipeline {
   final Set<String> knownSourceIds;
   final AiProviderMode providerMode;
   final int limit;
+
+  /// Internet rejimi. Xavfsizlik tekshiruvi savol va javobga qo‘llanadi;
+  /// xato bo‘lsa — `noReliableContext` + `failureCode`.
+  Future<RagAnswer> askWeb(
+    AiQuestion q, {
+    required AiExperience experience,
+    int excluded = 0,
+  }) async {
+    final intent = AiIntentClassifier.classify(q.text);
+    final s = safety.checkQuestion(q.text);
+    if (!s.allowed) {
+      return RagAnswer(outcome: RagOutcome.blocked, intent: intent, safety: s);
+    }
+    final w = web;
+    if (w == null) {
+      return RagAnswer(
+        outcome: RagOutcome.noReliableContext,
+        intent: intent,
+        failureCode: 'not_configured',
+      );
+    }
+    final WebAnswer a;
+    try {
+      a = await w.askWeb(q, experience);
+    } on Exception catch (e) {
+      return RagAnswer(
+        outcome: RagOutcome.noReliableContext,
+        intent: intent,
+        excludedRetracted: excluded,
+        failureCode: failureCodeOf(e),
+      );
+    }
+    final out = safety.checkAnswer(a.text);
+    if (!out.allowed) {
+      return RagAnswer(
+        outcome: RagOutcome.rejectedSafety,
+        intent: intent,
+        safety: out,
+      );
+    }
+    return RagAnswer(
+      outcome: RagOutcome.webAnswer,
+      intent: intent,
+      text: a.text,
+      webSources: a.sources,
+      limitations: const ['web_unverified', 'expert_judgment_required'],
+      excludedRetracted: excluded,
+    );
+  }
 
   Future<RagAnswer> ask(
     AiQuestion q, {
@@ -343,6 +405,10 @@ class RagPipeline {
     final ranked = EvidenceRanker.rank(raw).take(limit).toList();
     final excluded = raw.where((c) => c.excluded).length;
     if (ranked.isEmpty) {
+      // Baza bo‘sh: ulangan bo‘lsa, internetdan (tekshirilmagan) javob.
+      if (web != null && entitlement.canAsk && !needsJ) {
+        return askWeb(q, experience: experience, excluded: excluded);
+      }
       return RagAnswer(
         outcome: RagOutcome.noReliableContext,
         intent: intent,

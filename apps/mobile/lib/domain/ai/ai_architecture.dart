@@ -70,6 +70,30 @@ class AiDraft {
   final List<String> citedChunkIds;
 }
 
+/// Internetdan topilgan manba (sarlavha + havola). Hech qachon oflayn baza
+/// iqtiboslari bilan aralashtirilmaydi.
+@immutable
+class WebSource {
+  const WebSource({required this.title, required this.uri});
+
+  final String title;
+  final String uri;
+}
+
+/// Internetdan olingan, TEKSHIRILMAGAN javob (Google Search grounding).
+@immutable
+class WebAnswer {
+  const WebAnswer({required this.text, this.sources = const []});
+
+  final String text;
+  final List<WebSource> sources;
+}
+
+/// Oflayn bazada javob bo‘lmaganda internetdan qidiradigan provayder.
+abstract interface class WebAiProvider {
+  Future<WebAnswer> askWeb(AiQuestion question, AiExperience experience);
+}
+
 /// LLM provayderi (kelajak: server orqali). Ilovada kalit yo‘q.
 abstract interface class AiProvider {
   bool get isConfigured;

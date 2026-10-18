@@ -323,6 +323,108 @@ void main() {
       );
     });
 
+    test('web rejimi: mode=web, web_sources tahlili, chunks yo‘q', () async {
+      final t = FakeTransport((m, u, b) {
+        if (u.path.contains('/functions/v1/ai-answer')) {
+          return const RestResponse(200, {
+            'text': 'Web text',
+            'mode': 'web',
+            'web_sources': [
+              {'title': 'A', 'uri': 'https://a.org'},
+              {'uri': 'https://b.org'},
+              {'title': 'bad'},
+              42,
+            ],
+          });
+        }
+        return RestResponse(200, _session('e@x.org'));
+      });
+      final ai = SupabaseAiProvider(
+        config: _cfg,
+        auth: await signedIn(t),
+        transport: t,
+      );
+      final w = await ai.askWeb(
+        const AiQuestion(text: 'q', languageCode: 'uz'),
+        AiExperience.tutor,
+      );
+      expect(w.text, 'Web text');
+      expect(w.sources.map((s) => (s.title, s.uri)), [
+        ('A', 'https://a.org'),
+        ('https://b.org', 'https://b.org'),
+      ]);
+      final body = t.calls.last.$4! as Map;
+      expect(body['mode'], 'web');
+      expect(body.containsKey('chunks'), isFalse);
+    });
+
+    test('kb rejimi: mode=kb yuboriladi', () async {
+      final t = FakeTransport((m, u, b) {
+        if (u.path.contains('/functions/v1/ai-answer')) {
+          return const RestResponse(200, {
+            'text': 'A',
+            'cited': ['c1'],
+          });
+        }
+        return RestResponse(200, _session('e@x.org'));
+      });
+      final ai = SupabaseAiProvider(
+        config: _cfg,
+        auth: await signedIn(t),
+        transport: t,
+      );
+      await ai.generate(prompt);
+      expect((t.calls.last.$4! as Map)['mode'], 'kb');
+    });
+
+    test('server xato kodlari (quota/overloaded/upstream) uzatiladi', () async {
+      for (final (status, code) in [
+        (429, 'quota'),
+        (503, 'overloaded'),
+        (502, 'upstream'),
+      ]) {
+        final t = FakeTransport((m, u, b) {
+          if (u.path.contains('/functions/v1/ai-answer')) {
+            return RestResponse(status, {'error': code});
+          }
+          return RestResponse(200, _session('e@x.org'));
+        });
+        final ai = SupabaseAiProvider(
+          config: _cfg,
+          auth: await signedIn(t),
+          transport: t,
+        );
+        await expectLater(
+          ai.askWeb(
+            const AiQuestion(text: 'q', languageCode: 'uz'),
+            AiExperience.professional,
+          ),
+          throwsA(isA<AiUnavailable>().having((e) => e.code, 'code', code)),
+        );
+      }
+    });
+
+    test('web javobi bo‘sh matn -> upstream', () async {
+      final t = FakeTransport((m, u, b) {
+        if (u.path.contains('/functions/v1/ai-answer')) {
+          return const RestResponse(200, {'text': '  '});
+        }
+        return RestResponse(200, _session('e@x.org'));
+      });
+      final ai = SupabaseAiProvider(
+        config: _cfg,
+        auth: await signedIn(t),
+        transport: t,
+      );
+      await expectLater(
+        ai.askWeb(
+          const AiQuestion(text: 'q', languageCode: 'uz'),
+          AiExperience.professional,
+        ),
+        throwsA(isA<AiUnavailable>()),
+      );
+    });
+
     test('kirmagan foydalanuvchi / server xatosi — AiUnavailable', () async {
       final t = FakeTransport((m, u, b) => const RestResponse(429, {}));
       final notSigned = SupabaseAiProvider(

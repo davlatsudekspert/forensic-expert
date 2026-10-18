@@ -2843,5 +2843,21 @@
   "lessonViewerSlideLabel": "Слайд {n}",
   "lessonViewerHintNav": "Листайте или нажимайте для перехода",
   "lessonQuizStart": "Начать тест по этой теме",
-  "lessonQuizSoon": "Вопросы теста по этой теме скоро будут добавлены"
+  "lessonQuizSoon": "Вопросы теста по этой теме скоро будут добавлены",
+  "aiWebLabel": "Из интернета — не проверено",
+  "@aiWebLabel": {"description": "AI web fallback."},
+  "aiWebNote": "В базе знаний приложения ответа не найдено. Этот ответ получен веб-поиском и НЕ проверен экспертами. Сверьтесь с первоисточниками.",
+  "@aiWebNote": {"description": "AI web fallback."},
+  "aiWebSourcesTitle": "Веб-источники",
+  "@aiWebSourcesTitle": {"description": "AI web fallback."},
+  "aiWebSearch": "Искать в интернете",
+  "@aiWebSearch": {"description": "AI web fallback."},
+  "aiWebSearching": "Поиск в интернете…",
+  "@aiWebSearching": {"description": "AI web fallback."},
+  "aiErrQuota": "Лимит AI-сервиса временно исчерпан. Показаны результаты из базы.",
+  "@aiErrQuota": {"description": "AI web fallback."},
+  "aiErrOverloaded": "AI-сервис сейчас перегружен. Показаны результаты из базы; попробуйте через минуту.",
+  "@aiErrOverloaded": {"description": "AI web fallback."},
+  "aiWebOpenFailed": "Не удалось открыть ссылку.",
+  "@aiWebOpenFailed": {"description": "AI web fallback."}
 }

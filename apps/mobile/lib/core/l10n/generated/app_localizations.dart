@@ -17168,6 +17168,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Quiz questions for this topic will be added soon'**
   String get lessonQuizSoon;
+
+  /// AI web fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'From the internet — unverified'**
+  String get aiWebLabel;
+
+  /// AI web fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Not found in the app’s knowledge base. This answer comes from a web search and is NOT verified by experts. Check it against primary sources.'**
+  String get aiWebNote;
+
+  /// AI web fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Web sources'**
+  String get aiWebSourcesTitle;
+
+  /// AI web fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Search the internet'**
+  String get aiWebSearch;
+
+  /// AI web fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Searching the internet…'**
+  String get aiWebSearching;
+
+  /// AI web fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service quota is temporarily exhausted. Results from the knowledge base are shown.'**
+  String get aiErrQuota;
+
+  /// AI web fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI service is busy right now. Results from the knowledge base are shown; try again in a minute.'**
+  String get aiErrOverloaded;
+
+  /// AI web fallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the link.'**
+  String get aiWebOpenFailed;
 }
 
 class _AppLocalizationsDelegate

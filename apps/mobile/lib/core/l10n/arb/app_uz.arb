@@ -2843,5 +2843,21 @@
   "lessonViewerSlideLabel": "Slayd {n}",
   "lessonViewerHintNav": "Slaydlarni o‘tish uchun suring yoki bosing",
   "lessonQuizStart": "Shu mavzu bo‘yicha test boshlash",
-  "lessonQuizSoon": "Bu mavzu uchun test savollari tez orada qo‘shiladi"
+  "lessonQuizSoon": "Bu mavzu uchun test savollari tez orada qo‘shiladi",
+  "aiWebLabel": "Internetdan — tekshirilmagan",
+  "@aiWebLabel": {"description": "AI web fallback."},
+  "aiWebNote": "Ilova bazasida javob topilmadi. Bu javob internet qidiruvidan olingan va mutaxassislar tomonidan TEKSHIRILMAGAN. Asl manbalar bilan solishtiring.",
+  "@aiWebNote": {"description": "AI web fallback."},
+  "aiWebSourcesTitle": "Internet manbalari",
+  "@aiWebSourcesTitle": {"description": "AI web fallback."},
+  "aiWebSearch": "Internetdan qidirish",
+  "@aiWebSearch": {"description": "AI web fallback."},
+  "aiWebSearching": "Internetdan qidirilmoqda…",
+  "@aiWebSearching": {"description": "AI web fallback."},
+  "aiErrQuota": "AI xizmati limiti vaqtincha tugadi. Bazadagi natijalar ko‘rsatildi.",
+  "@aiErrQuota": {"description": "AI web fallback."},
+  "aiErrOverloaded": "AI xizmati hozir band. Bazadagi natijalar ko‘rsatildi; bir daqiqadan so‘ng qayta urinib ko‘ring.",
+  "@aiErrOverloaded": {"description": "AI web fallback."},
+  "aiWebOpenFailed": "Havolani ochib bo‘lmadi.",
+  "@aiWebOpenFailed": {"description": "AI web fallback."}
 }

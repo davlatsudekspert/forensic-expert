@@ -9926,4 +9926,31 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get lessonQuizSoon =>
       'Вопросы теста по этой теме скоро будут добавлены';
+
+  @override
+  String get aiWebLabel => 'Из интернета — не проверено';
+
+  @override
+  String get aiWebNote =>
+      'В базе знаний приложения ответа не найдено. Этот ответ получен веб-поиском и НЕ проверен экспертами. Сверьтесь с первоисточниками.';
+
+  @override
+  String get aiWebSourcesTitle => 'Веб-источники';
+
+  @override
+  String get aiWebSearch => 'Искать в интернете';
+
+  @override
+  String get aiWebSearching => 'Поиск в интернете…';
+
+  @override
+  String get aiErrQuota =>
+      'Лимит AI-сервиса временно исчерпан. Показаны результаты из базы.';
+
+  @override
+  String get aiErrOverloaded =>
+      'AI-сервис сейчас перегружен. Показаны результаты из базы; попробуйте через минуту.';
+
+  @override
+  String get aiWebOpenFailed => 'Не удалось открыть ссылку.';
 }

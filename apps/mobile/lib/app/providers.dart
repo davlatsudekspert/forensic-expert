@@ -157,6 +157,10 @@ final ragPipelineProvider = Provider.family<RagPipeline, String>((ref, lang) {
     retrieve: (q, intent, j) =>
         retrieval.retrieve(q, intent, jurisdictionId: j),
     provider: ref.watch(aiProviderProvider),
+    web: switch (ref.watch(aiProviderProvider)) {
+      final WebAiProvider w => w,
+      _ => null,
+    },
     knownSourceIds: {
       for (final c in index.claimsById.values)
         for (final s in c.sources) s.sourceId,
