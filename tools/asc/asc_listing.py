@@ -152,7 +152,76 @@ def main():
             "relationships": {"appStoreVersion": {"data": {
                 "type": "appStoreVersions", "id": vid}}}}})
         print("review detail created" if r else "!! review detail failed")
+    if env.get("SET_PRICING") == "true":
+        pricing(app_id)
     print("DONE (not submitted)")
+
+
+def pricing(app_id):
+    """Narx: bepul (USD 0); mavjudlik: hamma davlatlar."""
+    sch = call("GET", f"/apps/{app_id}/appPriceSchedule", ok=(200, 404),
+               params={"include": "manualPrices"})
+    free = None
+    pps = call("GET", f"/apps/{app_id}/appPricePoints",
+               params={"filter[territory]": "USA", "limit": 200})
+    for pp in pps["data"]:
+        if float(pp["attributes"]["customerPrice"]) == 0:
+            free = pp["id"]
+            break
+    print("free price point:", bool(free), "schedule exists:",
+          bool(sch and sch.get("data")))
+    if free:
+        r = call("POST", "/appPriceSchedules", {
+            "data": {"type": "appPriceSchedules", "relationships": {
+                "app": {"data": {"type": "apps", "id": app_id}},
+                "baseTerritory": {"data": {"type": "territories",
+                                           "id": "USA"}},
+                "manualPrices": {"data": [{"type": "appPrices",
+                                           "id": "${p0}"}]}}},
+            "included": [{"type": "appPrices", "id": "${p0}",
+                          "attributes": {"startDate": None},
+                          "relationships": {"appPricePoint": {"data": {
+                              "type": "appPricePoints", "id": free}}}}]})
+        print("price set to free" if r else "!! price not set")
+
+    terr = []
+    url = "/territories?limit=200"
+    while url:
+        t = call("GET", url)
+        terr += [x["id"] for x in t["data"]]
+        url = t.get("links", {}).get("next")
+    print("territories:", len(terr))
+    av = call("GET", f"/apps/{app_id}/appAvailabilityV2", ok=(200, 404))
+    if av and av.get("data"):
+        aid = av["data"]["id"]
+        ta, url = [], f"https://api.appstoreconnect.apple.com/v2/appAvailabilities/{aid}/territoryAvailabilities?limit=200"
+        while url:
+            t = call("GET", url)
+            ta += t["data"]
+            url = t.get("links", {}).get("next")
+        off = [x for x in ta if not x["attributes"].get("available")]
+        for x in off:
+            call("PATCH", f"/territoryAvailabilities/{x['id']}", {"data": {
+                "type": "territoryAvailabilities", "id": x["id"],
+                "attributes": {"available": True}}})
+        print(f"availability: {len(ta)} territories, enabled {len(off)} more")
+    else:
+        inc = [{"type": "territoryAvailabilities", "id": f"${{t{i}}}",
+                "attributes": {"available": True},
+                "relationships": {"territory": {"data": {
+                    "type": "territories", "id": tid}}}}
+               for i, tid in enumerate(terr)]
+        r = call("POST", "https://api.appstoreconnect.apple.com/v2/appAvailabilities", {
+            "data": {"type": "appAvailabilities",
+                     "attributes": {"availableInNewTerritories": True},
+                     "relationships": {
+                         "app": {"data": {"type": "apps", "id": app_id}},
+                         "territoryAvailabilities": {"data": [
+                             {"type": "territoryAvailabilities",
+                              "id": x["id"]} for x in inc]}}},
+            "included": inc})
+        print("availability created: all territories" if r
+              else "!! availability not set")
 
 
 def upload_set(lid, dtype, files, label):
