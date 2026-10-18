@@ -4,6 +4,13 @@ Asos: Yuldashev Z.A., Umarova G.Q. «Toksikologik kimyo» o‘quv-uslubiy majmua
 
 **Jami: 81 dars** — 45 ma’ruza va 36 amaliy (laboratoriya) mashg‘ulot (har biri 2 akad. soat deb olinsa: 90 + 72 = 162 soat). Amaliylarning 30 tasi `toks` laboratoriya rejasidan; 6 tasi «[Qo‘shimcha]» — kitoblarda laboratoriya rejasi yo‘q mavzular (narkotik va psixotrop moddalar), `gmt` usullari va malaka fayllari asosida taklif. Egasi 2026-10-18 da 76–81-darslarni kursda qoldirishni tasdiqladi.
 
+## Prezentatsiya qoidalari (egasi talabi, 2026-10-18)
+- Har bir toksikologiya prezentatsiyasining oxirgi slaydi — **«Adabiyotlar»**. Unda prof. Z.A. Yuldashev kitoblaridan foydalanilgani aniq yoziladi (shu darsda ishlatilgan betlar bilan):
+  1. Yuldashev Z.A., Umarova G.Q. Toksikologik kimyo modulidan o‘quv-uslubiy majmua (60910700 – Farmatsiya). — Toshkent: Toshkent farmatsevtika instituti, 2025. — b. …
+  2. Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I. Giyohvand moddalar tahlili: o‘quv qo‘llanma. — Toshkent, 2024. — b. …
+  3. Toksikologik kimyo modulidan o‘quv-uslubiy majmua (60911000 – DVSSM). — Toshkent: TFI Toksikologik kimyo kafedrasi, 2025. — b. … (faqat shu kitobdan olingan bo‘lsa; titulda muallif ko‘rsatilmagan — to‘qilmaydi).
+- Malaka materiallaridan olingan qo‘shimcha ma’lumot ham alohida qator bilan ko‘rsatiladi; kitobdagi xato (`malaka_errors.md`) slaydga ko‘chirilmaydi.
+
 Kalitlar: `toks` = Yuldashev/Umarova 2025; `dvssm` = DVSSM majmua 2025; `gmt` = Giyohvand moddalar tahlili 2024.
 
 | № | mavzu | turi | asosiy moddalar | asosiy usullar | asosiy manba (kitob, betlar) | qo‘shimcha (malaka fayli id) |
