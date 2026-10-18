@@ -136,7 +136,10 @@ insert into matrix_tables values
  ('public.class_participants',     'user_id',      false, false, 'nickname'),
  ('public.class_answers',          null,           false, false, 'option_id'),
  ('public.class_reports',          'reporter_id',  false, false, 'reason'),
- ('public.class_join_attempts',    null,           false, false, 'n');
+ ('public.class_join_attempts',    null,           false, false, 'n'),
+ -- «Darslar» (20261018020000): no grant, only lesson_list / lesson_get.
+ ('public.lesson_decks',           null,           false, false, 'title'),
+ ('public.lesson_topics',          null,           false, false, 'title');
 grant select on matrix_tables to anon, authenticated;
 
 -- Fix the column used for the no-op UPDATE to a real column of each table.
@@ -332,6 +335,10 @@ values ('60000000-0000-0000-0000-0000000000c1'::uuid,
         '50000000-0000-0000-0000-00000000000d', 'matritsa testi');
 insert into class_join_attempts (key, hour, n)
 values ('u:matrix', date_trunc('hour', now()), 1);
+insert into lesson_decks (deck_id, title, deck, slide_count, search_text)
+values ('matrix', 'Matritsa', '{"slides":[{"title":"Matritsa"}]}'::jsonb, 1, 'Matritsa');
+insert into lesson_topics (topic_id, deck_id, course, title, position)
+values ('matrix', 'matrix', 'Matritsa', 'Matritsa', 1);
 
 -- Every table must hold rows, otherwise "0 rows touched" proves nothing.
 do $$
@@ -373,6 +380,8 @@ select pg_temp.expect_error($q$select admin_stats()$q$, 'ANON: admin_stats');
 select pg_temp.expect_error($q$select admin_dashboard()$q$, 'ANON: admin_dashboard');
 select pg_temp.expect_error($q$select admin_support_inbox()$q$, 'ANON: admin_support_inbox');
 select pg_temp.expect_error($q$select admin_users()$q$, 'ANON: admin_users');
+select pg_temp.expect_error($q$select lesson_list(null)$q$, 'ANON: lesson_list');
+select pg_temp.expect_error($q$select lesson_get('matrix')$q$, 'ANON: lesson_get');
 select pg_temp.expect_error($q$select admin_audit_log(10)$q$, 'ANON: admin_audit_log');
 select pg_temp.expect_error($q$select admin_set_access('student@matrix.test', 'studentPro')$q$, 'ANON: admin_set_access');
 select pg_temp.expect_error($q$select award_referral_reward('50000000-0000-0000-0000-00000000000b', 'tx', 100, 'USD')$q$,
@@ -386,6 +395,8 @@ select pg_temp.as_user('50000000-0000-0000-0000-00000000000a');
 select pg_temp.table_matrix('STUDENT');
 -- Own rows: only what policies allow.
 select pg_temp.check((select count(*) = 0 from account_roles), 'STUDENT: sees no roles (has none)');
+select pg_temp.expect_42501($q$select lesson_list(null)$q$, 'STUDENT: lesson_list (teachers only)');
+select pg_temp.expect_42501($q$select lesson_get('matrix')$q$, 'STUDENT: lesson_get (teachers only)');
 select pg_temp.allowed($q$select * from ai_usage$q$, 'STUDENT: reads own ai_usage');
 select pg_temp.check((select bool_and(user_id = auth.uid()) from ai_usage), 'STUDENT: ai_usage only own rows');
 select pg_temp.allowed($q$insert into ai_usage (user_id) values (auth.uid())$q$, 'STUDENT: may insert own ai_usage (counter)');
@@ -538,6 +549,8 @@ select pg_temp.table_matrix('ADMIN');
 select pg_temp.check((select (a->>'is_admin')::boolean from (select my_access() a) x), 'ADMIN: my_access is_admin');
 select pg_temp.check((select admin_stats() is not null), 'ADMIN: admin_stats');
 select pg_temp.check((select admin_dashboard() is not null), 'ADMIN: admin_dashboard');
+select pg_temp.check((select jsonb_array_length(lesson_list(null)) = 1), 'ADMIN: lesson_list');
+select pg_temp.check((select (lesson_get('matrix')->>'ok')::boolean), 'ADMIN: lesson_get');
 select pg_temp.check((select (i->>'total')::int = 2 from (select admin_support_inbox() i) x), 'ADMIN: inbox sees all threads');
 select pg_temp.check((select t->>'author_email' = 'expert@matrix.test'
   from (select support_thread((select id from ids where k = 'te')) t) x), 'ADMIN: opens any thread (audited)');
