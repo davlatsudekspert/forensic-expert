@@ -1,0 +1,47 @@
+name: lessons-seed
+# «Darslar» (faqat ustozlar): tayyor prezentatsiyalarni (slides-out/out) serverga
+# yuklaydi. Faqat INSERT ... ON CONFLICT DO UPDATE — hech narsa o'chirilmaydi.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Kod olinadigan branch"
+        default: claude/phase-8-12-final-release
+permissions:
+  contents: read
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF || 'igvzlmpgwybjdgkyowrl' }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.ref }}", fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: SQL yasash
+        run: |
+          git fetch -q origin slides-out
+          python tools/lessons/build_lessons_seed.py --git-ref origin/slides-out --out "$PWD/build/lessons.sql"
+      - name: Serverga yuklash (bo'laklab)
+        run: |
+          python - <<'PY'
+          import json, os, sys, urllib.request
+          ref, tok = os.environ["PROJECT_REF"], os.environ.get("SUPABASE_ACCESS_TOKEN")
+          if not tok: sys.exit("::error::SUPABASE_ACCESS_TOKEN secret is not set")
+          lines = [l for l in open("build/lessons.sql", encoding="utf-8").read().splitlines() if l.startswith("insert into public.lesson_")]
+          def run(sql):
+              req = urllib.request.Request(f"https://api.supabase.com/v1/projects/{ref}/database/query",
+                  data=json.dumps({"query": sql}).encode(), method="POST",
+                  headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json", "User-Agent": "forensic-expert-seed"})
+              with urllib.request.urlopen(req, timeout=180) as r:
+                  return json.loads(r.read() or b"[]")
+          batch, size = [], 0
+          for l in lines:
+              batch.append(l); size += len(l)
+              if size > 600_000 or len(batch) >= 60:
+                  run("begin;\n" + "\n".join(batch) + "\ncommit;"); print("ok", len(batch)); batch, size = [], 0
+          if batch: run("begin;\n" + "\n".join(batch) + "\ncommit;"); print("ok", len(batch))
+          print(run("select (select count(*) from public.lesson_decks) decks, (select count(*) from public.lesson_topics) topics"))
+          PY
