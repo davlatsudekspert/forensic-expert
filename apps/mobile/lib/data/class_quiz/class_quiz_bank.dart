@@ -142,6 +142,7 @@ class ClassQuizBank {
               'author': src['author'],
               'title': src['title'],
               'page': src['page'],
+              if (src['checked'] is Map) 'checked': src['checked'],
               if ((qs[l] ?? status[l]) == 'auto_unreviewed')
                 'translation': 'auto_unreviewed',
             },

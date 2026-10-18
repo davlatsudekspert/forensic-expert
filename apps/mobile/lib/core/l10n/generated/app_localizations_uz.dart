@@ -9466,6 +9466,9 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get classSourceChecked => 'Manba bilan solishtirildi';
+
+  @override
   String classSourceLine(String author, String title, String page) {
     return 'Manba: $author, $title, $page-bet';
   }

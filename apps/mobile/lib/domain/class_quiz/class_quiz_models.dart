@@ -434,6 +434,7 @@ class ClassSource {
     this.title = '',
     this.page = '',
     this.translation = '',
+    this.checked = false,
   });
 
   factory ClassSource.fromJson(Map<String, Object?> j) => ClassSource(
@@ -441,7 +442,11 @@ class ClassSource {
     title: _str(j['title']),
     page: _str(j['page']),
     translation: _str(j['translation']),
+    checked: _checked(j['checked']),
   );
+
+  static bool _checked(Object? v) =>
+      v is Map && _str(v['method']) == 'source_compare';
 
   final String author;
   final String title;
@@ -452,6 +457,10 @@ class ClassSource {
   /// Savol matni tarjima holati: bo‘sh — asl til; `auto_unreviewed` —
   /// avtomatik tarjima, tekshirilmagan (ilova shu belgini ko‘rsatadi).
   final String translation;
+
+  /// Savol javobi ko‘rsatilgan manba bilan solishtirilgan (`source.checked`).
+  /// Bu ekspert tasdig‘i EMAS — faqat manba bilan solishtirish belgisi.
+  final bool checked;
 
   bool get isEmpty => author.isEmpty && title.isEmpty;
 

@@ -508,7 +508,7 @@ class _StudentFinished extends ConsumerWidget {
                 for (final m in mistakes)
                   Padding(
                     padding: const EdgeInsets.only(bottom: FeSpace.sm),
-                    child: _MistakeCard(item: m),
+                    child: ClassMistakeCard(item: m),
                   ),
               const SizedBox(height: FeSpace.md),
               FilledButton(
@@ -525,8 +525,8 @@ class _StudentFinished extends ConsumerWidget {
   }
 }
 
-class _MistakeCard extends StatelessWidget {
-  const _MistakeCard({required this.item});
+class ClassMistakeCard extends StatelessWidget {
+  const ClassMistakeCard({super.key, required this.item});
 
   final ClassResultItem item;
 
@@ -583,6 +583,26 @@ class _MistakeCard extends StatelessWidget {
               cite,
               key: Key('class.source.${item.index}'),
               style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ],
+          if (src.checked) ...[
+            const SizedBox(height: 2),
+            Row(
+              key: Key('class.sourceChecked.${item.index}'),
+              children: [
+                Icon(
+                  Icons.menu_book_outlined,
+                  size: 14,
+                  color: c.textSecondary,
+                ),
+                const SizedBox(width: FeSpace.xxs),
+                Flexible(
+                  child: Text(
+                    l.classSourceChecked,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                ),
+              ],
             ),
           ],
           if (src.isMachineTranslation) ...[

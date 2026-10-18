@@ -9500,6 +9500,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get classSourceChecked => 'Checked against the source';
+
+  @override
   String classSourceLine(String author, String title, String page) {
     return 'Source: $author, $title, p. $page';
   }

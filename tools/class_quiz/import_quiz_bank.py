@@ -39,6 +39,11 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 OUT = ROOT / "apps/mobile/assets/content/class_quiz/class_quiz_bank.json"
+SOURCE_CHECK = ROOT / "docs/qa/quiz_source_check_20261018.jsonl"
+CHECK_DATE = "2026-10-18"
+# Tuzatilgan 'wrong' yozuv: javob manbaga ko‘ra to‘g‘rilangan — tekshirilgan hisoblanadi.
+CHECK_OK_VERDICTS = {"ok"}
+CHECK_FIXED_QIDS = {"4-kurs-davolash-06-q24"}
 LANGS = ("uz", "ru", "en")
 FORMAT = "fe.class_quiz_bank/1"
 
@@ -143,7 +148,22 @@ def clean(s) -> str:
     return re.sub(r"\s+", " ", str(s or "")).strip()
 
 
-def convert(inputs):
+def load_source_check(path) -> set[str]:
+    """Manba bilan solishtirilgan savol id'lari (iqtibos/matn ko‘chirilmaydi)."""
+    if not path or not pathlib.Path(path).exists():
+        return set()
+    ids = set(CHECK_FIXED_QIDS)
+    for line in pathlib.Path(path).read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        r = json.loads(line)
+        if r.get("verdict") in CHECK_OK_VERDICTS and r.get("qid"):
+            ids.add(str(r["qid"]))
+    return ids
+
+
+def convert(inputs, checked_ids=frozenset()):
     topics, problems, seen_q = [], [], set()
     skipped = 0
     for name, d in inputs:
@@ -185,6 +205,13 @@ def convert(inputs):
                 problems.append(f"{name}: {qid or '?'} — {why}")
                 continue
             seen_q.add(qid)
+            source = {
+                "author": clean(src.get("author")),
+                "title": clean(src.get("title")),
+                "page": page,
+            }
+            if qid in checked_ids:
+                source["checked"] = {"method": "source_compare", "date": CHECK_DATE}
             qstatus = q.get("translation_status") or tstatus
             qs.append(
                 {
@@ -193,11 +220,7 @@ def convert(inputs):
                     "options_i18n": opts,
                     "correct_index": ci,
                     "explanation_i18n": ex,
-                    "source": {
-                        "author": clean(src.get("author")),
-                        "title": clean(src.get("title")),
-                        "page": page,
-                    },
+                    "source": source,
                     "difficulty": clean(q.get("difficulty")) or None,
                     "translation_status": {
                         l: clean(qstatus.get(l)) or ("source" if l == "uz" else "auto_unreviewed")
@@ -298,6 +321,11 @@ def main() -> int:
     g.add_argument("--git-ref", help="masalan origin/slides-out (quiz/ papkasi o‘qiladi)")
     ap.add_argument("--out", default=str(OUT))
     ap.add_argument("--sql", help="server banki uchun SQL fayli (ixtiyoriy)")
+    ap.add_argument(
+        "--source-check",
+        default=str(SOURCE_CHECK) if SOURCE_CHECK.exists() else None,
+        help="manba bilan solishtirish natijasi (jsonl); ok yozuvlarga source.checked qo‘shiladi",
+    )
     ap.add_argument("--check", action="store_true", help="faylni yozmaydi; farq bo‘lsa 1 qaytaradi")
     a = ap.parse_args()
 
@@ -305,7 +333,7 @@ def main() -> int:
     if not inputs:
         print("quiz/*.json topilmadi", file=sys.stderr)
         return 2
-    groups, topics, skipped, problems = convert(inputs)
+    groups, topics, skipped, problems = convert(inputs, load_source_check(a.source_check))
     nq = sum(len(t["questions"]) for t in topics)
     bank = {
         "format": FORMAT,

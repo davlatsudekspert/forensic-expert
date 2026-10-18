@@ -6,11 +6,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/class_quiz.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/design/theme.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/data/class_quiz/class_quiz_bank.dart';
 import 'package:forensic_expert/data/class_quiz/class_quiz_demo_bank.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
+import 'package:forensic_expert/features/class_quiz/presentation/class_quiz_play_screen.dart';
 
 import '../helpers/pump_app.dart';
 
@@ -177,5 +179,77 @@ void main() {
       await tester.pumpWidget(const SizedBox());
       await tester.pump(const Duration(seconds: 1));
     });
+  });
+
+  group('manba bilan solishtirildi (source.checked)', () {
+    test('ClassSource.fromJson: checked ixtiyoriy, eski format buzilmaydi', () {
+      expect(ClassSource.fromJson(const {'author': 'A'}).checked, isFalse);
+      expect(
+        ClassSource.fromJson(const {
+          'author': 'A',
+          'checked': {'method': 'source_compare', 'date': '2026-10-18'},
+        }).checked,
+        isTrue,
+      );
+      expect(
+        ClassSource.fromJson(const {
+          'checked': {'method': 'other'},
+        }).checked,
+        isFalse,
+      );
+    });
+
+    test('bank asseti: barcha savollarda checked, tasdiq so‘zi yo‘q', () {
+      final all = [for (final v in bank.variants) ...v.questions];
+      expect(all, isNotEmpty);
+      expect(all.every((q) => q.source.checked), isTrue);
+    });
+
+    for (final checked in [true, false]) {
+      testWidgets('chip faqat checked bo‘lganda (checked=$checked)', (
+        tester,
+      ) async {
+        await tester.pumpWidget(
+          MaterialApp(
+            theme: FeThemeBuilder.light(),
+            locale: const Locale('uz'),
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+            home: Scaffold(
+              body: ClassMistakeCard(
+                item: ClassResultItem(
+                  index: 0,
+                  text: 'Savol?',
+                  options: const [
+                    ClassOption(id: 'a', text: 'A'),
+                    ClassOption(id: 'b', text: 'B'),
+                  ],
+                  myOption: 'a',
+                  correctOption: 'b',
+                  isCorrect: false,
+                  points: 0,
+                  explanation: 'Izoh',
+                  source: ClassSource(
+                    author: 'Muallif',
+                    title: 'Kitob',
+                    page: '12',
+                    checked: checked,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+        expect(find.byKey(const Key('class.source.0')), findsOneWidget);
+        expect(
+          find.byKey(const Key('class.sourceChecked.0')),
+          checked ? findsOneWidget : findsNothing,
+        );
+        expect(
+          find.text('Manba bilan solishtirildi'),
+          checked ? findsOneWidget : findsNothing,
+        );
+      });
+    }
   });
 }

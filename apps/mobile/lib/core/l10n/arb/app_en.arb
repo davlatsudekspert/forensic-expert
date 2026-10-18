@@ -12320,6 +12320,10 @@
       }
     }
   },
+  "classSourceChecked": "Checked against the source",
+  "@classSourceChecked": {
+    "description": "Subtle note under a class-quiz question source: the answer was compared against the cited book page. NOT expert approval."
+  },
   "classSourceLine": "Source: {author}, {title}, p. {page}",
   "@classSourceLine": {
     "description": "Source.",

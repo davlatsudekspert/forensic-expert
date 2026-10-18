@@ -9554,6 +9554,9 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get classSourceChecked => 'Сверено с источником';
+
+  @override
   String classSourceLine(String author, String title, String page) {
     return 'Источник: $author, $title, с. $page';
   }

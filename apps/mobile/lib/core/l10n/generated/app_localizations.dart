@@ -16539,6 +16539,12 @@ abstract class AppLocalizations {
   /// **'Correct answer: {text}'**
   String classCorrectAnswer(String text);
 
+  /// Subtle note under a class-quiz question source: the answer was compared against the cited book page. NOT expert approval.
+  ///
+  /// In en, this message translates to:
+  /// **'Checked against the source'**
+  String get classSourceChecked;
+
   /// Source.
   ///
   /// In en, this message translates to:
