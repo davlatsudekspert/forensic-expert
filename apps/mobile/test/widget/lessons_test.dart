@@ -340,7 +340,13 @@ void main() {
     testWidgets('mavzu bor: yoqilgan, test yaratish oqimida tanlangan', (
       tester,
     ) async {
-      await open(tester, path: Routes.lesson('a1'), deckId: 'demo-topic');
+      await open(
+        tester,
+        path: Routes.lesson('a1'),
+        deckId: 'demo-topic',
+        // Ilova panelidagi test tugmasi faqat keng ekranda (>= 420 dp).
+        size: const Size(820, 1180),
+      );
       // Ilova panelidagi tugma ham yoqilgan.
       final bar = tester.widget<IconButton>(
         find.byKey(const Key('lesson.quizAppBar')),
@@ -360,8 +366,23 @@ void main() {
       expect(find.text(_questions.title), findsWidgets);
     });
 
+    testWidgets('telefonda ilova panelida test tugmasi yo‘q (sarlavhaga joy)', (
+      tester,
+    ) async {
+      await open(tester, path: Routes.lesson('a1'), deckId: 'demo-topic');
+      expect(find.byKey(const Key('lesson.quizAppBar')), findsNothing);
+      await toLast(tester);
+      expect(find.byKey(const Key('lesson.quizStart')), findsOneWidget);
+    });
+
     testWidgets('mavzu yo‘q: o‘chirilgan va izohli', (tester) async {
-      await open(tester, path: Routes.lesson('a1'), deckId: 'hali-yoq');
+      await open(
+        tester,
+        path: Routes.lesson('a1'),
+        deckId: 'hali-yoq',
+        // Ilova panelidagi test tugmasi faqat keng ekranda (>= 420 dp).
+        size: const Size(820, 1180),
+      );
       final bar = tester.widget<IconButton>(
         find.byKey(const Key('lesson.quizAppBar')),
       );

@@ -336,12 +336,14 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
       appBar: AppBar(
         title: FeAppBarTitle(widget.deck.title),
         actions: [
-          IconButton(
-            key: const Key('lesson.quizAppBar'),
-            tooltip: quizReady ? l.lessonQuizStart : l.lessonQuizSoon,
-            icon: const Icon(Icons.quiz_outlined),
-            onPressed: quizReady ? _startQuiz : null,
-          ),
+          // Tor telefonda sarlavhaga joy qoladi: test tugmasi oxirgi slaydda bor.
+          if (MediaQuery.sizeOf(context).width >= 420)
+            IconButton(
+              key: const Key('lesson.quizAppBar'),
+              tooltip: quizReady ? l.lessonQuizStart : l.lessonQuizSoon,
+              icon: const Icon(Icons.quiz_outlined),
+              onPressed: quizReady ? _startQuiz : null,
+            ),
           IconButton(
             key: const Key('lesson.notesToggle'),
             tooltip: l.lessonViewerNotes,
