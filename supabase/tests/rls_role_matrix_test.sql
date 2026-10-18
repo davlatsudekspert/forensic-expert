@@ -139,7 +139,13 @@ insert into matrix_tables values
  ('public.class_join_attempts',    null,           false, false, 'n'),
  -- «Darslar» (20261018020000): no grant, only lesson_list / lesson_get.
  ('public.lesson_decks',           null,           false, false, 'title'),
- ('public.lesson_topics',          null,           false, false, 'title');
+ ('public.lesson_topics',          null,           false, false, 'title'),
+ -- «Ustoz–talaba testi» (20261018050000): no grant, only group_* RPCs.
+ ('public.class_groups',           'teacher_id',   false, false, 'name'),
+ ('public.class_group_members',    'user_id',      false, false, 'nickname'),
+ ('public.class_assignments',      null,           false, false, 'status'),
+ ('public.class_assignment_questions', null,       false, false, 'question'),
+ ('public.class_assignment_attempts', 'user_id',   false, false, 'answers');
 grant select on matrix_tables to anon, authenticated;
 
 -- Fix the column used for the no-op UPDATE to a real column of each table.
@@ -339,6 +345,22 @@ insert into lesson_decks (deck_id, title, deck, slide_count, search_text)
 values ('matrix', 'Matritsa', '{"slides":[{"title":"Matritsa"}]}'::jsonb, 1, 'Matritsa');
 insert into lesson_topics (topic_id, deck_id, course, title, position)
 values ('matrix', 'matrix', 'Matritsa', 'Matritsa', 1);
+-- «Ustoz–talaba testi» rows: a owns a group, b is a member with an attempt.
+insert into class_groups (id, teacher_id, name, code)
+values ('60000000-0000-0000-0000-0000000000d1'::uuid,
+        '50000000-0000-0000-0000-00000000000a', 'Matritsa guruhi', 'MATR2345');
+insert into class_group_members (group_id, user_id, nickname)
+values ('60000000-0000-0000-0000-0000000000d1'::uuid,
+        '50000000-0000-0000-0000-00000000000b', 'Matritsa');
+insert into class_assignments (id, group_id, topic_id, question_count)
+values ('60000000-0000-0000-0000-0000000000d2'::uuid,
+        '60000000-0000-0000-0000-0000000000d1'::uuid, 'matrix', 1);
+insert into class_assignment_questions (assignment_id, qid, question, options, correct_index)
+values ('60000000-0000-0000-0000-0000000000d2'::uuid, 'q1', 'Matritsa savoli',
+        '["a","b","c","d"]'::jsonb, 2);
+insert into class_assignment_attempts (assignment_id, user_id, question_ids, answers)
+values ('60000000-0000-0000-0000-0000000000d2'::uuid,
+        '50000000-0000-0000-0000-00000000000b', '{q1}', '{"q1": 2}'::jsonb);
 
 -- Every table must hold rows, otherwise "0 rows touched" proves nothing.
 do $$
@@ -382,6 +404,9 @@ select pg_temp.expect_error($q$select admin_support_inbox()$q$, 'ANON: admin_sup
 select pg_temp.expect_error($q$select admin_users()$q$, 'ANON: admin_users');
 select pg_temp.expect_error($q$select lesson_list(null)$q$, 'ANON: lesson_list');
 select pg_temp.expect_error($q$select lesson_get('matrix')$q$, 'ANON: lesson_get');
+select pg_temp.expect_error($q$select group_join('MATR2345', 'Anon')$q$, 'ANON: group_join (no anonymous join)');
+select pg_temp.expect_error($q$select group_list()$q$, 'ANON: group_list');
+select pg_temp.expect_error($q$select group_assignment_open('60000000-0000-0000-0000-0000000000d2')$q$, 'ANON: group_assignment_open');
 select pg_temp.expect_error($q$select admin_audit_log(10)$q$, 'ANON: admin_audit_log');
 select pg_temp.expect_error($q$select admin_set_access('student@matrix.test', 'studentPro')$q$, 'ANON: admin_set_access');
 select pg_temp.expect_error($q$select award_referral_reward('50000000-0000-0000-0000-00000000000b', 'tx', 100, 'USD')$q$,
@@ -397,6 +422,9 @@ select pg_temp.table_matrix('STUDENT');
 select pg_temp.check((select count(*) = 0 from account_roles), 'STUDENT: sees no roles (has none)');
 select pg_temp.expect_42501($q$select lesson_list(null)$q$, 'STUDENT: lesson_list (teachers only)');
 select pg_temp.expect_42501($q$select lesson_get('matrix')$q$, 'STUDENT: lesson_get (teachers only)');
+select pg_temp.expect_42501($q$select group_create('Talaba guruhi')$q$, 'STUDENT: group_create (teachers only)');
+select pg_temp.expect_42501($q$select group_assignment_board('60000000-0000-0000-0000-0000000000d2')$q$,
+  'STUDENT: group_assignment_board (owner teacher only)');
 select pg_temp.allowed($q$select * from ai_usage$q$, 'STUDENT: reads own ai_usage');
 select pg_temp.check((select bool_and(user_id = auth.uid()) from ai_usage), 'STUDENT: ai_usage only own rows');
 select pg_temp.allowed($q$insert into ai_usage (user_id) values (auth.uid())$q$, 'STUDENT: may insert own ai_usage (counter)');

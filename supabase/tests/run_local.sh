@@ -24,6 +24,10 @@ $P -d fe -f "$HERE/admin_extension_test.sql"
 $P -d fe -f "$HERE/qa_community_test.sql"
 $P -d fe -f "$HERE/qa_service_api_test.sql"
 $P -d fe -f "$HERE/class_quiz_test.sql"
+# «Ustoz–talaba testi»: shared variant vectors (also used by the Dart tests).
+FIXTURE="$HERE/../../apps/mobile/test/fixtures/class_group_variant_vectors.json"
+$P -d fe -v fixture="$FIXTURE" -f "$HERE/class_groups_test.sql"
+$P -d fe -f "$HERE/class_groups_e2e.sql"
 # RLS role matrix: fresh database with Supabase-like default table grants
 # (the files above grant/revoke privileges for their own checks). Roles are
 # cluster-wide, so stubs.sql is loaded without its CREATE ROLE lines.

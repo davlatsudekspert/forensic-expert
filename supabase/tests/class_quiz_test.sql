@@ -88,7 +88,10 @@ from generate_series(1, 2) g;
 
 -- ---------------------------------------------------------------- schema
 select pg_temp.cq_check((select count(*) = 7 from pg_tables
-  where schemaname = 'public' and tablename like 'class\_%' and rowsecurity),
+  where schemaname = 'public' and rowsecurity
+    and tablename in ('class_quiz_questions', 'class_sessions', 'class_session_questions',
+                      'class_participants', 'class_answers', 'class_reports',
+                      'class_join_attempts')),
   'row level security is on for all seven class tables');
 select pg_temp.cq_check(not exists (select 1 from pg_policies
   where schemaname = 'public'
