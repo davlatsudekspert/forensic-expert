@@ -1417,7 +1417,7 @@ abstract class AppLocalizations {
   /// Draft notice on legal documents.
   ///
   /// In en, this message translates to:
-  /// **'Draft. This document will be published after professional legal review.'**
+  /// **'Last updated: 18 Oct 2026'**
   String get legalDraftNotice;
 
   /// Privacy summary.

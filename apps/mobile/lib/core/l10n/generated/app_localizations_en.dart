@@ -737,8 +737,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get deleteAccount => 'Delete account';
 
   @override
-  String get legalDraftNotice =>
-      'Draft. This document will be published after professional legal review.';
+  String get legalDraftNotice => 'Last updated: 18 Oct 2026';
 
   @override
   String get privacySummary =>

@@ -1,9 +1,9 @@
 /// Suzuvchi («Instagram uslubidagi») pastki menyu (egasi topshirig‘i,
 /// 2026-10-17, feature-freeze istisnosi).
 ///
-/// `true`  — yangi menyu: 4 bo‘lim (Asosiy · Vositalar · AI · Profil),
-///           suzuvchi shisha pill, skrollda ixchamlashadi; Kutubxona —
-///           Asosiy ekran tepasidagi katta tugma.
+/// `true`  — yangi menyu: 5 bo‘lim (Asosiy · Kutubxona · AI · Vositalar · Profil),
+///           suzuvchi shisha pill, skrollda ixchamlashadi; markaziy AI ko‘tarilgan;
+///           Asosiy ekrandagi Kutubxona tugmasi ham saqlanadi.
 /// `false` — eski 5 tabli `NavigationBar` (o‘zgarishsiz saqlangan).
 const bool kFloatingNav = true;
 

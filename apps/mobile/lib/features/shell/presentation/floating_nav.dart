@@ -20,7 +20,7 @@ class FloatingNavItem {
   final Widget selectedIcon;
   final String label;
 
-  /// Markaziy ajratilgan bo‘lim (AI) — to‘ldirilgan aksent belgisi.
+  /// Markaziy ajratilgan bo‘lim (AI) — pill’dan ko‘tarilgan aksent tugma.
   final bool emphasized;
 }
 
@@ -33,13 +33,19 @@ const double kFloatingNavCompactHeight = 48;
 
 /// Menyu bilan ekran pastki cheti orasidagi masofa (home indicator hisobga
 /// olingan).
+/// Markaziy (ajratilgan) tugma pill’dan yuqoriga chiqadigan balandlik (dp).
+const double kFloatingNavRise = 14;
+
 double floatingNavBottomOffset(double safeBottom) =>
     safeBottom > 0 ? safeBottom + 4 : 12;
 
 /// Kontent menyu ostida qolmasligi uchun rezerv qilinadigan pastki balandlik:
 /// menyu + masofa + kichik zaxira. Safe area ichida.
 double floatingNavReservedHeight(double safeBottom) =>
-    kFloatingNavFullHeight + floatingNavBottomOffset(safeBottom) + 8;
+    kFloatingNavFullHeight +
+    kFloatingNavRise +
+    floatingNavBottomOffset(safeBottom) +
+    8;
 
 /// Yumaloq (pill), yarim shaffof «shisha» pastki menyu.
 ///
@@ -90,7 +96,7 @@ class FloatingNavBar extends StatelessWidget {
         // Yarim shaffof sirt: blur yoqilganda shaffofroq, o‘chiq bo‘lsa
         // matn o‘qilishi uchun zichroq.
         final fill = c.surfaceRaised.withValues(
-          alpha: blur ? (dark ? 0.72 : 0.78) : 0.94,
+          alpha: blur ? (dark ? 0.86 : 0.88) : 0.94,
         );
         Widget pill = DecoratedBox(
           decoration: BoxDecoration(
@@ -100,18 +106,28 @@ class FloatingNavBar extends StatelessWidget {
               color: c.borderStrong.withValues(alpha: dark ? 0.45 : 0.28),
             ),
           ),
-          child: Row(
-            children: [
-              for (var i = 0; i < items.length; i++)
-                Expanded(
-                  child: _NavItem(
-                    item: items[i],
-                    selected: i == selected,
-                    t: t,
-                    onTap: () => onSelect(i),
+          // Chetki yorliqlar pill burchagiga tegmasin (320 dp, RU).
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Row(
+              children: [
+                for (var i = 0; i < items.length; i++)
+                  Expanded(
+                    child: items[i].emphasized
+                        ? _CenterSlot(
+                            item: items[i],
+                            selected: i == selected,
+                            t: t,
+                          )
+                        : _NavItem(
+                            item: items[i],
+                            selected: i == selected,
+                            t: t,
+                            onTap: () => onSelect(i),
+                          ),
                   ),
-                ),
-            ],
+              ],
+            ),
           ),
         );
         pill = ClipRRect(
@@ -123,7 +139,7 @@ class FloatingNavBar extends StatelessWidget {
                 )
               : pill,
         );
-        return DecoratedBox(
+        final shadow = DecoratedBox(
           decoration: BoxDecoration(
             borderRadius: radius,
             boxShadow: FeShadow.floating(
@@ -137,7 +153,136 @@ class FloatingNavBar extends StatelessWidget {
             child: pill,
           ),
         );
+        final ci = items.indexWhere((e) => e.emphasized);
+        if (ci < 0) return shadow;
+        final size = lerpDouble(42, 52, t)!;
+        final top = h + lerpDouble(6, kFloatingNavRise, t)!;
+        return SizedBox(
+          width: w,
+          height: h + kFloatingNavRise,
+          child: Stack(
+            clipBehavior: Clip.none,
+            children: [
+              Positioned(left: 0, right: 0, bottom: 0, child: shadow),
+              Positioned(
+                left: w * (ci + 0.5) / items.length - size / 2,
+                bottom: top - size,
+                child: _CenterButton(
+                  item: items[ci],
+                  selected: ci == selected,
+                  size: size,
+                  onTap: () => onSelect(ci),
+                ),
+              ),
+            ],
+          ),
+        );
       },
+    );
+  }
+}
+
+/// Markaziy bo‘lim uchun pill ichidagi o‘rin: faqat yorliq (tugmaning
+/// o‘zi pill ustida alohida chiziladi).
+class _CenterSlot extends StatelessWidget {
+  const _CenterSlot({
+    required this.item,
+    required this.selected,
+    required this.t,
+  });
+
+  final FloatingNavItem item;
+  final bool selected;
+  final double t;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final text = Theme.of(context).textTheme;
+    return Align(
+      alignment: Alignment.bottomCenter,
+      child: ClipRect(
+        child: Align(
+          heightFactor: t,
+          child: Opacity(
+            opacity: t,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  item.label,
+                  maxLines: 1,
+                  style: text.labelMedium?.copyWith(
+                    fontSize: 11,
+                    letterSpacing: 0,
+                    fontWeight: FontWeight.w600,
+                    color: c.textPrimary,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Ko‘tarilgan markaziy aksent tugma: yumshoq soya, pill rangidagi halqa.
+class _CenterButton extends StatelessWidget {
+  const _CenterButton({
+    required this.item,
+    required this.selected,
+    required this.size,
+    required this.onTap,
+  });
+
+  final FloatingNavItem item;
+  final bool selected;
+  final double size;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return Semantics(
+      button: true,
+      selected: selected,
+      label: item.label,
+      excludeSemantics: true,
+      onTap: onTap,
+      child: Tooltip(
+        message: item.label,
+        excludeFromSemantics: true,
+        child: GestureDetector(
+          key: item.itemKey,
+          behavior: HitTestBehavior.opaque,
+          onTap: onTap,
+          child: Container(
+            width: size,
+            height: size,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: c.accent,
+              border: Border.all(color: c.surfaceRaised, width: 3),
+              boxShadow: [
+                BoxShadow(
+                  color: c.accent.withValues(alpha: dark ? 0.35 : 0.30),
+                  blurRadius: 10,
+                  offset: const Offset(0, 3),
+                ),
+              ],
+            ),
+            child: IconTheme.merge(
+              data: IconThemeData(color: c.onAccent, size: size * 0.46),
+              child: selected ? item.selectedIcon : item.icon,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

@@ -741,8 +741,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get deleteAccount => 'Hisobni o‘chirish';
 
   @override
-  String get legalDraftNotice =>
-      'Qoralama. Hujjat professional yuridik tekshiruvdan so‘ng e’lon qilinadi.';
+  String get legalDraftNotice => 'Oxirgi yangilanish: 2026-10-18';
 
   @override
   String get privacySummary =>

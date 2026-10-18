@@ -40,7 +40,7 @@ class LegalDocumentScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // Maxfiylik siyosati e'lon qilingan (Play Console'dagi havola
-              // bilan bir xil matn); qolgan hujjatlar hali qoralama.
+              // bilan bir xil matn); qolganlarida «Oxirgi yangilanish» sanasi.
               if (document == LegalDocument.privacy)
                 FeBanner(
                   key: const Key('legal.published'),
@@ -50,9 +50,8 @@ class LegalDocumentScreen extends StatelessWidget {
               else
                 FeBanner(
                   key: const Key('legal.draft'),
-                  icon: Icons.edit_note,
+                  icon: Icons.update,
                   text: l.legalDraftNotice,
-                  tone: FeBannerTone.warning,
                 ),
               const SizedBox(height: FeSpace.md),
               Text(body, style: t.bodyLarge),

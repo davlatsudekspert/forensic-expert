@@ -20,8 +20,7 @@ double navLabelMaxTextScale(double screenWidth) =>
 /// Pastki navigatsiya.
 ///
 /// * `floatingNavEnabled` (standart): suzuvchi shisha menyu — Asosiy ·
-///   Vositalar · AI · Profil. Kutubxona tab emas (Asosiy tepasidagi katta
-///   tugma), lekin `/library` shell ichida qoladi (branch indeksi 2).
+///   Kutubxona · AI (markazda, ko‘tarilgan) · Vositalar · Profil.
 /// * aks holda: eski 5 tabli `NavigationBar` (Home · Tools · Library · AI ·
 ///   Profile).
 ///
@@ -32,9 +31,9 @@ class AppShell extends StatefulWidget {
 
   final StatefulNavigationShell shell;
 
-  /// Suzuvchi menyudagi bo‘limlar → shell branch indeksi (2 = Kutubxona,
-  /// menyuda yo‘q).
-  static const List<int> floatingBranches = [0, 1, 3, 4];
+  /// Suzuvchi menyudagi bo‘limlar (Asosiy · Kutubxona · AI · Vositalar ·
+  /// Profil) → shell branch indeksi. Markaziy (3) — AI.
+  static const List<int> floatingBranches = [0, 2, 3, 1, 4];
 
   @override
   State<AppShell> createState() => _AppShellState();
@@ -114,10 +113,10 @@ class _AppShellState extends State<AppShell> {
         label: l.navHome,
       ),
       FloatingNavItem(
-        itemKey: const Key('nav.tools'),
-        icon: const Icon(Icons.calculate_outlined),
-        selectedIcon: const Icon(Icons.calculate),
-        label: l.navTools,
+        itemKey: const Key('nav.library'),
+        icon: const Icon(Icons.local_library_outlined),
+        selectedIcon: const Icon(Icons.local_library),
+        label: l.navLibrary,
       ),
       FloatingNavItem(
         itemKey: const Key('nav.ai'),
@@ -125,6 +124,12 @@ class _AppShellState extends State<AppShell> {
         selectedIcon: const Icon(Icons.auto_awesome),
         label: l.navAi,
         emphasized: true,
+      ),
+      FloatingNavItem(
+        itemKey: const Key('nav.tools'),
+        icon: const Icon(Icons.calculate_outlined),
+        selectedIcon: const Icon(Icons.calculate),
+        label: l.navTools,
       ),
       FloatingNavItem(
         itemKey: const Key('nav.profile'),

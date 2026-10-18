@@ -91,7 +91,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get navTools => 'Расчёты';
 
   @override
-  String get navLibrary => 'Справка';
+  String get navLibrary => 'Каталог';
 
   @override
   String get navAi => 'ИИ';
@@ -739,8 +739,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get deleteAccount => 'Удалить аккаунт';
 
   @override
-  String get legalDraftNotice =>
-      'Черновик. Документ будет опубликован после профессиональной юридической проверки.';
+  String get legalDraftNotice => 'Последнее обновление: 18.10.2026';
 
   @override
   String get privacySummary =>

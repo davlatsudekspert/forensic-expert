@@ -9,8 +9,8 @@ import 'package:forensic_expert/features/tools/presentation/tools_screen.dart';
 
 import '../helpers/pump_app.dart';
 
-/// Suzuvchi pastki menyu (`kFloatingNav`): 4 bo‘lim, skrollda ixchamlashish,
-/// Kutubxona tugmasi Asosiy tepasida, bayroq o‘chiq — eski 5 tab.
+/// Suzuvchi pastki menyu (`kFloatingNav`): 5 bo‘lim (markazda AI), skrollda ixchamlashish,
+/// Kutubxona tugmasi Asosiy tepasida ham saqlanadi, bayroq o‘chiq — eski 5 tab.
 void main() {
   final navBar = find.byKey(const Key('nav.floating'));
 
@@ -23,16 +23,31 @@ void main() {
     floatingNavBlurEnabled = kFloatingNavBlur;
   });
 
-  testWidgets('menyu 4 ta bo‘lim: Kutubxona tab emas', (tester) async {
+  testWidgets('menyu 5 ta bo‘lim: AI markazda, ko‘tarilgan', (tester) async {
     await pumpApp(tester, settings: completedSettings());
     expect(navBar, findsOneWidget);
-    for (final k in ['nav.home', 'nav.tools', 'nav.ai', 'nav.profile']) {
+    final keys = [
+      'nav.home',
+      'nav.library',
+      'nav.ai',
+      'nav.tools',
+      'nav.profile',
+    ];
+    for (final k in keys) {
       expect(find.byKey(Key(k)), findsOneWidget, reason: k);
     }
-    expect(find.byKey(const Key('nav.library')), findsNothing);
+    // Tartib chapdan o‘ngga; AI — pill markazida va pill tepasidan yuqorida.
+    final xs = [for (final k in keys) tester.getCenter(find.byKey(Key(k))).dx];
+    expect(xs, orderedEquals([...xs]..sort()));
+    final pill = tester.getRect(navBar);
+    final ai = tester.getRect(find.byKey(const Key('nav.ai')));
+    expect(ai.center.dx, closeTo(pill.center.dx, 0.5));
+    expect(ai.top, lessThan(pill.top));
+    expect(ai.height, greaterThan(48));
     expect(find.byType(NavigationBar), findsNothing);
     for (final (key, type) in [
       ('nav.tools', ToolsScreen),
+      ('nav.library', LibraryScreen),
       ('nav.ai', AiScreen),
       ('nav.profile', ProfileScreen),
       ('nav.home', HomeScreen),
@@ -185,5 +200,29 @@ void main() {
     );
     expect(tester.takeException(), isNull);
     expect(tester.getSize(navBar).width, 288);
+    // Hamma 5 tugma pill ichida/ustida, ekrandan chiqmaydi.
+    for (final k in ['home', 'library', 'ai', 'tools', 'profile']) {
+      final r = tester.getRect(find.byKey(Key('nav.$k')));
+      expect(r.left, greaterThanOrEqualTo(0), reason: k);
+      expect(r.right, lessThanOrEqualTo(320), reason: k);
+    }
+  });
+
+  testWidgets('390 dp, qorong‘i: overflow yo‘q, tab holati saqlanadi', (
+    tester,
+  ) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(theme: ThemeMode.dark),
+      size: const Size(390, 844),
+    );
+    await tester.tap(find.byKey(const Key('nav.tools')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('nav.ai')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('nav.tools')));
+    await tester.pumpAndSettle();
+    expect(find.byType(ToolsScreen), findsOneWidget);
+    expect(tester.takeException(), isNull);
   });
 }
