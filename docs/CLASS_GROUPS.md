@@ -76,3 +76,27 @@ Rollback: `supabase/rollback/20261018050000_class_groups_down.sql`.
 2. Ustoz roli (`account_roles`) — `docs/CLASS_QUIZ.md` §3; savollar banki — §5 (bank bo'sh bo'lsa mavzu chiqmaydi).
 3. Privacy matniga (egasi tasdig'i bilan): guruh taxallusi, test javoblari va ball hisobga bog'liq saqlanadi; ustoz faqat taxallus va ballni ko'radi.
 4. Real qurilma sinovi: iPhone kamera bilan QR, ikki telefon, proyektor — bu muhitda SINALMAGAN.
+
+## 6. Egasining qo'shimcha talablari (2026-10-18, 2-xabar)
+
+* **Yagona savollar indeksi.** `ClassQuizBank.index` — id → savol; bankdagi HAMMA savol (mashq ro'yxatidan
+  chiqarilganlari ham, masalan betsiz/slayd matnidan tuzilganlari). Ustoz sinovi, «O'zim yechib ko'rish», demo server
+  va «Umumiy test» oldindan ko'rishi savolni shu yerdan id bo'yicha topadi. Server topshiriqda savol matnini nusxalaydi
+  (`class_assignment_questions`), shuning uchun talaba testi, katta ekran va natijalar id bo'yicha o'z nusxasidan oladi.
+  Qorovul: `test/guards/question_index_guard_test.dart` — HAQIQIY bank (18 mavzu × 30 × 3 til); tuzatishsiz
+  (eski `#NNN` id lar yoki betsizlarni indeksdan tushirish) yiqilishi tekshirildi.
+* **Ustoz «Mavzu testi»** (Darslar): tanlov — 1) «Guruhga topshirish», 2) «O'zim yechib ko'rish» (qurilmada, 10 savol,
+  hech narsa yuborilmaydi), 3) «Sinfda jonli test». Talaba guruh sahifasida testni bossa — darhol ochiladi.
+* **Vaqt alohida, muddat alohida.** «Vaqt chegarasi»: 10/15/20/30/45/60 daqiqa, «Vaqtsiz», «Boshqa…» (1–180),
+  standart 10; talaba boshlagan paytdan, tugasa javoblar o'zi yuboriladi, server tekshiradi. «Test qancha vaqt ochiq
+  turadi»: 1/3/7 kun yoki sana, standart 1 kun. Har birining ostida bir qatorli izoh.
+* **Savollar soni:** tez tanlovlar (≤50) + «Barcha N ta» + «Boshqa…» (hovuzgacha, server ≤200).
+* **«Umumiy test berish»** (guruh sahifasida): manbalar — bank kurs/fan guruhlari (Darslar bilan bir xil), har manbada
+  «Hammasini tanlash» va qidiruv; 10/20/30/50/Barcha/Boshqa; mavzulardan navbatma-navbat (id takrorlanmaydi),
+  variant (2N hovuz), javoblar ochilishi, oldindan ko'rish (taqsimot + namuna), avtomatik nom (tahrirlanadi).
+  Server: `group_assignment_create_mixed` (`private.group_assignment_make`); taqsimot
+  `private.group_round_robin_counts` == Dart `roundRobinCounts` (umumiy vektorlar `round_robin`).
+* **Jonli panel:** «Testni yopish» AppBar'da doim ko'rinadi (kichik ekranda ham); ro'yxatdagisi tepada.
+* Sinov: `test/widget/class_groups_v2_test.dart` (390×844 va 360×640 @1.3x, haqiqiy bank): mavzu tanlash → 50 savol →
+  20 daqiqa → variant → yuborish → talaba yechadi → natija ustozda; `supabase/tests/class_groups_dart_e2e.sh` — umumiy
+  test ham.
