@@ -49,11 +49,42 @@ for c in cases:
     c["seed"] = h(f'{c["assignment_id"]}:{c["user_id"]}')
     c["expected"] = draw(c["assignment_id"], c["user_id"], c["pool"], c["n"])
 
+
+
+def rr_counts(sizes, n):
+    c = [0] * len(sizes)
+    left = max(0, n)
+    while left > 0:
+        progressed = False
+        for i, sz in enumerate(sizes):
+            if left == 0:
+                break
+            if c[i] < sz:
+                c[i] += 1
+                left -= 1
+                progressed = True
+        if not progressed:
+            break
+    return c
+
+
+rr = [
+    dict(sizes=[30, 30, 30], n=50),
+    dict(sizes=[30, 5, 12], n=40),
+    dict(sizes=[3, 3], n=10),
+    dict(sizes=[10], n=7),
+    dict(sizes=[1, 0, 2, 30], n=20),
+    dict(sizes=[], n=5),
+]
+for r in rr:
+    r["expected"] = rr_counts(r["sizes"], r["n"])
+
 text = json.dumps({
     "algorithm": "seed=hex(sha256(utf8(assignmentId+':'+userId))); "
                  "key(q)=hex(sha256(utf8(seed+':'+q))); "
                  "sort by (key, q) ascending (byte order); take first n",
     "cases": cases,
+    "round_robin": rr,
 }, ensure_ascii=False, indent=1) + "\n"
 
 if "--check" in sys.argv:

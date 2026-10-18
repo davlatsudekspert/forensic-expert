@@ -70,7 +70,9 @@ create table public.class_assignments (
   group_id uuid not null references public.class_groups (id) on delete cascade,
   topic_id text not null check (char_length(topic_id) between 1 and 80),
   topic_title text not null default '',
-  question_count int not null check (question_count between 1 and 50),
+  question_count int not null check (question_count between 1 and 200),
+  -- «Umumiy test»: tanlangan mavzular (bitta mavzuda — o'sha mavzu).
+  topics text[],
   -- NULL — vaqt chegarasi yo'q.
   time_limit_min int check (time_limit_min between 1 and 180),
   due_at timestamptz,
@@ -96,6 +98,7 @@ create table public.class_assignment_questions (
   correct_index smallint not null check (correct_index between 0 and 3),
   explanation text not null default '',
   source jsonb not null default '{}'::jsonb,
+  topic_id text,
   primary key (assignment_id, qid)
 );
 alter table public.class_assignment_questions enable row level security;
@@ -404,6 +407,7 @@ language sql stable set search_path = '' as $$
   select jsonb_build_object('id', a.id, 'group_id', a.group_id,
     'topic_id', a.topic_id, 'topic_title', a.topic_title,
     'question_count', a.question_count, 'time_limit_min', a.time_limit_min,
+    'topics', coalesce(to_jsonb(a.topics), '[]'::jsonb),
     'due_at', a.due_at, 'variant_mode', a.variant_mode,
     'reveal_policy', a.reveal_policy, 'status', a.status,
     'created_at', a.created_at, 'closed_at', a.closed_at,
@@ -534,16 +538,27 @@ begin
   return jsonb_build_object('ok', true);
 end $$;
 
-create function public.group_assignment_create(p_group uuid, p_topic text, p_count int,
-  p_time_limit_min int, p_due_at timestamptz, p_variant boolean, p_reveal text)
+-- Mavzu testi (bitta mavzu) va «Umumiy test» (bir nechta mavzu) — bitta yo'l.
+--  * Bitta mavzu: hovuz — mavzuning hamma savoli (ko'pi bilan 200).
+--  * Bir nechta mavzu: savollar mavzulardan NAVBATMA-NAVBAT (round-robin)
+--    olinadi: har mavzu ichida tasodifiy tartib, so'ng 1-qatlam (har
+--    mavzudan bittadan), 2-qatlam, … — id bo'yicha takrorlanmaydi. Hovuz
+--    hajmi: variantsiz — N, variantli — 2N (har talaba undan N tasini oladi).
+--    Mavzular bo'yicha taqsimot private.group_round_robin_counts bilan bir xil
+--    (Dart: roundRobinCounts).
+create function private.group_assignment_make(p_group uuid, p_title text,
+  p_topics text[], p_count int, p_time_limit_min int, p_due_at timestamptz,
+  p_variant boolean, p_reveal text)
 returns jsonb
 language plpgsql security definer set search_path = '' as $$
 declare
   me uuid := auth.uid();
   g public.class_groups;
   a public.class_assignments;
+  v_topics text[];
   v_pool int;
   v_title text;
+  v_take int;
   q record;
   perm int[];
 begin
@@ -551,10 +566,14 @@ begin
   if not private.group_bump('ga:' || me::text, 60) then
     return jsonb_build_object('ok', false, 'error', 'rate_limited');
   end if;
-  if p_count is null or p_count not between 1 and 50
+  -- Takrorsiz, tartib saqlangan mavzular ro'yxati.
+  select array_agg(t order by o) into v_topics from (
+    select t, min(o) as o from unnest(coalesce(p_topics, '{}'::text[])) with ordinality u(t, o)
+    where t is not null and char_length(t) between 1 and 80 group by t) x;
+  if p_count is null or p_count not between 1 and 200
      or (p_time_limit_min is not null and p_time_limit_min not between 1 and 180)
      or p_reveal is null or p_reveal not in ('after_due', 'after_close')
-     or p_topic is null or char_length(p_topic) not between 1 and 80 then
+     or v_topics is null or cardinality(v_topics) > 100 then
     return jsonb_build_object('ok', false, 'error', 'invalid_settings');
   end if;
   if p_due_at is not null and (p_due_at < now() + interval '1 minute'
@@ -565,7 +584,7 @@ begin
     return jsonb_build_object('ok', false, 'error', 'reveal_needs_due');
   end if;
   select count(*)::int, max(topic_title) into v_pool, v_title
-    from public.class_quiz_questions where topic_id = p_topic;
+    from public.class_quiz_questions where topic_id = any (v_topics);
   if v_pool < p_count then
     return jsonb_build_object('ok', false, 'error', 'not_enough_questions',
                               'available', v_pool);
@@ -579,24 +598,79 @@ begin
       where x.group_id = g.id and x.status = 'open') >= 50 then
     return jsonb_build_object('ok', false, 'error', 'too_many_assignments');
   end if;
-  insert into public.class_assignments (group_id, topic_id, topic_title, question_count,
-    time_limit_min, due_at, variant_mode, reveal_policy)
-  values (g.id, p_topic, coalesce(v_title, ''), p_count, p_time_limit_min, p_due_at,
+  v_title := coalesce(nullif(regexp_replace(btrim(coalesce(p_title, '')), '\s+', ' ', 'g'), ''),
+                      v_title, '');
+  insert into public.class_assignments (group_id, topic_id, topic_title, topics,
+    question_count, time_limit_min, due_at, variant_mode, reveal_policy)
+  values (g.id, case when cardinality(v_topics) = 1 then v_topics[1] else 'mixed' end,
+          left(v_title, 200), v_topics, p_count, p_time_limit_min, p_due_at,
           coalesce(p_variant, false), p_reveal)
   returning * into a;
-  -- Hovuz nusxasi (ko'pi bilan 200); variantlar bir marta aralashtiriladi.
-  for q in select * from public.class_quiz_questions x where x.topic_id = p_topic
-           order by random() limit 200 loop
+  v_take := case when cardinality(v_topics) = 1 then 200
+                 when coalesce(p_variant, false) then least(v_pool, 2 * p_count)
+                 else p_count end;
+  for q in
+    with t as (select tt, o from unnest(v_topics) with ordinality u(tt, o)),
+    r as (select x.*, t.o,
+                 row_number() over (partition by x.topic_id order by random()) as rn
+          from public.class_quiz_questions x join t on t.tt = x.topic_id)
+    select * from r order by rn, o limit v_take loop
     select array_agg(i order by random()) into perm from generate_series(0, 3) i;
     insert into public.class_assignment_questions
-      (assignment_id, qid, question, options, correct_index, explanation, source)
+      (assignment_id, qid, question, options, correct_index, explanation, source, topic_id)
     values (a.id, q.id::text, q.question,
             jsonb_build_array(q.options -> perm[1], q.options -> perm[2],
                               q.options -> perm[3], q.options -> perm[4]),
-            array_position(perm, q.correct_index::int) - 1, q.explanation, q.source);
+            array_position(perm, q.correct_index::int) - 1, q.explanation, q.source,
+            q.topic_id)
+    on conflict do nothing;
   end loop;
   return jsonb_build_object('ok', true, 'assignment', private.group_assignment_json(a));
 end $$;
+
+-- Navbatma-navbat taqsimot: mavzu hajmlari [p_sizes] va jami [p_n] dan har
+-- mavzuga nechta savol tushadi (Dart roundRobinCounts bilan bir xil).
+create function private.group_round_robin_counts(p_sizes int[], p_n int) returns int[]
+language plpgsql immutable set search_path = '' as $$
+declare
+  c int[] := array_fill(0, array[cardinality(p_sizes)]);
+  left_n int := greatest(coalesce(p_n, 0), 0);
+  progressed boolean;
+  i int;
+begin
+  if cardinality(p_sizes) = 0 then return '{}'; end if;
+  loop
+    progressed := false;
+    for i in 1 .. cardinality(p_sizes) loop
+      exit when left_n = 0;
+      if c[i] < p_sizes[i] then
+        c[i] := c[i] + 1;
+        left_n := left_n - 1;
+        progressed := true;
+      end if;
+    end loop;
+    exit when left_n = 0 or not progressed;
+  end loop;
+  return c;
+end $$;
+
+create function public.group_assignment_create(p_group uuid, p_topic text, p_count int,
+  p_time_limit_min int, p_due_at timestamptz, p_variant boolean, p_reveal text)
+returns jsonb
+language sql security definer set search_path = '' as $$
+  select private.group_assignment_make(p_group, null, array[p_topic], p_count,
+    p_time_limit_min, p_due_at, p_variant, p_reveal)
+$$;
+
+-- «Umumiy test berish»: bir nechta mavzu, tahrirlanadigan nom.
+create function public.group_assignment_create_mixed(p_group uuid, p_title text,
+  p_topics text[], p_count int, p_time_limit_min int, p_due_at timestamptz,
+  p_variant boolean, p_reveal text)
+returns jsonb
+language sql security definer set search_path = '' as $$
+  select private.group_assignment_make(p_group, p_title, p_topics, p_count,
+    p_time_limit_min, p_due_at, p_variant, p_reveal)
+$$;
 
 -- Testni yopish: yangi urinish boshlanmaydi; boshlaganlar 30 s ichida yuboradi,
 -- qolganlari oxirgi saqlangan javoblar bilan yakunlanadi; javoblar ochiladi.
@@ -925,6 +999,9 @@ revoke execute on function public.group_list() from public, anon;
 revoke execute on function public.group_detail(uuid) from public, anon;
 revoke execute on function public.group_remove_member(uuid, uuid) from public, anon;
 revoke execute on function public.group_assignment_create(uuid, text, int, int, timestamptz, boolean, text) from public, anon;
+revoke execute on function public.group_assignment_create_mixed(uuid, text, text[], int, int, timestamptz, boolean, text) from public, anon;
+revoke execute on function private.group_assignment_make(uuid, text, text[], int, int, timestamptz, boolean, text) from public, anon, authenticated;
+revoke execute on function private.group_round_robin_counts(int[], int) from public, anon, authenticated;
 revoke execute on function public.group_assignment_close(uuid) from public, anon;
 revoke execute on function public.group_assignment_board(uuid) from public, anon;
 revoke execute on function public.group_assignment_preview(uuid) from public, anon;
@@ -938,6 +1015,7 @@ revoke execute on function public.group_assignment_result(uuid) from public, ano
 grant execute on function public.group_create(text), public.group_list(),
   public.group_detail(uuid), public.group_remove_member(uuid, uuid),
   public.group_assignment_create(uuid, text, int, int, timestamptz, boolean, text),
+  public.group_assignment_create_mixed(uuid, text, text[], int, int, timestamptz, boolean, text),
   public.group_assignment_close(uuid), public.group_assignment_board(uuid),
   public.group_assignment_preview(uuid), public.group_join(text, text, uuid),
   public.group_leave(uuid), public.group_assignment_open(uuid),

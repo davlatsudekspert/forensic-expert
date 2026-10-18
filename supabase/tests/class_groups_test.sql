@@ -415,4 +415,54 @@ select pg_temp.gq_forbidden('select * from public.class_assignment_attempts', 'a
 select pg_temp.gq_forbidden('select * from public.class_groups', 'groups table closed');
 select pg_temp.gq_forbidden($$select private.group_variant_draw('a','b','{x}',1)$$, 'private helpers closed');
 reset role;
+
+-- ======================================== 16. «Umumiy test» (bir nechta mavzu)
+select pg_temp.gq_check(
+  (select bool_and(private.group_round_robin_counts(
+        array(select (jsonb_array_elements_text(c -> 'sizes'))::int), (c ->> 'n')::int)
+      = array(select (jsonb_array_elements_text(c -> 'expected'))::int))
+   from jsonb_array_elements(:'vec'::jsonb -> 'round_robin') c),
+  'round-robin counts == shared fixture');
+reset role;
+insert into public.class_quiz_questions
+  (topic_id, topic_title, position, question, options, correct_index, explanation, source)
+select 'grp-big', 'Katta mavzu', g, 'Katta savol raqami ' || g,
+       jsonb_build_array('A', 'B', 'C', 'D'), 2, '',
+       '{"author":"Muallif","title":"Darslik","page":"7"}'::jsonb
+from generate_series(1, 60) g;
+select pg_temp.gq_as(:'t1');
+select (public.group_assignment_create_mixed(:'g1id', '  Umumiy   test: Guruh · Kichik  ',
+          array['grp-topic', 'grp-small', 'grp-topic', 'grp-big'], 20, 10,
+          now() + interval '1 day', false, 'after_due') -> 'assignment') as mx \gset
+select pg_temp.gq_check(:'mx'::jsonb ->> 'topic_title' = 'Umumiy test: Guruh · Kichik'
+  and :'mx'::jsonb ->> 'topic_id' = 'mixed'
+  and :'mx'::jsonb -> 'topics' = '["grp-topic","grp-small","grp-big"]'::jsonb,
+  'mixed: title cleaned, topics de-duplicated in order');
+reset role;
+select pg_temp.gq_check((select array_agg(n order by o) from (
+    select t.o, count(q.qid)::int as n
+    from unnest(array['grp-topic', 'grp-small', 'grp-big']) with ordinality t(tt, o)
+    left join class_assignment_questions q
+      on q.assignment_id = (:'mx'::jsonb ->> 'id')::uuid and q.topic_id = t.tt
+    group by t.o) x) = private.group_round_robin_counts(array[12, 5, 60], 20),
+  'mixed (no variant): pool = N, spread round-robin across topics [7,5,8]');
+select pg_temp.gq_check((select count(*) = count(distinct qid) from class_assignment_questions
+  where assignment_id = (:'mx'::jsonb ->> 'id')::uuid), 'mixed: no duplicate question ids');
+select pg_temp.gq_as(:'t1');
+select (public.group_assignment_create_mixed(:'g1id', null, array['grp-topic', 'grp-big'],
+          30, null, null, true, 'after_close') -> 'assignment' ->> 'id') as mv \gset
+reset role;
+select pg_temp.gq_check((select count(*) from class_assignment_questions where assignment_id = :'mv') = 60,
+  'mixed + variant: pool = 2N');
+select pg_temp.gq_as(:'t1');
+select pg_temp.gq_check((public.group_assignment_create_mixed(:'g1id', 'x', array['grp-topic', 'grp-small'],
+  10, null, null, true, 'after_close') ->> 'error') = 'variant_pool_small', 'mixed: variant needs 2N');
+select pg_temp.gq_check((public.group_assignment_create(:'g1id', 'grp-big', 60, null, null, false, 'after_close')
+  -> 'assignment' ->> 'question_count')::int = 60, 'custom count above 50 allowed (<= pool)');
+select pg_temp.gq_check((public.group_assignment_create(:'g1id', 'grp-big', 201, null, null, false, 'after_close')
+  ->> 'error') = 'invalid_settings', 'count above 200 rejected');
+select pg_temp.gq_as(:'t2');
+select pg_temp.gq_forbidden(format($q$select public.group_assignment_create_mixed(%L, 'x', array['grp-big'], 5, null, null, false, 'after_close')$q$, :'g1id'),
+  'other teacher: mixed test');
+reset role;
 \echo ALL CLASS GROUPS TESTS PASSED
