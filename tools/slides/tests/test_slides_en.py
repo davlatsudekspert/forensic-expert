@@ -88,7 +88,7 @@ def test_en_full_pipeline_and_pptx(tmp_path):
     from pptx import Presentation
     prs = Presentation(out)
     texts = [sh.text_frame.text for sl in prs.slides for sh in sl.shapes if sh.has_text_frame]
-    assert "References" in texts and "Quiz" in texts and "Question 1 / 40" in texts and "Answer 1: C" in texts
+    assert "References" in texts and "Quiz" not in texts and "Question 1 / 40" not in texts
     assert any(t.startswith("Source: ") and "pp. 45" in t for t in texts)
     assert "Adabiyotlar" not in texts and not any("-bet" in t for t in texts)
     assert prs.slides[-1].shapes and "References" in [sh.text_frame.text for sh in prs.slides[-1].shapes if sh.has_text_frame]
@@ -98,7 +98,7 @@ def test_uz_pptx_unchanged(tmp_path):
     d = _en_good(); d.update(topic="Mavzu", sources=[SIM])
     prs_texts = lambda p: [sh.text_frame.text for sl in __import__("pptx").Presentation(p).slides for sh in sl.shapes if sh.has_text_frame]
     t = prs_texts(build(d, tmp_path / "u.pptx"))
-    assert "Adabiyotlar" in t and "Bilimingizni sinang" in t and "Savol 1 / 10" in t and "Javob 1: C" in t
+    assert "Adabiyotlar" in t and "Bilimingizni sinang" not in t and "Savol 1 / 10" not in t
 
 
 def test_en_rejects_cyrillic_and_bad_source():

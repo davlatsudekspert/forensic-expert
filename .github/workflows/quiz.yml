@@ -47,7 +47,6 @@ jobs:
           for T in ${TOPIC//,/ }; do
             echo "=== $T ==="
             python generate_quiz.py "$T" --max-usd "$MAXUSD" --existing /tmp/so/out $SRC $FLAG || { echo "FAIL $T"; BAD=1; }
-            if [ -f "out_quiz/$T.json" ]; then python build_quiz_pptx.py "out_quiz/$T.json" || { echo "PPTX FAIL $T"; BAD=1; }; fi
           done
           exit $BAD
       - uses: actions/upload-artifact@v4
@@ -62,13 +61,13 @@ jobs:
           TOPIC: ${{ inputs.topic_id }}
         run: |
           [ -d tools/slides/out_quiz ] || exit 0
-          mkdir -p /tmp/o/raw && cp tools/slides/out_quiz/*.json tools/slides/out_quiz/*.pptx /tmp/o/ 2>/dev/null || true
+          mkdir -p /tmp/o/raw && cp tools/slides/out_quiz/*.json /tmp/o/ 2>/dev/null || true
           cp tools/slides/out_quiz/raw/raw_*.txt /tmp/o/raw/ 2>/dev/null || true
           git config user.name "slides-bot"; git config user.email "slides-bot@users.noreply.github.com"
           if git fetch origin slides-out 2>/dev/null; then git checkout -B slides-out origin/slides-out
           else git checkout --orphan slides-out; git rm -rfq . ; fi
           mkdir -p quiz "raw-quiz/$GITHUB_RUN_ID"
-          cp /tmp/o/*.json /tmp/o/*.pptx quiz/ 2>/dev/null || true
+          cp /tmp/o/*.json quiz/ 2>/dev/null || true
           cp /tmp/o/raw/* "raw-quiz/$GITHUB_RUN_ID/" 2>/dev/null || true
           git add quiz raw-quiz
           git commit -qm "quiz output: $TOPIC" || exit 0

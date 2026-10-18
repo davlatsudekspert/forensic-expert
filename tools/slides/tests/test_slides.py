@@ -73,7 +73,9 @@ def test_mock_generate_and_pptx(tmp_path):
     out = build(data, tmp_path / "o.pptx")
     from pptx import Presentation
     prs = Presentation(out)
-    assert len(prs.slides) > 34 and prs.slides[1].has_notes_slide
+    assert prs.slides[1].has_notes_slide
+    texts = [sh.text_frame.text for sl in prs.slides for sh in sl.shapes if sh.has_text_frame]
+    assert not any("Bilimingizni sinang" in t or t.startswith("Savol 1") for t in texts)  # test faqat ilovada
 
 
 def test_unsourced_bullet_rejected(tmp_path):

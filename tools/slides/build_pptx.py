@@ -148,8 +148,10 @@ def build(data, out_path, lang=None):
     L = STR.get(lang, STR["uz"])
     prs = Presentation(); prs.slide_width, prs.slide_height = W, H
     topic = data.get("topic", "")
-    slides, mcq, extras = data["slides"], data.get("mcq", []), data.get("extras", [])
-    total = 1 + len(slides) + (1 if extras else 0) + (1 + 2 * len(mcq) if mcq else 0) + 1
+    # Test savollari (mcq) prezentatsiyaga qo'yilmaydi: ular faqat ilovadagi
+    # alohida «Sinfda test» rejimida (egasi qarori, 2026-10-18).
+    slides, extras = data["slides"], data.get("extras", [])
+    total = 1 + len(slides) + (1 if extras else 0) + 1
     n = 1
     s = prs.slides.add_slide(prs.slide_layouts[6])
     _box(s, 0, 0, W, H, NAVY); _box(s, MX, Inches(4.45), Inches(3), Inches(0.08), GOLD)
@@ -176,26 +178,6 @@ def build(data, out_path, lang=None):
         n += 1
         s = _frame(prs, L["extras"], n, total, topic)
         _bullets(s, [{"text": e["text"]} for e in extras], MX, Inches(1.6), W - 2 * MX, Inches(5.2), 18)
-    if mcq:
-        n += 1
-        s = prs.slides.add_slide(prs.slide_layouts[6]); _box(s, 0, 0, W, H, NAVY)
-        _text(s, MX, Inches(2.6), W - 2 * MX, Inches(1.4), L["quiz"], 44, WHITE, True, "Georgia", anchor=MSO_ANCHOR.MIDDLE)
-        _text(s, MX, Inches(4.1), W - 2 * MX, Inches(0.6), L["nq"].format(n=len(mcq)), 22, GOLD)
-        for i, q in enumerate(mcq, 1):
-            n += 1
-            s = _frame(prs, L["q"].format(i=i, n=len(mcq)), n, total, topic)
-            _text(s, MX, Inches(1.55), W - 2 * MX, Inches(1.6), q["question"], 24, INK, True)
-            for k, opt in enumerate(q["options"][:4]):
-                yy = Inches(3.3) + k * Inches(0.82)
-                _box(s, MX, yy, Inches(0.7), Inches(0.68), GOLD, MSO_SHAPE.ROUNDED_RECTANGLE)
-                _text(s, MX, yy, Inches(0.7), Inches(0.68), "ABCD"[k], 24, NAVY, True, align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE)
-                _text(s, MX + Inches(0.9), yy, W - 2 * MX - Inches(0.9), Inches(0.68), opt, 20, INK, anchor=MSO_ANCHOR.MIDDLE)
-        for i, q in enumerate(mcq, 1):
-            n += 1
-            s = _frame(prs, L["a"].format(i=i, c="ABCD"[q["correct_index"]]), n, total, topic)
-            _text(s, MX, Inches(1.6), W - 2 * MX, Inches(1.0), f"{'ABCD'[q['correct_index']]}. {q['options'][q['correct_index']]}", 24, NAVY, True)
-            _text(s, MX, Inches(2.6), W - 2 * MX, Inches(3.6), q["explanation"], 20, INK)
-            _text(s, MX, Inches(6.4), W - 2 * MX, Inches(0.5), L["source"] + ": " + _src(q, lang), 11, GREY)
     n += 1
     s = _frame(prs, L["refs"], n, total, topic)
     refs = {}
