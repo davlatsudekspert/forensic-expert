@@ -121,6 +121,21 @@ abstract final class ClassCode {
     final uri = Uri.tryParse(t);
     return uri == null ? null : extract(uri);
   }
+
+  /// Joylangan istalgan matndan kod: havola, taklif matni («Kod: 123 456»)
+  /// yoki oddiy raqam. Topilmasa `null`.
+  static String? fromText(String? text) {
+    if (text == null) return null;
+    final direct = fromScanned(text);
+    if (direct != null) return direct;
+    for (final word in text.split(RegExp(r'\s+'))) {
+      final uri = Uri.tryParse(word.trim());
+      final fromLink = uri == null ? null : extract(uri);
+      if (fromLink != null) return fromLink;
+    }
+    final m = RegExp(r'(?<!\d)(\d{3})[\s-]?(\d{3})(?!\d)').firstMatch(text);
+    return m == null ? null : '${m.group(1)}${m.group(2)}';
+  }
 }
 
 enum NicknameCheck { ok, length, chars, blocked }

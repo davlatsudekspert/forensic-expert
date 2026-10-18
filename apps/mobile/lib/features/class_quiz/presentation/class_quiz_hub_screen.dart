@@ -116,11 +116,7 @@ class _ClassQuizHubState extends ConsumerState<ClassQuizHubScreen> {
                             textInputAction: TextInputAction.go,
                             maxLength: 7,
                             autofillHints: const [AutofillHints.oneTimeCode],
-                            inputFormatters: [
-                              FilteringTextInputFormatter.allow(
-                                RegExp(r'[0-9 ]'),
-                              ),
-                            ],
+                            inputFormatters: [ClassCodeInputFormatter()],
                             onTapOutside: (_) =>
                                 FocusManager.instance.primaryFocus?.unfocus(),
                             onSubmitted: (_) => _join(),
@@ -385,9 +381,7 @@ class _ClassJoinState extends ConsumerState<ClassJoinScreen> {
                       controller: _code,
                       keyboardType: TextInputType.number,
                       maxLength: 7,
-                      inputFormatters: [
-                        FilteringTextInputFormatter.allow(RegExp(r'[0-9 ]')),
-                      ],
+                      inputFormatters: [ClassCodeInputFormatter()],
                       onTapOutside: (_) =>
                           FocusManager.instance.primaryFocus?.unfocus(),
                       style: t.titleLarge?.copyWith(
@@ -545,6 +539,25 @@ class _ClassScanState extends State<ClassScanScreen> {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Kod maydoni: raqam yozishga ruxsat beradi, joylangan havola yoki taklif
+/// matnidan esa kodni o‘zi ajratib oladi.
+class ClassCodeInputFormatter extends TextInputFormatter {
+  @override
+  TextEditingValue formatEditUpdate(
+    TextEditingValue oldValue,
+    TextEditingValue newValue,
+  ) {
+    final t = newValue.text;
+    if (RegExp(r'^[0-9 ]{0,7}$').hasMatch(t)) return newValue;
+    final code = ClassCode.fromText(t);
+    if (code == null) return oldValue;
+    return TextEditingValue(
+      text: code,
+      selection: TextSelection.collapsed(offset: code.length),
     );
   }
 }
