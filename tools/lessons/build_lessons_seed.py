@@ -31,6 +31,7 @@ COURSES = {
     "5 kurs tibbiy profilaktika": "Tibbiy profilaktika fakulteti",
     "2 kurs bioetika": "Bioetika",
 }
+TOKS_COURSE = "Toksikologik kimyo"
 # Eski rejadagi mavzular joriy rejadan keyin turadi.
 # KTP ichida: ma'ruza (M), amaliy (A), mustaqil (MT), qo'shimcha (MR) — shu tartibda.
 KTP_PART = {"M": 0, "A": 100, "MT": 200, "MR": 300}
@@ -88,6 +89,19 @@ def main():
         d.pop("mcq", None)
         decks[did] = d
 
+    # «Toksikologik kimyo» kursi (docs/toks/toks_syllabus.json): deck fayli
+    # out/toks-NN-<id>.json, mavzu = deck (1:1), tartib = dars raqami.
+    syl = json.loads((ROOT / "docs/toks/toks_syllabus.json").read_text(encoding="utf-8"))
+    for les in syl:
+        did = f"toks-{les['n']:02d}-{les['id']}"
+        if did not in deck_ids:
+            continue
+        title = re.sub(r"^\[[^\]]*\]\s*", "", les["title_uz"]).strip()
+        rows.append((did, did, TOKS_COURSE, title, les["n"], False))
+        if did not in decks:
+            d = json.loads(git_show(a.git_ref, f"out/{did}.json"))
+            d.pop("mcq", None)
+            decks[did] = d
     out = []
     for did, d in sorted(decks.items()):
         out.append(
@@ -107,7 +121,7 @@ def main():
     pathlib.Path(a.out).write_text("\n".join(out) + "\n", encoding="utf-8")
     shown = [r for r in rows if not r[5]]
     print(f"lessons: {len(decks)} deck, {len(rows)} mavzu ({len(shown)} ko'rinadi) → {a.out}")
-    for c in dict.fromkeys(COURSES.values()):
+    for c in [*dict.fromkeys(COURSES.values()), TOKS_COURSE]:
         print(f"  {c}: {sum(1 for r in shown if r[2] == c)}")
 
 
