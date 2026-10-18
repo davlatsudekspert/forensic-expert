@@ -1,0 +1,64 @@
+name: class-quiz-seed
+# «Sinfda test» server bankini (public.class_quiz_questions) slides-out/quiz/*.json
+# dan to'ldiradi. Faqat QO'SHADI: serverda allaqachon bor savol (topic_id+position)
+# o'tkazib yuboriladi, hech narsa o'chirilmaydi. Supabase Management API orqali
+# (SUPABASE_ACCESS_TOKEN, SUPABASE_PROJECT_REF); maxfiy qiymatlar chop etilmaydi.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Kod olinadigan branch (import skripti)"
+        default: claude/phase-8-12-final-release
+      dry_run:
+        description: "Faqat SQL yasash (bazaga yozmaydi)"
+        type: boolean
+        default: true
+permissions:
+  contents: read
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+      DRY: ${{ inputs.dry_run }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.ref }}", fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: SQL yasash
+        run: |
+          git fetch -q origin slides-out
+          mkdir -p build
+          python tools/class_quiz/import_quiz_bank.py --git-ref origin/slides-out \
+            --sql "$PWD/build/seed.sql" --out "$PWD/build/bank.json"
+      - name: Bazaga qo'shish (Management API, bo'laklab, faqat yangi qatorlar)
+        run: |
+          python - <<'PY'
+          import json, os, re, sys, urllib.request
+          ref, tok = os.environ.get("PROJECT_REF"), os.environ.get("SUPABASE_ACCESS_TOKEN")
+          dry = os.environ.get("DRY") == "true"
+          lines = open("build/seed.sql", encoding="utf-8").read().splitlines()
+          ins = [l for l in lines if l.startswith("insert into public.class_quiz_questions")]
+          key = lambda l: re.search(r"values \('([^']+)', '(?:[^']|'')*', (\d+),", l).groups()
+          if dry:
+              print("dry-run:", len(ins), "rows,", len({key(l)[0] for l in ins}), "topic ids"); sys.exit(0)
+          if not ref or not tok: sys.exit("::error::secrets missing")
+          def run(sql):
+              req = urllib.request.Request(
+                  f"https://api.supabase.com/v1/projects/{ref}/database/query",
+                  data=json.dumps({"query": sql}).encode(), method="POST",
+                  headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
+                           "User-Agent": "forensic-expert-seed"})
+              with urllib.request.urlopen(req, timeout=120) as r:
+                  return json.loads(r.read() or b"[]")
+          have = {(r["topic_id"], str(r["position"])) for r in
+                  run("select topic_id, position from public.class_quiz_questions")}
+          todo = [l for l in ins if key(l) not in have]
+          print("already on server:", len(have), "rows; to insert:", len(todo))
+          for i in range(0, len(todo), 100):
+              run("begin;\n" + "\n".join(todo[i:i + 100]) + "\ncommit;")
+              print(f"rows {i + 1}-{min(i + 100, len(todo))} ok")
+          print("total", run("select count(*) as n, count(distinct topic_id) as topics from public.class_quiz_questions"))
+          PY
