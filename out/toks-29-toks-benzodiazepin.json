@@ -1,0 +1,1572 @@
+{
+  "topic": "1,4-benzodiazepin hosilalari: xlordiazepoksid, diazepam, nitrazepam, oksazepam, fenazepam; gidroliz-benzofenon usuli (Izotov), immunokimyo, YuQX-skrining",
+  "slides": [
+    {
+      "title": "Ma’ruza rejasi va tayanch iboralar",
+      "bullets": [
+        {
+          "text": "Bo‘lim: 1,4-benzodiazepin hosilalari, umumiy ma’lumotlar; ashyoviy dalillardan ajratib olish, immunokimyoviy va YuQX-skrining usullarida tahlili.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tayanch iboralar: trankvilizator, kislotali gidroliz, benzofenon, Izotov usuli, Bratton-Marshall reaksiyasi, YuQX, UB-, IQ- va mass-spektr.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133-144"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja: umumiy ma’lumot -> metabolizm va zaharlanish -> gidroliz-benzofenon usuli -> alohida moddalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133-144"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun benzodiazepinlar sud-kimyoda tez-tez uchraydi? Doskada: reja 4 qadamda. Eslatma: bo‘lim sarlavhasida immunokimyoviy usul ko‘rsatilgan, lekin kitobning shu betlarida (133-144) IFT usuli bayon etilmagan — faqat gidroliz va YuQX-skrining berilgan; IFT ni o‘ylab topmang."
+    },
+    {
+      "title": "1,4-benzodiazepinlar: umumiy ma’lumot",
+      "bullets": [
+        {
+          "text": "1,4-benzodiazepin hosilalari trankvilizatorlar qatoriga kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘tgan asrning 60 yillari boshida xlordiazepoksid, keyinroq diazepam, nitrazepam va oksazepamlar sintez qilindi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Guruhning 2 mingdan ortiq hosilasi bor; ulardan 12-15 tasi tibbiyotda keng qo‘llaniladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xlordiazepoksid, diazepam, oksazepam, nitrazepam toksikologik hamda narkologik ahamiyatga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega 2 mingdan ortiq hosiladan faqat 12-15 tasi ishlatiladi? Doskada: to‘rt asosiy modda va ularning sintez ketma-ketligi. Tipik xato: benzodiazepinlarni barbituratlar bilan bir guruhga qo‘yish."
+    },
+    {
+      "title": "Narkologik ahamiyati",
+      "bullets": [
+        {
+          "text": "Tinchlantiruvchi (trankvilizator) va uxlatuvchi faollikka ega; qo‘rqish, bezovtalik, hayajonlanish va bosh og‘rig‘ini qoldiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uxlatuvchi va miorelaksantlik xossasiga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etil spirti, giyohvandlik vositalari, giyohvand analgetiklar va uxlatuvchi moddalar ta’sirini kuchaytiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: spirt bilan birga qabul qilish nega xavfli? Doskada: kuchaytiriladigan moddalar ro‘yxati. Tipik xato: benzodiazepin va spirt birgalikdagi ta’sirini oddiy yig‘indi deb baholash."
+    },
+    {
+      "title": "Ta’sir xususiyatlari va qaramlik",
+      "bullets": [
+        {
+          "text": "Polyak olimlari A.Velbel va boshqalar (1984) benzodiazepinlarning zararli va zaharli ta’siri kam kuzatilishini ta’kidlagan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xlordiazepoksid va fenazepamda mushaklar tonusi pasayadi; diazepam miorelaksantlar faolligini kuchaytiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uzoq qabul qilinganda kumulyatsiyalanadi, o‘rganib qolish, psixik va fizik qaramlik kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kumulyatsiya tahlil natijasini qanday o‘zgartiradi? Doskada: kumulyatsiya -> o‘rganish -> qaramlik zanjiri. Tipik xato: «zararli ta’siri kam» degan fikrni «xavfsiz» deb tushunish."
+    },
+    {
+      "title": "Farmakokinetika",
+      "bullets": [
+        {
+          "text": "1,4-benzodiazepinlar oshqozon-ichak orqali organizmda tez so‘riladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonda yarim parchalanish davri o‘rtacha 1-2 sutka; oksazepam 4 soat ichida maksimal konsentratsiyaga etadi, ikkinchi sutka oxirida plazmadan chiqib ketadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diazepam qabul qilingach, birinchi va ikkinchi hafta davomida plazmada uning metabolitlari ortishi gaz xromatografiyasi bilan isbotlangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diazepam 2-4 barobar ortiq dozada uzoq qabul qilinsa ham plazmada konsentratsiyasi past bo‘lib turishi kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: past konsentratsiya nima uchun «dozasi kichik» degani emas? Doskada: yarim parchalanish 1-2 sutka. Tipik xato: oksazepam vaqtini (4 soat) boshqa moddalarga umumlashtirish."
+    },
+    {
+      "title": "Metabolizm yo‘llari",
+      "bullets": [
+        {
+          "text": "Diazepam va xlordiazepoksid jigarda N-demetillanish orqali parchalanadi; dezmetildiazepam gidroksillanishga uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xlordiazepoksid jigarda gidroksillanish va dealkillanishga uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diazepamning N-demetillanish mahsuloti oksazepam glyukuron kislotasi bilan suvda eriydigan glyukuronid hosil qilib, peshob orqali chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrazepam qaytariladi; uning 20% peshobda 7-amino- va 7-asetilamino metabolitlar shaklida chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: oksazepam nima uchun ham alohida dori, ham diazepam metaboliti? Doskada: diazepam -> dezmetildiazepam -> oksazepam -> glyukuronid. Tipik xato: metabolit topilganda uni iste’mol qilingan modda deb xulosa qilish; teturam (antabus) bilan birga qabul qilinganda diazepam va xlordiazepoksid terapevtik faolligi ortadi (p.134)."
+    },
+    {
+      "title": "Zaharlanish va klinik bosqichlar",
+      "bullets": [
+        {
+          "text": "Benzodiazepin hosilalari oshqozon va ingichka ichakdan so‘riladi hamda qon plazmasi oqsillariga bog‘lanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Behush yotgan bemorlar oshqozonida modda qabul qilingandan 2-3 sutkadan keyin ham aniqlanishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hushdan ketish 12 soatdan oshsa, bronxopnevmoniya, kollaps, jigar va buyrak yetishmovchiligi kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Zaharlanishning 3 klinik bosqichi",
+        "nodes": [
+          "1) Mudrash, yengil uxlab qolish",
+          "2) Yuzaki koma: behushlik",
+          "3) Hushdan ketish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 2-3 sutkadan keyin oshqozonda modda topilishi ekspert uchun nimani bildiradi? Doskada: uch bosqich. Eslatma: kitobda berilgan qondagi mg/l zaharlanish va o‘lim chegaralari (p.134) malaka_errors E15 bo‘yicha shubhali, shuning uchun slaydga kiritilmadi."
+    },
+    {
+      "title": "Izotov usuli: gidroliz bosqichi",
+      "bullets": [
+        {
+          "text": "Gidroliz mahsulotlari bo‘yicha tahlilni B.N.Izotov, I.V.Volkova va boshqalar taklif qilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "10 ml peshob (2 ml qon) + 10 ml (2 ml) konsentrlangan HCl; qaytar sovutgichda 1 soat hammomda.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘yingan NaOH bilan pH=8-10; 10 ml xloroform bilan 2 marta ekstraksiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134-135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Gidroliz-benzofenon usuli",
+        "nodes": [
+          "Peshob/qon + konsentrlangan HCl",
+          "Qaytar sovutgich, 1 soat, hammom",
+          "NaOH bilan pH=8-10",
+          "2x10 ml xloroform",
+          "Bug‘latish, YuQX"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun benzodiazepin molekulasi kislotali gidrolizda benzofenonga aylanadi? Doskada: bosqichlar zanjiri. Tipik xato: gidroliz hajmlarini (10 ml siydik : 10 ml HCl; 2 ml qon : 2 ml HCl) aralashtirish."
+    },
+    {
+      "title": "Gidroliz mahsulotlari: benzofenonlar",
+      "bullets": [
+        {
+          "text": "Nitrazepam bilan bog‘liq 2,5-diaminobenzofenon (DAB) ham keltirilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oksazepam xlordiazepoksid kabi AXB (2-amino-5-xlorbenzofenon) hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Gidroliz mahsulotlari",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Mahsulot"
+        ],
+        "rows": [
+          [
+            "Xlordiazepoksid",
+            "AXB (2-amino-5-xlorbenzofenon)"
+          ],
+          [
+            "Diazepam",
+            "MXB (2-metilamino-5-xlorbenzofenon)"
+          ],
+          [
+            "Nitrazepam",
+            "ANB (2-amino-5-nitrobenzofenon)"
+          ],
+          [
+            "Fenazepam",
+            "BXB"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: benzofenonning o‘rinbosarlari moddani qanday bildiradi? Doskada: jadvalni to‘ldiring. Kitobda xato: p.135 matnida nitrazepam gidrolizi AXB deb yozilgan, ro‘yxat va 17-jadvalda esa ANB (2-amino-5-nitro); fenazepam BXB ning to‘liq nomi kitobda chalkash berilgan (malaka_errors E17) — to‘liq nomi slaydga kiritilmadi."
+    },
+    {
+      "title": "Biologik ob’ektdan Izotov bo‘yicha ajratish",
+      "bullets": [
+        {
+          "text": "Oshqozon, ichak, jigar, buyrak; maydalangan ob’ekt nordon suv (pH=2) bilan 1 soat qoldiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvli ajratma quyib olinib, xloroform bilan ekstraksiyalanadi; xloroform qavati to‘kib tashlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvli qatlam pH=9-10 ga keltirilib, dietil efir bilan 3 qayta ekstraksiyalanadi; efir bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Izotov bo‘yicha ajratish",
+        "nodes": [
+          "Nordon suv (pH=2), 1 soat",
+          "Xloroform (tashlanadi)",
+          "Suvli qatlam pH=9-10",
+          "Dietil efir, 3 marta",
+          "Bug‘latish, xloroformda eritish"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun kislotali muhitdagi xloroform qatlami tashlanadi? Doskada: pH 2 -> xloroform (tashlanadi); pH 9-10 -> efir (olinadi). Tipik xato: ikkala qatlamni aralashtirib yuborish. «Guvoh» eritmalar ham benzodiazepin saqlovchi preparatlarni gidroliz qilib olinadi (p.135)."
+    },
+    {
+      "title": "Benzofenonlarni YuQX da aniqlash",
+      "bullets": [
+        {
+          "text": "Xromatografik sistema sifatida benzol ishlatiladi; plastinkada turli intensivlikdagi sariq dog‘lar ko‘rinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135-136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyin NaNO2, 0,1% HCl, 0,5% sulfanil kislota va naftolning ishqordagi eritmasi purkaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135-136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rangdan tashqari Rf ko‘rsatkichlari bo‘yicha ham aniqlanadi (17-jadval).",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Purkashdan keyingi ranglar",
+        "nodes": [],
+        "header": [
+          "Benzofenon",
+          "Dog‘ rangi"
+        ],
+        "rows": [
+          [
+            "AXB",
+            "qizil"
+          ],
+          [
+            "ANB",
+            "yorqin zarg‘aldoq"
+          ],
+          [
+            "MXB",
+            "sariq (ba’zan rang yo‘qoladi)"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun MXB dog‘ining rangi AXB va ANB dan farq qiladi? Doskada: ranglar jadvali. Tipik xato: sariq dog‘ (MXB) ni «rangsiz» deb talqin qilish — kitobga ko‘ra u sariqligicha qoladi yoki ba’zan rang yo‘qoladi."
+    },
+    {
+      "title": "17-jadval: Rf va UB-spektr maksimumlari",
+      "bullets": [
+        {
+          "text": "Nitrazepamning DAB mahsuloti start chizig‘ida qoladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Benzodiazepin gidroliz mahsulotlari Rf va UB maksimumi bo‘yicha farqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Gidroliz mahsulotlari (17-jadval)",
+        "nodes": [],
+        "header": [
+          "Mahsulot",
+          "Rf",
+          "UB, nm"
+        ],
+        "rows": [
+          [
+            "ANB (nitrazepam)",
+            "0,17-0,18",
+            "238, 358"
+          ],
+          [
+            "BXB (fenazepam)",
+            "0,43-0,45",
+            "230, 400"
+          ],
+          [
+            "MXB (diazepam)",
+            "0,57",
+            "238, 410"
+          ],
+          [
+            "AXB (xlordiazepoksid)",
+            "0,35-0,37",
+            "238, 390"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: AXB ni xlordiazepoksid va oksazepamdan qanday farqlash mumkin? Doskada: Rf ni o‘sish tartibida yozing (ANB < AXB < BXB < MXB). Tipik xato: kitob jadvalida AXB diazepam qatorida ham ko‘rsatilgan, lekin matnda diazepam MXB beradi deyiladi — jadval tuzilishidan kelib chiqqan noaniqlik."
+    },
+    {
+      "title": "O‘zgarmagan benzodiazepinlarni YuQX da tahlil",
+      "bullets": [
+        {
+          "text": "KSK markali silikagel yoki «silufol» yupqa qavatli plastinkalari ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Erituvchilar sistemasi: etilasetat, metil spirti va ammiakning 25% eritmasi (85:10:5).",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Plastinkadagi dog‘lar Dragendorf reaktivini purkab ko‘riladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun gidrolizdan keyingi (benzol) va o‘zgarmagan modda uchun (etilasetat-metanol-ammiak) sistemalar farq qiladi? Doskada: ikki sistemani yonma-yon yozing. Tipik xato: bu sistema Rf larini 17-jadval (benzol) bilan solishtirish."
+    },
+    {
+      "title": "Umumiy reaksiyalar: ningidrin",
+      "bullets": [
+        {
+          "text": "1,4-benzodiazepin hosilalari identifikatsiyasi yetarli ravishda o‘rganilmagan; ularga quyidagi reaksiyalar umumiy hisoblanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ningidrin: eritmaga ningidrin qo‘shib, suv hammomida 3 daqiqa qizdiriladi, 5 ml etil spirti qo‘shilsa eritma ko‘k rangga kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyin 2 tomchi mis sulfatning 1% eritmasi qo‘shilsa, avval qizil, so‘ng qo‘ng‘ir rangga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun «yetarli o‘rganilmagan» degan ibora ekspert uchun muhim? Doskada: ningidrin reaksiyasi bosqichlari. Eslatma: kitobda Vitali-Moren reaksiyasi barcha 1,4-benzodiazepinlar uchun umumiy deyilgan (p.136) — bu malaka_errors E16 bo‘yicha shubhali, shuning uchun slaydga kiritilmadi."
+    },
+    {
+      "title": "Cho‘kma hosil qiluvchi reaktivlar",
+      "bullets": [
+        {
+          "text": "Preparatning xloroformli eritmasi buyum oynachasiga tomizilib, erituvchi uchiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136-137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qoldiqqa 0,1 n HCl dan 1 tomchi, 5-10 daqiqadan so‘ng bir tomchi reaktiv.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "137"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Barcha benzodiazepinlar uchun",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Dragendorf",
+            "amorf cho‘kma yoki qizil kristallar"
+          ],
+          [
+            "Temir yodid kompleksi",
+            "15 daq: to‘q qo‘ng‘ir tayoqchalar"
+          ],
+          [
+            "Yodmonoxlorid 0,8% (spirtli)",
+            "ninasimon, 45-60 daq: prizma"
+          ],
+          [
+            "Mis yodid kompleksi",
+            "1 soat: to‘q qo‘ng‘ir ninalar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nam kamera nima uchun kerak? Doskada: reaktiv va kristall shakli. Tipik xato: kristallarning paydo bo‘lish vaqtini hisobga olmay erta xulosa qilish."
+    },
+    {
+      "title": "Miqdoriy tahlil: Bratton-Marshall usuli",
+      "bullets": [
+        {
+          "text": "Fotokolorimetrik usul Bratton-Marshall reaksiyasiga asoslangan; qizil olcha rangli mahsulot hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "HCl bilan gidrolizdan keyin sovutilgan suyuqlikka NaNO2 ning 10% eritmasi qo‘shilib, 3 daqiqaga qoldiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ammoniy sulfaminatning 0,5% eritmasidan 0,5 ml qo‘shilib, yana 3 daqiqa; so‘ng naftiletilendiamin digidroxloridning 0,1% eritmasidan 0,5 ml qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Optik zichlik standart eritma bilan FEK da solishtiriladi, miqdor kalibrlash grafigi yordamida hisoblanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "137"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: reaktivlar qo‘shish ketma-ketligi va 3 daqiqalik intervallarning ahamiyati. Doskada: diazotirlash -> sulfaminat -> azo bo‘yoq bosqichlari. Qo‘shimcha usul: spirtli eritmaning 200-300 nm UB sohasidagi maksimal yutilishi optik zichligini o‘lchash (p.138)."
+    },
+    {
+      "title": "Xlordiazepoksid: xossalari va ta’siri",
+      "bullets": [
+        {
+          "text": "Oq-sarg‘ish kristall kukun, suvda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sinonimlari: elenium, xlozepid, timazin, librium, dekadil, napoton, radedur.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Trankvilizatorlikdan tashqari mushaklarni bo‘shashtiradi, ishtahani ochadi, oshqozon va o‘n ikki barmoqli ichak yaralarini davolashda ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: eruvchanlik biologik ob’ektdan ajratishni qanday belgilaydi? Doskada: sinonimlar ro‘yxati. Tipik xato: sinonimlarni turli moddalar deb hisoblash."
+    },
+    {
+      "title": "Xlordiazepoksid: farmakokinetika",
+      "bullets": [
+        {
+          "text": "Bir marta qabul qilingach 35-45 daqiqa ichida 0,015-0,025 g so‘riladi; eng yuqori konsentratsiya 1-8 soat ichida kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asosiy metabolitlari N-dimetilxlordiazepoksid va laktam; birinchisining eng yuqori konsentratsiyasi 8-24 soat, yarim parchalanish davri 6-8 soat.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qabul qilinganning 35-60% peshob bilan, 20% najas bilan chiqariladi; qon plazmasidan 2-3 sutka davomida aniqlanishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: aniqlanish davri ekspert tanlagan ob’ektga qanday ta’sir qiladi? Doskada: vaqt o‘qida 35-45 daq, 1-8 soat, 8-24 soat, 2-3 sutka. Tipik xato: yarim parchalanish davrini (6-8 soat) metabolit uchun emas, xlordiazepoksid uchun deb o‘qish."
+    },
+    {
+      "title": "Xlordiazepoksidni ajratish",
+      "bullets": [
+        {
+          "text": "Xlordiazepoksid suvli muhitda ishqoriy sharoitda organik erituvchilar yordamida ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metaboliti laktam neytral va kislotali sharoitda dietil efiri bilan ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Biologik materialdan B.N.Izotov usulida ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "138"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: asos va laktam uchun ekstraksiya pH nima uchun farq qiladi? Doskada: ikki ekstraksiya sharoiti. Tipik xato: faqat ishqoriy ekstraksiya qilib, laktamni yo‘qotish."
+    },
+    {
+      "title": "Xlordiazepoksidni aniqlash reaksiyalari",
+      "bullets": [
+        {
+          "text": "YuQX: «silufol», ammiak-metanol-xloroform-aseton aralashmasi; Dragendorf reaktivi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Xlordiazepoksid: rangli reaksiyalar",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Ningidrin",
+            "qo‘ng‘ir mahsulot"
+          ],
+          [
+            "Marki reaktivi",
+            "sariq aralashma"
+          ],
+          [
+            "Frede reaktivi",
+            "qizil olov rangli mahsulot"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: xlordiazepoksid reaksiyalari boshqa benzodiazepinlardan qanday farq qiladi? Doskada: jadvalni to‘ldiring. Eslatma: kitobda Vitali-Moren reaksiyasi ham keltirilgan, lekin u bu guruh uchun xos emas (malaka_errors E16) — kiritilmadi. Kitobda YuQX aralashmasi nisbati OCR da buzilgan — nisbat slaydga yozilmadi."
+    },
+    {
+      "title": "Xlordiazepoksid: spektral usullar",
+      "bullets": [
+        {
+          "text": "UB: qoldiq kislotada eritiladi, 246 va 308 nm da maksimum; ishqordagi eritma 262 nm da yutadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IQ (KBr plastinka): 747, 1240, 1561, 1125, 1095, 1220 sm-1 sohalarida yutilish.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mass-spektr: 282, 299, 284, 283, 241, 56, 301, 253 m/z; miqdori SF va FEK usullarida aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun UB ni kislotali va ishqoriy muhitda olish identifikatsiyani kuchaytiradi? Doskada: 246/308 (kislota) va 262 (ishqor). Eslatma: kitobdagi ε=1112 qiymati belgisi noto‘g‘ri bo‘lishi mumkin (aslida A(1%,1 sm), malaka_errors E2), shuning uchun slaydga kiritilmadi."
+    },
+    {
+      "title": "Diazepam: xossalari va farmakokinetikasi",
+      "bullets": [
+        {
+          "text": "Sinonimlari: seduksen, relanium, eridan, sibazon, apaurin, valium. Uyquni yaxshilaydi, nevrozda qo‘rquvni kamaytiradi, epilepsiyada boshqa preparatlar bilan ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qabul qilingach diazepam va metabolitlari qonda 2-6 soat ichida aniqlanadi, 18 soat ichida sekin kamayadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surunkali qabul qilinganda 4-6 sutkadan keyin muallaq miqdori; N-demetildiazepam 5-8 sutkada maksimumga etadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "139-140"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "60-70% peshob, 9-10% najas orqali chiqadi; peshob orqali yarim chiqarilish davri 2-7 sutka; asosan metabolitlar holida.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "140"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: surunkali qabul qilishda nega N-demetildiazepam kechroq maksimumga yetadi? Doskada: 2-6 soat; 18 soat; 4-6 sutka; 5-8 sutka. Tipik xato: bir martalik va surunkali qabul vaqtlarini aralashtirish."
+    },
+    {
+      "title": "Diazepamni ajratish va mikrokristallar",
+      "bullets": [
+        {
+          "text": "Biologik ob’ektdan kislotali va ishqoriy sharoitda organik erituvchilar bilan ajratiladi (Izotov usuli).",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "140"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ningidrin bilan sariq-qo‘ng‘ir rangli mahsulot hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "140"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob yodidning KI dagi eritmasi bilan amorf cho‘kma, nam kamerada 10-15 daqiqadan so‘ng olti burchakli plastinkalar va cho‘zinchoq prizmalar kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "140"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis rodanid kompleksi bilan mayda sferoidlar hosil bo‘lib, nam kamerada 20-30 daqiqada kristallar majmuasiga birlashadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "140"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: mikrokristallar shakli identifikatsiyada qanday rol o‘ynaydi? Doskada: ikkita reaktiv va ularning kristall shakli. Tipik xato: nam kamera vaqtini (10-15 va 20-30 daq) aralashtirish."
+    },
+    {
+      "title": "Diazepam: YuQX va spektrlar",
+      "bullets": [
+        {
+          "text": "YuQX: etilasetat, ammiak 25% va metil spirti (26:1,6:3,3) yoki xloroform va aseton (9:1); dog‘ Dragendorf reaktivi bilan topiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "140"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB: qoldiq kislotada eritiladi; 242, 284 va 366 nm da maksimum.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "140"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IQ: 749, 1325, 1485, 1692 sm-1; mass-spektr: 256, 283, 284, 285, 257, 255, 258, 286 m/z; miqdori SF, FEK usullarida.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "140"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki YuQX sistemasidan qaysi birini birinchi tanlaysiz? Doskada: ikkala sistema. Eslatma: kitobdagi ε=1020 qiymati aslida A(1%,1 sm) bo‘lishi mumkin (malaka_errors E2), kiritilmadi."
+    },
+    {
+      "title": "Nitrazepam: xossalari va farmakokinetikasi",
+      "bullets": [
+        {
+          "text": "Sinonimlari: eunoktin, radedorm, magadon, neozepam; 1963 yilda sintez qilingan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Trankvilizatorlik xususiyati boshqa benzodiazepinlardan kuchsiz, uxlatuvchilik xususiyati sezilarli yuqori.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir marta qabul qilinganda qondagi maksimal miqdori 0,005 g, 24 soatdan so‘ng erishiladi; 90% dan ko‘prog‘i plazma oqsillari bilan bog‘lanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "48 soat ichida 23% chiqariladi; peshobda faqat 5% o‘zgarmagan, 95% metabolitlar (7-aminonitrazepam, 7-asetoaminonitrazepam).",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: oqsil bilan 90% bog‘lanish ekstraksiyaga qanday ta’sir qiladi? Doskada: 0,005 g; 24 soat; 23%; 5%/95%. Tipik xato: o‘zgarmagan nitrazepamni topishga umid qilib, 7-aminometabolitlarni qidirmaslik."
+    },
+    {
+      "title": "Nitrazepamni ajratish",
+      "bullets": [
+        {
+          "text": "Nitrazepam ishqoriy suvli eritmalardan organik ajratuvchilar yordamida ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ob’ekt 3 marta to‘yintirilgan oksalat kislota eritmasi (pH=1-2) bilan 1 soatdan qoldiriladi; sentrifugat 3 marta xloroform-etilasetat (1:1) bilan 20, 15 va 15 ml dan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sentrifugatga ishqor qo‘shib pH=10 ga etkazilib, yana xloroform-etilasetat (1:1) bilan 20, 15 va 15 ml dan ekstrakt olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ikki pH da (1-2 va 10) alohida ekstraksiya qilinadi? Doskada: pH 1-2 va pH 10 ekstraksiyalarni yonma-yon. Tipik xato: 20, 15, 15 ml hajmlarni bir xil 3x20 ml deb o‘qish."
+    },
+    {
+      "title": "Nitrazepam: mikrokristalloskopiya",
+      "bullets": [
+        {
+          "text": "Umumiy reaksiyalardan tashqari quyidagi xususiy mikrokristalloskopik reaksiyalar qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kaliy ferritsianid reaksiyasini benzodiazepinning boshqa hosilalari bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Nitrazepam: xususiy reaksiyalar",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Yodning 0,1 n eritmasi",
+            "10-15 daq: ninasimon to‘q qo‘ng‘ir"
+          ],
+          [
+            "Simob yodid (KI da)",
+            "amorf cho‘kma"
+          ],
+          [
+            "Kaliy ferritsianid 5%",
+            "prizma shaklidagi kristallar"
+          ],
+          [
+            "PbI2/KI",
+            "30 daq: to‘q qizil kristallar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ferritsianid reaksiyasi nima uchun nitrazepam uchun tanlovchan? Doskada: jadvalni to‘ldiring. Tipik xato: ferritsianid natijasini boshqa benzodiazepinlarga ham umumlashtirish."
+    },
+    {
+      "title": "Nitrazepam: spektrlar va miqdori",
+      "bullets": [
+        {
+          "text": "UB: etil spirtdagi eritma 218 va 260 nm; sulfat kislotadagi eritma 277 va 340 nm da maksimum.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IQ: 696, 1339, 1534, 1611, 1695 sm-1; mass-spektr: 280, 253, 281, 206, 234, 252, 254, 264 m/z.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "141-142"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miqdori SF va FEK usullarida; FEK da Bratton-Marshall reaksiyasida hosil bo‘lgan olcha rang qizil mahsulot o‘lchanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "142"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nitrazepam uchun UB maksimumlari muhitga qarab qanday o‘zgaradi? Doskada: spektr maksimumlari jadvali. Tipik xato: etanol va sulfat kislota eritmalaridagi maksimumlarni almashtirish."
+    },
+    {
+      "title": "Oksazepam",
+      "bullets": [
+        {
+          "text": "Sinonimlari: tazepam, adumbron, nozepam, praksiten, seraks, serenal. Oq kristall kukun, suvda deyarli erimaydi, etil spirti va xloroformda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "142"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Farmakologik ta’siri xlordiazepoksid va diazepamga yaqin; diazepamga nisbatan kam zaharli, kuchsiz tirishishga qarshi va miorelaksant.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "142"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diazepam metabolitlaridan biri: 4 soatdan keyin plazmada glyukuronid holida yuqori konsentratsiyaga etadi, 48 soatda plazmadan yo‘qoladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "142"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Peshob bilan glyukuronid holida, axlat bilan o‘zgarmagan holda chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "142"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: oksazepam topilsa, diazepam qabul qilinganmi? Doskada: oksazepam hosil bo‘lish yo‘li. Tipik xato: oksazepam topilishi doim uni to‘g‘ridan-to‘g‘ri iste’mol qilishni bildiradi deb o‘ylash."
+    },
+    {
+      "title": "Oksazepamni ajratish va aniqlash",
+      "bullets": [
+        {
+          "text": "A.F.Fartushniy usuli: 25 g maydalangan ob’ektga gidrofosfatning suvli eritmasidan 3 ml qo‘shib gomogenlanadi; gomogenat 3 marta 10 ml etil efiri bilan ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "142"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: xloroform-propil spirti-aseton (9:0,4:1); aniqlovchi — natriy tiosulfat eritmasi; sariq yoki zarg‘aldoq dog‘.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "142"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB: kislotada 234 va 280 nm; ishqorda 233 va 344 nm; etanolda 230 va 315 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "142"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IQ: 698, 1325, 1129, 1711, 1693 sm-1; mass-spektr: 257, 77, 268, 239, 205, 267, 233, 259 m/z; miqdori SF, FEK usullarida.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "143"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: oksazepam uchun Izotov o‘rniga Fartushniy usuli nima uchun? (kitobda sabab aytilmagan). Doskada: erituvchi muhitga qarab UB maksimumlari. Eslatma: ε=1235 va ε=85 qiymatlari belgisi noto‘g‘ri bo‘lishi mumkin (malaka_errors E2), kiritilmadi."
+    },
+    {
+      "title": "Fenazepam: xossalari va ishlatilishi",
+      "bullets": [
+        {
+          "text": "Sinonimlari: fenorelaksan, elzepam, trankvizepam, fezanef, fezipam.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "143"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oq yoki bir oz och sarg‘ish kristall kukun; suvda va efirda deyarli erimaydi, 95% spirtda kam eriydi; suyuqlanish harorati 225-230°C.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "143"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuchli trankvilizator, titroqqa qarshi va uxlatuvchi ta’sir ko‘rsatadi; tabletkalarda 0,0005-0,001 g va 0,0025 g dan chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "143"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metaboliti glyukuron kislotasi bilan glyukuronidlar hosil qiladi; biologik ob’ektdan B.N.Izotov usulida ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "143"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: fenazepam doz oralig‘i boshqa benzodiazepinlardan nimasi bilan farq qiladi? Doskada: tablet dozalari. Tipik xato: kitobda fenazepam metabolitining nomi (BXB) chalkash berilgan (malaka_errors E17) — slaydga kiritilmadi."
+    },
+    {
+      "title": "Fenazepamni aniqlash",
+      "bullets": [
+        {
+          "text": "YuQX: xloroform-aseton (9:1) yoki benzol-etanol-dietilamin (9:1:1); aniqlovchi — Mune bo‘yicha modifikatsiyalangan Dragendorf reaktivi, zarg‘aldoq dog‘; UB nurida siyoh rangdagi dog‘.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "143"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Belshteyin usuli: mis simchasi ustida fenazepam kristali alangaga tutilsa, alanganing rangsiz qismi yashil rangga bo‘yaladi (galogen).",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "143"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB: xloroformli eritma 320 nm, spirtli eritma 230 nm; IQ: 2896, 1655, 1432, 1091, 1035, 877 sm-1.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "143-144"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mass-spektr: 321, 349, 177, 75 m/z; miqdori SF, FEK usullarida aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "144"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: Belshteyin sinovi nimani isbotlaydi (galogen borligini, qaysi galogen ekanini emas)? Doskada: fenazepam tarkibida xlor va brom. Tipik xato: Belshteyin sinovi bilan modda identifikatsiya qilingan deb xulosa qilish."
+    },
+    {
+      "title": "Xulosa va nazorat savollari",
+      "bullets": [
+        {
+          "text": "1,4-benzodiazepinlar: xlordiazepoksid, diazepam, nitrazepam, oksazepam, fenazepam; tez so‘riladi, kumulyatsiyalanadi, qaramlik chaqirishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133-134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Izotov usuli: kislotali gidroliz -> benzofenonlar (AXB, MXB, ANB, BXB) -> YuQX (benzol) va rangli purkash.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134-136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tasdiqlash: ningidrin, mikrokristallar, UB-, IQ- va mass-spektr; miqdori — Bratton-Marshall (FEK) yoki spektrofotometriya.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136-144"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nazorat: xlordiazepoksid, diazepam, nitrazepam, oksazepamni qon va peshobdan ajratish va gidroliz reaksiyasini yozish.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "144"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: noma’lum benzodiazepin qanday tahlil sxemasi bilan aniqlanadi? Doskada: butun sxema. Tipik xato: faqat gidroliz mahsulotiga qarab aniq modda nomini aytish — AXB ham xlordiazepoksid, ham oksazepamdan hosil bo‘ladi."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Benzodiazepinlarni gidroliz mahsulotlari yordamida tahlil qilishni kimlar taklif qilgan?",
+      "options": [
+        "B.N.Izotov, I.V.Volkova va boshqalar",
+        "Ye.M.Salomatin",
+        "Stas va Otto",
+        "A.F.Fartushniy"
+      ],
+      "correct_index": 0,
+      "explanation": "Gidroliz mahsulotlari bo‘yicha tahlilni B.N.Izotov, I.V.Volkova va boshqalar taklif qilgan.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "134"
+      }
+    },
+    {
+      "question": "Izotov bo‘yicha gidrolizda peshobga qanday kislota qo‘shiladi?",
+      "options": [
+        "Konsentrlangan xlorid kislota",
+        "10% sulfat kislota",
+        "Sirka kislota",
+        "Oksalat kislota"
+      ],
+      "correct_index": 0,
+      "explanation": "10 ml peshobga 10 ml konsentrlangan xlorid kislota quyilib, 1 soat suv hammomida qizdiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "134"
+      }
+    },
+    {
+      "question": "Gidrolizdan keyin eritma qaysi pH ga keltiriladi?",
+      "options": [
+        "pH=8-10",
+        "pH=1-2",
+        "pH=4-5",
+        "pH=13-14"
+      ],
+      "correct_index": 0,
+      "explanation": "To‘yingan NaOH eritmasi bilan pH=8-10 keltiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "134-135"
+      }
+    },
+    {
+      "question": "Diazepam gidrolizida qaysi benzofenon hosil bo‘ladi?",
+      "options": [
+        "MXB (2-metilamino-5-xlorbenzofenon)",
+        "ANB",
+        "DAB",
+        "AXB"
+      ],
+      "correct_index": 0,
+      "explanation": "Diazepam gidrolizda 2-metilamino-5-xlorbenzofenon (MXB) beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "135"
+      }
+    },
+    {
+      "question": "YuQX da purkashdan keyin ANB dog‘i qanday rangga bo‘yaladi?",
+      "options": [
+        "Yorqin zarg‘aldoq",
+        "Qizil",
+        "Yashil",
+        "Ko‘k"
+      ],
+      "correct_index": 0,
+      "explanation": "AXB dog‘i qizil, ANB yorqin zarg‘aldoq rangga bo‘yaladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "136"
+      }
+    },
+    {
+      "question": "17-jadvalga ko‘ra MXB ning Rf qiymati qancha?",
+      "options": [
+        "0,57",
+        "0,17-0,18",
+        "0,43-0,45",
+        "0,35-0,37"
+      ],
+      "correct_index": 0,
+      "explanation": "MXB (diazepam) uchun Rf=0,57.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "136"
+      }
+    },
+    {
+      "question": "O‘zgarmagan benzodiazepinlar YuQX da qaysi sistemada tahlil qilinadi?",
+      "options": [
+        "Etilasetat, metil spirti, ammiak 25% (85:10:5)",
+        "Benzol",
+        "Xloroform-metanol 1:1",
+        "Suv-etanol 1:1"
+      ],
+      "correct_index": 0,
+      "explanation": "Erituvchilar sistemasi sifatida etilasetat, metil spirti va ammiakning 25% eritmasi 85:10:5 nisbatda ishlatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Bratton-Marshall reaksiyasida qanday rangli mahsulot hosil bo‘ladi?",
+      "options": [
+        "Qizil olcha rangli",
+        "Ko‘k",
+        "Yashil",
+        "Rangsiz"
+      ],
+      "correct_index": 0,
+      "explanation": "Reaksiya qizil olcha rangli mahsulot hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "137"
+      }
+    },
+    {
+      "question": "Xlordiazepoksidning Frede reaktivi bilan reaksiyasi qanday natija beradi?",
+      "options": [
+        "Qizil olov rangli mahsulot",
+        "Sariq aralashma",
+        "Qo‘ng‘ir mahsulot",
+        "Yashil mahsulot"
+      ],
+      "correct_index": 0,
+      "explanation": "Frede reaktivi bilan xlordiazepoksid qizil olov rangli mahsulot hosil qiladi (Marki — sariq, ningidrin — qo‘ng‘ir).",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "139"
+      }
+    },
+    {
+      "question": "Nitrazepamning kaliy ferritsianid 5% eritmasi bilan reaksiyasi nima beradi?",
+      "options": [
+        "Prizma shaklidagi kristallar",
+        "Amorf cho‘kma",
+        "Ninasimon kristallar",
+        "Rangli eritma"
+      ],
+      "correct_index": 0,
+      "explanation": "Kaliy ferritsianid 5% eritmasi bilan prizma shaklidagi kristallar hosil bo‘ladi; boshqa 1,4-benzodiazepin hosilalari bu reaksiyani bermaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "141"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Benzodiazepinlarning 2 mingdan ortiq hosilasi bor, ulardan 12-15 tasi tibbiyotda keng ishlatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "133"
+      }
+    },
+    {
+      "text": "Nitrazepamning 90% dan ko‘prog‘i qon plazmasi bilan bog‘lanadi va peshobda faqat 5% o‘zgarmagan holda chiqadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "141"
+      }
+    },
+    {
+      "text": "Oksazepam diazepamning metabolitlaridan biri; plazmada 4 soatdan keyin yuqori konsentratsiyaga etadi va 48 soatda yo‘qoladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "142"
+      }
+    },
+    {
+      "text": "Fenazepamning suyuqlanish harorati 225-230°C; tabletkalari 0,0005-0,001 g va 0,0025 g.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "143"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "year": null,
+      "pages": "b. 133-144"
+    }
+  ]
+}

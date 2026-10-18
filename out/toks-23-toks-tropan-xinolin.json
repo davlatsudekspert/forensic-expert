@@ -1,0 +1,1675 @@
+{
+  "topic": "Tropan, xinolin va izoxinolin alkaloidlari: atropin, giostsiamin, skopolamin, xinin, papaverin, narkotin",
+  "slides": [
+    {
+      "title": "Ma’ruza rejasi va tayanch iboralar",
+      "bullets": [
+        {
+          "text": "Reja: tropan va xinolin hosilasi alkaloidlari; toksikologik ahamiyati va tahlil usullari: atropin, giostsiamin, skopolamin va xinin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tayanch iboralar: mikrokristalloskopik tahlil; atropin, giostsiamin, skopolamin, xinin; gel xromatografiyasi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu ma’ruzada papaverin, gel xromatografiya va yuqori samarali suyuqlik xromatografiyasi (YuSSX) ham yoritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121-125"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bu alkaloidlar o‘zi tropan, xinolin yoki opiy alkaloidlari bo‘lsa-da bitta ma’ruzada o‘rganiladi? (ularning umumiy usuli: ishqoriy muhitda ekstraksiya.) Doskada: 5 ta modda nomi. Tipik xato: atropin va giostsiaminni bir modda deb hisoblash. Izoh: sarlavhadagi narkotin kitobda alohida bo‘lim sifatida berilmagan; unga oid yagona ma’lumot ajratish bo‘limlarida (kuchsiz asos xossali moddalar)."
+    },
+    {
+      "title": "Guruh tavsifi",
+      "bullets": [
+        {
+          "text": "Atropin: tropin spirti va trop kislotadan hosil bo‘lgan murakkab efir; belladonna o‘simligidan ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skopolamin: skopin va trop kislotadan tashkil topgan murakkab efir; bangidevona o‘simligida uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xinin: xinolin va xinnuklidin hosilasi; xin daraxti po‘stlog‘idan olingan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Papaverin: 1884 yilda opiy tarkibida aniqlangan alkaloid.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "122"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: efir bog‘i nima uchun Vitali-Moren reaksiyasining asosi bo‘ladi? Doskada: 4 ta modda va manba o‘simlik. Tipik xato: papaverinni tropan hosilasi deb o‘ylash. Izoh: kitob papaverinni «izoxinolin» deb alohida atamasdan, opiy alkaloidi sifatida beradi; atamani o‘zingiz qo‘shsangiz, kitobda yo‘qligini ayting."
+    },
+    {
+      "title": "Atropin: tuzilishi va giostsiamin",
+      "bullets": [
+        {
+          "text": "Atropin - tropin spirti va trop kislotasidan hosil bo‘lgan murakkab efir (belladonna o‘simligidan).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Atropin izomeri giostsiamin faqat polyarizatsiyalangan nurni chapga burishi bilan farqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Giostsiamin ishqor va yuqori harorat ta’sirida optik xususiyatini tez yo‘qotib, atropinga aylanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ishqoriy ajratishda giostsiamin atropin sifatida topiladi? Doskada: tropin + trop kislota -> atropin. Tipik xato: giostsiamin va atropinni kimyoviy reaksiyalar bilan ajratishga urinish: ularni ajratib bo‘lmaydi, farq faqat optik aylantirishda."
+    },
+    {
+      "title": "Atropin: eruvchanlik va tibbiyotda qo‘llanilishi",
+      "bullets": [
+        {
+          "text": "Asos holida organik erituvchilarda yaxshi, suvda yomon eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Atropin sulfat tuzi suvda yaxshi eriydi, organik erituvchilarda deyarli erimaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiyot: oshqozon va 12 barmoqli ichak yarasi, xolesistit, o‘t pufagi toshlari, bronxial astma, yo‘g‘on ichak va peshob kanali spazmlari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oftalmologiyada ko‘z tubini ko‘rish uchun qo‘llaniladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: asos va tuz eruvchanligi ajratish pH ini qanday belgilaydi? Doskada: asos/tuz eruvchanligi jadvali. Tipik xato: atropin sulfatni organik erituvchi bilan ekstraksiya qilishga urinish."
+    },
+    {
+      "title": "Atropin: malaka materialidagi ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Formulasi C17H23NO3, molekulyar massasi 289.4; antixolinergik preparat.",
+          "source": {
+            "author": "Malaka materiali №024 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "9-ma’ruza: Tropan hosilasi alkaloidlari. Atropin, giostsiamin, skopolamin, kokain; xinin (2012)",
+            "page": "slayd 4"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyuqlanish harorati 114° dan 118°C gacha; pKa 9,9.",
+          "source": {
+            "author": "Malaka materiali №024 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "9-ma’ruza: Tropan hosilasi alkaloidlari. Atropin, giostsiamin, skopolamin, kokain; xinin (2012)",
+            "page": "slayd 4"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eruvchanligi: suvda yomon (1:400), xloroformda (1:1), dietil efirida (1:60), etil spirtida (1:1).",
+          "source": {
+            "author": "Malaka materiali №024 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "9-ma’ruza: Tropan hosilasi alkaloidlari. Atropin, giostsiamin, skopolamin, kokain; xinin (2012)",
+            "page": "slayd 4"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: pKa 9,9 ekstraksiya pH iga qanday ta’sir qiladi? Doskada: pKa va pH>pKa shart. Tipik xato: bu qatorni kitob ma’lumoti deb ko‘rsatish — u malaka 024 materialidan olingan; kitobda bu raqamlar yo‘q."
+    },
+    {
+      "title": "Atropin: zaharlanish alomatlari",
+      "bullets": [
+        {
+          "text": "Alomatlar atropin uchun xarakterli: avval asab tizimi qo‘zg‘olishi: talvasa, harakat tezlashishi, beixtiyor gapirish va kulgu.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyin parasimpatik nerv oxirlari paralichlanadi: ko‘z qorachig‘i kengayadi, burun quriydi, xurrak otish, teri qurishi va qizishi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bolalar belladonna mevasini va ituzumni ko‘p iste’mol qilganda baxtsiz hodisalar bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdani patologoanatomik tekshirish xarakterli emas.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki bosqichni (qo‘zg‘olish, keyin falaj) klinik misolda tushuntiring. Doskada: ikki ustun: markaziy va parasimpatik belgilar. Tipik xato: qorachiq kengayishini zaharlanishning yagona belgisi deb hisoblash."
+    },
+    {
+      "title": "Atropin: so‘rilish, saqlanish va metabolizm",
+      "bullets": [
+        {
+          "text": "Atropin shilliq pardalar, teri va ichak orqali yaxshi shimiladi; bir qismi qonga so‘riladi, ikkinchi qismi zardob oqsillari bilan birikadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmda saqlanishi to‘g‘risida ma’lumotlar har xil: tez parchalanadi degan fikr ham, 3 hafta yoki 2 yilgacha saqlanadi degan fikr ham bor.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmda trop kislota va tropin spirtigacha parchalanadi; organizmga tushgan atropinning 50% o‘zgarmagan holda peshob orqali ajraladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: saqlanish muddati bo‘yicha qarama-qarshi fikrlar ekspertizada nimani anglatadi? Doskada: atropin -> trop kislota + tropin. Tipik xato: saqlanish muddatini aniq son deb yozish — kitob oraliqni beradi."
+    },
+    {
+      "title": "Atropinni ajratish",
+      "bullets": [
+        {
+          "text": "Atropin ishqoriy muhitda organik erituvchilar bilan ekstraksiya qilinib ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ashyoviy dalildan nordonlashtirilgan suv yoki spirt yordamida, ishqoriy muhitda ajratib olinadi.",
+          "source": {
+            "author": "Malaka materiali №024 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "9-ma’ruza: Tropan hosilasi alkaloidlari. Atropin, giostsiamin, skopolamin, kokain; xinin (2012)",
+            "page": "slayd 5"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Atropinni ajratish",
+        "nodes": [
+          "Ob’ekt",
+          "Nordonlashtirilgan suv/spirt",
+          "Ishqoriy muhit",
+          "Organik erituvchi: ekstraksiya"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ishqoriy muhit zarur? (alkaloid asos holiga o‘tadi.) Doskada: sxemani chizing. Tipik xato: ishqorni ortiqcha qo‘shib murakkab efirni gidrolizlash — atropin parchalanadi."
+    },
+    {
+      "title": "Vitali-Moren reaksiyasi",
+      "bullets": [
+        {
+          "text": "Atropin + konts. HNO3 qizdirilsa, efir kabi trop kislota va tropinga parchalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sariq rangli trop kislotaning nitrohosilasi hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishqor (aseton ishtirokida) ta’sirida binafsha rangli birikma hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117-118"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Vitali-Moren bosqichlari",
+        "nodes": [
+          "Atropin + konts. HNO3, qizdirish",
+          "Nitro trop kislota (sariq)",
+          "Ishqor ta’siri",
+          "Binafsha rangli birikma"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: reaksiya qaysi funksional guruhga asoslangan? Doskada: sxema. Tipik xato: binafsha rang ishqorsiz paydo bo‘ladi deb o‘ylash. Slayd diagrammasidagi «aseton» kitob reaksiya sxemasidan (118) olingan."
+    },
+    {
+      "title": "Vitali-Moren: nospetsifiklik",
+      "bullets": [
+        {
+          "text": "Reaksiya atropin uchun xarakterli emas: tarkibida benzol halqasi bor azotli birikmalar (giostsiamin, skopolamin, strixnin, apomorfin) ham beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya manfiy bo‘lsa, atropin yo‘qligidan dalolat beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Musbat reaksiya qo‘shimcha tasdiqlovchi reaksiyalarni talab qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun manfiy natija aniq, musbat natija esa yetarli emas? Doskada: «manfiy = yo‘q, musbat = tekshirish». Tipik xato: musbat Vitali-Moren asosida atropinni «aniqlandi» deb yozish."
+    },
+    {
+      "title": "Atropin: kristall reaksiyalar, YuQX, UB",
+      "bullets": [
+        {
+          "text": "Reyneke tuzi [(NH4)Cr(NH3)2(SCN)4] bilan romb shaklidagi pushti kristallar; pikrin kislota bilan to‘g‘ri burchakli plastinkalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: Rf=0,26±0,01.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB-spektr: spirtda maksimumlar 252, 258 va 264 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mikrokristall reaksiyalar nega birgalikda ishlatiladi? Doskada: kristall shakllarini chizing. Tipik xato: UB maksimumlarini suvdagi eritma bilan aralashtirish — kitobda spirt ko‘rsatilgan."
+    },
+    {
+      "title": "Atropin: farmakologik va rangli reaksiya, miqdori",
+      "bullets": [
+        {
+          "text": "Farmakologik tekshiruv: atropin tajriba hayvonlarining ko‘z qorachig‘ini kengaytiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "p-Dimetilaminobenzaldegid va konsentrlangan H2SO4 bilan qizil rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miqdori FEK (shu qizil rang asosida) va UB-spektr bo‘yicha aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: biologik sinov qanday tasdiq beradi va qanday chegarasi bor? Doskada: reaksiya va rang. Tipik xato: FEK uchun to‘lqin uzunligini kitobdan tashqarida taxmin qilish."
+    },
+    {
+      "title": "Skopolamin: manba va xossalari",
+      "bullets": [
+        {
+          "text": "Skopolamin bangidevona o‘simligida uchraydi; skopin va trop kislotadan tashkil topgan murakkab efir.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiyotda skopolamin bromid holida qo‘llaniladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asos holida quyuq qiyomsimon modda: organik erituvchilarda yaxshi eriydi; tuzi suvda, spirtda yaxshi eriydi, efir va xloroformda erimaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organik erituvchilar bilan ishqoriy muhitda (pH=8-10) ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: pH=8-10 atropin uchun ham mosmi? Doskada: skopolamin va atropin xossalari. Tipik xato: skopolaminni tuz holida xloroform bilan ekstraksiya qilish. Malaka 024: C17H21NO4, M 303.4, pKa 8,2, T½ 2-6 soat (kitobda yo‘q)."
+    },
+    {
+      "title": "Skopolamin: ta’siri va metabolizmi",
+      "bullets": [
+        {
+          "text": "Atropin kabi ko‘z qorachig‘ini kengaytiradi, shilliq parda mushaklarini bo‘shashtiradi, bezlar sekretsiyasini susaytiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "«Aeron» tabletkasi qusishga qarshi va tinchlantiruvchi dorilar tarkibiga kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmda oqsillar bilan yaxshi birikadi, qisman gidrolizlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asosan jigarda parchalanadi va peshob bilan chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: atropin va skopolamin ta’sirida qanday o‘xshashlik bor? Doskada: ikki ustunli taqqoslash. Tipik xato: «Aeron»ni kuchli sedativ preparat deb atash — kitob uni qusishga qarshi va tinchlantiruvchi dorilar tarkibi sifatida beradi."
+    },
+    {
+      "title": "Skopolaminni aniqlash",
+      "bullets": [
+        {
+          "text": "Reaksiyalari atropinga o‘xshash; farqli reaksiyalari quyidagilar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oltin bromvodorod kislota bilan arrasimon shaklli jigar rangli bromaurat hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reyneke tuzi bilan atropinga o‘xshash kristallar; Dragendorf reaktivi bilan qo‘ng‘ir rangli ninasimon kristallar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: Rf=0,44±0,01; UB va IQ-spektr bo‘yicha aniqlash mumkin; miqdori ekstraksion fotometrik usulda.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: skopolamin va atropin kristallari qanday farqlanadi? (bromaurat arrasimon.) Doskada: bromaurat shaklini chizing. Tipik xato: Reyneke kristallarini skopolamin uchun alohida deb hisoblash — atropinga o‘xshash."
+    },
+    {
+      "title": "Xinin: manba va xossalari",
+      "bullets": [
+        {
+          "text": "Xinin alkaloidi xinolin va xinnuklidin hosilasi bo‘lib, xin daraxtining po‘stlog‘idan olingan; 1944 yilda sintez qilingan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asos holida rangsiz, nihoyatda achchiq ta’mli kristall: suvda yomon, organik erituvchilarda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiyotda xinin xlorid, digidroxlorid va sulfat tuzlari qo‘llaniladi: suvda yaxshi eriydi, achchiq.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishqoriy muhitda (pH=9-10) organik erituvchi qatlamiga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: xininni qaysi pH da ekstraksiya qilamiz va nega? Doskada: xinin tuzilishi (xinolin + xinnuklidin). Tipik xato: tuz holini organik erituvchiga o‘tadi deb o‘ylash."
+    },
+    {
+      "title": "Xinin: ta’siri va qo‘llanilishi",
+      "bullets": [
+        {
+          "text": "Ko‘p miqdorda qabul qilinsa, bachadonni keskin qisqartiradi; ayollar shu sababli abort uchun ishlatganlar va baxtsiz holatlar bo‘lgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Markaziy asab tizimini va yurak urishini susaytiradi, bosh og‘rig‘i, bosh aylanishi chaqiradi, ko‘rish qobiliyatini susaytiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bezgakka qarshi preparat; akusherlikda tug‘ish faoliyatini qo‘zg‘atish va kuchaytirish uchun ham qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: xinin zaharlanishi qanday holatlarda sud-kimyo ob’ekti bo‘ladi? Doskada: 3 yo‘nalish: dori, abort, zaharlanish. Tipik xato: xininni faqat bezgakka qarshi dori deb bilish."
+    },
+    {
+      "title": "Xinin: metabolizm va flyuoressensiya",
+      "bullets": [
+        {
+          "text": "Xinolin va xinnuklidin yadrolarining oksidlanishi: 2-oksixinin, dioksixinin va boshqalar; metabolitlar va bog‘lanmagan xinin peshob bilan chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sulfat kislotadagi eritmaga UB nur tushirilsa, tiniq zangori flyuoressensiya ko‘rinadi; xlor ioni uni kamaytiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ammiak (pH=9) qo‘shilganda zangori rang yo‘qolib, binafsha flyuoressensiya hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: xlorid ioni nega sifat reaksiyani buzadi? Doskada: flyuoressensiya rang o‘zgarishi: zangori -> binafsha. Tipik xato: eritmani xlorid kislotada tayyorlash — sulfat kislota ishlatiladi."
+    },
+    {
+      "title": "Xinin: talleyoxin reaksiyasi",
+      "bullets": [
+        {
+          "text": "Qoldiq bromli suv va ammiak ta’sirida xloroformga o‘tuvchi yashil talleyoxin hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiyaga ortiqcha brom, antipirin, amidopirin xalaqit beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1967 yil talleyoxin elementar tahlil, IQ- va UB-spektr bilan o‘rganilib, kimyoviy formula taklif etilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Talleyoxin reaksiyasi",
+        "nodes": [
+          "Xinin + bromli suv",
+          "+ ammiak",
+          "Xloroform bilan ekstraksiya",
+          "Yashil talleyoxin"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega antipirin xalaqit beradi? (ular ham brom bilan reaksiyaga kirishadi — kitob faqat xalaqitni qayd etadi.) Doskada: reaksiya sxemasi. Tipik xato: ortiqcha brom ishlatish."
+    },
+    {
+      "title": "Xinin: eritroxin, YuQX va UB",
+      "bullets": [
+        {
+          "text": "Eritroxin: bromli suv va sariq qon tuzi, so‘ng ammiak bilan ishqoriy muhit: pushti rang.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: efir - aseton - ammiak (40:20:2); tasdiqlovchi reagent Dragendorf; Rf=0,39.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB-spektr: spirtda maksimumlar 236, 278, 332 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: talleyoxin va eritroxin reaksiyalari qanday farqlanadi? (yashil ekstrakt / pushti rang.) Doskada: rang jadvali. Tipik xato: eritroxin rangini yashil deb yozish."
+    },
+    {
+      "title": "Xinin: ekstraksion-fotometrik miqdori",
+      "bullets": [
+        {
+          "text": "Alkaloid kislotali bo‘yoq tropeolin 00 bilan pH=4,6 da tropeolinat kompleksi hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kompleks xloroformga o‘tadi; metil spirt va H2SO4 da gidrolizlanib, malina rangli tropeolin beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rang intensivligi xinin miqdoriga bog‘liq.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Miqdori: tropeolin 00",
+        "nodes": [
+          "Xinin + tropeolin 00 (pH=4,6)",
+          "Xloroform bilan ekstraksiya",
+          "Gidroliz: metil spirt, H2SO4",
+          "Malina rang: FEK"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega pH=4,6 aniq saqlanishi shart? Doskada: sxemani chizing. Tipik xato: pH ni ko‘rsatilgan qiymatdan chetga chiqarish — kompleks hosil bo‘lishi o‘zgaradi."
+    },
+    {
+      "title": "Gel xromatografiya: tamoyili",
+      "bullets": [
+        {
+          "text": "Gel-xromatografiyada qo‘zg‘aluvchi va qo‘zg‘almas faza sifatida bir xil erituvchi ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oqim bo‘ylab harakatlanuvchi erituvchi qismi qo‘zg‘aluvchi faza, gel g‘ovaklariga shimilgan qismi qo‘zg‘almas faza vazifasini bajaradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gellar birinchi bo‘lib 1959 yilda Porat va Flodinlar tomonidan suyuq aralashmalar uchun qo‘llangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: oddiy taqsimlovchi xromatografiyadan farqi nimada? Doskada: gel zarrachasi va g‘ovak chizmasi. Tipik xato: gel-xromatografiyani adsorbsion usul deb bilish — asosiy omil molekula hajmi."
+    },
+    {
+      "title": "Gel xromatografiya: ajralish tartibi",
+      "bullets": [
+        {
+          "text": "Kichik hajmli molekulalar gel g‘ovaklariga shimilib ushlanib qoladi, yirik molekulalar zarrachalar orasidan erituvchi bilan birga harakatlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Avval yirik hajmli molekulalar yuviladi, kichiklari ulardan so‘ng yuviladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usul sodda, tez va boshqa xromatografik turlarga nisbatan ancha yengil sharoitda ajratadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qo‘shimcha adsorbsiya va kimyoviy omillar ham ta’sir etadi; ular sharoit tanlashda hisobga olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: katta molekula nega birinchi chiqadi? Doskada: kolonka va chiqish tartibini chizing. Tipik xato: kichik molekula birinchi chiqadi deb yozish. Kolonkali va yupqa qatlamli ikki usul bor (kitob 121)."
+    },
+    {
+      "title": "Gel turlari",
+      "bullets": [
+        {
+          "text": "Yumshoq gellar erituvchini shimib shishadi (sefadeks, poliakrilamid, kraxmal).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121-122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yarim qattiq gellar bo‘ktirilganda hajmi 1,1-1,8 barobar oshadi; stirogellar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qattiq gellar (silikagel, g‘ovakli shisha) hajmini o‘zgartirmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "122"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Gel turlari",
+        "nodes": [],
+        "header": [
+          "Tur",
+          "Misol"
+        ],
+        "rows": [
+          [
+            "Yumshoq",
+            "Sefadeks, poliakrilamid, kraxmal"
+          ],
+          [
+            "Yarim qattiq",
+            "Stirogellar, polivinilatsetat"
+          ],
+          [
+            "Qattiq",
+            "Silikagel (porasil), g‘ovakli shisha"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qattiq gelning kamchiliklari nima? (gidroksil guruhlari va yuviluvchanlik.) Doskada: jadvalni to‘ldiring. Tipik xato: yumshoq gelni bosimli YuSSX da ishlatish — yumshoq gel deformatsiyalanadi."
+    },
+    {
+      "title": "Gel xromatografiya: erituvchi va kolonka",
+      "bullets": [
+        {
+          "text": "Erituvchi aralashmani eritishi, gel sirtini ho‘llashi, unga shimilmasligi kerak; yumshoq gel uchun gelni shishirishi zarur; yopishqoq bo‘lmasligi lozim.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yumshoq gel avval ajratish erituvchisida bo‘ktirilib shishiriladi; yarim qattiq gel suspenziya (bo‘tqa) holida to‘ldiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kolonka ichki diametri 8-10 mm; 50 mm gacha kattalashtirish samaradorlikni oshiradi, kichraytirish tavsiya etilmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "122"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega erituvchi yopishqoq bo‘lmasligi kerak? Doskada: kolonkani to‘ldirish bosqichlari. Tipik xato: kolonka diametrini kichraytirish."
+    },
+    {
+      "title": "Papaverin: manba va fizik xossalari",
+      "bullets": [
+        {
+          "text": "1884 yilda opiy tarkibida aniqlangan, opiyda 0,1-1,5% atrofida uchraydi; sintezlab olingan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asos: romb yoki igna shaklidagi rangsiz kristall, suyuqlanish harorati 147 °C; suvda erimaydi, issiq spirt va xloroformda eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuchsiz asos xossali: ba’zan kislotali sharoitda ham xloroform qavatiga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Papaverin gidroxlorid: oq kukun, suvda (1:40) yaxshi; suyuqlanish harorati 225-226 °C.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: kuchsiz asos ekanligi ajratish sxemasiga qanday ta’sir qiladi? (kislotali va ishqoriy ajralmalarni ikkalasini tekshiring.) Doskada: eruvchanlik. Tipik xato: papaverinni faqat ishqoriy ajralmadan qidirish."
+    },
+    {
+      "title": "Papaverin: toksikologik ahamiyati va metabolizmi",
+      "bullets": [
+        {
+          "text": "Qon tomirlarini kengaytiradi, spazmolitik ta’sir; ko‘proq miqdorda sedativ; narkotik ta’sirga ega emas.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharli ta’siri morfinga nisbatan kuchsiz, eng yuqori dozasi 0,1 g.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metabolizm asosan metil radikallarini demetillanishi: fenol birikmalar glyukuronidlar holida peshob bilan chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ajratishda ham kislotali, ham ishqoriy muhitda olingan xloroformli eritmalardan qidirish kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega papaverin narkotik hisoblanmaydi? (kitob: narkotik ta’sirga ega emas.) Doskada: ahamiyat va ajratish. Tipik xato: eng yuqori dozani halokatli doza deb yozish."
+    },
+    {
+      "title": "Papaverin: aniqlash reaksiyalari",
+      "bullets": [
+        {
+          "text": "Marki, Frede va Erdman reaktivlari bilan xarakterli qizil rang.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "0,1 n HCl da eritilgan qoldiqqa 10% kadmiy xlorid tomizilsa, rangsiz kub shaklidagi plastinkalar kristallari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yod eritmasi bilan qizil rang; sezgirligi 0,1 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: rangli va kristall reaksiyalardan qaysi biri ishonchliroq? Doskada: 3 reaksiya. Tipik xato: Marki reaktivi (formalin + H2SO4) rangini morfin bilan aralashtirish — bu ma’ruzada faqat papaverin uchun qizil rang qayd etilgan."
+    },
+    {
+      "title": "Papaverin: Sobolev reaksiyasi va spektrlar",
+      "bullets": [
+        {
+          "text": "Marki reaktivi ta’sirida metilenbis-papaverin hosil bo‘ladi; brom suvi bilan oksidlanib, ammiak qo‘shilsa barqaror binafsha rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya juda sezgir va papaverin miqdorini ashyoviy dalilda aniqlash uchun ham tavsiya etilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX (kodeindagi tizimda) Rf=0,75; UB (0,1 n HCl): 250, 284, 310 nm; IQ: 1507, 1068, 1273 sm-1.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "123-124"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Sobolev reaksiyasi ikki bosqichining ma’nosi nima? (kondensatsiya, so‘ng oksidlanish.) Doskada: bosqichlar. Tipik xato: Rf ni boshqa tizim bilan taqqoslash: kitobda tizim «kodeinda berilgan sistemada» deb ko‘rsatilgan."
+    },
+    {
+      "title": "Papaverin va narkotin: kuchsiz asoslar",
+      "bullets": [
+        {
+          "text": "Kislotali sharoitda olingan ajralma kuchsiz asos xossali alkaloidlar (kofein, teobromin, teofillin, papaverin, narkotin, strixnin) uchun tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qayta ekstraksiyalab tozalashda kuchsiz asos xossasiga ega moddalar (purin hosilalari, narkotin, promedol, antipirin va amidopirin) yo‘qotib qo‘yiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kitobda narkotin bo‘yicha alohida bo‘lim, reaksiya yoki spektr ko‘rsatkichlari berilmagan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kuchsiz asoslar reekstraksiyada yo‘qoladi? Doskada: kuchsiz asoslar ro‘yxati. Tipik xato: narkotin uchun mavjud bo‘lmagan ko‘rsatkichlarni (Rf, UB) o‘zingizcha qo‘shish. Hisobot: syllabus sarlavhasidagi narkotin kitoblarda faqat shu kontekstda tilga olingan."
+    },
+    {
+      "title": "YuSSX: tamoyili",
+      "bullets": [
+        {
+          "text": "Qo‘zg‘aluvchan faza (elyuent) kolonkadagi sorbentdan katta tezlikda yuqori bosim ostida o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usul yuqori va quyi molekulali, issiqlikka chidamsiz moddalarni ajratish, chinligi va miqdorini aniqlashga imkon beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xromatograf qismlari: yuqori samarali kolonka, dozator, yuqori bosimli nasos, yozuv qurilmali detektor, mikroprotsessor.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: issiqlikka chidamsiz moddalar uchun YuSSX GX dan nima bilan ustun? Doskada: asbob qismlari. Tipik xato: YuSSX ni faqat uchuvchan moddalar uchun deb hisoblash."
+    },
+    {
+      "title": "YuSSX: asbob tuzilishi",
+      "bullets": [
+        {
+          "text": "Nasos elyuentni doimiy tezlikda yetkazadi: 200-500 atm gacha; mikrokolonkali xromatograflarda 1-20 atm gacha.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kolonka po‘lat yoki shishadan: 10-25 sm, ichki diametri 0,3-0,8 sm; zarracha 5-10 mkm.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kolonka harorati ±0,1 °C aniqlikda ushlanadi; ajratish ko‘pincha 20-25 °C da olib boriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "YuSSX qismlari (3-rasm)",
+        "nodes": [
+          "Elyuent idishi",
+          "Nasos",
+          "Namuna kiritish",
+          "Kolonka",
+          "Detektor"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nasos bosimi nega yuqori bo‘lishi kerak? (5-10 mkm zich sorbent.) Doskada: 5 qismli sxema. Tipik xato: «20-250» ni 250°C deb o‘qish. Kitobda: «20-250» (OCR: daraja belgisi «0» bo‘lib chiqqan) — 20-25 °C."
+    },
+    {
+      "title": "YuSSX: detektorlar va adsorbentlar",
+      "bullets": [
+        {
+          "text": "Detektorlar: refraktometrik yoki flyuorimetrik, to‘lqin uzunligi o‘zgaruvchan (190-900 nm) yoki o‘zgarmas (ko‘pincha 254 nm) spektrofotometrik, mass-spektrometrik.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Adsorbent: gidroksil guruhli silikagel, funksional guruh bilan ishlangan silikagel, aluminiy oksidi, polimerlar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Silikagelda elyuent uglevodorodlar, gidrofob guruhli silikagelda quyi spirtlar yoki atsetonitril saqlagan suvli eritmalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124-125"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 254 nm detektor qaysi moddalar uchun qulay? Doskada: detektor turlari. Tipik xato: normal faza va teskari faza elyuentlarini almashtirish: gidrofob guruhli sorbentda suvli-spirtli elyuent."
+    },
+    {
+      "title": "YuSSX: ajratish turlari va natijani baholash",
+      "bullets": [
+        {
+          "text": "Juft-ion xromatografiya tuz, kislota va asos ko‘rinishidagi organik birikmalarni, ion-almashinish xromatografiyasi anion va kationlarni ajratadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "125"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir xil muhitda moddaning kolonkadan chiqish vaqti bir xil va doimiy: bu chinligini aniqlashda ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "125"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miqdoriy tahlilda cho‘qqi yuzalari hisoblanadi, chunki cho‘qqi yuzasi modda miqdoriga to‘g‘ri mutanosib.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "125"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega balandlik emas, yuza hisoblanadi? Doskada: xromatogramma cho‘qqisi. Tipik xato: faqat chiqish vaqti bo‘yicha miqdorni baholash. Kitobda yana: mutlaq kalibrlash yoki ichki standart (GX kabi) usullari."
+    },
+    {
+      "title": "Taqqoslash: YuQX va UB ko‘rsatkichlari",
+      "bullets": [
+        {
+          "text": "Atropin: Rf=0,26±0,01; UB 252, 258, 264 nm (spirt).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skopolamin: Rf=0,44±0,01; xinin: Rf=0,39 (efir - aseton - ammiak 40:20:2).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119-120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB: xinin 236, 278, 332 nm (spirt); papaverin 250, 284, 310 nm (0,1 n HCl), Rf=0,75.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "120-123"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "YuQX va UB",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Rf",
+          "UB max, nm"
+        ],
+        "rows": [
+          [
+            "Atropin",
+            "0,26",
+            "252, 258, 264"
+          ],
+          [
+            "Skopolamin",
+            "0,44",
+            "kitobda yo‘q"
+          ],
+          [
+            "Xinin",
+            "0,39",
+            "236, 278, 332"
+          ],
+          [
+            "Papaverin",
+            "0,75",
+            "250, 284, 310"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: Rf qiymatlari nega bir xil tizimda emas? Doskada: jadvalni yozing. Tipik xato: turli tizimlardagi Rf ni to‘g‘ridan-to‘g‘ri solishtirish: atropin va skopolamin tizimi kitobda ko‘rsatilmagan, xinin (efir - aseton - ammiak) va papaverin (kodein tizimi) boshqa. Bu slaydda 4 band bor, chunki jadval ma’lumotni bandlarga bog‘laydi."
+    },
+    {
+      "title": "Umumiy tahlil sxemasi",
+      "bullets": [
+        {
+          "text": "Ishqoriy muhitda organik erituvchi bilan ajratish (skopolamin pH=8-10, xinin pH=9-10).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117-119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tasdiqlash: cho‘ktiruvchi reaktivlar, Vitali-Moren, kristall reaksiyalar, talleyoxin, eritroxin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117-120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX, UB- va IQ-spektr, YuSSX; miqdori FEK, UB-spektr, ekstraksion fotometriya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "118-125"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Tahlil bosqichlari",
+        "nodes": [
+          "Ishqoriy ekstraksiya",
+          "Kimyoviy reaksiyalar",
+          "YuQX",
+          "UB / IQ / YuSSX",
+          "Miqdori: FEK, SF"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Vitali-Moren manfiy chiqsa nima qilamiz? (atropin yo‘q; tahlil to‘xtatiladi.) Doskada: bosqichlar. Tipik xato: bitta reaksiya bilan tugatish. Bu umumlashtirma: har bir band kitobdagi aniq bo‘limlardan."
+    },
+    {
+      "title": "Xulosa",
+      "bullets": [
+        {
+          "text": "Atropin va giostsiamin tropin spirti va trop kislota efirlari; Vitali-Moren reaksiyasi nospetsifik, lekin manfiy natija atropin yo‘qligini bildiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "117-118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xinin: zangori flyuoressensiya, talleyoxin (yashil) va eritroxin (pushti) reaksiyalari; miqdori tropeolin 00 bilan ekstraksion fotometriya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "119-120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gel-xromatografiya molekula hajmi, YuSSX yuqori bosim va detektor bilan ajratadi; papaverin Sobolev reaksiyasi bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "121-125"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: dars boshidagi savollarga qayting. Doskada: 3 ta xulosa. Tipik xato: reaksiya ranglarini yodlamaslik. Nazorat savollari: Vitali-Moren, talleyoxin, gel-xromatografiyada chiqish tartibi."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Atropin organizmga tushganda necha foizi o‘zgarmagan holda peshob orqali ajraladi?",
+      "options": [
+        "50%",
+        "10%",
+        "25%",
+        "90%"
+      ],
+      "correct_index": 0,
+      "explanation": "Kitobga ko‘ra organizmga tushgan atropinning 50% o‘zgarmagan holda peshob orqali ajraladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "117"
+      }
+    },
+    {
+      "question": "Giostsiamin atropindan nimasi bilan farqlanadi?",
+      "options": [
+        "Polyarizatsiyalangan nurni chapga burishi bilan",
+        "Molekulyar massasi bilan",
+        "Eruvchanligi bilan",
+        "Rangi bilan"
+      ],
+      "correct_index": 0,
+      "explanation": "Giostsiamin faqat polyarizatsiyalangan nurni chapga burishi bilan farqlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "117"
+      }
+    },
+    {
+      "question": "Vitali-Moren reaksiyasi qaysi holatda atropin yo‘qligidan dalolat beradi?",
+      "options": [
+        "Manfiy bo‘lsa",
+        "Musbat bo‘lsa",
+        "Rang binafsha bo‘lsa",
+        "Hech qachon"
+      ],
+      "correct_index": 0,
+      "explanation": "Reaksiya manfiy bo‘lsa atropin yo‘qligidan dalolat beradi; musbat bo‘lsa qo‘shimcha reaksiyalar kerak.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "118"
+      }
+    },
+    {
+      "question": "Atropin uchun YuQX da Rf qiymati kitobda qancha?",
+      "options": [
+        "0,26±0,01",
+        "0,44±0,01",
+        "0,39",
+        "0,75"
+      ],
+      "correct_index": 0,
+      "explanation": "Atropin uchun Rf=0,26±0,01.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "118"
+      }
+    },
+    {
+      "question": "Skopolamin Dragendorf reaktivi bilan qanday kristallar hosil qiladi?",
+      "options": [
+        "Qo‘ng‘ir rangli ninasimon",
+        "Qizil romba",
+        "Prizmatik pushti",
+        "Ko‘k plastinka"
+      ],
+      "correct_index": 0,
+      "explanation": "Dragendorf reaktivi bilan skopolamin qo‘ng‘ir rangli ninasimon kristallar hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "119"
+      }
+    },
+    {
+      "question": "Xinin UB nur ostida sulfat kislotada qanday flyuoressensiya beradi?",
+      "options": [
+        "Tiniq zangori",
+        "Qizil",
+        "Sariq",
+        "Binafsha (kislotali muhitda)"
+      ],
+      "correct_index": 0,
+      "explanation": "Sulfat kislotadagi eritma UB nurda tiniq zangori flyuoressensiya beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "119"
+      }
+    },
+    {
+      "question": "Talleyoxin reaksiyasida hosil bo‘ladigan modda rangi qanday?",
+      "options": [
+        "Yashil",
+        "Pushti",
+        "Sariq",
+        "Qizil"
+      ],
+      "correct_index": 0,
+      "explanation": "Bromli suv va ammiak ta’sirida xloroform bilan ekstraksiyalanuvchi yashil talleyoxin hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "120"
+      }
+    },
+    {
+      "question": "Xinin ekstraksion-fotometrik usulda qaysi bo‘yoq bilan qaysi pH da kompleks hosil qiladi?",
+      "options": [
+        "Tropeolin 00, pH=4,6",
+        "Bromtimol ko‘ki, pH=9",
+        "Metil to‘q sariq, pH=2",
+        "Fenolftalein, pH=10"
+      ],
+      "correct_index": 0,
+      "explanation": "Alkaloidlar tropeolin 00 bilan pH=4,6 da tropeolinat kompleksini hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "120"
+      }
+    },
+    {
+      "question": "Gel-xromatografiyada qaysi molekulalar birinchi yuviladi?",
+      "options": [
+        "Yirik hajmli molekulalar",
+        "Kichik hajmli molekulalar",
+        "Zaryadlanmaganlar",
+        "Uchuvchan moddalar"
+      ],
+      "correct_index": 0,
+      "explanation": "Avval yirik hajmli molekulalar yuviladi, kichik hajmlilari ulardan so‘ng.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "121"
+      }
+    },
+    {
+      "question": "Papaverinning eng yuqori dozasi kitobda qanday berilgan?",
+      "options": [
+        "0,1 g",
+        "0,01 g",
+        "1 g",
+        "0,5 mg"
+      ],
+      "correct_index": 0,
+      "explanation": "Papaverinning zaharli ta’siri morfinga nisbatan kuchsiz, eng yuqori dozasi 0,1 g.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "123"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Xinin uchun xlor ioni flyuoressensiyani kamaytiradi; ammiak (pH=9) qo‘shilganda zangori rang yo‘qolib, binafsha flyuoressensiya hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "119"
+      }
+    },
+    {
+      "text": "Gellar birinchi bo‘lib 1959 yilda Porat va Flodinlar tomonidan suyuq aralashmalar uchun qo‘llangan.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "121"
+      }
+    },
+    {
+      "text": "Papaverin opiy tarkibida 0,1-1,5% atrofida uchraydi, 1884 yilda aniqlangan va narkotik ta’sirga ega emas.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "122"
+      }
+    },
+    {
+      "text": "Giostsiamin atropindan faqat nurni chapga burishi bilan farqlanadi va ishqor ta’sirida atropinga aylanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "117"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 89, 96, 108, 117-125"
+    },
+    {
+      "author": "Malaka materiali №024 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "9-ma’ruza: Tropan hosilasi alkaloidlari. Atropin, giostsiamin, skopolamin, kokain; xinin (2012)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    }
+  ]
+}

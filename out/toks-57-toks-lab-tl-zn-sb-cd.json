@@ -1,0 +1,1097 @@
+{
+  "topic": "Mineralizatda Tl, Zn, Sb, Cd (FEK)",
+  "slides": [
+    {
+      "title": "Mashg‘ulot maqsadi va rejasi",
+      "bullets": [
+        {
+          "text": "Reja: mineralizatdan talliy, rux, surma va kadmiy kationlarini aniqlash (FEK usulida miqdor tahlili).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqsad: sulfat va nitrat kislotalar bilan mineralizatsiyalab ajratilgan metall zaharlarning toksikologik ahamiyati va tahlil usullari bilan tanishtirish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kutilayotgan natija: mineralizat tarkibida bo‘lishi mumkin bo‘lgan kationlarni filtratdan aniqlash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun bu kationlar filtratda tekshiriladi? Doskada: reja (4 kation). Kitobda maqsad va natijalarda surma, kadmiy va vismut sanalgan, reja va bayonda esa talliy, rux, surma, kadmiy; vismut bayoni bu betlarda yo‘q (dvssm 211 da bor) — bu mashg‘ulotda vismut o‘rganilmaydi."
+    },
+    {
+      "title": "Asbob-uskunalar va jihozlar",
+      "bullets": [
+        {
+          "text": "Zarur asbob-uskunalar: mineralizat, filtr qog‘ozi, voronka, reaktivlar, probirkalar, ko‘rgazmali materiallar, skotch, qog‘oz.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Laboratoriya jihozlari: maxsus laboratoriya vositalari bilan jihozlangan xona.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metodlarda ajratgich voronka, universal indikator, mikroskop va buyum oynachasi ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: universal indikator qaysi bosqichlarda kerak? (pH 12-13, 4,5-5,0, 8,5 va 5 ni nazorat qilishda.) Doskada: ro‘yxat. Tipik xato: pH ni tekshirmasdan reagent qo‘shish."
+    },
+    {
+      "title": "Talliy: malaxit ko‘ki bilan kompleks",
+      "bullets": [
+        {
+          "text": "1 ml mineralizatga 4 ml 40% H2SO4, 3 ml 5n HCl, 2 tomchi 5% NaNO2, 7 tomchi 0,5% malaxit ko‘ki, Na2SO4, 5 ml toluol.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surma yoki talliy bo‘lsa, toluol qatlami havo rangga, suvli qatlam sariq-qo‘ng‘irga bo‘yaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Malaxit ko‘ki reaksiyasi",
+        "nodes": [
+          "1 ml mineralizat, ajratgich",
+          "+ H2SO4, HCl, NaNO2",
+          "+ malaxit ko‘ki, Na2SO4",
+          "+ 5 ml toluol, 1-2 daq",
+          "Toluol: havo rang"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun natriy nitrit qo‘shiladi? (Kitobda 12-savol sifatida berilgan, javobi yo‘q.) Doskada: sxema. Tipik xato: toluol o‘rniga xloroform olish."
+    },
+    {
+      "title": "Malaxit ko‘ki: toluol qatlamini tekshirish",
+      "bullets": [
+        {
+          "text": "Toluol qatlami ajratilib, 3 ml 25% sulfat kislota qo‘shiladi va 5 soniya chayqatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rang saqlansa, toluol qatlami surma yoki talliyning malaxit ko‘ki bilan kompleksi hisobiga bo‘yalgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu reaksiya bilan surma yoki talliydan qaysi biri borligini bilish qiyin, shu sabab talliy uchun yana bir reaksiya tavsiya etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kompleks rangi sulfat kislota bilan yuvilganda saqlansa nima bildiradi? Doskada: 25% H2SO4, 5 soniya. Tipik xato: bitta reaksiyadan surma yoki talliyni aniq deb xulosa qilish."
+    },
+    {
+      "title": "Talliy(I) ditizonat kompleksi",
+      "bullets": [
+        {
+          "text": "5 ml mineralizatga 10% ammiak pH 12-13 bo‘lguncha (universal indikator) qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3 ml xloroform va 0,1% ditizon (xloroformda) bir necha tomchi qo‘shilib, qattiq chayqatiladi, tindiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Talliy birikmalari bo‘lsa, xloroform qavatida ko‘kimtir-binafsha rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Talliy ditizonati",
+        "nodes": [
+          "5 ml mineralizat",
+          "10% ammiak: pH 12-13",
+          "+ 3 ml xloroform, ditizon 0,1%",
+          "Qattiq chayqatish, tindirish",
+          "Xloroform: ko‘kimtir-binafsha"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun bu reaksiya surmani ko‘rsatmaydi? (Kitobda surma uchun alohida ditizon reaksiyasi yo‘q; faqat talliy uchun tavsiya etilgan.) Doskada: sxema. Tipik xato: pH ni 4,5-5 (rux uchun) o‘rnatish."
+    },
+    {
+      "title": "Rux: ditizonat reaksiyasi (dastlabki tekshiruv)",
+      "bullets": [
+        {
+          "text": "0,5 ml mineralizat + 0,5 ml to‘yingan tiosulfat, pH 4,5-5,0; 1 ml pH 5 atsetat bufer.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2 tomchi 0,01% ditizon (xloroformda) va 1 ml xloroform qo‘shilib, yaxshilab aralashtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rux bo‘lsa, xloroform qizil-binafsha; rang bo‘lmasa, rux uchun boshqa tekshirilmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Rux ditizonati",
+        "nodes": [
+          "0,5 ml mineralizat + tiosulfat",
+          "pH 4,5-5,0; 1 ml atsetat bufer",
+          "+ ditizon, 1 ml xloroform",
+          "Aralashtirish",
+          "Qizil-binafsha = Zn"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun rang bo‘lmasa rux tekshirilmaydi? (Kitobda «sababi?» deb savol qo‘yilgan, javob yo‘q.) Doskada: sxema. Tipik xato: pH 12-13 (talliy uchun) bilan adashtirish."
+    },
+    {
+      "title": "Rux: DDTK bilan ajratib olish",
+      "bullets": [
+        {
+          "text": "10 ml mineralizatga 4 ml 20% limon kislota, 1 ml to‘yingan tiomochevina (yoki tiosulfat) qo‘shilib, 10% KOH bilan pH 8,5 ga keltiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3 ml 1% natriy dietilditiokarbaminat va 5 ml xloroform qo‘shilib, 1-2 daqiqa chayqatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sariq-qo‘ng‘ir xloroformli qatlam ajratiladi: unda rux dietilditiokarbaminati bor.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: limon kislota nima uchun qo‘shiladi? (Kitobda sabab ko‘rsatilmagan.) Doskada: reagent tartibi. Tipik xato: pH ni 8,5 ga yetkazmasdan DDTK qo‘shish."
+    },
+    {
+      "title": "Rux: qayta ekstraksiya va sifat reaksiyalari",
+      "bullets": [
+        {
+          "text": "Xloroformli ajratma 3 ml 1n HCl bilan chayqatiladi; suvli qismda rux reaksiyalari o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sulfid: pH 5 gacha 10% KOH, so‘ng 3-4 tomchi yangi Na2S; rux bo‘lsa, oq cho‘kma.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ferrosianid: pH 5 gacha 10% NaOH, so‘ng 3-4 tomchi 5% K ferrosianid; oq cho‘kma.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Rux reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "pH",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Na2S (yangi tayyorlangan)",
+            "5",
+            "Oq cho‘kma"
+          ],
+          [
+            "K ferrosianid 5%",
+            "5",
+            "Oq cho‘kma"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: ikkala reaksiya natijasi bir xil (oq cho‘kma) bo‘lsa ham, nima uchun ikkalasi bajariladi? (Tasdiqlash uchun.) Doskada: jadval. Tipik xato: Na2S ni eski eritmadan olish; kitobda yangi tayyorlangan."
+    },
+    {
+      "title": "Rux: mikrokristalloskopik reaksiya",
+      "bullets": [
+        {
+          "text": "1-2 tomchi eritma buyum oynachasiga o‘tkazilib, quritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Quruq qoldiq 1 tomchi 10% sirka kislotada eritilib, 1 tomchi ammoniy tetrarodanmerkuriat tuzi eritmasi tomiziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir necha daqiqadan so‘ng mikroskopda dendrit shaklidagi mikrokristallar kuzatiladi; shakli ish daftariga chiziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: dendrit shakli nimani ko‘rsatadi? (Rux tetrarodanmerkuriatining xarakterli shakli.) Doskada: dendrit chizmasi. Kitobda reaksiyaga sud-kimyosi talabi bo‘yicha izoh berish topshirig‘i bor. Tipik xato: eritmani quritmasdan tomizish."
+    },
+    {
+      "title": "Surma: malaxit ko‘ki reaksiyasi",
+      "bullets": [
+        {
+          "text": "Ajratgich voronkada 1 ml mineralizatga 4 ml 40% H2SO4, 3 ml 5n HCl, 2 tomchi 5% natriy nitrit, 7 tomchi 0,5% malaxit ko‘kining spirtli eritmasi, 1-2 g suvsiz Na2SO4 va 5 ml toluol qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1-2 daqiqa aralashtiriladi: surma yoki talliy bo‘lsa, toluol qatlami havo rangga bo‘yaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Toluol qatlam 3 ml 25% H2SO4 bilan 5 soniya chayqatilganda rang saqlansa, reaksiya musbat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: bu reaksiya salbiy bo‘lsa nima qilinadi? (Surmani tekshirish to‘xtatiladi — keyingi slayd.) Doskada: reagent tartibi. Reaksiya talliy uchun ham bir xil (3-slayd)."
+    },
+    {
+      "title": "Surma: natijani baholash va sulfid reaksiyasi",
+      "bullets": [
+        {
+          "text": "Malaxit ko‘ki salbiy bo‘lsa, surma tekshiruvi to‘xtatiladi; aks holda qo‘shimcha tasdiq shart.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surma sulfidi: 10 ml mineralizatga 5 tomchi to‘yingan natriy tiosulfat qo‘shilib, 1-2 daqiqa qaynatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surma bo‘lsa, sariq-qo‘ng‘ir rangli cho‘kma hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Surma sulfidi",
+        "nodes": [
+          "10 ml mineralizat",
+          "+ 5 tomchi Na tiosulfat",
+          "1-2 daqiqa qaynatish",
+          "Sariq-qo‘ng‘ir cho‘kma = Sb"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun qo‘shimcha reaksiya shart? (Kitobda «sababi?» deb savol qo‘yilgan; malaxit ko‘ki reaksiyasi talliyda ham musbat — 207-bet.) Doskada: sxema. Tipik xato: bitta reaksiya bilan xulosa qilish."
+    },
+    {
+      "title": "Kadmiy: DDTK bilan ajratish",
+      "bullets": [
+        {
+          "text": "10 ml mineralizatga 2 ml 10% glitserin, 4 ml 10% segnet tuzi, 0,1% nil zangorisi (indikator).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2,5n NaOH qizg‘ish rangga o‘tguncha; so‘ng 3 ml 1% DDTK, 10 ml xloroform, 30 daqiqa chayqatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Pastki xloroformli qism ajratilib, 3 ml 1n HCl bilan chayqatiladi (reekstraksiya).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kadmiy DDTK",
+        "nodes": [
+          "10 ml mineralizat + glitserin",
+          "+ segnet tuzi, nil zangorisi",
+          "2,5n NaOH: qizg‘ish rang",
+          "+ DDTK 1%, xloroform",
+          "Reekstraksiya: 3 ml 1n HCl"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nil zangorisi indikator sifatida nimani ko‘rsatadi? (Kitobda aytilishicha, suyuqlik qizg‘ish rangga o‘tishi pH ni ko‘rsatadi.) Doskada: sxema. Tipik xato: chayqatish vaqti: kitobda «30 daqiqa» yozilgan."
+    },
+    {
+      "title": "Kadmiy: tasdiqlovchi reaksiyalar",
+      "bullets": [
+        {
+          "text": "Reekstraktga pH 5 gacha 10% ishqor, so‘ng 3-4 tomchi 5% natriy sulfid: kadmiy bo‘lsa, sariq cho‘kma.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sulfid reaksiyasi eritmadagi kadmiy miqdori 50 mkg dan yuqori bo‘lganda ijobiy natija beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kadmiy va mis ferrosianidi: 10 tomchi 2% CuSO4 va 1-2 tomchi 5% K ferrosianid; och-binafsha cho‘kma.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kadmiy reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Na2S 5% (pH 5)",
+            "Sariq cho‘kma (50 mkg dan ko‘p)"
+          ],
+          [
+            "CuSO4 2% + K ferrosianid 5%",
+            "Och-binafsha cho‘kma"
+          ],
+          [
+            "KBr + brutsin yoki piridin",
+            "Rangsiz prizmatik kristallar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: sulfid reaksiyasining sezgirligi nimani bildiradi? Doskada: jadval. Tipik xato: miqdori kam bo‘lsa ham sulfid reaksiyasidan natija kutish."
+    },
+    {
+      "title": "Natijalar jamlanmasi",
+      "bullets": [
+        {
+          "text": "Talliy ditizon bilan pH 12-13 da, rux ditizon bilan pH 4,5-5,0 da aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surma va kadmiy cho‘kma hosil qiluvchi reaksiyalar bilan tasdiqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Asosiy belgilar",
+        "nodes": [],
+        "header": [
+          "Kation",
+          "Reaksiya",
+          "Belgi"
+        ],
+        "rows": [
+          [
+            "Talliy",
+            "Ditizon, pH 12-13",
+            "Ko‘kimtir-binafsha xloroform"
+          ],
+          [
+            "Rux",
+            "Ditizon, pH 4,5-5,0",
+            "Qizil-binafsha xloroform"
+          ],
+          [
+            "Surma",
+            "Na tiosulfat, qaynatish",
+            "Sariq-qo‘ng‘ir cho‘kma"
+          ],
+          [
+            "Kadmiy",
+            "Na2S, pH 5",
+            "Sariq cho‘kma"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi ikki kation ditizon bilan aniqlanadi va nima bilan farq qiladi? (pH bilan.) Doskada: jadval. Tipik xato: surma uchun ditizon reaksiyasini qo‘llash."
+    },
+    {
+      "title": "Venna diagrammasi",
+      "bullets": [
+        {
+          "text": "Venna diagrammasi 2-3 jihatni va ularning umumiy tomonlarini solishtirish uchun qo‘llanadi; tizimli fikrlash va tahlil ko‘nikmalarini rivojlantiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kitobdagi diagrammada kadmiy, vismut va surma doiralari berilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kichik guruhlarda diagramma tuziladi, kesishmaydigan joylar (x) to‘ldiriladi; juftliklarda taqqoslanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: kadmiy va surma uchun umumiy va farqli reaksiyalar. Doskada: bo‘sh diagramma. Kitobdagi diagramma bo‘sh; vismut bu mashg‘ulot bayonida yo‘q, shu sabab doiralarni kadmiy, surma va talliy bilan almashtirish mumkin (o‘qituvchi qarori)."
+    },
+    {
+      "title": "11-keys: o‘pka va qizilo‘ngachdagi qon quyilishi",
+      "bullets": [
+        {
+          "text": "Sud-kimyo ekspertizasiga murda ichki a’zolari keltirilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Patologik tekshiruv o‘pka to‘qimalari va qizilo‘ngachda qon quyilish alomatlarini, buyrakda nefrit kasalligini ko‘rsatgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Topshiriq: hodisaning sabab va yechimini tushuntirish va sud-kimyo tahlilini o‘tkazish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: qaysi metall zaharlanishi bunday alomatlarga mos? Doskada: muammo turi, sabablari, hal etish yo‘llari jadvali. Kitobda javob berilmagan; talabalar kationlar xossalari asosida xulosa qiladi."
+    },
+    {
+      "title": "Vaziyatli masala: metallarni qayta ishlash korxonasi",
+      "bullets": [
+        {
+          "text": "Korxonada po‘lat va latunni xromlash, kadmiylash va nikellash ishlari bajariladi; yangi xodimlar texnika xavfsizligi bilan yetarlicha tanishtirilmagan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir oydan so‘ng «D» ismli ishchida kuchli qayt qilish kuzatilgan, qayt mahsulotlari ko‘kimtir-yashil rangda bo‘lgan; bemor bir necha soatdan so‘ng vafot etgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dastlabki tahlil: 5% K3[Fe(CN)6] va 2% CdCl2 bilan nilufar rangli cho‘kma; piridinrodan reaktivi bilan xloroform qatlami zumrad yashil.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: u qanday metall bilan zaharlangan? Zaharli moddani ajratib olish va tahlil tartibini ko‘rsating.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: dastlabki tahlil natijalarini kitobdagi rang belgilari bilan solishtiring (kadmiy, mis reaksiyalari — 209-bet). Kitobda javob berilmagan; rang bo‘yicha xulosa o‘qituvchi ishtirokida qilinadi."
+    },
+    {
+      "title": "«Qarorlar shajarasi» metodi",
+      "bullets": [
+        {
+          "text": "Umumiy muammo qo‘yiladi va uchta qaror varianti ko‘rib chiqiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har bir qaror varianti uchun afzalligi va kamchiligi yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yakunda qaror tanlanadi va asoslanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "211"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: rux yoki kadmiy tahlili uchun reaksiyalar tanlovini qarorlar shajarasida baholang. Doskada: shajara jadvali (3 variant × afzallik/kamchilik). Kitobda jadval bo‘sh."
+    },
+    {
+      "title": "Nazorat savollari",
+      "bullets": [
+        {
+          "text": "Rux kationining chinligi va miqdorini aniqlash usullarini kimyoviy reaksiyalar asosida tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "211"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dietilditiokarbaminat (DDTK) tuzlarining metall kationlarini kasrli usulda tahlil qilishda qo‘llanishini misollarda ko‘rsating.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "211"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surma kationining malaxit zangorisi bilan birikmasini toluol bilan ekstraksiya qilish sabablarini tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "211"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Talliy kationining chinligini aniqlash usullarini kimyoviy reaksiyalar asosida tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "211"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: javobni bayon asosida bering. Doskada: 4 savol. Kitobda 16 ta savol (211), javoblari yo‘q; slaydga bayonga eng yaqin 4 tasi olindi."
+    },
+    {
+      "title": "Xavfsizlik va ish tartibi",
+      "bullets": [
+        {
+          "text": "Reaksiyalarda xloroform, toluol, 40% sulfat kislota, 5n HCl, natriy ishqori va ammiak ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qattiq chayqatish ajratgich voronkada bajariladi; kadmiy ajratishda chayqatish 30 daqiqa davom etadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tahlil jarayoni qat’iy pH va hajmlar bo‘yicha olib boriladi (universal indikator yordamida).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: toluol va xloroform bug‘lari bilan ishlashda nimalarga e’tibor beriladi? Doskada: 3 qoida. Kitobning bu mashg‘ulotida alohida xavfsizlik bo‘limi yo‘q; slaydga reaktivlar va ish shartlari kiritildi. Qo‘lqop/niqob talabi 166-betdagi kirish mashg‘ulotida."
+    },
+    {
+      "title": "Reaksiya tenglamalari va izoh topshiriqlari",
+      "bullets": [
+        {
+          "text": "Talliy, rux, surma va kadmiy reaksiyalarining har biri uchun kimyoviy tenglamani yozish talab qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rux uchun reaksiyalar natijalariga asoslanib sud-kimyosi tahlili talabi bo‘yicha izoh beriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surma sulfidi reaksiyasi natijasiga ham sud-kimyosi tahlili talabi bo‘yicha izoh beriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "209"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristallarning shakli ish daftariga chiziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: sud-kimyoviy talab nimani anglatadi (reaksiya sezgirligi, tasdiqlash)? Doskada: tenglamalar uchun joy. Kitobda tenglamalar matnda berilmagan. Tipik xato: tenglamani tenglashtirmay yozish."
+    },
+    {
+      "title": "Natijani rasmiylashtirish",
+      "bullets": [
+        {
+          "text": "Vaziyatli masalaning yechimi topilib, ish daftariga tegishlicha rasmiylashtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "210"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kutilayotgan natija: surma, kadmiy kationlarini filtratdan aniqlash.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya natijasi ijobiy bo‘lmasa, tegishli kation uchun keyingi tekshiruv to‘xtatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "208"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: daftarda qaysi kation qaysi reaksiya bilan topilganini qayd eting. Doskada: namuna jadvali. Daftar shakli kitobda batafsil berilmagan."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Talliy(I) ditizonat uchun mineralizat qaysi pH ga keltiriladi?",
+      "options": [
+        "pH 12-13",
+        "pH 1-2",
+        "pH 4,5-5",
+        "pH 8,5"
+      ],
+      "correct_index": 0,
+      "explanation": "5 ml mineralizatga 10% ammiak pH 12-13 bo‘lguncha qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "208"
+      }
+    },
+    {
+      "question": "Talliy ditizonatida xloroform qavati qanday rangga bo‘yaladi?",
+      "options": [
+        "Ko‘kimtir-binafsha",
+        "Sariq",
+        "Qizil-pushti",
+        "Rangsiz"
+      ],
+      "correct_index": 0,
+      "explanation": "Talliy birikmalari bo‘lsa, xloroform qavatida ko‘kimtir-binafsha rang hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "208"
+      }
+    },
+    {
+      "question": "Rux ditizonat reaksiyasi qaysi pH oralig‘ida o‘tkaziladi?",
+      "options": [
+        "4,5-5,0",
+        "12-13",
+        "1-2",
+        "9-10"
+      ],
+      "correct_index": 0,
+      "explanation": "Mineralizat natriy tiosulfat bilan pH 4,5-5,0 ga keltirilib, atsetat bufer qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "208"
+      }
+    },
+    {
+      "question": "Rux ditizonatida xloroform qatlami qanday rangga bo‘yaladi?",
+      "options": [
+        "Qizil-binafsha",
+        "Ko‘k",
+        "Sariq",
+        "Yashil"
+      ],
+      "correct_index": 0,
+      "explanation": "Rux bo‘lgan holda xloroform qatlam rux ditizonati hisobiga qizil-binafsha rangga bo‘yaladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "208"
+      }
+    },
+    {
+      "question": "Rux DDTK bilan ajratilganda mineralizat qaysi pH ga keltiriladi?",
+      "options": [
+        "8,5",
+        "2",
+        "5",
+        "13"
+      ],
+      "correct_index": 0,
+      "explanation": "10% KOH bilan pH 8,5 gacha yetkaziladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "208"
+      }
+    },
+    {
+      "question": "Rux sulfidi qanday cho‘kma beradi?",
+      "options": [
+        "Oq",
+        "Qora",
+        "Sariq",
+        "Qizil"
+      ],
+      "correct_index": 0,
+      "explanation": "Natriy sulfid bilan rux kationi bo‘lganda oq cho‘kma hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "208"
+      }
+    },
+    {
+      "question": "Rux tetrarodanmerkuriati mikroskopda qanday shaklda ko‘rinadi?",
+      "options": [
+        "Dendrit",
+        "Kub",
+        "Ninasimon",
+        "Prizmatik rangsiz"
+      ],
+      "correct_index": 0,
+      "explanation": "Mikroskop ostida dendrit shaklidagi mikrokristallar kuzatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "208"
+      }
+    },
+    {
+      "question": "Surma sulfidi reaksiyasida qaysi reagent qo‘shiladi?",
+      "options": [
+        "To‘yingan natriy tiosulfat eritmasi",
+        "Ammiak",
+        "Kaliy yodid",
+        "Xloroform"
+      ],
+      "correct_index": 0,
+      "explanation": "10 ml mineralizatga 5 tomchi to‘yingan natriy tiosulfat qo‘shilib, 1-2 daqiqa qaynatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "209"
+      }
+    },
+    {
+      "question": "Kadmiy sulfidi qanday rangli cho‘kma beradi?",
+      "options": [
+        "Sariq",
+        "Oq",
+        "Qora",
+        "Ko‘k"
+      ],
+      "correct_index": 0,
+      "explanation": "Eritmada kadmiy kationi bo‘lsa, sariq cho‘kma hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "209"
+      }
+    },
+    {
+      "question": "Kadmiy sulfid reaksiyasi eritmadagi kadmiy miqdori qanday bo‘lganda ijobiy natija beradi?",
+      "options": [
+        "50 mkg dan yuqori",
+        "1 mkg dan past",
+        "5 mg dan past",
+        "Har qanday miqdorda"
+      ],
+      "correct_index": 0,
+      "explanation": "Reaksiya kadmiy miqdori 50 mkg dan yuqori bo‘lganda ijobiy natija beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "209"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Surma va talliy malaxit ko‘ki bilan toluol qatlamini havo rangga bo‘yaydi, shuning uchun ularni farqlash qiyin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "207"
+      }
+    },
+    {
+      "text": "Kadmiyni DDTK bilan ajratishda 10 ml mineralizatga 2 ml 10% glitserin va 4 ml 10% segnet tuzi qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "209"
+      }
+    },
+    {
+      "text": "Kadmiyga kaliy bromid va brutsin yoki piridin ta’sir ettirilsa, rangsiz prizmatik kristallar hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "209"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 207-211"
+    },
+    {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 206-207, 210, 212"
+    }
+  ]
+}

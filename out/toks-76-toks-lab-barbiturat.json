@@ -1,0 +1,1387 @@
+{
+  "topic": "Barbituratlar: ajratish, mikrokristalloskopiya, YuQX, UB-SF (pH 10/13)",
+  "slides": [
+    {
+      "title": "Mashg‘ulot maqsadi va rejasi",
+      "bullets": [
+        {
+          "text": "Maqsad: talabalarni barbituratlarni aniqlashdagi umumiy reaksiyalar, mikrokristalloskopik (xususiy) reaksiyalar va kristallarning hosil bo‘lish sharoitlari bilan tanishtirish.",
+          "source": {
+            "author": "Malaka materiali №010 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "6-ma’ruza: Psixotrop moddalar. Barbituratlarning narkologik ahamiyati, rangli, YuQX, spektrofotometrik va boshqa fizik-kimyoviy tahlil usullari (2014)",
+            "page": "2-bet"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja: 1) barbitur kislota hosilalari, fizik-kimyoviy xossalari, narkologik ahamiyati, mikrokristalloskopik tahlili va rangli reaksiyalari.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "101"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2) barbituratlarni ashyoviy dalillardan ajratish va YuQX-skrining, UB-spektrofotometrik hamda boshqa fizik-kimyoviy usullarda tahlil qilish.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "108"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun barbituratlar sud-kimyoda va narkologiyada muhim? Doskada: ikki bo‘lim — 2.1 (xossalar, reaksiyalar), 2.2 (ajratish va tahlil). Tipik xato: mashg‘ulotni faqat rangli reaksiyalar deb tushunish. Kitob (gmt) laboratoriya rejasini alohida bermaydi; maqsad malaka 010 (2014 ma’ruza) dan, reja gmt bo‘lim sarlavhalaridan olindi."
+    },
+    {
+      "title": "Reaktivlar va jihozlar",
+      "bullets": [
+        {
+          "text": "Rangli reaksiyalar: kobalt nitrati shimdirilgan filtr qog‘ozi, ammiak bug‘i, kobalt atsetat va izopropilaminning spirtli eritmalari.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "110"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristalloskopiya: buyum oynasi, mikroskop, nam kamera (Petri idishi), konsentrlangan sulfat kislota, mis piridin reaktivi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "112-113"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: xloroform-n-butanol-25% ammiak (70:40:5), difenilkarbazon va simob sulfat; UB-SF: 0,05 M borat buferi va 1 M ishqor.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113-115"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: har bir reaktiv qaysi bosqichda ishlatiladi? Doskada: bosqichlar bo‘yicha ro‘yxat. Tipik xato: reaktivlarni oldindan tayyorlamaslik. Kitob (gmt) jihozlar ro‘yxatini alohida bermaydi — slayd usul bayonlaridan yig‘ildi, miqdor va konsentratsiyalar keyingi slaydlarda."
+    },
+    {
+      "title": "Xavfsizlik va tayyorgarlik",
+      "bullets": [
+        {
+          "text": "Talaba laboratoriya ishi uchun o‘zi bilan rezina qo‘lqop, salfetka va yuzga tutish uchun niqob keltiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "166"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspertiza ventilyatsiya va so‘rish shkafi bor, ish tugagach berkitiladigan va muhrlanadigan xonalarda o‘tkaziladi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "6-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Infeksiyali (sil, gepatit, OITS) shaxslardan ob’ektlar maxsus konteynerda keladi va hujjatlarda belgilanadi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "7-band"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qo‘lqop va niqobsiz biologik ob’ekt bilan ishlash qanday xavf tug‘diradi? Doskada: shaxsiy himoya vositalari ro‘yxati. Tipik xato: biologik ob’ektni «toza» deb hisoblash. Kitob bu mashg‘ulotdagi alohida reaktivlarning xavfi (kislota, organik erituvchi) haqida ko‘rsatma bermaydi; ularni o‘qituvchi laboratoriya qoidalari bo‘yicha qo‘shimcha eslatadi. Barbituratlar kuchli ta’sir etuvchi, nazoratdagi moddalar: standart namunalarni faqat o‘qituvchi nazoratida ishlating. Simob sulfat (YuQX) va kobaltli reaktivlar zaharli — o‘qituvchi alohida eslatadi. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
+    },
+    {
+      "title": "Barbituratlar: tavsif",
+      "bullets": [
+        {
+          "text": "Barbitur kislota (malonil mochevina) tibbiyotda qo‘llanilmaydi; uning hosilalari — barbituratlar — keng qo‘llaniladi va katta narkologik ahamiyatga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "101"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiyotda tinchlantiruvchi, uxlatuvchi, anesteziyada va tutqanoqqa qarshi vosita sifatida ishlatiladi, giyohvandlik xususiyatini namoyon qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "101"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Malon kislota va mochevinadan sintez qilinib, 2500 dan ortiq barbiturat olingan; hozir dunyoda 50 dan ortig‘i tibbiyotda qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "101"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega barbitur kislotaning o‘zi dori emas, hosilalari dori? Doskada: umumiy formulaning sxemasi (gmt 101 da chizma bor). Tipik xato: barbitur kislotani dori deb yozish."
+    },
+    {
+      "title": "Xalqaro va milliy nazorat",
+      "bullets": [
+        {
+          "text": "BMT ning 1971 yildagi Psixotrop moddalar Konvensiyasiga binoan 12 barbiturat nazoratga olingan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "101"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘zbekiston VM ning 2015-yil 12-noyabrdagi 330-sonli qaroriga asosan 13 turdagi barbiturat ro‘yxatga olingan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "105"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Konvensiya ro‘yxatlari",
+        "nodes": [],
+        "header": [
+          "Ro‘yxat",
+          "Barbituratlar"
+        ],
+        "rows": [
+          [
+            "II",
+            "Sekobarbital (1)"
+          ],
+          [
+            "III",
+            "Amobarbital, butalbital va yana 2 ta (4)"
+          ],
+          [
+            "IV",
+            "Allobarbital, barbital, fenobarbital... (7)"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ro‘yxat raqami nimani bildiradi? (Nazorat darajasi — kitobda tushuntirilmagan.) Doskada: jadval. Eslatma: O‘zbekiston ro‘yxatlari va qaror tahriri amaldagi holati bilan lex.uz da tekshirilsin (docs/toks/malaka_errors.md, E6). Kitobda ziddiyat: 102-104-betlardagi jadvalda ro‘yxat raqamlari (masalan, allobarbital «II», amobarbital «III») 106-betdagidan farq qiladi — slaydda faqat Konvensiya ro‘yxati (101-bet) va qaror (105-bet) olindi."
+    },
+    {
+      "title": "Fizik xossalari",
+      "bullets": [
+        {
+          "text": "Barcha barbituratlar (tiopental-natriydan tashqari) qattiq kristall, hidsiz, achchiq ta’mli moddalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dietil efirida yaxshi, xloroform va spirtda yomonroq, suvda yomon eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yuqori haroratda quruq haydaladi (sublimatsiya); sublimat kristallari ayrim barbituratlar uchun xarakterli.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sublimatsiya ajratish va tozalash uchun qanday ahamiyatga ega? (Keyingi slaydlar.) Doskada: eruvchanlik qatori: efir > xloroform, spirt > suv. Tipik xato: tiopentalni kristall moddalar qatoriga kiritish — kitob uni istisno qiladi."
+    },
+    {
+      "title": "Ayrim barbituratlarning suyuqlanish harorati",
+      "bullets": [
+        {
+          "text": "Qoldiq ko‘p yoki dalil toza kukun bo‘lsa, birinchi reaksiya — suyuqlanish haroratini aniqlash.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tiopental (natriyli tuz) 156-159 °C da suyuqlanadi; oq, ba’zan sarg‘ish, oltingugurtga xos kuchsiz hidli.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "109"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Suyuqlanish harorati",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Harorat, °C"
+        ],
+        "rows": [
+          [
+            "Barbital",
+            "189-191"
+          ],
+          [
+            "Fenobarbital",
+            "174-177"
+          ],
+          [
+            "Barbamil",
+            "141"
+          ],
+          [
+            "Geksenal",
+            "143-146"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Kutilayotgan natija: toza kukunning suyuqlanish harorati jadvaldagi bilan solishtiriladi. Muhokama: aralashma suyuqlanish haroratiga qanday ta’sir qiladi? (Kitob buni aytmaydi.) Doskada: jadval. Kitobning boshqa jadvalida (102-104) qiymatlar biroz farq qiladi (masalan, barbital 188-192 °C); slaydda 15-jadval (108-bet) qiymatlari olindi."
+    },
+    {
+      "title": "Uxlatuvchi ta’siri bo‘yicha guruhlari",
+      "bullets": [
+        {
+          "text": "Barbituratlar uxlatuvchi ta’siriga ko‘ra uch guruhga bo‘linadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hozir tibbiyotda: barbital, fenobarbital, geksenal, barbamil, etaminal, benzonal, butobarbital.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ta’sir guruhlari",
+        "nodes": [],
+        "header": [
+          "Ta’sir",
+          "Barbituratlar"
+        ],
+        "rows": [
+          [
+            "Uzoq ta’sir etuvchi",
+            "Barbital, fenobarbital"
+          ],
+          [
+            "O‘rtacha ta’sir etuvchi",
+            "Barbamil, etaminal"
+          ],
+          [
+            "Qisqa ta’sir etuvchi",
+            "Geksenal, butobarbital"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ta’sir davomiyligi metabolizm tezligi bilan qanday bog‘liq? (107-bet: uzoq ta’sirlilar jigarda kam parchalanadi.) Doskada: jadval. Tipik xato: geksenalni uzoq ta’sir etuvchi guruhga qo‘yish."
+    },
+    {
+      "title": "Toksikologik ahamiyati",
+      "bullets": [
+        {
+          "text": "Barbituratlarning o‘lim chaqiruvchi dozasi terapevtik dozadan 20 baravar ko‘p.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘lim chaqiruvchi doza: barbital uchun 6-10 g, fenobarbital uchun 4-6 g.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ba’zilari kumulyatsiyalanadi; o‘limda patologoanatomik tekshirish xarakterli alomat bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu sababli zaharlanganda biologik ob’ektning sud-kimyoviy tahlili va albatta moddaning miqdorini aniqlash katta ahamiyatga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: patologoanatomik belgilar bo‘lmasa, zaharlanishni qanday aniqlaymiz? Doskada: «20 baravar», 6-10 g va 4-6 g. Tipik xato: o‘lim dozasini terapevtik doza deb yozish. Kitob konsentratsiya (qondagi) chegaralarini bu betda bermaydi."
+    },
+    {
+      "title": "Metabolizm va ajralish",
+      "bullets": [
+        {
+          "text": "Barbituratlar organizmda dezalkillanish, gidroksillanish, karboksillanish kabi jarayonlarga uchraydi; bir qismi jigarda zararsizlanadi, bir qismi peshob bilan chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qabul qilingan barbitalning 70-80%, fenobarbitalning 15-20% peshob bilan chiqariladi — shuning uchun peshob tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "107"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uzoq ta’sirlilar jigarda kam parchalanib peshob bilan chiqadi; geksenal, tiopental kabi qisqa ta’sirlilar jigarda tez parchalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "107"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Biologik ob’ektlarda saqlanish muddati turli mualliflarda 1,5 oydan 14 oygacha.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "107"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun fenobarbital uchun peshobdagi ulush barbitalnikidan kam? (Kitob buni aytmaydi.) Doskada: ikki raqam (70-80% va 15-20%). Tipik xato: ularni almashtirish. Kitobdagi metabolizm chizmasi (107-bet, 20-rasm) matn sifatida o‘qilmaydi."
+    },
+    {
+      "title": "Zaharlanish belgilari",
+      "bullets": [
+        {
+          "text": "Bemor uzoq uxlaydi, ba’zan 1-2 kungacha uyg‘onmaydi, xurrak otib nafas oladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "107"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qon bosimi pasayadi, oyoq-qo‘llari soviydi, ba’zan ko‘ngil aynib qusadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "107"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘lim nafas va qon tomirlar ishini boshqaruvchi markazlarning falajlanishidan sodir bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "107"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun zaharlangan bemor peshobini tekshirish zarur? Doskada: belgilar ro‘yxati. Tipik xato: belgilarni FOB zaharlanishi (qorachiq torayishi, so‘lak) bilan aralashtirish."
+    },
+    {
+      "title": "Ajratib olish usullari",
+      "bullets": [
+        {
+          "text": "Barbituratlar ob’ektdan nordonlashtirilgan spirt yoki suv usulida ajratiladi; ayrimlari xususiy usullarda.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Biologik suyuqliklardan organik erituvchilar bilan ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nordonlashtirilgan usullarda kislotali ajralmada barbituratlar, neytral moddalar (fenatsetin) va kuchsiz asos xossali alkaloidlar tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: barbituratlar nega kislotali ajralmada qidiriladi? (Kislotali xossali moddalar; toks 96.) Doskada: ob’ekt -> usul jadvali (to‘qima / biosuyuqlik). Tipik xato: barbituratlarni ishqoriy ajralmada qidirish. Kitobdagi 5-jadval (erituvchi ta’siri) matnda yo‘q."
+    },
+    {
+      "title": "Ajralmani tozalash",
+      "bullets": [
+        {
+          "text": "Kislotali xossali moddalar (organik kislotalar, barbituratlar) ishqor (pH-13) va kislota (pH-1) bilan reekstraksiyada tozalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "223"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Quruq haydash (vozgonka): barbituratlar, benzoy va salitsil kislotalari, kofein kabi sublimatsiyalanuvchi moddalar uchun.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "223"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xromatografik usullar yot moddalardan tozalash bilan birga chinlik tahlilini ham beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "223"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: reekstraksiyada barbiturat qaysi fazada qoladi? (Ishqoriy suvli qatlam — kerakli; organik qatlam kerakmas — toks 223 sxemasi.) Doskada: pH-13 / pH-1 sxemasi. Tipik xato: pH-13 va pH-1 ni teskari qo‘llash."
+    },
+    {
+      "title": "Umumiy reaksiyalar: ishqor bilan",
+      "bullets": [
+        {
+          "text": "Qoldiq ko‘p yoki ashyoviy dalil toza kukun bo‘lganda avval suyuqlanish harorati aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlar kislota va ishqorga barqaror; ishqor bilan yuqori haroratda qizdirilsa, parchalanib ammiak hidi keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "109"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya mahsulotiga kislota qo‘shilsa, tegishli kislotaning hidi keladi; reaksiyani barcha barbituratlar beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "109"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: ammiak hidi (nam lakmus qog‘ozi bilan tasdiqlash — kitobda yo‘q, o‘qituvchi taklifi). Muhokama: nega reaksiya barcha barbituratlar uchun umumiy? (Barbitur halqaning parchalanishi.) Tipik xato: ammiak hidini hidlab emas, qog‘oz bilan tekshirmaslik (xavfsizlik). Kitobdagi tenglama sxemasi matnda o‘qilmaydi."
+    },
+    {
+      "title": "Izonitrozobarbitur kislotasi reaksiyasi",
+      "bullets": [
+        {
+          "text": "Barbiturat qoldig‘iga pergidrol va ammoniy xlorid qo‘shib qizdiriladi — oksidlanish mahsuloti hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "109"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Na2S bilan barbitur kislotasi; nitritlar bilan qizil rangli izonitrozobarbitur kislotasi hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "109"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Izonitrozobarbitur kislotasi temir tuzlari bilan ko‘k rangli temirli kompleks beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "109"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Rang hosil bo‘lishi",
+        "nodes": [
+          "Qoldiq + pergidrol, NH4Cl",
+          "Qizdirish: oksidlanish",
+          "Na2S: barbitur kislotasi",
+          "Nitrit: qizil izonitrozo",
+          "Fe tuzi: ko‘k kompleks"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: qizil, so‘ng ko‘k rang. Muhokama: nega rang bosqichma-bosqich o‘zgaradi? Doskada: 5 bosqichli sxema. Kitobdagi ’tuzilish formulalari’ matnda o‘qilmaydi. Tipik xato: bosqichlar tartibini buzish. Eslatma: malaka 010 da izonitrozo birikma «pushti» rangda deyilgan; slaydda kitob (gmt) varianti — qizil."
+    },
+    {
+      "title": "Kobalt reaksiyalari (kam miqdor uchun)",
+      "bullets": [
+        {
+          "text": "Kam miqdorda barbituratlar umumiy reaksiyalar bilan aniqlanadi; kobalt reaksiyalari ham ular qatoriga kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "110"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kobalt nitrati shimdirilgan qog‘ozga spirtli ajralma tomizilib, ammiak bug‘iga tutiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "110"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Halaqit beradi: purin alkaloidlari va byuret zanjiri saqlovchi moddalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "110"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kobalt reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Kobalt tuzi + NH3 + metil spirti",
+            "Xarakterli qizil rang"
+          ],
+          [
+            "Kobalt atsetat + izopropilamin (xloroformda)",
+            "Qizil-pushti; ichki kompleks"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: qizil (filtr qog‘ozida) yoki qizil-pushti (xloroformli eritmada) rang. Muhokama: purin alkaloidlari (kofein) borligida natijaga qanday qaraladi? (Halaqit beradi — yolg‘on natija bo‘lishi mumkin.) Doskada: jadval. Tipik xato: kobalt reaksiyasini barbituratlar uchun yagona tasdiq deb yozish."
+    },
+    {
+      "title": "Mikrokristalloskopiya: asoslari",
+      "bullets": [
+        {
+          "text": "Usul kristall tuzilishi, o‘lchami va rangi bo‘yicha aniqlashga asoslangan; buyum oynasida moddaga reaktiv tomizilib, kristall ko‘riladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "111"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Afzalliklari: modda juda oz miqdorda kifoya; portlovchi va zaharli moddalar tahlilida qo‘llanadi; filtrlash, bug‘latish, qizdirish talab etilmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "111"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kristallar 20-50 mkm bo‘lishi kerak; 2-20 mkm zarrachalar 150-250 marta kattalashtirib ko‘riladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "111"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun qizdirishsiz o‘tkazilishi muhim? (Modda strukturasi o‘zgarmaydi — 111-bet.) Doskada: 3 afzallik. Tipik xato: kristall o‘lchamini mkm o‘rniga mm bilan yozish."
+    },
+    {
+      "title": "Kristallanish sharoitlari",
+      "bullets": [
+        {
+          "text": "Kristallanishda avval kristallanish markazi hosil bo‘ladi, so‘ng kristall o‘sadi; birinchi bosqich sekin bo‘lsa, yirik kristallar hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "112"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yirik kristallar uchun suyultirilgan va issiq eritmalarga reaktiv ta’sir ettiriladi; konsentrlangan eritma va reaktivdan xarakterli bo‘lmagan mayda kristallar chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "112"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tomchi chetlaridan kristallanish boshlanadi; reaksiya sekin bo‘lsa, buyum oynasi nam kameraga (Petri idishi) qo‘yiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "112"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega tekshiriladigan modda va reaktiv tomchilari yaqin qo‘yilib, tayoqcha bilan birlashtiriladi? (Kitob: yaxshi natija beradi — 112-bet.) Doskada: sabablar zanjiri. Tipik xato: konsentrlangan reaktivdan foydalanish — kitob suyultirilganini tavsiya etadi."
+    },
+    {
+      "title": "Usulning kamchiliklari",
+      "bullets": [
+        {
+          "text": "Ko‘pincha ma’lum shaklli kristall hosil bo‘lmasligi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "112"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sabablar: modda va reaktiv konsentratsiyasi, hajm, kristall hosil bo‘lish tezligi, bug‘lanish, pH, harorat, polimorfizm.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "112-113"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘p moddalar o‘xshash kristall beradi, bu spesifiklikni pasaytiradi; to‘g‘ri xulosa uchun solishtirish nazorati o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: solishtirish nazorati nimadan iborat? (Standart modda bilan parallel reaksiya — kitob umumiy aytadi.) Doskada: omillar ro‘yxati. Tipik xato: bitta kristall shakliga qarab moddani aniqlash."
+    },
+    {
+      "title": "Barbituratlarning mikrokristalloskopik reaksiyalari",
+      "bullets": [
+        {
+          "text": "Sulfat kislota bilan: qoldiq konsentrlangan H2SO4 da eritilib, suv bilan suyultirilsa, oq loyqa hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aksariyat barbituratlarning cho‘kma kristallari o‘ziga xos shaklga ega bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis piridin reaktivi amorf yoki kristall cho‘kma beradi; birikma mineral kislotalar ta’sirida parchalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Mikrokristallar",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Konsentrlangan H2SO4, so‘ng suv",
+            "Oq loyqa, o‘ziga xos kristallar"
+          ],
+          [
+            "Mis piridin reaktivi",
+            "Amorf yoki kristall cho‘kma"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: mikroskopda kristallar (shakl va rang daftarga chiziladi). Muhokama: sulfat kislota reaksiyasi qanday xossaga asoslangan? (Kons. kislotada oson erishi, suyultirilganda cho‘kishi — 113-bet.) Tipik xato: konsentrlangan kislotani suyultirishda ehtiyot bo‘lmaslik — o‘qituvchi xavfsizlikni eslatadi (kitobda ko‘rsatma yo‘q)."
+    },
+    {
+      "title": "YuQX-skrining",
+      "bullets": [
+        {
+          "text": "Harakatlanuvchi faza: xloroform-n-butanol-25% ammiak (70:40:5).",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aniqlovchi reaktivlar: difenilkarbazonning xloroformli eritmasi va simob sulfatning suvli eritmasi purkaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlar o‘ziga xos Rf qiymatli ko‘k-binafsha dog‘ hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "YuQX bosqichlari",
+        "nodes": [
+          "Qoldiq xloroformda eritiladi",
+          "Plastinkaga tomiziladi",
+          "Xloroform-n-butanol-NH3 70:40:5",
+          "Difenilkarbazon + simob sulfat",
+          "Ko‘k-binafsha dog‘, Rf"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 15 daqiqa. Kutilayotgan natija: ko‘k-binafsha dog‘lar; Rf standart bilan solishtiriladi. Muhokama: nima uchun standart yoniga tomiziladi? Doskada: sxema. Plastinka turi (Silufol) kitobda aytilmagan. Rf qiymatlari kitobda berilmagan. Kitobda (gmt 113): difenilkarbazon konsentratsiyasi «0,02%» va «0,01%» deb chalkash; toks 90, 93 da 0,02% — boshqa decklarda 0,02% qabul qilindi."
+    },
+    {
+      "title": "UB-spektrofotometriya: asoslari",
+      "bullets": [
+        {
+          "text": "Barbituratlar keto (kislotali) shaklda UB sohada xarakterli maksimum bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Borat buferida (0,05 M, pH 9,2) monoimid shaklida 239-241 nm da spektral maksimum beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114-115"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1 M ishqorda (pH 13) diimid shaklida 254-256 nm da maksimum beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114-115"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun muhit pH o‘zgarsa, maksimum siljiydi? (Ionlanish shakli o‘zgaradi: monoimid -> diimid.) Doskada: ikki shakl va to‘lqin uzunliklari. Tipik xato: pH 10 va 9,2 ni aralashtirish. Kitobda: 114-bet matnida «pH=10», monoimid 238-240 nm, diimid «258-260 nm» va «optik faol emas» (atama xato). Qaror: 0,05 M borat buferi pH 9,2; 239-241 va 254-256 nm (115-bet jadvali, 12 modda uchun izchil)."
+    },
+    {
+      "title": "UB-spektrlar: ko‘p qo‘llanadigan barbituratlar",
+      "bullets": [
+        {
+          "text": "Maksimum to‘lqin uzunligi (nm) va solishtirma yutilish A(1%, 1 sm) qavs ichida.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "115"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jadvalda 12 barbituratning UB, IQ va mass-spektr ma’lumotlari berilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "115-116"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "UB-maksimumlar",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "pH 9,2: nm (A)",
+          "pH 13: nm (A)"
+        ],
+        "rows": [
+          [
+            "Barbital",
+            "239 (549)",
+            "254 (427)"
+          ],
+          [
+            "Fenobarbital",
+            "239 (452)",
+            "254 (342)"
+          ],
+          [
+            "Amobarbital",
+            "240 (445)",
+            "255 (364)"
+          ],
+          [
+            "Pentobarbital",
+            "239 (438)",
+            "255 (327)"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: noma’lum barbiturat spektri jadval bilan solishtiriladi. Muhokama: qaysi modda pH 13 da eng yuqori yutilish beradi? (Barbital — 427.) Doskada: jadval. Kitobda ’A11’ belgilanishi A(1%, 1 sm) ma’nosida (malaka_errors E2: ’ε’ emas). Tipik xato: A ni molyar yutilish koeffitsienti deb yozish."
+    },
+    {
+      "title": "UB-spektrlar: boshqa barbituratlar",
+      "bullets": [
+        {
+          "text": "Vinilbital uchun suvli ishqorda 247 nm (A=298) berilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "116"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlarning chinligini ikki muhitdagi (pH 9,2 va pH 13) spektrni solishtirib baholash mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114-115"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "UB-maksimumlar",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "pH 9,2: nm (A)",
+          "pH 13: nm (A)"
+        ],
+        "rows": [
+          [
+            "Allobarbital",
+            "241 (460)",
+            "256 (356)"
+          ],
+          [
+            "Butobarbital",
+            "239 (477)",
+            "254 (388)"
+          ],
+          [
+            "Siklobarbital",
+            "239 (410)",
+            "256 (320)"
+          ],
+          [
+            "Sekbutabarbital",
+            "239 (428)",
+            "254 (354)"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun ikkita muhitda o‘lchanadi? (Maksimumlar ikkala muhitda siljishi chinlikni tasdiqlaydi — slayd mantiqi, kitob bu so‘zni aniq aytmaydi; o‘qituvchi tasdiqlasin.) Doskada: jadval. Tipik xato: pH 13 qiymatini pH 9,2 ustuniga qo‘yish."
+    },
+    {
+      "title": "GX (gaz xromatografiya) sharoitlari",
+      "bullets": [
+        {
+          "text": "Kolonka: shisha, 2 m, ichki diametri 2-4 mm; sorbent — xromosorb G-HP ga 3% SE-30 shimdirilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113-114"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qo‘zg‘aluvchi faza — azot, 45-50 ml/daqiqa; izotermik sharoit, kolonka 190-200 °C.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Injektor va detektor harorati 220 °C; barbituratlar ushlanish indekslari va Kovach indeksi bilan identifikatsiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: Kovach indeksi nima uchun mutlaq ushlanish vaqtidan afzal? (Kitob buni aytmaydi.) Doskada: sharoitlar jadvali. Kitobda harorat «190-200 S» deb yozilgan (daraja belgisi tushgan); °C deb o‘qildi. Tipik xato: injektor va kolonka haroratini aralashtirish."
+    },
+    {
+      "title": "YuSSX sharoitlari",
+      "bullets": [
+        {
+          "text": "Kolonka: 150 mm, ichki diametri 2,6 mm, oktadesil silikagel bilan to‘ldirilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mobil faza: pH 3,5 li 0,1 M fosfat buferi va metanol (60:40); oqim 2 ml/daqiqa.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Detektor — UB-spektrometr, 216 nm; injektorga 20 mkl namuna yuboriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun aniqlash 216 nm da (UB-SF maksimumlaridan farqli)? (Kitob izoh bermaydi.) Doskada: sharoitlar. Tipik xato: 216 nm ni UB-SF dagi 239 nm bilan aralashtirish. Kitobda «rN» pH ma’nosida yozilgan."
+    },
+    {
+      "title": "Natijani talqin qilish va cheklovlar",
+      "bullets": [
+        {
+          "text": "Kobalt reaksiyasiga purin alkaloidlari va byuret zanjiri saqlovchi moddalar halaqit beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "110"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristalloskopiyada ko‘p moddalar o‘xshash kristall beradi — spesifiklik past; solishtirish nazorati kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlar zaharlanishda patologoanatomik alomat bermaydi, shuning uchun moddaning miqdorini aniqlash albatta zarur.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "106"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: sifat reaksiyalari musbat bo‘lsa, keyingi qadam nima? Doskada: «sifat -> YuQX -> UB/GX -> miqdor». Tipik xato: bitta rangli reaksiya bilan «barbiturat topildi» deyish. Kitob miqdoriy usul tafsilotini (hisob formulasi) bu betlarda bermaydi; nazorat savollari 16-17 UB-SF miqdoriga ishora qiladi."
+    },
+    {
+      "title": "Nazorat savollari",
+      "bullets": [
+        {
+          "text": "Barbitur kislota hosilalarining toksikologik va narkologik ahamiyati; ularni ob’ektdan ajratishning xususiy usullari.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "116"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Umumiy reaksiyalar; kobalt tuzi va ammiak reaksiyasining tenglamasi; mikrokristalloskopik reaksiyalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "116"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "BMT 1971 yil Konvensiyasi; uxlatuvchi ta’siriga ko‘ra guruhlanishi; zaharlanish belgilari; YuQX usuli.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "116"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB-spektrofotometriya mohiyati, muhit ta’siri, chinlik va miqdorni aniqlash; differensial spektrofotometriya.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "116"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: har bir guruhdan bittadan savol. Doskada: raqamlar. Tipik xato: javobda pH, reaktiv va rangni keltirmaslik. Kitobda 18 ta nazorat savoli bor, mazmuniga ko‘ra 4 guruhga jamlandi; test savollari (117) bu deckka kiritilmadi."
+    },
+    {
+      "title": "Xulosa va hisobot",
+      "bullets": [
+        {
+          "text": "Umumiy reaksiyalar: suyuqlanish harorati, ishqor bilan ammiak hidi, izonitrozobarbitur (qizil -> ko‘k), kobalt (qizil).",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "108-110"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristalloskopiya: konsentrlangan H2SO4 va mis piridin; YuQX: xloroform-n-butanol-NH3 (70:40:5), ko‘k-binafsha dog‘.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "113"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB-SF: pH 9,2 da 239-241 nm, pH 13 da 254-256 nm; GX va YuSSX sharoitlari alohida.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "114-115"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Hisobot: ish daftariga ob’ekt tavsifi, har bir reaksiya (reaktiv, rang/kristall), Rf, UB maksimumlari va xulosa yoziladi. Muhokama: eng ishonchli dalil qaysi? Doskada: 3 xulosa. Tipik xato: UB maksimumini pH ko‘rsatmay yozish."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "BMT ning 1971 yil Konvensiyasiga ko‘ra nechta barbiturat xalqaro nazoratga olingan?",
+      "options": [
+        "5",
+        "12",
+        "13",
+        "50"
+      ],
+      "correct_index": 1,
+      "explanation": "BMT 1971 yildagi Konvensiyasiga binoan 12 barbiturat xalqaro nazoratga olingan.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "101"
+      }
+    },
+    {
+      "question": "Barbituratlarning o‘lim chaqiruvchi dozasi terapevtik dozadan necha baravar ko‘p?",
+      "options": [
+        "2",
+        "5",
+        "20",
+        "100"
+      ],
+      "correct_index": 2,
+      "explanation": "O‘lim chaqiruvchi doza terapevtik dozaga qaraganda 20 baravar ko‘p.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "106"
+      }
+    },
+    {
+      "question": "Qabul qilingan barbitalning qancha qismi peshob bilan chiqariladi?",
+      "options": [
+        "70-80%",
+        "15-20%",
+        "5%",
+        "100%"
+      ],
+      "correct_index": 0,
+      "explanation": "Barbitalning 70-80%, fenobarbitalning 15-20% peshob bilan chiqariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "107"
+      }
+    },
+    {
+      "question": "Uzoq ta’sir etuvchi barbituratlarga qaysilar kiradi?",
+      "options": [
+        "Barbital va fenobarbital",
+        "Barbamil va etaminal",
+        "Geksenal va butobarbital",
+        "Tiopental va benzonal"
+      ],
+      "correct_index": 0,
+      "explanation": "Uzoq ta’sirlilar: barbital, fenobarbital.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "106"
+      }
+    },
+    {
+      "question": "Barbituratlar ishqor bilan yuqori haroratda qizdirilganda nima hosil bo‘ladi?",
+      "options": [
+        "Ammiak hidi",
+        "Vodorod sulfid",
+        "Xlor hidi",
+        "Hech narsa"
+      ],
+      "correct_index": 0,
+      "explanation": "Barbituratlar ishqor ishtirokida qizdirilganda parchalanadi va ammiak hidi keladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "109"
+      }
+    },
+    {
+      "question": "Kobalt ammiakati bilan barbituratlar qanday rang beradi?",
+      "options": [
+        "Ko‘k",
+        "Xarakterli qizil",
+        "Yashil",
+        "Rangsiz"
+      ],
+      "correct_index": 1,
+      "explanation": "Barcha barbituratlar kobalt tuzlarining ammiakli eritmasi bilan metil spirti ishtirokida qizil rang hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "110"
+      }
+    },
+    {
+      "question": "Mikrokristalloskopiyada hosil bo‘lgan kristallar o‘lchami qanday bo‘lishi kerak?",
+      "options": [
+        "20-50 mkm",
+        "1-2 mm",
+        "0,1-1 mkm",
+        "5-10 sm"
+      ],
+      "correct_index": 0,
+      "explanation": "Hosil bo‘lgan kristallar o‘lchami 20-50 mkm kattalikda bo‘lishi kerak.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "111"
+      }
+    },
+    {
+      "question": "Barbituratlarning YuQX ida harakatlanuvchi faza qaysi?",
+      "options": [
+        "Xloroform-n-butanol-25% ammiak (70:40:5)",
+        "Benzol-aseton (80:20)",
+        "Geksan-etil efiri (10:2)",
+        "Xloroform-metanol (7:1)"
+      ],
+      "correct_index": 0,
+      "explanation": "Qo‘zg‘aluvchi faza: xloroform-n-butanol-25% ammiak, 70:40:5.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "113"
+      }
+    },
+    {
+      "question": "Barbital UB-spektrida borat buferida (pH 9,2) qaysi to‘lqin uzunligida maksimum beradi?",
+      "options": [
+        "239 nm",
+        "254 nm",
+        "216 nm",
+        "273 nm"
+      ],
+      "correct_index": 0,
+      "explanation": "Barbital uchun pH 9,2 da 239 nm (A=549), pH 13 da 254 nm (A=427).",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "115"
+      }
+    },
+    {
+      "question": "Barbituratlarning YuSSX ida aniqlash to‘lqin uzunligi qancha?",
+      "options": [
+        "216 nm",
+        "239 nm",
+        "254 nm",
+        "567 nm"
+      ],
+      "correct_index": 0,
+      "explanation": "YuSSX da UB-spektrometr detektori 216 nm da ishlaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "114"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Barbituratlarning o‘lim chaqiruvchi dozasi terapevtik dozadan 20 baravar ko‘p: barbital uchun 6-10 g, fenobarbital uchun 4-6 g.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "106"
+      }
+    },
+    {
+      "text": "Qabul qilingan barbitalning 70-80%, fenobarbitalning esa 15-20% peshob bilan chiqariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "107"
+      }
+    },
+    {
+      "text": "Mikrokristalloskopiyani birinchi bo‘lib kimyoviy tadqiqotlarda qo‘llagan olim sifatida kitobda M.V. Lomonosov, kristall shakli orqali aniqlashda T.E. Lovits nomi keltirilgan.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "111"
+      }
+    },
+    {
+      "text": "Barbituratlar keto shaklda UB sohada xarakterli maksimum bermaydi; ular pH 9,2 da monoimid, pH 13 da diimid shaklida o‘ziga xos UB maksimum beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "114"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 96, 166, 223"
+    },
+    {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "year": null,
+      "pages": "b. 101, 105-116"
+    },
+    {
+      "author": "Malaka materiali №010 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "6-ma’ruza: Psixotrop moddalar. Barbituratlarning narkologik ahamiyati, rangli, YuQX, spektrofotometrik va boshqa fizik-kimyoviy tahlil usullari (2014)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    },
+    {
+      "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+      "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    }
+  ]
+}

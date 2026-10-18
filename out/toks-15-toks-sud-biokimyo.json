@@ -1,0 +1,1496 @@
+{
+  "topic": "Sud biokimyosi va immunokimyoviy tahlil (IFT, RIA, immunoxromatografik testlar, cutoff tushunchasi)",
+  "slides": [
+    {
+      "title": "Ma’ruza rejasi",
+      "bullets": [
+        {
+          "text": "Reja: immunokimyoviy ekspress tahlil usulining nazariy asoslari.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunoferment ekspress tahlil usulining nazariy asoslari.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunokimyoviy va immunoferment ekspress tahlil usullarini narkotik moddalar tahlilida qo‘llash.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sud biokimyosi va sud kimyosining farqi nima? Doskada: ma’ruzaning uch bandi. Tipik xato: immunotahlilni identifikatsiyaning yakuniy usuli deb o‘ylash. Izoh: kitobda reja 3-bandi (narkotik moddalar tahlilida qo‘llash) matnda batafsil yoritilmagan; shu bo‘lim malaka 107/042 va gmt ma’lumotlari bilan to‘ldirildi."
+    },
+    {
+      "title": "Sud biokimyosi nimani o‘rganadi",
+      "bullets": [
+        {
+          "text": "Sud biokimyosi organizmning o‘limdan keyingi holati va jarayonlarini o‘rganadi va postmortal tahlil deb ataladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "U qisqa vaqt ichida biokimyoviy izlanishlar asosida organizmning o‘limdan keyingi ichki holatini yoritib beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uning asosida o‘limning aniq vaqti va sababi aniqlanadi; bu jinoyat sababini aniqlashga yordam beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega o‘lim vaqtini biokimyo bilan baholash mumkin? Doskada: postmortal tahlil ta’rifi. Tipik xato: sud biokimyosini toksikologik tahlil bilan bir xil deb hisoblash."
+    },
+    {
+      "title": "Postmortal tahlil ob’ektlari",
+      "bullets": [
+        {
+          "text": "Postmortal biokimyoviy diagnostika uchun ixtiyoriy biologik ashyolarni olish mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eng ko‘p keltiriladigan ob’ektlar: qon, peshob, perikardial suyuqlik; jigar va muskullardan olingan materiallar.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonning postmortal biokimyoviy tahlili uning tarkibida uglevodlarni aniqlashga asoslangan; avvalo glyukoza miqdoriga e’tibor qaratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega avval glyukoza tekshiriladi? Doskada: ob’ektlar ro‘yxati. Tipik xato: faqat qonni ob’ekt deb hisoblash."
+    },
+    {
+      "title": "Qondagi glyukoza va o‘lim",
+      "bullets": [
+        {
+          "text": "Tirik organizmda qondagi glyukoza 3,3-5,5 mmol/l, ovqatdan so‘ng 10 mmol/l gacha bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘limdan so‘ng glyukoza pasayadi: eritrotsitlardagi anaerob glikoliz sababli.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qondagi glyukoza miqdori o‘limning sababiga ko‘ra o‘zgaradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Glyukoza (qon)",
+        "nodes": [],
+        "header": [
+          "Holat",
+          "Miqdor"
+        ],
+        "rows": [
+          [
+            "Tirik, normal",
+            "3,3-5,5 mmol/l"
+          ],
+          [
+            "Ovqatdan keyin",
+            "10 mmol/l gacha"
+          ],
+          [
+            "O‘limdan keyin",
+            "Pasayadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: anaerob glikoliz nima? Doskada: normal va postmortal qiymatlar. Tipik xato: o‘limdan keyin glyukoza oshadi deb o‘ylash."
+    },
+    {
+      "title": "Glyukoza va laktat: o‘lim sababi",
+      "bullets": [
+        {
+          "text": "Tez yuzaga kelgan (bevaqt) o‘limda glyukoza miqdori uzoq davom etgan o‘limga nisbatan kamroq bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sababi: eritrotsitlarning glyukozaga ehtiyoji ko‘payadi va jigardagi zahira tez tugaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonni organizmning turli qismlaridan olib glyukoza va laktatni aniqlab, o‘lim sababi kasallik yoki tashqi ta’sir ekanligi aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Agoniyaning uzoq davom etishi qonda qand miqdorini 20-30 marta ko‘p bo‘lishiga olib keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: agoniya nima va u glyukozaga qanday ta’sir qiladi? Doskada: tez o‘lim va uzoq agoniyani solishtiring. Tipik xato: bitta ko‘rsatkichga tayanib xulosa chiqarish."
+    },
+    {
+      "title": "Ko‘z shishasimon tanasida glyukoza",
+      "bullets": [
+        {
+          "text": "Ko‘z shishasimon tanasida ham glyukoza miqdori aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qandli diabet holatida ham ko‘z shishasimon tanasida glyukoza miqdori ko‘p bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ko‘z shishasimon tanasi: glyukoza talqini",
+        "nodes": [],
+        "header": [
+          "Natija",
+          "Talqin"
+        ],
+        "rows": [
+          [
+            "Glyukoza yuqori",
+            "O‘lim oldi giperglikemiya (masalan, diabet)"
+          ],
+          [
+            "Glyukoza past yoki yo‘q",
+            "Talqin qilinmaydi: o‘limdan keyin pasayadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: diabet bu baholashga qanday xalaqit beradi? Doskada: shishasimon tana — glyukoza juftligi. Tipik xato: bitta biokimyoviy ko‘rsatkich asosida jinoyat turi haqida xulosa chiqarish — bu xulosa boshqa dalillar bilan birgalikda baholanadi. Kitobda: «glyukoza aniqlanmasa — suitsid, ko‘p bo‘lsa — boshqa shaxs tomonidan bo‘g‘ib o‘ldirilgan» (ilmiy asossiz) — slayddan olib tashlandi. Glyukoza o‘limdan keyin glikoliz tufayli pasayadi; yuqori qiymat faqat o‘lim oldi giperglikemiyani ko‘rsatadi, o‘lim turi (suitsid/qotillik) biokimyoviy ko‘rsatkich bilan aniqlanmaydi."
+    },
+    {
+      "title": "Immunotahlil: antigen va antitelo",
+      "bullets": [
+        {
+          "text": "Immunotahlil antigen va antitelo o‘rtasidagi maxsus ta’sirga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antigen — ifloslantiruvchi modda; antitelo — aynan aniqlanuvchi moddaga qarshi ishlab chiqarilgan oqsil.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asosida antigenning antitelo bilan maxsus va o‘ta sezgir immun reaksiyasi yotadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Immun reaksiya",
+        "nodes": [
+          "Antigen (aniqlanuvchi)",
+          "Maxsus antitelo",
+          "Kompleks AG-AT"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega reaksiya maxsus? Doskada: kalit-qulf o‘xshatishi. Tipik xato: antigenni faqat mikrob deb o‘ylash — kitobda aniqlanuvchi modda ham antigen."
+    },
+    {
+      "title": "Antitelo va antigenning ta’rifi",
+      "bullets": [
+        {
+          "text": "Antitelo — immunoglobulin sinfiga mansub oqsil; yot modda — antigenning organizmga kirishi natijasida immun tizimida himoya funksiyasi sifatida hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antigen — antitelolar ishlab chiqarishga olib keladigan modda.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immun tahlili zamonaviy tibbiyotning hamma sohasida tashxis qo‘yish va tahlillar o‘tkazish uchun qo‘llaniladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: antitelo qanday himoya vazifasini bajaradi? Doskada: Ig sinfi. Tipik xato: antitelo va antigenni almashtirish."
+    },
+    {
+      "title": "Immunotahlil imkoniyatlari",
+      "bullets": [
+        {
+          "text": "Usul gormonlar, fermentlar, neyropeptidlar, immun tizimi mahsulotlari, antigenlar va boshqalarni juda kam miqdorda aniqlashda katta ahamiyatga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hamma antitelo olish mumkin bo‘lgan mahsulot va moddalarni shu usullar yordamida aniqlash mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizm yot moddalar kirgach, ularni chiqarib yuborishga qaratilgan maxsus (spesifik) jarayonlarni boshlaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kam miqdorni aniqlashda immunotahlil afzal? Doskada: «sezgirlik» va «spesifiklik» atamalari. Tipik xato: immunotahlilni har qanday modda uchun tayyor deb o‘ylash — avval antitelo olinishi kerak."
+    },
+    {
+      "title": "Immun tizimi va immunogenlik",
+      "bullets": [
+        {
+          "text": "Organizmda yot moddalarni chiqarishga qaratilgan vazifalarni bajaruvchi tizim immun tizimi, jarayonlar esa immunologik jarayonlar deyiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eng zarur jarayon — maxsus qon oqsillari antitelolarning (immunoglobulin) hosil bo‘lishi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antigenlarning immun javob chaqirish xususiyati immunogenlik, antitelolar bilan kompleks hosil qilishi antigenlik deyiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antigenlarga toza yoki turli biologik tuzilishdagi (to‘qima, hujayra, viruslar) oqsillar, polisaxaridlar, nuklein kislotalar kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: immunogenlik va antigenlikning farqi. Doskada: ikki atamani qarama-qarshi yozing. Tipik xato: bu ikki atamani sinonim deb bilish."
+    },
+    {
+      "title": "Antitelolarni ishlab chiqarish",
+      "bullets": [
+        {
+          "text": "Antitelolar maxsus hujayralar — B-limfotsitlar tomonidan ishlab chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har bir B-limfotsit yuzasida har qanday yot antigenni aniqlaydigan 100.000 ga yaqin bir xil retseptor bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antigen mos B-limfotsitni tanlaydi (seleksiya); u bo‘linib, plazmatik klon hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Antitelo hosil bo‘lishi",
+        "nodes": [
+          "Antigen retseptorga tushadi",
+          "B-limfotsit seleksiyasi",
+          "Plazmatik klon hosil bo‘ladi",
+          "Antitelo ishlab chiqariladi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: klon nima va u nega bir xil antitelo beradi? Doskada: seleksiya sxemasi. Tipik xato: bitta B-limfotsit hamma antigenga javob beradi deb o‘ylash."
+    },
+    {
+      "title": "Poliklonli antitelolar",
+      "bullets": [
+        {
+          "text": "Plazmatik to‘qimaning har bir klonidan gomogen tuzilishli antitelo ishlab chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antigen qonda bir vaqtda ko‘p B-limfotsitlarni faollashtiradi; ular birlamchi antigenga nisbatan turli spesifiklikdagi retseptorlarni saqlaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunday immun javob va antitelolar poliklonli deb ataladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: poliklonli antitelo tahlil sezgirligiga qanday ta’sir qiladi? Doskada: bitta antigen — ko‘p klon. Tipik xato: poliklonli antitelolarni bitta klon mahsuli deb hisoblash."
+    },
+    {
+      "title": "Immunoglobulinlar",
+      "bullets": [
+        {
+          "text": "Immunoglobulinlar — oligosaxaridlar saqlovchi oqsillar (glikoproteidlar) sinfiga mansub.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antitelolarning xilma-xilligiga qaramasdan ular umumiy tuzilishga ega; shu asosiy faoliyatlarini ta’minlaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunoglobulinlar beshta asosiy sinfga bo‘linadi: IgA, IgD, IgE, IgG va IgM.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ig sinflari",
+        "nodes": [],
+        "header": [
+          "Sinf",
+          "Belgisi"
+        ],
+        "rows": [
+          [
+            "Immunoglobulin A",
+            "IgA"
+          ],
+          [
+            "Immunoglobulin D",
+            "IgD"
+          ],
+          [
+            "Immunoglobulin E, G, M",
+            "IgE, IgG, IgM"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega beshta sinf mavjud? Doskada: Ig belgilari. Tipik xato: IgG ni yagona immunoglobulin deb bilish."
+    },
+    {
+      "title": "Immun tahlilning mohiyati va nishonlash",
+      "bullets": [
+        {
+          "text": "Immun tahlil AG va AT o‘rtasidagi o‘zaro ta’sirga asoslanadi; bunda biror komponent (AG yoki AT) nishonlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nishon: ferment, radionuklid, fluoressent bo‘yoq va boshqalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiyani baholash maxsus avtomatlashtirilgan asbob-uskunada olib boriladi va standart holatga keltiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nishonsiz AG-AT reaksiyasi ko‘rinadimi? Doskada: nishon turi — usul nomi. Tipik xato: nishonlash va identifikatsiyani aralashtirish."
+    },
+    {
+      "title": "Immun tahlil turlari: IFT, RIA, immunofluoressent",
+      "bullets": [
+        {
+          "text": "Komponentga biriktirilgan nishon turiga va sinov sharoitiga qarab immun tahlil quyidagicha bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunoferment tahlil (IFT) — nishon ferment.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Radioimmun tahlil (RIA) — nishon radionuklid; immunofluoressent tahlil — nishon fluoressent bo‘yoq.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Immun tahlil",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Nishon"
+        ],
+        "rows": [
+          [
+            "IFT",
+            "Ferment"
+          ],
+          [
+            "RIA",
+            "Radionuklid"
+          ],
+          [
+            "Immunofluoressent",
+            "Fluoressent bo‘yoq"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usul laboratoriyada ko‘proq qo‘llaniladi va nima uchun? Doskada: uch usulning nishonlari. Tipik xato: RIA va IFT ni bir xil nishonli usul deb o‘ylash. Izoh: immunoxromatografik testlar (tez-testlar) kitoblarda alohida tavsiflanmagan; slaydga kiritilmadi."
+    },
+    {
+      "title": "Immunokimyoviy tahlilning ikki turi",
+      "bullets": [
+        {
+          "text": "Immunokimyoviy tahlilning ikki turi mavjud: to‘g‘ri va to‘g‘ri bo‘lmagan usullar.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘g‘ri usul: antitelolar qattiq fazaga o‘tkazilgan ferment nishonli antigenga biriktiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘g‘ri bo‘lmagan usul: antigen qattiq fazaga o‘tkaziladi, ferment nishonli ikkilamchi antitelo ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Ikki usul",
+        "nodes": [
+          "To‘g‘ri usul",
+          "Bosqichlar kam",
+          "To‘g‘ri bo‘lmagan usul",
+          "Ikkilamchi antitelo"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkilamchi antitelo nima uchun kerak? Doskada: ikki sxema. Tipik xato: usullar nomini bosqichlar soni bilan aralashtirish. Izoh: kitobdagi ta’rif qisqa, shu sababli bu yerda tavsiya darajasida berildi."
+    },
+    {
+      "title": "To‘g‘ri va to‘g‘ri bo‘lmagan usul: farqlar",
+      "bullets": [
+        {
+          "text": "To‘g‘ri usulning afzalligi — bosqichlarning kamligi va aniqlashni avtomatlashtirish imkoniyati.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamchiligi: ferment konyugatlari sintezi universal emas, sezgirligi past.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘g‘ri bo‘lmagan usulning afzalligi — fermentlarning katalitik xossalariga turli ta’sirlarning yo‘qligi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Usullar",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Xususiyat"
+        ],
+        "rows": [
+          [
+            "To‘g‘ri",
+            "Bosqich kam, sezgirlik past"
+          ],
+          [
+            "To‘g‘ri bo‘lmagan",
+            "Ferment faolligiga ta’sir yo‘q"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega to‘g‘ri usul sezgirligi past? Doskada: afzallik va kamchilik ustunlari. Tipik xato: to‘g‘ri usul har doim yaxshiroq deb o‘ylash."
+    },
+    {
+      "title": "Immunotahlilning umumiy afzallik va kamchiliklari",
+      "bullets": [
+        {
+          "text": "Afzalliklari: aniqlashlarning tezligi va soddaligi; ko‘plab tahlillarni avtomatlashtirish imkoniyati.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84-85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Namuna tayyorlashning oddiyligi; yuqori darajadagi aniqlik; murakkab va qimmatbaho asbob-uskunalar talab etilmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamchiligi: juda tor doiradagi spesifiklik va matritsa komponentlarining ta’siri.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: «tor doiradagi spesifiklik» skriningda nimani anglatadi? Doskada: afzallik/kamchilik jadvalini to‘ldiring. Tipik xato: skrining natijasini tasdiqlovchi usulsiz yakuniy deb hisoblash."
+    },
+    {
+      "title": "Giyohvand moddalar skriningida immunotahlil",
+      "bullets": [
+        {
+          "text": "Hozirgi davrda geroin gaz-suyuqlik xromatografiya, GX-MS va immunobiologik usullar yordamida aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "37"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Geroin yoki uning metabolitlari 6-monoasetilmorfin va morfin GX-MS va YuSSX-MS bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu moddalarning miqdori immunoferment tahlil usullarida ham aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "38"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega skriningdan keyin GX-MS bilan tasdiqlash kerak? Doskada: skrining -> tasdiqlash sxemasi. Tipik xato: immunotahlil natijasini ekspertiza xulosasi sifatida taqdim etish. Izoh: gmt 132-136 betlari 1,4-benzodiazepinlarga bag‘ishlangan va immunotahlil, RIA yoki cutoff tavsifini o‘z ichiga olmaydi."
+    },
+    {
+      "title": "Cutoff tushunchasi: skrining va tasdiqlash",
+      "bullets": [
+        {
+          "text": "Siydikda tipik ahamiyatli konsentratsiyalar (cutoff) skrining va tasdiqlovchi tekshiruvlar uchun alohida beriladi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skrining va tasdiqlovchi tekshiruvlar uchun aniqlanadigan modda va uning konsentratsiyasi alohida ko‘rsatiladi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Konsentratsiyalar ng/ml birligida berilgan (siydik namunasi uchun).",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: skrining cutoff si tasdiqlovchi cutoff dan nega farq qiladi? Doskada: skrining — tasdiqlash juftliklari. Tipik xato: cutoff dan past natijani «modda yo‘q» deb talqin qilish. Izoh: bu jadval malaka 107 faylidan (xorijiy ma’lumotnoma); O‘zbekistonda amaldagi me’yor emas, ma’lumot uchun."
+    },
+    {
+      "title": "Cutoff: amfetamin, barbiturat, benzodiazepin, kokain",
+      "bullets": [
+        {
+          "text": "Skrining konsentratsiyasi va tasdiqlanadigan modda bilan konsentratsiya (ng/ml).",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlar va benzodiazepinlar uchun skrining va tasdiqlash chegarasi bir xil: 200 ng/ml.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kokain: skrining 300, tasdiqlash — benzoilekgonin 150 ng/ml.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Cutoff, ng/ml",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Skrining",
+          "Tasdiqlash"
+        ],
+        "rows": [
+          [
+            "Amfetamin",
+            "1000",
+            "Amfetamin 500"
+          ],
+          [
+            "Barbituratlar",
+            "200",
+            "200"
+          ],
+          [
+            "Benzodiazepinlar",
+            "200",
+            "200"
+          ],
+          [
+            "Kokain",
+            "300",
+            "Benzoilekgonin 150"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kokain uchun tasdiqlanadigan modda nega benzoilekgonin? Doskada: jadvaldagi raqamlarni o‘qing. Tipik xato: mkg va ng ni aralashtirish."
+    },
+    {
+      "title": "Cutoff: kodein, geroin, marixuana, metadon",
+      "bullets": [
+        {
+          "text": "Kodein: skrining 300; tasdiqlash — kodein va morfin (300; 300) ng/ml.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Geroin: skrining 300; tasdiqlash — morfin 300 va 6-MAM 10 ng/ml.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marixuana: skrining 100; 50; 20; tasdiqlash — 11-nor-9-karboksi-TGK 15 ng/ml.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Cutoff, ng/ml",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Skrining",
+          "Tasdiqlash"
+        ],
+        "rows": [
+          [
+            "Kodein",
+            "300",
+            "Kodein, morfin 300; 300"
+          ],
+          [
+            "Geroin",
+            "300",
+            "Morfin 300; 6-MAM 10"
+          ],
+          [
+            "Marixuana",
+            "100; 50; 20",
+            "Karboksi-TGK 15"
+          ],
+          [
+            "Metadon",
+            "300",
+            "Metadon 300"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: geroin uchun 6-MAM chegarasi nega past (10 ng/ml)? Doskada: geroin tahlili — 6-MAM belgisi. Tipik xato: TGK ni metabolit bilan aralashtirish. Malaka 107 da «TGK*» deb belgilangan; tasdiqlovchi 15 ng/ml chegara TGK ning asosiy metaboliti — 11-nor-9-karboksi-TGK uchun (SAMHSA chegarasi)."
+    },
+    {
+      "title": "Cutoff: metamfetamin va fensiklidin",
+      "bullets": [
+        {
+          "text": "Metamfetamin: skrining 1000; tasdiqlash — metamfetamin 500; 200 ng/ml.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fensiklidin: skrining 25; tasdiqlash 25 ng/ml.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skrining va tasdiqlash chegaralari alohida beriladi; ikkalasi ham ng/ml da ko‘rsatilgan.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega skrining chegarasi ko‘pincha yuqoriroq? Doskada: 1000 va 500; 200 farqini ko‘rsating. Tipik xato: skrining chegarasidan past natijani manfiy deb e’lon qilish. Izoh: oxirgi band jadvaldan olingan umumiy xulosa."
+    },
+    {
+      "title": "Qon va siydikning sud-kimyoviy ahamiyati",
+      "bullets": [
+        {
+          "text": "Qon barcha sud-kimyoviy tekshiruvlarda birlamchi ahamiyatga ega.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qondagi ksenobiotik miqdorini baholash odamning holati yoki o‘lim sababi haqida xulosa chiqarishga imkon beradi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Siydik maxsus ahamiyatga ega: buyrak orqali chiqadigan ko‘p moddalar siydikda yuqori konsentratsiyada, o‘zgarmagan holda yoki metabolitlar ko‘rinishida topiladi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: skriningda nega ko‘pincha siydik, o‘limni baholashda esa qon tanlanadi? Doskada: qon — holat/sabab, siydik — yuqori konsentratsiya. Tipik xato: bitta ob’ekt natijasini ikkinchisiga bevosita ko‘chirish."
+    },
+    {
+      "title": "Siydikda aniqlanish muddatlari",
+      "bullets": [
+        {
+          "text": "Jadval bir martalik iste’moldan keyin siydikda musbat natija olish intervallarini ko‘rsatadi (CDRH, 1997).",
+          "source": {
+            "author": "Malaka materiali №042 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Siydikda giyohvand moddalarni aniqlash muddatlari (CDRH, 1997; ruscha ma’lumotnoma)",
+            "page": "jadval"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kannabinoidlar: 1-3 soatdan keyin topiladi; 1-7 kun davomida aniqlanadi.",
+          "source": {
+            "author": "Malaka materiali №042 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Siydikda giyohvand moddalarni aniqlash muddatlari (CDRH, 1997; ruscha ma’lumotnoma)",
+            "page": "jadval"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fensiklidin: 4-6 soatdan keyin topiladi; 7-14 kun davomida aniqlanadi.",
+          "source": {
+            "author": "Malaka materiali №042 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Siydikda giyohvand moddalarni aniqlash muddatlari (CDRH, 1997; ruscha ma’lumotnoma)",
+            "page": "jadval"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Siydikda aniqlash",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Topiladi",
+          "Davomiyligi"
+        ],
+        "rows": [
+          [
+            "Geroin",
+            "2-6 soat",
+            "24-72 soat"
+          ],
+          [
+            "Metamfetamin",
+            "4-6 soat",
+            "48-72 soat"
+          ],
+          [
+            "Kokain",
+            "2-6 soat",
+            "48-72 soat"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega aniqlanish muddati modda va iste’mol chastotasiga bog‘liq? Doskada: muddatlar jadvali. Tipik xato: muddatni kafolatlangan chegara deb hisoblash. Izoh: bu ma’lumotlar bir martalik iste’mol uchun; kitoblarda jadval yo‘q, faqat malaka 042."
+    },
+    {
+      "title": "TGK metabolizmi va chiqarilishi (1)",
+      "bullets": [
+        {
+          "text": "Kannabisni suiiste’mol qilishning eng keng tarqalgani — chekish; ba’zan og‘iz orqali ham iste’mol qilinadi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TGK organizmda keng metabolizmga uchraydi va siydik bilan o‘zgarmagan holda 1% dan kamrog‘i chiqariladi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Chekilganda dastlabki metabolizm o‘pkada, og‘iz orqali iste’mol qilinganda esa jigarda bo‘ladi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega siydikda TGK ning o‘zi emas, uning metaboliti aniqlanadi? Doskada: TGK -> 9-karboksi-TGK. Tipik xato: TGK ni o‘zgarmagan holda siydikda qidirish. Izoh: yuqoridagi ma’lumot UNODC (1993) usullar qo‘llanmasidan ruscha ma’lumotnoma orqali olingan."
+    },
+    {
+      "title": "TGK metabolizmi va chiqarilishi (2)",
+      "bullets": [
+        {
+          "text": "Chekishdan 72 soat o‘tgach, inhalyatsiya qilingan TGK ning taxminan 50% metabolit sifatida chiqariladi, qolgan 50% tanaga tarqalib, asosan yog‘ to‘qimasida yig‘iladi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Chiqarilish asosan siydik (25%) va najas (65%) orqali amalga oshiriladi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Plazmada TGK konsentratsiyasi tez kamayadi, lekin yarim chiqarilish davri uzun va odatda 20 soatdan ortiq.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tasodifiy iste’molchida metabolit 1-3 kun, surunkali chekuvchida esa oxirgi iste’moldan keyin bir hafta va undan ko‘p aniqlanadi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega yog‘ to‘qimasi TGK ni sekin chiqaradi? Doskada: 50% / 25% / 65% raqamlarini yozing. Tipik xato: surunkali iste’molchi va tasodifiy iste’molchi natijalarini bir xil talqin qilish."
+    },
+    {
+      "title": "Qo‘shimcha biologik ob’ektlar",
+      "bullets": [
+        {
+          "text": "O‘t suyuqligi bilan 1,4-benzodiazepin hosilalari, morfin va boshqa moddalar kengroq doirada chiqariladi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shishasimon tanada spirt va ko‘pchilik dori hamda giyohvand moddalarni aniqlash mumkin; oshqozon mazmuni to‘liq olinib saqlanishi kerak.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miya-orqa miya suyuqligi shishasimon tana mavjud bo‘lmaganda tanlov ob’ektlaridan biri; sochda moddalar to‘planib, takroriy iste’molni isbotlashga yoki inkor etishga yordam beradi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi ob’ekt uchun qanday modda mos? Doskada: ob’ekt — modda juftliklari. Tipik xato: faqat qon va siydikka tayanish."
+    },
+    {
+      "title": "Kitoblar va malaka ma’lumotlari: nima yoritilmagan",
+      "bullets": [
+        {
+          "text": "Dvssm kitobida immunokimyoviy usul nazariy asoslari (antigen, antitelo, IFT, RIA nomi, to‘g‘ri va to‘g‘ri bo‘lmagan usul) berilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83-85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gmt kitobida geroin va metabolitlari uchun immunobiologik hamda IFT usullari qisqa eslatilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "37-38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cutoff va siydikda aniqlanish muddatlari faqat malaka ma’lumotnomalarida mavjud.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun kitobda cutoff tushunchasi yo‘q? Doskada: manba — mavzu jadvali. Tipik xato: malaka jadvallarini O‘zbekistondagi rasmiy me’yor deb hisoblash. Izoh: immunoxromatografik tez-testlar va RIA ning amaliy bajarilishi kitoblarda tavsiflanmagan — ularni slaydga o‘zimiz qo‘shmadik."
+    },
+    {
+      "title": "Xulosa va nazorat savollari",
+      "bullets": [
+        {
+          "text": "Sud biokimyosi postmortal tahlil: qon, peshob, perikardial suyuqlik; avvalo glyukoza.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Immunotahlil antigen-antitelo reaksiyasiga asoslangan; nishon turiga qarab IFT, RIA, immunofluoressent.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "84"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Afzallik: tezlik, soddalik; kamchilik: tor spesifiklik va matritsa ta’siri.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skrining natijasi cutoff bilan taqqoslanadi, so‘ng tasdiqlovchi usul bilan tasdiqlanadi.",
+          "source": {
+            "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+            "page": "jadval va matn"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: skrining va tasdiqlashning mantiqiy ketma-ketligini ayting. Doskada: skrining -> tasdiqlash -> xulosa. Tipik xato: immunotahlilni yakuniy usul deb hisoblash."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Qondagi glyukoza o‘limdan keyin qanday o‘zgaradi?",
+      "options": [
+        "Pasayadi",
+        "Oshadi",
+        "O‘zgarmaydi",
+        "Yo‘qoladi"
+      ],
+      "correct_index": 0,
+      "explanation": "O‘limdan so‘ng eritrotsitlardagi anaerob glikoliz tufayli glyukoza pasayadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "83"
+      }
+    },
+    {
+      "question": "Tirik organizm qonida normal glyukoza miqdori qancha?",
+      "options": [
+        "3,3-5,5 mmol/l",
+        "33-55 mmol/l",
+        "0,3-0,5 mmol/l",
+        "13-15 mmol/l"
+      ],
+      "correct_index": 0,
+      "explanation": "Normal holatda 3,3-5,5 mmol/l, ovqatdan keyin 10 mmol/l gacha.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "83"
+      }
+    },
+    {
+      "question": "Antitelo qaysi sinfga mansub oqsil?",
+      "options": [
+        "Immunoglobulin",
+        "Gormon",
+        "Ferment",
+        "Polisaxarid"
+      ],
+      "correct_index": 0,
+      "explanation": "Antitelo — immunoglobulin sinfiga mansub oqsil.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "83"
+      }
+    },
+    {
+      "question": "Antitelolarni qaysi hujayralar ishlab chiqaradi?",
+      "options": [
+        "B-limfotsitlar",
+        "Eritrotsitlar",
+        "Trombotsitlar",
+        "Neytrofillar"
+      ],
+      "correct_index": 0,
+      "explanation": "Antitelolar B-limfotsitlar tomonidan ishlab chiqariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "question": "Immunoglobulinlarning asosiy sinflari soni nechta?",
+      "options": [
+        "Beshta",
+        "Uchta",
+        "Ikkita",
+        "O‘nta"
+      ],
+      "correct_index": 0,
+      "explanation": "IgA, IgD, IgE, IgG va IgM.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "question": "IFT tahlilida nishon sifatida nima qo‘llaniladi?",
+      "options": [
+        "Ferment",
+        "Radionuklid",
+        "Fluoressent bo‘yoq",
+        "Metall ioni"
+      ],
+      "correct_index": 0,
+      "explanation": "Immunoferment tahlilda nishon — ferment.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "question": "RIA tahlilida nishon sifatida nima qo‘llaniladi?",
+      "options": [
+        "Radionuklid",
+        "Ferment",
+        "Fluoressent bo‘yoq",
+        "Rangli indikator"
+      ],
+      "correct_index": 0,
+      "explanation": "Radioimmun tahlilda nishon — radionuklid.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "question": "Immunotahlilning kitobdagi asosiy kamchiligi qaysi?",
+      "options": [
+        "Tor doiradagi spesifiklik va matritsa ta’siri",
+        "Juda past sezgirlik",
+        "Murakkab va qimmat uskuna talabi",
+        "Namuna tayyorlashning murakkabligi"
+      ],
+      "correct_index": 0,
+      "explanation": "Kamchiligi — juda tor doiradagi spesifiklik va matritsa komponentlari ta’siri.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "85"
+      }
+    },
+    {
+      "question": "Malaka jadvaliga ko‘ra, geroin skriningi uchun cutoff qancha?",
+      "options": [
+        "300 ng/ml",
+        "10 ng/ml",
+        "1000 ng/ml",
+        "25 ng/ml"
+      ],
+      "correct_index": 0,
+      "explanation": "Geroin: skrining 300 ng/ml, tasdiqlash — morfin 300 va 6-MAM 10 ng/ml.",
+      "source": {
+        "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+        "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+        "page": "jadval"
+      }
+    },
+    {
+      "question": "TGK ning siydik va najas bilan chiqarilishi (malaka ma’lumotiga ko‘ra) qaysi nisbatda?",
+      "options": [
+        "Siydik 25%, najas 65%",
+        "Siydik 65%, najas 25%",
+        "Siydik 50%, najas 50%",
+        "Siydik 90%, najas 10%"
+      ],
+      "correct_index": 0,
+      "explanation": "Chiqarilish asosan siydik (25%) va najas (65%) orqali.",
+      "source": {
+        "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+        "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+        "page": "matn"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Ko‘z shishasimon tanada glyukoza topilishi yoki topilmasligi bilan o‘lim sharoitlari haqida kitobda xulosa keltirilgan, ammo qandli diabet holatida ham glyukoza ko‘p bo‘lishi mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "83"
+      }
+    },
+    {
+      "text": "Har bir B-limfotsit yuzasida yot antigenni aniqlaydigan 100.000 ga yaqin bir xil retseptor bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "text": "Immunoglobulinlar beshta sinfga bo‘linadi: IgA, IgD, IgE, IgG va IgM.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "text": "Geroin: skrining konsentratsiyasi 300 ng/ml, tasdiqlashda morfin uchun 300 va 6-MAM uchun 10 ng/ml.",
+      "source": {
+        "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+        "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+        "page": "jadval"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 83-85"
+    },
+    {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "year": null,
+      "pages": "b. 37-38"
+    },
+    {
+      "author": "Malaka materiali №042 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Siydikda giyohvand moddalarni aniqlash muddatlari (CDRH, 1997; ruscha ma’lumotnoma)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    },
+    {
+      "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    }
+  ]
+}

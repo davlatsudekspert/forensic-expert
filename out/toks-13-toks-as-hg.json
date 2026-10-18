@@ -1,0 +1,1449 @@
+{
+  "topic": "Mishyak va simob: mishyak (Marsh, Zanger-Blek), jigar va buyrakni destruksiyalash, simobni mis(I) yodid bilan aniqlash",
+  "slides": [
+    {
+      "title": "Ma’ruza rejasi va tayanch iboralar",
+      "bullets": [
+        {
+          "text": "Ma’ruza mavzusi: mineralizatda metall kationlarini (As, Hg) aniqlash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja: mishyak saqlovchi birikmalar va ularning toksikologik ahamiyati; mineralizatdan mishyakni ajratish va tahlil usullari.",
+          "source": {
+            "author": "Malaka materiali №006 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Mishyak elementini saqlovchi birikmalar, ularning toksikologik ahamiyati; mineralizatdan mishyakni tahlil usullari (2012)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob bo‘yicha reja: ishlatilishi, zaharlanish belgilari, ob’ektni destruksiyalash, destruktatdan simobni aniqlash, granozan.",
+          "source": {
+            "author": "Malaka materiali №018 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "13-ma’ruza: Simob va uning birikmalari; ob’ektni destruksiyalash; granozan (2011)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega mishyak va simob uchun mineralizatsiya usullari har xil? Doskada: «As — mineralizat, Hg — destruktat» farqi. Tipik xato: simobni ham mishyak kabi mineralizatda aniqlash mumkin deb o‘ylash."
+    },
+    {
+      "title": "Mishyak birikmalarining ishlatilishi",
+      "bullets": [
+        {
+          "text": "As2O3 (mishyak angidridi) tibbiyotda (stomatologiyada), qishloq xo‘jaligida insektitsid sifatida, oyna va teri ishlab chiqarishda ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Davidov preparati, Shveynfurt yoki Parij yashili yuqori samarali insektitsidlar hisoblanadi.",
+          "source": {
+            "author": "Malaka materiali №006 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Mishyak elementini saqlovchi birikmalar, ularning toksikologik ahamiyati; mineralizatdan mishyakni tahlil usullari (2012)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organik birikmalardan novarsenol, osarsol tibbiyotda qo‘llaniladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharli ta’sir etuvchi qurollar sifatida lyuizit, adamsit va AsH3 qo‘llanilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tibbiyotda ishlatiladigan mishyak preparatlariga nega ehtiyotkorlik bilan munosabatda bo‘lish kerak? Doskada: ishlatilish sohalari. Tipik xato: mishyak faqat zahar sifatida ishlatiladi deb o‘ylash. Izoh: kitobda insektitsid «Shveynfurt ko‘ki» deb yozilgan, 11-ma’ruzada va malakada u «Shveynfurt yashili» deyilgan — slaydda yashil berildi (kitobda ziddiyat)."
+    },
+    {
+      "title": "Mishyakning zaharli ta’siri",
+      "bullets": [
+        {
+          "text": "Besh valentli birikmalari organizmda kuchliroq zaharli uch valentli birikmalarga aylanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvda eruvchi birikmalari tez qondan shimilib, fermentlarning sulfgidril gruppalari bilan birikib, ular ishini buzadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natijada organizmda almashish jarayoni to‘xtaydi, kapillyarlar falajlanadi, nekrozlar hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega besh valentli mishyak organizmda uch valentliga aylanishi muhim? Doskada: As5+ -> As3+ strelkasi. Tipik xato: besh valentli birikmalarni zaharsiz deb hisoblash."
+    },
+    {
+      "title": "Mishyakning to‘planishi va chiqarilishi",
+      "bullets": [
+        {
+          "text": "Mishyak organizmda parenxima organlarida, suyak, teri va sochda to‘planadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmdan peshob, ichak va bezlar orqali chiqariladi; chiqish juda sekin boradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdada bir necha yildan so‘ng ham aniqlash mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega soch va tirnoq tahlili eskirgan zaharlanishda muhim? Doskada: to‘planish a’zolari. Tipik xato: murdada mishyak tez parchalanib yo‘qoladi deb o‘ylash."
+    },
+    {
+      "title": "Mishyak: o‘ldiruvchi doza va zaharlanish turlari",
+      "bullets": [
+        {
+          "text": "Oq mishyak (As2O3) ning letal dozasi 0,06 g dan 0,2 g gacha hisoblanadi.",
+          "source": {
+            "author": "Malaka materiali №006 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Mishyak elementini saqlovchi birikmalar, ularning toksikologik ahamiyati; mineralizatdan mishyakni tahlil usullari (2012)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mishyak birikmalari bilan zaharlanish holatlarining 50% o‘lim bilan tugaydi.",
+          "source": {
+            "author": "Malaka materiali №006 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Mishyak elementini saqlovchi birikmalar, ularning toksikologik ahamiyati; mineralizatdan mishyakni tahlil usullari (2012)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlanishning ikki turi: paralitik (ko‘p miqdorda tez so‘rilganda) va oshqozon-ichak orqali zaharlanish.",
+          "source": {
+            "author": "Malaka materiali №006 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Mishyak elementini saqlovchi birikmalar, ularning toksikologik ahamiyati; mineralizatdan mishyakni tahlil usullari (2012)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mishyakni sud-kimyo ob’ektlaridan aniqlash usulini 1836 yilda ingliz olimi Marsh topgan.",
+          "source": {
+            "author": "Malaka materiali №006 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Mishyak elementini saqlovchi birikmalar, ularning toksikologik ahamiyati; mineralizatdan mishyakni tahlil usullari (2012)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega paralitik zaharlanishda o‘lim tez kelishi mumkin? Doskada: ikki tur belgilari. Tipik xato: letal dozani aniq chegara deb hisoblash. Izoh: bu ma’lumotlar faqat malaka 006 faylidan; kitobda 50% o‘lim ham keltirilgan (toks 58)."
+    },
+    {
+      "title": "Mishyakni ajratish va tahlil sxemasi",
+      "bullets": [
+        {
+          "text": "Sulfat va nitrat kislotalari bilan mineralizatsiya mishyakning 40-60% ini ajratib olish imkonini beradi.",
+          "source": {
+            "author": "Malaka materiali №006 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Mishyak elementini saqlovchi birikmalar, ularning toksikologik ahamiyati; mineralizatdan mishyakni tahlil usullari (2012)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usullar: Zanger-Blek, kumush dietilditiokarbamat va Marsh reaksiyalari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75-76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zanger-Blek manfiy ahamiyatga ega: reaksiya chiqmasa tekshirish to‘xtatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Mishyak tahlili",
+        "nodes": [
+          "Mineralizat",
+          "Zanger-Blek (dastlabki)",
+          "Marsh reaksiyasi",
+          "Dog‘ni tekshirish",
+          "Miqdoriy aniqlash"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega avval Zanger-Blek, so‘ng Marsh? Doskada: sxemani strelka bilan chizing. Tipik xato: Zanger-Blek natijasini yakuniy tasdiq deb hisoblash — musbat bo‘lsa Marsh shart."
+    },
+    {
+      "title": "Zanger-Blek reaksiyasining mohiyati",
+      "bullets": [
+        {
+          "text": "As birikmalari AsH3 gacha qaytarilib, simob xlorid/bromidli qog‘ozga ta’sir ettiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qaytarilish ajralib chiqayotgan vodorod hisobiga ketadi; reaksiyani tezlashtirish uchun rux mislanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "5 valentli As qiyin qaytariladi, shuning uchun Fe(II) va Sn(II) ishtirokida olib boriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "AsH3 hosil bo‘lishi",
+        "nodes": [
+          "Zn + H2SO4 -> ZnSO4 + 2H",
+          "As birikmalari + H -> AsH3",
+          "AsH3 + HgBr2 -> sariq dog‘"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ruxni mislash reaksiyani nima uchun tezlashtiradi? Doskada: AsO2- + 7H -> AsH3 + 2H2O. Tipik xato: As5+ ni qaytarish uchun qalay(II) kerakligini unutish. Izoh: kitobda ikkinchi qatorda «Zn + N2SO4» yozuv xatosi bor (H2SO4)."
+    },
+    {
+      "title": "Zanger-Blek: ish tartibi",
+      "bullets": [
+        {
+          "text": "Asbob kolbasiga 2 ml mineralizat, 10 ml 4 n H2SO4, 5 ml suv, 1 ml 10% SnCl2 (50% H2SO4 dagi eritma) solinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2 g mislangan rux bo‘lakchalari solinib, qo‘rg‘oshin atsetat shimdirilgan paxta va simob bromidi shimdirilgan filtr qog‘ozi osilgan maxsus tiqin bilan yopiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Margimush bo‘lsa sariq-qo‘ng‘ir dog‘ hosil bo‘ladi; aniqroq ko‘rish uchun filtr qog‘ozi 3% KI eritmasiga tushiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: paxtadagi qo‘rg‘oshin atsetat nimaga kerak? Doskada: asbob qismlari. Tipik xato: paxtani ho‘l qoldirish. Izoh: paxta H2S ni ushlaydi (H2SO4 + 8H -> H2S + 4H2O; H2S + Pb(CH3COO)2 -> PbS), kitobning 76-betida tenglama berilgan."
+    },
+    {
+      "title": "Zanger-Blek: dog‘ hosil bo‘lishi va H2S",
+      "bullets": [
+        {
+          "text": "AsH3 HgCl2 (HgBr2) bilan bosqichma-bosqich reaksiyaga kirib, qog‘ozda sariq yoki jigarrang dog‘ beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yakuniy mahsulot As2Hg3 deb yozilgan; KI qo‘shilganda HgCl2 + 2KI -> HgI2 + 2KCl, HgI2 + 2KI -> K2[HgI4].",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "H2SO4 dan hosil bo‘lgan H2S (H2SO4 + 8H -> H2S + 4H2O) qo‘rg‘oshin atsetatli paxtada PbS holida ushlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: dog‘ni KI nima uchun aniqroq qiladi? Doskada: AsH3 + HgBr2 bosqichlarini yozing. Tipik xato: H2S ni arsin deb adashtirish. Kitobda: «HgCl2 + 2KI → HgI2» (KCl tushib qolgan) — tenglashtirildi."
+    },
+    {
+      "title": "Kumush dietilditiokarbamat bilan reaksiya",
+      "bullets": [
+        {
+          "text": "Kolbaga 2 g kuprlangan rux solinadi; tomchilagichli voronkaga 10 ml mineralizat, 5 ml suv, 1 ml 10% SnCl2 solinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gaz chiqaruvchi naychaning egik uchi kumush dietilditiokarbamatning piridindagi eritmasiga tushiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hosil bo‘lgan AsH3 kumush dietilditiokarbamati bilan qizil yoki pushti rang hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: bu usulning Zanger-Blek usulidan afzalligi nima? Doskada: reaksiya natijasi — qizil/pushti rang. Tipik xato: reaksiyani suvli muhitda o‘tkazish — kitobda piridindagi eritma."
+    },
+    {
+      "title": "Marsh reaksiyasi: uch bosqich va asbob",
+      "bullets": [
+        {
+          "text": "Margimush uchuvchan AsH3 ga o‘tkaziladi; qizdirilganda trubkada dog‘ hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uch bosqich: reaktivlar tozaligi, mineralizatdan aniqlash, dog‘ haqiqiyligi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asbob: 150 ml kolba, tomchilovchi voronka, xlorkaltsiyli trubka, Marsh trubkasi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Marsh bosqichlari",
+        "nodes": [
+          "Reaktivlar tozaligi",
+          "Mineralizatda As aniqlanishi",
+          "Dog‘ haqiqiyligi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun avval reaktivlar tekshiriladi? Doskada: Marsh asbobi rasmi. Tipik xato: reaktivlar tozaligini tekshirmay mineralizatni solish."
+    },
+    {
+      "title": "Marsh: reaktivlar tozaligini tekshirish",
+      "bullets": [
+        {
+          "text": "Kolbaga 10 g mislangan rux, xlorkaltsiyli trubkaga suvsizlantirilgan kaltsiy xlorid joylanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Voronkaga 30 ml 10% H2SO4 solinib, mislangan rux saqlagan kolbaga tomchilab qo‘shiladi; voronkada doim 3-4 ml qoldirilishi kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Trubka uchidan chiqayotgan vodorod yoqilganda alanga ko‘k rangga bo‘yalmasligi kerak; trubka qizdirilganda yaltiragan qora dog‘ hosil bo‘lsa, reaktiv yaroqsiz.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun trubkaga havo kirmasligi kerak? Doskada: portlash xavfi. Tipik xato: voronkadagi kislotani to‘liq quyib yuborish — havo kirib qoladi va qizdirishda portlash mumkin."
+    },
+    {
+      "title": "Marsh: mineralizat tahlili",
+      "bullets": [
+        {
+          "text": "Marsh kolbasidagi 10 g mislangan ruxga voronkadan 30 ml 4 n H2SO4 oz-ozdan qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kolbaga 20 ml mineralizat va 2 ml 10% SnCl2 ning 50% H2SO4 dagi eritmasi qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Trubkaning kengaytirilgan qismi qizdiriladi, tor qismi nam dokali fitil bilan sovitiladi; 20-30 daqiqadan so‘ng mishyak borligi tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun tor qism sovitiladi? Doskada: trubkaning qizdiriladigan va sovitiladigan qismlari. Tipik xato: fitilni quritib yuborish. Izoh: kitobdagi reaktivlar tozaligi bo‘limida «har 24-50 daqiqada» kabi noaniq ibora bor, slaydga kiritilmadi."
+    },
+    {
+      "title": "Marsh dog‘ining belgilari",
+      "bullets": [
+        {
+          "text": "Trubkada yaltiroq dog‘ hosil bo‘ladi; alanga ko‘k rangga bo‘yaladi; sarimsoq piyoz hidi (AsH3) keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yonayotgan alanga chinni idishga tekkizilsa, qo‘ng‘ir-kul rang dog‘ hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Naycha uchi AgNO3 ning ammiakdagi eritmasiga tushirilganda kumushning qaytarilishi kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Marsh belgilari",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Trubkada",
+            "Yaltiroq dog‘"
+          ],
+          [
+            "Alanga",
+            "Ko‘k rang"
+          ],
+          [
+            "Hid",
+            "Sarimsoq piyoz (AsH3)"
+          ],
+          [
+            "Chinni idish",
+            "Qo‘ng‘ir-kul rang dog‘"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun belgilar yig‘indisi talab qilinadi? Doskada: besh belgini raqamlang. Tipik xato: bitta belgiga (hidga) tayanish."
+    },
+    {
+      "title": "Marsh dog‘i haqiqiyligi: mishyak va surma",
+      "bullets": [
+        {
+          "text": "Havoda qizdirilsa: mishyak oktaedr kristallar, surma amorf cho‘kma beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dog‘ NaOCl eritmasida eritilsa, margimush eriydi, surma erimaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "HNO3 da eritilgan qoldiqqa 5 n HCl va CsCl: surma rangsiz ko‘pqirrali kristall beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "As va Sb dog‘i",
+        "nodes": [],
+        "header": [
+          "Sinov",
+          "As",
+          "Sb"
+        ],
+        "rows": [
+          [
+            "Oksidlanish",
+            "Oktaedr",
+            "Amorf"
+          ],
+          [
+            "NaOCl",
+            "Eriydi",
+            "Erimaydi"
+          ],
+          [
+            "CsCl, 5 n HCl",
+            "Bermaydi",
+            "Ko‘pqirrali"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega mishyak va surmani farqlash shart? Doskada: ikki ustunli jadval. Tipik xato: faqat yaltiroq dog‘ni mishyakka xos deb hisoblash. Izoh: kitobda dog‘ tavsifidagi \"C\" va \"S\" dog‘lari ibora tushunarsiz ko‘rinadi, slaydga kiritilmadi."
+    },
+    {
+      "title": "Mishyakni miqdoriy aniqlash",
+      "bullets": [
+        {
+          "text": "Argentometrik usul: hosil bo‘lgan AsH3 AgNO3 ning ammiakdagi eritmasidan o‘tkaziladi, ortiqcha AgNO3 temir-ammoniy sulfat indikatorida NH4CNS bilan titrlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zanger-Blek reaksiyasi asosida kolorimetrik solishtirib aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "AsH3 kumush dietilditiokarbamatning piridindagi eritmasidan o‘tkazilib, hosil bo‘lgan qizil-pushti rang kolorimetrik aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: argentometrik titrlashda qizil rang qaysi birikmadan? Doskada: AgNO3 + NH4CNS titrlash sxemasi. Tipik xato: titrlash oxirini kumush xloriddan kutish — qizil rang Fe(CNS)3 dan."
+    },
+    {
+      "title": "Simob va uning birikmalarining ishlatilishi",
+      "bullets": [
+        {
+          "text": "Simob va birikmalari texnikada, kimyo sanoatida, qishloq xo‘jaligida, tibbiyotda qo‘llaniladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metall holda tibbiyotda surtma dorilar tayyorlashda, termometr va asboblarda ishlatiladi; metall holda simob kam zaharli.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "HgCl2 (sulema) dezinfeksiyalovchi modda va reaktiv sifatida qo‘llaniladi; ayniqsa sulema kuchli ta’sirga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simobning organik birikmalari — granozan pestitsid sifatida ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega metall simob kam zaharli, tuzlari esa zaharli? Doskada: metall — tuz — organik birikma. Tipik xato: barcha simob birikmalarini bir xil zaharli deb hisoblash. Izoh: kitobdagi sariq/qizil simob oksidi haqidagi gap (oksidlanish darajalari) noaniq yozilgan, slaydga kiritilmadi."
+    },
+    {
+      "title": "Simob bilan zaharlanish",
+      "bullets": [
+        {
+          "text": "Simob chang holda nafas bilan kirib, eng avval bosh miya po‘stlog‘ini zararlaydi; sulfgidril guruhlari bilan birikib fiziologik funksiyalarni buzadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ovqat bilan tushgan simob birikmalari oshqozon, jigar, buyrak va turli funksional bezlarni zararlaydi; a’zolarda qon quyiladi, qonli ich ketadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob jigar va buyrakda yig‘iladi; surunkali zaharlanishda buyrak kasalligi sodir bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmdan sekin: asosan peshob, axlat, teri, so‘lak va sut bezlari orqali chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "77"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: simob bug‘i bilan ovqat orqali zaharlanishning farqi. Doskada: kirish yo‘li — zararlanuvchi a’zo juftliklari. Tipik xato: simobni faqat buyrak orqali chiqadi deb o‘ylash."
+    },
+    {
+      "title": "Simob: klinik ko‘rinish",
+      "bullets": [
+        {
+          "text": "Oshqozonda qattiq og‘riq, ko‘ngil aynish, qusish, og‘izda metall ta’m va oq dog‘ paydo bo‘ladi, ba’zan ich ketadi.",
+          "source": {
+            "author": "Malaka materiali №018 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "13-ma’ruza: Simob va uning birikmalari; ob’ektni destruksiyalash; granozan (2011)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Peshob qon aralash ajrala boshlaydi, buyrak tez ishdan chiqadi; vaqt o‘tishi bilan yurak faoliyati susayadi.",
+          "source": {
+            "author": "Malaka materiali №018 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "13-ma’ruza: Simob va uning birikmalari; ob’ektni destruksiyalash; granozan (2011)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murda yorilganda simob uchun, ayniqsa, buyraklarda sulema nefrozi yaqqol ko‘rinadi.",
+          "source": {
+            "author": "Malaka materiali №018 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "13-ma’ruza: Simob va uning birikmalari; ob’ektni destruksiyalash; granozan (2011)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sulema nefrozi nimani anglatadi? Doskada: buyrak belgilari. Tipik xato: oshqozon belgilarini yagona diagnostik belgi deb bilish. Izoh: bu ma’lumotlar malaka 018 faylidan; kitobda patologik ko‘rinish batafsil berilmagan."
+    },
+    {
+      "title": "Simob mineralizatsiyada yo‘qoladi: destruksiya",
+      "bullets": [
+        {
+          "text": "Simob birikmalari bilan zaharlanganda ashyoni quruq va ho‘l usullarda mineralizatsiyalashda simob deyarli hammasi yo‘qoladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuning uchun simobni aniqlash maqsadida ob’ektni destruksiyalash usuli tavsiya etilgan (Vasileva usuli).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruksiya — nitrat, sulfat kislota va boshqa oksidlovchilar yordamida ob’ektni chala kuydirish yoki bog‘lovchi to‘qimalarni parchalash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: simob nega mineralizatsiyada uchib ketadi? Doskada: mineralizatsiya va destruksiyani solishtiring. Tipik xato: destruksiyani to‘liq mineralizatsiya deb hisoblash — peptid bog‘lari saqlanadi."
+    },
+    {
+      "title": "Destruktat tarkibi va ortiqcha HNO3 ni yo‘qotish",
+      "bullets": [
+        {
+          "text": "Simob sulfgidril guruhlari bilan birikkan; yuzaki oksidlashda noorganik holatga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruktatda simob ionlari oqsil, peptid, aminokislota, lipidlar bilan aralash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tezlashtirish uchun oz etil spirti qo‘shiladi; ortiqcha HNO3 mochevina bilan yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Mochevina bilan neytral",
+        "nodes": [
+          "Ortiqcha HNO3 / HNO2",
+          "+ to‘yingan mochevina",
+          "N2 + CO2 + H2O ajraladi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: spirt nima uchun katalizator hisoblanadi? Doskada: 2HNO2 + CO(NH2)2 -> 2N2 + CO2 + 3H2O. Tipik xato: mochevinani qo‘shmaslik — oksidlovchilar CuI reaksiyasiga halaqit beradi."
+    },
+    {
+      "title": "Jigar va buyrakni destruksiyalash",
+      "bullets": [
+        {
+          "text": "Alohida-alohida 20 g jigar va buyrak olinadi; maydalangan organ ustiga kolbada 5 ml suv, 1 ml etil spirti va 10 ml kons. HNO3, so‘ng tomchilab 10 ml kons. H2SO4 qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislota qo‘shilgach 5-10 daqiqa uy haroratida va 10-20 daqiqa qaynayotgan suv hammomida qizdiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya tezlashib ketsa kolbaga 20-30 ml qaynoq suv qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruktat qaynoqligicha filtrlanadi, qoldiq issiq suv bilan yuviladi, 20 ml mochevina eritmasi qo‘shiladi va aniq hajmgacha suyultiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: azot oksidlari tashqariga chiqmasligi nega muhim? Doskada: bosqichlarni raqamlang. Tipik xato: jigar va buyrakni aralashtirib destruksiyalash — kitobda alohida-alohida olinadi."
+    },
+    {
+      "title": "Peshob va qondan simobni aniqlash",
+      "bullets": [
+        {
+          "text": "Simob buyrak orqali peshob bilan chiqadi; A.F. Rubtsov va A.N. Krilova ikki xil usul tavsiya etgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1-usul: Keldal kolbasida 200 ml peshobga 35 ml kons. HNO3 va 2 ml etil spirti, so‘ng 25 ml kons. H2SO4; 40 daqiqa suv hammomida, 20 ml to‘yingan tiomochevina qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-usul: 200 ml peshobga 25 ml kons. H2SO4 va 7 g KMnO4 qo‘shilib 40 daqiqa aralashtiriladi; rang yo‘qolguncha to‘yingan oksalat kislota qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qondan simob jigar va buyrak kabi aniqlanadi, faqat suv qo‘shilmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ikki usulning asosiy farqi nima? Doskada: oksidlovchilar — HNO3/H2SO4 va KMnO4. Tipik xato: peshobni filtrlab olish — kitobda filtrlanmagan peshob."
+    },
+    {
+      "title": "Simobni ditizon bilan aniqlash",
+      "bullets": [
+        {
+          "text": "Destruktat yarmiga ajratgich voronkasida 10 ml xloroform qo‘shilib 1 daqiqa chayqatiladi, qatlam tashlanadi; oxirgi porsiya rangsiz bo‘lguncha takrorlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tozalangan destruktatga 10 ml 10% askorbin kislota, 5 ml xloroform va 0,3 ml 0,01% ditizon xloroformli eritmasi qo‘shib chayqatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform qatlami sariq-zarg‘aldoq rang hosil qilsa, simob borligidan dalolat beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: askorbin kislotaning vazifasi nima? Doskada: Hg2+ + 2 ditizon -> simob ditizonat. Tipik xato: xloroform bilan dastlabki tozalashni o‘tkazib yuborish."
+    },
+    {
+      "title": "Simobni CuI osilmasi bilan aniqlash",
+      "bullets": [
+        {
+          "text": "10 ml CuI osilmasi qo‘shilganda qizil-zarg‘aldoq cho‘kma: Hg2+ + 4CuI -> Cu2[HgI4] + 2Cu+.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiyaga oksidlovchilar halaqit beradi, chunki CuI dan erkin I2 ajralib chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miqdori: ditizonat holida fotokolorimetrik, Cu2[HgI4] holida kolorimetrik usulda aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Hg2+ + CuI",
+        "nodes": [
+          "Destruktat + CuI osilmasi",
+          "Cu2[HgI4] cho‘kmasi",
+          "Qizil-zarg‘aldoq rang"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: oksidlovchilar CuI reaksiyasiga qanday halaqit beradi? Doskada: 2CuI + O2 + 4H+ -> I2 + 2Cu2+ + 2H2O. Tipik xato: destruktatdagi oksidlovchilarni yo‘qotmasdan reaksiya o‘tkazish."
+    },
+    {
+      "title": "Granozan va uning ta’siri",
+      "bullets": [
+        {
+          "text": "Granozan — 2% etilmerkurxlorid, rang, mineral kislota va talkdan iborat aralashma; tarkibiga qarab merkuzan va merkurgeksan nomi bilan ham chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharli ximikat sifatida chigit va urug‘larni ekishdan oldin dorilashda qo‘llaniladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri orqali shimilib ta’sir ko‘rsatadi, organizmda yig‘iladi; eritrotsitlarni keskin kamaytiradi, jigar faoliyatini buzadi, terini yallig‘lantiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etilmerkurxlorid 192°C da suyuqlanuvchi oq kristall; suvda kam, issiq etil spirti, aseton va ishqorda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: teri orqali shimilish nima uchun xavfli? Doskada: C2H5-Hg-Cl formulasi. Tipik xato: granozanni oddiy simob tuzi deb hisoblash — organik birikma."
+    },
+    {
+      "title": "Granozanni ob’ektdan ajratish",
+      "bullets": [
+        {
+          "text": "Murda a’zolari va o‘simlik qismlari 2 marta 3 n HCl bilan 30-60 daqiqa bo‘ktiriladi; suyuqlik 2 marta xloroform bilan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "80"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Peshob kons. HCl bilan nordonlashtiriladi, 30 daqiqadan so‘ng xloroform bilan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "80"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonga avval ishqor qo‘shib 10 daqiqa suv hammomida qizdiriladi, tiniq suyuqlikka HCl qo‘shiladi, 15 daqiqa aralashtirilib sentrifugalanadi va xloroform bilan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "80"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qonga avval ishqor qo‘shiladi? Doskada: ob’ekt — ajratish usuli jadvali. Tipik xato: peshobni nordonlashtirmasdan ekstraksiya qilish."
+    },
+    {
+      "title": "Granozanni aniqlash",
+      "bullets": [
+        {
+          "text": "Mis sim bilan: metall mis etilmerkurxloriddan simobni siqib chiqaradi; kumush rang qoplama yodning KI dagi eritmasida eritilib Cu2HgI4 holida aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "80"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: ajralmaga atsetat bufer (pH = 4,5), suv va ditizon qo‘shilib sariq ditizonat xloroformga o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "80"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qoldiq 0,5-1 ml xloroformda eritilib plastinkaga nuqta qilib tomiziladi; n-geptan-xloroform (2:5) tizimida sariq dog‘ Rf bo‘yicha aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "80"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: belgilovchi sifatida nega toza etilmerkurxlorid ditizonati ishlatiladi? Doskada: Rf ni hisoblash formulasi. Tipik xato: Rf ni boshqa tizimda solishtirish — tizim bir xil bo‘lishi shart."
+    },
+    {
+      "title": "Mishyak va simobni solishtirish",
+      "bullets": [
+        {
+          "text": "Mishyak mineralizatdan AsH3 holida aniqlanadi (Zanger-Blek, Marsh).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75-76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob mineralizatsiyada yo‘qolgani uchun destruktatdan ditizon va CuI bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78-79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organik simob (granozan) HCl bilan bo‘ktirilib xloroformga ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "80"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Taqqoslash",
+        "nodes": [],
+        "header": [
+          "Element",
+          "Ob’ekt",
+          "Usul"
+        ],
+        "rows": [
+          [
+            "As",
+            "Mineralizat",
+            "Zanger-Blek, Marsh"
+          ],
+          [
+            "Hg",
+            "Destruktat",
+            "Ditizon, CuI"
+          ],
+          [
+            "Etil-Hg (granozan)",
+            "HCl + CHCl3",
+            "Mis sim, YuQX"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ob’ektni tayyorlash usuli nega elementga bog‘liq? Doskada: jadvalni to‘ldiring. Tipik xato: simobni mineralizatda qidirish."
+    },
+    {
+      "title": "Xulosa va nazorat savollari",
+      "bullets": [
+        {
+          "text": "Mishyak AsH3 holida Zanger-Blek (dastlabki), so‘ng Marsh reaksiyasi bilan aniqlanadi; dog‘ haqiqiyligi tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75-77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob uchun jigar va buyrak ayrim-ayrim destruksiyalanadi, ortiqcha HNO3 mochevina bilan yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob ditizon va CuI osilmasi bilan aniqlanadi; granozan xloroformga ekstraksiyalanib YuQX da tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "79-80"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nazorat: Marsh bosqichlari, dog‘ni mishyak/surma bo‘yicha farqlash, destruksiya mohiyati.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "76-78"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: mishyak va simob tahlilidagi asosiy farqni ayting. Doskada: ikki zanjirni yonma-yon yozing. Tipik xato: Marsh bosqichlarini yodlab, belgilarni tushunmaslik."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Zanger-Blek reaksiyasida mishyak nimaga qaytariladi?",
+      "options": [
+        "AsH3 (arsin)",
+        "As2O3",
+        "H3AsO4",
+        "As2S3"
+      ],
+      "correct_index": 0,
+      "explanation": "Mishyak birikmalari arsin AsH3 gacha qaytariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "75"
+      }
+    },
+    {
+      "question": "Zanger-Blek reaksiyasida mishyak bo‘lsa filtr qog‘ozida qanday dog‘ hosil bo‘ladi?",
+      "options": [
+        "Sariq-qo‘ng‘ir",
+        "Ko‘k",
+        "Qora",
+        "Rangsiz"
+      ],
+      "correct_index": 0,
+      "explanation": "Simob bromidli qog‘ozda sariq-qo‘ng‘ir dog‘ hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "75"
+      }
+    },
+    {
+      "question": "Marsh usulining bosqichlari nechta?",
+      "options": [
+        "Uchta",
+        "Ikkita",
+        "To‘rtta",
+        "Beshta"
+      ],
+      "correct_index": 0,
+      "explanation": "Reaktivlar tozaligi, mineralizatdan aniqlash va dog‘ haqiqiyligini tekshirish.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "76"
+      }
+    },
+    {
+      "question": "Marsh dog‘ini NaOCl eritmasida eritganda nima kuzatiladi?",
+      "options": [
+        "Margimush eriydi, surma erimaydi",
+        "Surma eriydi, margimush erimaydi",
+        "Ikkalasi ham eriydi",
+        "Ikkalasi ham erimaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "Margimush NaOCl da eriydi, surma erimaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "77"
+      }
+    },
+    {
+      "question": "Simobni aniqlash uchun ob’ekt nima uchun destruksiyalanadi?",
+      "options": [
+        "Mineralizatsiyada simob deyarli yo‘qoladi",
+        "Mineralizatsiya juda qimmat",
+        "Simob ob’ektda bo‘lmaydi",
+        "Destruksiya tezroq"
+      ],
+      "correct_index": 0,
+      "explanation": "Quruq va ho‘l mineralizatsiyada simob deyarli hammasi yo‘qoladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "78"
+      }
+    },
+    {
+      "question": "Destruktatdan ortiqcha HNO3 qanday yo‘qotiladi?",
+      "options": [
+        "To‘yingan mochevina qo‘shib",
+        "Qaynatib",
+        "NaCl bilan",
+        "Suyultirib"
+      ],
+      "correct_index": 0,
+      "explanation": "Ortiqcha HNO3 mochevina qo‘shib yo‘qotiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "78"
+      }
+    },
+    {
+      "question": "Jigar va buyrakni destruksiyalash uchun odatda qancha miqdor olinadi?",
+      "options": [
+        "Ayrim-ayrim 20 g",
+        "Birgalikda 5 g",
+        "100 g",
+        "Ayrim-ayrim 1 g"
+      ],
+      "correct_index": 0,
+      "explanation": "Ayrim-ayrim 20 g jigar va buyrak olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "78"
+      }
+    },
+    {
+      "question": "Simob ditizon bilan xloroform qatlamini qanday rangga bo‘yaydi?",
+      "options": [
+        "Sariq-zarg‘aldoq",
+        "Qizil",
+        "Yashil",
+        "Ko‘k"
+      ],
+      "correct_index": 0,
+      "explanation": "Xloroform qatlami sariq-zarg‘aldoq rang hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "79"
+      }
+    },
+    {
+      "question": "CuI osilmasi bilan simob qanday cho‘kma beradi?",
+      "options": [
+        "Qizil-zarg‘aldoq Cu2[HgI4]",
+        "Oq",
+        "Qora",
+        "Yashil"
+      ],
+      "correct_index": 0,
+      "explanation": "Hg2+ + 4CuI -> Cu2[HgI4] + 2Cu+ qizil-zarg‘aldoq cho‘kma.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "79"
+      }
+    },
+    {
+      "question": "Granozanda etilmerkurxlorid foizi qancha?",
+      "options": [
+        "2%",
+        "20%",
+        "0,2%",
+        "50%"
+      ],
+      "correct_index": 0,
+      "explanation": "Granozan — 2% etilmerkurxlorid saqlovchi aralashma.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "79"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Zanger-Blek reaksiyasi manfiy sud-kimyo ahamiyatiga ega: manfiy natijada mishyak uchun keyingi tekshiruv to‘xtatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "76"
+      }
+    },
+    {
+      "text": "Marsh usulida trubkaga havo kirsa, qizdirilganda asbob portlashi mumkin — shuning uchun voronkada doim 3-4 ml kislota qoldiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "76"
+      }
+    },
+    {
+      "text": "Simob sulfgidril guruhlari bilan birikkan holda bo‘lgani uchun yuzaki oksidlash (destruksiya) uni noorganik holatga o‘tkazish uchun yetarli.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "78"
+      }
+    },
+    {
+      "text": "Granozan teri orqali shimilib, organizmda yig‘iladi va qondagi eritrotsitlar sonini keskin kamaytiradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "79"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 75-80"
+    },
+    {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 75"
+    },
+    {
+      "author": "Malaka materiali №006 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Mishyak elementini saqlovchi birikmalar, ularning toksikologik ahamiyati; mineralizatdan mishyakni tahlil usullari (2012)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    },
+    {
+      "author": "Malaka materiali №018 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "13-ma’ruza: Simob va uning birikmalari; ob’ektni destruksiyalash; granozan (2011)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    }
+  ]
+}

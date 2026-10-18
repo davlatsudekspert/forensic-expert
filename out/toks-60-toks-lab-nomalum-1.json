@@ -1,0 +1,1115 @@
+{
+  "topic": "Noma’lum ob’ektni tahlil qilish (uchuvchi va metall zaharlar); ekspertiza dalolatnomasini yozish va himoyalash",
+  "slides": [
+    {
+      "title": "Mashg‘ulot maqsadi va rejasi",
+      "bullets": [
+        {
+          "text": "Maqsad: talabalarni sud-kimyo ekspertizasi, uning o‘ziga xosligi, kimyo-toksikologik tekshiruv rejasi va ekspert-kimyogarlar vazifasi bilan tanishtirish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja: 1) sud-kimyosi tekshiruv dalolatnomasi; 2) kimyo-toksikologik ekspertiza.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dvssm majmuasida mashg‘ulot «Ekspertiza dalolatnomasini yozish va himoyalash» deb nomlangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "226"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun dalolatnoma ekspert ishining yakuniy hujjati? Doskada: reja (2 band). Tipik xato: mashg‘ulotni faqat ’yozuv ishi’ deb tushunish; avval tahlil rejasi tuziladi. Eslatma: kitoblar dalolatnomani ’himoyalash’ tartibini bermaydi; himoya uchun 14-keys va nazorat topshiriqlari ishlatiladi."
+    },
+    {
+      "title": "Kutilayotgan natijalar va jihozlar",
+      "bullets": [
+        {
+          "text": "Natija: sud-kimyosi ekspertizasi, byurosi, xodimlar haqida ma’lumotga ega bo‘ladi; tekshiruv akti va kimyo-toksikologik ekspertiza haqida bilim oladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zarur vositalar: destruktat, filtr qog‘ozi, voronka, reaktivlar, probirkalar, ko‘rgazmali materiallar, skotch, qog‘oz.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Laboratoriya jihozlari: maxsus laboratoriya vositalari bilan jihozlangan xona.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: destruktat nima uchun ro‘yxatda? (Metall zaharlar tahlili uchun mineralizat/destruktat misol sifatida.) Doskada: jihozlar. Tipik xato: kitob ro‘yxatida uchuvchi zaharlar uchun distillat ko‘rsatilmagan; uni o‘qituvchi qo‘shimcha ko‘rsatadi."
+    },
+    {
+      "title": "Tekshiruv rejasi nimaga asoslanadi",
+      "bullets": [
+        {
+          "text": "Ashyoviy dalil ko‘p hollarda qaytarib bo‘lmaydigan ob’ekt; shuning uchun tekshiruv ehtiyotkorlik va tejamkorlik bilan olib boriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud kimyogari avval aniq reja tuzadi; reja yo‘llanmalar va o‘lim sabablarini to‘liq o‘rganishga asoslanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rejada o‘lgan kishining kasallik tarixi, sud-tibbiyot ekspertizasi akti hisobga olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuningdek ob’ektning tashqi ko‘rinishi (pH, hid, rang), yot moddalar va dastlabki taxminiy tekshiruv natijalari o‘rganiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: reja tuzishning 5 asosini sanab bering. Doskada: 5 asos (yo‘llanma, kasallik tarixi, sud-tibbiy akt, tashqi ko‘rinish, dastlabki natija). Tipik xato: rejasiz ob’ektni to‘liq sarflab yuborish."
+    },
+    {
+      "title": "Dastlabki tekshiruvning ahamiyati",
+      "bullets": [
+        {
+          "text": "Zaharlovchi moddalar soni juda ko‘p, har bir moddaga tekshirish juda ko‘p vaqt talab qilgan bo‘lardi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dastlabki tekshiruv ko‘pincha rejadagi ko‘p zaharli moddalarni inkor qilish yoki taxmin qilish imkonini beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dastlabki tekshiruv asosida biror xulosaga kelib bo‘lmaydi; taxminiy natija musbat bo‘lsa, asosiy tekshirish shart.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ba’zi taxminiy usullar sezgir bo‘lsa ham xususiy emas.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sezgir, lekin xususiy bo‘lmagan usulga misol keltiring. Doskada: ’taxmin -> asosiy tekshirish’. Tipik xato: dastlabki musbat natijani yakuniy xulosa deb yozish."
+    },
+    {
+      "title": "Ob’ektning ko‘rinishi, hidi va rangi",
+      "bullets": [
+        {
+          "text": "Ko‘z yoki mikroskopda yot qo‘shimcha ko‘rinsa, pintset bilan ajratilib, taxmin qilingan moddaga tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hid va rang sud kimyogariga yo‘llanma beradi; chirigan ob’ektda zaharlar hidi o‘zgaradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Belgi va taxmin",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Taxmin"
+        ],
+        "rows": [
+          [
+            "Achchiq bodom hidi",
+            "sianidlar"
+          ],
+          [
+            "Sariq rang",
+            "pikrin kislota, strixnin, xromatlar, HNO3"
+          ],
+          [
+            "Qora rang",
+            "sulfat kislota"
+          ],
+          [
+            "Chinnisimon kristallar",
+            "margimush oksidi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun hid chirish bilan o‘zgaradi? Doskada: jadval. Tipik xato: hid yoki rangni yakuniy dalil deb hisoblash; u faqat yo‘llanma. Eslatma: kitobda ’strixnin nitritini prizmatik kristallari’ ham yot qo‘shimcha misoli sifatida keltirilgan."
+    },
+    {
+      "title": "pH bo‘yicha dastlabki baho",
+      "bullets": [
+        {
+          "text": "Muhit indikatorlar bilan aniqlanadi: lakmus (5,0-8,0), qizil kongo (3,0-5,2), fenolftalein (8,2-10,0), universal indikator qog‘ozlar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "pH 3 yoki undan kichik bo‘lsa, asosan mineral kislotalar yoki ko‘p miqdorda organik kislotalar bor.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuchsiz kislotali muhit ko‘pincha chirib qolgan organlarda achish jarayonini ko‘rsatadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishqoriy muhit ob’ektni ishqor yoki karbonatlarga tekshirishga yo‘llanma beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun kuchsiz kislotali muhit yetarli dalil emas? Doskada: 3 holat (pH<=3, kuchsiz kislotali, ishqoriy). Tipik xato: indikator intervallarini (5,0-8,0; 3,0-5,2; 8,2-10,0) almashtirish."
+    },
+    {
+      "title": "Zaharlarning ajratish usuli bo‘yicha guruhlari",
+      "bullets": [
+        {
+          "text": "Ajratish usuliga qarab zaharlar guruhlarga bo‘linadi; ularning ba’zilari bir necha usulda ajratilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yana: organik erituvchi quyish (pestitsidlar) va maxsus usullar (TEQ, rux fosfidi, ftoridlar).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ajratish usuli bo‘yicha guruhlar",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Misollar"
+        ],
+        "rows": [
+          [
+            "Suv bug‘i bilan haydash",
+            "sianid, sirka kislota, spirt, fenol"
+          ],
+          [
+            "Nordonlashgan suv/spirt",
+            "barbituratlar, alkaloidlar"
+          ],
+          [
+            "Mineralizatsiya (kuydirish)",
+            "og‘ir metallar, margimush"
+          ],
+          [
+            "Dializ yoki suv bilan bo‘ktirish",
+            "mineral kislota, ishqor, ishqoriy tuz"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: ’uchuvchi’ va ’metall’ zaharlar uchun kerakli ajratish usulini ayting. Doskada: 4 qatorli jadval. Tipik xato: uchuvchi zaharlarni mineralizatsiya bilan ajratishga urinish."
+    },
+    {
+      "title": "Ajratish usulini tanlash",
+      "bullets": [
+        {
+          "text": "Xloralgidrat va fenol suv bug‘i bilan haydalishdan tashqari nordonlashgan suv va spirt, organik erituvchi yoki suv bilan bo‘ktirish usulida ham ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyuq alkaloidlar nordonlashgan suv va spirt hamda haydash usulida ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xlorofos suv bug‘i bilan haydash, nordonlashgan suv va spirt hamda efir quyish usulida ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natijalar taqqoslanib, eng ko‘p modda ajratilgan usul tanlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun bir moddani bir necha usulda ajratish mumkin? Doskada: ’eng ko‘p modda -> tanlangan usul’. Tipik xato: bitta usulda manfiy natija chiqsa, moddani yo‘q deb yozish."
+    },
+    {
+      "title": "Taxminiy tekshiruv usullariga misollar",
+      "bullets": [
+        {
+          "text": "Barbituratlarga taxminiy tekshiruv: peshobga kobalt atsetati ammiak yoki litiy ishqori sharoitida qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenotiazin hosilalari: peshobga temir xloridining sulfat kislotali eritmasi qo‘shilsa, och-qizil rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX «skrining»: Radionova usuli 49 ta dori moddani ajratadi; Kartoshov usuli 83 ta azot saqlovchi zaharni 5 ta standart modda asosida ajratadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu usullarning har biri asosiy tekshiruvlar uchun yo‘llanma bo‘la oladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: skrining natijasi nima uchun faqat yo‘llanma? Doskada: 49 va 83 raqamlari. Tipik xato: Radionova va Kartoshov usullaridagi moddalar sonini almashtirish (49 va 83). Eslatma: kitobning 12-betida muallif T.M.Radionova, 20-betida G.M.Radionova deb yozilgan; sahifalarda ism-sharif farqi bor."
+    },
+    {
+      "title": "Noma’lum ob’ektni tahlil qilish ketma-ketligi",
+      "bullets": [
+        {
+          "text": "Yo‘llanma, o‘lim sabablari, kasallik tarixi va sud-tibbiy akt o‘rganiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tashqi ko‘rinish, pH, hid va rang bo‘yicha dastlabki tekshiruv o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlar ajratish usuliga qarab guruhlarga bo‘linadi; kerakli ajratish usuli tanlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Tahlil bosqichlari",
+        "nodes": [
+          "Hujjatlarni o‘rganish",
+          "Tekshiruv rejasi",
+          "Dastlabki tekshiruv",
+          "Ajratish va aniqlash",
+          "Dalolatnoma"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: har bosqich qaysi savolga javob beradi? Doskada: 5 qutili sxema. Tipik xato: dalolatnomani tahlildan oldin yozish. Eslatma: bu ketma-ketlik kitobning 12, 20, 21 va 221-betlaridan tuzilgan; kitob yagona ’to‘liq tahlil sxemasi’ jadvalini bermaydi."
+    },
+    {
+      "title": "Dalolatnomani rasmiylashtirish qoidalari",
+      "bullets": [
+        {
+          "text": "Dalolatnoma daftarning bir qatoriga bir xil interval bilan, hech qanday bo‘sh joy qoldirmasdan, ikki taraflama yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hoshiya birinchi betda chap tarafdan, ikkinchi betda o‘ng tarafdan qoldiriladi: jamlab tikish oson bo‘lishi uchun.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bo‘sh qolgan qatorlar chizilib to‘ldiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: bo‘sh qatorlar nima uchun chizib to‘ldiriladi? (Keyinchalik matn qo‘shilmasligi uchun, o‘qituvchi bilan tekshiring.) Doskada: 3 qoida. Tipik xato: hoshiyani ikkala betda bir tomonda qoldirish."
+    },
+    {
+      "title": "Dalolatnomada man etiladigan holatlar",
+      "bullets": [
+        {
+          "text": "So‘zlarni, gaplarni qisqartirish, shartli belgilar qo‘yish man etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaktivlarga muallif nomini yozish va moddalarning kimyoviy formulalarini yozish ham man etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ba’zi tuzatmalarga hoshiyada «to‘g‘rilanganiga ishonilsin» deb yozib, sud-kimyo eksperti o‘z dastxatini qo‘yishi shart.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ’Mandelin reaktivi’ o‘rniga qanday yozish kerak? (Reaktiv tarkibi bilan, masalan ammoniy vanadatning konsentrlangan sulfat kislotadagi eritmasi.) Doskada: 3 taqiq. Tipik xato: reaksiya tenglamasi o‘rniga formula yozib qo‘yish."
+    },
+    {
+      "title": "Dalolatnoma tuzilishi",
+      "bullets": [
+        {
+          "text": "Dalolatnoma uch qismdan iborat: kirish, bayon (tavsifiy), xulosa.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kirish va bayon qismlariga sarlavha yozilmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oxirida ekspert imzosi va dalolatnoma yozilgan vaqt ko‘rsatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Dalolatnoma qismlari",
+        "nodes": [
+          "Tekshiruv dalolatnomasi N*___",
+          "Kirish qismi",
+          "Bayon (a, b)",
+          "Xulosa qismi",
+          "Imzo va vaqt"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun kirish va bayon qismida sarlavha yozilmaydi? (Kitob shunday talab qiladi.) Doskada: 5 qutili sxema. Tipik xato: ’Xulosa’ ni kirishdan oldin yozish."
+    },
+    {
+      "title": "Kirish qismi",
+      "bullets": [
+        {
+          "text": "Tekshiruv qanday hujjatlar asosida va kim tomonidan (talabaning F.I.Sh., kursi, guruhi) olib borilgani yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tekshiruv davri va joyi (laboratoriya nomi) ko‘rsatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ashyoviy dalil va uni tekshirishdan maqsad yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdaning F.I.Sh., o‘lim sabablari va voqeaning qisqacha mazmuni beriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: kirish qismi ’savollarga javob namunasida’ deyiladi: qaysi savollar? Doskada: 6 savol (asos, kim, davr, joy, ashyoviy dalil va maqsad, murda va voqea). Tipik xato: voqea tafsilotini bayon qismiga yozish."
+    },
+    {
+      "title": "Bayon: ob’ekt tavsifi",
+      "bullets": [
+        {
+          "text": "Biologik ob’ektning tashqi ko‘rinishi tavsiflanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Son raqami, pH-muhiti, konsistensiyasi, konservlanganligi va boshqa belgilar yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hech qanday sarlavhasiz tavsifiy qism sifatida beriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 14-keysda peshob rangi qizil: tavsifda buni qanday yozasiz? Doskada: ’a)’ bandi. Tipik xato: tavsifda hid va pH ni qoldirish."
+    },
+    {
+      "title": "Bayon: kimyoviy tekshiruv",
+      "bullets": [
+        {
+          "text": "Zaharlarni biologik ob’ekt tarkibidan ajratib olish texnikasi batafsil yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ajratilgan moddalarning sifati va miqdorini aniqlash usullari yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tahlil qanday olib borilgan bo‘lsa, xuddi shunday aniq holda, so‘zlar qisqartirilmasdan yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun ’xuddi shunday aniq holda’ deyiladi? (Tahlil qaytarilishi va tekshirilishi uchun.) Doskada: ’b)’ bandi. Tipik xato: qisqartirilgan so‘zlar yoki shartli belgilar ishlatish."
+    },
+    {
+      "title": "Xulosa qismi",
+      "bullets": [
+        {
+          "text": "Xulosada avval aniqlangan zaharli moddalar nomma-nom ko‘rsatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyin aniqlanmagan zaharli moddalar nomma-nom yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xulosa tekshiruv ekspertizasi natijasiga asoslanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dalolatnoma ekspert imzosi bilan tasdiqlanadi va yozilgan vaqt ko‘rsatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: topilmagan moddalarni nima uchun yozish kerak? Doskada: tartib ’topilgan -> topilmagan’. Tipik xato: faqat topilgan moddani yozib, topilmaganlarini qoldirish."
+    },
+    {
+      "title": "Malaka: tekshiruv rejasi va usullar (loyiha)",
+      "bullets": [
+        {
+          "text": "Ashyoviy dalilni tekshirishdan oldin ekspert-kimyogar hujjatlar bilan tanishib, tekshiruv rejasini tuzadi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "16-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hujjatda maqsad ko‘rsatilgan bo‘lsa, faqat ko‘rsatilgan moddalarga tekshiriladi; yoki umumiy sud-kimyo analizi sxemasi bo‘yicha noma’lum moddaga.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "17, 20-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Imkon qadar turli fizik yoki kimyoviy tamoyilga asoslangan kamida ikkita usul qo‘llanadi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "21-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Topilgan moddaning aniqligini oshirish uchun har bir ob’ektdan kamida ikkita aniqlov o‘tkaziladi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "23-band"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun kamida ikkita usul talab qilinadi? Doskada: 4 qoida. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
+    },
+    {
+      "title": "Malaka: akt va xulosa tuzilishi (loyiha)",
+      "bullets": [
+        {
+          "text": "Natijalar «ekspert xulosasi» yoki «sud-kimyo tekshiruvi dalolatnomasi» ko‘rinishida; u uch qismdan: kirish, tekshiruv, yakuniy.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "28, 29-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "«Ob’ekt tavsifi»: o‘ram, idishdagi yozuv, morfologik tarkib, og‘irlik, rang, hid, lakmusga reaksiya, konservalanganlik to‘liq tavsiflanadi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "31-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kimyoviy tekshiruvda har bir operatsiya uchun ishlatilgan ob’ekt miqdori ko‘rsatiladi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "32-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hotimada avval topilgan moddalar (miqdori bilan), keyin topilmaganlari, so‘ng savollarga javoblar yoziladi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "33-band"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: kitobdagi 3 qismli tuzilish bilan malaka loyihasidagi ’kirish, tekshiruv, yakuniy’ tuzilishini solishtiring. Doskada: ikki tuzilish. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
+    },
+    {
+      "title": "Vaziyatli topshiriq: 14-keys",
+      "bullets": [
+        {
+          "text": "Sud-kimyo ekspertizasiga biologik ob’ekt sifatida peshob keltirildi; peshob rangi qizil.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Topshiriq: tahlil o‘tkazib, dalolatnoma tuzilsin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Keys jadvali (to‘ldiriladi)",
+        "nodes": [],
+        "header": [
+          "Muammo turi",
+          "Sabablari",
+          "Hal yo‘li"
+        ],
+        "rows": [
+          [
+            "tahlil qilinadi",
+            "aniqlanadi",
+            "yoziladi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: peshobning qizil rangi qaysi moddalarni taxmin qildiradi? (Kitobda yechim berilmagan: talaba dastlabki tekshiruvdan o‘zi asoslaydi.) Doskada: bo‘sh jadval. Tipik xato: dastlabki tekshiruvsiz bitta moddani yozib qo‘yish."
+    },
+    {
+      "title": "Dalolatnomani o‘z-o‘zini tekshirish ro‘yxati",
+      "bullets": [
+        {
+          "text": "Yozuv qoidalari: bir xil interval, bo‘sh joy yo‘q, ikki taraflama, hoshiya navbatma-navbat, bo‘sh qatorlar chizilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Taqiqlar: qisqartirish, shartli belgi, muallif nomi va formula yo‘q; tuzatmalarda «to‘g‘rilanganiga ishonilsin» va dastxat bor.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mazmun: kirish va bayon sarlavhasiz; xulosada topilgan va topilmagan moddalar nomma-nom; imzo va vaqt qo‘yilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: talabalar juft bo‘lib bir-birining dalolatnomasini ro‘yxat bo‘yicha tekshiradi (himoya mashqi). Doskada: 3 guruh talablar. Tipik xato: faqat mazmunni tekshirib, yozuv qoidalarini unutish. Eslatma: bu ro‘yxat 220-221-betlardagi talablardan tuzildi; kitobda himoya tartibi alohida berilmagan."
+    },
+    {
+      "title": "Xulosa va hisobot",
+      "bullets": [
+        {
+          "text": "Kimyo-toksikologik tekshiruv rejasi yo‘llanma, kasallik tarixi, sud-tibbiy akt, ob’ekt ko‘rinishi va dastlabki natijaga asoslanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlar ajratish usuliga qarab guruhlanadi: uchuvchilar - suv bug‘i bilan haydash, metallar - mineralizatsiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dalolatnoma uch qismdan iborat va ekspert imzosi bilan tasdiqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Hisobot: talaba ish daftariga dalolatnoma namunasini yozadi. Muhokama: 3 asosiy xulosa. Doskada: ’reja - guruh - dalolatnoma’. Tipik xato: guruhlarni (uchuvchi, metall) aralashtirish."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Dalolatnoma nechta qismdan iborat?",
+      "options": [
+        "Ikki",
+        "Uch",
+        "To‘rt",
+        "Besh"
+      ],
+      "correct_index": 1,
+      "explanation": "Dalolatnoma kirish, bayon va xulosa qismlaridan iborat.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "221"
+      }
+    },
+    {
+      "question": "Dalolatnomada nima man etiladi?",
+      "options": [
+        "Hoshiya qoldirish",
+        "Reaktivlarga muallif nomini yozish",
+        "Imzo qo‘yish",
+        "Vaqtni ko‘rsatish"
+      ],
+      "correct_index": 1,
+      "explanation": "So‘zlarni qisqartirish, shartli belgilar, muallif nomi va kimyoviy formulalar yozish man etiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "220"
+      }
+    },
+    {
+      "question": "Tuzatmalarga hoshiyada nima yoziladi?",
+      "options": [
+        "Tasdiqlanadi",
+        "To‘g‘rilanganiga ishonilsin",
+        "Xato",
+        "Bekor qilindi"
+      ],
+      "correct_index": 1,
+      "explanation": "Hoshiyada ’to‘g‘rilanganiga ishonilsin’ deb yozilib, ekspert dastxat qo‘yadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "220"
+      }
+    },
+    {
+      "question": "Xulosa qismida moddalar qanday tartibda yoziladi?",
+      "options": [
+        "Faqat topilganlari",
+        "Avval topilgan, so‘ng topilmagan",
+        "Faqat topilmaganlari",
+        "Alifbo tartibida"
+      ],
+      "correct_index": 1,
+      "explanation": "Xulosada avval aniqlangan, so‘ng aniqlanmagan zaharli moddalar nomma-nom yoziladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "221"
+      }
+    },
+    {
+      "question": "Achchiq bodom hidi qaysi moddalardan dalolat beradi?",
+      "options": [
+        "Sianidlar",
+        "Fenollar",
+        "Kislotalar",
+        "Metallar"
+      ],
+      "correct_index": 0,
+      "explanation": "Bioob’ekt tarkibida achchiq bodom hidi sianidlar borligidan dalolat beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "21"
+      }
+    },
+    {
+      "question": "pH 3 yoki undan kichik bo‘lsa, asosan nima borligini bildiradi?",
+      "options": [
+        "Ishqor",
+        "Mineral kislotalar yoki ko‘p organik kislota",
+        "Karbonat",
+        "Sianid"
+      ],
+      "correct_index": 1,
+      "explanation": "pH 3 va undan kichik bo‘lsa, mineral kislotalar yoki ko‘p miqdorda organik kislotalar bor.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "21"
+      }
+    },
+    {
+      "question": "Qaysi guruh suv bug‘i bilan haydab ajratiladi?",
+      "options": [
+        "Og‘ir metallar",
+        "Sianid, sirka kislota, spirt, aldegid, fenollar",
+        "Barbituratlar",
+        "Mineral kislotalar"
+      ],
+      "correct_index": 1,
+      "explanation": "Suv bug‘i bilan haydab ajratiladigan zaharlar ’uchuvchi zaharlar’ deyiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "20"
+      }
+    },
+    {
+      "question": "Og‘ir metallar va margimush qaysi usul bilan ajratiladi?",
+      "options": [
+        "Mineralizatsiya (kuydirish)",
+        "Suv bug‘i bilan haydash",
+        "Dializ",
+        "Organik erituvchi quyish"
+      ],
+      "correct_index": 0,
+      "explanation": "Biologik ob’ektdan mineralizatsiya (kuydirish) yo‘li bilan ajratiladigan zaharlarga og‘ir metallar va margimush kiradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "20"
+      }
+    },
+    {
+      "question": "Lakmus indikatorining ishchi oralig‘i qaysi?",
+      "options": [
+        "5,0-8,0",
+        "3,0-5,2",
+        "8,2-10,0",
+        "1,0-3,0"
+      ],
+      "correct_index": 0,
+      "explanation": "Kitobda lakmus (5,0-8,0), qizil kongo (3,0-5,2), fenolftalein (8,2-10,0) keltirilgan.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "21"
+      }
+    },
+    {
+      "question": "Dastlabki tekshiruv natijasi musbat bo‘lsa nima qilinadi?",
+      "options": [
+        "Xulosa yoziladi",
+        "Taxmin qilingan moddalarga asosiy tekshirish o‘tkaziladi",
+        "Ob’ekt yo‘q qilinadi",
+        "Tahlil to‘xtatiladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Taxminiy tekshiruv musbat bo‘lsa, shu moddalarga lozim bo‘lgan asosiy tekshirish shart.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "12"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Dalolatnomaning kirish qismida ’murdaning F.I.Sh.’ va ’o‘lim sabablari’ ko‘rsatiladi, lekin sarlavha yozilmaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "221"
+      }
+    },
+    {
+      "text": "Tuzatilgan joyga hoshiyada ’to‘g‘rilanganiga ishonilsin’ deb yozilib, ekspert o‘z dastxatini qo‘yishi shart.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "220"
+      }
+    },
+    {
+      "text": "Pikrin kislota, strixnin, xromatlar va nitrat kislota bilan zaharlanishda ob’ekt sariq rangda bo‘lishi mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "21"
+      }
+    },
+    {
+      "text": "Dastlabki tekshiruv sezgir usullarga asoslangan va ko‘pincha qon, peshob, yuvindi mahsulotlari yoki kam miqdordagi ob’ektda ekspress tekshiruvda ishlatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "12"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 12, 20-21, 220-221"
+    },
+    {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 226"
+    },
+    {
+      "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+      "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    }
+  ]
+}

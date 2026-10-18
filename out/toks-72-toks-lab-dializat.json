@@ -1,0 +1,1286 @@
+{
+  "topic": "Dializatda mineral kislotalar, ishqorlar va tuzlar",
+  "slides": [
+    {
+      "title": "Mashg‘ulot maqsadi va rejasi",
+      "bullets": [
+        {
+          "text": "Maqsad: talabalarni mineral kislotalar, ishqorlar va ularning tuzlarining toksikologik ahamiyati hamda tahlil usullari bilan tanishtirish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja: 1) dializ, ob’ektdan suv yordamida ajratib aniqlanadigan zaharlarning toksikologik ahamiyati; 2) ularni ajratib olish va dializatdan aniqlash usullari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mavzu doirasida mineral kislotalar: sulfat, xlorid va nitrat kislotalar ko‘riladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "265"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun suvda eruvchi zaharlar alohida usul bilan ajratiladi? Doskada: mashg‘ulot rejasi. Tipik xato: mashg‘ulotni faqat kislotalar bilan cheklash — kitobda ishqorlar (natriy, kaliy, ammiak) va nitrit tuzlari ham bor."
+    },
+    {
+      "title": "Kutilayotgan natijalar va jihozlar",
+      "bullets": [
+        {
+          "text": "Talabalar mineral kislotalar, ishqorlar va ularning tuzlarini ajratib olish hamda dializatdan aniqlash sharoitini o‘zlashtiradilar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zarur vositalar: probirkalar, ajratgich voronkalar, reaktivlar, ko‘rgazmali materiallar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Laboratoriya jihozlari: maxsus laboratoriya vositalari bilan jihozlangan xona.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: dializ uchun qanday maxsus idishlar kerak (6-slaydga qarang)? Doskada: jihozlar ro‘yxati. Tipik xato: jihozlar ro‘yxatida haydash apparatini qoldirish — u sulfat, nitrat, xlorid kislotalarni aniqlashda qo‘llanadi (260-261-betlar)."
+    },
+    {
+      "title": "Xavfsizlik va tayyorgarlik",
+      "bullets": [
+        {
+          "text": "Talaba laboratoriya ishi uchun o‘zi bilan rezina qo‘lqop, salfetka va yuzga tutish uchun niqob keltiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "166"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspertiza ventilyatsiya va so‘rish shkafi bor, ish tugagach berkitiladigan va muhrlanadigan xonalarda o‘tkaziladi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "6-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Infeksiyali (sil, gepatit, OITS) shaxslardan ob’ektlar maxsus konteynerda keladi va hujjatlarda belgilanadi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "7-band"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qo‘lqop va niqobsiz biologik ob’ekt bilan ishlash qanday xavf tug‘diradi? Doskada: shaxsiy himoya vositalari ro‘yxati. Tipik xato: biologik ob’ektni «toza» deb hisoblash. Kitob bu mashg‘ulotdagi alohida reaktivlarning xavfi (kislota, organik erituvchi) haqida ko‘rsatma bermaydi; ularni o‘qituvchi laboratoriya qoidalari bo‘yicha qo‘shimcha eslatadi. Bu mashg‘ulotda konsentrlangan sulfat kislota, ishqor va nitrat kislota ishlatiladi: kitob ularning xavfsiz ishlatilishi haqida ko‘rsatma bermaydi, o‘qituvchi laboratoriya qoidalari bo‘yicha alohida eslatadi. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
+    },
+    {
+      "title": "Dializ usulida ajratiladigan zaharlar",
+      "bullets": [
+        {
+          "text": "Dializ usulida asosan suvda yaxshi eruvchi mineral kislotalar, ishqorlar va tuzlar ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Amaliyotda sulfat, nitrat, xlorid kislotalar, natriy va kaliy ishqorlari, ammiakning suvdagi eritmasi bilan zaharlanish hollari uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrat va nitrit kislotalarning turli ishqorlar bilan hosil qilgan birikmalari (tuzlar) bilan ham zaharlanish uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ro‘yxatdagi qaysi moddalar organizmda tabiiy ravishda ham bo‘ladi? (260-bet: xlor, sulfat, nitrat ionlari.) Doskada: uch guruh — kislotalar, ishqorlar, tuzlar. Tipik xato: dializ usulini organik zaharlar uchun ham qo‘llash mumkin deb o‘ylash."
+    },
+    {
+      "title": "Suvda eruvchi zaharlarni ajratishning ikki usuli",
+      "bullets": [
+        {
+          "text": "Birinchi usul: maydalangan ob’ekt tozalangan suv bilan chayqatiladi, suvli qavat filtrlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamchiligi: suvda erigan ob’ekt qismlari hisobiga ko‘p yot moddalar ajralib, tahlilga halaqit beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki usul",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Mohiyati"
+        ],
+        "rows": [
+          [
+            "1. Suv bilan aralashtirish",
+            "Maydalab suvda chayqatish, filtrlash"
+          ],
+          [
+            "2. Dializ",
+            "Pergament qog‘ozli stakan, kristalizator"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun dializ usulida yot moddalar kamroq o‘tadi? (Kitob buni to‘g‘ridan-to‘g‘ri aytmaydi; nazorat savoli 3 «dializ qaysi fizik xossaga asoslangan» deb so‘raydi.) Doskada: ikki usul jadvali. Tipik xato: ikkala usulni bir xil deb hisoblash."
+    },
+    {
+      "title": "Dializni o‘tkazish tartibi",
+      "bullets": [
+        {
+          "text": "2-3 litrli kristalizatorga suv; tagi qirqilgan, pergamentli uzun stakan tushiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Stakanga ob’ekt va suv aralashmasi; ikkala idishda suyuqlik balandligi bir xil bo‘lishi lozim.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-6 soatdan so‘ng suv boshqa stakanga olinib, yangisi quyiladi; dializatlar birlashtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Dializ",
+        "nodes": [
+          "Kristalizator + toza suv",
+          "Pergamentli stakan tushiriladi",
+          "Ob’ekt + suv stakanga",
+          "4-6 soatdan suv almashtiriladi",
+          "Dializatlar birlashtiriladi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: yig‘ilgan dializat. Muhokama: nega suyuqlik balandligi tenglashtiriladi? (Kitobda sababi aytilmagan.) Doskada: asbob chizmasi. Tipik xato: pergament qog‘ozni stakan tagiga mahkamlamasdan qo‘yish yoki 4-6 soat o‘tmay suvni almashtirish."
+    },
+    {
+      "title": "Dializatni tahlilga tayyorlash",
+      "bullets": [
+        {
+          "text": "Filtrlash yoki dializ bilan olingan suyuqlik suv hammomida 10-20 ml qolguncha bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qoldiq suvda eruvchi zaharli moddalarni tahlil qilish uchun tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aniq moddani aniqlashdan oldin dializatda kuchli mineral kislotalar yoki ishqorlar bor-yo‘qligi tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega avval umumiy skrining, so‘ng aniq modda? Doskada: «bug‘latish -> skrining -> aniq modda». Tipik xato: dializatni quruq qoldiqqacha bug‘latib yuborish — kitob 10-20 ml qoldirishni aytadi."
+    },
+    {
+      "title": "Indikatorlar bilan dastlabki tekshiruv",
+      "bullets": [
+        {
+          "text": "Dializatning bir qismiga turli indikatorlar qo‘shib ko‘riladi (jadvalga qarang).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu o‘zgarishlar kuchli mineral kislotalar borligini bildiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kislota bo‘lsa",
+        "nodes": [],
+        "header": [
+          "Indikator",
+          "O‘zgarish"
+        ],
+        "rows": [
+          [
+            "Universal indikator qog‘ozi",
+            "Qizaradi"
+          ],
+          [
+            "Qizil kongo",
+            "Zangori rangga bo‘yaladi"
+          ],
+          [
+            "Tropeolin 00, dimetilaminobenzol",
+            "Qizaradi"
+          ],
+          [
+            "Metil violet",
+            "Ko‘karadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: kislotali dializatda jadvaldagi o‘zgarishlar. Muhokama: indikator o‘zgargan bo‘lsa, qaysi kislota ekani aniqmi? (Yo‘q — faqat kuchli mineral kislota borligini bildiradi.) Doskada: indikator jadvali. Tipik xato: indikator natijasini sulfat yoki xlorid kislotaning isboti deb yozish."
+    },
+    {
+      "title": "Nega avval haydash, so‘ng tahlil?",
+      "bullets": [
+        {
+          "text": "Dializatdan xlor, sulfat, nitrat ionlarini to‘g‘ridan-to‘g‘ri tekshirish yaramaydi: bu ionlar organizmga doim tushib turadi, ba’zilari modda almashinishida hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuning uchun mineral kislotalar avval dializatdan haydab olinib, so‘ng tahlil qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Erkin sulfat kislota bo‘lsa, haydalmadan har doim xlorid kislota topilishi mumkin — shu sababli tahlil sulfat kislotadan boshlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: dializatdagi xlorid ioni faqat zaharlanishdan bo‘lishi shartmi? Doskada: NaCl va NaNO3 ning sulfat kislota bilan reaksiyasi (260-betdagi ikki tenglama) — HCl va HNO3 hosil bo‘lishi. Tipik xato: xlorid kislotani tahlilni sulfatdan oldin o‘tkazish."
+    },
+    {
+      "title": "Sulfat kislota: zaharlanish belgilari va haydash",
+      "bullets": [
+        {
+          "text": "Ichgan shaxsda lab, til, oshqozon to‘qimalari shikastlanadi; kiyimni yaroqsiz qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dializatga mis kukuni solinib haydaladi; qabul qiluvchi kolbada yodning KI dagi eritmasi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sulfit angidrid yod bilan reaksiyaga kirishib, yana sulfat anionini beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Sulfat kislotani haydash",
+        "nodes": [
+          "Dializat + mis kukuni",
+          "Haydash apparatida haydaladi",
+          "Qabul qiluvchi: yod KI da",
+          "SO2 yod bilan sulfatga o‘tadi",
+          "Ortiqcha yod yo‘qotiladi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: qabul qiluvchi kolbada rangsiz suyuqlik (yod rangi o‘chgach). Muhokama: yod rangi o‘chib qolsa nima qilinadi? (Kitob: kolbaga yana shu eritmadan qo‘shiladi, 260-bet.) Kitobdagi reaksiya tenglamalari (260-bet) yozuv jihatidan noaniq, shuning uchun slaydga ko‘chirilmadi. Tipik xato: ortiqcha yodni yo‘qotmasdan sulfat reaksiyasini o‘tkazish."
+    },
+    {
+      "title": "Sulfat ioniga reaksiyalar: Ba va Pb",
+      "bullets": [
+        {
+          "text": "Reaksiyalar rangsizlantirilgan (ortiqcha yodi yo‘qotilgan) distillatda o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkala reaksiyada oq cho‘kma hosil bo‘ladi; ular cho‘kmaning erishi bo‘yicha farqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Sulfat reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "3-5 tomchi + 1-2 tomchi 5% BaCl2",
+            "Oq cho‘kma: HNO3, HCl, ishqorda erimaydi"
+          ],
+          [
+            "Bir necha tomchi + 2-3 tomchi 3% Pb atsetat",
+            "Oq; HNO3 da erimaydi, ishqorda eriydi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: ikki probirkada oq cho‘kma. Muhokama: cho‘kmaning erish xususiyatlari ularni qanday ajratadi? Doskada: jadval; kitob talabi: reaksiya kimyoviy tenglamasini yozing. Tipik xato: BaSO4 cho‘kmasini ishqorda eriydi deb yozish."
+    },
+    {
+      "title": "Natriy rodizonat bilan reaksiya",
+      "bullets": [
+        {
+          "text": "Qog‘ozga 1-2 tomchi 1% BaCl2, so‘ng bir tomchi yangi 0,2% natriy rodizonat: qizil dog‘.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu dog‘ga 1-2 tomchi haydalma tomizilganda sulfat kislota bo‘lsa, qizil rang o‘chib ketadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu reaksiya sulfat kislotani aniqlashda xarakterli hisoblanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Rodizonat sinovi",
+        "nodes": [
+          "Qog‘ozga 1% BaCl2",
+          "+0,2% Na rodizonat: qizil dog‘",
+          "+1-2 tomchi haydalma",
+          "Sulfat bo‘lsa rang o‘chadi"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: qizil dog‘ o‘chishi. Muhokama: rang nega o‘chadi? (Kitob sababini aytmaydi; BaSO4 hosil bo‘lishi bilan bog‘liq bo‘lishi mumkin — o‘qituvchi tushuntiradi.) Doskada: 4 bosqichli sxema. Tipik xato: rodizonatni oldindan tayyorlab qo‘yish — kitob «yangi tayyorlangan» deydi."
+    },
+    {
+      "title": "Nitrat kislota: belgilar va haydash",
+      "bullets": [
+        {
+          "text": "Nitrat kislota bilan zaharlanishda og‘iz bo‘shlig‘i, oshqozon-ichak yo‘llari va ayrim hollarda yuz terisi sarg‘ish rangga kirishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Agar kislotaning 20% eritmasidan kuchsizi bilan zaharlangan bo‘lsa, terida sariq rang kuzatilmasligi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dializatdan nitrat kislota sulfat kislotadagi kabi mis kukuni ishtirokida haydab olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: terida sariq rangning yo‘qligi nitrat kislota zaharlanishini inkor etadimi? (Yo‘q — kuchsiz eritmada bo‘lmasligi mumkin.) Doskada: 20% chegarasi. Tipik xato: sariq rangni yagona dalil deb qabul qilish. Kitobdagi tenglamalar (261-bet) ko‘chirilmadi."
+    },
+    {
+      "title": "Nitrat ioniga reaksiyalar",
+      "bullets": [
+        {
+          "text": "Qabul qiluvchi kolbada hosil bo‘lgan nitrat va nitrit kislotalar quyidagi reaksiyalar bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkala reaksiyani nitritlar va boshqa oksidlovchilar ham beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Nitrat reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "4-5 tomchi 1% difenilamin + 1 tomchi haydalma",
+            "Ko‘kimtir rang"
+          ],
+          [
+            "Haydalma + 2-3 tomchi 0,02% brutsin",
+            "Qizil rang"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: ko‘kimtir (difenilamin) va qizil (brutsin) rang. Muhokama: nega nitritni oldindan aniqlash kerak? (Keyingi slayd.) Doskada: reaktiv -> rang. Tipik xato: difenilamin musbat natijasini faqat nitratga tegishli deb yozish; kitob «nitrit va ayrim oksidlovchilar ham beradi» deydi."
+    },
+    {
+      "title": "Yung–paxta sinovi va nitritlarni yo‘qotish",
+      "bullets": [
+        {
+          "text": "Nitrat kislota yungdagi oqsil bilan turg‘un sariq birikma hosil qiladi; suv bilan yuvilsa, yung rangi o‘chmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paxtadan to‘qilgan material sariq rangini yo‘qotadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Difenilamin va brutsin nitrit bo‘lganda ham musbat bo‘lgani uchun avval nitritlar aniqlanadi (sulfanil kislota yoki Griss reaktivi).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: yung sariq, paxta rangsiz. Muhokama: nitrit topilsa nitrat natijasiga qanday qaraladi? Doskada: «nitrit -> azobo‘yoq -> nitrat tahlilidan oldin». Tipik xato: yung–paxta sinovini boshqa oksidlovchilarni inkor etuvchi deb o‘ylash (kitobda bunday da’vo yo‘q). Kitob: neytral muhitga keltirilgan haydalmada azobo‘yoq hosil bo‘lishi nitrit borligini tasdiqlaydi."
+    },
+    {
+      "title": "Xlorid kislota: haydash xususiyati",
+      "bullets": [
+        {
+          "text": "Erkin xlorid kislota oz miqdorda oshqozon suyuqligida, tuzlari esa organizm to‘qimalarida uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dializat mis kukunisiz quruq qoldiq qolguncha haydaladi: erkin kislota haydaladi, tuzlari haydalmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Avval suv haydaladi; eritma konsentratsiyasi 10% atrofiga yetganda xlorid kislota haydala boshlaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "HCl ni haydash",
+        "nodes": [
+          "Dializat (mis kukunisiz)",
+          "Avval suv haydaladi",
+          "~10% dan HCl haydala boshlaydi",
+          "Quruq qoldiqqacha haydash"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega quruq qoldiqqacha haydash zarur? Doskada: sxema. Tipik xato: haydashni suv haydalgach to‘xtatish — HCl keyinroq o‘tadi."
+    },
+    {
+      "title": "Xlorid ioniga reaksiyalar",
+      "bullets": [
+        {
+          "text": "Reaksiyalar qabul qiluvchi kolbadagi suyuqlikda o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Xlorid reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "1-2 ml + 1-2 tomchi AgNO3",
+            "Oq cho‘kma, ammiakda eriydi"
+          ],
+          [
+            "1-2 ml + Bertole tuzi kristallari",
+            "Erkin xlor gazi hosil bo‘ladi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: AgCl oq cho‘kmasi (ammiakda eriydi) va xlor gazi. Muhokama: ammiakda erish nimani isbotlaydi? Doskada: jadval. Tipik xato: cho‘kma ammiakda erimasa ham xlorid deb yozish. Kitob talabi: reaksiya tenglamasini yozing."
+    },
+    {
+      "title": "«Charxpalak» treningi: kislotalar",
+      "bullets": [
+        {
+          "text": "Reaktivlar: bariy xlorid, kumush nitrat, Bertole tuzi, difenilamin, qo‘rg‘oshin atsetat, universal indikatorlar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jadval ustunlari: sulfat, nitrat va xlorid kislota — har bir kislota qaysi reaktivlar bilan aniqlanishi ko‘rsatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vazifa: reaktivning qaysi kislotaga mosligini belgilash va kimyoviy tenglamasini yozish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: to‘ldirilgan 6x3 jadval (masalan, BaCl2 — sulfat; AgNO3 — xlorid; Bertole tuzi — xlorid; difenilamin — nitrat; Pb atsetat — sulfat). Kitobda jadval bo‘sh berilgan, javoblari yo‘q — yuqoridagi javoblar shu sahifalardagi usullardan olingan. Muhokama: qaysi reaktiv bir nechta kislotaga mos? Doskada: bo‘sh jadval. Tipik xato: universal indikatorni aniq kislotani ko‘rsatuvchi deb belgilash."
+    },
+    {
+      "title": "Kaliy kationini aniqlash",
+      "bullets": [
+        {
+          "text": "1-2 tomchi dializat buyum oynasida 1 tomchi 6% sirka kislota bilan nordonlashtiriladi; natriy nitrit va kobalt nitrat kristallari qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "15-20 daqiqadan so‘ng mikroskopda kaliy geksanitrokobaltiatning sariq yulduzchasimon kristallari ko‘riladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yana: 1-2 ml dializatga sovuq sharoitda vino kislota eritmasi qo‘shilsa, oq cho‘kma hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: sariq yulduzchasimon mikrokristallar. Muhokama: nega 15-20 daqiqa kutiladi? Tipik xato: nitrit o‘rniga nitrat ishlatish. Kitobda: «natriy nitrat hamda kobalt nitrat» (toks 262, dvssm 268 — xato). To‘g‘risi natriy nitrit: K2Na[Co(NO2)6] faqat nitrit ionidan hosil bo‘ladi."
+    },
+    {
+      "title": "Natriy kationini aniqlash",
+      "bullets": [
+        {
+          "text": "1-2 tomchi dializat 1 M sirka kislota bilan nordonlashtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Natriy reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "+ 1 ml rux uranil atsetat",
+            "Sariq rangli cho‘kma"
+          ],
+          [
+            "1-2 ml + kaliy gidroantimonat (sovitilgan)",
+            "Oq cho‘kma"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: sariq cho‘kma (rux uranil atsetat bilan). Muhokama: natriy va kaliyni bir-biridan qanday ajratamiz? Doskada: ikki kation uchun reaktivlar jadvali. Tipik xato: gidroantimonat reaksiyasini isitib o‘tkazish — kitob «sovitilgan sharoit» deydi."
+    },
+    {
+      "title": "Ammiak: qog‘ozlar usuli",
+      "bullets": [
+        {
+          "text": "Suyuqlik kolbaga solinib, qizil lakmus, Pb atsetat va mis sulfat qog‘ozli probka bilan berkitiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kolba 1-2 soat saqlanadi, so‘ng qog‘ozlar birin-ketin tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natriy yoki kaliy ishqorlari bo‘lsa ham ammiakni aniqlash mumkin (NH4Cl + NaOH = NH4OH + NaCl).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "263"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Qog‘oz natijasi",
+        "nodes": [],
+        "header": [
+          "Qog‘oz",
+          "Ammiak",
+          "Chirishda"
+        ],
+        "rows": [
+          [
+            "Qizil lakmus",
+            "Zangori",
+            "O‘zgarmaydi"
+          ],
+          [
+            "Mis sulfatli",
+            "Zangori",
+            "Qorayadi"
+          ],
+          [
+            "Pb atsetatli",
+            "O‘zgarmaydi",
+            "Qorayadi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: lakmus va mis sulfat qog‘ozlari zangori, qo‘rg‘oshin atsetatli o‘zgarmaydi — ammiak. Muhokama: murdaning chirishi natijasi ammiak tahlilini qanday buzadi? (263-bet: qorayish chirishdan hosil sulfid kislotani ko‘rsatadi.) Doskada: ikki ustunli jadval. Tipik xato: qorayishni ammiak deb yozish."
+    },
+    {
+      "title": "Nitritlar: xossalari va tayyorlash",
+      "bullets": [
+        {
+          "text": "Natriy va kaliy nitritlar suvda juda yaxshi eriydigan kristall moddalar; havodan suv bug‘ini tez tortib oladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "263"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmda natriy va kaliy tuzlari doim bo‘lgani uchun sud-kimyo amaliyotida nitrit qaysi kationga tegishli ekani ko‘rsatilmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "263"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dializat neytral sharoitga keltirilib, so‘ng nitrit va nitratlarning tahlili olib boriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "263"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega nitritning kationi (Na yoki K) ko‘rsatilmaydi? Doskada: NaNO2, KNO2 formulalari. Tipik xato: ekspertiza xulosasida kationni ko‘rsatish. Eslatma: kitobda bu sahifada nitritning toksik dozasi yoki klinik belgilari berilmagan."
+    },
+    {
+      "title": "Nitrit ioniga reaksiyalar",
+      "bullets": [
+        {
+          "text": "Birinchi reaksiya neytrallangan dializatda: 3-5 daqiqa kutilib β-naftolning ishqoriy eritmasi qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "263"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrit ko‘p bo‘lsa, azobo‘yoq cho‘kmaga tushishi ham mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "263"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Nitrit reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "0,5% sulfanil kislota, 3-5 daqiqa, β-naftol",
+            "Qizg‘ish rang (azobo‘yoq)"
+          ],
+          [
+            "2 ml + suyult. H2SO4 + toza KI",
+            "Qo‘ng‘ir; kraxmal bilan havo rang"
+          ],
+          [
+            "Nitratlar: difenilamin (H2SO4 da)",
+            "Nitritlar ham beradi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: qizg‘ish rang yoki kraxmal bilan havo rang. Muhokama: nitratni nitritdan qanday ajratamiz? (Avval nitrit aniqlanadi — 261-bet.) Doskada: reaksiyalar jadvali. Tipik xato: sulfanil kislota eritmasini kislotali muhitsiz tayyorlash — kitob 2% HCl dagi 0,5% eritmani aytadi."
+    },
+    {
+      "title": "«Charxpalak»: ishqorlar va tuzlar; 25-keys",
+      "bullets": [
+        {
+          "text": "Trening ustunlari: NaNO2, KNO2, NH4OH, K+, Na+; reaktivlar: azobo‘yoq reaksiyasi, rux uranil atsetat, natriy nitrit va kobalt nitrat, difenilamin, vino kislota, universal indikatorlar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "263"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "25-keys: sud-kimyo tahlili natijasida olingan ajratma ishqoriy sharoitni ko‘rsatdi; murda chirishida hosil bo‘ladigan ammiakni hisobga olib tahlil o‘tkazing.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "264"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keys jadvali: muammo turi — kelib chiqish sabablari — hal etish yo‘llari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "264"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 12 daqiqa. Kutilayotgan natija: reaktiv-ion moslik jadvali va keys bo‘yicha reja: indikator -> Na/K reaksiyalari -> ammiak (qog‘ozlar) -> chirish ammiagini hisobga olish. Kitob keys jadvalini bo‘sh qoldirgan, javob berilmagan. Muhokama: ishqoriy ajratmada nima uchun avval natriy va kaliy ishqorlarini tahlil qilish lozim? (nazorat savoli 11, 264-bet.) Tipik xato: ammiakni zaharlanish deb xulosa qilish, chirishni hisobga olmay. Kitobda: trening matnida «natriy nitrat» — to‘g‘risi natriy nitrit (19-slayd)."
+    },
+    {
+      "title": "Natijani talqin qilish",
+      "bullets": [
+        {
+          "text": "Indikatorlarning o‘zgarishi faqat kuchli mineral kislota borligini ko‘rsatadi; qaysi kislota ekani haydalmadagi reaksiyalar bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tahlil sulfat kislotadan boshlanadi, chunki haydalmadan xlorid kislota topilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrat reaksiyalari (difenilamin, brutsin) nitrit va boshqa oksidlovchilarda ham musbat, shuning uchun nitrit oldin aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qog‘ozlar usulida lakmus o‘zgarmasdan, mis va qo‘rg‘oshin qog‘ozlari qorayishi chirishdan hosil bo‘lgan sulfid kislotani ko‘rsatadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "263"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: noma’lum dializatda eng birinchi qaysi qadam qaytariladi? Doskada: «indikator -> haydash -> sulfat -> nitrit -> nitrat -> xlorid» tartibini yozing (260-261 betlardagi tartibdan olingan). Tipik xato: bitta reaksiya natijasi bilan xulosa chiqarish."
+    },
+    {
+      "title": "Nazorat savollari",
+      "bullets": [
+        {
+          "text": "Dializ usulida qanday moddalar ajratiladi, usul qanday fizik xossaga asoslangan, qaysi asboblar bilan o‘tkaziladi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "264"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kongo, tropeolin 00 va boshqa indikatorlar bilan tekshirishning mohiyati nima; nega sulfat kislota aniqlashda dializatga mis solinib haydaladi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "264"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrat kislotani sifat va miqdoriy aniqlash qaysi kimyoviy holatlarga asoslanadi; xlorid kislotadan oldin nega sulfat kislota tahlil qilinadi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "264"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dializat ishqoriy bo‘lganda karbonat tuzlari yoki erkin ishqor ekanini qanday aniqlash; nima uchun avval natriy va kaliy ishqori tahlil qilinadi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "264"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: har bir savolga bittadan javob. Doskada: savollarni raqamlab yozing. Tipik xato: javobda reaksiya shartlarini (tomchi soni, konsentratsiya) tushirib qoldirish. Kitobda jami 11 ta nazorat savoli bor; bu yerda mazmuniga ko‘ra 4 guruhga jamlandi."
+    },
+    {
+      "title": "Xulosa va hisobot",
+      "bullets": [
+        {
+          "text": "Dializ — suvda eruvchi kislotalar, ishqorlar va tuzlarni yot moddalardan ajratish usuli; dializat 10-20 ml gacha bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislotalar haydalmadan aniqlanadi: sulfat (BaCl2, Pb atsetat, rodizonat), nitrat (difenilamin, brutsin), xlorid (AgNO3, Bertole tuzi).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260-262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kationlar va ammiak: K+ (geksanitrokobaltiat, vino kislota), Na+ (rux uranil atsetat), NH3 (3 xil qog‘oz), nitritlar (azobo‘yoq, KI).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262-263"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Hisobot: ish daftariga indikator natijasi, haydash sharoiti, har bir reaksiya (tomchi soni, rang yoki cho‘kma) va xulosa yoziladi. Muhokama: eng ishonchli dalil qaysi? Doskada: 3 xulosa. Tipik xato: reaksiya shartlarini yozmasdan faqat «topildi» deyish."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Dializ usulida asosan qanday moddalar ajratib olinadi?",
+      "options": [
+        "Suvda yaxshi eruvchi mineral kislotalar, ishqorlar va tuzlar",
+        "Organik erituvchida eruvchi alkaloidlar",
+        "Uchuvchi organik moddalar",
+        "Metall kationlari (mineralizatdan)"
+      ],
+      "correct_index": 0,
+      "explanation": "Dializ usulida asosan suvda yaxshi eruvchi mineral kislotalar, ishqorlar va tuzlar ajratib olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "259"
+      }
+    },
+    {
+      "question": "Dializ qurilmasida kristalizator odatda qancha hajmda olinadi?",
+      "options": [
+        "200-300 ml",
+        "1 litr",
+        "2-3 litr",
+        "10 litr"
+      ],
+      "correct_index": 2,
+      "explanation": "Dializ uchun 2-3 litrli kristalizator olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "259"
+      }
+    },
+    {
+      "question": "Dializda kristalizatordagi suv necha soatdan keyin almashtiriladi?",
+      "options": [
+        "1-2 soat",
+        "4-6 soat",
+        "12-24 soat",
+        "30 daqiqa"
+      ],
+      "correct_index": 1,
+      "explanation": "Oradan 4-6 soat o‘tgach kristalizatordagi suv olinib, o‘rniga yangisi quyiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "259"
+      }
+    },
+    {
+      "question": "Dializat dastlabki tekshiruv uchun qancha hajm qolguncha bug‘latiladi?",
+      "options": [
+        "1-2 ml",
+        "10-20 ml",
+        "100-200 ml",
+        "Quruq qoldiqqacha"
+      ],
+      "correct_index": 1,
+      "explanation": "Dializat suv hammomida 10-20 ml qolguncha bug‘latiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "259"
+      }
+    },
+    {
+      "question": "Mineral kislotalar aniqlanayotganda nega ularni avval haydab olish kerak?",
+      "options": [
+        "Chunki xlor, sulfat, nitrat ionlari organizmda doim bor yoki hosil bo‘ladi",
+        "Chunki ular suvda erimaydi",
+        "Chunki indikatorlar ishlamaydi",
+        "Chunki dializat rangli bo‘ladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Bu ionlar organizmga doim tushib turadi va ba’zilari modda almashinishida hosil bo‘ladi, shu sababli to‘g‘ridan-to‘g‘ri tekshirish yaramaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "260"
+      }
+    },
+    {
+      "question": "Bariy xlorid bilan sulfat kislotaga reaksiyada hosil bo‘lgan cho‘kma qaysi muhitda erimaydi?",
+      "options": [
+        "Faqat ishqorda",
+        "Nitrat va xlorid kislotalarda hamda ishqorda",
+        "Faqat suvda",
+        "Hech qaysida, hatto ishqorda ham eriydi"
+      ],
+      "correct_index": 1,
+      "explanation": "Oq cho‘kma nitrat va xlorid kislotalarda hamda ishqorda erimaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "260"
+      }
+    },
+    {
+      "question": "Difenilamin (kons. sulfat kislotadagi eritmasi) nitrat kislota borligida qanday rang beradi?",
+      "options": [
+        "Ko‘kimtir",
+        "Qizil",
+        "Sariq",
+        "Binafsha"
+      ],
+      "correct_index": 0,
+      "explanation": "Nitrat va nitrit kislota bo‘lganda ko‘kimtir rang hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "261"
+      }
+    },
+    {
+      "question": "Xlorid kislota reaksiyasida AgNO3 bilan hosil bo‘lgan cho‘kma nimada eriydi?",
+      "options": [
+        "Nitrat kislotada",
+        "Ammiak eritmasida",
+        "Sulfat kislotada",
+        "Suvda"
+      ],
+      "correct_index": 1,
+      "explanation": "Oq cho‘kma ammiak eritmasida eriydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "262"
+      }
+    },
+    {
+      "question": "Kaliy geksanitrokobaltiat mikroskop ostida qanday ko‘rinadi?",
+      "options": [
+        "Rangsiz ninalar",
+        "Qizil prizmalar",
+        "Sariq yulduzchasimon kristallar",
+        "Ko‘k plastinkalar"
+      ],
+      "correct_index": 2,
+      "explanation": "Mikroskop ostida sariq rangli yulduzchalar shaklidagi kristal cho‘kma ko‘rinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "262"
+      }
+    },
+    {
+      "question": "Qog‘ozlar usulida lakmus o‘zgarmasa, mis va qo‘rg‘oshin qog‘ozlari qorayishi nimani ko‘rsatadi?",
+      "options": [
+        "Ammiak borligini",
+        "Chirish natijasida hosil bo‘lgan sulfid kislotani",
+        "Nitritlarni",
+        "Natriy ishqorini"
+      ],
+      "correct_index": 1,
+      "explanation": "Bu dializatda chirish natijasida hosil bo‘lgan sulfid kislota borligini ko‘rsatadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "263"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Dializatdan sulfat kislota aniqlashda tahlil har doim sulfat kislotadan boshlanadi: erkin H2SO4 bo‘lsa, NaCl va NaNO3 ga ta’sir etib, haydalmada HCl va HNO3 hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "260"
+      }
+    },
+    {
+      "text": "Nitrat kislota yungdagi oqsil bilan turg‘un sariq birikma hosil qiladi: yuvilganda yung sariq qoladi, paxta esa rangini yo‘qotadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "261"
+      }
+    },
+    {
+      "text": "Xlorid kislota haydalganda avval suv o‘tadi; kislotaning konsentratsiyasi 10% atrofiga yetgandagina u haydala boshlaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "261"
+      }
+    },
+    {
+      "text": "Murda chirishida hosil bo‘lgan sulfid kislota ammiakdan farqli ravishda mis va qo‘rg‘oshin qog‘ozlarini qoraytiradi, lakmus esa o‘zgarmaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "263"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 166, 259-264"
+    },
+    {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "year": null,
+      "pages": "b. 265"
+    },
+    {
+      "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+      "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+      "year": null,
+      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+    }
+  ]
+}
