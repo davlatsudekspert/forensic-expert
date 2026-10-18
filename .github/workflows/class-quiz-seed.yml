@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-      PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+      PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF || 'igvzlmpgwybjdgkyowrl' }}
       DRY: ${{ inputs.dry_run }}
     steps:
       - uses: actions/checkout@v4
@@ -44,7 +44,7 @@ jobs:
           key = lambda l: re.search(r"values \('([^']+)', '(?:[^']|'')*', (\d+),", l).groups()
           if dry:
               print("dry-run:", len(ins), "rows,", len({key(l)[0] for l in ins}), "topic ids"); sys.exit(0)
-          if not ref or not tok: sys.exit("::error::secrets missing")
+          if not tok: sys.exit("::error::SUPABASE_ACCESS_TOKEN secret is not set (Settings → Secrets → Actions)")
           def run(sql):
               req = urllib.request.Request(
                   f"https://api.supabase.com/v1/projects/{ref}/database/query",
