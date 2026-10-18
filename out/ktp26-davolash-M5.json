@@ -1,0 +1,1681 @@
+{
+  "topic": "Sud tibby toksikologiyasi. 1. Asosiy maqsadlar2. Zaharli moddalar tasnifi3. Kimyoviy tahlil usullari. 4. Zaharlanish belgilari. 5. Ekspert baholashining o‘ziga xos jihatlari",
+  "slides": [
+    {
+      "title": "Kirish: sud-tibbiy toksikologiya",
+      "bullets": [
+        {
+          "text": "Kimyoviy omillardan sog‘liq buzilishi va o‘lim murda va tirik shaxslar ekspertizasida nisbatan keng uchraydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zo‘raki o‘lim tarkibida zaharlanishlar mexanik jarohatlar va mexanik asfiksiyadan keyin uchinchi o‘rinda.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ma’ruzada: maqsadlar, zaharlar tasnifi, kimyoviy tahlil usullari, zaharlanish belgilari va ekspert baholashi ko‘riladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Zaharlanish nega uchinchi o‘rinda? 2) Ekspertiza nima uchun zaharlanishda laboratoriyasiz mumkin emas? Doskada: 5 savol rejasi. Tipik xato: zaharlanishni eng ko‘p uchraydigan zo‘ravon o‘lim deb bilish."
+    },
+    {
+      "title": "Asosiy maqsad va vazifalar",
+      "bullets": [
+        {
+          "text": "Toksikologiyaning yo‘nalishlari: sanoat, qishloq xo‘jaligi, harbiy, oziq-ovqat, maishiy va sud-tibbiy.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Boshqa turlar zaharlanish sabablari, malakali yordam va oldini olishni o‘rgansa, sud-tibbiy toksikologiya huquqni muhofaza idoralari qo‘ygan vazifalarni hal etadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud tibbiyotining fan sifatida shakllanishi aynan sud-tibbiy toksikologiyadan boshlangan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Maqsadlar farqi",
+        "nodes": [],
+        "header": [
+          "Yo‘nalish",
+          "Asosiy yo‘nalish"
+        ],
+        "rows": [
+          [
+            "Boshqa toksikologiya",
+            "Sabablar, yordam, oldini olish"
+          ],
+          [
+            "Sud-tibbiy",
+            "Huquqiy vazifalarni hal etish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Klinik va sud-tibbiy toksikologiya maqsadlari qanday farq qiladi? Doskada: ikki ustun. Tipik xato: sud-tibbiy toksikologiyani davolash fani deb bilish."
+    },
+    {
+      "title": "Zaharlanishning sud-tibbiy diagnostikasi: 3 bosqich",
+      "bullets": [
+        {
+          "text": "Diagnostika uch bosqichda to‘planadigan dalillarga asoslanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1-bosqich: hodisa joyi yoki murda topilgan joyni mutaxassis ishtirokida ko‘zdan kechirish; ish materiallari, katamnez, tibbiy hujjatlar bilan tanishish.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-bosqich: murdaning tashqi va ichki tekshiruvi; 3-bosqich: qo‘shimcha laboratoriya tekshiruvlari.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "135–136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Diagnostika bosqichlari",
+        "nodes": [
+          "Hodisa joyi va hujjatlar",
+          "Murda tekshiruvi",
+          "Laboratoriya tekshiruvlari"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Funksional zaharlarda nega tibbiy hujjatlar muhim? (asosiy dalillar manbai bo‘lishi mumkin). Doskada: 3 bosqich. Tipik xato: faqat murda tekshiruviga tayanish."
+    },
+    {
+      "title": "Sud-kimyoviy tekshiruvning maqsadi",
+      "bullets": [
+        {
+          "text": "Ekspert-kimyogar vazifasi: taqdim etilgan obyektlarda zaharli va kuchli ta’sir qiluvchi moddalarni aniqlash va miqdorini topish; maqsad — huquqiy organlar uchun obyektiv ma’lumot.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "129"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspertiza surishtiruv, tergov, sud taklifi bilan hamda ekspertlar, toksikologik markaz va narkologiya shifokorlari yo‘llanmasiga ko‘ra o‘tkaziladi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "129"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspert zamonaviy usullardan foydalanadi; tekshiruv borishi ish jurnalida qayd etilib, xulosa tuzishda ishlatiladi. Manba Qozog‘iston amaliyotini tavsiflaydi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "129"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Ekspert-kimyogar nimani isbotlaydi va nimani isbotlamaydi? Doskada: «aniqlash + miqdor». Tipik xato: kimyoviy natijani yagona dalil deb bilish (Giyosov: boshqa ma’lumotlar bilan baholanadi, 180–181)."
+    },
+    {
+      "title": "Zaharlarning sud-tibbiy tasnifi",
+      "bullets": [
+        {
+          "text": "Barcha zaharlar shartli ravishda ikki guruhga bo‘linadi: asosan mahalliy va asosan umumiy ta’sir etuvchilar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mahalliylar kontakt joyida jiddiy morfologik o‘zgarish, to‘qima nekrozini chaqiradi; umumiylar qonga so‘rilgach zaharlaydi (rezorbtiv zaharlar).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Umumiy guruhda uch tur: destruktiv, qon va funksional zaharlar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Tasnif",
+        "nodes": [
+          "Mahalliy ta’sir etuvchilar",
+          "Umumiy: destruktiv",
+          "Umumiy: qon zaharlari",
+          "Umumiy: funksional"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Mahalliy zahar umumiy reaksiya keltirmaydimi? (manbaga ko‘ra keltiradi). Doskada: tasnif daraxti. Tipik xato: mahalliy va rezorbtiv guruhlarni bir-biridan to‘liq ajratish."
+    },
+    {
+      "title": "Mahalliy ta’sir etuvchi zaharlar",
+      "bullets": [
+        {
+          "text": "Anorganik (xlorid, sulfat, nitrat) va organik (sirka, oksalat, karbol) kislotalar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishqorlar (natriy, kaliy, ammoniy), vodorod peroksid, formaldegid.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kaliy permanganat va yod tindirmasi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 3 daq. Muhokama: Bu moddalar dastlabki kontaktda nima qiladi? Doskada: 3 guruh. Tipik xato: yod tindirmasini mahalliy ta’sir ro‘yxatidan tashqarida deb bilish."
+    },
+    {
+      "title": "Destruktiv va qon zaharlari",
+      "bullets": [
+        {
+          "text": "Destruktiv: simob, qo‘rg‘oshin, rux, margimush, fosfor va ularning birikmalari — ichki a’zolarda to‘qima strukturasini buzadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gemoglobinotrop: karboksigemoglobin va metgemoglobin hosil qiluvchilar; gemolitik: arsin, sirka kislotasi, mis sulfat.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Boshqa qon zaharlari: gemagglyutinatsiya (ritsin, fazin), gemopoez (dikumarin), qon ivishi (benzol, sitostatiklar).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Qon zaharlari",
+        "nodes": [],
+        "header": [
+          "Tur",
+          "Misol"
+        ],
+        "rows": [
+          [
+            "Gemoglobinotrop",
+            "Is gazi, metgemoglobin hosil qiluvchilar"
+          ],
+          [
+            "Gemolitik",
+            "Arsin, sirka kislotasi, mis sulfat"
+          ],
+          [
+            "Boshqa",
+            "Ritsin, dikumarin, benzol"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi gemotrop zahar sud-tibbiy amaliyotda ko‘proq uchraydi? (is gazi va metgemoglobin hosil qiluvchilar, 149–150). Doskada: jadval. Tipik xato: gemolitik va gemoglobinotrop zaharlarni aralashtirish."
+    },
+    {
+      "title": "Funksional zaharlar",
+      "bullets": [
+        {
+          "text": "MNTni falajlovchi: sianidlar, fosfor organik birikmalar, vodorod sulfid.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MNTni qo‘zg‘atuvchi: strixnin, ergotamin, antidepressantlar, kofein, amfetaminlar, kokain, opiatlar, anasha.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "139–140"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MNTni so‘ndiruvchi: etil va boshqa spirtlar, barbituratlar, trankvilizatorlar; asosan periferik nerv tizimiga ta’sir etuvchilar (xolinergik, adrenoergik, antixolinesteraza).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "139–140"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Funksional zaharlar",
+        "nodes": [],
+        "header": [
+          "Guruh",
+          "Misol"
+        ],
+        "rows": [
+          [
+            "MNTni falajlovchi",
+            "Sianidlar, FOB, vodorod sulfid"
+          ],
+          [
+            "MNTni qo‘zg‘atuvchi",
+            "Strixnin, kofein, kokain, opiatlar"
+          ],
+          [
+            "MNTni so‘ndiruvchi",
+            "Spirtlar, barbituratlar"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Funksional zaharlarda nega murdada xos o‘zgarish topilmaydi? (135–136). Doskada: 4 guruh. Tipik xato: sianidlarni qon zahari deb bilish."
+    },
+    {
+      "title": "Toksikokinetika",
+      "bullets": [
+        {
+          "text": "Toksikokinetika — modda organizmga kirishi, taqsimlanishi, metabolizmi va chiqarilishi jarayonlari majmui.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136–137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kirish yo‘llari: og‘iz, nafas yo‘llari, teri, to‘g‘ri ichak, jinsiy a’zolar va in’eksiyalar; qonga qanchalik tez o‘tsa, toksik ta’sir kuchliroq.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Biotransformatsiya jigarda: fosfororganik birikmalar oksidlanganda toksikligi kuchayadi; metanol, etanol, etilenglikol oksidlanganda kuchliroq toksik moddalar hosil bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "137"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Metabolitlar",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Metabolit"
+        ],
+        "rows": [
+          [
+            "Metil spirti",
+            "Formaldegid"
+          ],
+          [
+            "Etil spirti",
+            "Atsetaldegid"
+          ],
+          [
+            "Etilenglikol",
+            "Oksalat kislotasi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: Nega metabolit asl moddadan zaharliroq bo‘lishi mumkin? Doskada: metanol → formaldegid. Tipik xato: biotransformatsiyani doim zararsizlantirish deb bilish."
+    },
+    {
+      "title": "Toksikodinamika",
+      "bullets": [
+        {
+          "text": "Toksikodinamika — zaharli modda va organizmning o‘zaro ta’sir mexanizmi, javob reaksiyalari majmui.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ta’sirlar: birlamchi toksik, keyingi toksik va metatoksik. Misol: sirka kislotasi — kuyish, keyin gemoliz, so‘ng toksik gepatit va nefroz.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Toksikodinamika toksikokinetika bilan uzviy bog‘liq: etilenglikol molekulasi narkotik, metaboliti oksalat kislotasi gepato- va nefrotoksik ta’sir qiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "138"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Ta’sirning uch bosqichini misol bilan ayting. Doskada: birlamchi → keyingi → metatoksik. Tipik xato: bu ta’sirlarni bir vaqtda sodir bo‘ladi deb bilish."
+    },
+    {
+      "title": "Kimyoviy-toksikologik tahlil (KTT)",
+      "bullets": [
+        {
+          "text": "KTT — tirik shaxs namunalari, murda materiali va ashyoviy dalillarda zaharli va kuchli ta’sir qiluvchi moddalar hamda ularning metabolitlarini aniqlash va miqdorini topishning ilmiy asoslangan usullari.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tezkor ishonchli natija tashxis va davolash yoki o‘lim sababi haqidagi sud-tibbiy xulosa uchun zarur.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Laboratoriya spirt va surrogatlari, alkaloidlar, uyqu va psixotrop dorilar, yurak glikozidlari, pestitsidlar, toksik metallar, is gazi, o‘yuvchi suyuqliklar uchun usullarni egallashi lozim.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "120"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega KTTda tezlik muhim? Doskada: ta’rif + ro‘yxat. Tipik xato: KTTni faqat murda uchun deb bilish."
+    },
+    {
+      "title": "Laboratoriya jihozlari va usullar",
+      "bullets": [
+        {
+          "text": "Laboratoriya turli xromatografiyalar (yupqa qatlamli, gaz, gaz-suyuqlik, yuqori samarali suyuqlik) bilan jihozlanishi kerak.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuningdek spektrofotometrik usullar (ultrabinafsha va ko‘rinish sohalarida elektron spektrometriya).",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu usullar ishonchli, ekspress va kam miqdordagi biomaterial hamda ashyoviy dalil bilan ishlashga imkon beradi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Asosiy usullar",
+        "nodes": [
+          "Yupqa qatlamli",
+          "Gaz",
+          "Gaz-suyuqlik",
+          "Yuqori samarali suyuqlik",
+          "Spektrofotometriya"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi usul uchuvchan moddalar uchun? (gaz xromatografiyasi, 159). Doskada: usullar ro‘yxati. Tipik xato: xromatografiyani faqat identifikatsiya usuli deb bilish."
+    },
+    {
+      "title": "Tahlil obyektlari",
+      "bullets": [
+        {
+          "text": "Obyektlar: qon, orqa miya suyuqligi, siydik, qusuq massalar, oshqozon yuvindisi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ashyoviy dalillar: dori vositalari, o‘simlik obyektlari (ko‘knori somoni), organik erituvchilar, maishiy kimyo vositalari, ovqat qoldiqlari, noma’lum suyuqliklar.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ayrim obyektlarda zahar kam (klofelin, rezerpin, yurak glikozidlari); maxsus izolyatsiya va yuqori sezgir ekspress usullar kerak.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "121–122"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Namunani olgan shifokor nimani hisobga olishi kerak? Doskada: ro‘yxat. Tipik xato: faqat qon tekshirish."
+    },
+    {
+      "title": "Natija ishonchligi va yolg‘on natijalar",
+      "bullets": [
+        {
+          "text": "Hisobga olinadi: zaharlanish turi (o‘tkir yoki surunkali), doza va tana vazni, biokirimlilik va oqsillar bilan bog‘lanish, sinergizm/antagonizm, jins, sog‘liq holati.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yolg‘on manfiy: kichik doza, past sezgir usul, «uchuvchan zahar» namunasini noto‘g‘ri saqlash, toksikokinetika ma’lumoti yo‘qligi, ataylab suyultirish yoki almashtirish.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yolg‘on musbat: davolash maqsadida oldin ishlatilgan dorilar topilishi mumkin. Manbaga ko‘ra manfiy xulosalar ishonchliligi ~70%, musbatlariniki 90% dan yuqori.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "122"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: Yolg‘on manfiy natijaning 3 sababini ayting. Doskada: manfiy / musbat ustunlari. Tipik xato: manfiy natijani zaharlanish yo‘q degan xulosa deb bilish."
+    },
+    {
+      "title": "Namunalar olish qoidalari",
+      "bullets": [
+        {
+          "text": "Noma’lum zaharda siydik va oshqozon yuvindisi (birinchi 200 ml) olinadi; qon 10 ml antikoagulyantli quruq idishga; idish markalanadi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonni alkogolga tekshirishda teri etanol yoki organik erituvchi bilan dezinfeksiya qilinmaydi; xona haroratida 1 sutkadan ko‘p saqlansa, qonda 1‰ gacha etanol hosil bo‘ladi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Namunalar sovutkichda saqlanadi; ammo sovuq har doim biotransformatsiyani to‘xtatmaydi (siydikda sutkada 0,5‰, diabetda 1,1‰ gacha etanol).",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "124"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega teri etanol bilan artilmaydi? Doskada: «yolg‘on musbat manbalari». Tipik xato: sovutkichda saqlangan namunani har doim o‘zgarmagan deb hisoblash."
+    },
+    {
+      "title": "Tahlil sxemasi",
+      "bullets": [
+        {
+          "text": "Yo‘naltirilmagan tahlil kerak bo‘ladi, chunki yo‘llanmada ko‘pincha «noma’lum zahar» yoziladi; yo‘naltirilgan tahlil esa klinik tashxis asosida bajariladi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Avval siydik: tomchi reaksiyalar, xromatografik skrining; so‘ng toksikant izolyatsiyasi (ekstraksiya, reekstraksiya, distillyatsiya, sorbsiya, mineralizatsiya).",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "124–125"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "So‘ng sifat aniqlash va (imkon bo‘lsa) bir namunada miqdor aniqlash; yakuniy tashxisni shifokor-toksikolog klinik ma’lumotlar bilan qo‘yadi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "125–126"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: Yo‘naltirilgan va yo‘naltirilmagan tahlil farqi? Doskada: sxema. Tipik xato: tashxisni faqat kimyogar qo‘yadi deb bilish."
+    },
+    {
+      "title": "Zaharlanish fazalari va sezgirlik",
+      "bullets": [
+        {
+          "text": "Taqsimlanish fazasi qon va siydikdagi konsentratsiyani solishtirib aniqlanadi: qonda yuqori bo‘lsa — rezorbsiya, siydikda yuqori bo‘lsa — eliminatsiya fazasi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "126–127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu davr (so‘rilish va chiqarilish) toksikogen bosqich deyiladi; detoksikatsiya usullarini tanlash uchun tahlil zarur.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘tkir zaharlanishda usullar sezgirligi nano- va pikogramm miqdorda bo‘lishi kerak (10⁻⁹ va 10⁻¹² g).",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qon va siydikdagi konsentratsiyalar nisbati nimani ko‘rsatadi? Doskada: ikki faza. Tipik xato: fazalarni aralashtirish."
+    },
+    {
+      "title": "Mastlik ekspertizasi uchun namunalar",
+      "bullets": [
+        {
+          "text": "Obyektlar: qon, siydik, soch, tirnoq, ter-yog‘ ajralmalari; qon kamida 10 ml; gaz-suyuqlik xromatografiyasida alkogol uchun 2–3 ml yetarli.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Siydik: alkogol uchun 2–5 ml; narkotik va psixotrop moddalar uchun kamida 200 ml; olish xodim nazoratida, almashtirish va suyultirishni istisno qilish uchun.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Soch: kamida 15–20 tola turli sohalardan, teriga yaqin kesiladi; tirnoq har bir qo‘ldan; namunalar alohida konvertda muhrlanadi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "127–128"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega soch va tirnoq tekshiriladi? (manba sababini keltirmaydi). Doskada: obyekt → hajm. Tipik xato: bir namuna turi bilan chegaralanish."
+    },
+    {
+      "title": "Natijani baholash: aniqlanish muddatlari",
+      "bullets": [
+        {
+          "text": "Ayrim moddalar (masalan, opiatlar) faqat yuqori konsentratsiyada aniqlanadi, tez parchalanadi va taxminan 8 soatda chiqariladi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "128"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlar bir necha kun aniqlanadi; tetragidrokannabinol siydikda 3 sutka aniqlanadi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "128"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alkogolga tekshiruv namuna olinganidan keyin 1 soat ichida; steril olingan namuna 0°C sovutkichda 1 sutkadan ko‘p saqlanmaydi; namunani soxtalashtirish ehtimoli bor.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "128"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Aniqlanish muddatlari",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Muddat"
+        ],
+        "rows": [
+          [
+            "Opiatlar",
+            "~8 soat"
+          ],
+          [
+            "Barbituratlar",
+            "Bir necha kun"
+          ],
+          [
+            "THC (siydikda)",
+            "3 sutka"
+          ],
+          [
+            "Alkogol tekshiruvi",
+            "Namunadan 1 soat ichida"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Muddat bilan natija qanday bog‘liq? Doskada: jadval. Tipik xato: barcha moddalar bir xil muddat aniqlanadi deb bilish."
+    },
+    {
+      "title": "KTT ekspertizasi bosqichlari",
+      "bullets": [
+        {
+          "text": "Obyektni qabul qilish: ekspert obyekt aynan yo‘llangani va tashishda o‘zgarmaganiga ishonch hosil qilgandagina tahlil boshlanadi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Obyekt va miqdorini tanlash: zahar to‘planadigan obyekt, odatda 100 yoki 50 g; sezgir usullarda 20 g; izolyatsiya usuli taxminiy zaharga bog‘liq.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "So‘ng tozalash va konsentratsiya, aniqlash va miqdor, talqin (rasmiy manbalar bo‘yicha) va xulosa tuzish.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "130"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Bosqichlar",
+        "nodes": [
+          "Qabul",
+          "Tanlash",
+          "Izolyatsiya",
+          "Aniqlash",
+          "Talqin",
+          "Xulosa"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega obyekt almashganiga ishonch shart? Doskada: 6 bosqich. Tipik xato: izolyatsiya usulini obyekt turiga qarab tanlash (manba: zahar guruhiga qarab)."
+    },
+    {
+      "title": "KTT ekspertizasining o‘ziga xos jihatlari (1)",
+      "bullets": [
+        {
+          "text": "Obyektlar xilma-xil: murda a’zolari, suyuqliklar, ovqat, ichimlik, kosmetika, pestitsidlar, havo, tuproq, kiyim.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "130–131"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Katta navesga yoki hajmga nisbatan kam (ko‘pincha iz) miqdordagi zaharni izolyatsiya qilish zarur; natija izolyatsiya usuliga bog‘liq.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "130–131"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tahlil toza modda bilan emas, endogen birikmalar va metabolitlar aralashmasi bilan; morfin va 6-MAM topilishi geroin qabul qilinganini asoslaydi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "131"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega metabolit topilishi muhim? Doskada: «morfin + 6-MAM → geroin». Tipik xato: metabolitni asl moddaga tenglashtirish."
+    },
+    {
+      "title": "KTT ekspertizasining o‘ziga xos jihatlari (2)",
+      "bullets": [
+        {
+          "text": "Reanimatsiyadan keyin o‘lim sabablarini aniqlash va organizmdagi toksik elementlar (mikroelementlar)ni to‘g‘ri baholash zarur.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "131"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Chirigan obyektlarda tahlil murda zaharlari (ptomainlar) va to‘qima parchalanishi mahsulotlari tufayli qiyinlashadi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "131"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tahlil yo‘naltirilmagan (majburiy ro‘yxat bo‘yicha) yoki yo‘naltirilgan (taxmin qilingan modda tasdiqlanadi yoki istisno qilinadi) bo‘ladi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "132"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Chirigan murdada nimalar xalaqit beradi? Doskada: 3 jihat. Tipik xato: majburiy ro‘yxatni Qozog‘iston buyrug‘i bo‘yicha bizga to‘g‘ridan-to‘g‘ri tatbiq etish (manba shu davlat hujjatiga tayanadi)."
+    },
+    {
+      "title": "Sezgirlik va hujjatlashtirish",
+      "bullets": [
+        {
+          "text": "Usullar sezgirligi taxmin qilingan toksik dozalardan past bo‘lmasligi kerak; odatda aniqlash chegarasi 10⁻³–10⁻⁶ g.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "132"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Ekspert ish jurnaliga navesga olish, izolyatsiya, sifat reaksiyalari va hisob-kitoblarni yozadi; xulosa shu asosda tuziladi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xulosaga imkon bo‘lsa kristallar, nalyotlar va reaksiya mahsulotlarining (masalan, «berlin lazuri», «kumush ko‘zgu») mikrofotosuratlari ilova qilinadi.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "132"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ish jurnali ahamiyatli? Doskada: «jurnal → xulosa». Tipik xato: jurnalsiz xulosa tuzish."
+    },
+    {
+      "title": "Zaharni ajratib olish usullari",
+      "bullets": [
+        {
+          "text": "Obyektivlik shartlari: obyektni to‘g‘ri qabul qilish, tadqiqot rejasi, sifatli izolyatsiya (eng mas’uliyatli bosqich).",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usul tanlovi: savollar, voqea holatlari va dastlabki sinovlar natijalari hamda usulning ajratish imkoniyatiga bog‘liq.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "133–134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Guruhlar: ekstraksiya va sorbsiya (dorilar, narkotiklar, pestitsidlar), distillyatsiya («uchuvchan» zaharlar), mineralizatsiya (metall zaharlar), suv bilan ekstraksiya va dializ (kislota, ishqor, nitritlar).",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Izolyatsiya usullari",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Guruh"
+        ],
+        "rows": [
+          [
+            "Ekstraksiya, sorbsiya",
+            "Dori, narkotik, pestitsid"
+          ],
+          [
+            "Distillyatsiya",
+            "«Uchuvchan» zaharlar"
+          ],
+          [
+            "Mineralizatsiya",
+            "Metall zaharlar, ftor"
+          ],
+          [
+            "Suv bilan ekstraksiya, dializ",
+            "Kislota, ishqor, nitrit, nitrat"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: Qaysi zahar guruhiga qaysi usul mos? Doskada: jadval. Tipik xato: bitta usulni barcha zaharlar uchun qo‘llash."
+    },
+    {
+      "title": "Murda va hodisa joyidagi belgilar",
+      "bullets": [
+        {
+          "text": "Hodisa joyida shart-sharoit, yot hid, dori idishlari, shpritslar, retseptlar, ajratmalar va qusuq moddalar; tanada in’eksiya izlari e’tiborga olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘yuvchi zaharlarda og‘iz atrofida kimyoviy kuyish izlari va oqmalar; sianidlarda ichki a’zolardan achchiq bodom hidi, sirka kislotasida o‘tkir hid.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "135–136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murda dog‘lari rangi: is gazida pushti, sianidda yorqin olcha, metgemoglobinda jigarrang, gemolizda sarg‘ish.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Murda dog‘lari rangi",
+        "nodes": [],
+        "header": [
+          "Zahar",
+          "Rang"
+        ],
+        "rows": [
+          [
+            "Is gazi",
+            "Pushti"
+          ],
+          [
+            "Sianidlar",
+            "Yorqin olcha"
+          ],
+          [
+            "Metgemoglobin hosil qiluvchilar",
+            "Jigarrang"
+          ],
+          [
+            "Gemoliz chaqiruvchilar",
+            "Sarg‘ish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: Rang bo‘yicha ekspert qanday xulosaga keladi? Doskada: jadval. Tipik xato: rang asosida yakuniy tashxis qo‘yish."
+    },
+    {
+      "title": "Mushak qotishi va funksional zaharlar",
+      "bullets": [
+        {
+          "text": "Strixnin va boshqa talvasa chaqiruvchi zaharlarda mushak qotishi tez va kuchli rivojlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloral gidrat, kurare, miorelaksantlarda mushak qotishi sust va kuchsiz.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Funksional zaharlarning ko‘pchiligida murdaning tashqi va ichki tekshiruvida xos o‘zgarishlar aniqlanmasligi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Belgilar bo‘lmasa, zaharlanishni qanday isbotlaysiz? (laboratoriya va klinika). Doskada: 2 guruh. Tipik xato: belgi yo‘q — zaharlanish yo‘q deb xulosa qilish."
+    },
+    {
+      "title": "Is gazi: mexanizm va klinika",
+      "bullets": [
+        {
+          "text": "Is gazi rang va hidsiz; toksik ta’siri karboksigemoglobin hosil qilishi va temir saqlovchi fermentlarga ta’siri tufayli; organizmda metabolizmga uchramaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "150"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Belgilar: bosh og‘rig‘i, quloqda shovqin, ko‘ngil aynishi, qusish, yuz qizarishi, keyin hush yo‘qolishi va talvasali koma.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "150"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Karboksigemoglobin 25–30% dan oshganda dastlabki belgilar; 60% dan oshganda nafas markazi falajidan o‘lim; havoda 1% dan ortiq bo‘lsa yashinsimon shakl.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "150"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Yashinsimon shaklda qonning qaysi qismida karboksigemoglobin topiladi? (chap qorincha va aorta boshlang‘ich qismi). Doskada: 25–30% / 60%. Tipik xato: faqat periferik qonni tekshirish."
+    },
+    {
+      "title": "Is gazi: murda belgilari va sinamalar",
+      "bullets": [
+        {
+          "text": "Karboksigemoglobin pushti-qizg‘ish: murda dog‘lari, mushaklar, suyuq qon, ichki a’zolar shu rangda; havoda 0,4% da 20–30 min ichida o‘lim.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "151"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dastlabki sinamalar: ishqor 33% (Goppe-Zeyler) yoki formaldegid (Libman) — normal qon qo‘ng‘ir-qora, karboksigemoglobinli qon rangi o‘zgarmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "151"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Spektroskopiyada ikki yutish yo‘lakchasi natriy gidrosulfitdan keyin ham saqlanadi; tasdiq uchun miqdoriy spektrofotometriya zarur.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "151"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Is gazini aniqlash",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Goppe-Zeyler (ishqor)",
+            "Karboksigemoglobinda rang o‘zgarmaydi"
+          ],
+          [
+            "Libman (formaldegid)",
+            "Karboksigemoglobinda rang o‘zgarmaydi"
+          ],
+          [
+            "Spektroskopiya + gidrosulfit",
+            "Ikki yutish yo‘lakchasi saqlanadi"
+          ],
+          [
+            "Spektrofotometriya",
+            "Miqdoriy tasdiq"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: Dastlabki sinamalar qayerda qo‘llanadi? (murda tekshiruvi va klinika; murakkab asbob talab etilmaydi). Doskada: 3 usul. Tipik xato: sinamani yakuniy tasdiq deb bilish."
+    },
+    {
+      "title": "Sianidlar bilan zaharlanish",
+      "bullets": [
+        {
+          "text": "Sianid kislotasining letal dozasi 0,05 g, kaliy sianidniki 0,1–0,2 g; zaharlanish ko‘proq o‘rik, shaftoli, olxo‘ri danagi mag‘izidan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "153"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sian anioni sitoxromoksidazadagi temirni bog‘lab, to‘qima gipoksiyasi va hayotiy markazlar falajiga olib keladi; antidot — metgemoglobin hosil qiluvchilar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "153–154"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdada olcha rang-qizg‘ish dog‘lar, achchiq bodom hidi, suyuq to‘q qizil qon; sud-kimyoviy tekshiruvning ahamiyati katta.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "154"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega achchiq bodom hidi tez yo‘qolishi mumkin? (uchuvchanlik). Doskada: letal dozalar. Tipik xato: hidni har doim aniqlanadigan belgi deb bilish."
+    },
+    {
+      "title": "Etil spirti: aniqlash usullari",
+      "bullets": [
+        {
+          "text": "Sifat sinamalari: chiqarilayotgan havoda kaliy permanganat yoki bixromat rangi o‘zgarishi (Moxov-Shinkarenko); qonda 0,3–0,4‰ da ham sezadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Soxta musbat natija tish kariesi, o‘pkaning surunkali kasalliklari va qandli diabetda bo‘lishi mumkin; miqdoriy usul asosan gaz-xromatografik.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "159"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qon va siydik namunalari kamida 5 ml, idish to‘la bo‘lishi; Vidmark konstantasi (eliminatsiya) o‘rtacha 0,13–0,15‰/soat; Vidmark-Balyakin formulasi qabul qilingan miqdorni hisoblaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "159–160"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: Qon va siydikdagi konsentratsiya nisbati nimani ko‘rsatadi? Doskada: rezorbsiya / eliminatsiya. Tipik xato: Vidmark konstantasini doimiy deb bilish (turlicha: 0,10–0,24)."
+    },
+    {
+      "title": "Laboratoriya tekshiruvlari turlari",
+      "bullets": [
+        {
+          "text": "Isbotlash yoki inkor etishda laboratoriya muhim: sud-kimyoviy, biokimyoviy, gistologik, gistokimyoviy, fizik, biologik, botanik, farmakologik, bakteriologik, mikologik.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "179–180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Amaliyotda eng ko‘p sud-kimyoviy va gistologik; gistologiya makroskopik tekshiruvni to‘ldirib, xos mikroskopik o‘zgarishlarni aniqlaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metall saqlovchilarda fizik (spektral), ovqatdan zaharlanishda bakteriologik, biologik, fermentlarga ta’sir etuvchilarda biokimyoviy; o‘simliklarda botanik, qo‘ziqorinlarda mikologik tekshiruv.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "180"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi zaharlanishga qaysi tekshiruv mos? Doskada: jadval. Tipik xato: bir turdagi tekshiruv bilan cheklanish."
+    },
+    {
+      "title": "Namuna olish: «uch nuqta» qoidasi",
+      "bullets": [
+        {
+          "text": "Zahar ma’lum bo‘lganda obyektlar «uch nuqta» qoidasi bo‘yicha olinadi: zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Manba noma’lum bo‘lsa: bosh miyaning 1/3, o‘pkaning 1/4, jigarning 1/3 (o‘t qopi va o‘t bilan), butun buyrak siydik bilan, oshqozon massasi, ichak, 100–200 ml qon (alohida idishda).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Chuqur chirishda ko‘krak-qorin bo‘shliqlari a’zolari aralashmasidan 1,5–2,0 kg «o‘rta sinama» olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Og‘iz orqali kirgan zaharda qaysi a’zolar olinadi? (oshqozon massasi, jigar bo‘lagi, buyrak siydik bilan). Doskada: «kirish — ta’sir — chiqish». Tipik xato: faqat oshqozon massasini olish."
+    },
+    {
+      "title": "Zahar topilmasligi va soxta musbat natija",
+      "bullets": [
+        {
+          "text": "Zaharlanish bo‘lmasa ham modda topilishi mumkin: dori sifatida qo‘llanganda, chirishda hosil bo‘lganda, kasbiy faoliyatda; obyekt olish va tekshirishdagi kamchiliklar soxta musbatga olib keladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlanishda zahar topilmasligi mumkin: modda tez parchalanganda, intensiv infuzion muolajada, uzoq vaqt o‘tganda, kamchiliklarda; ayrim moddalarni aniqlash usuli ishlab chiqilmagan bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiy muassasada zaharlanishga shubha bo‘lsa, obyektlar imkon qadar tez olinadi: qon, siydik, oshqozon yuvmasi, qusuq, axlat, zahar qoldiqlari yoki idishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "180"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: Nega tez namuna olish muhim? Doskada: «soxta musbat / soxta manfiy». Tipik xato: zahar topilmasa, zaharlanish bo‘lmagan deb hisoblash."
+    },
+    {
+      "title": "Ekspert baholashi: yakuniy tamoyil",
+      "bullets": [
+        {
+          "text": "Sud-kimyoviy tekshiruv natijalari hamisha boshqa ma’lumotlar bilan birgalikda baholanishi lozim.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Laboratoriya natijalari voqea tafsilotlari, katamnestik yoki klinik ma’lumotlar va murdaning makroskopik tekshiruvi bilan birgalikda tanqidiy baholanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "181"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspert xulosasining ishonchliligi va asoslanganligi laboratoriya tekshiruvlari ko‘lami va natijalariga bog‘liq.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Kimyoviy natija va klinika o‘rtasida ziddiyat bo‘lsa nima qilasiz? Doskada: «natija + voqea + klinika + makroskopiya». Tipik xato: bitta laboratoriya natijasiga tayanib xulosa tuzish."
+    },
+    {
+      "title": "Xulosa",
+      "bullets": [
+        {
+          "text": "Sud-tibbiy toksikologiya huquqni muhofaza idoralari vazifalarini hal etadi; zaharlar mahalliy va umumiy (destruktiv, qon, funksional) guruhlarga bo‘linadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132–138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kimyoviy-toksikologik tahlil: namuna olish, izolyatsiya, aniqlash, miqdor, talqin; usullar xromatografiya va spektrofotometriya.",
+          "source": {
+            "author": "Baizoldanov T. (Байзолданов Т.)",
+            "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+            "page": "120–125"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Belgilar va laboratoriya natijalari boshqa ma’lumotlar bilan tanqidiy baholanadi; soxta musbat va manfiy natijalar mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "180–181"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Bugungi ma’ruzaning 3 xulosasi. Doskada: umumiy sxema. Tipik xato: faqat tasnifni yodlash va tahlilni unutish."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Zaharlar sud-tibbiy tasnifda qanday ikki asosiy guruhga bo‘linadi?",
+      "options": [
+        "Tabiiy va sun’iy",
+        "Asosan mahalliy va asosan umumiy ta’sir etuvchilar",
+        "Suyuq va qattiq",
+        "Kislota va ishqor"
+      ],
+      "correct_index": 1,
+      "explanation": "Barcha zaharlar shartli ravishda asosan mahalliy va asosan umumiy ta’sir etuvchilarga bo‘linadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "138"
+      }
+    },
+    {
+      "question": "Quyidagilardan qaysi biri destruktiv zahar?",
+      "options": [
+        "Strixnin",
+        "Simob birikmalari",
+        "Is gazi",
+        "Etil spirti"
+      ],
+      "correct_index": 1,
+      "explanation": "Destruktiv zaharlar: simob, qo‘rg‘oshin, rux, margimush, fosfor va ularning birikmalari.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "139"
+      }
+    },
+    {
+      "question": "Zaharlanishning sud-tibbiy diagnostikasi nechta bosqichga asoslanadi?",
+      "options": [
+        "Ikki",
+        "Uch",
+        "To‘rt",
+        "Besh"
+      ],
+      "correct_index": 1,
+      "explanation": "Diagnostika uch bosqichda to‘planadigan dalillarga asoslanadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "135"
+      }
+    },
+    {
+      "question": "Toksikologik tekshiruv uchun obyektlar «uch nuqta» qoidasi bo‘yicha qayerdan olinadi?",
+      "options": [
+        "Bosh, tana, oyoq",
+        "Zahar kirgan, asosan ta’sir etgan va chiqqan joydan",
+        "Faqat oshqozondan",
+        "Faqat qondan"
+      ],
+      "correct_index": 1,
+      "explanation": "Obyektlar zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan olinadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Metanol metabolizmida qaysi modda hosil bo‘ladi?",
+      "options": [
+        "Atsetaldegid",
+        "Oksalat kislotasi",
+        "Formaldegid",
+        "Sirka kislotasi"
+      ],
+      "correct_index": 2,
+      "explanation": "Metil spirti oksidlanganda formaldegid hosil bo‘ladi (etanoldan atsetaldegid, etilenglikoldan oksalat kislotasi).",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "137"
+      }
+    },
+    {
+      "question": "Qon va siydikdagi konsentratsiyalar solishtirilganda qonda yuqori bo‘lsa, qaysi faza?",
+      "options": [
+        "Eliminatsiya",
+        "Rezorbsiya",
+        "Detoksikatsiya",
+        "Shok"
+      ],
+      "correct_index": 1,
+      "explanation": "Zahar konsentratsiyasi qonda yuqori bo‘lsa — rezorbsiya, siydikda yuqori bo‘lsa — eliminatsiya fazasi.",
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "126–127"
+      }
+    },
+    {
+      "question": "Qonni alkogolga tekshirish uchun olishda teri nima bilan dezinfeksiya qilinmaydi?",
+      "options": [
+        "Suv bilan",
+        "Etanol yoki organik erituvchi bilan",
+        "Yod bilan",
+        "Sovun bilan"
+      ],
+      "correct_index": 1,
+      "explanation": "Teri etanol yoki organik erituvchilar bilan dezinfeksiya qilinmaydi, aks holda soxta musbat natija mumkin.",
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "124"
+      }
+    },
+    {
+      "question": "Morfin va 6-MAM topilishi nimani asoslaydi?",
+      "options": [
+        "Kodein qabul qilinganini",
+        "Geroin qabul qilinganini",
+        "Alkogol qabul qilinganini",
+        "Nikotin qabul qilinganini"
+      ],
+      "correct_index": 1,
+      "explanation": "Biologik suyuqliklarda morfin va 6-MAM topilishi geroin qabul qilinganini asoslaydi.",
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "131"
+      }
+    },
+    {
+      "question": "Is gazi bilan zaharlanishning murdadagi asosiy belgilaridan biri nima?",
+      "options": [
+        "Yorqin olcha dog‘lar",
+        "Pushti-qizg‘ish murda dog‘lari va suyuq qon",
+        "Jigarrang dog‘lar",
+        "Sarg‘ish rang"
+      ],
+      "correct_index": 1,
+      "explanation": "Karboksigemoglobin pushti-qizg‘ish rangga ega, shu sababli murda dog‘lari, mushaklar, suyuq qon shu rangda bo‘ladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "151"
+      }
+    },
+    {
+      "question": "Sud-kimyoviy tekshiruv natijalari qanday baholanishi kerak?",
+      "options": [
+        "Yagona hal qiluvchi dalil sifatida",
+        "Boshqa ma’lumotlar bilan birgalikda tanqidiy",
+        "Faqat gistologiya bilan",
+        "Baholanmaydi"
+      ],
+      "correct_index": 1,
+      "explanation": "Natijalar hamisha boshqa ma’lumotlar bilan birgalikda baholanishi lozim.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "180–181"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Yoz mevalari danagi mag‘izidagi amigdalin ichakda fermentlar ta’sirida sianid kislotasiga aylanadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "153"
+      }
+    },
+    {
+      "text": "Spirtli ichimlik iste’mol qilingan vaqtni baholashda qon va siydikdagi alkogol konsentratsiyalarini taqqoslash imkon beradi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "159"
+      }
+    },
+    {
+      "text": "Qon namunasi alkogolga olinganda teri etanol bilan artilsa, yolg‘on musbat natija bo‘lishi mumkin; xona haroratida 1 sutkadan ko‘p saqlansa, qonda 1‰ gacha etanol hosil bo‘ladi.",
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "124"
+      }
+    },
+    {
+      "text": "Ish jurnali kimyoviy-toksikologik laboratoriyada yuridik hujjat hisoblanadi: u tikilgan, sahifalari raqamlangan bo‘lishi kerak.",
+      "source": {
+        "author": "Baizoldanov T. (Байзолданов Т.)",
+        "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+        "page": "123"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "Bob 6. Sud-tibbiy toksikologiya"
+    },
+    {
+      "author": "Baizoldanov T. (Байзолданов Т.)",
+      "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+      "year": 2021,
+      "pages": "1-qism, 3-bob: zaharlanishlar tasnifi va toksikokinetika, s.53-119"
+    },
+    {
+      "author": "Baizoldanov T. (Байзолданов Т.)",
+      "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
+      "year": 2021,
+      "pages": "1-qism, 4-bob: kimyoviy-toksikologik tahlil metodologiyasi, s.120-151"
+    },
+    {
+      "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+      "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+      "year": null,
+      "pages": "XIII-bob. Sud-tibbiy toksikologiya; bet 284-350"
+    },
+    {
+      "author": "Ромодановский П.О., Баринов Е.Х.",
+      "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2017,
+      "pages": "5-modul. Zaharlovchi moddalar ta’siridan jarohat va o‘lim; bet 375-407"
+    },
+    {
+      "author": "Харин Г.М. (Kharin G.M.)",
+      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2006,
+      "pages": "VI bo‘lim, 15-bob. Zaharlar va zaharlanishlar haqida umumiy ma’lumot; test nazorati; bet 129-138"
+    },
+    {
+      "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+      "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2004,
+      "pages": "2-bob. Narkotik intoksikatsiyalarni sud-tibbiy diagnostika qilishning yangi metodologik yondashuvlari (kitob beti 89-124); bet 89-124"
+    },
+    {
+      "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+      "title": "Simpson's Forensic Medicine, 13th ed.",
+      "year": 2011,
+      "pages": "Chapter 18. Principles of toxicology, pp. 181–187"
+    },
+    {
+      "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+      "title": "Simpson's Forensic Medicine, 13th ed.",
+      "year": 2011,
+      "pages": "Chapter 17. Heat, cold and electrical trauma, pp. 169–180"
+    }
+  ]
+}
