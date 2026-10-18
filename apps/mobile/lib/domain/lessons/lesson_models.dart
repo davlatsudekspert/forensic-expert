@@ -253,8 +253,8 @@ class LessonReference {
   final String year;
   final String pages;
 
-  /// «Muallif. Sarlavha. Yil. Sahifalar».
-  String get line => [author, title, year, pages]
+  /// «Muallif. Sarlavha. Yil. Sahifalar». Sarlavhada yil bo‘lsa, takrorlanmaydi.
+  String get line => [author, title, if (!title.contains(year)) year, pages]
       .where((e) => e.isNotEmpty)
       .map((e) => e.endsWith('.') ? e.substring(0, e.length - 1) : e)
       .join('. ');

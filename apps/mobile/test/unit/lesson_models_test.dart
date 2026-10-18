@@ -107,4 +107,19 @@ void main() {
     final no = await FakeLessonsService(isTeacher: false).list();
     expect(no.ok, isFalse);
   });
+
+  test('adabiyot qatorida yil takrorlanmaydi', () {
+    const twice = LessonReference(
+      author: 'Muhamedova Z.M.',
+      title: 'Bioetika, Toshkent, 2006',
+      year: '2006',
+      pages: 'b. 5',
+    );
+    expect(
+      twice.line,
+      'Muhamedova Z.M.. Bioetika, Toshkent, 2006. b. 5'.replaceAll('M..', 'M.'),
+    );
+    const once = LessonReference(author: 'A', title: 'Kitob', year: '2019');
+    expect(once.line, 'A. Kitob. 2019');
+  });
 }
