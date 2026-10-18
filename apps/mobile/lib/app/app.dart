@@ -38,7 +38,9 @@ class ForensicExpertApp extends ConsumerWidget {
       if (inv == null) return;
       final here = router.routerDelegate.currentConfiguration.uri.path;
       if (here == Routes.groupJoin) return;
-      router.go(Routes.groupJoinWith(inv.code, assignmentId: inv.assignmentId));
+      router.push<void>(
+        Routes.groupJoinWith(inv.code, assignmentId: inv.assignmentId),
+      );
     });
 
     // Kontrast: `system` — MaterialApp OS sozlamasiga ko‘ra highContrast

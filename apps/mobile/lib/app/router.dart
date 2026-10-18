@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:fe_content_schema/fe_content_schema.dart' show KnowledgeArea;
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -170,7 +171,34 @@ final routerProvider = Provider<GoRouter>((ref) {
   final refresh = _SettingsListenable(ref);
   ref.onDispose(refresh.dispose);
 
-  final router = GoRouter(
+  late final GoRouter router;
+
+  // Onboarding tugagach (yoki havola ilova ochiq turganda kelsa) Asosiy
+  // sahifaga kelindi: kutilayotgan taklif BIR MARTA qo‘shilish sahifasini
+  // ochadi — keyingi kadrda, Asosiy chizilgandan keyin.
+  void openPendingGroupInvite() {
+    SchedulerBinding.instance
+      ..addPostFrameCallback((_) {
+        final here = router.routerDelegate.currentConfiguration.uri.path;
+        final settings = ref.read(settingsControllerProvider);
+        final pending = ref.read(pendingGroupInviteProvider);
+        if (pendingGroupInviteRedirect(settings, here, pending) == null) {
+          return;
+        }
+        final inv = ref
+            .read(pendingGroupInviteProvider.notifier)
+            .takeAutoOpen();
+        if (inv == null) return;
+        unawaited(
+          router.push<void>(
+            Routes.groupJoinWith(inv.code, assignmentId: inv.assignmentId),
+          ),
+        );
+      })
+      ..scheduleFrame();
+  }
+
+  router = GoRouter(
     navigatorKey: rootKey,
     initialLocation:
         requiredOnboardingStep(ref.read(settingsControllerProvider)) ??
@@ -204,33 +232,22 @@ final routerProvider = Provider<GoRouter>((ref) {
       }
       // Guruh QR havolasi (`/g/<KOD>?a=<test>`): taklif DISKDA saqlanadi —
       // yangi o‘rnatilgan ilovada onboarding/ro‘yxatdan o‘tish davomida
-      // yo‘qolmaydi; oxirida qo‘shilish sahifasi o‘zi ochiladi.
+      // yo‘qolmaydi. Avval Asosiy sahifa (yoki onboarding) chiziladi, so‘ng
+      // qo‘shilish sahifasi ustiga ochiladi (openPendingGroupInvite):
+      // shell hech qachon chizilmagan bo‘lsa, keyingi `go` nested
+      // navigator’da Hero o‘tishini o‘lchamsiz boshlaydi.
       if (state.uri.path.startsWith(Routes.groupLinkPrefix)) {
         final inv = GroupCode.fromUri(state.uri);
-        if (inv == null) {
-          return onboardingRedirect(settings, Routes.groups) ?? Routes.groups;
+        if (inv != null) {
+          ref.read(pendingGroupInviteProvider.notifier).remember(inv);
+          // Bir xil manzil (Asosiy → Asosiy) delegate’ni xabardor qilmaydi.
+          openPendingGroupInvite();
         }
-        final pending = ref.read(pendingGroupInviteProvider.notifier)
-          ..remember(inv);
-        // Onboarding tugamagan: avval u, taklif kutadi (Asosiyga kelganda).
-        final step = onboardingRedirect(settings, Routes.home);
-        if (step != null) return step;
-        pending.takeAutoOpen();
-        return Routes.groupJoinWith(inv.code, assignmentId: inv.assignmentId);
+        return onboardingRedirect(settings, Routes.home) ??
+            (inv == null ? Routes.groups : Routes.home);
       }
       _recordFirstStep(ref, state.matchedLocation);
-      final onboarding = onboardingRedirect(settings, state.matchedLocation);
-      if (onboarding != null) return onboarding;
-      // Onboarding tugadi va Asosiy sahifaga kelindi: kutilayotgan taklif
-      // (bir marta) qo‘shilish sahifasini ochadi.
-      if (state.matchedLocation == Routes.home &&
-          ref.read(pendingGroupInviteProvider) != null) {
-        final inv = ref
-            .read(pendingGroupInviteProvider.notifier)
-            .takeAutoOpen();
-        return pendingGroupInviteRedirect(settings, Routes.home, inv);
-      }
-      return null;
+      return onboardingRedirect(settings, state.matchedLocation);
     },
     routes: [
       GoRoute(
@@ -1070,6 +1087,10 @@ final routerProvider = Provider<GoRouter>((ref) {
         ],
       ),
     ],
+  );
+  router.routerDelegate.addListener(openPendingGroupInvite);
+  ref.onDispose(
+    () => router.routerDelegate.removeListener(openPendingGroupInvite),
   );
   ref.onDispose(router.dispose);
   return router;

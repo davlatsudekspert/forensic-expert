@@ -672,17 +672,24 @@ class FakeClassGroupsBackend {
 
 /// Bitta foydalanuvchi ko‘rinishi ([FakeClassGroupsBackend] ustida).
 class FakeClassGroupsService implements ClassGroupsService {
-  FakeClassGroupsService(this.backend, {required this.userIdOf});
+  FakeClassGroupsService(
+    this.backend, {
+    required this.userIdOf,
+    this.demo = true,
+  });
 
   final FakeClassGroupsBackend backend;
 
   /// Hozirgi foydalanuvchi (kirmagan bo‘lsa — `null`).
   final String? Function() userIdOf;
 
+  /// Demo belgisi (testlar va kadrlar uchun o‘chiriladi).
+  final bool demo;
+
   @override
   bool get isConfigured => true;
   @override
-  bool get isDemo => true;
+  bool get isDemo => demo;
   @override
   String? get userId => userIdOf();
 
