@@ -2,7 +2,7 @@
 
 Asos: Yuldashev Z.A., Umarova G.Q. «Toksikologik kimyo» o‘quv-uslubiy majmua (2025, `toks`) — 15 ma’ruza + 30 laboratoriya; DVSSM majmuasi (2025, `dvssm`) — 27 ma’ruza; «Giyohvand moddalar tahlili» (2024, `gmt`) — narkotik/psixotrop/prekursor boblari. Bo‘shliqlar malaka materiallari (fayl id — `malaka/index.tsv`) bilan to‘ldirildi. Sahifa = PDF sahifasi.
 
-**Jami: 81 dars** — 45 ma’ruza va 36 amaliy (laboratoriya) mashg‘ulot (har biri 2 akad. soat deb olinsa: 90 + 72 = 162 soat). Amaliylarning 30 tasi `toks` laboratoriya rejasidan; 6 tasi «[Qo‘shimcha]» — kitoblarda laboratoriya rejasi yo‘q mavzular (narkotik va psixotrop moddalar), `gmt` usullari va malaka fayllari asosida taklif.
+**Jami: 81 dars** — 45 ma’ruza va 36 amaliy (laboratoriya) mashg‘ulot (har biri 2 akad. soat deb olinsa: 90 + 72 = 162 soat). Amaliylarning 30 tasi `toks` laboratoriya rejasidan; 6 tasi «[Qo‘shimcha]» — kitoblarda laboratoriya rejasi yo‘q mavzular (narkotik va psixotrop moddalar), `gmt` usullari va malaka fayllari asosida taklif. Egasi 2026-10-18 da 76–81-darslarni kursda qoldirishni tasdiqladi.
 
 Kalitlar: `toks` = Yuldashev/Umarova 2025; `dvssm` = DVSSM majmua 2025; `gmt` = Giyohvand moddalar tahlili 2024.
 
@@ -83,12 +83,12 @@ Kalitlar: `toks` = Yuldashev/Umarova 2025; `dvssm` = DVSSM majmua 2025; `gmt` = 
 | 73 | FOB va xlororganik pestitsidlar: xlorofos, karbofos, geksaxloran | amaliy | xlorofos, karbofos, geksaxloran | YuQX, GX | toks 264-268; dvssm 270-277 | 068, 021, 033 |
 | 74 | Sintetik piretroidlar: sipermetrin, danitol, detsis | amaliy | sipermetrin, danitol, detsis | YuQX, GX, YuSSX | toks 268-272; dvssm 270-277 | 068 |
 | 75 | Noma’lum ob’ektni tahlil qilish (organik zaharlar); dalolatnoma | amaliy | — | umumiy tahlil sxemasi | toks 272-273 | 117 |
-| 76 | [Qo‘shimcha] Barbituratlar: ajratish, mikrokristalloskopiya, YuQX, UB-SF (pH 10/13) | amaliy | barbital, fenobarbital, barbamil | YuQX, UB-SF, mikrokristalloskopiya | gmt 101-117 | 022, 010 |
-| 77 | [Qo‘shimcha] 1,4-benzodiazepinlar: kislotali gidroliz → benzofenonlar, YuQX, Bratton-Marshall | amaliy | diazepam, nitrazepam, fenazepam, oksazepam | gidroliz, YuQX, Bratton-Marshall | gmt 132-144 | 030 |
-| 78 | [Qo‘shimcha] Fenotiazinlar: FPN-test (siydik), YuQX, UB-SF | amaliy | aminazin, diprazin, tizersin | FPN, YuQX, UB-SF | gmt 118-131 | 081 |
-| 79 | [Qo‘shimcha] Opiatlar: siydik gidrolizi, ekstraksiya, Marki/Frede, YuQX, UB-SF | amaliy | morfin, kodein, geroin/6-MAM | gidroliz, Marki, YuQX, UB-SF | gmt 16-53 | 052, 057 |
-| 80 | [Qo‘shimcha] Nasha: Dyukenua-Levin, mustahkam ko‘k B, YuQX | amaliy | TGK, KBN, KBD | Dyukenua-Levin, Fast Blue B, YuQX | gmt 60-72 | 049 |
-| 81 | [Qo‘shimcha] Efedrin/efedron, amfetaminlar va prekursorlarni aniqlash | amaliy | efedrin, efedron, amfetamin, sirka angidridi, KMnO4 | rangli testlar, YuQX | gmt 72-87; gmt 146-159 | 002, 065, 071 |
+| 76 | [Qo‘shimcha · egasi tasdiqladi] Barbituratlar: ajratish, mikrokristalloskopiya, YuQX, UB-SF (pH 10/13) | amaliy | barbital, fenobarbital, barbamil | YuQX, UB-SF, mikrokristalloskopiya | gmt 101-117 | 022, 010 |
+| 77 | [Qo‘shimcha · egasi tasdiqladi] 1,4-benzodiazepinlar: kislotali gidroliz → benzofenonlar, YuQX, Bratton-Marshall | amaliy | diazepam, nitrazepam, fenazepam, oksazepam | gidroliz, YuQX, Bratton-Marshall | gmt 132-144 | 030 |
+| 78 | [Qo‘shimcha · egasi tasdiqladi] Fenotiazinlar: FPN-test (siydik), YuQX, UB-SF | amaliy | aminazin, diprazin, tizersin | FPN, YuQX, UB-SF | gmt 118-131 | 081 |
+| 79 | [Qo‘shimcha · egasi tasdiqladi] Opiatlar: siydik gidrolizi, ekstraksiya, Marki/Frede, YuQX, UB-SF | amaliy | morfin, kodein, geroin/6-MAM | gidroliz, Marki, YuQX, UB-SF | gmt 16-53 | 052, 057 |
+| 80 | [Qo‘shimcha · egasi tasdiqladi] Nasha: Dyukenua-Levin, mustahkam ko‘k B, YuQX | amaliy | TGK, KBN, KBD | Dyukenua-Levin, Fast Blue B, YuQX | gmt 60-72 | 049 |
+| 81 | [Qo‘shimcha · egasi tasdiqladi] Efedrin/efedron, amfetaminlar va prekursorlarni aniqlash | amaliy | efedrin, efedron, amfetamin, sirka angidridi, KMnO4 | rangli testlar, YuQX | gmt 72-87; gmt 146-159 | 002, 065, 071 |
 
 ## Izohlar
 

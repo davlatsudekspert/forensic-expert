@@ -10,6 +10,7 @@ Hech narsa o'chirilmaydi. Test savollari (mcq) yuklanmaydi — ular «Sinfda tes
 import argparse
 import json
 import pathlib
+import re
 import subprocess
 import sys
 
@@ -17,16 +18,23 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tools/slides"))
 import topics  # noqa: E402
 
+# Egasi qarori (2026-10-18): kurs yozilmaydi, fakultet bo'yicha bitta guruh.
+# Joriy reja (KTP 2026) birinchi; eski rejadagi qolgan mavzular oxiriga qo'shiladi.
+# Guruh ichida bir xil prezentatsiyani ochadigan takror mavzu yashiriladi.
 COURSES = {
-    "2 kurs bioetika": "2-kurs · Bioetika",
-    "4 kurs davolash": "4-kurs · Davolash ishi",
-    "4 kurs pediatriya": "4-kurs · Pediatriya",
-    "5 kurs tibbiy profilaktika": "5-kurs · Tibbiy profilaktika",
-    "6 kurs davolash": "6-kurs · Davolash ishi",
     "KTP 2026 davolash": "Davolash ishi fakulteti",
     "KTP 2026 pediatriya": "Pediatriya fakulteti",
     "KTP 2026 stomatologiya": "Stomatologiya fakulteti",
+    "4 kurs davolash": "Davolash ishi fakulteti",
+    "6 kurs davolash": "Davolash ishi fakulteti",
+    "4 kurs pediatriya": "Pediatriya fakulteti",
+    "5 kurs tibbiy profilaktika": "Tibbiy profilaktika fakulteti",
+    "2 kurs bioetika": "Bioetika",
 }
+# Eski rejadagi mavzular joriy rejadan keyin turadi.
+# KTP ichida: ma'ruza (M), amaliy (A), mustaqil (MT), qo'shimcha (MR) — shu tartibda.
+KTP_PART = {"M": 0, "A": 100, "MT": 200, "MR": 300}
+POSITION_OFFSET = {"KTP 2026 davolash": 0, "KTP 2026 pediatriya": 0, "KTP 2026 stomatologiya": 0}
 
 
 def git_show(ref, path):
@@ -59,14 +67,21 @@ def main():
     aliases = json.loads(git_show(a.git_ref, "out/aliases.json"))["alias"]
     plan = (topics.parse_topics() + topics.parse_topics(topics.BIOETIKA) + topics.parse_ktp())
 
-    decks, rows = {}, []
+    order = list(COURSES)
+    plan.sort(key=lambda t: order.index(t["course"]) if t["course"] in COURSES else len(order))
+    decks, rows, seen = {}, [], set()
     for t in plan:
         if t["course"] not in COURSES:
             continue
         did = t["id"] if t["id"] in deck_ids else aliases.get(t["id"])
         if did not in deck_ids:
             continue
-        rows.append((t["id"], did, COURSES[t["course"]], t["title"], t.get("number") or 0))
+        course = COURSES[t["course"]]
+        pos = ((t.get("number") or 0) + KTP_PART.get(re.sub(r"\d+$", "", t["id"].rsplit("-", 1)[-1]), 0)
+               + POSITION_OFFSET.get(t["course"], 1000 * (order.index(t["course"]))))
+        hidden = (course, did) in seen
+        seen.add((course, did))
+        rows.append((t["id"], did, course, t["title"], pos, hidden))
         decks.setdefault(did, None)
     for did in decks:
         d = json.loads(git_show(a.git_ref, f"out/{did}.json"))
@@ -82,15 +97,18 @@ def main():
             "on conflict (deck_id) do update set title = excluded.title, deck = excluded.deck, "
             "slide_count = excluded.slide_count, search_text = excluded.search_text, "
             "source_lang = excluded.source_lang, updated_at = now();")
-    for tid, did, course, title, pos in rows:
+    for tid, did, course, title, pos, hidden in rows:
         out.append(
-            "insert into public.lesson_topics (topic_id, deck_id, course, title, position) values ("
-            f"{q(tid)}, {q(did)}, {q(course)}, {q(title[:400])}, {int(pos)}) "
+            "insert into public.lesson_topics (topic_id, deck_id, course, title, position, hidden) values ("
+            f"{q(tid)}, {q(did)}, {q(course)}, {q(title[:400])}, {int(pos)}, {str(hidden).lower()}) "
             "on conflict (topic_id) do update set deck_id = excluded.deck_id, course = excluded.course, "
-            "title = excluded.title, position = excluded.position;")
+            "title = excluded.title, position = excluded.position, hidden = excluded.hidden;")
     pathlib.Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     pathlib.Path(a.out).write_text("\n".join(out) + "\n", encoding="utf-8")
-    print(f"lessons: {len(decks)} deck, {len(rows)} mavzu → {a.out}")
+    shown = [r for r in rows if not r[5]]
+    print(f"lessons: {len(decks)} deck, {len(rows)} mavzu ({len(shown)} ko'rinadi) → {a.out}")
+    for c in dict.fromkeys(COURSES.values()):
+        print(f"  {c}: {sum(1 for r in shown if r[2] == c)}")
 
 
 if __name__ == "__main__":
