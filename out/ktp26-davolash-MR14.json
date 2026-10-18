@@ -1,0 +1,1825 @@
+{
+  "topic": "OIV infeksiyasining sud-gistologik diagnostikasi",
+  "slides": [
+    {
+      "title": "Kirish: OIV/OITS va autopsiya",
+      "bullets": [
+        {
+          "text": "Markaziy asab tizimi (MNS) OITSda o‘pkadan keyin ikkinchi eng ko‘p zararlanadigan organ hisoblanadi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Autopsiya kasallikning tabiiy kechishini tushunish va klinik jihatdan aniqlanmagan infeksiya hamda xavfli o‘smalarni tanib olish uchun qimmatli usul.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "OIV autopsiyalarida neyropatologik topilmalarni baholaydigan tizimli tadqiqotlar kam uchraydi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega OITSda MNS ikkinchi o‘rinda zararlanadi deb hisoblanadi? Doskada: MNS va o‘pka zararlanishi tartibini yozing. Tipik xato: Autopsiyani faqat o‘lim sababini aniqlash usuli deb bilish."
+    },
+    {
+      "title": "Bugungi mavzu uchun ikki tadqiqot",
+      "bullets": [
+        {
+          "text": "Braziliya tadqiqoti: 1989–2008 yillardagi 284 ta OITS autopsiyasida MNS o‘zgarishlari retrospektiv o‘rganilgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Janubiy Afrika tadqiqoti: CD4 ≤150 hujayra/μL bo‘lgan kattalarda 34 ta minimal invaziv autopsiya (MIA) o‘tkazilgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Study population; Abstract"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ikki tadqiqotni solishtirish",
+        "nodes": [],
+        "header": [
+          "Belgi",
+          "Silva va boshq.",
+          "Karat va boshq."
+        ],
+        "rows": [
+          [
+            "Autopsiyalar soni",
+            "284",
+            "34 (MIA)"
+          ],
+          [
+            "Asosiy ob’ekt",
+            "MNS o‘zgarishlari",
+            "TB va boshqa infeksiyalar"
+          ],
+          [
+            "Usul",
+            "Gistologiya",
+            "Gistologiya + mikrobiologiya"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Ikki tadqiqot dizayni qanday farq qiladi? Doskada: Ikki ustunli taqqoslash jadvali. Tipik xato: MIA va to‘liq autopsiyani bir xil deb hisoblash."
+    },
+    {
+      "title": "MNSda opportunistik agentlar va o‘smalar",
+      "bullets": [
+        {
+          "text": "MNSda eng ko‘p uchraydigan opportunistik agentlar: Toxoplasma gondii, Cryptococcus neoformans va sitomegalovirus.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘smalar orasida birlamchi non-Hodgkin limfomalari ustun turadi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "OIVga xos o‘zgarishlar odatda kasallikning kechki bosqichida paydo bo‘ladi; ko‘p yadroli gigant hujayralar MNSda OIV infeksiyasi uchun «patognomonik» deb hisoblanadi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega OIVga xos o‘zgarishlar kechroq paydo bo‘ladi? Doskada: Uch agent nomini yozdiring. Tipik xato: Gigant hujayralarni har qanday MNS infeksiyasiga xos deb bilish."
+    },
+    {
+      "title": "HAART davrida o‘zgarishlar",
+      "bullets": [
+        {
+          "text": "HAARTdan keyin opportunistik infeksiyalar kamaygan, OIV ensefaliti esa ko‘paygan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dunyoning qolgan qismida OITS holatlarining 90% dan ortig‘ida bemorlar OIVning nevrologik asoratlari paydo bo‘lguncha yashamaydi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rivojlanayotgan mamlakatlarda bunday autopsiya tadqiqotlari yanada kam, shu sababli neyropatologik o‘zgarishlarning haqiqiy tarqalishini aniqlash qiyin.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: HAART autopsiya manzarasini qanday o‘zgartirdi? Doskada: Oldin/keyin ikki ustun. Tipik xato: HAARTdan keyin MNS o‘zgarishlari butunlay yo‘qoladi deb o‘ylash."
+    },
+    {
+      "title": "Joyga qarab farq: sil meningiti",
+      "bullets": [
+        {
+          "text": "OIV autopsiyalarida sil meningiti Hindistonda 12%, Afrikada 11% holatda kuzatilgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "AQShda sil meningiti atigi 1,4% holatda uchragan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "OIV autopsiyalarida sil meningiti",
+        "nodes": [],
+        "header": [
+          "Mintaqa",
+          "Chastota"
+        ],
+        "rows": [
+          [
+            "Hindiston",
+            "12%"
+          ],
+          [
+            "Afrika",
+            "11%"
+          ],
+          [
+            "AQSh",
+            "1,4%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Bu farq nimani ko‘rsatadi? Doskada: Uch mintaqa foizini yozing. Tipik xato: Bir mintaqa ma’lumotini boshqasiga ko‘chirish."
+    },
+    {
+      "title": "Autopsiyaning klinik-patomorfologik qiymati",
+      "bullets": [
+        {
+          "text": "Wilkes: 101 ta autopsiyada OITSga bog‘liq kasalliklarning 74% klinik jihatdan gumon qilinmagan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gumon qilinmaganlar orasida: sitomegalovirus 49%, tizimli zamburug‘ 20%, Kaposi sarkomasi 14%, mikobakterioz 11%, MNS limfomasi 4%.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antinori: 1630 autopsiyada 297 ta invaziv zamburug‘ infeksiyasi topilgan; 54,2% klinik jihatdan gumon qilinmagan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ko‘p kasallik hayotlik davrida aniqlanmaydi? Doskada: Foizlarni kamayish tartibida yozing. Tipik xato: Autopsiya natijasini klinik tashxisga qarshi qo‘yish."
+    },
+    {
+      "title": "Braziliya tadqiqoti: maqsad va dizayn",
+      "bullets": [
+        {
+          "text": "Retrospektiv tadqiqot: OIV-musbat bemorlarning ketma-ket autopsiyalari (kamida 24 soat statsionarda bo‘lgan), Braziliya, Uberaba, 1989–2008.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqsad: antiretrovirus terapiyaga qarab MNS o‘zgarishlarini tavsiflash, yashash davomiyligini baholash va muhim o‘zgarishlar klinik gumon qilinganini aniqlash.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "1-bo‘lim (Introduction)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1989 yildan boshlab barcha autopsiyalarda OIV tekshiruvi uchun qon tizimli ravishda olingan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Retrospektiv dizaynning cheklovi nima? Doskada: Dizayn elementlarini yozdiring. Tipik xato: Retrospektiv tadqiqotni prospektiv deb hisoblash."
+    },
+    {
+      "title": "MNS gistologik namunalari standarti",
+      "bullets": [
+        {
+          "text": "Standart: kamida uch to‘qima bloki — turli bo‘laklardan (bir blok), bazal ganglionlar va gipokampdan (bir blok), o‘rta miya, ko‘prik va miyachadan (bir blok).",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Makroskopik o‘zgarishlar uchun qo‘shimcha bloklar olingan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Parafin kesmalari 5 μm qalinlikda gematoksilin-eozin bilan bo‘yalgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "MNS namunalari (kamida 3 blok)",
+        "nodes": [
+          "Bo‘laklar",
+          "Bazal ganglionlar va gipokamp",
+          "O‘rta miya, ko‘prik, miyacha"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega bir necha mintaqadan namuna olinadi? Doskada: Uch blokni sxemada ko‘rsating. Tipik xato: Faqat makroskopik o‘zgarishdan namuna olish."
+    },
+    {
+      "title": "Maxsus bo‘yashlar",
+      "bullets": [
+        {
+          "text": "Mikroorganizmlar va demielinizatsiyani baholash uchun maxsus bo‘yashlar qo‘llangan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qo‘llangan usullar: Gram, Grocott, Mucicarmin, Schiff davriy kislotasi (PAS), Fite Faraco, Luxol Fast Blue.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Gistologik bo‘yashlar",
+        "nodes": [],
+        "header": [
+          "Maqsad",
+          "Usullar"
+        ],
+        "rows": [
+          [
+            "Asosiy bo‘yash",
+            "Gematoksilin-eozin"
+          ],
+          [
+            "Mikroorganizmlar, demielinizatsiya",
+            "Gram, Grocott, Mucicarmin, PAS, Fite Faraco, Luxol Fast Blue"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Mikroorganizm va demielinizatsiya uchun nega har xil bo‘yashlar kerak? Doskada: Bo‘yashlar ro‘yxati. Tipik xato: Faqat gematoksilin-eozin yetarli deb o‘ylash."
+    },
+    {
+      "title": "Immunogistokimyo va in situ gibridizatsiya",
+      "bullets": [
+        {
+          "text": "Ayrim hollarda polimer usulida monoklonal antitanalar qo‘llangan: toksoplazma, sitomegalovirus, gerpes virusi va JC virus uchun.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Limfomani tavsiflash uchun CD3, CD20, CD30, CD45 va CD45-LCA ishlatilgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Epstein—Barr virusi uchun in situ gibridizatsiya uch ta non-Hodgkin limfomasida o‘tkazilgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Immunogistokimyo oddiy bo‘yashdan nimasi bilan farq qiladi? Doskada: Antitana—agent juftliklari. Tipik xato: Immunogistokimyoni barcha holatda majburiy deb hisoblash."
+    },
+    {
+      "title": "Antiretrovirus terapiya bo‘yicha guruhlar",
+      "bullets": [
+        {
+          "text": "A guruh — hech qanday antiretrovirus dori qabul qilmaganlar.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "B guruh — 1–2 antiretrovirus dori yoki 3 oydan kam HAART, yoki HAARTni 2 oydan ortiq tashlab qo‘yganlar.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "C guruh — HAARTni 3 oy va undan ko‘p qabul qilganlar.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Tadqiqot guruhlari",
+        "nodes": [],
+        "header": [
+          "Guruh",
+          "Mezon"
+        ],
+        "rows": [
+          [
+            "A",
+            "Antiretrovirus dori yo‘q"
+          ],
+          [
+            "B",
+            "1–2 dori; HAART <3 oy yoki >2 oy uzilish"
+          ],
+          [
+            "C",
+            "HAART ≥3 oy"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega faqat «HAART bo‘lgan/bo‘lmagan» bo‘linish yetarli emas? Doskada: Uch guruh jadvali. Tipik xato: HAART qabul qilganlarning hammasini C guruhga kiritish."
+    },
+    {
+      "title": "Tanlanma: 284 ta OITS autopsiyasi",
+      "bullets": [
+        {
+          "text": "1989–2008 yillarda 1785 ta autopsiya o‘tkazilgan; 299 tasi (16,7%) OIV-seropozitiv.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "15 tasi chiqarilgan: 9 tasida OITS mezonlari yo‘q, 6 tasida MNS gistologik kesmasi yoki kasallik tarixi yo‘q; 284 ta autopsiya tahlil qilingan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Tanlanma bosqichlari",
+        "nodes": [
+          "1785 autopsiya",
+          "299 OIV-seropozitiv",
+          "–15 chiqarilgan",
+          "284 tahlil"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ayrim holatlar tahlildan chiqarilgan? Doskada: Voronka sxemasi. Tipik xato: Chiqarilgan holatlar sonini qo‘shib unutish."
+    },
+    {
+      "title": "Bemorlar xarakteristikasi",
+      "bullets": [
+        {
+          "text": "284 tadan 80 tasi (28,2%) ayol; ayollar ulushi 17,8% (1989–1996) dan 33% (1997–2008) gacha oshgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘rtacha yosh 35,7 ± 10,8 yil (16 dan 69 gacha).",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xavf omillari: giyohvandlik 33,1% (94/284); gomoseksuallik/biseksuallik 14,1%; 27,1% da xavf omili ko‘rsatilmagan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Ayollar ulushining oshishi nimani bildiradi? Doskada: Ikki davr taqqoslash. Tipik xato: Tanlanmadagi ulushni umumiy aholiga ko‘chirish."
+    },
+    {
+      "title": "Davolash holati va kech murojaat",
+      "bullets": [
+        {
+          "text": "A guruh 163 (57,4%), B guruh 76 (26,8%), C guruh atigi 45 (15,8%) holat.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "69 (24,3%) holatda OIV tashxisi autopsiyada yoki o‘lim yuz bergan kasalxonada yotish davrida qo‘yilgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tashxis faqat o‘limdan keyin qo‘yilgan 18 holatning barchasida MNSda yoki boshqa organlarda opportunistik infeksiya topilgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Kech murojaat autopsiya natijasiga qanday ta’sir qiladi? Doskada: Guruhlar ulushi. Tipik xato: Kech tashxisni davolash samarasizligi deb baholash."
+    },
+    {
+      "title": "MNSdagi muhim o‘zgarishlar",
+      "bullets": [
+        {
+          "text": "284 tadan 165 (58,1%) holatda MNSning muhim o‘zgarishlari aniqlangan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Infeksion o‘zgarishlar (54,2%) o‘smalar (2,5%) va tomir o‘zgarishlaridan (1,1%) ancha ustun.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ahamiyatsiz o‘zgarishlar 103 (36,3%) holatda; faqat 16 (5,6%) holatda miya butunlay normal.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi o‘zgarishlar «ahamiyatsiz» hisoblangan? Doskada: Foizlar yig‘indisi. Tipik xato: «Ahamiyatsiz» o‘zgarishni normal miya deb o‘ylash."
+    },
+    {
+      "title": "MNS infeksiyalari chastotasi",
+      "bullets": [
+        {
+          "text": "Toksoplazmoz eng ko‘p uchragan infeksiya; undan keyin kriptokokkoz.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yiringli bakterial infeksiya 11 (3,9%), OIV ensefaliti 8 (2,8%), sitomegalovirus infeksiyasi 7 (2,5%) holatda.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "MNS infeksiyalari (n=284)",
+        "nodes": [],
+        "header": [
+          "Infeksiya",
+          "Holat (%)"
+        ],
+        "rows": [
+          [
+            "Toksoplazmoz",
+            "85 (29,9%)"
+          ],
+          [
+            "Kriptokokkoz",
+            "45 (15,8%)"
+          ],
+          [
+            "Yiringli bakterial",
+            "11 (3,9%)"
+          ],
+          [
+            "OIV ensefaliti",
+            "8 (2,8%)"
+          ],
+          [
+            "Sitomegalovirus",
+            "7 (2,5%)"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega toksoplazmoz birinchi o‘rinda? Doskada: Chastota diagrammasi. Tipik xato: Virusli infeksiyalarni eng ko‘p deb hisoblash."
+    },
+    {
+      "title": "Noinfeksion o‘zgarishlar: o‘sma va tomir",
+      "bullets": [
+        {
+          "text": "Noinfeksion muhim o‘zgarishlar 10 (3,5%) holatda: 7 (2,5%) birlamchi MNS o‘smasi va 3 (1,1%) tomir o‘zgarishi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘smalar: 2 ta xavfsiz (JSST I daraja) meningioma va 5 ta limfoid xavfli o‘sma, shu jumladan 4 (1,4%) diffuz B-hujayrali non-Hodgkin limfomasi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Epstein—Barr virusi tekshirilgan barcha 3 holatda limfomada topilgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Limfomada EBV topilishi nimani anglatadi? Doskada: O‘sma turlari ro‘yxati. Tipik xato: Barcha 4 limfomada EBV tekshirilgan deb hisoblash."
+    },
+    {
+      "title": "Tomir o‘zgarishlari",
+      "bullets": [
+        {
+          "text": "Tomir o‘zgarishlari uch holat: miya poyasida subaraxnoidal qon quyilish, o‘tkir subdural gematoma va keng intraparenximatoz qon quyilish.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Muhim deb faqat keng qon quyilishlar hisoblangan; mayda qon quyilish va yengil shish hisobga olinmagan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nima uchun muhimlik mezoni kerak? Doskada: Mezonlar ro‘yxati. Tipik xato: Har qanday qon quyilishni OIVga bog‘lash."
+    },
+    {
+      "title": "Guruhlar bo‘yicha farqlar",
+      "bullets": [
+        {
+          "text": "Guruhlar orasida o‘zgarishlar chastotasida umumiy farq bo‘lmagan, ammo C guruhda toksoplazmoz kam, OIV ensefaliti ko‘p uchragan (A guruhga nisbatan).",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.1-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Toksoplazmoz C guruhda 17,8%, A guruhda 36,2%; OIV ensefaliti C guruhda 11,1%, A guruhda 1,8%.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "5-bo‘lim (Conclusions)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "A va C guruh (MNS)",
+        "nodes": [],
+        "header": [
+          "Topilma",
+          "A guruh",
+          "C guruh"
+        ],
+        "rows": [
+          [
+            "Toksoplazmoz",
+            "36,2%",
+            "17,8%"
+          ],
+          [
+            "OIV ensefaliti",
+            "1,8%",
+            "11,1%"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: HAARTda OIV ensefaliti nega ko‘payadi? Doskada: Ikki guruh solishtirish. Tipik xato: Farqni tasodifiy deb qaytarish."
+    },
+    {
+      "title": "HAART va yashash davomiyligi",
+      "bullets": [
+        {
+          "text": "Yashash davomiyligi 261 (90,9%) holatda aniqlangan; guruhlarni solishtirishda P < 0,001.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.2-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "C guruhda o‘rtacha 49,1 oy — A guruhdagi 11,2 oydan to‘rt baravardan ko‘p, B guruhdagi 25,8 oydan deyarli ikki baravar uzoq.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.2-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "O‘rtacha yashash davomiyligi",
+        "nodes": [],
+        "header": [
+          "Guruh",
+          "Oy"
+        ],
+        "rows": [
+          [
+            "A",
+            "11,2"
+          ],
+          [
+            "B",
+            "25,8"
+          ],
+          [
+            "C",
+            "49,1"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega MNS o‘zgarishlari tez-tez uchrasa ham HAART foydali? Doskada: Oylar ustun diagrammasi. Tipik xato: Muhim o‘zgarishlar foizi farqsizligidan HAART foydasiz deb xulosa qilish."
+    },
+    {
+      "title": "Muhim o‘zgarishlar chastotasi va HAART",
+      "bullets": [
+        {
+          "text": "Muhim MNS o‘zgarishlari A guruhda 63,8%, boshqa guruhlarda 48,7% va 53,3%; farq statistik ahamiyatli emas.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu HAART prognozni o‘zgartirmaydi degan yolg‘on taassurot berishi mumkin; yashash davomiyligi esa terapiya foydasini aniq ko‘rsatadi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yakuniy bosqichda o‘lim sababi ko‘pincha neyropatologik o‘zgarishlar bo‘ladi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nima uchun faqat foizlarga qarab xulosa qilish xavfli? Doskada: Ikki ko‘rsatkichni birga yozing. Tipik xato: Statistik ahamiyatsiz farqni foydasizlik isboti deb bilish."
+    },
+    {
+      "title": "Klinik gumon va autopsiya mosligi",
+      "bullets": [
+        {
+          "text": "MNSda muhim o‘zgarishlar topilgan 165 holatning 91 tasida (55,1%) klinik gumon va autopsiya natijasi mos kelmagan; bu 284 ning 32%.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shulardan 49 tasi (53,8%) 1-tur nomuvofiqlik: muhim o‘zgarish hayotlik davrida aniqlanmagan, bu esa prognozni o‘zgartirishi mumkin edi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.3-bo‘lim (Results)"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Barcha limfoma holatlari shu turga kirgan.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega limfomalar aniqlanmagan? Doskada: Raqamlar zanjiri: 165 → 91 → 49. Tipik xato: 1-tur ulushini turli joyda farqli yozish: manbada 17,2% va 17,6% uchraydi."
+    },
+    {
+      "title": "Goldman bo‘yicha nomuvofiqlik turlari",
+      "bullets": [
+        {
+          "text": "1-tur: muhim kasallik, hayotlik davrida aniqlansa prognoz o‘zgarishi mumkin edi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2-tur: muhim kasallik aniqlanmagan, ammo aniqlansa ham prognoz o‘zgarmas edi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-tur: ahamiyatsiz kasallik aniqlanmagan, prognozga ta’siri shubhali yoki yo‘q.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "2-bo‘lim (Material and Methods)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Misollar keltiring. Doskada: Uch turni jadvalga yozing. Tipik xato: 2-turni 1-tur bilan adashtirish."
+    },
+    {
+      "title": "2- va 3-tur nomuvofiqliklar; 1-tur dinamikasi",
+      "bullets": [
+        {
+          "text": "2-tur 22 holat (24,2%): ko‘pincha boshqa agent chaqirgan o‘pka infeksiyasidan o‘lganlarda uchragan miya toksoplazmozi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3-tur 20 holat (22%): masalan, pnevmotsistli pnevmoniyadan nafas yetishmovchiligi bo‘lgan bemorda meningioma.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1-tur xato 1996 yilgacha 62,2% (23/37), keyin 48,8% (26/54) ga kamaygan — haftalik anatomoklinik majlislardan olingan bilim hisobiga.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "3.3-bo‘lim (Results)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Anatomoklinik majlislar nega foydali? Doskada: Dinamika: 62,2% → 48,8%. Tipik xato: Kamayishni faqat yangi diagnostika bilan izohlash."
+    },
+    {
+      "title": "Viruslar va boshqa agentlar: tarqalish",
+      "bullets": [
+        {
+          "text": "Virusli infeksiyalar 284 holatning atigi 6,7%; protozoa, zamburug‘ va bakteriyalar 49,3%.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "OIV ensefaliti 2,8%, sitomegalovirus 2,5%, JC virus infeksiyasi 0,3%.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sabab: bemorlar odatda OITSning kechki bosqichida murojaat qiladi va OIV neyropatologik o‘zgarishlari rivojlanishiga vaqt yetmaydi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega rivojlangan mamlakatlarda virusli infeksiyalar ko‘proq? Doskada: Foizlar diagrammasi. Tipik xato: Virusli infeksiyalarni hamma joyda ustun deb hisoblash."
+    },
+    {
+      "title": "Mintaqaviy farqlar: toksoplazmoz va kriptokokkoz",
+      "bullets": [
+        {
+          "text": "Kriptokokkoz 15,8%, HAART guruhida 15,6%; rivojlangan mamlakatlar tadqiqotlarida mos guruhlarda 0 dan 5,6% gacha.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Farqlar atrof-muhit, geografik va ijtimoiy-iqtisodiy omillar bilan bog‘liq bo‘lishi ehtimol.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "4-bo‘lim (Discussion)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Mintaqaviy farqlar autopsiya talqiniga qanday ta’sir qiladi? Doskada: Qiyoslash jadvali. Tipik xato: Boshqa mamlakat ko‘rsatkichini o‘z mintaqasiga bevosita qo‘llash."
+    },
+    {
+      "title": "Braziliya tadqiqoti xulosalari",
+      "bullets": [
+        {
+          "text": "HAARTga qaramay MNS o‘zgarishlari OITS bemorlarida tez-tez uchraydi va o‘limning muhim sababi bo‘lib qoladi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "5-bo‘lim (Conclusions)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "HAART guruhida medianali yashash davomiyligi terapiyasizlarga nisbatan to‘rt baravar uzun.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "5-bo‘lim (Conclusions)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "55,1% holatda autopsiya va klinik tashxis mos kelmagan; bu ilg‘or diagnostikada ham autopsiya ahamiyatini ko‘rsatadi.",
+          "source": {
+            "author": "Silva et al.",
+            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+            "page": "5-bo‘lim (Conclusions)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Uch xulosani o‘z so‘zingizda ayting. Doskada: Uch xulosani yozing. Tipik xato: Xulosani HAART mavjud bo‘lgani uchun autopsiya kerak emas deb o‘qish."
+    },
+    {
+      "title": "Janubiy Afrika: dizayn",
+      "bullets": [
+        {
+          "text": "Tadqiqot ishtirokchilari — CD4 ≤150 hujayra/μL, TB davosi va ART olmagan, birlamchi sog‘liqni saqlash klinikalarida kuzatilgan kattalar.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Study population"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barcha ishtirokchilar kamida olti oy kuzatilgan; o‘lim haqida o‘z vaqtida xabar topilsa, oila ruxsati bilan MIA o‘tkazilgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Study population"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqsad: birlamchi klinikalarda kuzatilgan kattalarda TB va boshqa infeksiyalarning autopsiyadagi tarqalishini aniqlash.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Abstract"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega kasalxona tashqarisida o‘lganlar muhim? Doskada: Dizayn sxemasi. Tipik xato: Kasalxonadagi autopsiya ma’lumotini aholining hammasiga qo‘llash."
+    },
+    {
+      "title": "Minimal invaziv autopsiya (MIA) protokoli",
+      "bullets": [
+        {
+          "text": "Biopsiya to‘rt organdan: jigar, taloq, o‘ng va chap o‘pka; bir joydan kamida beshta taxminan 2 sm uzunlikdagi namuna (18 gauge nina).",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Autopsy procedures"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Namunalar bakterial va zamburug‘ mikroskopiyasi/ekmasi, mikobakteriya ekmasi hamda gistologiya uchun olingan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Autopsy procedures"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qo‘shimcha: qon, orqa miya suyuqligi (CSF), siydik va o‘zgartirilgan bronxoalveolyar lavaj (BAL).",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Autopsy procedures"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: MIA to‘liq autopsiyadan nimasi bilan farq qiladi? Doskada: Namuna olish nuqtalari. Tipik xato: MIA har qanday o‘zgarishni to‘liq aniqlaydi deb o‘ylash."
+    },
+    {
+      "title": "MIA: aniqlik va ehtiyot choralari",
+      "bullets": [
+        {
+          "text": "Ultratovush jigar o‘zgarishlari va plevral suyuqlikni tekshirish hamda taloqni aniqlash uchun ishlatilgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Autopsy procedures"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri 70% izopropil spirt va 10% povidon-yod bilan tozalangan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Autopsy procedures"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Iloji boricha MIAni bitta klinik tayyorgarlikka ega operator o‘tkazgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Autopsy procedures"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega teri tozalanadi? Doskada: Qadamlar zanjiri. Tipik xato: Ultratovushni majburiy bo‘lmagan deb hisoblash."
+    },
+    {
+      "title": "Laboratoriya va gistologik tekshiruv",
+      "bullets": [
+        {
+          "text": "Barcha to‘qima namunalari, CSF, siydik va BAL mikobakteriyalar uchun MGIT usulida ekilgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Laboratory procedures"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barcha to‘qima namunalarida gistologiya: ZN mikobakteriyalar uchun, Grocott zamburug‘lar uchun.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Laboratory procedures"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Gistologik bo‘yashlar (MIA)",
+        "header": [
+          "Bo‘yash",
+          "Aniqlanadigan agent"
+        ],
+        "rows": [
+          [
+            "Ziehl—Neelsen",
+            "Mikobakteriyalar"
+          ],
+          [
+            "Grocott",
+            "Zamburug‘lar"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi bo‘yash qaysi agentni ko‘rsatadi? Doskada: ZN va Grocott juftligi. Tipik xato: ZN bilan zamburug‘ni aniqlash."
+    },
+    {
+      "title": "Artefaktni ajratish",
+      "bullets": [
+        {
+          "text": "Tajribali mikrobiologlar har bir marhum uchun qaysi mikroorganizm «artefakt», qaysi «patogen» ekanini belgilagan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Data interpretation"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Enterococcus, Enterobacter, E. coli, Proteus, Bacillus, koagulaza-manfiy stafilokokklar va Viridans streptokokklar artefakt hisoblangan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Data interpretation"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Faqat taloqdan ajratilgan gramm-manfiy mikroorganizmlar qorin organlaridan ifloslanish ehtimoli tufayli artefakt hisoblangan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Methods — Data interpretation"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Postmortem ekmada ifloslanishni qanday kamaytirish mumkin? Doskada: Artefakt ro‘yxati. Tipik xato: Har qanday ekma natijasini kasallik sababi deb hisoblash."
+    },
+    {
+      "title": "MIA ishtirokchilari",
+      "bullets": [
+        {
+          "text": "2012-dekabrdan 2014-dekabrgacha 3022 kishi qamrab olingan; 34 ta MIA o‘tkazilgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Consent, demographics, and samples obtained"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "18 (53%) ayol; median yosh 39 yil; 25 (74%) kasalxonada vafot etgan; qamrab olishdagi median CD4 34 hujayra/μL.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Consent, demographics, and samples obtained"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘limdan MIAgacha median vaqt besh kun; 33/34 (97%) 10 kun ichida o‘tkazilgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Consent, demographics, and samples obtained"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega o‘limdan MIAgacha vaqt muhim? Doskada: Raqamlar jadvali. Tipik xato: Median vaqtni eng uzun vaqt deb tushunish."
+    },
+    {
+      "title": "Namuna olish muvaffaqiyati",
+      "bullets": [
+        {
+          "text": "Gistologik baholash bo‘yicha o‘pka biopsiyasi 33/34 (97%), jigar 30/34 (88%), taloq 21/34 (62%) holatda muvaffaqiyatli.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Consent, demographics, and samples obtained"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "BAL 30/31 (97%), CSF 30/32 (94%) holatda muvaffaqiyatli olingan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Consent, demographics, and samples obtained"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Namuna olish muvaffaqiyati",
+        "nodes": [],
+        "header": [
+          "Namuna",
+          "Muvaffaqiyat"
+        ],
+        "rows": [
+          [
+            "O‘pka",
+            "33/34 (97%)"
+          ],
+          [
+            "Jigar",
+            "30/34 (88%)"
+          ],
+          [
+            "Taloq",
+            "21/34 (62%)"
+          ],
+          [
+            "BAL",
+            "30/31 (97%)"
+          ],
+          [
+            "CSF",
+            "30/32 (94%)"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega taloq biopsiyasi qiyinroq? Doskada: Muvaffaqiyat diagrammasi. Tipik xato: Muvaffaqiyatni faqat foiz bilan baholash."
+    },
+    {
+      "title": "Sil: autopsiya topilmalari",
+      "bullets": [
+        {
+          "text": "16/34 (47%) marhumda TB belgilari topilgan; 14/16 (88%) da ekstrapulmonal sil.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Tuberculosis"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aniqlash usullari: gistologiya 12 (75%), ekma 11 (69%), Xpert MTB/RIF 5 (31%); gistologiya va bakteriologiya birga 8 (50%).",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Tuberculosis"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TB belgisi bor 16 kishining 6 (38%) tasi hayotlik davrida TB davosiga qo‘yilmagan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Tuberculosis"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega TB ko‘pincha ekstrapulmonal? Doskada: Usullar solishtirish. Tipik xato: Silni faqat o‘pka kasalligi deb bilish."
+    },
+    {
+      "title": "Sil: gistologiya va ekma bo‘yicha batafsil",
+      "bullets": [
+        {
+          "text": "12 ta gistologik TB: 4 (33%) o‘pka, jigar va talaqda; 2 (17%) o‘pka va jigarda; 2 (17%) jigar va talaqda; 2 (17%) faqat o‘pkada.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Tuberculosis"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekma bo‘yicha eng yuqori natija BALdan (7 musbat); CSF va taloqdan 5 tadan; o‘pka va jigardan 4 tadan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Tuberculosis"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "164 ta mikobakteriya ekmasidan 37 (23%) musbat, 13 (8%) bakterial ifloslanish tufayli talqin qilinmagan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Tuberculosis"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi namuna eng foydali? Doskada: Namuna turlari bo‘yicha musbatlar. Tipik xato: Talaqni TB uchun asosiy namuna deb hisoblash."
+    },
+    {
+      "title": "Gistologik rasmlar tavsifi",
+      "bullets": [
+        {
+          "text": "Nekrozli intraalveolyar granuloma va sitomegalovirus yadro kiritmalari (o‘pka; H&E); kislotaga chidamli tayoqchalar (ZN).",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Fig 1"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jigarda mikobakterial granuloma (H&E); o‘pkada polimorf kriptokokk xamirturushlari (Grocott).",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Fig 1"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘pkada Pneumocystis jirovecii ning kichik yarim oysimon hujayralari (Grocott); jigarda faol B gepatit virusi infeksiyasi (H&E).",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Fig 1"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Har bir rasmda qaysi agent va qaysi bo‘yash? Doskada: Uch ustunli jadval. Tipik xato: Granulomani doimo silga xos deb bilish."
+    },
+    {
+      "title": "Boshqa mikobakteriya va bakteriyalar",
+      "bullets": [
+        {
+          "text": "Notuberkulyoz mikobakteriyalar (NTM) 3 (9%): ikkitasida Mycobacterium avium, bittasida Mycobacterium intracellulare.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Infections with non-tuberculous mycobacteria and other bacteria"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Patogen bakterial infeksiya ekma bo‘yicha 23/34 (68%); shulardan 14/23 (61%) da Klebsiella spp.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Infections with non-tuberculous mycobacteria and other bacteria"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "33 o‘pka gistologiyasidan 11 (33%) da bakterial pnevmoniya belgilari bor.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Infections with non-tuberculous mycobacteria and other bacteria"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega bakterial pnevmoniyani ham gistologiya bilan tasdiqlash kerak? Doskada: Chastotalar. Tipik xato: Ekmani yagona dalil deb bilish."
+    },
+    {
+      "title": "Kriptokokk, sitomegalovirus, pnevmotsistoz",
+      "bullets": [
+        {
+          "text": "Kriptokokkoz 4/34 (12%) holatda; 3 (75%) da gistologik tasdiq, Cryptococcus neoformans 2 (50%) holatda ekilgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Cryptococcal disease"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sitomegalovirus kasalligi gistologiyada 2 (6%) holatda — ikkalasida tarqalgan; pnevmotsistli pnevmoniya 2 (6%).",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Other fungal and viral infections"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Boshqa infeksiyalar (n=34)",
+        "nodes": [],
+        "header": [
+          "Infeksiya",
+          "Holat"
+        ],
+        "rows": [
+          [
+            "Kriptokokkoz",
+            "4 (12%)"
+          ],
+          [
+            "Sitomegalovirus",
+            "2 (6%)"
+          ],
+          [
+            "Pnevmotsistoz",
+            "2 (6%)"
+          ],
+          [
+            "NTM",
+            "3 (9%)"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi agent gistologiyada ko‘rinadi? Doskada: Uchta agent jadvali. Tipik xato: Virusli PCR musbatligini kasallik isboti deb bilish."
+    },
+    {
+      "title": "Bir necha patogenning birgalikda uchrashi",
+      "bullets": [
+        {
+          "text": "20 (59%) marhumda gistologik yoki ekma bo‘yicha kamida ikkita infeksiya aniqlangan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Decedents with multiple pathogens identified"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TB belgisi bor 16 kishining 9 (56%) tasida bakterial kasallik, 2 (13%) tasida kriptokokkoz ham bo‘lgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Decedents with multiple pathogens identified"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bakterial infeksiyasi bor 23 kishining 3 (13%) tasida kriptokokkoz, 2 (9%) tasida sitomegalovirus bo‘lgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Decedents with multiple pathogens identified"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Bir nechta infeksiya o‘lim sababini aniqlashga qanday ta’sir qiladi? Doskada: Venn diagrammasi. Tipik xato: Birinchi topilgan agentni yagona sabab deb hisoblash."
+    },
+    {
+      "title": "Jigar va buyrakdagi qo‘shimcha topilmalar",
+      "bullets": [
+        {
+          "text": "Gistologiyaga olingan 30 jigar namunasidan 18 (60%) da yallig‘lanish bor; steatoz 12/18 (67%).",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Additional findings"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yallig‘lanish bor 18 tadan 5 (28%) da o‘tkir yoki surunkali gepatit, shulardan to‘rttasi virusli deb hisoblangan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Additional findings"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Buyrak: 13 namunadan 6 (46%) da interstitsial nefrit va/yoki o‘tkir tubulyar nekroz.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Results — Additional findings"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega tasodifiy topilmalarni ham hujjatlash kerak? Doskada: Organlar bo‘yicha ro‘yxat. Tipik xato: Tasodifiy topilmani o‘lim sababi deb hisoblash."
+    },
+    {
+      "title": "Autopsiya natijalarini talqin qilish",
+      "bullets": [
+        {
+          "text": "Mycobacterium tuberculosis o‘limdan keyin va formalinda saqlangandan so‘ng ham yillar davomida tirik qolishi mumkin.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Discussion — Interpretation of autopsy findings"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘limdan autopsiyagacha ko‘p vaqt o‘tsa, autoliz va mikroorganizmlarning boshqa bo‘shliqlarga o‘tishi imkoniyati ortadi.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Discussion — Interpretation of autopsy findings"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrobiologik natijalar, mikobakteriyalar ham, klinik tarix va ideal holda gistologiya bilan birga ko‘rib chiqilishi kerak.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Discussion — Interpretation of autopsy findings"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega gistologiya mikrobiologiya bilan birga talab qilinadi? Doskada: Uch manba (klinika, ekma, gistologiya). Tipik xato: Ekma musbatligini faol kasallik isboti deb bilish."
+    },
+    {
+      "title": "MIAning kuzatuv (surveillance)dagi o‘rni",
+      "bullets": [
+        {
+          "text": "Respirator namunalar (BAL va o‘pka to‘qimasi) TB tashxisi uchun eng yuqori natija beradi.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Discussion — MIA in surveillance"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "BAL Xpert MTB/RIF va BAL ekmasi 9 ta TB holatini aniqlagan; o‘pka ekmasi yana 2 ta, o‘pka gistologiyasi yana 3 ta qo‘shgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Discussion — MIA in surveillance"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu uchovi birga marhumlardagi TBning 88% ini tashkil qilgan.",
+          "source": {
+            "author": "Karat et al.",
+            "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+            "page": "Discussion — MIA in surveillance"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi minimal namuna yig‘indisi yetarli? Doskada: Qadamma-qadam qo‘shish: 9 + 2 + 3. Tipik xato: 88% ni 100% deb o‘qish."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "Braziliya tadqiqotida (Silva va boshq.) tahlilga nechta autopsiya kiritilgan?",
+      "options": [
+        "34",
+        "284",
+        "299",
+        "1785"
+      ],
+      "correct_index": 1,
+      "explanation": "Tahlilga 284 ta OITS autopsiyasi kiritilgan.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "3-bo‘lim (Results)"
+      }
+    },
+    {
+      "question": "Braziliya tadqiqotida MNSda eng ko‘p uchragan infeksiya qaysi?",
+      "options": [
+        "Kriptokokkoz",
+        "Toksoplazmoz",
+        "Sitomegalovirus",
+        "OIV ensefaliti"
+      ],
+      "correct_index": 1,
+      "explanation": "Toksoplazmoz 85 (29,9%) holatda.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "3.1-bo‘lim (Results)"
+      }
+    },
+    {
+      "question": "C guruh bemorlarining o‘rtacha yashash davomiyligi qancha?",
+      "options": [
+        "11,2 oy",
+        "25,8 oy",
+        "49,1 oy",
+        "4 oy"
+      ],
+      "correct_index": 2,
+      "explanation": "C guruhda 49,1 oy; A guruhda 11,2 oy.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "3.2-bo‘lim (Results)"
+      }
+    },
+    {
+      "question": "Goldmanning 1-tur nomuvofiqligi nimani bildiradi?",
+      "options": [
+        "Ahamiyatsiz kasallik aniqlanmagan",
+        "Muhim kasallik aniqlanmagan, aniqlansa prognoz o‘zgarishi mumkin edi",
+        "Muhim kasallik aniqlanmagan, prognoz o‘zgarmas edi",
+        "Klinik tashxis to‘g‘ri bo‘lgan"
+      ],
+      "correct_index": 1,
+      "explanation": "1-turda aniqlansa prognoz o‘zgarishi mumkin edi.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "2-bo‘lim (Material and Methods)"
+      }
+    },
+    {
+      "question": "Braziliya tadqiqotida MNS gistologiyasi uchun qalinlik qancha?",
+      "options": [
+        "1 μm",
+        "5 μm",
+        "50 μm",
+        "2 mm"
+      ],
+      "correct_index": 1,
+      "explanation": "Parafin kesmalari 5 μm qalinlikda tayyorlangan.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "2-bo‘lim (Material and Methods)"
+      }
+    },
+    {
+      "question": "Qaysi hujayralar MNSda OIV infeksiyasi uchun «patognomonik» deb hisoblanadi?",
+      "options": [
+        "Ko‘p yadroli gigant hujayralar",
+        "Plazmatik hujayralar",
+        "Ko‘pikli hujayralar",
+        "Gemosiderofaglar"
+      ],
+      "correct_index": 0,
+      "explanation": "Manbada ko‘p yadroli gigant hujayralar MNSda OIV infeksiyasi uchun patognomonik deb hisoblanishi aytilgan.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "1-bo‘lim (Introduction)"
+      }
+    },
+    {
+      "question": "Janubiy Afrika tadqiqotida nechta MIA o‘tkazilgan?",
+      "options": [
+        "16",
+        "34",
+        "60",
+        "3022"
+      ],
+      "correct_index": 1,
+      "explanation": "34 ta MIA o‘tkazilgan.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Abstract"
+      }
+    },
+    {
+      "question": "Marhumlarning nechta foizida TB belgilari topilgan?",
+      "options": [
+        "12%",
+        "47%",
+        "68%",
+        "88%"
+      ],
+      "correct_index": 1,
+      "explanation": "16/34 (47%) da TB belgilari topilgan.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Results — Tuberculosis"
+      }
+    },
+    {
+      "question": "Qaysi namuna mikobakteriya ekmasida eng ko‘p musbat natija bergan?",
+      "options": [
+        "BAL",
+        "Jigar to‘qimasi",
+        "Siydik",
+        "Taloq to‘qimasi"
+      ],
+      "correct_index": 0,
+      "explanation": "BALdan 7 ta musbat ekma olingan, boshqalardan kamroq.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Results — Tuberculosis"
+      }
+    },
+    {
+      "question": "Gistologiyada mikobakteriyalar uchun qaysi bo‘yash qo‘llangan?",
+      "options": [
+        "Grocott",
+        "Ziehl—Neelsen",
+        "Gram",
+        "Luxol Fast Blue"
+      ],
+      "correct_index": 1,
+      "explanation": "ZN mikobakteriyalar, Grocott zamburug‘lar uchun ishlatilgan.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Methods — Laboratory procedures"
+      }
+    }
+  ],
+  "extras": [
+    {
+      "text": "Braziliya tadqiqotida 1996 yilgacha 1-tur xato 62,2% edi, keyin 48,8% ga tushdi — haftalik anatomoklinik majlislardan olingan bilim hisobiga bo‘lishi ehtimol.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "3.3-bo‘lim (Results)"
+      }
+    },
+    {
+      "text": "Janubiy Afrikada TB belgisi bor 16 kishining 6 tasi (38%) hayotlik davrida TB davosiga qo‘yilmagan.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Results — Tuberculosis"
+      }
+    },
+    {
+      "text": "Wilkes tadqiqotida 101 autopsiyaning 74% da OITSga bog‘liq kasalliklar klinik jihatdan gumon qilinmagan.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "1-bo‘lim (Introduction)"
+      }
+    },
+    {
+      "text": "M. tuberculosis o‘limdan keyin va formalinda saqlashdan keyin ham yillar davomida tirik qolishi mumkin.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Discussion — Interpretation of autopsy findings"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "author": "Silva et al.",
+      "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+      "year": 2012,
+      "pages": "PMID 22461978; DOI 10.1155/2012/186850"
+    },
+    {
+      "author": "Karat et al.",
+      "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+      "year": 2016,
+      "pages": "PMID 27829072; DOI 10.1371/journal.pone.0166158"
+    }
+  ]
+}
