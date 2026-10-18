@@ -1,0 +1,38 @@
+name: asc-listing
+# App Store Connect versiya sahifasini to'ldiradi: build, skrinshotlar,
+# What's New, App Review demo akkaunt + Notes, narx (bepul) va hamma
+# davlatlar. Submit for Review QILMAYDI.
+on:
+  workflow_dispatch:
+    inputs:
+      version: { description: "Version string", default: "0.3.0" }
+      build: { description: "Build number", default: "18" }
+      assets_ref: { description: "Assets branch", default: "store-assets" }
+      demo_user: { description: "Demo account email", required: true }
+      demo_password: { description: "Demo account password", required: true }
+      set_pricing: { description: "Free + all territories", default: "true" }
+jobs:
+  listing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mask password
+        run: echo "::add-mask::${{ inputs.demo_password }}"
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.assets_ref }}", path: assets }
+      - run: pip install -q pyjwt cryptography requests
+      - name: Fill App Store version page
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+          BUNDLE_ID: uz.forensicexpert.app
+          VERSION: ${{ inputs.version }}
+          BUILD: ${{ inputs.build }}
+          SHOTS_DIR: assets
+          NOTES_FILE: assets/notes.txt
+          WHATSNEW_DIR: assets/whatsnew
+          SET_PRICING: ${{ inputs.set_pricing }}
+          DEMO_USER: ${{ inputs.demo_user }}
+          DEMO_PASSWORD: ${{ inputs.demo_password }}
+        run: python3 tools/asc/asc_listing.py
