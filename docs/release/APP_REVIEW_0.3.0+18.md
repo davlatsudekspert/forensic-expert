@@ -54,3 +54,9 @@ free. Account deletion: Profile → Account → Delete account.
 - Demo akkaunt ilovada kiradi va Profil’da «Ustoz paneli» ko‘rinadi.
 - Privacy/Support URL: https://davlatsudekspert.github.io/forensic-expert-legal/
 - «Sign-in required» belgilangan, login/parol kiritilgan.
+
+## 5. Holat (2026-10-18) — YUBORILDI
+- Egasi «Отправить на проверку»ni bosdi. ASC versiya 0.3.0, build **303** (ASC build raqami = `release-build` workflow run_number; pubspec +18).
+- Skrinshotlar, App Review (demo ustoz akkaunti `davlatsudekspert+appreview@gmail.com`, faqat `teacher` roli), narx Free, 175 davlat — `asc-listing` workflow (API) orqali; EN/RU tavsiflar yordamchi orqali.
+- Skrinshot generatori: `apps/mobile/integration_test/store/store_shots_test.dart` (haqiqiy ilova + prod backend, Linux/Xvfb, dbus+gnome-keyring); assetlar `store-assets` branchida.
+- Tekshiruvdan keyin: demo akkauntni o‘chirish; `github-seed` tokenini bekor qilish.
