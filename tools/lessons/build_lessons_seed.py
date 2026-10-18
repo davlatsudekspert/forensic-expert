@@ -23,9 +23,9 @@ COURSES = {
     "4 kurs pediatriya": "4-kurs · Pediatriya",
     "5 kurs tibbiy profilaktika": "5-kurs · Tibbiy profilaktika",
     "6 kurs davolash": "6-kurs · Davolash ishi",
-    "KTP 2026 davolash": "KTP 2026 · Davolash ishi",
-    "KTP 2026 pediatriya": "KTP 2026 · Pediatriya",
-    "KTP 2026 stomatologiya": "KTP 2026 · Stomatologiya",
+    "KTP 2026 davolash": "2026–2027 o‘quv yili · Davolash ishi",
+    "KTP 2026 pediatriya": "2026–2027 o‘quv yili · Pediatriya ishi",
+    "KTP 2026 stomatologiya": "2026–2027 o‘quv yili · Stomatologiya",
 }
 
 
