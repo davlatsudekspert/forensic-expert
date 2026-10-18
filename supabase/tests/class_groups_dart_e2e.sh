@@ -42,6 +42,9 @@ begin
     parts := parts || format('%I => %s', n, case
       when jsonb_typeof(args -> n) = 'null' then 'null::' || t
       when t = 'jsonb' then quote_literal((args -> n)::text) || '::jsonb'
+      -- PostgREST JSON massivni text[] ga o'zi aylantiradi; bu yerda ham.
+      when t like '%[]' then format('array(select jsonb_array_elements_text(%L::jsonb))::%s',
+                                    (args -> n)::text, t)
       else quote_literal(args ->> n) || '::' || t end);
   end loop;
   execute format('select to_jsonb(public.%I(%s))', fname, array_to_string(parts, ', ')) into r;
@@ -62,6 +65,12 @@ select 'dart-tox', 'Toksikologiya: CO', g, 'Dart e2e savol ' || g,
        jsonb_build_array('A' || g, 'B' || g, 'C' || g, 'D' || g), (g % 4)::smallint,
        'Izoh ' || g, '{"author":"Muallif","title":"Darslik","page":"41"}'::jsonb
 from generate_series(1, 20) g;
+insert into public.class_quiz_questions
+  (topic_id, topic_title, position, question, options, correct_index, explanation, source)
+select 'dart-co', 'Toksikologiya: CO', g, 'Dart CO savol ' || g,
+       jsonb_build_array('A', 'B', 'C', 'D'), 1, '',
+       '{"author":"Muallif","title":"Darslik","page":"9"}'::jsonb
+from generate_series(1, 6) g;
 SQL
 cd "$HERE/../../apps/mobile"
 export PATH="/opt/flutter/bin:$PATH"

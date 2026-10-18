@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
@@ -78,6 +79,32 @@ void main() {
       );
     });
 
+    test(
+      'navbatma-navbat taqsimot == umumiy vektorlar (SQL ham tekshiradi)',
+      () {
+        final j = jsonDecode(
+          File('test/fixtures/class_group_variant_vectors.json')
+              .readAsStringSync(),
+        ) as Map<String, Object?>;
+        final rr = j['round_robin']! as List;
+        expect(rr, isNotEmpty);
+        for (final c in rr.cast<Map<String, Object?>>()) {
+          expect(
+            roundRobinCounts([
+              for (final x in c['sizes']! as List) x as int,
+            ], c['n']! as int),
+            [for (final x in c['expected']! as List) x as int],
+          );
+        }
+        final pick = roundRobinPick([
+          ['a', 'b', 'c'],
+          ['x'],
+          ['a', 'y'],
+        ], 5);
+        expect(pick, ['a', 'x', 'b', 'y', 'c'], reason: 'id takrorlanmaydi');
+      },
+    );
+
     test('SQL: SHA-256("<assignmentId>:<userId>"), so‘ng seed:savolId', () {
       final d = sql.substring(
         sql.indexOf('create function private.group_variant_draw('),
@@ -97,7 +124,7 @@ void main() {
     test('variant chegarasi: hovuz < 2 × N bo‘lsa server rad etadi', () {
       expect(variantAllowed(19, 10), isFalse);
       expect(
-        fn('public.group_assignment_create'),
+        fn('private.group_assignment_make'),
         contains('v_pool < 2 * p_count'),
       );
     });

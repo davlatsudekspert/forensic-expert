@@ -10091,14 +10091,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get grpChangeTopic => 'Change';
 
   @override
-  String get grpSettingsSection => 'Settings';
-
-  @override
-  String grpCountLabel(int count) {
-    return 'Questions per student: $count';
-  }
-
-  @override
   String get grpTimeLimitLabel => 'Time limit';
 
   @override
@@ -10127,18 +10119,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get grpDueTitle => 'Deadline';
-
-  @override
-  String get grpNoDue => 'No deadline — until the teacher closes the test';
-
-  @override
   String grpDueLabel(String date) {
     return 'Due: $date';
   }
-
-  @override
-  String get grpClearDue => 'Remove deadline';
 
   @override
   String get grpVariantLabel => 'Different questions for each student';
@@ -10164,9 +10147,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get grpRevealAfterClose => 'Only when I close the test';
-
-  @override
-  String get grpRevealNeedsDue => 'Set a deadline first';
 
   @override
   String get grpAssignSubmit => 'Give the test';
@@ -10470,4 +10450,148 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get grpErrNotSubmitted => 'You haven’t sent this test yet.';
+
+  @override
+  String get grpChoiceTitle => 'Topic test';
+
+  @override
+  String get grpChoiceAssign => 'Give to a group';
+
+  @override
+  String get grpChoiceAssignHint =>
+      'Students solve it in their own time; results come to you';
+
+  @override
+  String get grpChoiceSelf => 'Try it myself';
+
+  @override
+  String get grpChoiceSelfHint =>
+      '10 questions on this device; nothing is sent';
+
+  @override
+  String get grpChoiceLive => 'Live class quiz';
+
+  @override
+  String get grpChoiceLiveHint =>
+      'Code and QR on the screen, questions one by one';
+
+  @override
+  String get grpChoicePickGroup => 'Which group?';
+
+  @override
+  String get grpCountSection => 'Number of questions';
+
+  @override
+  String grpCountAll(int count) {
+    return 'All $count';
+  }
+
+  @override
+  String get grpCustom => 'Other…';
+
+  @override
+  String grpCustomValue(int value) {
+    return 'Other: $value';
+  }
+
+  @override
+  String grpCountCustomHint(int max) {
+    return 'Any number from 1 to $max (all available questions).';
+  }
+
+  @override
+  String grpCountHint(int count, int pool) {
+    return 'Each student gets $count questions; $pool are available.';
+  }
+
+  @override
+  String get grpNoTimeLimitShort => 'No limit';
+
+  @override
+  String get grpTimeCustomHint => 'Minutes, from 1 to 180.';
+
+  @override
+  String get grpTimeLimitHint =>
+      'Counted from the moment the student starts; when time is up, the answers are sent automatically.';
+
+  @override
+  String get grpOpenSection => 'How long the test stays open';
+
+  @override
+  String grpDaysN(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days',
+      one: '1 day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get grpPickDate => 'Pick a date';
+
+  @override
+  String grpOpenHint(String date) {
+    return 'Students can start until $date. This is not the time for solving — that is the time limit above.';
+  }
+
+  @override
+  String get grpMixedAction => 'Give a combined test';
+
+  @override
+  String get grpMixedTitle => 'Combined test';
+
+  @override
+  String get grpMixedPrefix => 'Combined test';
+
+  @override
+  String get grpMixedIntro =>
+      'Pick topics from one or more sources. Questions are taken from the topics in turn and never repeat.';
+
+  @override
+  String get grpMixedSources => 'Sources';
+
+  @override
+  String get grpMixedOtherSource => 'Other topics';
+
+  @override
+  String grpMixedSourceLine(int count, int picked) {
+    return 'Topics: $count · selected: $picked';
+  }
+
+  @override
+  String get grpSelectAll => 'Select all';
+
+  @override
+  String grpMixedSelected(int topics, int questions) {
+    return 'Selected: $topics topics, $questions questions';
+  }
+
+  @override
+  String get grpMixedTitleLabel => 'Test name';
+
+  @override
+  String get grpMixedTitleHint =>
+      'Filled in automatically — you can change it.';
+
+  @override
+  String get grpMixedPreviewAction => 'Preview the questions';
+
+  @override
+  String grpMixedPreviewTitle(int count) {
+    return '$count questions, by topic:';
+  }
+
+  @override
+  String get grpMixedPreviewNote =>
+      'Example of the selection. The server picks the exact questions at random within each topic, with the same split.';
+
+  @override
+  String get grpPracticeBanner =>
+      'Trying it yourself: nothing is sent to the server.';
+
+  @override
+  String get grpPracticeNothingSent =>
+      'This was a trial on your device — nothing was sent.';
 }

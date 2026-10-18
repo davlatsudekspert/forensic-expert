@@ -210,6 +210,19 @@ abstract final class Routes {
       '/home/learn/groups/${Uri.encodeComponent(gid)}';
   static String groupAssign(String gid) => '${group(gid)}/assign';
 
+  /// Mavzu oldindan tanlangan «Mavzu testi berish» (Darslardan).
+  static String groupAssignFor(String gid, String topicId) => Uri(
+    path: groupAssign(gid),
+    queryParameters: {'topic': topicId},
+  ).toString();
+
+  /// «Umumiy test berish» (bir nechta mavzu).
+  static String groupMixed(String gid) => '${group(gid)}/mixed';
+
+  /// Ustoz «O‘zim yechib ko‘rish» — faqat qurilmada, serverga yuborilmaydi.
+  static String groupPractice(String topicId) =>
+      '/home/learn/groups/practice/${Uri.encodeComponent(topicId)}';
+
   /// Ustozning jonli paneli (telefon).
   static String groupAssignment(String gid, String aid) =>
       '${group(gid)}/a/${Uri.encodeComponent(aid)}';

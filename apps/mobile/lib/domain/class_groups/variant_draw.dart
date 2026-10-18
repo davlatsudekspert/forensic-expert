@@ -50,3 +50,41 @@ int _bytes(String a, String b) {
 /// talab qiladi — `variant_pool_small`).
 bool variantAllowed(int poolSize, int perStudent) =>
     perStudent >= 1 && poolSize >= perStudent * 2;
+
+/// «Umumiy test»: mavzu hajmlari [sizes] dan jami [n] ta savol NAVBATMA-
+/// NAVBAT (har mavzudan bittadan, so‘ng yana) olinganda har mavzuga nechta
+/// tushadi. Server `private.group_round_robin_counts` bilan bir xil
+/// (umumiy vektorlar: `round_robin`).
+List<int> roundRobinCounts(List<int> sizes, int n) {
+  final c = List<int>.filled(sizes.length, 0);
+  var left = n < 0 ? 0 : n;
+  while (left > 0) {
+    var progressed = false;
+    for (var i = 0; i < sizes.length && left > 0; i++) {
+      if (c[i] < sizes[i]) {
+        c[i]++;
+        left--;
+        progressed = true;
+      }
+    }
+    if (!progressed) break;
+  }
+  return c;
+}
+
+/// Navbatma-navbat tanlov (id takrorlanmaydi): har ro‘yxatdan tartib bilan.
+List<String> roundRobinPick(List<List<String>> lists, int n) {
+  final out = <String>[];
+  final seen = <String>{};
+  for (var round = 0; out.length < n; round++) {
+    var any = false;
+    for (final l in lists) {
+      if (round < l.length) {
+        any = true;
+        if (out.length < n && seen.add(l[round])) out.add(l[round]);
+      }
+    }
+    if (!any) break;
+  }
+  return out;
+}

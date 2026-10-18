@@ -448,6 +448,10 @@ void main() {
       expect(find.byKey(const Key('lesson.quizSoon')), findsNothing);
       await tester.tap(find.byKey(const Key('lesson.quizStart')));
       await tester.pumpAndSettle();
+      // Ustoz tanlaydi: guruhga topshirish / o‘zim / jonli sinf testi.
+      expect(find.byKey(const Key('grp.choice.assign')), findsOneWidget);
+      await tester.tap(find.byKey(const Key('grp.choice.live')));
+      await tester.pumpAndSettle();
       expect(find.byType(ClassCreateScreen), findsOneWidget);
       expect(find.byKey(const Key('class.selectedTopic')), findsOneWidget);
       expect(find.text(_questions.title), findsWidgets);

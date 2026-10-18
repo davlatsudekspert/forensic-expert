@@ -17541,18 +17541,6 @@ abstract class AppLocalizations {
   /// **'Change'**
   String get grpChangeTopic;
 
-  /// Section.
-  ///
-  /// In en, this message translates to:
-  /// **'Settings'**
-  String get grpSettingsSection;
-
-  /// Slider label.
-  ///
-  /// In en, this message translates to:
-  /// **'Questions per student: {count}'**
-  String grpCountLabel(int count);
-
   /// Switch.
   ///
   /// In en, this message translates to:
@@ -17577,29 +17565,11 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 question} other{{count} questions}}'**
   String grpQuestionsN(int count);
 
-  /// Due tile.
-  ///
-  /// In en, this message translates to:
-  /// **'Deadline'**
-  String get grpDueTitle;
-
-  /// No due.
-  ///
-  /// In en, this message translates to:
-  /// **'No deadline — until the teacher closes the test'**
-  String get grpNoDue;
-
   /// Due label.
   ///
   /// In en, this message translates to:
   /// **'Due: {date}'**
   String grpDueLabel(String date);
-
-  /// Tooltip.
-  ///
-  /// In en, this message translates to:
-  /// **'Remove deadline'**
-  String get grpClearDue;
 
   /// Switch.
   ///
@@ -17642,12 +17612,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Only when I close the test'**
   String get grpRevealAfterClose;
-
-  /// Radio hint.
-  ///
-  /// In en, this message translates to:
-  /// **'Set a deadline first'**
-  String get grpRevealNeedsDue;
 
   /// Button.
   ///
@@ -18140,6 +18104,228 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You haven’t sent this test yet.'**
   String get grpErrNotSubmitted;
+
+  /// Topic test choice title.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic test'**
+  String get grpChoiceTitle;
+
+  /// Choice.
+  ///
+  /// In en, this message translates to:
+  /// **'Give to a group'**
+  String get grpChoiceAssign;
+
+  /// Choice hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Students solve it in their own time; results come to you'**
+  String get grpChoiceAssignHint;
+
+  /// Choice.
+  ///
+  /// In en, this message translates to:
+  /// **'Try it myself'**
+  String get grpChoiceSelf;
+
+  /// Choice hint.
+  ///
+  /// In en, this message translates to:
+  /// **'10 questions on this device; nothing is sent'**
+  String get grpChoiceSelfHint;
+
+  /// Choice.
+  ///
+  /// In en, this message translates to:
+  /// **'Live class quiz'**
+  String get grpChoiceLive;
+
+  /// Choice hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Code and QR on the screen, questions one by one'**
+  String get grpChoiceLiveHint;
+
+  /// Group picker title.
+  ///
+  /// In en, this message translates to:
+  /// **'Which group?'**
+  String get grpChoicePickGroup;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of questions'**
+  String get grpCountSection;
+
+  /// Chip.
+  ///
+  /// In en, this message translates to:
+  /// **'All {count}'**
+  String grpCountAll(int count);
+
+  /// Chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Other…'**
+  String get grpCustom;
+
+  /// Chip with value.
+  ///
+  /// In en, this message translates to:
+  /// **'Other: {value}'**
+  String grpCustomValue(int value);
+
+  /// Dialog hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Any number from 1 to {max} (all available questions).'**
+  String grpCountCustomHint(int max);
+
+  /// Count hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Each student gets {count} questions; {pool} are available.'**
+  String grpCountHint(int count, int pool);
+
+  /// Chip.
+  ///
+  /// In en, this message translates to:
+  /// **'No limit'**
+  String get grpNoTimeLimitShort;
+
+  /// Dialog hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes, from 1 to 180.'**
+  String get grpTimeCustomHint;
+
+  /// Time hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Counted from the moment the student starts; when time is up, the answers are sent automatically.'**
+  String get grpTimeLimitHint;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'How long the test stays open'**
+  String get grpOpenSection;
+
+  /// Days chip.
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, =1{1 day} other{{days} days}}'**
+  String grpDaysN(int days);
+
+  /// Chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a date'**
+  String get grpPickDate;
+
+  /// Open hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Students can start until {date}. This is not the time for solving — that is the time limit above.'**
+  String grpOpenHint(String date);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Give a combined test'**
+  String get grpMixedAction;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Combined test'**
+  String get grpMixedTitle;
+
+  /// Auto title prefix.
+  ///
+  /// In en, this message translates to:
+  /// **'Combined test'**
+  String get grpMixedPrefix;
+
+  /// Intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick topics from one or more sources. Questions are taken from the topics in turn and never repeat.'**
+  String get grpMixedIntro;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get grpMixedSources;
+
+  /// Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Other topics'**
+  String get grpMixedOtherSource;
+
+  /// Source subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics: {count} · selected: {picked}'**
+  String grpMixedSourceLine(int count, int picked);
+
+  /// Checkbox.
+  ///
+  /// In en, this message translates to:
+  /// **'Select all'**
+  String get grpSelectAll;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected: {topics} topics, {questions} questions'**
+  String grpMixedSelected(int topics, int questions);
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Test name'**
+  String get grpMixedTitleLabel;
+
+  /// Field hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Filled in automatically — you can change it.'**
+  String get grpMixedTitleHint;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview the questions'**
+  String get grpMixedPreviewAction;
+
+  /// Preview title.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} questions, by topic:'**
+  String grpMixedPreviewTitle(int count);
+
+  /// Preview note.
+  ///
+  /// In en, this message translates to:
+  /// **'Example of the selection. The server picks the exact questions at random within each topic, with the same split.'**
+  String get grpMixedPreviewNote;
+
+  /// Practice banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Trying it yourself: nothing is sent to the server.'**
+  String get grpPracticeBanner;
+
+  /// Practice done.
+  ///
+  /// In en, this message translates to:
+  /// **'This was a trial on your device — nothing was sent.'**
+  String get grpPracticeNothingSent;
 }
 
 class _AppLocalizationsDelegate

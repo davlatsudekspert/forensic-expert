@@ -16,6 +16,8 @@ import 'providers.dart';
 
 export '../data/class_quiz/class_quiz_bank.dart'
     show ClassQuizBank, ClassQuizBankGroup, ClassQuizBankTopicMeta;
+export '../data/class_quiz/class_quiz_demo_bank.dart'
+    show ClassBankQuestion, ClassBankTopic;
 
 /// Savollar banki assetini o‘qish (testlarda almashtiriladi).
 /// `rootBundle.load` + utf8 (loadString katta fayl uchun alohida isolate

@@ -13124,19 +13124,6 @@
   "@grpChangeTopic": {
     "description": "Link."
   },
-  "grpSettingsSection": "Settings",
-  "@grpSettingsSection": {
-    "description": "Section."
-  },
-  "grpCountLabel": "Questions per student: {count}",
-  "@grpCountLabel": {
-    "description": "Slider label.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "grpTimeLimitLabel": "Time limit",
   "@grpTimeLimitLabel": {
     "description": "Switch."
@@ -13163,14 +13150,6 @@
       }
     }
   },
-  "grpDueTitle": "Deadline",
-  "@grpDueTitle": {
-    "description": "Due tile."
-  },
-  "grpNoDue": "No deadline — until the teacher closes the test",
-  "@grpNoDue": {
-    "description": "No due."
-  },
   "grpDueLabel": "Due: {date}",
   "@grpDueLabel": {
     "description": "Due label.",
@@ -13179,10 +13158,6 @@
         "type": "String"
       }
     }
-  },
-  "grpClearDue": "Remove deadline",
-  "@grpClearDue": {
-    "description": "Tooltip."
   },
   "grpVariantLabel": "Different questions for each student",
   "@grpVariantLabel": {
@@ -13219,10 +13194,6 @@
   "grpRevealAfterClose": "Only when I close the test",
   "@grpRevealAfterClose": {
     "description": "Radio."
-  },
-  "grpRevealNeedsDue": "Set a deadline first",
-  "@grpRevealNeedsDue": {
-    "description": "Radio hint."
   },
   "grpAssignSubmit": "Give the test",
   "@grpAssignSubmit": {
@@ -13631,5 +13602,207 @@
   "grpErrNotSubmitted": "You haven’t sent this test yet.",
   "@grpErrNotSubmitted": {
     "description": "Error."
+  },
+  "grpChoiceTitle": "Topic test",
+  "@grpChoiceTitle": {
+    "description": "Topic test choice title."
+  },
+  "grpChoiceAssign": "Give to a group",
+  "@grpChoiceAssign": {
+    "description": "Choice."
+  },
+  "grpChoiceAssignHint": "Students solve it in their own time; results come to you",
+  "@grpChoiceAssignHint": {
+    "description": "Choice hint."
+  },
+  "grpChoiceSelf": "Try it myself",
+  "@grpChoiceSelf": {
+    "description": "Choice."
+  },
+  "grpChoiceSelfHint": "10 questions on this device; nothing is sent",
+  "@grpChoiceSelfHint": {
+    "description": "Choice hint."
+  },
+  "grpChoiceLive": "Live class quiz",
+  "@grpChoiceLive": {
+    "description": "Choice."
+  },
+  "grpChoiceLiveHint": "Code and QR on the screen, questions one by one",
+  "@grpChoiceLiveHint": {
+    "description": "Choice hint."
+  },
+  "grpChoicePickGroup": "Which group?",
+  "@grpChoicePickGroup": {
+    "description": "Group picker title."
+  },
+  "grpCountSection": "Number of questions",
+  "@grpCountSection": {
+    "description": "Section."
+  },
+  "grpCountAll": "All {count}",
+  "@grpCountAll": {
+    "description": "Chip.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "grpCustom": "Other…",
+  "@grpCustom": {
+    "description": "Chip."
+  },
+  "grpCustomValue": "Other: {value}",
+  "@grpCustomValue": {
+    "description": "Chip with value.",
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "grpCountCustomHint": "Any number from 1 to {max} (all available questions).",
+  "@grpCountCustomHint": {
+    "description": "Dialog hint.",
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "grpCountHint": "Each student gets {count} questions; {pool} are available.",
+  "@grpCountHint": {
+    "description": "Count hint.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "pool": {
+        "type": "int"
+      }
+    }
+  },
+  "grpNoTimeLimitShort": "No limit",
+  "@grpNoTimeLimitShort": {
+    "description": "Chip."
+  },
+  "grpTimeCustomHint": "Minutes, from 1 to 180.",
+  "@grpTimeCustomHint": {
+    "description": "Dialog hint."
+  },
+  "grpTimeLimitHint": "Counted from the moment the student starts; when time is up, the answers are sent automatically.",
+  "@grpTimeLimitHint": {
+    "description": "Time hint."
+  },
+  "grpOpenSection": "How long the test stays open",
+  "@grpOpenSection": {
+    "description": "Section."
+  },
+  "grpDaysN": "{days, plural, =1{1 day} other{{days} days}}",
+  "@grpDaysN": {
+    "description": "Days chip.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "grpPickDate": "Pick a date",
+  "@grpPickDate": {
+    "description": "Chip."
+  },
+  "grpOpenHint": "Students can start until {date}. This is not the time for solving — that is the time limit above.",
+  "@grpOpenHint": {
+    "description": "Open hint.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "grpMixedAction": "Give a combined test",
+  "@grpMixedAction": {
+    "description": "Button."
+  },
+  "grpMixedTitle": "Combined test",
+  "@grpMixedTitle": {
+    "description": "Screen title."
+  },
+  "grpMixedPrefix": "Combined test",
+  "@grpMixedPrefix": {
+    "description": "Auto title prefix."
+  },
+  "grpMixedIntro": "Pick topics from one or more sources. Questions are taken from the topics in turn and never repeat.",
+  "@grpMixedIntro": {
+    "description": "Intro."
+  },
+  "grpMixedSources": "Sources",
+  "@grpMixedSources": {
+    "description": "Section."
+  },
+  "grpMixedOtherSource": "Other topics",
+  "@grpMixedOtherSource": {
+    "description": "Source."
+  },
+  "grpMixedSourceLine": "Topics: {count} · selected: {picked}",
+  "@grpMixedSourceLine": {
+    "description": "Source subtitle.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "picked": {
+        "type": "int"
+      }
+    }
+  },
+  "grpSelectAll": "Select all",
+  "@grpSelectAll": {
+    "description": "Checkbox."
+  },
+  "grpMixedSelected": "Selected: {topics} topics, {questions} questions",
+  "@grpMixedSelected": {
+    "description": "Section.",
+    "placeholders": {
+      "topics": {
+        "type": "int"
+      },
+      "questions": {
+        "type": "int"
+      }
+    }
+  },
+  "grpMixedTitleLabel": "Test name",
+  "@grpMixedTitleLabel": {
+    "description": "Field."
+  },
+  "grpMixedTitleHint": "Filled in automatically — you can change it.",
+  "@grpMixedTitleHint": {
+    "description": "Field hint."
+  },
+  "grpMixedPreviewAction": "Preview the questions",
+  "@grpMixedPreviewAction": {
+    "description": "Button."
+  },
+  "grpMixedPreviewTitle": "{count} questions, by topic:",
+  "@grpMixedPreviewTitle": {
+    "description": "Preview title.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "grpMixedPreviewNote": "Example of the selection. The server picks the exact questions at random within each topic, with the same split.",
+  "@grpMixedPreviewNote": {
+    "description": "Preview note."
+  },
+  "grpPracticeBanner": "Trying it yourself: nothing is sent to the server.",
+  "@grpPracticeBanner": {
+    "description": "Practice banner."
+  },
+  "grpPracticeNothingSent": "This was a trial on your device — nothing was sent.",
+  "@grpPracticeNothingSent": {
+    "description": "Practice done."
   }
 }

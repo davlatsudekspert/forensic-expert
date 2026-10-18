@@ -10144,14 +10144,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpChangeTopic => 'Изменить';
 
   @override
-  String get grpSettingsSection => 'Настройки';
-
-  @override
-  String grpCountLabel(int count) {
-    return 'Вопросов каждому студенту: $count';
-  }
-
-  @override
   String get grpTimeLimitLabel => 'Ограничение времени';
 
   @override
@@ -10182,18 +10174,9 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get grpDueTitle => 'Срок';
-
-  @override
-  String get grpNoDue => 'Без срока — пока преподаватель не закроет тест';
-
-  @override
   String grpDueLabel(String date) {
     return 'Срок: $date';
   }
-
-  @override
-  String get grpClearDue => 'Убрать срок';
 
   @override
   String get grpVariantLabel => 'Разные вопросы каждому студенту';
@@ -10218,9 +10201,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get grpRevealAfterClose => 'Только когда я закрою тест';
-
-  @override
-  String get grpRevealNeedsDue => 'Сначала укажите срок';
 
   @override
   String get grpAssignSubmit => 'Дать тест';
@@ -10521,4 +10501,147 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get grpErrNotSubmitted => 'Вы ещё не отправили этот тест.';
+
+  @override
+  String get grpChoiceTitle => 'Тест по теме';
+
+  @override
+  String get grpChoiceAssign => 'Дать группе';
+
+  @override
+  String get grpChoiceAssignHint =>
+      'Студенты решают в удобное время; результаты приходят вам';
+
+  @override
+  String get grpChoiceSelf => 'Пройти самому';
+
+  @override
+  String get grpChoiceSelfHint =>
+      '10 вопросов на этом устройстве; ничего не отправляется';
+
+  @override
+  String get grpChoiceLive => 'Живой тест в классе';
+
+  @override
+  String get grpChoiceLiveHint => 'Код и QR на экране, вопросы по очереди';
+
+  @override
+  String get grpChoicePickGroup => 'Какой группе?';
+
+  @override
+  String get grpCountSection => 'Количество вопросов';
+
+  @override
+  String grpCountAll(int count) {
+    return 'Все $count';
+  }
+
+  @override
+  String get grpCustom => 'Другое…';
+
+  @override
+  String grpCustomValue(int value) {
+    return 'Другое: $value';
+  }
+
+  @override
+  String grpCountCustomHint(int max) {
+    return 'Любое число от 1 до $max (все доступные вопросы).';
+  }
+
+  @override
+  String grpCountHint(int count, int pool) {
+    return 'Каждый студент получит $count вопросов; доступно $pool.';
+  }
+
+  @override
+  String get grpNoTimeLimitShort => 'Без лимита';
+
+  @override
+  String get grpTimeCustomHint => 'Минуты, от 1 до 180.';
+
+  @override
+  String get grpTimeLimitHint =>
+      'Отсчитывается с момента начала у студента; когда время выйдет, ответы отправятся сами.';
+
+  @override
+  String get grpOpenSection => 'Сколько тест будет открыт';
+
+  @override
+  String grpDaysN(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days дней',
+      few: '$days дня',
+      one: '$days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get grpPickDate => 'Выбрать дату';
+
+  @override
+  String grpOpenHint(String date) {
+    return 'Начать тест можно до $date. Это не время на решение — оно задаётся выше.';
+  }
+
+  @override
+  String get grpMixedAction => 'Дать общий тест';
+
+  @override
+  String get grpMixedTitle => 'Общий тест';
+
+  @override
+  String get grpMixedPrefix => 'Общий тест';
+
+  @override
+  String get grpMixedIntro =>
+      'Выберите темы из одного или нескольких источников. Вопросы берутся из тем по очереди и не повторяются.';
+
+  @override
+  String get grpMixedSources => 'Источники';
+
+  @override
+  String get grpMixedOtherSource => 'Другие темы';
+
+  @override
+  String grpMixedSourceLine(int count, int picked) {
+    return 'Тем: $count · выбрано: $picked';
+  }
+
+  @override
+  String get grpSelectAll => 'Выбрать все';
+
+  @override
+  String grpMixedSelected(int topics, int questions) {
+    return 'Выбрано: $topics тем, $questions вопросов';
+  }
+
+  @override
+  String get grpMixedTitleLabel => 'Название теста';
+
+  @override
+  String get grpMixedTitleHint => 'Заполняется автоматически — можно изменить.';
+
+  @override
+  String get grpMixedPreviewAction => 'Просмотреть вопросы';
+
+  @override
+  String grpMixedPreviewTitle(int count) {
+    return '$count вопросов, по темам:';
+  }
+
+  @override
+  String get grpMixedPreviewNote =>
+      'Пример отбора. Сервер выбирает конкретные вопросы случайно внутри каждой темы, с тем же распределением.';
+
+  @override
+  String get grpPracticeBanner =>
+      'Пробное решение: на сервер ничего не отправляется.';
+
+  @override
+  String get grpPracticeNothingSent =>
+      'Это была проба на вашем устройстве — ничего не отправлено.';
 }

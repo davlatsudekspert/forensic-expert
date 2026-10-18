@@ -10,7 +10,6 @@ import 'package:forensic_expert/app/class_quiz.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
-import 'package:forensic_expert/data/class_quiz/class_quiz_demo_bank.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
 

@@ -123,15 +123,19 @@ class SupabaseClassGroupsService implements ClassGroupsService {
     String groupId,
     AssignmentDraft d,
   ) async => _map(
-    await _rpc('group_assignment_create', {
-      'p_group': groupId,
-      'p_topic': d.topicId,
-      'p_count': d.questionCount,
-      'p_time_limit_min': d.timeLimitMin,
-      'p_due_at': d.dueAt?.toUtc().toIso8601String(),
-      'p_variant': d.variantMode,
-      'p_reveal': d.reveal.wire,
-    }),
+    await _rpc(
+      d.isMixed ? 'group_assignment_create_mixed' : 'group_assignment_create',
+      {
+        'p_group': groupId,
+        if (d.isMixed) 'p_title': d.title,
+        if (d.isMixed) 'p_topics': d.topicIds else 'p_topic': d.topicId,
+        'p_count': d.questionCount,
+        'p_time_limit_min': d.timeLimitMin,
+        'p_due_at': d.dueAt?.toUtc().toIso8601String(),
+        'p_variant': d.variantMode,
+        'p_reveal': d.reveal.wire,
+      },
+    ),
     (m) => GroupAssignment.fromJson((m['assignment']! as Map).cast()),
   );
 

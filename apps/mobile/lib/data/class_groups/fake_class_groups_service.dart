@@ -209,6 +209,7 @@ class FakeClassGroupsBackend {
           : MyTestState.finished,
       myScore: t?.score,
       myTotal: t?.submittedAt == null ? null : t!.questionIds.length,
+      topics: a.draft.topicIds,
     );
   }
 
@@ -316,24 +317,54 @@ class FakeClassGroupsBackend {
   ) async {
     final g = _owned(uid, groupId);
     if (g == null) return const GroupCall.fail(GroupFailure.forbidden);
-    final topic = (await topics()).where((t) => t.id == d.topicId).firstOrNull;
-    final pool = topic?.questions ?? const <ClassBankQuestion>[];
-    final err = d.validate(poolSize: pool.length, now: now());
+    final all = await topics();
+    final ids = <String>[];
+    for (final t in d.topicIds) {
+      if (!ids.contains(t)) ids.add(t);
+    }
+    final chosen = [
+      for (final t in ids) ?all.where((x) => x.id == t).firstOrNull,
+    ];
+    // Har mavzu savollari (id bilan), mavzu ichida tasodifiy tartib.
+    final lists = [
+      for (final t in chosen)
+        [
+          for (final (i, b) in t.questions.indexed)
+            (
+              b.id.isNotEmpty
+                  ? b.id
+                  : '${t.id}#${(i + 1).toString().padLeft(3, '0')}',
+              b,
+            ),
+        ]..shuffle(_rng),
+    ];
+    final byId = {
+      for (final l in lists)
+        for (final e in l) e.$1: e.$2,
+    };
+    final err = d.validate(poolSize: byId.length, now: now());
+    if (chosen.isEmpty) {
+      return const GroupCall.fail(GroupFailure.invalidSettings);
+    }
     if (err != null) {
       return GroupCall.fail(err, {
-        'available': pool.length,
+        'available': byId.length,
         'needed': d.questionCount * 2,
       });
     }
+    // Bitta mavzu — butun mavzu (≤200); bir nechta — navbatma-navbat N yoki 2N.
+    final take = chosen.length == 1
+        ? 200
+        : d.variantMode
+        ? d.questionCount * 2
+        : d.questionCount;
+    final picked = roundRobinPick([
+      for (final l in lists) [for (final e in l) e.$1],
+    ], take);
     final qs = <String, _Q>{};
-    for (var i = 0; i < pool.length && i < 200; i++) {
-      final b = pool[i];
+    for (final id in picked) {
+      final b = byId[id]!;
       final perm = [0, 1, 2, 3]..shuffle(_rng);
-      // Bankdagi barqaror id (yagona indeks bilan bir xil); demo
-      // to‘plamda id yo‘q — mavzu + tartib raqami.
-      final id = b.id.isNotEmpty
-          ? b.id
-          : '${d.topicId}#${(i + 1).toString().padLeft(3, '0')}';
       qs[id] = _Q(
         id,
         b.question,
@@ -343,11 +374,14 @@ class FakeClassGroupsBackend {
         b.source,
       );
     }
+    final title = (d.title ?? '').trim().isNotEmpty
+        ? d.title!.trim()
+        : chosen.first.title;
     final a = _Assignment(
       id: _id(),
       groupId: g.id,
-      topicId: d.topicId,
-      topicTitle: topic!.title,
+      topicId: chosen.length == 1 ? chosen.first.id : 'mixed',
+      topicTitle: title,
       draft: d,
       pool: qs,
       createdAt: now(),

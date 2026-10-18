@@ -180,6 +180,13 @@ class _GroupDetailState extends ConsumerState<GroupDetailScreen> {
         icon: const Icon(Icons.assignment_add),
         label: Text(l.grpAssignAction),
       ),
+      const SizedBox(height: FeSpace.xs),
+      OutlinedButton.icon(
+        key: const Key('grp.mixedButton'),
+        onPressed: () => context.push(Routes.groupMixed(d.group.id)),
+        icon: const Icon(Icons.library_add_check_outlined),
+        label: Text(l.grpMixedAction),
+      ),
       const SizedBox(height: FeSpace.md),
       FeCard(
         key: const Key('grp.invitePanel'),

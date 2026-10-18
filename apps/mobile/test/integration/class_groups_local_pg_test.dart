@@ -203,6 +203,23 @@ void main() {
       final after = (await as(students.keys.first).result(a.id)).value!;
       expect(after.revealed, isTrue);
       expect(after.items.every((it) => it.isCorrect == true), isTrue);
+      // «Umumiy test»: ikki mavzu, navbatma-navbat (20 + 6 → 12 savolda 6/6).
+      final mixed = (await teacher.createAssignment(
+        g.id,
+        AssignmentDraft(
+          topicId: 'dart-tox',
+          topics: const ['dart-tox', 'dart-co'],
+          title: 'Umumiy test: Toks · CO',
+          questionCount: 12,
+          timeLimitMin: 10,
+          dueAt: DateTime.now().add(const Duration(days: 1)),
+        ),
+      )).value!;
+      expect(mixed.isMixed, isTrue);
+      expect(mixed.topicTitle, 'Umumiy test: Toks · CO');
+      expect(mixed.poolSize, 12);
+      final mpool = (await teacher.preview(mixed.id)).value!.pool;
+      expect(mpool.where((q) => q.text.startsWith('Dart CO')).length, 6);
       // ignore: avoid_print
       print('Dart e2e: ${transport.calls} RPC, ${board.rows.length} talaba');
     },

@@ -10049,14 +10049,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get grpChangeTopic => 'O‘zgartirish';
 
   @override
-  String get grpSettingsSection => 'Sozlamalar';
-
-  @override
-  String grpCountLabel(int count) {
-    return 'Har talabaga savollar: $count';
-  }
-
-  @override
   String get grpTimeLimitLabel => 'Vaqt chegarasi';
 
   @override
@@ -10073,18 +10065,9 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get grpDueTitle => 'Muddat';
-
-  @override
-  String get grpNoDue => 'Muddatsiz — ustoz testni yopguncha';
-
-  @override
   String grpDueLabel(String date) {
     return 'Muddat: $date';
   }
-
-  @override
-  String get grpClearDue => 'Muddatni olib tashlash';
 
   @override
   String get grpVariantLabel => 'Har talabaga boshqa savollar';
@@ -10109,9 +10092,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpRevealAfterClose => 'Faqat testni yopganimda';
-
-  @override
-  String get grpRevealNeedsDue => 'Avval muddatni belgilang';
 
   @override
   String get grpAssignSubmit => 'Testni berish';
@@ -10413,4 +10393,141 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpErrNotSubmitted => 'Bu testni hali yubormagansiz.';
+
+  @override
+  String get grpChoiceTitle => 'Mavzu testi';
+
+  @override
+  String get grpChoiceAssign => 'Guruhga topshirish';
+
+  @override
+  String get grpChoiceAssignHint =>
+      'Talabalar o‘z vaqtida yechadi; natijalar sizga keladi';
+
+  @override
+  String get grpChoiceSelf => 'O‘zim yechib ko‘rish';
+
+  @override
+  String get grpChoiceSelfHint =>
+      'Shu qurilmada 10 ta savol; hech narsa yuborilmaydi';
+
+  @override
+  String get grpChoiceLive => 'Sinfda jonli test';
+
+  @override
+  String get grpChoiceLiveHint => 'Ekranda kod va QR, savollar navbat bilan';
+
+  @override
+  String get grpChoicePickGroup => 'Qaysi guruhga?';
+
+  @override
+  String get grpCountSection => 'Savollar soni';
+
+  @override
+  String grpCountAll(int count) {
+    return 'Barcha $count ta';
+  }
+
+  @override
+  String get grpCustom => 'Boshqa…';
+
+  @override
+  String grpCustomValue(int value) {
+    return 'Boshqa: $value';
+  }
+
+  @override
+  String grpCountCustomHint(int max) {
+    return '1 dan $max gacha istalgan son (mavjud savollarning hammasi).';
+  }
+
+  @override
+  String grpCountHint(int count, int pool) {
+    return 'Har talabaga $count ta savol; mavjud — $pool ta.';
+  }
+
+  @override
+  String get grpNoTimeLimitShort => 'Vaqtsiz';
+
+  @override
+  String get grpTimeCustomHint => 'Daqiqa, 1 dan 180 gacha.';
+
+  @override
+  String get grpTimeLimitHint =>
+      'Talaba boshlagan paytdan hisoblanadi; vaqt tugasa, javoblar o‘zi yuboriladi.';
+
+  @override
+  String get grpOpenSection => 'Test qancha vaqt ochiq turadi';
+
+  @override
+  String grpDaysN(int days) {
+    return '$days kun';
+  }
+
+  @override
+  String get grpPickDate => 'Sana tanlash';
+
+  @override
+  String grpOpenHint(String date) {
+    return 'Talabalar $date gacha boshlay oladi. Bu yechish uchun beriladigan vaqt emas — u yuqorida.';
+  }
+
+  @override
+  String get grpMixedAction => 'Umumiy test berish';
+
+  @override
+  String get grpMixedTitle => 'Umumiy test';
+
+  @override
+  String get grpMixedPrefix => 'Umumiy test';
+
+  @override
+  String get grpMixedIntro =>
+      'Bir yoki bir nechta manbadan mavzularni tanlang. Savollar mavzulardan navbatma-navbat olinadi va takrorlanmaydi.';
+
+  @override
+  String get grpMixedSources => 'Manbalar';
+
+  @override
+  String get grpMixedOtherSource => 'Boshqa mavzular';
+
+  @override
+  String grpMixedSourceLine(int count, int picked) {
+    return 'Mavzular: $count · tanlangan: $picked';
+  }
+
+  @override
+  String get grpSelectAll => 'Hammasini tanlash';
+
+  @override
+  String grpMixedSelected(int topics, int questions) {
+    return 'Tanlangan: $topics ta mavzu, $questions ta savol';
+  }
+
+  @override
+  String get grpMixedTitleLabel => 'Test nomi';
+
+  @override
+  String get grpMixedTitleHint =>
+      'Avtomatik to‘ldiriladi — o‘zgartirish mumkin.';
+
+  @override
+  String get grpMixedPreviewAction => 'Tanlangan savollarni ko‘rish';
+
+  @override
+  String grpMixedPreviewTitle(int count) {
+    return '$count ta savol, mavzular bo‘yicha:';
+  }
+
+  @override
+  String get grpMixedPreviewNote =>
+      'Tanlov namunasi. Aniq savollarni server har mavzu ichida tasodifiy, xuddi shu taqsimot bilan tanlaydi.';
+
+  @override
+  String get grpPracticeBanner =>
+      'O‘zim yechib ko‘rish: serverga hech narsa yuborilmaydi.';
+
+  @override
+  String get grpPracticeNothingSent =>
+      'Bu qurilmangizdagi sinov edi — hech narsa yuborilmadi.';
 }

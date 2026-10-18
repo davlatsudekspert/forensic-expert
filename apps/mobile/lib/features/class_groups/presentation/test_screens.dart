@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/class_groups.dart';
+import '../../../app/class_quiz.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -25,11 +26,18 @@ class GroupTestScreen extends ConsumerStatefulWidget {
     required this.groupId,
     required this.assignmentId,
     this.preview = false,
+    this.practiceTopicId,
   });
 
   final String groupId;
   final String assignmentId;
   final bool preview;
+
+  /// Ustoz «O‘zim yechib ko‘rish»: mavzu savollari yagona indeksdan
+  /// (qurilmada), serverga hech narsa yuborilmaydi.
+  final String? practiceTopicId;
+
+  bool get local => preview || practiceTopicId != null;
 
   @override
   ConsumerState<GroupTestScreen> createState() => _GroupTestState();
@@ -49,12 +57,63 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
   @override
   void initState() {
     super.initState();
-    unawaited(_load());
+    WidgetsBinding.instance.addPostFrameCallback((_) => unawaited(_load()));
   }
 
   Future<void> _load() async {
     final svc = ref.read(classGroupsServiceProvider);
     final now = ref.read(groupNowProvider)();
+    final practice = widget.practiceTopicId;
+    if (practice != null) {
+      final lang = Localizations.localeOf(context).languageCode;
+      final bank = await ref.read(classQuizBankProvider.future);
+      if (!mounted) return;
+      final base = ClassQuizBank.baseId(practice);
+      final topic =
+          bank.variants
+              .where((v) => v.id == ClassQuizBank.variantId(base, lang))
+              .firstOrNull ??
+          bank.variants.where((v) => v.id == base).firstOrNull;
+      if (topic == null || topic.questions.isEmpty) {
+        setState(() => _failure = GroupFailure.notEnoughQuestions);
+        return;
+      }
+      final ids = drawVariant(
+        assignmentId: topic.id,
+        userId: 'self-${now.microsecondsSinceEpoch}',
+        pool: [for (final q in topic.questions) q.id],
+        count: 10,
+      );
+      final attempt = GroupAttempt(
+        assignment: GroupAssignment(
+          id: topic.id,
+          groupId: '',
+          topicId: topic.id,
+          topicTitle: topic.title,
+          questionCount: ids.length,
+          variantMode: false,
+          reveal: RevealPolicy.afterClose,
+          closed: false,
+          revealed: false,
+        ),
+        finished: false,
+        questions: [
+          for (final id in ids)
+            if (bank.question(id) case final q?)
+              GroupQuestion(id: id, text: q.question, options: q.options),
+        ],
+        answers: const {},
+        serverNow: now.toUtc(),
+      );
+      setState(() {
+        _previewKey = {
+          for (final id in ids) id: bank.question(id)!.correctIndex,
+        };
+        _attempt = attempt;
+        _clock = GroupClock.of(attempt, now);
+      });
+      return;
+    }
     if (widget.preview) {
       final r = await svc.preview(widget.assignmentId);
       if (!mounted) return;
@@ -123,7 +182,7 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
 
   void _choose(GroupQuestion q, int option) {
     setState(() => _answers[q.id] = option);
-    if (widget.preview) return;
+    if (widget.local) return;
     unawaited(() async {
       final r = await ref.read(classGroupsServiceProvider).save(
         widget.assignmentId,
@@ -160,7 +219,7 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
       if (ok != true || !mounted) return;
     }
     setState(() => _submitting = true);
-    if (widget.preview) {
+    if (widget.local) {
       final score = _previewKey.entries
           .where((e) => _answers[e.key] == e.value)
           .length;
@@ -169,7 +228,11 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
         builder: (c) => AlertDialog(
           key: const Key('grp.previewDone'),
           title: Text(l.grpPreviewDone(score, _previewKey.length)),
-          content: Text(l.grpPreviewNothingSent),
+          content: Text(
+            widget.practiceTopicId != null
+                ? l.grpPracticeNothingSent
+                : l.grpPreviewNothingSent,
+          ),
           actions: [
             FilledButton(onPressed: () => c.pop(), child: Text(l.grpOk)),
           ],
@@ -178,6 +241,8 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
       if (!mounted) return;
       if (context.canPop()) {
         context.pop();
+      } else if (widget.practiceTopicId != null) {
+        context.go(Routes.groups);
       } else {
         context.go(Routes.groupAssignment(widget.groupId, widget.assignmentId));
       }
@@ -251,13 +316,15 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  if (widget.preview)
+                  if (widget.local)
                     Padding(
                       padding: const EdgeInsets.only(top: FeSpace.xs),
                       child: FeBanner(
                         key: const Key('grp.previewBanner'),
                         icon: Icons.visibility_outlined,
-                        text: l.grpPreviewBanner,
+                        text: widget.practiceTopicId != null
+                            ? l.grpPracticeBanner
+                            : l.grpPreviewBanner,
                         tone: FeBannerTone.warning,
                       ),
                     ),

@@ -9,24 +9,37 @@ import '../../../app/class_quiz.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
-import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
-import '../../../domain/class_groups/class_groups_models.dart';
-import '../../../domain/class_groups/variant_draw.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassTopic;
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show classFailureText;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'group_widgets.dart';
+import 'test_settings.dart';
 
-/// «Mavzu testi berish»: mavzu, savollar soni, vaqt chegarasi (1–180 daqiqa
-/// yoki chegarasiz), muddat, variant rejimi, javoblar qachon ochilishi.
+/// Ilova tilidagi mavzu varianti (`<id>`, `<id>~ru`, `<id>~en`).
+String? pickTopicVariant(List<ClassTopic> all, String id, String lang) {
+  final base = ClassQuizBank.baseId(id);
+  final variants = {
+    for (final x in all)
+      if (ClassQuizBank.baseId(x.id) == base)
+        ClassQuizBank.variantLang(x.id): x,
+  };
+  return (variants[lang] ?? variants['uz'] ?? variants.values.firstOrNull)?.id;
+}
+
+/// «Mavzu testi berish»: mavzu va topshirish sozlamalari.
 class AssignTestScreen extends ConsumerStatefulWidget {
-  const AssignTestScreen({super.key, required this.groupId});
+  const AssignTestScreen({
+    super.key,
+    required this.groupId,
+    this.initialTopicId,
+  });
 
   final String groupId;
+  final String? initialTopicId;
 
   @override
   ConsumerState<AssignTestScreen> createState() => _AssignTestState();
@@ -34,62 +47,22 @@ class AssignTestScreen extends ConsumerStatefulWidget {
 
 class _AssignTestState extends ConsumerState<AssignTestScreen> {
   String? _topicId;
+  bool _initialApplied = false;
   String _query = '';
-  int _count = 10;
-  bool _limitOn = true;
-  int _limit = 20;
-  DateTime? _due;
-  bool _variant = true;
-  RevealPolicy _reveal = RevealPolicy.afterClose;
+  var _s = const TestSettings();
   bool _busy = false;
   String? _error;
 
-  Future<void> _pickDue() async {
-    final now = ref.read(groupNowProvider)();
-    final base = _due ?? now.add(const Duration(days: 1));
-    final date = await showDatePicker(
-      context: context,
-      initialDate: base,
-      firstDate: now,
-      lastDate: now.add(const Duration(days: 365)),
-    );
-    if (date == null || !mounted) return;
-    final time = await showTimePicker(
-      context: context,
-      initialTime: TimeOfDay.fromDateTime(base),
-    );
-    if (time == null || !mounted) return;
-    setState(
-      () => _due = DateTime(
-        date.year,
-        date.month,
-        date.day,
-        time.hour,
-        time.minute,
-      ),
-    );
-  }
-
   Future<void> _submit(ClassTopic topic) async {
     final l = AppLocalizations.of(context);
-    final variant = _variant && variantAllowed(topic.count, _count);
-    final draft = AssignmentDraft(
-      topicId: topic.id,
-      questionCount: _count,
-      timeLimitMin: _limitOn ? _limit : null,
-      dueAt: _due,
-      variantMode: variant,
-      reveal: _due == null ? RevealPolicy.afterClose : _reveal,
-    );
-    final err = draft.validate(
-      poolSize: topic.count,
-      now: ref.read(groupNowProvider)(),
-    );
+    final now = ref.read(groupNowProvider)();
+    final draft = _s.draft(topicId: topic.id, poolSize: topic.count, now: now);
+    final err = draft.validate(poolSize: topic.count, now: now);
     if (err != null) {
       setState(
         () => _error = groupFailureText(l, err, {
           'available': topic.count,
-          'needed': _count * 2,
+          'needed': _s.count * 2,
         }),
       );
       return;
@@ -124,6 +97,11 @@ class _AssignTestState extends ConsumerState<AssignTestScreen> {
     final lang = Localizations.localeOf(context).languageCode;
     final topics = ref.watch(classTopicsProvider);
     final all = topics.value?.value ?? const <ClassTopic>[];
+    final init = widget.initialTopicId;
+    if (!_initialApplied && init != null && all.isNotEmpty) {
+      _initialApplied = true;
+      _topicId = pickTopicVariant(all, init, lang);
+    }
     final inLang = [
       for (final x in all)
         if (ClassQuizBank.variantLang(x.id) == lang) x,
@@ -136,13 +114,9 @@ class _AssignTestState extends ConsumerState<AssignTestScreen> {
         )
         .toList();
     final selected = all.where((x) => x.id == _topicId).firstOrNull;
-    final maxQ = selected == null
-        ? GroupRules.maxQuestions
-        : min(GroupRules.maxQuestions, selected.count);
-    final count = _count.clamp(GroupRules.minQuestions, max(1, maxQ)).toInt();
-    if (count != _count) _count = count;
-    final canVariant =
-        selected != null && variantAllowed(selected.count, _count);
+    if (selected != null && _s.count > selected.count) {
+      _s = _s.copyWith(count: max(1, selected.count));
+    }
 
     Widget topicList;
     if (topics.isLoading) {
@@ -174,7 +148,7 @@ class _AssignTestState extends ConsumerState<AssignTestScreen> {
             ),
           ),
           const SizedBox(height: FeSpace.xs),
-          for (final x in list.take(selected == null ? 40 : 0))
+          for (final x in list.take(60))
             Padding(
               padding: const EdgeInsets.only(bottom: FeSpace.xxs),
               child: FeCard(
@@ -187,6 +161,7 @@ class _AssignTestState extends ConsumerState<AssignTestScreen> {
                 child: Row(
                   children: [
                     Expanded(child: Text(x.title, style: t.bodyLarge)),
+                    const SizedBox(width: FeSpace.xs),
                     Text(
                       l.classQuestionsAvailable(x.count),
                       style: t.bodySmall?.copyWith(color: c.textSecondary),
@@ -242,104 +217,12 @@ class _AssignTestState extends ConsumerState<AssignTestScreen> {
                   else
                     topicList,
                   if (selected != null) ...[
-                    FeSectionHeader(l.grpSettingsSection),
-                    Text(
-                      l.grpCountLabel(_count),
-                      key: const Key('grp.countLabel'),
-                      style: t.titleSmall,
-                    ),
-                    Slider(
-                      key: const Key('grp.countSlider'),
-                      value: _count.toDouble(),
-                      min: GroupRules.minQuestions.toDouble(),
-                      max: max(2, maxQ).toDouble(),
-                      divisions: max(1, maxQ - 1),
-                      label: _count.toString(),
-                      onChanged: maxQ <= 1
-                          ? null
-                          : (v) => setState(() => _count = v.round()),
-                    ),
-                    SwitchListTile(
-                      key: const Key('grp.limitSwitch'),
-                      contentPadding: EdgeInsets.zero,
-                      title: Text(l.grpTimeLimitLabel),
-                      subtitle: Text(
-                        _limitOn ? l.grpMinutesN(_limit) : l.grpNoTimeLimit,
-                      ),
-                      value: _limitOn,
-                      onChanged: (v) => setState(() => _limitOn = v),
-                    ),
-                    if (_limitOn)
-                      Slider(
-                        key: const Key('grp.limitSlider'),
-                        value: _limit.toDouble(),
-                        min: GroupRules.minTimeLimit.toDouble(),
-                        max: GroupRules.maxTimeLimit.toDouble(),
-                        divisions:
-                            GroupRules.maxTimeLimit - GroupRules.minTimeLimit,
-                        label: l.grpMinutesN(_limit),
-                        onChanged: (v) => setState(() => _limit = v.round()),
-                      ),
-                    ListTile(
-                      key: const Key('grp.dueTile'),
-                      contentPadding: EdgeInsets.zero,
-                      leading: const Icon(Icons.event_outlined),
-                      title: Text(l.grpDueTitle),
-                      subtitle: Text(
-                        _due == null
-                            ? l.grpNoDue
-                            : l.grpDueLabel(feDueShort(context, _due!)),
-                      ),
-                      trailing: _due == null
-                          ? null
-                          : IconButton(
-                              tooltip: l.grpClearDue,
-                              icon: const Icon(Icons.close),
-                              onPressed: () => setState(() => _due = null),
-                            ),
-                      onTap: _pickDue,
-                    ),
-                    SwitchListTile(
-                      key: const Key('grp.variantSwitch'),
-                      contentPadding: EdgeInsets.zero,
-                      title: Text(l.grpVariantLabel),
-                      subtitle: Text(
-                        canVariant
-                            ? l.grpVariantHelp
-                            : l.grpVariantTooFew(selected.count, _count * 2),
-                        key: const Key('grp.variantNote'),
-                      ),
-                      value: canVariant && _variant,
-                      onChanged: canVariant
-                          ? (v) => setState(() => _variant = v)
-                          : null,
-                    ),
-                    FeSectionHeader(l.grpRevealSection),
-                    RadioGroup<RevealPolicy>(
-                      groupValue: _due == null
-                          ? RevealPolicy.afterClose
-                          : _reveal,
-                      onChanged: (v) => setState(() => _reveal = v!),
-                      child: Column(
-                        children: [
-                          RadioListTile<RevealPolicy>(
-                            key: const Key('grp.revealDue'),
-                            contentPadding: EdgeInsets.zero,
-                            value: RevealPolicy.afterDue,
-                            enabled: _due != null,
-                            title: Text(l.grpRevealAfterDue),
-                            subtitle: _due == null
-                                ? Text(l.grpRevealNeedsDue)
-                                : null,
-                          ),
-                          RadioListTile<RevealPolicy>(
-                            key: const Key('grp.revealClose'),
-                            contentPadding: EdgeInsets.zero,
-                            value: RevealPolicy.afterClose,
-                            title: Text(l.grpRevealAfterClose),
-                          ),
-                        ],
-                      ),
+                    TestSettingsSection(
+                      value: _s,
+                      poolSize: selected.count,
+                      countPresets: const [5, 10, 15, 20, 30],
+                      now: ref.read(groupNowProvider),
+                      onChanged: (v) => setState(() => _s = v),
                     ),
                     if (_error != null) ...[
                       const SizedBox(height: FeSpace.xs),

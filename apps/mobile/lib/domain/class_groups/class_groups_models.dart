@@ -21,7 +21,18 @@ export '../class_quiz/class_quiz_models.dart'
 abstract final class GroupRules {
   static const int maxMembers = 200;
   static const int minQuestions = 1;
-  static const int maxQuestions = 50;
+
+  /// Tez tanlov tugmalari ko‘pi bilan 50; «Boshqa…» bilan hovuzgacha (200).
+  static const int maxQuestions = 200;
+  static const int presetMaxQuestions = 50;
+
+  /// «Vaqt chegarasi» tez tanlovlari (daqiqa); standart — 10.
+  static const List<int> timeLimitPresets = [10, 15, 20, 30, 45, 60];
+  static const int defaultTimeLimit = 10;
+
+  /// «Test qancha vaqt ochiq turadi» (kun); standart — 1 kun.
+  static const List<int> openDaysPresets = [1, 3, 7];
+  static const int defaultOpenDays = 1;
   static const int minTimeLimit = 1;
   static const int maxTimeLimit = 180;
   static const int graceSeconds = 30;
@@ -344,6 +355,7 @@ class GroupAssignment {
     this.myState = MyTestState.notStarted,
     this.myScore,
     this.myTotal,
+    this.topics = const [],
   });
 
   factory GroupAssignment.fromJson(Map<String, Object?> j) => GroupAssignment(
@@ -366,6 +378,7 @@ class GroupAssignment {
     myState: MyTestState.parse(j['my_state']),
     myScore: _intOrNull(j['my_score']),
     myTotal: _intOrNull(j['my_total']),
+    topics: [for (final t in _list(j['topics'])) _str(t)],
   );
 
   final String id;
@@ -391,6 +404,11 @@ class GroupAssignment {
   final MyTestState myState;
   final int? myScore;
   final int? myTotal;
+
+  /// Tanlangan mavzular («Umumiy test» — bir nechta).
+  final List<String> topics;
+
+  bool get isMixed => topics.length > 1;
 }
 
 @immutable
@@ -429,6 +447,8 @@ class AssignmentDraft {
   const AssignmentDraft({
     required this.topicId,
     required this.questionCount,
+    this.topics,
+    this.title,
     this.timeLimitMin,
     this.dueAt,
     this.variantMode = false,
@@ -436,6 +456,16 @@ class AssignmentDraft {
   });
 
   final String topicId;
+
+  /// «Umumiy test»: bir nechta mavzu (navbatma-navbat). `null` — [topicId].
+  final List<String>? topics;
+
+  /// «Umumiy test» nomi (tahrirlanadi).
+  final String? title;
+
+  bool get isMixed => topics != null;
+
+  List<String> get topicIds => topics ?? [topicId];
   final int questionCount;
   final int? timeLimitMin;
   final DateTime? dueAt;

@@ -7,13 +7,13 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/class_quiz.dart';
 import '../../../app/lessons.dart';
-import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassFailure;
 import '../../../domain/lessons/lesson_models.dart';
+import '../../class_groups/presentation/topic_test_choice.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart';
 import 'lesson_slide_view.dart';
 
@@ -285,7 +285,9 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
 
   /// Mavzu testini boshlash: sinf testi yaratish oqimi, mavzu tanlangan holda
   /// (`deck_id` == test mavzusi id).
-  void _startQuiz() => context.push(Routes.classNewFor(widget.deck.deckId));
+  /// «Mavzu testi»: tanlov — guruhga topshirish / o‘zim yechib ko‘rish /
+  /// jonli sinf testi (darhol o‘ziga test ochilmaydi).
+  void _startQuiz() => showTopicTestChoice(context, ref, widget.deck.deckId);
 
   KeyEventResult _onKey(KeyEvent e, int total) {
     if (e is! KeyDownEvent) return KeyEventResult.ignored;

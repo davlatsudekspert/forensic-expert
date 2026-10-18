@@ -29,6 +29,7 @@ import '../features/casebook/presentation/casebook_screens.dart';
 import '../features/class_groups/presentation/assign_test_screen.dart';
 import '../features/class_groups/presentation/group_detail_screen.dart';
 import '../features/class_groups/presentation/groups_screens.dart';
+import '../features/class_groups/presentation/mixed_test_screen.dart';
 import '../features/class_groups/presentation/teacher_live_screens.dart';
 import '../features/class_groups/presentation/test_screens.dart';
 import '../features/class_quiz/presentation/class_quiz_host_screen.dart';
@@ -411,6 +412,15 @@ final routerProvider = Provider<GoRouter>((ref) {
                             builder: (c, s) => const GroupScanScreen(),
                           ),
                           GoRoute(
+                            path: 'practice/:topic',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => GroupTestScreen(
+                              groupId: '',
+                              assignmentId: '',
+                              practiceTopicId: s.pathParameters['topic'],
+                            ),
+                          ),
+                          GoRoute(
                             path: ':gid',
                             builder: (c, s) => GroupDetailScreen(
                               groupId: s.pathParameters['gid']!,
@@ -420,6 +430,15 @@ final routerProvider = Provider<GoRouter>((ref) {
                                 path: 'assign',
                                 parentNavigatorKey: rootKey,
                                 builder: (c, s) => AssignTestScreen(
+                                  groupId: s.pathParameters['gid']!,
+                                  initialTopicId:
+                                      s.uri.queryParameters['topic'],
+                                ),
+                              ),
+                              GoRoute(
+                                path: 'mixed',
+                                parentNavigatorKey: rootKey,
+                                builder: (c, s) => MixedTestScreen(
                                   groupId: s.pathParameters['gid']!,
                                 ),
                               ),

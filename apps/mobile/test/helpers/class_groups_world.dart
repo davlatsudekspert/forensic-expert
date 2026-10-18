@@ -1,6 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/class_groups.dart';
 import 'package:forensic_expert/app/class_quiz.dart';
@@ -8,7 +11,8 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/data/class_groups/fake_class_groups_service.dart';
-import 'package:forensic_expert/data/class_quiz/class_quiz_demo_bank.dart';
+import 'package:forensic_expert/data/class_quiz/class_quiz_bank.dart'
+    show classQuizBankAsset;
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/domain/auth/auth_models.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
@@ -76,6 +80,12 @@ class GroupsWorld {
     quiz = FakeClassQuizBackend(topics: this.topics, teachers: {'teacher'});
   }
 
+  /// Ilovadagi HAQIQIY savollar banki (asset, 18 mavzu × 3 til).
+  static ClassQuizBank realBank() =>
+      ClassQuizBank.parse(File(classQuizBankAsset).readAsStringSync());
+
+  factory GroupsWorld.real() => GroupsWorld(topics: realBank().variants);
+
   var now = DateTime(2026, 10, 18, 10);
   late final List<ClassBankTopic> topics;
   late final FakeClassGroupsBackend backend;
@@ -89,6 +99,8 @@ class GroupsWorld {
     AppSettings? settings,
     Size size = const Size(390, 844),
     bool iphone = true,
+    double textScale = 1.0,
+    List<Override> extra = const [],
   }) async {
     if (iphone) {
       // iPhone 12–15: 390×844, DPR 3, notch (47) va home indicator (34).
@@ -102,7 +114,11 @@ class GroupsWorld {
       tester,
       settings: settings ?? completedSettings(lang: 'uz'),
       size: size,
+      textScale: textScale,
       overrides: [
+        classQuizBankLoaderProvider.overrideWithValue(
+          () async => File(classQuizBankAsset).readAsStringSync(),
+        ),
         authStateProvider.overrideWith(
           () => TestAuth(uid == null ? AuthState.signedOut : signedInAs(uid)),
         ),
@@ -125,6 +141,7 @@ class GroupsWorld {
         groupNowProvider.overrideWithValue(() => now),
         classScannerAvailableProvider.overrideWithValue(false),
         classLandscapePromptEnabledProvider.overrideWithValue(false),
+        ...extra,
       ],
     );
     if (location != null) {

@@ -169,6 +169,22 @@ class _TeacherAssignmentState extends ConsumerState<TeacherAssignmentScreen> {
             ),
           ],
         ),
+        const SizedBox(height: FeSpace.xs),
+        // Yopish tugmasi tepada — ro‘yxat uzun bo‘lsa ham va suzuvchi menyu
+        // ostida qolmaydi.
+        if (!a.closed)
+          OutlinedButton.icon(
+            key: const Key('grp.closeTest'),
+            onPressed: _busy ? null : _close,
+            icon: const Icon(Icons.stop_circle_outlined),
+            label: Text(l.grpCloseAction),
+          )
+        else
+          FeBanner(
+            key: const Key('grp.closedBanner'),
+            icon: Icons.check_circle_outline,
+            text: l.grpClosedBanner,
+          ),
         const SizedBox(height: FeSpace.sm),
         Text(
           l.grpCounts(
@@ -193,20 +209,6 @@ class _TeacherAssignmentState extends ConsumerState<TeacherAssignmentScreen> {
           icon: Icons.lock_clock_outlined,
           text: groupRevealText(context, l, a),
         ),
-        const SizedBox(height: FeSpace.md),
-        if (!a.closed)
-          OutlinedButton.icon(
-            key: const Key('grp.closeTest'),
-            onPressed: _busy ? null : _close,
-            icon: const Icon(Icons.stop_circle_outlined),
-            label: Text(l.grpCloseAction),
-          )
-        else
-          FeBanner(
-            key: const Key('grp.closedBanner'),
-            icon: Icons.check_circle_outline,
-            text: l.grpClosedBanner,
-          ),
       ];
     } else if (failure != null) {
       body = [
@@ -224,7 +226,19 @@ class _TeacherAssignmentState extends ConsumerState<TeacherAssignmentScreen> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: FeAppBarTitle(l.grpLiveTitle)),
+      appBar: AppBar(
+        title: FeAppBarTitle(l.grpLiveTitle),
+        actions: [
+          // Har doim ko‘rinadi (kichik ekranda ham, suzuvchi menyu ostida emas).
+          if (d != null && !d.assignment.closed)
+            IconButton(
+              key: const Key('grp.closeTestBar'),
+              tooltip: l.grpCloseAction,
+              icon: const Icon(Icons.stop_circle_outlined),
+              onPressed: _busy ? null : _close,
+            ),
+        ],
+      ),
       body: Column(
         children: [
           if (reconnecting) const ClassReconnectingBar(),
