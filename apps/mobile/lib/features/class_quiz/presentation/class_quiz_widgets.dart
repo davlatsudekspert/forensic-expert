@@ -320,6 +320,8 @@ class ClassOptionTile extends StatelessWidget {
     this.count,
     this.fraction,
     this.big = false,
+    this.dense = false,
+    this.maxLines,
   });
 
   final String letter;
@@ -331,6 +333,13 @@ class ClassOptionTile extends StatelessWidget {
   final int? count;
   final double? fraction;
   final bool big;
+
+  /// Past ekranlarda (proyektor, landshaft telefon) ixcham plitka: kichik
+  /// bo‘shliq va shrift. Balandlikni chaqiruvchi belgilaydi.
+  final bool dense;
+
+  /// Variant matni uchun qator chegarasi (oshsa «…»); `null` — cheklovsiz.
+  final int? maxLines;
 
   @override
   Widget build(BuildContext context) {
@@ -359,11 +368,13 @@ class ClassOptionTile extends StatelessWidget {
       ClassOptionState.neutral => (c.surfaceRaised, c.borderStrong, null, null),
     };
     // Variant matni — sans (savol sarlavhasi serif), o‘qilishi oson.
-    final style = (big ? t.headlineSmall : t.titleMedium)?.copyWith(
-      fontFamily: FeFonts.sans,
-      color: c.textPrimary,
-      fontWeight: FontWeight.w600,
-    );
+    final style =
+        (big ? t.headlineSmall : (dense ? t.titleSmall : t.titleMedium))
+            ?.copyWith(
+              fontFamily: FeFonts.sans,
+              color: c.textPrimary,
+              fontWeight: FontWeight.w600,
+            );
     final spoken = tag == null ? '$letter. $text' : '$letter. $text, $tag';
     return Semantics(
       button: onTap != null,
@@ -383,7 +394,9 @@ class ClassOptionTile extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           child: ConstrainedBox(
-            constraints: const BoxConstraints(minHeight: FeTouch.minTarget + 8),
+            constraints: BoxConstraints(
+              minHeight: dense ? 0 : FeTouch.minTarget + 8,
+            ),
             child: Stack(
               children: [
                 if (fraction != null)
@@ -394,41 +407,58 @@ class ClassOptionTile extends StatelessWidget {
                       child: ColoredBox(color: border.withValues(alpha: 0.18)),
                     ),
                   ),
-                Padding(
-                  padding: EdgeInsets.all(big ? FeSpace.md : FeSpace.sm),
-                  child: Row(
-                    children: [
-                      DecoratedBox(
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: c.surface,
-                          border: Border.all(color: border),
-                        ),
-                        child: SizedBox(
-                          width: big ? 44 : 32,
-                          height: big ? 44 : 32,
-                          child: Center(
-                            child: Text(
-                              letter,
-                              style: style?.copyWith(
-                                fontSize: big ? 22 : 16,
-                                color: c.textPrimary,
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: dense
+                        ? const EdgeInsets.symmetric(
+                            horizontal: FeSpace.sm,
+                            vertical: 4,
+                          )
+                        : EdgeInsets.all(big ? FeSpace.md : FeSpace.sm),
+                    child: Row(
+                      children: [
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: c.surface,
+                            border: Border.all(color: border),
+                          ),
+                          child: SizedBox(
+                            width: big ? 44 : (dense ? 28 : 32),
+                            height: big ? 44 : (dense ? 28 : 32),
+                            child: Center(
+                              child: Text(
+                                letter,
+                                style: style?.copyWith(
+                                  fontSize: big ? 22 : (dense ? 14 : 16),
+                                  color: c.textPrimary,
+                                ),
                               ),
                             ),
                           ),
                         ),
-                      ),
-                      const SizedBox(width: FeSpace.sm),
-                      Expanded(child: Text(text, style: style)),
-                      if (count != null) ...[
-                        const SizedBox(width: FeSpace.xs),
-                        Text(count.toString(), style: style),
+                        const SizedBox(width: FeSpace.sm),
+                        Expanded(
+                          child: Text(
+                            text,
+                            style: style,
+                            maxLines: maxLines,
+                            overflow: maxLines == null
+                                ? null
+                                : TextOverflow.ellipsis,
+                          ),
+                        ),
+                        if (count != null) ...[
+                          const SizedBox(width: FeSpace.xs),
+                          Text(count.toString(), style: style),
+                        ],
+                        if (icon != null) ...[
+                          const SizedBox(width: FeSpace.xs),
+                          Icon(icon, color: border),
+                        ],
                       ],
-                      if (icon != null) ...[
-                        const SizedBox(width: FeSpace.xs),
-                        Icon(icon, color: border),
-                      ],
-                    ],
+                    ),
                   ),
                 ),
               ],
