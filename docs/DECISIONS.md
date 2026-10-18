@@ -245,3 +245,6 @@ Tiklash: faqat git tarixidan (holat `05bffed`, tafsilot `docs/ABY_COVERAGE.md` t
 Egasi javoblari: «toksikologya qolmasin» — 76–81 [Qo‘shimcha] amaliy mashg‘ulotlar kursda qoladi (jami 81 dars).
 «Olib tashlasa xam boladi kitob yoq bolsa» — MR16 «Mutaxassislarning asosiy savollari» (manbasi yo‘q) rejadan chiqarildi (`slides-out` `out/aliases.json` → `not_topics`).
 «Xa shunaqa qil fakultet bogicha» — «Darslar» guruhlari kurssiz: Davolash ishi, Pediatriya, Stomatologiya, Tibbiy profilaktika fakulteti va Bioetika. Joriy KTP 2026 birinchi (ma’ruza → amaliy → mustaqil → qo‘shimcha), eski rejadagi qolgan mavzular oxirida; bir xil prezentatsiyani ochadigan takror mavzu `lesson_topics.hidden` bilan yashirilgan (o‘chirilmagan). Migratsiya `20261018030000_lesson_topics_hidden` prod’ga qo‘llandi; mavzular yangilandi (249 ko‘rinadi, 11 yashirin).
+
+## 2026-10-18 — Toksikologiya kitoblaridagi ziddiyatlar: bitta qiymat
+Egasi: «538. Krilova. Bittasini yoz bo‘ldi». COHb — 538 nm; kasrli usul — A.N. Krilova; boshqa ziddiyatlarda slaydda bitta qiymat (kitobdagi asosiy yoki to‘g‘ri variant), ikkinchisi faqat teacher_notes’da. Ro‘yxat: `docs/toks/kitob_ziddiyatlari.md`.

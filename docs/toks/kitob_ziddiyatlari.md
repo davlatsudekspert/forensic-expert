@@ -1,4 +1,8 @@
-# Toksikologiya kitoblaridagi ziddiyat va noaniqliklar — egasi (ustoz) qarori kerak
+# Toksikologiya kitoblaridagi ziddiyat va noaniqliklar
+
+**Egasi qarori (2026-10-18):** «538. Krilova. Bittasini yoz bo‘ldi» — COHb uchun 538 nm; kasrli usul asoschisi A.N. Krilova;
+qolgan barcha ziddiyatlarda slaydda **faqat bitta qiymat** yoziladi (ustoz kitobidagi asosiy/to‘g‘ri variant; aniq xato bo‘lsa — to‘g‘risi),
+«ikkalasi» ko‘rsatilmaydi va «uncertain» belgisi olib tashlanadi; boshqa variant faqat ustoz izohida (teacher_notes) qisqa qoladi.
 
 Prezentatsiyalar tayyorlashda topildi (2026-10-18). Har biri slaydga **kiritilmagan** yoki
 «tekshirish kerak» (uncertain) deb belgilangan; to‘g‘ri variantni ustoz tasdiqlagach tuzatiladi.
