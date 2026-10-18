@@ -28,3 +28,8 @@ Holat belgilari: ⏳ jarayonda · 🟡 navbatda · ✅ tayyor · ❓ egasining j
 ## D. Egasiga
 - 🟡 D1. Supabase `github-seed` kalitini 7 kun ichida Revoke qilish (barcha yuklashlar tugagach aytaman).
 - ❓ D2. Google/Apple orqali kirish kalitlari (shoshilinch emas).
+
+## E. Yakuniy tekshiruv (hammasi tugagach) — egasi so‘radi
+- 🟡 E1. Ilovani to‘liq aylanib chiqish (ustoz / talaba / ekspert / admin): nima qayerda, ikki marta qilingan
+  narsa yo‘qmi (test, prezentatsiya, qidiruv, kutubxona), yo‘llar chalkash emasmi (1–2 bosishda yetish),
+  uch tildagi matnlar, 320/390 dp, keraksiz bo‘limlar. Natija: skrinshotli «ilova xaritasi» + tuzatishlar ro‘yxati.
