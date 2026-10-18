@@ -59,10 +59,15 @@ List<MixedSource> mixedSources(
 
 /// Avtomatik nom: «Umumiy test: A · B…».
 String mixedAutoTitle(String prefix, List<String> titles) {
-  String short(String s) =>
-      s.length <= 28 ? s : '${s.substring(0, 27).trimRight()}…';
+  String short(String raw) {
+    // Mavzu nomidagi yakuniy «...»/«…»/nuqta olib tashlanadi (ikki marta «…» bo‘lmasin).
+    final s = raw.trim().replaceAll(RegExp(r'[.…\s]+$'), '');
+    return s.length <= 28 ? s : '${s.substring(0, 27).trimRight()}…';
+  }
+
   final head = titles.take(2).map(short).join(' · ');
-  return titles.length > 2 ? '$prefix: $head…' : '$prefix: $head';
+  final more = titles.length > 2 && !head.endsWith('…') ? '…' : '';
+  return '$prefix: $head$more';
 }
 
 /// «Umumiy test berish»: bir nechta manbadan mavzular, navbatma-navbat
@@ -142,7 +147,14 @@ class _MixedTestState extends ConsumerState<MixedTestScreen> {
             ),
             const SizedBox(height: FeSpace.xs),
             for (final (i, t) in chosen.indexed)
-              Text([FeGlyphs.bullet, t.title, ': ', counts[i]].join()),
+              Text(
+                [
+                  FeGlyphs.bullet,
+                  t.title.trim().replaceAll(RegExp(r'[.\s]+$'), ''),
+                  ': ',
+                  counts[i],
+                ].join(),
+              ),
             const SizedBox(height: FeSpace.sm),
             Text(
               l.grpMixedPreviewNote,

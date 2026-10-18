@@ -225,6 +225,8 @@ k("grpMixedPreviewNote", "Preview note.", "Example of the selection. The server 
 k("grpPracticeBanner", "Practice banner.", "Trying it yourself: nothing is sent to the server.", "Пробное решение: на сервер ничего не отправляется.", "O‘zim yechib ko‘rish: serverga hech narsa yuborilmaydi.")
 k("grpPracticeNothingSent", "Practice done.", "This was a trial on your device — nothing was sent.", "Это была проба на вашем устройстве — ничего не отправлено.", "Bu qurilmangizdagi sinov edi — hech narsa yuborilmadi.")
 
+k("grpCountMax", "Chip: max allowed.", "Max {count}", "Максимум {count}", "Eng ko‘pi {count} ta", {"count": I})
+
 for idx, code in enumerate(["en", "ru", "uz"]):
     p = f"{D}/app_{code}.arb"
     with open(p, encoding="utf-8") as f:

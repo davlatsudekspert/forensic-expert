@@ -10530,4 +10530,9 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get grpPracticeNothingSent =>
       'Bu qurilmangizdagi sinov edi — hech narsa yuborilmadi.';
+
+  @override
+  String grpCountMax(int count) {
+    return 'Eng ko‘pi $count ta';
+  }
 }

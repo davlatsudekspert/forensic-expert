@@ -13804,5 +13804,14 @@
   "grpPracticeNothingSent": "This was a trial on your device — nothing was sent.",
   "@grpPracticeNothingSent": {
     "description": "Practice done."
+  },
+  "grpCountMax": "Max {count}",
+  "@grpCountMax": {
+    "description": "Chip: max allowed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

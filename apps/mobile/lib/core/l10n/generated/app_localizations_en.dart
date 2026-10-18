@@ -10594,4 +10594,9 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get grpPracticeNothingSent =>
       'This was a trial on your device — nothing was sent.';
+
+  @override
+  String grpCountMax(int count) {
+    return 'Max $count';
+  }
 }

@@ -241,7 +241,11 @@ class TestSettingsSection extends StatelessWidget {
             if (maxCount > 0)
               ChoiceChip(
                 key: const Key('grp.count.all'),
-                label: Text(l.grpCountAll(maxCount)),
+                label: Text(
+                  poolSize > maxCount
+                      ? l.grpCountMax(maxCount)
+                      : l.grpCountAll(maxCount),
+                ),
                 selected:
                     value.count == maxCount && !presets.contains(maxCount),
                 onSelected: (_) => onChanged(value.copyWith(count: maxCount)),

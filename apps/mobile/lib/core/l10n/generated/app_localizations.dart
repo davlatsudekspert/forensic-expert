@@ -18326,6 +18326,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This was a trial on your device — nothing was sent.'**
   String get grpPracticeNothingSent;
+
+  /// Chip: max allowed.
+  ///
+  /// In en, this message translates to:
+  /// **'Max {count}'**
+  String grpCountMax(int count);
 }
 
 class _AppLocalizationsDelegate
