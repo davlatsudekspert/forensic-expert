@@ -471,3 +471,47 @@ class ClassSignInCard extends StatelessWidget {
     );
   }
 }
+
+/// Kichik, ekranni to‘smaydigan «Aloqa tiklanmoqda…» belgisi: polling bir
+/// marta xato bersa, oxirgi holat ko‘rinib turadi, bu belgi esa ustida.
+class ClassReconnectingBar extends StatelessWidget {
+  const ClassReconnectingBar({super.key, this.onDark = false});
+
+  final bool onDark;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final fg = onDark ? Colors.white : c.textSecondary;
+    return Semantics(
+      liveRegion: true,
+      child: Padding(
+        key: const Key('class.reconnecting'),
+        padding: const EdgeInsets.symmetric(
+          horizontal: FeSpace.md,
+          vertical: FeSpace.xxs,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              width: 14,
+              height: 14,
+              child: CircularProgressIndicator(strokeWidth: 2, color: fg),
+            ),
+            const SizedBox(width: FeSpace.xs),
+            Flexible(
+              child: Text(
+                l.classReconnecting,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.bodySmall
+                    ?.copyWith(color: fg),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

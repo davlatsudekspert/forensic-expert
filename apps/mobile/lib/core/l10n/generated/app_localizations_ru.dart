@@ -9953,4 +9953,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiWebOpenFailed => 'Не удалось открыть ссылку.';
+
+  @override
+  String get classReconnecting => 'Восстанавливаем соединение…';
 }

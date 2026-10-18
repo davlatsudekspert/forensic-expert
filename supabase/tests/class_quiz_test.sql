@@ -468,3 +468,182 @@ select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a2');
 select pg_temp.cq_forbidden($$select public.class_create_session('demo-topic', 5, 5, 30)$$,
   'a revoked teacher cannot create sessions');
 reset role;
+
+-- ============================================ audit regressions (2026-10-18)
+-- Migration 20261018040000_class_quiz_fixes.sql. Logic checks run as the
+-- superuser with the JWT subject set (grants are covered above).
+create function pg_temp.cq_sub(uid text) returns void language sql as $$
+  select set_config('request.jwt.claim.sub', uid, false); $$;
+insert into auth.users (id, email, created_at, email_confirmed_at)
+select ('79000000-0000-0000-0000-000000000d' || lpad(g::text, 2, '0'))::uuid,
+       'class-d' || g || '@secret.example', now(), now()
+from generate_series(1, 40) g;
+
+-- 7. nickname filter: real names pass, profanity is still blocked
+select pg_temp.cq_check(private.class_nick_check('Себастьян') = 'ok'
+  and private.class_nick_check('Глеба') = 'ok'
+  and private.class_nick_check('Глеб') = 'ok'
+  and private.class_nick_check('Ebaldiyev') = 'ok'
+  and private.class_nick_check('Rebalance') = 'ok'
+  and private.class_nick_check('Sikl') = 'ok'
+  and private.class_nick_check('Sexta') = 'ok',
+  'nickname filter: Себастьян, Глеба, Ebaldiyev, Rebalance are not blocked');
+select pg_temp.cq_check(private.class_nick_check('сука') = 'blocked'
+  and private.class_nick_check('СУКА') = 'blocked'
+  and private.class_nick_check('Ебать') = 'blocked'
+  and private.class_nick_check('ебанат') = 'blocked'
+  and private.class_nick_check('Ali заебал') = 'blocked'
+  and private.class_nick_check('е.б.а.т.ь') = 'blocked'
+  and private.class_nick_check('ebal') = 'blocked'
+  and private.class_nick_check('Ali ebal') = 'blocked'
+  and private.class_nick_check('yebat') = 'blocked'
+  and private.class_nick_check('долбоеб') = 'blocked'
+  and private.class_nick_check('f.u.c.k') = 'blocked'
+  and private.class_nick_check('PIDOR') = 'blocked',
+  'nickname filter: real profanity is still blocked');
+
+reset role;
+select pg_temp.cq_sub('79000000-0000-0000-0000-0000000000a1');
+select (public.class_create_session('demo-topic', 5, 50, 30))->'session'->>'id' as sid3 \gset
+select code as code3 from public.class_sessions where id = :'sid3' \gset
+
+-- 2. 35 students behind one NAT / university Wi-Fi IP all get in
+select set_config('request.headers', '{"x-forwarded-for":"203.0.113.9, 10.0.0.1"}', false);
+create temp table cq_joins (n int, err text);
+do $$ declare g int; r jsonb; begin
+  for g in 1..35 loop
+    perform set_config('request.jwt.claim.sub',
+      '79000000-0000-0000-0000-000000000d' || lpad(g::text, 2, '0'), false);
+    r := public.class_join_session(
+      (select code from public.class_sessions s
+        where s.teacher_id = '79000000-0000-0000-0000-0000000000a1'
+        order by s.created_at desc limit 1), 'Talaba ' || g);
+    insert into cq_joins values (g, coalesce(r->>'error', 'ok'));
+  end loop; end $$;
+select pg_temp.cq_check((select count(*) = 35 from cq_joins where err = 'ok'),
+  'IP limit: 35 students joining from one shared IP all get in');
+-- rejoin (app restart) from the same IP is not counted against the IP either
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d01');
+select pg_temp.cq_check((public.class_join_session(:'code3', 'Boshqa')->>'ok')::boolean,
+  'IP limit: a rejoin from the shared IP still works');
+select pg_temp.cq_check(not exists (select 1 from public.class_join_attempts
+  where key = 'f:' || md5('203.0.113.9')),
+  'IP limit: successful joins and rejoins leave no failure count on the IP');
+-- wrong codes are counted per IP
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d36');
+select public.class_join_session('12', 'Ali');
+select public.class_join_session('000001', 'Ali');
+select pg_temp.cq_check((select n = 2 from public.class_join_attempts
+  where key = 'f:' || md5('203.0.113.9')),
+  'IP limit: bad_code / not_found attempts are counted on the IP')
+  where :'code3' <> '000001';
+update public.class_join_attempts set n = 100 where key = 'f:' || md5('203.0.113.9');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d37');
+select pg_temp.cq_check((public.class_join_session(:'code3', 'Mehmon')->>'error') = 'rate_limited',
+  'IP limit: 100 wrong codes from one IP within the hour block that IP');
+select set_config('request.headers', '', false);
+select pg_temp.cq_check((public.class_join_session(:'code3', 'Mehmon')->>'ok')::boolean,
+  'IP limit: the same student from another network gets in');
+-- the per-account limit still applies (30 per hour, every attempt)
+select pg_temp.cq_check((select n = 2 from public.class_join_attempts
+  where key = 'u:79000000-0000-0000-0000-000000000d37'),
+  'account limit: every attempt is still counted on the account');
+
+-- 1. no score / rank / correct-count while the question is open
+select pg_temp.cq_sub('79000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_check((public.class_start(:'sid3')->>'ok')::boolean, 'regression session starts');
+select 'o' || correct_index as c3 from public.class_session_questions
+  where session_id = :'sid3' and idx = 0 \gset
+select case when :'c3' = 'o0' then 'o1' else 'o0' end as w3 \gset
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d01');
+select public.class_submit_answer(:'sid3', 0, :'c3');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d02');
+select public.class_submit_answer(:'sid3', 0, :'w3');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d01');
+select pg_temp.cq_check((public.class_session_state(:'sid3')->>'score')::int = 0
+  and (public.class_session_state(:'sid3')->>'correct')::int = 0,
+  'open question: a right answer does not show up in score/correct yet');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d02');
+select x->>'rank' as r_wrong_open from (select public.class_session_state(:'sid3') x) t \gset
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d01');
+select x->>'rank' as r_right_open from (select public.class_session_state(:'sid3') x) t \gset
+select pg_temp.cq_check(:'r_wrong_open' = :'r_right_open',
+  'open question: right and wrong answerers have the same rank (nothing leaks)');
+select pg_temp.cq_sub('79000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_check(not exists (select 1 from jsonb_array_elements(
+    public.class_teacher_dashboard(:'sid3')->'leaderboard') r where (r->>'score')::int > 0),
+  'open question: the teacher (projector) leaderboard has no points yet');
+select pg_temp.cq_check((public.class_teacher_dashboard(:'sid3')->>'revealed')::boolean = false,
+  'open question: the dashboard says revealed = false');
+-- 3. deadline passed but answers still accepted (grace): not revealed yet
+reset role;
+update public.class_sessions set question_started_at = clock_timestamp() - interval '30.3 seconds'
+  where id = :'sid3';
+select pg_temp.cq_sub('79000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_check((public.class_teacher_dashboard(:'sid3')->>'phase') = 'closed'
+  and (public.class_teacher_dashboard(:'sid3')->>'revealed')::boolean = false,
+  'grace window: phase closed but revealed = false (projector keeps the answer hidden)');
+select pg_temp.cq_check(not exists (select 1 from jsonb_array_elements(
+    public.class_teacher_dashboard(:'sid3')->'leaderboard') r where (r->>'score')::int > 0)
+  and jsonb_array_length(public.class_teacher_dashboard(:'sid3')->'hardest') = 0,
+  'grace window: no points and no hardest-question stats yet');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d01');
+select pg_temp.cq_check((public.class_session_state(:'sid3')->>'score')::int = 0,
+  'grace window: the student score is still held back');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d03');
+select pg_temp.cq_check((public.class_submit_answer(:'sid3', 0, :'w3')->>'ok')::boolean,
+  'grace window: a late answer is still taken');
+reset role;
+update public.class_sessions set question_started_at = clock_timestamp() - interval '32 seconds'
+  where id = :'sid3';
+select pg_temp.cq_sub('79000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_check((public.class_teacher_dashboard(:'sid3')->>'revealed')::boolean,
+  'after the settling window the dashboard says revealed = true');
+select pg_temp.cq_check((public.class_teacher_dashboard(:'sid3')->'leaderboard'->0->>'nickname') = 'Talaba 1'
+  and (public.class_teacher_dashboard(:'sid3')->'leaderboard'->0->>'score')::int > 0,
+  'after reveal the leaderboard counts the question');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d01');
+select pg_temp.cq_check((public.class_session_state(:'sid3')->>'score')::int > 0
+  and (public.class_session_state(:'sid3')->>'correct')::int = 1
+  and (public.class_session_state(:'sid3')->>'rank')::int = 1,
+  'after reveal the student sees score, correct and rank');
+-- 6. a non-answerer does not rank above a wrong answerer
+select pg_temp.cq_sub('79000000-0000-0000-0000-0000000000a1');
+select pg_temp.cq_check(
+  (select (r->>'rank')::int from jsonb_array_elements(public.class_export_results(:'sid3')->'rows') r
+    where r->>'nickname' = 'Talaba 2')
+  = (select (r->>'rank')::int from jsonb_array_elements(public.class_export_results(:'sid3')->'rows') r
+    where r->>'nickname' = 'Talaba 4'),
+  'ranking: a wrong answerer and a non-answerer (both 0 points) share the rank');
+select pg_temp.cq_check((select rk from private.class_scores(:'sid3') where nickname = 'Talaba 1')
+  < (select rk from private.class_scores(:'sid3') where nickname = 'Talaba 2'),
+  'ranking: a right answer ranks above a wrong one');
+select pg_temp.cq_check((select avg_ms is null from private.class_scores(:'sid3') where nickname = 'Talaba 2')
+  and (select avg_ms is not null from private.class_scores(:'sid3') where nickname = 'Talaba 1'),
+  'ranking: average time is over right answers only (none → null, sorted last)');
+select pg_temp.cq_check((select (r->>'avg_ms')::int > 0 from jsonb_array_elements(
+    public.class_export_results(:'sid3')->'rows') r where r->>'nickname' = 'Talaba 2'),
+  'export: the CSV answer time still averages all visible answers');
+
+-- 5. a participant reopens a finished session after an app restart
+select pg_temp.cq_check((public.class_kick(:'sid3', (select id from public.class_participants
+    where session_id = :'sid3' and nickname = 'Talaba 5'))->>'ok')::boolean, 'kick one before the end');
+select pg_temp.cq_check((public.class_finish(:'sid3')->>'ok')::boolean, 'regression session finishes');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d01');
+select pg_temp.cq_check((public.class_join_session(:'code3', 'Talaba 1')->>'ok')::boolean
+  and (public.class_join_session(:'code3', 'Talaba 1')->'session'->>'status') = 'finished'
+  and (public.class_join_session(:'code3', 'Talaba 1')->>'nickname') = 'Talaba 1',
+  'finished session: an existing participant rejoins (ok, status finished)');
+select pg_temp.cq_check((public.class_my_results(:'sid3')->>'ok')::boolean,
+  'finished session: the rejoined student can open the results');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d05');
+select pg_temp.cq_check((public.class_join_session(:'code3', 'Talaba 5')->>'error') = 'kicked',
+  'finished session: a kicked participant still cannot rejoin');
+select pg_temp.cq_sub('79000000-0000-0000-0000-000000000d38');
+select pg_temp.cq_check((public.class_join_session(:'code3', 'Yangi')->>'error') = 'finished',
+  'finished session: a new student still cannot join');
+select pg_temp.cq_sub('');
+select pg_temp.cq_check(not has_function_privilege('authenticated', 'private.class_join_fail_ip()', 'execute')
+  and not has_function_privilege('anon', 'private.class_join_fail_ip()', 'execute'),
+  'the new IP-failure helper is not callable by clients');
+\echo ALL CLASS QUIZ TESTS PASSED

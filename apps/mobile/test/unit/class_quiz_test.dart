@@ -160,37 +160,6 @@ void main() {
     });
   });
 
-  group('shuffleForStudent', () {
-    const opts = ['a', 'b', 'c', 'd'];
-    List<String> s(String student, String session, int q) => shuffleForStudent(
-      opts,
-      studentId: student,
-      sessionId: session,
-      questionIndex: q,
-    );
-
-    test(
-      'barqaror: bir xil kirish — bir xil tartib; asl ro‘yxat o‘zgarmaydi',
-      () {
-        expect(s('u1', 's1', 0), s('u1', 's1', 0));
-        expect(opts, ['a', 'b', 'c', 'd']);
-      },
-    );
-
-    test('permutatsiya: elementlar yo‘qolmaydi', () {
-      for (var q = 0; q < 50; q++) {
-        expect(s('u1', 's1', q)..sort(), opts);
-      }
-    });
-
-    test('talabalar bo‘yicha turlicha aralashadi', () {
-      final orders = <String>{
-        for (var i = 0; i < 40; i++) s('student$i', 's1', 0).join(),
-      };
-      expect(orders.length, greaterThan(5));
-    });
-  });
-
   group('ClassResultsCsv', () {
     const rows = [
       ClassExportRow(

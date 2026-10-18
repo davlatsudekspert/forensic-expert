@@ -140,15 +140,30 @@ abstract final class ClassCode {
 
 enum NicknameCheck { ok, length, chars, blocked }
 
-/// Laqab qoidalari (server `private.class_nick_check` nusxasi).
+/// Laqab qoidalari (server `private.class_nick_check` nusxasi — ro‘yxatlar
+/// bir xil; migratsiya 20261018040000_class_quiz_fixes.sql).
 abstract final class ClassNickname {
+  /// Istalgan joyda (so‘zlar orasida yashirilsa ham) ushlanadi.
   static const _stems = [
     'fuck', 'shit', 'bitch', 'cunt', 'nigger', 'nigga', 'whore', 'slut',
     'pussy', 'asshole', 'blyat', 'blyad', 'pidor', 'pidar', 'mudak', 'pizd',
-    'ebat', 'ebal', 'gandon', 'jalab', 'qanjiq', 'onangni', 'sikaman', 'сука',
-    'блядь', 'бляд', 'пизд', 'хуй', 'еба', 'мудак', 'пидор', 'гандон', //
+    'gandon', 'jalab', 'qanjiq', 'onangni', 'sikaman', 'сука',
+    'блядь', 'бляд', 'пизд', 'хуй', 'мудак', 'пидор', 'гандон', 'долбоеб',
+    'долбоёб', //
   ];
-  static const _exact = ['sik', 'huy', 'xuy', 'hui', 'suka', 'sex'];
+
+  /// Faqat so‘z BOSHIDA (Глеба, Себастьян, Ebaldiyev o‘tadi).
+  static const _prefixes = [
+    'ебат', 'ебал', 'ебан', 'ебло', 'еблан', 'ебуч', 'ебну', 'ёбан', 'ёбну',
+    'заеб', 'заёб', 'уеба', 'уебо', 'уёб', 'yebat', 'yeban', 'yebal', 'zaeb',
+    'zayeb', //
+  ];
+
+  /// Faqat to‘liq so‘z.
+  static const _exact = [
+    'sik', 'huy', 'xuy', 'hui', 'suka', 'sex', 'ebal', 'ebat', 'eban',
+    'ebalo', 'еб', 'ёб', //
+  ];
 
   static String _norm(String s) => s
       .toLowerCase()
@@ -178,11 +193,18 @@ abstract final class ClassNickname {
     for (final s in _stems) {
       if (norm.contains(s)) return NicknameCheck.blocked;
     }
-    for (final w in t.toLowerCase().split(
-      RegExp(r'[^\p{L}0-9@$]+', unicode: true),
-    )) {
-      if (w.isNotEmpty && _exact.contains(_norm(w))) {
-        return NicknameCheck.blocked;
+    // So‘zlar: tinish belgilari bo‘yicha VA faqat bo‘shliq bo‘yicha (е.б.а.т.ь).
+    final lower = t.toLowerCase();
+    final words = [
+      ...lower.split(RegExp(r'[^\p{L}0-9@$]+', unicode: true)),
+      ...lower.split(RegExp(r'\s+')),
+    ];
+    for (final w in words) {
+      final nw = _norm(w);
+      if (nw.isEmpty) continue;
+      if (_exact.contains(nw)) return NicknameCheck.blocked;
+      for (final p in _prefixes) {
+        if (nw.startsWith(p)) return NicknameCheck.blocked;
       }
     }
     return NicknameCheck.ok;
@@ -220,29 +242,9 @@ abstract final class ClassScoring {
   }
 }
 
-/// Variantlarni har talaba uchun **mijoz tomonida** aralashtirish. Tartib
-/// (talaba, sessiya, savol) bo‘yicha barqaror: ekran qayta chizilganda
-/// o‘zgarmaydi. Javob serverga option id bo‘yicha ketadi.
-List<T> shuffleForStudent<T>(
-  List<T> options, {
-  required String studentId,
-  required String sessionId,
-  required int questionIndex,
-}) {
-  var h = 0x811c9dc5;
-  for (final u in '$studentId|$sessionId|$questionIndex'.codeUnits) {
-    h = ((h ^ u) * 0x01000193) & 0x7fffffff;
-  }
-  final rng = Random(h);
-  final out = List<T>.of(options);
-  for (var i = out.length - 1; i > 0; i--) {
-    final j = rng.nextInt(i + 1);
-    final t = out[i];
-    out[i] = out[j];
-    out[j] = t;
-  }
-  return out;
-}
+// Variantlar tartibi: serverdagi (sessiya yaratilganda bir marta
+// aralashtirilgan) tartib — proyektor va talaba telefonlarida bir xil, A/B/C/D
+// harflari ikkala ekranda bir xil variantni bildiradi.
 
 enum ClassSessionStatus {
   lobby,
@@ -733,11 +735,18 @@ class ClassDashboard {
     required this.hardest,
     required this.reports,
     this.current,
+    this.revealed = false,
   });
 
+  /// `revealed` — server (private.class_revealed): vaqt tugab, javob qabul
+  /// qilish imtiyozi ham o‘tgan. Eski serverda maydon yo‘q bo‘lsa — avvalgi
+  /// qoida (faza `open` emas).
   factory ClassDashboard.fromJson(Map<String, Object?> j) => ClassDashboard(
     session: ClassSessionInfo.fromJson(j),
     phase: ClassPhase.parse(j['phase']),
+    revealed: j.containsKey('revealed')
+        ? j['revealed'] == true
+        : const {'closed', 'finished'}.contains(j['phase']),
     remainingMs: _int(j['remaining_ms']),
     joined: _int(j['joined']),
     participants: [
@@ -765,6 +774,9 @@ class ClassDashboard {
   final List<ClassHardQuestion> hardest;
   final int reports;
   final ClassCurrentQuestion? current;
+
+  /// Proyektor to‘g‘ri javob, sonlar va izohni faqat shunda ko‘rsatadi.
+  final bool revealed;
 }
 
 /// Tugagach talabaning bitta savol bo‘yicha natijasi.

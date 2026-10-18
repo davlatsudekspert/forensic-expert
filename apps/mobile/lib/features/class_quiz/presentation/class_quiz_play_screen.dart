@@ -10,15 +10,27 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
-import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'class_quiz_widgets.dart';
 
 /// Talaba ekrani: kutish zali → savollar → natija. Holat serverdan har ~2 s
 /// polling bilan keladi; to‘g‘ri javob vaqt tugagach ochiladi.
-class ClassPlayScreen extends ConsumerWidget {
+///
+/// Bitta so‘rov xato bo‘lsa (tarmoq/server), oxirgi yaxshi holat ekranda
+/// qoladi va kichik «Aloqa tiklanmoqda» belgisi chiqadi; to‘liq xato ekrani
+/// faqat hali birorta holat kelmagan bo‘lsa (yoki kirish huquqi yo‘q bo‘lsa).
+class ClassPlayScreen extends ConsumerStatefulWidget {
   const ClassPlayScreen({super.key, required this.sessionId});
 
   final String sessionId;
+
+  @override
+  ConsumerState<ClassPlayScreen> createState() => _ClassPlayScreenState();
+}
+
+class _ClassPlayScreenState extends ConsumerState<ClassPlayScreen> {
+  ClassStudentState? _last;
+
+  String get sessionId => widget.sessionId;
 
   void _exit(BuildContext context, WidgetRef ref) {
     ref.read(classActiveJoinProvider.notifier).set(null);
@@ -30,12 +42,20 @@ class ClassPlayScreen extends ConsumerWidget {
   }
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final async = ref.watch(classStudentStateProvider(sessionId));
     final result = async.value;
-    final st = result?.value;
     final failure = result?.failure;
+    final fresh = result?.value;
+    if (fresh != null) _last = fresh;
+    // Huquq yo‘q (sessiya o‘chirilgan / hisob chiqqan) — eski holat ko‘rsatilmaydi.
+    final fatal =
+        failure == ClassFailure.forbidden ||
+        failure == ClassFailure.notSignedIn;
+    final last = _last?.session.id == sessionId ? _last : null;
+    final st = fresh ?? (fatal ? null : last);
+    final reconnecting = fresh == null && st != null && failure != null;
 
     Widget body;
     if (st != null) {
@@ -66,8 +86,8 @@ class ClassPlayScreen extends ConsumerWidget {
             ? Icons.wifi_off
             : Icons.error_outline,
         text: classFailureText(l, failure),
-        action: failure == ClassFailure.forbidden ? l.classExit : l.classRetry,
-        onAction: failure == ClassFailure.forbidden
+        action: fatal ? l.classExit : l.classRetry,
+        onAction: fatal
             ? () => _exit(context, ref)
             : () => ref.invalidate(classStudentStateProvider(sessionId)),
       );
@@ -82,9 +102,8 @@ class ClassPlayScreen extends ConsumerWidget {
       body: SafeArea(
         child: Column(
           children: [
-            // Aloqa uzilsa (oxirgi holat bor) — ogohlantirish, ekran saqlanadi.
-            if (st != null && failure == ClassFailure.offline)
-              FeNote(icon: Icons.wifi_off, text: l.classErrOffline),
+            // Aloqa uzildi, oxirgi holat bor — ekran saqlanadi, kichik belgi.
+            if (reconnecting) const ClassReconnectingBar(),
             Expanded(child: body),
           ],
         ),
@@ -235,12 +254,8 @@ class _StudentQuestionState extends ConsumerState<_StudentQuestion> {
     final selected = st.myOption ?? (_localIndex == q.index ? _local : null);
     final open = st.phase == ClassPhase.open;
     final reveal = st.reveal;
-    final order = shuffleForStudent(
-      q.options,
-      studentId: ref.watch(classStudentKeyProvider),
-      sessionId: widget.sessionId,
-      questionIndex: q.index,
-    );
+    // Proyektor bilan bir xil (server) tartib: «B» ikkala ekranda bir variant.
+    final order = q.options;
 
     ClassOptionState stateOf(String id) {
       if (reveal != null) {
@@ -349,11 +364,13 @@ class _StudentQuestionState extends ConsumerState<_StudentQuestion> {
                       style: t.bodyMedium,
                     ),
                   ),
-                  Text(
-                    l.classScoreLine(st.score),
-                    key: const Key('class.score'),
-                    style: t.titleSmall,
-                  ),
+                  // Ball faqat natija ochilgach (savol ochiq turganda ko‘rsatilmaydi).
+                  if (reveal != null)
+                    Text(
+                      l.classScoreLine(st.score),
+                      key: const Key('class.score'),
+                      style: t.titleSmall,
+                    ),
                 ],
               ),
               const SizedBox(height: FeSpace.lg),

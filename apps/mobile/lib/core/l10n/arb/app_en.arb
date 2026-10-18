@@ -12742,5 +12742,7 @@
   "aiErrOverloaded": "The AI service is busy right now. Results from the knowledge base are shown; try again in a minute.",
   "@aiErrOverloaded": {"description": "AI web fallback."},
   "aiWebOpenFailed": "Could not open the link.",
-  "@aiWebOpenFailed": {"description": "AI web fallback."}
+  "@aiWebOpenFailed": {"description": "AI web fallback."},
+  "classReconnecting": "Reconnecting…",
+  "@classReconnecting": {"description": "Small non-blocking indicator while the live class poll is failing; the last screen stays visible."}
 }

@@ -32,6 +32,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import pathlib
 import re
 import subprocess
@@ -355,7 +356,7 @@ def main() -> int:
         print("  ! " + p)
     print(
         f"class quiz bank: {len(topics)} mavzu, {nq} savol (uz/ru/en), "
-        f"{len(groups)} guruh, o‘tkazilgan savol: {skipped} → {out.relative_to(ROOT)}"
+        f"{len(groups)} guruh, o‘tkazilgan savol: {skipped} → {os.path.relpath(out, ROOT)}"
     )
     if a.sql:
         rows = write_sql(pathlib.Path(a.sql), topics)

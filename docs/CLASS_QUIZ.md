@@ -76,12 +76,28 @@ variantlar serverda aralashtirilgan), `class_participants`, `class_answers`, `cl
   (ustoz — o'z sessiyasi, talaba — o'z ishtirokchi/javob qatori); savollar jadvallariga siyosat umuman yo'q.
 * Huquq xatosi → SQLSTATE `42501` (PostgREST: HTTP **403**). Kutilgan xatolar (`not_found`, `full`, …) `{ok:false,error}`
   qaytaradi (EXCEPTION emas) — shunda urinish hisoblagichi rollback bo'lmaydi.
-* **Kod taxmini:** foydalanuvchi bo'yicha va (bor bo'lsa) IP (`x-forwarded-for` md5) bo'yicha soatiga 30 urinish.
+* **Kod taxmini:** hisob bo'yicha soatiga 30 urinish (har urinish). IP (`x-forwarded-for` md5, kalit `f:`) bo'yicha
+  faqat **muvaffaqiyatsiz** urinishlar (`bad_code`/`not_found`) sanaladi, soatiga 100 tadan keyin shu IP to'siladi;
+  muvaffaqiyatli qo'shilish va qayta kirish IP hisobiga kirmaydi (universitet Wi-Fi / CGNAT: 200 talaba bitta IP'dan
+  kira oladi). Migratsiya `20261018040000_class_quiz_fixes.sql`.
 * **Vaqt:** `question_started_at` + `seconds`. Javob muddat+1 s gacha qabul; to'g'ri javob muddat+1.5 s dan keyin
   ochiladi. Ball: to'g'ri bo'lsa `500 + 500·(limit−o'tgan)/limit` (butun bo'lish), noto'g'ri — 0 (mijoz `ClassScoring` bilan bir xil).
-* Qo'shilish faqat lobby'da (boshlangandan keyin faqat avval a'zo bo'lganlar qayta kiradi).
+* Qo'shilish faqat lobby'da (boshlangandan keyin faqat avval a'zo bo'lganlar qayta kiradi). Tugagan sessiyaga ham
+  mavjud (chiqarilmagan) a'zo qayta kiradi → `ok` + `status: finished`, ilova natijalar ekranini ochadi.
+* **Ball siri:** `private.class_scores` faqat ko'rinadigan javoblarni sanaydi — oldingi savollar, joriysi
+  `class_revealed` bo'lgach, yoki sessiya tugagach. Ochiq savol paytida talaba ham, proyektor reytingi ham ball/o'rin
+  o'zgarishini ko'rmaydi; talaba ekranida ball faqat natija ochilgach chiqadi.
+* **Reyting:** ball ↓, to'g'ri soni ↓, o'rtacha vaqt (faqat to'g'ri javoblar bo'yicha) ↑ `nulls last`. CSV dagi
+  `javob_vaqti_s` — barcha ko'rinadigan javoblar bo'yicha.
+* **Variant tartibi:** server sessiya yaratilganda bir marta aralashtiradi; talaba telefoni va proyektor **bir xil**
+  tartib va A/B/C/D harflarini ko'rsatadi (mijozda qayta aralashtirilmaydi).
+* **Laqab filtri:** `stems` (istalgan joyda), `prefixes` (so'z boshida: `ебат`, `ебал`, …), `exact` (to'liq so'z:
+  `ebal`, `sik`, …) — Себастьян, Глеба, Ebaldiyev o'tadi. Dart `ClassNickname` bilan bir xil (test SQL faylidan solishtiradi).
 * Ustozning o'z sinfiga talaba sifatida qo'shilishi rad (`own_session`); ochiq sinflar ≤ 10.
-* Proyektor: ochiq savol paytida ustoz ekrani to'g'ri javob va variant sonlarini **ko'rsatmaydi** (talabalar ko'rib qolmasin).
+* Proyektor: ustoz ekrani to'g'ri javob, variant sonlari, foiz va izohni faqat panel JSON'idagi `revealed = true`
+  bo'lganda ko'rsatadi (muddat + 1.5 s; javob muddat + 1 s gacha qabul qilinadi — kechikkan talaba ko'rib qolmasin).
+* Polling: bitta so'rov xato bo'lsa oxirgi holat ekranda qoladi va kichik «Aloqa tiklanmoqda…» belgisi chiqadi; to'liq
+  xato ekrani faqat hali birorta holat kelmagan bo'lsa (yoki 403).
 
 ### 30 kunlik tozalash
 `private.class_cleanup()` tugagan va muddati o'tgan (`expires_at`) sessiyalarni o'chiradi (cascade), 24 soatdan oshgan

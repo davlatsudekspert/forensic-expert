@@ -9900,4 +9900,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiWebOpenFailed => 'Could not open the link.';
+
+  @override
+  String get classReconnecting => 'Reconnecting…';
 }

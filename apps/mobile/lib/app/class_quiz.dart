@@ -78,11 +78,6 @@ final classScannerAvailableProvider = Provider<bool>(
           defaultTargetPlatform == TargetPlatform.iOS),
 );
 
-/// Variantlarni aralashtirish uchun barqaror talaba kaliti (hisob id’si).
-final classStudentKeyProvider = Provider<String>(
-  (ref) => ref.watch(authStateProvider).userId ?? 'demo-user',
-);
-
 /// Ustoz roli — faqat serverdan. UI shu bilan ko‘rsatiladi; xavfsizlik chegarasi
 /// serverdagi 403.
 final classQuizMeProvider =

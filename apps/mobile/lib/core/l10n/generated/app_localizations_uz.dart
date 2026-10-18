@@ -9859,4 +9859,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiWebOpenFailed => 'Havolani ochib bo‘lmadi.';
+
+  @override
+  String get classReconnecting => 'Aloqa tiklanmoqda…';
 }

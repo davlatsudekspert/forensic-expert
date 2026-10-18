@@ -541,6 +541,10 @@ class _HostBody extends ConsumerStatefulWidget {
 
 class _HostBodyState extends ConsumerState<_HostBody> {
   bool _busy = false;
+
+  /// Oxirgi yaxshi panel holati: bitta polling xatosi proyektorni xato
+  /// ekraniga almashtirmaydi.
+  ClassDashboard? _last;
   late final ClassScreenAwake _awake;
   late final ClassOrientationControl _orientation;
   bool _forcedLandscape = false;
@@ -641,8 +645,15 @@ class _HostBodyState extends ConsumerState<_HostBody> {
     final l = AppLocalizations.of(context);
     final svc = ref.watch(classQuizServiceProvider);
     final dash = ref.watch(classDashboardProvider(widget.sessionId));
-    final d = dash.value?.value;
+    final fresh = dash.value?.value;
     final failure = dash.value?.failure;
+    if (fresh != null) _last = fresh;
+    final fatal =
+        failure == ClassFailure.forbidden ||
+        failure == ClassFailure.notSignedIn;
+    final last = _last?.session.id == widget.sessionId ? _last : null;
+    final d = fresh ?? (fatal ? null : last);
+    final reconnecting = fresh == null && d != null && failure != null;
 
     final Widget body;
     if (d != null) {
@@ -715,7 +726,14 @@ class _HostBodyState extends ConsumerState<_HostBody> {
             ),
         ],
       ),
-      body: SafeArea(child: body),
+      body: SafeArea(
+        child: Column(
+          children: [
+            if (reconnecting) const ClassReconnectingBar(onDark: true),
+            Expanded(child: body),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -945,6 +963,10 @@ class _Running extends StatelessWidget {
     final cur = d.current;
     if (cur == null) return const Center(child: CircularProgressIndicator());
     final closed = d.phase != ClassPhase.open;
+    // To‘g‘ri javob, sonlar va izoh — faqat server `revealed` deganda (vaqt
+    // tugagach ham javob qabul qilish imtiyozi bor; proyektor oldinroq
+    // ochsa, kechikkan talaba ko‘rib qolardi).
+    final revealed = d.revealed;
     final last = d.session.currentIndex + 1 >= d.session.total;
     final maxCount = cur.options.fold<int>(1, (m, o) => max(m, o.count ?? 0));
 
@@ -985,13 +1007,13 @@ class _Running extends StatelessWidget {
           big: wide,
           // Proyektorda ko‘rinadi: to‘g‘ri javob va sonlar faqat vaqt
           // tugagach (talabalar ko‘rib qolmasin).
-          state: closed
+          state: revealed
               ? (cur.options[i].id == cur.correctOption
                     ? ClassOptionState.correct
                     : ClassOptionState.neutral)
               : ClassOptionState.neutral,
-          count: closed ? cur.options[i].count : null,
-          fraction: closed ? (cur.options[i].count ?? 0) / maxCount : null,
+          count: revealed ? cur.options[i].count : null,
+          fraction: revealed ? (cur.options[i].count ?? 0) / maxCount : null,
         ),
     ];
 
@@ -1040,7 +1062,7 @@ class _Running extends StatelessWidget {
                 const SizedBox(height: FeSpace.sm),
                 _ParticipantStatusGrid(participants: d.participants, big: wide),
               ],
-              if (closed && cur.correctPct != null) ...[
+              if (revealed && cur.correctPct != null) ...[
                 const SizedBox(height: FeSpace.xs),
                 Text(
                   l.classCorrectPct(cur.correctPct!),
@@ -1099,7 +1121,7 @@ class _Running extends StatelessWidget {
       ],
     );
 
-    final explanation = closed && cur.explanation.isNotEmpty
+    final explanation = revealed && cur.explanation.isNotEmpty
         ? Padding(
             padding: const EdgeInsets.only(top: FeSpace.sm),
             child: FeBanner(

@@ -285,7 +285,14 @@ void main() {
       final st = (await a.state(session.id)).value!;
       expect(st.myOption, correct);
       expect(st.reveal, isNull);
-      expect(st.score, 1000, reason: 'darrov to‘g‘ri javob');
+      // Savol ochiq: ball/o‘rin/to‘g‘ri soni hali oshkor qilinmaydi.
+      expect(st.score, 0, reason: 'ochiq savol balli hali sanalmaydi');
+      expect(st.correct, 0);
+      tick(31500);
+      final after = (await a.state(session.id)).value!;
+      expect(after.reveal, isNotNull);
+      expect(after.score, 1000, reason: 'darrov to‘g‘ri javob');
+      expect(after.correct, 1);
     });
 
     test('noto‘g‘ri savol raqami, noto‘g‘ri variant, begona sessiya', () async {
@@ -355,6 +362,8 @@ void main() {
         questionIndex: 0,
         optionId: wrong,
       );
+      expect((await a.state(session.id)).value!.score, 0, reason: 'ochiq');
+      tick(16500); // muddat + 1.5 s → natija ochiladi
       expect((await a.state(session.id)).value!.score, 750);
       expect((await b.state(session.id)).value!.score, 0);
     });

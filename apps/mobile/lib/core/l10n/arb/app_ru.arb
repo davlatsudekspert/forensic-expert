@@ -2859,5 +2859,6 @@
   "aiErrOverloaded": "AI-сервис сейчас перегружен. Показаны результаты из базы; попробуйте через минуту.",
   "@aiErrOverloaded": {"description": "AI web fallback."},
   "aiWebOpenFailed": "Не удалось открыть ссылку.",
-  "@aiWebOpenFailed": {"description": "AI web fallback."}
+  "@aiWebOpenFailed": {"description": "AI web fallback."},
+  "classReconnecting": "Восстанавливаем соединение…"
 }

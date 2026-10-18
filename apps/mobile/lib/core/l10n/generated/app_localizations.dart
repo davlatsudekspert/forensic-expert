@@ -17216,6 +17216,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Could not open the link.'**
   String get aiWebOpenFailed;
+
+  /// Small non-blocking indicator while the live class poll is failing; the last screen stays visible.
+  ///
+  /// In en, this message translates to:
+  /// **'Reconnecting…'**
+  String get classReconnecting;
 }
 
 class _AppLocalizationsDelegate

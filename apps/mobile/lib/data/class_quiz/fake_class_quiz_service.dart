@@ -312,12 +312,10 @@ class FakeClassQuizBackend {
     if (s.teacherId == user && !allowSelfJoin) {
       return const ClassResult.fail(ClassFailure.ownSession);
     }
-    if (s.status == ClassSessionStatus.finished) {
-      return const ClassResult.fail(ClassFailure.finished);
-    }
     final existing = s.participants.where((p) => p.userId == user).firstOrNull;
     if (existing != null) {
       if (existing.kicked) return const ClassResult.fail(ClassFailure.kicked);
+      // Qayta kirish (tugagan sessiya ham — natijalar ekrani uchun).
       return ClassResult.ok(
         ClassJoinInfo(
           sessionId: s.id,
@@ -326,6 +324,9 @@ class FakeClassQuizBackend {
           session: _info(s),
         ),
       );
+    }
+    if (s.status == ClassSessionStatus.finished) {
+      return const ClassResult.fail(ClassFailure.finished);
     }
     if (s.status != ClassSessionStatus.lobby) {
       return const ClassResult.fail(ClassFailure.alreadyStarted);
@@ -465,26 +466,39 @@ class FakeClassQuizBackend {
     return const ClassResult.ok(null);
   }
 
+  /// Server qoidasi (private.class_scores): ochiq savol javoblari hali
+  /// sanalmaydi — faqat oldingi savollar, joriysi revealed bo‘lgach, yoki
+  /// sessiya tugagach.
+  bool _visible(_S s, int index) =>
+      s.status == ClassSessionStatus.finished ||
+      index < s.currentIndex ||
+      (index == s.currentIndex && _revealed(s));
+
+  /// O‘rtacha vaqt faqat to‘g‘ri javoblar bo‘yicha; to‘g‘ri javobi yo‘q —
+  /// eng oxirida (`nulls last`).
+  static const _noAvg = 1 << 30;
+
   List<ClassLeaderRow> _scores(_S s) {
     final rows = <({_P p, int score, int correct, int avg})>[];
     for (final p in _active(s)) {
       var score = 0;
       var correct = 0;
-      var n = 0;
       var sum = 0;
       for (var i = 0; i < s.questions.length; i++) {
+        if (!_visible(s, i)) continue;
         final a = s.answers['${p.id}|$i'];
         if (a == null) continue;
         score += a.points;
-        if (a.correct) correct++;
-        n++;
-        sum += a.elapsedMs;
+        if (a.correct) {
+          correct++;
+          sum += a.elapsedMs;
+        }
       }
       rows.add((
         p: p,
         score: score,
         correct: correct,
-        avg: n == 0 ? 0 : sum ~/ n,
+        avg: correct == 0 ? _noAvg : sum ~/ correct,
       ));
     }
     rows.sort((a, b) {
@@ -659,7 +673,7 @@ class FakeClassQuizBackend {
       final closed =
           s.status == ClassSessionStatus.finished ||
           i < s.currentIndex ||
-          (i == s.currentIndex && _phase(s) == ClassPhase.closed);
+          (i == s.currentIndex && _revealed(s));
       if (!closed) continue;
       var n = 0;
       var ok = 0;
@@ -703,6 +717,7 @@ class FakeClassQuizBackend {
         hardest: hard.take(3).toList(),
         reports: s.reports.length,
         current: current,
+        revealed: _revealed(s),
       ),
     );
   }
@@ -717,6 +732,7 @@ class FakeClassQuizBackend {
       var n = 0;
       var sum = 0;
       for (var i = 0; i < s.questions.length; i++) {
+        if (!_visible(s, i)) continue;
         final a = s.answers['${p.id}|$i'];
         if (a == null) continue;
         n++;
