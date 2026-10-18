@@ -42,6 +42,7 @@ free. Account deletion: Profile → Account → Delete account.
 - **en:** Lessons for teachers: 200+ lecture decks, projector mode and a quiz after the lesson. Improved class quiz: big-screen layout and stable reconnection. When the knowledge base has no answer, the AI searches the web (labelled as unverified).
 
 ## 4. Tekshirish ro‘yxati (Submit’dan oldin)
+- **Pricing and Availability → All countries or regions** (egasi qarori; bepul). Xitoy materigi AI litsenziyasi sabab rad etilsa, faqat uni olib tashlang.
 - Build **0.3.0 (17)** TestFlight’da «Ready to Submit».
 - Demo akkaunt ilovada kiradi va Profil’da «Ustoz paneli» ko‘rinadi.
 - Privacy/Support URL: https://davlatsudekspert.github.io/forensic-expert-legal/

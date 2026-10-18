@@ -248,3 +248,6 @@ Egasi javoblari: «toksikologya qolmasin» — 76–81 [Qo‘shimcha] amaliy mas
 
 ## 2026-10-18 — Toksikologiya kitoblaridagi ziddiyatlar: bitta qiymat
 Egasi: «538. Krilova. Bittasini yoz bo‘ldi». COHb — 538 nm; kasrli usul — A.N. Krilova; boshqa ziddiyatlarda slaydda bitta qiymat (kitobdagi asosiy yoki to‘g‘ri variant), ikkinchisi faqat teacher_notes’da. Ro‘yxat: `docs/toks/kitob_ziddiyatlari.md`.
+
+## 2026-10-18 — App Store: barcha davlatlar
+Egasi: «Apple’da to‘ldirayotganda hamma davlatlarga deb yozaylik. Esingda saqla». App Store Connect → Pricing and Availability → **All countries or regions** (bepul). Istisno ehtimoli: Xitoy materigi — generativ AI xizmatlari uchun mahalliy litsenziya talab qilinadi; Apple shu hududni rad etsa, faqat o‘sha hudud olib tashlanadi. Play Console’da ham barcha davlatlar.
