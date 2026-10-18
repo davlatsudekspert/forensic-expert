@@ -329,7 +329,11 @@ class FakeClassGroupsBackend {
     for (var i = 0; i < pool.length && i < 200; i++) {
       final b = pool[i];
       final perm = [0, 1, 2, 3]..shuffle(_rng);
-      final id = '${d.topicId}#${(i + 1).toString().padLeft(3, '0')}';
+      // Bankdagi barqaror id (yagona indeks bilan bir xil); demo
+      // to‘plamda id yo‘q — mavzu + tartib raqami.
+      final id = b.id.isNotEmpty
+          ? b.id
+          : '${d.topicId}#${(i + 1).toString().padLeft(3, '0')}';
       qs[id] = _Q(
         id,
         b.question,

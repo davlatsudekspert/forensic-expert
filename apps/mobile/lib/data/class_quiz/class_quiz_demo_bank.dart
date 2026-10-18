@@ -10,6 +10,7 @@ class ClassBankQuestion {
     required this.correctIndex,
     required this.explanation,
     required this.source,
+    this.id = '',
   });
 
   /// `tools/slides/out/*.json` dagi `mcq[i]` (yoki import fayli) elementidan.
@@ -29,6 +30,7 @@ class ClassBankQuestion {
     final source = ClassSource.fromJson(src.cast<String, Object?>());
     if (source.author.isEmpty || source.title.isEmpty) return null;
     return ClassBankQuestion(
+      id: raw['id'] is String ? raw['id']! as String : '',
       question: q,
       options: [for (final o in opts) o as String],
       correctIndex: ci,
@@ -37,6 +39,9 @@ class ClassBankQuestion {
     );
   }
 
+  /// Bankdagi barqaror id (asset: `<mavzu>-qNN`, til varianti `~ru`/`~en`).
+  /// Bo‘sh — demo to‘plam (id ni chaqiruvchi beradi).
+  final String id;
   final String question;
   final List<String> options;
   final int correctIndex;

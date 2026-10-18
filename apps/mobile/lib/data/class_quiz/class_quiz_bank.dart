@@ -57,6 +57,7 @@ class ClassQuizBank {
     this.groups = const [],
     this.topics = const [],
     this.variants = const [],
+    this.index = const {},
   });
 
   static const empty = ClassQuizBank();
@@ -66,6 +67,17 @@ class ClassQuizBank {
 
   /// Xizmat (fake backend / server seed) uchun til variantlari.
   final List<ClassBankTopic> variants;
+
+  /// YAGONA savollar indeksi (id → savol): ustoz sahifasi, «Talaba
+  /// ko‘rinishida sinash», talaba testi, katta ekran va natijalar savolni
+  /// shu yerdan id bo‘yicha topadi. Bankdagi HAMMA savol kiradi — jumladan
+  /// mashq ro‘yxatiga kiritilmaganlari (masalan beti ko‘rsatilmagan, slayd
+  /// matnidan tuzilgan savollar). LabGuide’da shular indeksga tushmay,
+  /// iPhone’da «savol to‘plamda yo‘q» xatosi chiqqan.
+  final Map<String, ClassBankQuestion> index;
+
+  /// Id bo‘yicha savol (yo‘q — `null`).
+  ClassBankQuestion? question(String id) => index[id];
 
   /// `4-kurs-davolash-10~ru` → `4-kurs-davolash-10`.
   static String baseId(String topicId) => topicId.split('~').first;
@@ -115,6 +127,7 @@ class ClassQuizBank {
     ]..sort((a, b) => a.order.compareTo(b.order));
     final metas = <ClassQuizBankTopicMeta>[];
     final variants = <ClassBankTopic>[];
+    final index = <String, ClassBankQuestion>{};
     for (final t in (root['topics'] as List? ?? const [])) {
       if (t is! Map || t['id'] is! String) continue;
       final id = t['id'] as String;
@@ -134,6 +147,7 @@ class ClassQuizBank {
         for (final l in classQuizBankLangs) {
           final o = opts[l];
           final parsed = ClassBankQuestion.tryParse({
+            if (q['id'] is String) 'id': variantId(q['id'] as String, l),
             'question': qi[l],
             'options': o,
             'correct_index': q['correct_index'],
@@ -147,7 +161,10 @@ class ClassQuizBank {
                 'translation': 'auto_unreviewed',
             },
           });
-          if (parsed == null || parsed.source.cleanPage == null) continue;
+          if (parsed == null) continue;
+          // Indeksga hammasi; mashq ro‘yxatiga — faqat beti ko‘rsatilgani.
+          if (parsed.id.isNotEmpty) index[parsed.id] = parsed;
+          if (parsed.source.cleanPage == null) continue;
           byLang[l]!.add(parsed);
         }
       }
@@ -175,7 +192,12 @@ class ClassQuizBank {
         );
       }
     }
-    return ClassQuizBank(groups: groups, topics: metas, variants: variants);
+    return ClassQuizBank(
+      groups: groups,
+      topics: metas,
+      variants: variants,
+      index: index,
+    );
   }
 }
 
