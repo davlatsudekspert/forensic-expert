@@ -1,4 +1,4 @@
-# App Store — 0.3.0 (17) tekshiruvga yuborish (2026-10-18)
+# App Store — 0.3.0 (18) tekshiruvga yuborish (2026-10-18)
 
 ## 1. Demo akkaunt (ustoz funksiyalari uchun SHART)
 «Darslar» va «Sinfda test»ni boshqarish faqat ustoz rolida ochiladi. Apple barcha funksiyani ko‘ra olishi kerak (2.1), shuning uchun demo akkaunt beriladi.
@@ -27,6 +27,13 @@ Teacher features (only for accounts with the teacher role):
    multiple-choice questions; the teacher sees answers count, the correct
    answer after time is up, and a leaderboard. To try it alone, join from a
    second device with any other account.
+3. Groups and topic tests ("Guruhlar va mavzu testlari"): Teacher panel →
+   Groups → create a group → "Give topic test" (or "Combined test"): choose
+   topics, number of questions, time limit and how long the test stays open.
+   One QR/code for the whole group; students (signed-in accounts only) join,
+   solve at their own pace; each student may get a different question set;
+   the server scores; correct answers open after the deadline or when the
+   teacher closes the test.
 
 All content is educational reference material for forensic medicine and
 forensic toxicological chemistry, written from university textbooks with
@@ -37,13 +44,13 @@ free. Account deletion: Profile → Account → Delete account.
 ```
 
 ## 3. What's New
-- **uz:** Ustozlar uchun «Darslar»: 200 dan ortiq ma’ruza taqdimoti, proyektor rejimi, darsdan keyin test. «Sinfda test» yaxshilandi: katta ekran, aloqa uzilganda barqaror ishlash. AI javobi bazada bo‘lmasa internetdan qidiradi (tekshirilmagan deb belgilanadi).
-- **ru:** «Уроки» для преподавателей: более 200 лекционных презентаций, режим проектора, тест после урока. Улучшен «Тест в классе»: большой экран, устойчивость при обрыве связи. Если ответа нет в базе, ИИ ищет в интернете (с пометкой «не проверено»).
-- **en:** Lessons for teachers: 200+ lecture decks, projector mode and a quiz after the lesson. Improved class quiz: big-screen layout and stable reconnection. When the knowledge base has no answer, the AI searches the web (labelled as unverified).
+- **uz:** Yangi: «Ustoz–talaba testi» — guruhlar, mavzu va umumiy testlar, har talabaga alohida variant, jonli natijalar. Ustozlar uchun «Darslar»: 200 dan ortiq ma’ruza taqdimoti, proyektor rejimi, darsdan keyin test. «Sinfda test» yaxshilandi: katta ekran, aloqa uzilganda barqaror ishlash. AI javobi bazada bo‘lmasa internetdan qidiradi (tekshirilmagan deb belgilanadi).
+- **ru:** Новое: «Тест преподаватель–студент» — группы, тематические и сводные тесты, отдельный вариант каждому студенту, результаты в реальном времени. «Уроки» для преподавателей: более 200 лекционных презентаций, режим проектора, тест после урока. Улучшен «Тест в классе»: большой экран, устойчивость при обрыве связи. Если ответа нет в базе, ИИ ищет в интернете (с пометкой «не проверено»).
+- **en:** New: teacher–student tests — groups, topic and combined tests, a separate variant per student, live results. Lessons for teachers: 200+ lecture decks, projector mode and a quiz after the lesson. Improved class quiz: big-screen layout and stable reconnection. When the knowledge base has no answer, the AI searches the web (labelled as unverified).
 
 ## 4. Tekshirish ro‘yxati (Submit’dan oldin)
 - **Pricing and Availability → All countries or regions** (egasi qarori; bepul). Xitoy materigi AI litsenziyasi sabab rad etilsa, faqat uni olib tashlang.
-- Build **0.3.0 (17)** TestFlight’da «Ready to Submit».
+- Build **0.3.0 (18)** TestFlight’da «Ready to Submit».
 - Demo akkaunt ilovada kiradi va Profil’da «Ustoz paneli» ko‘rinadi.
 - Privacy/Support URL: https://davlatsudekspert.github.io/forensic-expert-legal/
 - «Sign-in required» belgilangan, login/parol kiritilgan.
