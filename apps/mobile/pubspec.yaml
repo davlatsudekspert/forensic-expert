@@ -1,7 +1,7 @@
 name: forensic_expert
 description: "FORENSIC EXPERT — professional forensic reference, education and scientific calculation software."
 publish_to: 'none'
-version: 0.3.0+14
+version: 0.3.0+15
 resolution: workspace
 
 environment:
@@ -40,6 +40,7 @@ dependencies:
   sign_in_with_apple: ^8.2.0
   qr_flutter: ^4.1.0
   mobile_scanner: ^7.4.2
+  wakelock_plus: ^1.8.1
 
 dev_dependencies:
   flutter_test:

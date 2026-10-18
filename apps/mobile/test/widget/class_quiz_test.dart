@@ -74,6 +74,7 @@ Future<ProviderContainer> _open(
       ),
       classFileShareProvider.overrideWithValue(w.share),
       classScannerAvailableProvider.overrideWithValue(false),
+      classLandscapePromptEnabledProvider.overrideWithValue(false),
     ],
   );
   c.read(routerProvider).go(location);

@@ -9714,4 +9714,19 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get studyQuizAboutPractice => 'Mashq rejimi va variantlar haqida';
+
+  @override
+  String get classLandscapePrompt => 'Gorizontal holatga o‘tamizmi?';
+
+  @override
+  String get classLandscapeYes => 'Ha';
+
+  @override
+  String get classLandscapeNo => 'Yo‘q';
+
+  @override
+  String get classParticipantAnswered => 'Javob berdi';
+
+  @override
+  String get classParticipantWaiting => 'Kutilmoqda';
 }

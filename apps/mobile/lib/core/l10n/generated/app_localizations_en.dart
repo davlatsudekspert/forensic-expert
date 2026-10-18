@@ -9750,4 +9750,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get studyQuizAboutPractice => 'About practice mode and options';
+
+  @override
+  String get classLandscapePrompt => 'Switch to landscape?';
+
+  @override
+  String get classLandscapeYes => 'Yes';
+
+  @override
+  String get classLandscapeNo => 'No';
+
+  @override
+  String get classParticipantAnswered => 'Answered';
+
+  @override
+  String get classParticipantWaiting => 'Waiting';
 }

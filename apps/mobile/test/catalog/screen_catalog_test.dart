@@ -1234,6 +1234,7 @@ ${rows.join('\n')}
             ),
             classFileShareProvider.overrideWithValue(_Share()),
             classScannerAvailableProvider.overrideWithValue(false),
+            classLandscapePromptEnabledProvider.overrideWithValue(false),
           ],
         ];
         // Sinf: talaba ko‘rinishi act ichida tanlanadi — provayder o‘qilishidan

@@ -691,7 +691,13 @@ class FakeClassQuizBackend {
         joined: _active(s).length,
         participants: [
           for (final p in _active(s))
-            ClassParticipant(id: p.id, nickname: p.nickname),
+            ClassParticipant(
+              id: p.id,
+              nickname: p.nickname,
+              answered:
+                  s.status == ClassSessionStatus.running &&
+                  s.answers['${p.id}|${s.currentIndex}'] != null,
+            ),
         ],
         leaderboard: scores.take(10).toList(),
         hardest: hard.take(3).toList(),

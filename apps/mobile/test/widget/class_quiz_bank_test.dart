@@ -90,6 +90,7 @@ void main() {
           classQuizServiceProvider.overrideWithValue(svc),
           classQuizBankLoaderProvider.overrideWithValue(() async => raw),
           classScannerAvailableProvider.overrideWithValue(false),
+          classLandscapePromptEnabledProvider.overrideWithValue(false),
           classQuizPollIntervalProvider.overrideWithValue(
             const Duration(milliseconds: 100),
           ),

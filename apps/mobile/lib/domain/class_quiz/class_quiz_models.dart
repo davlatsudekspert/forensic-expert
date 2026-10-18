@@ -631,13 +631,23 @@ class ClassJoinInfo {
 
 @immutable
 class ClassParticipant {
-  const ClassParticipant({required this.id, required this.nickname});
+  const ClassParticipant({
+    required this.id,
+    required this.nickname,
+    this.answered = false,
+  });
 
-  factory ClassParticipant.fromJson(Map<String, Object?> j) =>
-      ClassParticipant(id: _str(j['id']), nickname: _str(j['nickname']));
+  /// `answered` — server qo‘shgan maydon (joriy savolga javob berdimi); eski
+  /// serverda yo‘q bo‘lsa `false`. Qaysi variant tanlangani hech qachon kelmaydi.
+  factory ClassParticipant.fromJson(Map<String, Object?> j) => ClassParticipant(
+    id: _str(j['id']),
+    nickname: _str(j['nickname']),
+    answered: j['answered'] == true,
+  );
 
   final String id;
   final String nickname;
+  final bool answered;
 }
 
 /// Ustozning joriy savol bo‘yicha jonli ko‘rinishi (to‘g‘ri javob bilan).

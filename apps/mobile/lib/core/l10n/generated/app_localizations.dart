@@ -16964,6 +16964,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'About practice mode and options'**
   String get studyQuizAboutPractice;
+
+  /// Dialog title on the host screen (phone, portrait).
+  ///
+  /// In en, this message translates to:
+  /// **'Switch to landscape?'**
+  String get classLandscapePrompt;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get classLandscapeYes;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'No'**
+  String get classLandscapeNo;
+
+  /// Participant status chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Answered'**
+  String get classParticipantAnswered;
+
+  /// Participant status chip.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting'**
+  String get classParticipantWaiting;
 }
 
 class _AppLocalizationsDelegate

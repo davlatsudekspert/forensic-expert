@@ -2,9 +2,11 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart'
+    show DeviceOrientation, SystemChrome, rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../data/class_quiz/class_quiz_bank.dart';
 import '../data/class_quiz/fake_class_quiz_service.dart';
@@ -226,4 +228,83 @@ class NativeClassFileShare implements ClassFileShare {
 
 final classFileShareProvider = Provider<ClassFileShare>(
   (ref) => const NativeClassFileShare(),
+);
+
+/// Proyektor ekrani ochiq turganda ekranni o‘chirmaslik (testlarda no-op).
+abstract interface class ClassScreenAwake {
+  Future<void> enable();
+  Future<void> disable();
+}
+
+class WakelockClassScreenAwake implements ClassScreenAwake {
+  const WakelockClassScreenAwake();
+
+  @override
+  Future<void> enable() async {
+    try {
+      await WakelockPlus.enable();
+    } on Object {
+      // Qo‘llab-quvvatlanmaydigan platforma/test: e’tiborsiz.
+    }
+  }
+
+  @override
+  Future<void> disable() async {
+    try {
+      await WakelockPlus.disable();
+    } on Object {
+      // yuqoridagi kabi.
+    }
+  }
+}
+
+final classScreenAwakeProvider = Provider<ClassScreenAwake>(
+  (ref) => const WakelockClassScreenAwake(),
+);
+
+/// Ustoz ekrani yo‘nalishini boshqarish (testlarda almashtiriladi).
+abstract interface class ClassOrientationControl {
+  Future<void> landscape();
+
+  /// Ilova standarti: ilova `setPreferredOrientations` chaqirmaydi, shuning
+  /// uchun bo‘sh ro‘yxat — platforma manifestidagi (Info.plist/Manifest)
+  /// yo‘nalishlarga qaytish.
+  Future<void> restore();
+}
+
+class SystemClassOrientationControl implements ClassOrientationControl {
+  const SystemClassOrientationControl();
+
+  @override
+  Future<void> landscape() async {
+    try {
+      await SystemChrome.setPreferredOrientations(const [
+        DeviceOrientation.landscapeLeft,
+        DeviceOrientation.landscapeRight,
+      ]);
+    } on Object {
+      // e’tiborsiz.
+    }
+  }
+
+  @override
+  Future<void> restore() async {
+    try {
+      await SystemChrome.setPreferredOrientations(const <DeviceOrientation>[]);
+    } on Object {
+      // e’tiborsiz.
+    }
+  }
+}
+
+final classOrientationControlProvider = Provider<ClassOrientationControl>(
+  (ref) => const SystemClassOrientationControl(),
+);
+
+/// «Gorizontal holatga o‘tamizmi?» so‘rovi faqat telefonda (Android/iOS).
+final classLandscapePromptEnabledProvider = Provider<bool>(
+  (ref) =>
+      !kIsWeb &&
+      (defaultTargetPlatform == TargetPlatform.android ||
+          defaultTargetPlatform == TargetPlatform.iOS),
 );

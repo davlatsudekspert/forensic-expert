@@ -9801,4 +9801,19 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get studyQuizAboutPractice => 'О режиме тренировки и вариантах';
+
+  @override
+  String get classLandscapePrompt => 'Перейти в горизонтальный режим?';
+
+  @override
+  String get classLandscapeYes => 'Да';
+
+  @override
+  String get classLandscapeNo => 'Нет';
+
+  @override
+  String get classParticipantAnswered => 'Ответил';
+
+  @override
+  String get classParticipantWaiting => 'Ожидание';
 }

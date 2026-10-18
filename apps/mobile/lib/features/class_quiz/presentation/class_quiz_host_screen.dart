@@ -521,6 +521,58 @@ class _HostBody extends ConsumerStatefulWidget {
 
 class _HostBodyState extends ConsumerState<_HostBody> {
   bool _busy = false;
+  late final ClassScreenAwake _awake;
+  late final ClassOrientationControl _orientation;
+  bool _forcedLandscape = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _awake = ref.read(classScreenAwakeProvider);
+    _orientation = ref.read(classOrientationControlProvider);
+    _awake.enable();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _askLandscape());
+  }
+
+  @override
+  void dispose() {
+    _awake.disable();
+    if (_forcedLandscape) _orientation.restore();
+    super.dispose();
+  }
+
+  /// Telefonda, tik holatda — bir marta gorizontal holatga o‘tishni taklif qiladi.
+  Future<void> _askLandscape() async {
+    if (!mounted || !ref.read(classLandscapePromptEnabledProvider)) return;
+    final mq = MediaQuery.of(context);
+    if (mq.size.shortestSide >= 600 || mq.orientation != Orientation.portrait) {
+      return;
+    }
+    final l = AppLocalizations.of(context);
+    final yes = await showDialog<bool>(
+      context: context,
+      builder: (c) => AlertDialog(
+        key: const Key('class.landscapeDialog'),
+        title: Text(l.classLandscapePrompt),
+        actions: [
+          TextButton(
+            key: const Key('class.landscapeNo'),
+            onPressed: () => c.pop(false),
+            child: Text(l.classLandscapeNo),
+          ),
+          FilledButton(
+            key: const Key('class.landscapeYes'),
+            onPressed: () => c.pop(true),
+            child: Text(l.classLandscapeYes),
+          ),
+        ],
+      ),
+    );
+    if (yes == true) {
+      _forcedLandscape = true;
+      await _orientation.landscape();
+    }
+  }
 
   Future<void> _run(Future<ClassResult<Object?>> Function() action) async {
     if (_busy) return;
@@ -964,6 +1016,10 @@ class _Running extends StatelessWidget {
                 value: d.joined == 0 ? 0 : cur.answered / d.joined,
                 minHeight: 8,
               ),
+              if (d.participants.isNotEmpty) ...[
+                const SizedBox(height: FeSpace.sm),
+                _ParticipantStatusGrid(participants: d.participants, big: wide),
+              ],
               if (closed && cur.correctPct != null) ...[
                 const SizedBox(height: FeSpace.xs),
                 Text(
@@ -1089,6 +1145,80 @@ class _Running extends StatelessWidget {
         const SizedBox(height: FeSpace.md),
         live,
       ],
+    );
+  }
+}
+
+/// Har bir ishtirokchi: taxallus + «Javob berdi» / «Kutilmoqda». Faqat holat —
+/// qaysi variant tanlangani ko‘rsatilmaydi; email hech qachon ko‘rsatilmaydi.
+class _ParticipantStatusGrid extends StatelessWidget {
+  const _ParticipantStatusGrid({required this.participants, required this.big});
+
+  final List<ClassParticipant> participants;
+  final bool big;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    return LayoutBuilder(
+      builder: (context, box) {
+        final minW = big ? 250.0 : 200.0;
+        final cols = max(1, (box.maxWidth / minW).floor());
+        final w = (box.maxWidth - (cols - 1) * FeSpace.xs) / cols;
+        return Wrap(
+          key: const Key('class.participantStatus'),
+          spacing: FeSpace.xs,
+          runSpacing: FeSpace.xs,
+          children: [
+            for (final p in participants)
+              SizedBox(
+                width: w,
+                child: Row(
+                  key: Key('class.participant.${p.id}'),
+                  children: [
+                    Expanded(
+                      child: Text(
+                        p.nickname,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: (big ? t.bodyLarge : t.bodyMedium)?.copyWith(
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: FeSpace.xs),
+                    Flexible(
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 2,
+                        ),
+                        decoration: BoxDecoration(
+                          color: (p.answered ? c.verified : c.textSecondary)
+                              .withValues(alpha: 0.16),
+                          borderRadius: BorderRadius.circular(999),
+                        ),
+                        child: Text(
+                          p.answered
+                              ? l.classParticipantAnswered
+                              : l.classParticipantWaiting,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: (big ? t.labelLarge : t.labelSmall)?.copyWith(
+                            color: p.answered ? c.verified : c.textSecondary,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        );
+      },
     );
   }
 }

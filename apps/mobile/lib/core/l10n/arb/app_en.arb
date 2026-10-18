@@ -12656,5 +12656,15 @@
   "studyQuizAboutPractice": "About practice mode and options",
   "@studyQuizAboutPractice": {
     "description": "Title of the single collapsible info box on the first practice question."
-  }
+  },
+  "classLandscapePrompt": "Switch to landscape?",
+  "@classLandscapePrompt": {"description": "Dialog title on the host screen (phone, portrait)."},
+  "classLandscapeYes": "Yes",
+  "@classLandscapeYes": {"description": "Button."},
+  "classLandscapeNo": "No",
+  "@classLandscapeNo": {"description": "Button."},
+  "classParticipantAnswered": "Answered",
+  "@classParticipantAnswered": {"description": "Participant status chip."},
+  "classParticipantWaiting": "Waiting",
+  "@classParticipantWaiting": {"description": "Participant status chip."}
 }
