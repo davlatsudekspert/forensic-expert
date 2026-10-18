@@ -64,16 +64,19 @@ void main() {
     final c = ProviderScope.containerOf(
       tester.element(find.byType(MaterialApp)),
     );
-    final r = await tester.runAsync(
-      () => c
+    try {
+      final r = await c
           .read(authRepositoryProvider)
           .signIn(
             email: env['STORE_EMAIL']!,
             password: env['STORE_PASSWORD']!,
-          ),
-    );
-    // ignore: avoid_print
-    print('STORE sign-in ok=${r?.ok}');
+          );
+      // ignore: avoid_print
+      print('STORE sign-in ok=${r.ok} failure=${r.failure}');
+    } catch (e) {
+      // ignore: avoid_print
+      print('STORE sign-in error: $e');
+    }
     await settle(3000);
 
     Future<void> go(String loc, [int ms = 3500]) async {
@@ -114,8 +117,8 @@ void main() {
       await go(Routes.home);
       await shot(device, '01_home', scale);
 
-      await go('/home/disciplines/forensicToxicology');
-      await shot(device, '02_toxicology', scale);
+      await go(Routes.library);
+      await shot(device, '02_library', scale);
 
       await go('/home/substance/morphine');
       await shot(device, '03_substance', scale);
