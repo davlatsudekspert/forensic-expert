@@ -5,6 +5,7 @@ import '../data/lessons/fake_lessons_service.dart';
 import '../domain/class_quiz/class_quiz_models.dart' show ClassResult;
 import '../domain/lessons/lesson_models.dart';
 import '../domain/ports/lessons_ports.dart';
+import 'class_quiz.dart';
 
 /// Bootstrap’da Supabase sozlangan bo‘lsa [SupabaseLessonsService] bilan
 /// almashtiriladi; aks holda DEMO (Fake) adapter (namunaviy darslar).
@@ -54,3 +55,16 @@ class PlatformLessonScreenGuard implements LessonScreenGuard {
 final lessonScreenGuardProvider = Provider<LessonScreenGuard>(
   (ref) => const PlatformLessonScreenGuard(),
 );
+
+/// Dars bilan bog‘liq test mavzusi (`class_topics` da `deck_id` yoki uning
+/// `~ru`/`~en` varianti) bormi. Yuklanayotgan yoki xatoda — `false`.
+final lessonQuizAvailableProvider = Provider.autoDispose.family<bool, String>((
+  ref,
+  deckId,
+) {
+  if (deckId.isEmpty) return false;
+  final topics = ref.watch(classTopicsProvider).value?.value;
+  if (topics == null) return false;
+  final base = ClassQuizBank.baseId(deckId);
+  return topics.any((t) => ClassQuizBank.baseId(t.id) == base);
+});

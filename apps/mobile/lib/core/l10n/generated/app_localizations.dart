@@ -17016,7 +17016,7 @@ abstract class AppLocalizations {
   /// Search field hint.
   ///
   /// In en, this message translates to:
-  /// **'Search by lesson or slide text'**
+  /// **'Search lessons'**
   String get lessonsSearchHint;
 
   /// Tooltip.
@@ -17156,6 +17156,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Swipe or tap to move between slides'**
   String get lessonViewerHintNav;
+
+  /// Button after a lesson: opens the class-quiz host flow with this topic preselected.
+  ///
+  /// In en, this message translates to:
+  /// **'Start a quiz on this topic'**
+  String get lessonQuizStart;
+
+  /// Hint shown when the topic has no quiz yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz questions for this topic will be added soon'**
+  String get lessonQuizSoon;
 }
 
 class _AppLocalizationsDelegate

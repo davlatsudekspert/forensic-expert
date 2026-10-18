@@ -254,8 +254,10 @@ class LessonReference {
   final String pages;
 
   /// «Muallif. Sarlavha. Yil. Sahifalar».
-  String get line =>
-      [author, title, year, pages].where((e) => e.isNotEmpty).join('. ');
+  String get line => [author, title, year, pages]
+      .where((e) => e.isNotEmpty)
+      .map((e) => e.endsWith('.') ? e.substring(0, e.length - 1) : e)
+      .join('. ');
 }
 
 /// To‘liq dars (prezentatsiya).

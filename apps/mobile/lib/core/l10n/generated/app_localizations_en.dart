@@ -9777,7 +9777,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Lecture presentations — view and projector only';
 
   @override
-  String get lessonsSearchHint => 'Search by lesson or slide text';
+  String get lessonsSearchHint => 'Search lessons';
 
   @override
   String get lessonsSearchClear => 'Clear search';
@@ -9866,4 +9866,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lessonViewerHintNav => 'Swipe or tap to move between slides';
+
+  @override
+  String get lessonQuizStart => 'Start a quiz on this topic';
+
+  @override
+  String get lessonQuizSoon =>
+      'Quiz questions for this topic will be added soon';
 }

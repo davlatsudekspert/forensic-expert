@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/class_quiz.dart';
 import '../../../app/lessons.dart';
+import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -235,7 +236,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
                   itemBuilder: (c, i) => ListTile(
                     key: Key('lesson.outline.$i'),
                     selected: i == _index,
-                    leading: Text('${i + 1}'),
+                    leading: Text((i + 1).toString()),
                     title: Text(
                       pages[i].title,
                       maxLines: 2,
@@ -254,6 +255,10 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
       _pc.jumpToPage(picked);
     }
   }
+
+  /// Mavzu testini boshlash: sinf testi yaratish oqimi, mavzu tanlangan holda
+  /// (`deck_id` == test mavzusi id).
+  void _startQuiz() => context.push(Routes.classNewFor(widget.deck.deckId));
 
   KeyEventResult _onKey(KeyEvent e, int total) {
     if (e is! KeyDownEvent) return KeyEventResult.ignored;
@@ -319,6 +324,9 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
     final lang = Localizations.localeOf(context).languageCode;
     final pending = lang != widget.deck.sourceLang;
     final wideNotes = MediaQuery.sizeOf(context).width >= 900;
+    final quizReady = ref.watch(
+      lessonQuizAvailableProvider(widget.deck.deckId),
+    );
     final notesPanel = _NotesPanel(
       key: const Key('lesson.notes'),
       text: page.notes,
@@ -328,6 +336,12 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
       appBar: AppBar(
         title: FeAppBarTitle(widget.deck.title),
         actions: [
+          IconButton(
+            key: const Key('lesson.quizAppBar'),
+            tooltip: quizReady ? l.lessonQuizStart : l.lessonQuizSoon,
+            icon: const Icon(Icons.quiz_outlined),
+            onPressed: quizReady ? _startQuiz : null,
+          ),
           IconButton(
             key: const Key('lesson.notesToggle'),
             tooltip: l.lessonViewerNotes,
@@ -395,6 +409,8 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
                   ),
                 ),
               ),
+            if (_index == pages.length - 1)
+              _QuizCta(ready: quizReady, onStart: _startQuiz),
             _ControlBar(
               index: _index,
               total: pages.length,
@@ -462,6 +478,49 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+class _QuizCta extends StatelessWidget {
+  const _QuizCta({required this.ready, required this.onStart});
+
+  final bool ready;
+  final VoidCallback onStart;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        FeSpace.md,
+        FeSpace.xs,
+        FeSpace.md,
+        FeSpace.xs,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          FilledButton.icon(
+            key: const Key('lesson.quizStart'),
+            onPressed: ready ? onStart : null,
+            icon: const Icon(Icons.quiz_outlined),
+            label: Text(l.lessonQuizStart, textAlign: TextAlign.center),
+          ),
+          if (!ready)
+            Padding(
+              padding: const EdgeInsets.only(top: FeSpace.xxs),
+              child: Text(
+                l.lessonQuizSoon,
+                key: const Key('lesson.quizSoon'),
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodySmall
+                    ?.copyWith(color: c.textSecondary),
+              ),
+            ),
+        ],
       ),
     );
   }

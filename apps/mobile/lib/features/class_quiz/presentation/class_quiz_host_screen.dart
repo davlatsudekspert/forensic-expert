@@ -18,15 +18,21 @@ import 'class_quiz_widgets.dart';
 
 /// Yangi sinf testi: mavzu, savollar soni, talaba chegarasi, har savolga vaqt.
 class ClassCreateScreen extends StatelessWidget {
-  const ClassCreateScreen({super.key});
+  const ClassCreateScreen({super.key, this.initialTopicId});
+
+  /// Oldindan tanlangan mavzu (asosiy id; masalan «Darslar» dan). Ilova
+  /// tilidagi variant (`~ru`/`~en`) bo‘lsa — shu, aks holda asl o‘zbekcha.
+  final String? initialTopicId;
 
   @override
   Widget build(BuildContext context) =>
-      const ClassTeacherGate(child: _CreateBody());
+      ClassTeacherGate(child: _CreateBody(initialTopicId: initialTopicId));
 }
 
 class _CreateBody extends ConsumerStatefulWidget {
-  const _CreateBody();
+  const _CreateBody({this.initialTopicId});
+
+  final String? initialTopicId;
 
   @override
   ConsumerState<_CreateBody> createState() => _CreateBodyState();
@@ -34,6 +40,7 @@ class _CreateBody extends ConsumerStatefulWidget {
 
 class _CreateBodyState extends ConsumerState<_CreateBody> {
   String? _topicId;
+  bool _initialApplied = false;
   String _query = '';
   var _settings = const ClassQuizSettings();
   bool _busy = false;
@@ -71,6 +78,19 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
     final topics = ref.watch(classTopicsProvider);
     final list = topics.value?.value ?? const <ClassTopic>[];
     final lang = Localizations.localeOf(context).languageCode;
+    final initial = widget.initialTopicId;
+    if (!_initialApplied && initial != null && list.isNotEmpty) {
+      _initialApplied = true;
+      final base = ClassQuizBank.baseId(initial);
+      final variants = {
+        for (final x in list)
+          if (ClassQuizBank.baseId(x.id) == base)
+            ClassQuizBank.variantLang(x.id): x,
+      };
+      final pick =
+          variants[lang] ?? variants['uz'] ?? variants.values.firstOrNull;
+      if (pick != null) _topicId = pick.id;
+    }
     final bank = ref.watch(classQuizBankProvider).value ?? ClassQuizBank.empty;
     final selected = list.where((x) => x.id == _topicId).firstOrNull;
     final maxQ = selected == null

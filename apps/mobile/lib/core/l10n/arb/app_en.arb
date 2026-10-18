@@ -12675,7 +12675,7 @@
   "@lessonsTitle": {"description": "Teacher panel card and screen title: lecture presentations."},
   "lessonsTeacherBody": "Lecture presentations — view and projector only",
   "@lessonsTeacherBody": {"description": "Teacher panel card subtitle."},
-  "lessonsSearchHint": "Search by lesson or slide text",
+  "lessonsSearchHint": "Search lessons",
   "@lessonsSearchHint": {"description": "Search field hint."},
   "lessonsSearchClear": "Clear search",
   "@lessonsSearchClear": {"description": "Tooltip."},
@@ -12722,5 +12722,9 @@
   "lessonViewerSlideLabel": "Slide {n}",
   "@lessonViewerSlideLabel": {"description": "Semantics label.", "placeholders": {"n": {"type": "int"}}},
   "lessonViewerHintNav": "Swipe or tap to move between slides",
-  "@lessonViewerHintNav": {"description": "Projector hint."}
+  "@lessonViewerHintNav": {"description": "Projector hint."},
+  "lessonQuizStart": "Start a quiz on this topic",
+  "@lessonQuizStart": {"description": "Button after a lesson: opens the class-quiz host flow with this topic preselected."},
+  "lessonQuizSoon": "Quiz questions for this topic will be added soon",
+  "@lessonQuizSoon": {"description": "Hint shown when the topic has no quiz yet."}
 }

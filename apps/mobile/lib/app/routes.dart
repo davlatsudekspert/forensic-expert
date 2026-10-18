@@ -183,6 +183,10 @@ abstract final class Routes {
   static const joinPrefix = '/join/';
   static const classQuiz = '/home/learn/class';
   static const classNew = '/home/learn/class/new';
+
+  /// Mavzu oldindan tanlangan holda (dars oxiridagi «test boshlash»).
+  static String classNewFor(String topicId) =>
+      Uri(path: classNew, queryParameters: {'topic': topicId}).toString();
   static String classHost(String id) =>
       '/home/learn/class/host/${Uri.encodeComponent(id)}';
   static const classJoin = '/home/learn/class/join';

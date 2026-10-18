@@ -285,7 +285,9 @@ final routerProvider = Provider<GoRouter>((ref) {
                           GoRoute(
                             path: 'new',
                             parentNavigatorKey: rootKey,
-                            builder: (c, s) => const ClassCreateScreen(),
+                            builder: (c, s) => ClassCreateScreen(
+                              initialTopicId: s.uri.queryParameters['topic'],
+                            ),
                           ),
                           GoRoute(
                             path: 'join',

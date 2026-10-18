@@ -9741,7 +9741,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Ma’ruza prezentatsiyalari — faqat ko‘rish va proyektor';
 
   @override
-  String get lessonsSearchHint => 'Dars yoki slayd matni bo‘yicha qidirish';
+  String get lessonsSearchHint => 'Darslar bo‘yicha qidirish';
 
   @override
   String get lessonsSearchClear => 'Qidiruvni tozalash';
@@ -9825,4 +9825,11 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get lessonViewerHintNav =>
       'Slaydlarni o‘tish uchun suring yoki bosing';
+
+  @override
+  String get lessonQuizStart => 'Shu mavzu bo‘yicha test boshlash';
+
+  @override
+  String get lessonQuizSoon =>
+      'Bu mavzu uchun test savollari tez orada qo‘shiladi';
 }

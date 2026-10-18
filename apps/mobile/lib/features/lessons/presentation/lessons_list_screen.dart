@@ -101,6 +101,7 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
                   TextField(
                     key: const Key('lessons.search'),
                     controller: _ctl,
+                    onTapOutside: (_) => FocusScope.of(context).unfocus(),
                     onChanged: _onChanged,
                     textInputAction: TextInputAction.search,
                     decoration: InputDecoration(
@@ -163,6 +164,7 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
         );
       }
       return ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         padding: const EdgeInsets.all(FeSpace.md),
         children: [FeListSkeleton(rows: 4, semanticLabel: l.lessonsTitle)],
       );
@@ -179,6 +181,7 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
     final groups = LessonGrouping.group(items);
     return ListView(
       key: const Key('lessons.list'),
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: EdgeInsets.only(
         bottom: FeSpace.lg + MediaQuery.paddingOf(context).bottom,
       ),

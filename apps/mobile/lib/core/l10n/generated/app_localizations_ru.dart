@@ -9828,7 +9828,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Лекционные презентации — только просмотр и проектор';
 
   @override
-  String get lessonsSearchHint => 'Поиск по уроку или тексту слайда';
+  String get lessonsSearchHint => 'Поиск по урокам';
 
   @override
   String get lessonsSearchClear => 'Очистить поиск';
@@ -9919,4 +9919,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get lessonViewerHintNav => 'Листайте или нажимайте для перехода';
+
+  @override
+  String get lessonQuizStart => 'Начать тест по этой теме';
+
+  @override
+  String get lessonQuizSoon =>
+      'Вопросы теста по этой теме скоро будут добавлены';
 }
