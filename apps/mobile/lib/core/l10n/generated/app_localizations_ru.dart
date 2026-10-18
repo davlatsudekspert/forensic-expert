@@ -9819,4 +9819,104 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get classParticipantWaiting => 'Ожидание';
+
+  @override
+  String get lessonsTitle => 'Уроки';
+
+  @override
+  String get lessonsTeacherBody =>
+      'Лекционные презентации — только просмотр и проектор';
+
+  @override
+  String get lessonsSearchHint => 'Поиск по уроку или тексту слайда';
+
+  @override
+  String get lessonsSearchClear => 'Очистить поиск';
+
+  @override
+  String lessonsSlideCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count слайда',
+      many: '$count слайдов',
+      few: '$count слайда',
+      one: '$count слайд',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lessonsEmpty => 'Пока нет уроков.';
+
+  @override
+  String lessonsNoMatch(String query) {
+    return 'По запросу «$query» ничего не найдено.';
+  }
+
+  @override
+  String get lessonsForbidden => 'Этот раздел только для преподавателей';
+
+  @override
+  String get lessonsRetry => 'Повторить';
+
+  @override
+  String get lessonsTranslationPending => 'перевод ожидается';
+
+  @override
+  String get lessonsOriginalUzNote =>
+      'Уроки пока на узбекском — перевод ожидается.';
+
+  @override
+  String get lessonViewerPrev => 'Предыдущий слайд';
+
+  @override
+  String get lessonViewerNext => 'Следующий слайд';
+
+  @override
+  String lessonViewerCounter(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get lessonViewerOutline => 'Список слайдов';
+
+  @override
+  String get lessonViewerNotes => 'Заметки преподавателя';
+
+  @override
+  String get lessonViewerNotesEmpty => 'Для этого слайда заметок нет.';
+
+  @override
+  String get lessonViewerProjector => 'Режим проектора';
+
+  @override
+  String get lessonViewerProjectorExit => 'Выйти из режима проектора';
+
+  @override
+  String lessonViewerSource(String source) {
+    return 'Источник: $source';
+  }
+
+  @override
+  String lessonViewerPage(String page) {
+    return 'стр. $page';
+  }
+
+  @override
+  String get lessonViewerReferences => 'Литература';
+
+  @override
+  String get lessonViewerExtras => 'Интересные факты';
+
+  @override
+  String get lessonViewerUncertain => 'Требует уточнения по источнику';
+
+  @override
+  String lessonViewerSlideLabel(int n) {
+    return 'Слайд $n';
+  }
+
+  @override
+  String get lessonViewerHintNav => 'Листайте или нажимайте для перехода';
 }

@@ -9732,4 +9732,97 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classParticipantWaiting => 'Kutilmoqda';
+
+  @override
+  String get lessonsTitle => 'Darslar';
+
+  @override
+  String get lessonsTeacherBody =>
+      'Ma’ruza prezentatsiyalari — faqat ko‘rish va proyektor';
+
+  @override
+  String get lessonsSearchHint => 'Dars yoki slayd matni bo‘yicha qidirish';
+
+  @override
+  String get lessonsSearchClear => 'Qidiruvni tozalash';
+
+  @override
+  String lessonsSlideCount(int count) {
+    return '$count ta slayd';
+  }
+
+  @override
+  String get lessonsEmpty => 'Hozircha darslar yo‘q.';
+
+  @override
+  String lessonsNoMatch(String query) {
+    return '«$query» bo‘yicha hech narsa topilmadi.';
+  }
+
+  @override
+  String get lessonsForbidden => 'Bu bo‘lim faqat ustozlar uchun';
+
+  @override
+  String get lessonsRetry => 'Qayta urinish';
+
+  @override
+  String get lessonsTranslationPending => 'tarjima kutilmoqda';
+
+  @override
+  String get lessonsOriginalUzNote =>
+      'Darslar hozircha o‘zbek tilida — tarjima kutilmoqda.';
+
+  @override
+  String get lessonViewerPrev => 'Oldingi slayd';
+
+  @override
+  String get lessonViewerNext => 'Keyingi slayd';
+
+  @override
+  String lessonViewerCounter(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get lessonViewerOutline => 'Slaydlar ro‘yxati';
+
+  @override
+  String get lessonViewerNotes => 'Ustoz eslatmalari';
+
+  @override
+  String get lessonViewerNotesEmpty => 'Bu slayd uchun eslatma yo‘q.';
+
+  @override
+  String get lessonViewerProjector => 'Proyektor rejimi';
+
+  @override
+  String get lessonViewerProjectorExit => 'Proyektordan chiqish';
+
+  @override
+  String lessonViewerSource(String source) {
+    return 'Manba: $source';
+  }
+
+  @override
+  String lessonViewerPage(String page) {
+    return 'bet $page';
+  }
+
+  @override
+  String get lessonViewerReferences => 'Adabiyotlar';
+
+  @override
+  String get lessonViewerExtras => 'Qiziqarli ma’lumotlar';
+
+  @override
+  String get lessonViewerUncertain => 'Manba bo‘yicha aniqlashtirish kerak';
+
+  @override
+  String lessonViewerSlideLabel(int n) {
+    return 'Slayd $n';
+  }
+
+  @override
+  String get lessonViewerHintNav =>
+      'Slaydlarni o‘tish uchun suring yoki bosing';
 }

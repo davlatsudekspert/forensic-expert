@@ -58,6 +58,17 @@ class TeacherPanelScreen extends ConsumerWidget {
                     text: l.classErrNotConfigured,
                   )
                 else ...[
+                  if (teacher) ...[
+                    TeacherActionTile(
+                      key: const Key('teacher.lessons'),
+                      icon: Icons.slideshow_rounded,
+                      title: l.lessonsTitle,
+                      body: l.lessonsTeacherBody,
+                      primary: true,
+                      onTap: () => context.push(Routes.lessons),
+                    ),
+                    const SizedBox(height: FeSpace.sm),
+                  ],
                   TeacherActionTile(
                     key: const Key('teacher.run'),
                     icon: Icons.play_circle_outline_rounded,

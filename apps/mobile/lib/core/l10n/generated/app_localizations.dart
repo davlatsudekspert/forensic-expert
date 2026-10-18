@@ -17000,6 +17000,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Waiting'**
   String get classParticipantWaiting;
+
+  /// Teacher panel card and screen title: lecture presentations.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons'**
+  String get lessonsTitle;
+
+  /// Teacher panel card subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Lecture presentations — view and projector only'**
+  String get lessonsTeacherBody;
+
+  /// Search field hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by lesson or slide text'**
+  String get lessonsSearchHint;
+
+  /// Tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear search'**
+  String get lessonsSearchClear;
+
+  /// Slide count on a lesson row.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{{count} slide} other{{count} slides}}'**
+  String lessonsSlideCount(int count);
+
+  /// Empty list.
+  ///
+  /// In en, this message translates to:
+  /// **'No lessons yet.'**
+  String get lessonsEmpty;
+
+  /// No search results.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing found for “{query}”.'**
+  String lessonsNoMatch(String query);
+
+  /// Friendly forbidden message.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is for teachers only'**
+  String get lessonsForbidden;
+
+  /// Retry button.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get lessonsRetry;
+
+  /// Small label: content is shown in the original Uzbek.
+  ///
+  /// In en, this message translates to:
+  /// **'translation pending'**
+  String get lessonsTranslationPending;
+
+  /// Note on the list when UI language is not Uzbek.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons are in Uzbek for now — translation pending.'**
+  String get lessonsOriginalUzNote;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous slide'**
+  String get lessonViewerPrev;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Next slide'**
+  String get lessonViewerNext;
+
+  /// Slide counter.
+  ///
+  /// In en, this message translates to:
+  /// **'{current} / {total}'**
+  String lessonViewerCounter(int current, int total);
+
+  /// Button and sheet title.
+  ///
+  /// In en, this message translates to:
+  /// **'Slide list'**
+  String get lessonViewerOutline;
+
+  /// Toggle and heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher notes'**
+  String get lessonViewerNotes;
+
+  /// Empty notes.
+  ///
+  /// In en, this message translates to:
+  /// **'No notes for this slide.'**
+  String get lessonViewerNotesEmpty;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Projector mode'**
+  String get lessonViewerProjector;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Exit projector mode'**
+  String get lessonViewerProjectorExit;
+
+  /// Per-slide source line.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {source}'**
+  String lessonViewerSource(String source);
+
+  /// Page in a source line.
+  ///
+  /// In en, this message translates to:
+  /// **'p. {page}'**
+  String lessonViewerPage(String page);
+
+  /// Final slide title.
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get lessonViewerReferences;
+
+  /// Extras slide title.
+  ///
+  /// In en, this message translates to:
+  /// **'Interesting facts'**
+  String get lessonViewerExtras;
+
+  /// Marker for an uncertain bullet.
+  ///
+  /// In en, this message translates to:
+  /// **'Needs verification against the source'**
+  String get lessonViewerUncertain;
+
+  /// Semantics label.
+  ///
+  /// In en, this message translates to:
+  /// **'Slide {n}'**
+  String lessonViewerSlideLabel(int n);
+
+  /// Projector hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe or tap to move between slides'**
+  String get lessonViewerHintNav;
 }
 
 class _AppLocalizationsDelegate
