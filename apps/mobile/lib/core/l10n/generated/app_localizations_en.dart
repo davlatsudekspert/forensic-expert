@@ -9768,4 +9768,102 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classParticipantWaiting => 'Waiting';
+
+  @override
+  String get lessonsTitle => 'Lessons';
+
+  @override
+  String get lessonsTeacherBody =>
+      'Lecture presentations — view and projector only';
+
+  @override
+  String get lessonsSearchHint => 'Search by lesson or slide text';
+
+  @override
+  String get lessonsSearchClear => 'Clear search';
+
+  @override
+  String lessonsSlideCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count slides',
+      one: '$count slide',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lessonsEmpty => 'No lessons yet.';
+
+  @override
+  String lessonsNoMatch(String query) {
+    return 'Nothing found for “$query”.';
+  }
+
+  @override
+  String get lessonsForbidden => 'This section is for teachers only';
+
+  @override
+  String get lessonsRetry => 'Try again';
+
+  @override
+  String get lessonsTranslationPending => 'translation pending';
+
+  @override
+  String get lessonsOriginalUzNote =>
+      'Lessons are in Uzbek for now — translation pending.';
+
+  @override
+  String get lessonViewerPrev => 'Previous slide';
+
+  @override
+  String get lessonViewerNext => 'Next slide';
+
+  @override
+  String lessonViewerCounter(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get lessonViewerOutline => 'Slide list';
+
+  @override
+  String get lessonViewerNotes => 'Teacher notes';
+
+  @override
+  String get lessonViewerNotesEmpty => 'No notes for this slide.';
+
+  @override
+  String get lessonViewerProjector => 'Projector mode';
+
+  @override
+  String get lessonViewerProjectorExit => 'Exit projector mode';
+
+  @override
+  String lessonViewerSource(String source) {
+    return 'Source: $source';
+  }
+
+  @override
+  String lessonViewerPage(String page) {
+    return 'p. $page';
+  }
+
+  @override
+  String get lessonViewerReferences => 'References';
+
+  @override
+  String get lessonViewerExtras => 'Interesting facts';
+
+  @override
+  String get lessonViewerUncertain => 'Needs verification against the source';
+
+  @override
+  String lessonViewerSlideLabel(int n) {
+    return 'Slide $n';
+  }
+
+  @override
+  String get lessonViewerHintNav => 'Swipe or tap to move between slides';
 }

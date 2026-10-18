@@ -196,6 +196,11 @@ abstract final class Routes {
   static const teacher = '/home/teacher';
   static const teacherResults = '/home/teacher/results';
 
+  /// «Darslar» (ustoz): ro‘yxat va bitta darsni ko‘rish.
+  static const lessons = '/home/teacher/lessons';
+  static String lesson(String topicId) =>
+      '/home/teacher/lessons/${Uri.encodeComponent(topicId)}';
+
   // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
   static const accountSignIn = '/profile/account/sign-in';
   static const accountRegister = '/profile/account/register';
