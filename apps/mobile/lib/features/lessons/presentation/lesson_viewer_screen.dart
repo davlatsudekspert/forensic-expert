@@ -104,6 +104,12 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
   List<LessonPage>? _pages;
   Locale? _pagesLocale;
 
+  /// Proyektor boshqaruvlari (chiqish, oldingi/keyingi): ~3 s dan keyin
+  /// yashiriladi, ekranga bosilganda qayta ko‘rinadi.
+  bool _controls = true;
+  Timer? _hideTimer;
+  static const _hideAfter = Duration(seconds: 3);
+
   @override
   void initState() {
     super.initState();
@@ -116,6 +122,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
   @override
   void dispose() {
     _guard.release();
+    _hideTimer?.cancel();
     if (_projector) _awake.disable();
     if (_forcedLandscape) _orientation.restore();
     _pc.dispose();
@@ -148,9 +155,18 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
     WidgetsBinding.instance.addPostFrameCallback((_) => old.dispose());
   }
 
+  void _showControls() {
+    _hideTimer?.cancel();
+    if (!_controls) setState(() => _controls = true);
+    _hideTimer = Timer(_hideAfter, () {
+      if (mounted) setState(() => _controls = false);
+    });
+  }
+
   void _enterProjector() {
     _resetController();
     setState(() => _projector = true);
+    _showControls();
     unawaited(_awake.enable());
     WidgetsBinding.instance.addPostFrameCallback(
       (_) => unawaited(_askLandscape()),
@@ -158,6 +174,8 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
   }
 
   void _exitProjector() {
+    _hideTimer?.cancel();
+    _controls = true;
     _awake.disable();
     if (_forcedLandscape) {
       _forcedLandscape = false;
@@ -201,6 +219,12 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
 
   Future<void> _openOutline(List<LessonPage> pages) async {
     final l = AppLocalizations.of(context);
+    // Bo‘lingan slayd ro‘yxatda bir marta (birinchi sahifasi).
+    final entries = [
+      for (var i = 0; i < pages.length; i++)
+        if (pages[i].part == 1) i,
+    ];
+    final current = pages[_index].group;
     final picked = await showModalBottomSheet<int>(
       context: context,
       isScrollControlled: true,
@@ -232,18 +256,21 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
                 child: ListView.builder(
                   key: const Key('lesson.outline'),
                   shrinkWrap: true,
-                  itemCount: pages.length,
-                  itemBuilder: (c, i) => ListTile(
-                    key: Key('lesson.outline.$i'),
-                    selected: i == _index,
-                    leading: Text((i + 1).toString()),
-                    title: Text(
-                      pages[i].title,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    onTap: () => c.pop(i),
-                  ),
+                  itemCount: entries.length,
+                  itemBuilder: (c, e) {
+                    final i = entries[e];
+                    return ListTile(
+                      key: Key('lesson.outline.$e'),
+                      selected: pages[i].group == current,
+                      leading: Text((i + 1).toString()),
+                      title: Text(
+                        pages[i].baseTitle,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      onTap: () => c.pop(i),
+                    );
+                  },
                 ),
               ),
             ],
@@ -283,17 +310,30 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
     return KeyEventResult.ignored;
   }
 
-  PageView _pageView(List<LessonPage> pages, {required bool projector}) =>
-      PageView.builder(
-        key: Key(projector ? 'lesson.pages.projector' : 'lesson.pages'),
-        controller: _pc,
-        itemCount: pages.length,
-        onPageChanged: (i) => setState(() => _index = i),
-        itemBuilder: (c, i) => Semantics(
-          label: AppLocalizations.of(c).lessonViewerSlideLabel(i + 1),
-          child: LessonSlideView(page: pages[i], projector: projector),
+  PageView _pageView(
+    List<LessonPage> pages, {
+    required bool projector,
+    Widget? lastAction,
+  }) => PageView.builder(
+    key: Key(projector ? 'lesson.pages.projector' : 'lesson.pages'),
+    controller: _pc,
+    itemCount: pages.length,
+    onPageChanged: (i) => setState(() => _index = i),
+    itemBuilder: (c, i) {
+      final l = AppLocalizations.of(c);
+      return Semantics(
+        label: l.lessonViewerSlideLabel(i + 1),
+        child: LessonSlideView(
+          page: pages[i],
+          projector: projector,
+          counter: projector
+              ? l.lessonViewerCounter(i + 1, pages.length)
+              : null,
+          action: i == pages.length - 1 ? lastAction : null,
         ),
       );
+    },
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -429,58 +469,162 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
 
   Widget _projectorBody(BuildContext context, List<LessonPage> pages) {
     final l = AppLocalizations.of(context);
+    final quizReady = ref.watch(
+      lessonQuizAvailableProvider(widget.deck.deckId),
+    );
     return Theme(
       data: FeThemeBuilder.dark(),
       child: Builder(
         builder: (context) {
           final c = FeTheme.of(context);
           final last = pages.length - 1;
+          Widget control(Widget child) => IgnorePointer(
+            ignoring: !_controls,
+            child: AnimatedOpacity(
+              opacity: _controls ? 1 : 0,
+              duration: const Duration(milliseconds: 200),
+              child: child,
+            ),
+          );
           return Scaffold(
             key: const Key('lesson.projector'),
             backgroundColor: c.background,
             body: SafeArea(
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                    child: GestureDetector(
-                      behavior: HitTestBehavior.translucent,
-                      onTapUp: (d) {
-                        final w = MediaQuery.sizeOf(context).width;
-                        if (d.localPosition.dx < w / 3) {
-                          _go(_index - 1, pages.length);
-                        } else {
-                          _go(_index + 1, pages.length);
-                        }
-                      },
-                      child: _pageView(pages, projector: true),
+              child: LayoutBuilder(
+                builder: (context, box) => Stack(
+                  children: [
+                    Positioned.fill(
+                      // Chap yarmi — oldingi, o‘ng yarmi — keyingi sahifa;
+                      // har bosish boshqaruvlarni qayta ko‘rsatadi.
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.translucent,
+                        onTapUp: (d) {
+                          _showControls();
+                          if (d.localPosition.dx < box.maxWidth / 2) {
+                            _go(_index - 1, pages.length);
+                          } else {
+                            _go(_index + 1, pages.length);
+                          }
+                        },
+                        child: _pageView(
+                          pages,
+                          projector: true,
+                          lastAction: _ProjectorQuiz(
+                            ready: quizReady,
+                            onStart: _startQuiz,
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
-                  PositionedDirectional(
-                    top: 4,
-                    end: 4,
-                    child: IconButton(
-                      key: const Key('lesson.projectorExit'),
-                      tooltip: l.lessonViewerProjectorExit,
-                      icon: const Icon(Icons.close_rounded),
-                      color: c.textSecondary,
-                      onPressed: _exitProjector,
+                    PositionedDirectional(
+                      top: 4,
+                      end: 4,
+                      child: control(
+                        IconButton(
+                          key: const Key('lesson.projectorExit'),
+                          tooltip: l.lessonViewerProjectorExit,
+                          icon: const Icon(Icons.close_rounded),
+                          color: c.textSecondary,
+                          onPressed: _exitProjector,
+                        ),
+                      ),
                     ),
-                  ),
-                  PositionedDirectional(
-                    bottom: 8,
-                    end: 16,
-                    child: Text(
-                      l.lessonViewerCounter(_index + 1, last + 1),
-                      key: const Key('lesson.counter'),
-                      style: TextStyle(color: c.textSecondary, fontSize: 14),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 8,
+                      child: Center(
+                        child: control(
+                          DecoratedBox(
+                            decoration: BoxDecoration(
+                              color: c.surfaceRaised.withValues(alpha: 0.85),
+                              borderRadius: BorderRadius.circular(FeRadius.md),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                IconButton(
+                                  key: const Key('lesson.projectorPrev'),
+                                  tooltip: l.lessonViewerPrev,
+                                  icon: const Icon(Icons.chevron_left_rounded),
+                                  color: c.textSecondary,
+                                  onPressed: _index > 0
+                                      ? () {
+                                          _showControls();
+                                          _go(_index - 1, pages.length);
+                                        }
+                                      : null,
+                                ),
+                                IconButton(
+                                  key: const Key('lesson.projectorNext'),
+                                  tooltip: l.lessonViewerNext,
+                                  icon: const Icon(Icons.chevron_right_rounded),
+                                  color: c.textSecondary,
+                                  onPressed: _index < last
+                                      ? () {
+                                          _showControls();
+                                          _go(_index + 1, pages.length);
+                                        }
+                                      : null,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           );
         },
       ),
+    );
+  }
+}
+
+/// Proyektor kanvasidagi (oxirgi sahifa, pastki o‘ng) test tugmasi —
+/// kanvas dizayn o‘lchamlarida (1280×720 ga nisbatan).
+class _ProjectorQuiz extends StatelessWidget {
+  const _ProjectorQuiz({required this.ready, required this.onStart});
+
+  final bool ready;
+  final VoidCallback onStart;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: [
+        FilledButton.icon(
+          key: const Key('lesson.quizStart'),
+          onPressed: ready ? onStart : null,
+          style: FilledButton.styleFrom(
+            minimumSize: const Size(0, 60),
+            padding: const EdgeInsets.symmetric(horizontal: 28),
+            textStyle: const TextStyle(
+              fontFamily: FeFonts.sans,
+              fontSize: 22,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          icon: const Icon(Icons.quiz_outlined, size: 26),
+          label: Text(l.lessonQuizStart),
+        ),
+        if (!ready)
+          Padding(
+            padding: const EdgeInsets.only(top: 6),
+            child: Text(
+              l.lessonQuizSoon,
+              key: const Key('lesson.quizSoon'),
+              style: TextStyle(fontSize: 18, color: c.textSecondary),
+            ),
+          ),
+      ],
     );
   }
 }

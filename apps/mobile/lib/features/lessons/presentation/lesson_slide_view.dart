@@ -4,11 +4,12 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/lessons/lesson_models.dart';
+import 'lesson_canvas.dart';
 
 enum LessonPageKind { slide, extras, references }
 
-/// Ko‘rish oynasidagi bitta sahifa: slayd, «Qiziqarli ma’lumotlar» yoki
-/// «Adabiyotlar».
+/// Ko‘rish oynasidagi bitta sahifa: slayd (yoki uning davomi), «Qiziqarli
+/// ma’lumotlar» yoki «Adabiyotlar».
 class LessonPage {
   const LessonPage({
     required this.kind,
@@ -17,19 +18,38 @@ class LessonPage {
     this.diagram,
     this.notes = '',
     this.sources = const [],
+    this.group = 0,
+    this.part = 1,
+    this.parts = 1,
+    this.originalTitle,
   });
 
   final LessonPageKind kind;
+
+  /// Ko‘rsatiladigan sarlavha (davom sahifasida «… · 2/3»).
   final String title;
   final List<LessonBullet> bullets;
   final LessonDiagram? diagram;
   final String notes;
 
-  /// Slayd manbalari (kitob bo‘yicha guruhlangan).
+  /// Shu sahifadagi bandlarning manbalari (kitob bo‘yicha guruhlangan).
   final List<LessonSourceGroup> sources;
+
+  /// Asl slayd tartib raqami (davom sahifalari bir guruhda).
+  final int group;
+
+  /// Guruh ichidagi qism (1 dan) va qismlar soni.
+  final int part;
+  final int parts;
+
+  /// Bo‘lingan slaydning asl sarlavhasi (qism belgisisiz).
+  final String? originalTitle;
+
+  /// Asl slayd sarlavhasi — ro‘yxat uchun.
+  String get baseTitle => originalTitle ?? title;
 }
 
-/// Bir kitobning shu slayddagi betlari.
+/// Bir kitobning shu sahifadagi betlari.
 class LessonSourceGroup {
   const LessonSourceGroup(this.author, this.title, this.pages);
 
@@ -38,38 +58,54 @@ class LessonSourceGroup {
   final List<String> pages;
 }
 
+List<LessonSourceGroup> _sourceGroups(Iterable<LessonBullet> bullets) {
+  final groups = <String, LessonSourceGroup>{};
+  for (final b in bullets) {
+    final src = b.source;
+    if (src.isEmpty) continue;
+    final k = '${src.author}|${src.title}';
+    final g = groups[k];
+    if (g == null) {
+      groups[k] = LessonSourceGroup(src.author, src.title, [
+        if (src.page.isNotEmpty) src.page,
+      ]);
+    } else if (src.page.isNotEmpty && !g.pages.contains(src.page)) {
+      g.pages.add(src.page);
+    }
+  }
+  return groups.values.toList();
+}
+
 /// Dars → sahifalar. Slaydlar, so‘ng (bo‘lsa) «Qiziqarli ma’lumotlar», oxirida
 /// «Adabiyotlar» (manbalar bo‘lsa).
+///
+/// Uzun slayd 1280×720 kanvasga [LessonCanvasMetrics.minBody] px asosiy matn
+/// bilan sig‘masa, davom sahifalariga bo‘linadi («Sarlavha · 2/3»):
+/// bandlar chegarasida (bitta juda uzun band — jumlalar bo‘yicha), jadval yoki
+/// sxema bandlar bilan sig‘masa — alohida sahifada (jadval qatorlari bo‘yicha,
+/// sarlavha qatori takrorlanadi). Har sahifa manbasi — o‘z bandlariniki.
+/// Bo‘lish deterministik: o‘lchov [TextPainter] bilan, kanvas chizadigan
+/// uslubning aynan o‘zida. Telefon rejimi ham shu sahifalarni ko‘rsatadi.
 List<LessonPage> buildLessonPages(LessonDeck d, AppLocalizations l) {
-  final pages = <LessonPage>[];
+  final b = _PageBuilder(l);
+  final groups = <List<LessonPage>>[];
   for (var i = 0; i < d.slides.length; i++) {
     final s = d.slides[i];
-    final groups = <String, LessonSourceGroup>{};
-    for (final src in s.sources) {
-      final k = '${src.author}|${src.title}';
-      final g = groups[k];
-      if (g == null) {
-        groups[k] = LessonSourceGroup(src.author, src.title, [
-          if (src.page.isNotEmpty) src.page,
-        ]);
-      } else if (src.page.isNotEmpty && !g.pages.contains(src.page)) {
-        g.pages.add(src.page);
-      }
-    }
-    pages.add(
-      LessonPage(
+    groups.add(
+      b.slide(
+        group: i,
         kind: LessonPageKind.slide,
         title: s.title.isEmpty ? l.lessonViewerSlideLabel(i + 1) : s.title,
         bullets: s.bullets,
         diagram: s.diagram,
         notes: s.teacherNotes,
-        sources: groups.values.toList(),
       ),
     );
   }
   if (d.extras.isNotEmpty) {
-    pages.add(
-      LessonPage(
+    groups.add(
+      b.slide(
+        group: groups.length,
         kind: LessonPageKind.extras,
         title: l.lessonViewerExtras,
         bullets: [
@@ -84,13 +120,247 @@ List<LessonPage> buildLessonPages(LessonDeck d, AppLocalizations l) {
       if (r.line.isNotEmpty) r.line,
   ];
   if (refs.isNotEmpty) {
-    pages.add(
-      LessonPage(
+    groups.add(
+      b.slide(
+        group: groups.length,
         kind: LessonPageKind.references,
         title: l.lessonViewerReferences,
         bullets: [for (final r in refs) LessonBullet(text: r)],
       ),
     );
+  }
+  // Oxirgi sahifada proyektorda test tugmasi bor — joy ajratiladi.
+  if (groups.isNotEmpty && !b.fitsWithAction(groups.last.last)) {
+    final g = groups.removeLast();
+    final f = g.first;
+    groups.add(
+      b.slide(
+        group: f.group,
+        kind: f.kind,
+        title: f.baseTitle,
+        bullets: [for (final p in g) ...p.bullets],
+        diagram: _mergeDiagram(g),
+        notes: f.notes,
+        action: true,
+      ),
+    );
+  }
+  return [for (final g in groups) ...g];
+}
+
+/// Bo‘lingan jadval qismlarini qayta birlashtiradi.
+LessonDiagram? _mergeDiagram(List<LessonPage> g) {
+  final ds = [
+    for (final p in g)
+      if (p.diagram != null) p.diagram!,
+  ];
+  if (ds.isEmpty) return null;
+  if (ds.length == 1) return ds.first;
+  return LessonDiagram(
+    kind: ds.first.kind,
+    header: ds.first.header,
+    caption: ds.last.caption,
+    rows: [for (final x in ds) ...x.rows],
+    nodes: ds.first.nodes,
+  );
+}
+
+class _PageBuilder {
+  _PageBuilder(this.l);
+
+  final AppLocalizations l;
+  final m = LessonCanvasMeasurer();
+
+  bool _fits(
+    LessonPage p,
+    double body, {
+    bool action = false,
+    List<LessonSourceGroup>? sources,
+  }) => LessonCanvasLayout.fitsAt(
+    p,
+    body,
+    lessonSourceLine(l, sources ?? _sourceGroups(p.bullets)),
+    m,
+    action: action,
+  );
+
+  bool fitsWithAction(LessonPage p) =>
+      _fits(p, LessonCanvasMetrics.minBody, action: true, sources: p.sources);
+
+  List<LessonPage> slide({
+    required int group,
+    required LessonPageKind kind,
+    required String title,
+    required List<LessonBullet> bullets,
+    LessonDiagram? diagram,
+    String notes = '',
+    bool action = false,
+  }) {
+    LessonPage page(String t, List<LessonBullet> bs, [LessonDiagram? dg]) =>
+        LessonPage(kind: kind, title: t, bullets: bs, diagram: dg);
+
+    // 1) Butunligicha sig‘sa — bitta sahifa.
+    final whole = page(title, bullets, diagram);
+    if (_fits(whole, LessonCanvasMetrics.minBody, action: action)) {
+      return [
+        LessonPage(
+          kind: kind,
+          title: title,
+          bullets: bullets,
+          diagram: diagram,
+          notes: notes,
+          sources: _sourceGroups(bullets),
+          group: group,
+        ),
+      ];
+    }
+
+    // 2) Bo‘lish: qulay o‘lchamda (packBody), sarlavha eng uzun qism belgisi
+    // bilan o‘lchanadi.
+    const pack = LessonCanvasMetrics.packBody;
+    final probe = '$title · 88/88';
+    // Faqat jadval/sxema sahifasi slaydning barcha manbalarini ko‘rsatadi.
+    final allSources = _sourceGroups(bullets);
+    bool fitsBullets(List<LessonBullet> bs, [LessonDiagram? dg]) => _fits(
+      page(probe, bs, dg),
+      pack,
+      action: action,
+      sources: bs.isEmpty ? allSources : null,
+    );
+
+    final atoms = <LessonBullet>[
+      for (final b in bullets)
+        if (fitsBullets([b])) b else ..._splitBullet(b, fitsBullets),
+    ];
+    final chunks = <({List<LessonBullet> bullets, LessonDiagram? diagram})>[
+      for (final c in _paginate(atoms, fitsBullets, (b) => b.text.length))
+        (bullets: c, diagram: null),
+    ];
+    if (diagram != null) {
+      final lastBullets = chunks.isEmpty ? null : chunks.last.bullets;
+      if (lastBullets != null && fitsBullets(lastBullets, diagram)) {
+        chunks.last = (bullets: lastBullets, diagram: diagram);
+      } else if (diagram.kind == LessonDiagramKind.table &&
+          !fitsBullets(const [], diagram)) {
+        final rowChunks = _paginate<List<String>>(
+          diagram.rows,
+          (rows) => fitsBullets(const [], _rows(diagram, rows, false)),
+          (r) => r.fold(0, (a, c) => a + c.length),
+        );
+        for (var i = 0; i < rowChunks.length; i++) {
+          chunks.add((
+            bullets: const [],
+            diagram: _rows(diagram, rowChunks[i], i == rowChunks.length - 1),
+          ));
+        }
+      } else {
+        chunks.add((bullets: const [], diagram: diagram));
+      }
+    }
+    final n = chunks.length;
+    return [
+      for (var i = 0; i < n; i++)
+        LessonPage(
+          kind: kind,
+          title: n > 1 ? '$title · ${i + 1}/$n' : title,
+          originalTitle: title,
+          bullets: chunks[i].bullets,
+          diagram: chunks[i].diagram,
+          notes: notes,
+          // Faqat jadval/sxema sahifasi — slaydning manbalari (jadval shu
+          // slayd manbalaridan); qolganlari — o‘z bandlarining manbalari.
+          sources: chunks[i].bullets.isEmpty
+              ? allSources
+              : _sourceGroups(chunks[i].bullets),
+          group: group,
+          part: i + 1,
+          parts: n,
+        ),
+    ];
+  }
+
+  static LessonDiagram _rows(
+    LessonDiagram d,
+    List<List<String>> rows,
+    bool last,
+  ) => LessonDiagram(
+    kind: d.kind,
+    header: d.header,
+    rows: rows,
+    caption: last ? d.caption : '',
+  );
+
+  /// Bitta juda uzun band: jumlalar, kerak bo‘lsa so‘zlar bo‘yicha.
+  static List<LessonBullet> _splitBullet(
+    LessonBullet b,
+    bool Function(List<LessonBullet>) fits,
+  ) {
+    LessonBullet part(String t) =>
+        LessonBullet(text: t, source: b.source, uncertain: b.uncertain);
+    bool ok(String t) => fits([part(t)]);
+    final sentences = b.text
+        .split(RegExp(r'(?<=[.!?;])\s+'))
+        .where((e) => e.isNotEmpty)
+        .toList();
+    final units = <String>[
+      for (final s in sentences)
+        if (ok(s)) s else ..._greedy(s.split(RegExp(r'\s+')), ok),
+    ];
+    return [for (final t in _greedy(units, ok)) part(t)];
+  }
+
+  static List<String> _greedy(List<String> units, bool Function(String) ok) {
+    final out = <String>[];
+    var cur = '';
+    for (final u in units) {
+      final next = cur.isEmpty ? u : '$cur $u';
+      if (cur.isEmpty || ok(next)) {
+        cur = next;
+      } else {
+        out.add(cur);
+        cur = u;
+      }
+    }
+    if (cur.isNotEmpty) out.add(cur);
+    return out;
+  }
+}
+
+/// Ochko‘z bo‘lish + muvozanat: oxirgi sahifa juda bo‘sh qolmasin
+/// (oldingi sahifadan elementlar ko‘chiriladi, sig‘ish saqlanadi).
+List<List<T>> _paginate<T>(
+  List<T> items,
+  bool Function(List<T>) fits,
+  int Function(T) weight,
+) {
+  final pages = <List<T>>[];
+  var cur = <T>[];
+  for (final it in items) {
+    final next = [...cur, it];
+    if (cur.isEmpty || fits(next)) {
+      cur = next;
+    } else {
+      pages.add(cur);
+      cur = [it];
+    }
+  }
+  if (cur.isNotEmpty) pages.add(cur);
+  int sum(List<T> xs) => xs.fold(0, (a, x) => a + weight(x));
+  for (var pass = 0; pass < 3; pass++) {
+    var moved = false;
+    for (var k = pages.length - 1; k > 0; k--) {
+      while (pages[k - 1].length > 1) {
+        final prev = pages[k - 1];
+        final it = prev.last;
+        if (sum(prev) - sum(pages[k]) <= weight(it)) break;
+        final cand = [it, ...pages[k]];
+        if (!fits(cand)) break;
+        prev.removeLast();
+        pages[k] = cand;
+        moved = true;
+      }
+    }
+    if (!moved) break;
   }
   return pages;
 }
@@ -110,33 +380,41 @@ String lessonSourceLine(AppLocalizations l, List<LessonSourceGroup> groups) {
 }
 
 /// Slaydni mahalliy (native) chizadi. Matn tanlanmaydi, nusxalash/ulashish
-/// yo‘q. [projector] — katta matn, qorong‘i fon bilan mos o‘lchamlar.
+/// yo‘q. [projector] — 1280×720 kanvas ([LessonCanvas]): sahifa har doim
+/// bitta ekranga to‘liq sig‘adi; aks holda telefon uchun o‘qiladigan,
+/// siljitiladigan ko‘rinish (tizim matn masshtabi qo‘llanadi).
 class LessonSlideView extends StatelessWidget {
   const LessonSlideView({
     super.key,
     required this.page,
     this.projector = false,
+    this.counter,
+    this.action,
   });
 
   final LessonPage page;
   final bool projector;
 
+  /// Proyektor: kanvas burchagidagi «3 / 12».
+  final String? counter;
+
+  /// Proyektor: oxirgi sahifadagi tugma (pastki o‘ng burchak).
+  final Widget? action;
+
   @override
   Widget build(BuildContext context) {
+    if (projector) {
+      return LessonCanvas(page: page, counter: counter, action: action);
+    }
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     return LayoutBuilder(
       builder: (context, box) {
-        final shortest = box.biggest.shortestSide;
         final w = box.maxWidth;
-        // Proyektor: ekran o‘lchamiga mutanosib matn; telefon: o‘qiladigan
-        // standart o‘lcham (tizim matn masshtabi qo‘llanadi).
-        final body = projector
-            ? (shortest * 0.05).clamp(17.0, 44.0)
-            : (w >= 700 ? 20.0 : 16.0);
-        final title = body * (projector ? 1.45 : 1.3);
+        final body = w >= 700 ? 20.0 : 16.0;
+        final title = body * 1.3;
         final small = (body * 0.62).clamp(12.0, 24.0);
-        final pad = projector ? (w * 0.04).clamp(16.0, 72.0) : FeSpace.md;
+        const pad = FeSpace.md;
         final wide = w >= 840 && page.diagram != null;
         final srcLine = lessonSourceLine(l, page.sources);
 
@@ -157,11 +435,7 @@ class LessonSlideView extends StatelessWidget {
         );
         final diagram = page.diagram == null
             ? null
-            : _DiagramView(
-                diagram: page.diagram!,
-                size: body * 0.85,
-                projector: projector,
-              );
+            : _DiagramView(diagram: page.diagram!, size: body * 0.85);
 
         final content = Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -174,7 +448,7 @@ class LessonSlideView extends StatelessWidget {
                   fontSize: title,
                   height: 1.2,
                   fontWeight: FontWeight.w700,
-                  color: projector ? c.accent : c.textPrimary,
+                  color: c.textPrimary,
                 ),
               ),
             ),
@@ -184,7 +458,7 @@ class LessonSlideView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(flex: 3, child: bullets),
-                  SizedBox(width: pad),
+                  const SizedBox(width: pad),
                   Expanded(flex: 2, child: diagram!),
                 ],
               )
@@ -198,19 +472,19 @@ class LessonSlideView extends StatelessWidget {
           children: [
             Expanded(
               child: SingleChildScrollView(
-                padding: EdgeInsets.fromLTRB(pad, pad, pad, FeSpace.sm),
+                padding: const EdgeInsets.fromLTRB(pad, pad, pad, FeSpace.sm),
                 child: content,
               ),
             ),
             if (srcLine.isNotEmpty)
               Padding(
-                padding: EdgeInsets.fromLTRB(pad, 0, pad, FeSpace.xs),
+                padding: const EdgeInsets.fromLTRB(pad, 0, pad, FeSpace.xs),
                 child: Align(
                   alignment: AlignmentDirectional.centerStart,
                   child: Text(
                     srcLine,
                     key: const Key('lesson.source'),
-                    maxLines: projector ? 2 : 3,
+                    maxLines: 3,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontSize: small,
@@ -303,15 +577,10 @@ class _BulletRow extends StatelessWidget {
 
 /// Oddiy diagramma: jadval yoki ketma-ket qutilar (strelkalar bilan).
 class _DiagramView extends StatelessWidget {
-  const _DiagramView({
-    required this.diagram,
-    required this.size,
-    required this.projector,
-  });
+  const _DiagramView({required this.diagram, required this.size});
 
   final LessonDiagram diagram;
   final double size;
-  final bool projector;
 
   @override
   Widget build(BuildContext context) {

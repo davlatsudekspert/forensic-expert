@@ -319,6 +319,93 @@ void main() {
     expect(find.text('Ikkinchi slayd'), findsOneWidget);
   });
 
+  testWidgets(
+    'proyektor: oxirgi sahifada test tugmasi, boshqaruvlar yashirinadi, '
+    'chap/o‘ng yarmi',
+    (tester) async {
+      await open(
+        tester,
+        path: Routes.lesson('a1'),
+        size: const Size(1280, 720),
+        deckId: 'demo-topic',
+      );
+      await tester.tap(find.byKey(const Key('lesson.projectorButton')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('lesson.quizStart')), findsNothing);
+      expect(find.text('1 / 5'), findsOneWidget); // kanvas burchagida
+
+      // Boshqaruvlar ~3 s dan keyin yashirinadi, bosilganda qaytadi.
+      bool visible() => !tester
+          .widget<IgnorePointer>(
+            find
+                .ancestor(
+                  of: find.byKey(const Key('lesson.projectorExit')),
+                  matching: find.byType(IgnorePointer),
+                )
+                .first,
+          )
+          .ignoring;
+      expect(visible(), isTrue);
+      await tester.pump(const Duration(seconds: 4));
+      await tester.pumpAndSettle();
+      expect(visible(), isFalse);
+
+      // O‘ng yarmi — keyingi, chap yarmi — oldingi.
+      await tester.tapAt(const Offset(700, 360));
+      await tester.pumpAndSettle();
+      expect(find.text('Ikkinchi slayd'), findsOneWidget);
+      expect(visible(), isTrue);
+      await tester.tapAt(const Offset(600, 360));
+      await tester.pumpAndSettle();
+      expect(find.text('Birinchi slayd'), findsOneWidget);
+
+      // Klaviatura: Space/PgDn — keyingi; oxirgi sahifa — test tugmasi.
+      await tester.sendKeyEvent(LogicalKeyboardKey.space);
+      await tester.pumpAndSettle();
+      for (var i = 0; i < 3; i++) {
+        await tester.sendKeyEvent(LogicalKeyboardKey.pageDown);
+        await tester.pumpAndSettle();
+      }
+      // Oxirgi sahifa: hisoblagich o‘rnida test tugmasi.
+      expect(find.text('Adabiyotlar'), findsOneWidget);
+      expect(find.text('5 / 5'), findsNothing);
+      final btn = find.byKey(const Key('lesson.quizStart'));
+      expect(btn, findsOneWidget);
+      expect(tester.widget<FilledButton>(btn).onPressed, isNotNull);
+      final r = tester.getRect(btn);
+      expect(r.center.dx, greaterThan(640));
+      expect(r.center.dy, greaterThan(360));
+      expect(r.bottom, lessThanOrEqualTo(720));
+      expect(tester.takeException(), isNull);
+      await tester.sendKeyEvent(LogicalKeyboardKey.pageUp);
+      await tester.pumpAndSettle();
+      expect(find.text('4 / 5'), findsOneWidget);
+      await tester.sendKeyEvent(LogicalKeyboardKey.escape);
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('lesson.projector')), findsNothing);
+    },
+  );
+
+  testWidgets('proyektor: mavzu testi yo‘q — tugma o‘chirilgan, izohli', (
+    tester,
+  ) async {
+    await open(
+      tester,
+      path: Routes.lesson('a1'),
+      size: const Size(1280, 720),
+      deckId: 'hali-yoq',
+    );
+    await tester.tap(find.byKey(const Key('lesson.projectorButton')));
+    await tester.pumpAndSettle();
+    for (var i = 0; i < 4; i++) {
+      await tester.sendKeyEvent(LogicalKeyboardKey.arrowRight);
+      await tester.pumpAndSettle();
+    }
+    final btn = find.byKey(const Key('lesson.quizStart'));
+    expect(tester.widget<FilledButton>(btn).onPressed, isNull);
+    expect(find.byKey(const Key('lesson.quizSoon')), findsOneWidget);
+  });
+
   testWidgets('ru: o‘zbekcha dars + «перевод ожидается» belgisi', (
     tester,
   ) async {
