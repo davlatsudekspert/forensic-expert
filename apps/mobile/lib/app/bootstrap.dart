@@ -15,6 +15,7 @@ import '../data/auth/mock_auth_repository.dart';
 import '../data/auth/secure_session_store.dart';
 import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
+import '../data/local/group_invite_store.dart';
 import '../data/local/profile_store.dart';
 import '../data/local/referral_store.dart';
 import '../data/local/report_device_key.dart';
@@ -25,6 +26,7 @@ import '../data/remote/http_auth_repository.dart';
 import '../data/remote/supabase_account.dart';
 import '../data/remote/supabase_ai_provider.dart';
 import '../data/remote/supabase_auth_repository.dart';
+import '../data/remote/supabase_class_groups.dart';
 import '../data/remote/supabase_class_quiz.dart';
 import '../data/remote/supabase_lessons.dart';
 import '../data/remote/supabase_moderation.dart';
@@ -38,6 +40,7 @@ import '../domain/ports/backend_ports.dart';
 import 'account.dart';
 import 'app.dart';
 import 'casebook.dart';
+import 'class_groups.dart';
 import 'class_quiz.dart';
 import 'court_prep.dart';
 import 'lessons.dart';
@@ -105,6 +108,10 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         pendingReferralStoreProvider.overrideWithValue(
           SharedPrefsPendingReferralStore(prefs),
         ),
+        // Guruh taklifi (QR) — ro‘yxatdan o‘tish davomida yo‘qolmasin.
+        pendingGroupInviteStoreProvider.overrideWithValue(
+          SharedPrefsPendingGroupInviteStore(prefs),
+        ),
         // O‘quv rejimi (Leitner qutilari) — faqat lokal.
         studyProgressStoreProvider.overrideWithValue(
           SharedPrefsStudyProgressStore(prefs),
@@ -149,6 +156,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           classQuizServiceProvider.overrideWithValue(
             SupabaseClassQuizService(config: supabase, auth: auth),
+          ),
+          classGroupsServiceProvider.overrideWithValue(
+            SupabaseClassGroupsService(config: supabase, auth: auth),
           ),
           lessonsServiceProvider.overrideWithValue(
             SupabaseLessonsService(config: supabase, auth: auth),

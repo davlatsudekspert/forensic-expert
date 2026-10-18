@@ -16,6 +16,8 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/guidelines/guideline_models.dart';
 import '../../../domain/learn/study_models.dart';
+import '../../class_groups/presentation/groups_screens.dart'
+    show GroupsEntryCard;
 import '../../disciplines/discipline_strings.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/localized_content.dart';
@@ -151,6 +153,8 @@ class StudyHubScreen extends ConsumerWidget {
                       ],
                     ),
                   ),
+                  const SizedBox(height: FeSpace.xs),
+                  const GroupsEntryCard(),
                   if (catalog.isEmpty)
                     Padding(
                       padding: const EdgeInsets.only(top: FeSpace.lg),

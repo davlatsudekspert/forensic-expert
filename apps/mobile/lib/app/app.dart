@@ -5,8 +5,12 @@ import '../core/design/theme.dart';
 import '../core/l10n/generated/app_localizations.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
+import '../domain/ports/backend_ports.dart';
+import 'class_groups.dart';
+import 'providers.dart';
 import 'referral.dart';
 import 'router.dart';
+import 'routes.dart';
 
 class ForensicExpertApp extends ConsumerWidget {
   const ForensicExpertApp({super.key});
@@ -26,6 +30,16 @@ class ForensicExpertApp extends ConsumerWidget {
     // Taklif kodi kuzatuvchisi doim faol: foydalanuvchi kirgach kutilayotgan
     // kodni serverga bir marta yuboradi (qaror serverda).
     ref.listen(pendingReferralProvider, (_, _) {});
+    // Guruh taklifi (QR): kirish oynasi boshqa sahifaga olib ketgan bo‘lsa
+    // ham, kirgach qo‘shilish sahifasi qayta ochiladi (taklif yo‘qolmaydi).
+    ref.listen<AuthState>(authStateProvider, (prev, next) {
+      if (!next.signedIn || (prev?.signedIn ?? false)) return;
+      final inv = ref.read(pendingGroupInviteProvider.notifier).takeAutoOpen();
+      if (inv == null) return;
+      final here = router.routerDelegate.currentConfiguration.uri.path;
+      if (here == Routes.groupJoin) return;
+      router.go(Routes.groupJoinWith(inv.code, assignmentId: inv.assignmentId));
+    });
 
     // Kontrast: `system` — MaterialApp OS sozlamasiga ko‘ra highContrast
     // mavzusini o‘zi tanlaydi; `high`/`standard` — foydalanuvchi majburlaydi.

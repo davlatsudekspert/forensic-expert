@@ -10,6 +10,7 @@ import '../core/perf/navigation_timing.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
+import '../domain/class_groups/class_groups_models.dart';
 import '../domain/class_quiz/class_quiz_models.dart';
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/study_models.dart' show StudyQuizMode;
@@ -24,6 +25,11 @@ import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/admin/presentation/admin_verification_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/casebook/presentation/casebook_screens.dart';
+import '../features/class_groups/presentation/assign_test_screen.dart';
+import '../features/class_groups/presentation/group_detail_screen.dart';
+import '../features/class_groups/presentation/groups_screens.dart';
+import '../features/class_groups/presentation/teacher_live_screens.dart';
+import '../features/class_groups/presentation/test_screens.dart';
 import '../features/class_quiz/presentation/class_quiz_host_screen.dart';
 import '../features/class_quiz/presentation/class_quiz_hub_screen.dart';
 import '../features/class_quiz/presentation/class_quiz_play_screen.dart';
@@ -84,6 +90,7 @@ import '../features/support/presentation/support_screens.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
+import 'class_groups.dart';
 import 'class_quiz.dart';
 import 'referral.dart';
 import 'routes.dart';
@@ -109,6 +116,20 @@ String? onboardingRedirect(AppSettings s, String location) {
   if (required == null) return isOnboarding ? Routes.home : null;
   if (!isOnboarding) return required;
   return steps.indexOf(location) <= steps.indexOf(required) ? null : required;
+}
+
+/// Kutilayotgan guruh taklifi: onboarding tugagan bo‘lsa — qo‘shilish
+/// sahifasi (sof funksiya — alohida test qilinadi). [invite] `null` yoki
+/// onboarding tugamagan bo‘lsa — `null` (onboarding o‘z yo‘lida davom etadi,
+/// taklif diskda kutadi).
+String? pendingGroupInviteRedirect(
+  AppSettings s,
+  String location,
+  GroupInvite? invite,
+) {
+  if (invite == null || requiredOnboardingStep(s) != null) return null;
+  if (location != Routes.home) return null;
+  return Routes.groupJoinWith(invite.code, assignmentId: invite.assignmentId);
 }
 
 class _SettingsListenable extends ChangeNotifier {
@@ -181,8 +202,35 @@ final routerProvider = Provider<GoRouter>((ref) {
         return onboardingRedirect(settings, Routes.classQuiz) ??
             Routes.classQuiz;
       }
+      // Guruh QR havolasi (`/g/<KOD>?a=<test>`): taklif DISKDA saqlanadi —
+      // yangi o‘rnatilgan ilovada onboarding/ro‘yxatdan o‘tish davomida
+      // yo‘qolmaydi; oxirida qo‘shilish sahifasi o‘zi ochiladi.
+      if (state.uri.path.startsWith(Routes.groupLinkPrefix)) {
+        final inv = GroupCode.fromUri(state.uri);
+        if (inv == null) {
+          return onboardingRedirect(settings, Routes.groups) ?? Routes.groups;
+        }
+        final pending = ref.read(pendingGroupInviteProvider.notifier)
+          ..remember(inv);
+        // Onboarding tugamagan: avval u, taklif kutadi (Asosiyga kelganda).
+        final step = onboardingRedirect(settings, Routes.home);
+        if (step != null) return step;
+        pending.takeAutoOpen();
+        return Routes.groupJoinWith(inv.code, assignmentId: inv.assignmentId);
+      }
       _recordFirstStep(ref, state.matchedLocation);
-      return onboardingRedirect(settings, state.matchedLocation);
+      final onboarding = onboardingRedirect(settings, state.matchedLocation);
+      if (onboarding != null) return onboarding;
+      // Onboarding tugadi va Asosiy sahifaga kelindi: kutilayotgan taklif
+      // (bir marta) qo‘shilish sahifasini ochadi.
+      if (state.matchedLocation == Routes.home &&
+          ref.read(pendingGroupInviteProvider) != null) {
+        final inv = ref
+            .read(pendingGroupInviteProvider.notifier)
+            .takeAutoOpen();
+        return pendingGroupInviteRedirect(settings, Routes.home, inv);
+      }
+      return null;
     },
     routes: [
       GoRoute(
@@ -202,6 +250,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       // Faqat moslik uchun: redirect har doim qo‘shilish ekraniga yo‘naltiradi.
       GoRoute(
         path: '${Routes.joinPrefix}:code',
+        builder: (c, s) => const SizedBox.shrink(),
+      ),
+      // Faqat moslik uchun: redirect guruh taklifini qayta ishlaydi.
+      GoRoute(
+        path: '${Routes.groupLinkPrefix}:code',
         builder: (c, s) => const SizedBox.shrink(),
       ),
       GoRoute(
@@ -314,6 +367,88 @@ final routerProvider = Provider<GoRouter>((ref) {
                             builder: (c, s) => ClassPlayScreen(
                               sessionId: s.pathParameters['id']!,
                             ),
+                          ),
+                        ],
+                      ),
+                      // «Ustoz–talaba testi»: guruhlar va mavzu testlari.
+                      GoRoute(
+                        path: 'groups',
+                        builder: (c, s) => const GroupsHomeScreen(),
+                        routes: [
+                          GoRoute(
+                            path: 'new',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const GroupCreateScreen(),
+                          ),
+                          GoRoute(
+                            path: 'join',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => GroupJoinScreen(
+                              initialCode: s.uri.queryParameters['code'],
+                              assignmentId: s.uri.queryParameters['a'],
+                            ),
+                          ),
+                          GoRoute(
+                            path: 'scan',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const GroupScanScreen(),
+                          ),
+                          GoRoute(
+                            path: ':gid',
+                            builder: (c, s) => GroupDetailScreen(
+                              groupId: s.pathParameters['gid']!,
+                            ),
+                            routes: [
+                              GoRoute(
+                                path: 'assign',
+                                parentNavigatorKey: rootKey,
+                                builder: (c, s) => AssignTestScreen(
+                                  groupId: s.pathParameters['gid']!,
+                                ),
+                              ),
+                              GoRoute(
+                                path: 'a/:aid',
+                                builder: (c, s) => TeacherAssignmentScreen(
+                                  groupId: s.pathParameters['gid']!,
+                                  assignmentId: s.pathParameters['aid']!,
+                                ),
+                                routes: [
+                                  GoRoute(
+                                    path: 'board',
+                                    parentNavigatorKey: rootKey,
+                                    builder: (c, s) => GroupBoardScreen(
+                                      groupId: s.pathParameters['gid']!,
+                                      assignmentId: s.pathParameters['aid']!,
+                                    ),
+                                  ),
+                                  GoRoute(
+                                    path: 'preview',
+                                    parentNavigatorKey: rootKey,
+                                    builder: (c, s) => GroupTestScreen(
+                                      groupId: s.pathParameters['gid']!,
+                                      assignmentId: s.pathParameters['aid']!,
+                                      preview: true,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              GoRoute(
+                                path: 't/:aid',
+                                parentNavigatorKey: rootKey,
+                                builder: (c, s) => GroupTestScreen(
+                                  groupId: s.pathParameters['gid']!,
+                                  assignmentId: s.pathParameters['aid']!,
+                                ),
+                              ),
+                              GoRoute(
+                                path: 'r/:aid',
+                                parentNavigatorKey: rootKey,
+                                builder: (c, s) => GroupResultScreen(
+                                  groupId: s.pathParameters['gid']!,
+                                  assignmentId: s.pathParameters['aid']!,
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),

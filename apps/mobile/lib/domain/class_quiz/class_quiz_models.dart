@@ -176,11 +176,22 @@ abstract final class ClassNickname {
       .replaceAll(r'$', 's')
       .replaceAll(RegExp(r'[^\p{L}]', unicode: true), '');
 
-  /// Ketma-ket bo‘shliqlarni bittaga, chetlarini kesadi.
-  static String clean(String raw) => raw.trim().replaceAll(RegExp(r'\s+'), ' ');
+  /// iPhone klaviaturasi (Smart Punctuation) `'` ni `’` ga almashtiradi;
+  /// o‘zbekcha oʻ/gʻ ham turli belgilar bilan yoziladi. Hammasi oddiy `'`
+  /// ga keltiriladi (server `private.nick_fold` bilan bir xil ro‘yxat:
+  /// ’ ‘ ʻ ʼ ` ´ ′). Aks holda «G’ayrat» rad etilardi.
+  static const apostrophes = '\u2019\u2018\u02BB\u02BC`\u00B4\u2032';
+  static final _apos = RegExp('[$apostrophes]');
+
+  static String fold(String raw) => raw.replaceAll(_apos, "'");
+
+  /// Apostroflarni `'` ga keltiradi, ketma-ket bo‘shliqlarni bittaga,
+  /// chetlarini kesadi.
+  static String clean(String raw) =>
+      fold(raw).trim().replaceAll(RegExp(r'\s+'), ' ');
 
   static NicknameCheck check(String raw) {
-    final t = raw.trim();
+    final t = clean(raw);
     final len = t.runes.length;
     if (len < ClassQuizRules.nickMin || len > ClassQuizRules.nickMax) {
       return NicknameCheck.length;

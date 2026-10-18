@@ -12,6 +12,8 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/learn/learn_models.dart';
+import '../../class_groups/presentation/groups_screens.dart'
+    show GroupsEntryCard;
 import '../../placeholder/presentation/in_development_view.dart';
 
 /// Student / Resident dashboard. Professional rejim bilan bir xil dizayn
@@ -108,6 +110,8 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                       ],
                     ),
                   ),
+                  const SizedBox(height: FeSpace.xs),
+                  const GroupsEntryCard(),
                   FeSectionHeader(l.learnProgress),
                   if (lessons.isEmpty)
                     FeEmptyState(

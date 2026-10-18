@@ -16785,16 +16785,16 @@ abstract class AppLocalizations {
   /// **'Join a class quiz with your teacher\'s code'**
   String get teacherPanelHomeBodyStudent;
 
-  /// Intro line on the teacher panel.
+  /// Teacher panel intro.
   ///
   /// In en, this message translates to:
-  /// **'Three simple actions: run a quiz, see the results, and students join with a code.'**
+  /// **'Run a live class quiz, give a topic test to a group, and see the results.'**
   String get teacherPanelIntro;
 
-  /// Teacher panel action: create and host a class quiz.
+  /// Teacher panel: live quiz tile.
   ///
   /// In en, this message translates to:
-  /// **'Run a quiz'**
+  /// **'Class quiz (live)'**
   String get teacherRunTitle;
 
   /// Teacher panel action subtitle.
@@ -17222,6 +17222,924 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reconnecting…'**
   String get classReconnecting;
+
+  /// Feature title.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups and topic tests'**
+  String get grpTitle;
+
+  /// Learn hub card subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your teacher’s groups: topic tests with a deadline'**
+  String get grpEntrySubtitle;
+
+  /// Teacher tile body.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a group, give a topic test, follow results live'**
+  String get grpTeacherTileBody;
+
+  /// Student tile body.
+  ///
+  /// In en, this message translates to:
+  /// **'Join your teacher’s group with a code or QR'**
+  String get grpStudentTileBody;
+
+  /// Home intro.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher gives a topic test to the group. You solve it in your own time before the deadline; the server counts the score.'**
+  String get grpIntro;
+
+  /// Demo banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Demo mode: data stays on this device only. Real groups need the server connection.'**
+  String get grpDemoBanner;
+
+  /// Privacy note.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher sees only your nickname and score — not your name or e-mail. Other students don’t see your result.'**
+  String get grpPrivacyNote;
+
+  /// Sign-in card.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to join'**
+  String get grpSignInTitle;
+
+  /// Sign-in body.
+  ///
+  /// In en, this message translates to:
+  /// **'Only registered accounts can join a group — your result is tied to your account. The invite is kept while you sign in.'**
+  String get grpSignInBody;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get grpSignInAction;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Join with a code'**
+  String get grpJoinByCode;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan QR'**
+  String get grpScanAction;
+
+  /// Scan screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan group QR'**
+  String get grpScanTitle;
+
+  /// Scan hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Point the camera at the QR on the teacher’s screen.'**
+  String get grpScanHint;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'My groups (teacher)'**
+  String get grpTeachingSection;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups I’m in'**
+  String get grpMemberSection;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No groups yet. Create one and share its code or QR with students.'**
+  String get grpTeachingEmpty;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'You haven’t joined a group yet. Ask your teacher for the code or scan the QR.'**
+  String get grpMemberEmpty;
+
+  /// Members count.
+  ///
+  /// In en, this message translates to:
+  /// **'Students: {count} / {limit}'**
+  String grpMembersCount(int count, int limit);
+
+  /// Student nickname line.
+  ///
+  /// In en, this message translates to:
+  /// **'My nickname: {nickname}'**
+  String grpMyNickname(String nickname);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get grpRetry;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh'**
+  String get grpRefresh;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get grpCancel;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'OK'**
+  String get grpOk;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Create group'**
+  String get grpCreateAction;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'New group'**
+  String get grpCreateTitle;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Group name'**
+  String get grpNameLabel;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'For example: “4th year, group 2”. Students see this name.'**
+  String get grpNameHelper;
+
+  /// Primary button.
+  ///
+  /// In en, this message translates to:
+  /// **'Give a topic test'**
+  String get grpAssignAction;
+
+  /// Invite panel.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite code'**
+  String get grpInviteTitle;
+
+  /// Invite hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Students scan the QR or enter the code in Learn → Groups.'**
+  String get grpInviteHint;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy code'**
+  String get grpCopyCode;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Code copied'**
+  String get grpCodeCopied;
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'Group code {code}'**
+  String grpCodeSpoken(String code);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic tests'**
+  String get grpTestsSection;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No tests yet. Tap “Give a topic test”.'**
+  String get grpTestsEmptyTeacher;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher hasn’t given a test yet.'**
+  String get grpTestsEmptyStudent;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Students'**
+  String get grpMembersSection;
+
+  /// Empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No students yet. Show the QR or code to the class.'**
+  String get grpMembersEmpty;
+
+  /// Assignment progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Started: {started} · finished: {finished} of {total}'**
+  String grpProgress(int started, int finished, int total);
+
+  /// Closed assignment progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Closed · finished: {finished} of {total}'**
+  String grpClosedProgress(int finished, int total);
+
+  /// Button / tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from group'**
+  String get grpRemoveAction;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove the student?'**
+  String get grpRemoveTitle;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'“{nickname}” will leave the group; their results in this group are deleted.'**
+  String grpRemoveBody(String nickname);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave group'**
+  String get grpLeaveAction;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave the group?'**
+  String get grpLeaveTitle;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'You’ll need the code again to rejoin.'**
+  String get grpLeaveBody;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Start test'**
+  String get grpStartTest;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue test'**
+  String get grpContinueTest;
+
+  /// Button with score.
+  ///
+  /// In en, this message translates to:
+  /// **'Result: {score} / {total}'**
+  String grpMyScore(int score, int total);
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic test for the group'**
+  String get grpAssignTitle;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic'**
+  String get grpTopicSection;
+
+  /// Link.
+  ///
+  /// In en, this message translates to:
+  /// **'Change'**
+  String get grpChangeTopic;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get grpSettingsSection;
+
+  /// Slider label.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions per student: {count}'**
+  String grpCountLabel(int count);
+
+  /// Switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Time limit'**
+  String get grpTimeLimitLabel;
+
+  /// No limit.
+  ///
+  /// In en, this message translates to:
+  /// **'No time limit'**
+  String get grpNoTimeLimit;
+
+  /// Minutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes, plural, =1{1 minute} other{{minutes} minutes}}'**
+  String grpMinutesN(int minutes);
+
+  /// Questions.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 question} other{{count} questions}}'**
+  String grpQuestionsN(int count);
+
+  /// Due tile.
+  ///
+  /// In en, this message translates to:
+  /// **'Deadline'**
+  String get grpDueTitle;
+
+  /// No due.
+  ///
+  /// In en, this message translates to:
+  /// **'No deadline — until the teacher closes the test'**
+  String get grpNoDue;
+
+  /// Due label.
+  ///
+  /// In en, this message translates to:
+  /// **'Due: {date}'**
+  String grpDueLabel(String date);
+
+  /// Tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove deadline'**
+  String get grpClearDue;
+
+  /// Switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Different questions for each student'**
+  String get grpVariantLabel;
+
+  /// Chip.
+  ///
+  /// In en, this message translates to:
+  /// **'variants'**
+  String get grpVariantShort;
+
+  /// Variant help.
+  ///
+  /// In en, this message translates to:
+  /// **'Each student gets their own set from the topic (fixed by the server).'**
+  String get grpVariantHelp;
+
+  /// Variant disabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Variants are off: the topic has {available} questions, at least {needed} are needed (twice the number per student). Otherwise the sets would be almost the same.'**
+  String grpVariantTooFew(int available, int needed);
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'When are correct answers shown?'**
+  String get grpRevealSection;
+
+  /// Radio.
+  ///
+  /// In en, this message translates to:
+  /// **'After the deadline (or when I close the test)'**
+  String get grpRevealAfterDue;
+
+  /// Radio.
+  ///
+  /// In en, this message translates to:
+  /// **'Only when I close the test'**
+  String get grpRevealAfterClose;
+
+  /// Radio hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Set a deadline first'**
+  String get grpRevealNeedsDue;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Give the test'**
+  String get grpAssignSubmit;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Test results (live)'**
+  String get grpLiveTitle;
+
+  /// QR card.
+  ///
+  /// In en, this message translates to:
+  /// **'One QR for everyone'**
+  String get grpTestQrTitle;
+
+  /// QR hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Students scan it, enter a nickname the first time, and the test opens.'**
+  String get grpTestQrHint;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Big screen'**
+  String get grpBigScreen;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Try as student'**
+  String get grpPreviewShort;
+
+  /// Counts.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined: {joined} · solving: {solving} · finished: {finished}'**
+  String grpCounts(int joined, int solving, int finished);
+
+  /// State.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined'**
+  String get grpStateJoined;
+
+  /// State.
+  ///
+  /// In en, this message translates to:
+  /// **'Solving'**
+  String get grpStateSolving;
+
+  /// State.
+  ///
+  /// In en, this message translates to:
+  /// **'Finished'**
+  String get grpStateFinished;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Close the test'**
+  String get grpCloseAction;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Close the test?'**
+  String get grpCloseTitle;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'New attempts won’t start. Students who are solving get 30 seconds to send; then their saved answers are counted. Correct answers open to students.'**
+  String get grpCloseBody;
+
+  /// Banner.
+  ///
+  /// In en, this message translates to:
+  /// **'The test is closed — correct answers are open to students.'**
+  String get grpClosedBanner;
+
+  /// Big screen hint.
+  ///
+  /// In en, this message translates to:
+  /// **'FORENSIC EXPERT → Learn → Groups: scan the QR or enter the code'**
+  String get grpBoardHint;
+
+  /// Big screen empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for students…'**
+  String get grpBoardWaiting;
+
+  /// Reveal note.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answers open after the deadline ({date}) or when the teacher closes the test.'**
+  String grpRevealAfterDueNote(String date);
+
+  /// Reveal note.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answers open when the teacher closes the test.'**
+  String get grpRevealAfterCloseNote;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a group'**
+  String get grpJoinTitle;
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Group code'**
+  String get grpCodeLabel;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'8 characters. The code has no 0, O, 1, I or L. A pasted link also works.'**
+  String get grpCodeHelper;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get grpContinue;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Join and open the test'**
+  String get grpJoinAction;
+
+  /// Group name line.
+  ///
+  /// In en, this message translates to:
+  /// **'Group: {name}'**
+  String grpJoinGroupName(String name);
+
+  /// Field.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname'**
+  String get grpNickLabel;
+
+  /// Helper.
+  ///
+  /// In en, this message translates to:
+  /// **'2–20 characters, asked only once. The teacher sees only this nickname — not your name or e-mail.'**
+  String get grpNickHelper;
+
+  /// Nickname required.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a nickname to join.'**
+  String get grpNickNeeded;
+
+  /// Owner panel.
+  ///
+  /// In en, this message translates to:
+  /// **'You are the teacher of this group'**
+  String get grpOwnerTitle;
+
+  /// Owner panel body.
+  ///
+  /// In en, this message translates to:
+  /// **'This is your own invite for “{group}”. A teacher can’t join their own group as a student — you can open it as the teacher or try the test as a student would see it.'**
+  String grpOwnerBody(String group);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Try as a student'**
+  String get grpPreviewAction;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Open as teacher'**
+  String get grpOwnerOpen;
+
+  /// Owner note.
+  ///
+  /// In en, this message translates to:
+  /// **'To take the test for real, sign in with a different (student) account.'**
+  String get grpOwnerOtherAccount;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic test'**
+  String get grpTestTitle;
+
+  /// Progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {current} of {total}'**
+  String grpQuestionOf(int current, int total);
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'Answered {answered} of {total}'**
+  String grpAnsweredOf(int answered, int total);
+
+  /// Screen reader.
+  ///
+  /// In en, this message translates to:
+  /// **'Time left: {time}'**
+  String grpTimeLeftSemantics(String time);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get grpPrev;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get grpNext;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish'**
+  String get grpFinish;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Send your answers?'**
+  String get grpSubmitTitle;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'All questions are answered. After sending you can’t change them.'**
+  String get grpSubmitBodyAll;
+
+  /// Dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 question has no answer.} other{{count} questions have no answer.}} After sending you can’t change them.'**
+  String grpSubmitBodyLeft(int count);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get grpSubmitAction;
+
+  /// Snackbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Time was up — your last saved answers were counted.'**
+  String get grpLateSubmitted;
+
+  /// Preview banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Trial mode: this is what students see. Nothing is sent to the server.'**
+  String get grpPreviewBanner;
+
+  /// Preview finished.
+  ///
+  /// In en, this message translates to:
+  /// **'Trial finished: {score} / {total}'**
+  String grpPreviewDone(int score, int total);
+
+  /// Preview body.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing was sent to the server — students’ results are not affected.'**
+  String get grpPreviewNothingSent;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to the group'**
+  String get grpBackToGroup;
+
+  /// Screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'My result'**
+  String get grpResultTitle;
+
+  /// Score caption.
+  ///
+  /// In en, this message translates to:
+  /// **'correct answers (counted by the server)'**
+  String get grpScoreCaption;
+
+  /// Expired note.
+  ///
+  /// In en, this message translates to:
+  /// **'Time ran out — your saved answers were counted.'**
+  String get grpExpiredNote;
+
+  /// Section.
+  ///
+  /// In en, this message translates to:
+  /// **'Answers and explanations'**
+  String get grpAnswersSection;
+
+  /// Your answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Your answer: {answer}'**
+  String grpYourAnswer(String answer);
+
+  /// Correct answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answer: {answer}'**
+  String grpCorrectAnswer(String answer);
+
+  /// No answer.
+  ///
+  /// In en, this message translates to:
+  /// **'No answer'**
+  String get grpNoAnswer;
+
+  /// Source page.
+  ///
+  /// In en, this message translates to:
+  /// **'p. {page}'**
+  String grpPage(String page);
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups will work once the FORENSIC EXPERT server is connected.'**
+  String get grpErrNotConfigured;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Your session has ended. Please sign in again.'**
+  String get grpErrSessionExpired;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'No internet connection. Check it and try again.'**
+  String get grpErrOffline;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong on the server. Try again in a moment.'**
+  String get grpErrServer;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You don’t have access to this group.'**
+  String get grpErrForbidden;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Try again in an hour.'**
+  String get grpErrRateLimited;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 8-character group code.'**
+  String get grpErrBadCode;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Group codes never contain 0, O, 1, I or L. Check the code on the teacher’s screen: it may be a similar letter or digit (for example 2 or Z, 8 or B).'**
+  String get grpErrCodeAmbiguous;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'No group with this code. Check it and try again.'**
+  String get grpErrNotFound;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The group is full (200 students). Tell your teacher.'**
+  String get grpErrGroupFull;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The nickname must be 2–20 characters.'**
+  String get grpErrNickLength;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Use letters, digits, spaces and . _ \' - only (no e-mail or links).'**
+  String get grpErrNickChars;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please choose a different nickname.'**
+  String get grpErrNickBlocked;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'This nickname is already taken in the group. Add a letter or a number.'**
+  String get grpErrNickTaken;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The group name must be 2–60 characters.'**
+  String get grpErrBadName;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You already have 30 groups — the maximum.'**
+  String get grpErrTooManyGroups;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the settings: 1–50 questions, time limit 1–180 minutes.'**
+  String get grpErrInvalidSettings;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The deadline must be in the future (within a year).'**
+  String get grpErrBadDue;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'“After the deadline” needs a deadline.'**
+  String get grpErrRevealNeedsDue;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The topic has only {available} questions.'**
+  String grpErrNotEnoughQuestions(int available);
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The group already has 50 open tests. Close some first.'**
+  String get grpErrTooManyAssignments;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher has closed this test.'**
+  String get grpErrClosed;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'The deadline for this test has passed.'**
+  String get grpErrPastDue;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You have already sent this test.'**
+  String get grpErrAlreadySubmitted;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'Time is up — new answers are no longer accepted.'**
+  String get grpErrTimeOver;
+
+  /// Error.
+  ///
+  /// In en, this message translates to:
+  /// **'You haven’t sent this test yet.'**
+  String get grpErrNotSubmitted;
 }
 
 class _AppLocalizationsDelegate

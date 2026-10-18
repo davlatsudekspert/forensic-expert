@@ -9696,10 +9696,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get teacherPanelIntro =>
-      'Три простых действия: проведите тест, посмотрите результаты, а студенты войдут по коду.';
+      'Проведите живой тест в классе, дайте группе тест по теме и смотрите результаты.';
 
   @override
-  String get teacherRunTitle => 'Провести тест';
+  String get teacherRunTitle => 'Тест в классе (живой)';
 
   @override
   String get teacherRunBody =>
@@ -9956,4 +9956,569 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get classReconnecting => 'Восстанавливаем соединение…';
+
+  @override
+  String get grpTitle => 'Группы и тесты по темам';
+
+  @override
+  String get grpEntrySubtitle =>
+      'Группы преподавателя: тесты по темам со сроком';
+
+  @override
+  String get grpTeacherTileBody =>
+      'Создайте группу, дайте тест по теме, следите за результатами';
+
+  @override
+  String get grpStudentTileBody =>
+      'Вступите в группу преподавателя по коду или QR';
+
+  @override
+  String get grpIntro =>
+      'Преподаватель даёт группе тест по теме. Вы решаете его в удобное время до срока; баллы считает сервер.';
+
+  @override
+  String get grpDemoBanner =>
+      'Демо-режим: данные только на этом устройстве. Для настоящих групп нужно подключение к серверу.';
+
+  @override
+  String get grpPrivacyNote =>
+      'Преподаватель видит только ваш псевдоним и баллы — не имя и не e-mail. Другие студенты ваш результат не видят.';
+
+  @override
+  String get grpSignInTitle => 'Войдите, чтобы вступить';
+
+  @override
+  String get grpSignInBody =>
+      'Вступить в группу могут только зарегистрированные аккаунты — результат привязан к аккаунту. Приглашение сохранится, пока вы входите.';
+
+  @override
+  String get grpSignInAction => 'Войти';
+
+  @override
+  String get grpJoinByCode => 'Вступить по коду';
+
+  @override
+  String get grpScanAction => 'Сканировать QR';
+
+  @override
+  String get grpScanTitle => 'Сканирование QR группы';
+
+  @override
+  String get grpScanHint => 'Наведите камеру на QR на экране преподавателя.';
+
+  @override
+  String get grpTeachingSection => 'Мои группы (преподаватель)';
+
+  @override
+  String get grpMemberSection => 'Группы, где я состою';
+
+  @override
+  String get grpTeachingEmpty =>
+      'Групп пока нет. Создайте группу и покажите студентам её код или QR.';
+
+  @override
+  String get grpMemberEmpty =>
+      'Вы ещё не вступили в группу. Попросите код у преподавателя или отсканируйте QR.';
+
+  @override
+  String grpMembersCount(int count, int limit) {
+    return 'Студентов: $count / $limit';
+  }
+
+  @override
+  String grpMyNickname(String nickname) {
+    return 'Мой псевдоним: $nickname';
+  }
+
+  @override
+  String get grpRetry => 'Повторить';
+
+  @override
+  String get grpRefresh => 'Обновить';
+
+  @override
+  String get grpCancel => 'Отмена';
+
+  @override
+  String get grpOk => 'Хорошо';
+
+  @override
+  String get grpCreateAction => 'Создать группу';
+
+  @override
+  String get grpCreateTitle => 'Новая группа';
+
+  @override
+  String get grpNameLabel => 'Название группы';
+
+  @override
+  String get grpNameHelper =>
+      'Например: «4 курс, 2 группа». Студенты видят это название.';
+
+  @override
+  String get grpAssignAction => 'Дать тест по теме';
+
+  @override
+  String get grpInviteTitle => 'Код приглашения';
+
+  @override
+  String get grpInviteHint =>
+      'Студенты сканируют QR или вводят код в разделе Учёба → Группы.';
+
+  @override
+  String get grpCopyCode => 'Копировать код';
+
+  @override
+  String get grpCodeCopied => 'Код скопирован';
+
+  @override
+  String grpCodeSpoken(String code) {
+    return 'Код группы $code';
+  }
+
+  @override
+  String get grpTestsSection => 'Тесты по темам';
+
+  @override
+  String get grpTestsEmptyTeacher =>
+      'Тестов пока нет. Нажмите «Дать тест по теме».';
+
+  @override
+  String get grpTestsEmptyStudent => 'Преподаватель ещё не дал тест.';
+
+  @override
+  String get grpMembersSection => 'Студенты';
+
+  @override
+  String get grpMembersEmpty =>
+      'Студентов пока нет. Покажите классу QR или код.';
+
+  @override
+  String grpProgress(int started, int finished, int total) {
+    return 'Начали: $started · завершили: $finished из $total';
+  }
+
+  @override
+  String grpClosedProgress(int finished, int total) {
+    return 'Закрыт · завершили: $finished из $total';
+  }
+
+  @override
+  String get grpRemoveAction => 'Удалить из группы';
+
+  @override
+  String get grpRemoveTitle => 'Удалить студента?';
+
+  @override
+  String grpRemoveBody(String nickname) {
+    return '«$nickname» покинет группу; его результаты в этой группе удаляются.';
+  }
+
+  @override
+  String get grpLeaveAction => 'Покинуть группу';
+
+  @override
+  String get grpLeaveTitle => 'Покинуть группу?';
+
+  @override
+  String get grpLeaveBody => 'Чтобы вернуться, снова понадобится код.';
+
+  @override
+  String get grpStartTest => 'Начать тест';
+
+  @override
+  String get grpContinueTest => 'Продолжить тест';
+
+  @override
+  String grpMyScore(int score, int total) {
+    return 'Результат: $score / $total';
+  }
+
+  @override
+  String get grpAssignTitle => 'Тест по теме для группы';
+
+  @override
+  String get grpTopicSection => 'Тема';
+
+  @override
+  String get grpChangeTopic => 'Изменить';
+
+  @override
+  String get grpSettingsSection => 'Настройки';
+
+  @override
+  String grpCountLabel(int count) {
+    return 'Вопросов каждому студенту: $count';
+  }
+
+  @override
+  String get grpTimeLimitLabel => 'Ограничение времени';
+
+  @override
+  String get grpNoTimeLimit => 'Без ограничения времени';
+
+  @override
+  String grpMinutesN(int minutes) {
+    String _temp0 = intl.Intl.pluralLogic(
+      minutes,
+      locale: localeName,
+      other: '$minutes минут',
+      few: '$minutes минуты',
+      one: '$minutes минута',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String grpQuestionsN(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вопросов',
+      few: '$count вопроса',
+      one: '$count вопрос',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get grpDueTitle => 'Срок';
+
+  @override
+  String get grpNoDue => 'Без срока — пока преподаватель не закроет тест';
+
+  @override
+  String grpDueLabel(String date) {
+    return 'Срок: $date';
+  }
+
+  @override
+  String get grpClearDue => 'Убрать срок';
+
+  @override
+  String get grpVariantLabel => 'Разные вопросы каждому студенту';
+
+  @override
+  String get grpVariantShort => 'варианты';
+
+  @override
+  String get grpVariantHelp =>
+      'Каждый студент получает свой набор из темы (определяет сервер).';
+
+  @override
+  String grpVariantTooFew(int available, int needed) {
+    return 'Варианты выключены: в теме $available вопросов, нужно не меньше $needed (вдвое больше, чем на студента). Иначе наборы почти совпадут.';
+  }
+
+  @override
+  String get grpRevealSection => 'Когда показать правильные ответы?';
+
+  @override
+  String get grpRevealAfterDue => 'После срока (или когда я закрою тест)';
+
+  @override
+  String get grpRevealAfterClose => 'Только когда я закрою тест';
+
+  @override
+  String get grpRevealNeedsDue => 'Сначала укажите срок';
+
+  @override
+  String get grpAssignSubmit => 'Дать тест';
+
+  @override
+  String get grpLiveTitle => 'Результаты теста (живые)';
+
+  @override
+  String get grpTestQrTitle => 'Один QR для всех';
+
+  @override
+  String get grpTestQrHint =>
+      'Студенты сканируют его, при первом входе вводят псевдоним — и тест открывается.';
+
+  @override
+  String get grpBigScreen => 'Большой экран';
+
+  @override
+  String get grpPreviewShort => 'Как студент';
+
+  @override
+  String grpCounts(int joined, int solving, int finished) {
+    return 'Вошли: $joined · решают: $solving · завершили: $finished';
+  }
+
+  @override
+  String get grpStateJoined => 'Вошёл';
+
+  @override
+  String get grpStateSolving => 'Решает';
+
+  @override
+  String get grpStateFinished => 'Завершил';
+
+  @override
+  String get grpCloseAction => 'Закрыть тест';
+
+  @override
+  String get grpCloseTitle => 'Закрыть тест?';
+
+  @override
+  String get grpCloseBody =>
+      'Новые попытки не начнутся. Тем, кто решает, даётся 30 секунд на отправку; затем засчитываются сохранённые ответы. Правильные ответы откроются студентам.';
+
+  @override
+  String get grpClosedBanner =>
+      'Тест закрыт — правильные ответы открыты студентам.';
+
+  @override
+  String get grpBoardHint =>
+      'FORENSIC EXPERT → Учёба → Группы: отсканируйте QR или введите код';
+
+  @override
+  String get grpBoardWaiting => 'Ждём студентов…';
+
+  @override
+  String grpRevealAfterDueNote(String date) {
+    return 'Правильные ответы откроются после срока ($date) или когда преподаватель закроет тест.';
+  }
+
+  @override
+  String get grpRevealAfterCloseNote =>
+      'Правильные ответы откроются, когда преподаватель закроет тест.';
+
+  @override
+  String get grpJoinTitle => 'Вступить в группу';
+
+  @override
+  String get grpCodeLabel => 'Код группы';
+
+  @override
+  String get grpCodeHelper =>
+      '8 символов. В коде нет 0, O, 1, I и L. Можно вставить ссылку.';
+
+  @override
+  String get grpContinue => 'Продолжить';
+
+  @override
+  String get grpJoinAction => 'Вступить и открыть тест';
+
+  @override
+  String grpJoinGroupName(String name) {
+    return 'Группа: $name';
+  }
+
+  @override
+  String get grpNickLabel => 'Псевдоним';
+
+  @override
+  String get grpNickHelper =>
+      '2–20 символов, спрашиваем один раз. Преподаватель видит только этот псевдоним — не имя и не e-mail.';
+
+  @override
+  String get grpNickNeeded => 'Введите псевдоним, чтобы вступить.';
+
+  @override
+  String get grpOwnerTitle => 'Вы преподаватель этой группы';
+
+  @override
+  String grpOwnerBody(String group) {
+    return 'Это ваше приглашение в «$group». Преподаватель не может вступить в свою группу как студент — откройте её как преподаватель или попробуйте тест глазами студента.';
+  }
+
+  @override
+  String get grpPreviewAction => 'Попробовать как студент';
+
+  @override
+  String get grpOwnerOpen => 'Открыть как преподаватель';
+
+  @override
+  String get grpOwnerOtherAccount =>
+      'Чтобы пройти тест по-настоящему, войдите под другим (студенческим) аккаунтом.';
+
+  @override
+  String get grpTestTitle => 'Тест по теме';
+
+  @override
+  String grpQuestionOf(int current, int total) {
+    return 'Вопрос $current из $total';
+  }
+
+  @override
+  String grpAnsweredOf(int answered, int total) {
+    return 'Отвечено $answered из $total';
+  }
+
+  @override
+  String grpTimeLeftSemantics(String time) {
+    return 'Осталось времени: $time';
+  }
+
+  @override
+  String get grpPrev => 'Назад';
+
+  @override
+  String get grpNext => 'Далее';
+
+  @override
+  String get grpFinish => 'Завершить';
+
+  @override
+  String get grpSubmitTitle => 'Отправить ответы?';
+
+  @override
+  String get grpSubmitBodyAll =>
+      'Ответы на все вопросы даны. После отправки изменить их нельзя.';
+
+  @override
+  String grpSubmitBodyLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вопросов без ответа.',
+      few: '$count вопроса без ответа.',
+      one: '$count вопрос без ответа.',
+    );
+    return '$_temp0 После отправки изменить нельзя.';
+  }
+
+  @override
+  String get grpSubmitAction => 'Отправить';
+
+  @override
+  String get grpLateSubmitted =>
+      'Время вышло — засчитаны последние сохранённые ответы.';
+
+  @override
+  String get grpPreviewBanner =>
+      'Пробный режим: так видят студенты. На сервер ничего не отправляется.';
+
+  @override
+  String grpPreviewDone(int score, int total) {
+    return 'Проба завершена: $score / $total';
+  }
+
+  @override
+  String get grpPreviewNothingSent =>
+      'На сервер ничего не отправлено — результаты студентов не изменились.';
+
+  @override
+  String get grpBackToGroup => 'Назад к группе';
+
+  @override
+  String get grpResultTitle => 'Мой результат';
+
+  @override
+  String get grpScoreCaption => 'правильных ответов (считает сервер)';
+
+  @override
+  String get grpExpiredNote => 'Время истекло — засчитаны сохранённые ответы.';
+
+  @override
+  String get grpAnswersSection => 'Ответы и пояснения';
+
+  @override
+  String grpYourAnswer(String answer) {
+    return 'Ваш ответ: $answer';
+  }
+
+  @override
+  String grpCorrectAnswer(String answer) {
+    return 'Правильный ответ: $answer';
+  }
+
+  @override
+  String get grpNoAnswer => 'Нет ответа';
+
+  @override
+  String grpPage(String page) {
+    return 'с. $page';
+  }
+
+  @override
+  String get grpErrNotConfigured =>
+      'Группы заработают после подключения сервера FORENSIC EXPERT.';
+
+  @override
+  String get grpErrSessionExpired => 'Сеанс завершён. Войдите снова.';
+
+  @override
+  String get grpErrOffline =>
+      'Нет подключения к интернету. Проверьте и повторите.';
+
+  @override
+  String get grpErrServer => 'Сбой на сервере. Повторите чуть позже.';
+
+  @override
+  String get grpErrForbidden => 'У вас нет доступа к этой группе.';
+
+  @override
+  String get grpErrRateLimited => 'Слишком много попыток. Повторите через час.';
+
+  @override
+  String get grpErrBadCode => 'Введите 8-значный код группы.';
+
+  @override
+  String get grpErrCodeAmbiguous =>
+      'В кодах групп не бывает 0, O, 1, I и L. Сверьте код с экраном преподавателя: возможно, это похожая буква или цифра (например, 2 или Z, 8 или B).';
+
+  @override
+  String get grpErrNotFound =>
+      'Группа с таким кодом не найдена. Проверьте код.';
+
+  @override
+  String get grpErrGroupFull =>
+      'Группа заполнена (200 студентов). Сообщите преподавателю.';
+
+  @override
+  String get grpErrNickLength => 'Псевдоним должен содержать 2–20 символов.';
+
+  @override
+  String get grpErrNickChars =>
+      'Используйте только буквы, цифры, пробелы и . _ \' - (без e-mail и ссылок).';
+
+  @override
+  String get grpErrNickBlocked => 'Выберите другой псевдоним.';
+
+  @override
+  String get grpErrNickTaken =>
+      'Такой псевдоним в группе уже есть. Добавьте букву или цифру.';
+
+  @override
+  String get grpErrBadName => 'Название группы — от 2 до 60 символов.';
+
+  @override
+  String get grpErrTooManyGroups => 'У вас уже 30 групп — это максимум.';
+
+  @override
+  String get grpErrInvalidSettings =>
+      'Проверьте настройки: 1–50 вопросов, время 1–180 минут.';
+
+  @override
+  String get grpErrBadDue => 'Срок должен быть в будущем (в пределах года).';
+
+  @override
+  String get grpErrRevealNeedsDue => 'Для «после срока» нужно указать срок.';
+
+  @override
+  String grpErrNotEnoughQuestions(int available) {
+    return 'В теме только $available вопросов.';
+  }
+
+  @override
+  String get grpErrTooManyAssignments =>
+      'В группе уже 50 открытых тестов. Сначала закройте часть.';
+
+  @override
+  String get grpErrClosed => 'Преподаватель закрыл этот тест.';
+
+  @override
+  String get grpErrPastDue => 'Срок этого теста прошёл.';
+
+  @override
+  String get grpErrAlreadySubmitted => 'Вы уже отправили этот тест.';
+
+  @override
+  String get grpErrTimeOver => 'Время вышло — новые ответы не принимаются.';
+
+  @override
+  String get grpErrNotSubmitted => 'Вы ещё не отправили этот тест.';
 }

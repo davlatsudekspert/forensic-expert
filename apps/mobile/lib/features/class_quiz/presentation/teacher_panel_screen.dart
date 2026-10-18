@@ -78,6 +78,17 @@ class TeacherPanelScreen extends ConsumerWidget {
                     onTap: teacher ? () => context.push(Routes.classNew) : null,
                   ),
                   const SizedBox(height: FeSpace.sm),
+                  // «Ustoz–talaba testi»: jonli testdan alohida — guruh va
+                  // muddatli mavzu testi (talaba o‘z vaqtida yechadi).
+                  TeacherActionTile(
+                    key: const Key('teacher.groups'),
+                    icon: Icons.assignment_outlined,
+                    title: l.grpTitle,
+                    body: teacher ? l.grpTeacherTileBody : l.grpStudentTileBody,
+                    primary: teacher,
+                    onTap: () => context.push(Routes.groups),
+                  ),
+                  const SizedBox(height: FeSpace.sm),
                   TeacherActionTile(
                     key: const Key('teacher.results'),
                     icon: Icons.insights_outlined,

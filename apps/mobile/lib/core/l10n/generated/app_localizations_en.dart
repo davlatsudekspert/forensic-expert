@@ -9644,10 +9644,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get teacherPanelIntro =>
-      'Three simple actions: run a quiz, see the results, and students join with a code.';
+      'Run a live class quiz, give a topic test to a group, and see the results.';
 
   @override
-  String get teacherRunTitle => 'Run a quiz';
+  String get teacherRunTitle => 'Class quiz (live)';
 
   @override
   String get teacherRunBody =>
@@ -9903,4 +9903,571 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classReconnecting => 'Reconnecting…';
+
+  @override
+  String get grpTitle => 'Groups and topic tests';
+
+  @override
+  String get grpEntrySubtitle =>
+      'Your teacher’s groups: topic tests with a deadline';
+
+  @override
+  String get grpTeacherTileBody =>
+      'Create a group, give a topic test, follow results live';
+
+  @override
+  String get grpStudentTileBody =>
+      'Join your teacher’s group with a code or QR';
+
+  @override
+  String get grpIntro =>
+      'The teacher gives a topic test to the group. You solve it in your own time before the deadline; the server counts the score.';
+
+  @override
+  String get grpDemoBanner =>
+      'Demo mode: data stays on this device only. Real groups need the server connection.';
+
+  @override
+  String get grpPrivacyNote =>
+      'The teacher sees only your nickname and score — not your name or e-mail. Other students don’t see your result.';
+
+  @override
+  String get grpSignInTitle => 'Sign in to join';
+
+  @override
+  String get grpSignInBody =>
+      'Only registered accounts can join a group — your result is tied to your account. The invite is kept while you sign in.';
+
+  @override
+  String get grpSignInAction => 'Sign in';
+
+  @override
+  String get grpJoinByCode => 'Join with a code';
+
+  @override
+  String get grpScanAction => 'Scan QR';
+
+  @override
+  String get grpScanTitle => 'Scan group QR';
+
+  @override
+  String get grpScanHint =>
+      'Point the camera at the QR on the teacher’s screen.';
+
+  @override
+  String get grpTeachingSection => 'My groups (teacher)';
+
+  @override
+  String get grpMemberSection => 'Groups I’m in';
+
+  @override
+  String get grpTeachingEmpty =>
+      'No groups yet. Create one and share its code or QR with students.';
+
+  @override
+  String get grpMemberEmpty =>
+      'You haven’t joined a group yet. Ask your teacher for the code or scan the QR.';
+
+  @override
+  String grpMembersCount(int count, int limit) {
+    return 'Students: $count / $limit';
+  }
+
+  @override
+  String grpMyNickname(String nickname) {
+    return 'My nickname: $nickname';
+  }
+
+  @override
+  String get grpRetry => 'Try again';
+
+  @override
+  String get grpRefresh => 'Refresh';
+
+  @override
+  String get grpCancel => 'Cancel';
+
+  @override
+  String get grpOk => 'OK';
+
+  @override
+  String get grpCreateAction => 'Create group';
+
+  @override
+  String get grpCreateTitle => 'New group';
+
+  @override
+  String get grpNameLabel => 'Group name';
+
+  @override
+  String get grpNameHelper =>
+      'For example: “4th year, group 2”. Students see this name.';
+
+  @override
+  String get grpAssignAction => 'Give a topic test';
+
+  @override
+  String get grpInviteTitle => 'Invite code';
+
+  @override
+  String get grpInviteHint =>
+      'Students scan the QR or enter the code in Learn → Groups.';
+
+  @override
+  String get grpCopyCode => 'Copy code';
+
+  @override
+  String get grpCodeCopied => 'Code copied';
+
+  @override
+  String grpCodeSpoken(String code) {
+    return 'Group code $code';
+  }
+
+  @override
+  String get grpTestsSection => 'Topic tests';
+
+  @override
+  String get grpTestsEmptyTeacher => 'No tests yet. Tap “Give a topic test”.';
+
+  @override
+  String get grpTestsEmptyStudent => 'The teacher hasn’t given a test yet.';
+
+  @override
+  String get grpMembersSection => 'Students';
+
+  @override
+  String get grpMembersEmpty =>
+      'No students yet. Show the QR or code to the class.';
+
+  @override
+  String grpProgress(int started, int finished, int total) {
+    return 'Started: $started · finished: $finished of $total';
+  }
+
+  @override
+  String grpClosedProgress(int finished, int total) {
+    return 'Closed · finished: $finished of $total';
+  }
+
+  @override
+  String get grpRemoveAction => 'Remove from group';
+
+  @override
+  String get grpRemoveTitle => 'Remove the student?';
+
+  @override
+  String grpRemoveBody(String nickname) {
+    return '“$nickname” will leave the group; their results in this group are deleted.';
+  }
+
+  @override
+  String get grpLeaveAction => 'Leave group';
+
+  @override
+  String get grpLeaveTitle => 'Leave the group?';
+
+  @override
+  String get grpLeaveBody => 'You’ll need the code again to rejoin.';
+
+  @override
+  String get grpStartTest => 'Start test';
+
+  @override
+  String get grpContinueTest => 'Continue test';
+
+  @override
+  String grpMyScore(int score, int total) {
+    return 'Result: $score / $total';
+  }
+
+  @override
+  String get grpAssignTitle => 'Topic test for the group';
+
+  @override
+  String get grpTopicSection => 'Topic';
+
+  @override
+  String get grpChangeTopic => 'Change';
+
+  @override
+  String get grpSettingsSection => 'Settings';
+
+  @override
+  String grpCountLabel(int count) {
+    return 'Questions per student: $count';
+  }
+
+  @override
+  String get grpTimeLimitLabel => 'Time limit';
+
+  @override
+  String get grpNoTimeLimit => 'No time limit';
+
+  @override
+  String grpMinutesN(int minutes) {
+    String _temp0 = intl.Intl.pluralLogic(
+      minutes,
+      locale: localeName,
+      other: '$minutes minutes',
+      one: '1 minute',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String grpQuestionsN(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count questions',
+      one: '1 question',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get grpDueTitle => 'Deadline';
+
+  @override
+  String get grpNoDue => 'No deadline — until the teacher closes the test';
+
+  @override
+  String grpDueLabel(String date) {
+    return 'Due: $date';
+  }
+
+  @override
+  String get grpClearDue => 'Remove deadline';
+
+  @override
+  String get grpVariantLabel => 'Different questions for each student';
+
+  @override
+  String get grpVariantShort => 'variants';
+
+  @override
+  String get grpVariantHelp =>
+      'Each student gets their own set from the topic (fixed by the server).';
+
+  @override
+  String grpVariantTooFew(int available, int needed) {
+    return 'Variants are off: the topic has $available questions, at least $needed are needed (twice the number per student). Otherwise the sets would be almost the same.';
+  }
+
+  @override
+  String get grpRevealSection => 'When are correct answers shown?';
+
+  @override
+  String get grpRevealAfterDue =>
+      'After the deadline (or when I close the test)';
+
+  @override
+  String get grpRevealAfterClose => 'Only when I close the test';
+
+  @override
+  String get grpRevealNeedsDue => 'Set a deadline first';
+
+  @override
+  String get grpAssignSubmit => 'Give the test';
+
+  @override
+  String get grpLiveTitle => 'Test results (live)';
+
+  @override
+  String get grpTestQrTitle => 'One QR for everyone';
+
+  @override
+  String get grpTestQrHint =>
+      'Students scan it, enter a nickname the first time, and the test opens.';
+
+  @override
+  String get grpBigScreen => 'Big screen';
+
+  @override
+  String get grpPreviewShort => 'Try as student';
+
+  @override
+  String grpCounts(int joined, int solving, int finished) {
+    return 'Joined: $joined · solving: $solving · finished: $finished';
+  }
+
+  @override
+  String get grpStateJoined => 'Joined';
+
+  @override
+  String get grpStateSolving => 'Solving';
+
+  @override
+  String get grpStateFinished => 'Finished';
+
+  @override
+  String get grpCloseAction => 'Close the test';
+
+  @override
+  String get grpCloseTitle => 'Close the test?';
+
+  @override
+  String get grpCloseBody =>
+      'New attempts won’t start. Students who are solving get 30 seconds to send; then their saved answers are counted. Correct answers open to students.';
+
+  @override
+  String get grpClosedBanner =>
+      'The test is closed — correct answers are open to students.';
+
+  @override
+  String get grpBoardHint =>
+      'FORENSIC EXPERT → Learn → Groups: scan the QR or enter the code';
+
+  @override
+  String get grpBoardWaiting => 'Waiting for students…';
+
+  @override
+  String grpRevealAfterDueNote(String date) {
+    return 'Correct answers open after the deadline ($date) or when the teacher closes the test.';
+  }
+
+  @override
+  String get grpRevealAfterCloseNote =>
+      'Correct answers open when the teacher closes the test.';
+
+  @override
+  String get grpJoinTitle => 'Join a group';
+
+  @override
+  String get grpCodeLabel => 'Group code';
+
+  @override
+  String get grpCodeHelper =>
+      '8 characters. The code has no 0, O, 1, I or L. A pasted link also works.';
+
+  @override
+  String get grpContinue => 'Continue';
+
+  @override
+  String get grpJoinAction => 'Join and open the test';
+
+  @override
+  String grpJoinGroupName(String name) {
+    return 'Group: $name';
+  }
+
+  @override
+  String get grpNickLabel => 'Nickname';
+
+  @override
+  String get grpNickHelper =>
+      '2–20 characters, asked only once. The teacher sees only this nickname — not your name or e-mail.';
+
+  @override
+  String get grpNickNeeded => 'Enter a nickname to join.';
+
+  @override
+  String get grpOwnerTitle => 'You are the teacher of this group';
+
+  @override
+  String grpOwnerBody(String group) {
+    return 'This is your own invite for “$group”. A teacher can’t join their own group as a student — you can open it as the teacher or try the test as a student would see it.';
+  }
+
+  @override
+  String get grpPreviewAction => 'Try as a student';
+
+  @override
+  String get grpOwnerOpen => 'Open as teacher';
+
+  @override
+  String get grpOwnerOtherAccount =>
+      'To take the test for real, sign in with a different (student) account.';
+
+  @override
+  String get grpTestTitle => 'Topic test';
+
+  @override
+  String grpQuestionOf(int current, int total) {
+    return 'Question $current of $total';
+  }
+
+  @override
+  String grpAnsweredOf(int answered, int total) {
+    return 'Answered $answered of $total';
+  }
+
+  @override
+  String grpTimeLeftSemantics(String time) {
+    return 'Time left: $time';
+  }
+
+  @override
+  String get grpPrev => 'Back';
+
+  @override
+  String get grpNext => 'Next';
+
+  @override
+  String get grpFinish => 'Finish';
+
+  @override
+  String get grpSubmitTitle => 'Send your answers?';
+
+  @override
+  String get grpSubmitBodyAll =>
+      'All questions are answered. After sending you can’t change them.';
+
+  @override
+  String grpSubmitBodyLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count questions have no answer.',
+      one: '1 question has no answer.',
+    );
+    return '$_temp0 After sending you can’t change them.';
+  }
+
+  @override
+  String get grpSubmitAction => 'Send';
+
+  @override
+  String get grpLateSubmitted =>
+      'Time was up — your last saved answers were counted.';
+
+  @override
+  String get grpPreviewBanner =>
+      'Trial mode: this is what students see. Nothing is sent to the server.';
+
+  @override
+  String grpPreviewDone(int score, int total) {
+    return 'Trial finished: $score / $total';
+  }
+
+  @override
+  String get grpPreviewNothingSent =>
+      'Nothing was sent to the server — students’ results are not affected.';
+
+  @override
+  String get grpBackToGroup => 'Back to the group';
+
+  @override
+  String get grpResultTitle => 'My result';
+
+  @override
+  String get grpScoreCaption => 'correct answers (counted by the server)';
+
+  @override
+  String get grpExpiredNote =>
+      'Time ran out — your saved answers were counted.';
+
+  @override
+  String get grpAnswersSection => 'Answers and explanations';
+
+  @override
+  String grpYourAnswer(String answer) {
+    return 'Your answer: $answer';
+  }
+
+  @override
+  String grpCorrectAnswer(String answer) {
+    return 'Correct answer: $answer';
+  }
+
+  @override
+  String get grpNoAnswer => 'No answer';
+
+  @override
+  String grpPage(String page) {
+    return 'p. $page';
+  }
+
+  @override
+  String get grpErrNotConfigured =>
+      'Groups will work once the FORENSIC EXPERT server is connected.';
+
+  @override
+  String get grpErrSessionExpired =>
+      'Your session has ended. Please sign in again.';
+
+  @override
+  String get grpErrOffline => 'No internet connection. Check it and try again.';
+
+  @override
+  String get grpErrServer =>
+      'Something went wrong on the server. Try again in a moment.';
+
+  @override
+  String get grpErrForbidden => 'You don’t have access to this group.';
+
+  @override
+  String get grpErrRateLimited => 'Too many attempts. Try again in an hour.';
+
+  @override
+  String get grpErrBadCode => 'Enter the 8-character group code.';
+
+  @override
+  String get grpErrCodeAmbiguous =>
+      'Group codes never contain 0, O, 1, I or L. Check the code on the teacher’s screen: it may be a similar letter or digit (for example 2 or Z, 8 or B).';
+
+  @override
+  String get grpErrNotFound =>
+      'No group with this code. Check it and try again.';
+
+  @override
+  String get grpErrGroupFull =>
+      'The group is full (200 students). Tell your teacher.';
+
+  @override
+  String get grpErrNickLength => 'The nickname must be 2–20 characters.';
+
+  @override
+  String get grpErrNickChars =>
+      'Use letters, digits, spaces and . _ \' - only (no e-mail or links).';
+
+  @override
+  String get grpErrNickBlocked => 'Please choose a different nickname.';
+
+  @override
+  String get grpErrNickTaken =>
+      'This nickname is already taken in the group. Add a letter or a number.';
+
+  @override
+  String get grpErrBadName => 'The group name must be 2–60 characters.';
+
+  @override
+  String get grpErrTooManyGroups => 'You already have 30 groups — the maximum.';
+
+  @override
+  String get grpErrInvalidSettings =>
+      'Check the settings: 1–50 questions, time limit 1–180 minutes.';
+
+  @override
+  String get grpErrBadDue =>
+      'The deadline must be in the future (within a year).';
+
+  @override
+  String get grpErrRevealNeedsDue => '“After the deadline” needs a deadline.';
+
+  @override
+  String grpErrNotEnoughQuestions(int available) {
+    return 'The topic has only $available questions.';
+  }
+
+  @override
+  String get grpErrTooManyAssignments =>
+      'The group already has 50 open tests. Close some first.';
+
+  @override
+  String get grpErrClosed => 'The teacher has closed this test.';
+
+  @override
+  String get grpErrPastDue => 'The deadline for this test has passed.';
+
+  @override
+  String get grpErrAlreadySubmitted => 'You have already sent this test.';
+
+  @override
+  String get grpErrTimeOver =>
+      'Time is up — new answers are no longer accepted.';
+
+  @override
+  String get grpErrNotSubmitted => 'You haven’t sent this test yet.';
 }

@@ -9609,10 +9609,10 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get teacherPanelIntro =>
-      'Uchta oddiy amal: test o‘tkazing, natijalarni ko‘ring, talabalar esa kod bilan qo‘shiladi.';
+      'Sinfda jonli test o‘tkazing, guruhga mavzu testi bering va natijalarni ko‘ring.';
 
   @override
-  String get teacherRunTitle => 'Test o‘tkazish';
+  String get teacherRunTitle => 'Sinfda test (jonli)';
 
   @override
   String get teacherRunBody =>
@@ -9862,4 +9862,555 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classReconnecting => 'Aloqa tiklanmoqda…';
+
+  @override
+  String get grpTitle => 'Guruhlar va mavzu testlari';
+
+  @override
+  String get grpEntrySubtitle => 'Ustoz guruhlari: muddatli mavzu testlari';
+
+  @override
+  String get grpTeacherTileBody =>
+      'Guruh yarating, mavzu testi bering, natijani jonli kuzating';
+
+  @override
+  String get grpStudentTileBody =>
+      'Ustoz guruhiga kod yoki QR bilan qo‘shiling';
+
+  @override
+  String get grpIntro =>
+      'Ustoz guruhga mavzu testi beradi. Siz uni muddatgacha o‘zingizga qulay vaqtda yechasiz; ballni server hisoblaydi.';
+
+  @override
+  String get grpDemoBanner =>
+      'Demo rejim: ma’lumot faqat shu qurilmada. Haqiqiy guruhlar uchun server ulanishi kerak.';
+
+  @override
+  String get grpPrivacyNote =>
+      'Ustoz faqat taxallusingiz va ballingizni ko‘radi — ismingiz va emailingizni emas. Boshqa talabalar natijangizni ko‘rmaydi.';
+
+  @override
+  String get grpSignInTitle => 'Qo‘shilish uchun hisobga kiring';
+
+  @override
+  String get grpSignInBody =>
+      'Guruhga faqat ro‘yxatdan o‘tgan hisob qo‘shiladi — natija hisobingizga bog‘lanadi. Kirish davomida taklif saqlanib turadi.';
+
+  @override
+  String get grpSignInAction => 'Hisobga kirish';
+
+  @override
+  String get grpJoinByCode => 'Kod bilan qo‘shilish';
+
+  @override
+  String get grpScanAction => 'QR skanerlash';
+
+  @override
+  String get grpScanTitle => 'Guruh QR kodini skanerlash';
+
+  @override
+  String get grpScanHint => 'Kamerani ustoz ekranidagi QR kodga qarating.';
+
+  @override
+  String get grpTeachingSection => 'Mening guruhlarim (ustoz)';
+
+  @override
+  String get grpMemberSection => 'Men a’zo guruhlar';
+
+  @override
+  String get grpTeachingEmpty =>
+      'Hozircha guruh yo‘q. Guruh yarating va kodini yoki QR kodini talabalarga ko‘rsating.';
+
+  @override
+  String get grpMemberEmpty =>
+      'Hali guruhga qo‘shilmagansiz. Ustozdan kodni so‘rang yoki QR kodni skanerlang.';
+
+  @override
+  String grpMembersCount(int count, int limit) {
+    return 'Talabalar: $count / $limit';
+  }
+
+  @override
+  String grpMyNickname(String nickname) {
+    return 'Taxallusim: $nickname';
+  }
+
+  @override
+  String get grpRetry => 'Qayta urinish';
+
+  @override
+  String get grpRefresh => 'Yangilash';
+
+  @override
+  String get grpCancel => 'Bekor qilish';
+
+  @override
+  String get grpOk => 'Yaxshi';
+
+  @override
+  String get grpCreateAction => 'Guruh yaratish';
+
+  @override
+  String get grpCreateTitle => 'Yangi guruh';
+
+  @override
+  String get grpNameLabel => 'Guruh nomi';
+
+  @override
+  String get grpNameHelper =>
+      'Masalan: «4-kurs, 2-guruh». Talabalar shu nomni ko‘radi.';
+
+  @override
+  String get grpAssignAction => 'Mavzu testi berish';
+
+  @override
+  String get grpInviteTitle => 'Taklif kodi';
+
+  @override
+  String get grpInviteHint =>
+      'Talabalar QR kodni skanerlaydi yoki kodni O‘qish → Guruhlar bo‘limida kiritadi.';
+
+  @override
+  String get grpCopyCode => 'Kodni nusxalash';
+
+  @override
+  String get grpCodeCopied => 'Kod nusxalandi';
+
+  @override
+  String grpCodeSpoken(String code) {
+    return 'Guruh kodi $code';
+  }
+
+  @override
+  String get grpTestsSection => 'Mavzu testlari';
+
+  @override
+  String get grpTestsEmptyTeacher =>
+      'Hozircha test yo‘q. «Mavzu testi berish» tugmasini bosing.';
+
+  @override
+  String get grpTestsEmptyStudent => 'Ustoz hali test bermagan.';
+
+  @override
+  String get grpMembersSection => 'Talabalar';
+
+  @override
+  String get grpMembersEmpty =>
+      'Hozircha talaba yo‘q. Sinfga QR yoki kodni ko‘rsating.';
+
+  @override
+  String grpProgress(int started, int finished, int total) {
+    return 'Boshlagan: $started · tugatgan: $finished / $total';
+  }
+
+  @override
+  String grpClosedProgress(int finished, int total) {
+    return 'Yopilgan · tugatgan: $finished / $total';
+  }
+
+  @override
+  String get grpRemoveAction => 'Guruhdan chiqarish';
+
+  @override
+  String get grpRemoveTitle => 'Talabani chiqarasizmi?';
+
+  @override
+  String grpRemoveBody(String nickname) {
+    return '«$nickname» guruhdan chiqariladi; uning shu guruhdagi natijalari o‘chiriladi.';
+  }
+
+  @override
+  String get grpLeaveAction => 'Guruhdan chiqish';
+
+  @override
+  String get grpLeaveTitle => 'Guruhdan chiqasizmi?';
+
+  @override
+  String get grpLeaveBody => 'Qaytib qo‘shilish uchun yana kod kerak bo‘ladi.';
+
+  @override
+  String get grpStartTest => 'Testni boshlash';
+
+  @override
+  String get grpContinueTest => 'Testni davom ettirish';
+
+  @override
+  String grpMyScore(int score, int total) {
+    return 'Natija: $score / $total';
+  }
+
+  @override
+  String get grpAssignTitle => 'Guruhga mavzu testi';
+
+  @override
+  String get grpTopicSection => 'Mavzu';
+
+  @override
+  String get grpChangeTopic => 'O‘zgartirish';
+
+  @override
+  String get grpSettingsSection => 'Sozlamalar';
+
+  @override
+  String grpCountLabel(int count) {
+    return 'Har talabaga savollar: $count';
+  }
+
+  @override
+  String get grpTimeLimitLabel => 'Vaqt chegarasi';
+
+  @override
+  String get grpNoTimeLimit => 'Vaqt chegarasi yo‘q';
+
+  @override
+  String grpMinutesN(int minutes) {
+    return '$minutes daqiqa';
+  }
+
+  @override
+  String grpQuestionsN(int count) {
+    return '$count ta savol';
+  }
+
+  @override
+  String get grpDueTitle => 'Muddat';
+
+  @override
+  String get grpNoDue => 'Muddatsiz — ustoz testni yopguncha';
+
+  @override
+  String grpDueLabel(String date) {
+    return 'Muddat: $date';
+  }
+
+  @override
+  String get grpClearDue => 'Muddatni olib tashlash';
+
+  @override
+  String get grpVariantLabel => 'Har talabaga boshqa savollar';
+
+  @override
+  String get grpVariantShort => 'variantli';
+
+  @override
+  String get grpVariantHelp =>
+      'Har talaba mavzudan o‘z to‘plamini oladi (server belgilaydi).';
+
+  @override
+  String grpVariantTooFew(int available, int needed) {
+    return 'Variantlar o‘chiq: mavzuda $available ta savol bor, kamida $needed ta kerak (har talabaga beriladiganidan 2 barobar). Aks holda to‘plamlar deyarli bir xil bo‘lib qoladi.';
+  }
+
+  @override
+  String get grpRevealSection => 'To‘g‘ri javoblar qachon ochiladi?';
+
+  @override
+  String get grpRevealAfterDue => 'Muddat tugagach (yoki testni yopganimda)';
+
+  @override
+  String get grpRevealAfterClose => 'Faqat testni yopganimda';
+
+  @override
+  String get grpRevealNeedsDue => 'Avval muddatni belgilang';
+
+  @override
+  String get grpAssignSubmit => 'Testni berish';
+
+  @override
+  String get grpLiveTitle => 'Test natijalari (jonli)';
+
+  @override
+  String get grpTestQrTitle => 'Hammaga bitta QR';
+
+  @override
+  String get grpTestQrHint =>
+      'Talabalar skanerlaydi, birinchi marta taxallus yozadi — test ochiladi.';
+
+  @override
+  String get grpBigScreen => 'Katta ekran';
+
+  @override
+  String get grpPreviewShort => 'Talaba ko‘rinishida';
+
+  @override
+  String grpCounts(int joined, int solving, int finished) {
+    return 'Qo‘shildi: $joined · yechmoqda: $solving · tugatdi: $finished';
+  }
+
+  @override
+  String get grpStateJoined => 'Qo‘shildi';
+
+  @override
+  String get grpStateSolving => 'Yechmoqda';
+
+  @override
+  String get grpStateFinished => 'Tugatdi';
+
+  @override
+  String get grpCloseAction => 'Testni yopish';
+
+  @override
+  String get grpCloseTitle => 'Testni yopasizmi?';
+
+  @override
+  String get grpCloseBody =>
+      'Yangi urinish boshlanmaydi. Yechayotganlarga yuborish uchun 30 soniya beriladi, so‘ng saqlangan javoblari hisoblanadi. To‘g‘ri javoblar talabalarga ochiladi.';
+
+  @override
+  String get grpClosedBanner =>
+      'Test yopildi — to‘g‘ri javoblar talabalarga ochildi.';
+
+  @override
+  String get grpBoardHint =>
+      'FORENSIC EXPERT → O‘qish → Guruhlar: QR kodni skanerlang yoki kodni kiriting';
+
+  @override
+  String get grpBoardWaiting => 'Talabalar kutilmoqda…';
+
+  @override
+  String grpRevealAfterDueNote(String date) {
+    return 'To‘g‘ri javoblar muddat tugagach ($date) yoki ustoz testni yopgach ochiladi.';
+  }
+
+  @override
+  String get grpRevealAfterCloseNote =>
+      'To‘g‘ri javoblar ustoz testni yopgach ochiladi.';
+
+  @override
+  String get grpJoinTitle => 'Guruhga qo‘shilish';
+
+  @override
+  String get grpCodeLabel => 'Guruh kodi';
+
+  @override
+  String get grpCodeHelper =>
+      '8 belgi. Kodda 0, O, 1, I va L bo‘lmaydi. Havolani qo‘ysangiz ham bo‘ladi.';
+
+  @override
+  String get grpContinue => 'Davom etish';
+
+  @override
+  String get grpJoinAction => 'Qo‘shilish va testni ochish';
+
+  @override
+  String grpJoinGroupName(String name) {
+    return 'Guruh: $name';
+  }
+
+  @override
+  String get grpNickLabel => 'Taxallus';
+
+  @override
+  String get grpNickHelper =>
+      '2–20 belgi, faqat bir marta so‘raladi. Ustoz faqat shu taxallusni ko‘radi — ismingiz va emailingizni emas.';
+
+  @override
+  String get grpNickNeeded => 'Qo‘shilish uchun taxallus yozing.';
+
+  @override
+  String get grpOwnerTitle => 'Siz bu guruhning ustozisiz';
+
+  @override
+  String grpOwnerBody(String group) {
+    return 'Bu «$group» guruhiga o‘zingizning taklifingiz. Ustoz o‘z guruhiga talaba sifatida qo‘shilmaydi — guruhni ustoz sifatida oching yoki testni talaba ko‘zi bilan sinab ko‘ring.';
+  }
+
+  @override
+  String get grpPreviewAction => 'Talaba ko‘rinishida sinash';
+
+  @override
+  String get grpOwnerOpen => 'Ustoz sifatida ochish';
+
+  @override
+  String get grpOwnerOtherAccount =>
+      'Testni haqiqatan yechish uchun boshqa (talaba) hisobi bilan kiring.';
+
+  @override
+  String get grpTestTitle => 'Mavzu testi';
+
+  @override
+  String grpQuestionOf(int current, int total) {
+    return '$current-savol / $total';
+  }
+
+  @override
+  String grpAnsweredOf(int answered, int total) {
+    return '$answered / $total ta savolga javob berildi';
+  }
+
+  @override
+  String grpTimeLeftSemantics(String time) {
+    return 'Qolgan vaqt: $time';
+  }
+
+  @override
+  String get grpPrev => 'Oldingi';
+
+  @override
+  String get grpNext => 'Keyingi';
+
+  @override
+  String get grpFinish => 'Yakunlash';
+
+  @override
+  String get grpSubmitTitle => 'Javoblarni yuborasizmi?';
+
+  @override
+  String get grpSubmitBodyAll =>
+      'Hamma savolga javob berildi. Yuborgandan keyin o‘zgartirib bo‘lmaydi.';
+
+  @override
+  String grpSubmitBodyLeft(int count) {
+    return '$count ta savolga javob berilmagan. Yuborgandan keyin o‘zgartirib bo‘lmaydi.';
+  }
+
+  @override
+  String get grpSubmitAction => 'Yuborish';
+
+  @override
+  String get grpLateSubmitted =>
+      'Vaqt tugagan edi — oxirgi saqlangan javoblaringiz hisoblandi.';
+
+  @override
+  String get grpPreviewBanner =>
+      'Sinov rejimi: talabalar shunday ko‘radi. Serverga hech narsa yuborilmaydi.';
+
+  @override
+  String grpPreviewDone(int score, int total) {
+    return 'Sinov tugadi: $score / $total';
+  }
+
+  @override
+  String get grpPreviewNothingSent =>
+      'Serverga hech narsa yuborilmadi — talabalar natijasiga ta’sir qilmaydi.';
+
+  @override
+  String get grpBackToGroup => 'Guruhga qaytish';
+
+  @override
+  String get grpResultTitle => 'Mening natijam';
+
+  @override
+  String get grpScoreCaption => 'to‘g‘ri javob (server hisobladi)';
+
+  @override
+  String get grpExpiredNote =>
+      'Vaqt tugadi — saqlangan javoblaringiz hisoblandi.';
+
+  @override
+  String get grpAnswersSection => 'Javoblar va izohlar';
+
+  @override
+  String grpYourAnswer(String answer) {
+    return 'Sizning javobingiz: $answer';
+  }
+
+  @override
+  String grpCorrectAnswer(String answer) {
+    return 'To‘g‘ri javob: $answer';
+  }
+
+  @override
+  String get grpNoAnswer => 'Javob berilmagan';
+
+  @override
+  String grpPage(String page) {
+    return '$page-bet';
+  }
+
+  @override
+  String get grpErrNotConfigured =>
+      'Guruhlar FORENSIC EXPERT serveri ulangach ishlaydi.';
+
+  @override
+  String get grpErrSessionExpired =>
+      'Sessiya tugagan. Qaytadan hisobga kiring.';
+
+  @override
+  String get grpErrOffline =>
+      'Internet yo‘q. Ulanishni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get grpErrServer =>
+      'Serverda xatolik. Birozdan so‘ng qayta urinib ko‘ring.';
+
+  @override
+  String get grpErrForbidden => 'Bu guruhga kirish huquqingiz yo‘q.';
+
+  @override
+  String get grpErrRateLimited =>
+      'Urinishlar juda ko‘p. Bir soatdan keyin qayta urinib ko‘ring.';
+
+  @override
+  String get grpErrBadCode => '8 belgili guruh kodini kiriting.';
+
+  @override
+  String get grpErrCodeAmbiguous =>
+      'Guruh kodida 0, O, 1, I va L bo‘lmaydi. Kodni ustoz ekrani bilan solishtiring: o‘xshash harf yoki raqam bo‘lishi mumkin (masalan, 2 yoki Z, 8 yoki B).';
+
+  @override
+  String get grpErrNotFound =>
+      'Bunday kodli guruh topilmadi. Kodni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get grpErrGroupFull =>
+      'Guruh to‘lgan (200 kishi) — ustozingizga ayting.';
+
+  @override
+  String get grpErrNickLength =>
+      'Taxallus 2–20 belgidan iborat bo‘lishi kerak.';
+
+  @override
+  String get grpErrNickChars =>
+      'Faqat harf, raqam, bo‘shliq va . _ \' - belgilaridan foydalaning (email yoki havola emas).';
+
+  @override
+  String get grpErrNickBlocked => 'Boshqa taxallus tanlang.';
+
+  @override
+  String get grpErrNickTaken =>
+      'Bu taxallus guruhda band. Harf yoki raqam qo‘shing.';
+
+  @override
+  String get grpErrBadName => 'Guruh nomi 2–60 belgidan iborat bo‘lishi kerak.';
+
+  @override
+  String get grpErrTooManyGroups =>
+      'Sizda allaqachon 30 ta guruh bor — bu eng ko‘pi.';
+
+  @override
+  String get grpErrInvalidSettings =>
+      'Sozlamalarni tekshiring: 1–50 savol, vaqt 1–180 daqiqa.';
+
+  @override
+  String get grpErrBadDue =>
+      'Muddat kelajakda (bir yil ichida) bo‘lishi kerak.';
+
+  @override
+  String get grpErrRevealNeedsDue =>
+      '«Muddat tugagach» uchun muddat belgilang.';
+
+  @override
+  String grpErrNotEnoughQuestions(int available) {
+    return 'Mavzuda faqat $available ta savol bor.';
+  }
+
+  @override
+  String get grpErrTooManyAssignments =>
+      'Guruhda 50 ta ochiq test bor. Avval ba’zilarini yoping.';
+
+  @override
+  String get grpErrClosed => 'Ustoz bu testni yopgan.';
+
+  @override
+  String get grpErrPastDue => 'Bu testning muddati o‘tgan.';
+
+  @override
+  String get grpErrAlreadySubmitted => 'Bu testni allaqachon yuborgansiz.';
+
+  @override
+  String get grpErrTimeOver => 'Vaqt tugadi — yangi javoblar qabul qilinmaydi.';
+
+  @override
+  String get grpErrNotSubmitted => 'Bu testni hali yubormagansiz.';
 }

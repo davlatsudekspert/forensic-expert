@@ -196,6 +196,34 @@ abstract final class Routes {
       '/home/learn/class/play/${Uri.encodeComponent(id)}';
   static const classScan = '/home/learn/class/scan';
 
+  /// «Ustoz–talaba testi»: kiruvchi havola `/g/<KOD>?a=<test>` (QR).
+  static const groupLinkPrefix = '/g/';
+  static const groups = '/home/learn/groups';
+  static const groupNew = '/home/learn/groups/new';
+  static const groupJoin = '/home/learn/groups/join';
+  static const groupScan = '/home/learn/groups/scan';
+  static String groupJoinWith(String code, {String? assignmentId}) => Uri(
+    path: groupJoin,
+    queryParameters: {'code': code, 'a': ?assignmentId},
+  ).toString();
+  static String group(String gid) =>
+      '/home/learn/groups/${Uri.encodeComponent(gid)}';
+  static String groupAssign(String gid) => '${group(gid)}/assign';
+
+  /// Ustozning jonli paneli (telefon).
+  static String groupAssignment(String gid, String aid) =>
+      '${group(gid)}/a/${Uri.encodeComponent(aid)}';
+  static String groupBoard(String gid, String aid) =>
+      '${groupAssignment(gid, aid)}/board';
+  static String groupPreview(String gid, String aid) =>
+      '${groupAssignment(gid, aid)}/preview';
+
+  /// Talaba: test va natija.
+  static String groupTest(String gid, String aid) =>
+      '${group(gid)}/t/${Uri.encodeComponent(aid)}';
+  static String groupResult(String gid, String aid) =>
+      '${group(gid)}/r/${Uri.encodeComponent(aid)}';
+
   /// Ustoz paneli (Asosiydan 1 bosish) va natijalar ro‘yxati.
   static const teacher = '/home/teacher';
   static const teacherResults = '/home/teacher/results';

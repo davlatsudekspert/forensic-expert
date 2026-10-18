@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart' show ScrollDirection;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,6 +8,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/floating_nav_flag.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../core/widgets/in_bounds_scroll.dart';
 import 'floating_nav.dart';
 
 /// Tab yozuvlari uchun maksimal matn masshtabi: tor ekranda (< 360 dp)
@@ -61,24 +61,14 @@ class _AppShellState extends State<AppShell> {
   }
 
   /// Instagram kabi: kontent pastga skrollda (barmoq yuqoriga) — ixcham,
-  /// yuqoriga skrollda yoki tepada — to‘liq. Faqat vertikal skroll.
+  /// yuqoriga skrollda yoki tepada — to‘liq. Faqat ro‘yxat chegaralari
+  /// ichidagi harakat hisoblanadi: iOS bounce (overscroll qaytishi)
+  /// foydalanuvchining yuqoriga surishi emas.
+  final _hysteresis = ScrollCompactHysteresis();
+
   bool _onScroll(ScrollNotification n) {
-    if (n.metrics.axis != Axis.vertical) return false;
-    if (n is UserScrollNotification) {
-      switch (n.direction) {
-        case ScrollDirection.reverse:
-          _compact.value = true;
-        case ScrollDirection.forward:
-          _compact.value = false;
-        case ScrollDirection.idle:
-          break;
-      }
-    } else if ((n is ScrollUpdateNotification ||
-            n is ScrollMetricsNotification) &&
-        n.metrics.pixels <= n.metrics.minScrollExtent) {
-      // Sahifa tepasida (yoki yangi sahifa ochilganda) — doim to‘liq.
-      _compact.value = false;
-    }
+    final v = _hysteresis.update(n);
+    if (v != null) _compact.value = v;
     return false;
   }
 
