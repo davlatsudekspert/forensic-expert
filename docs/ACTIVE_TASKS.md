@@ -1,6 +1,34 @@
 # ACTIVE TASKS
 
-Yangilangan: 2026-10-11. Format: [holat] vazifa — egasi/keyingi qadam.
+Yangilangan: 2026-10-19. Format: [holat] vazifa — egasi/keyingi qadam.
+
+## Shanba (limit tiklanganda) — «Har darsdan keyin 10 savollik test» (egasi, 2026-10-19)
+Talab (egasi so‘zi bilan): Ustoz paneli → Darslar → har mavzu tagida shu mavzu
+bo‘yicha **10 ta test**. Boshlanganda **QR** chiqadi (ustoz telefoni → monitor);
+talabalar skanerlab qo‘shiladi — akkauntda ism bo‘lsa yozmaydi, bo‘lmasa yozadi.
+Monitorda **ism bo‘yicha onlayn natija, o‘rinlari bilan**. **Har dars uchun alohida.**
+Oxirida **xato yechilgan savollarni ustoz talabalar bilan muhokama qiladi.**
+
+Mavjud (qayta qilinmaydi): dars oxiridan shu mavzu bo‘yicha test boshlash
+(`showTopicTestChoice`), 6 xonali kod + QR, taxallus bilan qo‘shilish, jonli
+reyting, katta ekran rejimi, qayta ulanish — «Sinfda test» (class quiz).
+
+Qilinadigan ishlar:
+1. **Savol banki — har dars uchun 10 ta** (eng katta ish, Sonnet agentlar):
+   81 ta «Toksikologik kimyo» darsi (bank yo‘q) + qolgan ~84 mavzu (25/109 tayyor).
+   Manba = o‘sha darsning kitobi va beti; 1 aniq javob, mantiqan bog‘liq
+   chalg‘ituvchilar, tushuntirish; Opus ilmiy tekshiruvi; serverga seed.
+2. **Ism avtomatik:** kirgan talabada profil ismi taxallus o‘rniga avtomatik
+   (o‘zgartirish mumkin); kirmagan — hozirgidek yozadi. Filtr/nick tekshiruvi saqlanadi.
+3. **Monitor:** natijalar ism bo‘yicha, o‘rin (1, 2, 3…), to‘g‘ri soni va vaqt;
+   10 savol uchun default sozlama.
+4. **«Xatolar tahlili» ekrani (yangi):** test tugagach ustozda/monitorda har savol
+   bo‘yicha necha % xato qilgani, eng ko‘p xato qilingan savollar ro‘yxati;
+   savolni ochib to‘g‘ri javob + tushuntirish + manba/bet → muhokama.
+   Talaba ismlari bu ekranda ko‘rsatilmaydi (faqat foizlar) — maxfiylik.
+5. Har dars uchun alohida sessiya/tarix: «Bu darsning oldingi testlari» ro‘yxati.
+6. Sinov: STUDENT + TEACHER, 390/320 dp, proyektor 1920×1080, internet uzilishi;
+   iloji bo‘lsa egasi bilan 2 telefonda real QR sinovi.
 
 ## Egasidan ruxsat kutilmoqda
 0. [egasi] **Giyasov Z.I. «Sud tibbiyoti» (Toshkent, 2018) — nusxasi kerak.**
