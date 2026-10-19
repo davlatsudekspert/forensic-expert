@@ -15,6 +15,8 @@
 - **Pro/pullik funksiyalar (egasi qarori, 2026-10-17; Apple 2.5.19 va 2.1):** hozirgi ilovaga Pro kodi, to‘lov tugmalari, paywall ekranlari va yashirin yoki masofadan yoqiladigan bayroqlar QO‘SHILMAYDI; hamma funksiya bepul va ochiq. «Pro · hozircha bepul» kabi belgilar ham qo‘yilmaydi. Faqat serverda ko‘rinmas tayyorgarlik mumkin (`plan`: free/pro, ixtiyoriy `pro_until`), ilovada hech narsani o‘zgartirmaydi. Pro tayyor bo‘lganda — to‘liq ishlaydigan holda, yangi versiya sifatida: do‘kon mahsulotlari va narxlari, sandbox sinovi (xarid, bekor qilish, restore, tugash), server tomonida xarid tekshiruvi, «Restore purchases», ekranda narx/muddat/avto-uzayish/bekor qilish yo‘li, tekshiruvchiga sandbox akkaunt va izoh, «3 oy bepul» — do‘konning intro-offer'i sifatida. Hozirgi vazifa: to‘lovga oid hech narsa yozilmaydi; foydalanuvchi to‘plash, tasdiqlangan kontent va sifat.
 - NFCSTORE va BugunBor repolarini o‘zgartirmang; maxfiy kalitlarni chiqarmang.
 
+- **Eslatma (egasi so‘rovi, 2026-10-19):** egasi «nima qilamiz», «shanba», «reja» deb yozsa yoki yangi ish boshlasa — avval `docs/ACTIVE_TASKS.md` dagi **«Shanba (limit tiklanganda)»** rejasini (10 savollik dars testi + «ilovadan chiqmasin» 6 bandi) eslating.
+
 ## Model tanlash (egasi talabi, 2026-10-10)
 - **Fable ishlatilmaydi** — limitni tez yeydi.
 - Agentlar (subagent) uchun standart model — **Sonnet**.

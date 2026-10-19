@@ -30,6 +30,17 @@ Qilinadigan ishlar:
 6. Sinov: STUDENT + TEACHER, 390/320 dp, proyektor 1920×1080, internet uzilishi;
    iloji bo‘lsa egasi bilan 2 telefonda real QR sinovi.
 
+### Shanba rejasi — 2-qism: «Talaba/mutaxassis ilovadan chiqmasin» (egasi, 2026-10-19)
+Tamoyil: odamni foyda ushlab turadi, hiyla emas (dark pattern, majburiy
+bildirishnoma, yashirin to‘lov — YO‘Q; Apple 2.5.19/5.6). 10 savollik test
+ishidan keyin, navbat bilan (ustuvorlik: 1 → 2 → 3):
+1. **Kunning savoli / kunning holati** — har kuni 1 qisqa savol yoki keys, manba+bet bilan.
+2. **Shaxsiy progress** — o‘tilgan mavzular, xato savollar, «xatolarimni takrorlash».
+3. **Imtihon/attestatsiyaga tayyorlov** — fakultet/kurs bo‘yicha to‘plamlar, vaqtli sinov imtihoni.
+4. **Mutaxassis ish quroli** — tezkor qidiruv, kalkulyator, cutoff/konsentratsiyalar, xulosa yordamchisi.
+5. **Bildirishnomalar faqat rozilik bilan** — «Ustoz yangi test berdi», «Bugungi savol tayyor».
+6. **Hamjamiyat** — savol-javob, ekspert tasdiqlagan javoblar.
+
 ## Egasidan ruxsat kutilmoqda
 0. [egasi] **Giyasov Z.I. «Sud tibbiyoti» (Toshkent, 2018) — nusxasi kerak.**
    Muallif aniqlandi: **Giyasov Zaynitdin Isamutdinovich**, t.f.d., professor,
