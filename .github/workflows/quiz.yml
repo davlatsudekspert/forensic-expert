@@ -19,6 +19,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   quiz:
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -53,6 +54,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ always() && inputs.dry_run != true }}
         with:
+          retention-days: 3
           name: quiz-${{ inputs.topic_id }}
           path: tools/slides/out_quiz/
           if-no-files-found: ignore

@@ -16,6 +16,7 @@ permissions:
   contents: read
 jobs:
   slides:
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,6 +37,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ inputs.dry_run != true }}
         with:
+          retention-days: 3
           name: slides-${{ inputs.topic_id }}
           path: tools/slides/out/
           if-no-files-found: ignore
