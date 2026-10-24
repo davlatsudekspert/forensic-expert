@@ -291,6 +291,286 @@
     "ru": "pending",
     "en": "pending"
    }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q11",
+   "question_i18n": {
+    "uz": "GSX da moddalarning ajralishi qaysi kattalik bilan tushuntiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rf qiymati",
+     "Taqsimlanish koeffitsiyenti (K)",
+     "Optik zichlik",
+     "Molyar massa"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra GSX da moddalarning ajralishi ularning taqsimlanish koeffitsiyenti (K) bilan tushuntiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "47"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q12",
+   "question_i18n": {
+    "uz": "Taqsimlanish koeffitsiyenti K kichik bo‘lsa, modda kolonkadan qanday chiqadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tez chiqadi",
+     "Sekin chiqadi",
+     "Umuman chiqmaydi",
+     "Kolonkada parchalanadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "K kichik bo‘lsa, modda qo‘zg‘almas fazada kam shimiladi va kolonkadan tez chiqariladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "48"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q13",
+   "question_i18n": {
+    "uz": "Kitobga ko‘ra chin ushlanish vaqti qanday topiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "t(um) + t(m)",
+     "t(m) − t(um)",
+     "t(um) − t(m)",
+     "t(um) × t(m)"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Chin ushlanish vaqti modda ushlanish vaqtidan o‘lik ushlanish vaqti ayirmasiga teng: t(chin) = t(um) − t(m)."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "48"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q14",
+   "question_i18n": {
+    "uz": "Integral detektorning signali nimaga proporsional?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Gaz oqimi tezligiga",
+     "Kolonka uzunligiga",
+     "Ushlanish vaqtiga",
+     "Gaz oqimidagi modda umumiy massasiga"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Integral detektor signali asosan gaz oqimidagi tekshiriluvchi moddaning umumiy massasiga to‘g‘ri proporsional."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "189"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q15",
+   "question_i18n": {
+    "uz": "Alangali-ionizatsion detektor qaysi turga misol qilib keltirilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Integral detektor",
+     "Differensial konsentratsion detektor",
+     "Differensial oqimli detektor",
+     "Termoion detektor"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Oqimli detektorlarga alangali-ionizatsion detektorlar misol bo‘ladi (vodorod alangasida ionlashgan radikallar hosil bo‘ladi)."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "189"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q16",
+   "question_i18n": {
+    "uz": "Quyidagi gazlardan qaysi biri GX da asosiy inert (tashuvchi) gaz sifatida sanalgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Vodorod",
+     "Geliy",
+     "Kislorod",
+     "Is gazi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kitobda asosiy inert gazlar: azot, geliy, argon."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "189"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q17",
+   "question_i18n": {
+    "uz": "Spirtlarni ichki standartlash usulida aniqlashda ichki standart sifatida qaysi modda olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Propil spirti",
+     "Metil spirti",
+     "Amil spirti",
+     "Aseton"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra ichki standart sifatida propil spirti olinadi va hisob kalibrovka grafigi orqali bajariladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q18",
+   "question_i18n": {
+    "uz": "Kalibrovka grafigi qaysi nisbat va konsentratsiya asosida tuziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Propil nitrit balandligining etil nitrit balandligiga nisbati",
+     "Etil va propil nitrit ushlanish vaqtlari ayirmasi",
+     "Etil spirtining qaynash harorati",
+     "Etil nitrit (h1) balandligining propil nitrit (h2) balandligiga nisbati"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Grafik etil nitrit (h1) cho‘qqi balandligining propil nitrit (h2) balandligiga nisbati va modda konsentratsiyasi asosida tuziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q19",
+   "question_i18n": {
+    "uz": "Kitobga ko‘ra GSX usulining nisbiy xatoligi taxminan qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "±0,1–0,5 %",
+     "±1,0–1,5 %",
+     "±5–10 %",
+     "±15–20 %"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "GSX ning aniqligi yetarlicha yuqori, nisbiy xatoligi ±1,0–1,5 % atrofida."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q20",
+   "question_i18n": {
+    "uz": "Gaz xromatografning qaysi qismi kolonkalarni zarur haroratgacha isitadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dozator",
+     "Monometr",
+     "Termostat",
+     "Oqim stabilizatori"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Termostat — xromatografik kolonkalar joylashtiriladigan va zarur haroratgacha isitiladigan kamera."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "191"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
   }
  ],
  "sources": [

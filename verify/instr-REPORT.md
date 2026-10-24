@@ -75,3 +75,8 @@ Eslatma: ilova faqat PNG/JPG qabul qiladi (spec §2a) — SVG lar PNG qilib tayy
 - Egasi: qurilma modelini (Meta-Xrom Kristallyuks yoki Xromatek Kristall) va pasportni yuborsin → instr-01 ga tugma/menyu bosqichlari qo‘shiladi.
 - Ustoz: COHb formulasi, 538/550 moslashtirishi va rejim tanlovi tasdig‘i (uncertain bandlar).
 - Decklarni 38–42 slayd va 20 MCQ ga yetkazish — alohida buyruq bilan.
+
+
+## 2026-10-24 (kech) — 38–42 slayd / 20 mcq ga kengaytirish (agent hisobotidan)
+Deck 1: 42 slayd (38 diagrammali), deck 2: 42 (37), deck 3: 41 (38); har birida 20 mcq. Validator --strict: 0 xato.
+Ilmiy muharrir ko'rishi kerak (uncertain): K taqsimlanish koeffitsiyenti ta'rifi (toks 47–48 vs 188); detektor nomi (48 vs 189); Lambert–Beer (faqat dvssm 245; toks 163); COHb rang reaksiyalari (toks 85 vs 218); CO saqlanish muddati (122 kun vs 25–40 soat); Photometric 8λ tenglamasi va Quantitation rejimi COHb uchun kitobda yo'q; xavfsizlik/sifat nazorati manbasi yo'q (ochiq aytilgan); kokaetilen keysi (gmt 61 — faqat topshiriq); Kristallyuks/Xromatek va Shimadzu GX-MS qo'llanmalari topilmadi (to'qilmadi).

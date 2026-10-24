@@ -291,6 +291,286 @@
     "ru": "pending",
     "en": "pending"
    }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q11",
+   "question_i18n": {
+    "uz": "Kuchli zaharlanish yoki o‘lim holatida kitobga ko‘ra qaysi namuna tahlili muhim hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Peshob",
+     "So‘lak",
+     "Qon",
+     "Ter"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kuchli zaharlanishda yoki o‘limda peshobdan zaharli modda kam aniqlanishi mumkin, shu sababli qondan tahlil olib borish muhim."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q12",
+   "question_i18n": {
+    "uz": "Kitobga ko‘ra fensiklidin mass-spektrida qaysi m/z cho‘qqilar to‘plami hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "243, 214, 200, 186, 166, 158, 84, 77",
+     "245, 146, 42, 189, 44, 105, 29, 43",
+     "58, 146, 56, 105, 77, 42, 106, 40",
+     "180, 209, 182, 152, 181, 30, 211, 138"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Fensiklidin mass-spektrometriyada 243, 214, 200, 186, 166, 158, 84, 77 m/z cho‘qqilar hosil qiladi; qolgan to‘plamlar fentanil, efedrin va ketaminniki."
+   },
+   "source": {
+    "author": "Yuldashev Z.O. va boshq.",
+    "title": "Giyohvand moddalar tahlili, 2024",
+    "page": "92"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q13",
+   "question_i18n": {
+    "uz": "GX-MS da 44, 72, 207, 221, 280, 323 m/z spektrlar qaysi modda uchun xarakterli?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ketamin",
+     "Diazepam",
+     "Psilotsin",
+     "LSD"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra LSD GX-MS da 44, 72, 207, 221, 280, 323 m/z spektrlar hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O. va boshq.",
+    "title": "Giyohvand moddalar tahlili, 2024",
+    "page": "97"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q14",
+   "question_i18n": {
+    "uz": "Full Scan va SIM ni bitta usulda birga ishlatishning asosiy kamchiligi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sezgirlikning ma’lum darajada yo‘qolishi",
+     "Tahlil vaqtining ikki baravar oshishi",
+     "Namuna hajmining ko‘proq talab etilishi",
+     "TIC hosil bo‘lmasligi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ikkala rejimda skanerlash sezgirlikni qisman pasaytiradi; aksincha, tahlil bir marta bajariladi va namuna kamroq sarflanadi."
+   },
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "2"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q15",
+   "question_i18n": {
+    "uz": "SCION misolida yig‘ish kechikishi (collection delay) 5 daqiqaga nima uchun o‘rnatilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ion manbasini isitish uchun",
+     "Kolonkani sovutish uchun",
+     "Erituvchi cho‘qqisini yozib olmaslik uchun",
+     "Kutubxonani yuklash uchun"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kechikish erituvchi cho‘qqisi tahlilga tushmasligi uchun belgilangan."
+   },
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "2"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q16",
+   "question_i18n": {
+    "uz": "SCION misolida 2-nuqtada umumiy skan vaqti 300 ms nimadan iborat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "200 ms Full Scan + 100 ms SIM",
+     "250 ms Full Scan + 50 ms SIM",
+     "150 ms Full Scan + 150 ms SIM",
+     "250 ms Full Scan + 250 ms SIM"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ikkala rejimda skanerlangani uchun umumiy vaqt 250 ms (Full Scan) + 50 ms (SIM) = 300 ms."
+   },
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "2"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q17",
+   "question_i18n": {
+    "uz": "Kitobga ko‘ra GSX sifat tahlilida qaysi usul fizik usullar qatorida GSX bilan birga bajarilishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Titrimetriya",
+     "Gravimetriya",
+     "Potensiometrik titrlash",
+     "Mass-spektrometriya"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "GSX ni UF, IK, mass-spektr, lyuminestsent va YaMR kabi fizik usullar bilan birgalikda bajarish mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "48"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q18",
+   "question_i18n": {
+    "uz": "Tritsiklik antidepressantlarni GSX da tahlil qilishdan oldin kitobga ko‘ra nima bajariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Natriy nitrit bilan alkilnitritga o‘tkazish",
+     "Triftorsirka angidridi bilan derivatizatsiya",
+     "Ammiak bilan neytrallash",
+     "Kislotali gidroliz"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Usulning kamchiligi: antidepressantlar triftorsirka angidridi yordamida derivatizatsiya qilinib, so‘ng tahlil qilinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "133"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q19",
+   "question_i18n": {
+    "uz": "Geroin yoki uning metabolitlari (6-monoasetilmorfin, morfin) kitobga ko‘ra qaysi usullarda aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat YuQX",
+     "GX-MS va YuSSX-MS",
+     "Faqat UB-spektrofotometriya",
+     "Faqat titrlash"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Geroin va uning metabolitlari 6-monoasetilmorfin hamda morfin GX-MS va YuSSX-MS usullarida aniqlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O. va boshq.",
+    "title": "Giyohvand moddalar tahlili, 2024",
+    "page": "38"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q20",
+   "question_i18n": {
+    "uz": "Piretroidlar GSX harorat dasturida kitobda detektor harorati qancha deb berilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "180 °C",
+     "245 °C",
+     "250 °C",
+     "260 °C"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Detektor harorati 260 °C, injektor harorati 250 °C (termostat 180 °C dan 220 °C gacha dasturlanadi)."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "270"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
   }
  ],
  "sources": [
@@ -317,6 +597,10 @@
   {
    "author": "Yuldashev Z.O. va boshq.",
    "title": "Giyohvand moddalar tahlili, 2024"
+  },
+  {
+   "author": "Yuldashev Z.O., Umarova G.Q.",
+   "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025"
   }
  ]
 }

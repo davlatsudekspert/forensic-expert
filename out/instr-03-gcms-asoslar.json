@@ -228,6 +228,79 @@
    }
   },
   {
+   "title": "GX detektorlari va MS",
+   "bullets": [
+    {
+     "text": "Tuzilishi bo‘yicha katarometr, alangali ionlanish, elektron ushlovchi va termoion detektorlar bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "48"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Katarometr toza qo‘zg‘aluvchi gaz bilan modda aralashmasi orasidagi issiqlik o‘tkazish farqini aniqlaydi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Detektordagi o‘zgarish elektr impulsga aylanadi; yozuvchi lentadagi egri chiziq (xromatogramma) modda sifati va miqdorini beradi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MS — GX detektorlaridan biri; boshqalardan farqi: sifat va miqdor tahlilini birga bajaradi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "GX detektorlari",
+    "children": [
+     {
+      "label": "Katarometr",
+      "items": [
+       "Issiqlik o‘tkazuvchanlik farqi"
+      ]
+     },
+     {
+      "label": "Alangali ionlanish"
+     },
+     {
+      "label": "Elektron ushlovchi"
+     },
+     {
+      "label": "Termoion"
+     },
+     {
+      "label": "Mass-spektrometr (MS)",
+      "items": [
+       "Sifat va miqdorni birga beradi",
+       "Ionlarni m/z bo‘yicha ajratadi"
+      ]
+     }
+    ],
+    "caption": "Detektorlar (toks 48; Shimadzu)"
+   },
+   "teacher_notes": "48-betda «elektron tashuvchi» deb yozilgan; «ushlovchi» (189-bet) deb olindi.",
+   "diagram_note": "48-betda «elektron tashuvchi» yozilgan — «ushlovchi» deb olindi."
+  },
+  {
    "title": "Namunani kiritish",
    "bullets": [
     {
@@ -877,6 +950,155 @@
    "teacher_notes": ""
   },
   {
+   "title": "Full Scan va SIM bitta usulda: sozlama misoli",
+   "bullets": [
+    {
+     "text": "MSWS usulida Full Scan va SIM bir yurishda birga ishlatiladi: Full Scan 5–30 daqiqada 50–500 massalarni skanerlaydi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "1–2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "SIM oynalari alohida birikmalar uchun beriladi: masalan, naftalin 8,53 daq (±0,50) da 50 ms davomida o‘lchanadi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Erituvchi cho‘qqisini yozmaslik uchun yig‘ish kechikishi 5 daqiqaga o‘rnatilgan.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1-nuqtada skan 250 ms; 2-nuqtada (8,20 daq dan, 0,5 daq oyna) Full Scan 250 ms + SIM 50 ms = 300 ms.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Full Scan vaqti",
+      "value": "5–30",
+      "unit": "daq"
+     },
+     {
+      "label": "Massa oralig‘i",
+      "value": "50–500"
+     },
+     {
+      "label": "Naftalin SIM oynasi",
+      "value": "8,53 ± 0,50",
+      "unit": "daq"
+     },
+     {
+      "label": "Yig‘ish kechikishi",
+      "value": "5",
+      "unit": "daq"
+     },
+     {
+      "label": "1-nuqta skani",
+      "value": "250",
+      "unit": "ms"
+     },
+     {
+      "label": "2-nuqta (250 + 50)",
+      "value": "300",
+      "unit": "ms"
+     }
+    ],
+    "caption": "SCION MSWS misoli (1–2-bet)"
+   },
+   "teacher_notes": "Qiymatlar SCION texnik eslatmasidagi misol; boshqa asbobda sozlamalar farq qiladi."
+  },
+  {
+   "title": "Bitta usulda ikki rejim: afzallik va kamchilik",
+   "bullets": [
+    {
+     "text": "Afzalligi: tahlil bir marta bajariladi, umumiy vaqt kamayadi va namuna kamroq sarflanadi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kamchiligi: ikki rejimda skanerlash sezgirlikning ma’lum darajada yo‘qolishiga olib keladi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ikki ma’lumot to‘plami hosil bo‘ladi; ishlov berish tajribali foydalanuvchiga ko‘proq mos.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sikl va dwell vaqti ma’lumot nuqtalari yetarli bo‘lishi uchun optimallanadi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Afzalliklari",
+      "items": [
+       "Tahlil bir marta bajariladi",
+       "Umumiy vaqt kamayadi",
+       "Namuna kamroq sarflanadi"
+      ]
+     },
+     {
+      "title": "Kamchiliklari",
+      "items": [
+       "Sezgirlik qisman yo‘qoladi",
+       "Ikki ma’lumot to‘plami",
+       "Ishlov berish murakkabroq"
+      ]
+     }
+    ],
+    "caption": "Scan + SIM (SCION, 2-bet)"
+   },
+   "teacher_notes": ""
+  },
+  {
    "title": "Natija turlari: TIC, spektr",
    "bullets": [
     {
@@ -989,6 +1211,78 @@
      "Ushlanish indeksi bilan tasdiq"
     ],
     "caption": "Kutubxona qidiruvi (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Kutubxona qidiruvi: noma’lum cho‘qqi",
+   "bullets": [
+    {
+     "text": "Full Scan TIC beradi; TIC cho‘qqisini tanlab, uning mass-spektrini ko‘rish mumkin.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "1"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Spektr kutubxonadagi ma’lum birikmalar bilan (masalan, NIST) solishtirilib, noma’lum modda aniqlanadi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "1"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MSWS noma’lum cho‘qqilarni hisobotga chiqarib, tanlangan kutubxonadan avtomatik qidirishi mumkin.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Natijani tahlilchi ko‘rib chiqib, moslik to‘g‘ri bo‘lish ehtimolini baholaydi (misol: 20,81 daq cho‘qqisi — Cashmeran).",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "TIC",
+      "text": "Full Scan umumiy ion xromatogrammasini beradi"
+     },
+     {
+      "title": "Cho‘qqi",
+      "text": "Cho‘qqi tanlanib, mass-spektr ko‘riladi"
+     },
+     {
+      "title": "Kutubxona",
+      "text": "Spektr kutubxona (NIST) bilan solishtiriladi"
+     },
+     {
+      "title": "Avtomatik",
+      "text": "Noma’lum cho‘qqilar kutubxonadan qidiriladi"
+     },
+     {
+      "title": "Baholash",
+      "text": "Tahlilchi moslik ehtimolini baholaydi"
+     }
+    ],
+    "caption": "Library search (SCION, 1–2-bet)"
    },
    "teacher_notes": ""
   },
@@ -1182,6 +1476,159 @@
    "teacher_notes": "Kitob ionlarni intensivlik tartibida ro‘yxatlaydi; «farqlanadi» xulosasi o‘qituvchining sharhi, uncertain."
   },
   {
+   "title": "Mass-spektr misollari: benzodiazepinlar",
+   "bullets": [
+    {
+     "text": "Xlordiazepoksid: 282, 299, 284, 283, 241, 56, 301, 253 m/z; diazepam: 256, 283, 284, 285, 257, 255, 258, 286 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "139–140"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diazepam mass-spektri kitobda 256, 283, 284, 285, 257, 255, 258, 286 m/z cho‘qqilar bilan berilgan.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "140"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nitrazepam: 280, 253, 281, 206, 234, 252, 254, 264 m/z cho‘qqilar.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "142"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Oksazepam: 257, 77, 268, 239, 205, 267, 233, 259 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "143"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fenazepam: 321, 349, 177, 75 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "144"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Modda",
+     "Mass-spektr cho‘qqilari (m/z)"
+    ],
+    "rows": [
+     [
+      "Xlordiazepoksid",
+      "282, 299, 284, 283, 241, 56, 301, 253"
+     ],
+     [
+      "Diazepam",
+      "256, 283, 284, 285, 257, 255, 258, 286"
+     ],
+     [
+      "Nitrazepam",
+      "280, 253, 281, 206, 234, 252, 254, 264"
+     ],
+     [
+      "Oksazepam",
+      "257, 77, 268, 239, 205, 267, 233, 259"
+     ],
+     [
+      "Fenazepam",
+      "321, 349, 177, 75"
+     ]
+    ],
+    "caption": "Benzodiazepinlar (gmt 139–144)"
+   },
+   "teacher_notes": "Cho‘qqilar kitobdagi tartibda berilgan; kitobda intensivlik tartibi ekanligi aytilmagan."
+  },
+  {
+   "title": "Mass-spektr misollari: LSD, psilotsin, ketamin",
+   "bullets": [
+    {
+     "text": "LSD GX-MS da 44, 72, 207, 221, 280, 323 m/z xarakterli spektrlar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "97"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Psilotsin: 58, 204, 59, 42, 30, 146, 77, 44 m/z; psilotsibin: 58, 42, 30, 51, 204, 146, 77, 44 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "100"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ketamin: 180, 209, 182, 152, 181, 30, 211, 138 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "93"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Siklodol: 98, 105, 55, 41, 99, 77, 218, 84 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "50"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Modda",
+     "Mass-spektr cho‘qqilari (m/z)"
+    ],
+    "rows": [
+     [
+      "LSD",
+      "44, 72, 207, 221, 280, 323"
+     ],
+     [
+      "Psilotsin",
+      "58, 204, 59, 42, 30, 146, 77, 44"
+     ],
+     [
+      "Psilotsibin",
+      "58, 42, 30, 51, 204, 146, 77, 44"
+     ],
+     [
+      "Ketamin",
+      "180, 209, 182, 152, 181, 30, 211, 138"
+     ],
+     [
+      "Siklodol",
+      "98, 105, 55, 41, 99, 77, 218, 84"
+     ]
+    ],
+    "caption": "m/z misollari (gmt 50, 93, 97, 100)"
+   },
+   "teacher_notes": ""
+  },
+  {
    "title": "GX-MS qo‘llanadigan ob’ektlar",
    "bullets": [
     {
@@ -1248,6 +1695,78 @@
    "teacher_notes": ""
   },
   {
+   "title": "GX-MS qo‘llanish misollari: usullar jadvali",
+   "bullets": [
+    {
+     "text": "Geroinni GSX, gaz-xromato-mass-spektrometriya va immunobiologik usullar bilan aniqlash mumkin.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "37"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Geroin yoki uning metabolitlari 6-monoasetilmorfin va morfin GX-MS va YuSSX-MS usullarida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "38"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Psilotsin va psilotsibin miqdori UB-spektrofotometriya va gaz-xromato-mass-spektrometriya bilan aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "100"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Geksaxloran izomerlari va metabolitlari GSX, GX-MS va YuSSX usullarida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "159"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Ob’ekt",
+     "Usul"
+    ],
+    "rows": [
+     [
+      "Geroin",
+      "GSX, GX-MS, immunobiologik"
+     ],
+     [
+      "6-monoasetilmorfin, morfin",
+      "GX-MS, YuSSX-MS"
+     ],
+     [
+      "Kodein, narkotin",
+      "GX-MS yoki YuSSX-MS"
+     ],
+     [
+      "Psilotsin, psilotsibin",
+      "UB-spektrofotometriya, GX-MS"
+     ],
+     [
+      "Geksaxloran izomerlari",
+      "GSX, GX-MS, YuSSX"
+     ]
+    ],
+    "caption": "GX-MS qo‘llanishi (gmt 29–38, 100; toks 159)"
+   },
+   "teacher_notes": ""
+  },
+  {
    "title": "Ajratib olish misoli: peshob",
    "bullets": [
     {
@@ -1309,6 +1828,103 @@
     "caption": "Piretroidlar uchun misol (toks 269)"
    },
    "teacher_notes": "Kitob bu usulni sintetik piretroidlar bo‘limida beradi; boshqa moddalar uchun sharoit farq qiladi."
+  },
+  {
+   "title": "Namuna tanlash: peshob va qon",
+   "bullets": [
+    {
+     "text": "Odatda skrining tahlillarda peshob olinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "132"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kuchli zaharlanish yoki o‘lim holatida peshobdan zaharli modda kam aniqlanishi mumkin; shu sababli qondan tahlil muhim.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "132"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ajratishda suyuqlik-suyuqlik va qattiq fazali ekstraksiya usullaridan foydalaniladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "132"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Peshob",
+      "items": [
+       "Skrining uchun odatiy namuna",
+       "Kuchli zaharlanishda modda kam bo‘lishi mumkin"
+      ]
+     },
+     {
+      "title": "Qon",
+      "items": [
+       "O‘lim va kuchli zaharlanishda muhim",
+       "Tahlil qondan olib boriladi"
+      ]
+     }
+    ],
+    "caption": "Namuna tanlash (toks 132)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Namuna tayyorlash: ekstraksiya va derivatizatsiya",
+   "bullets": [
+    {
+     "text": "Namuna (qon, peshob) ishqoriy muhitda organik erituvchi (masalan, n-geksan) bilan ekstraksiya qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "132"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Organik qatlam kislotali eritmada ekstraksiya qilinib, YuSSX uchun yoki organik erituvchida reekstraksiyalanib GSX uchun tayyorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "132"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tritsiklik antidepressantlar GSX da kapillyar kolonkalarda tahlil qilinadi; ular triftorsirka angidridi bilan derivatizatsiya qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "133"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Qon yoki peshob",
+     "Ishqoriy muhitda ekstraksiya (n-geksan)",
+     "Kislotada, so‘ng reekstraksiya",
+     "Derivatizatsiya (triftorsirka angidridi)",
+     "Kapillyar kolonkada GSX"
+    ],
+    "caption": "Namuna tayyorlash (toks 132–133)"
+   },
+   "teacher_notes": "Derivatizatsiya kitobda antidepressantlar misolida berilgan."
   },
   {
    "title": "GX harorat dasturi: piretroidlar",
@@ -1441,6 +2057,60 @@
    "teacher_notes": ""
   },
   {
+   "title": "Natija talqini va sud-kimyoviy xulosa",
+   "bullets": [
+    {
+     "text": "Sifat tahlili ushlanish parametrlari va standart bilan solishtirishga tayanadi; fizik usullar (mass-spektr ham) bilan birga bajariladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kutubxona natijasi moslik ehtimoli sifatida beriladi; uni tahlilchi ko‘rib chiqadi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shubhali natijada tekshiruv o‘qituvchi (mutaxassis) bilan birga takrorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dalolatnoma xulosasida aniqlangan va aniqlanmagan zaharli moddalar nomma-nom yoziladi; ekspert imzosi va vaqt qo‘yiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "221"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Ushlanish vaqti solishtiriladi",
+     "Mass-spektr (m/z) tekshiriladi",
+     "Kutubxona moslik ehtimoli",
+     "Mutaxassis qarori",
+     "Dalolatnoma xulosasi"
+    ],
+    "caption": "Talqin yo‘li (toks 48, 190, 221; SCION)"
+   },
+   "teacher_notes": ""
+  },
+  {
    "title": "GX-MS cheklovlari",
    "bullets": [
     {
@@ -1497,6 +2167,87 @@
    "teacher_notes": ""
   },
   {
+   "title": "Xavfsizlik va sifat nazorati",
+   "bullets": [
+    {
+     "text": "Dozator tiqinchalarining zichligi sovun eritmasi bilan tekshiriladi; pufakcha chiqsa, tiqin o‘qituvchi ishtirokida almashtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mikroshprits 0,5 mkl aseton tomchisi bilan tekshiriladi; mikrotomchi bo‘lmasa qayta kalibrlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "SIM da kvantifikator va kvalifikator ionlar yolg‘on musbat natijani kamaytiradi; erituvchi cho‘qqisi uchun yig‘ish kechikishi qo‘yiladi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "1–2"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "GX-MS asbobining xavfsizlik va tuning qoidalari bu deckda berilmagan — ishlab chiqaruvchi qo‘llanmasi talab etiladi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "1–2"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Nazorat",
+     "Qanday",
+     "Manba"
+    ],
+    "rows": [
+     [
+      "Dozator tiqini",
+      "sovun eritmasi, pufakcha yo‘q",
+      "toks 190"
+     ],
+     [
+      "Mikroshprits",
+      "0,5 mkl aseton",
+      "toks 190"
+     ],
+     [
+      "Erituvchi cho‘qqisi",
+      "yig‘ish kechikishi 5 daq",
+      "SCION 2"
+     ],
+     [
+      "Yolg‘on musbat",
+      "kvantifikator + kvalifikator",
+      "SCION 1"
+     ],
+     [
+      "Natija",
+      "tahlilchi ko‘rib chiqadi",
+      "SCION 2"
+     ]
+    ],
+    "caption": "Nazorat nuqtalari"
+   },
+   "teacher_notes": "Asbob xavfsizligi (gaz, vakuum, tuning) bo‘yicha manba topilmadi.",
+   "diagram_note": "GX-MS asbob xavfsizligi bo‘yicha manba yo‘q."
+  },
+  {
    "title": "Qurilma sozlamalari haqida",
    "bullets": [
     {
@@ -1532,6 +2283,51 @@
    ],
    "diagram": null,
    "teacher_notes": "Egasidan: qaysi GX-MS modeli (Shimadzu GCMS-QP?) va ish kompyuteri ekran suratlari kerak."
+  },
+  {
+   "title": "Keys: peshobda kokaetilen topildi",
+   "bullets": [
+    {
+     "text": "Sud-kimyo ekspertizasiga biologik ob’ekt sifatida peshob keltirilgan.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "61"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Peshobdan olingan ajratma GX-MS usulida tahlil qilinganda kokaetilen topilgan.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "61"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Topshiriq: tahlilning interpretatsiyasini o‘tkazish; kitobda tayyor izoh berilmagan — ustoz bilan muhokama qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "61"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Peshob ob’ekt sifatida keltirildi",
+     "Ajratma tayyorlandi",
+     "GX-MS tahlili",
+     "Kokaetilen topildi",
+     "Interpretatsiya (ustoz bilan)"
+    ],
+    "caption": "Keys (gmt 61)"
+   },
+   "teacher_notes": "Kokaetilenning kelib chiqishi kitobda tushuntirilmagan; muhokama uchun ochiq savol.",
+   "diagram_note": "Interpretatsiya kitobda yo‘q; ustoz izohi kerak."
   },
   {
    "title": "Xulosa",
@@ -1600,6 +2396,61 @@
    "teacher_notes": ""
   },
   {
+   "title": "Takrorlash savollari",
+   "bullets": [
+    {
+     "text": "Xromatografning bo‘limlari qaysilar va detektorning ahamiyati nima? Detektor turlarini ayting.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "192"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Moddaning kolonkada ushlanish davri nima va xromatogramma qanday parametrlar bilan xarakterlanadi?",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "192"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Full Scan va SIM rejimlari qanday farqlanadi? Qaysi biri noma’lum, qaysi biri ma’lum modda uchun qulay?",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "1"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kvantifikator va kvalifikator ionlar nima uchun tanlanadi va qanday tanlanadi?",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "1"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kutubxona qidiruvi natijasini nima uchun tahlilchi ko‘rib chiqishi kerak?",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+      "page": "2"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Savollar kitob nazorat savollari (toks 192) va SCION eslatmasi asosida."
+  },
+  {
    "title": "Adabiyotlar",
    "bullets": [
     {
@@ -1607,7 +2458,7 @@
      "source": {
       "author": "Yuldashev Z.O. va boshq.",
       "title": "Giyohvand moddalar tahlili, 2024",
-      "page": "4, 26–100"
+      "page": "4, 26–100, 139–144 (gmt); 48, 132–133, 159, 188–191, 221 (toks)"
      },
      "uncertain": false
     },
@@ -1805,6 +2656,169 @@
     "title": "Giyohvand moddalar tahlili, 2024",
     "page": "77"
    }
+  },
+  {
+   "question": "Kuchli zaharlanish yoki o‘lim holatida kitobga ko‘ra qaysi namuna tahlili muhim hisoblanadi?",
+   "options": [
+    "Peshob",
+    "So‘lak",
+    "Qon",
+    "Ter"
+   ],
+   "correct_index": 2,
+   "explanation": "Kuchli zaharlanishda yoki o‘limda peshobdan zaharli modda kam aniqlanishi mumkin, shu sababli qondan tahlil olib borish muhim.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "132"
+   }
+  },
+  {
+   "question": "Kitobga ko‘ra fensiklidin mass-spektrida qaysi m/z cho‘qqilar to‘plami hosil bo‘ladi?",
+   "options": [
+    "243, 214, 200, 186, 166, 158, 84, 77",
+    "245, 146, 42, 189, 44, 105, 29, 43",
+    "58, 146, 56, 105, 77, 42, 106, 40",
+    "180, 209, 182, 152, 181, 30, 211, 138"
+   ],
+   "correct_index": 0,
+   "explanation": "Fensiklidin mass-spektrometriyada 243, 214, 200, 186, 166, 158, 84, 77 m/z cho‘qqilar hosil qiladi; qolgan to‘plamlar fentanil, efedrin va ketaminniki.",
+   "source": {
+    "author": "Yuldashev Z.O. va boshq.",
+    "title": "Giyohvand moddalar tahlili, 2024",
+    "page": "92"
+   }
+  },
+  {
+   "question": "GX-MS da 44, 72, 207, 221, 280, 323 m/z spektrlar qaysi modda uchun xarakterli?",
+   "options": [
+    "Ketamin",
+    "Diazepam",
+    "Psilotsin",
+    "LSD"
+   ],
+   "correct_index": 3,
+   "explanation": "Kitobga ko‘ra LSD GX-MS da 44, 72, 207, 221, 280, 323 m/z spektrlar hosil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.O. va boshq.",
+    "title": "Giyohvand moddalar tahlili, 2024",
+    "page": "97"
+   }
+  },
+  {
+   "question": "Full Scan va SIM ni bitta usulda birga ishlatishning asosiy kamchiligi nima?",
+   "options": [
+    "Sezgirlikning ma’lum darajada yo‘qolishi",
+    "Tahlil vaqtining ikki baravar oshishi",
+    "Namuna hajmining ko‘proq talab etilishi",
+    "TIC hosil bo‘lmasligi"
+   ],
+   "correct_index": 0,
+   "explanation": "Ikkala rejimda skanerlash sezgirlikni qisman pasaytiradi; aksincha, tahlil bir marta bajariladi va namuna kamroq sarflanadi.",
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+    "page": "2"
+   }
+  },
+  {
+   "question": "SCION misolida yig‘ish kechikishi (collection delay) 5 daqiqaga nima uchun o‘rnatilgan?",
+   "options": [
+    "Ion manbasini isitish uchun",
+    "Kolonkani sovutish uchun",
+    "Erituvchi cho‘qqisini yozib olmaslik uchun",
+    "Kutubxonani yuklash uchun"
+   ],
+   "correct_index": 2,
+   "explanation": "Kechikish erituvchi cho‘qqisi tahlilga tushmasligi uchun belgilangan.",
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+    "page": "2"
+   }
+  },
+  {
+   "question": "SCION misolida 2-nuqtada umumiy skan vaqti 300 ms nimadan iborat?",
+   "options": [
+    "200 ms Full Scan + 100 ms SIM",
+    "250 ms Full Scan + 50 ms SIM",
+    "150 ms Full Scan + 150 ms SIM",
+    "250 ms Full Scan + 250 ms SIM"
+   ],
+   "correct_index": 1,
+   "explanation": "Ikkala rejimda skanerlangani uchun umumiy vaqt 250 ms (Full Scan) + 50 ms (SIM) = 300 ms.",
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf",
+    "page": "2"
+   }
+  },
+  {
+   "question": "Kitobga ko‘ra GSX sifat tahlilida qaysi usul fizik usullar qatorida GSX bilan birga bajarilishi mumkin?",
+   "options": [
+    "Titrimetriya",
+    "Gravimetriya",
+    "Potensiometrik titrlash",
+    "Mass-spektrometriya"
+   ],
+   "correct_index": 3,
+   "explanation": "GSX ni UF, IK, mass-spektr, lyuminestsent va YaMR kabi fizik usullar bilan birgalikda bajarish mumkin.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "48"
+   }
+  },
+  {
+   "question": "Tritsiklik antidepressantlarni GSX da tahlil qilishdan oldin kitobga ko‘ra nima bajariladi?",
+   "options": [
+    "Natriy nitrit bilan alkilnitritga o‘tkazish",
+    "Triftorsirka angidridi bilan derivatizatsiya",
+    "Ammiak bilan neytrallash",
+    "Kislotali gidroliz"
+   ],
+   "correct_index": 1,
+   "explanation": "Usulning kamchiligi: antidepressantlar triftorsirka angidridi yordamida derivatizatsiya qilinib, so‘ng tahlil qilinadi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "133"
+   }
+  },
+  {
+   "question": "Geroin yoki uning metabolitlari (6-monoasetilmorfin, morfin) kitobga ko‘ra qaysi usullarda aniqlanadi?",
+   "options": [
+    "Faqat YuQX",
+    "GX-MS va YuSSX-MS",
+    "Faqat UB-spektrofotometriya",
+    "Faqat titrlash"
+   ],
+   "correct_index": 1,
+   "explanation": "Geroin va uning metabolitlari 6-monoasetilmorfin hamda morfin GX-MS va YuSSX-MS usullarida aniqlanadi.",
+   "source": {
+    "author": "Yuldashev Z.O. va boshq.",
+    "title": "Giyohvand moddalar tahlili, 2024",
+    "page": "38"
+   }
+  },
+  {
+   "question": "Piretroidlar GSX harorat dasturida kitobda detektor harorati qancha deb berilgan?",
+   "options": [
+    "180 °C",
+    "245 °C",
+    "250 °C",
+    "260 °C"
+   ],
+   "correct_index": 3,
+   "explanation": "Detektor harorati 260 °C, injektor harorati 250 °C (termostat 180 °C dan 220 °C gacha dasturlanadi).",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "270"
+   }
   }
  ],
  "extras": [],
@@ -1817,7 +2831,7 @@
   {
    "author": "Yuldashev Z.O. va boshq.",
    "title": "Giyohvand moddalar tahlili, 2024",
-   "page": "4, 26–100"
+   "page": "4, 26–100, 139–144"
   },
   {
    "author": "Shimadzu Corporation",

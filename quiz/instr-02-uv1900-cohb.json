@@ -291,6 +291,286 @@
     "ru": "pending",
     "en": "pending"
    }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q11",
+   "question_i18n": {
+    "uz": "Kitobga ko‘ra spektrofotometriya nimaga asoslangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rangli eritmani oddiy ko‘rish bilan solishtirishga",
+     "Polixromatik nurlanishda faqat ko‘rinadigan qismni o‘lchashga",
+     "Monoxromatik nurlarni ko‘rinadigan va unga yondosh ultrabinafsha sohada aniqlashga",
+     "Faqat infraqizil nur yutilishini o‘lchashga"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Spektrofotometriya monoxromatik nurlarni ko‘rinadigan hamda spektrning unga yondosh ultrabinafsha qismida aniqlashga asoslangan."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "108"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q12",
+   "question_i18n": {
+    "uz": "Spektrofotometriyada tekshiriluvchi eritmaning optik ko‘rsatkichi qaysi oraliqda bo‘lishi lozim?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,2 dan 1,0 gacha",
+     "0,01 dan 0,1 gacha",
+     "1,0 dan 2,0 gacha",
+     "2,0 dan 3,0 gacha"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Konsentratsiyani tanlashda eritmalarning optik ko‘rsatkichi 0,2 dan 1,0 gacha oraliqda bo‘lishi kerak."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "108"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q13",
+   "question_i18n": {
+    "uz": "Kitobdagi misolga ko‘ra kofeinning etil spirtidagi eritmasi qaysi to‘lqin uzunligida maksimumga ega?"
+   },
+   "options_i18n": {
+    "uz": [
+     "200 nm",
+     "320 nm",
+     "400 nm",
+     "273 nm"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kofeinning etil spirtidagi eritmasi 273 nm to‘lqin uzunligida maksimumga ega."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "108"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q14",
+   "question_i18n": {
+    "uz": "Maksimal nur yutish to‘lqin uzunligida molyar nur yutish koeffitsiyenti E qanday bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Har doim eng kichik",
+     "Har doim katta",
+     "Nolga teng",
+     "To‘lqin uzunligiga bog‘liq emas"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "DVSSM majmuasiga ko‘ra maksimal nur yutish to‘lqin uzunligida E har doim katta bo‘ladi, shu sababli sezgirlik ortadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Nurmatova M.I.",
+    "title": "Toksikologik kimyo (DVSSM yo‘nalishi, o‘quv-uslubiy majmua), 2025",
+    "page": "245"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q15",
+   "question_i18n": {
+    "uz": "UV-1900i da ko‘p to‘lqin uzunligida o‘lchashda hisoblash tenglamalari eng ko‘pi bilan nechta to‘lqin uzunligidagi qiymatlarga asoslanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2 ta",
+     "3 ta",
+     "4 ta",
+     "8 ta"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Qo‘llanmaga ko‘ra besh tenglamadan biri eng ko‘pi bilan to‘rt to‘lqin uzunligidagi fotometrik qiymatlar asosida tanlanadi (8 ta — o‘rnatish chegarasi)."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "21"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q16",
+   "question_i18n": {
+    "uz": "UV-1900i Quantitation rejimidagi kalibrovka usullaridan biri qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "K Factor",
+     "Peak Pick",
+     "Auto Zero",
+     "Scan Speed"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Quantitation rejimida kalibrovka usullari: K Factor, 1 Point Curve va Multi-Point Curve."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "22"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q17",
+   "question_i18n": {
+    "uz": "UV-1900i Photometric (bir to‘lqin) rejimida bir martada eng ko‘pi bilan nechta o‘lchash bajarish mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100",
+     "200",
+     "2001",
+     "400"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Qo‘llanmaga ko‘ra bir martada eng ko‘pi bilan 400 ta o‘lchash bajariladi (2001 — spektr nuqtalari chegarasi)."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "55"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q18",
+   "question_i18n": {
+    "uz": "Normal (toza) qonga tanin eritmasi ta’sir ettirilsa nima kuzatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yashil rang",
+     "Kulrang modda hosil bo‘ladi",
+     "Ko‘kimtir qora suyuqlik",
+     "Rang o‘zgarmaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Normal qonga tanin ta’sir ettirilsa kulrang modda hosil bo‘ladi; karboksigemoglobin saqlagan qon rangini o‘zgartirmaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "85"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q19",
+   "question_i18n": {
+    "uz": "Is gazining gemoglobin bilan birikish tezligi kislorodnikiga nisbatan necha marta kuchli?"
+   },
+   "options_i18n": {
+    "uz": [
+     "30 marta",
+     "100 marta",
+     "300 marta",
+     "3600 marta"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Is gazining gemoglobin bilan birikish tezligi kislorodnikidan 300 marta kuchli (ajralishi esa 3600 barobar sekin)."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q20",
+   "question_i18n": {
+    "uz": "Kitobga ko‘ra is gazi organizmdan qaysi yo‘l bilan chiqariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat nafas yo‘li orqali",
+     "Peshob orqali",
+     "Ter bezlari orqali",
+     "Najas bilan"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Is gazi organizmdan faqat nafas yo‘li orqali chiqariladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
   }
  ],
  "sources": [
@@ -301,6 +581,10 @@
   {
    "author": "Shimadzu Corporation",
    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019"
+  },
+  {
+   "author": "Yuldashev Z.O., Nurmatova M.I.",
+   "title": "Toksikologik kimyo (DVSSM yo‘nalishi, o‘quv-uslubiy majmua), 2025"
   }
  ]
 }
