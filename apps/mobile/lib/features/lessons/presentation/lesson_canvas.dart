@@ -6,6 +6,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/lessons/lesson_models.dart';
+import 'lesson_rich_diagram.dart';
 import 'lesson_slide_view.dart';
 
 /// Proyektor/taqdimot kanvasi: har bir sahifa qat’iy 1280×720 «dizayn»
@@ -51,6 +52,7 @@ abstract final class LessonCanvasMetrics {
   static double bulletGap(double body) => body * 0.5;
   static double markerW(double body) => body * 0.9;
   static double diagramGap(double body) => body * 0.6;
+  static const double minCaption = 18;
   static double cellPad(double body) => body * 0.45;
   static double captionSize(double body) => math.max(18, body * 0.75);
   static double iconSize(double body) => body * 0.85;
@@ -208,6 +210,9 @@ abstract final class LessonCanvasLayout {
         : LessonCanvasMetrics.contentW;
   }
 
+  /// v2 diagrammalar matn o‘lchami (asosiy matnning 85 %).
+  static double richSize(double body) => body * 0.85;
+
   static bool hasMarker(LessonPage p) => p.kind != LessonPageKind.references;
 
   static double bulletsHeight(
@@ -238,6 +243,14 @@ abstract final class LessonCanvasLayout {
     final d = p.diagram;
     if (d == null) return 0;
     final w = diagramW(p);
+    if (lessonIsRichDiagram(d.kind)) {
+      return LessonRichDiagram.heightOf(
+        d,
+        size: richSize(body),
+        width: w,
+        minCaption: LessonCanvasMetrics.minCaption,
+      );
+    }
     var h = 0.0;
     switch (d.kind) {
       case LessonDiagramKind.table:
@@ -275,6 +288,8 @@ abstract final class LessonCanvasLayout {
           h += m.text(nodes[i], s, w - 2 * body * 0.7) + body;
           if (i < nodes.length - 1) h += body * 1.3;
         }
+      default:
+        break;
     }
     if (d.caption.isNotEmpty) {
       h +=
@@ -724,6 +739,14 @@ class _CanvasDiagram extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
+    if (lessonIsRichDiagram(diagram.kind)) {
+      return LessonRichDiagram(
+        diagram: diagram,
+        size: LessonCanvasLayout.richSize(body),
+        width: width,
+        minCaption: LessonCanvasMetrics.minCaption,
+      );
+    }
     final Widget main;
     switch (diagram.kind) {
       case LessonDiagramKind.table:
@@ -810,6 +833,8 @@ class _CanvasDiagram extends StatelessWidget {
             ],
           ],
         );
+      default:
+        main = const SizedBox.shrink();
     }
     return SizedBox(
       width: width,
