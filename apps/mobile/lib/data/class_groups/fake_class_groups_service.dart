@@ -2,6 +2,7 @@ import 'dart:math';
 
 import '../../domain/class_groups/class_groups_models.dart';
 import '../../domain/class_groups/variant_draw.dart';
+import '../../domain/class_quiz/class_quiz_models.dart' show ClassHardDetail;
 import '../../domain/ports/class_groups_ports.dart';
 import '../class_quiz/class_quiz_demo_bank.dart';
 
@@ -427,6 +428,8 @@ class FakeClassGroupsBackend {
             score: t?.score,
             total: t?.submittedAt == null ? null : t!.questionIds.length,
             answered: t?.answers.length ?? 0,
+            startedAt: t?.startedAt,
+            submittedAt: t?.submittedAt,
           );
         }(),
     ]..sort(boardOrder);
@@ -452,6 +455,57 @@ class FakeClassGroupsBackend {
     final s = (y.score ?? -1).compareTo(x.score ?? -1);
     if (s != 0) return s;
     return x.nickname.toLowerCase().compareTo(y.nickname.toLowerCase());
+  }
+
+  /// Server `group_assignment_hardest_detail` nusxasi: faqat ustoz, faqat
+  /// yopilgan / muddati o‘tgan topshiriq; ismlarsiz jami.
+  GroupCall<List<ClassHardDetail>> hardestDetail(
+    String uid,
+    String aid, {
+    int limit = 5,
+  }) {
+    final a = _ownedAssignment(uid, aid);
+    if (a == null) return const GroupCall.fail(GroupFailure.forbidden);
+    final due = a.draft.dueAt;
+    final over = a.closedAt != null || (due != null && !now().isBefore(due));
+    if (!over) return const GroupCall.fail(GroupFailure.notFinished);
+    _finalizeExpired(a);
+    final rows = <({String id, int n, int pct, List<int> counts})>[];
+    for (final id in a.pool.keys) {
+      final q = a.pool[id]!;
+      final counts = [0, 0, 0, 0];
+      var n = 0;
+      var right = 0;
+      for (final t in a.attempts.values) {
+        final v = t.answers[id];
+        if (v == null) continue;
+        n++;
+        counts[v]++;
+        if (v == q.correct) right++;
+      }
+      if (n == 0) continue;
+      rows.add((id: id, n: n, pct: (100 * right / n).round(), counts: counts));
+    }
+    rows.sort((x, y) {
+      final p = x.pct.compareTo(y.pct);
+      if (p != 0) return p;
+      final n = y.n.compareTo(x.n);
+      return n != 0 ? n : x.id.compareTo(y.id);
+    });
+    return GroupCall.ok([
+      for (final (i, r) in rows.take(limit.clamp(1, 10)).indexed)
+        ClassHardDetail(
+          index: i,
+          text: a.pool[r.id]!.text,
+          options: a.pool[r.id]!.options,
+          correctIndex: a.pool[r.id]!.correct,
+          explanation: a.pool[r.id]!.explanation,
+          source: a.pool[r.id]!.source,
+          answered: r.n,
+          correctPct: r.pct,
+          optionCounts: r.counts,
+        ),
+    ]);
   }
 
   GroupCall<GroupPreview> preview(String uid, String aid) {
@@ -767,6 +821,11 @@ class FakeClassGroupsService implements ClassGroupsService {
   @override
   Future<GroupCall<GroupPreview>> preview(String assignmentId) =>
       _as((u) => backend.preview(u, assignmentId));
+  @override
+  Future<GroupCall<List<ClassHardDetail>>> hardestDetail(
+    String assignmentId, {
+    int limit = 5,
+  }) => _as((u) => backend.hardestDetail(u, assignmentId, limit: limit));
   @override
   Future<GroupCall<GroupJoinInfo>> join({
     required String code,

@@ -29,6 +29,7 @@ import '../features/casebook/presentation/casebook_screens.dart';
 import '../features/class_groups/presentation/assign_test_screen.dart';
 import '../features/class_groups/presentation/group_detail_screen.dart';
 import '../features/class_groups/presentation/groups_screens.dart';
+import '../features/class_groups/presentation/lesson_group_test_screen.dart';
 import '../features/class_groups/presentation/mixed_test_screen.dart';
 import '../features/class_groups/presentation/teacher_live_screens.dart';
 import '../features/class_groups/presentation/test_screens.dart';
@@ -410,6 +411,13 @@ final routerProvider = Provider<GoRouter>((ref) {
                             path: 'scan',
                             parentNavigatorKey: rootKey,
                             builder: (c, s) => const GroupScanScreen(),
+                          ),
+                          GoRoute(
+                            path: 'lesson/:topic',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => LessonGroupTestScreen(
+                              topicId: s.pathParameters['topic']!,
+                            ),
                           ),
                           GoRoute(
                             path: 'practice/:topic',

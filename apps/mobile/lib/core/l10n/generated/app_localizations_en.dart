@@ -9929,7 +9929,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get grpPrivacyNote =>
-      'The teacher sees only your nickname and score — not your name or e-mail. Other students don’t see your result.';
+      'The teacher and your group see your name and score — never your e-mail. Other students don’t see your answers.';
 
   @override
   String get grpSignInTitle => 'Sign in to join';
@@ -9975,7 +9975,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String grpMyNickname(String nickname) {
-    return 'My nickname: $nickname';
+    return 'My name: $nickname';
   }
 
   @override
@@ -10159,7 +10159,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get grpTestQrHint =>
-      'Students scan it, enter a nickname the first time, and the test opens.';
+      'Students scan it; their name is filled in automatically — and the test opens.';
 
   @override
   String get grpBigScreen => 'Big screen';
@@ -10233,14 +10233,14 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get grpNickLabel => 'Nickname';
+  String get grpNickLabel => 'Your name';
 
   @override
   String get grpNickHelper =>
-      '2–20 characters, asked only once. The teacher sees only this nickname — not your name or e-mail.';
+      'Filled in from your profile — change it if you like. 2–20 characters, asked only once. The teacher and the group see this name (never your e-mail).';
 
   @override
-  String get grpNickNeeded => 'Enter a nickname to join.';
+  String get grpNickNeeded => 'Enter your name to join.';
 
   @override
   String get grpOwnerTitle => 'You are the teacher of this group';
@@ -10396,18 +10396,18 @@ class AppLocalizationsEn extends AppLocalizations {
       'The group is full (200 students). Tell your teacher.';
 
   @override
-  String get grpErrNickLength => 'The nickname must be 2–20 characters.';
+  String get grpErrNickLength => 'The name must be 2–20 characters.';
 
   @override
   String get grpErrNickChars =>
       'Use letters, digits, spaces and . _ \' - only (no e-mail or links).';
 
   @override
-  String get grpErrNickBlocked => 'Please choose a different nickname.';
+  String get grpErrNickBlocked => 'Please write a different name.';
 
   @override
   String get grpErrNickTaken =>
-      'This nickname is already taken in the group. Add a letter or a number.';
+      'This name is already in the group. Add the first letter of your surname.';
 
   @override
   String get grpErrBadName => 'The group name must be 2–60 characters.';
@@ -10680,4 +10680,104 @@ class AppLocalizationsEn extends AppLocalizations {
   String classLeaderAvgTime(String seconds) {
     return 'avg $seconds s';
   }
+
+  @override
+  String get grpLessonGroupTest => 'Give a test to a group';
+
+  @override
+  String get grpLessonGroupTestHint =>
+      'Students join by QR; results appear on screen by name, with places.';
+
+  @override
+  String get grpLessonTitle => 'Group test';
+
+  @override
+  String get grpLessonGroupSection => 'Group';
+
+  @override
+  String get grpLessonNewGroup => 'New group';
+
+  @override
+  String get grpLessonNoGroups =>
+      'You have no group yet. Type a name — the group is created right here.';
+
+  @override
+  String get grpLessonCreateGroup => 'Create group';
+
+  @override
+  String get grpLessonCancelNew => 'Pick an existing group';
+
+  @override
+  String get grpLessonTopicSection => 'Topic (from this lesson)';
+
+  @override
+  String get grpLessonTopicFixed =>
+      'The test is built from this lesson’s topic.';
+
+  @override
+  String get grpLessonNoTopic =>
+      'No test questions were found for this lesson.';
+
+  @override
+  String get grpLessonStart => 'Start the test';
+
+  @override
+  String get grpLessonPickGroup => 'Choose a group first.';
+
+  @override
+  String get grpLessonStartedTitle => 'The test has started';
+
+  @override
+  String get grpLessonStartedHint =>
+      'Students scan the QR or enter the code. They join the group under their own name and the test opens.';
+
+  @override
+  String get grpLessonLiveResults => 'Live results';
+
+  @override
+  String get grpLessonTeacherPanel => 'Teacher panel';
+
+  @override
+  String get grpLessonJoinLink => 'Group code';
+
+  @override
+  String get grpColRank => 'Place';
+
+  @override
+  String get grpColName => 'Name';
+
+  @override
+  String get grpColCorrect => 'Correct';
+
+  @override
+  String get grpColTime => 'Time';
+
+  @override
+  String get grpColState => 'Status';
+
+  @override
+  String grpRankSpoken(int rank) {
+    return 'Place $rank';
+  }
+
+  @override
+  String get grpBoardClosed => 'The test is closed';
+
+  @override
+  String get grpHardestTitle => 'Hard questions';
+
+  @override
+  String get grpHardestBody =>
+      'The questions most students got wrong, picked automatically. Discuss them together.';
+
+  @override
+  String get grpHardestOpen => 'Discuss hard questions';
+
+  @override
+  String get grpHardestLocked =>
+      'Close the test to see the hard questions here.';
+
+  @override
+  String get grpErrNotFinished =>
+      'Hard questions appear after the test is closed.';
 }

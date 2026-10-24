@@ -55,7 +55,17 @@ String groupFailureText(
     GroupFailure.alreadySubmitted => l.grpErrAlreadySubmitted,
     GroupFailure.timeOver => l.grpErrTimeOver,
     GroupFailure.notSubmitted => l.grpErrNotSubmitted,
+    GroupFailure.notFinished => l.grpErrNotFinished,
   };
+}
+
+/// Sarflangan vaqt: `7:05` (1 soatdan ko‘p bo‘lsa `1:02:09`).
+String groupSpentText(Duration d) {
+  final s = d.inSeconds;
+  String two(int n) => n.toString().padLeft(2, '0');
+  final h = s ~/ 3600;
+  final m = (s % 3600) ~/ 60;
+  return h > 0 ? '$h:${two(m)}:${two(s % 60)}' : '$m:${two(s % 60)}';
 }
 
 /// Demo adapter belgisi: ma’lumot faqat shu qurilmada.
@@ -271,10 +281,18 @@ class GroupCodeText extends StatelessWidget {
 
 /// Kichik holat belgisi (qo‘shildi / yechmoqda / tugatdi).
 class GroupStatePill extends StatelessWidget {
-  const GroupStatePill({super.key, required this.state, this.onDark = false});
+  const GroupStatePill({
+    super.key,
+    required this.state,
+    this.onDark = false,
+    this.scale = 1,
+  });
 
   final BoardState state;
   final bool onDark;
+
+  /// Katta ekran uchun kattalashtirish.
+  final double scale;
 
   @override
   Widget build(BuildContext context) {
@@ -300,12 +318,16 @@ class GroupStatePill extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Icon(icon, size: 16, color: color),
-        const SizedBox(width: FeSpace.xxs),
+        Icon(icon, size: 16 * scale, color: color),
+        SizedBox(width: FeSpace.xxs * scale),
         Text(
           label,
-          style: Theme.of(context).textTheme.labelMedium
-              ?.copyWith(color: color),
+          style: Theme.of(context).textTheme.labelMedium?.copyWith(
+            color: color,
+            fontSize:
+                (Theme.of(context).textTheme.labelMedium?.fontSize ?? 12) *
+                scale,
+          ),
         ),
       ],
     );

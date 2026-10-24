@@ -9982,7 +9982,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get grpPrivacyNote =>
-      'Преподаватель видит только ваш псевдоним и баллы — не имя и не e-mail. Другие студенты ваш результат не видят.';
+      'Преподаватель и ваша группа видят ваше имя и балл — e-mail никогда. Другие студенты не видят ваши ответы.';
 
   @override
   String get grpSignInTitle => 'Войдите, чтобы вступить';
@@ -10027,7 +10027,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String grpMyNickname(String nickname) {
-    return 'Мой псевдоним: $nickname';
+    return 'Моё имя: $nickname';
   }
 
   @override
@@ -10213,7 +10213,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get grpTestQrHint =>
-      'Студенты сканируют его, при первом входе вводят псевдоним — и тест открывается.';
+      'Студенты сканируют его; имя подставляется автоматически — и тест открывается.';
 
   @override
   String get grpBigScreen => 'Большой экран';
@@ -10287,14 +10287,14 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get grpNickLabel => 'Псевдоним';
+  String get grpNickLabel => 'Ваше имя';
 
   @override
   String get grpNickHelper =>
-      '2–20 символов, спрашиваем один раз. Преподаватель видит только этот псевдоним — не имя и не e-mail.';
+      'Подставлено из профиля — при желании измените. 2–20 символов, спрашиваем один раз. Преподаватель и группа видят это имя (e-mail — никогда).';
 
   @override
-  String get grpNickNeeded => 'Введите псевдоним, чтобы вступить.';
+  String get grpNickNeeded => 'Введите имя, чтобы вступить.';
 
   @override
   String get grpOwnerTitle => 'Вы преподаватель этой группы';
@@ -10449,18 +10449,18 @@ class AppLocalizationsRu extends AppLocalizations {
       'Группа заполнена (200 студентов). Сообщите преподавателю.';
 
   @override
-  String get grpErrNickLength => 'Псевдоним должен содержать 2–20 символов.';
+  String get grpErrNickLength => 'Имя должно содержать 2–20 символов.';
 
   @override
   String get grpErrNickChars =>
       'Используйте только буквы, цифры, пробелы и . _ \' - (без e-mail и ссылок).';
 
   @override
-  String get grpErrNickBlocked => 'Выберите другой псевдоним.';
+  String get grpErrNickBlocked => 'Напишите другое имя.';
 
   @override
   String get grpErrNickTaken =>
-      'Такой псевдоним в группе уже есть. Добавьте букву или цифру.';
+      'Такое имя в группе уже есть. Добавьте первую букву фамилии.';
 
   @override
   String get grpErrBadName => 'Название группы — от 2 до 60 символов.';
@@ -10730,4 +10730,102 @@ class AppLocalizationsRu extends AppLocalizations {
   String classLeaderAvgTime(String seconds) {
     return 'в среднем $seconds с';
   }
+
+  @override
+  String get grpLessonGroupTest => 'Дать тест группе';
+
+  @override
+  String get grpLessonGroupTestHint =>
+      'Студенты входят по QR; результаты на экране по именам, с местами.';
+
+  @override
+  String get grpLessonTitle => 'Тест для группы';
+
+  @override
+  String get grpLessonGroupSection => 'Группа';
+
+  @override
+  String get grpLessonNewGroup => 'Новая группа';
+
+  @override
+  String get grpLessonNoGroups =>
+      'У вас пока нет группы. Введите название — группа создастся прямо здесь.';
+
+  @override
+  String get grpLessonCreateGroup => 'Создать группу';
+
+  @override
+  String get grpLessonCancelNew => 'Выбрать существующую';
+
+  @override
+  String get grpLessonTopicSection => 'Тема (из этого урока)';
+
+  @override
+  String get grpLessonTopicFixed => 'Тест составляется по теме этого урока.';
+
+  @override
+  String get grpLessonNoTopic => 'Для этого урока не найдено вопросов теста.';
+
+  @override
+  String get grpLessonStart => 'Начать тест';
+
+  @override
+  String get grpLessonPickGroup => 'Сначала выберите группу.';
+
+  @override
+  String get grpLessonStartedTitle => 'Тест начался';
+
+  @override
+  String get grpLessonStartedHint =>
+      'Студенты сканируют QR или вводят код. Они входят в группу под своим именем, и тест открывается.';
+
+  @override
+  String get grpLessonLiveResults => 'Живые результаты';
+
+  @override
+  String get grpLessonTeacherPanel => 'Панель преподавателя';
+
+  @override
+  String get grpLessonJoinLink => 'Код группы';
+
+  @override
+  String get grpColRank => 'Место';
+
+  @override
+  String get grpColName => 'Имя';
+
+  @override
+  String get grpColCorrect => 'Верно';
+
+  @override
+  String get grpColTime => 'Время';
+
+  @override
+  String get grpColState => 'Статус';
+
+  @override
+  String grpRankSpoken(int rank) {
+    return 'Место $rank';
+  }
+
+  @override
+  String get grpBoardClosed => 'Тест закрыт';
+
+  @override
+  String get grpHardestTitle => 'Трудные вопросы';
+
+  @override
+  String get grpHardestBody =>
+      'Вопросы, в которых чаще всего ошибались; выбраны автоматически. Разберите их вместе.';
+
+  @override
+  String get grpHardestOpen => 'Разобрать трудные вопросы';
+
+  @override
+  String get grpHardestLocked =>
+      'Закройте тест — трудные вопросы появятся здесь.';
+
+  @override
+  String get grpErrNotFinished =>
+      'Трудные вопросы появятся после закрытия теста.';
 }

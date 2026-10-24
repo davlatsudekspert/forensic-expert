@@ -17259,10 +17259,10 @@ abstract class AppLocalizations {
   /// **'Demo mode: data stays on this device only. Real groups need the server connection.'**
   String get grpDemoBanner;
 
-  /// Privacy note.
+  /// Privacy note on the group screen.
   ///
   /// In en, this message translates to:
-  /// **'The teacher sees only your nickname and score — not your name or e-mail. Other students don’t see your result.'**
+  /// **'The teacher and your group see your name and score — never your e-mail. Other students don’t see your answers.'**
   String get grpPrivacyNote;
 
   /// Sign-in card.
@@ -17337,10 +17337,10 @@ abstract class AppLocalizations {
   /// **'Students: {count} / {limit}'**
   String grpMembersCount(int count, int limit);
 
-  /// Student nickname line.
+  /// Group card: my name.
   ///
   /// In en, this message translates to:
-  /// **'My nickname: {nickname}'**
+  /// **'My name: {nickname}'**
   String grpMyNickname(String nickname);
 
   /// Button.
@@ -17631,10 +17631,10 @@ abstract class AppLocalizations {
   /// **'One QR for everyone'**
   String get grpTestQrTitle;
 
-  /// QR hint.
+  /// Hint next to the group QR.
   ///
   /// In en, this message translates to:
-  /// **'Students scan it, enter a nickname the first time, and the test opens.'**
+  /// **'Students scan it; their name is filled in automatically — and the test opens.'**
   String get grpTestQrHint;
 
   /// Button.
@@ -17757,22 +17757,22 @@ abstract class AppLocalizations {
   /// **'Group: {name}'**
   String grpJoinGroupName(String name);
 
-  /// Field.
+  /// Field: the student's name in the group.
   ///
   /// In en, this message translates to:
-  /// **'Nickname'**
+  /// **'Your name'**
   String get grpNickLabel;
 
-  /// Helper.
+  /// Helper under the name field.
   ///
   /// In en, this message translates to:
-  /// **'2–20 characters, asked only once. The teacher sees only this nickname — not your name or e-mail.'**
+  /// **'Filled in from your profile — change it if you like. 2–20 characters, asked only once. The teacher and the group see this name (never your e-mail).'**
   String get grpNickHelper;
 
-  /// Nickname required.
+  /// Error: name needed to join.
   ///
   /// In en, this message translates to:
-  /// **'Enter a nickname to join.'**
+  /// **'Enter your name to join.'**
   String get grpNickNeeded;
 
   /// Owner panel.
@@ -18009,10 +18009,10 @@ abstract class AppLocalizations {
   /// **'The group is full (200 students). Tell your teacher.'**
   String get grpErrGroupFull;
 
-  /// Error.
+  /// Error: name length.
   ///
   /// In en, this message translates to:
-  /// **'The nickname must be 2–20 characters.'**
+  /// **'The name must be 2–20 characters.'**
   String get grpErrNickLength;
 
   /// Error.
@@ -18021,16 +18021,16 @@ abstract class AppLocalizations {
   /// **'Use letters, digits, spaces and . _ \' - only (no e-mail or links).'**
   String get grpErrNickChars;
 
-  /// Error.
+  /// Error: name blocked by the filter.
   ///
   /// In en, this message translates to:
-  /// **'Please choose a different nickname.'**
+  /// **'Please write a different name.'**
   String get grpErrNickBlocked;
 
-  /// Error.
+  /// Error: name already used in the group.
   ///
   /// In en, this message translates to:
-  /// **'This nickname is already taken in the group. Add a letter or a number.'**
+  /// **'This name is already in the group. Add the first letter of your surname.'**
   String get grpErrNickTaken;
 
   /// Error.
@@ -18458,6 +18458,186 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'avg {seconds} s'**
   String classLeaderAvgTime(String seconds);
+
+  /// Lesson test choice: primary button, give the test to a group.
+  ///
+  /// In en, this message translates to:
+  /// **'Give a test to a group'**
+  String get grpLessonGroupTest;
+
+  /// Lesson test choice: hint under the primary button.
+  ///
+  /// In en, this message translates to:
+  /// **'Students join by QR; results appear on screen by name, with places.'**
+  String get grpLessonGroupTestHint;
+
+  /// Screen title: group test after a lesson.
+  ///
+  /// In en, this message translates to:
+  /// **'Group test'**
+  String get grpLessonTitle;
+
+  /// Section: which group.
+  ///
+  /// In en, this message translates to:
+  /// **'Group'**
+  String get grpLessonGroupSection;
+
+  /// Button: create another group inline.
+  ///
+  /// In en, this message translates to:
+  /// **'New group'**
+  String get grpLessonNewGroup;
+
+  /// Hint when the teacher has no group yet.
+  ///
+  /// In en, this message translates to:
+  /// **'You have no group yet. Type a name — the group is created right here.'**
+  String get grpLessonNoGroups;
+
+  /// Button: create the group inline.
+  ///
+  /// In en, this message translates to:
+  /// **'Create group'**
+  String get grpLessonCreateGroup;
+
+  /// Button: back to the list of groups.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick an existing group'**
+  String get grpLessonCancelNew;
+
+  /// Section: topic of the test (fixed to the lesson).
+  ///
+  /// In en, this message translates to:
+  /// **'Topic (from this lesson)'**
+  String get grpLessonTopicSection;
+
+  /// Note under the topic: it cannot be changed here.
+  ///
+  /// In en, this message translates to:
+  /// **'The test is built from this lesson’s topic.'**
+  String get grpLessonTopicFixed;
+
+  /// Error: no test topic for the lesson.
+  ///
+  /// In en, this message translates to:
+  /// **'No test questions were found for this lesson.'**
+  String get grpLessonNoTopic;
+
+  /// Button: create the test and show QR.
+  ///
+  /// In en, this message translates to:
+  /// **'Start the test'**
+  String get grpLessonStart;
+
+  /// Error: no group chosen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a group first.'**
+  String get grpLessonPickGroup;
+
+  /// Title after the test is created.
+  ///
+  /// In en, this message translates to:
+  /// **'The test has started'**
+  String get grpLessonStartedTitle;
+
+  /// Hint next to the QR after the test is created.
+  ///
+  /// In en, this message translates to:
+  /// **'Students scan the QR or enter the code. They join the group under their own name and the test opens.'**
+  String get grpLessonStartedHint;
+
+  /// Button: open the live results board.
+  ///
+  /// In en, this message translates to:
+  /// **'Live results'**
+  String get grpLessonLiveResults;
+
+  /// Button: open the teacher panel of the test.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher panel'**
+  String get grpLessonTeacherPanel;
+
+  /// Small label above the join link.
+  ///
+  /// In en, this message translates to:
+  /// **'Group code'**
+  String get grpLessonJoinLink;
+
+  /// Board column: place.
+  ///
+  /// In en, this message translates to:
+  /// **'Place'**
+  String get grpColRank;
+
+  /// Board column: student name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get grpColName;
+
+  /// Board column: correct answers / total.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct'**
+  String get grpColCorrect;
+
+  /// Board column: time spent.
+  ///
+  /// In en, this message translates to:
+  /// **'Time'**
+  String get grpColTime;
+
+  /// Board column: state.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get grpColState;
+
+  /// Screen reader: place of a student.
+  ///
+  /// In en, this message translates to:
+  /// **'Place {rank}'**
+  String grpRankSpoken(int rank);
+
+  /// Big board: banner after the test was closed.
+  ///
+  /// In en, this message translates to:
+  /// **'The test is closed'**
+  String get grpBoardClosed;
+
+  /// Block title: hardest questions after closing.
+  ///
+  /// In en, this message translates to:
+  /// **'Hard questions'**
+  String get grpHardestTitle;
+
+  /// Block body: discuss the hardest questions together.
+  ///
+  /// In en, this message translates to:
+  /// **'The questions most students got wrong, picked automatically. Discuss them together.'**
+  String get grpHardestBody;
+
+  /// Button: open the discussion.
+  ///
+  /// In en, this message translates to:
+  /// **'Discuss hard questions'**
+  String get grpHardestOpen;
+
+  /// Hint before the test is closed.
+  ///
+  /// In en, this message translates to:
+  /// **'Close the test to see the hard questions here.'**
+  String get grpHardestLocked;
+
+  /// Error: hard questions requested before the test was closed.
+  ///
+  /// In en, this message translates to:
+  /// **'Hard questions appear after the test is closed.'**
+  String get grpErrNotFinished;
 }
 
 class _AppLocalizationsDelegate

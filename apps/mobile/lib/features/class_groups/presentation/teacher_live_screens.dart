@@ -13,6 +13,8 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
+import '../../class_quiz/presentation/class_hardest_screen.dart'
+    show openGroupHardestDiscussion;
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show ClassQr, ClassReconnectingBar;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
@@ -34,6 +36,114 @@ class _BoardCache {
         failure == GroupFailure.notSignedIn;
     final d = fresh ?? (fatal ? null : last);
     return (d, failure, fresh == null && d != null && failure != null);
+  }
+}
+
+/// «Testni yopish»: tasdiq → server → doska/guruh yangilanadi. Ikkala doskada
+/// (telefon paneli va katta ekran) bir xil.
+Future<void> confirmAndCloseGroupTest(
+  BuildContext context,
+  WidgetRef ref, {
+  required String groupId,
+  required String assignmentId,
+}) async {
+  final l = AppLocalizations.of(context);
+  final ok = await showDialog<bool>(
+    context: context,
+    builder: (c) => AlertDialog(
+      title: Text(l.grpCloseTitle),
+      content: Text(l.grpCloseBody),
+      actions: [
+        TextButton(onPressed: () => c.pop(false), child: Text(l.grpCancel)),
+        FilledButton(
+          key: const Key('grp.closeYes'),
+          onPressed: () => c.pop(true),
+          child: Text(l.grpCloseAction),
+        ),
+      ],
+    ),
+  );
+  if (ok != true || !context.mounted) return;
+  final messenger = ScaffoldMessenger.of(context);
+  final r = await ref
+      .read(classGroupsServiceProvider)
+      .closeAssignment(assignmentId);
+  if (!r.ok && context.mounted) {
+    messenger.showSnackBar(
+      SnackBar(content: Text(groupFailureText(l, r.failure!))),
+    );
+  }
+  ref.invalidate(groupBoardProvider(assignmentId));
+  ref.invalidate(groupDetailProvider(groupId));
+}
+
+/// «Qiyin savollar» bloki: test yopilgach eng ko‘p xato qilingan savollar
+/// muhokamasiga o‘tadi; yopilmaguncha izoh.
+class GroupHardestBlock extends StatelessWidget {
+  const GroupHardestBlock({
+    super.key,
+    required this.assignment,
+    this.onDark = false,
+  });
+
+  final GroupAssignment assignment;
+  final bool onDark;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    final over = assignment.isOver;
+    final muted = onDark ? Colors.white70 : c.textSecondary;
+    return Container(
+      key: const Key('grp.hardest.block'),
+      padding: const EdgeInsets.all(FeSpace.md),
+      decoration: BoxDecoration(
+        color: onDark ? Colors.white10 : c.accentContainer,
+        borderRadius: BorderRadius.circular(FeRadius.card),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.psychology_alt_outlined,
+                color: onDark ? FeBrand.goldOnDark : c.accent,
+              ),
+              const SizedBox(width: FeSpace.xs),
+              Expanded(
+                child: Text(
+                  l.grpHardestTitle,
+                  style: t.titleSmall?.copyWith(
+                    color: onDark ? Colors.white : null,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: FeSpace.xxs),
+          Text(
+            over ? l.grpHardestBody : l.grpHardestLocked,
+            key: const Key('grp.hardest.text'),
+            style: t.bodySmall?.copyWith(color: muted),
+          ),
+          if (over) ...[
+            const SizedBox(height: FeSpace.xs),
+            FilledButton.icon(
+              key: const Key('grp.hardest.open'),
+              onPressed: () => openGroupHardestDiscussion(
+                context,
+                assignmentId: assignment.id,
+              ),
+              icon: const Icon(Icons.forum_outlined),
+              label: Text(l.grpHardestOpen),
+            ),
+          ],
+        ],
+      ),
+    );
   }
 }
 
@@ -60,37 +170,14 @@ class _TeacherAssignmentState extends ConsumerState<TeacherAssignmentScreen> {
   bool _busy = false;
 
   Future<void> _close() async {
-    final l = AppLocalizations.of(context);
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (c) => AlertDialog(
-        title: Text(l.grpCloseTitle),
-        content: Text(l.grpCloseBody),
-        actions: [
-          TextButton(onPressed: () => c.pop(false), child: Text(l.grpCancel)),
-          FilledButton(
-            key: const Key('grp.closeYes'),
-            onPressed: () => c.pop(true),
-            child: Text(l.grpCloseAction),
-          ),
-        ],
-      ),
-    );
-    if (ok != true || !mounted) return;
     setState(() => _busy = true);
-    final messenger = ScaffoldMessenger.of(context);
-    final r = await ref
-        .read(classGroupsServiceProvider)
-        .closeAssignment(widget.assignmentId);
-    if (!mounted) return;
-    setState(() => _busy = false);
-    if (!r.ok) {
-      messenger.showSnackBar(
-        SnackBar(content: Text(groupFailureText(l, r.failure!))),
-      );
-    }
-    ref.invalidate(groupBoardProvider(widget.assignmentId));
-    ref.invalidate(groupDetailProvider(widget.groupId));
+    await confirmAndCloseGroupTest(
+      context,
+      ref,
+      groupId: widget.groupId,
+      assignmentId: widget.assignmentId,
+    );
+    if (mounted) setState(() => _busy = false);
   }
 
   @override
@@ -186,6 +273,8 @@ class _TeacherAssignmentState extends ConsumerState<TeacherAssignmentScreen> {
             text: l.grpClosedBanner,
           ),
         const SizedBox(height: FeSpace.sm),
+        GroupHardestBlock(assignment: a),
+        const SizedBox(height: FeSpace.sm),
         Text(
           l.grpCounts(
             d.count(BoardState.joined),
@@ -202,8 +291,8 @@ class _TeacherAssignmentState extends ConsumerState<TeacherAssignmentScreen> {
             body: l.grpMembersEmpty,
             compact: true,
           ),
-        for (final (i, r) in d.rows.indexed)
-          _LiveRow(key: Key('grp.row.${r.memberId}'), rank: i + 1, row: r),
+        for (final x in d.ranked)
+          _LiveRow(key: Key('grp.row.${x.row.memberId}'), item: x),
         const SizedBox(height: FeSpace.md),
         FeNote(
           icon: Icons.lock_clock_outlined,
@@ -266,16 +355,21 @@ class _TeacherAssignmentState extends ConsumerState<TeacherAssignmentScreen> {
 }
 
 class _LiveRow extends StatelessWidget {
-  const _LiveRow({super.key, required this.rank, required this.row});
+  const _LiveRow({super.key, required this.item});
 
-  final int rank;
-  final GroupBoardRow row;
+  final RankedBoardRow item;
 
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
+    final row = item.row;
     final finished = row.state == BoardState.finished;
+    final spent = row.spent;
+    final tabular = t.titleSmall?.copyWith(
+      fontFeatures: const [FontFeature.tabularFigures()],
+    );
     return Container(
       padding: const EdgeInsets.symmetric(vertical: FeSpace.xs),
       decoration: BoxDecoration(
@@ -284,30 +378,53 @@ class _LiveRow extends StatelessWidget {
       child: Row(
         children: [
           SizedBox(
-            width: 28,
-            child: Text(
-              finished ? '$rank' : FeGlyphs.emDash,
-              style: t.labelLarge?.copyWith(color: c.textSecondary),
-            ),
-          ),
-          Expanded(
-            child: Text(
-              row.nickname,
-              style: t.bodyLarge,
-              overflow: TextOverflow.ellipsis,
-            ),
-          ),
-          GroupStatePill(state: row.state),
-          SizedBox(
-            width: 64,
-            child: Text(
-              finished ? '${row.score}/${row.total}' : '',
-              textAlign: TextAlign.end,
-              style: t.titleSmall?.copyWith(
-                fontFeatures: const [FontFeature.tabularFigures()],
+            width: 30,
+            child: Semantics(
+              label: item.rank == null ? null : l.grpRankSpoken(item.rank!),
+              excludeSemantics: item.rank != null,
+              child: Text(
+                item.rank?.toString() ?? FeGlyphs.emDash,
+                key: Key('grp.rank.${row.memberId}'),
+                style: t.titleSmall?.copyWith(
+                  color: item.rank != null && item.rank! <= 3
+                      ? c.accent
+                      : c.textSecondary,
+                ),
               ),
             ),
           ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  row.nickname,
+                  style: t.bodyLarge,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                GroupStatePill(state: row.state),
+              ],
+            ),
+          ),
+          if (finished) ...[
+            Text(
+              '${row.score}/${row.total}',
+              key: Key('grp.score.${row.memberId}'),
+              style: tabular,
+            ),
+            SizedBox(
+              width: 56,
+              child: Text(
+                spent == null ? '' : groupSpentText(spent),
+                key: Key('grp.time.${row.memberId}'),
+                textAlign: TextAlign.end,
+                style: t.bodyMedium?.copyWith(
+                  color: c.textSecondary,
+                  fontFeatures: const [FontFeature.tabularFigures()],
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );
@@ -382,6 +499,13 @@ class _GroupBoardScreenState extends ConsumerState<GroupBoardScreen> {
     }
   }
 
+  Future<void> _close() => confirmAndCloseGroupTest(
+    context,
+    ref,
+    groupId: widget.groupId,
+    assignmentId: widget.assignmentId,
+  );
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -410,6 +534,33 @@ class _GroupBoardScreenState extends ConsumerState<GroupBoardScreen> {
           foregroundColor: Colors.white,
           toolbarHeight: 44,
           title: Text(d?.assignment.topicTitle ?? l.grpBigScreen),
+          actions: [
+            if (d != null && !d.assignment.closed)
+              Padding(
+                padding: const EdgeInsets.only(right: FeSpace.xs),
+                child: OutlinedButton.icon(
+                  key: const Key('grp.board.close'),
+                  onPressed: _close,
+                  icon: const Icon(Icons.stop_circle_outlined),
+                  label: Text(l.grpCloseAction),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    side: const BorderSide(color: Colors.white54),
+                  ),
+                ),
+              )
+            else if (d != null)
+              Padding(
+                padding: const EdgeInsets.only(right: FeSpace.sm),
+                child: Center(
+                  child: Text(
+                    l.grpBoardClosed,
+                    key: const Key('grp.board.closed'),
+                    style: const TextStyle(color: FeBrand.goldOnDark),
+                  ),
+                ),
+              ),
+          ],
         ),
         body: SafeArea(
           child: Column(
@@ -445,93 +596,205 @@ class _BigBoard extends StatelessWidget {
           code,
           assignmentId: d.assignment.id,
         ).toString();
+        final over = d.assignment.isOver;
+        final counts = Text(
+          l.grpCounts(
+            d.count(BoardState.joined),
+            d.count(BoardState.solving),
+            d.count(BoardState.finished),
+          ),
+          key: const Key('grp.boardCounts'),
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: FeBrand.goldOnDark,
+            fontSize: (portrait ? 15 : 18) * scale,
+            fontWeight: FontWeight.w600,
+          ),
+        );
         final side = SizedBox(
           width: 300 * scale,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ClassQr(data: link, size: 220 * scale),
-              SizedBox(height: 12 * scale),
+              ClassQr(data: link, size: 200 * scale),
+              SizedBox(height: 10 * scale),
               GroupCodeText(
                 code: code,
-                fontSize: 40 * scale,
+                fontSize: 38 * scale,
                 color: FeBrand.ivory,
               ),
-              SizedBox(height: 8 * scale),
+              SizedBox(height: 6 * scale),
               Text(
                 l.grpBoardHint,
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white70, fontSize: 15 * scale),
+                style: TextStyle(color: Colors.white70, fontSize: 14 * scale),
               ),
-              SizedBox(height: 16 * scale),
-              Text(
-                l.grpCounts(
-                  d.count(BoardState.joined),
-                  d.count(BoardState.solving),
-                  d.count(BoardState.finished),
-                ),
-                key: const Key('grp.boardCounts'),
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: FeBrand.goldOnDark,
-                  fontSize: 18 * scale,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
+              SizedBox(height: 12 * scale),
+              counts,
+              if (over) ...[
+                SizedBox(height: 12 * scale),
+                GroupHardestBlock(assignment: d.assignment, onDark: true),
+              ],
             ],
           ),
         );
-        final rowH = 44 * scale;
+        final ranked = d.ranked;
+        // Qatorlar soniga qarab shrift/qator balandligi kichrayadi, ustunlar
+        // 1-3 gacha ko‘payadi (30 ta talaba 1080p da bitta ekranga sig‘adi).
         final header = portrait ? 200 * scale : 0.0;
-        final available = box.maxHeight - 32 - header;
-        final perCol = max(1, (available / rowH).floor());
-        final cols = portrait
-            ? 1
-            : max(1, min(4, (d.rows.length / perCol).ceil()));
-        final shown = d.rows.take(perCol * cols).toList();
-        Widget cell(int i, GroupBoardRow r) => SizedBox(
-          height: rowH,
+        final available = box.maxHeight - 32 - header - 24 * scale;
+        final maxCols = portrait ? 1 : 3;
+        var rs = 1.0;
+        var perCol = 1;
+        var cols = 1;
+        for (final cand
+            in portrait ? const [1.0] : const [1.0, 0.85, 0.72, 0.6]) {
+          rs = cand;
+          perCol = max(1, (available / (46 * scale * cand)).floor());
+          cols = max(1, (ranked.length / perCol).ceil());
+          if (cols <= (portrait ? 1 : (cand == 1.0 ? 2 : maxCols))) break;
+        }
+        cols = min(cols, maxCols);
+        final fs = scale * rs;
+        final rowH = 46 * fs;
+        final shown = ranked.take(perCol * cols).toList();
+        final compact = cols >= 3 || (portrait && box.maxWidth < 380);
+        Widget head(String text, {double? width, TextAlign? align}) {
+          final w = Text(
+            text,
+            textAlign: align,
+            style: TextStyle(color: Colors.white54, fontSize: 13 * fs),
+          );
+          return width == null
+              ? Expanded(child: w)
+              : SizedBox(width: width, child: w);
+        }
+
+        Widget headerRow() => Padding(
+          padding: EdgeInsets.only(bottom: 4 * fs),
           child: Row(
-            key: Key('grp.bigRow.${r.memberId}'),
             children: [
-              SizedBox(
-                width: 36 * scale,
-                child: Text(
-                  r.state == BoardState.finished ? '${i + 1}' : '',
-                  style: TextStyle(color: Colors.white54, fontSize: 18 * scale),
-                ),
-              ),
-              Expanded(
-                child: Text(
-                  r.nickname,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22 * scale,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              Transform.scale(
-                scale: scale.clamp(0.8, 1.4),
-                child: GroupStatePill(state: r.state, onDark: true),
-              ),
-              SizedBox(
-                width: 80 * scale,
-                child: Text(
-                  r.state == BoardState.finished ? '${r.score}/${r.total}' : '',
-                  textAlign: TextAlign.end,
-                  style: TextStyle(
-                    color: FeBrand.goldOnDark,
-                    fontSize: 22 * scale,
-                    fontWeight: FontWeight.w700,
-                    fontFeatures: const [FontFeature.tabularFigures()],
-                  ),
-                ),
-              ),
+              head(l.grpColRank, width: 46 * fs),
+              head(l.grpColName),
+              if (!compact) head(l.grpColState, width: 124 * fs),
+              head(l.grpColCorrect, width: 92 * fs, align: TextAlign.end),
+              head(l.grpColTime, width: 74 * fs, align: TextAlign.end),
             ],
           ),
         );
+        Widget cell(RankedBoardRow x) {
+          final r = x.row;
+          final finished = r.state == BoardState.finished;
+          final top = x.rank != null && x.rank! <= 3;
+          return SizedBox(
+            height: rowH,
+            child: Row(
+              key: Key('grp.bigRow.${r.memberId}'),
+              children: [
+                SizedBox(
+                  width: 46 * fs,
+                  child: Semantics(
+                    label: x.rank == null ? null : l.grpRankSpoken(x.rank!),
+                    excludeSemantics: x.rank != null,
+                    child: Text(
+                      x.rank?.toString() ?? '',
+                      key: Key('grp.bigRank.${r.memberId}'),
+                      style: TextStyle(
+                        color: top ? FeBrand.goldOnDark : Colors.white54,
+                        fontSize: 22 * fs,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Text(
+                    r.nickname,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24 * fs,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                if (compact)
+                  Padding(
+                    padding: EdgeInsets.only(right: 6 * fs),
+                    child: Tooltip(
+                      message: switch (r.state) {
+                        BoardState.joined => l.grpStateJoined,
+                        BoardState.solving => l.grpStateSolving,
+                        BoardState.finished => l.grpStateFinished,
+                      },
+                      child: Icon(
+                        switch (r.state) {
+                          BoardState.joined => Icons.person_outline,
+                          BoardState.solving => Icons.edit_note,
+                          BoardState.finished => Icons.check_circle_outline,
+                        },
+                        size: 22 * fs,
+                        color: switch (r.state) {
+                          BoardState.joined => Colors.white70,
+                          BoardState.solving => FeBrand.goldOnDark,
+                          BoardState.finished => const Color(0xFF7FD3A1),
+                        },
+                      ),
+                    ),
+                  )
+                else
+                  SizedBox(
+                    width: 124 * fs,
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: AlignmentDirectional.centerStart,
+                      child: GroupStatePill(
+                        state: r.state,
+                        onDark: true,
+                        scale: 1.2 * fs,
+                      ),
+                    ),
+                  ),
+                SizedBox(
+                  width: 92 * fs,
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: AlignmentDirectional.centerEnd,
+                    child: Text(
+                      finished ? '${r.score}/${r.total}' : '',
+                      key: Key('grp.bigScore.${r.memberId}'),
+                      softWrap: false,
+                      style: TextStyle(
+                        color: FeBrand.goldOnDark,
+                        fontSize: 24 * fs,
+                        fontWeight: FontWeight.w700,
+                        fontFeatures: const [FontFeature.tabularFigures()],
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 74 * fs,
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: AlignmentDirectional.centerEnd,
+                    child: Text(
+                      r.spent == null ? '' : groupSpentText(r.spent!),
+                      key: Key('grp.bigTime.${r.memberId}'),
+                      softWrap: false,
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 20 * fs,
+                        fontFeatures: const [FontFeature.tabularFigures()],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
+        }
+
         final columns = [
           for (var c = 0; c < cols; c++)
             Expanded(
@@ -539,12 +802,13 @@ class _BigBoard extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 12 * scale),
                 child: Column(
                   children: [
+                    headerRow(),
                     for (
                       var i = c * perCol;
                       i < min(shown.length, (c + 1) * perCol);
                       i++
                     )
-                      cell(i, shown[i]),
+                      cell(shown[i]),
                   ],
                 ),
               ),
@@ -557,59 +821,48 @@ class _BigBoard extends StatelessWidget {
           ),
         );
         if (portrait) {
-          return Padding(
+          return ListView(
             padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                SizedBox(
-                  height: header,
-                  child: Row(
-                    children: [
-                      ClassQr(data: link, size: 150 * scale),
-                      SizedBox(width: 16 * scale),
-                      Expanded(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            GroupCodeText(
-                              code: code,
-                              fontSize: 30 * scale,
-                              color: FeBrand.ivory,
-                            ),
-                            SizedBox(height: 6 * scale),
-                            Text(
-                              l.grpCounts(
-                                d.count(BoardState.joined),
-                                d.count(BoardState.solving),
-                                d.count(BoardState.finished),
-                              ),
-                              key: const Key('grp.boardCounts'),
-                              style: TextStyle(
-                                color: FeBrand.goldOnDark,
-                                fontSize: 15 * scale,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
-                        ),
+            children: [
+              SizedBox(
+                height: header,
+                child: Row(
+                  children: [
+                    ClassQr(data: link, size: 150 * scale),
+                    SizedBox(width: 16 * scale),
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          GroupCodeText(
+                            code: code,
+                            fontSize: 30 * scale,
+                            color: FeBrand.ivory,
+                          ),
+                          SizedBox(height: 6 * scale),
+                          counts,
+                        ],
                       ),
-                    ],
+                    ),
+                  ],
+                ),
+              ),
+              if (over)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: GroupHardestBlock(
+                    assignment: d.assignment,
+                    onDark: true,
                   ),
                 ),
-                Expanded(
-                  child: d.rows.isEmpty
-                      ? waiting
-                      : Column(
-                          children: [
-                            for (var i = 0; i < shown.length; i++)
-                              cell(i, shown[i]),
-                          ],
-                        ),
-                ),
+              if (ranked.isEmpty)
+                SizedBox(height: 120, child: waiting)
+              else ...[
+                headerRow(),
+                for (final x in ranked) cell(x),
               ],
-            ),
+            ],
           );
         }
         return Padding(
@@ -617,10 +870,10 @@ class _BigBoard extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              side,
+              SingleChildScrollView(child: side),
               SizedBox(width: 24 * scale),
               Expanded(
-                child: d.rows.isEmpty
+                child: ranked.isEmpty
                     ? waiting
                     : Row(
                         crossAxisAlignment: CrossAxisAlignment.start,

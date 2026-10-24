@@ -29,6 +29,7 @@ $P -d fe -f "$HERE/class_hardest_detail_test.sql"
 FIXTURE="$HERE/../../apps/mobile/test/fixtures/class_group_variant_vectors.json"
 $P -d fe -v fixture="$FIXTURE" -f "$HERE/class_groups_test.sql"
 $P -d fe -f "$HERE/class_groups_e2e.sql"
+$P -d fe -f "$HERE/group_hardest_detail_test.sql"
 # RLS role matrix: fresh database with Supabase-like default table grants
 # (the files above grant/revoke privileges for their own checks). Roles are
 # cluster-wide, so stubs.sql is loaded without its CREATE ROLE lines.

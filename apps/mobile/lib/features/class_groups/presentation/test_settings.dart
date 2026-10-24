@@ -166,7 +166,13 @@ class TestSettingsSection extends StatelessWidget {
     required this.countPresets,
     required this.onChanged,
     required this.now,
+    this.simple = false,
   });
+
+  /// Dars oxiridagi guruh testi: faqat savol soni (tez tanlov), vaqt chegarasi
+  /// va ochiq turish muddati; «Boshqa…» son, variant va javoblarni ochish
+  /// bo‘limlari yo‘q (standartlar [TestSettings] da).
+  final bool simple;
 
   final TestSettings value;
   final int poolSize;
@@ -218,7 +224,14 @@ class TestSettingsSection extends StatelessWidget {
     ];
     final canVariant = variantAllowed(poolSize, value.count);
     final customCount =
-        !presets.contains(value.count) && value.count != maxCount;
+        !simple && !presets.contains(value.count) && value.count != maxCount;
+    // Soddalashtirilgan: «Hammasi · N» faqat mavzu eng katta tez tanlovdan
+    // kichik bo‘lsa (masalan 7 ta savol: «Hammasi · 7»).
+    final showAll =
+        maxCount > 0 &&
+        (!simple ||
+            (!presets.contains(maxCount) &&
+                (countPresets.isEmpty || maxCount < countPresets.last)));
     final customTime =
         value.timeLimit != null &&
         !GroupRules.timeLimitPresets.contains(value.timeLimit);
@@ -238,11 +251,13 @@ class TestSettingsSection extends StatelessWidget {
                 selected: value.count == p,
                 onSelected: (_) => onChanged(value.copyWith(count: p)),
               ),
-            if (maxCount > 0)
+            if (showAll)
               ChoiceChip(
                 key: const Key('grp.count.all'),
                 label: Text(
-                  poolSize > maxCount
+                  simple
+                      ? l.classQuestionCountAll(maxCount)
+                      : poolSize > maxCount
                       ? l.grpCountMax(maxCount)
                       : l.grpCountAll(maxCount),
                 ),
@@ -250,23 +265,24 @@ class TestSettingsSection extends StatelessWidget {
                     value.count == maxCount && !presets.contains(maxCount),
                 onSelected: (_) => onChanged(value.copyWith(count: maxCount)),
               ),
-            ChoiceChip(
-              key: const Key('grp.count.custom'),
-              label: Text(
-                customCount ? l.grpCustomValue(value.count) : l.grpCustom,
+            if (!simple)
+              ChoiceChip(
+                key: const Key('grp.count.custom'),
+                label: Text(
+                  customCount ? l.grpCustomValue(value.count) : l.grpCustom,
+                ),
+                selected: customCount,
+                onSelected: (_) async {
+                  final n = await askNumber(
+                    context,
+                    title: l.grpCountSection,
+                    hint: l.grpCountCustomHint(maxCount),
+                    min: 1,
+                    max: max(1, maxCount),
+                  );
+                  if (n != null) onChanged(value.copyWith(count: n));
+                },
               ),
-              selected: customCount,
-              onSelected: (_) async {
-                final n = await askNumber(
-                  context,
-                  title: l.grpCountSection,
-                  hint: l.grpCountCustomHint(maxCount),
-                  min: 1,
-                  max: max(1, maxCount),
-                );
-                if (n != null) onChanged(value.copyWith(count: n));
-              },
-            ),
           ],
         ),
         _hint(
@@ -345,44 +361,56 @@ class TestSettingsSection extends StatelessWidget {
           l.grpOpenHint(feDueShort(context, value.dueAt(now()))),
           key: const Key('grp.openHint'),
         ),
-        const SizedBox(height: FeSpace.sm),
-        SwitchListTile(
-          key: const Key('grp.variantSwitch'),
-          contentPadding: EdgeInsets.zero,
-          title: Text(l.grpVariantLabel),
-          subtitle: Text(
-            canVariant
-                ? l.grpVariantHelp
-                : l.grpVariantTooFew(poolSize, value.count * 2),
-            key: const Key('grp.variantNote'),
-          ),
-          value: canVariant && value.variant,
-          onChanged: canVariant
-              ? (v) => onChanged(value.copyWith(variant: v))
-              : null,
-        ),
-        FeSectionHeader(l.grpRevealSection),
-        RadioGroup<RevealPolicy>(
-          groupValue: value.reveal,
-          onChanged: (v) => onChanged(value.copyWith(reveal: v)),
-          child: Column(
-            children: [
-              RadioListTile<RevealPolicy>(
-                key: const Key('grp.revealDue'),
-                contentPadding: EdgeInsets.zero,
-                value: RevealPolicy.afterDue,
-                title: Text(l.grpRevealAfterDue, style: t.bodyLarge),
-              ),
-              RadioListTile<RevealPolicy>(
-                key: const Key('grp.revealClose'),
-                contentPadding: EdgeInsets.zero,
-                value: RevealPolicy.afterClose,
-                title: Text(l.grpRevealAfterClose, style: t.bodyLarge),
-              ),
-            ],
-          ),
-        ),
+        if (!simple) ..._advanced(context, l, t, canVariant),
       ],
     );
+  }
+
+  /// Variant almashtirgichi va javoblarni ochish qoidasi.
+  List<Widget> _advanced(
+    BuildContext context,
+    AppLocalizations l,
+    TextTheme t,
+    bool canVariant,
+  ) {
+    return [
+      const SizedBox(height: FeSpace.sm),
+      SwitchListTile(
+        key: const Key('grp.variantSwitch'),
+        contentPadding: EdgeInsets.zero,
+        title: Text(l.grpVariantLabel),
+        subtitle: Text(
+          canVariant
+              ? l.grpVariantHelp
+              : l.grpVariantTooFew(poolSize, value.count * 2),
+          key: const Key('grp.variantNote'),
+        ),
+        value: canVariant && value.variant,
+        onChanged: canVariant
+            ? (v) => onChanged(value.copyWith(variant: v))
+            : null,
+      ),
+      FeSectionHeader(l.grpRevealSection),
+      RadioGroup<RevealPolicy>(
+        groupValue: value.reveal,
+        onChanged: (v) => onChanged(value.copyWith(reveal: v)),
+        child: Column(
+          children: [
+            RadioListTile<RevealPolicy>(
+              key: const Key('grp.revealDue'),
+              contentPadding: EdgeInsets.zero,
+              value: RevealPolicy.afterDue,
+              title: Text(l.grpRevealAfterDue, style: t.bodyLarge),
+            ),
+            RadioListTile<RevealPolicy>(
+              key: const Key('grp.revealClose'),
+              contentPadding: EdgeInsets.zero,
+              value: RevealPolicy.afterClose,
+              title: Text(l.grpRevealAfterClose, style: t.bodyLarge),
+            ),
+          ],
+        ),
+      ),
+    ];
   }
 }

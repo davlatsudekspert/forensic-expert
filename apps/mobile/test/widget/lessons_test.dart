@@ -9,7 +9,6 @@ import 'package:forensic_expert/data/class_quiz/class_quiz_demo_bank.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/data/lessons/fake_lessons_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
-import 'package:forensic_expert/features/class_quiz/presentation/class_quiz_host_screen.dart';
 import 'package:forensic_expert/features/lessons/presentation/lesson_viewer_screen.dart';
 import 'package:forensic_expert/features/lessons/presentation/lessons_list_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -448,12 +447,15 @@ void main() {
       expect(find.byKey(const Key('lesson.quizSoon')), findsNothing);
       await tester.tap(find.byKey(const Key('lesson.quizStart')));
       await tester.pumpAndSettle();
-      // Ustoz tanlaydi: guruhga topshirish / o‘zim / jonli sinf testi.
-      expect(find.byKey(const Key('grp.choice.assign')), findsOneWidget);
-      await tester.tap(find.byKey(const Key('grp.choice.live')));
+      // Ustoz tanlaydi: guruhga test berish (asosiy) / o‘zim yechib ko‘rish.
+      // Jonli «Sinfda test» dars tugmasidan olib tashlangan.
+      expect(find.byKey(const Key('grp.choice.group')), findsOneWidget);
+      expect(find.byKey(const Key('grp.choice.self')), findsOneWidget);
+      expect(find.byKey(const Key('grp.choice.live')), findsNothing);
+      await tester.tap(find.byKey(const Key('grp.choice.group')));
       await tester.pumpAndSettle();
-      expect(find.byType(ClassCreateScreen), findsOneWidget);
-      expect(find.byKey(const Key('class.selectedTopic')), findsOneWidget);
+      // Mavzu avtomatik: shu darsning test mavzusi.
+      expect(find.byKey(const Key('grp.lesson.topic')), findsOneWidget);
       expect(find.text(_questions.title), findsWidgets);
     });
 

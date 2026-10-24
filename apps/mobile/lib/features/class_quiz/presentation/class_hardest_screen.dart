@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show ProviderListenable;
 
+import '../../../app/class_groups.dart' show groupHardestDetailProvider;
 import '../../../app/class_quiz.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -8,6 +10,11 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import 'class_quiz_widgets.dart';
+
+/// Muhokama ma’lumot manbai: «Sinfda test» (sessiya) yoki «Guruh testi»
+/// (topshiriq) — ikkalasi ham bir xil [ClassHardDetail] ro‘yxatini beradi.
+typedef ClassHardestSource =
+    ProviderListenable<AsyncValue<ClassResult<List<ClassHardDetail>>>>;
 
 /// «Qiyin savol» muhokama sahifasini ochadi (proyektor uchun to‘q mavzu).
 /// [questionIndex] — dashboarddagi `hardest[i].index`.
@@ -27,6 +34,23 @@ Future<void> openClassHardestDiscussion(
   ),
 );
 
+/// Guruh testi: yopilgan topshiriqning qiyin savollari muhokamasi
+/// (`group_assignment_hardest_detail`). Ismlar ko‘rsatilmaydi.
+Future<void> openGroupHardestDiscussion(
+  BuildContext context, {
+  required String assignmentId,
+}) => Navigator.of(context).push<void>(
+  MaterialPageRoute<void>(
+    fullscreenDialog: true,
+    builder: (_) => ClassHardestDiscussionScreen(
+      sessionId: assignmentId,
+      hardest: const [],
+      initialQuestionIndex: 0,
+      source: groupHardestDetailProvider(assignmentId),
+    ),
+  ),
+);
+
 /// Muhokama varaqasi: savol matni, 4 variant (to‘g‘risi belgilangan), xato
 /// foizi, tushuntirish, manba (muallif, sarlavha, bet). Talaba ismlari
 /// ko‘rsatilmaydi — faqat savol bo‘yicha jami. Katta ekranda yirik shrift.
@@ -36,9 +60,14 @@ class ClassHardestDiscussionScreen extends ConsumerStatefulWidget {
     required this.sessionId,
     required this.hardest,
     required this.initialQuestionIndex,
+    this.source,
   });
 
+  /// Sessiya (yoki guruh topshirig‘i) id si.
   final String sessionId;
+
+  /// Ma’lumot manbai; berilmasa — «Sinfda test» sessiyasi.
+  final ClassHardestSource? source;
   final List<ClassHardQuestion> hardest;
   final int initialQuestionIndex;
 
@@ -75,7 +104,9 @@ class _ClassHardestDiscussionState
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final detail = ref.watch(classHardestDetailProvider(widget.sessionId));
+    final detail = ref.watch(
+      widget.source ?? classHardestDetailProvider(widget.sessionId),
+    );
     final result = detail.value;
     final items = _items(result);
     final hasDetail = result?.value?.isNotEmpty ?? false;

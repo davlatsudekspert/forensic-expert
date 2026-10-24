@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import '../../domain/class_groups/class_groups_models.dart';
+import '../../domain/class_quiz/class_quiz_models.dart' show ClassHardDetail;
 import '../../domain/ports/backend_ports.dart';
 import '../../domain/ports/class_groups_ports.dart';
 import 'supabase_rest.dart';
@@ -11,7 +12,7 @@ import 'supabase_rest.dart';
 /// RPC (hammasi SECURITY DEFINER, `supabase/migrations/20261018050000_class_groups.sql`):
 /// `group_create`, `group_list`, `group_detail`, `group_remove_member`,
 /// `group_assignment_create`, `group_assignment_close`, `group_assignment_board`,
-/// `group_assignment_preview`, `group_join`, `group_leave`,
+/// `group_assignment_preview`, `group_assignment_hardest_detail`, `group_join`, `group_leave`,
 /// `group_assignment_open`, `group_assignment_save`, `group_assignment_submit`,
 /// `group_assignment_result`. Jadvalga to‘g‘ridan-to‘g‘ri kirish yo‘q.
 /// Kutilgan xatolar `{ok:false,error}`; huquq xatosi HTTP 403/401.
@@ -153,6 +154,21 @@ class SupabaseClassGroupsService implements ClassGroupsService {
   Future<GroupCall<GroupPreview>> preview(String assignmentId) async => _map(
     await _rpc('group_assignment_preview', _a(assignmentId)),
     GroupPreview.fromJson,
+  );
+
+  @override
+  Future<GroupCall<List<ClassHardDetail>>> hardestDetail(
+    String assignmentId, {
+    int limit = 5,
+  }) async => _map(
+    await _rpc('group_assignment_hardest_detail', {
+      ..._a(assignmentId),
+      'p_limit': limit,
+    }),
+    (m) => [
+      for (final h in (m['items'] as List? ?? const []))
+        if (h is Map) ClassHardDetail.fromJson(h.cast<String, Object?>()),
+    ],
   );
 
   @override
