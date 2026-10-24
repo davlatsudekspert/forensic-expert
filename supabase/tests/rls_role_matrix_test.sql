@@ -345,6 +345,9 @@ insert into lesson_decks (deck_id, title, deck, slide_count, search_text)
 values ('matrix', 'Matritsa', '{"slides":[{"title":"Matritsa"}]}'::jsonb, 1, 'Matritsa');
 insert into lesson_topics (topic_id, deck_id, course, title, position)
 values ('matrix', 'matrix', 'Matritsa', 'Matritsa', 1);
+-- 20261024040000: hammaga ochiq mavzu (audience = 'all').
+insert into lesson_topics (topic_id, deck_id, course, title, position, audience)
+values ('matrix-open', 'matrix', 'Apparatlar', 'Ochiq', 2, 'all');
 -- «Ustoz–talaba testi» rows: a owns a group, b is a member with an attempt.
 insert into class_groups (id, teacher_id, name, code)
 values ('60000000-0000-0000-0000-0000000000d1'::uuid,
@@ -420,8 +423,11 @@ select pg_temp.as_user('50000000-0000-0000-0000-00000000000a');
 select pg_temp.table_matrix('STUDENT');
 -- Own rows: only what policies allow.
 select pg_temp.check((select count(*) = 0 from account_roles), 'STUDENT: sees no roles (has none)');
-select pg_temp.expect_42501($q$select lesson_list(null)$q$, 'STUDENT: lesson_list (teachers only)');
-select pg_temp.expect_42501($q$select lesson_get('matrix')$q$, 'STUDENT: lesson_get (teachers only)');
+-- 20261024040000: kirgan foydalanuvchi faqat audience = 'all' darslarni ko'radi.
+select pg_temp.check((select jsonb_array_length(lesson_list(null)) = 1 and lesson_list(null)::text like '%matrix-open%'
+  and lesson_list(null)::text not like '%"topic_id": "matrix"%'), 'STUDENT: lesson_list shows only open (audience=all) topic');
+select pg_temp.expect_42501($q$select lesson_get('matrix')$q$, 'STUDENT: lesson_get (teacher-only topic)');
+select pg_temp.check((select (lesson_get('matrix-open')->>'ok')::boolean), 'STUDENT: lesson_get open topic');
 select pg_temp.expect_42501($q$select group_create('Talaba guruhi')$q$, 'STUDENT: group_create (teachers only)');
 select pg_temp.expect_42501($q$select group_assignment_board('60000000-0000-0000-0000-0000000000d2')$q$,
   'STUDENT: group_assignment_board (owner teacher only)');
@@ -577,7 +583,7 @@ select pg_temp.table_matrix('ADMIN');
 select pg_temp.check((select (a->>'is_admin')::boolean from (select my_access() a) x), 'ADMIN: my_access is_admin');
 select pg_temp.check((select admin_stats() is not null), 'ADMIN: admin_stats');
 select pg_temp.check((select admin_dashboard() is not null), 'ADMIN: admin_dashboard');
-select pg_temp.check((select jsonb_array_length(lesson_list(null)) = 1), 'ADMIN: lesson_list');
+select pg_temp.check((select jsonb_array_length(lesson_list(null)) = 2), 'ADMIN: lesson_list (all topics)');
 select pg_temp.check((select (lesson_get('matrix')->>'ok')::boolean), 'ADMIN: lesson_get');
 select pg_temp.check((select (i->>'total')::int = 2 from (select admin_support_inbox() i) x), 'ADMIN: inbox sees all threads');
 select pg_temp.check((select t->>'author_email' = 'expert@matrix.test'

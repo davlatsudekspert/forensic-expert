@@ -57,7 +57,14 @@ void main() {
     final kinds = <String, int>{};
     void countKinds() {
       for (final k in [
-        'table', 'flow', 'steps', 'compare', 'tree', 'facts', 'reaction', 'cycle',
+        'table',
+        'flow',
+        'steps',
+        'compare',
+        'tree',
+        'facts',
+        'reaction',
+        'cycle',
       ]) {
         if (find.byKey(Key('lesson.diagram.$k')).evaluate().isNotEmpty) {
           kinds[k] = (kinds[k] ?? 0) + 1;
@@ -104,7 +111,8 @@ void main() {
       await tester.tap(next);
       await settle(400);
       countKinds();
-      if (i % 3 == 0 || i < 4) await shot('lesson_${i.toString().padLeft(2, '0')}');
+      if (i % 3 == 0 || i < 4)
+        await shot('lesson_${i.toString().padLeft(2, '0')}');
     }
     // ignore: avoid_print
     print('QA diagram kinds seen: $kinds');
@@ -156,7 +164,9 @@ void main() {
       }
     }
     // ignore: avoid_print
-    print('QA chips: 10=${find.text('10').evaluate().length} 15=${find.text('15').evaluate().length} 20=${find.text('20').evaluate().length}');
+    print(
+      'QA chips: 10=${find.text('10').evaluate().length} 15=${find.text('15').evaluate().length} 20=${find.text('20').evaluate().length}',
+    );
     c.read(routerProvider).go(Routes.groups);
     await settle(4000);
     await shot('phone_groups');

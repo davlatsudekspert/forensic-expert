@@ -67,10 +67,7 @@ void main() {
     try {
       final r = await c
           .read(authRepositoryProvider)
-          .signIn(
-            email: env['STORE_EMAIL']!,
-            password: env['STORE_PASSWORD']!,
-          );
+          .signIn(email: env['STORE_EMAIL']!, password: env['STORE_PASSWORD']!);
       // ignore: avoid_print
       print('STORE sign-in ok=${r.ok} failure=${r.failure}');
     } catch (e) {
