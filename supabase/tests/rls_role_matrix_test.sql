@@ -145,7 +145,11 @@ insert into matrix_tables values
  ('public.class_group_members',    'user_id',      false, false, 'nickname'),
  ('public.class_assignments',      null,           false, false, 'status'),
  ('public.class_assignment_questions', null,       false, false, 'question'),
- ('public.class_assignment_attempts', 'user_id',   false, false, 'answers');
+ ('public.class_assignment_attempts', 'user_id',   false, false, 'answers'),
+ -- Pro plans (20261025000000): no grant, only my_plan / plan_* / admin_*_plan RPCs.
+ ('public.plans',                  'user_id',      false, false, 'plan'),
+ ('public.trial_devices',          'user_id',      false, false, 'plan'),
+ ('private.plan_events',           null,           false, false, 'action');
 grant select on matrix_tables to anon, authenticated;
 
 -- Fix the column used for the no-op UPDATE to a real column of each table.
@@ -222,6 +226,14 @@ insert into verifier_grants (user_id, scope, granted_by) values
  ('50000000-0000-0000-0000-00000000000b', (enum_range(null::reviewer_scope))[1],
   '50000000-0000-0000-0000-00000000000c');
 insert into access_grants (user_id, tier) values ('50000000-0000-0000-0000-00000000000b', 'professionalPro');
+insert into plans (user_id, plan, source, expires_at) values
+ ('50000000-0000-0000-0000-00000000000a', 'student', 'trial', now() + interval '30 days'),
+ ('50000000-0000-0000-0000-00000000000b', 'expert', 'admin', null);
+insert into trial_devices (device_hash, user_id, plan) values
+ (repeat('a', 64), '50000000-0000-0000-0000-00000000000a', 'student'),
+ (repeat('b', 64), '50000000-0000-0000-0000-00000000000b', 'expert');
+insert into private.plan_events (user_id, action, plan, source) values
+ ('50000000-0000-0000-0000-00000000000a', 'TRIAL_GRANTED', 'student', 'trial');
 insert into ai_usage (user_id) values ('50000000-0000-0000-0000-00000000000a'),
   ('50000000-0000-0000-0000-00000000000b');
 insert into email_otp_codes (email, code_hash, expires_at) values

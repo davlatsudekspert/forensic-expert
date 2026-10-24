@@ -78,6 +78,7 @@ jobs:
           grep -q "ALL SECURITY TESTS PASSED" db.log
           grep -q "ALL RLS ROLE MATRIX TESTS PASSED" db.log
           grep -q "ALL ADMIN EXTENSION TESTS PASSED" db.log
+          grep -q "ALL PLAN TESTS PASSED" db.log
           ! grep -q "FAIL" db.log
 
   edge-functions:
