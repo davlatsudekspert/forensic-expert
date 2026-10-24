@@ -17,6 +17,7 @@ import '../domain/plan/plan_models.dart';
 import '../domain/ports/plan_ports.dart';
 import 'lessons.dart';
 import 'providers.dart';
+import 'support.dart' show isAdminProvider;
 
 /// Bootstrap’da Supabase sozlangan bo‘lsa [SupabasePlanService] bilan
 /// almashtiriladi; aks holda DEMO (Fake) — release’da ulanmagan.
@@ -106,9 +107,13 @@ class EntitlementsNotifier extends AsyncNotifier<Entitlements> {
 }
 
 /// [feature] ochiqmi (yuklanayotgan yoki xatoda — yopiq).
+///
+/// Admin (server `my_access`, email emas) — VIP: hamma funksiya ochiq
+/// (egasi qarori, 2026-10-24). Boshqa foydalanuvchilar — faqat o‘z rejasi.
 final proAllowedProvider = Provider.family<bool, ProFeature>(
   (ref, feature) =>
-      ref.watch(entitlementsProvider).value?.allows(feature) ?? false,
+      ref.watch(isAdminProvider) ||
+      (ref.watch(entitlementsProvider).value?.allows(feature) ?? false),
 );
 
 /// Funksiya shu foydalanuvchiga ochiqmi. Rejim emas, **reja** tekshiriladi.
@@ -126,6 +131,7 @@ final lessonLocksProvider = Provider.autoDispose<Map<String, ProFeature>?>((
 ) {
   final res = ref.watch(lessonListProvider('')).value?.value;
   if (res == null) return null;
+  if (ref.watch(isAdminProvider)) return const <String, ProFeature>{};
   final ent = ref.watch(entitlementsProvider).value ?? Entitlements.none;
   return computeLessonLocks(res, ent);
 });
