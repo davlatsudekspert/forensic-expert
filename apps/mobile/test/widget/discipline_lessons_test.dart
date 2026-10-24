@@ -54,6 +54,7 @@ void main() {
     required String code,
     bool teacher = true,
     UserMode mode = UserMode.professional,
+    Set<String> openCourses = const {'Apparatlar bilan ishlash'},
   }) async {
     final backend = FakeClassQuizBackend(teachers: {if (teacher) 't1'});
     await pumpApp(
@@ -68,6 +69,7 @@ void main() {
           FakeLessonsService(
             isTeacher: teacher,
             demo: false,
+            openCourses: openCourses,
             decks: {
               'toks-01': _deck('toks-01', 'Toksikologik kimyo'),
               'instr-01': _deck('instr-01', 'Apparatlar bilan ishlash'),
@@ -124,7 +126,7 @@ void main() {
     expect(find.byType(LessonViewerScreen), findsOneWidget);
   });
 
-  testWidgets('ustoz rejimi, server roli yo‘q — rolni olish havolasi', (
+  testWidgets('ustoz rejimi, server roli yo‘q, ochiq dars yo‘q — havola', (
     tester,
   ) async {
     await open(
@@ -132,6 +134,7 @@ void main() {
       code: 'forensic_toxicology',
       teacher: false,
       mode: UserMode.teacher,
+      openCourses: const {},
     );
     expect(
       find.byKey(const Key('discipline.lessonsTeacherOnly')),
@@ -140,8 +143,31 @@ void main() {
     expect(find.byKey(const Key('discipline.lesson.toks-01')), findsNothing);
   });
 
-  testWidgets('mutaxassis, rol yo‘q — bo‘lim ko‘rinmaydi', (tester) async {
-    await open(tester, code: 'forensic_toxicology', teacher: false);
+  testWidgets(
+    'mutaxassis, rol yo‘q — faqat ochiq «Apparatlar», test tugmasiz',
+    (tester) async {
+      await open(tester, code: 'forensic_toxicology', teacher: false);
+      expect(find.byKey(const Key('discipline.lessonsBody')), findsOneWidget);
+      expect(
+        find.byKey(const Key('discipline.lesson.instr-01')),
+        findsOneWidget,
+      );
+      expect(find.byKey(const Key('discipline.lesson.toks-01')), findsNothing);
+      expect(
+        find.byKey(const Key('discipline.lessonTest.instr-01')),
+        findsNothing,
+      );
+      expect(
+        find.byKey(const Key('discipline.lessonsTeacherOnly')),
+        findsNothing,
+      );
+    },
+  );
+
+  testWidgets('mutaxassis, rol yo‘q — sud tibbiyotida ochiq dars yo‘q', (
+    tester,
+  ) async {
+    await open(tester, code: 'forensic_medicine', teacher: false);
     expect(find.byKey(const Key('discipline.lessonsBody')), findsNothing);
     expect(
       find.byKey(const Key('discipline.lessonsTeacherOnly')),

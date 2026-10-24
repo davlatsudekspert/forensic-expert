@@ -35,6 +35,20 @@ k("disciplineLessonsTeacherOnly", "Discipline page note for teacher mode without
   "Lessons and group tests open with the teacher role. Open the Teacher panel to see how to get it.",
   "Уроки и тесты для группы открываются с ролью преподавателя. Откройте Панель преподавателя — там написано, как её получить.",
   "Darslar va guruh testlari ustoz roli bilan ochiladi. Ustoz panelini oching — rolni olish tartibi yozilgan.")
+k("homeInstrumentsTitle", "Home tile (professional/teacher): instrument course.",
+  "Working with instruments", "Работа на приборах", "Apparatlar bilan ishlash")
+k("homeInstrumentsBody", "Home tile body: instrument course contents.",
+  "Ethanol by GC (Kristallyuks), COHb on UV-1900, GC-MS basics: procedure, photos, test",
+  "Этанол на ГХ (Кристаллюкс), COHb на UV-1900, основы ГХ-МС: порядок работы, фото, тест",
+  "GC da etanol (Kristallyuks), UV-1900 da COHb, GX-MS asoslari: ish tartibi, rasmlar, test")
+k("lessonsForbidden", "Lessons: this lesson needs the teacher role (open courses are for everyone).",
+  "This lesson opens with the teacher role. The «Working with instruments» course is open to everyone.",
+  "Этот урок открывается с ролью преподавателя. Курс «Работа на приборах» открыт всем.",
+  "Bu dars ustoz roli bilan ochiladi. «Apparatlar bilan ishlash» kursi hammaga ochiq.")
+k("lessonsOpenNote", "Lessons list note for a signed-in user without the teacher role.",
+  "You see the open courses. Lecture decks for teaching open with the teacher role.",
+  "Вам показаны открытые курсы. Лекционные презентации открываются с ролью преподавателя.",
+  "Sizga ochiq kurslar ko‘rsatilgan. Ma’ruza prezentatsiyalari ustoz roli bilan ochiladi.")
 k("disciplineLessonsAll", "Link at the end of the discipline lessons section: full list.",
   "All lessons", "Все уроки", "Barcha darslar")
 

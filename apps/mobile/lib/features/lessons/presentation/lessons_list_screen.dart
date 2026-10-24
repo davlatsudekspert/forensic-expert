@@ -14,6 +14,8 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/lessons/lesson_models.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show ClassDemoBanner;
+import '../../class_quiz/presentation/teacher_panel_screen.dart'
+    show watchIsTeacher;
 import 'lesson_viewer_screen.dart' show LessonFailureView;
 
 /// «Darslar» ro‘yxati: qidiruv (server + tezkor mahalliy filtr), kurs
@@ -117,6 +119,15 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
                             ),
                     ),
                   ),
+                  if (!watchIsTeacher(ref))
+                    Padding(
+                      padding: const EdgeInsets.only(top: FeSpace.xs),
+                      child: Text(
+                        l.lessonsOpenNote,
+                        key: const Key('lessons.openNote'),
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
+                    ),
                   if (lang != 'uz')
                     Padding(
                       padding: const EdgeInsets.only(top: FeSpace.xs),

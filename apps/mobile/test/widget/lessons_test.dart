@@ -181,10 +181,47 @@ void main() {
     expect(find.byKey(const Key('lessons.row.b1')), findsOneWidget);
   });
 
-  testWidgets('ro‘yxat: ustoz emas — forbidden holat', (tester) async {
+  testWidgets('ro‘yxat: ustoz emas — faqat ochiq kurslar va izoh', (
+    tester,
+  ) async {
     await open(tester, teacher: false);
+    // Namunaviy decklar ochiq kursda emas — ro‘yxat bo‘sh, izoh bor.
+    expect(find.byKey(const Key('lessons.empty')), findsOneWidget);
+    expect(find.byKey(const Key('lessons.openNote')), findsOneWidget);
+    expect(find.byKey(const Key('lessons.forbidden')), findsNothing);
+  });
+
+  testWidgets('ustoz emas: ochiq kurs darsi ochiladi, yopig‘i — forbidden', (
+    tester,
+  ) async {
+    final svc = FakeLessonsService(
+      isTeacher: false,
+      demo: false,
+      decks: {
+        'instr-01': {
+          ..._deck('instr-01', 'instr-deck'),
+          'course': 'Apparatlar bilan ishlash',
+        },
+        'a1': _deck('a1', 'demo-topic'),
+      },
+    );
+    await open(tester, lessons: svc, teacher: false);
+    expect(find.byKey(const Key('lessons.row.instr-01')), findsOneWidget);
+    expect(find.byKey(const Key('lessons.row.a1')), findsNothing);
+  });
+
+  testWidgets('ustoz emas: yopiq kurs darsi — forbidden', (tester) async {
+    await open(
+      tester,
+      lessons: FakeLessonsService(
+        isTeacher: false,
+        demo: false,
+        decks: {'a1': _deck('a1', 'demo-topic')},
+      ),
+      teacher: false,
+      path: Routes.lesson('a1'),
+    );
     expect(find.byKey(const Key('lessons.forbidden')), findsOneWidget);
-    expect(find.text('Bu bo‘lim faqat ustozlar uchun'), findsOneWidget);
   });
 
   testWidgets('ro‘yxat: offline xato va qayta urinish', (tester) async {

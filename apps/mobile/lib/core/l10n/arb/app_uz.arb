@@ -2823,7 +2823,7 @@
   "lessonsSlideCount": "{count} ta slayd",
   "lessonsEmpty": "Hozircha darslar yo‘q.",
   "lessonsNoMatch": "«{query}» bo‘yicha hech narsa topilmadi.",
-  "lessonsForbidden": "Bu bo‘lim faqat ustozlar uchun",
+  "lessonsForbidden": "Bu dars ustoz roli bilan ochiladi. «Apparatlar bilan ishlash» kursi hammaga ochiq.",
   "lessonsRetry": "Qayta urinish",
   "lessonsTranslationPending": "tarjima kutilmoqda",
   "lessonsOriginalUzNote": "Darslar hozircha o‘zbek tilida — tarjima kutilmoqda.",
@@ -3124,5 +3124,8 @@
   "disciplineLessonsBody": "{count} ta dars. Darsni oching — oxirida «Guruhga test berish»: talabalar QR bilan kiradi, natijalar ism bo‘yicha o‘rinlari bilan, qiyin savollar muhokamaga.",
   "disciplineLessonGroupTest": "Guruh testi",
   "disciplineLessonsTeacherOnly": "Darslar va guruh testlari ustoz roli bilan ochiladi. Ustoz panelini oching — rolni olish tartibi yozilgan.",
-  "disciplineLessonsAll": "Barcha darslar"
+  "disciplineLessonsAll": "Barcha darslar",
+  "homeInstrumentsTitle": "Apparatlar bilan ishlash",
+  "homeInstrumentsBody": "GC da etanol (Kristallyuks), UV-1900 da COHb, GX-MS asoslari: ish tartibi, rasmlar, test",
+  "lessonsOpenNote": "Sizga ochiq kurslar ko‘rsatilgan. Ma’ruza prezentatsiyalari ustoz roli bilan ochiladi."
 }

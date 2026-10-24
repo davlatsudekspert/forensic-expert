@@ -5,6 +5,8 @@ import 'package:go_router/go_router.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../class_quiz/presentation/teacher_panel_screen.dart'
+    show watchIsTeacher;
 
 /// Dars oxiridagi test tugmasi (egasi qarori, 2026-10-24): jonli taxallusli
 /// «Sinfda test» emas, **Guruh testi**.
@@ -19,6 +21,11 @@ Future<void> showTopicTestChoice(
   String topicId,
 ) async {
   final l = AppLocalizations.of(context);
+  // Ustoz roli bo‘lmasa guruh testi berib bo‘lmaydi — darhol o‘zi yechadi.
+  if (!watchIsTeacher(ref)) {
+    await context.push<void>(Routes.groupPractice(topicId));
+    return;
+  }
   final choice = await showModalBottomSheet<int>(
     context: context,
     showDragHandle: true,

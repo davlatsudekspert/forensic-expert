@@ -17043,10 +17043,10 @@ abstract class AppLocalizations {
   /// **'Nothing found for “{query}”.'**
   String lessonsNoMatch(String query);
 
-  /// Friendly forbidden message.
+  /// Lessons: this lesson needs the teacher role (open courses are for everyone).
   ///
   /// In en, this message translates to:
-  /// **'This section is for teachers only'**
+  /// **'This lesson opens with the teacher role. The «Working with instruments» course is open to everyone.'**
   String get lessonsForbidden;
 
   /// Retry button.
@@ -18710,6 +18710,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'All lessons'**
   String get disciplineLessonsAll;
+
+  /// Home tile (professional/teacher): instrument course.
+  ///
+  /// In en, this message translates to:
+  /// **'Working with instruments'**
+  String get homeInstrumentsTitle;
+
+  /// Home tile body: instrument course contents.
+  ///
+  /// In en, this message translates to:
+  /// **'Ethanol by GC (Kristallyuks), COHb on UV-1900, GC-MS basics: procedure, photos, test'**
+  String get homeInstrumentsBody;
+
+  /// Lessons list note for a signed-in user without the teacher role.
+  ///
+  /// In en, this message translates to:
+  /// **'You see the open courses. Lecture decks for teaching open with the teacher role.'**
+  String get lessonsOpenNote;
 }
 
 class _AppLocalizationsDelegate

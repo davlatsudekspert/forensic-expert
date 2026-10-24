@@ -415,8 +415,22 @@ List<Widget> _lessonsSection(
   final t = Theme.of(context).textTheme;
   final teacher = watchIsTeacher(ref);
   final mode = ref.watch(settingsControllerProvider.select((s) => s.userMode));
-  if (!teacher) {
-    if (mode != UserMode.teacher) return const [];
+  // Server: ustoz — hamma dars; boshqa kirgan foydalanuvchi — faqat ochiq
+  // kurslar (audience = 'all', masalan «Apparatlar bilan ishlash»).
+  final res = ref.watch(lessonListProvider(''));
+  final all = res.value?.value;
+  if (all == null && res.isLoading) {
+    return [
+      FeSectionHeader(l.disciplineLessonsTitle),
+      const LinearProgressIndicator(minHeight: 2),
+    ];
+  }
+  final items = [
+    for (final s in all ?? const <LessonSummary>[])
+      if (lessonCourseInDiscipline(s.course, d)) s,
+  ];
+  if (items.isEmpty) {
+    if (teacher || mode != UserMode.teacher) return const [];
     return [
       FeSectionHeader(l.disciplineLessonsTitle),
       _NextStepTile(
@@ -427,18 +441,6 @@ List<Widget> _lessonsSection(
       ),
     ];
   }
-  final all = ref.watch(lessonListProvider('')).value?.value;
-  if (all == null) {
-    return [
-      FeSectionHeader(l.disciplineLessonsTitle),
-      const LinearProgressIndicator(minHeight: 2),
-    ];
-  }
-  final items = [
-    for (final s in all)
-      if (lessonCourseInDiscipline(s.course, d)) s,
-  ];
-  if (items.isEmpty) return const [];
   final groups = LessonGrouping.group(items);
   return [
     FeSectionHeader(l.disciplineLessonsTitle),
@@ -463,12 +465,15 @@ List<Widget> _lessonsSection(
           leading: Icon(Icons.slideshow_rounded, color: c.accent),
           title: Text(s.title, maxLines: 2, overflow: TextOverflow.ellipsis),
           subtitle: Text(l.lessonsSlideCount(s.slides)),
-          trailing: IconButton(
-            key: Key('discipline.lessonTest.${s.topicId}'),
-            tooltip: l.disciplineLessonGroupTest,
-            icon: const Icon(Icons.quiz_outlined),
-            onPressed: () => context.push(Routes.groupLessonTest(s.topicId)),
-          ),
+          trailing: teacher
+              ? IconButton(
+                  key: Key('discipline.lessonTest.${s.topicId}'),
+                  tooltip: l.disciplineLessonGroupTest,
+                  icon: const Icon(Icons.quiz_outlined),
+                  onPressed: () =>
+                      context.push(Routes.groupLessonTest(s.topicId)),
+                )
+              : const Icon(Icons.chevron_right),
           onTap: () => context.push(Routes.lesson(s.topicId)),
         ),
     ],

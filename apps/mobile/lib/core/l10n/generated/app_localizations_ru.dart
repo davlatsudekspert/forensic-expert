@@ -9855,7 +9855,8 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get lessonsForbidden => 'Этот раздел только для преподавателей';
+  String get lessonsForbidden =>
+      'Этот урок открывается с ролью преподавателя. Курс «Работа на приборах» открыт всем.';
 
   @override
   String get lessonsRetry => 'Повторить';
@@ -10871,4 +10872,15 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get disciplineLessonsAll => 'Все уроки';
+
+  @override
+  String get homeInstrumentsTitle => 'Работа на приборах';
+
+  @override
+  String get homeInstrumentsBody =>
+      'Этанол на ГХ (Кристаллюкс), COHb на UV-1900, основы ГХ-МС: порядок работы, фото, тест';
+
+  @override
+  String get lessonsOpenNote =>
+      'Вам показаны открытые курсы. Лекционные презентации открываются с ролью преподавателя.';
 }

@@ -9802,7 +9802,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get lessonsForbidden => 'This section is for teachers only';
+  String get lessonsForbidden =>
+      'This lesson opens with the teacher role. The «Working with instruments» course is open to everyone.';
 
   @override
   String get lessonsRetry => 'Try again';
@@ -10823,4 +10824,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get disciplineLessonsAll => 'All lessons';
+
+  @override
+  String get homeInstrumentsTitle => 'Working with instruments';
+
+  @override
+  String get homeInstrumentsBody =>
+      'Ethanol by GC (Kristallyuks), COHb on UV-1900, GC-MS basics: procedure, photos, test';
+
+  @override
+  String get lessonsOpenNote =>
+      'You see the open courses. Lecture decks for teaching open with the teacher role.';
 }

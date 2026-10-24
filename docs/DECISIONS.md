@@ -262,3 +262,8 @@ Egasi: «Apple’da to‘ldirayotganda hamma davlatlarga deb yozaylik. Esingda s
 - Foydalanish rejimi uchta: Mutaxassis, Talaba, **Ustoz** (`UserMode.teacher`). Rejim faqat ilova tuzilishini o‘zgartiradi; darslar, jonli test va guruh testlari **serverdagi `teacher` roli** bilan ochiladi (rolni admin beradi).
 - Ustoz fanni («Sud tibbiyoti», «Sud toksikologiyasi») ochganda shu fan prezentatsiyalari kurs bo‘yicha ko‘rinadi, har dars qatorida «Guruh testi» tugmasi (10/15/20 savol, QR, jonli natija, qiyin savollar). Kurs → fan bog‘lami ilovada: «Toksikologik kimyo», «Apparatlar bilan ishlash» → toksikologiya; qolgan kurslar → sud tibbiyoti.
 - «Apparatlar bilan ishlash» alohida kurs (3 dars), rasmlar faqat ruxsatli (CC Commons, o‘z sxemalar) — `lesson-images` bucket (ommaviy o‘qish; yozish — ustoz/admin, 2 MB, PNG/JPG).
+
+## 2026-10-24 — «Apparatlar bilan ishlash» mutaxassisga ochiq; Pro rejasi
+- `lesson_topics.audience` ('teacher' | 'all'): «Apparatlar bilan ishlash» kursi `all` — har qanday kirgan foydalanuvchi (mutaxassis) ko‘radi; boshqa ma’ruzalar — faqat ustoz roli. Prod’ga qo‘llandi (`lesson_list`/`lesson_get` yangilandi).
+- Mutaxassis uchun Bosh sahifada «Apparatlar bilan ishlash» plitkasi; dars oxirida test — o‘zi yechadi (guruh testi faqat ustozda).
+- Egasi topshirig‘i: tekshiruvdan o‘tgach Pro versiya tayyorlanadi; Talaba/Mutaxassis/Ustoz rejimlari free/pro bo‘linadi; «Apparatlar bilan ishlash» mutaxassis uchun Pro bo‘ladi (hozircha bepul — tekshiruvdagi buildga tegilmaydi). Taklif va narxlar: `docs/PRO_PLAN_2026-10-24.md` (tasdiq kutilmoqda).

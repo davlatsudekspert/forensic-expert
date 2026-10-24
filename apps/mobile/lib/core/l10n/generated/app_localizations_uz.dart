@@ -9760,7 +9760,8 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get lessonsForbidden => 'Bu bo‘lim faqat ustozlar uchun';
+  String get lessonsForbidden =>
+      'Bu dars ustoz roli bilan ochiladi. «Apparatlar bilan ishlash» kursi hammaga ochiq.';
 
   @override
   String get lessonsRetry => 'Qayta urinish';
@@ -10756,4 +10757,15 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get disciplineLessonsAll => 'Barcha darslar';
+
+  @override
+  String get homeInstrumentsTitle => 'Apparatlar bilan ishlash';
+
+  @override
+  String get homeInstrumentsBody =>
+      'GC da etanol (Kristallyuks), UV-1900 da COHb, GX-MS asoslari: ish tartibi, rasmlar, test';
+
+  @override
+  String get lessonsOpenNote =>
+      'Sizga ochiq kurslar ko‘rsatilgan. Ma’ruza prezentatsiyalari ustoz roli bilan ochiladi.';
 }

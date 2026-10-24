@@ -123,10 +123,12 @@ def main():
             "source_lang = excluded.source_lang, updated_at = now();")
     for tid, did, course, title, pos, hidden in rows:
         out.append(
-            "insert into public.lesson_topics (topic_id, deck_id, course, title, position, hidden) values ("
-            f"{q(tid)}, {q(did)}, {q(course)}, {q(title[:400])}, {int(pos)}, {str(hidden).lower()}) "
+            "insert into public.lesson_topics (topic_id, deck_id, course, title, position, hidden, audience) values ("
+            f"{q(tid)}, {q(did)}, {q(course)}, {q(title[:400])}, {int(pos)}, {str(hidden).lower()}, "
+            f"{q('all' if course == INSTR_COURSE else 'teacher')}) "
             "on conflict (topic_id) do update set deck_id = excluded.deck_id, course = excluded.course, "
-            "title = excluded.title, position = excluded.position, hidden = excluded.hidden;")
+            "title = excluded.title, position = excluded.position, hidden = excluded.hidden, "
+            "audience = excluded.audience;")
     pathlib.Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     pathlib.Path(a.out).write_text("\n".join(out) + "\n", encoding="utf-8")
     shown = [r for r in rows if not r[5]]

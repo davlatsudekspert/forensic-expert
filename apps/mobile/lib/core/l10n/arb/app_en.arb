@@ -12719,10 +12719,8 @@
       }
     }
   },
-  "lessonsForbidden": "This section is for teachers only",
-  "@lessonsForbidden": {
-    "description": "Friendly forbidden message."
-  },
+  "lessonsForbidden": "This lesson opens with the teacher role. The «Working with instruments» course is open to everyone.",
+  "@lessonsForbidden": {"description": "Lessons: this lesson needs the teacher role (open courses are for everyone)."},
   "lessonsRetry": "Try again",
   "@lessonsRetry": {
     "description": "Retry button."
@@ -13916,5 +13914,11 @@
   "disciplineLessonsTeacherOnly": "Lessons and group tests open with the teacher role. Open the Teacher panel to see how to get it.",
   "@disciplineLessonsTeacherOnly": {"description": "Discipline page note for teacher mode without the server role."},
   "disciplineLessonsAll": "All lessons",
-  "@disciplineLessonsAll": {"description": "Link at the end of the discipline lessons section: full list."}
+  "@disciplineLessonsAll": {"description": "Link at the end of the discipline lessons section: full list."},
+  "homeInstrumentsTitle": "Working with instruments",
+  "@homeInstrumentsTitle": {"description": "Home tile (professional/teacher): instrument course."},
+  "homeInstrumentsBody": "Ethanol by GC (Kristallyuks), COHb on UV-1900, GC-MS basics: procedure, photos, test",
+  "@homeInstrumentsBody": {"description": "Home tile body: instrument course contents."},
+  "lessonsOpenNote": "You see the open courses. Lecture decks for teaching open with the teacher role.",
+  "@lessonsOpenNote": {"description": "Lessons list note for a signed-in user without the teacher role."}
 }

@@ -2823,7 +2823,7 @@
   "lessonsSlideCount": "{count, plural, one{{count} слайд} few{{count} слайда} many{{count} слайдов} other{{count} слайда}}",
   "lessonsEmpty": "Пока нет уроков.",
   "lessonsNoMatch": "По запросу «{query}» ничего не найдено.",
-  "lessonsForbidden": "Этот раздел только для преподавателей",
+  "lessonsForbidden": "Этот урок открывается с ролью преподавателя. Курс «Работа на приборах» открыт всем.",
   "lessonsRetry": "Повторить",
   "lessonsTranslationPending": "перевод ожидается",
   "lessonsOriginalUzNote": "Уроки пока на узбекском — перевод ожидается.",
@@ -3124,5 +3124,8 @@
   "disciplineLessonsBody": "{count} уроков. Откройте урок — в конце «Дать тест группе»: студенты входят по QR, результаты по именам с местами, трудные вопросы для разбора.",
   "disciplineLessonGroupTest": "Тест для группы",
   "disciplineLessonsTeacherOnly": "Уроки и тесты для группы открываются с ролью преподавателя. Откройте Панель преподавателя — там написано, как её получить.",
-  "disciplineLessonsAll": "Все уроки"
+  "disciplineLessonsAll": "Все уроки",
+  "homeInstrumentsTitle": "Работа на приборах",
+  "homeInstrumentsBody": "Этанол на ГХ (Кристаллюкс), COHb на UV-1900, основы ГХ-МС: порядок работы, фото, тест",
+  "lessonsOpenNote": "Вам показаны открытые курсы. Лекционные презентации открываются с ролью преподавателя."
 }

@@ -10,9 +10,13 @@ class FakeLessonsService implements LessonsService {
     this.demo = true,
     Map<String, Map<String, Object?>>? decks,
     this.failure,
+    this.openCourses = const {'Apparatlar bilan ishlash'},
   }) : _decks = decks ?? sampleLessonDecks;
 
   final bool isTeacher;
+
+  /// Ustoz bo‘lmaganga ochiq kurslar (server: `lesson_topics.audience = 'all'`).
+  final Set<String> openCourses;
   final bool demo;
   final Map<String, Map<String, Object?>> _decks;
 
@@ -31,7 +35,6 @@ class FakeLessonsService implements LessonsService {
   Future<ClassResult<List<LessonSummary>>> list({String? query}) async {
     queries.add(query);
     if (failure != null) return ClassResult.fail(failure!);
-    if (!isTeacher) return const ClassResult.fail(ClassFailure.forbidden);
     final q = (query ?? '').trim().toLowerCase();
     final out = <LessonSummary>[];
     for (final e in _decks.entries) {
@@ -43,6 +46,7 @@ class FakeLessonsService implements LessonsService {
           for (final b in s.bullets) b.text,
         ],
       ].join(' ').toLowerCase();
+      if (!isTeacher && !openCourses.contains(d.course)) continue;
       if (q.isEmpty || hay.contains(q)) {
         out.add(
           LessonSummary(
@@ -61,10 +65,13 @@ class FakeLessonsService implements LessonsService {
   @override
   Future<ClassResult<LessonDeck>> get(String topicId) async {
     if (failure != null) return ClassResult.fail(failure!);
-    if (!isTeacher) return const ClassResult.fail(ClassFailure.forbidden);
     final j = _decks[topicId];
     if (j == null) return const ClassResult.fail(ClassFailure.notFound);
-    return ClassResult.ok(LessonDeck.fromJson(j));
+    final deck = LessonDeck.fromJson(j);
+    if (!isTeacher && !openCourses.contains(deck.course)) {
+      return const ClassResult.fail(ClassFailure.forbidden);
+    }
+    return ClassResult.ok(deck);
   }
 }
 
