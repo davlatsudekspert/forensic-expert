@@ -111,8 +111,9 @@ void main() {
       await tester.tap(next);
       await settle(400);
       countKinds();
-      if (i % 3 == 0 || i < 4)
+      if (i % 3 == 0 || i < 4) {
         await shot('lesson_${i.toString().padLeft(2, '0')}');
+      }
     }
     // ignore: avoid_print
     print('QA diagram kinds seen: $kinds');
