@@ -10835,4 +10835,9 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get lessonsOpenNote =>
       'You see the open courses. Lecture decks for teaching open with the teacher role.';
+
+  @override
+  String disciplineLessonsMore(int count) {
+    return 'Show $count more lessons';
+  }
 }

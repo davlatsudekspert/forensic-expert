@@ -13920,5 +13920,7 @@
   "homeInstrumentsBody": "Ethanol by GC (Kristallyuks), COHb on UV-1900, GC-MS basics: procedure, photos, test",
   "@homeInstrumentsBody": {"description": "Home tile body: instrument course contents."},
   "lessonsOpenNote": "You see the open courses. Lecture decks for teaching open with the teacher role.",
-  "@lessonsOpenNote": {"description": "Lessons list note for a signed-in user without the teacher role."}
+  "@lessonsOpenNote": {"description": "Lessons list note for a signed-in user without the teacher role."},
+  "disciplineLessonsMore": "Show {count} more lessons",
+  "@disciplineLessonsMore": {"description": "Discipline lessons: expand the rest of a course. {count} more lessons.", "placeholders": {"count": {"type": "int"}}}
 }

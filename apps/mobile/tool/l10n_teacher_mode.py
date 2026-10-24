@@ -49,6 +49,9 @@ k("lessonsOpenNote", "Lessons list note for a signed-in user without the teacher
   "You see the open courses. Lecture decks for teaching open with the teacher role.",
   "Вам показаны открытые курсы. Лекционные презентации открываются с ролью преподавателя.",
   "Sizga ochiq kurslar ko‘rsatilgan. Ma’ruza prezentatsiyalari ustoz roli bilan ochiladi.")
+k("disciplineLessonsMore", "Discipline lessons: expand the rest of a course. {count} more lessons.",
+  "Show {count} more lessons", "Показать ещё {count}", "Yana {count} ta dars",
+  {"count": "int"})
 k("disciplineLessonsAll", "Link at the end of the discipline lessons section: full list.",
   "All lessons", "Все уроки", "Barcha darslar")
 

@@ -449,34 +449,12 @@ List<Widget> _lessonsSection(
       key: const Key('discipline.lessonsBody'),
       style: t.bodySmall?.copyWith(color: c.textSecondary),
     ),
-    for (final g in groups) ...[
-      Padding(
-        padding: const EdgeInsets.only(top: FeSpace.md, bottom: FeSpace.xs),
-        child: Semantics(
-          header: true,
-          child: Text(g.course, style: t.titleSmall?.copyWith(color: c.accent)),
-        ),
+    for (final g in groups)
+      _CourseLessons(
+        key: Key('discipline.course.${g.course}'),
+        group: g,
+        teacher: teacher,
       ),
-      for (final s in g.items)
-        ListTile(
-          key: Key('discipline.lesson.${s.topicId}'),
-          contentPadding: EdgeInsets.zero,
-          dense: true,
-          leading: Icon(Icons.slideshow_rounded, color: c.accent),
-          title: Text(s.title, maxLines: 2, overflow: TextOverflow.ellipsis),
-          subtitle: Text(l.lessonsSlideCount(s.slides)),
-          trailing: teacher
-              ? IconButton(
-                  key: Key('discipline.lessonTest.${s.topicId}'),
-                  tooltip: l.disciplineLessonGroupTest,
-                  icon: const Icon(Icons.quiz_outlined),
-                  onPressed: () =>
-                      context.push(Routes.groupLessonTest(s.topicId)),
-                )
-              : const Icon(Icons.chevron_right),
-          onTap: () => context.push(Routes.lesson(s.topicId)),
-        ),
-    ],
     const SizedBox(height: FeSpace.xs),
     Align(
       alignment: AlignmentDirectional.centerStart,
@@ -488,4 +466,76 @@ List<Widget> _lessonsSection(
       ),
     ),
   ];
+}
+
+/// Bitta kurs darslari: avval 5 ta, «Yana N ta dars» bilan to‘liq ro‘yxat —
+/// fan sahifasi 80+ qatorli bo‘lib ketmasin.
+class _CourseLessons extends StatefulWidget {
+  const _CourseLessons({super.key, required this.group, required this.teacher});
+
+  final LessonGroup group;
+  final bool teacher;
+
+  static const preview = 5;
+
+  @override
+  State<_CourseLessons> createState() => _CourseLessonsState();
+}
+
+class _CourseLessonsState extends State<_CourseLessons> {
+  bool _expanded = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final all = widget.group.items;
+    final shown = _expanded ? all : all.take(_CourseLessons.preview).toList();
+    final rest = all.length - shown.length;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: FeSpace.md, bottom: FeSpace.xs),
+          child: Semantics(
+            header: true,
+            child: Text(
+              '${widget.group.course} · ${all.length}',
+              style: t.titleSmall?.copyWith(color: c.accent),
+            ),
+          ),
+        ),
+        for (final s in shown)
+          ListTile(
+            key: Key('discipline.lesson.${s.topicId}'),
+            contentPadding: EdgeInsets.zero,
+            dense: true,
+            leading: Icon(Icons.slideshow_rounded, color: c.accent),
+            title: Text(s.title, maxLines: 2, overflow: TextOverflow.ellipsis),
+            subtitle: Text(l.lessonsSlideCount(s.slides)),
+            trailing: widget.teacher
+                ? IconButton(
+                    key: Key('discipline.lessonTest.${s.topicId}'),
+                    tooltip: l.disciplineLessonGroupTest,
+                    icon: const Icon(Icons.quiz_outlined),
+                    onPressed: () =>
+                        context.push(Routes.groupLessonTest(s.topicId)),
+                  )
+                : const Icon(Icons.chevron_right),
+            onTap: () => context.push(Routes.lesson(s.topicId)),
+          ),
+        if (rest > 0)
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: TextButton.icon(
+              key: Key('discipline.lessonsMore.${widget.group.course}'),
+              onPressed: () => setState(() => _expanded = true),
+              icon: const Icon(Icons.expand_more_rounded),
+              label: Text(l.disciplineLessonsMore(rest)),
+            ),
+          ),
+      ],
+    );
+  }
 }

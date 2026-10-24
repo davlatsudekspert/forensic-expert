@@ -96,8 +96,8 @@ void main() {
         findsOneWidget,
       );
       expect(find.byKey(const Key('discipline.lesson.ktp-01')), findsNothing);
-      expect(find.text('Toksikologik kimyo'), findsOneWidget);
-      expect(find.text('Apparatlar bilan ishlash'), findsOneWidget);
+      expect(find.textContaining('Toksikologik kimyo'), findsOneWidget);
+      expect(find.textContaining('Apparatlar bilan ishlash'), findsOneWidget);
 
       await reveal(
         tester,

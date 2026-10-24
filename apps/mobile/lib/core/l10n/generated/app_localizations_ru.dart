@@ -10883,4 +10883,9 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get lessonsOpenNote =>
       'Вам показаны открытые курсы. Лекционные презентации открываются с ролью преподавателя.';
+
+  @override
+  String disciplineLessonsMore(int count) {
+    return 'Показать ещё $count';
+  }
 }

@@ -18728,6 +18728,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You see the open courses. Lecture decks for teaching open with the teacher role.'**
   String get lessonsOpenNote;
+
+  /// Discipline lessons: expand the rest of a course. {count} more lessons.
+  ///
+  /// In en, this message translates to:
+  /// **'Show {count} more lessons'**
+  String disciplineLessonsMore(int count);
 }
 
 class _AppLocalizationsDelegate

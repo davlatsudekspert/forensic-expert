@@ -10768,4 +10768,9 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get lessonsOpenNote =>
       'Sizga ochiq kurslar ko‘rsatilgan. Ma’ruza prezentatsiyalari ustoz roli bilan ochiladi.';
+
+  @override
+  String disciplineLessonsMore(int count) {
+    return 'Yana $count ta dars';
+  }
 }
