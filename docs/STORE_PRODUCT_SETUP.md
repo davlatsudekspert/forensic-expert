@@ -29,7 +29,7 @@ Boshqa mamlakatlar narxlari do‘kon jadvalidan tanlanadi. Product ID **aynan** 
 2. **Monetization → Subscriptions → guruh «FORENSIC EXPERT Pro»**: yuqoridagi 6 ta Auto-Renewable Subscription.
    Daraja tartibi (upgrade/downgrade): expert > teacher > student (yillik oyligidan yuqori).
 3. Har obunaga uz/ru/en nomi va tavsifi, ko‘rsatiladigan nom, review skrinshoti (Pro sahifasi) va Review Notes.
-4. **Intro-offer «1 oy bepul»** (egasi qarori): har obunaga *Subscription Prices → Introductory Offers → Free, 3 months*,
+4. **Intro-offer «1 oy bepul»** (egasi qarori): har obunaga *Subscription Prices → Introductory Offers → Free, 1 month*,
    barcha mamlakatlar, faqat yangi obunachilar. Bir Apple ID — bir marta (Apple o‘zi nazorat qiladi).
 5. **Sandbox tester**: *Users and Access → Sandbox → Testers* (haqiqiy bo‘lmagan email). Qurilmada *Settings → Developer →
    Sandbox Apple Account*. Tekshiruvchiga ham sandbox akkaunt va qisqa izoh beriladi (xarid, bekor qilish, restore, tugash).
@@ -42,7 +42,7 @@ Boshqa mamlakatlar narxlari do‘kon jadvalidan tanlanadi. Product ID **aynan** 
 1. **Monetize → Products → Subscriptions**: 6 ta obuna, product ID yuqoridagidek; har birida bitta base plan
    (oylik `P1M`, yillik `P1Y`, auto-renewing).
 2. Narx — jadvaldagidek (USD), boshqa mamlakatlar avtomatik konvertatsiya.
-3. **Offer «1 oy bepul»**: har base plan uchun *Add offer → New customer acquisition → Free trial, 3 months*.
+3. **Offer «1 oy bepul»**: har base plan uchun *Add offer → New customer acquisition → Free trial, 1 month*.
 4. **Setup → License testing**: tester Gmail akkauntlari (License testers) va ichki test treki.
 5. **API access**: Google Cloud da service account yarating → Play Console *Users and permissions* da shu akkauntga
    ilova uchun «View financial data» va «Manage orders and subscriptions» ruxsati → JSON kalit yuklab oling.
