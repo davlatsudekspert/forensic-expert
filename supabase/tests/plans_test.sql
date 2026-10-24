@@ -213,6 +213,20 @@ select pg_temp.check(public.admin_set_plan('plan-fourth@x', null, null)->>'resul
 select pg_temp.check(pg_temp.events('STORE_APPLIED') >= 4 and pg_temp.events('TRIAL_GRANTED') = 2
   and pg_temp.events('ADMIN_GRANTED') >= 3, 'plan_events audit rows written');
 
+-- ============================================================ premium (hammasi ochiq)
+select pg_temp.as_service();
+select pg_temp.check(public.plan_apply_store('71000000-0000-0000-0000-0000000000b4', 'ios', 'fe_premium_monthly', 'tx-p',
+  now() + interval '30 days', true)->>'plan' = 'premium', 'premium: store product -> premium plan');
+select pg_temp.as_user('71000000-0000-0000-0000-0000000000b4');
+select pg_temp.check(public.my_plan(null)->>'plan' = 'premium', 'premium: my_plan reflects premium');
+select pg_temp.as_user('71000000-0000-0000-0000-0000000000a1');
+select pg_temp.check(public.admin_set_plan('plan-third@x', 'premium', now() + interval '30 days')->>'result' = 'GRANTED',
+  'premium: admin_set_plan accepts premium');
+select pg_temp.check(public.admin_list_plans('plan-third', 5)::text like '%premium%', 'premium: admin_list_plans shows premium');
+select pg_temp.check((public.admin_plan_stats()->'active'->>'premium') is not null
+  or (public.admin_plan_stats()::text like '%premium%'), 'premium: stats include premium');
+select public.admin_set_plan('plan-third@x', null, null);
+
 reset role;
 select set_config('request.jwt.claim.sub', '', false);
 \echo ALL PLAN TESTS PASSED

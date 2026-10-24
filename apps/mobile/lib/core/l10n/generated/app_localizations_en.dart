@@ -179,7 +179,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get themeDark => 'Dark';
 
   @override
-  String get settingsMode => 'Mode: student or professional';
+  String get settingsMode => 'Mode';
 
   @override
   String get scientificDatabaseLabel => 'Scientific database';
@@ -11249,4 +11249,32 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get studyNoGuaranteeNote =>
       'Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.';
+
+  @override
+  String get proPlanPremium => 'Premium';
+
+  @override
+  String get proIncludesPremium1 =>
+      'Everything in Student Pro, Teacher Pro and Expert Pro in one plan';
+
+  @override
+  String get proIncludesPremium2 =>
+      'All lessons and presentations, tests, exam mode, flashcards and error analytics';
+
+  @override
+  String get proIncludesPremium3 =>
+      'Groups and group tests, results CSV, the instruments course, professional calculators, casebook and court preparation';
+
+  @override
+  String get proPremiumBest => 'Best value: Premium — everything unlocked';
+
+  @override
+  String get proPremiumBody =>
+      'Cheaper than buying the three plans separately.';
+
+  @override
+  String get proPremiumSee => 'See Premium';
+
+  @override
+  String get proPremiumBack => 'Back to my plan';
 }

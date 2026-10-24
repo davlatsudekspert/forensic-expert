@@ -332,4 +332,37 @@ void main() {
     await tester.tap(find.text('Barcha 211 ta ma’ruza prezentatsiyasi'));
     expect(tapped, 2);
   });
+
+  testWidgets('Premium: karta → hammasi ochiq, o‘z narxi; orqaga qaytish', (
+    tester,
+  ) async {
+    await open(tester);
+    expect(find.byKey(const Key('pro.premium.card')), findsOneWidget);
+    await tapKey(tester, 'pro.premium.see');
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('pro.includes.premium')), findsOneWidget);
+    expect(find.byKey(const Key('pro.includes.student')), findsNothing);
+    expect(find.byKey(const Key('pro.price.monthly')), findsOneWidget);
+    await tapKey(tester, 'pro.premium.back');
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('pro.includes.student')), findsOneWidget);
+  });
+
+  testWidgets('Premium faol: «allaqachon faol», boshqa rejalar ham ochiq', (
+    tester,
+  ) async {
+    final c = await open(
+      tester,
+      ent: Entitlements(
+        plan: Plan.premium,
+        source: PlanSource.store,
+        expiresAt: DateTime.now().add(const Duration(days: 20)),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('pro.alreadyActive')), findsOneWidget);
+    for (final f in ProFeature.values) {
+      expect(c.read(proAllowedProvider(f)), isTrue, reason: f.name);
+    }
+  });
 }

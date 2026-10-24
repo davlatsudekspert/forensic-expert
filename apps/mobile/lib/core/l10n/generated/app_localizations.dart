@@ -412,10 +412,10 @@ abstract class AppLocalizations {
   /// **'Dark'**
   String get themeDark;
 
-  /// Settings row.
+  /// Profile row title: usage mode (student, teacher or expert).
   ///
   /// In en, this message translates to:
-  /// **'Mode: student or professional'**
+  /// **'Mode'**
   String get settingsMode;
 
   /// Settings row showing content pack version.
@@ -19442,6 +19442,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.'**
   String get studyNoGuaranteeNote;
+
+  /// Plan name: premium (everything unlocked).
+  ///
+  /// In en, this message translates to:
+  /// **'Premium'**
+  String get proPlanPremium;
+
+  /// Pro page: what Premium includes, item 1.
+  ///
+  /// In en, this message translates to:
+  /// **'Everything in Student Pro, Teacher Pro and Expert Pro in one plan'**
+  String get proIncludesPremium1;
+
+  /// Pro page: what Premium includes, item 2.
+  ///
+  /// In en, this message translates to:
+  /// **'All lessons and presentations, tests, exam mode, flashcards and error analytics'**
+  String get proIncludesPremium2;
+
+  /// Pro page: what Premium includes, item 3.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups and group tests, results CSV, the instruments course, professional calculators, casebook and court preparation'**
+  String get proIncludesPremium3;
+
+  /// Pro page: Premium card title.
+  ///
+  /// In en, this message translates to:
+  /// **'Best value: Premium — everything unlocked'**
+  String get proPremiumBest;
+
+  /// Pro page: Premium card body.
+  ///
+  /// In en, this message translates to:
+  /// **'Cheaper than buying the three plans separately.'**
+  String get proPremiumBody;
+
+  /// Pro page: button to view Premium.
+  ///
+  /// In en, this message translates to:
+  /// **'See Premium'**
+  String get proPremiumSee;
+
+  /// Pro page: button to go back to the mode plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to my plan'**
+  String get proPremiumBack;
 }
 
 class _AppLocalizationsDelegate

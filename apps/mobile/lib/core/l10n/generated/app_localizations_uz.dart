@@ -181,7 +181,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get themeDark => 'Qorong‘i';
 
   @override
-  String get settingsMode => 'Rejim: talaba yoki mutaxassis';
+  String get settingsMode => 'Rejim';
 
   @override
   String get scientificDatabaseLabel => 'Ilmiy baza';
@@ -11181,4 +11181,31 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get studyNoGuaranteeNote =>
       'Savollar o‘quv maqsadida, ochiq manbalar asosida tuzilgan. Rasmiy imtihonda aynan shu savollar tushishiga kafolat berilmaydi.';
+
+  @override
+  String get proPlanPremium => 'Premium rejasi';
+
+  @override
+  String get proIncludesPremium1 =>
+      'Talaba, Ustoz va Mutaxassis Pro’ning hammasi bitta rejada';
+
+  @override
+  String get proIncludesPremium2 =>
+      'Barcha dars va prezentatsiyalar, testlar, imtihon rejimi, kartochkalar va xatolar tahlili';
+
+  @override
+  String get proIncludesPremium3 =>
+      'Guruhlar va guruh testlari, natijalar CSV, apparatlar kursi, professional kalkulyatorlar, ish daftari va sudga tayyorgarlik';
+
+  @override
+  String get proPremiumBest => 'Eng qulay: Premium — hammasi ochiq';
+
+  @override
+  String get proPremiumBody => 'Uchta rejani alohida olgandan arzonroq.';
+
+  @override
+  String get proPremiumSee => 'Premium’ni ko‘rish';
+
+  @override
+  String get proPremiumBack => 'O‘z rejamga qaytish';
 }

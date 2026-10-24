@@ -28,6 +28,7 @@ class ProFirstOfferCard extends ConsumerWidget {
       Plan.student => (l.proOfferStudentTitle, l.proOfferStudentBody),
       Plan.teacher => (l.proOfferTeacherTitle, l.proOfferTeacherBody),
       Plan.expert => (l.proOfferExpertTitle, l.proOfferExpertBody),
+      Plan.premium => (l.proOfferExpertTitle, l.proOfferExpertBody),
     };
     return Padding(
       padding: const EdgeInsets.only(top: FeSpace.sm),

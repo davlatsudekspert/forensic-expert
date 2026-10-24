@@ -135,6 +135,7 @@ class FakeAdminPlanService implements AdminPlanService {
         student: n(Plan.student),
         teacher: n(Plan.teacher),
         expert: n(Plan.expert),
+        premium: n(Plan.premium),
         adminActive: rows.length,
       ),
     );

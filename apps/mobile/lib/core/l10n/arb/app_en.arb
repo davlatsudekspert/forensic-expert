@@ -216,9 +216,9 @@
   "@themeDark": {
     "description": "Theme option."
   },
-  "settingsMode": "Mode: student or professional",
+  "settingsMode": "Mode",
   "@settingsMode": {
-    "description": "Settings row."
+    "description": "Profile row title: usage mode (student, teacher or expert)."
   },
   "scientificDatabaseLabel": "Scientific database",
   "@scientificDatabaseLabel": {
@@ -14653,5 +14653,37 @@
   "studyNoGuaranteeNote": "Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.",
   "@studyNoGuaranteeNote": {
     "description": "Small note under the test start: no guarantee about real exam questions."
+  },
+  "proPlanPremium": "Premium",
+  "@proPlanPremium": {
+    "description": "Plan name: premium (everything unlocked)."
+  },
+  "proIncludesPremium1": "Everything in Student Pro, Teacher Pro and Expert Pro in one plan",
+  "@proIncludesPremium1": {
+    "description": "Pro page: what Premium includes, item 1."
+  },
+  "proIncludesPremium2": "All lessons and presentations, tests, exam mode, flashcards and error analytics",
+  "@proIncludesPremium2": {
+    "description": "Pro page: what Premium includes, item 2."
+  },
+  "proIncludesPremium3": "Groups and group tests, results CSV, the instruments course, professional calculators, casebook and court preparation",
+  "@proIncludesPremium3": {
+    "description": "Pro page: what Premium includes, item 3."
+  },
+  "proPremiumBest": "Best value: Premium — everything unlocked",
+  "@proPremiumBest": {
+    "description": "Pro page: Premium card title."
+  },
+  "proPremiumBody": "Cheaper than buying the three plans separately.",
+  "@proPremiumBody": {
+    "description": "Pro page: Premium card body."
+  },
+  "proPremiumSee": "See Premium",
+  "@proPremiumSee": {
+    "description": "Pro page: button to view Premium."
+  },
+  "proPremiumBack": "Back to my plan",
+  "@proPremiumBack": {
+    "description": "Pro page: button to go back to the mode plan."
   }
 }

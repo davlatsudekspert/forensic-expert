@@ -179,7 +179,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get themeDark => 'Тёмное';
 
   @override
-  String get settingsMode => 'Режим: студент или специалист';
+  String get settingsMode => 'Режим';
 
   @override
   String get scientificDatabaseLabel => 'Научная база данных';
@@ -11295,4 +11295,31 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get studyNoGuaranteeNote =>
       'Вопросы подготовлены для обучения по открытым источникам. Они не гарантируют, что такие же вопросы попадутся на официальном экзамене.';
+
+  @override
+  String get proPlanPremium => 'Премиум';
+
+  @override
+  String get proIncludesPremium1 =>
+      'Всё из Pro для студента, преподавателя и специалиста в одной подписке';
+
+  @override
+  String get proIncludesPremium2 =>
+      'Все уроки и презентации, тесты, экзамен, карточки и разбор ошибок';
+
+  @override
+  String get proIncludesPremium3 =>
+      'Группы и групповые тесты, CSV результатов, курс по приборам, профессиональные калькуляторы, рабочий журнал и подготовка к суду';
+
+  @override
+  String get proPremiumBest => 'Выгоднее всего: Premium — всё открыто';
+
+  @override
+  String get proPremiumBody => 'Дешевле, чем три подписки по отдельности.';
+
+  @override
+  String get proPremiumSee => 'Посмотреть Premium';
+
+  @override
+  String get proPremiumBack => 'Назад к моему тарифу';
 }

@@ -10,7 +10,7 @@ faqat **0.4.0** (branch `claude/pro-0.4.0`) uchun; shartnoma — `docs/PRO_IMPL_
 
 ## 1. Oltita obuna (iOS va Android — product id bir xil)
 
-Obuna guruhi (App Store Connect): **«FORENSIC EXPERT Pro»**. Reja faqat o‘z rejimini ochadi (student/teacher/expert).
+Obuna guruhi (App Store Connect): **«FORENSIC EXPERT Pro»**. Student/teacher/expert faqat o‘z rejimini ochadi; **premium** — uchalasini (egasi qarori, 2026-10-24).
 
 | Reja | Product ID | Davr | Narx (USD) |
 |---|---|---|---|
@@ -20,14 +20,16 @@ Obuna guruhi (App Store Connect): **«FORENSIC EXPERT Pro»**. Reja faqat o‘z 
 | teacher | `fe_teacher_yearly` | 1 yil | 24.99 |
 | expert | `fe_expert_monthly` | 1 oy | 3.49 |
 | expert | `fe_expert_yearly` | 1 yil | 34.99 |
+| premium (hammasi ochiq) | `fe_premium_monthly` | 1 oy | 4.99 |
+| premium (hammasi ochiq) | `fe_premium_yearly` | 1 yil | 49.99 |
 
 Boshqa mamlakatlar narxlari do‘kon jadvalidan tanlanadi. Product ID **aynan** shunday bo‘lishi shart: server
-`^fe_(student|teacher|expert)_(monthly|yearly)$` ni tekshiradi, boshqasini rad etadi.
+`^fe_(student|teacher|expert|premium)_(monthly|yearly)$` ni tekshiradi, boshqasini rad etadi.
 
 ### App Store Connect
 1. **Agreements → Paid Apps Agreement** (bank, soliq) — faol bo‘lishi shart.
-2. **Monetization → Subscriptions → guruh «FORENSIC EXPERT Pro»**: yuqoridagi 6 ta Auto-Renewable Subscription.
-   Daraja tartibi (upgrade/downgrade): expert > teacher > student (yillik oyligidan yuqori).
+2. **Monetization → Subscriptions → guruh «FORENSIC EXPERT Pro»**: yuqoridagi 8 ta Auto-Renewable Subscription.
+   Daraja tartibi (upgrade/downgrade): premium > expert > teacher > student (yillik oyligidan yuqori).
 3. Har obunaga uz/ru/en nomi va tavsifi, ko‘rsatiladigan nom, review skrinshoti (Pro sahifasi) va Review Notes.
 4. **Intro-offer «1 oy bepul»** (egasi qarori): har obunaga *Subscription Prices → Introductory Offers → Free, 1 month*,
    barcha mamlakatlar, faqat yangi obunachilar. Bir Apple ID — bir marta (Apple o‘zi nazorat qiladi).
@@ -39,7 +41,7 @@ Boshqa mamlakatlar narxlari do‘kon jadvalidan tanlanadi. Product ID **aynan** 
 8. Apple 3.1.2: Pro sahifasida narx, muddat, avto-uzayish, bekor qilish yo‘li, Shartlar va Maxfiylik havolalari ko‘rinadi.
 
 ### Google Play Console
-1. **Monetize → Products → Subscriptions**: 6 ta obuna, product ID yuqoridagidek; har birida bitta base plan
+1. **Monetize → Products → Subscriptions**: 8 ta obuna, product ID yuqoridagidek; har birida bitta base plan
    (oylik `P1M`, yillik `P1Y`, auto-renewing).
 2. Narx — jadvaldagidek (USD), boshqa mamlakatlar avtomatik konvertatsiya.
 3. **Offer «1 oy bepul»**: har base plan uchun *Add offer → New customer acquisition → Free trial, 1 month*.

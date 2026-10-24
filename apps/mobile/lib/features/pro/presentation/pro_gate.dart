@@ -16,6 +16,7 @@ String proPlanName(AppLocalizations l, Plan p) => switch (p) {
   Plan.student => l.proPlanStudent,
   Plan.teacher => l.proPlanTeacher,
   Plan.expert => l.proPlanExpert,
+  Plan.premium => l.proPlanPremium,
 };
 
 /// Funksiya foydasi — bir jumla.

@@ -20,16 +20,27 @@ import 'pro_gate.dart';
 /// Pro sahifasi (bitta joy): rejimga mos reja, narx (faqat do‘kondan),
 /// muddat, sinov, avto-uzayish, bekor qilish yo‘li, «Xaridlarni tiklash»,
 /// Shartlar va Maxfiylik (Apple 3.1.1 / 3.1.2).
-class ProScreen extends ConsumerWidget {
+class ProScreen extends ConsumerStatefulWidget {
   const ProScreen({super.key, this.plan});
 
   /// Ko‘rsatiladigan reja; `null` — joriy rejimga mos reja.
   final Plan? plan;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<ProScreen> createState() => _ProScreenState();
+}
+
+class _ProScreenState extends ConsumerState<ProScreen> {
+  /// Foydalanuvchi tanlagan ko‘rinish: `true` — Premium (hammasi ochiq).
+  late bool _premium = widget.plan == Plan.premium;
+
+  @override
+  Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final Plan shown = plan ?? ref.watch(modePlanProvider);
+    final Plan modePlan = widget.plan == Plan.premium || widget.plan == null
+        ? ref.watch(modePlanProvider)
+        : widget.plan!;
+    final Plan shown = _premium ? Plan.premium : modePlan;
     final signedIn = ref.watch(authStateProvider).signedIn;
     final ent = ref.watch(entitlementsProvider);
     final value = ent.value ?? Entitlements.none;
@@ -48,6 +59,10 @@ class ProScreen extends ConsumerWidget {
                     const SizedBox(height: FeSpace.sm),
                     _StatusCard(ent: value, loading: ent.isLoading),
                     _Includes(plan: shown),
+                    _PremiumSwitch(
+                      premium: _premium,
+                      onChanged: (v) => setState(() => _premium = v),
+                    ),
                     if (!signedIn)
                       const _GuestCard()
                     else ...[
@@ -187,6 +202,11 @@ class _Includes extends StatelessWidget {
         l.proIncludesExpert3,
         l.proIncludesExpert4,
       ],
+      Plan.premium => [
+        l.proIncludesPremium1,
+        l.proIncludesPremium2,
+        l.proIncludesPremium3,
+      ],
     };
     return Column(
       key: Key('pro.includes.${plan.name}'),
@@ -206,11 +226,12 @@ class _Includes extends StatelessWidget {
             ),
           ),
         const SizedBox(height: FeSpace.xxs),
-        Text(
-          l.proOwnModeNote,
-          key: const Key('pro.ownModeNote'),
-          style: t.bodySmall?.copyWith(color: c.textSecondary),
-        ),
+        if (plan != Plan.premium)
+          Text(
+            l.proOwnModeNote,
+            key: const Key('pro.ownModeNote'),
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
         if (plan == Plan.teacher) ...[
           const SizedBox(height: FeSpace.xxs),
           Text(
@@ -220,6 +241,59 @@ class _Includes extends StatelessWidget {
           ),
         ],
       ],
+    );
+  }
+}
+
+/// «Eng qulay: Premium» kartasi / o‘z rejaga qaytish.
+class _PremiumSwitch extends StatelessWidget {
+  const _PremiumSwitch({required this.premium, required this.onChanged});
+
+  final bool premium;
+  final ValueChanged<bool> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.sm),
+      child: premium
+          ? TextButton(
+              key: const Key('pro.premium.back'),
+              onPressed: () => onChanged(false),
+              child: Text(l.proPremiumBack),
+            )
+          : FeCard(
+              key: const Key('pro.premium.card'),
+              color: c.accentContainer,
+              onTap: () => onChanged(true),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(l.proPremiumBest, style: t.titleSmall),
+                        const SizedBox(height: FeSpace.xxs),
+                        Text(
+                          l.proPremiumBody,
+                          style: t.bodySmall?.copyWith(
+                            color: c.onAccentContainer,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  FilledButton.tonal(
+                    key: const Key('pro.premium.see'),
+                    onPressed: () => onChanged(true),
+                    child: Text(l.proPremiumSee),
+                  ),
+                ],
+              ),
+            ),
     );
   }
 }
@@ -277,7 +351,8 @@ class _Purchase extends ConsumerWidget {
     final products = ref.watch(storeProductsProvider(plan));
     final storeOk = ref.watch(storeAvailableProvider).value ?? false;
     final list = products.value ?? const <StoreProduct>[];
-    final hasThis = ent.isActive && ent.plan == plan;
+    final hasThis =
+        ent.isActive && (ent.plan == plan || ent.plan == Plan.premium);
     final trialOk =
         ent.trialAvailable && !ent.isActive && ent.source != PlanSource.trial;
     final controller = ref.read(proFlowProvider.notifier);

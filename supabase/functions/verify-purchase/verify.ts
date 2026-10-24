@@ -10,7 +10,7 @@
 
 export type FetchFn = (url: string, init?: RequestInit) => Promise<Response>;
 
-export const PRODUCT_RE = /^fe_(student|teacher|expert)_(monthly|yearly)$/;
+export const PRODUCT_RE = /^fe_(student|teacher|expert|premium)_(monthly|yearly)$/;
 export const DEFAULT_BUNDLE_ID = "uz.forensicexpert.app";
 export const DEFAULT_ANDROID_PACKAGE = "uz.forensicexpert.forensic_expert";
 /** SHA-256 of the DER of "Apple Root CA - G3" (https://www.apple.com/certificateauthority/). */

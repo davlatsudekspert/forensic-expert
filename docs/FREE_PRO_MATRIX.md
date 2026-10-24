@@ -16,3 +16,11 @@ Qoida: **ochiq/yopiq reja bilan belgilanadi** (Free yoki o‘z Pro’si); **bo�
 - Talaba Pro Ustoz funksiyasini ochmaydi, Ustoz Pro Mutaxassis funksiyasini ochmaydi (faqat o‘z rejasi).
 - Sinov: 1 oy (30 kun) bepul, bitta qurilmaga bitta marta.
 - Test savollari ostida: «Rasmiy imtihonda aynan shu savollar tushishiga kafolat berilmaydi.»
+
+## Premium (hammasi ochiq)
+
+- Talaba + Ustoz + Mutaxassis Pro’ning hammasi bitta rejada: **4.99 $/oy, 49.99 $/yil** (uchalasi alohida: 7.47 $/oy, 69.97 $/yil).
+- 1 oy bepul sinov (do‘kon intro-offer) Premium’da ham.
+- Pro sahifasida «Eng qulay: Premium» kartasi; Premium faol bo‘lsa boshqa rejalar ham ochiq.
+- Server: `plans.plan = 'premium'`, mahsulot `fe_premium_{monthly,yearly}`; admin «Pro berish» Premium ham beradi.
+- Admin (server roli) — VIP, hamma funksiya ochiq.

@@ -200,6 +200,7 @@ class AdminPlanStats {
     this.student = 0,
     this.teacher = 0,
     this.expert = 0,
+    this.premium = 0,
     this.trialsActive = 0,
     this.storeActive = 0,
     this.adminActive = 0,
@@ -216,6 +217,7 @@ class AdminPlanStats {
       student: n(a['student']),
       teacher: n(a['teacher']),
       expert: n(a['expert']),
+      premium: n(a['premium']),
       trialsActive: n(j['trials_active']),
       storeActive: n(j['store_active']),
       adminActive: n(j['admin_active']),
@@ -225,6 +227,7 @@ class AdminPlanStats {
   final int student;
   final int teacher;
   final int expert;
+  final int premium;
   final int trialsActive;
   final int storeActive;
   final int adminActive;

@@ -20,7 +20,7 @@ LessonSummary _l(String id, [String course = 'Kurs']) => LessonSummary(
 void main() {
   group('Entitlements.allows', () {
     test('reja faqat o‘z rejasi funksiyalarini ochadi', () {
-      for (final plan in Plan.values) {
+      for (final plan in Plan.values.where((p) => p != Plan.premium)) {
         final e = _ent(plan);
         for (final f in ProFeature.values) {
           expect(e.allows(f), f.requiredPlan == plan, reason: '$plan / $f');
@@ -87,7 +87,7 @@ void main() {
       PlanProducts.idFor(Plan.expert, PlanPeriod.yearly),
       'fe_expert_yearly',
     );
-    expect(PlanProducts.allIds.length, 6);
+    expect(PlanProducts.allIds.length, 8);
     expect(PlanProducts.planOf('fe_teacher_yearly'), Plan.teacher);
     expect(PlanProducts.periodOf('fe_teacher_yearly'), PlanPeriod.yearly);
     expect(PlanProducts.planOf('boshqa'), isNull);
@@ -132,6 +132,35 @@ void main() {
     test('Mutaxassis Pro apparatlar kursini ochadi, ustoz darslarini emas', () {
       final locks = computeLessonLocks(all, _ent(Plan.expert));
       expect(locks.keys.toSet(), {'toks-01', 'toks-02', 'toks-03', 'toks-04'});
+    });
+  });
+
+  group('Premium', () {
+    test('hamma funksiyani ochadi; oddiy reja — faqat o‘zinikini', () {
+      final prem = _ent(Plan.premium);
+      for (final f in ProFeature.values) {
+        expect(prem.allows(f), isTrue, reason: f.name);
+      }
+      final stu = _ent(Plan.student);
+      expect(stu.allows(ProFeature.examMode), isTrue);
+      expect(stu.allows(ProFeature.allLessons), isFalse);
+    });
+
+    test('mahsulot identifikatorlari: fe_premium_*', () {
+      expect(
+        PlanProducts.idFor(Plan.premium, PlanPeriod.monthly),
+        'fe_premium_monthly',
+      );
+      expect(PlanProducts.planOf('fe_premium_yearly'), Plan.premium);
+      expect(Plan.fromWire('premium'), Plan.premium);
+    });
+
+    test('dars qulflari: Premium hammasini ochadi', () {
+      final all = [
+        _l('instr-02-uv', 'Apparatlar bilan ishlash'),
+        _l('toks-01'),
+      ];
+      expect(computeLessonLocks(all, _ent(Plan.premium)), isEmpty);
     });
   });
 }

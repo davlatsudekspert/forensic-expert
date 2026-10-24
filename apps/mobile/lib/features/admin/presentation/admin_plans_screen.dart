@@ -136,6 +136,7 @@ class _AdminPlansScreenState extends ConsumerState<AdminPlansScreen> {
                             (l.proPlanStudent, stats.student),
                             (l.proPlanTeacher, stats.teacher),
                             (l.proPlanExpert, stats.expert),
+                            (l.proPlanPremium, stats.premium),
                             (l.proSourceStore, stats.storeActive),
                             (l.proSourceAdmin, stats.adminActive),
                             (l.proSourceTrial, stats.trialsActive),

@@ -10,7 +10,10 @@ import 'package:flutter/foundation.dart';
 enum Plan {
   student,
   teacher,
-  expert;
+  expert,
+
+  /// Hammasi ochiq: uchala rejimning funksiyalari (egasi qarori, 2026-10-24).
+  premium;
 
   String get wire => name;
 
@@ -155,9 +158,10 @@ class Entitlements {
   /// Faol reja (muddati tugagan bo‘lsa `null`).
   Plan? activePlanAt(DateTime now) => isActiveAt(now) ? plan : null;
 
-  /// Faqat **o‘z** rejasi funksiyani ochadi.
+  /// Faqat **o‘z** rejasi funksiyani ochadi; [Plan.premium] — hammasini.
   bool allows(ProFeature feature, {DateTime? now}) =>
-      isActiveAt(now ?? DateTime.now()) && plan == feature.requiredPlan;
+      isActiveAt(now ?? DateTime.now()) &&
+      (plan == Plan.premium || plan == feature.requiredPlan);
 
   bool get isTrial => source == PlanSource.trial;
 

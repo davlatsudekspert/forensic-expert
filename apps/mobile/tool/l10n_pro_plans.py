@@ -34,6 +34,42 @@ k('proPlanExpert', 'Plan name: expert (professional mode).',
   'Expert Pro',
   'Pro для специалиста',
   'Mutaxassis Pro')
+k('proPlanPremium', 'Plan name: premium (everything unlocked).',
+  'Premium',
+  'Премиум',
+  'Premium rejasi')
+k('proIncludesPremium1', 'Pro page: what Premium includes, item 1.',
+  'Everything in Student Pro, Teacher Pro and Expert Pro in one plan',
+  'Всё из Pro для студента, преподавателя и специалиста в одной подписке',
+  'Talaba, Ustoz va Mutaxassis Pro’ning hammasi bitta rejada')
+k('proIncludesPremium2', 'Pro page: what Premium includes, item 2.',
+  'All lessons and presentations, tests, exam mode, flashcards and error analytics',
+  'Все уроки и презентации, тесты, экзамен, карточки и разбор ошибок',
+  'Barcha dars va prezentatsiyalar, testlar, imtihon rejimi, kartochkalar va xatolar tahlili')
+k('proIncludesPremium3', 'Pro page: what Premium includes, item 3.',
+  'Groups and group tests, results CSV, the instruments course, professional calculators, casebook and court preparation',
+  'Группы и групповые тесты, CSV результатов, курс по приборам, профессиональные калькуляторы, рабочий журнал и подготовка к суду',
+  'Guruhlar va guruh testlari, natijalar CSV, apparatlar kursi, professional kalkulyatorlar, ish daftari va sudga tayyorgarlik')
+k('proPremiumBest', 'Pro page: Premium card title.',
+  'Best value: Premium — everything unlocked',
+  'Выгоднее всего: Premium — всё открыто',
+  'Eng qulay: Premium — hammasi ochiq')
+k('proPremiumBody', 'Pro page: Premium card body.',
+  'Cheaper than buying the three plans separately.',
+  'Дешевле, чем три подписки по отдельности.',
+  'Uchta rejani alohida olgandan arzonroq.')
+k('proPremiumSee', 'Pro page: button to view Premium.',
+  'See Premium',
+  'Посмотреть Premium',
+  'Premium’ni ko‘rish')
+k('proPremiumBack', 'Pro page: button to go back to the mode plan.',
+  'Back to my plan',
+  'Назад к моему тарифу',
+  'O‘z rejamga qaytish')
+k('settingsMode', 'Profile row title: usage mode (student, teacher or expert).',
+  'Mode',
+  'Режим',
+  'Rejim')
 k('proProfileRow', 'Profile row title: current plan.',
   'Plan',
   'Тариф',
