@@ -1,5 +1,8 @@
 import 'dart:math' as math;
 
+/// «+» belgisi (reaksiya sxemasi) — foydalanuvchi matni emas.
+const _plusSign = '+';
+
 import 'package:flutter/foundation.dart' show listEquals;
 import 'package:flutter/material.dart';
 
@@ -552,7 +555,7 @@ class _Plan {
           kids.add(
             SizedBox(
               height: plusH,
-              child: Center(child: Text('+', style: plus)),
+              child: Center(child: Text(_plusSign, style: plus)),
             ),
           );
         }
