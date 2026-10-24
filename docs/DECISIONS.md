@@ -251,3 +251,9 @@ Egasi: «538. Krilova. Bittasini yoz bo‘ldi». COHb — 538 nm; kasrli usul �
 
 ## 2026-10-18 — App Store: barcha davlatlar
 Egasi: «Apple’da to‘ldirayotganda hamma davlatlarga deb yozaylik. Esingda saqla». App Store Connect → Pricing and Availability → **All countries or regions** (bepul). Istisno ehtimoli: Xitoy materigi — generativ AI xizmatlari uchun mahalliy litsenziya talab qilinadi; Apple shu hududni rad etsa, faqat o‘sha hudud olib tashlanadi. Play Console’da ham barcha davlatlar.
+
+## 2026-10-24 — Prezentatsiyalar v2 va dars testi (egasi qarori)
+- Har prezentatsiya 38–42 slayd, diagrammali slaydlar ≥40 %, 8 xil diagramma turi (`docs/lessons/DECK_SPEC_V2.md`); har deck 20 ta manbali savol. 81 toksikologiya decki boyitildi, manba bo‘yicha tekshirildi va prod’ga seed qilindi (slides-out `b714ada`); 127 sud tibbiyoti/bioetika decki boyitildi, tekshiruv davom etmoqda.
+- Dars oxiridagi test — **«Guruh testi»** (kirgan talabalar, o‘z ismi bilan, o‘rinlar, qiyin savollar muhokamasi), «Sinfda test» (jonli, taxallusli) dars tugmasidan olib tashlanadi, Ustoz panelida qoladi.
+- Test savollari o‘zbekcha (`source_lang: uz`), ru/en — «tarjima kutilmoqda» (til tartibi 2026-10-12 ga muvofiq).
+- Prod’ga qo‘llandi: `class_hardest_detail` funksiyasi (additiv).
