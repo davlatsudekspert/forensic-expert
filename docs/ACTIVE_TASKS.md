@@ -145,3 +145,10 @@ topilmadi — Baizoldanov. **Egasidan:** Baizoldanov fayli; katta PDF’larni �
 - **Yuborildi (2026-10-24):** Shimadzu (info@shimadzu.eu) va Meta-Xrom (m_chrom@mari-el.ru) ga rasm/skrinshot ruxsat xatlari + o‘zaro foyda davomi; javob kutilmoqda, 14 kundan keyin eslatma — `docs/letters/IMAGE_PERMISSION_SHIMADZU_META-XROM.md` (EN/RU loyihalar). Ruxsatgacha faqat CC va o‘z rasmlar.
 - **Egasi qarori kutiladi:** Apparatlar decklarini 38–42 slayd/20 mcq ga kengaytirish; Kristallyuks modeli (Xromatek Kristall vs Meta-Xrom Kristallyuks) va o‘z laboratoriya fotolari.
 - **Keyingi:** «Apparatlar bilan ishlash» (Kristallyuks/etanol, UV-1900/COHb, GX-MS) — kontent + ruxsatli rasmlar (agent); egasidan o‘z laboratoriya fotolari so‘raldi. Ilmiy muharrir ko‘rishi kerak bo‘lgan shubhalar — `verify/*.md` (165 uncertain band).
+
+## Navbatdagi ishlar (egasi qarori, 2026-10-24) — HECH NARSA UNUTILMASIN
+1. **Pro 0.4.0** (branch `claude/pro-0.4.0`): server tayyor (`404a486`), ilova agenti ishlayapti → birlashtirish, to‘liq test, real ilovada ko‘rish, TestFlight + Play internal test build (build 20). Narxlar: Talaba $1.49/$9.99, Ustoz $2.49/$24.99, Mutaxassis $3.49/$34.99; bepul sinov **1 oy (30 kun)**, «3 oy» yo‘q; bir telefon/akkaunt — bir sinov; admin istalgan emailga Pro beradi. Egasi: store mahsulotlari va API kalitlari (`docs/STORE_PRODUCT_SETUP.md`).
+2. **Tarjima RU/EN** (Pro test buildidan keyin darhol): 211 dars + 4400 test savoli + Apparatlar kursi — raqam/birlik/formula avtomatik tekshiruvi bilan; tekshirilmagan tarjima «Avtomatik tarjima — tekshirilmagan» belgisi bilan. Keyin qozoq, tojik, qirg‘iz. Hozir ru/en ilovada o‘zbekcha matn + «tarjima kutilmoqda».
+3. **Apparat rasmlari:** Shimadzu (info@shimadzu.eu) va Meta-Xrom (m_chrom@mari-el.ru) ga xat yuborilgan; 14 kun javob bo‘lmasa takrorlash; javob kelsa rasmlarni kredit bilan qo‘shish.
+4. Egasi tomonida: Apple Resolution Center javobi, TestFlight’da ko‘rish, ilmiy muharrir (shubhali joylar `slides-out/verify/`).
+5. Admin panelga dars/guruh testi statistikasi (hali yo‘q) — egasi xohlasa.
