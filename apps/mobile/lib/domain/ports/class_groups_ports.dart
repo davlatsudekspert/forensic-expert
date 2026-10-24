@@ -1,4 +1,5 @@
 import '../class_groups/class_groups_models.dart';
+import '../class_quiz/class_quiz_models.dart' show ClassHardDetail;
 
 /// «Ustoz–talaba testi» xizmati. Barcha qarorlar (rol, a’zolik, ball, vaqt,
 /// variant, javoblarni ochish, chegaralar) serverda; mijoz faqat so‘raydi.
@@ -32,6 +33,14 @@ abstract interface class ClassGroupsService {
 
   /// «Talaba ko‘rinishida sinash» uchun hovuz (faqat o‘qish).
   Future<GroupCall<GroupPreview>> preview(String assignmentId);
+
+  /// «Qiyin savollar» muhokamasi: eng past to‘g‘ri % dan; faqat ustoz va
+  /// faqat test yopilgach / muddati o‘tgach ([GroupFailure.notFinished]).
+  /// Talaba ismlari yo‘q.
+  Future<GroupCall<List<ClassHardDetail>>> hardestDetail(
+    String assignmentId, {
+    int limit = 5,
+  });
 
   // ---- talaba
   /// Kod bilan qo‘shilish. Taxallus birinchi marta kerak
@@ -96,6 +105,11 @@ class UnconfiguredClassGroupsService implements ClassGroupsService {
   @override
   Future<GroupCall<GroupPreview>> preview(String assignmentId) async =>
       const GroupCall.fail(_f);
+  @override
+  Future<GroupCall<List<ClassHardDetail>>> hardestDetail(
+    String assignmentId, {
+    int limit = 5,
+  }) async => const GroupCall.fail(_f);
   @override
   Future<GroupCall<GroupJoinInfo>> join({
     required String code,

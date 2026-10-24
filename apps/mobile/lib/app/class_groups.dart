@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../data/class_groups/fake_class_groups_service.dart';
 import '../domain/class_groups/class_groups_models.dart';
+import '../domain/class_quiz/class_quiz_models.dart'
+    show ClassFailure, ClassHardDetail, ClassResult;
 import '../domain/ports/class_groups_ports.dart';
 import 'class_quiz.dart';
 import 'providers.dart';
@@ -71,6 +73,22 @@ final groupBoardProvider = StreamProvider.autoDispose
         }
         await Future<void>.delayed(interval);
       }
+    });
+
+/// Guruh testi «Qiyin savollar» muhokamasi (bir marta yuklanadi). Natija
+/// «Sinfda test» muhokama sahifasi bilan bir xil turda ([ClassResult]).
+final groupHardestDetailProvider = FutureProvider.autoDispose
+    .family<ClassResult<List<ClassHardDetail>>, String>((ref, id) async {
+      final r = await ref.watch(classGroupsServiceProvider).hardestDetail(id);
+      final v = r.value;
+      if (v != null) return ClassResult.ok(v);
+      return ClassResult.fail(switch (r.failure!) {
+        GroupFailure.notConfigured => ClassFailure.notConfigured,
+        GroupFailure.notSignedIn => ClassFailure.notSignedIn,
+        GroupFailure.offline => ClassFailure.offline,
+        GroupFailure.forbidden => ClassFailure.forbidden,
+        _ => ClassFailure.server,
+      });
     });
 
 final groupResultProvider = FutureProvider.autoDispose

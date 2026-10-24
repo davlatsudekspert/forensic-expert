@@ -216,6 +216,10 @@ abstract final class Routes {
     queryParameters: {'topic': topicId},
   ).toString();
 
+  /// Dars oxiridagi «Guruhga test berish»: mavzu (deck_id) darsdan keladi.
+  static String groupLessonTest(String topicId) =>
+      '/home/learn/groups/lesson/${Uri.encodeComponent(topicId)}';
+
   /// «Umumiy test berish» (bir nechta mavzu).
   static String groupMixed(String gid) => '${group(gid)}/mixed';
 

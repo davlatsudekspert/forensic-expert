@@ -175,7 +175,8 @@ enum GroupFailure {
   notStarted,
   alreadySubmitted,
   timeOver,
-  notSubmitted;
+  notSubmitted,
+  notFinished;
 
   static GroupFailure fromServer(Object? code) => switch (code) {
     'rate_limited' => rateLimited,
@@ -202,6 +203,7 @@ enum GroupFailure {
     'already_submitted' => alreadySubmitted,
     'time_over' => timeOver,
     'not_submitted' => notSubmitted,
+    'not_finished' => notFinished,
     _ => server,
   };
 
@@ -409,6 +411,12 @@ class GroupAssignment {
   final List<String> topics;
 
   bool get isMixed => topics.length > 1;
+
+  /// Test tugagan: ustoz yopgan yoki muddat o‘tgan (server soati bo‘yicha).
+  /// Shundan keyin «Qiyin savollar» muhokamasi ochiladi.
+  bool get isOver =>
+      closed ||
+      (dueAt != null && serverNow != null && !serverNow!.isBefore(dueAt!));
 }
 
 @immutable
@@ -707,6 +715,8 @@ class GroupBoardRow {
     this.score,
     this.total,
     this.answered = 0,
+    this.startedAt,
+    this.submittedAt,
   });
 
   factory GroupBoardRow.fromJson(Map<String, Object?> j) => GroupBoardRow(
@@ -716,6 +726,8 @@ class GroupBoardRow {
     score: _intOrNull(j['score']),
     total: _intOrNull(j['total']),
     answered: _int(j['answered']),
+    startedAt: _date(j['started_at']),
+    submittedAt: _date(j['submitted_at']),
   );
 
   final String memberId;
@@ -724,6 +736,74 @@ class GroupBoardRow {
   final int? score;
   final int? total;
   final int answered;
+
+  /// Urinish boshlangan / yakunlangan vaqt (server soati).
+  final DateTime? startedAt;
+  final DateTime? submittedAt;
+
+  /// Sarflangan vaqt (faqat tugatganlar uchun).
+  Duration? get spent {
+    final a = startedAt;
+    final b = submittedAt;
+    if (state != BoardState.finished || a == null || b == null) return null;
+    final d = b.difference(a);
+    return d.isNegative ? Duration.zero : d;
+  }
+}
+
+/// Doskadagi tartiblangan qator: [rank] — faqat tugatganlarda (1, 2, 3…).
+@immutable
+class RankedBoardRow {
+  const RankedBoardRow(this.row, this.rank);
+
+  final GroupBoardRow row;
+  final int? rank;
+}
+
+/// Guruh testi reytingi: tugatganlar to‘g‘ri soni (ko‘p → kam), teng bo‘lsa
+/// sarflangan vaqt (kam → ko‘p), keyin ism bo‘yicha; so‘ng yechayotganlar
+/// (ko‘proq javob berganlar oldin), so‘ng qo‘shilganlar. To‘g‘ri soni **va**
+/// vaqti bir xil bo‘lsa — o‘rin ham bir xil (1, 1, 3).
+List<RankedBoardRow> rankBoardRows(Iterable<GroupBoardRow> rows) {
+  String key(GroupBoardRow r) => r.nickname.toLowerCase();
+  final fin =
+      [
+        for (final r in rows)
+          if (r.state == BoardState.finished) r,
+      ]..sort((x, y) {
+        final s = (y.score ?? 0).compareTo(x.score ?? 0);
+        if (s != 0) return s;
+        final t = (x.spent ?? Duration.zero).compareTo(
+          y.spent ?? Duration.zero,
+        );
+        return t != 0 ? t : key(x).compareTo(key(y));
+      });
+  final solving =
+      [
+        for (final r in rows)
+          if (r.state == BoardState.solving) r,
+      ]..sort((x, y) {
+        final a = y.answered.compareTo(x.answered);
+        return a != 0 ? a : key(x).compareTo(key(y));
+      });
+  final joined = [
+    for (final r in rows)
+      if (r.state == BoardState.joined) r,
+  ]..sort((x, y) => key(x).compareTo(key(y)));
+  final out = <RankedBoardRow>[];
+  for (final (i, r) in fin.indexed) {
+    final prev = i == 0 ? null : fin[i - 1];
+    final tie =
+        prev != null &&
+        prev.score == r.score &&
+        (prev.spent ?? Duration.zero) == (r.spent ?? Duration.zero);
+    out.add(RankedBoardRow(r, tie ? out[i - 1].rank : i + 1));
+  }
+  return [
+    ...out,
+    for (final r in solving) RankedBoardRow(r, null),
+    for (final r in joined) RankedBoardRow(r, null),
+  ];
 }
 
 @immutable
@@ -745,6 +825,9 @@ class GroupBoard {
   final List<GroupBoardRow> rows;
 
   int count(BoardState s) => rows.where((r) => r.state == s).length;
+
+  /// O‘rinlari bilan tartiblangan qatorlar ([rankBoardRows]).
+  List<RankedBoardRow> get ranked => rankBoardRows(rows);
 }
 
 /// Ustoz «Talaba ko‘rinishida sinash» uchun hovuz savoli (to‘g‘ri javob bilan).

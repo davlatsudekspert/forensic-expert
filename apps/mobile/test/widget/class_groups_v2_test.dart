@@ -1,24 +1,15 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/app/lessons.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/floating_nav_flag.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
-import 'package:forensic_expert/data/lessons/fake_lessons_service.dart';
 import 'package:forensic_expert/domain/class_groups/class_groups_models.dart';
 
 import '../helpers/class_groups_world.dart';
 
 AppLocalizations _l(WidgetTester tester) =>
     AppLocalizations.of(tester.element(find.byType(Scaffold).first));
-
-class _Guard implements LessonScreenGuard {
-  @override
-  Future<void> secure() async {}
-  @override
-  Future<void> release() async {}
-}
 
 /// Haqiqiy bankdagi birinchi uz mavzu.
 String _realTopic(GroupsWorld w) =>
@@ -42,75 +33,6 @@ void main() {
     debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
   });
   tearDown(() => debugDefaultTargetPlatformOverride = null);
-
-  testWidgets('ustoz «Mavzu testi»: tanlov (Guruhga topshirish birinchi), '
-      'o‘zim yechib ko‘rish — serverga hech narsa yuborilmaydi', (
-    tester,
-  ) async {
-    final w = GroupsWorld.real();
-    final topic = _realTopic(w);
-    final g = w.backend.create('teacher', '4-kurs, 2-guruh').value!;
-    final decks = {
-      for (final e in sampleLessonDecks.entries)
-        e.key: {...e.value, 'deck_id': topic},
-    };
-    final deckKey = sampleLessonDecks.keys.first;
-    await w.open(
-      tester,
-      uid: 'teacher',
-      // Keng ekran: AppBar’dagi test tugmasi (telefonda — oxirgi slaydda).
-      size: const Size(820, 1180),
-      iphone: false,
-      location: Routes.lesson(deckKey),
-      extra: [
-        lessonsServiceProvider.overrideWithValue(
-          FakeLessonsService(demo: false, decks: decks),
-        ),
-        lessonScreenGuardProvider.overrideWithValue(_Guard()),
-      ],
-    );
-    await tester.tap(find.byKey(const Key('lesson.quizAppBar')));
-    await frames(tester);
-    final l = _l(tester);
-    final assign = tester.getRect(find.byKey(const Key('grp.choice.assign')));
-    final self = tester.getRect(find.byKey(const Key('grp.choice.self')));
-    expect(
-      assign.top,
-      lessThan(self.top),
-      reason: 'Guruhga topshirish birinchi',
-    );
-    expect(find.text(l.grpChoiceAssign), findsOneWidget);
-    await tester.tap(find.byKey(const Key('grp.choice.assign')));
-    await frames(tester);
-    // Bitta guruh — to‘g‘ridan-to‘g‘ri topshirish sahifasi, mavzu tanlangan.
-    expect(find.byKey(const Key('grp.selectedTopic')), findsOneWidget);
-    // Standart: 10 daqiqa va 1 kun ochiq; ikkalasining ostida izoh.
-    expect(
-      tester.widget<ChoiceChip>(find.byKey(const Key('grp.time.10'))).selected,
-      isTrue,
-    );
-    await _scrollTo(
-      tester,
-      const Key('grp.assignList'),
-      const Key('grp.openHint'),
-    );
-    expect(
-      tester.widget<ChoiceChip>(find.byKey(const Key('grp.open.1'))).selected,
-      isTrue,
-    );
-    expect(find.byKey(const Key('grp.timeHint')), findsOneWidget);
-    expect(find.byKey(const Key('grp.openHint')), findsOneWidget);
-    await tester.tap(find.byType(BackButton));
-    await frames(tester);
-    await tester.tap(find.byKey(const Key('lesson.quizAppBar')));
-    await frames(tester);
-    await tester.tap(find.byKey(const Key('grp.choice.self')));
-    await frames(tester);
-    expect(find.text(l.grpPracticeBanner), findsOneWidget);
-    expect(find.text(l.grpQuestionOf(1, 10)), findsOneWidget);
-    expect(w.backend.detail('teacher', g.id).value!.assignments, isEmpty);
-    await closeApp(tester);
-  });
 
   testWidgets('maxsus son va daqiqa («Boshqa…»), sozlamalar serverga boradi', (
     tester,

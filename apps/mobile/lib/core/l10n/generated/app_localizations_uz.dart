@@ -9887,7 +9887,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpPrivacyNote =>
-      'Ustoz faqat taxallusingiz va ballingizni ko‘radi — ismingiz va emailingizni emas. Boshqa talabalar natijangizni ko‘rmaydi.';
+      'Ustoz va guruhingiz ismingiz va ballingizni ko‘radi — emailingizni hech qachon. Boshqa talabalar javoblaringizni ko‘rmaydi.';
 
   @override
   String get grpSignInTitle => 'Qo‘shilish uchun hisobga kiring';
@@ -9932,7 +9932,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String grpMyNickname(String nickname) {
-    return 'Taxallusim: $nickname';
+    return 'Ismim: $nickname';
   }
 
   @override
@@ -10104,7 +10104,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpTestQrHint =>
-      'Talabalar skanerlaydi, birinchi marta taxallus yozadi — test ochiladi.';
+      'Talabalar skanerlaydi; ism avtomatik yoziladi — test ochiladi.';
 
   @override
   String get grpBigScreen => 'Katta ekran';
@@ -10178,14 +10178,14 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get grpNickLabel => 'Taxallus';
+  String get grpNickLabel => 'Ismingiz';
 
   @override
   String get grpNickHelper =>
-      '2–20 belgi, faqat bir marta so‘raladi. Ustoz faqat shu taxallusni ko‘radi — ismingiz va emailingizni emas.';
+      'Profilingizdan olindi — xohlasangiz o‘zgartiring. 2–20 belgi, faqat bir marta so‘raladi. Ustoz va guruh shu ismni ko‘radi (email hech qachon ko‘rinmaydi).';
 
   @override
-  String get grpNickNeeded => 'Qo‘shilish uchun taxallus yozing.';
+  String get grpNickNeeded => 'Qo‘shilish uchun ismingizni yozing.';
 
   @override
   String get grpOwnerTitle => 'Siz bu guruhning ustozisiz';
@@ -10337,19 +10337,18 @@ class AppLocalizationsUz extends AppLocalizations {
       'Guruh to‘lgan (200 kishi) — ustozingizga ayting.';
 
   @override
-  String get grpErrNickLength =>
-      'Taxallus 2–20 belgidan iborat bo‘lishi kerak.';
+  String get grpErrNickLength => 'Ism 2–20 belgidan iborat bo‘lishi kerak.';
 
   @override
   String get grpErrNickChars =>
       'Faqat harf, raqam, bo‘shliq va . _ \' - belgilaridan foydalaning (email yoki havola emas).';
 
   @override
-  String get grpErrNickBlocked => 'Boshqa taxallus tanlang.';
+  String get grpErrNickBlocked => 'Boshqa ism yozing.';
 
   @override
   String get grpErrNickTaken =>
-      'Bu taxallus guruhda band. Harf yoki raqam qo‘shing.';
+      'Bu ism guruhda band. Familiyaning bosh harfini qo‘shing.';
 
   @override
   String get grpErrBadName => 'Guruh nomi 2–60 belgidan iborat bo‘lishi kerak.';
@@ -10616,4 +10615,102 @@ class AppLocalizationsUz extends AppLocalizations {
   String classLeaderAvgTime(String seconds) {
     return 'o‘rt. $seconds s';
   }
+
+  @override
+  String get grpLessonGroupTest => 'Guruhga test berish';
+
+  @override
+  String get grpLessonGroupTestHint =>
+      'Talabalar QR bilan qo‘shiladi; natijalar ekranda ism bo‘yicha, o‘rinlari bilan ko‘rinadi.';
+
+  @override
+  String get grpLessonTitle => 'Guruh testi';
+
+  @override
+  String get grpLessonGroupSection => 'Guruh';
+
+  @override
+  String get grpLessonNewGroup => 'Yangi guruh';
+
+  @override
+  String get grpLessonNoGroups =>
+      'Hali guruhingiz yo‘q. Nom yozing — guruh shu yerning o‘zida yaratiladi.';
+
+  @override
+  String get grpLessonCreateGroup => 'Guruh yaratish';
+
+  @override
+  String get grpLessonCancelNew => 'Mavjud guruhni tanlash';
+
+  @override
+  String get grpLessonTopicSection => 'Mavzu (shu darsdan)';
+
+  @override
+  String get grpLessonTopicFixed => 'Test shu dars mavzusi bo‘yicha tuziladi.';
+
+  @override
+  String get grpLessonNoTopic => 'Bu dars uchun test savollari topilmadi.';
+
+  @override
+  String get grpLessonStart => 'Testni boshlash';
+
+  @override
+  String get grpLessonPickGroup => 'Avval guruhni tanlang.';
+
+  @override
+  String get grpLessonStartedTitle => 'Test boshlandi';
+
+  @override
+  String get grpLessonStartedHint =>
+      'Talabalar QR kodni skanerlaydi yoki kodni kiritadi. Ular o‘z ismi bilan guruhga qo‘shiladi va test ochiladi.';
+
+  @override
+  String get grpLessonLiveResults => 'Jonli natijalar';
+
+  @override
+  String get grpLessonTeacherPanel => 'Ustoz paneli';
+
+  @override
+  String get grpLessonJoinLink => 'Guruh kodi';
+
+  @override
+  String get grpColRank => 'O‘rin';
+
+  @override
+  String get grpColName => 'Ism';
+
+  @override
+  String get grpColCorrect => 'To‘g‘ri';
+
+  @override
+  String get grpColTime => 'Vaqt';
+
+  @override
+  String get grpColState => 'Holat';
+
+  @override
+  String grpRankSpoken(int rank) {
+    return '$rank-o‘rin';
+  }
+
+  @override
+  String get grpBoardClosed => 'Test yopildi';
+
+  @override
+  String get grpHardestTitle => 'Qiyin savollar';
+
+  @override
+  String get grpHardestBody =>
+      'Eng ko‘p xato qilingan savollar avtomatik tanlandi. Ularni birgalikda muhokama qiling.';
+
+  @override
+  String get grpHardestOpen => 'Qiyin savollarni muhokama qilish';
+
+  @override
+  String get grpHardestLocked =>
+      'Testni yopsangiz, qiyin savollar shu yerda chiqadi.';
+
+  @override
+  String get grpErrNotFinished =>
+      'Qiyin savollar test yopilgandan keyin ko‘rinadi.';
 }

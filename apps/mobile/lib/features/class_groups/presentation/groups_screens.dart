@@ -5,6 +5,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../../app/class_groups.dart';
 import '../../../app/class_quiz.dart' show classScannerAvailableProvider;
+import '../../../app/professional.dart' show localProfileProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -495,9 +496,19 @@ class _GroupJoinState extends ConsumerState<GroupJoinScreen> {
     );
   }
 
-  /// Oldingi guruhdagi taxallus (bo‘lsa) — oldindan to‘ldiriladi.
+  /// Talaba o‘z ISMI bilan qo‘shiladi: maydon profil ismi (fullName) bilan
+  /// avtomatik to‘ldiriladi (o‘zgartirsa bo‘ladi; taxallus filtri saqlanadi).
+  /// Profil ismi yaroqsiz yoki bo‘sh bo‘lsa — oldingi guruhdagi ism.
   void _prefillNick() {
     if (_nick.text.isNotEmpty) return;
+    final p = ref.read(localProfileProvider);
+    final fromProfile = ClassNickname.fromProfileName(
+      p.student?.fullName ?? p.professional?.fullName,
+    );
+    if (fromProfile.isNotEmpty) {
+      _nick.text = fromProfile;
+      return;
+    }
     final groups = ref.read(groupListProvider).value?.value?.member;
     final last = groups?.where((g) => g.nickname != null).firstOrNull;
     if (last != null) _nick.text = last.nickname!;

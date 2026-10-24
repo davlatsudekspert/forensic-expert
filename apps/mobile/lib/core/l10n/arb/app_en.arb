@@ -12886,10 +12886,8 @@
   "@grpDemoBanner": {
     "description": "Demo banner."
   },
-  "grpPrivacyNote": "The teacher sees only your nickname and score — not your name or e-mail. Other students don’t see your result.",
-  "@grpPrivacyNote": {
-    "description": "Privacy note."
-  },
+  "grpPrivacyNote": "The teacher and your group see your name and score — never your e-mail. Other students don’t see your answers.",
+  "@grpPrivacyNote": {"description": "Privacy note on the group screen."},
   "grpSignInTitle": "Sign in to join",
   "@grpSignInTitle": {
     "description": "Sign-in card."
@@ -12946,15 +12944,8 @@
       }
     }
   },
-  "grpMyNickname": "My nickname: {nickname}",
-  "@grpMyNickname": {
-    "description": "Student nickname line.",
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
+  "grpMyNickname": "My name: {nickname}",
+  "@grpMyNickname": {"description": "Group card: my name.", "placeholders": {"nickname": {"type": "String"}}},
   "grpRetry": "Try again",
   "@grpRetry": {
     "description": "Button."
@@ -13207,10 +13198,8 @@
   "@grpTestQrTitle": {
     "description": "QR card."
   },
-  "grpTestQrHint": "Students scan it, enter a nickname the first time, and the test opens.",
-  "@grpTestQrHint": {
-    "description": "QR hint."
-  },
+  "grpTestQrHint": "Students scan it; their name is filled in automatically — and the test opens.",
+  "@grpTestQrHint": {"description": "Hint next to the group QR."},
   "grpBigScreen": "Big screen",
   "@grpBigScreen": {
     "description": "Button."
@@ -13312,18 +13301,12 @@
       }
     }
   },
-  "grpNickLabel": "Nickname",
-  "@grpNickLabel": {
-    "description": "Field."
-  },
-  "grpNickHelper": "2–20 characters, asked only once. The teacher sees only this nickname — not your name or e-mail.",
-  "@grpNickHelper": {
-    "description": "Helper."
-  },
-  "grpNickNeeded": "Enter a nickname to join.",
-  "@grpNickNeeded": {
-    "description": "Nickname required."
-  },
+  "grpNickLabel": "Your name",
+  "@grpNickLabel": {"description": "Field: the student's name in the group."},
+  "grpNickHelper": "Filled in from your profile — change it if you like. 2–20 characters, asked only once. The teacher and the group see this name (never your e-mail).",
+  "@grpNickHelper": {"description": "Helper under the name field."},
+  "grpNickNeeded": "Enter your name to join.",
+  "@grpNickNeeded": {"description": "Error: name needed to join."},
   "grpOwnerTitle": "You are the teacher of this group",
   "@grpOwnerTitle": {
     "description": "Owner panel."
@@ -13534,22 +13517,16 @@
   "@grpErrGroupFull": {
     "description": "Error."
   },
-  "grpErrNickLength": "The nickname must be 2–20 characters.",
-  "@grpErrNickLength": {
-    "description": "Error."
-  },
+  "grpErrNickLength": "The name must be 2–20 characters.",
+  "@grpErrNickLength": {"description": "Error: name length."},
   "grpErrNickChars": "Use letters, digits, spaces and . _ ' - only (no e-mail or links).",
   "@grpErrNickChars": {
     "description": "Error."
   },
-  "grpErrNickBlocked": "Please choose a different nickname.",
-  "@grpErrNickBlocked": {
-    "description": "Error."
-  },
-  "grpErrNickTaken": "This nickname is already taken in the group. Add a letter or a number.",
-  "@grpErrNickTaken": {
-    "description": "Error."
-  },
+  "grpErrNickBlocked": "Please write a different name.",
+  "@grpErrNickBlocked": {"description": "Error: name blocked by the filter."},
+  "grpErrNickTaken": "This name is already in the group. Add the first letter of your surname.",
+  "@grpErrNickTaken": {"description": "Error: name already used in the group."},
   "grpErrBadName": "The group name must be 2–60 characters.",
   "@grpErrBadName": {
     "description": "Error."
@@ -13855,5 +13832,65 @@
   "classLeaderCorrect": "{correct}/{total} correct",
   "@classLeaderCorrect": {"description": "Leaderboard row: correct answers out of all questions.", "placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
   "classLeaderAvgTime": "avg {seconds} s",
-  "@classLeaderAvgTime": {"description": "Leaderboard row: average time of correct answers, seconds as text.", "placeholders": {"seconds": {"type": "String"}}}
+  "@classLeaderAvgTime": {"description": "Leaderboard row: average time of correct answers, seconds as text.", "placeholders": {"seconds": {"type": "String"}}},
+  "grpLessonGroupTest": "Give a test to a group",
+  "@grpLessonGroupTest": {"description": "Lesson test choice: primary button, give the test to a group."},
+  "grpLessonGroupTestHint": "Students join by QR; results appear on screen by name, with places.",
+  "@grpLessonGroupTestHint": {"description": "Lesson test choice: hint under the primary button."},
+  "grpLessonTitle": "Group test",
+  "@grpLessonTitle": {"description": "Screen title: group test after a lesson."},
+  "grpLessonGroupSection": "Group",
+  "@grpLessonGroupSection": {"description": "Section: which group."},
+  "grpLessonNewGroup": "New group",
+  "@grpLessonNewGroup": {"description": "Button: create another group inline."},
+  "grpLessonNoGroups": "You have no group yet. Type a name — the group is created right here.",
+  "@grpLessonNoGroups": {"description": "Hint when the teacher has no group yet."},
+  "grpLessonCreateGroup": "Create group",
+  "@grpLessonCreateGroup": {"description": "Button: create the group inline."},
+  "grpLessonCancelNew": "Pick an existing group",
+  "@grpLessonCancelNew": {"description": "Button: back to the list of groups."},
+  "grpLessonTopicSection": "Topic (from this lesson)",
+  "@grpLessonTopicSection": {"description": "Section: topic of the test (fixed to the lesson)."},
+  "grpLessonTopicFixed": "The test is built from this lesson’s topic.",
+  "@grpLessonTopicFixed": {"description": "Note under the topic: it cannot be changed here."},
+  "grpLessonNoTopic": "No test questions were found for this lesson.",
+  "@grpLessonNoTopic": {"description": "Error: no test topic for the lesson."},
+  "grpLessonStart": "Start the test",
+  "@grpLessonStart": {"description": "Button: create the test and show QR."},
+  "grpLessonPickGroup": "Choose a group first.",
+  "@grpLessonPickGroup": {"description": "Error: no group chosen."},
+  "grpLessonStartedTitle": "The test has started",
+  "@grpLessonStartedTitle": {"description": "Title after the test is created."},
+  "grpLessonStartedHint": "Students scan the QR or enter the code. They join the group under their own name and the test opens.",
+  "@grpLessonStartedHint": {"description": "Hint next to the QR after the test is created."},
+  "grpLessonLiveResults": "Live results",
+  "@grpLessonLiveResults": {"description": "Button: open the live results board."},
+  "grpLessonTeacherPanel": "Teacher panel",
+  "@grpLessonTeacherPanel": {"description": "Button: open the teacher panel of the test."},
+  "grpLessonJoinLink": "Group code",
+  "@grpLessonJoinLink": {"description": "Small label above the join link."},
+  "grpColRank": "Place",
+  "@grpColRank": {"description": "Board column: place."},
+  "grpColName": "Name",
+  "@grpColName": {"description": "Board column: student name."},
+  "grpColCorrect": "Correct",
+  "@grpColCorrect": {"description": "Board column: correct answers / total."},
+  "grpColTime": "Time",
+  "@grpColTime": {"description": "Board column: time spent."},
+  "grpColState": "Status",
+  "@grpColState": {"description": "Board column: state."},
+  "grpRankSpoken": "Place {rank}",
+  "@grpRankSpoken": {"description": "Screen reader: place of a student.", "placeholders": {"rank": {"type": "int"}}},
+  "grpBoardClosed": "The test is closed",
+  "@grpBoardClosed": {"description": "Big board: banner after the test was closed."},
+  "grpHardestTitle": "Hard questions",
+  "@grpHardestTitle": {"description": "Block title: hardest questions after closing."},
+  "grpHardestBody": "The questions most students got wrong, picked automatically. Discuss them together.",
+  "@grpHardestBody": {"description": "Block body: discuss the hardest questions together."},
+  "grpHardestOpen": "Discuss hard questions",
+  "@grpHardestOpen": {"description": "Button: open the discussion."},
+  "grpHardestLocked": "Close the test to see the hard questions here.",
+  "@grpHardestLocked": {"description": "Hint before the test is closed."},
+  "grpErrNotFinished": "Hard questions appear after the test is closed.",
+  "@grpErrNotFinished": {"description": "Error: hard questions requested before the test was closed."}
 }
