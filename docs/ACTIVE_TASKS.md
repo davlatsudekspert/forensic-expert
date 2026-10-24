@@ -131,3 +131,9 @@ Drive’dan (`scratchpad/drive_src/pdf2/INVENTORY.md`): to‘liq — Pigolkin (2
 qisman — Muhamedova (DOCX, bet yo‘q), Kharin (19-bobgacha), Simpson (1–103 bet), Iskandarov (~147K belgi);
 skaner (OCR kerak, katta fayl) — Romodanovskiy, G‘iyosov «Sud tibbiyoti» 2018, G‘iyosov «Bioetika» 2022;
 topilmadi — Baizoldanov. **Egasidan:** Baizoldanov fayli; katta PDF’larni ≤5 MB bo‘laklab Drive’ga yoki to‘g‘ridan berish (G‘iyosov 2018 — eng muhimi, 68 deck shunga tayanadi).
+
+## Holat 2026-10-24 (bajarildi)
+- **Prezentatsiyalar v2:** 208/208 deck serverda 38–42 slayd, 8 xil diagramma; har deck 20 ta savol (prod: 208 uz mavzu, 4340 savol). slides-out: `b714ada` (toks), `ea1ed1e` (sud tibbiyoti/bioetika). Tekshiruv hisobotlari slides-out `verify/`.
+- **Ilova 0.3.1 (19):** yangi diagramma turlari, dars → guruh testi (ism avtomatik, o‘rinlar, qiyin savollar muhokamasi), 10/15/20 chiplar, rasmli slayd (`image`, PNG/JPG, host whitelist). Release build #323 (TestFlight + Play internal) muvaffaqiyatli.
+- **Prod funksiyalar:** `class_hardest_detail`, `group_assignment_hardest_detail` qo‘llandi. `lesson-images` bucket migratsiyasi HALI qo‘llanmagan (apparatlar kontenti tayyor bo‘lgach).
+- **Keyingi:** «Apparatlar bilan ishlash» (Kristallyuks/etanol, UV-1900/COHb, GX-MS) — kontent + ruxsatli rasmlar (agent); egasidan o‘z laboratoriya fotolari so‘raldi. Ilmiy muharrir ko‘rishi kerak bo‘lgan shubhalar — `verify/*.md` (165 uncertain band).
