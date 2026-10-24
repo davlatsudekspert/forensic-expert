@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-20-toks-alkaloid-indol",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Alkaloidlar haqida umumiy ma’lumot; umumiy cho‘ktiruvchi va rang hosil qiluvchi reaktivlar. Indol alkaloidlari",
+  "ru": "Alkaloidlar haqida umumiy ma’lumot; umumiy cho‘ktiruvchi va rang hosil qiluvchi reaktivlar. Indol alkaloidlari",
+  "en": "Alkaloidlar haqida umumiy ma’lumot; umumiy cho‘ktiruvchi va rang hosil qiluvchi reaktivlar. Indol alkaloidlari"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-20-toks-alkaloid-indol-q01",
+   "question_i18n": {
+    "uz": "Alkaloidlar tahlilida kamida nechta reaksiya yoki usul qo‘llanishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat rangli",
+     "Bitta",
+     "Faqat cho‘ktiruvchi",
+     "2 yoki undan ortiq"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kimyogar faqat bitta reaksiyaga asoslanmasdan, 2 yoki undan ortiq reaksiya va usulni qo‘llashi zarur."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "102"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q02",
+   "question_i18n": {
+    "uz": "Qaysi reaktiv metall saqlovchi kompleks hosil qiluvchilar qatoriga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tanin",
+     "Xromat",
+     "Dragendorf (BiI3/KI)",
+     "Pikrin kislota"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Metall saqlovchilar: CdI2/KI (Marme), HgI2/KI (Mayer), BiI3/KI (Dragendorf) va boshqalar."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "103"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q03",
+   "question_i18n": {
+    "uz": "«Murda alkaloidlari» qaysi moddalardan hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yog‘lardan",
+     "Mineral kislotalardan",
+     "Faqat glyukozadan",
+     "Gistidin va lizin kabi aminokislotalarning chirishidan"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Gistidin dekarboksillanib gistamin, lizin esa kadaverin hosil qiladi; ular alkaloidga o‘xshash cho‘kma beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "103"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q04",
+   "question_i18n": {
+    "uz": "Marki reaktivi qanday moddalar uchun umumiy reaksiya hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Brutsin",
+     "Barbituratlar",
+     "Morfin hosilalari",
+     "Purin hosilalari"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Marki reaktivi morfin hosilalari uchun umumiy reaksiya hisoblanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "103"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q05",
+   "question_i18n": {
+    "uz": "Mandelin reaktivi qanday tarkibga ega (to‘g‘ri variant)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ammoniy vanadat va konsentrlangan H2SO4",
+     "Kaliy bixromat va H2SO4",
+     "Ammoniy volframat va H2SO4",
+     "Formaldegid va H2SO4"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "To‘g‘ri tarkib — ammoniy vanadat va konsentrlangan sulfat kislota."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q06",
+   "question_i18n": {
+    "uz": "«Murda atropini» ko‘z qorachig‘iga qanday ta’sir qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kengaytirmaydi",
+     "Toraytiradi",
+     "Kengaytiradi",
+     "Rang o‘zgartiradi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Murda atropini Vitali-Moren reaksiyasini bersa ham, ko‘z qorachig‘ini kengaytirmaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "104"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q07",
+   "question_i18n": {
+    "uz": "Strixnin kaliy bixromat va H2SO4 bilan qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Binafsha, tez yo‘qolib ketuvchi",
+     "Qizil, barqaror",
+     "Rangsiz",
+     "Yashil"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Binafsha rangli, tez yo‘qolib ketuvchi reaksiya beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q08",
+   "question_i18n": {
+    "uz": "Strixninni miqdoriy aniqlash qaysi reaksiyaga asoslangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Fudjivara",
+     "Malaken-Denije",
+     "Murexid",
+     "Vitali-Moren"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "FEK usulida Malaken-Denije reaksiyasi: HCl va Zn bilan qaytarish, NaNO2 bilan qizil rang."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q09",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri strixninni brutsindan farqlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikkalasi ham bir xil",
+     "Brutsin SnCl2+HNO3 va Erdman bilan qizil rang beradi",
+     "Strixnin Erdman bilan qizil rang beradi",
+     "Brutsin efirda erimaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Brutsin qalay(II) xlorid + HNO3 va Erdman reaktivi bilan qizil rang beradi, strixnin bermaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "108"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q10",
+   "question_i18n": {
+    "uz": "Brutsin YuQX da qaysi Rf qiymatiga ega (kitobga ko‘ra)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,15",
+     "0,21",
+     "0,65",
+     "0,33"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Brutsin: Rf = 0,21; strixnin: Rf = 0,33."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "107-108"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q11",
+   "question_i18n": {
+    "uz": "Strixnin organizmda qancha qismi metabolizmga uchraydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "80 % ga yaqini",
+     "Hammasi",
+     "Hech qancha",
+     "Taxminan 20 %"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Tez so‘rilib, 80 % ga yaqini metabolizmga uchraydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q12",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri xususiy reaksiyaga misol?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Azobo‘yoq hosil bo‘lishi",
+     "FeCl3 ning fenol gidroksilli moddalar bilan rang berishi",
+     "Marki reaktivining morfin hosilalari bilan reaksiyasi",
+     "Sianid kislota uchun berlin zangorisi hosil bo‘lishi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Xususiy reaksiyalarga yodning kraxmal bilan ko‘k rangi, simobning qizil cho‘kmasi, sianid kislotaning berlin zangorisi misol."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "102"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q13",
+   "question_i18n": {
+    "uz": "Azobo‘yoq hosil bo‘lishi qaysi moddalar uchun selektiv reaksiya?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Anilin hosilalari uchun",
+     "Barbituratlar uchun",
+     "Fenol gidroksilli moddalar uchun",
+     "Purin hosilalari uchun"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "FeCl3 fenol gidroksili saqlovchi moddalar uchun, azobo‘yoq esa anilin hosilalari uchun selektiv."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "102"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q14",
+   "question_i18n": {
+    "uz": "Mayer reaktivining tarkibi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "I2/KI",
+     "HgI2/KI",
+     "CdI2/KI",
+     "BiI3/KI"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Mayer reaktivi — HgI2/KI; Dragendorf — BiI3/KI; Marme — CdI2/KI."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "103"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q15",
+   "question_i18n": {
+    "uz": "«Murda alkaloidlari»ning kelib chiqishida lizin dekarboksillanib nimaga aylanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Strixninga",
+     "Brutsinga",
+     "Gistaminga",
+     "Kadaveringa"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Lizin dekarboksillanib kadaverin, gistidin esa gistamin hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "103"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q16",
+   "question_i18n": {
+    "uz": "Mureksid reaksiyasi qaysi moddalar guruhi uchun umumiy reaksiya?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Indol alkaloidlari",
+     "Purin hosilalari",
+     "Barbituratlar",
+     "Morfin hosilalari"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Marki reaktivi morfin hosilalari, mureksid purin hosilalari, kobalt ammiakati barbituratlar uchun umumiy."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "103"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q17",
+   "question_i18n": {
+    "uz": "Nitrat kislota qaysi alkaloid uchun xususiy reaktiv hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Veratrin",
+     "Strixnin",
+     "Atropin",
+     "Brutsin"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Nitrat kislota brutsin uchun, xlorid, sulfat, nitrat kislotalar veratrin uchun xususiy reaktiv."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "103"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q18",
+   "question_i18n": {
+    "uz": "Strixnin biologik ob’ektdan qaysi usullarda ajratib olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat sovunlash",
+     "Faqat suv bug‘i bilan haydash",
+     "Nordonlashtirilgan suv, nordonlashtirilgan spirt va elektrodializ",
+     "Faqat quruq haydash"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Strixnin nordonlashtirilgan suv, nordonlashtirilgan spirt va elektrodializ usulida ajratib olinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q19",
+   "question_i18n": {
+    "uz": "Strixninning farmakologik tekshiruvi qaysi hayvonda qaysi alomatni chaqiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Quyonda ko‘z qorachig‘ining kengayishi",
+     "Sichqonda uyqu",
+     "Baqada tetanik tirishish",
+     "Baqada falajlik"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Farmakologik tekshiruv: strixnin baqada tetanik tirishish holatini chaqiradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-20-toks-alkaloid-indol-q20",
+   "question_i18n": {
+    "uz": "Spektrofotometriyada eritmaning optik ko‘rsatkichi qaysi oraliqda bo‘lishi lozim?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,01 dan 0,1 gacha",
+     "1,0 dan 3,0 gacha",
+     "0,2 dan 1,0 gacha",
+     "2 dan 5 gacha"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tekshiriluvchi modda konsentratsiyasini tanlashda optik ko‘rsatkich 0,2 dan 1,0 gacha bo‘lishi lozim."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "108"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

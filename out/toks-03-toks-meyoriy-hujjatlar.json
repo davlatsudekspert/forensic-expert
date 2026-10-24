@@ -85,6 +85,76 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qonunning qaysi bobi ekspertning o‘zi uchun eng muhim? Doskada: 5 bobni raqamlab yozing. Tipik xato: qonun raqamini eslab qolishga urinish — dvssm 85 da «153-son qonun» deyilgan, lekin toks 13 va dvssm 14 da 153-son 2012 yil 1 iyuldagi SSV buyrug‘i sifatida berilgan; slaydda 153-son faqat 2012 yil 1 iyuldagi SSV buyrug‘i sifatida (toks 13, dvssm 14); dvssm 85 dagi «qonun» ifodasi xato deb olindi."
     },
     {
+      "title": "Qonun tuzilishi: 5 bob va 33 modda",
+      "bullets": [
+        {
+          "text": "«Sud ekspertizasi to‘g‘risida»gi qonun hujjatlari 5 bob va 33 moddadan iborat.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1-bob umumiy qoidalar; 2-bob muassasa rahbari va sud ekspertining huquq va majburiyatlari; 3-bob ekspertizani o‘tkazish.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "4-bob sud-ekspertlik faoliyatini moliyalashtirish, tashkiliy, ilmiy-uslubiy va axborot bilan ta’minlash; 5-bob yakunlovchi qoidalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Qonun boblari",
+        "root": "Sud ekspertizasi to‘g‘risida",
+        "children": [
+          {
+            "label": "1-bob",
+            "items": [
+              "Umumiy qoidalar"
+            ]
+          },
+          {
+            "label": "2-bob",
+            "items": [
+              "Muassasa va ekspert: huquq, majburiyat"
+            ]
+          },
+          {
+            "label": "3-bob",
+            "items": [
+              "Sud ekspertizasini o‘tkazish"
+            ]
+          },
+          {
+            "label": "4-bob",
+            "items": [
+              "Moliyalashtirish va ta’minot"
+            ]
+          },
+          {
+            "label": "5-bob",
+            "items": [
+              "Yakunlovchi qoidalar"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: boblarni ketma-ket yozing. Tipik xato: boblar sonini (5) va moddalar sonini (33) almashtirish."
+    },
+    {
       "title": "Qonun: asosiy tushunchalar (3-modda)",
       "bullets": [
         {
@@ -124,7 +194,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "3-modda: asosiy tushunchalar",
+        "nodes": [],
+        "header": [
+          "Tushuncha",
+          "Ma’nosi"
+        ],
+        "rows": [
+          [
+            "Davlat sud eksperti",
+            "Muassasa xizmat tartibida ishlaydi"
+          ],
+          [
+            "Ish",
+            "Ekspertiza tayinlangan jinoyat ishi"
+          ],
+          [
+            "Sud eksperti",
+            "Fan, hunar sohasida maxsus bilimli"
+          ]
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: davlat sud eksperti va oddiy sud eksperti farqi nimada? Doskada: to‘rt tushuncha. Tipik xato: «ish» tushunchasini faqat jinoyat ishi deb bilish."
     },
     {
@@ -179,6 +271,74 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tergovchi ekspertga «natija shunday chiqsin» desa, qaysi prinsip buziladi? Doskada: 4 prinsip jadvali. Tipik xato: mustaqillikni faqat tashkilotdan mustaqillik deb tushunish."
     },
     {
+      "title": "Qonun moddalari xaritasi: 12-24",
+      "bullets": [
+        {
+          "text": "12-modda davlat sud-ekspertiza muassasasi; 13-14-moddalar rahbarning huquq va majburiyatlari; 15-16-moddalar sud ekspertining huquq va majburiyatlari.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "17-modda ekspertizani o‘tkazish asoslari va muddatlari; 18-modda qo‘shimcha va qayta ekspertizalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "19-21-moddalar: komissiya tomonidan o‘tkazish, komissiyaviy va kompleks ekspertiza; 22-modda ishtirokchilarning hozir bo‘lishi; 23-24-moddalar xulosa.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "86"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Moddalar xaritasi",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Mavzu"
+        ],
+        "rows": [
+          [
+            "12",
+            "Davlat sud-ekspertiza muassasasi"
+          ],
+          [
+            "13-14",
+            "Rahbarning huquq va majburiyatlari"
+          ],
+          [
+            "15-16",
+            "Ekspertning huquq va majburiyatlari"
+          ],
+          [
+            "17-18",
+            "Asoslar, muddat; qo‘shimcha va qayta"
+          ],
+          [
+            "19-21",
+            "Komissiya, komissiyaviy, kompleks"
+          ],
+          [
+            "23-24",
+            "Xulosa; xulosa berish iloji yo‘qligi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi modda xulosa berishning iloji yo‘qligi haqida? (24-modda). Tipik xato: 23 va 24-moddalarni aralashtirish."
+    },
+    {
       "title": "Tekshirish ob’ektlari (9-modda)",
       "bullets": [
         {
@@ -218,7 +378,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "9-modda: tekshirish ob’ektlari",
+        "root": "Tekshirish ob’ektlari",
+        "children": [
+          {
+            "label": "Ashyoviy dalillar"
+          },
+          {
+            "label": "Tekshirish namunalari"
+          },
+          {
+            "label": "Boshqa moddiy ob’ektlar"
+          },
+          {
+            "label": "Murdalar va qismlari"
+          },
+          {
+            "label": "Hujjatlar"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ob’ektning ishlatilishi uchun ruxsat kerak bo‘lishi mumkin? Doskada: ob’ektning yo‘li: topshirish -> tekshirish -> qaytarish. Tipik xato: ob’ektni to‘liq ishlatib yuborish; qayta tekshiruv uchun qoldiq saqlanishi kerak."
     },
     {
@@ -347,7 +528,18 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Ekspertizani tayinlash tartibi",
+        "nodes": [
+          "Qaror yoki ajrim chiqariladi",
+          "Ekspertiza tayinlangan hisoblanadi",
+          "Ob’ekt va materiallar taqdim etiladi",
+          "Ekspertiza muddatida o‘tkaziladi"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekspertiza qaysi kundan tayinlangan hisoblanadi? Doskada: vaqt chizig‘i: qaror -> qabul -> xulosa. Tipik xato: tayinlangan sanani ob’ekt kelgan kun deb hisoblash."
     },
     {
@@ -450,7 +642,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Ekspert xulosasi mazmuni",
+        "root": "Ekspert xulosasi",
+        "children": [
+          {
+            "label": "Sana va joy"
+          },
+          {
+            "label": "Asos"
+          },
+          {
+            "label": "Ekspert ma’lumotlari"
+          },
+          {
+            "label": "Savollar va ob’ektlar"
+          },
+          {
+            "label": "Usullar"
+          },
+          {
+            "label": "Natijalar bahosi, javoblar"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: xulosa berishning iloji bo‘lmagan hollarni sanang. Doskada: xulosa tarkibi. Tipik xato: usullarni ko‘rsatmaslik — 23-moddaga ko‘ra qo‘llangan usullar xulosada ko‘rsatiladi."
     },
     {
@@ -488,6 +704,74 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ekspertning ijtimoiy muhofazasi nega qonunda alohida moddada? Doskada: 25-33-moddalar ro‘yxati. Tipik xato: bu moddalarni ahamiyatsiz deb o‘tkazib yuborish."
     },
     {
+      "title": "Qonun moddalari xaritasi: 25-33",
+      "bullets": [
+        {
+          "text": "25-modda sud-ekspertlik faoliyatini moliyalashtirish; 26-modda tashkiliy va ilmiy-uslubiy ta’minot; 27-modda axborot bilan ta’minlash.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "86"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "28-modda davlat sud-ekspertiza muassasalarini qo‘riqlash; 29-modda xalqaro hamkorlik; 30-modda ekspertlar mehnatiga haq to‘lash va ijtimoiy muhofaza.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "86"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "31-modda qonun hujjatlarini buzganlik uchun javobgarlik; 32-modda muvofiqlashtirish; 33-modda qonunning kuchga kirishi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "86"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Moddalar xaritasi",
+        "nodes": [],
+        "header": [
+          "Modda",
+          "Mavzu"
+        ],
+        "rows": [
+          [
+            "25",
+            "Moliyalashtirish"
+          ],
+          [
+            "26-27",
+            "Ilmiy-uslubiy va axborot ta’minoti"
+          ],
+          [
+            "28",
+            "Muassasalarni qo‘riqlash"
+          ],
+          [
+            "29",
+            "Xalqaro hamkorlik"
+          ],
+          [
+            "30",
+            "Mehnatga haq, ijtimoiy muhofaza"
+          ],
+          [
+            "31-33",
+            "Javobgarlik, kuchga kirish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: javobgarlik qaysi moddada? (31-modda). Tipik xato: 30 va 31-moddalarni almashtirish."
+    },
+    {
       "title": "SSV yo‘riqnomasi (2011)",
       "bullets": [
         {
@@ -518,7 +802,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "SSV yo‘riqnomasi (2011)",
+        "items": [
+          {
+            "label": "Buyruq sanasi",
+            "value": "2011 yil 25 iyul"
+          },
+          {
+            "label": "Adliyada ro‘yxat",
+            "value": "2011 yil 2 sentyabr"
+          },
+          {
+            "label": "Kuchga kirdi",
+            "value": "2011 yil 12 sentyabr"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega vazirlik buyrug‘i Adliya vazirligida ro‘yxatdan o‘tadi? Doskada: 25.07 -> 02.09 -> 12.09 sanalari. Buyruq raqami: 277-son (toks 13, dvssm 14). Buyruq raqami: kitobda 277, malaka 115 da 227 — lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -561,7 +862,20 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Ekspertiza muddatlari",
+        "items": [
+          {
+            "label": "Muddat",
+            "value": "30 kun doirasida"
+          },
+          {
+            "label": "Asoslangan xulosa",
+            "value": "3 kun qolganda"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: muddat to‘xtatilishi mumkin bo‘lgan hollarni sanang (Yo‘riqnoma 12-band). Doskada: 30 kun va 3 kun qoidasi. Tipik xato: muddatni materiallar kelgan kunning o‘zidan hisoblash."
     },
     {
@@ -701,7 +1015,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Qoidalar: vazifalar",
+        "root": "Sud-kimyo tekshiruvi",
+        "children": [
+          {
+            "label": "O‘lim sababi",
+            "items": [
+              "Toksik modda topiladi va o‘lchanadi"
+            ]
+          },
+          {
+            "label": "Narkotik, psixotrop, dori",
+            "items": [
+              "Topish, miqdori, izohlash"
+            ]
+          },
+          {
+            "label": "Nobiologik dalillar",
+            "items": [
+              "Suyuqlik, ampula, tabletka, kukun"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: «natijalarni izohlash» ekspert vazifasiga nega kiradi? Doskada: 4 vazifa. Tipik xato: faqat zaharni topishni vazifa deb hisoblab, miqdor va izohni unutish. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -735,16 +1073,38 @@
           "uncertain": false
         },
         {
-          "text": "Uchuvchan va tez buziladigan moddalar ekspertizasi qabul kuni boshlanadi; ob’ektning 2/3 qismi ishlatiladi, 1/3 qismi arxivda qoladi.",
+          "text": "Uchuvchan va tez buziladigan moddalar (organik erituvchi, kislota, ishqor, sianid, kokain) ekspertizasi qabul qilingan kuni boshlanadi.",
           "source": {
             "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
             "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
-            "page": "8-9-band"
+            "page": "8-band"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ashyoviy dalil ob’ektining 2/3 qismi tahlilga ishlatiladi, 1/3 qismi qayta tahlil uchun bo‘lim arxivida saqlanadi (9-band).",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "9-band"
           },
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Ob’ekt hajmini taqsimlash (9-band)",
+        "items": [
+          {
+            "label": "Tahlilga ishlatiladi",
+            "value": "2/3"
+          },
+          {
+            "label": "Arxivda qoladi",
+            "value": "1/3"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega uchuvchan moddalar ekspertizasi qabul kuni boshlanadi? Doskada: 2/3 va 1/3 taqsimoti. Tipik xato: butun ob’ektni ishlatish — 1/3 arxivda qolishi kerak (Standart A-6 ham shuni talab qiladi). Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -821,7 +1181,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Usullar guruhlari",
+        "columns": [
+          {
+            "title": "Dastlabki usullar",
+            "items": [
+              "Rangli reaksiyalar",
+              "Yupqa qavat xromatografiyasi",
+              "Immunferment usullari"
+            ]
+          },
+          {
+            "title": "Tasdiqlovchi usullar",
+            "items": [
+              "UB, ko‘rinadigan, IQ spektrofotometriya",
+              "Atom-absorbsion, GSX, YuSSX",
+              "Xromato-mass-spektrometriya"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega dastlabki va tasdiqlovchi usullar ajratiladi? Doskada: usullar zinapoyasi: skrining -> tasdiq -> miqdor. Tipik xato: dastlabki usul natijasini yakuniy deb hisoblash. UB = ultrabinafsha, IQ = infraqizil, GSX = gaz-suyuqlik xromatografiyasi, YuSSX = yuqori samarali suyuqlik xromatografiyasi. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -864,7 +1245,25 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Qayta va qo‘shimcha tekshiruv",
+        "columns": [
+          {
+            "title": "Qayta tekshiruv",
+            "items": [
+              "Birlamchida o‘tkazilgan barcha tekshiruvlar",
+              "O‘tkazilmaganlari ham bajariladi"
+            ]
+          },
+          {
+            "title": "Qo‘shimcha tekshiruv",
+            "items": [
+              "Faqat avval o‘tkazilmagan tekshiruvlar"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qayta va qo‘shimcha tekshiruv farqi. Doskada: ikki ustun «bajariladi». Tipik xato: sifat nazoratini faqat tashqi baholash deb o‘ylash. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -907,7 +1306,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Xulosa (akt) uch qismi",
+        "nodes": [
+          "Kirish qismi",
+          "Tekshiruv qismi",
+          "Yakuniy qism"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: kitobda akt 4 qism, bu loyihada 3 qism — farqni tushuntiring. Doskada: ikki bo‘linishni yonma-yon yozing. Tipik xato: bu farqni mazmun farqi deb o‘ylash; ob’ekt tavsifi va kimyoviy tekshiruv bu loyihada «tekshiruv» qismiga kiradi. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -984,7 +1393,20 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Saqlash muddatlari",
+        "items": [
+          {
+            "label": "Chirishga moyil dalil",
+            "value": "1 yil (spirtda)"
+          },
+          {
+            "label": "Etil spirtiga ob’ekt",
+            "value": "30 kundan keyin"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: spirtni aniqlash uchun ob’ekt nega qisqa muddat saqlanadi? Doskada: saqlash muddatlari jadvali. Tipik xato: barcha ob’ektlarni bir yil saqlash. Kitob (toks 17): konservlangan — 1 yilgacha, spirt saqlovchi — 1 oy. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -1018,7 +1440,49 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Standart kodlari",
+        "root": "Standart kodi (harf + son)",
+        "children": [
+          {
+            "label": "A",
+            "items": [
+              "Murda ekspertizasi"
+            ]
+          },
+          {
+            "label": "V",
+            "items": [
+              "Tirik shaxslar ekspertizasi"
+            ]
+          },
+          {
+            "label": "S",
+            "items": [
+              "Qayta, komission, kompleks"
+            ]
+          },
+          {
+            "label": "B",
+            "items": [
+              "Sud-biologik"
+            ]
+          },
+          {
+            "label": "Ye",
+            "items": [
+              "Sud-gistologik"
+            ]
+          },
+          {
+            "label": "G‘",
+            "items": [
+              "Tibbiy-kriminalistik"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega standartga harf-raqamli kod beriladi? Doskada: kodlar jadvali. Kitobda xalqaro tashkilot qisqartmasi «(150)» deb yozilgan (ehtimol ISO) — slaydga olinmadi. Kitobda: «S» harfi ham qayta/komission ekspertizalar, ham sud-kimyo uchun berilgan (ziddiyat) — sud-kimyo kodi slaydga yozilmadi; lex.uz yoki asl standartda tekshiring."
     },
     {
@@ -1061,8 +1525,89 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "A-6: ob’ekt tanlash mezonlari",
+        "nodes": [
+          "Zahar tabiati, kirish yo‘li",
+          "Tarqalishi, chiqish tezligi",
+          "Davolash muolajalari",
+          "Ob’ekt turi tanlanadi",
+          "1/3 qismi arxivda qoladi"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: arxivda 1/3 qismni nima uchun qoldiramiz? Doskada: «ichki a’zolar kompleksi»ni chizing. Tipik xato: barcha a’zolarni bitta bankaga solish. Izoh: kitobda «o‘g suyuqligi» deyilgan, bu «o‘t suyuqligi» ning yozuv xatosi bo‘lishi mumkin."
+    },
+    {
+      "title": "A-6: kiritilish yo‘liga qarab qo‘shimcha ob’ektlar",
+      "bullets": [
+        {
+          "text": "Zahar qin yoki bachadon orqali yuborilgan deb taxmin qilinsa, qin va bachadon alohida shisha idishlarga olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri ostiga yoki mushaklar orasiga yuborilganda, kiritilgan deb taxmin etilgan sohadan teri va mushaklar olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ingalyatsion zaharlanishda 300 g dan eng to‘laqon sohadan o‘pka bo‘lagi va bosh miya olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oshqozon ichidagi moddadan zarracha, kristall yoki tabletka topilsa, ular ham ekspertizaga yuboriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kiritilish yo‘li — ob’ekt",
+        "nodes": [],
+        "header": [
+          "Kiritilish yo‘li",
+          "Qo‘shimcha ob’ekt"
+        ],
+        "rows": [
+          [
+            "Qin yoki bachadon orqali",
+            "Qin va bachadon"
+          ],
+          [
+            "Teri ostiga, mushakka",
+            "Teri va mushak bo‘lagi"
+          ],
+          [
+            "Ingalyatsion",
+            "O‘pka bo‘lagi, bosh miya (300 g dan)"
+          ],
+          [
+            "Ichida zarracha topilsa",
+            "Zarracha, kristall, tabletka"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kiritilgan joydagi to‘qima olinadi? Tipik xato: faqat qon va siydik yuborish bilan cheklanish."
     },
     {
       "title": "A-6: moddalar bo‘yicha ob’ektlar (1)",
@@ -1110,7 +1655,7 @@
           ],
           [
             "Giyohvand, psixotrop",
-            "Qon 150 ml, siydik 150-200 ml, o‘t pufagi"
+            "Qon 150, siydik 150-200 ml, o‘t pufagi"
           ],
           [
             "Uglerod oksidi",
@@ -1166,7 +1711,7 @@
         "rows": [
           [
             "Metil spirti",
-            "Miya, jigar, buyrak 100 g dan; qon, siydik"
+            "Miya, jigar, buyrak 100 g; qon, siydik"
           ],
           [
             "Uchuvchan xlororganik",
@@ -1174,7 +1719,7 @@
           ],
           [
             "Glikozidlar",
-            "Jigar 1/3 o‘t qopi bilan; in’eksiya sohasi"
+            "Jigar 1/3, o‘t qopi; in’eksiya sohasi"
           ],
           [
             "Fosfororganik",
@@ -1230,7 +1775,7 @@
           ],
           [
             "Qo‘rg‘oshin, talliy, margimush",
-            "Soch, tirnoq, yassi suyaklar, jigar, buyrak"
+            "Soch, tirnoq, suyak, jigar, buyrak"
           ],
           [
             "Metgemoglobin zaharlari",
@@ -1243,6 +1788,78 @@
         ]
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: surunkali metall zaharlanishda nega soch va tirnoq olinadi? Doskada: jadval. Tipik xato: surunkali zaharlanishda faqat ichki a’zolarni yuborish."
+    },
+    {
+      "title": "A-6: asosiy ob’ektlar hajmlari",
+      "bullets": [
+        {
+          "text": "Etanolga shubhada qon va siydik 10-20 ml dan, tiqingacha to‘ldirilgan idishga olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Giyohvand vositalar va psixotrop moddalarga shubhada albatta qon (150 ml), siydik (150-200 ml) va o‘t pufagi olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metil spirtiga shubhada bosh miya, jigar, buyrak 100 g dan; qon va siydik 10-20 ml dan olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uglerod oksidiga shubhada qon (10-20 ml) olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Ob’ekt hajmlari",
+        "items": [
+          {
+            "label": "Etanol: qon, siydik",
+            "value": "10-20 ml"
+          },
+          {
+            "label": "Narkotik: qon",
+            "value": "150 ml"
+          },
+          {
+            "label": "Narkotik: siydik",
+            "value": "150-200 ml"
+          },
+          {
+            "label": "Metanol: a’zolar",
+            "value": "100 g dan"
+          },
+          {
+            "label": "CO: qon",
+            "value": "10-20 ml"
+          },
+          {
+            "label": "Zaharlanish: qon",
+            "value": "200 ml"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega narkotiklar uchun qon hajmi katta? Tipik xato: etanol va narkotik hajmlarini almashtirish."
     },
     {
       "title": "A-6: olish va konservatsiya qoidalari",
@@ -1284,8 +1901,88 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Olish va konservatsiya",
+        "items": [
+          {
+            "title": "Ligatura",
+            "text": "Qizilo‘ngach, oshqozon, ichakka ikkitadan"
+          },
+          {
+            "title": "Idish",
+            "text": "Og‘zi keng quruq shisha banka"
+          },
+          {
+            "title": "Konservatsiya",
+            "text": "Faqat yurak glikozidlariga shubhada"
+          },
+          {
+            "title": "Spirt namunasi",
+            "text": "300 ml sud kimyo uchun"
+          },
+          {
+            "title": "Qadoqlash",
+            "text": "Yorliq, muhrlangan xalta yoki konteyner"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega metall idish man etiladi? Doskada: banka tayyorlash tartibi: soda yoki xantal eritmasi -> suv -> distillangan suv -> quritish shkafi. Tipik xato: a’zolarni suv bilan yuvib ifloslikdan tozalash."
+    },
+    {
+      "title": "A-6: ekspert nazorati va idish tayyorlash",
+      "bullets": [
+        {
+          "text": "Ekspert murdadan zaharning chiqib ketmasligi va tashqaridan tushib qolmasligini nazorat qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murda ochilguncha seksion stol, asboblar, qo‘lqoplar yaxshilab yuviladi; tekshiruv vaqtida suv va boshqa suyuqliklar ishlatilmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bankalar soda yoki xantal eritmasi bilan yuviladi, toza suv, so‘ng distillangan suv bilan chayiladi va quritish shkafida quritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Idish tayyorlash tartibi",
+        "items": [
+          {
+            "title": "1. Soda yoki xantal",
+            "text": "Banka eritma bilan yuviladi"
+          },
+          {
+            "title": "2. Toza suv",
+            "text": "Yaxshilab chayiladi"
+          },
+          {
+            "title": "3. Distillangan suv",
+            "text": "Keyin shu bilan chayiladi"
+          },
+          {
+            "title": "4. Quritish",
+            "text": "Quritish shkafida quritiladi"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega tekshiruv vaqtida suv ishlatilmaydi? Tipik xato: banka yuvilgach distillangan suv bosqichini tushirib qoldirish."
     },
     {
       "title": "Laboratoriya SOP lari: tuzilishi",
@@ -1378,7 +2075,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Tayyorlangan reaktiv muddati",
+        "items": [
+          {
+            "label": "Ko‘pchilik reaktivlar",
+            "value": "1 oy"
+          },
+          {
+            "label": "Ditizon eritmasi",
+            "value": "10 kun"
+          },
+          {
+            "label": "Mis(I) yodid",
+            "value": "6 oy"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nazorat namunasi musbat reaksiya bersa, nima qilinadi? Doskada: reaktiv-nazorat-natija zanjiri. Tipik xato: tayyorlangan reaktivlarning saqlash muddatiga e’tibor bermaslik. SOP matni «Qabul qilinadigan mezonlar» bo‘limidan olingan."
     },
     {
@@ -1429,12 +2143,12 @@
     {
       "question": "Sud ekspertizasi to‘g‘risidagi qonunni Qonunchilik palatasi qachon qabul qilgan?",
       "options": [
-        "2009 yil 18 noyabr",
-        "2010 yil 7 may",
         "2010 yil 1 iyun",
+        "2010 yil 7 may",
+        "2009 yil 18 noyabr",
         "2011 yil 25 iyul"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Qonunchilik palatasi qonunni 2009 yil 18 noyabrda qabul qilgan, Senat 2010 yil 7 mayda ma’qullagan.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1445,12 +2159,12 @@
     {
       "question": "Sud ekspertizasi to‘g‘risidagi qonun nechta bob va moddadan iborat?",
       "options": [
-        "4 bob, 30 modda",
-        "5 bob, 31 modda",
+        "6 bob, 33 modda",
         "5 bob, 33 modda",
-        "6 bob, 33 modda"
+        "5 bob, 31 modda",
+        "4 bob, 30 modda"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Qonun hujjatlari 5 bob va 33 moddadan iborat.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1461,12 +2175,12 @@
     {
       "question": "Qonunning 17-moddasiga ko‘ra ekspertiza qachondan tayinlangan hisoblanadi?",
       "options": [
-        "Ob’ektlar laboratoriyaga kelgan kundan",
         "Qaror yoki ajrim chiqarilgan kundan",
         "Ekspert qarorni qabul qilgan kundan",
-        "Xulosa imzolangan kundan"
+        "Xulosa imzolangan kundan",
+        "Ob’ektlar laboratoriyaga kelgan kundan"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Ekspertiza tegishli qaror yoki ajrim chiqarilgan kundan boshlab tayinlangan hisoblanadi.",
       "source": {
         "author": "Malaka materiali №047",
@@ -1477,12 +2191,12 @@
     {
       "question": "Standart A-6 ga ko‘ra ichki a’zo va suyuqliklarning qaysi qismi qayta tekshiruv uchun arxivda qolishi kerak?",
       "options": [
+        "Uchdan bir qismi",
         "Yarmi",
         "Uchdan ikki qismi",
-        "To‘rtdan bir qismi",
-        "Uchdan bir qismi"
+        "To‘rtdan bir qismi"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "A-6 da ob’ektlar uchdan bir qismi qayta tekshiruv uchun arxivda qolishini hisobga olib yuboriladi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1493,10 +2207,10 @@
     {
       "question": "Etanolga shubhada standart A-6 bo‘yicha qon va siydikdan qancha olinadi?",
       "options": [
-        "1-5 ml",
-        "10-20 ml",
         "50-100 ml",
-        "150-200 ml"
+        "10-20 ml",
+        "150-200 ml",
+        "1-5 ml"
       ],
       "correct_index": 1,
       "explanation": "Etanol uchun qon va siydik 10-20 ml dan, tiqingacha to‘ldirilgan idishda yuboriladi.",
@@ -1510,9 +2224,9 @@
       "question": "Giyohvand vositalar va psixotrop moddalarga shubhada qon hajmi qancha bo‘lishi shart?",
       "options": [
         "150 ml",
-        "20 ml",
         "10 ml",
-        "50 ml"
+        "50 ml",
+        "20 ml"
       ],
       "correct_index": 0,
       "explanation": "Giyohvand vositalar va psixotrop moddalardan albatta qon (150 ml), siydik (150-200 ml) va o‘t pufagi yuboriladi.",
@@ -1525,10 +2239,10 @@
     {
       "question": "Qaysi zaharlanishga shubha bo‘lgandagina ob’ektlar etil spirti bilan konservatsiya qilinadi?",
       "options": [
-        "Kislotalar",
         "Fosfororganik birikmalar",
+        "Metall zaharlar",
         "Yurak glikozidlari",
-        "Metall zaharlar"
+        "Kislotalar"
       ],
       "correct_index": 2,
       "explanation": "Ob’ektlar faqat yurak glikozidlari bilan zaharlanishga shubha qilingandagina konservatsiya qilinadi.",
@@ -1541,9 +2255,9 @@
     {
       "question": "Ichki a’zolar qanday idishga joylashtiriladi?",
       "options": [
+        "Polietilen paket",
         "Metall idish",
         "Keramik idish",
-        "Polietilen paket",
         "Og‘zi keng quruq shisha banka"
       ],
       "correct_index": 3,
@@ -1557,12 +2271,12 @@
     {
       "question": "Sud-kimyo qoidalari loyihasiga ko‘ra ekspertizaga yuborilgan ob’ektning qaysi qismi ishlatiladi va qaysi qismi arxivda qoladi?",
       "options": [
-        "2/3 ishlatiladi, 1/3 arxivda",
         "Yarmi ishlatiladi, yarmi arxivda",
+        "2/3 ishlatiladi, 1/3 arxivda",
         "Hammasi ishlatiladi",
         "1/3 ishlatiladi, 2/3 arxivda"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Ob’ektning uchdan ikki qismi ishlatiladi, uchdan bir qismi arxivda qayta tahlil uchun saqlanadi.",
       "source": {
         "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
@@ -1573,17 +2287,177 @@
     {
       "question": "№ RIP.G.244.2013 raqamli SOP qaysi tahlilga bag‘ishlangan?",
       "options": [
+        "Qonda etanolni aniqlash",
         "Biologik materialda simobni aniqlash",
-        "Qonda karboksigemoglobinni sud-kimyoviy aniqlash",
         "Mishyakni Marsh usulida aniqlash",
-        "Qonda etanolni aniqlash"
+        "Qonda karboksigemoglobinni sud-kimyoviy aniqlash"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "RIP.G.244.2013 — qonda karboksigemoglobinni sud-kimyoviy aniqlash bo‘yicha yo‘riqnoma; RIP.G.240.2013 esa simobga oid.",
       "source": {
         "author": "Malaka materiali №015 (O‘zR SSV Bosh byuro)",
         "title": "Muolajani bajarish yo‘riqnomasi № RIP.G.244.2013: Qonda karboksigemoglobinni sud-kimyoviy aniqlash",
         "page": "sarlavha sahifasi"
+      }
+    },
+    {
+      "question": "Sud ekspertizasi to‘g‘risidagi qonunning 4-bobi nimaga bag‘ishlangan?",
+      "options": [
+        "Sud ekspertizasini o‘tkazishga",
+        "Yakunlovchi qoidalarga",
+        "Umumiy qoidalarga",
+        "Moliyalashtirish, tashkiliy, ilmiy-uslubiy va axborot ta’minotiga"
+      ],
+      "correct_index": 3,
+      "explanation": "4-bob sud-ekspertlik faoliyatini moliyalashtirish, tashkiliy, ilmiy-uslubiy va axborot bilan ta’minlashga bag‘ishlangan.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "85"
+      }
+    },
+    {
+      "question": "Qonunning 9-moddasi nimani belgilaydi?",
+      "options": [
+        "Ekspertiza muddatlarini",
+        "Xulosa mazmunini",
+        "Tekshirish ob’ektlarini",
+        "Sud ekspertining mustaqilligini"
+      ],
+      "correct_index": 2,
+      "explanation": "9-modda tekshirish ob’ektlariga bag‘ishlangan; 7-modda esa sud ekspertining mustaqilligi haqida.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "85"
+      }
+    },
+    {
+      "question": "Qonunning qaysi moddasi xulosa berishning iloji yo‘qligi to‘g‘risidagi hujjatga bag‘ishlangan?",
+      "options": [
+        "23-modda",
+        "25-modda",
+        "22-modda",
+        "24-modda"
+      ],
+      "correct_index": 3,
+      "explanation": "23-modda sud eksperti xulosasi, 24-modda esa xulosa berishning iloji yo‘qligi to‘g‘risidagi hujjat haqida.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "86"
+      }
+    },
+    {
+      "question": "Sud-tibbiy ekspertiza standartlarida «A» harfi qanday ekspertizani bildiradi?",
+      "options": [
+        "Sud-biologik ekspertiza",
+        "Tibbiy-kriminalistik ekspertiza",
+        "Murda ekspertizasi",
+        "Tirik shaxslar ekspertizasi"
+      ],
+      "correct_index": 2,
+      "explanation": "Standart kodidagi A — murda ekspertizasi, V — tirik shaxslar, B — sud-biologik, G‘ — tibbiy-kriminalistik.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "86"
+      }
+    },
+    {
+      "question": "Standartlarda «Ye» harfi qanday tekshiruvni bildiradi?",
+      "options": [
+        "Sud-gistologik",
+        "Sud-biologik",
+        "Qayta ekspertiza",
+        "Murda"
+      ],
+      "correct_index": 0,
+      "explanation": "Ye — sud-gistologik ekspertizalar va tekshiruvlar; B — sud-biologik.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "87"
+      }
+    },
+    {
+      "question": "Standart A-6 bo‘yicha zaharlanishga shubhada siydikdan qancha olinadi?",
+      "options": [
+        "200 ml gacha",
+        "500 ml",
+        "50 ml gacha",
+        "10 ml gacha"
+      ],
+      "correct_index": 0,
+      "explanation": "Ichki a’zolar kompleksi bilan birga siydik (200 ml gacha) va 200 ml qon olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "87"
+      }
+    },
+    {
+      "question": "Ingalyatsion zaharlanishda standart A-6 qaysi ob’ektlarni olishni belgilaydi?",
+      "options": [
+        "Faqat qon",
+        "Soch va tirnoq",
+        "300 g dan o‘pka bo‘lagi va bosh miya",
+        "Teri va mushak"
+      ],
+      "correct_index": 2,
+      "explanation": "Ingalyatsion zaharlanishda 300 g dan eng to‘laqon sohadan o‘pka bo‘lagi va bosh miya olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "87"
+      }
+    },
+    {
+      "question": "Simob tuzlari bilan zaharlanishga shubhada qaysi ob’ektlar olinadi?",
+      "options": [
+        "Faqat siydik",
+        "Soch, tirnoq, jigar, buyrak",
+        "Qon xolinesteraza uchun",
+        "Charvi bo‘lagi va bosh miya"
+      ],
+      "correct_index": 1,
+      "explanation": "Simob tuzlaridan soch, tirnoq, jigar va buyrak olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "88"
+      }
+    },
+    {
+      "question": "Eksgumatsiya qilingan murdada sud-kimyo uchun tuproq necha joydan va qancha olinadi?",
+      "options": [
+        "Uch joydan 100 g dan",
+        "Bir joydan 500 g",
+        "Ikki joydan 1 kg dan",
+        "Olti joydan 500 g dan"
+      ],
+      "correct_index": 3,
+      "explanation": "Olti joydan (tobutning usti, osti, yon tomonlari, bosh va oyoq tomoni) 500 g dan tuproq olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "88"
+      }
+    },
+    {
+      "question": "Konservatsiya uchun ishlatilgan etil spirtidan sud-kimyo ekspertizasiga namuna sifatida qancha yuboriladi?",
+      "options": [
+        "30 ml",
+        "300 ml",
+        "100 ml",
+        "1 litr"
+      ],
+      "correct_index": 1,
+      "explanation": "Konservatsiya uchun olingan idishdagi etil spirtidan 300 ml sud-kimyo ekspertizasi uchun namuna sifatida yuboriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "88"
       }
     }
   ],

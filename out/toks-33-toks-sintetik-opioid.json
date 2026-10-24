@@ -1,1727 +1,2720 @@
 {
-  "topic": "Sintetik opioidlar: promedol (trimeperidin), metadon, fentanil, petidin; tramadol",
-  "slides": [
+ "topic": "Sintetik opioidlar: promedol (trimeperidin), metadon, fentanil, petidin; tramadol",
+ "slides": [
+  {
+   "title": "Ma’ruza rejasi va tayanch iboralar",
+   "bullets": [
     {
-      "title": "Ma’ruza rejasi va tayanch iboralar",
-      "bullets": [
-        {
-          "text": "Bo‘lim 1.4: opioidlar — promedol, metadon, fentanil, petidin; ularni turli ob’ektlardan ajratib olish va tahlil usullari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tayanch iboralar: opioid, trimeperidin, metadon, fentanil, petidin (meperidin), siklodol, Marki reaktivi, YuQX, YuSSX, GX-MS.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "40-53"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reja: promedol -> metadon -> fentanil -> siklodol -> petidin -> tramadol (malaka materiali bo‘yicha).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "40-53"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: opiat va opioid atamalarining farqi nimada? Doskada: reja 6 qadamda. Eslatma: tramadol gmt kitobining 39-53-betlarida yo‘q; u malaka materiali №001 asosida berildi. Siklodol kitobda shu bo‘limda keltirilgan."
-    },
-    {
-      "title": "Promedol: tuzilishi va xossalari",
-      "bullets": [
-        {
-          "text": "Promedol (trimeperidin) — 1,2,5-trimetil-4-propioniloksi-4-fenilpiperidin gidroxlorid; kimyoviy tuzilishi bo‘yicha piperidin hosilasi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Oq kristall kukun, mazasi achchiq, deyarli hidsiz; suyuqlanish harorati 107-108°C; 1948 yilda sintez qilingan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gidroxlorid tuzi suvda yaxshi eriydi; etil spirti va xloroformda qisman eriydi; dietil efirida erimaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "40"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: piperidin halqasi molekulada qayerda joylashgan? Doskada: promedol formulasi. Tipik xato: promedolni morfin hosilasi deb hisoblash — u piperidin hosilasi."
-    },
-    {
-      "title": "Promedol: narkologik ahamiyati va qo‘llanilishi",
-      "bullets": [
-        {
-          "text": "Morfinning og‘riq qoldirish xususiyati zaharlanish va morfinizmga sabab bo‘lgani uchun giyohvand ta’sir etmaydigan analgetik izlangan: 100 dan ortiq birikma sintezlandi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "40-41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ulardan faqat promedol, izopromedol, lidol, fenadon tibbiyotda tavsiya etildi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Promedol shokka qarshi birlamchi vosita; og‘riqni qoldirishda morfinga juda yaqin, lekin zaharliligi morfindan kuchliroq.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jarrohlikdan oldin va keyin, tug‘ruqxonalarda og‘riqsizlantirishda ishlatiladi; tez-tez iste’mol qilinsa morfin kabi o‘rganib qolish mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega «giyohvand bo‘lmagan analgetik» izlash natija bermadi? Doskada: 100 dan ortiq birikma -> 4 tasi tavsiya. Tipik xato: promedolni qaramlik chaqirmaydigan dori deb hisoblash."
-    },
-    {
-      "title": "Promedol: zaharlanish va ajratish",
-      "bullets": [
-        {
-          "text": "Zaharlanishda ko‘ngil aynishi, bosh aylanishi, darmonsizlanish, mastlik; teri ostiga yuborilganda ta’sir 10-20 daqiqadan so‘ng seziladi va 3-4 soat davom etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kimyo-toksikologik tahlil faqat maxsus ko‘rsatma bo‘lganda o‘tkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Biologik ob’ektdan nordonlashtirilgan spirt yoki suv bilan ajratiladi; suvli ajratmadan xloroform bilan pH=6,9-8,5 da maksimal ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekstraksiya pH oralig‘i (6,9-8,5) nimani bildiradi? Doskada: pH 6,9-8,5, xloroform. Tipik xato: promedolni kuchli ishqoriy muhitdan ajratishga urinish."
-    },
-    {
-      "title": "Promedol: aniqlash reaksiyalari",
-      "bullets": [
-        {
-          "text": "Alkaloidlarning umumiy cho‘ktiruvchi reaktivlari bilan turli rangdagi cho‘kmalar hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Marki reaktivi (formaldegidli H2SO4) bilan to‘q qizil rang; sezgirligi 10 mkg promedol.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Pikrin kislota bilan uchlamchi azot hisobiga sariq rangli qo‘sh molekulyar birikma — cho‘kma.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: metil spirti va muzlovchi sirka kislota (9:1); Dragendorf reaktivi bilan sarg‘ish dog‘, standart dog‘i bilan solishtiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: pikrin kislota reaksiyasi molekulaning qaysi qismiga bog‘liq? (uchlamchi azot). Doskada: reaksiyalar ro‘yxati. Tipik xato: Marki sezgirligini (10 mkg) petidinniki (7 mkg) bilan aralashtirish."
-    },
-    {
-      "title": "Promedol: spektrlar va miqdori",
-      "bullets": [
-        {
-          "text": "UB: 0,1 M xlorid kislotadagi eritma 251, 257 va 263 nm da maksimal nur yutadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdori spektrofotometrik usulda aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdori GSX yoki YuSSX usullarida ham aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uch maksimum (251, 257, 263 nm) qanday tuzilish belgisi? (fenil halqasi). Doskada: 251/257/263 nm. Eslatma: kitobda promedolning IQ-spektri uchun «186, 42, 201, 56, 57, 187, 202, 71» raqamlari keltirilgan (p.42, petidin uchun p.53 da qaytarilgan) — bular IQ chastotalariga o‘xshamaydi (ehtimol boshqa spektr ionlari), shuning uchun slaydga kiritilmadi."
-    },
-    {
-      "title": "Metadon: tarixi va xossalari",
-      "bullets": [
-        {
-          "text": "Metadon (6-dimetilamino-4,4-difenil-3-geptanon) — sintetik opioid; ikkinchi jahon urushi davrida Germaniyada morfinni o‘rnini bosuvchi modda sifatida sintez qilingan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "AQShdagi klinikalarga 1947 yilda kirib kelgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metadon asosi kristall modda, suyuqlanish harorati 76-79°C; gidroxloridi oq kristall modda, suyuqlanish harorati 229-231°C.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega metadon kristall asos va tuz holida turli haroratga ega? Doskada: 76-79°C (asos), 229-231°C (gidroxlorid). Kitobning boshqa betida bu haroratlar «qaynash harorati» deb atalgan; kristall modda uchun suyuqlanish harorati olindi."
-    },
-    {
-      "title": "Metadon: dozalar va qo‘llanilishi",
-      "bullets": [
-        {
-          "text": "Og‘riqni qoldiruvchi bir martalik yuqori doza 10 mg, sutkalik doza 30 mg.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Morfinning o‘rnini bosuvchi modda sifatida qo‘llanadi; terapiyada narkomanlarga buyuriladi; tabletka (40 mg) va eritma (10 mg/ml) shaklida chiqariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Analgetik ta’siri morfinga nisbatan 5 marta yuqoriroq, zaharliligi kamroq; ta’sir vaqti 24 soatgacha davom etishi mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tolerantlik oshib boradi, jismoniy qaramlik chaqiradi; metadol, normetadol va asetilmetadol kabi giyohvand ta’sirli metabolitlar hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "42-43"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metadon narkomaniya davolashda nega ishlatiladi, lekin o‘zi qaramlik chaqiradi? Doskada: 10 mg / 30 mg; 24 soat; 5 marta. Tipik xato: bir martalik va sutkalik dozalarni aralashtirish."
-    },
-    {
-      "title": "6-jadval: metadon guruhi moddalari",
-      "bullets": [
-        {
-          "text": "Metadon guruhiga kiruvchi 16 ta moddadan 15 tasi I ro‘yxatda, dekstropropoksifen II ro‘yxatda.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "43"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "I ro‘yxatda: metadol, asetilmetadol, dipipanon, izometadon, normetadon, norpipanon, fenadon va b.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "43"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Metadon guruhi (6-jadval)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Ro‘yxat"
-        ],
-        "rows": [
-          [
-            "Metadon",
-            "I"
-          ],
-          [
-            "Fenadon",
-            "I"
-          ],
-          [
-            "Dipipanon",
-            "I"
-          ],
-          [
-            "Dekstropropoksifen",
-            "II"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ro‘yxat raqami moddaning huquqiy holatini qanday belgilaydi? Doskada: jadvalni to‘ldiring. Tipik xato: dekstropropoksifenni I ro‘yxatga kiritish — kitobda II ro‘yxatda."
-    },
-    {
-      "title": "7-jadval: o‘limli zaharlanishlarda metadon",
-      "bullets": [
-        {
-          "text": "O‘lim bilan tugagan zaharlanishlarda ichki a’zolarda metadon miqdori (mg/l yoki mg/kg).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "43"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Buyraklarda o‘rtacha 2,9 (1,1-6,0); manba — Baselt R.C., Cravey R.H. (1995), n=1.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "43"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Metadon, mg/l yoki mg/kg",
-        "nodes": [],
-        "header": [
-          "Ob’ekt",
-          "O‘rtacha"
-        ],
-        "rows": [
-          [
-            "Qon",
-            "1,0 (0,4-1,8)"
-          ],
-          [
-            "Bosh miya",
-            "1,0 (0,5-1,4)"
-          ],
-          [
-            "Jigar",
-            "3,8 (1,8-7,5)"
-          ],
-          [
-            "O‘t pufagi",
-            "7,5 (2,9-18,0)"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega o‘t pufagida konsentratsiya eng yuqori? Doskada: jadvalni to‘ldiring. Eslatma: jadval n=1 (bitta kuzatish) asosida; bu qiymatlar qat’iy toksik chegara emas, talqinda ehtiyotkor bo‘ling."
-    },
-    {
-      "title": "Metadon: dastlabki va rangli reaksiyalar",
-      "bullets": [
-        {
-          "text": "Kukunga konsentrlangan sulfat va nitrat kislotalar aralashmasi (1:1) tomizilsa, zarg‘aldoq rang kuzatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "43-44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kukunga kobalt rodanidning 2% suvli eritmasidan tomizilsa, ko‘k rang hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "44"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Metadon: rangli reaksiyalar",
-        "nodes": [],
-        "header": [
-          "Reaktiv",
-          "Rang"
-        ],
-        "rows": [
-          [
-            "Liberman reaktivi",
-            "zarg‘aldoq"
-          ],
-          [
-            "Mandelin reaktivi",
-            "yashil, so‘ngra moviy"
-          ],
-          [
-            "Marki reaktivi",
-            "pushti-qizil, so‘ng fluoressent qizil"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: dastlabki sinov bilan rangli reaksiyalar qanday farq qiladi? Doskada: jadvalni to‘ldiring. Tipik xato: kobalt rodanid bilan hosil bo‘lgan ko‘k rangni aniqlovchi emas, dastlabki sinov deb bilmaslik."
-    },
-    {
-      "title": "Metadon: ajratish va YuQX",
-      "bullets": [
-        {
-          "text": "Namunalardan nordonlashtirilgan spirt yoki suv usulida ajratiladi; suvli ajratmadan ishqoriy muhitda (pH=9-10) organik erituvchilar bilan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metadonning 16 ta namoyondasi bor, ular giyohvandlarning qora bozorida uchraydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: «Sorbfil» yoki «Silufol»; sistemalar: siklogeksan-toluol-dietilamin (10:10:1), geksan-aseton-ammiak 25% (2:2:0,2), benzol-etanol-dietilamin (9:1:1).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dog‘i Mandelin reaktivi bilan yashildan ko‘k rangga o‘tadi; benzol-etanol-dietilamin (9:1:1) sistemasida Rf=0,80.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "44"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: dietilamin sistemaga nima uchun qo‘shiladi? (kitobda sabab ko‘rsatilmagan). Doskada: uch sistema. Tipik xato: Rf=0,80 qiymatini boshqa sistemaga qo‘llash."
-    },
-    {
-      "title": "Metadon: UB, IQ va analoglar",
-      "bullets": [
-        {
-          "text": "UB: metadonning sulfat kislotadagi eritmasi 253, 259, 264 va 292 nm da maksimum beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "IQ (KBr plastinka): 710, 1709, 769, 1107, 943, 1133 sm-1 sohalarida yutilish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "8-jadval: 0,1 M HCl da UB, nm",
-        "nodes": [],
-        "header": [
-          "Birikma",
-          "Maksimum",
-          "Marki"
-        ],
-        "rows": [
-          [
-            "Metadon",
-            "253,259,264,292",
-            "-"
-          ],
-          [
-            "Normetadon",
-            "253,259,265,292",
-            "-"
-          ],
-          [
-            "Dekstropropoksifen",
-            "252,257,263",
-            "qora-binafsha-yashil"
-          ],
-          [
-            "Dipipanon",
-            "259,265,293",
-            "-"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: metadon va normetadon spektrlari deyarli bir xil bo‘lsa, ularni qanday ajratamiz? Doskada: jadvalni to‘ldiring (norpipanon: 260, 294 nm). Tipik xato: kitobdagi A11 belgisi noaniq yozilgan — slaydga kiritilmadi."
-    },
-    {
-      "title": "Fentanil: paydo bo‘lishi va faolligi",
-      "bullets": [
-        {
-          "text": "1991 yilda AQSh qora bozorida geroin o‘rniga yuqori faol sintetik og‘riq qoldiruvchi fentanil paydo bo‘ldi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Morfinga nisbatan 100 marta, geroindan 10 marta faol; nafas olishga nojo‘ya ta’siri kuchliroq.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Vazni 70 kg odam uchun samarali doza 0,1 mg; ta’siri 30 daqiqadan oshmaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "100 dan ortiq namoyondasi bor, ulardan 12 tasi qora bozorda uchraydi; 3-metilfentanil fentanildan 30 marta faolroq.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kichik doza (0,1 mg) ekspertiza uchun muammo? Doskada: 100x morfin; 10x geroin; 0,1 mg. Tipik xato: faollik ko‘rsatkichlarini (100, 10, 30 marta) aralashtirish."
-    },
-    {
-      "title": "Fentanil: klinik qo‘llanilishi va ta’siri",
-      "bullets": [
-        {
-          "text": "Klinikada qon tomiriga yuboriluvchi anestetik vosita sifatida jarrohlikdan oldin va keyin (kardioxirurgiyada) ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fentanil hosilalari geroinga o‘xshash analgeziya, eyforiya, ko‘z qorachig‘ining torayishi va nafas olishning qiyinlashuvini chaqiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yog‘da yaxshi eruvchanligi tufayli qabul qilingan zahoti miyaga yetib boradi; ta’sir vaqti davomli emas.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: yog‘da eruvchanlik farmakologik ta’sirning boshlanishiga qanday ta’sir qiladi? Doskada: lipofillik -> tez ta’sir. Tipik xato: qisqa ta’sir vaqtini kam xavf deb baholash."
-    },
-    {
-      "title": "Fentanil namoyondalari",
-      "bullets": [
-        {
-          "text": "Namoyondalar ta’siri opiatlarga o‘xshash; namoyon bo‘lishi va davomiyligi bilan farqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fentanil uchun samara yarim soatdan oshadi, alfentanil uchun 5 daqiqa.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "45"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Fentanil namoyondalari",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Xususiyati"
-        ],
-        "rows": [
-          [
-            "Alfentanil",
-            "ultra-qisqa ta’sir, 5-10 daqiqa"
-          ],
-          [
-            "Sufentanil",
-            "fentanildan 5-10 marta faol"
-          ],
-          [
-            "Remifentanil",
-            "eng qisqa ta’sirli dori vositasi"
-          ],
-          [
-            "Karfentanil",
-            "morfindan 10000 marta yuqori"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qisqa ta’sirli namoyondalar anesteziologiyada afzal? Doskada: jadvalni to‘ldiring. Tipik xato: karfentanil faolligini (10000 marta morfinga nisbatan) fentanilga nisbatan deb o‘qish."
-    },
-    {
-      "title": "Fentanil: metabolizmi va ajratish",
-      "bullets": [
-        {
-          "text": "Fentanil lipofil modda: to‘qimalar orqali tez so‘riladi va zudlik bilan tarqaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "46"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metabolizmda amid guruhi gidrolizlanadi, so‘ngra qisman gidroksillanish va glyukuronidlar hosil bo‘lishi orqali chiqariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "46"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Namunalardan nordonlashtirilgan spirt yoki suv usulida ajratiladi; suvli ajratmadan ishqoriy muhitda (pH=7) organik erituvchilar bilan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "47"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: pH=7 sharoitida ekstraksiya nima uchun yetarli? (kitobda sabab ko‘rsatilmagan). Doskada: gidroliz -> gidroksillanish -> glyukuronid. Tipik xato: pH=7 ni morfin uchun ishlatiladigan pH bilan aralashtirish."
-    },
-    {
-      "title": "Fentanil: rangli reaksiyalar",
-      "bullets": [
-        {
-          "text": "Marki reaktivi: xloroformli eritma buyum oynasida uchirilgach, qoldiqqa 1-2 tomchi qo‘shilsa, zarg‘aldoq rangli mahsulot hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Limon kislotasi reaksiyasi: qoldiqqa limon kislotaning sirka angidriddagi 1% eritmasidan 1-2 tomchi qo‘shib, suv hammomida asta qizdirilsa, qizil-binafsha mahsulot hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reaksiyalar uchun suvli ajratmadan organik erituvchi bilan olingan xloroformli ekstrakt ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "47"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkala reaksiyada qoldiqning qanday tayyorlanishi muhim? Doskada: xloroform uchirish -> reaktiv -> rang. Tipik xato: Marki rangini (zarg‘aldoq) morfin ranglari (binafsha) bilan aralashtirish."
-    },
-    {
-      "title": "Fentanil: YuQX sistemalari",
-      "bullets": [
-        {
-          "text": "Silikagel-G («Merk», Germaniya) plastinkalari; kislotali yodplatinat reaktivi purkalganda dog‘ hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "1: metanol-ammiak 25% (100:1,5); 2: siklogeksan-toluol-dietilamin (75:15:10); 3: xloroform-metanol (90:10).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "4: etilasetat-metanol-ammiak 25% (85:10:5); 5: aseton; 6: metanol; 7: metanol-n-butanol (60:40).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "47-48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "8: xloroform-etanol (90:10); 9: xloroform-siklogeksan-sirka kislota (40:40:20); 10: xloroform-metanol-propion kislota (72:18:10).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega o‘nta sistema tavsiya etiladi? (nazorat uchun bir nechta sistemada Rf mosligi). Doskada: sistemalar raqami va tarkibi. Tipik xato: sistema raqamini Rf jadvalidagi ustun raqami bilan adashtirish."
-    },
-    {
-      "title": "Fentanil: Rf qiymatlari (1-5-sistemalar)",
-      "bullets": [
-        {
-          "text": "Fentanilning Rf qiymatlari kitob jadvalida o‘n sistema uchun berilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "5-sistema (aseton): Rf=0,58; 6-10-sistemalar: 0,70; 0,77; 0,59; 0,08; 0,84.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Fentanil: Rf (1-5-sistema)",
-        "nodes": [],
-        "header": [
-          "Sistema",
-          "Rf"
-        ],
-        "rows": [
-          [
-            "1: metanol-ammiak 25%",
-            "0,70"
-          ],
-          [
-            "2: siklogeksan-toluol-dietilamin",
-            "0,43"
-          ],
-          [
-            "3: xloroform-metanol",
-            "0,74"
-          ],
-          [
-            "4: etilasetat-metanol-ammiak",
-            "0,78"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: Rf qiymatlari ketma-ketligini qanday tekshirasiz? Doskada: Rf ni sistema bilan juftlab yozing; 5-sistema (aseton): 0,58. Kitobda: jadval qatori sahifada ikkiga bo‘linib chiqqan («0, 0,4 …» / «70 3»); qiymatlar tiklandi: 1 — 0,70; 2 — 0,43; 3 — 0,74; 4 — 0,78; 5 — 0,58; 6-10 — 0,70; 0,77; 0,59; 0,08; 0,84 (Clarke TLC tizimlari TA, TB, TC, TE, TL bilan mos)."
-    },
-    {
-      "title": "Fentanil: YuSSX va GSX sharoitlari",
-      "bullets": [
-        {
-          "text": "YuSSX: silikagel sferosorb S5W kolonka (125 x 4,9 mm, 5 mkm), harorat 40°C; mobil faza — ammoniy perxlorat (0,01 M) saqlagan metanol; UB-diod detektor.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuSSX da fentanilning ushlanish vaqti 0,8 daqiqa.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "GSX: 3% SE-30 xromosorb G-HP, shisha kolonka 2 m x 2 mm; azot 45 ml/daq; harorat 100°C dan 300°C gacha; ushlanish indeksi RI 2720.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ushlanish indeksi identifikatsiyada nima beradi? Doskada: YuSSX 0,8 daq; RI 2720. Tipik xato: sharoit o‘zgarganda ushlanish vaqtini ko‘chirib qo‘llash."
-    },
-    {
-      "title": "Fentanil: UB, IQ va mass-spektr",
-      "bullets": [
-        {
-          "text": "UB: 0,1 M xlorid kislotadagi eritma 251, 257 va 263 nm da maksimal nur yutadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "IQ (KBr plastinka): 1660, 701, 1493, 1263, 1273, 1236 sm-1 sohalarida yutilish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mass-spektr: 245, 146, 42, 189, 44, 105, 29, 43 m/z cho‘qqilari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdori GSX, YuSSX usullarida aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: asosiy ion (245 m/z) qanday fragmentga mos? (kitobda izohlanmagan). Doskada: UB/IQ/MS. Eslatma: kitobdagi ε=13 qiymati aslida A(1%,1 sm) bo‘lishi mumkin (malaka_errors E2) — kiritilmadi."
-    },
-    {
-      "title": "Siklodol: xossalari va ahamiyati",
-      "bullets": [
-        {
-          "text": "Siklodol — piperidin hosilasiga oid dori vositasi; suvda yomon, spirtda kam eriydigan oq kristall kukun.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xolinolitik ta’sirli; Parkinson xastaligini davolashda va etaperazin bilan xronik alkogolizmni davolashda qo‘llanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "48-49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metabolitlar holida peshob orqali asosan, sof holda qisman chiqariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Oxirgi yillarda kayf beruvchi, mast qiluvchi va gallyusinogen xossalari tufayli toksikomanik vosita sifatida qo‘llana boshlagan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega xolinolitik dori toksikomaniya ob’ektiga aylangan? Doskada: siklodol xossalari. Eslatma: siklodol kitobda 1.4-bo‘limda keltirilgan, lekin opioid emas (xolinolitik); syllabus mavzusida nomi yo‘q."
-    },
-    {
-      "title": "Siklodol: zaharlanish va qaramlik",
-      "bullets": [
-        {
-          "text": "O‘tkir zaharlanish 4 bosqichda o‘tadi: eyforiya, es-hushning yo‘qolishi, gallyusinatsiyalar va undan chiqish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Birinchi bosqich terapevtik dozani 2-3 barobar oshirib (4-8 tabletka) qabul qilinganda rivojlanadi; 1-1,5 oyda o‘rganib qolinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bir sutkada 30-40 tabletkagacha qabul qilinishi mumkin; davolanmasa og‘riqli xumorlik 7-12 kungacha cho‘ziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ko‘pincha nasha, barbituratlar, alkogol bilan tanishgandan so‘ng qabul qilinadi; dozalar ortganda psixozlar bo‘lishi mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 4 bosqichning qaysilari giyohvandlar uchun maqsadli? (1-eyforiya va 3-gallyusinatsiya). Doskada: bosqichlar zanjiri. Tipik xato: terapevtik doza bilan zaharlanish dozasini aralashtirish."
-    },
-    {
-      "title": "Siklodolni qon va peshobdan ajratish",
-      "bullets": [
-        {
-          "text": "Qon: 10 ml qonga 30 ml 0,02 n H2SO4, 20% H2SO4 bilan pH=2 gacha; 2 soat aralashtirib, sentrifugalanadi; 0,02 n H2SO4 bilan 100 ml ga yetkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "50 ml aralashma NaOH bilan pH=7,5 gacha keltirilib, xloroform bilan 3 qayta (10 ml dan) ekstraksiyalanadi; ajralish 41-43%.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Peshob: 50 ml peshob 20% H2SO4 bilan pH=2 gacha nordonlashtirilib, 2 soat aralashtiriladi; keyin xuddi shunday ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "49-50"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 41-43% ajralish nima bildiradi? Doskada: qon va peshob usullarini yonma-yon. Tipik xato: ikkinchi 50 ml qismini miqdoriy tahlil uchun saqlashni unutish."
-    },
-    {
-      "title": "Siklodolni aniqlash: reaksiyalar va YuQX",
-      "bullets": [
-        {
-          "text": "p-dimetilaminobenzaldegid bilan qizil-pushti; Marki reaktivi bilan och qo‘ng‘ir-binafsha; Mandelin reaktivi bilan och qo‘ng‘ir-yashil rang.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "50"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Umumiy cho‘ktiruvchi reaktivlar bilan turli rangdagi va agregat holatdagi cho‘kmalar hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "50"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: «Sorbfil» yoki «Silufol», sistema dietilamin-dioksan (1:490); Mune bo‘yicha Dragendorf bilan qizil-qo‘ng‘ir dog‘, Rf=0,50-0,52.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "50"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: p-dimetilaminobenzaldegid reaksiyasi nima uchun xususiy? Doskada: ranglar ro‘yxati. Eslatma: kitobda Mandelin reaktivi tarkibi «ammoniy volframat» deb yozilgan — bu kitobdagi xato (Mandelin reaktivi ammoniy vanadat eritmasi, toks p.107); tarkib slaydga kiritilmadi."
-    },
-    {
-      "title": "Siklodol: spektrlar va miqdori",
-      "bullets": [
-        {
-          "text": "UB: 0,1 M xlorid kislotadagi eritma 252, 258 va 264 nm da maksimal nur yutadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "50"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "IQ (KBr plastinka): 702, 756, 973, 1206, 1196, 935 sm-1; mass-spektr: 98, 105, 55, 41, 99, 77, 218, 84 m/z.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "50"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdori UB-spektrofotometriya, GSX yoki YuSSX (aniqlash chegarasi 2 mkg) va bromtimol ko‘ki bilan ekstraksion-fotokolorimetrik usulda aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "50"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ion assotsiati usuli nimaga asoslangan? (kitobda: bromtimol ko‘ki bilan assotsiat). Doskada: miqdoriy usullar ro‘yxati. Tipik xato: aniqlash chegarasini (2 mkg) boshqa usullarga qo‘llash."
-    },
-    {
-      "title": "Petidin: xossalari va farmakokinetikasi",
-      "bullets": [
-        {
-          "text": "Petidin (meperidin, demerol) birinchi marta 1932 yilda sintez qilingan; morfinga o‘xshash, lekin 8 marta kuchsiz, kam o‘rganib qolish xususiyatiga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "51"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Petidin asosi — ishqoriy xossali moysimon suyuqlik; gidroxlorid oq kristall kukun, qaynash harorati 186-190°C, suvda, xloroform va etanolda yaxshi eriydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "51"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Terapevtik doza 0,2-0,8 mkg/ml, letal doza 1 g; yarim chiqish davri 2-5 soat.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "51"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ichga qabul qilinganda 15 daqiqadan so‘ng ta’sir qiladi, qondagi konsentratsiya 1-2 soatda maksimal bo‘ladi, ta’sir 1,5-3 soat davom etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "51"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nafas markazi falaji uchun qaysi metabolit javobgar? (normeperidin). Doskada: 8 marta kuchsiz; T1/2 2-5 soat. Tipik xato: kitobdagi «0,2-0,8 mkg/ml» terapevtik oraliqni 0,2-0,8 mg/l deb boshqacha yozish."
-    },
-    {
-      "title": "Petidin: ta’siri va o‘lim holatlari",
-      "bullets": [
-        {
-          "text": "Ba’zan markaziy asab tizimini qo‘zg‘atib, titroq, muskullarning tortishishi va tutqanoq tutishini chaqiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "51"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nafas markazining falajlanishiga asosiy metaboliti normeperidin sabab bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "51"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Meperidin / normeperidin, mg/l",
-        "nodes": [],
-        "header": [
-          "Ob’ekt",
-          "Og‘iz orqali",
-          "Vena ichiga"
-        ],
-        "rows": [
-          [
-            "Qon",
-            "12 / 19",
-            "4,3 / 2,5"
-          ],
-          [
-            "Peshob",
-            "150 / 50",
-            "15 / 49"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: og‘iz orqali va vena ichiga kiritilgandagi nisbat nimani bildiradi? Doskada: 10-jadval qiymatlari (qon: 12(8-20)/19(8-30) va 4,3(1-8)/2,5(0-7); peshob: 150/50 va 15(2-24)/49(0,1-79)). Jigar qiymatlari kitobda 31(31-66) deb yozilgan — oraliq o‘rtachaga teng, shuning uchun noaniq; slaydga kiritilmadi."
-    },
-    {
-      "title": "Petidinni ajratib olish",
-      "bullets": [
-        {
-          "text": "1 ml qon zardobiga 0,1 ml 1 M NaOH va 5 ml geksan qo‘shilib, 1 daqiqa aralashtiriladi va sentrifugalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "52"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sentrifugatga 4 ml erituvchi va 0,08 ml 1 mmol fosfat kislota qo‘shilib, YuSSX da tahlil qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "52"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuSSX elyuenti: asetonitril-fosfat buferi (pH=7)-metanol (55:25:20).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "52"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Biologik ob’ektdan nordonlashtirilgan suv yoki spirt bilan ajratiladi; suvli ajratmadan ishqoriy muhitda (pH=9-10) ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "52"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: geksan bilan to‘g‘ridan-to‘g‘ri ekstraksiyaning sababi nima? Doskada: zardob -> NaOH + geksan -> sentrifuga -> YuSSX. Tipik xato: 0,1 ml ishqor va 0,08 ml kislota hajmlarini aralashtirish."
-    },
-    {
-      "title": "Petidinni aniqlash reaksiyalari",
-      "bullets": [
-        {
-          "text": "Alkaloidlarning umumiy cho‘ktiruvchi reaktivlari bilan turli rangdagi va agregat holatdagi cho‘kmalar hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "52"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Marki reaktivi (formaldegidli H2SO4) bilan zarg‘aldoq rang; sezgirligi 7 mkg petidin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "52"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: «Sorbfil» yoki «Silufol»; sistemalar — metanol-ammiak 25% (100:1,5) va geksan:aseton:ammiak 25% (2:2:0,2).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "52"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dragendorf bilan sarg‘ish, kaliy yodplatinat bilan qo‘ng‘ir dog‘; standart namuna dog‘i bilan solishtiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "52"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki aniqlovchi reagent natijalari nimani ko‘rsatadi? Doskada: Dragendorf (sarg‘ish) va yodplatinat (qo‘ng‘ir). Tipik xato: promedolning Marki rangi (to‘q qizil) bilan petidinniki (zarg‘aldoq) ni aralashtirish."
-    },
-    {
-      "title": "Petidin: UB va YuSSX bilan miqdoriy aniqlash",
-      "bullets": [
-        {
-          "text": "UB: 0,1 M xlorid kislotadagi eritma 204, 207 va 213 nm da maksimal nur yutadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "53"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuSSX: kolonka Supercosil LC-PCN (5 mkm); elyuent — asetonitril-fosfat kislota buferi (pH=7)-metanol (55:25:20); detektor UB 204 nm.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "53"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aniqlash chegarasi 2 ng/ml; miqdori UB-spektrofotometrik, GSX yoki YuSSX usullarida aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "53"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usul eng sezgir? Doskada: 204/207/213 nm; 2 ng/ml. Eslatma: kitobda petidin uchun IQ-spektr satrida promedolning raqamlari takrorlangan (p.53) — slaydga kiritilmadi."
-    },
-    {
-      "title": "Tramadol: xossalari va farmakokinetikasi",
-      "bullets": [
-        {
-          "text": "Tramadol (gidroxlorid) — markaziy ta’sirli sintetik analgetik, (+) va (-) izomerlarning ratsemik aralashmasi.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "kirish"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Vena ichiga yuborilganda analgeziya tez rivojlanadi va 3-5 soat davom etadi; morfindan kuchsiz, terapevtik dozalarda nafasni deyarli susaytirmaydi.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "kirish"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uzoq qo‘llanilganda dorilarga qaramlik mumkin.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "kirish"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "3 kun ichida dozaning taxminan 90% siydik bilan chiqadi, shundan taxminan 30% o‘zgarmagan holda; metabolitlar konyugatlar holida.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "kirish"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega tramadol nafasni kam susaytirishi qaramlik xavfini yo‘qotmaydi? Doskada: 3-5 soat; 90% / 30%. Eslatma: bu slayd gmt kitobida tramadol bo‘lmagani uchun malaka materiali №001 (Zalesova, Kataev, Kurdina) asosida tuzildi; kitob emas, TSX bo‘yicha rus tilidagi maqola."
-    },
-    {
-      "title": "Tramadolni siydikdan ajratish va TSX",
-      "bullets": [
-        {
-          "text": "Siydikdan xloroform bilan pH=11,5 da ikki marta teng hajmlarda ekstraksiyalanadi; ekstrakt suvsiz natriy sulfatda quritilib, bug‘latiladi.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "usullar"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sorbfil «PTSX-P-A-UF» va KSK silikagel plastinkalarida to‘rt sistemada tahlil: I — toluol-aseton-etanol-ammiak (45:45:7,5:2,5); II — etilasetat-metanol-ammiak (34:4:2).",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "usullar"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "III — xloroform-etilasetat-ammiak (60:40:1); IV — etilasetat-geksan-ammiak (50:15:2); eng yaxshi ajralish IV sistemada.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "usullar"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega tramadol uchun IV sistema tavsiya etiladi? (balast moddalar va kombinatsiyalangan preparatlardan eng yaxshi ajralish). Doskada: to‘rt sistema. Tipik xato: sistema nisbatlarini (45:45:7,5:2,5 va boshqalar) o‘zgartirib yozish."
-    },
-    {
-      "title": "Tramadol: ochuvchi reaktivlar",
-      "bullets": [
-        {
-          "text": "Tramadolning ochilishi uchun ninhidrinning konsentrlangan sulfat kislotadagi 1% eritmasi tasdiqlovchi reaksiya sifatida taklif etilgan: pushti-gilos rang, suv bilan yuvilgach barqaror zarg‘aldoq rangga o‘tadi.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "natijalar"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "54 ta toksikologik ahamiyatli dori ichidan 15 tasi pushti-gilos rang berdi, ammo suv bilan yuvilgach barqaror zarg‘aldoq rang faqat tramadol va nubain uchun kuzatildi.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "natijalar"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tramadol faol metabolitlanadi: IV sistema (Sorbfil)da metabolitlarga mos qo‘shimcha uch zona, Rf x100: 12, 17, 29.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "natijalar"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ninhidrin reaksiyasi qanday tanlovchanlik beradi? Doskada: pushti-gilos -> suv -> zarg‘aldoq. Tipik xato: 15 ta moddaning pushti-gilos rangini tramadolga xos deb hisoblash — faqat zarg‘aldoq barqaror rang tramadol va nubainga xos."
-    },
-    {
-      "title": "Tramadol: reaktivlar, rang va sezgirlik",
-      "bullets": [
-        {
-          "text": "Dragendorf (Moldaver modifikatsiyasi), CuSO4 + KI, Marki reaktivlari umumiy skrininda qo‘llanadi.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "usullar"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Marki va Frede reaktivlari opiy guruhiga tekshirishda ham qo‘llanadi.",
-          "source": {
-            "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-            "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-            "page": "usullar"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Tramadolni ochish (maqola jadvali)",
-        "nodes": [],
-        "header": [
-          "Reaktiv",
-          "Rang",
-          "Minimum, mkg"
-        ],
-        "rows": [
-          [
-            "Dragendorf (Moldaver)",
-            "zarg‘aldoq",
-            "1,0"
-          ],
-          [
-            "0,03 M CuSO4, so‘ng KI",
-            "qo‘ng‘ir",
-            "0,5"
-          ],
-          [
-            "Marki reaktivi",
-            "sariq-qo‘ng‘ir",
-            "3,0 / 5,0"
-          ],
-          [
-            "Frede reaktivi",
-            "ko‘k",
-            "1,0"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: eng sezgir reaktiv qaysi (CuSO4 + KI: 0,5 mkg)? Doskada: jadvalni to‘ldiring. Minimum: Sorbfil / KSK (Marki uchun 3,0 va 5,0 mkg). Maqola jadvalida Rf va reaktiv bir qatorda berilgan, sistema-Rf juftligi aniq emas — Rf qiymatlari slaydga kiritilmadi."
-    },
-    {
-      "title": "Xulosa va nazorat savollari",
-      "bullets": [
-        {
-          "text": "Promedol, metadon, fentanil va petidin — sintetik opioidlar; ular nordonlashtirilgan suv/spirt usulida ajratilib, ishqoriy yoki neytral muhitdan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41-52"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Marki reaktivi: promedol to‘q qizil, petidin va fentanil zarg‘aldoq; metadon pushti-qizil; YuQX, UB, IQ, mass-spektr va GX-MS tasdiqlaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "41-52"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nazorat savollari: promedol va shu guruh moddalarining narkologik ahamiyati; fenilpiperidin hosilalarini ajratish; promedol, metadon, siklodol, petidinni aniqlash usullari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "53"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: noma’lum opioidni qanday ketma-ketlikda tekshirasiz? Doskada: umumiy sxema: ajratish -> rangli reaksiyalar -> YuQX -> UB/IQ -> GX-MS. Tipik xato: faqat rangli reaksiyaga tayanish."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Promedol qaysi kimyoviy guruhga kiradi?",
-      "options": [
-        "Piperidin hosilasi",
-        "Indol hosilasi",
-        "Purin hosilasi",
-        "Fenotiazin hosilasi"
-      ],
-      "correct_index": 0,
-      "explanation": "Promedol kimyoviy tuzilishi bo‘yicha piperidin hosilasini saqlaydi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "40"
-      }
-    },
-    {
-      "question": "Promedol Marki reaktivi bilan qanday rang hosil qiladi?",
-      "options": [
-        "To‘q qizil",
-        "Zarg‘aldoq",
-        "Yashil",
-        "Sariq"
-      ],
-      "correct_index": 0,
-      "explanation": "Formaldegid saqlagan sulfat kislota bilan promedol to‘q qizil rang hosil qiladi (sezgirlik 10 mkg).",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "41"
-      }
-    },
-    {
-      "question": "Promedol suvli ajratmadan qaysi pH da xloroform bilan maksimal ekstraksiyalanadi?",
-      "options": [
-        "pH=6,9-8,5",
-        "pH=2",
-        "pH=13",
-        "pH=11,5"
-      ],
-      "correct_index": 0,
-      "explanation": "Suvli ajratmalardan xloroform bilan pH=6,9-8,5 sharoitida maksimal ekstraksiyalanadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "41"
-      }
-    },
-    {
-      "question": "Metadonning bir martalik yuqori dozasi qancha?",
-      "options": [
-        "10 mg",
-        "30 mg",
-        "40 mg",
-        "100 mg"
-      ],
-      "correct_index": 0,
-      "explanation": "Og‘riqni qoldiruvchi yuqori bir martalik doza 10 mg, sutkalik doza 30 mg.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "42"
-      }
-    },
-    {
-      "question": "Metadonning Mandelin reaktivi bilan YuQX dog‘i qanday rangga o‘tadi?",
-      "options": [
-        "Yashildan ko‘k rangga",
-        "Qizildan sariq rangga",
-        "Binafshadan qora rangga",
-        "Rang bermaydi"
-      ],
-      "correct_index": 0,
-      "explanation": "Metadon dog‘i Mandelin reaktivi bilan yashildan ko‘k rangga o‘tadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "44"
-      }
-    },
-    {
-      "question": "Fentanil morfinga nisbatan necha marta faol?",
-      "options": [
-        "100 marta",
-        "10 marta",
-        "30 marta",
-        "5 marta"
-      ],
-      "correct_index": 0,
-      "explanation": "Fentanil morfinga nisbatan 100 marotaba, geroindan 10 marta faol.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "45"
-      }
-    },
-    {
-      "question": "Fentanil metabolizmida qaysi guruh gidrolizlanadi?",
-      "options": [
-        "Amid guruhi",
-        "Efir guruhi",
-        "Nitro guruhi",
-        "Fenol gidroksili"
-      ],
-      "correct_index": 0,
-      "explanation": "Metabolizm jarayonida amid guruhining gidrolizi yuz beradi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "46"
-      }
-    },
-    {
-      "question": "Fentanil Marki reaktivi bilan qanday mahsulot hosil qiladi?",
-      "options": [
-        "Zarg‘aldoq rangli",
-        "Qizil-binafsha",
-        "Ko‘k",
-        "Yashil"
-      ],
-      "correct_index": 0,
-      "explanation": "Marki reaktivi bilan zarg‘aldoq rangli mahsulot hosil bo‘ladi; limon kislotasi reaksiyasida qizil-binafsha.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "47"
-      }
-    },
-    {
-      "question": "Petidinning asosiy metaboliti nafas markazi falajiga sabab bo‘ladi. U qaysi?",
-      "options": [
-        "Normeperidin",
-        "Normorfin",
-        "Norkodein",
-        "Normetadon"
-      ],
-      "correct_index": 0,
-      "explanation": "Nafas markazining falajlanishiga petidinning asosiy metaboliti normeperidin sabab bo‘ladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "51"
-      }
-    },
-    {
-      "question": "Tramadol uchun ninhidrin–H2SO4 reaksiyasida suv bilan yuvilgach qanday rang qoladi?",
-      "options": [
-        "Barqaror zarg‘aldoq",
-        "Ko‘k",
-        "Yashil",
-        "Rangsiz"
-      ],
-      "correct_index": 0,
-      "explanation": "Pushti-gilos rang suv bilan yuvilgach barqaror zarg‘aldoq rangga o‘tadi.",
-      "source": {
-        "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-        "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-        "page": "natijalar"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Fentanil morfinga nisbatan 100 marta, geroindan 10 marta faol; samarali doza (70 kg uchun) 0,1 mg.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "45"
-      }
-    },
-    {
-      "text": "Metadonning bir martalik yuqori dozasi 10 mg, sutkalik dozasi 30 mg; ta’sir vaqti 24 soatgacha.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "42"
-      }
-    },
-    {
-      "text": "Promedol 1948 yilda, petidin 1932 yilda sintez qilingan; metadon AQShga 1947 yilda kirib kelgan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "40-51"
-      }
-    },
-    {
-      "text": "Tramadol bo‘yicha 54 dori ichidan faqat tramadol va nubain ninhidrin–H2SO4 reaksiyasidan keyin barqaror zarg‘aldoq rang bergan.",
-      "source": {
-        "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
-        "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-        "page": "natijalar"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Bo‘lim 1.4: opioidlar — promedol, metadon, fentanil, petidin; ularni turli ob’ektlardan ajratib olish va tahlil usullari.",
+     "source": {
       "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
       "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-      "year": null,
-      "pages": "b. 40-53"
+      "page": "40"
+     },
+     "uncertain": false
     },
     {
+     "text": "Tayanch iboralar: opioid, trimeperidin, metadon, fentanil, petidin (meperidin), siklodol, Marki reaktivi, YuQX, YuSSX, GX-MS.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "40-53"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reja: promedol -> metadon -> fentanil -> siklodol -> petidin -> tramadol (malaka materiali bo‘yicha).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "40-53"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: opiat va opioid atamalarining farqi nimada? Doskada: reja 6 qadamda. Eslatma: tramadol gmt kitobining 39-53-betlarida yo‘q; u malaka materiali №001 asosida berildi. Siklodol kitobda shu bo‘limda keltirilgan."
+  },
+  {
+   "title": "Promedol: tuzilishi va xossalari",
+   "bullets": [
+    {
+     "text": "Promedol (trimeperidin) — 1,2,5-trimetil-4-propioniloksi-4-fenilpiperidin gidroxlorid; kimyoviy tuzilishi bo‘yicha piperidin hosilasi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Oq kristall kukun, mazasi achchiq, deyarli hidsiz; suyuqlanish harorati 107-108°C; 1948 yilda sintez qilingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gidroxlorid tuzi suvda yaxshi eriydi; etil spirti va xloroformda qisman eriydi; dietil efirida erimaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "40"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Suyuqlanish harorati",
+      "value": "107-108",
+      "unit": "°C"
+     },
+     {
+      "label": "Sintez yili",
+      "value": "1948"
+     },
+     {
+      "label": "Guruhi",
+      "value": "piperidin hosilasi"
+     },
+     {
+      "label": "Efirda",
+      "value": "erimaydi"
+     }
+    ],
+    "caption": "Promedol"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: piperidin halqasi molekulada qayerda joylashgan? Doskada: promedol formulasi. Tipik xato: promedolni morfin hosilasi deb hisoblash — u piperidin hosilasi."
+  },
+  {
+   "title": "Promedol: narkologik ahamiyati va qo‘llanilishi",
+   "bullets": [
+    {
+     "text": "Morfinning og‘riq qoldirish xususiyati zaharlanish va morfinizmga sabab bo‘lgani uchun giyohvandsiz analgetik izlangan: 100 dan ortiq birikma sintezlandi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "40-41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ulardan faqat promedol, izopromedol, lidol, fenadon tibbiyotda tavsiya etildi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Promedol shokka qarshi birlamchi vosita; og‘riqni qoldirishda morfinga juda yaqin, lekin zaharliligi morfindan kuchliroq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jarrohlikdan oldin va keyin, tug‘ruqxonalarda og‘riqsizlantirishda ishlatiladi; tez-tez iste’mol qilinsa morfin kabi o‘rganib qolish mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Promedol",
+    "children": [
+     {
+      "label": "Qidiruv",
+      "items": [
+       "Morfin o‘rnini bosuvchi analgetik",
+       "100 dan ortiq birikma"
+      ]
+     },
+     {
+      "label": "Tibbiyotda qolgan",
+      "items": [
+       "Promedol, izopromedol",
+       "Lidol, fenadon"
+      ]
+     },
+     {
+      "label": "Ahamiyati",
+      "items": [
+       "Shokka qarshi birlamchi vosita",
+       "O‘rganib qolish mumkin"
+      ]
+     }
+    ],
+    "caption": "Promedol"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega «giyohvand bo‘lmagan analgetik» izlash natija bermadi? Doskada: 100 dan ortiq birikma -> 4 tasi tavsiya. Tipik xato: promedolni qaramlik chaqirmaydigan dori deb hisoblash."
+  },
+  {
+   "title": "Promedol: zaharlanish va ajratish",
+   "bullets": [
+    {
+     "text": "Zaharlanishda ko‘ngil aynishi, bosh aylanishi, darmonsizlanish, mastlik; teri ostiga yuborilganda ta’sir 10-20 daqiqadan so‘ng seziladi va 3-4 soat davom etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kimyo-toksikologik tahlil faqat maxsus ko‘rsatma bo‘lganda o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Biologik ob’ektdan nordonlashtirilgan spirt yoki suv bilan ajratiladi; suvli ajratmadan xloroform bilan pH=6,9-8,5 da maksimal ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Alomatlar",
+      "text": "Ko‘ngil aynishi, bosh aylanishi, mastlik"
+     },
+     {
+      "title": "2. Ta’sir vaqti",
+      "text": "Teri ostiga: 10-20 daqiqada seziladi"
+     },
+     {
+      "title": "3. Ajratish",
+      "text": "Nordonlashtirilgan spirt yoki suv"
+     },
+     {
+      "title": "4. Ekstraksiya",
+      "text": "Xloroform, pH=6,9-8,5 da maksimal"
+     }
+    ],
+    "caption": "Promedol: ajratish"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekstraksiya pH oralig‘i (6,9-8,5) nimani bildiradi? Doskada: pH 6,9-8,5, xloroform. Tipik xato: promedolni kuchli ishqoriy muhitdan ajratishga urinish."
+  },
+  {
+   "title": "Promedol: aniqlash reaksiyalari",
+   "bullets": [
+    {
+     "text": "Alkaloidlarning umumiy cho‘ktiruvchi reaktivlari bilan turli rangdagi cho‘kmalar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Marki reaktivi (formaldegidli H2SO4) bilan to‘q qizil rang; sezgirligi 10 mkg promedol.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Pikrin kislota bilan uchlamchi azot hisobiga sariq rangli qo‘sh molekulyar birikma — cho‘kma.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: metil spirti va muzlovchi sirka kislota (9:1); Dragendorf reaktivi bilan sarg‘ish dog‘, standart dog‘i bilan solishtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Usul",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "Marki reaktivi",
+      "To‘q qizil; 10 mkg"
+     ],
+     [
+      "Pikrin kislota",
+      "Sariq cho‘kma (uchlamchi azot)"
+     ],
+     [
+      "YuQX (MeOH:AcOH 9:1)",
+      "Dragendorf: sarg‘ish dog‘"
+     ],
+     [
+      "UB (0,1 M HCl)",
+      "251, 257, 263 nm"
+     ]
+    ],
+    "caption": "Promedolni tasdiqlash"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: pikrin kislota reaksiyasi molekulaning qaysi qismiga bog‘liq? (uchlamchi azot). Doskada: reaksiyalar ro‘yxati. Tipik xato: Marki sezgirligini (10 mkg) petidinniki (7 mkg) bilan aralashtirish."
+  },
+  {
+   "title": "Promedol: spektrlar va miqdori",
+   "bullets": [
+    {
+     "text": "UB: 0,1 M xlorid kislotadagi eritma 251, 257 va 263 nm da maksimal nur yutadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdori spektrofotometrik usulda aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdori GSX yoki YuSSX usullarida ham aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "UB max (0,1 M HCl)",
+      "value": "251, 257, 263",
+      "unit": "nm"
+     },
+     {
+      "label": "Miqdori",
+      "value": "spektrofotometriya"
+     },
+     {
+      "label": "Qo‘shimcha usul",
+      "value": "GSX, YuSSX"
+     }
+    ],
+    "caption": "Promedol"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uch maksimum (251, 257, 263 nm) qanday tuzilish belgisi? (fenil halqasi). Doskada: 251/257/263 nm. Eslatma: kitobda promedolning IQ-spektri uchun «186, 42, 201, 56, 57, 187, 202, 71» raqamlari keltirilgan (p.42, petidin uchun p.53 da qaytarilgan) — bular IQ chastotalariga o‘xshamaydi (ehtimol boshqa spektr ionlari), shuning uchun slaydga kiritilmadi."
+  },
+  {
+   "title": "Metadon: tarixi va xossalari",
+   "bullets": [
+    {
+     "text": "Metadon (6-dimetilamino-4,4-difenil-3-geptanon) — sintetik opioid; ikkinchi jahon urushida Germaniyada morfin o‘rnini bosuvchi modda sifatida sintez qilingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "AQShdagi klinikalarga 1947 yilda kirib kelgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metadon asosi kristall modda, suyuqlanish harorati 76-79°C; gidroxloridi oq kristall modda, suyuqlanish harorati 229-231°C.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Asos, suyuqlanish",
+      "value": "76-79",
+      "unit": "°C"
+     },
+     {
+      "label": "Gidroxlorid, suyuqlanish",
+      "value": "229-231",
+      "unit": "°C"
+     },
+     {
+      "label": "AQShga kirishi",
+      "value": "1947"
+     },
+     {
+      "label": "Birinchi sintez",
+      "value": "Germaniya"
+     }
+    ],
+    "caption": "Metadon"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega metadon kristall asos va tuz holida turli haroratga ega? Doskada: 76-79°C (asos), 229-231°C (gidroxlorid). Kitobning boshqa betida bu haroratlar «qaynash harorati» deb atalgan; kristall modda uchun suyuqlanish harorati olindi."
+  },
+  {
+   "title": "Metadon: dozalar va qo‘llanilishi",
+   "bullets": [
+    {
+     "text": "Og‘riqni qoldiruvchi bir martalik yuqori doza 10 mg, sutkalik doza 30 mg.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Morfinning o‘rnini bosuvchi modda sifatida qo‘llanadi; terapiyada narkomanlarga buyuriladi; tabletka (40 mg) va eritma (10 mg/ml) shaklida chiqariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Analgetik ta’siri morfinga nisbatan 5 marta yuqoriroq, zaharliligi kamroq; ta’sir vaqti 24 soatgacha davom etishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tolerantlik oshib boradi, jismoniy qaramlik chaqiradi; metadol, normetadol va asetilmetadol kabi giyohvand ta’sirli metabolitlar hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "42-43"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Bir martalik max doza",
+      "value": "10",
+      "unit": "mg"
+     },
+     {
+      "label": "Sutkalik doza",
+      "value": "30",
+      "unit": "mg"
+     },
+     {
+      "label": "Morfinga nisbatan",
+      "value": "5",
+      "unit": "marta kuchli"
+     },
+     {
+      "label": "Ta’sir vaqti",
+      "value": "24",
+      "unit": "soatgacha"
+     },
+     {
+      "label": "Tabletka",
+      "value": "40",
+      "unit": "mg"
+     }
+    ],
+    "caption": "Metadon dozalari"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metadon narkomaniya davolashda nega ishlatiladi, lekin o‘zi qaramlik chaqiradi? Doskada: 10 mg / 30 mg; 24 soat; 5 marta. Tipik xato: bir martalik va sutkalik dozalarni aralashtirish."
+  },
+  {
+   "title": "6-jadval: metadon guruhi moddalari",
+   "bullets": [
+    {
+     "text": "Metadon guruhiga kiruvchi 16 ta moddadan 15 tasi I ro‘yxatda, dekstropropoksifen II ro‘yxatda.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "43"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "I ro‘yxatda: metadol, asetilmetadol, dipipanon, izometadon, normetadon, norpipanon, fenadon va b.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "43"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Metadon guruhi (6-jadval)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Ro‘yxat"
+    ],
+    "rows": [
+     [
+      "Metadon",
+      "I"
+     ],
+     [
+      "Fenadon",
+      "I"
+     ],
+     [
+      "Dipipanon",
+      "I"
+     ],
+     [
+      "Dekstropropoksifen",
+      "II"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ro‘yxat raqami moddaning huquqiy holatini qanday belgilaydi? Doskada: jadvalni to‘ldiring. Tipik xato: dekstropropoksifenni I ro‘yxatga kiritish — kitobda II ro‘yxatda."
+  },
+  {
+   "title": "7-jadval: o‘limli zaharlanishlarda metadon",
+   "bullets": [
+    {
+     "text": "O‘lim bilan tugagan zaharlanishlarda ichki a’zolarda metadon miqdori (mg/l yoki mg/kg).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "43"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Buyraklarda o‘rtacha 2,9 (1,1-6,0); manba — Baselt R.C., Cravey R.H. (1995), n=1.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "43"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Metadon, mg/l yoki mg/kg",
+    "nodes": [],
+    "header": [
+     "Ob’ekt",
+     "O‘rtacha"
+    ],
+    "rows": [
+     [
+      "Qon",
+      "1,0 (0,4-1,8)"
+     ],
+     [
+      "Bosh miya",
+      "1,0 (0,5-1,4)"
+     ],
+     [
+      "Jigar",
+      "3,8 (1,8-7,5)"
+     ],
+     [
+      "O‘t pufagi",
+      "7,5 (2,9-18,0)"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega o‘t pufagida konsentratsiya eng yuqori? Doskada: jadvalni to‘ldiring. Eslatma: jadval n=1 (bitta kuzatish) asosida; bu qiymatlar qat’iy toksik chegara emas, talqinda ehtiyotkor bo‘ling."
+  },
+  {
+   "title": "Metadon: dastlabki va rangli reaksiyalar",
+   "bullets": [
+    {
+     "text": "Kukunga konsentrlangan sulfat va nitrat kislotalar aralashmasi (1:1) tomizilsa, zarg‘aldoq rang kuzatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "43-44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kukunga kobalt rodanidning 2% suvli eritmasidan tomizilsa, ko‘k rang hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "44"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Metadon: rangli reaksiyalar",
+    "nodes": [],
+    "header": [
+     "Reaktiv",
+     "Rang"
+    ],
+    "rows": [
+     [
+      "Liberman reaktivi",
+      "zarg‘aldoq"
+     ],
+     [
+      "Mandelin reaktivi",
+      "yashil, so‘ngra moviy"
+     ],
+     [
+      "Marki reaktivi",
+      "pushti-qizil, so‘ng fluoressent qizil"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: dastlabki sinov bilan rangli reaksiyalar qanday farq qiladi? Doskada: jadvalni to‘ldiring. Tipik xato: kobalt rodanid bilan hosil bo‘lgan ko‘k rangni aniqlovchi emas, dastlabki sinov deb bilmaslik."
+  },
+  {
+   "title": "Metadon: ajratish va YuQX",
+   "bullets": [
+    {
+     "text": "Namunalardan nordonlashtirilgan spirt yoki suv usulida ajratiladi; suvli ajratmadan ishqoriy muhitda (pH=9-10) organik erituvchilar bilan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metadonning 16 ta namoyondasi bor, ular giyohvandlarning qora bozorida uchraydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: «Sorbfil» yoki «Silufol»; sistemalar: siklogeksan-toluol-dietilamin (10:10:1), geksan-aseton-ammiak 25% (2:2:0,2), benzol-etanol-dietilamin (9:1:1).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dog‘i Mandelin reaktivi bilan yashildan ko‘k rangga o‘tadi; benzol-etanol-dietilamin (9:1:1) sistemasida Rf=0,80.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "44"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Ajratish",
+      "text": "Nordonlashtirilgan spirt yoki suv usuli"
+     },
+     {
+      "title": "2. Ekstraksiya",
+      "text": "Ishqoriy muhit, pH=9-10, organik erituvchi"
+     },
+     {
+      "title": "3. YuQX",
+      "text": "Sorbfil yoki Silufol; benzol-etanol-dietilamin (9:1:1)"
+     },
+     {
+      "title": "4. Aniqlash",
+      "text": "Mandelin: yashildan ko‘kka; Rf=0,80"
+     }
+    ],
+    "caption": "Metadon: ajratish va YuQX"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: dietilamin sistemaga nima uchun qo‘shiladi? (kitobda sabab ko‘rsatilmagan). Doskada: uch sistema. Tipik xato: Rf=0,80 qiymatini boshqa sistemaga qo‘llash."
+  },
+  {
+   "title": "Metadon: UB, IQ va analoglar",
+   "bullets": [
+    {
+     "text": "UB: metadonning sulfat kislotadagi eritmasi 253, 259, 264 va 292 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "IQ (KBr plastinka): 710, 1709, 769, 1107, 943, 1133 sm-1 sohalarida yutilish.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "8-jadval: 0,1 M HCl da UB, nm",
+    "nodes": [],
+    "header": [
+     "Birikma",
+     "Maksimum",
+     "Marki"
+    ],
+    "rows": [
+     [
+      "Metadon",
+      "253,259,264,292",
+      "-"
+     ],
+     [
+      "Normetadon",
+      "253,259,265,292",
+      "-"
+     ],
+     [
+      "Dekstropropoksifen",
+      "252,257,263",
+      "qora-binafsha-yashil"
+     ],
+     [
+      "Dipipanon",
+      "259,265,293",
+      "-"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: metadon va normetadon spektrlari deyarli bir xil bo‘lsa, ularni qanday ajratamiz? Doskada: jadvalni to‘ldiring (norpipanon: 260, 294 nm). Tipik xato: kitobdagi A11 belgisi noaniq yozilgan — slaydga kiritilmadi."
+  },
+  {
+   "title": "Fentanil: paydo bo‘lishi va faolligi",
+   "bullets": [
+    {
+     "text": "1991 yilda AQSh qora bozorida geroin o‘rniga yuqori faol sintetik og‘riq qoldiruvchi fentanil paydo bo‘ldi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Morfinga nisbatan 100 marta, geroindan 10 marta faol; nafas olishga nojo‘ya ta’siri kuchliroq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Vazni 70 kg odam uchun samarali doza 0,1 mg; ta’siri 30 daqiqadan oshmaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "100 dan ortiq namoyondasi bor, ulardan 12 tasi qora bozorda uchraydi; 3-metilfentanil fentanildan 30 marta faolroq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Faolligi",
+      "items": [
+       "Morfinga nisbatan 100 marta",
+       "Geroindan 10 marta"
+      ]
+     },
+     {
+      "title": "Namoyondalar",
+      "items": [
+       "100 dan ortiq",
+       "12 tasi qora bozorda",
+       "3-metilfentanil: 30 marta faolroq"
+      ]
+     },
+     {
+      "title": "Doza va vaqt",
+      "items": [
+       "Samarali doza 0,1 mg (70 kg)",
+       "Ta’sir 30 daqiqadan oshmaydi"
+      ]
+     }
+    ],
+    "caption": "Fentanil faolligi"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kichik doza (0,1 mg) ekspertiza uchun muammo? Doskada: 100x morfin; 10x geroin; 0,1 mg. Tipik xato: faollik ko‘rsatkichlarini (100, 10, 30 marta) aralashtirish."
+  },
+  {
+   "title": "Fentanil: klinik qo‘llanilishi va ta’siri",
+   "bullets": [
+    {
+     "text": "Klinikada qon tomiriga yuboriluvchi anestetik vosita sifatida jarrohlikdan oldin va keyin (kardioxirurgiyada) ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fentanil hosilalari geroinga o‘xshash analgeziya, eyforiya, ko‘z qorachig‘ining torayishi va nafas olishning qiyinlashuvini chaqiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yog‘da yaxshi eruvchanligi tufayli qabul qilingan zahoti miyaga yetib boradi; ta’sir vaqti davomli emas.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Fentanil",
+    "children": [
+     {
+      "label": "Klinikada",
+      "items": [
+       "Venaga: anestetik",
+       "Kardioxirurgiya"
+      ]
+     },
+     {
+      "label": "Ta’sirlari",
+      "items": [
+       "Analgeziya, eyforiya",
+       "Qorachiq torayishi",
+       "Nafas qiyinlashuvi"
+      ]
+     },
+     {
+      "label": "Kinetika",
+      "items": [
+       "Yog‘da yaxshi eriydi",
+       "Tez miyaga yetadi"
+      ]
+     }
+    ],
+    "caption": "Fentanil ta’siri"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: yog‘da eruvchanlik farmakologik ta’sirning boshlanishiga qanday ta’sir qiladi? Doskada: lipofillik -> tez ta’sir. Tipik xato: qisqa ta’sir vaqtini kam xavf deb baholash."
+  },
+  {
+   "title": "Fentanil namoyondalari",
+   "bullets": [
+    {
+     "text": "Namoyondalar ta’siri opiatlarga o‘xshash; namoyon bo‘lishi va davomiyligi bilan farqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fentanil uchun samara yarim soatdan oshadi, alfentanil uchun 5 daqiqa.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "45"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Fentanil namoyondalari",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Xususiyati"
+    ],
+    "rows": [
+     [
+      "Alfentanil",
+      "ultra-qisqa ta’sir, 5-10 daqiqa"
+     ],
+     [
+      "Sufentanil",
+      "fentanildan 5-10 marta faol"
+     ],
+     [
+      "Remifentanil",
+      "eng qisqa ta’sirli dori vositasi"
+     ],
+     [
+      "Karfentanil",
+      "morfindan 10000 marta yuqori"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qisqa ta’sirli namoyondalar anesteziologiyada afzal? Doskada: jadvalni to‘ldiring. Tipik xato: karfentanil faolligini (10000 marta morfinga nisbatan) fentanilga nisbatan deb o‘qish."
+  },
+  {
+   "title": "Fentanil: metabolizmi va ajratish",
+   "bullets": [
+    {
+     "text": "Fentanil lipofil modda: to‘qimalar orqali tez so‘riladi va zudlik bilan tarqaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "46"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metabolizmda amid guruhi gidrolizlanadi, so‘ngra qisman gidroksillanish va glyukuronidlar hosil bo‘lishi orqali chiqariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "46"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Namunalardan nordonlashtirilgan spirt yoki suv usulida ajratiladi; suvli ajratmadan ishqoriy muhitda (pH=7) organik erituvchilar bilan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "47"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Lipofil: tez so‘riladi",
+     "Amid guruhi gidrolizlanadi",
+     "Qisman gidroksillanish",
+     "Glyukuronidlar bilan chiqadi"
+    ],
+    "caption": "Fentanil metabolizmi"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: pH=7 sharoitida ekstraksiya nima uchun yetarli? (kitobda sabab ko‘rsatilmagan). Doskada: gidroliz -> gidroksillanish -> glyukuronid. Tipik xato: pH=7 ni morfin uchun ishlatiladigan pH bilan aralashtirish."
+  },
+  {
+   "title": "Fentanil: rangli reaksiyalar",
+   "bullets": [
+    {
+     "text": "Marki reaktivi: xloroformli eritma buyum oynasida uchirilgach, qoldiqqa 1-2 tomchi qo‘shilsa, zarg‘aldoq rangli mahsulot hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Limon kislotasi reaksiyasi: qoldiqqa limon kislotaning sirka angidriddagi 1% eritmasi, suv hammomida asta qizdirilsa, qizil-binafsha mahsulot.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reaksiyalar uchun suvli ajratmadan organik erituvchi bilan olingan xloroformli ekstrakt ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "47"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "reagents": [
+     "Fentanil (xloroformli qoldiq)",
+     "Marki reaktivi"
+    ],
+    "products": [
+     "Zarg‘aldoq mahsulot"
+    ],
+    "conditions": "Buyum oynasida, erituvchi uchirilgach",
+    "observation": "Limon kislota (sirka angidrid): qizil-binafsha",
+    "caption": "Marki reaksiyasi"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkala reaksiyada qoldiqning qanday tayyorlanishi muhim? Doskada: xloroform uchirish -> reaktiv -> rang. Tipik xato: Marki rangini (zarg‘aldoq) morfin ranglari (binafsha) bilan aralashtirish."
+  },
+  {
+   "title": "Fentanil: YuQX sistemalari",
+   "bullets": [
+    {
+     "text": "Silikagel-G («Merk», Germaniya) plastinkalari; kislotali yodplatinat reaktivi purkalganda dog‘ hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1: metanol-ammiak 25% (100:1,5); 2: siklogeksan-toluol-dietilamin (75:15:10); 3: xloroform-metanol (90:10).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "4: etilasetat-metanol-ammiak 25% (85:10:5); 5: aseton; 6: metanol; 7: metanol-n-butanol (60:40).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "47-48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "8: xloroform-etanol (90:10); 9: xloroform-siklogeksan-sirka kislota (40:40:20); 10: xloroform-metanol-propion kislota (72:18:10).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "№",
+     "Sistema"
+    ],
+    "rows": [
+     [
+      "1",
+      "Metanol-ammiak 25% (100:1,5)"
+     ],
+     [
+      "2",
+      "Siklogeksan-toluol-dietilamin"
+     ],
+     [
+      "3",
+      "Xloroform-metanol (90:10)"
+     ],
+     [
+      "4",
+      "Etilasetat-metanol-ammiak"
+     ]
+    ],
+    "caption": "1-4-sistemalar"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega o‘nta sistema tavsiya etiladi? (nazorat uchun bir nechta sistemada Rf mosligi). Doskada: sistemalar raqami va tarkibi. Tipik xato: sistema raqamini Rf jadvalidagi ustun raqami bilan adashtirish."
+  },
+  {
+   "title": "Fentanil: Rf qiymatlari (1-5-sistemalar)",
+   "bullets": [
+    {
+     "text": "Fentanilning Rf qiymatlari kitob jadvalida o‘n sistema uchun berilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "5-sistema (aseton): Rf=0,58; 6-10-sistemalar: 0,70; 0,77; 0,59; 0,08; 0,84.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Fentanil: Rf (1-5-sistema)",
+    "nodes": [],
+    "header": [
+     "Sistema",
+     "Rf"
+    ],
+    "rows": [
+     [
+      "1: metanol-ammiak 25%",
+      "0,70"
+     ],
+     [
+      "2: siklogeksan-toluol-dietilamin",
+      "0,43"
+     ],
+     [
+      "3: xloroform-metanol",
+      "0,74"
+     ],
+     [
+      "4: etilasetat-metanol-ammiak",
+      "0,78"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: Rf qiymatlari ketma-ketligini qanday tekshirasiz? Doskada: Rf ni sistema bilan juftlab yozing; 5-sistema (aseton): 0,58. Kitobda: jadval qatori sahifada ikkiga bo‘linib chiqqan («0, 0,4 …» / «70 3»); qiymatlar tiklandi: 1 — 0,70; 2 — 0,43; 3 — 0,74; 4 — 0,78; 5 — 0,58; 6-10 — 0,70; 0,77; 0,59; 0,08; 0,84 (Clarke TLC tizimlari TA, TB, TC, TE, TL bilan mos)."
+  },
+  {
+   "title": "Fentanil: Rf qiymatlari (6-10-sistemalar)",
+   "bullets": [
+    {
+     "text": "5-sistema (aseton): Rf=0,58; 6-sistema (metanol): 0,70; 7-sistema (metanol-n-butanol 60:40): 0,77.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "8-sistema (xloroform-etanol 90:10): Rf=0,59; 9-sistema (xloroform-siklogeksan-sirka kislota 40:40:20): 0,08.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "10-sistema (xloroform-metanol-propion kislota 72:18:10): Rf=0,84.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Sistema",
+     "Rf"
+    ],
+    "rows": [
+     [
+      "5: aseton",
+      "0,58"
+     ],
+     [
+      "6: metanol",
+      "0,70"
+     ],
+     [
+      "7: MeOH-n-butanol (60:40)",
+      "0,77"
+     ],
+     [
+      "8: xloroform-etanol (90:10)",
+      "0,59"
+     ],
+     [
+      "9: xlf-siklogeksan-AcOH",
+      "0,08"
+     ],
+     [
+      "10: xlf-MeOH-propion k-ta",
+      "0,84"
+     ]
+    ],
+    "caption": "Fentanil: Rf (5-10)"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa."
+  },
+  {
+   "title": "Fentanil: YuSSX va GSX sharoitlari",
+   "bullets": [
+    {
+     "text": "YuSSX: silikagel sferosorb S5W kolonka (125 x 4,9 mm, 5 mkm), harorat 40°C; mobil faza — ammoniy perxlorat (0,01 M) saqlagan metanol; UB-diod detektor.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuSSX da fentanilning ushlanish vaqti 0,8 daqiqa.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "GSX: 3% SE-30 xromosorb G-HP, shisha kolonka 2 m x 2 mm; azot 45 ml/daq; harorat 100°C dan 300°C gacha; ushlanish indeksi RI 2720.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Kolonka (YuSSX)",
+      "value": "125 x 4,9",
+      "unit": "mm"
+     },
+     {
+      "label": "Harorat",
+      "value": "40",
+      "unit": "°C"
+     },
+     {
+      "label": "Ushlanish vaqti",
+      "value": "0,8",
+      "unit": "daq"
+     },
+     {
+      "label": "GSX kolonka",
+      "value": "2 m x 2 mm"
+     },
+     {
+      "label": "Ushlanish indeksi",
+      "value": "RI 2720"
+     }
+    ],
+    "caption": "Fentanil: YuSSX va GSX"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ushlanish indeksi identifikatsiyada nima beradi? Doskada: YuSSX 0,8 daq; RI 2720. Tipik xato: sharoit o‘zgarganda ushlanish vaqtini ko‘chirib qo‘llash."
+  },
+  {
+   "title": "Fentanil: UB, IQ va mass-spektr",
+   "bullets": [
+    {
+     "text": "UB: 0,1 M xlorid kislotadagi eritma 251, 257 va 263 nm da maksimal nur yutadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "IQ (KBr plastinka): 1660, 701, 1493, 1263, 1273, 1236 sm-1 sohalarida yutilish.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mass-spektr: 245, 146, 42, 189, 44, 105, 29, 43 m/z cho‘qqilari.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdori GSX, YuSSX usullarida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "UB max (0,1 M HCl)",
+      "value": "251, 257, 263",
+      "unit": "nm"
+     },
+     {
+      "label": "IQ chiziqlari",
+      "value": "1660, 701, 1493",
+      "unit": "sm-1"
+     },
+     {
+      "label": "Mass-spektr",
+      "value": "245, 146, 42",
+      "unit": "m/z"
+     },
+     {
+      "label": "Miqdori",
+      "value": "GSX, YuSSX"
+     }
+    ],
+    "caption": "Fentanil spektrlari"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: asosiy ion (245 m/z) qanday fragmentga mos? (kitobda izohlanmagan). Doskada: UB/IQ/MS. Eslatma: kitobdagi ε=13 qiymati aslida A(1%,1 sm) bo‘lishi mumkin (malaka_errors E2) — kiritilmadi."
+  },
+  {
+   "title": "Siklodol: xossalari va ahamiyati",
+   "bullets": [
+    {
+     "text": "Siklodol — piperidin hosilasiga oid dori vositasi; suvda yomon, spirtda kam eriydigan oq kristall kukun.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xolinolitik ta’sirli; Parkinson xastaligini davolashda va etaperazin bilan xronik alkogolizmni davolashda qo‘llanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "48-49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metabolitlar holida peshob orqali asosan, sof holda qisman chiqariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Oxirgi yillarda kayf beruvchi, mast qiluvchi va gallyusinogen xossalari tufayli toksikomanik vosita sifatida qo‘llana boshlagan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Siklodol",
+    "children": [
+     {
+      "label": "Guruhi",
+      "items": [
+       "Piperidin hosilasi"
+      ]
+     },
+     {
+      "label": "Ta’siri",
+      "items": [
+       "Xolinolitik"
+      ]
+     },
+     {
+      "label": "Qo‘llanilishi",
+      "items": [
+       "Parkinson xastaligi",
+       "Etaperazin bilan alkogolizmda"
+      ]
+     },
+     {
+      "label": "Toksikomaniya",
+      "items": [
+       "Kayf, gallyusinogen xossa"
+      ]
+     }
+    ],
+    "caption": "Siklodol"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega xolinolitik dori toksikomaniya ob’ektiga aylangan? Doskada: siklodol xossalari. Eslatma: siklodol kitobda 1.4-bo‘limda keltirilgan, lekin opioid emas (xolinolitik); syllabus mavzusida nomi yo‘q."
+  },
+  {
+   "title": "Siklodol: zaharlanish va qaramlik",
+   "bullets": [
+    {
+     "text": "O‘tkir zaharlanish 4 bosqichda o‘tadi: eyforiya, es-hushning yo‘qolishi, gallyusinatsiyalar va undan chiqish.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Birinchi bosqich terapevtik dozani 2-3 barobar oshirib (4-8 tabletka) qabul qilinganda rivojlanadi; 1-1,5 oyda o‘rganib qolinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bir sutkada 30-40 tabletkagacha qabul qilinishi mumkin; davolanmasa og‘riqli xumorlik 7-12 kungacha cho‘ziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ko‘pincha nasha, barbituratlar, alkogol bilan tanishgandan so‘ng qabul qilinadi; dozalar ortganda psixozlar bo‘lishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Eyforiya",
+     "Es-hushning yo‘qolishi",
+     "Gallyusinatsiyalar",
+     "Undan chiqish"
+    ],
+    "caption": "Siklodol: 4 bosqich"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 4 bosqichning qaysilari giyohvandlar uchun maqsadli? (1-eyforiya va 3-gallyusinatsiya). Doskada: bosqichlar zanjiri. Tipik xato: terapevtik doza bilan zaharlanish dozasini aralashtirish."
+  },
+  {
+   "title": "Siklodolni qon va peshobdan ajratish",
+   "bullets": [
+    {
+     "text": "Qon: 10 ml qonga 30 ml 0,02 n H2SO4, 20% H2SO4 bilan pH=2 gacha; 2 soat aralashtirib, sentrifugalanadi; 0,02 n H2SO4 bilan 100 ml ga yetkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "50 ml aralashma NaOH bilan pH=7,5 gacha keltirilib, xloroform bilan 3 qayta (10 ml dan) ekstraksiyalanadi; ajralish 41-43%.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Peshob: 50 ml peshob 20% H2SO4 bilan pH=2 gacha nordonlashtirilib, 2 soat aralashtiriladi; keyin xuddi shunday ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "49-50"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Nordonlash",
+      "text": "10 ml qon + 30 ml 0,02n H2SO4; pH=2; 2 soat"
+     },
+     {
+      "title": "2. Sentrifuga",
+      "text": "Hajm 100 ml ga yetkaziladi"
+     },
+     {
+      "title": "3. Ishqorlash",
+      "text": "50 ml qism NaOH bilan pH=7,5"
+     },
+     {
+      "title": "4. Xloroform",
+      "text": "3 marta 10 ml; ajralish 41-43%"
+     }
+    ],
+    "caption": "Qondan ajratish"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 41-43% ajralish nima bildiradi? Doskada: qon va peshob usullarini yonma-yon. Tipik xato: ikkinchi 50 ml qismini miqdoriy tahlil uchun saqlashni unutish."
+  },
+  {
+   "title": "Siklodolni aniqlash: reaksiyalar va YuQX",
+   "bullets": [
+    {
+     "text": "p-dimetilaminobenzaldegid bilan qizil-pushti; Marki reaktivi bilan och qo‘ng‘ir-binafsha; Mandelin reaktivi bilan och qo‘ng‘ir-yashil rang.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "50"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Umumiy cho‘ktiruvchi reaktivlar bilan turli rangdagi va agregat holatdagi cho‘kmalar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "50"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: «Sorbfil» yoki «Silufol», sistema dietilamin-dioksan (1:490); Mune bo‘yicha Dragendorf bilan qizil-qo‘ng‘ir dog‘, Rf=0,50-0,52.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "50"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Reaktiv",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "p-DMAB",
+      "Qizil-pushti"
+     ],
+     [
+      "Marki",
+      "Och qo‘ng‘ir-binafsha"
+     ],
+     [
+      "Mandelin",
+      "Och qo‘ng‘ir-yashil"
+     ],
+     [
+      "YuQX (1:490)",
+      "Qizil-qo‘ng‘ir; Rf=0,50-0,52"
+     ]
+    ],
+    "caption": "Siklodol: reaksiyalar"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: p-dimetilaminobenzaldegid reaksiyasi nima uchun xususiy? Doskada: ranglar ro‘yxati. Eslatma: kitobda Mandelin reaktivi tarkibi «ammoniy volframat» deb yozilgan — bu kitobdagi xato (Mandelin reaktivi ammoniy vanadat eritmasi, toks p.107); tarkib slaydga kiritilmadi."
+  },
+  {
+   "title": "Siklodol: spektrlar va miqdori",
+   "bullets": [
+    {
+     "text": "UB: 0,1 M xlorid kislotadagi eritma 252, 258 va 264 nm da maksimal nur yutadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "50"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "IQ (KBr plastinka): 702, 756, 973, 1206, 1196, 935 sm-1; mass-spektr: 98, 105, 55, 41, 99, 77, 218, 84 m/z.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "50"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdori UB-spektrofotometriya, GSX yoki YuSSX (aniqlash chegarasi 2 mkg) va bromtimol ko‘ki bilan ekstraksion-fotokolorimetrik usulda aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "50"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "UB max (0,1 M HCl)",
+      "value": "252, 258, 264",
+      "unit": "nm"
+     },
+     {
+      "label": "IQ chiziqlari",
+      "value": "702, 756, 973",
+      "unit": "sm-1"
+     },
+     {
+      "label": "Mass-spektr",
+      "value": "98, 105, 55",
+      "unit": "m/z"
+     },
+     {
+      "label": "Aniqlash chegarasi",
+      "value": "2",
+      "unit": "mkg"
+     }
+    ],
+    "caption": "Siklodol spektrlari"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ion assotsiati usuli nimaga asoslangan? (kitobda: bromtimol ko‘ki bilan assotsiat). Doskada: miqdoriy usullar ro‘yxati. Tipik xato: aniqlash chegarasini (2 mkg) boshqa usullarga qo‘llash."
+  },
+  {
+   "title": "Petidin: xossalari va farmakokinetikasi",
+   "bullets": [
+    {
+     "text": "Petidin (meperidin, demerol) birinchi marta 1932 yilda sintez qilingan; morfinga o‘xshash, lekin 8 marta kuchsiz, kam o‘rganib qolish xususiyatiga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "51"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Petidin asosi — ishqoriy xossali moysimon suyuqlik; gidroxlorid oq kristall kukun, qaynash harorati 186-190°C, suvda, xloroform va etanolda yaxshi eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "51"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Terapevtik doza 0,2-0,8 mkg/ml, letal doza 1 g; yarim chiqish davri 2-5 soat.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "51"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ichga qabul qilinganda 15 daqiqadan so‘ng ta’sir qiladi, qondagi konsentratsiya 1-2 soatda maksimal bo‘ladi, ta’sir 1,5-3 soat davom etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "51"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Sintez yili",
+      "value": "1932"
+     },
+     {
+      "label": "Morfindan kuchsiz",
+      "value": "8",
+      "unit": "marta"
+     },
+     {
+      "label": "Gidroxlorid, qaynash",
+      "value": "186-190",
+      "unit": "°C"
+     },
+     {
+      "label": "Letal doza",
+      "value": "1",
+      "unit": "g"
+     },
+     {
+      "label": "Yarim chiqish davri",
+      "value": "2-5",
+      "unit": "soat"
+     }
+    ],
+    "caption": "Petidin"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nafas markazi falaji uchun qaysi metabolit javobgar? (normeperidin). Doskada: 8 marta kuchsiz; T1/2 2-5 soat. Tipik xato: kitobdagi «0,2-0,8 mkg/ml» terapevtik oraliqni 0,2-0,8 mg/l deb boshqacha yozish."
+  },
+  {
+   "title": "Petidin: ta’siri va o‘lim holatlari",
+   "bullets": [
+    {
+     "text": "Ba’zan markaziy asab tizimini qo‘zg‘atib, titroq, muskullarning tortishishi va tutqanoq tutishini chaqiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "51"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nafas markazining falajlanishiga asosiy metaboliti normeperidin sabab bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "51"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Meperidin / normeperidin, mg/l",
+    "nodes": [],
+    "header": [
+     "Ob’ekt",
+     "Og‘iz orqali",
+     "Vena ichiga"
+    ],
+    "rows": [
+     [
+      "Qon",
+      "12 / 19",
+      "4,3 / 2,5"
+     ],
+     [
+      "Peshob",
+      "150 / 50",
+      "15 / 49"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: og‘iz orqali va vena ichiga kiritilgandagi nisbat nimani bildiradi? Doskada: 10-jadval qiymatlari (qon: 12(8-20)/19(8-30) va 4,3(1-8)/2,5(0-7); peshob: 150/50 va 15(2-24)/49(0,1-79)). Jigar qiymatlari kitobda 31(31-66) deb yozilgan — oraliq o‘rtachaga teng, shuning uchun noaniq; slaydga kiritilmadi."
+  },
+  {
+   "title": "Petidinni ajratib olish",
+   "bullets": [
+    {
+     "text": "1 ml qon zardobiga 0,1 ml 1 M NaOH va 5 ml geksan qo‘shilib, 1 daqiqa aralashtiriladi va sentrifugalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sentrifugatga 4 ml erituvchi va 0,08 ml 1 mmol fosfat kislota qo‘shilib, YuSSX da tahlil qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuSSX elyuenti: asetonitril-fosfat buferi (pH=7)-metanol (55:25:20).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Biologik ob’ektdan nordonlashtirilgan suv yoki spirt bilan ajratiladi; suvli ajratmadan ishqoriy muhitda (pH=9-10) ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "52"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Zardob",
+      "text": "1 ml + 0,1 ml 1 M NaOH + 5 ml geksan"
+     },
+     {
+      "title": "2. Aralashtirish",
+      "text": "1 daqiqa, sentrifuga"
+     },
+     {
+      "title": "3. Tayyorlash",
+      "text": "4 ml erituvchi + 0,08 ml 1 mmol fosfat k-ta"
+     },
+     {
+      "title": "4. YuSSX",
+      "text": "Asetonitril-bufer pH 7-metanol (55:25:20)"
+     }
+    ],
+    "caption": "Petidin: zardobdan"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: geksan bilan to‘g‘ridan-to‘g‘ri ekstraksiyaning sababi nima? Doskada: zardob -> NaOH + geksan -> sentrifuga -> YuSSX. Tipik xato: 0,1 ml ishqor va 0,08 ml kislota hajmlarini aralashtirish."
+  },
+  {
+   "title": "Petidinni aniqlash reaksiyalari",
+   "bullets": [
+    {
+     "text": "Alkaloidlarning umumiy cho‘ktiruvchi reaktivlari bilan turli rangdagi va agregat holatdagi cho‘kmalar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Marki reaktivi (formaldegidli H2SO4) bilan zarg‘aldoq rang; sezgirligi 7 mkg petidin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: «Sorbfil» yoki «Silufol»; sistemalar — metanol-ammiak 25% (100:1,5) va geksan:aseton:ammiak 25% (2:2:0,2).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dragendorf bilan sarg‘ish, kaliy yodplatinat bilan qo‘ng‘ir dog‘; standart namuna dog‘i bilan solishtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "52"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Usul",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "Marki reaktivi",
+      "Zarg‘aldoq; 7 mkg"
+     ],
+     [
+      "Dragendorf",
+      "Sarg‘ish dog‘"
+     ],
+     [
+      "Kaliy yodplatinat",
+      "Qo‘ng‘ir dog‘"
+     ],
+     [
+      "YuQX",
+      "MeOH-NH3 (100:1,5); geksan:aseton:NH3"
+     ]
+    ],
+    "caption": "Petidin: reaksiyalar"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki aniqlovchi reagent natijalari nimani ko‘rsatadi? Doskada: Dragendorf (sarg‘ish) va yodplatinat (qo‘ng‘ir). Tipik xato: promedolning Marki rangi (to‘q qizil) bilan petidinniki (zarg‘aldoq) ni aralashtirish."
+  },
+  {
+   "title": "Petidin: UB va YuSSX bilan miqdoriy aniqlash",
+   "bullets": [
+    {
+     "text": "UB: 0,1 M xlorid kislotadagi eritma 204, 207 va 213 nm da maksimal nur yutadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuSSX: kolonka Supercosil LC-PCN (5 mkm); elyuent — asetonitril-fosfat kislota buferi (pH=7)-metanol (55:25:20); detektor UB 204 nm.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aniqlash chegarasi 2 ng/ml; miqdori UB-spektrofotometrik, GSX yoki YuSSX usullarida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "UB max (0,1 M HCl)",
+      "value": "204, 207, 213",
+      "unit": "nm"
+     },
+     {
+      "label": "Kolonka",
+      "value": "Supercosil LC-PCN"
+     },
+     {
+      "label": "Detektor",
+      "value": "UB 204",
+      "unit": "nm"
+     },
+     {
+      "label": "Aniqlash chegarasi",
+      "value": "2",
+      "unit": "ng/ml"
+     }
+    ],
+    "caption": "Petidin: UB va YuSSX"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usul eng sezgir? Doskada: 204/207/213 nm; 2 ng/ml. Eslatma: kitobda petidin uchun IQ-spektr satrida promedolning raqamlari takrorlangan (p.53) — slaydga kiritilmadi."
+  },
+  {
+   "title": "Tramadol: xossalari va farmakokinetikasi",
+   "bullets": [
+    {
+     "text": "Tramadol (gidroxlorid) — markaziy ta’sirli sintetik analgetik, (+) va (-) izomerlarning ratsemik aralashmasi.",
+     "source": {
       "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
       "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "kirish"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Vena ichiga yuborilganda analgeziya tez rivojlanadi va 3-5 soat davom etadi; morfindan kuchsiz, terapevtik dozalarda nafasni deyarli susaytirmaydi.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "kirish"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uzoq qo‘llanilganda dorilarga qaramlik mumkin.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "kirish"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "3 kun ichida dozaning taxminan 90% siydik bilan chiqadi, shundan taxminan 30% o‘zgarmagan holda; metabolitlar konyugatlar holida.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "kirish"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Tramadol",
+    "children": [
+     {
+      "label": "Tabiati",
+      "items": [
+       "Markaziy sintetik analgetik",
+       "(+) va (-) izomer aralashmasi"
+      ]
+     },
+     {
+      "label": "Ta’siri",
+      "items": [
+       "Venaga: analgeziya 3-5 soat",
+       "Morfindan kuchsiz"
+      ]
+     },
+     {
+      "label": "Chiqarilishi",
+      "items": [
+       "3 kunda ~90% siydik bilan",
+       "~30% o‘zgarmagan"
+      ]
+     }
+    ],
+    "caption": "Tramadol"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega tramadol nafasni kam susaytirishi qaramlik xavfini yo‘qotmaydi? Doskada: 3-5 soat; 90% / 30%. Eslatma: bu slayd gmt kitobida tramadol bo‘lmagani uchun malaka materiali №001 (Zalesova, Kataev, Kurdina) asosida tuzildi; kitob emas, TSX bo‘yicha rus tilidagi maqola."
+  },
+  {
+   "title": "Tramadolni siydikdan ajratish va TSX",
+   "bullets": [
+    {
+     "text": "Siydikdan xloroform bilan pH=11,5 da ikki marta teng hajmlarda ekstraksiyalanadi; ekstrakt suvsiz natriy sulfatda quritilib, bug‘latiladi.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "usullar"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sorbfil «PTSX-P-A-UF» va KSK silikagelda to‘rt sistemada: I — toluol-aseton-etanol-ammiak (45:45:7,5:2,5); II — etilasetat-metanol-ammiak (34:4:2).",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "usullar"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "III — xloroform-etilasetat-ammiak (60:40:1); IV — etilasetat-geksan-ammiak (50:15:2); eng yaxshi ajralish IV sistemada.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "usullar"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. pH",
+      "text": "Siydik pH=11,5"
+     },
+     {
+      "title": "2. Ekstraksiya",
+      "text": "Xloroform bilan 2 marta teng hajmda"
+     },
+     {
+      "title": "3. Quritish",
+      "text": "Suvsiz Na2SO4, bug‘latish"
+     },
+     {
+      "title": "4. TSX",
+      "text": "Sorbfil / KSK; IV sistema eng yaxshi"
+     }
+    ],
+    "caption": "Tramadol: ajratish"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega tramadol uchun IV sistema tavsiya etiladi? (balast moddalar va kombinatsiyalangan preparatlardan eng yaxshi ajralish). Doskada: to‘rt sistema. Tipik xato: sistema nisbatlarini (45:45:7,5:2,5 va boshqalar) o‘zgartirib yozish."
+  },
+  {
+   "title": "Tramadol: ochuvchi reaktivlar",
+   "bullets": [
+    {
+     "text": "Tramadol uchun ninhidrinning konts. H2SO4 dagi 1% eritmasi tasdiqlovchi: pushti-gilos rang, suv bilan yuvilgach barqaror zarg‘aldoq.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "natijalar"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "54 ta toksikologik ahamiyatli dori ichidan 15 tasi pushti-gilos rang berdi, ammo suvdan keyin barqaror zarg‘aldoq rang faqat tramadol va nubain uchun kuzatildi.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "natijalar"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tramadol faol metabolitlanadi: IV sistema (Sorbfil)da metabolitlarga mos qo‘shimcha uch zona, Rf x100: 12, 17, 29.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "natijalar"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "reagents": [
+     "Tramadol",
+     "Ninhidrin (konts. H2SO4, 1%)"
+    ],
+    "products": [
+     "Barqaror zarg‘aldoq rang"
+    ],
+    "conditions": "Suv bilan yuvilgandan so‘ng",
+    "observation": "Avval pushti-gilos; 54 dori ichidan faqat tramadol va nubain",
+    "caption": "Ninhidrin reaksiyasi"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ninhidrin reaksiyasi qanday tanlovchanlik beradi? Doskada: pushti-gilos -> suv -> zarg‘aldoq. Tipik xato: 15 ta moddaning pushti-gilos rangini tramadolga xos deb hisoblash — faqat zarg‘aldoq barqaror rang tramadol va nubainga xos."
+  },
+  {
+   "title": "Tramadol: reaktivlar, rang va sezgirlik",
+   "bullets": [
+    {
+     "text": "Dragendorf (Moldaver modifikatsiyasi), CuSO4 + KI, Marki reaktivlari umumiy skrininda qo‘llanadi.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "usullar"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Marki va Frede reaktivlari opiy guruhiga tekshirishda ham qo‘llanadi.",
+     "source": {
+      "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+      "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+      "page": "usullar"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Tramadolni ochish (maqola jadvali)",
+    "nodes": [],
+    "header": [
+     "Reaktiv",
+     "Rang",
+     "Minimum, mkg"
+    ],
+    "rows": [
+     [
+      "Dragendorf (Moldaver)",
+      "zarg‘aldoq",
+      "1,0"
+     ],
+     [
+      "0,03 M CuSO4, so‘ng KI",
+      "qo‘ng‘ir",
+      "0,5"
+     ],
+     [
+      "Marki reaktivi",
+      "sariq-qo‘ng‘ir",
+      "3,0 / 5,0"
+     ],
+     [
+      "Frede reaktivi",
+      "ko‘k",
+      "1,0"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: eng sezgir reaktiv qaysi (CuSO4 + KI: 0,5 mkg)? Doskada: jadvalni to‘ldiring. Minimum: Sorbfil / KSK (Marki uchun 3,0 va 5,0 mkg). Maqola jadvalida Rf va reaktiv bir qatorda berilgan, sistema-Rf juftligi aniq emas — Rf qiymatlari slaydga kiritilmadi."
+  },
+  {
+   "title": "Marki reaktivi: opioidlarni farqlash",
+   "bullets": [
+    {
+     "text": "Promedol Marki reaktivi bilan to‘q qizil rang beradi (sezgirligi 10 mkg).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fentanil va petidin zarg‘aldoq rang beradi (petidin sezgirligi 7 mkg).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "47, 52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metadon pushti-qizil, so‘ng fluoressent qizil; siklodol och qo‘ng‘ir-binafsha rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "44"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Modda",
+     "Marki reaktivi"
+    ],
+    "rows": [
+     [
+      "Promedol",
+      "To‘q qizil"
+     ],
+     [
+      "Fentanil",
+      "Zarg‘aldoq"
+     ],
+     [
+      "Petidin",
+      "Zarg‘aldoq"
+     ],
+     [
+      "Metadon",
+      "Pushti-qizil, so‘ng qizil"
+     ],
+     [
+      "Siklodol",
+      "Och qo‘ng‘ir-binafsha"
+     ]
+    ],
+    "caption": "Marki: opioidlar"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Fentanil va petidinni boshqa usul bilan farqlash kerak."
+  },
+  {
+   "title": "Xulosa va nazorat savollari",
+   "bullets": [
+    {
+     "text": "Promedol, metadon, fentanil va petidin — sintetik opioidlar; nordonlashtirilgan suv/spirt usulida ajratilib, ishqoriy yoki neytral muhitdan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41-52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Marki reaktivi: promedol to‘q qizil, petidin va fentanil zarg‘aldoq; metadon pushti-qizil; YuQX, UB, IQ, mass-spektr va GX-MS tasdiqlaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41-52"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nazorat savollari: promedol guruhining narkologik ahamiyati; fenilpiperidin hosilalarini ajratish; promedol, metadon, siklodol, petidinni aniqlash.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: noma’lum opioidni qanday ketma-ketlikda tekshirasiz? Doskada: umumiy sxema: ajratish -> rangli reaksiyalar -> YuQX -> UB/IQ -> GX-MS. Tipik xato: faqat rangli reaksiyaga tayanish."
+  },
+  {
+   "title": "Nazorat savollari: opioidlar",
+   "bullets": [
+    {
+     "text": "Fenilpiperidin guruhi hosilalarini saqlovchi dori moddalarini nomlang; promedol va shu guruh moddalarining narkologik ahamiyatini izohlang.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fenilpiperidin hosilalari ashyoviy dalillardan qanday ajratib olinadi?",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Promedol, metadon, siklodol va petidinni aniqlash uchun qanday kimyoviy va fizik-kimyoviy usullar qo‘llaniladi?",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Nazorat savollari 1-7. Talabalar juftlikda javob beradi."
+  },
+  {
+   "title": "Keys: noma’lum kristall kukun",
+   "bullets": [
+    {
+     "text": "Sud-kimyo ekspertizasiga noma’lum kristall kukun keltirildi; dastlabki tahlil o‘tkazing.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dastlabki tahlilda opioidlar Marki reaktivi bilan ranglar bo‘yicha ajratiladi, so‘ng YuQX, UB va IQ-spektr bilan tasdiqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ikkinchi keys: qon keltirilgan, hujjatlarga ko‘ra gallyusinatsiya chaqiruvchi modda faraz qilingan; noma’lum moddaga dastlabki tahlil o‘tkazing.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "53"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Ko‘rinish",
+      "text": "Kristall kukunning tashqi ko‘rinishi"
+     },
+     {
+      "title": "2. Marki reaktivi",
+      "text": "Rang bo‘yicha dastlabki guruh"
+     },
+     {
+      "title": "3. YuQX",
+      "text": "Sistema va Rf standart bilan"
+     },
+     {
+      "title": "4. UB va IQ",
+      "text": "Spektr bo‘yicha tasdiqlash"
+     },
+     {
+      "title": "5. GX-MS",
+      "text": "Yakuniy identifikatsiya"
+     }
+    ],
+    "caption": "Keys: dastlabki tahlil"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Ustoz keys jadvalini (muammo, sabab, yechim) doskada to‘ldiradi."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Promedol qaysi kimyoviy guruhga kiradi?",
+   "options": [
+    "Purin hosilasi",
+    "Indol hosilasi",
+    "Piperidin hosilasi",
+    "Fenotiazin hosilasi"
+   ],
+   "correct_index": 2,
+   "explanation": "Promedol kimyoviy tuzilishi bo‘yicha piperidin hosilasini saqlaydi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "40"
+   }
+  },
+  {
+   "question": "Promedol Marki reaktivi bilan qanday rang hosil qiladi?",
+   "options": [
+    "Zarg‘aldoq",
+    "To‘q qizil",
+    "Yashil",
+    "Sariq"
+   ],
+   "correct_index": 1,
+   "explanation": "Formaldegid saqlagan sulfat kislota bilan promedol to‘q qizil rang hosil qiladi (sezgirlik 10 mkg).",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "41"
+   }
+  },
+  {
+   "question": "Promedol suvli ajratmadan qaysi pH da xloroform bilan maksimal ekstraksiyalanadi?",
+   "options": [
+    "pH=6,9-8,5",
+    "pH=2",
+    "pH=13",
+    "pH=11,5"
+   ],
+   "correct_index": 0,
+   "explanation": "Suvli ajratmalardan xloroform bilan pH=6,9-8,5 sharoitida maksimal ekstraksiyalanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "41"
+   }
+  },
+  {
+   "question": "Metadonning bir martalik yuqori dozasi qancha?",
+   "options": [
+    "30 mg",
+    "10 mg",
+    "40 mg",
+    "100 mg"
+   ],
+   "correct_index": 1,
+   "explanation": "Og‘riqni qoldiruvchi yuqori bir martalik doza 10 mg, sutkalik doza 30 mg.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "42"
+   }
+  },
+  {
+   "question": "Metadonning Mandelin reaktivi bilan YuQX dog‘i qanday rangga o‘tadi?",
+   "options": [
+    "Qizildan sariq rangga",
+    "Yashildan ko‘k rangga",
+    "Binafshadan qora rangga",
+    "Rang bermaydi"
+   ],
+   "correct_index": 1,
+   "explanation": "Metadon dog‘i Mandelin reaktivi bilan yashildan ko‘k rangga o‘tadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "44"
+   }
+  },
+  {
+   "question": "Fentanil morfinga nisbatan necha marta faol?",
+   "options": [
+    "100 marta",
+    "10 marta",
+    "30 marta",
+    "5 marta"
+   ],
+   "correct_index": 0,
+   "explanation": "Fentanil morfinga nisbatan 100 marotaba, geroindan 10 marta faol.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "45"
+   }
+  },
+  {
+   "question": "Fentanil metabolizmida qaysi guruh gidrolizlanadi?",
+   "options": [
+    "Amid guruhi",
+    "Efir guruhi",
+    "Nitro guruhi",
+    "Fenol gidroksili"
+   ],
+   "correct_index": 0,
+   "explanation": "Metabolizm jarayonida amid guruhining gidrolizi yuz beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "46"
+   }
+  },
+  {
+   "question": "Fentanil Marki reaktivi bilan qanday mahsulot hosil qiladi?",
+   "options": [
+    "Ko‘k",
+    "Qizil-binafsha",
+    "Zarg‘aldoq rangli",
+    "Yashil"
+   ],
+   "correct_index": 2,
+   "explanation": "Marki reaktivi bilan zarg‘aldoq rangli mahsulot hosil bo‘ladi; limon kislotasi reaksiyasida qizil-binafsha.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "47"
+   }
+  },
+  {
+   "question": "Petidinning asosiy metaboliti nafas markazi falajiga sabab bo‘ladi. U qaysi?",
+   "options": [
+    "Normetadon",
+    "Normorfin",
+    "Norkodein",
+    "Normeperidin"
+   ],
+   "correct_index": 3,
+   "explanation": "Nafas markazining falajlanishiga petidinning asosiy metaboliti normeperidin sabab bo‘ladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "51"
+   }
+  },
+  {
+   "question": "Tramadol uchun ninhidrin–H2SO4 reaksiyasida suv bilan yuvilgach qanday rang qoladi?",
+   "options": [
+    "Barqaror zarg‘aldoq",
+    "Ko‘k",
+    "Yashil",
+    "Rangsiz"
+   ],
+   "correct_index": 0,
+   "explanation": "Pushti-gilos rang suv bilan yuvilgach barqaror zarg‘aldoq rangga o‘tadi.",
+   "source": {
+    "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+    "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+    "page": "natijalar"
+   }
+  },
+  {
+   "question": "Promedolning suyuqlanish harorati qancha?",
+   "options": [
+    "76-79 °C",
+    "93 °C",
+    "107-108 °C",
+    "186-190 °C"
+   ],
+   "correct_index": 2,
+   "explanation": "Promedol oq kristall kukun, suyuqlanish harorati 107-108 °C; 1948 yilda sintez qilingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "40"
+   }
+  },
+  {
+   "question": "Metadon asosining suyuqlanish harorati qancha?",
+   "options": [
+    "229-231 °C",
+    "107-108 °C",
+    "173 °C",
+    "76-79 °C"
+   ],
+   "correct_index": 3,
+   "explanation": "Metadon asosi 76-79 °C da, gidroxloridi 229-231 °C da suyuqlanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "42"
+   }
+  },
+  {
+   "question": "Metadonning analgetik ta’siri morfinga nisbatan qanday?",
+   "options": [
+    "100 marta yuqori",
+    "5 marta past",
+    "Teng",
+    "5 marta yuqoriroq, zaharliligi kamroq"
+   ],
+   "correct_index": 3,
+   "explanation": "Analgetik ta’siri morfinga nisbatan 5 marta yuqoriroq, zaharliligi kamroq.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "42"
+   }
+  },
+  {
+   "question": "Fentanil AQSh qora bozorida qachon paydo bo‘ldi?",
+   "options": [
+    "1932 yilda",
+    "1991 yilda",
+    "1947 yilda",
+    "1948 yilda"
+   ],
+   "correct_index": 1,
+   "explanation": "1991 yilda AQSh qora bozorida geroin o‘rniga fentanil paydo bo‘ldi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "45"
+   }
+  },
+  {
+   "question": "3-metilfentanil fentanilga nisbatan necha marta faolroq?",
+   "options": [
+    "10 marta",
+    "100 marta",
+    "30 marta",
+    "5 marta"
+   ],
+   "correct_index": 2,
+   "explanation": "3-metilfentanil fentanildan 30 marta faolroq.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "45"
+   }
+  },
+  {
+   "question": "Fentanilning YuSSX dagi ushlanish vaqti qancha?",
+   "options": [
+    "4,68 daqiqa",
+    "8,38 daqiqa",
+    "11,81 daqiqa",
+    "0,8 daqiqa"
+   ],
+   "correct_index": 3,
+   "explanation": "YuSSX da fentanilning ushlanish vaqti 0,8 daqiqa.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "48"
+   }
+  },
+  {
+   "question": "Fentanil 9-sistemada (xloroform-siklogeksan-sirka kislota) qanday Rf beradi?",
+   "options": [
+    "0,08",
+    "0,59",
+    "0,84",
+    "0,70"
+   ],
+   "correct_index": 0,
+   "explanation": "9-sistemada Rf=0,08; 10-sistemada 0,84.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "48"
+   }
+  },
+  {
+   "question": "Petidin birinchi marta qaysi yili sintez qilingan?",
+   "options": [
+    "1948 yilda",
+    "1932 yilda",
+    "1947 yilda",
+    "1991 yilda"
+   ],
+   "correct_index": 1,
+   "explanation": "Petidin (meperidin, demerol) birinchi marta 1932 yilda sintez qilingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "51"
+   }
+  },
+  {
+   "question": "Petidinning letal dozasi kitobda qancha?",
+   "options": [
+    "0,03 g",
+    "10 mg",
+    "1 g",
+    "0,1 mg"
+   ],
+   "correct_index": 2,
+   "explanation": "Terapevtik doza 0,2-0,8 mkg/ml, letal doza 1 g.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "51"
+   }
+  },
+  {
+   "question": "Petidinning UB maksimumlari (0,1 M HCl) qaysi?",
+   "options": [
+    "251, 257 va 263 nm",
+    "252, 258 va 264 nm",
+    "253, 259 va 264 nm",
+    "204, 207 va 213 nm"
+   ],
+   "correct_index": 3,
+   "explanation": "Petidinning 0,1 M HCl dagi eritmasi 204, 207 va 213 nm da yutadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "53"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Fentanil morfinga nisbatan 100 marta, geroindan 10 marta faol; samarali doza (70 kg uchun) 0,1 mg.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "45"
+   }
+  },
+  {
+   "text": "Metadonning bir martalik yuqori dozasi 10 mg, sutkalik dozasi 30 mg; ta’sir vaqti 24 soatgacha.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "42"
+   }
+  },
+  {
+   "text": "Promedol 1948 yilda, petidin 1932 yilda sintez qilingan; metadon AQShga 1947 yilda kirib kelgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "40-51"
+   }
+  },
+  {
+   "text": "Tramadol bo‘yicha 54 dori ichidan faqat tramadol va nubain ninhidrin–H2SO4 reaksiyasidan keyin barqaror zarg‘aldoq rang bergan.",
+   "source": {
+    "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+    "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+    "page": "natijalar"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+   "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+   "year": null,
+   "pages": "b. 40-53"
+  },
+  {
+   "author": "Zalesova V.A., Kataev S.S., Kurdina L.I. (Perm narkologik dispanseri); malaka materiali №001",
+   "title": "Siydikda tramadolni yupqa qatlam xromatografiyasi usulida aniqlash",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  }
+ ]
 }

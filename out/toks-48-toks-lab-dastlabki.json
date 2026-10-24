@@ -5,7 +5,7 @@
       "title": "Mashg‘ulot maqsadi va rejasi",
       "bullets": [
         {
-          "text": "3-laboratoriya mashg‘uloti: ashyoviy dalillar haqida tushuncha va ularni dastlabki tekshirish — pH-muhit, rang, hid va ob’ektni ayrim moddalar uchun tekshirish (kislotalar, ishqorlar, sianidlar, oq mishyak).",
+          "text": "3-laboratoriya mashg‘uloti: ashyoviy dalillarni dastlabki tekshirish — pH, rang, hid; kislotalar, ishqorlar, sianidlar va oq mishyakka tekshirish.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -57,7 +57,7 @@
           "uncertain": false
         },
         {
-          "text": "Asbob-uskunalar: darslik, ma’ruza matni, o‘quv qo‘llanmalar, suv bug‘i bilan haydash apparati, voronka, probirkalar, reaktivlar, ko‘rgazmali materiallar, skotch, qog‘oz.",
+          "text": "Asbob-uskunalar: darslik, ma’ruza matni, o‘quv qo‘llanmalar, suv bug‘i bilan haydash apparati, voronka, probirkalar, reaktivlar, ko‘rgazmalar, skotch, qog‘oz.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -159,6 +159,49 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Kutilayotgan natija: talaba idishdagi yozuv va yo‘llanma farqini topib, dalolatnoma tuzish tartibini aytadi. Muhokama: farq topilsa, ob’ektni ochish davom ettiriladimi? (Kitob: avval dalolatnoma tuziladi.) Doskada: «yozuv = hujjat?». Tipik xato: farqni e’tiborsiz qoldirish."
     },
     {
+      "title": "Yozuv va hujjat farq qilsa: hay’at va dalolatnoma",
+      "bullets": [
+        {
+          "text": "Idish ustidagi yozuvlar yuborilgan yo‘llanma hujjatlarga solishtiriladi: bu tashqi ko‘rinishni aniqlashning birinchi qadami.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yozuv va hujjat o‘rtasida farq bo‘lsa, tahlil natijalari noto‘g‘ri bo‘lishiga sabab bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunday hollarda darhol uch kishidan iborat hay’at ishtirokida dalolatnoma tuziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "169"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Yozuv va hujjat o‘rtasida farq topildi",
+          "Darhol uch kishilik hay’at to‘planadi",
+          "Dalolatnoma tuziladi",
+          "Boshqa ashyoviy dalillar talab qilinadi"
+        ],
+        "caption": "Farq aniqlanganda (169-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega farq bo‘lsa tahlilni davom ettirib bo‘lmaydi? Doskada: 4 bosqichli oqim. Tipik xato: farqni e’tiborsiz qoldirib tahlilni boshlash."
+    },
+    {
       "title": "2-bosqich: konsistensiya va morfologiya",
       "bullets": [
         {
@@ -227,6 +270,65 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: chirigan jigarda achchiq bodom hidi sezilmasa, sianid yo‘q degan xulosa to‘g‘rimi? Doskada: hid -> taxmin juftliklari. Tipik xato: hid asosida zaharni «aniqlandi» deb yozish. Xavfsizlik: kitobda hidlash usuli yozilmagan; zaharli ob’ektni to‘g‘ridan-to‘g‘ri hidlamang, o‘qituvchi ko‘rsatmasiga amal qiling."
     },
     {
+      "title": "Hid bo‘yicha dastlabki taxmin",
+      "bullets": [
+        {
+          "text": "Bioob’ektdagi ma’lum hidlar ayrim moddalar bilan zaharlanganlikni ko‘rsatadi: achchiq bodom hidi — sianidlar, piridin asoslari hidi — denaturlangan spirt.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hid asosan chirimagan ob’ektda yaxshi seziladi; chirishda mahsulotlar hisobiga zaharlarning hidi o‘zgaradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ob’ektning tahlil boshlanguncha ko‘p turib qolishi va chirishi xarakterli hidlarni aniqlashga halaqit beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "169"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Hid / holat",
+          "Nimaga ishora"
+        ],
+        "rows": [
+          [
+            "Achchiq bodom hidi",
+            "Sianidlar"
+          ],
+          [
+            "Piridin asoslari hidi",
+            "Denaturlangan spirt"
+          ],
+          [
+            "Fosfororganik birikmalar",
+            "O‘ziga xos hid"
+          ],
+          [
+            "Chirigan ob’ekt",
+            "Hidlar o‘zgaradi"
+          ]
+        ],
+        "caption": "Hid va taxmin (21, 169-betlar)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega hidga ishonib xulosa chiqarib bo‘lmaydi? Doskada: jadval. Tipik xato: hid bo‘yicha taxminni yakuniy dalil deb hisoblash."
+    },
+    {
       "title": "Rangli qo‘shimchalar va yot kristallar",
       "bullets": [
         {
@@ -257,7 +359,7 @@
           "uncertain": false
         },
         {
-          "text": "Ob’ektda yot kristall moddalar, o‘simlik qismlari, meva qoldiqlari aniqlansa, kimyogar avval ularning xarakterini o‘rganib, zaharni aniqlashga yo‘llanma olishi mumkin.",
+          "text": "Ob’ektda yot kristall moddalar, o‘simlik qismlari, meva qoldiqlari aniqlansa, kimyogar avval ularning xarakterini o‘rganib, zaharga yo‘llanma olishi mumkin.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -369,7 +471,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Maydalash",
+            "text": "Oz miqdor ob’ekt maydalanadi"
+          },
+          {
+            "title": "Suv bilan aralash",
+            "text": "0,5-1,0 ml tozalangan suv qo‘shiladi"
+          },
+          {
+            "title": "Kutish",
+            "text": "3-5 daqiqa turtiladi"
+          },
+          {
+            "title": "Indikator",
+            "text": "Eritma turli indikator qog‘ozlariga tomiziladi"
+          },
+          {
+            "title": "Baholash",
+            "text": "H2S ajralishi kislotali muhit berishi hisobga olinadi"
+          }
+        ],
+        "caption": "Muhitni aniqlash (169-bet)"
+      },
       "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: ob’ektning pH qiymati va muhit turi (kislotali, ishqoriy, neytral) ish daftariga yoziladi. Muhokama: chirigan ob’ektda kislotali muhit nimani bildiradi? (H2S ajralishi hisobiga.) Tipik xato: suv hajmini oshirib yuborish — kitobda 0,5-1,0 ml. Xavfsizlik: qo‘lqop kiying."
     },
     {
@@ -427,6 +554,124 @@
         ]
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: pH 2 va pH 10 ob’ektlari uchun qaysi moddalar tekshiriladi? Doskada: jadval. Kuchsiz kislotali sharoit ko‘pincha organlarda, ayniqsa chirib qolganlarida, achish jarayoni sodir bo‘lganini ko‘rsatadi (toks 21). Tipik xato: pH natijasini yakuniy xulosa deb yozish. Kitobda kislota va ishqorlarni aniqlash reaksiyalari bu mashg‘ulotda berilmagan; ular dializ mavzusida (72-dars)."
+    },
+    {
+      "title": "Muhit natijasi: nimani izlaymiz",
+      "bullets": [
+        {
+          "text": "Ob’ektning reaksiya muhiti o‘rganilgach, unga mos moddalarga tekshirish o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Chirish natijasida H2S ajralishi hisobiga muhit kislotali bo‘lishiga ahamiyat berish kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "pH 3 yoki undan kichik bo‘lsa, asosan mineral kislotalar yoki ko‘p miqdorda organik kislotalar bor; ishqoriy sharoitda ishqor yoki karbonatlar tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Reaksiya muhiti",
+          "Tekshiriladi"
+        ],
+        "rows": [
+          [
+            "Kislotali",
+            "Kislota xossali moddalar"
+          ],
+          [
+            "Ishqoriy",
+            "Asos xossali moddalar"
+          ],
+          [
+            "Neytral",
+            "Neytral xossali moddalar"
+          ]
+        ],
+        "caption": "Muhit va izlanadigan moddalar (169-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: chirigan ob’ektda kislotali muhit nimadan? Doskada: jadval. Tipik xato: chirish ta’sirini hisobga olmay muhitni talqin qilish."
+    },
+    {
+      "title": "Taxminiy tekshiruv usullariga misollar",
+      "bullets": [
+        {
+          "text": "Oq margimush bilan zaharlanganni ko‘rsatuvchi chinni kabi bo‘lakchalardan Hg va As ni tekshirish Reynsh usulida, margimushni Gutseyt usulida amalga oshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlarni taxminiy tekshirish uchun peshobga kobalt atsetati eritmasi ammiak yoki litiy ishqori sharoitida qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenotiazin hosilalari peshobga temir xloridning sulfat kislotali eritmasi qo‘shilsa och-qizil rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Usul / reaktiv",
+          "Nimani taxmin qiladi"
+        ],
+        "rows": [
+          [
+            "Reynsh usuli",
+            "Chinni bo‘lakchalarda Hg va As"
+          ],
+          [
+            "Gutseyt usuli",
+            "Margimush"
+          ],
+          [
+            "Kobalt atsetati + NH3 yoki LiOH",
+            "Barbituratlar (peshobda)"
+          ],
+          [
+            "FeCl3 + H2SO4 eritmasi",
+            "Fenotiazin hosilalari: och-qizil"
+          ],
+          [
+            "Sinil kislota, nitrit sinovlari",
+            "Sianid va nitritlar"
+          ]
+        ],
+        "caption": "Taxminiy usullar (12, 20-betlar)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sezgir, lekin xususiy bo‘lmagan usul nimani anglatadi? Doskada: jadval. Tipik xato: taxminiy sinovni tasdiqlovchi usul deb hisoblash."
     },
     {
       "title": "5-bosqich: dastlabki kimyoviy tekshirish",
@@ -542,6 +787,140 @@
       "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: qoramtir-kul dog‘, so‘ng qizdirilganda oq dog‘. Talqin: bu taxminiy sinov; musbat natija bo‘lsa mishyak uchun asosiy tekshirish (Marsh va b.) o‘tkaziladi. Muhokama: faqat qoramtir dog‘ hosil bo‘lib, oq dog‘ chiqmasa nima deb yoziladi? Tipik xato: sinovni oxirigacha yetkazmay «mishyak aniqlandi» deb yozish."
     },
     {
+      "title": "Mishyak: ahamiyati va to‘planishi",
+      "bullets": [
+        {
+          "text": "As2O3 tibbiyotda (stomatologiyada), qishloq xo‘jaligida insektitsid sifatida, oyna va teri ishlab chiqarishda ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Besh valentli birikmalari organizmda kuchliroq zaharli uch valentli birikmalarga aylanadi; ular fermentlarning sulfgidril guruhlari bilan birikadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmda parenxima organlari, suyak, teri va sochda to‘planadi; peshob, ichak va bezlar orqali juda sekin chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "75"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Mishyak (As)",
+        "children": [
+          {
+            "label": "Qo‘llanilishi",
+            "items": [
+              "Stomatologiya, insektitsid",
+              "Oyna va teri ishlab chiqarish"
+            ]
+          },
+          {
+            "label": "Ta’sir mexanizmi",
+            "items": [
+              "Ferment –SH guruhlariga birikadi",
+              "Almashinuv jarayoni to‘xtaydi"
+            ]
+          },
+          {
+            "label": "To‘planishi",
+            "items": [
+              "Parenxima organlari",
+              "Suyak, teri, soch"
+            ]
+          },
+          {
+            "label": "Chiqarilishi",
+            "items": [
+              "Peshob, ichak, bezlar orqali",
+              "Juda sekin; murdada yillar o‘tgach ham"
+            ]
+          }
+        ],
+        "caption": "Mishyak (75-bet)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega murdada yillar o‘tgach ham mishyak topiladi? Doskada: daraxt. Tipik xato: oq mishyak qo‘shimchasini topgach tahlilni to‘xtatish — Marsh yoki Zanger-Blek bilan tasdiqlash kerak."
+    },
+    {
+      "title": "Sianid kislotasi: manbalari va belgilari",
+      "bullets": [
+        {
+          "text": "Sianid kislotasi va uning tuzlari kuchli zahar, shunga qaramay xalq xo‘jaligida rangli metallarni rudadan ajratishda ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiyotda achchiq bodom suvi ishlatiladi, unda 0,1% HCN bo‘lishi mumkin; achchiq mag‘izli danaklarda amigdalin gidrolizlanib HCN beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdada patomorfologik tahlilda xarakterli alomatlar sezilmaydi: vena qoni tiniq qizil, ichki organlardan achchiq bodom mag‘izi hidi keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Sianid kislotasi (HCN)",
+        "children": [
+          {
+            "label": "Sanoat",
+            "items": [
+              "Rangli metallarni rudadan ajratish"
+            ]
+          },
+          {
+            "label": "Tibbiyot",
+            "items": [
+              "Achchiq bodom suvi: 0,1% HCN"
+            ]
+          },
+          {
+            "label": "Tabiiy manba",
+            "items": [
+              "Achchiq mag‘izli danaklar",
+              "Amigdalin gidrolizi → HCN"
+            ]
+          },
+          {
+            "label": "Murdada belgilar",
+            "items": [
+              "Vena qoni tiniq qizil",
+              "Achchiq bodom hidi"
+            ]
+          }
+        ],
+        "caption": "HCN manbalari va belgilari (28-bet)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega achchiq bodom hidi sianidga ishora qiladi? Doskada: daraxt. HCN qaynash harorati kitobda 27 °C deb yozilgan, to‘g‘risi 25,6 °C (malaka 054) — slaydga yozilmadi. Tipik xato: faqat hidga tayanib xulosa chiqarish."
+    },
+    {
       "title": "Sianid kislotasi: dastlabki tekshirish",
       "bullets": [
         {
@@ -621,6 +1000,164 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Kutilayotgan natija: ko‘k rang (musbat) yoki rangsiz (manfiy). Talqin: musbat taxminiy natija asosiy tekshiruvni (haydash va distillatni tekshirish) talab qiladi. Muhokama: achchiq bodom hidi bor, ko‘k rang chiqmasa nima qilinadi? Tipik xato: ko‘k rangni darhol «sianid aniqlandi» deb yozish."
     },
     {
+      "title": "Sianid sinovining kimyosi: berlin zangorisi",
+      "bullets": [
+        {
+          "text": "Ishqoriy sharoitdagi sianidlar eritmasi FeSO4 bilan temir(II) sianid hosil qiladi, u ortiqcha sianid bilan Na4[Fe(CN)6] ga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "29"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Temir(III) xlorid qo‘shilganda ko‘k rangli cho‘kma yoki eritma (berlin lazuri) hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "29"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fe(OH)2 va Fe(OH)3 ni yo‘qotish uchun HCl bilan nordonlashtiriladi; HCl ortiqchasi reaksiyani sekinlatishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "29"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Na4[Fe(CN)6] (sianiddan)",
+          "FeCl3"
+        ],
+        "products": [
+          "Fe4[Fe(CN)6]3",
+          "NaCl"
+        ],
+        "caption": "Berlin zangorisi (29-bet)",
+        "conditions": "Ishqoriy muhit, so‘ng HCl",
+        "observation": "Ko‘k cho‘kma (berlin zangorisi)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega avval ishqoriy, keyin kislotali muhit? Doskada: tenglamalar zanjiri: HCN + NaOH → NaCN + H2O; 2NaCN + FeSO4 → Fe(CN)2 + Na2SO4; Fe(CN)2 + 4NaCN → Na4[Fe(CN)6]; tenglashtirilgan: 3Na4[Fe(CN)6] + 4FeCl3 → Fe4[Fe(CN)6]3 + 12NaCl (kitobda koeffitsientlar to‘liq emas, tenglashtirildi). Tipik xato: temir tuzini ortiqcha qo‘shish."
+    },
+    {
+      "title": "HCN murdada nega tez yo‘qoladi",
+      "bullets": [
+        {
+          "text": "HCN va uning tuzlari murda organlarida uzoq saqlanmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sabablar: gidroliz, rodanidlarga aylanish, aldegid saqlovchi qandlar bilan birikish (siangidrin) hamda CO2, glyukoza va havo ta’siri.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlanish belgilari: baqirib yig‘lash, hushdan ketish, qorachiq kengayishi, nafas olishning qiyinlashishi, tirishish va o‘lim.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "HCN yo‘qolish sabablari",
+        "children": [
+          {
+            "label": "Gidrolizlanadi"
+          },
+          {
+            "label": "Rodanidlarga aylanadi"
+          },
+          {
+            "label": "Qandlar bilan birikadi",
+            "items": [
+              "Aldegidli qand + HCN → siangidrin"
+            ]
+          },
+          {
+            "label": "CO2, glyukoza, havo",
+            "items": [
+              "Ta’sirida o‘zgaradi"
+            ]
+          }
+        ],
+        "caption": "HCN yo‘qolishi (28-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: shu sabablarga ko‘ra sianid tahlilini kechiktirmaslik kerak. Doskada: 4 sabab. Tipik xato: eski, chirigan ob’ektda sianid doim topiladi deb o‘ylash."
+    },
+    {
+      "title": "Nitrat kislota zaharlanishi",
+      "bullets": [
+        {
+          "text": "Nitrat kislota o‘zining vodorod ionlari bilan emas, oksidlovchi sifatida ham ta’sir etadi; oqsilda ksantoprotein reaksiyasi — to‘qima sariq rangga bo‘yaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "144"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlangan murda yorilganda ichki organlardan azot oksidlari hidi keladi; oshqozonda sariq rangdan tashqari qora joylar ham bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "144"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrat kislota ta’sirida qonda metgemoglobin hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "144"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "HNO3 konsentratsiyasi",
+            "value": "68",
+            "unit": "%"
+          },
+          {
+            "label": "LD50 (konsentrlangan)",
+            "value": "8-10",
+            "unit": "ml"
+          },
+          {
+            "label": "Teri sarg‘ayishi (<20%)",
+            "value": "bo‘lmasligi mumkin"
+          }
+        ],
+        "caption": "Nitrat kislota (144, 261-betlar)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: 20% dan kuchsiz eritma bilan zaharlanishda teri sarg‘aymasligi mumkin (261-bet). Doskada: raqamlar. Tipik xato: sariq rang yo‘qligini nitrat kislotani inkor etish deb hisoblash."
+    },
+    {
       "title": "Nitrat va nitritlar",
       "bullets": [
         {
@@ -663,6 +1200,54 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: zangori rang. Xavfsizlik: konsentrlangan sulfat kislota bilan qo‘lqop va ko‘z himoyasida ishlang, probirkani yuzdan uzoqroq tuting (kitobda ko‘rsatma yo‘q). Kitob talabi: reaksiya tenglamasini talaba yozadi. Tipik xato: zangori rangni faqat nitratga tegishli deb yozish — kitob «nitrat va nitrit tuzlari» deydi."
+    },
+    {
+      "title": "Difenilamin reaksiyasi mohiyati",
+      "bullets": [
+        {
+          "text": "Dastlabki sinovda suvli eritmaga difenilamin reaktivi va konsentrlangan sulfat kislota qo‘shiladi; zangori rang nitrat/nitrit borligidan dalolat beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "170"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Difenilamin oksidlanib tetrafenilgidrazin, undan difenilbenzidin, so‘ng zangori difenilfenoxinondiimin sulfati hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "144"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu reaksiyani nitrat kislotadan tashqari nitrit kislota va ayrim oksidlovchilar ham beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Difenilamin",
+          "Nitrat/nitrit (oksidlovchi)",
+          "Konsentr. H2SO4"
+        ],
+        "products": [
+          "Difenilbenzidin",
+          "Difenilfenoxinondiimin sulfati"
+        ],
+        "caption": "Difenilamin sinovi (144, 261-betlar)",
+        "conditions": "Bosqichma-bosqich oksidlanish",
+        "observation": "Ko‘kimtir-zangori rang"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega sinov nitratga xususiy emas? Doskada: oksidlanish zanjiri. Tipik xato: zangori rangni faqat nitratga tegishli deb hisoblash."
     },
     {
       "title": "Nitrit/nitrat: azobo‘yoq reaksiyasi",
@@ -708,6 +1293,63 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: qizil rang. Muhokama: nega ikkinchi reaksiya kerak? (Kitob: ijobiy natijani tasdiqlash uchun qo‘shimcha reaksiya — izohni o‘qituvchi qo‘shadi.) Eslatma: kitobda naftol oldidagi harf (alfa yoki beta) matnda ko‘rinmaydi — shu sababli slaydda «naftol» deb yozildi. Kitob talabi: tenglamani talaba yozadi."
+    },
+    {
+      "title": "Nitrat va nitritni farqlash",
+      "bullets": [
+        {
+          "text": "Nitrat kislota tahlilidan avval nitritlarni aniqlab olish talab etiladi, chunki difenilamin va brutsin reaksiyalarini nitrit ham beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitritlar neytral muhitda sulfanil kislota yoki Griss reaktivi bilan azobo‘yoq hosil bo‘lishi orqali tasdiqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "262"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yung (oqsil) nitrat kislota bilan turg‘un sariq birikma hosil qiladi, paxta esa sariq rangini yo‘qotadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Nitrat kislota",
+            "items": [
+              "Difenilamin bilan ko‘kimtir rang",
+              "Brutsin (konsentr. H2SO4) bilan qizil",
+              "Yungda turg‘un sariq birikma",
+              "Mis kukuni bilan haydab olinadi"
+            ]
+          },
+          {
+            "title": "Nitrit kislota",
+            "items": [
+              "Difenilamin, brutsin reaksiyasini ham beradi",
+              "Sulfanil kislota yoki Griss reaktivi",
+              "Azobo‘yoq hosil bo‘lishi — tasdiq",
+              "Nitrat tahlilidan avval aniqlanadi"
+            ]
+          }
+        ],
+        "caption": "Nitrat va nitrit (261-262-betlar)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega avval nitrit aniqlanadi? Doskada: ikki ustun. Tipik xato: difenilamin ijobiy bo‘lsa darhol nitrat deb xulosa qilish."
     },
     {
       "title": "Peshobda aminazinni dastlabki tekshirish",
@@ -760,6 +1402,149 @@
         ]
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: peshobda aminazin bo‘lsa, qizil-pushti yoki qizil rang. Xavfsizlik: FPN reaktivida HClO4 va HNO3 bor — kuchli kislotalar, qo‘lqop va himoya ko‘zoynagida ishlang (kitobda ko‘rsatma yo‘q). Muhokama: bu sinov spetsifikmi? (Taxminiy usullar spetsifik emas, toks 20.) Tipik xato: reaktivni tarkibini aralashtirish — hajm va konsentratsiyalarni aniq yozing."
+    },
+    {
+      "title": "Mineral kislotalar: tasdiqlovchi reaksiyalar",
+      "bullets": [
+        {
+          "text": "Dializatda kuchli mineral kislotalar borligi universal indikator, qizil kongo va boshqa indikatorlar bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mineral kislotalar avval dializatdan haydab olinadi, so‘ng tahlil qilinadi; tahlil sulfat kislotadan boshlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrat kislota mis kukuni bilan haydaladi; xlorid kislota mis qo‘shmasdan quruq qoldiq qolguncha haydab olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "261"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Kislota",
+          "Reaktiv",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "H2SO4",
+            "BaCl2 (5%)",
+            "Oq cho‘kma, kislotada erimaydi"
+          ],
+          [
+            "H2SO4",
+            "Qo‘rg‘oshin atsetat (3%)",
+            "Oq cho‘kma, ishqorda eriydi"
+          ],
+          [
+            "H2SO4",
+            "Natriy rodizonat + BaCl2",
+            "Qizil dog‘ o‘chadi"
+          ],
+          [
+            "HCl",
+            "AgNO3",
+            "Oq cho‘kma, ammiakda eriydi"
+          ],
+          [
+            "HCl",
+            "Bertole tuzi",
+            "Erkin xlor gazi"
+          ],
+          [
+            "HNO3",
+            "Difenilamin; brutsin",
+            "Ko‘kimtir; qizil rang"
+          ]
+        ],
+        "caption": "Mineral kislotalar (260-262-betlar)"
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ionlarni dializatning o‘zidan to‘g‘ridan-to‘g‘ri aniqlab bo‘lmaydi? (Cl-, SO4 2-, NO3- organizmda doim bor — 260-bet.) Doskada: jadval. Tipik xato: sulfat kislotani oxirgi tahlil qilish."
+    },
+    {
+      "title": "Dastlabki sinovlar: umumiy jadval",
+      "bullets": [
+        {
+          "text": "Dastlabki kimyoviy tekshirish birorta zaharli modda haqida to‘liq ma’lumot bermaydi, lekin avval nimani aniqlash zarurligini belgilaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sinovlar: oq mishyak, sianid kislotasi, nitrat va nitritlar, peshobda aminazin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "170"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har bir sinov uchun reaksiya tenglamasini yozish talab etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "170"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Modda",
+          "Reaktiv / usul",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Oq mishyak",
+            "Ko‘mir bilan qizdirish",
+            "Qoramtir-kul dog‘"
+          ],
+          [
+            "Sianid kislotasi",
+            "Oksalat, FeCl3+FeCl2, HCl",
+            "Ko‘k rang"
+          ],
+          [
+            "Nitrat/nitrit",
+            "Difenilamin + H2SO4",
+            "Zangori rang"
+          ],
+          [
+            "Nitrit (azobo‘yoq)",
+            "Sulfanil kislota + naftol",
+            "Qizil azobo‘yoq"
+          ],
+          [
+            "Aminazin (peshob)",
+            "H2SO4 + FeCl3; FPN",
+            "Qizil-pushti; qizil"
+          ]
+        ],
+        "caption": "Sinovlar (170-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi sinov qaysi rangni beradi — mashq. Doskada: jadval. Tipik xato: ranglarni chalkashtirish (ko‘k — sianid, zangori — nitrat)."
     },
     {
       "title": "Xavfsizlik va ishni tashkil etish",
@@ -928,7 +1713,7 @@
           "uncertain": false
         },
         {
-          "text": "Voqea: 12 yoshli o‘g‘il bola murdasining ichki a’zo bo‘laklari 2 plastmassa idishda keltirilgan; jigar sarg‘ayganligi va ob’ektlarda o‘ziga xos hid ko‘rsatilgan.",
+          "text": "Voqea: 12 yoshli o‘g‘il bola murdasining ichki a’zo bo‘laklari 2 plastmassa idishda keltirilgan; jigar sarg‘aygan, ob’ektlarda o‘ziga xos hid.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -939,6 +1724,66 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 12 daqiqa. Kutilayotgan natija: talaba chinnisimon bo‘laklar uchun oq mishyak sinovini (naychada qizdirish), o‘ziga xos hid uchun hid belgisiga mos sinovlarni rejalaydi va dastlabki taxminni asoslaydi. Kitob keysga tayyor javob bermaydi; javob oldingi slaydlardagi sinovlar asosida muhokama qilinadi. Tipik xato: bitta belgiga qarab yakuniy xulosa yozish."
+    },
+    {
+      "title": "1-keys: tahlil jadvali (to‘ldirish)",
+      "bullets": [
+        {
+          "text": "Keys jadvali uch ustundan iborat: muammo turi, kelib chiqish sabablari, hal etish yo‘llari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "171"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Chinni parchalari ko‘rinishidagi oq qo‘shimchalar oq mishyakni (arsenit angidridi) taxmin qildiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "170"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Sariq rang pikrin kislota, strixnin, xromatlar, azot kislotaga xos bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Muammo",
+          "Mumkin bo‘lgan sabab",
+          "Hal etish yo‘li"
+        ],
+        "rows": [
+          [
+            "Jigarda oq chinnisimon bo‘laklar",
+            "Oq mishyak (arsenit angidridi)",
+            "Pinset, naychada ko‘mir bilan qizdirish"
+          ],
+          [
+            "Jigar sarg‘aygan",
+            "Pikrin, azot kislota, xromat",
+            "pH va dastlabki kimyoviy sinovlar"
+          ],
+          [
+            "O‘ziga xos hid",
+            "Achchiq bodom hidi — sianid",
+            "Oksalat bilan sianid sinovi"
+          ]
+        ],
+        "caption": "Keys jadvali (171-bet)"
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kitobda jadval bo‘sh qoldirilgan; to‘ldirish 21, 169-170-betlardagi ma’lumotlar asosida o‘qituvchi uchun taxminiy yo‘nalish — yakuniy javob emas. Muhokama: qo‘shimcha ravishda qaysi tasdiqlovchi usul kerak (Marsh yoki Zanger-Blek, toks 75-76)? Tipik xato: dastlabki sinovni yakuniy deb hisoblash.",
+      "diagram_note": "Jadval to‘ldirilishi kitobdagi 21 va 169-170-betlar asosida taxminiy (kitobda javob berilmagan)."
     },
     {
       "title": "«Charxpalak» mashqi: alomatlar bo‘yicha taxmin",
@@ -1056,7 +1901,7 @@
           "uncertain": false
         },
         {
-          "text": "Dastlabki sinovlar: oq mishyak (naychada qizdirish), sianid (oksalat kislota, FeCl3+FeCl2, ko‘k rang), nitrat/nitrit (difenilamin, zangori rang), aminazin (qizil-pushti yoki qizil rang).",
+          "text": "Dastlabki sinovlar: oq mishyak (naychada qizdirish), sianid (ko‘k rang), nitrat/nitrit (difenilamin, zangori rang), aminazin (qizil-pushti yoki qizil).",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1082,10 +1927,10 @@
     {
       "question": "Idish ustidagi yozuvlar va yo‘llanma hujjatlar o‘rtasida farq bo‘lsa nima qilinadi?",
       "options": [
-        "Tahlil davom ettiriladi",
+        "Yozuv o‘zgartiriladi",
         "Uch kishilik hay’at ishtirokida dalolatnoma tuziladi",
         "Ob’ekt yo‘q qilinadi",
-        "Yozuv o‘zgartiriladi"
+        "Tahlil davom ettiriladi"
       ],
       "correct_index": 1,
       "explanation": "Farq bo‘lsa darhol uch kishilik hay’at ishtirokida dalolatnoma tuziladi va boshqa ashyoviy dalillar talab qilinadi.",
@@ -1114,10 +1959,10 @@
     {
       "question": "pH 3 yoki undan kichik bo‘lsa, bu nimadan dalolat beradi?",
       "options": [
-        "Ishqorlardan",
+        "Neytral birikmalardan",
         "Mineral kislotalar yoki ko‘p miqdorda organik kislotalardan",
         "Karbonatlardan",
-        "Neytral birikmalardan"
+        "Ishqorlardan"
       ],
       "correct_index": 1,
       "explanation": "pH 3 yoki kichik bo‘lsa: asosan mineral kislotalar yoki ko‘p miqdorda organik kislotalar.",
@@ -1148,10 +1993,10 @@
       "options": [
         "Zangori",
         "Qizil",
-        "Ko‘k",
-        "Sariq"
+        "Sariq",
+        "Ko‘k"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Sianid kislotasi bo‘lgan taqdirda FeCl3 va FeCl2 aralashmasi va HCl qo‘shilganda ko‘k rang hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1162,12 +2007,12 @@
     {
       "question": "Nitrat va nitritlar uchun dastlabki sinovda qaysi reaktiv ishlatiladi?",
       "options": [
-        "Difenilamin reaktivi va konsentrlangan sulfat kislotasi",
         "Kobalt atsetati",
         "Ammiakli kumush nitrat",
-        "Fuksinsulfit"
+        "Fuksinsulfit",
+        "Difenilamin reaktivi va konsentrlangan sulfat kislotasi"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Suvli eritmaga difenilamin reaktivi va konsentrlangan sulfat kislotasi qo‘shiladi; zangori rang nitrat va nitrit borligini ko‘rsatadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1178,10 +2023,10 @@
     {
       "question": "Nitrat/nitrit sinovi ijobiy bo‘lsa, azobo‘yoq reaksiyasida qanday rang hosil bo‘ladi?",
       "options": [
-        "Ko‘k",
+        "Qora",
         "Qizil",
-        "Yashil",
-        "Qora"
+        "Ko‘k",
+        "Yashil"
       ],
       "correct_index": 1,
       "explanation": "Eritmaga xlorid va sulfanil kislotalar aralashmasi hamda naftolning ishqoriy eritmasi qo‘shilsa, qizil rangli azobo‘yoq hosil bo‘ladi.",
@@ -1194,12 +2039,12 @@
     {
       "question": "Peshobda aminazin uchun 1 ml peshobga qancha reaktiv qo‘shiladi?",
       "options": [
-        "0,1 ml",
-        "1 ml",
         "5 ml",
-        "10 ml"
+        "0,1 ml",
+        "10 ml",
+        "1 ml"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "1 ml peshobga 1 ml reaktiv yoki 1 ml FPN reaktivi qo‘shiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1210,12 +2055,12 @@
     {
       "question": "FPN reaktivi tarkibida qaysi kislotalar bor?",
       "options": [
-        "HCl va H2SO4",
-        "HClO4 va HNO3",
         "CH3COOH va HCl",
-        "H3PO4 va H2SO4"
+        "H3PO4 va H2SO4",
+        "HClO4 va HNO3",
+        "HCl va H2SO4"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "FPN reaktivi: 5 ml 5% FeCl3, 45 ml 20% HClO4 va 50 ml 50% HNO3.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1227,9 +2072,9 @@
       "question": "Qaysi alomat ob’ektda sianidlar borligiga ishora qilishi mumkin?",
       "options": [
         "Achchiq bodom hidi",
+        "Piridin hidi",
         "Qora rang",
-        "Chinni parchalari",
-        "Piridin hidi"
+        "Chinni parchalari"
       ],
       "correct_index": 0,
       "explanation": "Achchiq bodom hidi ob’ekt tarkibida sianidlar borligidan dalolat berishi mumkin.",
@@ -1242,17 +2087,161 @@
     {
       "question": "Ob’ekt chirishi natijasida muhit nima uchun kislotali bo‘lishi mumkin?",
       "options": [
-        "CO2 ajralishi tufayli",
-        "H2S ajralishi hisobiga",
         "NH3 ajralishi tufayli",
-        "O2 ajralishi tufayli"
+        "O2 ajralishi tufayli",
+        "CO2 ajralishi tufayli",
+        "H2S ajralishi hisobiga"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Ob’ekt chirishi natijasida H2S ajralishi hisobiga muhit kislotali bo‘lishi mumkin.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "169"
+      }
+    },
+    {
+      "question": "Rangi, hidi va yot qo‘shimchalarni aniqlash sud kimyogariga nimaga imkon beradi?",
+      "options": [
+        "Birinchi navbatda qaysi zaharlarni izlash zarurligini bilishga",
+        "Zaharning miqdorini hisoblashga",
+        "Natijani rasmiylashtirishga",
+        "Ob’ektni konservalashga"
+      ],
+      "correct_index": 0,
+      "explanation": "Ob’ektning rangi, hidi va yot qoldiqlarini aniqlash birinchi navbatda qanday zaharli moddalarni izlash zarurligini bilishga imkon beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "169"
+      }
+    },
+    {
+      "question": "Oq mishyak sinovida chinni parchasi qo‘shimchasi naychada nima bilan qizdiriladi?",
+      "options": [
+        "Oksalat kislota bilan",
+        "Natriy ishqori bilan",
+        "Kichik ko‘mir parchasi bilan",
+        "Difenilamin bilan"
+      ],
+      "correct_index": 2,
+      "explanation": "Pinset bilan ajratilgan qo‘shimcha ingichka probirkaga solinib, kichik ko‘mir parchasi qo‘shiladi va kuchsiz alangada qizdiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "170"
+      }
+    },
+    {
+      "question": "Sianid kislotasi dastlabki sinovida buyum oynachasining ostki qismida nima bo‘ladi?",
+      "options": [
+        "Ishqor eritmasi tomchisi",
+        "Difenilamin eritmasi",
+        "FeCl3 tomchisi",
+        "Oksalat kislota kristallari"
+      ],
+      "correct_index": 0,
+      "explanation": "Oksalat kislota qo‘shilgan ob’ekt ustiga ostki qismida ishqor eritmasi tomchisi bo‘lgan buyum oynachasi yopiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "170"
+      }
+    },
+    {
+      "question": "Difenilamin bilan zangori rangni nitrat kislotadan tashqari yana qaysi moddalar beradi?",
+      "options": [
+        "Nitrit kislota va ayrim oksidlovchilar",
+        "Hech qaysi modda",
+        "Faqat sulfatlar",
+        "Faqat xloridlar"
+      ],
+      "correct_index": 0,
+      "explanation": "Difenilamin reaksiyasini nitrat kislotadan tashqari nitrit kislota va ayrim oksidlovchilar ham beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "261"
+      }
+    },
+    {
+      "question": "Sianid kislotasi murda organlarida nima uchun uzoq saqlanmaydi?",
+      "options": [
+        "Murdada hech qachon hosil bo‘lmaydi",
+        "U faqat chirish gazlari bilan chiqib ketadi",
+        "Gidrolizlanadi, rodanidlarga aylanadi va aldegidli qandlar bilan birikadi",
+        "Mineral kislotalar bilan to‘liq cho‘kadi"
+      ],
+      "correct_index": 2,
+      "explanation": "HCN gidrolizlanadi, rodanidlarga aylanadi, aldegid saqlovchi qandlar bilan birikadi (siangidrin) va CO2, glyukoza, havo ta’sirida o‘zgaradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "28"
+      }
+    },
+    {
+      "question": "Berlin zangorisining formulasi qaysi javobda to‘g‘ri berilgan?",
+      "options": [
+        "Fe(CNS)3",
+        "Fe4[Fe(CN)6]3",
+        "Fe(CN)2",
+        "Na4[Fe(CN)6]"
+      ],
+      "correct_index": 1,
+      "explanation": "Na4[Fe(CN)6] temir(III) xlorid bilan Fe4[Fe(CN)6]3 — berlin zangorisini hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "29"
+      }
+    },
+    {
+      "question": "Mishyak organizmda asosan qayerda to‘planadi?",
+      "options": [
+        "Faqat qonda",
+        "Faqat miyada",
+        "Parenxima organlari, suyak, teri va sochda",
+        "Faqat o‘pkada"
+      ],
+      "correct_index": 2,
+      "explanation": "Mishyak organizmda parenxima organlarida, suyak, teri va sochda to‘planadi; peshob, ichak va bezlar orqali juda sekin chiqariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "75"
+      }
+    },
+    {
+      "question": "Hg va As ni chinni kabi bo‘lakchalardan taxminiy tekshirish qaysi usulda bajariladi?",
+      "options": [
+        "Kjeldal usulida",
+        "Dragendorf usulida",
+        "Marsh usulida",
+        "Reynsh usulida"
+      ],
+      "correct_index": 3,
+      "explanation": "Oq margimush bilan zaharlanganni ko‘rsatuvchi chinni kabi bo‘lakchalarni tekshirish (Hg va As) Reynsh usulida o‘tkaziladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "12"
+      }
+    },
+    {
+      "question": "Konsentrlangan (68%) nitrat kislota uchun LD50 qancha?",
+      "options": [
+        "100 ml",
+        "8-10 ml",
+        "1-2 ml",
+        "50-60 ml"
+      ],
+      "correct_index": 1,
+      "explanation": "Konsentrlangan nitrat kislota (68%) uchun LD50 = 8-10 ml.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "144"
       }
     }
   ],
@@ -1295,7 +2284,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 16, 20-21, 166, 168-172"
+      "pages": "b. 12, 16, 20-21, 28-29, 75, 144, 166, 168-172, 260-262"
     },
     {
       "author": "Yuldashev Z.A., Nurmatova M.I.",

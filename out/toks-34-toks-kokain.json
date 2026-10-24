@@ -1,1547 +1,2342 @@
 {
-  "topic": "Kokain va kokain saqlovchi preparatlar; biosuyuqliklardan ajratish va tahlil",
-  "slides": [
+ "topic": "Kokain va kokain saqlovchi preparatlar; biosuyuqliklardan ajratish va tahlil",
+ "slides": [
+  {
+   "title": "Ma’ruza rejasi va tayanch iboralar",
+   "bullets": [
     {
-      "title": "Ma’ruza rejasi va tayanch iboralar",
-      "bullets": [
-        {
-          "text": "Ma’ruza mavzusi: kokain, kokain saqlovchi preparatlar, ularni biosuyuqliklardan ajratib olish va tahlil qilish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reja: koka tarixi va o‘simligi, preparat turlari, ta’siri, toksikokinetika, ishlab chiqarish, rangli va xromatografik tahlil.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54-59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tayanch so‘zlar: ekgonin, benzoilekgonin, kokain pastasi, krek, Skott reaksiyasi, YuQX, YuSSX.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55-59"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: kokain nima uchun giyohvandlik vositalari orasida alohida o‘rin tutadi? Doskada: ma’ruzaning 4 bo‘limi: tarix, preparatlar, toksikokinetika, tahlil. Tipik xato: kokainni faqat «giyohvand modda» deb o‘ylab, uning alkaloid ekanini va tahlil sxemasini unutish."
-    },
-    {
-      "title": "Koka va kokain tarixi",
-      "bullets": [
-        {
-          "text": "Janubiy Amerika hindulari koka butasi barglarini 5000 yildan beri diniy marosimlarda, charchoq va ochlik hissini kamaytirish uchun ishlatgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kokain koka bargidan 1859 yilda Gettingen universitetida Albert Nieman tomonidan ajratib olingan, 1902 yilda sintez qilingan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "18-19-asrlarda kokain «zararsiz» stimulyator va og‘riq qoldiruvchi sifatida dori vositalari, ichimliklar, vino va shirinliklar tarkibiga kiritilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kokain avval «zararsiz» deb hisoblangan? Doskada: vaqt chizig‘i: 1859 (ajratish) - 1902 (sintez). Tipik xato: ajratib olish va sintez yillarini aralashtirish. Izoh: kitobda universitet nomi «Gottingem» deb yozilgan; slaydda umumiy qabul qilingan imlo berildi."
-    },
-    {
-      "title": "Taqiqlanishi: «Koka-kola» va 1961 yilgi konvensiya",
-      "bullets": [
-        {
-          "text": "1886 yilda dorishunos Djon Pemberton tarkibiga kokain qo‘shilgan «Koka-kola» ichimligini ishlab chiqargan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ichimlik qaramlik chaqirgani uchun 1904 yilda AQSh hukumati tomonidan taqiqlangan; 1914 yildan boshqa davlatlarda ham choralar ko‘rila boshlangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "1961 yilda «Giyohvandlik vositalarini nazorat qilish» xalqaro konvensiyasi qabul qilingan; unga binoan kokain taqiqlangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaramlik ichimlik taqiqiga qanday sabab bo‘lgan? Doskada: 1886 - 1904 - 1914 - 1961 yillar zanjiri. Tipik xato: konvensiya yilini AQSh taqiqi bilan aralashtirish."
-    },
-    {
-      "title": "Koka o‘simligi",
-      "bullets": [
-        {
-          "text": "Koka butasining vatani Peru va Boliviya; hozirgi vaqtda yovvoyi holda umuman uchramaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qadimdan madaniylashtirilgan: avval hindular, XX asrda Yava va Shri-Lanka orollarida, Janubi-sharqiy Osiyoda, keyinroq Afrikada plantatsiyalar tashkil qilingan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Erythroxylon oilasida 200 tur ma’lum, 17 turi kokain yig‘adi; kokain ko‘p bo‘lgani uchun faqat Erythroxylon coca va E. novogranatense o‘stiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega plantatsiyalarda faqat ikki tur o‘stiriladi? Doskada: 200 - 17 - 2 raqamlar zanjiri. Tipik xato: 17 turni plantatsiya turlari deb o‘ylash."
-    },
-    {
-      "title": "Koka bargi alkaloidlari",
-      "bullets": [
-        {
-          "text": "Barglarda turli alkaloidlar 0,5-1,5% miqdorida bo‘lib, asosiysi kokain; uning ulushi umumiy alkaloidlarning 30% ini tashkil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54-55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qolganlari ekgonin hosilalari: metilekgonin, sis- va trans-sinnamoilkokain, benzoilekgonin, tropakokain, truksillin kislota.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ekgoninning hamma hosilalari sanoatda kokainni yarimsintez qilish uchun ishlatiladi; barglarda gigrin va kuskgigrin ham uchraydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekgonin hosilalari nima uchun tahlilda muhim? Doskada: kokain - ekgonin hosilalari qatori (metil-, benzoil-, sinnamoil-). Tipik xato: benzoilekgoninni kokainning o‘zi deb hisoblash: u metabolit va alkaloid hosilasidir."
-    },
-    {
-      "title": "Koka bargi va kokain pastasi",
-      "bullets": [
-        {
-          "text": "Koka barglari qora bozorda tarqatiladigan «Coca mate» choyi tayyorlashda ishlatiladi; u kofega nisbatan yengil stimulyator.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kokain pastasi (kokain sulfat) «basuco», «basa», «pitillo», «testo» nomlari bilan uchraydi; past navli giyohvand vosita.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Pasta Janubiy Amerikada past tabaqa aholisi orasida keng tarqalgan; u koka bargiga ishlov berishdagi oraliq mahsulotdir.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: pasta va gidroxlorid o‘rtasidagi farq nima? Doskada: barg - pasta - asos - gidroxlorid zanjiri. Tipik xato: pastani tayyor yuqori tozalikdagi mahsulot deb o‘ylash."
-    },
-    {
-      "title": "Kokain gidroxlorid",
-      "bullets": [
-        {
-          "text": "Oq kristall kukun («chow»), odatda hidsiz; katta rangsiz kristallar («rock») holida ham uchraydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qon tomirga yuborish yoki kokain asosini olish uchun ishlatiladi; unda kokain miqdori 80-90% ni tashkil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "«Ko‘cha savdosi» uchun 12-50% gacha pirasetam, kofein, lidokain, prokain, benzokain, shakar va kraxmal qo‘shib suyultiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qo‘shimchalar tahlilga qanday ta’sir qiladi? Doskada: tarkib: kokain 80-90%, qo‘shimchalar ro‘yxati. Tipik xato: namunadagi barcha chiziqlarni kokainga tegishli deb hisoblash. Izoh: qo‘shimchalar (benzokain, prokain) 59-betdagi YuQX jadvalida ham berilgan."
-    },
-    {
-      "title": "Kokain asosi va boshqa ko‘rinishlar",
-      "bullets": [
-        {
-          "text": "«Qo‘ng‘ir» kokain giyohvandni maskirovka qilish uchun (eruvchan kofe yoki choy ko‘rinishida) tayyorlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "«Qora» kokain polimer material bilan aralashtiriladi; undan haykalchalar, diplomat va ushlagichlar yasaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Koka bargi va kokain — insonga ma’lum eng kuchli o‘simlik asosidagi stimulyatorlardandir.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Kokain ko‘rinishlari",
-        "nodes": [],
-        "header": [
-          "Nomi",
-          "Tavsifi"
-        ],
-        "rows": [
-          [
-            "Kokain asosi",
-            "«krek», «freebase»; gidroxloriddan olinadi"
-          ],
-          [
-            "«Qo‘ng‘ir» kokain",
-            "kobalt/temir xlorid bilan; ~40% kokain"
-          ],
-          [
-            "«Qora» kokain",
-            "kokain tuzi + polimer material"
-          ],
-          [
-            "«Spidbol»",
-            "kokain va geroinning teng aralashmasi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: «qo‘ng‘ir» va «qora» kokain nima uchun tayyorlanadi? Doskada: to‘rt ko‘rinish jadvali. Tipik xato: «spidbol»ni faqat kokain deb o‘ylash: u geroin bilan aralashma."
-    },
-    {
-      "title": "Kokainning ta’siri: dastlabki belgilar",
-      "bullets": [
-        {
-          "text": "Kokain inson miyasining dofaminergik tizimiga ta’sir ko‘rsatadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Belgilar: emotsional hayajon, quvvat va energiya, aqliy faoliyatning «shiddatlashuvi», uyqu moyilligining pasayishi, ishtahaning yo‘qolishi, vaznning kamayishi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shuningdek: «kokain burgalari» chaqishidan teri qizarishi, ko‘z qorachig‘ining kengayishi, tushunarsiz gapirish, titroq, uyqusizlik, surunkali shamollash.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qorachiq kengayishi nega muhim belgi? Doskada: belgilar guruhi: ruhiy / jismoniy / teri. Tipik xato: ta’sirni faqat ruhiy belgilar bilan cheklash."
-    },
-    {
-      "title": "Og‘ir ta’sirlar va asoratlar",
-      "bullets": [
-        {
-          "text": "Konvulsiya, tirishish, depressiya, alahsirash, yolg‘on va irratsional g‘oyalar, gallyusinatsiyalar kuzatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55-56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nafas olishning qiyinlashishi, o‘pka shishishi va nafas to‘xtashi mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yurak-qon tomir muammolari: aritmiya, infarkt, yurak to‘xtashi, serebral infarkt, insult; o‘zini o‘ldirishga moyillik.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55-56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi asoratlar o‘limga eng yaqin? Doskada: nafas va yurak-qon tomir asoratlari ustunlari. Tipik xato: o‘limni faqat doza bilan bog‘lash: individual sezgirlik 56-betda ham aytilgan."
-    },
-    {
-      "title": "Yarim chiqish davri",
-      "bullets": [
-        {
-          "text": "Yarim chiqish davri modda bo‘yicha farq qiladi: kokain daqiqalarda, metabolitlari soatlarda o‘lchanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Benzoilekgonin va metilekgonin kokaindan uzoqroq saqlanadi, shuning uchun metabolitlar tahlilda muhim.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Yarim chiqish davri",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "T1/2"
-        ],
-        "rows": [
-          [
-            "Kokain",
-            "38-67 daqiqa"
-          ],
-          [
-            "Benzoilekgonin",
-            "4-6 soat"
-          ],
-          [
-            "Metilekgonin",
-            "2,5-7,6 soat"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi modda tahlilda uzoq muddat aniqlanadi? Doskada: uch modda T1/2 jadvali. Tipik xato: yarim chiqish davrini aniqlash muddati bilan aralashtirish."
-    },
-    {
-      "title": "Kokain biosamaradorligi",
-      "bullets": [
-        {
-          "text": "Biosamaradorlik qabul qilish yo‘liga bog‘liq: og‘iz va burun orqali 20-40%, chekilganda 6-32%.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qon tomirga yuborilganda biosamaradorlik 100% ni tashkil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Biosamaradorlik",
-        "nodes": [],
-        "header": [
-          "Yo‘li",
-          "Ulushi"
-        ],
-        "rows": [
-          [
-            "Og‘iz orqali",
-            "20-40%"
-          ],
-          [
-            "Burun orqali",
-            "20-40%"
-          ],
-          [
-            "Chekilganda",
-            "6-32%"
-          ],
-          [
-            "Qon tomirga",
-            "100%"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qon tomirga yuborilganda ta’sir tezroq va kuchliroq? Doskada: yo‘llar bo‘yicha foizlar. Tipik xato: chekishni to‘liq so‘rilish deb hisoblash."
-    },
-    {
-      "title": "Kokain dozalari",
-      "bullets": [
-        {
-          "text": "Klinik doza 1,5 mg/kg; ilgari qabul qilmagan inson uchun o‘limga olib keluvchi doza 200 mg.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bir martalik «ko‘cha» dozasi 15-60 mg.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Burunga yuborish uchun («dorojka», 3-5 sm uzunlikda) 10-20 mg dan 50-100 mg gacha.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: klinik va «ko‘cha» dozasini solishtiring. Doskada: dozalar ustuni: klinik - ko‘cha - o‘limli. Tipik xato: mg/kg va mg birliklarini aralashtirish."
-    },
-    {
-      "title": "Toksik va letal doza",
-      "bullets": [
-        {
-          "text": "Og‘iz orqali qabul qilinganda toksik doza 500 mg, letal doza 1,2 g.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Individual hollarda letal doza 20 mg gacha kamayishi yoki 8-10 g gacha ko‘payishi mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kitobda ilgari qabul qilmagan inson uchun o‘limga olib keluvchi doza 200 mg deb ham berilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bir xil doza turli odamda har xil ta’sir qiladi? Doskada: 20 mg - 1,2 g - 8-10 g shkalasi. Tipik xato: yagona «o‘limli doza»ni mutlaq deb hisoblash. Izoh: kitobda 200 mg (qabul qilmagan inson) va 1,2 g (og‘iz orqali letal) ikki xil ko‘rsatilgan; ikkalasi ham 56-betda, slaydda sharti bilan berildi."
-    },
-    {
-      "title": "Chiqarilishi va metabolitlar",
-      "bullets": [
-        {
-          "text": "Bir martalik dozaning 90-95% i siydik orqali 2-3 kun davomida chiqariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Asosan metabolitlar holida chiqariladi; norkokain va gidroksillangan metabolitlar 10% gacha.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Siydikdagi ulushlar",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Ulushi"
-        ],
-        "rows": [
-          [
-            "Kokain",
-            "1-9%"
-          ],
-          [
-            "Benzoilekgonin",
-            "35-60%"
-          ],
-          [
-            "Metilekgonin",
-            "32-49%"
-          ],
-          [
-            "Ekgonin",
-            "1-8%"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega siydikda asosan metabolitlar izlanadi? Doskada: to‘rt modda ulushi jadvali. Tipik xato: o‘zgarmagan kokainni asosiy chiqarilish shakli deb hisoblash. Izoh: metabolizm sxemasi kitobda 1-rasm (57-bet) sifatida chizma holda berilgan; matni yo‘q."
-    },
-    {
-      "title": "Siydikda aniqlash muddati va maxsus belgilar",
-      "bullets": [
-        {
-          "text": "Bir martalik dozada o‘zgarmagan kokain siydikda 8-24 soat, benzoilekgonin va metilekgonin holida 48 soat mobaynida aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Surunkali qabul qilinganda aniqlash vaqti 5 kunga uzayadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Siydikda benzoilekgoninning etil efiri aniqlansa, kokain va alkogol bir vaqtda qabul qilingan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Angidroekgoninning metil efiri aniqlansa, krek yoki kokain asosi chekilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ikki maxsus metabolit qanday xulosaga olib keladi? Doskada: 4 ta muddat/belgi. Tipik xato: metabolit nomini aralashtirish. Izoh: kitobda «benzilekgonin» deb yozilgan joylar bor; kontekstga ko‘ra benzoilekgonin nazarda tutiladi."
-    },
-    {
-      "title": "Kokain pastasini olish",
-      "bullets": [
-        {
-          "text": "Mayda qirqilgan barglar suv va ohak (potash) eritmalari bilan aralashtirilib, bo‘ktiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Barglar kerosin bilan ekstraksiya qilinadi; ajratma nordon suv bilan qayta ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suvli qism ohak va ammiak bilan ishqoriylanadi: tozalanmagan kokain cho‘kadi, quritiladi — pasta.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Kokain pastasi olinishi",
-        "nodes": [
-          "Barg + suv, ohak (potash)",
-          "Kerosin bilan ekstraksiya",
-          "Nordon suv bilan reekstraksiya",
-          "Ohak + ammiak: ishqoriy muhit",
-          "Cho‘kma quritiladi: pasta"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kerosinli ajratma nordonlashtirilgan suv bilan qayta ishlanadi? Doskada: 5 bosqichli zanjir. Tipik xato: ishqoriy muhitdan keyingi cho‘kmani tayyor gidroxlorid deb o‘ylash."
-    },
-    {
-      "title": "Kokain asosi va gidroxloridni olish",
-      "bullets": [
-        {
-          "text": "Pasta suyultirilgan sulfat kislotada eritilib, pushti rang hosil bo‘lguncha KMnO4 eritmasi qo‘shiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "57"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bir necha kundan so‘ng filtrlanadi; filtrat ammiak bilan ishqoriylanadi — cho‘kma kokain asosi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "57"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tozalangan asos efirda eritilib, kons. HCl va aseton qo‘shiladi — kokain gidroxlorid cho‘kadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "57"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Pastadan gidroxloridgacha",
-        "nodes": [
-          "Pasta + suyult. H2SO4",
-          "KMnO4 — pushti ranggacha",
-          "Bir necha kun, filtrlash",
-          "Ammiak: kokain asosi",
-          "Efir + HCl + aseton"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: KMnO4 qaysi vazifani bajaradi? Doskada: pasta - asos - gidroxlorid zanjiri. Tipik xato: asos va gidroxloridni bir xil modda deb hisoblash. Izoh: kitobda KMnO4 qo‘shilishining kimyoviy sababi tushuntirilmagan."
-    },
-    {
-      "title": "Ishlab chiqarish uchun reagent sarfi",
-      "bullets": [
-        {
-          "text": "100 kg kokain gidroxlorid uchun 100-400 l sulfat kislota, 20 kg kaliy permanganat va 30 l xlorid kislota ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "57"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bundan tashqari 1500-2000 l aseton yoki dietil efiri yoki metiletilketon yoki toluol sarflanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "57"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ma’lumotlarga ko‘ra 1 ga maydondan bir marta yig‘ilgan koka barglaridan 5 kg kokain olish mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "57"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: reagentlar sarfi nazoratda nega muhim? Doskada: 100 kg - 20 kg KMnO4 - 30 l HCl nisbatlari. Tipik xato: erituvchilarni ham «kislota» deb hisoblash. Izoh: bu bo‘lim prekursorlar nazorati (39-dars) bilan bog‘lanadi."
-    },
-    {
-      "title": "Prekursorlar: kokain ishlab chiqarishdagi o‘rni",
-      "bullets": [
-        {
-          "text": "Aseton, metiletilketon, toluol va dietil efiri prekursorlar ro‘yxatida erituvchi sifatida ko‘rsatilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sulfat va xlorid kislotalar ro‘yxatda reaktiv sifatida ko‘p giyohvandlik vositalari tayyorlashda ishlatilishi bilan keltirilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aseton ro‘yxatda pervitin, LSD, kokain, geroin va boshqalarni tayyorlashda erituvchi sifatida ko‘rsatilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega oddiy erituvchi va kislotalar nazoratga olingan? Doskada: kokain zanjiridagi 5 modda: H2SO4, KMnO4, HCl, aseton, toluol. Tipik xato: prekursorlarni faqat giyohvandlik vositasining o‘zi deb hisoblash. Izoh: prekursorlar bobi (39-dars): gmt 146-154."
-    },
-    {
-      "title": "Biosuyuqliklardan ajratib olish",
-      "bullets": [
-        {
-          "text": "Kokain qon, siydik va boshqa biologik suyuqliklardan ishqoriy muhitda (pH 7,0-8,5) xloroform bilan yaxshi ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "U qisman kislotali muhitda ham ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ekstraktdan oz hajm olinib, erituvchi parlatiladi va qoldiq xlorid kislotada eritiladi; shu eritma bilan reaksiyalar o‘tkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega pH 7,0-8,5 tanlanadi? Doskada: ekstraksiya: pH - xloroform - parlatish - HCl. Tipik xato: kuchli ishqoriy muhitni tanlash: gidroliz xavfi ortadi. Izoh: kitobda pH tanlash sababi izohlanmagan; faqat diapazon berilgan."
-    },
-    {
-      "title": "Cho‘ktiruvchi reaktivlar va KMnO4 mikrokristallari",
-      "bullets": [
-        {
-          "text": "Mayer, Bushard, Dragendorf reaktivlari va pikrin kislotasi bilan kokain asosan amorf cho‘kmalar hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kaliy permanganat va xlorid kislota ishtirokida kokain to‘g‘ri to‘rtburchak shaklidagi qizil-binafsha kristallar hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ikkala reaksiya ham ajratmadan olingan, xlorid kislotada eritilgan namuna bilan o‘tkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: amorf cho‘kma va kristall farqini tushuntiring. Doskada: ikki ustun: amorf - kristall. Tipik xato: amorf cho‘kmani aniqlovchi natija deb hisoblash. Izoh: kitob matnida kristallar «qizil-binafsha», 61-betdagi test javoblarida «pushti» deyilgan; matn varianti olindi. Kitobda «Maer» yozilgan, «Mayer» deb berildi."
-    },
-    {
-      "title": "Skott reaksiyasi",
-      "bullets": [
-        {
-          "text": "Reaktiv: kobalt tiotsionatning 2% eritmasi va 96% glitserin (1:1) aralashmasi; namunaga 5 tomchi qo‘shiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kokain bo‘lsa ko‘k rang hosil bo‘ladi; 1-2 tomchi konsentrlangan HCl rangni o‘chiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "So‘ng bir necha tomchi xloroform qo‘shilsa, u to‘q ko‘k rangga bo‘yaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Skott reaksiyasi bosqichlari",
-        "nodes": [
-          "Namuna + reaktiv (5 tomchi)",
-          "Ko‘k rang",
-          "+ kons. HCl: rang o‘chadi",
-          "+ xloroform",
-          "Xloroform: to‘q ko‘k"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun rang HCl bilan o‘chib, xloroformda qaytadi? Doskada: 5 bosqichli rang o‘zgarishi. Tipik xato: ko‘k rangni yagona dalil deb hisoblash: reaksiya dastlabki. Izoh: p.91 da fensiklidin ham Skott reaktivi bilan ko‘k beradi (38-dars)."
-    },
-    {
-      "title": "Gidroliz, hid va farmakologik sinovlar",
-      "bullets": [
-        {
-          "text": "Suvli ajratma 2 tomchi kons. HCl bilan gidrolizlanib, etil spirti qo‘shiladi: benzoy etil efirining o‘ziga xos hidi keladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Hid bo‘yicha: quruq material KOH ning metanoldagi eritmasi bilan ho‘llanadi, ortiqcha spirt parlatilgach hid standart namuna bilan solishtiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Farmakologik: kokain eritmasi mushukning bir ko‘ziga tomizilganda qorachiq kengayadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kokain kukunini til uchida sezish qobiliyatining pasayishi bilan ham aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: farmakologik va hid sinovlari qaysi hollarda yordamchi? Doskada: 4 sinov ro‘yxati. Tipik xato: bu sinovlarni tasdiqlovchi usul deb hisoblash. Izoh: til uchidagi sinov xavfsizlik jihatidan zamonaviy laboratoriyada qo‘llanmaydi; tarixiy usul sifatida berildi."
-    },
-    {
-      "title": "YuQX: erituvchi sistemalari",
-      "bullets": [
-        {
-          "text": "Qo‘zg‘almas faza sifatida Sorbton, Sorbfil yoki Kizelgel G 60 plastinkalari ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kokain va metabolitlarining natijalari Rf100 ko‘rsatkichi bilan 3-jadvalda berilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Erituvchi sistemalari",
-        "nodes": [],
-        "header": [
-          "Sistema",
-          "Tarkibi"
-        ],
-        "rows": [
-          [
-            "№1",
-            "Xloroform:dioksan:etilasetat:NH3 (25:60:10:5)"
-          ],
-          [
-            "№2",
-            "Metanol : ammiak 25% (100:1,5)"
-          ],
-          [
-            "№3",
-            "Siklogeksan:toluol:dietilamin (75:15:10)"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun bir necha sistema ishlatiladi? Doskada: uch sistema tarkibi. Tipik xato: Rf100 ni Rf bilan aralashtirish: Rf100 = Rf x 100."
-    },
-    {
-      "title": "YuQX natijalari: kokain va metabolitlari",
-      "bullets": [
-        {
-          "text": "Kokain uch sistemada ham aniq qiymat beradi: 81, 59 va 56.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ekgonin va benzoilekgonin №1 va №3 sistemada start chizig‘ida qoladi (Rf100 = 0).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf100 (3-jadval)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf100 №1/2/3"
-        ],
-        "rows": [
-          [
-            "Kokain",
-            "81 / 59 / 56"
-          ],
-          [
-            "Ekgonin",
-            "0 / 84 / 0"
-          ],
-          [
-            "Metilekgonin",
-            "61 / 65 / 44"
-          ],
-          [
-            "Benzoilekgonin",
-            "0 / 25 / 0"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metabolitlarni YuQX da kokaindan qanday ajratamiz? Doskada: Rf100 jadvali. Tipik xato: bitta sistema natijasi bilan xulosa qilish."
-    },
-    {
-      "title": "YuQX natijalari: qo‘shimchalar va metadon",
-      "bullets": [
-        {
-          "text": "Sinnamoilkokain, benzokain, metadon va prokain kokain bilan solishtirish uchun jadvalga kiritilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Benzokain va prokain kokain preparatlariga qo‘shiladigan moddalar sifatida ham ko‘rsatilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "55, 59"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf100 (3-jadval)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf100 №1/2/3"
-        ],
-        "rows": [
-          [
-            "Sinnamoilkokain",
-            "83 / 59 / 51"
-          ],
-          [
-            "Benzokain",
-            "77 / 80 / 11"
-          ],
-          [
-            "Metadon",
-            "75 / 41 / 74"
-          ],
-          [
-            "Prokain",
-            "61 / 55 / 10"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi modda kokainga eng yaqin Rf beradi? Doskada: kokain 81/59/56 bilan taqqoslash. Tipik xato: bitta sistemada yaqin Rf ni bir modda deb hisoblash: sinnamoilkokain №2 da kokain bilan bir xil (59)."
-    },
-    {
-      "title": "YuSSX usuli",
-      "bullets": [
-        {
-          "text": "Tahlil «Milixrom 4» xromatografida o‘tkaziladi; kolonka KAX-4 (62x2 mm).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Elyuent: fosfat buferi va asetonitrilning 80:20 nisbatdagi aralashmasi; elyuirlash tezligi 100 mkl/daq.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Deteksiyalash to‘lqin uzunliklari: 210, 234, 254, 276 va 302 nm.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: YuSSX da nega bir necha to‘lqin uzunligi ishlatiladi? Doskada: kolonka - elyuent - detektor. Tipik xato: bu sharoitni umumiy deb bilish: kitobda bu «uslublardan biri»."
-    },
-    {
-      "title": "UB-spektrofotometrik miqdoriy tahlil",
-      "bullets": [
-        {
-          "text": "Namunadan 10-15 mg aniq tortma olinib, 50 ml tozalangan (2-3 tomchi kons. HCl bilan nordonlashtirilgan) suvda eritiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Olingan eritmadan 5 ml 50 ml o‘lchov kolbasiga solinadi va belgigacha tozalangan suv bilan yetkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "UB spektrdan 234 nm dagi optik zichlik aniqlanadi; kokain gidroxlorid konsentratsiyasi kalibrlash chizig‘idan topiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Namunadagi kokain miqdori ko‘rsatilib, dalolatnoma rasmiylashtiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "59"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: kalibrlash chizig‘i qanday tuziladi? Doskada: suyultirish ketma-ketligi: tortma - 50 ml - 5 ml - 50 ml. Tipik xato: optik zichlikni to‘lqin uzunligi bilan aralashtirish. Izoh: hisoblash formulasi kitobda rasm sifatida berilgan; matn ko‘rinishida yo‘q."
-    },
-    {
-      "title": "Tahlilning umumiy sxemasi",
-      "bullets": [
-        {
-          "text": "Ajratib olish: ishqoriy muhitda (pH 7,0-8,5) xloroform bilan; qoldiq xlorid kislotada eritiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dastlabki: cho‘ktiruvchi reaktivlar, KMnO4 mikrokristallari va Skott reaksiyasi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tasdiqlash va miqdor: YuQX (Rf100), YuSSX, UB-spektrofotometriya (234 nm).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58-59"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Kokain tahlili",
-        "nodes": [
-          "Ajratib olish (xloroform)",
-          "Dastlabki rangli reaksiyalar",
-          "Mikrokristall reaksiya",
-          "YuQX / YuSSX",
-          "UB-SF miqdori, dalolatnoma"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: dastlabki reaksiya va tasdiqlovchi usul farqi nima? Doskada: 5 qadamli sxema. Tipik xato: dastlabki reaksiya natijasini yakuniy xulosa deb yozish."
-    },
-    {
-      "title": "Siydikda skrining va tasdiqlash chegarasi",
-      "bullets": [
-        {
-          "text": "Siydik skriningida kokain uchun cutoff 300 ng/ml, tasdiqlashda esa benzoilekgonin uchun 150 ng/ml.",
-          "source": {
-            "author": "Malaka materiali №107",
-            "title": "TGK metabolizmi va ajralishi; biosuyuqliklarda aniqlash muddatlari, skrining va tasdiqlash cutoff qiymatlari (BMT 1993, CDRH 1997, Cone 1996 manbalaridan)",
-            "page": "cutoff jadvali"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kokain siydikda qabul qilgandan 2-6 soat o‘tgach aniqlanadi va 48-72 soat davomida aniqlanishi mumkin (bir martalik qabul).",
-          "source": {
-            "author": "Malaka materiali №042",
-            "title": "Narkotiklarni siydikda aniqlash intervallari (CDRH, 1997)",
-            "page": "kokain qatori"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kitobga ko‘ra o‘zgarmagan kokain 8-24 soat, metabolitlari 48 soat aniqlanadi; manbalardagi farq ma’lumot turi bilan bog‘liq.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: cutoff nima uchun kerak va nega skrining/tasdiqlash qiymatlari farq qiladi? Doskada: 300 ng/ml (skrining) va 150 ng/ml (tasdiqlash). Tipik xato: cutoff dan past natijani «kokain qabul qilinmagan» deb yozish. Izoh: malaka №107 va №042 qiymatlari AQSh (CDRH 1997, Cone 1996) manbalaridan; O‘zbekiston me’yori emas, shuning uchun qo‘shimcha ma’lumot sifatida berilgan."
-    },
-    {
-      "title": "Amaliy keys: siydikda kokaetilen",
-      "bullets": [
-        {
-          "text": "Keys: sud-kimyo ekspertizasiga biologik ob’ekt sifatida siydik keltirilgan; ajratma GX-MS da tahlil qilinganda kokaetilen topilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "61"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Topshiriq: tahlil natijasini izohlang va muammo jadvalini to‘ldiring (muammo turi, kelib chiqish sabablari, hal etish yo‘llari).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "61"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Siydikda benzoilekgoninning etil efiri kokain va alkogol birga qabul qilinganini ko‘rsatadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: kokain va alkogol birgalikda qabul qilinganini qanday isbotlash mumkin? Doskada: keys jadvali: muammo - sabab - yechim. Tipik xato: kokaetilen va benzoilekgonin etil efirini bir modda deb yozish. Izoh: kitob keysda «kokaetilen» deydi, 56-betda esa «benzoilekgoninning etil efiri»; ikki atama kitobda bog‘lanmagan, talaba o‘qituvchi bilan aniqlashtirsin."
-    },
-    {
-      "title": "Xulosa va nazorat savollari",
-      "bullets": [
-        {
-          "text": "Kokain koka bargining asosiy alkaloidi (umumiy alkaloidlarning 30% i); preparatlari: pasta, gidroxlorid, asos (krek).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "54-55"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Siydikda asosan metabolitlar topiladi (benzoilekgonin 35-60%, metilekgonin 32-49%).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "56"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tahlil: pH 7,0-8,5 da xloroform bilan ajratish, Skott va KMnO4 reaksiyalari, YuQX, YuSSX, UB-SF (234 nm).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "58-59"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nazorat savollari: kokain qaysi o‘simlikdan, qanday ajratiladi; metabolitlari; mikrokristall reaksiyalar; murda alkaloidlaridan farqlash.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "80"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uchta asosiy xulosani o‘z so‘zingiz bilan ayting. Doskada: bir satrli sxema: ajratish - reaksiya - xromatografiya - UB-SF. Tipik xato: nazorat savollarini yodlab, usullarni bog‘lamaslik. Izoh: murda alkaloidlaridan farqlash savoli 80-betda berilgan, lekin kitob javobni bermaydi."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Kokain koka bargidan qaysi yilda ajratib olingan?",
-      "options": [
-        "1859",
-        "1886",
-        "1902",
-        "1961"
-      ],
-      "correct_index": 0,
-      "explanation": "Kitobga ko‘ra kokain 1859 yilda Gettingen universitetida Albert Nieman tomonidan ajratib olingan; 1902 yilda sintez qilingan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "54"
-      }
-    },
-    {
-      "question": "Koka bargidagi umumiy alkaloidlarning qancha qismini kokain tashkil qiladi?",
-      "options": [
-        "10%",
-        "30%",
-        "60%",
-        "90%"
-      ],
-      "correct_index": 1,
-      "explanation": "Barglardagi alkaloidlar 0,5-1,5% bo‘lib, kokain ulushi umumiy alkaloidlarning 30% ini tashkil qiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "54-55"
-      }
-    },
-    {
-      "question": "Kokain pastasi nima?",
-      "options": [
-        "Kokain gidroxloridning toza kristallari",
-        "Koka bargiga ishlov berishdagi oraliq mahsulot (kokain sulfat)",
-        "Kokain va geroinning teng aralashmasi",
-        "Kokain tuzining polimer bilan aralashmasi"
-      ],
-      "correct_index": 1,
-      "explanation": "Pasta (kokain sulfat) — past navli giyohvand vosita va koka bargiga ishlov berishdagi oraliq mahsulot.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "55"
-      }
-    },
-    {
-      "question": "«Spidbol» qanday aralashma?",
-      "options": [
-        "Kokain va geroinning teng nisbatdagi aralashmasi",
-        "Kokain va kofeinning aralashmasi",
-        "Kokain tuzining kobalt xlorid bilan aralashmasi",
-        "Kokain tuzining polimer bilan aralashmasi"
-      ],
-      "correct_index": 0,
-      "explanation": "Qora bozorda «spidbol» kokain va geroinning teng nisbatdagi aralashmasi bo‘lib, «qora» kokain esa polimer bilan aralashma.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "55"
-      }
-    },
-    {
-      "question": "Kokainning qon tomirga yuborilgandagi biosamaradorligi qancha?",
-      "options": [
-        "6-32%",
-        "20-40%",
-        "50%",
-        "100%"
-      ],
-      "correct_index": 3,
-      "explanation": "Biosamaradorlik: og‘iz va burun orqali 20-40%, chekilganda 6-32%, qon tomirga yuborilganda 100%.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "56"
-      }
-    },
-    {
-      "question": "Siydikda benzoilekgoninning etil efirini aniqlash nimani bildiradi?",
-      "options": [
-        "Kokain asosi chekilganini",
-        "Kokain va alkogol bir vaqtda qabul qilinganini",
-        "Surunkali qabul qilinganini",
-        "Kokain murdada parchalanganini"
-      ],
-      "correct_index": 1,
-      "explanation": "Benzoilekgonin etil efiri kokain va alkogol birga qabul qilinganini, angidroekgoninning metil efiri esa krek chekilganini ko‘rsatadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "56"
-      }
-    },
-    {
-      "question": "Kokain biosuyuqliklardan qaysi sharoitda xloroform bilan yaxshi ekstraksiyalanadi?",
-      "options": [
-        "Kuchli kislotali, pH 1-2",
-        "Ishqoriy muhit, pH 7,0-8,5",
-        "Kuchli ishqoriy, pH 13-14",
-        "Faqat neytral suvli muhit"
-      ],
-      "correct_index": 1,
-      "explanation": "Kitobga ko‘ra kokain ishqoriy muhitda (pH 7,0-8,5) xloroform bilan yaxshi, qisman kislotali muhitda ham ekstraksiyalanadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "58"
-      }
-    },
-    {
-      "question": "Skott reaksiyasida kokain bo‘lsa qanday natija kuzatiladi?",
-      "options": [
-        "Qizil-binafsha rang, HCl dan keyin ham saqlanadi",
-        "Ko‘k rang; HCl rangni o‘chiradi, xloroform to‘q ko‘k beradi",
-        "Sariq rang, xloroformda yo‘qoladi",
-        "Yashil cho‘kma"
-      ],
-      "correct_index": 1,
-      "explanation": "Kobalt tiotsionat va glitserin aralashmasi bilan ko‘k rang hosil bo‘ladi; HCl rangni o‘chiradi, xloroform esa to‘q ko‘k rang beradi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "58"
-      }
-    },
-    {
-      "question": "Kokain KMnO4 va xlorid kislota ishtirokida qanday kristallar hosil qiladi?",
-      "options": [
-        "Ninasimon rangsiz kristallar",
-        "To‘g‘ri to‘rtburchak qizil-binafsha kristallar",
-        "Sferoid shaklidagi sariq kristallar",
-        "Kubsimon yashil kristallar"
-      ],
-      "correct_index": 1,
-      "explanation": "Kitob matniga ko‘ra kokain to‘g‘ri to‘rtburchak shaklidagi qizil-binafsha kristallar hosil qiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "58"
-      }
-    },
-    {
-      "question": "Kokain gidroxloridni UB-spektrofotometriyada miqdoriy aniqlash uchun qaysi to‘lqin uzunligida optik zichlik o‘lchanadi?",
-      "options": [
-        "210 nm",
-        "234 nm",
-        "254 nm",
-        "302 nm"
-      ],
-      "correct_index": 1,
-      "explanation": "UB spektrdan 234 nm dagi optik zichlik aniqlanadi va konsentratsiya kalibrlash chizig‘idan topiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "59"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Kokain bargi: kokain pastasi sulfat kislotada eritilib KMnO4 bilan ishlanishi (pushti rang) asos olishdagi muhim qadam ekani kitobda ko‘rsatilgan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "57"
-      }
-    },
-    {
-      "text": "Eslab qolish: kokain yarim chiqish davri 38-67 daqiqa, benzoilekgonin 4-6 soat, metilekgonin 2,5-7,6 soat.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "56"
-      }
-    },
-    {
-      "text": "Muhim farq: biosamaradorlik qon tomirga yuborilganda 100%, chekilganda 6-32%, og‘iz va burun orqali 20-40%.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "56"
-      }
-    },
-    {
-      "text": "Amaliy maslahat: kokain bilan YuQX da qo‘shimchalar (benzokain, prokain, metadon) bir xil sistemada yaqin Rf100 berishi mumkin, shuning uchun 3 ta sistema ishlatiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "59"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Ma’ruza mavzusi: kokain, kokain saqlovchi preparatlar, ularni biosuyuqliklardan ajratib olish va tahlil qilish.",
+     "source": {
       "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
       "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-      "year": null,
-      "pages": "b. 54-59, 61, 80, 147-148"
+      "page": "54"
+     },
+     "uncertain": false
     },
     {
-      "author": "Malaka materiali №042",
-      "title": "Narkotiklarni siydikda aniqlash intervallari (CDRH, 1997)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+     "text": "Reja: koka tarixi va o‘simligi, preparat turlari, ta’siri, toksikokinetika, ishlab chiqarish, rangli va xromatografik tahlil.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54-59"
+     },
+     "uncertain": false
     },
     {
+     "text": "Tayanch so‘zlar: ekgonin, benzoilekgonin, kokain pastasi, krek, Skott reaksiyasi, YuQX, YuSSX.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55-59"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: kokain nima uchun giyohvandlik vositalari orasida alohida o‘rin tutadi? Doskada: ma’ruzaning 4 bo‘limi: tarix, preparatlar, toksikokinetika, tahlil. Tipik xato: kokainni faqat «giyohvand modda» deb o‘ylab, uning alkaloid ekanini va tahlil sxemasini unutish."
+  },
+  {
+   "title": "Koka va kokain tarixi",
+   "bullets": [
+    {
+     "text": "Janubiy Amerika hindulari koka butasi barglarini 5000 yildan beri diniy marosimlarda, charchoq va ochlik hissini kamaytirish uchun ishlatgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kokain koka bargidan 1859 yilda Gettingen universitetida Albert Nieman tomonidan ajratib olingan, 1902 yilda sintez qilingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "18-19-asrlarda kokain «zararsiz» stimulyator va og‘riq qoldiruvchi sifatida dori vositalari, ichimliklar, vino va shirinliklar tarkibiga kiritilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kokain avval «zararsiz» deb hisoblangan? Doskada: vaqt chizig‘i: 1859 (ajratish) - 1902 (sintez). Tipik xato: ajratib olish va sintez yillarini aralashtirish. Izoh: kitobda universitet nomi «Gottingem» deb yozilgan; slaydda umumiy qabul qilingan imlo berildi."
+  },
+  {
+   "title": "Taqiqlanishi: «Koka-kola» va 1961 yilgi konvensiya",
+   "bullets": [
+    {
+     "text": "1886 yilda dorishunos Djon Pemberton tarkibiga kokain qo‘shilgan «Koka-kola» ichimligini ishlab chiqargan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ichimlik qaramlik chaqirgani uchun 1904 yilda AQSh hukumati tomonidan taqiqlangan; 1914 yildan boshqa davlatlarda ham choralar ko‘rila boshlangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1961 yilda «Giyohvandlik vositalarini nazorat qilish» xalqaro konvensiyasi qabul qilingan; unga binoan kokain taqiqlangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Kokain tarixi: asosiy yillar",
+    "nodes": [
+     "1859: kokain ajratildi (Nieman)",
+     "1886: «Koka-kola» (Pemberton)",
+     "1902: kokain sintezi",
+     "1904: AQSh taqiqi",
+     "1914: boshqa davlatlar choralari",
+     "1961: xalqaro konvensiya"
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaramlik ichimlik taqiqiga qanday sabab bo‘lgan? Doskada: 1886 - 1904 - 1914 - 1961 yillar zanjiri. Tipik xato: konvensiya yilini AQSh taqiqi bilan aralashtirish."
+  },
+  {
+   "title": "Koka o‘simligi",
+   "bullets": [
+    {
+     "text": "Koka butasining vatani Peru va Boliviya; hozirgi vaqtda yovvoyi holda umuman uchramaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qadimdan madaniylashtirilgan: avval hindular, XX asrda Yava va Shri-Lanka orollarida, Janubi-sharqiy Osiyoda, keyinroq Afrikada plantatsiyalar tashkil qilingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Erythroxylon oilasida 200 tur ma’lum, 17 turi kokain yig‘adi; kokain ko‘p bo‘lgani uchun faqat Erythroxylon coca va E. novogranatense o‘stiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Erythroxylon turlari",
+    "root": "Erythroxylon (200 tur)",
+    "children": [
+     {
+      "label": "Kokain yig‘adi: 17 tur",
+      "items": [
+       "Ko‘p kokain: ikki tur"
+      ]
+     },
+     {
+      "label": "O‘stiriladigan turlar",
+      "items": [
+       "Erythroxylon coca",
+       "E. novogranatense"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega plantatsiyalarda faqat ikki tur o‘stiriladi? Doskada: 200 - 17 - 2 raqamlar zanjiri. Tipik xato: 17 turni plantatsiya turlari deb o‘ylash."
+  },
+  {
+   "title": "Koka bargi alkaloidlari",
+   "bullets": [
+    {
+     "text": "Barglarda turli alkaloidlar 0,5-1,5% miqdorida bo‘lib, asosiysi kokain; uning ulushi umumiy alkaloidlarning 30% ini tashkil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54-55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qolganlari ekgonin hosilalari: metilekgonin, sis- va trans-sinnamoilkokain, benzoilekgonin, tropakokain, truksillin kislota.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ekgoninning hamma hosilalari sanoatda kokainni yarimsintez qilish uchun ishlatiladi; barglarda gigrin va kuskgigrin ham uchraydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Koka bargi alkaloidlari (0,5-1,5%)",
+    "root": "Koka barglari alkaloidlari",
+    "children": [
+     {
+      "label": "Kokain (30%)"
+     },
+     {
+      "label": "Ekgonin hosilalari",
+      "items": [
+       "metilekgonin, benzoilekgonin",
+       "sis-/trans-sinnamoilkokain",
+       "tropakokain, truksillin k-ta"
+      ]
+     },
+     {
+      "label": "Boshqalar",
+      "items": [
+       "gigrin, kuskgigrin",
+       "efir moylari, yog‘ kislotalari"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekgonin hosilalari nima uchun tahlilda muhim? Doskada: kokain - ekgonin hosilalari qatori (metil-, benzoil-, sinnamoil-). Tipik xato: benzoilekgoninni kokainning o‘zi deb hisoblash: u metabolit va alkaloid hosilasidir."
+  },
+  {
+   "title": "Koka bargi va kokain pastasi",
+   "bullets": [
+    {
+     "text": "Koka barglari qora bozorda tarqatiladigan «Coca mate» choyi tayyorlashda ishlatiladi; u kofega nisbatan yengil stimulyator.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kokain pastasi (kokain sulfat) «basuco», «basa», «pitillo», «testo» nomlari bilan uchraydi; past navli giyohvand vosita.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Pasta Janubiy Amerikada past tabaqa aholisi orasida keng tarqalgan; u koka bargiga ishlov berishdagi oraliq mahsulotdir.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: pasta va gidroxlorid o‘rtasidagi farq nima? Doskada: barg - pasta - asos - gidroxlorid zanjiri. Tipik xato: pastani tayyor yuqori tozalikdagi mahsulot deb o‘ylash."
+  },
+  {
+   "title": "Kokain preparatlari tasnifi",
+   "bullets": [
+    {
+     "text": "Koka bargi («Coca mate» choyi) va kokain pastasi (kokain sulfat) — oraliq, past navli mahsulotlar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kokain gidroxlorid (kukun, «rock») va kokain asosi («krek», «freebase») — asosiy tayyor ko‘rinishlar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Maskirovka va aralashmalar: «qo‘ng‘ir», «qora» kokain va «spidbol».",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Kokain preparatlari",
+    "root": "Kokain preparatlari",
+    "children": [
+     {
+      "label": "Xom ashyo",
+      "items": [
+       "koka bargi",
+       "kokain pastasi"
+      ]
+     },
+     {
+      "label": "Tuz va asos",
+      "items": [
+       "gidroxlorid",
+       "asos («krek»)"
+      ]
+     },
+     {
+      "label": "Maxsus ko‘rinishlar",
+      "items": [
+       "«qo‘ng‘ir» (40% kokain)",
+       "«qora» (polimer bilan)",
+       "«spidbol» (+ geroin)"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega pasta tayyor preparat emas, oraliq mahsulot? Doskada: uch guruh sxemasi. Tipik xato: «qo‘ng‘ir» va «qora» kokainni aralashtirish."
+  },
+  {
+   "title": "Koka va kokain raqamlarda",
+   "bullets": [
+    {
+     "text": "Erythroxylon oilasida 200 tur ma’lum, 17 turi kokain yig‘adi, ko‘p kokain faqat ikki turda.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Barglarda alkaloidlar 0,5-1,5%; kokain umumiy alkaloidlarning 30% ini tashkil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54-55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1 ga maydondan bir marta yig‘ilgan barglardan 5 kg kokain olish mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Raqamlar",
+    "items": [
+     {
+      "label": "Erythroxylon turlari",
+      "value": "200"
+     },
+     {
+      "label": "Kokain yig‘adigan",
+      "value": "17",
+      "unit": "tur"
+     },
+     {
+      "label": "Alkaloidlar",
+      "value": "0,5-1,5",
+      "unit": "%"
+     },
+     {
+      "label": "Kokain ulushi",
+      "value": "30",
+      "unit": "%"
+     },
+     {
+      "label": "1 ga dan",
+      "value": "5",
+      "unit": "kg"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega faqat ikki tur o‘stiriladi? Doskada: raqamlar zanjiri 200 - 17 - 2. Tipik xato: 17 va 2 ni aralashtirish."
+  },
+  {
+   "title": "Kokain gidroxlorid",
+   "bullets": [
+    {
+     "text": "Oq kristall kukun («chow»), odatda hidsiz; katta rangsiz kristallar («rock») holida ham uchraydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qon tomirga yuborish yoki kokain asosini olish uchun ishlatiladi; unda kokain miqdori 80-90% ni tashkil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "«Ko‘cha savdosi» uchun 12-50% gacha pirasetam, kofein, lidokain, prokain, benzokain, shakar va kraxmal qo‘shib suyultiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Kokain gidroxlorid",
+    "items": [
+     {
+      "label": "Kokain miqdori",
+      "value": "80-90",
+      "unit": "%"
+     },
+     {
+      "label": "Qo‘shimchalar ulushi",
+      "value": "12-50",
+      "unit": "%"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qo‘shimchalar tahlilga qanday ta’sir qiladi? Doskada: tarkib: kokain 80-90%, qo‘shimchalar ro‘yxati. Tipik xato: namunadagi barcha chiziqlarni kokainga tegishli deb hisoblash. Izoh: qo‘shimchalar (benzokain, prokain) 59-betdagi YuQX jadvalida ham berilgan."
+  },
+  {
+   "title": "Kokain asosi va boshqa ko‘rinishlar",
+   "bullets": [
+    {
+     "text": "«Qo‘ng‘ir» kokain giyohvandni maskirovka qilish uchun (eruvchan kofe yoki choy ko‘rinishida) tayyorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "«Qora» kokain polimer material bilan aralashtiriladi; undan haykalchalar, diplomat va ushlagichlar yasaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Koka bargi va kokain — insonga ma’lum eng kuchli o‘simlik asosidagi stimulyatorlardandir.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Kokain ko‘rinishlari",
+    "nodes": [],
+    "header": [
+     "Nomi",
+     "Tavsifi"
+    ],
+    "rows": [
+     [
+      "Kokain asosi",
+      "«krek», «freebase»; gidroxloriddan"
+     ],
+     [
+      "«Qo‘ng‘ir» kokain",
+      "kobalt/temir xlorid bilan; ~40% kokain"
+     ],
+     [
+      "«Qora» kokain",
+      "kokain tuzi + polimer material"
+     ],
+     [
+      "«Spidbol»",
+      "kokain va geroinning teng aralashmasi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: «qo‘ng‘ir» va «qora» kokain nima uchun tayyorlanadi? Doskada: to‘rt ko‘rinish jadvali. Tipik xato: «spidbol»ni faqat kokain deb o‘ylash: u geroin bilan aralashma."
+  },
+  {
+   "title": "Kokainning ta’siri: dastlabki belgilar",
+   "bullets": [
+    {
+     "text": "Kokain inson miyasining dofaminergik tizimiga ta’sir ko‘rsatadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Belgilar: emotsional hayajon, quvvat va energiya, aqliy faoliyatning «shiddatlashuvi», uyqu moyilligining pasayishi, ishtahaning yo‘qolishi, vaznning kamayishi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shuningdek: «kokain burgalari» chaqishidan teri qizarishi, ko‘z qorachig‘ining kengayishi, tushunarsiz gapirish, titroq, uyqusizlik, surunkali shamollash.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qorachiq kengayishi nega muhim belgi? Doskada: belgilar guruhi: ruhiy / jismoniy / teri. Tipik xato: ta’sirni faqat ruhiy belgilar bilan cheklash."
+  },
+  {
+   "title": "Og‘ir ta’sirlar va asoratlar",
+   "bullets": [
+    {
+     "text": "Konvulsiya, tirishish, depressiya, alahsirash, yolg‘on va irratsional g‘oyalar, gallyusinatsiyalar kuzatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55-56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nafas olishning qiyinlashishi, o‘pka shishishi va nafas to‘xtashi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yurak-qon tomir muammolari: aritmiya, infarkt, yurak to‘xtashi, serebral infarkt, insult; o‘zini o‘ldirishga moyillik.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55-56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Og‘ir ta’sirlar tizimlar bo‘yicha",
+    "columns": [
+     {
+      "title": "Asab-ruhiy",
+      "items": [
+       "konvulsiya, tirishish",
+       "depressiya, alahsirash",
+       "gallyusinatsiyalar"
+      ]
+     },
+     {
+      "title": "Nafas",
+      "items": [
+       "nafas olishning qiyinlashishi",
+       "o‘pka shishishi",
+       "nafas to‘xtashi"
+      ]
+     },
+     {
+      "title": "Yurak-qon tomir",
+      "items": [
+       "aritmiya, infarkt",
+       "yurak to‘xtashi",
+       "serebral infarkt, insult"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi asoratlar o‘limga eng yaqin? Doskada: nafas va yurak-qon tomir asoratlari ustunlari. Tipik xato: o‘limni faqat doza bilan bog‘lash: individual sezgirlik 56-betda ham aytilgan."
+  },
+  {
+   "title": "Yarim chiqish davri",
+   "bullets": [
+    {
+     "text": "Yarim chiqish davri modda bo‘yicha farq qiladi: kokain daqiqalarda, metabolitlari soatlarda o‘lchanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Benzoilekgonin va metilekgonin kokaindan uzoqroq saqlanadi, shuning uchun metabolitlar tahlilda muhim.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Yarim chiqish davri",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "T1/2"
+    ],
+    "rows": [
+     [
+      "Kokain",
+      "38-67 daqiqa"
+     ],
+     [
+      "Benzoilekgonin",
+      "4-6 soat"
+     ],
+     [
+      "Metilekgonin",
+      "2,5-7,6 soat"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi modda tahlilda uzoq muddat aniqlanadi? Doskada: uch modda T1/2 jadvali. Tipik xato: yarim chiqish davrini aniqlash muddati bilan aralashtirish."
+  },
+  {
+   "title": "Kokain biosamaradorligi",
+   "bullets": [
+    {
+     "text": "Biosamaradorlik qabul qilish yo‘liga bog‘liq: og‘iz va burun orqali 20-40%, chekilganda 6-32%.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qon tomirga yuborilganda biosamaradorlik 100% ni tashkil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Biosamaradorlik",
+    "nodes": [],
+    "header": [
+     "Yo‘li",
+     "Ulushi"
+    ],
+    "rows": [
+     [
+      "Og‘iz orqali",
+      "20-40%"
+     ],
+     [
+      "Burun orqali",
+      "20-40%"
+     ],
+     [
+      "Chekilganda",
+      "6-32%"
+     ],
+     [
+      "Qon tomirga",
+      "100%"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qon tomirga yuborilganda ta’sir tezroq va kuchliroq? Doskada: yo‘llar bo‘yicha foizlar. Tipik xato: chekishni to‘liq so‘rilish deb hisoblash."
+  },
+  {
+   "title": "Kokain dozalari",
+   "bullets": [
+    {
+     "text": "Klinik doza 1,5 mg/kg; ilgari qabul qilmagan inson uchun o‘limga olib keluvchi doza 200 mg.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bir martalik «ko‘cha» dozasi 15-60 mg.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Burunga yuborish uchun («dorojka», 3-5 sm uzunlikda) 10-20 mg dan 50-100 mg gacha.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Kokain dozalari",
+    "items": [
+     {
+      "label": "Klinik doza",
+      "value": "1,5",
+      "unit": "mg/kg"
+     },
+     {
+      "label": "O‘limga olib keluvchi",
+      "value": "200",
+      "unit": "mg"
+     },
+     {
+      "label": "«Ko‘cha» dozasi",
+      "value": "15-60",
+      "unit": "mg"
+     },
+     {
+      "label": "Burunga («dorojka»)",
+      "value": "10-20 / 50-100",
+      "unit": "mg"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: klinik va «ko‘cha» dozasini solishtiring. Doskada: dozalar ustuni: klinik - ko‘cha - o‘limli. Tipik xato: mg/kg va mg birliklarini aralashtirish."
+  },
+  {
+   "title": "Toksik va letal doza",
+   "bullets": [
+    {
+     "text": "Og‘iz orqali qabul qilinganda toksik doza 500 mg, letal doza 1,2 g.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Individual hollarda letal doza 20 mg gacha kamayishi yoki 8-10 g gacha ko‘payishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kitobda ilgari qabul qilmagan inson uchun o‘limga olib keluvchi doza 200 mg deb ham berilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Og‘iz orqali qabul qilinganda",
+    "items": [
+     {
+      "label": "Toksik doza",
+      "value": "500",
+      "unit": "mg"
+     },
+     {
+      "label": "Letal doza",
+      "value": "1,2",
+      "unit": "g"
+     },
+     {
+      "label": "Eng kam (individual)",
+      "value": "20",
+      "unit": "mg"
+     },
+     {
+      "label": "Eng ko‘p (individual)",
+      "value": "8-10",
+      "unit": "g"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bir xil doza turli odamda har xil ta’sir qiladi? Doskada: 20 mg - 1,2 g - 8-10 g shkalasi. Tipik xato: yagona «o‘limli doza»ni mutlaq deb hisoblash. Izoh: kitobda 200 mg (qabul qilmagan inson) va 1,2 g (og‘iz orqali letal) ikki xil ko‘rsatilgan; ikkalasi ham 56-betda, slaydda sharti bilan berildi."
+  },
+  {
+   "title": "Chiqarilishi va metabolitlar",
+   "bullets": [
+    {
+     "text": "Bir martalik dozaning 90-95% i siydik orqali 2-3 kun davomida chiqariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asosan metabolitlar holida chiqariladi; norkokain va gidroksillangan metabolitlar 10% gacha.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Siydikdagi ulushlar",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Ulushi"
+    ],
+    "rows": [
+     [
+      "Kokain",
+      "1-9%"
+     ],
+     [
+      "Benzoilekgonin",
+      "35-60%"
+     ],
+     [
+      "Metilekgonin",
+      "32-49%"
+     ],
+     [
+      "Ekgonin",
+      "1-8%"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega siydikda asosan metabolitlar izlanadi? Doskada: to‘rt modda ulushi jadvali. Tipik xato: o‘zgarmagan kokainni asosiy chiqarilish shakli deb hisoblash. Izoh: metabolizm sxemasi kitobda 1-rasm (57-bet) sifatida chizma holda berilgan; matni yo‘q."
+  },
+  {
+   "title": "Siydikda aniqlash muddati va maxsus belgilar",
+   "bullets": [
+    {
+     "text": "Bir martalik dozada o‘zgarmagan kokain siydikda 8-24 soat, benzoilekgonin va metilekgonin holida 48 soat mobaynida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Surunkali qabul qilinganda aniqlash vaqti 5 kunga uzayadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Siydikda benzoilekgoninning etil efiri aniqlansa, kokain va alkogol bir vaqtda qabul qilingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Angidroekgoninning metil efiri aniqlansa, krek yoki kokain asosi chekilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Siydikda aniqlash va maxsus belgilar",
+    "columns": [
+     {
+      "title": "Aniqlash muddati",
+      "items": [
+       "kokain: 8-24 soat",
+       "metabolitlar: 48 soat",
+       "surunkali: 5 kun"
+      ]
+     },
+     {
+      "title": "Maxsus belgilar",
+      "items": [
+       "benzoilekgonin etil efiri: kokain + alkogol",
+       "angidroekgonin metil efiri: krek chekilgan"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ikki maxsus metabolit qanday xulosaga olib keladi? Doskada: 4 ta muddat/belgi. Tipik xato: metabolit nomini aralashtirish. Izoh: kitobda «benzilekgonin» deb yozilgan joylar bor; kontekstga ko‘ra benzoilekgonin nazarda tutiladi."
+  },
+  {
+   "title": "Kokain pastasini olish",
+   "bullets": [
+    {
+     "text": "Mayda qirqilgan barglar suv va ohak (potash) eritmalari bilan aralashtirilib, bo‘ktiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Barglar kerosin bilan ekstraksiya qilinadi; ajratma nordon suv bilan qayta ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suvli qism ohak va ammiak bilan ishqoriylanadi: tozalanmagan kokain cho‘kadi, quritiladi — pasta.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Kokain pastasi olinishi",
+    "nodes": [
+     "Barg + suv, ohak (potash)",
+     "Kerosin bilan ekstraksiya",
+     "Nordon suv bilan reekstraksiya",
+     "Ohak + ammiak: ishqoriy muhit",
+     "Cho‘kma quritiladi: pasta"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kerosinli ajratma nordonlashtirilgan suv bilan qayta ishlanadi? Doskada: 5 bosqichli zanjir. Tipik xato: ishqoriy muhitdan keyingi cho‘kmani tayyor gidroxlorid deb o‘ylash."
+  },
+  {
+   "title": "Kokain asosi va gidroxloridni olish",
+   "bullets": [
+    {
+     "text": "Pasta suyultirilgan sulfat kislotada eritilib, pushti rang hosil bo‘lguncha KMnO4 eritmasi qo‘shiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bir necha kundan so‘ng filtrlanadi; filtrat ammiak bilan ishqoriylanadi — cho‘kma kokain asosi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tozalangan asos efirda eritilib, kons. HCl va aseton qo‘shiladi — kokain gidroxlorid cho‘kadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Pastadan gidroxloridgacha",
+    "nodes": [
+     "Pasta + suyult. H2SO4",
+     "KMnO4 — pushti ranggacha",
+     "Bir necha kun, filtrlash",
+     "Ammiak: kokain asosi",
+     "Efir + HCl + aseton"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: KMnO4 qaysi vazifani bajaradi? Doskada: pasta - asos - gidroxlorid zanjiri. Tipik xato: asos va gidroxloridni bir xil modda deb hisoblash. Izoh: kitobda KMnO4 qo‘shilishining kimyoviy sababi tushuntirilmagan."
+  },
+  {
+   "title": "Ishlab chiqarish uchun reagent sarfi",
+   "bullets": [
+    {
+     "text": "100 kg kokain gidroxlorid uchun 100-400 l sulfat kislota, 20 kg kaliy permanganat va 30 l xlorid kislota ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bundan tashqari 1500-2000 l aseton yoki dietil efiri yoki metiletilketon yoki toluol sarflanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ma’lumotlarga ko‘ra 1 ga maydondan bir marta yig‘ilgan koka barglaridan 5 kg kokain olish mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "100 kg gidroxlorid uchun",
+    "items": [
+     {
+      "label": "Sulfat kislota",
+      "value": "100-400",
+      "unit": "l"
+     },
+     {
+      "label": "Kaliy permanganat",
+      "value": "20",
+      "unit": "kg"
+     },
+     {
+      "label": "Xlorid kislota",
+      "value": "30",
+      "unit": "l"
+     },
+     {
+      "label": "Aseton/efir/toluol",
+      "value": "1500-2000",
+      "unit": "l"
+     },
+     {
+      "label": "1 ga dan kokain",
+      "value": "5",
+      "unit": "kg"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: reagentlar sarfi nazoratda nega muhim? Doskada: 100 kg - 20 kg KMnO4 - 30 l HCl nisbatlari. Tipik xato: erituvchilarni ham «kislota» deb hisoblash. Izoh: bu bo‘lim prekursorlar nazorati (39-dars) bilan bog‘lanadi."
+  },
+  {
+   "title": "Prekursorlar: kokain ishlab chiqarishdagi o‘rni",
+   "bullets": [
+    {
+     "text": "Aseton, metiletilketon, toluol va dietil efiri prekursorlar ro‘yxatida erituvchi sifatida ko‘rsatilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sulfat va xlorid kislotalar ro‘yxatda reaktiv sifatida ko‘p giyohvandlik vositalari tayyorlashda ishlatilishi bilan keltirilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton ro‘yxatda pervitin, LSD, kokain, geroin va boshqalarni tayyorlashda erituvchi sifatida ko‘rsatilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Erituvchilar va reaktivlar (18-jadval)",
+    "header": [
+     "Prekursor",
+     "Vazifasi"
+    ],
+    "rows": [
+     [
+      "Aseton",
+      "erituvchi (kokain, geroin, LSD)"
+     ],
+     [
+      "Metiletilketon",
+      "erituvchi"
+     ],
+     [
+      "Toluol",
+      "erituvchi"
+     ],
+     [
+      "Dietil efiri",
+      "erituvchi"
+     ],
+     [
+      "Sulfat kislota",
+      "reaktiv"
+     ],
+     [
+      "Xlorid kislota",
+      "reaktiv"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega oddiy erituvchi va kislotalar nazoratga olingan? Doskada: kokain zanjiridagi 5 modda: H2SO4, KMnO4, HCl, aseton, toluol. Tipik xato: prekursorlarni faqat giyohvandlik vositasining o‘zi deb hisoblash. Izoh: prekursorlar bobi (39-dars): gmt 146-154."
+  },
+  {
+   "title": "Kokain ishlab chiqarish: reagentlar xaritasi",
+   "bullets": [
+    {
+     "text": "Pasta: barglar suv va ohak (potash) bilan bo‘ktiriladi, kerosin bilan ekstraksiya, ammiak va ohak bilan cho‘ktiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asos: pasta suyultirilgan sulfat kislotada eritilib, KMnO4 qo‘shiladi, filtrat ammiak bilan ishqoriylanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gidroxlorid: asos efirda eritilib, konsentrlangan xlorid kislota va aseton qo‘shiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "57"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Reagentlar bosqichlar bo‘yicha",
+    "root": "Reagentlar",
+    "children": [
+     {
+      "label": "1. Pasta",
+      "items": [
+       "suv, ohak (potash)",
+       "kerosin",
+       "ammiak"
+      ]
+     },
+     {
+      "label": "2. Kokain asosi",
+      "items": [
+       "suyult. H2SO4",
+       "KMnO4",
+       "ammiak"
+      ]
+     },
+     {
+      "label": "3. Gidroxlorid",
+      "items": [
+       "efir",
+       "kons. HCl",
+       "aseton"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: har bosqichda reagent qanday vazifa bajaradi (kitobda nomlari keltirilgan). Doskada: uch ustunli jadval. Tipik xato: KMnO4 ni pasta bosqichiga qo‘yish."
+  },
+  {
+   "title": "Kokain tahlili: reaksiyalar taqqoslash",
+   "bullets": [
+    {
+     "text": "Umumiy cho‘ktiruvchi reaktivlar amorf cho‘kma beradi, KMnO4 va HCl qizil-binafsha kristallar beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Skott reaksiyasi ko‘k rang beradi; gidroliz va etil spirti benzoy etil efirining hidini beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Farmakologik sinov: mushuk ko‘zida qorachiq kengayishi, til uchida sezuvchanlikning pasayishi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Reaksiyalar va natijalar",
+    "header": [
+     "Reaksiya",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "Mayer, Dragendorf, pikrin k-ta",
+      "amorf cho‘kma"
+     ],
+     [
+      "KMnO4 + HCl",
+      "qizil-binafsha kristallar"
+     ],
+     [
+      "Skott (Co tiotsionat)",
+      "ko‘k rang"
+     ],
+     [
+      "Gidroliz + etil spirti",
+      "benzoy etil efiri hidi"
+     ],
+     [
+      "Mushuk ko‘zi",
+      "qorachiq kengayadi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reaksiya tasdiqlovchi, qaysi dastlabki? Doskada: jadvalni to‘ldirish. Tipik xato: Skott reaksiyasi rangini HCl dan keyin ham ko‘k deb yozish."
+  },
+  {
+   "title": "Biosuyuqliklardan ajratib olish",
+   "bullets": [
+    {
+     "text": "Kokain qon, siydik va boshqa biologik suyuqliklardan ishqoriy muhitda (pH 7,0-8,5) xloroform bilan yaxshi ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "U qisman kislotali muhitda ham ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ekstraktdan oz hajm olinib, erituvchi parlatiladi va qoldiq xlorid kislotada eritiladi; shu eritma bilan reaksiyalar o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "caption": "Ajratib olish bosqichlari",
+    "items": [
+     {
+      "title": "Ekstraksiya",
+      "text": "pH 7,0-8,5, xloroform"
+     },
+     {
+      "title": "Parlatish",
+      "text": "ekstraktning oz hajmi, erituvchi uchiriladi"
+     },
+     {
+      "title": "Eritish",
+      "text": "qoldiq xlorid kislotada"
+     },
+     {
+      "title": "Reaksiyalar",
+      "text": "shu eritma bilan o‘tkaziladi"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega pH 7,0-8,5 tanlanadi? Doskada: ekstraksiya: pH - xloroform - parlatish - HCl. Tipik xato: kuchli ishqoriy muhitni tanlash: gidroliz xavfi ortadi. Izoh: kitobda pH tanlash sababi izohlanmagan; faqat diapazon berilgan."
+  },
+  {
+   "title": "Cho‘ktiruvchi reaktivlar va KMnO4 mikrokristallari",
+   "bullets": [
+    {
+     "text": "Mayer, Bushard, Dragendorf reaktivlari va pikrin kislotasi bilan kokain asosan amorf cho‘kmalar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kaliy permanganat va xlorid kislota ishtirokida kokain to‘g‘ri to‘rtburchak shaklidagi qizil-binafsha kristallar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ikkala reaksiya ham ajratmadan olingan, xlorid kislotada eritilgan namuna bilan o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "KMnO4 mikrokristall reaksiyasi",
+    "reagents": [
+     "Kokain (HCl eritmasi)",
+     "KMnO4",
+     "HCl"
+    ],
+    "products": [
+     "Qizil-binafsha kristallar"
+    ],
+    "observation": "to‘g‘ri to‘rtburchak kristallar"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: amorf cho‘kma va kristall farqini tushuntiring. Doskada: ikki ustun: amorf - kristall. Tipik xato: amorf cho‘kmani aniqlovchi natija deb hisoblash. Izoh: kitob matnida kristallar «qizil-binafsha», 61-betdagi test javoblarida «pushti» deyilgan; matn varianti olindi. Kitobda «Maer» yozilgan, «Mayer» deb berildi."
+  },
+  {
+   "title": "Skott reaksiyasi",
+   "bullets": [
+    {
+     "text": "Reaktiv: kobalt tiotsionatning 2% eritmasi va 96% glitserin (1:1) aralashmasi; namunaga 5 tomchi qo‘shiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kokain bo‘lsa ko‘k rang hosil bo‘ladi; 1-2 tomchi konsentrlangan HCl rangni o‘chiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "So‘ng bir necha tomchi xloroform qo‘shilsa, u to‘q ko‘k rangga bo‘yaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Skott reaksiyasi bosqichlari",
+    "nodes": [
+     "Namuna + reaktiv (5 tomchi)",
+     "Ko‘k rang",
+     "+ kons. HCl: rang o‘chadi",
+     "+ xloroform",
+     "Xloroform: to‘q ko‘k"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun rang HCl bilan o‘chib, xloroformda qaytadi? Doskada: 5 bosqichli rang o‘zgarishi. Tipik xato: ko‘k rangni yagona dalil deb hisoblash: reaksiya dastlabki. Izoh: p.91 da fensiklidin ham Skott reaktivi bilan ko‘k beradi (38-dars)."
+  },
+  {
+   "title": "Gidroliz, hid va farmakologik sinovlar",
+   "bullets": [
+    {
+     "text": "Suvli ajratma 2 tomchi kons. HCl bilan gidrolizlanib, etil spirti qo‘shiladi: benzoy etil efirining o‘ziga xos hidi keladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Hid bo‘yicha: quruq material KOH ning metanoldagi eritmasi bilan ho‘llanadi, ortiqcha spirt parlatilgach hid standart namuna bilan solishtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Farmakologik: kokain eritmasi mushukning bir ko‘ziga tomizilganda qorachiq kengayadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kokain kukunini til uchida sezish qobiliyatining pasayishi bilan ham aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Benzoy etil efiri hosil bo‘lishi",
+    "reagents": [
+     "Suvli ajratma",
+     "2 tomchi kons. HCl (gidroliz)",
+     "Etil spirti"
+    ],
+    "products": [
+     "Benzoy etil efiri"
+    ],
+    "observation": "o‘ziga xos hid"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: farmakologik va hid sinovlari qaysi hollarda yordamchi? Doskada: 4 sinov ro‘yxati. Tipik xato: bu sinovlarni tasdiqlovchi usul deb hisoblash. Izoh: til uchidagi sinov xavfsizlik jihatidan zamonaviy laboratoriyada qo‘llanmaydi; tarixiy usul sifatida berildi."
+  },
+  {
+   "title": "YuQX: erituvchi sistemalari",
+   "bullets": [
+    {
+     "text": "Qo‘zg‘almas faza sifatida Sorbton, Sorbfil yoki Kizelgel G 60 plastinkalari ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kokain va metabolitlarining natijalari Rf100 ko‘rsatkichi bilan 3-jadvalda berilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Erituvchi sistemalari",
+    "nodes": [],
+    "header": [
+     "Sistema",
+     "Tarkibi"
+    ],
+    "rows": [
+     [
+      "№1",
+      "Xloroform:dioksan:EtOAc:NH3 (25:60:10:5)"
+     ],
+     [
+      "№2",
+      "Metanol : ammiak 25% (100:1,5)"
+     ],
+     [
+      "№3",
+      "Siklogeksan:toluol:dietilamin (75:15:10)"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun bir necha sistema ishlatiladi? Doskada: uch sistema tarkibi. Tipik xato: Rf100 ni Rf bilan aralashtirish: Rf100 = Rf x 100."
+  },
+  {
+   "title": "YuQX: yaqin Rf100 qiymatlari",
+   "bullets": [
+    {
+     "text": "№1 sistemada kokain (81), sinnamoilkokain (83), benzokain (77) va metadon (75) Rf100 qiymatlari yaqin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qiymatlar sistemaga qarab o‘zgaradi: kokain uchun 81, 59 va 56.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kitobda kokain uchun uchta erituvchi sistema keltirilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Rf100, sistema №1",
+    "items": [
+     {
+      "label": "Kokain",
+      "value": "81"
+     },
+     {
+      "label": "Sinnamoilkokain",
+      "value": "83"
+     },
+     {
+      "label": "Benzokain",
+      "value": "77"
+     },
+     {
+      "label": "Metadon",
+      "value": "75"
+     },
+     {
+      "label": "Prokain",
+      "value": "61"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: bitta sistemada Rf100 yaqin bo‘lsa nima qilinadi? Doskada: Rf100 qiymatlari qatori. Tipik xato: Rf100 ni Rf bilan adashtirish (100 ga ko‘paytirilgan)."
+  },
+  {
+   "title": "YuQX natijalari: kokain va metabolitlari",
+   "bullets": [
+    {
+     "text": "Kokain uch sistemada ham aniq qiymat beradi: 81, 59 va 56.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ekgonin va benzoilekgonin №1 va №3 sistemada start chizig‘ida qoladi (Rf100 = 0).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf100 (3-jadval)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf100 №1/2/3"
+    ],
+    "rows": [
+     [
+      "Kokain",
+      "81 / 59 / 56"
+     ],
+     [
+      "Ekgonin",
+      "0 / 84 / 0"
+     ],
+     [
+      "Metilekgonin",
+      "61 / 65 / 44"
+     ],
+     [
+      "Benzoilekgonin",
+      "0 / 25 / 0"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metabolitlarni YuQX da kokaindan qanday ajratamiz? Doskada: Rf100 jadvali. Tipik xato: bitta sistema natijasi bilan xulosa qilish."
+  },
+  {
+   "title": "YuQX natijalari: qo‘shimchalar va metadon",
+   "bullets": [
+    {
+     "text": "Sinnamoilkokain, benzokain, metadon va prokain kokain bilan solishtirish uchun jadvalga kiritilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Benzokain va prokain kokain preparatlariga qo‘shiladigan moddalar sifatida ham ko‘rsatilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "55, 59"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf100 (3-jadval)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf100 №1/2/3"
+    ],
+    "rows": [
+     [
+      "Sinnamoilkokain",
+      "83 / 59 / 51"
+     ],
+     [
+      "Benzokain",
+      "77 / 80 / 11"
+     ],
+     [
+      "Metadon",
+      "75 / 41 / 74"
+     ],
+     [
+      "Prokain",
+      "61 / 55 / 10"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi modda kokainga eng yaqin Rf beradi? Doskada: kokain 81/59/56 bilan taqqoslash. Tipik xato: bitta sistemada yaqin Rf ni bir modda deb hisoblash: sinnamoilkokain №2 da kokain bilan bir xil (59)."
+  },
+  {
+   "title": "YuSSX usuli",
+   "bullets": [
+    {
+     "text": "Tahlil «Milixrom 4» xromatografida o‘tkaziladi; kolonka KAX-4 (62x2 mm).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Elyuent: fosfat buferi va asetonitrilning 80:20 nisbatdagi aralashmasi; elyuirlash tezligi 100 mkl/daq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Deteksiyalash to‘lqin uzunliklari: 210, 234, 254, 276 va 302 nm.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "YuSSX sharoitlari",
+    "items": [
+     {
+      "label": "Xromatograf",
+      "value": "Milixrom 4"
+     },
+     {
+      "label": "Kolonka",
+      "value": "KAX-4 62x2 mm"
+     },
+     {
+      "label": "Elyuent (fosfat:ACN)",
+      "value": "80:20"
+     },
+     {
+      "label": "Tezlik",
+      "value": "100",
+      "unit": "mkl/daq"
+     },
+     {
+      "label": "To‘lqin uzunliklari",
+      "value": "210-302",
+      "unit": "nm"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: YuSSX da nega bir necha to‘lqin uzunligi ishlatiladi? Doskada: kolonka - elyuent - detektor. Tipik xato: bu sharoitni umumiy deb bilish: kitobda bu «uslublardan biri»."
+  },
+  {
+   "title": "UB-spektrofotometrik miqdoriy tahlil",
+   "bullets": [
+    {
+     "text": "Namunadan 10-15 mg aniq tortma olinib, 50 ml tozalangan (2-3 tomchi kons. HCl bilan nordonlashtirilgan) suvda eritiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Olingan eritmadan 5 ml 50 ml o‘lchov kolbasiga solinadi va belgigacha tozalangan suv bilan yetkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "UB spektrdan 234 nm dagi optik zichlik aniqlanadi; kokain gidroxlorid konsentratsiyasi kalibrlash chizig‘idan topiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Namunadagi kokain miqdori ko‘rsatilib, dalolatnoma rasmiylashtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "59"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "caption": "Miqdoriy aniqlash",
+    "items": [
+     {
+      "title": "Tortma",
+      "text": "10-15 mg, 50 ml suvda (HCl bilan nordon)"
+     },
+     {
+      "title": "Suyultirish",
+      "text": "5 ml dan 50 ml kolbada"
+     },
+     {
+      "title": "UB spektr",
+      "text": "234 nm da optik zichlik"
+     },
+     {
+      "title": "Hisob",
+      "text": "kalibrlash chizig‘i; dalolatnoma"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: kalibrlash chizig‘i qanday tuziladi? Doskada: suyultirish ketma-ketligi: tortma - 50 ml - 5 ml - 50 ml. Tipik xato: optik zichlikni to‘lqin uzunligi bilan aralashtirish. Izoh: hisoblash formulasi kitobda rasm sifatida berilgan; matn ko‘rinishida yo‘q."
+  },
+  {
+   "title": "Tahlilning umumiy sxemasi",
+   "bullets": [
+    {
+     "text": "Ajratib olish: ishqoriy muhitda (pH 7,0-8,5) xloroform bilan; qoldiq xlorid kislotada eritiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dastlabki: cho‘ktiruvchi reaktivlar, KMnO4 mikrokristallari va Skott reaksiyasi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tasdiqlash va miqdor: YuQX (Rf100), YuSSX, UB-spektrofotometriya (234 nm).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58-59"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Kokain tahlili",
+    "nodes": [
+     "Ajratib olish (xloroform)",
+     "Dastlabki rangli reaksiyalar",
+     "Mikrokristall reaksiya",
+     "YuQX / YuSSX",
+     "UB-SF miqdori, dalolatnoma"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: dastlabki reaksiya va tasdiqlovchi usul farqi nima? Doskada: 5 qadamli sxema. Tipik xato: dastlabki reaksiya natijasini yakuniy xulosa deb yozish."
+  },
+  {
+   "title": "Siydikda skrining va tasdiqlash chegarasi",
+   "bullets": [
+    {
+     "text": "Siydik skriningida kokain uchun cutoff 300 ng/ml, tasdiqlashda esa benzoilekgonin uchun 150 ng/ml.",
+     "source": {
       "author": "Malaka materiali №107",
       "title": "TGK metabolizmi va ajralishi; biosuyuqliklarda aniqlash muddatlari, skrining va tasdiqlash cutoff qiymatlari (BMT 1993, CDRH 1997, Cone 1996 manbalaridan)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "cutoff jadvali"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kokain siydikda qabul qilgandan 2-6 soat o‘tgach aniqlanadi va 48-72 soat davomida aniqlanishi mumkin (bir martalik qabul).",
+     "source": {
+      "author": "Malaka materiali №042",
+      "title": "Narkotiklarni siydikda aniqlash intervallari (CDRH, 1997)",
+      "page": "kokain qatori"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kitobga ko‘ra o‘zgarmagan kokain 8-24 soat, metabolitlari 48 soat aniqlanadi; manbalardagi farq ma’lumot turi bilan bog‘liq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: cutoff nima uchun kerak va nega skrining/tasdiqlash qiymatlari farq qiladi? Doskada: 300 ng/ml (skrining) va 150 ng/ml (tasdiqlash). Tipik xato: cutoff dan past natijani «kokain qabul qilinmagan» deb yozish. Izoh: malaka №107 va №042 qiymatlari AQSh (CDRH 1997, Cone 1996) manbalaridan; O‘zbekiston me’yori emas, shuning uchun qo‘shimcha ma’lumot sifatida berilgan."
+  },
+  {
+   "title": "Amaliy keys: siydikda kokaetilen",
+   "bullets": [
+    {
+     "text": "Keys: sud-kimyo ekspertizasiga biologik ob’ekt sifatida siydik keltirilgan; ajratma GX-MS da tahlil qilinganda kokaetilen topilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "61"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Topshiriq: tahlil natijasini izohlang va muammo jadvalini to‘ldiring (muammo turi, kelib chiqish sabablari, hal etish yo‘llari).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "61"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Siydikda benzoilekgoninning etil efiri kokain va alkogol birga qabul qilinganini ko‘rsatadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: kokain va alkogol birgalikda qabul qilinganini qanday isbotlash mumkin? Doskada: keys jadvali: muammo - sabab - yechim. Tipik xato: kokaetilen va benzoilekgonin etil efirini bir modda deb yozish. Izoh: kitob keysda «kokaetilen» deydi, 56-betda esa «benzoilekgoninning etil efiri»; ikki atama kitobda bog‘lanmagan, talaba o‘qituvchi bilan aniqlashtirsin."
+  },
+  {
+   "title": "Xulosa va nazorat savollari",
+   "bullets": [
+    {
+     "text": "Kokain koka bargining asosiy alkaloidi (umumiy alkaloidlarning 30% i); preparatlari: pasta, gidroxlorid, asos (krek).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "54-55"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Siydikda asosan metabolitlar topiladi (benzoilekgonin 35-60%, metilekgonin 32-49%).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "56"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tahlil: pH 7,0-8,5 da xloroform bilan ajratish, Skott va KMnO4 reaksiyalari, YuQX, YuSSX, UB-SF (234 nm).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "58-59"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nazorat savollari: kokain qaysi o‘simlikdan, qanday ajratiladi; metabolitlari; mikrokristall reaksiyalar; murda alkaloidlaridan farqlash.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "80"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uchta asosiy xulosani o‘z so‘zingiz bilan ayting. Doskada: bir satrli sxema: ajratish - reaksiya - xromatografiya - UB-SF. Tipik xato: nazorat savollarini yodlab, usullarni bog‘lamaslik. Izoh: murda alkaloidlaridan farqlash savoli 80-betda berilgan, lekin kitob javobni bermaydi."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Kokain koka bargidan qaysi yilda ajratib olingan?",
+   "options": [
+    "1859",
+    "1886",
+    "1902",
+    "1961"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra kokain 1859 yilda Gettingen universitetida Albert Nieman tomonidan ajratib olingan; 1902 yilda sintez qilingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "54"
+   }
+  },
+  {
+   "question": "Koka bargidagi umumiy alkaloidlarning qancha qismini kokain tashkil qiladi?",
+   "options": [
+    "10%",
+    "30%",
+    "60%",
+    "90%"
+   ],
+   "correct_index": 1,
+   "explanation": "Barglardagi alkaloidlar 0,5-1,5% bo‘lib, kokain ulushi umumiy alkaloidlarning 30% ini tashkil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "54-55"
+   }
+  },
+  {
+   "question": "Kokain pastasi nima?",
+   "options": [
+    "Kokain gidroxloridning toza kristallari",
+    "Kokain va geroinning teng aralashmasi",
+    "Koka bargiga ishlov berishdagi oraliq mahsulot (kokain sulfat)",
+    "Kokain tuzining polimer bilan aralashmasi"
+   ],
+   "correct_index": 2,
+   "explanation": "Pasta (kokain sulfat) — past navli giyohvand vosita va koka bargiga ishlov berishdagi oraliq mahsulot.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "55"
+   }
+  },
+  {
+   "question": "«Spidbol» qanday aralashma?",
+   "options": [
+    "Kokain tuzining polimer bilan aralashmasi",
+    "Kokain va kofeinning aralashmasi",
+    "Kokain tuzining kobalt xlorid bilan aralashmasi",
+    "Kokain va geroinning teng nisbatdagi aralashmasi"
+   ],
+   "correct_index": 3,
+   "explanation": "Qora bozorda «spidbol» kokain va geroinning teng nisbatdagi aralashmasi bo‘lib, «qora» kokain esa polimer bilan aralashma.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "55"
+   }
+  },
+  {
+   "question": "Kokainning qon tomirga yuborilgandagi biosamaradorligi qancha?",
+   "options": [
+    "6-32%",
+    "100%",
+    "50%",
+    "20-40%"
+   ],
+   "correct_index": 1,
+   "explanation": "Biosamaradorlik: og‘iz va burun orqali 20-40%, chekilganda 6-32%, qon tomirga yuborilganda 100%.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "56"
+   }
+  },
+  {
+   "question": "Siydikda benzoilekgoninning etil efirini aniqlash nimani bildiradi?",
+   "options": [
+    "Kokain asosi chekilganini",
+    "Surunkali qabul qilinganini",
+    "Kokain va alkogol bir vaqtda qabul qilinganini",
+    "Kokain murdada parchalanganini"
+   ],
+   "correct_index": 2,
+   "explanation": "Benzoilekgonin etil efiri kokain va alkogol birga qabul qilinganini, angidroekgoninning metil efiri esa krek chekilganini ko‘rsatadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "56"
+   }
+  },
+  {
+   "question": "Kokain biosuyuqliklardan qaysi sharoitda xloroform bilan yaxshi ekstraksiyalanadi?",
+   "options": [
+    "Kuchli kislotali, pH 1-2",
+    "Faqat neytral suvli muhit",
+    "Kuchli ishqoriy, pH 13-14",
+    "Ishqoriy muhit, pH 7,0-8,5"
+   ],
+   "correct_index": 3,
+   "explanation": "Kitobga ko‘ra kokain ishqoriy muhitda (pH 7,0-8,5) xloroform bilan yaxshi, qisman kislotali muhitda ham ekstraksiyalanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "58"
+   }
+  },
+  {
+   "question": "Skott reaksiyasida kokain bo‘lsa qanday natija kuzatiladi?",
+   "options": [
+    "Ko‘k rang; HCl rangni o‘chiradi, xloroform to‘q ko‘k beradi",
+    "Qizil-binafsha rang, HCl dan keyin ham saqlanadi",
+    "Sariq rang, xloroformda yo‘qoladi",
+    "Yashil cho‘kma"
+   ],
+   "correct_index": 0,
+   "explanation": "Kobalt tiotsionat va glitserin aralashmasi bilan ko‘k rang hosil bo‘ladi; HCl rangni o‘chiradi, xloroform esa to‘q ko‘k rang beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "58"
+   }
+  },
+  {
+   "question": "Kokain KMnO4 va xlorid kislota ishtirokida qanday kristallar hosil qiladi?",
+   "options": [
+    "Ninasimon rangsiz kristallar",
+    "Sferoid shaklidagi sariq kristallar",
+    "To‘g‘ri to‘rtburchak qizil-binafsha kristallar",
+    "Kubsimon yashil kristallar"
+   ],
+   "correct_index": 2,
+   "explanation": "Kitob matniga ko‘ra kokain to‘g‘ri to‘rtburchak shaklidagi qizil-binafsha kristallar hosil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "58"
+   }
+  },
+  {
+   "question": "Kokain gidroxloridni UB-spektrofotometriyada miqdoriy aniqlash uchun qaysi to‘lqin uzunligida optik zichlik o‘lchanadi?",
+   "options": [
+    "210 nm",
+    "302 nm",
+    "254 nm",
+    "234 nm"
+   ],
+   "correct_index": 3,
+   "explanation": "UB spektrdan 234 nm dagi optik zichlik aniqlanadi va konsentratsiya kalibrlash chizig‘idan topiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "59"
+   }
+  },
+  {
+   "question": "1886 yilda kokain qo‘shilgan «Koka-kola» ichimligini kim ishlab chiqargan?",
+   "options": [
+    "Djon Pemberton",
+    "Albert Nieman",
+    "Jyul Vern",
+    "Gettingen dorishunosi"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra 1886 yilda dorishunos Djon Pemberton kokain qo‘shilgan «Koka-kola» ichimligini ishlab chiqargan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "54"
+   }
+  },
+  {
+   "question": "«Koka-kola» ichimligi AQSh hukumati tomonidan qaysi yilda taqiqlangan?",
+   "options": [
+    "1886",
+    "1904",
+    "1914",
+    "1961"
+   ],
+   "correct_index": 1,
+   "explanation": "Ichimlik qaramlik chaqirgani uchun 1904 yilda AQSh hukumati tomonidan taqiqlangan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "54"
+   }
+  },
+  {
+   "question": "Erythroxylon oilasining nechta turi kokain yig‘adi?",
+   "options": [
+    "2",
+    "30",
+    "200",
+    "17"
+   ],
+   "correct_index": 3,
+   "explanation": "Kitobga ko‘ra oilada 200 tur ma’lum, ulardan 17 turi kokain yig‘adi, ko‘p kokain faqat ikki turda bo‘ladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "54"
+   }
+  },
+  {
+   "question": "Kokain gidroxloridda kokain miqdori qancha?",
+   "options": [
+    "80-90%",
+    "40%",
+    "30%",
+    "12-50%"
+   ],
+   "correct_index": 0,
+   "explanation": "Kokain gidroxloridda kokain miqdori 80-90%; «ko‘cha savdosi» uchun 12-50% qo‘shimchalar qo‘shiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "55"
+   }
+  },
+  {
+   "question": "«Qo‘ng‘ir» kokain tarkibida taxminan qancha kokain bo‘ladi?",
+   "options": [
+    "30%",
+    "40%",
+    "80-90%",
+    "100%"
+   ],
+   "correct_index": 1,
+   "explanation": "Kokain tuzi kobalt xlorid yoki temir xlorid bilan aralashtirilgan «qo‘ng‘ir» kokain tarkibida 40% kokain bo‘ladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "55"
+   }
+  },
+  {
+   "question": "Benzoilekgoninning yarim chiqish davri qancha?",
+   "options": [
+    "2,5-7,6 soat",
+    "38-67 daqiqa",
+    "4-6 soat",
+    "8-24 soat"
+   ],
+   "correct_index": 2,
+   "explanation": "Kitobga ko‘ra kokain 38-67 daqiqa, benzoilekgonin 4-6 soat, metilekgonin 2,5-7,6 soat yarim chiqish davriga ega.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "56"
+   }
+  },
+  {
+   "question": "Og‘iz orqali qabul qilinganda kokainning letal dozasi kitobda qancha deb berilgan?",
+   "options": [
+    "1,2 g",
+    "200 mg",
+    "15-60 mg",
+    "500 mg"
+   ],
+   "correct_index": 0,
+   "explanation": "Og‘iz orqali toksik doza 500 mg, letal doza esa 1,2 g.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "56"
+   }
+  },
+  {
+   "question": "Kokainning bir martalik dozasining 90-95% i siydik bilan necha kun davomida chiqariladi?",
+   "options": [
+    "8-24 soat",
+    "2-3 kun",
+    "5 kun",
+    "48 soat"
+   ],
+   "correct_index": 1,
+   "explanation": "Dozaning 90-95% i siydik orqali 2-3 kun davomida chiqariladi, asosan metabolitlar holida.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "56"
+   }
+  },
+  {
+   "question": "Siydikda angidroekgoninning metil efirini aniqlash nimadan dalolat beradi?",
+   "options": [
+    "Kokain va alkogol birga qabul qilinganidan",
+    "Kokain ukol qilinganidan",
+    "Krek yoki kokain asosi chekilganidan",
+    "Koka choyi ichilganidan"
+   ],
+   "correct_index": 2,
+   "explanation": "Kitobga ko‘ra angidroekgoninning metil efiri krek yoki kokain asosi chekilganini bildiradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "56"
+   }
+  },
+  {
+   "question": "Kokainning YuQX tahlilida №2 sistema (metanol : ammiak) tarkibi qanday?",
+   "options": [
+    "Xloroform : aseton : etanol : ammiak (20:3:1:20)",
+    "Xloroform:dioksan:etilasetat:ammiak (25:60:10:5)",
+    "Siklogeksan:toluol:dietilamin (75:15:10)",
+    "Metanol : ammiak 25% (100:1,5)"
+   ],
+   "correct_index": 3,
+   "explanation": "Kitobda №2 sistema metanol va 25% ammiak (100:1,5) aralashmasi sifatida berilgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "58"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Kokain bargi: kokain pastasi sulfat kislotada eritilib KMnO4 bilan ishlanishi (pushti rang) asos olishdagi muhim qadam ekani kitobda ko‘rsatilgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "57"
+   }
+  },
+  {
+   "text": "Eslab qolish: kokain yarim chiqish davri 38-67 daqiqa, benzoilekgonin 4-6 soat, metilekgonin 2,5-7,6 soat.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "56"
+   }
+  },
+  {
+   "text": "Muhim farq: biosamaradorlik qon tomirga yuborilganda 100%, chekilganda 6-32%, og‘iz va burun orqali 20-40%.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "56"
+   }
+  },
+  {
+   "text": "Amaliy maslahat: kokain bilan YuQX da qo‘shimchalar (benzokain, prokain, metadon) bir xil sistemada yaqin Rf100 berishi mumkin, shuning uchun 3 ta sistema ishlatiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "59"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+   "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+   "year": null,
+   "pages": "b. 54-59, 61, 80, 147-148"
+  },
+  {
+   "author": "Malaka materiali №042",
+   "title": "Narkotiklarni siydikda aniqlash intervallari (CDRH, 1997)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  },
+  {
+   "author": "Malaka materiali №107",
+   "title": "TGK metabolizmi va ajralishi; biosuyuqliklarda aniqlash muddatlari, skrining va tasdiqlash cutoff qiymatlari (BMT 1993, CDRH 1997, Cone 1996 manbalaridan)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  }
+ ]
 }

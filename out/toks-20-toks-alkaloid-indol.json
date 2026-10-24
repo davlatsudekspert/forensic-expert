@@ -138,6 +138,61 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: tuz va asos holatining eruvchanligi qanday farq qiladi? Doskada: asos – suvda yomon, tuz – suvda yaxshi. Tipik xato: barcha alkaloidlar kristall deb o‘ylash."
     },
     {
+      "title": "Alkaloidlar: eruvchanlik va holati",
+      "bullets": [
+        {
+          "text": "Deyarli barcha alkaloidlar asos holida kristall moddalar bo‘lib, suvda yomon, organik erituvchilarda oson eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ayrimlari asos holida suyuqlik bo‘lib, suv va organik erituvchilarda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alkaloidlarni ajratish kislotalar bilan tuz hosil qilish, so‘ng efir, xloroform bilan ekstraksiyalashga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Asos holidagi alkaloidlar",
+        "columns": [
+          {
+            "title": "Kristall asoslar",
+            "items": [
+              "Deyarli barcha alkaloidlar",
+              "Suvda yomon eriydi",
+              "Organik erituvchilarda oson eriydi"
+            ]
+          },
+          {
+            "title": "Suyuq asoslar",
+            "items": [
+              "Ayrim alkaloidlar",
+              "Suvda yaxshi eriydi",
+              "Organik erituvchilarda yaxshi eriydi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: ikki ustunni to‘ldiring."
+    },
+    {
       "title": "Alkaloidlar tahlili: bosqichlar (1-3)",
       "bullets": [
         {
@@ -175,9 +230,7 @@
           "Ajratib olish",
           "Tozalash",
           "Umumiy reaktivlar bilan sinash"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega tozalash umumiy reaktivlardan oldin turadi? Doskada: bosqichlar ketma-ketligi. Tipik xato: bosqichlarni almashtirish."
     },
@@ -219,9 +272,7 @@
           "Fizik-kimyoviy usullar",
           "Farmakologik tekshiruv",
           "Miqdorni aniqlash"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: farmakologik tekshiruv qaysi alkaloidlarda ayniqsa qimmatli? Doskada: bosqichlar. Tipik xato: farmakologik tekshiruvni barcha alkaloidlar uchun majburiy deb bilish."
     },
@@ -238,7 +289,7 @@
           "uncertain": false
         },
         {
-          "text": "Reaksiya sezgirligi past bo‘lsa, kam miqdordagi moddani aniqlab bo‘lmaydi; reaksiya xos bo‘lmasa, bir modda o‘rniga boshqasi aniqlangan deb ko‘rsatilishi mumkin.",
+          "text": "Sezgirligi past reaksiya kam moddani aniqlamaydi; xos bo‘lmagan reaksiya bir modda o‘rniga boshqasini aniqlangan deb ko‘rsatishga olib keladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -247,7 +298,7 @@
           "uncertain": false
         },
         {
-          "text": "Masalan: atropin uchun faqat Vitali-Moren, purin alkaloidlari uchun faqat mureksid, opiy alkaloidlari uchun faqat Marki reaktividan foydalanish to‘g‘ri natija bermaydi.",
+          "text": "Masalan: atropin uchun faqat Vitali-Moren, purin alkaloidlari uchun faqat mureksid, opiy alkaloidlari uchun faqat Marki reaktivi yetarli emas.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -256,8 +307,72 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Nima uchun 2 va undan ortiq usul",
+        "header": [
+          "Modda",
+          "Yetarli bo‘lmagan reaksiya"
+        ],
+        "rows": [
+          [
+            "Atropin",
+            "Faqat Vitali-Moren"
+          ],
+          [
+            "Purin alkaloidlari",
+            "Faqat mureksid"
+          ],
+          [
+            "Opiy alkaloidlari",
+            "Faqat Marki reaktivi"
+          ]
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega bu uch reaksiya yagona isbot bo‘la olmaydi? Doskada: modda – reaksiya – ehtimoliy xalaqit jadvali. Tipik xato: bitta musbat reaksiyani yakuniy xulosa deb yozish."
+    },
+    {
+      "title": "Alkaloid tahlilida xatolar manbai",
+      "bullets": [
+        {
+          "text": "Reaksiya sezgirligi past bo‘lsa, kam miqdordagi moddani aniqlab bo‘lmaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya tekshiriluvchi modda uchun xos bo‘lmasa, kimyogar bir modda o‘rniga boshqasini aniqlangan deb ko‘rsatishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Probirkadagi makro reaksiyalar kam qo‘llanadi: sezgirligi past va modda ko‘p talab qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Xatolar sabablari",
+        "nodes": [
+          "Sezgirligi past reaksiya",
+          "Kam modda aniqlanmaydi",
+          "Xos bo‘lmagan reaksiya",
+          "Noto‘g‘ri xulosa xavfi"
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun kamida ikkita sezgir va xususiy reaksiya talab qilinadi?"
     },
     {
       "title": "Xususiy va selektiv reaksiyalar",
@@ -290,8 +405,88 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Xususiy va selektiv",
+        "columns": [
+          {
+            "title": "Xususiy reaksiya",
+            "items": [
+              "Faqat bitta modda uchun xarakterli",
+              "Yod + kraxmal: ko‘k",
+              "Simob: qizil cho‘kma",
+              "Sianid: berlin zangorisi"
+            ]
+          },
+          {
+            "title": "Selektiv reaktiv",
+            "items": [
+              "Bir nechta moddada o‘xshash natija",
+              "FeCl3: fenol gidroksilli moddalar",
+              "Azobo‘yoq: anilin hosilalari"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: xususiy va selektiv reaksiyalar farqi nimada? Doskada: ikki ustun. Tipik xato: selektiv reaksiyani xususiy deb hisoblash. Kitobda: simob misolidagi formula buzilgan («Cu2 NqI4», to‘g‘risi Cu2[HgI4]) — formula slaydga yozilmadi."
+    },
+    {
+      "title": "Alkaloid reaksiyalari tasnifi",
+      "bullets": [
+        {
+          "text": "Xususiy va selektiv reaksiyalar bilan birga umumiy cho‘ktiruvchi va rang hosil qiluvchi reaktivlar qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102-103"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rang reaktivlari yot moddalar bilan ham rang berishi mumkin, shuning uchun mikrokristalloskopik reaksiyalar va farmakologik tekshiruv tavsiya etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "104"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alkaloidlar tahlili 6 bosqichdan iborat: ajratish, tozalash, reaktivlar, fizik-kimyoviy usullar, farmakologik tekshiruv, miqdor.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Reaksiya turlari",
+        "root": "Alkaloidlarni aniqlash",
+        "children": [
+          {
+            "label": "Xususiy reaksiyalar"
+          },
+          {
+            "label": "Selektiv reaksiyalar"
+          },
+          {
+            "label": "Cho‘ktiruvchi reaktivlar"
+          },
+          {
+            "label": "Rang reaktivlari"
+          },
+          {
+            "label": "Mikrokristalloskopiya"
+          },
+          {
+            "label": "Farmakologik tekshiruv"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Tipik xato: faqat rang reaksiyasiga tayanish."
     },
     {
       "title": "Cho‘ktiruvchi reaksiyalarning tasnifi",
@@ -324,7 +519,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Tasnif",
+        "root": "Umumiy cho‘ktiruvchilar",
+        "children": [
+          {
+            "label": "Oddiy tuz hosil qiluvchi",
+            "items": [
+              "Tanin, KMnO4",
+              "Pikrin, pikrolon kislota",
+              "Xromatlar (H2CrO4)"
+            ]
+          },
+          {
+            "label": "Kompleks: metalloidli",
+            "items": [
+              "I2/KI, Br2/KBr, ICl",
+              "Zonnenshteyn, Sheybler"
+            ]
+          },
+          {
+            "label": "Kompleks: metallli",
+            "items": [
+              "Marme, Mayer, Dragendorf",
+              "HgCl2, K3[Fe(CN)6]"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tuz va kompleks hosil qiluvchi reaktivlar farqi. Doskada: tasnif daraxti. Tipik xato: Dragendorf reaktivini oddiy tuz hosil qiluvchilar qatoriga kiritish."
     },
     {
@@ -361,7 +584,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Reaktivlar",
-        "nodes": [],
         "header": [
           "Reaktiv",
           "Tarkibi"
@@ -386,6 +608,70 @@
         ]
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi reaktiv metall, qaysi metalloid saqlaydi? Doskada: jadvalni yodlang. Tipik xato: Mayer va Dragendorf tarkibini almashtirish. Eslatma: PDF matnida «CdI2» yozuvi «SdI2» ko‘rinishida chiqqan."
+    },
+    {
+      "title": "Sezgir umumiy reaktivlar",
+      "bullets": [
+        {
+          "text": "Sheybler, Zonnenshteyn, Dragendorf reaktivlari, pikrin va pikrolon kislotalari sezgir reaktivlar hisoblanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "103"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tekshiriluvchi eritma bilan birga toza alkaloidlar bilan ham reaksiyani takrorlab, natijalarni solishtirish lozim.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "103"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Umumiy cho‘ktiruvchi reaktivlar manfiy ahamiyatga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "103"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Sezgir reaktivlar",
+        "root": "Sezgir reaktivlar",
+        "children": [
+          {
+            "label": "Sheybler",
+            "items": [
+              "H3PO4·12WO3·2H2O"
+            ]
+          },
+          {
+            "label": "Zonnenshteyn",
+            "items": [
+              "H3PO4·12MoO3·2H2O"
+            ]
+          },
+          {
+            "label": "Dragendorf",
+            "items": [
+              "BiI3/KI"
+            ]
+          },
+          {
+            "label": "Pikrin kislota"
+          },
+          {
+            "label": "Pikrolon kislota"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: nima uchun toza alkaloid bilan solishtirma reaksiya kerak?"
     },
     {
       "title": "Umumiy cho‘ktiruvchi reaktivlarning manfiy ahamiyati",
@@ -469,11 +755,55 @@
           "Dekarboksillanish",
           "Kadaverin / gistamin",
           "Alkaloidga o‘xshash cho‘kma"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun bu faktni bilish ekspertiza uchun muhim? Doskada: sxema. Tipik xato: chirigan ob’ektdagi cho‘kmani sof alkaloid deb olish."
+    },
+    {
+      "title": "Murda alkaloidlari: dekarboksillanish",
+      "bullets": [
+        {
+          "text": "Chirish jarayonida lizin dekarboksillanib kadaverin, gistidin esa gistamin hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "103"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gistidin, gistamin kabi yot moddalar alkaloidlar kabi cho‘kma berishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "103"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ularni «murda alkaloidlari» deyiladi: murda atropini, murda nikotini, murda strixnini.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "103"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Murda alkaloidlari",
+        "reagents": [
+          "Lizin",
+          "Dekarboksillanish (−CO2)"
+        ],
+        "products": [
+          "Kadaverin"
+        ],
+        "conditions": "Bioob’ekt chirishi",
+        "observation": "Gistidin ham shunday: gistamin hosil bo‘ladi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: lizin va gistidin reaksiyalari."
     },
     {
       "title": "Rang hosil qiluvchi reaksiyalar",
@@ -543,7 +873,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Rang reaktivlari",
-        "nodes": [],
         "header": [
           "Reaktiv",
           "Tarkibi"
@@ -603,7 +932,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Reaksiya va modda",
-        "nodes": [],
         "header": [
           "Reaksiya",
           "Qaysi guruh"
@@ -694,7 +1022,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Farmakologik tekshiruv",
+        "columns": [
+          {
+            "title": "Tabiiy atropin",
+            "items": [
+              "Vitali-Moren reaksiyasini beradi",
+              "Ko‘z qorachig‘ini kengaytiradi"
+            ]
+          },
+          {
+            "title": "Murda atropini",
+            "items": [
+              "Vitali-Moren reaksiyasini beradi",
+              "Ko‘z qorachig‘ini kengaytirmaydi"
+            ]
+          },
+          {
+            "title": "Murda nikotini",
+            "items": [
+              "Dragendorf bilan kristall beradi",
+              "Farmakologik ta’sir bermaydi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: farmakologik tekshiruv nima uchun hal qiluvchi? Doskada: tabiiy va murda alkaloidi taqqoslash jadvali. Tipik xato: kimyoviy reaksiyani farmakologik tekshiruvsiz yakuniy deb hisoblash."
     },
     {
@@ -728,7 +1082,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Mavzudagi moddalar",
+        "root": "Indol alkaloidlari",
+        "children": [
+          {
+            "label": "Strixnin",
+            "items": [
+              "Kuchala bilan birga"
+            ]
+          },
+          {
+            "label": "Brutsin",
+            "items": [
+              "Strixninga o‘xshash"
+            ]
+          },
+          {
+            "label": "Rezerpin"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ikki alkaloid birga uchraydi va birga tahlil qilinadi? Doskada: kuchala – strixnin + brutsin. Eslatma: rezerpin kitoblarning ko‘rsatilgan betlarida faqat nom sifatida bor; ajratish, reaksiya va miqdoriy usul keltirilmagan — slaydga to‘qib yozilmadi. Tipik xato: rezerpinni strixnin kabi tahlil qilinadi deb taxmin qilish."
     },
     {
@@ -765,7 +1140,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Strixnin eruvchanligi",
-        "nodes": [],
         "header": [
           "Shakl",
           "Yaxshi eriydi"
@@ -818,14 +1192,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Strixnin",
+        "columns": [
+          {
+            "title": "Ajratish usullari",
+            "items": [
+              "Nordonlashtirilgan suv",
+              "Nordonlashtirilgan spirt",
+              "Elektrodializ"
+            ]
+          },
+          {
+            "title": "Ekstraksiya",
+            "items": [
+              "Kislotali sharoitda qisman",
+              "Ishqoriy sharoitda asosiy qismi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega strixnin kislotali ajralmada ham qidiriladi? Doskada: ikki ajralma. Tipik xato: faqat ishqoriy ajralmaga e’tibor qaratish."
     },
     {
       "title": "Strixnin: tibbiyot va zaharlanish",
       "bullets": [
         {
-          "text": "Tibbiyotda strixnin nitrat va qustiruvchi yong‘oqning spirtli eritmasi (chilibuxa) darmonsizlanish, past qon bosimi, yurak faoliyati bo‘shashganda, parez va falajlikda qo‘llanadi.",
+          "text": "Tibbiyotda strixnin nitrat va chilibuxa darmonsizlanish, past qon bosimi, yurak bo‘shashishi, parez va falajlikda qo‘llanadi.",
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
@@ -852,7 +1246,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Zaharlanish rivoji",
+        "nodes": [
+          "MAT qo‘zg‘aladi",
+          "Tez qaytariladigan tetanik tirishishlar",
+          "MAT falajlanishi",
+          "O‘lim"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tetanik tirishishning klinik belgisi nima? (kitobda yo‘q — o‘qituvchi ma’lumoti). Doskada: sababiyat zanjiri. Tipik xato: strixnin tibbiyotda umuman qo‘llanilmaydi deb o‘ylash."
     },
     {
@@ -886,7 +1289,22 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Strixnin",
+        "items": [
+          {
+            "label": "Metabolizmga uchraydi",
+            "value": "80",
+            "unit": "% ga yaqin"
+          },
+          {
+            "label": "Murdada saqlanishi",
+            "value": "bir necha",
+            "unit": "yil"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: murdada uzoq saqlanishi ekspertiza uchun nimani anglatadi? Doskada: 80 % va yillar. Tipik xato: peshobdan o‘zgarmagan strixninni qidirmaslik."
     },
     {
@@ -920,7 +1338,18 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Bixromat reaksiyasi",
+        "reagents": [
+          "Strixnin",
+          "K2Cr2O7 + kons. H2SO4"
+        ],
+        "products": [
+          "Binafsha rangli birikma"
+        ],
+        "observation": "Tez yo‘qoladi; brutsin halaqit beradi"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: brutsin xalaqitini qanday bartaraf etamiz? Doskada: bixromat reaksiyasi sxemasi. Tipik xato: brutsinni parchalamasdan bixromat sinovini o‘tkazish."
     },
     {
@@ -954,8 +1383,83 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Mandelin reaksiyasi",
+        "reagents": [
+          "Strixnin",
+          "Mandelin reaktivi"
+        ],
+        "products": [
+          "Ko‘k-binafsha birikma"
+        ],
+        "conditions": "NH4VO3 + kons. H2SO4",
+        "observation": "Qizil rangga o‘tadi"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: baqa sinovi nimani isbotlaydi? Doskada: 3 reaksiya. Tipik xato: Mandelin reaktivini ammoniy volframat bilan tuzishda adashish (to‘g‘ri: vanadat)."
+    },
+    {
+      "title": "Strixnin: reaksiyalar jadvali",
+      "bullets": [
+        {
+          "text": "Umumiy cho‘ktiruvchi reaktivlar bilan cho‘kma hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "107"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bixromat va H2SO4 bilan binafsha tez yo‘qoluvchi rang; Mandelin reaktivi bilan ko‘k-binafsha, keyin qizil.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "107"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vitali-Moren reaksiyasini beradi; farmakologik tekshiruvda baqada tetanik tirishish chaqiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "107"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Strixnin",
+        "header": [
+          "Reaktiv / usul",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Umumiy cho‘ktiruvchi",
+            "Cho‘kma"
+          ],
+          [
+            "K2Cr2O7 + kons. H2SO4",
+            "Binafsha, tez yo‘qoladi"
+          ],
+          [
+            "Mandelin reaktivi",
+            "Ko‘k-binafsha, qizilga o‘tadi"
+          ],
+          [
+            "Vitali-Moren",
+            "Musbat"
+          ],
+          [
+            "Farmakologik (baqa)",
+            "Tetanik tirishish"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Tipik xato: brutsin ishtirokini hisobga olmay bixromat reaksiyasiga tayanish."
     },
     {
       "title": "Strixnin: YuQX va spektr",
@@ -988,7 +1492,21 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Strixnin",
+        "items": [
+          {
+            "label": "Rf (YuQX)",
+            "value": "0,33"
+          },
+          {
+            "label": "UB, 0,1 n H2SO4",
+            "value": "255",
+            "unit": "nm (malaka)"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Rf=0,33 qaysi tizimda olingan? Doskada: tizim tarkibi. Izoh: tizim va UB qiymati malaka 009 dan (kitobda tizim ko‘rsatilmagan). Tipik xato: Rf ni tizimsiz yozish."
     },
     {
@@ -1022,7 +1540,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Malaken-Denije",
+        "nodes": [
+          "Strixnin + HCl + Zn kukuni",
+          "Qaytarilish mahsuloti",
+          "NaNO2 eritmasi qo‘shiladi",
+          "Qizil rang: FEK da miqdori"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Malaken-Denije reaksiyasining bosqichlari. Doskada: qaytarish → nitrit → qizil rang. Tipik xato: reaktiv tartibini almashtirish."
     },
     {
@@ -1127,7 +1654,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Strixnin va brutsin",
-        "nodes": [],
         "header": [
           "Reaksiya",
           "Strixnin",
@@ -1197,6 +1723,59 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: mikrokristallarni qanday kuzatamiz? Doskada: shakl: prizma. Izoh: mikrokristall va sezgirlik malaka 009 dan. Tipik xato: sezgirlikni boshqa reaksiyaga ham tegishli deb olish."
     },
     {
+      "title": "Spektrofotometrik usul: asosiy qoidalar",
+      "bullets": [
+        {
+          "text": "Spektrofotometriya monoxromatik nurlarni ko‘rinadigan va unga yondosh ultrabinafsha sohada aniqlashga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Optik ko‘rsatkich eritmaning maksimum nur yutishiga mos to‘lqin uzunligida o‘lchanadi; u 0,2 dan 1,0 gacha bo‘lishi lozim.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Solishtiruvchi eritma — tekshiriluvchi eritmadagi barcha komponentlar (aniqlanuvchidan tashqari) saqlagan eritma.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Spektrofotometriya",
+        "items": [
+          {
+            "label": "Optik ko‘rsatkich",
+            "value": "0,2-1,0"
+          },
+          {
+            "label": "O‘lchash joyi",
+            "value": "maksimum",
+            "unit": "to‘lqin"
+          },
+          {
+            "label": "Kyuvetalar soni",
+            "value": "2",
+            "unit": "ta"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun optik ko‘rsatkich 0,2-1,0 oralig‘ida tanlanadi?"
+    },
+    {
       "title": "Xulosa va nazorat savollari",
       "bullets": [
         {
@@ -1244,12 +1823,12 @@
     {
       "question": "Alkaloidlar tahlilida kamida nechta reaksiya yoki usul qo‘llanishi kerak?",
       "options": [
-        "Bitta",
-        "2 yoki undan ortiq",
         "Faqat rangli",
-        "Faqat cho‘ktiruvchi"
+        "Bitta",
+        "Faqat cho‘ktiruvchi",
+        "2 yoki undan ortiq"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Kimyogar faqat bitta reaksiyaga asoslanmasdan, 2 yoki undan ortiq reaksiya va usulni qo‘llashi zarur.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1260,12 +1839,12 @@
     {
       "question": "Qaysi reaktiv metall saqlovchi kompleks hosil qiluvchilar qatoriga kiradi?",
       "options": [
-        "Dragendorf (BiI3/KI)",
         "Tanin",
-        "Pikrin kislota",
-        "Xromat"
+        "Xromat",
+        "Dragendorf (BiI3/KI)",
+        "Pikrin kislota"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Metall saqlovchilar: CdI2/KI (Marme), HgI2/KI (Mayer), BiI3/KI (Dragendorf) va boshqalar.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1276,12 +1855,12 @@
     {
       "question": "«Murda alkaloidlari» qaysi moddalardan hosil bo‘ladi?",
       "options": [
-        "Gistidin va lizin kabi aminokislotalarning chirishidan",
-        "Faqat glyukozadan",
+        "Yog‘lardan",
         "Mineral kislotalardan",
-        "Yog‘lardan"
+        "Faqat glyukozadan",
+        "Gistidin va lizin kabi aminokislotalarning chirishidan"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Gistidin dekarboksillanib gistamin, lizin esa kadaverin hosil qiladi; ular alkaloidga o‘xshash cho‘kma beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1292,12 +1871,12 @@
     {
       "question": "Marki reaktivi qanday moddalar uchun umumiy reaksiya hisoblanadi?",
       "options": [
-        "Purin hosilalari",
-        "Morfin hosilalari",
+        "Brutsin",
         "Barbituratlar",
-        "Brutsin"
+        "Morfin hosilalari",
+        "Purin hosilalari"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Marki reaktivi morfin hosilalari uchun umumiy reaksiya hisoblanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1309,9 +1888,9 @@
       "question": "Mandelin reaktivi qanday tarkibga ega (to‘g‘ri variant)?",
       "options": [
         "Ammoniy vanadat va konsentrlangan H2SO4",
+        "Kaliy bixromat va H2SO4",
         "Ammoniy volframat va H2SO4",
-        "Formaldegid va H2SO4",
-        "Kaliy bixromat va H2SO4"
+        "Formaldegid va H2SO4"
       ],
       "correct_index": 0,
       "explanation": "To‘g‘ri tarkib — ammoniy vanadat va konsentrlangan sulfat kislota.",
@@ -1324,12 +1903,12 @@
     {
       "question": "«Murda atropini» ko‘z qorachig‘iga qanday ta’sir qiladi?",
       "options": [
-        "Kengaytiradi",
         "Kengaytirmaydi",
         "Toraytiradi",
+        "Kengaytiradi",
         "Rang o‘zgartiradi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Murda atropini Vitali-Moren reaksiyasini bersa ham, ko‘z qorachig‘ini kengaytirmaydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1342,8 +1921,8 @@
       "options": [
         "Binafsha, tez yo‘qolib ketuvchi",
         "Qizil, barqaror",
-        "Yashil",
-        "Rangsiz"
+        "Rangsiz",
+        "Yashil"
       ],
       "correct_index": 0,
       "explanation": "Binafsha rangli, tez yo‘qolib ketuvchi reaksiya beradi.",
@@ -1356,12 +1935,12 @@
     {
       "question": "Strixninni miqdoriy aniqlash qaysi reaksiyaga asoslangan?",
       "options": [
+        "Fudjivara",
         "Malaken-Denije",
         "Murexid",
-        "Vitali-Moren",
-        "Fudjivara"
+        "Vitali-Moren"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "FEK usulida Malaken-Denije reaksiyasi: HCl va Zn bilan qaytarish, NaNO2 bilan qizil rang.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1372,12 +1951,12 @@
     {
       "question": "Quyidagilardan qaysi biri strixninni brutsindan farqlaydi?",
       "options": [
+        "Ikkalasi ham bir xil",
         "Brutsin SnCl2+HNO3 va Erdman bilan qizil rang beradi",
         "Strixnin Erdman bilan qizil rang beradi",
-        "Ikkalasi ham bir xil",
         "Brutsin efirda erimaydi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Brutsin qalay(II) xlorid + HNO3 va Erdman reaktivi bilan qizil rang beradi, strixnin bermaydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1388,33 +1967,177 @@
     {
       "question": "Brutsin YuQX da qaysi Rf qiymatiga ega (kitobga ko‘ra)?",
       "options": [
+        "0,15",
         "0,21",
-        "0,33",
         "0,65",
-        "0,15"
+        "0,33"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Brutsin: Rf = 0,21; strixnin: Rf = 0,33.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "108"
+        "page": "107-108"
       }
     },
     {
       "question": "Strixnin organizmda qancha qismi metabolizmga uchraydi?",
       "options": [
-        "Taxminan 20 %",
         "80 % ga yaqini",
         "Hammasi",
-        "Hech qancha"
+        "Hech qancha",
+        "Taxminan 20 %"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Tez so‘rilib, 80 % ga yaqini metabolizmga uchraydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "107"
+      }
+    },
+    {
+      "question": "Quyidagilardan qaysi biri xususiy reaksiyaga misol?",
+      "options": [
+        "Azobo‘yoq hosil bo‘lishi",
+        "FeCl3 ning fenol gidroksilli moddalar bilan rang berishi",
+        "Marki reaktivining morfin hosilalari bilan reaksiyasi",
+        "Sianid kislota uchun berlin zangorisi hosil bo‘lishi"
+      ],
+      "correct_index": 3,
+      "explanation": "Xususiy reaksiyalarga yodning kraxmal bilan ko‘k rangi, simobning qizil cho‘kmasi, sianid kislotaning berlin zangorisi misol.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "102"
+      }
+    },
+    {
+      "question": "Azobo‘yoq hosil bo‘lishi qaysi moddalar uchun selektiv reaksiya?",
+      "options": [
+        "Anilin hosilalari uchun",
+        "Barbituratlar uchun",
+        "Fenol gidroksilli moddalar uchun",
+        "Purin hosilalari uchun"
+      ],
+      "correct_index": 0,
+      "explanation": "FeCl3 fenol gidroksili saqlovchi moddalar uchun, azobo‘yoq esa anilin hosilalari uchun selektiv.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "102"
+      }
+    },
+    {
+      "question": "Mayer reaktivining tarkibi qaysi?",
+      "options": [
+        "I2/KI",
+        "HgI2/KI",
+        "CdI2/KI",
+        "BiI3/KI"
+      ],
+      "correct_index": 1,
+      "explanation": "Mayer reaktivi — HgI2/KI; Dragendorf — BiI3/KI; Marme — CdI2/KI.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "103"
+      }
+    },
+    {
+      "question": "«Murda alkaloidlari»ning kelib chiqishida lizin dekarboksillanib nimaga aylanadi?",
+      "options": [
+        "Strixninga",
+        "Brutsinga",
+        "Gistaminga",
+        "Kadaveringa"
+      ],
+      "correct_index": 3,
+      "explanation": "Lizin dekarboksillanib kadaverin, gistidin esa gistamin hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "103"
+      }
+    },
+    {
+      "question": "Mureksid reaksiyasi qaysi moddalar guruhi uchun umumiy reaksiya?",
+      "options": [
+        "Indol alkaloidlari",
+        "Purin hosilalari",
+        "Barbituratlar",
+        "Morfin hosilalari"
+      ],
+      "correct_index": 1,
+      "explanation": "Marki reaktivi morfin hosilalari, mureksid purin hosilalari, kobalt ammiakati barbituratlar uchun umumiy.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "103"
+      }
+    },
+    {
+      "question": "Nitrat kislota qaysi alkaloid uchun xususiy reaktiv hisoblanadi?",
+      "options": [
+        "Veratrin",
+        "Strixnin",
+        "Atropin",
+        "Brutsin"
+      ],
+      "correct_index": 3,
+      "explanation": "Nitrat kislota brutsin uchun, xlorid, sulfat, nitrat kislotalar veratrin uchun xususiy reaktiv.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "103"
+      }
+    },
+    {
+      "question": "Strixnin biologik ob’ektdan qaysi usullarda ajratib olinadi?",
+      "options": [
+        "Faqat sovunlash",
+        "Faqat suv bug‘i bilan haydash",
+        "Nordonlashtirilgan suv, nordonlashtirilgan spirt va elektrodializ",
+        "Faqat quruq haydash"
+      ],
+      "correct_index": 2,
+      "explanation": "Strixnin nordonlashtirilgan suv, nordonlashtirilgan spirt va elektrodializ usulida ajratib olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "107"
+      }
+    },
+    {
+      "question": "Strixninning farmakologik tekshiruvi qaysi hayvonda qaysi alomatni chaqiradi?",
+      "options": [
+        "Quyonda ko‘z qorachig‘ining kengayishi",
+        "Sichqonda uyqu",
+        "Baqada tetanik tirishish",
+        "Baqada falajlik"
+      ],
+      "correct_index": 2,
+      "explanation": "Farmakologik tekshiruv: strixnin baqada tetanik tirishish holatini chaqiradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "107"
+      }
+    },
+    {
+      "question": "Spektrofotometriyada eritmaning optik ko‘rsatkichi qaysi oraliqda bo‘lishi lozim?",
+      "options": [
+        "0,01 dan 0,1 gacha",
+        "1,0 dan 3,0 gacha",
+        "0,2 dan 1,0 gacha",
+        "2 dan 5 gacha"
+      ],
+      "correct_index": 2,
+      "explanation": "Tekshiriluvchi modda konsentratsiyasini tanlashda optik ko‘rsatkich 0,2 dan 1,0 gacha bo‘lishi lozim.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "108"
       }
     }
   ],

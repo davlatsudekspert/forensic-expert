@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-08-toks-spirtlar",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Metil, etil, amil spirtlari va etilenglikol. Kimyoviy va GSX tahlili, natijani talqin qilish",
+  "ru": "Metil, etil, amil spirtlari va etilenglikol. Kimyoviy va GSX tahlili, natijani talqin qilish",
+  "en": "Metil, etil, amil spirtlari va etilenglikol. Kimyoviy va GSX tahlili, natijani talqin qilish"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-08-toks-spirtlar-q01",
+   "question_i18n": {
+    "uz": "Metil spirtining zaharli dozasi kitobda qancha deb berilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100-300 g",
+     "7-8 g",
+     "500 ml",
+     "0,2 g"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Zaharli dozasi 7-8 g, LD50=30-100 g."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "40"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q02",
+   "question_i18n": {
+    "uz": "Metil spirti oksidlanganda organizmda qaysi metabolitlar hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Aseton",
+     "Oksalat kislota",
+     "Sirka aldegidi, sirka kislota",
+     "Chumoli aldegidi, so‘ng chumoli kislota"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Metil spirti oksidlanib chumoli aldegidiga, so‘ng chumoli kislotaga o‘tadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "40"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q03",
+   "question_i18n": {
+    "uz": "Metilsalitsilat reaksiyasi haqida qaysi fikr to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rang o‘zgarishi bilan boradi",
+     "Faqat amil spirtiga xos",
+     "Etil spirti ham beradi, hidlar o‘xshash",
+     "Faqat metil spirtiga xos"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Salitsil kislota va H2SO4 ishtirokida metil spirti metilsalitsilat hosil qiladi; bu reaksiyani etil spirti ham beradi, hidlar o‘xshash."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "41"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q04",
+   "question_i18n": {
+    "uz": "Yodoform reaksiyasida mikroskopda qanday kristallar ko‘rinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Konvert shaklidagi",
+     "Kub shaklidagi",
+     "Olti qirrali sariq yulduzchalar",
+     "Ignasimon rangsiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Yodoform sariq loyqa va mikroskopda olti qirrali sariq yulduzchalar ko‘rinishidagi kristallarni hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "42"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q05",
+   "question_i18n": {
+    "uz": "Etil spirti tahlil uchun qaysi a’zolardan olinishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat soch",
+     "Faqat suyak",
+     "Me’da, jigar, buyrak va miya",
+     "Faqat teri"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tahlil uchun me’da, jigar, buyrak va miya olish mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "41"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q06",
+   "question_i18n": {
+    "uz": "Amil spirtining o‘limga olib keluvchi miqdori kitobda qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100-300 ml",
+     "10-15 g",
+     "1 kg",
+     "1 g"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "10-15 g amil spirti o‘limga olib keladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "43"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q07",
+   "question_i18n": {
+    "uz": "Amil spirti bilan reaksiyada KMnO4 va H2SO4 bilan qizdirilsa qaysi hidlar ketma-ket seziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sirka etil efiri",
+     "Achchiq bodom",
+     "Valerian aldegidi, so‘ng valerian kislotasi",
+     "Xloroform"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Avval yoqimli valerian aldegidi hidi, so‘ng yoqimsiz (chirigan pishloq) valerian kislotasi hidi seziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "43"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q08",
+   "question_i18n": {
+    "uz": "Etilenglikol nima uchun oddiy suv bug‘i bilan haydab ajratilmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "U gazsimon modda",
+     "U suv bug‘i bilan yomon haydaladi",
+     "U darhol parchalanadi",
+     "U suvda erimaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Etilenglikol suv bug‘i bilan yomon haydalgani uchun Lapkina va Nazarenko usulida (benzol bilan) ajratib olinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "45"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q09",
+   "question_i18n": {
+    "uz": "Etilenglikolni ajratishda tahlil uchun qaysi a’zo olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jigar",
+     "O‘pka",
+     "Taloq",
+     "Yurak"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Etilenglikol asosan jigarda to‘planadi, shuning uchun tahlil uchun jigar olinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "45"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q10",
+   "question_i18n": {
+    "uz": "Etilenglikol oksalat kislotasigacha oksidlanganda qaysi cho‘kma hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mis oksalat ko‘k cho‘kmasi",
+     "Kaltsiy oksalat oq cho‘kmasi",
+     "Kumush xlorid",
+     "Berlin zangorisi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Oksalat kislotaga ammoniy gidroksid va kaltsiy tuzlari qo‘shilsa, kaltsiy oksalat oq cho‘kmasi hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "46"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q11",
+   "question_i18n": {
+    "uz": "GSX da K (taqsimlanish koeffitsienti) kichik bo‘lsa modda qanday chiqadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kolonkada ushlanib qoladi",
+     "Chiqmaydi",
+     "Kolonkadan tez chiqadi",
+     "Faqat kechikib chiqadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "K kichik bo‘lsa, modda qo‘zg‘almas fazada kam shimiladi va kolonkadan tez chiqariladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "48"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q12",
+   "question_i18n": {
+    "uz": "Metil spirtining LD50 qiymati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "300-1000 g",
+     "3-10 g",
+     "0,3 g",
+     "30-100 g"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Metil spirtining zaharli dozasi 7-8 g, LD50 = 30-100 g."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "40"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q13",
+   "question_i18n": {
+    "uz": "Metil spirtining qancha qismi organizmdan o‘pka orqali chiqariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "21%",
+     "40%",
+     "90%",
+     "5%"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Organizmdan o‘pka orqali 21% chiqariladi, 40% oksidlanadi, taxminan 39% buyraklar orqali chiqadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "40"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q14",
+   "question_i18n": {
+    "uz": "Qondagi spirt konsentratsiyasi qaysi oraliqda mast qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,05-0,1‰",
+     "1-4‰",
+     "10-40‰",
+     "0,01-0,04‰"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Qondagi 0,01-0,04‰ kayf qildiradi, 0,05-0,1‰ mast qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "41"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q15",
+   "question_i18n": {
+    "uz": "Etil spirtining qancha qismi CO2 gacha oksidlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100% o‘zgarmasdan chiqadi",
+     "10-20%",
+     "50%",
+     "90-99%"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Spirt jigarda tez oksidlanadi: 90-99% CO2 gazigacha oksidlanadi, qolgani nafas va buyrak orqali chiqadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "41"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q16",
+   "question_i18n": {
+    "uz": "Etil spirti qaysi haroratda qaynaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "63 °C",
+     "77-78,5 °C",
+     "197 °C",
+     "100 °C"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Toza etil spirti 77-78,5 °C da qaynaydi va zangori alangalanib yonadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "41"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q17",
+   "question_i18n": {
+    "uz": "Etil spirti K2Cr2O7 va H2SO4 bilan oksidlanganda eritma qanday rangga o‘tadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yashil",
+     "Rangsizlanadi",
+     "Qizil",
+     "Ko‘k"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Oksidlanishda sirka aldegidi hidi seziladi va Cr2(SO4)3 hisobiga eritma yashil rangga o‘tadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "42"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q18",
+   "question_i18n": {
+    "uz": "Toza etilenglikol qaysi haroratda qaynaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "197,0 °C",
+     "100 °C",
+     "78 °C",
+     "56 °C"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Toza etilenglikol rangsiz, yog‘simon, shirin mazali suyuqlik; 197,0 °C da qaynaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "44"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q19",
+   "question_i18n": {
+    "uz": "Lapkina–Nazarenko usulida 10 g jigarga qancha oksalat kislota va benzol qo‘shiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat suv",
+     "50 g oksalat kislota va 3 ml benzol",
+     "1 g oksalat kislota va 100 ml benzol",
+     "5 g oksalat kislota va 30 ml benzol"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Jigarga (10 g) shavel kislotasi kristallari (5 g) qo‘shib ezilib, ustiga benzol (30 ml) qo‘shiladi va suv hammomida qaynatiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "45"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-08-toks-spirtlar-q20",
+   "question_i18n": {
+    "uz": "Spirtlarni GSX da ichki standartlash usulida aniqlashda ichki standart sifatida qaysi spirt olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Metil spirti",
+     "Amil spirti",
+     "Butil spirti",
+     "Propil spirti"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Spirt miqdori ichki standartlash usulida aniqlanadi; ichki standart sifatida propil spirti olinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

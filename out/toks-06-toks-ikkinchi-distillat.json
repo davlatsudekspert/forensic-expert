@@ -39,7 +39,7 @@
       "title": "Ikkinchi distillyat va uning tahlili",
       "bullets": [
         {
-          "text": "Birinchi distillyat faqat HCN ga; ikkinchi distillyat (1 yoki 2 qism, 25 ml dan) spirtlar, aldegid va ketonlar, alkilgalogenidlar, aromatik uglevodorod hosilalariga tekshiriladi.",
+          "text": "Birinchi distillyat faqat HCN ga; ikkinchi (1-2 qism, 25 ml dan) spirt, aldegid va keton, alkilgalogenid, aromatik hosilalarga tekshiriladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -57,7 +57,7 @@
           "uncertain": false
         },
         {
-          "text": "Fenol, krezol, anilin, nitrobenzol, amil spirti uchun distillyatga natriy gidrokarbonat qo‘shilib, efir bilan chayqatiladi; efir uchirilib konsentratsiya oshiriladi.",
+          "text": "Fenol, krezol, anilin, nitrobenzol, amil spirti uchun distillyatga NaHCO3 qo‘shilib, efir bilan chayqatiladi; efir uchirilib konsentratsiya oshiriladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -75,7 +75,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Birinchi va ikkinchi distillyat",
+        "columns": [
+          {
+            "title": "Birinchi distillyat",
+            "items": [
+              "Faqat HCN ga tekshiriladi"
+            ]
+          },
+          {
+            "title": "Ikkinchi distillyat",
+            "items": [
+              "25 ml dan, 1 yoki 2 qism",
+              "Spirt, aldegid, keton, alkilgalogenid",
+              "Aromatik uglevodorod hosilalari"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun birinchi va ikkinchi distillyat alohida? Doskada: tahlil sxemasi. Tipik xato: efirli ajralma olmasdan xloroform va xloralgidratni farqlashga urinish."
     },
     {
@@ -100,7 +119,16 @@
           "uncertain": false
         },
         {
-          "text": "Dezinfeksiyalovchi, konservant sifatida va kimyo sanoatida qo‘llaniladi: fenol-formaldegid smolasi, teri oshlash, anatomik ko‘rgazmalarni konservalash, urotropin va sintetik kauchuk.",
+          "text": "Dezinfeksiyalovchi, konservant sifatida va kimyo sanoatida qo‘llaniladi: fenol-formaldegid smolasi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri oshlash, anatomik ko‘rgazmalarni konservalash, urotropin va sintetik kauchuk.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -109,14 +137,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Formaldegid va formalin",
+        "items": [
+          {
+            "label": "Formalin (suvli eritma)",
+            "value": "36,5-37,5",
+            "unit": "%"
+          },
+          {
+            "label": "Formaldegid",
+            "value": "gaz, o‘tkir hid"
+          },
+          {
+            "label": "Sovuq haroratda",
+            "value": "paraform"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: formalin va formaldegid farqi nimada? Doskada: 36,5-37,5% ni yozing. Tipik xato: formalinni sof formaldegid deb atash."
     },
     {
       "title": "Formaldegidning zaharli ta’siri",
       "bullets": [
         {
-          "text": "Antiseptik sifatida qo‘llanganda nafas yo‘llarini qattiq qitiqlaydi; yuqori konsentratsiyali eritmasini birdan qattiq hidlash to‘satdan o‘limga olib kelishi mumkin.",
+          "text": "Antiseptik sifatida qo‘llanganda nafas yo‘llarini qattiq qitiqlaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yuqori konsentratsiyali eritmasini birdan qattiq hidlash to‘satdan o‘limga olib kelishi mumkin.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -186,7 +241,18 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Formaldegid gidrati",
+        "reagents": [
+          "HCOH",
+          "HOH"
+        ],
+        "products": [
+          "CH2(OH)2 (metilenglikol)"
+        ],
+        "observation": "Gidrat suv bug‘i bilan qiyin haydaladi"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega distillyatda formaldegid kam bo‘lishi mumkin? Doskada: gidrat tenglamasi. Tipik xato: distillyatda kam formaldegid topilsa, ob’ektda ham kam deb xulosa qilish."
     },
     {
@@ -202,7 +268,7 @@
           "uncertain": false
         },
         {
-          "text": "Reaksiya manfiy ahamiyatga ega: ko‘p oksidlovchilar va oqsillarning parchalanish mahsulotlari ham bu reaksiyani beradi; solishtirish uchun 1 ml distillangan suvli probirka olinadi.",
+          "text": "Reaksiya manfiy ahamiyatga ega: ko‘p oksidlovchilar va oqsillarning parchalanish mahsulotlari ham bu reaksiyani beradi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -211,7 +277,25 @@
           "uncertain": false
         },
         {
-          "text": "Kodein bilan: 1 qism distillyat, 5 qism konsentrlangan sulfat kislota va kodein (morfin) kristali tushirilsa, ko‘k-pushti rang; reaksiya sezgir va musbat ahamiyatli.",
+          "text": "Solishtirish uchun 1 ml distillangan suvli probirka olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kodein bilan: 1 qism distillyat, 5 qism konsentrlangan sulfat kislota va kodein (morfin) kristali tushirilsa, ko‘k-pushti rang.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya sezgir va musbat ahamiyatli.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -220,7 +304,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Formaldegidga sifat reaksiyalari",
+        "columns": [
+          {
+            "title": "Rezortsin (ishqoriy)",
+            "items": [
+              "Distillyatga qo‘shib qizdiriladi",
+              "Qizil rang",
+              "Manfiy ahamiyatli reaksiya"
+            ]
+          },
+          {
+            "title": "Kodein + H2SO4",
+            "items": [
+              "1 qism distillyat + 5 qism H2SO4",
+              "Kodein kristali tushiriladi",
+              "Ko‘k-pushti rang; musbat ahamiyatli"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: «manfiy ahamiyatli» va «musbat ahamiyatli» reaksiya farqi nima? Doskada: ikkita reaksiya yonma-yon. Tipik xato: rezortsin reaksiyasining musbat natijasini formaldegid isboti deb hisoblash."
     },
     {
@@ -256,6 +361,76 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Shiff reaksiyasi nima uchun tanlab ta’sir etadi? (kitobda ko‘rsatilmagan). Doskada: fuksinsulfit — pushti. Tipik xato: kumush ko‘zgu va Feling reaksiyalarini formaldegidga xos deb hisoblash (ular boshqa aldegidlar bilan ham beradi — bu fikr kitobda bevosita yozilmagan, o‘qituvchi izohi)."
+    },
+    {
+      "title": "Formaldegid: sifat reaksiyalari jadvali",
+      "bullets": [
+        {
+          "text": "Rezortsinning ishqoriy eritmasi bilan qizdirilganda qizil rang hosil bo‘ladi; reaksiya manfiy ahamiyatga ega, solishtirish probirkasi shart.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kodein va konsentrlangan sulfat kislota bilan ko‘k-pushti rang hosil bo‘ladi; reaksiya sezgir va musbat ahamiyatli.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Distillyatda formaldegid ko‘p bo‘lsa, kumush ko‘zgu va Feling suyuqligini qaytarish reaksiyalari ham bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "30"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Formaldegid reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaksiya",
+          "Natija",
+          "Ahamiyati"
+        ],
+        "rows": [
+          [
+            "Rezortsin + ishqor",
+            "Qizil rang",
+            "Manfiy"
+          ],
+          [
+            "Kodein + H2SO4 (konts.)",
+            "Ko‘k-pushti rang",
+            "Musbat"
+          ],
+          [
+            "Fuksinsulfit kislota",
+            "Rangli mahsulot (FEK)",
+            "Miqdor uchun"
+          ],
+          [
+            "Kumush ko‘zgu",
+            "Ko‘zgu hosil bo‘ladi",
+            "Qo‘shimcha"
+          ],
+          [
+            "Feling suyuqligi",
+            "Qaytariladi",
+            "Qo‘shimcha"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega rezortsin reaksiyasi manfiy ahamiyatli? Tipik xato: kodein reaksiyasi rangini rezortsin bilan almashtirish."
     },
     {
       "title": "Formaldegid miqdorini aniqlash",
@@ -332,7 +507,25 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Sirka kislota xossalari",
+        "items": [
+          {
+            "label": "Qaynash harorati",
+            "value": "117-118",
+            "unit": "°C"
+          },
+          {
+            "label": "Suv va spirt bilan",
+            "value": "har qanday nisbatda"
+          },
+          {
+            "label": "Olinishi",
+            "value": "bijg‘itish, sintez"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sirka kislotaning gigroskopikligi nimani anglatadi? Doskada: 117-118 °C. Tipik xato: qaynash haroratini suvnikidan past deb o‘ylash."
     },
     {
@@ -366,14 +559,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "CH3COOH saqlovchi mahsulotlar",
+        "items": [
+          {
+            "label": "Konsentrlangan kislota",
+            "value": "96",
+            "unit": "%"
+          },
+          {
+            "label": "Sirka essensiyasi",
+            "value": "40-80",
+            "unit": "%"
+          },
+          {
+            "label": "Ovqatga qo‘shiladigan",
+            "value": "3-8",
+            "unit": "%"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun sirka essensiyasidan bolalar zaharlanadi? (kitobga ko‘ra, suv deb ichib qo‘yishlari mumkin). Doskada: 96%, 40-80%, 3-8%. Tipik xato: faqat konsentrlangan kislotani xavfli deb hisoblash."
     },
     {
       "title": "Sirka kislota bilan zaharlanish belgilari",
       "bullets": [
         {
-          "text": "Konsentrlangan kislota teriga tushsa, kuydirib shish va yara hosil qiladi; ichilsa, qizilo‘ngachni kuydiradi, qon aralash qusish, ich ketishi, gemolitik anemiya, gemoglobinuriya, anuriya va uremiya sodir bo‘ladi.",
+          "text": "Konsentrlangan kislota teriga tushsa, kuydirib shish va yara hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichilsa, qizilo‘ngachni kuydiradi, qon aralash qusish, ich ketishi, gemolitik anemiya, gemoglobinuriya, anuriya va uremiya sodir bo‘ladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -443,7 +665,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Sirka kislota: xavfli miqdorlar",
+        "items": [
+          {
+            "label": "O‘limga olib keluvchi",
+            "value": "2-15",
+            "unit": "g"
+          },
+          {
+            "label": "Sirka essensiyasi",
+            "value": "10-20",
+            "unit": "ml"
+          },
+          {
+            "label": "Iste’mol sirkasi",
+            "value": "200-300",
+            "unit": "ml"
+          },
+          {
+            "label": "Havoda ruxsat etilgan",
+            "value": "0,005",
+            "unit": "mg/l"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: organizmda tabiiy hosil bo‘ladigan sirka kislota tahlil natijasiga qanday ta’sir qiladi? Doskada: 2-15 g. Eslatma: kitobda metabolitlar ro‘yxatida «SO2» yozilgan, bu CO2 uchun yozuv xatosi bo‘lishi mumkin; slaydga kiritilmadi."
     },
     {
@@ -459,7 +706,16 @@
           "uncertain": false
         },
         {
-          "text": "Haydash erkin sirka kislotani aniqlaydi; organizmda hosil qilgan tuzlarini aniqlash uchun ob’ekt muhiti 2,5-3,0 bo‘lguncha 10% sulfat kislota bilan nordonlashtirilib haydaladi.",
+          "text": "Haydash erkin sirka kislotani aniqlaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmda hosil qilgan tuzlarini aniqlash uchun ob’ekt muhiti 2,5-3,0 bo‘lguncha 10% sulfat kislota bilan nordonlashtirilib haydaladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -486,7 +742,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Sirka kislotani ajratish",
+        "nodes": [
+          "Muhit 2,5-3,0 gacha (10% H2SO4)",
+          "Suv bug‘i bilan haydash",
+          "0,1 n ishqorli idishga yig‘ish",
+          "Teng ikki qismga bo‘lish",
+          "Biri — miqdor, biri — atsetat"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun distillyat ishqorli idishga yig‘iladi? (uchmaydigan tuz hosil bo‘lishi uchun, sianid misolidagidek). Doskada: ikki holat — erkin va bog‘langan kislota. Tipik xato: bog‘langan kislotani nordonlashtirmasdan haydash."
     },
     {
@@ -567,7 +835,16 @@
           "uncertain": false
         },
         {
-          "text": "Miqdori neytrallash usuli bilan; havodagi miqdori yodometrik usul bilan: 6CH3COOH + 5KI + KIO3 → 6CH3COOK + 3I2 + 3H2O, ajralgan yod kraxmal ishtirokida natriy tiosulfat bilan titrlanadi.",
+          "text": "Miqdori neytrallash usuli bilan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Havodagi miqdori yodometrik usul bilan: 6CH3COOH + 5KI + KIO3 → 6CH3COOK + 3I2 + 3H2O, ajralgan yod kraxmal ishtirokida natriy tiosulfat bilan titrlanadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -576,8 +853,76 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Efir hosil qilish reaksiyalari",
+        "columns": [
+          {
+            "title": "Sirka-etil efiri",
+            "items": [
+              "Qoldiq + etil spirt + konts. H2SO4",
+              "Xarakterli hidli efir",
+              "Sezgirligi 5 mg sirka kislota"
+            ]
+          },
+          {
+            "title": "Sirka-amil efiri",
+            "items": [
+              "Qoldiq + amil spirti + konts. H2SO4",
+              "Nok essensiyasi hidi seziladi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: efir hosil qilish reaksiyalarida hid nimaga asoslangan? Doskada: yodometriya tenglamasi. Tipik xato: yodometrik usulni ob’ektdagi miqdorga qo‘llash (kitobda u havoga tegishli)."
+    },
+    {
+      "title": "Sirka kislota miqdori: yodometriya",
+      "bullets": [
+        {
+          "text": "Sirka kislota miqdori neytrallash usuli bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislotaning havodagi miqdori yodometrik usul bilan aniqlanadi: KI va KIO3 sirka kislota bilan reaksiyaga kirishib, ekvivalent miqdorda yod ajratadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ajralgan yod kraxmal ishtirokida natriy tiosulfatning aniq konsentratsiyali eritmasi bilan titrlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "32"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Yodometrik usul",
+        "reagents": [
+          "6 CH3COOH",
+          "5 KI + KIO3"
+        ],
+        "products": [
+          "6 CH3COOK",
+          "3 I2",
+          "3 H2O"
+        ],
+        "conditions": "Yod Na2S2O3 bilan titrlanadi",
+        "observation": "Indikator — kraxmal"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: yodometriyada nima ekvivalent miqdorda ajraladi? (yod). Tipik xato: neytrallash va yodometriya qo‘llanish sohasini almashtirish."
     },
     {
       "title": "Aseton: xossalari",
@@ -592,7 +937,16 @@
           "uncertain": false
         },
         {
-          "text": "Suv va barcha organik erituvchilar bilan har qanday nisbatda aralashadi; suvdagi eritmasi osh tuzi, kalsiy xlorid yoki kaliy karbonat bilan to‘yintirilsa ikki qatlamga ajraladi.",
+          "text": "Suv va barcha organik erituvchilar bilan har qanday nisbatda aralashadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvdagi eritmasi osh tuzi, kalsiy xlorid yoki kaliy karbonat bilan to‘yintirilsa ikki qatlamga ajraladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -610,14 +964,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Aseton",
+        "items": [
+          {
+            "label": "Qaynash harorati",
+            "value": "56,30",
+            "unit": "°C"
+          },
+          {
+            "label": "Suv bilan",
+            "value": "har qanday nisbatda"
+          },
+          {
+            "label": "Olinishi",
+            "value": "yog‘och, toshko‘mir"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: tuzlar bilan to‘yintirish nima uchun ikki qatlam hosil qiladi? (tuzlanish — kitobda sabab ko‘rsatilmagan). Doskada: aseton formulasi CH3-CO-CH3. Tipik xato: asetonni suvda aralashmaydigan deb hisoblash."
     },
     {
       "title": "Aseton: qo‘llanilishi va zaharlanishi",
       "bullets": [
         {
-          "text": "Universal organik erituvchi: bo‘yoqlar, nitrotsellyuloza, tutunsiz porox, sun’iy ipak; xloroform, sulfonal, yodoform sintezida xom ashyo; sun’iy kauchuk olishda ham zarur.",
+          "text": "Universal organik erituvchi: bo‘yoqlar, nitrotsellyuloza, tutunsiz porox, sun’iy ipak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform, sulfonal, yodoform sintezida xom ashyo; sun’iy kauchuk olishda ham zarur.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -696,14 +1077,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Aseton: miqdorlar",
+        "items": [
+          {
+            "label": "Diabetda peshobda",
+            "value": "300-400",
+            "unit": "mg %"
+          },
+          {
+            "label": "Normada",
+            "value": "40",
+            "unit": "mg %"
+          },
+          {
+            "label": "Yo‘llar",
+            "value": "nafas, teri, og‘iz"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekspert aseton topilganda nimani hisobga olishi kerak? (diabet va izopropil spirt). Doskada: 40 va 300-400 mg %. Tipik xato: aseton topilishini har doim tashqaridan zaharlanish deb talqin qilish."
     },
     {
-      "title": "Aseton: yodoform va nitroprussid reaksiyalari",
+      "title": "Aseton manbalari: sud kimyogari nimani hisobga oladi",
       "bullets": [
         {
-          "text": "Yodoform reaksiyasi: aseton yodning ishqorli eritmasi bilan oson reaksiyaga kirishib, yodoform hosil qiladi; sezgir, lekin atseton uchun xarakterli emas (etil spirti, sut kislota ham beradi).",
+          "text": "Aseton sog‘lom organizmda ham hosil bo‘lib turadi; sud kimyogari buni hisobga olishi kerak.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -712,7 +1112,89 @@
           "uncertain": false
         },
         {
-          "text": "Natriy nitroprussid Na2[Fe(CN)5NO] ishqor ishtirokida qizil-binafsha rang beradi; reaksiyaga sirka aldegidi, metiletilketon, atsetofenon, diatsetil va boshqalar halal beradi.",
+          "text": "Qand kasalligida peshob bilan chiqadigan miqdor 300-400 mg % gacha yetadi (normada 40 mg %).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "33"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aseton organizmga tushib qolgan izopropil spirtining metaboliti ham bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "33"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Aseton qayerdan topiladi",
+        "root": "Bioob’ektda aseton",
+        "children": [
+          {
+            "label": "Sog‘lom organizm",
+            "items": [
+              "Doimiy oz miqdorda hosil bo‘ladi"
+            ]
+          },
+          {
+            "label": "Qand kasalligi",
+            "items": [
+              "Peshobda 300-400 mg %"
+            ]
+          },
+          {
+            "label": "Izopropil spirti",
+            "items": [
+              "Metaboliti sifatida"
+            ]
+          },
+          {
+            "label": "Tashqi ta’sir",
+            "items": [
+              "Nafas, teri, og‘iz orqali"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega aseton topilishi har doim zaharlanish emas? Tipik xato: diabetdagi asetonni zaharlanish deb baholash."
+    },
+    {
+      "title": "Aseton: yodoform va nitroprussid reaksiyalari",
+      "bullets": [
+        {
+          "text": "Yodoform reaksiyasi: aseton yodning ishqorli eritmasi bilan oson reaksiyaga kirishib, yodoform hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "33"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sezgir, lekin atseton uchun xarakterli emas (etil spirti, sut kislota ham beradi).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "33"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natriy nitroprussid Na2[Fe(CN)5NO] ishqor ishtirokida qizil-binafsha rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "33"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiyaga sirka aldegidi, metiletilketon, atsetofenon, diatsetil va boshqalar halal beradi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -730,14 +1212,44 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Yodoform va nitroprussid",
+        "columns": [
+          {
+            "title": "Yodoform reaksiyasi",
+            "items": [
+              "Yodning ishqorli eritmasi bilan",
+              "Juda sezgir, lekin xususiy emas",
+              "Etil spirti, sut kislota ham beradi"
+            ]
+          },
+          {
+            "title": "Na-nitroprussid",
+            "items": [
+              "Ishqor ishtirokida",
+              "Qizil-binafsha rang",
+              "Sirka aldegidi, metiletilketon halal beradi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: yodoform reaksiyasi aseton va etil spirtini farqlaydimi? (yo‘q). Doskada: «sezgir lekin xususiy emas». Tipik xato: yodoform reaksiyasi bilan asetonni aniq tasdiqlash."
     },
     {
       "title": "Aseton: furfurol va o-nitrobenzaldegid",
       "bullets": [
         {
-          "text": "Furfurol: distillyatga furfurolning etil spirtidagi eritmasi (vanilin yoki salitsil aldegidi) va ishqor aralashtirilib, so‘ng konsentrlangan HCl qo‘shilsa, aseton bo‘lsa qizil rang hosil bo‘ladi.",
+          "text": "Furfurol: distillyatga furfurolning etil spirtidagi eritmasi (vanilin yoki salitsil aldegidi) va ishqor aralashtirilib.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "33"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "So‘ng konsentrlangan HCl qo‘shilsa, aseton bo‘lsa qizil rang hosil bo‘ladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -777,6 +1289,79 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: indigo reaksiyasida ranglar ketma-ketligi nimani bildiradi? Doskada: sariq - yashil - ko‘k. Tipik xato: xloroform qatlamini hisobga olmaslik."
     },
     {
+      "title": "Aseton reaksiyalari: solishtirma jadval",
+      "bullets": [
+        {
+          "text": "Yodoform va nitroprussid reaksiyalari sezgir, lekin aseton uchun xarakterli emas.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "33"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Furfurol bilan qizil rang; o-nitrobenzaldegid bilan ko‘k rang (indigo) hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "33"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aseton kam bo‘lsa, sariq, sariq-yashil, so‘ng yashil-ko‘k rang; indigo xloroformda eriydi, organik qatlam ko‘k bo‘yaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "34"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "GSX usulida alanga ionizatsion detektorli xromatograf yordamida ushlanish parametrlari bo‘yicha aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "34"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Aseton reaksiyalari",
+        "nodes": [],
+        "header": [
+          "Reaksiya",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Yodoform (I2 + ishqor)",
+            "Yodoform; xususiy emas"
+          ],
+          [
+            "Na-nitroprussid + ishqor",
+            "Qizil-binafsha rang"
+          ],
+          [
+            "Furfurol + ishqor + HCl",
+            "Qizil rang"
+          ],
+          [
+            "o-Nitrobenzaldegid + 2 n ishqor",
+            "Ko‘k rang (indigo)"
+          ],
+          [
+            "GSX",
+            "Ushlanish parametrlari"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reaksiyaga etil spirti halal beradi? Tipik xato: o-nitrobenzaldegid va furfurol ranglarini almashtirish."
+    },
+    {
       "title": "Fenol: xossalari va qo‘llanilishi",
       "bullets": [
         {
@@ -807,8 +1392,81 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Fenol",
+        "items": [
+          {
+            "label": "Qaynash harorati",
+            "value": "181,4",
+            "unit": "°C"
+          },
+          {
+            "label": "Antiseptik eritmasi",
+            "value": "3",
+            "unit": "%"
+          },
+          {
+            "label": "Suv bug‘i bilan",
+            "value": "haydaladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: fenol havoda nima uchun qizg‘ish tusga kiradi? (oksidlanish). Doskada: 181,4 °C. Tipik xato: fenolni suvda yaxshi eriydi deb hisoblash."
+    },
+    {
+      "title": "Qaynash haroratlari: solishtirma",
+      "bullets": [
+        {
+          "text": "Sirka kislota 117-118 °C da qaynaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aseton 56,30 °C da qaynaydi, suvdan yengil.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenol 181,4 °C da qaynaydi, suv bug‘i bilan haydaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "35"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Qaynash haroratlari",
+        "items": [
+          {
+            "label": "Aseton",
+            "value": "56,30",
+            "unit": "°C"
+          },
+          {
+            "label": "Sirka kislota",
+            "value": "117-118",
+            "unit": "°C"
+          },
+          {
+            "label": "Fenol",
+            "value": "181,4",
+            "unit": "°C"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: qaysi modda eng oson haydaladi? Tipik xato: sirka kislota va asetonning qaynash haroratlarini almashtirish."
     },
     {
       "title": "Fenol bilan zaharlanish",
@@ -823,7 +1481,16 @@
           "uncertain": false
         },
         {
-          "text": "Ovqat yo‘llarida kuchli og‘riq, so‘ng og‘riq yo‘qolib rang oqaradi; havo yetishmasligidan ko‘karadi, bosh aylanadi, yurak faoliyati susayadi, tana harorati pasayadi, tirishish va o‘lim.",
+          "text": "Ovqat yo‘llarida kuchli og‘riq, so‘ng og‘riq yo‘qolib rang oqaradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "34"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Havo yetishmasligidan ko‘karadi, bosh aylanadi, yurak faoliyati susayadi, tana harorati pasayadi, tirishish va o‘lim.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -929,8 +1596,102 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Fenolni ajratish tartibi",
+        "items": [
+          {
+            "title": "1. Distillyat",
+            "text": "NaHCO3 bilan ishqoriy muhitgacha"
+          },
+          {
+            "title": "2. Ekstraksiya",
+            "text": "3 marta efir bilan, 10 ml dan"
+          },
+          {
+            "title": "3. Efir",
+            "text": "Quruq qoldiqqacha porlatiladi"
+          },
+          {
+            "title": "4. Qoldiq",
+            "text": "2-3 ml suvda eritib reaksiya qilinadi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun efir bilan 3 marta ekstraksiya? (to‘liq ajratish). Doskada: ekstraksiya tartibi. Tipik xato: FeCl3 ortiqcha qo‘shib rangni yo‘qotib qo‘yish."
+    },
+    {
+      "title": "Fenol: sifat reaksiyalari jadvali",
+      "bullets": [
+        {
+          "text": "Bromli suv bilan oq cho‘kma — uchbromfenol hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "35"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "FeCl3 bilan binafsha rang; rang suv, spirt, ortiqcha reaktiv va kislota ta’sirida yo‘qoladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "35"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Indofenol: fenol bo‘lsa, anilin qo‘shilganda iflos binafsha rang, ammiak ta’sirida ko‘k havo rang.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "35"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metakrezolga FeCl3 qizil-binafsha, parakrezolga havo rang beradi; ular indofenol reaksiyasini bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "35"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Fenol va krezollar",
+        "nodes": [],
+        "header": [
+          "Reaksiya",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Bromli suv",
+            "Oq cho‘kma (uchbromfenol)"
+          ],
+          [
+            "FeCl3",
+            "Binafsha rang"
+          ],
+          [
+            "Indofenol (oksidlovchi + anilin)",
+            "Iflos binafsha, NH3 — ko‘k"
+          ],
+          [
+            "Metakrezol + FeCl3",
+            "Qizil-binafsha"
+          ],
+          [
+            "Parakrezol + FeCl3",
+            "Havo rang"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: FeCl3 rangi nimalar ta’sirida yo‘qoladi? Tipik xato: krezol izomerlarining ranglarini almashtirish."
     },
     {
       "title": "Fenol: indofenol reaksiyasi va krezollar",
@@ -1008,7 +1769,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Fenolni bromatometriya",
+        "reagents": [
+          "C6H5OH",
+          "Br2 (KBrO3 + KBr + H2SO4)"
+        ],
+        "products": [
+          "C6H2Br3OH (uchbromfenol)",
+          "3 HBr"
+        ],
+        "conditions": "Ortiqcha Br2 + 2KI → I2 + 2KBr"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun ortiqcha brom KI bilan aniqlanadi? Doskada: bromatometriya tenglamalari. Eslatma: toks p.35 da KBrO3 + 5KBr + 3H2SO4 tenglamasining o‘ng tomoni noto‘g‘ri bosilgan (Br2 + 3H2SO4 + 3H2O), to‘g‘ri shakli malaka materialidan olindi."
     },
     {
@@ -1024,7 +1797,16 @@
           "uncertain": false
         },
         {
-          "text": "Uch izomer aralashmasi trikrezol deb ataladi, dezinfeksiya uchun ishlatiladi; toshko‘mir smolasidan quruq haydab olinadi; zaharli ta’siri fenoldan ancha kuchsizroq.",
+          "text": "Uch izomer aralashmasi trikrezol deb ataladi, dezinfeksiya uchun ishlatiladi.",
+          "source": {
+            "author": "Malaka materiali №034 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Formaldegid va fenol taqdimoti",
+            "page": "3-ma'ruza: formaldegid, fenol, krezol, anilin, nitrobenzol"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Toshko‘mir smolasidan quruq haydab olinadi; zaharli ta’siri fenoldan ancha kuchsizroq.",
           "source": {
             "author": "Malaka materiali №034 (TFI Toksikologik kimyo kafedrasi)",
             "title": "Formaldegid va fenol taqdimoti",
@@ -1092,7 +1874,16 @@
       "title": "Anilin: metabolizm va chinlik reaksiyalari",
       "bullets": [
         {
-          "text": "Anilin organizmdan nafas yo‘llari orqali o‘zgarishsiz chiqadi; qisman oksidlanib para-aminofenol, so‘ng sulfat kislota bilan konyugat hosil qilib peshob bilan chiqadi.",
+          "text": "Anilin organizmdan nafas yo‘llari orqali o‘zgarishsiz chiqadi.",
+          "source": {
+            "author": "Malaka materiali №034 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Formaldegid va fenol taqdimoti",
+            "page": "3-ma'ruza: formaldegid, fenol, krezol, anilin, nitrobenzol"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qisman oksidlanib para-aminofenol, so‘ng sulfat kislota bilan konyugat hosil qilib peshob bilan chiqadi.",
           "source": {
             "author": "Malaka materiali №034 (TFI Toksikologik kimyo kafedrasi)",
             "title": "Formaldegid va fenol taqdimoti",
@@ -1135,7 +1926,7 @@
       "title": "Nitrobenzol",
       "bullets": [
         {
-          "text": "Nitrobenzol — benzolning nitrat kislota hosilasi; toza holda rangsiz moysimon suyuqlik, texnik holda sariq, 211 °C da qaynaydi, achchiq bodom mag‘zi hidiga o‘xshash o‘tkir hidli, suvda erimaydi.",
+          "text": "Nitrobenzol — benzolning nitrat kislota hosilasi.",
           "source": {
             "author": "Malaka materiali №034 (TFI Toksikologik kimyo kafedrasi)",
             "title": "Formaldegid va fenol taqdimoti",
@@ -1144,7 +1935,16 @@
           "uncertain": false
         },
         {
-          "text": "Anilin olishning asosiy xom ashyosi; sovun va parfyumeriya mahsulotlari, poyabzal kremlari uchun erituvchi; nafas yo‘li orqali yoki ichilganda zaharlaydi, metgemoglobin hosil qiladi.",
+          "text": "Toza holda rangsiz moysimon suyuqlik, texnik holda sariq, 211 °C da qaynaydi, achchiq bodom hidli, suvda erimaydi.",
+          "source": {
+            "author": "Malaka materiali №034 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "Formaldegid va fenol taqdimoti",
+            "page": "3-ma'ruza: formaldegid, fenol, krezol, anilin, nitrobenzol"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Anilin olishning xom ashyosi; sovun, parfyumeriya, poyabzal kremlari erituvchisi; nafas yo‘li yoki ichilganda zaharlaydi, metgemoglobin hosil qiladi.",
           "source": {
             "author": "Malaka materiali №034 (TFI Toksikologik kimyo kafedrasi)",
             "title": "Formaldegid va fenol taqdimoti",
@@ -1247,12 +2047,12 @@
     {
       "question": "Formalin nima?",
       "options": [
+        "Sirka kislotaning 96% li eritmasi",
         "Formaldegidning 36,5-37,5% li suvli eritmasi",
         "Sof gazsimon formaldegid",
-        "Sirka kislotaning 96% li eritmasi",
         "Fenolning 3% li eritmasi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Formaldegid gaz bo‘lib, uning suvdagi 36,5-37,5% eritmasi formalin deb ataladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1263,12 +2063,12 @@
     {
       "question": "Nima uchun distillyatda formaldegid kam miqdorda aniqlanadi?",
       "options": [
+        "U hech qachon haydalmaydi",
         "U suvda erimaydi",
         "Suvli eritmasidagi gidrat (metilenglikol) qiyin haydaladi",
-        "U hech qachon haydalmaydi",
         "U kislotali muhitda parchalanadi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Formaldegid suvli eritmasida gidrat (metilenglikol) hosil qiladi va qiyin haydaladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1279,12 +2079,12 @@
     {
       "question": "Formaldegidni kodein va konsentrlangan sulfat kislota bilan aniqlashda qaysi rang hosil bo‘ladi?",
       "options": [
+        "Yashil",
         "Sariq",
         "Ko‘k-pushti",
-        "Yashil",
         "Rangsiz"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Distillyat, kons. H2SO4 va kodein (morfin) kristali bilan ko‘k-pushti rang hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1295,12 +2095,12 @@
     {
       "question": "Sirka kislotaning o‘limga olib keluvchi miqdori kitobda qancha deb berilgan?",
       "options": [
-        "0,1-0,5 g",
         "2-15 g",
         "50-100 g",
-        "200-300 g sof kislota"
+        "200-300 g sof kislota",
+        "0,1-0,5 g"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Sirka kislotaning o‘limga olib keluvchi miqdori 2-15 g; bu 10-20 ml sirka essensiyasi yoki 200-300 ml iste’mol sirkasiga teng.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1311,12 +2111,12 @@
     {
       "question": "Organizmda hosil qilgan sirka kislota tuzlarini aniqlash uchun ob’ekt qanday tayyorlanadi?",
       "options": [
-        "Ishqor bilan pH 12 gacha",
-        "10% sulfat kislota bilan muhit 2,5-3,0 bo‘lguncha nordonlashtiriladi",
         "Nordonlashtirilmaydi",
-        "Faqat suv bilan suyultiriladi"
+        "Ishqor bilan pH 12 gacha",
+        "Faqat suv bilan suyultiriladi",
+        "10% sulfat kislota bilan muhit 2,5-3,0 bo‘lguncha nordonlashtiriladi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Bog‘langan sirka kislota uchun ob’ekt muhiti 2,5-3,0 bo‘lguncha 10% sulfat kislota bilan nordonlashtirilib haydaladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1327,12 +2127,12 @@
     {
       "question": "Sirka kislotaning temir (III) xlorid bilan reaksiyasi qanday natija beradi?",
       "options": [
+        "Rang bermaydi",
         "Ko‘k cho‘kma",
-        "Qizil rang, qizdirilsa qo‘ng‘ir rangga o‘tadi",
         "Yashil rang",
-        "Rang bermaydi"
+        "Qizil rang, qizdirilsa qo‘ng‘ir rangga o‘tadi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Neytrallangan qoldiqqa FeCl3 qo‘shilsa qizil mahsulot hosil bo‘ladi, qizdirilsa qo‘ng‘ir rangga o‘tadi (sezgirlik 0,5 mg).",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1343,12 +2143,12 @@
     {
       "question": "Aseton uchun yodoform reaksiyasi haqida qaysi fikr to‘g‘ri?",
       "options": [
-        "Faqat aseton beradi",
-        "Juda sezgir, lekin aseton uchun xarakterli emas",
         "Sezgirligi past",
-        "Faqat kislotali muhitda boradi"
+        "Faqat aseton beradi",
+        "Faqat kislotali muhitda boradi",
+        "Juda sezgir, lekin aseton uchun xarakterli emas"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Reaksiya juda sezgir, lekin xususiy emas: etil spirti va sut kislota ham beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1359,12 +2159,12 @@
     {
       "question": "Diabetda peshobdagi aseton miqdori qanchagacha yetadi (normada 40 mg %)?",
       "options": [
-        "50 mg % gacha",
-        "100 mg % gacha",
         "300-400 mg % gacha",
-        "1000 mg % dan ortiq"
+        "1000 mg % dan ortiq",
+        "100 mg % gacha",
+        "50 mg % gacha"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Diabet bilan og‘rigan bemor peshobida aseton miqdori 300-400 mg % gacha yetadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1375,12 +2175,12 @@
     {
       "question": "o-Nitrobenzaldegid bilan aseton bo‘lganda qanday rang hosil bo‘ladi?",
       "options": [
-        "Qizil",
         "Ko‘k (indigo)",
         "Binafsha",
-        "Sariq-qo‘ng‘ir"
+        "Sariq-qo‘ng‘ir",
+        "Qizil"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "o-Nitrobenzaldegidning 2 n ishqordagi eritmasi bilan aseton ko‘k rang (indigo) beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1391,12 +2191,12 @@
     {
       "question": "Fenolni distillyatdan ajratishda qaysi tartib qo‘llaniladi?",
       "options": [
-        "NaHCO3 qo‘shib ishqoriy sharoitgacha, 3 marta efir bilan ekstraksiya",
+        "Faqat bug‘latish",
         "Kislotali muhitda xloroform bilan 1 marta",
         "Haydalmaydi",
-        "Faqat bug‘latish"
+        "NaHCO3 qo‘shib ishqoriy sharoitgacha, 3 marta efir bilan ekstraksiya"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Distillyatga ishqoriy sharoitgacha NaHCO3 qo‘shiladi va efir bilan 3 marta (10 ml dan) ekstraksiya qilinadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1407,12 +2207,12 @@
     {
       "question": "Fenol bromli suv bilan nima hosil qiladi?",
       "options": [
-        "Oq cho‘kma (uchbromfenol)",
-        "Ko‘k cho‘kma",
         "Qizil eritma",
-        "Gaz ajraladi"
+        "Oq cho‘kma (uchbromfenol)",
+        "Gaz ajraladi",
+        "Ko‘k cho‘kma"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Fenol bromli suv bilan oq cho‘kma — uchbromfenol hosil qiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1423,13 +2223,141 @@
     {
       "question": "Metakrezolga FeCl3 qo‘shilsa qanday rang hosil bo‘ladi?",
       "options": [
-        "Havo rang",
         "Qizil-binafsha",
         "Yashil",
+        "Havo rang",
         "Rang bo‘lmaydi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Metakrezolga FeCl3 qo‘shilsa qizil-binafsha, parakrezolga havo rang hosil bo‘ladi; ikkalasi indofenol reaksiyasini bermaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "35"
+      }
+    },
+    {
+      "question": "Formalinning qancha miqdori o‘limga olib keladi?",
+      "options": [
+        "6-9 ml",
+        "2-15 g",
+        "60-90 ml",
+        "600-900 ml"
+      ],
+      "correct_index": 2,
+      "explanation": "Formalinning 60-90 ml miqdori o‘limga olib keladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "30"
+      }
+    },
+    {
+      "question": "Formaldegidni rezortsinning ishqoriy eritmasi bilan qizdirganda qanday rang hosil bo‘ladi?",
+      "options": [
+        "Zangori",
+        "Ko‘k",
+        "Sariq",
+        "Qizil"
+      ],
+      "correct_index": 3,
+      "explanation": "Distillyatga rezortsinning ishqoriy eritmasi qo‘shib qizdirilsa, qizil rang hosil bo‘ladi; reaksiya manfiy ahamiyatga ega.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "30"
+      }
+    },
+    {
+      "question": "Suvsiz sirka kislota qaysi haroratda qaynaydi?",
+      "options": [
+        "56 °C",
+        "117-118 °C",
+        "181 °C",
+        "78 °C"
+      ],
+      "correct_index": 1,
+      "explanation": "Kimyoviy sof, suvsiz sirka kislota 117-118 °C da qaynaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "31"
+      }
+    },
+    {
+      "question": "Konsentrlangan sirka kislota necha foiz CH3COOH saqlaydi?",
+      "options": [
+        "40-80%",
+        "96%",
+        "0,1%",
+        "3-8%"
+      ],
+      "correct_index": 1,
+      "explanation": "Konsentrlangan sirka kislota 96%, sirka essensiyasi 40-80%, ovqatga qo‘shiladigan sirka 3-8% CH3COOH saqlaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "31"
+      }
+    },
+    {
+      "question": "Sirka kislotaning havodagi miqdori qaysi usulda aniqlanadi?",
+      "options": [
+        "Neytrallash usulida",
+        "Yodometrik usulda",
+        "Argentometrik usulda",
+        "Gravimetrik usulda"
+      ],
+      "correct_index": 1,
+      "explanation": "Kislotaning havodagi miqdori yodometrik usul bilan, ob’ektdagi miqdori neytrallash usuli bilan aniqlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "32"
+      }
+    },
+    {
+      "question": "Aseton qaysi haroratda qaynaydi?",
+      "options": [
+        "117 °C",
+        "181,4 °C",
+        "56,30 °C",
+        "25,6 °C"
+      ],
+      "correct_index": 2,
+      "explanation": "Kimyoviy toza aseton 56,30 °C da qaynaydi, suvdan yengil.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "32"
+      }
+    },
+    {
+      "question": "Aseton natriy nitroprussid va ishqor bilan qanday rang beradi?",
+      "options": [
+        "Ko‘k",
+        "Zangori",
+        "Qizil-binafsha",
+        "Rangsiz"
+      ],
+      "correct_index": 2,
+      "explanation": "Aseton ishqor ishtirokida natriy nitroprussid bilan qizil-binafsha rang hosil qiladi, lekin bu reaksiya xarakterli emas.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "33"
+      }
+    },
+    {
+      "question": "Fenol qaysi haroratda qaynaydi?",
+      "options": [
+        "181,4 °C",
+        "117 °C",
+        "211 °C",
+        "56,30 °C"
+      ],
+      "correct_index": 0,
+      "explanation": "Toza fenol 181,4 °C da qaynaydi va suv bug‘i bilan haydaladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",

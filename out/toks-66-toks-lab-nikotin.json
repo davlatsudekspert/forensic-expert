@@ -39,7 +39,7 @@
       "title": "Kutilayotgan natijalar",
       "bullets": [
         {
-          "text": "Talabalar nikotin, anabazin va paxikarpin alkaloidlarini toza eritmalarda hamda noma’lum tarkibdagi eritmada sifat reaksiyalarini o‘tkazish sharoitini o‘zlashtiradilar.",
+          "text": "Talabalar nikotin, anabazin va paxikarpinni toza va noma’lum eritmada sifat reaksiyalari bilan aniqlash sharoitini o‘zlashtiradi.",
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
@@ -138,6 +138,144 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: Reyneke tuzini nega yangi tayyorlash kerak? (toks 239: «yangi tayyorlangan 1% Reyneke tuzi».) Doskada: alkaloid — reaktiv jadvali. Eslatma: reaktivlarni tayyorlash retseptlari bu sahifalarda berilmagan. Tipik xato: Reyneke tuzi eritmasini oldindan tayyorlab saqlash."
     },
     {
+      "title": "Dars xaritasi: piridin va piperidin alkaloidlari",
+      "bullets": [
+        {
+          "text": "Reja: nikotin, anabazin va paxikarpin alkaloidlarining toksikologik ahamiyati va tahlil usullari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asosiy usul — mikrokristalloskopik tahlil: Dragendorf, Reyneke tuzi, pikrin kislotasi va boshqa reaktivlar bilan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyuq alkaloidlarga anabazin, nikotin, paxikarpin, koniin va arekolin kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Piridin va piperidin alkaloidlari",
+        "root": "Suyuq alkaloidlar",
+        "children": [
+          {
+            "label": "Nikotin",
+            "items": [
+              "Dragendorf: «X»/«K»",
+              "Reyneke: pushti prizma"
+            ]
+          },
+          {
+            "label": "Anabazin",
+            "items": [
+              "Dragendorf: romb",
+              "Pergidrol, vanilin: qizil"
+            ]
+          },
+          {
+            "label": "Paxikarpin",
+            "items": [
+              "Yod ioni; Bushard",
+              "Kobalt rodanidi, pikrin"
+            ]
+          },
+          {
+            "label": "Koniin, arekolin",
+            "items": [
+              "Qisqa ma’lumot",
+              "Dragendorf kristallari"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi alkaloid qaysi o‘simlikda bor? Doskada: daraxt sxemasi. Tipik xato: barcha alkaloidlarni bir xil reaktiv bilan farqlash."
+    },
+    {
+      "title": "Mikrokristalloskopiya: nam kamerada kutish",
+      "bullets": [
+        {
+          "text": "Nikotin va anabazin (Dragendorf, Reyneke, pikrin) uchun nam kamerada 15-20 daqiqa saqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paxikarpinda Bushard reaktivi bilan 20-25 daqiqa, kobalt rodanidi bilan 15-20 daqiqa, pikrin kislotasi bilan 10-15 daqiqa.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "240"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristallar shakli ish daftariga chiziladi va reaksiyaning sud-kimyoviy ahamiyati izohlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "239"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Nam kamerada kutish",
+        "header": [
+          "Alkaloid",
+          "Reaktiv",
+          "Kutish"
+        ],
+        "rows": [
+          [
+            "Nikotin",
+            "Dragendorf, Reyneke",
+            "15-20 daqiqa"
+          ],
+          [
+            "Anabazin",
+            "Pikrin kislota",
+            "15-20 daqiqa"
+          ],
+          [
+            "Paxikarpin",
+            "Bushard",
+            "20-25 daqiqa"
+          ],
+          [
+            "Paxikarpin",
+            "Kobalt rodanidi",
+            "15-20 daqiqa"
+          ],
+          [
+            "Paxikarpin",
+            "Pikrin kislota",
+            "10-15 daqiqa"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kutish nega har xil? Doskada: jadval. Tipik xato: vaqtni qisqartirish."
+    },
+    {
       "title": "Xavfsizlik va tayyorgarlik",
       "bullets": [
         {
@@ -211,7 +349,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Nikotin: asosiy ko‘rsatkichlar",
+        "items": [
+          {
+            "label": "Tamakida nikotin",
+            "value": "0,6-8",
+            "unit": "%"
+          },
+          {
+            "label": "Qaynash harorati",
+            "value": "246,1",
+            "unit": "°C"
+          },
+          {
+            "label": "Toza holda ajratilgan",
+            "value": "1828",
+            "unit": "yil"
+          },
+          {
+            "label": "Sintez qilingan",
+            "value": "1935",
+            "unit": "yil"
+          },
+          {
+            "label": "Suvda (60 °C dan past)",
+            "value": "cheksiz"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nikotin nega havoda qorayadi? (Oksidlanib nikotirin hosil qiladi — toks 109.) Doskada: nikotin formulasi (piridin-3-N-metilpirrolidin). Tipik xato: tuzlarining optik aylanishini asosnikidek chapga deb yozish: kitobga ko‘ra tuzlari o‘ngga buradi."
     },
     {
@@ -245,7 +412,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Nikotin manbalari",
+        "root": "Nikotin",
+        "children": [
+          {
+            "label": "Tamaki, chilim",
+            "items": [
+              "Chekilganda o‘pka orqali"
+            ]
+          },
+          {
+            "label": "Nosvoy",
+            "items": [
+              "Tamaki + so‘ndirilgan ohak",
+              "Saqich va moy moddalari"
+            ]
+          },
+          {
+            "label": "Insektitsid",
+            "items": [
+              "Nikodust: 5 g nikotin sulfat",
+              "95 g ohak"
+            ]
+          },
+          {
+            "label": "Veterinariya",
+            "items": [
+              "Qo‘tir kasalligi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: tamaki chekish toksikomaniyasi tahlil mavzusiga qanday aloqador? Doskada: nikotin manbalari: tamaki, nosvoy, insektitsid. Tipik xato: nikotinli preparatlarni tibbiyotda ishlatiladi deb hisoblash — kitobga ko‘ra ishlatilmaydi."
     },
     {
@@ -288,7 +487,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Nikotin: dozalar va so‘rilish",
+        "items": [
+          {
+            "label": "Halokatli doza",
+            "value": "0,01-0,08",
+            "unit": "g"
+          },
+          {
+            "label": "1-2 papiros (chekmagan)",
+            "value": "1-4",
+            "unit": "mg"
+          },
+          {
+            "label": "Tutun orqali kirish",
+            "value": "90-98",
+            "unit": "%"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: patologoanatomik belgi yo‘qligi kimyoviy tahlil zarurligini qanday izohlaydi? Doskada: so‘rilish yo‘llari. Tipik xato: chekmaydigan odam uchun 1-2 papirosdagi 1-4 mg nikotinni o‘lchamsiz xavfsiz deb hisoblash (toks 110: bu dozada ham zaharlanish belgilari paydo bo‘ladi)."
     },
     {
@@ -331,7 +550,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Ajratish usullari",
+        "header": [
+          "Alkaloid",
+          "Usul"
+        ],
+        "rows": [
+          [
+            "Nikotin",
+            "Nordon spirt/suv; suv bug‘i bilan"
+          ],
+          [
+            "Anabazin",
+            "Nordon suv; ishqoriy muhitda haydash"
+          ],
+          [
+            "Paxikarpin",
+            "Nordon spirt, suv; elektrodializ"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega bu alkaloidlar suv bug‘i bilan haydaladi? (Nikotin va anabazin uchuvchan suyuq alkaloidlar — toks 109, 111.) Doskada: alkaloid — ajratish usuli jadvali. Tipik xato: ishqoriy muhitni kislotali bilan almashtirish."
     },
     {
@@ -520,6 +761,146 @@
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: «murda nikotini» Dragendorf bilan kristall bersa ham farmakologik ta’sirni bermaydi (toks 104) — shu sababli farmakologik tekshiruv nima uchun kerak? Doskada: usul — natija jadvali. Tipik xato: faqat kristall hosil bo‘lishiga tayanib xulosa yozish."
     },
     {
+      "title": "Nikotin: reaksiyalar xaritasi",
+      "bullets": [
+        {
+          "text": "Nikotin alkaloidlarning umumiy cho‘ktiruvchi reaktivlari bilan cho‘kma beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristall: Dragendorf bilan «X»/«K» shaklidagi qizil-qo‘ng‘ir, Reyneke tuzi bilan och pushti prizmalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rang: formaldegid + HNO3 (qizil pushti), p-dimetilaminobenzaldegid + H2SO4 (qo‘ng‘ir pushti); UB 260 nm; baqada tirishish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "240"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: geksan-aseton (4:1), tasdiqlovchi reagent yodplatinat; Rf = 0,4.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "110"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Nikotin reaksiyalari",
+        "root": "Nikotin",
+        "children": [
+          {
+            "label": "Cho‘kma",
+            "items": [
+              "Umumiy cho‘ktiruvchilar"
+            ]
+          },
+          {
+            "label": "Mikrokristall",
+            "items": [
+              "Dragendorf: «X» yoki «K»",
+              "Reyneke: och pushti prizma"
+            ]
+          },
+          {
+            "label": "Rang",
+            "items": [
+              "Formaldegid + HNO3",
+              "p-DMABA + H2SO4"
+            ]
+          },
+          {
+            "label": "Fizik-kimyoviy",
+            "items": [
+              "UB 260 nm (0,1 M H2SO4)",
+              "YuQX Rf 0,4"
+            ]
+          },
+          {
+            "label": "Farmakologik",
+            "items": [
+              "Baqada tirishish"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reaksiya eng xos? Doskada: daraxt sxemasi. Tipik xato: faqat cho‘kma reaksiyasiga tayanish."
+    },
+    {
+      "title": "Nikotin: sezgirlik va YuQX",
+      "bullets": [
+        {
+          "text": "Dragendorf reaktivi bilan aniqlanish chegarasi 1 mkg; Reyneke tuzi bilan 1,2 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "110"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: qo‘zg‘aluvchi faza geksan-aseton (4:1), tasdiqlovchi reagent — kislotali yodplatinat; Rf = 0,4, ko‘k dog‘.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "110"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB: 0,1 M sulfat kislotadagi eritma 260 nm da maksimum nur yutadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "240"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Nikotin: sezgirlik",
+        "items": [
+          {
+            "label": "Dragendorf chegarasi",
+            "value": "1",
+            "unit": "mkg"
+          },
+          {
+            "label": "Reyneke chegarasi",
+            "value": "1,2",
+            "unit": "mkg"
+          },
+          {
+            "label": "YuQX Rf",
+            "value": "0,4"
+          },
+          {
+            "label": "UB maksimum",
+            "value": "260",
+            "unit": "nm"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reaktiv sezgirroq? Doskada: qiymatlar. Tipik xato: aniqlanish chegarasini mg bilan almashtirish."
+    },
+    {
       "title": "Anabazin: umumiy ma’lumot",
       "bullets": [
         {
@@ -593,7 +974,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Anabazin: mikrokristallar",
+        "header": [
+          "Reaktiv",
+          "Kristall"
+        ],
+        "rows": [
+          [
+            "Dragendorf",
+            "Romb shaklidagi, qo‘ng‘ir"
+          ],
+          [
+            "Reyneke tuzi",
+            "Mayda ninasimon, pushti"
+          ],
+          [
+            "Pikrin kislota (to‘yingan)",
+            "Sariq, o‘ziga xos shakl"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 15 daqiqa. Kutilayotgan natija: uch reaktiv uchun kristall shakllari daftarga chiziladi. Kitobda boshqa variant: toks 111 va 241 da kristall shakli boshqacha yozilgan; slaydda mashg‘ulot matni (240) olindi. Tipik xato: anabazinni nikotin kristallari bilan adashtirish."
     },
     {
@@ -627,8 +1030,96 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Anabazin: rang reaksiyalari",
+        "header": [
+          "Reaktiv",
+          "Rang"
+        ],
+        "rows": [
+          [
+            "Pergidrol + konts. H2SO4",
+            "Qizil yoki shokolad"
+          ],
+          [
+            "Vanilin + konts. H2SO4",
+            "Qizil yoki to‘q-qizil"
+          ],
+          [
+            "KCN, xloramin B, barbitur k-ta",
+            "Sariq-qo‘ng‘ir"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: qizil/shokolad (pergidrol) va qizil/to‘q-qizil (vanilin) ranglar. Muhokama: sud-kimyoviy ahamiyatini izohlang — kitob bu savolni mashg‘ulot matnida qoldirgan. Xavfsizlik: konsentrlangan H2SO4 va sianid saqlovchi reaktivlar bilan faqat o‘qituvchi nazoratida va so‘rish shkafida ishlang (kitobda bu ko‘rsatma yo‘q). Tipik xato: pergidrolni kislotadan oldin tomizish tartibini buzish."
+    },
+    {
+      "title": "Anabazin: reaksiyalar xaritasi",
+      "bullets": [
+        {
+          "text": "Anabazin umumiy cho‘ktiruvchi reaktivlar bilan cho‘kma beradi; pikrin kislotasi bilan sariq cho‘kma (nikotin bermaydi).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "111"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristall: Dragendorf — romb shaklidagi qo‘ng‘ir; Reyneke tuzi — mayda ninasimon pushti; pikrin kislotasi — sariq.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "240"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rang: pergidrol + H2SO4 va vanilin + H2SO4; formaldegid + HNO3 ni bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "110-111"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Anabazin reaksiyalari",
+        "root": "Anabazin",
+        "children": [
+          {
+            "label": "Cho‘kma",
+            "items": [
+              "Pikrin kislota: sariq cho‘kma"
+            ]
+          },
+          {
+            "label": "Mikrokristall",
+            "items": [
+              "Dragendorf: romb",
+              "Reyneke: ninasimon"
+            ]
+          },
+          {
+            "label": "Rang",
+            "items": [
+              "Pergidrol + H2SO4",
+              "Vanilin + H2SO4"
+            ]
+          },
+          {
+            "label": "Nikotindan farqi",
+            "items": [
+              "Formaldegid + HNO3 bermaydi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: anabazinni nikotindan nima farqlaydi? Doskada: daraxt sxemasi. Tipik xato: formaldegid reaksiyasini ikkalasida ham musbat deb hisoblash."
     },
     {
       "title": "Paxikarpin: umumiy ma’lumot",
@@ -805,6 +1296,362 @@
       "teacher_notes": "Vaqt: 25 daqiqa. Kutilayotgan natija: uch xil kristall shakli daftarga chiziladi. Boshqa variant: toks 113 va 241 da pikrin natijasi boshqacha; slaydda 240-bet olindi. Tipik xato: kutish vaqtini qisqartirish."
     },
     {
+      "title": "Paxikarpin: reaksiyalar xaritasi",
+      "bullets": [
+        {
+          "text": "Ob’ektdan ajratish jarayonida paxikarpin tarkibidagi yod ionini aniqlash mumkin; xloroform qatlami binafsha.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "112"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristall: Bushard (sariq, eman bargi), kobalt rodanidi (zangori prizma), pikrin kislotasi (sariq prizma).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "240"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Brom bug‘i va ammiak bug‘i bilan qizdirilganda filtr qog‘ozida qizil pushti rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "241"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Paxikarpin reaksiyalari",
+        "root": "Paxikarpin",
+        "children": [
+          {
+            "label": "Yod ioni",
+            "items": [
+              "NaNO2, H2SO4, xloroform",
+              "Binafsha qatlam"
+            ]
+          },
+          {
+            "label": "Bushard",
+            "items": [
+              "Sariq, eman bargi"
+            ]
+          },
+          {
+            "label": "Kobalt rodanidi",
+            "items": [
+              "Zangori prizma"
+            ]
+          },
+          {
+            "label": "Pikrin kislotasi",
+            "items": [
+              "Sariq prizma"
+            ]
+          },
+          {
+            "label": "Brom",
+            "items": [
+              "Filtrda qizil pushti rang"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: yod ioni nimani ko‘rsatadi? Doskada: daraxt sxemasi. Tipik xato: paxikarpinni yodsiz asos deb o‘ylash."
+    },
+    {
+      "title": "Uch alkaloid: kristall reaksiyalari",
+      "bullets": [
+        {
+          "text": "Nikotin Dragendorf reaktivi bilan «X»/«K» shaklidagi, Reyneke tuzi bilan och pushti prizmalar hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Anabazin Dragendorf bilan romb shaklidagi, Reyneke tuzi bilan mayda ninasimon pushti, pikrin kislotasi bilan sariq kristallar beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "240"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paxikarpin Bushard bilan eman bargi shaklidagi, kobalt rodanidi bilan zangori prizma, pikrin kislotasi bilan sariq prizma kristallar beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "240"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Kristallar shakli",
+        "header": [
+          "Alkaloid",
+          "1-reaksiya",
+          "2-reaksiya",
+          "Pikrin kislota"
+        ],
+        "rows": [
+          [
+            "Nikotin",
+            "Dragendorf: «X»/«K»",
+            "Reyneke: och pushti prizma",
+            "—"
+          ],
+          [
+            "Anabazin",
+            "Dragendorf: romb, qo‘ng‘ir",
+            "Reyneke: ninasimon, pushti",
+            "Sariq"
+          ],
+          [
+            "Paxikarpin",
+            "Bushard: eman bargi",
+            "Kobalt rodanid: zangori prizma",
+            "Sariq prizma"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi shakl qaysi alkaloidga? Doskada: jadval. Tipik xato: kitob jadvalidagi (241-bet) boshqa ma’lumotni mashg‘ulot matni bilan aralashtirish.",
+      "diagram_note": "«—» kitob mashg‘ulot matnida berilmagan degani; 241-betdagi charxpalak jadvali matnga mos kelmaydi."
+    },
+    {
+      "title": "Chiqarilish va saqlanish",
+      "bullets": [
+        {
+          "text": "Nikotin jigarda oksidlanadi, demetillanadi; metabolitlari peshob orqali, qisman nafas va ter bilan chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "110"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Anabazin peshob orqali chiqariladi, metabolitlari kam o‘rganilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "111"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paxikarpin organizmda yig‘ilmaydi va bir sutka ichida chiqib ketadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "112"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Koniin nafas va peshob yo‘llari bilan chiqadi, 4 oydan keyin ham aniqlangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "114"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Arekolin 2 mg/100 g ob’ektda 2-2,5 oydan keyin ham aniqlangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "116"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Chiqarilish va saqlanish",
+        "header": [
+          "Alkaloid",
+          "Ma’lumot"
+        ],
+        "rows": [
+          [
+            "Nikotin",
+            "Jigarda oksidlanadi; peshob, nafas, ter"
+          ],
+          [
+            "Anabazin",
+            "Peshob orqali; metabolit kam o‘rganilgan"
+          ],
+          [
+            "Paxikarpin",
+            "Yig‘ilmaydi; 1 sutkada chiqadi"
+          ],
+          [
+            "Koniin",
+            "Nafas, peshob; 4 oy aniqlangan"
+          ],
+          [
+            "Arekolin",
+            "2-2,5 oydan keyin ham aniqlangan"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi alkaloid uzoq saqlanadi? Doskada: jadval. Tipik xato: paxikarpinni yig‘iladi deb yozish."
+    },
+    {
+      "title": "Koniin: reaksiyalar",
+      "bullets": [
+        {
+          "text": "Koniin Dragendorf reaktivi bilan qizil romb shaklidagi mikrokristallar beradi (sezgirlik 3,5 mkg).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "114"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xlorid kislota bug‘lari bilan koniin xlorid buralgan ninasimon kristallar hosil qiladi (0,33 mkg).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "114"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis dietilditiokarbamat reaksiyasi — benzol qatlamida qo‘ng‘ir-sariq rang (1 mkg); YuQX Rf = 0,26; UB 266 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "115"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Koniin reaksiyalari",
+        "header": [
+          "Usul",
+          "Natija",
+          "Sezgirlik"
+        ],
+        "rows": [
+          [
+            "Dragendorf",
+            "Qizil romb kristallar",
+            "3,5 mkg"
+          ],
+          [
+            "HCl bug‘lari",
+            "Buralgan ninalar",
+            "0,33 mkg"
+          ],
+          [
+            "Mis ditiokarbamat",
+            "Benzolda qo‘ng‘ir-sariq",
+            "1 mkg"
+          ],
+          [
+            "YuQX",
+            "Rf = 0,26",
+            "—"
+          ],
+          [
+            "UB (0,2 n H2SO4)",
+            "266 nm",
+            "—"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi usul eng sezgir? Doskada: jadval. Tipik xato: koniinni nikotin bilan aralashtirish."
+    },
+    {
+      "title": "Arekolin: ahamiyati va tahlili",
+      "bullets": [
+        {
+          "text": "Arekolin kuchli zaharli: 0,5-1,5 mg dan ortiq qabul qilish zaharlanish alomatlarini keltirib chiqaradi; ko‘z qorachig‘i keskin torayadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "115"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dragendorf bilan 30 daqiqada qizil «x» shaklidagi mikrokristallar (aniqlash chegarasi 0,2 mkg); pikrin kislotasi — to‘q yashil sferolitlar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "116"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: metanol-ammoniy gidroksid (100:1,5), Rf = 0,53; UB — spirtli eritmada 214 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "116"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Arekolin",
+        "items": [
+          {
+            "label": "Zaharlanish dozasi",
+            "value": "0,5-1,5",
+            "unit": "mg dan"
+          },
+          {
+            "label": "Aniqlash chegarasi",
+            "value": "0,2",
+            "unit": "mkg"
+          },
+          {
+            "label": "Qaynash harorati",
+            "value": "209",
+            "unit": "°C"
+          },
+          {
+            "label": "YuQX Rf",
+            "value": "0,53"
+          },
+          {
+            "label": "UB maksimum",
+            "value": "214",
+            "unit": "nm"
+          },
+          {
+            "label": "Saqlanishi",
+            "value": "2-2,5",
+            "unit": "oy"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qiymatlar nimani ko‘rsatadi? Doskada: qiymatlar. Tipik xato: arekolinni kristall alkaloid deb hisoblash."
+    },
+    {
       "title": "Paxikarpinni brom yordamida aniqlash",
       "bullets": [
         {
@@ -881,7 +1728,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Koniin va arekolin",
+        "columns": [
+          {
+            "title": "Koniin",
+            "items": [
+              "Dog‘li sikuta o‘simligi",
+              "Sichqon peshobi hidi",
+              "0,5-1,0 g halokatli"
+            ]
+          },
+          {
+            "title": "Arekolin",
+            "items": [
+              "Areko palmasi",
+              "0,5-1,5 mg dan ortiq zaharli",
+              "Dragendorf: qizil «x» kristall"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: koniin va arekolinning toksikologik ahamiyati (toks 242, 18-19-savollar). Doskada: ikki alkaloid — o‘simlik, hid, kristall. Tipik xato: koniinni nikotin bilan bir xil usulda aniqlash mumkin deb o‘ylash: kristall shakli boshqa."
     },
     {
@@ -1030,6 +1898,110 @@
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 19 savoldan har guruh bittadan blokni tayyorlaydi. Doskada: savollarni raqamlab yozing. Tipik xato: savollarga umumiy javob berib, aniq reaktiv va kristall shaklini aytmaslik."
     },
     {
+      "title": "Nazorat savollari: anabazin va paxikarpin",
+      "bullets": [
+        {
+          "text": "Anabazinning toksikologik va narkologik ahamiyatini izohlang; organizmga tarqalishi, metabolitlari, ashyolardan ajratib olish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "242"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Anabazin chinligi qanday aniqlanadi; YuQX tahlili va miqdori qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "242"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paxikarpin sanoatda qanday tuz holida ishlab chiqariladi va ahamiyati qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "242"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paxikarpin tuzidagi yod ionini ob’ektdan ajratib olish jarayonida qanday aniqlash mumkin?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "242"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paxikarpinning toksikologik va narkologik ahamiyati; chinligi, YuQX tahlili va miqdoriy aniqlash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "242"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: javoblarni slaydlar bilan bog‘lang. Doskada: 5 savol. Tipik xato: kitobda javob bor deb kutish: javoblar berilmagan."
+    },
+    {
+      "title": "Nazorat savollari: nikotin, koniin, arekolin",
+      "bullets": [
+        {
+          "text": "Piridin va piperidin hosilali alkaloidlarni bioob’ektdan qaysi usullarda ajratib olish mumkin?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "241"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nikotinning toksikologik va narkologik ahamiyati; nikotin toksikomaniyasi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "241"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nikotinning farmakologik ta’siri qanday namoyon bo‘ladi? Murda alkaloidlari nima?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "242"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Koniin alkaloidining toksikologik ahamiyati qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "242"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Arekolin alkaloidining toksikologik ahamiyati qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "242"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: murda alkaloidi nima? Doskada: 5 savol. Tipik xato: kitob 19 savolining hammasi shu slaydda deb o‘ylash."
+    },
+    {
       "title": "Xulosa va hisobot",
       "bullets": [
         {
@@ -1068,12 +2040,12 @@
     {
       "question": "Nikotin Dragendorf reaktivi bilan qanday shakldagi mikrokristallar hosil qiladi?",
       "options": [
-        "Ninasimon",
         "«X» yoki «K» harflari shaklida",
+        "Plastinkasimon",
         "Kub shaklida",
-        "Plastinkasimon"
+        "Ninasimon"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Qizil-qo‘ng‘ir rangli «X» yoki «K» harflari shaklidagi mikrokristallar ko‘rinadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1086,8 +2058,8 @@
       "options": [
         "Och pushti, prizma shaklidagi",
         "Sariq, eman bargi shaklidagi",
-        "Zangori, prizma shaklidagi",
-        "Rangsiz, ninasimon"
+        "Rangsiz, ninasimon",
+        "Zangori, prizma shaklidagi"
       ],
       "correct_index": 0,
       "explanation": "Och pushti rangli, prizma shaklidagi mikrokristallar hosil bo‘ladi.",
@@ -1100,12 +2072,12 @@
     {
       "question": "Nikotinning 0,1 M sulfat kislotadagi eritmasi UB nurda qaysi to‘lqin uzunligida maksimum beradi?",
       "options": [
-        "260 nm",
-        "273 nm",
+        "230 nm",
         "290 nm",
-        "230 nm"
+        "273 nm",
+        "260 nm"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Nikotinning 0,1 M sulfat kislotadagi eritmasi 260 nm da maksimum nur yutish ko‘rsatadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1116,12 +2088,12 @@
     {
       "question": "Nikotin eritmasi baqa terisiga tomizilsa nima kuzatiladi?",
       "options": [
-        "Hech narsa",
         "O‘ziga xos tirishish holati",
         "Teri qorayadi",
+        "Hech narsa",
         "Baqa harakatsizlanadi, tirishishsiz"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Ma’lum vaqt o‘tgach, o‘ziga xos tirishish holati yuzaga keladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1132,12 +2104,12 @@
     {
       "question": "Anabazin pergidrol va konsentrlangan H2SO4 bilan qanday rang beradi?",
       "options": [
+        "Rangsiz",
         "Ko‘k",
-        "Qizil yoki shokolad",
         "Yashil",
-        "Rangsiz"
+        "Qizil yoki shokolad"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Anabazin pergidrol va konsentrlangan H2SO4 bilan qizil yoki shokolad rang hosil qiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1148,12 +2120,12 @@
     {
       "question": "Paxikarpin yod ionini aniqlashda xloroform qatlami qanday rangga bo‘yaladi?",
       "options": [
+        "Ko‘k",
         "Sariq",
         "Binafsha",
-        "Qizil",
-        "Ko‘k"
+        "Qizil"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "10% H2SO4 bilan nordonlashtirilgan eritmaga NaNO2 va xloroform qo‘shilsa, xloroform qatlami binafsha rangga bo‘yaladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1164,12 +2136,12 @@
     {
       "question": "Paxikarpin Bushard reaktivi bilan qanday kristallar hosil qiladi?",
       "options": [
-        "Sariq, eman bargi shaklidagi",
         "Zangori prizmalar",
         "Qizil «X» shaklidagi",
+        "Sariq, eman bargi shaklidagi",
         "Rangsiz kublar"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Bushard reaktivi bilan 20-25 daqiqada sariq rangli, eman bargi shaklidagi mikrokristallar hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1178,11 +2150,11 @@
       }
     },
     {
-      "question": "Nikotinning odamni halok qilishi mumkin bo‘lgan dozasi kitobda qancha deyilgan?",
+      "question": "Odamni halok qilishi mumkin bo‘lgan nikotin dozasi qancha?",
       "options": [
         "0,01-0,08 g",
-        "1-4 mg",
         "0,5-1,0 g",
+        "1-4 mg",
         "10-20 g"
       ],
       "correct_index": 0,
@@ -1190,19 +2162,83 @@
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "109-110"
+      }
+    },
+    {
+      "question": "Nikotin veterinariyada qaysi kasallikni davolash uchun ishlatiladi?",
+      "options": [
+        "Hayvonlar gijjasi",
+        "Hayvonlar kuydirgisi",
+        "Hayvonlar qo‘tiri",
+        "Hayvonlar sili"
+      ],
+      "correct_index": 2,
+      "explanation": "Nikotin tibbiyot amaliyotida ishlatilmaydi; veterinariyada hayvonlarda uchraydigan qo‘tir kasalligini davolash uchun qo‘llanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "109"
       }
     },
     {
-      "question": "Qaysi alkaloid formaldegid va konsentrlangan HNO3 bilan reaksiya BERMAYDI?",
+      "question": "«Murda nikotini» haqida qaysi ta’rif to‘g‘ri?",
       "options": [
-        "Nikotin",
-        "Anabazin",
-        "Paxikarpin",
-        "Koniin"
+        "Faqat UB nurda aniqlanadi",
+        "Dragendorf bilan kristall beradi va farmakologik ta’sir ham beradi",
+        "Hech qanday reaksiya bermaydi",
+        "Dragendorf bilan kristall beradi, lekin farmakologik ta’sirni bermaydi"
+      ],
+      "correct_index": 3,
+      "explanation": "«Murda nikotini» Dragendorf reaktivi bilan kristall hosil qilsa ham, farmakologik ta’sirni bermaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "104"
+      }
+    },
+    {
+      "question": "Tamaki o‘simligida nikotin qancha foizgacha bo‘ladi?",
+      "options": [
+        "0,6% dan 8% gacha",
+        "50% dan ko‘p",
+        "20% dan 40% gacha",
+        "0,01% gacha"
+      ],
+      "correct_index": 0,
+      "explanation": "Tamaki o‘simligi 0,6% dan 8% gacha nikotin va unga o‘xshash ko‘p birikmalarni saqlaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "109"
+      }
+    },
+    {
+      "question": "Toza nikotinning qaynash harorati qancha?",
+      "options": [
+        "61,16 °C",
+        "246,1 °C",
+        "100 °C",
+        "25,6 °C"
       ],
       "correct_index": 1,
-      "explanation": "Formaldegid va konsentrlangan HNO3 ta’sirida nikotin qizil rangli birikma hosil qiladi, anabazin bu reaksiyani bermaydi.",
+      "explanation": "Kimyoviy toza nikotin asos holida moysimon suyuqlik, qaynash harorati 246,1 °C.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "109"
+      }
+    },
+    {
+      "question": "Chekilganda tutun orqali nikotinning qancha qismi organizmga tushadi?",
+      "options": [
+        "10-20%",
+        "1-2%",
+        "90-98% gacha",
+        "0,1% gacha"
+      ],
+      "correct_index": 2,
+      "explanation": "Chekilganda tutun orqali 90-98% gacha nikotin organizmga tushadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1210,19 +2246,115 @@
       }
     },
     {
-      "question": "«Murda nikotini» haqida qaysi ta’rif to‘g‘ri?",
+      "question": "Reyneke tuzi bilan reaksiyada reagent qanday bo‘lishi kerak?",
       "options": [
-        "Dragendorf bilan kristall beradi va farmakologik ta’sir ham beradi",
-        "Dragendorf bilan kristall beradi, lekin farmakologik ta’sirni bermaydi",
-        "Hech qanday reaksiya bermaydi",
-        "Faqat UB nurda aniqlanadi"
+        "Quruq kukun",
+        "Bir hafta saqlangan eritma",
+        "Eski 10% eritma",
+        "Yangi tayyorlangan 1% eritma"
       ],
-      "correct_index": 1,
-      "explanation": "«Murda nikotini» Dragendorf reaktivi bilan kristall hosil qilsa ham, farmakologik ta’sirni bermaydi.",
+      "correct_index": 3,
+      "explanation": "Qoldiqqa 1 tomchi 0,1 M HCl va yangi tayyorlangan 1% Reyneke tuzi eritmasi tomiziladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "104"
+        "page": "239"
+      }
+    },
+    {
+      "question": "Nikotin 4% formaldegid va konsentrlangan HNO3 bilan qanday rang beradi?",
+      "options": [
+        "Sariq-yashil",
+        "Qizil pushti",
+        "Zangori",
+        "Rangsiz"
+      ],
+      "correct_index": 1,
+      "explanation": "Qizdirilgach, 1 tomchi konsentrlangan HNO3 qo‘shilsa, qizil pushti rangli mahsulot hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "239"
+      }
+    },
+    {
+      "question": "Anabazin Dragendorf reaktivi bilan qanday mikrokristallar hosil qiladi?",
+      "options": [
+        "«X» shaklidagi qizil",
+        "Zangori prizma",
+        "Oq kub",
+        "Romb shaklidagi qo‘ng‘ir"
+      ],
+      "correct_index": 3,
+      "explanation": "Anabazin Dragendorf reaktivi bilan romb shaklidagi qo‘ng‘ir rangli mikrokristallar hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "240"
+      }
+    },
+    {
+      "question": "Paxikarpin kobalt rodanidi bilan qanday kristallar beradi?",
+      "options": [
+        "Pushti ninasimon",
+        "Zangori prizma shaklidagi",
+        "Qizil romb",
+        "Sariq eman bargi"
+      ],
+      "correct_index": 1,
+      "explanation": "Kobalt rodanidi bilan zangori rangli, prizma shaklidagi mikrokristallar ko‘rinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "240"
+      }
+    },
+    {
+      "question": "Paxikarpinni brom bug‘i va ammiak bilan qizdirilganda filtr qog‘ozi qanday bo‘yaladi?",
+      "options": [
+        "Ko‘k",
+        "Yashil",
+        "Qizil pushti",
+        "Rangsiz qoladi"
+      ],
+      "correct_index": 2,
+      "explanation": "Brom bug‘ida sariq, ammiak bug‘ida qizdirilgach paxikarpin bo‘lsa filtr qog‘ozida qizil pushti rang hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "241"
+      }
+    },
+    {
+      "question": "Koniinning hidi nimani eslatadi?",
+      "options": [
+        "Sarimsoq piyoz hidini",
+        "Sichqon peshobi hidini",
+        "Tamaki hidini",
+        "Achchiq bodom hidini"
+      ],
+      "correct_index": 1,
+      "explanation": "Kimyoviy toza koniin sichqon peshobi hidini eslatuvchi rangsiz moysimon suyuqlik.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "113"
+      }
+    },
+    {
+      "question": "Arekolin Dragendorf reaktivi bilan 30 daqiqada qanday kristallar hosil qiladi?",
+      "options": [
+        "Sariq eman bargi",
+        "Qizil «x» shaklidagi",
+        "Oq ninalar",
+        "Zangori prizma"
+      ],
+      "correct_index": 1,
+      "explanation": "Arekolin 30 daqiqa saqlansa, qizil rangli «x» shaklidagi mikrokristallar to‘plamini hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "116"
       }
     }
   ],
@@ -1265,13 +2397,13 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 103-104, 109-114, 116, 166, 239-242"
+      "pages": "b. 96, 103-104, 109-116, 166, 239-242"
     },
     {
       "author": "Yuldashev Z.A., Nurmatova M.I.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 248-249"
+      "pages": "b. 247-249"
     },
     {
       "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",

@@ -1,1855 +1,2457 @@
 {
-  "topic": "Neyroleptiklar: fenotiazinlar (aminazin, diprazin, tizersin), butirofenonlar (galoperidol, droperidol)",
-  "slides": [
+ "topic": "Neyroleptiklar: fenotiazinlar (aminazin, diprazin, tizersin), butirofenonlar (galoperidol, droperidol)",
+ "slides": [
+  {
+   "title": "Ma’ruza rejasi va tayanch iboralar",
+   "bullets": [
     {
-      "title": "Ma’ruza rejasi va tayanch iboralar",
-      "bullets": [
-        {
-          "text": "Bo‘lim: neyroleptik moddalar — aminazin, diprazin, tizersin, galoperidol, droperidol; ularni ashyoviy dalillardan ajratib olish va tahlil qilish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tayanch iboralar: fenotiazin, neyroleptik, Salomatin usuli, FPN-reaktiv, YuQX, Rf st, UB-spektrofotometriya, IQ-spektrometriya.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119-131"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reja: tasnif -> ajratib olish -> peshobni dastlabki tekshirish -> YuQX -> alohida moddalar -> butirofenonlar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119-131"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: neyroleptik nima va nega sud-kimyogari uni qidiradi? Doskada: dars rejasi 6 qadamda. Tipik xato: fenotiazin hosilalarini faqat «tinchlantiruvchi» deb bilish — ular boshqa psixotrop moddalar ta’sirini ham kuchaytiradi."
-    },
-    {
-      "title": "Fenotiazin: tarixiy ma’lumot",
-      "bullets": [
-        {
-          "text": "Fenotiazin (tiodifenilamin) avval tibbiyotda antigelmint va antiseptik ta’sirli dori sifatida, keyinchalik peshob yo‘llari shamollashini davolashga qo‘llangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Faolligi yuqori, zaharli ta’siri kam dorilar sintez qilingani sababli fenotiazinning o‘zi hozir tibbiyotda ishlatilmaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "1945 yilga kelib yadrodagi azotga bog‘langan vodorod alkilaminoalkil radikallariga almashtirilib, kuchli biologik faol birikmalar sintezlandi; ularning ko‘pi neyroleptik ta’sirga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun yadroning azot atomiga radikal biriktirish faollikni oshiradi? Doskada: fenotiazin yadrosi va azot atomidagi o‘rin. Tipik xato: fenotiazinning o‘zini hozirgi neyroleptik deb o‘ylash."
-    },
-    {
-      "title": "Fenotiazin hosilalarining tasnifi",
-      "bullets": [
-        {
-          "text": "Kimyoviy tuzilishiga ko‘ra fenotiazin hosilalari uch guruhga bo‘linadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Piperazinli: meteperazin, etaperazin, triftazin, ftorfenazin; piperidin: tioredazin, peritsiazin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Fenotiazin hosilalari guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Vakillari"
-        ],
-        "rows": [
-          [
-            "Alifatik",
-            "aminazin, propazin, levomepromazin"
-          ],
-          [
-            "Piperazinli",
-            "meteperazin, etaperazin, triftazin va b."
-          ],
-          [
-            "Piperidin",
-            "tioredazin, peritsiazin"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: jadvaldagi guruhni yon zanjir tuzilishi bo‘yicha qanday ajratish mumkin? Doskada: uch guruh va ularning vakillari. Tipik xato: levomepromazinni (tizersin) piperazinli guruhga qo‘shish."
-    },
-    {
-      "title": "Guruhlar xususiyati va ahamiyati",
-      "bullets": [
-        {
-          "text": "Birinchi guruh antipsixotik ta’sirdan tashqari markaziy asab tizimiga tinchlantiruvchi ta’sir qilib, quvvatsizlik, passivlik, apatik va gipnosedativ holatlarni vujudga keltiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ikkinchi guruh asosiy antipsixotik ta’siridan tashqari stimullovchi, faol giperkinetik va diskinetik holatlarni namoyon qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uchinchi guruh kuchsizroq antipsixotik faollikka ega bo‘lib, gipnosedativ ta’sir ko‘rsatmaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "119"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ayrimlari giyohvand va gangituvchi moddalar ta’sirini kuchaytiradi, shuning uchun toksikologik hamda narkologik ahamiyatga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun ikkinchi guruhda stimullovchi ta’sir paydo bo‘ladi? Doskada: uch guruh ta’sirini qiyoslash jadvali. Tipik xato: barcha fenotiazinlarni bir xil sedativ deb hisoblash. Nordonlashtirilgan spirt usuli (Ye.M.Salomatin) keyingi slaydda."
-    },
-    {
-      "title": "Ajratib olish: oksalat kislotali spirt",
-      "bullets": [
-        {
-          "text": "Ob’ekt oksalat kislotasining 10% spirtli eritmasi bilan 2 soat (3 marotaba) bo‘ktiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Spirtli ajralmalar umumlashtirilib, suv hammomida (40°C) quyuq qiyom holatigacha bug‘latiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yot moddalar 96% etil spirti bilan cho‘ktiriladi; spirtli ajralmalar quruq qoldiq qolguncha bug‘latiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Salomatin usuli: 1-bosqich",
-        "nodes": [
-          "10% oksalat kislota (spirtli)",
-          "Bug‘latish (40°C), qiyom",
-          "96% spirt bilan cho‘ktirish",
-          "Quruq qoldiq"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun bug‘latish 40°C dan oshirilmaydi? Doskada: bosqichlar zanjiri. Tipik xato: bo‘ktirish soni va vaqtini (2 soat, 3 marta) aralashtirish."
-    },
-    {
-      "title": "Ajratib olish: nordonlash va ekstraksiya",
-      "bullets": [
-        {
-          "text": "Qoldiq issiq suvda eritilib, oksalat kislotasining 5% eritmasi bilan (pH=2-3) nordonlashtiriladi va dietil efiri bilan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efir qatlami barbituratlarni aniqlash uchun qo‘llaniladi yoki tashlab yuboriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suvli eritma muhiti natriy gidroksidning 50% eritmasi bilan pH=13 gacha keltirilib, dietil efiri bilan 3 qayta ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efirli ekstraktdan fenotiazin hosilalari sulfat kislotaning 0,5 M eritmasi bilan (10, 10, 10, 5 ml) reekstraksiyalanadi va tahlil qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega kislotali muhitdagi efir qatlami barbituratlarga, ishqoriy muhitdagisi fenotiazinlarga tegishli? Doskada: pH 2-3 -> efir (barbiturat); pH 13 -> efir (fenotiazin). Tipik xato: kislotali va ishqoriy ekstraktlarni aralashtirib yuborish."
-    },
-    {
-      "title": "Peshobni dastlabki tekshirish",
-      "bullets": [
-        {
-          "text": "1-usul: 1 ml peshobga 60 ml 10% H2SO4 va 20 ml 5% FeCl3 aralashmasidan 1 ml qo‘shiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "2-usul: 1 ml peshobga 5 ml 5% FeCl3, 45 ml 20% HClO4 va 50 ml 50% HNO3 aralashmasidan 1 ml.",
-          "source": {
-            "author": "Malaka materiali №081 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "7-NMT: fenotiazin hosilalari (ma’ruza matni)",
-            "page": "2-usul"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "FPN-reaktiv: temir (III) xlorid, perxlorat kislota (HClO4) va nitrat kislota, 5:45:50.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Peshobda dastlabki reaksiya natijasi",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Natija"
-        ],
-        "rows": [
-          [
-            "1-usul",
-            "to‘q qizil-pushti rang"
-          ],
-          [
-            "2-usul",
-            "och qizil pushti rang"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: reaktiv tarkibi qanday nisbatda? Doskada: ikki reaktiv tarkibi. Kitobda: p.120 da 5:45:45 va 20% nitrat kislota (xato), «xlorat kislota» (to‘g‘risi perxlorat kislota HClO4). Qaror: 5 ml 5% FeCl3 + 45 ml 20% HClO4 + 50 ml 50% HNO3 = 5:45:50 (p.125, malaka 081; Forrest FPN reaktivi). 1-usulda 60 ml 10% H2SO4 (kitob)."
-    },
-    {
-      "title": "Dastlabki tekshiruv natijasini baholash",
-      "bullets": [
-        {
-          "text": "Reaksiyalar natijasida rang hosil bo‘lmasa, fenotiazin hosilalari yo‘q degan xulosa berish mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reaksiyalar musbat natija bersa, fenotiazin hosilalari borligini tasdiqlash uchun ular qon va peshobdan suyuqlik-suyuqlik ekstraksiyasi bilan ajratib olinib, boshqa usullarda aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aniqlashga salitsilatlar va boshqa soekstraktiv moddalar halaqit beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: musbat rang reaksiyasi nima uchun yakuniy dalil emas? Doskada: «rang yo‘q -> yo‘q; rang bor -> tasdiqlash». Tipik xato: dastlabki rang reaksiyasi asosida xulosa berish."
-    },
-    {
-      "title": "Qon va peshobdan ajratib olish",
-      "bullets": [
-        {
-          "text": "10 ml peshob va 2 ml qon ayrim idishlarda NaOH 50% bilan pH=13 ga keltirilib qizdiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120-121"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gidrolizat ikki qayta (20 ml) 3% izoamil spirtli n-geptan bilan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ekstrakt ikki teng qismga bo‘linadi: biri YuQX uchun, ikkinchisi chinlik va miqdor uchun.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Qon va peshobdan ajratish",
-        "nodes": [
-          "pH=13, 10 daqiqa, 100°C hammom",
-          "2x20 ml n-geptan (3% izoamil)",
-          "Suv bilan yuvish",
-          "Ikki teng qism: YuQX / miqdor"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ishqoriy gidroliz qo‘llanadi? Doskada: bosqichlar zanjiri. Tipik xato: izoamil spirtli geptan nisbatini (3%) va ekstraksiya sonini (2 marta) unutish."
-    },
-    {
-      "title": "YuQX: namunani tayyorlash",
-      "bullets": [
-        {
-          "text": "Ajralmaning bir qismi issiq havo oqimida quriguncha bug‘latiladi; qoldiq 0,2-0,5 ml xloroformda eritiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Eritma 2 ta YuQX plastinkaning start chizig‘iga kapillyar naycha bilan o‘tkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tekshiriladigan namuna qatoriga albatta aminazin standart namunasi yoki taxmin qilingan fenotiazin hosilasi eritmasi guvoh sifatida tomiziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: guvoh eritma nima uchun majburiy? Doskada: plastinka sxemasi — start chizig‘i, namuna, guvoh. Tipik xato: guvohsiz Rf ni faqat kitob qiymati bilan solishtirish."
-    },
-    {
-      "title": "YuQX: xromatografik sistemalar",
-      "bullets": [
-        {
-          "text": "Aniqlovchi: H2SO4 va etanol 1:9 aralashmasi purkaladi yoki Marki reaktivi tomiziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Xromatografik sistemalar",
-        "nodes": [],
-        "header": [
-          "Sistema",
-          "Tarkibi"
-        ],
-        "rows": [
-          [
-            "1-sistema",
-            "benzol, dioksan, ammiak 25% (60:35:5)"
-          ],
-          [
-            "2-sistema",
-            "etilasetat, aseton, ammiak-etanol (50:45:4)"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ikki xil sistema qo‘llanadi? Doskada: ikki sistema tarkibi. Tipik xato: 2-sistemada ammiak va etanol 1:1 aralashmasi qo‘shilishini hisobga olmaslik."
-    },
-    {
-      "title": "16-jadval: Rf st qiymatlari (1)",
-      "bullets": [
-        {
-          "text": "Rf st qiymatlari aminazin bo‘yicha berilgan (aminazin uchun 1 ga teng).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dog‘lar rangi sulfat kislota va etanol 1:9 aralashmasi hamda Marki reaktivi bilan baholanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf st (aminazin bo‘yicha)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf st (1; 2)",
-          "Dog‘ rangi"
-        ],
-        "rows": [
-          [
-            "Aminazin",
-            "1; 1",
-            "to‘q qizil"
-          ],
-          [
-            "Diprazin",
-            "0,74; 2,9",
-            "to‘q qizil"
-          ],
-          [
-            "Denizin",
-            "2,1; 2,9",
-            "qizil"
-          ],
-          [
-            "Propazin",
-            "1,3; 1,08",
-            "qizil"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Rf st nima uchun Rf dan qulayroq? Doskada: Rf st = modda yurgan masofa / aminazin yurgan masofa. Tipik xato: Rf st ni oddiy Rf bilan aralashtirish. Kitobda: 16-jadval sarlavhasida «sulfat kislota va etanol 9:1» (xato) — matnda uch joyda 1:9; 1:9 qabul qilindi."
-    },
-    {
-      "title": "16-jadval: Rf st qiymatlari (2)",
-      "bullets": [
-        {
-          "text": "Frenolon: Rf st 1-sistemada 1,71, 2-sistemada 3,21, dog‘i qizil.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121-122"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Levomepromazin dog‘i ko‘k, qolganlari qizil yoki to‘q qizil.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "121-122"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf st (aminazin bo‘yicha)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf st (1; 2)",
-          "Dog‘ rangi"
-        ],
-        "rows": [
-          [
-            "Levomepromazin",
-            "1,56; 1,87",
-            "ko‘k"
-          ],
-          [
-            "Mepazin",
-            "1,47; 1,60",
-            "qizil"
-          ],
-          [
-            "Triftazin",
-            "0,48; 0,26",
-            "qizil"
-          ],
-          [
-            "Etaperazin",
-            "0,34; 0,48",
-            "to‘q qizil"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: levomepromazinni rangi bilan qanday ajratish mumkin? Doskada: ko‘k dog‘ — levomepromazin. Tipik xato: jadvalda 1- va 2-sistema ustunlarini almashtirish."
-    },
-    {
-      "title": "YuQX natijalarini baholash va tozalash",
-      "bullets": [
-        {
-          "text": "Rf st dan tashqari, boshqa dog‘larning hosil bo‘lishiga ham ahamiyat beriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "122"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qo‘shimcha dog‘ bo‘lsa, geptanli aliquotning 2-qismi YuQX da tozalanishi shart.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "122"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dog‘ zonasi faqat guvoh zonasiga reaktiv tomizish bilan aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "122"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Xromatografik tozalash",
-        "nodes": [
-          "Tasma + guvoh, xromatografiya",
-          "Sorbentni skalpel bilan qirish",
-          "Elyuatsiya (etanol-ammiak 1:1)",
-          "Filtrlash, porlatish"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qo‘shimcha dog‘ nimani bildiradi? Doskada: tozalash zanjiri. Qo‘shimcha moddalar yo‘q degan xulosaga kelinsa, ikkinchi qism tozalanmasdan porlatilib, qoldiqdan qo‘shimcha reaksiyalar va miqdoriy tahlil o‘tkaziladi (p.122). Elyuatsiya aralashmasi — etanol va ammiak 25% eritmasi 1:1. Tipik xato: reaktivni namuna zonasiga ham tomizib, ajralmani yo‘qotish."
-    },
-    {
-      "title": "Aminazin: tuzilishi va xossalari",
-      "bullets": [
-        {
-          "text": "Aminazin — 2-xlor-10-(3-dimetilaminopropil)-fenotiazin gidroxlorid; sinonimlari: xlorpromazin, xlorazin, largaktil, plegomazin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "122"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Oq yoki och qizg‘ish mayda kristall kukun; juda gigroskopik, quyosh nuri ta’sirida qoramtir rangga o‘tadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "122"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suv, etil spirti va xloroformda yaxshi eriydi, dietil efirida deyarli erimaydi; suvli eritmasi kislotali; ishqoriy muhitda organik erituvchilarda yaxshi eriydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "122"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: gigroskopiklik saqlashga qanday ta’sir qiladi? Doskada: aminazin formulasi (fenotiazin yadrosi, 2-Cl, dimetilaminopropil zanjir). Tipik xato: aminazinning tuz (gidroxlorid) shaklini asos shakli bilan aralashtirish — ekstraksiya ishqoriy muhitda bajariladi."
-    },
-    {
-      "title": "Aminazin: narkologik ahamiyati",
-      "bullets": [
-        {
-          "text": "Aminazin neyroleptik ta’sirli moddalarning asosiy namoyandasi; yangi neyroleptiklar yaratilganiga qaramay tibbiyotda qo‘llanib kelinmoqda.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "122-123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Markaziy nerv tizimiga kuchli sedativ ta’sir etadi, skelet muskullarini bo‘shatadi, ong sezgirligi saqlanib qoladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "122-123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uyqu chaqiruvchi dorilar, barbituratlar, giyohvandlar, analgetiklar, mahalliy anestetiklar va psixotrop moddalar ta’sirini kuchaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun «ong saqlanib qoladi» alohida ta’kidlanadi? Doskada: kuchaytiriladigan moddalar ro‘yxati. Tipik xato: aminazinni uyqu dorisi deb hisoblash."
-    },
-    {
-      "title": "Aminazin: qo‘llanilishi va dozasi",
-      "bullets": [
-        {
-          "text": "Preparat qayt qilishga qarshi kuchli ta’sir etadi, gipotermik ta’siri tufayli organizmni sun’iy sovitishda qo‘llaniladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uyqusizlik, qichimali dermatoz, psixoz va nevroz xastaliklarida qo‘llaniladi; qon tomirlari o‘tkazuvchanligini kamaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Davolash 3-4 haftadan 3-4 oygacha va undan ortiq davom etishi mumkin; sutkalik doza 0,075 g dan 0,6 g gacha etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Davolash oxirida dori sekin asta kamaytirib borilishi kerak.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: dozani birdan to‘xtatishning xavfi nima? Doskada: sutkalik doza oralig‘i 0,075-0,6 g. Tipik xato: terapevtik dozani toksik doza bilan aralashtirish — bu slayddagi doza davolash dozasi."
-    },
-    {
-      "title": "Aminazin: metabolizmi",
-      "bullets": [
-        {
-          "text": "Aminazin sulfooksidlanish, demetillanish, N-oksidlanish va gidroksillanish orqali murakkab metabolitlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Adabiyotlarda aminazinning 20 xildan ortiq metaboliti aniqlangani ko‘rsatilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Asosiy metabolitlari peshob bilan ajraladi; ba’zilari sulfat va glyukuron kislotalari bilan kon’yugat hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Oz qismi o‘zgarmagan holda peshob orqali ajraladi, shuning uchun undan to‘g‘ridan-to‘g‘ri aminazinni aniqlash mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun o‘zgarmagan aminazinni topish ham, metabolitlarni topish ham muhim? Doskada: metabolizm yo‘llari. Tipik xato: metabolitlarni bir xil UB-spektr beradi deb o‘ylash — sulfoksid spektri aminazinnikidan farq qiladi."
-    },
-    {
-      "title": "Aminazin: rangli reaksiyalar",
-      "bullets": [
-        {
-          "text": "Mandelin reaktivi bilan avval yashil, turishi natijasida qizil rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dragendorf reaktivi bilan avval amorf cho‘kma, so‘ng to‘rt burchakli qo‘ng‘ir kristallar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Aminazin: rangli reaksiyalar",
-        "nodes": [],
-        "header": [
-          "Reaktiv",
-          "Rang"
-        ],
-        "rows": [
-          [
-            "Konsentrlangan H2SO4",
-            "qizil alvon"
-          ],
-          [
-            "Konsentrlangan HNO3",
-            "qizil pushti"
-          ],
-          [
-            "Konsentrlangan HCl",
-            "avval pushti, so‘ng qizil"
-          ],
-          [
-            "Marki reaktivi",
-            "avval yashil, so‘ng qizil pushti"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun ranglar turishi bilan o‘zgaradi? Doskada: jadvalni to‘ldiring (reaktiv -> rang). Tipik xato: Marki va Mandelin ranglarini chalkashtirish — ikkalasi ham yashildan boshlanadi, lekin oxirgi rangi farq qiladi."
-    },
-    {
-      "title": "Aminazin: YuQX, UB, IQ va miqdori",
-      "bullets": [
-        {
-          "text": "YuQX: benzol-dioksan-ammiak 25% (70:20:5), aniqlovchi — Marki yoki H2SO4-etanol (1:9); Rf=0,93 oralig‘ida pushti-binafsha rang.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "UB: 0,1 M sulfat kislotadagi eritma 255 va 307 nm da yutadi; asosiy metaboliti sulfoksid 239, 274, 300 va 341 nm da maksimum beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123-124"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "IQ: kaliy bromidli plastinkada 1561, 1455, 1402, 1240 va 747 sm-1 sohalarida yutilish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "124"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdori UB-spektri bo‘yicha yoki konsentrlangan H2SO4 bilan hosil bo‘lgan qizil rang optik zichligi bo‘yicha (FEK) aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "124"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: sulfoksid spektri aminazinniki bilan solishtirilganda nimasi bilan farq qiladi? Doskada: 255/307 nm va 239/274/300/341 nm ni yonma-yon yozing. Tipik xato: 1-sistema (60:35:5) bilan aminazinni aniqlash sistemasini (70:20:5) aralashtirish. Kitobda miqdoriy aniqlash chegarasi va to‘g‘rilik ko‘rsatkichlari berilmagan — o‘ylab topmang."
-    },
-    {
-      "title": "Propazin: tuzilishi va ta’siri",
-      "bullets": [
-        {
-          "text": "Propazin — 10-(3-dimetilaminopropil)-fenotiazin gidroxlorid.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "124-125"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Farmakologik ta’siri aminazinga o‘xshash sedativ; harakat faolligini susaytiradi, qusishga qarshi va gipotermik ta’sirga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uyqu chaqiruvchi dorilar, barbituratlar, giyohvand va mahalliy og‘riqsizlantiruvchi moddalar ta’sirini kuchaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aminazinga nisbatan kam zaharli; ko‘p neyroleptik dori vositalari bilan birga qo‘llaniladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: formulalar bo‘yicha propazin va aminazin qanday farq qiladi? Doskada: ikki formulani yonma-yon chizing (kitobdagi nomlar asosida). Tipik xato: propazinni aminazin sinonimi deb hisoblash — bu alohida modda."
-    },
-    {
-      "title": "Propazinni ajralmalarda aniqlash",
-      "bullets": [
-        {
-          "text": "Peshobdan ekspress tahlilda FPN-reaktiv (temir (III) xlorid eritmasi, perxlorat kislota va nitrat kislota, 5:45:50) ishlatiladi; propazin pushti-binafsha rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: benzol-dioksan-ammiak 25% (70:20:5), aniqlovchi — Marki yoki H2SO4-etanol (1:9); Rf=0,71 da pushti-binafsha rang.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdori FPN-reaktiv bilan hosil qilingan rang asosida FEK usulida yoki UF-spektrofotometrik usulda aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: salitsilatlar FPN-reaktivga nima uchun halaqit beradi? Doskada: Rf=0,71 (propazin) va Rf=0,93 (aminazin) ni solishtiring. Kitobda: «xlorat kislota» — to‘g‘risi perxlorat kislota (HClO4)."
-    },
-    {
-      "title": "Diprazin: xossalari va ahamiyati",
-      "bullets": [
-        {
-          "text": "Diprazin (pipolfen, prometazin, protazin) — oq kristall kukun; suvda (1:60), etil spirtida (1:9), xloroformda (1:2) yaxshi eriydi; efirda deyarli erimaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Preparat ishqoriy muhitda organik erituvchilar bilan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sedativ ta’sirli antigistamin faollikka ega; giyohvand, uyqu chaqiruvchi, neyroleptik va analgetik moddalar ta’sirini kuchaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Allergik kasalliklarda, qichimali dermatoz va ensefalitni davolashda qo‘llaniladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: diprazinning antigistamin faolligi toksikologik jihatdan nimani bildiradi? Doskada: eruvchanlik nisbatlari (1:60, 1:9, 1:2). Tipik xato: «1:60» ni 1 g moddani 60 ml suvda eritish degan ma’noni bilmaslik."
-    },
-    {
-      "title": "Diprazin: metabolizmi va rangli reaksiyalari",
-      "bullets": [
-        {
-          "text": "Diprazin sulfoksidi peshobda hatto 14 kundan keyin ham aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "125-126"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bog‘lanmagan diprazin ham peshob orqali ajraladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "126"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mandelin reaktivi: avval yashil, so‘ng alvon; Vitali-Moren reaksiyasi ham qo‘llanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "126"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Diprazin: rangli reaksiyalar",
-        "nodes": [],
-        "header": [
-          "Reaktiv",
-          "Rang"
-        ],
-        "rows": [
-          [
-            "Konsentrlangan H2SO4",
-            "qizil alvon"
-          ],
-          [
-            "Konsentrlangan HNO3",
-            "och qizil, qizil alvon, sariq"
-          ],
-          [
-            "Konsentrlangan HCl",
-            "qizg‘ish pushti, alvon-pushti"
-          ],
-          [
-            "Marki reaktivi",
-            "alvon"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 14 kun davomida aniqlanish ekspertizada qanday imkon beradi? Doskada: diprazin va aminazin reaksiyalarini solishtiring. Tipik xato: Vitali-Moren reaksiyasini barcha fenotiazinlar uchun xos deb hisoblash — kitobda bu reaksiya faqat diprazin uchun keltirilgan."
-    },
-    {
-      "title": "Diprazin: YuQX, UB va IQ usullari",
-      "bullets": [
-        {
-          "text": "YuQX tahlil sharoiti aminazinniki kabi; diprazin Rf=0,72 hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "126"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "UB: suv va etil spirtining 1:1 aralashmasida 252 va 301 nm, 0,1 M sulfat kislotada 249 va 300 nm da maksimum.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "126"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "IQ: kaliy bromidli diskda 1459, 1222 va 757 sm-1 sohalarida yutilish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "126"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdori UB-spektri bo‘yicha spektrofotometrik yoki fotoelektrokolorimetrik usulda aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "126-127"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: diprazin (0,72) va propazin (0,71) Rf lari yaqin bo‘lsa, qanday ajratiladi? Doskada: Rf va UB maksimumlarini jadvalga yozing. Tipik xato: yaqin Rf qiymatlariga ega ikki modda uchun faqat YuQX ga tayanish."
-    },
-    {
-      "title": "Etaperazin",
-      "bullets": [
-        {
-          "text": "Etaperazin — piperazinli hosila; aminazinga nisbatan ancha kuchli neyroleptik.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "127"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mushaklarni bo‘shashtiradi, qusish va xiqchoqqa qarshi; uyqu dorilari ta’sirini kuchaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "127"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: aminazin sharoitida Rf=0,32; UB (suv-etanol 1:1): 252 va 301 nm.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "128"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Etaperazin: rangli reaksiyalar",
-        "nodes": [],
-        "header": [
-          "Reaktiv",
-          "Rang"
-        ],
-        "rows": [
-          [
-            "Konsentrlangan H2SO4",
-            "to‘q qizil"
-          ],
-          [
-            "Konsentrlangan HNO3",
-            "och qizil, so‘ng to‘q qizil"
-          ],
-          [
-            "Konsentrlangan HCl",
-            "qizg‘ish pushti, so‘ng qizil"
-          ],
-          [
-            "Marki reaktivi",
-            "to‘q qizil"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: etaperazin Rf=0,32 aminazin Rf=0,93 dan nima uchun past? Doskada: aminazin 0,93, propazin 0,71, diprazin 0,72, etaperazin 0,32. Mandelin reaktivi bilan avval yashil, so‘ng alvon rang (p.127). UB 0,1 M sulfat kislotada 249 va 300 nm (p.128). Tipik xato: kitobda etaperazin UB maksimumlari diprazinniki bilan bir xil (252/301; 249/300) berilgan — UB bilan farqlab bo‘lmaydi, p.126 va p.128 ni solishtiring; piperazinli hosilani alifatik guruhga qo‘shish."
-    },
-    {
-      "title": "Peritsiazin va fenotiazinlarni farqlash",
-      "bullets": [
-        {
-          "text": "Peritsiazin — 2-sian-10-[3-(4-oksipiperidin)-propil]-fenotiazin; kuchsiz antipsixotik faollikka ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "128"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uyqu chaqiruvchi dorilar, barbituratlar, giyohvand moddalar va analgetiklar ta’sirini kuchaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "128"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Propazin, etaperazin, peritsiazin ham boshqa fenotiazin hosilalari kabi murakkab metabolitlanadi; ajratib olish usullari bir xil.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "128"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bu moddalarni farqlashda asosan yupqa qatlam, gaz-suyuqlik va yuqori samarali suyuqlik xromatografiya hamda spektral tahlil usullaridan foydalaniladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "128"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: rangli reaksiyalar nima uchun farqlash uchun yetarli emas? Doskada: farqlash usullari ro‘yxati. Tipik xato: rangli reaksiyalar o‘xshashligini e’tiborsiz qoldirib, guruhni aniqlagan bilan modda aniqlandi deb xulosa qilish."
-    },
-    {
-      "title": "Tizersin: xossalari va ahamiyati",
-      "bullets": [
-        {
-          "text": "Tizersin (levomepromazin, levopromozin, metatrimeprazin) — oq kristall kukun; etil spirti, dietil efiri, xloroformda yaxshi, suvda yomon eriydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "128"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Preparat ishqoriy muhitda organik erituvchilarda yaxshi eriydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "128"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Adrenolitik, antigistamin, analgetik ta’sirga ega; tez va kuchli sedativ ta’sir etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Psixoz, alkogol psixozi, uyqusizlik va dermatoz xastaliklarida tinchlantiruvchi vosita sifatida qo‘llaniladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tizersin eruvchanligi aminazinnikidan nimasi bilan farq qiladi? Doskada: tizersin sinonimlari (levomepromazin, levopromozin, metatrimeprazin). Tipik xato: sinonimlarni turli moddalar deb hisoblash."
-    },
-    {
-      "title": "Tizersin: metabolizmi va ajratib olinishi",
-      "bullets": [
-        {
-          "text": "Tizersin oksidlanib, gidroksillanib, sulfoksidlanib va N-demetillanib metabolitlanadi; metabolitlari sulfat va glyukuron kislotalari bilan kon’yugat ham hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Taxminan 10% atrofida o‘zgarmagan holda yoki sulfoksid yoki glyukuronid holida peshob orqali ajratiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Biologik ob’ekt tarkibidan tizersin aminazin kabi ajratib olinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: 10% o‘zgarmagan modda peshobda tahlil uchun yetarlimi? Doskada: metabolizm yo‘llari (oksidlanish, gidroksillanish, sulfoksidlanish, N-demetillanish). Tipik xato: faqat o‘zgarmagan modda bilan cheklanib, metabolitlarni qidirmaslik."
-    },
-    {
-      "title": "Tizersinni aniqlash reaksiyalari",
-      "bullets": [
-        {
-          "text": "Marki reaktivi bilan ko‘kish qizil, Frede reaktivi bilan qizil ko‘kish rang hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mandelin reaktivi qo‘shilgach sovitilib, so‘ng konsentrlangan sulfat kislota qo‘shilsa, qizil pushti rang hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: ammiak 25% va etanol (1:1), etil asetat va aseton aralashmasi; aniqlovchi — sulfat kislotaning spirtdagi 50% eritmasi, plastinka 100°C da 3-5 daqiqa qizdiriladi, qizil dog‘ hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun purkalgan plastinka qizdiriladi? Doskada: tizersin ranglari — Marki ko‘kish qizil, Frede qizil ko‘kish. Tipik xato: kitobda YuQX aralashmasi nisbati (4:90:45) boshqa joydagi (50:45:4) tartibdan farq qiladi — aniq nisbatni SOP dan tekshiring."
-    },
-    {
-      "title": "Tizersin: UB, IQ va miqdoriy tahlil",
-      "bullets": [
-        {
-          "text": "UB: etil spirtdagi eritma 255 va 310 nm da, 0,1 M xlorid kislotadagi eritma 251 va 302 nm da maksimum beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "IQ: kaliy bromidli plastinka 1587, 1460, 1269 va 1446 sm-1 sohalarida yutadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdori UB-spektri bo‘yicha spektrofotometrik yoki fotoelektrokolorimetrik usulda aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "129"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: erituvchi (etanol yoki kislota) maksimumni qanday siljitadi? Doskada: 255/310 va 251/302 nm. Tipik xato: erituvchini ko‘rsatmay UB maksimumlarini yozish."
-    },
-    {
-      "title": "Galoperidol va droperidol: xossalari",
-      "bullets": [
-        {
-          "text": "Galoperidol — oq sarg‘imtir amorf yoki kristall kukun; suvda amalda erimaydi, metanolda 1:55 eriydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Droperidol — oq amorf yoki kristall kukun; yorug‘lik ta’sirida qorayadi; suvda amalda erimaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Eruvchanlik nisbatlari",
-        "nodes": [],
-        "header": [
-          "Erituvchi",
-          "Galoperidol",
-          "Droperidol"
-        ],
-        "rows": [
-          [
-            "Etanol",
-            "1:50",
-            "1:140"
-          ],
-          [
-            "Xloroform",
-            "1:20",
-            "1:40"
-          ],
-          [
-            "Dietil efir",
-            "1:200",
-            "1:500"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: eruvchanlik nisbati ekstraksiya uchun erituvchi tanlashga qanday ta’sir qiladi? Doskada: jadvalni to‘ldiring. Tipik xato: metanolda eruvchanlik (galoperidol 1:55) ni jadvaldan tashqarida qoldirish."
-    },
-    {
-      "title": "Galoperidol va droperidol: ta’siri",
-      "bullets": [
-        {
-          "text": "Galoperidol kuchli neyroleptik; sedativ va qusishga qarshi ta’sir ko‘rsatadi, agressiyani pasaytiradi, boshqa psixotrop moddalar ta’sirini kuchaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dozani oshirib yuborish harakat faolligi buzilishi bilan boradi va 15-22% hollarda o‘lim bilan tugaydi; asosiy metaboliti 4-(4-xlorfenil)-4-gidroksipiperidin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Droperidol tez, kuchli, qisqa ta’sirli neyroleptik: 3-10 daqiqada ta’sir ko‘rsatadi, ta’sir davomiyligi 3-24 soat.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Droperidol asosan jigarda metabolitlanadi, 10% miqdori o‘zgarmagan holda buyrak orqali chiqadi; anesteziyada, narkozga tayyorlash oldida ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 15-22% o‘lim ko‘rsatkichi nimani anglatadi? Doskada: galoperidol va droperidol ta’sir boshlanishi va davomiyligi. Tipik xato: «15-22%» ko‘rsatkichini dozasi aniq belgilanmagan holda har qanday ishlatishga tatbiq etish — kitobda sharoit (doza oshirib yuborish) ko‘rsatilgan."
-    },
-    {
-      "title": "Butirofenonlarni qon va peshobdan ajratish",
-      "bullets": [
-        {
-          "text": "10 ml peshob va 2 ml qon NaOH 50% bilan pH=13 ga keltirilib, 30 daqiqa qaynoq hammomda qizdiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sovitilgan gidrolizat uch qayta etilasetat bilan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ajralmalar suvsiz Na2SO4 orqali filtrlanib bug‘latiladi; qoldiq 95% spirtda eritilib YuQX qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Butirofenonlarni ajratish",
-        "nodes": [
-          "pH=13, 30 daqiqa, qaynoq hammom",
-          "3 marta etilasetat",
-          "Suvsiz Na2SO4 orqali filtrlash",
-          "Bug‘latish, 95% spirtda eritish"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: fenotiazinlardan farqli, bu yerda ekstragent nima? Doskada: fenotiazin (n-geptan, 10 daqiqa) va butirofenon (etilasetat, 30 daqiqa) ni qiyoslang. Tipik xato: gidroliz vaqtlarini (10 va 30 daqiqa) aralashtirish."
-    },
-    {
-      "title": "Galoperidol va droperidolni aniqlash",
-      "bullets": [
-        {
-          "text": "YuQX sistemalari: toluol-aseton-ammiak 25% (50:10:5), toluol-geksan-aseton-dietilamin (10:30:5:5), etanol-ammiak 25% (100:1,5), toluol-geksan-dietilamin (10:40:10), izopropanol-etanol-ammiak 25% (50:20:5).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Plastinkada o‘rnini aniqlash uchun UB-254 nm nurlantirish va Dragendorf reaktividan foydalaniladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "UB: galoperidolning 95% etil spirtdagi eritmasi 246 nm da; droperidolning chumoli kislotadagi eritmasi 247 va 276 nm da maksimal yutadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun bu yerda beshta turli sistema keltirilgan? Doskada: beshta sistemadan ikkitasini tanlab yozing. Tipik xato: kitobdagi sistemalar nisbatini birlashtirib yuborish."
-    },
-    {
-      "title": "Butirofenonlar: rangli reaksiyalar",
-      "bullets": [
-        {
-          "text": "Marki reaktivi bilan galoperidol va droperidol sariq rangli mahsulot hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130-131"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Frede reaktivi bilan galoperidol zarg‘aldoq, droperidol sariq rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "130"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mandelin reaktivi bilan galoperidol to‘q sariq, droperidol sariq-yashil rang hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Galoperidol va droperidol",
-        "nodes": [],
-        "header": [
-          "Reaktiv",
-          "Galoperidol",
-          "Droperidol"
-        ],
-        "rows": [
-          [
-            "Marki",
-            "sariq",
-            "sariq"
-          ],
-          [
-            "Frede",
-            "zarg‘aldoq",
-            "sariq"
-          ],
-          [
-            "Mandelin",
-            "to‘q sariq",
-            "sariq-yashil"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ikki modda Marki reaktivi bilan nima uchun farqlanmaydi? Doskada: jadvalni to‘ldiring. Tipik xato: fenotiazinlarning qizil-binafsha ranglarini butirofenonlardagi sariq ranglar bilan aralashtirish."
-    },
-    {
-      "title": "Butirofenonlarning miqdoriy aniqlanishi",
-      "bullets": [
-        {
-          "text": "Droperidolning xlorid kislotadagi eritmasiga 12 ml asetatli bufer (pH=3,5), 2 ml metiloranjning to‘yingan eritmasi va 5 ml xloroform qo‘shib chayqatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xloroform qatlami ajratgich voronkada ajratilib, optik zichligi 400 nm da, qatlam qalinligi 10 mm kyuvetada fotokolorimetrik aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aniqlashning chiziqli diapazoni 1-10 mkg/ml; miqdor avval tayyorlangan kalibrlash grafigi yordamida topiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sezgirroq usul sifatida gaz-xromato-mass spektrometrik tahlil ham qo‘llanishi mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metiloranj qanday rangli kompleks hosil qiladi? Doskada: kalibrlash grafigi tuzish bosqichlari. Tipik xato: kitobda rang xloroform qatlamida fenotiazin hosilalari bo‘lsa sariq deyilgan — bu yerda galoperidol/droperidol uchun ham shu sxema ishlatilgan; usulning tanlovchanligini tasdiqlash kerak."
-    },
-    {
-      "title": "Xulosa va nazorat savollari",
-      "bullets": [
-        {
-          "text": "Fenotiazinlar uch guruhga bo‘linadi va Salomatin nordonlashtirilgan spirt usulida ajratiladi: kislotali efir qatlami barbituratlar, ishqoriy (pH=13) qatlam fenotiazinlar uchun.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Peshobda dastlabki rang reaksiyalari musbat bo‘lsa, qon va peshobdan ajratib YuQX (Rf st, rangli dog‘lar) va boshqa usullarda tasdiqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "120-122"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aminazin, diprazin, tizersin kislotalar, Marki, Mandelin reaktivlari, UB va IQ spektrlari bilan aniqlanadi; butirofenonlar sariq-zarg‘aldoq ranglar beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "123-131"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nazorat savollari: fenotiazin hosilalarini nomlang; toksikologik ahamiyati; ajratish; rangli reaksiyalar; peshobdan dastlabki tekshirish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "131"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: aralash namunada fenotiazin va butirofenonni qanday ajratish mumkin? Doskada: butun tahlil sxemasi. Tipik xato: butirofenonlarni ham FPN-reaktiv bilan aniqlashga urinish — kitobda FPN fenotiazinlar uchun keltirilgan."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Fenotiazin hosilalari ob’ektdan qaysi usulda ajratib olinadi?",
-      "options": [
-        "Valov usuli",
-        "Ye.M.Salomatin nordonlashtirilgan spirt usuli",
-        "Stas-Otto usuli",
-        "Dializ"
-      ],
-      "correct_index": 1,
-      "explanation": "Fenotiazin hosilalari biologik ob’ektdan Ye.M.Salomatin ishlab chiqqan nordonlashtirilgan spirt usulida ajratib olinadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "120"
-      }
-    },
-    {
-      "question": "Nordonlashtirilgan spirt usulida ob’ekt qanday eritma bilan bo‘ktiriladi?",
-      "options": [
-        "Oksalat kislotaning 10% spirtli eritmasi",
-        "Sulfat kislotaning 5% suvli eritmasi",
-        "Xlorid kislotaning 1 M eritmasi",
-        "Etilasetat"
-      ],
-      "correct_index": 0,
-      "explanation": "Ob’ekt oksalat kislotasining 10% spirtli eritmasi bilan 2 soat (3 marotaba) bo‘ktiriladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "120"
-      }
-    },
-    {
-      "question": "Fenotiazin hosilalari efirli ekstraktdan qaysi eritma bilan reekstraksiyalanadi?",
-      "options": [
-        "Sulfat kislotaning 0,5 M eritmasi",
-        "NaOH 50%",
-        "Etanol 96%",
-        "Suv"
-      ],
-      "correct_index": 0,
-      "explanation": "Ishqoriy muhitdan olingan efirli ekstraktdan fenotiazin hosilalari sulfat kislotaning 0,5 M eritmasi bilan reekstraksiyalanadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "120"
-      }
-    },
-    {
-      "question": "Qon va peshobdan fenotiazinlarni ajratishda gidrolizat pH qiymati nechaga keltiriladi?",
-      "options": [
-        "pH=2",
-        "pH=7",
-        "pH=13",
-        "pH=9"
-      ],
-      "correct_index": 2,
-      "explanation": "NaOH 50% eritmasi bilan pH=13 ga keltirilgach 10 daqiqa qizdiriladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "120"
-      }
-    },
-    {
-      "question": "YuQX da aminazinning 1-sistemadagi Rf st qiymati nechaga teng?",
-      "options": [
-        "1",
-        "0,74",
-        "2,1",
-        "0,34"
-      ],
-      "correct_index": 0,
-      "explanation": "Rf st qiymatlari aminazin bo‘yicha berilgan, aminazin uchun 1 ga teng.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "121"
-      }
-    },
-    {
-      "question": "Konsentrlangan sulfat kislota bilan aminazin qanday rang beradi?",
-      "options": [
-        "qizil alvon",
-        "yashil",
-        "sariq",
-        "ko‘k"
-      ],
-      "correct_index": 0,
-      "explanation": "Konsentrlangan sulfat kislotasi bilan aminazin qizil alvon rang hosil qiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "123"
-      }
-    },
-    {
-      "question": "Diprazin sulfoksidini peshobdan necha kundan keyin ham aniqlash mumkin?",
-      "options": [
-        "2 kun",
-        "7 kun",
-        "14 kun",
-        "30 kun"
-      ],
-      "correct_index": 2,
-      "explanation": "Diprazinning asosiy metabolitlaridan biri sulfoksid bo‘lib, uni hatto 14 kundan keyin ham peshobdan aniqlash mumkin.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "125-126"
-      }
-    },
-    {
-      "question": "Marki reaktivi bilan tizersin qanday rang hosil qiladi?",
-      "options": [
-        "ko‘kish qizil",
-        "yashil",
-        "sariq",
-        "rangsiz"
-      ],
-      "correct_index": 0,
-      "explanation": "Marki reaktivi bilan tizersin ko‘kish qizil rang hosil qiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "129"
-      }
-    },
-    {
-      "question": "Galoperidol Frede reaktivi bilan qanday rang beradi?",
-      "options": [
-        "zarg‘aldoq",
-        "yashil",
-        "ko‘k",
-        "binafsha"
-      ],
-      "correct_index": 0,
-      "explanation": "Frede reaktivi bilan galoperidol zarg‘aldoq, droperidol sariq rang hosil qiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "130"
-      }
-    },
-    {
-      "question": "Droperidolning xlorid kislotali eritmasida miqdoriy aniqlashning chiziqli diapazoni qancha?",
-      "options": [
-        "1-10 mkg/ml",
-        "10-100 mkg/ml",
-        "0,1-1 mkg/ml",
-        "100-500 mkg/ml"
-      ],
-      "correct_index": 0,
-      "explanation": "Aniqlashning chiziqli diapazoni 1-10 mkg/ml.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "131"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Aminazin 3-4 haftadan 3-4 oygacha va undan ortiq muddat davolashda qo‘llanishi mumkin; sutkalik doza 0,075-0,6 g.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "123"
-      }
-    },
-    {
-      "text": "Diprazin sulfoksidini peshobdan hatto 14 kundan keyin ham aniqlash mumkin.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "125-126"
-      }
-    },
-    {
-      "text": "Galoperidolning dozasi oshirib yuborilsa, 15-22% hollarda o‘lim bilan tugaydi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "130"
-      }
-    },
-    {
-      "text": "Fenotiazin hosilalari YuQX da Rf st (aminazin bo‘yicha) qiymatlari bilan solishtiriladi: triftazin 0,48 (1-sistema), etaperazin 0,34.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "121-122"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Bo‘lim: neyroleptik moddalar — aminazin, diprazin, tizersin, galoperidol, droperidol; ularni ashyoviy dalillardan ajratib olish va tahlil qilish.",
+     "source": {
       "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
       "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-      "year": null,
-      "pages": "b. 119-131"
+      "page": "119"
+     },
+     "uncertain": false
     },
     {
+     "text": "Tayanch iboralar: fenotiazin, neyroleptik, Salomatin usuli, FPN-reaktiv, YuQX, Rf st, UB-spektrofotometriya, IQ-spektrometriya.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119-131"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reja: tasnif -> ajratib olish -> peshobni dastlabki tekshirish -> YuQX -> alohida moddalar -> butirofenonlar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119-131"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: neyroleptik nima va nega sud-kimyogari uni qidiradi? Doskada: dars rejasi 6 qadamda. Tipik xato: fenotiazin hosilalarini faqat «tinchlantiruvchi» deb bilish — ular boshqa psixotrop moddalar ta’sirini ham kuchaytiradi."
+  },
+  {
+   "title": "Fenotiazin: tarixiy ma’lumot",
+   "bullets": [
+    {
+     "text": "Fenotiazin (tiodifenilamin) avval tibbiyotda antigelmint va antiseptik ta’sirli dori sifatida, keyinchalik peshob yo‘llari shamollashini davolashga qo‘llangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Faolligi yuqori, zaharli ta’siri kam dorilar sintez qilingani sababli fenotiazinning o‘zi hozir tibbiyotda ishlatilmaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1945 yilga kelib yadrodagi azotga bog‘langan vodorod alkilaminoalkil radikallariga almashtirilib, kuchli faol birikmalar olindi; ko‘pi neyroleptik.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Antigelmint, antiseptik dori",
+     "Peshob yo‘llari shamollashida",
+     "Hozir o‘zi ishlatilmaydi",
+     "1945: alkilaminoalkil radikallari",
+     "Kuchli neyroleptik hosilalar"
+    ],
+    "caption": "Fenotiazin tarixi"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun yadroning azot atomiga radikal biriktirish faollikni oshiradi? Doskada: fenotiazin yadrosi va azot atomidagi o‘rin. Tipik xato: fenotiazinning o‘zini hozirgi neyroleptik deb o‘ylash."
+  },
+  {
+   "title": "Fenotiazin hosilalarining tasnifi",
+   "bullets": [
+    {
+     "text": "Kimyoviy tuzilishiga ko‘ra fenotiazin hosilalari uch guruhga bo‘linadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Piperazinli: meteperazin, etaperazin, triftazin, ftorfenazin; piperidin: tioredazin, peritsiazin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Fenotiazin hosilalari guruhlari",
+    "nodes": [],
+    "header": [
+     "Guruh",
+     "Vakillari"
+    ],
+    "rows": [
+     [
+      "Alifatik",
+      "aminazin, propazin, levomepromazin"
+     ],
+     [
+      "Piperazinli",
+      "meteperazin, etaperazin, triftazin va b."
+     ],
+     [
+      "Piperidin",
+      "tioredazin, peritsiazin"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: jadvaldagi guruhni yon zanjir tuzilishi bo‘yicha qanday ajratish mumkin? Doskada: uch guruh va ularning vakillari. Tipik xato: levomepromazinni (tizersin) piperazinli guruhga qo‘shish."
+  },
+  {
+   "title": "Guruhlar xususiyati va ahamiyati",
+   "bullets": [
+    {
+     "text": "Birinchi guruh antipsixotik ta’sirdan tashqari tinchlantiradi: quvvatsizlik, passivlik, apatik va gipnosedativ holatlarni vujudga keltiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ikkinchi guruh asosiy antipsixotik ta’siridan tashqari stimullovchi, faol giperkinetik va diskinetik holatlarni namoyon qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uchinchi guruh kuchsizroq antipsixotik faollikka ega bo‘lib, gipnosedativ ta’sir ko‘rsatmaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "119"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ayrimlari giyohvand va gangituvchi moddalar ta’sirini kuchaytiradi, shuning uchun toksikologik hamda narkologik ahamiyatga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Fenotiazin guruhlari",
+    "children": [
+     {
+      "label": "Birinchi guruh",
+      "items": [
+       "Tinchlantiruvchi",
+       "Gipnosedativ holat"
+      ]
+     },
+     {
+      "label": "Ikkinchi guruh",
+      "items": [
+       "Stimullovchi",
+       "Giperkinetik, diskinetik holat"
+      ]
+     },
+     {
+      "label": "Uchinchi guruh",
+      "items": [
+       "Kuchsizroq antipsixotik",
+       "Gipnosedativ ta’sir yo‘q"
+      ]
+     }
+    ],
+    "caption": "Guruhlar"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun ikkinchi guruhda stimullovchi ta’sir paydo bo‘ladi? Doskada: uch guruh ta’sirini qiyoslash jadvali. Tipik xato: barcha fenotiazinlarni bir xil sedativ deb hisoblash. Nordonlashtirilgan spirt usuli (Ye.M.Salomatin) keyingi slaydda."
+  },
+  {
+   "title": "Ajratib olish: oksalat kislotali spirt",
+   "bullets": [
+    {
+     "text": "Ob’ekt oksalat kislotasining 10% spirtli eritmasi bilan 2 soat (3 marotaba) bo‘ktiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Spirtli ajralmalar umumlashtirilib, suv hammomida (40°C) quyuq qiyom holatigacha bug‘latiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yot moddalar 96% etil spirti bilan cho‘ktiriladi; spirtli ajralmalar quruq qoldiq qolguncha bug‘latiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Salomatin usuli: 1-bosqich",
+    "nodes": [
+     "10% oksalat kislota (spirtli)",
+     "Bug‘latish (40°C), qiyom",
+     "96% spirt bilan cho‘ktirish",
+     "Quruq qoldiq"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun bug‘latish 40°C dan oshirilmaydi? Doskada: bosqichlar zanjiri. Tipik xato: bo‘ktirish soni va vaqtini (2 soat, 3 marta) aralashtirish."
+  },
+  {
+   "title": "Ajratib olish: nordonlash va ekstraksiya",
+   "bullets": [
+    {
+     "text": "Qoldiq issiq suvda eritilib, oksalat kislotasining 5% eritmasi bilan (pH=2-3) nordonlashtiriladi va dietil efiri bilan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efir qatlami barbituratlarni aniqlash uchun qo‘llaniladi yoki tashlab yuboriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suvli eritma muhiti natriy gidroksidning 50% eritmasi bilan pH=13 gacha keltirilib, dietil efiri bilan 3 qayta ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efirli ekstraktdan fenotiazin hosilalari sulfat kislotaning 0,5 M eritmasi bilan (10, 10, 10, 5 ml) reekstraksiyalanadi va tahlil qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Nordonlash",
+      "text": "Qoldiq issiq suvda; 5% oksalat kislota, pH=2-3"
+     },
+     {
+      "title": "2. Efir",
+      "text": "Dietil efiri bilan ekstraksiya: barbituratlar uchun"
+     },
+     {
+      "title": "3. Ishqorlash",
+      "text": "50% NaOH, pH=13; efir bilan 3 marta"
+     },
+     {
+      "title": "4. Reekstraksiya",
+      "text": "0,5 M H2SO4 bilan (10, 10, 10, 5 ml)"
+     }
+    ],
+    "caption": "Salomatin usuli: 2-qism"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega kislotali muhitdagi efir qatlami barbituratlarga, ishqoriy muhitdagisi fenotiazinlarga tegishli? Doskada: pH 2-3 -> efir (barbiturat); pH 13 -> efir (fenotiazin). Tipik xato: kislotali va ishqoriy ekstraktlarni aralashtirib yuborish."
+  },
+  {
+   "title": "Peshobni dastlabki tekshirish",
+   "bullets": [
+    {
+     "text": "1-usul: 1 ml peshobga 60 ml 10% H2SO4 va 20 ml 5% FeCl3 aralashmasidan 1 ml qo‘shiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "2-usul: 1 ml peshobga 5 ml 5% FeCl3, 45 ml 20% HClO4 va 50 ml 50% HNO3 aralashmasidan 1 ml.",
+     "source": {
       "author": "Malaka materiali №081 (TFI Toksikologik kimyo kafedrasi)",
       "title": "7-NMT: fenotiazin hosilalari (ma’ruza matni)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "2-usul"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "FPN-reaktiv: temir (III) xlorid, perxlorat kislota (HClO4) va nitrat kislota, 5:45:50.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Peshobda dastlabki reaksiya natijasi",
+    "nodes": [],
+    "header": [
+     "Usul",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "1-usul",
+      "to‘q qizil-pushti rang"
+     ],
+     [
+      "2-usul",
+      "och qizil pushti rang"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: reaktiv tarkibi qanday nisbatda? Doskada: ikki reaktiv tarkibi. Kitobda: p.120 da 5:45:45 va 20% nitrat kislota (xato), «xlorat kislota» (to‘g‘risi perxlorat kislota HClO4). Qaror: 5 ml 5% FeCl3 + 45 ml 20% HClO4 + 50 ml 50% HNO3 = 5:45:50 (p.125, malaka 081; Forrest FPN reaktivi). 1-usulda 60 ml 10% H2SO4 (kitob)."
+  },
+  {
+   "title": "Dastlabki tekshiruv natijasini baholash",
+   "bullets": [
+    {
+     "text": "Reaksiyalar natijasida rang hosil bo‘lmasa, fenotiazin hosilalari yo‘q degan xulosa berish mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reaksiyalar musbat bo‘lsa, fenotiazinlar borligini tasdiqlash uchun qon va peshobdan suyuqlik-suyuqlik ekstraksiyasi bilan ajratib, boshqa usullarda aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aniqlashga salitsilatlar va boshqa soekstraktiv moddalar halaqit beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Rang hosil bo‘lmasa",
+      "items": [
+       "Fenotiazin hosilalari yo‘q",
+       "Xulosa berish mumkin"
+      ]
+     },
+     {
+      "title": "Musbat natija",
+      "items": [
+       "Qon va peshobdan ajratiladi",
+       "Boshqa usullarda tasdiqlanadi"
+      ]
+     }
+    ],
+    "caption": "Dastlabki sinov natijasi"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: musbat rang reaksiyasi nima uchun yakuniy dalil emas? Doskada: «rang yo‘q -> yo‘q; rang bor -> tasdiqlash». Tipik xato: dastlabki rang reaksiyasi asosida xulosa berish."
+  },
+  {
+   "title": "Qon va peshobdan ajratib olish",
+   "bullets": [
+    {
+     "text": "10 ml peshob va 2 ml qon ayrim idishlarda NaOH 50% bilan pH=13 ga keltirilib qizdiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120-121"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gidrolizat ikki qayta (20 ml) 3% izoamil spirtli n-geptan bilan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ekstrakt ikki teng qismga bo‘linadi: biri YuQX uchun, ikkinchisi chinlik va miqdor uchun.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Qon va peshobdan ajratish",
+    "nodes": [
+     "pH=13, 10 daqiqa, 100°C hammom",
+     "2x20 ml n-geptan (3% izoamil)",
+     "Suv bilan yuvish",
+     "Ikki teng qism: YuQX / miqdor"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ishqoriy gidroliz qo‘llanadi? Doskada: bosqichlar zanjiri. Tipik xato: izoamil spirtli geptan nisbatini (3%) va ekstraksiya sonini (2 marta) unutish."
+  },
+  {
+   "title": "YuQX: namunani tayyorlash",
+   "bullets": [
+    {
+     "text": "Ajralmaning bir qismi issiq havo oqimida quriguncha bug‘latiladi; qoldiq 0,2-0,5 ml xloroformda eritiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Eritma 2 ta YuQX plastinkaning start chizig‘iga kapillyar naycha bilan o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tekshiriladigan namuna qatoriga albatta aminazin standart namunasi yoki taxmin qilingan fenotiazin hosilasi eritmasi guvoh sifatida tomiziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Quritish",
+      "text": "Ajralma issiq havo oqimida quriguncha bug‘latiladi"
+     },
+     {
+      "title": "2. Eritish",
+      "text": "Qoldiq 0,2-0,5 ml xloroformda"
+     },
+     {
+      "title": "3. Nuqtalash",
+      "text": "2 ta plastinkaga kapillyar bilan"
+     },
+     {
+      "title": "4. Guvoh",
+      "text": "Aminazin standarti yoki taxmin qilingan hosila"
+     }
+    ],
+    "caption": "Namuna tayyorlash"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: guvoh eritma nima uchun majburiy? Doskada: plastinka sxemasi — start chizig‘i, namuna, guvoh. Tipik xato: guvohsiz Rf ni faqat kitob qiymati bilan solishtirish."
+  },
+  {
+   "title": "YuQX: xromatografik sistemalar",
+   "bullets": [
+    {
+     "text": "Aniqlovchi: H2SO4 va etanol 1:9 aralashmasi purkaladi yoki Marki reaktivi tomiziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Xromatografik sistemalar",
+    "nodes": [],
+    "header": [
+     "Sistema",
+     "Tarkibi"
+    ],
+    "rows": [
+     [
+      "1-sistema",
+      "benzol, dioksan, ammiak 25% (60:35:5)"
+     ],
+     [
+      "2-sistema",
+      "etilasetat, aseton, NH3-etanol (50:45:4)"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ikki xil sistema qo‘llanadi? Doskada: ikki sistema tarkibi. Tipik xato: 2-sistemada ammiak va etanol 1:1 aralashmasi qo‘shilishini hisobga olmaslik."
+  },
+  {
+   "title": "16-jadval: Rf st qiymatlari (1)",
+   "bullets": [
+    {
+     "text": "Rf st qiymatlari aminazin bo‘yicha berilgan (aminazin uchun 1 ga teng).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dog‘lar rangi sulfat kislota va etanol 1:9 aralashmasi hamda Marki reaktivi bilan baholanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf st (aminazin bo‘yicha)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf st (1; 2)",
+     "Dog‘ rangi"
+    ],
+    "rows": [
+     [
+      "Aminazin",
+      "1; 1",
+      "to‘q qizil"
+     ],
+     [
+      "Diprazin",
+      "0,74; 2,9",
+      "to‘q qizil"
+     ],
+     [
+      "Denizin",
+      "2,1; 2,9",
+      "qizil"
+     ],
+     [
+      "Propazin",
+      "1,3; 1,08",
+      "qizil"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Rf st nima uchun Rf dan qulayroq? Doskada: Rf st = modda yurgan masofa / aminazin yurgan masofa. Tipik xato: Rf st ni oddiy Rf bilan aralashtirish. Kitobda: 16-jadval sarlavhasida «sulfat kislota va etanol 9:1» (xato) — matnda uch joyda 1:9; 1:9 qabul qilindi."
+  },
+  {
+   "title": "16-jadval: Rf st qiymatlari (2)",
+   "bullets": [
+    {
+     "text": "Frenolon: Rf st 1-sistemada 1,71, 2-sistemada 3,21, dog‘i qizil.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121-122"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Levomepromazin dog‘i ko‘k, qolganlari qizil yoki to‘q qizil.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "121-122"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf st (aminazin bo‘yicha)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf st (1; 2)",
+     "Dog‘ rangi"
+    ],
+    "rows": [
+     [
+      "Levomepromazin",
+      "1,56; 1,87",
+      "ko‘k"
+     ],
+     [
+      "Mepazin",
+      "1,47; 1,60",
+      "qizil"
+     ],
+     [
+      "Triftazin",
+      "0,48; 0,26",
+      "qizil"
+     ],
+     [
+      "Etaperazin",
+      "0,34; 0,48",
+      "to‘q qizil"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: levomepromazinni rangi bilan qanday ajratish mumkin? Doskada: ko‘k dog‘ — levomepromazin. Tipik xato: jadvalda 1- va 2-sistema ustunlarini almashtirish."
+  },
+  {
+   "title": "YuQX natijalarini baholash va tozalash",
+   "bullets": [
+    {
+     "text": "Rf st dan tashqari, boshqa dog‘larning hosil bo‘lishiga ham ahamiyat beriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "122"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qo‘shimcha dog‘ bo‘lsa, geptanli aliquotning 2-qismi YuQX da tozalanishi shart.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "122"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dog‘ zonasi faqat guvoh zonasiga reaktiv tomizish bilan aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "122"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Xromatografik tozalash",
+    "nodes": [
+     "Tasma + guvoh, xromatografiya",
+     "Sorbentni skalpel bilan qirish",
+     "Elyuatsiya (etanol-ammiak 1:1)",
+     "Filtrlash, porlatish"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qo‘shimcha dog‘ nimani bildiradi? Doskada: tozalash zanjiri. Qo‘shimcha moddalar yo‘q degan xulosaga kelinsa, ikkinchi qism tozalanmasdan porlatilib, qoldiqdan qo‘shimcha reaksiyalar va miqdoriy tahlil o‘tkaziladi (p.122). Elyuatsiya aralashmasi — etanol va ammiak 25% eritmasi 1:1. Tipik xato: reaktivni namuna zonasiga ham tomizib, ajralmani yo‘qotish."
+  },
+  {
+   "title": "Aminazin: tuzilishi va xossalari",
+   "bullets": [
+    {
+     "text": "Aminazin — 2-xlor-10-(3-dimetilaminopropil)-fenotiazin gidroxlorid; sinonimlari: xlorpromazin, xlorazin, largaktil, plegomazin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "122"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Oq yoki och qizg‘ish mayda kristall kukun; juda gigroskopik, quyosh nuri ta’sirida qoramtir rangga o‘tadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "122"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suv, etil spirti va xloroformda yaxshi eriydi, dietil efirida deyarli erimaydi; suvli eritmasi kislotali; ishqoriy muhitda organik erituvchilarda yaxshi eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "122"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Sinonimi",
+      "value": "xlorpromazin"
+     },
+     {
+      "label": "Ko‘rinishi",
+      "value": "oq / och qizg‘ish"
+     },
+     {
+      "label": "Gigroskopik",
+      "value": "juda"
+     },
+     {
+      "label": "Nur ta’sirida",
+      "value": "qoramtir"
+     },
+     {
+      "label": "Efirda",
+      "value": "deyarli erimaydi"
+     }
+    ],
+    "caption": "Aminazin xossalari"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: gigroskopiklik saqlashga qanday ta’sir qiladi? Doskada: aminazin formulasi (fenotiazin yadrosi, 2-Cl, dimetilaminopropil zanjir). Tipik xato: aminazinning tuz (gidroxlorid) shaklini asos shakli bilan aralashtirish — ekstraksiya ishqoriy muhitda bajariladi."
+  },
+  {
+   "title": "Aminazin: narkologik ahamiyati",
+   "bullets": [
+    {
+     "text": "Aminazin neyroleptik ta’sirli moddalarning asosiy namoyandasi; yangi neyroleptiklar yaratilganiga qaramay tibbiyotda qo‘llanib kelinmoqda.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "122-123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Markaziy nerv tizimiga kuchli sedativ ta’sir etadi, skelet muskullarini bo‘shatadi, ong sezgirligi saqlanib qoladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "122-123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uyqu chaqiruvchi dorilar, barbituratlar, giyohvandlar, analgetiklar, mahalliy anestetiklar va psixotrop moddalar ta’sirini kuchaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Aminazin ta’siri",
+    "children": [
+     {
+      "label": "Neyroleptik",
+      "items": [
+       "Asosiy namoyanda"
+      ]
+     },
+     {
+      "label": "Sedativ",
+      "items": [
+       "Skelet muskullari bo‘shashadi",
+       "Ong sezgirligi saqlanadi"
+      ]
+     },
+     {
+      "label": "Kuchaytiradi",
+      "items": [
+       "Uyqu dorilari, barbituratlar",
+       "Giyohvandlar, analgetiklar"
+      ]
+     }
+    ],
+    "caption": "Aminazin"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun «ong saqlanib qoladi» alohida ta’kidlanadi? Doskada: kuchaytiriladigan moddalar ro‘yxati. Tipik xato: aminazinni uyqu dorisi deb hisoblash."
+  },
+  {
+   "title": "Aminazin: qo‘llanilishi va dozasi",
+   "bullets": [
+    {
+     "text": "Preparat qayt qilishga qarshi kuchli ta’sir etadi, gipotermik ta’siri tufayli organizmni sun’iy sovitishda qo‘llaniladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uyqusizlik, qichimali dermatoz, psixoz va nevroz xastaliklarida qo‘llaniladi; qon tomirlari o‘tkazuvchanligini kamaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Davolash 3-4 haftadan 3-4 oygacha va undan ortiq davom etishi mumkin; sutkalik doza 0,075 g dan 0,6 g gacha etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Davolash oxirida dori sekin asta kamaytirib borilishi kerak.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Davolash muddati",
+      "value": "3-4 hafta - 3-4 oy"
+     },
+     {
+      "label": "Sutkalik doza",
+      "value": "0,075-0,6",
+      "unit": "g"
+     },
+     {
+      "label": "Ta’sirlari",
+      "value": "qusishga qarshi"
+     }
+    ],
+    "caption": "Dozalash"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: dozani birdan to‘xtatishning xavfi nima? Doskada: sutkalik doza oralig‘i 0,075-0,6 g. Tipik xato: terapevtik dozani toksik doza bilan aralashtirish — bu slayddagi doza davolash dozasi."
+  },
+  {
+   "title": "Aminazin: metabolizmi",
+   "bullets": [
+    {
+     "text": "Aminazin sulfooksidlanish, demetillanish, N-oksidlanish va gidroksillanish orqali murakkab metabolitlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Adabiyotlarda aminazinning 20 xildan ortiq metaboliti aniqlangani ko‘rsatilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asosiy metabolitlari peshob bilan ajraladi; ba’zilari sulfat va glyukuron kislotalari bilan kon’yugat hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Oz qismi o‘zgarmagan holda peshob orqali ajraladi, shuning uchun undan to‘g‘ridan-to‘g‘ri aminazinni aniqlash mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Aminazin metabolizmi",
+    "children": [
+     {
+      "label": "Reaksiyalar",
+      "items": [
+       "Sulfooksidlanish, demetillanish",
+       "N-oksidlanish, gidroksillanish"
+      ]
+     },
+     {
+      "label": "Metabolitlar",
+      "items": [
+       "20 xildan ortiq"
+      ]
+     },
+     {
+      "label": "Chiqarilishi",
+      "items": [
+       "Peshob; sulfat, glyukuronid konyugat",
+       "Oz qismi o‘zgarmagan"
+      ]
+     }
+    ],
+    "caption": "Metabolizm"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun o‘zgarmagan aminazinni topish ham, metabolitlarni topish ham muhim? Doskada: metabolizm yo‘llari. Tipik xato: metabolitlarni bir xil UB-spektr beradi deb o‘ylash — sulfoksid spektri aminazinnikidan farq qiladi."
+  },
+  {
+   "title": "Aminazin: rangli reaksiyalar",
+   "bullets": [
+    {
+     "text": "Mandelin reaktivi bilan avval yashil, turishi natijasida qizil rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dragendorf reaktivi bilan avval amorf cho‘kma, so‘ng to‘rt burchakli qo‘ng‘ir kristallar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Aminazin: rangli reaksiyalar",
+    "nodes": [],
+    "header": [
+     "Reaktiv",
+     "Rang"
+    ],
+    "rows": [
+     [
+      "Konsentrlangan H2SO4",
+      "qizil alvon"
+     ],
+     [
+      "Konsentrlangan HNO3",
+      "qizil pushti"
+     ],
+     [
+      "Konsentrlangan HCl",
+      "avval pushti, so‘ng qizil"
+     ],
+     [
+      "Marki reaktivi",
+      "avval yashil, so‘ng qizil pushti"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun ranglar turishi bilan o‘zgaradi? Doskada: jadvalni to‘ldiring (reaktiv -> rang). Tipik xato: Marki va Mandelin ranglarini chalkashtirish — ikkalasi ham yashildan boshlanadi, lekin oxirgi rangi farq qiladi."
+  },
+  {
+   "title": "Aminazin: YuQX, UB, IQ va miqdori",
+   "bullets": [
+    {
+     "text": "YuQX: benzol-dioksan-ammiak 25% (70:20:5), aniqlovchi — Marki yoki H2SO4-etanol (1:9); Rf=0,93 oralig‘ida pushti-binafsha rang.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "UB: 0,1 M sulfat kislotadagi eritma 255 va 307 nm da yutadi; asosiy metaboliti sulfoksid 239, 274, 300 va 341 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123-124"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "IQ: kaliy bromidli plastinkada 1561, 1455, 1402, 1240 va 747 sm-1 sohalarida yutilish.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "124"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdori UB-spektri bo‘yicha yoki konsentrlangan H2SO4 bilan hosil bo‘lgan qizil rang optik zichligi bo‘yicha (FEK) aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "124"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "YuQX tizimi",
+      "value": "70:20:5"
+     },
+     {
+      "label": "Rf",
+      "value": "0,93"
+     },
+     {
+      "label": "UB max (0,1 M H2SO4)",
+      "value": "255, 307",
+      "unit": "nm"
+     },
+     {
+      "label": "Sulfoksid max",
+      "value": "239, 274, 300, 341",
+      "unit": "nm"
+     },
+     {
+      "label": "IQ chiziqlari",
+      "value": "1561, 1455, 1402",
+      "unit": "sm-1"
+     }
+    ],
+    "caption": "Aminazin: YuQX, UB, IQ"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: sulfoksid spektri aminazinniki bilan solishtirilganda nimasi bilan farq qiladi? Doskada: 255/307 nm va 239/274/300/341 nm ni yonma-yon yozing. Tipik xato: 1-sistema (60:35:5) bilan aminazinni aniqlash sistemasini (70:20:5) aralashtirish. Kitobda miqdoriy aniqlash chegarasi va to‘g‘rilik ko‘rsatkichlari berilmagan — o‘ylab topmang."
+  },
+  {
+   "title": "Propazin: tuzilishi va ta’siri",
+   "bullets": [
+    {
+     "text": "Propazin — 10-(3-dimetilaminopropil)-fenotiazin gidroxlorid.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "124-125"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Farmakologik ta’siri aminazinga o‘xshash sedativ; harakat faolligini susaytiradi, qusishga qarshi va gipotermik ta’sirga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uyqu chaqiruvchi dorilar, barbituratlar, giyohvand va mahalliy og‘riqsizlantiruvchi moddalar ta’sirini kuchaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aminazinga nisbatan kam zaharli; ko‘p neyroleptik dori vositalari bilan birga qo‘llaniladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Aminazin",
+      "items": [
+       "2-xlor-10-(3-dimetilaminopropil)-fenotiazin",
+       "Kuchliroq zaharli"
+      ]
+     },
+     {
+      "title": "Propazin",
+      "items": [
+       "10-(3-dimetilaminopropil)-fenotiazin",
+       "Kam zaharli",
+       "Neyroleptiklar bilan birga"
+      ]
+     }
+    ],
+    "caption": "Aminazin va propazin"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: formulalar bo‘yicha propazin va aminazin qanday farq qiladi? Doskada: ikki formulani yonma-yon chizing (kitobdagi nomlar asosida). Tipik xato: propazinni aminazin sinonimi deb hisoblash — bu alohida modda."
+  },
+  {
+   "title": "Propazinni ajralmalarda aniqlash",
+   "bullets": [
+    {
+     "text": "Peshobdan ekspress tahlilda FPN-reaktiv (FeCl3, HClO4, HNO3; 5:45:50) ishlatiladi; propazin pushti-binafsha rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: benzol-dioksan-ammiak 25% (70:20:5), aniqlovchi — Marki yoki H2SO4-etanol (1:9); Rf=0,71 da pushti-binafsha rang.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdori FPN-reaktiv bilan hosil qilingan rang asosida FEK usulida yoki UF-spektrofotometrik usulda aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "reagents": [
+     "Propazin (peshobda)",
+     "FPN-reaktiv (FeCl3, HClO4, HNO3)"
+    ],
+    "products": [
+     "Pushti-binafsha rang"
+    ],
+    "conditions": "Reaktiv nisbati 5:45:50",
+    "observation": "Ekspress sinov; YuQX Rf=0,71",
+    "caption": "FPN-reaktiv"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: salitsilatlar FPN-reaktivga nima uchun halaqit beradi? Doskada: Rf=0,71 (propazin) va Rf=0,93 (aminazin) ni solishtiring. Kitobda: «xlorat kislota» — to‘g‘risi perxlorat kislota (HClO4)."
+  },
+  {
+   "title": "Diprazin: xossalari va ahamiyati",
+   "bullets": [
+    {
+     "text": "Diprazin (pipolfen, prometazin, protazin) — oq kristall kukun; suvda (1:60), etil spirtida (1:9), xloroformda (1:2) yaxshi eriydi; efirda deyarli erimaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Preparat ishqoriy muhitda organik erituvchilar bilan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sedativ ta’sirli antigistamin faollikka ega; giyohvand, uyqu chaqiruvchi, neyroleptik va analgetik moddalar ta’sirini kuchaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Allergik kasalliklarda, qichimali dermatoz va ensefalitni davolashda qo‘llaniladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Suvda",
+      "value": "1:60"
+     },
+     {
+      "label": "Etil spirtida",
+      "value": "1:9"
+     },
+     {
+      "label": "Xloroformda",
+      "value": "1:2"
+     },
+     {
+      "label": "Efirda",
+      "value": "deyarli erimaydi"
+     }
+    ],
+    "caption": "Diprazin eruvchanligi"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: diprazinning antigistamin faolligi toksikologik jihatdan nimani bildiradi? Doskada: eruvchanlik nisbatlari (1:60, 1:9, 1:2). Tipik xato: «1:60» ni 1 g moddani 60 ml suvda eritish degan ma’noni bilmaslik."
+  },
+  {
+   "title": "Diprazin: metabolizmi va rangli reaksiyalari",
+   "bullets": [
+    {
+     "text": "Diprazin sulfoksidi peshobda hatto 14 kundan keyin ham aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "125-126"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bog‘lanmagan diprazin ham peshob orqali ajraladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "126"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mandelin reaktivi: avval yashil, so‘ng alvon; Vitali-Moren reaksiyasi ham qo‘llanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "126"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Diprazin: rangli reaksiyalar",
+    "nodes": [],
+    "header": [
+     "Reaktiv",
+     "Rang"
+    ],
+    "rows": [
+     [
+      "Konsentrlangan H2SO4",
+      "qizil alvon"
+     ],
+     [
+      "Konsentrlangan HNO3",
+      "och qizil, qizil alvon, sariq"
+     ],
+     [
+      "Konsentrlangan HCl",
+      "qizg‘ish pushti, alvon-pushti"
+     ],
+     [
+      "Marki reaktivi",
+      "alvon"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 14 kun davomida aniqlanish ekspertizada qanday imkon beradi? Doskada: diprazin va aminazin reaksiyalarini solishtiring. Tipik xato: Vitali-Moren reaksiyasini barcha fenotiazinlar uchun xos deb hisoblash — kitobda bu reaksiya faqat diprazin uchun keltirilgan."
+  },
+  {
+   "title": "Diprazin: YuQX, UB va IQ usullari",
+   "bullets": [
+    {
+     "text": "YuQX tahlil sharoiti aminazinniki kabi; diprazin Rf=0,72 hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "126"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "UB: suv va etil spirtining 1:1 aralashmasida 252 va 301 nm, 0,1 M sulfat kislotada 249 va 300 nm da maksimum.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "126"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "IQ: kaliy bromidli diskda 1459, 1222 va 757 sm-1 sohalarida yutilish.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "126"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdori UB-spektri bo‘yicha spektrofotometrik yoki fotoelektrokolorimetrik usulda aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "126-127"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "YuQX Rf",
+      "value": "0,72"
+     },
+     {
+      "label": "UB (suv-spirt 1:1)",
+      "value": "252, 301",
+      "unit": "nm"
+     },
+     {
+      "label": "UB (0,1 M H2SO4)",
+      "value": "249, 300",
+      "unit": "nm"
+     },
+     {
+      "label": "IQ chiziqlari",
+      "value": "1459, 1222, 757",
+      "unit": "sm-1"
+     }
+    ],
+    "caption": "Diprazin: YuQX, UB, IQ"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: diprazin (0,72) va propazin (0,71) Rf lari yaqin bo‘lsa, qanday ajratiladi? Doskada: Rf va UB maksimumlarini jadvalga yozing. Tipik xato: yaqin Rf qiymatlariga ega ikki modda uchun faqat YuQX ga tayanish."
+  },
+  {
+   "title": "Etaperazin",
+   "bullets": [
+    {
+     "text": "Etaperazin — piperazinli hosila; aminazinga nisbatan ancha kuchli neyroleptik.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "127"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mushaklarni bo‘shashtiradi, qusish va xiqchoqqa qarshi; uyqu dorilari ta’sirini kuchaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "127"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: aminazin sharoitida Rf=0,32; UB (suv-etanol 1:1): 252 va 301 nm.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "128"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Etaperazin: rangli reaksiyalar",
+    "nodes": [],
+    "header": [
+     "Reaktiv",
+     "Rang"
+    ],
+    "rows": [
+     [
+      "Konsentrlangan H2SO4",
+      "to‘q qizil"
+     ],
+     [
+      "Konsentrlangan HNO3",
+      "och qizil, so‘ng to‘q qizil"
+     ],
+     [
+      "Konsentrlangan HCl",
+      "qizg‘ish pushti, so‘ng qizil"
+     ],
+     [
+      "Marki reaktivi",
+      "to‘q qizil"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: etaperazin Rf=0,32 aminazin Rf=0,93 dan nima uchun past? Doskada: aminazin 0,93, propazin 0,71, diprazin 0,72, etaperazin 0,32. Mandelin reaktivi bilan avval yashil, so‘ng alvon rang (p.127). UB 0,1 M sulfat kislotada 249 va 300 nm (p.128). Tipik xato: kitobda etaperazin UB maksimumlari diprazinniki bilan bir xil (252/301; 249/300) berilgan — UB bilan farqlab bo‘lmaydi, p.126 va p.128 ni solishtiring; piperazinli hosilani alifatik guruhga qo‘shish."
+  },
+  {
+   "title": "Peritsiazin va fenotiazinlarni farqlash",
+   "bullets": [
+    {
+     "text": "Peritsiazin — 2-sian-10-[3-(4-oksipiperidin)-propil]-fenotiazin; kuchsiz antipsixotik faollikka ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "128"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uyqu chaqiruvchi dorilar, barbituratlar, giyohvand moddalar va analgetiklar ta’sirini kuchaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "128"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Propazin, etaperazin, peritsiazin ham boshqa fenotiazin hosilalari kabi murakkab metabolitlanadi; ajratib olish usullari bir xil.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "128"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bu moddalarni farqlashda asosan yupqa qatlam, gaz-suyuqlik va yuqori samarali suyuqlik xromatografiya hamda spektral tahlil usullaridan foydalaniladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "128"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Modda",
+     "Xususiyat"
+    ],
+    "rows": [
+     [
+      "Propazin",
+      "Aminazinga o‘xshash sedativ"
+     ],
+     [
+      "Etaperazin",
+      "Piperazinli, kuchli neyroleptik"
+     ],
+     [
+      "Peritsiazin",
+      "Kuchsiz antipsixotik"
+     ],
+     [
+      "Farqlash",
+      "YuQX, GSX, YuSSX, spektr"
+     ]
+    ],
+    "caption": "Fenotiazinlarni farqlash"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: rangli reaksiyalar nima uchun farqlash uchun yetarli emas? Doskada: farqlash usullari ro‘yxati. Tipik xato: rangli reaksiyalar o‘xshashligini e’tiborsiz qoldirib, guruhni aniqlagan bilan modda aniqlandi deb xulosa qilish."
+  },
+  {
+   "title": "Tizersin: xossalari va ahamiyati",
+   "bullets": [
+    {
+     "text": "Tizersin (levomepromazin, levopromozin, metatrimeprazin) — oq kristall kukun; etil spirti, dietil efiri, xloroformda yaxshi, suvda yomon eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "128"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Preparat ishqoriy muhitda organik erituvchilarda yaxshi eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "128"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Adrenolitik, antigistamin, analgetik ta’sirga ega; tez va kuchli sedativ ta’sir etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Psixoz, alkogol psixozi, uyqusizlik va dermatoz xastaliklarida tinchlantiruvchi vosita sifatida qo‘llaniladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Tizersin",
+    "children": [
+     {
+      "label": "Sinonimlari",
+      "items": [
+       "Levomepromazin",
+       "Levopromozin"
+      ]
+     },
+     {
+      "label": "Eruvchanlik",
+      "items": [
+       "Spirt, efir, xloroform: yaxshi",
+       "Suvda yomon"
+      ]
+     },
+     {
+      "label": "Ta’siri",
+      "items": [
+       "Adrenolitik, antigistamin",
+       "Tez, kuchli sedativ"
+      ]
+     }
+    ],
+    "caption": "Tizersin"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tizersin eruvchanligi aminazinnikidan nimasi bilan farq qiladi? Doskada: tizersin sinonimlari (levomepromazin, levopromozin, metatrimeprazin). Tipik xato: sinonimlarni turli moddalar deb hisoblash."
+  },
+  {
+   "title": "Tizersin: metabolizmi va ajratib olinishi",
+   "bullets": [
+    {
+     "text": "Tizersin oksidlanib, gidroksillanib, sulfoksidlanib va N-demetillanib metabolitlanadi; sulfat va glyukuron kislotalari bilan kon’yugat ham hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Taxminan 10% atrofida o‘zgarmagan holda yoki sulfoksid yoki glyukuronid holida peshob orqali ajratiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Biologik ob’ekt tarkibidan tizersin aminazin kabi ajratib olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Oksidlanish, gidroksillanish",
+     "Sulfoksidlanish, N-demetillanish",
+     "Sulfat, glyukuron konyugati",
+     "~10% peshobda o‘zgarishsiz / sulfoksid"
+    ],
+    "caption": "Tizersin metabolizmi"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: 10% o‘zgarmagan modda peshobda tahlil uchun yetarlimi? Doskada: metabolizm yo‘llari (oksidlanish, gidroksillanish, sulfoksidlanish, N-demetillanish). Tipik xato: faqat o‘zgarmagan modda bilan cheklanib, metabolitlarni qidirmaslik."
+  },
+  {
+   "title": "Tizersinni aniqlash reaksiyalari",
+   "bullets": [
+    {
+     "text": "Marki reaktivi bilan ko‘kish qizil, Frede reaktivi bilan qizil ko‘kish rang hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mandelin reaktivi qo‘shilgach sovitilib, so‘ng konsentrlangan sulfat kislota qo‘shilsa, qizil pushti rang hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: ammiak 25% va etanol (1:1), etilasetat va aseton; aniqlovchi — H2SO4 ning spirtdagi 50% eritmasi, 100°C da 3-5 daqiqa, qizil dog‘.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun purkalgan plastinka qizdiriladi? Doskada: tizersin ranglari — Marki ko‘kish qizil, Frede qizil ko‘kish. Tipik xato: kitobda YuQX aralashmasi nisbati (4:90:45) boshqa joydagi (50:45:4) tartibdan farq qiladi — aniq nisbatni SOP dan tekshiring."
+  },
+  {
+   "title": "Tizersin: UB, IQ va miqdoriy tahlil",
+   "bullets": [
+    {
+     "text": "UB: etil spirtdagi eritma 255 va 310 nm da, 0,1 M xlorid kislotadagi eritma 251 va 302 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "IQ: kaliy bromidli plastinka 1587, 1460, 1269 va 1446 sm-1 sohalarida yutadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdori UB-spektri bo‘yicha spektrofotometrik yoki fotoelektrokolorimetrik usulda aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "129"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Muhit",
+     "UB max, nm"
+    ],
+    "rows": [
+     [
+      "Etil spirti",
+      "255, 310"
+     ],
+     [
+      "0,1 M xlorid kislota",
+      "251, 302"
+     ],
+     [
+      "IQ (KBr)",
+      "1587, 1460, 1269, 1446"
+     ]
+    ],
+    "caption": "Tizersin: UB va IQ"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: erituvchi (etanol yoki kislota) maksimumni qanday siljitadi? Doskada: 255/310 va 251/302 nm. Tipik xato: erituvchini ko‘rsatmay UB maksimumlarini yozish."
+  },
+  {
+   "title": "Galoperidol va droperidol: xossalari",
+   "bullets": [
+    {
+     "text": "Galoperidol — oq sarg‘imtir amorf yoki kristall kukun; suvda amalda erimaydi, metanolda 1:55 eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Droperidol — oq amorf yoki kristall kukun; yorug‘lik ta’sirida qorayadi; suvda amalda erimaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Eruvchanlik nisbatlari",
+    "nodes": [],
+    "header": [
+     "Erituvchi",
+     "Galoperidol",
+     "Droperidol"
+    ],
+    "rows": [
+     [
+      "Etanol",
+      "1:50",
+      "1:140"
+     ],
+     [
+      "Xloroform",
+      "1:20",
+      "1:40"
+     ],
+     [
+      "Dietil efir",
+      "1:200",
+      "1:500"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: eruvchanlik nisbati ekstraksiya uchun erituvchi tanlashga qanday ta’sir qiladi? Doskada: jadvalni to‘ldiring. Tipik xato: metanolda eruvchanlik (galoperidol 1:55) ni jadvaldan tashqarida qoldirish."
+  },
+  {
+   "title": "Galoperidol va droperidol: ta’siri",
+   "bullets": [
+    {
+     "text": "Galoperidol kuchli neyroleptik; sedativ va qusishga qarshi ta’sir ko‘rsatadi, agressiyani pasaytiradi, boshqa psixotrop moddalar ta’sirini kuchaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dozani oshirib yuborish harakat faolligi buzilishi bilan boradi va 15-22% hollarda o‘lim bilan tugaydi; asosiy metaboliti 4-(4-xlorfenil)-4-gidroksipiperidin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Droperidol tez, kuchli, qisqa ta’sirli neyroleptik: 3-10 daqiqada ta’sir ko‘rsatadi, ta’sir davomiyligi 3-24 soat.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Droperidol asosan jigarda metabolitlanadi, 10% miqdori o‘zgarmagan holda buyrak orqali chiqadi; anesteziyada, narkozga tayyorlash oldida ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Galoperidol",
+      "items": [
+       "Kuchli neyroleptik",
+       "Dozani oshirish: 15-22% o‘lim",
+       "Metaboliti: 4-(4-xlorfenil)-4-gidroksipiperidin"
+      ]
+     },
+     {
+      "title": "Droperidol",
+      "items": [
+       "Tez, kuchli, qisqa ta’sirli",
+       "3-10 daqiqada ta’sir",
+       "Davomiyligi 3-24 soat",
+       "10% buyrak orqali o‘zgarishsiz"
+      ]
+     }
+    ],
+    "caption": "Butirofenonlar"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 15-22% o‘lim ko‘rsatkichi nimani anglatadi? Doskada: galoperidol va droperidol ta’sir boshlanishi va davomiyligi. Tipik xato: «15-22%» ko‘rsatkichini dozasi aniq belgilanmagan holda har qanday ishlatishga tatbiq etish — kitobda sharoit (doza oshirib yuborish) ko‘rsatilgan."
+  },
+  {
+   "title": "Butirofenonlarni qon va peshobdan ajratish",
+   "bullets": [
+    {
+     "text": "10 ml peshob va 2 ml qon NaOH 50% bilan pH=13 ga keltirilib, 30 daqiqa qaynoq hammomda qizdiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sovitilgan gidrolizat uch qayta etilasetat bilan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ajralmalar suvsiz Na2SO4 orqali filtrlanib bug‘latiladi; qoldiq 95% spirtda eritilib YuQX qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Butirofenonlarni ajratish",
+    "nodes": [
+     "pH=13, 30 daqiqa, qaynoq hammom",
+     "3 marta etilasetat",
+     "Suvsiz Na2SO4 orqali filtrlash",
+     "Bug‘latish, 95% spirtda eritish"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: fenotiazinlardan farqli, bu yerda ekstragent nima? Doskada: fenotiazin (n-geptan, 10 daqiqa) va butirofenon (etilasetat, 30 daqiqa) ni qiyoslang. Tipik xato: gidroliz vaqtlarini (10 va 30 daqiqa) aralashtirish."
+  },
+  {
+   "title": "Galoperidol va droperidolni aniqlash",
+   "bullets": [
+    {
+     "text": "YuQX: toluol-aseton-ammiak (50:10:5), toluol-geksan-aseton-dietilamin (10:30:5:5), etanol-ammiak (100:1,5), toluol-geksan-dietilamin (10:40:10) va boshqalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Plastinkada o‘rnini aniqlash uchun UB-254 nm nurlantirish va Dragendorf reaktividan foydalaniladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "UB: galoperidolning 95% etil spirtdagi eritmasi 246 nm da; droperidolning chumoli kislotadagi eritmasi 247 va 276 nm da maksimal yutadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Galoperidol, UB (spirt)",
+      "value": "246",
+      "unit": "nm"
+     },
+     {
+      "label": "Droperidol, UB (chumoli)",
+      "value": "247, 276",
+      "unit": "nm"
+     },
+     {
+      "label": "Aniqlash",
+      "value": "UB-254, Dragendorf"
+     }
+    ],
+    "caption": "Butirofenonlar: UB va YuQX"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun bu yerda beshta turli sistema keltirilgan? Doskada: beshta sistemadan ikkitasini tanlab yozing. Tipik xato: kitobdagi sistemalar nisbatini birlashtirib yuborish."
+  },
+  {
+   "title": "Butirofenonlar: rangli reaksiyalar",
+   "bullets": [
+    {
+     "text": "Marki reaktivi bilan galoperidol va droperidol sariq rangli mahsulot hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130-131"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Frede reaktivi bilan galoperidol zarg‘aldoq, droperidol sariq rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "130"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mandelin reaktivi bilan galoperidol to‘q sariq, droperidol sariq-yashil rang hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Galoperidol va droperidol",
+    "nodes": [],
+    "header": [
+     "Reaktiv",
+     "Galoperidol",
+     "Droperidol"
+    ],
+    "rows": [
+     [
+      "Marki",
+      "sariq",
+      "sariq"
+     ],
+     [
+      "Frede",
+      "zarg‘aldoq",
+      "sariq"
+     ],
+     [
+      "Mandelin",
+      "to‘q sariq",
+      "sariq-yashil"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ikki modda Marki reaktivi bilan nima uchun farqlanmaydi? Doskada: jadvalni to‘ldiring. Tipik xato: fenotiazinlarning qizil-binafsha ranglarini butirofenonlardagi sariq ranglar bilan aralashtirish."
+  },
+  {
+   "title": "Butirofenonlarning miqdoriy aniqlanishi",
+   "bullets": [
+    {
+     "text": "Droperidolning xlorid kislotadagi eritmasiga 12 ml asetatli bufer (pH=3,5), 2 ml metiloranjning to‘yingan eritmasi va 5 ml xloroform qo‘shib chayqatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xloroform qatlami ajratgich voronkada ajratilib, optik zichligi 400 nm da, qatlam qalinligi 10 mm kyuvetada fotokolorimetrik aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aniqlashning chiziqli diapazoni 1-10 mkg/ml; miqdor avval tayyorlangan kalibrlash grafigi yordamida topiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sezgirroq usul sifatida gaz-xromato-mass spektrometrik tahlil ham qo‘llanishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Reaktivlar",
+      "text": "HCl eritmasi + 12 ml bufer (pH=3,5) + metiloranj"
+     },
+     {
+      "title": "2. Ekstraksiya",
+      "text": "5 ml xloroform; qatlam ajratiladi"
+     },
+     {
+      "title": "3. Fotometriya",
+      "text": "400 nm, 10 mm kyuveta"
+     },
+     {
+      "title": "4. Hisoblash",
+      "text": "Chiziqli diapazon 1-10 mkg/ml; kalibrlash grafigi"
+     }
+    ],
+    "caption": "Droperidol miqdori"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metiloranj qanday rangli kompleks hosil qiladi? Doskada: kalibrlash grafigi tuzish bosqichlari. Tipik xato: kitobda rang xloroform qatlamida fenotiazin hosilalari bo‘lsa sariq deyilgan — bu yerda galoperidol/droperidol uchun ham shu sxema ishlatilgan; usulning tanlovchanligini tasdiqlash kerak."
+  },
+  {
+   "title": "Xulosa va nazorat savollari",
+   "bullets": [
+    {
+     "text": "Fenotiazinlar uch guruhga bo‘linadi; Salomatin usulida ajratiladi: kislotali efir qatlami barbituratlar, ishqoriy (pH=13) qatlam fenotiazinlar uchun.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Peshobda dastlabki rang reaksiyalari musbat bo‘lsa, qon va peshobdan ajratib YuQX (Rf st, rangli dog‘lar) va boshqa usullarda tasdiqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "120-122"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aminazin, diprazin, tizersin kislotalar, Marki, Mandelin reaktivlari, UB va IQ spektrlari bilan aniqlanadi; butirofenonlar sariq-zarg‘aldoq ranglar beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "123-131"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nazorat savollari: fenotiazin hosilalarini nomlang; toksikologik ahamiyati; ajratish; rangli reaksiyalar; peshobdan dastlabki tekshirish.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "131"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: aralash namunada fenotiazin va butirofenonni qanday ajratish mumkin? Doskada: butun tahlil sxemasi. Tipik xato: butirofenonlarni ham FPN-reaktiv bilan aniqlashga urinish — kitobda FPN fenotiazinlar uchun keltirilgan."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Fenotiazin hosilalari ob’ektdan qaysi usulda ajratib olinadi?",
+   "options": [
+    "Valov usuli",
+    "Ye.M.Salomatin nordonlashtirilgan spirt usuli",
+    "Stas-Otto usuli",
+    "Dializ"
+   ],
+   "correct_index": 1,
+   "explanation": "Fenotiazin hosilalari biologik ob’ektdan Ye.M.Salomatin ishlab chiqqan nordonlashtirilgan spirt usulida ajratib olinadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   }
+  },
+  {
+   "question": "Nordonlashtirilgan spirt usulida ob’ekt qanday eritma bilan bo‘ktiriladi?",
+   "options": [
+    "Sulfat kislotaning 5% suvli eritmasi",
+    "Oksalat kislotaning 10% spirtli eritmasi",
+    "Xlorid kislotaning 1 M eritmasi",
+    "Etilasetat"
+   ],
+   "correct_index": 1,
+   "explanation": "Ob’ekt oksalat kislotasining 10% spirtli eritmasi bilan 2 soat (3 marotaba) bo‘ktiriladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   }
+  },
+  {
+   "question": "Fenotiazin hosilalari efirli ekstraktdan qaysi eritma bilan reekstraksiyalanadi?",
+   "options": [
+    "NaOH 50%",
+    "Sulfat kislotaning 0,5 M eritmasi",
+    "Etanol 96%",
+    "Suv"
+   ],
+   "correct_index": 1,
+   "explanation": "Ishqoriy muhitdan olingan efirli ekstraktdan fenotiazin hosilalari sulfat kislotaning 0,5 M eritmasi bilan reekstraksiyalanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   }
+  },
+  {
+   "question": "Qon va peshobdan fenotiazinlarni ajratishda gidrolizat pH qiymati nechaga keltiriladi?",
+   "options": [
+    "pH=2",
+    "pH=7",
+    "pH=13",
+    "pH=9"
+   ],
+   "correct_index": 2,
+   "explanation": "NaOH 50% eritmasi bilan pH=13 ga keltirilgach 10 daqiqa qizdiriladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   }
+  },
+  {
+   "question": "Fenotiazin hosilalarining YuQX natijalari jadvaliga ko‘ra, qaysi modda sulfat kislota va etanol (9:1) purkalganda ko‘k rangli dog‘ hosil qiladi?",
+   "options": [
+    "Triftazin",
+    "Aminazin",
+    "Diprazin",
+    "Levomepromazin"
+   ],
+   "correct_index": 3,
+   "explanation": "16-jadvalda levomepromazin dog‘i «ko‘k», aminazin va diprazin to‘q qizil, triftazin qizil rangda berilgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "121"
+   }
+  },
+  {
+   "question": "Konsentrlangan sulfat kislota bilan aminazin qanday rang beradi?",
+   "options": [
+    "qizil alvon",
+    "yashil",
+    "sariq",
+    "ko‘k"
+   ],
+   "correct_index": 0,
+   "explanation": "Konsentrlangan sulfat kislotasi bilan aminazin qizil alvon rang hosil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   }
+  },
+  {
+   "question": "Diprazin sulfoksidini peshobdan necha kundan keyin ham aniqlash mumkin?",
+   "options": [
+    "2 kun",
+    "7 kun",
+    "14 kun",
+    "30 kun"
+   ],
+   "correct_index": 2,
+   "explanation": "Diprazinning asosiy metabolitlaridan biri sulfoksid bo‘lib, uni hatto 14 kundan keyin ham peshobdan aniqlash mumkin.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "125-126"
+   }
+  },
+  {
+   "question": "Marki reaktivi bilan tizersin qanday rang hosil qiladi?",
+   "options": [
+    "ko‘kish qizil",
+    "yashil",
+    "sariq",
+    "rangsiz"
+   ],
+   "correct_index": 0,
+   "explanation": "Marki reaktivi bilan tizersin ko‘kish qizil rang hosil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "129"
+   }
+  },
+  {
+   "question": "Galoperidol Frede reaktivi bilan qanday rang beradi?",
+   "options": [
+    "binafsha",
+    "yashil",
+    "ko‘k",
+    "zarg‘aldoq"
+   ],
+   "correct_index": 3,
+   "explanation": "Frede reaktivi bilan galoperidol zarg‘aldoq, droperidol sariq rang hosil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "130"
+   }
+  },
+  {
+   "question": "Droperidolning xlorid kislotali eritmasida miqdoriy aniqlashning chiziqli diapazoni qancha?",
+   "options": [
+    "1-10 mkg/ml",
+    "10-100 mkg/ml",
+    "0,1-1 mkg/ml",
+    "100-500 mkg/ml"
+   ],
+   "correct_index": 0,
+   "explanation": "Aniqlashning chiziqli diapazoni 1-10 mkg/ml.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "131"
+   }
+  },
+  {
+   "question": "Fenotiazin hosilalari kimyoviy tuzilishiga ko‘ra nechta guruhga bo‘linadi?",
+   "options": [
+    "Ikkita",
+    "To‘rtta",
+    "Uchta",
+    "Beshta"
+   ],
+   "correct_index": 2,
+   "explanation": "Kitobga ko‘ra fenotiazin hosilalari uch guruhga bo‘linadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "119"
+   }
+  },
+  {
+   "question": "Salomatin usulida oksalat kislotali spirtli bo‘ktirish necha marta o‘tkaziladi?",
+   "options": [
+    "1 marta",
+    "5 marta",
+    "10 marta",
+    "3 marta (2 soatdan)"
+   ],
+   "correct_index": 3,
+   "explanation": "Ob’ekt oksalat kislotasining 10% spirtli eritmasi bilan 2 soat (3 marotaba) bo‘ktiriladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   }
+  },
+  {
+   "question": "Qon va peshob gidrolizati qaysi aralashma bilan ekstraksiyalanadi?",
+   "options": [
+    "3% izoamil spirtli n-geptan",
+    "Dietil efiri",
+    "Etilasetat",
+    "Benzol - dioksan"
+   ],
+   "correct_index": 0,
+   "explanation": "Gidrolizat ikki qayta (20 ml) 3% izoamil spirti saqlagan n-geptan bilan ekstraksiyalanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "121"
+   }
+  },
+  {
+   "question": "Aminazinning sinonimi qaysi?",
+   "options": [
+    "Prometazin",
+    "Xlorpromazin",
+    "Levomepromazin",
+    "Haloperidol"
+   ],
+   "correct_index": 1,
+   "explanation": "Aminazinning sinonimlari: xlorpromazin, xlorazin, largaktil, plegomazin.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "122"
+   }
+  },
+  {
+   "question": "Aminazin bilan davolashda sutkalik doza qanday oraliqqa yetadi?",
+   "options": [
+    "0,5 g dan 2 g gacha",
+    "0,01 g dan 0,02 g gacha",
+    "0,075 g dan 0,6 g gacha",
+    "1 g dan 5 g gacha"
+   ],
+   "correct_index": 2,
+   "explanation": "Sutkalik doza 0,075 g dan 0,6 g gacha etadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   }
+  },
+  {
+   "question": "Aminazinning nechta metaboliti adabiyotlarda aniqlangan?",
+   "options": [
+    "3 ta",
+    "5 ta",
+    "10 ta",
+    "20 xildan ortiq"
+   ],
+   "correct_index": 3,
+   "explanation": "Adabiyotlarda aminazinning 20 xildan ortiq metaboliti aniqlangani ko‘rsatilgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   }
+  },
+  {
+   "question": "Aminazinning 0,1 M sulfat kislotadagi eritmasi qaysi to‘lqin uzunliklarida yutadi?",
+   "options": [
+    "255 va 307 nm",
+    "252 va 301 nm",
+    "246 nm",
+    "400 nm"
+   ],
+   "correct_index": 0,
+   "explanation": "Aminazin 0,1 M H2SO4 da 255 va 307 nm maksimum nur yutadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   }
+  },
+  {
+   "question": "Diprazinning suvda eruvchanligi kitobda qanday?",
+   "options": [
+    "1:9",
+    "1:60",
+    "1:2",
+    "1:1300"
+   ],
+   "correct_index": 1,
+   "explanation": "Diprazin suv (1:60), etil spirti (1:9), xloroformda (1:2) yaxshi eriydi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "125"
+   }
+  },
+  {
+   "question": "Etaperazin YuQX da qaysi Rf qiymatini beradi?",
+   "options": [
+    "0,72",
+    "0,93",
+    "0,32",
+    "0,71"
+   ],
+   "correct_index": 2,
+   "explanation": "Etaperazin aminazin sharoitida Rf=0,32 hosil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "128"
+   }
+  },
+  {
+   "question": "Droperidol necha daqiqada o‘z ta’sirini ko‘rsatadi?",
+   "options": [
+    "30-60 daqiqada",
+    "2-3 soatda",
+    "24 soatda",
+    "3-10 daqiqada"
+   ],
+   "correct_index": 3,
+   "explanation": "Droperidol tez, kuchli, qisqa ta’sirli neyroleptik: 3-10 daqiqada ta’sir ko‘rsatadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "130"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Aminazin 3-4 haftadan 3-4 oygacha va undan ortiq muddat davolashda qo‘llanishi mumkin; sutkalik doza 0,075-0,6 g.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   }
+  },
+  {
+   "text": "Diprazin sulfoksidini peshobdan hatto 14 kundan keyin ham aniqlash mumkin.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "125-126"
+   }
+  },
+  {
+   "text": "Galoperidolning dozasi oshirib yuborilsa, 15-22% hollarda o‘lim bilan tugaydi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "130"
+   }
+  },
+  {
+   "text": "Fenotiazin hosilalari YuQX da Rf st (aminazin bo‘yicha) qiymatlari bilan solishtiriladi: triftazin 0,48 (1-sistema), etaperazin 0,34.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "121-122"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+   "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+   "year": null,
+   "pages": "b. 119-131"
+  },
+  {
+   "author": "Malaka materiali №081 (TFI Toksikologik kimyo kafedrasi)",
+   "title": "7-NMT: fenotiazin hosilalari (ma’ruza matni)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  }
+ ]
 }

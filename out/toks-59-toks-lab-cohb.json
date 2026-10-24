@@ -70,6 +70,83 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: SF usul uchun qo‘shimcha qanday asbob kerak? (Spektrofotometr va kyuveta, toks 83.) Doskada: jihozlar ro‘yxati. Tipik xato: kitobdagi jihozlar ro‘yxatida spektrofotometr yo‘q; uni o‘qituvchi qo‘shimcha ko‘rsatadi."
     },
     {
+      "title": "Dars xaritasi: COHb tahlili",
+      "bullets": [
+        {
+          "text": "Reja: is gazi bilan zaharlanishning ahamiyati va karboksigemoglobinni qondan kimyoviy va fizik-kimyoviy usullarda tahlil qilish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kimyoviy usullar: besh rang reaksiyasi, zaharlangan va toza qon ranglari solishtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fizik-kimyoviy usullar: spektroskopik, spektrofotometrik, fotometrik va gaz xromatografik.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "82"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "SF usulida optik zichlik 538 nm va 550 nm (izobestik nuqta) to‘lqin uzunliklarida o‘lchanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "COHb tahlili",
+        "root": "COHb tahlili",
+        "children": [
+          {
+            "label": "Kimyoviy (rang)",
+            "items": [
+              "Besh reaksiya",
+              "Toza qon bilan solishtirish"
+            ]
+          },
+          {
+            "label": "Spektroskopik",
+            "items": [
+              "Fraungofer chiziqlari",
+              "(NH4)2S bilan sinov"
+            ]
+          },
+          {
+            "label": "SF usuli",
+            "items": [
+              "A, B, V eritmalar",
+              "538 va 550 nm"
+            ]
+          },
+          {
+            "label": "GSX (metan)",
+            "items": [
+              "500 mkl qon",
+              "Ushlanish vaqti 3 daqiqa"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usul miqdoriy, qaysi sifat? Doskada: daraxt sxemasi. Tipik xato: faqat rang reaksiyalarini mashg‘ulot deb tushunish."
+    },
+    {
       "title": "Is gazi: xossalari va xavfi",
       "bullets": [
         {
@@ -169,6 +246,109 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: uyda zaharlanishning oldini olish choralari. Doskada: jadvaldagi 3 manba. Tipik xato: tabiiy gaz tarkibida is gazi umuman yo‘q deb o‘ylash (kitobda 4-30%)."
     },
     {
+      "title": "Is gazi: asosiy sonlar",
+      "bullets": [
+        {
+          "text": "Is gazining havo bilan 16 dan 73% gacha aralashmasi portlashi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "81"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Birikish tezligi kislorodnikidan 300 marta kuchli; COHb dan CO ajralishi 3600 barobar sekin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "82"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "COHb 70-80% ga yetganda o‘lim sodir bo‘ladi; havoda 0,07-0,08% xavfli, ruxsat etilgani 0,02 mg/l.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "82"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Is gazi: asosiy sonlar",
+        "items": [
+          {
+            "label": "Havoda portlash",
+            "value": "16-73",
+            "unit": "%"
+          },
+          {
+            "label": "Birikish tezligi",
+            "value": "300",
+            "unit": "marta"
+          },
+          {
+            "label": "CO ajralishi",
+            "value": "3600",
+            "unit": "marta sekin"
+          },
+          {
+            "label": "O‘lim: COHb",
+            "value": "70-80",
+            "unit": "%"
+          },
+          {
+            "label": "Xavfli konsentratsiya",
+            "value": "0,07-0,08",
+            "unit": "%"
+          },
+          {
+            "label": "Ruxsat etilgan",
+            "value": "0,02",
+            "unit": "mg/l"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi son qaysi hodisaga tegishli? Doskada: qiymatlar jadvali. Tipik xato: 300 va 3600 ni almashtirish."
+    },
+    {
+      "title": "Zaharlanishning oldini olish",
+      "bullets": [
+        {
+          "text": "Pechka, o‘choq, gaz plitasi yonida uzoq turish ko‘ngilsiz hodisalarga olib kelishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "81"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Domna pechlarining noto‘g‘ri ishlashi, uy pechkasi eshikchasini barvaqt yopish va sandalga ko‘mir solish zaharlanishga sabab bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "81"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tabiiy gaz tarkibida 4-30% is gazi bo‘lishi mumkin; gazdan to‘g‘ri foydalana bilish ham oldini olish choralaridan biri.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "81"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: uyda qaysi omillar xavfli? Doskada: 3 omil. Tipik xato: tabiiy gazda is gazi yo‘q deb o‘ylash."
+    },
+    {
       "title": "Zaharlanish mexanizmi",
       "bullets": [
         {
@@ -208,7 +388,20 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "CO va gemoglobin",
+        "reagents": [
+          "HbO2 (oksigemoglobin)",
+          "CO (is gazi)"
+        ],
+        "conditions": "Barqaror birikma hosil bo‘ladi",
+        "products": [
+          "HbCO (karboksigemoglobin)",
+          "O2"
+        ],
+        "observation": "CO ning birikish tezligi kislorodnikidan 300 marta kuchli"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 300 va 3600 raqamlari nimani bildiradi? Doskada: HbO2 + CO → HbCO + O2. Tipik xato: 300 va 3600 ni almashtirib yuborish."
     },
     {
@@ -293,7 +486,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Qondagi gemoglobin shakllari",
+        "root": "Gemoglobin shakllari",
+        "children": [
+          {
+            "label": "Hb",
+            "items": [
+              "Dezoksigemoglobin"
+            ]
+          },
+          {
+            "label": "OHb",
+            "items": [
+              "Oksigemoglobin"
+            ]
+          },
+          {
+            "label": "COHb",
+            "items": [
+              "Karboksigemoglobin",
+              "CO bilan birikkan"
+            ]
+          },
+          {
+            "label": "MtHb",
+            "items": [
+              "Metgemoglobin",
+              "CO bilan birikmaydi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun murda dog‘lari to‘q qizil, chirish bilan bu belgi qanday o‘zgaradi? Doskada: 4 shakl qisqartmalari. Tipik xato: MtHb ni COHb bilan adashtirish."
     },
     {
@@ -327,7 +552,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Saqlanish va havo me’yori",
+        "columns": [
+          {
+            "title": "1-fikr",
+            "items": [
+              "Is gazi 122 kungacha saqlanadi"
+            ]
+          },
+          {
+            "title": "2-fikr",
+            "items": [
+              "25-40 soatdan so‘ng aniqlab bo‘lmaydi"
+            ]
+          },
+          {
+            "title": "Havoda",
+            "items": [
+              "0,07-0,08% — hayot uchun xavfli",
+              "Ruxsat etilgan: 0,02 mg/l"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ikki qarama-qarshi fikr tahlil muddatiga qanday ta’sir qiladi? Doskada: 0,07-0,08% va 0,02 mg/l. Tipik xato: foiz va mg/l birliklarini aralashtirish."
     },
     {
@@ -589,6 +838,142 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: bu reaksiyani boshqalar bilan solishtirib, qaysi biri tezroq? Doskada: 0,5 ml qon + 2 ml 5% atsetat. Tipik xato: hajmlarni (0,5 ml va 2 ml) almashtirish."
     },
     {
+      "title": "Reaktivlar va hajmlar",
+      "bullets": [
+        {
+          "text": "Qizil qon tuzi va mis sulfat uchun qon suv bilan suyultiriladi (1:100); NaOH, formaldegid va qo‘rg‘oshin atsetatda suyultirilmagan qon.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaktivlar: 1% K3[Fe(CN)6], 10% CuSO4, 30% NaOH, 40% formaldegid, 5% qo‘rg‘oshin atsetat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hamma reaksiyada COHb saqlagan qon rangini o‘zgartirmaydi, toza qon esa o‘zgaradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "218"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Qon va reagent miqdorlari",
+        "header": [
+          "Reaktiv",
+          "Qon",
+          "Reagent"
+        ],
+        "rows": [
+          [
+            "K3[Fe(CN)6] 1%",
+            "5 ml (1:100)",
+            "5 tomchi"
+          ],
+          [
+            "CuSO4 10%",
+            "3 ml (1:100)",
+            "3 tomchi"
+          ],
+          [
+            "NaOH 30%",
+            "0,5 ml",
+            "1 ml"
+          ],
+          [
+            "Formaldegid 40%",
+            "1 ml",
+            "1 ml"
+          ],
+          [
+            "Pb atsetat 5%",
+            "0,5 ml",
+            "2 ml"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega birinchi ikki reaksiyada qon suyultiriladi? Doskada: jadval. Tipik xato: miqdorlarni almashtirish."
+    },
+    {
+      "title": "Kimyoviy usul cheklovlari",
+      "bullets": [
+        {
+          "text": "Chirish boshlangan qonda is gazi bo‘lmasa ham NaOH bilan yorqin qizil rang (gemoxromogen) hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qisman yengil zaharlanishda reaktivlar xuddi zaharlanmagan qon kabi natija beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Faqat bitta reaksiya natijasiga asoslanish xatolikka olib keladi; bir nechta reaksiya solishtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "218"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Kimyoviy usul cheklovlari",
+        "root": "Cheklovlar",
+        "children": [
+          {
+            "label": "Chirigan qon",
+            "items": [
+              "NaOH: yorqin qizil rang",
+              "Gemoxromogen hosil bo‘ladi"
+            ]
+          },
+          {
+            "label": "Yengil zaharlanish",
+            "items": [
+              "Toza qon kabi natija"
+            ]
+          },
+          {
+            "label": "Kam miqdor COHb",
+            "items": [
+              "Usul ahamiyatli emas"
+            ]
+          },
+          {
+            "label": "Bitta reaksiya",
+            "items": [
+              "Xatolikka olib keladi",
+              "Bir nechtasi solishtiriladi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: manfiy natija zaharlanishni inkor qiladimi? Doskada: daraxt sxemasi. Tipik xato: rang natijasidan miqdoriy xulosa qilish."
+    },
+    {
       "title": "Reaksiya natijalari jadvali",
       "bullets": [
         {
@@ -718,7 +1103,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Toza qon va COHb: qo‘shimcha sinovlar",
+        "header": [
+          "Reaktiv",
+          "Toza qon",
+          "COHb saqlagan"
+        ],
+        "rows": [
+          [
+            "Suv bilan suyultirish",
+            "Qo‘ng‘ir",
+            "To‘q qizil"
+          ],
+          [
+            "Tanin",
+            "Kulrang modda",
+            "O‘zgarmaydi"
+          ],
+          [
+            "Sariq qon tuzi + sirka k-ta",
+            "Qo‘ng‘ir",
+            "O‘zgarmaydi"
+          ],
+          [
+            "Formalin",
+            "Iflos qo‘ng‘ir",
+            "O‘zgarmaydi"
+          ],
+          [
+            "Mis sulfat",
+            "Yashil",
+            "To‘q-qizil"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun bir reaktiv uchun turli manbalarda ranglar farq qilishi mumkin? Doskada: tanin - kulrang. Tipik xato: 85-bet va 218-bet ranglarini aralashtirish; qo‘rg‘oshin atsetat uchun 85-bet ’iflos-ko‘k’, 218-bet ’qo‘ng‘ir’ deydi; slaydda faqat 218-bet varianti."
     },
     {
@@ -761,7 +1182,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Spektr sohalari",
+        "header": [
+          "Modda",
+          "Yutilish sohasi, nm"
+        ],
+        "rows": [
+          [
+            "Oksigemoglobin (OHb)",
+            "577-589 va 536-556"
+          ],
+          [
+            "Karboksigemoglobin (COHb)",
+            "564-579 va 523-536"
+          ],
+          [
+            "OHb + (NH4)2S",
+            "543-596 (keng yo‘l)"
+          ],
+          [
+            "COHb + (NH4)2S",
+            "O‘zgarmaydi"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun COHb ammoniy sulfid ta’sirida gemoglobingacha qaytarilmaydi? (Barqaror birikma.) Doskada: 4 diapazon. Tipik xato: OHb va COHb diapazonlarini almashtirish. Kitobda: OHb uchun «577-556 nm» (xato); to‘g‘ri — 577-589 va 536-556 nm (malaka 014)."
     },
     {
@@ -855,6 +1302,132 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ketma-ket idishlar nima vazifa bajaradi? Doskada: 4 bosqichli sxema. Tipik xato: ishqor idishini suvdan keyin qo‘yish. Xavfsizlik: malaka 015 bo‘yicha moslama so‘rish shkafida yig‘iladi."
     },
     {
+      "title": "A, B va V eritmalarni solishtirish",
+      "bullets": [
+        {
+          "text": "A eritma: 1 ml quyqasiz qon 100 ml gacha pH 7,38 fosfat bufer yoki 0,1% ammiak bilan; rangi tiniq bo‘lishi kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "B eritma: kyuvetadagi A eritmaga 3-4 mg natriy ditionit; oksigemoglobin to‘liq dezoksigemoglobingacha qaytariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "V eritma: A eritma CO bilan to‘yintiriladi, so‘ng 5-7 mg ditionit qo‘shilib, yana CO bilan to‘yintiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "A, B va V eritmalar",
+        "columns": [
+          {
+            "title": "A (tekshiriluvchi)",
+            "items": [
+              "1 ml qon → 100 ml",
+              "pH 7,38 bufer yoki 0,1% ammiak",
+              "Tiniq bo‘lishi shart"
+            ]
+          },
+          {
+            "title": "B (qaytarilgan)",
+            "items": [
+              "A + 3-4 mg ditionit",
+              "OHb → dezoksigemoglobin",
+              "Tiniqlik nazorat qilinadi"
+            ]
+          },
+          {
+            "title": "V (CO bilan)",
+            "items": [
+              "A + CO: OHb → HbCO",
+              "5-7 mg ditionit",
+              "Qo‘shimcha CO bilan to‘yintirish"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: B va V eritmalar nima bilan farq qiladi? Doskada: 3 ustunli taqqoslash. Tipik xato: ditionit miqdorlarini (3-4 va 5-7 mg) almashtirish."
+    },
+    {
+      "title": "SF usuli: bosqichlar",
+      "bullets": [
+        {
+          "text": "Eritmalar tayyorlangach, B va V eritmalarning nur yutish spektri 450-620 nm sohasida o‘lchanadi va bitta chizmaga chiziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "83"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Optik zichlik ikki monoxromatik nurda — 538 nm va 550 nm (izobestik nuqta) da o‘lchanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "COHb foizi formula bo‘yicha hisoblanadi (K = 0,372); natija sud-tibbiy baholashga xizmat qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "85"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "SF usuli",
+        "items": [
+          {
+            "title": "A eritma",
+            "text": "1 ml qon + 100 ml bufer yoki 0,1% ammiak"
+          },
+          {
+            "title": "B eritma",
+            "text": "A + 3-4 mg natriy ditionit (qaytarish)"
+          },
+          {
+            "title": "V eritma",
+            "text": "CO bilan to‘yintirish, 5-7 mg ditionit"
+          },
+          {
+            "title": "Spektr",
+            "text": "B va V uchun 450-620 nm sohasida o‘lchanadi"
+          },
+          {
+            "title": "Optik zichlik",
+            "text": "538 nm va 550 nm (izobestik nuqta)"
+          },
+          {
+            "title": "Hisoblash",
+            "text": "R, %: koeffitsient K = 0,372"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: qaysi bosqich qaytarish? Doskada: 6 qadam. Tipik xato: izobestik nuqtani boshqa to‘lqin bilan almashtirish."
+    },
+    {
       "title": "Spektr ko‘rsatkichlari va to‘lqin uzunliklari",
       "bullets": [
         {
@@ -894,7 +1467,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Spektr ko‘rsatkichlari",
+        "items": [
+          {
+            "label": "Dezoksigemoglobin",
+            "value": "557",
+            "unit": "nm"
+          },
+          {
+            "label": "COHb maksimumlari",
+            "value": "541; 571",
+            "unit": "nm"
+          },
+          {
+            "label": "Kesishish nuqtalari",
+            "value": "550; 565; 580",
+            "unit": "nm"
+          },
+          {
+            "label": "D1 (COHb)",
+            "value": "538",
+            "unit": "nm"
+          },
+          {
+            "label": "D2 (izobestik nuqta)",
+            "value": "550",
+            "unit": "nm"
+          },
+          {
+            "label": "Koeffitsient K",
+            "value": "0,372"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Doskada: 557, 541, 571, 550. Tipik xato: izobestik nuqta qiymatini boshqa uzunlik bilan almashtirish. Kitobda: p.84 da 534 nm, p.85 da 538 nm (boshqa variant). Egasi qarori: COHb 538 nm; izobestik nuqta 550 nm."
     },
     {
@@ -982,7 +1589,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Formuladagi belgilar",
+        "header": [
+          "Belgi",
+          "Ma’nosi"
+        ],
+        "rows": [
+          [
+            "R",
+            "COHb miqdori, %"
+          ],
+          [
+            "D(COHb)",
+            "V eritma (CO bilan to‘yingan), 538 nm"
+          ],
+          [
+            "D(HbCOHb)",
+            "B eritma (ditionit), 538 nm"
+          ],
+          [
+            "D(Hbi)",
+            "B eritma, 550 nm (izobestik)"
+          ],
+          [
+            "K",
+            "Koeffitsient 0,372"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: formulani kitobdagi rasmdan oling (matnda formula yo‘q, shuning uchun slaydga yozilmadi). Doskada: belgilar va K = 0,372. Kitobda: D(HbCOHb) uchun 534 nm (p.85) — boshqa variant; egasi qarori 538 nm. Malaka 015 dagi 535/560 nm qo‘llanmaydi."
     },
     {
@@ -1068,7 +1705,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Metan: GSX shartlari",
+        "items": [
+          {
+            "label": "Qon",
+            "value": "500",
+            "unit": "mkl"
+          },
+          {
+            "label": "Biomaterial",
+            "value": "500",
+            "unit": "mg"
+          },
+          {
+            "label": "Qizdirish",
+            "value": "10",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Termostat",
+            "value": "50",
+            "unit": "°C"
+          },
+          {
+            "label": "Bug‘latgich",
+            "value": "150",
+            "unit": "°C"
+          },
+          {
+            "label": "Azot oqimi",
+            "value": "30",
+            "unit": "ml/min"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun chinlik ushlanish vaqti bo‘yicha tasdiqlanadi? Doskada: 500 mkl, 500 mg, 10 daqiqa, 3 daqiqa. Tipik xato: kitobda kolonka uzunligi ’100 mm’ va tasma tezligi ’720 mm/s’ deb yozilgan; bu qiymatlar shubhali (o‘lchov birligi xatosi bo‘lishi mumkin), shuning uchun slaydga kiritilmadi."
     },
     {
@@ -1104,6 +1776,102 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: dalillarning qaysi biri COHb ni taxmin qildiradi? Doskada: kerakli reaktivlar ro‘yxati (5 ta). Tipik xato: kitobda masalaning yechimi berilmagan; talaba o‘z natijasini 3-4 reaksiya bilan asoslashi kerak."
+    },
+    {
+      "title": "24-keys: yonib ketgan murdalar",
+      "bullets": [
+        {
+          "text": "24-keys: Toshkent viloyatida jinoyat sodir etilib, avtomobil ichida yondirib yuborilgan 3 nafar murda a’zolari topilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: inson avval o‘ldirilib, so‘ngra izni yo‘qotish uchun yondirilganmi yoki tiriklay yondirilganmi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Topshiriq: sud-kimyo tahlilini o‘tkazish; javob jadvali — muammo turi, kelib chiqish sabablari, hal etish yo‘llari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonda karboksigemoglobin aniqlansa, bemorning is gazi bilan zaharlanganligi isbotlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "82"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: qondagi COHb bu savolga qanday javob beradi? Doskada: muammo-sabab-yechim jadvali. Tipik xato: javob kitobda berilgan deb o‘ylash: javob yo‘q.",
+      "diagram_note": "Kitobda keysning javobi berilmagan; talaba COHb ahamiyatini 82-betga tayanib baholaydi."
+    },
+    {
+      "title": "Nazorat savollari (2)",
+      "bullets": [
+        {
+          "text": "Is gazi hosil bo‘ladigan manbalar (kimyoviy tenglamalar bilan) va zaharlanishdan saqlanish choralari qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Is gazining odam organizmiga ta’siri va uni organizmdan chiqarish usullarini tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uglerod(II) oksid bilan zaharlanish belgilari qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonda is gazini aniqlash uchun ishlatiladigan kimyoviy usullar qanday hodisaga asoslangan?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qondagi is gazini aniqlashda qanday rang hosil qiluvchi reaksiyalar tavsiya etilgan?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "220"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: javoblarni slaydlar bilan bog‘lang. Doskada: 5 savol. Tipik xato: savollar javobini kitobdan izlash: javoblar berilmagan."
     },
     {
       "title": "Nazorat savollari",
@@ -1187,12 +1955,12 @@
     {
       "question": "Karboksigemoglobin hosil bo‘lishi qaysi tenglama bilan ifodalanadi?",
       "options": [
-        "HbO2 + CO → HbCO + O2",
         "Hb + CO2 → HbCO2",
         "HbO2 + O2 → HbO4",
+        "HbO2 + CO → HbCO + O2",
         "Hb + CO → MtHb"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "CO oksigemoglobindan kislorodni siqib chiqarib, barqaror karboksigemoglobin hosil qiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1203,12 +1971,12 @@
     {
       "question": "COHb dan CO ajralishi oksigemoglobindan kislorod ajralishiga nisbatan necha barobar sekin?",
       "options": [
-        "300",
-        "3600",
+        "16",
         "36",
-        "16"
+        "3600",
+        "300"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Kitob bo‘yicha ajralish 3600 barobar sekin; 300 esa birikish tezligining nisbati.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1219,12 +1987,12 @@
     {
       "question": "Qizil qon tuzi K3[Fe(CN)6] ning 1% eritmasi bilan COHb saqlagan qon qanday o‘zgaradi?",
       "options": [
-        "Sarg‘ayadi",
-        "Yashil bo‘ladi",
         "Qizil rangini o‘zgartirmaydi",
-        "Qora bo‘ladi"
+        "Qora bo‘ladi",
+        "Sarg‘ayadi",
+        "Yashil bo‘ladi"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "COHb saqlagan qon qizil rangini o‘zgartirmaydi, toza qon sarg‘ayadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1235,12 +2003,12 @@
     {
       "question": "1:100 suyultirilgan qonga 10% mis sulfat qo‘shilganda toza qon qanday rangga o‘tadi?",
       "options": [
-        "To‘q-qizil",
         "Yashil",
-        "Qo‘ng‘ir",
-        "Sariq"
+        "Sariq",
+        "To‘q-qizil",
+        "Qo‘ng‘ir"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Toza qon yashil rangga o‘tadi, COHb saqlagan qon to‘q-qizil rangini saqlaydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1251,9 +2019,9 @@
     {
       "question": "Chirish boshlangan qonda NaOH bilan yolg‘on qizil rang beruvchi modda qaysi?",
       "options": [
-        "Metgemoglobin",
-        "Gemoxromogen",
         "Dezoksigemoglobin",
+        "Gemoxromogen",
+        "Metgemoglobin",
         "Mioglobin"
       ],
       "correct_index": 1,
@@ -1268,9 +2036,9 @@
       "question": "20% formaldegid ishlatilsa, toza qonda rang o‘zgarishi qancha vaqtda seziladi?",
       "options": [
         "5-10 daqiqa",
-        "1 daqiqa",
+        "2 soat",
         "40-60 daqiqa",
-        "2 soat"
+        "1 daqiqa"
       ],
       "correct_index": 2,
       "explanation": "40% formaldegidda 5-10 daqiqa, 20% da 40-60 daqiqa.",
@@ -1283,12 +2051,12 @@
     {
       "question": "Kimyoviy rang reaksiyalarining asosiy cheklovi nima?",
       "options": [
-        "Qimmat reaktivlar",
         "Kam miqdor COHb ni aniqlash uchun ahamiyatli emas",
         "Faqat murdada ishlaydi",
-        "Faqat havoda ishlaydi"
+        "Faqat havoda ishlaydi",
+        "Qimmat reaktivlar"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Yengil zaharlanishda reaktivlar xuddi zaharlanmagan qon kabi natija beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1299,12 +2067,12 @@
     {
       "question": "SF usulida optik zichlik qaysi ikki to‘lqin uzunligida o‘lchanadi?",
       "options": [
-        "538 va 550 nm",
         "257 va 273 nm",
-        "300 va 302 nm",
-        "577 va 556 nm"
+        "538 va 550 nm",
+        "577 va 556 nm",
+        "300 va 302 nm"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "D1 = 538 nm, D2 = 550 nm (izobestik nuqta).",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1315,12 +2083,12 @@
     {
       "question": "COHb miqdorini hisoblash formulasidagi koeffitsient K nimaga teng?",
       "options": [
-        "0,372",
         "0,02",
-        "1,27",
-        "0,15"
+        "0,372",
+        "0,15",
+        "1,27"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Kitobda K = 0,372.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1331,17 +2099,177 @@
     {
       "question": "Ruxsat etilgan is gazi konsentratsiyasi havoda qancha?",
       "options": [
-        "0,02 mg/l",
         "0,2 mg/l",
+        "5 mg/l",
         "0,003 mg/l",
-        "5 mg/l"
+        "0,02 mg/l"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Havodagi ruxsat etilgan konsentratsiya 0,02 mg/l.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "82"
+      }
+    },
+    {
+      "question": "Is gazining havo bilan qancha foizli aralashmasi portlashi mumkin?",
+      "options": [
+        "16 dan 73% gacha",
+        "1 dan 5% gacha",
+        "80 dan 95% gacha",
+        "0,07-0,08%"
+      ],
+      "correct_index": 0,
+      "explanation": "Is gazini 16 dan 73% gacha miqdordagi havo bilan aralashmasi portlashi mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "81"
+      }
+    },
+    {
+      "question": "Is gazining gemoglobin bilan birikish tezligi kislorodnikidan necha marta kuchli?",
+      "options": [
+        "30",
+        "3600",
+        "300",
+        "16"
+      ],
+      "correct_index": 2,
+      "explanation": "Is gazining gemoglobin bilan birikish tezligi kislorodning birikishiga nisbatan 300 marta kuchli.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "82"
+      }
+    },
+    {
+      "question": "Qonda karboksigemoglobin qancha bo‘lganda o‘lim sodir bo‘ladi?",
+      "options": [
+        "10% dan kam",
+        "20-30%",
+        "30-35%",
+        "70-80%"
+      ],
+      "correct_index": 3,
+      "explanation": "COHb miqdori 70-80% ga yetganda o‘lim sodir bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "82"
+      }
+    },
+    {
+      "question": "COHb 35-50% bo‘lganda zaharlanish darajasi qanday?",
+      "options": [
+        "Og‘ir",
+        "O‘rtacha",
+        "Kuchli: tirishish, hushdan ketish",
+        "Kuchsiz"
+      ],
+      "correct_index": 0,
+      "explanation": "20-30% kuchsiz, 30-35% o‘rtacha, 35-50% og‘ir, 50-60% kuchli zaharlanish.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "82"
+      }
+    },
+    {
+      "question": "Xalq xo‘jaligidagi tabiiy gaz tarkibida is gazi qancha bo‘lishi mumkin?",
+      "options": [
+        "0,02%",
+        "4-30%",
+        "40-50%",
+        "70-80%"
+      ],
+      "correct_index": 1,
+      "explanation": "Tabiiy gaz yoqilg‘isi tarkibida 4-30% is gazi bo‘lishi mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "81"
+      }
+    },
+    {
+      "question": "Metgemoglobin (MtHb) haqida nima to‘g‘ri?",
+      "options": [
+        "Is gazi bilan eng barqaror birikadi",
+        "Faqat murdada hosil bo‘ladi",
+        "Kislorod tashiydi",
+        "Is gazi bilan birikmaydi"
+      ],
+      "correct_index": 3,
+      "explanation": "Zaharlangan qonda qisman MtHb bo‘lishi mumkin; MtHb is gazi bilan birikmaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "82"
+      }
+    },
+    {
+      "question": "Dezoksigemoglobin (B eritma) qaysi to‘lqin uzunligida bitta spektral maksimum beradi?",
+      "options": [
+        "541 nm",
+        "580 nm",
+        "557 nm",
+        "571 nm"
+      ],
+      "correct_index": 2,
+      "explanation": "Dezoksigemoglobin 557 nm da bitta, karboksigemoglobin 541 va 571 nm da ikkita maksimum beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "question": "30% NaOH ning 1 ml i 0,5 ml qonga qo‘shilganda COHb saqlagan qon qanday bo‘ladi?",
+      "options": [
+        "Qo‘ng‘ir rangga kiradi",
+        "To‘q qizil rangini o‘zgartirmaydi",
+        "Sarg‘ayadi",
+        "Yashil rangga o‘tadi"
+      ],
+      "correct_index": 1,
+      "explanation": "COHb saqlagan qon to‘q qizil rangini o‘zgartirmaydi, toza qon esa qo‘ng‘ir rangga kiradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "218"
+      }
+    },
+    {
+      "question": "B eritmani tayyorlashda A eritmaga qancha natriy ditionit qo‘shiladi?",
+      "options": [
+        "30 mg",
+        "1 g",
+        "5-7 mg",
+        "3-4 mg"
+      ],
+      "correct_index": 3,
+      "explanation": "B eritma uchun 3-4 mg ditionit, V eritma uchun 5-7 mg ditionit qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "83"
+      }
+    },
+    {
+      "question": "Metanning GSX da ushlanish vaqti Svet-110 xromatografida qancha?",
+      "options": [
+        "30 soniya",
+        "1 soat",
+        "10 daqiqa",
+        "3 daqiqa"
+      ],
+      "correct_index": 3,
+      "explanation": "Berilgan sharoitda metanning ushlanish vaqti 3 daqiqaga teng bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "218"
       }
     }
   ],
@@ -1390,7 +2318,7 @@
       "author": "Yuldashev Z.A., Nurmatova M.I.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 221, 224"
+      "pages": "b. 221-224"
     },
     {
       "author": "Malaka materiali №015 (O‘zR SSV Bosh byuro)",

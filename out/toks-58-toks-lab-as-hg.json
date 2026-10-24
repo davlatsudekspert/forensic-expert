@@ -73,7 +73,7 @@
       "title": "Asbob-uskunalar va jihozlar",
       "bullets": [
         {
-          "text": "Zarur asbob-uskunalar: mineralizat, Zanger-Blek moslamasi, Marsh moslamasi, filtr qog‘ozi, voronka, reaktivlar, probirkalar, ko‘rgazmali materiallar, skotch, qog‘oz.",
+          "text": "Zarur asbob-uskunalar: mineralizat, Zanger-Blek va Marsh moslamalari, filtr qog‘ozi, voronka, reaktivlar, probirkalar, skotch, qog‘oz.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -102,6 +102,74 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: Marsh moslamasining qismlarini sanab bering (3-rasm kitobda). Doskada: asbob ro‘yxati. Tipik xato: Zanger-Blek va Marsh moslamalarini aralashtirish."
+    },
+    {
+      "title": "Dars xaritasi: mishyak va simob",
+      "bullets": [
+        {
+          "text": "Mishyak mineralizatdan Zanger-Blek va Marsh usullari bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob uchun jigar va buyrak konsentrlangan H2SO4 va HNO3 bilan destruksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruktatda simob nefelometrik (mis(I) yodid) va ditizon ishtirokidagi fotometrik usullarda aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Mishyak va simob",
+        "root": "Mishyak va simob",
+        "children": [
+          {
+            "label": "Mishyak: Zanger-Blek",
+            "items": [
+              "Misli rux, SnCl2, H2SO4",
+              "HgBr2 qog‘ozi: sariq-qo‘ng‘ir"
+            ]
+          },
+          {
+            "label": "Mishyak: Marsh",
+            "items": [
+              "Arsin: zangori alanga",
+              "Dog‘, oq kristallar"
+            ]
+          },
+          {
+            "label": "Destruksiya",
+            "items": [
+              "20 g jigar/buyrak",
+              "HNO3 + H2SO4, 200 ml"
+            ]
+          },
+          {
+            "label": "Simob usullari",
+            "items": [
+              "Nefelometrik: CuI",
+              "Fotometrik: ditizon"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega mishyak va simob turli tayyorlanadi? Doskada: daraxt sxemasi. Tipik xato: destruksiya va mineralizatsiyani aralashtirish."
     },
     {
       "title": "Zanger-Blek usuli: moslamani yig‘ish",
@@ -197,6 +265,75 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: paxtadagi qo‘rg‘oshin atsetat nima uchun kerak? (Kitobda sabab ko‘rsatilmagan; ishtirokchi gazlarni ushlash — o‘qituvchi izohi.) Doskada: jadval. Tipik xato: kutish vaqtini 30-40 daqiqadan kamaytirish."
     },
     {
+      "title": "Zanger-Blek usuli: asosiy qiymatlar",
+      "bullets": [
+        {
+          "text": "2 ml mineralizat moslamaga quyilib, 10 ml 4n H2SO4, 5 ml suv va 1 ml 10% SnCl2 (konsentrlangan H2SO4 da) qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2 g usti mis bilan qoplangan rux bo‘laklari tushirilib, moslama tiqin bilan berkitiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paxta va simob(II) bromidli qog‘oz joylanib, 30-40 daqiqaga qoldiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Zanger-Blek usuli",
+        "items": [
+          {
+            "label": "Mineralizat",
+            "value": "2",
+            "unit": "ml"
+          },
+          {
+            "label": "H2SO4",
+            "value": "4",
+            "unit": "n, 10 ml"
+          },
+          {
+            "label": "Suv",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "SnCl2 (H2SO4 da)",
+            "value": "10",
+            "unit": "%, 1 ml"
+          },
+          {
+            "label": "Misli rux",
+            "value": "2",
+            "unit": "g"
+          },
+          {
+            "label": "Kutish",
+            "value": "30-40",
+            "unit": "daqiqa"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi qiymat Marshdan farq qiladi? Doskada: qiymatlar. Tipik xato: SnCl2 ni suvda eritish."
+    },
+    {
       "title": "Marsh usuli: moslamani tayyorlash",
       "bullets": [
         {
@@ -227,7 +364,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Marsh moslamasini yig‘ish",
+        "items": [
+          {
+            "title": "Reaksiya kolbasi",
+            "text": "10 g mis bilan qoplangan rux bo‘laklari"
+          },
+          {
+            "title": "Xlor kalsiyli trubka",
+            "text": "Suvsizlantirilgan kalsiy xlorid kristallari"
+          },
+          {
+            "title": "Shtativga o‘rnatish",
+            "text": "Moslamaning barcha qismlari yig‘ilib o‘rnatiladi"
+          },
+          {
+            "title": "Tomchilagich voronka",
+            "text": "50 ml 4n H2SO4 quyiladi"
+          },
+          {
+            "title": "Kislota berish",
+            "text": "Kislota reaksiya kolbasiga sekin-asta tomiziladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: kalsiy xlorid nima uchun xlor kalsiyli trubkaga solinadi? (Gazni quritish uchun — o‘qituvchi izohi; kitobda sabab yo‘q.) Doskada: Marsh moslamasi (3-rasm). Tipik xato: kislotani birdan quyish."
     },
     {
@@ -275,6 +437,75 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: portlash nimani bildiradi? (Moslamada havo qolganini.) Doskada: sxema. Tipik xato: sinovsiz vodorodni yoqish."
+    },
+    {
+      "title": "Marsh usuli: asosiy qiymatlar",
+      "bullets": [
+        {
+          "text": "Reaksiya kolbasiga 10 g misli rux; tomchilagich voronkaga 50 ml 4n H2SO4.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vodorod havoni 15-20 daqiqa siqib chiqaradi; reaktivlar tozaligi 1 soatdan so‘ng dog‘ bo‘lmasligi bilan tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mineralizat uchun 20 ml mineralizatga 1 ml SnCl2 qo‘shilib, bir soat davomida tomchilab tushiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Marsh usuli",
+        "items": [
+          {
+            "label": "Misli rux",
+            "value": "10",
+            "unit": "g"
+          },
+          {
+            "label": "H2SO4 (voronka)",
+            "value": "4",
+            "unit": "n, 50 ml"
+          },
+          {
+            "label": "Havoni siqib chiqarish",
+            "value": "15-20",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Mineralizat",
+            "value": "20",
+            "unit": "ml"
+          },
+          {
+            "label": "SnCl2 (konts. H2SO4)",
+            "value": "1",
+            "unit": "ml"
+          },
+          {
+            "label": "Tomchilatish",
+            "value": "1",
+            "unit": "soat"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega mineralizat aralashmasi tomchilab beriladi? Doskada: qiymatlar. Tipik xato: vodorod sinovini o‘tkazmay boshlash."
     },
     {
       "title": "Reaktivlar tozaligini tekshirish",
@@ -396,8 +627,126 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Arsinning belgilari",
+        "header": [
+          "Sinov",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Qaytaruvchi naycha uchi",
+            "Zangori alanga"
+          ],
+          [
+            "Hid",
+            "Sarimsoq piyoz hidi"
+          ],
+          [
+            "Sovuq chinni tovoqcha",
+            "Yaltiroq kulrang dog‘"
+          ],
+          [
+            "AgNO3 (ammiakli eritma)",
+            "Qora loyqalanish"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: arsinni topishda qaysi uch belgi muhim? Doskada: alanga, tovoqcha dog‘i, AgNO3 sinovi. Tipik xato: hidga tayanib xulosa qilish; kitobda belgilar jamlanmasi talab qilinadi."
+    },
+    {
+      "title": "Arsin: kumush nitrat bilan sinov",
+      "bullets": [
+        {
+          "text": "Qaytaruvchi naycha ehtiyotkorlik bilan 180° ga burilib, uchi kumush nitratning ammiakli eritmasiga tutiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Naychadan arsin ajralganda eritmada qora loyqalanish paydo bo‘la boshlaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir soatdan so‘ng naycha tekshiriladi: ingichka qismda yaltiroq kulrang dog‘ bor-yo‘qligi aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Arsin AgNO3 eritmasida",
+        "reagents": [
+          "AsH3 (naycha uchidan)",
+          "AgNO3 ammiakli eritmasi"
+        ],
+        "conditions": "Naycha 180° ga burilgan",
+        "products": [
+          "Qora loyqalanish"
+        ],
+        "observation": "Arsin ajralayotganini bildiradi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega naycha ehtiyotkorlik bilan buriladi? Doskada: sxema. Tipik xato: qora loyqalanishni boshqa gaz bilan adashtirish."
+    },
+    {
+      "title": "Mishyak dog‘i: sublimatsiya",
+      "bullets": [
+        {
+          "text": "Yaltiroq dog‘ kichik alangada qizdiriladi, biroz yuqorisi sovuq suv shimdirilgan pilik bilan sovitiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yaltiroq dog‘ yo‘qolib, sovitilgan qismda oq dog‘lar hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oq dog‘lar mikroskopda oktaedr va tetraedr shaklidagi kristallar ko‘rinishida bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Dog‘ni qizdirish va sovitish",
+        "reagents": [
+          "Yaltiroq kulrang dog‘"
+        ],
+        "conditions": "Kichik alanga, sovuq suvli pilik",
+        "products": [
+          "Oq dog‘lar",
+          "Oktaedr va tetraedr kristallar"
+        ],
+        "observation": "Mikroskopda oktaedr va tetraedr"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kristall shakli nimani ko‘rsatadi? Doskada: sxema. Tipik xato: kristall shaklini daftarga chizmaslik."
     },
     {
       "title": "Naychadagi dog‘ni tekshirish",
@@ -480,6 +829,297 @@
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: ikki usulda qaysi reaktivlar umumiy (misli rux, qalay(II) xlorid, H2SO4)? Doskada: bo‘sh diagramma. Kitobda diagramma bo‘sh; to‘ldirish talabalar vazifasi."
     },
     {
+      "title": "Zanger-Blek va Marsh: Venna diagrammasi",
+      "bullets": [
+        {
+          "text": "Venna diagrammasi Zanger-Blek va Marsh usullarini solishtirish uchun berilgan; diagramma kitobda bo‘sh.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "214"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkala usulda ham misli rux, kislota va SnCl2 ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Farqlar: Zanger-Blek — 2 ml mineralizat va HgBr2 qog‘ozi; Marsh — 20 ml mineralizat, arsin alangasi va dog‘.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Zanger-Blek, umumiy, Marsh",
+        "columns": [
+          {
+            "title": "Zanger-Blek",
+            "items": [
+              "2 ml mineralizat, 2 g rux",
+              "Pb atsetatli paxta",
+              "HgBr2 qog‘ozi, 30-40 daqiqa"
+            ]
+          },
+          {
+            "title": "Umumiy",
+            "items": [
+              "Mis bilan qoplangan rux",
+              "4n H2SO4",
+              "SnCl2 (konts. H2SO4 da)"
+            ]
+          },
+          {
+            "title": "Marsh",
+            "items": [
+              "20 ml mineralizat, 10 g rux",
+              "Qaytaruvchi naycha, alanga",
+              "Dog‘ va oq kristallar"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: umumiy reagentlar nimani anglatadi? Doskada: 3 ustunli diagramma. Tipik xato: diagrammani kitobdagi bo‘sh holda qoldirish."
+    },
+    {
+      "title": "Mishyak tahlili: umumiy yo‘l",
+      "bullets": [
+        {
+          "text": "Zanger-Blek reaksiyasi chiqmasa, tekshiruv to‘xtatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marshda avval reaktivlar tozaligi tekshiriladi, so‘ng mineralizat bir soat tomchilab tushiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Arsin belgilari: zangori alanga, piyoz hidi, kulrang dog‘, AgNO3 da qora loyqa; oq dog‘lar mikroskopda kristall.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Mishyak tahlili",
+        "nodes": [
+          "Zanger-Blek: 30-40 daqiqa",
+          "Qog‘oz sariq-qo‘ng‘ir: davom",
+          "Marsh: nazorat sinovi (1 soat)",
+          "Mineralizat: 1 soat tomchilash",
+          "Alanga, dog‘, AgNO3, kristallar"
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi bosqichda tahlil to‘xtaydi? Doskada: sxema. Tipik xato: Marshdan oldin nazorat sinovini o‘tkazmaslik."
+    },
+    {
+      "title": "Marsh: nazorat sinovi va namuna",
+      "bullets": [
+        {
+          "text": "Nazorat sinovida (toza reaktivlar) bir soatdan so‘ng sovutilgan qismda qo‘ng‘ir-kulrang dog‘ hosil bo‘lmasligi kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dog‘ning bo‘lmasligi ishlatilayotgan reaktivlarning sud-kimyosi nuqtai nazaridan tozaligini ko‘rsatadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mineralizat namunasida arsin bo‘lsa, naycha uchida zangori alanga, sarimsoq piyoz hidi va yaltiroq kulrang dog‘ paydo bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Nazorat va namuna",
+        "columns": [
+          {
+            "title": "Nazorat (toza reaktiv)",
+            "items": [
+              "Bir soat davomida",
+              "Qo‘ng‘ir-kulrang dog‘ yo‘q",
+              "Reaktivlar toza"
+            ]
+          },
+          {
+            "title": "Mineralizat namunasi",
+            "items": [
+              "20 ml + 1 ml SnCl2, 1 soat",
+              "Zangori alanga, piyoz hidi",
+              "Yaltiroq kulrang dog‘"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nazorat sinovi nimaga kerak? Doskada: taqqoslash. Tipik xato: nazorat sinovini o‘tkazmasdan mineralizatni solish."
+    },
+    {
+      "title": "Daftarga yoziladigan topshiriqlar",
+      "bullets": [
+        {
+          "text": "Zanger-Blek reaksiyasining kimyoviy tenglamasi yoziladi; reaksiya chiqmasa, tekshiruv to‘xtatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Talabalar ish daftariga Marsh moslamasi rasmini va unda boradigan reaksiyalar tenglamalarini yozadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Klaster treningida mishyakning toksikologik ahamiyati va tahlil usullari sxema shaklida yoritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "214"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Daftarga yoziladi",
+        "header": [
+          "Mavzu",
+          "Nima yoziladi",
+          "Bet"
+        ],
+        "rows": [
+          [
+            "Zanger-Blek",
+            "Reaksiya tenglamasi",
+            "212"
+          ],
+          [
+            "Marsh",
+            "Moslama rasmi, tenglamalar",
+            "213"
+          ],
+          [
+            "Venna diagrammasi",
+            "Ikki usul taqqoslanadi",
+            "214"
+          ],
+          [
+            "Klaster",
+            "Mishyak sxemasi",
+            "214"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sxema va tenglama nimani isbotlaydi? Doskada: jadval. Tipik xato: tenglamasiz natija yozish."
+    },
+    {
+      "title": "Jarayonlar vaqti",
+      "bullets": [
+        {
+          "text": "Zanger-Blek moslamasi 30-40 daqiqaga qo‘yib qo‘yiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marshda vodorod havoni 15-20 daqiqa siqib chiqaradi; nazorat sinovi va mineralizatni tomchilash — bir soatdan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "212"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruksiyada nitrat oksidlari to‘xtaguncha 10-15 daqiqa, so‘ng suv hammomida 20 daqiqa qizdiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Vaqt jadvali",
+        "header": [
+          "Jarayon",
+          "Vaqt"
+        ],
+        "rows": [
+          [
+            "Zanger-Blek: kutish",
+            "30-40 daqiqa"
+          ],
+          [
+            "Marsh: havoni siqib chiqarish",
+            "15-20 daqiqa"
+          ],
+          [
+            "Marsh: nazorat va mineralizat",
+            "1 soat (har biri)"
+          ],
+          [
+            "Destruksiya: suv hammomi",
+            "20 daqiqa"
+          ],
+          [
+            "Nefelometriya: aralashtirish",
+            "30 daqiqa"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi bosqich eng uzoq? Doskada: jadval. Tipik xato: vaqtlarni qisqartirish."
+    },
+    {
       "title": "Destruksiya: reagentlarni qo‘shish",
       "bullets": [
         {
@@ -526,6 +1166,182 @@
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: azot oksidlari kolba og‘zidan uchib chiqmasligi nima uchun muhim? (Kitobda «sababi?» deb savol qo‘yilgan, javob yo‘q.) Doskada: sxema. Tipik xato: sulfat kislotani birdan quyish."
     },
     {
+      "title": "Destruksiya: asosiy qiymatlar",
+      "bullets": [
+        {
+          "text": "20 g maydalangan jigar va buyrak alohida 300 ml li kolbalarga solinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "10 ml suv, 1 ml etil spirti, 10 ml konsentrlangan HNO3, keyin tomchilab 10 ml konsentrlangan H2SO4.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruktat sovigach, 200 ml o‘lchov kolbasida tozalangan suv bilan hajmga yetkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Destruksiya",
+        "items": [
+          {
+            "label": "Jigar / buyrak",
+            "value": "20",
+            "unit": "g"
+          },
+          {
+            "label": "Kolba",
+            "value": "300",
+            "unit": "ml"
+          },
+          {
+            "label": "Konsentrlangan HNO3",
+            "value": "10",
+            "unit": "ml"
+          },
+          {
+            "label": "Konsentrlangan H2SO4",
+            "value": "10",
+            "unit": "ml"
+          },
+          {
+            "label": "Suv hammomi",
+            "value": "20",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "O‘lchov kolbasi",
+            "value": "200",
+            "unit": "ml"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi qiymat kislotalarga tegishli? Doskada: qiymatlar. Tipik xato: kislotalarni birdan quyish."
+    },
+    {
+      "title": "Destruksiya ketma-ketligi (blits topshiriq)",
+      "bullets": [
+        {
+          "text": "Blits topshiriq: bioob’ektni sulfat va nitrat kislotalar bilan destruksiyalash ketma-ketligini to‘g‘ri yozing (8 bosqich).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "215"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bosqichlar: maydalash; 300 ml kolbaga solish; suv, spirt va HNO3; H2SO4 tomchilab; uy harorati.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "215"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyin: 20 daqiqa qaynoq suv hammomi; issiqligida filtrlash; 200 ml o‘lchov kolbasiga o‘tkazish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "215"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Destruksiya ketma-ketligi",
+        "items": [
+          {
+            "title": "Maydalash",
+            "text": "20 g ob’ekt maydalanib, 300 ml kolbaga solinadi"
+          },
+          {
+            "title": "HNO3, suv, spirt",
+            "text": "10 ml suv, 1 ml spirt, 10 ml konts. HNO3"
+          },
+          {
+            "title": "H2SO4",
+            "text": "Ehtiyotkorlik bilan tomchilab, aralashtirib, 10 ml"
+          },
+          {
+            "title": "Uy harorati",
+            "text": "Nitrat oksidlari ajralishi to‘xtaguncha"
+          },
+          {
+            "title": "Suv hammomi",
+            "text": "Qaynayotgan suv hammomida 20 daqiqa"
+          },
+          {
+            "title": "Filtrlash, 200 ml",
+            "text": "Issiqligida filtrlanadi, 200 ml kolbaga o‘tkaziladi"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: tartibni to‘g‘ri tuzing. Doskada: 6 qadam. Tipik xato: filtrlashni sovitgandan keyin bajarish."
+    },
+    {
+      "title": "Simob uchun tahlil yo‘li",
+      "bullets": [
+        {
+          "text": "Jigar va buyrak destruksiyalanadi; tayyor destruktat keyingi darsga kafedra laborantida qoldiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruktatda simob nefelometrik usulda mis(I) yodid osilmasi bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cho‘kma yodli eritma bilan yuviladi; simob miqdori kolorimetrik probirkalarda aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "213"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Simob tahlili",
+        "nodes": [
+          "20 g jigar / buyrak",
+          "Destruksiya (HNO3 + H2SO4)",
+          "Destruktat, 200 ml",
+          "CuI osilmasi, 30 daqiqa",
+          "Yodli eritma, kolorimetriya"
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega jigar va buyrak olinadi? Doskada: sxema. Tipik xato: destruktatni saqlamasdan tashlash."
+    },
+    {
       "title": "Destruksiya: qizdirish va filtrlash",
       "bullets": [
         {
@@ -565,7 +1381,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Qizdirish va filtrlash",
+        "items": [
+          {
+            "title": "Uy harorati",
+            "text": "Nitrat oksidlari ajralishi to‘xtaguncha 10-15 daqiqa"
+          },
+          {
+            "title": "Suv hammomi",
+            "text": "Qaynayotgan suv hammomida 20 daqiqa"
+          },
+          {
+            "title": "Qaynoq suv",
+            "text": "Reaksiya tez ketsa, 30-50 ml qaynoq suv"
+          },
+          {
+            "title": "Filtrlash",
+            "text": "Issiq suv bilan aralashtirib, ikki qavat filtrdan"
+          },
+          {
+            "title": "Hajmga yetkazish",
+            "text": "Sovigach 200 ml o‘lchov kolbasida suv bilan"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: destruktat nima uchun issiqligida filtrlanadi? (Kitobda 20-savol sifatida berilgan.) Doskada: hajmlar. Tipik xato: yuvindini tashlab yuborish."
     },
     {
@@ -642,7 +1483,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Nefelometrik usul: reagentlar",
+        "items": [
+          {
+            "label": "Natriy sulfit",
+            "value": "2,5",
+            "unit": "n, 5 ml"
+          },
+          {
+            "label": "Suv bilan hajm",
+            "value": "250",
+            "unit": "ml gacha"
+          },
+          {
+            "label": "CuI osilmasi",
+            "value": "10",
+            "unit": "ml"
+          },
+          {
+            "label": "Qo‘shimcha CuI",
+            "value": "30",
+            "unit": "ml"
+          },
+          {
+            "label": "Aralashtirish",
+            "value": "30",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Filtrat pH",
+            "value": "5-6"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: osilma rangi nimani ko‘rsatadi? (Simob borligini.) Doskada: 10 ml, qizil-binafsha — yana 30 ml. Tipik xato: osilmani rang o‘zgarishini kutmay ortiqcha qo‘shish."
     },
     {
@@ -685,7 +1560,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Cho‘kmani ishlash",
+        "items": [
+          {
+            "title": "30 daqiqa",
+            "text": "Vaqti-vaqti bilan aralashtirilib, so‘ng filtrlanadi"
+          },
+          {
+            "title": "Yuvish",
+            "text": "Sariq rang yo‘qolguncha, filtrat pH 5-6 gacha"
+          },
+          {
+            "title": "Yodli eritma",
+            "text": "3% KI dagi 0,35% yod eritmasi bilan yuviladi"
+          },
+          {
+            "title": "Hajm tanlash",
+            "text": "Yod eritmasi cho‘kma rangiga qarab 6-100 ml"
+          },
+          {
+            "title": "Kolorimetriya",
+            "text": "3 ta kolorimetrik probirkaga turli hajmda olinadi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun yod eritmasi hajmi cho‘kma rangiga qarab tanlanadi? Doskada: 6-100 ml diapazoni. Kitobda yuvish eritmasi «natriy sulfatning 1% eritmasi» deb yozilgan, ehtimol yozuv noaniqligi bor (sulfit bilan aralashgan); slaydga reagent nomi kiritilmadi, o‘qituvchi aniqlashtirsin. Kitob havola qilgan 1-jadval bu betlarda yo‘q."
     },
     {
@@ -809,6 +1709,135 @@
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: javoblar mashg‘ulot bayoniga tayanadi. Doskada: 4 savol. Kitobda 12 ta savol (mishyak), javoblari yo‘q."
     },
     {
+      "title": "Nazorat savollari: mishyak (2)",
+      "bullets": [
+        {
+          "text": "Mishyak kationi kasrli usulda qanday reja asosida aniqlanadi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "216"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mishyakni kasrli usulda aniqlashda qaysi reaksiya asosiy hisoblanadi va uning toksikologik ahamiyati nimada?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "216"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marsh usulining boshqa usullardan afzalliklari nimada?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "216"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marsh usulida qanday xatoliklarga yo‘l qo‘yilishi mumkin, sabablari va ularning oldini olish?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "216"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qaytaruvchi naychada hosil bo‘lgan mishyak oksidini surma oksididan qanday farqlash mumkin?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun bir nechta belgi kerak? Doskada: 5 savol. Tipik xato: javobni kitobdan izlash: javoblar berilmagan."
+    },
+    {
+      "title": "Nazorat savollari: mishyak (3)",
+      "bullets": [
+        {
+          "text": "Marsh moslamasida reaksiyaning tez borishi kimyoviy tekshiruvlarga qanday ta’sir qilishi mumkin?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mishyakni kasrli usulda aniqlashda ba’zi ionlarning salbiy ta’sirini qanday yo‘qotish mumkin?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mishyak kationini miqdorini aniqlashda qanday usullarni bilasiz?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: tez reaksiya nimaga olib keladi? Doskada: 3 savol. Tipik xato: miqdoriy usullarni kitobdan izlash."
+    },
+    {
+      "title": "Nazorat savollari: simob (2)",
+      "bullets": [
+        {
+          "text": "Bioob’ektlarni mineralizatsiyalashning qanday usullarini bilasiz?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruksiya usulida qo‘llaniladigan har bir reaktivning ahamiyatini tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob saqlovchi birikmalarning toksikologik ahamiyati qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Destruktat nima maqsadda filtrlanadi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "217"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: har reaktiv vazifasi. Doskada: 4 savol. Tipik xato: javoblarni kitobda bor deb izlash."
+    },
+    {
       "title": "Nazorat savollari: simob",
       "bullets": [
         {
@@ -890,12 +1919,12 @@
     {
       "question": "Zanger-Blek usulida 2 ml mineralizatga qancha 4n H2SO4 qo‘shiladi?",
       "options": [
-        "10 ml",
+        "100 ml",
         "1 ml",
-        "50 ml",
-        "100 ml"
+        "10 ml",
+        "50 ml"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "2 ml mineralizatga 10 ml 4n H2SO4, 5 ml suv, qalay(II) xlorid va rux qo‘shiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -908,8 +1937,8 @@
       "options": [
         "Sariq rangdan qo‘ng‘ir ranggacha bo‘yaladi",
         "Ko‘k bo‘ladi",
-        "Rangsizlanadi",
-        "O‘zgarmaydi"
+        "O‘zgarmaydi",
+        "Rangsizlanadi"
       ],
       "correct_index": 0,
       "explanation": "Mishyak miqdoriga qarab filtr qog‘oz sariq rangdan qo‘ng‘ir ranggacha bo‘yaladi.",
@@ -922,12 +1951,12 @@
     {
       "question": "Zanger-Blek moslamasi qancha vaqt qoldiriladi?",
       "options": [
-        "30-40 daqiqa",
         "1 daqiqa",
+        "24 soat",
         "5 soat",
-        "24 soat"
+        "30-40 daqiqa"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Filtr qog‘ozi joylanib, moslama 30-40 daqiqaga qoldiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -936,14 +1965,14 @@
       }
     },
     {
-      "question": "Marsh moslamasida havoni siqib chiqarish uchun vodorod qancha ajraladi?",
+      "question": "Marsh moslamasida vodorod havoni qancha vaqt davomida siqib chiqaradi?",
       "options": [
-        "15-20 daqiqa",
-        "1 daqiqa",
         "2 soat",
-        "Bir kecha"
+        "Bir kecha",
+        "1 daqiqa",
+        "15-20 daqiqa"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Vodorod havoni 15-20 daqiqa davomida siqib chiqaradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -955,9 +1984,9 @@
       "question": "Probirkadagi vodorod toza bo‘lsa, u qanday yonadi?",
       "options": [
         "Hech qanday ovozsiz",
-        "Portlash bilan",
+        "Yonmaydi",
         "Qizil alanga bilan",
-        "Yonmaydi"
+        "Portlash bilan"
       ],
       "correct_index": 0,
       "explanation": "Toza vodorod bilan to‘lgan probirka ovozsiz yonadi, aks holda shovqinli portlash sodir bo‘ladi.",
@@ -970,12 +1999,12 @@
     {
       "question": "Reaktivlar tozaligini ko‘rsatuvchi belgi nima?",
       "options": [
-        "Sovutilgan qismda qo‘ng‘ir-kulrang dog‘ hosil bo‘lmasligi",
         "Qora dog‘",
+        "Qizil cho‘kma",
         "Zangori alanga",
-        "Qizil cho‘kma"
+        "Sovutilgan qismda dog‘ hosil bo‘lmasligi"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Dog‘ning hosil bo‘lmasligi reaktivlarning sud-kimyo nuqtai nazaridan tozaligini ko‘rsatadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -986,12 +2015,12 @@
     {
       "question": "Arsin yonganda alanga qanday rangda va qanday hid seziladi?",
       "options": [
-        "Zangori; sarimsoq piyoz hidi",
-        "Sariq; sirka hidi",
         "Qizil; hidsiz",
+        "Sariq; sirka hidi",
+        "Zangori; sarimsoq piyoz hidi",
         "Oq; achchiq hid"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Arsin hosil bo‘lsa, zangori alanga paydo bo‘ladi va sarimsoq piyoz hidi seziladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1002,12 +2031,12 @@
     {
       "question": "Sovitilgan oq dog‘lar mikroskopda qanday shaklda ko‘rinadi?",
       "options": [
-        "Oktaedr va tetraedr",
-        "Ninasimon",
         "Dendrit",
+        "Ninasimon",
+        "Oktaedr va tetraedr",
         "Kub"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Oq dog‘lar mikroskopda oktaedr va tetraedr shaklidagi kristallar ko‘rinishida bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1018,12 +2047,12 @@
     {
       "question": "Destruksiya uchun qancha jigar va buyrak olinadi?",
       "options": [
-        "20 g dan",
         "5 g dan",
-        "100 g dan",
-        "500 g dan"
+        "500 g dan",
+        "20 g dan",
+        "100 g dan"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "20 g dan maydalangan jigar va buyrak alohida 300 ml li kolbalarga solinadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1034,13 +2063,173 @@
     {
       "question": "Destruksiyada sulfat kislota qo‘shilgach, kolba qancha vaqt qaynayotgan suv hammomida qizdiriladi?",
       "options": [
-        "20 daqiqa",
-        "1 daqiqa",
         "3 soat",
-        "Qizdirilmaydi"
+        "1 daqiqa",
+        "Qizdirilmaydi",
+        "20 daqiqa"
+      ],
+      "correct_index": 3,
+      "explanation": "Nitrat oksidlari ajralishi to‘xtagach, kolba qaynayotgan suv hammomida 20 daqiqa qizdiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "213"
+      }
+    },
+    {
+      "question": "Zanger-Blek moslamasining boshlang‘ich qismiga qaysi eritma shimdirilgan paxta joylanadi?",
+      "options": [
+        "Mis sulfat",
+        "Qo‘rg‘oshin atsetat",
+        "Kumush nitrat",
+        "Natriy sulfit"
+      ],
+      "correct_index": 1,
+      "explanation": "Boshlang‘ich qismga qo‘rg‘oshin atsetat eritmasi shimdirilgan paxta, so‘ngra simob(II) bromidli filtr qog‘ozi joylanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "212"
+      }
+    },
+    {
+      "question": "Marsh moslamasidagi reaksiya kolbasiga qancha mis bilan qoplangan rux solinadi?",
+      "options": [
+        "10 g",
+        "50 g",
+        "2 g",
+        "0,5 g"
       ],
       "correct_index": 0,
-      "explanation": "Nitrat oksidlari ajralishi to‘xtagach, kolba qaynayotgan suv hammomida 20 daqiqa qizdiriladi.",
+      "explanation": "Kolbaga 10 g «mis bilan qoplangan» rux bo‘laklari solinadi (Zanger-Blekda 2 g).",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "212"
+      }
+    },
+    {
+      "question": "Marsh usulida tomchilagich voronkaga qancha 4n H2SO4 quyiladi?",
+      "options": [
+        "50 ml",
+        "5 ml",
+        "200 ml",
+        "10 ml"
+      ],
+      "correct_index": 0,
+      "explanation": "Tomchilagich voronkaga 50 ml sulfat kislotaning 4n eritmasi quyilib, sekin-asta kolbaga tomiziladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "212"
+      }
+    },
+    {
+      "question": "Marshda 20 ml mineralizatga qancha SnCl2 eritmasi qo‘shiladi?",
+      "options": [
+        "0,1 ml",
+        "1 ml",
+        "5 ml",
+        "10 ml"
+      ],
+      "correct_index": 1,
+      "explanation": "20 ml mineralizatga 1 ml qalay(II) xloridning konsentrlangan H2SO4 dagi eritmasi qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "212"
+      }
+    },
+    {
+      "question": "Arsin ajralganda kumush nitratning ammiakli eritmasida nima kuzatiladi?",
+      "options": [
+        "Sariq cho‘kma",
+        "Qora loyqalanish",
+        "Oq cho‘kma",
+        "Ko‘k rang"
+      ],
+      "correct_index": 1,
+      "explanation": "Naycha uchi AgNO3 ning ammiakli eritmasiga tutilsa, arsin ajralgan holda eritmada qora loyqalanish paydo bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "212"
+      }
+    },
+    {
+      "question": "Yaltiroq kulrang dog‘ qizdirilib yuqorisi sovitilsa, nima hosil bo‘ladi?",
+      "options": [
+        "Qizil dog‘lar",
+        "Oq dog‘lar",
+        "Hech narsa",
+        "Qora dog‘lar"
+      ],
+      "correct_index": 1,
+      "explanation": "Yaltiroq dog‘ yo‘qolib, sovutilgan qismda oq dog‘lar hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "213"
+      }
+    },
+    {
+      "question": "Destruksiyada 20 g ob’ektga qancha konsentrlangan nitrat kislota qo‘shiladi?",
+      "options": [
+        "50 ml",
+        "10 ml",
+        "1 ml",
+        "100 ml"
+      ],
+      "correct_index": 1,
+      "explanation": "Ustiga 10 ml suv, 1 ml etil spirti va 10 ml konsentrlangan nitrat kislota qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "213"
+      }
+    },
+    {
+      "question": "Nefelometrik usulda simob uchun qaysi natriy tuzining 2,5n eritmasidan 5 ml qo‘shiladi?",
+      "options": [
+        "Natriy tiosulfat",
+        "Natriy azid",
+        "Natriy nitrit",
+        "Natriy sulfit"
+      ],
+      "correct_index": 3,
+      "explanation": "Destruktat hajmiga 5 ml 2,5n natriy sulfit eritmasi va 250 ml gacha tozalangan suv qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "213"
+      }
+    },
+    {
+      "question": "Mis(I) yodid osilmasi qizil-binafsha rangga bo‘yalsa, nima qilinadi?",
+      "options": [
+        "Osilma tashlab yuboriladi",
+        "Tahlil to‘xtatiladi",
+        "Yana 30 ml osilma qo‘shiladi",
+        "Isitiladi"
+      ],
+      "correct_index": 2,
+      "explanation": "Osilma qizil-binafsha bo‘lsa, yana 30 ml mis(I) yodid osilmasi qo‘shiladi; rang o‘zgarmasa, qo‘shilmaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "213"
+      }
+    },
+    {
+      "question": "Nefelometrik usulda cho‘kma yuvilganda filtrat qaysi pH gacha yuviladi?",
+      "options": [
+        "5-6",
+        "9-10",
+        "1-2",
+        "12-13"
+      ],
+      "correct_index": 0,
+      "explanation": "Filtrdagi cho‘kma sariq rang yo‘qolguncha, filtratning pH muhiti 5-6 bo‘lguncha yuviladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1085,7 +2274,7 @@
       "author": "Yuldashev Z.A., Nurmatova M.I.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 215-216, 218"
+      "pages": "b. 215-219"
     }
   ]
 }

@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-25-toks-antidepressant-diuretik",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Antidepressantlar (amitriptilin, imipramin), karbamazepin va diuretiklar; TDSIS usuli",
+  "ru": "Antidepressantlar (amitriptilin, imipramin), karbamazepin va diuretiklar; TDSIS usuli",
+  "en": "Antidepressantlar (amitriptilin, imipramin), karbamazepin va diuretiklar; TDSIS usuli"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q01",
+   "question_i18n": {
+    "uz": "Birinchi tritsiklik antidepressant imipramin qaysi yili sintez qilingan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1980",
+     "1928",
+     "1957",
+     "1991"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Imipramin 1957 yil sintez qilingan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "131"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q02",
+   "question_i18n": {
+    "uz": "Antidepressantlarning peshob orqali o‘zgarmagan holda chiqish ulushi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "60-70%",
+     "5-10%",
+     "90%",
+     "25-30%"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "60-70% metabolit sifatida, 5-10% o‘zgarmagan holda peshob orqali chiqariladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "131"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q03",
+   "question_i18n": {
+    "uz": "Amitriptilin YuQX da qanday Rf qiymatini beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,74-0,78",
+     "0,38-0,46",
+     "0,47",
+     "0,26"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Amitriptilin Rf=0,74-0,78, nortriptilin Rf=0,38-0,46."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q04",
+   "question_i18n": {
+    "uz": "Reyneke tuzi bilan amitriptilin qanday kristallar hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Shohsimon",
+     "Ninasimon",
+     "Prizmatik",
+     "Plastinka"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Amitriptilin ninasimon, nortriptilin shohsimon kristallar hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q05",
+   "question_i18n": {
+    "uz": "Amitriptilinni qondan ajratishda pH nechaga yetkaziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2",
+     "9-10",
+     "5-6",
+     "12-13"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "30% natriy ishqori bilan pH=9-10 gacha."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q06",
+   "question_i18n": {
+    "uz": "Diuretiklarni suvli aseton usulida ajratishda aseton:suv nisbati qanday?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5:3",
+     "1:1",
+     "3:5",
+     "10:1"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ob’ekt aseton - suv (5:3) aralashmasiga bo‘ktiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q07",
+   "question_i18n": {
+    "uz": "Furosemidning spirtdagi eritmasi UB da qaysi to‘lqin uzunligida maksimum beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "274 nm",
+     "264 nm",
+     "278 nm",
+     "272 nm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Furosemid 274 nm; atsetazolamid 264; etakrin kislota 278; gidroxlortiazid 272 nm."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q08",
+   "question_i18n": {
+    "uz": "Gidroxlortiazid kobalt xlorid bilan qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sariq cho‘kma",
+     "Qizil cho‘kma",
+     "Havo rangli cho‘kma",
+     "Rangsiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kobalt xlorid ta’sirida havo rangli, mis (II) sulfat ta’sirida yashil-havo rangli cho‘kma hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q09",
+   "question_i18n": {
+    "uz": "Ibuprofenning maksimal sutkali dozasi kitobda qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "3000 mg",
+     "1250 mg",
+     "200 mg",
+     "2400 mg"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ibuprofen - 2400 mg (naproksen 1250, indometatsin 200, ketoprofen 3000 mg)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q10",
+   "question_i18n": {
+    "uz": "TDSIS usulida emitter kuchlanishi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "405 V",
+     "505 V",
+     "12 V",
+     "50 V"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Emitter kuchlanishi 405 V (kompressor 12 V, havo oqimi 50 l/soat)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "141"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q11",
+   "question_i18n": {
+    "uz": "Uchinchi avlod antidepressantlar qaysi guruhga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tritsiklik antidepressantlar",
+     "Geterotsiklik antidepressantlar",
+     "Qayta tutib qoluvchi selektiv ingibitorlar",
+     "Osmotik diuretiklar"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Uchinchi avlod - qayta tutib qoluvchi selektiv ingibitorlar (fluoksetin)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "131"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q12",
+   "question_i18n": {
+    "uz": "Stimulyator antidepressantlar qaysi holatda qo‘llaniladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Depressiv qo‘zg‘alishda",
+     "Faqat uyqusizlikda",
+     "Har ikkala holatda",
+     "Apatik holatlarda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Stimulyator antidepressantlar apatik holatlarda ishlatiladi (imipramin, nortriptilin, fluoksetin)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "131"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q13",
+   "question_i18n": {
+    "uz": "Fluoksetinning suyuqlanish harorati kitobda qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "198-200 °C",
+     "114-116 °C",
+     "75-77 °C",
+     "157,5-158,7 °C"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Fluoksetin suyuqlanish harorati 157,5-158,7 °C."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "133"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q14",
+   "question_i18n": {
+    "uz": "TOXI-TUBES-A tyubigidagi emulsiya qanday tezlikda sentrifugalanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "500 ayl/daq",
+     "3000 ayl/daq",
+     "1500 ayl/daq",
+     "10000 ayl/daq"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Tyubik 5 daqiqa chayqatilib, emulsiya 3000 ayl/daq sentrifugalanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "133"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q15",
+   "question_i18n": {
+    "uz": "Etakrin kislotaning spirtdagi eritmasi qaysi to‘lqin uzunligida maksimum nur yutadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "274 nm",
+     "272 nm",
+     "278 nm",
+     "264 nm"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "UB-spektrofotometriyada etakrin kislota (spirtda) 278 nm da maksimum beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q16",
+   "question_i18n": {
+    "uz": "Ketoprofenning maksimal sutkali dozasi kitobda qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "150 mg",
+     "1250 mg",
+     "30 mg",
+     "3000 mg"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Maksimal sutkali dozalar orasida ketoprofen - 3000 mg."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q17",
+   "question_i18n": {
+    "uz": "Ibuprofenning suyuqlanish harorati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "75-77 °C",
+     "93-96 °C",
+     "155-162 °C",
+     "198-200 °C"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ibuprofen oq kristall kukun, suyuqlanish harorati 75-77 °C."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "138"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q18",
+   "question_i18n": {
+    "uz": "Indometatsin suyuqlanish haroratining kengligi (155-162 °C) nimani ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ifloslanishni",
+     "Polimorfizm xususiyatini",
+     "Gidrolizni",
+     "Oksidlanishni"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra bu tafovut indometatsinda polimorfizm borligini ko‘rsatadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "139"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q19",
+   "question_i18n": {
+    "uz": "Glibenklamid biologik ob’ektdan qaysi erituvchi bilan ekstraksiyalanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Benzol",
+     "n-Geptan",
+     "Xloroform",
+     "Etilatsetat"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Glibenklamid xloroform, glikvidon benzol, glipizid n-geptan bilan ekstraksiyalanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "140"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-25-toks-antidepressant-diuretik-q20",
+   "question_i18n": {
+    "uz": "SMH YuSSX tahlilida ushlanish vaqti eng katta modda qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Glipizid (8,45 daq)",
+     "Gliklazid (9,97 daq)",
+     "Glibenklamid (11,73 daq)",
+     "Glikvidon (14,58 daq)"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Glikvidon uchun ushlanish vaqti 14,58 daqiqa - eng uzoq."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "140"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

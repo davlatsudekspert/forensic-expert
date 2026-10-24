@@ -23,7 +23,7 @@
           "uncertain": false
         },
         {
-          "text": "Maqsad: talabalar spirtlarning toksikologik va narkologik ahamiyati, dori turlari haqida ma’lumotga ega bo‘lishi va distillyatlardan tahlil qilishni o‘zlashtirishi zarur.",
+          "text": "Maqsad: talabalar spirtlarning toksikologik va narkologik ahamiyati, dori turlarini bilishi va distillyatlardan tahlil qilishni o‘zlashtirishi zarur.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -109,8 +109,99 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Modda",
+          "Ajratish usuli"
+        ],
+        "rows": [
+          [
+            "Metil spirti",
+            "Suv bug‘i; 32% gacha yo‘qotiladi"
+          ],
+          [
+            "Etil spirti",
+            "Suv bug‘i bilan haydash"
+          ],
+          [
+            "Amil spirti",
+            "Suv bug‘i + efir ekstraksiyasi"
+          ],
+          [
+            "Etilenglikol",
+            "Lapkina-Nazarenko usuli (benzol)"
+          ]
+        ],
+        "caption": "Ajratish (40-45-betlar)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: spirtni tahlil qilishda nega tezlik muhim? (Etil spirti jigarda tez oksidlanadi — toks 41.) Doskada: 4 spirt va ajratish usuli. Tipik xato: etilenglikolni ikkinchi distillyatdan izlash."
+    },
+    {
+      "title": "Metil spirti: qo‘llanilishi va xossalari",
+      "bullets": [
+        {
+          "text": "Metil spirti kimyo sanoatida keng qo‘llanadi: asosan formaldegid sintezi uchun xom ashyo, lak va nitrobo‘yoqlar erituvchisi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "40"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Toza metil spirti harakatchan, rangsiz, tiniq suyuqlik; suv va organik erituvchilar bilan yaxshi aralashadi, hidi etil spirtini eslatadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "40"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metil spirti etil spirti o‘rnida ishlatilishi oqibatida zaharlanish sodir bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "40"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Metil spirti CH3OH",
+        "children": [
+          {
+            "label": "Xom ashyo",
+            "items": [
+              "Formaldegid sintezi"
+            ]
+          },
+          {
+            "label": "Erituvchi",
+            "items": [
+              "Lak va nitrobo‘yoqlar"
+            ]
+          },
+          {
+            "label": "Boshqa sohalar",
+            "items": [
+              "Dorishunoslik",
+              "Qishloq xo‘jaligi"
+            ]
+          },
+          {
+            "label": "Xossalari",
+            "items": [
+              "Rangsiz, tiniq suyuqlik",
+              "Hidi etil spirtiga o‘xshash"
+            ]
+          }
+        ],
+        "caption": "Metil spirti (40-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega hid bo‘yicha metil va etil spirtini ajratib bo‘lmaydi? Doskada: daraxt. Qaynash harorati kitobda 63 °C deb berilgan, ilmiy muharrir qarori bo‘yicha slaydga yozilmadi. Tipik xato: metil spirtini ichimlik spirti deb hisoblash."
     },
     {
       "title": "Metil spirti: ahamiyat",
@@ -152,7 +243,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Zaharli doza",
+            "value": "7-8",
+            "unit": "g"
+          },
+          {
+            "label": "LD50",
+            "value": "30-100",
+            "unit": "g"
+          },
+          {
+            "label": "Kumulyatsiya",
+            "value": "bor"
+          },
+          {
+            "label": "Murda peshobida",
+            "value": "ko‘p HCOOH"
+          }
+        ],
+        "caption": "Metil spirti (40-bet)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega metil spirti ko‘rishni buzadi? (Kitob mexanizmni bu joyda tushuntirmaydi.) Doskada: 7-8 g, 30-100 g. Eslatma: kitobdagi qaynash harorati va foizlar o‘z o‘rnida (toks 40) faqat o‘qish uchun; slaydga ko‘chirilmadi. Tipik xato: metil va etil spirtini hid bilan aniq farqlash — kitob hidlari o‘xshashligini aytadi."
     },
     {
@@ -246,10 +360,57 @@
       "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: metilsalitsilat hidi. Muhokama: bu reaksiyani etil spirti ham beradi (toks 41: hidlar o‘xshash) — metil spirtini etil spirtidan qanday farqlaymiz? Kitob talabi: tenglamalarni yozing, sud-kimyoviy ahamiyatini izohlang. Xavfsizlik: konsentrlangan H2SO4 — qo‘lqop, ko‘z himoyasi. Tipik xato: etil spirti bor distillyatda bu reaksiyani metil spirti uchun xos deb yozish."
     },
     {
+      "title": "Metilsalitsilat reaksiyasi mohiyati",
+      "bullets": [
+        {
+          "text": "Metil spirti konsentrlangan H2SO4 ishtirokida salitsil kislotasi bilan o‘ziga xos hidli metilsalitsilat efirini hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "40"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Distillyatda etil spirti bo‘lmasa, hosil bo‘lgan hid metil spirti uchun xarakterli.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu reaksiyani etil spirti ham beradi, hidlar o‘xshash — shu sababli reaksiya cheklangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Metil spirti CH3OH",
+          "Salitsil kislotasi"
+        ],
+        "products": [
+          "Metilsalitsilat efiri",
+          "H2O"
+        ],
+        "caption": "Metilsalitsilat (40-41-betlar)",
+        "conditions": "Konsentrlangan H2SO4, qizdirish",
+        "observation": "O‘ziga xos yoqimli hid"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega etil spirti halal beradi? Doskada: CH3OH + HO-SO3H → CH3-O-SO3H + H2O, so‘ng salitsil kislota bilan efir. Tipik xato: hidni yakuniy dalil deb hisoblash."
+    },
+    {
       "title": "Metil spirti: oksidlash va formaldegidni aniqlash",
       "bullets": [
         {
-          "text": "5 ml distillyatga 2-3 ml 10% sulfat kislota qo‘shilib, sovuq suv bilan sovitiladi; 1% KMnO4 aralashma barqaror och binafsha rang bo‘lguncha tomchilab qo‘shiladi.",
+          "text": "5 ml distillyatga 2-3 ml 10% sulfat kislota qo‘shilib sovitiladi; 1% KMnO4 barqaror och binafsha rang bo‘lguncha tomchilab qo‘shiladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -276,8 +437,81 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Tayyorlash",
+            "text": "5 ml distillyat + 2-3 ml 10% H2SO4, sovitiladi"
+          },
+          {
+            "title": "Oksidlash",
+            "text": "1% KMnO4 tomchilab: barqaror och binafsha rang"
+          },
+          {
+            "title": "Kutish",
+            "text": "15-20 daqiqa salqin joyda"
+          },
+          {
+            "title": "Ortiqchasi",
+            "text": "15% oksalat kislotasi bilan yo‘qotiladi"
+          },
+          {
+            "title": "Aniqlash",
+            "text": "Filtratga kodein va fuksinsulfit reaksiyalari"
+          }
+        ],
+        "caption": "Oksidlash tartibi (185-bet)"
+      },
       "teacher_notes": "Vaqt: 15 daqiqa. Kutilayotgan natija: kodein+H2SO4 da ko‘k-binafsha, fuksinsulfitda zangori/binafsha rang (toks 176). Muhokama: distillyatda formaldegid bo‘lsa nima qilinadi? (Kitob: avval uni oksidlab yo‘qotiladi.) Kitob talabi: tenglamalarni yozing. Tipik xato: ortiqcha permanganatni oksalat bilan yo‘qotmay formaldegid reaksiyasini qilish."
+    },
+    {
+      "title": "Metil spirtini oksidlash tenglamasi",
+      "bullets": [
+        {
+          "text": "Metil spirti kaliy permanganat va sulfat kislota bilan oksidlanib formaldegid hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ortiqcha permanganat oksalat kislotasi bilan yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hosil bo‘lgan formaldegid fuksinsulfit kislotasi bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "CH3OH",
+          "KMnO4",
+          "H2SO4"
+        ],
+        "products": [
+          "Formaldegid HCHO",
+          "MnSO4, K2SO4"
+        ],
+        "caption": "Oksidlash (41-bet)",
+        "conditions": "Sovuq muhit, 15-20 daqiqa",
+        "observation": "Keyin formaldegid reaksiyalari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ortiqcha permanganatni yo‘qotish kerak? Doskada: 5CH3OH + 2KMnO4 + 3H2SO4 → 5HCHO + K2SO4 + 2MnSO4 + 8H2O. Tipik xato: permanganat ortiqchasida formaldegid ham oksidlanishi (kitobda bevosita yozilmagan: 185-bet «distillyatda formaldegid bo‘lsa avval uni oksidlab yo‘qotiladi»)."
     },
     {
       "title": "Etil spirti: ahamiyat",
@@ -321,6 +555,115 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: spirtni tahlil qilish nega tez bajarilishi kerak? Doskada: ’peshob > qon’. Eslatma: kitobda qondagi spirt konsentratsiyasi bo‘yicha jadval (toks 41) berilgan, lekin u kitobdagi xato (birlik va qiymatlar fiziologik jihatdan mos emas) — slaydga kiritilmadi. Tipik xato: kitobdagi qon konsentratsiyalari jadvalidan o‘limni baholash."
+    },
+    {
+      "title": "Etil spirti: xossalari va metabolizmi",
+      "bullets": [
+        {
+          "text": "Toza etil spirti harakatchan, rangsiz, uchuvchan, o‘tkir mazali suyuqlik; suv va efir bilan yaxshi aralashadi, 77-78,5 °C da qaynaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zangori alanga bilan yonadi, suv bug‘i bilan haydaladi, oson oksidlanib sirka aldegidi hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organizmda jigarda tez oksidlanadi: 90-99% CO2 gacha, qolgani nafas va buyrak orqali chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Etil spirti CH3CH2OH",
+          "Sirka aldegidi",
+          "Sirka kislotasi",
+          "CO2 + H2O (90-99%)"
+        ],
+        "caption": "Oksidlanish (41-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega spirt tahlilini tezlik bilan olib borish kerak? (jigarda tez oksidlanadi — 41-bet.) Doskada: oksidlanish zanjiri. Tipik xato: spirt organizmda uzoq saqlanadi deb hisoblash."
+    },
+    {
+      "title": "Etil spirti: zaharlanish belgilari",
+      "bullets": [
+        {
+          "text": "Etil spirti ichilganda avval asab qo‘zg‘aladi, so‘ng tez narkoz holati bilan almashadi; muntazam iste’mol alkogolizmga olib keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichimlikka xloralgidrat, kokain, opiy alkaloidlari, barbituratlar qo‘shilishi ko‘p o‘limlarga sababchi bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mastlikda qusish nafas yo‘lini berkitib o‘limga olib kelishi mumkin; murdada ichki a’zolardan spirt hidi keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Etil spirti zaharlanishi",
+        "children": [
+          {
+            "label": "Dastlabki ta’sir",
+            "items": [
+              "Asab qo‘zg‘alishi",
+              "So‘ng narkoz holati"
+            ]
+          },
+          {
+            "label": "Surunkali",
+            "items": [
+              "Alkogolizm kasalligi"
+            ]
+          },
+          {
+            "label": "Xavfli qo‘shimchalar",
+            "items": [
+              "Xloralgidrat, kokain",
+              "Opiy alkaloidlari, barbituratlar"
+            ]
+          },
+          {
+            "label": "Murdada",
+            "items": [
+              "Ichki a’zolardan spirt hidi"
+            ]
+          }
+        ],
+        "caption": "Zaharlanish (41-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ichimlikdagi qo‘shimchalarni topish muhim? Doskada: daraxt. Qondagi spirt darajalari (promille) kitobda noaniq berilgan — slaydga kiritilmadi. Tipik xato: faqat spirt topilganda boshqa zaharlarni qidirmaslik."
     },
     {
       "title": "Etil spirti: yodoform reaksiyasi",
@@ -368,6 +711,53 @@
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: yodoform hidi/sariq cho‘kma; mikroskopda yulduzsimon kristallar. Muhokama: reaksiya manfiy ahamiyatga ega (toks 42; aseton ham beradi — toks 33). Kitob talabi: kristallar shaklini chizing, tenglamani yozing. Tipik xato: yodoform natijasini etil spirtiga xos deb yakuniy xulosa qilish."
     },
     {
+      "title": "Yodoform reaksiyasi: kimyoviy mohiyati",
+      "bullets": [
+        {
+          "text": "Etil spirti ishqoriy muhitda yod bilan sirka aldegidiga oksidlanadi, u esa yodoformga aylanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "42"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yodoform — sariq loyqa, o‘ziga xos hidli; mikroskopda olti qirrali sariq yulduzchasimon kristallar ko‘rinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "42"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya manfiy ahamiyatga ega, chunki organizmda shunga mos guruhli moddalar ko‘p uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "42"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "CH3CH2OH",
+          "I2 + NaOH (NaOI)"
+        ],
+        "products": [
+          "Yodoform CHI3",
+          "Natriy formiat"
+        ],
+        "caption": "Yodoform reaksiyasi (42-bet)",
+        "conditions": "Ishqoriy muhit, qizdirish",
+        "observation": "Sariq loyqa, olti qirrali kristallar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bu reaksiya aseton va sut kislotada ham chiqadi? Doskada: I2 + 2NaOH → NaI + NaOI + H2O; CH3CH2OH + NaOI → CH3CHO + NaI + H2O; CH3CHO + 3NaOI → CI3CHO + 3NaOH; CI3CHO + NaOH → CHI3 + HCOONa. Tipik xato: yodoform topilsa etil spirti isbotlandi deb hisoblash."
+    },
+    {
       "title": "Etil spirti: izonitril va sirka aldegidi",
       "bullets": [
         {
@@ -398,7 +788,21 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Etil spirti",
+          "K2Cr2O7",
+          "H2SO4"
+        ],
+        "products": [
+          "Sirka aldegidi",
+          "Cr2(SO4)3"
+        ],
+        "caption": "Bixromat bilan oksidlash (42, 186-betlar)",
+        "conditions": "Oksidlanish",
+        "observation": "Sirka aldegidi hidi; yashil rang"
+      },
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: badbo‘y hid; sirka aldegidi hidi. Xavfsizlik: izonitril hidi uchun so‘rish shkafi (toks 182 dagi talabga mos); kaliy bixromat bilan ehtiyot bo‘ling (kitobda ko‘rsatma yo‘q). Kitob talabi: tenglamalarni yozing. Tipik xato: izonitril reaksiyasini yodoformsiz bajarish."
     },
     {
@@ -414,7 +818,7 @@
           "uncertain": false
         },
         {
-          "text": "Havo pufakchalari hosil bo‘lguncha suv hammomida qizdiriladi; etil spirti bo‘lsa sirka etil efiri hidi seziladi; 20-25 ml sovuq suvga ag‘darilsa hid yaqqol seziladi.",
+          "text": "Havo pufakchalari hosil bo‘lguncha suv hammomida qizdiriladi; etil spirti bo‘lsa sirka etil efiri hidi keladi; 20-25 ml sovuq suvga ag‘darilsa hid yaqqol.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -434,6 +838,128 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: sirka etil efiri hidi. Muhokama: qaysi miqdoriy usul qon uchun ishlatiladi? (GSX — 53-mashg‘ulotda.) Kitob talabi: tenglamani yozing. Tipik xato: ag‘darishni sovuq suvga emas, issiq suvga qilish."
+    },
+    {
+      "title": "Etil spirti miqdorini aniqlash usullari",
+      "bullets": [
+        {
+          "text": "Etil spirtining miqdori to‘rt usulda aniqlanadi: etilnitrit usuli, Vidmark-Shaymosh usuli, Karantaev (FEK) usuli va GSX.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etil spirti tez oksidlanadi, shu sababli tahlilni tezlik bilan olib borish kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tahlil uchun me’da, jigar, buyrak va miya olinishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Etil spirti miqdori",
+        "children": [
+          {
+            "label": "Etilnitrit usuli"
+          },
+          {
+            "label": "Vidmark-Shaymosh"
+          },
+          {
+            "label": "Karantaev (FEK)",
+            "items": [
+              "Fotokolorimetrik usul"
+            ]
+          },
+          {
+            "label": "GSX",
+            "items": [
+              "Gaz-suyuqlik xromatografiya"
+            ]
+          }
+        ],
+        "caption": "Miqdoriy usullar (43-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi usul eng aniq va tez? (kitobda taqqoslanmagan — o‘qituvchi muhokamasi.) Doskada: daraxt. Tipik xato: faqat sifat reaksiyasi bilan xulosa yozish."
+    },
+    {
+      "title": "Etil spirti: efir hosil qilish reaksiyalari",
+      "bullets": [
+        {
+          "text": "Distillyatga konsentrlangan H2SO4 va CH3COONa kristali qo‘shib qizdirilsa, sirka etil efirining hidi keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "42"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Benzoilxlorid ishqoriy muhitda etil spirti bilan o‘ziga xos hidli efir hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "42"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etil spirtining miqdori etilnitrit, Vidmark-Shaymosh, Karantaev (FEK) va GSX usullarida aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Reaktiv",
+          "Hosil bo‘ladi",
+          "Belgi"
+        ],
+        "rows": [
+          [
+            "CH3COONa + H2SO4",
+            "Sirka etil efiri",
+            "Xarakterli hid"
+          ],
+          [
+            "Benzoilxlorid + ishqor",
+            "Benzoy-etil efiri",
+            "O‘ziga xos hid"
+          ],
+          [
+            "I2 + NaOH",
+            "Yodoform",
+            "Sariq loyqa, kristall"
+          ],
+          [
+            "Anilin (yodoformdan)",
+            "Izonitril",
+            "Badbo‘y hid"
+          ]
+        ],
+        "caption": "Etil spirti (42-bet)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: efir hosil qilish reaksiyalarining sezgirligi qanday? (sirka-etil efiri uchun 5 mg — sirka kislotasi, 178-bet.) Doskada: jadval. Tipik xato: efirning hidini yaxshi eslab qolmaslik."
     },
     {
       "title": "Amil spirti: ahamiyat va ajratish",
@@ -479,6 +1005,117 @@
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: kitob ’sababini tushuntiring‘ deydi — nega efir bilan ekstraksiya kerak? (Reaksiya sezgirligini oshirish — toks 43.) Doskada: 4 tovoqcha -> 4 reaksiya. Tipik xato: efirni qizdirib uchirish — kitobda xona haroratida."
     },
     {
+      "title": "Amil spirti: zaharlanish kechishi",
+      "bullets": [
+        {
+          "text": "Amil spirti 20-30 daqiqada ta’sir ko‘rsatib, tez mastlik holatini keltiradi, lekin to‘satdan hushdan ketish bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sianoz (terining ko‘karishi) yuz beradi; 10-15 daqiqadan so‘ng tirishib o‘lim sodir bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Amil spirti organizmda juda sekin so‘riladi va so‘rilmagan qismi oshqozonda turadi — bu sud-kimyo tahlili uchun zarur.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "20-30 daqiqada tez mastlik",
+          "To‘satdan hushdan ketish, sianoz",
+          "10-15 daqiqadan so‘ng tirishish",
+          "O‘lim; murdada asfiksiya, spirt hidi"
+        ],
+        "caption": "Zaharlanish kechishi (43-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega oshqozon tarkibi muhim? Doskada: oqim sxemasi. Tipik xato: amil spirtini faqat samogon tarkibidagi aralashma deb hisoblash."
+    },
+    {
+      "title": "Amil spirti: xossalari va qo‘llanilishi",
+      "bullets": [
+        {
+          "text": "Amil va izoamil spirti sarg‘ish, quyuq suyuqlik, o‘tkir bo‘g‘uvchi hidli; suvda yomon, organik erituvchilarda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Erimagan qismi suv ustida qalqib yuradi; ko‘p bo‘lsa distillyat yuzida moysimon suyuqlik bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Lak va bo‘yoq sanoatida erituvchi, amilnitrit, valerian kislotasi preparatlari va tutunsiz porox tayyorlashda ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Amil spirti C5H11OH",
+        "children": [
+          {
+            "label": "Xossalari",
+            "items": [
+              "Sarg‘ish, quyuq suyuqlik",
+              "O‘tkir bo‘g‘uvchi hid"
+            ]
+          },
+          {
+            "label": "Eruvchanligi",
+            "items": [
+              "Suvda yomon",
+              "Organik erituvchida yaxshi"
+            ]
+          },
+          {
+            "label": "Qo‘llanilishi",
+            "items": [
+              "Lak, bo‘yoq erituvchisi",
+              "Amilnitrit, valerian kislotasi",
+              "Tutunsiz porox"
+            ]
+          },
+          {
+            "label": "Uchrashi",
+            "items": [
+              "Samogon (qo‘lbola aroq)"
+            ]
+          }
+        ],
+        "caption": "Amil spirti (43-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: distillyat yuzidagi moysimon qavat nimadan dalolat beradi? Doskada: daraxt. Tipik xato: amil spirtini suvda yaxshi eriydi deb hisoblash."
+    },
+    {
       "title": "Amil spirti: salitsil aldegidi reaksiyasi",
       "bullets": [
         {
@@ -509,14 +1146,23 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Qoldiq + salitsil aldegidi + H2SO4",
+          "Sovitiladi",
+          "3 daqiqa qaynoq suv hammomi",
+          "Binafsha-qizil rang"
+        ],
+        "caption": "Salitsil aldegidi (186-bet)"
+      },
       "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: binafsha-qizil rang. Muhokama: reaksiya sezgir, lekin manfiy sud-kimyoviy ahamiyatga ega (toks 43) — bu nimani anglatadi? Xavfsizlik: konsentrlangan H2SO4. Tipik xato: rangni 3 daqiqadan oldin baholash."
     },
     {
       "title": "Amil spirti: amilatsetat va oksidlash",
       "bullets": [
         {
-          "text": "Amilatsetat: qoldiqqa 2 tomchi konsentrlangan H2SO4 va quritilgan natriy atsetat kristallari qo‘shilib, asta-sekin qizdiriladi; nok essensiyasini eslatuvchi hid seziladi.",
+          "text": "Amilatsetat: qoldiqqa 2 tomchi konsentrlangan H2SO4 va quritilgan natriy atsetat qo‘shilib, asta-sekin qizdiriladi; nok essensiyasini eslatuvchi hid seziladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -525,7 +1171,7 @@
           "uncertain": false
         },
         {
-          "text": "Oksidlash: qoldiq efirda eritilib, efir uchirilgach, bir necha tomchi 1% KMnO4 va teng miqdorda konsentrlangan H2SO4 tomiziladi; 1-2 daqiqa suv hammomida isitiladi.",
+          "text": "Oksidlash: qoldiq efirda eritilib, efir uchirilgach, bir necha tomchi 1% KMnO4 va teng miqdorda konsentrlangan H2SO4 tomiziladi; 1-2 daqiqa suv hammomida.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -543,7 +1189,15 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Amil spirti",
+          "Izovalerian aldegidi: hushbo‘y hid",
+          "Izovalerian kislotasi: sasigan pishloq"
+        ],
+        "caption": "Oksidlash (187-bet)"
+      },
       "teacher_notes": "Vaqt: 12 daqiqa. Kutilayotgan natija: nok hidi; keyin aldegid va kislota hidlari. Muhokama: nega hidlar ketma-ket o‘zgaradi? (Aldegid -> kislota oksidlanishi.) Kitob talabi: tenglamalar. Tipik xato: oksidlashdan oldin efirni uchirmay boshlash."
     },
     {
@@ -631,8 +1285,198 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Antifriz: etilenglikol",
+            "value": "55",
+            "unit": "%"
+          },
+          {
+            "label": "Zaharli doza",
+            "value": "50",
+            "unit": "ml"
+          },
+          {
+            "label": "O‘limga olib keladi",
+            "value": "100-300",
+            "unit": "ml"
+          },
+          {
+            "label": "O‘zgarmay chiqadi",
+            "value": "~3",
+            "unit": "%"
+          }
+        ],
+        "caption": "Etilenglikol (44-bet)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega etilenglikol bilan zaharlanishda buyrak jabrlanadi? (Kalsiy oksalat.) Doskada: 50 ml / 100-300 ml. Tipik xato: etilenglikolni hidli modda deb o‘ylash — toza etilenglikol hidsiz (toks 44)."
+    },
+    {
+      "title": "Etilenglikol: metabolizm va buyrak",
+      "bullets": [
+        {
+          "text": "Etilenglikol ichak orqali tez so‘riladi va fermentlar ta’sirida tez metabolitlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hosil bo‘lgan glikol kislotasi organizmda to‘planadi; oksalat kislotasigacha oksidlanib kalsiy bilan birikadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kalsiy oksalat buyrak naychalari va miya tomirlarida yig‘ilib, bu a’zolar faoliyatiga xavf soladi; 3% ga yaqin qismi o‘zgarmay chiqadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Etilenglikol (ichakdan so‘riladi)",
+          "Glikol kislotasi (to‘planadi)",
+          "Oksalat kislotasi",
+          "Kalsiy oksalat: buyrak, miya tomirlari"
+        ],
+        "caption": "Metabolizm (44-bet)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega buyrak yetishmovchiligi rivojlanadi? Doskada: oqim. Tipik xato: etilenglikolning o‘zini asosiy zaharli birikma deb hisoblash — kitobda metabolitlar xavfi ta’kidlanadi."
+    },
+    {
+      "title": "Etilenglikol zaharlanishi: bosqichlar",
+      "bullets": [
+        {
+          "text": "Zaharlanganda odam avval kayf qilayotgandek sezadi, bel va qorni og‘riydi, so‘ngra hushdan ketadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘tkir zaharlanishda 12-24 soat taxikardiya, taxipnoe, o‘pka shishi; 24-72 soat davomida buyrak yetishmovchiligi va metabolik atsidoz rivojlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bemor 13-14 kundan keyin anuriya tufayli o‘lishi mumkin; murdada miyaga qon quyilishi, buyrak yo‘llari kalsiy oksalat bilan to‘lgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Davr",
+          "Holat"
+        ],
+        "rows": [
+          [
+            "Dastlab",
+            "Kayf, bel va qorin og‘rig‘i"
+          ],
+          [
+            "12-24 soat",
+            "Taxikardiya, taxipnoe, o‘pka shishi"
+          ],
+          [
+            "24-72 soat",
+            "Buyrak yetishmovchiligi, atsidoz"
+          ],
+          [
+            "13-14 kun",
+            "Anuriya tufayli o‘lim"
+          ]
+        ],
+        "caption": "Zaharlanish kechishi (44-45-betlar)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega o‘lim kechikib sodir bo‘lishi mumkin? Doskada: vaqt jadvali. Tipik xato: faqat dastlabki mastlik belgilariga qarab xavfsiz deb hisoblash."
+    },
+    {
+      "title": "Etilenglikol: xossalari va qo‘llanilishi",
+      "bullets": [
+        {
+          "text": "Toza etilenglikol rangsiz, yog‘simon quyuq, shirin mazali, hidsiz, gigroskopik suyuqlik; 197,0 °C da qaynaydi, solishtirma og‘irligi 1,127.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Antifriz tarkibi 55% etilenglikol va 45% suvdan iborat bo‘lib, -40 °C da ham muzlamaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Texnikada moylovchi vosita, gidravlik suyuqliklar, siyoh, plastmassa va poliefir tolalar tayyorlashda ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "44"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qaynash harorati",
+            "value": "197,0",
+            "unit": "°C"
+          },
+          {
+            "label": "Solishtirma og‘irlik",
+            "value": "1,127"
+          },
+          {
+            "label": "Antifriz: etilenglikol",
+            "value": "55",
+            "unit": "%"
+          },
+          {
+            "label": "Antifriz: suv",
+            "value": "45",
+            "unit": "%"
+          },
+          {
+            "label": "Muzlamaydi",
+            "value": "-40",
+            "unit": "°C"
+          }
+        ],
+        "caption": "Etilenglikol (44-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega etilenglikolni suv bug‘i bilan ajratib bo‘lmaydi? Doskada: raqamlar. Tipik xato: texnik etilenglikolni (rangli) toza deb hisoblash."
     },
     {
       "title": "Etilenglikolni ajratish (Lapkina va Nazarenko)",
@@ -710,8 +1554,154 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Reaksiya",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Cu(OH)2 cho‘kmasi",
+            "Ko‘k eritma; glitserin halal beradi"
+          ],
+          [
+            "KIO4 + kislota",
+            "Formaldegid hosil bo‘ladi"
+          ],
+          [
+            "Konsentr. HNO3, so‘ng Ca tuzi",
+            "Oksalat, oq kalsiy oksalat"
+          ],
+          [
+            "GSX",
+            "Ushlanish parametrlari bo‘yicha"
+          ]
+        ],
+        "caption": "Chinlik reaksiyalari (46-47-betlar)"
+      },
       "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: ko‘k eritma; formaldegid reaksiyasi (fuksinsulfit); oq cho‘kma. Muhokama: glitserin halal bersa, uni qanday chetlashtiramiz? (Kitob: bu sharoitda glitserin haydalmaydi.) Eslatma: etilenglikol bajarish tartibi amaliy qismda (185-187) yo‘q — ma’ruza bo‘limidan olindi. Tipik xato: formaldegid reaksiyasini etilenglikol uchun yakuniy deb hisoblash."
+    },
+    {
+      "title": "Kalsiy oksalat reaksiyasi",
+      "bullets": [
+        {
+          "text": "Ajralmaga konsentrlangan nitrat kislota 2-3 marta qo‘shib qizdirilsa, etilenglikol oksalat kislotasigacha oksidlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "46"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oksalat kislotaga ammoniy gidroksid va kalsiy tuzlari qo‘shilsa, kalsiy oksalatning oq cho‘kmasi hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "46"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikroskopda konvert shaklidagi kristallar ko‘rinadi; ular mineral kislotalarda eriydi; sezgirligi 0,1 g etilenglikol.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Etilenglikol",
+          "Konsentr. HNO3 (2-3 marta)",
+          "NH4OH + CaCl2"
+        ],
+        "products": [
+          "Kalsiy oksalat"
+        ],
+        "caption": "Kalsiy oksalat (46-47-betlar)",
+        "conditions": "Qizdirish, oksidlanish",
+        "observation": "Oq cho‘kma; konvert shaklidagi kristallar"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kristallar mineral kislotada eriydi? Doskada: oksalat kislota + CaCl2 → CaC2O4. Tipik xato: kristall shaklini kutmasdan (ba’zan 2-3 kundan keyin hosil bo‘ladi) xulosa chiqarish."
+    },
+    {
+      "title": "Spirtlar uchun asosiy reaksiyalar",
+      "bullets": [
+        {
+          "text": "Metil spirti: salitsil kislotasi bilan efir va permanganat bilan oksidlab formaldegidni aniqlash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "185"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etil spirti: yodoform, izonitril, sirka aldegidi, etilatsetat; amil spirti: salitsil aldegidi, amilatsetat, oksidlash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "186"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiyalar spirtlarning bir-biridan farqini ko‘rsatadi, lekin ayrimlari manfiy sud-kimyoviy ahamiyatga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "42"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Spirt",
+          "Asosiy reaksiya",
+          "Belgi"
+        ],
+        "rows": [
+          [
+            "Metil",
+            "Salitsil kislota + H2SO4",
+            "Metilsalitsilat hidi"
+          ],
+          [
+            "Metil",
+            "KMnO4 bilan oksidlash",
+            "Formaldegid hosil bo‘ladi"
+          ],
+          [
+            "Etil",
+            "Yodning ishqorli eritmasi",
+            "Yodoform, kristallar"
+          ],
+          [
+            "Etil",
+            "Sirka aldegidi (bixromat)",
+            "Hid, yashil rang"
+          ],
+          [
+            "Amil",
+            "Salitsil aldegidi + H2SO4",
+            "Binafsha-qizil rang"
+          ],
+          [
+            "Amil",
+            "KMnO4 + H2SO4",
+            "Valerian aldegidi, kislotasi hidi"
+          ]
+        ],
+        "caption": "Spirt reaksiyalari (185-187-betlar)"
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi reaksiya qaysi spirtga xos? Doskada: jadval. Tipik xato: metilsalitsilat hidini faqat metil spirtiga xos deb hisoblash (etil spirti ham beradi)."
     },
     {
       "title": "«Charxpalak»: reaksiyalar va spirtlar",
@@ -808,6 +1798,66 @@
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: talaba kitob ma’lumotini muhokama qiladi: kitob zaharlanganda peshobdagi konsentratsiya qondagidan ancha ko‘p bo‘lishini aytadi (toks 41) — keysdagi teskari holat (qonda ko‘p) uchun kitob izoh bermaydi, shu sababli muhokama savol sifatida qoladi (masalan, spirt yaqinda ichilgan va qonga tez o‘tgan: toks 41 ’qonga tez o‘tadi’). Tipik xato: xulosani kitobda bo‘lmagan izoh bilan yozish."
     },
     {
+      "title": "6-keys: muhokama yo‘li",
+      "bullets": [
+        {
+          "text": "Keys: spirtli ichimlik ichib avtohalokatga uchragan kishining 10 ml qon va 10 ml peshob namunalari keltirildi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "187"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Qon tarkibida peshobdan ko‘ra ko‘proq etil spirti aniqlandi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "187"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Zaharlanganda spirtning peshobdagi konsentratsiyasi qondagidan ancha ko‘p bo‘ladi; spirt qonga tez o‘tadi va jigarda tez oksidlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "41"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Ob’ekt",
+            "text": "10 ml qon va 10 ml peshob"
+          },
+          {
+            "title": "Ajratish",
+            "text": "Suv bug‘i bilan haydash (etil spirti)"
+          },
+          {
+            "title": "Aniqlash",
+            "text": "Yodoform, etilatsetat va boshqa reaksiyalar"
+          },
+          {
+            "title": "Miqdor",
+            "text": "Etilnitrit, Vidmark-Shaymosh yoki GSX"
+          },
+          {
+            "title": "Talqin",
+            "text": "Qon va peshobdagi konsentratsiyalarni solishtirish"
+          }
+        ],
+        "caption": "Keys yo‘li (41-43, 187-betlar)"
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kitobda keysga javob berilmagan. Muhokama: peshobdagi konsentratsiya odatda qondagidan ko‘p bo‘ladi (41-bet) — keysdagi teskari nisbat spirt tez ichilib, hali qondan peshobga o‘tmaganini bildirishi mumkin (kitobda yozilmagan: o‘qituvchi talqini). Tipik xato: tahlil natijasini ichish vaqtidan mustaqil talqin qilish.",
+      "diagram_note": "Keys qadamlari kitob materiallari asosida; talqin kitobda berilmagan."
+    },
+    {
       "title": "Nazorat savollari",
       "bullets": [
         {
@@ -890,9 +1940,9 @@
       "question": "Metil spirtini salitsil kislotasi bilan aniqlashda qancha konsentrlangan H2SO4 qo‘shiladi?",
       "options": [
         "3-4 ml",
+        "1 tomchi",
         "0,5 ml",
-        "10 ml",
-        "1 tomchi"
+        "10 ml"
       ],
       "correct_index": 0,
       "explanation": "1 ml distillyatni salitsil kislotasi kristallari bilan aralashtirib, 3-4 ml konsentrlangan H2SO4 solinadi.",
@@ -905,12 +1955,12 @@
     {
       "question": "Metil spirti oksidlanganda qaysi modda hosil bo‘ladi va qanday aniqlanadi?",
       "options": [
-        "Formaldegid, fuksinsulfit va kodein reaksiyalari bilan",
-        "Sirka aldegidi, yodoform bilan",
         "Aseton, nitroprussid bilan",
-        "Fenol, brom suvi bilan"
+        "Fenol, brom suvi bilan",
+        "Formaldegid, fuksinsulfit va kodein reaksiyalari bilan",
+        "Sirka aldegidi, yodoform bilan"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "KMnO4 bilan oksidlashdan hosil bo‘lgan formaldegid 2- va 3-reaksiyalar (kodein va fuksinsulfit) bilan aniqlanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -921,12 +1971,12 @@
     {
       "question": "Ortiqcha permanganat nima bilan yo‘qotiladi?",
       "options": [
-        "15% oksalat kislotasi",
         "10% HCl",
         "Suv",
-        "Ammiak"
+        "Ammiak",
+        "15% oksalat kislotasi"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Ortiqcha permanganat 15% oksalat kislotasi eritmasi yordamida yo‘qotiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -937,12 +1987,12 @@
     {
       "question": "Yodoform reaksiyasi qaysi haroratda suv hammomida olib boriladi?",
       "options": [
-        "50 °C",
-        "100 °C",
         "20 °C",
-        "80 °C"
+        "50 °C",
+        "80 °C",
+        "100 °C"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Yodning KI dagi eritmasi qo‘shilgach suv hammomida (50 °C) qizdiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -953,12 +2003,12 @@
     {
       "question": "Mikroskopda yodoform kristallari qanday ko‘rinadi?",
       "options": [
-        "Oltiburchakli yulduzsimon",
         "Ninasimon",
         "Kubsimon",
+        "Oltiburchakli yulduzsimon",
         "Plastinkasimon"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Mikroskop ostida oltiburchakli yulduzsimon mikrokristallar kuzatiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -969,12 +2019,12 @@
     {
       "question": "Sirka aldegidi hosil qilish reaksiyasida qaysi oksidlovchi ishlatiladi?",
       "options": [
-        "Kaliy bixromat (10%)",
         "Kaliy permanganat (1%)",
-        "Vodorod peroksidi",
-        "Brom suvi"
+        "Brom suvi",
+        "Kaliy bixromat (10%)",
+        "Vodorod peroksidi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Qo‘ng‘ir-sariq rang bo‘lguncha kaliy bixromatning 10% eritmasi qo‘shiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -985,12 +2035,12 @@
     {
       "question": "Etilatsetat reaksiyasida hid qachon yaqqolroq seziladi?",
       "options": [
-        "Aralashma sovuq suvga ag‘darilsa",
+        "Muzlatilsa",
         "Qaynatilsa",
         "Ishqor qo‘shilsa",
-        "Muzlatilsa"
+        "Aralashma sovuq suvga ag‘darilsa"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Aralashma 20-25 ml sovuq suv ustiga ag‘darilsa hid yaqqol seziladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1001,12 +2051,12 @@
     {
       "question": "Amil spirtining salitsil aldegidi bilan reaksiyasida qanday rang hosil bo‘ladi?",
       "options": [
-        "Binafsha-qizil",
         "Ko‘k",
+        "Yashil",
         "Sariq",
-        "Yashil"
+        "Binafsha-qizil"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Binafsha-qizil rang amil spirti borligidan dalolat beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1018,9 +2068,9 @@
       "question": "Amil spirti oksidlanganda qaysi modda hidi sasigan pishloqni eslatadi?",
       "options": [
         "Izovalerian kislotasi",
-        "Izovalerian aldegidi",
         "Sirka etil efiri",
-        "Salitsilat"
+        "Salitsilat",
+        "Izovalerian aldegidi"
       ],
       "correct_index": 0,
       "explanation": "Avval izovalerian aldegidining, so‘ngra yoqimsiz izovalerian kislotasi hidi seziladi.",
@@ -1033,12 +2083,12 @@
     {
       "question": "n-Dimetilaminobenzaldegid reaksiyasida suyultirilgach rang qanday bo‘ladi?",
       "options": [
+        "Sariq",
         "Binafsha",
-        "Rangsiz",
         "Yashil",
-        "Sariq"
+        "Rangsiz"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "To‘q qizil rang suv bilan suyultirilsa binafsha rangga o‘tadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1049,17 +2099,161 @@
     {
       "question": "Etilenglikol qanday usulda ajratiladi?",
       "options": [
-        "Lapkina va Nazarenko usulida, benzol bilan",
         "Oddiy suv bug‘i bilan",
-        "Faqat dializ bilan",
-        "Vakuum haydash bilan"
+        "Lapkina va Nazarenko usulida, benzol bilan",
+        "Vakuum haydash bilan",
+        "Faqat dializ bilan"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Etilenglikol suv bug‘i bilan yomon haydalgani uchun Lapkina va Nazarenko usulida ajratiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "45"
+      }
+    },
+    {
+      "question": "Antifriz tarkibi qanday?",
+      "options": [
+        "30% etilenglikol va 70% spirt",
+        "100% etilenglikol",
+        "45% etilenglikol va 55% suv",
+        "55% etilenglikol va 45% suv"
+      ],
+      "correct_index": 3,
+      "explanation": "Antifriz tarkibi 55% etilenglikol va 45% suvdan iborat bo‘lib, -40 °C da ham muzlamaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "44"
+      }
+    },
+    {
+      "question": "Toza etilenglikol qaysi haroratda qaynaydi?",
+      "options": [
+        "78,5 °C",
+        "197,0 °C",
+        "100 °C",
+        "300 °C"
+      ],
+      "correct_index": 1,
+      "explanation": "Toza etilenglikol rangsiz, yog‘simon, gigroskopik suyuqlik bo‘lib, 197,0 °C da qaynaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "44"
+      }
+    },
+    {
+      "question": "Etilenglikol bilan zaharlanishda tahlil uchun nega jigar olinadi?",
+      "options": [
+        "Jigarda benzol bor",
+        "Etilenglikol asosan jigarda to‘planadi",
+        "Jigar kam yog‘li",
+        "Jigar eng engil ajratiladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Tahlil uchun jigar olinadi, chunki etilenglikol asosan jigarda to‘planadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "45"
+      }
+    },
+    {
+      "question": "Etilenglikolning mis (II)-gidroksid bilan reaksiyasiga qaysi modda halal beradi?",
+      "options": [
+        "Glitserin",
+        "Etil spirti",
+        "Aseton",
+        "Fenol"
+      ],
+      "correct_index": 0,
+      "explanation": "Reaksiyaning borishiga glitserin halal beradi; u bu sharoitda haydalmaydi, shu sababli distillyatda aniqlanmaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "46"
+      }
+    },
+    {
+      "question": "Kalsiy oksalat reaksiyasining sezgirligi qancha?",
+      "options": [
+        "0,5 mg etilenglikol",
+        "10 g etilenglikol",
+        "0,1 g etilenglikol",
+        "5 mg etilenglikol"
+      ],
+      "correct_index": 2,
+      "explanation": "Kalsiy oksalat kristallari reaksiyasining sezgirligi 0,1 g etilenglikolga teng.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "47"
+      }
+    },
+    {
+      "question": "Etil spirti qaysi haroratda qaynaydi?",
+      "options": [
+        "181,4 °C",
+        "117-118 °C",
+        "56,3 °C",
+        "77-78,5 °C"
+      ],
+      "correct_index": 3,
+      "explanation": "Toza etil spirti 77-78,5 °C da qaynaydi va zangori alanga bilan yonadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "41"
+      }
+    },
+    {
+      "question": "Metil spirtining zaharli dozasi qancha?",
+      "options": [
+        "100-300 g",
+        "10-15 g",
+        "7-8 g",
+        "50 ml"
+      ],
+      "correct_index": 2,
+      "explanation": "Metil spirtining zaharli dozasi 7-8 g, LD50 = 30-100 g.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "40"
+      }
+    },
+    {
+      "question": "Amil spirtining o‘limga olib keluvchi miqdori qancha?",
+      "options": [
+        "10-15 g",
+        "1-2 g",
+        "100-300 g",
+        "7-8 g"
+      ],
+      "correct_index": 0,
+      "explanation": "10-15 g amil spirti o‘limga olib keladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "43"
+      }
+    },
+    {
+      "question": "Metilsalitsilat reaksiyasini metil spirtidan tashqari yana qaysi spirt beradi?",
+      "options": [
+        "Etil spirti",
+        "Etilenglikol",
+        "Amil spirti",
+        "Hech qaysi"
+      ],
+      "correct_index": 0,
+      "explanation": "Metilsalitsilat reaksiyasini etil spirti ham beradi, hidlar o‘xshash, shuning uchun distillyatda etil spirti bo‘lmasagina hid metil spirti uchun xarakterli.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "41"
       }
     }
   ],
@@ -1102,7 +2296,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 40-41, 43-46, 166, 185-187"
+      "pages": "b. 40-47, 166, 185-187"
     },
     {
       "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",

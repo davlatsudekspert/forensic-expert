@@ -23,7 +23,16 @@
           "uncertain": false
         },
         {
-          "text": "Maqsad: kasrli usulda halaqit beruvchi ionlarni niqoblash reaktivlari, hamda cho‘kmadagi bariy va qo‘rg‘oshinning toksikologik ahamiyati va tahlili bilan tanishtirish.",
+          "text": "Maqsad: kasrli usulda halaqit beruvchi ionlarni niqoblash reaktivlari.",
+          "source": {
+            "author": "Malaka materiali №087 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "9-ma’ruza: Minerallizatni kasrli usulda aniqlash, halaqit beruvchi ionlarni niqoblash; Ba va Pb (2011)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hamda cho‘kmadagi bariy va qo‘rg‘oshinning toksikologik ahamiyati va tahlili bilan tanishtirish.",
           "source": {
             "author": "Malaka materiali №087 (TFI Toksikologik kimyo kafedrasi)",
             "title": "9-ma’ruza: Minerallizatni kasrli usulda aniqlash, halaqit beruvchi ionlarni niqoblash; Ba va Pb (2011)",
@@ -101,30 +110,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "LD50 (kitob ma’lumoti)",
-        "nodes": [],
-        "header": [
-          "Metall",
-          "LD50"
-        ],
-        "rows": [
-          [
-            "Margimush, surma",
-            "0,08-0,1 g"
-          ],
-          [
-            "Talliy",
-            "0,5 g"
-          ],
-          [
-            "Xrom",
-            "0,2-1 g"
-          ],
-          [
-            "Kadmiy",
-            "0,03 g"
-          ]
+        "kind": "facts",
+        "caption": "LD50 va o‘ldiruvchi dozalar",
+        "items": [
+          {
+            "label": "Margimush, surma",
+            "value": "0,08-0,1",
+            "unit": "g"
+          },
+          {
+            "label": "Talliy",
+            "value": "0,5",
+            "unit": "g"
+          },
+          {
+            "label": "Xrom",
+            "value": "0,2-1",
+            "unit": "g"
+          },
+          {
+            "label": "Kadmiy",
+            "value": "0,03",
+            "unit": "g"
+          },
+          {
+            "label": "Simob",
+            "value": "0,2-0,3",
+            "unit": "g"
+          },
+          {
+            "label": "KMnO4",
+            "value": "15-20",
+            "unit": "g"
+          }
         ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kadmiyning dozasi eng kichik? Doskada: jadvalni kichikdan kattaga tartiblang. Tipik xato: LD50 ni «xavfsiz doza» deb tushunish. Izoh: kitobda ZnCl2 uchun birlik ko‘rsatilmagan, slaydda ham birliksiz berildi."
@@ -220,7 +238,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Zaharlanishning boshqa xususiyatlari",
+        "root": "Metall zaharlanishi",
+        "children": [
+          {
+            "label": "Kadmiy",
+            "items": [
+              "Ichki a’zolardan qon ketkazadi"
+            ]
+          },
+          {
+            "label": "Mis",
+            "items": [
+              "Burun qonaydi"
+            ]
+          },
+          {
+            "label": "Mis va rux",
+            "items": [
+              "Tana harorati 40 °C va undan yuqori"
+            ]
+          },
+          {
+            "label": "To‘planish",
+            "items": [
+              "Margimush, qo‘rg‘oshin, simob"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: to‘planish xususiyati surunkali zaharlanishda nimani anglatadi? Doskada: to‘planuvchi uch metallni belgilang. Tipik xato: to‘planish faqat o‘tkir zaharlanishda muhim deb o‘ylash."
     },
     {
@@ -245,7 +293,16 @@
           "uncertain": false
         },
         {
-          "text": "Mineralizatdan ajratilgan cho‘kma tarkibiga qarab oq (bariy, qo‘rg‘oshin, kalsiy sulfatlar) yoki iflos ko‘kish (xrom, mis, temir, alyuminiy kationlari qo‘shilib cho‘kkanda) bo‘ladi.",
+          "text": "Mineralizatdan ajratilgan cho‘kma tarkibiga qarab oq (bariy, qo‘rg‘oshin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "61"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kalsiy sulfatlar) yoki iflos ko‘kish (xrom, mis, temir, alyuminiy kationlari qo‘shilib cho‘kkanda) bo‘ladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -288,7 +345,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Metallarni aniqlash usullari",
+        "columns": [
+          {
+            "title": "Serovodorod usuli",
+            "items": [
+              "Analitik guruhlar bo‘yicha ajratish",
+              "1970 yillargacha qo‘llangan",
+              "Ko‘p kamchiligi bor; hozir yo‘q"
+            ]
+          },
+          {
+            "title": "Kasrli usul",
+            "items": [
+              "Xususiy, sezgir reaksiyalar",
+              "Ekstraksiya va reekstraksiya",
+              "Hozir keng qo‘llanadi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tizimli usulning kamchiligi nimada bo‘lishi mumkin? Doskada: ikki usulni ikki ustunda solishtiring. Tipik xato: serovodorod usuli hozir ham asosiy deb o‘ylash. Egasi qarori: kasrli usul asoschisi — faqat A.N. Krilova."
     },
     {
@@ -304,7 +382,16 @@
           "uncertain": false
         },
         {
-          "text": "Ko‘p hollarda halaqit beruvchi kationlar ta’sirini yo‘qotish uchun kompleks birikmalar hosil qilish, oksidlanish-qaytarilish reaksiyalari, pH o‘zgartirish, kam hajmli mineralizat olish va suyultirish qo‘llaniladi.",
+          "text": "Ko‘p hollarda halaqit beruvchi kationlar ta’sirini yo‘qotish uchun kompleks birikmalar hosil qilish.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "53"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oksidlanish-qaytarilish reaksiyalari, pH o‘zgartirish, kam hajmli mineralizat olish va suyultirish qo‘llaniladi.",
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
@@ -678,7 +765,7 @@
       "title": "Bariy birikmalari va ularning qo‘llanilishi",
       "bullets": [
         {
-          "text": "Bariy karbonat sichqon va kalamushlarni yo‘qotishda un bilan aralashtirib ishlatiladi; bunday aralashmani bolalar iste’mol qilib qo‘yishi baxtsiz hodisaga olib kelishi mumkin.",
+          "text": "Bariy karbonat sichqon va kalamushlarni yo‘qotishda un bilan aralashtirib ishlatiladi; bolalar iste’mol qilib qo‘yishi baxtsiz hodisaga olib kelishi mumkin.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -687,7 +774,7 @@
           "uncertain": false
         },
         {
-          "text": "Bariy xlorid, nitrat va gidroksid reaktiv sifatida; bariy karbonat oyna va chinni ishlab chiqarishda; bariy xlorid to‘qimachilik va rezina sanoatida ishlatiladi.",
+          "text": "Bariy xlorid, nitrat va gidroksid reaktiv sifatida; BaCO3 oyna va chinni ishlab chiqarishda; BaCl2 to‘qimachilik va rezina sanoatida ishlatiladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -696,7 +783,7 @@
           "uncertain": false
         },
         {
-          "text": "Bariy karbonat va bariy selenit (BaSeO3) qishloq xo‘jaligida o‘simlik zararkunandalariga qarshi kurashda; bariy tuzlari qog‘oz va qimmatli qog‘ozlar ishlab chiqarishda qo‘llaniladi.",
+          "text": "BaCO3 va bariy selenit (BaSeO3) qishloq xo‘jaligida zararkunandalarga qarshi; bariy tuzlari qog‘oz va qimmatli qog‘ozlar ishlab chiqarishda qo‘llaniladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -705,7 +792,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Bariy birikmalari qo‘llanilishi",
+        "root": "Bariy",
+        "children": [
+          {
+            "label": "Kemiruvchilarga qarshi",
+            "items": [
+              "BaCO3 un bilan aralashtirilgan"
+            ]
+          },
+          {
+            "label": "Reaktiv",
+            "items": [
+              "BaCl2, nitrat, gidroksid"
+            ]
+          },
+          {
+            "label": "Sanoat",
+            "items": [
+              "Oyna, chinni: BaCO3",
+              "To‘qimachilik, rezina: BaCl2"
+            ]
+          },
+          {
+            "label": "Qishloq xo‘jaligi",
+            "items": [
+              "BaCO3 va BaSeO3"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: turmushda bariy bilan zaharlanish manbalari qaysilar? Doskada: ishlatilish sohalari ro‘yxati. Tipik xato: barcha bariy tuzlarini bir xil zaharli deb hisoblash. Izoh: malaka 087 da bariy sulfat tibbiyotda oshqozon-ichak yo‘lini rentgen qilishda ishlatilishi qayd etilgan."
     },
     {
@@ -748,7 +866,25 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Bariy zaharliligi",
+        "items": [
+          {
+            "label": "BaCO3 zaharli miqdori",
+            "value": "0,8-0,9",
+            "unit": "g"
+          },
+          {
+            "label": "O‘lim sababi",
+            "value": "yurak paralichi"
+          },
+          {
+            "label": "Es-hush",
+            "value": "saqlanadi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bemor so‘nggi damgacha es-hushini yo‘qotmaydi? Doskada: belgilarni a’zolar bo‘yicha guruhlang. Tipik xato: bariy zaharlanishini markaziy asab tizimi falaji deb tushunish — kitobga ko‘ra yurak mushaklari ishdan chiqadi."
     },
     {
@@ -871,7 +1007,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "BaSO4 qayta kristallanishi",
+        "items": [
+          {
+            "title": "1. Buyum oynachasi",
+            "text": "Tekshiriladigan cho‘kma qo‘yiladi"
+          },
+          {
+            "title": "2. Kislota",
+            "text": "2-3 tomchi konts. H2SO4"
+          },
+          {
+            "title": "3. Qizdirish",
+            "text": "SO3 ning oq bug‘lari chiqquncha"
+          },
+          {
+            "title": "4. Sovitish",
+            "text": "15-20 daqiqa"
+          },
+          {
+            "title": "5. Mikroskop",
+            "text": "Linza yoki «+» shaklidagi kristallar"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kristall shakli nima uchun chinlik belgisi bo‘ladi? Doskada: linza va «+» shaklini chizing. Tipik xato: sovitish vaqtini qisqartirish — kristallar to‘liq shakllanmaydi."
     },
     {
@@ -927,6 +1088,52 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: rodizonat reaksiyasida stronsiy halaqit bera oladimi? Doskada: HCl dan keyingi rang o‘zgarishini yozing. Tipik xato: barcha qizil ranglarni bariyga tegishli deb hisoblash. Izoh: kitobda reaktiv nomi «xromatlar» deb, formulada esa K2Cr2O7 yozilgan — slaydda ikkalasi ham ko‘rsatildi."
     },
     {
+      "title": "Ba2+: natriy rodizonat reaksiyasi",
+      "bullets": [
+        {
+          "text": "Bariy ioni natriy rodizonat bilan qizg‘ish-qo‘ng‘ir rangli cho‘kma beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "59"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1 tomchi xlorid kislota ta’sirida cho‘kma rangi tiniq qizilga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "59"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Agar rang stronsiydan hosil bo‘lgan bo‘lsa, xlorid kislota ta’sirida o‘chib ketadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "59"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Rodizonat reaksiyasi",
+        "reagents": [
+          "Ba2+",
+          "Natriy rodizonat"
+        ],
+        "products": [
+          "Bariy rodizonati"
+        ],
+        "conditions": "1 tomchi HCl qo‘shiladi",
+        "observation": "Qizg‘ish-qo‘ng‘ir, so‘ng tiniq qizil"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: stronsiy ranginini bariydan qanday ajratamiz? (HCl da o‘chadi). Tipik xato: HCl dan keyingi rang o‘zgarishini unutish."
+    },
+    {
       "title": "Bariyni miqdoriy aniqlash",
       "bullets": [
         {
@@ -939,7 +1146,7 @@
           "uncertain": false
         },
         {
-          "text": "Og‘irlik usuli: cho‘kma trilon B ning ammiakli eritmasida eritilib filtrlanadi (SiO2, Fe3+ va Ca2+ tuzlaridan tozalash); filtrat nordonlashtirilgach BaSO4 ajratilib, quritiladi va tortiladi.",
+          "text": "Og‘irlik usuli: cho‘kma trilon B ning ammiakli eritmasida eritilib filtrlanadi (SiO2, Fe3+ va Ca2+ tuzlaridan tozalash).",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -948,7 +1155,25 @@
           "uncertain": false
         },
         {
-          "text": "Hajmiy usul: cho‘kma aniq konsentratsiyali trilon B da eritilib, ortiqcha trilon B eriokrom ko‘ki indikatorida ZnCl2 bilan titrlanadi; ko‘k rang qizilga o‘tishi kerak.",
+          "text": "Filtrat nordonlashtirilgach BaSO4 ajratilib, quritiladi va tortiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "60"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hajmiy usul: cho‘kma aniq konsentratsiyali trilon B da eritilib, ortiqcha trilon B eriokrom ko‘ki indikatorida ZnCl2 bilan titrlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "60"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘k rang qizilga o‘tishi kerak.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -957,7 +1182,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Bariyni miqdoriy aniqlash",
+        "columns": [
+          {
+            "title": "Og‘irlik usuli",
+            "items": [
+              "Cho‘kma trilon B ammiak eritmasida",
+              "Filtrat nordonlashtiriladi",
+              "BaSO4 quritilib tortiladi"
+            ]
+          },
+          {
+            "title": "Hajmiy usul",
+            "items": [
+              "Aniq konsentratsiyali trilon B",
+              "Ortiqchasi ZnCl2 bilan titrlanadi",
+              "Eriokrom ko‘ki: ko‘k → qizil"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega avval cho‘kma trilon B da eritiladi? Doskada: teskari titrlash sxemasini chizing. Tipik xato: oxirgi nuqtani qizildan ko‘kka o‘tish deb o‘ylash — kitobda ko‘k rangdan qizilga."
     },
     {
@@ -1000,7 +1246,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Qo‘rg‘oshin qo‘llanilishi",
+        "root": "Qo‘rg‘oshin",
+        "children": [
+          {
+            "label": "Metall",
+            "items": [
+              "Tipografiya, akkumulyator"
+            ]
+          },
+          {
+            "label": "Bo‘yoqlar",
+            "items": [
+              "2PbCO3·Pb(OH)2 — oq bo‘yoq",
+              "PbSO4 — surik"
+            ]
+          },
+          {
+            "label": "Antidetonator",
+            "items": [
+              "TEQ benzinga qo‘shiladi"
+            ]
+          },
+          {
+            "label": "Tibbiyot",
+            "items": [
+              "Qo‘rg‘oshin atsetat asosi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: turmushdagi qo‘rg‘oshin manbalarini sanang. Doskada: manba-birikma juftliklari. Tipik xato: qo‘rg‘oshinni faqat bo‘yoq bilan bog‘lash — TEQ ham manba."
     },
     {
@@ -1034,7 +1311,25 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Qo‘rg‘oshin toksikokinetikasi",
+        "items": [
+          {
+            "label": "Eritrotsitlar bilan",
+            "value": "90",
+            "unit": "%"
+          },
+          {
+            "label": "Asosiy chiqish yo‘li",
+            "value": "axlat bilan"
+          },
+          {
+            "label": "Nishon",
+            "value": "markaziy asab tizimi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sulfgidril guruhlarni bog‘lash nima uchun fermentlarni to‘xtatadi? Doskada: -SH + Pb2+ sxemasi. Tipik xato: qo‘rg‘oshin faqat siydik bilan chiqadi deb o‘ylash — kitobga ko‘ra asosan axlat bilan."
     },
     {
@@ -1081,6 +1376,53 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: reekstraksiya nima uchun kerak? Doskada: (HDz)2Pb + 2HNO3 -> Pb(NO3)2 + 2HDz. Tipik xato: ditizon reaksiyasini yakuniy tasdiq deb hisoblash. Izoh: kitobda reaksiya pH = 7-10 sharoitida va «manfiy sud-kimyosi ahamiyatiga ega» deyilgan."
+    },
+    {
+      "title": "Pb2+: ditizon va reekstraksiya",
+      "bullets": [
+        {
+          "text": "Ditizonning xloroformli eritmasi qo‘rg‘oshin kationi bilan xloroform qatlamini qizil alvon rangga bo‘yaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "60"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Halaqit beruvchi ionlarni niqoblash uchun KCN yoki gidroksilamin qo‘shiladi; reaksiya manfiy sud-kimyo ahamiyatiga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "61"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform qatlami nitrat kislota bilan chayqatilganda (reekstraksiya) qo‘rg‘oshin suvli qatlamga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "61"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Qo‘rg‘oshin ditizonati",
+        "reagents": [
+          "Pb(CH3COO)2",
+          "Ditizon (xloroformda)"
+        ],
+        "products": [
+          "Pb-ditizonat",
+          "2 CH3COOH"
+        ],
+        "conditions": "pH = 7-10",
+        "observation": "Xloroform qatlami qizil alvon"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega reaksiya manfiy ahamiyatli? Tipik xato: reekstraksiyani ajratish bosqichi bilan aralashtirish."
     },
     {
       "title": "Qo‘rg‘oshin mikrokristall reaksiyalari",
@@ -1191,6 +1533,57 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: PbSO4 oq cho‘kmasi BaSO4 dan nimasi bilan farq qiladi? Doskada: uch cho‘kma rangini jadvalga yozing. Tipik xato: K2CrO4 va K2Cr2O7 ni aralashtirish."
     },
     {
+      "title": "Qo‘rg‘oshinni bixromat-yodometrik aniqlash",
+      "bullets": [
+        {
+          "text": "Bixromat-yodometrik usul PbCrO4 cho‘kmasi hosil qilishga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "61"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bixromat KI va H2SO4 ishtirokida yod ajratadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "61"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ajralgan yod natriy tiosulfat bilan titrlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "61"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Bixromat-yodometriya",
+        "items": [
+          {
+            "title": "1. Cho‘ktirish",
+            "text": "PbCrO4 hosil qilinadi"
+          },
+          {
+            "title": "2. Yod ajratish",
+            "text": "Bixromat + KI + H2SO4"
+          },
+          {
+            "title": "3. Titrlash",
+            "text": "Yod Na2S2O3 bilan"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: uch bosqichni yozing. Tipik xato: PbCrO4 cho‘kmasi bosqichini tushirib qoldirish."
+    },
+    {
       "title": "Qo‘rg‘oshinni miqdoriy aniqlash",
       "bullets": [
         {
@@ -1274,7 +1667,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "TEQ xossalari",
+        "items": [
+          {
+            "label": "Qaynash (parchalanib)",
+            "value": "198-200",
+            "unit": "°C"
+          },
+          {
+            "label": "Suvda",
+            "value": "erimaydi"
+          },
+          {
+            "label": "Benzinda",
+            "value": "yaxshi eriydi"
+          },
+          {
+            "label": "Tutun tarkibi",
+            "value": "PbO zarrachalari"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega TEQ suvda erimaydi, lekin benzinda eriydi? Doskada: TEQ xossalari ro‘yxati. Tipik xato: tutunning zaharliligini TEQ bug‘iga bog‘lash — kitobga ko‘ra tutun tarkibidagi PbO zarrachalari."
     },
     {
@@ -1312,6 +1727,69 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: yoqilg‘ini ranglash nimaga xizmat qiladi? Doskada: ashyolar ro‘yxati. Tipik xato: faqat ichki a’zolarni ashyo deb hisoblash."
     },
     {
+      "title": "TEQ miqdori va ajratish ko‘rsatkichlari",
+      "bullets": [
+        {
+          "text": "100 g ob’ekt tarkibida 0,3 g TEQ bo‘lsa, zaharlanish alomati bor deb hisoblanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Odatda 100 ml distillyat yig‘iladi va og‘zi berk holda 30 daqiqa saqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Benzin (20 ml) 4% yodning spirtdagi eritmasi (20 ml) bilan aralashtiriladi, 30 daqiqadan so‘ng bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "62"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "TEQ bo‘yicha raqamlar",
+        "items": [
+          {
+            "label": "Zaharlanish alomati",
+            "value": "0,3 g / 100 g ob’ekt"
+          },
+          {
+            "label": "Distillyat hajmi",
+            "value": "100",
+            "unit": "ml"
+          },
+          {
+            "label": "Yod bilan saqlash",
+            "value": "30",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Benzin namunasi",
+            "value": "20",
+            "unit": "ml"
+          },
+          {
+            "label": "Yod eritmasi (spirtda)",
+            "value": "4",
+            "unit": "%"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: 100 g ob’ektdagi 0,3 g TEQ nimani bildiradi? Tipik xato: zaharlanish mezonini (0,3 g) va distillyat hajmini (100 ml) aralashtirish."
+    },
+    {
       "title": "TEQ ni ob’ektdan ajratib olish",
       "bullets": [
         {
@@ -1324,7 +1802,16 @@
           "uncertain": false
         },
         {
-          "text": "Odatda 100 ml distillyat yig‘iladi, og‘zi berk holda 30 daqiqa saqlanadi va suv hammomida quriguncha bug‘latiladi; TEQ yod ta’sirida qo‘rg‘oshin yodidga (PbI2) aylanadi.",
+          "text": "Odatda 100 ml distillyat yig‘iladi, og‘zi berk holda 30 daqiqa saqlanadi va suv hammomida quriguncha bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TEQ yod ta’sirida qo‘rg‘oshin yodidga (PbI2) aylanadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1342,14 +1829,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "TEQ ni ajratish (a’zolardan)",
+        "items": [
+          {
+            "title": "1. Haydash",
+            "text": "Suv bug‘i bilan"
+          },
+          {
+            "title": "2. Yig‘ish",
+            "text": "Yodning to‘yingan spirtli eritmasiga"
+          },
+          {
+            "title": "3. Saqlash",
+            "text": "100 ml, berk holda 30 daqiqa"
+          },
+          {
+            "title": "4. Bug‘latish",
+            "text": "Suv hammomida quriguncha"
+          },
+          {
+            "title": "5. PbI2",
+            "text": "Nitrat kislotada eritiladi, quritiladi"
+          },
+          {
+            "title": "6. Tekshirish",
+            "text": "Pb(NO3)2 suvda eritilib Pb2+ ga"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega distillyat yod eritmasiga yig‘iladi? Tipik xato: TEQ ni mineralizatsiya bilan ajratishga urinish — avval haydash. Kitobda: «Pb(C2H5)4 + I2 → PbI2 + 2C4H10» (kimyoviy jihatdan noto‘g‘ri: yod Pb–C bog‘ini uzib etil yodid hosil qiladi) — tenglama slayddan olindi."
     },
     {
       "title": "TEQ ni o‘simlik ob’ektlari va benzindan aniqlash",
       "bullets": [
         {
-          "text": "Un, non, krupadan: ob’ekt xloroform (yoki boshqa organik erituvchi) bilan 2 soat bo‘ktiriladi, filtratga 1 g yod kristallari qo‘shilib 30 daqiqadan so‘ng quriguncha bug‘latiladi.",
+          "text": "Un, non, krupadan: ob’ekt xloroform (yoki boshqa organik erituvchi) bilan 2 soat bo‘ktiriladi, filtratga 1 g yod qo‘shilib 30 daqiqadan so‘ng bug‘latiladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1367,7 +1883,7 @@
           "uncertain": false
         },
         {
-          "text": "Benzin va kerosin: benzin (20 ml) 4% yodning spirtdagi eritmasi (20 ml) bilan aralashtiriladi, 30 daqiqadan so‘ng quriguncha bug‘latiladi; qoldiq Pb2+ ga tekshiriladi.",
+          "text": "Benzin, kerosin: benzin (20 ml) 4% yodli spirt (20 ml) bilan aralashtiriladi, 30 daqiqadan so‘ng bug‘latiladi; qoldiq Pb2+ ga tekshiriladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1385,14 +1901,44 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "TEQ: boshqa ob’ektlar",
+        "columns": [
+          {
+            "title": "Un, non, krupa",
+            "items": [
+              "Xloroform bilan 2 soat bo‘ktiriladi",
+              "Filtratga 1 g yod, 30 daqiqa",
+              "Mineralizatsiya, Pb2+ ga tekshirish"
+            ]
+          },
+          {
+            "title": "Benzin, kerosin",
+            "items": [
+              "Benzin (20 ml) + 4% yod (20 ml)",
+              "30 daqiqadan so‘ng bug‘latiladi",
+              "Qoldiq Pb2+ ga tekshiriladi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uch xil ob’ektda TEQ ni ajratish usullarini solishtiring. Doskada: ob’ekt-usul jadvali. Tipik xato: 0,3 g chegarani 1 kg ob’ektga nisbatan o‘qish — kitobda 100 g ob’ekt aytilgan."
     },
     {
       "title": "Xulosa va nazorat savollari",
       "bullets": [
         {
-          "text": "Cho‘kmada BaSO4 va PbSO4 issiq ammoniy atsetat (sirka kislotali) bilan ajratiladi; Ba — alanga, Ba(IO3)2 va BaSO4 kristallari bilan; Pb — ditizon va mikrokristallar bilan aniqlanadi.",
+          "text": "Cho‘kmada BaSO4 va PbSO4 issiq ammoniy atsetat (sirka kislotali) bilan ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "59-61"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ba — alanga, Ba(IO3)2 va BaSO4 kristallari bilan; Pb — ditizon va mikrokristallar bilan aniqlanadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1436,12 +1982,12 @@
     {
       "question": "BaSO4 va PbSO4 cho‘kmasini ajratishda qaysi reaktiv ishlatiladi?",
       "options": [
-        "Sirka kislota bilan nordonlashtirilgan issiq ammoniy atsetat",
-        "Sovuq distillangan suv",
+        "Kaliy xromat",
         "Kons. sulfat kislota",
-        "Kaliy xromat"
+        "Sirka kislota bilan nordonlashtirilgan issiq ammoniy atsetat",
+        "Sovuq distillangan suv"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Qaynoq ammoniy atsetat PbSO4 ni eritib filtratga o‘tkazadi, BaSO4 filtrda qoladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1452,12 +1998,12 @@
     {
       "question": "Bariy sulfat gaz alangasida qizdirilsa alanga qanday rangga bo‘yaladi?",
       "options": [
-        "Yashil",
-        "Sariq",
         "Qizil",
-        "Ko‘k"
+        "Yashil",
+        "Ko‘k",
+        "Sariq"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Platina simidagi BaSO4 alangani yashil rangga bo‘yaydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1468,12 +2014,12 @@
     {
       "question": "BaCO3 ning zaharli miqdori kitobga ko‘ra qancha?",
       "options": [
-        "0,8-0,9 g",
-        "8-9 g",
         "0,08-0,09 g",
-        "80-90 g"
+        "0,8-0,9 g",
+        "80-90 g",
+        "8-9 g"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Kitobda BaCO3 ning 0,8-0,9 g zaharli deyilgan.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1484,12 +2030,12 @@
     {
       "question": "Qo‘rg‘oshin ditizon bilan xloroform qatlamini qanday rangga bo‘yaydi?",
       "options": [
-        "Qizil alvon",
+        "Rangsiz",
         "Yashil",
-        "Ko‘k",
-        "Rangsiz"
+        "Qizil alvon",
+        "Ko‘k"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Ditizonning xloroformli eritmasi Pb2+ bilan qizil alvon rang beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1500,12 +2046,12 @@
     {
       "question": "Qonga so‘rilgan qo‘rg‘oshinning qancha qismi eritrotsitlar bilan birikadi?",
       "options": [
-        "90%",
-        "10%",
         "50%",
-        "25%"
+        "25%",
+        "10%",
+        "90%"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Qo‘rg‘oshinning 90% eritrotsitlar bilan birikadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1518,8 +2064,8 @@
       "options": [
         "KCN yoki gidroksilamin",
         "NaCl",
-        "HCl",
-        "Etil spirti"
+        "Etil spirti",
+        "HCl"
       ],
       "correct_index": 0,
       "explanation": "Niqoblash uchun KCN yoki gidroksilamin qo‘shiladi.",
@@ -1532,12 +2078,12 @@
     {
       "question": "TEQ qaysi maqsadda yoqilg‘iga qo‘shiladi?",
       "options": [
+        "Hid beruvchi sifatida",
         "Antidetonator sifatida",
-        "Bo‘yoq sifatida",
         "Konservant sifatida",
-        "Hid beruvchi sifatida"
+        "Bo‘yoq sifatida"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "TEQ ichki yonish dvigatellarini ishdan chiqishdan saqlovchi antidetonator.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1549,9 +2095,9 @@
       "question": "Bariyni hajmiy usulda aniqlashda ortiqcha trilon B nima bilan titrlanadi?",
       "options": [
         "ZnCl2",
+        "AgNO3",
         "NaOH",
-        "KMnO4",
-        "AgNO3"
+        "KMnO4"
       ],
       "correct_index": 0,
       "explanation": "Ortiqcha trilon B eriokrom ko‘ki indikatorida ZnCl2 bilan titrlanadi.",
@@ -1565,9 +2111,9 @@
       "question": "Sianidlar bilan niqoblashda qanday xavfsizlik qoidasiga amal qilinadi?",
       "options": [
         "Tajribalar so‘ruvchi javon ostida bajariladi va nordon eritmaga qo‘shilmaydi",
-        "Qizdirib ishlatiladi",
-        "Faqat nordon muhitda ishlatiladi",
-        "Maxsus qoida talab etilmaydi"
+        "Sianid eritmalari qizdirilib, nordonlashtirib ishlatiladi",
+        "Maxsus qoida talab etilmaydi",
+        "Faqat nordon muhitda ishlatiladi"
       ],
       "correct_index": 0,
       "explanation": "Nordon eritmada sianid uchuvchan HCN hosil qiladi; shu sababli so‘ruvchi javon ostida ishlanadi.",
@@ -1580,17 +2126,177 @@
     {
       "question": "Qo‘rg‘oshinli oq bo‘yoq qaysi formula bilan berilgan?",
       "options": [
-        "2PbCO3·Pb(OH)2",
         "PbSO4",
-        "PbCrO4",
-        "PbS"
+        "PbS",
+        "2PbCO3·Pb(OH)2",
+        "PbCrO4"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Qo‘rg‘oshinli oq bo‘yoq — 2PbCO3·Pb(OH)2, PbSO4 esa surik deyilgan.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "60"
+      }
+    },
+    {
+      "question": "Margimush va surma birikmalari uchun LD50 qiymati qancha?",
+      "options": [
+        "0,08-0,1 g",
+        "5,0 g",
+        "0,5 g",
+        "15-20 g"
+      ],
+      "correct_index": 0,
+      "explanation": "Margimush va surma birikmalari uchun LD50 = 0,08-0,1 g; talliy 0,5 g; xrom 0,2-1 g; kadmiy 0,03 g.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "58"
+      }
+    },
+    {
+      "question": "Xrom va mis birikmalari bilan zaharlanganda qusuq massasi qanday rangda bo‘ladi?",
+      "options": [
+        "Oq",
+        "Qora",
+        "Yashil",
+        "Qo‘ng‘ir"
+      ],
+      "correct_index": 2,
+      "explanation": "Qusuq massasi metall birikmasiga xos: xrom va mis birikmalarida yashil, marganetsda qo‘ng‘ir rangda.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "58"
+      }
+    },
+    {
+      "question": "Qo‘rg‘oshin bilan zaharlanganda tish milkida qanday belgi kuzatiladi?",
+      "options": [
+        "Sariq rang",
+        "Qora dog‘lar",
+        "Qizil yara",
+        "Oq dog‘lar"
+      ],
+      "correct_index": 1,
+      "explanation": "Qo‘rg‘oshin bilan zaharlanganda tish milkida qora dog‘lar, vismut va simobda oq dog‘lar kuzatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "58"
+      }
+    },
+    {
+      "question": "Ba2+ xromatlar bilan qanday cho‘kma beradi?",
+      "options": [
+        "Qora PbS cho‘kmasi, mineral kislotada erimaydi",
+        "Yashil Cr(OH)3 cho‘kmasi, ishqorda eriydi",
+        "Oq PbSO4 cho‘kmasi, ammoniy atsetatda eriydi",
+        "Sirka kislotada erimaydigan sariq BaCrO4"
+      ],
+      "correct_index": 3,
+      "explanation": "Bariy ioni xromatlar bilan mineral kislotalarda eriydigan va sirka kislotasida erimaydigan sariq cho‘kma (BaCrO4) beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "59"
+      }
+    },
+    {
+      "question": "Natriy rodizonat bilan hosil bo‘lgan rang xlorid kislota ta’sirida o‘chib ketsa, bu nimani bildiradi?",
+      "options": [
+        "Rang bariydan hosil bo‘lgan",
+        "Rang stronsiydan hosil bo‘lgan",
+        "Qo‘rg‘oshin bor",
+        "Reaktiv eskirgan"
+      ],
+      "correct_index": 1,
+      "explanation": "Bariy cho‘kmasi 1 tomchi HCl ta’sirida tiniq qizilga o‘tadi; rang stronsiydan hosil bo‘lgan bo‘lsa, o‘chib ketadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "59"
+      }
+    },
+    {
+      "question": "Bariyni hajmiy usulda aniqlashda qaysi indikator ishlatiladi?",
+      "options": [
+        "Fenolftalein",
+        "Metiloranj",
+        "Kraxmal",
+        "Eriokrom ko‘ki"
+      ],
+      "correct_index": 3,
+      "explanation": "Ortiqcha trilon B eriokrom ko‘ki indikatorida ZnCl2 bilan titrlanadi; ko‘k rang qizilga o‘tadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "60"
+      }
+    },
+    {
+      "question": "Qo‘rg‘oshin ioni organizmga tushgach qaysi tizim ishini buzadi?",
+      "options": [
+        "Immun tizimi",
+        "Faqat teri",
+        "Markaziy asab tizimi",
+        "Faqat suyak"
+      ],
+      "correct_index": 2,
+      "explanation": "Qo‘rg‘oshin ioni ferment va oqsillardagi sulfgidril va boshqa funksional guruhlar bilan birikib, markaziy asab tizimi ishini buzadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "60"
+      }
+    },
+    {
+      "question": "Mis atsetat va kaliy nitrit bilan qo‘rg‘oshin qanday kristallar hosil qiladi?",
+      "options": [
+        "Sariq-yashil ninasimon",
+        "Qizil sferoid",
+        "Oq prizmatik",
+        "Qora-qo‘ng‘ir kub shaklidagi K2Cu[Pb(NO2)6]"
+      ],
+      "correct_index": 3,
+      "explanation": "Mis atsetat, sirka kislota va KNO2 bilan qora-qo‘ng‘ir rangli kub shaklidagi K2Cu[Pb(NO2)6] mikrokristallari hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "61"
+      }
+    },
+    {
+      "question": "Qo‘rg‘oshin 5% kaliy xromat bilan qanday cho‘kma beradi?",
+      "options": [
+        "Qora PbS",
+        "Oq PbSO4",
+        "Yashil",
+        "Sariq-zarg‘aldoq PbCrO4"
+      ],
+      "correct_index": 3,
+      "explanation": "Suvli eritma 5% kaliy xromat bilan sariq-zarg‘aldoq PbCrO4 cho‘kmasini beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "61"
+      }
+    },
+    {
+      "question": "TEQ qaysi haroratda qaynaydi?",
+      "options": [
+        "198-200 °C da parchalanish bilan",
+        "25,6 °C, parchalanishsiz",
+        "78 °C, parchalanishsiz",
+        "56 °C, parchalanishsiz"
+      ],
+      "correct_index": 0,
+      "explanation": "TEQ ning qaynash harorati 198-200 °C da parchalanish bilan boradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "62"
       }
     }
   ],

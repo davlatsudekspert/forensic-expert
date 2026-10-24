@@ -14,7 +14,7 @@
           "uncertain": false
         },
         {
-          "text": "Maqsad: kislotali muhitda organik erituvchi qatlamiga o‘tuvchi kuchsiz asos xossali alkaloidlarning toksikologik ahamiyati va tahlil usullari bilan tanishtirish.",
+          "text": "Maqsad: kislotali muhitda organik qatlamga o‘tuvchi kuchsiz asos xossali alkaloidlarning toksikologik ahamiyati va tahlil usullarini o‘rganish.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -39,7 +39,7 @@
       "title": "Kutilayotgan natijalar",
       "bullets": [
         {
-          "text": "Talabalar ksantin va indol hosilasiga oid alkaloidlarni toza eritmalarda hamda noma’lum tarkibdagi eritmada sifat reaksiyalarini aniqlash sharoitini o‘zlashtiradilar.",
+          "text": "Talabalar ksantin va indol hosilali alkaloidlarni toza va noma’lum eritmada sifat reaksiyalari bilan aniqlash sharoitini o‘zlashtiradi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -113,6 +113,343 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega mikroskop va spektrofotometr bir mashg‘ulotda kerak? (Birinchisi sifat, ikkinchisi miqdor tahlili.) Doskada: jihozlar ro‘yxati. Kitobda spektrofotometr markasi ko‘rsatilmagan. Tipik xato: kolbani o‘lchov belgisigacha to‘ldirmay ishlatish."
     },
     {
+      "title": "Dars xaritasi: ksantin hosilalari",
+      "bullets": [
+        {
+          "text": "Reja: purin alkaloidlari (kofein, teobromin, teofillin) ning toksikologik ahamiyati va tahlil usullari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sifat reaksiyalari: cho‘ktiruvchi reaktivlar, mureksid, mikrokristall, Nessler, YuQX va UB-spektr.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miqdor tahlili UB-spektrofotometriya usulida o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teobromin Rf = 0,47, teofillin Rf = 0,22; teofillinning 0,1 M HCl dagi maksimumi 270 nm; optik zichlik 0,2 dan 1,0 gacha.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Ksantin hosilalari",
+        "root": "Purin alkaloidlari",
+        "children": [
+          {
+            "label": "Kofein",
+            "items": [
+              "Mureksid, HgBr2 kristallari",
+              "Nessler; UB 273 nm"
+            ]
+          },
+          {
+            "label": "Teobromin",
+            "items": [
+              "Dragendorf: ninasimon",
+              "Rf 0,47; UB 273 (ishqor)"
+            ]
+          },
+          {
+            "label": "Teofillin",
+            "items": [
+              "Diazotirlangan sulfanil k-ta",
+              "Rf 0,22; UB 270 nm"
+            ]
+          },
+          {
+            "label": "Miqdor",
+            "items": [
+              "UB-SF: 0,2-1,0 optik zichlik"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reaksiyalar uch moddaga umumiy? Doskada: daraxt sxemasi. Tipik xato: faqat mureksidga tayanish."
+    },
+    {
+      "title": "Ksantin hosilalari: metabolizm",
+      "bullets": [
+        {
+          "text": "Kofein organizmda tez so‘riladi va parchalanadi; peshob orqali juda oz qismi ajraladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "104"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teobromin N-demetillanib, 3-metil-7-metilksantin va 7-metil mochevina kislotasi hosil qilib peshob orqali ajraladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teofillin 1,3-dimetil, 3-metil va 1-metil mochevina holida peshob orqali ajraladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "106"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Metabolizm",
+        "columns": [
+          {
+            "title": "Kofein",
+            "items": [
+              "Tez so‘riladi, parchalanadi",
+              "Peshobda juda oz miqdor"
+            ]
+          },
+          {
+            "title": "Teobromin",
+            "items": [
+              "Oksidlanish, N-demetillanish",
+              "3-metil-7-metilksantin",
+              "7-metil mochevina k-tasi"
+            ]
+          },
+          {
+            "title": "Teofillin",
+            "items": [
+              "1,3-dimetil",
+              "3-metil",
+              "1-metil mochevina"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: metabolitlar nimasi bilan farq qiladi? Doskada: 3 ustunli taqqoslash. Tipik xato: teobromin va teofillin metabolitlarini aralashtirish."
+    },
+    {
+      "title": "Kofein: reaksiyalar xaritasi",
+      "bullets": [
+        {
+          "text": "Kofein alkaloidlarni cho‘ktiruvchi reaktivlar bilan cho‘kma beradi; HgCl2 ta’sirida ninasimon kristallar hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "105"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mureksid reaksiyasi, simob bromid bilan mikrokristall va Nessler reaktivi bilan qizil-qo‘ng‘ir rang.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB-spektrda kofein 273 nm (etil spirti) va 272 nm (0,1 M HCl) da maksimum beradi; YuQX tizimi — efir-aseton-25% ammiak (40:20:1).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Kofein reaksiyalari",
+        "root": "Kofein",
+        "children": [
+          {
+            "label": "Cho‘kma",
+            "items": [
+              "Umumiy cho‘ktiruvchilar",
+              "HgCl2: ninasimon kristallar"
+            ]
+          },
+          {
+            "label": "Mureksid",
+            "items": [
+              "Oksidlash, ammiak",
+              "To‘q qizil binafsha"
+            ]
+          },
+          {
+            "label": "Mikrokristall, rang",
+            "items": [
+              "HgBr2: ignasimon",
+              "Nessler: qizil-qo‘ng‘ir"
+            ]
+          },
+          {
+            "label": "Fizik-kimyoviy",
+            "items": [
+              "UB 273 / 272 nm",
+              "YuQX"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reaksiyalar tasdiqlovchi? Doskada: daraxt sxemasi. Tipik xato: faqat mureksid bilan xulosa qilish."
+    },
+    {
+      "title": "Teobromin va teofillin: reaksiyalar xaritasi",
+      "bullets": [
+        {
+          "text": "Teobromin mureksid beradi, Nessler bilan och-qo‘ng‘ir rang, Dragendorf bilan to‘q-qizg‘ish ninasimon kristallar hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teobromin uchun YuQX Rf = 0,47; 0,1 M ishqordagi eritmasi 273 nm da maksimum beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teofillin uchun diazotirlangan sulfanil kislotasi, YuQX Rf = 0,22 va 0,1 M HCl da 270 nm xarakterli.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Teobromin va teofillin",
+        "root": "Teobromin / teofillin",
+        "children": [
+          {
+            "label": "Teobromin: rang, kristall",
+            "items": [
+              "Nessler: och-qo‘ng‘ir",
+              "Dragendorf: ninalar"
+            ]
+          },
+          {
+            "label": "Teobromin: Rf, UB",
+            "items": [
+              "Rf 0,47",
+              "273 nm (0,1 M ishqor)"
+            ]
+          },
+          {
+            "label": "Teofillin: farqlash",
+            "items": [
+              "Diazotirlangan sulfanil k-ta"
+            ]
+          },
+          {
+            "label": "Teofillin: Rf, UB",
+            "items": [
+              "Rf 0,22",
+              "270 nm (0,1 M HCl)"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi qiymatlar uch moddani farqlaydi? Doskada: daraxt sxemasi. Tipik xato: Rf qiymatlarini almashtirish."
+    },
+    {
+      "title": "Uch moddani taqqoslash",
+      "bullets": [
+        {
+          "text": "Nessler reaktivi: kofein — qizil-qo‘ng‘ir, teobromin — och-qo‘ng‘ir.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX: teobromin Rf = 0,47, teofillin Rf = 0,22.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB maksimumlar: kofein — 273 nm (spirt), teobromin — 273 nm (0,1 M ishqor), teofillin — 270 nm (0,1 M HCl).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Uch modda: asosiy belgilar",
+        "header": [
+          "Modda",
+          "Nessler",
+          "Rf",
+          "UB, nm"
+        ],
+        "rows": [
+          [
+            "Kofein",
+            "Qizil-qo‘ng‘ir",
+            "—",
+            "273 (spirt)"
+          ],
+          [
+            "Teobromin",
+            "Och-qo‘ng‘ir",
+            "0,47",
+            "273 (0,1 M ishqor)"
+          ],
+          [
+            "Teofillin",
+            "—",
+            "0,22",
+            "270 (0,1 M HCl)"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi belgi eng ishonchli? Doskada: jadval. Tipik xato: bo‘sh kataklarni to‘ldirish: kitobda yo‘q."
+    },
+    {
       "title": "Reaktivlar",
       "bullets": [
         {
@@ -143,7 +480,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Reaktivlar va reaksiyalar",
+        "header": [
+          "Reaktiv",
+          "Qaysi reaksiya"
+        ],
+        "rows": [
+          [
+            "Pergidrol, ammiak",
+            "Mureksid (kofein)"
+          ],
+          [
+            "0,1 M HCl, 5% simob bromid",
+            "Mikrokristall (kofein)"
+          ],
+          [
+            "Nessler reaktivi",
+            "Rang reaksiyasi"
+          ],
+          [
+            "10% HCl, Dragendorf",
+            "Teobromin kristallari"
+          ],
+          [
+            "Diazotirlangan sulfanil k-ta",
+            "Teofillinni farqlash"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: har bir reaktiv qaysi reaksiyada kerak? Doskada: reaktiv — reaksiya juftliklari. Eslatma: reaktivlarni tayyorlash retseptlari bu mashg‘ulot sahifalarida berilmagan. Tipik xato: Dragendorf reaktividagi HCl konsentratsiyasini aralashtirib yuborish."
     },
     {
@@ -258,7 +625,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Kofein: eruvchanlik va ekstraksiya",
+        "header": [
+          "Xossa",
+          "Ta’rifi"
+        ],
+        "rows": [
+          [
+            "Asos holida yaxshi eriydi",
+            "Xloroform, spirt, suv"
+          ],
+          [
+            "Kam eriydi",
+            "Efirda"
+          ],
+          [
+            "Ekstraksiya",
+            "Asosan kislotali, qisman ishqoriy"
+          ],
+          [
+            "Tibbiyotda",
+            "Asos, benzoat, salitsilat"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun ksantin hosilalari ko‘proq kislotali muhitdan organik erituvchi qatlamiga o‘tadi? (Mashg‘ulot nazorat savoli — toks 238.) Doskada: eruvchanlik jadvali. Tipik xato: kofeinni faqat ishqoriy muhitdan ajratishga urinish."
     },
     {
@@ -301,7 +694,15 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Zaharlilik tartibi",
+        "nodes": [
+          "Teobromin",
+          "Kofein (teobrominga nisbatan kuchli)",
+          "Teofillin (kofeindan kuchli)"
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: kofeinning narkotik ta’sirni kamaytirishi sud-kimyo nuqtai nazaridan nimani anglatadi? Doskada: kofein — teofillin — teobromin zaharlilik tartibi. Tipik xato: «peshob orqali oz ajraladi» degan fikrni peshobda kofein topilmaydi deb tushunish. Kitobda: «organizmda yig‘iladi» (xato) — kofein kumulyativ ta’sir ko‘rsatmaydi."
     },
     {
@@ -387,7 +788,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Teofillin: ma’lumotlar",
+        "header": [
+          "Belgi",
+          "Ma’lumot"
+        ],
+        "rows": [
+          [
+            "Kimyoviy nomi",
+            "1,3-dimetilksantin"
+          ],
+          [
+            "Preparatlar",
+            "Eufillin, teofedrin, antastman"
+          ],
+          [
+            "Qo‘llanishi",
+            "Peshob ajratuvchi, astmaga qarshi"
+          ],
+          [
+            "Metabolizmi",
+            "1,3-dimetil, 3-metil, 1-metil mochevina"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: teofillin preparatlarining nomlarini ayting (eufillin, teofedrin, antastman). Doskada: preparat — ta’sir juftliklari. Tipik xato: teofillin bilan teobrominni bir xil modda deb hisoblash — ular izomer."
     },
     {
@@ -427,7 +854,7 @@
           ],
           [
             "Teobromin",
-            "Kislotalidan yaxshi, ishqoriydan deyarli yo‘q"
+            "Kislotalidan yaxshi, ishqoriydan yo‘q"
           ],
           [
             "Teofillin",
@@ -438,6 +865,129 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ajratma qaysi pH da olinsa uchala modda ham yo‘qolmaydi? (Kislotali muhit — toks 236.) Doskada: jadvalni nusxalang. Tipik xato: ekstraksiya pH sini tekshirmasdan ajratma olish."
     },
     {
+      "title": "Purin alkaloidlari: tozalash xususiyatlari",
+      "bullets": [
+        {
+          "text": "Qayta ekstraksiyada kuchsiz asos xossali moddalar (purin hosilalari, narkotin, promedol, antipirin, amidopirin) yo‘qotib qo‘yiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "93"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Issiqlikda sublimatsiyalanuvchi moddalar — barbituratlar, benzoy va salitsil kislotalari, kofein — quruq haydash bilan tozalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "93"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislotali ajralmada kuchsiz asosli alkaloidlar (kofein, teobromin, teofillin, papaverin, narkotin, strixnin) tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Tozalash va ajralma",
+        "columns": [
+          {
+            "title": "Reekstraksiya",
+            "items": [
+              "Purin hosilalari yo‘qoladi",
+              "Kuchsiz asoslar yo‘qotiladi"
+            ]
+          },
+          {
+            "title": "Quruq haydash",
+            "items": [
+              "Kofein sublimatsiyalanadi",
+              "Barbituratlar, benzoy k-ta"
+            ]
+          },
+          {
+            "title": "Kislotali ajralma",
+            "items": [
+              "Kofein, teobromin, teofillin",
+              "Papaverin, narkotin, strixnin"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega purin hosilalari reekstraksiyada yo‘qoladi? Doskada: taqqoslash. Tipik xato: kofeinni reekstraksiya bilan tozalash."
+    },
+    {
+      "title": "Kofein: tahlil rejasi",
+      "bullets": [
+        {
+          "text": "Alkaloidlar tahlili: ajratib olish, tozalash, cho‘ktiruvchi va rang reaktivlari, fizik-kimyoviy usullar, miqdor.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "102"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kofein xloroformli ajralmadan aniqlanadi: mureksid, simob bromid kristallari, Nessler reaksiyalari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kofein miqdori UB-spektrofotometriya (273 nm) bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Kofein tahlili",
+        "items": [
+          {
+            "title": "Ajratish",
+            "text": "Kislotali muhitda xloroform bilan ekstraksiya"
+          },
+          {
+            "title": "Tozalash",
+            "text": "Ajratma yot moddalardan tozalanadi"
+          },
+          {
+            "title": "Cho‘ktiruvchi reaktivlar",
+            "text": "Umumiy cho‘ktiruvchi reaktivlar bilan"
+          },
+          {
+            "title": "Mureksid va kristallar",
+            "text": "Mureksid, HgBr2 kristallari, Nessler"
+          },
+          {
+            "title": "YuQX va UB",
+            "text": "Efir-aseton-NH4OH; UB 273 nm"
+          },
+          {
+            "title": "Miqdor",
+            "text": "UB-SF: optik zichlik 273 nm da"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega kamida ikkita usul? Doskada: 6 qadam. Tipik xato: bitta reaksiyaga asoslanish."
+    },
+    {
       "title": "Umumiy cho‘ktiruvchi reaktivlar bilan aniqlash",
       "bullets": [
         {
@@ -445,7 +995,7 @@
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "105"
+            "page": "104"
           },
           "uncertain": false
         },
@@ -556,7 +1106,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Mureksid hosil bo‘lishi",
+        "reagents": [
+          "Dimetildialur kislota",
+          "Dimetil alloksan"
+        ],
+        "conditions": "Oksidlovchi, bug‘latish, so‘ng ammiak",
+        "products": [
+          "Tetrametilalloksantin"
+        ],
+        "observation": "Qizil (to‘q qizil binafsha) rang"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 19-KEYS (toks 237): mureksid reaksiyasi musbat chiqdi — qaysi moddalarga tahlil qilish zarur? (Kofein, teobromin, teofillin — farqlash kerak.) Doskada: keys jadvali «Muammo — sabab — yechim». Tipik xato: mureksid musbat — demak kofein, deb yozish."
     },
     {
@@ -727,7 +1289,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Diazotirlangan sulfanil kislotasi",
+        "columns": [
+          {
+            "title": "Teofillin",
+            "items": [
+              "Reaksiya beradi",
+              "Teobromindan farqlanadi"
+            ]
+          },
+          {
+            "title": "Teobromin va kofein",
+            "items": [
+              "Bu reaksiyani bermaydi",
+              "Teobromin CCl4 da yaxshi eriydi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uch modda orasidan teofillinni ajratish uchun yagona reaksiyani aytib bering. Doskada: farqlash belgilari ro‘yxati. Kitob reaksiya rangini ko‘rsatmagan. Tipik xato: Nessler yoki mureksid bo‘yicha uchala moddani bir-biridan ajratish mumkin deb o‘ylash."
     },
     {
@@ -928,6 +1509,185 @@
       "teacher_notes": "Vaqt: 15 daqiqa. Kutilayotgan natija: ob’ekt ekstraktining 273 nm dagi optik zichligi 0,2-1,0 oralig‘ida bo‘ladi. Muhokama: optik zichlik 1,0 dan yuqori chiqsa nima qilinadi? (Kitobda aytilmagan — o‘qituvchi eritmani suyultirishni tushuntiradi.) Tipik xato: o‘lchovni maksimumga mos kelmaydigan to‘lqin uzunligida bajarish. Kitobda hisoblash formulasi bu sahifalarda berilmagan."
     },
     {
+      "title": "UB-SF: asosiy sonlar",
+      "bullets": [
+        {
+          "text": "Standart eritma: 0,1 g kofein 100 ml o‘lchov kolbasida etil spirtida eritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yutilish spektri 200-400 nm da o‘lchanadi; kofeinning spirtdagi maksimumi 273 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eritma konsentratsiyasi shunday tanlanadiki, optik ko‘rsatkich 0,2 dan 1,0 gacha bo‘lishi lozim.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "UB-SF sonlari",
+        "items": [
+          {
+            "label": "Kofein tortimi",
+            "value": "0,1",
+            "unit": "g"
+          },
+          {
+            "label": "O‘lchov kolbasi",
+            "value": "100",
+            "unit": "ml"
+          },
+          {
+            "label": "Spektr oralig‘i",
+            "value": "200-400",
+            "unit": "nm"
+          },
+          {
+            "label": "Kofein maksimumi",
+            "value": "273",
+            "unit": "nm"
+          },
+          {
+            "label": "Optik zichlik",
+            "value": "0,2-1,0"
+          },
+          {
+            "label": "Solishtiruvchi eritma",
+            "value": "Etil spirti"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi qiymat konsentratsiyani belgilaydi? Doskada: qiymatlar. Tipik xato: solishtiruvchi eritma sifatida suvni olish."
+    },
+    {
+      "title": "Ajratmadan UB-SF gacha",
+      "bullets": [
+        {
+          "text": "Kofein kislotali muhitdan organik erituvchi (xloroform) qatlamiga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mureksid va mikrokristall reaksiyalar uchun xloroformli eritma bug‘latilib, qoldiqda reaksiya o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "236"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ob’ektdan ajratilgan kofeinning optik zichligi 273 nm da o‘lchanadi; solishtiruvchi eritma — etil spirti.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Ajratmadan o‘lchashgacha",
+        "nodes": [
+          "Kislotali ekstraksiya (xloroform)",
+          "Xloroform bug‘latiladi",
+          "Qoldiq: sifat reaksiyalari",
+          "Kofein spektri 200-400 nm",
+          "Optik zichlik 273 nm da"
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega solishtiruvchi eritma spirt? Doskada: sxema. Tipik xato: eritma loyqa bo‘lsa ham o‘lchash."
+    },
+    {
+      "title": "«T» jadval: tushunchalar juftligi",
+      "bullets": [
+        {
+          "text": "«T» jadval topshirig‘ida tushunchalarga to‘g‘ri ta’rif beriladi: masalan, teofillinni teobromindan farqlash — diazotirlangan sulfanil kislotasi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "237"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kofeinning etil spirtidagi eritmasi — 273 nm; kofein bo‘lsa, ignasimon rangsiz kristallar — 0,1 M HCl va 5% simob bromid bilan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "238"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teobromin CCl4 da yaxshi eriydi; teofillin tibbiyotda kukun va tabletka (eufillin, teofedrin, antastman) holida ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "238"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "«T» jadval javoblari",
+        "header": [
+          "Tushuncha",
+          "Javob"
+        ],
+        "rows": [
+          [
+            "Teofillinni teobromindan farqlash",
+            "Diazotirlangan sulfanil kislotasi"
+          ],
+          [
+            "Kofein etil spirtida UB maksimumi",
+            "273 nm"
+          ],
+          [
+            "Teobromin yaxshi eriydi",
+            "CCl4"
+          ],
+          [
+            "Ignasimon rangsiz kristallar (kofein)",
+            "0,1 M HCl + 5% simob bromid"
+          ],
+          [
+            "Eufillin, teofedrin, antastman",
+            "Teofillin"
+          ],
+          [
+            "Narkotik ta’sirni kamaytiradi",
+            "Kofein"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: javoblar juftligini tushuntiring. Doskada: jadval. Tipik xato: javobni tushunchasiz yodlash."
+    },
+    {
       "title": "Fotometriya usullari",
       "bullets": [
         {
@@ -967,7 +1727,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Fotometriya usullari",
+        "root": "Fotometriya",
+        "children": [
+          {
+            "label": "Kolorimetriya",
+            "items": [
+              "Rangli eritmani ko‘z bilan solishtirish"
+            ]
+          },
+          {
+            "label": "Fotokolorimetriya",
+            "items": [
+              "Polixromatik nur, ko‘rinadigan qism"
+            ]
+          },
+          {
+            "label": "Spektrofotometriya",
+            "items": [
+              "Monoxromatik nur: ko‘rinadigan va UB, IQ"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: kofeinni UB-SF da aniqlash bu uch usulning qaysi biri? Doskada: uch usul — uch ta’rif. Tipik xato: fotokolorimetriya bilan spektrofotometriyani bir xil deb hisoblash: birinchisi polixromatik nurda ishlaydi."
     },
     {
@@ -1087,7 +1871,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Uch guruh topshirig‘i",
+        "columns": [
+          {
+            "title": "I guruh",
+            "items": [
+              "Ksantin hosilalari formulasi",
+              "Kofein: toksikologik ahamiyat",
+              "Nega kislotali muhitdan o‘tadi"
+            ]
+          },
+          {
+            "title": "II guruh",
+            "items": [
+              "Cho‘ktiruvchi reaktivlar ahamiyati",
+              "Mureksid ahamiyati",
+              "Uch moddani farqlash"
+            ]
+          },
+          {
+            "title": "III guruh",
+            "items": [
+              "Ksantin alkaloidlari miqdori",
+              "Teobromin ahamiyati",
+              "Teofillin ahamiyati"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 10 daqiqa. Usul: ikki guruh eng ko‘p to‘g‘ri javob uchun «yumalaqlangan qor» ball tizimida raqobatlashadi, eng ko‘p ball to‘plagan guruh a’lo baholanadi (toks 238). Doskada: guruhlar balli. Tipik xato: savollarga kitobdan tashqari faktlar qo‘shib javob berish."
     },
     {
@@ -1172,12 +1985,12 @@
     {
       "question": "Kofein mureksid reaksiyasida ammiak ta’sirida qanday rang beradi?",
       "options": [
-        "Ko‘k",
         "To‘q qizil binafsha",
+        "Ko‘k",
         "Sariq",
         "Yashil"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Qoldiqqa pergidrol bilan ishlov berib, 1 tomchi ammiak tomizilganda kofein bo‘lsa to‘q qizil binafsha rang hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1204,12 +2017,12 @@
     {
       "question": "Teofillinni teobromindan farqlash uchun qaysi reaksiya ishlatiladi?",
       "options": [
+        "Nessler",
         "Mureksid",
         "Diazotirlangan sulfanil kislotasi bilan",
-        "Nessler",
         "Simob bromid"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Teobromin va kofein diazotirlangan sulfanil kislotasi bilan reaksiya bermaydi, teofillin beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1221,11 +2034,11 @@
       "question": "Teobromin Dragendorf reaktivi bilan qanday kristallar hosil qiladi?",
       "options": [
         "Rombsimon",
-        "Ninasimon",
         "Prizmatik rangsiz",
-        "X shaklidagi"
+        "X shaklidagi",
+        "Ninasimon"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "To‘q-qizg‘ish rangli ninasimon kristallar va ularning to‘plami hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1237,8 +2050,8 @@
       "question": "Kofein Nessler reaktivi bilan suv hammomida qanday rang hosil qiladi?",
       "options": [
         "Qizil-qo‘ng‘ir",
-        "Ko‘k",
         "Och-qo‘ng‘ir",
+        "Ko‘k",
         "Rangsiz"
       ],
       "correct_index": 0,
@@ -1252,12 +2065,12 @@
     {
       "question": "YuQX da teobromin uchun Rf qiymati qancha?",
       "options": [
-        "0,22",
-        "0,47",
         "0,75",
-        "0,10"
+        "0,10",
+        "0,22",
+        "0,47"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Teobromin uchun Rf = 0,47 (teofillin uchun 0,22).",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1268,12 +2081,12 @@
     {
       "question": "Fotometrik o‘lchashda tekshiriluvchi eritmaning optik ko‘rsatkichi qaysi oraliqda bo‘lishi lozim?",
       "options": [
-        "0,01 dan 0,1 gacha",
-        "0,2 dan 1,0 gacha",
         "1,0 dan 2,0 gacha",
-        "2,0 dan 5,0 gacha"
+        "2,0 dan 5,0 gacha",
+        "0,2 dan 1,0 gacha",
+        "0,01 dan 0,1 gacha"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Eritma konsentratsiyasini tanlashda optik ko‘rsatkich 0,2 dan 1,0 gacha oraliqda bo‘lishi lozim.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1285,11 +2098,11 @@
       "question": "Kofeinning standart eritmasi uchun qancha kofein tortib olinadi?",
       "options": [
         "0,01 g",
-        "0,1 g",
         "1,0 g",
-        "0,5 g"
+        "0,5 g",
+        "0,1 g"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Analitik tarozda 0,1 g kofein tortib olinib, 100 ml o‘lchov kolbasiga solinadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1300,12 +2113,12 @@
     {
       "question": "Teofillinning 0,1 M HCl dagi eritmasi qaysi to‘lqin uzunligida maksimum nur yutadi?",
       "options": [
+        "260 nm",
         "273 nm",
         "270 nm",
-        "260 nm",
         "285 nm"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Teofillinning 0,1 M HCl dagi eritmasi 270 nm da maksimum nur yutadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1316,10 +2129,10 @@
     {
       "question": "Purin alkaloidlari uchun faqat mureksid reaksiyasiga tayanish nima uchun noto‘g‘ri?",
       "options": [
-        "Reaksiya juda sekin boradi",
+        "Reaksiya rangsiz",
         "Boshqa alkaloidlar ham berishi mumkin",
         "Reaksiya faqat ishqorda ketadi",
-        "Reaksiya rangsiz"
+        "Reaksiya juda sekin boradi"
       ],
       "correct_index": 1,
       "explanation": "Mureksid reaksiyasini boshqa alkaloidlar ham berishi mumkin, shuning uchun 2 yoki undan ortiq reaksiya va usul qo‘llanadi.",
@@ -1327,6 +2140,166 @@
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "102"
+      }
+    },
+    {
+      "question": "Kofeinning kimyoviy nomi qaysi?",
+      "options": [
+        "3,7-dimetilksantin",
+        "1,3,7-trimetilksantin",
+        "7-metilksantin",
+        "1,3-dimetilksantin"
+      ],
+      "correct_index": 1,
+      "explanation": "Kofein 1,3,7-trimetilksantin, teofillin 1,3-dimetilksantin, teobromin 3,7-dimetilksantin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "104"
+      }
+    },
+    {
+      "question": "Teobromin Nessler reaktivi bilan qanday rang hosil qiladi?",
+      "options": [
+        "Ko‘k",
+        "Yashil",
+        "Och-qo‘ng‘ir",
+        "Qizil-qo‘ng‘ir"
+      ],
+      "correct_index": 2,
+      "explanation": "Teobromin Nessler reaktivi bilan och-qo‘ng‘ir rang, kofein esa qizil-qo‘ng‘ir rang hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "236"
+      }
+    },
+    {
+      "question": "Kofeinning simob bromid bilan mikrokristall reaksiyasida simob bromid konsentratsiyasi qancha?",
+      "options": [
+        "0,1%",
+        "5%",
+        "50%",
+        "1%"
+      ],
+      "correct_index": 1,
+      "explanation": "Buyum oynachasidagi qoldiqqa 1 tomchi 0,1 M HCl va 1 tomchi 5% simob bromid eritmasi tomiziladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "236"
+      }
+    },
+    {
+      "question": "Purin alkaloidlari YuQX da qaysi sistemada tahlil qilinadi?",
+      "options": [
+        "Geksan-aseton (4:1)",
+        "Efir-aseton-25% NH4OH (40:20:1)",
+        "Aseton-xloroform (1:9)",
+        "Xloroform-n-butanol-NH4OH (70:40:5)"
+      ],
+      "correct_index": 1,
+      "explanation": "Yupqa qatlam xromatografiyasi uchun sistema: efir-aseton-25% NH4OH (40:20:1).",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "236"
+      }
+    },
+    {
+      "question": "Teofillinning YuQX dagi Rf qiymati qancha?",
+      "options": [
+        "0,22",
+        "0,21",
+        "0,33",
+        "0,47"
+      ],
+      "correct_index": 0,
+      "explanation": "Teobromin uchun Rf = 0,47, teofillin uchun Rf = 0,22.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "237"
+      }
+    },
+    {
+      "question": "Teobrominning 0,1 M ishqordagi eritmasi qaysi to‘lqin uzunligida maksimum nur yutadi?",
+      "options": [
+        "273 nm",
+        "250 nm",
+        "258 nm",
+        "270 nm"
+      ],
+      "correct_index": 0,
+      "explanation": "Teobrominning 0,1 M ishqordagi eritmasi 273 nm da maksimum nur yutish spektrini namoyon qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "237"
+      }
+    },
+    {
+      "question": "Kofeinning 0,1 M HCl dagi eritmasi qaysi to‘lqin uzunligida maksimum beradi?",
+      "options": [
+        "273 nm",
+        "270 nm",
+        "272 nm",
+        "300 nm"
+      ],
+      "correct_index": 2,
+      "explanation": "Kofein etil spirtida 273 nm, 0,1 M HCl da 272 nm da maksimum beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "236"
+      }
+    },
+    {
+      "question": "Issiqlikda sublimatsiyalanuvchi moddalardan qaysi biri kofein bilan birga quruq haydash bilan tozalanadi?",
+      "options": [
+        "Strixnin",
+        "Barbituratlar",
+        "Morfin",
+        "Atropin"
+      ],
+      "correct_index": 1,
+      "explanation": "Quruq haydash bilan barbituratlar, benzoy va salitsil kislotalari, kofein tozalanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "93"
+      }
+    },
+    {
+      "question": "Teobromin qaysi erituvchida yaxshi eriydi (kofeindan farqi)?",
+      "options": [
+        "Suv bug‘ida",
+        "Benzin",
+        "Efir",
+        "CCl4"
+      ],
+      "correct_index": 3,
+      "explanation": "Teobromin CCl4 da yaxshi eriydi — bu kofeindan farqi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "106"
+      }
+    },
+    {
+      "question": "Teofillin preparatlari qaysi qatorda berilgan?",
+      "options": [
+        "Nikotin, anabazin",
+        "Atropin, skopolamin, xinin",
+        "Aspirin, salol, analgin",
+        "Eufillin, teofedrin, antastman"
+      ],
+      "correct_index": 3,
+      "explanation": "Teofillin tibbiyotda kukun, tabletka (eufillin, teofedrin, antastman) holida ishlatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "106"
       }
     }
   ],
@@ -1369,7 +2342,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 102-106, 166, 236-239"
+      "pages": "b. 93, 96, 102-106, 166, 236-239"
     },
     {
       "author": "Yuldashev Z.A., Nurmatova M.I.",

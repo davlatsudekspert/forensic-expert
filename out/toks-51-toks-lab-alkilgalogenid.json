@@ -70,6 +70,70 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: izonitril reaksiyasi uchun nima talab qilinadi? (Havo tortuvchi shkaf — toks 182.) Doskada: jihozlar. Tipik xato: ikkinchi distillyat o‘rniga birinchi (ishqorli) distillyatni olish."
     },
     {
+      "title": "Alkilgalogenidlar guruhi",
+      "bullets": [
+        {
+          "text": "Alkilgalogenidlarga xloroform, xloralgidrat, to‘rtxlorli uglerod (CCl4) va 1,2-dixloretan kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36-38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ularni biologik ob’ektdan ajratib olishda haydash usullari qo‘llanadi; xloroform va dixloretan suv bug‘i bilan haydaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36, 38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xlor atomini saqlovchi barcha birikmalar organik xlorni xlorid ioniga o‘tkazish reaksiyasini beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Alkilgalogenidlar",
+        "children": [
+          {
+            "label": "Xloroform",
+            "items": [
+              "CHCl3"
+            ]
+          },
+          {
+            "label": "Xloralgidrat",
+            "items": [
+              "CCl3-CHO · H2O"
+            ]
+          },
+          {
+            "label": "To‘rtxlorli uglerod",
+            "items": [
+              "CCl4"
+            ]
+          },
+          {
+            "label": "1,2-Dixloretan",
+            "items": [
+              "CH2Cl-CH2Cl (DXE)"
+            ]
+          }
+        ],
+        "caption": "Alkilgalogenidlar (36-38-betlar)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ularni nima birlashtiradi? Doskada: 4 formula. Tipik xato: xloralgidratni alohida sinf deb hisoblash."
+    },
+    {
       "title": "Xloroform: ahamiyati va xossalari",
       "bullets": [
         {
@@ -113,6 +177,109 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: xloroform namunasini nega yorug‘likdan saqlash kerak? (Fosgen hosil bo‘lishi.) Doskada: 5-10 g, 1:200. Tipik xato: xloroform bilan surunkali zaharlanishni unutish: jigar sirrozi (toks 36). Kitobda: xloroform «62 °C» (toks 36, xato); to‘g‘ri qiymat 61,16 °C (malaka 054, 2-jadval)."
     },
     {
+      "title": "Xloroform: zaharlanish va chiqarilish",
+      "bullets": [
+        {
+          "text": "5-10 g xloroform kuchli zaharlanishga olib keladi: oshqozonda qattiq og‘riq, ko‘ngil aynishi; o‘lim nafas olish markazi falajidan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surunkali zaharlanishda jigar faoliyati ishdan chiqadi, jigar sirrozi, buyrak va yurak mushaklari zararlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform organizmdan o‘zgarmagan holda chiqariladi; patologoanatomik ko‘rinish xarakterli emas.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kuchli zaharlanish",
+            "value": "5-10",
+            "unit": "g"
+          },
+          {
+            "label": "Suvda eruvchanligi",
+            "value": "1:200"
+          },
+          {
+            "label": "Suvga nisbatan",
+            "value": "og‘irroq"
+          },
+          {
+            "label": "Chiqarilishi",
+            "value": "o‘zgarmagan"
+          }
+        ],
+        "caption": "Xloroform (36-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega patologoanatomik ko‘rinish xarakterli emas — bu sud kimyogari uchun nimani anglatadi? Doskada: raqamlar. Qaynash harorati kitobda 62 °C deb berilgan, ilmiy muharrir qarori bo‘yicha slaydga yozilmadi. Tipik xato: surunkali zaharlanishni o‘tkir zaharlanish bilan aralashtirish."
+    },
+    {
+      "title": "Xloroform fosgenga aylanishi",
+      "bullets": [
+        {
+          "text": "Ochiq havoda quyosh nuri ta’sirida xloroform oksidlanib, juda zaharli birikma — fosgenni hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform ochiq havoda parlanadi, o‘ziga xos hidli, chuchmal mazali; efir va boshqa organik erituvchilar bilan yaxshi aralashadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suv bug‘i bilan tez va oson haydaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Xloroform CHCl3",
+          "Kislorod (quyosh nuri)"
+        ],
+        "products": [
+          "Fosgen COCl2",
+          "HCl"
+        ],
+        "caption": "Fosgen hosil bo‘lishi (36-bet)",
+        "conditions": "Ochiq havo, yorug‘lik",
+        "observation": "Juda zaharli fosgen hosil bo‘ladi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega xloroform namunasi nur ta’siridan saqlanadi? (kitobda saqlash ko‘rsatmasi yo‘q — o‘qituvchi izohi.) Doskada: CHCl3 + O → COCl2 + HCl. Tipik xato: eski xloroformni xavfsiz deb hisoblash."
+    },
+    {
       "title": "Xloralgidrat va to‘rtxlorli uglerod",
       "bullets": [
         {
@@ -154,6 +321,177 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: xloralgidrat ishqorda xloroformga o‘tishi farqlash usuliga qanday ta’sir qiladi? Doskada: xloralgidrat -> xloroform (NaOH). Tipik xato: xloralgidratni uchuvchan suyuqlik deb hisoblash — u kristall modda."
+    },
+    {
+      "title": "Xloralgidrat: dozasi va zaharlanishi",
+      "bullets": [
+        {
+          "text": "Xloralgidrat avval nerv sistemasini qo‘zg‘atadi, so‘ngra tinchlantiradi; tibbiyotda 0,2-0,5 g atrofida uxlatuvchi preparat sifatida ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlanganda yurak va qon tomir tarmog‘iga salbiy ta’sir, nafas tezlashishi, tana harorati pasayishi, ko‘z qorachig‘i torayishi kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nafas olish va yurak urishi to‘xtashidan o‘lim sodir bo‘ladi; B shkafda saqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Tinchlantiruvchi doza",
+            "value": "0,2-0,5",
+            "unit": "g"
+          },
+          {
+            "label": "Sutkali doza",
+            "value": "6",
+            "unit": "g"
+          },
+          {
+            "label": "Saqlanishi",
+            "value": "B shkaf"
+          },
+          {
+            "label": "Qorachiq",
+            "value": "torayadi"
+          },
+          {
+            "label": "Tana harorati",
+            "value": "pasayadi"
+          }
+        ],
+        "caption": "Xloralgidrat (38-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: xloralgidrat xloroformdan nimasi bilan farqlanadi? (kristall modda.) Doskada: ko‘rsatkichlar. Tipik xato: xloralgidratni gaz yoki suyuqlik deb o‘ylash."
+    },
+    {
+      "title": "Xloralgidrat ishqorda parchalanishi",
+      "bullets": [
+        {
+          "text": "Xloralgidrat rangsiz, tiniq kristall yoki kukun, o‘tkir hidli, achchiq mazali; suvda va efirda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishqoriy muhitda va yuqori haroratda parchalanib xloroform hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloralgidrat kristall modda bo‘lgani uchun uy haroratida efir bilan birga uchmaydi — farqlash shunga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "183"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Xloralgidrat CCl3-CHO",
+          "NaOH"
+        ],
+        "products": [
+          "Xloroform CHCl3",
+          "Natriy formiat"
+        ],
+        "caption": "Parchalanish (38-bet)",
+        "conditions": "Ishqoriy muhit, qizdirish",
+        "observation": "Xloroform hosil bo‘ladi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega tahlilda ishqor bilan qizdirish xloralgidrat va xloroformni bir xil natija bergan? Doskada: CCl3CHO + NaOH → CHCl3 + HCOONa. Tipik xato: ishqor bilan qizdirishni farqlovchi sinov deb hisoblash."
+    },
+    {
+      "title": "CCl4: ishlatilishi va zaharlanishi",
+      "bullets": [
+        {
+          "text": "CCl4 laklar, moyli bo‘yoqlar va kauchukni eritishda, teri va junni konservalashda, gijja haydovchi va yong‘in o‘chirishda ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlanganda ko‘ngil aynishi, qusish, uyqu bosishi, bosh aylanishi; jigar va buyrak tez ishdan chiqadi, sariq kasali, jigarni yog‘ bosadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "CCl4 shilliq qavat orqali tez shimiladi; dori sifatida qo‘llanilganda yog‘li ovqat iste’mol qilmaslik kerak; dozasi 3 ml.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "To‘rtxlorli uglerod",
+        "children": [
+          {
+            "label": "Qo‘llanilishi",
+            "items": [
+              "Lak, bo‘yoq, kauchuk eritish",
+              "Gijja haydovchi",
+              "Yong‘inni o‘chirish"
+            ]
+          },
+          {
+            "label": "Zaharlanishda",
+            "items": [
+              "Ko‘ngil aynishi, qusish",
+              "Jigar va buyrak ishdan chiqadi",
+              "Sariq kasali, jigarni yog‘ bosadi"
+            ]
+          },
+          {
+            "label": "Xavfsizlik",
+            "items": [
+              "B shkafda saqlanadi",
+              "Xodimlar har 6 oyda ko‘rikdan o‘tadi"
+            ]
+          }
+        ],
+        "caption": "CCl4 (38-bet)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: CCl4 yong‘inni qanday o‘chiradi? (og‘ir pari havo kislorodidan ajratadi — 38-bet.) Doskada: daraxt. Tipik xato: CCl4 dozasini xloralgidrat dozasi bilan adashtirish."
     },
     {
       "title": "1,2-Dixloretan",
@@ -278,6 +616,53 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: manfiy natija nimani bildiradi? (Galogenli birikmalar yo‘q.) Doskada: ’xlor bor = ha, qaysi modda = hali yo‘q’. Tipik xato: bu reaksiya asosida xloroformni aniqlandi deb yozish."
     },
     {
+      "title": "Xlorid ioni reaksiyasi tenglamalari",
+      "bullets": [
+        {
+          "text": "Xloroform spirtli ishqor bilan qizdirilganda chumoli kislotasi va NaCl hosil bo‘ladi; sovitilgach nitrat kislotali muhitda AgNO3 oq cho‘kma beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xlor atomini saqlovchi barcha birikmalar, masalan CCl4, bu reaksiyani beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya manfiy sud-kimyoviy ahamiyatga ega: u moddalarni bir-biridan farqlamaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Alkilgalogenid + NaOH (spirtli)",
+          "AgNO3 (HNO3 muhitida)"
+        ],
+        "products": [
+          "NaCl",
+          "AgCl"
+        ],
+        "caption": "Xlorid ioni (36, 182-betlar)",
+        "conditions": "Qizdirish, so‘ng nordonlashtirish",
+        "observation": "Oq cho‘kma, 25% ammiakda eriydi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bu reaksiya manfiy ahamiyatli? Doskada: CHCl3 + NaOH → 3NaCl + HCOOH + H2O; NaCl + AgNO3 → AgCl + NaNO3. Tipik xato: oq cho‘kma bo‘lsa xloroform topildi deb xulosa qilish."
+    },
+    {
       "title": "Izonitril reaksiyasi",
       "bullets": [
         {
@@ -319,6 +704,55 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: badbo‘y hid (izonitril). Xavfsizlik: faqat so‘rish shkafida; ish tugagach sulfat kislota bilan zararsizlantiriladi. Kitob talabi: tenglamani yozing. Tipik xato: hidni shkafdan tashqarida baholash."
+    },
+    {
+      "title": "Izonitril reaksiyasi mohiyati",
+      "bullets": [
+        {
+          "text": "Distillyatga anilin va ishqor qo‘shib qizdirilsa, xarakterli badbo‘y hidli izonitril hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu reaksiyani CCl4 va xloralgidrat beradi, dixloretan bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "36"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya havo tortuvchi shkaf tagida bajariladi; badbo‘y hid sulfat kislota bilan bartaraf etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "182"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Xloroform CHCl3",
+          "NaOH",
+          "Anilin C6H5NH2"
+        ],
+        "products": [
+          "Izonitril C6H5N=C",
+          "NaCl",
+          "H2O"
+        ],
+        "caption": "Izonitril (36, 182-betlar)",
+        "conditions": "Qizdirish 1-2 daqiqa",
+        "observation": "Badbo‘y hid"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bu reaksiya faqat shkaf tagida bajariladi? Doskada: CHCl3 + NaOH + C6H5NH2 → C6H5N=C + 3NaCl + H2O. Tipik xato: izonitrilni to‘kishdan oldin gidrolizlamaslik."
     },
     {
       "title": "Rezortsin va Feling reaksiyalari",
@@ -385,7 +819,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Piridin + alkilgalogenid (ishqor)",
+          "Piridin tuzi hosil bo‘ladi",
+          "Ishqorda glyutakon aldegid hosilasi",
+          "Qizil rang"
+        ],
+        "caption": "Fudjivara reaksiyasi (37-bet)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Eslatma: Fudjivara reaksiyasining bajarish tartibi (hajm, harorat) kitobning 181-185 betlarida berilmagan; «Charxpalak» jadvalida (183) nomi bor. Reaktiv miqdorlarini o‘qituvchi beradi. Muhokama: nega piridin kerak? (Kitob: piridin tuzi hosil bo‘ladi.) Tipik xato: bajarish miqdorlarini o‘ylab topish."
     },
     {
@@ -453,8 +896,73 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Chumoli kislota",
+            "text": "CHCl3 + 3NaOH → HCOOH + NaCl + H2O"
+          },
+          {
+            "title": "Cu(OH)2 hosil bo‘ladi",
+            "text": "CuSO4 + 2NaOH → Cu(OH)2 + Na2SO4"
+          },
+          {
+            "title": "Qaytarilish",
+            "text": "HCOOH mis (II)-gidroksidni qaytaradi"
+          },
+          {
+            "title": "Cho‘kma",
+            "text": "Sariq CuOH, so‘ng qizil Cu2O"
+          }
+        ],
+        "caption": "Feling asosi (37-bet)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: formaldegid ham Feling beradi — natijani baholashda nimaga e’tibor beriladi? Doskada: CHCl3 -> HCOOH -> Cu2O. Eslatma: kitob tenglamasi (toks 37) koeffitsientlari bilan to‘liq tenglashtirilmagan (kitobda xato: koeffitsientlar) — talaba o‘zi tenglashtirib yozadi. Tipik xato: Feling musbat natijasini faqat xloroformga bog‘lash."
+    },
+    {
+      "title": "Xloroform, xloralgidrat va CCl4 ni farqlash algoritmi",
+      "bullets": [
+        {
+          "text": "Avval organik xlorni xlorid ioniga o‘tkazish: barcha xlororganik birikmalar musbat — farqlamaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "182"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Feling reaksiyasi: xloroform va xloralgidrat beradi, CCl4 bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "183"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Efir bilan chayqatib uchirilgach, qoldiqda reaksiya ijobiy bo‘lsa — xloralgidrat, manfiy bo‘lsa — xloroform.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "183"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Organik xlor → Cl- (hammasi musbat)",
+          "Feling suyuqligi bilan sinash",
+          "Manfiy bo‘lsa — CCl4",
+          "Musbat bo‘lsa — efir bilan ajratish",
+          "Ijobiy: xloralgidrat; manfiy: xloroform"
+        ],
+        "caption": "Farqlash tartibi (182-183-betlar)"
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega xloralgidrat efir bilan birga uchmaydi? Doskada: oqim sxemasi. Tipik xato: bitta reaksiyaga asoslanib xulosa qilish."
     },
     {
       "title": "Natijani hujjatlashtirish va talqin",
@@ -669,6 +1177,166 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Eslatma: DXE tahlili bu mashg‘ulotda faqat o‘qituvchi ko‘rsatmasi asosida (toks 183). Atsetilenid reaksiyasi ampula talab qiladi — talaba mustaqil bajarmaydi. Muhokama: nega DXE izonitril bermaydi? Tipik xato: atsetilenid reaksiyasini oddiy probirkada bajarish."
     },
     {
+      "title": "Dixloretanni boshqalardan farqlash",
+      "bullets": [
+        {
+          "text": "1,2-dixloretan xloroform va CCl4 dan tutab yonishi bilan farqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "DXE izonitril hosil qilmaydi, Feling suyuqligi va rezortsin bilan reaksiya bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "37"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Unga Fudjivara, atsetilenid mis va etilenglikoldan formaldegid hosil qilish reaksiyalari xos.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "39"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "DXE bermaydi",
+            "items": [
+              "Izonitril reaksiyasi",
+              "Feling suyuqligi bilan",
+              "Rezortsin bilan",
+              "Ishqorda xlor to‘liq ajralmaydi"
+            ]
+          },
+          {
+            "title": "DXE uchun xos",
+            "items": [
+              "Tutab yonish",
+              "Fudjivara reaksiyasi",
+              "Mis atsetilenidi",
+              "Etilenglikol → formaldegid"
+            ]
+          }
+        ],
+        "caption": "Dixloretan (37-39-betlar)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reaksiyalar DXE ni boshqa alkilgalogenidlardan ajratadi? Doskada: ikki ustun. Dixloretan tahlili faqat o‘qituvchi ko‘rsatmasi bilan bajariladi (183-bet). Tipik xato: DXE ni xloroform kabi Feling bilan topishga urinish."
+    },
+    {
+      "title": "DXE: atsetilenid mis reaksiyasi",
+      "bullets": [
+        {
+          "text": "1,2-dixloretan va NaOH ampulaga solinib, og‘zi berkitilib, suv hammomida qaynatilsa atsetilen hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "39"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Atsetilen mis tuzlari bilan pushti yoki olcha rangli qizil mis atsetilenidini hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "39"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya faqat o‘qituvchi ko‘rsatmasi asosida bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "183"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "1,2-dixloretan",
+          "NaOH (ampulada)",
+          "Cu(NO3)2 + NH4OH"
+        ],
+        "products": [
+          "Atsetilen",
+          "Mis atsetilenidi"
+        ],
+        "caption": "Atsetilenid mis (39-bet)",
+        "conditions": "Suv hammomida qaynatish",
+        "observation": "Pushti yoki olcha rangli qizil cho‘kma"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ampula ishlatiladi? Doskada: CH2Cl-CH2Cl + 2NaOH → HC≡CH + 2NaCl + 2H2O. Tipik xato: reaksiyani ochiq probirkada bajarish."
+    },
+    {
+      "title": "DXE → etilenglikol → formaldegid",
+      "bullets": [
+        {
+          "text": "Nazarenko va Lapkina (1952): DXE dan xlor bikarbonat yoki ishqoriy sharoitda bosim ostida (berkitilgan ampulada) qizdirilganda oson ajraladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "39"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hosil bo‘lgan etilenglikol formaldegidgacha oksidlanadi va xromotrop yoki fuksinsulfit kislotasi bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "39"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Formaldegid mineral kislotalar ishtirokida pushti rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "39"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Gidroliz",
+            "text": "ClCH2-CH2Cl + Na2CO3 + H2O → etilenglikol + NaCl"
+          },
+          {
+            "title": "Oksidlash",
+            "text": "Etilenglikol KIO4 + H2SO4 bilan formaldegidgacha"
+          },
+          {
+            "title": "Aniqlash",
+            "text": "Xromotrop yoki fuksinsulfit kislotasi"
+          },
+          {
+            "title": "Natija",
+            "text": "Mineral kislotada pushti (xinoid) rang"
+          }
+        ],
+        "caption": "DXE tahlili (39-bet)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega DXE ni to‘g‘ridan-to‘g‘ri xlorid reaksiyasi bilan topish cheklangan? Doskada: 4 qadam. Kitobdagi periodat tenglamasi ikki tomonida KIO4 yozilgan (ziddiyat) — tenglama qo‘yilmadi. Tipik xato: bosimsiz qizdirish."
+    },
+    {
       "title": "Miqdori: argentometriya va GSX",
       "bullets": [
         {
@@ -699,7 +1367,15 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Organik birikkan xlor ajratiladi",
+          "Argentometrik aniqlash",
+          "Indikator: temir ammoniy achchiqtosh"
+        ],
+        "caption": "Miqdor (37, 39-betlar)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega xlor oldin xlorid ionga o‘tkaziladi? Doskada: ’org. Cl -> Cl- -> AgNO3/NH4CNS’. Eslatma: malaka 004 va 097 ham alkilgalogenidlar miqdorini GSX bilan aniqlashni ko‘rsatadi; kitobda GSX parametrlari berilmagan. Tipik xato: argentometrik usul faqat noorganik xlor uchun deb o‘ylash."
     },
     {
@@ -735,6 +1411,66 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: talaba CCl4 ni taxmin qiladi (kitob: yong‘inni o‘chirishda ishlatiladi — toks 38), keyin farqlash rejasi: Cl- ga o‘tkazish, izonitril, Feling (CCl4 manfiy). Kitob keysga tayyor javob bermaydi. Muhokama: qon namunasidan bu moddani qanday ajratamiz? (Suv bug‘i bilan haydash — oldingi mashg‘ulotlar.) Tipik xato: faqat bir reaksiya asosida xulosa."
+    },
+    {
+      "title": "5-keys: yechish yo‘li",
+      "bullets": [
+        {
+          "text": "Keys: o‘t o‘chiruvchilardan birining qon namunasi keltirildi; zaharlanish kimyoviy modda bilan sodir bo‘lgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "183"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "CCl4 yong‘inni o‘chirishda ishlatiladi: og‘ir bug‘i yonayotgan neft, benzinni havo kislorodidan ajratadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Savol: dastlabki taxminlar qaysi modda uchun tahlil olib borishni ko‘rsatadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "183"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Taxmin",
+            "text": "O‘t o‘chiruvchi vositada CCl4 ishlatiladi"
+          },
+          {
+            "title": "Ajratish",
+            "text": "Suv bug‘i bilan haydash, ikkinchi distillyat"
+          },
+          {
+            "title": "Xlor sinovi",
+            "text": "Organik xlor → Cl-: musbat (barcha alkilgalogenid)"
+          },
+          {
+            "title": "Farqlash",
+            "text": "Feling: CCl4 manfiy; xloroform/xloralgidrat musbat"
+          },
+          {
+            "title": "Miqdor",
+            "text": "Argentometriya yoki GSX"
+          }
+        ],
+        "caption": "Keys yechimi (38, 183-betlar)"
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kitob keysga javob bermaydi; qadamlar 38 va 182-183-betlar asosida o‘qituvchi uchun yo‘nalish. Muhokama: nega qonda ham ajratish usuli muhim? Tipik xato: faqat bitta reaksiyaga tayanish.",
+      "diagram_note": "Keys qadamlari kitob materiallari asosida taxminiy (kitobda javob berilmagan)."
     },
     {
       "title": "Vaziyatli masala 1: jigar va buyrak sarg‘aygan",
@@ -774,7 +1510,7 @@
       "title": "Vaziyatli masala 2: xlor hidi",
       "bullets": [
         {
-          "text": "1972 yilda tug‘ilgan «U.L» murda ichki a’zolari (jigar, oshqozon, qizilo‘ngach) keltirilgan; oshqozon va qizilo‘ngach bo‘laklarida o‘ziga xos xlor hidi kuzatilgan.",
+          "text": "1972 yilda tug‘ilgan «U.L» murda ichki a’zolari (jigar, oshqozon, qizilo‘ngach) keltirilgan; oshqozon va qizilo‘ngach bo‘laklarida o‘ziga xos xlor hidi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -803,6 +1539,71 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: Feling musbat — xloroform yoki xloralgidrat (CCl4 va dixloretan bermaydi — toks 37); ularni efir bilan farqlash tartibi (182-183) rejalanadi. Eslatma: Feling reaksiyasini aldegidlar (formaldegid) ham beradi (toks 37) — bu hisobga olinadi. Tipik xato: Feling musbat = xloroform deb yakuniy xulosa qilish."
+    },
+    {
+      "title": "Vaziyatli masalalar: taxmin yo‘li",
+      "bullets": [
+        {
+          "text": "1-masala: jigar va buyrak sarg‘aygan va yog‘ qoplagan; ikkinchi distillyatda Cl- reaksiyasi musbat (ammiakda eriydigan oq cho‘kma).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "184"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "2-masala: oshqozon va qizilo‘ngachda xlor hidi; Feling reaksiyasi musbat — sariq, so‘ng qizil cho‘kma.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "184"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "CCl4 jigar va buyrakni tez ishdan chiqaradi va jigarni yog‘ bosadi; Feling bilan xloroform va xloralgidrat reaksiya beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "38"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Masala",
+          "Belgi",
+          "Mumkin bo‘lgan taxmin"
+        ],
+        "rows": [
+          [
+            "1-masala",
+            "Jigar sarg‘ayishi, yog‘ bosishi",
+            "Xlororganik birikma (CCl4 belgilari)"
+          ],
+          [
+            "1-masala",
+            "Cl- reaksiyasi musbat",
+            "Alkilgalogenidlar guruhi"
+          ],
+          [
+            "2-masala",
+            "Feling musbat",
+            "Xloroform yoki xloralgidrat"
+          ],
+          [
+            "2-masala",
+            "Feling musbat bo‘lsa",
+            "CCl4 va DXE istisno"
+          ]
+        ],
+        "caption": "Masalalar (184, 36-38-betlar)"
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qo‘shimcha qaysi reaksiyalar kerak? Kitobda masalalarga javob berilmagan; jadval 36-38 va 182-183-betlar asosida o‘qituvchi uchun taxminiy yo‘nalish. Tipik xato: taxminni yakuniy xulosa deb yozish.",
+      "diagram_note": "Jadvaldagi taxminlar kitob materiallari asosida; kitobda masala javobi yo‘q."
     },
     {
       "title": "«Charxpalak»: reaksiyalar va moddalar",
@@ -920,12 +1721,12 @@
     {
       "question": "Organik birikkan xlorni xlorid ionga o‘tkazish uchun distillyatga nima qo‘shiladi?",
       "options": [
-        "10% natriy ishqorining spirtdagi eritmasi",
         "Konsentrlangan H2SO4",
         "10% HCl",
+        "10% natriy ishqorining spirtdagi eritmasi",
         "Brom suvi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "1-2 ml distillyatga 1 ml 10% natriy ishqorining spirtdagi eritmasi qo‘shilib, suv hammomida qaynatiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -936,12 +1737,12 @@
     {
       "question": "Xlorid ioni uchun AgNO3 ning qaysi konsentratsiyasidan va qancha qo‘shiladi?",
       "options": [
-        "5%, 0,5 ml",
         "1%, 5 ml",
+        "25%, 2 ml",
         "10%, 1 ml",
-        "25%, 2 ml"
+        "5%, 0,5 ml"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Nitrat kislota bilan nordonlashtirilgach 5% AgNO3 dan 0,5 ml qo‘shiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -953,9 +1754,9 @@
       "question": "Hosil bo‘lgan oq cho‘kma qaysi eritmada eriydi?",
       "options": [
         "25% ammiak",
+        "Etil spirti",
         "10% HNO3",
-        "Suv",
-        "Etil spirti"
+        "Suv"
       ],
       "correct_index": 0,
       "explanation": "Cho‘kma 25% ammiak eritmasida eriydi.",
@@ -969,9 +1770,9 @@
       "question": "Izonitril reaksiyasi qayerda bajariladi?",
       "options": [
         "Havo tortuvchi shkaf tagida",
+        "Sovutgichda",
         "Ochiq stolda",
-        "Suv hammomida ochiq",
-        "Sovutgichda"
+        "Suv hammomida ochiq"
       ],
       "correct_index": 0,
       "explanation": "Izonitril reaksiyasi havo tortuvchi shkaf tagida bajarilishi lozim.",
@@ -984,12 +1785,12 @@
     {
       "question": "Izonitrilning badbo‘y hidi qanday bartaraf etiladi?",
       "options": [
-        "Sulfat kislota bilan gidrolizlab",
         "Suv bilan suyultirib",
         "Qizdirib",
+        "Sulfat kislota bilan gidrolizlab",
         "Ammiak bilan"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Probirkaga oz miqdorda sulfat kislota qo‘shib, izonitril gidrolizga uchratiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1000,12 +1801,12 @@
     {
       "question": "Rezortsin reaksiyasi qancha vaqt qaynoq suv hammomida olib boriladi?",
       "options": [
-        "2-10 daqiqa",
+        "15 soniya",
         "30-40 daqiqa",
         "1 soat",
-        "15 soniya"
+        "2-10 daqiqa"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Ikkala probirka qaynayotgan suv hammomida 2-10 daqiqa qo‘yiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1017,9 +1818,9 @@
       "question": "Qaysi modda Feling suyuqligi bilan reaksiyaga kirishmaydi?",
       "options": [
         "To‘rtxlorli uglerod",
+        "Formaldegid",
         "Xloroform",
-        "Xloralgidrat",
-        "Formaldegid"
+        "Xloralgidrat"
       ],
       "correct_index": 0,
       "explanation": "To‘rtxlorli uglerod mis (II)-gidroksidni qaytarish xususiyatiga ega emas.",
@@ -1032,12 +1833,12 @@
     {
       "question": "Distillyat efir bilan chayqatilganda qoldiq reaksiya bersa, qaysi modda bor?",
       "options": [
-        "Xloralgidrat",
-        "Xloroform",
         "CCl4",
-        "Dixloretan"
+        "Xloralgidrat",
+        "Dixloretan",
+        "Xloroform"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Xloralgidrat kristall modda bo‘lib, uy haroratida efir bilan uchmaydi; qoldiq reaksiya beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1048,12 +1849,12 @@
     {
       "question": "Xloroform efir bilan qanday holatda bo‘ladi?",
       "options": [
+        "Parchalanadi",
         "Efir bilan birga uchib ketadi",
         "Qoldiqda qoladi",
-        "Cho‘kmaga tushadi",
-        "Parchalanadi"
+        "Cho‘kmaga tushadi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Xloroform efir bilan birga uchib ketadi, shuning uchun qoldiq manfiy natija beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1080,17 +1881,161 @@
     {
       "question": "Xloroform nur ta’sirida qaysi zaharli birikmaga aylanadi?",
       "options": [
-        "Fosgen",
         "Formaldegid",
-        "Xloralgidrat",
-        "Izonitril"
+        "Fosgen",
+        "Izonitril",
+        "Xloralgidrat"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Ochiq havoda quyosh nuri ta’sirida oksidlanib juda zaharli fosgenni hosil qiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "36"
+      }
+    },
+    {
+      "question": "Xloroformning suvda eruvchanligi qanday nisbatda berilgan?",
+      "options": [
+        "Suvda juda yaxshi eriydi",
+        "1:2000",
+        "1:200",
+        "1:20"
+      ],
+      "correct_index": 2,
+      "explanation": "Xloroform suvdan ancha og‘ir, suvda yomon eriydigan (1:200) suyuqlik.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "36"
+      }
+    },
+    {
+      "question": "Xloroform bilan zaharlanishda o‘lim nimadan sodir bo‘ladi?",
+      "options": [
+        "Buyrak yetishmovchiligidan",
+        "Yurak urishining to‘xtashidan",
+        "Nafas olish markazi falajidan",
+        "Jigar yetishmovchiligidan"
+      ],
+      "correct_index": 2,
+      "explanation": "Xloroform bilan zaharlanganda o‘lim nafas olish markazi falajlanishidan sodir bo‘ladi, patologoanatomik ko‘rinish xarakterli emas.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "36"
+      }
+    },
+    {
+      "question": "Xloralgidrat tibbiyotda qancha miqdorda tinchlantiruvchi, uxlatuvchi preparat sifatida ishlatiladi?",
+      "options": [
+        "0,2-0,5 g",
+        "3 ml",
+        "15-20 ml",
+        "5-10 g"
+      ],
+      "correct_index": 0,
+      "explanation": "Xloralgidrat tibbiyotda 0,2-0,5 g atrofida tinchlantiruvchi, uxlatuvchi preparat sifatida ishlatiladi; sutkali dozasi 6 g.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "38"
+      }
+    },
+    {
+      "question": "Xloralgidrat ishqoriy muhitda va yuqori haroratda parchalanib nima hosil qiladi?",
+      "options": [
+        "Atsetilen",
+        "Fosgen",
+        "Etilenglikol",
+        "Xloroform"
+      ],
+      "correct_index": 3,
+      "explanation": "Xloralgidrat ishqoriy muhitda va yuqori haroratda parchalanib xloroform hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "38"
+      }
+    },
+    {
+      "question": "To‘rtxlorli uglerodning tibbiyotdagi dozasi qancha?",
+      "options": [
+        "15-20 ml",
+        "3 ml",
+        "6 g",
+        "0,2-0,5 g"
+      ],
+      "correct_index": 1,
+      "explanation": "CCl4 ning dozasi 3 ml; xodimlar tibbiy ko‘rigi har 6 oyda o‘tkaziladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "38"
+      }
+    },
+    {
+      "question": "1,2-dixloretan xloroform va CCl4 dan nimasi bilan farqlanadi?",
+      "options": [
+        "Suvda yaxshi erishi bilan",
+        "Kristall holati bilan",
+        "Tutab yonishi bilan",
+        "Rangi bilan"
+      ],
+      "correct_index": 2,
+      "explanation": "1,2-dixloretan (DXE) xloroform va CCl4 dan tutab yonishi bilan farqlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "38"
+      }
+    },
+    {
+      "question": "1,2-dixloretan NaOH bilan ampulada qaynatilganda qaysi gaz hosil bo‘ladi?",
+      "options": [
+        "Fosgen",
+        "Vodorod sulfid",
+        "Ammiak",
+        "Atsetilen"
+      ],
+      "correct_index": 3,
+      "explanation": "DXE va NaOH ampulada suv hammomida qaynatilsa atsetilen hosil bo‘ladi, u mis tuzlari bilan mis atsetilenidini beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "39"
+      }
+    },
+    {
+      "question": "Fudjivara reaksiyasida alkilgalogenidlar qaysi modda bilan qizil rang beradi?",
+      "options": [
+        "Rezortsin",
+        "Piridin",
+        "Anilin",
+        "Brutsin"
+      ],
+      "correct_index": 1,
+      "explanation": "Piridin ishqoriy sharoitda suv hammomida qizdirilganda alkilgalogenidlar bilan qizil rang hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "37"
+      }
+    },
+    {
+      "question": "Feling reaksiyasida xloroform ishqor ishtirokida qaysi kislotani hosil qiladi?",
+      "options": [
+        "Oksalat kislota",
+        "Sirka kislota",
+        "Sulfat kislota",
+        "Chumoli kislota"
+      ],
+      "correct_index": 3,
+      "explanation": "Xloroform ishqor ishtirokida chumoli kislotasini hosil qiladi; u mis (II)-gidroksidni qaytaradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "37"
       }
     }
   ],

@@ -212,6 +212,73 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun gashish yog‘i uzoq saqlanganda rangi va agregat holati o‘zgaradi? (kislorod va yorug‘lik ta’siri). Doskada: 3 qatorli jadval. Tipik xato: marixuana va gashish yog‘ini bir xil kuchli deb hisoblash."
     },
     {
+      "title": "Nasha vositalari: turlari",
+      "bullets": [
+        {
+          "text": "Marixuana o‘simlikning yuqori qismidagi barglar, gullar va mevalardan tashkil topgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gashish suyuq, mumsimon holda, zangori yoki qoramtir rangda; gashish yog‘i — quyuq ekstrakt.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Boshqa nomlar: plan, bang, kif, xusus, haras, dagga.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "61-63"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Nasha vositalari",
+        "children": [
+          {
+            "label": "Marixuana",
+            "items": [
+              "barglar, gullar",
+              "mevalar"
+            ]
+          },
+          {
+            "label": "Gashish",
+            "items": [
+              "mumsimon, zangori/qoramtir"
+            ]
+          },
+          {
+            "label": "Gashish yog‘i",
+            "items": [
+              "quyuq ekstrakt",
+              "spirt yoki kunjut yog‘ida saqlanadi"
+            ]
+          },
+          {
+            "label": "Boshqa nomlar",
+            "items": [
+              "plan, bang, kif",
+              "xusus, haras, dagga"
+            ]
+          }
+        ],
+        "caption": "Nasha turlari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega gashish yog‘i spirtda saqlanadi? Doskada: daraxt. Tipik xato: marixuana va gashishni bir xil deb yozish."
+    },
+    {
       "title": "Kannabinollar: qaysi biri giyohvand?",
       "bullets": [
         {
@@ -244,6 +311,128 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kannabidiol aniqlansa, nima deyish mumkin? (giyohvand ta’sir isbotlanmaydi). Doskada: TGK — yagona giyohvand komponent. Tipik xato: kannabinoidlar topildi = giyohvand ta’sir bor deb yozish."
+    },
+    {
+      "title": "Nasha raqamlari",
+      "bullets": [
+        {
+          "text": "Quritilgan marixuanada 400 ga yaqin kimyoviy birikma, chekish tutunida 2000 tagacha modda bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marixuanada 70 dan ziyod kannabinoid mavjud; chekish uchun tamakiga 500-750 mg qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Iste’mol qilingandan keyin ta’sir 15-30 daqiqadan so‘ng boshlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "63"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Marixuana: birikmalar",
+            "value": "~400"
+          },
+          {
+            "label": "Tutun: moddalar",
+            "value": "≤2000"
+          },
+          {
+            "label": "Kannabinoidlar",
+            "value": ">70"
+          },
+          {
+            "label": "Tamakiga qo‘shiladi",
+            "value": "500-750",
+            "unit": "mg"
+          },
+          {
+            "label": "Ta’sir boshlanishi",
+            "value": "15-30",
+            "unit": "daqiqa"
+          }
+        ],
+        "caption": "Nasha"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega tutun xavfliroq? Doskada: raqamlar. Tipik xato: kannabinoidlar sonini 7 deb yozish."
+    },
+    {
+      "title": "Kannabinoidlar: giyohvand faol modda",
+      "bullets": [
+        {
+          "text": "Nashada kannabinol, kannabidiol va tetragidrokannabinol doimo uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "65"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ulardan faqat tetragidrokannabinol (TGK) giyohvand ta’sirga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "65"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nasha fenol funksional guruhli dibenzpiran hosilalaridan tashkil topgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "65"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Kannabinol",
+            "items": [
+              "doimo uchraydi",
+              "giyohvand ta’sir yo‘q"
+            ]
+          },
+          {
+            "title": "Kannabidiol",
+            "items": [
+              "doimo uchraydi",
+              "giyohvand ta’sir yo‘q"
+            ]
+          },
+          {
+            "title": "Tetragidrokannabinol",
+            "items": [
+              "doimo uchraydi",
+              "faqat u giyohvand ta’sirli",
+              "tahlilning asosiy nishoni"
+            ]
+          }
+        ],
+        "caption": "Kannabinoidlar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega TGK ni aniqlash kerak? Doskada: uch ustun. Tipik xato: kannabinolni giyohvand deb yozish."
     },
     {
       "title": "Ashyoviy dalilni tahlil qilishdagi savollar",
@@ -323,6 +512,109 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun qondan TGK topish qiyin? (tez kamayadi). Doskada: 5-30 daqiqa, 5 kun raqamlari. Tipik xato: peshob asosiy chiqish yo‘li deb hisoblash: 80% axlat bilan chiqadi."
     },
     {
+      "title": "Chekilganda kannabinoidlar: raqamlar",
+      "bullets": [
+        {
+          "text": "Chekilganda 5-30 daqiqada kannabinoidlar va 9-TGK qonda yuqori ko‘rsatkichga ega bo‘ladi, keyin tez kamayadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "65"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Boshqa yo‘llar bilan tushganda ta’sir muddati 1,5-3 soat.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "65"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kannabinoidlar jigarda metabolizmga uchraydi; besh kun ichida 80-90% chiqib ketadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "65"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Chekilganda maksimum",
+            "value": "5-30",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Boshqa yo‘llar bilan",
+            "value": "1,5-3",
+            "unit": "soat"
+          },
+          {
+            "label": "Chiqish muddati",
+            "value": "5",
+            "unit": "kun"
+          },
+          {
+            "label": "Chiqib ketadi",
+            "value": "80-90",
+            "unit": "%"
+          }
+        ],
+        "caption": "Kannabinoidlar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega qondagi miqdor tez kamayadi? Doskada: raqamlar. Tipik xato: chiqish muddatini 5 soat deb yozish."
+    },
+    {
+      "title": "Nasha mastligi bosqichlari",
+      "bullets": [
+        {
+          "text": "Birinchi faza — qo‘zg‘alish: engil tortish, kulgu, diqqat chalg‘ishi, fikrlar tezlashishi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "63-64"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkinchi faza — tushkunlik: ranglar xiralashadi, fikrlash tormozlanadi, qo‘rquv paydo bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "64"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘tkir mastlik 1-3 soat davom etib, og‘ir uyqu va behollik bilan tugaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "64"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "1-faza: qo‘zg‘alish",
+          "2-faza: tushkunlik",
+          "O‘tkir mastlik 1-3 soat",
+          "Og‘ir uyqu, behollik",
+          "Ko‘p qabulda: psixoz"
+        ],
+        "caption": "Mastlik"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: psixoz qachon rivojlanadi? Doskada: oqim. Tipik xato: fazalar tartibini almashtirish."
+    },
+    {
       "title": "Kannabinoidlarni ajratib olish",
       "bullets": [
         {
@@ -399,8 +691,73 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Pauli reaktivi",
+            "items": [
+              "0,05% diazotirlangan sulfanil kislota",
+              "10% Na2CO3 eritmasida"
+            ]
+          },
+          {
+            "title": "Mustahkam ko‘k B",
+            "items": [
+              "0,05% eritma",
+              "10% Na2CO3 yoki 1 M NaOH da"
+            ]
+          }
+        ],
+        "caption": "Reaktivlar"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ranglar ketma-ketligini nima uchun kuzatish kerak? Doskada: qizil pushti → ko‘kish → to‘q-pushti. Reaktivlar yangi tayyorlanadi (p.66). Tipik xato: faqat bitta rangni yozib qo‘yish."
+    },
+    {
+      "title": "Pauli reaksiyasi: sxema",
+      "bullets": [
+        {
+          "text": "Spirtli ekstrakt filtr qog‘oziga nuqta holida shimdirilib, quritiladi va yangi tayyorlangan Pauli reaktivi purkaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kannabinoidlar bo‘lsa, avval qizil pushti, so‘ng ko‘kish, oxirida to‘q-pushti rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya sezgirligi 1 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Spirtli ekstrakt (filtr qog‘ozida)",
+          "Pauli reaktivi (purkaladi)"
+        ],
+        "products": [
+          "Rangli dog‘"
+        ],
+        "caption": "Pauli",
+        "conditions": "Quritilgach, yangi reaktiv purkaladi",
+        "observation": "Qizil pushti → ko‘kish → to‘q pushti"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: reaktiv yangi tayyorlanishi nega shart? Doskada: sxema. Tipik xato: sezgirlikni 1 mg deb yozish."
     },
     {
       "title": "Dyukenua reaksiyasi",
@@ -448,6 +805,53 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: reaksiya probirkada, boshqalari filtr qog‘ozida — farqi nima? Doskada: 4 bosqich. Tipik xato: HCl ni reaktivdan oldin qo‘shish."
     },
     {
+      "title": "Dyukenua reaksiyasi: sxema",
+      "bullets": [
+        {
+          "text": "Dyukenua reaktivi: 2 g vanilin 100 ml asetaldegidning spirtdagi 1% eritmasida eritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "0,2 g namunaga 2 ml reaktiv qo‘shilib 1 daqiqa chayqatiladi, so‘ng 1 ml konsentrlangan HCl qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Avval pushti, ko‘k, so‘ng to‘q-pushti rang hosil bo‘ladi; sezgirlik 1 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "0,2 g namuna",
+          "2 ml Dyukenua reaktivi (vanilin)",
+          "1 ml konts. HCl"
+        ],
+        "products": [
+          "Rangli birikma"
+        ],
+        "caption": "Dyukenua",
+        "conditions": "1 daqiqa chayqatiladi",
+        "observation": "Pushti → ko‘k → to‘q pushti"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: reaktivlar qo‘shilish tartibi. Doskada: sxema. Tipik xato: HCl ni reaktivdan oldin qo‘shish."
+    },
+    {
       "title": "Buke reaksiyasi",
       "bullets": [
         {
@@ -482,6 +886,128 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ko‘mir nima uchun qo‘shiladi? (rangli moddalarni yo‘qotish uchun, kitobga ko‘ra). Doskada: Buke reaktivi tarkibi 2:3. Tipik xato: eski Buke reaktivini ishlatish — u yangi tayyorlanadi."
     },
     {
+      "title": "Buke reaksiyasi: qadamlar",
+      "bullets": [
+        {
+          "text": "1 g namuna 3 marta 5 ml etilasetat bilan ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekstrakt faollashtirilgan ko‘mir bilan chayqatilib, chinni idishda bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qoldiq 1 ml asetonda eritilib, 0,5 ml yangi Buke reaktivi qo‘shiladi; qizil-qo‘ng‘ir rang, sezgirlik 1 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Ekstraksiya",
+            "text": "1 g namuna, etilasetat 3 × 5 ml"
+          },
+          {
+            "title": "Tozalash",
+            "text": "faollashtirilgan ko‘mir, filtrlash"
+          },
+          {
+            "title": "Bug‘latish",
+            "text": "chinni idishda"
+          },
+          {
+            "title": "Eritish",
+            "text": "qoldiq 1 ml asetonda"
+          },
+          {
+            "title": "Reaktiv",
+            "text": "0,5 ml yangi Buke reaktivi"
+          },
+          {
+            "title": "Natija",
+            "text": "qizil-qo‘ng‘ir rang"
+          }
+        ],
+        "caption": "Buke"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ko‘mir nima uchun? Doskada: qadamlar. Tipik xato: Buke reaktivi tarkibini Dyukenua bilan aralashtirish."
+    },
+    {
+      "title": "Kannabinoid reaktivlari: tarkibi",
+      "bullets": [
+        {
+          "text": "Pauli — 0,05% diazotirlangan sulfanil kislota (10% Na2CO3 da); mustahkam ko‘k B — 0,05% eritma.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dyukenua — 2 g vanilin 100 ml asetaldegidning 1% spirtli eritmasida.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Buke — 2 qism konsentrlangan H2SO4 va 3 qism 96% etil spirti aralashmasi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Reaktiv",
+          "Tarkibi"
+        ],
+        "rows": [
+          [
+            "Pauli",
+            "0,05% diazotirlangan sulfanil k-ta"
+          ],
+          [
+            "Mustahkam ko‘k B",
+            "0,05%, 10% Na2CO3 yoki 1 M NaOH"
+          ],
+          [
+            "Dyukenua",
+            "2 g vanilin + 100 ml 1% asetaldegid"
+          ],
+          [
+            "Buke",
+            "2 qism H2SO4 + 3 qism 96% spirt"
+          ]
+        ],
+        "caption": "Reaktivlar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi reaktiv kislotali muhitda? Doskada: jadval. Tipik xato: Dyukenua tarkibini Pauli bilan almashtirish."
+    },
+    {
       "title": "Rangli reaksiyalar natijasini baholash",
       "bullets": [
         {
@@ -512,8 +1038,82 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Rangli reaksiyalar bajariladi",
+          "Natija manfiy: namuna nasha saqlamaydi",
+          "Natija musbat: TGK bormi?",
+          "Qog‘oz, yupqa qatlam va GSX",
+          "TGK aniqlanishi bo‘yicha xulosa"
+        ],
+        "caption": "Qaror yo‘li"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: salbiy natijadan qanday xulosa chiqariladi? Doskada: qaror sxemasi: rang yo‘q — nasha yo‘q; rang bor — xromatografiya. Tipik xato: ijobiy rangli reaksiyani TGK borligining isboti deb yozish."
+    },
+    {
+      "title": "Rangli reaksiyalar: taqqoslash",
+      "bullets": [
+        {
+          "text": "Pauli va mustahkam ko‘k B: qizil pushti, ko‘kish, to‘q-pushti; sezgirlik 1 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dyukenua: pushti, ko‘k, to‘q-pushti; sezgirlik 1 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Buke: qizil-qo‘ng‘ir; sezgirlik 1 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "66"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Reaktiv",
+          "Rang",
+          "Sezgirlik"
+        ],
+        "rows": [
+          [
+            "Pauli",
+            "qizil pushti → ko‘kish → to‘q pushti",
+            "1 mkg"
+          ],
+          [
+            "Mustahkam ko‘k B",
+            "qizil pushti → ko‘kish → to‘q pushti",
+            "1 mkg"
+          ],
+          [
+            "Dyukenua",
+            "pushti → ko‘k → to‘q pushti",
+            "1 mkg"
+          ],
+          [
+            "Buke",
+            "qizil-qo‘ng‘ir",
+            "1 mkg"
+          ]
+        ],
+        "caption": "Kannabinoidlar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bu reaksiyalar xususiy emas? Doskada: jadval. Tipik xato: Buke rangini pushti deb yozish."
     },
     {
       "title": "«Guvoh» eritmani tayyorlash",
@@ -546,7 +1146,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Namuna",
+            "text": "1 g faol nasha"
+          },
+          {
+            "title": "Spirt",
+            "text": "10 ml 96% spirt, 24 soat"
+          },
+          {
+            "title": "Filtrlash",
+            "text": "ekstrakt filtrlanadi"
+          },
+          {
+            "title": "Idish",
+            "text": "qo‘ng‘ir, germetik, 10 ml gacha"
+          },
+          {
+            "title": "Saqlash",
+            "text": "sovitgichda, 3 oygacha"
+          }
+        ],
+        "caption": "Guvoh eritma"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun qo‘ng‘ir idish va sovitgich kerak? (barqarorlik, kitobda sabab aniq ko‘rsatilmagan; yorug‘lik ta’siri p.62). Doskada: 24 soat, 10 ml, 3 oy. Tipik xato: guvoh eritmani uch oydan oshirib ishlatish."
     },
     {
@@ -580,7 +1205,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Qog‘oz",
+            "text": "«S» markali, 3x30 sm tasma"
+          },
+          {
+            "title": "Fazalar",
+            "text": "dimetilformamid:siklogeksan 1:5, 3 daq."
+          },
+          {
+            "title": "Shimdirish",
+            "text": "pastki qism qog‘ozga shimdiriladi"
+          },
+          {
+            "title": "Yugurtirish",
+            "text": "250 mm gacha, kamerada"
+          },
+          {
+            "title": "Quritish",
+            "text": "60 °C da quritiladi"
+          },
+          {
+            "title": "Purkash",
+            "text": "Pauli yoki mustahkam ko‘k B"
+          }
+        ],
+        "caption": "Qog‘oz xromatografiya"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: ikki faza qaysi biri qo‘zg‘almas, qaysi biri qo‘zg‘aluvchi? Doskada: DMF — qo‘zg‘almas, siklogeksan — qo‘zg‘aluvchi. Tipik xato: fazalarni ajratmasdan bitta aralashma sifatida ishlatish."
     },
     {
@@ -683,7 +1337,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Plastinka",
+            "text": "110 °C da 30 daq. faollashtirilgan"
+          },
+          {
+            "title": "To‘yintirish",
+            "text": "dimetilformamid:benzol 1:1, 20 daq. quritish"
+          },
+          {
+            "title": "Tomizish",
+            "text": "namuna va guvoh; 5 daq. quritish"
+          },
+          {
+            "title": "1-yugurish",
+            "text": "siklogeksan, 15 sm"
+          },
+          {
+            "title": "2-yugurish",
+            "text": "yana siklogeksan, 15 sm"
+          },
+          {
+            "title": "Purkash",
+            "text": "Pauli yoki ko‘k B; Rf1"
+          }
+        ],
+        "caption": "YuQX"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun ikki marta xromatogramma qilinadi? Doskada: bosqichlar ketma-ketligi. Benzol o‘rniga to‘rtxlorli uglerod, dietil efir yoki sirka-etil efir ishlatish mumkin (p.68). Tipik xato: Rf1 o‘rniga oddiy Rf deb yozish."
     },
     {
@@ -752,6 +1435,70 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: Rf1 bo‘yicha TGK va kannabinolni farqlash mumkinmi? (0,91 va 0,75). Doskada: jadvaldan 4 qator. Rf1 qiymatlari ±0,05 (TGK kremniy kislotali sorbentda ±0,01). Tipik xato: kannabinol va TGK ranglari bir xil — Pauli ranglari bilan farqlang."
     },
     {
+      "title": "YuQX: Rf1 qiymatlari (ikki sorbent)",
+      "bullets": [
+        {
+          "text": "Kannabidiol kislotasi Rf1: kremniy kislotali sorbentda 0,14, KSK da 0,13.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kannabidiol: 0,32 va 0,41; kannabinol: 0,75 va 0,75.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "TGK kremniy kislotali sorbentda 0,98, KSK da 0,91 — eng yuqori Rf1.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "69"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Modda",
+          "Kremniy k-tasi",
+          "KSK"
+        ],
+        "rows": [
+          [
+            "Kannabidiol kislotasi",
+            "0,14",
+            "0,13"
+          ],
+          [
+            "Kannabidiol",
+            "0,32",
+            "0,41"
+          ],
+          [
+            "Kannabinol",
+            "0,75",
+            "0,75"
+          ],
+          [
+            "Tetragidrokannabinol",
+            "0,98",
+            "0,91"
+          ]
+        ],
+        "caption": "Rf1"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: TGK nega eng yuqorida? Doskada: jadval. Tipik xato: Rf1 va Rf ni aralashtirish."
+    },
+    {
       "title": "Gaz-suyuqlik xromatografiyasi",
       "bullets": [
         {
@@ -791,7 +1538,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kolonka",
+            "value": "2000x4",
+            "unit": "mm"
+          },
+          {
+            "label": "SE-30 faza",
+            "value": "3",
+            "unit": "%"
+          },
+          {
+            "label": "Kolonka harorati",
+            "value": "212",
+            "unit": "°C"
+          },
+          {
+            "label": "Bug‘latgich",
+            "value": "250",
+            "unit": "°C"
+          },
+          {
+            "label": "Detektor",
+            "value": "250",
+            "unit": "°C"
+          },
+          {
+            "label": "Namuna hajmi",
+            "value": "10",
+            "unit": "mkl"
+          }
+        ],
+        "caption": "GSX"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ichki standart nima uchun kerak? Doskada: GSX sharoitlari. Kitobda GSX ushlanish vaqtlari (7-jadval) matn buzilgani sababli o‘qilmaydi — slaydga olinmadi. Tipik xato: boshqa kolonka haroratida natijani taqqoslash."
     },
     {
@@ -825,8 +1607,76 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kamera hajmi",
+            "value": "70",
+            "unit": "l"
+          },
+          {
+            "label": "Nasha miqdori",
+            "value": "2",
+            "unit": "g"
+          },
+          {
+            "label": "Hayvonlar muddati",
+            "value": "30",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Harakatsizlik",
+            "value": "2",
+            "unit": "soat"
+          }
+        ],
+        "caption": "Farmakologik sinov"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: farmakologik sinov qachon kerak bo‘ladi? Doskada: kuzatiladigan 4 belgi. Tipik xato: farmakologik sinovni birinchi usul sifatida qo‘llash — kitobda u qo‘shimcha usul."
+    },
+    {
+      "title": "Nasha qo‘llanilishi tarixi va huquqiy holati",
+      "bullets": [
+        {
+          "text": "1942 yilda AQShda kanopdan olingan preparatlarni tibbiyotda qo‘llashga ruxsat etilgan va Farmakopeyaga kiritilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1992 yilga kelib marixuana nazorat qilinadigan giyohvandlik vositalari ro‘yxatiga kiritilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "62"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘zR da u giyohvandlik vositalari ro‘yxatiga kiritilgan bo‘lib, qo‘llash taqiqlangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "62"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "1942: AQShda tibbiyotda ruxsat",
+          "Farmakopeyaga kiritilgan",
+          "1992: nazorat ro‘yxatiga kiritildi",
+          "O‘zR da qo‘llash taqiqlangan"
+        ],
+        "caption": "Tarix"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ro‘yxatga kiritildi? Doskada: vaqt chizig‘i. Tipik xato: yillarni almashtirish."
     },
     {
       "title": "Nashavandlikni aniqlash: namunalar",
@@ -909,6 +1759,75 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun faqat qo‘ldan olingan tampon yetarli emas? Doskada: 5 bosqich. Tipik xato: efir qatlamini suvsizlantirmasdan bug‘latish."
     },
     {
+      "title": "So‘lak va chayindini tahlilga tayyorlash: raqamlar",
+      "bullets": [
+        {
+          "text": "Gumon qilingan shaxsdan 10 ml so‘lak va 50 ml osh tuzi bilan to‘yingan 70% spirtli chayqatma olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "70-71"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "10 ml aralashmaga 10 ml to‘yingan NaCl qo‘shilib, 5 ml dietil efir bilan ikki marta 5 daqiqa ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "71"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Efir 2 g suvsiz Na2SO4 dan o‘tkazilib, 0,5 ml gacha bug‘latilib, YuQX da tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "71"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "So‘lak",
+            "value": "10",
+            "unit": "ml"
+          },
+          {
+            "label": "Chayqatma (70% spirt)",
+            "value": "50",
+            "unit": "ml"
+          },
+          {
+            "label": "To‘yingan NaCl",
+            "value": "10",
+            "unit": "ml"
+          },
+          {
+            "label": "Dietil efir (2 marta)",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "Suvsiz Na2SO4",
+            "value": "2",
+            "unit": "g"
+          },
+          {
+            "label": "Bug‘latish qoldig‘i",
+            "value": "0,5",
+            "unit": "ml"
+          }
+        ],
+        "caption": "So‘lak tahlili"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega so‘lak ham tahlil qilinadi? Doskada: raqamlar. Tipik xato: faqat tampon yetarli deb hisoblash."
+    },
+    {
       "title": "Natijani talqin qilish",
       "bullets": [
         {
@@ -939,7 +1858,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Qo‘ldan olingan tamponda kannabinoid",
+          "Bu o‘zi xulosa uchun yetarli emas",
+          "So‘lak va chayindi tahlil qilinadi",
+          "TGK topilsa — chekkan degan xulosa"
+        ],
+        "caption": "Xulosa"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega qo‘ldagi iz yetarli emas? (aloqa bilan ham qolishi mumkin.) Doskada: uch qoida. Tipik xato: rangli reaksiya natijasi bilan xulosa yozish."
     },
     {
@@ -1049,10 +1977,10 @@
       "options": [
         "Kannabinol",
         "Kannabidiol",
-        "Tetragidrokannabinol",
-        "Hech biri"
+        "Hech biri",
+        "Tetragidrokannabinol"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Kannabinol, kannabidiol va TGK dan faqat TGK giyohvand ta’sirga ega.",
       "source": {
         "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
@@ -1079,12 +2007,12 @@
     {
       "question": "Pauli reaktivi qanday tarkibga ega?",
       "options": [
-        "0,05% diazotirlangan sulfanil kislota, 10% Na2CO3 da",
+        "0,05% mustahkam ko‘k B",
         "2 qism H2SO4 va 3 qism spirt",
         "Vanilin va asetaldegid",
-        "0,05% mustahkam ko‘k B"
+        "0,05% diazotirlangan sulfanil kislota, 10% Na2CO3 da"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Pauli reaktivi — 0,05% diazotirlangan sulfanil kislotaning natriy karbonatning 10% eritmasidagi aralashmasi.",
       "source": {
         "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
@@ -1095,12 +2023,12 @@
     {
       "question": "Buke reaktivi qanday tarkibga ega?",
       "options": [
-        "2 qism H2SO4 : 3 qism 96% spirt",
         "2 g vanilin 100 ml da",
+        "2 qism H2SO4 : 3 qism 96% spirt",
         "0,05% mustahkam ko‘k B",
         "10% Na2CO3"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Buke reaktivi — 2 qism konsentrlangan sulfat kislota va 3 qism 96% etil spirti.",
       "source": {
         "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
@@ -1127,12 +2055,12 @@
     {
       "question": "Rangli reaksiyalar ijobiy bo‘lmasa qanday xulosa beriladi?",
       "options": [
-        "Namuna nasha saqlamaydi",
+        "Farmakologik sinov o‘tkaziladi",
         "Tahlil takrorlanadi",
         "GSX o‘tkaziladi",
-        "Farmakologik sinov o‘tkaziladi"
+        "Namuna nasha saqlamaydi"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Reaksiya ijobiy bo‘lmasa, tekshiruvchi namuna nasha saqlamaydi degan xulosa berish mumkin.",
       "source": {
         "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
@@ -1202,6 +2130,134 @@
         "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
         "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
         "page": "71"
+      }
+    },
+    {
+      "question": "Quritilgan marixuanada taxminan nechta kimyoviy birikma aniqlangan?",
+      "options": [
+        "400 ga yaqin",
+        "40 ga yaqin",
+        "2000 ga yaqin",
+        "7 ta"
+      ],
+      "correct_index": 0,
+      "explanation": "Quritib olingan marixuana tarkibida 400 ga yaqin kimyoviy birikma borligi aniqlangan.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "62"
+      }
+    },
+    {
+      "question": "Qog‘oz xromatografiyada kannabidiolning Rf qiymati qancha (4-jadval)?",
+      "options": [
+        "0,56",
+        "0,21",
+        "0,83",
+        "0,98"
+      ],
+      "correct_index": 1,
+      "explanation": "Jadvalga ko‘ra kannabidiol Rf=0,21, kannabinol 0,56, TGK 0,83.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "68"
+      }
+    },
+    {
+      "question": "Guvoh eritmadan (spirtli ekstrakt) qancha vaqt foydalanish mumkin?",
+      "options": [
+        "Bir hafta",
+        "Bir yil",
+        "Uch oy",
+        "Bir kun"
+      ],
+      "correct_index": 2,
+      "explanation": "Sovitgichda saqlangan guvoh eritmadan uch oy davomida foydalanish mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "67"
+      }
+    },
+    {
+      "question": "Dyukenua reaktivi tarkibida qaysi modda bor?",
+      "options": [
+        "Diazotirlangan sulfanil kislota",
+        "Mustahkam ko‘k B",
+        "Faqat sulfat kislota",
+        "Vanilin"
+      ],
+      "correct_index": 3,
+      "explanation": "Dyukenua reaktivi: 2 g vanilin 100 ml asetaldegidning spirtdagi 1% eritmasida.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "66"
+      }
+    },
+    {
+      "question": "TGK yupqa qatlamda kremniy kislotali sorbentda qanday Rf1 beradi?",
+      "options": [
+        "0,98",
+        "0,91",
+        "0,75",
+        "0,14"
+      ],
+      "correct_index": 0,
+      "explanation": "Tetragidrokannabinol kremniy kislotali sorbentda Rf1=0,98, KSK da 0,91.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "69"
+      }
+    },
+    {
+      "question": "Iste’mol qilinganda nashaning ta’siri qancha vaqtdan so‘ng boshlanadi?",
+      "options": [
+        "Darhol",
+        "15-30 daqiqadan so‘ng",
+        "3-5 soatdan so‘ng",
+        "Bir sutkadan so‘ng"
+      ],
+      "correct_index": 1,
+      "explanation": "Iste’mol qilinganda nashaning ta’siri 15-30 daqiqadan so‘ng boshlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "63"
+      }
+    },
+    {
+      "question": "O‘tkir nasha mastligi qancha davom etadi?",
+      "options": [
+        "5-10 daqiqa",
+        "12 soat",
+        "1-3 soat",
+        "5 kun"
+      ],
+      "correct_index": 2,
+      "explanation": "O‘tkir mast bo‘lish 1-3 soat davom etib, og‘ir uyqu, behollik bilan tugaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "64"
+      }
+    },
+    {
+      "question": "Chekilganda kannabinoidlar qonda qancha vaqtda yuqori ko‘rsatkichga ega bo‘ladi?",
+      "options": [
+        "1,5-3 soatda",
+        "5 kunda",
+        "24 soatda",
+        "5-30 daqiqada"
+      ],
+      "correct_index": 3,
+      "explanation": "Chekish natijasida 5-30 daqiqa oralig‘ida kannabinoidlar va 9-TGK yuqori ko‘rsatkichga ega bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "65"
       }
     }
   ],

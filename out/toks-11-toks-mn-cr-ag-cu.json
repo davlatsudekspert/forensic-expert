@@ -48,7 +48,16 @@
           "uncertain": false
         },
         {
-          "text": "Kumush preparatlari fotografiya, oyna yasash va sochni bo‘yashda ham ishlatiladi; bu birikmalarning aholi qo‘liga osongina yetib borishi zaharlanish xavfini tug‘diradi.",
+          "text": "Kumush preparatlari fotografiya, oyna yasash va sochni bo‘yashda ham ishlatiladi.",
+          "source": {
+            "author": "Malaka materiali №072 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "10-ma’ruza: Kumush, mis, marganets, xrom elementlarini saqlovchi zaharli birikmalar (2011)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu birikmalarning aholi qo‘liga osongina yetib borishi zaharlanish xavfini tug‘diradi.",
           "source": {
             "author": "Malaka materiali №072 (TFI Toksikologik kimyo kafedrasi)",
             "title": "10-ma’ruza: Kumush, mis, marganets, xrom elementlarini saqlovchi zaharli birikmalar (2011)",
@@ -66,7 +75,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Kumush birikmalari",
+        "root": "Kumush",
+        "children": [
+          {
+            "label": "Tibbiyot",
+            "items": [
+              "Lyapis qalami (AgNO3)",
+              "Kollargol, protargol"
+            ]
+          },
+          {
+            "label": "Boshqa sohalar",
+            "items": [
+              "Fotografiya, oyna yasash",
+              "Sochni bo‘yash"
+            ]
+          },
+          {
+            "label": "Zaharli emas",
+            "items": [
+              "Ag2O, AgCl, AgBr, AgI"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega erimaydigan kumush galogenidlari zaharli emas? Doskada: eruvchan va erimaydigan tuzlar ro‘yxati. Tipik xato: barcha kumush tuzlarini bir xil zaharli deb hisoblash."
     },
     {
@@ -91,7 +126,16 @@
           "uncertain": false
         },
         {
-          "text": "Kumush tuzlarining changi nafas yo‘llari orqali kirganda kapillyarlar zararlanadi; kumush to‘qimalarda uzoq yig‘ilishi (argiriya) tufayli teri ko‘kimtir-kul rangga bo‘yaladi.",
+          "text": "Kumush tuzlarining changi nafas yo‘llari orqali kirganda kapillyarlar zararlanadi.",
+          "source": {
+            "author": "Malaka materiali №072 (TFI Toksikologik kimyo kafedrasi)",
+            "title": "10-ma’ruza: Kumush, mis, marganets, xrom elementlarini saqlovchi zaharli birikmalar (2011)",
+            "page": "ma’ruza matni"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kumush to‘qimalarda uzoq yig‘ilishi (argiriya) tufayli teri ko‘kimtir-kul rangga bo‘yaladi.",
           "source": {
             "author": "Malaka materiali №072 (TFI Toksikologik kimyo kafedrasi)",
             "title": "10-ma’ruza: Kumush, mis, marganets, xrom elementlarini saqlovchi zaharli birikmalar (2011)",
@@ -100,7 +144,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Kumush zaharlanishi",
+        "items": [
+          {
+            "label": "Teri tusi",
+            "value": "kulrang-yashil"
+          },
+          {
+            "label": "Chiqarilishi",
+            "value": "yo‘g‘on ichak orqali"
+          },
+          {
+            "label": "Uzoq yig‘ilish",
+            "value": "argiriya"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: argiriya qanday paydo bo‘ladi? Doskada: «yig‘ilish — teri rangi» zanjiri. Tipik xato: terining rangini o‘tkir zaharlanish belgisi deb o‘ylash — u uzoq yig‘ilish natijasi. Izoh: kitobda teri rangi «kulrang yashil», malakada «ko‘kimtir-kul» deyilgan — ikkala manba ko‘rsatildi."
     },
     {
@@ -135,22 +196,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ditizon va 0,5 n HCl",
-        "nodes": [],
-        "header": [
-          "Kation",
-          "HCl dan keyin"
-        ],
-        "rows": [
-          [
-            "Ag+",
-            "Parchalanadi, yashil ditizon rangi"
-          ],
-          [
-            "Hg2+",
-            "Sariq tilla rang saqlanadi"
-          ]
+        "kind": "compare",
+        "caption": "Ag va Hg ditizonati",
+        "columns": [
+          {
+            "title": "Kumush ditizonati",
+            "items": [
+              "Sariq tilla rang",
+              "0,5 n HCl: parchalanadi",
+              "Yashil ditizon rangi paydo bo‘ladi"
+            ]
+          },
+          {
+            "title": "Simob ditizonati",
+            "items": [
+              "Sariq tilla rang",
+              "0,5 n HCl: parchalanmaydi",
+              "Rang saqlanib qoladi"
+            ]
+          }
         ]
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega simob kumushni aniqlashga halaqit beradi? Doskada: ikki ditizonatni yonma-yon chizing. Tipik xato: sariq rangni faqat kumushga xos deb hisoblash. Izoh: kitobda reaksiya natijasi tasdiqlansa keyingi reaksiyalarga o‘tiladi, aks holda tahlil to‘xtatiladi."
@@ -199,6 +263,53 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun filtrat tashlab yuborilmaydi? Doskada: AgCl + 2NH4OH -> Ag[NH3]2Cl + 2H2O. Tipik xato: filtratni tashlab yuborish — u boshqa metallar tahliliga kerak."
+    },
+    {
+      "title": "AgCl ning ammiakatga o‘tishi",
+      "bullets": [
+        {
+          "text": "Filtrdagi cho‘kma 0,5 n HCl, suv va nihoyat 8 n NH4OH bilan yuviladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "63"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ammiak ta’sirida AgCl eriydi: kumush ammiakat kompleksi hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "63"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Olingan eritmadan qayta kristallanish, HNO3, KI va pikrat reaksiyalari bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "63"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "AgCl + ammiak",
+        "reagents": [
+          "AgCl",
+          "2 NH4OH"
+        ],
+        "products": [
+          "[Ag(NH3)2]Cl",
+          "2 H2O"
+        ],
+        "conditions": "Cho‘kma 8 n NH4OH bilan yuviladi",
+        "observation": "Cho‘kma eriydi"
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: nega AgCl ammiakda eriydi? (kompleks hosil bo‘ladi). Tipik xato: HNO3 bilan AgCl qayta cho‘kishini unutish."
     },
     {
       "title": "Kumush ammiakatining tasdiqlovchi reaksiyalari",
@@ -251,7 +362,16 @@
       "title": "Kumush: pikrat reaksiyasi va miqdoriy aniqlash",
       "bullets": [
         {
-          "text": "Kumush ammiakati buyum oynasida uchirilgach, qoldiqqa tiomochevina va kaliy pikratning to‘yingan eritmalari qo‘shilsa, sariq prizmatik kristallar o‘smasi hosil bo‘ladi.",
+          "text": "Kumush ammiakati buyum oynasida uchirilgach, qoldiqqa tiomochevina va kaliy pikratning to‘yingan eritmalari qo‘shilsa.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "63"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sariq prizmatik kristallar o‘smasi hosil bo‘ladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -278,7 +398,20 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Pikrat reaksiyasi",
+        "reagents": [
+          "Ag(NH3)2Cl (qoldiq)",
+          "Tiomochevina",
+          "Kaliy pikrat"
+        ],
+        "products": [
+          "Sariq prizmatik kristallar"
+        ],
+        "conditions": "Buyum oynasida",
+        "observation": "Kristallar o‘smasi"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega mikrokristall reaksiyalar chinlikni kuchaytiradi? Doskada: rodanidometrik titrlash sxemasi. Izoh: kitobda oltin xlorid bilan reaksiya tenglamasida «PbCl3» yozilgan, malaka 072 da esa to‘g‘risi — rubidiy xlorid (RbCl3); slaydda faqat tuzatilgan variant berildi (kitobda xato)."
     },
     {
@@ -346,7 +479,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Misli pestitsidlar",
+        "root": "Mis saqlovchi pestitsidlar",
+        "children": [
+          {
+            "label": "TXFM",
+            "items": [
+              "Trixlorfenolyat mis",
+              "Chigitni dorilash"
+            ]
+          },
+          {
+            "label": "Shveynfurt yashili",
+            "items": [
+              "Cu(CH3COO)2·3Cu(AsO2)2"
+            ]
+          },
+          {
+            "label": "Parij yashili",
+            "items": [
+              "Cu2As2O3"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bu pestitsidlarda mishyakka ham tekshirish kerak? Doskada: ikki yashil bo‘yoq nomi va tarkibidagi elementlar. Tipik xato: faqat misga tekshirib to‘xtash. Izoh: kitobdagi formulalar yozuvi buzuq (CH3COO o‘rniga CN3SOO) — slaydda to‘g‘ri yozuv berildi; Parij yashili formulasi kitobdagidek keltirildi."
     },
     {
@@ -380,7 +538,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Mis bilan zaharlanish",
+        "nodes": [
+          "Oshqozondan qonga sekin o‘tadi",
+          "Qusuq massasi bilan chiqadi",
+          "Shimilish: ich ketadi",
+          "Qon tomirlarida gemoliz",
+          "Ichak va buyrak orqali chiqadi"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega qusuq massasida mis ko‘p bo‘ladi? Doskada: so‘rilish va chiqarilish yo‘llari. Tipik xato: gemolizni faqat qon quyilishi bilan bog‘lash."
     },
     {
@@ -414,7 +584,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Mis sulfat dozalari",
+        "items": [
+          {
+            "label": "Kuchli ta’sir (eng kam)",
+            "value": "0,6 g atrofida"
+          },
+          {
+            "label": "Zaharlaydi, o‘ldiradi",
+            "value": "1-2",
+            "unit": "g"
+          },
+          {
+            "label": "Letal doza (mualliflar)",
+            "value": "10",
+            "unit": "g"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega mualliflar letal dozani turlicha ko‘rsatadi? Doskada: 0,6 g — 1-2 g — 10 g shkalasi. Tipik xato: bitta raqamni mutlaq chegara deb hisoblash. Izoh: bu doza ma’lumotlari faqat malaka 072 faylidan; o‘quv-uslubiy majmuada yo‘q, shuning uchun alohida manba sifatida ko‘rsatildi."
     },
     {
@@ -452,6 +641,53 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun qo‘rg‘oshin DDTK ishlatiladi? Doskada: almashinuv zanjirini chizing. Tipik xato: simob xloridni ortiqcha qo‘shish — rang yo‘qolishi bilan to‘xtatiladi."
+    },
+    {
+      "title": "Cu-DDTK ni simob bilan parchalash",
+      "bullets": [
+        {
+          "text": "Mineralizatdan mis dietilditiokarbamat (DDTK) holida xloroform bilan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "64"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform qatlami HgCl2 eritmasi bilan parchalanadi: simob DDTK hosil bo‘lib, mis ioni suvli qatlamga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "64"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvli qatlam ajratilib, mis uchun tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "64"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Almashinish reaksiyasi",
+        "reagents": [
+          "Cu(DDTK)2 (CHCl3 da)",
+          "HgCl2 (1% eritma)"
+        ],
+        "products": [
+          "Hg(DDTK)2 (xloroformda)",
+          "CuCl2 (suvli qatlamda)"
+        ],
+        "conditions": "Rang yo‘qolguncha tomchilab",
+        "observation": "Mis suvli qatlamga o‘tadi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega simob DDTK mis DDTK dan barqarorroq? Tipik xato: misni xloroform qatlamidan qidirish."
     },
     {
       "title": "Misni ajratish: ish tartibi",
@@ -493,7 +729,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Misni ajratish tartibi",
+        "items": [
+          {
+            "title": "1. Indikator",
+            "text": "2,4-dinitrofenol, 25% NH3 (pH = 3)"
+          },
+          {
+            "title": "2. Ekstraksiya",
+            "text": "5 ml Pb-DDTK xloroformda"
+          },
+          {
+            "title": "3. Yuvish",
+            "text": "6 n HCl, so‘ng suv"
+          },
+          {
+            "title": "4. Parchalash",
+            "text": "1% HgCl2 rang yo‘qolguncha"
+          },
+          {
+            "title": "5. Suvli qatlam",
+            "text": "Cu ga tekshiriladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: sariq-qo‘ng‘ir rang nimani bildiradi? Doskada: to‘rt bosqichni raqamlang. Tipik xato: pH ni nazorat qilmaslik. Izoh: malaka 072 ga ko‘ra qo‘rg‘oshin DDTK bilan sinovda qo‘ng‘ir rang hosil bo‘lmasa, mis uchun tekshirish davom ettirilmaydi."
     },
     {
@@ -587,7 +848,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Misni aniqlash va miqdori",
+        "root": "Mis",
+        "children": [
+          {
+            "label": "Piridin rodan",
+            "items": [
+              "Cho‘kma; CHCl3 da yashil-zumrad"
+            ]
+          },
+          {
+            "label": "FEK usuli",
+            "items": [
+              "Dietilditiokarbamat holida"
+            ]
+          },
+          {
+            "label": "Trilonometriya",
+            "items": [
+              "Murexid: sariq → qizil"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: murexid rangi titrlash oxirida nima uchun o‘zgaradi? Doskada: Cu-murexid (sariq) -> erkin murexid (qizil). Tipik xato: oxirgi nuqtani teskari yo‘nalishda kuzatish."
     },
     {
@@ -621,7 +906,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Marganets birikmalari",
+        "root": "Marganets",
+        "children": [
+          {
+            "label": "Sanoat",
+            "items": [
+              "Elektrod, shisha",
+              "Emal va glazur"
+            ]
+          },
+          {
+            "label": "Tibbiyot",
+            "items": [
+              "KMnO4 dezinfeksiya"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: kaliy permanganat ning kundalik turmushda qanday xavfi bor? Doskada: sanoat va turmush manbalari. Tipik xato: KMnO4 ni zararsiz antiseptik deb hisoblash."
     },
     {
@@ -655,7 +959,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Marganets zaharlanishi",
+        "root": "Mn zaharlanishi",
+        "children": [
+          {
+            "label": "Ta’sir etadi",
+            "items": [
+              "Buyrak, o‘pka",
+              "Markaziy asab tizimi"
+            ]
+          },
+          {
+            "label": "Belgilar",
+            "items": [
+              "Og‘iz achishishi, qusish",
+              "Tomoq qo‘ng‘ir rangga bo‘yaladi",
+              "Parkinsonizm belgilari"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega Parkinsonizm belgilari markaziy asab zararlanishini ko‘rsatadi? Doskada: a’zo — belgi juftliklari. Tipik xato: faqat oshqozon-ichak belgilariga e’tibor berish."
     },
     {
@@ -698,7 +1023,22 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Mn va KMnO4 me’yorlari",
+        "items": [
+          {
+            "label": "Havoda Mn (chegara)",
+            "value": "0,0003",
+            "unit": "mg/l"
+          },
+          {
+            "label": "KMnO4 LD50",
+            "value": "15-20",
+            "unit": "g"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega konsentrlangan eritma xavfli? Doskada: 0,0003 mg/l va 15-20 g raqamlarini ajrating. Tipik xato: havo me’yori bilan o‘ldiruvchi dozani aralashtirish."
     },
     {
@@ -733,26 +1073,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mn miqdori (100 g organda)",
-        "nodes": [],
-        "header": [
-          "Organ",
-          "Mn"
-        ],
-        "rows": [
-          [
-            "Jigar",
-            "0,4 mg gacha"
-          ],
-          [
-            "Buyrak",
-            "0,28 mg gacha"
-          ],
-          [
-            "Bachadon",
-            "0,16 mg gacha"
-          ]
+        "kind": "facts",
+        "caption": "Mn (100 g organda)",
+        "items": [
+          {
+            "label": "Jigar",
+            "value": "0,4 gacha",
+            "unit": "mg"
+          },
+          {
+            "label": "Buyrak",
+            "value": "0,28 gacha",
+            "unit": "mg"
+          },
+          {
+            "label": "Bachadon",
+            "value": "0,16 gacha",
+            "unit": "mg"
+          }
         ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega sifat reaksiyasi musbat bo‘lsa ham zaharlanish deyish mumkin emas? Doskada: normal miqdorlar jadvali. Tipik xato: mikroelementni topilishi bilan zaharlanishni isbotlangan deb bilish."
@@ -789,17 +1127,80 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
+        "kind": "reaction",
         "caption": "Mn2+ oksidlanishi",
-        "nodes": [
-          "Mn2+ mineralizatda",
-          "KIO4 yoki (NH4)2S2O8",
-          "Pushti-qizil permanganat"
+        "reagents": [
+          "MnSO4",
+          "(NH4)2S2O8 yoki KIO4"
         ],
-        "header": [],
-        "rows": []
+        "products": [
+          "HMnO4 (permanganat)"
+        ],
+        "conditions": "Oksidlash",
+        "observation": "Pushti-qizil rang"
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega xlorid ioni halaqit beradi? Doskada: oksidlanish zanjiri. Tipik xato: persulfat ishtirokida xlorni hisobga olmaslik. Izoh: kitobdagi periodat tenglamasida o‘ng tomonda ham KIO4 yozilgan (mahsulot KIO3 bo‘lishi kerak) — kitobda xato; slaydga tenglama kiritilmadi."
+    },
+    {
+      "title": "Marganets: ikki oksidlovchi",
+      "bullets": [
+        {
+          "text": "Mn2+ kaliy periodat va ammoniy persulfat yordamida pushti-qizil permanganatga oksidlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "65"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har ikkala reaksiya ham spetsifik: boshqa metallar oksidlanib bunday mahsulot bermaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "65"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Temir ioni ta’sirini NaH2PO4, xlor ioni ta’sirini AgNO3 qo‘shib yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "65"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Mn ni oksidlash",
+        "columns": [
+          {
+            "title": "Ammoniy persulfat",
+            "items": [
+              "(NH4)2S2O8",
+              "Pushti-qizil permanganat"
+            ]
+          },
+          {
+            "title": "Kaliy periodat",
+            "items": [
+              "KIO4",
+              "Pushti-qizil permanganat"
+            ]
+          },
+          {
+            "title": "Halaqit va chora",
+            "items": [
+              "Fe — NaH2PO4",
+              "Cl− — AgNO3",
+              "Cr3+ — zarg‘aldoq rang"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega xlorid AgNO3 bilan yo‘qotiladi? Tipik xato: xromning zarg‘aldoq rangini permanganat bilan adashtirish."
     },
     {
       "title": "Marganets va xromni ajratish",
@@ -845,6 +1246,65 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ekstraksiyada pH = 8 tanlangan? Doskada: ikki qatlamni chizing. Tipik xato: yashil rangni mis deb o‘ylash — kitobda xrom ishorasi sifatida keltirilgan (mis ham yashil bo‘lishi mumkin, shuning uchun taxminiy)."
+    },
+    {
+      "title": "Mn ni DDTK bilan ekstraksiya va reekstraksiya",
+      "bullets": [
+        {
+          "text": "pH = 8 da dietilditiokarbamat holida marganets xloroformli qatlamga ekstraksiyalanadi; xrom suvli eritmada qoladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "65"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marganets xloroformli qatlamdan nitrat kislota bilan reekstraksiyalab ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvli qatlam Mn2+ ga tekshiriladi; miqdori periodat bilan Mn7+ gacha oksidlab, FEK da aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "66"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Mn va Cr ni ajratish",
+        "items": [
+          {
+            "title": "1. DDTK, pH = 8",
+            "text": "Mn xloroformga o‘tadi"
+          },
+          {
+            "title": "2. Suvli qatlam",
+            "text": "Xrom qoladi"
+          },
+          {
+            "title": "3. Reekstraksiya",
+            "text": "HNO3 bilan Mn2+ suvli qatlamga"
+          },
+          {
+            "title": "4. Oksidlash",
+            "text": "KIO4 bilan Mn7+ gacha"
+          },
+          {
+            "title": "5. FEK",
+            "text": "Rangli eritma o‘lchanadi"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi bosqichda marganets xromdan ajraladi? Tipik xato: reekstraksiyani dastlabki ekstraksiya bilan aralashtirish."
     },
     {
       "title": "Marganetsni reekstraksiya va miqdori",
@@ -945,7 +1405,25 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Xrom toksikligi",
+        "items": [
+          {
+            "label": "Cr(VI)",
+            "value": "Cr(III) dan kuchli"
+          },
+          {
+            "label": "Xrom angidridi LD50",
+            "value": "0,2-1",
+            "unit": "g"
+          },
+          {
+            "label": "Asosiy belgi",
+            "value": "burun pardasi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega Cr6+ Cr3+ dan zaharliroq? Doskada: valentlik — zaharlilik juftligi. Tipik xato: barcha xrom birikmalarini bir xil zaharli deb hisoblash."
     },
     {
@@ -1022,8 +1500,67 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Xromni aniqlash asoslari",
+        "nodes": [
+          "Mineralizat yashil (Cr3+)",
+          "Cr3+ → Cr6+ oksidlanadi",
+          "Nadxrom kislotasi yoki difenilkarbazid",
+          "Rangli mahsulot",
+          "FEK da miqdori"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega oldin oksidlanadi? Doskada: Cr3+ -> Cr6+ strelkasi. Tipik xato: oksidlash bosqichini tashlab ketish — reaksiyalar faqat Cr6+ bilan boradi."
+    },
+    {
+      "title": "Nadxrom kislotasi hosil bo‘lishi",
+      "bullets": [
+        {
+          "text": "Xrom kationi mineralizatda uch valentli bo‘lsa-da, kationlarni ajratishda 6 valentli holatga o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nadxrom kislotasi H2Cr2O7 va H2O2 ishtirokida hosil bo‘ladi; zangori rangli, etil atsetat bilan oson ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Temir kationlari NaH2PO4, xlorid anioni AgNO3 qo‘shib ta’siri yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "66"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Nadxrom kislotasi",
+        "reagents": [
+          "H2Cr2O7",
+          "3 H2O2"
+        ],
+        "products": [
+          "H2Cr2O10",
+          "3 H2O"
+        ],
+        "conditions": "Etil atsetat bilan ekstraksiya",
+        "observation": "Zangori rang"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega avval Cr3+ ni Cr6+ gacha oksidlaymiz? Tipik xato: nadxrom kislotasi rangini ko‘k deb yozish (zangori)."
     },
     {
       "title": "Nadxrom kislotasi va difenilkarbazid reaksiyasi",
@@ -1076,6 +1613,52 @@
         ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki reaksiyadan qaysi biri sezgirroq? Doskada: ikki rangni yozing. Tipik xato: nadxrom kislotasini suvli qatlamda kuzatish — u etil atsetatga ekstraksiya qilinadi. Izoh: malaka 072 ga ko‘ra nadxromat reaksiyasi sezgirligi 2 mkg; 100 g biologik ob’ektdan 0,2 mg xrom aniqlanishi mumkin."
+    },
+    {
+      "title": "Xrom: difenilkarbazid reaksiyasi",
+      "bullets": [
+        {
+          "text": "Xromni aniqlash nadxrom kislotasi hosil bo‘lishi va difenilkarbazid bilan boradigan reaksiyalarga asoslanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "66"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Difenilkarbazid bilan qizil-binafsha rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "67"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xrom miqdori difenilkarbazid bilan hosil bo‘lgan birikmani fotoelektrokolorimetrik usulda o‘lchash bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "67"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Difenilkarbazid reaksiyasi",
+        "reagents": [
+          "Cr6+ (oksidlangan mineralizat)",
+          "Difenilkarbazid"
+        ],
+        "products": [
+          "Qizil-binafsha birikma"
+        ],
+        "conditions": "Cr3+ avval Cr6+ gacha oksidlanadi",
+        "observation": "Miqdori FEK da o‘lchanadi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega mineralizat avval oksidlanadi? Tipik xato: Cr3+ ga to‘g‘ridan-to‘g‘ri reaktiv qo‘shish."
     },
     {
       "title": "Chinlik reaksiyalari: solishtirma jadval",
@@ -1173,8 +1756,98 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Halaqit beruvchi ionlar",
+        "root": "Halaqit beruvchilar",
+        "children": [
+          {
+            "label": "Kumush aniqlashda",
+            "items": [
+              "Simob (ditizon)"
+            ]
+          },
+          {
+            "label": "Mis aniqlashda",
+            "items": [
+              "Fe, Co, Ni"
+            ]
+          },
+          {
+            "label": "Marganets aniqlashda",
+            "items": [
+              "Xrom: Cr3+ → Cr6+",
+              "Fe — NaH2PO4",
+              "Cl− — AgNO3"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: har bir halaqit beruvchi ionni qanday chetlashtirish mumkin? Doskada: halaqit — chora juftliklari. Tipik xato: niqoblash va ajratishni bir xil deb hisoblash."
+    },
+    {
+      "title": "Halaqit beruvchi ionlarni bartaraf etish",
+      "bullets": [
+        {
+          "text": "Kumush: simob ditizonati ham sariq tilla rang beradi; 0,5 n HCl bilan farqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "63"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis: tetrarodanmerkuriat bilan temir, kobalt, nikel ham rangli cho‘kma hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "64"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marganets: temir NaH2PO4, xlorid AgNO3 bilan yo‘qotiladi; xrom DDTK bilan pH = 8 da ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "65"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Halaqit — chora",
+        "nodes": [],
+        "header": [
+          "Aniqlanadi",
+          "Halaqit / chora"
+        ],
+        "rows": [
+          [
+            "Kumush",
+            "Hg: 0,5 n HCl bilan farqlash"
+          ],
+          [
+            "Mis",
+            "Fe, Co, Ni: o‘xshash cho‘kma"
+          ],
+          [
+            "Marganets",
+            "Fe — NaH2PO4; Cl− — AgNO3"
+          ],
+          [
+            "Marganets",
+            "Cr — DDTK, pH = 8"
+          ],
+          [
+            "Xrom",
+            "Fe — NaH2PO4; Cl− — AgNO3"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: jadvalni to‘ldiring. Tipik xato: Cl− ni NaH2PO4 bilan yo‘qotishga urinish."
     },
     {
       "title": "Miqdoriy aniqlash usullari",
@@ -1284,12 +1957,12 @@
     {
       "question": "Kumush ditizonati va simob ditizonatini farqlash uchun nima ishlatiladi?",
       "options": [
-        "0,5 n HCl",
         "NaOH",
+        "0,5 n HCl",
         "Kons. H2SO4",
         "Etil spirti"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "0,5 n HCl kumush ditizonatni parchalaydi (yashil rang), simob ditizonat o‘zgarmaydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1300,12 +1973,12 @@
     {
       "question": "AgCl ni cho‘kmadan ajratish uchun yuvishda oxirida qaysi eritma ishlatiladi?",
       "options": [
-        "8 n NH4OH",
         "Suv",
-        "1% HgCl2",
-        "6 n HCl"
+        "6 n HCl",
+        "8 n NH4OH",
+        "1% HgCl2"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Cho‘kma 0,5 n HCl, suv va nihoyat 8 n NH4OH bilan yuviladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1316,12 +1989,12 @@
     {
       "question": "Mis DDTK holida ajratilganda mis ioni suvli qatlamga qaysi reaktiv ta’sirida o‘tadi?",
       "options": [
-        "HgCl2",
         "NaCl",
         "KI",
+        "HgCl2",
         "AgNO3"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Mis DDTK simob xlorid bilan parchalanadi va mis suvli qatlamga o‘tadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1332,12 +2005,12 @@
     {
       "question": "Mis trilon B bilan titrlanganda qaysi indikator ishlatiladi?",
       "options": [
-        "Murexid",
-        "Eriokrom qora",
+        "Difenilkarbazid",
         "Metil qizili",
-        "Difenilkarbazid"
+        "Murexid",
+        "Eriokrom qora"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Murexid sariq rangdan qizil rangga o‘tguncha titrlanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1349,9 +2022,9 @@
       "question": "Korxona havosida marganetsning miqdori qancha dan oshmasligi kerak?",
       "options": [
         "0,0003 mg/l",
+        "0,3 mg/l",
         "0,03 mg/l",
-        "3 mg/l",
-        "0,3 mg/l"
+        "3 mg/l"
       ],
       "correct_index": 0,
       "explanation": "Kitobga ko‘ra 0,0003 mg/l dan oshmasligi kerak.",
@@ -1364,12 +2037,12 @@
     {
       "question": "Marganetsni xromdan ajratishda qaysi pH da DDTK bilan ekstraksiya qilinadi?",
       "options": [
-        "pH = 8",
-        "pH = 1",
+        "pH = 3",
         "pH = 13",
-        "pH = 3"
+        "pH = 1",
+        "pH = 8"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "pH = 8 da marganets DDTK holida xloroformli qatlamga ekstraksiyalanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1380,12 +2053,12 @@
     {
       "question": "Xrom birikmalaridan qaysi biri kuchliroq zahar?",
       "options": [
-        "6 valentli",
         "3 valentli",
+        "6 valentli",
         "Ikkalasi teng",
         "2 valentli"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "6 valentli xrom birikmalari 3 valentlisiga nisbatan kuchli zahar.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1396,12 +2069,12 @@
     {
       "question": "Xrom bilan zaharlanishning asosiy belgisi qaysi?",
       "options": [
-        "Burun o‘rta pardasining buzilishi",
-        "Soch to‘kilishi",
         "Tish milkida qora dog‘lar",
-        "Terining kulrang-yashil tusga kirishi"
+        "Terining kulrang-yashil tusga kirishi",
+        "Soch to‘kilishi",
+        "Burun o‘rta pardasining buzilishi"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Burun o‘rta pardasining buzilishi xrom bilan zaharlanishning asosiy belgilaridan.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1412,12 +2085,12 @@
     {
       "question": "Nadxrom kislotasi qaysi erituvchi bilan oson ekstraksiyalanadi?",
       "options": [
-        "Etil atsetat",
         "Suv",
         "Benzin",
-        "Kons. HCl"
+        "Kons. HCl",
+        "Etil atsetat"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Zangori nadxrom kislotasi etil atsetat bilan oson ekstraksiyalanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1428,17 +2101,177 @@
     {
       "question": "Kumush bilan zaharlanganda teri qanday tusga kiradi?",
       "options": [
+        "Qizil",
         "Kulrang-yashil",
         "Sariq",
-        "Qizil",
         "Oq"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Kitobga ko‘ra teri kulrang yashil tusga kiradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "62"
+      }
+    },
+    {
+      "question": "Mineralizatga ditizon qo‘shilganda kumush borligida xloroform qatlami qanday rangga bo‘yaladi?",
+      "options": [
+        "Sariq tilla",
+        "Qizil alvon",
+        "Yashil",
+        "Ko‘k"
+      ],
+      "correct_index": 0,
+      "explanation": "Kumush bor bo‘lsa, xloroform qavati sariq tilla rangga bo‘yaladi; simob ditizonati ham shunday rangga ega.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "63"
+      }
+    },
+    {
+      "question": "Kumushni cho‘ktirish uchun 100 ml mineralizatga qancha NaCl qo‘shiladi?",
+      "options": [
+        "5 g",
+        "50 g",
+        "0,5 g",
+        "0,05 g"
+      ],
+      "correct_index": 2,
+      "explanation": "100 ml mineralizatga 0,5 g NaCl qo‘shib aralashma chayqatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "63"
+      }
+    },
+    {
+      "question": "Kumush ammiakati to‘yingan KI eritmasi bilan qanday cho‘kma beradi?",
+      "options": [
+        "Oq AgCl",
+        "Qizil",
+        "Qora Ag2S",
+        "Sariq AgI"
+      ],
+      "correct_index": 3,
+      "explanation": "Eritma ustiga KI ning to‘yingan eritmasi qo‘shilsa, sariq AgI cho‘kmasi hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "63"
+      }
+    },
+    {
+      "question": "Cu2+ tetrarodanmerkuriat ammoniy bilan sariq-yashil cho‘kma beradi; Zn2+ qo‘shilsa qanday rang paydo bo‘ladi?",
+      "options": [
+        "Qizil-pushti (nilufar)",
+        "Rangsiz",
+        "Qora",
+        "Ko‘k"
+      ],
+      "correct_index": 0,
+      "explanation": "Sariq-yashil Cu[Hg(CNS)4] cho‘kmasiga Zn2+ qo‘shilsa, qizil-pushti nilufar rangli cho‘kma hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "64"
+      }
+    },
+    {
+      "question": "Mis sariq qon tuzi bilan qanday cho‘kma beradi?",
+      "options": [
+        "Qora",
+        "Yashil",
+        "Qizil-qo‘ng‘ir Cu2[Fe(CN)6]",
+        "Oq"
+      ],
+      "correct_index": 2,
+      "explanation": "K4[Fe(CN)6] qo‘shilsa, qizil-qo‘ng‘ir rangli Cu2[Fe(CN)6] cho‘kmasi hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "64"
+      }
+    },
+    {
+      "question": "Piridin rodan reaktivi bilan mis cho‘kmasiga xloroform qo‘shilsa, qatlam qanday rangga bo‘yaladi?",
+      "options": [
+        "Yashil-zumrad",
+        "Rangsiz",
+        "Sariq",
+        "Qizil"
+      ],
+      "correct_index": 0,
+      "explanation": "Cho‘kma xloroform qo‘shilganda erib, xloroform qatlami yashil-zumrad rangga bo‘yaladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "64"
+      }
+    },
+    {
+      "question": "Shveynfurt yashili va Parij yashili mis bilan birga qaysi elementni saqlaydi?",
+      "options": [
+        "Margimush",
+        "Xrom",
+        "Qo‘rg‘oshin",
+        "Simob"
+      ],
+      "correct_index": 0,
+      "explanation": "Shveynfurt yashili Cu(CH3COO)2·3Cu(AsO2)2, Parij yashili Cu2As2O3 deb yoziladi: ular mis bilan birga margimush ham saqlaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "64"
+      }
+    },
+    {
+      "question": "Mn2+ ammoniy persulfat bilan oksidlanganda qanday rang hosil bo‘ladi?",
+      "options": [
+        "Sariq",
+        "Pushti-qizil",
+        "Zangori",
+        "Rangsiz"
+      ],
+      "correct_index": 1,
+      "explanation": "Mn2+ kaliy periodat va ammoniy persulfat yordamida pushti-qizil rangli permanganatga oksidlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "65"
+      }
+    },
+    {
+      "question": "100 g jigarda marganets qancha bo‘ladi?",
+      "options": [
+        "4 g",
+        "40 mg",
+        "0,004 mg",
+        "0,4 mg gacha"
+      ],
+      "correct_index": 3,
+      "explanation": "100 g jigarda 0,4 mg, buyrakda 0,28 mg, bachadonda 0,16 mg gacha marganets saqlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "65"
+      }
+    },
+    {
+      "question": "Marganets xloroformli DDTK qatlamidan qaysi kislota bilan reekstraksiya qilinadi?",
+      "options": [
+        "Oksalat kislota",
+        "Nitrat kislota",
+        "Sirka kislota",
+        "Fosfat kislota"
+      ],
+      "correct_index": 1,
+      "explanation": "Xrom suvli eritmada qoladi, marganets xloroformli qavatdan nitrat kislota bilan reekstraksiyalab ajratiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "66"
       }
     }
   ],

@@ -5,7 +5,7 @@
       "title": "Mashg‘ulot maqsadi va rejasi",
       "bullets": [
         {
-          "text": "Maqsad: biologik ob’ektlardan kislotali, neytral va kuchsiz asosli zaharli moddalarni nordonlashtirilgan suv usuli bilan ajratish va usulning nazariy asoslarini tushuntirish.",
+          "text": "Maqsad: kislotali, neytral va kuchsiz asosli zaharlarni nordonlashtirilgan suv usuli bilan ajratish va usulning nazariy asoslarini tushuntirish.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -88,6 +88,368 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: usulni tanlashda qaysi ikki omil hal qiluvchi? (Ob’ekt xarakteri va modda xossalari.) Doskada: 4 natija. Tipik xato: faqat bitta usulni bilish."
     },
     {
+      "title": "Dars xaritasi: polyar erituvchilar bilan ajratish",
+      "bullets": [
+        {
+          "text": "Reja: kislotali, neytral va kuchsiz asosli zaharlarni nordonlashtirilgan suv bilan ajratish; ikki guruhga ajratish; paxikarpinga tekshirish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "224"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usullar: Stas-Otto (nordonlashtirilgan spirt), A.A.Vasileva va V.F.Kramarenko (nordonlashtirilgan suv).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "226"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ajratma kislotali va ishqoriy sharoitda ekstraksiyalanib, ikki guruhga bo‘linadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Polyar erituvchilar bilan ajratish",
+        "root": "Nordonlashtirilgan usullar",
+        "children": [
+          {
+            "label": "Stas-Otto",
+            "items": [
+              "Oksalat kislotali etil spirti",
+              "Nordonlashtirilgan spirt"
+            ]
+          },
+          {
+            "label": "Vasileva",
+            "items": [
+              "Oksalat kislotali suv",
+              "Xloroform bilan ekstraksiya"
+            ]
+          },
+          {
+            "label": "Kramarenko",
+            "items": [
+              "Sulfat kislotali suv",
+              "Sentrifugalash"
+            ]
+          },
+          {
+            "label": "Ikki ajralma",
+            "items": [
+              "Kislotali ajralma",
+              "Ishqoriy ajralma"
+            ]
+          },
+          {
+            "label": "Paxikarpin",
+            "items": [
+              "Yod ioniga tekshirish"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usul spirt, qaysi suv bilan? Doskada: daraxt sxemasi. Tipik xato: Stas-Ottoni nordonlashtirilgan suv usuli deb atash."
+    },
+    {
+      "title": "Nordonlashtirilgan spirt va suv usullari",
+      "bullets": [
+        {
+          "text": "Nordonlashtirilgan spirt usuli taxminan 1840-yillarda tavsiya etilgan; Stas 1851 yilda alkaloidlar tuzlari spirtda yaxshi erishiga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nordonlashtirilgan suv usulini 1861 yilda Uslar va Erdman qo‘llab, ob’ektni xlorid kislota bilan nordonlashtirishni taklif etgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyingi mualliflar nordonlashtirish uchun fosfat, sulfat kislotasi va boshqa mineral va organik kislotalarni tavsiya etgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Spirt va suv usullari",
+        "columns": [
+          {
+            "title": "Nordonlashtirilgan spirt",
+            "items": [
+              "Stas, 1851; Otto, 1856",
+              "Oksalat yoki vino kislotali spirt",
+              "Emulsiya deyarli hosil bo‘lmaydi"
+            ]
+          },
+          {
+            "title": "Nordonlashtirilgan suv",
+            "items": [
+              "Uslar va Erdman, 1861",
+              "Xlorid, keyin fosfat, sulfat kislota",
+              "Tez usul"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki usul kislotasi va erituvchisi nima bilan farq qiladi? Doskada: taqqoslash. Tipik xato: yillarni aralashtirish."
+    },
+    {
+      "title": "Dragendorf usuli",
+      "bullets": [
+        {
+          "text": "G.Dragendorf usuli: ob’ekt sulfat kislota bilan nordonlashtiriladi, suvli eritma qiyom holigacha bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "24 soat 96% spirtda bo‘ktirilib filtrlanadi; filtrat suv bilan aralashtirilib, benzin, petroley efiri va xloroform bilan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamchiligi: sulfat kislotali ajralmani isitib bug‘latish efir tipidagi ko‘pchilik alkaloidlarni gidrolizlaydi va iflos qoldiq beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Dragendorf usuli",
+        "items": [
+          {
+            "title": "Nordonlashtirish",
+            "text": "Ob’ekt sulfat kislota bilan"
+          },
+          {
+            "title": "Bug‘latish",
+            "text": "Suvli eritma qiyom holigacha"
+          },
+          {
+            "title": "Spirt",
+            "text": "24 soat davomida 96% spirtda bo‘ktirish, filtrlash"
+          },
+          {
+            "title": "Kislotali ekstraksiya",
+            "text": "Benzin, petroley efiri, xloroform"
+          },
+          {
+            "title": "Ishqorlash",
+            "text": "Ammiak bilan; benzin va izoamil spirti"
+          },
+          {
+            "title": "Tekshirish",
+            "text": "Ekstraktlar birlashtirilib alkaloidlarga"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega gidroliz kamchilik? Doskada: 6 qadam. Tipik xato: bug‘latishda isitish xavfini unutish."
+    },
+    {
+      "title": "Kramarenko usulining asoslari",
+      "bullets": [
+        {
+          "text": "Kramarenko usulda ob’ektning pH-muhiti, organik erituvchilar xarakteri va elektrolitlar ta’sirini hisobga olishni tavsiya etdi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Filtrlash o‘rniga sentrifugalash qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alkaloidlar organizmda gidrolizlanish, oksidlanish, qaytarilish va oqsillar bilan birikish ta’sirida o‘zgarishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Kramarenko usulining asoslari",
+        "root": "Kramarenko usuli",
+        "children": [
+          {
+            "label": "pH-muhit",
+            "items": [
+              "pH 2,5-3 — kompleks parchalanadi"
+            ]
+          },
+          {
+            "label": "Erituvchi xarakteri",
+            "items": [
+              "Efir — kislotali bosqich",
+              "Xloroform — ishqoriy bosqich"
+            ]
+          },
+          {
+            "label": "Elektrolit",
+            "items": [
+              "(NH4)2SO4 bilan to‘yintirish"
+            ]
+          },
+          {
+            "label": "Sentrifugalash",
+            "items": [
+              "Filtrlash o‘rniga"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega filtr o‘rniga sentrifuga? Doskada: daraxt sxemasi. Tipik xato: pH 2,5 ni boshqa qiymat bilan almashtirish."
+    },
+    {
+      "title": "Alkaloid va oqsil komplekslari: pH",
+      "bullets": [
+        {
+          "text": "Alkaloidlar kuchsiz kislotali muhitda (pH 4-5) oqsillar bilan yaxshi birikadi; pH ortishi bilan bu xususiyat kuchayadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tirik organizmda pH 7,3-7,5, murda organizmida 6,2 atrofida; alkaloidlar asosan birikkan holda bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Komplekslarni parchalash uchun pH-muhitni o‘zgartirish talab etiladi: pH 2,5-3 bo‘lganda bunga erishiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Alkaloid-oqsil komplekslari: pH",
+        "items": [
+          {
+            "label": "Oqsil bilan birikish",
+            "value": "4-5",
+            "unit": "pH"
+          },
+          {
+            "label": "Tirik organizm",
+            "value": "7,3-7,5",
+            "unit": "pH"
+          },
+          {
+            "label": "Murda organizmi",
+            "value": "6,2",
+            "unit": "pH atrofi"
+          },
+          {
+            "label": "Kompleksni parchalash",
+            "value": "2,5-3",
+            "unit": "pH"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega pH 2,5-3 tanlanadi? Doskada: qiymatlar. Tipik xato: tirik va murda pH ini aralashtirish."
+    },
+    {
+      "title": "Alkaloid va oqsil: reaksiya sxemasi",
+      "bullets": [
+        {
+          "text": "Alkaloidlar oqsillar bilan birikib, suvda erimaydigan komplekslar hosil qilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "pH ortishi bilan alkaloidlarning oqsil bilan birikish xususiyati kuchayadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuning uchun alkaloidlarni ajratishda komplekslarni parchalash maqsadida pH o‘zgartiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Alkaloid + oqsil",
+        "reagents": [
+          "Alkaloid",
+          "Oqsil moddalar"
+        ],
+        "conditions": "Kuchsiz kislotali muhit, pH 4-5",
+        "products": [
+          "Suvda erimaydigan kompleks"
+        ],
+        "observation": "Parchalash uchun pH 2,5-3 ga keltiriladi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kompleks nima uchun ajratishga halaqit beradi? Doskada: sxema. Tipik xato: kompleksni parchalamasdan ekstraksiya qilish."
+    },
+    {
       "title": "Jihozlar va dastlabki ishlar",
       "bullets": [
         {
@@ -150,9 +512,59 @@
             "page": "95"
           },
           "uncertain": false
+        },
+        {
+          "text": "Stas 1851 yilda nordonlashtirilgan spirt usulini taklif etdi, Otto 1856 yilda uni to‘ldirdi; Uslar va Erdman 1861 yilda nordonlashtirilgan suv usulini qo‘lladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Usullar tarixi",
+        "header": [
+          "Yil",
+          "Muallif",
+          "Usul"
+        ],
+        "rows": [
+          [
+            "1851",
+            "Stas",
+            "Nordonlashtirilgan spirt"
+          ],
+          [
+            "1856",
+            "Otto",
+            "Spirtli ajralmani tozalash"
+          ],
+          [
+            "1861",
+            "Uslar, Erdman",
+            "HCl bilan nordonlashtirilgan suv"
+          ],
+          [
+            "1942",
+            "Stepanov, Shvaykova",
+            "Oksalat kislotali suv"
+          ],
+          [
+            "1946",
+            "Vasileva",
+            "Murda a’zolaridan ajratish"
+          ],
+          [
+            "1956-1961",
+            "Kramarenko",
+            "Takomillashtirilgan usul"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ikki usulning asosiy farqi nima? (oksalat kislota va sulfat kislota; sentrifugalash.) Doskada: 1942, 1946, 1956-1961. Tipik xato: yillarni almashtirish."
     },
     {
@@ -199,6 +611,72 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: o‘simlik ob’ektida nima uchun suv ko‘proq (1:12)? Doskada: 1:2 va 1:12. Tipik xato: pH ni oksalat o‘rniga sulfat kislota bilan sozlash (u Kramarenko usuli)."
+    },
+    {
+      "title": "Vasileva usuli: asosiy qiymatlar",
+      "bullets": [
+        {
+          "text": "100 g ob’ekt suv bilan 1:2 (bioob’ekt) yoki 1:12 (o‘simlik ob’ektlari) nisbatda aralashtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "pH 2,0-2,5 gacha oksalat kislota; ikki soat bo‘ktiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislotali va ishqoriy bosqichda 3 marta 10 ml xloroform; ishqoriy pH 8,0-9,0 (25% ammoniy gidroksid).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Vasileva usuli",
+        "items": [
+          {
+            "label": "Ob’ekt",
+            "value": "100",
+            "unit": "g"
+          },
+          {
+            "label": "Suv nisbati (bioob’ekt)",
+            "value": "1:2"
+          },
+          {
+            "label": "Kislotali pH",
+            "value": "2,0-2,5"
+          },
+          {
+            "label": "Bo‘ktirish",
+            "value": "2",
+            "unit": "soat"
+          },
+          {
+            "label": "Xloroform (har gal)",
+            "value": "10",
+            "unit": "ml x 3"
+          },
+          {
+            "label": "Ishqoriy pH",
+            "value": "8,0-9,0"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi nisbat o‘simlik ob’ekti uchun? Doskada: qiymatlar. Tipik xato: 1:2 va 1:12 ni almashtirish."
     },
     {
       "title": "Vasileva usuli: kislotali ekstraksiya",
@@ -321,7 +799,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Ajratmalarni bug‘latish",
+        "nodes": [
+          "Kislotali xloroformli ajralma",
+          "Ishqoriy xloroformli ajralma",
+          "Xona haroratida bug‘latish",
+          "Qoldiq: rang, hid, konsistensiya",
+          "Zarur bo‘lsa — tozalash"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qoldiq rangi nimani ko‘rsatishi mumkin? Doskada: 3 belgi (rang, hid, konsistensiya). Tipik xato: qoldiqni isitib quritish; kitobda xona harorati ko‘rsatilgan."
     },
     {
@@ -370,6 +858,266 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun pH aynan 2,5? (Kitobda 95-bet: alkaloid-oqsil komplekslarini parchalash uchun pH 2,5-3.) Doskada: 0,02 M va 2,5. Tipik xato: lekin 225-betdagi tavsifda ’agar pH 2,5 dan kam bo‘lsa 2,5 ga keltiriladi’ deyilgan, lekin pH 2,5 dan yuqori bo‘lsa nima qilish yozilmagan; o‘qituvchidan aniqlang."
     },
     {
+      "title": "Kramarenko usuli: asosiy qiymatlar",
+      "bullets": [
+        {
+          "text": "100 g ob’ekt 250-500 ml stakanda 0,02 M H2SO4 bilan qoplanadi; pH 2,5 dan kam bo‘lsa, 20% H2SO4 bilan 2,5 ga keltiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Birinchi bo‘ktirish 2 soat, ikkinchisi 1 soat; sentrifuga stakani 200 ml.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Efir bilan 2 x 40 ml; ishqoriy bosqichda 20% NaOH bilan pH 8,0-9,0 va 3 marta xloroform.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Kramarenko usuli",
+        "items": [
+          {
+            "label": "Ob’ekt",
+            "value": "100",
+            "unit": "g"
+          },
+          {
+            "label": "Sulfat kislota",
+            "value": "0,02",
+            "unit": "M"
+          },
+          {
+            "label": "Birinchi pH",
+            "value": "2,5"
+          },
+          {
+            "label": "Bo‘ktirish",
+            "value": "2 + 1",
+            "unit": "soat"
+          },
+          {
+            "label": "Efir",
+            "value": "2 x 40",
+            "unit": "ml"
+          },
+          {
+            "label": "Ishqoriy pH (NaOH 20%)",
+            "value": "8,0-9,0"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qiymatlarni Vasileva bilan solishtiring. Doskada: qiymatlar. Tipik xato: kislota konsentratsiyasini adashtirish."
+    },
+    {
+      "title": "Usullarni solishtirish",
+      "bullets": [
+        {
+          "text": "Stas-Otto: oksalat kislotali etil spirti, 1 sutka; spirtli eritmalar 35 °C da bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vasileva: oksalat kislotali suv, pH 2,0-2,5, xloroform 3 x 10 ml.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kramarenko: 0,02 M sulfat kislota, pH 2,5, sentrifugalash, ammoniy sulfat bilan to‘yintirish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Stas-Otto, Vasileva, Kramarenko",
+        "columns": [
+          {
+            "title": "Stas-Otto",
+            "items": [
+              "Oksalat kislotali etil spirti",
+              "1 sutka bo‘ktirish",
+              "35 °C da bug‘latish"
+            ]
+          },
+          {
+            "title": "Vasileva",
+            "items": [
+              "Oksalat kislotali suv",
+              "pH 2,0-2,5; 2 soat",
+              "Xloroform 3 x 10 ml"
+            ]
+          },
+          {
+            "title": "Kramarenko",
+            "items": [
+              "0,02 M H2SO4, pH 2,5",
+              "Sentrifuga, (NH4)2SO4",
+              "Efir 2 x 40 ml; xloroform"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uch usulning umumiy tomoni nima? Doskada: 3 ustunli taqqoslash. Tipik xato: spirt va suv usullarini aralashtirish."
+    },
+    {
+      "title": "Yot moddalardan tozalash usullari",
+      "bullets": [
+        {
+          "text": "Stas-Otto: spirtli sirop 96% etil spirti bilan yot va oqsil moddalardan cho‘ktiriladi, so‘ng efir bilan tozalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vasileva: ajralma doka orqali suziladi, xloroformli ajralma ikki qavatli filtrdan o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kramarenko: ammoniy sulfat bilan to‘yintirish, sentrifugalash va efir bilan ekstraksiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Tozalash bosqichlari",
+        "columns": [
+          {
+            "title": "Stas-Otto",
+            "items": [
+              "96% spirt — cho‘ktirish",
+              "Efir bilan 3 qayta tozalash"
+            ]
+          },
+          {
+            "title": "Vasileva",
+            "items": [
+              "Doka orqali suzish",
+              "Ikki qavatli filtr"
+            ]
+          },
+          {
+            "title": "Kramarenko",
+            "items": [
+              "(NH4)2SO4 bilan to‘yintirish",
+              "Sentrifuga, efir 2 x 40 ml"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usulda emulsiya kam? Doskada: taqqoslash. Tipik xato: tozalashni ixtiyoriy deb hisoblash."
+    },
+    {
+      "title": "Vaqt va hajmlar jadvali",
+      "bullets": [
+        {
+          "text": "Kramarenko: birinchi bo‘ktirish 2 soat, ikkinchi bo‘ktirish bir soat, cho‘kma 20-30 ml kislota bilan 2 soat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ammoniy sulfat bilan to‘yintirilgach, 1-2 soatdan so‘ng cho‘kma sentrifugalab ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vasileva: 2 soat bo‘ktirish, xloroform bilan har gal 5 daqiqa chayqatish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Vaqt va hajm",
+        "header": [
+          "Bosqich",
+          "Vasileva",
+          "Kramarenko"
+        ],
+        "rows": [
+          [
+            "1-bo‘ktirish",
+            "2 soat",
+            "2 soat"
+          ],
+          [
+            "2-bo‘ktirish",
+            "—",
+            "1 soat"
+          ],
+          [
+            "Cho‘kma bilan ishlash",
+            "—",
+            "20-30 ml; 2 soat"
+          ],
+          [
+            "Xloroform / efir",
+            "3 x 10 ml xloroform",
+            "2 x 40 ml efir"
+          ],
+          [
+            "Chayqatish",
+            "5 daqiqa (gal)",
+            "—"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi bosqich faqat Kramarenkoda? Doskada: jadval. Tipik xato: vaqtlarni almashtirish."
+    },
+    {
       "title": "Kramarenko usuli: ikkinchi bo‘ktirish va sentrifuga",
       "bullets": [
         {
@@ -400,7 +1148,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Kramarenko: bo‘ktirish va sentrifuga",
+        "items": [
+          {
+            "title": "2-bo‘ktirish",
+            "text": "Qattiq qism pH 2,5 da 0,02 M H2SO4 bilan 1 soat"
+          },
+          {
+            "title": "Birlashtirish",
+            "text": "Sulfat kislotali eritmalar birlashtiriladi"
+          },
+          {
+            "title": "Sentrifugalash",
+            "text": "200 ml li sentrifuga stakanida"
+          },
+          {
+            "title": "Cho‘kmani qayta ishlash",
+            "text": "20-30 ml 0,02 M H2SO4 bilan 2 soat, sentrifuga"
+          },
+          {
+            "title": "Suvli qatlam",
+            "text": "Umumiy ajratmaga qo‘shiladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun filtrlash o‘rniga sentrifugalash? (Toks 89: filtr qog‘ozi moddani adsorbsiyalab yo‘qotishi mumkin.) Doskada: 1 soat, 2 soat, 20-30 ml. Tipik xato: cho‘kmani tashlab yuborish."
     },
     {
@@ -434,7 +1207,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Oqsildan tozalash",
+        "nodes": [
+          "Ajratma + (NH4)2SO4, sekin-asta",
+          "1-2 soatdan so‘ng cho‘kma",
+          "Sentrifugalash",
+          "Suvli qatlam pH 2,0-2,5 (10% H2SO4)",
+          "2 x 40 ml etil efiri"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ammoniy sulfat nima uchun qo‘shiladi? (Oqsilni cho‘ktirish; tuzlash.) Doskada: ’to‘yintirish -> sentrifuga -> pH 2,0-2,5’. Tipik xato: to‘yintirishni tez bajarish (kitob: sekin-asta)."
     },
     {
@@ -511,8 +1294,185 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Kramarenko: ishqoriy bosqich",
+        "items": [
+          {
+            "title": "Ishqorlash",
+            "text": "Suvli qatlam 20% NaOH bilan pH 8,0-9,0 ga"
+          },
+          {
+            "title": "Xloroform",
+            "text": "Uch marta; hajmi suvli qatlamning 1/3 qismi"
+          },
+          {
+            "title": "Birlashtirish",
+            "text": "Xloroformli ajratmalar birlashtiriladi"
+          },
+          {
+            "title": "Bug‘latish",
+            "text": "Suv hammomida 10-15 ml qolguncha, so‘ng xona haroratida"
+          },
+          {
+            "title": "Qoldiq",
+            "text": "10 ml 0,1 M HCl da eritilib, asos zaharlarga tekshiriladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: NaOH olish sababi? (Kitob 95-bet: (NH4)2SO4 + 2NaOH -> 2NH4OH + Na2SO4, ajralgan ammiak hisobiga pH o‘zgaradi.) Doskada: 1/3 hajm. Tipik xato: kitob 95-betda pH ni 8,5-9,0 deydi, 225-betda 8,0-9,0: mashg‘ulotda 225-bet qiymatiga amal qiling."
+    },
+    {
+      "title": "Nima uchun NaOH: ammoniy hosil bo‘lishi",
+      "bullets": [
+        {
+          "text": "Nordon suvli eritmaga 20% natriy ishqori qo‘shilganda ajralib chiqqan ammiak hisobiga pH muhiti o‘zgaradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya: (NH4)2SO4 + 2NaOH → 2NH4OH + Na2SO4.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shundan so‘ng suvli qatlam xloroform bilan 3 qayta ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "95"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Ammoniy sulfat va ishqor",
+        "reagents": [
+          "(NH4)2SO4",
+          "2NaOH"
+        ],
+        "conditions": "Nordon suvli eritmaga ishqor qo‘shiladi",
+        "products": [
+          "2NH4OH",
+          "Na2SO4"
+        ],
+        "observation": "Ajralgan ammiak hisobiga pH o‘zgaradi"
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega NaOH olishning sababi shu? Doskada: reaksiya tenglamasi. Tipik xato: ammoniy sulfatni unutish."
+    },
+    {
+      "title": "Paxikarpin: yod ioni reaksiyasi",
+      "bullets": [
+        {
+          "text": "Ishqoriy ekstraksiyadan qolgan suvli qism kislotali muhitgacha sulfat kislota bilan nordonlashtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natriy nitrit va xloroform qo‘shib chayqatilsa, yod ioni bo‘lsa, xloroform qatlami qizil pushti (qizil binafsha) rangga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya: 2NH4I + 2NaNO2 + 2H2SO4 → I2 + Na2SO4 + (NH4)2SO4 + 2NO + 2H2O (xloroform bilan).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "112"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Yod ioni sinovi",
+        "reagents": [
+          "NH4I (suvli qoldiq)",
+          "NaNO2",
+          "H2SO4"
+        ],
+        "conditions": "Kislotali muhit, xloroform qo‘shiladi",
+        "products": [
+          "I2",
+          "Na2SO4 + (NH4)2SO4",
+          "NO + H2O"
+        ],
+        "observation": "Xloroform qatlami qizil-binafsha (I2)"
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: rangni nima beradi? Doskada: reaksiya sxemasi. Tipik xato: paxikarpinni ishqoriy ajralmada qidirish."
+    },
+    {
+      "title": "Bug‘latish rejimlari",
+      "bullets": [
+        {
+          "text": "Stas-Otto usulida spirtli eritmalar oz miqdor spirt qolguncha 35 °C haroratda bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vasilevada kislotali va ishqoriy xloroformli ajralmalar xona haroratida bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kramarenkoda xloroformli ajratmalar suv hammomida 10-15 ml qolguncha, qolgani xona haroratida bug‘latiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "225"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Bug‘latish",
+        "header": [
+          "Usul",
+          "Rejim"
+        ],
+        "rows": [
+          [
+            "Stas-Otto",
+            "35 °C, oz spirt qolguncha"
+          ],
+          [
+            "Vasileva",
+            "Xona harorati"
+          ],
+          [
+            "Kramarenko",
+            "Suv hammomi (10-15 ml), xona harorati"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega past harorat tanlanadi? Doskada: jadval. Tipik xato: qoldiqni qizdirib quritish."
     },
     {
       "title": "Paxikarpinga tekshirish (yod ioni)",
@@ -646,14 +1606,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Vasileva va Kramarenko: baho",
+        "columns": [
+          {
+            "title": "Vasileva usuli",
+            "items": [
+              "Tez bajariladi",
+              "Qimmat reaktiv kerak emas",
+              "Suvda erimaydigan moddalar qiyin",
+              "Chirigan ob’ektda emulsiya"
+            ]
+          },
+          {
+            "title": "Kramarenko usuli",
+            "items": [
+              "Sezgir, zahar to‘liq ajraladi",
+              "Nisbatan tez",
+              "Reaktivlar topilishi oson"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun chirigan ob’ektda emulsiya ekstraksiyani qiyinlashtiradi? Doskada: 3 baho. Tipik xato: Kramarenko usulini ham chirigan ob’ekt uchun cheklanmagan deb hisoblash."
     },
     {
       "title": "Zaharlarning ikki guruhi",
       "bullets": [
         {
-          "text": "Kislotali ajralmada barbituratlar, neytral moddalar (fenatsetin), organik kislotalar (salitsil, pikrin) va kuchsiz asosli alkaloidlar (kofein, teobromin, teofillin, papaverin, narkotin, strixnin) tekshiriladi.",
+          "text": "Kislotali ajralmada barbituratlar, neytral (fenatsetin), organik kislotalar (salitsil, pikrin), kuchsiz asosli alkaloidlar (kofein, strixnin) tekshiriladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -680,8 +1662,182 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Ikki ajralma",
+        "columns": [
+          {
+            "title": "Kislotali ajralma",
+            "items": [
+              "Barbituratlar",
+              "Neytral: fenatsetin",
+              "Salitsil, pikrin kislota",
+              "Kuchsiz asos: kofein, strixnin va b."
+            ]
+          },
+          {
+            "title": "Ishqoriy ajralma",
+            "items": [
+              "Alkaloidlar",
+              "Sintetik analoglar",
+              "Har biri ayrim tahlil qilinadi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: strixnin nima uchun kislotali ajralmada ham bo‘lishi mumkin? (Kuchsiz asos va 107-betda ham kislotali, ham ishqoriy sharoitda ekstraksiyalanishi aytilgan.) Doskada: ikki ustun. Tipik xato: strixninni faqat ishqoriy ajralmada qidirish."
+    },
+    {
+      "title": "Qutbli erituvchilar bilan ajraladigan moddalar",
+      "bullets": [
+        {
+          "text": "Nordonlashtirilgan suv va spirt bilan asosan kristall holatdagi dorivor moddalar ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kimyogar-ekspert to‘liq tahlilda bu guruhdan 28 ta moddaga tekshiradi: 7 barbiturat, 14 alkaloid va 7 azot saqlovchi sintetik birikma.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "93"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ular kislotali, asos va neytral xossaga ega bo‘lishi mumkin, shuning uchun suvli eritmadan organik erituvchilar bilan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "28 ta modda",
+        "root": "Qutbli erituvchi guruhi",
+        "children": [
+          {
+            "label": "7 barbiturat",
+            "items": [
+              "Barbital, fenobarbital, barbamil",
+              "Etaminal natriy, siklobarbital",
+              "Geksabarbital, benzonal"
+            ]
+          },
+          {
+            "label": "14 alkaloid",
+            "items": [
+              "Morfin, kodein, dionin, geroin",
+              "Papaverin, strixnin, atropin",
+              "Kokain, paxikarpin, nikotin, xinin"
+            ]
+          },
+          {
+            "label": "7 azotli sintetik",
+            "items": [
+              "Promedol, aminazin, diprazin",
+              "Tizertsin, majeptil",
+              "Triftazin, imizin"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: guruhlar yig‘indisi qancha? Doskada: daraxt sxemasi. Tipik xato: 7+14+7 hisobini adashtirish.",
+      "diagram_note": "Kitobdagi ro‘yxatda 15 nom keltirilgan (atropin va giostsiamin bir modda sifatida sanaladi, jami 14)."
+    },
+    {
+      "title": "Suyuq alkaloidlar: ajratish xususiyatlari",
+      "bullets": [
+        {
+          "text": "Suyuq alkaloidlarga anabazin, nikotin, paxikarpin, koniin va arekolin kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asos holida ular o‘ziga xos hidli yog‘simon, yetarlicha uchuvchan suyuqlik; organik erituvchilarda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Biologik ob’ektdan ishqoriy sharoitda suv bug‘i bilan haydab, distillyat ishqoriy muhitga keltirilib, xloroform bilan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Suyuq alkaloidlar",
+        "columns": [
+          {
+            "title": "Asos holida",
+            "items": [
+              "Yog‘simon, uchuvchan suyuqlik",
+              "Organik erituvchida yaxshi eriydi",
+              "Suv bug‘i bilan azeotrop haydaladi"
+            ]
+          },
+          {
+            "title": "Tuz holida",
+            "items": [
+              "Suvda yaxshi eriydi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bu guruh haydash bilan ajratiladi? Doskada: taqqoslash. Tipik xato: suyuq alkaloidlarni faqat nordonlashtirilgan suvda ajratish."
+    },
+    {
+      "title": "Murda alkaloidlari va usul tanlash",
+      "bullets": [
+        {
+          "text": "Qutbli erituvchi usullarida chirigan ob’ektdan barqaror emulsiya hosil bo‘lishi mumkin; Stas-Otto usulida emulsiya deyarli yo‘q.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94-95"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharli moddalar ob’ekt xarakteri va moddaning fizik-kimyoviy xossalariga qarab usul tanlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "224"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hozirgi vaqtda Stas-Otto, Vasileva va Kramarenko usullari asosida pH 2,5-3,0 da ajratilib, suvli ajralmadan alkaloidlar pH 9 da ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: chirigan ob’ektda qaysi usul qulay? Doskada: 3 bandni solishtiring. Tipik xato: chirigan ob’ektda ham Vasileva usulini afzal ko‘rish."
     },
     {
       "title": "Stas-Otto, Vasileva va Kramarenko usullari",
@@ -766,7 +1922,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Stas-Otto bosqichlari",
+        "items": [
+          {
+            "title": "Bo‘ktirish",
+            "text": "Oksalat kislotali etil spirti, 1 sutka"
+          },
+          {
+            "title": "Bug‘latish",
+            "text": "Spirtli eritmalar 35 °C da, sirop qolguncha"
+          },
+          {
+            "title": "Oqsilni cho‘ktirish",
+            "text": "96% etil spirti qo‘shiladi, takrorlanadi"
+          },
+          {
+            "title": "Efir bilan tozalash",
+            "text": "Iliq suv bilan suyultirib, 3 qayta dietil efiri"
+          },
+          {
+            "title": "Ishqorlash",
+            "text": "Ammiak yoki natriy bikarbonat bilan"
+          },
+          {
+            "title": "Alkaloidlar",
+            "text": "Efir bilan 3 qayta ekstraksiya, tekshiriladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: Vasileva usulining kamchiligi (emulsiya) Stas-Otto da qanday bartaraf etilgan? Doskada: 1851, 1856. Tipik xato: Stas va Otto yillarini aralashtirish."
     },
     {
@@ -885,12 +2070,12 @@
     {
       "question": "Vasileva usulida ob’ekt qaysi kislota bilan nordonlashtiriladi?",
       "options": [
-        "Oksalat kislotasi",
         "Sulfat kislotasi",
-        "Xlorid kislotasi",
-        "Nitrat kislotasi"
+        "Oksalat kislotasi",
+        "Nitrat kislotasi",
+        "Xlorid kislotasi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Vasileva usulida oksalat kislotasi bilan pH 2,0-2,5 ga keltiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -903,8 +2088,8 @@
       "options": [
         "1:2",
         "1:12",
-        "1:20",
-        "1:1"
+        "1:1",
+        "1:20"
       ],
       "correct_index": 0,
       "explanation": "Bioob’ekt uchun 1:2, o‘simlik ob’ektlari uchun 1:12.",
@@ -933,12 +2118,12 @@
     {
       "question": "Kramarenko usulida oqsildan tozalash uchun nima ishlatiladi?",
       "options": [
-        "Ammoniy sulfat",
         "Natriy xlorid",
-        "Kaliy yodid",
-        "Aseton"
+        "Ammoniy sulfat",
+        "Aseton",
+        "Kaliy yodid"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Ajratma ammoniy sulfat tuzi bilan sekin-asta to‘yintiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -949,12 +2134,12 @@
     {
       "question": "Kramarenko usulida ishqoriy sharoitda xloroform hajmi suvli qatlamning qancha qismini tashkil etishi kerak?",
       "options": [
-        "1/3",
         "1/2",
-        "1/10",
-        "2/3"
+        "1/3",
+        "2/3",
+        "1/10"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Xloroform hajmi suvli qatlam hajmining 1/3 qismini tashkil qilishi lozim.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -966,9 +2151,9 @@
       "question": "Paxikarpin uchun qaysi ionga tekshirish o‘tkaziladi?",
       "options": [
         "Yod ioni",
-        "Xlorid ioni",
         "Sulfat ioni",
-        "Nitrat ioni"
+        "Nitrat ioni",
+        "Xlorid ioni"
       ],
       "correct_index": 0,
       "explanation": "5 ml suvli qismga sulfat kislota, NaNO2 va xloroform qo‘shilganda xloroform qizil binafsha bo‘lishi mumkin.",
@@ -982,8 +2167,8 @@
       "question": "Vasileva usulida ishqoriy sharoit uchun qaysi reaktiv ishlatiladi?",
       "options": [
         "25% ammoniy gidroksidi",
-        "20% natriy gidroksidi",
         "10% sulfat kislota",
+        "20% natriy gidroksidi",
         "0,1 M HCl"
       ],
       "correct_index": 0,
@@ -997,12 +2182,12 @@
     {
       "question": "Stas nordonlashtirilgan spirt usulini qaysi yilda taklif etgan?",
       "options": [
-        "1851",
+        "1946",
         "1856",
-        "1942",
-        "1946"
+        "1851",
+        "1942"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Stas usuli 1851 yilda, Otto o‘zgartirishi 1856 yilda.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1013,12 +2198,12 @@
     {
       "question": "Vasileva usulining kamchiligi qaysi?",
       "options": [
-        "Chirigan ob’ektda barqaror emulsiya hosil bo‘ladi",
         "Juda qimmat reaktiv kerak",
-        "Juda uzoq vaqt talab qiladi",
-        "Faqat o‘simlikda ishlaydi"
+        "Faqat o‘simlikda ishlaydi",
+        "Chirigan ob’ektda barqaror emulsiya hosil bo‘ladi",
+        "Juda uzoq vaqt talab qiladi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Chirigan ob’ektdan to‘liq ajratib bo‘lmaydi: ekstraksiyada barqaror emulsiya.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1029,17 +2214,177 @@
     {
       "question": "Kramarenko usulida kislotali bosqichdagi ekstraksiya qaysi erituvchi bilan o‘tkaziladi?",
       "options": [
+        "Geksan",
         "Etil efiri (2 x 40 ml)",
         "Xloroform (3 x 10 ml)",
-        "Benzol",
-        "Geksan"
+        "Benzol"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Suvli qatlam ikki marta 40 ml etil efiri bilan ekstraksiyalanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "225"
+      }
+    },
+    {
+      "question": "Vasileva usulida xloroform bilan har safar necha daqiqa chayqatiladi?",
+      "options": [
+        "15 daqiqa",
+        "30 soniya",
+        "5 daqiqa",
+        "2 soat"
+      ],
+      "correct_index": 2,
+      "explanation": "Ajralma 3 qayta 10 ml xloroform bilan har gal 5 daqiqa chayqatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "225"
+      }
+    },
+    {
+      "question": "Vasileva usulida ob’ekt necha soat bo‘ktiriladi?",
+      "options": [
+        "24 soat",
+        "10 daqiqa",
+        "2 soat",
+        "1 hafta"
+      ],
+      "correct_index": 2,
+      "explanation": "Oksalat kislota bilan pH 2,0-2,5 ga keltirilgach, ikki soat davomida bo‘ktiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "225"
+      }
+    },
+    {
+      "question": "Kramarenko usulida pH 2,5 dan kam bo‘lsa, pH ni 2,5 ga keltirish uchun nima ishlatiladi?",
+      "options": [
+        "20% sulfat kislota",
+        "Oksalat kislota",
+        "10% HCl",
+        "25% ammiak"
+      ],
+      "correct_index": 0,
+      "explanation": "Agar pH 2,5 dan kam bo‘lsa, 20% sulfat kislotasi yordamida pH 2,5 ga keltiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "225"
+      }
+    },
+    {
+      "question": "Kramarenko usulida xloroformli ajratmalar suv hammomida qancha qolguncha bug‘latiladi?",
+      "options": [
+        "Qurigunicha",
+        "10-15 ml",
+        "50 ml",
+        "1-2 ml"
+      ],
+      "correct_index": 1,
+      "explanation": "Ajratmalar birlashtirilib, suv hammomida 10-15 ml qolguncha, qolgan xloroform xona haroratida bug‘latiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "225"
+      }
+    },
+    {
+      "question": "Kramarenko usulida quruq qoldiq 10 ml 0,1 M HCl da eritilib nimaga tekshiriladi?",
+      "options": [
+        "Barbituratlarga",
+        "Uchuvchi zaharlarga",
+        "Metallarga",
+        "Asos xossali zaharli moddalarga"
+      ],
+      "correct_index": 3,
+      "explanation": "Quruq qoldiq 10 ml 0,1 M xlorid kislotasida eritilib, asos xossasiga ega zaharli moddalarga tekshiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "225"
+      }
+    },
+    {
+      "question": "Oksalat kislota bilan nordonlashtirilgan suv usulini 1942 yilda kimlar yaratgan?",
+      "options": [
+        "Uslar va Erdman",
+        "Vasileva va Kramarenko",
+        "Stas va Otto",
+        "Stepanov va Shvaykova"
+      ],
+      "correct_index": 3,
+      "explanation": "1942 yilda A.V.Stepanov va M.D.Shvaykova o‘simlik qismlaridan alkaloidlarni ajratishda bu usulni yaratgan.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "95"
+      }
+    },
+    {
+      "question": "Uslar va Erdman 1861 yilda ob’ektni qaysi kislota bilan nordonlashtirishni taklif etgan?",
+      "options": [
+        "Sulfat kislota",
+        "Oksalat kislota",
+        "Vino kislota",
+        "Xlorid kislota"
+      ],
+      "correct_index": 3,
+      "explanation": "Nordonlashtirilgan suv usulini birinchi bo‘lib 1861 yil Uslar va Erdman qo‘lladi va xlorid kislota bilan nordonlashtirishni taklif etdi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "94"
+      }
+    },
+    {
+      "question": "Stas-Otto usulida spirtli eritmalar qaysi haroratda bug‘latiladi?",
+      "options": [
+        "4 °C",
+        "100 °C",
+        "60 °C",
+        "35 °C"
+      ],
+      "correct_index": 3,
+      "explanation": "Spirtli eritmalar oz miqdor spirt qolguncha 35 °C haroratda bug‘latiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "94"
+      }
+    },
+    {
+      "question": "Tirik organizmda pH qiymati qancha?",
+      "options": [
+        "6,2",
+        "4-5",
+        "2,5-3",
+        "7,3-7,5"
+      ],
+      "correct_index": 3,
+      "explanation": "Tirik organizmda pH 7,3-7,5; murda organizmida esa 6,2 atrofida.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "95"
+      }
+    },
+    {
+      "question": "Alkaloid-oqsil komplekslarini parchalash uchun qaysi pH kerak?",
+      "options": [
+        "7,3-7,5",
+        "4-5",
+        "2,5-3",
+        "12-13"
+      ],
+      "correct_index": 2,
+      "explanation": "Alkaloidlar oqsillar bilan hosil qilgan komplekslarni parchalash uchun pH 2,5-3 ga erishiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "95"
       }
     }
   ],
@@ -1082,7 +2427,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 94-96, 224-228"
+      "pages": "b. 93-96, 112, 224-228"
     }
   ]
 }

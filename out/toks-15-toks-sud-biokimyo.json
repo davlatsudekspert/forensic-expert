@@ -100,7 +100,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Eng ko‘p keltiriladigan ob’ektlar",
+        "root": "Postmortal ob’ektlar",
+        "children": [
+          {
+            "label": "Qon",
+            "items": [
+              "Glyukoza (uglevodlar) tahlili"
+            ]
+          },
+          {
+            "label": "Peshob"
+          },
+          {
+            "label": "Perikardial suyuqlik"
+          },
+          {
+            "label": "Jigar va muskullar",
+            "items": [
+              "Olingan materiallar"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega avval glyukoza tekshiriladi? Doskada: ob’ektlar ro‘yxati. Tipik xato: faqat qonni ob’ekt deb hisoblash."
     },
     {
@@ -137,7 +161,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Glyukoza (qon)",
-        "nodes": [],
         "header": [
           "Holat",
           "Miqdor"
@@ -199,7 +222,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Glyukoza va o‘lim tezligi",
+        "columns": [
+          {
+            "title": "Tez (bevaqt) o‘lim",
+            "items": [
+              "Glyukoza kamroq bo‘ladi",
+              "Eritrotsitlar ehtiyoji ko‘payadi",
+              "Jigardagi zahira tez tugaydi"
+            ]
+          },
+          {
+            "title": "Uzoq agoniya",
+            "items": [
+              "Qand miqdori 20-30 marta ko‘p",
+              "Glyukoza va laktat aniqlanadi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: agoniya nima va u glyukozaga qanday ta’sir qiladi? Doskada: tez o‘lim va uzoq agoniyani solishtiring. Tipik xato: bitta ko‘rsatkichga tayanib xulosa chiqarish."
     },
     {
@@ -227,7 +270,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Ko‘z shishasimon tanasi: glyukoza talqini",
-        "nodes": [],
         "header": [
           "Natija",
           "Talqin"
@@ -235,11 +277,11 @@
         "rows": [
           [
             "Glyukoza yuqori",
-            "O‘lim oldi giperglikemiya (masalan, diabet)"
+            "O‘lim oldi giperglikemiya (diabet)"
           ],
           [
             "Glyukoza past yoki yo‘q",
-            "Talqin qilinmaydi: o‘limdan keyin pasayadi"
+            "Talqin qilinmaydi: o‘limda pasayadi"
           ]
         ]
       },
@@ -283,9 +325,7 @@
           "Antigen (aniqlanuvchi)",
           "Maxsus antitelo",
           "Kompleks AG-AT"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega reaksiya maxsus? Doskada: kalit-qulf o‘xshatishi. Tipik xato: antigenni faqat mikrob deb o‘ylash — kitobda aniqlanuvchi modda ham antigen."
     },
@@ -320,7 +360,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Antigen va antitelo",
+        "columns": [
+          {
+            "title": "Antigen",
+            "items": [
+              "Antitelolar ishlab chiqarishga olib keladi",
+              "Organizmga yot modda"
+            ]
+          },
+          {
+            "title": "Antitelo",
+            "items": [
+              "Immunoglobulin sinfiga mansub oqsil",
+              "Himoya funksiyasini bajaradi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: antitelo qanday himoya vazifasini bajaradi? Doskada: Ig sinfi. Tipik xato: antitelo va antigenni almashtirish."
     },
     {
@@ -397,7 +456,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Antigenlarga kiradi",
+        "root": "Antigenlar",
+        "children": [
+          {
+            "label": "Oqsillar"
+          },
+          {
+            "label": "Polisaxaridlar"
+          },
+          {
+            "label": "Nuklein kislotalar"
+          },
+          {
+            "label": "Biologik tuzilmalar",
+            "items": [
+              "To‘qima",
+              "Hujayra",
+              "Viruslar"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: immunogenlik va antigenlikning farqi. Doskada: ikki atamani qarama-qarshi yozing. Tipik xato: bu ikki atamani sinonim deb bilish."
     },
     {
@@ -439,9 +521,7 @@
           "B-limfotsit seleksiyasi",
           "Plazmatik klon hosil bo‘ladi",
           "Antitelo ishlab chiqariladi"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: klon nima va u nega bir xil antitelo beradi? Doskada: seleksiya sxemasi. Tipik xato: bitta B-limfotsit hamma antigenga javob beradi deb o‘ylash."
     },
@@ -476,7 +556,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Poliklonli javob",
+        "nodes": [
+          "Antigen qonga tushadi",
+          "Ko‘p B-limfotsitlar faollashadi",
+          "Retseptorlari turlicha spesifiklikda",
+          "Poliklonli immun javob va antitelolar"
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: poliklonli antitelo tahlil sezgirligiga qanday ta’sir qiladi? Doskada: bitta antigen — ko‘p klon. Tipik xato: poliklonli antitelolarni bitta klon mahsuli deb hisoblash."
     },
     {
@@ -513,7 +602,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Ig sinflari",
-        "nodes": [],
         "header": [
           "Sinf",
           "Belgisi"
@@ -566,7 +654,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Immun tahlil bosqichlari",
+        "nodes": [
+          "AG va AT o‘zaro ta’sirlashadi",
+          "Biror komponent nishonlanadi",
+          "Nishon: ferment, radionuklid, bo‘yoq",
+          "Avtomatlashtirilgan asbobda baholanadi"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nishonsiz AG-AT reaksiyasi ko‘rinadimi? Doskada: nishon turi — usul nomi. Tipik xato: nishonlash va identifikatsiyani aralashtirish."
     },
     {
@@ -603,7 +700,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Immun tahlil",
-        "nodes": [],
         "header": [
           "Usul",
           "Nishon"
@@ -664,9 +760,7 @@
           "Bosqichlar kam",
           "To‘g‘ri bo‘lmagan usul",
           "Ikkilamchi antitelo"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkilamchi antitelo nima uchun kerak? Doskada: ikki sxema. Tipik xato: usullar nomini bosqichlar soni bilan aralashtirish. Izoh: kitobdagi ta’rif qisqa, shu sababli bu yerda tavsiya darajasida berildi."
     },
@@ -704,7 +798,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Usullar",
-        "nodes": [],
         "header": [
           "Usul",
           "Xususiyat"
@@ -753,7 +846,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Immunotahlil",
+        "columns": [
+          {
+            "title": "Afzalliklari",
+            "items": [
+              "Tezlik va soddalik",
+              "Avtomatlashtirish imkoniyati",
+              "Namuna tayyorlash oddiy",
+              "Yuqori darajadagi aniqlik",
+              "Qimmat asbob talab etilmaydi"
+            ]
+          },
+          {
+            "title": "Kamchiligi",
+            "items": [
+              "Juda tor doiradagi spesifiklik",
+              "Matritsa komponentlarining ta’siri"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: «tor doiradagi spesifiklik» skriningda nimani anglatadi? Doskada: afzallik/kamchilik jadvalini to‘ldiring. Tipik xato: skrining natijasini tasdiqlovchi usulsiz yakuniy deb hisoblash."
     },
     {
@@ -787,8 +902,511 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Geroin va metabolitlari",
+        "root": "Geroinni aniqlash",
+        "children": [
+          {
+            "label": "GSX (gaz-suyuqlik)"
+          },
+          {
+            "label": "GX-MS"
+          },
+          {
+            "label": "YuSSX-MS",
+            "items": [
+              "6-MAM va morfin"
+            ]
+          },
+          {
+            "label": "Immunoferment tahlil",
+            "items": [
+              "Miqdorini ham aniqlaydi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega skriningdan keyin GX-MS bilan tasdiqlash kerak? Doskada: skrining -> tasdiqlash sxemasi. Tipik xato: immunotahlil natijasini ekspertiza xulosasi sifatida taqdim etish. Izoh: gmt 132-136 betlari 1,4-benzodiazepinlarga bag‘ishlangan va immunotahlil, RIA yoki cutoff tavsifini o‘z ichiga olmaydi."
+    },
+    {
+      "title": "Benzodiazepinlar: narkologik ahamiyati va metabolizm",
+      "bullets": [
+        {
+          "text": "Xlordiazepoksid, diazepam, oksazepam, nitrazepam toksikologik va narkologik ahamiyatga ega; 2 mingdan ortiq hosilasidan 12-15 tasi tibbiyotda qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Benzodiazepinlarning qonda yarim parchalanish davri o‘rtacha 1-2 sutka; oksazepam 4 soat ichida maksimal konsentratsiyaga yetadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diazepam va xlordiazepoksid jigarda N-demetillanadi; oksazepam glyukuron kislotasi bilan bog‘lanib peshob orqali chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "133-134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Benzodiazepinlar metabolizmi",
+        "header": [
+          "Modda",
+          "Metabolizm / chiqarilish"
+        ],
+        "rows": [
+          [
+            "Diazepam",
+            "N-demetillanish; metabolit — oksazepam"
+          ],
+          [
+            "Xlordiazepoksid",
+            "Gidroksillanish va dealkillanish"
+          ],
+          [
+            "Oksazepam",
+            "Glyukuronid, peshob orqali"
+          ],
+          [
+            "Nitrazepam",
+            "20%: 7-amino va 7-asetilamino, peshobda"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun skrining uchun peshob muhim ob’ekt? Izoh: bu bo‘lim gmt kitobining immunokimyoviy va YuQX-skrining qismidan (2.4)."
+    },
+    {
+      "title": "Benzodiazepinlar bilan zaharlanish",
+      "bullets": [
+        {
+          "text": "Qondagi 5-20 mg/l miqdor zaharlanishga, 50 mg/l esa o‘limga olib keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlanishda 3 klinik bosqich: mudrash va yengil uxlab qolish; yuzaki koma; hushdan ketish.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hushdan ketish 12 soatdan ortiq davom etsa, bronxopnevmoniya, kollaps, jigar va buyrak faoliyatining ishdan chiqishi kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Klinik bosqichlar",
+        "nodes": [
+          "1. Mudrash, yengil uxlab qolish",
+          "2. Yuzaki koma: behushlik",
+          "3. Hushdan ketish",
+          ">12 soat: bronxopnevmoniya, kollaps"
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: uch bosqich. Tipik xato: zaharlanish va o‘lim miqdorlarini (5-20 va 50 mg/l) aralashtirish."
+    },
+    {
+      "title": "Gidroliz: skrining uchun namuna tayyorlash",
+      "bullets": [
+        {
+          "text": "Benzodiazepinlarni gidroliz mahsulotlari bo‘yicha tahlil qilishni B.N. Izotov, I.V. Volkova va boshqalar taklif etgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "10 ml peshob (2 ml qon) ustiga shuncha hajmda kons. HCl qo‘shilib, qaytar sovutgichli kolbada 1 soat suv hammomida qizdiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gidroliz tugagach to‘yingan NaOH bilan pH = 8-10 ga keltirilib, 10 ml xloroform bilan 2 marta ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "134-135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Gidroliz",
+        "items": [
+          {
+            "title": "Namuna",
+            "text": "10 ml peshob (yoki 2 ml qon)"
+          },
+          {
+            "title": "Kislota",
+            "text": "Shuncha hajmda kons. HCl"
+          },
+          {
+            "title": "Gidroliz",
+            "text": "Qaytar sovutgichda 1 soat suv hammomida"
+          },
+          {
+            "title": "Ishqorlash",
+            "text": "To‘yingan NaOH bilan pH = 8-10"
+          },
+          {
+            "title": "Ekstraksiya",
+            "text": "10 ml xloroform bilan 2 marta"
+          },
+          {
+            "title": "Tahlil",
+            "text": "Organik qatlam bug‘latilib, qoldiq YuQX da tekshiriladi"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun benzodiazepinlar to‘g‘ridan-to‘g‘ri emas, gidroliz mahsulotlari bo‘yicha aniqlanadi?"
+    },
+    {
+      "title": "Gidroliz mahsulotlari: benzofenonlar",
+      "bullets": [
+        {
+          "text": "Xlordiazepoksid va oksazepam gidrolizida AXB (2-amino-5-xlorbenzofenon) hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diazepamdan MXB (2-metilamino-5-xlorbenzofenon), nitrazepamdan ANB (2-amino-5-nitrobenzofenon) va DAB, fenazepamdan BXB hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "«Guvox» eritmalari ham 1,4-benzodiazepin hosilalari bo‘lgan preparatlarni gidroliz qilib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Gidroliz mahsulotlari",
+        "root": "Benzodiazepin -> benzofenon",
+        "children": [
+          {
+            "label": "Xlordiazepoksid",
+            "items": [
+              "AXB: 2-amino-5-xlorbenzofenon"
+            ]
+          },
+          {
+            "label": "Oksazepam",
+            "items": [
+              "AXB"
+            ]
+          },
+          {
+            "label": "Diazepam",
+            "items": [
+              "MXB: 2-metilamino-5-xlorbenzofenon"
+            ]
+          },
+          {
+            "label": "Nitrazepam",
+            "items": [
+              "ANB: 2-amino-5-nitrobenzofenon",
+              "DAB: 2,5-diaminobenzofenon"
+            ]
+          },
+          {
+            "label": "Fenazepam",
+            "items": [
+              "BXB (R2 = Br, R3 = Cl)"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Izoh: kitobning bir joyida nitrazepam gidrolizi AXB deb yozilgan; ro‘yxat va jadvalga ko‘ra ANB qabul qilindi (muharrir qarori)."
+    },
+    {
+      "title": "Benzofenonlar: Rf va UB-spektr (17-jadval)",
+      "bullets": [
+        {
+          "text": "Benzol sistemasida plastinkada turli intensivlikdagi sariq dog‘lar ko‘rinadi; intensivlik konsentratsiyaga bog‘liq.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrazepam: ANB Rf 0,17-0,18, DAB startda qoladi; fenazepam BXB Rf 0,43-0,45; diazepam MXB Rf 0,57.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "AXB (diazepam va xlordiazepoksid) Rf 0,35-0,37, UB maksimumlari 238 va 390 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "17-jadval",
+        "header": [
+          "Modda",
+          "Mahsulot",
+          "Rf",
+          "UB, nm"
+        ],
+        "rows": [
+          [
+            "Nitrazepam",
+            "ANB",
+            "0,17-0,18",
+            "238; 358"
+          ],
+          [
+            "Fenazepam",
+            "BXB",
+            "0,43-0,45",
+            "230; 400"
+          ],
+          [
+            "Diazepam",
+            "MXB",
+            "0,57",
+            "238; 410"
+          ],
+          [
+            "Diazepam",
+            "AXB",
+            "0,35-0,37",
+            "238; 390"
+          ],
+          [
+            "Xlordiazepoksid",
+            "AXB",
+            "0,35-0,37",
+            "238; 390"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Rf va UB-maksimumlar yordamida moddani qanday farqlaymiz? Tipik xato: DAB ning start nuqtasini yo‘qolgan dog‘ deb o‘ylash."
+    },
+    {
+      "title": "Diazotizatsiya: dog‘lar rangi",
+      "bullets": [
+        {
+          "text": "Plastinkaga natriy nitrit, 0,1% HCl, 0,5% sulfanil kislota va naftolning ishqordagi eritmasi purkaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135-136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "AXB dog‘i qizil, ANB yorqin zarg‘aldoq rangga bo‘yaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MXB dog‘i sariqligicha qoladi, ba’zan esa rang yo‘qoladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Rang farqi",
+        "header": [
+          "Benzofenon",
+          "Purkagichdan keyin"
+        ],
+        "rows": [
+          [
+            "AXB",
+            "Qizil"
+          ],
+          [
+            "ANB",
+            "Yorqin zarg‘aldoq"
+          ],
+          [
+            "MXB",
+            "Sariq; ba’zan rang yo‘qoladi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Tipik xato: MXB ni «reaksiya chiqmadi» deb baholash — uning dog‘i sariq qolishi yoki rangsizlanishi mumkin."
+    },
+    {
+      "title": "Benzodiazepinlar YuQX sharoitlari",
+      "bullets": [
+        {
+          "text": "Yupqa qatlam uchun KSK markali silikagel yoki «silufol» plastinkalari ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Erituvchilar sistemasi: etilasetat, metil spirti va 25% ammiak eritmasining 85:10:5 nisbatdagi aralashmasi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Plastinkadagi dog‘lar Dragendorf reaktivi purkab ko‘riladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "136"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Sistema 85:10:5",
+        "items": [
+          {
+            "label": "Etilasetat",
+            "value": "85",
+            "unit": "qism"
+          },
+          {
+            "label": "Metil spirti",
+            "value": "10",
+            "unit": "qism"
+          },
+          {
+            "label": "25% ammiak",
+            "value": "5",
+            "unit": "qism"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Doskada: nisbatni yozing. Tipik xato: nisbatni hajm emas, foiz deb o‘ylash."
+    },
+    {
+      "title": "Biologik ob’ektdan ajratish (Izotov)",
+      "bullets": [
+        {
+          "text": "Ob’ekt sifatida oshqozon, ingichka ichak, jigar, buyrak olinishi mumkin; ajratish B.N. Izotov usulida bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maydalangan ob’ekt HCl bilan nordonlashtirilgan suv (pH = 2) bilan 1 soat qoldiriladi; suvli ajratma xloroform bilan ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform qavati tashlanadi; suvli qatlam pH = 9-10 gacha ishqorlanib, dietil efir bilan 3 marta ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+            "page": "135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Izotov usuli",
+        "items": [
+          {
+            "title": "Ob’ekt",
+            "text": "Maydalangan to‘qima + HCl li suv (pH = 2), 1 soat"
+          },
+          {
+            "title": "Xloroform",
+            "text": "Suvli ajratma ekstraksiyalanadi; xloroform tashlanadi"
+          },
+          {
+            "title": "Ishqorlash",
+            "text": "Suvli qatlam pH = 9-10 gacha"
+          },
+          {
+            "title": "Dietil efir",
+            "text": "3 marta ekstraksiya"
+          },
+          {
+            "title": "Qoldiq",
+            "text": "Efirlar birlashtirilib bug‘latiladi; qoldiq xloroformda eritiladi"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun avval kislotali, keyin ishqoriy muhitda ekstraksiya qilinadi?"
     },
     {
       "title": "Cutoff tushunchasi: skrining va tasdiqlash",
@@ -821,7 +1439,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Skrining va tasdiqlash",
+        "nodes": [
+          "Siydik namunasi",
+          "Skrining: aniqlanadigan modda va cutoff",
+          "Tasdiqlovchi tekshiruv (alohida cutoff)",
+          "Konsentratsiya: ng/ml"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: skrining cutoff si tasdiqlovchi cutoff dan nega farq qiladi? Doskada: skrining — tasdiqlash juftliklari. Tipik xato: cutoff dan past natijani «modda yo‘q» deb talqin qilish. Izoh: bu jadval malaka 107 faylidan (xorijiy ma’lumotnoma); O‘zbekistonda amaldagi me’yor emas, ma’lumot uchun."
     },
     {
@@ -858,7 +1485,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Cutoff, ng/ml",
-        "nodes": [],
         "header": [
           "Modda",
           "Skrining",
@@ -923,7 +1549,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Cutoff, ng/ml",
-        "nodes": [],
         "header": [
           "Modda",
           "Skrining",
@@ -985,7 +1610,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "ng/ml",
+        "header": [
+          "Modda",
+          "Skrining",
+          "Tasdiqlash"
+        ],
+        "rows": [
+          [
+            "Metamfetamin",
+            "1000",
+            "Metamfetamin 500; 200"
+          ],
+          [
+            "Fensiklidin",
+            "25",
+            "25"
+          ]
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega skrining chegarasi ko‘pincha yuqoriroq? Doskada: 1000 va 500; 200 farqini ko‘rsating. Tipik xato: skrining chegarasidan past natijani manfiy deb e’lon qilish. Izoh: oxirgi band jadvaldan olingan umumiy xulosa."
     },
     {
@@ -1010,7 +1655,7 @@
           "uncertain": false
         },
         {
-          "text": "Siydik maxsus ahamiyatga ega: buyrak orqali chiqadigan ko‘p moddalar siydikda yuqori konsentratsiyada, o‘zgarmagan holda yoki metabolitlar ko‘rinishida topiladi.",
+          "text": "Siydik maxsus ahamiyatga ega: buyrak orqali chiqadigan ko‘p moddalar siydikda yuqori konsentratsiyada, o‘zgarmagan yoki metabolit holida topiladi.",
           "source": {
             "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
             "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
@@ -1056,7 +1701,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Siydikda aniqlash",
-        "nodes": [],
         "header": [
           "Modda",
           "Topiladi",
@@ -1120,7 +1764,7 @@
       "title": "TGK metabolizmi va chiqarilishi (2)",
       "bullets": [
         {
-          "text": "Chekishdan 72 soat o‘tgach, inhalyatsiya qilingan TGK ning taxminan 50% metabolit sifatida chiqariladi, qolgan 50% tanaga tarqalib, asosan yog‘ to‘qimasida yig‘iladi.",
+          "text": "Chekishdan 72 soat o‘tgach, inhalyatsiya qilingan TGK ning taxminan 50% metabolit sifatida chiqariladi, qolgani asosan yog‘ to‘qimasida yig‘iladi.",
           "source": {
             "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
             "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
@@ -1156,7 +1800,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "TGK (malaka ma’lumoti)",
+        "items": [
+          {
+            "label": "72 soatdan so‘ng",
+            "value": "~50",
+            "unit": "% metabolit"
+          },
+          {
+            "label": "Siydik bilan",
+            "value": "25",
+            "unit": "%"
+          },
+          {
+            "label": "Najas bilan",
+            "value": "65",
+            "unit": "%"
+          },
+          {
+            "label": "Plazma yarim chiqarilish",
+            "value": "20 dan ko‘p",
+            "unit": "soat"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega yog‘ to‘qimasi TGK ni sekin chiqaradi? Doskada: 50% / 25% / 65% raqamlarini yozing. Tipik xato: surunkali iste’molchi va tasodifiy iste’molchi natijalarini bir xil talqin qilish."
     },
     {
@@ -1181,7 +1850,7 @@
           "uncertain": false
         },
         {
-          "text": "Miya-orqa miya suyuqligi shishasimon tana mavjud bo‘lmaganda tanlov ob’ektlaridan biri; sochda moddalar to‘planib, takroriy iste’molni isbotlashga yoki inkor etishga yordam beradi.",
+          "text": "Miya-orqa miya suyuqligi shishasimon tana bo‘lmaganda tanlov ob’ekti; sochda moddalar to‘planib, takroriy iste’molni isbotlash yoki inkor etishga yordam beradi.",
           "source": {
             "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
             "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
@@ -1190,7 +1859,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Tanlov ob’ektlari",
+        "root": "Qo‘shimcha ob’ektlar",
+        "children": [
+          {
+            "label": "O‘t suyuqligi",
+            "items": [
+              "1,4-benzodiazepinlar, morfin"
+            ]
+          },
+          {
+            "label": "Shishasimon tana",
+            "items": [
+              "Spirt, dori, giyohvand moddalar"
+            ]
+          },
+          {
+            "label": "Oshqozon mazmuni",
+            "items": [
+              "To‘liq olinib saqlanadi"
+            ]
+          },
+          {
+            "label": "Miya-orqa miya suyuqligi"
+          },
+          {
+            "label": "Soch",
+            "items": [
+              "Takroriy iste’molni isbotlaydi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi ob’ekt uchun qanday modda mos? Doskada: ob’ekt — modda juftliklari. Tipik xato: faqat qon va siydikka tayanish."
     },
     {
@@ -1275,12 +1977,12 @@
     {
       "question": "Qondagi glyukoza o‘limdan keyin qanday o‘zgaradi?",
       "options": [
-        "Pasayadi",
-        "Oshadi",
+        "Yo‘qoladi",
         "O‘zgarmaydi",
-        "Yo‘qoladi"
+        "Oshadi",
+        "Pasayadi"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "O‘limdan so‘ng eritrotsitlardagi anaerob glikoliz tufayli glyukoza pasayadi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1291,12 +1993,12 @@
     {
       "question": "Tirik organizm qonida normal glyukoza miqdori qancha?",
       "options": [
-        "3,3-5,5 mmol/l",
-        "33-55 mmol/l",
+        "13-15 mmol/l",
         "0,3-0,5 mmol/l",
-        "13-15 mmol/l"
+        "33-55 mmol/l",
+        "3,3-5,5 mmol/l"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Normal holatda 3,3-5,5 mmol/l, ovqatdan keyin 10 mmol/l gacha.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1307,12 +2009,12 @@
     {
       "question": "Antitelo qaysi sinfga mansub oqsil?",
       "options": [
-        "Immunoglobulin",
         "Gormon",
+        "Polisaxarid",
         "Ferment",
-        "Polisaxarid"
+        "Immunoglobulin"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Antitelo — immunoglobulin sinfiga mansub oqsil.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1323,12 +2025,12 @@
     {
       "question": "Antitelolarni qaysi hujayralar ishlab chiqaradi?",
       "options": [
-        "B-limfotsitlar",
         "Eritrotsitlar",
-        "Trombotsitlar",
-        "Neytrofillar"
+        "Neytrofillar",
+        "B-limfotsitlar",
+        "Trombotsitlar"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Antitelolar B-limfotsitlar tomonidan ishlab chiqariladi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1339,12 +2041,12 @@
     {
       "question": "Immunoglobulinlarning asosiy sinflari soni nechta?",
       "options": [
-        "Beshta",
-        "Uchta",
         "Ikkita",
-        "O‘nta"
+        "O‘nta",
+        "Uchta",
+        "Beshta"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "IgA, IgD, IgE, IgG va IgM.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1355,12 +2057,12 @@
     {
       "question": "IFT tahlilida nishon sifatida nima qo‘llaniladi?",
       "options": [
+        "Metall ioni",
         "Ferment",
         "Radionuklid",
-        "Fluoressent bo‘yoq",
-        "Metall ioni"
+        "Fluoressent bo‘yoq"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Immunoferment tahlilda nishon — ferment.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1371,12 +2073,12 @@
     {
       "question": "RIA tahlilida nishon sifatida nima qo‘llaniladi?",
       "options": [
-        "Radionuklid",
         "Ferment",
-        "Fluoressent bo‘yoq",
-        "Rangli indikator"
+        "Rangli indikator",
+        "Radionuklid",
+        "Fluoressent bo‘yoq"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Radioimmun tahlilda nishon — radionuklid.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1387,12 +2089,12 @@
     {
       "question": "Immunotahlilning kitobdagi asosiy kamchiligi qaysi?",
       "options": [
+        "Namuna tayyorlashning murakkabligi",
         "Tor doiradagi spesifiklik va matritsa ta’siri",
         "Juda past sezgirlik",
-        "Murakkab va qimmat uskuna talabi",
-        "Namuna tayyorlashning murakkabligi"
+        "Murakkab va qimmat uskuna talabi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Kamchiligi — juda tor doiradagi spesifiklik va matritsa komponentlari ta’siri.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1405,8 +2107,8 @@
       "options": [
         "300 ng/ml",
         "10 ng/ml",
-        "1000 ng/ml",
-        "25 ng/ml"
+        "25 ng/ml",
+        "1000 ng/ml"
       ],
       "correct_index": 0,
       "explanation": "Geroin: skrining 300 ng/ml, tasdiqlash — morfin 300 va 6-MAM 10 ng/ml.",
@@ -1420,9 +2122,9 @@
       "question": "TGK ning siydik va najas bilan chiqarilishi (malaka ma’lumotiga ko‘ra) qaysi nisbatda?",
       "options": [
         "Siydik 25%, najas 65%",
-        "Siydik 65%, najas 25%",
+        "Siydik 90%, najas 10%",
         "Siydik 50%, najas 50%",
-        "Siydik 90%, najas 10%"
+        "Siydik 65%, najas 25%"
       ],
       "correct_index": 0,
       "explanation": "Chiqarilish asosan siydik (25%) va najas (65%) orqali.",
@@ -1430,6 +2132,166 @@
         "author": "Malaka materiali №107 (TFI Toksikologik kimyo kafedrasi)",
         "title": "TGK metabolizmi va chiqarilishi; siydikda cutoff konsentratsiyalari; qo‘shimcha biologik ob’ektlar (ruscha ma’lumotnoma)",
         "page": "matn"
+      }
+    },
+    {
+      "question": "O‘limdan keyin qondagi glyukoza konsentratsiyasi pasayishining sababi nima?",
+      "options": [
+        "Peshob bilan chiqarilishi",
+        "Eritrotsitlardagi anaerob glikoliz",
+        "Jigarda glikogen to‘planishi",
+        "Immunoglobulinlar ta’siri"
+      ],
+      "correct_index": 1,
+      "explanation": "O‘limdan keyin glyukoza pasayishi eritrotsitlardagi anaerob glikoliz jarayoniga bog‘liq.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "83"
+      }
+    },
+    {
+      "question": "Antigenlarning immun javob chaqirish xususiyati nima deb ataladi?",
+      "options": [
+        "Immunogenlik",
+        "Antigenlik",
+        "Poliklonlik",
+        "Seleksiya"
+      ],
+      "correct_index": 0,
+      "explanation": "Antigenlarning immun javob chaqirish xususiyati immunogenlik, antitelolar bilan kompleks hosil qilishi antigenlik deyiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "question": "Har bir B-limfotsit yuzasida taxminan nechta bir xil retseptor bo‘ladi?",
+      "options": [
+        "100.000 ga yaqin",
+        "Besh",
+        "Taxminan 100",
+        "Taxminan 1000"
+      ],
+      "correct_index": 0,
+      "explanation": "Har bir B-limfotsit yuzasida yot antigenni aniqlaydigan 100.000 ga yaqin bir xil retseptor bor.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "question": "To‘g‘ri immunokimyoviy usulning kamchiligi qaysi?",
+      "options": [
+        "Avtomatlashtirib bo‘lmaydi",
+        "Ferment konyugatlari sintezi universal emas, sezgirligi past",
+        "Bosqichlari ko‘p",
+        "Ikkilamchi antitelo kerak"
+      ],
+      "correct_index": 1,
+      "explanation": "To‘g‘ri usulning afzalligi — bosqichlar kamligi; kamchiligi — konyugatlar sintezi universal emasligi va sezgirligi past.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "84"
+      }
+    },
+    {
+      "question": "1,4-benzodiazepinlarni gidroliz mahsulotlari yordamida tahlil qilishni kimlar taklif qilgan?",
+      "options": [
+        "A.F. Rubtsov va A.N. Krilova",
+        "Stas va Otto",
+        "B.N. Izotov, I.V. Volkova va boshqalar",
+        "Marsh va Zanger"
+      ],
+      "correct_index": 2,
+      "explanation": "Gidroliz mahsulotlari yordamida tahlilni B.N. Izotov, I.V. Volkova va boshqalar taklif qilishgan.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "134"
+      }
+    },
+    {
+      "question": "Benzodiazepinlar gidrolizi uchun peshobga nima qo‘shilib, qancha qizdiriladi?",
+      "options": [
+        "Etil spirti; 30 daqiqa",
+        "Kons. HCl; qaytar sovutgichda 1 soat",
+        "Sirka kislota; 3 soat",
+        "Kons. NaOH; 10 daqiqa"
+      ],
+      "correct_index": 1,
+      "explanation": "10 ml peshobga shuncha kons. HCl qo‘shilib, qaytar sovutgichli kolbada 1 soat suv hammomida qizdiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "134"
+      }
+    },
+    {
+      "question": "Gidroliz tugagach muhit qaysi pH ga keltiriladi?",
+      "options": [
+        "pH = 12",
+        "pH = 4,5",
+        "pH = 2",
+        "pH = 8-10"
+      ],
+      "correct_index": 3,
+      "explanation": "Gidroliz tugaganidan so‘ng to‘yingan NaOH eritmasi bilan pH = 8-10 ga keltiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "134-135"
+      }
+    },
+    {
+      "question": "Diazotizatsiya reaktivlari purkalganda AXB dog‘i qanday rangga bo‘yaladi?",
+      "options": [
+        "Ko‘k",
+        "Sariq",
+        "Qizil",
+        "Yorqin zarg‘aldoq"
+      ],
+      "correct_index": 2,
+      "explanation": "AXB dog‘i qizil, ANB yorqin zarg‘aldoq rangga bo‘yaladi, MXB sariq qoladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Benzol sistemasida diazepamning gidroliz mahsuloti MXB ning Rf qiymati qancha?",
+      "options": [
+        "0,17-0,18",
+        "0,35-0,37",
+        "0,57",
+        "0,43-0,45"
+      ],
+      "correct_index": 2,
+      "explanation": "17-jadvalga ko‘ra diazepam (MXB) uchun Rf 0,57.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Benzodiazepinlarning qondagi qaysi miqdori o‘limga olib keladi?",
+      "options": [
+        "50 mg/l",
+        "5 mg/l",
+        "20 mg/l",
+        "2 mg/l"
+      ],
+      "correct_index": 0,
+      "explanation": "Qondagi 5-20 mg/l zaharlanishga, 50 mg/l esa o‘limga olib keladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+        "page": "134"
       }
     }
   ],
@@ -1478,7 +2340,7 @@
       "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
       "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
       "year": null,
-      "pages": "b. 37-38"
+      "pages": "b. 37-38, 133-136"
     },
     {
       "author": "Malaka materiali №042 (TFI Toksikologik kimyo kafedrasi)",

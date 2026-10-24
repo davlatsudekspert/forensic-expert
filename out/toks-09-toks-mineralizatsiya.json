@@ -48,7 +48,16 @@
           "uncertain": false
         },
         {
-          "text": "Metall saqlovchi zaharlarning shimilishi va ajralishi nafas yo‘llarida (alveolalarda), oshqozon-ichak shilliq pardalarida, qon tomirlar va turli membranalarda sodir bo‘ladi.",
+          "text": "Metall saqlovchi zaharlarning shimilishi va ajralishi nafas yo‘llarida (alveolalarda).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oshqozon-ichak shilliq pardalarida, qon tomirlar va turli membranalarda sodir bo‘ladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -66,7 +75,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Metall zaharlar guruhi",
+        "root": "Metall zaharlar",
+        "children": [
+          {
+            "label": "Tarkibida",
+            "items": [
+              "Og‘ir metallar",
+              "Margimush (As)",
+              "Surma (Sb)"
+            ]
+          },
+          {
+            "label": "Shimilish joylari",
+            "items": [
+              "Alveolalar (nafas yo‘llari)",
+              "Oshqozon-ichak shilliq pardasi",
+              "Qon tomirlar, membranalar"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metall birikmalar qaysi yo‘llar bilan kiradi? Doskada: kirish yo‘llari. Tipik xato: faqat og‘iz orqali kirishini hisobga olish."
     },
     {
@@ -100,7 +131,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Birikmalarning o‘zgarishi",
+        "nodes": [
+          "PbCO3, BaCO3 oshqozonga tushadi",
+          "Oshqozon HCl: xloridlarga o‘tadi",
+          "Ichak ishqori: karbonatlarga",
+          "Yo‘g‘on ichakda sulfidlar",
+          "Ingichka ichakda qonga shimiladi"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun ob’ektda dastlabki birikma shakli o‘zgargan bo‘ladi? Doskada: PbCO3 → PbCl2 → PbCO3 → PbS. Tipik xato: topilgan birikmani zaharlanishga sabab bo‘lgan shakl deb hisoblash."
     },
     {
@@ -134,7 +177,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Valentlik o‘zgarishi",
+        "columns": [
+          {
+            "title": "Margimush",
+            "items": [
+              "As(+5) → As(+3)",
+              "Kuchliroq zaharli holat",
+              "Oqsil bilan barqaror kompleks"
+            ]
+          },
+          {
+            "title": "Simob",
+            "items": [
+              "Metall holdagi simob",
+              "Hg(+2) gacha oksidlanadi",
+              "Kuchli zaharli ta’sir"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: valentlik o‘zgarishi nima uchun tahlilda hisobga olinadi? Doskada: As5+ → As3+; Hg → Hg2+. Tipik xato: As(+5) ni As(+3) dan zaharliroq deb o‘ylash — kitob teskarisini aytadi."
     },
     {
@@ -168,7 +232,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Metall + oqsil kompleksi",
+        "root": "Albuminatlar",
+        "children": [
+          {
+            "label": "Metallar",
+            "items": [
+              "Hg, Pb, Cu, Zn",
+              "Cd, Ni, Co"
+            ]
+          },
+          {
+            "label": "Funksional guruhlar",
+            "items": [
+              "–COOH, –SH, –NH2"
+            ]
+          },
+          {
+            "label": "Aminokislotalar",
+            "items": [
+              "Gistidin, sistein"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sistein metall bilan qaysi guruh orqali bog‘lanadi? (–SH va –COOH, –NH2). Doskada: metall + aminokislota kompleksi. Tipik xato: metallarni faqat erkin ion deb hisoblash."
     },
     {
@@ -202,7 +291,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Nima uchun mineralizatsiya",
+        "nodes": [
+          "Kompleks va kolloidlar ushlanadi",
+          "Jigar va qoratalokda yig‘iladi",
+          "Ion holatga o‘tkazish zarur",
+          "Ob’ekt kuydiriladi",
+          "Metall ion holatda ajraladi"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun oddiy ekstraksiya yetarli emas? (kompleks va kolloid shakllar). Doskada: kompleks → mineralizatsiya → ion. Tipik xato: mineralizatsiyasiz metall miqdorini aniqlash."
     },
     {
@@ -287,7 +388,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Mineralizatsiya usullari",
+        "columns": [
+          {
+            "title": "Quruq kuydirish",
+            "items": [
+              "Xususiy usullar",
+              "Uchmaydigan kationlar uchun",
+              "Oddiy; oksidlovchi qo‘shib"
+            ]
+          },
+          {
+            "title": "Ho‘l usul",
+            "items": [
+              "Kislotali muhitda oksidlovchilar bilan",
+              "Umumiy usul",
+              "Simobdan tashqari barcha metallar"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun simob quruq va ho‘l kuydirishda yo‘qoladi? (uchuvchan; kitob: ho‘l usul simobdan tashqari). Doskada: ikki ustun — quruq va ho‘l. Tipik xato: ho‘l usulni simob uchun ham qo‘llash."
     },
     {
@@ -330,7 +452,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kulni tahlilga tayyorlash",
+        "nodes": [
+          "Kulsimon qoldiq",
+          "HNO3 + HCl aralashmasida eritiladi",
+          "Filtrlanadi",
+          "Filtrat quriguncha bug‘latiladi",
+          "Qoldiq suvda eritiladi"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: oksidlovchi qo‘shishdan maqsad nima? Doskada: oksidlovchilar ro‘yxati. Tipik xato: quruq usulda uchuvchan metallarni (simob, margimush) ushlab qolish mumkin deb o‘ylash."
     },
     {
@@ -346,7 +480,16 @@
           "uncertain": false
         },
         {
-          "text": "1844 yilda frantsuz kimyogarlari Frezenius va Babo ob’ektni ajralib chiqayotgan xlor bilan ishlash usulini taklif etgan; bu usul sud kimyosida 100 yildan ortiq qo‘llanilgan.",
+          "text": "1844 yilda frantsuz kimyogarlari Frezenius va Babo ob’ektni ajralib chiqayotgan xlor bilan ishlash usulini taklif etgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "51"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu usul sud kimyosida 100 yildan ortiq qo‘llanilgan.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -364,7 +507,48 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Mineralizatsiya tarixi",
+        "nodes": [],
+        "header": [
+          "Yil",
+          "Olim",
+          "Hissasi"
+        ],
+        "rows": [
+          [
+            "1820",
+            "Dyufeo, Millon",
+            "Gaz xlor bilan rangsizlantirish"
+          ],
+          [
+            "1824",
+            "Nelyubin",
+            "Mineralizatsiya zarurligi"
+          ],
+          [
+            "1844",
+            "Frezenius, Babo",
+            "Ajralayotgan xlor usuli"
+          ],
+          [
+            "1902",
+            "Meyler",
+            "H2SO4 + HNO3 o‘rgandi"
+          ],
+          [
+            "1908",
+            "Ravnadiks",
+            "H2SO4 + HNO3 usuli"
+          ],
+          [
+            "1932",
+            "Kaan",
+            "H2SO4 + HNO3 + HClO4"
+          ]
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: tarixiy usullar bugungi usullarga qanday zamin yaratgan? Doskada: 1820, 1824, 1844 sanalari. Tipik xato: sanalarni aralashtirish."
     },
     {
@@ -389,7 +573,16 @@
           "uncertain": false
         },
         {
-          "text": "Kamchiliklari: organik moddalar chala parchalanadi; 100 g ob’ektni kuydirish uchun 18-20 soat kerak; margimush va simob tahlilida ko‘p yo‘qotiladi; oxirgi katta hajm sezgirlikni kamaytiradi.",
+          "text": "Kamchiliklari: organik moddalar chala parchalanadi; 100 g ob’ektni kuydirish uchun 18-20 soat kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "51"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Margimush va simob tahlilida ko‘p yo‘qotiladi; oxirgi katta hajm sezgirlikni kamaytiradi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -407,7 +600,21 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Xlor ajralishi",
+        "reagents": [
+          "KClO3",
+          "6 HCl"
+        ],
+        "products": [
+          "3 Cl2",
+          "KCl",
+          "3 H2O"
+        ],
+        "conditions": "Cl2 + H2O → HCl + HClO; HClO → HCl + O",
+        "observation": "Atomar kislorod oksidlaydi"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: xlor usuli simob uchun nima uchun qulay? Doskada: xlor hosil bo‘lish tenglamasi. Tipik xato: xlor usulini margimush uchun tavsiya etish — kitobga ko‘ra margimush ko‘p yo‘qoladi."
     },
     {
@@ -484,7 +691,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Atomar kislorod manbalari",
+        "nodes": [],
+        "header": [
+          "Reagent",
+          "Reaksiya"
+        ],
+        "rows": [
+          [
+            "H2SO4",
+            "H2SO4 → H2SO3 + O"
+          ],
+          [
+            "HNO3",
+            "HNO3 → HNO2 + O"
+          ],
+          [
+            "H2O2",
+            "H2O2 → H2O + O"
+          ],
+          [
+            "HNO2",
+            "2HNO2 → N2 + H2O + 3O"
+          ]
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun simob bu usulda yo‘qoladi? (uchuvchan; kitob faqat faktni aytadi). Doskada: qulaylik va kamchilik. Tipik xato: bu usulni simob tahlili uchun tavsiya etish."
     },
     {
@@ -518,7 +751,20 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Stepanov–Neymark usuli",
+        "reagents": [
+          "H2SO4",
+          "2 NH4NO3"
+        ],
+        "products": [
+          "2 HNO3",
+          "(NH4)2SO4"
+        ],
+        "conditions": "Hosil bo‘lgan HNO3 oksidlaydi",
+        "observation": "Oksidlanish va nitrolanish"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun nitrolanish yon jarayon hisoblanadi? Doskada: H2SO4 + 2NH4NO3 → 2HNO3 + (NH4)2SO4. Tipik xato: bu usul bilan mineralizatsiya to‘liq boradi deb hisoblash."
     },
     {
@@ -590,6 +836,79 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: xavfsizlik choralari? (kitob xavfni ta’kidlaydi). Doskada: reaksiya sxemasi. Tipik xato: HClO4 ni ehtiyotsiz ishlatish. Mineralizatsiya texnikasi laboratoriya mashg‘ulotida ko‘rib chiqiladi. Kitobda: «xlorat kislotasi» — Kaan usulida HClO4, ya’ni perxlorat kislota."
     },
     {
+      "title": "Ho‘l mineralizatsiya usullari: solishtirma",
+      "bullets": [
+        {
+          "text": "Xlor usuli (Frezenius–Babo): organik moddalar chala parchalanadi, 100 g ob’ekt uchun 18-20 soat kerak; simob aniqlashga qulay.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "51"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "H2SO4 + HNO3 (Ravnadiks, Meyler): to‘liq parchalanadi, tez, mineralizat hajmi kam; simob deyarli yo‘qoladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "52"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "H2SO4 + NH4NO3 xlorga nisbatan to‘liqroq, lekin oxirigacha bormaydi; H2SO4 + H2O2 amaliy ahamiyatga ega emas.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "52"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kaan usuli (H2SO4 + HNO3 + HClO4) to‘liq boradi, metallar yuqori valentli holda; perxlorat kislota portlovchi mahsulotlar hosil qilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "53"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Usullar solishtirmasi",
+        "nodes": [],
+        "header": [
+          "Usul",
+          "Asosiy xususiyati"
+        ],
+        "rows": [
+          [
+            "Xlor (Frezenius, Babo)",
+            "Sekin; Hg uchun qulay"
+          ],
+          [
+            "H2SO4 + HNO3",
+            "To‘liq; Hg yo‘qoladi"
+          ],
+          [
+            "H2SO4 + NH4NO3",
+            "Nitrolanadi; to‘liq emas"
+          ],
+          [
+            "H2SO4 + H2O2",
+            "Amaliy ahamiyati kam"
+          ],
+          [
+            "H2SO4 + HNO3 + HClO4 (Kaan)",
+            "To‘liq; HClO4 xavfli"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega simobni aniqlash uchun xlor usuli yoki maxsus usul kerak? Tipik xato: Kaan usulidagi kislotalarni almashtirish."
+    },
+    {
       "title": "Mineralizatni tahlilga tayyorlash",
       "bullets": [
         {
@@ -620,7 +939,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Oksidlovchilarni yo‘qotish",
+        "columns": [
+          {
+            "title": "Xlor usulida",
+            "items": [
+              "Dexlorlash"
+            ]
+          },
+          {
+            "title": "Nitrat kislotada",
+            "items": [
+              "Denitratsiyalash"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: oksidlovchi qolsa, margimush tahliliga qanday xalal beradi? (kitobda xalal berishi qayd etilgan). Doskada: usul — tozalash juftliklari. Tipik xato: oksidlovchilarni yo‘qotmasdan cho‘ktirishni boshlash."
     },
     {
@@ -654,14 +990,52 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Dexlorlash",
+        "items": [
+          {
+            "label": "Suv hajmi",
+            "value": "5-6 barobar"
+          },
+          {
+            "label": "HCl konsentratsiyasi",
+            "value": "taxminan 2",
+            "unit": "%"
+          },
+          {
+            "label": "Suv hammomi",
+            "value": "50",
+            "unit": "°C"
+          },
+          {
+            "label": "Yodkraxmal bilan",
+            "value": "12-13",
+            "unit": "soat"
+          },
+          {
+            "label": "Havo o‘tkazish bilan",
+            "value": "2-3",
+            "unit": "soat"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: dexlorlash va denitratsiyalash qaysi usulga mos? Doskada: 12-13 soat va 2-3 soat. Tipik xato: havo o‘tkazish usulini uzoq (12-13 soat) usul deb adashtirish."
     },
     {
       "title": "Nitrozil sulfat kislotasi",
       "bullets": [
         {
-          "text": "Nitrat kislota ishtirokida oksidlovchi sifatida HNO3, HNO2, azot oksidlari va nitrozil sulfat kislota hosil bo‘ladi; ichida eng qiyin yo‘qotiladigani nitrozil sulfat kislota.",
+          "text": "Nitrat kislota ishtirokida oksidlovchi sifatida HNO3, HNO2, azot oksidlari va nitrozil sulfat kislota hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "53"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichida eng qiyin yo‘qotiladigani nitrozil sulfat kislota.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -688,7 +1062,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Nitrozil sulfat kislotasi",
+        "items": [
+          {
+            "label": "Suyuqlanish harorati",
+            "value": "70",
+            "unit": "°C"
+          },
+          {
+            "label": "H2SO4 konsentratsiyasi",
+            "value": "> 57,5",
+            "unit": "%"
+          },
+          {
+            "label": "Toza holda",
+            "value": "rangsiz kristall"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun nitrozil sulfat kislota boshqa oksidlovchilardan qiyinroq yo‘qotiladi? Doskada: HNO2 + H2SO4 → nitrozil sulfat kislota + H2O. Tipik xato: faqat HNO3 ni yo‘qotishga e’tibor berish."
     },
     {
@@ -722,7 +1115,25 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Gidroliz usuli",
+        "items": [
+          {
+            "label": "Suyultirish",
+            "value": "5-10 qism suv"
+          },
+          {
+            "label": "Vaqt",
+            "value": "9-17",
+            "unit": "soat"
+          },
+          {
+            "label": "Difenilamin bilan",
+            "value": "ko‘k rang"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: difenilamin sinovi nimani ko‘rsatadi? (oksidlovchi qoldig‘ini). Doskada: gidroliz sxemasi. Tipik xato: sinovsiz mineralizatni keyingi bosqichga o‘tkazish."
     },
     {
@@ -789,7 +1200,16 @@
       "title": "Kasrli usulda niqoblash: mohiyati",
       "bullets": [
         {
-          "text": "Metallar tahlili ikki bosqichda: avval halaqit beruvchi ionlar tegishli reaktiv yoki aralashma bilan yo‘qotiladi, so‘ng rang yoki cho‘kma hosil qiluvchi reaktiv bilan metallar aniqlanadi.",
+          "text": "Metallar tahlili ikki bosqichda: avval halaqit beruvchi ionlar tegishli reaktiv yoki aralashma bilan yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "54"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "So‘ng rang yoki cho‘kma hosil qiluvchi reaktiv bilan metallar aniqlanadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -816,7 +1236,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Niqoblash asoslari",
+        "root": "Niqoblash",
+        "children": [
+          {
+            "label": "Turg‘un kompleks",
+            "items": [
+              "Halaqit beruvchi ion bog‘lanadi"
+            ]
+          },
+          {
+            "label": "Valentlik o‘zgarishi",
+            "items": [
+              "Oksidlovchi yoki qaytaruvchi"
+            ]
+          },
+          {
+            "label": "pH muhitini o‘zgartirish"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: niqoblash va ajratishning farqi? (niqoblashda ion eritmada qoladi, lekin halaqit bermaydi). Doskada: uch asos. Tipik xato: niqoblangan ionni tahlildan chiqib ketgan deb o‘ylash."
     },
     {
@@ -850,7 +1291,20 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Fe3+ halaqiti",
+        "reagents": [
+          "Fe3+",
+          "3 NH4CNS"
+        ],
+        "products": [
+          "Fe(CNS)3",
+          "3 NH4+"
+        ],
+        "conditions": "Co2+ ni aniqlashda",
+        "observation": "Qizil qon rang — halaqit beradi"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun ftorid qo‘shilgach qizil rang yo‘qoladi? (rangsiz [FeF6]3− kompleksi). Doskada: kobalt va temir rodanidlari ranglari. Tipik xato: kobaltni temir ishtirokida to‘g‘ridan-to‘g‘ri aniqlash. Demaskirovka (niqoblangan ionni niqoblovchidan ozod qilish) ham tilga olinadi. Kitobda: Fe3+ + 3NH4CNS → Fe(CNS)3 (ion tenglamasi to‘liq emas) — tenglashtirildi."
     },
     {
@@ -866,7 +1320,16 @@
           "uncertain": false
         },
         {
-          "text": "Reagentlar: sianidlar, ftoridlar, fosfatlar, tiosulfatlar, tiomochevina, gidroksilamin, glitserin, kompleksonlar (trilon B), limon, vino, oksalat va askorbin kislotalari.",
+          "text": "Reagentlar: sianidlar, ftoridlar, fosfatlar, tiosulfatlar, tiomochevina, gidroksilamin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "55-56"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Glitserin, kompleksonlar (trilon B), limon, vino, oksalat va askorbin kislotalari.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -886,6 +1349,52 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi reagent qaysi ionlarni niqoblaydi? Doskada: reagent — ionlar jadvali. Tipik xato: bitta reagent hamma ionni niqoblaydi deb o‘ylash."
+    },
+    {
+      "title": "Demaskirovka: niqoblangan ionni ozod qilish",
+      "bullets": [
+        {
+          "text": "Demaskirovka — niqoblangan ionni niqoblovchi reaktivdan ozod qilish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "55"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Misol: geksasianoferrat(II) kompleksi simob(II) ioni bilan reaksiyaga kirishib, sianidni Hg(CN)2 ko‘rinishida bog‘laydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "55"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sianidlarni qo‘llash kerak bo‘lganda ularning komplekslaridan oson ozod qilish bilan tushuntiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Demaskirovka misoli",
+        "reagents": [
+          "[Fe(CN)6]4−",
+          "3 Hg2+"
+        ],
+        "products": [
+          "3 Hg(CN)2",
+          "Fe2+"
+        ],
+        "observation": "Niqoblangan ion ozod bo‘ladi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: demaskirovka niqoblashdan nimasi bilan farq qiladi? Tipik xato: demaskirovkani yangi niqoblash usuli deb o‘ylash."
     },
     {
       "title": "Sianidlar bilan niqoblash",
@@ -909,7 +1418,16 @@
           "uncertain": false
         },
         {
-          "text": "Sianidlar zaharli; nordon eritmalarga qo‘shib bo‘lmaydi — kislotada uchuvchan va zaharli vodorod sianid hosil bo‘ladi; tajribalar so‘ruvchi javon ostida bajariladi.",
+          "text": "Sianidlar zaharli; nordon eritmalarga qo‘shib bo‘lmaydi — kislotada uchuvchan va zaharli vodorod sianid hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tajribalar so‘ruvchi javon ostida bajariladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -918,7 +1436,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Misni sianid bilan niqoblash",
+        "reagents": [
+          "CuCN",
+          "3 KCN"
+        ],
+        "products": [
+          "K3[Cu(CN)4]"
+        ],
+        "conditions": "Avval Cu(II) qaytariladi",
+        "observation": "Rangsiz kompleks"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun sianid niqoblashda keng qo‘llanadi? (kerak bo‘lganda komplekslardan oson ozod qilinadi). Doskada: mis kompleksi hosil bo‘lishi. Tipik xato: sianidni kislotali eritmaga qo‘shish. Kitobda xato: 56-betda CuCN + 2KCN → K3[Cu(CN)4] yozilgan (K3 uchun 3KCN kerak); to‘g‘ri variant 55-betda, slaydda shu olindi."
     },
     {
@@ -956,6 +1486,114 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: gidroksilaminning ikki xil rolini tushuntiring. Doskada: reagent — ion — kompleks. Tipik xato: gidroksilaminni faqat qaytaruvchi deb hisoblash."
     },
     {
+      "title": "Misni tiosulfat bilan niqoblash",
+      "bullets": [
+        {
+          "text": "Tiosulfat va mis ionlarining reaksiyasi ikki bosqichda boradi: avval Cu2+ Cu+ ga qaytariladi, so‘ngra kompleks hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "CuSO4 + Na2S2O3 → CuS2O3 + Na2SO4; 4CuS2O3 → 2Cu2S2O3 + S4O6 2−.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Cu2S2O3 + Na2S2O3 → Na2[Cu2(S2O3)2] — niqoblovchi kompleks.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Mis + tiosulfat",
+        "items": [
+          {
+            "title": "1. Cu(II) tuzi",
+            "text": "CuSO4 + Na2S2O3 → CuS2O3"
+          },
+          {
+            "title": "2. Qaytarilish",
+            "text": "4CuS2O3 → 2Cu2S2O3 + S4O6"
+          },
+          {
+            "title": "3. Kompleks",
+            "text": "Cu2S2O3 + Na2S2O3 → Na2[Cu2(S2O3)2]"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega mis avval qaytariladi? Tipik xato: Cu2+ ni to‘g‘ridan-to‘g‘ri kompleks hosil qiladi deb o‘ylash."
+    },
+    {
+      "title": "Gidroksilamin: ikki xil rol",
+      "bullets": [
+        {
+          "text": "Gidroksilamin bir ion bilan kompleks hosil qiladi, ikkinchisi bilan oksidlanish-qaytarilish reaksiyasiga kirishadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kobalt ionlari bilan [Co(NH2OH)6]2+ kompleksi hosil bo‘ladi; Fe3+ ni qaytaradi, AsO2− va SbO2− ionlarini oksidlaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ortiqcha gidroksilamin formaldegid bilan bartaraf etiladi, formaldoksim hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Gidroksilamin vazifalari",
+        "columns": [
+          {
+            "title": "Kompleks hosil qiladi",
+            "items": [
+              "Co bilan [Co(NH2OH)6]2+"
+            ]
+          },
+          {
+            "title": "Qaytaruvchi",
+            "items": [
+              "Fe3+ ni qaytaradi"
+            ]
+          },
+          {
+            "title": "Oksidlovchi",
+            "items": [
+              "AsO2− va SbO2− ni oksidlaydi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: gidroksilamin qachon oksidlovchi, qachon qaytaruvchi? (ion tabiatiga qarab). Tipik xato: faqat qaytaruvchi deb o‘ylash."
+    },
+    {
       "title": "Tiomochevina, glitserin, kompleksonlar",
       "bullets": [
         {
@@ -977,7 +1615,16 @@
           "uncertain": false
         },
         {
-          "text": "Komplekson III (trilon B) kadmiy, kobalt, mis, temir, marganets, qo‘rg‘oshin, rux, magniy ionlarini niqoblaydi; valentligidan qat’i nazar 1:1 nisbatda reaksiyaga kirishadi.",
+          "text": "Komplekson III (trilon B) kadmiy, kobalt, mis, temir, marganets, qo‘rg‘oshin, rux, magniy ionlarini niqoblaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Valentligidan qat’i nazar 1:1 nisbatda reaksiyaga kirishadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1020,14 +1667,162 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Organik kislotalar bilan niqoblash",
+        "columns": [
+          {
+            "title": "Limon kislota",
+            "items": [
+              "Bi, Cu, Fe(III), Sb(III)",
+              "Cd, Hg, Ag"
+            ]
+          },
+          {
+            "title": "Oksalat kislota",
+            "items": [
+              "Cu, Fe, Al, Bi",
+              "Cd, Hg, Pb, Zn",
+              "Suvda eruvchan kompleks"
+            ]
+          },
+          {
+            "title": "Askorbin kislota",
+            "items": [
+              "Fe3+ va Sn4+",
+              "Qaytaruvchilik asosida"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: askorbin kislotasi boshqa reagentlardan nimasi bilan farq qiladi? (qaytaruvchi). Doskada: kislota — ionlar. Tipik xato: askorbin kislotani kompleks hosil qiluvchi deb hisoblash."
+    },
+    {
+      "title": "Niqoblash reagentlari: qaysi ionlar uchun",
+      "bullets": [
+        {
+          "text": "Limon kislotasi Bi, Cu, Fe, Sb, Hg, Ag, Cd ni; vinotosh kislotasi Cu, Fe, Al, Bi, Cd, Hg, Pb, Zn ni niqoblaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "55"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tiosulfatlar Ag, Pb, Cu, Fe ni; tiomochevina Bi, Fe, Sb, Cd, Hg, Ag, Pb ni; glitserin Bi, Pb, Cd ni niqoblaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Komplekson III (trilon B) Cd, Co, Cu, Fe, Mn, Pb, Zn, Mg ionlarini niqoblaydi, ionlar bilan 1:1 nisbatda reaksiyaga kirishadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "56"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Reagent — ionlar",
+        "nodes": [],
+        "header": [
+          "Reagent",
+          "Niqoblanadigan ionlar"
+        ],
+        "rows": [
+          [
+            "Limon kislota",
+            "Bi, Cu, Fe, Sb, Hg, Ag, Cd"
+          ],
+          [
+            "Vinotosh kislota",
+            "Cu, Fe, Al, Bi, Cd, Hg, Pb, Zn"
+          ],
+          [
+            "Tiosulfatlar",
+            "Ag, Pb, Cu, Fe"
+          ],
+          [
+            "Tiomochevina",
+            "Bi, Fe, Sb, Cd, Hg, Ag, Pb"
+          ],
+          [
+            "Glitserin",
+            "Bi, Pb, Cd"
+          ],
+          [
+            "Trilon B",
+            "Cd, Co, Cu, Fe, Mn, Pb, Zn, Mg"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Doskada: jadvalni to‘ldiring. Tipik xato: limon va vinotosh kislotalari ro‘yxatini almashtirish."
+    },
+    {
+      "title": "Ho‘l usul: qulayliklar va kamchiliklar",
+      "bullets": [
+        {
+          "text": "Qulayliklari: organik birikmalar to‘liq parchalanadi, nisbatan qisqa vaqt talab qilinadi, kam hajmdagi mineralizat olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "52"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamchiligi: simobning deyarli hammasi yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "52"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mineralizatsiya uchun Kyeldal kolbasi va ajratgich voronka ishlatiladi; ular laboratoriya mashg‘ulotida kerakli asbob-uskunalar qatoriga kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "193, 333"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "H2SO4 + HNO3 usuli",
+        "columns": [
+          {
+            "title": "Qulayliklari",
+            "items": [
+              "Organik birikmalar to‘liq parchalanadi",
+              "Nisbatan qisqa vaqt",
+              "Mineralizat hajmi kam"
+            ]
+          },
+          {
+            "title": "Kamchiligi",
+            "items": [
+              "Simobning deyarli hammasi yo‘qoladi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: simobni qaysi usullar bilan aniqlaymiz? Tipik xato: ho‘l usulni simob uchun ham umumiy deb hisoblash."
     },
     {
       "title": "Metallarni aniqlash: H2S usuli va kasrli usul",
       "bullets": [
         {
-          "text": "Vodorod sulfid usuli — mineralizatda kationlarni analitik guruhlar bo‘yicha umumiy cho‘ktiruvchilar va erituvchilar asosida ajratish; 1970 yillargacha qo‘llangan, ko‘p kamchiliklarga ega, hozir qo‘llanilmaydi.",
+          "text": "Vodorod sulfid usuli — kationlarni analitik guruhlar bo‘yicha umumiy cho‘ktiruvchilar asosida ajratish; 1970 yillargacha qo‘llangan, hozir qo‘llanilmaydi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1054,7 +1849,7 @@
           "uncertain": false
         },
         {
-          "text": "Boshqa kationlar ta’sirini yo‘qotish uchun kompleks hosil qilish, oksidlanish-qaytarilish, pH o‘zgartirish, kam hajmli mineralizat olish, suyultirish qo‘llaniladi.",
+          "text": "Boshqa kationlar ta’sirini yo‘qotish: kompleks hosil qilish, oksidlanish-qaytarilish, pH o‘zgartirish, kam hajmli mineralizat olish, suyultirish.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1063,7 +1858,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Metallarni aniqlash usullari",
+        "columns": [
+          {
+            "title": "Vodorod sulfid usuli",
+            "items": [
+              "Analitik guruhlar bo‘yicha",
+              "1970 yillargacha qo‘llangan",
+              "Hozir qo‘llanilmaydi"
+            ]
+          },
+          {
+            "title": "Kasrli usul",
+            "items": [
+              "Krilova taklif etgan",
+              "Ekstraksiya va reekstraksiya",
+              "Hozir keng qo‘llaniladi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun H2S usuli tashlandi? (kitob: ko‘p kamchiliklar). Doskada: ikki usul. Tipik xato: H2S usulini hozirgi amaliyot deb hisoblash."
     },
     {
@@ -1106,7 +1922,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "LD50 va o‘lim dozalari",
+        "items": [
+          {
+            "label": "As, Sb birikmalari",
+            "value": "0,08-0,1",
+            "unit": "g"
+          },
+          {
+            "label": "Talliy",
+            "value": "0,5",
+            "unit": "g"
+          },
+          {
+            "label": "Xrom",
+            "value": "0,2-1",
+            "unit": "g"
+          },
+          {
+            "label": "Kadmiy",
+            "value": "0,03",
+            "unit": "g"
+          },
+          {
+            "label": "Simob",
+            "value": "0,2-0,3",
+            "unit": "g"
+          },
+          {
+            "label": "KMnO4",
+            "value": "15-20",
+            "unit": "g"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: eng zaharli metall qaysi? (kitob qiymatlariga ko‘ra kadmiy 0,03 g). Doskada: LD50 qatori. Tipik xato: LD50 ni bir martalik zaharli doza bilan almashtirish. Kitobda ZnCl2 uchun birlik ko‘rsatilmagan («5,0»), keyingi qiymat gramm bilan berilgan."
     },
     {
@@ -1149,7 +2000,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Zaharlanish belgilari",
+        "root": "Metall zaharlanishi",
+        "children": [
+          {
+            "label": "Qusuq rangi",
+            "items": [
+              "Xrom, mis: yashil",
+              "Marganets: qo‘ng‘ir"
+            ]
+          },
+          {
+            "label": "Og‘iz belgilari",
+            "items": [
+              "Metall ta’mi",
+              "Qo‘rg‘oshin: qora dog‘lar",
+              "Vismut, simob: oq dog‘lar"
+            ]
+          },
+          {
+            "label": "Umumiy belgilar",
+            "items": [
+              "Chanqash, qayd, ich ketishi",
+              "Oshqozonda og‘riq"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qusuq rangi qaysi metallga yo‘llanma beradi? Doskada: yashil — Cr, Cu; qo‘ng‘ir — Mn. Tipik xato: rangni yakuniy isbot deb hisoblash. Eslatma: kitobda «qora jigar» deb yozilgan, ma’nosi aniq emas (o‘qituvchi aniqlashtiradi)."
     },
     {
@@ -1191,12 +2070,12 @@
     {
       "question": "Ho‘l mineralizatsiya usuli qaysi metalldan tashqari barcha metallar uchun qo‘llaniladi?",
       "options": [
-        "Qo‘rg‘oshin",
-        "Simob",
+        "Bariy",
         "Mis",
-        "Bariy"
+        "Qo‘rg‘oshin",
+        "Simob"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Ho‘l usullar umumiy hisoblanib, simobdan tashqari barcha metallarni ajratishda qo‘llaniladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1207,10 +2086,10 @@
     {
       "question": "Sud-tibbiy ekspertiza buyruqlariga ko‘ra nechta metallga tekshirish o‘tkazish zarur?",
       "options": [
-        "7",
+        "20",
         "10",
         "13",
-        "20"
+        "7"
       ],
       "correct_index": 2,
       "explanation": "Sog‘liqni saqlash vazirligi sud-tibbiy ekspertizasi buyruqlariga asosan 13 ta metallga tekshirish zarur.",
@@ -1223,12 +2102,12 @@
     {
       "question": "Quruq kuydirish usullari qaysi kationlarni ajratishda qo‘llash mumkin?",
       "options": [
-        "Uchuvchi",
         "Uchmaydigan",
-        "Faqat simob",
-        "Faqat margimush"
+        "Faqat margimush",
+        "Uchuvchi",
+        "Faqat simob"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Quruq kuydirish xususiy usullar bo‘lib, uchmaydigan metall kationlarini ajratishda qo‘llash mumkin.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1241,8 +2120,8 @@
       "options": [
         "1-2 soat",
         "18-20 soat",
-        "3 daqiqa",
-        "1 hafta"
+        "1 hafta",
+        "3 daqiqa"
       ],
       "correct_index": 1,
       "explanation": "Xlor usulining kamchiliklaridan biri: 100 g ob’ektni kuydirish uchun 18-20 soat talab qilinadi.",
@@ -1255,12 +2134,12 @@
     {
       "question": "Sulfat va nitrat kislotalar ob’ektga nisbatan qaysi nisbatda olinishi tavsiya etilgan?",
       "options": [
-        "1:4",
         "4:1",
-        "1:1",
-        "1:10"
+        "1:10",
+        "1:4",
+        "1:1"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Meyler va Ravnadiks tavsiyasiga ko‘ra kislotalar ob’ektga nisbatan 1:4 nisbatda bo‘lishi kerak.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1271,12 +2150,12 @@
     {
       "question": "Mineralizatda qiyin yo‘qotiladigan oksidlovchi qaysi?",
       "options": [
-        "Nitrozil sulfat kislota",
         "Sulfat kislota",
         "Xlorid kislota",
-        "Ammiak"
+        "Ammiak",
+        "Nitrozil sulfat kislota"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Nitrat kislota ishtirokida hosil bo‘ladigan oksidlovchilardan eng qiyin yo‘qotiladigani nitrozil sulfat kislota.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1287,12 +2166,12 @@
     {
       "question": "Kimyoviy denitratsiya qancha vaqt talab qiladi?",
       "options": [
+        "2 sutka",
         "5-10 daqiqa",
         "9-17 soat",
-        "12-13 soat",
-        "2 sutka"
+        "12-13 soat"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Kimyoviy usullar tez va oson; denitratsiya uchun 5-10 daqiqa vaqt sarflanadi; gidroliz usuli esa 9-17 soat.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1303,12 +2182,12 @@
     {
       "question": "Fe3+ ionini niqoblash uchun qaysi reagentlar qo‘llaniladi?",
       "options": [
-        "Ftoridlar va fosfatlar",
         "Faqat sianidlar",
-        "Ammiak",
-        "Natriy gidroksid"
+        "Ftoridlar va fosfatlar",
+        "Natriy gidroksid",
+        "Ammiak"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Fe3+ ni niqoblashda ftorid va fosfatlardan foydalaniladi: [FeF6]3−, [Fe(PO4)2]3−.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1319,12 +2198,12 @@
     {
       "question": "Sianidlar bilan niqoblashda qanday ehtiyot chorasi shart?",
       "options": [
-        "Nordon eritmalarga qo‘shilmaydi, so‘ruvchi javon ostida ishlanadi",
+        "Hech qanday",
         "Qizdirib ishlanadi",
-        "Faqat ochiq havoda",
-        "Hech qanday"
+        "Nordon eritmalarga qo‘shilmaydi, so‘ruvchi javon ostida ishlanadi",
+        "Faqat ochiq havoda"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Kislotada sianidlar zaharli vodorod sianidni hosil qiladi, shuning uchun ularni nordon eritmaga qo‘shib bo‘lmaydi va so‘ruvchi javon ostida ishlanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1335,12 +2214,12 @@
     {
       "question": "Hozir sud-kimyo laboratoriyalarida metall kationlarini aniqlashda qaysi usul keng qo‘llanadi?",
       "options": [
-        "Vodorod sulfid usuli",
-        "Xususiy kasrli usul (Krilova)",
         "Faqat gravimetriya",
-        "Faqat xromatografiya"
+        "Faqat xromatografiya",
+        "Xususiy kasrli usul (Krilova)",
+        "Vodorod sulfid usuli"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Vodorod sulfid usuli hozir qo‘llanilmaydi; kasrli usul A.N. Krilova tomonidan tavsiya etilgan va keng qo‘llanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1351,13 +2230,157 @@
     {
       "question": "Margimush va simob bilan zaharlanganda qanchasi o‘lim bilan tugaydi?",
       "options": [
-        "50% holda",
-        "5% holda",
         "10% holda",
-        "100% holda"
+        "50% holda",
+        "100% holda",
+        "5% holda"
+      ],
+      "correct_index": 1,
+      "explanation": "Margimush va simob bilan zaharlanganda 50% holda o‘lim bilan tugaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "58"
+      }
+    },
+    {
+      "question": "PbCO3 yoki BaCO3 oshqozonga tushganda oshqozon sharbati kislotasi ta’sirida nimaga o‘tadi?",
+      "options": [
+        "Oksidlarga",
+        "Fosfatlarga",
+        "Sulfidlarga",
+        "Xloridlarga"
+      ],
+      "correct_index": 3,
+      "explanation": "PbCO3 yoki BaCO3 oshqozonga tushib, oshqozon sharbati kislotasi ta’sirida xloridlarga o‘tadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "50"
+      }
+    },
+    {
+      "question": "Organizmda As(+5) qaysi holatga o‘tib, kuchliroq zaharli ta’sir ko‘rsatadi?",
+      "options": [
+        "As(-3)",
+        "As(0)",
+        "As(+7)",
+        "As(+3)"
+      ],
+      "correct_index": 3,
+      "explanation": "O‘zgaruvchan valentli birikmalar organizmda oksidlanadi va qaytariladi; As(+5) kuchliroq zaharli As(+3) holatiga o‘tadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "50"
+      }
+    },
+    {
+      "question": "Ob’ektni ajralib chiqayotgan xlor bilan ishlash usulini 1844 yilda kimlar taklif etgan?",
+      "options": [
+        "Frezenius va Babo",
+        "Kaan",
+        "Nelyubin",
+        "Ravnadiks"
       ],
       "correct_index": 0,
-      "explanation": "Margimush va simob bilan zaharlanganda 50% holda o‘lim bilan tugaydi.",
+      "explanation": "1844 yilda fransuz kimyogarlari Frezenius va Babo ob’ektni ajralib chiqayotgan xlor bilan ishlash usulini taklif etgan.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "51"
+      }
+    },
+    {
+      "question": "Mineralizatsiya zarurligini 1824 yilda kim nazariy asoslagan?",
+      "options": [
+        "Meyler",
+        "Krilova",
+        "Nelyubin",
+        "Kaan"
+      ],
+      "correct_index": 2,
+      "explanation": "Ob’ektdan metall zaharlarni aniqlash uchun mineralizatsiya zarurligini 1824 yil rus olimi Nelyubin nazariy asoslab bergan.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "51"
+      }
+    },
+    {
+      "question": "Dexlorlashda mineralizatdagi HCl konsentratsiyasi taxminan qancha bo‘lgunicha bug‘latiladi?",
+      "options": [
+        "2%",
+        "50%",
+        "20%",
+        "0,2%"
+      ],
+      "correct_index": 0,
+      "explanation": "Mineralizat 5-6 barobar hajmdagi suv bilan, HCl konsentratsiyasi taxminan 2% bo‘lguncha 50 °C suv hammomida bug‘latiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "53"
+      }
+    },
+    {
+      "question": "Nitrozil sulfat kislotasi toza holda qaysi haroratda suyuqlanadi?",
+      "options": [
+        "70 °C",
+        "170 °C",
+        "7 °C",
+        "700 °C"
+      ],
+      "correct_index": 0,
+      "explanation": "Nitrozil sulfat kislotasi toza holda rangsiz kristall modda bo‘lib, 70 °C da suyuqlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "53"
+      }
+    },
+    {
+      "question": "Mineralizatda oksidlovchilar borligi difenilaminning konsentrlangan H2SO4 dagi eritmasi bilan tekshirilganda qanday rang hosil bo‘ladi?",
+      "options": [
+        "Ko‘k",
+        "Rangsiz",
+        "Sariq",
+        "Qizil"
+      ],
+      "correct_index": 0,
+      "explanation": "Oksidlovchilar bor-yo‘qligi difenilaminning konsentrlangan sulfat kislotadagi eritmasi bilan tekshiriladi; oksidlovchi bo‘lsa, ko‘k rang hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "54"
+      }
+    },
+    {
+      "question": "Mochevina bilan denitratsiyalashda qaysi mahsulotlar hosil bo‘ladi?",
+      "options": [
+        "NH3 va H2S",
+        "CO2, N2 va H2O",
+        "NO2 va SO2",
+        "HCl va Cl2"
+      ],
+      "correct_index": 1,
+      "explanation": "H2N–CO–NH2 + 2HNO2 → CO2 + 2N2 + 3H2O.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "54"
+      }
+    },
+    {
+      "question": "Kitob ma’lumotiga ko‘ra kadmiy birikmalari uchun LD50 qiymati qancha?",
+      "options": [
+        "5,0 g",
+        "0,5 g",
+        "15-20 g",
+        "0,03 g"
+      ],
+      "correct_index": 3,
+      "explanation": "Kadmiy uchun LD50 = 0,03 g; talliy — 0,5 g; ZnCl2 — 5,0 g; KMnO4 — 15-20 g.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",

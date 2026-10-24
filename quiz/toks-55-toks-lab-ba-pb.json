@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-55-toks-lab-ba-pb",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Mineralizat cho‘kmasini ajratish; Ba va Pb ni aniqlash",
+  "ru": "Mineralizat cho‘kmasini ajratish; Ba va Pb ni aniqlash",
+  "en": "Mineralizat cho‘kmasini ajratish; Ba va Pb ni aniqlash"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-55-toks-lab-ba-pb-q01",
+   "question_i18n": {
+    "uz": "Qo‘rg‘oshin va bariy sulfatlarini ajratish uchun cho‘kma nima bilan yuviladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Issiq ammoniy atsetat eritmasi (sirka kislotali)",
+     "Sovuq suv",
+     "Konsentrlangan HCl",
+     "Etanol"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Cho‘kma ortiqcha sirka kislotali issiq ammoniy atsetat bilan yuviladi: BaSO4 qoladi, PbSO4 filtratga o‘tadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "199"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q02",
+   "question_i18n": {
+    "uz": "Ammoniy atsetat bilan yuvilgandan so‘ng filtr qog‘ozida nima qoladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kalsiy xlorid",
+     "Qo‘rg‘oshin sulfat",
+     "Bariy sulfat",
+     "Mis sulfat"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Bariy sulfat filtr qog‘ozida erimagan cho‘kma holida qoladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "199"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q03",
+   "question_i18n": {
+    "uz": "Bariy sulfatni qayta kristallash uchun cho‘kmaga nima tomiziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Suv",
+     "1-2 tomchi konsentrlangan sulfat kislota",
+     "Spirt",
+     "Ammiak"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Cho‘kma buyum oynachasida konsentrlangan H2SO4 ning 1-2 tomchisi bilan past alangada qizdiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "199"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q04",
+   "question_i18n": {
+    "uz": "Bariy yodat mikrokristallari qanday shaklda ko‘rinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tayoqchasimon",
+     "Kvadrat",
+     "Yulduzsimon",
+     "Ninasimon"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "10% kaliy yodat qo‘shilganda bariy yodatning tayoqcha shaklidagi mikrokristallari ko‘rinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "199"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q05",
+   "question_i18n": {
+    "uz": "Xromat/bixromat bilan bariy qanday cho‘kma beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qora",
+     "Och sariq",
+     "Ko‘k",
+     "Qizil"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Och sariq bariy xromati cho‘kmaga tushadi; u mineral kislotalarda eriydi, sirka kislotasida erimaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "199"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q06",
+   "question_i18n": {
+    "uz": "Ditizon bilan qo‘rg‘oshin reaksiyasi qaysi pH da o‘tkaziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "pH 7,5",
+     "pH 1",
+     "pH 3",
+     "pH 12"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Aralashma pH ga 7,5 ga yetkazilib, xloroform va ditizon qo‘shiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "199"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q07",
+   "question_i18n": {
+    "uz": "Qo‘rg‘oshin ditizonatining xloroform qatlamdagi rangi qanday?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rangsiz",
+     "Ko‘k",
+     "Qizil-pushti",
+     "Yashil"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Qo‘rg‘oshin bo‘lsa, xloroform qatlami qizil-pushti rangga bo‘yaladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "199"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q08",
+   "question_i18n": {
+    "uz": "Ditizonat qo‘rg‘oshinni parchalab, Pb ni suvli qatlamga o‘tkazish uchun xloroform qatlami nima bilan chayqatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Suv",
+     "5% KI",
+     "10% ammiak",
+     "5 ml 1n nitrat kislota"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Xloroform qatlami 5 ml 1n HNO3 bilan bir daqiqa chayqatiladi; Pb nitrat holida suvli qatlamga o‘tadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "199"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q09",
+   "question_i18n": {
+    "uz": "Qo‘rg‘oshin xromatining xossasi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ishqorda eriydigan sariq cho‘kma",
+     "Qora cho‘kma",
+     "Suvda eriydigan",
+     "Oq cho‘kma"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kaliy xromat/bixromat bilan qo‘rg‘oshin xromatning ishqorda eriydigan sariq cho‘kmasi hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "200"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q10",
+   "question_i18n": {
+    "uz": "Seziy xlorid va kaliy yodid bilan qo‘rg‘oshin qanday kristallar beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rangsiz tayoqcha",
+     "Sariq-yashil ninasimon",
+     "Qizil romb",
+     "Ko‘k kub"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Qo‘rg‘oshin bo‘lsa, sariq-yashil rangli ninasimon kristallar hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "200"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q11",
+   "question_i18n": {
+    "uz": "BaCO3 ning qancha miqdori zaharli hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100 g",
+     "0,8-0,9 g",
+     "0,08-0,1 g",
+     "5-10 g"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Bariy birikmalari zaharli: BaCO3 ning 0,8-0,9 g zaharlidir."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "59"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q12",
+   "question_i18n": {
+    "uz": "Bariy tuzlari bilan zaharlanishda o‘lim nima natijasida sodir bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jigar nekrozi",
+     "Buyrak yetishmovchiligi",
+     "Yurak paralichi",
+     "Nafas markazi falaji"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Bariy tuzlari bilan zaharlanganda yurak mushaklari ishdan chiqadi va yurak paralichi natijasida o‘lim sodir bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "59"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q13",
+   "question_i18n": {
+    "uz": "BaSO4 cho‘kmasi platina simida qizdirilganda alanga qanday rangga bo‘yaladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Binafsha",
+     "Sariq",
+     "Qizil",
+     "Yashil"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "BaSO4 cho‘kmasi platina simida gaz alangasida qizdirilsa, alanga yashil rangga bo‘yaladi va qisman BaS gacha qaytariladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "59"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q14",
+   "question_i18n": {
+    "uz": "Bariy yodat Ba(IO3)2 kristallari qanday shaklda?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ninasimon sariq-yashil",
+     "Kvadrat qo‘ng‘ir",
+     "Sferoid shaklidagi yoyilgan rangsiz prizmatik",
+     "Oltiburchakli yulduz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ba(IO3)2 — sferoid shaklidagi yoyilgan rangsiz prizmatik kristallar."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "59"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q15",
+   "question_i18n": {
+    "uz": "Bariyni hajmiy usulda aniqlashda qaysi indikator ishlatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Metiloranj",
+     "Kraxmal",
+     "Fenolftalein",
+     "Eriokrom ko‘ki"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ortiqcha trilon B eriokrom ko‘ki indikatorida ZnCl2 bilan titrlanadi: ko‘k rang qizilga o‘tadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "60"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q16",
+   "question_i18n": {
+    "uz": "Qonga so‘rilgach qo‘rg‘oshinning necha foizi eritrotsitlar bilan birikadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50%",
+     "10%",
+     "100%",
+     "90%"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Qonga so‘rilgach qo‘rg‘oshinning 90% eritrotsitlar bilan birikadi; asosiy qismi axlat bilan chiqadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "60"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q17",
+   "question_i18n": {
+    "uz": "Ditizon reaksiyasida halal beruvchi ionlarni niqoblash uchun nima qo‘shiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "KCN yoki gidroksilamin",
+     "H2SO4",
+     "NaCl",
+     "AgNO3"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Halal beruvchi ionlarni niqoblash uchun KCN yoki gidroksilamin qo‘shiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "61"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q18",
+   "question_i18n": {
+    "uz": "TEQ qaysi haroratda parchalanish bilan qaynaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "300-350 °C",
+     "56 °C",
+     "198-200 °C",
+     "100 °C"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "TEQ qaynash harorati 198-200 °C da parchalanish bilan boradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "62"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q19",
+   "question_i18n": {
+    "uz": "100 g ob’ektda qancha TEQ bo‘lsa, zaharlanish alomati bor deb hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "3 g",
+     "30 g",
+     "0,003 g",
+     "0,3 g"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "100 g ob’ekt tarkibida 0,3 g TEQ bo‘lsa, zaharlanish alomati bor deb hisoblanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "62"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-55-toks-lab-ba-pb-q20",
+   "question_i18n": {
+    "uz": "Kadmiy birikmalari uchun LD50 qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5,0 g",
+     "0,03 g",
+     "0,5 g",
+     "15-20 g"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kadmiy uchun LD50 = 0,03 g (margimush va surma 0,08-0,1 g, talliy 0,5 g)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "58"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

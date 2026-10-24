@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-73-toks-lab-fob",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "FOB va xlororganik pestitsidlar: xlorofos, karbofos, geksaxloran",
+  "ru": "FOB va xlororganik pestitsidlar: xlorofos, karbofos, geksaxloran",
+  "en": "FOB va xlororganik pestitsidlar: xlorofos, karbofos, geksaxloran"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-73-toks-lab-fob-q01",
+   "question_i18n": {
+    "uz": "Karbofosni ajratishda ob’ekt qaysi muhitga (pH) keltiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "pH-1",
+     "pH-7",
+     "pH-10",
+     "pH-13"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ob’ekt 10% HCl yordamida pH-1 ga keltiriladi va benzol bilan ishlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "265"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q02",
+   "question_i18n": {
+    "uz": "Karbofosning YuQX da hosil qilgan dog‘ining Rf qiymati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,05-0,25",
+     "0,19",
+     "0,60-0,65",
+     "0,65-0,67"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Bromfenol ko‘ki bilan ko‘k-zangori dog‘ Rf=0,60-0,65."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "266"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q03",
+   "question_i18n": {
+    "uz": "Xlorofos ajratishda ob’ekt qaysi pH ga keltiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "pH=12",
+     "pH-1",
+     "pH=8-9",
+     "pH=2-3"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ob’ekt 25% HCl yordamida pH=2-3 ga keltiriladi va etil efiri bilan ishlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "266"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q04",
+   "question_i18n": {
+    "uz": "Xlorofos YuQX da qaysi reagent bilan purkaladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bromfenol ko‘ki",
+     "10% NaOH dagi 1% rezortsin",
+     "Dragendorf reaktivi",
+     "Kumush ammiakati"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Plastinka 10% natriy ishqorida eritilgan 1% rezortsin bilan purkaladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "266"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q05",
+   "question_i18n": {
+    "uz": "Xlorofos YuQX dagi qizil dog‘ning Rf oralig‘i qanday?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,60-0,65",
+     "0,65-0,67",
+     "0,05-0,25",
+     "0,44-0,61"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Xlorofos bo‘lsa Rf=0,05-0,25 oralig‘ida qizil dog‘ hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "267"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q06",
+   "question_i18n": {
+    "uz": "Fozalonning kumush nitratning spirtli eritmasi bilan reaksiyasida aniqlanish chegarasi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5 mkg",
+     "2 mkg",
+     "4 mkg",
+     "0,05 mg"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kumush nitrat bilan rangsiz ninasimon kristallar hosil bo‘ladi; aniqlanish chegarasi 0,5 mkg."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "267"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q07",
+   "question_i18n": {
+    "uz": "Fozalon uchun simob (II) xlorid yoki bromid bilan qanday mikrokristallar hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sferitlar",
+     "Yulduzchalar",
+     "Plastinkalar",
+     "Barg shaklidagi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Simob (II) xlorid yoki bromid sferitlar ko‘rinishidagi mikrokristallar hosil qiladi (chegara 4 mkg)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "267"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q08",
+   "question_i18n": {
+    "uz": "FOB ning zaharli ta’siri qaysi fermentning faoliyatini bo‘g‘ib qo‘yishi bilan tushuntiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Katalaza",
+     "Lipaza",
+     "Amilaza",
+     "Xolinesteraza"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "FOB antixolinesteraz ta’sirli moddalar turkumiga kiradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "150"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q09",
+   "question_i18n": {
+    "uz": "Geksaxloranni natriy va spirt bilan reaksiyaga kiritganda nima ro‘y beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat uch xlor ajraladi",
+     "Barcha xlor ajralib chiqadi",
+     "Xlor ajralmaydi",
+     "Faqat bitta xlor ajraladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Spirt va metall natriy bilan geksaxloran tarkibidagi barcha xlor ajralib chiqadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "158"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q10",
+   "question_i18n": {
+    "uz": "Geksaxloranni YuQX da silikagel plastinkada aniqlashda dog‘ Rf qiymati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,34",
+     "0,19",
+     "0,60",
+     "0,05"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Silikagelli plastinkada Rf=0,19, alyuminiy oksidida Rf=0,34."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "159"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q11",
+   "question_i18n": {
+    "uz": "Pestitsidlar zaharlilik darajasi bo‘yicha «kam zaharli» sinfda LD50 qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50 mg/kg",
+     "50-200 mg/kg",
+     "1000 mg/kg dan yuqori",
+     "200-1000 mg/kg"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kam zaharli pestitsidlar uchun LD50 1000 mg/kg dan yuqori."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q12",
+   "question_i18n": {
+    "uz": "«Pestitsid» so‘zining lotincha ma’nosi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Pestis — o‘simlik, cido — dori",
+     "Pesto — kuch, cido — suv",
+     "Pestis — sovuq, cido — eritma",
+     "Pestis — yuqumli, cido — o‘ldiruvchi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Pestitsid so‘zi pestis (yuqumli) va cido (o‘ldiruvchi) so‘zlaridan kelib chiqqan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q13",
+   "question_i18n": {
+    "uz": "Xolinesteraza faolligining necha foizga kamayishi FOB borligini ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10%",
+     "1%",
+     "50%",
+     "90%"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Xolinesteraza ferment faolligining 10% ga kamayishi fosfororganik birikmalar borligini ko‘rsatadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "154"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q14",
+   "question_i18n": {
+    "uz": "DDT organizmda qaysi moddaga aylanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Geptaxlor epoksidiga",
+     "Kam zaharli dixlordifenilsirka kislotasiga",
+     "Fosfor kislotasiga",
+     "Atsetgidroksam kislotasiga"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "DDT dan kam zaharli dixlordifenilsirka kislotasi hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "151"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q15",
+   "question_i18n": {
+    "uz": "Geptaxlorning oksidlanish mahsuli qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dixlordifenilsirka kislotasi",
+     "Trinitrobenzol",
+     "Geptaxlor epoksidi (kuchliroq zaharli)",
+     "Lindan"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Geptaxlordan oksidlanish mahsuli — yana ham kuchli zaharli geptaxlor epoksidi hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "151"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q16",
+   "question_i18n": {
+    "uz": "Fozalonning suyuqlanish harorati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "108 °C",
+     "112,8 °C",
+     "225 °C",
+     "47-48 °C"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Sof fozalon chesnok hidli kristall modda, suyuqlanish harorati 47-48 °C."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "156"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q17",
+   "question_i18n": {
+    "uz": "Fozalon uchun havodagi ruxsat etilgan miqdor qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5 mg/m3",
+     "0,05 mg/m3",
+     "50 mg/m3",
+     "108 mg/m3"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Fozalonning havodagi ruxsat etilgan miqdori 0,5 mg/m3."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "156"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q18",
+   "question_i18n": {
+    "uz": "Geksaxloran necha xil stereoizomer aralashmasidan iborat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2",
+     "8",
+     "4",
+     "16"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Geksaxloran 8 xil stereoizomerlar aralashmasidan iborat."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "157"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q19",
+   "question_i18n": {
+    "uz": "Lindan deb qaysi izomerni 99-100% saqlovchi insektitsid ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Alfa-GXTSG",
+     "Beta-GXTSG",
+     "Gamma-GXTSG",
+     "Delta-GXTSG"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "99-100% gamma-GXTSG izomerini saqlovchi insektitsid «Lindan» deb ataladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "157"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-73-toks-lab-fob-q20",
+   "question_i18n": {
+    "uz": "Fosformolibden ko‘ki reaksiyasida mineralizat ammoniy molibdat bilan qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil",
+     "Zangori",
+     "Rangsiz",
+     "Sariq"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Mineralizat ammoniy molibdati bilan sariq rang hosil qiladi; qaytaruvchi ta’sirida ko‘k rang hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "153"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

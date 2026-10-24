@@ -70,6 +70,206 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun neytral va kislotali modda (fenatsetin, salitsil kislota) tanlangan? Doskada: jihozlar. Tipik xato: ajratgich voronka kranini yog‘lamay ishlatish va sizib ketishini sezmaslik (o‘qituvchi tekshiradi)."
     },
     {
+      "title": "Dars xaritasi: ekstraksiya va tozalash",
+      "bullets": [
+        {
+          "text": "Reja: suyuqlik-suyuqlik ekstraksiyasi va ajralmani yot moddalardan tozalash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekstraksiyalanishga K, R, pH, erituvchi tabiati, ekstraksiya soni, tuzlovchi agent va harorat ta’sir qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "86"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tozalash usullari: reekstraksiya, quruq haydash, elektrodializ, elektroforez va xromatografiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "223"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Ekstraksiya va tozalash",
+        "root": "Ekstraksiya va tozalash",
+        "children": [
+          {
+            "label": "Ekstraksiya",
+            "items": [
+              "Kislotali: oksalat kislota",
+              "Ishqoriy: ammiak, pH 9-10"
+            ]
+          },
+          {
+            "label": "Omillar",
+            "items": [
+              "pH, K va R",
+              "Erituvchi, harorat, tuz"
+            ]
+          },
+          {
+            "label": "Tozalash",
+            "items": [
+              "Reekstraksiya",
+              "Quruq haydash, elektrodializ"
+            ]
+          },
+          {
+            "label": "Aniqlash",
+            "items": [
+              "YuQX, xromatografiya",
+              "Fenatsetin, salitsil kislota"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekstraksiya va tozalash qanday bog‘lanadi? Doskada: daraxt sxemasi. Tipik xato: ikkalasini bitta bosqich deb tushunish."
+    },
+    {
+      "title": "Ekstraksiya jarayoni: umumiy sxema",
+      "bullets": [
+        {
+          "text": "Peshobning pH i oksalat kislota bilan kislotali sharoitga keltirilib, 5 ml organik erituvchi bilan 15 daqiqa chayqatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvli qatlam ammiak bilan pH 9-10 ga keltirilib, yana 5 ml organik erituvchi bilan chayqatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har ikkala ekstraksiya 3 marta takrorlanadi; ajratmalar alohida bug‘latiladi, qoldiq 5 ml etil spirtida eritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Ekstraksiya sxemasi",
+        "items": [
+          {
+            "title": "Kislotali muhit",
+            "text": "Peshob + oksalat kislota"
+          },
+          {
+            "title": "1-ekstraksiya",
+            "text": "5 ml xloroform yoki efir, 15 daqiqa, 3 marta"
+          },
+          {
+            "title": "Ishqoriy muhit",
+            "text": "Suvli qatlam + ammiak, pH 9-10"
+          },
+          {
+            "title": "2-ekstraksiya",
+            "text": "5 ml xloroform yoki efir, 15 daqiqa, 3 marta"
+          },
+          {
+            "title": "Bug‘latish",
+            "text": "Ajratmalar xona haroratida alohida bug‘latiladi"
+          },
+          {
+            "title": "Tahlil",
+            "text": "Qoldiq 5 ml etil spirtida, fenatsetin/salitsil k-ta"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ikki marta alohida ajratma olinadi? Doskada: 6 qadam. Tipik xato: ajratmalarni aralashtirish."
+    },
+    {
+      "title": "Ekstraksiya: asosiy qiymatlar",
+      "bullets": [
+        {
+          "text": "Organik erituvchi hajmi 5 ml (xloroform yoki dietil efiri), chayqatish 15 daqiqa.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har bir bosqich 3 marta takrorlanadi; ishqoriy bosqichda pH 9-10.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qoldiq 5 ml etil spirtida eritiladi; reekstraksiyada pH 13 va pH 1 ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "223"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Ekstraksiya sonlari",
+        "items": [
+          {
+            "label": "Organik erituvchi",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "Chayqatish",
+            "value": "15",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Takrorlash",
+            "value": "3",
+            "unit": "marta"
+          },
+          {
+            "label": "Ishqoriy bosqich",
+            "value": "9-10",
+            "unit": "pH"
+          },
+          {
+            "label": "Etil spirti",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "Reekstraksiya",
+            "value": "13 / 1",
+            "unit": "pH"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi qiymat qaysi bosqichga tegishli? Doskada: qiymatlar. Tipik xato: pH 9-10 ni pH 13 bilan aralashtirish."
+    },
+    {
       "title": "1-bosqich: kislotali ekstraksiya",
       "bullets": [
         {
@@ -234,7 +434,18 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Organik kislota va pH",
+        "reagents": [
+          "R-COOH (molekula)"
+        ],
+        "conditions": "Ishqoriy tomon: dissotsiyalanish ortadi",
+        "products": [
+          "R-COO⁻ + H⁺"
+        ],
+        "observation": "Kislotali muhitda ekstraksiya ortadi, ishqoriyda pasayadi"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: R-COOH ⇌ R-COO- + H+ muvozanatini kislota va ishqor qo‘shganda tushuntiring. Doskada: muvozanat tenglamasi. Tipik xato: kislota qo‘shilganda dissotsiyalanish ortadi deb o‘ylash."
     },
     {
@@ -277,8 +488,186 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Asoslar: kislotali va ishqoriy muhit",
+        "columns": [
+          {
+            "title": "Kislotali muhit",
+            "items": [
+              "Ionlar hosil bo‘ladi (AlK·H⁺)",
+              "Suvli qatlamda qoladi"
+            ]
+          },
+          {
+            "title": "Ishqoriy muhit",
+            "items": [
+              "Dissotsiyalanmagan asos",
+              "Tez solvatlanib organik qatlamga o‘tadi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun alkaloidlar kislotali suvli qatlamda qoladi? Doskada: AlK.HX ⇌ AlK.H+ + X-. Tipik xato: kislotali xloroform qatlamida alkaloidni qidirish."
+    },
+    {
+      "title": "Suyuq alkaloidlarni ajratish",
+      "bullets": [
+        {
+          "text": "Suyuq alkaloidlarga anabazin, nikotin, paxikarpin, koniin va arekolin kiradi; ular asos holida yog‘simon, uchuvchan suyuqlik.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asoslari organik erituvchilarda yaxshi eriydi va suv bug‘i bilan azeotrop aralashma holida haydaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishqoriy sharoitda suv bug‘i bilan haydab, distillyat ishqoriy muhitga keltirilib, xloroform bilan ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Suyuq alkaloidlarni ajratish",
+        "nodes": [
+          "Biologik ob’ekt, ishqoriy muhit",
+          "Suv bug‘i bilan haydash",
+          "Distillyat ishqoriy muhitga keltiriladi",
+          "Xloroform bilan ekstraksiya"
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega suyuq alkaloidlar haydaladi? Doskada: sxema. Tipik xato: suyuq alkaloidlarni kristall dorivor moddalar kabi ajratish."
+    },
+    {
+      "title": "Kristall dorivor moddalarni ajratish",
+      "bullets": [
+        {
+          "text": "Barbituratlar, alkaloidlar va sintetik birikmalar asosan kristall dorivor moddalar bo‘lib, nordonlashtirilgan suv va spirt bilan ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kitobga ko‘ra, kislotali sharoitda ular molekuladagi azot atomi hisobiga tuzlar hosil qilib, suvli va spirtli eritmaga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuning uchun ularni ajratishda suvli eritmadan organik erituvchilar bilan ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kristall moddalar",
+        "nodes": [
+          "Kristall dorivor moddalar",
+          "Nordonlashtirilgan suv yoki spirt",
+          "Kislotali muhitda tuz hosil bo‘ladi",
+          "Suvli/spirtli eritmaga o‘tadi",
+          "Organik erituvchi bilan ekstraksiya"
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega erituvchilar bilan ekstraksiya qilinadi? Doskada: sxema. Tipik xato: barcha moddalarni bir xil muhitda ekstraksiyalash."
+    },
+    {
+      "title": "Stas-Otto: nordonlashtirilgan spirt usuli",
+      "bullets": [
+        {
+          "text": "Nordonlashtirilgan spirt usulini 1851 yilda belgiyalik olim J.S.Stas alkaloidlarni sud-kimyo ob’ektlaridan ajratish uchun taklif etgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1856 yilda F.Otto spirtli ajralmani tozalashni taklif etdi; usul Stas-Otto usuli deb yuritila boshladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Biomaterial oksalat kislotasi bilan nordonlashtirilgan etil spirtida bir necha marta bo‘ktirilib, 1 sutkaga qoldiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamchiligi: uzoq vaqt talab qiladi, sezgirligi past, qimmat spirt kerak; qulayligi: chirigan ob’ektdan ham ajratish mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "Stas-Otto usuli",
+        "items": [
+          {
+            "title": "Nordon spirt bilan bo‘ktirish",
+            "text": "Oksalat kislotali etil spirti; 1 sutkaga qoldiriladi"
+          },
+          {
+            "title": "Bug‘latish",
+            "text": "Spirtli eritmalar birlashtirilib, 35 °C da oz miqdor qolguncha"
+          },
+          {
+            "title": "Oqsillarni cho‘ktirish",
+            "text": "Sirop holidagi ajralmaga 96% etil spirti qo‘shiladi"
+          },
+          {
+            "title": "Efir bilan tozalash",
+            "text": "Suyultirilib, dietil efiri bilan 3 marta; efir qatlam tashlanadi"
+          },
+          {
+            "title": "Ishqoriy muhit",
+            "text": "Ammiak yoki natriy bikarbonat bilan"
+          },
+          {
+            "title": "Efir bilan ekstraksiya",
+            "text": "3 marta ekstraksiya; ajralmadan alkaloidlar tekshiriladi"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun spirt usulida emulsiya deyarli hosil bo‘lmaydi? Doskada: 6 qadamli sxema. Tipik xato: Stas (1851) va Otto (1856) yillarini almashtirish."
     },
     {
       "title": "Amfoter birikmalar ekstraksiyasi",
@@ -311,7 +700,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Amfoter birikmalar",
+        "root": "Amfoter birikmalar",
+        "children": [
+          {
+            "label": "Amin + fenol guruhi",
+            "items": [
+              "Morfin",
+              "Apomorfin, salsolin"
+            ]
+          },
+          {
+            "label": "Amin + karboksil guruhi",
+            "items": [
+              "Ekgonin",
+              "Aminokislotalar"
+            ]
+          },
+          {
+            "label": "Molekulyar holat",
+            "items": [
+              "Erituvchi bilan yaxshi ekstraksiya"
+            ]
+          },
+          {
+            "label": "Ionlar",
+            "items": [
+              "Suv bilan gidratlanadi",
+              "Ekstraksiyalanmaydi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun amfoter moddalar uchun optimal pH tanlash qiyin? Doskada: morfin, ekgonin. Tipik xato: amfoter moddani oddiy asos kabi ishqorda ajratishga urinish."
     },
     {
@@ -354,7 +776,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Moddalar va muhit",
+        "columns": [
+          {
+            "title": "Kislotali moddalar",
+            "items": [
+              "Barbituratlar, organik kislotalar",
+              "Kislotali muhitda ekstraksiya"
+            ]
+          },
+          {
+            "title": "Asosli moddalar",
+            "items": [
+              "Alkaloid, sintetik azotli",
+              "Ishqoriy muhitda ekstraksiya"
+            ]
+          },
+          {
+            "title": "Neytral moddalar",
+            "items": [
+              "Antifibrin, fenatsetin",
+              "Har qanday muhitda yaxshi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: oltin qoida: kislota-kislotali, asos-ishqoriy. Doskada: 3 guruh (kislotali, asosli, neytral). Tipik xato: neytral moddalar uchun pH ni qat’iy deb hisoblash."
     },
     {
@@ -394,11 +842,11 @@
           ],
           [
             "Corg, Csuv",
-            "organik erituvchi va suvdagi konsentratsiya"
+            "organik qatlam va suvdagi konsentratsiya"
           ],
           [
             "A",
-            "organik erituvchida ekstraksiyalangan miqdor"
+            "organik qatlamdagi miqdor"
           ],
           [
             "N",
@@ -439,8 +887,622 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Omil va ta’siri",
+        "header": [
+          "Omil",
+          "Ta’siri"
+        ],
+        "rows": [
+          [
+            "pH-muhit",
+            "Ionlanish darajasi o‘zgaradi"
+          ],
+          [
+            "Taqsimlanish koeffitsienti",
+            "K katta — ko‘p modda o‘tadi"
+          ],
+          [
+            "Harorat",
+            "K va dissotsiatsiya o‘zgaradi"
+          ],
+          [
+            "Tuzlovchi agent",
+            "Eruvchanlik o‘zgaradi"
+          ],
+          [
+            "Organik erituvchi",
+            "Ekstraksiya darajasiga ta’sir"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun haroratni ekstraksiya vaqtida o‘zgarmas ushlash kerak? Doskada: 5 omil. Tipik xato: omillardan faqat pH ni eslab qolish."
+    },
+    {
+      "title": "Ekstraksiya omillari (ma’ruza)",
+      "bullets": [
+        {
+          "text": "Moddaning suvli eritmadan organik qatlamga to‘liq o‘tishiga taqsimlanish koeffitsienti va ekstraksiyalanish darajasi ta’sir qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "86"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuningdek pH-sharoit, organik erituvchi tabiati, ekstraksiya soni, tuzlovchi agentlar (elektrolitlar) va harorat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "86"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekstraksiya soni tajriba yo‘li bilan topiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Ekstraksiyaga ta’sir qiluvchi omillar",
+        "root": "Ekstraksiya omillari",
+        "children": [
+          {
+            "label": "K va R",
+            "items": [
+              "K = Corg / Csuv",
+              "R = A / N · 100%"
+            ]
+          },
+          {
+            "label": "pH-sharoit",
+            "items": [
+              "Ionlanish darajasi"
+            ]
+          },
+          {
+            "label": "Organik erituvchi",
+            "items": [
+              "Tabiati, xarakteri"
+            ]
+          },
+          {
+            "label": "Ekstraksiya soni",
+            "items": [
+              "Tajriba yo‘li bilan topiladi"
+            ]
+          },
+          {
+            "label": "Tuzlovchi agent",
+            "items": [
+              "Elektrolitlar"
+            ]
+          },
+          {
+            "label": "Harorat",
+            "items": [
+              "K va dissotsiatsiya o‘zgaradi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi omil eng muhim? Doskada: daraxt sxemasi. Tipik xato: faqat pH ni eslab qolish."
+    },
+    {
+      "title": "Yot moddalar va tozalash usullari",
+      "bullets": [
+        {
+          "text": "Ekstraksiyalangan ajralmada oqsillar, aminokislotalar, yog‘ va lipidlar kabi yot moddalar bo‘lib, tahlilga halaqit beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yot moddalar reaktivlar bilan tekshiriluvchi modda kabi mahsulot berishi va miqdor tahliliga salbiy ta’sir qilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tozalash usullari: suzish, filtrlash, sentrifugalash, cho‘ktirish va qayta ekstraksiya; asos — fizik-kimyoviy xossalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Tozalash usullari",
+        "root": "Tozalash usullari",
+        "children": [
+          {
+            "label": "Mexanik",
+            "items": [
+              "Suzish (paxta, bint)",
+              "Filtrlash",
+              "Sentrifugalash"
+            ]
+          },
+          {
+            "label": "Cho‘ktirish",
+            "items": [
+              "Kislotalar, isitish",
+              "Spirt, aseton, tuz"
+            ]
+          },
+          {
+            "label": "Qayta ekstraksiya",
+            "items": [
+              "Kislota va ishqor bilan"
+            ]
+          },
+          {
+            "label": "Fizik-kimyoviy",
+            "items": [
+              "Quruq haydash",
+              "Elektrodializ, elektroforez",
+              "Xromatografiya"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun ajralma tozalanadi? Doskada: daraxt sxemasi. Tipik xato: tozalash usulini modda xossasiga qaramasdan tanlash."
+    },
+    {
+      "title": "Suzish, filtrlash va sentrifugalash",
+      "bullets": [
+        {
+          "text": "Suzish paxta yoki bint bilan yirik mexanik qo‘shilmalarni ajratadi, ammo aniqlanuvchi modda adsorbsiyalanib yo‘qolishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Filtrlash yirik va mayda qo‘shilmalarni ajratadi, ammo filtr qog‘ozi ham moddani adsorbsiyalab yo‘qotishga sabab bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sentrifugalash apparat yordamida qo‘shilmalarni ajratadi; shu sababli u ancha qulay hisoblanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Mexanik tozalash",
+        "columns": [
+          {
+            "title": "Suzish",
+            "items": [
+              "Paxta yoki bint",
+              "Yirik qo‘shilmalar",
+              "Modda adsorbsiyalanadi"
+            ]
+          },
+          {
+            "title": "Filtrlash",
+            "items": [
+              "Filtr qog‘ozi",
+              "Yirik va mayda qo‘shilmalar",
+              "Modda adsorbsiyalanadi"
+            ]
+          },
+          {
+            "title": "Sentrifugalash",
+            "items": [
+              "Sentrifuga apparati",
+              "Yirik va mayda qo‘shilmalar",
+              "Ancha qulay"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usulda yo‘qotish kam? Doskada: taqqoslash. Tipik xato: filtrni sentrifugalashdan afzal deb hisoblash."
+    },
+    {
+      "title": "Oqsillarni cho‘ktirish",
+      "bullets": [
+        {
+          "text": "Oqsillar va qondagi halaqit beruvchi moddalar uchxlorsirka, volfram, metafosfat kislotalari va ayrim geteropoli birikmalar bilan cho‘ktiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eritmani taxminan 40 °C gacha isitish bilan ko‘p oqsillarni cho‘ktirish mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Absolyut etil va metil spirti yoki aseton ta’sirida, shuningdek to‘yingan tuz eritmasi bilan tuzlash usulida ham oqsillar cho‘kadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Oqsillarni cho‘ktirish",
+        "header": [
+          "Usul",
+          "Cho‘ktiruvchi"
+        ],
+        "rows": [
+          [
+            "Kislotalar",
+            "Uchxlorsirka, volfram, metafosfat"
+          ],
+          [
+            "Isitish",
+            "Taxminan 40 °C gacha"
+          ],
+          [
+            "Spirt, aseton",
+            "Absolyut etil, metil spirti"
+          ],
+          [
+            "Tuzlash",
+            "To‘yingan tuz eritmasi"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usul eng yumshoq? Doskada: jadval. Tipik xato: isitish haroratini oshirib yuborish."
+    },
+    {
+      "title": "Reekstraksiyada pH nazorati",
+      "bullets": [
+        {
+          "text": "Qayta ekstraksiya bilan tozalashda pH muhiti aniq bo‘lishi zarur.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "pH ga ahamiyat berilmasa, tekshiriluvchi modda yo‘qotilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu usulda neytral va kuchsiz asos xossali moddalarni tozalab bo‘lmaydi, chunki ular yo‘qotib qo‘yiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: pH ni qaysi asbob bilan nazorat qilasiz? Doskada: 3 qoida. Tipik xato: pH ni ‘taxminan’ olish."
+    },
+    {
+      "title": "Kislotali va asosli moddalarni tozalash",
+      "bullets": [
+        {
+          "text": "Kislotali moddalar (organik kislotalar, barbituratlar): ishqor (pH 13) bilan ekstraksiya, so‘ng kislota (pH 1) bilan reekstraksiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "223"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asosli moddalar (alkaloidlar, sintetik analoglar): kislota (pH 1) bilan, so‘ng ishqor (pH 13) bilan reekstraksiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "223"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asosli usulda kuchsiz asoslar (purin hosilalari, narkotin, promedol, antipirin, amidopirin) yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "223"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Reekstraksiya: ikki yo‘nalish",
+        "columns": [
+          {
+            "title": "Kislotali moddalar",
+            "items": [
+              "Qoldiq + ishqor (pH 13)",
+              "Ishqoriy suvli qatlam kerak",
+              "Kislota (pH 1) — reekstraksiya",
+              "Neytral, kuchsiz asos yo‘qoladi"
+            ]
+          },
+          {
+            "title": "Asosli moddalar",
+            "items": [
+              "Qoldiq + kislota (pH 1)",
+              "Kislotali suvli qatlam kerak",
+              "Ishqor (pH 13) — reekstraksiya",
+              "Kuchsiz asoslar yo‘qoladi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: pH tartibi nima uchun teskari? Doskada: taqqoslash. Tipik xato: pH 1 va pH 13 ni almashtirish."
+    },
+    {
+      "title": "Ekstraksiya va tozalash: farqlari",
+      "bullets": [
+        {
+          "text": "Ekstraksiya peshob kabi suyuqlikdan zaharli moddani organik erituvchi qatlamiga o‘tkazadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ajratilgan qoldiqda yot moddalar bo‘lgani uchun ekstrakt tozalanadi; tozalashning umumiy aniq usuli yo‘q.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usul modda fizik-kimyoviy xossalariga qarab tanlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "222"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Ekstraksiya va tozalash",
+        "columns": [
+          {
+            "title": "Ekstraksiya",
+            "items": [
+              "Kislotali va ishqoriy muhit",
+              "5 ml erituvchi, 15 daqiqa",
+              "3 marta takrorlanadi"
+            ]
+          },
+          {
+            "title": "Tozalash",
+            "items": [
+              "Yot moddalarni yo‘qotadi",
+              "Umumiy aniq usul yo‘q",
+              "Xossalarga qarab tanlanadi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkalasi nima uchun alohida bosqich? Doskada: taqqoslash. Tipik xato: tozalashni ixtiyoriy deb hisoblash."
+    },
+    {
+      "title": "Ikki xloroformli ajralma",
+      "bullets": [
+        {
+          "text": "Qaysi usul qo‘llanishidan qat’i nazar, kimyogar biomaterialdan ajratilgan ikki xloroformli eritma bilan tekshiruv o‘tkazadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "90"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislotali ajralma barbituratlar, neytral moddalar (fenatsetin), organik kislotalar (salitsil, pikrin) va kuchsiz asos xossali alkaloidlar uchun tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishqoriy sharoitda olingan ajralmadan alkaloidlar va ularning sintetik analoglari tekshiriladi; erituvchi ko‘proq xloroform.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Ikki ajralma",
+        "columns": [
+          {
+            "title": "Kislotali ajralma",
+            "items": [
+              "Barbituratlar",
+              "Fenatsetin (neytral)",
+              "Salitsil, pikrin kislota",
+              "Kofein, teobromin, strixnin"
+            ]
+          },
+          {
+            "title": "Ishqoriy ajralma",
+            "items": [
+              "Alkaloidlar",
+              "Sintetik analoglar"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi modda qaysi ajralmada topiladi? Doskada: taqqoslash. Tipik xato: fenatsetinni faqat ishqoriy ajralmada qidirish."
+    },
+    {
+      "title": "To‘liq tahlildagi 28 modda",
+      "bullets": [
+        {
+          "text": "Kimyogar-ekspert to‘liq kimyo-toksikologik tahlilda bu guruhdan 28 ta moddaga tekshiruv o‘tkazishi zarur.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "93"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ular 7 ta barbiturat, 14 ta alkaloid va 7 ta azot saqlovchi sintetik birikmadan iborat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "93"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Azot saqlovchi sintetik birikmalar: promedol, aminazin, diprazin, tizertsin, majeptil, triftazin, imizin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "94"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Tekshiriladigan moddalar",
+        "items": [
+          {
+            "label": "Barbituratlar",
+            "value": "7",
+            "unit": "ta"
+          },
+          {
+            "label": "Alkaloidlar",
+            "value": "14",
+            "unit": "ta"
+          },
+          {
+            "label": "Azotli sintetik",
+            "value": "7",
+            "unit": "ta"
+          },
+          {
+            "label": "Jami",
+            "value": "28",
+            "unit": "ta"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bu guruhda 28 modda? Doskada: qiymatlar. Tipik xato: 7+14+7 yig‘indisini noto‘g‘ri hisoblash."
+    },
+    {
+      "title": "Ish ob’ekti: fenatsetin va salitsil kislota",
+      "bullets": [
+        {
+          "text": "Fenatsetin oq kristall kukun, suvda qiyin, organik erituvchilarda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Salitsil kislota kislotali xossali; ob’ektdan qutbli erituvchilar yordamida kislotali muhitda ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "98"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenatsetin kabi neytral moddalar kislotali, neytral va ishqoriy sharoitda ham yaxshi ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "228"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Ikki ish ob’ekti",
+        "columns": [
+          {
+            "title": "Fenatsetin",
+            "items": [
+              "Neytral modda",
+              "Suvda qiyin eriydi",
+              "Har qanday pH da ekstraksiya"
+            ]
+          },
+          {
+            "title": "Salitsil kislota",
+            "items": [
+              "Kislotali xossa",
+              "Kislotali muhitda ajratiladi",
+              "Qutbli erituvchilar bilan"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega aynan shu ikki modda tanlangan? Doskada: taqqoslash. Tipik xato: fenatsetinni asos deb hisoblash."
     },
     {
       "title": "Elektrolitlar va tuzlanish",
@@ -482,7 +1544,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Tuzlanish",
+        "nodes": [
+          "Elektrolit qo‘shiladi",
+          "Suvda eruvchanlik o‘zgaradi",
+          "Taqsimlanish koeffitsienti ortadi",
+          "Organik qatlamga ekstraksiya kuchayadi"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tuzlash agentiga misol keltiring. Doskada: ’tuzlash -> K ortadi’. Tipik xato: kitobdagi ’tuzlanishni kamayishi/ortishi’ atamalarini teskari tushunish (aslida eruvchanlikning pasayishi)."
     },
     {
@@ -516,7 +1587,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Ajralma va yot moddalar",
+        "nodes": [
+          "Kislotali va ishqoriy ajralma",
+          "Yot moddalar ham bor",
+          "Tahlilga halaqit beradi",
+          "Tozalash (usul xossaga qarab)",
+          "Chinlik va miqdor tahlili"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: yot modda qanday ’soxta musbat’ natija beradi? Doskada: 3 sabab. Tipik xato: tozalashni ixtiyoriy deb hisoblash; kitob uni majburiy bosqich deb ko‘rsatadi."
     },
     {
@@ -622,7 +1703,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Quruq haydash va elektrodializ",
+        "columns": [
+          {
+            "title": "Quruq haydash",
+            "items": [
+              "Issiqlikda sublimatsiya",
+              "Barbituratlar, benzoy va salitsil kislota",
+              "Kofein"
+            ]
+          },
+          {
+            "title": "Elektrodializ",
+            "items": [
+              "Strixnin, paxikarpin",
+              "Tuzlar katodga siljiydi",
+              "Katod suyuqligi ekstraksiyalanadi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sublimatsiyalanadigan moddalarni sanang. Doskada: ’vozgonka: barbiturat, benzoy, salitsil, kofein’. Tipik xato: elektrodializda moddalar anodga siljiydi deb yozish (kitob: katodga)."
     },
     {
@@ -780,7 +1882,7 @@
             "reekstraksiya (pH 1, pH 13)"
           ],
           [
-            "Barbiturat, benzoy/salitsil kislota, kofein",
+            "Barbiturat, benzoy/salitsil k-ta, kofein",
             "quruq haydash"
           ],
           [
@@ -889,12 +1991,12 @@
     {
       "question": "Ishqoriy ekstraksiyada suvli qatlam pH qiymati qanday bo‘ladi?",
       "options": [
-        "1-2",
         "5-6",
-        "9-10",
-        "13-14"
+        "13-14",
+        "1-2",
+        "9-10"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Suvli qatlam ammiak bilan pH 9-10 ga keltiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -905,12 +2007,12 @@
     {
       "question": "Har bir ekstraksiya necha marta takrorlanadi?",
       "options": [
-        "1",
-        "2",
         "3",
-        "5"
+        "5",
+        "1",
+        "2"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Jarayon 3 marta takrorlanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -921,12 +2023,12 @@
     {
       "question": "Ekstraksiyalangan quruq qoldiq nimada eritiladi?",
       "options": [
-        "5 ml etil spirtida",
-        "10 ml suvda",
         "5 ml efirda",
-        "20 ml xloroformda"
+        "10 ml suvda",
+        "20 ml xloroformda",
+        "5 ml etil spirtida"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Quruq qoldiq 5 ml etil spirtida eritiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -937,12 +2039,12 @@
     {
       "question": "Taqsimlanish koeffitsienti qaysi formula bilan ifodalanadi?",
       "options": [
+        "K = N / A",
         "K = Csuv / Corg",
-        "K = Corg / Csuv",
         "K = A / N",
-        "K = N / A"
+        "K = Corg / Csuv"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "K = Corg / Csuv; K katta bo‘lsa, modda organik qatlamga ko‘proq o‘tadi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -954,11 +2056,11 @@
       "question": "Quyidagilardan qaysi biri kislotali muhitda xloroform qatlamiga o‘tadi?",
       "options": [
         "Alkaloid tuzi",
+        "Aminokislota",
         "Barbituratlar",
-        "Ionlangan asos",
-        "Aminokislota"
+        "Ionlangan asos"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Barbituratlar va boshqa kislotali moddalar kislotali sharoitda yaxshi ekstraksiyalanadi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -970,11 +2072,11 @@
       "question": "Reekstraksiya bilan tozalashda kuchsiz asosli moddalarga nima bo‘ladi?",
       "options": [
         "Yaxshi tozalanadi",
-        "Yo‘qotib qo‘yiladi",
         "Cho‘kmaga tushadi",
+        "Yo‘qotib qo‘yiladi",
         "Gidrolizlanadi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Kuchsiz asoslar (purin hosilalari, narkotin, promedol, antipirin, amidopirin) yo‘qotib qo‘yiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -986,11 +2088,11 @@
       "question": "Elektrodializda alkaloid tuzlari qaysi elektrodga siljiydi?",
       "options": [
         "Anodga",
+        "Hech qaysisiga",
         "Katodga",
-        "Ikkalasiga",
-        "Hech qaysisiga"
+        "Ikkalasiga"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Katod suyuqligi ekstraksiyalab tahlil uchun ishlatiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1001,12 +2103,12 @@
     {
       "question": "Barbituratlar YuQX da qaysi harakatlanuvchi faza bilan tozalanadi?",
       "options": [
-        "Xloroform-n-butanol-25% NH4OH (70:40:5)",
-        "Xloroform-aseton-dietilamin (50:30:2)",
         "Efir-aseton-NH4OH (40:20:1)",
-        "Geksan-aseton (4:1)"
+        "Xloroform-aseton-dietilamin (50:30:2)",
+        "Geksan-aseton (4:1)",
+        "Xloroform-n-butanol-25% NH4OH (70:40:5)"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Barbituratlar uchun xloroform-n-butanol-25% NH4OH (70:40:5) tizimi ishlatiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1017,17 +2119,177 @@
     {
       "question": "Ekstraksiya darajasi R qanday ifodalanadi?",
       "options": [
+        "R = Corg / Csuv",
         "R = A / N · 100%",
         "R = N / A",
-        "R = Corg / Csuv",
         "R = A + N"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "A - organik erituvchida ekstraksiyalangan modda, N - suvdagi umumiy miqdor.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
         "page": "228"
+      }
+    },
+    {
+      "question": "Ekstraksiyada har bir bosqichda qancha organik erituvchi qo‘shiladi?",
+      "options": [
+        "50 ml",
+        "1 ml",
+        "100 ml",
+        "5 ml"
+      ],
+      "correct_index": 3,
+      "explanation": "Peshobga 5 ml organik erituvchi (xloroform yoki dietil efiri) qo‘shilib chayqatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "222"
+      }
+    },
+    {
+      "question": "Har bir chayqatish qancha davom etadi?",
+      "options": [
+        "15 soniya",
+        "15 daqiqa",
+        "2 soat",
+        "1 kun"
+      ],
+      "correct_index": 1,
+      "explanation": "Organik erituvchi qo‘shilib, 15 daqiqa chayqatib turiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "222"
+      }
+    },
+    {
+      "question": "Peshobning suvli qatlami ishqoriy sharoitga qaysi modda yordamida keltiriladi?",
+      "options": [
+        "Ammiak",
+        "Natriy sulfat",
+        "Oksalat kislota",
+        "Sirka kislota"
+      ],
+      "correct_index": 0,
+      "explanation": "Suvli qatlam ammiak yordamida ishqoriy sharoitga (pH=9-10) keltiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "222"
+      }
+    },
+    {
+      "question": "Alkaloidlar kislotali muhitda qayerda qoladi?",
+      "options": [
+        "Bug‘ fazasida",
+        "Suvli eritmada",
+        "Cho‘kmada",
+        "Xloroform qatlamida"
+      ],
+      "correct_index": 1,
+      "explanation": "Alkaloid va azot saqlovchi birikmalar kislotali muhitda organik qatlamga o‘tmaydi, suvli eritmada saqlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "87"
+      }
+    },
+    {
+      "question": "Qaysi moddalar quruq haydash (vozgonka) bilan tozalanadi?",
+      "options": [
+        "Morfin va ekgonin",
+        "Oqsillar",
+        "Barbituratlar, benzoy va salitsil kislotalari, kofein",
+        "Strixnin va paxikarpin"
+      ],
+      "correct_index": 2,
+      "explanation": "Issiqlikda sublimatsiyalanadigan barbituratlar, benzoy va salitsil kislotalari, kofein shu usulda tozalanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "223"
+      }
+    },
+    {
+      "question": "Ishqoriy ajralmani tozalashda alkaloidlar uchun aniqlovchi reaktiv qaysi?",
+      "options": [
+        "Dragendorf reaktivi",
+        "Temir (III) xlorid",
+        "Bromli suv",
+        "Difenilkarbazon"
+      ],
+      "correct_index": 0,
+      "explanation": "Alkaloidlar uchun YuQX da aniqlovchi reaktiv sifatida Dragendorf reaktivi qo‘llaniladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "224"
+      }
+    },
+    {
+      "question": "Paxta yoki bint bilan suzishning kamchiligi nima?",
+      "options": [
+        "Haroratni oshiradi",
+        "Aniqlanuvchi modda adsorbsiyalanib yo‘qolishi mumkin",
+        "Faqat mayda qo‘shilmalarni ajratadi",
+        "Juda sekin ishlaydi"
+      ],
+      "correct_index": 1,
+      "explanation": "Paxta yoki bint aniqlanuvchi moddani adsorbsiyalashi sababli moddalar yo‘qotilishi mumkin; sentrifugalash qulayroq.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "88"
+      }
+    },
+    {
+      "question": "Oqsillarni cho‘ktirish uchun eritma taxminan qaysi haroratgacha isitiladi?",
+      "options": [
+        "200 °C",
+        "4 °C",
+        "40 °C",
+        "100 °C"
+      ],
+      "correct_index": 2,
+      "explanation": "Eritma haroratini taxminan 40 °C gacha isitish bilan ko‘p oqsillarni cho‘ktirish mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "89"
+      }
+    },
+    {
+      "question": "To‘liq kimyo-toksikologik tahlilda barbituratlar, alkaloidlar va azotli sintetik birikmalardan jami nechta moddaga tekshiriladi?",
+      "options": [
+        "67",
+        "28",
+        "7",
+        "14"
+      ],
+      "correct_index": 1,
+      "explanation": "Ularga 7 ta barbiturat, 14 ta alkaloid va 7 ta azot saqlovchi sintetik birikma kiradi (jami 28).",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "93"
+      }
+    },
+    {
+      "question": "Ekstraksiya soni qanday topiladi?",
+      "options": [
+        "Tajriba yo‘li bilan",
+        "Qonun bilan belgilanadi",
+        "Har doim 1 ga teng",
+        "Formula bo‘yicha hisoblab"
+      ],
+      "correct_index": 0,
+      "explanation": "Aksariyat zaharli moddalar uchun ekstraksiya soni tajriba yo‘li bilan topiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "88"
       }
     }
   ],
@@ -1070,7 +2332,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 222-224"
+      "pages": "b. 86-94, 96-98, 222-224"
     },
     {
       "author": "Yuldashev Z.A., Nurmatova M.I.",

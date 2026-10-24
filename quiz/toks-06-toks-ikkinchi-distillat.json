@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-06-toks-ikkinchi-distillat",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Ikkinchi distillat: formaldegid, sirka kislota, aseton, fenol, krezollar, anilin, nitrobenzol",
+  "ru": "Ikkinchi distillat: formaldegid, sirka kislota, aseton, fenol, krezollar, anilin, nitrobenzol",
+  "en": "Ikkinchi distillat: formaldegid, sirka kislota, aseton, fenol, krezollar, anilin, nitrobenzol"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q01",
+   "question_i18n": {
+    "uz": "Formalin nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sirka kislotaning 96% li eritmasi",
+     "Formaldegidning 36,5-37,5% li suvli eritmasi",
+     "Sof gazsimon formaldegid",
+     "Fenolning 3% li eritmasi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Formaldegid gaz bo‘lib, uning suvdagi 36,5-37,5% eritmasi formalin deb ataladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "30"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q02",
+   "question_i18n": {
+    "uz": "Nima uchun distillyatda formaldegid kam miqdorda aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "U hech qachon haydalmaydi",
+     "U suvda erimaydi",
+     "Suvli eritmasidagi gidrat (metilenglikol) qiyin haydaladi",
+     "U kislotali muhitda parchalanadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Formaldegid suvli eritmasida gidrat (metilenglikol) hosil qiladi va qiyin haydaladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "30"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q03",
+   "question_i18n": {
+    "uz": "Formaldegidni kodein va konsentrlangan sulfat kislota bilan aniqlashda qaysi rang hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yashil",
+     "Sariq",
+     "Ko‘k-pushti",
+     "Rangsiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Distillyat, kons. H2SO4 va kodein (morfin) kristali bilan ko‘k-pushti rang hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "30"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q04",
+   "question_i18n": {
+    "uz": "Sirka kislotaning o‘limga olib keluvchi miqdori kitobda qancha deb berilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2-15 g",
+     "50-100 g",
+     "200-300 g sof kislota",
+     "0,1-0,5 g"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Sirka kislotaning o‘limga olib keluvchi miqdori 2-15 g; bu 10-20 ml sirka essensiyasi yoki 200-300 ml iste’mol sirkasiga teng."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "31"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q05",
+   "question_i18n": {
+    "uz": "Organizmda hosil qilgan sirka kislota tuzlarini aniqlash uchun ob’ekt qanday tayyorlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nordonlashtirilmaydi",
+     "Ishqor bilan pH 12 gacha",
+     "Faqat suv bilan suyultiriladi",
+     "10% sulfat kislota bilan muhit 2,5-3,0 bo‘lguncha nordonlashtiriladi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Bog‘langan sirka kislota uchun ob’ekt muhiti 2,5-3,0 bo‘lguncha 10% sulfat kislota bilan nordonlashtirilib haydaladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "31"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q06",
+   "question_i18n": {
+    "uz": "Sirka kislotaning temir (III) xlorid bilan reaksiyasi qanday natija beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rang bermaydi",
+     "Ko‘k cho‘kma",
+     "Yashil rang",
+     "Qizil rang, qizdirilsa qo‘ng‘ir rangga o‘tadi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Neytrallangan qoldiqqa FeCl3 qo‘shilsa qizil mahsulot hosil bo‘ladi, qizdirilsa qo‘ng‘ir rangga o‘tadi (sezgirlik 0,5 mg)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "32"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q07",
+   "question_i18n": {
+    "uz": "Aseton uchun yodoform reaksiyasi haqida qaysi fikr to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sezgirligi past",
+     "Faqat aseton beradi",
+     "Faqat kislotali muhitda boradi",
+     "Juda sezgir, lekin aseton uchun xarakterli emas"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Reaksiya juda sezgir, lekin xususiy emas: etil spirti va sut kislota ham beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "33"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q08",
+   "question_i18n": {
+    "uz": "Diabetda peshobdagi aseton miqdori qanchagacha yetadi (normada 40 mg %)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "300-400 mg % gacha",
+     "1000 mg % dan ortiq",
+     "100 mg % gacha",
+     "50 mg % gacha"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Diabet bilan og‘rigan bemor peshobida aseton miqdori 300-400 mg % gacha yetadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "33"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q09",
+   "question_i18n": {
+    "uz": "o-Nitrobenzaldegid bilan aseton bo‘lganda qanday rang hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ko‘k (indigo)",
+     "Binafsha",
+     "Sariq-qo‘ng‘ir",
+     "Qizil"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "o-Nitrobenzaldegidning 2 n ishqordagi eritmasi bilan aseton ko‘k rang (indigo) beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "34"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q10",
+   "question_i18n": {
+    "uz": "Fenolni distillyatdan ajratishda qaysi tartib qo‘llaniladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat bug‘latish",
+     "Kislotali muhitda xloroform bilan 1 marta",
+     "Haydalmaydi",
+     "NaHCO3 qo‘shib ishqoriy sharoitgacha, 3 marta efir bilan ekstraksiya"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Distillyatga ishqoriy sharoitgacha NaHCO3 qo‘shiladi va efir bilan 3 marta (10 ml dan) ekstraksiya qilinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "35"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q11",
+   "question_i18n": {
+    "uz": "Fenol bromli suv bilan nima hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil eritma",
+     "Oq cho‘kma (uchbromfenol)",
+     "Gaz ajraladi",
+     "Ko‘k cho‘kma"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Fenol bromli suv bilan oq cho‘kma — uchbromfenol hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "35"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q12",
+   "question_i18n": {
+    "uz": "Metakrezolga FeCl3 qo‘shilsa qanday rang hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil-binafsha",
+     "Yashil",
+     "Havo rang",
+     "Rang bo‘lmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Metakrezolga FeCl3 qo‘shilsa qizil-binafsha, parakrezolga havo rang hosil bo‘ladi; ikkalasi indofenol reaksiyasini bermaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "35"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q13",
+   "question_i18n": {
+    "uz": "Formalinning qancha miqdori o‘limga olib keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "6-9 ml",
+     "2-15 g",
+     "60-90 ml",
+     "600-900 ml"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Formalinning 60-90 ml miqdori o‘limga olib keladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "30"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q14",
+   "question_i18n": {
+    "uz": "Formaldegidni rezortsinning ishqoriy eritmasi bilan qizdirganda qanday rang hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Zangori",
+     "Ko‘k",
+     "Sariq",
+     "Qizil"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Distillyatga rezortsinning ishqoriy eritmasi qo‘shib qizdirilsa, qizil rang hosil bo‘ladi; reaksiya manfiy ahamiyatga ega."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "30"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q15",
+   "question_i18n": {
+    "uz": "Suvsiz sirka kislota qaysi haroratda qaynaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "56 °C",
+     "117-118 °C",
+     "181 °C",
+     "78 °C"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kimyoviy sof, suvsiz sirka kislota 117-118 °C da qaynaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "31"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q16",
+   "question_i18n": {
+    "uz": "Konsentrlangan sirka kislota necha foiz CH3COOH saqlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "40-80%",
+     "96%",
+     "0,1%",
+     "3-8%"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Konsentrlangan sirka kislota 96%, sirka essensiyasi 40-80%, ovqatga qo‘shiladigan sirka 3-8% CH3COOH saqlaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "31"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q17",
+   "question_i18n": {
+    "uz": "Sirka kislotaning havodagi miqdori qaysi usulda aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Neytrallash usulida",
+     "Yodometrik usulda",
+     "Argentometrik usulda",
+     "Gravimetrik usulda"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kislotaning havodagi miqdori yodometrik usul bilan, ob’ektdagi miqdori neytrallash usuli bilan aniqlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "32"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q18",
+   "question_i18n": {
+    "uz": "Aseton qaysi haroratda qaynaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "117 °C",
+     "181,4 °C",
+     "56,30 °C",
+     "25,6 °C"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kimyoviy toza aseton 56,30 °C da qaynaydi, suvdan yengil."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "32"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q19",
+   "question_i18n": {
+    "uz": "Aseton natriy nitroprussid va ishqor bilan qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ko‘k",
+     "Zangori",
+     "Qizil-binafsha",
+     "Rangsiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Aseton ishqor ishtirokida natriy nitroprussid bilan qizil-binafsha rang hosil qiladi, lekin bu reaksiya xarakterli emas."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "33"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-06-toks-ikkinchi-distillat-q20",
+   "question_i18n": {
+    "uz": "Fenol qaysi haroratda qaynaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "181,4 °C",
+     "117 °C",
+     "211 °C",
+     "56,30 °C"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Toza fenol 181,4 °C da qaynaydi va suv bug‘i bilan haydaladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "35"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

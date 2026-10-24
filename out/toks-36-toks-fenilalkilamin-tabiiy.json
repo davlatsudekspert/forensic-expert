@@ -1,1427 +1,2278 @@
 {
-  "topic": "Tabiiy fenilalkilaminlar: efedrin, efedron (metkatinon), katin, katinon, meskalin",
-  "slides": [
+ "topic": "Tabiiy fenilalkilaminlar: efedrin, efedron (metkatinon), katin, katinon, meskalin",
+ "slides": [
+  {
+   "title": "Ma’ruza rejasi va tayanch iboralar",
+   "bullets": [
     {
-      "title": "Ma’ruza rejasi va tayanch iboralar",
-      "bullets": [
-        {
-          "text": "Mavzu: tabiiy fenilalkilaminlar — efedrin, meskalin, katin va katinon; ularning narkologik ahamiyati va tahlil usullari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reja: tasnif, o‘simlik manbalari (kata, efedra, peyot), efedrin va efedron, meskalin, ajratib olish, rangli reaksiyalar va fizik-kimyoviy usullar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73-80"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tayanch so‘zlar: amfetamin hosilalari, efedrin, efedron, katin, katinon, meskalin, Reyneke tuzi, ningidrin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73-80"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega efedra o‘simligi ham dori, ham giyohvandlik vositasi manbai bo‘la oladi? Doskada: ma’ruzaning 3 o‘simligi: kata, efedra, peyot. Tipik xato: tabiiy fenilalkilaminlarni faqat sintetik moddalar bilan aralashtirish. Izoh: sillabusdagi «efedron (metkatinon)» nomi kitobda alohida bog‘lanmagan; gmt p.147 jadvalida efedrin va KMnO4 metkatinon olish uchun prekursor sifatida ko‘rsatilgan."
-    },
-    {
-      "title": "Fenilalkilaminlar guruhi",
-      "bullets": [
-        {
-          "text": "Fenilalkilaminlar aksariyat sintetik giyohvandlik vositalarining asosini tashkil qiladi va amfetamin hosilalari deb yuritiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Noqonuniy bozorda bu guruhning 20 dan ziyod moddasi muomalada; birinchi vakillari turli o‘simliklardan olingan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Keyinchalik giyohvandlik xususiyati va kuchini oshirish uchun ko‘plab yarim sintetik va sintetik hosilalari sintez qilingan (yuzdan ortiq).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega o‘simlik alkaloidlari asosida sintetik hosilalar yaratilgan? Doskada: tabiiy - yarim sintetik - sintetik zanjiri. Tipik xato: sinflanishni qat’iy chegarali deb o‘ylash: kitobda sinflanish shartli deyilgan."
-    },
-    {
-      "title": "Fenilalkilaminlar tasnifi",
-      "bullets": [
-        {
-          "text": "Shartli ravishda tabiiy va sintetik guruhlarga bo‘linadi; sintetik hosilalar ham 3 sinfga ajratiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sinflar: amino, alkil guruhi va benzol xalqasi vodorodi almashgan hosilalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73-74"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sinflanish shartli bo‘lib, moddalarni qat’iy guruhlarga bo‘lib bo‘lmaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "73"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Benzol xalqasi hosilalari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Vakillari"
-        ],
-        "rows": [
-          [
-            "Monometoksi",
-            "PMA, PMMA, 4-MTA"
-          ],
-          [
-            "Dimetoksi",
-            "DOM, DOET, DOX, DOB"
-          ],
-          [
-            "Metilendioksi",
-            "MDA, MDMA, MBDB, BDB, MDMMA"
-          ],
-          [
-            "Trimetoksi",
-            "3,4,5-trimetoksiamfetamin, meskalin"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: efedrin qaysi sinfga kiradi? Doskada: uch sinf va benzol hosilalari jadvali. Tipik xato: meskalinni sintetik hosila deb hisoblash: u peyotdan olingan tabiiy modda. Izoh: efedrin sinfi bo‘yicha kitob testi 81-betda (2-savol) berilgan, javobi kitobda yo‘q."
-    },
-    {
-      "title": "Tabiiy manbalar: uch o‘simlik",
-      "bullets": [
-        {
-          "text": "Fenilalkilaminlarning dastlabki vakillari quyidagi o‘simliklarda aniqlangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "74"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Iste’molbop kata (Catha edulis), efedra o‘ti (Herba Ephedrae) va peyot kaktusi (Lophophora williamsii).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "74"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "O‘simlik va modda",
-        "nodes": [],
-        "header": [
-          "O‘simlik",
-          "Asosiy modda"
-        ],
-        "rows": [
-          [
-            "Iste’molbop kata",
-            "katinon, katin"
-          ],
-          [
-            "Efedra o‘ti",
-            "efedrin, psevdoefedrin"
-          ],
-          [
-            "Peyot kaktusi",
-            "meskalin"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: har bir o‘simlikka bitta modda mos keltiring. Doskada: 3 o‘simlik - 3 modda. Tipik xato: psevdoefedrin va efedrinni bir xil faollikda deb hisoblash: faqat efedrin ahamiyatli (75-bet)."
-    },
-    {
-      "title": "Iste’molbop kata",
-      "bullets": [
-        {
-          "text": "Iste’molbop kata (Catha edulis) Sharqiy Afrika va Arabiston yarim orolida o‘sadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Quritilgan barglari «arab choyi» nomi ostida ma’lum; mahalliy aholi iste’mol qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Barglari tarkibida katinon va katin alkaloidlari bor; ta’sir etuvchi komponentlar miqdori 0,5 dan 2% gacha.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kata «arab choyi» deb ataladi? Doskada: o‘simlik - hudud - alkaloidlar. Tipik xato: katin va katinonni bir modda deb hisoblash."
-    },
-    {
-      "title": "Kata: saqlash va tarkib",
-      "bullets": [
-        {
-          "text": "Quritish vaqtida psixostimulyator katinon alkaloidi bug‘lanib ketadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shu sababli barglar plastik idishlarda yoki banan yaprog‘iga o‘ralgan holda tarqatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘simlikda katidin, katinin, xolin, bromidlar, yog‘ kislotalari, efir moylari va boshqa alkaloidlar ham bor.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: katinon nega yangi barglarda ko‘proq? Doskada: quritish - bug‘lanish - o‘rash. Tipik xato: quritilgan kata barg tarkibini yangi barg bilan bir xil deb o‘ylash."
-    },
-    {
-      "title": "Efedra o‘simligi",
-      "bullets": [
-        {
-          "text": "Efedra — past bo‘yli butasimon o‘simlik, poyasi ko‘p shoxlangan, yashil va egiluvchan; O‘rta Osiyo tog‘li tumanlarida o‘sadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tarkibida efedrin va psevdoefedrin alkaloidlari, oshlovchi moddalar, pirokatexin bor; ahamiyatlisi faqat efedrin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xitoyda yovvoyi efedra 5000 yil davomida bezgak, yo‘tal va ish faoliyatini yaxshilash uchun qo‘llangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega efedra O‘rta Osiyo uchun muhim? Doskada: o‘simlik tavsifi va tarkibi. Tipik xato: efedrani zaharsiz o‘simlik deb hisoblash."
-    },
-    {
-      "title": "Efedra o‘tining ta’siri",
-      "bullets": [
-        {
-          "text": "Xalq tabobatida damlamasi revmatizm, oshqozon-ichak va nafas yo‘llari kasalliklarida qo‘llaniladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘simlik ta’sirida markaziy nerv tizimi qo‘zg‘aluvchanligi ortadi, qon tomirlar torayadi, qon bosimi ko‘tariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "75-76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bronxlarning silliq muskullari bo‘shashadi, siydik va ter ajralishi ortadi, tana harorati tushadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: efedra ta’sirining ikki yo‘nalishini ayting. Doskada: qo‘zg‘alish va bo‘shashish ustunlari. Tipik xato: qon bosimi ko‘tarilishini bronxlar torayishi deb tushunish."
-    },
-    {
-      "title": "Efedrin: xossalari",
-      "bullets": [
-        {
-          "text": "Asosiy ta’sir etuvchi modda — efedrin alkaloidi; stereoizomeri psevdoefedrin efedra o‘simligida uchraydi va sintez qilib ham olinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedrin asos holida etil spirti, efir va xloroformda, gidroxlorid tuzi esa suv va spirtda yaxshi eriydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedrin tibbiyotda gidroxlorid tuzi holida tabletka, eritma, tomchi shaklida qo‘llanadi; teofedrin tarkibiga kiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: asos va tuz eruvchanligi ajratishda qanday ahamiyatga ega? Doskada: asos: organik erituvchi; tuz: suv. Tipik xato: efedrin asosini suvda yaxshi eriydi deb o‘ylash."
-    },
-    {
-      "title": "Efedrinning ta’siri va chiqarilishi",
-      "bullets": [
-        {
-          "text": "Efedrin adrenalinga o‘xshash ta’sirga ega; bronxial astma va ko‘z kasalliklarida ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Arterial qon bosimini ko‘taradi, tomirlarni toraytiradi, bronx va ko‘z qorachig‘ini kengaytiradi, markaziy nerv tizimini qo‘zg‘otadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Organizmga tez so‘riladi; qabul qilingan dozaning 80% bir sutkada o‘zgarmagan holda siydik orqali ajraladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nerv tizimiga bo‘shashtiruvchi ta’sir ko‘rsatadi, alahsirash va qisman eyforiya chaqiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega siydik asosiy tekshiruv ashyosi? Doskada: 80% / sutka siydik orqali. Tipik xato: efedrinni faqat dori deb hisoblash: suiste’mol hollari bor."
-    },
-    {
-      "title": "Efedrin va efedronni ajratib olish",
-      "bullets": [
-        {
-          "text": "Efedrin va oksidlanish mahsuloti efedron siydik orqali ajraladi; asosiy ashyo — siydik.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Siydik kaliy karbonatning 10% eritmasi bilan pH=10 gacha ishqoriy muhitga keltiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Keyin xloroform bilan ekstraksiya qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Siydikdan ajratish",
-        "nodes": [
-          "Siydik",
-          "K2CO3 10%: pH 10",
-          "Xloroform ekstraksiyasi",
-          "Xloroformli ajratma",
-          "Reaksiyalar, YuQX"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega pH=10 tanlanadi? Doskada: 5 bosqichli sxema. Tipik xato: karbonat o‘rniga kuchli ishqor ishlatish."
-    },
-    {
-      "title": "Efedron: kelib chiqishi",
-      "bullets": [
-        {
-          "text": "Efedron kuchli eyforiya chaqiradi; ashyo — toksikomanlar siydigi va ular iste’mol qilgan suyuqliklar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedrin kaliy permanganat va sirka kislota bilan 50-60 °C da oksidlanib, efedron hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shu suyuqlikni eyforiya maqsadida iste’mol qiladilar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Efedron hosil bo‘lishi",
-        "nodes": [
-          "Efedrin",
-          "KMnO4 + sirka kislota",
-          "50-60 °C da oksidlanish",
-          "Efedron",
-          "Suyuqlik iste’mol qilinadi"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bu sintez shu qadar xavfli? Doskada: efedrin -> efedron oksidlanishi. Tipik xato: KMnO4 ni faqat dezinfeksiya vositasi deb o‘ylash: u prekursor. Izoh: gmt p.147 prekursor jadvalida KMnO4 va efedrin metkatinon olish uchun ko‘rsatilgan."
-    },
-    {
-      "title": "Efedronning organizmga ta’siri",
-      "bullets": [
-        {
-          "text": "Taxikardiya va midriaz (ko‘z qorachig‘ining kengayishi) kuzatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Terining qurishi, qon bosimining ko‘tarilishi, aritmiya, es-hushni yo‘qotish.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tez qaramlik chaqiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi belgi efedronni boshqa stimulyatorlardan ajratmaydi? Doskada: belgilar ro‘yxati. Tipik xato: belgilarni bitta modda uchun xos deb hisoblash: bular stimulyatorlarga umumiy."
-    },
-    {
-      "title": "Efedrin: Dragendorf va mis tuzi reaksiyalari",
-      "bullets": [
-        {
-          "text": "Dragendorf reaktivi bilan efedrin to‘q qizil rangli ninasimon kristallar hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mikroprobirkada 1-2 tomchi eritma sirka kislota bilan nordonlashtirilib, mis sulfatning 5% eritmasi qo‘shiladi va ammiak bilan ishqoriy muhit hosil qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "2 tomchi CS2 va benzol (1:3) aralashmasi qo‘shib chayqatilsa, benzol qatlami sariq yoki qo‘ng‘ir rangga bo‘yaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mis va CS2 reaksiyasining mohiyati nima? Doskada: reaksiya bosqichlari: nordonlash - CuSO4 - NH3 - CS2/benzol. Tipik xato: natijani benzol qatlami o‘rniga suvli qatlamda izlash. Izoh: p.78: reaksiya efedronga ham o‘xshash natija beradi (ditiokarbamin kislota hosilasi)."
-    },
-    {
-      "title": "Reyneke tuzi bilan reaksiya",
-      "bullets": [
-        {
-          "text": "Buyum oynachasida 1-2 tomchi eritma qoldig‘iga Reyneke tuzining yangi tayyorlangan 1% eritmasi tomiziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "5-10 daqiqadan so‘ng mikroskopda efedrin uchun to‘rt qirrali qizg‘ish-pushti kristallar to‘plami ko‘rinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedron Reyneke tuzi bilan to‘g‘ri qirrali ingichka kristallar to‘plamini hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Reyneke tuzi kristallari",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Kristallar"
-        ],
-        "rows": [
-          [
-            "Efedrin",
-            "to‘rt qirrali, qizg‘ish-pushti"
-          ],
-          [
-            "Efedron",
-            "to‘g‘ri qirrali, ingichka"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mikrokristall reaksiya nima uchun ajratuvchi? Doskada: ikki xil kristall shakli. Tipik xato: Dragendorf kristallarini (ikkalasida ninasimon) Reyneke kristallari bilan aralashtirish."
-    },
-    {
-      "title": "YuQX: efedrin va efedron",
-      "bullets": [
-        {
-          "text": "Sistema: xloroform va aseton 48:2; aniqlovchi reaktiv — ningidrinning asetondagi eritmasi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Plastinkada efedrin uchun Rf=0,28, efedron uchun Rf=0,71.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Boshqa sistema xloroform:aseton 9:1; ningidrin bilan pushti fonda siyoh rangli dog‘lar hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf (xloroform:aseton 48:2)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf"
-        ],
-        "rows": [
-          [
-            "Efedrin",
-            "0,28"
-          ],
-          [
-            "Efedron",
-            "0,71"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi modda yuqoriroq ko‘tariladi? Doskada: ikkita Rf qiymati. Tipik xato: 9:1 va 48:2 sistemalarini aralashtirish."
-    },
-    {
-      "title": "Efedrin: UB va IQ spektrlar",
-      "bullets": [
-        {
-          "text": "Efedrinning kislotali eritmasi UB-spektrda 251, 257 va 263 nm da maksimum nur yutadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "IQ-spektr (KBr plastinka): 994, 699, 754, 1242 va 670 sm-1 yutilish sohalari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedrinning miqdori UB-spektrofotometriyada optik zichlikning konsentratsiyaga bog‘liqlik grafigi bilan topiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: UB va IQ qaysi masalani hal qiladi? Doskada: UB: 251, 257, 263 nm; IQ: 5 chiziq. Tipik xato: UB maksimum yonidagi «ε=12» ni molyar ε deb o‘qish. Izoh: kitobda 257 nm yonida «ε=12» deb yozilgan; bu A(1%, 1 sm) qiymati ekani malaka_errors E2 da qayd etilgan — slaydga qo‘yilmadi."
-    },
-    {
-      "title": "Mass-spektrlar: efedrin va efedron",
-      "bullets": [
-        {
-          "text": "Efedrin mass-spektrida asosiy cho‘qqilar: 58, 146, 56, 105, 77, 42, 106, 40 m/z.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedron mass-spektrida: 58, 77, 51, 56, 42, 105, 50, 43 m/z.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Asosiy m/z cho‘qqilari",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "m/z"
-        ],
-        "rows": [
-          [
-            "Efedrin",
-            "58, 146, 56, 105, 77, 42, 106, 40"
-          ],
-          [
-            "Efedron",
-            "58, 77, 51, 56, 42, 105, 50, 43"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkala spektrda umumiy cho‘qqi qaysi? Doskada: 58 — asosiy cho‘qqi. Tipik xato: cho‘qqilar tartibini intensivlik tartibi deb bilish: kitobda tartib berilgan, intensivlik ko‘rsatilmagan. Izoh: p.77 da efedrin ro‘yxati «42 106,40» deb yozilgan (vergul tushib qolgan); p.78 bo‘yicha 106 va 40."
-    },
-    {
-      "title": "Efedron: sifat reaksiyalari",
-      "bullets": [
-        {
-          "text": "Dragendorf reaktivi bilan efedron to‘q qizil rangli ninasimon kristallar hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mis (II) sulfatning ishqoriy eritmasi va CS2 ning benzoldagi eritmasi ta’sirida ditiokarbamin kislota hosilasi hosil bo‘lib, benzol qatlami sariq-qo‘ng‘ir bo‘yaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reyneke tuzi bilan to‘g‘ri qirrali ingichka kristallar to‘plami hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: efedron reaksiyalari efedrinnikidan nimasi bilan farq qiladi? Doskada: uch reaksiya: Dragendorf, CuSO4+CS2, Reyneke. Tipik xato: Dragendorf natijasini ajratuvchi deb hisoblash: ikkalasi ham ninasimon kristall beradi."
-    },
-    {
-      "title": "Efedron: UB va IQ spektrlar",
-      "bullets": [
-        {
-          "text": "Efedronning 0,1 M HCl dagi eritmasi 251 nm da, 0,1 M ishqordagi eritmasi 247 nm da maksimal nur yutadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Asos holdagi efedron 0,1 M sulfat kislotada eritilsa, spektrda 251, 257 va 263 nm maksimumlar hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "IQ-spektr (KBr diski): 1691, 705, 1245 va 1469 sm-1.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: muhit pH i UB maksimumga qanday ta’sir qiladi? Doskada: 251 nm (HCl) va 247 nm (ishqor). Tipik xato: kislotali va ishqoriy muhit natijalarini aralashtirish."
-    },
-    {
-      "title": "Efedron miqdorini aniqlash",
-      "bullets": [
-        {
-          "text": "Mis tuzlari va CS2 bilan hosil qilingan rangli kompleksning optik zichligi FEK usulida aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedronning xlorid kislotadagi eritmasining optik zichligini aniqlab, miqdori hisoblab topiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Efedron miqdoriy usullari",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Asos"
-        ],
-        "rows": [
-          [
-            "FEK",
-            "Cu-CS2 rangli kompleksi"
-          ],
-          [
-            "UB-SF",
-            "HCl dagi eritma optik zichligi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ikki usulning farqi nima? Doskada: FEK - rangli kompleks, UB-SF - o‘zining yutilishi. Tipik xato: FEK va UB-SF ni bir xil deb o‘ylash."
-    },
-    {
-      "title": "Efedrin va efedronni farqlash",
-      "bullets": [
-        {
-          "text": "Dragendorf reaktivi ikkala modda uchun ham ninasimon kristall beradi; farq Reyneke tuzi va YuQX da seziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76-78"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX da efedron (Rf=0,71) efedrindan (Rf=0,28) yuqoriroq ko‘tariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "77"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedron UB-spektri 0,1 M HCl da faqat 251 nm da maksimum beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "78"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Farqlovchi belgilar",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Efedrin",
-          "Efedron"
-        ],
-        "rows": [
-          [
-            "Dragendorf",
-            "ninasimon, to‘q qizil",
-            "ninasimon, to‘q qizil"
-          ],
-          [
-            "Reyneke tuzi",
-            "to‘rt qirrali kristall",
-            "to‘g‘ri qirrali ingichka"
-          ],
-          [
-            "Rf (48:2)",
-            "0,28",
-            "0,71"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: bir namunada ikkalasini qanday farqlaymiz? Doskada: uch belgi jadvali. Tipik xato: bitta reaksiya asosida xulosa qilish. Izoh: bu slayd kitobning p.76-78 ma’lumotlarini yig‘ib solishtiradi; kitobda alohida jadval yo‘q."
-    },
-    {
-      "title": "Peyot kaktusi",
-      "bullets": [
-        {
-          "text": "Janubiy Amerika hindulari meskalin saqlovchi kaktuslarni diniy marosimlarda qo‘llagan; peyotdan damlamalar tayyorlangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gallyusinogen alkaloid meskalin birinchi marta 1896 yilda Lophophora williamsii dan ajratilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gullari ko‘p meskalin saqlaydi; noqonuniy bozorda quruq maydalangan gul kukuni jelatin kapsulalarda tarqatiladi, tarkibida 8% gacha meskalin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kaktus gullari tahlil ob’ekti bo‘ladi? Doskada: o‘simlik - alkaloid - kapsula. Tipik xato: kapsuladagi barcha kukunni toza meskalin deb o‘ylash: 8% gacha."
-    },
-    {
-      "title": "Meskalinning ta’siri",
-      "bullets": [
-        {
-          "text": "Meskalin 200-500 mg (gidroxlorid yoki sulfat holida) miqdorda gallyusinogen ta’sir etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bir martalik doza samarasi 12 soat kuzatiladi; ta’siri qabuldan 30-60 daqiqada boshlanib, 4-6 soat davom etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sof meskalin rangsiz, quruq kristall modda; LSD dan 4000 marta kuchsiz.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: meskalin va LSD kuchini solishtiring. Doskada: 200-500 mg; 12 soat; 4000 marta. Tipik xato: ta’sir boshlanishi (30-60 daqiqa) bilan davomiyligi (4-6 soat) ni almashtirish."
-    },
-    {
-      "title": "Meskalin: toksik doza va metabolizm",
-      "bullets": [
-        {
-          "text": "5-10 mg/kg da titroq, ko‘ngil aynishi, bosh og‘rig‘i, qo‘zg‘alish, gallyusinatsiya, o‘zini o‘ldirishga intilish kuzatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "20 mg/kg da markaziy asab tizimi va nafas markazi falajlanib, o‘lim sodir bo‘lishi mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metabolizm: asetillanib N-asetilmeskalin; gidroksillanib; dezaminlanib 3,4,5-trimetoksisirka va 3,4,5-trimetoksibenzoy kislota hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mg/kg birligida dozani qanday hisoblaymiz? Doskada: 5-10 mg/kg - 20 mg/kg shkalasi. Tipik xato: mg/kg ni umumiy mg bilan aralashtirish."
-    },
-    {
-      "title": "Fenilalkilaminlarni ajratib olish",
-      "bullets": [
-        {
-          "text": "Efedrin, efedron, katin, katinon va meskalin biologik ob’ektlardan nordonlashtirilgan suv yoki spirt usulida ajratib olinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suvli ajratmalar pH=9-12 ga keltirilib, xloroform bilan uch marta ekstraksiya qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xloroform qavati suvsiz natriy sulfatli filtrdan o‘tkaziladi va 0,5-1 ml gacha bug‘latiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nordonlashtirilgan suv usuli nega birinchi tanlanadi? Doskada: ajratish: nordon suv/spirt -> pH 9-12 -> xloroform. Tipik xato: pH ni kislotali muhitda ekstraksiya qilish."
-    },
-    {
-      "title": "Biosuyuqliklardan ekstraksiya",
-      "bullets": [
-        {
-          "text": "10 ml qon yoki 50 ml siydik ammiakning 25% eritmasi bilan pH=10-11 ga keltiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xloroform va n-butanolning 9:1 aralashmasi bilan 3 marta ekstraksiya qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Organik qatlam 1 g suvsiz Na2SO4 dan o‘tkaziladi, 100 mkl 5% HCl solinib, 0,5-1,0 ml gacha bug‘latiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "79-80"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Qon / siydikdan ekstraksiya",
-        "nodes": [
-          "10 ml qon / 50 ml siydik",
-          "NH3 25%: pH 10-11",
-          "Xloroform:n-butanol 9:1",
-          "Na2SO4, 100 mkl 5% HCl",
-          "Bug‘latish 0,5-1,0 ml"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: HCl nima uchun qo‘shiladi? Doskada: 5 bosqichli sxema. Tipik xato: ekstraktni quruq qoldiqqacha bug‘latish (HCl bilan tuz hosil qilinadi)."
-    },
-    {
-      "title": "Kimyoviy tahlil: Marki va ningidrin",
-      "bullets": [
-        {
-          "text": "Marki reaktivi bilan fenilalkilaminlar zarg‘aldoq rang hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "80"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ningidrin eritmasi bilan binafsha rang hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "80"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: xloroform-aseton-etanol-ammiak 25% (20:3:1:20); ochuvchi reaktiv ningidrin; fenilalkilaminlar Rf=0,36.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "80"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Marki va ningidrin reaksiyalari nimani ko‘rsatadi? Doskada: ikki rangli reaksiya + YuQX. Tipik xato: bu umumiy reaksiyalar bo‘lib, aniq moddani bildirmaydi. Izoh: 70-betdagi Marki reaktivi tarkibi kitobda berilmagan."
-    },
-    {
-      "title": "Meskalin YuQX da (12-jadval)",
-      "bullets": [
-        {
-          "text": "Meskalin Merck plastinkasida Rf=0,36, Sorbfil plastinkasida Rf=0,50.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Marki reaktivi bilan meskalin zarg‘aldoq, ningidrin bilan binafsha rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86-87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tizim: xloroform-aseton-etanol-ammiak 25% eritmasi (20:3:1:20).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: plastinka turi Rf ga qanday ta’sir qiladi? Doskada: Merck 0,36 va Sorbfil 0,50. Tipik xato: sistemani o‘zgartirib Rf ni taqqoslash. Izoh: 12-jadval 37-darsda (sintetik fenilalkilaminlar) to‘liq ko‘riladi."
-    },
-    {
-      "title": "Prekursorlar bilan bog‘liqlik",
-      "bullets": [
-        {
-          "text": "Prekursorlar ro‘yxatida efedrin, psevdoefedrin, norpsevdoefedrin, N-metilefedrin va fenilpropanolamin ko‘rsatilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedrin va N-metilefedrin metkatinon, norpsevdoefedrin norkatinon, fenilpropanolamin esa katinon va metkatinon olish uchun keltirilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kaliy permanganat ham ro‘yxatda metkatinon olish uchun prekursor sifatida berilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega efedrinni dori sifatida sotish nazoratda? Doskada: efedrin + KMnO4 -> metkatinon (jadval bo‘yicha). Tipik xato: yulduzcha (*) belgisining ma’nosini kitobdan o‘qib bo‘lmadi: jadvalda ba’zi qatorlar yulduzcha bilan. Izoh: prekursorlar bobi 39-darsda."
-    },
-    {
-      "title": "Xulosa va nazorat savollari",
-      "bullets": [
-        {
-          "text": "Tabiiy fenilalkilaminlar: kata (katin, katinon), efedra (efedrin) va peyot (meskalin) alkaloidlari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "74-79"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Efedrin va efedronni siydikdan K2CO3 bilan pH 10 da xloroformga ajratiladi; Dragendorf, Reyneke, Cu-CS2, YuQX, UB, IQ, MS bilan aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "76-78"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nazorat: efedrin tuzilishi; efedron olinishi va miqdoriy tahlili; efedrin va efedronni farqlash; fenilalkilaminlar qaysi o‘simliklardan olinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "80"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uch asosiy xulosani o‘z so‘zingiz bilan ayting. Doskada: efedrin -> efedron -> meskalin zanjiri. Tipik xato: nazorat savollarini yodlab, usullarni bog‘lamaslik."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Efedrin qaysi o‘simlikning asosiy ta’sir etuvchi alkaloidi?",
-      "options": [
-        "Peyot kaktusi",
-        "Efedra o‘ti",
-        "Iste’molbop kata",
-        "Koka butasi"
-      ],
-      "correct_index": 1,
-      "explanation": "Efedra o‘tining asosiy ta’sir etuvchi moddasi efedrin alkaloidi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "76"
-      }
-    },
-    {
-      "question": "Meskalin birinchi marta qaysi yilda ajratib olingan?",
-      "options": [
-        "1859",
-        "1896",
-        "1914",
-        "1938"
-      ],
-      "correct_index": 1,
-      "explanation": "Meskalin 1896 yilda peyot kaktusidan (Lophophora williamsii) ajratib olingan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "79"
-      }
-    },
-    {
-      "question": "Efedron efedrindan qaysi moddalar yordamida hosil qilinadi?",
-      "options": [
-        "Vodorod peroksid",
-        "Kaliy permanganat va sirka kislota",
-        "Perxlorat kislota",
-        "Faqat kaliy permanganat"
-      ],
-      "correct_index": 1,
-      "explanation": "Narkomanlar efedronni efedrindan kaliy permanganat va sirka kislota yordamida 50-60 °C da oksidlab olishadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "77"
-      }
-    },
-    {
-      "question": "Efedrin va efedron siydikdan qaysi sharoitda xloroform bilan ajratiladi?",
-      "options": [
-        "K2CO3 10% bilan pH=10",
-        "HCl bilan pH=1",
-        "NaOH bilan pH=14",
-        "Neytral muhitda"
-      ],
-      "correct_index": 0,
-      "explanation": "Siydik kaliy karbonatning 10% eritmasi bilan pH=10 gacha ishqoriy muhitga keltirilib, xloroform bilan ekstraksiyalanadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "76"
-      }
-    },
-    {
-      "question": "Reyneke tuzi bilan efedrin qanday kristallar hosil qiladi?",
-      "options": [
-        "To‘rt qirrali qizg‘ish-pushti kristallar",
-        "Ninasimon to‘q qizil kristallar",
-        "Sferoid shakldagi kristallar",
-        "Kubsimon kristallar"
-      ],
-      "correct_index": 0,
-      "explanation": "Efedrin Reyneke tuzi bilan to‘rt qirrali qizg‘ish-pushti kristallar to‘plamini hosil qiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "77"
-      }
-    },
-    {
-      "question": "YuQX da (xloroform:aseton 48:2) efedron uchun Rf qancha?",
-      "options": [
-        "0,28",
-        "0,36",
-        "0,71",
-        "0,83"
-      ],
-      "correct_index": 2,
-      "explanation": "Efedrin uchun Rf=0,28, efedron uchun Rf=0,71.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "77"
-      }
-    },
-    {
-      "question": "Meskalin LSD ga nisbatan qanday?",
-      "options": [
-        "4000 marta kuchsiz",
-        "4000 marta kuchli",
-        "Teng kuchli",
-        "100 marta kuchsiz"
-      ],
-      "correct_index": 0,
-      "explanation": "Meskalin LSD dan 4000 marta kuchsiz.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "79"
-      }
-    },
-    {
-      "question": "Meskalin qaysi dozada o‘limga olib kelishi mumkin?",
-      "options": [
-        "5 mg/kg",
-        "10 mg/kg",
-        "20 mg/kg",
-        "200 mg/kg"
-      ],
-      "correct_index": 2,
-      "explanation": "5-10 mg/kg da titroq, gallyusinatsiya; 20 mg/kg da markaziy asab tizimi va nafas markazi falajlanib, o‘lim mumkin.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "79"
-      }
-    },
-    {
-      "question": "Qon yoki siydikdan fenilalkilaminlarni ekstraksiya qilishda qaysi aralashma ishlatiladi?",
-      "options": [
-        "Xloroform:n-butanol 9:1",
-        "Efir:petroley efiri 1:1",
-        "Benzol:aseton 3:1",
-        "Geksan:toluol 1:1"
-      ],
-      "correct_index": 0,
-      "explanation": "10 ml qon yoki 50 ml siydik pH=10-11 ga keltirilib, xloroform va n-butanolning 9:1 aralashmasi bilan 3 marta ekstraksiya qilinadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "79"
-      }
-    },
-    {
-      "question": "Katin va katinon qaysi o‘simlik alkaloidlari?",
-      "options": [
-        "Efedra o‘ti",
-        "Peyot kaktusi",
-        "Iste’molbop kata (Catha edulis)",
-        "Koka butasi"
-      ],
-      "correct_index": 2,
-      "explanation": "Iste’molbop kata barglari tarkibida katinon va katin alkaloidlari bor.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "75"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Eslab qolish: efedrin YuQX da Rf=0,28, efedron Rf=0,71 (xloroform:aseton 48:2, ningidrin).",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "77"
-      }
-    },
-    {
-      "text": "Muhim farq: Reyneke tuzi efedrin bilan to‘rt qirrali qizg‘ish-pushti kristallar, efedron bilan to‘g‘ri qirrali ingichka kristallar beradi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "77-78"
-      }
-    },
-    {
-      "text": "Tarixiy: meskalin 1896 yilda peyot kaktusidan birinchi marta ajratib olingan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "79"
-      }
-    },
-    {
-      "text": "Amaliy maslahat: katinon quritish vaqtida bug‘lanib ketadi, shuning uchun kata barglari plastik idishda yoki banan yaprog‘iga o‘ralgan holda tarqatiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "75"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Mavzu: tabiiy fenilalkilaminlar — efedrin, meskalin, katin va katinon; ularning narkologik ahamiyati va tahlil usullari.",
+     "source": {
       "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
       "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-      "year": null,
-      "pages": "b. 73-80, 86-87, 147-148"
+      "page": "73"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reja: tasnif, o‘simlik manbalari (kata, efedra, peyot), efedrin va efedron, meskalin, ajratib olish, rangli reaksiyalar va fizik-kimyoviy usullar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73-80"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tayanch so‘zlar: amfetamin hosilalari, efedrin, efedron, katin, katinon, meskalin, Reyneke tuzi, ningidrin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73-80"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega efedra o‘simligi ham dori, ham giyohvandlik vositasi manbai bo‘la oladi? Doskada: ma’ruzaning 3 o‘simligi: kata, efedra, peyot. Tipik xato: tabiiy fenilalkilaminlarni faqat sintetik moddalar bilan aralashtirish. Izoh: sillabusdagi «efedron (metkatinon)» nomi kitobda alohida bog‘lanmagan; gmt p.147 jadvalida efedrin va KMnO4 metkatinon olish uchun prekursor sifatida ko‘rsatilgan."
+  },
+  {
+   "title": "Fenilalkilaminlar guruhi",
+   "bullets": [
+    {
+     "text": "Fenilalkilaminlar aksariyat sintetik giyohvandlik vositalarining asosini tashkil qiladi va amfetamin hosilalari deb yuritiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Noqonuniy bozorda bu guruhning 20 dan ziyod moddasi muomalada; birinchi vakillari turli o‘simliklardan olingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keyinchalik giyohvandlik xususiyati va kuchini oshirish uchun ko‘plab yarim sintetik va sintetik hosilalari sintez qilingan (yuzdan ortiq).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Fenilalkilaminlar guruhi",
+    "items": [
+     {
+      "label": "Noqonuniy bozorda",
+      "value": "20 dan ziyod",
+      "unit": "modda"
+     },
+     {
+      "label": "Sintez qilingan",
+      "value": "yuzdan ortiq",
+      "unit": "hosila"
+     },
+     {
+      "label": "Sintetik sinflar",
+      "value": "3"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega o‘simlik alkaloidlari asosida sintetik hosilalar yaratilgan? Doskada: tabiiy - yarim sintetik - sintetik zanjiri. Tipik xato: sinflanishni qat’iy chegarali deb o‘ylash: kitobda sinflanish shartli deyilgan."
+  },
+  {
+   "title": "Fenilalkilaminlar tasnifi",
+   "bullets": [
+    {
+     "text": "Shartli ravishda tabiiy va sintetik guruhlarga bo‘linadi; sintetik hosilalar ham 3 sinfga ajratiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sinflar: amino, alkil guruhi va benzol xalqasi vodorodi almashgan hosilalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73-74"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sinflanish shartli bo‘lib, moddalarni qat’iy guruhlarga bo‘lib bo‘lmaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Benzol xalqasi hosilalari",
+    "nodes": [],
+    "header": [
+     "Guruh",
+     "Vakillari"
+    ],
+    "rows": [
+     [
+      "Monometoksi",
+      "PMA, PMMA, 4-MTA"
+     ],
+     [
+      "Dimetoksi",
+      "DOM, DOET, DOX, DOB"
+     ],
+     [
+      "Metilendioksi",
+      "MDA, MDMA, MBDB, BDB, MDMMA"
+     ],
+     [
+      "Trimetoksi",
+      "3,4,5-trimetoksiamfetamin, meskalin"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: efedrin qaysi sinfga kiradi? Doskada: uch sinf va benzol hosilalari jadvali. Tipik xato: meskalinni sintetik hosila deb hisoblash: u peyotdan olingan tabiiy modda. Izoh: efedrin sinfi bo‘yicha kitob testi 81-betda (2-savol) berilgan, javobi kitobda yo‘q."
+  },
+  {
+   "title": "Fenilalkilaminlar tasnifi (sxema)",
+   "bullets": [
+    {
+     "text": "Fenilalkilaminlar shartli ravishda tabiiy va sintetik guruhlarga bo‘linadi; sintetik hosilalar 3 sinfga ajraladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sinflar: amino guruhi, alkil guruhi va benzol xalqasi vodorodi almashgan hosilalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "73-74"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tabiiy vakillar: iste’molbop kata, efedra o‘ti va peyot kaktusi tarkibida aniqlangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "74"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Fenilalkilaminlar",
+    "root": "Fenilalkilaminlar",
+    "children": [
+     {
+      "label": "Tabiiy",
+      "items": [
+       "kata (katinon, katin)",
+       "efedra (efedrin)",
+       "peyot (meskalin)"
+      ]
+     },
+     {
+      "label": "Sintetik: 1-sinf",
+      "items": [
+       "amino guruh vodorodi almashgan"
+      ]
+     },
+     {
+      "label": "Sintetik: 2-sinf",
+      "items": [
+       "alkil guruhi vodorodi almashgan"
+      ]
+     },
+     {
+      "label": "Sintetik: 3-sinf",
+      "items": [
+       "benzol xalqasi vodorodi almashgan"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega tasnif «shartli» deb aytiladi? Doskada: daraxt sxemasi. Tipik xato: tabiiy vakillarni sintetik sinflarga qo‘shib yuborish."
+  },
+  {
+   "title": "Uch o‘simlik: solishtirish",
+   "bullets": [
+    {
+     "text": "Kata Sharqiy Afrika va Arabiston yarim orolida o‘sadi; «arab choyi» nomi bilan ma’lum.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedra O‘rta Osiyoning tog‘li tumanlarida o‘sadi; Xitoyda 5000 yil davomida qo‘llangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Peyot kaktusidan meskalin 1896 yilda ajratilgan; gul kukunida 8% gacha meskalin bor.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "O‘simliklar solishtirish",
+    "columns": [
+     {
+      "title": "Kata",
+      "items": [
+       "Sharqiy Afrika, Arabiston",
+       "«arab choyi»",
+       "katinon, katin"
+      ]
+     },
+     {
+      "title": "Efedra",
+      "items": [
+       "O‘rta Osiyo tog‘lari",
+       "Xitoyda 5000 yil",
+       "efedrin"
+      ]
+     },
+     {
+      "title": "Peyot kaktusi",
+      "items": [
+       "Janubiy Amerika (marosim)",
+       "1896: meskalin ajratildi",
+       "gul kukuni: 8% gacha"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uch o‘simlikdagi asosiy modda va uning ahamiyati. Doskada: uch ustunli jadval. Tipik xato: katin va katinonni efedra alkaloidlari deb yozish."
+  },
+  {
+   "title": "Tabiiy manbalar: uch o‘simlik",
+   "bullets": [
+    {
+     "text": "Fenilalkilaminlarning dastlabki vakillari quyidagi o‘simliklarda aniqlangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "74"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Iste’molbop kata (Catha edulis), efedra o‘ti (Herba Ephedrae) va peyot kaktusi (Lophophora williamsii).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "74"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "O‘simlik va modda",
+    "nodes": [],
+    "header": [
+     "O‘simlik",
+     "Asosiy modda"
+    ],
+    "rows": [
+     [
+      "Iste’molbop kata",
+      "katinon, katin"
+     ],
+     [
+      "Efedra o‘ti",
+      "efedrin, psevdoefedrin"
+     ],
+     [
+      "Peyot kaktusi",
+      "meskalin"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: har bir o‘simlikka bitta modda mos keltiring. Doskada: 3 o‘simlik - 3 modda. Tipik xato: psevdoefedrin va efedrinni bir xil faollikda deb hisoblash: faqat efedrin ahamiyatli (75-bet)."
+  },
+  {
+   "title": "Iste’molbop kata",
+   "bullets": [
+    {
+     "text": "Iste’molbop kata (Catha edulis) Sharqiy Afrika va Arabiston yarim orolida o‘sadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Quritilgan barglari «arab choyi» nomi ostida ma’lum; mahalliy aholi iste’mol qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Barglari tarkibida katinon va katin alkaloidlari bor; ta’sir etuvchi komponentlar miqdori 0,5 dan 2% gacha.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kata «arab choyi» deb ataladi? Doskada: o‘simlik - hudud - alkaloidlar. Tipik xato: katin va katinonni bir modda deb hisoblash."
+  },
+  {
+   "title": "Kata: saqlash va tarkib",
+   "bullets": [
+    {
+     "text": "Quritish vaqtida psixostimulyator katinon alkaloidi bug‘lanib ketadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shu sababli barglar plastik idishlarda yoki banan yaprog‘iga o‘ralgan holda tarqatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘simlikda katidin, katinin, xolin, bromidlar, yog‘ kislotalari, efir moylari va boshqa alkaloidlar ham bor.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Iste’molbop kata tarkibi",
+    "root": "Catha edulis",
+    "children": [
+     {
+      "label": "Alkaloidlar",
+      "items": [
+       "katinon (quritishda bug‘lanadi)",
+       "katin"
+      ]
+     },
+     {
+      "label": "Boshqa moddalar",
+      "items": [
+       "katidin, katinin",
+       "xolin, bromidlar"
+      ]
+     },
+     {
+      "label": "Boshqalar",
+      "items": [
+       "yog‘ kislotalari",
+       "efir moylari"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: katinon nega yangi barglarda ko‘proq? Doskada: quritish - bug‘lanish - o‘rash. Tipik xato: quritilgan kata barg tarkibini yangi barg bilan bir xil deb o‘ylash."
+  },
+  {
+   "title": "Efedra o‘simligi",
+   "bullets": [
+    {
+     "text": "Efedra — past bo‘yli butasimon o‘simlik, poyasi ko‘p shoxlangan, yashil va egiluvchan; O‘rta Osiyo tog‘li tumanlarida o‘sadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tarkibida efedrin va psevdoefedrin alkaloidlari, oshlovchi moddalar, pirokatexin bor; ahamiyatlisi faqat efedrin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xitoyda yovvoyi efedra 5000 yil davomida bezgak, yo‘tal va ish faoliyatini yaxshilash uchun qo‘llangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Efedra o‘simligi tarkibi",
+    "root": "Efedra (Herba Ephedrae)",
+    "children": [
+     {
+      "label": "Alkaloidlar",
+      "items": [
+       "efedrin (muhim)",
+       "psevdoefedrin"
+      ]
+     },
+     {
+      "label": "Boshqa moddalar",
+      "items": [
+       "oshlovchi moddalar",
+       "pirokatexin"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega efedra O‘rta Osiyo uchun muhim? Doskada: o‘simlik tavsifi va tarkibi. Tipik xato: efedrani zaharsiz o‘simlik deb hisoblash."
+  },
+  {
+   "title": "Efedra o‘tining ta’siri",
+   "bullets": [
+    {
+     "text": "Xalq tabobatida damlamasi revmatizm, oshqozon-ichak va nafas yo‘llari kasalliklarida qo‘llaniladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘simlik ta’sirida markaziy nerv tizimi qo‘zg‘aluvchanligi ortadi, qon tomirlar torayadi, qon bosimi ko‘tariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "75-76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bronxlarning silliq muskullari bo‘shashadi, siydik va ter ajralishi ortadi, tana harorati tushadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Efedra ta’siri",
+    "columns": [
+     {
+      "title": "Asab va qon tomir",
+      "items": [
+       "MNS qo‘zg‘aluvchanligi ortadi",
+       "qon tomirlar torayadi",
+       "qon bosimi ko‘tariladi"
+      ]
+     },
+     {
+      "title": "Boshqa a’zolar",
+      "items": [
+       "bronx silliq muskullari bo‘shashadi",
+       "siydik va ter ajralishi ortadi",
+       "tana harorati tushadi"
+      ]
+     },
+     {
+      "title": "Xalq tabobati",
+      "items": [
+       "revmatizm",
+       "oshqozon-ichak kasalliklari",
+       "nafas yo‘llari kasalliklari"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: efedra ta’sirining ikki yo‘nalishini ayting. Doskada: qo‘zg‘alish va bo‘shashish ustunlari. Tipik xato: qon bosimi ko‘tarilishini bronxlar torayishi deb tushunish."
+  },
+  {
+   "title": "Efedrin: xossalari",
+   "bullets": [
+    {
+     "text": "Asosiy ta’sir etuvchi modda — efedrin alkaloidi; stereoizomeri psevdoefedrin efedra o‘simligida uchraydi va sintez qilib ham olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedrin asos holida etil spirti, efir va xloroformda, gidroxlorid tuzi esa suv va spirtda yaxshi eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedrin tibbiyotda gidroxlorid tuzi holida tabletka, eritma, tomchi shaklida qo‘llanadi; teofedrin tarkibiga kiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Efedrin: eruvchanlik va qo‘llanish",
+    "columns": [
+     {
+      "title": "Asos holida",
+      "items": [
+       "etil spirti, efir, xloroformda yaxshi eriydi"
+      ]
+     },
+     {
+      "title": "Gidroxlorid tuzi",
+      "items": [
+       "suv va spirtda yaxshi eriydi"
+      ]
+     },
+     {
+      "title": "Tibbiyotda",
+      "items": [
+       "tabletka, eritma, tomchi",
+       "teofedrin tarkibida"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: asos va tuz eruvchanligi ajratishda qanday ahamiyatga ega? Doskada: asos: organik erituvchi; tuz: suv. Tipik xato: efedrin asosini suvda yaxshi eriydi deb o‘ylash."
+  },
+  {
+   "title": "Efedrinning ta’siri va chiqarilishi",
+   "bullets": [
+    {
+     "text": "Efedrin adrenalinga o‘xshash ta’sirga ega; bronxial astma va ko‘z kasalliklarida ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Arterial qon bosimini ko‘taradi, tomirlarni toraytiradi, bronx va ko‘z qorachig‘ini kengaytiradi, markaziy nerv tizimini qo‘zg‘otadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Organizmga tez so‘riladi; qabul qilingan dozaning 80% bir sutkada o‘zgarmagan holda siydik orqali ajraladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nerv tizimiga bo‘shashtiruvchi ta’sir ko‘rsatadi, alahsirash va qisman eyforiya chaqiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega siydik asosiy tekshiruv ashyosi? Doskada: 80% / sutka siydik orqali. Tipik xato: efedrinni faqat dori deb hisoblash: suiste’mol hollari bor."
+  },
+  {
+   "title": "Efedrin va efedronni ajratib olish",
+   "bullets": [
+    {
+     "text": "Efedrin va oksidlanish mahsuloti efedron siydik orqali ajraladi; asosiy ashyo — siydik.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Siydik kaliy karbonatning 10% eritmasi bilan pH=10 gacha ishqoriy muhitga keltiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keyin xloroform bilan ekstraksiya qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Siydikdan ajratish",
+    "nodes": [
+     "Siydik",
+     "K2CO3 10%: pH 10",
+     "Xloroform ekstraksiyasi",
+     "Xloroformli ajratma",
+     "Reaksiyalar, YuQX"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega pH=10 tanlanadi? Doskada: 5 bosqichli sxema. Tipik xato: karbonat o‘rniga kuchli ishqor ishlatish."
+  },
+  {
+   "title": "Efedron: kelib chiqishi",
+   "bullets": [
+    {
+     "text": "Efedron kuchli eyforiya chaqiradi; ashyo — toksikomanlar siydigi va ular iste’mol qilgan suyuqliklar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedrin kaliy permanganat va sirka kislota bilan 50-60 °C da oksidlanib, efedron hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shu suyuqlikni eyforiya maqsadida iste’mol qiladilar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Efedron hosil bo‘lishi",
+    "nodes": [
+     "Efedrin",
+     "KMnO4 + sirka kislota",
+     "50-60 °C da oksidlanish",
+     "Efedron",
+     "Suyuqlik iste’mol qilinadi"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bu sintez shu qadar xavfli? Doskada: efedrin -> efedron oksidlanishi. Tipik xato: KMnO4 ni faqat dezinfeksiya vositasi deb o‘ylash: u prekursor. Izoh: gmt p.147 prekursor jadvalida KMnO4 va efedrin metkatinon olish uchun ko‘rsatilgan."
+  },
+  {
+   "title": "Efedronning organizmga ta’siri",
+   "bullets": [
+    {
+     "text": "Taxikardiya va midriaz (ko‘z qorachig‘ining kengayishi) kuzatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Terining qurishi, qon bosimining ko‘tarilishi, aritmiya, es-hushni yo‘qotish.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tez qaramlik chaqiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Efedron ta’siri",
+    "root": "Efedron",
+    "children": [
+     {
+      "label": "Yurak-qon tomir",
+      "items": [
+       "taxikardiya",
+       "qon bosimining ko‘tarilishi",
+       "aritmiya"
+      ]
+     },
+     {
+      "label": "Ko‘z va teri",
+      "items": [
+       "midriaz",
+       "terining qurishi"
+      ]
+     },
+     {
+      "label": "Boshqa",
+      "items": [
+       "es-hushni yo‘qotish",
+       "tez qaramlik"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi belgi efedronni boshqa stimulyatorlardan ajratmaydi? Doskada: belgilar ro‘yxati. Tipik xato: belgilarni bitta modda uchun xos deb hisoblash: bular stimulyatorlarga umumiy."
+  },
+  {
+   "title": "Efedrin: Dragendorf va mis tuzi reaksiyalari",
+   "bullets": [
+    {
+     "text": "Dragendorf reaktivi bilan efedrin to‘q qizil rangli ninasimon kristallar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mikroprobirkada 1-2 tomchi eritma sirka kislota bilan nordonlashtirilib, mis sulfatning 5% eritmasi qo‘shiladi va ammiak bilan ishqoriy muhit hosil qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "2 tomchi CS2 va benzol (1:3) aralashmasi qo‘shib chayqatilsa, benzol qatlami sariq yoki qo‘ng‘ir rangga bo‘yaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Efedrin: mis tuzi va CS2 reaksiyasi",
+    "reagents": [
+     "Efedrin (CuSO4 5%, NH3)",
+     "CS2:benzol 1:3 (2 tomchi)"
+    ],
+    "products": [
+     "Benzol qatlami sariq yoki qo‘ng‘ir"
+    ],
+    "conditions": "sirka kislotada nordonlashtirilgan",
+    "observation": "chayqatilganda"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mis va CS2 reaksiyasining mohiyati nima? Doskada: reaksiya bosqichlari: nordonlash - CuSO4 - NH3 - CS2/benzol. Tipik xato: natijani benzol qatlami o‘rniga suvli qatlamda izlash. Izoh: p.78: reaksiya efedronga ham o‘xshash natija beradi (ditiokarbamin kislota hosilasi)."
+  },
+  {
+   "title": "Reyneke tuzi bilan reaksiya",
+   "bullets": [
+    {
+     "text": "Buyum oynachasida 1-2 tomchi eritma qoldig‘iga Reyneke tuzining yangi tayyorlangan 1% eritmasi tomiziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "5-10 daqiqadan so‘ng mikroskopda efedrin uchun to‘rt qirrali qizg‘ish-pushti kristallar to‘plami ko‘rinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedron Reyneke tuzi bilan to‘g‘ri qirrali ingichka kristallar to‘plamini hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Reyneke tuzi kristallari",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Kristallar"
+    ],
+    "rows": [
+     [
+      "Efedrin",
+      "to‘rt qirrali, qizg‘ish-pushti"
+     ],
+     [
+      "Efedron",
+      "to‘g‘ri qirrali, ingichka"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mikrokristall reaksiya nima uchun ajratuvchi? Doskada: ikki xil kristall shakli. Tipik xato: Dragendorf kristallarini (ikkalasida ninasimon) Reyneke kristallari bilan aralashtirish."
+  },
+  {
+   "title": "YuQX: efedrin va efedron",
+   "bullets": [
+    {
+     "text": "Sistema: xloroform va aseton 48:2; aniqlovchi reaktiv — ningidrinning asetondagi eritmasi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Plastinkada efedrin uchun Rf=0,28, efedron uchun Rf=0,71.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Boshqa sistema xloroform:aseton 9:1; ningidrin bilan pushti fonda siyoh rangli dog‘lar hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf (xloroform:aseton 48:2)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf"
+    ],
+    "rows": [
+     [
+      "Efedrin",
+      "0,28"
+     ],
+     [
+      "Efedron",
+      "0,71"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi modda yuqoriroq ko‘tariladi? Doskada: ikkita Rf qiymati. Tipik xato: 9:1 va 48:2 sistemalarini aralashtirish."
+  },
+  {
+   "title": "Efedrin: UB va IQ spektrlar",
+   "bullets": [
+    {
+     "text": "Efedrinning kislotali eritmasi UB-spektrda 251, 257 va 263 nm da maksimum nur yutadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "IQ-spektr (KBr plastinka): 994, 699, 754, 1242 va 670 sm-1 yutilish sohalari.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedrinning miqdori UB-spektrofotometriyada optik zichlikning konsentratsiyaga bog‘liqlik grafigi bilan topiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Efedrinning spektral belgilari",
+    "header": [
+     "Usul",
+     "Maksimum / yutilish"
+    ],
+    "rows": [
+     [
+      "UB (kislotali eritma)",
+      "251, 257, 263 nm"
+     ],
+     [
+      "IQ (KBr plastinka)",
+      "994, 699, 754, 1242, 670 sm-1"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: UB va IQ qaysi masalani hal qiladi? Doskada: UB: 251, 257, 263 nm; IQ: 5 chiziq. Tipik xato: UB maksimum yonidagi «ε=12» ni molyar ε deb o‘qish. Izoh: kitobda 257 nm yonida «ε=12» deb yozilgan; bu A(1%, 1 sm) qiymati ekani malaka_errors E2 da qayd etilgan — slaydga qo‘yilmadi."
+  },
+  {
+   "title": "Mass-spektrlar: efedrin va efedron",
+   "bullets": [
+    {
+     "text": "Efedrin mass-spektrida asosiy cho‘qqilar: 58, 146, 56, 105, 77, 42, 106, 40 m/z.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedron mass-spektrida: 58, 77, 51, 56, 42, 105, 50, 43 m/z.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Asosiy m/z cho‘qqilari",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "m/z"
+    ],
+    "rows": [
+     [
+      "Efedrin",
+      "58, 146, 56, 105, 77, 42, 106, 40"
+     ],
+     [
+      "Efedron",
+      "58, 77, 51, 56, 42, 105, 50, 43"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkala spektrda umumiy cho‘qqi qaysi? Doskada: 58 — asosiy cho‘qqi. Tipik xato: cho‘qqilar tartibini intensivlik tartibi deb bilish: kitobda tartib berilgan, intensivlik ko‘rsatilmagan. Izoh: p.77 da efedrin ro‘yxati «42 106,40» deb yozilgan (vergul tushib qolgan); p.78 bo‘yicha 106 va 40."
+  },
+  {
+   "title": "Efedron: sifat reaksiyalari",
+   "bullets": [
+    {
+     "text": "Dragendorf reaktivi bilan efedron to‘q qizil rangli ninasimon kristallar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mis (II) sulfatning ishqoriy eritmasi va CS2 ning benzoldagi eritmasi: ditiokarbamin kislota hosilasi hosil bo‘lib, benzol qatlami sariq-qo‘ng‘ir bo‘yaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reyneke tuzi bilan to‘g‘ri qirrali ingichka kristallar to‘plami hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: efedron reaksiyalari efedrinnikidan nimasi bilan farq qiladi? Doskada: uch reaksiya: Dragendorf, CuSO4+CS2, Reyneke. Tipik xato: Dragendorf natijasini ajratuvchi deb hisoblash: ikkalasi ham ninasimon kristall beradi."
+  },
+  {
+   "title": "Efedron: UB va IQ spektrlar",
+   "bullets": [
+    {
+     "text": "Efedronning 0,1 M HCl dagi eritmasi 251 nm da, 0,1 M ishqordagi eritmasi 247 nm da maksimal nur yutadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asos holdagi efedron 0,1 M sulfat kislotada eritilsa, spektrda 251, 257 va 263 nm maksimumlar hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "IQ-spektr (KBr diski): 1691, 705, 1245 va 1469 sm-1.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: muhit pH i UB maksimumga qanday ta’sir qiladi? Doskada: 251 nm (HCl) va 247 nm (ishqor). Tipik xato: kislotali va ishqoriy muhit natijalarini aralashtirish."
+  },
+  {
+   "title": "Efedron miqdorini aniqlash",
+   "bullets": [
+    {
+     "text": "Mis tuzlari va CS2 bilan hosil qilingan rangli kompleksning optik zichligi FEK usulida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedronning xlorid kislotadagi eritmasining optik zichligini aniqlab, miqdori hisoblab topiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Efedron miqdoriy usullari",
+    "nodes": [],
+    "header": [
+     "Usul",
+     "Asos"
+    ],
+    "rows": [
+     [
+      "FEK",
+      "Cu-CS2 rangli kompleksi"
+     ],
+     [
+      "UB-SF",
+      "HCl dagi eritma optik zichligi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ikki usulning farqi nima? Doskada: FEK - rangli kompleks, UB-SF - o‘zining yutilishi. Tipik xato: FEK va UB-SF ni bir xil deb o‘ylash."
+  },
+  {
+   "title": "Efedrin va efedronni farqlash",
+   "bullets": [
+    {
+     "text": "Dragendorf reaktivi ikkala modda uchun ham ninasimon kristall beradi; farq Reyneke tuzi va YuQX da seziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76-78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX da efedron (Rf=0,71) efedrindan (Rf=0,28) yuqoriroq ko‘tariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedron UB-spektri 0,1 M HCl da faqat 251 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Farqlovchi belgilar",
+    "nodes": [],
+    "header": [
+     "Belgi",
+     "Efedrin",
+     "Efedron"
+    ],
+    "rows": [
+     [
+      "Dragendorf",
+      "ninasimon, to‘q qizil",
+      "ninasimon, to‘q qizil"
+     ],
+     [
+      "Reyneke tuzi",
+      "to‘rt qirrali kristall",
+      "to‘g‘ri qirrali ingichka"
+     ],
+     [
+      "Rf (48:2)",
+      "0,28",
+      "0,71"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: bir namunada ikkalasini qanday farqlaymiz? Doskada: uch belgi jadvali. Tipik xato: bitta reaksiya asosida xulosa qilish. Izoh: bu slayd kitobning p.76-78 ma’lumotlarini yig‘ib solishtiradi; kitobda alohida jadval yo‘q."
+  },
+  {
+   "title": "Peyot kaktusi",
+   "bullets": [
+    {
+     "text": "Janubiy Amerika hindulari meskalin saqlovchi kaktuslarni diniy marosimlarda qo‘llagan; peyotdan damlamalar tayyorlangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gallyusinogen alkaloid meskalin birinchi marta 1896 yilda Lophophora williamsii dan ajratilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gullari ko‘p meskalin saqlaydi; noqonuniy bozorda quruq maydalangan gul kukuni jelatin kapsulalarda tarqatiladi, tarkibida 8% gacha meskalin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kaktus gullari tahlil ob’ekti bo‘ladi? Doskada: o‘simlik - alkaloid - kapsula. Tipik xato: kapsuladagi barcha kukunni toza meskalin deb o‘ylash: 8% gacha."
+  },
+  {
+   "title": "Meskalinning ta’siri",
+   "bullets": [
+    {
+     "text": "Meskalin 200-500 mg (gidroxlorid yoki sulfat holida) miqdorda gallyusinogen ta’sir etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bir martalik doza samarasi 12 soat kuzatiladi; ta’siri qabuldan 30-60 daqiqada boshlanib, 4-6 soat davom etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sof meskalin rangsiz, quruq kristall modda; LSD dan 4000 marta kuchsiz.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Meskalin",
+    "items": [
+     {
+      "label": "Gallyusinogen doza",
+      "value": "200-500",
+      "unit": "mg"
+     },
+     {
+      "label": "Ta’sir boshlanishi",
+      "value": "30-60",
+      "unit": "daqiqa"
+     },
+     {
+      "label": "Ta’sir davomi",
+      "value": "4-6",
+      "unit": "soat"
+     },
+     {
+      "label": "Doza samarasi",
+      "value": "12",
+      "unit": "soat"
+     },
+     {
+      "label": "LSD dan kuchsiz",
+      "value": "4000",
+      "unit": "marta"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: meskalin va LSD kuchini solishtiring. Doskada: 200-500 mg; 12 soat; 4000 marta. Tipik xato: ta’sir boshlanishi (30-60 daqiqa) bilan davomiyligi (4-6 soat) ni almashtirish."
+  },
+  {
+   "title": "Meskalin: toksik doza va metabolizm",
+   "bullets": [
+    {
+     "text": "5-10 mg/kg da titroq, ko‘ngil aynishi, bosh og‘rig‘i, qo‘zg‘alish, gallyusinatsiya, o‘zini o‘ldirishga intilish kuzatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "20 mg/kg da markaziy asab tizimi va nafas markazi falajlanib, o‘lim sodir bo‘lishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metabolizm: asetillanib N-asetilmeskalin; gidroksillanib; dezaminlanib 3,4,5-trimetoksisirka va 3,4,5-trimetoksibenzoy kislota hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Meskalin metabolizmi",
+    "root": "Meskalin",
+    "children": [
+     {
+      "label": "Asetillanish",
+      "items": [
+       "N-asetilmeskalin"
+      ]
+     },
+     {
+      "label": "Gidroksillanish",
+      "items": [
+       "N-asetil-dimetoksioksifeniletilamin"
+      ]
+     },
+     {
+      "label": "Dezaminlanish",
+      "items": [
+       "3,4,5-trimetoksisirka k-ta",
+       "3,4,5-trimetoksibenzoy k-ta"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mg/kg birligida dozani qanday hisoblaymiz? Doskada: 5-10 mg/kg - 20 mg/kg shkalasi. Tipik xato: mg/kg ni umumiy mg bilan aralashtirish."
+  },
+  {
+   "title": "Fenilalkilaminlar tahlilining umumiy sxemasi",
+   "bullets": [
+    {
+     "text": "Ajratib olish: nordonlashtirilgan suv yoki spirt, suvli ajratma pH=9-12, xloroform bilan 3 marta.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dastlabki: Marki reaktivi (zarg‘aldoq rang), ningidrin (binafsha rang).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "80"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tasdiqlash: YuQX, UB-, IQ-spektrometriya va mass-spektrometriya.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "77-78"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Tahlil bosqichlari",
+    "nodes": [
+     "Ajratib olish (xloroform, pH 9-12)",
+     "Na2SO4 filtr, 0,5-1 ml gacha parlatish",
+     "Marki va ningidrin reaksiyalari",
+     "YuQX (Rf, ningidrin bilan ochish)",
+     "UB, IQ, mass-spektrometriya"
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun avval rangli reaksiya, keyin spektr? Doskada: zanjir. Tipik xato: pH oralig‘ini (9-12) siydik uchun berilgan pH 10-11 bilan aralashtirish."
+  },
+  {
+   "title": "Fenilalkilaminlarni ajratib olish",
+   "bullets": [
+    {
+     "text": "Efedrin, efedron, katin, katinon va meskalin biologik ob’ektlardan nordonlashtirilgan suv yoki spirt usulida ajratib olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suvli ajratmalar pH=9-12 ga keltirilib, xloroform bilan uch marta ekstraksiya qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xloroform qavati suvsiz natriy sulfatli filtrdan o‘tkaziladi va 0,5-1 ml gacha bug‘latiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nordonlashtirilgan suv usuli nega birinchi tanlanadi? Doskada: ajratish: nordon suv/spirt -> pH 9-12 -> xloroform. Tipik xato: pH ni kislotali muhitda ekstraksiya qilish."
+  },
+  {
+   "title": "Biosuyuqliklardan ekstraksiya",
+   "bullets": [
+    {
+     "text": "10 ml qon yoki 50 ml siydik ammiakning 25% eritmasi bilan pH=10-11 ga keltiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xloroform va n-butanolning 9:1 aralashmasi bilan 3 marta ekstraksiya qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Organik qatlam 1 g suvsiz Na2SO4 dan o‘tkaziladi, 100 mkl 5% HCl solinib, 0,5-1,0 ml gacha bug‘latiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "79-80"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Qon / siydikdan ekstraksiya",
+    "nodes": [
+     "10 ml qon / 50 ml siydik",
+     "NH3 25%: pH 10-11",
+     "Xloroform:n-butanol 9:1",
+     "Na2SO4, 100 mkl 5% HCl",
+     "Bug‘latish 0,5-1,0 ml"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: HCl nima uchun qo‘shiladi? Doskada: 5 bosqichli sxema. Tipik xato: ekstraktni quruq qoldiqqacha bug‘latish (HCl bilan tuz hosil qilinadi)."
+  },
+  {
+   "title": "Kimyoviy tahlil: Marki va ningidrin",
+   "bullets": [
+    {
+     "text": "Marki reaktivi bilan fenilalkilaminlar zarg‘aldoq rang hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "80"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ningidrin eritmasi bilan binafsha rang hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "80"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: xloroform-aseton-etanol-ammiak 25% (20:3:1:20); ochuvchi reaktiv ningidrin; fenilalkilaminlar Rf=0,36.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "80"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Marki va ningidrin reaksiyalari nimani ko‘rsatadi? Doskada: ikki rangli reaksiya + YuQX. Tipik xato: bu umumiy reaksiyalar bo‘lib, aniq moddani bildirmaydi. Izoh: 70-betdagi Marki reaktivi tarkibi kitobda berilmagan."
+  },
+  {
+   "title": "Marki reaktivi bilan ranglar (11-jadval)",
+   "bullets": [
+    {
+     "text": "Tabletka (5-10 mg) xovonchada maydalanib, chinni tovoqchada 2-3 tomchi Marki reaktivi bilan tekshiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MDA, MDMA, MDEA, MBDB va BDB ko‘kimtir-qora (yashil-qora) rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Meskalin zarg‘aldoq, metamfetamin jigarrang, DOM/STP sariq rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Marki reaktivi",
+    "header": [
+     "Modda",
+     "Rang"
+    ],
+    "rows": [
+     [
+      "MDA, MDMA, MDEA",
+      "ko‘kimtir-qora, yashil-qora"
+     ],
+     [
+      "DOM/STP",
+      "sariq"
+     ],
+     [
+      "PMA",
+      "och kulrang"
+     ],
+     [
+      "TMA, meskalin",
+      "zarg‘aldoq"
+     ],
+     [
+      "DOB",
+      "zumrad-yashil"
+     ],
+     [
+      "Metamfetamin",
+      "jigarrang"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: rangli reaksiya nima uchun yakuniy emas? Doskada: modda-rang juftliklari. Tipik xato: TMA va meskalinning bir xil rangini «ayniyat» deb hisoblash."
+  },
+  {
+   "title": "YuQX: Rf qiymatlari (12-jadval)",
+   "bullets": [
+    {
+     "text": "Sistema: xloroform-aseton-etanol-ammiak 25% (20:3:1:20); Merck va Sorbfil plastinkalari.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Rf qiymatlari plastinkaga bog‘liq: Sorbfil plastinkasida qiymatlar yuqoriroq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Marki va ningidrin bilan ranglar Rf bilan birga baholanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf (Merck / Sorbfil)",
+    "header": [
+     "Modda",
+     "Merck",
+     "Sorbfil"
+    ],
+    "rows": [
+     [
+      "MDA",
+      "0,44",
+      "0,66"
+     ],
+     [
+      "MDMA",
+      "0,12",
+      "0,23"
+     ],
+     [
+      "DOM/STP",
+      "0,30",
+      "0,46"
+     ],
+     [
+      "Meskalin",
+      "0,36",
+      "0,50"
+     ],
+     [
+      "Metamfetamin",
+      "0,25",
+      "0,38"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: plastinka turi Rf ga qanday ta’sir qiladi? Doskada: ikki ustun. Tipik xato: Merck va Sorbfil qiymatlarini bir jadvalda taqqoslab ayniyat deb yozish."
+  },
+  {
+   "title": "UB-nur yutish maksimumlari",
+   "bullets": [
+    {
+     "text": "Amfetamin, metamfetamin, efedrin va norpsevdoefedrin 0,1 M HCl da 251, 257, 263 nm maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedron 251 nm, MDA va MDMA 235 va 286 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "N-etil-MDA va MBDB 234 va 286 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "UB maksimumlari (0,1 M HCl)",
+    "header": [
+     "Modda",
+     "λmax, nm"
+    ],
+    "rows": [
+     [
+      "Amfetamin, efedrin",
+      "251, 257, 263"
+     ],
+     [
+      "Efedron",
+      "251"
+     ],
+     [
+      "MDA, MDMA",
+      "235, 286"
+     ],
+     [
+      "N-etil-MDA, MBDB",
+      "234, 286"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega fenilalkilaminlar UB bilan guruhlarga ajraydi? Doskada: ikki guruh: 251-257-263 va 234/235-286. Tipik xato: efedron va efedrin spektrlarini bir xil deb olish."
+  },
+  {
+   "title": "Dastlabki tahlil: DOB, DOX, DOM",
+   "bullets": [
+    {
+     "text": "DOB, DOX yoki DOM saqlagan filtr qog‘oz 1x1 sm kesilib, 1 ml xloroform va 1 tomchi 0,1 M KOH solinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Eritma suv hammomida qaynatiladi, sovutilgach organik qatlam ajratilib, quruq qoldiqqacha bug‘latiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qoldiqqa 2-3 tomchi Marki reaktivi qo‘shilganda rang hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "caption": "Filtr qog‘oz namunasi",
+    "items": [
+     {
+      "title": "Maydalash",
+      "text": "filtr qog‘oz 1x1 sm"
+     },
+     {
+      "title": "Reagent",
+      "text": "1 ml xloroform, 1 tomchi 0,1 M KOH"
+     },
+     {
+      "title": "Qaynatish",
+      "text": "suv hammomida, so‘ng sovutish"
+     },
+     {
+      "title": "Ajratish",
+      "text": "organik qatlam, quruq qoldiq"
+     },
+     {
+      "title": "Reaksiya",
+      "text": "2-3 tomchi Marki reaktivi"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega qoldiq quruq holgacha bug‘latiladi? Doskada: qadamlar. Tipik xato: KOH ni 1 M deb yozish (kitobda 0,1 M)."
+  },
+  {
+   "title": "Meskalin YuQX da (12-jadval)",
+   "bullets": [
+    {
+     "text": "Meskalin Merck plastinkasida Rf=0,36, Sorbfil plastinkasida Rf=0,50.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Marki reaktivi bilan meskalin zarg‘aldoq, ningidrin bilan binafsha rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86-87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tizim: xloroform-aseton-etanol-ammiak 25% eritmasi (20:3:1:20).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: plastinka turi Rf ga qanday ta’sir qiladi? Doskada: Merck 0,36 va Sorbfil 0,50. Tipik xato: sistemani o‘zgartirib Rf ni taqqoslash. Izoh: 12-jadval 37-darsda (sintetik fenilalkilaminlar) to‘liq ko‘riladi."
+  },
+  {
+   "title": "Prekursorlar bilan bog‘liqlik",
+   "bullets": [
+    {
+     "text": "Prekursorlar ro‘yxatida efedrin, psevdoefedrin, norpsevdoefedrin, N-metilefedrin va fenilpropanolamin ko‘rsatilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedrin va N-metilefedrin metkatinon, norpsevdoefedrin norkatinon, fenilpropanolamin esa katinon va metkatinon olish uchun keltirilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kaliy permanganat ham ro‘yxatda metkatinon olish uchun prekursor sifatida berilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Prekursorlar (18-jadval)",
+    "header": [
+     "Prekursor",
+     "Tayyorlanadigan vosita"
+    ],
+    "rows": [
+     [
+      "Efedrin",
+      "metkatinon"
+     ],
+     [
+      "N-metilefedrin",
+      "metkatinon"
+     ],
+     [
+      "Norpsevdoefedrin",
+      "norkatinon"
+     ],
+     [
+      "Fenilpropanolamin",
+      "katinon, metkatinon"
+     ],
+     [
+      "Psevdoefedrin",
+      "pervitin"
+     ],
+     [
+      "Kaliy permanganat",
+      "metkatinon"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega efedrinni dori sifatida sotish nazoratda? Doskada: efedrin + KMnO4 -> metkatinon (jadval bo‘yicha). Tipik xato: yulduzcha (*) belgisining ma’nosini kitobdan o‘qib bo‘lmadi: jadvalda ba’zi qatorlar yulduzcha bilan. Izoh: prekursorlar bobi 39-darsda."
+  },
+  {
+   "title": "Xulosa va nazorat savollari",
+   "bullets": [
+    {
+     "text": "Tabiiy fenilalkilaminlar: kata (katin, katinon), efedra (efedrin) va peyot (meskalin) alkaloidlari.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "74-79"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedrin va efedronni siydikdan K2CO3 bilan pH 10 da xloroformga ajratiladi; Dragendorf, Reyneke, Cu-CS2, YuQX, UB, IQ, MS bilan aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "76-78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nazorat: efedrin tuzilishi; efedron olinishi va miqdoriy tahlili; efedrin va efedronni farqlash; fenilalkilaminlar qaysi o‘simliklardan olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "80"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uch asosiy xulosani o‘z so‘zingiz bilan ayting. Doskada: efedrin -> efedron -> meskalin zanjiri. Tipik xato: nazorat savollarini yodlab, usullarni bog‘lamaslik."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Efedrin qaysi o‘simlikning asosiy ta’sir etuvchi alkaloidi?",
+   "options": [
+    "Efedra o‘ti",
+    "Peyot kaktusi",
+    "Iste’molbop kata",
+    "Koka butasi"
+   ],
+   "correct_index": 0,
+   "explanation": "Efedra o‘tining asosiy ta’sir etuvchi moddasi efedrin alkaloidi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "76"
+   }
+  },
+  {
+   "question": "Meskalin birinchi marta qaysi yilda ajratib olingan?",
+   "options": [
+    "1859",
+    "1896",
+    "1914",
+    "1938"
+   ],
+   "correct_index": 1,
+   "explanation": "Meskalin 1896 yilda peyot kaktusidan (Lophophora williamsii) ajratib olingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "79"
+   }
+  },
+  {
+   "question": "Efedron efedrindan qaysi moddalar yordamida hosil qilinadi?",
+   "options": [
+    "Vodorod peroksid",
+    "Perxlorat kislota",
+    "Kaliy permanganat va sirka kislota",
+    "Faqat kaliy permanganat"
+   ],
+   "correct_index": 2,
+   "explanation": "Narkomanlar efedronni efedrindan kaliy permanganat va sirka kislota yordamida 50-60 °C da oksidlab olishadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "77"
+   }
+  },
+  {
+   "question": "Efedrin va efedron siydikdan qaysi sharoitda xloroform bilan ajratiladi?",
+   "options": [
+    "Neytral muhitda",
+    "HCl bilan pH=1",
+    "NaOH bilan pH=14",
+    "K2CO3 10% bilan pH=10"
+   ],
+   "correct_index": 3,
+   "explanation": "Siydik kaliy karbonatning 10% eritmasi bilan pH=10 gacha ishqoriy muhitga keltirilib, xloroform bilan ekstraksiyalanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "76"
+   }
+  },
+  {
+   "question": "Reyneke tuzi bilan efedrin qanday kristallar hosil qiladi?",
+   "options": [
+    "Ninasimon to‘q qizil kristallar",
+    "To‘rt qirrali qizg‘ish-pushti kristallar",
+    "Sferoid shakldagi kristallar",
+    "Kubsimon kristallar"
+   ],
+   "correct_index": 1,
+   "explanation": "Efedrin Reyneke tuzi bilan to‘rt qirrali qizg‘ish-pushti kristallar to‘plamini hosil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "77"
+   }
+  },
+  {
+   "question": "YuQX da (xloroform:aseton 48:2) efedron uchun Rf qancha?",
+   "options": [
+    "0,28",
+    "0,36",
+    "0,71",
+    "0,83"
+   ],
+   "correct_index": 2,
+   "explanation": "Efedrin uchun Rf=0,28, efedron uchun Rf=0,71.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "77"
+   }
+  },
+  {
+   "question": "Meskalin LSD ga nisbatan qanday?",
+   "options": [
+    "100 marta kuchsiz",
+    "4000 marta kuchli",
+    "Teng kuchli",
+    "4000 marta kuchsiz"
+   ],
+   "correct_index": 3,
+   "explanation": "Meskalin LSD dan 4000 marta kuchsiz.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "79"
+   }
+  },
+  {
+   "question": "Meskalin qaysi dozada o‘limga olib kelishi mumkin?",
+   "options": [
+    "20 mg/kg",
+    "10 mg/kg",
+    "5 mg/kg",
+    "200 mg/kg"
+   ],
+   "correct_index": 0,
+   "explanation": "5-10 mg/kg da titroq, gallyusinatsiya; 20 mg/kg da markaziy asab tizimi va nafas markazi falajlanib, o‘lim mumkin.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "79"
+   }
+  },
+  {
+   "question": "Qon yoki siydikdan fenilalkilaminlarni ekstraksiya qilishda qaysi aralashma ishlatiladi?",
+   "options": [
+    "Benzol:aseton 3:1",
+    "Efir:petroley efiri 1:1",
+    "Xloroform:n-butanol 9:1",
+    "Geksan:toluol 1:1"
+   ],
+   "correct_index": 2,
+   "explanation": "10 ml qon yoki 50 ml siydik pH=10-11 ga keltirilib, xloroform va n-butanolning 9:1 aralashmasi bilan 3 marta ekstraksiya qilinadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "79"
+   }
+  },
+  {
+   "question": "Katin va katinon qaysi o‘simlik alkaloidlari?",
+   "options": [
+    "Efedra o‘ti",
+    "Peyot kaktusi",
+    "Koka butasi",
+    "Iste’molbop kata (Catha edulis)"
+   ],
+   "correct_index": 3,
+   "explanation": "Iste’molbop kata barglari tarkibida katinon va katin alkaloidlari bor.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "75"
+   }
+  },
+  {
+   "question": "Sintetik fenilalkilamin hosilalari nechta sinfga bo‘linadi?",
+   "options": [
+    "3 ta",
+    "2 ta",
+    "4 ta",
+    "5 ta"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra sintetik hosilalar 3 sinfga bo‘linadi, ammo sinflanish shartli.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "73"
+   }
+  },
+  {
+   "question": "Iste’molbop kata barglarini quritish vaqtida qaysi alkaloid bug‘lanib ketadi?",
+   "options": [
+    "Katin",
+    "Katinon",
+    "Efedrin",
+    "Meskalin"
+   ],
+   "correct_index": 1,
+   "explanation": "Quritish vaqtida psixostimulyator ta’sirga ega katinon alkaloidi bug‘lanib ketadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "75"
+   }
+  },
+  {
+   "question": "Qabul qilingan efedrin dozasining taxminan qancha qismi bir sutkada o‘zgarmagan holda siydik bilan ajraladi?",
+   "options": [
+    "20%",
+    "50%",
+    "100%",
+    "80%"
+   ],
+   "correct_index": 3,
+   "explanation": "Kitobga ko‘ra efedrin dozasining 80% i bir sutka ichida o‘zgarmagan holda siydik orqali ajraladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "76"
+   }
+  },
+  {
+   "question": "Narkomanlar efedrindan efedronni qanday haroratda oksidlab hosil qiladi?",
+   "options": [
+    "50-60 °C",
+    "100 °C",
+    "20-25 °C",
+    "5-10 °C"
+   ],
+   "correct_index": 0,
+   "explanation": "Efedron efedrindan kaliy permanganat va sirka kislota yordamida 50-60 °C da oksidlab olinadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "77"
+   }
+  },
+  {
+   "question": "Efedrinning kislotali eritmasi UB-spektrda qaysi to‘lqin uzunliklarida maksimum nur yutadi?",
+   "options": [
+    "235 va 286 nm",
+    "251, 257 va 263 nm",
+    "247 nm",
+    "234 va 286 nm"
+   ],
+   "correct_index": 1,
+   "explanation": "Kitobga ko‘ra efedrin 251, 257 va 263 nm da maksimum nur yutadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "77"
+   }
+  },
+  {
+   "question": "Efedronning 0,1 M ishqordagi eritmasi qaysi to‘lqin uzunligida maksimal nur yutadi?",
+   "options": [
+    "257 nm",
+    "251 nm",
+    "247 nm",
+    "263 nm"
+   ],
+   "correct_index": 2,
+   "explanation": "Efedronning 0,1 M HCl dagi eritmasi 251 nm da, 0,1 M ishqordagi eritmasi 247 nm da maksimal nur yutadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "78"
+   }
+  },
+  {
+   "question": "Meskalin qanday miqdorda (gidroxlorid yoki sulfat holida) gallyusinogen ta’sir etadi?",
+   "options": [
+    "200-500 mg",
+    "20 mg/kg",
+    "8%",
+    "5-10 mg/kg"
+   ],
+   "correct_index": 0,
+   "explanation": "Meskalin 200-500 mg miqdorda gallyusinogen ta’sir etadi; 20 mg/kg da o‘lim sodir bo‘lishi mumkin.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "79"
+   }
+  },
+  {
+   "question": "Biologik ob’ektlarning suvli ajratmalaridan fenilalkilaminlarni ekstraksiya qilishda pH qaysi oraliqqa keltiriladi?",
+   "options": [
+    "pH 1-3",
+    "pH 9-12",
+    "pH 4-6",
+    "pH 6-7"
+   ],
+   "correct_index": 1,
+   "explanation": "Suvli ajratmalar pH=9-12 ga keltirilib, xloroform bilan uch marta ekstraksiya qilinadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "79"
+   }
+  },
+  {
+   "question": "Marki reaktivi bilan DOM/STP qanday rang beradi?",
+   "options": [
+    "Ko‘kimtir-qora",
+    "Zarg‘aldoq",
+    "Sariq",
+    "Jigarrang"
+   ],
+   "correct_index": 2,
+   "explanation": "11-jadvalga ko‘ra DOM/STP Marki reaktivi bilan sariq rang beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "86"
+   }
+  },
+  {
+   "question": "Prekursorlar ro‘yxatida norpsevdoefedrin qaysi vositani tayyorlash uchun ko‘rsatilgan?",
+   "options": [
+    "LSD",
+    "Pervitin",
+    "Metkatinon",
+    "Norkatinon"
+   ],
+   "correct_index": 3,
+   "explanation": "18-jadvalda norpsevdoefedrin norkatinon tayyorlash prekursori sifatida ko‘rsatilgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "147"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Eslab qolish: efedrin YuQX da Rf=0,28, efedron Rf=0,71 (xloroform:aseton 48:2, ningidrin).",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "77"
+   }
+  },
+  {
+   "text": "Muhim farq: Reyneke tuzi efedrin bilan to‘rt qirrali qizg‘ish-pushti kristallar, efedron bilan to‘g‘ri qirrali ingichka kristallar beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "77-78"
+   }
+  },
+  {
+   "text": "Tarixiy: meskalin 1896 yilda peyot kaktusidan birinchi marta ajratib olingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "79"
+   }
+  },
+  {
+   "text": "Amaliy maslahat: katinon quritish vaqtida bug‘lanib ketadi, shuning uchun kata barglari plastik idishda yoki banan yaprog‘iga o‘ralgan holda tarqatiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "75"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+   "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+   "year": null,
+   "pages": "b. 73-80, 86-87, 147-148"
+  }
+ ]
 }

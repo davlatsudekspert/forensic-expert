@@ -1,0 +1,586 @@
+{
+ "topic_id": "toks-14-toks-is-gazi",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Metan va is gazi (CO) bilan zaharlanish. Qonda karboksigemoglobinni kimyoviy va SF usulda aniqlash",
+  "ru": "Metan va is gazi (CO) bilan zaharlanish. Qonda karboksigemoglobinni kimyoviy va SF usulda aniqlash",
+  "en": "Metan va is gazi (CO) bilan zaharlanish. Qonda karboksigemoglobinni kimyoviy va SF usulda aniqlash"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-14-toks-is-gazi-q01",
+   "question_i18n": {
+    "uz": "Is gazining gemoglobin bilan birikish tezligi kislorodnikiga nisbatan necha marta kuchli?"
+   },
+   "options_i18n": {
+    "uz": [
+     "30",
+     "300",
+     "3600",
+     "3"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra 300 marta."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q02",
+   "question_i18n": {
+    "uz": "Karboksigemoglobinning 20-30% miqdori qanday zaharlanishga mos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘rtacha",
+     "Kuchsiz",
+     "O‘lim",
+     "Og‘ir"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "20-30% — kuchsiz zaharlanish."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "80"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q03",
+   "question_i18n": {
+    "uz": "Is gazi organizmdan qaysi yo‘l bilan chiqariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Siydik orqali",
+     "Faqat nafas yo‘li orqali",
+     "Axlat orqali",
+     "Terlash orqali"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Is gazi organizmdan faqat nafas yo‘li orqali chiqariladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q04",
+   "question_i18n": {
+    "uz": "Spektrofotometrik usulda B eritmani tayyorlash uchun qaysi qaytaruvchi qo‘shiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Natriy ditionit",
+     "Kaliy permanganat",
+     "Natriy xlorid",
+     "Vodorod peroksid"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "A eritmaga natriy ditionit qo‘shiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q05",
+   "question_i18n": {
+    "uz": "Deoksigemoglobin qaysi to‘lqin uzunligida bitta spektral maksimum beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "571 nm",
+     "557 nm",
+     "541 nm",
+     "580 nm"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Deoksigemoglobin 557 nm da bitta maksimum beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "84"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q06",
+   "question_i18n": {
+    "uz": "Karboksigemoglobin miqdorini aniqlashda koeffitsient K qanchaga teng?"
+   },
+   "options_i18n": {
+    "uz": [
+     "37,2",
+     "3,72",
+     "0,372",
+     "0,0372"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "K = 0,372."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "85"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q07",
+   "question_i18n": {
+    "uz": "Normal qonga o‘yuvchi ishqor ta’sir ettirilsa qanday suyuqlik hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ko‘kimtir qora",
+     "Rangsiz",
+     "Qizil",
+     "Yashil"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Normal qon ko‘kimtir qora, COHb li qon rangini saqlaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "85"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q08",
+   "question_i18n": {
+    "uz": "Metanni biologik ob’ektdan tahlil qilishda qaysi usul qo‘llaniladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mineralizatsiya",
+     "Suv bug‘i bilan haydash",
+     "Gaz-suyuqlik xromatografiya",
+     "Dializ"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Metan asosan GSX bilan aniqlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "81"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q09",
+   "question_i18n": {
+    "uz": "Is gazining havo bilan portlash chegarasi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,02% gacha",
+     "50 dan 90% gacha",
+     "16 dan 73% gacha",
+     "1 dan 5% gacha"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Is gazining 16 dan 73% gacha havo aralashmasi portlashi mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "81"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q10",
+   "question_i18n": {
+    "uz": "Ruxsat etilgan havodagi is gazi konsentratsiyasi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "20 mg/l",
+     "0,2 mg/l",
+     "2 mg/l",
+     "0,02 mg/l"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ruxsat etilgan konsentratsiya 0,02 mg/l."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "80"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q11",
+   "question_i18n": {
+    "uz": "Qondagi karboksigemoglobin qaysi oraliqda bo‘lsa, og‘ir zaharlanish sodir bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "30-35%",
+     "20-30%",
+     "70-80%",
+     "35-50%"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "20-30% kuchsiz, 30-35% o‘rtacha, 35-50% og‘ir zaharlanish; 70-80% da o‘lim sodir bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q12",
+   "question_i18n": {
+    "uz": "Metanning gaz-suyuqlik xromatografiyada identifikatsiyasi qaysi ko‘rsatkich bo‘yicha amalga oshiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Absolyut ushlanish vaqti",
+     "UB-spektr maksimumi",
+     "Suyuqlanish harorati",
+     "Rf qiymati"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Metanning identifikatsiyasi absolyut ushlanish vaqtiga qarab aniqlanadi (3 daqiqa)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "81"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q13",
+   "question_i18n": {
+    "uz": "Is gazidan halok bo‘lganlarda murda dog‘lari qanday rangda bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ko‘kimtir qora",
+     "To‘q qizil",
+     "Yashil",
+     "Sariq"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Murda dog‘lari va qon karboksigemoglobin hisobiga to‘q qizil rangli bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q14",
+   "question_i18n": {
+    "uz": "Spektrofotometrik usulda V eritma qanday tayyorlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "A eritmaga formalin qo‘shiladi",
+     "A eritmaga ammoniy sulfid qo‘shiladi",
+     "A eritma qaynatiladi",
+     "A eritma is gazi bilan to‘yintiriladi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "V eritmada oksigemoglobin to‘liq karboksigemoglobinga o‘tishi uchun A eritma is gazi bilan to‘yintiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q15",
+   "question_i18n": {
+    "uz": "Karboksigemoglobin ammoniy sulfid ta’sirida qanday o‘zgaradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Metgemoglobinga aylanadi",
+     "Spektri keng yo‘lga birlashadi",
+     "Gemoglobingacha qaytarilmaydi, spektri o‘zgarmaydi",
+     "To‘liq gemoglobinga qaytariladi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Oksigemoglobin spektrlari birlashadi, COHb esa ammoniy sulfid ta’sirida qaytarilmaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q16",
+   "question_i18n": {
+    "uz": "«Suv gazi»da is gazi miqdori qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "40-50%",
+     "16-73%",
+     "taxminan 30%",
+     "4-30%"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Cho‘g‘langan ko‘mirga suv bug‘i yuborib olinadigan «suv gazi» tarkibida 40-50% is gazi bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "81"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q17",
+   "question_i18n": {
+    "uz": "Normal qonga tanin eritmasi ta’sir ettirilsa nima hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kulrang modda",
+     "Yashil rang",
+     "Ko‘kimtir qora suyuqlik",
+     "Iflos-ko‘k rang"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Normal qon tanin bilan kulrang modda beradi, karboksigemoglobinli qon rangini o‘zgartirmaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "85"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q18",
+   "question_i18n": {
+    "uz": "Mis sulfat eritmasi bilan toza qon qanday rangga o‘tadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Iflos qo‘ng‘ir",
+     "Ko‘kimtir qora",
+     "Yashil",
+     "Kulrang"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Toza qon mis sulfat bilan yashil rangga o‘tadi, is gazi bilan zaharlangan qon to‘q qizil rangini saqlaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "85"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q19",
+   "question_i18n": {
+    "uz": "Spektrofotometrik usulda karboksigemoglobin qaysi ikkita to‘lqin uzunligida spektral maksimum beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "520 va 600 nm",
+     "550 va 565 nm",
+     "557 nm",
+     "541 va 571 nm"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Karboksigemoglobin 541 va 571 nm da ikkita spektral maksimum beradi; deoksigemoglobin 557 nm da bitta maksimum beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "84"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-14-toks-is-gazi-q20",
+   "question_i18n": {
+    "uz": "Optik zichlik D2 qaysi to‘lqin uzunligida, qaysi nuqtada o‘lchanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "557 nm, Hb maksimumida",
+     "541 nm, COHb maksimumida",
+     "580 nm, bitta maksimumda",
+     "550 nm, egri chiziqlar kesishgan nuqtada"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "D2 qiymati 550 nm nur to‘lqin uzunligida, egri chiziqlar kesishgan (izobestik) nuqtada o‘lchanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "84"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  },
+  {
+   "author": "Yuldashev Z.A., Nurmatova M.I.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

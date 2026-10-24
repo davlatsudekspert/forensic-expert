@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-35-toks-kannabinoid",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Nasha (kannabis) va kannabinoidlar: Δ9-TGK, kannabinol, kannabidiol; metabolizm (TGK-COOH), tahlil",
+  "ru": "Nasha (kannabis) va kannabinoidlar: Δ9-TGK, kannabinol, kannabidiol; metabolizm (TGK-COOH), tahlil",
+  "en": "Nasha (kannabis) va kannabinoidlar: Δ9-TGK, kannabinol, kannabidiol; metabolizm (TGK-COOH), tahlil"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-35-toks-kannabinoid-q01",
+   "question_i18n": {
+    "uz": "Marixuanada biologik faol moddalar (tetragidrokannabinoidlar) miqdori qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "13-15%",
+     "2-10%",
+     "10-60%",
+     "20-80%"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Marixuanada 13-15%, gashishda 2-10%, gashish yog‘ida 10-60% tetragidrokannabinoid bor."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "62"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q02",
+   "question_i18n": {
+    "uz": "Gashish yog‘ida tetragidrokannabinoidlar miqdori qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "13-15%",
+     "10-60%",
+     "2-10%",
+     "20-80%"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Gashish yog‘ida tetragidrokannabinoidlar miqdori 10-60% bo‘lishi mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "62"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q03",
+   "question_i18n": {
+    "uz": "Nashadagi kannabinoidlardan qaysi biri giyohvand ta’sirga ega?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kannabinol",
+     "Kannabidiol",
+     "Tetragidrokannabinol",
+     "Uchalasi ham teng"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kannabinol, kannabidiol va TGK doim uchrasa ham, faqat tetragidrokannabinol giyohvand ta’sirga ega."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "65"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q04",
+   "question_i18n": {
+    "uz": "Pauli reaktivi qaysi tarkibda?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2 g vanilin 100 ml asetaldegidning 1% spirtli eritmasida",
+     "2 qism kons. H2SO4 va 3 qism 96% spirt",
+     "0,05% mustahkam ko‘k B, 10% Na2CO3 da",
+     "0,05% diazotirlangan sulfanil kislotasi, 10% Na2CO3 da"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Pauli reaktivi — 0,05% diazotirlangan sulfanil kislotasining natriy karbonatning 10% eritmasidagi aralashmasi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "66"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q05",
+   "question_i18n": {
+    "uz": "Dyukenua reaktivi qaysi tarkibda?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2 qism kons. H2SO4 va 3 qism 96% spirt",
+     "2 g vanilin 100 ml asetaldegidning 1% spirtli eritmasida",
+     "0,05% diazotirlangan sulfanil kislotasi",
+     "0,05% mustahkam ko‘k B"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Dyukenua reaktivi 2 g vanilinni 100 ml asetaldegidning spirtdagi 1% eritmasida eritib tayyorlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "66"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q06",
+   "question_i18n": {
+    "uz": "Buke reaktivi qaysi tarkibda?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2 g vanilin 100 ml asetaldegidning 1% spirtli eritmasida",
+     "0,05% diazotirlangan sulfanil kislotasi",
+     "2 qism kons. H2SO4 va 3 qism 96% etil spirti",
+     "0,05% mustahkam ko‘k B"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Buke reaktivi — 2 qism konsentrlangan sulfat kislota va 3 qism 96% etil spirti aralashmasi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "66"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q07",
+   "question_i18n": {
+    "uz": "Qog‘oz xromatografiyada Rf=0,83±0,05 qaysi kannabinoidga mos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kannabidiol",
+     "Kannabinol",
+     "Kannabidiol kislotasi",
+     "Tetragidrokannabinol"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "4-jadval: kannabidiol 0,21, kannabinol 0,56, tetragidrokannabinol 0,83 (±0,05)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "68"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q08",
+   "question_i18n": {
+    "uz": "Nasha komponentlari GSX tahlilida ichki standart sifatida nima qo‘llaniladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kokain gidroxlorid",
+     "Morfin gidroxlorid",
+     "Geroin",
+     "Strixnin"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Faol kannabinoidlar miqdori ichki standartlash usulida aniqlanadi, ichki standart — kokain gidroxlorid."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "69"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q09",
+   "question_i18n": {
+    "uz": "Farmakologik nazoratda nasha faolligi qanday tekshiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Quyonning quloq venasiga yuborib",
+     "Baqaning orqasiga tomizib",
+     "Mushuk yoki sichqonlarda ingalyatsion usulda, 70 l kamerada",
+     "Mushukning ko‘ziga tomizib"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "70 l kamerada 2 g nasha yoqilib, tajriba hayvonlari 30 daqiqa saqlanadi va o‘zgarishlar kuzatiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "70"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q10",
+   "question_i18n": {
+    "uz": "Qaysi holda shaxs nasha chekkan degan xulosa berish mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat qo‘ldan olingan paxtada kannabinoid topilsa",
+     "Tamponda tamaki topilsa",
+     "Rangli reaksiya musbat bo‘lsa",
+     "So‘lak va chayqalmada TGK aniqlansa"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Faqat qo‘ldan olingan ashyo asos bo‘lmaydi; so‘lak va chayqalmada tetragidrokannabinol aniqlansa xulosa berish mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "70-71"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q11",
+   "question_i18n": {
+    "uz": "Chekish vaqtida marixuana tutunidagi kimyoviy moddalar soni necha taga yetishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2000",
+     "70",
+     "400",
+     "13-15"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra quritilgan marixuanada 400 ga yaqin birikma bor, tutunda esa moddalar soni 2000 taga yetishi mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "62"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q12",
+   "question_i18n": {
+    "uz": "Marixuana nazorat qilinadigan giyohvandlik vositalari ro‘yxatiga qaysi yilga kelib kiritilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1942",
+     "1992",
+     "1966",
+     "2000"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "1942 yilda AQShda kanop preparatlari tibbiyotda ruxsat etilgan, 1992 yilga kelib marixuana nazorat ro‘yxatiga kiritilgan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "62"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q13",
+   "question_i18n": {
+    "uz": "Nasha iste’mol qilingandan keyin uning ta’siri qancha vaqtdan so‘ng boshlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1-3 soatdan so‘ng",
+     "5 daqiqadan so‘ng",
+     "12 soatdan so‘ng",
+     "15-30 daqiqadan so‘ng"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra nashaning ta’siri iste’mol qilingandan 15-30 daqiqa o‘tgach boshlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "63"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q14",
+   "question_i18n": {
+    "uz": "O‘tkir nasha mastligi qancha davom etadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1-3 soat",
+     "5-30 daqiqa",
+     "15-30 daqiqa",
+     "2-6 oy"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "O‘tkir mastlik 1-3 soat davom etib, og‘ir uyqu, behollik va loqaydlik bilan tugaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "64"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q15",
+   "question_i18n": {
+    "uz": "Nasha muntazam qabul qilinsa, 2-6 oydan so‘ng nima paydo bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ekzaltatsiya",
+     "Psixik asteniya",
+     "O‘tkir mastlik",
+     "Midriaz va salivatsiya"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Muntazam qabul qilinsa 2-6 oydan so‘ng psixik asteniya paydo bo‘ladi, xotira pasayadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "64"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q16",
+   "question_i18n": {
+    "uz": "Kannabinoidlarning qancha qismi besh kun ichida organizmdan chiqib ketadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50%",
+     "20%",
+     "80-90%",
+     "100%"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra besh kun ichida kannabinoidlarning 80-90% i chiqib ketadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "65"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q17",
+   "question_i18n": {
+    "uz": "Tayyorlangan «guvoh» eritmasidan qancha vaqt foydalanish mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Uch oy",
+     "Bir hafta",
+     "Bir yil",
+     "24 soat"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "«Guvoh» eritma qo‘ng‘ir germetik idishda sovitgichda saqlanadi va uch oy davomida foydalaniladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "67"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q18",
+   "question_i18n": {
+    "uz": "Qog‘oz xromatografiyada kannabinolning Rf qiymati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,21±0,05",
+     "0,56±0,05",
+     "0,83±0,05",
+     "0,98±0,01"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "4-jadvalga ko‘ra kannabidiol 0,21, kannabinol 0,56, TGK 0,83 (±0,05) Rf qiymatiga ega."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "68"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q19",
+   "question_i18n": {
+    "uz": "Rangli reaksiyalar natijasi ijobiy bo‘lmasa, qanday xulosa beriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Namunada TGK bor",
+     "Farmakologik sinov majburiy",
+     "Namuna nasha saqlamaydi",
+     "GSX tahlili kerak"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Reaksiyalar ijobiy chiqmasa qo‘shimcha tekshirishga hojat yo‘q: namuna nasha saqlamaydi degan xulosa beriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "67"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-35-toks-kannabinoid-q20",
+   "question_i18n": {
+    "uz": "GSX tahlilida kannabinoidlar uchun qo‘zg‘almas faza qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xromosorb W 10%",
+     "Silikagel KSK",
+     "Dimetilformamid",
+     "Metilsilikon elastomeri (SE-30) 3%"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kitobdagi sharoitda qo‘zg‘almas faza 3% metilsilikon elastomeri (SE-30), kolonka harorati 212 °C."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "69"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+   "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024"
+  }
+ ]
+}

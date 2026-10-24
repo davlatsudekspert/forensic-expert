@@ -1,1462 +1,2320 @@
 {
-  "topic": "Prekursorlar (1): toluol, aseton, etil efir, sirka angidridi, kaliy permanganat, sulfat va xlorid kislotalar",
-  "slides": [
+ "topic": "Prekursorlar (1): toluol, aseton, etil efir, sirka angidridi, kaliy permanganat, sulfat va xlorid kislotalar",
+ "slides": [
+  {
+   "title": "Ma’ruza rejasi va tayanch iboralar",
+   "bullets": [
     {
-      "title": "Ma’ruza rejasi va tayanch iboralar",
-      "bullets": [
-        {
-          "text": "Mavzu: prekursorlar — toluol, aseton, sirka angidridi, kaliy permanganat, sulfat va xlorid kislotalar va ularning tahlil usullari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reja: prekursor ta’rifi va nazorati, 18- va 19-jadvallar, ob’ektni tahlilga tayyorlash, har bir moddaning xossasi, chinligi va miqdori.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146-154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tayanch so‘zlar: prekursor, BMT 1988 yilgi konvensiyasi, nazorat ro‘yxati, chinlikni aniqlash, neytrallash usuli.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146-154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega oddiy kimyoviy modda nazoratga olinishi mumkin? Doskada: ma’ruza rejasi: ta’rif - ro‘yxat - 6 modda tahlili. Tipik xato: prekursorni giyohvandlik vositasining o‘zi deb o‘ylash. Izoh: sillabus sahifalari 146-153; sulfat va xlorid kislotalar tahlili kitobda 154-betda, shu sababli 146-154 olindi."
-    },
-    {
-      "title": "Prekursor nima",
-      "bullets": [
-        {
-          "text": "Prekursorlar — prekursorlar ro‘yxatiga kiritilgan va O‘zbekiston Respublikasida nazoratga olinadigan, giyohvandlik vositalari va psixotrop moddalar tayyorlash uchun foydalaniladigan moddalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "BMT 1988 yilgi yagona konvensiyasi qarorlariga asosan 26 ta modda prekursor sifatida xalqaro nazoratga olingan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bu bo‘limda toluol, aseton, sirka angidridi, kaliy permanganat, sulfat va xlorid kislotalarning tahlili ko‘riladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: prekursor va giyohvand modda farqi nima? Doskada: ta’rif: ro‘yxat + maqsad. Tipik xato: ro‘yxatdagi moddalarni zaharli deb hisoblash: bu aksariyat erituvchi yoki reagent. Izoh: matnda ham 26 ta (BMT), ham 29 ta (ro‘yxat) deyilgan; 18-jadvalda 26 qator; malaka №071 da 23 ta. Bu raqamlar o‘rtasidagi farq izohlanmagan — slaydda faqat 26 berildi."
-    },
-    {
-      "title": "Huquqiy asos",
-      "bullets": [
-        {
-          "text": "1999 yil 19 avgustda O‘zbekiston Respublikasida «Giyohvandlik vositalari va psixotrop moddalar to‘g‘risida»gi qonun qabul qilindi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qonun giyohvand, gangituvchi va prekursor moddalar muomalasiga oid ijtimoiy munosabatlarni tartibga soladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qonun bu moddalarni ishlab chiqarish va ta’minoti bo‘yicha nazoratni kuchaytirishni talab etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qonun nimani tartibga soladi? Doskada: qonun - nazorat - ro‘yxat. Tipik xato: qonun yilini boshqa hujjat yili bilan aralashtirish. Izoh: amaldagi tahrir va VM qarorlari lex.uz da tekshirilsin (malaka_errors E6)."
-    },
-    {
-      "title": "Ro‘yxatning ikki guruhi",
-      "bullets": [
-        {
-          "text": "Ro‘yxatdagi moddalar shartli ravishda ikki guruhga bo‘lingan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "1-guruh formulaning katta qismini beradi; 2-guruh yordamchi, ammo asosiy rol o‘ynaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Prekursor guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Mohiyati"
-        ],
-        "rows": [
-          [
-            "1-guruh",
-            "formulaning katta qismini tashkil qiladi"
-          ],
-          [
-            "2-guruh",
-            "yordamchi, lekin asosiy rol o‘ynaydi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: erituvchilar qaysi guruhga kiradi? Doskada: ikki guruh jadvali. Tipik xato: ikkala guruhni bir xil deb hisoblash. Izoh: 2-guruh: ’yashirin ravishda giyohvandlik vositalari tayyorlashda yordamchi, lekin asosiy rol o‘ynovchi moddalar’ (p.146)."
-    },
-    {
-      "title": "Xalqaro choralar",
-      "bullets": [
-        {
-          "text": "Yevropa Ittifoqining 2001 yil 1 martdagi qaroriga asosan 15 ta davlatda norefedrin ishlab chiqarish va nazorat choralari kuchaytirilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "2001 yilda kaliy permanganatning noqonuniy xalqaro savdoda sotilish yo‘llari aniqlandi va ushlab qolindi.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "2000 yilda Kolumbiyaning noqonuniy yo‘l bilan kokain ishlab chiqarish uchun 20 tonna xlorid kislotasini olib chiqish urinishlari to‘xtatilgan.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kislota va permanganat ham nazoratda? Doskada: 2000 va 2001 yillar misollari. Tipik xato: malaka misollarini kitob ma’lumoti deb ko‘rsatish. Izoh: ikkinchi va uchinchi misol malaka №071 dan (kitobda yo‘q)."
-    },
-    {
-      "title": "Ob’ektni tahlilga tayyorlash",
-      "bullets": [
-        {
-          "text": "Gumon qilinayotgan modda kam miqdorda bo‘lsa, laboratoriya tahlili uchun uning hamma miqdori ko‘rsatilishi shart.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Talqon shaklidagi moddadan bir necha kristall olinadi; qayta tahlil talab etilsa, kristall miqdori ikki barobar ko‘p olinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tabletka, qattiq yoki yumshoq giyohvand modda (nasha, opiy) shpatel yoki kesuvchi moslama bilan avval maydalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qayta tahlil uchun ikki barobar ko‘p olinadi? Doskada: namuna miqdori qoidalari. Tipik xato: kam namunani to‘liq sarflash (ko‘rsatilmagan holda) yoki qayta tahlil uchun qoldirmaslik."
-    },
-    {
-      "title": "Kapsula, o‘simlik va tamaki mahsulotlari",
-      "bullets": [
-        {
-          "text": "Kapsulali dori moddasi ehtiyotkorlik bilan ochilib, undan oz miqdor olinib tahlil qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘simlik xom ashyolari avval maydalanib, so‘ngra tahlil qilinadi; to‘liq tahlil laboratoriya sharoitida olib boriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146-147"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tamaki mahsulotlarida bitta tamaki o‘rami ochilib, maydalanadi va keyin tahlil olib boriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: namuna turiga qarab tayyorlash usuli nega farq qiladi? Doskada: kapsula - o‘simlik - tamaki. Tipik xato: tamaki mahsulotini ochmasdan tahlil qilish."
-    },
-    {
-      "title": "18-jadval: sirka angidridi, antranil kislota hosilalari",
-      "bullets": [
-        {
-          "text": "Sirka kislota angidridi — metakvalon, geroin; antranil kislota — 4-metilaminoreks, metakvalon.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "N-asetilantranil kislota — metakvalon.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Prekursor - mahsulot",
-        "nodes": [],
-        "header": [
-          "Prekursor",
-          "Mahsulot"
-        ],
-        "rows": [
-          [
-            "Sirka kislota angidridi",
-            "metakvalon, geroin"
-          ],
-          [
-            "Antranil kislota",
-            "4-metilaminoreks, metakvalon"
-          ],
-          [
-            "N-asetilantranil kislota",
-            "metakvalon"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sirka angidridi qaysi ikki mahsulotga kerak? Doskada: 3 qator jadval. Tipik xato: N-asetilantranil kislotani antranil kislotadan ajratmaslik."
-    },
-    {
-      "title": "18-jadval: amfetamin guruhi uchun",
-      "bullets": [
-        {
-          "text": "1-fenil-2-propanon — amfetamin; 3,4-metilendioksifenil-2-propanon — MDA, MDMA; fenilsirka kislota — MDA va uning hosilalari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Izosafrol — metilendiamfetamin (MDA); safrol — MDEA; piperonal — amfetamin hosilalari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qizil fosfor va psevdoefedrin — pervitin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi prekursor MDEA uchun? Doskada: prekursor -> amfetamin hosilasi. Tipik xato: izosafrol va safrolni aralashtirish. Izoh: kitob jadvalida «Metilendiamfetamin» (MDA) deb yozilgan."
-    },
-    {
-      "title": "18-jadval: metkatinon, katinon uchun",
-      "bullets": [
-        {
-          "text": "Efedrin, N-metilefedrin va kaliy permanganat — metkatinon.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Norpsevdoefedrin — norkatinon; fenilpropanolamin — katinon va metkatinon.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Prekursor - mahsulot",
-        "nodes": [],
-        "header": [
-          "Prekursor",
-          "Mahsulot"
-        ],
-        "rows": [
-          [
-            "Efedrin",
-            "metkatinon"
-          ],
-          [
-            "N-metilefedrin",
-            "metkatinon"
-          ],
-          [
-            "Norpsevdoefedrin",
-            "norkatinon"
-          ],
-          [
-            "Fenilpropanolamin",
-            "katinon, metkatinon"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metkatinon uchun nechta prekursor bor? Doskada: 4 ta (efedrin, N-metilefedrin, KMnO4, fenilpropanolamin). Tipik xato: yulduzcha (*) belgisi ma’nosini taxmin qilish: kitobda izohlanmagan. Izoh: 36-dars bilan bog‘lanadi: efedrin + KMnO4 -> efedron (metkatinon)."
-    },
-    {
-      "title": "18-jadval: LSD va fensiklidin uchun",
-      "bullets": [
-        {
-          "text": "Lizergin kislota, ergometrin (ergonovin) va ergotamin — LSD.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Piperidin — fensiklidin va tenotsiklidin.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Prekursor - mahsulot",
-        "nodes": [],
-        "header": [
-          "Prekursor",
-          "Mahsulot"
-        ],
-        "rows": [
-          [
-            "Lizergin kislota",
-            "LSD"
-          ],
-          [
-            "Ergometrin (ergonovin)",
-            "LSD"
-          ],
-          [
-            "Ergotamin",
-            "LSD"
-          ],
-          [
-            "Piperidin",
-            "fensiklidin, tenotsiklidin"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: LSD uchun nechta prekursor ko‘rsatilgan? Doskada: 3 prekursor - LSD. Tipik xato: piperidinni LSD prekursori deb hisoblash: u fensiklidin uchun. Izoh: ergotamin va ergometrin 40-darsda batafsil."
-    },
-    {
-      "title": "18-jadval: erituvchilar va reagentlar",
-      "bullets": [
-        {
-          "text": "Aseton, metiletilketon (2-butanon), toluol va dietil efiri ko‘pgina giyohvandlik vositasi va psixotrop moddalar tayyorlashda erituvchi sifatida ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sulfat va xlorid kislotalar (tuzlaridan tashqari) ko‘pgina giyohvandlik vositasi va psixotrop moddalar tayyorlashda reaktiv sifatida ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aseton pervitin, LSD, kokain, geroin va boshqalarni tayyorlashda erituvchi sifatida qo‘llanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega erituvchilar ham ro‘yxatda? Doskada: erituvchilar: aseton, MEK, toluol, efir; reaktivlar: H2SO4, HCl. Tipik xato: dietil efiriga alohida tahlil bor deb o‘ylash: kitobda dietil efiri faqat ro‘yxatda. Izoh: dietil efiri va metiletilketon uchun kitobda alohida tahlil usullari berilmagan."
-    },
-    {
-      "title": "19-jadval: yordamchi moddalar sifatida",
-      "bullets": [
-        {
-          "text": "Boshlang‘ich moddalar: antranil kislota, N-asetilantranil kislota, izosafrol, lizergin kislota, piperonal, piperidin, safrol, ergotamin, efedrin va boshqalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "148-149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reagentlar: sirka kislota angidridi, qizil fosfor, kaliy permanganat, sulfat va xlorid kislotalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Erituvchilar: aseton, metiletilketon (2-butanon), toluol, dietil efiri.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "148"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 19-jadval ustunlarini qanday o‘qiymiz? Doskada: uch ustun: boshlang‘ich - reagent - erituvchi. Tipik xato: 19-jadvalni 18-jadval bilan bir deb hisoblash."
-    },
-    {
-      "title": "Kokain va geroin gidroxloridini olish chizmalari",
-      "bullets": [
-        {
-          "text": "Kitobda kokain va geroin gidroxloridining olinish chizmalari rasm sifatida berilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Geroin: morfin + sirka angidridi (250 l); aseton/efir 1500-2000 l, HCl 30 l; geroin HCl 100 kg.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Geroin gidroxloridi (malaka №071)",
-        "nodes": [
-          "Opiy",
-          "Morfin",
-          "+ sirka angidridi (250 l)",
-          "Geroin (diatsetilmorfin)",
-          "Aseton/efir + HCl: gidroxlorid"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: prekursorlar qaysi bosqichda qo‘llanadi? Doskada: 5 bosqichli zanjir. Tipik xato: chizmadagi hajmlarni tahlil me’yori deb o‘ylash. Izoh: kitobdagi chizmalar rasm sifatida (matnsiz); geroin chizmasining raqamlari malaka №071 slaydidan. Kokain chizmasi 34-darsda berilgan."
-    },
-    {
-      "title": "Toluol: tasnifi",
-      "bullets": [
-        {
-          "text": "Toluol (metilbenzol) tiniq, rangsiz, o‘ziga xos hidli suyuqlik.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Solishtirma og‘irligi 0,86; suvda yomon eriydi, organik erituvchilar bilan yaxshi aralashadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Benzin tarkibida 5% gacha toluol bor; u atmosfera havosini ifloslantirish va inson a’zolariga zaharli ta’sirda asosiy o‘rinni egallaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: toluol nega havo ifloslanishida muhim? Doskada: xossalar ro‘yxati. Tipik xato: toluolni suvda eriydi deb o‘ylash."
-    },
-    {
-      "title": "Toluolning ishlatilishi",
-      "bullets": [
-        {
-          "text": "Maishiy kimyo sanoati mahsulotlari: bo‘yoq, lok, yopishqoq plyonka, kimyoviy tozalovchi vositalar, yelim sintezida qo‘llanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Trinitrotimol va boshqa kimyoviy moddalar sintezida ham ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Prekursorlar ro‘yxatida toluol ko‘pgina giyohvandlik vositasi va psixotrop moddalar tayyorlashda erituvchi sifatida ko‘rsatilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "148"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: toluolning ikki xil roli nima? Doskada: sanoat / prekursor. Tipik xato: toluolni faqat giyohvandlik bilan bog‘lash."
-    },
-    {
-      "title": "Toluolni aniqlash: nitrobirikma reaksiyasi",
-      "bullets": [
-        {
-          "text": "Kons. sulfat kislota va ammoniy nitrat bilan uzoq qizdirilganda nitrobirikma hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aralashmadan achchiq bodom mag‘zi hidi kela boshlaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nitrobirikmalar aseton va NaOH ning spirtli eritmasida ko‘kimtir-binafsha rangga bo‘yaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Toluol: nitrobirikma",
-        "nodes": [
-          "Toluol + H2SO4 + NH4NO3",
-          "Uzoq qizdirish",
-          "Achchiq bodom hidi",
-          "+ aseton + NaOH (spirtli)",
-          "Ko‘kimtir-binafsha rang"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: achchiq bodom hidi nimadan? Doskada: 5 bosqichli sxema. Tipik xato: achchiq bodom hidini faqat sianidlarga xos deb o‘ylash (toks p.21). Izoh: miqdori GSX yoki YuSSX bilan (p.150); kitobda tavsif shu bilan cheklanadi."
-    },
-    {
-      "title": "Aseton: xossalari",
-      "bullets": [
-        {
-          "text": "Aseton (dimetilketon) yog‘och va tosh ko‘mirdan quruq haydab olinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kimyoviy toza aseton rangsiz, tiniq, o‘ziga xos hidli suyuqlik; 56,3 °C da qaynaydi, suvdan yengil.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suv va barcha organik erituvchilar (efir, xloroform) bilan har qanday nisbatda aralashadi; osh tuzi, kalsiy xlorid yoki kaliy karbonat bilan to‘yintirilsa ikki qatlam bo‘lib ajraladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aralashmalar tarkibidan suv bug‘i bilan yaxshi haydaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: aseton nega suv bug‘i bilan haydaladi? Doskada: xossalar: qaynash 56,3 °C; aralashuvchanlik. Tipik xato: to‘yintirilganda qatlamlanishni suv bilan aralashmaydi deb tushunish."
-    },
-    {
-      "title": "Aseton ishlatilishi (malaka №071)",
-      "bullets": [
-        {
-          "text": "Aseton universal organik erituvchi: bo‘yoqlar, nitrotsellyuloza, tutunsiz porox va sun’iy ipak sanoatida, kimyoviy tozalashda ishlatiladi.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dorishunoslikda xloroform, sulfonal, yodoform kabi preparatlarni sintezlashda xomashyo; sun’iy kauchuk olishda ham zarur.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aseton prekursor sifatida narkotik moddalarni noqonuniy ishlab chiqarishda ham qo‘llaniladi.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: aseton nega ham dorixona, ham nazoratda? Doskada: sanoat / farmatsevtika / prekursor. Tipik xato: malaka ma’lumotini kitob deb ko‘rsatish. Izoh: bu ma’lumotlar kitobda yo‘q, malaka №071 dan."
-    },
-    {
-      "title": "Aseton: yodoform reaksiyasi",
-      "bullets": [
-        {
-          "text": "Aseton yodning ishqorli eritmasi bilan, etil spirti kabi, oson reaksiyaga kirishib yodoform beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reaksiya juda sezgir, lekin aseton uchun xarakterli emas: etil spirti va sut kislota kabi moddalar ham beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Yodoform reaksiyasi",
-        "nodes": [
-          "I2 + NaOH: NaOI",
-          "NaOI + aseton",
-          "CI3-CO-CH3",
-          "NaOH ta’sirida",
-          "Yodoform CHI3"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bu reaksiya xususiy emas? Doskada: aseton -> yodoform. Tipik xato: yodoform natijasini aseton uchun yakuniy deb yozish."
-    },
-    {
-      "title": "Aseton: nitroprussid va furfurol reaksiyalari",
-      "bullets": [
-        {
-          "text": "Natriy nitroprussidi Na2[Fe(CN)5NO] bilan ishqor ishtirokida qizil-binafsha rang; aseton uchun xarakterli emas.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Unga sirka aldegidi, metiletilketon, atsetofenon, atsetilaseton, diatsetil halal beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Furfurolning spirtdagi eritmasi (vanilin yoki salitsil aldegidi) va ishqor, so‘ng konsentrlangan HCl qo‘shilsa, aseton bo‘lsa qizil rang hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nitroprussid reaksiyasiga qaysi moddalar halal beradi? Doskada: ikki reaksiya: nitroprussid (qizil-binafsha), furfurol (qizil). Tipik xato: ikkala reaksiyani aseton uchun xususiy deb hisoblash."
-    },
-    {
-      "title": "Aseton: o-nitrobenzaldegid reaksiyasi",
-      "bullets": [
-        {
-          "text": "O-nitrobenzaldegidning 2 n ishqordagi eritmasi qo‘shilsa, aseton bor bo‘lganda ko‘k rang (indigo).",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aseton kam bo‘lsa reaksiya sekin boradi: avval sariq, so‘ng sariq-yashil va yashil-ko‘k rang.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Indigo xloroformda yaxshi eriydi, shuning uchun organik qatlam ko‘k rangga bo‘yaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "o-Nitrobenzaldegid + aseton",
-        "nodes": [
-          "Distillyat",
-          "+ o-nitrobenzaldegid, 2 n ishqor",
-          "Sariq",
-          "Sariq-yashil, yashil-ko‘k",
-          "Ko‘k (indigo)"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kam miqdordagi asetonda rang qanday o‘zgaradi? Doskada: 5 bosqichli rang o‘zgarishi. Tipik xato: sekin boradigan reaksiyani manfiy deb baholash. Izoh: sirka kislota angidridi tahlilida (3-reaksiya) indigo shu reaksiya bilan bog‘lanadi."
-    },
-    {
-      "title": "Aseton: GSX va miqdori",
-      "bullets": [
-        {
-          "text": "Aseton GSX da alanga-ionizatsion detektorli xromatografda ushlanish parametrlari bo‘yicha aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Asetonning miqdori GSX usulida aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aseton prekursorlar ro‘yxatiga kiritilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega rangli reaksiyalardan keyin GSX kerak? Doskada: aseton: 4 rangli reaksiya + GSX. Tipik xato: GSX sharoitlarini kitobdan topishga urinish: kitobda sharoit berilmagan."
-    },
-    {
-      "title": "Sirka kislota angidridi: tasnifi",
-      "bullets": [
-        {
-          "text": "Sirka kislota angidridi (Acetic anhydride) — harakatchan, rangsiz suyuqlik; kuchli bo‘g‘uvchi (sirka hidini eslatuvchi) hidga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Benzol, xloroform, etil spirtida yaxshi eriydi; havoda ruxsat etilgan miqdori 3 mg/m3.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Organik moddalar sintezida juda keng ishlatiladi; ko‘p giyohvandlik vositalari tahlilida ham qo‘llanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yuqori darajali korroziyalovchi; bug‘lari ko‘z, burun va tomoqni achishtiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ish xavfsizligi bo‘yicha qanday qoida kerak? Doskada: 3 mg/m3 va korroziya. Tipik xato: birliklarni aralashtirish: mg/m3. Izoh: malaka №071: angidrid amfetamin, geroin, metamfetamin, metakvalon va boshqalar tahlili/sintezida qo‘llanishi ko‘rsatilgan."
-    },
-    {
-      "title": "Sirka angidridi: gidroliz va FeCl3",
-      "bullets": [
-        {
-          "text": "Suv va havodagi namlik ta’sirida sirka kislota angidridi sirka kislotaga gidrolizlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Hosil bo‘lgan sirka kislotaga xos sifat reaksiyalar o‘tkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Neytrallangan qoldiqqa temir (III) xlorid qo‘shilsa, qizil mahsulot hosil bo‘lib, qizdirilganda qo‘ng‘ir rangga o‘tadi; sezgirligi 0,5 mg.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega angidridni to‘g‘ridan-to‘g‘ri emas, kislota sifatida aniqlaymiz? Doskada: angidrid -> sirka kislota -> reaksiyalar. Tipik xato: FeCl3 qizil rangini angidridning o‘ziga xos deb o‘ylash."
-    },
-    {
-      "title": "Sirka angidridi: boshqa reaksiyalar va miqdori",
-      "bullets": [
-        {
-          "text": "Qoldiqqa lantan nitrati, yodning spirtli eritmasi va ammiak qo‘shilsa, to‘q ko‘k rang yoki cho‘kma hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kalsiy tuzlari bilan qizdirilsa aseton hosil bo‘ladi, undan indigo olish mumkin; etil spirti va kons. H2SO4 bilan sirka etil efiri.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sirka kislota miqdori neytrallash usulida aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki reaksiyadan qaysi biri hid bilan aniqlanadi? Doskada: sirka etil efiri hidi; lantan nitrati: ko‘k. Tipik xato: sirka etil efiri hidini aldehid hidi bilan aralashtirish."
-    },
-    {
-      "title": "Kaliy permanganat",
-      "bullets": [
-        {
-          "text": "Kaliy permanganat KMnO4 — binafsha rangli yaltiroq kristall kukun; kuchli oksidlovchi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tibbiyotda dezinfeksiyalovchi vosita sifatida ishlatiladi; giyohvandlik vositalarini olishda ham qo‘llanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Chinligi oksidlanish-qaytarilish reaksiyalari bilan aniqlanadi: sulfat kislota ishtirokida vodorod peroksid eritmani rangsizlantiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega KMnO4 ham dori, ham prekursor? Doskada: xossa: oksidlovchi. Tipik xato: rangsizlanishni reaktiv tugaganidan deb tushunish: bu qaytarilish."
-    },
-    {
-      "title": "Kaliy permanganat miqdori",
-      "bullets": [
-        {
-          "text": "Aniq miqdor KMnO4 ga kislotali muhitda kaliy yodid qo‘shiladi: ekvivalent miqdorda erkin yod ajraladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yod 0,1 n natriy tiosulfat eritmasi bilan titrlanadi; indikator — kraxmal.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "KMnO4 yodometrik miqdori",
-        "nodes": [
-          "Aniq miqdor KMnO4",
-          "Kislotali muhit + KI",
-          "Erkin yod ajraladi",
-          "Titr: 0,1 n Na2S2O3",
-          "Indikator: kraxmal"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega yod ekvivalent miqdorda? Doskada: 5 bosqichli titrlash. Tipik xato: titrantni boshqa konsentratsiyada olish."
-    },
-    {
-      "title": "Sulfat kislota",
-      "bullets": [
-        {
-          "text": "Sulfat kislota giyohvandlik vositalari va psixotrop moddalar olishda reagent sifatida ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bariy tuzlari qo‘shilganda oq cho‘kma hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qo‘rg‘oshin tuzlari qo‘shilganda oq cho‘kma — qo‘rg‘oshin sulfat hosil bo‘ladi; u ammoniy asetat va o‘yuvchi ishqorlarda eriydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sulfat kislota miqdori neytrallash usuli bilan aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: PbSO4 cho‘kmasini BaSO4 dan qanday farqlaymiz? Doskada: BaCl2 va Pb2+ reaksiyalari. Tipik xato: bariy sulfatni ishqorda eriydi deb o‘ylash."
-    },
-    {
-      "title": "Sulfat kislota: toksikligi va rodizonat (malaka №071)",
-      "bullets": [
-        {
-          "text": "Sulfat kislota organizm uchun zaharli; o‘lim dozasi (LD) 5-10 g deb ko‘rsatilgan.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qizil rangli bariy rodizonat sulfat kislota ta’sirida rangsizlanadi.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kons. kislota bilan zaharlanishda qattiq og‘riq, qon qusish, tirishish; keyinchalik qorin bo‘shlig‘i teshilishi mumkin.",
-          "source": {
-            "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-            "page": "prekursorlar ma'ruzasi"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: rodizonat reaksiyasining mohiyati nima? Doskada: qizil rodizonat -> rangsiz. Tipik xato: malaka ma’lumotini kitobdan deb ko‘rsatish. Izoh: bu bo‘lim kitobda yo‘q, malaka №071 dan olingan; kitobdagi sulfat tahlili Ba va Pb reaksiyalari bilan cheklanadi."
-    },
-    {
-      "title": "Xlorid kislota",
-      "bullets": [
-        {
-          "text": "Xlorid kislota giyohvandlik vositalari va psixotrop moddalar olishda reagent sifatida ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kislotali muhitda kumush nitrat bilan oq cho‘kma (AgCl) hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bertole tuzi qo‘shilganda erkin xlor ajraladi; kaliy yodid va kraxmal qo‘shilsa aralashma ko‘karadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xlorid kislota miqdori neytrallash usulida aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ko‘karish nima uchun sodir bo‘ladi? Doskada: HCl + KClO3 -> Cl2; Cl2 + KI -> I2 (kraxmal). Tipik xato: AgCl cho‘kmasini nitrat kislotada eriydi deb o‘ylash."
-    },
-    {
-      "title": "Keyingi dars: ergot alkaloidlari, antranil kislota",
-      "bullets": [
-        {
-          "text": "Prekursorlar ro‘yxatiga kiruvchi ergotamin, ergometrin, lizergin kislota va antranil kislota giyohvandlik vositalari olishda asosiy moddalar hisoblanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ergotamin, ergometrin va lizergin kislota gallyusinogen LSD ni olishda ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Antranil kislota 4-metilaminoreks va metakvalonlarni sintezlashda asosiy modda.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: bu to‘rt modda keyingi darsning mavzusi. Doskada: prekursor -> LSD / metakvalon. Tipik xato: bu moddalarni 39-darsda tahlil usullari bilan o‘rganishga urinish: ular 40-darsda. Izoh: ergotamin va ergometrin kitobda 155-betdan batafsil."
-    },
-    {
-      "title": "Xulosa va nazorat savollari",
-      "bullets": [
-        {
-          "text": "Prekursorlar — nazoratdagi, giyohvandlik vositasi va psixotrop moddalar tayyorlash uchun ishlatiladigan moddalar; ro‘yxat 26 qator.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "146-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Toluol — nitrobirikma reaksiyasi; aseton — yodoform, nitroprussid, furfurol, o-nitrobenzaldegid, GSX; angidrid — FeCl3, La(NO3)3, etil asetat.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "150-153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "KMnO4 — H2O2 bilan rangsizlanadi, yodometrik titrlash; H2SO4 — Ba va Pb tuzlari; HCl — AgNO3 va Bertole tuzi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "153-154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: olti modda uchun bittadan xarakterli reaksiyani ayting. Doskada: modda -> reaksiya jadvali. Tipik xato: aseton reaksiyalarining xususiy emasligini unutish. Izoh: dietil efiri uchun alohida tahlil usuli kitobda berilmagan."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Prekursorlar nima?",
-      "options": [
-        "Faqat giyohvandlik vositalarining o‘zi",
-        "Nazoratga olingan, giyohvandlik vositalari va psixotrop moddalar tayyorlash uchun ishlatiladigan moddalar",
-        "Faqat dori vositalari",
-        "Faqat kislotalar"
-      ],
-      "correct_index": 1,
-      "explanation": "Prekursorlar — ro‘yxatga kiritilgan va nazoratga olinadigan, giyohvandlik vositalari va psixotrop moddalar tayyorlashda foydalaniladigan moddalar.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "146"
-      }
-    },
-    {
-      "question": "O‘zbekistonda giyohvandlik vositalari va psixotrop moddalar to‘g‘risidagi qonun qachon qabul qilingan?",
-      "options": [
-        "1988 yil",
-        "1999 yil 19 avgust",
-        "2001 yil 1 mart",
-        "2010 yil"
-      ],
-      "correct_index": 1,
-      "explanation": "Qonun 1999 yil 19 avgustda qabul qilingan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "146"
-      }
-    },
-    {
-      "question": "Sirka kislota angidridi qaysi mahsulotlar uchun prekursor?",
-      "options": [
-        "Metakvalon va geroin",
-        "LSD",
-        "Fensiklidin",
-        "Katinon"
-      ],
-      "correct_index": 0,
-      "explanation": "18-jadvalga ko‘ra sirka kislota angidridi metakvalon va geroin tayyorlash uchun ishlatiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "147"
-      }
-    },
-    {
-      "question": "Toluolni aniqlashda nitrobirikma hosil bo‘lganda qanday hid keladi?",
-      "options": [
-        "Achchiq bodom mag‘zi hidi",
-        "Sirka hidi",
-        "Baliq hidi",
-        "Spirt hidi"
-      ],
-      "correct_index": 0,
-      "explanation": "Toluol kons. H2SO4 va ammoniy nitrat bilan qizdirilsa nitrobirikma hosil bo‘ladi va achchiq bodom mag‘zi hidi keladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "150"
-      }
-    },
-    {
-      "question": "Aseton qaysi haroratda qaynaydi?",
-      "options": [
-        "34,6 °C",
-        "56,3 °C",
-        "78,4 °C",
-        "100 °C"
-      ],
-      "correct_index": 1,
-      "explanation": "Kimyoviy toza aseton 56,3 °C da qaynaydi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "151"
-      }
-    },
-    {
-      "question": "Aseton uchun yodoform reaksiyasi nega xususiy emas?",
-      "options": [
-        "Etil spirti va sut kislota ham beradi",
-        "Reaksiya sezgir emas",
-        "Faqat sovuqda boradi",
-        "Faqat suvsiz muhitda boradi"
-      ],
-      "correct_index": 0,
-      "explanation": "Reaksiya sezgir, lekin xarakterli emas: etil spirti va sut kislota kabi moddalar ham yodoform beradi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "151"
-      }
-    },
-    {
-      "question": "o‘-Nitrobenzaldegid bilan aseton qanday rang hosil qiladi?",
-      "options": [
-        "Ko‘k (indigo)",
-        "Qizil",
-        "Sariq",
-        "Yashil cho‘kma"
-      ],
-      "correct_index": 0,
-      "explanation": "o-Nitrobenzaldegidning ishqordagi eritmasi bilan aseton bor bo‘lganda ko‘k rang (indigo) hosil bo‘ladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "152"
-      }
-    },
-    {
-      "question": "Temir (III) xlorid bilan sirka kislotada qanday rang hosil bo‘ladi?",
-      "options": [
-        "Qizil, qizdirilganda qo‘ng‘ir",
-        "Ko‘k",
-        "Yashil",
-        "Rangsiz"
-      ],
-      "correct_index": 0,
-      "explanation": "Neytrallangan qoldiqqa FeCl3 qo‘shilsa qizil mahsulot hosil bo‘lib, qizdirilganda qo‘ng‘ir rangga o‘tadi; sezgirligi 0,5 mg.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "153"
-      }
-    },
-    {
-      "question": "Kaliy permanganat miqdori qaysi titrant bilan aniqlanadi (KI qo‘shilgandan so‘ng)?",
-      "options": [
-        "0,1 n natriy tiosulfat, kraxmal indikator",
-        "0,1 n NaOH",
-        "0,1 n AgNO3",
-        "0,1 n HCl"
-      ],
-      "correct_index": 0,
-      "explanation": "KMnO4 kislotali muhitda KI bilan erkin yod ajratadi; yod 0,1 n natriy tiosulfat bilan titrlanadi (kraxmal indikatori).",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "153"
-      }
-    },
-    {
-      "question": "Xlorid kislotaga Bertole tuzi qo‘shilganda nima ajraladi?",
-      "options": [
-        "Erkin xlor",
-        "Vodorod",
-        "Kislorod",
-        "Azot"
-      ],
-      "correct_index": 0,
-      "explanation": "HCl + KClO3 reaksiyasida erkin xlor ajraladi; KI va kraxmal bilan aralashma ko‘karadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "154"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Eslab qolish: aseton 56,3 °C da qaynaydi; toluolning solishtirma og‘irligi 0,86; sirka angidridi havoda ruxsat etilgan miqdori 3 mg/m3.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "150-152"
-      }
-    },
-    {
-      "text": "Muhim farq: yodoform reaksiyasi aseton va etil spirtida ham, nitroprussid reaksiyasi esa aldegid va boshqa ketonlar bilan ham musbat bo‘ladi, shuning uchun ular xususiy emas.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "151"
-      }
-    },
-    {
-      "text": "Amaliy maslahat: KMnO4 miqdori kislotali muhitda KI bilan yodometrik: 0,1 n Na2S2O3, kraxmal indikator.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "153"
-      }
-    },
-    {
-      "text": "Tarixiy: 1999 yil 19 avgustda O‘zbekistonda giyohvandlik vositalari va psixotrop moddalar to‘g‘risidagi qonun qabul qilingan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "146"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Mavzu: prekursorlar — toluol, aseton, sirka angidridi, kaliy permanganat, sulfat va xlorid kislotalar va ularning tahlil usullari.",
+     "source": {
       "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
       "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-      "year": null,
-      "pages": "b. 146-154"
+      "page": "146"
+     },
+     "uncertain": false
     },
     {
+     "text": "Reja: prekursor ta’rifi va nazorati, 18- va 19-jadvallar, ob’ektni tahlilga tayyorlash, har bir moddaning xossasi, chinligi va miqdori.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146-154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tayanch so‘zlar: prekursor, BMT 1988 yilgi konvensiyasi, nazorat ro‘yxati, chinlikni aniqlash, neytrallash usuli.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146-154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega oddiy kimyoviy modda nazoratga olinishi mumkin? Doskada: ma’ruza rejasi: ta’rif - ro‘yxat - 6 modda tahlili. Tipik xato: prekursorni giyohvandlik vositasining o‘zi deb o‘ylash. Izoh: sillabus sahifalari 146-153; sulfat va xlorid kislotalar tahlili kitobda 154-betda, shu sababli 146-154 olindi."
+  },
+  {
+   "title": "Prekursor nima",
+   "bullets": [
+    {
+     "text": "Prekursorlar — ro‘yxatga kiritilgan, O‘zbekistonda nazoratga olinadigan, giyohvandlik vositalari va psixotrop moddalar tayyorlashda ishlatiladigan moddalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "BMT 1988 yilgi yagona konvensiyasi qarorlariga asosan 26 ta modda prekursor sifatida xalqaro nazoratga olingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bu bo‘limda toluol, aseton, sirka angidridi, kaliy permanganat, sulfat va xlorid kislotalarning tahlili ko‘riladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: prekursor va giyohvand modda farqi nima? Doskada: ta’rif: ro‘yxat + maqsad. Tipik xato: ro‘yxatdagi moddalarni zaharli deb hisoblash: bu aksariyat erituvchi yoki reagent. Izoh: matnda ham 26 ta (BMT), ham 29 ta (ro‘yxat) deyilgan; 18-jadvalda 26 qator; malaka №071 da 23 ta. Bu raqamlar o‘rtasidagi farq izohlanmagan — slaydda faqat 26 berildi."
+  },
+  {
+   "title": "Huquqiy asos",
+   "bullets": [
+    {
+     "text": "1999 yil 19 avgustda O‘zbekiston Respublikasida «Giyohvandlik vositalari va psixotrop moddalar to‘g‘risida»gi qonun qabul qilindi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonun giyohvand, gangituvchi va prekursor moddalar muomalasiga oid ijtimoiy munosabatlarni tartibga soladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonun bu moddalarni ishlab chiqarish va ta’minoti bo‘yicha nazoratni kuchaytirishni talab etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Prekursorlar nazorati",
+    "nodes": [
+     "1988: BMT yagona konvensiyasi (26 modda)",
+     "1999, 19 avgust: O‘zR qonuni",
+     "2001, 1 mart: EI qarori (norefedrin)"
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qonun nimani tartibga soladi? Doskada: qonun - nazorat - ro‘yxat. Tipik xato: qonun yilini boshqa hujjat yili bilan aralashtirish. Izoh: amaldagi tahrir va VM qarorlari lex.uz da tekshirilsin (malaka_errors E6)."
+  },
+  {
+   "title": "Ro‘yxatning ikki guruhi",
+   "bullets": [
+    {
+     "text": "Ro‘yxatdagi moddalar shartli ravishda ikki guruhga bo‘lingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1-guruh formulaning katta qismini beradi; 2-guruh yordamchi, ammo asosiy rol o‘ynaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Prekursor guruhlari",
+    "nodes": [],
+    "header": [
+     "Guruh",
+     "Mohiyati"
+    ],
+    "rows": [
+     [
+      "1-guruh",
+      "formulaning katta qismini tashkil qiladi"
+     ],
+     [
+      "2-guruh",
+      "yordamchi, lekin asosiy rol o‘ynaydi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: erituvchilar qaysi guruhga kiradi? Doskada: ikki guruh jadvali. Tipik xato: ikkala guruhni bir xil deb hisoblash. Izoh: 2-guruh: ’yashirin ravishda giyohvandlik vositalari tayyorlashda yordamchi, lekin asosiy rol o‘ynovchi moddalar’ (p.146)."
+  },
+  {
+   "title": "Xalqaro choralar",
+   "bullets": [
+    {
+     "text": "Yevropa Ittifoqining 2001 yil 1 martdagi qaroriga asosan 15 ta davlatda norefedrin ishlab chiqarish va nazorat choralari kuchaytirilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "2001 yilda kaliy permanganatning noqonuniy xalqaro savdoda sotilish yo‘llari aniqlandi va ushlab qolindi.",
+     "source": {
       "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
       "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "2000 yilda Kolumbiyaning noqonuniy yo‘l bilan kokain ishlab chiqarish uchun 20 tonna xlorid kislotasini olib chiqish urinishlari to‘xtatilgan.",
+     "source": {
+      "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kislota va permanganat ham nazoratda? Doskada: 2000 va 2001 yillar misollari. Tipik xato: malaka misollarini kitob ma’lumoti deb ko‘rsatish. Izoh: ikkinchi va uchinchi misol malaka №071 dan (kitobda yo‘q)."
+  },
+  {
+   "title": "Ob’ektni tahlilga tayyorlash",
+   "bullets": [
+    {
+     "text": "Gumon qilinayotgan modda kam miqdorda bo‘lsa, laboratoriya tahlili uchun uning hamma miqdori ko‘rsatilishi shart.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Talqon shaklidagi moddadan bir necha kristall olinadi; qayta tahlil talab etilsa, kristall miqdori ikki barobar ko‘p olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tabletka, qattiq yoki yumshoq giyohvand modda (nasha, opiy) shpatel yoki kesuvchi moslama bilan avval maydalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "caption": "Namunani tahlilga tayyorlash",
+    "items": [
+     {
+      "title": "Kam miqdor",
+      "text": "hamma miqdori ko‘rsatiladi"
+     },
+     {
+      "title": "Talqon",
+      "text": "bir necha kristall; qayta tahlilga 2 barobar"
+     },
+     {
+      "title": "Tabletka, nasha, opiy",
+      "text": "shpatel bilan avval maydalanadi"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qayta tahlil uchun ikki barobar ko‘p olinadi? Doskada: namuna miqdori qoidalari. Tipik xato: kam namunani to‘liq sarflash (ko‘rsatilmagan holda) yoki qayta tahlil uchun qoldirmaslik."
+  },
+  {
+   "title": "Kapsula, o‘simlik va tamaki mahsulotlari",
+   "bullets": [
+    {
+     "text": "Kapsulali dori moddasi ehtiyotkorlik bilan ochilib, undan oz miqdor olinib tahlil qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘simlik xom ashyolari avval maydalanib, so‘ngra tahlil qilinadi; to‘liq tahlil laboratoriya sharoitida olib boriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146-147"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tamaki mahsulotlarida bitta tamaki o‘rami ochilib, maydalanadi va keyin tahlil olib boriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Namuna turi bo‘yicha",
+    "root": "Tahlil uchun namuna",
+    "children": [
+     {
+      "label": "Kapsula",
+      "items": [
+       "ehtiyotkorlik bilan ochiladi",
+       "oz miqdor olinadi"
+      ]
+     },
+     {
+      "label": "O‘simlik xom ashyo",
+      "items": [
+       "avval maydalanadi"
+      ]
+     },
+     {
+      "label": "Tamaki mahsuloti",
+      "items": [
+       "bitta o‘ram ochiladi",
+       "maydalanib tahlil qilinadi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: namuna turiga qarab tayyorlash usuli nega farq qiladi? Doskada: kapsula - o‘simlik - tamaki. Tipik xato: tamaki mahsulotini ochmasdan tahlil qilish."
+  },
+  {
+   "title": "18-jadval: sirka angidridi, antranil kislota hosilalari",
+   "bullets": [
+    {
+     "text": "Sirka kislota angidridi — metakvalon, geroin; antranil kislota — 4-metilaminoreks, metakvalon.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "N-asetilantranil kislota — metakvalon.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Prekursor - mahsulot",
+    "nodes": [],
+    "header": [
+     "Prekursor",
+     "Mahsulot"
+    ],
+    "rows": [
+     [
+      "Sirka kislota angidridi",
+      "metakvalon, geroin"
+     ],
+     [
+      "Antranil kislota",
+      "4-metilaminoreks, metakvalon"
+     ],
+     [
+      "N-asetilantranil kislota",
+      "metakvalon"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sirka angidridi qaysi ikki mahsulotga kerak? Doskada: 3 qator jadval. Tipik xato: N-asetilantranil kislotani antranil kislotadan ajratmaslik."
+  },
+  {
+   "title": "18-jadval: amfetamin guruhi uchun",
+   "bullets": [
+    {
+     "text": "1-fenil-2-propanon — amfetamin; 3,4-metilendioksifenil-2-propanon — MDA, MDMA; fenilsirka kislota — MDA va uning hosilalari.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Izosafrol — metilendiamfetamin (MDA); safrol — MDEA; piperonal — amfetamin hosilalari.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qizil fosfor va psevdoefedrin — pervitin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Amfetamin guruhi prekursorlari",
+    "root": "Prekursorlar",
+    "children": [
+     {
+      "label": "Amfetamin",
+      "items": [
+       "1-fenil-2-propanon",
+       "piperonal (hosilalari)"
+      ]
+     },
+     {
+      "label": "MDA, MDMA",
+      "items": [
+       "3,4-metilendioksifenil-2-propanon",
+       "fenilsirka kislota"
+      ]
+     },
+     {
+      "label": "MDA, MDEA",
+      "items": [
+       "izosafrol (MDA)",
+       "safrol (MDEA)"
+      ]
+     },
+     {
+      "label": "Pervitin",
+      "items": [
+       "qizil fosfor",
+       "psevdoefedrin"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi prekursor MDEA uchun? Doskada: prekursor -> amfetamin hosilasi. Tipik xato: izosafrol va safrolni aralashtirish. Izoh: kitob jadvalida «Metilendiamfetamin» (MDA) deb yozilgan."
+  },
+  {
+   "title": "18-jadval: metkatinon, katinon uchun",
+   "bullets": [
+    {
+     "text": "Efedrin, N-metilefedrin va kaliy permanganat — metkatinon.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Norpsevdoefedrin — norkatinon; fenilpropanolamin — katinon va metkatinon.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Prekursor - mahsulot",
+    "nodes": [],
+    "header": [
+     "Prekursor",
+     "Mahsulot"
+    ],
+    "rows": [
+     [
+      "Efedrin",
+      "metkatinon"
+     ],
+     [
+      "N-metilefedrin",
+      "metkatinon"
+     ],
+     [
+      "Norpsevdoefedrin",
+      "norkatinon"
+     ],
+     [
+      "Fenilpropanolamin",
+      "katinon, metkatinon"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metkatinon uchun nechta prekursor bor? Doskada: 4 ta (efedrin, N-metilefedrin, KMnO4, fenilpropanolamin). Tipik xato: yulduzcha (*) belgisi ma’nosini taxmin qilish: kitobda izohlanmagan. Izoh: 36-dars bilan bog‘lanadi: efedrin + KMnO4 -> efedron (metkatinon)."
+  },
+  {
+   "title": "18-jadval: LSD va fensiklidin uchun",
+   "bullets": [
+    {
+     "text": "Lizergin kislota, ergometrin (ergonovin) va ergotamin — LSD.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Piperidin — fensiklidin va tenotsiklidin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Prekursor - mahsulot",
+    "nodes": [],
+    "header": [
+     "Prekursor",
+     "Mahsulot"
+    ],
+    "rows": [
+     [
+      "Lizergin kislota",
+      "LSD"
+     ],
+     [
+      "Ergometrin (ergonovin)",
+      "LSD"
+     ],
+     [
+      "Ergotamin",
+      "LSD"
+     ],
+     [
+      "Piperidin",
+      "fensiklidin, tenotsiklidin"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: LSD uchun nechta prekursor ko‘rsatilgan? Doskada: 3 prekursor - LSD. Tipik xato: piperidinni LSD prekursori deb hisoblash: u fensiklidin uchun. Izoh: ergotamin va ergometrin 40-darsda batafsil."
+  },
+  {
+   "title": "18-jadval: erituvchilar va reagentlar",
+   "bullets": [
+    {
+     "text": "Aseton, metiletilketon (2-butanon), toluol va dietil efiri ko‘pgina giyohvandlik vositasi va psixotrop moddalar tayyorlashda erituvchi sifatida ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sulfat va xlorid kislotalar (tuzlaridan tashqari) ko‘pgina giyohvandlik vositasi va psixotrop moddalar tayyorlashda reaktiv sifatida ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton pervitin, LSD, kokain, geroin va boshqalarni tayyorlashda erituvchi sifatida qo‘llanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "18-jadval: vazifasi bo‘yicha",
+    "columns": [
+     {
+      "title": "Erituvchilar",
+      "items": [
+       "aseton",
+       "metiletilketon (2-butanon)",
+       "toluol",
+       "dietil efiri"
+      ]
+     },
+     {
+      "title": "Reaktivlar",
+      "items": [
+       "sulfat kislota (tuzlaridan tashqari)",
+       "xlorid kislota (tuzlaridan tashqari)"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega erituvchilar ham ro‘yxatda? Doskada: erituvchilar: aseton, MEK, toluol, efir; reaktivlar: H2SO4, HCl. Tipik xato: dietil efiriga alohida tahlil bor deb o‘ylash: kitobda dietil efiri faqat ro‘yxatda. Izoh: dietil efiri va metiletilketon uchun kitobda alohida tahlil usullari berilmagan."
+  },
+  {
+   "title": "19-jadval: yordamchi moddalar sifatida",
+   "bullets": [
+    {
+     "text": "Boshlang‘ich moddalar: antranil kislota, N-asetilantranil kislota, izosafrol, lizergin kislota, piperonal, piperidin, safrol, ergotamin, efedrin va boshqalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "148-149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reagentlar: sirka kislota angidridi, qizil fosfor, kaliy permanganat, sulfat va xlorid kislotalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Erituvchilar: aseton, metiletilketon (2-butanon), toluol, dietil efiri.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "148"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "19-jadval: yordamchi moddalar",
+    "root": "Sintezda yordamchi moddalar",
+    "children": [
+     {
+      "label": "Boshlang‘ich moddalar",
+      "items": [
+       "antranil, N-asetilantranil k-ta",
+       "izosafrol, safrol",
+       "lizergin k-ta, ergotamin"
+      ]
+     },
+     {
+      "label": "Reagentlar",
+      "items": [
+       "sirka kislota angidridi",
+       "qizil fosfor, KMnO4",
+       "sulfat va xlorid kislota"
+      ]
+     },
+     {
+      "label": "Erituvchilar",
+      "items": [
+       "aseton, metiletilketon",
+       "toluol, dietil efiri"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 19-jadval ustunlarini qanday o‘qiymiz? Doskada: uch ustun: boshlang‘ich - reagent - erituvchi. Tipik xato: 19-jadvalni 18-jadval bilan bir deb hisoblash."
+  },
+  {
+   "title": "Kokain va geroin gidroxloridini olish chizmalari",
+   "bullets": [
+    {
+     "text": "Kitobda kokain va geroin gidroxloridining olinish chizmalari rasm sifatida berilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Geroin: morfin + sirka angidridi (250 l); aseton/efir 1500-2000 l, HCl 30 l; geroin HCl 100 kg.",
+     "source": {
+      "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Geroin gidroxloridi (malaka №071)",
+    "nodes": [
+     "Opiy",
+     "Morfin",
+     "+ sirka angidridi (250 l)",
+     "Geroin (diatsetilmorfin)",
+     "Aseton/efir + HCl: gidroxlorid"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: prekursorlar qaysi bosqichda qo‘llanadi? Doskada: 5 bosqichli zanjir. Tipik xato: chizmadagi hajmlarni tahlil me’yori deb o‘ylash. Izoh: kitobdagi chizmalar rasm sifatida (matnsiz); geroin chizmasining raqamlari malaka №071 slaydidan. Kokain chizmasi 34-darsda berilgan."
+  },
+  {
+   "title": "Prekursor va tayyorlanadigan vositalar",
+   "bullets": [
+    {
+     "text": "Sirka angidridi — metakvalon, geroin; antranil va N-asetilantranil kislota — metakvalon.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Lizergin kislota, ergometrin va ergotamin — LSD; efedrin, N-metilefedrin va KMnO4 — metkatinon.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qizil fosfor va psevdoefedrin — pervitin; piperidin — fensiklidin va tenotsiklidin.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "18-jadval: mahsulot bo‘yicha",
+    "root": "Nazoratdagi vositalar",
+    "children": [
+     {
+      "label": "Metakvalon",
+      "items": [
+       "sirka angidridi",
+       "antranil k-ta, N-asetilantranil"
+      ]
+     },
+     {
+      "label": "LSD",
+      "items": [
+       "lizergin kislota",
+       "ergometrin, ergotamin"
+      ]
+     },
+     {
+      "label": "Metkatinon",
+      "items": [
+       "efedrin, N-metilefedrin",
+       "kaliy permanganat"
+      ]
+     },
+     {
+      "label": "Pervitin",
+      "items": [
+       "qizil fosfor",
+       "psevdoefedrin"
+      ]
+     },
+     {
+      "label": "Fensiklidin",
+      "items": [
+       "piperidin"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: bitta prekursor bir nechta vositaga olib kelishi mumkinmi (sirka angidridi: metakvalon va geroin). Doskada: mahsulot bo‘yicha daraxt. Tipik xato: efedrinni pervitin prekursori deb yozish (kitobda pervitin uchun psevdoefedrin)."
+  },
+  {
+   "title": "Toluol, aseton, sirka angidridi: solishtirish",
+   "bullets": [
+    {
+     "text": "Toluol (metilbenzol) — solishtirma og‘irligi 0,86; suvda yomon eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton (dimetilketon) 56,3 °C da qaynaydi; suv bilan har qanday nisbatda aralashadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sirka kislota angidridi kuchli bo‘g‘uvchi hidli; havoda ruxsat etilgan miqdori 3 mg/m3.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Uch prekursor",
+    "columns": [
+     {
+      "title": "Toluol",
+      "items": [
+       "metilbenzol",
+       "solishtirma og‘irlik 0,86",
+       "suvda yomon eriydi"
+      ]
+     },
+     {
+      "title": "Aseton",
+      "items": [
+       "dimetilketon",
+       "qaynash 56,3 °C",
+       "suv bilan istalgan nisbatda"
+      ]
+     },
+     {
+      "title": "Sirka angidridi",
+      "items": [
+       "harakatchan, rangsiz",
+       "bo‘g‘uvchi hid",
+       "havoda 3 mg/m3"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi moddaning xossasi tahlil usulini belgilaydi? Doskada: uch ustun. Tipik xato: 3 mg/m3 ni suvdagi miqdor deb tushunish (havodagi ruxsat etilgan miqdor)."
+  },
+  {
+   "title": "Toluol: tasnifi",
+   "bullets": [
+    {
+     "text": "Toluol (metilbenzol) tiniq, rangsiz, o‘ziga xos hidli suyuqlik.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Solishtirma og‘irligi 0,86; suvda yomon eriydi, organik erituvchilar bilan yaxshi aralashadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Benzin tarkibida 5% gacha toluol bor; u atmosfera havosini ifloslantirish va inson a’zolariga zaharli ta’sirda asosiy o‘rinni egallaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Toluol (metilbenzol)",
+    "items": [
+     {
+      "label": "Solishtirma og‘irligi",
+      "value": "0,86"
+     },
+     {
+      "label": "Benzinda",
+      "value": "5",
+      "unit": "% gacha"
+     },
+     {
+      "label": "Suvda",
+      "value": "yomon eriydi"
+     },
+     {
+      "label": "Organik erituvchi",
+      "value": "yaxshi aralashadi"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: toluol nega havo ifloslanishida muhim? Doskada: xossalar ro‘yxati. Tipik xato: toluolni suvda eriydi deb o‘ylash."
+  },
+  {
+   "title": "Toluolning ishlatilishi",
+   "bullets": [
+    {
+     "text": "Maishiy kimyo sanoati mahsulotlari: bo‘yoq, lok, yopishqoq plyonka, kimyoviy tozalovchi vositalar, yelim sintezida qo‘llanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Trinitrotimol va boshqa kimyoviy moddalar sintezida ham ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Prekursorlar ro‘yxatida toluol ko‘pgina giyohvandlik vositasi va psixotrop moddalar tayyorlashda erituvchi sifatida ko‘rsatilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "148"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Toluolning ishlatilishi",
+    "root": "Toluol",
+    "children": [
+     {
+      "label": "Maishiy kimyo",
+      "items": [
+       "bo‘yoq, lok",
+       "yopishqoq plyonka, yelim",
+       "kimyoviy tozalovchilar"
+      ]
+     },
+     {
+      "label": "Sintez",
+      "items": [
+       "trinitrotimol va boshqalar"
+      ]
+     },
+     {
+      "label": "Prekursor sifatida",
+      "items": [
+       "erituvchi (giyohvand moddalar)"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: toluolning ikki xil roli nima? Doskada: sanoat / prekursor. Tipik xato: toluolni faqat giyohvandlik bilan bog‘lash."
+  },
+  {
+   "title": "Toluolni aniqlash: nitrobirikma reaksiyasi",
+   "bullets": [
+    {
+     "text": "Kons. sulfat kislota va ammoniy nitrat bilan uzoq qizdirilganda nitrobirikma hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aralashmadan achchiq bodom mag‘zi hidi kela boshlaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nitrobirikmalar aseton va NaOH ning spirtli eritmasida ko‘kimtir-binafsha rangga bo‘yaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Toluol: nitrobirikma",
+    "nodes": [
+     "Toluol + H2SO4 + NH4NO3",
+     "Uzoq qizdirish",
+     "Achchiq bodom hidi",
+     "+ aseton + NaOH (spirtli)",
+     "Ko‘kimtir-binafsha rang"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: achchiq bodom hidi nimadan? Doskada: 5 bosqichli sxema. Tipik xato: achchiq bodom hidini faqat sianidlarga xos deb o‘ylash (toks p.21). Izoh: miqdori GSX yoki YuSSX bilan (p.150); kitobda tavsif shu bilan cheklanadi."
+  },
+  {
+   "title": "Aseton: xossalari",
+   "bullets": [
+    {
+     "text": "Aseton (dimetilketon) yog‘och va tosh ko‘mirdan quruq haydab olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kimyoviy toza aseton rangsiz, tiniq, o‘ziga xos hidli suyuqlik; 56,3 °C da qaynaydi, suvdan yengil.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suv va organik erituvchilar (efir, xloroform) bilan har qanday nisbatda aralashadi; osh tuzi, CaCl2 yoki K2CO3 bilan to‘yintirilsa ikki qatlamga ajraladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aralashmalar tarkibidan suv bug‘i bilan yaxshi haydaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Aseton (dimetilketon)",
+    "items": [
+     {
+      "label": "Olinishi",
+      "value": "quruq haydash"
+     },
+     {
+      "label": "Qaynash harorati",
+      "value": "56,3",
+      "unit": "°C"
+     },
+     {
+      "label": "Suvga nisbatan",
+      "value": "yengil"
+     },
+     {
+      "label": "Suv bilan",
+      "value": "har qanday nisbatda"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: aseton nega suv bug‘i bilan haydaladi? Doskada: xossalar: qaynash 56,3 °C; aralashuvchanlik. Tipik xato: to‘yintirilganda qatlamlanishni suv bilan aralashmaydi deb tushunish."
+  },
+  {
+   "title": "Aseton ishlatilishi (malaka №071)",
+   "bullets": [
+    {
+     "text": "Aseton universal organik erituvchi: bo‘yoqlar, nitrotsellyuloza, tutunsiz porox va sun’iy ipak sanoatida, kimyoviy tozalashda ishlatiladi.",
+     "source": {
+      "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dorishunoslikda xloroform, sulfonal, yodoform kabi preparatlarni sintezlashda xomashyo; sun’iy kauchuk olishda ham zarur.",
+     "source": {
+      "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton prekursor sifatida narkotik moddalarni noqonuniy ishlab chiqarishda ham qo‘llaniladi.",
+     "source": {
+      "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: aseton nega ham dorixona, ham nazoratda? Doskada: sanoat / farmatsevtika / prekursor. Tipik xato: malaka ma’lumotini kitob deb ko‘rsatish. Izoh: bu ma’lumotlar kitobda yo‘q, malaka №071 dan."
+  },
+  {
+   "title": "Aseton: yodoform reaksiyasi",
+   "bullets": [
+    {
+     "text": "Aseton yodning ishqorli eritmasi bilan, etil spirti kabi, oson reaksiyaga kirishib yodoform beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reaksiya juda sezgir, lekin aseton uchun xarakterli emas: etil spirti va sut kislota kabi moddalar ham beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Yodoform reaksiyasi",
+    "nodes": [
+     "I2 + NaOH: NaOI",
+     "NaOI + aseton",
+     "CI3-CO-CH3",
+     "NaOH ta’sirida",
+     "Yodoform CHI3"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bu reaksiya xususiy emas? Doskada: aseton -> yodoform. Tipik xato: yodoform natijasini aseton uchun yakuniy deb yozish."
+  },
+  {
+   "title": "Aseton: nitroprussid va furfurol reaksiyalari",
+   "bullets": [
+    {
+     "text": "Natriy nitroprussidi Na2[Fe(CN)5NO] bilan ishqor ishtirokida qizil-binafsha rang; aseton uchun xarakterli emas.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Unga sirka aldegidi, metiletilketon, atsetofenon, atsetilaseton, diatsetil halal beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Furfurolning spirtdagi eritmasi (vanilin yoki salitsil aldegidi) va ishqor, so‘ng konsentrlangan HCl qo‘shilsa, aseton bo‘lsa qizil rang hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Aseton: natriy nitroprussid",
+    "reagents": [
+     "Aseton",
+     "Na2[Fe(CN)5NO]",
+     "Ishqor"
+    ],
+    "products": [
+     "Qizil-binafsha rang"
+    ],
+    "observation": "aseton uchun xarakterli emas"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nitroprussid reaksiyasiga qaysi moddalar halal beradi? Doskada: ikki reaksiya: nitroprussid (qizil-binafsha), furfurol (qizil). Tipik xato: ikkala reaksiyani aseton uchun xususiy deb hisoblash."
+  },
+  {
+   "title": "Aseton: o-nitrobenzaldegid reaksiyasi",
+   "bullets": [
+    {
+     "text": "O-nitrobenzaldegidning 2 n ishqordagi eritmasi qo‘shilsa, aseton bor bo‘lganda ko‘k rang (indigo).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton kam bo‘lsa reaksiya sekin boradi: avval sariq, so‘ng sariq-yashil va yashil-ko‘k rang.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Indigo xloroformda yaxshi eriydi, shuning uchun organik qatlam ko‘k rangga bo‘yaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "o-Nitrobenzaldegid + aseton",
+    "nodes": [
+     "Distillyat",
+     "+ o-nitrobenzaldegid, 2 n ishqor",
+     "Sariq",
+     "Sariq-yashil, yashil-ko‘k",
+     "Ko‘k (indigo)"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kam miqdordagi asetonda rang qanday o‘zgaradi? Doskada: 5 bosqichli rang o‘zgarishi. Tipik xato: sekin boradigan reaksiyani manfiy deb baholash. Izoh: sirka kislota angidridi tahlilida (3-reaksiya) indigo shu reaksiya bilan bog‘lanadi."
+  },
+  {
+   "title": "Aseton: sifat reaksiyalari taqqoslash",
+   "bullets": [
+    {
+     "text": "Yodoform va natriy nitroprussid reaksiyalari aseton uchun xarakterli emas: boshqa moddalar ham beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Furfurol reaksiyasida aseton bo‘lsa qizil rang, o-nitrobenzaldegid bilan ko‘k rang (indigo) hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151-152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton GSX usulida ushlanish parametrlari bo‘yicha aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Aseton reaksiyalari",
+    "header": [
+     "Reaksiya",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "Yodoform (I2, ishqor)",
+      "yodoform (xususiy emas)"
+     ],
+     [
+      "Na-nitroprussid, ishqor",
+      "qizil-binafsha (xususiy emas)"
+     ],
+     [
+      "Furfurol, ishqor, kons. HCl",
+      "qizil rang"
+     ],
+     [
+      "o-Nitrobenzaldegid, 2 n ishqor",
+      "ko‘k rang (indigo)"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi reaksiya eng ishonchli? (kitobda xususiylik haqida faqat birinchi ikkita reaksiyada eslatilgan). Doskada: jadval. Tipik xato: yodoform reaksiyasini asetonning yagona belgisi deb hisoblash."
+  },
+  {
+   "title": "Aseton: GSX va miqdori",
+   "bullets": [
+    {
+     "text": "Aseton GSX da alanga-ionizatsion detektorli xromatografda ushlanish parametrlari bo‘yicha aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asetonning miqdori GSX usulida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton prekursorlar ro‘yxatiga kiritilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega rangli reaksiyalardan keyin GSX kerak? Doskada: aseton: 4 rangli reaksiya + GSX. Tipik xato: GSX sharoitlarini kitobdan topishga urinish: kitobda sharoit berilmagan."
+  },
+  {
+   "title": "Sirka kislota angidridi: tasnifi",
+   "bullets": [
+    {
+     "text": "Sirka kislota angidridi (Acetic anhydride) — harakatchan, rangsiz suyuqlik; kuchli bo‘g‘uvchi (sirka hidini eslatuvchi) hidga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Benzol, xloroform, etil spirtida yaxshi eriydi; havoda ruxsat etilgan miqdori 3 mg/m3.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Organik moddalar sintezida juda keng ishlatiladi; ko‘p giyohvandlik vositalari tahlilida ham qo‘llanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yuqori darajali korroziyalovchi; bug‘lari ko‘z, burun va tomoqni achishtiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Sirka angidridi",
+    "items": [
+     {
+      "label": "Hidi",
+      "value": "kuchli bo‘g‘uvchi"
+     },
+     {
+      "label": "Havoda ruxsat etilgan",
+      "value": "3",
+      "unit": "mg/m3"
+     },
+     {
+      "label": "Eriydi",
+      "value": "benzol, xloroform"
+     },
+     {
+      "label": "Xususiyati",
+      "value": "korroziyalovchi"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ish xavfsizligi bo‘yicha qanday qoida kerak? Doskada: 3 mg/m3 va korroziya. Tipik xato: birliklarni aralashtirish: mg/m3. Izoh: malaka №071: angidrid amfetamin, geroin, metamfetamin, metakvalon va boshqalar tahlili/sintezida qo‘llanishi ko‘rsatilgan."
+  },
+  {
+   "title": "Sirka angidridi: gidroliz va FeCl3",
+   "bullets": [
+    {
+     "text": "Suv va havodagi namlik ta’sirida sirka kislota angidridi sirka kislotaga gidrolizlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Hosil bo‘lgan sirka kislotaga xos sifat reaksiyalar o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Neytrallangan qoldiqqa temir (III) xlorid qo‘shilsa, qizil mahsulot hosil bo‘lib, qizdirilganda qo‘ng‘ir rangga o‘tadi; sezgirligi 0,5 mg.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Sirka kislota: FeCl3 reaksiyasi",
+    "reagents": [
+     "Sirka kislota (neytrallangan)",
+     "Temir (III) xlorid"
+    ],
+    "products": [
+     "Qizil mahsulot"
+    ],
+    "conditions": "qizdirilganda: qo‘ng‘ir rang",
+    "observation": "sezgirligi 0,5 mg"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega angidridni to‘g‘ridan-to‘g‘ri emas, kislota sifatida aniqlaymiz? Doskada: angidrid -> sirka kislota -> reaksiyalar. Tipik xato: FeCl3 qizil rangini angidridning o‘ziga xos deb o‘ylash."
+  },
+  {
+   "title": "Sirka angidridi: boshqa reaksiyalar va miqdori",
+   "bullets": [
+    {
+     "text": "Qoldiqqa lantan nitrati, yodning spirtli eritmasi va ammiak qo‘shilsa, to‘q ko‘k rang yoki cho‘kma hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kalsiy tuzlari bilan qizdirilsa aseton hosil bo‘ladi, undan indigo olish mumkin; etil spirti va kons. H2SO4 bilan sirka etil efiri.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sirka kislota miqdori neytrallash usulida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Sirka kislota reaksiyalari",
+    "header": [
+     "Reaksiya",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "La(NO3)3 + I2 + ammiak",
+      "to‘q ko‘k rang yoki cho‘kma"
+     ],
+     [
+      "Ca tuzlari, qizdirish",
+      "aseton (indigo olish mumkin)"
+     ],
+     [
+      "Etil spirti + kons. H2SO4",
+      "sirka etil efiri (hid)"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki reaksiyadan qaysi biri hid bilan aniqlanadi? Doskada: sirka etil efiri hidi; lantan nitrati: ko‘k. Tipik xato: sirka etil efiri hidini aldehid hidi bilan aralashtirish."
+  },
+  {
+   "title": "Kaliy permanganat",
+   "bullets": [
+    {
+     "text": "Kaliy permanganat KMnO4 — binafsha rangli yaltiroq kristall kukun; kuchli oksidlovchi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tibbiyotda dezinfeksiyalovchi vosita sifatida ishlatiladi; giyohvandlik vositalarini olishda ham qo‘llanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Chinligi oksidlanish-qaytarilish reaksiyalari bilan aniqlanadi: sulfat kislota ishtirokida vodorod peroksid eritmani rangsizlantiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "KMnO4: chinlik reaksiyasi",
+    "reagents": [
+     "KMnO4 eritmasi",
+     "H2SO4",
+     "H2O2"
+    ],
+    "products": [
+     "Rangsizlanadi"
+    ],
+    "observation": "oksidlanish-qaytarilish"
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega KMnO4 ham dori, ham prekursor? Doskada: xossa: oksidlovchi. Tipik xato: rangsizlanishni reaktiv tugaganidan deb tushunish: bu qaytarilish."
+  },
+  {
+   "title": "Kaliy permanganat miqdori",
+   "bullets": [
+    {
+     "text": "Aniq miqdor KMnO4 ga kislotali muhitda kaliy yodid qo‘shiladi: ekvivalent miqdorda erkin yod ajraladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yod 0,1 n natriy tiosulfat eritmasi bilan titrlanadi; indikator — kraxmal.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "KMnO4 yodometrik miqdori",
+    "nodes": [
+     "Aniq miqdor KMnO4",
+     "Kislotali muhit + KI",
+     "Erkin yod ajraladi",
+     "Titr: 0,1 n Na2S2O3",
+     "Indikator: kraxmal"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega yod ekvivalent miqdorda? Doskada: 5 bosqichli titrlash. Tipik xato: titrantni boshqa konsentratsiyada olish."
+  },
+  {
+   "title": "Sulfat kislota",
+   "bullets": [
+    {
+     "text": "Sulfat kislota giyohvandlik vositalari va psixotrop moddalar olishda reagent sifatida ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bariy tuzlari qo‘shilganda oq cho‘kma hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qo‘rg‘oshin tuzlari qo‘shilganda oq cho‘kma — qo‘rg‘oshin sulfat hosil bo‘ladi; u ammoniy asetat va o‘yuvchi ishqorlarda eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sulfat kislota miqdori neytrallash usuli bilan aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Sulfat kislota: sifat reaksiyalari",
+    "header": [
+     "Reaktiv",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "Bariy tuzlari",
+      "oq cho‘kma (BaSO4)"
+     ],
+     [
+      "Qo‘rg‘oshin tuzlari",
+      "oq cho‘kma (PbSO4)"
+     ],
+     [
+      "PbSO4",
+      "NH4-asetat, ishqorda eriydi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: PbSO4 cho‘kmasini BaSO4 dan qanday farqlaymiz? Doskada: BaCl2 va Pb2+ reaksiyalari. Tipik xato: bariy sulfatni ishqorda eriydi deb o‘ylash."
+  },
+  {
+   "title": "Sulfat kislota: toksikligi va rodizonat (malaka №071)",
+   "bullets": [
+    {
+     "text": "Sulfat kislota organizm uchun zaharli; o‘lim dozasi (LD) 5-10 g deb ko‘rsatilgan.",
+     "source": {
+      "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qizil rangli bariy rodizonat sulfat kislota ta’sirida rangsizlanadi.",
+     "source": {
+      "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kons. kislota bilan zaharlanishda qattiq og‘riq, qon qusish, tirishish; keyinchalik qorin bo‘shlig‘i teshilishi mumkin.",
+     "source": {
+      "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+      "page": "prekursorlar ma’ruzasi"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: rodizonat reaksiyasining mohiyati nima? Doskada: qizil rodizonat -> rangsiz. Tipik xato: malaka ma’lumotini kitobdan deb ko‘rsatish. Izoh: bu bo‘lim kitobda yo‘q, malaka №071 dan olingan; kitobdagi sulfat tahlili Ba va Pb reaksiyalari bilan cheklanadi."
+  },
+  {
+   "title": "Xlorid kislota",
+   "bullets": [
+    {
+     "text": "Xlorid kislota giyohvandlik vositalari va psixotrop moddalar olishda reagent sifatida ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kislotali muhitda kumush nitrat bilan oq cho‘kma (AgCl) hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bertole tuzi qo‘shilganda erkin xlor ajraladi; kaliy yodid va kraxmal qo‘shilsa aralashma ko‘karadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xlorid kislota miqdori neytrallash usulida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Xlorid kislota: sifat reaksiyalari",
+    "header": [
+     "Reaktiv",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "AgNO3 (kislotali muhit)",
+      "oq cho‘kma (AgCl)"
+     ],
+     [
+      "Bertole tuzi",
+      "erkin xlor ajraladi"
+     ],
+     [
+      "Cl2 + KI + kraxmal",
+      "aralashma ko‘karadi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ko‘karish nima uchun sodir bo‘ladi? Doskada: HCl + KClO3 -> Cl2; Cl2 + KI -> I2 (kraxmal). Tipik xato: AgCl cho‘kmasini nitrat kislotada eriydi deb o‘ylash."
+  },
+  {
+   "title": "Keyingi dars: ergot alkaloidlari, antranil kislota",
+   "bullets": [
+    {
+     "text": "Prekursorlar ro‘yxatiga kiruvchi ergotamin, ergometrin, lizergin kislota va antranil kislota giyohvandlik vositalari olishda asosiy moddalar hisoblanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ergotamin, ergometrin va lizergin kislota gallyusinogen LSD ni olishda ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Antranil kislota 4-metilaminoreks va metakvalonlarni sintezlashda asosiy modda.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: bu to‘rt modda keyingi darsning mavzusi. Doskada: prekursor -> LSD / metakvalon. Tipik xato: bu moddalarni 39-darsda tahlil usullari bilan o‘rganishga urinish: ular 40-darsda. Izoh: ergotamin va ergometrin kitobda 155-betdan batafsil."
+  },
+  {
+   "title": "Chinlikni aniqlash: umumiy jadval",
+   "bullets": [
+    {
+     "text": "Toluol: nitrobirikma hosil qilish; aseton: yodoform, nitroprussid, furfurol, o-nitrobenzaldegid.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150-152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sirka kislota angidridi suv bilan gidrolizlanadi, hosil bo‘lgan sirka kislotaga FeCl3 va boshqa reaksiyalar o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "152-153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "KMnO4 — H2O2 bilan rangsizlanish; H2SO4 — Ba va Pb tuzlari; HCl — AgNO3 va Bertole tuzi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153-154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Chinlik reaksiyalari",
+    "header": [
+     "Modda",
+     "Reaksiya"
+    ],
+    "rows": [
+     [
+      "Toluol",
+      "nitrobirikma hosil qilish"
+     ],
+     [
+      "Aseton",
+      "yodoform, nitroprussid, furfurol"
+     ],
+     [
+      "Sirka angidridi",
+      "gidroliz, FeCl3, La(NO3)3"
+     ],
+     [
+      "KMnO4",
+      "H2O2 bilan rangsizlanish"
+     ],
+     [
+      "H2SO4",
+      "Ba va Pb tuzlari: oq cho‘kma"
+     ],
+     [
+      "HCl",
+      "AgNO3, Bertole tuzi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: har modda uchun bitta reaksiyani tanlang. Doskada: jadval. Tipik xato: xlorid va sulfat kislota reaksiyalarini aralashtirish (Ag va Ba)."
+  },
+  {
+   "title": "Miqdorini aniqlash usullari",
+   "bullets": [
+    {
+     "text": "Toluol miqdori GSX va YuSSX usulida; aseton miqdori GSX usulida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150-152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sirka kislota, sulfat kislota va xlorid kislota miqdori neytrallash usulida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153-154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "KMnO4: kislotali muhitda KI qo‘shilib, ajralgan yod 0,1 n natriy tiosulfat bilan titrlanadi (kraxmal indikator).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Miqdoriy usullar",
+    "header": [
+     "Modda",
+     "Usul"
+    ],
+    "rows": [
+     [
+      "Toluol",
+      "GSX, YuSSX"
+     ],
+     [
+      "Aseton",
+      "GSX"
+     ],
+     [
+      "Sirka kislota",
+      "neytrallash"
+     ],
+     [
+      "KMnO4",
+      "yodometriya, 0,1 n Na2S2O3"
+     ],
+     [
+      "H2SO4, HCl",
+      "neytrallash"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun KMnO4 yodometrik usul bilan aniqlanadi? (oksidlovchi xususiyati). Doskada: jadval. Tipik xato: titrantni 0,1 n o‘rniga 0,1 M deb yozish."
+  },
+  {
+   "title": "Xlorid kislota: Bertole tuzi reaksiyasi",
+   "bullets": [
+    {
+     "text": "Xlorid kislotaga Bertole tuzi qo‘shilganda erkin xlor ajralib chiqadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Hosil bo‘lgan xlor kaliy yodid va kraxmalni ko‘kartiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xlorid kislota miqdori neytrallash usulida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Bertole tuzi reaksiyasi",
+    "reagents": [
+     "HCl",
+     "KClO3 (Bertole tuzi)"
+    ],
+    "products": [
+     "Cl2 (erkin xlor)"
+    ],
+    "conditions": "keyin: Cl2 + KI + kraxmal",
+    "observation": "aralashma ko‘karadi"
+   },
+   "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: kraxmal nimaning indikatori? Doskada: tenglama 6HCl + KClO3 = 3Cl2 + KCl + 3H2O (kitobdagi shaklda). Tipik xato: Bertole tuzini KClO4 deb yozish."
+  },
+  {
+   "title": "Xulosa va nazorat savollari",
+   "bullets": [
+    {
+     "text": "Prekursorlar — nazoratdagi, giyohvandlik vositasi va psixotrop moddalar tayyorlash uchun ishlatiladigan moddalar; ro‘yxat 26 qator.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "146-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Toluol — nitrobirikma reaksiyasi; aseton — yodoform, nitroprussid, furfurol, o-nitrobenzaldegid, GSX; angidrid — FeCl3, La(NO3)3, etil asetat.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "150-153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "KMnO4 — H2O2 bilan rangsizlanadi, yodometrik titrlash; H2SO4 — Ba va Pb tuzlari; HCl — AgNO3 va Bertole tuzi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "153-154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: olti modda uchun bittadan xarakterli reaksiyani ayting. Doskada: modda -> reaksiya jadvali. Tipik xato: aseton reaksiyalarining xususiy emasligini unutish. Izoh: dietil efiri uchun alohida tahlil usuli kitobda berilmagan."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Prekursorlar nima?",
+   "options": [
+    "Nazoratga olingan, giyohvandlik vositalari va psixotrop moddalar tayyorlash uchun ishlatiladigan moddalar",
+    "Faqat giyohvandlik vositalarining o‘zi",
+    "Faqat dori vositalari",
+    "Faqat kislotalar"
+   ],
+   "correct_index": 0,
+   "explanation": "Prekursorlar — ro‘yxatga kiritilgan va nazoratga olinadigan, giyohvandlik vositalari va psixotrop moddalar tayyorlashda foydalaniladigan moddalar.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "146"
+   }
+  },
+  {
+   "question": "O‘zbekistonda giyohvandlik vositalari va psixotrop moddalar to‘g‘risidagi qonun qachon qabul qilingan?",
+   "options": [
+    "1988 yil",
+    "1999 yil 19 avgust",
+    "2001 yil 1 mart",
+    "2010 yil"
+   ],
+   "correct_index": 1,
+   "explanation": "Qonun 1999 yil 19 avgustda qabul qilingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "146"
+   }
+  },
+  {
+   "question": "Sirka kislota angidridi qaysi mahsulotlar uchun prekursor?",
+   "options": [
+    "Fensiklidin",
+    "LSD",
+    "Metakvalon va geroin",
+    "Katinon"
+   ],
+   "correct_index": 2,
+   "explanation": "18-jadvalga ko‘ra sirka kislota angidridi metakvalon va geroin tayyorlash uchun ishlatiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "147"
+   }
+  },
+  {
+   "question": "Toluolni aniqlashda nitrobirikma hosil bo‘lganda qanday hid keladi?",
+   "options": [
+    "Spirt hidi",
+    "Sirka hidi",
+    "Baliq hidi",
+    "Achchiq bodom mag‘zi hidi"
+   ],
+   "correct_index": 3,
+   "explanation": "Toluol kons. H2SO4 va ammoniy nitrat bilan qizdirilsa nitrobirikma hosil bo‘ladi va achchiq bodom mag‘zi hidi keladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "150"
+   }
+  },
+  {
+   "question": "Aseton qaysi haroratda qaynaydi?",
+   "options": [
+    "34,6 °C",
+    "56,3 °C",
+    "78,4 °C",
+    "100 °C"
+   ],
+   "correct_index": 1,
+   "explanation": "Kimyoviy toza aseton 56,3 °C da qaynaydi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "151"
+   }
+  },
+  {
+   "question": "Aseton uchun yodoform reaksiyasi nega xususiy emas?",
+   "options": [
+    "Faqat sovuqda boradi",
+    "Reaksiya sezgir emas",
+    "Etil spirti va sut kislota ham beradi",
+    "Faqat suvsiz muhitda boradi"
+   ],
+   "correct_index": 2,
+   "explanation": "Reaksiya sezgir, lekin xarakterli emas: etil spirti va sut kislota kabi moddalar ham yodoform beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "151"
+   }
+  },
+  {
+   "question": "o-Nitrobenzaldegidning ishqordagi eritmasi bilan aseton qanday rang hosil qiladi?",
+   "options": [
+    "Yashil cho‘kma",
+    "Qizil",
+    "Sariq",
+    "Ko‘k (indigo)"
+   ],
+   "correct_index": 3,
+   "explanation": "o-Nitrobenzaldegidning ishqordagi eritmasi bilan aseton bor bo‘lganda ko‘k rang (indigo) hosil bo‘ladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "152"
+   }
+  },
+  {
+   "question": "Temir (III) xlorid bilan sirka kislotada qanday rang hosil bo‘ladi?",
+   "options": [
+    "Qizil, qizdirilganda qo‘ng‘ir",
+    "Ko‘k",
+    "Yashil",
+    "Rangsiz"
+   ],
+   "correct_index": 0,
+   "explanation": "Neytrallangan qoldiqqa FeCl3 qo‘shilsa qizil mahsulot hosil bo‘lib, qizdirilganda qo‘ng‘ir rangga o‘tadi; sezgirligi 0,5 mg.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "153"
+   }
+  },
+  {
+   "question": "Kaliy permanganat miqdori qaysi titrant bilan aniqlanadi (KI qo‘shilgandan so‘ng)?",
+   "options": [
+    "0,1 n AgNO3",
+    "0,1 n NaOH",
+    "0,1 n natriy tiosulfat, kraxmal indikator",
+    "0,1 n HCl"
+   ],
+   "correct_index": 2,
+   "explanation": "KMnO4 kislotali muhitda KI bilan erkin yod ajratadi; yod 0,1 n natriy tiosulfat bilan titrlanadi (kraxmal indikatori).",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "153"
+   }
+  },
+  {
+   "question": "Xlorid kislotaga Bertole tuzi qo‘shilganda nima ajraladi?",
+   "options": [
+    "Azot",
+    "Vodorod",
+    "Kislorod",
+    "Erkin xlor"
+   ],
+   "correct_index": 3,
+   "explanation": "HCl + KClO3 reaksiyasida erkin xlor ajraladi; KI va kraxmal bilan aralashma ko‘karadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "154"
+   }
+  },
+  {
+   "question": "BMT 1988 yilgi yagona konvensiyasiga asosan nechta modda prekursor sifatida xalqaro nazoratga olingan?",
+   "options": [
+    "26 ta",
+    "15 ta",
+    "29 ta",
+    "67 ta"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra BMT 1988 yilgi konvensiyasi qarorlariga asosan 26 ta modda prekursor sifatida xalqaro nazoratga olingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "146"
+   }
+  },
+  {
+   "question": "Yevropa Ittifoqining 2001 yil 1 martdagi qaroriga asosan nechta davlatda norefedrin nazorati kuchaytirilgan?",
+   "options": [
+    "26 ta",
+    "15 ta",
+    "29 ta",
+    "5 ta"
+   ],
+   "correct_index": 1,
+   "explanation": "EI ning 2001 yil 1 martdagi qaroriga asosan 15 ta davlatda norefedrin ishlab chiqarish va nazorat choralari kuchaytirilgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "146"
+   }
+  },
+  {
+   "question": "Talqon shaklidagi moddani tahlil qilishda qayta tahlil talab etilsa, kristall miqdori qanday olinadi?",
+   "options": [
+    "Bir xil miqdorda",
+    "Yarmi miqdorda",
+    "Faqat bitta kristall",
+    "Ikki barobar ko‘proq"
+   ],
+   "correct_index": 3,
+   "explanation": "Talqon shaklidagi moddadan bir necha kristall olinadi, qayta tahlil talab etilsa ikki barobar ko‘p miqdorda olish mumkin.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "146"
+   }
+  },
+  {
+   "question": "Toluolning solishtirma og‘irligi qancha?",
+   "options": [
+    "0,86",
+    "1,86",
+    "0,56",
+    "5"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra toluol solishtirma og‘irligi 0,86 ga teng, suvda yomon eriydi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "150"
+   }
+  },
+  {
+   "question": "Benzin tarkibida toluol qancha miqdorda bo‘ladi?",
+   "options": [
+    "0,5% gacha",
+    "5% gacha",
+    "25% gacha",
+    "56,3%"
+   ],
+   "correct_index": 1,
+   "explanation": "Benzin tarkibida 5% gacha toluol saqlanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "150"
+   }
+  },
+  {
+   "question": "Toluolning nitrobirikmalari aseton va NaOH ning spirtli eritmasi bilan qanday rangga bo‘yaladi?",
+   "options": [
+    "Sariq-yashil",
+    "Qizil",
+    "Ko‘kimtir-binafsha",
+    "Rangsiz"
+   ],
+   "correct_index": 2,
+   "explanation": "Hosil bo‘lgan nitrobenzol hosilalari aseton ishtirokida natriy ishqorining spirtli eritmasi ta’sirida ko‘kimtir-binafsha rangga bo‘yaladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "150"
+   }
+  },
+  {
+   "question": "Aseton natriy nitroprussid va ishqor bilan qanday rang beradi?",
+   "options": [
+    "Qizil-binafsha",
+    "Qora",
+    "Sariq",
+    "Ko‘k"
+   ],
+   "correct_index": 0,
+   "explanation": "Aseton ishqor ishtirokida natriy nitroprussid bilan qizil-binafsha rang hosil qiladi, lekin bu reaksiya aseton uchun xarakterli emas.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "151"
+   }
+  },
+  {
+   "question": "Sirka kislota angidridining havoda ruxsat etilgan miqdori qancha?",
+   "options": [
+    "0,5 mg",
+    "3 mg/m3",
+    "56,3 mg/m3",
+    "5 mg/l"
+   ],
+   "correct_index": 1,
+   "explanation": "Kitobga ko‘ra sirka kislota angidridining havoda ruxsat etilgan miqdori 3 mg/m3.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "152"
+   }
+  },
+  {
+   "question": "Sirka kislotaning temir (III) xlorid bilan reaksiyasi sezgirligi qancha?",
+   "options": [
+    "1 mkg",
+    "3 mg",
+    "0,5 mg",
+    "0,86 mg"
+   ],
+   "correct_index": 2,
+   "explanation": "Temir (III) xlorid bilan reaksiya sezgirligi 0,5 mg sirka kislotaga teng.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "153"
+   }
+  },
+  {
+   "question": "Piperidin prekursorlar ro‘yxatida qaysi vositalarni tayyorlash uchun ko‘rsatilgan?",
+   "options": [
+    "LSD",
+    "Metkatinon",
+    "Pervitin",
+    "Fensiklidin va tenotsiklidin"
+   ],
+   "correct_index": 3,
+   "explanation": "18-jadvalda piperidin fensiklidin va tenotsiklidin tayyorlash prekursori sifatida berilgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "147"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Eslab qolish: aseton 56,3 °C da qaynaydi; toluolning solishtirma og‘irligi 0,86; sirka angidridi havoda ruxsat etilgan miqdori 3 mg/m3.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "150-152"
+   }
+  },
+  {
+   "text": "Muhim farq: yodoform reaksiyasi aseton va etil spirtida ham, nitroprussid reaksiyasi esa aldegid va boshqa ketonlar bilan ham musbat bo‘ladi, shuning uchun ular xususiy emas.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "151"
+   }
+  },
+  {
+   "text": "Amaliy maslahat: KMnO4 miqdori kislotali muhitda KI bilan yodometrik: 0,1 n Na2S2O3, kraxmal indikator.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "153"
+   }
+  },
+  {
+   "text": "Tarixiy: 1999 yil 19 avgustda O‘zbekistonda giyohvandlik vositalari va psixotrop moddalar to‘g‘risidagi qonun qabul qilingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "146"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+   "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+   "year": null,
+   "pages": "b. 146-154"
+  },
+  {
+   "author": "Malaka materiali №071 (TFI Toksikologik kimyo kafedrasi)",
+   "title": "Prekursorlar, ularning narkologik ahamiyati va tahlil usullari (2011)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  }
+ ]
 }

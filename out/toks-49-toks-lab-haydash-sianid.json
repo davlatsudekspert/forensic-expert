@@ -14,7 +14,7 @@
           "uncertain": false
         },
         {
-          "text": "Reja: «uchuvchi» zaharlarni suv bug‘i bilan ajratishning nazariy asoslari; moslamani to‘liq yig‘ish; moddalarni ob’ektdan ajratib olish; distillyatlardan sianid kislotasini aniqlash.",
+          "text": "Reja: «uchuvchi» zaharlarni suv bug‘i bilan ajratishning nazariy asoslari; moslamani yig‘ish; ob’ektdan ajratish; distillyatda sianid kislotasini aniqlash.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -23,7 +23,7 @@
           "uncertain": false
         },
         {
-          "text": "Maqsad: sud-kimyo tahlil ish rejasini tuza bilish va haydash nazariy asoslarini amaliyotda ko‘rsatish, moslamani yig‘ish va sianid kislotasini distillyatlardan aniqlashga o‘rgatish.",
+          "text": "Maqsad: tahlil ish rejasini tuza bilish, haydash nazariyasini amaliyotda ko‘rsatish, moslamani yig‘ish va distillyatda sianid kislotasini aniqlash.",
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
@@ -126,6 +126,61 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun yuqori haroratda parchalanadigan modda uchun vakuum yoki suv bug‘i qulay? Doskada: uch usul. Tipik xato: oddiy haydashni suv bug‘i bilan haydash bilan aralashtirish."
     },
     {
+      "title": "Oddiy va vakuum yordamida haydash",
+      "bullets": [
+        {
+          "text": "Oddiy haydashda ob’ekt Vyurts kolbasiga solinib, sovutgichga ulanadi va qum yoki yog‘ solingan idishda qizdiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "22"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qaynash — modda par bosimi atmosfera bosimiga tenglashganda sodir bo‘ladigan holat; qaynash harorati bosim oshishi bilan oshadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "22"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yuqori haroratda parchalanuvchi birikmalarni past bosimda, vakuum hosil qilib haydash maqsadga muvofiq.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "22"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Oddiy haydash",
+            "items": [
+              "Vyurts kolbasi + sovutgich",
+              "Qum yoki yog‘ hammomi",
+              "Yuqori issiqlik ta’sirida"
+            ]
+          },
+          {
+            "title": "Vakuum haydash",
+            "items": [
+              "Qabul idishi nasosga ulanadi",
+              "Past bosim — past harorat",
+              "Parchalanuvchi moddalar uchun"
+            ]
+          }
+        ],
+        "caption": "Haydash turlari (22-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: bosim kamaysa qaynash harorati qanday o‘zgaradi? Doskada: P-t egri chizig‘i. Tipik xato: vakuum haydashda qizdirish shartini unutish."
+    },
+    {
       "title": "Suv bug‘i bilan haydashning nazariy asosi",
       "bullets": [
         {
@@ -165,8 +220,90 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "TEQ qaynash harorati",
+            "value": "200",
+            "unit": "°C"
+          },
+          {
+            "label": "TEQ parchalana boshlaydi",
+            "value": "135",
+            "unit": "°C"
+          },
+          {
+            "label": "Misol modda 1",
+            "value": "nitrobenzol"
+          },
+          {
+            "label": "Misol modda 2",
+            "value": "to‘rtetilqo‘rg‘oshin"
+          }
+        ],
+        "caption": "Suv bug‘i bilan haydash uchun qulay moddalar (23-bet)"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega aralashma qaynash harorati har bir toza moddanikidan past? (Par bosimlar yig‘indisi.) Doskada: P(umumiy) = P(modda) + P(suv). Eslatma: kitob modda va suvning distillyatdagi nisbatini W0/Wv = M0P0/MvPv formulasi bilan beradi; talaba formulani kitobdan o‘qiydi. Tipik xato: suv bug‘i bilan haydashni suvda eriydigan moddalar uchun yagona usul deb o‘ylash."
+    },
+    {
+      "title": "Haydash: o‘tish formulasi",
+      "bullets": [
+        {
+          "text": "Bir-birida erimaydigan suyuqliklar aralashmasi ayrim par bosimlar yig‘indisi atmosfera bosimiga yetganda qaynaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "23"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Distillyatdagi organik modda va suv miqdorlari nisbati ularning molekulyar massasi va par bosimiga bog‘liq: W0/Wv = M0·P0/(Mv·Pv).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "23"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aralashmadagi har bir modda toza holdagiga nisbatan past haroratda qaynaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "23"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Belgi",
+          "Ma’nosi"
+        ],
+        "rows": [
+          [
+            "W0 va Wv",
+            "Organik modda va suvning miqdori"
+          ],
+          [
+            "M0 va Mv",
+            "Ularning molekulyar massasi"
+          ],
+          [
+            "P0 va Pv",
+            "Ularning par bosimi"
+          ],
+          [
+            "Natija",
+            "Qaynash harorati toza holdagidan past"
+          ]
+        ],
+        "caption": "Haydash formulasi (23-bet)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega suv bilan haydash parchalanuvchi moddalar uchun qulay? Doskada: W0/Wv = M0P0/(MvPv). Tipik xato: formulada massa va par bosimini faqat bittasi hal qiladi deb o‘ylash."
     },
     {
       "title": "Azeotrop aralashmalar",
@@ -199,7 +336,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Azeotropni ajratish",
+        "children": [
+          {
+            "label": "Fizik usul",
+            "items": [
+              "Oddiy yoki fraksiyalab haydash",
+              "Bosimni kamaytirish yoki oshirish",
+              "100 mm gacha: spirt 99,6%"
+            ]
+          },
+          {
+            "label": "Kimyoviy usul",
+            "items": [
+              "Natriy metali: absolyut spirt"
+            ]
+          }
+        ],
+        "caption": "Azeotroplarni ajratish (23-bet)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: azeotropni suv bug‘i bilan haydab ajratib bo‘ladimi? (Yo‘q.) Doskada: azeotrop ta’rifi. Eslatma: kitobda azeotrop tarkibi foizlari ham berilgan (23-bet), lekin bandlar noaniq yozilgani uchun slaydga kiritilmadi. Tipik xato: azeotropni toza modda deb hisoblash."
     },
     {
@@ -269,7 +426,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Suv hajmi",
+            "value": "1/2",
+            "unit": "kolba"
+          },
+          {
+            "label": "Himoya naychasi (yuqori)",
+            "value": "≥ 50",
+            "unit": "sm"
+          },
+          {
+            "label": "Bug‘ naychasi chiqishi",
+            "value": "2-3",
+            "unit": "sm"
+          }
+        ],
+        "caption": "Raqamlar (24-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: himoya naychasidagi suv ko‘tarilishi nimadan darak beradi? (Idish ichida bosim ortishi.) Doskada: naychaning 50 sm talabi. Tipik xato: himoya naychasini qisqa qilib o‘rnatish."
     },
     {
@@ -303,7 +480,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Tiqin",
+            "text": "Ikkita buklangan naychali tiqin bilan berkitiladi"
+          },
+          {
+            "title": "Uzun naycha",
+            "text": "Kolba tubigacha yetadi, bug‘ naychasiga ulanadi"
+          },
+          {
+            "title": "Qisqa naycha",
+            "text": "Tiqin ostidan 2-3 sm chiqib, sovitgichga ulanadi"
+          },
+          {
+            "title": "Hajm",
+            "text": "Ob’ekt kolba hajmining yarmidan kam"
+          },
+          {
+            "title": "Hammom",
+            "text": "Kolba tagidan suv hammomida qizdiriladi"
+          }
+        ],
+        "caption": "Ob’ekt kolbasi (24-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ob’ekt hajmi kolbaning yarmidan kam bo‘lishi kerak? (Kitob sababini aytmaydi; kondensat hajmi ko‘payishi ehtimoli bilan bog‘liq.) Doskada: kolba va tiqin sxemasi. Tipik xato: bug‘ naychasini ob’ekt sathidan yuqorida qoldirish."
     },
     {
@@ -319,7 +521,7 @@
           "uncertain": false
         },
         {
-          "text": "Kolba shtativda sovuq suv hammomiga tushiriladi; og‘zi ikki «Г» naychali tiqin bilan berkitiladi.",
+          "text": "Kolba shtativda sovuq suv hammomiga tushiriladi; og‘zi ikki «G» naychali tiqin bilan berkitiladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -399,7 +601,7 @@
       "title": "Mineral kislota bilan nordonlashtirish xatolari",
       "bullets": [
         {
-          "text": "Ob’ekt sharoitini kuchli mineral kislotalar qo‘shib kerakli pH hosil qilish tavsiya etilmaydi: sianid kislota boshqa moddalarga o‘tib, aniqlanmay qolishi mumkin.",
+          "text": "Ob’ekt sharoitini kuchli mineral kislotalar bilan kerakli pH ga keltirish tavsiya etilmaydi: sianid kislota boshqa moddalarga o‘tib, aniqlanmay qolishi mumkin.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -408,7 +610,7 @@
           "uncertain": false
         },
         {
-          "text": "Ob’ektni mineral kislotalar bilan nordonlashtirish natijasida zaharli modda bo‘lmaganda ham fenol hosil bo‘lishi mumkin: sulfat kislotali konyugat gidrolizlanadi.",
+          "text": "Mineral kislotalar bilan nordonlashtirish natijasida zaharli modda bo‘lmaganda ham fenol hosil bo‘lishi mumkin: sulfat kislotali konyugat gidrolizlanadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -435,8 +637,305 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Organik kislota",
+            "items": [
+              "Oksalat yoki tartrat kislota",
+              "HCN saqlanib qoladi",
+              "Fenol artefakti hosil bo‘lmaydi"
+            ]
+          },
+          {
+            "title": "Mineral kislota",
+            "items": [
+              "HCN boshqa moddaga o‘tadi",
+              "Zaharsiz ob’ektda fenol chiqadi",
+              "Istisno: sirka kislota uchun mos"
+            ]
+          }
+        ],
+        "caption": "Kislota tanlash (26-27-betlar)"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega fenol mineral kislotadan hosil bo‘ladi? (Odam organizmida oqsil almashinuvidan hosil bo‘lgan fenolning sulfat yoki glyukuronid konyugati peshob bilan chiqariladi — kitob bo‘yicha.) Doskada: «organik kislota - xato yo‘q». Tipik xato: sianid va fenol misolini aralashtirib, ’mineral kislota doim xato‘ deb yozish: sirka kislotasi uchun istisno bor."
+    },
+    {
+      "title": "Kuchli kislotada HCN o‘zgarishi",
+      "bullets": [
+        {
+          "text": "Mineral kislotalar bilan nordonlashtirilganda sianid kislota boshqa moddalarga o‘tib, aniqlanmay qolishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sianid kislotadan chumoli kislota va ammiak hosil bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "27"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunday hol biologik ob’ektda sianid kislota kam bo‘lganda alohida ahamiyatga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "HCN",
+          "H2O",
+          "H2SO4 (kuchli kislota)"
+        ],
+        "products": [
+          "Chumoli kislota",
+          "Ammiak"
+        ],
+        "caption": "HCN o‘zgarishi (26-27-betlar)",
+        "conditions": "Kuchli mineral kislota ishtirokida",
+        "observation": "HCN aniqlanmay qolishi mumkin"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega organik kislota tanlanadi? Doskada: HCN + 3HOH → HC(OH)3 + NH3; so‘ng HCOOH. Tipik xato: sianid topilmasa ham ob’ektda yo‘q deb xulosa qilish."
+    },
+    {
+      "title": "Fenol artefakti",
+      "bullets": [
+        {
+          "text": "Odam va hayvon organizmida oqsil almashinuvidan hosil bo‘lgan fenolning sulfat kislotali yoki glyukuronidli konyugati peshob bilan chiqarib turiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "27"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunday ob’ektga kuchli mineral kislota qo‘shilsa, konyugat gidrolizlanib, distillyatdan fenol topilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "27"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu sababli nordonlashtirishda kuchsiz organik kislotalardan foydalanish tavsiya etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "27"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Fenol sulfat konyugati",
+          "H2O",
+          "Mineral kislota"
+        ],
+        "products": [
+          "Fenol",
+          "Sulfat kislota"
+        ],
+        "caption": "Fenol artefakti (27-bet)",
+        "conditions": "Gidroliz (kuchli kislotada)",
+        "observation": "Zaharsiz ob’ektda ham fenol topiladi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega sud kimyogari bunday xatoni bilishi kerak? Doskada: gidroliz sxemasi. Tipik xato: distillyatda fenol borligini darhol zaharlanish deb talqin qilish."
+    },
+    {
+      "title": "Muhitga qarab haydash",
+      "bullets": [
+        {
+          "text": "Ob’ektdan haydaladigan moddalar kimyoviy tuzilishiga ko‘ra kislotali, asosli yoki neytral xossali bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislota xossali moddalar kislotali muhitda, asos xossali moddalar ishqoriy muhitda, neytrallar har ikkala muhitda haydalishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Amfoter birikmalarning maksimal ajralishi izoelektrik nuqtaga mos pH-muhitda bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Modda xossasi",
+          "Haydash muhiti"
+        ],
+        "rows": [
+          [
+            "Kislota xossali",
+            "Kislotali muhit"
+          ],
+          [
+            "Asos xossali",
+            "Ishqoriy muhit"
+          ],
+          [
+            "Neytral xossali",
+            "Ikkala muhitda ham"
+          ],
+          [
+            "Amfoter",
+            "Izoelektrik nuqtaga mos pH"
+          ]
+        ],
+        "caption": "Muhit tanlash (26-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ob’ekt pH ini hisobga olmasa nima bo‘ladi? (Zaharlar to‘liq ajralmaydi — 26-bet.) Doskada: jadval. Tipik xato: barcha moddalarni bitta pH da haydash."
+    },
+    {
+      "title": "Asos xossali moddalarni haydash",
+      "bullets": [
+        {
+          "text": "Kislotali muhitda uchuvchi zaharlar ajratilgach, ob’ektli kolba ajratib olinadi va sovitiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sovitilgach 5% natriy ishqori qo‘shilib, muhit ishqoriy qilinadi (indikator bilan tekshiriladi).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Olingan distillyat anilin, piridin, arekolin, koniin, nikotin, anabazin, efedrin, fenamin kabi asos xossali moddalarga tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Kolbani ajratish",
+            "text": "Kislotali muhitda haydalgach, ob’ektli kolba ajratiladi"
+          },
+          {
+            "title": "Sovitish",
+            "text": "Kolba sovitiladi"
+          },
+          {
+            "title": "Ishqoriy muhit",
+            "text": "5% natriy ishqori qo‘shiladi, indikator bilan tekshiriladi"
+          },
+          {
+            "title": "Ulash",
+            "text": "Bug‘ naychasi va sovitgich oldingi tartibda birlashtiriladi"
+          },
+          {
+            "title": "Yig‘ish",
+            "text": "3-4 qism (10-15 ml) distillyat 0,1 n HCl li idishlarga olinadi"
+          }
+        ],
+        "caption": "Asos xossali moddalar (26-bet)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega distillyat 0,1 n HCl ga yig‘iladi? (asoslarni tuz holida ushlab qolish — 26-bet idish tarkibi.) Doskada: 5 qadam. Tipik xato: ishqor qo‘shishdan oldin kolbani sovitmaslik."
+    },
+    {
+      "title": "Ikkinchi distillyat qismlari va kam haydaladigan moddalar",
+      "bullets": [
+        {
+          "text": "50 ml li toza idishga 25 ml dan 1-2 qism distillyat haydab olinadi: spirtlar, aldegid va ketonlar, alkilgalogenidlar, aromatik uglevodorod hosilalari uchun.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etilenglikol, sirka kislotasi, tetraetilqo‘rg‘oshin bu usulda kam miqdorda haydaladi, shu sababli ular uchun maxsus usullar qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miqdor uchun alohida distillyat shu moddaga tegishli eng sezgir sifat reaksiyasini bermaguncha haydaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "26"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Ikkinchi distillyat",
+        "children": [
+          {
+            "label": "25 ml qismlar",
+            "items": [
+              "Spirtlar, aldegid va ketonlar",
+              "Alkilgalogenidlar",
+              "Aromatik uglevodorod hosilalari"
+            ]
+          },
+          {
+            "label": "Kam haydaladi",
+            "items": [
+              "Etilenglikol",
+              "Sirka kislotasi",
+              "Tetraetilqo‘rg‘oshin"
+            ]
+          },
+          {
+            "label": "Chora",
+            "items": [
+              "Maxsus usullar qo‘llanadi"
+            ]
+          }
+        ],
+        "caption": "Ikkinchi distillyat (26-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun ba’zi moddalar suv bug‘i bilan yaxshi haydalmaydi? Doskada: daraxt. Tipik xato: etilenglikolni suv bug‘i bilan to‘liq ajratib olish mumkin deb o‘ylash."
     },
     {
       "title": "Haydash tezligi va distillyatlar",
@@ -451,7 +950,7 @@
           "uncertain": false
         },
         {
-          "text": "Birinchi distillyat 3 ml miqdorda 2 ml 2% natriy ishqori eritmasi bor probirkaga yig‘iladi; sovitgichga ulangan egik naycha uchi ishqor eritmasiga tushib turishi zarur.",
+          "text": "Birinchi distillyat 3 ml miqdorda 2 ml 2% natriy ishqori bor probirkaga yig‘iladi; sovitgichga ulangan egik naycha uchi ishqor eritmasiga tushib turishi zarur.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -478,7 +977,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Distillyat",
+          "Hajmi",
+          "Qayerga yig‘iladi"
+        ],
+        "rows": [
+          [
+            "№1",
+            "3 ml",
+            "2 ml 2% NaOH li probirka"
+          ],
+          [
+            "№2",
+            "25 ml",
+            "Bo‘sh toza kolbacha"
+          ],
+          [
+            "Miqdor uchun",
+            "300 ml",
+            "Zahar to‘liq haydab olinadi"
+          ]
+        ],
+        "caption": "Distillyatlar (173-bet)"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega birinchi distillyat ishqorga yig‘iladi? Doskada: 3 ml / 2 ml 2% NaOH; ikkinchi 25 ml. Eslatma: nazariy qismda (toks 28) birinchi distillyat «2 ml 2% NaOH ga 5 ml gacha» deb berilgan — kitoblarda farq bor; amaliyotda toks 173 dagi miqdor olinadi. Kitob talabi: reaksiya tenglamasini talaba yozib tushuntiradi. Tipik xato: egik naycha uchini ishqordan tashqarida qoldirish."
     },
     {
@@ -556,14 +1080,137 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Distillyat ko‘zdan kechiriladi",
+          "Hid, rang, qavatlar yoziladi",
+          "Uchuvchi zaharlar aniqlanadi",
+          "Tiqinli kolbachalarda saqlanadi"
+        ],
+        "caption": "Distillyat bilan ishlash (173-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Kutilayotgan natija: ish daftariga hid, rang, ikkinchi suyuq faza bor-yo‘qligi yozilgan. Muhokama: suvdan og‘ir suyuqlik bo‘lsa, u qaysi guruh moddalarga ishora qilishi mumkin? (Kitob buni bu joyda aytmaydi.) Tipik xato: distillyatni ochiq idishda qoldirish."
+    },
+    {
+      "title": "Distillyat tahlili rejasi",
+      "bullets": [
+        {
+          "text": "Birinchi distillyat faqat HCN ga, ikkinchi distillyat boshqa moddalarga tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform va xloralgidratni farqlash uchun distillyatdan sof holda efirli ajralma olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenol, krezollar, anilin, nitrobenzol, amil spirti uchun distillyatga NaHCO3 qo‘shilib, efir bilan chayqatiladi; efir uchirilib konsentratsiya oshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "28"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Distillyat tahlili",
+        "children": [
+          {
+            "label": "№1 distillyat",
+            "items": [
+              "Faqat HCN ga tekshiriladi"
+            ]
+          },
+          {
+            "label": "№2 distillyat",
+            "items": [
+              "Boshqa uchuvchi moddalarga"
+            ]
+          },
+          {
+            "label": "Efirli ajralma",
+            "items": [
+              "Xloroform va xloralgidratni farqlash"
+            ]
+          },
+          {
+            "label": "NaHCO3 + efir",
+            "items": [
+              "Fenol, krezol, anilin",
+              "Nitrobenzol, amil spirti"
+            ]
+          },
+          {
+            "label": "Miqdor uchun",
+            "items": [
+              "Alohida haydalma olinadi"
+            ]
+          }
+        ],
+        "caption": "Distillyat tahlili (27-28-betlar)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega birinchi distillyat butunlay HCN ga ketadi? Doskada: daraxt. Tipik xato: ikkala distillyatni aralashtirib tahlil qilish."
+    },
+    {
+      "title": "Fraksion haydash",
+      "bullets": [
+        {
+          "text": "Distillyatda modda miqdori juda kam bo‘lishi mumkin; chirish mahsulotlari ham distillyatga o‘tib, tahlilga halaqit beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "27"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fraksion haydash deflegmatorli kolbalarda bajariladi; uchuvchi moddalar qaynash haroratiga qarab bir-biridan ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "27"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usul distillyatni yot moddalardan ajratish va tekshiriladigan modda konsentratsiyasini oshirish imkonini beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "27"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Distillyatda modda kam, yot moddalar bor",
+          "Deflegmatorli kolbada haydash",
+          "Qaynash haroratiga ko‘ra ajratish",
+          "Yot moddalardan tozalanadi, quyuqlashadi"
+        ],
+        "caption": "Fraksion haydash (27-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: deflegmator nima vazifa bajaradi? Doskada: oqim sxemasi. Tipik xato: fraksion haydashni oddiy haydash bilan bir deb hisoblash."
     },
     {
       "title": "Miqdor tahlili uchun haydash",
       "bullets": [
         {
-          "text": "Zaharlarning miqdorini aniqlash kerak bo‘lsa, biologik ob’ektning yangi qismidan zaharli modda to‘liq haydab ajratib olinadi, so‘ngra miqdor tahlili o‘tkaziladi.",
+          "text": "Zaharlarning miqdori kerak bo‘lsa, ob’ektning yangi qismidan zaharli modda to‘liq haydab ajratib olinadi, so‘ngra miqdor tahlili o‘tkaziladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -590,14 +1237,23 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Ob’ektning yangi qismi olinadi",
+          "Zahar to‘liq haydab olinadi (300 ml)",
+          "Sezgir reaksiya chiqmaguncha haydaladi",
+          "Miqdor tahlili o‘tkaziladi"
+        ],
+        "caption": "Miqdor uchun (173, 26-betlar)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega miqdor uchun ob’ektning yangi qismi olinadi? (Ashyoviy dalil sifat tahlilida ishlatilgan; kitob sababini aytmaydi.) Doskada: 300 ml. Tipik xato: sifat tahlili qilingan distillyatdan miqdor aniqlash."
     },
     {
       "title": "Haydashni tugatish va xavfsizlik",
       "bullets": [
         {
-          "text": "Haydash tugagach, avval bug‘ hosil qiluvchi kolba naychasi bilan ob’ektli kolba naychasi orasi ajratiladi, so‘ng bug‘ hosil qiluvchi idishni qizdirish to‘xtatiladi.",
+          "text": "Haydash tugagach, avval bug‘ hosil qiluvchi kolba naychasi bilan ob’ektli kolba naychasi orasi ajratiladi, so‘ng bug‘ kolbasini qizdirish to‘xtatiladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -633,7 +1289,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Naychalar orasi ajratiladi",
+          "So‘ng bug‘ kolbasini qizdirish to‘xtaydi",
+          "Aks holda vakuum hosil bo‘ladi",
+          "Suyuqlik so‘rilib, kuyish xavfi"
+        ],
+        "caption": "Tugatish tartibi (24-25-betlar)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi tartibda ajratiladi va nega? Doskada: «avval ajrat, keyin o‘chir». Xavfsizlik: sianid bug‘lari xavfli — kitobda alohida ko‘rsatma yo‘q, o‘qituvchi so‘rish shkafi va qo‘lqopni talab qiladi. Tipik xato: oldin alangani o‘chirib, keyin naychani ajratish. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -667,7 +1332,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Sianid kislotasi (HCN)",
+        "children": [
+          {
+            "label": "Sanoat",
+            "items": [
+              "Rangli metallarni rudadan ajratish"
+            ]
+          },
+          {
+            "label": "Tibbiyot",
+            "items": [
+              "Achchiq bodom suvi: 0,1% HCN"
+            ]
+          },
+          {
+            "label": "Tabiiy manba",
+            "items": [
+              "Achchiq mag‘izli danaklar",
+              "Amigdalin gidrolizi"
+            ]
+          }
+        ],
+        "caption": "HCN manbalari (28-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: meva danaklari bilan zaharlanish nega mumkin? Doskada: amigdalin -> HCN. Tipik xato: achchiq bodom suvini zararsiz deb hisoblash — unda 0,1% HCN bo‘lishi mumkin. Malaka 089 da achchiq bodom suvining 60-100 ml miqdori o‘ldirishi mumkinligi aytiladi; bu kitobda yo‘qligi uchun slaydga kiritilmadi."
     },
     {
@@ -824,7 +1514,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Musbat natija",
+            "value": "ko‘k-zangori"
+          },
+          {
+            "label": "HCl konsentratsiyasi",
+            "value": "10",
+            "unit": "%"
+          },
+          {
+            "label": "Rang bo‘lmasa kutish",
+            "value": "48",
+            "unit": "soat"
+          }
+        ],
+        "caption": "Natija (173-174-betlar)"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Kutilayotgan natija: ko‘k-zangori (musbat) yoki 48 soatdan keyin ham rangsiz (manfiy). Muhokama: nega 48 soat kutiladi? (Kitob: «sababini izohlab bering»; mumkin javob — HCl ortiqchasi tufayli reaksiya sekinlashadi, toks 29.) Sud-kimyoviy ahamiyatni muhokama qiling: manfiy natija sianid yo‘q degani emas — 20-slayddagi sabablar. Tipik xato: 48 soatni kutmay manfiy deb yozish."
     },
     {
@@ -867,7 +1576,20 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Na4[Fe(CN)6]",
+          "FeCl3"
+        ],
+        "products": [
+          "Fe4[Fe(CN)6]3",
+          "NaCl"
+        ],
+        "caption": "Berlin zangorisi (29-bet)",
+        "conditions": "Ishqoriy muhit, so‘ng HCl",
+        "observation": "Ko‘k cho‘kma (berlin zangorisi)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Kitob talabi: reaksiya tenglamalarini talaba yozadi. Tipik xato: Fe(OH)2 va Fe(OH)3 cho‘kmasini berlin zangorisi bilan adashtirish. Kitobda: oxirgi tenglamada FeCl3 oldida koeffitsient yo‘q (xato) — tenglashtirilgan shakli berildi."
     },
     {
@@ -1063,7 +1785,7 @@
           "uncertain": false
         },
         {
-          "text": "Voqea: sud-tibbiy ekspert murda ichki a’zolari (jigar, buyrak, oshqozon) va selofan paketda noma’lum meva urug‘larini taqdim etdi; pH muhiti lakmus qog‘ozi bilan 2,0-2,5.",
+          "text": "Voqea: sud-tibbiy ekspert murda ichki a’zolari (jigar, buyrak, oshqozon) va selofan paketda noma’lum meva urug‘larini taqdim etdi; lakmus bilan pH 2,0-2,5.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1094,6 +1816,66 @@
       "teacher_notes": "Vaqt: 12 daqiqa. Kutilayotgan natija: talaba tartibni ketma-ket yozadi: ob’ektni maydalab, oksalat yoki tartrat bilan pH 2,0-2,5 ga keltirish; suv bug‘i bilan haydash; birinchi distillyatni 2% NaOH ga yig‘ish; berlin zangorisi (musbat); keyin miqdor uchun yangi qismdan 300 ml distillyat. Kitob keysga tayyor javob bermaydi; bu tartib 173-174-bet protokoliga asoslangan. Muhokama: ’noma’lum meva urug‘lari’ bilan sianid orasidagi bog‘liq nima? (Achchiq mag‘izli danaklarda amigdalin HCN hosil qiladi — toks 28.) Tipik xato: faqat hidga qarab xulosa yozish."
     },
     {
+      "title": "2-keys: yechish rejasi",
+      "bullets": [
+        {
+          "text": "Keys: 1-bankadagi oshqozon bo‘lagidan achchiq bodom hidi keladi; pH lakmus bilan 2,0-2,5 ko‘rsatdi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "174"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Dastlabki tahlilda ajralmaga berlin zangorisi reaksiyasi qilinganda ko‘k-zangori mahsulot hosil bo‘ldi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "174"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Vazifa: noma’lum zaharli moddani ajratib olish va kimyo-toksikologik tahlil o‘tkazish tartibini ko‘rsatish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "175"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Hid va pH",
+            "text": "Achchiq bodom hidi; pH 2,0-2,5 — sianidni taxmin qildiradi"
+          },
+          {
+            "title": "Haydash",
+            "text": "Oksalat/tartrat bilan nordonlashtirib, suv bug‘i bilan haydash"
+          },
+          {
+            "title": "№1 distillyat",
+            "text": "3 ml, 2 ml 2% NaOH li probirkaga yig‘iladi"
+          },
+          {
+            "title": "Berlin zangorisi",
+            "text": "FeSO4 (40%), qizdirish, 10% HCl: ko‘k-zangori rang"
+          },
+          {
+            "title": "Miqdor",
+            "text": "Chirimagan ob’ektda argentometriya, chiriganda og‘irlik usuli"
+          }
+        ],
+        "caption": "Keys yechimi (173-175, 29-betlar)"
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: rang paydo bo‘lmasa nima qilinadi? (48 soat kutiladi — 174.) Doskada: 5 qadam. Kitob keysga javob bermaydi; qadamlar mashg‘ulot matni (173) va 29-bet asosida o‘qituvchi uchun yo‘nalish.",
+      "diagram_note": "Keys qadamlari kitobdagi mashg‘ulot tartibi va 29-bet asosida tuzilgan (kitobda javob berilmagan)."
+    },
+    {
       "title": "Nazorat savollari",
       "bullets": [
         {
@@ -1106,7 +1888,7 @@
           "uncertain": false
         },
         {
-          "text": "Nima uchun «uchuvchi» zaharlarni ajratishda ob’ekt nordonlashtiriladi; nima uchun organik kislotalar eritmasi ishlatiladi; mineral kislotalar bilan qanday xatoliklar mumkin?",
+          "text": "Nima uchun «uchuvchi» zaharlarni ajratishda ob’ekt nordonlashtiriladi; organik kislotalar nima uchun ishlatiladi; mineral kislotalar bilan qanday xato mumkin?",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1124,7 +1906,7 @@
           "uncertain": false
         },
         {
-          "text": "Miqdorni aniqlash kerak bo‘lsa tahlil qanday olib boriladi; sianid kislotasini ajratish, chinligini aniqlash va chirigan hamda chirimagan ob’ektlarda miqdorini aniqlash.",
+          "text": "Miqdorni aniqlash kerak bo‘lsa tahlil qanday olib boriladi; sianid kislotasini ajratish, chinligi; chirigan va chirimagan ob’ektda miqdorini aniqlash.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1175,12 +1957,12 @@
     {
       "question": "Suv bug‘i bilan haydashda ob’ekt qaysi pH muhitga keltiriladi?",
       "options": [
-        "pH 2,0-2,5",
         "pH 5-7",
         "pH 8-9",
+        "pH 2,0-2,5",
         "pH 12-13"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Ob’ekt oksalat yoki vino-tosh kislota eritmasi bilan pH 2,0-2,5 muhitga keltiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1191,10 +1973,10 @@
     {
       "question": "Ob’ektni nordonlashtirish uchun qaysi kislotalar tavsiya etiladi?",
       "options": [
-        "Konsentrlangan sulfat kislota",
         "Kuchli mineral kislotalar",
+        "Nitrat kislota",
         "Oksalat yoki vino-tosh kislota",
-        "Nitrat kislota"
+        "Konsentrlangan sulfat kislota"
       ],
       "correct_index": 2,
       "explanation": "Nordonlashtirishda kuchsiz organik kislotalar (oksalat, tartrat) tavsiya etiladi.",
@@ -1207,12 +1989,12 @@
     {
       "question": "Birinchi distillyat qaysi eritmaga yig‘iladi?",
       "options": [
-        "2% natriy ishqori eritmasiga",
-        "10% HCl ga",
         "Sof suvga",
-        "40% FeSO4 ga"
+        "10% HCl ga",
+        "40% FeSO4 ga",
+        "2% natriy ishqori eritmasiga"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Birinchi distillyat 3 ml miqdorda 2 ml 2% natriy ishqori eritmasi bor probirkaga yig‘iladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1223,12 +2005,12 @@
     {
       "question": "Ikkinchi distillyat qancha miqdorda yig‘iladi?",
       "options": [
-        "3 ml",
         "25 ml",
         "100 ml",
-        "300 ml"
+        "300 ml",
+        "3 ml"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Ikkinchi distillyat 25 ml miqdorda bo‘sh toza kolbachaga yig‘iladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1255,12 +2037,12 @@
     {
       "question": "Sianid kislotasi uchun berlin zangorisi reaksiyasida qaysi reaktiv ishlatiladi?",
       "options": [
-        "Temir (II) sulfatning 40% eritmasi",
-        "Kumush nitrat",
         "Fuksinsulfit",
-        "Difenilamin"
+        "Difenilamin",
+        "Temir (II) sulfatning 40% eritmasi",
+        "Kumush nitrat"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Ishqoriy muhitli distillyatga temir (II) sulfatning 40% eritmasidan 1-3 tomchi qo‘shiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1271,12 +2053,12 @@
     {
       "question": "Berlin zangorisi reaksiyasida musbat natija qanday?",
       "options": [
+        "Rangsiz eritma",
         "Qizil cho‘kma",
         "Ko‘k-zangori eritma yoki cho‘kma",
-        "Sariq rang",
-        "Rangsiz eritma"
+        "Sariq rang"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Ko‘k-zangori rangli eritma yoki cho‘kma hosil bo‘lishi sianid kislotasi borligidan dalolat beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1287,12 +2069,12 @@
     {
       "question": "Rang yoki cho‘kma hosil bo‘lmasa, aralashma qancha vaqtga qo‘yiladi?",
       "options": [
-        "5 daqiqa",
-        "1 soat",
         "48 soat",
-        "1 hafta"
+        "5 daqiqa",
+        "1 hafta",
+        "1 soat"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Rang yoki cho‘kma hosil bo‘lmasa, aralashma 48 soatga qo‘yiladi, so‘ngra xulosa chiqariladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1304,11 +2086,11 @@
       "question": "Chirimagan ob’ektlarda sianid kislotasi miqdori qaysi usulda aniqlanadi?",
       "options": [
         "Og‘irlik usuli",
-        "Hajmiy argentometrik usul",
         "Xromatografik usul",
-        "Polyarimetrik usul"
+        "Polyarimetrik usul",
+        "Hajmiy argentometrik usul"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Hajmiy argentometrik usul chirimagan ob’ektlarda qo‘llaniladi; chirigan ob’ektlarda og‘irlik usuli.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1319,9 +2101,9 @@
     {
       "question": "Haydash tugagach birinchi navbatda nima qilinadi?",
       "options": [
-        "Qizdirish to‘xtatiladi",
-        "Ob’ektli kolba naychasi bug‘ hosil qiluvchi kolba naychasidan ajratiladi",
         "Sovutgich o‘chiriladi",
+        "Ob’ektli kolba naychasi bug‘ hosil qiluvchi kolba naychasidan ajratiladi",
+        "Qizdirish to‘xtatiladi",
         "Distillyat to‘kiladi"
       ],
       "correct_index": 1,
@@ -1336,16 +2118,160 @@
       "question": "Bug‘ hosil qiluvchi idishdagi himoya naychasining yuqorida qoladigan qismi qancha bo‘lishi shart?",
       "options": [
         "10 sm dan kam emas",
-        "20 sm dan kam emas",
         "50 sm dan kam emas",
-        "100 sm dan kam emas"
+        "100 sm dan kam emas",
+        "20 sm dan kam emas"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Himoya naychasining yuqorida qoladigan qismi 50 sm dan kam bo‘lmasligi shart.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "24"
+      }
+    },
+    {
+      "question": "Bug‘ hosil qiluvchi idishga necha qismigacha tozalangan suv quyiladi?",
+      "options": [
+        "Yarmigacha",
+        "Uchdan bir qismigacha",
+        "To‘liq",
+        "Chorak qismigacha"
+      ],
+      "correct_index": 0,
+      "explanation": "Bug‘ hosil qiluvchi idishning yarmigacha tozalangan suv quyiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "24"
+      }
+    },
+    {
+      "question": "Ob’ekt solinadigan kolbaga ob’ekt hajmi kolba hajmiga nisbatan qanday bo‘lishi kerak?",
+      "options": [
+        "Kolba hajmidan ikki baravar ko‘p",
+        "Kolba hajmining yarmidan kam",
+        "Kolbani to‘liq to‘ldirishi",
+        "Hajmi ahamiyatsiz"
+      ],
+      "correct_index": 1,
+      "explanation": "Ob’ekt hajmi kolba hajmining yarmidan kam bo‘lishi kerak, chunki bug‘ kondensatlanib hajm ko‘payishi mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "24"
+      }
+    },
+    {
+      "question": "Asos xossali moddalar suv bug‘i bilan qaysi muhitda haydaladi?",
+      "options": [
+        "Ishqoriy",
+        "Kislotali",
+        "Faqat neytral",
+        "Faqat kuchli kislotali"
+      ],
+      "correct_index": 0,
+      "explanation": "Kislota xossali moddalar kislotali, asos xossali moddalar ishqoriy muhitda haydaladi; neytrallar har ikkala muhitda.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "26"
+      }
+    },
+    {
+      "question": "Amfoter birikmalarning maksimal ajralishi qaysi muhitda bo‘ladi?",
+      "options": [
+        "Izoelektrik nuqtaga mos pH da",
+        "Faqat neytral suvda",
+        "Kuchli ishqoriy",
+        "Kuchli kislotali"
+      ],
+      "correct_index": 0,
+      "explanation": "Amfoter birikmalarning maksimal ajralishi izoelektrik nuqtaga mos keluvchi pH-muhitda haydaladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "26"
+      }
+    },
+    {
+      "question": "Mineral kislotalar bilan nordonlashtirilganda zaharsiz ob’ektda ham qaysi modda hosil bo‘lishi mumkin?",
+      "options": [
+        "Aseton",
+        "Fenol",
+        "Formaldegid",
+        "Xloroform"
+      ],
+      "correct_index": 1,
+      "explanation": "Fenolning sulfat kislotali yoki glyukuronidli konyugati kuchli kislotada gidrolizlanib, distillyatda fenol paydo bo‘lishi mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "27"
+      }
+    },
+    {
+      "question": "Sirka kislotasi kuchsiz kislotali muhitda nima uchun deyarli haydalmaydi?",
+      "options": [
+        "Suvda erimaydi",
+        "Juda og‘ir modda",
+        "Ishqor bilan birikadi",
+        "Ionlarga oson dissotsialanadi"
+      ],
+      "correct_index": 3,
+      "explanation": "Sirka kislotasi kuchsiz kislotali muhitda ionlarga oson dissotsialanadi; kuchli mineral kislota dissotsialanishni to‘xtatib, haydalishni osonlashtiradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "27"
+      }
+    },
+    {
+      "question": "Etilenglikol, sirka kislotasi va tetraetilqo‘rg‘oshin suv bug‘i bilan qanday haydaladi?",
+      "options": [
+        "Faqat vakuumda haydaladi",
+        "Kam miqdorda haydaladi",
+        "Umuman haydalmaydi",
+        "To‘liq haydaladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Bu usulda etilenglikol, sirka kislotasi, tetraetilqo‘rg‘oshin kam miqdorda haydaladi, ularni aniqlashda maxsus usullar qo‘llanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "26"
+      }
+    },
+    {
+      "question": "Azeotrop aralashmani kimyoviy usulda ajratishga qaysi misol keltirilgan?",
+      "options": [
+        "Atsetonni argentometriya bilan titrlash",
+        "Xloroformni sulfat kislota bilan cho‘ktirish",
+        "Absolyut spirt olish uchun natriy metalidan foydalanish",
+        "Fenolni ishqor bilan chayqatish"
+      ],
+      "correct_index": 2,
+      "explanation": "Azeotrop aralashmalarni kimyoviy usulda ajratishga misol: absolyut spirt olish uchun natriy metalidan foydalaniladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "23"
+      }
+    },
+    {
+      "question": "Xloroform va xloralgidratni farqlash uchun distillyatdan nima olinadi?",
+      "options": [
+        "Kristall cho‘kma",
+        "Quruq qoldiq",
+        "Spirtli ajralma",
+        "Sof holda efirli ajralma"
+      ],
+      "correct_index": 3,
+      "explanation": "Xloroform va xloralgidratni farqlash uchun distillyatdan sof holda efirli ajralma olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "28"
       }
     }
   ],

@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-05-toks-suv-bugi-sianid",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Uchuvchi zaharlarni suv bug‘i bilan haydashning nazariy asoslari (Dalton qonuni, azeotroplar, fraksion haydash).…",
+  "ru": "Uchuvchi zaharlarni suv bug‘i bilan haydashning nazariy asoslari (Dalton qonuni, azeotroplar, fraksion haydash).…",
+  "en": "Uchuvchi zaharlarni suv bug‘i bilan haydashning nazariy asoslari (Dalton qonuni, azeotroplar, fraksion haydash).…"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q01",
+   "question_i18n": {
+    "uz": "Bir-birida erimaydigan suyuqliklar aralashmasi qachon qaynay boshlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bosim kamayganda doim",
+     "Aralashma 100 °C ga yetganda",
+     "Suyuqliklardan birining qaynash haroratiga yetganda",
+     "Ayrim par bosimlar yig‘indisi atmosfera bosimiga yetganda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ayrim par bosimlar yig‘indisi atmosfera bosimiga yetishi bilan aralashma qaynaydi va haydaladi; har bir modda toza holdagidan past haroratda qaynaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "23"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q02",
+   "question_i18n": {
+    "uz": "Azeotrop aralashma haqida qaysi fikr to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘zaro ajralmasdan qaynaydi, suv bug‘i bilan ajratib bo‘lmaydi",
+     "Faqat metall zaharlarga xos",
+     "Distillyat tarkibi o‘zgaradi",
+     "Faqat vakuumda hosil bo‘ladi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Azeotrop o‘zaro ajralmasdan qaynaydigan aralashma; uning tarkibi distillyatda o‘zgarmaydi, shuning uchun suv bug‘i bilan haydashda ajratib bo‘lmaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "23"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q03",
+   "question_i18n": {
+    "uz": "Ob’ekt haydashdan oldin qaysi kislotalar bilan nordonlashtirilishi tavsiya etiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Konsentrlangan sulfat kislota",
+     "Oksalat yoki tartrat kislota",
+     "Nitrat kislota",
+     "Xlorid kislota"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Haydashdan oldin kuchsiz oksalat yoki tartrat kabi organik kislotalar qo‘shiladi (pH=2,0-2,5); kuchli mineral kislotalar tavsiya etilmaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "26"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q04",
+   "question_i18n": {
+    "uz": "Himoya naychasining yuqorida qoladigan qismi qancha bo‘lishi shart?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50 sm dan kam bo‘lmasligi",
+     "100 sm dan kam bo‘lmasligi",
+     "25 sm dan kam bo‘lmasligi",
+     "10 sm dan kam bo‘lmasligi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Uzun himoya naychasining yuqorida qoladigan qismi 50 sm dan kam bo‘lmasligi shart."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "24"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q05",
+   "question_i18n": {
+    "uz": "Haydash tugaganda dastlab nima qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ob’ekt kolbasiga kislota quyiladi",
+     "Bug‘ hosil qiluvchi kolba qizdirilishi to‘xtatiladi",
+     "Ikki kolba naychasi orasi ajratiladi",
+     "Sovutgich suvi o‘chiriladi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Avval bug‘ hosil qiluvchi va ob’ekt kolbalari naychalari orasi ajratiladi, so‘ng qizdirish to‘xtatiladi; aks holda vakuum hosil bo‘lib, suyuqlik so‘riladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "24"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q06",
+   "question_i18n": {
+    "uz": "Birinchi distillyat qaysi moddaga tekshiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Fenolga",
+     "Spirtlarga",
+     "Faqat HCN ga",
+     "Anilinga"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Birinchi distillyat faqat HCN ga, ikkinchi distillyat boshqa moddalarga tekshiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "28"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q07",
+   "question_i18n": {
+    "uz": "Ob’ekt mineral kislota bilan nordonlashtirilsa, nima sodir bo‘lishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Barcha uchuvchi zaharlar haydalmay qoladi",
+     "Hech narsa o‘zgarmaydi",
+     "Fenol konyugati gidrolizlanib, distillyatda fenol topilishi",
+     "Sirka kislota to‘liq yo‘qoladi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Peshob bilan chiqadigan fenolning sulfat yoki glyukuronid konyugati gidrolizlanib, fenol hosil bo‘ladi; HCN esa boshqa moddalarga o‘tib aniqlanmay qolishi mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "27"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q08",
+   "question_i18n": {
+    "uz": "Berlin zangorisining tarkibi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Fe(CNS)3",
+     "Fe4[Fe(CN)6]3",
+     "Na4[Fe(CN)6]",
+     "Fe(CN)2"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Natriy geksasianoferrat (II) temir (III) tuzi bilan berlin zangorisi Fe4[Fe(CN)6]3 ni hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "29"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q09",
+   "question_i18n": {
+    "uz": "Chirigan ob’ektda HCN miqdori qaysi usulda aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat spektral usulda",
+     "Og‘irlik (gravimetrik) usulida",
+     "Aniqlab bo‘lmaydi",
+     "Hajmiy argentometriya"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Chirigan ob’ektdan vodorod sulfid hosil bo‘lgani uchun HCN miqdori og‘irlik usulida aniqlanadi; argentometriya chirimagan ob’ektlar uchun."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "29"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q10",
+   "question_i18n": {
+    "uz": "Asos xossali moddalar (nikotin, anabazin) qaysi muhitda haydaladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kislotali",
+     "Faqat izoelektrik nuqtada",
+     "Faqat neytral",
+     "Ishqoriy"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Asos xossali moddalar ishqoriy muhitda, kislota xossalilar kislotali muhitda haydaladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "26"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q11",
+   "question_i18n": {
+    "uz": "Sirka kislota kuchsiz kislotali muhitda nima uchun suv bug‘i bilan deyarli haydalmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ionlarga oson dissotsiatsiyalanadi",
+     "Qaynash harorati juda past",
+     "Metall bilan birikadi",
+     "Azeotrop hosil qilmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kuchsiz kislotali muhitda sirka kislota ionlarga oson dissotsiatsiyalanadi va haydalmaydi; kuchli mineral kislota dissotsiatsiyani to‘xtatadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "27"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q12",
+   "question_i18n": {
+    "uz": "Qaynash qanday fizik holat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Modda par bosimi atmosfera bosimiga tenglashganda sodir bo‘ladigan holat",
+     "Modda zichligi suv zichligiga tenglashgan holat",
+     "Modda to‘liq eriganda sodir bo‘ladigan holat",
+     "Modda sovutilganda kristallanishi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Qaynash — modda par bosimi bilan atmosfera bosimi tenglashganda sodir bo‘ladigan fizik holat."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "22"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q13",
+   "question_i18n": {
+    "uz": "TEQ (tetraetilqo‘rg‘oshin) qaysi haroratda qaynaydi va qaysi haroratda parchalana boshlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "78 °C va 100 °C",
+     "200 °C va 135 °C",
+     "100 °C va 50 °C",
+     "135 °C va 200 °C"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "TEQ ning qaynash harorati 200 °C, 135 °C da parchalana boshlaydi, shu sabab suv bug‘i bilan haydash qulay."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "23"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q14",
+   "question_i18n": {
+    "uz": "Quyidagi moddalardan qaysi biri bilan azeotropda haydaladigan suv ulushi eng katta?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xloroform",
+     "Uglerod to‘rtxlorid",
+     "Etil spirti",
+     "Fenol"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Azeotropda suv ulushi xloroformda 2,5%, CCl4 da 4,1%, etil spirtida 4,5%, fenolda 91% ga teng."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "23"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q15",
+   "question_i18n": {
+    "uz": "Azeotrop aralashmani kimyoviy usul bilan ajratishga misol qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Absolyut spirt olish uchun natriy metalidan foydalanish",
+     "Spirtni muzlatish",
+     "Spirtni suv bilan suyultirish",
+     "Etil spirtini filtrlash"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Azeotropni kimyoviy usul bilan ajratishga misol: absolyut spirt olish uchun natriy metalidan foydalaniladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "23"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q16",
+   "question_i18n": {
+    "uz": "Birinchi distillyat qanday eritmali idishga yig‘iladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10% H2SO4",
+     "5% HCl",
+     "2% natriy ishqori",
+     "Distillangan suv"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Birinchi distillyat 2 ml 2% natriy ishqori eritmasi saqlagan idishga yig‘iladi; HCN ishqor bilan uchmaydigan tuz hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "26"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q17",
+   "question_i18n": {
+    "uz": "Asos xossali moddalarni haydash uchun ob’ektli kolba qaysi eritma bilan ishqoriy muhitga keltiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Konsentrlangan H2SO4",
+     "5% natriy ishqori",
+     "Oksalat kislota",
+     "1% sirka kislota"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kislotali muhitda ajratilgach, kolba sovitiladi va 5% natriy ishqori eritmasi bilan ishqoriy muhitga keltiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "26"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q18",
+   "question_i18n": {
+    "uz": "Amigdalin gidrolizlanganda qaysi mahsulotlar hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sirka kislota va ammiak",
+     "Faqat glyukoza",
+     "Fenol va CO2",
+     "Glyukoza, benzaldegid va sianid kislota"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Achchiq mag‘izli danaklarda amigdalin gidrolizlanib, glyukoza, benzaldegid va sianid kislotasi hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "28"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q19",
+   "question_i18n": {
+    "uz": "Gravimetrik usulda kumush nitrat bilan qaysi cho‘kmalar hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat AgCN",
+     "Ag2O va AgNO2",
+     "AgCN (oq) va Ag2S (qora)",
+     "AgCl (oq) va AgI (sariq)"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Chirigan ob’ektda H2S bo‘lgani uchun AgNO3 bilan AgCN (oq) va Ag2S (qora) cho‘kadi; Ag2S NH4OH da erimaydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "29"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-05-toks-suv-bugi-sianid-q20",
+   "question_i18n": {
+    "uz": "HCN murdada uzoq saqlanmasligining sabablaridan biri qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Suvda erimasligi",
+     "Qattiq cho‘kma hosil qilishi",
+     "Yog‘da to‘planishi",
+     "Rodanidlarga aylanishi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "HCN gidrolizlanadi, rodanidlarga aylanadi, aldegid saqlovchi qandlar bilan siangidrin hosil qiladi, CO2, glyukoza va havo ta’sirida o‘zgaradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "28"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

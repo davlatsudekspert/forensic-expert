@@ -136,7 +136,7 @@
         "rows": [
           [
             "1-avlod",
-            "Tritsiklik: imipramin (1957), amitriptilin"
+            "Tritsiklik: imipramin 1957, amitriptilin"
           ],
           [
             "2-avlod",
@@ -144,7 +144,7 @@
           ],
           [
             "3-avlod",
-            "Qayta tutib qoluvchi selektiv ingibitorlar"
+            "Selektiv qayta tutish ingibitorlari"
           ]
         ]
       },
@@ -183,7 +183,7 @@
         "rows": [
           [
             "Sedativ",
-            "Trimipramin, doksepin, amitriptilin, trazodon"
+            "Trimipramin, doksepin, amitriptilin"
           ],
           [
             "Stimulyator",
@@ -239,6 +239,75 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun amitriptilinni boshqa tinchlantiruvchilar bilan birga olish xavfli? Doskada: belgilar ro‘yxati (xolinolitik: quruq og‘iz, siydik tutilishi). Tipik xato: xolinolitik belgilarni (og‘iz qurishi, qorachiq kengayishi) faqat nojo‘ya ta’sir deb hisoblash — ular tahlil ko‘rsatmasi uchun muhim."
+    },
+    {
+      "title": "Zaharlanish belgilari: guruhlar",
+      "bullets": [
+        {
+          "text": "Bosh aylanishi, bosh og‘rig‘i, eyforiya va uyqusizlik kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "131"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Siydik tutilishi, ich qotishi, og‘izning qurishi va ko‘rishning xiralashuvi yuzaga keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "131"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Terida toshmalar, gallyusinatsiya va psixik buzilishlar paydo bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "131"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Antidepressant zaharlanishi",
+        "children": [
+          {
+            "label": "Markaziy asab tizimi",
+            "items": [
+              "bosh aylanishi, og‘rig‘i",
+              "eyforiya, uyqusizlik"
+            ]
+          },
+          {
+            "label": "Siydik va ichak",
+            "items": [
+              "siydik tutilishi",
+              "ich qotishi"
+            ]
+          },
+          {
+            "label": "Og‘iz va ko‘rish",
+            "items": [
+              "og‘izning qurishi",
+              "ko‘rishning xiralashuvi"
+            ]
+          },
+          {
+            "label": "Teri va ruhiyat",
+            "items": [
+              "terida toshmalar",
+              "gallyusinatsiya",
+              "psixik buzilishlar"
+            ]
+          }
+        ],
+        "caption": "Belgilar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi belgilar xolinolitik ta’sirni eslatadi? Doskada: daraxt. Tipik xato: faqat ruhiy belgilarni sanash."
     },
     {
       "title": "Amitriptilin: tavsif",
@@ -321,6 +390,60 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: amitriptilinning asosiy metaboliti nortriptilin — nega YuQX da ikkala dog‘ kerak? Doskada: metabolizm zanjiri. Tipik xato: faqat o‘zgarmagan moddani izlash. Nortriptilin metaboliti malaka 065 da ham eslatilgan; kitob nazorat savolida (258) «asosiy metabolit qaysi modda» deb so‘raydi."
     },
     {
+      "title": "Metabolizm va ajralish: raqamlar",
+      "bullets": [
+        {
+          "text": "Antidepressantlar jigarda tez metabolitlanib, 60-70% peshob orqali chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "131"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "5-10% atrofida o‘zgarmagan holda peshob orqali chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "131"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alkogolizm psixozlarini davolashda amitriptilin 200-300 mg gacha tavsiya etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Peshob orqali chiqish",
+            "value": "60-70",
+            "unit": "%"
+          },
+          {
+            "label": "O‘zgarmagan holda",
+            "value": "5-10",
+            "unit": "%"
+          },
+          {
+            "label": "Amitriptilin dozasi",
+            "value": "200-300",
+            "unit": "mg"
+          }
+        ],
+        "caption": "Antidepressantlar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega skriningda peshob olinadi? Doskada: raqamlar. Tipik xato: o‘zgarmagan ulushni 60-70% deb yozish."
+    },
+    {
       "title": "Amitriptilinni qon va peshobdan ajratish",
       "bullets": [
         {
@@ -365,6 +488,109 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 15 daqiqa. Kutilayotgan natija: 4 ta chinni kosachada quruq qoldiq; har bir qism alohida tahlilga. Muhokama: nega ishqoriy muhit (pH=9-10) kerak? (amitriptilin asos xossali — toks 133, ’tabiati: asos xossali’ fluoksetin va venlafaksin uchun yozilgan; amitriptilin uchun kitob buni to‘g‘ridan-to‘g‘ri aytmaydi.) Tipik xato: NaOH ni 50% o‘rniga boshqa konsentratsiyada olish. Malaka 065 da shu bosqich uchun 30% NaOH berilgan — kitob (50%) bilan farq; kitob qiymati olindi."
+    },
+    {
+      "title": "Amitriptilinni ajratish: hajm va pH raqamlari",
+      "bullets": [
+        {
+          "text": "5 ml qon yoki 50 ml peshobga ishqor qo‘shib pH=9-10 ga keltirilib, ikki marta 20 ml efir bilan ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Efirli ajralmalar 50 ml kolbada belgigacha to‘ldiriladi va 10, 10, 10 va 20 ml qismlarga bo‘linadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qon",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "Peshob",
+            "value": "50",
+            "unit": "ml"
+          },
+          {
+            "label": "Ekstraksiya pH",
+            "value": "9-10"
+          },
+          {
+            "label": "Efir (ikki marta)",
+            "value": "20",
+            "unit": "ml"
+          },
+          {
+            "label": "O‘lchov kolbasi",
+            "value": "50",
+            "unit": "ml"
+          },
+          {
+            "label": "Qismlar",
+            "value": "10; 10; 10; 20",
+            "unit": "ml"
+          }
+        ],
+        "caption": "Amitriptilin"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ajralma 4 qismga bo‘linadi? Doskada: raqamlar. Tipik xato: qon va peshob hajmlarini almashtirish."
+    },
+    {
+      "title": "Ajratib olishdan GX va YuSSX gacha",
+      "bullets": [
+        {
+          "text": "Namuna (qon, peshob) ishqoriy muhitda n-geksan kabi organik erituvchida ekstraksiya qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organik qatlam kislotali eritmada ekstraksiya qilinib, YuSSX da aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yoki organik erituvchida reekstraksiya qilinib, gaz xromatografiyada aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "132"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Qon yoki peshob",
+          "Ishqoriy muhitda n-geksan",
+          "Organik qatlam",
+          "Kislotali eritmada → YuSSX",
+          "Reekstraksiya → GX"
+        ],
+        "caption": "Ajratish"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ishqoriy muhit? Doskada: oqim. Tipik xato: kislotali muhitda ekstraksiya qilish."
     },
     {
       "title": "Reaktivlar va sharoitlar (jadval)",
@@ -518,6 +744,61 @@
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: ikki dog‘ — yuqorida amitriptilin, pastda nortriptilin. Muhokama: Rf oralig‘idagi dog‘ nimadan dalolat beradi? (Keyingi tahlilga yo‘llanma beradi — toks 256.) Tipik xato: dog‘ni sulfat kislotasiz «ochiq» deb baholash."
     },
     {
+      "title": "Amitriptilin va nortriptilin: farqlash",
+      "bullets": [
+        {
+          "text": "Amitriptilin Rf=0,74-0,78 ga teng tiniq novvot rangli dog‘ hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nortriptilin Rf=0,38-0,46 ga teng sariq dog‘ hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reyneke tuzi bilan amitriptilin ninasimon, nortriptilin shohsimon kristallar beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Amitriptilin",
+            "items": [
+              "Rf=0,74-0,78",
+              "tiniq novvot dog‘",
+              "ninasimon kristallar"
+            ]
+          },
+          {
+            "title": "Nortriptilin",
+            "items": [
+              "Rf=0,38-0,46",
+              "sariq dog‘",
+              "shohsimon kristallar"
+            ]
+          }
+        ],
+        "caption": "Farqlash"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nortriptilin qanday modda? Doskada: ikki ustun. Tipik xato: Rf oraliqlarini almashtirish."
+    },
+    {
       "title": "Dog‘ni ajratib olish",
       "bullets": [
         {
@@ -619,6 +900,42 @@
       "teacher_notes": "Vaqt: 8 daqiqa. Kutilayotgan natija: uchala kosachada to‘q-sarg‘ish rang. Muhokama: uchta reaksiya bir xil rang bersa, ular nima beradi? (Tasdiqlovchi dalil sifatida to‘planadi; xususiylik haqida kitob gapirmaydi.) Tipik xato: Marki va Frede reaktivlarini almashtirib yuborish."
     },
     {
+      "title": "Mandelin reaktivi bilan reaksiya sxemasi",
+      "bullets": [
+        {
+          "text": "Mandelin reaktivi ta’sirida qo‘ng‘ir, so‘ngra yashil rangli modda hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Konsentrlangan H2SO4, Marki va Frede reaktivlari novvot rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "135"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Amitriptilin qoldig‘i",
+          "Mandelin reaktivi"
+        ],
+        "products": [
+          "Rangli mahsulot"
+        ],
+        "caption": "Amitriptilin",
+        "observation": "Qo‘ng‘ir, so‘ngra yashil"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bir nechta reaktiv? Doskada: sxema. Tipik xato: Mandelin rangini Marki rangi bilan almashtirish."
+    },
+    {
       "title": "Reyneke tuzi bilan mikrokristalloskopiya",
       "bullets": [
         {
@@ -705,6 +1022,125 @@
       "teacher_notes": "Vaqt: 6 daqiqa. Bu slayd faqat malaka 065 (2012 ma’ruza) asosida: kitoblarda imipramin uchun alohida reaksiyalar bayoni yo‘q (toks 131 da faqat metabolizm sxemasi eslatilgan). Muhokama: nitrat kislota reaksiyasida rang o‘zgarishi (ko‘k -> xira yashil -> qo‘ng‘ir) nimani bildiradi? (Oksidlanish mahsulotlari — malaka matni.) Tipik xato: malaka reaksiyalarini kitob usuli deb ko‘rsatish. Imizin — imipraminning sovet davridagi savdo nomi (bir modda)."
     },
     {
+      "title": "Fluoksetin: asosiy ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Fluoksetin asos xossali antidepressant; molekulyar massasi 345,8.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oq kristall kukun; metanol (250 mg/ml), xloroform (125 mg/ml) va atsetonda eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyuqlanish harorati 157,5-158,7 °C; suvda kam eriydi (14 g/l gacha, 25 °C).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Molekulyar massa",
+            "value": "345,8"
+          },
+          {
+            "label": "Suyuqlanish harorati",
+            "value": "157,5-158,7",
+            "unit": "°C"
+          },
+          {
+            "label": "Metanolda",
+            "value": "250",
+            "unit": "mg/ml"
+          },
+          {
+            "label": "Xloroformda",
+            "value": "125",
+            "unit": "mg/ml"
+          },
+          {
+            "label": "Suvda (maks.)",
+            "value": "14",
+            "unit": "g/l"
+          }
+        ],
+        "caption": "Fluoksetin"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: eruvchanlik ekstraksiyaga qanday ta’sir qiladi? Doskada: raqamlar. Tipik xato: suvda yaxshi eriydi deb yozish."
+    },
+    {
+      "title": "Venlafaksin va mirtazapin: taqqoslash",
+      "bullets": [
+        {
+          "text": "Venlafaksin C17H27NO2, molekulyar massasi 277,4; mirtazapin C17H19N3, molekulyar massasi 265,3.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133-134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mirtazapin 114-116 °C da suyuqlanadi; 96% spirtdagi eritmasi 295 nm da yuqori nur yutadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mirtazapin YuQX da Dragendorf bilan qo‘ng‘ir dog‘ (Rf=0,42) beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Venlafaksin",
+            "items": [
+              "C17H27NO2",
+              "molekulyar massa 277,4",
+              "asos xossali"
+            ]
+          },
+          {
+            "title": "Mirtazapin",
+            "items": [
+              "C17H19N3",
+              "molekulyar massa 265,3",
+              "suyuqlanish 114-116 °C",
+              "UB 295 nm; Rf=0,42"
+            ]
+          }
+        ],
+        "caption": "Antidepressantlar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: UB maksimumi nimaga kerak? Doskada: ikki ustun. Tipik xato: molekulyar massalarni almashtirish."
+    },
+    {
       "title": "Dimedrolni qon va peshobdan ajratish",
       "bullets": [
         {
@@ -739,6 +1175,188 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: GSX uchun oz miqdorli ajralma va FEK uchun quruq qoldiq. Muhokama: ikki xil bug‘latish darajasi nima uchun kerak? Doskada: oqim sxemasi. Tipik xato: quruq qoldiqni GSX ga yuborish. Kitobda ’GSX’ deb yozilgan (gaz-suyuqlik xromatografiya) — qisqartma dvssm 258 dagi yozuv."
+    },
+    {
+      "title": "YuQX sistemalari: to‘rt antidepressant",
+      "bullets": [
+        {
+          "text": "Paroksetin uchun benzol-dioksan-25% ammiak (60:35:5) sistemasi qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mirtazapin uchun etilatsetat-metanol-suv-ammiak (87:3:1,5:0,5), venlafaksin uchun etilatsetat-etil spirti-ammiak (8,5:1:0,5).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yorituvchi reagent sifatida UB-nuri, Dragendorf va Mandelin reaktivlari ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Modda",
+          "Erituvchilar",
+          "Nisbat"
+        ],
+        "rows": [
+          [
+            "Paroksetin",
+            "benzol-dioksan-25% ammiak",
+            "60:35:5"
+          ],
+          [
+            "Depres",
+            "etil spirti-xloroform-benzol",
+            "2:1:2"
+          ],
+          [
+            "Mirtazapin",
+            "etilatsetat-metanol-suv-ammiak",
+            "87:3:1,5:0,5"
+          ],
+          [
+            "Venlafaksin",
+            "etilatsetat-etil spirti-ammiak",
+            "8,5:1:0,5"
+          ]
+        ],
+        "caption": "YuQX sistemalari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sistema tanlash. Doskada: jadval. Tipik xato: nisbatlarni almashtirish."
+    },
+    {
+      "title": "Gaz xromatografiya va YuSSX: taqqoslash",
+      "bullets": [
+        {
+          "text": "GX da tritsiklik antidepressantlar miqdori kapillyar kolonkalarda aniqlanadi; kamchiligi — triftorsirka angidridi bilan derivatizatsiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuSSX da C8 va C18 sorbent, UB detektor 254 nm, mobil faza atsetonitril/metanol ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133-134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuSSX da trimipramin, doksepin, amitriptilin, imipramin, nortriptilin va boshqalar ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "134"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Gaz xromatografiya",
+            "items": [
+              "kapillyar kolonka",
+              "miqdoriy tahlil",
+              "derivatizatsiya zarur (kamchilik)"
+            ]
+          },
+          {
+            "title": "YuSSX",
+            "items": [
+              "C8 va C18 sorbent",
+              "UB detektor 254 nm",
+              "mobil faza: atsetonitril/metanol"
+            ]
+          }
+        ],
+        "caption": "Usullar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: GX ning kamchiligi nima? Doskada: ikki ustun. Tipik xato: detektor to‘lqin uzunligini noto‘g‘ri aytish."
+    },
+    {
+      "title": "TOXI-TUBES-A usuli: qadamlar",
+      "bullets": [
+        {
+          "text": "5 ml peshob (yoki 2,5 ml qon + 2,5 ml suv) TOXI-TUBES-A tyubigiga solinib, 5 daqiqa chayqatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Emulsiyani ajratish uchun 3000 ayl/daq tezlikda sentrifugalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organik qatlam uchirilib, quruq qoldiq 1 ml spirtda eritilib, YuQX da tahlil qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "133"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Namuna",
+            "text": "5 ml peshob yoki 2,5 ml qon + 2,5 ml suv"
+          },
+          {
+            "title": "Chayqatish",
+            "text": "TOXI-TUBES-A tyubigida 5 daqiqa"
+          },
+          {
+            "title": "Sentrifuga",
+            "text": "3000 ayl/daq"
+          },
+          {
+            "title": "Quritish",
+            "text": "organik qatlam uchirib yuboriladi"
+          },
+          {
+            "title": "Eritish",
+            "text": "quruq qoldiq 1 ml spirtda"
+          },
+          {
+            "title": "Tahlil",
+            "text": "YuQX usulida"
+          }
+        ],
+        "caption": "Venlafaksin"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sentrifuga nima uchun kerak? Doskada: qadamlar. Tipik xato: tyubik nomini noto‘g‘ri yozish."
     },
     {
       "title": "Dimedrol: YuQX va UB-spektr",
@@ -918,7 +1536,7 @@
       "title": "TDSIS usulining mohiyati",
       "bullets": [
         {
-          "text": "Termodesorbsion sirt-ionlashuv spektroskopiya turli muhitlarda azot saqlovchi qiyin uchuvchi fiziologik faol birikmalarning kam qoldiqlarini aniqlashga imkon beradi.",
+          "text": "Termodesorbsion sirt-ionlashuv spektroskopiya azot saqlovchi qiyin uchuvchi faol birikmalarning kam qoldiqlarini aniqlashga imkon beradi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -954,7 +1572,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Dasturlashtirilgan haroratda bug‘lanish",
+          "Emitter sirtida ionlar desorbsiyasi",
+          "Kollektor ionlarni qayd qiladi",
+          "Spektr etalon bilan solishtiriladi"
+        ],
+        "caption": "TDSIS mohiyati"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun TDSIS faqat azot saqlovchi birikmalar uchun mos? (Kitob shunday tavsiflaydi.) Doskada: detektor sxemasi (anod-emitter, katod-kollektor). Tipik xato: TDSIS ni xromatografik usul deb aytish — u spektroskopik usul."
     },
     {
@@ -997,7 +1624,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1-2. Tayyorlash",
+            "text": "«Iskovich-1» indikatori va namuna eritmalari"
+          },
+          {
+            "title": "3. Lentaga kiritish",
+            "text": "namuna bug‘latgich lentasiga solinadi"
+          },
+          {
+            "title": "4. TDSIS tahlili",
+            "text": "tahlil amalga oshiriladi"
+          },
+          {
+            "title": "5. Spektr olish",
+            "text": "kompyuter ma’lumotlar bankiga saqlanadi"
+          },
+          {
+            "title": "6. Solishtirish",
+            "text": "etalon spektr bilan taqqoslanadi"
+          },
+          {
+            "title": "7. Natija",
+            "text": "izohlanadi va qayd etiladi"
+          }
+        ],
+        "caption": "TDSIS: 7 bosqich"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 7 bosqichni o‘z so‘zingiz bilan qayta sanab bering. Doskada: 1-7 raqamli ro‘yxat. Tipik xato: 5- va 6-bosqichni (saqlash va solishtirish) birlashtirib yuborish."
     },
     {
@@ -1261,10 +1917,10 @@
       "options": [
         "pH=2-3",
         "pH=5-6",
-        "pH=9-10",
-        "pH=13-14"
+        "pH=13-14",
+        "pH=9-10"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "5 ml qon yoki 50 ml peshob 50% natriy ishqori bilan pH=9-10 ga keltiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1371,12 +2027,12 @@
     {
       "question": "Sertralinga xos TDSIS cho‘qqilari qaysi haroratlarda paydo bo‘ladi?",
       "options": [
-        "~131±15 va ~190±15 °C",
         "~50 va ~100 °C",
+        "~131±15 va ~190±15 °C",
         "~250 va ~300 °C",
         "~405 va ~505 °C"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Sertralinga xos chiziqli cho‘qqilar ~131±15 °C va ~190±15 °C da kuzatiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1414,6 +2070,166 @@
         "author": "Yuldashev Z.A., Nurmatova M.I.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
         "page": "259"
+      }
+    },
+    {
+      "question": "Ikkinchi avlod antidepressantlar qaysi guruhga kiradi?",
+      "options": [
+        "Tritsiklik antidepressantlar",
+        "Qayta tutib qoluvchi selektiv ingibitorlar",
+        "Barbituratlar",
+        "Geterotsiklik antidepressantlar"
+      ],
+      "correct_index": 3,
+      "explanation": "Ikkinchi avlod geterotsiklik antidepressantlardir: trazodon, mianserin, maprotilin, amoksapin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "131"
+      }
+    },
+    {
+      "question": "Uchinchi avlod antidepressantlarga misol sifatida kitobda qaysi modda keltirilgan?",
+      "options": [
+        "Imipramin",
+        "Amitriptilin",
+        "Dimedrol",
+        "Fluoksetin"
+      ],
+      "correct_index": 3,
+      "explanation": "Uchinchi avlod qayta tutib qoluvchi selektiv ingibitorlar bo‘lib, fluoksetin shular qatoriga kiradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "131"
+      }
+    },
+    {
+      "question": "Fluoksetinning suyuqlanish harorati qancha?",
+      "options": [
+        "157,5-158,7 °C",
+        "114-116 °C",
+        "75-77 °C",
+        "283-285 °C"
+      ],
+      "correct_index": 0,
+      "explanation": "Fluoksetin 157,5-158,7 °C da suyuqlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "133"
+      }
+    },
+    {
+      "question": "Mirtazapinning 96% spirtdagi eritmasi qaysi to‘lqin uzunligida yuqori nur yutadi?",
+      "options": [
+        "567 nm",
+        "295 nm",
+        "254 nm",
+        "252 nm"
+      ],
+      "correct_index": 1,
+      "explanation": "Mirtazapinning 96% etil spirtdagi eritmasi 295 nm da yuqori nur yutadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "134"
+      }
+    },
+    {
+      "question": "Mirtazapin uchun YuQX da Rf qiymati qancha?",
+      "options": [
+        "0,26",
+        "0,55",
+        "0,42",
+        "0,75"
+      ],
+      "correct_index": 2,
+      "explanation": "Mirtazapin Dragendorf reaktivi bilan qo‘ng‘ir dog‘ beradi, Rf=0,42.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "134"
+      }
+    },
+    {
+      "question": "Venlafaksinning molekulyar massasi kitobda qancha?",
+      "options": [
+        "265,3",
+        "345,8",
+        "296,2",
+        "277,4"
+      ],
+      "correct_index": 3,
+      "explanation": "Venlafaksin C17H27NO2, molekulyar massasi 277,4.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "133"
+      }
+    },
+    {
+      "question": "TOXI-TUBES-A usulida emulsiya qaysi tezlikda sentrifugalanadi?",
+      "options": [
+        "3000 ayl/daq",
+        "300 ayl/daq",
+        "10000 ayl/daq",
+        "30 ayl/daq"
+      ],
+      "correct_index": 0,
+      "explanation": "Hosil bo‘lgan emulsiyani ajratish uchun 3000 ayl/daq tezlikda sentrifugalanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "133"
+      }
+    },
+    {
+      "question": "YuSSX da antidepressantlar tahlilida detektor qaysi to‘lqin uzunligida ishlaydi?",
+      "options": [
+        "567 nm",
+        "254 nm",
+        "295 nm",
+        "190 nm"
+      ],
+      "correct_index": 1,
+      "explanation": "UB-spektrofotometr detektori 254 nm da ishlaydi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "133"
+      }
+    },
+    {
+      "question": "GX da tritsiklik antidepressantlarni tahlil qilishdan oldin qaysi reagent bilan derivatizatsiya qilinadi?",
+      "options": [
+        "Sulfat kislota",
+        "Marki reaktivi",
+        "Triftorsirka angidridi",
+        "Kobalt nitrat"
+      ],
+      "correct_index": 2,
+      "explanation": "Usulning kamchiligi — antidepressantlar triftorsirka angidridi bilan derivatizatsiya qilinishi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "133"
+      }
+    },
+    {
+      "question": "Nortriptilin Reyneke tuzi bilan qanday kristallar hosil qiladi?",
+      "options": [
+        "Ninasimon",
+        "Kub shaklidagi",
+        "Romb shaklidagi",
+        "Shohsimon"
+      ],
+      "correct_index": 3,
+      "explanation": "Amitriptilin ninasimon, nortriptilin shohsimon kristallar hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "135"
       }
     }
   ],
@@ -1456,7 +2272,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 130-132, 134, 166, 255-258"
+      "pages": "b. 130-135, 166, 255-258"
     },
     {
       "author": "Yuldashev Z.A., Nurmatova M.I.",

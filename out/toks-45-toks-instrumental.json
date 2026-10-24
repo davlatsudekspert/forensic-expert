@@ -66,7 +66,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Taxminiy tekshiruv, skrining",
+          "Ob’ektdan ajratish va tozalash",
+          "Sifatni aniqlash (chinlik)",
+          "Miqdorni aniqlash"
+        ],
+        "caption": "Tahlil bosqichlari (19-20-betlar)"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: instrumental usullar qaysi bosqichda ishlatiladi (aniqlash bosqichida)? Doskada: ajratish -> tozalash -> aniqlash. Tipik xato: instrumental usulni ajratish bosqichining o‘rniga qo‘yish."
     },
     {
@@ -177,8 +186,84 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Optik ko‘rsatkich",
+            "value": "0,2-1,0"
+          },
+          {
+            "label": "Birinchi kyuveta",
+            "value": "tekshiriluvchi"
+          },
+          {
+            "label": "Ikkinchi kyuveta",
+            "value": "solishtiruvchi"
+          }
+        ],
+        "caption": "Optik zichlik (108-bet)"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: optik zichlik 1,0 dan yuqori bo‘lsa nima qilinadi (suyultirish)? Doskada: D = 0,2-1,0. Tipik xato: solishtiruvchi eritmani toza suv bilan almashtirish."
+    },
+    {
+      "title": "UB-spektrofotometriyada o‘lchash tartibi",
+      "bullets": [
+        {
+          "text": "Konsentratsiya shunday tanlanadiki, eritmaning optik ko‘rsatkichi 0,2 dan 1,0 gacha oraliqda bo‘lsin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Optik ko‘rsatkich tekshiriluvchi eritmaning maksimum nur yutishiga mos to‘lqin uzunligida o‘lchanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkinchi kyuvetaga qolgan komponentlar solinadi — bu solishtiruvchi eritma.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Eritma tayyorlash",
+            "text": "Optik ko‘rsatkich 0,2-1,0 bo‘ladigan konsentratsiya"
+          },
+          {
+            "title": "Spektr olish",
+            "text": "Nur yutish spektri to‘lqin uzunligiga bog‘liq"
+          },
+          {
+            "title": "Maksimum",
+            "text": "To‘lqin uzunligi maksimum nur yutishga mos"
+          },
+          {
+            "title": "Solishtiruvchi eritma",
+            "text": "Ikkinchi kyuvetada qolgan komponentlar"
+          },
+          {
+            "title": "O‘lchash",
+            "text": "Optik ko‘rsatkich o‘lchanadi, hisoblanadi"
+          }
+        ],
+        "caption": "UB-SF tartibi (108-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega 0,2-1,0 oralig‘i tanlanadi? Doskada: 5 qadam. Tipik xato: o‘lchashni tasodifiy to‘lqin uzunligida bajarish."
     },
     {
       "title": "Misol: kofeinni UB-spektrofotometriyada aniqlash",
@@ -313,7 +398,7 @@
           "uncertain": false
         },
         {
-          "text": "Spektrofotometriya fotokolorimetriyadan farqli ravishda to‘lqin uzunliklarining keng diapazonida va monoxromatik nurda katta aniqlik bilan ishlash imkonini beradi.",
+          "text": "Spektrofotometriya fotokolorimetriyadan farqli ravishda to‘lqin uzunliklarining keng diapazonida va monoxromatik nurda aniqroq ishlaydi.",
           "source": {
             "author": "Malaka materiali №053 (TFI, Dori vositalarini standartlashtirish kafedrasi)",
             "title": "«Biotexnologik preparatlarni instrumental tahlili» fanidan 6-ma’ruza: spektrofotometrik va fotokolorimetrik usullar",
@@ -322,7 +407,25 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qonun",
+            "value": "D ~ C"
+          },
+          {
+            "label": "Piretroidlar",
+            "value": "10-100",
+            "unit": "mkg/ml"
+          },
+          {
+            "label": "Sharoit",
+            "value": "bir xil kyuveta"
+          }
+        ],
+        "caption": "Buger-Lambert-Ber (163-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qonundan chetlanish yuqori konsentratsiyada kuzatiladi. Doskada: D ~ C. Tipik xato: kalibrlash grafigini chiziqli sohadan tashqarida qurish."
     },
     {
@@ -356,8 +459,72 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Nur manbai",
+          "Monoxromator yoki filtr",
+          "Kyuvetalar",
+          "Detektor, indikator"
+        ],
+        "caption": "SF qismlari"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega UB va ko‘rinuvchi soha uchun turli lampalar kerak? Doskada: 5 bo‘lim zanjiri. Tipik xato: bu ma’lumotni kitob matni deb ko‘rsatish — u faqat malaka materialida."
+    },
+    {
+      "title": "Fotokolorimetriya va spektrofotometriya",
+      "bullets": [
+        {
+          "text": "Fotokolorimetriya moddani polixromatik nurlanishda spektrning ko‘rinadigan qismida o‘lchab tahlil qilishga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rangli eritmaning maksimal nur yutish spektri va svetofiltrning nur yutish minimumi mos kelishi kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Spektrofotometriya monoxromatik nurlarni ko‘rinadigan va unga yondosh ultrabinafsha sohada aniqlashga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "108"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Fotokolorimetriya (FEK)",
+            "items": [
+              "Polixromatik nur",
+              "Spektrning ko‘rinadigan qismi",
+              "Svetofiltr tanlanadi"
+            ]
+          },
+          {
+            "title": "Spektrofotometriya (SF)",
+            "items": [
+              "Monoxromatik nur",
+              "Ko‘rinadigan va UB soha",
+              "Maksimumda o‘lchanadi"
+            ]
+          }
+        ],
+        "caption": "FEK va SF (108, 130-betlar)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega FEK da svetofiltr kerak? Doskada: ikki ustun. Tipik xato: FEK ni UB sohada ishlaydi deb hisoblash."
     },
     {
       "title": "FEK usulining mohiyati",
@@ -433,7 +600,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Miqdoriy hisoblash",
+        "children": [
+          {
+            "label": "Solishtirish usuli",
+            "items": [
+              "Cx = Cst · Dx / Dst"
+            ]
+          },
+          {
+            "label": "Grafik kalibrlash",
+            "items": [
+              "Bir necha standart eritma"
+            ]
+          },
+          {
+            "label": "Qo‘shib aniqlash",
+            "items": [
+              "Aralashma ta’sirini kamaytiradi"
+            ]
+          },
+          {
+            "label": "Boshqa",
+            "items": [
+              "Differensial usul",
+              "Ekstraksion-fotometriya"
+            ]
+          }
+        ],
+        "caption": "Hisoblash usullari"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qo‘shib aniqlash usuli matritsa ta’sirini nega kamaytiradi? Doskada: uch formula. Tipik xato: Dst ni Dx bilan almashtirish. Izoh: formulalar faqat malaka materialida; kitobda FEK uchun umumiy bayon berilgan."
     },
     {
@@ -501,7 +699,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Xromatografik usullar",
+        "children": [
+          {
+            "label": "YuQX",
+            "items": [
+              "Yupqa qatlam xromatografiyasi"
+            ]
+          },
+          {
+            "label": "Gel xromatografiya",
+            "items": [
+              "Kolonkali"
+            ]
+          },
+          {
+            "label": "Qog‘oz xromatografiyasi"
+          }
+        ],
+        "caption": "Eng ko‘p ishlatiladigan usullar (89-bet)"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: YuQX ning ikki vazifasi (tozalash va aniqlash). Doskada: «tozalash + chinlik». Tipik xato: Rf ni tizimsiz solishtirish."
     },
     {
@@ -526,7 +745,7 @@
           "uncertain": false
         },
         {
-          "text": "Kofein uchun tizim: efir-aseton-25% ammiak (40:20:1); Rf = 0,47 (tizim kofein bo‘limiga ko‘ra).",
+          "text": "Kofein uchun tizim: efir-aseton-25% ammiak (40:20:1); yod eritmasi va spirt-HCl bilan purkalganda binafsha dog‘.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -535,7 +754,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Guruh",
+          "Tizim",
+          "Aniqlovchi"
+        ],
+        "rows": [
+          [
+            "Barbituratlar",
+            "Xloroform-n-butanol-25% NH4OH (70:40:5)",
+            "Difenilkarbazon + simob sulfat"
+          ],
+          [
+            "Alkaloidlar",
+            "Xloroform-aseton-dietilamin (50:30:2)",
+            "Dragendorf reaktivi"
+          ],
+          [
+            "Kofein",
+            "Efir-aseton-25% ammiak (40:20:1)",
+            "Yod, HCl-spirt: binafsha dog‘"
+          ]
+        ],
+        "caption": "YuQX tizimlari (93, 105-106-betlar)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega kislotali va ishqoriy ajralmalar uchun turli tizim? Doskada: 70:40:5; 50:30:2; 30:20:2; 40:20:1. Tipik xato: nisbatlarni bir-biriga almashtirish. Kitobda (toks 93): «difenilkarbazid» — to‘g‘risi difenilkarbazon (gmt 113)."
     },
     {
@@ -616,7 +860,7 @@
           "uncertain": false
         },
         {
-          "text": "1941 yili Martin va Sing qog‘oz xromatografiyasini taklif etib Nobel mukofotiga sazovor bo‘ldi; qo‘zg‘aluvchi faza sifatida gazdan ham foydalanish mumkinligini ko‘rsatdi.",
+          "text": "1941 yili Martin va Sing qog‘oz xromatografiyasini taklif etib Nobel mukofotini oldi; qo‘zg‘aluvchi faza sifatida gazni ham ko‘rsatdi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -634,7 +878,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Yil",
+          "Voqea"
+        ],
+        "rows": [
+          [
+            "1903",
+            "M.S. Svet: o‘simlik aralashmasi"
+          ],
+          [
+            "1941",
+            "Martin va Sing: qog‘oz xromatografiyasi"
+          ],
+          [
+            "1952",
+            "Djeyn va Martin: gaz adsorbsion va GSX"
+          ]
+        ],
+        "caption": "Tarix (47-bet)"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: 1903 -> 1941 -> 1952 vaqt chizig‘i. Doskada: shu uch sana. Tipik xato: Svet va Martin nomlarini aralashtirish. Eslatma: kitobda «Djeyn» yozilgan, malaka 093 da «A. Djeyms» ko‘rinishida; ismni manbadan tekshiring."
     },
     {
@@ -663,12 +928,29 @@
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "46"
+            "page": "46, 48"
           },
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qo‘zg‘aluvchi faza",
+            "value": "gaz"
+          },
+          {
+            "label": "Qo‘zg‘almas faza",
+            "value": "yuqori T suyuqlik"
+          },
+          {
+            "label": "K kichik bo‘lsa",
+            "value": "tez chiqadi"
+          }
+        ],
+        "caption": "GSX tamoyili (45-48-betlar)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: K ning kattaligi ushlanish vaqtiga qanday ta’sir qiladi. Doskada: K = C(qo‘zg‘almas) / C(qo‘zg‘aluvchi). Tipik xato: K ni teskari yozish."
     },
     {
@@ -702,7 +984,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Gaz manbai, reduktor",
+          "Dozator (namuna kiritiladi)",
+          "Kolonka (termostatda)",
+          "Detektor",
+          "Yozib oluvchi qurilma"
+        ],
+        "caption": "Gaz xromatografi (48-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun bug‘latgich kolonkadan issiqroq (namuna tez bug‘lanishi uchun)? Doskada: sxema: gaz -> dozator -> kolonka -> detektor. Tipik xato: termostatsiz kolonkani ishlatish. Izoh: oxirgi band malaka materialida."
     },
     {
@@ -745,7 +1037,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Detektorlar",
+        "children": [
+          {
+            "label": "Katarometr",
+            "items": [
+              "Issiqlik o‘tkazuvchanlik farqi"
+            ]
+          },
+          {
+            "label": "Alangali ionlanish",
+            "items": [
+              "Vodorod alangasi, organik moddalar"
+            ]
+          },
+          {
+            "label": "Elektron tutuvchi"
+          },
+          {
+            "label": "Termoion"
+          }
+        ],
+        "caption": "GSX detektorlari (48-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi detektor organik zaharlar uchun sezgirroq (alangali ionlanish)? Doskada: 4 detektor. Tipik xato: katarometrni ionlanish detektori deb o‘ylash."
     },
     {
@@ -813,7 +1129,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Afzalliklari",
+            "items": [
+              "Universal usul",
+              "Murakkab aralashmani ajratadi",
+              "Tez, sezgir, kam modda",
+              "Nisbiy xatolik ±1,0-1,5%"
+            ]
+          },
+          {
+            "title": "Kamchiligi",
+            "items": [
+              "Ayrim suyuq fazalar uchuvchan",
+              "Ayrim suyuq fazalar beqaror"
+            ]
+          }
+        ],
+        "caption": "GSX (49-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ichki standart usulining afzalligi (matritsa ta’sirini kamaytirish). Doskada: 3 usul, ±1,0-1,5%. Tipik xato: kamchilikni aniqlik bilan bog‘lash — kitob uni faza uchuvchanligi bilan bog‘laydi."
     },
     {
@@ -881,7 +1218,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kolonka",
+            "value": "130 x 0,2",
+            "unit": "sm"
+          },
+          {
+            "label": "Tashuvchi gaz",
+            "value": "azot, 30",
+            "unit": "ml/daq"
+          },
+          {
+            "label": "Termostat (1-bosqich)",
+            "value": "180-220",
+            "unit": "°C"
+          },
+          {
+            "label": "Injektor",
+            "value": "250",
+            "unit": "°C"
+          },
+          {
+            "label": "Detektor",
+            "value": "260",
+            "unit": "°C"
+          }
+        ],
+        "caption": "GSX sharoiti (162-bet)"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: harorat dasturi ajratishni qanday yaxshilaydi. Doskada: 180-220-245 °C. Tipik xato: sharoit parametrlarini boshqa moddaga ko‘chirish. Bu misol 43-ma’ruzada ham keladi."
     },
     {
@@ -958,7 +1325,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nasos bosimi",
+            "value": "200-500",
+            "unit": "atm"
+          },
+          {
+            "label": "Kolonka uzunligi",
+            "value": "10-25",
+            "unit": "sm"
+          },
+          {
+            "label": "Ichki diametr",
+            "value": "0,3-0,8",
+            "unit": "sm"
+          },
+          {
+            "label": "Adsorbent zarrachasi",
+            "value": "5-10",
+            "unit": "mkm"
+          },
+          {
+            "label": "SF detektori",
+            "value": "190-900 / 254",
+            "unit": "nm"
+          }
+        ],
+        "caption": "YuSSX (124-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: zarracha o‘lchami (5-10 mkm) ajratish samaradorligiga qanday ta’sir qiladi. Doskada: 200-500 atm; 5-10 mkm; 190-900 nm. Tipik xato: bosim birliklarini (atm) boshqa birliklarga almashtirish."
     },
     {
@@ -1120,7 +1517,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Gellar",
+        "children": [
+          {
+            "label": "Yumshoq gellar"
+          },
+          {
+            "label": "Yarim qattiq",
+            "items": [
+              "Stirogellar",
+              "Bo‘kkanda hajmi 1,1-1,8 marta"
+            ]
+          },
+          {
+            "label": "Qattiq gellar",
+            "items": [
+              "Silikagel (porasil)",
+              "G‘ovakli shisha"
+            ]
+          }
+        ],
+        "caption": "Gellar (121-122-betlar)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: yumshoq gel nega erituvchida oldindan bo‘ktiriladi? Doskada: 3 gel turi. Tipik xato: sefadeksni qattiq gel deb hisoblash — u yumshoq gel."
     },
     {
@@ -1213,7 +1633,7 @@
           "uncertain": false
         },
         {
-          "text": "Rang hosil qiluvchi reaktivlar yot moddalar bilan xato xulosaga olib kelishi mumkin; shuning uchun mikrokristalloskopik reaksiyalar va farmakologik tekshiruv tavsiya etiladi.",
+          "text": "Rang reaktivlari yot moddalar bilan xato xulosaga olib kelishi mumkin; shuning uchun mikrokristalloskopik reaksiya va farmakologik tekshiruv tavsiya etiladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1224,6 +1644,53 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mikrokristalloskopiya rang reaksiyasini qanday to‘ldiradi? Doskada: «rang + kristall = ishonchli». Tipik xato: 0,1 g ni mikrogramm bilan aralashtirish — kitobda shunday yozilgan, birlik g (0,1 g); ehtimol yozuv xatosi bo‘lishi mumkin."
+    },
+    {
+      "title": "Etilenglikol: mikrokristalloskopik aniqlash",
+      "bullets": [
+        {
+          "text": "Etilenglikol kalsiy oksalat kristallariga o‘tkaziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "46-47"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Buyum oynachasidagi cho‘kmada konvert shaklini eslatuvchi xarakterli kristallar ko‘rinadi; ayrim hollarda shakl 2-3 kundan so‘ng hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kristallar mineral kislotalar ta’sirida eriydi; reaksiya sezgirligi 0,1 g etilenglikolga teng.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Etilenglikol",
+          "Konsentr. HNO3 (oksalatga)",
+          "NH4OH + CaCl2"
+        ],
+        "products": [
+          "Kalsiy oksalat"
+        ],
+        "caption": "Etilenglikol (46-47-betlar)",
+        "conditions": "Oksalat kislotasigacha oksidlanadi",
+        "observation": "Konvert shaklidagi kristallar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega mikrokristall shakli ishonchli belgi? Doskada: reaksiya zanjiri. Tipik xato: kristallarni mineral kislotali muhitda ko‘rish."
     },
     {
       "title": "TDSIS: mohiyati",
@@ -1290,8 +1757,102 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Emitter kuchlanishi",
+            "value": "405",
+            "unit": "V"
+          },
+          {
+            "label": "Emitter harorati",
+            "value": "390-420",
+            "unit": "°C"
+          },
+          {
+            "label": "Bug‘latish harorati",
+            "value": "505 gacha",
+            "unit": "°C"
+          },
+          {
+            "label": "Havo oqimi",
+            "value": "50",
+            "unit": "l/soat"
+          },
+          {
+            "label": "Namuna hajmi",
+            "value": "1,0",
+            "unit": "mkl"
+          }
+        ],
+        "caption": "TDSIS (141-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: etalon spektrlar banki nima uchun zarur? Doskada: 405 V, 390-420 °C, 505 °C. Tipik xato: namuna hajmini (1,0 mkl) mililitr bilan aralashtirish."
+    },
+    {
+      "title": "Xromatografik usullarni taqqoslash",
+      "bullets": [
+        {
+          "text": "YuQX: turli qo‘zg‘aluvchi tizimlar, sorbentlar va aniqlovchi reaktivlar bilan tozalash va chinlikni aniqlash; Rf bo‘yicha baholanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "89"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "GSX: qo‘zg‘aluvchi faza — gaz; asosiy ko‘rsatkich — kolonkada ushlanish vaqti.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuSSX: elyuent yuqori bosim ostida o‘tadi; gel xromatografiyada ikkala faza uchun bir xil erituvchi, ajralish molekula hajmiga ko‘ra.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "124"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Usul",
+          "Qo‘zg‘aluvchi faza",
+          "Asosiy ko‘rsatkich"
+        ],
+        "rows": [
+          [
+            "YuQX",
+            "Tizim (erituvchilar aralashmasi)",
+            "Rf, dog‘ rangi"
+          ],
+          [
+            "GSX",
+            "Gaz (azot, argon)",
+            "Ushlanish vaqti"
+          ],
+          [
+            "YuSSX",
+            "Elyuent, yuqori bosim",
+            "Ushlanish vaqti, yuza"
+          ],
+          [
+            "Gel xromatografiya",
+            "Bir xil erituvchi",
+            "Molekula hajmi"
+          ]
+        ],
+        "caption": "Usullar (48, 89, 121, 124-betlar)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usul issiqlikka chidamsiz moddalar uchun mos (YuSSX, 124-bet)? Doskada: jadval. Tipik xato: Rf ni GSX da qo‘llash."
     },
     {
       "title": "Usullarni tanlash va xulosa",
@@ -1332,12 +1893,12 @@
     {
       "question": "Spektrofotometriyada eritmaning optik ko‘rsatkichi qaysi oraliqda bo‘lishi tavsiya etiladi?",
       "options": [
-        "0,01-0,1",
         "0,2-1,0",
-        "1,5-3,0",
-        "5-10"
+        "5-10",
+        "0,01-0,1",
+        "1,5-3,0"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Eritmalarning optik ko‘rsatkichi 0,2 dan 1,0 gacha oraliqda bo‘lishi lozim.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1348,12 +1909,12 @@
     {
       "question": "Kofeinning etil spirtidagi eritmasi qaysi to‘lqin uzunligida maksimum beradi?",
       "options": [
-        "210 nm",
         "273 nm",
         "300 nm",
-        "350 nm"
+        "350 nm",
+        "210 nm"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Kofeinning etil spirtidagi eritmasi 273 nm da maksimumga ega.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1365,11 +1926,11 @@
       "question": "Gaz suyuqlik xromatografiyasida qo‘zg‘aluvchi faza nima?",
       "options": [
         "Suyuqlik",
-        "Gaz",
         "Qattiq sorbent",
+        "Gaz",
         "Aralashma"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "GSX da qo‘zg‘aluvchi faza — gaz, qo‘zg‘almas faza — yuqori haroratda qaynovchi suyuqlik.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1381,9 +1942,9 @@
       "question": "Xromatografiya birinchi bo‘lib qaysi yilda qo‘llangan?",
       "options": [
         "1903",
-        "1941",
         "1952",
-        "1959"
+        "1959",
+        "1941"
       ],
       "correct_index": 0,
       "explanation": "1903 yilda M.S. Svet tomonidan o‘simliklardan olingan aralashmani ajratishda.",
@@ -1396,12 +1957,12 @@
     {
       "question": "Chin ushlanish vaqti qanday hisoblanadi?",
       "options": [
+        "tum / tm",
         "tum + tm",
-        "tum - tm",
         "tum * tm",
-        "tum / tm"
+        "tum - tm"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "tchin = tum - tm.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1412,12 +1973,12 @@
     {
       "question": "GSX da miqdor qaysi usullarda aniqlanadi?",
       "options": [
-        "Ichki standart, absolyut kalibrlash, ichki normallash",
+        "Faqat vizual solishtirish",
         "Faqat titrlash",
         "Faqat gravimetriya",
-        "Faqat vizual solishtirish"
+        "Ichki standart, absolyut kalibrlash, ichki normallash"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Uch usul: ichki standart, absolyut kalibrlash, ichki normallash.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1428,12 +1989,12 @@
     {
       "question": "Qon va siydikdagi spirtlar GSX da qaysi birikmalarga aylantirilib tahlil qilinadi?",
       "options": [
+        "Aldegidlar",
         "Alkilnitritlar",
         "Efirlar",
-        "Aldegidlar",
         "Kislotalar"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Spirtlar alkilnitritlarga o‘tkazilib xromatografiyalanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1461,11 +2022,11 @@
       "question": "YuSSX da yuqori bosimli nasos qancha bosimgacha beradi?",
       "options": [
         "1 atm",
-        "20 atm",
         "200-500 atm",
-        "1000 atm"
+        "1000 atm",
+        "20 atm"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Yuqori bosimli nasos 200-500 atm gacha bosim beradi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1476,12 +2037,12 @@
     {
       "question": "YuSSX miqdoriy tahlilida qaysi kattalik hisoblanadi?",
       "options": [
-        "Cho‘qqi yuzasi",
-        "Kolonka uzunligi",
         "Detektor harorati",
-        "Gaz oqimi"
+        "Kolonka uzunligi",
+        "Gaz oqimi",
+        "Cho‘qqi yuzasi"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Miqdoriy tahlilda cho‘qqi yuzalari hisoblanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1493,11 +2054,11 @@
       "question": "Gel xromatografiyasini birinchi bo‘lib 1959 yilda kim qo‘llagan?",
       "options": [
         "Svet",
-        "Porat va Flodin",
+        "Reyneke",
         "Martin va Sing",
-        "Reyneke"
+        "Porat va Flodin"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Gellarni birinchi bo‘lib 1959 yilda Porat va Flodin qo‘llaganlar.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1508,10 +2069,10 @@
     {
       "question": "Gel xromatografiyada kolonka uchun nay ichki diametri qancha?",
       "options": [
-        "1-2 mm",
-        "8-10 mm",
         "100 mm",
-        "0,1 mm"
+        "8-10 mm",
+        "0,1 mm",
+        "1-2 mm"
       ],
       "correct_index": 1,
       "explanation": "Ichki diametri 8-10 mm nay ishlatiladi.",
@@ -1524,12 +2085,12 @@
     {
       "question": "Nikotin Dragendorf reaktivi bilan qanday kristall hosil qiladi?",
       "options": [
-        "«X» va «K» shakldagi",
-        "Ninasimon ko‘k",
         "Kub shakldagi oq",
+        "Ninasimon ko‘k",
+        "«X» va «K» shakldagi",
         "Hosil qilmaydi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Nikotin qizg‘ish «X» va «K» shaklidagi kristallar hosil qiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1540,10 +2101,10 @@
     {
       "question": "TDSIS da emitter kuchlanishi qancha?",
       "options": [
-        "50 V",
-        "405 V",
         "1000 V",
-        "10 V"
+        "405 V",
+        "10 V",
+        "50 V"
       ],
       "correct_index": 1,
       "explanation": "Emitter kuchlanishi 405 V.",
@@ -1551,6 +2112,102 @@
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "141"
+      }
+    },
+    {
+      "question": "Fotokolorimetriya moddani qanday nurlanishda o‘lchaydi?",
+      "options": [
+        "Monoxromatik, UB sohada",
+        "Rentgen nurida",
+        "Polixromatik, spektrning ko‘rinadigan qismida",
+        "Infraqizil nurda"
+      ],
+      "correct_index": 2,
+      "explanation": "Fotokolorimetriya moddani polixromatik nurlanishda spektrning ko‘rinadigan qismida o‘lchab tahlil qilishga asoslangan.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "130"
+      }
+    },
+    {
+      "question": "YuSSX da o‘zgarmas to‘lqinli spektrofotometrik detektor ko‘pincha qaysi to‘lqin uzunligida ishlaydi?",
+      "options": [
+        "190 nm",
+        "254 nm",
+        "900 nm",
+        "400 nm"
+      ],
+      "correct_index": 1,
+      "explanation": "YuSSX detektorlari: to‘lqin uzunligi o‘zgaruvchan (190-900 nm) yoki o‘zgarmaydigan (ko‘pincha 254 nm) spektrofotometrik.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "124"
+      }
+    },
+    {
+      "question": "YuSSX xromatografik kolonkasining uzunligi qancha?",
+      "options": [
+        "1-2 sm",
+        "20-30 m",
+        "10-25 sm",
+        "1-2 m"
+      ],
+      "correct_index": 2,
+      "explanation": "Kolonkalar zanglamaydigan po‘latdan yoki shishadan bo‘lib, uzunligi 10-25 sm, ichki diametri 0,3-0,8 sm.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "124"
+      }
+    },
+    {
+      "question": "TDSIS da emitter harorati qancha?",
+      "options": [
+        "505 °C",
+        "1000 °C",
+        "100 °C",
+        "390-420 °C"
+      ],
+      "correct_index": 3,
+      "explanation": "TDSIS da emitter harorati 390-420 °C, kuchlanishi 405 V.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "141"
+      }
+    },
+    {
+      "question": "Piretroidlar qaysi konsentratsiyalar oralig‘ida Buger-Lambert-Ber qonuniga bo‘ysunadi?",
+      "options": [
+        "10-100 mkg/ml",
+        "100-500 mg/ml",
+        "1-10 g/ml",
+        "0,1-1 mkg/ml"
+      ],
+      "correct_index": 0,
+      "explanation": "Piretroidlar 10-100 mkg/ml konsentratsiyalar oralig‘ida Buger-Lambert-Ber umumiy qonuniga bo‘ysunadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "163"
+      }
+    },
+    {
+      "question": "Etilenglikol kalsiy oksalat mikrokristallariga o‘tkazilganda reaksiya sezgirligi qancha?",
+      "options": [
+        "0,1 g etilenglikol",
+        "1 mkg",
+        "10 g",
+        "5 mg"
+      ],
+      "correct_index": 0,
+      "explanation": "Kalsiy oksalat kristallari reaksiyasining sezgirligi 0,1 g etilenglikolga teng.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "47"
       }
     }
   ],
@@ -1593,7 +2250,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 19-20, 47-49, 89, 93, 104-106, 108, 110, 112, 121-122, 124-125, 127, 130, 139-141, 162-163, 237"
+      "pages": "b. 19-20, 46-49, 89, 93, 104-106, 108, 110, 112, 121-122, 124-125, 127, 130, 139-141, 162-163, 237"
     },
     {
       "author": "Yuldashev Z.A., Nurmatova M.I.",

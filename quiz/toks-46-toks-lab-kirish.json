@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-46-toks-lab-kirish",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Ob’ektlar va laboratoriya jihozlari; reaktivlar tozaligini aniqlash",
+  "ru": "Ob’ektlar va laboratoriya jihozlari; reaktivlar tozaligini aniqlash",
+  "en": "Ob’ektlar va laboratoriya jihozlari; reaktivlar tozaligini aniqlash"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-46-toks-lab-kirish-q01",
+   "question_i18n": {
+    "uz": "Tahlil uchun olingan peshob hajmi kamida qancha bo‘lishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100 ml",
+     "500 ml",
+     "250 ml",
+     "50 ml"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tahlil uchun peshob hajmi 250 ml dan kam bo‘lmasligi kerak; kam bo‘lsa, bu bayonnomada ko‘rsatiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "165"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q02",
+   "question_i18n": {
+    "uz": "Namuna olingach 5 daqiqa ichida peshob harorati qaysi oraliqda bo‘lishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "20-25 °C",
+     "25-30 °C",
+     "38-42 °C",
+     "32,5-37,7 °C"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Falsifikatsiyani aniqlash uchun harorat 5 daqiqa ichida 32,5-37,7 °C oralig‘ida bo‘lishi kerak."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "165"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q03",
+   "question_i18n": {
+    "uz": "Peshobning pH-muhiti qaysi oraliqda bo‘lishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1-3",
+     "3-5",
+     "8-10",
+     "5-7"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Peshob namunasining pH-muhiti 5-7 oralig‘ida bo‘lishi kerak."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "165"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q04",
+   "question_i18n": {
+    "uz": "Tahlil uchun olingan peshob namunasi nima uchun darhol dastlabki ko‘rikdan o‘tkaziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Falsifikatsiya ehtimolini aniqlash uchun",
+     "Konsentratsiyasini aniqlash uchun",
+     "Zaharni nomlash uchun",
+     "Hajmini o‘lchash uchun"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Dastlabki ko‘rik (harorat, pH, vizual) falsifikatsiya ehtimolini aniqlash uchun o‘tkaziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "165"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q05",
+   "question_i18n": {
+    "uz": "Olingan peshob namunasi nechta idishga solinadi va nima uchun?"
+   },
+   "options_i18n": {
+    "uz": [
+     "To‘rtta idishga: har usul uchun",
+     "Ikkita idishga: biri tahlil, ikkinchisi nazorat uchun",
+     "Bitta idishga, to‘liq tahlil uchun",
+     "Uchta idishga: tahlil, nazorat va arxiv uchun"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Namuna 2 ta idishga solinadi: bittasidan zaharli moddalar tahlil qilinadi, ikkinchisi nazorat tahlili uchun saqlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "165"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q06",
+   "question_i18n": {
+    "uz": "Peshobni tahlildan oldingi ishlov usullari orasida eng ko‘p tarqalgani qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "To‘g‘ridan-to‘g‘ri bug‘latish",
+     "Quruq haydash",
+     "Sublimatsiya",
+     "Suyuqlik-suyuqlik ekstraksiyasi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Suyuqlik-suyuqlik ekstraksiyasi peshobni yot moddalardan tozalash usullari orasida eng ko‘p tarqalgani hisoblanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "166"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q07",
+   "question_i18n": {
+    "uz": "Laboratoriya ishi uchun talaba o‘zi bilan nimalarni keltiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Spirtovka va tarozi",
+     "Rezina qo‘lqop, salfetka va yuzga tutish uchun niqob",
+     "Faqat xalat",
+     "Pinset va mikroskop"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Talaba rezina qo‘lqop, salfetka va yuzga tutish uchun niqob keltiradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "166"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q08",
+   "question_i18n": {
+    "uz": "Har bir talabaga tahlilga tayyorlash uchun qancha jigar va peshob beriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100,0 g jigar va 25,0 ml peshob",
+     "100,0 g jigar va 250 ml peshob",
+     "200,0 g jigar va 50,0 ml peshob",
+     "50,0 g jigar va 10,0 ml peshob"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Har bir talabaga 100,0 g dan jigar va 25,0 ml dan peshob beriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "166"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q09",
+   "question_i18n": {
+    "uz": "Marsh moslamasida reaktivlar toza bo‘lsa, sovutilgan qismda nima kuzatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qora loyqalanish hosil bo‘ladi",
+     "Hech qanday qo‘ng‘ir-kulrang dog‘ hosil bo‘lmaydi",
+     "Zangori alanga paydo bo‘ladi",
+     "Yaltiroq kulrang dog‘ hosil bo‘ladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Dog‘ning hosil bo‘lmasligi ishlatilayotgan reaktivlarning sud-kimyo nuqtai nazaridan toza ekanini ko‘rsatadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "212"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q10",
+   "question_i18n": {
+    "uz": "Ob’ektning pH muhiti ishqoriy chiqsa, bu nimaga yo‘llanma beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Achish jarayoniga",
+     "Sianidlarga tekshirishga",
+     "Mineral kislotalarga tekshirishga",
+     "Ishqor yoki karbonatlarga tekshirishga"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ishqoriy muhit asosan ob’ektni ishqor yoki karbonatlarga tekshirishga yo‘llanma beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "21"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q11",
+   "question_i18n": {
+    "uz": "Toksikologiyada zaharning organizmga qanday ta’sir etishi qanday nomlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Toksikodinamika",
+     "Kumulyatsiya",
+     "Biotransformatsiya",
+     "Toksikokinetika"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Zahar organizmga qanday ta’sir etishi — toksikodinamika, organizmga kirgan zahar qanday o‘zgarishlarga uchrashi — toksikokinetika."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "7"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q12",
+   "question_i18n": {
+    "uz": "Gomologik qatorda molekulyar massa ortishi bilan moddaning zaharliligi ortishi qaysi qoida bo‘yicha tushuntiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dalton qoidasi",
+     "Krilova qoidasi",
+     "Richardson qoidasi",
+     "Radionova qoidasi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Richardson qoidasiga asosan gomologik qator va molekulyar massa ortishi bilan zaharli xususiyat ham ortadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "9"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q13",
+   "question_i18n": {
+    "uz": "Toksikologik kimyoning eng asosiy va eng murakkab bo‘limi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xalq xo‘jaligi zaharlarini aniqlash",
+     "Sud kimyosi",
+     "Ekspress tahlil",
+     "Klinik farmatsiya"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Modulning uch bo‘limidan sud kimyosi eng asosiy va eng murakkabi hisoblanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "10"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q14",
+   "question_i18n": {
+    "uz": "Issiq kunlarda uzoq joyga yuboriladigan bioob’ekt qaysi modda bilan konservalanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xloroform",
+     "Formalin",
+     "Etil spirti",
+     "Sirka kislota"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Konservant sifatida etil spirti ishlatiladi; ob’ekt spirt va nitritga tekshirilishi kerak bo‘lsa, spirt bilan konservalash man etiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "10"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q15",
+   "question_i18n": {
+    "uz": "Moddalarni biologik ob’ektdan ajratib olish qaysi ikki bosqichda bajariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mineralizatsiya va denitratsiya",
+     "Ekstraksiya va titrlash",
+     "Ajratib olish va tozalash",
+     "Konservalash va yuborish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ajratib olish ob’ektdan moddani suyuqlikka (distillyat, mineralizat, dializat) o‘tkazadi, so‘ng u biror usul bilan tozalanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "11"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q16",
+   "question_i18n": {
+    "uz": "Toksikologik kimyo tekshiruvi boshqa kimyoviy tahlillardan nimasi bilan farq qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat toza modda bilan ishlanadi",
+     "Yot moddali ajralmalar bilan ishlanadi",
+     "Zaharlar bir xil kimyoviy guruhga mansub",
+     "Ajratilgan zahar miqdori juda ko‘p bo‘ladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Boshqa tahlillardan farqli, toza modda bilan emas, tarkibida yot moddalar saqlagan ajralmalar bilan ishlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "11"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q17",
+   "question_i18n": {
+    "uz": "Sud-kimyo ekspertizasi tahlillari o‘tkaziladigan bo‘lim kamida nechta xonaga ega bo‘lishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5",
+     "7",
+     "4",
+     "3"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Qoidalarga ko‘ra bo‘lim kamida 5 xonaga ega bo‘lishi kerak: qabul qilish va saqlash, laboratoriya, namuna tayyorlash, ishchi xonalar, reagentlar xonasi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "14"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q18",
+   "question_i18n": {
+    "uz": "Konservalangan ob’ekt qancha muddatgacha saqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5 yilgacha",
+     "1 oygacha",
+     "1 yilgacha",
+     "Muddatsiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Konservalangan ob’ekt 1 yilgacha saqlanadi; spirt saqlovchi ob’ektlar esa 1 oydan keyin tashlab yuboriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "17"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q19",
+   "question_i18n": {
+    "uz": "Ma’lum modda aniqlanganda nima majburiy hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat rang reaksiyasi",
+     "Ob’ektni darhol yo‘q qilish",
+     "Ob’ektni qayta konservalash",
+     "Miqdor tahlili o‘tkazish"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ayrim hollarda zararsiz moddaga xos reaksiyalar chiqib qolishi mumkin, shuning uchun albatta miqdor tahlili o‘tkaziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "17"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-46-toks-lab-kirish-q20",
+   "question_i18n": {
+    "uz": "Sianid, sirka kislota, spirt, aldegid va fenollar qaysi usulda ajratib olinadigan zaharlar guruhiga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Suv bug‘i bilan haydash",
+     "Dializ",
+     "Mineralizatsiya",
+     "Organik erituvchi quyib qo‘yish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Suv bug‘i yordamida haydab ajratib olinadigan zaharlar «uchuvchi zaharlar» deyiladi: sianid, sirka kislota, galogen birikmalar, spirt, aldegid, fenollar."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "20"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

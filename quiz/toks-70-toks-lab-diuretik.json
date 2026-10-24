@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-70-toks-lab-diuretik",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Diuretiklarni ajratish va YuQX-skrining",
+  "ru": "Diuretiklarni ajratish va YuQX-skrining",
+  "en": "Diuretiklarni ajratish va YuQX-skrining"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-70-toks-lab-diuretik-q01",
+   "question_i18n": {
+    "uz": "Furosemidni qondan ajratishda pH qanchaga keltiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "pH=13",
+     "pH=7,0",
+     "pH=10",
+     "pH=2,0"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "5 ml qonga konsentrlangan HCl qo‘shib pH=2,0 ga keltiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "253"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q02",
+   "question_i18n": {
+    "uz": "Furosemid ekstraksiyasida qaysi erituvchi ishlatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Etilatsetat-izopropil spirti",
+     "Benzol",
+     "Dietil efiri",
+     "Geksan"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Furosemid dietil efiri bilan ikki marta ekstraksiyalanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "253"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q03",
+   "question_i18n": {
+    "uz": "Furosemid YuQX da 5% FeCl3 bilan qanday dog‘ beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ko‘k",
+     "Qo‘ng‘ir, Rf=0,55",
+     "Yashil",
+     "Qizil, Rf=0,10"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "5% temir (III) xlorid bilan purkalganda qo‘ng‘ir dog‘ (Rf=0,55) hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "254"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q04",
+   "question_i18n": {
+    "uz": "Asetazolamidni qondan ajratishda pH qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2,0",
+     "3,0-4,0",
+     "7,0",
+     "10"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "5 ml qonga 0,1 n HCl qo‘shib pH=3,0-4,0 ga keltiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "254"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q05",
+   "question_i18n": {
+    "uz": "Asetazolamid uchun ekstragent qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dietil efiri",
+     "Xloroform",
+     "Etilatsetat-izopropil spirti (4:1)",
+     "Toluol"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Asetazolamid etilatsetat-izopropil spirti (4:1) aralashmasi bilan ikki marta ekstraksiyalanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "254"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q06",
+   "question_i18n": {
+    "uz": "Asetazolamidni jigardan ajratishda qaysi usul qo‘llanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sublimatsiya",
+     "Suv bug‘i bilan haydash",
+     "Dializ",
+     "Suvli aseton"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Asetazolamidni biologik ob’ektdan ajratish uchun suvli aseton usulidan foydalaniladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "254"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q07",
+   "question_i18n": {
+    "uz": "Furosemid spirtdagi eritmasida UB nurda qaysi to‘lqin uzunligida maksimum beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "274 nm",
+     "264 nm",
+     "278 nm",
+     "272 nm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Furosemidning spirtdagi eritmasi 274 nm da maksimum nur yutadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q08",
+   "question_i18n": {
+    "uz": "Furosemid standart eritmasi uchun qancha namuna olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,05 g",
+     "0,5 g",
+     "5 g",
+     "0,005 g"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "50 ml kolbaga 0,05 g furosemid namunasi solinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "253"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q09",
+   "question_i18n": {
+    "uz": "Suvli aseton usulida aseton-suv nisbati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5:3",
+     "1:1",
+     "9:1",
+     "2:5"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Biologik ob’ekt aseton-suv (5:3) nisbatidagi aralashmaga bo‘ktiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q10",
+   "question_i18n": {
+    "uz": "Furosemid azobo‘yoq reaksiyasida ammoniy sulfamat nima uchun qo‘shiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ranglash uchun",
+     "Natriy nitritning ortiqchasini parchalash uchun",
+     "pH ni oshirish uchun",
+     "Cho‘ktirish uchun"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ammoniy sulfamat eritmadagi natriy nitritning ortiqchasini parchalash uchun qo‘shiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q11",
+   "question_i18n": {
+    "uz": "Furosemidni peshobdan ajratishda pH qaysi oraliqda bo‘lishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "3,0-4,0",
+     "7,0-8,0",
+     "2,0-3,0",
+     "9,0-10,0"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Peshob namunasi 0,2 n HCl bilan pH=2,0-3,0 ga keltiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "253"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q12",
+   "question_i18n": {
+    "uz": "Ekstraktni quritish uchun qancha quruq natriy sulfat solingan filtrdan o‘tkaziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5 g",
+     "50 g",
+     "500 g",
+     "5,0 g"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ekstraktlar 5,0 g quruq natriy sulfat tuzi solingan filtrdan o‘tkaziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "253"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q13",
+   "question_i18n": {
+    "uz": "Atsetazolamidni YuQX da tahlil qilishda qaysi erituvchilar sistemasi ishlatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Benzol-2-propanol (8:2)",
+     "Xloroform-toluol-etanol-ammiak (15:5:30:2)",
+     "Siklogeksan-benzol-dietilamin",
+     "Efir-aseton-ammiak"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Atsetazolamid uchun benzol-2-propanol (8:2) sistemasi qo‘llanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "255"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q14",
+   "question_i18n": {
+    "uz": "Atsetazolamid dog‘i qaysi reaktiv bilan ochiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5% temir (III) xlorid",
+     "Mune bo‘yicha Dragendorf reaktivi",
+     "0,5% KMnO4",
+     "Marki reaktivi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Atsetazolamid dog‘i Mune bo‘yicha tayyorlangan Dragendorf reaktivi bilan qo‘ng‘ir bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "255"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q15",
+   "question_i18n": {
+    "uz": "Gidroxlortiazid kobalt xlorid eritmasi bilan qanday cho‘kma hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil",
+     "Sariq",
+     "Havo rangli",
+     "Oq"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Gidroxlortiazid kobalt xlorid ta’sirida havo rangli, mis (II) sulfat ta’sirida yashil-havo rangli cho‘kma hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q16",
+   "question_i18n": {
+    "uz": "Etakrin kislota uchun YuQX da qaysi ochuvchi reagent qo‘llaniladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5% temir (III) xlorid",
+     "Dragendorf (Mune)",
+     "Simob (II) sulfat",
+     "0,5% kaliy permanganat"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Etakrin kislotasi uchun 0,5% kaliy permanganat eritmasi qo‘llaniladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q17",
+   "question_i18n": {
+    "uz": "Gidroxlortiazidning spirtdagi eritmasi qaysi to‘lqin uzunligida maksimum beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "272 nm",
+     "264 nm",
+     "274 nm",
+     "278 nm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Gidroxlortiazid 272 nm, atsetazolamid 264 nm, etakrin kislota 278 nm da maksimum beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q18",
+   "question_i18n": {
+    "uz": "Suvli aseton usulida jigar bilan birga necha ml aseton solinadi (birinchi bosqich)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5 ml",
+     "50 ml",
+     "500 ml",
+     "1 ml"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "100 ml kolbaga 50 g maydalangan jigar va 50 ml aseton solinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "254"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q19",
+   "question_i18n": {
+    "uz": "Furosemidning spirtdagi eritmasi p-dimetilaminobenzaldegid bilan qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat sariq",
+     "Ko‘k, so‘ng qora",
+     "Yashil, so‘ng to‘q qizil",
+     "Rangsiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Yashil rangli birikma hosil bo‘ladi va u to‘q qizil rangga o‘tib ketadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-70-toks-lab-diuretik-q20",
+   "question_i18n": {
+    "uz": "Diuretiklar tasnifida atsetazolamid qaysi guruhga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ksantin hosilalari",
+     "Kaliyni saqlovchi diuretiklar",
+     "Tiazidlar",
+     "Karboangidraza ingibitorlari"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Karboangidraza ingibitorlari (atsetazolamid) va osmotik diuretiklar alohida guruh."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

@@ -1,1448 +1,2530 @@
 {
-  "topic": "Detoksikatsiya usullari va antidotlar",
-  "slides": [
+ "topic": "Detoksikatsiya usullari va antidotlar",
+ "slides": [
+  {
+   "title": "Ma’ruza rejasi va tayanch iboralar",
+   "bullets": [
     {
-      "title": "Ma’ruza rejasi va tayanch iboralar",
-      "bullets": [
-        {
-          "text": "Reja: zaharli moddalarning sinflarga bo‘linishi; oshqozon-ichakda so‘rilishi va to‘qima membranalaridan o‘tishi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kuchli zaharlanishda organizmdan zaharlarni chiqarishning asosiy usullari (detoksikatsiya).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Zaharlarning tirik va murda a’zolaridagi o‘zgarishlari (metabolizmi).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: detoksikatsiya klinik toksikologiyaning vazifasi bo‘lsa, sud kimyogari nega uni bilishi kerak? Doskada: reja 3 bandi. Tipik xato: detoksikatsiyani faqat davolash deb tushunish — u laboratoriya natijasini talqin qilishga ham ta’sir qiladi. Eslatma: syllabusdagi 161-163 betlar oralig‘i amalda 161-164 betlarni qamrab oladi."
-    },
-    {
-      "title": "Zahar va zaharlanish",
-      "bullets": [
-        {
-          "text": "Zahar — kam miqdorda tirik organizmga kirib, hayot faoliyatini buzish natijasida o‘limga olib kelishi mumkin bo‘lgan kimyoviy birikma.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Zaharlanish — zaharli modda ta’sirida organizm faoliyatining buzilishi va to‘qimalar halokati yoki organizmning zahar bilan kurashishi natijasida sodir bo‘ladigan kasallik.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kimyo-toksikologik ahamiyatni o‘rganishda toksikometriya haqida qisqa ma’lumot zarur.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: zahar va dori chegarasi doza bilan belgilanadi. Doskada: zahar va zaharlanish ta’rifi. Tipik xato: zaharlanishni faqat modda xossasi deb o‘ylash — kitob uni organizm reaksiyasi sifatida ham tasvirlaydi."
-    },
-    {
-      "title": "Toksikometriya: asosiy parametrlar",
-      "bullets": [
-        {
-          "text": "Lim ac — zaharli birikmaning bir marta qo‘llanganda hayotiy funksiyalarni buzib, kuchli zaharlanish chaqiradigan eng kam miqdori.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "LD50 — o‘rtacha o‘lim dozasi: ikki hafta davomida tajriba hayvonlarining 50% ini o‘ldiruvchi zahar miqdori.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "LD100 — tajriba hayvonlarida 100% o‘limni keltiradigan miqdor.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "LD50 qo‘llash usuliga (oshqozon, teri, nafas yo‘li) qarab 1 kg tana og‘irligiga mg hisobida beriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega LD50, LD100 dan ko‘ra ko‘p ishlatiladi? Doskada: Lim ac, LD50, LD100. Tipik xato: LD50 ni 50 mg degan son deb o‘ylash — u hayvonlarning 50% ini o‘ldiruvchi doza."
-    },
-    {
-      "title": "Havo orqali ta’sir ko‘rsatkichlari",
-      "bullets": [
-        {
-          "text": "SL50 (CL100) — nafas yo‘li bilan yuborilganda 50% (100%) tajriba hayvonlarini nobud qiladigan zahar miqdori, mg/m3.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "PDK — havoda ruxsat etilgan zahar miqdori, mg/m3.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OBUV — havodagi taxminiy zararsiz zahar miqdori, mg/m3.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xavflilik o‘tkir ta’sir zonasi — SL50 ning o‘tkir ta’sir chegarasiga nisbati bilan ham baholanadi; bu nisbat qancha katta bo‘lsa, birikma shunchalik kam xavfli.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: PDK va OBUV farqi. Doskada: SL50, PDK, OBUV birliklari (mg/m3). Tipik xato: PDK ni LD50 bilan bir birlikda yozish. Kitobda: nisbat formulasi PDF dan tushib qolgan; gigiyenada bu o‘tkir ta’sir zonasi (Zac = SL50 / Lim ac)."
-    },
-    {
-      "title": "Zaharlilik darajasi bo‘yicha sinflanish",
-      "bullets": [
-        {
-          "text": "Malaka ma’ruzasida moddalar zaharlilik bo‘yicha 4 guruhga bo‘linadi: o‘ta, kuchli, o‘rtacha, kam zaharli.",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mezonlar: havodagi ruxsat etilgan miqdor, oshqozon orqali LD50, havodagi o‘lim keltiruvchi miqdor.",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Havodagi o‘limli miqdor, mg/m3: <500; 501-5000; 5001-50000; >50000.",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Zaharlilik darajasi",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "PDK, mg/m3",
-          "LD50, mg/kg"
-        ],
-        "rows": [
-          [
-            "O‘ta zaharli",
-            "<0,1",
-            "<15"
-          ],
-          [
-            "Kuchli zaharli",
-            "0,1-1",
-            "15-150"
-          ],
-          [
-            "O‘rtacha zaharli",
-            "1,1-10",
-            "151-5000"
-          ],
-          [
-            "Kam zaharli",
-            ">10",
-            ">5000"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: bu sinflanish pestitsidlar sinflanishidan (toks p.149: 50; 50-200; 200-1000; >1000 mg/kg) farq qiladi — turli maqsad uchun turli chegara. Doskada: jadvalni yozing. Tipik xato: ikki sinflanishning chegaralarini aralashtirish. Izoh: bu sinflanish faqat malaka materialida bor."
-    },
-    {
-      "title": "Zaharlanish sinflanishining asoslari",
-      "bullets": [
-        {
-          "text": "Zaharlanish uch asosda sinflanadi: kelib chiqishi, klinikasi va nozologiyasi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tasodifiy zaharlanish: bilmagan holda, o‘z-o‘zini davolash uchun dorini ortiqcha iste’mol qilish, ko‘p spirtli ichimlik, dorini noto‘g‘ri qo‘llash.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ko‘zda tutilgan: o‘z-o‘zini o‘ldirish (suitsid) yoki qasddan o‘ldirish (kriminal).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sud-kimyoviy jihatdan tasodifiy va kriminal zaharlanishni farqlash qiyinligi. Doskada: 3 asos, 2 kelib chiqish turi. Tipik xato: faqat suitsid va kriminalni kelib chiqish deb hisoblash."
-    },
-    {
-      "title": "Zaharlanish yo‘llari va ko‘rinishlari",
-      "bullets": [
-        {
-          "text": "Yuzaga kelishi: ishlab chiqarishga oid, turmushdagi, tibbiy zaharlanish.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yo‘llari: peroral (og‘iz orqali), ingalyatsion (nafas yo‘li; ko‘proq sanoatda), in’eksion, bo‘shliqlar orqali (to‘g‘ri ichak, qin, quloq).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Klinik: kuchli zaharlanish — bir yo‘la yuqori miqdor va belgilarning tez paydo bo‘lishi; xronik — kam miqdorda, uzoq vaqt bo‘linib kirishi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nozologik sinflanish kimyoviy birikma nomi bilan bog‘lab ataladi (uyqu chaqiruvchi, MNS qo‘zg‘atuvchi moddalar va b.).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ingalyatsion zaharlanish nega sanoatda ko‘proq? Doskada: 4 yo‘l. Tipik xato: kitobdagi «perkutan» bandini ko‘chirish. Kitobda xato: dvssm p.162 da «perkutan (yo‘g‘on ichak orqali)» deb yozilgan — perkutan teri orqali kirishni anglatadi; bu band slaydga kiritilmadi, ustoz tasdig‘i kerak."
-    },
-    {
-      "title": "Metabolizm va biotransformatsiya",
-      "bullets": [
-        {
-          "text": "Metabolizm — grekcha metabol: aylanish, o‘zgarish; moddaning bir kimyoviy tuzilishdan boshqasiga o‘zgarishi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "162"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Barcha zahar, dori va shu kabi birikmalar organizmga qaysi yo‘l bilan kirishidan qat’i nazar metabolitik o‘zgaradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dorivor va boshqa kimyoviy moddalar uchun biotransformatsiya termini ishlatiladi (bios — hayot, transformaze — o‘zgartirish).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Organizmga kirgan moddalarning o‘zgargan mahsulotlari metabolitlar deyiladi; ular ba’zan o‘ta faol, ko‘pincha faolligi pasaygan yoki yo‘qolgan bo‘ladi.",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega sud kimyogari metabolitlarni qidiradi? Doskada: metabol, bios, transformaze. Tipik xato: metabolitni doim zararsiz deb hisoblash (keyingi slaydlarda letal sintez)."
-    },
-    {
-      "title": "Organizmga kirish yo‘li va jigar",
-      "bullets": [
-        {
-          "text": "Oshqozonda so‘rilgan zaharli modda qon orqali jigarga o‘tadi va u yerda zararsizlantiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Og‘iz bo‘shlig‘idan shimilgan zahar to‘g‘ridan-to‘g‘ri katta qon aylanish sistemasiga o‘tadi, masalan sianidlar.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Biotransformatsiya zaharli yoki dori modda organizm ta’sirida o‘zgarishi bilan birga, organizm ham zahar ta’sirida o‘zgarishini bildiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega sianidlar og‘iz bo‘shlig‘i orqali tez ta’sir qiladi (jigardan birinchi o‘tishsiz)? Doskada: ikki yo‘l: oshqozon -> jigar; og‘iz -> katta qon aylanish. Tipik xato: barcha zaharlar jigarda zararsizlanadi deb o‘ylash."
-    },
-    {
-      "title": "Zahar tutilishi va zararsizlanishi: 4 tip membrana",
-      "bullets": [
-        {
-          "text": "Birinchi tip membrana neytral molekulalarni o‘tkazadi, ionli birikmalarni tutib qoladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ikkinchi tip: tashuvchi to‘qima zahar bilan birikib hujayraga o‘tadi, u yerda parchalanib tashuvchi sof holda ajraladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uchinchi tip: tashuvchi to‘qima zahar bilan kompleks birikmalar hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "To‘rtinchi tip: ultramikroskopik bo‘shliqlarda musbat zaryadlangan ionlar zaharli moddalarni biriktiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ionli va neytral moddalar farqi so‘rilishga qanday ta’sir qiladi (ekstraksiya nazariyasi 16-ma’ruzada). Doskada: 4 tip - 4 mexanizm. Tipik xato: tiplarni raqamlari bo‘yicha aralashtirish. Kitob matni «tashuvchi to‘qima» deb yozadi; ma’ruzachi buni «tashuvchi moddasi»ga aniqlashtirishi mumkin."
-    },
-    {
-      "title": "Letal sintez",
-      "bullets": [
-        {
-          "text": "Metabolitik o‘zgarishlar organizm himoya vositasi sifatida katta ahamiyatga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ba’zi moddalar zaharli ta’sir etuvchi, zaharli metabolitlar ham hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bunday hodisa «letal sintez», ya’ni zaharli sintez deb ataladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: faol metabolit asosiy moddadan kuchliroq zaharli bo‘lishi mumkin (42-ma’ruzada geptaxlor epoksidi misol). Doskada: «metabolizm = himoya, lekin ba’zan = zaharlanish». Tipik xato: metabolizmni har doim detoksikatsiya deb hisoblash."
-    },
-    {
-      "title": "Metabolik reaksiyalar (1): oksidlanish va qaytarilish",
-      "bullets": [
-        {
-          "text": "Oksidlanish: fenobarbital molekulasidagi fenil halqaning oksidlanishi (gidroksillanish).",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qaytarilish: xloralgidrat trixloretanolga aylanadi.",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dealkillanish: prominal fenobarbitalga aylanadi (N-CH3 guruhining ajralishi).",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metabolik reaksiyalar 1-ma’ruzadagi I faza bilan bog‘liq. Doskada: 3 reaksiya turi. Tipik xato: bu misollarni kitob matni deb ko‘rsatish — ular malaka ma’ruzasi slaydlaridan olingan (qo‘shimcha manba)."
-    },
-    {
-      "title": "Metabolik reaksiyalar (2): gidroliz va konyugatsiya",
-      "bullets": [
-        {
-          "text": "Konyugatsiya turlari: glyukuronlash va sulfatlash, asetillanish va metillanish, glutation va aminokislotali konyugatsiya.",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gidroliz: geroin + 2 H2O -> morfin + 2 sirka kislota; kokain -> ekgonin + metil spirti + benzoy kislota.",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Konyugatsiya: ferment ishtirokida endogen birikmalar (glyukuron yoki sulfat kislota) bilan birikish; masalan fenol -> fenilsulfat, etil spirti -> etilsulfat.",
-          "source": {
-            "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: konyugatlar suvda yaxshi eriydi, siydik bilan chiqadi. Doskada: gidroliz va konyugatsiya misollari. Tipik xato: gidroliz tenglamasida suv molekulalari sonini noto‘g‘ri yozish. Izoh: dezaminlanish (efedrin) sxemasi manbada faqat rasm shaklida, slaydga kiritilmadi."
-    },
-    {
-      "title": "Metabolizm tezligiga ta’sir etuvchi omillar",
-      "bullets": [
-        {
-          "text": "Metabolizmga yosh, kasalliklar, qon-qarindoshlik va bir vaqtda qabul qilingan moddalar turlari ta’sir qiladi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metabolizm tezligi modda organizmga qaysi yo‘l bilan tushishiga bog‘liq.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Butadion, barbituratlar, uch tsiklik antidepressantlar, xlororganik pestitsidlar jigar mikrosomalaridagi indutsirlangan fermentlar ishtirokida metabolizmni kuchaytiradi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ba’zi fermentlarning tug‘ma yetishmasligi metabolizmni pasaytiradi; bu holat idiosinkraziya deb ataladi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: fermentlar indutsiyasi dori-dori o‘zaro ta’siriga qanday olib keladi? Doskada: 4 omil. Tipik xato: bu omillarni kitob (dvssm) matni deb ko‘rsatish — ular faqat malaka materialida."
-    },
-    {
-      "title": "Zaharlanish diagnostikasi: uch yo‘nalish",
-      "bullets": [
-        {
-          "text": "Klinik diagnostika.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Laborator-toksikologik diagnostika.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Patomorfologik diagnostika.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Diagnostika",
-        "nodes": [
-          "Klinik",
-          "Laborator-toksikologik",
-          "Patomorfologik"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uch yo‘nalish bir-birini qanday to‘ldiradi? Doskada: 3 qutichali sxema. Tipik xato: laboratoriya tahlilini klinik diagnozning o‘rniga qo‘yish. Detoksikatsiya usullari ham kitobda shu bo‘limda keltirilgan."
-    },
-    {
-      "title": "Klinik diagnostika va ashyoviy dalil",
-      "bullets": [
-        {
-          "text": "Klinik diagnoz ayrim zahar yoki zaharlar guruhining xarakterli «tanlangan» ta’siri oqibatidagi alomatlarga asoslanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Psixotrop dorilar bilan zaharlanganda beparvolik, eshitishning kuchsizlanishi, bexushlik, sezgining pasayishi kuzatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Voqea joyida qolgan ichimlik, dori qoldiqlari, bo‘shagan idishlar va kimyoviy moddaning hidi birlamchi diagnozda katta ahamiyatga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Zaharlanish o‘limga sababchi bo‘lsa, voqea joyidagi ashyoviy dalillarni sud-tibbiy eksperti va sud-izlanuvchisi aniqlaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ashyoviy dalilni shifoxonaga topshirish tashxisni qanday tezlashtiradi? Doskada: 4 ashyoviy dalil turi. Tipik xato: dalilni yo‘qotish yoki tozalab tashlash."
-    },
-    {
-      "title": "Instrumental-funksional diagnostika",
-      "bullets": [
-        {
-          "text": "Elektroensefalografiya (EEG): bosh miya bioelektrik aktivligini aniqlash orqali psixo-neyrotrop zaharlar differensial diagnostikasi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Elektrokardiografiya (EKG): yurak faoliyatining zahar ta’siridagi o‘zgarishlari (ritm tezligi, miokard distrofiyasi).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gemodinamika: qon tomirini urish soni va qonning minutlik hajmini aniqlash.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: EEG qaysi zaharlar guruhida ayniqsa foydali? Doskada: EEG - miya; EKG - yurak; gemodinamika - qon aylanishi. Tipik xato: instrumental diagnostikani toksikologik laboratoriya o‘rniga qo‘yish."
-    },
-    {
-      "title": "Laborator-toksikologik diagnoz",
-      "bullets": [
-        {
-          "text": "Biologik chiqindilarda zaharli moddani tez va spesifik usullar bilan aniqlash.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qondagi biokimyoviy o‘zgarishlar asosida zaharlangan organizmning patologik o‘zgarishlarini spesifik biokimyoviy tahlil qilish.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jigar, buyrak va boshqa a’zolarning funksional o‘zgarishlariga asoslangan nospesifik usullar bilan tekshirish.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tez spesifik usul va nospesifik usul farqi. Doskada: 3 yo‘nalish. Tipik xato: nospesifik natijani zaharni tasdiqlovchi deb talqin qilish."
-    },
-    {
-      "title": "Klinik laboratoriyada tahlil tartibi",
-      "bullets": [
-        {
-          "text": "Tez yordam brigadasi voqea joyida zaharlanishga sabab bo‘lgan dori, suyuqlik qoldiqlarini yig‘ib, yaxshi yopiladigan idishda laboratoriyaga yetkazishi zarur.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qoldiq bo‘lmasa, oshqozondan olingan birinchi 100-150 ml yuvindi suyuqlik ashyo sifatida ishlatiladi; is gazi bilan zaharlanishda qon olinadi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kasal shifoxonaga yotqizilishi bilan darhol siydigi va qoni tahlilga olinadi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Noaniq zaharda avval siydikdan uchuvchan birikmalarga, so‘ng kislotali va ishqoriy ajralmalarga xromatografik skrining qo‘llanadi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega birinchi 100-150 ml yuvindi ahamiyatli? Doskada: 100-150 ml. Tipik xato: yuvindi suyuqlikni ko‘p marta yuvilgandan keyin olish. Izoh: bu tartib faqat malaka materialida bor."
-    },
-    {
-      "title": "Ekspress usullar va tahlil bosqichlari",
-      "bullets": [
-        {
-          "text": "Toksikologik diagnostika laboratoriyalarida instrumental ekspress usullar (YuQX, GSX, spektrofotometriya) muhim; zahar 1-2 soat ichida aniqlanishi mumkin.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kimyo-toksikologik tahlilning birinchi bosqichi — zaharni ajratib olish, ikkinchisi — chinligini aniqlash, uchinchisi — miqdorini aniqlash.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tahlil natijalari va klinik o‘zgarishlarga tayanib toksikolog-shifokor diagnoz qo‘yadi va zarur tadbirlarni belgilaydi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: YuQX va GSX nega «skrining» usullari? Doskada: 3 bosqich (ajratish - chinlik - miqdor). Tipik xato: ekspress natijani yakuniy deb qabul qilish."
-    },
-    {
-      "title": "Patomorfologik diagnostika",
-      "bullets": [
-        {
-          "text": "Patomorfologik tekshiruv ko‘pincha sud-tibbiy ekspertlari tomonidan, tirik vaqtidagi kimyo-toksikologik tekshiruvlar asosida o‘tkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gemodializ, gemosorbsiya, reanimatsiya chog‘ida zaharlar organizmdan chiqib ketgan bo‘lishi mumkin.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bunda buyrak, jigar va ichki a’zolardagi o‘zgarishlar tekshiriladi; murdadan olingan a’zolar sud-kimyo tahliliga jo‘natiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: davolash chora-tadbirlari tahlil natijasiga qanday ta’sir qiladi (zahar topilmasligi mumkin). Doskada: «detoksikatsiya -> manfiy natija xavfi». Tipik xato: manfiy natijani zaharlanish yo‘qligiga dalil deb olish."
-    },
-    {
-      "title": "Detoksikatsiya usullari: uch guruh",
-      "bullets": [
-        {
-          "text": "Tabiiy tozalanish jarayonlarini kuchaytirish usullari.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sun’iy detoksikatsiya usullari.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Antidotli detoksikatsiya usullari.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kuchli zaharlanishda asosiy maqsad zahar ta’sirini to‘xtatish va organizmdan zaharli birikmalarni chiqarib yuborishdir.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uch guruh qaysi hollarda birgalikda qo‘llanadi? Doskada: 3 guruh. Tipik xato: antidotlarni sun’iy detoksikatsiyadan alohida deb o‘ylamaslik — kitob ularni uchinchi guruh sifatida ajratadi."
-    },
-    {
-      "title": "Tabiiy tozalanishni kuchaytirish",
-      "bullets": [
-        {
-          "text": "Qorin-ichak tizimi va yo‘g‘on ichakni tozalash.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kuchaytirilgan diurez — suyuqliklar chiqishini tezlashtirish.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Giperventilyatsiya — havo, gaz almashinuvini kuchaytirish.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bunday tadbirlar organizmga so‘rilmagan zaharni chiqarish va so‘rilgan zaharning chiqarilishini tezlatish uchun bajariladi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: giperventilyatsiya qaysi zaharlar uchun (uchuvchan, o‘pka orqali chiqadigan) mantiqiy? Doskada: 3 usul. Tipik xato: kuchaytirilgan diurezni barcha zaharlar uchun xavfsiz deb hisoblash."
-    },
-    {
-      "title": "Sun’iy detoksikatsiya usullari",
-      "bullets": [
-        {
-          "text": "Qorin-ichak dializi (peritoneal dializ); gastrointestinal sorbsiya.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gemodializ va gemosorbsiya (qon dializi va sorbsiyasi).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Plazmosorbsiya va plazmoferez (zardob va suyuqliklar sorbsiyasi).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Limforeya (limfa ajralishini tezlatish) va limfosorbsiya; qon quyish va qon almashtirish.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: dializ va sorbsiyaning farqi. Doskada: 6 usul ro‘yxati. Tipik xato: gemodializni faqat buyrak kasalligi usuli deb o‘ylash."
-    },
-    {
-      "title": "Antidotli detoksikatsiya",
-      "bullets": [
-        {
-          "text": "Antidotlar yordamida tozalash turlari: kontakt va parenteral ahamiyatli kimyoviy birikmalar; biokimyoviy usullar; farmakologik antagonistlar.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bular orasida antidotlar yordamida zaharlarni zararsizlantirish katta ahamiyatga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Usul moddalarni neytrallash, erimaydigan birikmalarga aylantirish va sorbentlarga (masalan, faollangan ko‘mir) shimdirishga asoslangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: antidot har doim spesifik bo‘lishi shartmi? Doskada: 3 tur. Tipik xato: antidotni faqat «dori» deb o‘ylash — sorbentlar ham antidot hisoblanadi. Kitobda alohida antidot nomlari berilmagan; keyingi slaydlar malaka materialiga tayanadi."
-    },
-    {
-      "title": "Antidotlarning 4 guruhi",
-      "bullets": [
-        {
-          "text": "Spesifik antidotlar asosan 4 guruhga bo‘linadi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "1-guruh: oshqozon-ichakdagi zaharga fizik-kimyoviy ta’sir qiluvchi (faollangan ko‘mir).",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "2-guruh: to‘qimalardagi zaharga ta’sir qiluvchi (tiol birikmalari, xelat hosil qiluvchi tuzlar).",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Antidot guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Mohiyati"
-        ],
-        "rows": [
-          [
-            "1",
-            "Oshqozon-ichakda ta’sir"
-          ],
-          [
-            "2",
-            "To‘qimalarda fizik-kimyoviy"
-          ],
-          [
-            "3",
-            "Biokimyoviy antidotlar"
-          ],
-          [
-            "4",
-            "Farmakologik antagonistlar"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: guruhlarni mexanizmi bo‘yicha farqlang. Doskada: 4 guruh jadvali. Tipik xato: 3 va 4 guruhni aralashtirish. Izoh: antidot guruhlari faqat malaka materialida bor (063), kitobda faqat uch turga bo‘lish keltirilgan."
-    },
-    {
-      "title": "Faollangan ko‘mir",
-      "bullets": [
-        {
-          "text": "1 g faollangan ko‘mir taxminan 800 mg morfinni, 700 mg barbituratni, 300 mg alkogolni adsorbsiyalaydi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Universal antidot sifatida magneziy, faollangan ko‘mir va hayvon to‘qimalari kuyindisi aralashmasi (TUM) ishlatiladi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sorbentlarga shimdirish antidotli usullarning bir ko‘rinishi sifatida tilga olinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "164"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ko‘mir nega bir xil miqdorda turli moddalarni turlicha sorbsiyalaydi? Doskada: 800 / 700 / 300 mg. Tipik xato: bu sonlarni davolash dozasi deb qabul qilish. Manbada: «ko‘mir miqdori taxminan …» (birlik yo‘q); klassik klinik toksikologiya ma’lumoti 1 g ko‘mirga nisbatan."
-    },
-    {
-      "title": "Metall zaharlarga qarshi antidotlar",
-      "bullets": [
-        {
-          "text": "Tiol birikmalari (unitiol, merkaptid) metall va mishyak saqlovchi moddalardan zaharlanganda ishlatiladi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qo‘rg‘oshin, kobalt, kadmiy kabi ionlar bilan zaharlanganda zararsiz xelat birikmalar hosil qiluvchi tuzlar (tetatsin, EDTA) qo‘llanadi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metall va metalloidlar (As, Sb, Hg) oqsillar bilan barqaror birikmalar hosil qilib, organizmda uzoq saqlanadi; ularni chiqarish uchun unitiol, kompleksonlar ishlatiladi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: xelat hosil qilish metallning chiqishini qanday tezlashtiradi (9-12 ma’ruzalar bilan bog‘liq)? Doskada: unitiol - As, Hg; EDTA/tetatsin - Pb, Cd, Co. Tipik xato: unitiolni qo‘rg‘oshin zaharlanishida birinchi tanlov deb hisoblash — manbada u metall va mishyak uchun keltirilgan."
-    },
-    {
-      "title": "Biokimyoviy antidotlar",
-      "bullets": [
-        {
-          "text": "Biokimyoviy antidotlar organizm zaharli birikma bilan zararsiz metabolitlar hosil qilishiga yordam beradi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Etilenglikol va metil spirti bilan zaharlanganda etil spirti ishlatiladi.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uglerod tetraxlorid bilan zaharlanganda antioksidantdan foydalanish mumkin.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: etil spirti metanol va etilenglikol bilan fermentga raqobat qiladi (8-ma’ruzaga bog‘liq). Doskada: etil spirti -> metanol/etilenglikol. Tipik xato: etil spirtini har qanday spirt zaharlanishida antidot deb hisoblash."
-    },
-    {
-      "title": "Xulosa",
-      "bullets": [
-        {
-          "text": "Zaharlanish sinflari, toksikometriya (Lim ac, LD50, LD100, SL50, PDK, OBUV) va metabolizm (biotransformatsiya, letal sintez).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "161-163"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diagnostika: klinik, laborator-toksikologik, patomorfologik; instrumental usullar (EEG, EKG, gemodinamika).",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163-164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Detoksikatsiya: tabiiy tozalanishni kuchaytirish, sun’iy usullar (dializ, sorbsiya, plazmoferez va b.), antidotlar.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "163-164"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Antidotlar: faollangan ko‘mir, tiol birikmalari, xelatlar, biokimyoviy antidotlar va antagonistlar.",
-          "source": {
-            "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: detoksikatsiya sud-kimyoviy natijaga qanday ta’sir qiladi? Doskada: 3 guruh detoksikatsiya + 3 diagnostika. Tipik xato: antidot nomlarini yodlab, mexanizmni tushunmaslik. Eslatma: kitoblarda aniq antidot nomlari ro‘yxati (masalan, har bir zahar uchun) berilmagan; malaka 063 dagi misollar qo‘shimcha manba."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Kitobga ko‘ra LD50 qanday ta’riflanadi?",
-      "options": [
-        "Hayvonlarning 50% ini ikki hafta ichida o‘ldiruvchi zahar miqdori",
-        "Hayvonlarning 100% ini o‘ldiruvchi doza",
-        "Havoda ruxsat etilgan miqdor",
-        "Eng kam zaharlovchi doza"
-      ],
-      "correct_index": 0,
-      "explanation": "LD50 — o‘rtacha o‘lim dozasi: ikki hafta davomida tajriba hayvonlarida 50% o‘limga olib keluvchi zahar miqdori.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "161"
-      }
-    },
-    {
-      "question": "Havoda ruxsat etilgan zahar miqdori qanday belgilanadi?",
-      "options": [
-        "PDK",
-        "OBUV",
-        "LD100",
-        "Lim ac"
-      ],
-      "correct_index": 0,
-      "explanation": "PDK — havoda ruxsat etilgan zahar miqdori, mg/m3.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "162"
-      }
-    },
-    {
-      "question": "Letal sintez nima?",
-      "options": [
-        "Zaharli metabolitlar hosil bo‘lishi",
-        "Zaharning jigarda to‘liq zararsizlanishi",
-        "Antidot sintezi",
-        "Dori sintezi"
-      ],
-      "correct_index": 0,
-      "explanation": "Ba’zi moddalar zaharli metabolitlar hosil qiladi; bu «letal sintez» deyiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "163"
-      }
-    },
-    {
-      "question": "Og‘iz bo‘shlig‘idan shimilgan zahar qayerga o‘tadi (misol: sianidlar)?",
-      "options": [
-        "Jigarga",
-        "To‘g‘ridan-to‘g‘ri katta qon aylanish sistemasiga",
-        "Buyrakka",
-        "O‘pkaga"
-      ],
-      "correct_index": 1,
-      "explanation": "Og‘iz bo‘shlig‘idan shimilgan zahar to‘g‘ridan-to‘g‘ri katta qon aylanishiga o‘tadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "163"
-      }
-    },
-    {
-      "question": "Biotransformatsiya terminidagi «bios» nimani anglatadi?",
-      "options": [
-        "O‘zgartirish",
-        "Hayot",
-        "Zahar",
-        "Aylanish"
-      ],
-      "correct_index": 1,
-      "explanation": "Bios — hayot, transformaze — o‘zgartirish.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "163"
-      }
-    },
-    {
-      "question": "Zaharlanish diagnostikasining yo‘nalishlariga qaysi biri kirmaydi?",
-      "options": [
-        "Klinik",
-        "Laborator-toksikologik",
-        "Patomorfologik",
-        "Iqtisodiy"
-      ],
-      "correct_index": 3,
-      "explanation": "Diagnostika: klinik, laborator-toksikologik va patomorfologik.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "163"
-      }
-    },
-    {
-      "question": "EEG nimani aniqlash uchun qo‘llanadi?",
-      "options": [
-        "Yurak ritmini",
-        "Bosh miyaning bioelektrik aktivligini",
-        "Qon bosimini",
-        "Jigar fermentlarini"
-      ],
-      "correct_index": 1,
-      "explanation": "Elektroensefalografiya bosh miyaning bioelektrik aktivligini aniqlaydi.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "163"
-      }
-    },
-    {
-      "question": "Tabiiy tozalanishni kuchaytirish usullariga qaysi biri kiradi?",
-      "options": [
-        "Gemodializ",
-        "Kuchaytirilgan diurez",
-        "Plazmoferez",
-        "Qon almashtirish"
-      ],
-      "correct_index": 1,
-      "explanation": "Tabiiy usullar: ichak tozalash, kuchaytirilgan diurez, giperventilyatsiya.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "164"
-      }
-    },
-    {
-      "question": "Sun’iy detoksikatsiya usullariga qaysi biri kiradi?",
-      "options": [
-        "Giperventilyatsiya",
-        "Gemosorbsiya",
-        "Ichak tozalash",
-        "Kuchaytirilgan diurez"
-      ],
-      "correct_index": 1,
-      "explanation": "Sun’iy usullar: peritoneal dializ, gastrointestinal sorbsiya, gemodializ va gemosorbsiya, plazmoferez va b.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "164"
-      }
-    },
-    {
-      "question": "Antidotli detoksikatsiyada qaysi sorbent misol qilib keltirilgan?",
-      "options": [
-        "Faollangan ko‘mir",
-        "Kaliy permanganat",
-        "Natriy sulfat",
-        "Silikagel"
-      ],
-      "correct_index": 0,
-      "explanation": "Neytrallash, erimaydigan birikmaga aylantirish va sorbentga (faollangan ko‘mir) shimdirish.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "164"
-      }
-    },
-    {
-      "question": "Patomorfologik tekshiruvda nima uchun jigar va buyrak tekshiriladi?",
-      "options": [
-        "Gemodializ va reanimatsiya tufayli zahar chiqib ketgan bo‘lishi mumkin",
-        "Faqat yosh aniqlash uchun",
-        "Antidot tanlash uchun",
-        "Ashyoviy dalil bo‘lmaganda"
-      ],
-      "correct_index": 0,
-      "explanation": "Davolash chog‘ida zaharlar chiqib ketgan bo‘lishi mumkin, shuning uchun a’zolardagi o‘zgarishlar tekshiriladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "164"
-      }
-    },
-    {
-      "question": "Malaka materialida etilenglikol va metil spirti bilan zaharlanganda qaysi modda antidot sifatida keltirilgan?",
-      "options": [
-        "Etil spirti",
-        "Faollangan ko‘mir",
-        "Unitiol",
-        "EDTA"
-      ],
-      "correct_index": 0,
-      "explanation": "Biokimyoviy antidot sifatida etil spirti ishlatiladi.",
-      "source": {
-        "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-        "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-        "page": "matn"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Malaka materialida toksikologiya tushunchasi: yunoncha toxikon — zahar, logos — fan; toksikologiyada toksikodinamika va toksikokinetika ajratiladi.",
-      "source": {
-        "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-        "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-        "page": "matn"
-      }
-    },
-    {
-      "text": "Kitobga ko‘ra bexushlik holatidagi zaharlanishda voqea joyidagi ichimlik, dori qoldiqlari va idishlar shifoxonaga ashyoviy dalil sifatida topshiriladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Nurmatova M.I.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-        "page": "163"
-      }
-    },
-    {
-      "text": "Malaka ma’ruzasida ksenobiotiklar — organizm uchun yot (grekcha xenos — yot, bios — hayot) moddalar deb ataladi.",
-      "source": {
-        "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
-        "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-        "page": "matn"
-      }
-    },
-    {
-      "text": "Idiosinkraziya — grekcha idios (noaniq) va synkrasis (birikma): ba’zi fermentlarning tug‘ma yetishmasligi oqibatida dori yoki oziq moddalarga o‘ta sezgirlik.",
-      "source": {
-        "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-        "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-        "page": "matn"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Reja: zaharli moddalarning sinflarga bo‘linishi; oshqozon-ichakda so‘rilishi va to‘qima membranalaridan o‘tishi.",
+     "source": {
       "author": "Yuldashev Z.A., Nurmatova M.I.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-      "year": null,
-      "pages": "b. 161-164"
+      "page": "161"
+     },
+     "uncertain": false
     },
     {
-      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
-      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+     "text": "Kuchli zaharlanishda organizmdan zaharlarni chiqarishning asosiy usullari (detoksikatsiya).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
     },
     {
+     "text": "Zaharlarning tirik va murda a’zolaridagi o‘zgarishlari (metabolizmi).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: detoksikatsiya klinik toksikologiyaning vazifasi bo‘lsa, sud kimyogari nega uni bilishi kerak? Doskada: reja 3 bandi. Tipik xato: detoksikatsiyani faqat davolash deb tushunish — u laboratoriya natijasini talqin qilishga ham ta’sir qiladi. Eslatma: syllabusdagi 161-163 betlar oralig‘i amalda 161-164 betlarni qamrab oladi."
+  },
+  {
+   "title": "Zahar va zaharlanish",
+   "bullets": [
+    {
+     "text": "Zahar — kam miqdorda tirik organizmga kirib, hayot faoliyatini buzish natijasida o‘limga olib kelishi mumkin bo‘lgan kimyoviy birikma.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zaharlanish — zaharli modda ta’sirida organizm faoliyati buzilishi, to‘qimalar halokati yoki organizmning zahar bilan kurashi natijasidagi kasallik kasallik.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kimyo-toksikologik ahamiyatni o‘rganishda toksikometriya haqida qisqa ma’lumot zarur.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Zahar va zaharlanish",
+    "columns": [
+     {
+      "title": "Zahar",
+      "items": [
+       "kimyoviy birikma",
+       "kam miqdorda hayot faoliyatini buzadi",
+       "o‘limga olib kelishi mumkin"
+      ]
+     },
+     {
+      "title": "Zaharlanish",
+      "items": [
+       "faoliyat buzilishi va to‘qima halokati",
+       "yoki organizmning zahar bilan kurashi",
+       "kasallik"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: zahar va dori chegarasi doza bilan belgilanadi. Doskada: zahar va zaharlanish ta’rifi. Tipik xato: zaharlanishni faqat modda xossasi deb o‘ylash — kitob uni organizm reaksiyasi sifatida ham tasvirlaydi."
+  },
+  {
+   "title": "Toksikometriya: asosiy parametrlar",
+   "bullets": [
+    {
+     "text": "Lim ac — zaharli birikmaning bir marta qo‘llanganda hayotiy funksiyalarni buzib, kuchli zaharlanish chaqiradigan eng kam miqdori.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "LD50 — o‘rtacha o‘lim dozasi: ikki hafta davomida tajriba hayvonlarining 50% ini o‘ldiruvchi zahar miqdori.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "LD100 — tajriba hayvonlarida 100% o‘limni keltiradigan miqdor.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "LD50 qo‘llash usuliga (oshqozon, teri, nafas yo‘li) qarab 1 kg tana og‘irligiga mg hisobida beriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Toksikometriya",
+    "items": [
+     {
+      "label": "Lim ac",
+      "value": "eng kam miqdor"
+     },
+     {
+      "label": "LD50",
+      "value": "50% o‘lim"
+     },
+     {
+      "label": "Muddat (LD50)",
+      "value": "2",
+      "unit": "hafta"
+     },
+     {
+      "label": "LD100",
+      "value": "100% o‘lim"
+     },
+     {
+      "label": "Birlik (LD50)",
+      "value": "mg/kg"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega LD50, LD100 dan ko‘ra ko‘p ishlatiladi? Doskada: Lim ac, LD50, LD100. Tipik xato: LD50 ni 50 mg degan son deb o‘ylash — u hayvonlarning 50% ini o‘ldiruvchi doza."
+  },
+  {
+   "title": "Havo orqali ta’sir ko‘rsatkichlari",
+   "bullets": [
+    {
+     "text": "SL50 (CL100) — nafas yo‘li bilan yuborilganda 50% (100%) tajriba hayvonlarini nobud qiladigan zahar miqdori, mg/m3.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "PDK — havoda ruxsat etilgan zahar miqdori, mg/m3.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OBUV — havodagi taxminiy zararsiz zahar miqdori, mg/m3.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xavflilik o‘tkir ta’sir zonasi — SL50 ning o‘tkir ta’sir chegarasiga nisbati bilan ham baholanadi; bu nisbat qancha katta bo‘lsa, birikma shunchalik kam xavfli.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Havo orqali ko‘rsatkichlar, mg/m3",
+    "root": "Havo bo‘yicha",
+    "children": [
+     {
+      "label": "SL50 (CL100)",
+      "items": [
+       "nafas yo‘li: 50% (100%) nobud"
+      ]
+     },
+     {
+      "label": "PDK",
+      "items": [
+       "havoda ruxsat etilgan"
+      ]
+     },
+     {
+      "label": "OBUV",
+      "items": [
+       "taxminiy zararsiz miqdor"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: PDK va OBUV farqi. Doskada: SL50, PDK, OBUV birliklari (mg/m3). Tipik xato: PDK ni LD50 bilan bir birlikda yozish. Kitobda: nisbat formulasi PDF dan tushib qolgan; gigiyenada bu o‘tkir ta’sir zonasi (Zac = SL50 / Lim ac)."
+  },
+  {
+   "title": "Zaharlilik darajasi bo‘yicha sinflanish",
+   "bullets": [
+    {
+     "text": "Malaka ma’ruzasida moddalar zaharlilik bo‘yicha 4 guruhga bo‘linadi: o‘ta, kuchli, o‘rtacha, kam zaharli.",
+     "source": {
       "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
       "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mezonlar: havodagi ruxsat etilgan miqdor, oshqozon orqali LD50, havodagi o‘lim keltiruvchi miqdor.",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Havodagi o‘limli miqdor, mg/m3: <500; 501-5000; 5001-50000; >50000.",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Zaharlilik darajasi",
+    "nodes": [],
+    "header": [
+     "Daraja",
+     "PDK, mg/m3",
+     "LD50, mg/kg"
+    ],
+    "rows": [
+     [
+      "O‘ta zaharli",
+      "<0,1",
+      "<15"
+     ],
+     [
+      "Kuchli zaharli",
+      "0,1-1",
+      "15-150"
+     ],
+     [
+      "O‘rtacha zaharli",
+      "1,1-10",
+      "151-5000"
+     ],
+     [
+      "Kam zaharli",
+      ">10",
+      ">5000"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: bu sinflanish pestitsidlar sinflanishidan (toks p.149: 50; 50-200; 200-1000; >1000 mg/kg) farq qiladi — turli maqsad uchun turli chegara. Doskada: jadvalni yozing. Tipik xato: ikki sinflanishning chegaralarini aralashtirish. Izoh: bu sinflanish faqat malaka materialida bor."
+  },
+  {
+   "title": "Toksikometriya: parametrlar jadvali",
+   "bullets": [
+    {
+     "text": "Lim ac — eng kam miqdor; LD50 — ikki haftada hayvonlarning 50% ini o‘ldiruvchi miqdor; LD100 — 100% o‘lim.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "LD50 qo‘llash usuliga qarab 1 kg tana og‘irligiga mg hisobida; SL50 (CL100), PDK va OBUV mg/m3 hisobida.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161-162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Toksikometriya zaharli va kuchli ta’sir etuvchi moddalarning kimyo-toksikologik ahamiyatini o‘rganishda zarur.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Toksikometriya parametrlari",
+    "header": [
+     "Ko‘rsatkich",
+     "Ma’nosi",
+     "Birlik"
+    ],
+    "rows": [
+     [
+      "Lim ac",
+      "eng kam kuchli ta’sir miqdori",
+      "—"
+     ],
+     [
+      "LD50",
+      "50% o‘lim, 2 hafta",
+      "mg/kg"
+     ],
+     [
+      "LD100",
+      "100% o‘lim",
+      "—"
+     ],
+     [
+      "SL50 (CL100)",
+      "nafas yo‘li: 50% (100%) o‘lim",
+      "mg/m3"
+     ],
+     [
+      "PDK",
+      "havoda ruxsat etilgan",
+      "mg/m3"
+     ],
+     [
+      "OBUV",
+      "taxminiy zararsiz",
+      "mg/m3"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: LD va SL qaysi yo‘l uchun? Doskada: jadval. Tipik xato: PDK va OBUV ni aralashtirish (birinchisi ruxsat etilgan, ikkinchisi taxminiy zararsiz)."
+  },
+  {
+   "title": "Qo‘llash yo‘li va ko‘rsatkich tanlash",
+   "bullets": [
+    {
+     "text": "Oshqozon, teri yoki nafas yo‘liga ta’sirga qarab LD50 1 kg tana og‘irligiga mg hisobida beriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nafas yo‘li bilan yuborilganda SL50 (CL100) mg/m3 bilan belgilanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Havoda ruxsat etilgan miqdor (PDK) va taxminiy zararsiz miqdor (OBUV) ham mg/m3 hisobida.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Yo‘l bo‘yicha",
+    "columns": [
+     {
+      "title": "Oshqozon, teri",
+      "items": [
+       "LD50, mg/kg",
+       "LD100"
+      ]
+     },
+     {
+      "title": "Nafas yo‘li",
+      "items": [
+       "SL50 (CL100), mg/m3",
+       "PDK, mg/m3",
+       "OBUV, mg/m3"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega nafas yo‘li uchun boshqa birlik? Doskada: ikki ustun. Tipik xato: SL50 ni mg/kg da yozish."
+  },
+  {
+   "title": "Zaharlanish sinflanishining asoslari",
+   "bullets": [
+    {
+     "text": "Zaharlanish uch asosda sinflanadi: kelib chiqishi, klinikasi va nozologiyasi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tasodifiy zaharlanish: bilmagan holda, o‘z-o‘zini davolash uchun dorini ortiqcha iste’mol qilish, ko‘p spirtli ichimlik, dorini noto‘g‘ri qo‘llash.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ko‘zda tutilgan: o‘z-o‘zini o‘ldirish (suitsid) yoki qasddan o‘ldirish (kriminal).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Kelib chiqishi bo‘yicha",
+    "columns": [
+     {
+      "title": "Tasodifiy",
+      "items": [
+       "bilmagan holda",
+       "o‘z-o‘zini davolash: ortiqcha dori",
+       "ko‘p spirtli ichimlik"
+      ]
+     },
+     {
+      "title": "Ko‘zda tutilgan",
+      "items": [
+       "o‘z-o‘zini o‘ldirish (suitsid)",
+       "qasddan o‘ldirish (kriminal)"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sud-kimyoviy jihatdan tasodifiy va kriminal zaharlanishni farqlash qiyinligi. Doskada: 3 asos, 2 kelib chiqish turi. Tipik xato: faqat suitsid va kriminalni kelib chiqish deb hisoblash."
+  },
+  {
+   "title": "Zaharlanish sinflari: umumiy sxema",
+   "bullets": [
+    {
+     "text": "Zaharlanish uch asosda sinflanadi: kelib chiqishi, klinikasi va nozologiyasi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kelib chiqishi: tasodifiy va ko‘zda tutilgan (suitsid, kriminal).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Klinik: kuchli va xronik; nozologik: kimyoviy birikma nomi bilan (uyqu chaqiruvchi, MNS qo‘zg‘atuvchi).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Zaharlanish sinflari",
+    "root": "Zaharlanish sinflari",
+    "children": [
+     {
+      "label": "Kelib chiqishi",
+      "items": [
+       "tasodifiy",
+       "ko‘zda tutilgan (suitsid, kriminal)"
+      ]
+     },
+     {
+      "label": "Klinikasi",
+      "items": [
+       "kuchli",
+       "xronik"
+      ]
+     },
+     {
+      "label": "Nozologiya",
+      "items": [
+       "modda nomi bilan bog‘lab ataladi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: tasodifiy zaharlanishga misollar keltiring (kitobdagi misollar). Doskada: daraxt. Tipik xato: kuchli va xronik zaharlanishni kelib chiqish bo‘yicha sinfga qo‘shish."
+  },
+  {
+   "title": "Zaharlanish yo‘llari va ko‘rinishlari",
+   "bullets": [
+    {
+     "text": "Yuzaga kelishi: ishlab chiqarishga oid, turmushdagi, tibbiy zaharlanish.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yo‘llari: peroral (og‘iz orqali), ingalyatsion (nafas yo‘li; ko‘proq sanoatda), in’eksion, bo‘shliqlar orqali (to‘g‘ri ichak, qin, quloq).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Klinik: kuchli zaharlanish — bir yo‘la yuqori miqdor va belgilarning tez paydo bo‘lishi; xronik — kam miqdorda, uzoq vaqt bo‘linib kirishi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nozologik sinflanish kimyoviy birikma nomi bilan bog‘lab ataladi (uyqu chaqiruvchi, MNS qo‘zg‘atuvchi moddalar va b.).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Zaharlanish yo‘llari va ko‘rinishlari",
+    "root": "Zaharlanish",
+    "children": [
+     {
+      "label": "Yuzaga kelishi",
+      "items": [
+       "ishlab chiqarishga oid",
+       "turmushdagi, tibbiy"
+      ]
+     },
+     {
+      "label": "Yo‘llari",
+      "items": [
+       "peroral, ingalyatsion",
+       "in’eksion, bo‘shliqlar orqali"
+      ]
+     },
+     {
+      "label": "Klinik",
+      "items": [
+       "kuchli: tez belgilar",
+       "xronik: kam miqdor, uzoq vaqt"
+      ]
+     },
+     {
+      "label": "Nozologik",
+      "items": [
+       "uyqu chaqiruvchi",
+       "MNS qo‘zg‘atuvchi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ingalyatsion zaharlanish nega sanoatda ko‘proq? Doskada: 4 yo‘l. Tipik xato: kitobdagi «perkutan» bandini ko‘chirish. Kitobda xato: dvssm p.162 da «perkutan (yo‘g‘on ichak orqali)» deb yozilgan — perkutan teri orqali kirishni anglatadi; bu band slaydga kiritilmadi, ustoz tasdig‘i kerak."
+  },
+  {
+   "title": "Metabolizm atamalari",
+   "bullets": [
+    {
+     "text": "Metabolizm — grekcha metabol: aylanish, o‘zgarish; moddaning bir kimyoviy tuzilishdan boshqasiga o‘zgarishi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Biotransformatsiya: bios — hayot, transformaze — o‘zgartirish; organizm ham zahar ta’sirida o‘zgaradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Letal sintez — metabolitlarning zaharli bo‘lishi hodisasi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Atamalar",
+    "header": [
+     "Atama",
+     "Ma’nosi"
+    ],
+    "rows": [
+     [
+      "Metabolizm",
+      "aylanish, o‘zgarish"
+     ],
+     [
+      "Biotransformatsiya",
+      "dori/zaharning organizmda o‘zgarishi"
+     ],
+     [
+      "Letal sintez",
+      "zaharli metabolit hosil bo‘lishi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metabolizm har doim zararsizlantiradimi? (yo‘q — letal sintez). Doskada: uch atama. Tipik xato: biotransformatsiyani faqat dorilarga tegishli deb o‘ylash (kitobda dorivor va boshqa kimyoviy moddalar uchun)."
+  },
+  {
+   "title": "Metabolizm va biotransformatsiya",
+   "bullets": [
+    {
+     "text": "Metabolizm — grekcha metabol: aylanish, o‘zgarish; moddaning bir kimyoviy tuzilishdan boshqasiga o‘zgarishi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Barcha zahar, dori va shu kabi birikmalar organizmga qaysi yo‘l bilan kirishidan qat’i nazar metabolitik o‘zgaradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dorivor va boshqa kimyoviy moddalar uchun biotransformatsiya termini ishlatiladi (bios — hayot, transformaze — o‘zgartirish).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Organizmga kirgan moddalarning o‘zgargan mahsulotlari metabolitlar deyiladi; ular ba’zan o‘ta faol, ko‘pincha faolligi pasaygan yoki yo‘qolgan bo‘ladi.",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Metabolizm zanjiri",
+    "nodes": [
+     "Zahar yoki dori organizmga kiradi",
+     "Biotransformatsiya: o‘zgarish",
+     "O‘zgargan mahsulotlar: metabolitlar"
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega sud kimyogari metabolitlarni qidiradi? Doskada: metabol, bios, transformaze. Tipik xato: metabolitni doim zararsiz deb hisoblash (keyingi slaydlarda letal sintez)."
+  },
+  {
+   "title": "Organizmga kirish yo‘li va jigar",
+   "bullets": [
+    {
+     "text": "Oshqozonda so‘rilgan zaharli modda qon orqali jigarga o‘tadi va u yerda zararsizlantiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Og‘iz bo‘shlig‘idan shimilgan zahar to‘g‘ridan-to‘g‘ri katta qon aylanish sistemasiga o‘tadi, masalan sianidlar.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Biotransformatsiya zaharli yoki dori modda organizm ta’sirida o‘zgarishi bilan birga, organizm ham zahar ta’sirida o‘zgarishini bildiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Kirish yo‘lining ta’siri",
+    "columns": [
+     {
+      "title": "Oshqozonda so‘rilish",
+      "items": [
+       "qon orqali jigarga o‘tadi",
+       "jigarda zararsizlanadi"
+      ]
+     },
+     {
+      "title": "Og‘iz bo‘shlig‘idan",
+      "items": [
+       "to‘g‘ridan-to‘g‘ri katta qon aylanishga",
+       "masalan, sianidlar"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega sianidlar og‘iz bo‘shlig‘i orqali tez ta’sir qiladi (jigardan birinchi o‘tishsiz)? Doskada: ikki yo‘l: oshqozon -> jigar; og‘iz -> katta qon aylanish. Tipik xato: barcha zaharlar jigarda zararsizlanadi deb o‘ylash."
+  },
+  {
+   "title": "Zahar tutilishi va zararsizlanishi: 4 tip membrana",
+   "bullets": [
+    {
+     "text": "Birinchi tip membrana neytral molekulalarni o‘tkazadi, ionli birikmalarni tutib qoladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ikkinchi tip: tashuvchi to‘qima zahar bilan birikib hujayraga o‘tadi, u yerda parchalanib tashuvchi sof holda ajraladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uchinchi tip: tashuvchi to‘qima zahar bilan kompleks birikmalar hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "To‘rtinchi tip: ultramikroskopik bo‘shliqlarda musbat zaryadlangan ionlar zaharli moddalarni biriktiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Membrana tiplari",
+    "root": "4 tip membrana",
+    "children": [
+     {
+      "label": "I tip",
+      "items": [
+       "neytral molekulalarni o‘tkazadi",
+       "ionli birikmalarni tutadi"
+      ]
+     },
+     {
+      "label": "II tip",
+      "items": [
+       "tashuvchi bilan birikib hujayraga o‘tadi",
+       "tashuvchi sof holda ajraladi"
+      ]
+     },
+     {
+      "label": "III tip",
+      "items": [
+       "tashuvchi bilan kompleks hosil qiladi"
+      ]
+     },
+     {
+      "label": "IV tip",
+      "items": [
+       "ultramikroskopik bo‘shliqlar",
+       "musbat ionlar zaharni biriktiradi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ionli va neytral moddalar farqi so‘rilishga qanday ta’sir qiladi (ekstraksiya nazariyasi 16-ma’ruzada). Doskada: 4 tip - 4 mexanizm. Tipik xato: tiplarni raqamlari bo‘yicha aralashtirish. Kitob matni «tashuvchi to‘qima» deb yozadi; ma’ruzachi buni «tashuvchi moddasi»ga aniqlashtirishi mumkin."
+  },
+  {
+   "title": "Letal sintez",
+   "bullets": [
+    {
+     "text": "Metabolitik o‘zgarishlar organizm himoya vositasi sifatida katta ahamiyatga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ba’zi moddalar zaharli ta’sir etuvchi, zaharli metabolitlar ham hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bunday hodisa «letal sintez», ya’ni zaharli sintez deb ataladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Letal sintez",
+    "nodes": [
+     "Metabolitik o‘zgarish: himoya vositasi",
+     "Ba’zi moddalar zaharli metabolit beradi",
+     "«Letal sintez» (zaharli sintez)"
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: faol metabolit asosiy moddadan kuchliroq zaharli bo‘lishi mumkin (42-ma’ruzada geptaxlor epoksidi misol). Doskada: «metabolizm = himoya, lekin ba’zan = zaharlanish». Tipik xato: metabolizmni har doim detoksikatsiya deb hisoblash."
+  },
+  {
+   "title": "Metabolik reaksiyalar (1): oksidlanish va qaytarilish",
+   "bullets": [
+    {
+     "text": "Oksidlanish: fenobarbital molekulasidagi fenil halqaning oksidlanishi (gidroksillanish).",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qaytarilish: xloralgidrat trixloretanolga aylanadi.",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dealkillanish: prominal fenobarbitalga aylanadi (N-CH3 guruhining ajralishi).",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Qaytarilish misoli",
+    "reagents": [
+     "Xloralgidrat"
+    ],
+    "products": [
+     "Trixloretanol"
+    ],
+    "conditions": "qaytarilish",
+    "observation": "dealkillanish: prominal -> fenobarbital"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metabolik reaksiyalar 1-ma’ruzadagi I faza bilan bog‘liq. Doskada: 3 reaksiya turi. Tipik xato: bu misollarni kitob matni deb ko‘rsatish — ular malaka ma’ruzasi slaydlaridan olingan (qo‘shimcha manba)."
+  },
+  {
+   "title": "Metabolik reaksiyalar (2): gidroliz va konyugatsiya",
+   "bullets": [
+    {
+     "text": "Konyugatsiya turlari: glyukuronlash va sulfatlash, asetillanish va metillanish, glutation va aminokislotali konyugatsiya.",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gidroliz: geroin + 2 H2O -> morfin + 2 sirka kislota; kokain -> ekgonin + metil spirti + benzoy kislota.",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Konyugatsiya: ferment ishtirokida endogen birikmalar (glyukuron yoki sulfat kislota) bilan birikish; masalan fenol -> fenilsulfat, etil spirti -> etilsulfat.",
+     "source": {
+      "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Gidroliz misoli",
+    "reagents": [
+     "Geroin",
+     "2 H2O"
+    ],
+    "products": [
+     "Morfin",
+     "2 sirka kislota"
+    ],
+    "observation": "kokain: ekgonin + metil spirti + benzoy k-ta"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: konyugatlar suvda yaxshi eriydi, siydik bilan chiqadi. Doskada: gidroliz va konyugatsiya misollari. Tipik xato: gidroliz tenglamasida suv molekulalari sonini noto‘g‘ri yozish. Izoh: dezaminlanish (efedrin) sxemasi manbada faqat rasm shaklida, slaydga kiritilmadi."
+  },
+  {
+   "title": "Metabolizm tezligiga ta’sir etuvchi omillar",
+   "bullets": [
+    {
+     "text": "Metabolizmga yosh, kasalliklar, qon-qarindoshlik va bir vaqtda qabul qilingan moddalar turlari ta’sir qiladi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metabolizm tezligi modda organizmga qaysi yo‘l bilan tushishiga bog‘liq.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Butadion, barbituratlar, uch tsiklik antidepressantlar, xlororganik pestitsidlar jigar mikrosomalaridagi fermentlar induksiyasi orqali metabolizmni oshiradi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ba’zi fermentlarning tug‘ma yetishmasligi metabolizmni pasaytiradi; bu holat idiosinkraziya deb ataladi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Metabolizm tezligiga ta’sir",
+    "root": "Metabolizm tezligi",
+    "children": [
+     {
+      "label": "Ta’sir etuvchi omillar",
+      "items": [
+       "yosh, kasalliklar",
+       "qon-qarindoshlik",
+       "qabul yo‘li, boshqa moddalar"
+      ]
+     },
+     {
+      "label": "Kuchaytiruvchilar",
+      "items": [
+       "butadion, barbituratlar",
+       "uch tsiklik antidepressantlar",
+       "xlororganik pestitsidlar"
+      ]
+     },
+     {
+      "label": "Pasaytiruvchi",
+      "items": [
+       "ferment tug‘ma yetishmasligi",
+       "idiosinkraziya"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: fermentlar indutsiyasi dori-dori o‘zaro ta’siriga qanday olib keladi? Doskada: 4 omil. Tipik xato: bu omillarni kitob (dvssm) matni deb ko‘rsatish — ular faqat malaka materialida."
+  },
+  {
+   "title": "Zaharlanish diagnostikasi: uch yo‘nalish",
+   "bullets": [
+    {
+     "text": "Klinik diagnostika.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Laborator-toksikologik diagnostika.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Patomorfologik diagnostika.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Diagnostika",
+    "nodes": [
+     "Klinik",
+     "Laborator-toksikologik",
+     "Patomorfologik"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uch yo‘nalish bir-birini qanday to‘ldiradi? Doskada: 3 qutichali sxema. Tipik xato: laboratoriya tahlilini klinik diagnozning o‘rniga qo‘yish. Detoksikatsiya usullari ham kitobda shu bo‘limda keltirilgan."
+  },
+  {
+   "title": "Klinik diagnostika va ashyoviy dalil",
+   "bullets": [
+    {
+     "text": "Klinik diagnoz ayrim zahar yoki zaharlar guruhining xarakterli «tanlangan» ta’siri oqibatidagi alomatlarga asoslanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Psixotrop dorilar bilan zaharlanganda beparvolik, eshitishning kuchsizlanishi, bexushlik, sezgining pasayishi kuzatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Voqea joyida qolgan ichimlik, dori qoldiqlari, bo‘shagan idishlar va kimyoviy moddaning hidi birlamchi diagnozda katta ahamiyatga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zaharlanish o‘limga sababchi bo‘lsa, voqea joyidagi ashyoviy dalillarni sud-tibbiy eksperti va sud-izlanuvchisi aniqlaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Ashyoviy dalillar (voqea joyida)",
+    "root": "Birlamchi diagnoz",
+    "children": [
+     {
+      "label": "Qoldiqlar",
+      "items": [
+       "ichimlik",
+       "dori moddalar qoldig‘i"
+      ]
+     },
+     {
+      "label": "Idish va hid",
+      "items": [
+       "bo‘shagan idishlar",
+       "kimyoviy moddaning hidi"
+      ]
+     },
+     {
+      "label": "Kim aniqlaydi (o‘lim)",
+      "items": [
+       "sud-tibbiy eksperti",
+       "sud-izlanuvchisi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ashyoviy dalilni shifoxonaga topshirish tashxisni qanday tezlashtiradi? Doskada: 4 ashyoviy dalil turi. Tipik xato: dalilni yo‘qotish yoki tozalab tashlash."
+  },
+  {
+   "title": "Zaharlanish diagnostikasi: xarita",
+   "bullets": [
+    {
+     "text": "Diagnostika uch yo‘nalishda: klinik, laborator-toksikologik va patomorfologik.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Instrumental-funksional usullar: EEG, EKG va gemodinamika.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163-164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Laboratoriya diagnozi: zaharni tez aniqlash, biokimyoviy tahlil va nospesifik usullar.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Diagnostika xaritasi",
+    "root": "Zaharlanish diagnostikasi",
+    "children": [
+     {
+      "label": "Klinik",
+      "items": [
+       "xarakterli alomatlar",
+       "ashyoviy dalil"
+      ]
+     },
+     {
+      "label": "Instrumental",
+      "items": [
+       "EEG, EKG",
+       "gemodinamika"
+      ]
+     },
+     {
+      "label": "Laborator-toksikologik",
+      "items": [
+       "zaharni aniqlash",
+       "biokimyo, nospesifik"
+      ]
+     },
+     {
+      "label": "Patomorfologik",
+      "items": [
+       "murda a’zolaridagi o‘zgarishlar"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi usul zaharni bevosita aniqlaydi? Doskada: xarita. Tipik xato: instrumental usullarni laborator tahlilga qo‘shish."
+  },
+  {
+   "title": "Instrumental-funksional diagnostika",
+   "bullets": [
+    {
+     "text": "Elektroensefalografiya (EEG): bosh miya bioelektrik aktivligini aniqlash orqali psixo-neyrotrop zaharlar differensial diagnostikasi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Elektrokardiografiya (EKG): yurak faoliyatining zahar ta’siridagi o‘zgarishlari (ritm tezligi, miokard distrofiyasi).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gemodinamika: qon tomirini urish soni va qonning minutlik hajmini aniqlash.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Instrumental usullar",
+    "header": [
+     "Usul",
+     "Nimani aniqlaydi"
+    ],
+    "rows": [
+     [
+      "EEG",
+      "bosh miya bioelektrik aktivligi"
+     ],
+     [
+      "EKG",
+      "yurak: ritm, miokard distrofiyasi"
+     ],
+     [
+      "Gemodinamika",
+      "qon tomir urishi, minutlik hajm"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: EEG qaysi zaharlar guruhida ayniqsa foydali? Doskada: EEG - miya; EKG - yurak; gemodinamika - qon aylanishi. Tipik xato: instrumental diagnostikani toksikologik laboratoriya o‘rniga qo‘yish."
+  },
+  {
+   "title": "Laborator-toksikologik diagnoz",
+   "bullets": [
+    {
+     "text": "Biologik chiqindilarda zaharli moddani tez va spesifik usullar bilan aniqlash.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qondagi biokimyoviy o‘zgarishlar asosida zaharlangan organizmning patologik o‘zgarishlarini spesifik biokimyoviy tahlil qilish.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jigar, buyrak va boshqa a’zolarning funksional o‘zgarishlariga asoslangan nospesifik usullar bilan tekshirish.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Laborator diagnoz",
+    "root": "Laborator-toksikologik diagnoz",
+    "children": [
+     {
+      "label": "1. Zaharni aniqlash",
+      "items": [
+       "biologik chiqindilarda",
+       "tez, spesifik usullar"
+      ]
+     },
+     {
+      "label": "2. Biokimyo",
+      "items": [
+       "qondagi o‘zgarishlar",
+       "spesifik biokimyoviy tahlil"
+      ]
+     },
+     {
+      "label": "3. Nospesifik",
+      "items": [
+       "jigar, buyrak funksiyasi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tez spesifik usul va nospesifik usul farqi. Doskada: 3 yo‘nalish. Tipik xato: nospesifik natijani zaharni tasdiqlovchi deb talqin qilish."
+  },
+  {
+   "title": "Klinik laboratoriyada tahlil tartibi",
+   "bullets": [
+    {
+     "text": "Tez yordam brigadasi voqea joyida zaharlanishga sabab bo‘lgan dori, suyuqlik qoldiqlarini yig‘ib, yaxshi yopiladigan idishda laboratoriyaga yetkazishi zarur.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qoldiq bo‘lmasa, oshqozondan olingan birinchi 100-150 ml yuvindi suyuqlik ashyo sifatida ishlatiladi; is gazi bilan zaharlanishda qon olinadi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kasal shifoxonaga yotqizilishi bilan darhol siydigi va qoni tahlilga olinadi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Noaniq zaharda avval siydikdan uchuvchan birikmalarga, so‘ng kislotali va ishqoriy ajralmalarga xromatografik skrining qo‘llanadi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "caption": "Klinik laboratoriyada tartib",
+    "items": [
+     {
+      "title": "Voqea joyi",
+      "text": "dori, suyuqlik qoldig‘i idishda"
+     },
+     {
+      "title": "Yuvindi",
+      "text": "oshqozondan dastlabki 100-150 ml"
+     },
+     {
+      "title": "Shifoxona",
+      "text": "darhol siydik va qon tahlili"
+     },
+     {
+      "title": "Skrining",
+      "text": "uchuvchan, so‘ng kislotali va ishqoriy"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega birinchi 100-150 ml yuvindi ahamiyatli? Doskada: 100-150 ml. Tipik xato: yuvindi suyuqlikni ko‘p marta yuvilgandan keyin olish. Izoh: bu tartib faqat malaka materialida bor."
+  },
+  {
+   "title": "Ekspress usullar va tahlil bosqichlari",
+   "bullets": [
+    {
+     "text": "Toksikologik diagnostika laboratoriyalarida instrumental ekspress usullar (YuQX, GSX, spektrofotometriya) muhim; zahar 1-2 soat ichida aniqlanishi mumkin.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kimyo-toksikologik tahlilning birinchi bosqichi — zaharni ajratib olish, ikkinchisi — chinligini aniqlash, uchinchisi — miqdorini aniqlash.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tahlil natijalari va klinik o‘zgarishlarga tayanib toksikolog-shifokor diagnoz qo‘yadi va zarur tadbirlarni belgilaydi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Kimyo-toksikologik tahlil",
+    "nodes": [
+     "1-bosqich: zaharni ajratib olish",
+     "2-bosqich: chinligini aniqlash",
+     "3-bosqich: miqdorini aniqlash",
+     "Toksikolog-shifokor diagnoz qo‘yadi"
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: YuQX va GSX nega «skrining» usullari? Doskada: 3 bosqich (ajratish - chinlik - miqdor). Tipik xato: ekspress natijani yakuniy deb qabul qilish."
+  },
+  {
+   "title": "Patomorfologik diagnostika",
+   "bullets": [
+    {
+     "text": "Patomorfologik tekshiruv ko‘pincha sud-tibbiy ekspertlari tomonidan, tirik vaqtidagi kimyo-toksikologik tekshiruvlar asosida o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gemodializ, gemosorbsiya, reanimatsiya chog‘ida zaharlar organizmdan chiqib ketgan bo‘lishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bunda buyrak, jigar va ichki a’zolardagi o‘zgarishlar tekshiriladi; murdadan olingan a’zolar sud-kimyo tahliliga jo‘natiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Patomorfologik tekshiruv",
+    "nodes": [
+     "Tirik vaqtdagi tahlil natijalari",
+     "Gemodializ, reanimatsiya: zahar ketishi",
+     "Buyrak, jigar, ichki a’zolar",
+     "Murda a’zolari sud-kimyo tahliliga"
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: davolash chora-tadbirlari tahlil natijasiga qanday ta’sir qiladi (zahar topilmasligi mumkin). Doskada: «detoksikatsiya -> manfiy natija xavfi». Tipik xato: manfiy natijani zaharlanish yo‘qligiga dalil deb olish."
+  },
+  {
+   "title": "Detoksikatsiya usullari: uch guruh",
+   "bullets": [
+    {
+     "text": "Tabiiy tozalanish jarayonlarini kuchaytirish usullari.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sun’iy detoksikatsiya usullari.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Antidotli detoksikatsiya usullari.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kuchli zaharlanishda asosiy maqsad zahar ta’sirini to‘xtatish va organizmdan zaharli birikmalarni chiqarib yuborishdir.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Detoksikatsiya",
+    "root": "Detoksikatsiya usullari",
+    "children": [
+     {
+      "label": "Tabiiy tozalanish",
+      "items": [
+       "ichak tozalash",
+       "diurez, giperventilyatsiya"
+      ]
+     },
+     {
+      "label": "Sun’iy usullar",
+      "items": [
+       "dializ, sorbsiya",
+       "plazmoferez, limforeya"
+      ]
+     },
+     {
+      "label": "Antidotli",
+      "items": [
+       "kimyoviy, biokimyoviy",
+       "farmakologik antagonist"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uch guruh qaysi hollarda birgalikda qo‘llanadi? Doskada: 3 guruh. Tipik xato: antidotlarni sun’iy detoksikatsiyadan alohida deb o‘ylamaslik — kitob ularni uchinchi guruh sifatida ajratadi."
+  },
+  {
+   "title": "Tabiiy tozalanishni kuchaytirish",
+   "bullets": [
+    {
+     "text": "Qorin-ichak tizimi va yo‘g‘on ichakni tozalash.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kuchaytirilgan diurez — suyuqliklar chiqishini tezlashtirish.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Giperventilyatsiya — havo, gaz almashinuvini kuchaytirish.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bunday tadbirlar organizmga so‘rilmagan zaharni chiqarish va so‘rilgan zaharning chiqarilishini tezlatish uchun bajariladi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: giperventilyatsiya qaysi zaharlar uchun (uchuvchan, o‘pka orqali chiqadigan) mantiqiy? Doskada: 3 usul. Tipik xato: kuchaytirilgan diurezni barcha zaharlar uchun xavfsiz deb hisoblash."
+  },
+  {
+   "title": "Sun’iy detoksikatsiya usullari",
+   "bullets": [
+    {
+     "text": "Qorin-ichak dializi (peritoneal dializ); gastrointestinal sorbsiya.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gemodializ va gemosorbsiya (qon dializi va sorbsiyasi).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Plazmosorbsiya va plazmoferez (zardob va suyuqliklar sorbsiyasi).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Limforeya (limfa ajralishini tezlatish) va limfosorbsiya; qon quyish va qon almashtirish.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Sun’iy detoksikatsiya usullari",
+    "root": "Sun’iy usullar",
+    "children": [
+     {
+      "label": "Dializ",
+      "items": [
+       "peritoneal dializ",
+       "gemodializ"
+      ]
+     },
+     {
+      "label": "Sorbsiya",
+      "items": [
+       "gastrointestinal sorbsiya",
+       "gemosorbsiya, plazmosorbsiya"
+      ]
+     },
+     {
+      "label": "Boshqalar",
+      "items": [
+       "plazmoferez",
+       "limforeya, limfosorbsiya",
+       "qon quyish va almashtirish"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: dializ va sorbsiyaning farqi. Doskada: 6 usul ro‘yxati. Tipik xato: gemodializni faqat buyrak kasalligi usuli deb o‘ylash."
+  },
+  {
+   "title": "Detoksikatsiya: tabiiy, sun’iy va antidotli",
+   "bullets": [
+    {
+     "text": "Tabiiy tozalanish: ichak tozalash, kuchaytirilgan diurez, giperventilyatsiya.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sun’iy: peritoneal dializ, gemodializ, gemosorbsiya, plazmosorbsiya, plazmoferez, limforeya, qon almashtirish.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Antidotli: kimyoviy, biokimyoviy usullar va farmakologik antagonistlar.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Detoksikatsiya",
+    "columns": [
+     {
+      "title": "Tabiiy",
+      "items": [
+       "qorin-ichak va yo‘g‘on ichak tozalash",
+       "kuchaytirilgan diurez",
+       "giperventilyatsiya"
+      ]
+     },
+     {
+      "title": "Sun’iy",
+      "items": [
+       "peritoneal dializ",
+       "gemodializ, gemosorbsiya",
+       "plazmoferez, limforeya"
+      ]
+     },
+     {
+      "title": "Antidotli",
+      "items": [
+       "kimyoviy birikmalar",
+       "biokimyoviy usullar",
+       "farmakologik antagonistlar"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi usul qaysi vaziyatda? Doskada: uch ustun. Tipik xato: gemosorbsiyani tabiiy tozalanishga qo‘shish."
+  },
+  {
+   "title": "Antidotli detoksikatsiya",
+   "bullets": [
+    {
+     "text": "Antidotlar yordamida tozalash turlari: kontakt va parenteral ahamiyatli kimyoviy birikmalar; biokimyoviy usullar; farmakologik antagonistlar.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bular orasida antidotlar yordamida zaharlarni zararsizlantirish katta ahamiyatga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Usul moddalarni neytrallash, erimaydigan birikmalarga aylantirish va sorbentlarga (masalan, faollangan ko‘mir) shimdirishga asoslangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Antidotli tozalash",
+    "root": "Antidotlar yordamida",
+    "children": [
+     {
+      "label": "Turlari",
+      "items": [
+       "kontakt va parenteral birikmalar",
+       "biokimyoviy usullar",
+       "farmakologik antagonistlar"
+      ]
+     },
+     {
+      "label": "Asosi",
+      "items": [
+       "neytrallash",
+       "erimaydigan birikmaga aylantirish",
+       "sorbentga shimdirish"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: antidot har doim spesifik bo‘lishi shartmi? Doskada: 3 tur. Tipik xato: antidotni faqat «dori» deb o‘ylash — sorbentlar ham antidot hisoblanadi. Kitobda alohida antidot nomlari berilmagan; keyingi slaydlar malaka materialiga tayanadi."
+  },
+  {
+   "title": "Antidotlarning 4 guruhi",
+   "bullets": [
+    {
+     "text": "Spesifik antidotlar asosan 4 guruhga bo‘linadi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1-guruh: oshqozon-ichakdagi zaharga fizik-kimyoviy ta’sir qiluvchi (faollangan ko‘mir).",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "2-guruh: to‘qimalardagi zaharga ta’sir qiluvchi (tiol birikmalari, xelat hosil qiluvchi tuzlar).",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Antidot guruhlari",
+    "nodes": [],
+    "header": [
+     "Guruh",
+     "Mohiyati"
+    ],
+    "rows": [
+     [
+      "1",
+      "Oshqozon-ichakda ta’sir"
+     ],
+     [
+      "2",
+      "To‘qimalarda fizik-kimyoviy"
+     ],
+     [
+      "3",
+      "Biokimyoviy antidotlar"
+     ],
+     [
+      "4",
+      "Farmakologik antagonistlar"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: guruhlarni mexanizmi bo‘yicha farqlang. Doskada: 4 guruh jadvali. Tipik xato: 3 va 4 guruhni aralashtirish. Izoh: antidot guruhlari faqat malaka materialida bor (063), kitobda faqat uch turga bo‘lish keltirilgan."
+  },
+  {
+   "title": "Faollangan ko‘mir",
+   "bullets": [
+    {
+     "text": "1 g faollangan ko‘mir taxminan 800 mg morfinni, 700 mg barbituratni, 300 mg alkogolni adsorbsiyalaydi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Universal antidot sifatida magneziy, faollangan ko‘mir va hayvon to‘qimalari kuyindisi aralashmasi (TUM) ishlatiladi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sorbentlarga shimdirish antidotli usullarning bir ko‘rinishi sifatida tilga olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "1 g faollangan ko‘mir adsorbsiyalaydi",
+    "items": [
+     {
+      "label": "Morfin",
+      "value": "800",
+      "unit": "mg"
+     },
+     {
+      "label": "Barbiturat",
+      "value": "700",
+      "unit": "mg"
+     },
+     {
+      "label": "Alkogol",
+      "value": "300",
+      "unit": "mg"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ko‘mir nega bir xil miqdorda turli moddalarni turlicha sorbsiyalaydi? Doskada: 800 / 700 / 300 mg. Tipik xato: bu sonlarni davolash dozasi deb qabul qilish. Manbada: «ko‘mir miqdori taxminan …» (birlik yo‘q); klassik klinik toksikologiya ma’lumoti 1 g ko‘mirga nisbatan."
+  },
+  {
+   "title": "Metall zaharlarga qarshi antidotlar",
+   "bullets": [
+    {
+     "text": "Tiol birikmalari (unitiol, merkaptid) metall va mishyak saqlovchi moddalardan zaharlanganda ishlatiladi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qo‘rg‘oshin, kobalt, kadmiy kabi ionlar bilan zaharlanganda zararsiz xelat birikmalar hosil qiluvchi tuzlar (tetatsin, EDTA) qo‘llanadi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metall va metalloidlar (As, Sb, Hg) oqsillar bilan barqaror birikma hosil qilib, uzoq saqlanadi; chiqarish uchun unitiol, kompleksonlar ishlatiladi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Metall zaharlarga qarshi antidotlar",
+    "header": [
+     "Zahar",
+     "Antidot"
+    ],
+    "rows": [
+     [
+      "Metall, mishyak",
+      "tiol birikmalari (unitiol, merkaptid)"
+     ],
+     [
+      "Qo‘rg‘oshin, kobalt, kadmiy",
+      "xelatlar (tetatsin, EDTA)"
+     ],
+     [
+      "As, Sb, Hg",
+      "unitiol, kompleksonlar"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: xelat hosil qilish metallning chiqishini qanday tezlashtiradi (9-12 ma’ruzalar bilan bog‘liq)? Doskada: unitiol - As, Hg; EDTA/tetatsin - Pb, Cd, Co. Tipik xato: unitiolni qo‘rg‘oshin zaharlanishida birinchi tanlov deb hisoblash — manbada u metall va mishyak uchun keltirilgan."
+  },
+  {
+   "title": "Biokimyoviy antidotlar",
+   "bullets": [
+    {
+     "text": "Biokimyoviy antidotlar organizm zaharli birikma bilan zararsiz metabolitlar hosil qilishiga yordam beradi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Etilenglikol va metil spirti bilan zaharlanganda etil spirti ishlatiladi.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uglerod tetraxlorid bilan zaharlanganda antioksidantdan foydalanish mumkin.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Biokimyoviy antidotlar",
+    "header": [
+     "Zaharlanish",
+     "Antidot"
+    ],
+    "rows": [
+     [
+      "Etilenglikol, metil spirti",
+      "etil spirti"
+     ],
+     [
+      "Uglerod tetraxlorid",
+      "antioksidant"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: etil spirti metanol va etilenglikol bilan fermentga raqobat qiladi (8-ma’ruzaga bog‘liq). Doskada: etil spirti -> metanol/etilenglikol. Tipik xato: etil spirtini har qanday spirt zaharlanishida antidot deb hisoblash."
+  },
+  {
+   "title": "Zaharlanishda amaliy ketma-ketlik",
+   "bullets": [
+    {
+     "text": "Voqea joyidagi qoldiqlar va idishlar birlamchi diagnoz uchun shifoxonaga topshiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Laboratoriya zaharni tez va spesifik usullar bilan aniqlaydi, biokimyoviy o‘zgarishlarni tekshiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zaharni chiqarish uchun tabiiy, sun’iy yoki antidotli detoksikatsiya qo‘llanadi; o‘lim bo‘lsa — patomorfologik va sud-kimyo tekshiruvi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163-164"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Amaliy ketma-ketlik",
+    "nodes": [
+     "Klinik belgilar va ashyoviy dalil",
+     "Laborator-toksikologik tekshiruv",
+     "Detoksikatsiya (3 guruh)",
+     "O‘lim bo‘lsa: patomorfologiya",
+     "Murda a’zolari: sud-kimyo tahlili"
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: tartib kitobda aniq ketma-ketlik sifatida berilmagan, bu jamlovchi sxema. Doskada: zanjir. Tipik xato: detoksikatsiyani laborator tahlil natijasini kutib boshlash kerak deb o‘ylash."
+  },
+  {
+   "title": "Xavflilik ko‘rsatkichi",
+   "bullets": [
+    {
+     "text": "Kimyoviy moddalarning xavflilik darajasi kuchli ta’sir etuvchi miqdori bilan ham belgilanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nisbat qancha katta bo‘lsa, zaharli birikma shunchalik xavfsiz hisoblanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘tkir ta’sir zonasi: SL50 ning o‘tkir ta’sir chegarasiga (Lim ac) nisbati.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "162"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Xavflilik zonasi",
+    "nodes": [
+     "Lim ac: o‘tkir ta’sir chegarasi",
+     "SL50 nafas yo‘li bilan",
+     "Nisbat SL50 / Lim ac",
+     "Nisbat katta: kam xavfli"
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nisbat kattalashsa xavf qanday o‘zgaradi? Doskada: nisbat chizmasi. Izoh: kitob sahifasida formula tushib qolgan; kitob_ziddiyatlari (egasi qarori) bo‘yicha Zac = SL50 / Lim ac qabul qilindi."
+  },
+  {
+   "title": "Xulosa",
+   "bullets": [
+    {
+     "text": "Zaharlanish sinflari, toksikometriya (Lim ac, LD50, LD100, SL50, PDK, OBUV) va metabolizm (biotransformatsiya, letal sintez).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "161-163"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diagnostika: klinik, laborator-toksikologik, patomorfologik; instrumental usullar (EEG, EKG, gemodinamika).",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163-164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Detoksikatsiya: tabiiy tozalanishni kuchaytirish, sun’iy usullar (dializ, sorbsiya, plazmoferez va b.), antidotlar.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "163-164"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Antidotlar: faollangan ko‘mir, tiol birikmalari, xelatlar, biokimyoviy antidotlar va antagonistlar.",
+     "source": {
+      "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: detoksikatsiya sud-kimyoviy natijaga qanday ta’sir qiladi? Doskada: 3 guruh detoksikatsiya + 3 diagnostika. Tipik xato: antidot nomlarini yodlab, mexanizmni tushunmaslik. Eslatma: kitoblarda aniq antidot nomlari ro‘yxati (masalan, har bir zahar uchun) berilmagan; malaka 063 dagi misollar qo‘shimcha manba.",
+   "diagram_note": "Kitob matnida formula ko‘rinmaydi; Zac = SL50 / Lim ac — kitob_ziddiyatlari.md (44-deck, dvssm 162) qaroriga ko‘ra."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Kitobga ko‘ra LD50 qanday ta’riflanadi?",
+   "options": [
+    "Hayvonlarning 50% ini ikki hafta ichida o‘ldiruvchi zahar miqdori",
+    "Hayvonlarning 100% ini o‘ldiruvchi doza",
+    "Havoda ruxsat etilgan miqdor",
+    "Eng kam zaharlovchi doza"
+   ],
+   "correct_index": 0,
+   "explanation": "LD50 — o‘rtacha o‘lim dozasi: ikki hafta davomida tajriba hayvonlarida 50% o‘limga olib keluvchi zahar miqdori.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "161"
+   }
+  },
+  {
+   "question": "Havoda ruxsat etilgan zahar miqdori qanday belgilanadi?",
+   "options": [
+    "OBUV",
+    "PDK",
+    "LD100",
+    "Lim ac"
+   ],
+   "correct_index": 1,
+   "explanation": "PDK — havoda ruxsat etilgan zahar miqdori, mg/m3.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "162"
+   }
+  },
+  {
+   "question": "Letal sintez nima?",
+   "options": [
+    "Antidot sintezi",
+    "Zaharning jigarda to‘liq zararsizlanishi",
+    "Zaharli metabolitlar hosil bo‘lishi",
+    "Dori sintezi"
+   ],
+   "correct_index": 2,
+   "explanation": "Ba’zi moddalar zaharli metabolitlar hosil qiladi; bu «letal sintez» deyiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "163"
+   }
+  },
+  {
+   "question": "Og‘iz bo‘shlig‘idan shimilgan zahar qayerga o‘tadi (misol: sianidlar)?",
+   "options": [
+    "Jigarga",
+    "O‘pkaga",
+    "Buyrakka",
+    "To‘g‘ridan-to‘g‘ri katta qon aylanish sistemasiga"
+   ],
+   "correct_index": 3,
+   "explanation": "Og‘iz bo‘shlig‘idan shimilgan zahar to‘g‘ridan-to‘g‘ri katta qon aylanishiga o‘tadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "163"
+   }
+  },
+  {
+   "question": "Biotransformatsiya terminidagi «bios» nimani anglatadi?",
+   "options": [
+    "O‘zgartirish",
+    "Hayot",
+    "Zahar",
+    "Aylanish"
+   ],
+   "correct_index": 1,
+   "explanation": "Bios — hayot, transformaze — o‘zgartirish.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "163"
+   }
+  },
+  {
+   "question": "Zaharlanish diagnostikasining yo‘nalishlariga qaysi biri kirmaydi?",
+   "options": [
+    "Klinik",
+    "Laborator-toksikologik",
+    "Iqtisodiy",
+    "Patomorfologik"
+   ],
+   "correct_index": 2,
+   "explanation": "Diagnostika: klinik, laborator-toksikologik va patomorfologik.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "163"
+   }
+  },
+  {
+   "question": "EEG nimani aniqlash uchun qo‘llanadi?",
+   "options": [
+    "Yurak ritmini",
+    "Jigar fermentlarini",
+    "Qon bosimini",
+    "Bosh miyaning bioelektrik aktivligini"
+   ],
+   "correct_index": 3,
+   "explanation": "Elektroensefalografiya bosh miyaning bioelektrik aktivligini aniqlaydi.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "163"
+   }
+  },
+  {
+   "question": "Tabiiy tozalanishni kuchaytirish usullariga qaysi biri kiradi?",
+   "options": [
+    "Kuchaytirilgan diurez",
+    "Gemodializ",
+    "Plazmoferez",
+    "Qon almashtirish"
+   ],
+   "correct_index": 0,
+   "explanation": "Tabiiy usullar: ichak tozalash, kuchaytirilgan diurez, giperventilyatsiya.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "164"
+   }
+  },
+  {
+   "question": "Sun’iy detoksikatsiya usullariga qaysi biri kiradi?",
+   "options": [
+    "Giperventilyatsiya",
+    "Ichak tozalash",
+    "Gemosorbsiya",
+    "Kuchaytirilgan diurez"
+   ],
+   "correct_index": 2,
+   "explanation": "Sun’iy usullar: peritoneal dializ, gastrointestinal sorbsiya, gemodializ va gemosorbsiya, plazmoferez va b.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "164"
+   }
+  },
+  {
+   "question": "Antidotli detoksikatsiyada qaysi sorbent misol qilib keltirilgan?",
+   "options": [
+    "Silikagel",
+    "Kaliy permanganat",
+    "Natriy sulfat",
+    "Faollangan ko‘mir"
+   ],
+   "correct_index": 3,
+   "explanation": "Neytrallash, erimaydigan birikmaga aylantirish va sorbentga (faollangan ko‘mir) shimdirish.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "164"
+   }
+  },
+  {
+   "question": "Patomorfologik tekshiruvda nima uchun jigar va buyrak tekshiriladi?",
+   "options": [
+    "Gemodializ va reanimatsiya tufayli zahar chiqib ketgan bo‘lishi mumkin",
+    "Faqat yosh aniqlash uchun",
+    "Antidot tanlash uchun",
+    "Ashyoviy dalil bo‘lmaganda"
+   ],
+   "correct_index": 0,
+   "explanation": "Davolash chog‘ida zaharlar chiqib ketgan bo‘lishi mumkin, shuning uchun a’zolardagi o‘zgarishlar tekshiriladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "164"
+   }
+  },
+  {
+   "question": "Malaka materialida etilenglikol va metil spirti bilan zaharlanganda qaysi modda antidot sifatida keltirilgan?",
+   "options": [
+    "Faollangan ko‘mir",
+    "Etil spirti",
+    "Unitiol",
+    "EDTA"
+   ],
+   "correct_index": 1,
+   "explanation": "Biokimyoviy antidot sifatida etil spirti ishlatiladi.",
+   "source": {
+    "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+    "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+    "page": "matn"
+   }
+  },
+  {
+   "question": "LD100 nimani bildiradi?",
+   "options": [
+    "Hayvonlarning 50% ini o‘ldiruvchi miqdor",
+    "Eng kam kuchli ta’sir miqdori",
+    "Havoda ruxsat etilgan miqdor",
+    "Tajriba hayvonlarida 100% o‘lim sodir etadigan miqdor"
+   ],
+   "correct_index": 3,
+   "explanation": "LD100 — tajriba hayvonlarida 100% o‘lim sodir etadigan zahar miqdori.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "161"
+   }
+  },
+  {
+   "question": "SL50 (CL100) qanday birlikda belgilanadi?",
+   "options": [
+    "mg/m3",
+    "mg/kg",
+    "mg/l",
+    "%"
+   ],
+   "correct_index": 0,
+   "explanation": "SL50 (CL100) nafas yo‘li bilan yuborilganda 50% (100%) hayvonlarni nobud qiladigan zahar miqdori bo‘lib, mg/m3 bilan belgilanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "162"
+   }
+  },
+  {
+   "question": "OBUV nimani bildiradi?",
+   "options": [
+    "Havoda ruxsat etilgan zahar miqdori",
+    "Havodagi taxminiy zararsiz zahar miqdori",
+    "Eng kam zaharli miqdor",
+    "O‘rtacha o‘lim dozasi"
+   ],
+   "correct_index": 1,
+   "explanation": "OBUV — havodagi taxminiy zararsiz zahar miqdori (mg/m3), PDK esa havoda ruxsat etilgan miqdor.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "162"
+   }
+  },
+  {
+   "question": "Qaysi biri kitobga ko‘ra tasodifiy zaharlanishga misol?",
+   "options": [
+    "O‘z-o‘zini o‘ldirish (suitsid)",
+    "Qasddan o‘ldirish (kriminal)",
+    "Dori moddalarni noto‘g‘ri yoki ortiqcha iste’mol qilish",
+    "Qasddan zaharlash"
+   ],
+   "correct_index": 2,
+   "explanation": "Tasodifiy zaharlanish — bilmagan holda o‘z-o‘zini davolash uchun dorini keragidan ortiq iste’mol qilish, ko‘p spirt ichish, dorini noto‘g‘ri qo‘llash.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "162"
+   }
+  },
+  {
+   "question": "Nozologik sinflash nimaga asoslanadi?",
+   "options": [
+    "Zaharlanish sabablariga",
+    "Zaharlanish yo‘liga",
+    "Belgilarning paydo bo‘lish tezligiga",
+    "Kimyoviy birikma nomi bilan bog‘lab atalishiga"
+   ],
+   "correct_index": 3,
+   "explanation": "Nozologik sinflanish kimyoviy birikma nomi bilan bog‘lab ataladi (uyqu chaqiruvchi, MNS qo‘zg‘atuvchi moddalar va b.).",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "162"
+   }
+  },
+  {
+   "question": "Birinchi tip membranalar zaharli moddalarga qanday ta’sir qiladi?",
+   "options": [
+    "Zaharni tashuvchi to‘qima bilan kompleks hosil qiladi",
+    "Neytral molekulalarni o‘tkazadi, ionli birikmalarni tutib qoladi",
+    "Musbat ionlar bilan biriktiradi",
+    "Hamma zaharni o‘tkazadi"
+   ],
+   "correct_index": 1,
+   "explanation": "Birinchi tip membranalar neytral molekulalarni o‘tkazib, ionli birikmalarni tutib qoladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "163"
+   }
+  },
+  {
+   "question": "Gemodinamikaning asosiy o‘lchamlari qaysilar?",
+   "options": [
+    "Bosh miya bioelektrik aktivligi",
+    "Yurak ritmi va miokard distrofiyasi",
+    "Qon tomir urish soni va qonning minutlik hajmi",
+    "Qon va siydik tarkibi"
+   ],
+   "correct_index": 2,
+   "explanation": "Gemodinamika — qon tomirining urish soni va qonning minutlik hajmini aniqlash.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "164"
+   }
+  },
+  {
+   "question": "Klinik xususiyatiga ko‘ra surunkali (xronik) zaharlanish deb nimaga aytiladi?",
+   "options": [
+    "Zaharning kam miqdorda, asta-sekin, lekin uzoq vaqt bo‘linib-bo‘linib kirishiga",
+    "Zaharning bir yo‘la yuqori miqdorda kirishi va belgilarning tez paydo bo‘lishiga",
+    "Faqat nafas yo‘li orqali sanoatda sodir bo‘ladigan zaharlanishga",
+    "O‘z-o‘zini davolash uchun dorini ortiqcha qabul qilishga"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra surunkali zaharlanishda zahar kam miqdorda, asta-sekin, lekin uzoq vaqt bo‘linib-bo‘linib organizmga kiradi; kuchli (o‘tkir) zaharlanishda esa bir yo‘la yuqori miqdorda kirib, belgilar tez paydo bo‘ladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "162"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Malaka materialida toksikologiya tushunchasi: yunoncha toxikon — zahar, logos — fan; toksikologiyada toksikodinamika va toksikokinetika ajratiladi.",
+   "source": {
+    "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+    "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+    "page": "matn"
+   }
+  },
+  {
+   "text": "Kitobga ko‘ra bexushlik holatidagi zaharlanishda voqea joyidagi ichimlik, dori qoldiqlari va idishlar shifoxonaga ashyoviy dalil sifatida topshiriladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Nurmatova M.I.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+    "page": "163"
+   }
+  },
+  {
+   "text": "Malaka ma’ruzasida ksenobiotiklar — organizm uchun yot (grekcha xenos — yot, bios — hayot) moddalar deb ataladi.",
+   "source": {
+    "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+    "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+    "page": "matn"
+   }
+  },
+  {
+   "text": "Idiosinkraziya — grekcha idios (noaniq) va synkrasis (birikma): ba’zi fermentlarning tug‘ma yetishmasligi oqibatida dori yoki oziq moddalarga o‘ta sezgirlik.",
+   "source": {
+    "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+    "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+    "page": "matn"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Nurmatova M.I.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+   "year": null,
+   "pages": "b. 161-164"
+  },
+  {
+   "author": "Malaka materiali №063 (TFI Toksikologik kimyo kafedrasi)",
+   "title": "Sud kimyogar-ekspertlari ma’ruzalari to‘plami",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  },
+  {
+   "author": "Malaka materiali №075 (TFI Toksikologik kimyo kafedrasi)",
+   "title": "Zaharlar. Zaharlanish. Organizmda tarqalishi, metabolizmi. Detoksikatsiya usullari (2010)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  }
+ ]
 }

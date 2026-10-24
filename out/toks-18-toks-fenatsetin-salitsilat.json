@@ -66,7 +66,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Nima tekshiriladi",
+        "root": "Kislotali ajralma",
+        "children": [
+          {
+            "label": "Barbituratlar"
+          },
+          {
+            "label": "Neytral moddalar",
+            "items": [
+              "Fenatsetin"
+            ]
+          },
+          {
+            "label": "Organik kislotalar",
+            "items": [
+              "Salitsil kislota",
+              "Pikrin kislota"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: neytral modda uchun ajratish muhiti qanchalik muhim? Doskada: ikki ajralma (kislotali / ishqoriy) sxemasi va bu moddalar o‘rni. Tipik xato: fenatsetinni ishqoriy ajralmadan qidirish."
     },
     {
@@ -168,8 +190,76 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Neytral moddalar",
+        "nodes": [
+          "Antifibrin, fenatsetin: neytral",
+          "pH ta’siri kam",
+          "Har qanday pH da yaxshi ekstraksiya",
+          "Tekshiruv: kislotali ajralmada"
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: neytral modda kislotali va ishqoriy ajralmaning ikkalasida ham chiqishi mumkinmi? Doskada: neytral moddalar uchun sxema. Tipik xato: neytral moddani faqat ishqoriy ajralmada qidirish."
+    },
+    {
+      "title": "Fenatsetin va salitsil kislota: ajratish sharoiti",
+      "bullets": [
+        {
+          "text": "Fenatsetin neytral modda: pH ning ta’siri kam, kislotali, neytral va ishqoriy sharoitda ham yaxshi ekstraksiyalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Salitsil kislota organik kislota sifatida kislotali muhitda ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "98"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislotali sharoitda olingan ajralma barbituratlar, fenatsetin va salitsil kislota uchun tekshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "96"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Ajralmalar",
+        "header": [
+          "Modda",
+          "Xossa",
+          "Ajratish muhiti"
+        ],
+        "rows": [
+          [
+            "Fenatsetin",
+            "Neytral",
+            "Har qanday pH"
+          ],
+          [
+            "Salitsil kislota",
+            "Kislotali",
+            "Kislotali muhit"
+          ],
+          [
+            "Barbituratlar",
+            "Kislotali",
+            "Kislotali muhit"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Tipik xato: neytral moddani faqat ishqoriy muhitda ajratishga urinish."
     },
     {
       "title": "Fenatsetin: fizik-kimyoviy ma’lumot",
@@ -205,7 +295,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Eruvchanlik (malaka 009)",
-        "nodes": [],
         "header": [
           "Erituvchi",
           "Nisbat"
@@ -262,7 +351,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Zaharli ta’siri",
+        "root": "Fenatsetin (katta doza)",
+        "children": [
+          {
+            "label": "Metgemoglobinemiya"
+          },
+          {
+            "label": "Anemiya"
+          },
+          {
+            "label": "Nefrit"
+          },
+          {
+            "label": "To‘liq gidrolizlanmasa",
+            "items": [
+              "n-Fenetidin: kuchli zahar"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metgemoglobinemiya mexanizmini aytib bering. Doskada: fenatsetin → p-aminofenol → xinonimin. Tipik xato: terapevtik doza va katta dozani aralashtirish."
     },
     {
@@ -304,9 +414,7 @@
           "p-Aminofenol",
           "Xinonimin",
           "Gemoglobinga ta’sir"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega xinonimin p-aminofenolga qaytadi va davom etadi? Doskada: sxema. Izoh: ikkinchi bog‘liqlik malaka 009 dan. Tipik xato: p-aminofenolni va xinoniminni bir modda deb hisoblash."
     },
@@ -341,7 +449,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Metabolizm yo‘llari",
+        "root": "Fenatsetin metabolizmi",
+        "children": [
+          {
+            "label": "Gidroliz",
+            "items": [
+              "n-Fenetidin",
+              "p-Aminofenol"
+            ]
+          },
+          {
+            "label": "Dealkillanish",
+            "items": [
+              "Paratsetamol (malaka)"
+            ]
+          },
+          {
+            "label": "Konyugatsiya",
+            "items": [
+              "Glyukuronidlar",
+              "Sulfatlar"
+            ]
+          },
+          {
+            "label": "Chiqarilish",
+            "items": [
+              "Peshob orqali"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: konyugatlarni aniqlashdan oldin nima qilish kerak? Doskada: metabolitlar ro‘yxati. Izoh: paratsetamol haqidagi ma’lumot faqat malaka 009 da, kitob betlarida paratsetamol alohida tavsiflanmagan. Tipik xato: peshobda faqat o‘zgarmagan fenatsetin qidirish."
     },
     {
@@ -375,7 +515,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Gidroliz mahsulotlari bo‘yicha",
+        "root": "Kons. HCl bilan gidroliz",
+        "children": [
+          {
+            "label": "Sirka etil efiri",
+            "items": [
+              "Hosil bo‘lish reaksiyasi"
+            ]
+          },
+          {
+            "label": "Azobo‘yoq",
+            "items": [
+              "Hosil qilish reaksiyasi"
+            ]
+          },
+          {
+            "label": "Indofenol",
+            "items": [
+              "Hosil qilish reaksiyasi"
+            ]
+          },
+          {
+            "label": "Izonitril",
+            "items": [
+              "Ishqor + xloroform: qo‘lansa hid"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega avval gidroliz kerak? Doskada: 4 reaksiya nomi. Tipik xato: gidrolizsiz azobo‘yoq reaksiyasini bajarish — birlamchi aromatik amin gidrolizdan keyin hosil bo‘ladi."
     },
     {
@@ -418,9 +588,7 @@
           "Sovitish + NaNO2",
           "β-naftol (ishqoriy)",
           "Qizil rang"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: diazotirlash qaysi bosqichda sodir bo‘ladi? Doskada: bosqichlar. Tipik xato: β-naftolni nordon muhitda qo‘shish; kitobda ishqoriy eritma ko‘rsatilgan."
     },
@@ -455,8 +623,75 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "CrO3 reaksiyasi",
+        "items": [
+          {
+            "title": "Quritish",
+            "text": "5-6 tomchi xloroformli eritma"
+          },
+          {
+            "title": "Qaynatish",
+            "text": "1 ml kons. HCl bilan 5 daqiqa"
+          },
+          {
+            "title": "Oksidlash",
+            "text": "Sovigach 2 % xrom angidridi"
+          },
+          {
+            "title": "Natija",
+            "text": "p-Aminofenol oksidlanadi: to‘q qizil rang"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkala reaksiyaning rangini solishtiring. Doskada: ikki reaksiya jadvali (reaktiv, rang). Tipik xato: nitrofenatsetin rangini «qizil» deb yozish: kitobda sariq (amaliy qismda sariq-qo‘ng‘ir)."
+    },
+    {
+      "title": "Fenatsetin: nitrat kislota bilan reaksiya",
+      "bullets": [
+        {
+          "text": "Fenatsetin nitrat kislota eritmasi bilan qizdirilganda sariq rangli nitrofenatsetin hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenatsetin oq kristall kukun, suvda qiyin, organik erituvchilarda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miqdori azobo‘yoq reaksiyasi asosida fotokolorimetrik (FEK yoki SF) usulda aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Nitrolash",
+        "reagents": [
+          "Fenatsetin",
+          "Nitrat kislota"
+        ],
+        "products": [
+          "Nitrofenatsetin"
+        ],
+        "conditions": "Qizdirish",
+        "observation": "Sariq rang"
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: nima uchun miqdoriy aniqlash azobo‘yoq reaksiyasiga asoslanadi?"
     },
     {
       "title": "Qo‘shimcha sifat reaksiyalari",
@@ -491,6 +726,65 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: mikrokristalloskopiya qaysi vaziyatda kerak bo‘ladi? Doskada: 3 reaksiya. Izoh: Liberman reaktivi va peshobni dastlabki tekshirish malaka 009 dan. Tipik xato: dastlabki sinovni tasdiqlovchi deb hisoblash."
+    },
+    {
+      "title": "Fenatsetin: sifat reaksiyalari jadvali",
+      "bullets": [
+        {
+          "text": "Nitrat kislota bilan qizdirilganda fenatsetin sariq rangli nitrofenatsetin hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gidrolizdan keyin azobo‘yoq reaksiyasi (qizil rang), izonitril reaksiyasi (qo‘lansa hid) va indofenol reaksiyalari qo‘llanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenatsetinning spirtdagi eritmasi 250 nm da spektral maksimum beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Fenatsetin",
+        "header": [
+          "Reaksiya",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "HNO3, qizdirish",
+            "Sariq nitrofenatsetin"
+          ],
+          [
+            "Azobo‘yoq (gidrolizdan keyin)",
+            "Qizil rang"
+          ],
+          [
+            "Ishqor (spirtda) + xloroform",
+            "Izonitril: qo‘lansa hid"
+          ],
+          [
+            "UB-spektr (spirtda)",
+            "Maksimum 250 nm"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: jadvalni to‘ldiring. Tipik xato: gidroliz bosqichisiz azobo‘yoq reaksiyasini kutish."
     },
     {
       "title": "Fenatsetin: YuQX",
@@ -672,6 +966,74 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: suv bug‘i bilan haydaladigan boshqa moddalarni eslang. Doskada: xossalar ro‘yxati. Tipik xato: salitsil kislotani suv bug‘i bilan haydalmaydi deb o‘ylash."
     },
     {
+      "title": "Salitsil kislota: raqamlar",
+      "bullets": [
+        {
+          "text": "Salitsil kislota 159 °C da suyuqlanadi; sovuq suvda yomon, issiq suvda juda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "98"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Salitsilatlarning 80 % buyrak orqali chiqadi, 24 soat ichida batamom chiqib ketadi; 20 % to‘qimalarda metabolitlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "98"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bromli suv reaksiyasi sezgirligi 1:40000; UB-maksimum: 0,5 n NaOH da 300 nm, 0,1 n H2SO4 da 302 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "99"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Salitsil kislota",
+        "items": [
+          {
+            "label": "Suyuqlanish harorati",
+            "value": "159",
+            "unit": "°C"
+          },
+          {
+            "label": "Buyrak orqali",
+            "value": "80",
+            "unit": "%"
+          },
+          {
+            "label": "Metabolitlanadi",
+            "value": "20",
+            "unit": "%"
+          },
+          {
+            "label": "Bromli suv sezgirligi",
+            "value": "1:40000"
+          },
+          {
+            "label": "UB, 0,5 n NaOH",
+            "value": "300",
+            "unit": "nm"
+          },
+          {
+            "label": "UB, 0,1 n H2SO4",
+            "value": "302",
+            "unit": "nm"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Talabalar raqamlarni xossa va usullarga bog‘lab aytsin."
+    },
+    {
       "title": "Salitsil kislota: toksikologik ahamiyati",
       "bullets": [
         {
@@ -702,7 +1064,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Ishlatilishi",
+        "root": "Salitsil kislota",
+        "children": [
+          {
+            "label": "Tibbiyot, farmatsiya",
+            "items": [
+              "Aspirin",
+              "Salol"
+            ]
+          },
+          {
+            "label": "Oziq-ovqat konservalash",
+            "items": [
+              "Davlat tomonidan bekor qilingan"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega oziq-ovqat tekshiruvi kerak bo‘lib qoladi? Doskada: 3 qo‘llanish sohasi. Tipik xato: salitsil kislotani faqat dori deb hisoblash."
     },
     {
@@ -736,8 +1117,73 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Belgilar",
+        "nodes": [
+          "Bosh og‘rishi, bosh aylanishi",
+          "Quloqda g‘uvullash, eshitish susayadi",
+          "Ich ketishi, ko‘ngil aynish, qusish",
+          "Qon aylanish va nafas ritmi buziladi",
+          "Kollaps"
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: eshitish alomatlari qaysi guruh preparatlariga xos? Doskada: belgilar ro‘yxati. Tipik xato: faqat oshqozon-ichak belgilarini eslash."
+    },
+    {
+      "title": "Klinik manzara: fenatsetin va salitsilat",
+      "bullets": [
+        {
+          "text": "Fenatsetin katta dozada metgemoglobinemiya, anemiya va nefrit kasalliklarini chaqirishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Salitsil kislota bilan zaharlanganda bosh og‘rishi, quloqlarda g‘uvullash, eshitish susayishi, ich ketishi va kollaps kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "98"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenatsetin organizmda gidrolizlanib, gemoglobinga ta’sir qiluvchi xinoniminni hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "97"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Zaharlanish belgilari",
+        "columns": [
+          {
+            "title": "Fenatsetin",
+            "items": [
+              "Metgemoglobinemiya",
+              "Anemiya, nefrit",
+              "Xinonimin gemoglobinga ta’sir qiladi"
+            ]
+          },
+          {
+            "title": "Salitsil kislota",
+            "items": [
+              "Bosh og‘rishi, bosh aylanishi",
+              "Quloqda g‘uvullash",
+              "Ich ketishi, qusish, kollaps"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ikkala modda zaharlanishida qaysi a’zo tizimlari ustuvor zararlanadi?"
     },
     {
       "title": "Salitsil kislota metabolizmi",
@@ -770,8 +1216,94 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Salitsilatlar taqdiri",
+        "root": "Salitsilatlar",
+        "children": [
+          {
+            "label": "So‘rilish",
+            "items": [
+              "Oshqozondan qonga tez"
+            ]
+          },
+          {
+            "label": "Qonda",
+            "items": [
+              "Natriyli tuz, oqsilga birikadi"
+            ]
+          },
+          {
+            "label": "Chiqarilish",
+            "items": [
+              "80 % buyrak orqali",
+              "24 soatda batamom"
+            ]
+          },
+          {
+            "label": "Metabolit (20 %)",
+            "items": [
+              "2,3-digidroksibenzoy k-ta",
+              "2,5-digidroksibenzoy k-ta",
+              "2,3,5-trigidroksibenzoy k-ta"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega salitsilatlar organizmda deyarli bir xil taqsimlanadi? Doskada: 80 % va 20 % taqsimoti. Tipik xato: metabolitlarni peshobdan qidirmaslik."
+    },
+    {
+      "title": "Salitsil kislotani ob’ektdan ajratish",
+      "bullets": [
+        {
+          "text": "Salitsil kislota bilan zaharlanganda ob’ektdan qutbli erituvchilar yordamida kislotali muhitda ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "98"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Salitsil kislota suv bug‘i bilan haydaladi, shuning uchun biologik ob’ektdan suv bug‘i bilan haydab ajratish mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "98"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oziq-ovqat mahsulotlari ham sud-kimyo laboratoriyasiga ashyoviy dalil sifatida yuborilishi mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "98"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Ikki imkoniyat",
+        "columns": [
+          {
+            "title": "Qutbli erituvchilar",
+            "items": [
+              "Kislotali muhitda ajratiladi",
+              "Kislotali ajralmada tekshiriladi"
+            ]
+          },
+          {
+            "title": "Suv bug‘i bilan haydash",
+            "items": [
+              "Salitsil kislota haydaladi",
+              "Biologik ob’ektdan ajratish mumkin"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: oziq-ovqat ashyoviy dalil bo‘lganda nima uchun salitsilatga tekshiriladi?"
     },
     {
       "title": "Salitsil kislotani aniqlash: sharoit",
@@ -841,7 +1373,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Kompleks va muhit",
-        "nodes": [],
         "header": [
           "pH",
           "Kompleks"
@@ -894,7 +1425,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "FeCl3 bilan reaksiya",
+        "reagents": [
+          "Salitsil kislota",
+          "FeCl3"
+        ],
+        "products": [
+          "Fe(III)-salitsilat kompleksi"
+        ],
+        "conditions": "pH ga qarab mono-, di-, trisalitsilat",
+        "observation": "Zangori-binafsha; spirtda rang o‘chmaydi"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: maltol nima uchun xalal beradi? Doskada: shartlar. Tipik xato: musbat FeCl3 sinovini salitsilatning yagona isboti deb olish."
     },
     {
@@ -928,8 +1471,84 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Bromli suv",
+        "reagents": [
+          "Salitsil kislota",
+          "Bromli suv"
+        ],
+        "products": [
+          "Tribromfenol (oq cho‘kma)",
+          "CO2"
+        ],
+        "observation": "Oq cho‘kma; sezgirlik 1:40000"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: «manfiy ahamiyat» nimani anglatadi? Doskada: bromli suv: musbat natija – tasdiq emas, manfiy – rad etish. Tipik xato: musbat natijani tasdiq deb hisoblash."
+    },
+    {
+      "title": "Salitsil kislota reaksiyalarining ahamiyati",
+      "bullets": [
+        {
+          "text": "Temir(III) xlorid reaksiyasi xarakterli: rang spirt ta’sirida o‘chmaydi (fenoldan farqi), fenol gidroksilini bog‘lovchi moddalar bo‘lmaganda.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "99"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bromli suv reaksiyasi xarakterli emas, lekin juda sezgir; chiqmasa, salitsil kislota yo‘q — manfiy ahamiyatga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "99"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metilsalitsilat hidi va UB-maksimumlar (300 va 302 nm) tasdiqlovchi belgilar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "99"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Salitsil kislota",
+        "header": [
+          "Reaksiya",
+          "Natija",
+          "Ahamiyati"
+        ],
+        "rows": [
+          [
+            "FeCl3",
+            "Zangori-binafsha rang",
+            "Xarakterli"
+          ],
+          [
+            "Bromli suv",
+            "Oq cho‘kma + CO2",
+            "Manfiy ahamiyat"
+          ],
+          [
+            "CH3OH + H2SO4",
+            "Metilsalitsilat hidi",
+            "Tasdiqlovchi"
+          ],
+          [
+            "UB-spektr",
+            "300 nm / 302 nm",
+            "Tasdiqlovchi"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bromli suv reaksiyasi faqat manfiy ahamiyatga ega?"
     },
     {
       "title": "Metilsalitsilat va UB-spektr",
@@ -962,8 +1581,63 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Efir hosil bo‘lishi",
+        "reagents": [
+          "Salitsil kislota",
+          "Metil spirti"
+        ],
+        "products": [
+          "Metilsalitsilat efiri"
+        ],
+        "conditions": "Kons. H2SO4, qizdirish",
+        "observation": "Xarakterli hid seziladi"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: efirning hidi qaysi o‘simlik/mahsulotni eslatadi? (kitobda yo‘q — savol ochiq). Doskada: reaksiya sharti va 300/302 nm. Tipik xato: ishqoriy va kislotali eritma maksimumlarini almashtirish."
+    },
+    {
+      "title": "Bromli suv reaksiyasi: manfiy ahamiyat mantig‘i",
+      "bullets": [
+        {
+          "text": "Bromli suv salitsil kislota eritmasida oq cho‘kma (tribromfenol) hosil qiladi va CO2 ajraladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "99"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya xarakterli emas: benzol yadrosini saqlovchi ko‘p organik moddalar ham beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "99"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya chiqmasa, tekshiriluvchi eritmada salitsil kislota va shunga o‘xshash moddalar yo‘q.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "99"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Manfiy ahamiyat",
+        "nodes": [
+          "Bromli suv + eritma",
+          "Oq cho‘kma chiqmadi",
+          "Salitsil kislota va o‘xshashlar yo‘q",
+          "Chiqsa: xarakterli emas"
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun manfiy natija musbat natijadan kuchliroq xulosa beradi?"
     },
     {
       "title": "Qon va peshobni dastlabki tekshirish",
@@ -996,7 +1670,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Dastlabki tekshirish",
+        "header": [
+          "Reaktiv",
+          "Ob’ekt",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Trindler (HgCl2 + Fe(NO3)3)",
+            "Peshob, qon zardobi",
+            "Qizil-alvon rang"
+          ],
+          [
+            "Fe(NO3)3 (HNO3 da)",
+            "Peshob, qon zardobi",
+            "Qizil-alvon rang"
+          ]
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: dastlabki sinov va tasdiqlovchi sinov farqi. Doskada: ikki reaksiya. Tipik xato: reaktiv formulasini kitobdan tekshirmay ko‘chirish. Kitobda: «Fe(NO2)» (xato) — Trinder reaktivi simob (II) xlorid va temir (III) nitrat Fe(NO3)3 dan iborat."
     },
     {
@@ -1030,7 +1724,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Miqdoriy usullar",
+        "header": [
+          "Usul",
+          "Asosi"
+        ],
+        "rows": [
+          [
+            "Titrlash",
+            "Kislotali xususiyatidan; ishqor bilan"
+          ],
+          [
+            "Bromatometriya",
+            "Hajmiy usul"
+          ],
+          [
+            "UB-spektrofotometriya",
+            "Ishqoriy yoki H2SO4 dagi eritma"
+          ]
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi usul kichik miqdorlar uchun mos? Doskada: 3 usul. Tipik xato: miqdor tahlilidan oldin sifat tasdig‘ini o‘tkazmaslik."
     },
     {
@@ -1115,9 +1830,9 @@
     {
       "question": "Fenatsetin qanday xossali modda?",
       "options": [
-        "Kislotali",
-        "Neytral",
         "Kuchli asos",
+        "Neytral",
+        "Kislotali",
         "Amfoter"
       ],
       "correct_index": 1,
@@ -1131,10 +1846,10 @@
     {
       "question": "Fenatsetin to‘liq gidrolizlanmasa, qaysi kuchli zaharli modda hosil bo‘ladi?",
       "options": [
-        "p-Aminofenol",
+        "Paratsetamol",
         "n-Fenetidin",
-        "Xinonimin",
-        "Paratsetamol"
+        "p-Aminofenol",
+        "Xinonimin"
       ],
       "correct_index": 1,
       "explanation": "Preparat to‘liq gidrolizlanmaganda kuchli zaharli n-fenetidin hosil bo‘ladi.",
@@ -1164,9 +1879,9 @@
       "question": "Fenatsetinning spirtdagi eritmasi UB-spektrda qaysi to‘lqin uzunligida maksimum beradi?",
       "options": [
         "250 nm",
-        "302 nm",
         "258 nm",
-        "273 nm"
+        "273 nm",
+        "302 nm"
       ],
       "correct_index": 0,
       "explanation": "Fenatsetin spirtdagi eritmasi 250 nm da maksimum beradi.",
@@ -1179,12 +1894,12 @@
     {
       "question": "Fenatsetin miqdori qaysi reaksiya asosida FEK usulida aniqlanadi?",
       "options": [
+        "FeCl3",
         "Azobo‘yoq reaksiyasi",
         "Bromli suv",
-        "FeCl3",
         "Mandelin"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Miqdori azobo‘yoq reaksiyasi asosida fotokolorimetrik usulda aniqlanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1195,12 +1910,12 @@
     {
       "question": "Salitsil kislota qancha haroratda suyuqlanadi?",
       "options": [
-        "134 °C",
         "159 °C",
-        "100 °C",
-        "200 °C"
+        "134 °C",
+        "200 °C",
+        "100 °C"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Salitsil kislota 159 °C da suyuqlanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1211,8 +1926,8 @@
     {
       "question": "Salitsilatlarning qancha qismi buyraklar orqali chiqib ketadi?",
       "options": [
-        "20 %",
         "50 %",
+        "20 %",
         "80 %",
         "100 %"
       ],
@@ -1227,12 +1942,12 @@
     {
       "question": "pH 4-8 muhitda salitsil kislota temir bilan qanday kompleks hosil qiladi?",
       "options": [
-        "Monosalitsilatli, ko‘kimtir-pushti",
-        "Disalitsilatli, qizil-qo‘ng‘ir",
+        "Hosil qilmaydi",
         "Trisalitsilatli, sariq",
-        "Hosil qilmaydi"
+        "Monosalitsilatli, ko‘kimtir-pushti",
+        "Disalitsilatli, qizil-qo‘ng‘ir"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "pH 4-8 da disalitsilatli qizil-qo‘ng‘ir kompleks hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1244,11 +1959,11 @@
       "question": "Bromli suv bilan salitsil kislota reaksiyasida qanday cho‘kma hosil bo‘ladi?",
       "options": [
         "Qizil",
-        "Oq tribromfenol",
+        "Yashil",
         "Sariq",
-        "Yashil"
+        "Oq tribromfenol"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Oq cho‘kma — tribromfenol hosil bo‘ladi va CO2 ajraladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1260,11 +1975,11 @@
       "question": "Salitsil kislota UB-spektrda 0,5 n NaOH da qaysi to‘lqin uzunligida maksimum beradi?",
       "options": [
         "250 nm",
-        "300 nm",
+        "258 nm",
         "302 nm",
-        "258 nm"
+        "300 nm"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "0,5 n natriy ishqorda 300 nm, 0,1 n sulfat kislotada 302 nm.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1276,12 +1991,156 @@
       "question": "Salitsil kislotaning bromli suv bilan reaksiyasi sezgirligi qancha?",
       "options": [
         "1:400",
-        "1:4000",
+        "1:400000",
         "1:40000",
-        "1:400000"
+        "1:4000"
       ],
       "correct_index": 2,
       "explanation": "Sezgirligi 1:40000.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "99"
+      }
+    },
+    {
+      "question": "Organizmda fenatsetin gidrolizlanib qaysi mahsulotni hosil qiladi?",
+      "options": [
+        "Nitrofenatsetin",
+        "Salitsil kislota",
+        "p-Aminofenol",
+        "Sirka kislota"
+      ],
+      "correct_index": 2,
+      "explanation": "Organizmda fenatsetin gidrolizlanib paraaminofenolni hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "97"
+      }
+    },
+    {
+      "question": "p-Aminofenol oksidlanib qaysi modda hosil qiladi?",
+      "options": [
+        "Tribromfenol",
+        "Nitrofenatsetin",
+        "Xinonimin",
+        "Metilsalitsilat"
+      ],
+      "correct_index": 2,
+      "explanation": "p-Aminofenol oksidlanib, gemoglobinga ta’sir qiluvchi xinoniminni hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "97"
+      }
+    },
+    {
+      "question": "Fenatsetin gidrolizidan keyin ishqorning spirtdagi eritmasi va xloroform ta’sirida nima hosil bo‘ladi?",
+      "options": [
+        "Izonitril (qo‘lansa hid)",
+        "Yashil cho‘kma",
+        "Oq tutun",
+        "Ko‘k rang"
+      ],
+      "correct_index": 0,
+      "explanation": "Ishqorning spirtdagi eritmasi va xloroform ta’sirida izonitril — qo‘lansa hid hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "97"
+      }
+    },
+    {
+      "question": "Salitsil kislotaning qaysi xossasi uni suv bug‘i bilan ajratishga imkon beradi?",
+      "options": [
+        "Suv bug‘i bilan haydalishi",
+        "Efirda erimasligi",
+        "Qaynash haroratining pastligi",
+        "Sovuq suvda yaxshi erishi"
+      ],
+      "correct_index": 0,
+      "explanation": "Salitsil kislota suv bug‘i bilan haydaladi, shuning uchun uni suv bug‘i bilan ajratib olish mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "98"
+      }
+    },
+    {
+      "question": "pH 1,8-2,5 da salitsil kislota Fe(III) bilan qanday kompleks hosil qiladi?",
+      "options": [
+        "Kompleks hosil bo‘lmaydi",
+        "Trisalitsilatli, sariq",
+        "Disalitsilatli, qizil-qo‘ng‘ir",
+        "Monosalitsilatli, ko‘kimtir-pushti"
+      ],
+      "correct_index": 3,
+      "explanation": "pH 1,8-2,5 da monosalitsilatli ko‘kimtir-pushti kompleks (I) hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "98"
+      }
+    },
+    {
+      "question": "Salitsil kislotaning temir(III) xlorid bilan rangi spirt ta’sirida qanday o‘zgaradi?",
+      "options": [
+        "Sariqqa o‘tadi",
+        "O‘chmaydi (fenoldan farqi)",
+        "Cho‘kmaga aylanadi",
+        "Yo‘qoladi"
+      ],
+      "correct_index": 1,
+      "explanation": "Hosil bo‘lgan rang spirt ta’sirida o‘chmaydi — fenoldan farqi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "99"
+      }
+    },
+    {
+      "question": "Salitsil kislotaning 20 % qismi to‘qimalarda qaysi kislotalarga aylanadi?",
+      "options": [
+        "Pikrin kislotaga",
+        "Aspirin va salolga",
+        "Digidroksi- va trigidroksibenzoy kislotalarga",
+        "Sirka va chumoli kislotaga"
+      ],
+      "correct_index": 2,
+      "explanation": "To‘qimalarda 2,3- va 2,5-digidroksibenzoy hamda 2,3,5-trigidroksibenzoy kislotalar hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "98"
+      }
+    },
+    {
+      "question": "Trindler reaktivi peshob yoki qon zardobida salitsil kislota bilan qanday rang beradi?",
+      "options": [
+        "Qizil-alvon",
+        "Yashil",
+        "Sariq",
+        "Ko‘k"
+      ],
+      "correct_index": 0,
+      "explanation": "Trindler reaktivi salitsil kislota bo‘lsa qizil-alvon rang hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "99"
+      }
+    },
+    {
+      "question": "Salitsil kislota miqdori kislotali xususiyatidan foydalanib qanday aniqlanadi?",
+      "options": [
+        "Kislota bilan titrlanadi",
+        "Bromatometrik usulda faqat",
+        "Gravimetrik usulda",
+        "Ishqor bilan titrlanadi"
+      ],
+      "correct_index": 3,
+      "explanation": "Salitsil kislotaning kislotali xususiyatidan foydalanib ishqor bilan titrlanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",

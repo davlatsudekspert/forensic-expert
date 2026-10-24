@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-45-toks-instrumental",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Kimyo-toksikologik tahlilda instrumental usullar",
+  "ru": "Kimyo-toksikologik tahlilda instrumental usullar",
+  "en": "Kimyo-toksikologik tahlilda instrumental usullar"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-45-toks-instrumental-q01",
+   "question_i18n": {
+    "uz": "Spektrofotometriyada eritmaning optik ko‘rsatkichi qaysi oraliqda bo‘lishi tavsiya etiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,2-1,0",
+     "5-10",
+     "0,01-0,1",
+     "1,5-3,0"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Eritmalarning optik ko‘rsatkichi 0,2 dan 1,0 gacha oraliqda bo‘lishi lozim."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "108"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q02",
+   "question_i18n": {
+    "uz": "Kofeinning etil spirtidagi eritmasi qaysi to‘lqin uzunligida maksimum beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "273 nm",
+     "300 nm",
+     "350 nm",
+     "210 nm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kofeinning etil spirtidagi eritmasi 273 nm da maksimumga ega."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "108"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q03",
+   "question_i18n": {
+    "uz": "Gaz suyuqlik xromatografiyasida qo‘zg‘aluvchi faza nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Suyuqlik",
+     "Qattiq sorbent",
+     "Gaz",
+     "Aralashma"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "GSX da qo‘zg‘aluvchi faza — gaz, qo‘zg‘almas faza — yuqori haroratda qaynovchi suyuqlik."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "47"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q04",
+   "question_i18n": {
+    "uz": "Xromatografiya birinchi bo‘lib qaysi yilda qo‘llangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1903",
+     "1952",
+     "1959",
+     "1941"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "1903 yilda M.S. Svet tomonidan o‘simliklardan olingan aralashmani ajratishda."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "47"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q05",
+   "question_i18n": {
+    "uz": "Chin ushlanish vaqti qanday hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "tum / tm",
+     "tum + tm",
+     "tum * tm",
+     "tum - tm"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "tchin = tum - tm."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "48"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q06",
+   "question_i18n": {
+    "uz": "GSX da miqdor qaysi usullarda aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat vizual solishtirish",
+     "Faqat titrlash",
+     "Faqat gravimetriya",
+     "Ichki standart, absolyut kalibrlash, ichki normallash"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Uch usul: ichki standart, absolyut kalibrlash, ichki normallash."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q07",
+   "question_i18n": {
+    "uz": "Qon va siydikdagi spirtlar GSX da qaysi birikmalarga aylantirilib tahlil qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Aldegidlar",
+     "Alkilnitritlar",
+     "Efirlar",
+     "Kislotalar"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Spirtlar alkilnitritlarga o‘tkazilib xromatografiyalanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q08",
+   "question_i18n": {
+    "uz": "Spirtlarni GSX da aniqlashda ichki standart sifatida nima olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Metil spirti",
+     "Etil spirti",
+     "Propil spirti",
+     "Amil spirti"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ichki standart sifatida propil spirti olinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q09",
+   "question_i18n": {
+    "uz": "YuSSX da yuqori bosimli nasos qancha bosimgacha beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1 atm",
+     "200-500 atm",
+     "1000 atm",
+     "20 atm"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Yuqori bosimli nasos 200-500 atm gacha bosim beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "124"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q10",
+   "question_i18n": {
+    "uz": "YuSSX miqdoriy tahlilida qaysi kattalik hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Detektor harorati",
+     "Kolonka uzunligi",
+     "Gaz oqimi",
+     "Cho‘qqi yuzasi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Miqdoriy tahlilda cho‘qqi yuzalari hisoblanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "125"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q11",
+   "question_i18n": {
+    "uz": "Gel xromatografiyasini birinchi bo‘lib 1959 yilda kim qo‘llagan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Svet",
+     "Reyneke",
+     "Martin va Sing",
+     "Porat va Flodin"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Gellarni birinchi bo‘lib 1959 yilda Porat va Flodin qo‘llaganlar."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "121"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q12",
+   "question_i18n": {
+    "uz": "Gel xromatografiyada kolonka uchun nay ichki diametri qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100 mm",
+     "8-10 mm",
+     "0,1 mm",
+     "1-2 mm"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ichki diametri 8-10 mm nay ishlatiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q13",
+   "question_i18n": {
+    "uz": "Nikotin Dragendorf reaktivi bilan qanday kristall hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kub shakldagi oq",
+     "Ninasimon ko‘k",
+     "«X» va «K» shakldagi",
+     "Hosil qilmaydi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Nikotin qizg‘ish «X» va «K» shaklidagi kristallar hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "110"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q14",
+   "question_i18n": {
+    "uz": "TDSIS da emitter kuchlanishi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1000 V",
+     "405 V",
+     "10 V",
+     "50 V"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Emitter kuchlanishi 405 V."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "141"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q15",
+   "question_i18n": {
+    "uz": "Fotokolorimetriya moddani qanday nurlanishda o‘lchaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Monoxromatik, UB sohada",
+     "Rentgen nurida",
+     "Polixromatik, spektrning ko‘rinadigan qismida",
+     "Infraqizil nurda"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Fotokolorimetriya moddani polixromatik nurlanishda spektrning ko‘rinadigan qismida o‘lchab tahlil qilishga asoslangan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "130"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q16",
+   "question_i18n": {
+    "uz": "YuSSX da o‘zgarmas to‘lqinli spektrofotometrik detektor ko‘pincha qaysi to‘lqin uzunligida ishlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "190 nm",
+     "254 nm",
+     "900 nm",
+     "400 nm"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "YuSSX detektorlari: to‘lqin uzunligi o‘zgaruvchan (190-900 nm) yoki o‘zgarmaydigan (ko‘pincha 254 nm) spektrofotometrik."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "124"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q17",
+   "question_i18n": {
+    "uz": "YuSSX xromatografik kolonkasining uzunligi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1-2 sm",
+     "20-30 m",
+     "10-25 sm",
+     "1-2 m"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kolonkalar zanglamaydigan po‘latdan yoki shishadan bo‘lib, uzunligi 10-25 sm, ichki diametri 0,3-0,8 sm."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "124"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q18",
+   "question_i18n": {
+    "uz": "TDSIS da emitter harorati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "505 °C",
+     "1000 °C",
+     "100 °C",
+     "390-420 °C"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "TDSIS da emitter harorati 390-420 °C, kuchlanishi 405 V."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "141"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q19",
+   "question_i18n": {
+    "uz": "Piretroidlar qaysi konsentratsiyalar oralig‘ida Buger-Lambert-Ber qonuniga bo‘ysunadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10-100 mkg/ml",
+     "100-500 mg/ml",
+     "1-10 g/ml",
+     "0,1-1 mkg/ml"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Piretroidlar 10-100 mkg/ml konsentratsiyalar oralig‘ida Buger-Lambert-Ber umumiy qonuniga bo‘ysunadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "163"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-45-toks-instrumental-q20",
+   "question_i18n": {
+    "uz": "Etilenglikol kalsiy oksalat mikrokristallariga o‘tkazilganda reaksiya sezgirligi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,1 g etilenglikol",
+     "1 mkg",
+     "10 g",
+     "5 mg"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kalsiy oksalat kristallari reaksiyasining sezgirligi 0,1 g etilenglikolga teng."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "47"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

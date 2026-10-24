@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-69-toks-lab-nsaid",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Yallig‘lanishga qarshi dori vositalari tahlili",
+  "ru": "Yallig‘lanishga qarshi dori vositalari tahlili",
+  "en": "Yallig‘lanishga qarshi dori vositalari tahlili"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-69-toks-lab-nsaid-q01",
+   "question_i18n": {
+    "uz": "Ibuprofenning maksimal sutkali dozasi kitobda qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "200 mg",
+     "2400 mg",
+     "150 mg",
+     "3000 mg"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Maksimal sutkali dozalar: ibuprofen — 2400 mg, indometatsin — 200 mg, diklofenak natriy — 150 mg."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q02",
+   "question_i18n": {
+    "uz": "YuQX (xloroform:metanol 9:1) da diklofenak uchun Rf qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,38",
+     "0,47",
+     "0,54",
+     "0,75"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Diklofenak uchun Rf=0,47, indometatsin uchun 0,38, ibuprofen uchun 0,54."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q03",
+   "question_i18n": {
+    "uz": "Qaysi modda YuQX da eng katta Rf ga ega (diklofenak, indometatsin, ibuprofen)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Diklofenak",
+     "Indometatsin",
+     "Ibuprofen",
+     "Hammasi bir xil"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ibuprofen Rf=0,54 — uchalasi orasida eng katta."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q04",
+   "question_i18n": {
+    "uz": "Diklofenak UB-spektrofotometriyada qaysi to‘lqin uzunliklarida maksimum beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "272 va 275 nm",
+     "278 nm",
+     "257 nm",
+     "300 nm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Diklofenak 272 va 275 nm da maksimum nur yutadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q05",
+   "question_i18n": {
+    "uz": "Liberman reaktivi bilan diklofenak qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizg‘ish jigarrang",
+     "Ko‘k",
+     "Yashil",
+     "Rangsiz"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Diklofenak Liberman reaktivi bilan qizg‘ish jigarrang rang beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q06",
+   "question_i18n": {
+    "uz": "Diklofenakning dissotsiatsiya konstantasi (pKa) qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2,0",
+     "4,2",
+     "7,0",
+     "9,5"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Dissotsiatsiya konstantasi pKa=4,2."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q07",
+   "question_i18n": {
+    "uz": "Indometatsinning suyuqlanish haroratidagi tafovut nimani ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Aralashma borligini",
+     "Namlikni",
+     "Parchalanishni",
+     "Polimorfizmni"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "155-162 °C tafovut uning polimorfizm xususiyati borligini ko‘rsatadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "139"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q08",
+   "question_i18n": {
+    "uz": "Diklofenak natriyning plazma albuminlari bilan bog‘lanish darajasi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50%",
+     "60%",
+     "99%",
+     "10%"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Diklofenakning 99% plazma albuminlari bilan bog‘lanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q09",
+   "question_i18n": {
+    "uz": "Ibuprofenning yarim chiqarish davri qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1,8-2,5 soat",
+     "4-5 soat",
+     "1-2 daqiqa",
+     "24 soat"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ibuprofenning yarim chiqarish davri 1,8-2,5 soatni tashkil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "138"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q10",
+   "question_i18n": {
+    "uz": "YaQNDV ning eng xavfli ta’sirlaridan biri qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Teri qurishi",
+     "Buyraklarning to‘liq ishdan chiqishi",
+     "Ko‘z qorachig‘ining torayishi",
+     "Tish kariesi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Eng xavfli ta’sirlardan biri — buyraklarning to‘liq ishdan chiqishi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q11",
+   "question_i18n": {
+    "uz": "Laboratoriya matniga ko‘ra diklofenak natriyning suyuqlanish harorati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "125-127 °C",
+     "75-77 °C",
+     "283-285 °C",
+     "155-162 °C"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Laboratoriya matnida (252-bet) diklofenak natriyning suyuqlanish harorati 283-285 °C deb berilgan (ma’ruza qismidagi «25 °C» bosma xato; ilmiy muharrir qarori)."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q12",
+   "question_i18n": {
+    "uz": "100 mg retard diklofenak qabul qilinganda qondagi konsentratsiya necha soatda maksimal bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10 daqiqada",
+     "12 soatda",
+     "24 soatda",
+     "4 soatda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "100 mg saqlagan retard tabletkalardan so‘ng konsentratsiya 4 soatda maksimal (0,5 mkg/ml) bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q13",
+   "question_i18n": {
+    "uz": "Diklofenakning qancha qismi buyraklar orqali chiqariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "60%",
+     "5%",
+     "25%",
+     "99%"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Diklofenakning 60% buyraklar orqali chiqariladi; 99% plazma albuminlari bilan bog‘lanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q14",
+   "question_i18n": {
+    "uz": "Indometatsinning yarim chiqarish davri qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1-2 soat",
+     "4-5 soat",
+     "1,8-2,5 soat",
+     "24-48 soat"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Indometatsinning yarim chiqarish davri 4-5 soatni tashkil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "139"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q15",
+   "question_i18n": {
+    "uz": "Ketoprofen YuQX da (xloroform:metanol 9:1) qanday Rf beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,38",
+     "0,47",
+     "0,57",
+     "0,75"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ketoprofen uchun Rf=0,57, piroksikam uchun Rf=0,48."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "139"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q16",
+   "question_i18n": {
+    "uz": "Piroksikamning maksimal sutkali dozasi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "150 mg",
+     "200 mg",
+     "2400 mg",
+     "30 mg"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Maksimal sutkali dozalar: piroksikam — 30 mg, diklofenak natriy — 150 mg, indometatsin — 200 mg."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q17",
+   "question_i18n": {
+    "uz": "Liberman reaktivi bilan indometatsin qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qora",
+     "Zarg‘aldoq jigarrang",
+     "Qizg‘ish sariq",
+     "Rangsiz"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Laboratoriya matniga ko‘ra Liberman reaktivi bilan indometatsin qora rang beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q18",
+   "question_i18n": {
+    "uz": "Marki reaktivi bilan indometatsin qanday rangga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "To‘q jigarrang",
+     "Ko‘k",
+     "Kulrang",
+     "Zarg‘aldoq"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Marki reaktivi bilan diklofenak to‘q jigarrang, indometatsin zarg‘aldoq rangga kiradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "252"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q19",
+   "question_i18n": {
+    "uz": "Ibuprofenning suyuqlanish harorati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "93-96 °C",
+     "198-200 °C",
+     "75-77 °C",
+     "283-285 °C"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ibuprofen oq kristall kukun, suyuqlanish harorati 75-77 °C."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "138"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-69-toks-lab-nsaid-q20",
+   "question_i18n": {
+    "uz": "Termodesorbsion sirt-ionlashuv spektroskopiyasi (TDSIS) nano miqdorni qaysi aniqlikda tahlil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1·10-3 g",
+     "1 g",
+     "1·10-1 g",
+     "1·10-11 g"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "TDSIS azot saqlovchi molekulalar nano miqdorini 1·10-11 g aniqlikda xromatografik ajratishsiz tahlil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "140"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

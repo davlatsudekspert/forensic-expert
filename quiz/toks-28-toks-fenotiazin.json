@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-28-toks-fenotiazin",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Neyroleptiklar: fenotiazinlar (aminazin, diprazin, tizersin), butirofenonlar (galoperidol, droperidol)",
+  "ru": "Neyroleptiklar: fenotiazinlar (aminazin, diprazin, tizersin), butirofenonlar (galoperidol, droperidol)",
+  "en": "Neyroleptiklar: fenotiazinlar (aminazin, diprazin, tizersin), butirofenonlar (galoperidol, droperidol)"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-28-toks-fenotiazin-q01",
+   "question_i18n": {
+    "uz": "Fenotiazin hosilalari ob’ektdan qaysi usulda ajratib olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Valov usuli",
+     "Ye.M.Salomatin nordonlashtirilgan spirt usuli",
+     "Stas-Otto usuli",
+     "Dializ"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Fenotiazin hosilalari biologik ob’ektdan Ye.M.Salomatin ishlab chiqqan nordonlashtirilgan spirt usulida ajratib olinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q02",
+   "question_i18n": {
+    "uz": "Nordonlashtirilgan spirt usulida ob’ekt qanday eritma bilan bo‘ktiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sulfat kislotaning 5% suvli eritmasi",
+     "Oksalat kislotaning 10% spirtli eritmasi",
+     "Xlorid kislotaning 1 M eritmasi",
+     "Etilasetat"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ob’ekt oksalat kislotasining 10% spirtli eritmasi bilan 2 soat (3 marotaba) bo‘ktiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q03",
+   "question_i18n": {
+    "uz": "Fenotiazin hosilalari efirli ekstraktdan qaysi eritma bilan reekstraksiyalanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "NaOH 50%",
+     "Sulfat kislotaning 0,5 M eritmasi",
+     "Etanol 96%",
+     "Suv"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ishqoriy muhitdan olingan efirli ekstraktdan fenotiazin hosilalari sulfat kislotaning 0,5 M eritmasi bilan reekstraksiyalanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q04",
+   "question_i18n": {
+    "uz": "Qon va peshobdan fenotiazinlarni ajratishda gidrolizat pH qiymati nechaga keltiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "pH=2",
+     "pH=7",
+     "pH=13",
+     "pH=9"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "NaOH 50% eritmasi bilan pH=13 ga keltirilgach 10 daqiqa qizdiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q05",
+   "question_i18n": {
+    "uz": "Fenotiazin hosilalarining YuQX natijalari jadvaliga ko‘ra, qaysi modda sulfat kislota va etanol (9:1) purkalganda ko‘k rangli dog‘ hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Triftazin",
+     "Aminazin",
+     "Diprazin",
+     "Levomepromazin"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "16-jadvalda levomepromazin dog‘i «ko‘k», aminazin va diprazin to‘q qizil, triftazin qizil rangda berilgan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "121"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q06",
+   "question_i18n": {
+    "uz": "Konsentrlangan sulfat kislota bilan aminazin qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "qizil alvon",
+     "yashil",
+     "sariq",
+     "ko‘k"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Konsentrlangan sulfat kislotasi bilan aminazin qizil alvon rang hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q07",
+   "question_i18n": {
+    "uz": "Diprazin sulfoksidini peshobdan necha kundan keyin ham aniqlash mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2 kun",
+     "7 kun",
+     "14 kun",
+     "30 kun"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Diprazinning asosiy metabolitlaridan biri sulfoksid bo‘lib, uni hatto 14 kundan keyin ham peshobdan aniqlash mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "125-126"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q08",
+   "question_i18n": {
+    "uz": "Marki reaktivi bilan tizersin qanday rang hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "ko‘kish qizil",
+     "yashil",
+     "sariq",
+     "rangsiz"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Marki reaktivi bilan tizersin ko‘kish qizil rang hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "129"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q09",
+   "question_i18n": {
+    "uz": "Galoperidol Frede reaktivi bilan qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "binafsha",
+     "yashil",
+     "ko‘k",
+     "zarg‘aldoq"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Frede reaktivi bilan galoperidol zarg‘aldoq, droperidol sariq rang hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "130"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q10",
+   "question_i18n": {
+    "uz": "Droperidolning xlorid kislotali eritmasida miqdoriy aniqlashning chiziqli diapazoni qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1-10 mkg/ml",
+     "10-100 mkg/ml",
+     "0,1-1 mkg/ml",
+     "100-500 mkg/ml"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Aniqlashning chiziqli diapazoni 1-10 mkg/ml."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "131"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q11",
+   "question_i18n": {
+    "uz": "Fenotiazin hosilalari kimyoviy tuzilishiga ko‘ra nechta guruhga bo‘linadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikkita",
+     "To‘rtta",
+     "Uchta",
+     "Beshta"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra fenotiazin hosilalari uch guruhga bo‘linadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "119"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q12",
+   "question_i18n": {
+    "uz": "Salomatin usulida oksalat kislotali spirtli bo‘ktirish necha marta o‘tkaziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1 marta",
+     "5 marta",
+     "10 marta",
+     "3 marta (2 soatdan)"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ob’ekt oksalat kislotasining 10% spirtli eritmasi bilan 2 soat (3 marotaba) bo‘ktiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "120"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q13",
+   "question_i18n": {
+    "uz": "Qon va peshob gidrolizati qaysi aralashma bilan ekstraksiyalanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "3% izoamil spirtli n-geptan",
+     "Dietil efiri",
+     "Etilasetat",
+     "Benzol - dioksan"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Gidrolizat ikki qayta (20 ml) 3% izoamil spirti saqlagan n-geptan bilan ekstraksiyalanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "121"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q14",
+   "question_i18n": {
+    "uz": "Aminazinning sinonimi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Prometazin",
+     "Xlorpromazin",
+     "Levomepromazin",
+     "Haloperidol"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Aminazinning sinonimlari: xlorpromazin, xlorazin, largaktil, plegomazin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q15",
+   "question_i18n": {
+    "uz": "Aminazin bilan davolashda sutkalik doza qanday oraliqqa yetadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5 g dan 2 g gacha",
+     "0,01 g dan 0,02 g gacha",
+     "0,075 g dan 0,6 g gacha",
+     "1 g dan 5 g gacha"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sutkalik doza 0,075 g dan 0,6 g gacha etadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q16",
+   "question_i18n": {
+    "uz": "Aminazinning nechta metaboliti adabiyotlarda aniqlangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "3 ta",
+     "5 ta",
+     "10 ta",
+     "20 xildan ortiq"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Adabiyotlarda aminazinning 20 xildan ortiq metaboliti aniqlangani ko‘rsatilgan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q17",
+   "question_i18n": {
+    "uz": "Aminazinning 0,1 M sulfat kislotadagi eritmasi qaysi to‘lqin uzunliklarida yutadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "255 va 307 nm",
+     "252 va 301 nm",
+     "246 nm",
+     "400 nm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Aminazin 0,1 M H2SO4 da 255 va 307 nm maksimum nur yutadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q18",
+   "question_i18n": {
+    "uz": "Diprazinning suvda eruvchanligi kitobda qanday?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1:9",
+     "1:60",
+     "1:2",
+     "1:1300"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Diprazin suv (1:60), etil spirti (1:9), xloroformda (1:2) yaxshi eriydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "125"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q19",
+   "question_i18n": {
+    "uz": "Etaperazin YuQX da qaysi Rf qiymatini beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,72",
+     "0,93",
+     "0,32",
+     "0,71"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Etaperazin aminazin sharoitida Rf=0,32 hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "128"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-28-toks-fenotiazin-q20",
+   "question_i18n": {
+    "uz": "Droperidol necha daqiqada o‘z ta’sirini ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "30-60 daqiqada",
+     "2-3 soatda",
+     "24 soatda",
+     "3-10 daqiqada"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Droperidol tez, kuchli, qisqa ta’sirli neyroleptik: 3-10 daqiqada ta’sir ko‘rsatadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "130"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+   "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024"
+  }
+ ]
+}

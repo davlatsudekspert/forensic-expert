@@ -1,1472 +1,2378 @@
 {
-  "topic": "Sintetik fenilalkilaminlar: amfetamin, metamfetamin, MDMA va analoglar",
-  "slides": [
+ "topic": "Sintetik fenilalkilaminlar: amfetamin, metamfetamin, MDMA va analoglar",
+ "slides": [
+  {
+   "title": "Ma’ruza rejasi va tayanch iboralar",
+   "bullets": [
     {
-      "title": "Ma’ruza rejasi va tayanch iboralar",
-      "bullets": [
-        {
-          "text": "Mavzu: sintetik fenilalkilaminlar — amfetamin, metamfetamin, metoksi va metilendioksi hosilalari, ularning narkologik ahamiyati va tahlili.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Reja: tasnif, xossalar, ta’sir, «ekstazi» tabletkalari, Marki reaksiyasi, YuQX, UB-spektrlar, prekursorlar, o‘limli konsentratsiyalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82-87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tayanch so‘zlar: amfetamin, metamfetamin, MDA, MDMA, DOM/STP, Marki reaktivi, Rf, UB maksimum.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82-87"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega sintetik fenilalkilaminlar yoshlar orasida keng tarqalgan? Doskada: ma’ruza rejasi: xossa - ta’sir - tahlil. Tipik xato: amfetamin va metamfetaminni bir xil modda deb hisoblash."
-    },
-    {
-      "title": "Sintetik fenilalkilaminlar tasnifi",
-      "bullets": [
-        {
-          "text": "Sintetik fenilalkilaminlar guruhlari: amfetamin, metamfetamin, metoksi va metilendioksi hosilalari.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metoksi hosilalarda benzol xalqasi vodorodi almashgan; metilendioksi hosilalar alohida guruh.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Guruhlar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Tavsif"
-        ],
-        "rows": [
-          [
-            "A) Amfetamin",
-            "asosiy vakil"
-          ],
-          [
-            "B) Metamfetamin",
-            "N-metil hosilasi"
-          ],
-          [
-            "C) Metoksi hosilalar",
-            "benzol xalqasi vodorodi almashgan"
-          ],
-          [
-            "D) Metilendioksi hosilalar",
-            "MDA, MDMA va boshqalar"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: har bir guruhga misol keltiring. Doskada: to‘rt guruh jadvali. Tipik xato: guruhlarni tabiiy fenilalkilaminlar bilan aralashtirish (36-dars)."
-    },
-    {
-      "title": "Amfetaminning fizik xossalari",
-      "bullets": [
-        {
-          "text": "Amfetamin rangsiz, uchuvchan, moysimon suyuqlik; «baliq» hidini eslatuvchi xarakterli hidga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suvda yomon, organik erituvchilarda yaxshi eriydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qaynash harorati 200-203 °C.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uchuvchanlik tahlil sharoitiga qanday ta’sir qiladi? Doskada: xossa ro‘yxati. Tipik xato: amfetaminni kristall kukun deb o‘ylash: tuzlari kukun, asosi moysimon suyuqlik."
-    },
-    {
-      "title": "Amfetamin izomerlari va ta’siri",
-      "bullets": [
-        {
-          "text": "Amfetamin qutblangan nurni o‘ngga buruvchi (dekstroamfetamin) va chapga buruvchi (levamfetamin) izomerlarga ega.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82-83"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘ngga buruvchi izomer markaziy asab tizimiga 3-4 marta kuchliroq ta’sir ko‘rsatadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Amfetamin markaziy nerv tizimini stimullovchi neyromediatorlar — dofamin va noradrenalin ishlab chiqarilishini kuchaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi izomer kuchliroq? Doskada: d- va l-izomerlar: 3-4 marta farq. Tipik xato: izomerlarni bir xil faol deb hisoblash."
-    },
-    {
-      "title": "Amfetaminning surunkali ta’siri",
-      "bullets": [
-        {
-          "text": "Amfetamin kuchli psixik bog‘lanish va ko‘nikish chaqiradi; dozani oshirish yoki nojo‘ya holatlar doim kuzatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Odam organizmiga kuchli toksik ta’sir ko‘rsatadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Surunkali zaharlanishda: xronik charchash, uyqusizlik, kayfiyat tushishi, vazn kamayishi, oshqozon-ichak buzilishi, taxikardiya, gipertoniya, aritmiya.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ko‘nikish nimani anglatadi? Doskada: belgilar guruhi: ruhiy / jismoniy / yurak-qon tomir. Tipik xato: surunkali zaharlanishni faqat ruhiy qaramlik deb bilish. Izoh: amfetamin metabolizmi kitobda 17-rasm (p.83) sifatida chizma; matni yo‘q."
-    },
-    {
-      "title": "Farmakologik ta’sirlari (malaka №002)",
-      "bullets": [
-        {
-          "text": "Fenilalkilaminlar markaziy nerv tizimini stimullaydi.",
-          "source": {
-            "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
-            "page": "farmakologik ta'sirlar"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gallyusinogen ta’sirga ega.",
-          "source": {
-            "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
-            "page": "farmakologik ta'sirlar"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bronxlarni kengaytiradi.",
-          "source": {
-            "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
-            "page": "farmakologik ta'sirlar"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ishtahani so‘ndiradi.",
-          "source": {
-            "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
-            "page": "farmakologik ta'sirlar"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi ta’sirlar tibbiy, qaysilari giyohvandlik ahamiyatiga ega? Doskada: to‘rt ta’sir ro‘yxati. Tipik xato: barcha hosilalarni bir xil ta’sirli deb hisoblash. Izoh: malaka №002 faylida bu ro‘yxat sarlavha sifatida; dozalar jadvali matnga o‘tmagan."
-    },
-    {
-      "title": "Metamfetamin",
-      "bullets": [
-        {
-          "text": "Metamfetamin — d-N-metilamfetamin: oq, achchiq mazali, hidsiz kukun.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Amfetamin molekulasiga biriktirilgan metil guruhi ta’sirini kuchaytiradi; eruvchanligi yuqori, miyaga ta’siri tezroq va uzoqroq davom etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Giyohvandlik vositasi qon tomiri, mushak ichi hamda peroral va chekish yo‘li bilan qabul qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metil guruhi ta’sirga qanday ta’sir qiladi? Doskada: amfetamin -> metamfetamin: +CH3. Tipik xato: metamfetaminni amfetaminning tuzi deb hisoblash: u N-metil hosila."
-    },
-    {
-      "title": "Metamfetamin: «Muz» va sintezi",
-      "bullets": [
-        {
-          "text": "Metamfetamin gidroxlorid kukuni turganda yirik kristallar hosil qiladi; «Muz» yoki «Oyna» nomi bilan tarqalgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Birinchi marta 1919 yilda sintez qilingan: efedrin, qizil fosfor va vodorod yodid kislotadan; d-izomer olinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "83"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Prekursorlar ro‘yxatida efedrin, psevdoefedrin va qizil fosfor pervitin (metamfetamin) uchun ko‘rsatilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega efedrin va qizil fosfor nazoratda? Doskada: efedrin + qizil fosfor + HI -> d-metamfetamin. Tipik xato: pervitin va metamfetaminni turli modda deb o‘ylash. Izoh: kitob p.147 jadvalida «pervitin» deb yozilgan; bu metamfetaminning savdo nomi, kitob alohida aytmaydi."
-    },
-    {
-      "title": "MDA (metilendioksiamfetamin)",
-      "bullets": [
-        {
-          "text": "MDA 1910 yilda sintez qilingan; 80 mg dan kam dozada stimullovchi ta’sir ko‘rsatadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "84"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yuqori dozada (150 mg) gallyusinatsiyalar chaqiradi; 500 mg dan yuqorisi o‘limga olib keluvchi hisoblanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "84"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Giyohvandlik vositasi sifatida tabletkalar ishlatiladi; bir dona tabletka 200-230 mg MDA saqlaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "84"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: MDA dozasi ta’sirga qanday bog‘liq? Doskada: doza shkalasi: <80 - 150 - >500 mg. Tipik xato: tabletkadagi 200-230 mg ni bir martalik doza deb hisoblash."
-    },
-    {
-      "title": "MDMA va MDEA",
-      "bullets": [
-        {
-          "text": "MDMA birinchi marta 1914 yilda sintez qilingan; qabul qilinganda sezishni kuchaytiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "84"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bir martalik doza 100 mg; ta’siri 30-60 daqiqadan keyin boshlanib, 4-6 soat davom etadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "84"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘tgan asrning 70-yillarida 50-100 mg tabletka, kapsula va kukun holida ishlab chiqarilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "84"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "N-etil-MDA (MDEA) 1980 yilda sintez qilingan; u ham kuchli gallyusinatsiya chaqiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "84"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: MDMA va MDA farqi nima? Doskada: MDA 1910 - MDMA 1914 - MDEA 1980. Tipik xato: yillarni aralashtirish. Izoh: MDMA metabolizmi kitobda 19-rasm (p.85) sifatida chizma."
-    },
-    {
-      "title": "DOM/STP",
-      "bullets": [
-        {
-          "text": "DOM/STP — 2,5-dimetoksi-4-metilamfetamin; 1967 yilda AQShda paydo bo‘lgan, 1963 yili Aleksandr Shulgin sintezlagan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "85"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qora bozorda STP belgisi bilan tarqatilgan: Serenity, Tranquility, Peace.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "85"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kristall modda; suyuqlanish harorati 60-61 °C.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "85"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: STP qisqartmasining ma’nosi nima? Doskada: S-T-P: Serenity, Tranquility, Peace. Tipik xato: 60-61 °C ni qaynash harorati deb yodlash (u suyuqlanish harorati). Kitobning boshqa betida «qaynash harorati 60-61 °C» yozilgan; kristall modda uchun suyuqlanish harorati olindi."
-    },
-    {
-      "title": "DOM/STP ta’siri va analoglari",
-      "bullets": [
-        {
-          "text": "DOM/STP gallyusinogen; meskalinga nisbatan 80-100 marta kuchliroq, LSD ga nisbatan 50-60 marta kuchsizroq.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "85"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Giyohvandlik vositalarining I-ro‘yxatida turadi; dozasi oshganda xotira yo‘qolishi, vahshiylashish va depressiya vujudga keladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "85"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Analoglari: DOB (4-brom-2,5-dimetoksiamfetamin), DOS (Doktor), DOI (4-yod-2,5-dimetoksiamfetamin) — faolligi birmuncha yuqoriroq.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "85"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: DOM kuchini meskalin va LSD bilan solishtiring. Doskada: meskalin < DOM < LSD. Tipik xato: analoglarni kam faol deb hisoblash: kitobda faolligi yuqoriroq deyilgan."
-    },
-    {
-      "title": "«Ekstazi» tabletkalari",
-      "bullets": [
-        {
-          "text": "Amfetamin bilan birga tarkibida geroin, fentermin va flunitrazepam saqlagan tabletkalar ham chiqariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tabletkalarda ko‘pincha kofein, aspirin, parasetamol, alfa-metilbenzilamin, efedrin, xinin, izosafrol, lidokain, testosteron, xloramfenikol uchraydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ayrim shakllarda giyohvandlik vositasi eritmasi shimdirilgan qog‘ozlar ham tarqatilmoqda.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "85"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tabletka tarkibi tahlilni nega murakkablashtiradi? Doskada: tarkib ro‘yxati: asosiy modda + qo‘shimchalar. Tipik xato: tabletkadagi barcha moddani giyohvandlik vositasi deb hisoblash."
-    },
-    {
-      "title": "Ashyoviy dalilni dastlabki tekshirish",
-      "bullets": [
-        {
-          "text": "5-10 mg tabletka maydalanib, 2-3 tomchi Marki reaktivi qo‘shilganda rang hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "DOB, DOX yoki DOM saqlagan qog‘oz 1x1 sm kesiladi; 1 ml xloroform va 1 tomchi 0,1 M KOH qo‘shiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suv hammomida qaynatilib, organik qatlam bug‘latiladi; qoldiqqa 2-3 tomchi Marki reaktivi qo‘shiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Qog‘oz namunani tekshirish",
-        "nodes": [
-          "Qog‘oz 1x1 sm, maydalash",
-          "1 ml xloroform + 0,1 M KOH",
-          "Suv hammomida qaynatish",
-          "Organik qatlam, bug‘latish",
-          "Qoldiq + Marki reaktivi"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qog‘oz namuna ishqor bilan ishlanadi? Doskada: 5 bosqichli sxema. Tipik xato: qog‘oz namunani bevosita Marki bilan tekshirish."
-    },
-    {
-      "title": "Marki reaktivi: ranglar (1)",
-      "bullets": [
-        {
-          "text": "MDA, MDMA, MDEA, MBDB va BDB Marki reaktivi bilan ko‘kimtir-qora (yashil-qora) rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "DOM/STP sariq, PMA och kulrang rang hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "11-jadval: Marki",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rang"
-        ],
-        "rows": [
-          [
-            "MDA, MDMA, MDEA",
-            "ko‘kimtir-qora, yashil-qora"
-          ],
-          [
-            "MBDB, BDB",
-            "ko‘kimtir-qora, yashil-qora"
-          ],
-          [
-            "DOM/STP",
-            "sariq"
-          ],
-          [
-            "PMA",
-            "och kulrang"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metilendioksi hosilalarni Marki orqali qanday taniymiz? Doskada: 5 modda bir xil qora rang. Tipik xato: Marki natijasini yagona dalil deb hisoblash: bir necha modda bir xil rang beradi."
-    },
-    {
-      "title": "Marki reaktivi: ranglar (2)",
-      "bullets": [
-        {
-          "text": "DMA sarg‘ish-yashil va jigarrang; TMA va meskalin zarg‘aldoq rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "DOB zumrad-yashil, DOX sarg‘ish-yashil rang hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "11-jadval: Marki",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rang"
-        ],
-        "rows": [
-          [
-            "DMA",
-            "sarg‘ish-yashil, jigarrang"
-          ],
-          [
-            "TMA, meskalin",
-            "zarg‘aldoq"
-          ],
-          [
-            "DOB",
-            "zumrad-yashil"
-          ],
-          [
-            "DOX",
-            "sarg‘ish-yashil"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: DOB va DOX ranglarini qanday farqlaymiz? Doskada: zumrad-yashil / sarg‘ish-yashil. Tipik xato: yashil ranglarni bir xil deb o‘ylash."
-    },
-    {
-      "title": "Marki reaktivi: ranglar (3)",
-      "bullets": [
-        {
-          "text": "DOET Marki reaktivi bilan och jigarrang, keyin yashil rang hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metamfetamin jigarrang rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "11-jadval: Marki",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rang"
-        ],
-        "rows": [
-          [
-            "DOET",
-            "och jigarrang, yashil"
-          ],
-          [
-            "Metamfetamin",
-            "jigarrang"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: jadvalda nechta modda va nechta rang guruhi bor? Doskada: 14 modda: qora, sariq, kulrang, yashil, zarg‘aldoq, jigarrang. Tipik xato: Marki jadvalini xromatografiyasiz yakuniy deb hisoblash."
-    },
-    {
-      "title": "YuQX: sharoit va qiymatlar",
-      "bullets": [
-        {
-          "text": "Sistema: xloroform-aseton-etanol-ammiakning 25% eritmasi (20:3:1:20); plastinkalar Merck va Sorbfil.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jadvalda har bir modda uchun Rf va Rs qiymatlari hamda Marki va ningidrin bilan zona ranglari berilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ningidrin bilan MDMA, MBDB, meskalin va metamfetamin binafsha; DOB zarg‘aldoq, MDEA noaniq rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Rs nimani anglatadi? Doskada: Merck va Sorbfil, Rf va Rs ustunlari. Tipik xato: Rs ni Rf bilan aralashtirish. Izoh: jadvaldagi qiymatlardan Rs = modda Rf / metamfetamin Rf (masalan, 0,44 / 0,25 = 1,76) ekani ko‘rinadi; kitobda aniqlanmagan."
-    },
-    {
-      "title": "YuQX natijalari (1): MDA guruhi",
-      "bullets": [
-        {
-          "text": "Merck plastinkasida MDA Rf=0,44, MDMA 0,12, MDEA 0,27, DOM/STP 0,30.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sorbfil plastinkasida MDA 0,66, MDMA 0,23, MDEA 0,46, DOM/STP 0,46.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf (Merck / Sorbfil)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf",
-          "Ningidrin"
-        ],
-        "rows": [
-          [
-            "MDA",
-            "0,44 / 0,66",
-            "sariq"
-          ],
-          [
-            "MDMA",
-            "0,12 / 0,23",
-            "binafsha"
-          ],
-          [
-            "MDEA",
-            "0,27 / 0,46",
-            "noaniq"
-          ],
-          [
-            "DOM/STP",
-            "0,30 / 0,46",
-            "sariq"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: MDA va MDMA Rf farqi qancha? Doskada: jadval: 4 modda. Tipik xato: Merck va Sorbfil qiymatlarini aralashtirish."
-    },
-    {
-      "title": "YuQX natijalari (2): PMA, DMA, TMA, DOB",
-      "bullets": [
-        {
-          "text": "Merck plastinkasida PMA Rf=0,43, DMA 0,38, TMA 0,30, DOB 0,34.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sorbfil plastinkasida PMA 0,64, DMA 0,54, TMA 0,43, DOB 0,41.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf (Merck / Sorbfil)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf",
-          "Ningidrin"
-        ],
-        "rows": [
-          [
-            "PMA",
-            "0,43 / 0,64",
-            "sariq"
-          ],
-          [
-            "DMA",
-            "0,38 / 0,54",
-            "sariq"
-          ],
-          [
-            "TMA",
-            "0,30 / 0,43",
-            "sariq"
-          ],
-          [
-            "DOB",
-            "0,34 / 0,41",
-            "zarg‘aldoq"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi modda ningidrin bilan zarg‘aldoq beradi? Doskada: jadval: 4 modda. Tipik xato: TMA va DOM/STP Rf yaqinligiga e’tibor bermaslik (Merck 0,30)."
-    },
-    {
-      "title": "YuQX natijalari (3): DOX, MBDB, BDB, DOET",
-      "bullets": [
-        {
-          "text": "Merck plastinkasida DOX Rf=0,44, MBDB 0,26, BDB 0,60, DOET 0,36.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sorbfil plastinkasida DOX 0,60, MBDB 0,41, BDB 0,74, DOET 0,52.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf (Merck / Sorbfil)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf",
-          "Ningidrin"
-        ],
-        "rows": [
-          [
-            "DOX",
-            "0,44 / 0,60",
-            "sariq"
-          ],
-          [
-            "MBDB",
-            "0,26 / 0,41",
-            "binafsha"
-          ],
-          [
-            "BDB",
-            "0,60 / 0,74",
-            "sariq"
-          ],
-          [
-            "DOET",
-            "0,36 / 0,52",
-            "sariq"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: BDB ning eng yuqori Rf ini ayting. Doskada: jadval: 4 modda. Tipik xato: MBDB va BDB ni aralashtirish: ningidrin ranglari farq qiladi."
-    },
-    {
-      "title": "YuQX natijalari (4): meskalin va metamfetamin",
-      "bullets": [
-        {
-          "text": "Meskalin: Merck Rf=0,36, Sorbfil 0,50; ningidrin bilan binafsha.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metamfetamin: Merck Rf=0,25, Sorbfil 0,38; ningidrin bilan binafsha.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Rf (Merck / Sorbfil)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Rf",
-          "Ningidrin"
-        ],
-        "rows": [
-          [
-            "Meskalin",
-            "0,36 / 0,50",
-            "binafsha"
-          ],
-          [
-            "Metamfetamin",
-            "0,25 / 0,38",
-            "binafsha"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ningidrin binafsha beruvchi moddalarni sanang. Doskada: binafsha: MDMA, MBDB, meskalin, metamfetamin. Tipik xato: ningidrin rangini yagona dalil deb hisoblash."
-    },
-    {
-      "title": "UB-nur yutish spektrlari (0,1 M HCl)",
-      "bullets": [
-        {
-          "text": "Amfetamin, metamfetamin, metilefedrin, norpsevdoefedrin va efedrin 251, 257, 263 nm da maksimum beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Norefedrin 251, 257, 262 nm; efedron faqat 251 nm da maksimum beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "UB maksimum (lambda max)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "nm"
-        ],
-        "rows": [
-          [
-            "Amfetamin, metamfetamin",
-            "251, 257, 263"
-          ],
-          [
-            "Efedrin",
-            "251, 257, 263"
-          ],
-          [
-            "Norefedrin",
-            "251, 257, 262"
-          ],
-          [
-            "Efedron",
-            "251"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega amfetamin va efedrin UB bilan farqlanmaydi? Doskada: bir xil chromofor: benzol xalqasi, 251-257-263. Tipik xato: UB natijasini yagona aniqlovchi deb hisoblash. Izoh: jadvaldagi «0,1M NSl» yozuvi 0,1 M HCl deb o‘qildi."
-    },
-    {
-      "title": "UB-spektrlar: metilendioksi va boshqalar",
-      "bullets": [
-        {
-          "text": "MDA va MDMA 235 va 286 nm; N-etil-MDA va MBDB 234 va 286 nm da maksimum beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "PMA 274 nm, DOB 295 nm, meskalin 268 nm, STP (DOM) 289 nm.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "88"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "UB maksimum (lambda max)",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "nm"
-        ],
-        "rows": [
-          [
-            "MDA, MDMA",
-            "235, 286"
-          ],
-          [
-            "N-etil-MDA, MBDB",
-            "234, 286"
-          ],
-          [
-            "PMA",
-            "274"
-          ],
-          [
-            "DOB; meskalin; STP",
-            "295; 268; 289"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metilendioksi hosilalarni UB bilan qanday ajratamiz? Doskada: 235-286 nm juftligi. Tipik xato: yaqin to‘lqin uzunliklarini bir xil deb hisoblash."
-    },
-    {
-      "title": "Ajratib olish va tahlil usullari (malaka №002)",
-      "bullets": [
-        {
-          "text": "Organik erituvchi bilan kuchli ishqoriy sharoitda ekstraksiya: efir, toluol yoki xloroform.",
-          "source": {
-            "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
-            "page": "umumiy tekshiruv"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qattiq fazali ekstraksiya (C-18, XAD-2) va reekstraksiya orqali tozalash.",
-          "source": {
-            "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
-            "page": "umumiy tekshiruv"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tahlil: immunokimyo, yupqa qatlam xromatografiya va GX-MS (gaz xromato-mass-spektrometriya).",
-          "source": {
-            "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
-            "page": "umumiy tekshiruv"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: GX-MS da hosilalash nega kerak bo‘lishi mumkin? Doskada: ajratish - tozalash - aniqlash. Tipik xato: malaka slayd sarlavhalaridan batafsil texnikani to‘qib chiqarish. Izoh: malaka №002 faylida bu bo‘lim faqat sarlavhalar sifatida (jadval va rasmlar matnga o‘tmagan) berilgan; shu sababli batafsil sharoitlar kiritilmadi. gmt p.79-80 dagi ekstraksiya sharoitlari 36-darsda berilgan."
-    },
-    {
-      "title": "Prekursorlar: amfetaminlar uchun xomashyo",
-      "bullets": [
-        {
-          "text": "1-fenil-2-propanon amfetamin uchun, 3,4-metilendioksifenil-2-propanon MDA va MDMA uchun prekursor sifatida ko‘rsatilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Izosafrol — metilendioksiamfetamin, safrol — MDEA, fenilsirka kislota — MDA va uning hosilalari uchun.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Piperonal amfetamin hosilalari uchun, qizil fosfor va psevdoefedrin — pervitin uchun ro‘yxatga kiritilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "147-148"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega prekursorlar nazorati giyohvandlik vositalari nazorati bilan bog‘liq? Doskada: prekursor -> mahsulot juftliklari. Tipik xato: prekursorni giyohvandlik vositasining o‘zi deb hisoblash. Izoh: prekursorlar 39-40-darslarda batafsil."
-    },
-    {
-      "title": "O‘limli konsentratsiyalar (malaka №039)",
-      "bullets": [
-        {
-          "text": "Amfetamin o‘limida qonda o‘rtacha 8,6 mg/l (0,5-41), jigarda 30 (4,3-74), siydikda 237 (25-700).",
-          "source": {
-            "author": "Malaka materiali №039",
-            "title": "Ba’zi giyohvandlik vositalarining o‘limga olib keluvchi konsentratsiyalari (Baselt, 1995 ma’lumotlari)",
-            "page": "amfetamin jadvallari"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metamfetamin bilan o‘limli zaharlanishda qonda 2,0, jigarda 4,8, siydikda 28; amfetamin metaboliti qonda 0,3.",
-          "source": {
-            "author": "Malaka materiali №039",
-            "title": "Ba’zi giyohvandlik vositalarining o‘limga olib keluvchi konsentratsiyalari (Baselt, 1995 ma’lumotlari)",
-            "page": "amfetamin jadvallari"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "O‘limli holatlar (mg/l yoki mg/kg)",
-        "nodes": [],
-        "header": [
-          "Ob’ekt",
-          "Amfetamin",
-          "Metamfetamin"
-        ],
-        "rows": [
-          [
-            "Qon",
-            "8,6 (0,5-41)",
-            "2,0"
-          ],
-          [
-            "Jigar",
-            "30 (4,3-74)",
-            "4,8"
-          ],
-          [
-            "Siydik",
-            "237 (25-700)",
-            "28"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega siydikdagi konsentratsiya qondagidan yuqori? Doskada: uch ob’ekt jadvali. Tipik xato: bu qiymatlarni terapevtik me’yor deb hisoblash. Izoh: malaka №039: Baselt va Cravey (1995) ma’lumotlari, rus manbasi; n=11 (amfetamin, qon). Birlik «mg/l yoki mg/kg»."
-    },
-    {
-      "title": "Siydikda aniqlash va cutoff",
-      "bullets": [
-        {
-          "text": "Metamfetamin siydikda qabuldan 4-6 soat o‘tgach paydo bo‘ladi, 48-72 soat davomida aniqlanadi.",
-          "source": {
-            "author": "Malaka materiali №042",
-            "title": "Narkotiklarni siydikda aniqlash intervallari (CDRH, 1997)",
-            "page": "metamfetamin qatori"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Amfetamin: siydik skriningida cutoff 1000 ng/ml, tasdiqlashda 500 ng/ml.",
-          "source": {
-            "author": "Malaka materiali №107",
-            "title": "TGK metabolizmi va ajralishi; biosuyuqliklarda aniqlash muddatlari, skrining va tasdiqlash cutoff qiymatlari (BMT 1993, CDRH 1997, Cone 1996 manbalaridan)",
-            "page": "cutoff jadvali"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metamfetamin: skrining cutoff 1000 ng/ml.",
-          "source": {
-            "author": "Malaka materiali №107",
-            "title": "TGK metabolizmi va ajralishi; biosuyuqliklarda aniqlash muddatlari, skrining va tasdiqlash cutoff qiymatlari (BMT 1993, CDRH 1997, Cone 1996 manbalaridan)",
-            "page": "cutoff jadvali"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega skrining chegarasi tasdiqlashdan yuqori? Doskada: 1000 ng/ml va 500 ng/ml. Tipik xato: AQSh cutoff qiymatlarini O‘zbekiston me’yori deb yozish. Izoh: bu qiymatlar AQSh amaliyotidan (CDRH 1997, Cone 1996); O‘zbekiston me’yori emas."
-    },
-    {
-      "title": "Amaliy keyslar",
-      "bullets": [
-        {
-          "text": "Keys 1: sud-kimyo ekspertizasiga 25 yoshdagi «X» yonidan topilgan noma’lum kristall kukun keltirilgan; dastlabki tahlil o‘tkazing.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "88"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Keys 2: farzand doimiy charchash va uyqusizlikda, kechalari uyga kelmay tungi klublarda; peshob va qon namunalari tahlil qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "88"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Har bir keysda muammo turi, kelib chiqish sabablari va hal etish yo‘llari jadvali to‘ldiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "88"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: keys 2 da qaysi moddalarga tahlil qilinadi va nima uchun? Doskada: keys jadvali: muammo - sabab - yechim. Tipik xato: faqat bitta usulga tayanib xulosa yozish. Izoh: keyslar yechimi kitobda berilmagan; muhokama uchun savollar sifatida taklif qilinadi."
-    },
-    {
-      "title": "Xulosa va nazorat savollari",
-      "bullets": [
-        {
-          "text": "Amfetamin — moysimon suyuqlik (qaynash 200-203 °C); metamfetamin — kukun, «Muz»; MDA, MDMA — metilendioksi hosilalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "82-84"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dastlabki tahlil Marki reaktivi bilan; tasdiqlash YuQX (20:3:1:20), UB-spektr va ningidrin bilan.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "86-87"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nazorat: fenilalkilaminlar nima; narkologik ahamiyati; aniqlash uchun reaksiyalar va fizik-kimyoviy usullar; metilendioksi hosilalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-            "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-            "page": "88"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uchta asosiy xulosani ayting. Doskada: tasnif - xossa - Marki - YuQX - UB. Tipik xato: nazorat savollarini yodlab, usullarni bog‘lamaslik."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Amfetaminning qaynash harorati qancha?",
-      "options": [
-        "60-61 °C",
-        "100-110 °C",
-        "200-203 °C",
-        "300-310 °C"
-      ],
-      "correct_index": 2,
-      "explanation": "Amfetamin rangsiz uchuvchan moysimon suyuqlik bo‘lib, qaynash harorati 200-203 °C.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "82"
-      }
-    },
-    {
-      "question": "Amfetaminning qaysi izomeri markaziy asab tizimiga kuchliroq ta’sir qiladi?",
-      "options": [
-        "Levamfetamin",
-        "O‘ngga buruvchi dekstroamfetamin (3-4 marta kuchli)",
-        "Ikkalasi teng",
-        "Rasemat kuchsiz"
-      ],
-      "correct_index": 1,
-      "explanation": "O‘ngga buruvchi izomeri markaziy asab tizimiga 3-4 marta kuchliroq ta’sir ko‘rsatadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "83"
-      }
-    },
-    {
-      "question": "«Muz» yoki «Oyna» nomi bilan qaysi modda tarqalgan?",
-      "options": [
-        "Amfetamin sulfat",
-        "Metamfetamin gidroxlorid kristallari",
-        "MDMA tabletkalari",
-        "Kokain asosi"
-      ],
-      "correct_index": 1,
-      "explanation": "Metamfetamin gidroxlorid kukuni turganda yirik kristallar hosil qiladi; ular «Muz» yoki «Oyna» deb ataladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "83"
-      }
-    },
-    {
-      "question": "MDA qaysi dozadan yuqorisi o‘limga olib keluvchi hisoblanadi?",
-      "options": [
-        "80 mg",
-        "150 mg",
-        "500 mg",
-        "50 mg"
-      ],
-      "correct_index": 2,
-      "explanation": "MDA 80 mg dan kam dozada stimulyator, 150 mg da gallyusinogen; 500 mg dan yuqorisi o‘limga olib keluvchi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "84"
-      }
-    },
-    {
-      "question": "MDMA ta’siri qachon boshlanadi va qancha davom etadi?",
-      "options": [
-        "10 daqiqadan keyin, 1 soat",
-        "30-60 daqiqadan keyin, 4-6 soat",
-        "2 soatdan keyin, 12 soat",
-        "Darhol, 30 daqiqa"
-      ],
-      "correct_index": 1,
-      "explanation": "MDMA ning bir martalik dozasi 100 mg; ta’siri 30-60 daqiqadan keyin boshlanib, 4-6 soat davom etadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "84"
-      }
-    },
-    {
-      "question": "DOM/STP meskalinga nisbatan necha marta kuchliroq?",
-      "options": [
-        "4000",
-        "80-100",
-        "50-60",
-        "3-4"
-      ],
-      "correct_index": 1,
-      "explanation": "DOM/STP meskalinga nisbatan 80-100 marta kuchliroq, LSD ga nisbatan 50-60 marta kuchsizroq.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "85"
-      }
-    },
-    {
-      "question": "Marki reaktivi bilan MDMA qanday rang beradi?",
-      "options": [
-        "Sariq",
-        "Och kulrang",
-        "Ko‘kimtir-qora (yashil-qora)",
-        "Zumrad-yashil"
-      ],
-      "correct_index": 2,
-      "explanation": "11-jadval: MDA, MDMA, MDEA, MBDB va BDB ko‘kimtir-qora (yashil-qora) rang beradi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "86"
-      }
-    },
-    {
-      "question": "Fenilalkilaminlar YuQX tahlilida qaysi sistemadan foydalanilgan?",
-      "options": [
-        "Xloroform-aseton-etanol-ammiak 25% (20:3:1:20)",
-        "Metanol-ammiak (100:1,5)",
-        "Siklogeksan-toluol-dietilamin (75:15:10)",
-        "Etilasetat-metanol-ammiak (85:10:5)"
-      ],
-      "correct_index": 0,
-      "explanation": "12-jadval xloroform-aseton-etanol-ammiakning 25% eritmasi (20:3:1:20) sistemasida olingan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "87"
-      }
-    },
-    {
-      "question": "Amfetamin va metamfetamin 0,1 M HCl da qaysi to‘lqin uzunliklarida maksimum beradi?",
-      "options": [
-        "235 va 286 nm",
-        "251, 257, 263 nm",
-        "274 nm",
-        "295 nm"
-      ],
-      "correct_index": 1,
-      "explanation": "Amfetamin, metamfetamin, efedrin va boshqalar 251, 257, 263 nm da maksimum beradi; MDA va MDMA 235 va 286 nm.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "87"
-      }
-    },
-    {
-      "question": "Qaysi modda Marki reaktivi bilan zumrad-yashil rang beradi?",
-      "options": [
-        "DOB",
-        "DOM/STP",
-        "PMA",
-        "Metamfetamin"
-      ],
-      "correct_index": 0,
-      "explanation": "11-jadval: DOB zumrad-yashil, DOM/STP sariq, PMA och kulrang, metamfetamin jigarrang rang beradi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "86"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Eslab qolish: amfetamin qaynash harorati 200-203 °C; o‘ngga buruvchi izomeri markaziy asab tizimiga 3-4 marta kuchliroq.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "82-83"
-      }
-    },
-    {
-      "text": "Muhim farq: MDA 80 mg dan kam dozada stimulyator, 150 mg da gallyusinogen, 500 mg dan yuqorisi o‘limga olib keluvchi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "84"
-      }
-    },
-    {
-      "text": "Amaliy maslahat: Marki reaktivi bilan MDA, MDMA, MDEA, MBDB va BDB bir xil ko‘kimtir-qora rang beradi, shuning uchun YuQX (Rf) va ningidrin rangi bilan farqlanadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "86-87"
-      }
-    },
-    {
-      "text": "Tarixiy: metamfetamin 1919, MDA 1910, MDMA 1914, MDEA 1980 yilda sintez qilingan.",
-      "source": {
-        "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
-        "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-        "page": "83-84"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Mavzu: sintetik fenilalkilaminlar — amfetamin, metamfetamin, metoksi va metilendioksi hosilalari, ularning narkologik ahamiyati va tahlili.",
+     "source": {
       "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
       "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
-      "year": null,
-      "pages": "b. 82-88, 147-148"
+      "page": "82"
+     },
+     "uncertain": false
     },
     {
+     "text": "Reja: tasnif, xossalar, ta’sir, «ekstazi» tabletkalari, Marki reaksiyasi, YuQX, UB-spektrlar, prekursorlar, o‘limli konsentratsiyalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82-87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tayanch so‘zlar: amfetamin, metamfetamin, MDA, MDMA, DOM/STP, Marki reaktivi, Rf, UB maksimum.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82-87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega sintetik fenilalkilaminlar yoshlar orasida keng tarqalgan? Doskada: ma’ruza rejasi: xossa - ta’sir - tahlil. Tipik xato: amfetamin va metamfetaminni bir xil modda deb hisoblash."
+  },
+  {
+   "title": "Sintetik fenilalkilaminlar tasnifi",
+   "bullets": [
+    {
+     "text": "Sintetik fenilalkilaminlar guruhlari: amfetamin, metamfetamin, metoksi va metilendioksi hosilalari.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metoksi hosilalarda benzol xalqasi vodorodi almashgan; metilendioksi hosilalar alohida guruh.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Guruhlar",
+    "nodes": [],
+    "header": [
+     "Guruh",
+     "Tavsif"
+    ],
+    "rows": [
+     [
+      "A) Amfetamin",
+      "asosiy vakil"
+     ],
+     [
+      "B) Metamfetamin",
+      "N-metil hosilasi"
+     ],
+     [
+      "C) Metoksi hosilalar",
+      "benzol xalqasi vodorodi almashgan"
+     ],
+     [
+      "D) Metilendioksi hosilalar",
+      "MDA, MDMA va boshqalar"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: har bir guruhga misol keltiring. Doskada: to‘rt guruh jadvali. Tipik xato: guruhlarni tabiiy fenilalkilaminlar bilan aralashtirish (36-dars)."
+  },
+  {
+   "title": "Sintetik fenilalkilaminlar: sanalar",
+   "bullets": [
+    {
+     "text": "MDA 1910 yilda, MDMA 1914 yilda, metamfetamin 1919 yilda birinchi marta sintez qilingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83-84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "DOM/STP 1963 yili ximik Aleksandr Shulgin tomonidan sintezlangan va 1967 yilda AQShda paydo bo‘lgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MDEA (N-etil-MDA) 1980 yilda sintez qilingan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Sintez yillari",
+    "nodes": [
+     "1910: MDA",
+     "1914: MDMA",
+     "1919: metamfetamin",
+     "1963: DOM/STP (Shulgin)",
+     "1980: MDEA (N-etil-MDA)"
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: eng qadimgi va eng yangi modda qaysi? Doskada: vaqt chizig‘i. Tipik xato: DOM/STP ning sintez yili (1963) va AQShda paydo bo‘lgan yilini (1967) aralashtirish."
+  },
+  {
+   "title": "Amfetaminning fizik xossalari",
+   "bullets": [
+    {
+     "text": "Amfetamin rangsiz, uchuvchan, moysimon suyuqlik; «baliq» hidini eslatuvchi xarakterli hidga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suvda yomon, organik erituvchilarda yaxshi eriydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qaynash harorati 200-203 °C.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Amfetamin",
+    "items": [
+     {
+      "label": "Holati",
+      "value": "moysimon suyuqlik"
+     },
+     {
+      "label": "Hidi",
+      "value": "«baliq» hidi"
+     },
+     {
+      "label": "Qaynash harorati",
+      "value": "200-203",
+      "unit": "°C"
+     },
+     {
+      "label": "Eruvchanlik",
+      "value": "suvda yomon"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uchuvchanlik tahlil sharoitiga qanday ta’sir qiladi? Doskada: xossa ro‘yxati. Tipik xato: amfetaminni kristall kukun deb o‘ylash: tuzlari kukun, asosi moysimon suyuqlik."
+  },
+  {
+   "title": "Amfetamin izomerlari va ta’siri",
+   "bullets": [
+    {
+     "text": "Amfetamin qutblangan nurni o‘ngga buruvchi (dekstroamfetamin) va chapga buruvchi (levamfetamin) izomerlarga ega.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82-83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘ngga buruvchi izomer markaziy asab tizimiga 3-4 marta kuchliroq ta’sir ko‘rsatadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Amfetamin markaziy nerv tizimini stimullovchi neyromediatorlar — dofamin va noradrenalin ishlab chiqarilishini kuchaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Amfetamin izomerlari",
+    "columns": [
+     {
+      "title": "Dekstroamfetamin",
+      "items": [
+       "qutblangan nurni o‘ngga buruvchi",
+       "MNS ga 3-4 marta kuchliroq"
+      ]
+     },
+     {
+      "title": "Levamfetamin",
+      "items": [
+       "qutblangan nurni chapga buruvchi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi izomer kuchliroq? Doskada: d- va l-izomerlar: 3-4 marta farq. Tipik xato: izomerlarni bir xil faol deb hisoblash."
+  },
+  {
+   "title": "Amfetaminning surunkali ta’siri",
+   "bullets": [
+    {
+     "text": "Amfetamin kuchli psixik bog‘lanish va ko‘nikish chaqiradi; dozani oshirish yoki nojo‘ya holatlar doim kuzatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Odam organizmiga kuchli toksik ta’sir ko‘rsatadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Surunkali zaharlanishda: xronik charchash, uyqusizlik, kayfiyat tushishi, vazn kamayishi, oshqozon-ichak buzilishi, taxikardiya, gipertoniya, aritmiya.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Surunkali zaharlanish belgilari",
+    "root": "Surunkali zaharlanish",
+    "children": [
+     {
+      "label": "Ruhiy holat",
+      "items": [
+       "psixik bog‘lanish",
+       "uyqusizlik, kayfiyat tushishi"
+      ]
+     },
+     {
+      "label": "Umumiy",
+      "items": [
+       "xronik charchash",
+       "tana vazni kamayishi"
+      ]
+     },
+     {
+      "label": "Ichki a’zolar",
+      "items": [
+       "oshqozon-ichak buzilishi",
+       "taxikardiya, gipertoniya, aritmiya"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ko‘nikish nimani anglatadi? Doskada: belgilar guruhi: ruhiy / jismoniy / yurak-qon tomir. Tipik xato: surunkali zaharlanishni faqat ruhiy qaramlik deb bilish. Izoh: amfetamin metabolizmi kitobda 17-rasm (p.83) sifatida chizma; matni yo‘q."
+  },
+  {
+   "title": "Farmakologik ta’sirlari (malaka №002)",
+   "bullets": [
+    {
+     "text": "Fenilalkilaminlar markaziy nerv tizimini stimullaydi.",
+     "source": {
       "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
       "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "farmakologik ta’sirlar"
+     },
+     "uncertain": false
     },
     {
+     "text": "Gallyusinogen ta’sirga ega.",
+     "source": {
+      "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
+      "page": "farmakologik ta’sirlar"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bronxlarni kengaytiradi.",
+     "source": {
+      "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
+      "page": "farmakologik ta’sirlar"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ishtahani so‘ndiradi.",
+     "source": {
+      "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
+      "page": "farmakologik ta’sirlar"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi ta’sirlar tibbiy, qaysilari giyohvandlik ahamiyatiga ega? Doskada: to‘rt ta’sir ro‘yxati. Tipik xato: barcha hosilalarni bir xil ta’sirli deb hisoblash. Izoh: malaka №002 faylida bu ro‘yxat sarlavha sifatida; dozalar jadvali matnga o‘tmagan."
+  },
+  {
+   "title": "Amfetamin va metamfetamin: solishtirish",
+   "bullets": [
+    {
+     "text": "Amfetamin — moysimon suyuqlik (qaynash 200-203 °C); metamfetamin — oq, achchiq mazali kukun.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82-83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metamfetaminning metil guruhi eruvchanlikni oshiradi; ta’siri miyaga tezroq va uzoqroq davom etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ikkalasi ham markaziy asab tizimiga stimullovchi ta’sir ko‘rsatadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Amfetamin va metamfetamin",
+    "columns": [
+     {
+      "title": "Amfetamin",
+      "items": [
+       "moysimon suyuqlik",
+       "qaynash 200-203 °C",
+       "suvda yomon eriydi"
+      ]
+     },
+     {
+      "title": "Metamfetamin",
+      "items": [
+       "oq, achchiq mazali kukun",
+       "eruvchanligi yuqori",
+       "ta’siri tezroq va uzoqroq"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metil guruhi xossalarga qanday ta’sir qiladi? Doskada: ikki ustun. Tipik xato: metamfetaminni suyuqlik deb yozish."
+  },
+  {
+   "title": "Metamfetamin",
+   "bullets": [
+    {
+     "text": "Metamfetamin — d-N-metilamfetamin: oq, achchiq mazali, hidsiz kukun.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Amfetamin molekulasiga biriktirilgan metil guruhi ta’sirini kuchaytiradi; eruvchanligi yuqori, miyaga ta’siri tezroq va uzoqroq davom etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Giyohvandlik vositasi qon tomiri, mushak ichi hamda peroral va chekish yo‘li bilan qabul qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metil guruhi ta’sirga qanday ta’sir qiladi? Doskada: amfetamin -> metamfetamin: +CH3. Tipik xato: metamfetaminni amfetaminning tuzi deb hisoblash: u N-metil hosila."
+  },
+  {
+   "title": "Metamfetamin: «Muz» va sintezi",
+   "bullets": [
+    {
+     "text": "Metamfetamin gidroxlorid kukuni turganda yirik kristallar hosil qiladi; «Muz» yoki «Oyna» nomi bilan tarqalgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Birinchi marta 1919 yilda sintez qilingan: efedrin, qizil fosfor va vodorod yodid kislotadan; d-izomer olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Prekursorlar ro‘yxatida efedrin, psevdoefedrin va qizil fosfor pervitin (metamfetamin) uchun ko‘rsatilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Metamfetamin sintezi",
+    "reagents": [
+     "Efedrin",
+     "Qizil fosfor",
+     "Vodorod yodid kislota"
+    ],
+    "products": [
+     "Metamfetamin (d-izomer)"
+    ],
+    "observation": "birinchi sintez: 1919 yil"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega efedrin va qizil fosfor nazoratda? Doskada: efedrin + qizil fosfor + HI -> d-metamfetamin. Tipik xato: pervitin va metamfetaminni turli modda deb o‘ylash. Izoh: kitob p.147 jadvalida «pervitin» deb yozilgan; bu metamfetaminning savdo nomi, kitob alohida aytmaydi."
+  },
+  {
+   "title": "Metilendioksi hosilalar: taqqoslash",
+   "bullets": [
+    {
+     "text": "MDA: 80 mg dan kam dozada stimullovchi, 150 mg da gallyusinatsiya, 500 mg dan yuqori — o‘limga olib keluvchi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MDMA: bir martalik doza 100 mg; ta’sir 30-60 daqiqadan keyin boshlanib, 4-6 soat davom etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MDEA (N-etil-MDA) ham kuchli gallyusinatsiya chaqiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "MDA, MDMA, MDEA",
+    "header": [
+     "Modda",
+     "Yili",
+     "Xususiyati"
+    ],
+    "rows": [
+     [
+      "MDA",
+      "1910",
+      "150 mg: gallyusinatsiya"
+     ],
+     [
+      "MDMA",
+      "1914",
+      "100 mg; ta’sir 4-6 soat"
+     ],
+     [
+      "MDEA",
+      "1980",
+      "kuchli gallyusinatsiya"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: dozalar va ta’sir muddatini solishtiring. Doskada: jadval. Tipik xato: MDA va MDMA dozalarini aralashtirish."
+  },
+  {
+   "title": "MDA (metilendioksiamfetamin)",
+   "bullets": [
+    {
+     "text": "MDA 1910 yilda sintez qilingan; 80 mg dan kam dozada stimullovchi ta’sir ko‘rsatadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yuqori dozada (150 mg) gallyusinatsiyalar chaqiradi; 500 mg dan yuqorisi o‘limga olib keluvchi hisoblanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Giyohvandlik vositasi sifatida tabletkalar ishlatiladi; bir dona tabletka 200-230 mg MDA saqlaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "MDA",
+    "items": [
+     {
+      "label": "Sintez yili",
+      "value": "1910"
+     },
+     {
+      "label": "Stimullovchi doza",
+      "value": "<80",
+      "unit": "mg"
+     },
+     {
+      "label": "Gallyusinatsiya",
+      "value": "150",
+      "unit": "mg"
+     },
+     {
+      "label": "O‘limga olib keluvchi",
+      "value": ">500",
+      "unit": "mg"
+     },
+     {
+      "label": "1 tabletkada",
+      "value": "200-230",
+      "unit": "mg"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: MDA dozasi ta’sirga qanday bog‘liq? Doskada: doza shkalasi: <80 - 150 - >500 mg. Tipik xato: tabletkadagi 200-230 mg ni bir martalik doza deb hisoblash."
+  },
+  {
+   "title": "MDMA va MDEA",
+   "bullets": [
+    {
+     "text": "MDMA birinchi marta 1914 yilda sintez qilingan; qabul qilinganda sezishni kuchaytiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bir martalik doza 100 mg; ta’siri 30-60 daqiqadan keyin boshlanib, 4-6 soat davom etadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘tgan asrning 70-yillarida 50-100 mg tabletka, kapsula va kukun holida ishlab chiqarilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "N-etil-MDA (MDEA) 1980 yilda sintez qilingan; u ham kuchli gallyusinatsiya chaqiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "84"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "MDMA va MDEA",
+    "items": [
+     {
+      "label": "MDMA sintezi",
+      "value": "1914"
+     },
+     {
+      "label": "Bir martalik doza",
+      "value": "100",
+      "unit": "mg"
+     },
+     {
+      "label": "Ta’sir boshlanishi",
+      "value": "30-60",
+      "unit": "daqiqa"
+     },
+     {
+      "label": "Ta’sir davomi",
+      "value": "4-6",
+      "unit": "soat"
+     },
+     {
+      "label": "MDEA sintezi",
+      "value": "1980"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: MDMA va MDA farqi nima? Doskada: MDA 1910 - MDMA 1914 - MDEA 1980. Tipik xato: yillarni aralashtirish. Izoh: MDMA metabolizmi kitobda 19-rasm (p.85) sifatida chizma."
+  },
+  {
+   "title": "DOM/STP",
+   "bullets": [
+    {
+     "text": "DOM/STP — 2,5-dimetoksi-4-metilamfetamin; 1967 yilda AQShda paydo bo‘lgan, 1963 yili Aleksandr Shulgin sintezlagan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qora bozorda STP belgisi bilan tarqatilgan: Serenity, Tranquility, Peace.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kristall modda; suyuqlanish harorati 60-61 °C.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "DOM/STP",
+    "items": [
+     {
+      "label": "Sintez (Shulgin)",
+      "value": "1963"
+     },
+     {
+      "label": "AQShda paydo bo‘ldi",
+      "value": "1967"
+     },
+     {
+      "label": "Suyuqlanish harorati",
+      "value": "60-61",
+      "unit": "°C"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: STP qisqartmasining ma’nosi nima? Doskada: S-T-P: Serenity, Tranquility, Peace. Tipik xato: 60-61 °C ni qaynash harorati deb yodlash (u suyuqlanish harorati). Kitobning boshqa betida «qaynash harorati 60-61 °C» yozilgan; kristall modda uchun suyuqlanish harorati olindi."
+  },
+  {
+   "title": "Ta’sir kuchi: taqqoslash",
+   "bullets": [
+    {
+     "text": "O‘ngga buruvchi amfetamin izomeri markaziy asab tizimiga 3-4 marta kuchliroq ta’sir qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "DOM/STP meskalinga nisbatan 80-100 marta kuchliroq, LSD ga nisbatan 50-60 marta kuchsizroq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Analoglari (DOB, DOS, DOI) faolligi birmuncha yuqoriroq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Nisbiy ta’sir kuchi",
+    "items": [
+     {
+      "label": "d- va l-amfetamin",
+      "value": "3-4",
+      "unit": "marta"
+     },
+     {
+      "label": "DOM/STP: meskalindan",
+      "value": "80-100",
+      "unit": "marta kuchli"
+     },
+     {
+      "label": "DOM/STP, LSD dan kuchsiz",
+      "value": "50-60",
+      "unit": "marta"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nisbiy kuch nimani anglatadi (kitobda doza taqqoslanmagan). Doskada: uch nisbat. Tipik xato: «kuchli» va «kuchsiz» yo‘nalishini aralashtirish."
+  },
+  {
+   "title": "DOM/STP analoglari",
+   "bullets": [
+    {
+     "text": "DOM/STP — 2,5-dimetoksi-4-metilamfetamin; STP: Serenity, Tranquility, Peace.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "DOB — 4-brom-2,5-dimetoksiamfetamin; DOI — 4-yod-2,5-dimetoksiamfetamin; DOS — «Doktor».",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bu vositalar tabletka, kukun, kapsula, eritma holida uchraydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "DOM/STP va analoglari",
+    "root": "DOM/STP",
+    "children": [
+     {
+      "label": "DOB (Brom-DMA)",
+      "items": [
+       "4-brom-2,5-dimetoksiamfetamin"
+      ]
+     },
+     {
+      "label": "DOI",
+      "items": [
+       "4-yod-2,5-dimetoksiamfetamin"
+      ]
+     },
+     {
+      "label": "DOS («Doktor»)"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: analoglarda qaysi atom/guruh almashgan? Doskada: tuzilma sxemasi. Tipik xato: DOB va DOI dagi galogenni aralashtirish (brom va yod)."
+  },
+  {
+   "title": "DOM/STP ta’siri va analoglari",
+   "bullets": [
+    {
+     "text": "DOM/STP gallyusinogen; meskalinga nisbatan 80-100 marta kuchliroq, LSD ga nisbatan 50-60 marta kuchsizroq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Giyohvandlik vositalarining I-ro‘yxatida turadi; dozasi oshganda xotira yo‘qolishi, vahshiylashish va depressiya vujudga keladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Analoglari: DOB (4-brom-2,5-dimetoksiamfetamin), DOS (Doktor), DOI (4-yod-2,5-dimetoksiamfetamin) — faolligi birmuncha yuqoriroq.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "DOM/STP ta’sir kuchi",
+    "items": [
+     {
+      "label": "Meskalindan kuchli",
+      "value": "80-100",
+      "unit": "marta"
+     },
+     {
+      "label": "LSD dan kuchsiz",
+      "value": "50-60",
+      "unit": "marta"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: DOM kuchini meskalin va LSD bilan solishtiring. Doskada: meskalin < DOM < LSD. Tipik xato: analoglarni kam faol deb hisoblash: kitobda faolligi yuqoriroq deyilgan."
+  },
+  {
+   "title": "«Ekstazi» tabletkalari",
+   "bullets": [
+    {
+     "text": "Amfetamin bilan birga tarkibida geroin, fentermin va flunitrazepam saqlagan tabletkalar ham chiqariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tabletkalarda ko‘pincha kofein, aspirin, parasetamol, alfa-metilbenzilamin, efedrin, xinin, izosafrol, lidokain, testosteron, xloramfenikol uchraydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ayrim shakllarda giyohvandlik vositasi eritmasi shimdirilgan qog‘ozlar ham tarqatilmoqda.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "85"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "«Ekstazi» tabletkalari tarkibi",
+    "root": "«Ekstazi» tabletkalari",
+    "children": [
+     {
+      "label": "Giyohvand komponentlar",
+      "items": [
+       "amfetamin, geroin",
+       "fentermin, flunitrazepam"
+      ]
+     },
+     {
+      "label": "Qo‘shimchalar (1)",
+      "items": [
+       "kofein, aspirin, parasetamol",
+       "alfa-metilbenzilamin, efedrin"
+      ]
+     },
+     {
+      "label": "Qo‘shimchalar (2)",
+      "items": [
+       "xinin, izosafrol",
+       "lidokain, testosteron, xloramfenikol"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tabletka tarkibi tahlilni nega murakkablashtiradi? Doskada: tarkib ro‘yxati: asosiy modda + qo‘shimchalar. Tipik xato: tabletkadagi barcha moddani giyohvandlik vositasi deb hisoblash."
+  },
+  {
+   "title": "Ashyoviy dalilni dastlabki tekshirish",
+   "bullets": [
+    {
+     "text": "5-10 mg tabletka maydalanib, 2-3 tomchi Marki reaktivi qo‘shilganda rang hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "DOB, DOX yoki DOM saqlagan qog‘oz 1x1 sm kesiladi; 1 ml xloroform va 1 tomchi 0,1 M KOH qo‘shiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suv hammomida qaynatilib, organik qatlam bug‘latiladi; qoldiqqa 2-3 tomchi Marki reaktivi qo‘shiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Qog‘oz namunani tekshirish",
+    "nodes": [
+     "Qog‘oz 1x1 sm, maydalash",
+     "1 ml xloroform + 0,1 M KOH",
+     "Suv hammomida qaynatish",
+     "Organik qatlam, bug‘latish",
+     "Qoldiq + Marki reaktivi"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega qog‘oz namuna ishqor bilan ishlanadi? Doskada: 5 bosqichli sxema. Tipik xato: qog‘oz namunani bevosita Marki bilan tekshirish."
+  },
+  {
+   "title": "Marki reaktivi: ranglar (1)",
+   "bullets": [
+    {
+     "text": "MDA, MDMA, MDEA, MBDB va BDB Marki reaktivi bilan ko‘kimtir-qora (yashil-qora) rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "DOM/STP sariq, PMA och kulrang rang hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "11-jadval: Marki",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rang"
+    ],
+    "rows": [
+     [
+      "MDA, MDMA, MDEA",
+      "ko‘kimtir-qora, yashil-qora"
+     ],
+     [
+      "MBDB, BDB",
+      "ko‘kimtir-qora, yashil-qora"
+     ],
+     [
+      "DOM/STP",
+      "sariq"
+     ],
+     [
+      "PMA",
+      "och kulrang"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metilendioksi hosilalarni Marki orqali qanday taniymiz? Doskada: 5 modda bir xil qora rang. Tipik xato: Marki natijasini yagona dalil deb hisoblash: bir necha modda bir xil rang beradi."
+  },
+  {
+   "title": "Marki reaktivi: ranglar (2)",
+   "bullets": [
+    {
+     "text": "DMA sarg‘ish-yashil va jigarrang; TMA va meskalin zarg‘aldoq rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "DOB zumrad-yashil, DOX sarg‘ish-yashil rang hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "11-jadval: Marki",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rang"
+    ],
+    "rows": [
+     [
+      "DMA",
+      "sarg‘ish-yashil, jigarrang"
+     ],
+     [
+      "TMA, meskalin",
+      "zarg‘aldoq"
+     ],
+     [
+      "DOB",
+      "zumrad-yashil"
+     ],
+     [
+      "DOX",
+      "sarg‘ish-yashil"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: DOB va DOX ranglarini qanday farqlaymiz? Doskada: zumrad-yashil / sarg‘ish-yashil. Tipik xato: yashil ranglarni bir xil deb o‘ylash."
+  },
+  {
+   "title": "Marki reaktivi: ranglar (3)",
+   "bullets": [
+    {
+     "text": "DOET Marki reaktivi bilan och jigarrang, keyin yashil rang hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metamfetamin jigarrang rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "11-jadval: Marki",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rang"
+    ],
+    "rows": [
+     [
+      "DOET",
+      "och jigarrang, yashil"
+     ],
+     [
+      "Metamfetamin",
+      "jigarrang"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: jadvalda nechta modda va nechta rang guruhi bor? Doskada: 14 modda: qora, sariq, kulrang, yashil, zarg‘aldoq, jigarrang. Tipik xato: Marki jadvalini xromatografiyasiz yakuniy deb hisoblash."
+  },
+  {
+   "title": "YuQX: sharoit va qiymatlar",
+   "bullets": [
+    {
+     "text": "Sistema: xloroform-aseton-etanol-ammiakning 25% eritmasi (20:3:1:20); plastinkalar Merck va Sorbfil.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jadvalda har bir modda uchun Rf va Rs qiymatlari hamda Marki va ningidrin bilan zona ranglari berilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ningidrin bilan MDMA, MBDB, meskalin va metamfetamin binafsha; DOB zarg‘aldoq, MDEA noaniq rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "YuQX: xloroform-aseton-etanol-ammiak",
+    "items": [
+     {
+      "label": "Sistema nisbati",
+      "value": "20:3:1:20"
+     },
+     {
+      "label": "Plastinkalar",
+      "value": "Merck, Sorbfil"
+     },
+     {
+      "label": "Ochuvchi reaktiv",
+      "value": "Marki, ningidrin"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Rs nimani anglatadi? Doskada: Merck va Sorbfil, Rf va Rs ustunlari. Tipik xato: Rs ni Rf bilan aralashtirish. Izoh: jadvaldagi qiymatlardan Rs = modda Rf / metamfetamin Rf (masalan, 0,44 / 0,25 = 1,76) ekani ko‘rinadi; kitobda aniqlanmagan."
+  },
+  {
+   "title": "YuQX natijalari (1): MDA guruhi",
+   "bullets": [
+    {
+     "text": "Merck plastinkasida MDA Rf=0,44, MDMA 0,12, MDEA 0,27, DOM/STP 0,30.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sorbfil plastinkasida MDA 0,66, MDMA 0,23, MDEA 0,46, DOM/STP 0,46.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf (Merck / Sorbfil)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf",
+     "Ningidrin"
+    ],
+    "rows": [
+     [
+      "MDA",
+      "0,44 / 0,66",
+      "sariq"
+     ],
+     [
+      "MDMA",
+      "0,12 / 0,23",
+      "binafsha"
+     ],
+     [
+      "MDEA",
+      "0,27 / 0,46",
+      "noaniq"
+     ],
+     [
+      "DOM/STP",
+      "0,30 / 0,46",
+      "sariq"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: MDA va MDMA Rf farqi qancha? Doskada: jadval: 4 modda. Tipik xato: Merck va Sorbfil qiymatlarini aralashtirish."
+  },
+  {
+   "title": "YuQX natijalari (2): PMA, DMA, TMA, DOB",
+   "bullets": [
+    {
+     "text": "Merck plastinkasida PMA Rf=0,43, DMA 0,38, TMA 0,30, DOB 0,34.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sorbfil plastinkasida PMA 0,64, DMA 0,54, TMA 0,43, DOB 0,41.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf (Merck / Sorbfil)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf",
+     "Ningidrin"
+    ],
+    "rows": [
+     [
+      "PMA",
+      "0,43 / 0,64",
+      "sariq"
+     ],
+     [
+      "DMA",
+      "0,38 / 0,54",
+      "sariq"
+     ],
+     [
+      "TMA",
+      "0,30 / 0,43",
+      "sariq"
+     ],
+     [
+      "DOB",
+      "0,34 / 0,41",
+      "zarg‘aldoq"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi modda ningidrin bilan zarg‘aldoq beradi? Doskada: jadval: 4 modda. Tipik xato: TMA va DOM/STP Rf yaqinligiga e’tibor bermaslik (Merck 0,30)."
+  },
+  {
+   "title": "YuQX natijalari (3): DOX, MBDB, BDB, DOET",
+   "bullets": [
+    {
+     "text": "Merck plastinkasida DOX Rf=0,44, MBDB 0,26, BDB 0,60, DOET 0,36.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sorbfil plastinkasida DOX 0,60, MBDB 0,41, BDB 0,74, DOET 0,52.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf (Merck / Sorbfil)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf",
+     "Ningidrin"
+    ],
+    "rows": [
+     [
+      "DOX",
+      "0,44 / 0,60",
+      "sariq"
+     ],
+     [
+      "MBDB",
+      "0,26 / 0,41",
+      "binafsha"
+     ],
+     [
+      "BDB",
+      "0,60 / 0,74",
+      "sariq"
+     ],
+     [
+      "DOET",
+      "0,36 / 0,52",
+      "sariq"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: BDB ning eng yuqori Rf ini ayting. Doskada: jadval: 4 modda. Tipik xato: MBDB va BDB ni aralashtirish: ningidrin ranglari farq qiladi."
+  },
+  {
+   "title": "YuQX: Rs qiymatlari (12-jadval)",
+   "bullets": [
+    {
+     "text": "12-jadvalda Rf bilan birga Rs qiymatlari ham berilgan; metamfetamin uchun Rs=1,00 (ikkala plastinkada).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MDA uchun Rs 1,76 (Merck) va 1,73 (Sorbfil); DOM/STP uchun 1,20 va 1,20.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Eng yuqori Rs — BDB (2,40 va 1,95), eng past — MDMA (0,48 va 0,60).",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Rs: Merck / Sorbfil",
+    "items": [
+     {
+      "label": "MDA",
+      "value": "1,76 / 1,73"
+     },
+     {
+      "label": "MDMA",
+      "value": "0,48 / 0,60"
+     },
+     {
+      "label": "DOM/STP",
+      "value": "1,20 / 1,20"
+     },
+     {
+      "label": "BDB",
+      "value": "2,40 / 1,95"
+     },
+     {
+      "label": "Metamfetamin",
+      "value": "1,00 / 1,00"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: Rs nimani ifodalaydi? (kitobda ta’rif berilmagan, shuning uchun faqat qiymatlar keltirildi). Doskada: jadval. Tipik xato: Rs ni Rf deb o‘qish."
+  },
+  {
+   "title": "YuQX natijalari (4): meskalin va metamfetamin",
+   "bullets": [
+    {
+     "text": "Meskalin: Merck Rf=0,36, Sorbfil 0,50; ningidrin bilan binafsha.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metamfetamin: Merck Rf=0,25, Sorbfil 0,38; ningidrin bilan binafsha.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Rf (Merck / Sorbfil)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Rf",
+     "Ningidrin"
+    ],
+    "rows": [
+     [
+      "Meskalin",
+      "0,36 / 0,50",
+      "binafsha"
+     ],
+     [
+      "Metamfetamin",
+      "0,25 / 0,38",
+      "binafsha"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ningidrin binafsha beruvchi moddalarni sanang. Doskada: binafsha: MDMA, MBDB, meskalin, metamfetamin. Tipik xato: ningidrin rangini yagona dalil deb hisoblash."
+  },
+  {
+   "title": "UB-nur yutish spektrlari (0,1 M HCl)",
+   "bullets": [
+    {
+     "text": "Amfetamin, metamfetamin, metilefedrin, norpsevdoefedrin va efedrin 251, 257, 263 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Norefedrin 251, 257, 262 nm; efedron faqat 251 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "UB maksimum (lambda max)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "nm"
+    ],
+    "rows": [
+     [
+      "Amfetamin, metamfetamin",
+      "251, 257, 263"
+     ],
+     [
+      "Efedrin",
+      "251, 257, 263"
+     ],
+     [
+      "Norefedrin",
+      "251, 257, 262"
+     ],
+     [
+      "Efedron",
+      "251"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega amfetamin va efedrin UB bilan farqlanmaydi? Doskada: bir xil chromofor: benzol xalqasi, 251-257-263. Tipik xato: UB natijasini yagona aniqlovchi deb hisoblash. Izoh: jadvaldagi «0,1M NSl» yozuvi 0,1 M HCl deb o‘qildi."
+  },
+  {
+   "title": "UB maksimumlari: guruhlar bo‘yicha",
+   "bullets": [
+    {
+     "text": "Amfetamin, metamfetamin, efedrin va norpsevdoefedrin 251, 257, 263 nm da maksimum beradi; efedron faqat 251 nm.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MDA va MDMA 235 va 286 nm; N-etil-MDA va MBDB 234 va 286 nm.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "PMA 274, DOB 295, meskalin 268, STP (DOM) 289 nm.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "88"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "UB maksimumlari, nm",
+    "columns": [
+     {
+      "title": "251-257-263 guruhi",
+      "items": [
+       "amfetamin, metamfetamin",
+       "efedrin",
+       "efedron: faqat 251"
+      ]
+     },
+     {
+      "title": "Metilendioksi",
+      "items": [
+       "MDA, MDMA: 235, 286",
+       "N-etil-MDA, MBDB: 234, 286"
+      ]
+     },
+     {
+      "title": "Yakka maksimum",
+      "items": [
+       "PMA 274",
+       "meskalin 268",
+       "STP (DOM) 289, DOB 295"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: UB spektr bilan qaysi guruhlarni ajratish mumkin? Doskada: uch guruh. Tipik xato: 251 nm efedronni efedrindan ajratadi deb, 257 va 263 ni unutish."
+  },
+  {
+   "title": "UB-spektrlar: metilendioksi va boshqalar",
+   "bullets": [
+    {
+     "text": "MDA va MDMA 235 va 286 nm; N-etil-MDA va MBDB 234 va 286 nm da maksimum beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "PMA 274 nm, DOB 295 nm, meskalin 268 nm, STP (DOM) 289 nm.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "88"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "UB maksimum (lambda max)",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "nm"
+    ],
+    "rows": [
+     [
+      "MDA, MDMA",
+      "235, 286"
+     ],
+     [
+      "N-etil-MDA, MBDB",
+      "234, 286"
+     ],
+     [
+      "PMA",
+      "274"
+     ],
+     [
+      "DOB; meskalin; STP",
+      "295; 268; 289"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metilendioksi hosilalarni UB bilan qanday ajratamiz? Doskada: 235-286 nm juftligi. Tipik xato: yaqin to‘lqin uzunliklarini bir xil deb hisoblash."
+  },
+  {
+   "title": "Ajratib olish va tahlil usullari (malaka №002)",
+   "bullets": [
+    {
+     "text": "Organik erituvchi bilan kuchli ishqoriy sharoitda ekstraksiya: efir, toluol yoki xloroform.",
+     "source": {
+      "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
+      "page": "umumiy tekshiruv"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qattiq fazali ekstraksiya (C-18, XAD-2) va reekstraksiya orqali tozalash.",
+     "source": {
+      "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
+      "page": "umumiy tekshiruv"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tahlil: immunokimyo, yupqa qatlam xromatografiya va GX-MS (gaz xromato-mass-spektrometriya).",
+     "source": {
+      "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
+      "page": "umumiy tekshiruv"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Ajratib olish va tahlil",
+    "root": "Ajratib olish va tahlil",
+    "children": [
+     {
+      "label": "Ekstraksiya",
+      "items": [
+       "kuchli ishqoriy sharoitda",
+       "efir, toluol yoki xloroform"
+      ]
+     },
+     {
+      "label": "Tozalash",
+      "items": [
+       "C-18, XAD-2 (qattiq faza)",
+       "reekstraksiya"
+      ]
+     },
+     {
+      "label": "Tahlil",
+      "items": [
+       "immunokimyo",
+       "YuQX",
+       "GX-MS"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: GX-MS da hosilalash nega kerak bo‘lishi mumkin? Doskada: ajratish - tozalash - aniqlash. Tipik xato: malaka slayd sarlavhalaridan batafsil texnikani to‘qib chiqarish. Izoh: malaka №002 faylida bu bo‘lim faqat sarlavhalar sifatida (jadval va rasmlar matnga o‘tmagan) berilgan; shu sababli batafsil sharoitlar kiritilmadi. gmt p.79-80 dagi ekstraksiya sharoitlari 36-darsda berilgan."
+  },
+  {
+   "title": "Prekursorlar: amfetaminlar uchun xomashyo",
+   "bullets": [
+    {
+     "text": "1-fenil-2-propanon amfetamin uchun, 3,4-metilendioksifenil-2-propanon MDA va MDMA uchun prekursor sifatida ko‘rsatilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Izosafrol — metilendioksiamfetamin, safrol — MDEA, fenilsirka kislota — MDA va uning hosilalari uchun.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Piperonal amfetamin hosilalari uchun, qizil fosfor va psevdoefedrin — pervitin uchun ro‘yxatga kiritilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "147-148"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Prekursorlar (18-jadval)",
+    "header": [
+     "Prekursor",
+     "Tayyorlanadigan vosita"
+    ],
+    "rows": [
+     [
+      "1-Fenil-2-propanon",
+      "amfetamin"
+     ],
+     [
+      "3,4-Metilendioksifenil-2-propanon",
+      "MDA, MDMA"
+     ],
+     [
+      "Izosafrol",
+      "metilendioksiamfetamin"
+     ],
+     [
+      "Safrol",
+      "MDEA"
+     ],
+     [
+      "Qizil fosfor",
+      "pervitin"
+     ],
+     [
+      "Psevdoefedrin",
+      "pervitin"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega prekursorlar nazorati giyohvandlik vositalari nazorati bilan bog‘liq? Doskada: prekursor -> mahsulot juftliklari. Tipik xato: prekursorni giyohvandlik vositasining o‘zi deb hisoblash. Izoh: prekursorlar 39-40-darslarda batafsil."
+  },
+  {
+   "title": "O‘limli konsentratsiyalar (malaka №039)",
+   "bullets": [
+    {
+     "text": "Amfetamin o‘limida qonda o‘rtacha 8,6 mg/l (0,5-41), jigarda 30 (4,3-74), siydikda 237 (25-700).",
+     "source": {
       "author": "Malaka materiali №039",
       "title": "Ba’zi giyohvandlik vositalarining o‘limga olib keluvchi konsentratsiyalari (Baselt, 1995 ma’lumotlari)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "amfetamin jadvallari"
+     },
+     "uncertain": false
     },
     {
+     "text": "Metamfetamin bilan o‘limli zaharlanishda qonda 2,0, jigarda 4,8, siydikda 28; amfetamin metaboliti qonda 0,3.",
+     "source": {
+      "author": "Malaka materiali №039",
+      "title": "Ba’zi giyohvandlik vositalarining o‘limga olib keluvchi konsentratsiyalari (Baselt, 1995 ma’lumotlari)",
+      "page": "amfetamin jadvallari"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "O‘limli holatlar (mg/l yoki mg/kg)",
+    "nodes": [],
+    "header": [
+     "Ob’ekt",
+     "Amfetamin",
+     "Metamfetamin"
+    ],
+    "rows": [
+     [
+      "Qon",
+      "8,6 (0,5-41)",
+      "2,0"
+     ],
+     [
+      "Jigar",
+      "30 (4,3-74)",
+      "4,8"
+     ],
+     [
+      "Siydik",
+      "237 (25-700)",
+      "28"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega siydikdagi konsentratsiya qondagidan yuqori? Doskada: uch ob’ekt jadvali. Tipik xato: bu qiymatlarni terapevtik me’yor deb hisoblash. Izoh: malaka №039: Baselt va Cravey (1995) ma’lumotlari, rus manbasi; n=11 (amfetamin, qon). Birlik «mg/l yoki mg/kg»."
+  },
+  {
+   "title": "Siydikda aniqlash va cutoff",
+   "bullets": [
+    {
+     "text": "Metamfetamin siydikda qabuldan 4-6 soat o‘tgach paydo bo‘ladi, 48-72 soat davomida aniqlanadi.",
+     "source": {
       "author": "Malaka materiali №042",
       "title": "Narkotiklarni siydikda aniqlash intervallari (CDRH, 1997)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "metamfetamin qatori"
+     },
+     "uncertain": false
     },
     {
+     "text": "Amfetamin: siydik skriningida cutoff 1000 ng/ml, tasdiqlashda 500 ng/ml.",
+     "source": {
       "author": "Malaka materiali №107",
       "title": "TGK metabolizmi va ajralishi; biosuyuqliklarda aniqlash muddatlari, skrining va tasdiqlash cutoff qiymatlari (BMT 1993, CDRH 1997, Cone 1996 manbalaridan)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "cutoff jadvali"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metamfetamin: skrining cutoff 1000 ng/ml.",
+     "source": {
+      "author": "Malaka materiali №107",
+      "title": "TGK metabolizmi va ajralishi; biosuyuqliklarda aniqlash muddatlari, skrining va tasdiqlash cutoff qiymatlari (BMT 1993, CDRH 1997, Cone 1996 manbalaridan)",
+      "page": "cutoff jadvali"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Metamfetamin va amfetamin siydikda",
+    "items": [
+     {
+      "label": "Paydo bo‘lishi (metamf.)",
+      "value": "4-6",
+      "unit": "soat"
+     },
+     {
+      "label": "Aniqlanadi (metamf.)",
+      "value": "48-72",
+      "unit": "soat"
+     },
+     {
+      "label": "Amfetamin skrining",
+      "value": "1000",
+      "unit": "ng/ml"
+     },
+     {
+      "label": "Amfetamin tasdiqlash",
+      "value": "500",
+      "unit": "ng/ml"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega skrining chegarasi tasdiqlashdan yuqori? Doskada: 1000 ng/ml va 500 ng/ml. Tipik xato: AQSh cutoff qiymatlarini O‘zbekiston me’yori deb yozish. Izoh: bu qiymatlar AQSh amaliyotidan (CDRH 1997, Cone 1996); O‘zbekiston me’yori emas."
+  },
+  {
+   "title": "Tahlil tartibi: dastlabki va tasdiqlovchi",
+   "bullets": [
+    {
+     "text": "Dastlabki: 5-10 mg tabletka maydalanib, 2-3 tomchi Marki reaktivi bilan rang olinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tasdiqlash: YuQX (20:3:1:20) Rf, Marki va ningidrin ranglari bo‘yicha.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "UB-spektr 0,1 M HCl da maksimumlar bilan solishtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "87"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "caption": "Fenilalkilamin tahlili",
+    "items": [
+     {
+      "title": "Namuna",
+      "text": "tabletka 5-10 mg, maydalash"
+     },
+     {
+      "title": "Marki",
+      "text": "2-3 tomchi, rang hosil bo‘ladi"
+     },
+     {
+      "title": "YuQX",
+      "text": "xloroform-aseton-etanol-NH3"
+     },
+     {
+      "title": "Ochish",
+      "text": "Marki va ningidrin ranglari"
+     },
+     {
+      "title": "UB-spektr",
+      "text": "0,1 M HCl, maksimumlar"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega bir usulga tayanib bo‘lmaydi? Doskada: qadamlar. Tipik xato: Marki natijasini yakuniy deb olish."
+  },
+  {
+   "title": "Amaliy keyslar",
+   "bullets": [
+    {
+     "text": "Keys 1: sud-kimyo ekspertizasiga 25 yoshdagi «X» yonidan topilgan noma’lum kristall kukun keltirilgan; dastlabki tahlil o‘tkazing.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "88"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keys 2: farzand doimiy charchash va uyqusizlikda, kechalari uyga kelmay tungi klublarda; peshob va qon namunalari tahlil qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "88"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Har bir keysda muammo turi, kelib chiqish sabablari va hal etish yo‘llari jadvali to‘ldiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "88"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: keys 2 da qaysi moddalarga tahlil qilinadi va nima uchun? Doskada: keys jadvali: muammo - sabab - yechim. Tipik xato: faqat bitta usulga tayanib xulosa yozish. Izoh: keyslar yechimi kitobda berilmagan; muhokama uchun savollar sifatida taklif qilinadi."
+  },
+  {
+   "title": "Xulosa va nazorat savollari",
+   "bullets": [
+    {
+     "text": "Amfetamin — moysimon suyuqlik (qaynash 200-203 °C); metamfetamin — kukun, «Muz»; MDA, MDMA — metilendioksi hosilalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "82-84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dastlabki tahlil Marki reaktivi bilan; tasdiqlash YuQX (20:3:1:20), UB-spektr va ningidrin bilan.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "86-87"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nazorat: fenilalkilaminlar nima; narkologik ahamiyati; aniqlash uchun reaksiyalar va fizik-kimyoviy usullar; metilendioksi hosilalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+      "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+      "page": "88"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: uchta asosiy xulosani ayting. Doskada: tasnif - xossa - Marki - YuQX - UB. Tipik xato: nazorat savollarini yodlab, usullarni bog‘lamaslik."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Amfetaminning qaynash harorati qancha?",
+   "options": [
+    "200-203 °C",
+    "100-110 °C",
+    "60-61 °C",
+    "300-310 °C"
+   ],
+   "correct_index": 0,
+   "explanation": "Amfetamin rangsiz uchuvchan moysimon suyuqlik bo‘lib, qaynash harorati 200-203 °C.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "82"
+   }
+  },
+  {
+   "question": "Amfetaminning qaysi izomeri markaziy asab tizimiga kuchliroq ta’sir qiladi?",
+   "options": [
+    "Levamfetamin",
+    "O‘ngga buruvchi dekstroamfetamin (3-4 marta kuchli)",
+    "Ikkalasi teng",
+    "Rasemat kuchsiz"
+   ],
+   "correct_index": 1,
+   "explanation": "O‘ngga buruvchi izomeri markaziy asab tizimiga 3-4 marta kuchliroq ta’sir ko‘rsatadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "83"
+   }
+  },
+  {
+   "question": "«Muz» yoki «Oyna» nomi bilan qaysi modda tarqalgan?",
+   "options": [
+    "Amfetamin sulfat",
+    "MDMA tabletkalari",
+    "Metamfetamin gidroxlorid kristallari",
+    "Kokain asosi"
+   ],
+   "correct_index": 2,
+   "explanation": "Metamfetamin gidroxlorid kukuni turganda yirik kristallar hosil qiladi; ular «Muz» yoki «Oyna» deb ataladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "83"
+   }
+  },
+  {
+   "question": "MDA qaysi dozadan yuqorisi o‘limga olib keluvchi hisoblanadi?",
+   "options": [
+    "80 mg",
+    "150 mg",
+    "50 mg",
+    "500 mg"
+   ],
+   "correct_index": 3,
+   "explanation": "MDA 80 mg dan kam dozada stimulyator, 150 mg da gallyusinogen; 500 mg dan yuqorisi o‘limga olib keluvchi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "84"
+   }
+  },
+  {
+   "question": "MDMA ta’siri qachon boshlanadi va qancha davom etadi?",
+   "options": [
+    "10 daqiqadan keyin, 1 soat",
+    "30-60 daqiqadan keyin, 4-6 soat",
+    "2 soatdan keyin, 12 soat",
+    "Darhol, 30 daqiqa"
+   ],
+   "correct_index": 1,
+   "explanation": "MDMA ning bir martalik dozasi 100 mg; ta’siri 30-60 daqiqadan keyin boshlanib, 4-6 soat davom etadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "84"
+   }
+  },
+  {
+   "question": "DOM/STP meskalinga nisbatan necha marta kuchliroq?",
+   "options": [
+    "4000",
+    "50-60",
+    "80-100",
+    "3-4"
+   ],
+   "correct_index": 2,
+   "explanation": "DOM/STP meskalinga nisbatan 80-100 marta kuchliroq, LSD ga nisbatan 50-60 marta kuchsizroq.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "85"
+   }
+  },
+  {
+   "question": "Marki reaktivi bilan MDMA qanday rang beradi?",
+   "options": [
+    "Sariq",
+    "Och kulrang",
+    "Zumrad-yashil",
+    "Ko‘kimtir-qora (yashil-qora)"
+   ],
+   "correct_index": 3,
+   "explanation": "11-jadval: MDA, MDMA, MDEA, MBDB va BDB ko‘kimtir-qora (yashil-qora) rang beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "86"
+   }
+  },
+  {
+   "question": "Fenilalkilaminlar YuQX tahlilida qaysi sistemadan foydalanilgan?",
+   "options": [
+    "Xloroform-aseton-etanol-ammiak 25% (20:3:1:20)",
+    "Metanol-ammiak (100:1,5)",
+    "Siklogeksan-toluol-dietilamin (75:15:10)",
+    "Etilasetat-metanol-ammiak (85:10:5)"
+   ],
+   "correct_index": 0,
+   "explanation": "12-jadval xloroform-aseton-etanol-ammiakning 25% eritmasi (20:3:1:20) sistemasida olingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "87"
+   }
+  },
+  {
+   "question": "Amfetamin va metamfetamin 0,1 M HCl da qaysi to‘lqin uzunliklarida maksimum beradi?",
+   "options": [
+    "235 va 286 nm",
+    "274 nm",
+    "251, 257, 263 nm",
+    "295 nm"
+   ],
+   "correct_index": 2,
+   "explanation": "Amfetamin, metamfetamin, efedrin va boshqalar 251, 257, 263 nm da maksimum beradi; MDA va MDMA 235 va 286 nm.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "87"
+   }
+  },
+  {
+   "question": "Qaysi modda Marki reaktivi bilan zumrad-yashil rang beradi?",
+   "options": [
+    "Metamfetamin",
+    "DOM/STP",
+    "PMA",
+    "DOB"
+   ],
+   "correct_index": 3,
+   "explanation": "11-jadval: DOB zumrad-yashil, DOM/STP sariq, PMA och kulrang, metamfetamin jigarrang rang beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "86"
+   }
+  },
+  {
+   "question": "Metamfetamin birinchi marta qaysi yilda sintez qilingan?",
+   "options": [
+    "1919",
+    "1910",
+    "1914",
+    "1980"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra metamfetamin birinchi marta 1919 yilda efedrin, qizil fosfor va vodorod yodid kislotadan sintez qilingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "83"
+   }
+  },
+  {
+   "question": "MDMA birinchi marta qaysi yilda sintez qilingan?",
+   "options": [
+    "1910",
+    "1914",
+    "1919",
+    "1967"
+   ],
+   "correct_index": 1,
+   "explanation": "MDA 1910 yilda, MDMA esa 1914 yilda sintez qilingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "84"
+   }
+  },
+  {
+   "question": "MDA qaysi dozada gallyusinatsiyalarni chaqiradi?",
+   "options": [
+    "80 mg dan kam",
+    "100 mg",
+    "500 mg dan yuqori",
+    "150 mg"
+   ],
+   "correct_index": 3,
+   "explanation": "MDA 80 mg dan kam dozada stimullaydi, 150 mg da gallyusinatsiya chaqiradi, 500 mg dan yuqorisi o‘limga olib keladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "84"
+   }
+  },
+  {
+   "question": "Bir dona MDA tabletkasi taxminan qancha MDA saqlaydi?",
+   "options": [
+    "200-230 mg",
+    "100 mg",
+    "50-100 mg",
+    "500 mg"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra bir dona tabletka 200-230 mg metilendioksiamfetamin saqlaydi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "84"
+   }
+  },
+  {
+   "question": "«STP» qisqartmasi nimani anglatadi?",
+   "options": [
+    "Stimulant, Toxic, Powder",
+    "Serenity, Tranquility, Peace",
+    "Synthetic Tablet Powder",
+    "Strong Tryptamine Product"
+   ],
+   "correct_index": 1,
+   "explanation": "STP — Serenity (beg‘amlik), Tranquility (xotirjamlik), Peace (tinchlik) so‘zlarining qisqartmasi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "85"
+   }
+  },
+  {
+   "question": "DOM/STP ni 1963 yilda kim sintez qilgan?",
+   "options": [
+    "Djon Pemberton",
+    "Albert Nieman",
+    "Ximik Aleksandr Shulgin",
+    "Albert Hofmann"
+   ],
+   "correct_index": 2,
+   "explanation": "Kitobga ko‘ra DOM/STP ni 1963 yili ximik Aleksandr Shulgin sintezlagan va o‘zida sinagan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "85"
+   }
+  },
+  {
+   "question": "Marki reaktivi bilan meskalin qanday rang beradi?",
+   "options": [
+    "Zarg‘aldoq",
+    "Zumrad-yashil",
+    "Och kulrang",
+    "Sariq"
+   ],
+   "correct_index": 0,
+   "explanation": "11-jadvalga ko‘ra TMA va meskalin Marki reaktivi bilan zarg‘aldoq rang beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "86"
+   }
+  },
+  {
+   "question": "Efedron 0,1 M HCl da UB-spektrda qaysi to‘lqin uzunligida maksimum beradi?",
+   "options": [
+    "251, 257, 263 nm",
+    "Faqat 251 nm",
+    "235 va 286 nm",
+    "274 nm"
+   ],
+   "correct_index": 1,
+   "explanation": "Efedron faqat 251 nm da maksimum beradi, amfetamin va efedrin esa 251, 257, 263 nm da.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "87"
+   }
+  },
+  {
+   "question": "PMA ning UB maksimumi qaysi to‘lqin uzunligida?",
+   "options": [
+    "268 nm",
+    "289 nm",
+    "274 nm",
+    "295 nm"
+   ],
+   "correct_index": 2,
+   "explanation": "Kitobga ko‘ra PMA 274, DOB 295, meskalin 268, STP (DOM) 289 nm da maksimum beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "88"
+   }
+  },
+  {
+   "question": "Prekursorlar ro‘yxatida 1-fenil-2-propanon qaysi vositani tayyorlash uchun ko‘rsatilgan?",
+   "options": [
+    "Fensiklidin",
+    "Metkatinon",
+    "LSD",
+    "Amfetamin"
+   ],
+   "correct_index": 3,
+   "explanation": "18-jadvalda 1-fenil-2-propanon amfetamin tayyorlash prekursori sifatida berilgan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "148"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Eslab qolish: amfetamin qaynash harorati 200-203 °C; o‘ngga buruvchi izomeri markaziy asab tizimiga 3-4 marta kuchliroq.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "82-83"
+   }
+  },
+  {
+   "text": "Muhim farq: MDA 80 mg dan kam dozada stimulyator, 150 mg da gallyusinogen, 500 mg dan yuqorisi o‘limga olib keluvchi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "84"
+   }
+  },
+  {
+   "text": "Amaliy maslahat: Marki reaktivi bilan MDA, MDMA, MDEA, MBDB va BDB bir xil ko‘kimtir-qora rang beradi, shuning uchun YuQX (Rf) va ningidrin rangi bilan farqlanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "86-87"
+   }
+  },
+  {
+   "text": "Tarixiy: metamfetamin 1919, MDA 1910, MDMA 1914, MDEA 1980 yilda sintez qilingan.",
+   "source": {
+    "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+    "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+    "page": "83-84"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Zulfikariyeva D.A., Usmanaliyeva Z.U., Nurmatova M.I.",
+   "title": "Giyohvand moddalar tahlili. O‘quv qo‘llanma. Toshkent, 2024",
+   "year": null,
+   "pages": "b. 82-88, 147-148"
+  },
+  {
+   "author": "Malaka materiali №002 (TFI Toksikologik kimyo kafedrasi)",
+   "title": "Fenilalkilamin hosilalari: sintetik va tabiiy birikmalar, narkologik ahamiyati va aniqlash usullari",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  },
+  {
+   "author": "Malaka materiali №039",
+   "title": "Ba’zi giyohvandlik vositalarining o‘limga olib keluvchi konsentratsiyalari (Baselt, 1995 ma’lumotlari)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  },
+  {
+   "author": "Malaka materiali №042",
+   "title": "Narkotiklarni siydikda aniqlash intervallari (CDRH, 1997)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  },
+  {
+   "author": "Malaka materiali №107",
+   "title": "TGK metabolizmi va ajralishi; biosuyuqliklarda aniqlash muddatlari, skrining va tasdiqlash cutoff qiymatlari (BMT 1993, CDRH 1997, Cone 1996 manbalaridan)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  }
+ ]
 }

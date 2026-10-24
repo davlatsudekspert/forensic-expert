@@ -32,8 +32,115 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Metall zaharlar: LD50",
+        "items": [
+          {
+            "label": "Margimush va surma",
+            "value": "0,08-0,1",
+            "unit": "g"
+          },
+          {
+            "label": "Talliy",
+            "value": "0,5",
+            "unit": "g"
+          },
+          {
+            "label": "Xrom",
+            "value": "0,2-1",
+            "unit": "g"
+          },
+          {
+            "label": "Kadmiy",
+            "value": "0,03",
+            "unit": "g"
+          },
+          {
+            "label": "ZnCl2",
+            "value": "5,0"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: oldingi ma’ruzadagi mineralizat va DDTK ekstraksiyasi sxemasini eslang. Doskada: beshta metall nomi. Tipik xato: talliyni mishyak guruhidagi metall deb o‘ylash — kitobda belgilari mishyak va surmaga o‘xshash deyilgan. Izoh: kitobda ZnCl2 uchun birlik ko‘rsatilmagan."
+    },
+    {
+      "title": "Beshta metall: aniqlash sxemasi",
+      "bullets": [
+        {
+          "text": "Talliy ditizon va malaxit yashili bilan, surma malaxit ko‘ki va natriy tiosulfat bilan aniqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "67-69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rux, vismut va kadmiy mineralizatdan natriy dietilditiokarbamat (DDTK) bilan xloroformga ajratiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "69, 72-73"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dastlabki reaksiya manfiy bo‘lsa, rux va vismut uchun tahlil to‘xtatiladi; musbat bo‘lsa DDTK bilan ajratilib, qo‘shimcha reaksiyalar bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "69, 72"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Dars bo‘yicha umumiy sxema",
+        "root": "Tl, Sb, Zn, Bi, Cd tahlili",
+        "children": [
+          {
+            "label": "Talliy",
+            "items": [
+              "Malaxit/brilliant yashili",
+              "Ditizon, pH = 11-12"
+            ]
+          },
+          {
+            "label": "Surma",
+            "items": [
+              "Malaxit ko‘ki",
+              "Na tiosulfat: zarg‘aldoq"
+            ]
+          },
+          {
+            "label": "Rux",
+            "items": [
+              "Ditizonat, pH = 4,5-5,0",
+              "DDTK, pH = 8,5",
+              "Na2S; K4[Fe(CN)6]"
+            ]
+          },
+          {
+            "label": "Vismut",
+            "items": [
+              "Tiomochevina: sariq",
+              "Oksin",
+              "Brutsin + KBr; CsCl + KI"
+            ]
+          },
+          {
+            "label": "Kadmiy",
+            "items": [
+              "DDTK, pH = 12",
+              "Na2S: sariq CdS",
+              "Brutsin yoki piridin + KBr"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Doskada: daraxt sxemasini talabalar bilan to‘ldiring. Tipik xato: barcha beshta metallni bir xil usul bilan aniqlash — har birining o‘z reaktivi bor."
     },
     {
       "title": "Talliy birikmalarining ishlatilishi",
@@ -150,9 +257,7 @@
           "Tl3+ -> TlCl4-",
           "Malaxit/brilliant yashili",
           "Toluol qatlami: ko‘k havo rang"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega talliy avval Tl3+ holatiga o‘tkazilishi kerak? Doskada: atsidokompleks sxemasi. Tipik xato: bu reaksiyani faqat talliyga xos deb hisoblash — surma ham beradi."
     },
@@ -187,7 +292,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Talliy: ditizon reaksiyasi",
+        "items": [
+          {
+            "title": "Mineralizat",
+            "text": "5 ml ajratgich voronkasiga solinadi"
+          },
+          {
+            "title": "Niqoblash",
+            "text": "Limon kislota, tiomochevina, gidroksilamin sulfat, KCN"
+          },
+          {
+            "title": "pH",
+            "text": "3 n NH4OH bilan pH = 11-12 gacha"
+          },
+          {
+            "title": "Ditizon",
+            "text": "3 ml 0,01% xloroformli eritma, chayqatiladi"
+          },
+          {
+            "title": "Natija",
+            "text": "Xloroform qatlami to‘q qizil rangga o‘tadi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ko‘p niqoblovchi reaktiv nima uchun kerak? Doskada: reaktivlar ro‘yxatini «niqoblovchi — vazifa» tarzida yozing. Tipik xato: sianid qo‘shilgan eritmani nordonlashtirish — zaharli HCN ajraladi."
     },
     {
@@ -215,7 +345,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Ditizon, pH 11-12",
-        "nodes": [],
         "header": [
           "Ion",
           "Holat"
@@ -314,7 +443,7 @@
       "title": "Surmani malaxit ko‘ki bilan aniqlash",
       "bullets": [
         {
-          "text": "5 ml mineralizatga 3 ml 5 n HCl va 2 tomchi 5% NaNO2 qo‘shiladi; 5 daqiqadan so‘ng 1 ml to‘yingan mochevina, 7 tomchi 0,5% malaxit yashili, 2 g suvsiz Na2SO4 va 5 ml toluol solinadi.",
+          "text": "5 ml mineralizatga 3 ml 5 n HCl, 2 tomchi 5% NaNO2; 5 daqiqadan so‘ng 1 ml mochevina, 7 tomchi 0,5% malaxit yashili, 2 g Na2SO4, 5 ml toluol solinadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -341,7 +470,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Surma: malaxit reaksiyasi",
+        "items": [
+          {
+            "title": "Mineralizat",
+            "text": "5 ml + 3 ml 5 n HCl + 2 tomchi 5% NaNO2"
+          },
+          {
+            "title": "Kutish",
+            "text": "5 daqiqa"
+          },
+          {
+            "title": "Mochevina",
+            "text": "1 ml to‘yingan eritma (ortiqcha NaNO2 ni parchalaydi)"
+          },
+          {
+            "title": "Reaktiv",
+            "text": "7 tomchi 0,5% malaxit yashili + 2 g suvsiz Na2SO4"
+          },
+          {
+            "title": "Toluol",
+            "text": "5 ml qo‘shib chayqatiladi"
+          },
+          {
+            "title": "Natija",
+            "text": "Toluol qatlamida zangori rang"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mochevinaning vazifasi nima? Doskada: reaktivlar ketma-ketligini raqamlab yozing. Tipik xato: NaNO2 ni ortiqcha qoldirish. Izoh: kitobda reaksiya tarkibida «1 ml N2SO4» yozilgan (H2SO4 bo‘lishi mumkin); noaniq bo‘lgani uchun slaydga kiritilmadi."
     },
     {
@@ -374,9 +532,7 @@
           "HSbO3 + 6HCl → H[SbCl6] + 3H2O",
           "Malaxit ko‘ki + toluol",
           "Ko‘k havo rang qatlam"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega Sb5+ kompleksi hosil bo‘lishi kerak? Doskada: oksidlash — kompleks — assotsiat zanjiri. Tipik xato: surmani Sb3+ holida reaksiyaga kiritish. Diagrammada to‘liq bo‘lmagan tenglamalar tuzatildi (H[SbCl6] + 3H2O)."
     },
@@ -384,7 +540,7 @@
       "title": "Surma reaksiyalarida halaqit va tiosulfat sinovi",
       "bullets": [
         {
-          "text": "Reaksiyani Fe3+ ham berishi mumkin; farqlash uchun 25% H2SO4 bilan chayqatilganda rang yo‘qolishi mumkin; oltin va talliy surmaning ikkinchi reaksiyasini bermaydi.",
+          "text": "Fe3+ ham shu reaksiyani berishi mumkin: 25% H2SO4 bilan chayqatilganda rang yo‘qolishi mumkin; oltin va talliy surmaning ikkinchi reaksiyasini bermaydi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -413,6 +569,110 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ortiqcha kislota tiosulfat sinoviga halaqit beradi? Doskada: Na2S2O3 + 2HCl -> S + SO2 + 2NaCl + H2O. Tipik xato: kislotali muhitda tiosulfat qo‘shish — erkin oltingugurt ajraladi."
+    },
+    {
+      "title": "Talliy va surmani farqlash",
+      "bullets": [
+        {
+          "text": "Ikkala element malaxit yoki brilliant yashili bilan toluol yoki ksilolga o‘tadigan ko‘k havo rangli ion assotsiat beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "67, 69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Farqlash: talliy uchun ditizon reaksiyasi (to‘q qizil qatlam), surma uchun natriy tiosulfat bilan zarg‘aldoq cho‘kma.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "67, 69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Talliy bilan zaharlanish belgilari margimush va surmanikiga o‘xshash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "67"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Tl va Sb: o‘xshash va farqli reaksiyalar",
+        "columns": [
+          {
+            "title": "Talliy",
+            "items": [
+              "Atsidokompleks TlCl4-",
+              "Malaxit yashili: ko‘k havo rang",
+              "Ditizon, pH = 11-12: to‘q qizil",
+              "Na2S2O3 bilan cho‘kma bermaydi"
+            ]
+          },
+          {
+            "title": "Surma",
+            "items": [
+              "Atsidokompleks [SbCl6]-",
+              "Malaxit ko‘ki: toluolda zangori",
+              "Na2S2O3: zarg‘aldoq cho‘kma",
+              "Fe3+ halaqit; 25% H2SO4 bilan ajratiladi"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega malaxit reaksiyasi ikkala metall uchun musbat chiqishi mumkin? Tipik xato: yagona reaksiya bilan xulosa qilish."
+    },
+    {
+      "title": "Surma: natriy tiosulfat reaksiyasi",
+      "bullets": [
+        {
+          "text": "2Sb3+ + 3Na2S2O3 + 3H2O -> Sb2S3 + 2Na2SO4 + 6H+: surma sulfid cho‘kmasi zarg‘aldoq rangda bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ortiqcha kislota qo‘shilsa, tiosulfatdan erkin oltingugurt ajraladi va reaksiyaga xalaqit beradi: Na2S2O3 + 2HCl -> S + SO2 + 2NaCl + H2O.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ortiqcha NaNO2 malaxit reaksiyasida mochevina bilan parchalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "68"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Surma + tiosulfat",
+        "reagents": [
+          "2Sb3+",
+          "3Na2S2O3 + 3H2O"
+        ],
+        "products": [
+          "Sb2S3",
+          "2Na2SO4 + 6H+"
+        ],
+        "conditions": "5 ml mineralizat, 1-2 daqiqa qaynatish",
+        "observation": "Zarg‘aldoq rangli cho‘kma (talliydan farqi)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: tenglamani yozing. Tipik xato: kislotani ortiqcha qo‘shish — oltingugurt cho‘kadi va natijani buzadi."
     },
     {
       "title": "Rux birikmalari va zaharlanish",
@@ -479,14 +739,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Rux ditizonati",
+        "items": [
+          {
+            "title": "Mineralizat",
+            "text": "0,5 ml + 0,25 ml to‘yingan tiosulfat"
+          },
+          {
+            "title": "pH",
+            "text": "Kaliy ishqori bilan pH = 4,5-5,0"
+          },
+          {
+            "title": "Bufer",
+            "text": "1 ml atsetat bufer (pH = 5)"
+          },
+          {
+            "title": "Ditizon",
+            "text": "1 ml xloroform + 2 tomchi 0,02% ditizon"
+          },
+          {
+            "title": "Natija",
+            "text": "Yashil rang qizil-pushti yoki to‘q qizilga o‘zgaradi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: «manfiy sud-kimyoviy ahamiyat» nimani anglatadi? Doskada: manfiy natija — tahlil to‘xtaydi. Tipik xato: musbat ditizon reaksiyasini yakuniy tasdiq deb bilish."
     },
     {
       "title": "Ruxni mineralizatdan ajratish: ish tartibi",
       "bullets": [
         {
-          "text": "10 ml mineralizatga 4 ml 10% Segnet tuzi (yoki 20% limon kislota), 1 ml to‘yingan Na2S2O3 (mis va kadmiyni ushlab qolish uchun), 2-3 tomchi Nil ko‘ki qo‘shiladi.",
+          "text": "10 ml mineralizatga 4 ml 10% Segnet tuzi (yoki 20% limon kislota), 1 ml to‘yingan Na2S2O3 (mis, kadmiy uchun), 2-3 tomchi Nil ko‘ki qo‘shiladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -513,7 +798,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Ruxni DDTK bilan ajratish",
+        "items": [
+          {
+            "title": "Niqoblash",
+            "text": "10 ml mineralizat + 4 ml 10% Segnet tuzi"
+          },
+          {
+            "title": "Tiosulfat",
+            "text": "1 ml to‘yingan Na2S2O3, 2-3 tomchi Nil ko‘ki"
+          },
+          {
+            "title": "Ishqor",
+            "text": "0,2 n NaOH — qizil-pushti rang hosil bo‘lguncha"
+          },
+          {
+            "title": "pH 8,5",
+            "text": "2 n H2SO4 bilan pH = 8,5 gacha"
+          },
+          {
+            "title": "Ekstraksiya",
+            "text": "3 ml 1% Na DDTK + 5 ml xloroform, chayqatiladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Nil ko‘ki indikatorining vazifasi. Doskada: reaktivlar ketma-ketligi. Tipik xato: pH ni 8,5 ga yetkazmasdan DDTK qo‘shish."
     },
     {
@@ -550,7 +860,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Niqoblash",
-        "nodes": [],
         "header": [
           "Halaqit",
           "Niqoblovchi"
@@ -602,7 +911,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Zn2+ reaksiyalari",
-        "nodes": [],
         "header": [
           "Reaktiv",
           "Natija"
@@ -663,11 +971,56 @@
           "Suv bug‘i bilan haydash",
           "Distillyat bromli suvga",
           "PH3 -> H3PO4"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun fosfin to‘g‘ridan-to‘g‘ri emas, fosfat kislota holida aniqlanadi? Doskada: Zn3P2 -> PH3 -> H3PO4. Tipik xato: distillyatni oddiy suvga yig‘ish."
+    },
+    {
+      "title": "Zn3P2: kislotada parchalanish",
+      "bullets": [
+        {
+          "text": "Oshqozon suyuqligida: Zn3P2 + 6HCl -> 3ZnCl2 + 2PH3; fosfin kuchli zaharli.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "70"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tahlilda ashyo sulfat kislota bilan nordonlashtiriladi: Zn3P2 + 3H2SO4 -> 2ZnSO4 + 2PH3.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "70"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fosfin suv bug‘i bilan haydalib, distillyat bromli suvga yig‘iladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "70"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Rux fosfidining parchalanishi",
+        "reagents": [
+          "Zn3P2",
+          "6HCl (oshqozon suyuqligi)"
+        ],
+        "products": [
+          "3ZnCl2",
+          "2PH3 (fosfin)"
+        ],
+        "conditions": "Oshqozon suyuqligi",
+        "observation": "Kuchli zaharli fosfin ajraladi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Tipik xato: zaharlovchi modda Zn3P2 emas, undan hosil bo‘lgan PH3 ekanini unutish."
     },
     {
       "title": "Fosfin: fosfat kislotani aniqlash",
@@ -700,8 +1053,64 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Fosfin → fosfat → molibdat",
+        "nodes": [
+          "PH3 (distillyat, bromli suv)",
+          "HBrO ta’sirida oksidlanadi",
+          "H3PO4",
+          "(NH4)2MoO4 + HNO3: sariq rang",
+          "Qaytaruvchi: ko‘k rang"
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sariq ranglik nima bilan bog‘liq? Doskada: PH3 + HBrO -> H3PO4 + HBr; fosfomolibdat sariq. Tipik xato: qoldiqda ruxni tekshirmay qoldirish."
+    },
+    {
+      "title": "Fosfat kislota: ammoniy molibdat reaksiyasi",
+      "bullets": [
+        {
+          "text": "Distillyatdagi H3PO4 ammoniy molibdat va nitrat kislota bilan reaksiyaga kirishib, sariq rangli birikma beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "70-71"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "H3PO4 + 12(NH4)2MoO4 + 21HNO3 -> (NH4)3PO4·12MoO3 + 21NH4NO3 + 12H2O.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "70-71"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qaytaruvchi qo‘shilsa, ko‘k rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "71"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Fosfatni aniqlash",
+        "reagents": [
+          "H3PO4",
+          "12(NH4)2MoO4 + 21HNO3"
+        ],
+        "products": [
+          "(NH4)3PO4·12MoO3",
+          "21NH4NO3 + 12H2O"
+        ],
+        "observation": "Sariq rang; qaytaruvchi bilan ko‘k"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun avval PH3 ni bromli suvda H3PO4 ga oksidlash kerak? Haydalgandan keyin qoldiq mineralizatsiyalanib ruxga tekshiriladi."
     },
     {
       "title": "Vismut: xossalari va ishlatilishi",
@@ -750,7 +1159,7 @@
           "uncertain": false
         },
         {
-          "text": "Zaharlanganda birinchi navbatda buyraklar ishdan chiqadi, og‘izda stomatit hosil bo‘ladi, badan sariq kasali kabi sarg‘ayadi, ba’zan falajlanish bo‘lishi mumkin.",
+          "text": "Birinchi navbatda buyraklar ishdan chiqadi, og‘izda stomatit hosil bo‘ladi, badan sariq kasali kabi sarg‘ayadi, ba’zan falajlanish bo‘lishi mumkin.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -793,7 +1202,7 @@
           "uncertain": false
         },
         {
-          "text": "8-oksixinolin (oksin) bilan: askorbin kislota (Fe3+), Segnet tuzi (Cu2+), KI qo‘shilgach oksin eritmasi qo‘shiladi; sariq-zarg‘aldoq rang, aniqlanish chegarasi 5 mkg.",
+          "text": "8-oksixinolin (oksin) bilan: askorbin kislota (Fe3+), Segnet tuzi (Cu2+), KI qo‘shilgach oksin eritmasi qo‘shiladi; sariq-zarg‘aldoq rang, chegara 5 mkg.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -811,7 +1220,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Bi3+ reaksiyalari",
+        "columns": [
+          {
+            "title": "Tiomochevina",
+            "items": [
+              "To‘yingan eritma 5 ml mineralizatga",
+              "Limon rangli sariq eritma",
+              "Chegara: 0,4 mkg",
+              "Oksidlovchilar halaqit beradi"
+            ]
+          },
+          {
+            "title": "8-oksixinolin (oksin)",
+            "items": [
+              "Askorbin k-ta, Segnet tuzi, KI",
+              "Sariq-zarg‘aldoq rang",
+              "Chegara: 5 mkg",
+              "Aseton + amil atsetat: qizg‘ish-zarg‘aldoq"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: askorbin kislota, Segnet tuzi va KI vazifalarini ayting. Doskada: halaqit — niqoblovchi jadvali. Tipik xato: ijobiy bo‘lmagan natijada ham tahlilni davom ettirish — kitobga ko‘ra tahlil to‘xtatiladi."
     },
     {
@@ -853,9 +1285,7 @@
           "Na DDTK + CHCl3",
           "Qo‘ng‘ir Bi(DDTK)3",
           "HNO3: suvli Bi(NO3)3"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi bosqichda vismut organik qatlamga o‘tadi? Doskada: ajratish sxemasi. Tipik xato: oxirgi reekstraksiyani tashlab ketish. Izoh: sxema pH = 12 ni kitob reaksiya tenglamasida ko‘rsatadi."
     },
@@ -893,7 +1323,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Bi3+ mikrokristallari",
-        "nodes": [],
         "header": [
           "Reaktiv",
           "Kristall"
@@ -933,7 +1362,7 @@
           "uncertain": false
         },
         {
-          "text": "Qotishmalar, ishqorli akkumulyatorlar, toblanuvchi bo‘yoqlar, tipografiya shriftlari, galvanotexnika va chinni ishlab chiqarishda qo‘llanadi; CdS dan sariq bo‘yoq tayyorlanadi.",
+          "text": "Qotishmalar, ishqorli akkumulyatorlar, toblanuvchi bo‘yoqlar, tipografiya shriftlari, galvanotexnika, chinni ishlab chiqarishda; CdS dan sariq bo‘yoq olinadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -978,6 +1407,70 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ish zonasida kadmiy xavfi nimadan kelib chiqadi? Doskada: bug‘ va chang manbalari. Tipik xato: faqat peroral yo‘lni hisobga olish. Izoh: kitobda havo konsentratsiyasi va oksid aerozoli uchun keltirilgan raqamlar (0,0001-0,001 va 2500-2900 mg/m3) birliklari va solishtirmasi shubhali ko‘rinadi, shuning uchun slaydga kiritilmadi."
+    },
+    {
+      "title": "Kadmiy: raqamli ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Kadmiy bilan ishlanadigan korxonalarda havo konsentratsiyasi 0,0001-0,001 mg/m3 dan, kadmiy oksidi aerozoli 2500-2900 mg/m3 dan oshishi juda xavfli.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "73"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "100 g odam buyragida 0,26-2,09 mg gacha kadmiy tabiiy miqdor; shuning uchun sud kimyogari uning miqdorini albatta aniqlashi kerak.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "73"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aniqlanish chegaralari: Na2S bilan 50 mkg, brutsin va KBr bilan 0,12 mkg, piridin va KBr bilan 0,05 mkg.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "74"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Kadmiy: asosiy sonlar",
+        "items": [
+          {
+            "label": "Suyuqlanish harorati",
+            "value": "321",
+            "unit": "°C"
+          },
+          {
+            "label": "Zaharli miqdor (CdSO4)",
+            "value": "0,03",
+            "unit": "g"
+          },
+          {
+            "label": "Ish joyi havosi",
+            "value": "0,0001-0,001",
+            "unit": "mg/m3"
+          },
+          {
+            "label": "CdO aerozoli",
+            "value": "2500-2900",
+            "unit": "mg/m3"
+          },
+          {
+            "label": "100 g buyrakda",
+            "value": "0,26-2,09",
+            "unit": "mg"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: kadmiy tabiiy mikroelement bo‘lsa, topilgan miqdorni qanday baholaymiz? Tipik xato: faqat sifat reaksiyasi bilan xulosa qilish."
     },
     {
       "title": "Kadmiy: organizmdagi o‘zgarishlar",
@@ -1052,9 +1545,7 @@
           "DDTK + CHCl3: Cd(DDTK)2",
           "HCl: reekstraksiya",
           "Na2S: sariq CdS"
-        ],
-        "header": [],
-        "rows": []
+        ]
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: Na2S natijasi manfiy bo‘lsa nima qilinadi? Doskada: ekstraksiya zanjiri. Tipik xato: manfiy natijada ham mikrokristall reaksiyalarni davom ettirish — kitobga ko‘ra kadmiyga tekshirilmaydi."
     },
@@ -1092,7 +1583,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Cd2+ aniqlash chegarasi",
-        "nodes": [],
         "header": [
           "Reaksiya",
           "Chegara"
@@ -1113,6 +1603,144 @@
         ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reaksiya eng sezgir? Doskada: chegaralarni o‘sish tartibida yozing. Tipik xato: mkg va mg ni aralashtirish."
+    },
+    {
+      "title": "DDTK bilan ajratish: Zn, Bi, Cd",
+      "bullets": [
+        {
+          "text": "Rux, vismut va kadmiy natriy dietilditiokarbamat (DDTK) bilan xloroformga o‘tadi; xloroform qatlami qo‘ng‘ir rangga bo‘yaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "70, 72, 74"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reekstraksiya: ruxda 1 n HCl, vismutda nitrat kislota, kadmiyda xlorid kislota ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "70, 72, 74"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvli ajralmada chinlik va qo‘shimcha reaksiyalar olib boriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "70, 72, 74"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Qo‘ng‘ir qatlam: Me(DDTK)n",
+        "header": [
+          "Element",
+          "Ajratish sharti",
+          "Reekstraksiya",
+          "Suvli qatlam"
+        ],
+        "rows": [
+          [
+            "Zn",
+            "pH = 8,5; 1% Na DDTK, CHCl3",
+            "3 ml 1 n HCl",
+            "Zn2+"
+          ],
+          [
+            "Bi",
+            "NaOH, Nil zangorisi; DDTK",
+            "HNO3",
+            "Bi(NO3)3"
+          ],
+          [
+            "Cd",
+            "pH = 12; DDTK, CHCl3",
+            "HCl",
+            "CdCl2"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Doskada: jadvalni to‘ldiring. Tipik xato: reekstraksiya kislotalarini aralashtirish."
+    },
+    {
+      "title": "Halaqit beruvchi ionlarni niqoblash",
+      "bullets": [
+        {
+          "text": "Ruxni ajratishda temir limon kislotasi yoki Segnet tuzi bilan, mis va kadmiy natriy tiosulfat (kadmiy — tiomochevina) bilan niqoblanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "69-70"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surma reaksiyasida temir ftoridlar qo‘shib, mis (DDTK)2Pb bilan ekstraksiyalab yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vismut oksin reaksiyasida askorbin kislota Fe3+ ni, Segnet tuzi Cu2+ ni niqoblaydi, KI oksidlovchilarni yo‘qotadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "72"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Niqoblash jadvali",
+        "header": [
+          "Halaqit",
+          "Niqoblovchi",
+          "Qayerda",
+          "Bet"
+        ],
+        "rows": [
+          [
+            "Fe (rux)",
+            "Limon kislota / Segnet tuzi",
+            "Ruxni ajratish",
+            "69-70"
+          ],
+          [
+            "Cu, Cd (rux)",
+            "Na2S2O3; Cd — tiomochevina",
+            "Ruxni ajratish",
+            "69-70"
+          ],
+          [
+            "Fe (surma)",
+            "Ftoridlar",
+            "Surma tahlili",
+            "69"
+          ],
+          [
+            "Cu (surma)",
+            "(DDTK)2Pb bilan ekstraksiya",
+            "Surma tahlili",
+            "69"
+          ],
+          [
+            "Fe3+, Cu2+ (vismut)",
+            "Askorbin k-ta; Segnet tuzi",
+            "Oksin reaksiyasi",
+            "72"
+          ]
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: niqoblash nima uchun kerak? Tipik xato: bir niqoblovchini barcha metallarga qo‘llash."
     },
     {
       "title": "Aniqlash chegaralari: Bi va Cd",
@@ -1148,7 +1776,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Sezgirlik",
-        "nodes": [],
         "header": [
           "Ion",
           "Eng past"
@@ -1200,7 +1827,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Organlar",
-        "nodes": [],
         "header": [
           "Metall",
           "Organlar"
@@ -1212,7 +1838,7 @@
           ],
           [
             "Vismut",
-            "Yig‘iladi: jigar, miya, oshqozon yo‘llari"
+            "Yig‘iladi: jigar, miya, oshqozon"
           ],
           [
             "Surma",
@@ -1256,7 +1882,6 @@
       "diagram": {
         "kind": "table",
         "caption": "Ditizon, CHCl3",
-        "nodes": [],
         "header": [
           "Metall",
           "pH",
@@ -1325,12 +1950,12 @@
     {
       "question": "Surma bilan talliyni farqlash uchun qaysi reaktivdan foydalaniladi?",
       "options": [
-        "Natriy tiosulfat (zarg‘aldoq cho‘kma — surma)",
         "Natriy xlorid",
         "Kaliy yodid",
+        "Natriy tiosulfat (zarg‘aldoq cho‘kma — surma)",
         "Sulfat kislota"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Na2S2O3 qaynatilganda surma zarg‘aldoq cho‘kma beradi, talliy bermaydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1341,12 +1966,12 @@
     {
       "question": "Ruxni ditizon bilan aniqlashda qaysi pH sharoiti ko‘rsatilgan?",
       "options": [
-        "4,5-5,0",
-        "11-12",
         "1-2",
-        "13"
+        "4,5-5,0",
+        "13",
+        "11-12"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Rux ditizonati pH = 4,5-5,0 da, atsetat bufer (pH = 5) ishtirokida hosil qilinadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1357,12 +1982,12 @@
     {
       "question": "Zn3P2 oshqozon suyuqligida parchalanganda qaysi zaharli modda hosil bo‘ladi?",
       "options": [
-        "Fosfin PH3",
         "Arsin AsH3",
-        "Vodorod sianidi",
-        "Is gazi"
+        "Is gazi",
+        "Fosfin PH3",
+        "Vodorod sianidi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Zn3P2 + 6HCl -> 3ZnCl2 + 2PH3.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1373,12 +1998,12 @@
     {
       "question": "Vismut tiomochevina bilan qanday rang beradi?",
       "options": [
-        "Limon rangli sariq",
         "Qizil",
+        "Limon rangli sariq",
         "Ko‘k",
         "Yashil"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Vismut tiomochevina bilan limon rangli sariq eritma beradi (0,4 mkg).",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1389,12 +2014,12 @@
     {
       "question": "Odam organizmi uchun kadmiy sulfatning zaharli miqdori qancha?",
       "options": [
-        "0,03 g",
         "3 g",
+        "0,3 g",
         "30 g",
-        "0,3 g"
+        "0,03 g"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "0,03 g kadmiy sulfat zaharlanishga sabab bo‘la oladi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1405,12 +2030,12 @@
     {
       "question": "100 g odam buyragida kadmiyning tabiiy miqdori qancha?",
       "options": [
+        "0,01 mg dan kam",
         "0,26-2,09 mg gacha",
         "26-209 mg",
-        "0,01 mg dan kam",
         "2-9 g"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "T.M. Moiseeva bo‘yicha 0,26-2,09 mg gacha.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1421,12 +2046,12 @@
     {
       "question": "Surmaning qaysi valentli birikmalari zaharliroq?",
       "options": [
-        "Uch valentli",
         "Besh valentli",
-        "Ikkalasi teng",
-        "Faqat metall holidagi"
+        "Faqat metall holidagi",
+        "Uch valentli",
+        "Ikkalasi teng"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Uch valentli birikmalari 5 valentlisiga nisbatan zaharliroq.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1437,12 +2062,12 @@
     {
       "question": "Talliy ditizon bilan xloroform qatlamini qanday rangga bo‘yaydi?",
       "options": [
-        "To‘q qizil",
-        "Yashil",
         "Ko‘k",
-        "Rangsiz"
+        "Rangsiz",
+        "To‘q qizil",
+        "Yashil"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Xloroform qatlami to‘q qizil rangga o‘tadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1453,12 +2078,12 @@
     {
       "question": "Kadmiy Na2S bilan qanday cho‘kma beradi?",
       "options": [
-        "Sariq CdS",
         "Qora PbS",
         "Oq ZnS",
+        "Sariq CdS",
         "Qizil HgS"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "pH = 5 da Na2S bilan sariq CdS cho‘kmasi hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1469,17 +2094,177 @@
     {
       "question": "Vismutni mineralizatdan qaysi usul bilan ajratib olinadi?",
       "options": [
-        "DDTK bilan xloroformga ekstraksiya",
         "Suv bug‘i bilan haydash",
+        "Sulfirlash",
         "Dializ",
-        "Sulfirlash"
+        "DDTK bilan xloroformga ekstraksiya"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Bi natriy dietilditiokarbaminat bilan xloroformga ekstraksiyalanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "72"
+      }
+    },
+    {
+      "question": "Talliy bilan zaharlanishning o‘ziga xos belgisi qaysi?",
+      "options": [
+        "Qusuqning yashil rangga bo‘yalishi",
+        "Tish milkida qora dog‘lar paydo bo‘lishi",
+        "Burun o‘rta pardasining buzilishi",
+        "Birdaniga soch to‘kilib ketishi"
+      ],
+      "correct_index": 3,
+      "explanation": "Talliy bilan zaharlanganda birdaniga soch to‘kilib ketadi, qayt qilish va bo‘g‘imlarda og‘riq seziladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "67"
+      }
+    },
+    {
+      "question": "Ruxni mineralizatdan DDTK bilan ajratishda muhit qaysi pH ga keltiriladi?",
+      "options": [
+        "pH = 12",
+        "pH = 4,5-5,0",
+        "pH = 11-12",
+        "pH = 8,5"
+      ],
+      "correct_index": 3,
+      "explanation": "10 ml mineralizat Segnet tuzi, tiosulfat va indikator bilan 2 n H2SO4 yordamida pH = 8,5 gacha keltiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "69"
+      }
+    },
+    {
+      "question": "Mineralizatdan kadmiy DDTK holida xloroformga qaysi pH da ekstraksiyalanadi?",
+      "options": [
+        "pH = 12",
+        "pH = 4,5",
+        "pH = 8,5",
+        "pH = 5"
+      ],
+      "correct_index": 0,
+      "explanation": "Kadmiy kationi muhit pH = 12 ga yetkazilib dietilditiokarbamat holida xloroform bilan ajratiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "73"
+      }
+    },
+    {
+      "question": "Vismutning oksin bilan reaksiyasida Fe3+ ni niqoblash uchun nima qo‘shiladi?",
+      "options": [
+        "Natriy tiosulfat",
+        "Askorbin kislota",
+        "Kaliy yodid",
+        "Segnet tuzi"
+      ],
+      "correct_index": 1,
+      "explanation": "Askorbin kislota Fe3+ ni, Segnet tuzi Cu2+ ni niqoblaydi, kaliy yodid esa oksidlovchilarni yo‘qotadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "72"
+      }
+    },
+    {
+      "question": "Vismut brutsin va KBr bilan qanday mikrokristall hosil qiladi?",
+      "options": [
+        "Dendrit shaklidagi kristallar",
+        "Yashil rangli sferoid kristallar",
+        "Rangsiz prizmalar",
+        "Qizil-zarg‘aldoq olti qirrali kristallar"
+      ],
+      "correct_index": 1,
+      "explanation": "H2BiBr5·2brutsin hisobiga yashil sferoid mikrokristallar hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "72"
+      }
+    },
+    {
+      "question": "Vismutni CsCl va KI bilan aniqlashda aniqlanish chegarasi qancha?",
+      "options": [
+        "0,1 mkg",
+        "0,4 mkg",
+        "5 mkg",
+        "50 mkg"
+      ],
+      "correct_index": 0,
+      "explanation": "Cs2BiI5 olti qirrali qizil-zarg‘aldoq kristallari uchun aniqlanish chegarasi 0,1 mkg.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "73"
+      }
+    },
+    {
+      "question": "Distillyatdagi fosfat kislotani aniqlashda qaysi reaktiv sariq rang beradi?",
+      "options": [
+        "Ammoniy molibdat va nitrat kislota",
+        "Malaxit yashili",
+        "Tiomochevina",
+        "Natriy sulfid"
+      ],
+      "correct_index": 0,
+      "explanation": "H3PO4 ammoniy molibdat va HNO3 bilan sariq birikma beradi; qaytaruvchi qo‘shilsa ko‘k rang hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "70-71"
+      }
+    },
+    {
+      "question": "Kadmiy piridin va KBr bilan qanday kristall beradi?",
+      "options": [
+        "Yashil sferoidlar",
+        "Dendrit kristallar",
+        "Sariq cho‘kma",
+        "Sferoid shaklida yig‘ilgan rangsiz prizmalar"
+      ],
+      "correct_index": 3,
+      "explanation": "Kadmiy bo‘lsa, piridin va 5% KBr bilan rangsiz prizmalar hosil bo‘ladi; chegara 0,05 mkg.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "74"
+      }
+    },
+    {
+      "question": "Ruxni trilonometrik titrlashda qaysi indikator ishlatiladi?",
+      "options": [
+        "Eriokrom ko‘ki",
+        "Ditizon",
+        "Malaxit yashili",
+        "Nil zangorisi"
+      ],
+      "correct_index": 0,
+      "explanation": "Indikator eriokrom ko‘ki; qizil rangdan ko‘k rangga o‘tish reaksiya tugaganini bildiradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "70"
+      }
+    },
+    {
+      "question": "Surmaning malaxit reaksiyasida Fe3+ ta’sirini farqlash uchun nima qilinadi?",
+      "options": [
+        "25% H2SO4 bilan chayqatiladi",
+        "Ditizon qo‘shiladi",
+        "Natriy tiosulfat bilan qaynatiladi",
+        "pH = 12 ga yetkaziladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Fe3+ ham shu reaksiyani berishi mumkin; 25% H2SO4 bilan chayqatilganda rang yo‘qolishi mumkin.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "68"
       }
     }
   ],

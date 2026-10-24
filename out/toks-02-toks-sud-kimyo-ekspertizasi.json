@@ -66,7 +66,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Sud-kimyo ekspertizasining ikki maqsadi",
+        "columns": [
+          {
+            "title": "Sud-tergovga yordam",
+            "items": [
+              "Sud-kimyosi bilimlari asosida",
+              "Noaniq masalalarni aniqlash"
+            ]
+          },
+          {
+            "title": "Oldini olishga yordam",
+            "items": [
+              "Sanoat, turmush, xalq xo‘jaligida",
+              "Sog‘liqni saqlash xodimlariga yordam"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikkinchi maqsad klinik amaliyotda qanday ko‘rinadi? Doskada: ikki maqsad va ularning «mijozlari»ni yozing. Tipik xato: ekspertiza faqat jinoyat ishlariga xizmat qiladi deb o‘ylash."
     },
     {
@@ -100,7 +119,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Tahlil turlari",
+        "columns": [
+          {
+            "title": "Yo‘llangan tahlil",
+            "items": [
+              "Sud-tibbiyot yoki tergov ko‘rsatmasi",
+              "Bir yoki bir necha modda uchun"
+            ]
+          },
+          {
+            "title": "Yo‘llanmagan (umumiy)",
+            "items": [
+              "Vazirlik qarori asosida",
+              "67 zaharli va kuchli modda"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaror faqat «alkogol»ga tekshirishni so‘rasa, ekspert nima qiladi? Doskada: ikki tahlil turini solishtiring. Tipik xato: yo‘llanmagan tahlilni «ko‘rsatmasiz, ixtiyoriy» deb o‘ylash."
     },
     {
@@ -203,7 +241,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Qonun va qaror sanalari",
+        "items": [
+          {
+            "label": "Qonunchilik palatasi",
+            "value": "2009 yil 18 noyabr"
+          },
+          {
+            "label": "Senat tasdiqladi",
+            "value": "2010 yil 7 may"
+          },
+          {
+            "label": "Qonun kuchga kirdi",
+            "value": "2010 yil 1 iyun"
+          },
+          {
+            "label": "Prezident qarori",
+            "value": "2018 yil 4 dekabr",
+            "unit": "PQ-4049"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: byuro va Markaz nomlari qanday bog‘liq? Doskada: 2010 -> 2011 -> 2012 -> 2015 -> 2018 vaqt chizig‘i. Tipik xato: eski «byuro» atamasini hozirgi tuzilmaga qo‘llash. Slaydda 277-son (toks 13, dvssm 14). Kitobda: 2011 yil 25 iyul buyrug‘i «277-son» (toks 13, dvssm 14), buyruq matnining o‘zida (malaka 115) «227» — raqam slaydga yozilmadi; lex.uz da amaldagi tahririni tekshiring."
     },
     {
@@ -347,7 +407,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Markaz bo‘limlari",
+        "root": "Ilmiy-amaliy markaz",
+        "children": [
+          {
+            "label": "Tashkiliy-uslubiy bo‘lim",
+            "items": [
+              "Sifat nazorati bo‘limi bilan"
+            ]
+          },
+          {
+            "label": "Murakkab ekspertizalar"
+          },
+          {
+            "label": "Tibbiy-kriminalistika",
+            "items": [
+              "Spektral va rentgenologik bo‘linma"
+            ]
+          },
+          {
+            "label": "Sud-biologik bo‘lim",
+            "items": [
+              "DNK molekulyar-genetik tekshiruv"
+            ]
+          },
+          {
+            "label": "Sud-kimyo bo‘limi",
+            "items": [
+              "Biokimyo tekshiruv bo‘linmasi"
+            ]
+          },
+          {
+            "label": "Sud-gistologiya bo‘limi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ashyoviy dalilni qaysi bo‘limlar birgalikda tekshirishi mumkin? Doskada: 6 bo‘limni ro‘yxat qilib yozing. Tipik xato: sud-kimyo bo‘limini sud-biologiya bilan aralashtirish. Markazning Qoraqalpog‘iston, viloyat va Toshkent shahar filiallari shunday tuzilishga ega."
     },
     {
@@ -382,30 +478,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Birinchi to‘rt xona",
-        "nodes": [],
-        "header": [
-          "№",
-          "Xona"
-        ],
-        "rows": [
-          [
-            "1",
-            "Qabul qilish va saqlash (sovutgich, seyf)"
-          ],
-          [
-            "2",
-            "Laboratoriya (tekshiruv, ekspertiza)"
-          ],
-          [
-            "3",
-            "Namuna tayyorlash va tashqi ko‘rinish"
-          ],
-          [
-            "4",
-            "Ishchi xonalar (kabinetlar)"
-          ]
+        "kind": "steps",
+        "caption": "Sud-kimyo bo‘limining xonalari",
+        "items": [
+          {
+            "title": "1. Qabul va saqlash",
+            "text": "Sovutgich va temir seyf bor"
+          },
+          {
+            "title": "2. Laboratoriya",
+            "text": "Tekshiruv va ekspertiza o‘tkaziladi"
+          },
+          {
+            "title": "3. Namuna tayyorlash",
+            "text": "Ashyoviy dalil tashqi ko‘rinishi o‘rganiladi"
+          },
+          {
+            "title": "4. Ishchi xonalar",
+            "text": "Kabinetlar"
+          },
+          {
+            "title": "5. Reagent xonasi",
+            "text": "Reagent va materiallar saqlanadi"
+          }
         ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ob’ektlarni qabul qilish xonasida sovutgich va seyf bo‘lishi shart? Doskada: 5 xonani chizing. Tipik xato: malaka 036/048 dagi «kamida 3 xona» ni ishlatish. Kitobning boshqa betida (malaka 036/048): 3 xona; slaydda kitobdagi 5 xona."
@@ -441,7 +536,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Bo‘lim xodimlari va xonalari",
+        "root": "Sud-kimyo bo‘limi",
+        "children": [
+          {
+            "label": "Katta kimyogar",
+            "items": [
+              "Boshliq"
+            ]
+          },
+          {
+            "label": "Kimyogar"
+          },
+          {
+            "label": "Laborant"
+          },
+          {
+            "label": "Alohida xonalar",
+            "items": [
+              "Ashyoviy dalil uchun sovuq xona",
+              "Zahar moddalar uchun xona"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: surg‘uchlash nimani kafolatlaydi? Doskada: lavozimlar zinapoyasi. Tipik xato: laborantni ekspert deb hisoblash."
     },
     {
@@ -484,7 +604,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Sud kimyogarining vazifalari",
+        "items": [
+          {
+            "title": "Ekspertiza o‘tkazish",
+            "text": "Sud-tergov organlari qarori asosida"
+          },
+          {
+            "title": "Chaqiriqqa borish",
+            "text": "Har qanday sharoitda yetib borish"
+          },
+          {
+            "title": "Akt yozish",
+            "text": "Ekspertiza tugagach yakunni yozish"
+          },
+          {
+            "title": "Malaka",
+            "text": "Har 5 yilda malaka oshirish kursi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega chaqiruvga «qanday sharoitda bo‘lmasin» kelish shart? Doskada: 4 vazifani raqamlang. Slaydda kitobdagi «har 5 yilda». Kitobning boshqa betida (malaka 036): 5-6 yil."
     },
     {
@@ -572,6 +713,63 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ish materiallari bilan tanishish huquqi tahlil sifatiga qanday ta’sir qiladi? Doskada: 4 huquqni yozing. Tipik xato: huquqlarni majburiyatlar bilan aralashtirish."
+    },
+    {
+      "title": "Ekspert-kimyogar: vazifa va huquqlar solishtirma",
+      "bullets": [
+        {
+          "text": "Vazifa: sud-tergov organlari qarori asosida ekspertiza o‘tkazish, chaqiriq bo‘yicha yetib borish, ekspertiza tugagach akt yozish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "15"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Huquq: ish materiallari bilan tanishish, qo‘shimcha materiallarni talab qilish, sud-tergov majlislarida bo‘lish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "15"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspertlar huquqlari sud-tibbiy ekspertlar huquqlari bilan tenglashtiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "15"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Vazifa va huquq",
+        "columns": [
+          {
+            "title": "Vazifalari",
+            "items": [
+              "Qaror asosida ekspertiza o‘tkazish",
+              "Chaqiriq bo‘yicha yetib borish",
+              "Ekspertizadan keyin akt yozish",
+              "Har 5 yilda malaka oshirish"
+            ]
+          },
+          {
+            "title": "Huquqlari",
+            "items": [
+              "Ish materiallari bilan tanishish",
+              "Qo‘shimcha materiallarni talab qilish",
+              "Sud-tergov majlislarida bo‘lish",
+              "Huquqlari sud-tibbiy ekspert bilan teng"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ekspert qo‘shimcha materiallarni talab qilish huquqiga ega? Tipik xato: vazifa va huquqni aralashtirish."
     },
     {
       "title": "Ekspert huquqlari: Qonun matni",
@@ -733,7 +931,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Etik talablar",
+        "items": [
+          {
+            "title": "Suhbat",
+            "text": "Ovozni ko‘tarmaslik, noo‘rin savol bermaslik"
+          },
+          {
+            "title": "Munosabat",
+            "text": "Yaqin kishilarga sezgir va muloyim"
+          },
+          {
+            "title": "Fazilat",
+            "text": "To‘g‘rilik, haqqoniylik, haqgo‘ylik"
+          },
+          {
+            "title": "Maxfiylik",
+            "text": "Voqea sabablarini sir saqlash"
+          },
+          {
+            "title": "Javobgarlik",
+            "text": "Tarqatsa — ma’muriy javobgarlik"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qarindoshlar natijani so‘rasa, ekspert nima deydi? Doskada: 4 etik qoida. Tipik xato: «yordam berish» niyatida ma’lumotni oshkor qilish."
     },
     {
@@ -815,6 +1038,66 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaror noaniq bo‘lsa, ekspert nima qiladi? Doskada: qaror mazmuni va ekspert javobgarligi. Tipik xato: saqlash javobgarligini laboratoriya mudiriga yuklash. Kitobdagi birinchi jumla grammatik jihatdan to‘liq emas; mazmuni bandda berildi."
+    },
+    {
+      "title": "Ekspertiza qarori va yuboriladigan hujjatlar to‘plami",
+      "bullets": [
+        {
+          "text": "Ekspertiza o‘tkazish to‘g‘risidagi qarorda jinoyat sodir bo‘lishi, ashyoviy dalil va sud kimyogari oldiga qo‘yilgan vazifa ko‘rsatilishi lozim.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "16"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Laboratoriyaga qarorning yozma bayonnomasi va sud-tibbiy aktdan ko‘chirma yuboriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "16"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Agar o‘lgan odam shifoxonada yotgan bo‘lsa, kasallik tarixidan ko‘chirma ham yuboriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "16"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Qaror va ilova hujjatlar",
+        "root": "Ekspertiza hujjatlari",
+        "children": [
+          {
+            "label": "Qaror bayonnomasi",
+            "items": [
+              "Jinoyat holati",
+              "Ashyoviy dalil",
+              "Kimyogar vazifasi"
+            ]
+          },
+          {
+            "label": "Sud-tibbiy akt",
+            "items": [
+              "Aktdan ko‘chirma"
+            ]
+          },
+          {
+            "label": "Kasallik tarixi",
+            "items": [
+              "Shifoxonada yotgan bo‘lsa"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Doskada: hujjatlar to‘plamini daraxt shaklida chizing. Tipik xato: kasallik tarixini har doim yuboriladi deb o‘ylash (faqat shifoxonada yotgan bo‘lsa)."
     },
     {
       "title": "Qabul qilish: o‘ram va ro‘yxat (qoidalar loyihasi)",
@@ -1106,6 +1389,83 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: kirish qismini qaysi ma’lumotlar bo‘yicha tekshirish mumkin? Doskada: kirish qismi maydonlari ro‘yxati. Tipik xato: tugash vaqtini ko‘rsatmaslik."
     },
     {
+      "title": "Aktning 4 qismi: nimalar yoziladi",
+      "bullets": [
+        {
+          "text": "Kirish: laboratoriya, ekspertning F.I.Sh. va mansabi, jabrlanuvchi, yuborilgan ashyoviy dalil, tekshiruv vaqti, qanday zaharga tekshirilishi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "16"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tashqi ko‘rinish: o‘rami, idishi, muhrlanishi, rangi, hidi, vazni, pH muhiti.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "16"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kimyoviy tekshiruv: usullar, reaksiyalar, reaktivlar, hisoblar; formula yozish va muallif nomini keltirish man etiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "17"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xulosa: avval topilgan moddalar (mg / 100 g), so‘ng manfiy natijali moddalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "17"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Akt mazmuni",
+        "root": "Sud-kimyo akti",
+        "children": [
+          {
+            "label": "1. Kirish qismi",
+            "items": [
+              "Laboratoriya, ekspert, jabrlanuvchi",
+              "Tekshiruv vaqti, vazifa"
+            ]
+          },
+          {
+            "label": "2. Tashqi ko‘rinish",
+            "items": [
+              "O‘ram, muhr, rang, hid",
+              "Vazn, pH muhiti"
+            ]
+          },
+          {
+            "label": "3. Kimyoviy tekshiruv",
+            "items": [
+              "Usullar, reaksiyalar, reaktivlar",
+              "Formula yozish man etiladi"
+            ]
+          },
+          {
+            "label": "4. Xulosa",
+            "items": [
+              "Topilgan moddalar mg / 100 g",
+              "Manfiy natijali moddalar"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kimyoviy qismda muallif nomini keltirish man etiladi? Tipik xato: xulosada manfiy natijalarni birinchi yozish."
+    },
+    {
       "title": "Ashyoviy dalilning tashqi ko‘rinishi",
       "bullets": [
         {
@@ -1222,7 +1582,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Xulosa qismi tartibi",
+        "items": [
+          {
+            "title": "1. Topilgan moddalar",
+            "text": "Miqdori mg / 100 g ashyoviy dalil"
+          },
+          {
+            "title": "2. Manfiy natijalar",
+            "text": "To‘liq tekshirilgan, topilmagan moddalar"
+          },
+          {
+            "title": "3. Etil spirti akti",
+            "text": "Ikki nusxada, ekspert muhrlaydi"
+          },
+          {
+            "title": "4. Muhr",
+            "text": "Sud-tibbiy ekspertiza muhri bosiladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega manfiy natijalar ham aktda ko‘rsatiladi? Doskada: xulosa qismi tartibi. Tipik xato: miqdorni 1 g ob’ektga hisoblab yozish — kitobga ko‘ra 100 g ga."
     },
     {
@@ -1300,26 +1681,21 @@
         }
       ],
       "diagram": {
-        "kind": "table",
+        "kind": "facts",
         "caption": "Saqlash muddatlari",
-        "nodes": [],
-        "header": [
-          "Ob’ekt",
-          "Muddat"
-        ],
-        "rows": [
-          [
-            "Konservlangan ob’ekt",
-            "1 yilgacha"
-          ],
-          [
-            "Hujjatlar (seyfda)",
-            "1 yildan keyin tashlanadi"
-          ],
-          [
-            "Spirt saqlovchi ob’ekt",
-            "1 oydan keyin tashlanadi"
-          ]
+        "items": [
+          {
+            "label": "Konservlangan ob’ekt",
+            "value": "1 yilgacha"
+          },
+          {
+            "label": "Hujjatlar (seyfda)",
+            "value": "1 yil"
+          },
+          {
+            "label": "Spirt saqlovchi ob’ekt",
+            "value": "1 oy"
+          }
         ]
       },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega spirt saqlovchi ob’ekt qisqa muddat saqlanadi? Doskada: muddatlar jadvali. Tipik xato: muddatlarni bir-biriga almashtirish."
@@ -1355,7 +1731,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Modda topilmasligi sabablari",
+        "root": "Natijani baholash",
+        "children": [
+          {
+            "label": "Chiqib ketgan",
+            "items": [
+              "O‘lim sodir bo‘lguncha"
+            ]
+          },
+          {
+            "label": "Metabolizm",
+            "items": [
+              "Metabolitik o‘zgarishlar"
+            ]
+          },
+          {
+            "label": "Parchalanish",
+            "items": [
+              "Modda umuman parchalanadi"
+            ]
+          },
+          {
+            "label": "Birikish",
+            "items": [
+              "Boshqa moddalar bilan"
+            ]
+          },
+          {
+            "label": "Usul sezgirligi past",
+            "items": [
+              "Modda aniqlanmasligi mumkin"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: manfiy natija zaharlanish bo‘lmaganligini isbotlaydimi? Doskada: 5 ta sababni yozing. Tipik xato: manfiy natijani «zahar yo‘q» deb talqin qilish."
     },
     {
@@ -1398,7 +1810,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "Aniqlangan modda — zahar emas",
+        "root": "Zararsiz topilma",
+        "children": [
+          {
+            "label": "Dori sifatida",
+            "items": [
+              "Iste’mol qilingan bo‘lishi mumkin"
+            ]
+          },
+          {
+            "label": "Tabiiy tarkib",
+            "items": [
+              "Masalan, metallar"
+            ]
+          },
+          {
+            "label": "Chirish mahsuloti",
+            "items": [
+              "Xos reaksiya beruvchi birikmalar"
+            ]
+          },
+          {
+            "label": "Tashqi muhit",
+            "items": [
+              "Modda qo‘shilib qolgan"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metall topilsa, qanday qilib uning tabiiy ekanini ajratamiz? Doskada: 4 holat. Tipik xato: sifat reaksiyasi musbat bo‘lsa darhol zaharlanish deb xulosa qilish; miqdoriy tahlil shart."
     },
     {
@@ -1443,18 +1885,64 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ekspertizaning butun yo‘lini «qaror -> qabul -> tahlil -> akt -> saqlash» tartibida so‘zlab bering. Doskada: shu zanjir. Tipik xato: aktni ekspertizaning rasmiy bosqichi emas, oddiy hisobot deb bilish."
+    },
+    {
+      "title": "Etil spirti bo‘yicha akt: nusxalar yo‘li",
+      "bullets": [
+        {
+          "text": "Qon va peshobda etil spirti miqdorini aniqlashda sud-kimyo akti ikki nusxada bosiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "17"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspert-kimyogar aktni muhrlaydi va yozilgan vaqtni ko‘rsatadi, so‘ng sud-tibbiy ekspertiza muhri bosiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "17"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bir nusxa tartib raqami ko‘rsatilgan holda tegishli tashkilotga yuboriladi, ikkinchisi sud-tibbiy ekspertiza arxivida saqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "17"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Akt nusxalari yo‘li",
+        "nodes": [
+          "Akt 2 nusxada bosiladi",
+          "Ekspert muhrlaydi, vaqt yozadi",
+          "Sud-tibbiy ekspertiza muhri",
+          "1-nusxa — tashkilotga",
+          "2-nusxa — arxivga"
+        ],
+        "header": [],
+        "rows": []
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: nega ikkinchi nusxa arxivda qoladi? Tipik xato: faqat bitta nusxa tayyorlash."
     }
   ],
   "mcq": [
     {
       "question": "Kitobga ko‘ra sud-kimyo tekshiruvi akti nechta qismdan iborat?",
       "options": [
-        "2 ta",
         "3 ta",
-        "4 ta",
-        "5 ta"
+        "2 ta",
+        "5 ta",
+        "4 ta"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Akt 4 qismdan iborat: kirish qismi, ashyoviy dalilning tashqi ko‘rinishi, kimyoviy tekshirish va ekspertning xulosasi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1465,12 +1953,12 @@
     {
       "question": "Sud-kimyo ekspertizasi tahlillari o‘tkaziladigan bo‘lim kamida nechta xonaga ega bo‘lishi kerak?",
       "options": [
-        "3 ta",
         "4 ta",
-        "5 ta",
-        "6 ta"
+        "3 ta",
+        "6 ta",
+        "5 ta"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Kitobga ko‘ra bo‘lim kamida 5 xonaga ega bo‘lishi kerak: qabul va saqlash, laboratoriya, namuna tayyorlash, ishchi xonalar, reagentlar xonasi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1481,12 +1969,12 @@
     {
       "question": "Aktning kimyoviy tekshiruv qismida nima man etiladi?",
       "options": [
-        "Ishlatilgan reaktiv va moslamalarni yozish",
-        "Kimyoviy formulalar yozish yoki muallif nomini keltirish",
         "Miqdoriy hisoblarni yozish",
-        "Fizik-kimyoviy usullarni sanash"
+        "Fizik-kimyoviy usullarni sanash",
+        "Ishlatilgan reaktiv va moslamalarni yozish",
+        "Kimyoviy formulalar yozish yoki muallif nomini keltirish"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Kimyoviy tekshiruv qismida usullar, reaksiyalar, reaktiv va hisoblar yoziladi, lekin formula yozish yoki muallif nomini keltirish man etiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1497,12 +1985,12 @@
     {
       "question": "Konservlangan ob’ekt qancha muddat saqlanadi?",
       "options": [
+        "1 yilgacha",
         "1 oy",
         "3 yil",
-        "5 yil",
-        "1 yilgacha"
+        "5 yil"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "Konservlangan ob’ekt 1 yilgacha saqlanadi; hujjatlar seyfda saqlanib, 1 yildan keyin tashlab yuboriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1513,12 +2001,12 @@
     {
       "question": "Spirt saqlovchi ob’ektlar qachon tashlab yuboriladi?",
       "options": [
-        "1 oydan keyin",
         "1 haftadan keyin",
+        "1 oydan keyin",
         "1 yildan keyin",
         "3 oydan keyin"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Spirt saqlovchi ob’ektlar 1 oydan keyin tashlab yuboriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1529,8 +2017,8 @@
     {
       "question": "Sud kimyogari malaka oshirish kursidan qanday davriylikda o‘tishi lozim?",
       "options": [
-        "Har yili",
         "Har 3 yilda",
+        "Har yili",
         "Har 5 yilda",
         "Har 10 yilda"
       ],
@@ -1545,10 +2033,10 @@
     {
       "question": "Ro‘yxatga olish jurnali nechta bo‘limdan iborat?",
       "options": [
-        "10",
+        "20",
         "16",
         "12",
-        "20"
+        "10"
       ],
       "correct_index": 1,
       "explanation": "Ro‘yxatga olish jurnali 16 bo‘limdan tashkil topgan.",
@@ -1561,12 +2049,12 @@
     {
       "question": "Prezidentning 2018 yil 4 dekabrdagi PQ-4049-son qaroriga ko‘ra Bosh byuro nimaga qayta tashkil etildi?",
       "options": [
-        "Respublika sud-tibbiy ekspertiza ilmiy-amaliy markaziga",
         "Sud ekspertizasi ilmiy kengashiga",
-        "Davlat sud-ekspertiza qo‘mitasiga",
-        "Sud-tibbiy ekspertiza vazirligiga"
+        "Sud-tibbiy ekspertiza vazirligiga",
+        "Respublika sud-tibbiy ekspertiza ilmiy-amaliy markaziga",
+        "Davlat sud-ekspertiza qo‘mitasiga"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Bosh byuro Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi etib qayta tashkil etildi; viloyat va Toshkent shahri byurolari uning filiallari bo‘ldi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1577,10 +2065,10 @@
     {
       "question": "«Sud ekspertizasi to‘g‘risida»gi Qonunni Senat qachon tasdiqlagan?",
       "options": [
-        "2009 yil 18 noyabr",
+        "2011 yil 25 iyul",
         "2010 yil 7 may",
-        "2010 yil 1 iyun",
-        "2011 yil 25 iyul"
+        "2009 yil 18 noyabr",
+        "2010 yil 1 iyun"
       ],
       "correct_index": 1,
       "explanation": "Qonunchilik palatasi 2009 yil 18 noyabrda, Senat 2010 yil 7 mayda tasdiqlagan; qonun 2010 yil 1 iyundan kuchga kirgan.",
@@ -1593,13 +2081,173 @@
     {
       "question": "Aktning xulosa qismida topilgan moddalar miqdori qanday birlikda hisoblanadi?",
       "options": [
-        "mg, 100 g ashyoviy dalilga",
         "g, 1 kg ashyoviy dalilga",
         "mkg, 10 g ashyoviy dalilga",
-        "mg, 1 g ashyoviy dalilga"
+        "mg, 1 g ashyoviy dalilga",
+        "mg, 100 g ashyoviy dalilga"
+      ],
+      "correct_index": 3,
+      "explanation": "Topilgan zaharli moddalar miqdori mg hisobida 100 g ashyoviy dalilga hisoblanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "17"
+      }
+    },
+    {
+      "question": "Yo‘llanmagan (umumiy) sud-kimyo tahlilida nechta modda tekshiriladi?",
+      "options": [
+        "49",
+        "83",
+        "67",
+        "13"
+      ],
+      "correct_index": 2,
+      "explanation": "Yo‘llanmagan yoki umumiy tahlil sog‘liqni saqlash vazirligi qaroriga kiritilgan 67 zaharli va kuchli ta’sir etuvchi moddaga tekshiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "13"
+      }
+    },
+    {
+      "question": "2018 yilgi PQ-4049-son qarorga ko‘ra viloyatlar va Toshkent shahri byurolari qanday qayta tashkil etildi?",
+      "options": [
+        "Markazning filiallari sifatida",
+        "Mustaqil laboratoriyalar sifatida",
+        "Bekor qilindi",
+        "Ilmgohga qo‘shib yuborildi"
       ],
       "correct_index": 0,
-      "explanation": "Topilgan zaharli moddalar miqdori mg hisobida 100 g ashyoviy dalilga hisoblanadi.",
+      "explanation": "Viloyatlar va Toshkent shahri byurolari Respublika markazining filiallari sifatida qayta tashkil etildi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "13"
+      }
+    },
+    {
+      "question": "«Sud ekspertizasi to‘g‘risida»gi Qonun qachondan kuchga kirgan?",
+      "options": [
+        "2009 yil 18 noyabrdan",
+        "2010 yil 7 maydan",
+        "2018 yil 4 dekabrdan",
+        "2010 yil 1 iyundan"
+      ],
+      "correct_index": 3,
+      "explanation": "Qonun 2009 yil 18 noyabrda Qonunchilik palatasi, 2010 yil 7 mayda Senat tomonidan tasdiqlangan va 2010 yil 1 iyundan kuchga kirgan.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "13"
+      }
+    },
+    {
+      "question": "Quyidagilardan qaysi biri kimyogar-ekspertning huquqiga kiradi?",
+      "options": [
+        "Ish materiallari bilan tanishish",
+        "Tergov qarorini bekor qilish",
+        "Ashyoviy dalilni o‘zi tanlab olish",
+        "Ekspertiza natijasini ommaga e’lon qilish"
+      ],
+      "correct_index": 0,
+      "explanation": "Ekspert ish materiallari bilan tanishish, qo‘shimcha materiallarni talab qilish va sud-tergov majlislarida bo‘lish huquqiga ega.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "15"
+      }
+    },
+    {
+      "question": "Sud-tergov organlari chaqirsa, sud kimyogari qanday harakat qilishi shart?",
+      "options": [
+        "Qanday sharoit bo‘lishiga qaramasdan yetib borishi",
+        "Chaqiruvni sud-tibbiy ekspertga topshirishi",
+        "Yozma javob yuborishi bilan cheklanishi",
+        "Faqat ish vaqtida borishi"
+      ],
+      "correct_index": 0,
+      "explanation": "Sud kimyogari tergov organlari chaqirig‘iga binoan savollarga javob berish uchun qanday sharoit bo‘lishiga qaramasdan yetib borishi shart.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "15"
+      }
+    },
+    {
+      "question": "Deontologiya so‘zi qanday so‘zlardan tashkil topgan?",
+      "options": [
+        "toxikon (zahar) va logos",
+        "deon (zaruriy) va logos (o‘rganaman)",
+        "bios (hayot) va xenos (yot)",
+        "etos (odat) va nomos (qonun)"
+      ],
+      "correct_index": 1,
+      "explanation": "Deontologiya yunoncha deon — zaruriy va logos — o‘rganaman so‘zlaridan iborat.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "15"
+      }
+    },
+    {
+      "question": "Ashyoviy dalilning o‘rami buzilgan bo‘lsa, tekshiruv qanday olib boriladi?",
+      "options": [
+        "Darhol yo‘q qilinadi",
+        "Tekshirilmaydi",
+        "Akt tuzilgandan so‘ng tekshiriladi",
+        "Faqat sud-tibbiy ekspert tekshiradi"
+      ],
+      "correct_index": 2,
+      "explanation": "Agar ashyoviy dalilning o‘rami buzilgan bo‘lsa, akt tuzilgandan so‘ng tekshiruv olib boriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "16"
+      }
+    },
+    {
+      "question": "Ekspertiza o‘tkazish haqidagi qarorda quyidagilardan qaysi biri albatta ko‘rsatilishi lozim?",
+      "options": [
+        "Reagentlar ro‘yxati",
+        "Ekspertning yoshi",
+        "Jinoyat sodir bo‘lishi, ashyoviy dalil va sud kimyogari oldiga qo‘yilgan vazifa",
+        "Laboratoriya xonalari soni"
+      ],
+      "correct_index": 2,
+      "explanation": "Qarorda jinoyat sodir bo‘lishi, ashyoviy dalil hamda sud kimyogari oldiga qo‘yilgan vazifa albatta ko‘rsatilishi lozim.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "16"
+      }
+    },
+    {
+      "question": "Aktning xulosa qismida moddalar qanday tartibda ko‘rsatiladi?",
+      "options": [
+        "Avval manfiy natijali moddalar",
+        "Avval topilgan moddalar, so‘ng manfiy natijali moddalar",
+        "Alifbo tartibida",
+        "Faqat topilgan moddalar"
+      ],
+      "correct_index": 1,
+      "explanation": "Xulosada avval topilgan zaharli moddalar, so‘ngra to‘liq tekshirilgan va manfiy natija olingan moddalar ko‘rsatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "17"
+      }
+    },
+    {
+      "question": "Etil spirti aktining ikkinchi nusxasi qayerda saqlanadi?",
+      "options": [
+        "Sud-tibbiy ekspertiza arxivida",
+        "Tergov organida",
+        "Jabrlanuvchida",
+        "Ish daftarida"
+      ],
+      "correct_index": 0,
+      "explanation": "Bir nusxa tegishli tashkilotga yuboriladi, ikkinchisi sud-tibbiy ekspertiza arxivida saqlanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",

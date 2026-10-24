@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-42-toks-pestitsid-fob",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Qishloq xo‘jalik ximikatlari",
+  "ru": "Qishloq xo‘jalik ximikatlari",
+  "en": "Qishloq xo‘jalik ximikatlari"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-42-toks-pestitsid-fob-q01",
+   "question_i18n": {
+    "uz": "Pestitsid so‘zidagi «pestis» lotincha nimani anglatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yuqumli",
+     "O‘ldiruvchi",
+     "Zaharli",
+     "Qishloq"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Pestis — yuqumli, cido — o‘ldiruvchi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q02",
+   "question_i18n": {
+    "uz": "Kitob bo‘yicha «kuchli zaharli» pestitsidlar uchun LD50 (mg/kg) qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50-200",
+     "50",
+     "200-1000",
+     "1000 dan yuqori"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kuchli zaharli guruhda LD50 = 50 mg/kg; yuqori zaharli 50-200, o‘rtacha 200-1000."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q03",
+   "question_i18n": {
+    "uz": "FOB ning asosiy zaharli ta’sir mexanizmi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Gemoglobinni methemoglobinga aylantirish",
+     "Jigar nekrozi",
+     "Xolinesteraza fermentini bo‘g‘ish",
+     "DNK sintezini to‘xtatish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "FOB xolinesteraza fermenti faoliyatini bo‘g‘ib, atsetilxolin gidrolizini buzadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "150"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q04",
+   "question_i18n": {
+    "uz": "Fosformolibden ko‘ki reaksiyasida mineralizatga qaysi reaktiv qo‘shilganda sariq rang hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dragendorf reaktivi",
+     "Natriy kuprobromid",
+     "Rezortsin",
+     "Ammoniy molibdati"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Mineralizat ammoniy molibdati bilan sariq rang beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "153"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q05",
+   "question_i18n": {
+    "uz": "Indikator usulida rang o‘zgarishi davomiyligi qancha bo‘lishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "3 daqiqa",
+     "13 daqiqa",
+     "30 daqiqa",
+     "1 soat"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Rang o‘zgarishlari davomiyligi 13 daqiqani tashkil etishi kerak."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "153"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q06",
+   "question_i18n": {
+    "uz": "551-sonli buyruqqa asosan tahlil qilinishi shart FOB lar soni nechta?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5",
+     "7",
+     "10",
+     "15"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra shart bo‘lgan FOB lar 10 ta: karbofos, metafos va b."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "154"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q07",
+   "question_i18n": {
+    "uz": "Xlorofos YuQX da qaysi reaktiv bilan qizil dog‘ hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bromfenol ko‘ki",
+     "Natriy ishqori",
+     "Dragendorf reaktivi",
+     "Rezortsin"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Xlorofos rezortsin bilan qizil rangli dog‘ hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "154"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q08",
+   "question_i18n": {
+    "uz": "Sevin YuQX da diazotirlangan sulfanil kislota bilan qanday Rf li qizil dog‘ beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,8",
+     "0,45",
+     "0,65",
+     "0,19"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Sevin Rf = 0,8 bo‘lgan qizil dog‘ beradi; naftol 0,45 li siyoh dog‘."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "155"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q09",
+   "question_i18n": {
+    "uz": "Fozalonning suyuqlanish harorati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "45-50 °C",
+     "112,8 °C",
+     "47-48 °C",
+     "212 °C"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Fozalon 47-48 °C da suyuqlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "156"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q10",
+   "question_i18n": {
+    "uz": "Fozalonning kalamushlar uchun LD50 qiymati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "49 mg/kg",
+     "1089 mg/kg",
+     "400 mg/kg",
+     "108 mg/kg"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kalamushlar uchun LD50 = 108 mg/kg."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "156"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q11",
+   "question_i18n": {
+    "uz": "GXTSG ning gamma-izomeri kalamushlar uchun LD50 qiymati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "200 mg/kg",
+     "108 mg/kg",
+     "50 mg/kg",
+     "400 mg/kg"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "GXTSG uchun LD50 = 400 mg/kg, gamma-izomeri uchun 200 mg/kg."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "157"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q12",
+   "question_i18n": {
+    "uz": "GXTSG qondan silikagelli plastinkada qanday Rf beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,34",
+     "0,19",
+     "0,57",
+     "0,80"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Silikagelda Rf = 0,19, alyuminiy oksidida 0,34."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "159"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q13",
+   "question_i18n": {
+    "uz": "Kitobga ko‘ra «kam zaharli» pestitsidlar uchun LD50 qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50 mg/kg",
+     "200-1000 mg/kg",
+     "50-200 mg/kg",
+     "1000 mg/kg dan yuqori"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Zaharlilik jadvaliga ko‘ra kam zaharli pestitsidlarda LD50 1000 mg/kg dan yuqori."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q14",
+   "question_i18n": {
+    "uz": "Zamonaviy pestitsidlar nechta dan ortiq kimyoviy modda asosida sintezlangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1500 dan ortiq",
+     "100 dan ortiq",
+     "10 dan ortiq",
+     "50 dan ortiq"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra pestitsidlar 1500 dan ortiq kimyoviy moddalar asosida sintezlangan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q15",
+   "question_i18n": {
+    "uz": "Xlorofos asosan qanday maqsadda ishlatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Gerbitsid sifatida",
+     "Insektitsid va akaritsid sifatida",
+     "Dori sifatida",
+     "Fungitsid sifatida"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Xlorofos asosan qishloq xo‘jalik o‘simliklarini parvarishlashda faol insektitsid va akaritsid sifatida ishlatiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "150"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q16",
+   "question_i18n": {
+    "uz": "DDT metabolizmida qanday kam zaharli modda hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Geptaxlor epoksidi",
+     "Naftol",
+     "Dixlordifenilsirka kislota",
+     "Merkaptan"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "DDT dan kam zaharli dixlordifenilsirka kislotasi hosil bo‘ladi, geptaxlordan esa kuchliroq zaharli epoksid."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "151"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q17",
+   "question_i18n": {
+    "uz": "FOB ajralmasidagi yog‘ni tozalashda qoldiq nima bilan aralashtirilib sovitiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oz miqdor aseton bilan, muzlatgichda",
+     "Etil spirti bilan, qaynatib",
+     "Suv bilan, isitib",
+     "Xloroform bilan, qizdirib"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Qoldiq oz miqdor aseton bilan aralashtirilib muzlatgichda sovitiladi: yog‘ qotib yuzaga chiqadi, FOB aseton qavatiga o‘tadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "152"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q18",
+   "question_i18n": {
+    "uz": "Fosformolibden ko‘ki reaksiyasi nega «manfiy ahamiyatli» deyiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat FOB beradi",
+     "Fosfor saqlovchi barcha moddalar bu reaksiyani beradi",
+     "Sezgirligi past",
+     "Faqat xlorofosga xos"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Usul yuqori sezgir, lekin fosfor saqlovchi barcha moddalar bu reaksiyani beradi; shuning uchun manfiy natija ahamiyatli."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "153"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q19",
+   "question_i18n": {
+    "uz": "Fozalon kumush nitratning spirtli eritmasi bilan qanday aniqlanish chegarasiga ega?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2 mkg",
+     "4 mkg",
+     "0,5 mkg",
+     "0,05 mg"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kumush nitratning spirtli eritmasi bilan fozalon ninasimon kristallar beradi, aniqlanish chegarasi 0,5 mkg."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "156"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-42-toks-pestitsid-fob-q20",
+   "question_i18n": {
+    "uz": "Sevinni biomaterialdan ajratishda ob’ekt qaysi erituvchi bilan bo‘ktiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Efir bilan",
+     "Geksan bilan",
+     "Etil spirti bilan",
+     "Benzol bilan (uch marta 1 soatdan)"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Sevinni ajratish uchun ob’ekt maydalanib, uch marta 1 soatdan benzol bilan bo‘ktiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "155"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

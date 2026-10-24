@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-67-toks-lab-tropan",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Atropin, skopolamin, xinin, papaverin; gel xromatografiya",
+  "ru": "Atropin, skopolamin, xinin, papaverin; gel xromatografiya",
+  "en": "Atropin, skopolamin, xinin, papaverin; gel xromatografiya"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-67-toks-lab-tropan-q01",
+   "question_i18n": {
+    "uz": "Vitali-Moren reaksiyasida atropin qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Doimiy qizil",
+     "Yashil",
+     "Ko‘k",
+     "Tez o‘chib ketuvchi binafsha"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Atropin bo‘lgan holda tez o‘chib ketuvchi binafsha rang hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "242"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q02",
+   "question_i18n": {
+    "uz": "Atropinning YuQX da Rf qiymati (xloroform-aseton-dietilamin 50:30:2)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,26",
+     "0,44",
+     "0,39",
+     "0,75"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Atropin uchun Rf=0,26; skopolamin uchun 0,44."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "243"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q03",
+   "question_i18n": {
+    "uz": "Skopolamin oltin bromid kislotasi reaktivi va KBr bilan qanday kristallar beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kub plastinkalar",
+     "Sariq-qizg‘ish tishli dendridlar",
+     "Zangori prizmalar",
+     "Rangsiz ninalar"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Skopolamin bo‘lsa, sariq-qizg‘ish tishli dendridlar hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "243"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q04",
+   "question_i18n": {
+    "uz": "Xinin suyultirilgan sulfat kislotadagi eritmasi UB nurda qanday ko‘rinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil yorug‘lik",
+     "Zangori tovlanish (fluoressensiya)",
+     "Sariq tovlanish",
+     "Qorong‘i"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Eritma UB nurlarida zangori tovlanish — fluoressensiya beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "243"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q05",
+   "question_i18n": {
+    "uz": "Xinin uchun YuQX da Rf qiymati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,39",
+     "0,26",
+     "0,75",
+     "0,44"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Sistema efir-aseton-25% NH4OH (40:20:2) da xinin uchun Rf=0,39."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "244"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q06",
+   "question_i18n": {
+    "uz": "Papaverin kadmiy xloridi bilan qanday kristallar hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil «X»",
+     "Sariq eman bargi",
+     "Rangsiz kub shaklidagi plastinkalar",
+     "Zangori prizma"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tomchilar birlashganda rangsiz kub shaklidagi plastinkalar to‘plamidan iborat kristallar hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "244"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q07",
+   "question_i18n": {
+    "uz": "Papaverin asosining 0,1 n HCl dagi eritmasi qaysi to‘lqin uzunliklarida maksimum beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "250, 284, 310 nm",
+     "236, 278, 332 nm",
+     "252, 258, 264 nm",
+     "251, 257, 263 nm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Papaverin asosi 0,1 n HCl da 250, 284 va 310 nm da maksimum beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "244"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q08",
+   "question_i18n": {
+    "uz": "Gel xromatografiyasida qaysi molekulalar birinchi yuviladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kichik hajmli",
+     "Yirik hajmli",
+     "Zaryadlanmagan",
+     "Barchasi bir vaqtda"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Avval yirik hajmli molekulalar, so‘ng kichik hajmli molekulalar yuviladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "121"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q09",
+   "question_i18n": {
+    "uz": "Vitali-Moren reaksiyasi haqida qaysi gap to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat atropin beradi",
+     "Giostsiamin, skopolamin, strixnin ham beradi",
+     "Faqat skopolamin beradi",
+     "Xinin beradi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Reaksiya atropin uchun xarakterli emas: benzol xalqali azotli birikmalar (giostsiamin, skopolamin, strixnin, apomorfin) ham beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "118"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q10",
+   "question_i18n": {
+    "uz": "Gel xromatografiya uchun naychalarning ichki diametri qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "8-10 mm",
+     "1-2 mm",
+     "100 mm",
+     "0,5 mm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Gel xromatografiya uchun ichki diametri 8-10 mm bo‘lgan naychalardan foydalaniladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q11",
+   "question_i18n": {
+    "uz": "Atropin organizmga tushgach, qancha qismi o‘zgarmagan holda peshob orqali ajraladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10%",
+     "25%",
+     "50%",
+     "90%"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kitobda organizmga tushgan atropinning 50% o‘zgarmagan holda peshob bilan ajralishi aytilgan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "117"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q12",
+   "question_i18n": {
+    "uz": "Giostsiamin atropindan nimasi bilan farqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qutblangan nurni o‘ngga burishi",
+     "Suvda erimasligi",
+     "Vitali-Moren reaksiyasini bermasligi",
+     "Qutblangan nurni chapga burishi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Giostsiamin atropin izomeri bo‘lib, faqat qutblangan nurni chapga burishi bilan farqlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "117"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q13",
+   "question_i18n": {
+    "uz": "Skopolaminning YuQX dagi Rf qiymati qancha (atropin sistemasida)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,44",
+     "0,26",
+     "0,39",
+     "0,75"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Skopolamin uchun Rf=0,44; atropin uchun 0,26."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "243"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q14",
+   "question_i18n": {
+    "uz": "Xinin sulfat kislotali eritmasiga ammiak qo‘shilib, pH=9 ga yetganda fluoressensiya qanday o‘zgaradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil rang paydo bo‘ladi",
+     "Zangori rang yo‘qolib, binafsha fluoressensiya paydo bo‘ladi",
+     "Fluoressensiya kuchayadi",
+     "O‘zgarmaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra ammiak (pH=9) qo‘shilganda zangori rang yo‘qolib, binafsha fluoressensiya hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "119"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q15",
+   "question_i18n": {
+    "uz": "Talleoxin reaksiyasida xinin qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil",
+     "Sariq",
+     "Ko‘k",
+     "Rangsiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Brom suvi va ammiak ta’sirida eritma ko‘k rangga bo‘yaladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "244"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q16",
+   "question_i18n": {
+    "uz": "Eritroxin reaksiyasi qaysi reaktivlar bilan bajariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat brom suvi",
+     "Dragendorf reaktivi",
+     "Kadmiy xloridi",
+     "K3[Fe(CN)6], brom suvi va ammiak"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Eritroxin uchun K3[Fe(CN)6], brom suvi va ammiak eritmasi qo‘shiladi; qizil binafsha rang hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "244"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q17",
+   "question_i18n": {
+    "uz": "Peshobdan xininni ajratishda muhit qaysi pH ga keltiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "pH=7",
+     "pH=2",
+     "pH=10 (10% ammiak bilan)",
+     "pH=14"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "2 ml peshob 10% ammiak bilan pH=10 ga keltirilib, xloroform yoki efir bilan chayqatiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "244"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q18",
+   "question_i18n": {
+    "uz": "Papaverin opiy tarkibida taxminan qancha miqdorda uchraydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10-15%",
+     "50% dan ko‘p",
+     "25-30%",
+     "0,1-1,5%"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Papaverin opiy tarkibida 0,1-1,5% atrofida uchraydi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q19",
+   "question_i18n": {
+    "uz": "Gel xromatografiyada gellarni birinchi bo‘lib kim, qachon qo‘llagan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1944 yilda Porat",
+     "1884 yilda Flodin",
+     "1959 yilda Porat va Flodin",
+     "1967 yilda Sobolev"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Gellarni birinchi bo‘lib 1959 yilda Porat va Flodinlar suyuq aralashmalar uchun qo‘llagan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "121"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-67-toks-lab-tropan-q20",
+   "question_i18n": {
+    "uz": "Yumshoq gellarda xromatografiyalash odatda qanday ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sulfirlash",
+     "Adsorbsiya",
+     "Reekstraksiya",
+     "Gel-filtrlash"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Yumshoq gellarda xromatografiyalash odatda gel-filtrlash deb ataladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

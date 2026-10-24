@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-48-toks-lab-dastlabki",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Ashyoviy dalillarni dastlabki tekshirish: pH, rang, hid; kislotalar, ishqorlar, nitrit/nitratlar, sianidlar, oq mishyak",
+  "ru": "Ashyoviy dalillarni dastlabki tekshirish: pH, rang, hid; kislotalar, ishqorlar, nitrit/nitratlar, sianidlar, oq mishyak",
+  "en": "Ashyoviy dalillarni dastlabki tekshirish: pH, rang, hid; kislotalar, ishqorlar, nitrit/nitratlar, sianidlar, oq mishyak"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-48-toks-lab-dastlabki-q01",
+   "question_i18n": {
+    "uz": "Idish ustidagi yozuvlar va yo‘llanma hujjatlar o‘rtasida farq bo‘lsa nima qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yozuv o‘zgartiriladi",
+     "Uch kishilik hay’at ishtirokida dalolatnoma tuziladi",
+     "Ob’ekt yo‘q qilinadi",
+     "Tahlil davom ettiriladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Farq bo‘lsa darhol uch kishilik hay’at ishtirokida dalolatnoma tuziladi va boshqa ashyoviy dalillar talab qilinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "169"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q02",
+   "question_i18n": {
+    "uz": "Ob’ekt muhitini aniqlash uchun oz miqdor ob’ekt qancha tozalangan suv bilan aralashtiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5-1,0 ml",
+     "5-10 ml",
+     "10-20 ml",
+     "50 ml"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Oz miqdor ob’ekt maydalanib, 0,5-1,0 ml tozalangan suv bilan aralashtiriladi; 3-5 daqiqadan keyin indikator qog‘oziga tomiziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "169"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q03",
+   "question_i18n": {
+    "uz": "pH 3 yoki undan kichik bo‘lsa, bu nimadan dalolat beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Neytral birikmalardan",
+     "Mineral kislotalar yoki ko‘p miqdorda organik kislotalardan",
+     "Karbonatlardan",
+     "Ishqorlardan"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "pH 3 yoki kichik bo‘lsa: asosan mineral kislotalar yoki ko‘p miqdorda organik kislotalar."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "21"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q04",
+   "question_i18n": {
+    "uz": "Oq mishyak sinovida probirka devorida qanday dog‘ hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qizil",
+     "Ko‘k",
+     "Qoramtir-kul rangli",
+     "Sariq"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Namlangan qism ochilganda probirka devorida qoramtir-kul rangli dog‘ aniqlansa, oq mishyak borligidan dalolat beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "170"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q05",
+   "question_i18n": {
+    "uz": "Sianid kislotasi uchun dastlabki sinovda qanday rang hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Zangori",
+     "Qizil",
+     "Sariq",
+     "Ko‘k"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Sianid kislotasi bo‘lgan taqdirda FeCl3 va FeCl2 aralashmasi va HCl qo‘shilganda ko‘k rang hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "170"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q06",
+   "question_i18n": {
+    "uz": "Nitrat va nitritlar uchun dastlabki sinovda qaysi reaktiv ishlatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kobalt atsetati",
+     "Ammiakli kumush nitrat",
+     "Fuksinsulfit",
+     "Difenilamin reaktivi va konsentrlangan sulfat kislotasi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Suvli eritmaga difenilamin reaktivi va konsentrlangan sulfat kislotasi qo‘shiladi; zangori rang nitrat va nitrit borligini ko‘rsatadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "170"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q07",
+   "question_i18n": {
+    "uz": "Nitrat/nitrit sinovi ijobiy bo‘lsa, azobo‘yoq reaksiyasida qanday rang hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qora",
+     "Qizil",
+     "Ko‘k",
+     "Yashil"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Eritmaga xlorid va sulfanil kislotalar aralashmasi hamda naftolning ishqoriy eritmasi qo‘shilsa, qizil rangli azobo‘yoq hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "170"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q08",
+   "question_i18n": {
+    "uz": "Peshobda aminazin uchun 1 ml peshobga qancha reaktiv qo‘shiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5 ml",
+     "0,1 ml",
+     "10 ml",
+     "1 ml"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "1 ml peshobga 1 ml reaktiv yoki 1 ml FPN reaktivi qo‘shiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "170"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q09",
+   "question_i18n": {
+    "uz": "FPN reaktivi tarkibida qaysi kislotalar bor?"
+   },
+   "options_i18n": {
+    "uz": [
+     "CH3COOH va HCl",
+     "H3PO4 va H2SO4",
+     "HClO4 va HNO3",
+     "HCl va H2SO4"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "FPN reaktivi: 5 ml 5% FeCl3, 45 ml 20% HClO4 va 50 ml 50% HNO3."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "170"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q10",
+   "question_i18n": {
+    "uz": "Qaysi alomat ob’ektda sianidlar borligiga ishora qilishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Achchiq bodom hidi",
+     "Piridin hidi",
+     "Qora rang",
+     "Chinni parchalari"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Achchiq bodom hidi ob’ekt tarkibida sianidlar borligidan dalolat berishi mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "21"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q11",
+   "question_i18n": {
+    "uz": "Ob’ekt chirishi natijasida muhit nima uchun kislotali bo‘lishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "NH3 ajralishi tufayli",
+     "O2 ajralishi tufayli",
+     "CO2 ajralishi tufayli",
+     "H2S ajralishi hisobiga"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ob’ekt chirishi natijasida H2S ajralishi hisobiga muhit kislotali bo‘lishi mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "169"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q12",
+   "question_i18n": {
+    "uz": "Rangi, hidi va yot qo‘shimchalarni aniqlash sud kimyogariga nimaga imkon beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Birinchi navbatda qaysi zaharlarni izlash zarurligini bilishga",
+     "Zaharning miqdorini hisoblashga",
+     "Natijani rasmiylashtirishga",
+     "Ob’ektni konservalashga"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ob’ektning rangi, hidi va yot qoldiqlarini aniqlash birinchi navbatda qanday zaharli moddalarni izlash zarurligini bilishga imkon beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "169"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q13",
+   "question_i18n": {
+    "uz": "Oq mishyak sinovida chinni parchasi qo‘shimchasi naychada nima bilan qizdiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oksalat kislota bilan",
+     "Natriy ishqori bilan",
+     "Kichik ko‘mir parchasi bilan",
+     "Difenilamin bilan"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Pinset bilan ajratilgan qo‘shimcha ingichka probirkaga solinib, kichik ko‘mir parchasi qo‘shiladi va kuchsiz alangada qizdiriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "170"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q14",
+   "question_i18n": {
+    "uz": "Sianid kislotasi dastlabki sinovida buyum oynachasining ostki qismida nima bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ishqor eritmasi tomchisi",
+     "Difenilamin eritmasi",
+     "FeCl3 tomchisi",
+     "Oksalat kislota kristallari"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Oksalat kislota qo‘shilgan ob’ekt ustiga ostki qismida ishqor eritmasi tomchisi bo‘lgan buyum oynachasi yopiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "170"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q15",
+   "question_i18n": {
+    "uz": "Difenilamin bilan zangori rangni nitrat kislotadan tashqari yana qaysi moddalar beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nitrit kislota va ayrim oksidlovchilar",
+     "Hech qaysi modda",
+     "Faqat sulfatlar",
+     "Faqat xloridlar"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Difenilamin reaksiyasini nitrat kislotadan tashqari nitrit kislota va ayrim oksidlovchilar ham beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "261"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q16",
+   "question_i18n": {
+    "uz": "Sianid kislotasi murda organlarida nima uchun uzoq saqlanmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Murdada hech qachon hosil bo‘lmaydi",
+     "U faqat chirish gazlari bilan chiqib ketadi",
+     "Gidrolizlanadi, rodanidlarga aylanadi va aldegidli qandlar bilan birikadi",
+     "Mineral kislotalar bilan to‘liq cho‘kadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "HCN gidrolizlanadi, rodanidlarga aylanadi, aldegid saqlovchi qandlar bilan birikadi (siangidrin) va CO2, glyukoza, havo ta’sirida o‘zgaradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "28"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q17",
+   "question_i18n": {
+    "uz": "Berlin zangorisining formulasi qaysi javobda to‘g‘ri berilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Fe(CNS)3",
+     "Fe4[Fe(CN)6]3",
+     "Fe(CN)2",
+     "Na4[Fe(CN)6]"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Na4[Fe(CN)6] temir(III) xlorid bilan Fe4[Fe(CN)6]3 — berlin zangorisini hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "29"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q18",
+   "question_i18n": {
+    "uz": "Mishyak organizmda asosan qayerda to‘planadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat qonda",
+     "Faqat miyada",
+     "Parenxima organlari, suyak, teri va sochda",
+     "Faqat o‘pkada"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Mishyak organizmda parenxima organlarida, suyak, teri va sochda to‘planadi; peshob, ichak va bezlar orqali juda sekin chiqariladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "75"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q19",
+   "question_i18n": {
+    "uz": "Hg va As ni chinni kabi bo‘lakchalardan taxminiy tekshirish qaysi usulda bajariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kjeldal usulida",
+     "Dragendorf usulida",
+     "Marsh usulida",
+     "Reynsh usulida"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Oq margimush bilan zaharlanganni ko‘rsatuvchi chinni kabi bo‘lakchalarni tekshirish (Hg va As) Reynsh usulida o‘tkaziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "12"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-48-toks-lab-dastlabki-q20",
+   "question_i18n": {
+    "uz": "Konsentrlangan (68%) nitrat kislota uchun LD50 qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100 ml",
+     "8-10 ml",
+     "1-2 ml",
+     "50-60 ml"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Konsentrlangan nitrat kislota (68%) uchun LD50 = 8-10 ml."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "144"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}

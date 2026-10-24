@@ -147,6 +147,123 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki usul orasidagi farq qaysi fazaga bog‘liq? Doskada: ikki ustunli taqqoslash. Tipik xato: qo‘zg‘aluvchi fazani suyuqlik deb yozish; ikkala usulda ham u gaz."
     },
     {
+      "title": "Gaz xromatografiyasi turlari",
+      "bullets": [
+        {
+          "text": "Qo‘zg‘aluvchi faza gaz, qo‘zg‘almas faza qattiq sorbent (aktivlangan ko‘mir, silikagel, alyuminiy oksidi) bo‘lsa — gaz adsorbsion xromatografiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qo‘zg‘aluvchi faza gaz, qo‘zg‘almas faza yuqori haroratda qaynovchi suyuqlik bo‘lsa — gaz-suyuqlik xromatografiyasi (GSX).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gaz xromatografiyasi ajratuvchi (elyuent), frontal va siqib chiqaruvchi usullarga bo‘linadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Gaz xromatografiyasi",
+        "children": [
+          {
+            "label": "Gaz-adsorbsion",
+            "items": [
+              "Qo‘zg‘almas faza: qattiq sorbent",
+              "Ko‘mir, silikagel, Al2O3"
+            ]
+          },
+          {
+            "label": "Gaz-suyuqlik (GSX)",
+            "items": [
+              "Qo‘zg‘almas faza: suyuqlik",
+              "Qattiq neytral moddaga shimdirilgan"
+            ]
+          },
+          {
+            "label": "Usullar",
+            "items": [
+              "Elyuent (ajratuvchi)",
+              "Frontal",
+              "Siqib chiqaruvchi"
+            ]
+          }
+        ],
+        "caption": "GX turlari (47-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ikkala usulda qo‘zg‘aluvchi faza nima? (gaz.) Doskada: daraxt. Tipik xato: GSX da qo‘zg‘almas fazani qattiq sorbent deb hisoblash."
+    },
+    {
+      "title": "Xromatografiya tarixi",
+      "bullets": [
+        {
+          "text": "Xromatografiya birinchi bo‘lib 1903 yilda M.S. Svet tomonidan yashil o‘simliklardan olingan murakkab aralashmani ajratishda qo‘llangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1941 yili Martin va Sinjlar qog‘oz xromatografiyasini taklif etib Nobel mukofotini olgan; qo‘zg‘aluvchi faza sifatida gazni ham ko‘rsatgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "1952 yili Djeyn va Martinlar gaz adsorbsion va gaz-suyuqlik xromatografiyasi usullarini yaratdilar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "47"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Yil",
+          "Voqea"
+        ],
+        "rows": [
+          [
+            "1903",
+            "M.S. Svet: o‘simlik aralashmasi"
+          ],
+          [
+            "1941",
+            "Martin va Sinj: qog‘oz xromatografiyasi"
+          ],
+          [
+            "1952",
+            "Djeyn va Martin: gaz adsorbsion va GSX"
+          ]
+        ],
+        "caption": "Tarix (47-bet)"
+      },
+      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: 1941 yildagi kashfiyot gazli usulga yo‘l ochdi. Doskada: vaqt chizig‘i. Tipik xato: GSX ni 1903 yilda yaratilgan deb aytish."
+    },
+    {
       "title": "Moddalarning ajralish mexanizmi",
       "bullets": [
         {
@@ -177,7 +294,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "cycle",
+        "nodes": [
+          "Namuna gaz oqimiga kiradi",
+          "Fazada adsorbsiya",
+          "Gaz fazasiga desorbsiya",
+          "Ko‘p bor qayta taqsimlanish"
+        ],
+        "caption": "Adsorbsiya-desorbsiya (188-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun bir xil sharoitda turli spirtlar kolonkadan turli vaqtda chiqadi? Doskada: adsorbsiya-desorbsiya sikli. Tipik xato: ajralishni faqat qaynash haroratiga bog‘lash; kitobda taqsimlanish koeffitsienti ko‘rsatilgan."
     },
     {
@@ -248,7 +374,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Diametri",
+            "value": "2 dan 12-15",
+            "unit": "mm"
+          },
+          {
+            "label": "Uzunligi",
+            "value": "2 dan 20",
+            "unit": "m"
+          },
+          {
+            "label": "Shakli",
+            "value": "U, spiral, aylana"
+          },
+          {
+            "label": "Spirt tahlilida",
+            "value": "100 x 0,6",
+            "unit": "sm"
+          }
+        ],
+        "caption": "Kolonka (188, 192-betlar)"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: spirt tahlilidagi 100 x 0,6 sm kolonka umumiy diapazonga kiradimi? (Umumiy diapazon 2-20 m, spirt kolonkasi 100 x 0,6 sm, ya’ni 1 m — kitobda farq izohlanmagan, o‘qituvchi bilan aniqlashtiring.) Doskada: o‘lchamlar. Tipik xato: sm va m birliklarini aralashtirish."
     },
     {
@@ -282,7 +432,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ajralish omillari",
+        "children": [
+          {
+            "label": "Kolonka",
+            "items": [
+              "Sorbent bir xil zichlikda to‘ldirilishi"
+            ]
+          },
+          {
+            "label": "Sorbent",
+            "items": [
+              "Silikagel, Al2O3, aktivlangan ko‘mir",
+              "Xemosorb, polisorb"
+            ]
+          },
+          {
+            "label": "Gaz",
+            "items": [
+              "Azot, geliy, argon",
+              "Gaz tezligi"
+            ]
+          },
+          {
+            "label": "Harorat",
+            "items": [
+              "Kolonka harorati doimiy"
+            ]
+          }
+        ],
+        "caption": "Omillar (189-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: harorat doimiy bo‘lmasa ushlanish vaqti qanday o‘zgaradi? (Kitobda natija ko‘rsatilmagan, faqat doimiylik shart.) Doskada: omillar ro‘yxati. Tipik xato: spirt tahlilida ishlatiladigan gazni geliy deb yozish; spirt shartlarida tashuvchi gaz — azot (190-bet)."
     },
     {
@@ -307,7 +489,7 @@
           "uncertain": false
         },
         {
-          "text": "Integral detektor signali gaz oqimidagi moddaning umumiy massasiga to‘g‘ri proporsional; toza gazda yozuvda gorizontal chiziq, aralashmada pog‘onali chiziq chiqadi.",
+          "text": "Integral detektor signali gaz oqimidagi moddaning umumiy massasiga to‘g‘ri proporsional; toza gazda gorizontal chiziq, aralashmada pog‘onali chiziq.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -316,7 +498,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Integral detektor",
+            "items": [
+              "Signal umumiy massaga proporsional",
+              "Toza gazda gorizontal chiziq",
+              "Aralashmada pog‘onali chiziq"
+            ]
+          },
+          {
+            "title": "Differensial detektor",
+            "items": [
+              "Miqdorning vaqt bo‘yicha o‘zgarishi",
+              "Konsentratsion va oqimli turlar",
+              "Ko‘pchilik detektorlar shunday"
+            ]
+          }
+        ],
+        "caption": "Detektorlar (189-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: pog‘onaning balandligi nimani bildiradi? (Ajralgan moddaning miqdorini.) Doskada: gorizontal chiziq va pog‘onali chiziq. Tipik xato: integral va differensial detektorlarni aralashtirish."
     },
     {
@@ -354,12 +557,12 @@
           [
             "Konsentratsion",
             "Katarometr",
-            "Gazning issiqlik o‘tkazuvchanligi o‘zgarishi"
+            "Issiqlik o‘tkazuvchanlik o‘zgarishi"
           ],
           [
             "Oqimli",
             "Alangali-ionizatsion",
-            "Vodorod alangasining elektr o‘tkazuvchanligi"
+            "Alanga elektr o‘tkazuvchanligi"
           ]
         ]
       },
@@ -400,6 +603,72 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: sezgirligi past bo‘lsa ham katarometr nima uchun qulay? Doskada: afzallik va kamchilik. Tipik xato: katarometrni eng sezgir detektor deb yozish; eng sezgiri — elektron ushlovchi."
     },
     {
+      "title": "Detektor turlari",
+      "bullets": [
+        {
+          "text": "Tuzilishi va ishlash usuliga ko‘ra detektorlar: katarometr, alangali ionlanish, elektron tutuvchi (tashuvchi) va termoion.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Detektorlar integral va differensial turlarga bo‘linadi; differensial detektorlar konsentratsion va oqimli bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "189"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Detektorlar ichida elektron ushlovchi detektorlar eng sezgir.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "189"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Detektorlar",
+        "children": [
+          {
+            "label": "Katarometr",
+            "items": [
+              "Issiqlik o‘tkazuvchanlik farqi",
+              "Konsentratsion; universal"
+            ]
+          },
+          {
+            "label": "Alangali ionlanish",
+            "items": [
+              "Vodorod alangasi, elektr o‘tkazuvchanlik",
+              "Oqimli detektor"
+            ]
+          },
+          {
+            "label": "Elektron tutuvchi",
+            "items": [
+              "Eng sezgir detektorlar"
+            ]
+          },
+          {
+            "label": "Termoion",
+            "items": [
+              "Termoion detektor"
+            ]
+          }
+        ],
+        "caption": "Detektor turlari (48-189-betlar)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega spirt tahlilida katarometr tanlanadi? (sodda va oson, universal — 189-bet.) Doskada: daraxt. Tipik xato: eng sezgir detektorni eng universal deb o‘ylash."
+    },
+    {
       "title": "Xromatogramma va uning parametrlari",
       "bullets": [
         {
@@ -430,7 +699,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Parametr",
+          "Ma’nosi"
+        ],
+        "rows": [
+          [
+            "Egri chiziq",
+            "Kolonkada ajralgan alohida modda"
+          ],
+          [
+            "Ushlanish vaqti",
+            "Sifat ko‘rsatkichi"
+          ],
+          [
+            "Balandlik va asos",
+            "Cho‘qqi o‘lchamlari"
+          ],
+          [
+            "Yuza",
+            "Miqdor ko‘rsatkichi"
+          ]
+        ],
+        "caption": "Xromatogramma (189-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: egri chiziqning qaysi parametri sifatni, qaysisi miqdor haqida belgi beradi? (Kitobda: ushlanish vaqti — sifat; balandlik — miqdorga bog‘liq.) Doskada: pik va uning parametrlari. Tipik xato: egri chiziq balandligini sifat belgisi deb hisoblash."
     },
     {
@@ -464,8 +758,140 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Namuna kolonkaga yuboriladi",
+          "Kolonkada moddalar ajraladi",
+          "Maksimum cho‘qqi yoziladi",
+          "Vaqt standart bilan solishtiriladi"
+        ],
+        "caption": "Ushlanish vaqti (189, 193-betlar)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sharoit o‘zgarsa, ushlanish vaqti bilan identifikatsiya qilish mumkinmi? Doskada: injeksiya vaqti va pik maksimumi. Tipik xato: boshqa kolonka yoki haroratda olingan vaqtni standart bilan solishtirish."
+    },
+    {
+      "title": "Chin ushlanish vaqti",
+      "bullets": [
+        {
+          "text": "Ushlanish vaqti — moddaning kolonkaga yuborilganidan to maksimum cho‘qqi hosil bo‘lgunicha ketgan vaqt yoki masofa.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sorbentga shimilgan gazning ushlanish vaqti o‘lik ushlanish vaqti deyiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Moddaning chin ushlanish vaqti modda va gaz aralashmasi ushlanish vaqtidan o‘lik ushlanish vaqtini ayirishga teng.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "48"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Kattalik",
+          "Ma’nosi"
+        ],
+        "rows": [
+          [
+            "t um",
+            "Modda + gaz ushlanish vaqti"
+          ],
+          [
+            "t m",
+            "O‘lik ushlanish vaqti"
+          ],
+          [
+            "t chin",
+            "t chin = t um − t m"
+          ],
+          [
+            "l chin",
+            "l chin = l um − l m (masofa)"
+          ]
+        ],
+        "caption": "Chin ushlanish (48-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: o‘lik ushlanish vaqti nimani bildiradi? Doskada: formulalar. Tipik xato: o‘lik vaqtni ayirmay sifat tahlili qilish."
+    },
+    {
+      "title": "GSX da sifat tahlili usullari",
+      "bullets": [
+        {
+          "text": "Sifat tahlili xromatografik kolonkada ushlanish parametrlari bo‘yicha amalga oshiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Standart modda yoki ular aralashmasi bilan solishtirish; xromatografiyadan oldin va keyin kimyoviy reaksiyalar olib borish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "48"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "GSX ni UF, IK, mass-spektr, lyuminestsent va YaMR kabi fizik usullar bilan birga bajarish ham mumkin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "48"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Sifat tahlili",
+        "children": [
+          {
+            "label": "Ushlanish parametrlari",
+            "items": [
+              "Vaqt yoki masofa bo‘yicha"
+            ]
+          },
+          {
+            "label": "Standart bilan taqqoslash",
+            "items": [
+              "Standart modda yoki aralashma"
+            ]
+          },
+          {
+            "label": "Kimyoviy reaksiyalar",
+            "items": [
+              "Xromatografiyadan oldin va keyin"
+            ]
+          },
+          {
+            "label": "Fizik usullar bilan",
+            "items": [
+              "UF, IK, mass-spektr, YaMR"
+            ]
+          }
+        ],
+        "caption": "Sifat tahlili (48-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bitta parametr yetarli emas? Doskada: daraxt. Tipik xato: ushlanish vaqti mos kelsa modda aniqlandi deb xulosa qilish."
     },
     {
       "title": "Tahlilga tayyorgarlik",
@@ -507,7 +933,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Dozator tiqinchasiga sovun eritmasi",
+          "Pufakcha yo‘q: dozator zich yopilgan",
+          "Pufakcha bor: tiqin almashtiriladi",
+          "Zichlik butun mashg‘ulot tekshiriladi"
+        ],
+        "caption": "Dozator tekshiruvi (190-bet)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun zich bo‘lmagan tiqin tahlilni buzadi? (Kitobda sabab yozilmagan; namuna yo‘qolishi — o‘qituvchi izohi.) Doskada: sovun sinovi. Tipik xato: tiqinni o‘qituvchisiz almashtirish."
     },
     {
@@ -550,14 +985,23 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "1 mkl shpritsga 0,5 mkl aseton",
+          "Filtr qog‘oziga tomizish",
+          "Igna uchida mikrotomchi bo‘lishi kerak",
+          "Bo‘lmasa — vint bilan qayta kalibrlash"
+        ],
+        "caption": "Mikroshprits (190-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun aynan aseton olinadi? (Kitobda sabab ko‘rsatilmagan.) Doskada: 0,5 mkl aseton sinovi. Tipik xato: mkl va ml birliklarini aralashtirish."
     },
     {
       "title": "Xromatografning sezgirligini va havoni tekshirish",
       "bullets": [
         {
-          "text": "Sezgirlik tekshirilganda yuborilgan havo egri chizig‘ida pero egri chiziq maksimumi balandligining yarmiga teng bo‘lganda sezgirlik darajasi tezda «100» holatga o‘tkaziladi.",
+          "text": "Sezgirlik tekshirilganda havo egri chizig‘ida pero maksimumi balandligining yarmiga teng bo‘lganda sezgirlik darajasi tezda «100» holatga o‘tkaziladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -793,7 +1237,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Aralashma yuboriladi, vaqt belgilanadi",
+          "Eng baland nuqta vaqti yoziladi",
+          "Ish daftariga yoziladi",
+          "Tekshiruv uch marta takrorlanadi"
+        ],
+        "caption": "Standart yozuvlari (193-bet)"
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun tekshiruv 3 marta takrorlanadi? (Kitobda sabab yo‘q; takrorlanish natija ishonchliligi uchun — o‘qituvchi izohi.) Doskada: jadval ustunlari: yuborilgan vaqt, pik vaqti, balandlik. Tipik xato: bitta o‘lchovga tayanish."
     },
     {
@@ -886,6 +1339,53 @@
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: qon/peshob va standart tayyorlash tartibi qanday o‘xshash? (Ikkalasida 50% kislota va 30% natriy nitrit ishlatiladi.) Doskada: sxema. Tipik xato: natriy nitrit hajmini (0,25 ml) o‘zgartirish."
     },
     {
+      "title": "Spirtlarni alkilnitritlarga o‘tkazish",
+      "bullets": [
+        {
+          "text": "Qon va peshobdan spirtlarni sifat va miqdoriy aniqlash ularni alkilnitritlarga o‘tkazib, xromatografik ajratishga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alkilnitritlar mos spirtlarga nisbatan bir necha marta uchuvchanroq.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Flakonga uchxlorsirka kislotasi, so‘ng qon yoki peshob solinadi, natriy nitrit eritmasi shprits bilan qo‘shiladi, par-gaz fazasidan namuna olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Spirt (qon yoki peshobda)",
+          "Natriy nitrit NaNO2",
+          "Uchxlorsirka kislotasi"
+        ],
+        "products": [
+          "Alkilnitrit"
+        ],
+        "caption": "Alkilnitrit hosil bo‘lishi (49, 191-betlar)",
+        "conditions": "Yopiq flakon, 1 daqiqa chayqatish",
+        "observation": "Spirtdan bir necha marta uchuvchanroq"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega spirtni alkilnitritga aylantiramiz? Doskada: reagentlar. Reaksiya tenglamasini yozish topshirig‘i kitobda berilgan (dvssm 193); tenglama kitobda yozilmagan. Tipik xato: flakon tiqinini mahkamlamasdan ishlash."
+    },
+    {
       "title": "Namunani xromatografga yuborish",
       "bullets": [
         {
@@ -916,7 +1416,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Flakondan 3 ml havo-gaz (5 ml shprits)",
+          "Dozatorga tez yuboriladi",
+          "Sekundomer yurgiziladi",
+          "Cho‘qqi vaqtlari belgilanadi"
+        ],
+        "caption": "Yuborish (191-bet)"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun sekundomer injeksiya bilan birga yurgiziladi? (Ushlanish vaqti injeksiyadan boshlab o‘lchanadi — 189-bet.) Doskada: vaqt o‘qi. Tipik xato: suyuq fazadan olish; kitobda havo-gaz qismidan olinadi."
     },
     {
@@ -950,8 +1459,184 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Namuna cho‘qqilari vaqti belgilanadi",
+          "Standart vaqt bilan solishtiriladi",
+          "Cho‘qqi balandligi baholanadi",
+          "Spirtlar ko‘p-ozligi aniqlanadi"
+        ],
+        "caption": "Talqin (191-bet)"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qaysi parametr bo‘yicha qaysi spirt ekani aniqlanadi? Doskada: namuna va standart vaqtlarini solishtirish jadvali. Tipik xato: miqdorni faqat bitta balandlikdan baholash; kitobda ichki standart bilan o‘lchov jadvali tuzish ko‘rsatilgan (191-bet). Kitobda mastlik darajasi talqin jadvali bu mashg‘ulotda berilmagan."
+    },
+    {
+      "title": "GSX da miqdor tahlili usullari",
+      "bullets": [
+        {
+          "text": "Gaz xromatografik tahlillarda modda miqdori uch usulda aniqlanadi: ichki standart, absolyut kalibrlash va ichki normallash.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Spirt miqdori ichki standartlash usulida aniqlanadi; ichki standart sifatida propil spirti olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hisob kalibrovka grafigi orqali bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Miqdor tahlili",
+        "children": [
+          {
+            "label": "Ichki standart",
+            "items": [
+              "Spirtlar uchun: propil spirti"
+            ]
+          },
+          {
+            "label": "Absolyut kalibrlash"
+          },
+          {
+            "label": "Ichki normallash"
+          }
+        ],
+        "caption": "Miqdor usullari (49-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ichki standart nimani kompensatsiya qiladi? (kitobda izohlanmagan — o‘qituvchi muhokamasi.) Doskada: daraxt. Tipik xato: ichki standart sifatida tahlil qilinadigan spirtni olish."
+    },
+    {
+      "title": "Ichki standart bilan hisoblash",
+      "bullets": [
+        {
+          "text": "Ichki standart sifatida propil spirti olinadi, hisob kalibrovka grafigi orqali bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Grafik etilnitrit cho‘qqisi balandligining (h1) propilnitrit cho‘qqisi balandligiga (h2) nisbati va modda konsentratsiyasi asosida tuziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tanlab olingan ichki standartlar bilan aniq o‘lchov jadvali tuziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "191"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Standart eritmalar",
+            "text": "Spirt + ichki standart (propil spirti) tayyorlanadi"
+          },
+          {
+            "title": "Alkilnitritlar",
+            "text": "Namuna alkilnitritlarga o‘tkaziladi, GSX ga yuboriladi"
+          },
+          {
+            "title": "Cho‘qqi balandligi",
+            "text": "Etilnitrit (h1) va propilnitrit (h2) o‘lchanadi"
+          },
+          {
+            "title": "Grafik",
+            "text": "h1/h2 nisbati va konsentratsiya grafigi"
+          },
+          {
+            "title": "Hisob",
+            "text": "Noma’lum namuna h1/h2 bo‘yicha grafikdan topiladi"
+          }
+        ],
+        "caption": "Ichki standart (49, 191-betlar)"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nisbat (h1/h2) nimaga kerak? Doskada: 5 qadam. Tipik xato: faqat etilnitrit balandligiga tayanib hisoblash."
+    },
+    {
+      "title": "GSX afzalliklari va kamchiligi",
+      "bullets": [
+        {
+          "text": "GSX universal usul; murakkab aralashmalarni komponentlarga ajratadi; tahlilga kam vaqt va kam modda sarflanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Usul yetarli sezgirlikka ega, aniqligi yuqori: nisbiy xatolik ±1,0-1,5% atrofida.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamchilik sifatida ayrim suyuq qo‘zg‘almas fazalarning uchuvchanligi va beqarorligi aytiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "49"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Afzalliklari",
+            "items": [
+              "Universal usul",
+              "Murakkab aralashmani ajratadi",
+              "Kam vaqt, kam modda",
+              "Yetarli sezgirlik",
+              "Nisbiy xatolik ±1,0-1,5%"
+            ]
+          },
+          {
+            "title": "Kamchiligi",
+            "items": [
+              "Ayrim suyuq fazalar uchuvchan",
+              "Ayrim suyuq fazalar beqaror"
+            ]
+          }
+        ],
+        "caption": "GSX (49-bet)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega sud kimyosida GSX qulay? Doskada: ikki ustun. Tipik xato: nisbiy xatolikni mutlaq xatolik deb o‘ylash."
     },
     {
       "title": "Xavfsizlik va ish tartibi",
@@ -1084,7 +1769,7 @@
           ],
           [
             "Detektor",
-            "Komponentlarni elektr signali bilan aniqlaydi"
+            "Elektr signali bilan aniqlaydi"
           ],
           [
             "Monometr",
@@ -1102,7 +1787,7 @@
       "title": "Amaliy vaziyat (7-keys)",
       "bullets": [
         {
-          "text": "1-kurs talabalari bayram uchun kuchsiz, yoqimli nok hidli spirtli ichimlik tayyorlagan; ichganlarda bir soatdan keyin ko‘ngil aynishi, qorin og‘rig‘i, bosh aylanishi, holsizlik.",
+          "text": "1-kurs talabalari bayram uchun kuchsiz, nok hidli ichimlik tayyorlagan; ichganlarda 1 soatdan keyin ko‘ngil aynishi, qorin og‘rig‘i, bosh aylanishi, holsizlik.",
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
@@ -1131,18 +1816,78 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: GSX ishlash tamoyilini bayon eting va etil spirti misolida tahlil tartibini ko‘rsating. Kitobda keysning javob jadvali (muammo turi, sabablari, hal etish yo‘llari) bo‘sh qoldirilgan, ya’ni javob kitobda yo‘q — talabalar o‘quv materiali asosida to‘ldiradi. Kitobda boshqa, qondagi spirt va peshobdagi spirt nisbati bo‘yicha 6-keys ham bor (dvssm 189)."
+    },
+    {
+      "title": "7-keys: yechish yo‘li",
+      "bullets": [
+        {
+          "text": "Keys: 1-kurs talabalari tayyorlagan yoqimli nok hidli kuchsiz spirtli ichimlikni ichgan kishilarda ko‘ngil aynishi, qorin og‘rig‘i, bosh aylanishi, holsizlik.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "192"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Yarim soatdan keyin MNS ta’siri: uyquchanlik, karaxtlik, ko‘z qorachig‘ining kengayishi, qon bosimining tushishi; nafasdan sivush moyi hidi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "192"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Amil va izoamil spirtlari samogon tarkibida ko‘p uchraydi va markaziy asab tizimiga ta’sir qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "43"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Taxmin",
+            "text": "Sivush moyi hidi — amil spirtlari (samogon) ehtimoli"
+          },
+          {
+            "title": "Ajratish",
+            "text": "Suv bug‘i bilan haydash, distillyatni efir bilan ekstraksiya"
+          },
+          {
+            "title": "GSX",
+            "text": "Alkilnitritlarga o‘tkazib, ushlanish vaqtini standart bilan solishtirish"
+          },
+          {
+            "title": "Tasdiq",
+            "text": "Salitsil aldegidi bilan binafsha-qizil rang, oksidlash"
+          },
+          {
+            "title": "Miqdor",
+            "text": "Ichki standart (propil spirti) usuli"
+          }
+        ],
+        "caption": "Keys yo‘li (49, 192, 43-betlar)"
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Kitob keysga javob bermaydi; qadamlar 43, 49, 186-betlar asosida o‘qituvchi uchun yo‘nalish. Muhokama: nok hidi nimani bildiradi? (kitobda izohlanmagan — o‘qituvchi muhokamasi.) Tipik xato: faqat hidga tayanib moddani nomlash.",
+      "diagram_note": "Keys qadamlari kitob materiallari asosida taxminiy (kitobda javob berilmagan; nok hidi izohlanmagan)."
     }
   ],
   "mcq": [
     {
       "question": "Gaz xromatografiyasida qo‘zg‘aluvchi faza nima?",
       "options": [
-        "Suyuqlik",
-        "Gaz",
+        "Aralashma ustiga qoplangan suyuqlik",
         "Qattiq g‘ovak modda",
-        "Aralashma ustiga qoplangan suyuqlik"
+        "Suyuqlik",
+        "Gaz"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Gaz-adsorbsion va gaz-suyuqlik usullarining ikkalasida ham qo‘zg‘aluvchi faza gaz hisoblanadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1153,12 +1898,12 @@
     {
       "question": "Gaz-suyuqlik xromatografiyasida qo‘zg‘almas faza qanday?",
       "options": [
-        "G‘ovak qattiq moddaning o‘zi",
-        "Qo‘zg‘aluvchi gaz",
         "G‘ovak qattiq modda ustiga qoplangan suyuqlik",
-        "Faqat suv bug‘i"
+        "Faqat suv bug‘i",
+        "G‘ovak qattiq moddaning o‘zi",
+        "Qo‘zg‘aluvchi gaz"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Gaz-suyuqlik usulida qo‘zg‘almas faza g‘ovak qattiq modda ustiga qoplangan suyuqlikdan iborat.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1169,12 +1914,12 @@
     {
       "question": "Moddalarning bir-biridan ajralish samaradorligi nimaga bog‘liq?",
       "options": [
-        "Taqsimlanish koeffitsientiga",
+        "Idish hajmiga",
         "Shpritsning rangiga",
         "Qog‘oz rangiga",
-        "Idish hajmiga"
+        "Taqsimlanish koeffitsientiga"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Ajralish samaradorligi moddalarning taqsimlanish koeffitsientiga bog‘liq.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1185,12 +1930,12 @@
     {
       "question": "Katarometr qaysi xossa o‘zgarishiga asoslangan?",
       "options": [
+        "Gaz hidi",
         "Gazning issiqlik o‘tkazuvchanligi",
         "Alanganing rangi",
-        "Gaz hidi",
         "Idish massasi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Katarometr gazlarning issiqlik o‘tkazuvchanligi o‘zgarishini aniqlaydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1203,8 +1948,8 @@
       "options": [
         "Integral detektorlarga",
         "Oqimli detektorlarga",
-        "Konsentratsion detektorlarga",
-        "Yozuvchi moslamalarga"
+        "Yozuvchi moslamalarga",
+        "Konsentratsion detektorlarga"
       ],
       "correct_index": 1,
       "explanation": "Alangali-ionizatsion detektor oqimli detektorlarga misol sifatida keltirilgan.",
@@ -1217,9 +1962,9 @@
     {
       "question": "Moddaning ushlanish vaqti qanday aniqlanadi?",
       "options": [
-        "Kolonka uzunligi bo‘yicha",
-        "Namuna yuborilgandan eng ko‘p miqdorda chiqquncha o‘tgan vaqt bilan",
         "Faqat egri chiziq balandligi bilan",
+        "Namuna yuborilgandan eng ko‘p miqdorda chiqquncha o‘tgan vaqt bilan",
+        "Kolonka uzunligi bo‘yicha",
         "Gaz rangi bilan"
       ],
       "correct_index": 1,
@@ -1250,9 +1995,9 @@
       "question": "Spirtlarni tahlil qilishda kolonka va detektor bloki harorati qancha?",
       "options": [
         "25°C",
-        "50°C",
+        "120°C",
         "75°C",
-        "120°C"
+        "50°C"
       ],
       "correct_index": 2,
       "explanation": "Spirt tahlili shartlarida xromatografik kolonka va detektor bloki harorati 75°C.",
@@ -1265,12 +2010,12 @@
     {
       "question": "Qon yoki peshob namunasi uchun penitsillin flakoniga 0,5 ml 50% uchxlorsirka kislotadan tashqari nima solinadi?",
       "options": [
-        "0,5 ml qon yoki peshob",
-        "5 ml suv",
         "1 ml efir",
-        "3 ml aseton"
+        "3 ml aseton",
+        "0,5 ml qon yoki peshob",
+        "5 ml suv"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Flakonga 0,5 ml 50% uchxlorsirka kislota, ustiga 0,5 ml qon yoki peshob solinadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1281,17 +2026,177 @@
     {
       "question": "Qon yoki peshob namunasi uchun flakon ichidagi havo-gaz qismidan qancha olinadi?",
       "options": [
-        "1 ml",
-        "3 ml",
         "10 ml",
-        "0,5 ml"
+        "0,5 ml",
+        "3 ml",
+        "1 ml"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "5 ml li shprits bilan flakon ichidagi havo-gaz qismidan 3 ml olinib, dozatorga yuboriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "191"
+      }
+    },
+    {
+      "question": "Taqsimlanish koeffitsienti K kichik bo‘lsa, modda kolonkadan qanday chiqadi?",
+      "options": [
+        "Sekin chiqadi",
+        "Umuman chiqmaydi",
+        "Tez chiqadi",
+        "Bir xil tezlikda chiqadi"
+      ],
+      "correct_index": 2,
+      "explanation": "K kichik bo‘lsa, modda qo‘zg‘almas fazada kam shimiladi va kolonkadan tez chiqariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "48"
+      }
+    },
+    {
+      "question": "Moddaning chin ushlanish vaqti qanday topiladi?",
+      "options": [
+        "t chin = t um − t m",
+        "t chin = t m − t um",
+        "t chin = t um / t m",
+        "t chin = t um + t m"
+      ],
+      "correct_index": 0,
+      "explanation": "Chin ushlanish vaqti modda va gaz aralashmasi ushlanish vaqtidan o‘lik ushlanish vaqtini ayirishga teng.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "48"
+      }
+    },
+    {
+      "question": "Spirtlarni alkilnitritlar orqali GSX da aniqlashda ichki standart sifatida nima olinadi?",
+      "options": [
+        "Etilenglikol",
+        "Metil spirti",
+        "Propil spirti",
+        "Aseton"
+      ],
+      "correct_index": 2,
+      "explanation": "Spirt miqdori ichki standartlash usulida aniqlanadi; ichki standart sifatida propil spirti olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "49"
+      }
+    },
+    {
+      "question": "GSX usulining nisbiy xatoligi taxminan qancha?",
+      "options": [
+        "±0,01%",
+        "±1,0-1,5%",
+        "±50%",
+        "±10-15%"
+      ],
+      "correct_index": 1,
+      "explanation": "Usul yetarlicha yuqori aniqlikka ega, nisbiy xatoligi ±1,0-1,5% atrofida.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "49"
+      }
+    },
+    {
+      "question": "Mikroshpritsni tekshirishda shpritsga qancha aseton olinadi?",
+      "options": [
+        "50 mkl",
+        "5 ml",
+        "1 ml",
+        "0,5 mkl"
+      ],
+      "correct_index": 3,
+      "explanation": "Shpritsga 0,5 mkl aseton olinib, filtr qog‘oziga tomiziladi: igna uchida mikrotomchi hosil bo‘lishi kerak.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "190"
+      }
+    },
+    {
+      "question": "Katarometrning sezgirligi boshqa detektorlarga nisbatan qanday?",
+      "options": [
+        "Eng yuqori",
+        "Faqat alkilnitritlar uchun",
+        "Nolga teng",
+        "Past (10-2 - 10-3), lekin sodda va oson"
+      ],
+      "correct_index": 3,
+      "explanation": "Katarometr universal, sezgirligi alangali-ionizatsion va boshqa detektorlarga nisbatan past (10-2 - 10-3), lekin sodda va oson.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "189"
+      }
+    },
+    {
+      "question": "Qaysi detektorlar eng sezgir hisoblanadi?",
+      "options": [
+        "Katarometr",
+        "Elektron ushlovchi detektorlar",
+        "Termometr",
+        "Integral detektorlar"
+      ],
+      "correct_index": 1,
+      "explanation": "Detektorlar ichida elektron ushlovchi detektorlar eng sezgir.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "189"
+      }
+    },
+    {
+      "question": "Xromatografik kolonkaning uzunligi qaysi oraliqda bo‘ladi?",
+      "options": [
+        "2 m dan 20 m gacha",
+        "50-100 m",
+        "1-5 sm",
+        "0,1-1 mm"
+      ],
+      "correct_index": 0,
+      "explanation": "Kolonkalar diametri 2 mm dan 12-15 mm gacha, uzunligi 2 m dan 20 m gacha bo‘lgan «U», spiral yoki aylana trubka shaklida bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "188"
+      }
+    },
+    {
+      "question": "Alkilnitritlar mos spirtlarga nisbatan qanday?",
+      "options": [
+        "Bir necha marta uchuvchanroq",
+        "Suvda yaxshi eriydi",
+        "Uchmaydi",
+        "Bir xil uchuvchanlikda"
+      ],
+      "correct_index": 0,
+      "explanation": "Alkilnitritlar ularga mos spirtlarga nisbatan bir necha marotaba uchuvchan bo‘ladi, shu sababli spirtlar nitritlarga aylantiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "49"
+      }
+    },
+    {
+      "question": "Gaz adsorbsion xromatografiyada qo‘zg‘almas faza nima?",
+      "options": [
+        "Yuqori haroratda qaynovchi suyuqlik",
+        "Suv",
+        "Inert gaz",
+        "Qattiq sorbent"
+      ],
+      "correct_index": 3,
+      "explanation": "Qo‘zg‘aluvchi faza gaz, qo‘zg‘almas faza qattiq sorbent bo‘lsa — gaz adsorbsion xromatografiya.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "47"
       }
     }
   ],
@@ -1326,7 +2231,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 166, 188-192"
+      "pages": "b. 43, 47-49, 166, 188-192"
     },
     {
       "author": "Yuldashev Z.A., Nurmatova M.I.",

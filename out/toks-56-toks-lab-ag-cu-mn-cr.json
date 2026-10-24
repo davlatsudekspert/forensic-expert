@@ -14,7 +14,7 @@
           "uncertain": false
         },
         {
-          "text": "Maqsad: sulfat va nitrat kislotalar bilan mineralizatsiyalab ajratilgan marganets, xrom va kumush kationlarining toksikologik ahamiyati va tahlil usullari bilan tanishtirish.",
+          "text": "Maqsad: sulfat va nitrat kislotalar bilan ajratilgan marganets, xrom va kumush kationlarining ahamiyati va tahlil usullari bilan tanishtirish.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -102,6 +102,87 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ajratgich voronka qaysi reaksiyalarda kerak? (Ditizon bilan ekstraksiyada.) Doskada: ro‘yxat. Tipik xato: suv hammomi o‘rniga to‘g‘ridan-to‘g‘ri alanga ishlatish."
+    },
+    {
+      "title": "Dars xaritasi: to‘rt kation",
+      "bullets": [
+        {
+          "text": "Reja: mineralizatdan kumush, mis, marganets va xrom kationlari aniqlanadi (FEK usulida miqdor tahlili).",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kumush uchun ditizon, AgCl cho‘kmasi va mikrokristall reaksiyalar bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis uchun dietilditiokarbaminat va uch qism sifat reaksiyalari; marganets uchun peryodat va persulfat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xrom uchun nadxromat va difenilkarbazid reaksiyalari; marganets xromni aniqlashga halaqit beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "204"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "caption": "Mineralizatdagi kationlar",
+        "root": "Mineralizat (FEK tahlili)",
+        "children": [
+          {
+            "label": "Kumush",
+            "items": [
+              "Ditizon: sariq-tilla xloroform",
+              "AgCl cho‘kmasi → NH4OH",
+              "Mikrokristallar, KI"
+            ]
+          },
+          {
+            "label": "Mis",
+            "items": [
+              "Pb-DDTK, pH 3",
+              "Ekstraktni tozalash",
+              "Uch qism: tasdiqlash"
+            ]
+          },
+          {
+            "label": "Marganets",
+            "items": [
+              "Kaliy peryodat, 20 daq",
+              "Ammoniy persulfat",
+              "Binafsha rang"
+            ]
+          },
+          {
+            "label": "Xrom",
+            "items": [
+              "Nadxromat (etilatsetat)",
+              "Difenilkarbazid, pH 1,7",
+              "Mn halaqiti: NaN3"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi kation uchun nechta reaksiya bajariladi? Doskada: daraxt sxemasi. Tipik xato: kationlarni bir-biriga aralashtirish."
     },
     {
       "title": "Kumush: ditizonat reaksiyasi",
@@ -202,6 +283,63 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega farqlash zarur? Doskada: jadval. Tipik xato: HCl ni 0,5n o‘rniga konsentrlangan olish."
     },
     {
+      "title": "Marganets va xrom: taqqoslash",
+      "bullets": [
+        {
+          "text": "Marganets kaliy peryodat yoki ammoniy persulfat bilan oksidlanadi; ikkala usulda ham binafsha rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xromda uch valentli xrom persulfat bilan olti valentligacha oksidlanadi, so‘ng difenilkarbazid qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "204"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xromni difenilkarbazid bilan aniqlashda marganets halaqit beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "204"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "caption": "Marganets va xrom",
+        "columns": [
+          {
+            "title": "Marganets",
+            "items": [
+              "KIO4 0,2 g yoki persulfat 0,5 g",
+              "Birlamchi Na fosfat, AgNO3",
+              "Suv hammomi: 20 yoki 5-6 daqiqa",
+              "Natija: binafsha"
+            ]
+          },
+          {
+            "title": "Xrom",
+            "items": [
+              "Persulfat 0,5 g + AgNO3",
+              "Cr(III) → Cr(VI)",
+              "pH 1,7, difenilkarbazid 0,25%",
+              "Natija: qizil-binafsha"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nima uchun ikkala kation birga uchrasa, xrom reaksiyasi buziladi? Doskada: taqqoslash jadvali. Tipik xato: binafsha rangni ikkala kation uchun bir xil deb olish."
+    },
+    {
       "title": "Kumush xlorid cho‘kmasi",
       "bullets": [
         {
@@ -248,6 +386,52 @@
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun kumush filtratdan oldin ajratiladi? Doskada: sxema. Kitobda reaksiya tenglamasini yozish topshirig‘i berilgan; kumush tekshiruvi xrom va marganets tekshiruvidan keyin o‘tkazilishi sababi (206-bet 16-savol) kitobda izohlanmagan."
     },
     {
+      "title": "AgCl cho‘kmasi: reaksiya sxemasi",
+      "bullets": [
+        {
+          "text": "90 ml mineralizatga 0,5 g osh tuzi qo‘shilganda oq loyqa kumush xlorid cho‘kmasi hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aralashma qaynaguncha qizdirilib, birozdan so‘ng filtrlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Filtrat mis, surma, rux, mishyak va boshqa kationlarga tekshiriladi; cho‘kma ammoniy gidrooksidda eritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "caption": "AgCl cho‘kmasi",
+        "reagents": [
+          "90 ml mineralizat",
+          "0,5 g osh tuzi"
+        ],
+        "conditions": "Qaynaguncha qizdirish, filtrlash",
+        "products": [
+          "AgCl (oq loyqa cho‘kma)"
+        ],
+        "observation": "Filtrat: Cu, Sb, Zn, As; cho‘kma: 2,5 ml 25% NH4OH"
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: kumush nima uchun xlorid sifatida ajratiladi? Doskada: sxema. Tipik xato: NaCl miqdorini (0,5 g) o‘zgartirib yuborish."
+    },
+    {
       "title": "Kumush: mikrokristall va cho‘ktirish reaksiyalari",
       "bullets": [
         {
@@ -278,8 +462,99 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "table",
+        "caption": "Kumush eritmasi bilan uch reaksiya",
+        "header": [
+          "Reaksiya",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Uy haroratida quritish",
+            "Kub, oktaedr, to‘rtburchak"
+          ],
+          [
+            "Tiomochevina + kaliy pikrat",
+            "Sariq ignasimon kristallar"
+          ],
+          [
+            "Ammiakli eritma + to‘yingan KI",
+            "Sarg‘ish loyqa va cho‘kma"
+          ]
+        ],
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: uch reaksiyadan qaysi biri eng aniq tasdiqlaydi? Doskada: kristall shakllari. Tipik xato: eritmani tez qizdirib quritish; kitobda uy haroratida sekin quritiladi."
+    },
+    {
+      "title": "Kumush: asosiy ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Ditizon reaksiyasi: 5 ml mineralizat, 5 ml xloroform va 0,01% ditizon (xloroformda) bir necha tomchi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Simob va kumush ditizonatlarini farqlash uchun 5 ml 0,5n HCl ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "AgCl uchun 90 ml mineralizat va 0,5 g osh tuzi; cho‘kma 2,5 ml 25% ammoniy gidrooksidda eritiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Kumush: hajmlar va konsentratsiyalar",
+        "items": [
+          {
+            "label": "Mineralizat (ditizon)",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "Xloroform",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "Ditizon (xloroformda)",
+            "value": "0,01",
+            "unit": "%"
+          },
+          {
+            "label": "HCl (farqlash)",
+            "value": "0,5",
+            "unit": "n, 5 ml"
+          },
+          {
+            "label": "Mineralizat (AgCl)",
+            "value": "90",
+            "unit": "ml"
+          },
+          {
+            "label": "NH4OH (eritish)",
+            "value": "2,5",
+            "unit": "ml, 25%"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi qiymat qaysi reaksiyaga tegishli? Doskada: jadval. Tipik xato: ditizon konsentratsiyasini 0,1% deb yozish (talliy uchun 0,1%)."
     },
     {
       "title": "Mis: dietilditiokarbaminat reaksiyasi",
@@ -358,7 +633,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Mis ekstraktini tozalash",
+        "items": [
+          {
+            "title": "6n HCl bilan yuvish",
+            "text": "Xloroform qatlami 30 soniya, so‘ng suv bilan yuviladi"
+          },
+          {
+            "title": "HgCl2 bilan chayqatish",
+            "text": "1% eritma bilan rang o‘chib ketguncha"
+          },
+          {
+            "title": "Suv qo‘shish",
+            "text": "Rangsiz aralashmaga 0,5-1 ml suv, chayqatish"
+          },
+          {
+            "title": "Suvli qatlam",
+            "text": "Ajratib olinadi va uch qismga bo‘linadi"
+          },
+          {
+            "title": "Sifat reaksiyalari",
+            "text": "Har bir qismda alohida reaksiya bajariladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 6n HCl bilan yuvishdan maqsad nima? (Ortiqcha Pb reagentini yo‘qotish.) Doskada: ketma-ketlik. Tipik xato: simob(II) xlorid bilan chayqatishni rang o‘chmasdan to‘xtatish."
     },
     {
@@ -397,7 +697,7 @@
             "Och binafsha cho‘kma"
           ],
           [
-            "0,2 g ZnSO4 + ammoniy tetrarodanmerkuriat",
+            "0,2 g ZnSO4 + NH4 tetrarodanmerkuriat",
             "Och binafsha cho‘kma"
           ],
           [
@@ -407,6 +707,73 @@
         ]
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: uchta reaksiyaning natijalari mos kelishi nimani bildiradi? Doskada: jadval. Kitobda reaksiya tenglamalarini yozish topshirig‘i berilgan. Tipik xato: bitta reaksiyaga tayanib xulosa qilish."
+    },
+    {
+      "title": "Mis: asosiy ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "10 ml mineralizat ammiak bilan pH 3 ga yetkaziladi; 5 ml qo‘rg‘oshin dietilditiokarbaminatning xloroformli eritmasi qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform qatlami 30 soniya 6n HCl bilan, so‘ng suv bilan yuviladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rang o‘chib ketguncha 1% simob(II) xlorid bilan chayqatiladi; 0,5-1 ml suv qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Mis: asosiy qiymatlar",
+        "items": [
+          {
+            "label": "Mineralizat",
+            "value": "10",
+            "unit": "ml"
+          },
+          {
+            "label": "pH",
+            "value": "3"
+          },
+          {
+            "label": "Pb-DDTK (xloroform)",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "HCl bilan yuvish",
+            "value": "6n / 30 s"
+          },
+          {
+            "label": "HgCl2 eritmasi",
+            "value": "1",
+            "unit": "%"
+          },
+          {
+            "label": "Suv (suvli qatlam)",
+            "value": "0,5-1",
+            "unit": "ml"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: pH 3 ga nima bilan yetkaziladi? Doskada: qiymatlar jadvali. Tipik xato: pH ni universal indikatorsiz ‘ko‘z bilan’ olish."
     },
     {
       "title": "Marganets: kaliy peryodat bilan oksidlash",
@@ -531,6 +898,75 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: bir usulda rang bo‘lmasa nima qilinadi? Doskada: jadval. Kitobda 206-bet 2-savolga javob berilmagan; o‘qituvchi talabalarga mantiqiy xulosa qildiradi."
     },
     {
+      "title": "Marganets: asosiy ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Peryodat usuli: 1 ml mineralizat, 4 ml suv, 1 ml birlamchi natriy fosfat, 1 tomchi 10% AgNO3 va 0,2 g kaliy peryodat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aralashma suv hammomida 20 daqiqa qizdiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Persulfat usuli: 0,5 g ammoniy persulfat; qizdirish gaz pufakchalari chiqishi to‘xtaguncha davom etadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Marganets: asosiy qiymatlar",
+        "items": [
+          {
+            "label": "Mineralizat",
+            "value": "1",
+            "unit": "ml"
+          },
+          {
+            "label": "Suv",
+            "value": "4",
+            "unit": "ml"
+          },
+          {
+            "label": "AgNO3 10%",
+            "value": "1",
+            "unit": "tomchi"
+          },
+          {
+            "label": "Kaliy peryodat",
+            "value": "0,2",
+            "unit": "g"
+          },
+          {
+            "label": "Suv hammomi (KIO4)",
+            "value": "20",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Ammoniy persulfat",
+            "value": "0,5",
+            "unit": "g"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qaysi reagent ikkala usulda ham bor? Doskada: qiymatlar. Tipik xato: kumush nitrat tomchisini qoldirib ketish."
+    },
+    {
       "title": "Xrom: nadxromat kislotasi reaksiyasi",
       "bullets": [
         {
@@ -607,7 +1043,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Difenilkarbazid usuli",
+        "items": [
+          {
+            "title": "Oksidlash",
+            "text": "Mineralizat, suv, AgNO3 10%, 0,5 g persulfat: 20 daqiqa"
+          },
+          {
+            "title": "Cr(III) → Cr(VI)",
+            "text": "Uch valentli xrom olti valentliga oksidlanadi"
+          },
+          {
+            "title": "Fosfat va pH",
+            "text": "Birlamchi Na fosfat; 10% KOH bilan pH 1,7"
+          },
+          {
+            "title": "Reagent",
+            "text": "0,25% difenilkarbazid (etanol-aseton 1:1), 1 ml"
+          },
+          {
+            "title": "Natija",
+            "text": "Xrom bo‘lsa, qizil-binafsha rang hosil bo‘ladi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: nima uchun avval oksidlash kerak? (Kitobda uch valentli xromning olti valentliga oksidlanishi ko‘rsatilgan.) Doskada: pH 1,7 va reagent hajmi. Tipik xato: pH ni nazorat qilmaslik."
     },
     {
@@ -641,8 +1102,85 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "Marganets halaqitini yo‘qotish",
+        "nodes": [
+          "Marganets halaqit beradi",
+          "+ 1 tomchi konsentrlangan H2SO4",
+          "+ natriy azid kristallari",
+          "Qizil rang yo‘qolguncha aralashtirish",
+          "+ 1% difenilkarbazid: pushti/qizil"
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: marganets sababli paydo bo‘lgan qizil rang qanday yo‘qotiladi? Doskada: 3 bosqich. Kitobda reaksiya natijalariga sud-kimyoviy talab bo‘yicha izoh berish topshirig‘i bor. Tipik xato: difenilkarbazidni natriy azidgacha qo‘shish."
+    },
+    {
+      "title": "Xrom: asosiy ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Nadxromat usuli: 5 ml mineralizat pH 7 gacha 30% NaOH bilan neytrallanadi, 0,5 g persulfat qo‘shilib 20 daqiqa qizdiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Difenilkarbazid usulida pH 1,7 ga 10% KOH bilan keltiriladi; 0,25% reagentdan 1 ml qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "204"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marganets bo‘lsa, konsentrlangan H2SO4 va natriy azid yordamida halaqit yo‘qotiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "204"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "caption": "Xrom: asosiy qiymatlar",
+        "items": [
+          {
+            "label": "Mineralizat",
+            "value": "5",
+            "unit": "ml"
+          },
+          {
+            "label": "NaOH 30%: pH",
+            "value": "7"
+          },
+          {
+            "label": "Ammoniy persulfat",
+            "value": "0,5",
+            "unit": "g"
+          },
+          {
+            "label": "Qizdirish",
+            "value": "20",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Difenilkarbazid: pH",
+            "value": "1,7"
+          },
+          {
+            "label": "Reagent 0,25%",
+            "value": "1",
+            "unit": "ml"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun ikki xil pH ishlatiladi? Doskada: qiymatlar. Tipik xato: pH 7 va pH 1,7 ni almashtirib yuborish."
     },
     {
       "title": "Natijalar jamlanmasi",
@@ -699,6 +1237,114 @@
         ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: jadvaldan qaysi ikki kation rangi o‘xshash (marganets va xrom)? Doskada: jadval. Tipik xato: binafsha rangni ikkala kation uchun bir xil deb hisoblash; sharoit (oksidlash, pH, reagent) farqlanadi. Kitobning 205-betidagi «Charxpalak» jadvali (fizik-kimyoviy xossalar, sifat va miqdoriy tahlil) ustunlari tartibsiz joylashgan, ba’zi xossalar ham shubhali (masalan, «oq rangli» deb yozilgan), shu sabab slaydga kiritilmadi."
+    },
+    {
+      "title": "Organik qatlam: erituvchi va natija",
+      "bullets": [
+        {
+          "text": "Kumush ditizonati xloroform qatlamida sariq-tilla rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis dietilditiokarbaminati xloroform qatlamini sariq-qo‘ng‘ir rangga bo‘yaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xromni nadxromat shaklida aniqlashda sirka etil efiri qo‘shiladi; xrom bo‘lsa, organik qatlam bo‘yaladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "204"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Organik qatlam bo‘yalishi",
+        "header": [
+          "Kation",
+          "Erituvchi",
+          "Reagent",
+          "Natija"
+        ],
+        "rows": [
+          [
+            "Kumush",
+            "Xloroform",
+            "Ditizon 0,01%",
+            "Sariq-tilla"
+          ],
+          [
+            "Mis",
+            "Xloroform",
+            "Pb-DDTK, pH 3",
+            "Sariq-qo‘ng‘ir"
+          ],
+          [
+            "Xrom",
+            "Sirka etil efiri",
+            "Pergidrol, fosfat",
+            "Qatlam bo‘yaladi"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun uch kationda erituvchi bir xil emas? Doskada: jadval. Tipik xato: kitobda nomi ko‘rsatilmagan rangni o‘zingizdan to‘qish."
+    },
+    {
+      "title": "Kumush uchun tahlil yo‘li",
+      "bullets": [
+        {
+          "text": "Ditizon bilan reaksiya chiqmasa, kumush uchun tahlil to‘xtatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reaksiya chiqsa, 0,5n HCl bilan simob ditizonatidan farqlanadi: kumushda rang ko‘k-yashilga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "So‘ng AgCl cho‘kmasi ajratilib, ammiakli eritmada mikrokristall va KI reaksiyalari bajariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "caption": "Kumush uchun tahlil yo‘li",
+        "nodes": [
+          "Ditizon: sariq-tilla xloroform",
+          "0,5n HCl: ko‘k-yashil (Hg emas)",
+          "AgCl: 0,5 g osh tuzi",
+          "2,5 ml 25% NH4OH da eritish",
+          "Kristallar; KI: loyqa"
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega birinchi navbatda ditizon sinaladi? Doskada: sxema. Tipik xato: simob ditizonatini kumushniki deb hisoblash."
     },
     {
       "title": "«Bilaman – bilishni xohlayman – bilib oldim»",
@@ -772,7 +1418,7 @@
       "title": "Vaziyatli masala: ovqatdan zaharlanish",
       "bullets": [
         {
-          "text": "Yoz mavsumida Sh. Aliev dala hovlisida tayyor ovqat va salatlarni iste’mol qilgan; ovqatdan zaharlanib qayt qilganda unga 1 litr suyultirilgan kaliy permanganat eritmasi va ichimlik sodasi ichirilgan.",
+          "text": "Yoz mavsumida Sh. Aliev tayyor ovqat va salatlarni iste’mol qilgan; qayt qilganda unga 1 litr suyultirilgan KMnO4 eritmasi va ichimlik sodasi ichirilgan.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -855,6 +1501,356 @@
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: javobni mashg‘ulot bayoniga tayanib bering. Doskada: 4 savol. Kitobda jami 29 ta savol (206-207), javoblari yo‘q; slaydga bayonga eng yaqin 4 tasi olindi."
     },
     {
+      "title": "Tenglamasi yoziladigan reaksiyalar",
+      "bullets": [
+        {
+          "text": "Kumush: ditizonat, simob/kumush ditizonatini farqlash va AgCl cho‘kmasi reaksiyalari uchun kimyoviy tenglama yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "202"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis: dietilditiokarbaminat hosil bo‘lishi va uch qism reaksiyalari uchun tenglama yozish topshirig‘i berilgan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marganets va xrom: peryodat, persulfat, nadxromat va difenilkarbazid reaksiyalari uchun tenglama yoziladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "caption": "Tenglama yoziladigan reaksiyalar",
+        "header": [
+          "Kation",
+          "Reaksiyalar",
+          "Bet"
+        ],
+        "rows": [
+          [
+            "Kumush",
+            "Ditizonat; Hg/Ag farqlash; AgCl",
+            "202"
+          ],
+          [
+            "Mis",
+            "DDTK; uch qism reaksiyalari",
+            "203"
+          ],
+          [
+            "Marganets",
+            "Peryodat; persulfat",
+            "203"
+          ],
+          [
+            "Xrom",
+            "Nadxromat; difenilkarbazid",
+            "203-204"
+          ]
+        ],
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: tenglamada qaysi reagent va qanday mahsulot yoziladi? Doskada: jadval. Tipik xato: tenglamani tenglashtirmasdan qoldirish."
+    },
+    {
+      "title": "Sud-kimyoviy izoh talabi",
+      "bullets": [
+        {
+          "text": "Mis uchun uch qism reaksiyalari natijalariga asoslanib sud-kimyosi tahlili talabi bo‘yicha izoh beriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marganets uchun ikkala reaksiya taqqoslanib, qanday holatda marganets bilan zaharlanish tasdiqlanishi izohlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "203"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xrom uchun reaksiya natijalariga sud-kimyoviy tahlil talabi bo‘yicha izoh beriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "204"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: izoh ‘ijobiy/salbiy’ so‘zidan nimasi bilan farq qiladi? Doskada: 3 izoh namunasi. Tipik xato: faqat bitta reaksiyaga tayanish."
+    },
+    {
+      "title": "Nazorat savollari: marganets",
+      "bullets": [
+        {
+          "text": "Mineralizatdan marganets kationini aniqlash reaksiyalarini kimyoviy tenglamalar asosida tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Peryodat bilan ijobiy, persulfat bilan salbiy natija olinsa, u qanday baholanadi? Nima uchun?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marganets reaksiyasi nima uchun birlamchi natriy fosfat va kumush nitrat ishtirokida olib boriladi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marganets kationining miqdori qanday usulda aniqlanadi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mineralizat kaliy peryodat bilan oksidlanganda qaysi kation hisobiga binafsha rangga o‘tadi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 2-savolga mantiqiy javob. Doskada: 5 savol. Tipik xato: javobni kitobda bor deb izlash: javoblar berilmagan."
+    },
+    {
+      "title": "Nazorat savollari: xrom",
+      "bullets": [
+        {
+          "text": "Xrom kationini tekshiriluvchi ob’ekt tarkibidan aniqlash asoslari nimadan iborat?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xrom kationi mineralizatga qanday rang beradi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bioob’ekt tarkibidagi xromni kasrli usulda aniqlashda qanday reaksiyalar asos qilib olinadi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xromni difenilkarbazid bilan aniqlashda nima uchun birlamchi natriy fosfat eritmasidan foydalaniladi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xrom kationi miqdorini qanday aniqlash mumkin?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: rang bo‘yicha javob. Doskada: 5 savol. Tipik xato: nadxromat va difenilkarbazid ranglarini aralashtirish."
+    },
+    {
+      "title": "Nazorat savollari: kumush",
+      "bullets": [
+        {
+          "text": "Kumush kationini mineralizatdan chinligini aniqlash usullarini kimyoviy reaksiyalar asosida tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nima uchun kumushga tekshirish xrom va marganets kationlarini tekshirishdan keyin olib boriladi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kumushni aniqlashda qanday mikrokristall hosil qiluvchi reaksiyalardan foydalaniladi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kumush miqdorini aniqlash usullari; kolorimetrik usulning hajmiy usuldan afzalligi qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kumush ditizonatini aniqlashda qanday kationlar halaqit beradi va ularni qanday ajratish mumkin?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: kumush tekshiruvi tartibda nega oxirgi? Doskada: 5 savol. Tipik xato: mikrokristall shaklini eslab qolmaslik."
+    },
+    {
+      "title": "Nazorat savollari: mis (1)",
+      "bullets": [
+        {
+          "text": "Mis kationining chinligini aniqlashda qanday reaksiyalardan foydalaniladi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dietilditiokarbaminat mis kompleksi hosil qilish shartlari va kimyoviy tenglamasini yozing.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "206"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dietilditiokarbaminat mis kompleksidan misni qayta ekstraksiya qilish shartlarini yozing.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eluatni mis uchun tekshirish reaksiyalari va ularning kimyoviy tenglamalari qanday?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis kationini boshqa metall kationlaridan ajratish usullari va sharoitlarini tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: qayta ekstraksiya sharti. Doskada: 5 savol. Tipik xato: DDTK va Pb-DDTK ni adashtirish."
+    },
+    {
+      "title": "Nazorat savollari: mis (2)",
+      "bullets": [
+        {
+          "text": "Metall kationlarini ajratishda, chinligi va miqdorini aniqlashda qo‘llanadigan organik reaktivlarni reaksiyalar asosida ko‘rsating.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Toksikologik ahamiyatli metall kationlarini aniqlashda ditizon reaktivining qo‘llanilishini misollar bilan tushuntiring.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis kationi kasrli usulda qanday aniqlanadi?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mis miqdorini aniqlash usullarini yozing; kolorimetrik usulda aniqlash mumkinligini ko‘rsating va isbotlang.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "207"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: ditizon qaysi kationlarda qo‘llanadi (bu dars: Ag). Doskada: 4 savol. Tipik xato: ditizon reaksiyasini faqat kumushga xos deb hisoblash."
+    },
+    {
       "title": "Xavfsizlik va ish tartibi",
       "bullets": [
         {
@@ -893,12 +1889,12 @@
     {
       "question": "Kumush ditizonatida xloroform qatlami qanday rangga bo‘yaladi?",
       "options": [
-        "Sariq-tilla",
         "Ko‘k",
-        "Qizil",
-        "Rangsiz"
+        "Rangsiz",
+        "Sariq-tilla",
+        "Qizil"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Mineralizat tarkibida kumush bo‘lsa, xloroform qatlami sariq-tilla rangga bo‘yaladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -909,12 +1905,12 @@
     {
       "question": "Kumush va simob ditizonatlarini farqlash uchun xloroformli qatlam nima bilan chayqatiladi?",
       "options": [
-        "5 ml 0,5n HCl",
         "Suv",
+        "Spirt",
         "10% NaOH",
-        "Spirt"
+        "5 ml 0,5n HCl"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Xloroformli qatlamga 5 ml 0,5n HCl qo‘shib chayqatiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -925,12 +1921,12 @@
     {
       "question": "0,5n HCl bilan chayqatilganda kumush ditizonatining rangi qanday o‘zgaradi?",
       "options": [
+        "O‘zgarmaydi",
         "Ko‘k-yashilga",
-        "Qizilga",
         "Qora",
-        "O‘zgarmaydi"
+        "Qizilga"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Kumush ditizonatida sariq-tilla rang ko‘k-yashilga o‘zgaradi; simobda o‘zgarmaydi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -941,12 +1937,12 @@
     {
       "question": "Kumush xlorid cho‘kmasini hosil qilish uchun 90 ml mineralizatga nima qo‘shiladi?",
       "options": [
+        "10 ml ammiak",
         "0,5 g osh tuzi",
         "5 g KI",
-        "10 ml ammiak",
         "1 g sulfat"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "90 ml mineralizatga 0,5 g osh tuzi qo‘shiladi; oq loyqa AgCl hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -957,12 +1953,12 @@
     {
       "question": "Mis dietilditiokarbaminati uchun mineralizat qaysi pH ga keltiriladi?",
       "options": [
-        "pH 3",
-        "pH 7",
+        "pH 12",
         "pH 10",
-        "pH 12"
+        "pH 3",
+        "pH 7"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "10 ml mineralizat ammiak yordamida pH 3 ga yetkaziladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -973,12 +1969,12 @@
     {
       "question": "Mis bo‘lsa, xloroform qatlami dietilditiokarbaminat bilan qanday rangga bo‘yaladi?",
       "options": [
-        "Sariq-qo‘ng‘ir",
         "Yashil",
-        "Ko‘k",
-        "Pushti"
+        "Sariq-qo‘ng‘ir",
+        "Pushti",
+        "Ko‘k"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Mis bo‘lgan holda xloroform qatlami sariq-qo‘ng‘ir rangga bo‘yaladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -989,12 +1985,12 @@
     {
       "question": "Marganetsni peryodat bilan aniqlashda aralashma suv hammomida qancha qizdiriladi?",
       "options": [
-        "20 daqiqa",
+        "Qizdirilmaydi",
         "1 daqiqa",
         "5 soat",
-        "Qizdirilmaydi"
+        "20 daqiqa"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Peryodat usulida suv hammomida 20 daqiqa qizdiriladi; binafsha rang hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1005,12 +2001,12 @@
     {
       "question": "Persulfat usulida qizdirish qachon to‘xtatiladi?",
       "options": [
-        "Gaz pufakchalari chiqishi to‘xtaganda",
-        "Aralashma qaynaganda",
         "5 daqiqadan keyin",
-        "Cho‘kma tushganda"
+        "Cho‘kma tushganda",
+        "Gaz pufakchalari chiqishi to‘xtaganda",
+        "Aralashma qaynaganda"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Qaynoq aralashma gaz pufakchalari chiqishi to‘xtaguncha qizdiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1021,12 +2017,12 @@
     {
       "question": "Difenilkarbazid bilan xrom aniqlashda pH qaysi qiymatga keltiriladi?",
       "options": [
-        "1,7",
         "5",
         "9",
-        "13"
+        "13",
+        "1,7"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Birlamchi natriy fosfat qo‘shilib, 10% KOH bilan pH 1,7 ga keltiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1037,13 +2033,173 @@
     {
       "question": "Xromni difenilkarbazid bilan aniqlashda nima halaqit beradi?",
       "options": [
+        "Natriy xlorid",
         "Marganets",
         "Kumush",
-        "Natriy xlorid",
         "Suv"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Xromni difenilkarbazid bilan aniqlashda marganets halaqit beradi; uni konsentrlangan H2SO4 va natriy azid bilan bartaraf etadilar.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "204"
+      }
+    },
+    {
+      "question": "Ditizon bilan reaksiya chiqmasa, kumush uchun tahlil qanday davom etadi?",
+      "options": [
+        "Tahlil to‘xtatiladi",
+        "AgCl cho‘kmasiga o‘tiladi",
+        "Ditizon miqdori ikki baravar oshiriladi",
+        "Mineralizat qayta qizdiriladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Ditizon bilan reaksiya chiqmasa, kumush uchun tahlil to‘xtatiladi; aks holda kumushga qo‘shimcha reaksiyalar bajariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "202"
+      }
+    },
+    {
+      "question": "Kumush xlorid cho‘kmasi qaysi eritmada eritiladi?",
+      "options": [
+        "2,5 ml 25% ammoniy gidrooksid",
+        "1% simob(II) xlorid",
+        "6n xlorid kislota",
+        "30% natriy ishqori"
+      ],
+      "correct_index": 0,
+      "explanation": "Filtrdagi AgCl cho‘kmasi 2,5 ml 25% li ammoniy gidrooksidida eritiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "202"
+      }
+    },
+    {
+      "question": "Kumush eritmasiga tiomochevina va kaliy pikrat qo‘shilsa, qanday kristallar hosil bo‘ladi?",
+      "options": [
+        "Rangsiz kub",
+        "Yashil prizma",
+        "Sariq ignasimon",
+        "Qizil romb"
+      ],
+      "correct_index": 2,
+      "explanation": "Kumush kationi sariq ignasimon va ularning to‘plamidan iborat mikrokristallar hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "202"
+      }
+    },
+    {
+      "question": "Mis ekstraktidagi xloroform qatlami 6n HCl bilan qancha vaqt yuviladi?",
+      "options": [
+        "5 daqiqa",
+        "20 daqiqa",
+        "1 soat",
+        "30 soniya"
+      ],
+      "correct_index": 3,
+      "explanation": "Pb-DDTK ortiqchasini yo‘qotish uchun xloroform qatlami 30 soniya 6n HCl bilan, so‘ng suv bilan yuviladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "203"
+      }
+    },
+    {
+      "question": "Mis ekstraktida rang o‘chib ketguncha qaysi reagent bilan chayqatiladi?",
+      "options": [
+        "Kaliy peryodat",
+        "Simob(II) xloridning 1% eritmasi",
+        "Natriy azid",
+        "Kumush nitratning 10% eritmasi"
+      ],
+      "correct_index": 1,
+      "explanation": "Xloroform qatlami rangi o‘chib ketguncha simob(II) xloridning 1% eritmasi bilan chayqatiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "203"
+      }
+    },
+    {
+      "question": "Piridinrodanid va xloroform bilan mis uchun pastki qatlam qanday bo‘yaladi?",
+      "options": [
+        "Tiniq ko‘k",
+        "Sariq-tilla",
+        "Qizil-binafsha",
+        "Yashil-sariq"
+      ],
+      "correct_index": 0,
+      "explanation": "Piridinrodanid reaktividan loyqa hosil bo‘lguncha qo‘shilib, 1 ml xloroform bilan chayqatilsa, pastki qatlam tiniq ko‘k bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "203"
+      }
+    },
+    {
+      "question": "Peryodat usulida marganets uchun qancha kaliy peryodat tuzi qo‘shiladi?",
+      "options": [
+        "0,2 g",
+        "2 g",
+        "10 g",
+        "0,5 g"
+      ],
+      "correct_index": 0,
+      "explanation": "1 ml mineralizatga 4 ml suv, birlamchi natriy fosfat, AgNO3 va 0,2 g kaliy peryodat qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "203"
+      }
+    },
+    {
+      "question": "Xromni nadxromat shaklida aniqlashda mineralizat NaOH bilan qaysi pH gacha keltiriladi?",
+      "options": [
+        "pH 1,7",
+        "pH 3",
+        "pH 12-13",
+        "pH 7"
+      ],
+      "correct_index": 3,
+      "explanation": "5 ml mineralizatga pH 7 bo‘lguncha natriy ishqorining 30% eritmasi qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "203"
+      }
+    },
+    {
+      "question": "Nadxromat reaksiyasida organik qatlam uchun qaysi erituvchi qo‘shiladi?",
+      "options": [
+        "Sirka etil efiri",
+        "Toluol",
+        "Xloroform",
+        "Uglerod tetrakloridi"
+      ],
+      "correct_index": 0,
+      "explanation": "Sovitilgan aralashmaga birlamchi natriy fosfat, 1 ml sirka etil efiri va pergidrol qo‘shiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "204"
+      }
+    },
+    {
+      "question": "Xromni difenilkarbazid bilan aniqlashda marganets halaqitini yo‘qotish uchun nima qo‘shiladi?",
+      "options": [
+        "Kaliy yodid",
+        "Ammoniy persulfat",
+        "Konsentrlangan H2SO4 va natriy azid",
+        "Osh tuzi"
+      ],
+      "correct_index": 2,
+      "explanation": "Bir tomchi konsentrlangan sulfat kislota va natriy azid kristallari qo‘shilib, qizil rang yo‘qolguncha aralashtiriladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1082,7 +2238,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 202-206"
+      "pages": "b. 202-207"
     }
   ]
 }

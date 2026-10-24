@@ -181,6 +181,66 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: biologik ob’ekt va reaktivlar bilan ishlashda qanday himoya vositalari kerak? Doskada: himoya vositalari ro‘yxati. Tipik xato: reaktivni (kislota, simob tuzi, brom) qo‘lqopsiz va so‘rish shkafisiz ishlatish — mashg‘ulot oldidan o‘qituvchi alohida eslatadi. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
+      "title": "YaQNDV: bugungi moddalar tasnifi",
+      "bullets": [
+        {
+          "text": "Diklofenak va ibuprofen fenilsirka kislota hosilalari hisoblanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Indometatsin indol-3-sirka kislota hosilasi; ketoprofen va piroksikam ham tahlil qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barchasi yallig‘lanishga qarshi nosteroid vositalar guruhiga mansub.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "YaQNDV",
+        "children": [
+          {
+            "label": "Fenilsirka hosilalari",
+            "items": [
+              "diklofenak",
+              "ibuprofen"
+            ]
+          },
+          {
+            "label": "Indol-3-sirka kislota",
+            "items": [
+              "indometatsin"
+            ]
+          },
+          {
+            "label": "Boshqa vositalar",
+            "items": [
+              "ketoprofen",
+              "piroksikam"
+            ]
+          }
+        ],
+        "caption": "Tuzilishi"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: guruhlar farqi nimada? Doskada: daraxt. Tipik xato: indometatsinni fenilsirka kislota hosilasi deb yozish."
+    },
+    {
       "title": "YaQNDV: xavfi va maqsadi",
       "bullets": [
         {
@@ -258,6 +318,83 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: belgilarni organ tizimlari bo‘yicha guruhlang. Doskada: 4 guruh: oshqozon-ichak, yurak-qon, asab, buyrak va allergiya. Tipik xato: belgilar asosida moddani nomlash — bu klinik belgilar, kimyoviy isbot emas."
     },
     {
+      "title": "YaQNDV zaharlanishi: a’zolar bo‘yicha belgilar",
+      "bullets": [
+        {
+          "text": "Oshqozon-ichak: qorinda kuchli og‘riq, meteorizm, qonli qusish yoki qonli peshob, oshqozonda yara.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yurak-qon: bosimning oshishi, taxikardiya, trombotsit ishlab chiqilishining buzilishi, qon ketish xavfi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Buyrak va asab tizimi: kuchli buyrak yetishmovchiligi, nefrit; bosh aylanishi, uyqusizlik, depressiya.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "137"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "YaQNDV belgilari",
+        "children": [
+          {
+            "label": "Oshqozon-ichak",
+            "items": [
+              "kuchli qorin og‘rig‘i",
+              "qonli qusish",
+              "oshqozonda yara"
+            ]
+          },
+          {
+            "label": "Yurak-qon tomir",
+            "items": [
+              "bosim oshishi, taxikardiya",
+              "qon ketish xavfi"
+            ]
+          },
+          {
+            "label": "Buyrak",
+            "items": [
+              "yetishmovchilik",
+              "nefrit",
+              "oyoqlarda shish"
+            ]
+          },
+          {
+            "label": "Asab tizimi",
+            "items": [
+              "bosh aylanishi",
+              "uyqusizlik, depressiya"
+            ]
+          },
+          {
+            "label": "Allergiya va teri",
+            "items": [
+              "toshmalar, soch to‘kilishi",
+              "fotosensibilizatsiya"
+            ]
+          }
+        ],
+        "caption": "Belgilar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi a’zo eng ko‘p zarar ko‘radi? Doskada: daraxt. Tipik xato: buyrak zararlanishini ikkinchi darajali deb hisoblash."
+    },
+    {
       "title": "Maksimal sutkali dozalar",
       "bullets": [
         {
@@ -318,6 +455,75 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: doza va zaharlanish xavfi o‘rtasida qanday bog‘liqlik bor? Doskada: jadvalni nusxalang. Naproksen (1250 mg) va piroksikam (30 mg) bandda keltirilgan. Tipik xato: maksimal sutkali dozani o‘ldiruvchi doza deb tushunish."
     },
     {
+      "title": "Maksimal sutkali dozalar: raqamlar",
+      "bullets": [
+        {
+          "text": "Ibuprofen — 2400 mg, naproksen — 1250 mg, indometatsin — 200 mg.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Piroksikam — 30 mg, diklofenak natriy — 150 mg, ketoprofen — 3000 mg.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "137"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dori vositalarining maksimal sutkali dozalari turlicha.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "137"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Ketoprofen",
+            "value": "3000",
+            "unit": "mg"
+          },
+          {
+            "label": "Ibuprofen",
+            "value": "2400",
+            "unit": "mg"
+          },
+          {
+            "label": "Naproksen",
+            "value": "1250",
+            "unit": "mg"
+          },
+          {
+            "label": "Indometatsin",
+            "value": "200",
+            "unit": "mg"
+          },
+          {
+            "label": "Diklofenak natriy",
+            "value": "150",
+            "unit": "mg"
+          },
+          {
+            "label": "Piroksikam",
+            "value": "30",
+            "unit": "mg"
+          }
+        ],
+        "caption": "Maks. sutkali doza"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: eng kichik doza qaysi vositada? Doskada: ro‘yxat. Tipik xato: dozalarni almashtirish."
+    },
+    {
       "title": "Ibuprofen bilan o‘z-o‘zini zaharlash holati",
       "bullets": [
         {
@@ -364,7 +570,7 @@
           "uncertain": false
         },
         {
-          "text": "Diklofenak natriy yallig‘lanishga qarshi nosteroid vositalar guruhiga mansub; shamollashga qarshi, og‘riq qoldiruvchi, isitma tushiruvchi; fenilsirka kislota hosilasi.",
+          "text": "Diklofenak natriy yallig‘lanishga qarshi nosteroid vosita; shamollashga qarshi, og‘riq qoldiruvchi, isitma tushiruvchi; fenilsirka kislota hosilasi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -384,6 +590,130 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: diklofenak va ibuprofenning umumiy kimyoviy guruhi qaysi? (Ikkalasi ham fenilsirka kislota hosilasi — toks 138.) Doskada: nomlar ro‘yxati. Tipik xato: diklofenakni indometatsin bilan bir kimyoviy guruhga kiritish."
+    },
+    {
+      "title": "Diklofenak: kimyoviy va fizik ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Kimyoviy nomi: 2-[(2,6-dixlorfenil) amino] fenil sirka kislota, molekulyar massasi 296,2.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diklofenak natriyning suyuqlanish harorati 283-285 °C; dissotsiatsiya konstantasi pKa=4,2.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Taqsimlanish koeffitsienti oktanol/suv tizimida 4,5; suvda (pH 5,2) eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Molekulyar massa",
+            "value": "296,2"
+          },
+          {
+            "label": "Suyuqlanish harorati",
+            "value": "283-285",
+            "unit": "°C"
+          },
+          {
+            "label": "pKa",
+            "value": "4,2"
+          },
+          {
+            "label": "Oktanol/suv",
+            "value": "4,5"
+          },
+          {
+            "label": "Suvda muhit pH",
+            "value": "5,2"
+          }
+        ],
+        "caption": "Diklofenak natriy"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: pKa nimani bildiradi? Doskada: raqamlar. Tipik xato: suyuqlanish haroratini 25 °C deb yozish."
+    },
+    {
+      "title": "YaQNDV savdo nomlari",
+      "bullets": [
+        {
+          "text": "Diklofenak sinonimlari: Voltaren, Diklak, Diklobene, Diklofen, ortofen va boshqalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ibuprofen sinonimlari: Nurofen, Brufen, Ibufac, Ibufem va boshqalar.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Indometatsin sinonimlari: Indotsid, Indobene, Metindol, Elmetatsin.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Sinonimlar",
+        "children": [
+          {
+            "label": "Diklofenak",
+            "items": [
+              "Voltaren",
+              "Diklak",
+              "ortofen"
+            ]
+          },
+          {
+            "label": "Ibuprofen",
+            "items": [
+              "Nurofen",
+              "Brufen",
+              "Ibufac"
+            ]
+          },
+          {
+            "label": "Indometatsin",
+            "items": [
+              "Indotsid",
+              "Metindol",
+              "Elmetatsin"
+            ]
+          }
+        ],
+        "caption": "Savdo nomlari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega savdo nomlarini bilish kerak? Doskada: jadval. Tipik xato: savdo nomi va moddani adashtirish."
     },
     {
       "title": "Diklofenak: fizik-kimyoviy xossalari va farmakokinetika",
@@ -429,6 +759,75 @@
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: pKa=4,2 diklofenakni qaysi pH da ekstraksiya qilishni ko‘rsatadi? (Kitobda bu xulosa yozilmagan — o‘qituvchi tushuntiradi.) Tipik xato: qondagi konsentratsiyani (0,5 mkg/ml) o‘ldiruvchi deb o‘qish. Kitobda: toks 138 da «25 °C» (xato); to‘g‘ri qiymat 283-285 °C (252-bet)."
     },
     {
+      "title": "Diklofenak farmakokinetikasi: raqamlar",
+      "bullets": [
+        {
+          "text": "100 mg retard tabletka qabul qilinganda 4 soatda qondagi konsentratsiya maksimal bo‘lib, 0,5 mkg/ml ni tashkil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "99% plazma albuminlari bilan bog‘lanadi; 50% jigarda metabolizmga uchraydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yarim chiqarish davri 1-2 soat; 60% buyraklar orqali chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Cmax vaqti (retard)",
+            "value": "4",
+            "unit": "soat"
+          },
+          {
+            "label": "Cmax (100 mg)",
+            "value": "0,5",
+            "unit": "mkg/ml"
+          },
+          {
+            "label": "Albumin bilan bog‘lanish",
+            "value": "99",
+            "unit": "%"
+          },
+          {
+            "label": "Jigarda metabolizm",
+            "value": "50",
+            "unit": "%"
+          },
+          {
+            "label": "Buyrak orqali",
+            "value": "60",
+            "unit": "%"
+          },
+          {
+            "label": "Yarim chiqarish",
+            "value": "1-2",
+            "unit": "soat"
+          }
+        ],
+        "caption": "Diklofenak"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: yuqori bog‘lanish nimani anglatadi? Doskada: raqamlar. Tipik xato: Cmax vaqtini 1-2 soat deb yozish."
+    },
+    {
       "title": "Ibuprofen",
       "bullets": [
         {
@@ -470,6 +869,69 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ibuprofen suvda erimasligi ekstraksiyaga qanday ta’sir qiladi? (Organik erituvchiga o‘tadi.) Doskada: ibuprofen ma’lumotlari. Tipik xato: yarim chiqarish davrini soat o‘rniga daqiqa deb yozish."
+    },
+    {
+      "title": "Ibuprofen: asosiy ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Kimyoviy nomi: 1-metil-4-(2-metil propil) fenilsirka kislota, molekulyar massasi 206,3.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oq kristall kukun, suyuqlanish harorati 75-77 °C; suvda amalda erimaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qonda 1-2 soatda maksimal; yarim chiqarish davri 1,8-2,5 soat; samara 1200 mg va undan ko‘p dozada.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Molekulyar massa",
+            "value": "206,3"
+          },
+          {
+            "label": "Suyuqlanish harorati",
+            "value": "75-77",
+            "unit": "°C"
+          },
+          {
+            "label": "Cmax vaqti",
+            "value": "1-2",
+            "unit": "soat"
+          },
+          {
+            "label": "Yarim chiqarish",
+            "value": "1,8-2,5",
+            "unit": "soat"
+          },
+          {
+            "label": "Farmakologik samara",
+            "value": "≥1200",
+            "unit": "mg"
+          }
+        ],
+        "caption": "Ibuprofen"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ibuprofen nega suvda erimaydi? Doskada: raqamlar. Tipik xato: 1200 mg ni maksimal sutkali doza deb o‘ylash."
     },
     {
       "title": "Indometatsin",
@@ -515,6 +977,194 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: suyuqlanish haroratidagi tafovut (155-162 °C) nimani bildiradi? (Polimorfizm — toks 139.) Doskada: formulasi (indol hosilasi). Tipik xato: indometatsinni fenilsirka kislota hosilasi deb hisoblash: u indol-3-sirka kislota hosilasi."
     },
     {
+      "title": "Indometatsin: asosiy ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Molekulyar massasi 357,8; suyuqlanish harorati 155-162 °C — bu polimorfizmni ko‘rsatadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qabul qilingach 1-2 soatda (retard 2-4 soatda) konsentratsiya maksimal; yarim chiqarish davri 4-5 soat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ovqat so‘rilishni sekinlashtiradi; shamcha ko‘rinishida kamroq so‘riladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Molekulyar massa",
+            "value": "357,8"
+          },
+          {
+            "label": "Suyuqlanish harorati",
+            "value": "155-162",
+            "unit": "°C"
+          },
+          {
+            "label": "Cmax vaqti",
+            "value": "1-2",
+            "unit": "soat"
+          },
+          {
+            "label": "Cmax (retard)",
+            "value": "2-4",
+            "unit": "soat"
+          },
+          {
+            "label": "Yarim chiqarish",
+            "value": "4-5",
+            "unit": "soat"
+          }
+        ],
+        "caption": "Indometatsin"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: polimorfizm nima? Doskada: raqamlar. Tipik xato: suyuqlanish oralig‘ini xatolik deb hisoblash."
+    },
+    {
+      "title": "Farmakokinetika: uch vositani solishtirish",
+      "bullets": [
+        {
+          "text": "Diklofenak retard tabletkada 4 soatda, ibuprofen 1-2 soatda, indometatsin 1-2 soatda maksimal konsentratsiyaga yetadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yarim chiqarish davri: diklofenak 1-2, ibuprofen 1,8-2,5, indometatsin 4-5 soat.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138-139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ibuprofen organizmda tezda metabolizmga uchrab chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Modda",
+          "Cmax vaqti",
+          "Yarim chiqarish"
+        ],
+        "rows": [
+          [
+            "Diklofenak",
+            "4 soat (retard)",
+            "1-2 soat"
+          ],
+          [
+            "Ibuprofen",
+            "1-2 soat",
+            "1,8-2,5 soat"
+          ],
+          [
+            "Indometatsin",
+            "1-2 soat",
+            "4-5 soat"
+          ]
+        ],
+        "caption": "Taqqoslash"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi modda uzoq qoladi? Doskada: jadval. Tipik xato: retard va oddiy tabletka vaqtlarini aralashtirish."
+    },
+    {
+      "title": "Eruvchanlik: diklofenak, ibuprofen, indometatsin",
+      "bullets": [
+        {
+          "text": "Diklofenak natriy metanol, aseton, atsetonitril, siklogeksanda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ibuprofen suvda amalda erimaydi; etil spirti, xloroform va dietil efirda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "138"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Indometatsin suvda amalda erimaydi; etil spirti, xloroform, dietil efiri va atsetonda eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Diklofenak",
+            "items": [
+              "metanol",
+              "aseton",
+              "atsetonitril",
+              "siklogeksan"
+            ]
+          },
+          {
+            "title": "Ibuprofen",
+            "items": [
+              "suvda erimaydi",
+              "etil spirti",
+              "xloroform",
+              "dietil efir"
+            ]
+          },
+          {
+            "title": "Indometatsin",
+            "items": [
+              "suvda erimaydi",
+              "etil spirti, xloroform",
+              "dietil efiri",
+              "aseton"
+            ]
+          }
+        ],
+        "caption": "Erituvchilar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ekstraksiya uchun qaysi erituvchi mos? Doskada: ustunlar. Tipik xato: ibuprofenni suvda eriydi deb yozish."
+    },
+    {
       "title": "Ketoprofen va piroksikam (qisqa)",
       "bullets": [
         {
@@ -547,6 +1197,63 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: mashg‘ulot matni uch modda bilan cheklangan; ketoprofen va piroksikam ma’ruzadan qo‘shimcha. Doskada: Rf 0,57 va 0,48. Tipik xato: bu ikki moddani mashg‘ulot reaksiyalariga qo‘shish: Liberman ranglari ma’ruzada berilgan (toks 139), lekin mashg‘ulotda tekshirilmaydi."
+    },
+    {
+      "title": "Ketoprofen va piroksikam: taqqoslash",
+      "bullets": [
+        {
+          "text": "Ketoprofen oq kristall kukun, suyuqlanish harorati 93-96 °C; suvda qiyin eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Piroksikam kristall kukun, suyuqlanish harorati 198-200 °C; spirtda va suvli ishqoriy muhitda yaxshi eriydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX da ketoprofen Rf=0,57, piroksikam Rf=0,48.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ketoprofen",
+            "items": [
+              "93-96 °C",
+              "atseton, etilatsetat, spirt",
+              "suvda qiyin eriydi",
+              "Rf=0,57; Liberman: jigarrang"
+            ]
+          },
+          {
+            "title": "Piroksikam",
+            "items": [
+              "198-200 °C",
+              "spirt, suvli ishqor",
+              "suvda erimaydi",
+              "Rf=0,48; Liberman: qizg‘ish sariq"
+            ]
+          }
+        ],
+        "caption": "Qisqa tavsif"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi birining suyuqlanish harorati yuqori? Doskada: ikki ustun. Tipik xato: Rf qiymatlarini almashtirish."
     },
     {
       "title": "Liberman reaktivi bilan reaksiya",
@@ -605,6 +1312,69 @@
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: uchta turli rang. Boshqa variant: toks 139 da indometatsin uchun «to‘q kulrang» yozilgan; slaydda 252-bet olindi. Tipik xato: Liberman reaktivini Marki reaktivi bilan adashtirish."
     },
     {
+      "title": "Liberman reaktivi: besh vosita",
+      "bullets": [
+        {
+          "text": "Liberman reaktivi bilan diklofenak qizg‘ish jigarrang, ibuprofen zarg‘aldoq jigarrang rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Indometatsin qora rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ketoprofen jigarrang, piroksikam qizg‘ish sariq rang hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Modda",
+          "Liberman rangi"
+        ],
+        "rows": [
+          [
+            "Diklofenak",
+            "qizg‘ish jigarrang"
+          ],
+          [
+            "Indometatsin",
+            "qora"
+          ],
+          [
+            "Ibuprofen",
+            "zarg‘aldoq jigarrang"
+          ],
+          [
+            "Ketoprofen",
+            "jigarrang"
+          ],
+          [
+            "Piroksikam",
+            "qizg‘ish sariq"
+          ]
+        ],
+        "caption": "Liberman"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: rang bo‘yicha farqlash mumkinmi? Doskada: jadval. Tipik xato: bitta rangga tayanib xulosa qilish."
+    },
+    {
       "title": "Mandelin va Marki reaktivlari bilan reaksiyalar",
       "bullets": [
         {
@@ -649,6 +1419,61 @@
         ]
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija: ikki modda ikki reaktivda turli rang beradi. Muhokama: ibuprofen uchun bu reaktivlarda rang kitobda berilmagan. Tipik xato: ibuprofen uchun rangni o‘zboshimchalik bilan yozish."
+    },
+    {
+      "title": "Diklofenak va indometatsin: rang reaksiyalari",
+      "bullets": [
+        {
+          "text": "Mandelin reaktivi bilan diklofenak qo‘ng‘ir qizil, indometatsin kulrang rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marki reaktivi bilan diklofenak to‘q jigarrang, indometatsin zarg‘aldoq rangga kiradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Liberman reaktivi bilan diklofenak qizg‘ish jigarrang, indometatsin qora rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Diklofenak",
+            "items": [
+              "Liberman: qizg‘ish jigarrang",
+              "Mandelin: qo‘ng‘ir qizil",
+              "Marki: to‘q jigarrang"
+            ]
+          },
+          {
+            "title": "Indometatsin",
+            "items": [
+              "Liberman: qora",
+              "Mandelin: kulrang",
+              "Marki: zarg‘aldoq"
+            ]
+          }
+        ],
+        "caption": "Uch reaktiv"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: ranglardan qaysi biri eng ajratuvchi? Doskada: ikki ustun. Tipik xato: reaktivlar ranglarini almashtirish."
     },
     {
       "title": "YuQX tahlili",
@@ -696,6 +1521,65 @@
         ]
       },
       "teacher_notes": "Vaqt: 20 daqiqa. Kutilayotgan natija: Marki reaktivi bilan purkalganda uchta dog‘ turli Rf da. Muhokama: Rf bo‘yicha tartiblang: indometatsin < diklofenak < ibuprofen. Doskada: Rf shkalasi. Tipik xato: guvoh eritma yonida xromatografiyalamasdan Rf ni jadvaldan solishtirish."
+    },
+    {
+      "title": "YuQX: besh vositaning Rf qiymatlari",
+      "bullets": [
+        {
+          "text": "Sistema xloroform:metanol (9:1), ochuvchi reaktiv sifatida Marki reaktivi ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diklofenak Rf=0,47, indometatsin Rf=0,38, ibuprofen Rf=0,54.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ketoprofen Rf=0,57, piroksikam Rf=0,48.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Indometatsin",
+            "value": "0,38"
+          },
+          {
+            "label": "Diklofenak",
+            "value": "0,47"
+          },
+          {
+            "label": "Piroksikam",
+            "value": "0,48"
+          },
+          {
+            "label": "Ibuprofen",
+            "value": "0,54"
+          },
+          {
+            "label": "Ketoprofen",
+            "value": "0,57"
+          }
+        ],
+        "caption": "Rf (xloroform:metanol 9:1)"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qaysi dog‘lar yaqin joylashgan? Doskada: Rf tartibi. Tipik xato: Rf ni boshqa sistemadagi qiymat bilan taqqoslash."
     },
     {
       "title": "UB-spektrofotometriya",
@@ -752,6 +1636,64 @@
         ]
       },
       "teacher_notes": "Vaqt: 15 daqiqa. Kutilayotgan natija: spektr ish daftariga rasmiylashtiriladi. Muhokama: diklofenak va ibuprofenning 272 nm dagi maksimumi nimani anglatadi? (UB faqat bitta usul — boshqa usullar bilan tasdiqlash kerak.) Tipik xato: UB maksimum bilan moddani yakuniy aniqlash."
+    },
+    {
+      "title": "UB maksimumlar: raqamlar",
+      "bullets": [
+        {
+          "text": "UB-spektrofotometriyada solishtiriluvchi eritma sifatida 96% etil spirti ishlatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diklofenak 272 va 275 nm, indometatsin 278 nm da maksimum nur yutadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ibuprofen 257, 263 va 272 nm da maksimum beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "139"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Diklofenak",
+            "value": "272; 275",
+            "unit": "nm"
+          },
+          {
+            "label": "Indometatsin",
+            "value": "278",
+            "unit": "nm"
+          },
+          {
+            "label": "Ibuprofen",
+            "value": "257; 263; 272",
+            "unit": "nm"
+          },
+          {
+            "label": "Solishtirish eritmasi",
+            "value": "96% spirt"
+          }
+        ],
+        "caption": "UB-SF"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega spirt solishtirish eritmasi? Doskada: raqamlar. Tipik xato: ibuprofen va diklofenak maksimumlarini aralashtirish."
     },
     {
       "title": "Kitobdagi tahlil ketma-ketligi",
@@ -864,7 +1806,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Dasturlashtirilgan haroratda bug‘lanish",
+          "Sirt ionlashuv detektorida (SID)",
+          "Termodesorbsion spektr qayd qilinadi",
+          "Aniqlik: 1·10-11 g, ajratishsiz"
+        ],
+        "caption": "TDSIS"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nazorat savoli 7 (toks 253): YaQNDV ning TDSIS tahlilini gapirib bering. Kitob NYaQV uchun alohida TDSIS tartibini bermaydi — faqat usulning umumiy tavsifi (toks 140); azot saqlovchi moddalarga tegishli. Doskada: sezgirlik 1·10-11 g. Tipik xato: TDSIS ni xromatografiya turi deb yozish: u ajratishsiz usul."
     },
     {
@@ -1046,11 +1997,11 @@
       "question": "Indometatsinning suyuqlanish haroratidagi tafovut nimani ko‘rsatadi?",
       "options": [
         "Aralashma borligini",
-        "Polimorfizmni",
+        "Namlikni",
         "Parchalanishni",
-        "Namlikni"
+        "Polimorfizmni"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "155-162 °C tafovut uning polimorfizm xususiyati borligini ko‘rsatadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1104,6 +2055,166 @@
         "author": "Yuldashev Z.A., Umarova G.Q.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "137"
+      }
+    },
+    {
+      "question": "Laboratoriya matniga ko‘ra diklofenak natriyning suyuqlanish harorati qancha?",
+      "options": [
+        "125-127 °C",
+        "75-77 °C",
+        "283-285 °C",
+        "155-162 °C"
+      ],
+      "correct_index": 2,
+      "explanation": "Laboratoriya matnida (252-bet) diklofenak natriyning suyuqlanish harorati 283-285 °C deb berilgan (ma’ruza qismidagi «25 °C» bosma xato; ilmiy muharrir qarori).",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "252"
+      }
+    },
+    {
+      "question": "100 mg retard diklofenak qabul qilinganda qondagi konsentratsiya necha soatda maksimal bo‘ladi?",
+      "options": [
+        "10 daqiqada",
+        "12 soatda",
+        "24 soatda",
+        "4 soatda"
+      ],
+      "correct_index": 3,
+      "explanation": "100 mg saqlagan retard tabletkalardan so‘ng konsentratsiya 4 soatda maksimal (0,5 mkg/ml) bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "252"
+      }
+    },
+    {
+      "question": "Diklofenakning qancha qismi buyraklar orqali chiqariladi?",
+      "options": [
+        "60%",
+        "5%",
+        "25%",
+        "99%"
+      ],
+      "correct_index": 0,
+      "explanation": "Diklofenakning 60% buyraklar orqali chiqariladi; 99% plazma albuminlari bilan bog‘lanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "252"
+      }
+    },
+    {
+      "question": "Indometatsinning yarim chiqarish davri qancha?",
+      "options": [
+        "1-2 soat",
+        "4-5 soat",
+        "1,8-2,5 soat",
+        "24-48 soat"
+      ],
+      "correct_index": 1,
+      "explanation": "Indometatsinning yarim chiqarish davri 4-5 soatni tashkil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "139"
+      }
+    },
+    {
+      "question": "Ketoprofen YuQX da (xloroform:metanol 9:1) qanday Rf beradi?",
+      "options": [
+        "0,38",
+        "0,47",
+        "0,57",
+        "0,75"
+      ],
+      "correct_index": 2,
+      "explanation": "Ketoprofen uchun Rf=0,57, piroksikam uchun Rf=0,48.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "139"
+      }
+    },
+    {
+      "question": "Piroksikamning maksimal sutkali dozasi qancha?",
+      "options": [
+        "150 mg",
+        "200 mg",
+        "2400 mg",
+        "30 mg"
+      ],
+      "correct_index": 3,
+      "explanation": "Maksimal sutkali dozalar: piroksikam — 30 mg, diklofenak natriy — 150 mg, indometatsin — 200 mg.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "137"
+      }
+    },
+    {
+      "question": "Liberman reaktivi bilan indometatsin qanday rang beradi?",
+      "options": [
+        "Qora",
+        "Zarg‘aldoq jigarrang",
+        "Qizg‘ish sariq",
+        "Rangsiz"
+      ],
+      "correct_index": 0,
+      "explanation": "Laboratoriya matniga ko‘ra Liberman reaktivi bilan indometatsin qora rang beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "252"
+      }
+    },
+    {
+      "question": "Marki reaktivi bilan indometatsin qanday rangga kiradi?",
+      "options": [
+        "To‘q jigarrang",
+        "Ko‘k",
+        "Kulrang",
+        "Zarg‘aldoq"
+      ],
+      "correct_index": 3,
+      "explanation": "Marki reaktivi bilan diklofenak to‘q jigarrang, indometatsin zarg‘aldoq rangga kiradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "252"
+      }
+    },
+    {
+      "question": "Ibuprofenning suyuqlanish harorati qancha?",
+      "options": [
+        "93-96 °C",
+        "198-200 °C",
+        "75-77 °C",
+        "283-285 °C"
+      ],
+      "correct_index": 2,
+      "explanation": "Ibuprofen oq kristall kukun, suyuqlanish harorati 75-77 °C.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "138"
+      }
+    },
+    {
+      "question": "Termodesorbsion sirt-ionlashuv spektroskopiyasi (TDSIS) nano miqdorni qaysi aniqlikda tahlil qiladi?",
+      "options": [
+        "1·10-3 g",
+        "1 g",
+        "1·10-1 g",
+        "1·10-11 g"
+      ],
+      "correct_index": 3,
+      "explanation": "TDSIS azot saqlovchi molekulalar nano miqdorini 1·10-11 g aniqlikda xromatografik ajratishsiz tahlil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "140"
       }
     }
   ],

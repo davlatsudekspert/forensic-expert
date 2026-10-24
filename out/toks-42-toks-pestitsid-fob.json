@@ -1,1709 +1,2436 @@
 {
-  "topic": "Qishloq xo‘jalik ximikatlari: tasnifi; fosfororganik (xlorofos, karbofos, metafos), xlororganik (geksaxloran, DDT), karbamatlar (sevin, TMTD)",
-  "slides": [
+ "topic": "Qishloq xo‘jalik ximikatlari: tasnifi; fosfororganik (xlorofos, karbofos, metafos), xlororganik (geksaxloran, DDT), karbamatlar (sevin, TMTD)",
+ "slides": [
+  {
+   "title": "Ma’ruza rejasi va tayanch iboralar",
+   "bullets": [
     {
-      "title": "Ma’ruza rejasi va tayanch iboralar",
-      "bullets": [
-        {
-          "text": "Reja: qishloq xo‘jalik ximikatlari, ularning sinflanishi, qo‘llanishi va toksikologik ahamiyati.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fosfororganik, xlororganik birikmalar va karbamin kislota hosilalari.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ularni ob’ektlardan ajratib olish, umumiy va xususiy tahlil usullari; GSX va YuSSX.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "148"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega pestitsidlar ham sud-kimyoviy tahlil ob’ekti? Doskada: reja 3 bandi. Tipik xato: bu ma’ruzani faqat qishloq xo‘jaligi mavzusi deb o‘ylash — u zaharlanish tahlili. Sintetik piretroidlar keyingi (43) ma’ruzada alohida yoritiladi."
-    },
-    {
-      "title": "Pestitsid nima?",
-      "bullets": [
-        {
-          "text": "Qishloq xo‘jaligida qo‘llaniladigan zaharli kimyoviy birikmalar «pestitsidlar» deb ataladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Pestitsid so‘zi lotincha: pestis — yuqumli, cido — o‘ldiruvchi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Pestitsidlar zararkunandalarga, yig‘im-terim oldidan barg tushirishda, hasharotlarga qarshi va o‘simlik o‘sishiga ta’sir uchun ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: «pestis» va «cido» so‘zlarining ma’nosi. Doskada: etimologiya. Tipik xato: pestitsidni faqat hasharot zahari deb tushunish — kitobga ko‘ra maqsadlari xilma-xil."
-    },
-    {
-      "title": "Pestitsidlarning xavfi va qoldiq miqdori",
-      "bullets": [
-        {
-          "text": "To‘g‘ri foydalanilmasa, pestitsid qoldiqlari havo, tuproq va suvni zaharlaydi, oziq-ovqat va em-xashakka tushadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Zaharli ximikatlarning barchasi u yoki bu darajada inson uchun ham zaharli hisoblanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "«Pestitsidlarning qoldiq miqdori» iborasi qo‘llaniladi va u ruxsat etilgan miqdordan kam bo‘lishi shart.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qoldiq miqdori sifat nazoratida qanday ishlatiladi? Doskada: «qoldiq <= ruxsat etilgan». Tipik xato: ruxsat etilgan miqdorni zaharlanish chegarasi deb o‘ylash."
-    },
-    {
-      "title": "Pestitsidlar maqsadiga ko‘ra",
-      "bullets": [
-        {
-          "text": "Akaratsidlar — kanalarga qarshi; insektitsidlar — hasharotlarga qarshi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gerbitsidlar — yovvoyi o‘simliklarni yo‘qotish uchun.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Malaka ma’ruzasida fungitsidlar zararli zamburug‘larga qarshi ishlatiladigan moddalar sifatida ko‘rsatilgan (TMTD, tsiram, tsineb).",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: tasnif maqsadiga ko‘ra va kimyoviy tuzilishiga ko‘ra. Doskada: 4 guruh. Kitobda xato: darslikda «fungitsidlar — viruslarga» deb yozilgan (toks p.149), to‘g‘risi — zamburug‘larga (malaka 021 ga qarang). O‘quv rejasida pestitsidlar faqat kimyoviy tuzilishi bo‘yicha o‘rganiladi."
-    },
-    {
-      "title": "Zaharlilik darajasi bo‘yicha guruhlar",
-      "bullets": [
-        {
-          "text": "Oshqozon-ichak orqali ta’siri bo‘yicha pestitsidlar 4 guruhga bo‘linadi (kalamushlarda).",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ko‘rsatkich — LD50, mg/kg.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kuchli zaharli guruhda LD50 = 50 mg/kg; kam zaharli guruhda 1000 mg/kg dan yuqori.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Zaharlilik darajasi (kalamush)",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "LD50, mg/kg"
-        ],
-        "rows": [
-          [
-            "Kuchli zaharli",
-            "50"
-          ],
-          [
-            "Yuqori zaharli",
-            "50-200"
-          ],
-          [
-            "O‘rtacha zaharli",
-            "200-1000"
-          ],
-          [
-            "Kam zaharli",
-            "1000 dan yuqori"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: LD50 kichik bo‘lsa modda qanchalik xavfli? Doskada: jadvalni yozing. Tipik xato: katta LD50 ni «kuchli zahar» deb o‘ylash. Kitobda kuchli zaharli guruh uchun «50» berilgan (chegara qiymat)."
-    },
-    {
-      "title": "Kimyoviy sinflanish: uch katta sinf",
-      "bullets": [
-        {
-          "text": "Noorganik birikmalar: mis va mishyak saqlovchi tuz va kompleks moddalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Organik pestitsidlar: sintezlab olingan va tabiiy birikmalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Metallorganik pestitsidlar: simob va boshqa metall saqlovchi organik birikmalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Kimyoviy sinflar",
-        "nodes": [],
-        "header": [
-          "Sinf",
-          "Misol"
-        ],
-        "rows": [
-          [
-            "Noorganik",
-            "Mis, mishyak tuzlari"
-          ],
-          [
-            "Organik",
-            "Sintetik va tabiiy"
-          ],
-          [
-            "Metallorganik",
-            "Simob saqlovchi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metall zaharlar (9-12 ma’ruzalar) bilan bog‘liqlik. Doskada: 3 sinf. Tipik xato: mis va mishyak saqlovchi pestitsidlarni organik deb hisoblash."
-    },
-    {
-      "title": "Sintetik organik pestitsidlar guruhlari",
-      "bullets": [
-        {
-          "text": "Fosfororganik birikmalar (FOB): metafos, merkaptofos, karbofos, fozalon, xlorofos; dorivor: benzotef, nibufen, imifos.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sintetik piretroidlar: sipermetrin, detsis, danitol, karate, sumi-alfa va b.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Karbamin va tiokarbon kislota hosilalari: sevin, siram, sineb, TMTD va b.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Galogen saqlovchi uglevodorodlar: DDT, geksaxloran, geptaxlor va b.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: har guruhdan bittadan vakilni ayting. Doskada: 4 guruh - 4 misol. Tipik xato: sevin va TMTD ni fosfororganik guruhga kiritish. Qolgan guruhlar keyingi slaydda."
-    },
-    {
-      "title": "Qolgan guruhlar",
-      "bullets": [
-        {
-          "text": "Aminlar hosilalari: dikvat, parakvat va b.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Keton, spirt, nitrofenol va oddiy efirlar hosilalari: dinitro-ortokrezol va b.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘simliklardan olingan birikmalar: anabazin, nikotin va b.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: anabazin va nikotin 22-ma’ruzada alkaloid sifatida o‘rganiladi. Doskada: 3 guruh. Tipik xato: nikotinni sintetik pestitsid deb hisoblash — kitob uni o‘simliklardan olingan birikma deydi."
-    },
-    {
-      "title": "Fosfororganik birikmalarning ahamiyati",
-      "bullets": [
-        {
-          "text": "Toksikologik ahamiyati: zaharli modda ekanligi va qishloq xo‘jaligida keng, ko‘p miqdorda qo‘llanishi bilan izohlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xlorofos — qishloq xo‘jalik o‘simliklarini parvarishlashda insektitsid va akaritsid; uyda pashshalarga qarshi ham ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "DVSSM majmuasida ham xlorofosning asosiy qo‘llanilishi shunday keltirilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "147"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uy sharoitida ishlatilishi tasodifiy zaharlanishni qanday oshiradi? Doskada: xlorofos - insektitsid + akaritsid. Tipik xato: faqat dala ishchilarini xavf guruhi deb hisoblash."
-    },
-    {
-      "title": "Zaharlanish holatlari",
-      "bullets": [
-        {
-          "text": "Adabiyotlarda 1,5% karbofos eritmasini ichgan ayol halok bo‘lgani yozilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "To‘rt yoshli bola tiofos yuqi bo‘lgan stakandan suv ichganda o‘lim sodir bo‘lgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "FOB teri orqali ham so‘rilib halokatga olib kelishi mumkin: bola tiofosdan bo‘shatilgan idish bilan o‘ynab 30 daqiqadan keyin vafot etgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: teri orqali so‘rilish ekspertiza qaysi ob’ektlarni tanlashga ta’sir qiladi? Doskada: 3 yo‘l (og‘iz, idish, teri). Tipik xato: tasodifiy zaharlanishni faqat og‘iz orqali deb o‘ylash."
-    },
-    {
-      "title": "FOB ta’sir mexanizmi: xolinesteraza",
-      "bullets": [
-        {
-          "text": "FOB ning zaharli ta’siri xolinesteraza fermenti faoliyatini bo‘g‘ib qo‘yish qobiliyati bilan tushuntiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "FOB antixolinesteraz ta’sirli moddalar turkumiga kiradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mediator atsetilxolin gidrolizi buziladi va nerv hujayralarida ortiqcha yig‘iladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150-151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Mexanizm",
-        "nodes": [
-          "FOB organizmga tushadi",
-          "Xolinesteraza bloklanadi",
-          "Atsetilxolin gidrolizlanmaydi",
-          "Atsetilxolin yig‘iladi",
-          "Neyrotoksik ta’sir"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: atsetilxolin yig‘ilishi nega nerv tizimini buzadi? Doskada: 5 bosqichli zanjir. Tipik xato: FOB ni nerv hujayralarini bevosita yemiruvchi zahar deb o‘ylash — u fermentni to‘xtatadi."
-    },
-    {
-      "title": "FOB bilan zaharlanish belgilari",
-      "bullets": [
-        {
-          "text": "Bosh og‘rig‘i, ko‘ngil aynishi, qusish, qorinda og‘riq, ko‘p so‘lak ajralishi va terlash.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ko‘z qorachig‘ining torayishi, qo‘l va oyoq uchlarining titrashi, qo‘rquv hissi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qon bosimi avval ko‘tarilib, keyin pasayadi; nafas olish to‘xtashi tufayli o‘lim sodir bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Murdani yorganda oshqozon-ichakda qo‘lansa merkaptan hidi sezilishi mumkin; patologoanatomik belgi — faqat ichki a’zolarga qon quyilishi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega patologoanatomik belgilar kam bo‘lsa sud-kimyoviy tahlil hal qiluvchi? Doskada: 6 belgi. Tipik xato: merkaptan hidining yo‘qligini FOB yo‘qligidan dalil deb olish (u «sezilishi mumkin»)."
-    },
-    {
-      "title": "Xlororganik birikmalarning ahamiyati",
-      "bullets": [
-        {
-          "text": "Qishloq xo‘jaligida insektitsid sifatida keng qo‘llanishi bilan tushuntiriladi; dust yoki yog‘dagi eritmalar holida.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yog‘dagi eritmalari ayniqsa zaharli: tez shimiladi; buyrak, yog‘ to‘qimasi va suyak iligi yaxshi o‘zlashtiradi, sekin chiqariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xlororganik moddalar juda barqaror, tabiiy sharoitda uzoq vaqt o‘zgarishsiz saqlanadi, tuproq va yer osti suvlarida to‘planadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: barqarorlik nega ekologik xavf tug‘diradi? Doskada: «barqaror + yog‘da eruvchan = to‘planadi». Tipik xato: xlororganik moddalarni tez parchalanadi deb o‘ylash."
-    },
-    {
-      "title": "Xlororganik moddalar: metabolizm va belgilar",
-      "bullets": [
-        {
-          "text": "DDT dan kam zaharli dixlordifenilsirka kislotasi hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Geptaxlordan oksidlanish mahsuli geptaxlor epoksidi — yana ham kuchli zaharli modda hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Belgilari: bosh og‘rishi, quvvatsizlik, qo‘l-oyoq qaltirashi, so‘lak oqishi, yorug‘likdan seskanish; o‘lim markaziy nerv va yurak-qon tomir tizimi ishdan chiqishidan.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kimyoviy tekshirish uchun murda ichki a’zolari, hayvonlar, oziq-ovqat mahsulotlari olinadi; tekshirish sud-tergov ko‘rsatmasi asosida bajariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metabolit asosiy modda bilan solishtirganda zaharliligi qanday o‘zgaradi? Doskada: DDT -> kam zaharli; geptaxlor -> epoksid, ko‘proq zaharli. Tipik xato: metabolizmni har doim zararsizlantirish deb hisoblash. Kitobga ko‘ra xlororganik moddalarning tahlil usullari nihoyatda kam o‘rganilgan."
-    },
-    {
-      "title": "FOB ni biologik ob’ektdan ajratish",
-      "bullets": [
-        {
-          "text": "Ob’ekt mayda qiymalanib, zarur muhit hosil bo‘lguncha xlorid (yoki sulfat) kislota qo‘shiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Organik erituvchi bilan bo‘ktiriladi, uy haroratida bir soat qoldiriladi; bo‘ktirish yana 2-3 marta takrorlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Umumlashtirilgan erituvchi vakuum-nasos yordamida (yoki suv hammomida) bug‘latiladi; qoldiq spirtda eritiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Muqobil usul: suvsiz natriy sulfat ishtirokida geksan bilan ekstraksiya.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "152"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ajratishdan avval muhit kislotali qilinadi? Doskada: bosqichlar ketma-ketligi. Tipik xato: bo‘ktirishni bir marta bajarib to‘xtash — kitob 2-3 marta takrorlashni talab qiladi."
-    },
-    {
-      "title": "Yog‘dan tozalash",
-      "bullets": [
-        {
-          "text": "Organik erituvchi qatlamiga yog‘ va yog‘simon moddalar ham o‘tadi, ayniqsa oshqozon-ichak, buyrak, jigar a’zolarida.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Erituvchi uchirilgach, qoldiq oz miqdor aseton bilan aralashtirilib, muzlatgichda sovitiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yog‘ qotib yuzaga chiqadi, FOB aseton qavatiga o‘tadi; jarayon bir necha marta takrorlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qo‘shimcha tozalash: sorbent saqlovchi kolonka va yupqa qatlam xromatografiyasi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "152"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega past haroratda yog‘ ajraladi? Doskada: «aseton + sovutish = yog‘ qotadi». Tipik xato: asetonli ajratmani tashlab yuborish — FOB aynan shu qavatda."
-    },
-    {
-      "title": "Umumiy reaksiya: fosformolibden ko‘ki",
-      "bullets": [
-        {
-          "text": "Ajralmaning bir qismi quriguncha bug‘latilib, qoldiq sulfat va nitrat kislotalari bilan mineralizatsiya qilinadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mineralizat ammoniy molibdati bilan sariq rang beradi; benzidin yoki askorbin kislota ta’sirida barqaror ko‘k kompleks hosil bo‘ladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Usul yuqori sezgir, lekin fosfor saqlovchi barcha moddalar bu reaksiyani beradi — manfiy natija ahamiyatli.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun musbat natija yetarli emas? Doskada: sariq -> ko‘k. Tipik xato: fosformolibden ko‘kini FOB uchun xos reaksiya deb o‘ylash — u faqat fosfor borligini ko‘rsatadi."
-    },
-    {
-      "title": "Antixolinesteraza ta’siriga asoslangan usullar",
-      "bullets": [
-        {
-          "text": "Usul fermentning FOB tomonidan bloklanishi sababli gidrolizlanmagan atsetilxolinni aniqlashga asoslangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yig‘ilib qolgan atsetilxolin miqdori FOB miqdoriga to‘g‘ri proporsional.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xolinesteraza manbai — qon zardobi; gidroksilamin va temir(III) xlorid qo‘shilganda atsetilxolin qizil rangli atsetgidroksam kislotasining temirli kompleksini beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qizil rang nimani bildiradi — ferment bloklanganmi yoki faolmi? Doskada: qizil kompleks = atsetilxolin saqlanib qolgan. Tipik xato: rangni FOB ning o‘zi hosil qilgan deb o‘ylash."
-    },
-    {
-      "title": "Indikator usuli: bromtimol ko‘ki",
-      "bullets": [
-        {
-          "text": "Usul ortiqcha atsetilxolin gidrolizidan hosil bo‘lgan sirka kislotasi ta’sirida indikator rangi o‘zgarishiga asoslangan.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Indikator — bromtimol ko‘kining kuchsiz ishqordagi eritmasi; ferment manbai — ot qoni zardobi; rang ko‘kdan sariqqa o‘tadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Rang o‘zgarishi davomiyligi 13 daqiqa bo‘lishi kerak; fermentning 10% ga kamayishi FOB borligini ko‘rsatadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "153-154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sariqqa o‘tmasa nima demak (ferment bloklangan)? Doskada: ko‘k -> sariq. Tipik xato: boshqa antixolinesteraz moddalarni hisobga olmaslik — keyingi slaydga qarang."
-    },
-    {
-      "title": "Halaqit beruvchi moddalar va miqdoriy usullar",
-      "bullets": [
-        {
-          "text": "Antixolinesteraz ta’sirli moddalar halaqit beradi: sevin, prozerin, galantamin, alkogol, oqsil parchalanish mahsulotlari.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shuning uchun bu reaksiya ham manfiy kimyo-toksikologik ahamiyatli hisoblanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Miqdor: fosformolibden ko‘ki, atsetgidroksam kislotasining temirli tuzi (fotometrik) yoki UB-spektrofotometriya.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sevin FOB bilan bir xil ferment ta’siri ko‘rsatadi — nima uchun ularni farqlash kerak? Doskada: 5 halaqit beruvchi. Tipik xato: musbat ferment sinovini FOB tasdig‘i deb qabul qilish."
-    },
-    {
-      "title": "Majburiy tahlil qilinadigan FOB lar",
-      "bullets": [
-        {
-          "text": "Sog‘liqni saqlash vazirligining 551-sonli buyrug‘iga asosan tahlil qilinishi shart bo‘lgan FOB lar soni 10 ta.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ro‘yxat: karbofos, metafos, metiletiltiofos, metilnitrofos, trixlormetafos-3, fosfamid, metilmerkaptofos, ftalofos, fozalon, butifos.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "DVSSM majmuasida ham xuddi shu ro‘yxat berilgan.",
-          "source": {
-            "author": "Yuldashev Z.A., Nurmatova M.I.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: buyruq amaldagi tahririni tekshirish zarur. Doskada: 10 nomni sanang. Tipik xato: ro‘yxatni to‘liq yodlamasdan YuQX natijalarini talqin qilish. 551-son buyruq (1992): lex.uz da amaldagi tahririni tekshiring."
-    },
-    {
-      "title": "YuQX: FOB tabiatini aniqlash",
-      "bullets": [
-        {
-          "text": "Start chizig‘iga ajralmadan 4 nuqta tomiziladi; kamera — suv bilan to‘yintirilgan xloroform.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Har nuqta zonasi turli reaktiv bilan purkaladi (jadvalga qarang).",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bromfenol zonada sariq fonda ko‘k dog‘ — tio- va ditiofosfat kislota hosilalari ekanini isbotlaydi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "4 nuqta - 4 reaktiv",
-        "nodes": [],
-        "header": [
-          "Nuqta",
-          "Reaktiv"
-        ],
-        "rows": [
-          [
-            "1",
-            "Bromfenol ko‘ki + sirka kislota"
-          ],
-          [
-            "2",
-            "Natriy ishqori"
-          ],
-          [
-            "3",
-            "Dragendorf reaktivi"
-          ],
-          [
-            "4",
-            "Rezortsin (ishqorda)"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega bir plastinkada to‘rt xil reaktiv qo‘llanadi? Doskada: 4 nuqta jadvali. Tipik xato: to‘rt nuqtaga bir xil reaktiv purkash."
-    },
-    {
-      "title": "YuQX natijalarini talqin qilish",
-      "bullets": [
-        {
-          "text": "Para-nitrofenol qoldig‘i bor oltingugurtli preparatlar (metafos, metilnitrofos, metiletiltiofos) ishqorda sariq rang beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Oktametil va xlorofos bromfenol bilan aniqlanmaydi; Dragendorf oktametil va ba’zi azotli moddalar (fozalon, ftalofos, fosfamid) bilan qo‘ng‘ir dog‘ beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xlorofos rezortsin bilan qizil dog‘ hosil qiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Rf va rangni aniqlagach, aniq moddaga yo‘naltirilgan tahlil uchun 100 g ob’ekt tegishli usulda ajratiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "154-155"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: jadvalli talqin: bromfenol (tio-/ditiofosfatlar), ishqor (nitrofenilli), Dragendorf (azotli), rezortsin (xlorofos). Doskada: 4 reaktiv - 4 guruh. Tipik xato: bitta reaktiv natijasiga qarab moddani aniqlash. Kitobda aytilgan Rf jadvali matnda keltirilmagan."
-    },
-    {
-      "title": "Xlorofos va karbofos: qo‘shimcha reaksiyalar",
-      "bullets": [
-        {
-          "text": "Xlorofos: aseton va ishqorning spirtli eritmasi bilan pushti, so‘ng qizil va olov rang; 2,4-dinitrofenilgidrazin bilan ko‘k yoki ko‘k-siyoh rang.",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xlorofos metabolitlari — dixlorofos (DDVF) va dixlorsirka aldegidi YuQX da aniqlanadi (xloroform-efir-vazelin moyi 17:2:1).",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Karbofos: dimetoksiditiofosfat kislotaning sariq-limon rangli mis kompleksi; yodmonoxlorid bilan reaksiya musbat.",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: xlorofos o‘zi emas, metabolitlari ham tahlil ob’ekti. Doskada: xlorofos -> DDVF + dixlorsirka aldegidi. Tipik xato: bu bandlarni kitob matni deb ko‘rsatish — ular faqat malaka ma’ruzasida bor. Eslatma: xlorofos Rf=0,25, DDVF 0,4-0,7 (malaka jadvalida)."
-    },
-    {
-      "title": "FOB ni ajratish: pH va erituvchi (malaka)",
-      "bullets": [
-        {
-          "text": "Malaka ma’ruzasida ayrim FOB lar uchun ajratish muhiti va erituvchi jadvali berilgan.",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Karbofos pH 1, benzol; xlorofos pH 2, efir; fozalon pH 7, efir; butifos pH 7, efir.",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Ajratish sharoiti",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "pH",
-          "Erituvchi"
-        ],
-        "rows": [
-          [
-            "Karbofos",
-            "1",
-            "Benzol"
-          ],
-          [
-            "Xlorofos",
-            "2",
-            "Efir"
-          ],
-          [
-            "Fozalon",
-            "7",
-            "Efir"
-          ],
-          [
-            "Butifos",
-            "7",
-            "Efir"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: pH ning ajratishdagi roli (ekstraksiya nazariyasi 16-ma’ruzada). Doskada: jadvalni to‘ldiring. Tipik xato: bu ma’lumotni kitobdagi ajratish usuli o‘rniga qo‘llash. Jadvaldagi qo‘shimcha (foiz) ustuni slaydga olinmadi."
-    },
-    {
-      "title": "Fozalon",
-      "bullets": [
-        {
-          "text": "Sof holda spirt va organik erituvchilarda eruvchan, sarimsoq hidli kristall modda; suyuqlanish harorati 47-48 °C.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "35% emulsion konsentrat va 80% kukun holida qo‘llanadi; kalamushlar uchun LD50 = 108 mg/kg; havodagi ruxsat etilgan miqdor 0,5 mg/m3.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uchuvchan emas; kislotali muhitda chidamli, ishqoriy muhitda tez gidrolizlanadi; teri orqali qonga o‘tadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "156"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ishqoriy gidroliz ajratish usulini tanlashga qanday ta’sir qiladi? Doskada: 47-48 °C, 108 mg/kg, 0,5 mg/m3. Tipik xato: uchuvchan zahar sifatida suv bug‘i bilan haydashni qo‘llash — fozalon uchuvchan emas."
-    },
-    {
-      "title": "Fozalonni tasdiqlash",
-      "bullets": [
-        {
-          "text": "Kumush nitratning spirtli eritmasi bilan rangsiz ninasimon kristallar; aniqlanish chegarasi 0,5 mkg.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mis nitratning spirtli eritmasi — ko‘kimtir ninasimon kristallar (2 mkg); yodmonoxlorid — qo‘ng‘ir ninasimon mikrokristallar (2 mkg).",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Simob(II) xlorid yoki bromid — sferitlar (4 mkg).",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: suv bilan to‘yingan xloroform, bromfenol ko‘ki, Rf = 0,65-0,67, sariq fonda ko‘k dog‘; UB-spektrofotometriya.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "156"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: aniqlanish chegarasi qanchalik kichik bo‘lsa, reaksiya sezgirligi shunchalik yuqori. Doskada: 0,5; 2; 2; 4 mkg. Tipik xato: mikrokristall shakllarini (nina, sferit) almashtirish."
-    },
-    {
-      "title": "Sevin: ajratish",
-      "bullets": [
-        {
-          "text": "Karbamin kislota hosilasi sevin biomaterialdan ajratiladi: ob’ekt maydalanib, uch marta 1 soatdan benzol bilan bo‘ktiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Benzol qatlamlari birlashtirilib uchiriladi; qoldiq NH4Cl + H3PO4 + aseton aralashmasi bilan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aseton uchirilib, qoldiq xloroform bilan ekstraksiyalanadi; xloroformga sevin bilan birga metaboliti naftol ham o‘tadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun metabolit ham aniqlanadi? Doskada: benzol -> NH4Cl+H3PO4+aseton -> xloroform. Tipik xato: faqat sevinning o‘zini qidirish. Izoh: kitob matnida naftolning harf belgisi o‘qilmaydi («(-naftol»), malaka 021 da esa sevin «β-naftil-N-metilkarbamat» deb yozilgan — tekshirish kerak."
-    },
-    {
-      "title": "Sevin: YuQX va reaksiyalar",
-      "bullets": [
-        {
-          "text": "YuQX: xloroform - benzol - aseton (7:2:1); dog‘lar natriy kuprobromid bilan purkaladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Naftol Rf = 0,45 li siyoh rangli dog‘ beradi; diazotirlangan sulfanil kislota bilan sevin Rf = 0,8 li qizil dog‘ beradi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Malaka: pikrin kislota bilan sariq mikrokristallar; HgCl2 bilan olti burchak yoki prizma shaklidagi mikrokristallar.",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki Rf (0,45 va 0,8) qaysi modda va qaysi reaktiv bilan bog‘liq? Doskada: 0,45 -> naftol (siyoh); 0,8 -> sevin (qizil). Tipik xato: Rf larni almashtirish."
-    },
-    {
-      "title": "TMTD",
-      "bullets": [
-        {
-          "text": "TMTD — tetrametiltiuramdisulfid: fungitsid sifatida tilga olingan karbamin va tiokarbon kislota hosilasi.",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tasdiqlash: 0,2 n yodmonoxlorid bilan olov rangli yulduzcha shaklli mikrokristallar.",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YuQX: toluol-aseton-geksan (1:1:1), bromfenol reaktivi bilan Rf = 0,68, sariq fonda ko‘k dog‘.",
-          "source": {
-            "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-            "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-            "page": "matn"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: TMTD nega «karbamin kislota hosilalari» guruhiga kiradi? Doskada: Rf = 0,68. Tipik xato: bu bandlarni kitob matni deb ko‘rsatish — kitobda TMTD faqat guruh ro‘yxatida tilga olingan, tahlil usuli malaka ma’ruzasidan olindi. Miqdor: mis dimetilditiokarbaminati asosida fotokolorimetriya."
-    },
-    {
-      "title": "Geksaxlortsiklogeksan (GXTSG): xossalari",
-      "bullets": [
-        {
-          "text": "Benzolni fitokimyoviy xlorlab sintezlanadi; 8 xil stereoizomerlar aralashmasi, ko‘kimtir, mog‘or hidli, bo‘g‘uvchi hidli modda.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "157"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "99-100% gamma-izomerni saqlovchi insektitsid «Lindan» deb ataladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "157"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suvda yomon, spirt va efirda yaxshi eriydi; suv bug‘i bilan haydaladi; izomerining suyuqlanish harorati 112,8 °C.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "157"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: suv bug‘i bilan haydalishi ajratish usulini qanday belgilaydi (Rubtsov usuli)? Doskada: 8 izomer, Lindan. Tipik xato: Lindan va umuman geksaxloranni bir modda deb hisoblash. Kitobda xato: aralashma suyuqlanish harorati «90-309 °C» deb yozilgan (toks p.157) — ehtimol 90-93 °C (malaka 021); slaydga kiritilmadi."
-    },
-    {
-      "title": "GXTSG: toksikologik ahamiyati",
-      "bullets": [
-        {
-          "text": "Kontakt va oshqozon-ichak orqali insektitsid va fumigant sifatida ta’sir etadi; don urug‘larini dorilashda ham ishlatiladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "157"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kalamushlarga nisbatan LD50 = 400 mg/kg; gamma-izomeri uchun 200 mg/kg.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "157"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Zaharlanishda hayajonlanish, nafasning sekinlashishi, harakat buzilishi, oyoqlarda tortishish va qaltirash; hormonlar faoliyati buziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "157"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Surunkali zaharlanishda kumulyatsiyalanadi, organizmdan sekin chiqariladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "157"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kumulyatsiya surunkali zaharlanish xavfini oshiradi? Doskada: 400 va 200 mg/kg. Tipik xato: izomerlar LD50 ini aralashtirish."
-    },
-    {
-      "title": "GXTSG ajratish va ishqor bilan reaksiya",
-      "bullets": [
-        {
-          "text": "Rubtsov usuli: suv bug‘i bilan haydab 300 ml distillyat olinadi, uch marta efir bilan ekstraksiyalanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "157"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Muqobil: ob’ekt efir bilan bo‘ktirilib, ajratma aktivlangan ko‘mir kolonkasidan o‘tkaziladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "158"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ishqorning spirtli eritmasi bilan xlor xlorid-anionga o‘tkaziladi, nitrat kislotada kumush nitrat bilan aniqlanadi (uch molekula HCl).",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "158"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ishqor faqat 3 molekula HCl ajratadi? Doskada: 300 ml, 3 marta efir. Tipik xato: ikki ajratish usulini aralashtirish."
-    },
-    {
-      "title": "GXTSG: natriy, nitrobirikma, YuQX",
-      "bullets": [
-        {
-          "text": "Spirt va metall natriy bilan barcha xlor ajraladi; ikki reaksiyadagi oq cho‘kmalar miqdori taxminan 1:2 nisbatda farq qilishi kerak.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "158"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Nitrobirikmaga o‘tkazish: hosil bo‘lgan trinitrobenzol metil spirti alkogolyati bilan zangori-binafsha rang beradi; sezgirlik 0,05 mg.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "158"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qondan YuQX: n-geksan, silikagel — Rf = 0,19; alyuminiy oksidli plastinka — Rf = 0,34 (kumush ammiakati, 10-15 daqiqa UB).",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "159"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Izomerlar va metabolitlar GSX, GX-MS, YuSSX da aniqlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "159"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ikki reaksiya natijasidagi 1:2 nisbat nimani isbotlaydi? Doskada: 0,19 (silikagel), 0,34 (Al2O3). Tipik xato: Rf larni adsorbentlarga noto‘g‘ri bog‘lash. Miqdor: Folgard usuli, hozir GSX, YuSSX yoki GX-MS (p.159)."
-    },
-    {
-      "title": "Qon va siydikdan ajratish (umumiy)",
-      "bullets": [
-        {
-          "text": "Qon: 5 ml namuna pH 8-9 ga keltirilib, 2 ml to‘yingan NaCl va 10 ml organik erituvchi qo‘shiladi; 5 daqiqa sentrifugalanadi, ekstraksiya yana 2 marta takrorlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Siydik: 25 ml namuna + 3 g NaCl, pH 8-9 (0,1 M NaOH); 3 marta (30, 20, 20 ml) organik erituvchi bilan ekstraksiya.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Quruq qoldiq YuQX, YuSSX va UB-spektrometriya usullarida tekshiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: tuz (NaCl) qo‘shish ekstraksiyaga qanday ta’sir qiladi? Doskada: 5 ml/10 ml, 25 ml/30-20-20 ml. Tipik xato: pH ni 8-9 emas, boshqa qiymatga keltirish."
-    },
-    {
-      "title": "Biologik ob’ektdan ajratish va xulosa",
-      "bullets": [
-        {
-          "text": "10 g biologik ob’ekt maydalanib, 1-3 ml suv bilan aralashtiriladi, pH 9-9,5 (0,1 M NaOH) ga keltiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "15 ml organik erituvchi va 5 ml to‘yingan NaCl qo‘shiladi, chayqatgichda 1 soat qoldiriladi; ekstraksiya yana ikki marta takrorlanadi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155-156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Birlashgan ekstrakt natriy sulfat orqali o‘tkaziladi, rotor-vakuum asbobida haydaladi; qoldiq YuQX, UB yoki YuSSX da tekshiriladi.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "156"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekstraksiya sharoitlari FOB ga xos emas, umumiy. Doskada: pH 9-9,5; 15 ml x 3. Tipik xato: pH ni qon uchun (8-9) bilan aralashtirish."
-    },
-    {
-      "title": "Xulosa",
-      "bullets": [
-        {
-          "text": "Pestitsidlar kimyoviy tuzilishi bo‘yicha o‘rganiladi: FOB, xlororganik birikmalar, karbamin kislota hosilalari va boshqalar.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "FOB xolinesterazani bo‘g‘adi; tahlil: fosformolibden ko‘ki, antixolinesteraza usullari, YuQX (4 nuqta, 4 reaktiv).",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "150-154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Xlororganik moddalar barqaror, sekin chiqariladi; GXTSG: ishqor, natriy, nitrobirikma, YuQX, GSX/YuSSX/GX-MS.",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "151, 157-159"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sevin: benzol bilan ajratiladi, YuQX da naftol (Rf = 0,45) va sevin (Rf = 0,8).",
-          "source": {
-            "author": "Yuldashev Z.A., Umarova G.Q.",
-            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-            "page": "155"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: noma’lum pestitsid kelganda tahlil rejasi qanday tuziladi? Doskada: umumiy reaksiya -> YuQX -> xususiy reaksiya -> miqdor. Tipik xato: xususiy tahlilga o‘tishdan oldin umumiy reaksiyalarni o‘tkazmaslik. Kitobda TIAFT tizimlari, DDT va xlorofos/karbofos/metafos uchun alohida to‘liq tahlil sxemalari berilmagan."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Pestitsid so‘zidagi «pestis» lotincha nimani anglatadi?",
-      "options": [
-        "Yuqumli",
-        "O‘ldiruvchi",
-        "Zaharli",
-        "Qishloq"
-      ],
-      "correct_index": 0,
-      "explanation": "Pestis — yuqumli, cido — o‘ldiruvchi.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "149"
-      }
-    },
-    {
-      "question": "Kitob bo‘yicha «kuchli zaharli» pestitsidlar uchun LD50 (mg/kg) qancha?",
-      "options": [
-        "50",
-        "50-200",
-        "200-1000",
-        "1000 dan yuqori"
-      ],
-      "correct_index": 0,
-      "explanation": "Kuchli zaharli guruhda LD50 = 50 mg/kg; yuqori zaharli 50-200, o‘rtacha 200-1000.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "149"
-      }
-    },
-    {
-      "question": "FOB ning asosiy zaharli ta’sir mexanizmi qaysi?",
-      "options": [
-        "Gemoglobinni methemoglobinga aylantirish",
-        "Xolinesteraza fermentini bo‘g‘ish",
-        "Jigar nekrozi",
-        "DNK sintezini to‘xtatish"
-      ],
-      "correct_index": 1,
-      "explanation": "FOB xolinesteraza fermenti faoliyatini bo‘g‘ib, atsetilxolin gidrolizini buzadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "150"
-      }
-    },
-    {
-      "question": "Fosformolibden ko‘ki reaksiyasida mineralizatga qaysi reaktiv qo‘shilganda sariq rang hosil bo‘ladi?",
-      "options": [
-        "Ammoniy molibdati",
-        "Natriy kuprobromid",
-        "Rezortsin",
-        "Dragendorf reaktivi"
-      ],
-      "correct_index": 0,
-      "explanation": "Mineralizat ammoniy molibdati bilan sariq rang beradi.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "153"
-      }
-    },
-    {
-      "question": "Indikator usulida rang o‘zgarishi davomiyligi qancha bo‘lishi kerak?",
-      "options": [
-        "3 daqiqa",
-        "13 daqiqa",
-        "30 daqiqa",
-        "1 soat"
-      ],
-      "correct_index": 1,
-      "explanation": "Rang o‘zgarishlari davomiyligi 13 daqiqani tashkil etishi kerak.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "153"
-      }
-    },
-    {
-      "question": "551-sonli buyruqqa asosan tahlil qilinishi shart FOB lar soni nechta?",
-      "options": [
-        "5",
-        "7",
-        "10",
-        "15"
-      ],
-      "correct_index": 2,
-      "explanation": "Kitobga ko‘ra shart bo‘lgan FOB lar 10 ta: karbofos, metafos va b.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "154"
-      }
-    },
-    {
-      "question": "Xlorofos YuQX da qaysi reaktiv bilan qizil dog‘ hosil qiladi?",
-      "options": [
-        "Bromfenol ko‘ki",
-        "Natriy ishqori",
-        "Dragendorf reaktivi",
-        "Rezortsin"
-      ],
-      "correct_index": 3,
-      "explanation": "Xlorofos rezortsin bilan qizil rangli dog‘ hosil qiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "154"
-      }
-    },
-    {
-      "question": "Sevin YuQX da diazotirlangan sulfanil kislota bilan qanday Rf li qizil dog‘ beradi?",
-      "options": [
-        "0,19",
-        "0,45",
-        "0,65",
-        "0,8"
-      ],
-      "correct_index": 3,
-      "explanation": "Sevin Rf = 0,8 bo‘lgan qizil dog‘ beradi; naftol 0,45 li siyoh dog‘.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "155"
-      }
-    },
-    {
-      "question": "Fozalonning suyuqlanish harorati qancha?",
-      "options": [
-        "47-48 °C",
-        "112,8 °C",
-        "45-50 °C",
-        "212 °C"
-      ],
-      "correct_index": 0,
-      "explanation": "Fozalon 47-48 °C da suyuqlanadi.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "156"
-      }
-    },
-    {
-      "question": "Fozalonning kalamushlar uchun LD50 qiymati qancha?",
-      "options": [
-        "49 mg/kg",
-        "108 mg/kg",
-        "400 mg/kg",
-        "1089 mg/kg"
-      ],
-      "correct_index": 1,
-      "explanation": "Kalamushlar uchun LD50 = 108 mg/kg.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "156"
-      }
-    },
-    {
-      "question": "GXTSG ning gamma-izomeri kalamushlar uchun LD50 qiymati qancha?",
-      "options": [
-        "50 mg/kg",
-        "108 mg/kg",
-        "200 mg/kg",
-        "400 mg/kg"
-      ],
-      "correct_index": 2,
-      "explanation": "GXTSG uchun LD50 = 400 mg/kg, gamma-izomeri uchun 200 mg/kg.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "157"
-      }
-    },
-    {
-      "question": "GXTSG qondan silikagelli plastinkada qanday Rf beradi?",
-      "options": [
-        "0,19",
-        "0,34",
-        "0,57",
-        "0,80"
-      ],
-      "correct_index": 0,
-      "explanation": "Silikagelda Rf = 0,19, alyuminiy oksidida 0,34.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "159"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Pestitsidlarning kimyoviy tasnifida malaka ma’ruzasi noorganik birikmalar va organik birikmalar ostida fosfororganik, fenoksisirka kislota hosilalari, karbaminatlar, mishyak, simob, mis saqlovchi ximikatlar va o‘simlik zaharlarini sanaydi.",
-      "source": {
-        "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-        "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-        "page": "matn"
-      }
-    },
-    {
-      "text": "Kitobga ko‘ra «Navoiy elektrokimyo zavodi» ishlab chiqaradigan sintetik piretroid pestitsidlari kimyo-toksikologik nuqtai nazardan yetarli o‘rganilmagan.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "159"
-      }
-    },
-    {
-      "text": "FOB Hestrin usuli (malaka 021 da keltirilgan) atsetilxolinni gidroksilamin va FeCl3 orqali qizil kompleksga aylantirishga asoslangan.",
-      "source": {
-        "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
-        "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-        "page": "matn"
-      }
-    },
-    {
-      "text": "Kitobga ko‘ra zaharli ximikatlar ishlatilmasa, qishloq xo‘jalik zararkunandalaridan hosilning asosiy qismi yo‘qotiladi.",
-      "source": {
-        "author": "Yuldashev Z.A., Umarova G.Q.",
-        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-        "page": "149"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Reja: qishloq xo‘jalik ximikatlari, ularning sinflanishi, qo‘llanishi va toksikologik ahamiyati.",
+     "source": {
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
-      "year": null,
-      "pages": "b. 148-159"
+      "page": "148"
+     },
+     "uncertain": false
     },
     {
-      "author": "Yuldashev Z.A., Nurmatova M.I.",
-      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
-      "year": null,
-      "pages": "b. 147, 151"
+     "text": "Fosfororganik, xlororganik birikmalar va karbamin kislota hosilalari.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "148"
+     },
+     "uncertain": false
     },
     {
+     "text": "Ularni ob’ektlardan ajratib olish, umumiy va xususiy tahlil usullari; GSX va YuSSX.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "148"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega pestitsidlar ham sud-kimyoviy tahlil ob’ekti? Doskada: reja 3 bandi. Tipik xato: bu ma’ruzani faqat qishloq xo‘jaligi mavzusi deb o‘ylash — u zaharlanish tahlili. Sintetik piretroidlar keyingi (43) ma’ruzada alohida yoritiladi."
+  },
+  {
+   "title": "Pestitsid nima?",
+   "bullets": [
+    {
+     "text": "Qishloq xo‘jaligida qo‘llaniladigan zaharli kimyoviy birikmalar «pestitsidlar» deb ataladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Pestitsid so‘zi lotincha: pestis — yuqumli, cido — o‘ldiruvchi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Pestitsidlar zararkunandalarga, yig‘im-terim oldidan barg tushirishda, hasharotlarga qarshi va o‘simlik o‘sishiga ta’sir uchun ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Pestitsid atamasi",
+    "root": "Pestitsid (lotincha)",
+    "children": [
+     {
+      "label": "pestis",
+      "items": [
+       "yuqumli"
+      ]
+     },
+     {
+      "label": "cido",
+      "items": [
+       "o‘ldiruvchi, o‘ldiraman"
+      ]
+     },
+     {
+      "label": "Qo‘llanilishi",
+      "items": [
+       "zararkunandalarga qarshi",
+       "yig‘im-terim oldidan barg tushirish",
+       "o‘simlik o‘sishiga ta’sir"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: «pestis» va «cido» so‘zlarining ma’nosi. Doskada: etimologiya. Tipik xato: pestitsidni faqat hasharot zahari deb tushunish — kitobga ko‘ra maqsadlari xilma-xil."
+  },
+  {
+   "title": "Pestitsidlarning xavfi va qoldiq miqdori",
+   "bullets": [
+    {
+     "text": "To‘g‘ri foydalanilmasa, pestitsid qoldiqlari havo, tuproq va suvni zaharlaydi, oziq-ovqat va em-xashakka tushadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zaharli ximikatlarning barchasi u yoki bu darajada inson uchun ham zaharli hisoblanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "«Pestitsidlarning qoldiq miqdori» iborasi qo‘llaniladi va u ruxsat etilgan miqdordan kam bo‘lishi shart.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: qoldiq miqdori sifat nazoratida qanday ishlatiladi? Doskada: «qoldiq <= ruxsat etilgan». Tipik xato: ruxsat etilgan miqdorni zaharlanish chegarasi deb o‘ylash."
+  },
+  {
+   "title": "Pestitsidlar maqsadiga ko‘ra",
+   "bullets": [
+    {
+     "text": "Akaratsidlar — kanalarga qarshi; insektitsidlar — hasharotlarga qarshi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gerbitsidlar — yovvoyi o‘simliklarni yo‘qotish uchun.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Malaka ma’ruzasida fungitsidlar zararli zamburug‘larga qarshi ishlatiladigan moddalar sifatida ko‘rsatilgan (TMTD, tsiram, tsineb).",
+     "source": {
       "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
       "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
-      "year": null,
-      "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+      "page": "matn"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Pestitsidlar maqsadiga ko‘ra",
+    "root": "Pestitsidlar",
+    "children": [
+     {
+      "label": "Akaratsidlar",
+      "items": [
+       "kanalarga qarshi"
+      ]
+     },
+     {
+      "label": "Insektitsidlar",
+      "items": [
+       "hasharotlarga qarshi"
+      ]
+     },
+     {
+      "label": "Gerbitsidlar",
+      "items": [
+       "yovvoyi o‘simliklarni yo‘qotish"
+      ]
+     },
+     {
+      "label": "Fungitsidlar",
+      "items": [
+       "zararli zamburug‘larga qarshi (malaka)"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: tasnif maqsadiga ko‘ra va kimyoviy tuzilishiga ko‘ra. Doskada: 4 guruh. Kitobda xato: darslikda «fungitsidlar — viruslarga» deb yozilgan (toks p.149), to‘g‘risi — zamburug‘larga (malaka 021 ga qarang). O‘quv rejasida pestitsidlar faqat kimyoviy tuzilishi bo‘yicha o‘rganiladi."
+  },
+  {
+   "title": "Zaharlilik darajasi bo‘yicha guruhlar",
+   "bullets": [
+    {
+     "text": "Oshqozon-ichak orqali ta’siri bo‘yicha pestitsidlar 4 guruhga bo‘linadi (kalamushlarda).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ko‘rsatkich — LD50, mg/kg.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kuchli zaharli guruhda LD50 = 50 mg/kg; kam zaharli guruhda 1000 mg/kg dan yuqori.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Zaharlilik darajasi (kalamush)",
+    "nodes": [],
+    "header": [
+     "Daraja",
+     "LD50, mg/kg"
+    ],
+    "rows": [
+     [
+      "Kuchli zaharli",
+      "50"
+     ],
+     [
+      "Yuqori zaharli",
+      "50-200"
+     ],
+     [
+      "O‘rtacha zaharli",
+      "200-1000"
+     ],
+     [
+      "Kam zaharli",
+      "1000 dan yuqori"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: LD50 kichik bo‘lsa modda qanchalik xavfli? Doskada: jadvalni yozing. Tipik xato: katta LD50 ni «kuchli zahar» deb o‘ylash. Kitobda kuchli zaharli guruh uchun «50» berilgan (chegara qiymat)."
+  },
+  {
+   "title": "Kimyoviy sinflanish: uch katta sinf",
+   "bullets": [
+    {
+     "text": "Noorganik birikmalar: mis va mishyak saqlovchi tuz va kompleks moddalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Organik pestitsidlar: sintezlab olingan va tabiiy birikmalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metallorganik pestitsidlar: simob va boshqa metall saqlovchi organik birikmalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Kimyoviy sinflar",
+    "nodes": [],
+    "header": [
+     "Sinf",
+     "Misol"
+    ],
+    "rows": [
+     [
+      "Noorganik",
+      "Mis, mishyak tuzlari"
+     ],
+     [
+      "Organik",
+      "Sintetik va tabiiy"
+     ],
+     [
+      "Metallorganik",
+      "Simob saqlovchi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: metall zaharlar (9-12 ma’ruzalar) bilan bog‘liqlik. Doskada: 3 sinf. Tipik xato: mis va mishyak saqlovchi pestitsidlarni organik deb hisoblash."
+  },
+  {
+   "title": "Sintetik organik pestitsidlar guruhlari",
+   "bullets": [
+    {
+     "text": "Fosfororganik birikmalar (FOB): metafos, merkaptofos, karbofos, fozalon, xlorofos; dorivor: benzotef, nibufen, imifos.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sintetik piretroidlar: sipermetrin, detsis, danitol, karate, sumi-alfa va b.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Karbamin va tiokarbon kislota hosilalari: sevin, siram, sineb, TMTD va b.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Galogen saqlovchi uglevodorodlar: DDT, geksaxloran, geptaxlor va b.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Sintetik organik pestitsidlar",
+    "root": "Organik pestitsidlar",
+    "children": [
+     {
+      "label": "FOB",
+      "items": [
+       "metafos, merkaptofos, karbofos",
+       "fozalon, xlorofos"
+      ]
+     },
+     {
+      "label": "Sintetik piretroidlar",
+      "items": [
+       "sipermetrin, detsis, danitol",
+       "karate, sumi-alfa"
+      ]
+     },
+     {
+      "label": "Karbamin/tiokarbon",
+      "items": [
+       "sevin, siram, sineb, TMTD"
+      ]
+     },
+     {
+      "label": "Galogenli uglevodorodlar",
+      "items": [
+       "DDT, geksaxloran, geptaxlor"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: har guruhdan bittadan vakilni ayting. Doskada: 4 guruh - 4 misol. Tipik xato: sevin va TMTD ni fosfororganik guruhga kiritish. Qolgan guruhlar keyingi slaydda."
+  },
+  {
+   "title": "Qolgan guruhlar",
+   "bullets": [
+    {
+     "text": "Aminlar hosilalari: dikvat, parakvat va b.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keton, spirt, nitrofenol va oddiy efirlar hosilalari: dinitro-ortokrezol va b.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘simliklardan olingan birikmalar: anabazin, nikotin va b.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 2 daqiqa. Muhokama: anabazin va nikotin 22-ma’ruzada alkaloid sifatida o‘rganiladi. Doskada: 3 guruh. Tipik xato: nikotinni sintetik pestitsid deb hisoblash — kitob uni o‘simliklardan olingan birikma deydi."
+  },
+  {
+   "title": "Fosfororganik birikmalarning ahamiyati",
+   "bullets": [
+    {
+     "text": "Toksikologik ahamiyati: zaharli modda ekanligi va qishloq xo‘jaligida keng, ko‘p miqdorda qo‘llanishi bilan izohlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xlorofos — qishloq xo‘jalik o‘simliklarini parvarishlashda insektitsid va akaritsid; uyda pashshalarga qarshi ham ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "DVSSM majmuasida ham xlorofosning asosiy qo‘llanilishi shunday keltirilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "147"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uy sharoitida ishlatilishi tasodifiy zaharlanishni qanday oshiradi? Doskada: xlorofos - insektitsid + akaritsid. Tipik xato: faqat dala ishchilarini xavf guruhi deb hisoblash."
+  },
+  {
+   "title": "Zaharlanish holatlari",
+   "bullets": [
+    {
+     "text": "Adabiyotlarda 1,5% karbofos eritmasini ichgan ayol halok bo‘lgani yozilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "To‘rt yoshli bola tiofos yuqi bo‘lgan stakandan suv ichganda o‘lim sodir bo‘lgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "FOB teri orqali ham so‘rilib halokatga olib kelishi mumkin: bola tiofosdan bo‘shatilgan idish bilan o‘ynab 30 daqiqadan keyin vafot etgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Zaharlanish holatlari",
+    "items": [
+     {
+      "label": "Karbofos eritmasi",
+      "value": "1,5",
+      "unit": "%"
+     },
+     {
+      "label": "Bolaning yoshi",
+      "value": "4",
+      "unit": "yosh"
+     },
+     {
+      "label": "Teri orqali: vafot",
+      "value": "30",
+      "unit": "daqiqa"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: teri orqali so‘rilish ekspertiza qaysi ob’ektlarni tanlashga ta’sir qiladi? Doskada: 3 yo‘l (og‘iz, idish, teri). Tipik xato: tasodifiy zaharlanishni faqat og‘iz orqali deb o‘ylash."
+  },
+  {
+   "title": "FOB ta’sir mexanizmi: xolinesteraza",
+   "bullets": [
+    {
+     "text": "FOB ning zaharli ta’siri xolinesteraza fermenti faoliyatini bo‘g‘ib qo‘yish qobiliyati bilan tushuntiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "FOB antixolinesteraz ta’sirli moddalar turkumiga kiradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mediator atsetilxolin gidrolizi buziladi va nerv hujayralarida ortiqcha yig‘iladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150-151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Mexanizm",
+    "nodes": [
+     "FOB organizmga tushadi",
+     "Xolinesteraza bloklanadi",
+     "Atsetilxolin gidrolizlanmaydi",
+     "Atsetilxolin yig‘iladi",
+     "Neyrotoksik ta’sir"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: atsetilxolin yig‘ilishi nega nerv tizimini buzadi? Doskada: 5 bosqichli zanjir. Tipik xato: FOB ni nerv hujayralarini bevosita yemiruvchi zahar deb o‘ylash — u fermentni to‘xtatadi."
+  },
+  {
+   "title": "FOB bilan zaharlanish belgilari",
+   "bullets": [
+    {
+     "text": "Bosh og‘rig‘i, ko‘ngil aynishi, qusish, qorinda og‘riq, ko‘p so‘lak ajralishi va terlash.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ko‘z qorachig‘ining torayishi, qo‘l va oyoq uchlarining titrashi, qo‘rquv hissi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qon bosimi avval ko‘tarilib, keyin pasayadi; nafas olish to‘xtashi tufayli o‘lim sodir bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Murdani yorganda oshqozon-ichakda qo‘lansa merkaptan hidi sezilishi mumkin; patologoanatomik belgi — faqat ichki a’zolarga qon quyilishi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "FOB bilan zaharlanish",
+    "root": "Zaharlanish belgilari",
+    "children": [
+     {
+      "label": "Vegetativ",
+      "items": [
+       "bosh og‘rig‘i, ko‘ngil aynishi",
+       "ko‘p so‘lak, terlash"
+      ]
+     },
+     {
+      "label": "Ko‘z va a’zolar",
+      "items": [
+       "qorachiq torayishi",
+       "qo‘l-oyoq uchlari titrashi"
+      ]
+     },
+     {
+      "label": "Hayotiy tizimlar",
+      "items": [
+       "qon bosimi ko‘tarilib pasayadi",
+       "nafas olish to‘xtashi"
+      ]
+     },
+     {
+      "label": "Murdada",
+      "items": [
+       "merkaptan hidi",
+       "ichki a’zolarga qon quyilishi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega patologoanatomik belgilar kam bo‘lsa sud-kimyoviy tahlil hal qiluvchi? Doskada: 6 belgi. Tipik xato: merkaptan hidining yo‘qligini FOB yo‘qligidan dalil deb olish (u «sezilishi mumkin»)."
+  },
+  {
+   "title": "Xlororganik birikmalarning ahamiyati",
+   "bullets": [
+    {
+     "text": "Qishloq xo‘jaligida insektitsid sifatida keng qo‘llanishi bilan tushuntiriladi; dust yoki yog‘dagi eritmalar holida.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yog‘dagi eritmalari ayniqsa zaharli: tez shimiladi; buyrak, yog‘ to‘qimasi va suyak iligi yaxshi o‘zlashtiradi, sekin chiqariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xlororganik moddalar juda barqaror, tabiiy sharoitda uzoq vaqt o‘zgarishsiz saqlanadi, tuproq va yer osti suvlarida to‘planadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Xlororganik birikmalar",
+    "root": "Xlororganik moddalar",
+    "children": [
+     {
+      "label": "Shakllari",
+      "items": [
+       "dust",
+       "yog‘dagi eritma (ayniqsa zaharli)"
+      ]
+     },
+     {
+      "label": "Yog‘dagi eritma",
+      "items": [
+       "tez shimiladi",
+       "buyrak, yog‘, suyak iligida"
+      ]
+     },
+     {
+      "label": "Barqarorlik",
+      "items": [
+       "uzoq saqlanadi",
+       "tuproq va suvda to‘planadi"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: barqarorlik nega ekologik xavf tug‘diradi? Doskada: «barqaror + yog‘da eruvchan = to‘planadi». Tipik xato: xlororganik moddalarni tez parchalanadi deb o‘ylash."
+  },
+  {
+   "title": "Xlororganik moddalar: metabolizm va belgilar",
+   "bullets": [
+    {
+     "text": "DDT dan kam zaharli dixlordifenilsirka kislotasi hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Geptaxlordan oksidlanish mahsuli geptaxlor epoksidi — yana ham kuchli zaharli modda hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Belgilari: bosh og‘rishi, quvvatsizlik, qo‘l-oyoq qaltirashi, so‘lak oqishi, seskanish; o‘lim markaziy nerv va yurak-qon tizimi ishdan chiqishidan.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kimyoviy tekshirish uchun murda ichki a’zolari, hayvonlar, oziq-ovqat mahsulotlari olinadi; tekshirish sud-tergov ko‘rsatmasi asosida bajariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Metabolitlar zaharliligi",
+    "columns": [
+     {
+      "title": "DDT",
+      "items": [
+       "metabolit: dixlordifenilsirka k-ta",
+       "kam zaharli"
+      ]
+     },
+     {
+      "title": "Geptaxlor",
+      "items": [
+       "oksidlanish mahsuli: epoksid",
+       "yana ham kuchli zaharli"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: metabolit asosiy modda bilan solishtirganda zaharliligi qanday o‘zgaradi? Doskada: DDT -> kam zaharli; geptaxlor -> epoksid, ko‘proq zaharli. Tipik xato: metabolizmni har doim zararsizlantirish deb hisoblash. Kitobga ko‘ra xlororganik moddalarning tahlil usullari nihoyatda kam o‘rganilgan."
+  },
+  {
+   "title": "FOB ni biologik ob’ektdan ajratish",
+   "bullets": [
+    {
+     "text": "Ob’ekt mayda qiymalanib, zarur muhit hosil bo‘lguncha xlorid (yoki sulfat) kislota qo‘shiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Organik erituvchi bilan bo‘ktiriladi, uy haroratida bir soat qoldiriladi; bo‘ktirish yana 2-3 marta takrorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Umumlashtirilgan erituvchi vakuum-nasos yordamida (yoki suv hammomida) bug‘latiladi; qoldiq spirtda eritiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Muqobil usul: suvsiz natriy sulfat ishtirokida geksan bilan ekstraksiya.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "152"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "caption": "FOB ni ajratish",
+    "items": [
+     {
+      "title": "Tayyorlash",
+      "text": "ob’ekt qiymalanadi, HCl (yoki H2SO4)"
+     },
+     {
+      "title": "Bo‘ktirish",
+      "text": "organik erituvchi, 1 soat, uy harorati"
+     },
+     {
+      "title": "Takror",
+      "text": "yana 2-3 marta"
+     },
+     {
+      "title": "Bug‘latish",
+      "text": "vakuum-nasos yoki suv hammomi"
+     },
+     {
+      "title": "Eritish",
+      "text": "qoldiq spirtda, chinlik va miqdor"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega ajratishdan avval muhit kislotali qilinadi? Doskada: bosqichlar ketma-ketligi. Tipik xato: bo‘ktirishni bir marta bajarib to‘xtash — kitob 2-3 marta takrorlashni talab qiladi."
+  },
+  {
+   "title": "Yog‘dan tozalash",
+   "bullets": [
+    {
+     "text": "Organik erituvchi qatlamiga yog‘ va yog‘simon moddalar ham o‘tadi, ayniqsa oshqozon-ichak, buyrak, jigar a’zolarida.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Erituvchi uchirilgach, qoldiq oz miqdor aseton bilan aralashtirilib, muzlatgichda sovitiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yog‘ qotib yuzaga chiqadi, FOB aseton qavatiga o‘tadi; jarayon bir necha marta takrorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qo‘shimcha tozalash: sorbent saqlovchi kolonka va yupqa qatlam xromatografiyasi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "152"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega past haroratda yog‘ ajraladi? Doskada: «aseton + sovutish = yog‘ qotadi». Tipik xato: asetonli ajratmani tashlab yuborish — FOB aynan shu qavatda."
+  },
+  {
+   "title": "Umumiy reaksiya: fosformolibden ko‘ki",
+   "bullets": [
+    {
+     "text": "Ajralmaning bir qismi quriguncha bug‘latilib, qoldiq sulfat va nitrat kislotalari bilan mineralizatsiya qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mineralizat ammoniy molibdati bilan sariq rang beradi; benzidin yoki askorbin kislota ta’sirida barqaror ko‘k kompleks hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Usul yuqori sezgir, lekin fosfor saqlovchi barcha moddalar bu reaksiyani beradi — manfiy natija ahamiyatli.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Fosformolibden ko‘ki reaksiyasi",
+    "reagents": [
+     "Mineralizat (H2SO4 + HNO3)",
+     "Ammoniy molibdati"
+    ],
+    "products": [
+     "Sariq rang, so‘ng barqaror ko‘k"
+    ],
+    "conditions": "benzidin yoki askorbin kislota",
+    "observation": "fosfor saqlovchi barcha moddalar beradi"
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun musbat natija yetarli emas? Doskada: sariq -> ko‘k. Tipik xato: fosformolibden ko‘kini FOB uchun xos reaksiya deb o‘ylash — u faqat fosfor borligini ko‘rsatadi."
+  },
+  {
+   "title": "Antixolinesteraza ta’siriga asoslangan usullar",
+   "bullets": [
+    {
+     "text": "Usul fermentning FOB tomonidan bloklanishi sababli gidrolizlanmagan atsetilxolinni aniqlashga asoslangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yig‘ilib qolgan atsetilxolin miqdori FOB miqdoriga to‘g‘ri proporsional.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ferment manbai — qon zardobi; gidroksilamin va temir(III) xlorid qo‘shilganda atsetilxolin qizil rangli atsetgidroksam kislotasining temirli kompleksini beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "caption": "Atsetilxolinni aniqlash",
+    "reagents": [
+     "Atsetilxolin",
+     "Gidroksilamin",
+     "Temir (III) xlorid"
+    ],
+    "products": [
+     "Atsetgidroksam k-ta Fe kompleksi"
+    ],
+    "conditions": "ferment manbai: qon zardobi",
+    "observation": "qizil rang"
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: qizil rang nimani bildiradi — ferment bloklanganmi yoki faolmi? Doskada: qizil kompleks = atsetilxolin saqlanib qolgan. Tipik xato: rangni FOB ning o‘zi hosil qilgan deb o‘ylash."
+  },
+  {
+   "title": "Indikator usuli: bromtimol ko‘ki",
+   "bullets": [
+    {
+     "text": "Usul ortiqcha atsetilxolin gidrolizidan hosil bo‘lgan sirka kislotasi ta’sirida indikator rangi o‘zgarishiga asoslangan.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Indikator — bromtimol ko‘kining kuchsiz ishqordagi eritmasi; ferment manbai — ot qoni zardobi; rang ko‘kdan sariqqa o‘tadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Rang o‘zgarishi davomiyligi 13 daqiqa bo‘lishi kerak; fermentning 10% ga kamayishi FOB borligini ko‘rsatadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153-154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Indikator usuli",
+    "items": [
+     {
+      "label": "Indikator",
+      "value": "bromtimol ko‘ki"
+     },
+     {
+      "label": "Rang o‘zgarishi",
+      "value": "ko‘k -> sariq"
+     },
+     {
+      "label": "Davomiyligi",
+      "value": "13",
+      "unit": "daqiqa"
+     },
+     {
+      "label": "Ferment faolligi",
+      "value": "10",
+      "unit": "% kamayadi"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sariqqa o‘tmasa nima demak (ferment bloklangan)? Doskada: ko‘k -> sariq. Tipik xato: boshqa antixolinesteraz moddalarni hisobga olmaslik — keyingi slaydga qarang."
+  },
+  {
+   "title": "Halaqit beruvchi moddalar va miqdoriy usullar",
+   "bullets": [
+    {
+     "text": "Antixolinesteraz ta’sirli moddalar halaqit beradi: sevin, prozerin, galantamin, alkogol, oqsil parchalanish mahsulotlari.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shuning uchun bu reaksiya ham manfiy kimyo-toksikologik ahamiyatli hisoblanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Miqdor: fosformolibden ko‘ki, atsetgidroksam kislotasining temirli tuzi (fotometrik) yoki UB-spektrofotometriya.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "caption": "Halaqit beruvchilar va miqdor",
+    "root": "Antixolinesteraza usuli",
+    "children": [
+     {
+      "label": "Halaqit beruvchilar",
+      "items": [
+       "sevin, prozerin, galantamin",
+       "alkogol",
+       "oqsil parchalanish mahsuloti"
+      ]
+     },
+     {
+      "label": "Miqdoriy usullar",
+      "items": [
+       "fosformolibden ko‘ki",
+       "atsetgidroksam k-ta Fe tuzi",
+       "UB-spektrofotometriya"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: sevin FOB bilan bir xil ferment ta’siri ko‘rsatadi — nima uchun ularni farqlash kerak? Doskada: 5 halaqit beruvchi. Tipik xato: musbat ferment sinovini FOB tasdig‘i deb qabul qilish."
+  },
+  {
+   "title": "FOB tahlili: umumiy sxema",
+   "bullets": [
+    {
+     "text": "Avval fosforga umumiy reaksiya (fosformolibden ko‘ki), so‘ng antixolinesteraza ta’siriga asoslangan usullar.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keyin YuQX: start chizig‘iga 4 nuqta, har biri turli reaktiv bilan purkaladi; Rf va rang solishtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Natijaga ko‘ra aniq moddaga yo‘naltirilgan tahlil uchun 100 g ob’ekt tegishli usulda ajratiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154-155"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "FOB tahlili bosqichlari",
+    "nodes": [
+     "Fosformolibden ko‘ki (umumiy)",
+     "Antixolinesteraza usullari",
+     "YuQX: 4 nuqta, 4 reaktiv",
+     "Rf va rang bo‘yicha solishtirish",
+     "100 g ob’ekt: aniq modda tahlili"
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun umumiy reaksiyaning manfiy natijasi muhimroq? Doskada: zanjir. Tipik xato: antixolinesteraza usulini aniq modda uchun tasdiqlovchi deb hisoblash (halaqit beruvchi moddalar bor)."
+  },
+  {
+   "title": "Majburiy tahlil qilinadigan FOB lar",
+   "bullets": [
+    {
+     "text": "Sog‘liqni saqlash vazirligining 551-sonli buyrug‘iga asosan tahlil qilinishi shart bo‘lgan FOB lar soni 10 ta.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ro‘yxat: karbofos, metafos, metiletiltiofos, metilnitrofos, trixlormetafos-3, fosfamid, metilmerkaptofos, ftalofos, fozalon, butifos.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "DVSSM majmuasida ham xuddi shu ro‘yxat berilgan.",
+     "source": {
+      "author": "Yuldashev Z.A., Nurmatova M.I.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "551-son: 10 ta FOB",
+    "header": [
+     "№",
+     "FOB",
+     "№",
+     "FOB"
+    ],
+    "rows": [
+     [
+      "1",
+      "karbofos",
+      "6",
+      "metilmerkaptofos"
+     ],
+     [
+      "2",
+      "metafos",
+      "7",
+      "ftalofos"
+     ],
+     [
+      "3",
+      "metiletiltiofos",
+      "8",
+      "fozalon"
+     ],
+     [
+      "4",
+      "metilnitrofos",
+      "9",
+      "butifos"
+     ],
+     [
+      "5",
+      "trixlormetafos-3",
+      "10",
+      "fosfamid"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: buyruq amaldagi tahririni tekshirish zarur. Doskada: 10 nomni sanang. Tipik xato: ro‘yxatni to‘liq yodlamasdan YuQX natijalarini talqin qilish. 551-son buyruq (1992): lex.uz da amaldagi tahririni tekshiring."
+  },
+  {
+   "title": "YuQX: FOB tabiatini aniqlash",
+   "bullets": [
+    {
+     "text": "Start chizig‘iga ajralmadan 4 nuqta tomiziladi; kamera — suv bilan to‘yintirilgan xloroform.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Har nuqta zonasi turli reaktiv bilan purkaladi (jadvalga qarang).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bromfenol zonada sariq fonda ko‘k dog‘ — tio- va ditiofosfat kislota hosilalari ekanini isbotlaydi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "4 nuqta - 4 reaktiv",
+    "nodes": [],
+    "header": [
+     "Nuqta",
+     "Reaktiv"
+    ],
+    "rows": [
+     [
+      "1",
+      "Bromfenol ko‘ki + sirka kislota"
+     ],
+     [
+      "2",
+      "Natriy ishqori"
+     ],
+     [
+      "3",
+      "Dragendorf reaktivi"
+     ],
+     [
+      "4",
+      "Rezortsin (ishqorda)"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega bir plastinkada to‘rt xil reaktiv qo‘llanadi? Doskada: 4 nuqta jadvali. Tipik xato: to‘rt nuqtaga bir xil reaktiv purkash."
+  },
+  {
+   "title": "YuQX natijalarini talqin qilish",
+   "bullets": [
+    {
+     "text": "Para-nitrofenol qoldig‘i bor oltingugurtli preparatlar (metafos, metilnitrofos, metiletiltiofos) ishqorda sariq rang beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Oktametil va xlorofos bromfenol bilan aniqlanmaydi; Dragendorf oktametil va ba’zi azotli moddalar (fozalon, ftalofos, fosfamid) bilan qo‘ng‘ir dog‘ beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xlorofos rezortsin bilan qizil dog‘ hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Rf va rangni aniqlagach, aniq moddaga yo‘naltirilgan tahlil uchun 100 g ob’ekt tegishli usulda ajratiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "154-155"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "4 nuqta natijalari",
+    "header": [
+     "Zona",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "Bromfenol + sirka k-ta",
+      "sariq fonda ko‘k (tio-, ditiofosfat)"
+     ],
+     [
+      "Natriy ishqori",
+      "sariq (p-nitrofenol saqlovchi)"
+     ],
+     [
+      "Dragendorf",
+      "qo‘ng‘ir dog‘ (oktametil, fozalon)"
+     ],
+     [
+      "Rezortsin (ishqorda)",
+      "qizil dog‘ (xlorofos)"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: jadvalli talqin: bromfenol (tio-/ditiofosfatlar), ishqor (nitrofenilli), Dragendorf (azotli), rezortsin (xlorofos). Doskada: 4 reaktiv - 4 guruh. Tipik xato: bitta reaktiv natijasiga qarab moddani aniqlash. Kitobda aytilgan Rf jadvali matnda keltirilmagan."
+  },
+  {
+   "title": "Xlorofos va karbofos: qo‘shimcha reaksiyalar",
+   "bullets": [
+    {
+     "text": "Xlorofos: aseton va ishqorning spirtli eritmasi bilan pushti, so‘ng qizil va olov rang; 2,4-dinitrofenilgidrazin bilan ko‘k yoki ko‘k-siyoh rang.",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xlorofos metabolitlari — dixlorofos (DDVF) va dixlorsirka aldegidi YuQX da aniqlanadi (xloroform-efir-vazelin moyi 17:2:1).",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Karbofos: dimetoksiditiofosfat kislotaning sariq-limon rangli mis kompleksi; yodmonoxlorid bilan reaksiya musbat.",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: xlorofos o‘zi emas, metabolitlari ham tahlil ob’ekti. Doskada: xlorofos -> DDVF + dixlorsirka aldegidi. Tipik xato: bu bandlarni kitob matni deb ko‘rsatish — ular faqat malaka ma’ruzasida bor. Eslatma: xlorofos Rf=0,25, DDVF 0,4-0,7 (malaka jadvalida)."
+  },
+  {
+   "title": "FOB ni ajratish: pH va erituvchi (malaka)",
+   "bullets": [
+    {
+     "text": "Malaka ma’ruzasida ayrim FOB lar uchun ajratish muhiti va erituvchi jadvali berilgan.",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Karbofos pH 1, benzol; xlorofos pH 2, efir; fozalon pH 7, efir; butifos pH 7, efir.",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Ajratish sharoiti",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "pH",
+     "Erituvchi"
+    ],
+    "rows": [
+     [
+      "Karbofos",
+      "1",
+      "Benzol"
+     ],
+     [
+      "Xlorofos",
+      "2",
+      "Efir"
+     ],
+     [
+      "Fozalon",
+      "7",
+      "Efir"
+     ],
+     [
+      "Butifos",
+      "7",
+      "Efir"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: pH ning ajratishdagi roli (ekstraksiya nazariyasi 16-ma’ruzada). Doskada: jadvalni to‘ldiring. Tipik xato: bu ma’lumotni kitobdagi ajratish usuli o‘rniga qo‘llash. Jadvaldagi qo‘shimcha (foiz) ustuni slaydga olinmadi."
+  },
+  {
+   "title": "Fozalon",
+   "bullets": [
+    {
+     "text": "Sof holda spirt va organik erituvchilarda eruvchan, sarimsoq hidli kristall modda; suyuqlanish harorati 47-48 °C.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "35% emulsion konsentrat va 80% kukun holida qo‘llanadi; kalamushlar uchun LD50 = 108 mg/kg; havodagi ruxsat etilgan miqdor 0,5 mg/m3.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uchuvchan emas; kislotali muhitda chidamli, ishqoriy muhitda tez gidrolizlanadi; teri orqali qonga o‘tadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Fozalon",
+    "items": [
+     {
+      "label": "Suyuqlanish",
+      "value": "47-48",
+      "unit": "°C"
+     },
+     {
+      "label": "Konsentrat / kukun",
+      "value": "35% / 80%"
+     },
+     {
+      "label": "LD50 (kalamush)",
+      "value": "108",
+      "unit": "mg/kg"
+     },
+     {
+      "label": "Havoda ruxsat etilgan",
+      "value": "0,5",
+      "unit": "mg/m3"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ishqoriy gidroliz ajratish usulini tanlashga qanday ta’sir qiladi? Doskada: 47-48 °C, 108 mg/kg, 0,5 mg/m3. Tipik xato: uchuvchan zahar sifatida suv bug‘i bilan haydashni qo‘llash — fozalon uchuvchan emas."
+  },
+  {
+   "title": "Fozalonni tasdiqlash",
+   "bullets": [
+    {
+     "text": "Kumush nitratning spirtli eritmasi bilan rangsiz ninasimon kristallar; aniqlanish chegarasi 0,5 mkg.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mis nitratning spirtli eritmasi — ko‘kimtir ninasimon kristallar (2 mkg); yodmonoxlorid — qo‘ng‘ir ninasimon mikrokristallar (2 mkg).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Simob(II) xlorid yoki bromid — sferitlar (4 mkg).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: suv bilan to‘yingan xloroform, bromfenol ko‘ki, Rf = 0,65-0,67, sariq fonda ko‘k dog‘; UB-spektrofotometriya.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Fozalon: mikrokristall reaksiyalar",
+    "header": [
+     "Reaktiv",
+     "Kristallar",
+     "Chegara"
+    ],
+    "rows": [
+     [
+      "AgNO3 (spirtli)",
+      "rangsiz ninasimon",
+      "0,5 mkg"
+     ],
+     [
+      "Cu(NO3)2 (spirtli)",
+      "ko‘kimtir ninasimon",
+      "2 mkg"
+     ],
+     [
+      "Yodmonoxlorid",
+      "qo‘ng‘ir ninasimon",
+      "2 mkg"
+     ],
+     [
+      "HgCl2 yoki HgBr2",
+      "sferitlar",
+      "4 mkg"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: aniqlanish chegarasi qanchalik kichik bo‘lsa, reaksiya sezgirligi shunchalik yuqori. Doskada: 0,5; 2; 2; 4 mkg. Tipik xato: mikrokristall shakllarini (nina, sferit) almashtirish."
+  },
+  {
+   "title": "Sevin: ajratish",
+   "bullets": [
+    {
+     "text": "Karbamin kislota hosilasi sevin biomaterialdan ajratiladi: ob’ekt maydalanib, uch marta 1 soatdan benzol bilan bo‘ktiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Benzol qatlamlari birlashtirilib uchiriladi; qoldiq NH4Cl + H3PO4 + aseton aralashmasi bilan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton uchirilib, qoldiq xloroform bilan ekstraksiyalanadi; xloroformga sevin bilan birga metaboliti naftol ham o‘tadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun metabolit ham aniqlanadi? Doskada: benzol -> NH4Cl+H3PO4+aseton -> xloroform. Tipik xato: faqat sevinning o‘zini qidirish. Izoh: kitob matnida naftolning harf belgisi o‘qilmaydi («(-naftol»), malaka 021 da esa sevin «β-naftil-N-metilkarbamat» deb yozilgan — tekshirish kerak."
+  },
+  {
+   "title": "Sevin: YuQX va reaksiyalar",
+   "bullets": [
+    {
+     "text": "YuQX: xloroform - benzol - aseton (7:2:1); dog‘lar natriy kuprobromid bilan purkaladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Naftol Rf = 0,45 li siyoh rangli dog‘ beradi; diazotirlangan sulfanil kislota bilan sevin Rf = 0,8 li qizil dog‘ beradi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Malaka: pikrin kislota bilan sariq mikrokristallar; HgCl2 bilan olti burchak yoki prizma shaklidagi mikrokristallar.",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "Sevin va naftol (YuQX)",
+    "items": [
+     {
+      "label": "Sistema",
+      "value": "7:2:1"
+     },
+     {
+      "label": "Naftol Rf",
+      "value": "0,45"
+     },
+     {
+      "label": "Naftol dog‘i",
+      "value": "siyoh rang"
+     },
+     {
+      "label": "Sevin Rf",
+      "value": "0,8"
+     },
+     {
+      "label": "Sevin dog‘i",
+      "value": "qizil"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ikki Rf (0,45 va 0,8) qaysi modda va qaysi reaktiv bilan bog‘liq? Doskada: 0,45 -> naftol (siyoh); 0,8 -> sevin (qizil). Tipik xato: Rf larni almashtirish."
+  },
+  {
+   "title": "TMTD",
+   "bullets": [
+    {
+     "text": "TMTD — tetrametiltiuramdisulfid: fungitsid sifatida tilga olingan karbamin va tiokarbon kislota hosilasi.",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tasdiqlash: 0,2 n yodmonoxlorid bilan olov rangli yulduzcha shaklli mikrokristallar.",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YuQX: toluol-aseton-geksan (1:1:1), bromfenol reaktivi bilan Rf = 0,68, sariq fonda ko‘k dog‘.",
+     "source": {
+      "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+      "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+      "page": "matn"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: TMTD nega «karbamin kislota hosilalari» guruhiga kiradi? Doskada: Rf = 0,68. Tipik xato: bu bandlarni kitob matni deb ko‘rsatish — kitobda TMTD faqat guruh ro‘yxatida tilga olingan, tahlil usuli malaka ma’ruzasidan olindi. Miqdor: mis dimetilditiokarbaminati asosida fotokolorimetriya."
+  },
+  {
+   "title": "Geksaxlortsiklogeksan (GXTSG): xossalari",
+   "bullets": [
+    {
+     "text": "Benzolni fitokimyoviy xlorlab sintezlanadi; 8 xil stereoizomerlar aralashmasi, ko‘kimtir, mog‘or hidli, bo‘g‘uvchi hidli modda.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "99-100% gamma-izomerni saqlovchi insektitsid «Lindan» deb ataladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suvda yomon, spirt va efirda yaxshi eriydi; suv bug‘i bilan haydaladi; izomerining suyuqlanish harorati 112,8 °C.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "157"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "caption": "GXTSG",
+    "items": [
+     {
+      "label": "Stereoizomerlar",
+      "value": "8"
+     },
+     {
+      "label": "«Lindan»: γ-izomer",
+      "value": "99-100",
+      "unit": "%"
+     },
+     {
+      "label": "γ-izomer suyuqlanishi",
+      "value": "112,8",
+      "unit": "°C"
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: suv bug‘i bilan haydalishi ajratish usulini qanday belgilaydi (Rubtsov usuli)? Doskada: 8 izomer, Lindan. Tipik xato: Lindan va umuman geksaxloranni bir modda deb hisoblash. Kitobda xato: aralashma suyuqlanish harorati «90-309 °C» deb yozilgan (toks p.157) — ehtimol 90-93 °C (malaka 021); slaydga kiritilmadi."
+  },
+  {
+   "title": "GXTSG: toksikologik ahamiyati",
+   "bullets": [
+    {
+     "text": "Kontakt va oshqozon-ichak orqali insektitsid va fumigant sifatida ta’sir etadi; don urug‘larini dorilashda ham ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kalamushlarga nisbatan LD50 = 400 mg/kg; gamma-izomeri uchun 200 mg/kg.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zaharlanishda hayajonlanish, nafasning sekinlashishi, harakat buzilishi, oyoqlarda tortishish va qaltirash; hormonlar faoliyati buziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Surunkali zaharlanishda kumulyatsiyalanadi, organizmdan sekin chiqariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "157"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega kumulyatsiya surunkali zaharlanish xavfini oshiradi? Doskada: 400 va 200 mg/kg. Tipik xato: izomerlar LD50 ini aralashtirish."
+  },
+  {
+   "title": "GXTSG ajratish va ishqor bilan reaksiya",
+   "bullets": [
+    {
+     "text": "Rubtsov usuli: suv bug‘i bilan haydab 300 ml distillyat olinadi, uch marta efir bilan ekstraksiyalanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Muqobil: ob’ekt efir bilan bo‘ktirilib, ajratma aktivlangan ko‘mir kolonkasidan o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "158"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ishqorning spirtli eritmasi bilan xlor xlorid-anionga o‘tkaziladi, nitrat kislotada kumush nitrat bilan aniqlanadi (uch molekula HCl).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "158"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ishqor faqat 3 molekula HCl ajratadi? Doskada: 300 ml, 3 marta efir. Tipik xato: ikki ajratish usulini aralashtirish."
+  },
+  {
+   "title": "GXTSG: natriy, nitrobirikma, YuQX",
+   "bullets": [
+    {
+     "text": "Spirt va metall natriy bilan barcha xlor ajraladi; ikki reaksiyadagi oq cho‘kmalar miqdori taxminan 1:2 nisbatda farq qilishi kerak.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "158"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nitrobirikmaga o‘tkazish: hosil bo‘lgan trinitrobenzol metil spirti alkogolyati bilan zangori-binafsha rang beradi; sezgirlik 0,05 mg.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "158"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qondan YuQX: n-geksan, silikagel — Rf = 0,19; alyuminiy oksidli plastinka — Rf = 0,34 (kumush ammiakati, 10-15 daqiqa UB).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "159"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Izomerlar va metabolitlar GSX, GX-MS, YuSSX da aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "159"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "GXTSG: chinlik va YuQX",
+    "header": [
+     "Usul",
+     "Natija"
+    ],
+    "rows": [
+     [
+      "Ishqor (spirtli) + AgNO3",
+      "uch molekula HCl (AgCl)"
+     ],
+     [
+      "Na + spirt + AgNO3",
+      "barcha xlor; cho‘kma 1:2"
+     ],
+     [
+      "Nitrobirikma + CH3ONa",
+      "zangori-binafsha; 0,05 mg"
+     ],
+     [
+      "YuQX (qon): silikagel / Al2O3",
+      "Rf 0,19 / 0,34"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: ikki reaksiya natijasidagi 1:2 nisbat nimani isbotlaydi? Doskada: 0,19 (silikagel), 0,34 (Al2O3). Tipik xato: Rf larni adsorbentlarga noto‘g‘ri bog‘lash. Miqdor: Folgard usuli, hozir GSX, YuSSX yoki GX-MS (p.159)."
+  },
+  {
+   "title": "Qon va siydikdan ajratish (umumiy)",
+   "bullets": [
+    {
+     "text": "Qon: 5 ml namuna pH 8-9 ga keltirilib, 2 ml to‘yingan NaCl va 10 ml organik erituvchi qo‘shiladi; 5 daqiqa sentrifugalanadi, ekstraksiya 2 marta takrorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Siydik: 25 ml namuna + 3 g NaCl, pH 8-9 (0,1 M NaOH); 3 marta (30, 20, 20 ml) organik erituvchi bilan ekstraksiya.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Quruq qoldiq YuQX, YuSSX va UB-spektrometriya usullarida tekshiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Qon va siydikdan ajratish",
+    "columns": [
+     {
+      "title": "Qon",
+      "items": [
+       "5 ml, pH 8-9 (NaOH)",
+       "2 ml to‘yingan NaCl",
+       "10 ml organik erituvchi",
+       "5 daqiqa sentrifuga, 3 marta"
+      ]
+     },
+     {
+      "title": "Siydik",
+      "items": [
+       "25 ml + 3 g NaCl",
+       "pH 8-9 (0,1 M NaOH)",
+       "3 marta: 30, 20, 20 ml"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: tuz (NaCl) qo‘shish ekstraksiyaga qanday ta’sir qiladi? Doskada: 5 ml/10 ml, 25 ml/30-20-20 ml. Tipik xato: pH ni 8-9 emas, boshqa qiymatga keltirish."
+  },
+  {
+   "title": "Biologik ob’ektdan ajratish va xulosa",
+   "bullets": [
+    {
+     "text": "10 g biologik ob’ekt maydalanib, 1-3 ml suv bilan aralashtiriladi, pH 9-9,5 (0,1 M NaOH) ga keltiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "15 ml organik erituvchi va 5 ml to‘yingan NaCl qo‘shiladi, chayqatgichda 1 soat qoldiriladi; ekstraksiya yana ikki marta takrorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155-156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Birlashgan ekstrakt natriy sulfat orqali o‘tkaziladi, rotor-vakuum asbobida haydaladi; qoldiq YuQX, UB yoki YuSSX da tekshiriladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ekstraksiya sharoitlari FOB ga xos emas, umumiy. Doskada: pH 9-9,5; 15 ml x 3. Tipik xato: pH ni qon uchun (8-9) bilan aralashtirish."
+  },
+  {
+   "title": "FOB, xlororganik va karbamat: taqqoslash",
+   "bullets": [
+    {
+     "text": "FOB xolinesteraza fermentini bo‘g‘adi; xlororganik moddalar juda barqaror, organizmdan sekin chiqariladi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150-151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sevin (karbamin kislota hosilasi) benzol bilan ajratiladi; xloroformga uning metaboliti naftol ham o‘tadi.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "GXTSG da γ-izomer LD50 = 200 mg/kg; fozalon LD50 = 108 mg/kg (kalamush).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "156-157"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "caption": "Uch guruh",
+    "columns": [
+     {
+      "title": "FOB",
+      "items": [
+       "xolinesterazani bo‘g‘adi",
+       "fozalon LD50 108 mg/kg"
+      ]
+     },
+     {
+      "title": "Xlororganik",
+      "items": [
+       "juda barqaror",
+       "sekin chiqariladi",
+       "GXTSG γ-izomer LD50 200 mg/kg"
+      ]
+     },
+     {
+      "title": "Karbamat (sevin)",
+      "items": [
+       "benzol bilan ajratiladi",
+       "metabolit: naftol"
+      ]
+     }
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: uchala guruhda ajratish va aniqlash qanday farq qiladi? Doskada: uch ustun. Tipik xato: LD50 qiymatlarini bir-biriga solishtirib «xlororganiklar kamroq zaharli» deb xulosa qilish (turli moddalar)."
+  },
+  {
+   "title": "Xulosa",
+   "bullets": [
+    {
+     "text": "Pestitsidlar kimyoviy tuzilishi bo‘yicha o‘rganiladi: FOB, xlororganik birikmalar, karbamin kislota hosilalari va boshqalar.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "FOB xolinesterazani bo‘g‘adi; tahlil: fosformolibden ko‘ki, antixolinesteraza usullari, YuQX (4 nuqta, 4 reaktiv).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "150-154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xlororganik moddalar barqaror, sekin chiqariladi; GXTSG: ishqor, natriy, nitrobirikma, YuQX, GSX/YuSSX/GX-MS.",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "151, 157-159"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sevin: benzol bilan ajratiladi, YuQX da naftol (Rf = 0,45) va sevin (Rf = 0,8).",
+     "source": {
+      "author": "Yuldashev Z.A., Umarova G.Q.",
+      "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+      "page": "155"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: noma’lum pestitsid kelganda tahlil rejasi qanday tuziladi? Doskada: umumiy reaksiya -> YuQX -> xususiy reaksiya -> miqdor. Tipik xato: xususiy tahlilga o‘tishdan oldin umumiy reaksiyalarni o‘tkazmaslik. Kitobda TIAFT tizimlari, DDT va xlorofos/karbofos/metafos uchun alohida to‘liq tahlil sxemalari berilmagan."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Pestitsid so‘zidagi «pestis» lotincha nimani anglatadi?",
+   "options": [
+    "Yuqumli",
+    "O‘ldiruvchi",
+    "Zaharli",
+    "Qishloq"
+   ],
+   "correct_index": 0,
+   "explanation": "Pestis — yuqumli, cido — o‘ldiruvchi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   }
+  },
+  {
+   "question": "Kitob bo‘yicha «kuchli zaharli» pestitsidlar uchun LD50 (mg/kg) qancha?",
+   "options": [
+    "50-200",
+    "50",
+    "200-1000",
+    "1000 dan yuqori"
+   ],
+   "correct_index": 1,
+   "explanation": "Kuchli zaharli guruhda LD50 = 50 mg/kg; yuqori zaharli 50-200, o‘rtacha 200-1000.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   }
+  },
+  {
+   "question": "FOB ning asosiy zaharli ta’sir mexanizmi qaysi?",
+   "options": [
+    "Gemoglobinni methemoglobinga aylantirish",
+    "Jigar nekrozi",
+    "Xolinesteraza fermentini bo‘g‘ish",
+    "DNK sintezini to‘xtatish"
+   ],
+   "correct_index": 2,
+   "explanation": "FOB xolinesteraza fermenti faoliyatini bo‘g‘ib, atsetilxolin gidrolizini buzadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "150"
+   }
+  },
+  {
+   "question": "Fosformolibden ko‘ki reaksiyasida mineralizatga qaysi reaktiv qo‘shilganda sariq rang hosil bo‘ladi?",
+   "options": [
+    "Dragendorf reaktivi",
+    "Natriy kuprobromid",
+    "Rezortsin",
+    "Ammoniy molibdati"
+   ],
+   "correct_index": 3,
+   "explanation": "Mineralizat ammoniy molibdati bilan sariq rang beradi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "153"
+   }
+  },
+  {
+   "question": "Indikator usulida rang o‘zgarishi davomiyligi qancha bo‘lishi kerak?",
+   "options": [
+    "3 daqiqa",
+    "13 daqiqa",
+    "30 daqiqa",
+    "1 soat"
+   ],
+   "correct_index": 1,
+   "explanation": "Rang o‘zgarishlari davomiyligi 13 daqiqani tashkil etishi kerak.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "153"
+   }
+  },
+  {
+   "question": "551-sonli buyruqqa asosan tahlil qilinishi shart FOB lar soni nechta?",
+   "options": [
+    "5",
+    "7",
+    "10",
+    "15"
+   ],
+   "correct_index": 2,
+   "explanation": "Kitobga ko‘ra shart bo‘lgan FOB lar 10 ta: karbofos, metafos va b.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "154"
+   }
+  },
+  {
+   "question": "Xlorofos YuQX da qaysi reaktiv bilan qizil dog‘ hosil qiladi?",
+   "options": [
+    "Bromfenol ko‘ki",
+    "Natriy ishqori",
+    "Dragendorf reaktivi",
+    "Rezortsin"
+   ],
+   "correct_index": 3,
+   "explanation": "Xlorofos rezortsin bilan qizil rangli dog‘ hosil qiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "154"
+   }
+  },
+  {
+   "question": "Sevin YuQX da diazotirlangan sulfanil kislota bilan qanday Rf li qizil dog‘ beradi?",
+   "options": [
+    "0,8",
+    "0,45",
+    "0,65",
+    "0,19"
+   ],
+   "correct_index": 0,
+   "explanation": "Sevin Rf = 0,8 bo‘lgan qizil dog‘ beradi; naftol 0,45 li siyoh dog‘.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "155"
+   }
+  },
+  {
+   "question": "Fozalonning suyuqlanish harorati qancha?",
+   "options": [
+    "45-50 °C",
+    "112,8 °C",
+    "47-48 °C",
+    "212 °C"
+   ],
+   "correct_index": 2,
+   "explanation": "Fozalon 47-48 °C da suyuqlanadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "156"
+   }
+  },
+  {
+   "question": "Fozalonning kalamushlar uchun LD50 qiymati qancha?",
+   "options": [
+    "49 mg/kg",
+    "1089 mg/kg",
+    "400 mg/kg",
+    "108 mg/kg"
+   ],
+   "correct_index": 3,
+   "explanation": "Kalamushlar uchun LD50 = 108 mg/kg.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "156"
+   }
+  },
+  {
+   "question": "GXTSG ning gamma-izomeri kalamushlar uchun LD50 qiymati qancha?",
+   "options": [
+    "200 mg/kg",
+    "108 mg/kg",
+    "50 mg/kg",
+    "400 mg/kg"
+   ],
+   "correct_index": 0,
+   "explanation": "GXTSG uchun LD50 = 400 mg/kg, gamma-izomeri uchun 200 mg/kg.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "157"
+   }
+  },
+  {
+   "question": "GXTSG qondan silikagelli plastinkada qanday Rf beradi?",
+   "options": [
+    "0,34",
+    "0,19",
+    "0,57",
+    "0,80"
+   ],
+   "correct_index": 1,
+   "explanation": "Silikagelda Rf = 0,19, alyuminiy oksidida 0,34.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "159"
+   }
+  },
+  {
+   "question": "Kitobga ko‘ra «kam zaharli» pestitsidlar uchun LD50 qancha?",
+   "options": [
+    "50 mg/kg",
+    "200-1000 mg/kg",
+    "50-200 mg/kg",
+    "1000 mg/kg dan yuqori"
+   ],
+   "correct_index": 3,
+   "explanation": "Zaharlilik jadvaliga ko‘ra kam zaharli pestitsidlarda LD50 1000 mg/kg dan yuqori.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   }
+  },
+  {
+   "question": "Zamonaviy pestitsidlar nechta dan ortiq kimyoviy modda asosida sintezlangan?",
+   "options": [
+    "1500 dan ortiq",
+    "100 dan ortiq",
+    "10 dan ortiq",
+    "50 dan ortiq"
+   ],
+   "correct_index": 0,
+   "explanation": "Kitobga ko‘ra pestitsidlar 1500 dan ortiq kimyoviy moddalar asosida sintezlangan.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   }
+  },
+  {
+   "question": "Xlorofos asosan qanday maqsadda ishlatiladi?",
+   "options": [
+    "Gerbitsid sifatida",
+    "Insektitsid va akaritsid sifatida",
+    "Dori sifatida",
+    "Fungitsid sifatida"
+   ],
+   "correct_index": 1,
+   "explanation": "Xlorofos asosan qishloq xo‘jalik o‘simliklarini parvarishlashda faol insektitsid va akaritsid sifatida ishlatiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "150"
+   }
+  },
+  {
+   "question": "DDT metabolizmida qanday kam zaharli modda hosil bo‘ladi?",
+   "options": [
+    "Geptaxlor epoksidi",
+    "Naftol",
+    "Dixlordifenilsirka kislota",
+    "Merkaptan"
+   ],
+   "correct_index": 2,
+   "explanation": "DDT dan kam zaharli dixlordifenilsirka kislotasi hosil bo‘ladi, geptaxlordan esa kuchliroq zaharli epoksid.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "151"
+   }
+  },
+  {
+   "question": "FOB ajralmasidagi yog‘ni tozalashda qoldiq nima bilan aralashtirilib sovitiladi?",
+   "options": [
+    "Oz miqdor aseton bilan, muzlatgichda",
+    "Etil spirti bilan, qaynatib",
+    "Suv bilan, isitib",
+    "Xloroform bilan, qizdirib"
+   ],
+   "correct_index": 0,
+   "explanation": "Qoldiq oz miqdor aseton bilan aralashtirilib muzlatgichda sovitiladi: yog‘ qotib yuzaga chiqadi, FOB aseton qavatiga o‘tadi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "152"
+   }
+  },
+  {
+   "question": "Fosformolibden ko‘ki reaksiyasi nega «manfiy ahamiyatli» deyiladi?",
+   "options": [
+    "Faqat FOB beradi",
+    "Fosfor saqlovchi barcha moddalar bu reaksiyani beradi",
+    "Sezgirligi past",
+    "Faqat xlorofosga xos"
+   ],
+   "correct_index": 1,
+   "explanation": "Usul yuqori sezgir, lekin fosfor saqlovchi barcha moddalar bu reaksiyani beradi; shuning uchun manfiy natija ahamiyatli.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "153"
+   }
+  },
+  {
+   "question": "Fozalon kumush nitratning spirtli eritmasi bilan qanday aniqlanish chegarasiga ega?",
+   "options": [
+    "2 mkg",
+    "4 mkg",
+    "0,5 mkg",
+    "0,05 mg"
+   ],
+   "correct_index": 2,
+   "explanation": "Kumush nitratning spirtli eritmasi bilan fozalon ninasimon kristallar beradi, aniqlanish chegarasi 0,5 mkg.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "156"
+   }
+  },
+  {
+   "question": "Sevinni biomaterialdan ajratishda ob’ekt qaysi erituvchi bilan bo‘ktiriladi?",
+   "options": [
+    "Efir bilan",
+    "Geksan bilan",
+    "Etil spirti bilan",
+    "Benzol bilan (uch marta 1 soatdan)"
+   ],
+   "correct_index": 3,
+   "explanation": "Sevinni ajratish uchun ob’ekt maydalanib, uch marta 1 soatdan benzol bilan bo‘ktiriladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "155"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Pestitsidlarning kimyoviy tasnifida malaka ma’ruzasi noorganik birikmalar va organik birikmalar ostida fosfororganik, fenoksisirka kislota hosilalari, karbaminatlar, mishyak, simob, mis saqlovchi ximikatlar va o‘simlik zaharlarini sanaydi.",
+   "source": {
+    "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+    "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+    "page": "matn"
+   }
+  },
+  {
+   "text": "Kitobga ko‘ra «Navoiy elektrokimyo zavodi» ishlab chiqaradigan sintetik piretroid pestitsidlari kimyo-toksikologik nuqtai nazardan yetarli o‘rganilmagan.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "159"
+   }
+  },
+  {
+   "text": "FOB Hestrin usuli (malaka 021 da keltirilgan) atsetilxolinni gidroksilamin va FeCl3 orqali qizil kompleksga aylantirishga asoslangan.",
+   "source": {
+    "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+    "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+    "page": "matn"
+   }
+  },
+  {
+   "text": "Kitobga ko‘ra zaharli ximikatlar ishlatilmasa, qishloq xo‘jalik zararkunandalaridan hosilning asosiy qismi yo‘qotiladi.",
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "149"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+   "year": null,
+   "pages": "b. 148-159"
+  },
+  {
+   "author": "Yuldashev Z.A., Nurmatova M.I.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+   "year": null,
+   "pages": "b. 147, 151"
+  },
+  {
+   "author": "Malaka materiali №021 (TFI Toksikologik kimyo kafedrasi)",
+   "title": "8-ma’ruza: Qishloq xo‘jalik ximikatlari. FOS, xlororganik, karbamin kislota va sintetik piretroidlar (Toshkent, 2010)",
+   "year": null,
+   "pages": "qo‘shimcha ma’lumot (kitobda bo‘lmagan joylar uchun)"
+  }
+ ]
 }

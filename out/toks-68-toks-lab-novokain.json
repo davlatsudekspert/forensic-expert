@@ -181,6 +181,70 @@
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: biologik ob’ekt va reaktivlar bilan ishlashda qanday himoya vositalari kerak? Doskada: himoya vositalari ro‘yxati. Tipik xato: reaktivni (kislota, simob tuzi, brom) qo‘lqopsiz va so‘rish shkafisiz ishlatish — mashg‘ulot oldidan o‘qituvchi alohida eslatadi. Manba malaka 117 (sanasi va raqami ko‘rsatilmagan qoidalar loyihasi) — lex.uz da amaldagi tahririni tekshiring."
     },
     {
+      "title": "Mahalliy anestetiklar va dimedrol: tasnif",
+      "bullets": [
+        {
+          "text": "Novokain p-aminobenzoy kislotaning dietilaminoetanol bilan hosil qilgan efiri.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dikain p-butilaminobenzoy kislotaning dimetilaminoetanol bilan hosil qilgan efiri.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dimedrol β-dimetilaminoetilbenzgidrol efir tipidagi birikma; lidokain gidroxlorid ham tahlil qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "128-129"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Mashg‘ulot moddalari",
+        "children": [
+          {
+            "label": "Novokain",
+            "items": [
+              "p-aminobenzoy kislota efiri"
+            ]
+          },
+          {
+            "label": "Dikain",
+            "items": [
+              "p-butilaminobenzoy kislota efiri"
+            ]
+          },
+          {
+            "label": "Lidokain (ksikain)",
+            "items": [
+              "lidokain gidroxlorid"
+            ]
+          },
+          {
+            "label": "Dimedrol",
+            "items": [
+              "benzgidrol efir tipida"
+            ]
+          }
+        ],
+        "caption": "Tuzilishi bo‘yicha"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: novokain va dikain nega sintez qilingan? Doskada: daraxt. Tipik xato: dikainni novokain bilan bir xil kislota hosilasi deb yozish."
+    },
+    {
       "title": "Novokain: tuzilishi va qo‘llanishi",
       "bullets": [
         {
@@ -215,6 +279,63 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: novokain va kokain ta’siri qanday farqlanadi? (Novokain kokaindan kuchsizroq — toks 127.) Doskada: novokain formulasi (H2N–C6H4–COO–CH2CH2–N(C2H5)2). Tipik xato: novokainni alkaloid deb hisoblash — u sintetik modda."
     },
     {
+      "title": "Novokain va dikain: taqqoslash",
+      "bullets": [
+        {
+          "text": "Novokain kokaindan kuchsizroq ta’sir etadi; dikain kokainga nisbatan 2 marta, novokainga nisbatan 10 marta kuchli.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkalasi ham kokainning zaharli ta’siridan (kokainizm) qutilish maqsadida sintez qilingan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dikain bronxo- va ezofagoskopiya hamda oftalmologiyada anesteziya uchun qo‘llaniladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Novokain",
+            "items": [
+              "dietilaminoetanol efiri",
+              "oq kristall kukun",
+              "suv va spirtda yaxshi eriydi",
+              "mahalliy og‘riq qoldiruvchi"
+            ]
+          },
+          {
+            "title": "Dikain",
+            "items": [
+              "dimetilaminoetanol efiri",
+              "oq yoki sariq kristall",
+              "suv, xloroform, spirtda eriydi",
+              "kokainga nisbatan 2 marta kuchli"
+            ]
+          }
+        ],
+        "caption": "Farqlari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega dikain zaharliroq? Doskada: ikki ustun. Tipik xato: kuch nisbatlarini aralashtirish."
+    },
+    {
       "title": "Novokainning toksikologik ahamiyati",
       "bullets": [
         {
@@ -247,6 +368,50 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: novokainning metaboliti nima uchun azobo‘yoq bermasligi mumkin? (Reaksiya efirning aromatik amin guruhiga asoslangan — kitobda bu mashg‘ulot sahifalarida tushuntirilmagan.) Doskada: parchalanish sxemasi. Tipik xato: peshobda 2% o‘zgarmagan modda bor, demak tahlil befoyda deb o‘ylash."
+    },
+    {
+      "title": "Novokain: metabolizm yo‘li",
+      "bullets": [
+        {
+          "text": "Novokain organizmda p-aminobenzoy kislotasi va dietilaminoetanolga parchalanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Taxminan 2% o‘zgarmagan holda peshob orqali chiqariladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharli dozada avval qo‘zg‘alish, so‘ng markaziy asab tizimi falaji kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Novokain",
+          "Organizmda parchalanish",
+          "p-aminobenzoy kislota",
+          "dietilaminoetanol",
+          "~2% o‘zgarmagan, peshobda"
+        ],
+        "caption": "Novokain"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega peshobda tahlil qilinadi? Doskada: oqim. Tipik xato: o‘zgarmagan qismni 20% deb yozish."
     },
     {
       "title": "Novokain: azobo‘yoq reaksiyasi",
@@ -284,6 +449,53 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 15 daqiqa. Kutilayotgan natija: novokain bo‘lsa qizil rang, modda ko‘p bo‘lsa qizil cho‘kma (toks 247). Reaksiya tenglamasini yozish va kimyo-toksikologik ahamiyatini izohlash talab qilinadi. Muhokama: azobo‘yoq hosil bo‘lishi anilin hosilalari uchun selektiv (toks 102). Tipik xato: ishqor qo‘shishni 5 daqiqa kutmasdan bajarish."
+    },
+    {
+      "title": "Azobo‘yoq reaksiyasi: reaksiya sxemasi",
+      "bullets": [
+        {
+          "text": "Novokain eritmasi natriy nitrit va β-naftol ta’sirida qizil rangli azobo‘yoq hosil qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Modda ko‘p bo‘lsa, qizil cho‘kma cho‘kadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "247"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitrit yodkraxmal qog‘ozi ko‘k rangga bo‘yalguncha qo‘shiladi, 5 daqiqadan so‘ng muhit ishqoriy qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "247"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Novokain (1% HCl da)",
+          "1% NaNO2 (yodkraxmal ko‘k)",
+          "β-naftol (ishqoriy)"
+        ],
+        "products": [
+          "Azobo‘yoq"
+        ],
+        "caption": "Novokain",
+        "conditions": "5 daqiqadan so‘ng 2% NaOH",
+        "observation": "Qizil rang; ko‘p bo‘lsa qizil cho‘kma"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: yodkraxmal qog‘ozi nimani ko‘rsatadi? Doskada: sxema. Tipik xato: ishqoriy muhitga o‘tkazishni unutish."
     },
     {
       "title": "Novokain: Dragendorf va UB-spektr",
@@ -331,6 +543,69 @@
         ]
       },
       "teacher_notes": "Vaqt: 25 daqiqa. Kutilayotgan natija: qizil-qo‘ng‘ir to‘g‘ri to‘rtburchak kristallar (toks 127). Kristall shaklini daftarga chizing. Tipik xato: kristallarni kutish vaqti tugamasdan baholash. Kitobda: toks 127 da suvli eritma uchun «229 nm» (xato: bu kislotali eritmadagi 228 nm cho‘qqisi). To‘g‘ri: suvli eritma 290 nm; 0,2 M H2SO4 da 228, 272, 279 nm (toks 248)."
+    },
+    {
+      "title": "Novokain: asosiy ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Novokainning suvli eritmasi 290 nm da, 0,2 M sulfat kislotadagi eritmasi 228, 272 va 279 nm da maksimum beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "248"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Peshobdan YuQX da (KSK, siklogeksan-benzol-dietilamin 75:25:10) Rf=0,16-0,18 li qo‘ng‘ir dog‘ hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "248"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikrokristall reaksiyada Dragendorf 15-20 daqiqa nam kamerada saqlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "247"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Suvli eritma UB",
+            "value": "290",
+            "unit": "nm"
+          },
+          {
+            "label": "H2SO4 da UB",
+            "value": "228; 272; 279",
+            "unit": "nm"
+          },
+          {
+            "label": "Peshob YuQX Rf",
+            "value": "0,16-0,18"
+          },
+          {
+            "label": "Nam kamerada",
+            "value": "15-20",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "O‘zgarmagan, peshob",
+            "value": "2",
+            "unit": "%"
+          }
+        ],
+        "caption": "Novokain"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: UB va YuQX nimaga kerak? Doskada: raqamlar. Tipik xato: suvli va kislotali eritma maksimumlarini almashtirish."
     },
     {
       "title": "Novokainni peshobdan aniqlash",
@@ -447,6 +722,61 @@
       "teacher_notes": "Vaqt: 20 daqiqa. Kutilayotgan natija: tanlangan svetofiltr va optik zichlik daftarga yoziladi. Muhokama: nega eritma maksimumi filtr minimumiga mos kelishi kerak? (Kitob shunday yozadi.) Kalibrlash grafigi tafsilotlari bu sahifalarda berilmagan; lecture toks 127 da miqdor FEK da azobo‘yoq asosida aniqlanadi. Tipik xato: svetofiltrni tanlamasdan o‘lchash."
     },
     {
+      "title": "FEK tahlili: bosqichlar",
+      "bullets": [
+        {
+          "text": "Fotokolorimetriya moddani polixromatik nurlanishda spektrning ko‘rinadigan qismida o‘lchashga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Novokain chinligi uchun avval azobo‘yoq reaksiyasi o‘tkaziladi, so‘ng turli svetofiltrlarda nur yutish o‘lchanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Svetofiltr tanlanadi va natijalar ish daftariga qayd qilinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Azobo‘yoq",
+            "text": "yuqoridagi tartibda reaksiya o‘tkaziladi"
+          },
+          {
+            "title": "Svetofiltrlar",
+            "text": "eritmaning nur yutishi turli svetofiltrda o‘lchanadi"
+          },
+          {
+            "title": "Tanlash",
+            "text": "eritma maksimumi svetofiltr minimumiga to‘g‘ri kelishi kerak"
+          },
+          {
+            "title": "Qayd",
+            "text": "natijalar ish daftariga yoziladi"
+          }
+        ],
+        "caption": "FEK"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega svetofiltr kerak? Doskada: bosqichlar. Tipik xato: maksimum va minimumni adashtirish."
+    },
+    {
       "title": "Dikain",
       "bullets": [
         {
@@ -479,6 +809,69 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: dikain novokaindan nimasi bilan xavfliroq? (10 marta kuchliroq.) Doskada: dikain — novokain — kokain zaharlilik qatori. Tipik xato: dikainni novokain bilan bir xil xavfsiz deb hisoblash."
+    },
+    {
+      "title": "Dikain: kuch va aniqlash ko‘rsatkichlari",
+      "bullets": [
+        {
+          "text": "Dikain juda zaharli; kokainga nisbatan 2, novokainga nisbatan 10 marta kuchli ta’sir etadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "30% NaNO2 bilan 15-20 daqiqadan so‘ng ikkiga kesilgan yupqa kristallar hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "248"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "0,1M H2SO4 da UB maksimumlari 229, 281 va 312 nm.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "248"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kokainga nisbatan",
+            "value": "2",
+            "unit": "marta"
+          },
+          {
+            "label": "Novokainga nisbatan",
+            "value": "10",
+            "unit": "marta"
+          },
+          {
+            "label": "Vitali-Moren rangi",
+            "value": "qizil"
+          },
+          {
+            "label": "30% NaNO2 bilan",
+            "value": "15-20",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "UB maksimum",
+            "value": "229; 281; 312",
+            "unit": "nm"
+          }
+        ],
+        "caption": "Dikain"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: dikain zaharlanishi qaysi moddaga o‘xshaydi? Doskada: raqamlar. Tipik xato: 2 va 10 ni almashtirish."
     },
     {
       "title": "Dikain: sifat reaksiyalari",
@@ -571,6 +964,63 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: lidokain novokaindan qaysi reaksiya bilan farqlanadi? Doskada: lidokain reaksiyalari. Kitobdagi lidokain bo‘limida azobo‘yoq reaksiyasi novokain matnidan ko‘chirilgan («novokain bo‘lgan holda...»); shu sababli slaydga kiritilmadi. Tipik xato: lidokainga azobo‘yoq reaksiyasini qo‘llab, novokain deb xulosa yozish."
     },
     {
+      "title": "Lidokain: ko‘rsatkichlar",
+      "bullets": [
+        {
+          "text": "Lidokain gidroxlorid taxir ta’mli oq kristall kukun; suvda, 95% spirtda va atsetonda yengil eriydi, efirda erimaydi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "128"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "128-129 °C da suyuqlanadi; yorug‘lik ta’sirida uzoq tursa, oksidlanib sarg‘ayadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "128"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "UB-spektrofotometriyada 235-269 nm da maksimum nur yutadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "129"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Suyuqlanish harorati",
+            "value": "128-129",
+            "unit": "°C"
+          },
+          {
+            "label": "UB maksimum",
+            "value": "235-269",
+            "unit": "nm"
+          },
+          {
+            "label": "Kobalt nitrat bilan",
+            "value": "ko‘k-yashil"
+          },
+          {
+            "label": "Efirda",
+            "value": "erimaydi"
+          }
+        ],
+        "caption": "Lidokain"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega preparat yorug‘likdan saqlanadi? Doskada: raqamlar. Tipik xato: kobalt nitrat natijasini qizil deb yozish."
+    },
+    {
       "title": "Lidokainning toksikologik ahamiyati",
       "bullets": [
         {
@@ -614,6 +1064,78 @@
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: belgilarni markaziy asab, yurak va allergik guruhlarga ajrating. Doskada: guruhlar jadvali. Tipik xato: faqat allergik reaksiyani zaharlanish belgisi deb hisoblash."
     },
     {
+      "title": "Lidokain bilan zaharlanish belgilari: guruhlar",
+      "bullets": [
+        {
+          "text": "Markaziy nerv sistemasi qo‘zg‘aluvchanligi ortadi: kuchli bosh og‘rig‘i, eyforiya, uyquchanlik, yorug‘likdan qo‘rqish.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "128"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eshitish yomonlashadi, lab va til hamda nafas muskullari falajlanadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "128"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tana harorati tushadi, qaltirash va kollaps; allergik reaksiyalar ham kuzatiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "128"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Lidokain zaharlanishi",
+        "children": [
+          {
+            "label": "Markaziy nerv tizimi",
+            "items": [
+              "bosh og‘rig‘i",
+              "eyforiya, uyquchanlik",
+              "yorug‘likdan qo‘rqish"
+            ]
+          },
+          {
+            "label": "Falajlanish",
+            "items": [
+              "eshitish yomonlashadi",
+              "lab va til",
+              "nafas muskullari"
+            ]
+          },
+          {
+            "label": "Yurak va tana",
+            "items": [
+              "harorat tushadi",
+              "qaltirash",
+              "kollaps"
+            ]
+          },
+          {
+            "label": "Allergiya",
+            "items": [
+              "qichima",
+              "shish",
+              "eritema"
+            ]
+          }
+        ],
+        "caption": "Belgilar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: eng xavfli belgi qaysi? Doskada: daraxt. Tipik xato: allergik belgilarni inkor qilish."
+    },
+    {
       "title": "Dimedrol",
       "bullets": [
         {
@@ -655,6 +1177,72 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: dimedrolni sud-tergov xodimlari talab etgandagina tekshirish nimani anglatadi? (toks 129.) Doskada: dimedrol formulasi. Tipik xato: dimedrol zaharlanishida patologomorfologik ma’lumotlarga tayanish — ular aniq emas."
+    },
+    {
+      "title": "Dimedrol ta’sirlari: tasnif",
+      "bullets": [
+        {
+          "text": "Dimedrol faol antigistamin vosita; mahalliy anestetik, muskul bo‘shashtiruvchi va spazmolitik ta’sirga ega.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "129"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Neyroleptik, uyqu chaqiruvchi va qusishga qarshi ta’sir ko‘rsatadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "129"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlar, narkotik va psixotrop moddalar ta’sirini kuchaytirgani uchun narkomanlar ko‘p iste’mol qiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "129"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Dimedrol",
+        "children": [
+          {
+            "label": "Antigistamin",
+            "items": [
+              "inyeksiya va tabletka"
+            ]
+          },
+          {
+            "label": "Mahalliy anestetik"
+          },
+          {
+            "label": "Muskul va spazmolitik",
+            "items": [
+              "bo‘shashtiruvchi",
+              "spazmolitik"
+            ]
+          },
+          {
+            "label": "Nerv tizimiga",
+            "items": [
+              "neyroleptik",
+              "uyqu chaqiruvchi"
+            ]
+          },
+          {
+            "label": "Qusishga qarshi"
+          }
+        ],
+        "caption": "Ta’sirlari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega toksikomanlar dimedrolni iste’mol qiladi? Doskada: daraxt. Tipik xato: faqat antigistamin deb cheklash."
     },
     {
       "title": "Dimedrolni qon va peshobdan ajratish",
@@ -749,6 +1337,67 @@
       "teacher_notes": "Vaqt: 20 daqiqa. Kutilayotgan natija: dimedrol dog‘i Rf 0,58-0,60. Tipik xato: sistema nisbatini (12:24:1) o‘zgartirish. Kitobda: shu betda tozalash bosqichi uchun «Rf=0,07-0,08, zarg‘aldoq» (xato) — shu sistemada dimedrol Rf 0,58-0,60 (toks 130, 249, dvssm 259 izchil)."
     },
     {
+      "title": "Dimedrol: kinetika va YuQX ko‘rsatkichlari",
+      "bullets": [
+        {
+          "text": "Dimedrol organizmdan o‘rtacha 3-10 soatda chiqadi; taxminan 2-4% o‘zgarmagan holda peshob orqali ajraladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "129"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "YuQX da dimedrol Rf=0,58-0,60 (sariq dog‘), metaboliti benzgidrol Rf=0,76-0,80.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekstraksiya uchun qon yoki peshob ammiak bilan pH=10 ga keltiriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "129"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Chiqish davri",
+            "value": "3-10",
+            "unit": "soat"
+          },
+          {
+            "label": "Peshobda o‘zgarmagan",
+            "value": "2-4",
+            "unit": "%"
+          },
+          {
+            "label": "Dimedrol Rf",
+            "value": "0,58-0,60"
+          },
+          {
+            "label": "Benzgidrol Rf",
+            "value": "0,76-0,80"
+          },
+          {
+            "label": "Ekstraksiya pH",
+            "value": "10"
+          }
+        ],
+        "caption": "Dimedrol"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: benzgidrol nima? Doskada: raqamlar. Tipik xato: dimedrol va benzgidrol Rf ni almashtirish."
+    },
+    {
       "title": "Dimedrol: rangli reaksiyalar",
       "bullets": [
         {
@@ -800,6 +1449,111 @@
       "teacher_notes": "Vaqt: 15 daqiqa. Kutilayotgan natija: ranglar jadvalga yoziladi. Muhokama: H2SO4 ga suv qo‘shilganda rang nega yo‘qoladi? (Kitob: kompleks parchalanadi.) Xavfsizlik: konsentrlangan kislotalar bilan so‘rish shkafida ishlang (kitobda bu ko‘rsatma yo‘q). Tipik xato: suvni kislotaga tez quyish."
     },
     {
+      "title": "Dimedrol: Marki, Liberman va Mandelin",
+      "bullets": [
+        {
+          "text": "Marki reaktivi ta’sirida sariq limon rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Liberman reaktivi ta’sirida zarg‘aldoq rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mandelin reaktivi ta’sirida qoldiqda dimedrol bo‘lsa sariq rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Reaktiv",
+          "Dimedrol rangi"
+        ],
+        "rows": [
+          [
+            "Marki",
+            "sariq limon"
+          ],
+          [
+            "Liberman",
+            "zarg‘aldoq"
+          ],
+          [
+            "Mandelin",
+            "sariq"
+          ],
+          [
+            "konts. H2SO4",
+            "sariq → qizil-g‘isht"
+          ]
+        ],
+        "caption": "Rangli reaksiyalar"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bir nechta reaktiv ishlatiladi? Doskada: jadval. Tipik xato: Liberman va Mandelin ranglarini almashtirish."
+    },
+    {
+      "title": "Dimedrol: H2SO4 + HNO3 reaksiyasi sxemasi",
+      "bullets": [
+        {
+          "text": "Qoldiq ustiga konsentrlangan sulfat va nitrat kislotalar aralashmasi ta’sir ettirilsa, qizil rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rangli mahsulotga asta-sekin suv qo‘shilsa, avval qo‘ng‘ir, so‘ng sariq va to‘q sariq rang hosil bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oxirgi mahsulotga xloroform qo‘shib chayqatilsa, xloroform qatlami binafsha rangga o‘tadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "130"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "reaction",
+        "reagents": [
+          "Dimedrol qoldig‘i",
+          "konts. H2SO4 + HNO3"
+        ],
+        "products": [
+          "Qizil rangli mahsulot"
+        ],
+        "caption": "Dimedrol",
+        "conditions": "Asta-sekin suv, so‘ng xloroform",
+        "observation": "Suvda qo‘ng‘ir-sariq; xloroform binafsha"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: rang o‘zgarishlari ketma-ketligi. Doskada: sxema. Tipik xato: xloroform qatlami rangini tushirib qoldirish."
+    },
+    {
       "title": "Dimedrol: UB-spektr va miqdoriy tahlil",
       "bullets": [
         {
@@ -837,6 +1591,65 @@
       "teacher_notes": "Vaqt: 25 daqiqa. Kutilayotgan natija: xloroform qatlamining optik zichligi 567 nm da, 10 mm kyuvetada (toks 250). Indikator: 2,63 g 1 l suvda. Standart shkala: 0,05-0,3 mg dimedrol saqlagan xloroformli ekstrakt. Tipik xato: indikator hajmini (6,4 ml) o‘zgartirish."
     },
     {
+      "title": "Dimedrol miqdoriy tahlili: qadamlar",
+      "bullets": [
+        {
+          "text": "Miqdoriy tahlil kislotali muhitda turg‘un «kislotali xromaton ko‘ki» indikatori bilan hosil bo‘lgan barqaror rangga asoslangan.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "249-250"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Quruq qoldiq 1 ml 0,1M HCl da eritiladi, 10 ml xloroform va 6,4 ml indikator qo‘shiladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "250"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xloroform qatlami 567 nm da, 10 mm kyuvetada o‘lchanadi; standart shkala 0,05-0,3 mg.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "250"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Qoldiq",
+            "text": "1 ml 0,1M HCl da eritiladi, 10 ml xloroform"
+          },
+          {
+            "title": "Indikator",
+            "text": "6,4 ml xromaton ko‘ki (2,63 g/l suv)"
+          },
+          {
+            "title": "Chayqatish",
+            "text": "hajm 20 ml gacha, 3 daqiqa chayqatiladi"
+          },
+          {
+            "title": "O‘lchash",
+            "text": "xloroform qatlami 567 nm, 10 mm kyuveta"
+          },
+          {
+            "title": "Shkala",
+            "text": "standart 0,05-0,3 mg dimedrol"
+          }
+        ],
+        "caption": "Xromaton ko‘ki usuli"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: standart shkala nima uchun kerak? Doskada: qadamlar. Tipik xato: indikator hajmini noto‘g‘ri olish."
+    },
+    {
       "title": "Vaziyatli masala: qon va peshob",
       "bullets": [
         {
@@ -869,6 +1682,105 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 10 daqiqa. Kutilayotgan natija (kitobda javob yozilmagan; xulosa o‘qituvchi uchun): talaba novokainni asoslaydi va azobo‘yoq tenglamasini yozadi. Muhokama: 22-KEYS (toks 250): zaharlanish alomatlari kokainga o‘xshash — qaysi moddalarga tekshirish kerak? (Dikain belgilari kokainnikiga o‘xshash — toks 127.) Tipik xato: Dragendorf natijasini yagona dalil deb yozish."
+    },
+    {
+      "title": "Vaziyatli masala: dalillar zanjiri",
+      "bullets": [
+        {
+          "text": "Peshobda azobo‘yoq reaksiyasi qizil-qo‘ng‘ir rang berdi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "251"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Dragendorf bilan qizil-qo‘ng‘ir to‘rtburchakli kristallar hosil bo‘ldi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "251"
+          },
+          "uncertain": true
+        },
+        {
+          "text": "Bu belgilar novokain uchun kitobda keltirilgan reaksiyalarga mos keladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "248"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Peshob + HCl + NaNO2 + β-naftol",
+          "Qizil-qo‘ng‘ir rang",
+          "Dragendorf: to‘rtburchak kristallar",
+          "Xulosa: novokain belgilari"
+        ],
+        "caption": "Masala"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega ikkita reaksiya kerak? Doskada: zanjir. Tipik xato: bitta reaksiya bilan xulosa qilish. Xulosa kitobdagi novokain reaksiyalariga tayanadi; masalaning rasmiy javobi kitobda yo‘q.",
+      "diagram_note": "Masalaning rasmiy javobi kitobda berilmagan; xulosa novokain reaksiyalariga mosligidan chiqarilgan."
+    },
+    {
+      "title": "22-keys: kokainga o‘xshash alomatlar",
+      "bullets": [
+        {
+          "text": "22-keys: qon va peshobda zaharlanish alomatlari kokainga o‘xshash; qaysi moddaga tahlil qilish zarur?",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "250"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dikain bilan zaharlanganda xuddi kokain bilan zaharlangandagi belgilar namoyon bo‘ladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Novokain kokaindan kuchsizroq ta’sir qiladi; dikain kokainga nisbatan 2 marta kuchli.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "127"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Dikain",
+            "items": [
+              "belgilari kokainga o‘xshash",
+              "Vitali-Moren: qizil",
+              "NaNO2: kesilgan kristall"
+            ]
+          },
+          {
+            "title": "Novokain",
+            "items": [
+              "kokaindan kuchsizroq",
+              "azobo‘yoq: qizil",
+              "Dragendorf: to‘rtburchak"
+            ]
+          }
+        ],
+        "caption": "Qaysi moddaga tahlil?"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: alomat o‘xshashligi qaysi moddani ko‘rsatadi? Doskada: ikki ustun. Tipik xato: faqat alomatga tayanib xulosa qilish."
     },
     {
       "title": "Nazorat savollari",
@@ -1001,11 +1913,11 @@
       "question": "Dikainning novokainga nisbatan kuchi qancha?",
       "options": [
         "2 marta",
-        "10 marta",
+        "Bir xil",
         "100 marta",
-        "Bir xil"
+        "10 marta"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Dikain kokainga nisbatan 2 va novokainga nisbatan o‘n marta kuchli ta’sir etadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1032,12 +1944,12 @@
     {
       "question": "Lidokain kobalt nitrat bilan qanday natija beradi?",
       "options": [
-        "Ko‘k-yashil kristallik cho‘kma",
-        "Qizil rang",
         "Rangsiz eritma",
+        "Qizil rang",
+        "Ko‘k-yashil kristallik cho‘kma",
         "Sariq gaz"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Bir oz turishi bilan ko‘k-yashil rangli kristallik cho‘kma hosil bo‘ladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1108,6 +2020,166 @@
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
         "page": "250"
       }
+    },
+    {
+      "question": "Novokain qaysi kislotaning efiri?",
+      "options": [
+        "p-butilaminobenzoy kislotaning efiri",
+        "salitsil kislotaning efiri",
+        "p-aminobenzoy kislotaning dietilaminoetanol bilan efiri",
+        "benzgidrolning efiri"
+      ],
+      "correct_index": 2,
+      "explanation": "Novokain p-aminobenzoy kislotaning dietilaminoetanol bilan hosil qilgan efiri.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "127"
+      }
+    },
+    {
+      "question": "Organizmga tushgan novokainning qancha qismi o‘zgarmagan holda peshob bilan chiqadi?",
+      "options": [
+        "Taxminan 20%",
+        "Taxminan 50%",
+        "Deyarli 100%",
+        "Taxminan 2%"
+      ],
+      "correct_index": 3,
+      "explanation": "Novokain p-aminobenzoy kislota va dietilaminoetanolga parchalanadi, 2% yaqini o‘zgarmagan holda chiqariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "127"
+      }
+    },
+    {
+      "question": "Dikain kokainga nisbatan necha marta kuchli ta’sir qiladi?",
+      "options": [
+        "2 marta",
+        "10 marta",
+        "5 marta",
+        "20 marta"
+      ],
+      "correct_index": 0,
+      "explanation": "Dikain kokainga nisbatan 2, novokainga nisbatan 10 marta kuchli ta’sir etadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "127"
+      }
+    },
+    {
+      "question": "Novokainning suvli eritmasi UB-spektrda qaysi to‘lqin uzunligida maksimum beradi?",
+      "options": [
+        "228 nm",
+        "290 nm",
+        "312 nm",
+        "567 nm"
+      ],
+      "correct_index": 1,
+      "explanation": "Novokainning suvli eritmasi 290 nm da, 0,2 M H2SO4 dagi eritmasi 228, 272, 279 nm da maksimum beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "248"
+      }
+    },
+    {
+      "question": "Lidokain gidroxlorid qaysi haroratda suyuqlanadi?",
+      "options": [
+        "50-60 °C",
+        "147 °C",
+        "128-129 °C",
+        "225-226 °C"
+      ],
+      "correct_index": 2,
+      "explanation": "Ksikain (lidokain gidroxlorid) 128-129 °C haroratda suyuqlanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "128"
+      }
+    },
+    {
+      "question": "Dimedrol organizmdan o‘rtacha qancha vaqtda chiqadi?",
+      "options": [
+        "30-60 daqiqa",
+        "1-2 kun",
+        "3 hafta",
+        "3-10 soat"
+      ],
+      "correct_index": 3,
+      "explanation": "Dimedrolning organizmdan o‘rtacha chiqish davri 3-10 soatni tashkil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "129"
+      }
+    },
+    {
+      "question": "Dimedrol peshob orqali o‘zgarmagan holda taxminan qancha chiqariladi?",
+      "options": [
+        "2-4%",
+        "50%",
+        "20-30%",
+        "90%"
+      ],
+      "correct_index": 0,
+      "explanation": "Taxminan 2-4% dimedrol o‘zgarmagan holda peshob orqali chiqariladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "129"
+      }
+    },
+    {
+      "question": "Dimedrol Liberman reaktivi bilan qanday rang beradi?",
+      "options": [
+        "Binafsha",
+        "Rangsiz",
+        "Ko‘k-yashil",
+        "Zarg‘aldoq"
+      ],
+      "correct_index": 3,
+      "explanation": "Dimedrol Liberman reaktivi ta’sirida zarg‘aldoq rang hosil qiladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "130"
+      }
+    },
+    {
+      "question": "Dimedrolning metaboliti benzgidrol YuQX da qanday Rf beradi?",
+      "options": [
+        "0,16-0,18",
+        "0,58-0,60",
+        "0,76-0,80",
+        "0,26"
+      ],
+      "correct_index": 2,
+      "explanation": "Dimedrol Rf=0,58-0,60, metaboliti benzgidrol esa Rf=0,76-0,80.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "130"
+      }
+    },
+    {
+      "question": "Dimedrol miqdoriy tahlilida standart shkala qaysi oraliqda tayyorlanadi?",
+      "options": [
+        "1-5 g",
+        "10-20 mg",
+        "0,5-1 kg",
+        "0,05-0,3 mg"
+      ],
+      "correct_index": 3,
+      "explanation": "Standart shkala sifatida 0,05-0,3 mg dimedrol saqlangan xloroformli ekstrakt qo‘llanadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "250"
+      }
     }
   ],
   "extras": [
@@ -1149,7 +2221,7 @@
       "author": "Yuldashev Z.A., Umarova G.Q.",
       "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
       "year": null,
-      "pages": "b. 127-129, 166, 247-251"
+      "pages": "b. 127-130, 166, 247-251"
     },
     {
       "author": "Yuldashev Z.A., Nurmatova M.I.",

@@ -23,7 +23,16 @@
           "uncertain": false
         },
         {
-          "text": "Sud kimyosi tekshiruvi asosan ashyoviy dalilni tekshirishdir; u ko‘p hollarda qaytarib bo‘lmaydigan ob’ekt, shuning uchun ehtiyotkorlik va tejamkorlik talab etiladi.",
+          "text": "Sud kimyosi tekshiruvi asosan ashyoviy dalilni tekshirishdir.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "U ko‘p hollarda qaytarib bo‘lmaydigan ob’ekt, shuning uchun ehtiyotkorlik va tejamkorlik talab etiladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -67,26 +76,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ob’ektlarning uch guruhi",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Tarkibi"
-        ],
-        "rows": [
-          [
-            "1. Murda ob’ektlari",
-            "A’zolar, qon, peshob, qusuq qoldiqlari"
-          ],
-          [
-            "2. Zaharlanish manbalari",
-            "Ovqat, suv, ichimlik, o‘simlik, dori, havo"
-          ],
-          [
-            "3. Buyumlar",
-            "Kiyim, dog‘lar, idish, asboblar"
-          ]
+        "kind": "tree",
+        "caption": "Tahlil ob’ektlari",
+        "root": "Kimyo-toksikologik ob’ekt",
+        "children": [
+          {
+            "label": "Biologik ob’ekt",
+            "items": [
+              "Murda a’zolari, qon, peshob",
+              "Qusuq, oshqozon yuvindisi"
+            ]
+          },
+          {
+            "label": "Mahsulot va muhit",
+            "items": [
+              "Oziq-ovqat, suv, dori, havo"
+            ]
+          },
+          {
+            "label": "Buyumlar",
+            "items": [
+              "Kiyim, dog‘lar, idishlar"
+            ]
+          }
         ]
       },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: tirik qolgan bemordan qaysi ob’ektlar olinadi? Doskada: uch guruh jadvali. Tipik xato: faqat murda a’zolarini ob’ekt deb hisoblash; ishlab chiqarish va uy havosi ham ob’ekt bo‘lishi mumkin."
@@ -95,7 +107,16 @@
       "title": "Standart A-6: ob’ektlarni olishning asoslari",
       "bullets": [
         {
-          "text": "Ichki a’zolar, qon va siydik yuboriladi; tanlashda zaharning tabiati, kirish yo‘li, tarqalishi, chiqish yo‘li va tezligi, intoksikatsiya davomiyligi va davolash muolajalari hisobga olinadi.",
+          "text": "Ichki a’zolar, qon va siydik yuboriladi.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tanlashda zaharning tabiati, kirish yo‘li, tarqalishi, chiqish yo‘li va tezligi, intoksikatsiya davomiyligi va davolash muolajalari hisobga olinadi.",
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
@@ -131,7 +152,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "caption": "A-6: ob’ekt tanlash",
+        "nodes": [
+          "Zahar tabiati, kirish yo‘li",
+          "Tarqalishi, chiqish tezligi",
+          "Intoksikatsiya davomiyligi, davolash",
+          "Ob’ektlar tanlanadi",
+          "1/3 qismi arxivda qoladi"
+        ],
+        "header": [],
+        "rows": []
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: arxivdagi uchdan bir qism nima uchun kerak? Doskada: 2/3 ishlatiladi, 1/3 saqlanadi. Tipik xato: butun ob’ektni birinchi tahlilga sarflash. Eslatma: Standart A-6 dvssm kitobida keltirilgan; oxirgi band — malaka materialidagi qoidalar loyihasi (sanasi va raqami ko‘rsatilmagan), amaldagi tahrirni tekshiring."
     },
     {
@@ -174,7 +207,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Ichki a’zolar kompleksi",
+        "items": [
+          {
+            "label": "Jigar",
+            "value": "1/3 qismi"
+          },
+          {
+            "label": "Buyrak",
+            "value": "bitta"
+          },
+          {
+            "label": "Siydik",
+            "value": "200 ml gacha"
+          },
+          {
+            "label": "Qon",
+            "value": "200 ml"
+          },
+          {
+            "label": "O‘t suyuqligi",
+            "value": "olinadi"
+          },
+          {
+            "label": "Oshqozon ichidagi modda",
+            "value": "olinadi"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega har bir a’zo alohida bankaga solinadi? Doskada: a’zolar kompleksi ro‘yxati. Tipik xato: bir nechta a’zoni bitta idishga aralashtirish."
     },
     {
@@ -228,7 +290,16 @@
       "title": "Etanol va giyohvand moddalarga shubha",
       "bullets": [
         {
-          "text": "Etanolga: qon va siydik 10-20 ml dan, tiqingacha to‘ldirilgan idishda; qon yirik venalardan yoki miya qattiq pardasi sinuslaridan pipetka yoki shpris bilan olinadi.",
+          "text": "Etanolga: qon va siydik 10-20 ml dan, tiqingacha to‘ldirilgan idishda.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "87"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qon yirik venalardan yoki miya qattiq pardasi sinuslaridan pipetka yoki shpris bilan olinadi.",
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
@@ -264,7 +335,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Etanol va giyohvand moddalar",
+        "columns": [
+          {
+            "title": "Etanolga shubha",
+            "items": [
+              "Qon, siydik 10-20 ml dan",
+              "Tiqingacha to‘ldirilgan idish",
+              "Imkon bo‘lmasa — 100 g mushak"
+            ]
+          },
+          {
+            "title": "Giyohvand moddalarga",
+            "items": [
+              "Albatta qon — 150 ml",
+              "Siydik — 150-200 ml",
+              "O‘t pufagi"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nima uchun idish tiqingacha to‘ldiriladi? (kitobda sabab ko‘rsatilmagan, faqat qoida beriladi). Doskada: etanol — 10-20 ml, giyohvand — 150 ml qon. Tipik xato: etanol namunasini kechiktirib yuborish."
     },
     {
@@ -379,7 +471,16 @@
           "uncertain": false
         },
         {
-          "text": "Metgemoglobin hosil qiluvchi zaharlar (ferrotsianidlar, anilin, nitrobenzol, kaliy permanganat, formaldegid, xromatlar, metilen ko‘ki, asetaldegid) uchun metgemoglobinni aniqlash maqsadida qon olinadi.",
+          "text": "Metgemoglobin hosil qiluvchi zaharlar (ferrotsianidlar, anilin, nitrobenzol, kaliy permanganat.",
+          "source": {
+            "author": "Yuldashev Z.A., Nurmatova M.I.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+            "page": "88"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Formaldegid, xromatlar, metilen ko‘ki, asetaldegid) uchun metgemoglobinni aniqlash maqsadida qon olinadi.",
           "source": {
             "author": "Yuldashev Z.A., Nurmatova M.I.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
@@ -431,7 +532,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Ajratib olish qoidalari",
+        "items": [
+          {
+            "title": "Ligatura",
+            "text": "Qizilo‘ngach, oshqozon, ichakka ikkitadan"
+          },
+          {
+            "title": "Yuvish mumkin emas",
+            "text": "Ichki a’zolar suv bilan yuvilmaydi"
+          },
+          {
+            "title": "Idish",
+            "text": "Og‘zi keng quruq shisha banka"
+          },
+          {
+            "title": "Man etiladi",
+            "text": "Metall yoki keramik idish"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun metall idish man etiladi? (kitobda sabab ko‘rsatilmagan). Doskada: «ligatura - shisha - yuvmaslik». Tipik xato: a’zoni suv bilan yuvib yuborish."
     },
     {
@@ -508,7 +630,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Konservatsiya qoidalari",
+        "columns": [
+          {
+            "title": "Ruxsat etiladi",
+            "items": [
+              "Issiq kunda uzoqqa yuborilsa",
+              "Konservant — etil spirti",
+              "Spirt namunasi ham yuboriladi"
+            ]
+          },
+          {
+            "title": "Man etiladi",
+            "items": [
+              "Etil spirti/nitritga tekshirilsa",
+              "Metall, keramik idish"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega etil spirti va nitritga tekshiriladigan ob’ekt spirt bilan konservlanmaydi? Doskada: «qachon konservlanadi / qachon man». Tipik xato: spirt namunasini yubormaslik. Kitoblar o‘rtasida farq: toks p.10 issiq kunlarda uzoqqa yuborishda konservlashni aytadi, dvssm p.88 (Standart A-6) esa faqat yurak glikozidlariga shubhada; ikkala qoida o‘z manbasi bilan keltirildi, amaldagi talabni me’yoriy hujjatdan tekshiring."
     },
     {
@@ -551,7 +693,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Yuborish tartibi",
+        "items": [
+          {
+            "title": "Banka berkitiladi",
+            "text": "Zich yopiladi, surg‘uchli muhr"
+          },
+          {
+            "title": "Etiketka",
+            "text": "Ism, familiya, yil, a’zo nomi, akt va tartib raqami"
+          },
+          {
+            "title": "Qadoqlash",
+            "text": "Muhrlangan polietilen xalta yoki konteyner"
+          },
+          {
+            "title": "Hujjat",
+            "text": "Yo‘llanma yoki ekspertiza qarori"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: yorliqdagi qaysi ma’lumot ob’ektni hujjatlar bilan bog‘laydi? Doskada: yorliq namunasi. Tipik xato: yo‘llanma yoki qarorsiz ob’ekt yuborish."
     },
     {
@@ -585,7 +748,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "caption": "Eksgumatsiya: ob’ektlar",
+        "items": [
+          {
+            "label": "Tuproq",
+            "value": "6 joydan, 500 g dan"
+          },
+          {
+            "label": "Tobut taxtasi",
+            "value": "500 kub sm"
+          },
+          {
+            "label": "Matolar",
+            "value": "kiyim, qoplama"
+          },
+          {
+            "label": "Boshqa",
+            "value": "taqinchoq va b."
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: tuproq namunalari nima uchun olti joydan olinadi? (kitobda sabab ko‘rsatilmagan). Doskada: tobut atrofidagi olti nuqta chizmasi. Tipik xato: faqat tobut ichidagi ob’ektni yuborish."
     },
     {
@@ -619,7 +803,16 @@
           "uncertain": false
         },
         {
-          "text": "Organik erituvchilar, kislotalar, ishqorlar, sinil kislotasi, kokain kabi moddalar uchuvchan va tez parchalanadi, shuning uchun ekspertiza qabul qilingan kuni boshlanishi kerak.",
+          "text": "Organik erituvchilar, kislotalar, ishqorlar, sinil kislotasi, kokain kabi moddalar uchuvchan va tez parchalanadi.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "Sud-kimyo qoidalari (loyiha), I, II va V bo'limlar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shuning uchun ekspertiza qabul qilingan kuni boshlanishi kerak.",
           "source": {
             "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
             "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
@@ -696,7 +889,7 @@
           "uncertain": false
         },
         {
-          "text": "Bunday hollarda darhol uch kishidan iborat hay’at ishtirokida dalolatnoma tuziladi va sud organlari yoki sud-tibbiyot laboratoriyasidan boshqa ashyoviy dalillar talab qilinadi.",
+          "text": "Bunday hollarda uch kishilik hay’at ishtirokida dalolatnoma tuziladi va sud organlari yoki sud-tibbiyot laboratoriyasidan boshqa dalillar talab qilinadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -739,7 +932,16 @@
           "uncertain": false
         },
         {
-          "text": "Chirishga uchraydigan ob’ektlar qaytarib bo‘lmasa, etil spirtida konservatsiyalangan holda muzlatgichda bir yil saqlanadi, so‘ng belgilangan tartibda yo‘q qilinadi.",
+          "text": "Chirishga uchraydigan ob’ektlar qaytarib bo‘lmasa.",
+          "source": {
+            "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
+            "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
+            "page": "Sud-kimyo qoidalari (loyiha), I, II va V bo'limlar"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Etil spirtida konservatsiyalangan holda muzlatgichda bir yil saqlanadi, so‘ng belgilangan tartibda yo‘q qilinadi.",
           "source": {
             "author": "Malaka materiali №117 (O‘zR SSV, loyiha matni)",
             "title": "Sud-kimyo ekspertiza va tekshiruvlarini o‘tkazish qoidalari (6-ilova; sanasi va raqami ko‘rsatilmagan loyiha)",
@@ -791,14 +993,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "caption": "Tahlil turlari",
+        "columns": [
+          {
+            "title": "To‘liqmas tahlil",
+            "items": [
+              "Alohida ko‘rsatma bo‘yicha",
+              "Bir yoki bir necha modda"
+            ]
+          },
+          {
+            "title": "To‘liq tahlil",
+            "items": [
+              "67 ta zaharli moddaga",
+              "Tekshiruv shart"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: qachon to‘liqmas tahlil yetarli bo‘ladi? Doskada: 67 raqami va uning tarkibi (keyingi slaydlar). Tipik xato: to‘liqmas tahlilni to‘liq tahlil deb yozish. Eslatma: kitobdagi guruhlar bo‘yicha sonlar (13, 13, 7, 14, 7 va organik erituvchi guruhi) 67 ga to‘g‘ridan-to‘g‘ri to‘lmaydi; talabalarga kitobdagi raqam aytiladi."
     },
     {
       "title": "To‘liq tahlil: uchuvchi va metall zaharlar",
       "bullets": [
         {
-          "text": "Uchuvchi zaharlar (13): sinil kislotasi va uning birikmalari; metil, etil, propil, butil, amil, izoamil spirtlari; formaldegid; xloroform; xloralgidrat; to‘rt xlor uglerod; dixloretan; fenol va krezollar.",
+          "text": "Uchuvchi zaharlar (13): sinil kislotasi va uning birikmalari; metil, etil, propil, butil, amil, izoamil spirtlari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "18"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Formaldegid; xloroform; xloralgidrat; to‘rt xlor uglerod; dixloretan; fenol va krezollar.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -825,7 +1055,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "caption": "To‘liq tahlil: 13 + 13",
+        "root": "Uchuvchi va metall zaharlar",
+        "children": [
+          {
+            "label": "Uchuvchi zaharlar (13)",
+            "items": [
+              "Sinil kislota, spirtlar",
+              "Formaldegid, xloroform",
+              "Fenol va krezollar"
+            ]
+          },
+          {
+            "label": "Metall zaharlar (13)",
+            "items": [
+              "Bariy, marganets, xrom, sink",
+              "Talliy, qo‘rg‘oshin, mis, simob",
+              "Kumush, margimush, surma"
+            ]
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: uchuvchi zaharlarning umumiy xususiyati nima? (uchuvchanlik). Doskada: ikki ustun — 13 uchuvchi, 13 metall. Tipik xato: uchuvchi guruhdan fenolni yoki krezollarni tushirib qoldirish. Eslatma: 551-son buyruq eski hujjat (malaka tekshiruvida eskirgan deb belgilangan), amaldagi holatini tekshiring."
     },
     {
@@ -850,7 +1102,16 @@
           "uncertain": false
         },
         {
-          "text": "Ro‘yxatning davomi: morfin, kodein, dionin, geroin, gidrokodon, papaverin, promedol, strixnin, atropin, giostsiamin, skopolamin, kokain, paxikarpin, anabazin, nikotin.",
+          "text": "Ro‘yxatning davomi: morfin, kodein, dionin, geroin, gidrokodon, papaverin, promedol.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "18"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Strixnin, atropin, giostsiamin, skopolamin, kokain, paxikarpin, anabazin, nikotin.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -875,7 +1136,16 @@
       "title": "Organik erituvchi bilan ajratiladigan zaharlar",
       "bullets": [
         {
-          "text": "Organik erituvchi quyib qo‘yish yo‘li bilan ajratib olinadiganlar: karbofos, metafos, metiletiltiofos, metilnitrofos, trixlormetafos, fozalon, butifos, xlorofos, ftalofos, oktametil va sevin.",
+          "text": "Organik erituvchi quyib qo‘yish yo‘li bilan ajratib olinadiganlar: karbofos, metafos, metiletiltiofos.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "18"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Metilnitrofos, trixlormetafos, fozalon, butifos, xlorofos, ftalofos, oktametil va sevin.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1049,7 +1319,16 @@
           "uncertain": false
         },
         {
-          "text": "Qayta ekstraksiya: pH o‘zgarishi bilan eruvchanlik o‘zgaradi; kislota xossali moddalar ishqoriy sharoitda suvda, alkaloidlar esa organik erituvchida yaxshi eriydi.",
+          "text": "Qayta ekstraksiya: pH o‘zgarishi bilan eruvchanlik o‘zgaradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "19"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislota xossali moddalar ishqoriy sharoitda suvda, alkaloidlar esa organik erituvchida yaxshi eriydi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1076,7 +1355,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Tozalash usullari",
+        "items": [
+          {
+            "title": "Sovunlash",
+            "text": "Gidrolizga chidamli birikmalar"
+          },
+          {
+            "title": "Qayta ekstraksiya",
+            "text": "pH o‘zgarishi bilan eruvchanlik"
+          },
+          {
+            "title": "Sulfirlash",
+            "text": "Barbituratlar kabi chidamli moddalar"
+          },
+          {
+            "title": "Xromatografiya",
+            "text": "Yupqa qavatli, gaz-suyuqlik"
+          },
+          {
+            "title": "Yog‘ni cho‘ktirish",
+            "text": "Aseton, atsetonitril, sovuqda"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: reekstraksiyada kislota va asos xossali moddalar qaysi pH da qaysi fazaga o‘tadi? Doskada: pH - faza sxemasi. Tipik xato: sulfirlashni barcha moddalarga qo‘llash; u faqat sulfat kislotaga chidamlilar uchun. Kitobdagi cho‘ktirish haroratining ishorasi (minus) matnda aniq ko‘rinmaydi, shuning uchun slaydda keltirilmadi."
     },
     {
@@ -1203,7 +1507,7 @@
           "uncertain": false
         },
         {
-          "text": "Ob’ektni tejash va vaqtni tejash uchun sud kimyogari aniq reja tuzadi; dastlabki tekshiruv reja ichidagi ko‘p moddalarni inkor qilish yoki taxmin qilish imkonini beradi.",
+          "text": "Ob’ektni tejash va vaqtni tejash uchun sud kimyogari aniq reja tuzadi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1212,7 +1516,25 @@
           "uncertain": false
         },
         {
-          "text": "Reja asoslari: yo‘llanmalar va o‘lim sabablari, kasallik tarixi va sud-tibbiyot ekspertizasi akti, ob’ektning tashqi ko‘rinishi (pH, hid, rang), dastlabki taxminiy tekshiruv natijalari.",
+          "text": "Dastlabki tekshiruv reja ichidagi ko‘p moddalarni inkor qilish yoki taxmin qilish imkonini beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Reja asoslari: yo‘llanmalar va o‘lim sabablari, kasallik tarixi va sud-tibbiyot ekspertizasi akti.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ob’ektning tashqi ko‘rinishi (pH, hid, rang), dastlabki taxminiy tekshiruv natijalari.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1274,7 +1596,16 @@
       "title": "Yot qo‘shimcha va hid",
       "bullets": [
         {
-          "text": "Ko‘z yoki mikroskopda zaharga xos qo‘shimchalar ko‘rinishi mumkin: margimush oksidining chinnisimon kristallari, strixnin nitritining prizmatik kristallari, zaharli o‘simlik urug‘i.",
+          "text": "Ko‘z yoki mikroskopda zaharga xos qo‘shimchalar ko‘rinishi mumkin: margimush oksidining chinnisimon kristallari.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "21"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Strixnin nitritining prizmatik kristallari, zaharli o‘simlik urug‘i.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1443,7 +1774,16 @@
           "uncertain": false
         },
         {
-          "text": "Misol: fenotiazin hosilalari peshobga temir xloridning sulfat kislotali eritmasi qo‘shilsa och-qizil rang beradi; barbituratlar uchun kobalt atsetat ammiak yoki litiy ishqori sharoitida.",
+          "text": "Misol: fenotiazin hosilalari peshobga temir xloridning sulfat kislotali eritmasi qo‘shilsa och-qizil rang beradi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "20"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Barbituratlar uchun kobalt atsetat ammiak yoki litiy ishqori sharoitida.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1459,7 +1799,16 @@
       "title": "Oq mishyakka dastlabki tekshiruv",
       "bullets": [
         {
-          "text": "Ob’ektdagi chinni parchasi ko‘rinishidagi qo‘shimcha pinset bilan ajratilib, ingichka shisha probirkaga solinadi, kichik ko‘mir parchasi qo‘shilib kuchsiz alangada qizdiriladi.",
+          "text": "Ob’ektdagi chinni parchasi ko‘rinishidagi qo‘shimcha pinset bilan ajratib olinadi.",
+          "source": {
+            "author": "Yuldashev Z.A., Umarova G.Q.",
+            "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+            "page": "170"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ingichka shisha probirkaga solinadi, kichik ko‘mir parchasi qo‘shilib kuchsiz alangada qizdiriladi.",
           "source": {
             "author": "Yuldashev Z.A., Umarova G.Q.",
             "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
@@ -1495,7 +1844,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "caption": "Oq mishyakka dastlabki sinov",
+        "items": [
+          {
+            "title": "1. Ajratish",
+            "text": "Chinni parchasi pinset bilan"
+          },
+          {
+            "title": "2. Qizdirish",
+            "text": "Probirkada ko‘mir bilan, kuchsiz alanga"
+          },
+          {
+            "title": "3. Namlangan qog‘oz",
+            "text": "Yuqori qism o‘raladi"
+          },
+          {
+            "title": "4. Natija",
+            "text": "Qoramtir-kul rang dog‘"
+          },
+          {
+            "title": "5. Tasdiq",
+            "text": "Uchi sindirilsa, sovigan joyda oq dog‘"
+          }
+        ]
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ko‘mirning vazifasi nima? (kitobda reaksiya tenglamasini yozish topshiriq sifatida berilgan, tenglama keltirilmagan). Doskada: probirka va dog‘ joylashuvi. Tipik xato: namlangan o‘ramni qizdirishdan oldin olib tashlash."
     },
     {
@@ -1538,7 +1912,20 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "HCN ga dastlabki sinov",
+        "reagents": [
+          "Ob’ekt + oksalat kislota",
+          "Ishqor tomchisi (oynacha ostida)",
+          "FeCl3 + FeCl2 aralashmasi, HCl"
+        ],
+        "products": [
+          "Ko‘k rang (sianid kislota bor)"
+        ],
+        "conditions": "Chinni tavoqcha, buyum oynachasi",
+        "observation": "Sianid kislota bo‘lsa — ko‘k rang"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: ishqor tomchisi nima uchun oynachaning ostki qismida bo‘ladi? (kitobda sabab keltirilmagan; reaksiya tenglamasini yozish topshiriq). Doskada: reaksiya bosqichlari. Tipik xato: oynachani olgach, reaktivlarni tartibsiz qo‘shish."
     },
     {
@@ -1581,7 +1968,19 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "reaction",
+        "caption": "Nitrat va nitritga sinov",
+        "reagents": [
+          "Suvli eritma (ob’ekt bo‘lagi)",
+          "Difenilamin reaktivi",
+          "Konsentrlangan H2SO4"
+        ],
+        "products": [
+          "Zangori rang"
+        ],
+        "observation": "Ijobiy bo‘lsa: azobo‘yoq reaksiyasi — qizil"
+      },
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nitrit va nitratlarning qaysi xossasiga asoslangan reaksiya? (oksidlovchilik). Doskada: difenilamin reaksiyasi va azobo‘yoq. Tipik xato: FPN va oddiy temir xlorid reaktivini aralashtirish. Kitobda naftol (-naftol) ning alfa yoki beta shakli ko‘rsatilmagan."
     },
     {
@@ -1634,10 +2033,10 @@
       "options": [
         "13",
         "28",
-        "67",
-        "83"
+        "83",
+        "67"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Kitobga ko‘ra to‘liq tahlilda ekspert 67 ta zaharli moddaga tekshiruv olib borishi shart; to‘liqmas tahlilda esa alohida ko‘rsatma bo‘yicha bir yoki bir necha moddaga.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1649,11 +2048,11 @@
       "question": "Ob’ekt etil spirti va nitritga tekshirilishi tavsiya etilgan bo‘lsa, konservlash haqida qaysi qoida to‘g‘ri?",
       "options": [
         "Etil spirti bilan konservlanadi",
-        "Etil spirti bilan konservlash man etiladi",
         "Formalin bilan konservlanadi",
+        "Etil spirti bilan konservlash man etiladi",
         "Konservlash majburiy"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Bunday holda etil spirti bilan konservlash man etiladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1664,12 +2063,12 @@
     {
       "question": "Ob’ekt pH qiymati 3 yoki undan kichik bo‘lsa, bu nimadan dalolat beradi?",
       "options": [
-        "Ishqor yoki karbonatlardan",
         "Mineral kislotalar yoki ko‘p miqdordagi organik kislotalardan",
-        "Sianidlardan",
-        "Achish jarayonining boshlanishidan"
+        "Ishqor yoki karbonatlardan",
+        "Achish jarayonining boshlanishidan",
+        "Sianidlardan"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "pH 3 yoki undan kichik bo‘lsa, asosan mineral kislotalar yoki ko‘p miqdorda organik kislotalar bor; kuchsiz kislotali muhit achishni, ishqoriy muhit ishqor yoki karbonatlarni ko‘rsatadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1680,12 +2079,12 @@
     {
       "question": "Ob’ektdan achchiq bodom hidi kelsa, birinchi navbatda nimaga tekshiriladi?",
       "options": [
-        "Denaturlangan spirtga",
         "Fosfororganik birikmalarga",
-        "Sianidlarga",
-        "Fenolga"
+        "Fenolga",
+        "Denaturlangan spirtga",
+        "Sianidlarga"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Achchiq bodom hidi ob’ektda sianidlar borligidan dalolat beradi; piridin asoslari hidi esa denaturlangan spirtni ko‘rsatadi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1696,12 +2095,12 @@
     {
       "question": "Etanolga shubhada qon va siydik qancha miqdorda va qanday idishda yuboriladi?",
       "options": [
-        "10-20 ml dan, tiqingacha to‘ldirilgan idishda",
         "200 ml dan, yarim to‘ldirilgan idishda",
+        "50 ml dan, polietilen xaltada",
         "150 ml dan, metall idishda",
-        "50 ml dan, polietilen xaltada"
+        "10-20 ml dan, tiqingacha to‘ldirilgan idishda"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Standart A-6 bo‘yicha etanolga qon va siydik 10-20 ml dan, tiqingacha to‘ldirilgan idishda yuboriladi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1712,12 +2111,12 @@
     {
       "question": "Giyohvand vositalar va psixotrop moddalarga shubhada albatta qaysi ob’ektlar olinadi?",
       "options": [
-        "Soch va tirnoq",
         "Qon (150 ml), siydik (150-200 ml) va o‘t pufagi",
-        "Faqat jigar",
-        "Faqat miya va buyrak"
+        "Soch va tirnoq",
+        "Faqat miya va buyrak",
+        "Faqat jigar"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Standart A-6: giyohvand vositalar va psixotrop moddalardan albatta qon (150 ml), siydik (150-200 ml) va o‘t pufagi olinadi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1729,11 +2128,11 @@
       "question": "Standart A-6 bo‘yicha ob’ektlar qaysi zaharlanishga shubhada konservatsiya qilinadi?",
       "options": [
         "Kislotalar bilan",
-        "Metall tuzlari bilan",
         "Yurak glikozidlari bilan",
+        "Metall tuzlari bilan",
         "Etil spirti bilan"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Ob’ektlar faqat yurak glikozidlari bilan zaharlanishga shubha qilingandagina konservatsiya qilinadi; fiksatsiya uchun etil spirti ishlatiladi.",
       "source": {
         "author": "Yuldashev Z.A., Nurmatova M.I.",
@@ -1744,10 +2143,10 @@
     {
       "question": "Ichki a’zolar uchun qaysi idish ishlatiladi?",
       "options": [
+        "Plastmassa paket",
         "Metall idish",
-        "Keramik idish",
         "Og‘zi keng quruq shisha banka",
-        "Plastmassa paket"
+        "Keramik idish"
       ],
       "correct_index": 2,
       "explanation": "Ichki a’zolar og‘zi keng quruq shisha bankalarga joylanadi; metall yoki keramik idishlarni ishlatish man etiladi.",
@@ -1760,10 +2159,10 @@
     {
       "question": "Idish yozuvlari yo‘llanma hujjatlariga mos kelmasa, nima qilinadi?",
       "options": [
-        "Tahlil davom ettiriladi",
-        "Uch kishilik hay’at ishtirokida dalolatnoma tuziladi va boshqa ashyoviy dalil talab qilinadi",
         "Idish yozuvi o‘zgartiriladi",
-        "Ob’ekt yo‘q qilinadi"
+        "Uch kishilik hay’at ishtirokida dalolatnoma tuziladi va boshqa ashyoviy dalil talab qilinadi",
+        "Ob’ekt yo‘q qilinadi",
+        "Tahlil davom ettiriladi"
       ],
       "correct_index": 1,
       "explanation": "Yozuv va hujjatlar o‘rtasida farq bo‘lsa, tahlil natijalari noto‘g‘ri bo‘ladi; uch kishilik hay’at ishtirokida dalolatnoma tuziladi va boshqa ashyoviy dalillar talab qilinadi.",
@@ -1776,12 +2175,12 @@
     {
       "question": "Quyidagi zaharlardan qaysi biri suv bug‘i bilan haydab ajratiladi?",
       "options": [
-        "Qo‘rg‘oshin",
-        "Barbituratlar",
         "Sianid kislotasi",
+        "Barbituratlar",
+        "Qo‘rg‘oshin",
         "Simob"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Suv bug‘i bilan sianid kislotasi, spirtlar, formaldegid, geksaxloran va nikotin haydaladi.",
       "source": {
         "author": "Yuldashev Z.A., Umarova G.Q.",
@@ -1792,10 +2191,10 @@
     {
       "question": "Eksgumatsiya qilingan murdada tuproq qaysi usulda yuboriladi?",
       "options": [
-        "Bitta joydan 100 g",
+        "Faqat tobut ostidan",
         "Olti joydan 500 g dan",
         "Ikki joydan 1 kg dan",
-        "Faqat tobut ostidan"
+        "Bitta joydan 100 g"
       ],
       "correct_index": 1,
       "explanation": "Tobutning usti va ostidan, yon tomonlaridan, bosh va oyoq tomonidan, ya’ni olti joydan 500 g dan tuproq yuboriladi.",
@@ -1803,6 +2202,150 @@
         "author": "Yuldashev Z.A., Nurmatova M.I.",
         "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
         "page": "88"
+      }
+    },
+    {
+      "question": "Ob’ekt reaksiya muhiti kislotali bo‘lsa, qanday moddalarga tekshiriladi?",
+      "options": [
+        "Faqat metallarga",
+        "Neytral xossali moddalarga",
+        "Asos xossali moddalarga",
+        "Kislota xossali moddalarga"
+      ],
+      "correct_index": 3,
+      "explanation": "Reaksiya muhiti kislotali bo‘lsa kislota xossali moddalarga, ishqoriy bo‘lsa asos xossali, neytral bo‘lsa neytral xossali moddalarga tekshiriladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "170"
+      }
+    },
+    {
+      "question": "Ob’ekt chirishi natijasida muhit kislotali bo‘lishiga nima sabab bo‘ladi?",
+      "options": [
+        "CO2 yo‘qolishi",
+        "Ammiak ajralishi",
+        "Spirt bug‘lanishi",
+        "H2S ajralishi"
+      ],
+      "correct_index": 3,
+      "explanation": "Ob’ekt chirishi natijasida H2S ajralishi hisobiga muhit kislotali bo‘lishi mumkinligini hisobga olish kerak.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "170"
+      }
+    },
+    {
+      "question": "Oq mishyakka dastlabki tekshiruvda probirka devorida qanday dog‘ hosil bo‘lsa, oq mishyak borligidan dalolat beradi?",
+      "options": [
+        "Sariq",
+        "Qoramtir-kul rangli",
+        "Ko‘k",
+        "Qizil"
+      ],
+      "correct_index": 1,
+      "explanation": "Namlangan qism ochilganda devorda qoramtir-kul rangli dog‘ aniqlansa, oq mishyak borligidan dalolat beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "171"
+      }
+    },
+    {
+      "question": "Sianid kislotasiga dastlabki tekshiruvda FeCl3, FeCl2 va HCl qo‘shilgach qanday rang hosil bo‘ladi?",
+      "options": [
+        "Qizil",
+        "Rangsiz",
+        "Ko‘k",
+        "Sariq"
+      ],
+      "correct_index": 2,
+      "explanation": "Sianid kislotasi bo‘lgan taqdirda ko‘k rang hosil bo‘ladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "171"
+      }
+    },
+    {
+      "question": "Nitrat va nitritlarni dastlabki aniqlashda qaysi reaktiv ishlatiladi va qanday rang hosil bo‘ladi?",
+      "options": [
+        "Kobalt atsetat — binafsha",
+        "Oksalat kislota — ko‘k",
+        "Difenilamin va konsentrlangan H2SO4 — zangori",
+        "FeCl3 — qizil-pushti"
+      ],
+      "correct_index": 2,
+      "explanation": "Suvli eritmaga difenilamin reaktivi va konsentrlangan sulfat kislotasi qo‘shilsa, zangori rang nitrat va nitritlar borligidan dalolat beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "171"
+      }
+    },
+    {
+      "question": "Peshobdagi aminazinni dastlabki tekshirishda 1 ml peshobga H2SO4 va FeCl3 aralashmasi qo‘shilsa, qanday rang hosil bo‘ladi?",
+      "options": [
+        "Ko‘k",
+        "Zangori",
+        "Qizil-pushti",
+        "Sariq"
+      ],
+      "correct_index": 2,
+      "explanation": "1 ml peshobga 1 ml reaktiv (80 ml 10% H2SO4 + 20 ml 5% FeCl3) qo‘shilsa, eritma qizil-pushti rangga bo‘yaladi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "171"
+      }
+    },
+    {
+      "question": "FPN reaktivi tarkibi qaysi javobda to‘g‘ri berilgan?",
+      "options": [
+        "5 ml 5% FeCl3; 45 ml 20% HClO4; 50 ml 50% HNO3",
+        "50 ml 5% FeCl3; 45 ml 20% HClO4; 5 ml 50% HNO3",
+        "5 ml 20% FeCl3; 45 ml 50% HClO4; 50 ml 5% HNO3",
+        "10 ml FeCl3; 90 ml H2SO4"
+      ],
+      "correct_index": 0,
+      "explanation": "FPN reaktivi 5 ml 5% FeCl3, 45 ml 20% HClO4 va 50 ml 50% HNO3 aralashmasidan iborat; FPN qizil rang beradi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "171"
+      }
+    },
+    {
+      "question": "Metgemoglobin hosil qiluvchi zaharlarga shubhada (anilin, nitrobenzol va b.) qaysi ob’ekt olinadi?",
+      "options": [
+        "Qon",
+        "Soch va tirnoq",
+        "O‘pka bo‘lagi",
+        "Tuproq"
+      ],
+      "correct_index": 0,
+      "explanation": "Metgemoglobin hosil qiluvchi zaharlar uchun metgemoglobinni aniqlash maqsadida qon olinadi.",
+      "source": {
+        "author": "Yuldashev Z.A., Nurmatova M.I.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (DVSSM). Toshkent farmatsevtika instituti, 2025",
+        "page": "88"
+      }
+    },
+    {
+      "question": "Ob’ektning sariq rangi qaysi moddalar bilan zaharlanishga xos?",
+      "options": [
+        "Fosfororganik birikmalar",
+        "Pikrin kislota, strixnin, xromatlar, azot kislota",
+        "Faqat sianidlar",
+        "Sulfat kislota"
+      ],
+      "correct_index": 1,
+      "explanation": "Sariq rang pikrin kislotasi, strixnin, xromatlar, azot kislotasi bilan zaharlanishga xos; qora rang — sulfat kislotasiga.",
+      "source": {
+        "author": "Yuldashev Z.A., Umarova G.Q.",
+        "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+        "page": "21"
       }
     }
   ],

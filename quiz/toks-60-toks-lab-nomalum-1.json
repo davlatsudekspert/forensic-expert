@@ -1,0 +1,582 @@
+{
+ "topic_id": "toks-60-toks-lab-nomalum-1",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Noma’lum ob’ektni tahlil qilish (uchuvchi va metall zaharlar); ekspertiza dalolatnomasini yozish va himoyalash",
+  "ru": "Noma’lum ob’ektni tahlil qilish (uchuvchi va metall zaharlar); ekspertiza dalolatnomasini yozish va himoyalash",
+  "en": "Noma’lum ob’ektni tahlil qilish (uchuvchi va metall zaharlar); ekspertiza dalolatnomasini yozish va himoyalash"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q01",
+   "question_i18n": {
+    "uz": "Dalolatnoma nechta qismdan iborat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "To‘rt",
+     "Besh",
+     "Ikki",
+     "Uch"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Dalolatnoma kirish, bayon va xulosa qismlaridan iborat."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "221"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q02",
+   "question_i18n": {
+    "uz": "Dalolatnomada nima man etiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Vaqtni ko‘rsatish",
+     "Reaktivlarga muallif nomini yozish",
+     "Hoshiya qoldirish",
+     "Imzo qo‘yish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "So‘zlarni qisqartirish, shartli belgilar, muallif nomi va kimyoviy formulalar yozish man etiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "220"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q03",
+   "question_i18n": {
+    "uz": "Tuzatmalarga hoshiyada nima yoziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "To‘g‘rilanganiga ishonilsin",
+     "Tasdiqlanadi",
+     "Xato",
+     "Bekor qilindi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Hoshiyada ’to‘g‘rilanganiga ishonilsin’ deb yozilib, ekspert dastxat qo‘yadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "220"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q04",
+   "question_i18n": {
+    "uz": "Xulosa qismida moddalar qanday tartibda yoziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat topilganlari",
+     "Avval topilgan, so‘ng topilmagan",
+     "Alifbo tartibida",
+     "Faqat topilmaganlari"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Xulosada avval aniqlangan, so‘ng aniqlanmagan zaharli moddalar nomma-nom yoziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "221"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q05",
+   "question_i18n": {
+    "uz": "Achchiq bodom hidi qaysi moddalardan dalolat beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kislotalar",
+     "Metallar",
+     "Fenollar",
+     "Sianidlar"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Bioob’ekt tarkibida achchiq bodom hidi sianidlar borligidan dalolat beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "21"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q06",
+   "question_i18n": {
+    "uz": "pH 3 yoki undan kichik bo‘lsa, asosan nima borligini bildiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mineral kislotalar yoki ko‘p organik kislota",
+     "Ishqor",
+     "Sianid",
+     "Karbonat"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "pH 3 va undan kichik bo‘lsa, mineral kislotalar yoki ko‘p miqdorda organik kislotalar bor."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "21"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q07",
+   "question_i18n": {
+    "uz": "Qaysi guruh suv bug‘i bilan haydab ajratiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Og‘ir metallar",
+     "Mineral kislotalar",
+     "Barbituratlar",
+     "Sianid, sirka kislota, spirt, aldegid, fenollar"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Suv bug‘i bilan haydab ajratiladigan zaharlar ’uchuvchi zaharlar’ deyiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "20"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q08",
+   "question_i18n": {
+    "uz": "Og‘ir metallar va margimush qaysi usul bilan ajratiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mineralizatsiya (kuydirish)",
+     "Dializ",
+     "Suv bug‘i bilan haydash",
+     "Organik erituvchi quyish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Biologik ob’ektdan mineralizatsiya (kuydirish) yo‘li bilan ajratiladigan zaharlarga og‘ir metallar va margimush kiradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "20"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q09",
+   "question_i18n": {
+    "uz": "Lakmus indikatorining ishchi oralig‘i qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "8,2-10,0",
+     "3,0-5,2",
+     "5,0-8,0",
+     "1,0-3,0"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kitobda lakmus (5,0-8,0), qizil kongo (3,0-5,2), fenolftalein (8,2-10,0) keltirilgan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "21"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q10",
+   "question_i18n": {
+    "uz": "Dastlabki tekshiruv natijasi musbat bo‘lsa nima qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xulosa yoziladi",
+     "Ob’ekt yo‘q qilinadi",
+     "Taxmin qilingan moddalarga asosiy tekshirish o‘tkaziladi",
+     "Tahlil to‘xtatiladi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Taxminiy tekshiruv musbat bo‘lsa, shu moddalarga lozim bo‘lgan asosiy tekshirish shart."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "12"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q11",
+   "question_i18n": {
+    "uz": "Sud kimyogari malaka oshirish kursini necha yilda bir marta o‘tishi lozim?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5 yilda",
+     "1 yilda",
+     "10 yilda",
+     "3 oyda"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Sud kimyogari dorishunoslik ixtisosi bo‘yicha oliy ma’lumotli bo‘lib, har 5 yilda malaka oshirish kursini o‘tishi lozim."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "15"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q12",
+   "question_i18n": {
+    "uz": "Ma’ruzaga ko‘ra sud kimyosi tekshiruvi akti necha qismdan iborat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "3 qismdan",
+     "6 qismdan",
+     "4 qismdan",
+     "2 qismdan"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Akt kirish, tashqi ko‘rinish, kimyoviy tekshirish va ekspert xulosasidan iborat 4 qismli."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "16"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q13",
+   "question_i18n": {
+    "uz": "Konservlangan ob’ekt qancha vaqtgacha saqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1 oygacha",
+     "1 yilgacha",
+     "5 yilgacha",
+     "Doimiy"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Agar ob’ekt konservlangan bo‘lsa, u 1 yilgacha saqlanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "17"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q14",
+   "question_i18n": {
+    "uz": "Spirt saqlovchi ob’ektlar qancha vaqtdan keyin tashlab yuboriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1 yildan keyin",
+     "6 oydan keyin",
+     "1 oydan keyin",
+     "1 haftadan keyin"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Spirt saqlovchi ob’ektlar 1 oydan keyin tashlab yuboriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "17"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q15",
+   "question_i18n": {
+    "uz": "Radionova usuli yupqa qatlam skriningida nechta dori moddani ajratadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "83",
+     "5",
+     "67",
+     "49"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Radionova taklif etgan usul 49 ta dori moddani turli sistema va sorbentlarda bir-biridan ajratadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "20"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q16",
+   "question_i18n": {
+    "uz": "Kartoshov usuli 83 ta azot saqlovchi zaharni nechta standart modda asosida ajratadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "49",
+     "5",
+     "3",
+     "10"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "V.A. Kartoshov 83 ta azot saqlovchi zaharli birikmani 5 ta standart modda asosida ajratishni taklif etgan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "20"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q17",
+   "question_i18n": {
+    "uz": "Ob’ektda margimush oksidining qanday kristallari ko‘rinishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dendrit",
+     "Chinnisimon",
+     "Ninasimon qizil",
+     "Kub shaklidagi yashil"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Masalan, margimush oksidining chinnisimon kristallari, strixnin nitritining prizmatik kristallari ko‘rinishi mumkin."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "21"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q18",
+   "question_i18n": {
+    "uz": "Ro‘yxatga olish jurnali nechta bo‘limdan tashkil topgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5",
+     "3",
+     "67",
+     "16"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ro‘yxatga olish jurnali 16 bo‘limdan tashkil etgan."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "17"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q19",
+   "question_i18n": {
+    "uz": "Barbituratlarga taxminiy tekshirish uchun peshobga qaysi reaktiv qo‘shiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kumush nitrat",
+     "Natriy sulfit",
+     "Kobalt atsetati (ammiak yoki litiy ishqori sharoitida)",
+     "Temir xlorid"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Barbituratlar uchun peshobga kobalt atsetati eritmasi ammiak yoki litiy ishqori sharoitida qo‘shiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "20"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "toks-60-toks-lab-nomalum-1-q20",
+   "question_i18n": {
+    "uz": "Fenotiazin hosilalari peshobga temir xloridining sulfat kislotali eritmasi qo‘shilganda qanday rang beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Och-qizil",
+     "Rangsiz",
+     "Yashil",
+     "Ko‘k"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Fenotiazin hosilalari peshobga temir xloridining sulfat kislotali eritmasi qo‘shilsa, och-qizil rang hosil qiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.A., Umarova G.Q.",
+    "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025",
+    "page": "20"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.A., Umarova G.Q.",
+   "title": "Toksikologik kimyo modulidan o‘quv-uslubiy majmua (Farmatsiya). Toshkent farmatsevtika instituti, 2025"
+  }
+ ]
+}
