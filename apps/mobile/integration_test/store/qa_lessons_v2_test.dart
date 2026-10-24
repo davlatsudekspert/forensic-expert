@@ -171,5 +171,38 @@ void main() {
     c.read(routerProvider).go(Routes.groups);
     await settle(4000);
     await shot('phone_groups');
+
+    // 2026-10-24: fan sahifasida «Darslar» bo‘limi, Bosh sahifa plitkasi.
+    c.read(routerProvider).go(Routes.discipline('forensic_toxicology'));
+    await settle(5000);
+    await shot('phone_discipline_tox_top');
+    final list = find.byKey(const Key('disciplineDetail.forensic_toxicology'));
+    for (var i = 1; i <= 4; i++) {
+      if (list.evaluate().isEmpty) break;
+      await tester.drag(list, const Offset(0, -600));
+      await settle(800);
+      await shot('phone_discipline_tox_scroll_$i');
+    }
+    c.read(routerProvider).go(Routes.discipline('forensic_medicine'));
+    await settle(5000);
+    final listFm = find.byKey(const Key('disciplineDetail.forensic_medicine'));
+    for (var i = 1; i <= 3; i++) {
+      if (listFm.evaluate().isEmpty) break;
+      await tester.drag(listFm, const Offset(0, -600));
+      await settle(800);
+    }
+    await shot('phone_discipline_fm_lessons');
+    c.read(routerProvider).go(Routes.home);
+    await settle(4000);
+    await shot('phone_home_top');
+    final home = find.byType(ListView).first;
+    for (var i = 1; i <= 3; i++) {
+      await tester.drag(home, const Offset(0, -600));
+      await settle(800);
+      await shot('phone_home_scroll_$i');
+    }
+    c.read(routerProvider).go(Routes.lessons);
+    await settle(5000);
+    await shot('phone_lessons_list');
   });
 }
