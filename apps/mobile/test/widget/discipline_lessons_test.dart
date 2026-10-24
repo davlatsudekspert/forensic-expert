@@ -2,7 +2,6 @@
 // rejimi (egasi topshirig‘i, 2026-10-24).
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/app/class_quiz.dart';
 import 'package:forensic_expert/app/lessons.dart';
 import 'package:forensic_expert/app/routes.dart';
@@ -11,6 +10,7 @@ import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/data/lessons/fake_lessons_service.dart';
 import 'package:forensic_expert/features/class_groups/presentation/lesson_group_test_screen.dart';
 import 'package:forensic_expert/features/lessons/presentation/lesson_viewer_screen.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pump_app.dart';
 
