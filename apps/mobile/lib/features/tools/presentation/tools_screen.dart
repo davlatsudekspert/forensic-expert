@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -9,18 +10,20 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../tool_strings.dart';
 import 'tool_tile.dart';
 
 /// Vositalar katalogi: Sud tibbiyoti · Toksikologiya · Laboratoriya ·
 /// Birlik konversiyalari.
-class ToolsScreen extends StatelessWidget {
+class ToolsScreen extends ConsumerWidget {
   const ToolsScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
+    final casebookLocked = !proGate(ref, ProFeature.caseNotebook);
     return Scaffold(
       appBar: AppBar(title: FeAppBarTitle(l.toolsTitle)),
       body: SafeArea(
@@ -44,7 +47,12 @@ class ToolsScreen extends StatelessWidget {
                     onTap: () => context.push(Routes.casebook),
                     child: Row(
                       children: [
-                        Icon(Icons.menu_book_outlined, color: c.accent),
+                        Icon(
+                          casebookLocked
+                              ? Icons.lock_outline
+                              : Icons.menu_book_outlined,
+                          color: c.accent,
+                        ),
                         const SizedBox(width: FeSpace.sm),
                         Expanded(
                           child: Column(

@@ -2,8 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/plan.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
@@ -11,6 +13,8 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_groups/variant_draw.dart';
+import '../../../domain/plan/plan_models.dart';
+import '../../pro/presentation/pro_gate.dart';
 
 /// Topshirish sozlamalari (mavzu testi va «Umumiy test» uchun bitta shakl).
 ///
@@ -158,7 +162,7 @@ class _NumberDialogState extends State<_NumberDialog> {
 
 /// Sozlamalar bo‘limlari: savollar soni, vaqt chegarasi, ochiq turish
 /// muddati, variant, javoblar qachon ochilishi.
-class TestSettingsSection extends StatelessWidget {
+class TestSettingsSection extends ConsumerWidget {
   const TestSettingsSection({
     super.key,
     required this.value,
@@ -214,9 +218,15 @@ class TestSettingsSection extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final t = Theme.of(context).textTheme;
+    // Ustoz Pro: bepul — 10 savolgacha; undan ko‘pi qulfli (ko‘rinadi).
+    final unlimited = proGate(ref, ProFeature.unlimitedGroupTests);
+    bool locked(int n) => !unlimited && n > freeGroupTestQuestions;
+    void pickCount(int n) => locked(n)
+        ? openPro(context, Plan.teacher)
+        : onChanged(value.copyWith(count: n));
     final maxCount = min(poolSize, GroupRules.maxQuestions);
     final presets = [
       for (final p in countPresets)
@@ -247,9 +257,10 @@ class TestSettingsSection extends StatelessWidget {
             for (final p in presets)
               ChoiceChip(
                 key: Key('grp.count.$p'),
+                avatar: locked(p) ? const Icon(Icons.lock_outline) : null,
                 label: Text(p.toString()),
                 selected: value.count == p,
-                onSelected: (_) => onChanged(value.copyWith(count: p)),
+                onSelected: (_) => pickCount(p),
               ),
             if (showAll)
               ChoiceChip(
@@ -261,9 +272,12 @@ class TestSettingsSection extends StatelessWidget {
                       ? l.grpCountMax(maxCount)
                       : l.grpCountAll(maxCount),
                 ),
+                avatar: locked(maxCount)
+                    ? const Icon(Icons.lock_outline)
+                    : null,
                 selected:
                     value.count == maxCount && !presets.contains(maxCount),
-                onSelected: (_) => onChanged(value.copyWith(count: maxCount)),
+                onSelected: (_) => pickCount(maxCount),
               ),
             if (!simple)
               ChoiceChip(
@@ -280,7 +294,7 @@ class TestSettingsSection extends StatelessWidget {
                     min: 1,
                     max: max(1, maxCount),
                   );
-                  if (n != null) onChanged(value.copyWith(count: n));
+                  if (n != null) pickCount(n);
                 },
               ),
           ],

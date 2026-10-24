@@ -9,6 +9,7 @@ import 'package:forensic_expert/data/class_quiz/class_quiz_demo_bank.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/data/lessons/fake_lessons_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/features/lessons/presentation/lesson_viewer_screen.dart';
 import 'package:forensic_expert/features/lessons/presentation/lessons_list_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -97,6 +98,8 @@ Map<String, Object?> _deck(String id, String deckId, {String lang = 'uz'}) => {
 final _questions = classQuizDemoTopic;
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.teacher);
+  tearDownAll(() => testDefaultPlan = null);
   late _Awake awake;
   late _Orient orient;
   late _Guard guard;

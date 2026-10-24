@@ -17,10 +17,12 @@ import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/study_models.dart' show StudyQuizMode;
 import '../domain/library/library_models.dart';
 import '../domain/moderation/moderation_models.dart';
+import '../domain/plan/plan_models.dart' show Plan;
 import '../domain/publications/publication_models.dart';
 import '../domain/referral/referral_models.dart';
 import '../domain/support/support_models.dart';
 import '../features/account/presentation/auth_screens.dart';
+import '../features/admin/presentation/admin_plans_screen.dart';
 import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/admin/presentation/admin_verification_screens.dart';
@@ -67,6 +69,9 @@ import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
 import '../features/placeholder/presentation/not_found_screen.dart';
 import '../features/pro/presentation/analysis_plan_screen.dart';
+import '../features/pro/presentation/pro_gate.dart'
+    show CasebookGate, CourtPrepGate;
+import '../features/pro/presentation/pro_screen.dart';
 import '../features/pro/presentation/pro_search_screen.dart';
 import '../features/professional/presentation/account_choice_screen.dart';
 import '../features/professional/presentation/profile_edit_screen.dart';
@@ -666,12 +671,15 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'casebook',
-                    builder: (c, s) => const CasebookScreen(),
+                    builder: (c, s) =>
+                        const CasebookGate(child: CasebookScreen()),
                     routes: [
                       GoRoute(
                         path: 'entry/:id',
-                        builder: (c, s) => CasebookEntryScreen(
-                          entryId: s.pathParameters['id']!,
+                        builder: (c, s) => CasebookGate(
+                          child: CasebookEntryScreen(
+                            entryId: s.pathParameters['id']!,
+                          ),
                         ),
                       ),
                     ],
@@ -732,45 +740,58 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'court-prep',
-                    builder: (c, s) => const CourtPrepScreen(),
+                    builder: (c, s) =>
+                        const CourtPrepGate(child: CourtPrepScreen()),
                     routes: [
                       GoRoute(
                         path: 'practice',
-                        builder: (c, s) => const CourtPracticeScreen(),
+                        builder: (c, s) =>
+                            const CourtPrepGate(child: CourtPracticeScreen()),
                       ),
                       GoRoute(
                         path: 'principles',
-                        builder: (c, s) => const CourtPrinciplesScreen(),
+                        builder: (c, s) =>
+                            const CourtPrepGate(child: CourtPrinciplesScreen()),
                       ),
                       GoRoute(
                         path: 'drill',
-                        builder: (c, s) => const CourtDrillScreen(),
+                        builder: (c, s) =>
+                            const CourtPrepGate(child: CourtDrillScreen()),
                       ),
                       GoRoute(
                         path: 'stats',
-                        builder: (c, s) => const CourtStatsScreen(),
+                        builder: (c, s) =>
+                            const CourtPrepGate(child: CourtStatsScreen()),
                       ),
                       GoRoute(
                         path: 'simulator',
-                        builder: (c, s) => const CourtSimulatorScreen(),
+                        builder: (c, s) =>
+                            const CourtPrepGate(child: CourtSimulatorScreen()),
                         routes: [
                           GoRoute(
                             path: ':id',
-                            builder: (c, s) => CourtScenarioScreen(
-                              scenarioId: s.pathParameters['id']!,
+                            builder: (c, s) => CourtPrepGate(
+                              child: CourtScenarioScreen(
+                                scenarioId: s.pathParameters['id']!,
+                              ),
                             ),
                           ),
                         ],
                       ),
                       GoRoute(
                         path: 'topic/:id',
-                        builder: (c, s) =>
-                            CourtTopicScreen(topicId: s.pathParameters['id']!),
+                        builder: (c, s) => CourtPrepGate(
+                          child: CourtTopicScreen(
+                            topicId: s.pathParameters['id']!,
+                          ),
+                        ),
                       ),
                       GoRoute(
                         path: 'q/:id',
-                        builder: (c, s) => CourtQuestionScreen(
-                          questionId: s.pathParameters['id']!,
+                        builder: (c, s) => CourtPrepGate(
+                          child: CourtQuestionScreen(
+                            questionId: s.pathParameters['id']!,
+                          ),
                         ),
                       ),
                     ],
@@ -1012,6 +1033,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                         builder: (c, s) => const AdminAuditScreen(),
                       ),
                       GoRoute(
+                        path: 'plans',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminPlansScreen(),
+                      ),
+                      GoRoute(
                         path: 'reports',
                         parentNavigatorKey: rootKey,
                         builder: (c, s) => const AdminReportsScreen(),
@@ -1075,6 +1101,13 @@ final routerProvider = Provider<GoRouter>((ref) {
                         ),
                       ),
                     ],
+                  ),
+                  GoRoute(
+                    path: 'pro',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => ProScreen(
+                      plan: Plan.fromWire(s.uri.queryParameters['plan']),
+                    ),
                   ),
                   GoRoute(
                     path: 'invite',

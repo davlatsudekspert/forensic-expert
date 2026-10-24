@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/plan.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/user_data.dart';
@@ -12,9 +13,11 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/learn/learn_models.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../class_groups/presentation/groups_screens.dart'
     show GroupsEntryCard;
 import '../../placeholder/presentation/in_development_view.dart';
+import '../../pro/presentation/pro_gate.dart';
 
 /// Student / Resident dashboard. Professional rejim bilan bir xil dizayn
 /// tizimi (bitta ilova), lekin ta’limga yo‘naltirilgan tuzilma: darajalar,
@@ -58,6 +61,7 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
     // Eski namuna to‘plamlari production’da bo‘sh: plitkalar manbali
     // o‘quv rejimiga olib boradi.
     final noQuiz = repo.quiz().isEmpty;
+    final examLocked = !proGate(ref, ProFeature.examMode);
     final noCards = repo.flashcards().isEmpty;
 
     return Scaffold(
@@ -298,10 +302,15 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                         ),
                         (
                           const Key('learn.exam'),
-                          Icons.timer_outlined,
+                          examLocked
+                              ? Icons.lock_outline
+                              : Icons.timer_outlined,
                           l.learnExam,
-                          () =>
-                              context.push(noQuiz ? Routes.study : Routes.exam),
+                          () => examLocked
+                              ? openPro(context, Plan.student)
+                              : context.push(
+                                  noQuiz ? Routes.study : Routes.exam,
+                                ),
                         ),
                       ],
                     ),
@@ -454,6 +463,22 @@ class _ExamScreenState extends ConsumerState<ExamScreen> {
         .where((q) => _answers[q.id] == q.correctIndex)
         .length;
 
+    return ProGated(
+      feature: ProFeature.examMode,
+      title: l.learnExam,
+      child: _examScaffold(context, l, c, t, lang, questions, correct),
+    );
+  }
+
+  Widget _examScaffold(
+    BuildContext context,
+    AppLocalizations l,
+    FeColorTokens c,
+    TextTheme t,
+    String lang,
+    List<QuizQuestion> questions,
+    int correct,
+  ) {
     return Scaffold(
       appBar: AppBar(title: FeAppBarTitle(l.learnExam)),
       body: SafeArea(

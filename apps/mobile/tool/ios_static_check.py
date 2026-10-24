@@ -52,7 +52,8 @@ for img in contents["images"]:
 check("AppIcon: barcha fayl mavjud, o‘lcham to‘g‘ri", not missing, "; ".join(missing))
 check("AppIcon: alpha kanal yo‘q (App Store talabi)", not alpha, "; ".join(alpha))
 check("1024×1024 marketing ikon", any(i.get("size") == "1024x1024" for i in contents["images"]))
-check("To‘lov qatlami yo‘q (in_app_purchase plagini yo‘q)", "in_app_purchase" not in pub)
+# 0.4.0: Pro (Apple 3.1.1/3.1.2) — to‘lov faqat in_app_purchase orqali, kalitlar kodda yo‘q.
+check("To‘lov qatlami: in_app_purchase (0.4.0 Pro)", "in_app_purchase" in pub)
 check("Qurilma oilasi", True, "TARGETED_DEVICE_FAMILY = " + ",".join(set(re.findall(r'TARGETED_DEVICE_FAMILY = "([\d,]+)"', pbx)))
       + " (iPad layout real qurilmada tekshirilmagan)")
 # Privacy manifest: texnik talablar (fayl, loyiha resurslari, tracking yo‘q,

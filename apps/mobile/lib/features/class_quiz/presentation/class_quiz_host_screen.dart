@@ -13,6 +13,8 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 
 import '../../../domain/class_quiz/class_quiz_models.dart';
+import '../../../domain/plan/plan_models.dart';
+import '../../pro/presentation/pro_gate.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'class_hardest_screen.dart';
 import 'class_quiz_widgets.dart';
@@ -2012,7 +2014,10 @@ class _Finished extends StatelessWidget {
               FilledButton.icon(
                 key: const Key('class.exportButton'),
                 onPressed: onExport,
-                icon: const Icon(Icons.ios_share),
+                icon: const ProIcon(
+                  feature: ProFeature.resultsCsv,
+                  icon: Icons.ios_share,
+                ),
                 label: Text(l.classExportCsv),
                 style: FilledButton.styleFrom(
                   minimumSize: const Size.fromHeight(52),
@@ -2161,7 +2166,10 @@ class _Finished extends StatelessWidget {
                         child: FilledButton.icon(
                           key: const Key('class.exportButton'),
                           onPressed: onExport,
-                          icon: const Icon(Icons.ios_share),
+                          icon: const ProIcon(
+                            feature: ProFeature.resultsCsv,
+                            icon: Icons.ios_share,
+                          ),
                           label: Text(l.classExportCsv),
                           style: FilledButton.styleFrom(
                             minimumSize: Size.fromHeight(btnH),

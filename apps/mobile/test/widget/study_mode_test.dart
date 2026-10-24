@@ -8,11 +8,14 @@ import 'package:forensic_expert/app/study.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/domain/learn/study_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pump_app.dart';
 import '../helpers/study_fixtures.dart';
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.student);
+  tearDownAll(() => testDefaultPlan = null);
   final now = DateTime.utc(2026, 3, 1, 10);
   const topicDeck = 'discipline.forensicMedicine';
   const substanceDeck = 'group.test_group';

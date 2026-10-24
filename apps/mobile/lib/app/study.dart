@@ -15,6 +15,11 @@ final studyCatalogProvider = Provider<StudyCatalog>((ref) {
   );
 });
 
+/// Talabaga bepul kartochkalar to‘plami (1 fan): katalogdagi birinchisi.
+final studyFreeDeckIdProvider = Provider<String?>(
+  (ref) => ref.watch(studyCatalogProvider).decks.firstOrNull?.id,
+);
+
 /// Manbalar hali yuklanmoqdami (bo‘sh holat o‘rniga skelet ko‘rsatish uchun).
 final studyCatalogLoadingProvider = Provider<bool>(
   (ref) => ref.watch(guidelinesProvider).isLoading,

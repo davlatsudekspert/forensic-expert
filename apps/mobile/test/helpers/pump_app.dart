@@ -11,6 +11,15 @@ import 'package:forensic_expert/core/settings/settings_repository.dart';
 import 'package:forensic_expert/data/fixtures/knowledge_fixtures.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
 import 'package:forensic_expert/data/local/content_store.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
+
+import 'plan_fakes.dart';
+
+/// Pro (0.4.0): shu fayldagi testlar uchun standart reja. `null` — bepul.
+/// Gate’ni emas, boshqa narsani sinaydigan testlar (kalkulyator, daftar,
+/// ustoz ekranlari) o‘z rejasini `setUpAll` da o‘rnatadi; aniq `overrides`
+/// ro‘yxati bunga ustun turadi.
+Plan? testDefaultPlan;
 
 /// Onboarding tugagan foydalanuvchi sozlamalari.
 AppSettings completedSettings({
@@ -63,6 +72,7 @@ Future<ProviderContainer> pumpApp(
           FixtureKnowledgeRepository(),
         ),
       ],
+      if (testDefaultPlan != null) ...planOverrides(testDefaultPlan),
       ...overrides,
     ],
   );

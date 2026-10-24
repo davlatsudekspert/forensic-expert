@@ -7,6 +7,7 @@ import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
 import '../domain/ports/backend_ports.dart';
 import 'class_groups.dart';
+import 'plan.dart';
 import 'providers.dart';
 import 'referral.dart';
 import 'router.dart';
@@ -30,6 +31,12 @@ class ForensicExpertApp extends ConsumerWidget {
     // Taklif kodi kuzatuvchisi doim faol: foydalanuvchi kirgach kutilayotgan
     // kodni serverga bir marta yuboradi (qaror serverda).
     ref.listen(pendingReferralProvider, (_, _) {});
+    // Do‘kon oqimi doim tinglanadi: kutilayotgan xaridlar ishga tushishda
+    // keladi va serverda tekshiriladi.
+    ref.listen(proFlowProvider, (_, _) {});
+    // Huquq ilova ochilishidayoq yuklanadi va tirik turadi (qulf/ochiq holati
+    // birinchi bosishda ham to‘g‘ri bo‘lishi uchun).
+    ref.listen(entitlementsProvider, (_, _) {});
     // Guruh taklifi (QR): kirish oynasi boshqa sahifaga olib ketgan bo‘lsa
     // ham, kirgach qo‘shilish sahifasi qayta ochiladi (taklif yo‘qolmaydi).
     ref.listen<AuthState>(authStateProvider, (prev, next) {

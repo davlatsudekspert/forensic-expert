@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../app/study.dart';
 import '../../../core/design/theme.dart';
@@ -16,6 +17,7 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/guidelines/guideline_models.dart';
 import '../../../domain/learn/study_models.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../class_groups/presentation/groups_screens.dart'
     show GroupsEntryCard;
 import '../../disciplines/discipline_strings.dart';
@@ -23,6 +25,7 @@ import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/localized_content.dart';
 import '../../glossary/presentation/glossary_linked_text.dart';
 import '../../guidelines/presentation/guidelines_screens.dart';
+import '../../pro/presentation/pro_gate.dart';
 
 /// To‘plam nomi (fan, modda guruhi yoki yo‘riqnoma yo‘nalishi).
 String studyDeckTitle(AppLocalizations l, StudyDeck d) {
@@ -155,6 +158,10 @@ class StudyHubScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: FeSpace.xs),
                   const GroupsEntryCard(),
+                  if (!catalog.isEmpty) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    _ErrorStats(catalog: catalog),
+                  ],
                   if (catalog.isEmpty)
                     Padding(
                       padding: const EdgeInsets.only(top: FeSpace.lg),
@@ -188,6 +195,75 @@ class StudyHubScreen extends ConsumerWidget {
   }
 }
 
+/// Xatolar statistikasi (Talaba Pro): takrorlangan kartochkalar, qiyinlari
+/// (1-qutida qolganlar) va eng qiyin to‘plamlar. Faqat qurilmadagi
+/// Leitner holatidan hisoblanadi.
+class _ErrorStats extends ConsumerWidget {
+  const _ErrorStats({required this.catalog});
+
+  final StudyCatalog catalog;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    if (!proGate(ref, ProFeature.errorAnalytics)) {
+      return const ProFeatureLock(
+        feature: ProFeature.errorAnalytics,
+        compact: true,
+      );
+    }
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final progress = ref.watch(studyProgressProvider);
+    var reviewed = 0, weak = 0, learned = 0;
+    final byDeck = <(StudyDeck, int)>[];
+    for (final d in catalog.decks) {
+      var w = 0;
+      for (final i in d.items) {
+        final card = progress[i.id];
+        if (card == null) continue;
+        reviewed++;
+        if (card.box == 1) {
+          weak++;
+          w++;
+        } else if (card.box >= LeitnerScheduler.maxBox - 1) {
+          learned++;
+        }
+      }
+      if (w > 0) byDeck.add((d, w));
+    }
+    byDeck.sort((a, b) => b.$2.compareTo(a.$2));
+    return FeCard(
+      key: const Key('study.errorStats'),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(l.studyStatsTitle, style: t.titleSmall),
+          const SizedBox(height: FeSpace.xxs),
+          if (reviewed == 0)
+            Text(
+              l.studyStatsEmpty,
+              key: const Key('study.errorStats.empty'),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            )
+          else ...[
+            Text(
+              l.studyStatsSummary(reviewed, weak, learned),
+              key: const Key('study.errorStats.summary'),
+              style: t.bodyMedium,
+            ),
+            for (final (d, n) in byDeck.take(3))
+              Text(
+                l.studyStatsWeakDeck(studyDeckTitle(l, d), n),
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
 class _DeckCard extends ConsumerWidget {
   const _DeckCard({required this.deck, required this.catalog});
 
@@ -212,6 +288,11 @@ class _DeckCard extends ConsumerWidget {
         StudyQuizBuilder.canExam(deck, catalog, 'uz') &&
         deck.items.any((i) => i.draftLanguages.contains(lang));
     final note = t.bodySmall?.copyWith(color: c.textSecondary);
+    // Pro: 1 fandan ortig‘i kartochka va imtihon rejimi qulfli (ko‘rinadi).
+    final cardsLocked =
+        deck.id != ref.watch(studyFreeDeckIdProvider) &&
+        !proGate(ref, ProFeature.allFlashcards);
+    final examLocked = !proGate(ref, ProFeature.examMode);
     return FeCard(
       key: Key('study.deck.${deck.id}'),
       child: Column(
@@ -260,9 +341,13 @@ class _DeckCard extends ConsumerWidget {
             children: [
               FilledButton.tonalIcon(
                 key: Key('study.cards.${deck.id}'),
-                icon: const Icon(Icons.style_outlined),
+                icon: Icon(
+                  cardsLocked ? Icons.lock_outline : Icons.style_outlined,
+                ),
                 label: Text(l.learnFlashcards),
-                onPressed: () => context.push(Routes.studyCards(deck.id)),
+                onPressed: () => cardsLocked
+                    ? openPro(context, Plan.student)
+                    : context.push(Routes.studyCards(deck.id)),
               ),
               OutlinedButton.icon(
                 key: Key('study.quiz.${deck.id}'),
@@ -277,10 +362,13 @@ class _DeckCard extends ConsumerWidget {
               if (canExam)
                 OutlinedButton.icon(
                   key: Key('study.exam.${deck.id}'),
-                  icon: const Icon(Icons.fact_check_outlined),
+                  icon: Icon(
+                    examLocked ? Icons.lock_outline : Icons.fact_check_outlined,
+                  ),
                   label: Text(l.studyModeExam),
-                  onPressed: () =>
-                      context.push(Routes.studyQuiz(deck.id, exam: true)),
+                  onPressed: () => examLocked
+                      ? openPro(context, Plan.student)
+                      : context.push(Routes.studyQuiz(deck.id, exam: true)),
                 ),
             ],
           ),
@@ -352,6 +440,16 @@ class _StudyFlashcardsScreenState extends ConsumerState<StudyFlashcardsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return ProGated(
+      feature: ProFeature.allFlashcards,
+      title: l.learnFlashcards,
+      freeIf: widget.deckId == ref.watch(studyFreeDeckIdProvider),
+      child: _content(context),
+    );
+  }
+
+  Widget _content(BuildContext context) {
     final l = AppLocalizations.of(context);
     final deck = ref.watch(studyCatalogProvider).deck(widget.deckId);
     final progress = ref.watch(studyProgressProvider);
@@ -1166,8 +1264,21 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
+    final quiz = _quiz(context);
+    if (!_exam) return quiz;
+    // Imtihon rejimi — Talaba Pro.
+    return ProGated(
+      feature: ProFeature.examMode,
+      title: l.studyModeExam,
+      child: quiz,
+    );
+  }
+
+  Widget _quiz(BuildContext context) {
+    final l = AppLocalizations.of(context);
     final lang = Localizations.localeOf(context).languageCode;
     final deck = ref.watch(studyCatalogProvider).deck(widget.deckId);
+    final fullBank = proGate(ref, ProFeature.fullQuizBank);
     final Widget body;
     if (deck == null) {
       body = FeEmptyState(
@@ -1184,7 +1295,10 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
         _selected = null;
         _checked = false;
       }
-      final questions = _questions!;
+      // Bepul: har mavzudan 5 ta mashq savoli, keyin qulf (Talaba Pro).
+      final all = _questions!;
+      final capped = !_exam && !fullBank && all.length > freePracticeQuestions;
+      final questions = capped ? all.take(freePracticeQuestions).toList() : all;
       if (questions.isEmpty) {
         body = FeEmptyState(
           key: const Key('study.quiz.unavailable'),
@@ -1201,7 +1315,7 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
               : l.studyExamUnavailable,
         );
       } else if (_answers.length >= questions.length) {
-        body = _results(context, l, deck, questions, lang);
+        body = _results(context, l, deck, questions, lang, capped: capped);
       } else {
         body = _question(context, l, questions, lang);
       }
@@ -1424,8 +1538,9 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
     AppLocalizations l,
     StudyDeck deck,
     List<StudyQuestion> questions,
-    String lang,
-  ) {
+    String lang, {
+    required bool capped,
+  }) {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final mistakes = [
@@ -1536,6 +1651,11 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
                 ),
               ),
             ),
+        // Natija nuqtasi: bitta kontekstli taklif (popup emas).
+        if (capped)
+          const ProContextOffer(feature: ProFeature.fullQuizBank)
+        else if (!_exam)
+          const ProContextOffer(feature: ProFeature.errorAnalytics),
         const SizedBox(height: FeSpace.md),
         FilledButton(
           key: const Key('study.quiz.retry'),

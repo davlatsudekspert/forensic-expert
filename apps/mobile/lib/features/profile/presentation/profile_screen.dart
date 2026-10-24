@@ -7,6 +7,7 @@ import '../../../app/account.dart';
 import '../../../app/app_info.dart';
 import '../../../app/avatar.dart';
 import '../../../app/moderation.dart';
+import '../../../app/plan.dart';
 import '../../../app/professional.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -20,14 +21,25 @@ import '../../../core/perf/startup_metrics.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../../domain/ports/professional_ports.dart';
 import '../../../domain/professional/professional_models.dart';
+import '../../pro/presentation/pro_gate.dart' show proPlanName;
 import '../../professional/presentation/professional_widgets.dart';
 import '../../professional/presentation/verification_screens.dart';
 import '../../professional/professional_strings.dart';
 import '../../referral/presentation/invite_card.dart';
 import '../../support/presentation/support_widgets.dart';
 import 'avatar_widgets.dart';
+
+/// «Reja» qatori qiymati: Bepul / Talaba Pro (sinov) …
+String _planValue(AppLocalizations l, AsyncValue<Entitlements> e) {
+  final v = e.value;
+  final plan = v?.plan;
+  if (v == null || plan == null || !v.isActive) return l.proStateFree;
+  final name = proPlanName(l, plan);
+  return v.isTrial ? '$name · ${l.proSourceTrial}' : name;
+}
 
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
@@ -240,6 +252,13 @@ class ProfileScreen extends ConsumerWidget {
                         title: l.settingsMode,
                         value: modeLabel(settings.userMode),
                         onTap: () => context.push(Routes.profileMode),
+                      ),
+                      _Row(
+                        key: const Key('profile.plan'),
+                        icon: Icons.workspace_premium_outlined,
+                        title: l.proProfileRow,
+                        value: _planValue(l, ref.watch(entitlementsProvider)),
+                        onTap: () => context.push(Routes.pro),
                       ),
                       _Row(
                         key: const Key('profile.jurisdiction'),

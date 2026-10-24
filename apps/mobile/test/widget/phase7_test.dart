@@ -8,6 +8,7 @@ import 'package:forensic_expert/app/search_service.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
 import 'package:forensic_expert/domain/admin/admin_models.dart';
 import 'package:forensic_expert/domain/evidence/evidence_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pilot_content.dart';
 import '../helpers/pump_app.dart';
@@ -15,6 +16,8 @@ import '../helpers/pump_app.dart';
 /// PHASE 7: tasdiqlanadigan kontent pipeline’i — provenance, hayot sikli,
 /// ziddiyatlar, namunalar, standartlar, bilim zanjiri, review holati.
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.expert);
+  tearDownAll(() => testDefaultPlan = null);
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 

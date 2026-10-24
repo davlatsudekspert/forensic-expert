@@ -18734,6 +18734,708 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Show {count} more lessons'**
   String disciplineLessonsMore(int count);
+
+  /// Button on a Pro lock card: opens the Pro page.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock with Pro'**
+  String get proUnlock;
+
+  /// Pro page title.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro plan'**
+  String get proTitle;
+
+  /// Plan name: student.
+  ///
+  /// In en, this message translates to:
+  /// **'Student Pro'**
+  String get proPlanStudent;
+
+  /// Plan name: teacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher Pro'**
+  String get proPlanTeacher;
+
+  /// Plan name: expert (professional mode).
+  ///
+  /// In en, this message translates to:
+  /// **'Expert Pro'**
+  String get proPlanExpert;
+
+  /// Profile row title: current plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan'**
+  String get proProfileRow;
+
+  /// Pro page and lock pages: safety/sources are always free.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety information, sources and provenance are always free.'**
+  String get proFreeAlways;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Full question bank: 4,370 questions in 211 topics'**
+  String get proBenefitFullQuizBank;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam mode with a review of every answer'**
+  String get proBenefitExamMode;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Flashcards for all subjects'**
+  String get proBenefitAllFlashcards;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Error analysis and statistics'**
+  String get proBenefitErrorAnalytics;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Download materials for offline study'**
+  String get proBenefitOfflineDownload;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'All 211 lecture presentations'**
+  String get proBenefitAllLessons;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited groups and group tests of more than 10 questions'**
+  String get proBenefitUnlimitedGroupTests;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Export results to CSV'**
+  String get proBenefitResultsCsv;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Discussion of the hardest questions'**
+  String get proBenefitHardestDiscussion;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Live tests for large audiences'**
+  String get proBenefitLiveTestLarge;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'The full «Working with instruments» course'**
+  String get proBenefitInstrumentsCourseFull;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional calculators: PMI, concentration, LOD/LOQ and more'**
+  String get proBenefitProCalculators;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert casebook with sourced blocks for your conclusions'**
+  String get proBenefitCaseNotebook;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Court testimony preparation: simulator, drills and statistics'**
+  String get proBenefitCourtPrep;
+
+  /// Lock card benefit.
+  ///
+  /// In en, this message translates to:
+  /// **'A higher daily AI limit'**
+  String get proBenefitAiExtended;
+
+  /// Offer at the end of a free lecture lesson.
+  ///
+  /// In en, this message translates to:
+  /// **'You have seen a free lesson. All 211 presentations open with Teacher Pro.'**
+  String get proCtxAllLessons;
+
+  /// Offer at the end of the free instruments lesson.
+  ///
+  /// In en, this message translates to:
+  /// **'That was the free sample lesson. The other lessons of the course open with Expert Pro.'**
+  String get proCtxInstrumentsRest;
+
+  /// Shown when a free teacher tries to create a second group.
+  ///
+  /// In en, this message translates to:
+  /// **'The free plan includes one group. Create more groups with Teacher Pro.'**
+  String get proCtxGroupLimit;
+
+  /// Pro page status: free plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Free plan'**
+  String get proStateFree;
+
+  /// Pro page status body for the free plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference, sources and safety information are always free. Pro adds extra tools for your mode.'**
+  String get proStateFreeBody;
+
+  /// Pro page status: trial active. {plan} is the plan name.
+  ///
+  /// In en, this message translates to:
+  /// **'{plan}: free trial'**
+  String proStateTrial(String plan);
+
+  /// Pro page status: plan active. {plan} is the plan name.
+  ///
+  /// In en, this message translates to:
+  /// **'{plan} is active'**
+  String proStateActive(String plan);
+
+  /// Pro page: end date. {date} is a formatted date.
+  ///
+  /// In en, this message translates to:
+  /// **'Until {date}'**
+  String proStateUntil(String date);
+
+  /// Pro page: plan without an end date.
+  ///
+  /// In en, this message translates to:
+  /// **'No end date'**
+  String get proStateNoEnd;
+
+  /// Pro page: subscription renews automatically.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-renews'**
+  String get proAutoRenewOn;
+
+  /// Pro page: subscription does not renew.
+  ///
+  /// In en, this message translates to:
+  /// **'Does not renew'**
+  String get proAutoRenewOff;
+
+  /// Plan source: store subscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Store subscription'**
+  String get proSourceStore;
+
+  /// Plan source: granted by an administrator.
+  ///
+  /// In en, this message translates to:
+  /// **'Granted by administrator'**
+  String get proSourceAdmin;
+
+  /// Plan source: free trial.
+  ///
+  /// In en, this message translates to:
+  /// **'Free trial'**
+  String get proSourceTrial;
+
+  /// Pro page: a plan unlocks only its own mode.
+  ///
+  /// In en, this message translates to:
+  /// **'A plan unlocks features of its own mode only. Switching the mode does not unlock another plan’s features.'**
+  String get proOwnModeNote;
+
+  /// Pro page (teacher plan): server role is still required.
+  ///
+  /// In en, this message translates to:
+  /// **'The Teacher panel still requires the teacher role on the server; Pro does not grant the role.'**
+  String get proTeacherRoleNote;
+
+  /// Pro page: what the student plan includes, item 1.
+  ///
+  /// In en, this message translates to:
+  /// **'Full question bank: 4,370 questions in 211 topics'**
+  String get proIncludesStudent1;
+
+  /// Pro page: what the student plan includes, item 2.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam mode with a review of every answer'**
+  String get proIncludesStudent2;
+
+  /// Pro page: what the student plan includes, item 3.
+  ///
+  /// In en, this message translates to:
+  /// **'Flashcards for all subjects'**
+  String get proIncludesStudent3;
+
+  /// Pro page: what the student plan includes, item 4.
+  ///
+  /// In en, this message translates to:
+  /// **'Error analysis and statistics'**
+  String get proIncludesStudent4;
+
+  /// Pro page: what the teacher plan includes, item 1.
+  ///
+  /// In en, this message translates to:
+  /// **'All 211 lecture presentations (projector mode)'**
+  String get proIncludesTeacher1;
+
+  /// Pro page: what the teacher plan includes, item 2.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited groups and tests of more than 10 questions'**
+  String get proIncludesTeacher2;
+
+  /// Pro page: what the teacher plan includes, item 3.
+  ///
+  /// In en, this message translates to:
+  /// **'Results export to CSV'**
+  String get proIncludesTeacher3;
+
+  /// Pro page: what the teacher plan includes, item 4.
+  ///
+  /// In en, this message translates to:
+  /// **'Discussion of the hardest questions'**
+  String get proIncludesTeacher4;
+
+  /// Pro page: what the expert plan includes, item 1.
+  ///
+  /// In en, this message translates to:
+  /// **'The full «Working with instruments» course: Kristallyuks/ethanol, UV-1900/COHb, GC-MS'**
+  String get proIncludesExpert1;
+
+  /// Pro page: what the expert plan includes, item 2.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional calculators: PMI, concentration, LOD/LOQ and more'**
+  String get proIncludesExpert2;
+
+  /// Pro page: what the expert plan includes, item 3.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert casebook and court testimony preparation'**
+  String get proIncludesExpert3;
+
+  /// Pro page: what the expert plan includes, item 4.
+  ///
+  /// In en, this message translates to:
+  /// **'A higher daily AI limit'**
+  String get proIncludesExpert4;
+
+  /// Pro page for a signed-out user.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to use Pro'**
+  String get proGuestTitle;
+
+  /// Pro page for a signed-out user.
+  ///
+  /// In en, this message translates to:
+  /// **'A plan is tied to your account and works on all your devices. The reference and safety information stay free without an account.'**
+  String get proGuestBody;
+
+  /// Button: sign in with an email code.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with an email code'**
+  String get proGuestSignIn;
+
+  /// Pro page section: choose a subscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a subscription'**
+  String get proChoose;
+
+  /// Pro page: this plan is already active.
+  ///
+  /// In en, this message translates to:
+  /// **'This plan is already active on your account.'**
+  String get proAlreadyActive;
+
+  /// Pro page: store not available; price is shown in the store.
+  ///
+  /// In en, this message translates to:
+  /// **'The store is not available right now (for example on an emulator or without a store account). The price is shown in the store when you subscribe.'**
+  String get proStoreUnavailable;
+
+  /// Pro page: the store returned no products.
+  ///
+  /// In en, this message translates to:
+  /// **'The store did not return this plan’s subscriptions yet. Try again later; the price is shown in the store.'**
+  String get proStoreNoProducts;
+
+  /// Subscription period.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly'**
+  String get proMonthly;
+
+  /// Subscription period.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly'**
+  String get proYearly;
+
+  /// Button: buy the subscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy'**
+  String get proBuy;
+
+  /// Button: start the free trial.
+  ///
+  /// In en, this message translates to:
+  /// **'Try free for 30 days'**
+  String get proTrialButton;
+
+  /// Pro page: trial rules.
+  ///
+  /// In en, this message translates to:
+  /// **'The free trial is available once per device and once per account. It ends on its own and nothing is charged.'**
+  String get proTrialNote;
+
+  /// Button: restore purchases.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore purchases'**
+  String get proRestore;
+
+  /// Pro page: working.
+  ///
+  /// In en, this message translates to:
+  /// **'Please wait…'**
+  String get proFlowWorking;
+
+  /// Pro page: success.
+  ///
+  /// In en, this message translates to:
+  /// **'Done. Your plan is active.'**
+  String get proFlowSuccess;
+
+  /// Pro page: purchase pending approval.
+  ///
+  /// In en, this message translates to:
+  /// **'The purchase is waiting for approval. The plan turns on after it is confirmed.'**
+  String get proFlowPending;
+
+  /// Pro page: purchase cancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'The purchase was cancelled. Nothing was charged.'**
+  String get proFlowCanceled;
+
+  /// Pro page: server-side store verification is not connected.
+  ///
+  /// In en, this message translates to:
+  /// **'Store purchase verification is not connected on the server yet. Your purchase is kept and will be checked once it is connected.'**
+  String get proFlowStoreNotConfigured;
+
+  /// Pro page: purchase could not be verified.
+  ///
+  /// In en, this message translates to:
+  /// **'The purchase could not be verified. If you were charged, contact support.'**
+  String get proFlowInvalid;
+
+  /// Pro page: no connection.
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. The purchase will be checked when the internet is back.'**
+  String get proFlowOffline;
+
+  /// Pro page: generic error.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong. Please try again.'**
+  String get proFlowError;
+
+  /// Pro page: nothing to restore.
+  ///
+  /// In en, this message translates to:
+  /// **'No purchases to restore were found for this store account.'**
+  String get proFlowRestoreNothing;
+
+  /// Pro page: trial already used on this device.
+  ///
+  /// In en, this message translates to:
+  /// **'The free trial has already been used on this device.'**
+  String get proTrialUsedDevice;
+
+  /// Pro page: trial already used on this account.
+  ///
+  /// In en, this message translates to:
+  /// **'The free trial has already been used on this account.'**
+  String get proTrialUsedAccount;
+
+  /// Pro page: user already has a plan.
+  ///
+  /// In en, this message translates to:
+  /// **'You already have an active plan, so the trial is not needed.'**
+  String get proTrialHasPlan;
+
+  /// Pro page: trial cannot be offered on this device.
+  ///
+  /// In en, this message translates to:
+  /// **'The trial cannot be offered on this device.'**
+  String get proTrialUnavailable;
+
+  /// Pro page section: subscription terms.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription terms'**
+  String get proTermsTitle;
+
+  /// Pro page: Apple 3.1.2 subscription disclosure (period, price in store, auto-renewal, cancellation).
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions are monthly or yearly and renew automatically. The price and billing period are shown in the store before you confirm. Payment is charged to your Apple ID or Google Play account at confirmation. The subscription renews unless it is cancelled at least 24 hours before the end of the current period, and your account is charged for the next period within 24 hours before the end. You can manage or cancel it at any time in your store account settings; cancelling takes effect at the end of the paid period. A free trial or introductory offer shown by the store ends automatically.'**
+  String get proTermsBody;
+
+  /// Pro page: how to cancel on iPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'To cancel on iPhone: Settings → your name → Subscriptions → FORENSIC EXPERT → Cancel Subscription.'**
+  String get proCancelHowIos;
+
+  /// Pro page: how to cancel on Android.
+  ///
+  /// In en, this message translates to:
+  /// **'To cancel on Android: Google Play → profile icon → Payments & subscriptions → Subscriptions → FORENSIC EXPERT → Cancel subscription.'**
+  String get proCancelHowAndroid;
+
+  /// Button: open the store subscription settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage or cancel subscription'**
+  String get proManage;
+
+  /// Snackbar: the store page could not be opened.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the store page. Open your store account settings manually.'**
+  String get proManageFailed;
+
+  /// Link: Terms of Use.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Use'**
+  String get proTermsLink;
+
+  /// Link: Privacy Policy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get proPrivacyLink;
+
+  /// Home: one-time soft offer for student mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Study without limits'**
+  String get proOfferStudentTitle;
+
+  /// Home: one-time soft offer for student mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Student Pro opens the full question bank, exam mode, all flashcards and error analysis. A free trial, if available, is shown on the Pro page.'**
+  String get proOfferStudentBody;
+
+  /// Home: one-time soft offer for teacher mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Teach with more tools'**
+  String get proOfferTeacherTitle;
+
+  /// Home: one-time soft offer for teacher mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher Pro opens all 211 presentations, unlimited groups, longer tests, CSV export and discussion of the hardest questions. A free trial, if available, is shown on the Pro page.'**
+  String get proOfferTeacherBody;
+
+  /// Home: one-time soft offer for professional mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools for your casework'**
+  String get proOfferExpertTitle;
+
+  /// Home: one-time soft offer for professional mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert Pro opens the full instruments course, professional calculators, the casebook, court testimony preparation and a higher AI limit. A free trial, if available, is shown on the Pro page.'**
+  String get proOfferExpertBody;
+
+  /// Button on the soft offer.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn more'**
+  String get proOfferOpen;
+
+  /// Tooltip: close the soft offer.
+  ///
+  /// In en, this message translates to:
+  /// **'Dismiss'**
+  String get proOfferDismiss;
+
+  /// Study hub: error statistics card (Student Pro).
+  ///
+  /// In en, this message translates to:
+  /// **'Error statistics'**
+  String get studyStatsTitle;
+
+  /// Study hub: no reviewed cards yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Review some cards first — statistics will appear here.'**
+  String get studyStatsEmpty;
+
+  /// Study hub: summary counts.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed: {reviewed} · difficult: {weak} · mastered: {learned}'**
+  String studyStatsSummary(int reviewed, int weak, int learned);
+
+  /// Study hub: a deck with difficult cards. {deck} deck name, {count} number.
+  ///
+  /// In en, this message translates to:
+  /// **'{deck}: {count} difficult'**
+  String studyStatsWeakDeck(String deck, int count);
+
+  /// Admin: grant Pro screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Grant Pro'**
+  String get admProTitle;
+
+  /// Admin: grant Pro tile hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan for an email, duration, list, revoke'**
+  String get admProHint;
+
+  /// Admin: grant Pro note.
+  ///
+  /// In en, this message translates to:
+  /// **'A plan granted here is recorded in the audit log with the source “administrator”. A store subscription takes precedence.'**
+  String get admProNote;
+
+  /// Admin: section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Grant a plan'**
+  String get admProGrantTitle;
+
+  /// Admin: email field.
+  ///
+  /// In en, this message translates to:
+  /// **'User email'**
+  String get admProEmail;
+
+  /// Admin: plan choice label.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan'**
+  String get admProPlan;
+
+  /// Admin: duration choice label.
+  ///
+  /// In en, this message translates to:
+  /// **'Duration'**
+  String get admProUntil;
+
+  /// Admin: duration.
+  ///
+  /// In en, this message translates to:
+  /// **'30 days'**
+  String get admProDays30;
+
+  /// Admin: duration.
+  ///
+  /// In en, this message translates to:
+  /// **'90 days'**
+  String get admProDays90;
+
+  /// Admin: duration.
+  ///
+  /// In en, this message translates to:
+  /// **'1 year'**
+  String get admProYear;
+
+  /// Admin: no end date.
+  ///
+  /// In en, this message translates to:
+  /// **'No limit'**
+  String get admProNoLimit;
+
+  /// Admin: grant button.
+  ///
+  /// In en, this message translates to:
+  /// **'Grant'**
+  String get admProGrant;
+
+  /// Admin: revoke button/tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Revoke'**
+  String get admProRevoke;
+
+  /// Admin: result.
+  ///
+  /// In en, this message translates to:
+  /// **'The plan has been granted.'**
+  String get admProGranted;
+
+  /// Admin: result.
+  ///
+  /// In en, this message translates to:
+  /// **'The plan has been revoked.'**
+  String get admProRevoked;
+
+  /// Admin: result.
+  ///
+  /// In en, this message translates to:
+  /// **'No user with this email.'**
+  String get admProNotFound;
+
+  /// Admin: result.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid email address.'**
+  String get admProInvalid;
+
+  /// Admin: error.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not complete the request. Try again.'**
+  String get admProError;
+
+  /// Admin: list title.
+  ///
+  /// In en, this message translates to:
+  /// **'Granted plans'**
+  String get admProListTitle;
+
+  /// Admin: search hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by email'**
+  String get admProSearch;
+
+  /// Admin: empty list.
+  ///
+  /// In en, this message translates to:
+  /// **'No plans yet.'**
+  String get admProEmpty;
 }
 
 class _AppLocalizationsDelegate

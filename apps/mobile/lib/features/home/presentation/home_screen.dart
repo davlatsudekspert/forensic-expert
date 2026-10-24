@@ -22,6 +22,7 @@ import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../class_quiz/presentation/teacher_panel_screen.dart'
     show watchIsTeacher;
+import '../../pro/presentation/pro_first_offer.dart';
 import '../../referral/presentation/invite_card.dart';
 import '../../tools/tool_strings.dart';
 import 'first_steps_card.dart';
@@ -277,6 +278,7 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ],
                   const FirstStepsCard(),
+                  const ProFirstOfferCard(),
                   FeSectionHeader(l.homeAreasTitle),
                   _ModuleGrid(modules: modules),
                   if (!teacherTop) ...[

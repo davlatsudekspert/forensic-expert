@@ -13,6 +13,7 @@ import 'package:forensic_expert/data/offline/offline_ai.dart';
 import 'package:forensic_expert/domain/ai/ai_architecture.dart';
 import 'package:forensic_expert/domain/jurisdiction/country_directory.dart';
 import 'package:forensic_expert/domain/jurisdiction/jurisdiction_catalog.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/privacy/telemetry_policy.dart';
 
 import '../helpers/pilot_content.dart';
@@ -21,6 +22,8 @@ import '../helpers/pump_app.dart';
 /// PHASE 6: global multidisiplinar platforma — fanlar, yurisdiksiya qatlami,
 /// Library hub, kalkulyatorlar, qidiruv, AI xavfsizligi, maxfiylik.
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.expert);
+  tearDownAll(() => testDefaultPlan = null);
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 

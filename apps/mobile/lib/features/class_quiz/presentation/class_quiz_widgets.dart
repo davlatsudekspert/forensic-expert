@@ -7,12 +7,15 @@ import 'package:go_router/go_router.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 import '../../../app/class_quiz.dart';
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
+import '../../../domain/plan/plan_models.dart';
+import '../../pro/presentation/pro_gate.dart';
 
 /// Xato kodini foydalanuvchiga tushunarli o‘zbekcha (yoki tanlangan til)
 /// matniga aylantiradi. Texnik kod ko‘rsatilmaydi.
@@ -53,6 +56,11 @@ Future<void> exportClassResultsCsv(
   WidgetRef ref,
   ClassSessionInfo s,
 ) async {
+  // Natijalar CSV — Ustoz Pro (tugma ko‘rinadi, qulfli).
+  if (!ref.read(proAllowedProvider(ProFeature.resultsCsv))) {
+    openPro(context, Plan.teacher);
+    return;
+  }
   final l = AppLocalizations.of(context);
   final messenger = ScaffoldMessenger.of(context);
   final share = ref.read(classFileShareProvider);

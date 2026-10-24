@@ -9,7 +9,9 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../common/favorite_button.dart';
+import '../../pro/presentation/pro_gate.dart';
 import '../tool_strings.dart';
 import 'calculator_status.dart';
 import 'lab_calculators.dart';
@@ -46,6 +48,17 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
     if (tool == null) {
       return Scaffold(appBar: AppBar(), body: const SizedBox.shrink());
     }
+    final page = _page(context, l, tool);
+    // Professional kalkulyator: Mutaxassis Pro (oddiy hisoblar bepul).
+    if (!ProCalculators.isPro(tool.id)) return page;
+    return ProGated(
+      feature: ProFeature.proCalculators,
+      title: l.toolName(tool),
+      child: page,
+    );
+  }
+
+  Widget _page(BuildContext context, AppLocalizations l, ToolEntry tool) {
     return Scaffold(
       appBar: AppBar(
         title: FeAppBarTitle(l.toolName(tool)),

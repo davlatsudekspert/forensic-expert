@@ -5,6 +5,7 @@ import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/domain/ai/rag_pipeline.dart';
 import 'package:forensic_expert/domain/casebook/casebook_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/ports/ai_entitlement.dart';
 import 'package:forensic_expert/domain/ports/ai_ports.dart';
 
@@ -35,6 +36,8 @@ class _Entitled implements AiEntitlementService {
 /// AI javobi daftarga faqat foydalanuvchi o‘zi qo‘shsa kiradi va doim
 /// «tekshirilmagan» deb belgilanadi.
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.expert);
+  tearDownAll(() => testDefaultPlan = null);
   late PilotContent pilot;
   setUpAll(() async => pilot = await loadPilotContent());
 

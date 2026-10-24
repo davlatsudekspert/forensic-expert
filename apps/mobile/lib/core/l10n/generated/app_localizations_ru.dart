@@ -10888,4 +10888,407 @@ class AppLocalizationsRu extends AppLocalizations {
   String disciplineLessonsMore(int count) {
     return 'Показать ещё $count';
   }
+
+  @override
+  String get proUnlock => 'Открыть с Pro';
+
+  @override
+  String get proTitle => 'Тариф Pro';
+
+  @override
+  String get proPlanStudent => 'Pro для студента';
+
+  @override
+  String get proPlanTeacher => 'Pro для преподавателя';
+
+  @override
+  String get proPlanExpert => 'Pro для специалиста';
+
+  @override
+  String get proProfileRow => 'Тариф';
+
+  @override
+  String get proFreeAlways =>
+      'Сведения о безопасности, источники и происхождение данных всегда бесплатны.';
+
+  @override
+  String get proBenefitFullQuizBank =>
+      'Полный банк вопросов: 4370 вопросов по 211 темам';
+
+  @override
+  String get proBenefitExamMode => 'Режим экзамена с разбором каждого ответа';
+
+  @override
+  String get proBenefitAllFlashcards => 'Карточки по всем дисциплинам';
+
+  @override
+  String get proBenefitErrorAnalytics => 'Разбор ошибок и статистика';
+
+  @override
+  String get proBenefitOfflineDownload =>
+      'Загрузка материалов для офлайн-учёбы';
+
+  @override
+  String get proBenefitAllLessons => 'Все 211 лекционных презентаций';
+
+  @override
+  String get proBenefitUnlimitedGroupTests =>
+      'Неограниченное число групп и тесты длиннее 10 вопросов';
+
+  @override
+  String get proBenefitResultsCsv => 'Экспорт результатов в CSV';
+
+  @override
+  String get proBenefitHardestDiscussion => 'Разбор самых трудных вопросов';
+
+  @override
+  String get proBenefitLiveTestLarge => 'Живые тесты для больших аудиторий';
+
+  @override
+  String get proBenefitInstrumentsCourseFull =>
+      'Полный курс «Работа на приборах»';
+
+  @override
+  String get proBenefitProCalculators =>
+      'Профессиональные калькуляторы: PMI, концентрация, LOD/LOQ и другие';
+
+  @override
+  String get proBenefitCaseNotebook =>
+      'Рабочая тетрадь эксперта с блоками с источниками для заключений';
+
+  @override
+  String get proBenefitCourtPrep =>
+      'Подготовка к допросу в суде: симулятор, тренировка и статистика';
+
+  @override
+  String get proBenefitAiExtended => 'Расширенный суточный лимит ИИ';
+
+  @override
+  String get proCtxAllLessons =>
+      'Вы посмотрели бесплатный урок. Все 211 презентаций открываются с Pro для преподавателя.';
+
+  @override
+  String get proCtxInstrumentsRest =>
+      'Это был бесплатный пробный урок. Остальные уроки курса открываются с Pro для специалиста.';
+
+  @override
+  String get proCtxGroupLimit =>
+      'В бесплатном тарифе одна группа. Больше групп — с Pro для преподавателя.';
+
+  @override
+  String get proStateFree => 'Бесплатный тариф';
+
+  @override
+  String get proStateFreeBody =>
+      'Справочник, источники и сведения о безопасности всегда бесплатны. Pro добавляет инструменты вашего режима.';
+
+  @override
+  String proStateTrial(String plan) {
+    return '$plan: бесплатный пробный период';
+  }
+
+  @override
+  String proStateActive(String plan) {
+    return '$plan активен';
+  }
+
+  @override
+  String proStateUntil(String date) {
+    return 'До $date';
+  }
+
+  @override
+  String get proStateNoEnd => 'Без срока окончания';
+
+  @override
+  String get proAutoRenewOn => 'Продлевается автоматически';
+
+  @override
+  String get proAutoRenewOff => 'Не продлевается';
+
+  @override
+  String get proSourceStore => 'Подписка в магазине';
+
+  @override
+  String get proSourceAdmin => 'Выдано администратором';
+
+  @override
+  String get proSourceTrial => 'Бесплатный пробный период';
+
+  @override
+  String get proOwnModeNote =>
+      'Тариф открывает функции только своего режима. Смена режима не открывает функции другого тарифа.';
+
+  @override
+  String get proTeacherRoleNote =>
+      'Панель преподавателя по-прежнему требует роль преподавателя на сервере; Pro роль не выдаёт.';
+
+  @override
+  String get proIncludesStudent1 =>
+      'Полный банк вопросов: 4370 вопросов по 211 темам';
+
+  @override
+  String get proIncludesStudent2 => 'Режим экзамена с разбором каждого ответа';
+
+  @override
+  String get proIncludesStudent3 => 'Карточки по всем дисциплинам';
+
+  @override
+  String get proIncludesStudent4 => 'Разбор ошибок и статистика';
+
+  @override
+  String get proIncludesTeacher1 =>
+      'Все 211 лекционных презентаций (режим проектора)';
+
+  @override
+  String get proIncludesTeacher2 =>
+      'Неограниченное число групп и тесты длиннее 10 вопросов';
+
+  @override
+  String get proIncludesTeacher3 => 'Экспорт результатов в CSV';
+
+  @override
+  String get proIncludesTeacher4 => 'Разбор самых трудных вопросов';
+
+  @override
+  String get proIncludesExpert1 =>
+      'Полный курс «Работа на приборах»: Кристаллюкс/этанол, UV-1900/COHb, GC-MS';
+
+  @override
+  String get proIncludesExpert2 =>
+      'Профессиональные калькуляторы: PMI, концентрация, LOD/LOQ и другие';
+
+  @override
+  String get proIncludesExpert3 =>
+      'Рабочая тетрадь эксперта и подготовка к допросу в суде';
+
+  @override
+  String get proIncludesExpert4 => 'Расширенный суточный лимит ИИ';
+
+  @override
+  String get proGuestTitle => 'Войдите, чтобы пользоваться Pro';
+
+  @override
+  String get proGuestBody =>
+      'Тариф привязан к аккаунту и работает на всех ваших устройствах. Справочник и сведения о безопасности остаются бесплатными без аккаунта.';
+
+  @override
+  String get proGuestSignIn => 'Войти по коду из письма';
+
+  @override
+  String get proChoose => 'Выберите подписку';
+
+  @override
+  String get proAlreadyActive => 'Этот тариф уже активен в вашем аккаунте.';
+
+  @override
+  String get proStoreUnavailable =>
+      'Магазин сейчас недоступен (например, на эмуляторе или без аккаунта магазина). Цена показывается в магазине при оформлении подписки.';
+
+  @override
+  String get proStoreNoProducts =>
+      'Магазин пока не вернул подписки этого тарифа. Повторите позже; цена показывается в магазине.';
+
+  @override
+  String get proMonthly => 'На месяц';
+
+  @override
+  String get proYearly => 'На год';
+
+  @override
+  String get proBuy => 'Купить';
+
+  @override
+  String get proTrialButton => 'Попробовать бесплатно 30 дней';
+
+  @override
+  String get proTrialNote =>
+      'Пробный период доступен один раз на устройство и один раз на аккаунт. Он заканчивается сам, деньги не списываются.';
+
+  @override
+  String get proRestore => 'Восстановить покупки';
+
+  @override
+  String get proFlowWorking => 'Подождите…';
+
+  @override
+  String get proFlowSuccess => 'Готово. Ваш тариф активен.';
+
+  @override
+  String get proFlowPending =>
+      'Покупка ожидает подтверждения. Тариф включится после подтверждения.';
+
+  @override
+  String get proFlowCanceled => 'Покупка отменена. Ничего не списано.';
+
+  @override
+  String get proFlowStoreNotConfigured =>
+      'Проверка покупок магазина на сервере ещё не подключена. Покупка сохранена и будет проверена после подключения.';
+
+  @override
+  String get proFlowInvalid =>
+      'Покупку не удалось проверить. Если деньги списаны, напишите в поддержку.';
+
+  @override
+  String get proFlowOffline =>
+      'Нет соединения. Покупка будет проверена, когда появится интернет.';
+
+  @override
+  String get proFlowError => 'Что-то пошло не так. Повторите попытку.';
+
+  @override
+  String get proFlowRestoreNothing =>
+      'Покупок для восстановления в этом аккаунте магазина не найдено.';
+
+  @override
+  String get proTrialUsedDevice =>
+      'Пробный период уже использован на этом устройстве.';
+
+  @override
+  String get proTrialUsedAccount =>
+      'Пробный период уже использован в этом аккаунте.';
+
+  @override
+  String get proTrialHasPlan =>
+      'У вас уже есть активный тариф, пробный период не нужен.';
+
+  @override
+  String get proTrialUnavailable =>
+      'На этом устройстве пробный период недоступен.';
+
+  @override
+  String get proTermsTitle => 'Условия подписки';
+
+  @override
+  String get proTermsBody =>
+      'Подписки оформляются на месяц или на год и продлеваются автоматически. Цена и период оплаты показываются в магазине до подтверждения. Оплата списывается с вашего Apple ID или аккаунта Google Play при подтверждении. Подписка продлевается, если не отменить её минимум за 24 часа до конца текущего периода; плата за следующий период списывается в течение 24 часов до его окончания. Управлять подпиской и отменять её можно в любое время в настройках аккаунта магазина; отмена действует с конца оплаченного периода. Пробный период или вводное предложение, показанные магазином, заканчиваются автоматически.';
+
+  @override
+  String get proCancelHowIos =>
+      'Чтобы отменить на iPhone: Настройки → ваше имя → Подписки → FORENSIC EXPERT → Отменить подписку.';
+
+  @override
+  String get proCancelHowAndroid =>
+      'Чтобы отменить на Android: Google Play → значок профиля → Платежи и подписки → Подписки → FORENSIC EXPERT → Отменить подписку.';
+
+  @override
+  String get proManage => 'Управление подпиской и отмена';
+
+  @override
+  String get proManageFailed =>
+      'Не удалось открыть страницу магазина. Откройте настройки аккаунта магазина вручную.';
+
+  @override
+  String get proTermsLink => 'Условия использования';
+
+  @override
+  String get proPrivacyLink => 'Политика конфиденциальности';
+
+  @override
+  String get proOfferStudentTitle => 'Учитесь без ограничений';
+
+  @override
+  String get proOfferStudentBody =>
+      'Pro для студента открывает полный банк вопросов, режим экзамена, все карточки и разбор ошибок. Пробный период, если он доступен, показан на странице Pro.';
+
+  @override
+  String get proOfferTeacherTitle => 'Больше возможностей для преподавания';
+
+  @override
+  String get proOfferTeacherBody =>
+      'Pro для преподавателя открывает все 211 презентаций, неограниченные группы, более длинные тесты, экспорт в CSV и разбор трудных вопросов. Пробный период, если он доступен, показан на странице Pro.';
+
+  @override
+  String get proOfferExpertTitle => 'Инструменты для вашей работы';
+
+  @override
+  String get proOfferExpertBody =>
+      'Pro для специалиста открывает полный курс по приборам, профессиональные калькуляторы, рабочую тетрадь, подготовку к допросу в суде и расширенный лимит ИИ. Пробный период, если он доступен, показан на странице Pro.';
+
+  @override
+  String get proOfferOpen => 'Подробнее';
+
+  @override
+  String get proOfferDismiss => 'Закрыть';
+
+  @override
+  String get studyStatsTitle => 'Статистика ошибок';
+
+  @override
+  String get studyStatsEmpty =>
+      'Сначала повторите несколько карточек — здесь появится статистика.';
+
+  @override
+  String studyStatsSummary(int reviewed, int weak, int learned) {
+    return 'Повторено: $reviewed · трудные: $weak · усвоено: $learned';
+  }
+
+  @override
+  String studyStatsWeakDeck(String deck, int count) {
+    return '$deck: трудных — $count';
+  }
+
+  @override
+  String get admProTitle => 'Выдача Pro';
+
+  @override
+  String get admProHint => 'Тариф для email, срок, список, отзыв';
+
+  @override
+  String get admProNote =>
+      'Выданный здесь тариф записывается в журнал аудита с источником «администратор». Подписка магазина имеет приоритет.';
+
+  @override
+  String get admProGrantTitle => 'Выдать тариф';
+
+  @override
+  String get admProEmail => 'Email пользователя';
+
+  @override
+  String get admProPlan => 'Тариф';
+
+  @override
+  String get admProUntil => 'Срок';
+
+  @override
+  String get admProDays30 => '30 дней';
+
+  @override
+  String get admProDays90 => '90 дней';
+
+  @override
+  String get admProYear => '1 год';
+
+  @override
+  String get admProNoLimit => 'Без срока';
+
+  @override
+  String get admProGrant => 'Выдать';
+
+  @override
+  String get admProRevoke => 'Отозвать';
+
+  @override
+  String get admProGranted => 'Тариф выдан.';
+
+  @override
+  String get admProRevoked => 'Тариф отозван.';
+
+  @override
+  String get admProNotFound => 'Пользователь с таким email не найден.';
+
+  @override
+  String get admProInvalid => 'Введите корректный email.';
+
+  @override
+  String get admProError => 'Не удалось выполнить запрос. Повторите.';
+
+  @override
+  String get admProListTitle => 'Выданные тарифы';
+
+  @override
+  String get admProSearch => 'Поиск по email';
+
+  @override
+  String get admProEmpty => 'Тарифов пока нет.';
 }

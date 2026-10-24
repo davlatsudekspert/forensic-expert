@@ -1,3 +1,5 @@
+import '../domain/plan/plan_models.dart' show Plan;
+
 /// Marshrut yo‘llari — bitta joyda, string takrorlanmasligi uchun.
 abstract final class Routes {
   static const language = '/onboarding/language';
@@ -141,6 +143,11 @@ abstract final class Routes {
   static const verificationDocuments = '/profile/verification/documents';
   static const reviewDashboard = '/profile/reviews';
 
+  /// Pro (reja) sahifasi: rejimga mos reja yoki aniq [Plan] (`?plan=`).
+  static const pro = '/profile/pro';
+  static String proFor(Plan plan) =>
+      Uri(path: pro, queryParameters: {'plan': plan.wire}).toString();
+
   /// «Hamkasbingizni taklif qiling».
   static const referral = '/profile/invite';
 
@@ -151,6 +158,7 @@ abstract final class Routes {
       '/profile/admin/inbox/${Uri.encodeComponent(id)}';
   static const adminUsers = '/profile/admin/users';
   static const adminAudit = '/profile/admin/audit';
+  static const adminPlans = '/profile/admin/plans';
   static const adminReports = '/profile/admin/reports';
   static const adminVerifications = '/profile/admin/verifications';
   static String adminVerification(String applicantId) =>

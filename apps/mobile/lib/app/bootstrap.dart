@@ -16,6 +16,7 @@ import '../data/auth/secure_session_store.dart';
 import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/group_invite_store.dart';
+import '../data/local/pro_offer_store.dart';
 import '../data/local/profile_store.dart';
 import '../data/local/referral_store.dart';
 import '../data/local/report_device_key.dart';
@@ -30,13 +31,16 @@ import '../data/remote/supabase_class_groups.dart';
 import '../data/remote/supabase_class_quiz.dart';
 import '../data/remote/supabase_lessons.dart';
 import '../data/remote/supabase_moderation.dart';
+import '../data/remote/supabase_plan.dart';
 import '../data/remote/supabase_professional.dart';
 import '../data/remote/supabase_publications.dart';
 import '../data/remote/supabase_qa.dart';
 import '../data/remote/supabase_referral.dart';
 import '../data/remote/supabase_rest.dart';
 import '../data/remote/supabase_support.dart';
+import '../data/store/iap_store_service.dart';
 import '../domain/ports/backend_ports.dart';
+import '../domain/ports/plan_ports.dart';
 import 'account.dart';
 import 'app.dart';
 import 'casebook.dart';
@@ -45,6 +49,7 @@ import 'class_quiz.dart';
 import 'court_prep.dart';
 import 'lessons.dart';
 import 'moderation.dart';
+import 'plan.dart';
 import 'professional.dart';
 import 'providers.dart';
 import 'publications.dart';
@@ -124,6 +129,20 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         casebookStoreProvider.overrideWithValue(
           SharedPrefsCasebookStore(prefs),
         ),
+        // Pro: do‘kon (App Store / Google Play) va «birinchi taklif» belgisi.
+        storeServiceProvider.overrideWith((ref) {
+          final s = IapStoreService();
+          ref.onDispose(s.dispose);
+          return s;
+        }),
+        proOfferStoreProvider.overrideWithValue(
+          SharedPrefsProOfferStore(prefs),
+        ),
+        // Release’da backend bo‘lmasa reja berilmaydi (demo/Fake emas).
+        if (supabase == null && kReleaseMode)
+          planServiceProvider.overrideWithValue(
+            const UnconfiguredPlanService(),
+          ),
         // Server AI (Gemini, kalit faqat Edge Function’da) — faqat yoqilganda.
         if (SupabaseAiProvider.fromEnvironment(auth) case final ai?) ...[
           aiProviderProvider.overrideWithValue(ai),
@@ -162,6 +181,12 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           lessonsServiceProvider.overrideWithValue(
             SupabaseLessonsService(config: supabase, auth: auth),
+          ),
+          planServiceProvider.overrideWithValue(
+            SupabasePlanService(config: supabase, auth: auth),
+          ),
+          adminPlanServiceProvider.overrideWithValue(
+            SupabaseAdminPlanService(config: supabase, auth: auth),
           ),
           qaServiceProvider.overrideWithValue(
             SupabaseQaService(config: supabase, auth: auth),

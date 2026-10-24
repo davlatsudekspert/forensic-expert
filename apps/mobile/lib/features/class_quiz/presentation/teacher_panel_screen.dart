@@ -10,6 +10,8 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
+import '../../../domain/plan/plan_models.dart';
+import '../../pro/presentation/pro_gate.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'class_quiz_widgets.dart';
 
@@ -316,7 +318,10 @@ class TeacherResultsScreen extends ConsumerWidget {
                                   key: Key('teacher.csv.${s.id}'),
                                   onPressed: () =>
                                       exportClassResultsCsv(context, ref, s),
-                                  icon: const Icon(Icons.ios_share, size: 20),
+                                  icon: const ProIcon(
+                                    feature: ProFeature.resultsCsv,
+                                    icon: Icons.ios_share,
+                                  ),
                                   label: Text(l.classExportCsv),
                                 ),
                               ],

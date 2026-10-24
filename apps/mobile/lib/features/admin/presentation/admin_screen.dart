@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/account.dart';
 import '../../../app/moderation.dart';
+import '../../../app/plan.dart';
 import '../../../app/qa.dart';
 import '../../../app/routes.dart';
 import '../../../app/support.dart';
@@ -253,6 +254,14 @@ class _AdminSections extends ConsumerWidget {
           onTap: () => context.push(Routes.adminAudit),
         ),
       ],
+      if (ref.watch(adminPlanServiceProvider).isConfigured)
+        AdminNavTile(
+          key: const Key('admin.nav.plans'),
+          icon: Icons.workspace_premium_outlined,
+          title: l.admProTitle,
+          hint: l.admProHint,
+          onTap: () => context.push(Routes.adminPlans),
+        ),
       if (ref.watch(reportAvailableProvider))
         AdminNavTile(
           key: const Key('admin.nav.reports'),

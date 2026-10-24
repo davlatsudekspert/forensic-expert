@@ -5,6 +5,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../../app/class_groups.dart';
 import '../../../app/class_quiz.dart' show classScannerAvailableProvider;
+import '../../../app/plan.dart';
 import '../../../app/professional.dart' show localProfileProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -14,6 +15,8 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
+import '../../../domain/plan/plan_models.dart';
+import '../../pro/presentation/pro_gate.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'group_widgets.dart';
 
@@ -228,10 +231,23 @@ class GroupsHomeScreen extends ConsumerWidget {
                     else if (data != null) ...[
                       if (data.isTeacher) ...[
                         FeSectionHeader(l.grpTeachingSection),
+                        // Ustoz Pro: bepul — 1 guruh; ko‘proq qulfli (ko‘rinadi).
                         OutlinedButton.icon(
                           key: const Key('grp.createButton'),
-                          onPressed: () => context.push(Routes.groupNew),
-                          icon: const Icon(Icons.add),
+                          onPressed: () =>
+                              data.teaching.length >= freeGroupLimit &&
+                                  !proGate(ref, ProFeature.unlimitedGroupTests)
+                              ? openPro(context, Plan.teacher)
+                              : context.push(Routes.groupNew),
+                          icon: Icon(
+                            data.teaching.length >= freeGroupLimit &&
+                                    !proGate(
+                                      ref,
+                                      ProFeature.unlimitedGroupTests,
+                                    )
+                                ? Icons.lock_outline
+                                : Icons.add,
+                          ),
                           label: Text(l.grpCreateAction),
                         ),
                         const SizedBox(height: FeSpace.sm),
@@ -297,6 +313,10 @@ class _GroupCreateState extends ConsumerState<GroupCreateScreen> {
       setState(() => _error = l.grpErrBadName);
       return;
     }
+    if (_overFreeLimit) {
+      openPro(context, Plan.teacher);
+      return;
+    }
     setState(() {
       _busy = true;
       _error = null;
@@ -317,9 +337,19 @@ class _GroupCreateState extends ConsumerState<GroupCreateScreen> {
     context.go(Routes.group(g.id));
   }
 
+  /// Bepul ustozda allaqachon [freeGroupLimit] guruh bor (Ustoz Pro kerak).
+  bool get _overFreeLimit =>
+      (ref.read(groupListProvider).value?.value?.teaching.length ?? 0) >=
+          freeGroupLimit &&
+      !ref.read(proAllowedProvider(ProFeature.unlimitedGroupTests));
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
+    final over =
+        (ref.watch(groupListProvider).value?.value?.teaching.length ?? 0) >=
+            freeGroupLimit &&
+        !proGate(ref, ProFeature.unlimitedGroupTests);
     return Scaffold(
       appBar: AppBar(title: FeAppBarTitle(l.grpCreateTitle)),
       body: SafeArea(
@@ -328,33 +358,43 @@ class _GroupCreateState extends ConsumerState<GroupCreateScreen> {
           padding: const EdgeInsets.only(top: FeSpace.sm, bottom: FeSpace.xl),
           children: [
             FeContentFrame(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  TextField(
-                    key: const Key('grp.nameField'),
-                    controller: _name,
-                    autofocus: true,
-                    maxLength: GroupRules.nameMax,
-                    textInputAction: TextInputAction.done,
-                    onTapOutside: (_) =>
-                        FocusManager.instance.primaryFocus?.unfocus(),
-                    onSubmitted: (_) => _submit(),
-                    decoration: InputDecoration(
-                      labelText: l.grpNameLabel,
-                      helperText: l.grpNameHelper,
-                      helperMaxLines: 2,
-                      errorText: _error,
+              child: over
+                  ? Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        ProFeatureLock(
+                          feature: ProFeature.unlimitedGroupTests,
+                          benefit: l.proCtxGroupLimit,
+                        ),
+                      ],
+                    )
+                  : Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        TextField(
+                          key: const Key('grp.nameField'),
+                          controller: _name,
+                          autofocus: true,
+                          maxLength: GroupRules.nameMax,
+                          textInputAction: TextInputAction.done,
+                          onTapOutside: (_) =>
+                              FocusManager.instance.primaryFocus?.unfocus(),
+                          onSubmitted: (_) => _submit(),
+                          decoration: InputDecoration(
+                            labelText: l.grpNameLabel,
+                            helperText: l.grpNameHelper,
+                            helperMaxLines: 2,
+                            errorText: _error,
+                          ),
+                        ),
+                        const SizedBox(height: FeSpace.sm),
+                        FilledButton(
+                          key: const Key('grp.createSubmit'),
+                          onPressed: _busy ? null : _submit,
+                          child: Text(l.grpCreateAction),
+                        ),
+                      ],
                     ),
-                  ),
-                  const SizedBox(height: FeSpace.sm),
-                  FilledButton(
-                    key: const Key('grp.createSubmit'),
-                    onPressed: _busy ? null : _submit,
-                    child: Text(l.grpCreateAction),
-                  ),
-                ],
-              ),
             ),
           ],
         ),

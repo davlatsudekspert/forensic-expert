@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pilot_content.dart';
+import '../helpers/plan_fakes.dart';
 import '../helpers/pump_app.dart';
 
 /// PHASE 7 ekranlari — HAQIQIY pilot paket (2026.10.5) bilan.
@@ -281,7 +283,10 @@ void main() {
         initialLocation: c.route,
         pixelRatio: 1.5,
         testFixtures: false,
-        overrides: [...content.overrides],
+        overrides: [
+          ...content.overrides,
+          if (c.route.contains('lod_loq')) ...planOverrides(Plan.expert),
+        ],
       );
       await tester.pump(const Duration(milliseconds: 400));
       await settleImages(tester);

@@ -15,10 +15,12 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/ai/ai_architecture.dart';
 import '../../../domain/ai/rag_pipeline.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../../domain/ports/ai_ports.dart';
 import '../../casebook/presentation/casebook_blocks.dart';
 import '../../evidence/presentation/localized_content.dart';
 import '../../library/presentation/source_detail_screen.dart';
+import '../../pro/presentation/pro_gate.dart';
 import 'rag_sections.dart';
 import 'web_answer_view.dart';
 
@@ -532,11 +534,18 @@ class _AiResultView extends ConsumerWidget {
               ),
             ],
           ),
-          RagOutcome.quotaUnavailable => FeBanner(
-            key: const Key('ai.quota'),
-            icon: Icons.hourglass_empty,
-            tone: FeBannerTone.warning,
-            text: l.aiQuotaUsed,
+          RagOutcome.quotaUnavailable => Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              FeBanner(
+                key: const Key('ai.quota'),
+                icon: Icons.hourglass_empty,
+                tone: FeBannerTone.warning,
+                text: l.aiQuotaUsed,
+              ),
+              // Limit tugagan nuqta: Mutaxassis Pro (kengaytirilgan limit).
+              const ProContextOffer(feature: ProFeature.aiExtended),
+            ],
           ),
           RagOutcome.rejectedCitation ||
           RagOutcome.rejectedIdentifier ||
@@ -549,11 +558,18 @@ class _AiResultView extends ConsumerWidget {
           RagOutcome.retrievalOnly =>
             failure == null
                 ? const SizedBox.shrink()
-                : FeBanner(
-                    key: Key('ai.failure.${answer.failureCode}'),
-                    icon: Icons.cloud_off_outlined,
-                    tone: FeBannerTone.warning,
-                    text: failure,
+                : Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      FeBanner(
+                        key: Key('ai.failure.${answer.failureCode}'),
+                        icon: Icons.cloud_off_outlined,
+                        tone: FeBannerTone.warning,
+                        text: failure,
+                      ),
+                      if (answer.failureCode == 'quota')
+                        const ProContextOffer(feature: ProFeature.aiExtended),
+                    ],
                   ),
         },
         if (chunks.isNotEmpty) sources(collapsed: answered),

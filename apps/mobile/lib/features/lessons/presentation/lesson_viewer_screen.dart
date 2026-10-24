@@ -7,14 +7,17 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/class_quiz.dart';
 import '../../../app/lessons.dart';
+import '../../../app/plan.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassFailure;
 import '../../../domain/lessons/lesson_models.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../class_groups/presentation/topic_test_choice.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart';
+import '../../pro/presentation/pro_gate.dart';
 import 'lesson_slide_view.dart';
 
 /// Dars ko‘rish oynasi (faqat ilova ichida). Yuklash, xato holatlari va
@@ -30,6 +33,34 @@ class LessonViewerScreen extends ConsumerWidget {
     final async = ref.watch(lessonDeckProvider(topicId));
     final r = async.value;
     final deck = r?.value;
+    // Pro qulfi (ustoz: dastlabki 3 dars; apparatlar: 1-dars) — to‘g‘ridan
+    // to‘g‘ri havolada ham ochilmaydi.
+    final locks = ref.watch(lessonLocksProvider);
+    final lock = locks?[topicId];
+    if (lock != null) {
+      return Scaffold(
+        appBar: AppBar(title: FeAppBarTitle(l.lessonsTitle)),
+        body: SafeArea(
+          child: ListView(
+            padding: const EdgeInsets.all(FeSpace.md),
+            children: [
+              ProFeatureLock(feature: lock),
+              const SizedBox(height: FeSpace.sm),
+              FeBanner(
+                icon: Icons.health_and_safety_outlined,
+                text: l.proFreeAlways,
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+    if (locks == null && ref.watch(lessonListProvider('')).isLoading) {
+      return Scaffold(
+        appBar: AppBar(title: FeAppBarTitle(l.lessonsTitle)),
+        body: const Center(child: CircularProgressIndicator()),
+      );
+    }
     if (deck != null) return LessonViewer(deck: deck);
     return Scaffold(
       appBar: AppBar(title: FeAppBarTitle(l.lessonsTitle)),
@@ -453,8 +484,22 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
                   ),
                 ),
               ),
-            if (_index == pages.length - 1)
+            if (_index == pages.length - 1) ...[
               _QuizCta(ready: quizReady, onStart: _startQuiz),
+              // Dars oxiri: bitta kontekstli taklif (popup emas).
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: FeSpace.md),
+                child: LessonAccess.isInstrument(widget.deck.topicId)
+                    ? ProContextOffer(
+                        feature: ProFeature.instrumentsCourseFull,
+                        benefit: l.proCtxInstrumentsRest,
+                      )
+                    : ProContextOffer(
+                        feature: ProFeature.allLessons,
+                        benefit: l.proCtxAllLessons,
+                      ),
+              ),
+            ],
             _ControlBar(
               index: _index,
               total: pages.length,

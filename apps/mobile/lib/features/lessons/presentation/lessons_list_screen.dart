@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/lessons.dart';
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -12,10 +13,12 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/lessons/lesson_models.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show ClassDemoBanner;
 import '../../class_quiz/presentation/teacher_panel_screen.dart'
     show watchIsTeacher;
+import '../../pro/presentation/pro_gate.dart';
 import 'lesson_viewer_screen.dart' show LessonFailureView;
 
 /// «Darslar» ro‘yxati: qidiruv (server + tezkor mahalliy filtr), kurs
@@ -190,6 +193,7 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
       );
     }
     final groups = LessonGrouping.group(items);
+    final locks = ref.watch(lessonLocksProvider) ?? const {};
     return ListView(
       key: const Key('lessons.list'),
       keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -201,9 +205,17 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              // Qulfli darslar bor: har sababga bitta qulf kartasi (yashirin
+              // dars yo‘q — hammasi ro‘yxatda, qulf belgisi bilan).
+              for (final f in {...locks.values})
+                Padding(
+                  padding: const EdgeInsets.only(top: FeSpace.xs),
+                  child: ProFeatureLock(feature: f),
+                ),
               for (final g in groups) ...[
                 _CourseHeader(g.course),
-                for (final s in g.items) _LessonRow(summary: s),
+                for (final s in g.items)
+                  _LessonRow(summary: s, lock: locks[s.topicId]),
               ],
             ],
           ),
@@ -233,9 +245,12 @@ class _CourseHeader extends StatelessWidget {
 }
 
 class _LessonRow extends StatelessWidget {
-  const _LessonRow({required this.summary});
+  const _LessonRow({required this.summary, this.lock});
 
   final LessonSummary summary;
+
+  /// Qulf sababi (`null` — ochiq).
+  final ProFeature? lock;
 
   @override
   Widget build(BuildContext context) {
@@ -247,7 +262,9 @@ class _LessonRow extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: FeSpace.xs),
       child: FeCard(
         key: Key('lessons.row.${summary.topicId}'),
-        onTap: () => context.push(Routes.lesson(summary.topicId)),
+        onTap: () => lock == null
+            ? context.push(Routes.lesson(summary.topicId))
+            : openPro(context, lock!.requiredPlan),
         semanticLabel: '${summary.title}. $count',
         padding: const EdgeInsets.symmetric(
           horizontal: FeSpace.md,
@@ -258,7 +275,10 @@ class _LessonRow extends StatelessWidget {
             constraints: const BoxConstraints(minHeight: 48),
             child: Row(
               children: [
-                Icon(Icons.slideshow_rounded, color: c.accent),
+                Icon(
+                  lock == null ? Icons.slideshow_rounded : Icons.lock_outline,
+                  color: c.accent,
+                ),
                 const SizedBox(width: FeSpace.sm),
                 Expanded(
                   child: Column(

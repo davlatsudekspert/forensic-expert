@@ -1,28 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../common/favorite_button.dart';
 import '../../professional/presentation/professional_widgets.dart';
 import '../tool_strings.dart';
 
 /// Vosita kartochkasi: nom, qisqa vazifa, holat va favorite.
-class ToolTile extends StatelessWidget {
+class ToolTile extends ConsumerWidget {
   const ToolTile({super.key, required this.tool, this.showFavorite = true});
 
   final ToolEntry tool;
   final bool showFavorite;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    // Professional kalkulyator: ko‘rinadi, lekin Mutaxassis Pro bilan ochiladi.
+    final locked =
+        ProCalculators.isPro(tool.id) &&
+        !proGate(ref, ProFeature.proCalculators);
     return Card(
       key: Key('tool.${tool.id}'),
       clipBehavior: Clip.antiAlias,
@@ -41,7 +48,9 @@ class ToolTile extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 2),
                 child: Icon(
-                  tool.isAvailable
+                  locked
+                      ? Icons.lock_outline
+                      : tool.isAvailable
                       ? Icons.calculate_outlined
                       : Icons.schedule_outlined,
                   color: tool.isAvailable ? c.accent : c.textSecondary,

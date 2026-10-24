@@ -4,8 +4,8 @@
 /// Ilova versiyasi va ilmiy baza versiyasi ALOHIDA (34-bo‘lim):
 /// ilmiy baza versiyasi kontent paketi manifestidan o‘qiladi.
 abstract final class AppInfo {
-  static const version = '0.3.1';
-  static const build = 19;
+  static const version = '0.4.0';
+  static const build = 20;
 
   /// VAQTINCHALIK ID (RG-09). Nomzod: `com.forensicexpert.app` — egasi
   /// tasdiqlamaguncha va store’da ro‘yxatdan o‘tmaguncha o‘zgartirilmaydi.

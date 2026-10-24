@@ -9,6 +9,8 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
+import '../../../domain/plan/plan_models.dart';
+import '../../pro/presentation/pro_gate.dart';
 import 'class_quiz_widgets.dart';
 
 /// Muhokama ma’lumot manbai: «Sinfda test» (sessiya) yoki «Guruh testi»
@@ -26,10 +28,15 @@ Future<void> openClassHardestDiscussion(
 }) => Navigator.of(context).push<void>(
   MaterialPageRoute<void>(
     fullscreenDialog: true,
-    builder: (_) => ClassHardestDiscussionScreen(
-      sessionId: sessionId,
-      hardest: hardest,
-      initialQuestionIndex: questionIndex,
+    // Qiyin savollar muhokamasi — Ustoz Pro (ochilishi qulfli, ko‘rinadi).
+    builder: (ctx) => ProGated(
+      feature: ProFeature.hardestDiscussion,
+      title: AppLocalizations.of(ctx).classHardestTitle,
+      child: ClassHardestDiscussionScreen(
+        sessionId: sessionId,
+        hardest: hardest,
+        initialQuestionIndex: questionIndex,
+      ),
     ),
   ),
 );
@@ -42,11 +49,15 @@ Future<void> openGroupHardestDiscussion(
 }) => Navigator.of(context).push<void>(
   MaterialPageRoute<void>(
     fullscreenDialog: true,
-    builder: (_) => ClassHardestDiscussionScreen(
-      sessionId: assignmentId,
-      hardest: const [],
-      initialQuestionIndex: 0,
-      source: groupHardestDetailProvider(assignmentId),
+    builder: (ctx) => ProGated(
+      feature: ProFeature.hardestDiscussion,
+      title: AppLocalizations.of(ctx).classHardestTitle,
+      child: ClassHardestDiscussionScreen(
+        sessionId: assignmentId,
+        hardest: const [],
+        initialQuestionIndex: 0,
+        source: groupHardestDetailProvider(assignmentId),
+      ),
     ),
   ),
 );

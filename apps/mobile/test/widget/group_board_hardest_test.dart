@@ -5,8 +5,10 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/floating_nav_flag.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/domain/class_groups/class_groups_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/class_groups_world.dart';
+import '../helpers/pump_app.dart' show testDefaultPlan;
 
 /// Jonli doska (o‘rin, to‘g‘ri soni, vaqt, holat), «Testni yopish» va
 /// «Qiyin savollar» muhokamasi (guruh testi).
@@ -93,6 +95,8 @@ String _text(WidgetTester tester, Key k) =>
     tester.widget<Text>(find.byKey(k)).data ?? '';
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.teacher);
+  tearDownAll(() => testDefaultPlan = null);
   setUp(() {
     floatingNavEnabled = true;
     debugDefaultTargetPlatformOverride = TargetPlatform.iOS;

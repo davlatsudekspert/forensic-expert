@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/class_groups.dart';
 import '../../../app/class_quiz.dart';
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -14,8 +15,10 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassTopic;
+import '../../../domain/plan/plan_models.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show ClassQr, classFailureText;
+import '../../pro/presentation/pro_gate.dart' show openPro;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'assign_test_screen.dart' show pickTopicVariant;
 import 'group_widgets.dart';
@@ -64,6 +67,13 @@ class _LessonGroupState extends ConsumerState<LessonGroupTestScreen> {
     final name = _name.text.trim();
     if (name.length < GroupRules.nameMin) {
       setState(() => _nameError = l.grpErrBadName);
+      return;
+    }
+    // Ustoz Pro: bepul — 1 guruh.
+    final have = ref.read(groupListProvider).value?.value?.teaching.length ?? 0;
+    if (have >= freeGroupLimit &&
+        !ref.read(proAllowedProvider(ProFeature.unlimitedGroupTests))) {
+      openPro(context, Plan.teacher);
       return;
     }
     setState(() {
@@ -293,8 +303,17 @@ class _LessonGroupState extends ConsumerState<LessonGroupTestScreen> {
             alignment: AlignmentDirectional.centerStart,
             child: TextButton.icon(
               key: const Key('grp.lesson.newGroup'),
-              onPressed: () => setState(() => _creating = true),
-              icon: const Icon(Icons.add),
+              onPressed: () =>
+                  teaching.length >= freeGroupLimit &&
+                      !proGate(ref, ProFeature.unlimitedGroupTests)
+                  ? openPro(context, Plan.teacher)
+                  : setState(() => _creating = true),
+              icon: Icon(
+                teaching.length >= freeGroupLimit &&
+                        !proGate(ref, ProFeature.unlimitedGroupTests)
+                    ? Icons.lock_outline
+                    : Icons.add,
+              ),
               label: Text(l.grpLessonNewGroup),
             ),
           ),

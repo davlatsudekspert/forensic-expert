@@ -2,11 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pump_app.dart';
 
 /// 2026-10-09 spektrofotometriya: Buger–Lambert–Ber kalkulyatori (UI).
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.expert);
+  tearDownAll(() => testDefaultPlan = null);
   const id = 'tool.lab.beer_lambert';
 
   Future<void> open(

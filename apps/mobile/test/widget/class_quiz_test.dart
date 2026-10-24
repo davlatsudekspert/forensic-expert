@@ -9,6 +9,7 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/ports/class_quiz_ports.dart';
 
 import '../helpers/pump_app.dart';
@@ -88,6 +89,8 @@ Future<void> _close(WidgetTester tester) async {
 }
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.teacher);
+  tearDownAll(() => testDefaultPlan = null);
   testWidgets('hub: noto‘g‘ri kod tushunarli xato beradi; ustoz bo‘limi yo‘q', (
     tester,
   ) async {

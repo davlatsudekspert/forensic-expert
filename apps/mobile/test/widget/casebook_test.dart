@@ -7,6 +7,7 @@ import 'package:forensic_expert/app/guidelines.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/share.dart';
 import 'package:forensic_expert/domain/casebook/casebook_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pump_app.dart';
 
@@ -66,6 +67,8 @@ Future<void> _back(WidgetTester tester) async {
 }
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.expert);
+  tearDownAll(() => testDefaultPlan = null);
   final overrides = [
     guidelineBundleLoaderProvider.overrideWithValue(() async => _bundle),
   ];

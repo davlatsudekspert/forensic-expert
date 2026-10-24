@@ -10773,4 +10773,408 @@ class AppLocalizationsUz extends AppLocalizations {
   String disciplineLessonsMore(int count) {
     return 'Yana $count ta dars';
   }
+
+  @override
+  String get proUnlock => 'Pro bilan ochish';
+
+  @override
+  String get proTitle => 'Pro rejasi';
+
+  @override
+  String get proPlanStudent => 'Talaba Pro';
+
+  @override
+  String get proPlanTeacher => 'Ustoz Pro';
+
+  @override
+  String get proPlanExpert => 'Mutaxassis Pro';
+
+  @override
+  String get proProfileRow => 'Reja';
+
+  @override
+  String get proFreeAlways =>
+      'Xavfsizlik ma’lumotlari, manbalar va ma’lumotning kelib chiqishi (provenance) doim bepul.';
+
+  @override
+  String get proBenefitFullQuizBank =>
+      'To‘liq test banki: 211 mavzu bo‘yicha 4370 savol';
+
+  @override
+  String get proBenefitExamMode =>
+      'Imtihon rejimi: har bir javob tahlili bilan';
+
+  @override
+  String get proBenefitAllFlashcards => 'Barcha fanlar bo‘yicha kartochkalar';
+
+  @override
+  String get proBenefitErrorAnalytics => 'Xatolar tahlili va statistika';
+
+  @override
+  String get proBenefitOfflineDownload =>
+      'Materiallarni oflayn o‘qish uchun yuklab olish';
+
+  @override
+  String get proBenefitAllLessons => 'Barcha 211 ta ma’ruza prezentatsiyasi';
+
+  @override
+  String get proBenefitUnlimitedGroupTests =>
+      'Cheksiz guruhlar va 10 tadan ko‘p savolli guruh testlari';
+
+  @override
+  String get proBenefitResultsCsv => 'Natijalarni CSV ga yuklab olish';
+
+  @override
+  String get proBenefitHardestDiscussion => 'Eng qiyin savollar muhokamasi';
+
+  @override
+  String get proBenefitLiveTestLarge => 'Katta auditoriya uchun jonli testlar';
+
+  @override
+  String get proBenefitInstrumentsCourseFull =>
+      '«Apparatlar bilan ishlash» kursi to‘liq';
+
+  @override
+  String get proBenefitProCalculators =>
+      'Professional kalkulyatorlar: PMI, konsentratsiya, LOD/LOQ va boshqalar';
+
+  @override
+  String get proBenefitCaseNotebook =>
+      'Ekspert ish daftari: xulosa uchun manbali bloklar';
+
+  @override
+  String get proBenefitCourtPrep =>
+      'Sudda so‘roqqa tayyorgarlik: simulyator, mashq va statistika';
+
+  @override
+  String get proBenefitAiExtended => 'AI uchun kengaytirilgan kunlik limit';
+
+  @override
+  String get proCtxAllLessons =>
+      'Siz bepul darsni ko‘rdingiz. Barcha 211 ta prezentatsiya Ustoz Pro bilan ochiladi.';
+
+  @override
+  String get proCtxInstrumentsRest =>
+      'Bu bepul namunaviy dars edi. Kursning qolgan darslari Mutaxassis Pro bilan ochiladi.';
+
+  @override
+  String get proCtxGroupLimit =>
+      'Bepul rejada bitta guruh bor. Ko‘proq guruh Ustoz Pro bilan yaratiladi.';
+
+  @override
+  String get proStateFree => 'Bepul reja';
+
+  @override
+  String get proStateFreeBody =>
+      'Ma’lumotnoma, manbalar va xavfsizlik ma’lumotlari doim bepul. Pro rejimingizga mos qo‘shimcha imkoniyatlar beradi.';
+
+  @override
+  String proStateTrial(String plan) {
+    return '$plan: bepul sinov davri';
+  }
+
+  @override
+  String proStateActive(String plan) {
+    return '$plan faol';
+  }
+
+  @override
+  String proStateUntil(String date) {
+    return '$date gacha';
+  }
+
+  @override
+  String get proStateNoEnd => 'Muddati cheklanmagan';
+
+  @override
+  String get proAutoRenewOn => 'Avtomatik uzayadi';
+
+  @override
+  String get proAutoRenewOff => 'Uzaytirilmaydi';
+
+  @override
+  String get proSourceStore => 'Do‘kon obunasi';
+
+  @override
+  String get proSourceAdmin => 'Administrator bergan';
+
+  @override
+  String get proSourceTrial => 'Bepul sinov';
+
+  @override
+  String get proOwnModeNote =>
+      'Har bir reja faqat o‘z rejimidagi imkoniyatlarni ochadi. Rejimni almashtirish boshqa rejaning imkoniyatlarini ochmaydi.';
+
+  @override
+  String get proTeacherRoleNote =>
+      'Ustoz paneli hamon serverdagi ustoz rolini talab qiladi; Pro rol bermaydi.';
+
+  @override
+  String get proIncludesStudent1 =>
+      'To‘liq test banki: 211 mavzu bo‘yicha 4370 savol';
+
+  @override
+  String get proIncludesStudent2 =>
+      'Imtihon rejimi: har bir javob tahlili bilan';
+
+  @override
+  String get proIncludesStudent3 => 'Barcha fanlar bo‘yicha kartochkalar';
+
+  @override
+  String get proIncludesStudent4 => 'Xatolar tahlili va statistika';
+
+  @override
+  String get proIncludesTeacher1 =>
+      'Barcha 211 ta ma’ruza prezentatsiyasi (proyektor rejimi)';
+
+  @override
+  String get proIncludesTeacher2 =>
+      'Cheksiz guruhlar va 10 tadan ko‘p savolli testlar';
+
+  @override
+  String get proIncludesTeacher3 => 'Natijalarni CSV ga yuklab olish';
+
+  @override
+  String get proIncludesTeacher4 => 'Eng qiyin savollar muhokamasi';
+
+  @override
+  String get proIncludesExpert1 =>
+      '«Apparatlar bilan ishlash» kursi to‘liq: Kristallyuks/etanol, UV-1900/COHb, GC-MS';
+
+  @override
+  String get proIncludesExpert2 =>
+      'Professional kalkulyatorlar: PMI, konsentratsiya, LOD/LOQ va boshqalar';
+
+  @override
+  String get proIncludesExpert3 =>
+      'Ekspert ish daftari va sudda so‘roqqa tayyorgarlik';
+
+  @override
+  String get proIncludesExpert4 => 'AI uchun kengaytirilgan kunlik limit';
+
+  @override
+  String get proGuestTitle => 'Pro uchun hisobga kiring';
+
+  @override
+  String get proGuestBody =>
+      'Reja hisobingizga bog‘lanadi va barcha qurilmalaringizda ishlaydi. Ma’lumotnoma va xavfsizlik ma’lumotlari hisobsiz ham bepul.';
+
+  @override
+  String get proGuestSignIn => 'Email kod bilan kirish';
+
+  @override
+  String get proChoose => 'Obunani tanlang';
+
+  @override
+  String get proAlreadyActive => 'Bu reja hisobingizda allaqachon faol.';
+
+  @override
+  String get proStoreUnavailable =>
+      'Do‘kon hozir mavjud emas (masalan, emulyatorda yoki do‘kon hisobisiz). Narx obuna rasmiylashtirilganda do‘konda ko‘rsatiladi.';
+
+  @override
+  String get proStoreNoProducts =>
+      'Do‘kon bu rejaning obunalarini hali qaytarmadi. Keyinroq urinib ko‘ring; narx do‘konda ko‘rsatiladi.';
+
+  @override
+  String get proMonthly => 'Oylik';
+
+  @override
+  String get proYearly => 'Yillik';
+
+  @override
+  String get proBuy => 'Sotib olish';
+
+  @override
+  String get proTrialButton => '30 kun bepul sinab ko‘rish';
+
+  @override
+  String get proTrialNote =>
+      'Bepul sinov bir qurilmada va bir hisobda faqat bir marta beriladi. U o‘zi tugaydi, pul yechilmaydi.';
+
+  @override
+  String get proRestore => 'Xaridlarni tiklash';
+
+  @override
+  String get proFlowWorking => 'Iltimos, kuting…';
+
+  @override
+  String get proFlowSuccess => 'Tayyor. Rejangiz faol.';
+
+  @override
+  String get proFlowPending =>
+      'Xarid tasdiqlanishini kutmoqda. Tasdiqlangach reja yoqiladi.';
+
+  @override
+  String get proFlowCanceled => 'Xarid bekor qilindi. Pul yechilmadi.';
+
+  @override
+  String get proFlowStoreNotConfigured =>
+      'Do‘kon xaridlarini serverda tekshirish hali ulanmagan. Xaridingiz saqlanadi va ulangach tekshiriladi.';
+
+  @override
+  String get proFlowInvalid =>
+      'Xaridni tasdiqlab bo‘lmadi. Pul yechilgan bo‘lsa, qo‘llab-quvvatlashga yozing.';
+
+  @override
+  String get proFlowOffline =>
+      'Aloqa yo‘q. Internet qaytgach xarid tekshiriladi.';
+
+  @override
+  String get proFlowError => 'Xatolik yuz berdi. Qayta urinib ko‘ring.';
+
+  @override
+  String get proFlowRestoreNothing =>
+      'Bu do‘kon hisobida tiklanadigan xaridlar topilmadi.';
+
+  @override
+  String get proTrialUsedDevice =>
+      'Bu qurilmada bepul sinov allaqachon ishlatilgan.';
+
+  @override
+  String get proTrialUsedAccount =>
+      'Bu hisobda bepul sinov allaqachon ishlatilgan.';
+
+  @override
+  String get proTrialHasPlan => 'Sizda faol reja bor, sinov kerak emas.';
+
+  @override
+  String get proTrialUnavailable =>
+      'Bu qurilmada sinovni taklif qilib bo‘lmaydi.';
+
+  @override
+  String get proTermsTitle => 'Obuna shartlari';
+
+  @override
+  String get proTermsBody =>
+      'Obunalar oylik yoki yillik bo‘lib, avtomatik uzayadi. Narx va to‘lov davri tasdiqlashdan oldin do‘konda ko‘rsatiladi. To‘lov tasdiqlanganda Apple ID yoki Google Play hisobingizdan yechiladi. Joriy davr tugashidan kamida 24 soat oldin bekor qilinmasa, obuna uzayadi va keyingi davr uchun to‘lov davr tugashidan oldingi 24 soat ichida yechiladi. Obunani istalgan vaqt do‘kon hisobingiz sozlamalarida boshqarish yoki bekor qilish mumkin; bekor qilish to‘langan davr oxirida kuchga kiradi. Do‘kon ko‘rsatgan bepul sinov yoki boshlang‘ich taklif o‘zi tugaydi.';
+
+  @override
+  String get proCancelHowIos =>
+      'iPhone’da bekor qilish: Sozlamalar → ismingiz → Obunalar → FORENSIC EXPERT → Obunani bekor qilish.';
+
+  @override
+  String get proCancelHowAndroid =>
+      'Android’da bekor qilish: Google Play → profil belgisi → To‘lovlar va obunalar → Obunalar → FORENSIC EXPERT → Obunani bekor qilish.';
+
+  @override
+  String get proManage => 'Obunani boshqarish yoki bekor qilish';
+
+  @override
+  String get proManageFailed =>
+      'Do‘kon sahifasini ochib bo‘lmadi. Do‘kon hisobi sozlamalarini o‘zingiz oching.';
+
+  @override
+  String get proTermsLink => 'Foydalanish shartlari';
+
+  @override
+  String get proPrivacyLink => 'Maxfiylik siyosati';
+
+  @override
+  String get proOfferStudentTitle => 'Cheklovsiz o‘qing';
+
+  @override
+  String get proOfferStudentBody =>
+      'Talaba Pro to‘liq test banki, imtihon rejimi, barcha kartochkalar va xatolar tahlilini ochadi. Bepul sinov imkoniyati bo‘lsa, Pro sahifasida ko‘rsatiladi.';
+
+  @override
+  String get proOfferTeacherTitle => 'Dars berishda ko‘proq imkoniyat';
+
+  @override
+  String get proOfferTeacherBody =>
+      'Ustoz Pro barcha 211 ta prezentatsiya, cheksiz guruhlar, uzunroq testlar, CSV va qiyin savollar muhokamasini ochadi. Bepul sinov imkoniyati bo‘lsa, Pro sahifasida ko‘rsatiladi.';
+
+  @override
+  String get proOfferExpertTitle => 'Ish uchun asboblar';
+
+  @override
+  String get proOfferExpertBody =>
+      'Mutaxassis Pro apparatlar kursini to‘liq, professional kalkulyatorlar, ish daftari, sudda so‘roqqa tayyorgarlik va kengaytirilgan AI limitini ochadi. Bepul sinov imkoniyati bo‘lsa, Pro sahifasida ko‘rsatiladi.';
+
+  @override
+  String get proOfferOpen => 'Batafsil';
+
+  @override
+  String get proOfferDismiss => 'Yopish';
+
+  @override
+  String get studyStatsTitle => 'Xatolar statistikasi';
+
+  @override
+  String get studyStatsEmpty =>
+      'Avval bir nechta kartochkani takrorlang — statistika shu yerda paydo bo‘ladi.';
+
+  @override
+  String studyStatsSummary(int reviewed, int weak, int learned) {
+    return 'Takrorlangan: $reviewed · qiyin: $weak · o‘zlashtirilgan: $learned';
+  }
+
+  @override
+  String studyStatsWeakDeck(String deck, int count) {
+    return '$deck: qiyin kartochka — $count ta';
+  }
+
+  @override
+  String get admProTitle => 'Pro berish';
+
+  @override
+  String get admProHint => 'Email uchun reja, muddat, ro‘yxat, olib tashlash';
+
+  @override
+  String get admProNote =>
+      'Bu yerda berilgan reja audit jurnaliga «administrator» manbasi bilan yoziladi. Do‘kon obunasi ustun turadi.';
+
+  @override
+  String get admProGrantTitle => 'Reja berish';
+
+  @override
+  String get admProEmail => 'Foydalanuvchi emaili';
+
+  @override
+  String get admProPlan => 'Reja';
+
+  @override
+  String get admProUntil => 'Muddat';
+
+  @override
+  String get admProDays30 => '30 kun';
+
+  @override
+  String get admProDays90 => '90 kun';
+
+  @override
+  String get admProYear => '1 yil';
+
+  @override
+  String get admProNoLimit => 'Muddatsiz';
+
+  @override
+  String get admProGrant => 'Berish';
+
+  @override
+  String get admProRevoke => 'Olib tashlash';
+
+  @override
+  String get admProGranted => 'Reja berildi.';
+
+  @override
+  String get admProRevoked => 'Reja olib tashlandi.';
+
+  @override
+  String get admProNotFound => 'Bu email bilan foydalanuvchi topilmadi.';
+
+  @override
+  String get admProInvalid => 'To‘g‘ri email manzil kiriting.';
+
+  @override
+  String get admProError => 'So‘rovni bajarib bo‘lmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get admProListTitle => 'Berilgan rejalar';
+
+  @override
+  String get admProSearch => 'Email bo‘yicha qidirish';
+
+  @override
+  String get admProEmpty => 'Hozircha rejalar yo‘q.';
 }

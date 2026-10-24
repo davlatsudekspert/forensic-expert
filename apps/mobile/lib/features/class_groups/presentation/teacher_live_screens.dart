@@ -13,10 +13,12 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../class_quiz/presentation/class_hardest_screen.dart'
     show openGroupHardestDiscussion;
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show ClassQr, ClassReconnectingBar;
+import '../../pro/presentation/pro_gate.dart' show ProIcon;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'group_widgets.dart';
 
@@ -137,7 +139,10 @@ class GroupHardestBlock extends StatelessWidget {
                 context,
                 assignmentId: assignment.id,
               ),
-              icon: const Icon(Icons.forum_outlined),
+              icon: const ProIcon(
+                feature: ProFeature.hardestDiscussion,
+                icon: Icons.forum_outlined,
+              ),
               label: Text(l.grpHardestOpen),
             ),
           ],

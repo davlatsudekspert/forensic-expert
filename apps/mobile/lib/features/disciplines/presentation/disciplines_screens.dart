@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/lessons.dart' show lessonListProvider;
+import '../../../app/plan.dart' show lessonLocksProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -17,10 +18,12 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/lessons/lesson_models.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../class_quiz/presentation/teacher_panel_screen.dart'
     show watchIsTeacher;
 import '../../home/presentation/home_screen.dart' show HomeModule;
 import '../../knowledge/knowledge_strings.dart';
+import '../../pro/presentation/pro_gate.dart' show openPro;
 import '../discipline_strings.dart';
 
 /// Fan → mavjud ilova modullari (aniq xarita; bo‘sh bo‘lishi mumkin).
@@ -454,6 +457,7 @@ List<Widget> _lessonsSection(
         key: Key('discipline.course.${g.course}'),
         group: g,
         teacher: teacher,
+        locks: ref.watch(lessonLocksProvider) ?? const {},
       ),
     const SizedBox(height: FeSpace.xs),
     Align(
@@ -471,10 +475,18 @@ List<Widget> _lessonsSection(
 /// Bitta kurs darslari: avval 5 ta, «Yana N ta dars» bilan to‘liq ro‘yxat —
 /// fan sahifasi 80+ qatorli bo‘lib ketmasin.
 class _CourseLessons extends StatefulWidget {
-  const _CourseLessons({super.key, required this.group, required this.teacher});
+  const _CourseLessons({
+    super.key,
+    required this.group,
+    required this.teacher,
+    this.locks = const {},
+  });
 
   final LessonGroup group;
   final bool teacher;
+
+  /// Pro qulfi: `topicId` → sabab (ochiq darslar yo‘q).
+  final Map<String, ProFeature> locks;
 
   static const preview = 5;
 
@@ -511,10 +523,17 @@ class _CourseLessonsState extends State<_CourseLessons> {
             key: Key('discipline.lesson.${s.topicId}'),
             contentPadding: EdgeInsets.zero,
             dense: true,
-            leading: Icon(Icons.slideshow_rounded, color: c.accent),
+            leading: Icon(
+              widget.locks.containsKey(s.topicId)
+                  ? Icons.lock_outline
+                  : Icons.slideshow_rounded,
+              color: c.accent,
+            ),
             title: Text(s.title, maxLines: 2, overflow: TextOverflow.ellipsis),
             subtitle: Text(l.lessonsSlideCount(s.slides)),
-            trailing: widget.teacher
+            trailing: widget.locks.containsKey(s.topicId)
+                ? const Icon(Icons.chevron_right)
+                : widget.teacher
                 ? IconButton(
                     key: Key('discipline.lessonTest.${s.topicId}'),
                     tooltip: l.disciplineLessonGroupTest,
@@ -523,7 +542,14 @@ class _CourseLessonsState extends State<_CourseLessons> {
                         context.push(Routes.groupLessonTest(s.topicId)),
                   )
                 : const Icon(Icons.chevron_right),
-            onTap: () => context.push(Routes.lesson(s.topicId)),
+            onTap: () {
+              final f = widget.locks[s.topicId];
+              if (f != null) {
+                openPro(context, f.requiredPlan);
+              } else {
+                context.push(Routes.lesson(s.topicId));
+              }
+            },
           ),
         if (rest > 0)
           Align(

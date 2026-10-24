@@ -9,10 +9,12 @@ import 'package:forensic_expert/core/floating_nav_flag.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/data/lessons/fake_lessons_service.dart';
 import 'package:forensic_expert/domain/class_groups/class_groups_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/professional/professional_models.dart';
 import 'package:forensic_expert/features/class_groups/presentation/teacher_live_screens.dart';
 
 import '../helpers/class_groups_world.dart';
+import '../helpers/pump_app.dart' show testDefaultPlan;
 
 /// Dars oxiridagi «Guruh testi» (egasi qarori, 2026-10-24): guruhga test
 /// berish, ism bilan qo‘shilish, jonli doska o‘rinlari, qiyin savollar.
@@ -82,6 +84,8 @@ bool _selected(WidgetTester tester, String key) =>
     tester.widget<ChoiceChip>(find.byKey(Key(key))).selected;
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.teacher);
+  tearDownAll(() => testDefaultPlan = null);
   setUp(() {
     floatingNavEnabled = true;
     debugDefaultTargetPlatformOverride = TargetPlatform.iOS;

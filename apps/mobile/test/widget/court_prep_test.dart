@@ -9,6 +9,7 @@ import 'package:forensic_expert/app/guidelines.dart';
 import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pump_app.dart';
 
@@ -58,6 +59,8 @@ String? _mockClipboard(WidgetTester tester) {
 }
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.expert);
+  tearDownAll(() => testDefaultPlan = null);
   testWidgets('mutaxassis: Home → bo‘lim, ogohlantirish; har bir karta to‘liq '
       '(A–I, manbalar bilan); mashq va statistika ham ochiq', (tester) async {
     final c = await pumpApp(

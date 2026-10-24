@@ -10840,4 +10840,409 @@ class AppLocalizationsEn extends AppLocalizations {
   String disciplineLessonsMore(int count) {
     return 'Show $count more lessons';
   }
+
+  @override
+  String get proUnlock => 'Unlock with Pro';
+
+  @override
+  String get proTitle => 'Pro plan';
+
+  @override
+  String get proPlanStudent => 'Student Pro';
+
+  @override
+  String get proPlanTeacher => 'Teacher Pro';
+
+  @override
+  String get proPlanExpert => 'Expert Pro';
+
+  @override
+  String get proProfileRow => 'Plan';
+
+  @override
+  String get proFreeAlways =>
+      'Safety information, sources and provenance are always free.';
+
+  @override
+  String get proBenefitFullQuizBank =>
+      'Full question bank: 4,370 questions in 211 topics';
+
+  @override
+  String get proBenefitExamMode => 'Exam mode with a review of every answer';
+
+  @override
+  String get proBenefitAllFlashcards => 'Flashcards for all subjects';
+
+  @override
+  String get proBenefitErrorAnalytics => 'Error analysis and statistics';
+
+  @override
+  String get proBenefitOfflineDownload =>
+      'Download materials for offline study';
+
+  @override
+  String get proBenefitAllLessons => 'All 211 lecture presentations';
+
+  @override
+  String get proBenefitUnlimitedGroupTests =>
+      'Unlimited groups and group tests of more than 10 questions';
+
+  @override
+  String get proBenefitResultsCsv => 'Export results to CSV';
+
+  @override
+  String get proBenefitHardestDiscussion =>
+      'Discussion of the hardest questions';
+
+  @override
+  String get proBenefitLiveTestLarge => 'Live tests for large audiences';
+
+  @override
+  String get proBenefitInstrumentsCourseFull =>
+      'The full «Working with instruments» course';
+
+  @override
+  String get proBenefitProCalculators =>
+      'Professional calculators: PMI, concentration, LOD/LOQ and more';
+
+  @override
+  String get proBenefitCaseNotebook =>
+      'Expert casebook with sourced blocks for your conclusions';
+
+  @override
+  String get proBenefitCourtPrep =>
+      'Court testimony preparation: simulator, drills and statistics';
+
+  @override
+  String get proBenefitAiExtended => 'A higher daily AI limit';
+
+  @override
+  String get proCtxAllLessons =>
+      'You have seen a free lesson. All 211 presentations open with Teacher Pro.';
+
+  @override
+  String get proCtxInstrumentsRest =>
+      'That was the free sample lesson. The other lessons of the course open with Expert Pro.';
+
+  @override
+  String get proCtxGroupLimit =>
+      'The free plan includes one group. Create more groups with Teacher Pro.';
+
+  @override
+  String get proStateFree => 'Free plan';
+
+  @override
+  String get proStateFreeBody =>
+      'Reference, sources and safety information are always free. Pro adds extra tools for your mode.';
+
+  @override
+  String proStateTrial(String plan) {
+    return '$plan: free trial';
+  }
+
+  @override
+  String proStateActive(String plan) {
+    return '$plan is active';
+  }
+
+  @override
+  String proStateUntil(String date) {
+    return 'Until $date';
+  }
+
+  @override
+  String get proStateNoEnd => 'No end date';
+
+  @override
+  String get proAutoRenewOn => 'Auto-renews';
+
+  @override
+  String get proAutoRenewOff => 'Does not renew';
+
+  @override
+  String get proSourceStore => 'Store subscription';
+
+  @override
+  String get proSourceAdmin => 'Granted by administrator';
+
+  @override
+  String get proSourceTrial => 'Free trial';
+
+  @override
+  String get proOwnModeNote =>
+      'A plan unlocks features of its own mode only. Switching the mode does not unlock another plan’s features.';
+
+  @override
+  String get proTeacherRoleNote =>
+      'The Teacher panel still requires the teacher role on the server; Pro does not grant the role.';
+
+  @override
+  String get proIncludesStudent1 =>
+      'Full question bank: 4,370 questions in 211 topics';
+
+  @override
+  String get proIncludesStudent2 => 'Exam mode with a review of every answer';
+
+  @override
+  String get proIncludesStudent3 => 'Flashcards for all subjects';
+
+  @override
+  String get proIncludesStudent4 => 'Error analysis and statistics';
+
+  @override
+  String get proIncludesTeacher1 =>
+      'All 211 lecture presentations (projector mode)';
+
+  @override
+  String get proIncludesTeacher2 =>
+      'Unlimited groups and tests of more than 10 questions';
+
+  @override
+  String get proIncludesTeacher3 => 'Results export to CSV';
+
+  @override
+  String get proIncludesTeacher4 => 'Discussion of the hardest questions';
+
+  @override
+  String get proIncludesExpert1 =>
+      'The full «Working with instruments» course: Kristallyuks/ethanol, UV-1900/COHb, GC-MS';
+
+  @override
+  String get proIncludesExpert2 =>
+      'Professional calculators: PMI, concentration, LOD/LOQ and more';
+
+  @override
+  String get proIncludesExpert3 =>
+      'Expert casebook and court testimony preparation';
+
+  @override
+  String get proIncludesExpert4 => 'A higher daily AI limit';
+
+  @override
+  String get proGuestTitle => 'Sign in to use Pro';
+
+  @override
+  String get proGuestBody =>
+      'A plan is tied to your account and works on all your devices. The reference and safety information stay free without an account.';
+
+  @override
+  String get proGuestSignIn => 'Sign in with an email code';
+
+  @override
+  String get proChoose => 'Choose a subscription';
+
+  @override
+  String get proAlreadyActive => 'This plan is already active on your account.';
+
+  @override
+  String get proStoreUnavailable =>
+      'The store is not available right now (for example on an emulator or without a store account). The price is shown in the store when you subscribe.';
+
+  @override
+  String get proStoreNoProducts =>
+      'The store did not return this plan’s subscriptions yet. Try again later; the price is shown in the store.';
+
+  @override
+  String get proMonthly => 'Monthly';
+
+  @override
+  String get proYearly => 'Yearly';
+
+  @override
+  String get proBuy => 'Buy';
+
+  @override
+  String get proTrialButton => 'Try free for 30 days';
+
+  @override
+  String get proTrialNote =>
+      'The free trial is available once per device and once per account. It ends on its own and nothing is charged.';
+
+  @override
+  String get proRestore => 'Restore purchases';
+
+  @override
+  String get proFlowWorking => 'Please wait…';
+
+  @override
+  String get proFlowSuccess => 'Done. Your plan is active.';
+
+  @override
+  String get proFlowPending =>
+      'The purchase is waiting for approval. The plan turns on after it is confirmed.';
+
+  @override
+  String get proFlowCanceled =>
+      'The purchase was cancelled. Nothing was charged.';
+
+  @override
+  String get proFlowStoreNotConfigured =>
+      'Store purchase verification is not connected on the server yet. Your purchase is kept and will be checked once it is connected.';
+
+  @override
+  String get proFlowInvalid =>
+      'The purchase could not be verified. If you were charged, contact support.';
+
+  @override
+  String get proFlowOffline =>
+      'No connection. The purchase will be checked when the internet is back.';
+
+  @override
+  String get proFlowError => 'Something went wrong. Please try again.';
+
+  @override
+  String get proFlowRestoreNothing =>
+      'No purchases to restore were found for this store account.';
+
+  @override
+  String get proTrialUsedDevice =>
+      'The free trial has already been used on this device.';
+
+  @override
+  String get proTrialUsedAccount =>
+      'The free trial has already been used on this account.';
+
+  @override
+  String get proTrialHasPlan =>
+      'You already have an active plan, so the trial is not needed.';
+
+  @override
+  String get proTrialUnavailable =>
+      'The trial cannot be offered on this device.';
+
+  @override
+  String get proTermsTitle => 'Subscription terms';
+
+  @override
+  String get proTermsBody =>
+      'Subscriptions are monthly or yearly and renew automatically. The price and billing period are shown in the store before you confirm. Payment is charged to your Apple ID or Google Play account at confirmation. The subscription renews unless it is cancelled at least 24 hours before the end of the current period, and your account is charged for the next period within 24 hours before the end. You can manage or cancel it at any time in your store account settings; cancelling takes effect at the end of the paid period. A free trial or introductory offer shown by the store ends automatically.';
+
+  @override
+  String get proCancelHowIos =>
+      'To cancel on iPhone: Settings → your name → Subscriptions → FORENSIC EXPERT → Cancel Subscription.';
+
+  @override
+  String get proCancelHowAndroid =>
+      'To cancel on Android: Google Play → profile icon → Payments & subscriptions → Subscriptions → FORENSIC EXPERT → Cancel subscription.';
+
+  @override
+  String get proManage => 'Manage or cancel subscription';
+
+  @override
+  String get proManageFailed =>
+      'Could not open the store page. Open your store account settings manually.';
+
+  @override
+  String get proTermsLink => 'Terms of Use';
+
+  @override
+  String get proPrivacyLink => 'Privacy Policy';
+
+  @override
+  String get proOfferStudentTitle => 'Study without limits';
+
+  @override
+  String get proOfferStudentBody =>
+      'Student Pro opens the full question bank, exam mode, all flashcards and error analysis. A free trial, if available, is shown on the Pro page.';
+
+  @override
+  String get proOfferTeacherTitle => 'Teach with more tools';
+
+  @override
+  String get proOfferTeacherBody =>
+      'Teacher Pro opens all 211 presentations, unlimited groups, longer tests, CSV export and discussion of the hardest questions. A free trial, if available, is shown on the Pro page.';
+
+  @override
+  String get proOfferExpertTitle => 'Tools for your casework';
+
+  @override
+  String get proOfferExpertBody =>
+      'Expert Pro opens the full instruments course, professional calculators, the casebook, court testimony preparation and a higher AI limit. A free trial, if available, is shown on the Pro page.';
+
+  @override
+  String get proOfferOpen => 'Learn more';
+
+  @override
+  String get proOfferDismiss => 'Dismiss';
+
+  @override
+  String get studyStatsTitle => 'Error statistics';
+
+  @override
+  String get studyStatsEmpty =>
+      'Review some cards first — statistics will appear here.';
+
+  @override
+  String studyStatsSummary(int reviewed, int weak, int learned) {
+    return 'Reviewed: $reviewed · difficult: $weak · mastered: $learned';
+  }
+
+  @override
+  String studyStatsWeakDeck(String deck, int count) {
+    return '$deck: $count difficult';
+  }
+
+  @override
+  String get admProTitle => 'Grant Pro';
+
+  @override
+  String get admProHint => 'Plan for an email, duration, list, revoke';
+
+  @override
+  String get admProNote =>
+      'A plan granted here is recorded in the audit log with the source “administrator”. A store subscription takes precedence.';
+
+  @override
+  String get admProGrantTitle => 'Grant a plan';
+
+  @override
+  String get admProEmail => 'User email';
+
+  @override
+  String get admProPlan => 'Plan';
+
+  @override
+  String get admProUntil => 'Duration';
+
+  @override
+  String get admProDays30 => '30 days';
+
+  @override
+  String get admProDays90 => '90 days';
+
+  @override
+  String get admProYear => '1 year';
+
+  @override
+  String get admProNoLimit => 'No limit';
+
+  @override
+  String get admProGrant => 'Grant';
+
+  @override
+  String get admProRevoke => 'Revoke';
+
+  @override
+  String get admProGranted => 'The plan has been granted.';
+
+  @override
+  String get admProRevoked => 'The plan has been revoked.';
+
+  @override
+  String get admProNotFound => 'No user with this email.';
+
+  @override
+  String get admProInvalid => 'Enter a valid email address.';
+
+  @override
+  String get admProError => 'Could not complete the request. Try again.';
+
+  @override
+  String get admProListTitle => 'Granted plans';
+
+  @override
+  String get admProSearch => 'Search by email';
+
+  @override
+  String get admProEmpty => 'No plans yet.';
 }

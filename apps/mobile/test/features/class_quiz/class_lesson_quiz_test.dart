@@ -17,6 +17,7 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/ports/backend_ports.dart';
 import 'package:forensic_expert/domain/professional/professional_models.dart';
 
@@ -158,6 +159,8 @@ Future<void> closeApp(WidgetTester tester) async {
 }
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.teacher);
+  tearDownAll(() => testDefaultPlan = null);
   group('domen', () {
     test(
       'laqab profil ismidan: qisqa — o‘zi, uzun — «Ism F.», filtr saqlanadi',

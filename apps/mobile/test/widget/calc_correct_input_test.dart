@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pump_app.dart';
 
@@ -13,6 +14,8 @@ import '../helpers/pump_app.dart';
 /// hisoblangan ma’lum javobga solishtiradi. Qiymatlar katalogdagi
 /// `calcSamples` bilan bir xil.
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.expert);
+  tearDownAll(() => testDefaultPlan = null);
   final uz = lookupAppLocalizations(const Locale('uz'));
 
   Future<void> open(WidgetTester tester, String toolId) async {

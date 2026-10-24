@@ -3,12 +3,15 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/features/tools/presentation/lab_calculators.dart';
 
 import '../helpers/pump_app.dart';
 
 /// 2026-10-09 «polish tools»: kalkulyator UI xatolari va qulayliklari.
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.expert);
+  tearDownAll(() => testDefaultPlan = null);
   Future<void> open(
     WidgetTester tester,
     String toolId, {

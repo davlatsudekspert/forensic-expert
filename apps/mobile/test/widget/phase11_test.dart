@@ -80,15 +80,17 @@ void main() {
       );
     });
 
-    test('release: INTERNET (faqat HTTPS), faqat email e’lon qilingan, '
-        'xarid ma’lumoti yo‘q, kuzatuv yo‘q', () {
+    test('release: INTERNET (faqat HTTPS), email + xarid tarixi + qurilma '
+        'kaliti (Pro, 0.4.0) e’lon qilingan, kuzatuv yo‘q', () {
       final m = File('android/app/src/main/AndroidManifest.xml')
           .readAsStringSync();
       expect(m, contains('android.permission.INTERNET'));
       expect(m, contains('android:usesCleartextTraffic="false"'));
       final p = File('ios/Runner/PrivacyInfo.xcprivacy').readAsStringSync();
       expect(p, contains('NSPrivacyCollectedDataTypeEmailAddress'));
-      expect(p, isNot(contains('NSPrivacyCollectedDataTypePurchaseHistory')));
+      // Pro (0.4.0): xarid tarixi va qurilma kaliti hash’i e’lon qilinadi.
+      expect(p, contains('NSPrivacyCollectedDataTypePurchaseHistory'));
+      expect(p, contains('NSPrivacyCollectedDataTypeDeviceID'));
       expect(
         p,
         isNot(

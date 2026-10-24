@@ -5,8 +5,10 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/floating_nav_flag.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/domain/class_groups/class_groups_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/class_groups_world.dart';
+import '../helpers/pump_app.dart' show testDefaultPlan;
 
 AppLocalizations _l(WidgetTester tester) =>
     AppLocalizations.of(tester.element(find.byType(Scaffold).first));
@@ -28,6 +30,8 @@ Future<void> _scrollTo(WidgetTester tester, Key list, Key target) async {
 }
 
 void main() {
+  setUpAll(() => testDefaultPlan = Plan.teacher);
+  tearDownAll(() => testDefaultPlan = null);
   setUp(() {
     floatingNavEnabled = true;
     debugDefaultTargetPlatformOverride = TargetPlatform.iOS;

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/casebook.dart';
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -11,8 +12,10 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/casebook/casebook_models.dart';
 import '../../../domain/guidelines/guideline_models.dart';
+import '../../../domain/plan/plan_models.dart';
 import '../../guidelines/presentation/guidelines_screens.dart'
     show numberCitations;
+import '../../pro/presentation/pro_gate.dart' show openPro;
 
 /// Yo‘riqnoma bo‘limlaridan faqat shu kalitlar «cheklov bayoni» hisoblanadi.
 const casebookSectionKeys = {'limitations', 'cautions'};
@@ -186,6 +189,11 @@ Future<void> addBlockToCasebook(
   required CasebookBlock block,
   required String newTitle,
 }) async {
+  // Ish daftari — Mutaxassis Pro (tugma ko‘rinadi, bosilganda Pro sahifasi).
+  if (!ref.read(proAllowedProvider(ProFeature.caseNotebook))) {
+    openPro(context, Plan.expert);
+    return;
+  }
   final entryId = await chooseCasebookEntry(
     context,
     ref,
