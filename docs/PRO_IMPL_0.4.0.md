@@ -75,4 +75,4 @@ Paket: `in_app_purchase` (so‘nggi stabil). Yangi qatlam:
 - Versiya: `0.4.0+20` (pubspec + `app_info.dart`).
 
 ## 4. Egasi qiladigan ishlar (men qila olmayman)
-App Store Connect: Paid Apps Agreement, 6 obuna (guruh «FORENSIC EXPERT Pro», yuqoridagi id/narx), 3 oylik intro-offer, In-App Purchase API kaliti (`ASC_IAP_*` sekretlari); Sandbox tester akkaunt. Play Console: 6 obuna, narx, intro-offer, License testers, service account JSON. Sekretlar GitHub/Supabase’ga qo‘yiladi (men emas).
+App Store Connect: Paid Apps Agreement, 6 obuna (guruh «FORENSIC EXPERT Pro», yuqoridagi id/narx), 1 oylik intro-offer, In-App Purchase API kaliti (`ASC_IAP_*` sekretlari); Sandbox tester akkaunt. Play Console: 6 obuna, narx, intro-offer, License testers, service account JSON. Sekretlar GitHub/Supabase’ga qo‘yiladi (men emas).

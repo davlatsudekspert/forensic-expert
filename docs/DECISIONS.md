@@ -274,3 +274,6 @@ Talaba $1.49/oy, $9.99/yil; Ustoz $2.49/oy, $24.99/yil; Mutaxassis $3.49/oy, $34
 
 ## 2026-10-24 — «Sinf» so‘zi yo‘q, hammasi «Guruh testi» (egasi qarori)
 Ilovada «Sinfda test» degan joy qolmaydi: jonli test — «Guruh testi (jonli)», muddatli mavzu testi — «Guruh testi». Kod kalitlari (`class*`) va marshrutlar o‘zgarmaydi, faqat matn (uz/ru/en, `tool/l10n_group_wording.py`). CSV fayl nomi `guruh_test_…`. Maqsad: kim bo‘lib kirsa ham bitta tushuncha — guruh.
+
+## 2026-10-24 — Bepul sinov: 1 oy (egasi qarori)
+Free sinov muddati **30 kun** (1 oy) — har rejada; «3 oy» hech qayerda ishlatilmaydi. Bir telefon va bir akkaunt — bir marta (server `plan_claim_trial`); do‘kon intro-offer ham 1 oy.
