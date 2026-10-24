@@ -14,6 +14,7 @@ import '../../../core/widgets/fe_components.dart';
 
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
+import 'class_hardest_screen.dart';
 import 'class_quiz_widgets.dart';
 
 /// Yangi sinf testi: mavzu, savollar soni, talaba chegarasi, har savolga vaqt.
@@ -43,6 +44,7 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
   bool _initialApplied = false;
   String _query = '';
   var _settings = const ClassQuizSettings();
+  bool _customCount = false;
   bool _busy = false;
   String? _error;
 
@@ -164,12 +166,7 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
                       selected: item.topic.id == _topicId,
                       onTap: () => setState(() {
                         _topicId = item.topic.id;
-                        _settings = _settings.copyWith(
-                          questionCount: min(
-                            _settings.questionCount,
-                            item.topic.count,
-                          ),
-                        );
+                        _customCount = false;
                       }),
                     ),
                   ),
@@ -194,14 +191,16 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
             ),
           if (selected != null && enough) ...[
             FeSectionHeader(l.classSettingsSection),
-            _LabeledSlider(
-              key: const Key('class.sliderQuestions'),
-              label: l.classQuestionCount,
+            _QuestionCountPicker(
               value: qCount,
-              min: ClassQuizRules.minQuestions,
-              max: max(ClassQuizRules.minQuestions + 1, maxQ).toInt(),
-              step: 1,
-              onChanged: (v) => setState(
+              maxAvailable: maxQ,
+              custom: _customCount,
+              onPick: (v) => setState(() {
+                _customCount = false;
+                _settings = _settings.copyWith(questionCount: v);
+              }),
+              onCustom: () => setState(() => _customCount = true),
+              onSlide: (v) => setState(
                 () => _settings = _settings.copyWith(questionCount: v),
               ),
             ),
@@ -284,15 +283,32 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
 /// Ro‘yxatdagi bitta mavzu: server/qurilma mavzusi (tanlangan til varianti)
 /// va bankdagi metama’lumoti.
 class _TopicChoice {
-  const _TopicChoice({required this.topic, required this.title, this.meta});
+  const _TopicChoice({
+    required this.topic,
+    required this.title,
+    this.meta,
+    this.untranslatedTitle = false,
+  });
 
   final ClassTopic topic;
   final String title;
   final ClassQuizBankTopicMeta? meta;
 
+  /// Til varianti sarlavhasi asl o‘zbekcha sarlavha bilan aynan bir xil
+  /// (bank metama’lumoti yo‘q mavzular uchun: tarjima qilinmagan belgisi).
+  final bool untranslatedTitle;
+
+  /// Tarjimasi hali yo‘q: boshqa tilda asl o‘zbekcha matn ko‘rsatiladi.
+  bool get translationPending {
+    final vl = ClassQuizBank.variantLang(topic.id);
+    if (vl == 'uz') return false;
+    return meta?.isTranslationPending(vl) ?? untranslatedTitle;
+  }
+
   /// Savollar avtomatik tarjima (ru/en, tekshirilmagan) bo‘lsa — belgi.
   bool get machineTranslated {
     final vl = ClassQuizBank.variantLang(topic.id);
+    if (translationPending) return false;
     return meta?.isMachineTranslation(vl) ?? (vl != 'uz');
   }
 }
@@ -346,7 +362,18 @@ List<_TopicGroupData> _groupTopics(
         !group.title.toLowerCase().contains(q)) {
       continue;
     }
-    group.items.add(_TopicChoice(topic: topic, title: title, meta: meta));
+    group.items.add(
+      _TopicChoice(
+        topic: topic,
+        title: title,
+        meta: meta,
+        untranslatedTitle:
+            meta == null &&
+            ClassQuizBank.variantLang(topic.id) != 'uz' &&
+            v['uz'] != null &&
+            v['uz']!.title == topic.title,
+      ),
+    );
   }
   final out = [
     for (final g in groups.values)
@@ -436,6 +463,29 @@ class _TopicCard extends StatelessWidget {
                   l.classQuestionsAvailable(topic.count),
                   style: t.bodySmall?.copyWith(color: c.textSecondary),
                 ),
+                if (item.translationPending)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Row(
+                      key: Key('class.translationPending.${topic.id}'),
+                      children: [
+                        Icon(
+                          Icons.hourglass_empty,
+                          size: 14,
+                          color: c.textSecondary,
+                        ),
+                        const SizedBox(width: FeSpace.xxs),
+                        Flexible(
+                          child: Text(
+                            l.classTranslationPending,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 if (item.machineTranslated)
                   Padding(
                     padding: const EdgeInsets.only(top: 2),
@@ -465,6 +515,105 @@ class _TopicCard extends StatelessWidget {
             ),
         ],
       ),
+    );
+  }
+}
+
+/// Savol soni: 10 / 15 / 20 chiplari (+ «Boshqa» — min..mavjud maksimum).
+/// Mavzuda savol yetmasa, ortiqcha chiplar o‘chiriladi va mavjud maksimum
+/// «Hammasi · N» chipi bilan taklif qilinadi.
+class _QuestionCountPicker extends StatelessWidget {
+  const _QuestionCountPicker({
+    required this.value,
+    required this.maxAvailable,
+    required this.custom,
+    required this.onPick,
+    required this.onCustom,
+    required this.onSlide,
+  });
+
+  final int value;
+  final int maxAvailable;
+  final bool custom;
+  final ValueChanged<int> onPick;
+  final VoidCallback onCustom;
+  final ValueChanged<int> onSlide;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    const presets = ClassQuizRules.questionPresets;
+    final all = maxAvailable;
+    final showAll =
+        !presets.contains(all) && all >= ClassQuizRules.minQuestions;
+    final canCustom = all > ClassQuizRules.minQuestions;
+    final limited = all < presets.last;
+    return Column(
+      key: const Key('class.questionCount'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          children: [
+            Expanded(child: Text(l.classQuestionCount, style: t.titleSmall)),
+            Text(
+              value.toString(),
+              key: const Key('class.questionCountValue'),
+              style: t.titleMedium,
+            ),
+          ],
+        ),
+        const SizedBox(height: FeSpace.xs),
+        Wrap(
+          spacing: FeSpace.xs,
+          runSpacing: FeSpace.xs,
+          children: [
+            for (final n in presets)
+              ChoiceChip(
+                key: Key('class.count.$n'),
+                label: Text(n.toString()),
+                selected: !custom && value == n,
+                onSelected: n <= all ? (_) => onPick(n) : null,
+              ),
+            if (showAll)
+              ChoiceChip(
+                key: const Key('class.count.all'),
+                label: Text(l.classQuestionCountAll(all)),
+                selected: !custom && value == all,
+                onSelected: (_) => onPick(all),
+              ),
+            if (canCustom)
+              ChoiceChip(
+                key: const Key('class.count.custom'),
+                label: Text(l.classQuestionCountOther),
+                selected: custom,
+                onSelected: (_) => onCustom(),
+              ),
+          ],
+        ),
+        if (limited)
+          Padding(
+            padding: const EdgeInsets.only(top: FeSpace.xs),
+            child: Text(
+              l.classQuestionCountLimited(all),
+              key: const Key('class.countLimited'),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ),
+        if (custom && canCustom)
+          Slider(
+            key: const Key('class.sliderQuestions'),
+            value: value.clamp(ClassQuizRules.minQuestions, all).toDouble(),
+            min: ClassQuizRules.minQuestions.toDouble(),
+            max: all.toDouble(),
+            divisions: all - ClassQuizRules.minQuestions,
+            label: value.toString(),
+            semanticFormatterCallback: (v) => v.round().toString(),
+            onChanged: (v) => onSlide(v.round()),
+          ),
+        const SizedBox(height: FeSpace.xs),
+      ],
     );
   }
 }
@@ -1099,7 +1248,7 @@ class _Running extends StatelessWidget {
                 Text(l.classNoScoresYet, style: t.bodySmall)
               else
                 for (final r in d.leaderboard.take(5))
-                  _LeaderRowView(row: r, compact: true),
+                  _LeaderRowView(row: r, compact: true, total: d.session.total),
             ],
           ),
         ),
@@ -1654,14 +1803,66 @@ class _ParticipantStatusGrid extends StatelessWidget {
   }
 }
 
+/// «Qiyin savol» qatori: bosilsa muhokama sahifasi ochiladi. Faqat savol
+/// matni va to‘g‘ri javoblar foizi (talaba ismlari yo‘q).
+class _HardestRow extends StatelessWidget {
+  const _HardestRow({required this.h, required this.onTap});
+
+  final ClassHardQuestion h;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    // Proyektor/katta ekranda o‘qiladigan shrift.
+    final big = MediaQuery.sizeOf(context).width >= 900;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+      child: InkWell(
+        key: Key('class.hardest.${h.index}'),
+        borderRadius: BorderRadius.circular(8),
+        onTap: onTap,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 48),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: Text(h.text, style: big ? t.titleMedium : null),
+                ),
+                const SizedBox(width: FeSpace.xs),
+                Text(
+                  l.classCorrectPct(h.correctPct),
+                  style: (big ? t.titleMedium : t.titleSmall)?.copyWith(
+                    color: h.correctPct < 50 ? c.danger : c.verified,
+                  ),
+                ),
+                Icon(Icons.chevron_right, color: c.textSecondary),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _LeaderRowView extends StatelessWidget {
-  const _LeaderRowView({required this.row, this.compact = false});
+  const _LeaderRowView({required this.row, this.compact = false, this.total});
 
   final ClassLeaderRow row;
   final bool compact;
 
+  /// Sessiyadagi savollar soni («7/10 to‘g‘ri» uchun); bilinmasa — ko‘rsatilmaydi.
+  final int? total;
+
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
     // Ism va ball — sans (jadval o‘qilishi); sarlavhalar serif.
@@ -1669,14 +1870,22 @@ class _LeaderRowView extends StatelessWidget {
       fontFamily: FeFonts.sans,
       fontWeight: compact ? null : FontWeight.w600,
     );
+    final parts = <String>[
+      if (total != null && total! > 0)
+        l.classLeaderCorrect(row.correct, total!),
+      if (row.avgMs != null)
+        l.classLeaderAvgTime((row.avgMs! / 1000).toStringAsFixed(1)),
+    ];
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 2),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
             width: 28,
             child: Text(
               row.rank.toString(),
+              key: Key('class.rank.${row.participantId}'),
               style: style?.copyWith(
                 color: row.rank == 1 ? FeBrand.goldOnDark : c.textSecondary,
                 fontWeight: FontWeight.w700,
@@ -1684,10 +1893,24 @@ class _LeaderRowView extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Text(
-              row.nickname,
-              overflow: TextOverflow.ellipsis,
-              style: style,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  row.nickname,
+                  overflow: TextOverflow.ellipsis,
+                  style: style,
+                ),
+                if (parts.isNotEmpty)
+                  Text(
+                    parts.join(' · '),
+                    key: Key('class.rankDetail.${row.participantId}'),
+                    style: t.bodySmall?.copyWith(
+                      fontFamily: FeFonts.sans,
+                      color: c.textSecondary,
+                    ),
+                  ),
+              ],
             ),
           ),
           Text(
@@ -1750,7 +1973,8 @@ class _Finished extends StatelessWidget {
                     if (d.leaderboard.isEmpty)
                       Text(l.classNoScoresYet)
                     else
-                      for (final r in d.leaderboard) _LeaderRowView(row: r),
+                      for (final r in d.leaderboard)
+                        _LeaderRowView(row: r, total: d.session.total),
                   ],
                 ),
               ),
@@ -1766,24 +1990,21 @@ class _Finished extends StatelessWidget {
                       Text(l.classNoAnswersYet, style: t.bodySmall)
                     else
                       for (final h in d.hardest)
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(child: Text(h.text)),
-                              const SizedBox(width: FeSpace.xs),
-                              Text(
-                                l.classCorrectPct(h.correctPct),
-                                style: t.titleSmall?.copyWith(
-                                  color: h.correctPct < 50
-                                      ? c.danger
-                                      : c.verified,
-                                ),
-                              ),
-                            ],
+                        _HardestRow(
+                          h: h,
+                          onTap: () => openClassHardestDiscussion(
+                            context,
+                            sessionId: d.session.id,
+                            hardest: d.hardest,
+                            questionIndex: h.index,
                           ),
                         ),
+                    if (d.hardest.isNotEmpty)
+                      Text(
+                        l.classHardestOpenHint,
+                        key: const Key('class.hardest.hint'),
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
                   ],
                 ),
               ),
@@ -1843,7 +2064,8 @@ class _Finished extends StatelessWidget {
                         keyboardDismissBehavior:
                             ScrollViewKeyboardDismissBehavior.onDrag,
                         children: [
-                          for (final r in d.leaderboard) _LeaderRowView(row: r),
+                          for (final r in d.leaderboard)
+                            _LeaderRowView(row: r, total: d.session.total),
                         ],
                       ),
               ),
@@ -1866,29 +2088,24 @@ class _Finished extends StatelessWidget {
                             ScrollViewKeyboardDismissBehavior.onDrag,
                         children: [
                           for (final h in d.hardest)
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                bottom: FeSpace.xs,
-                              ),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Expanded(child: Text(h.text)),
-                                  const SizedBox(width: FeSpace.xs),
-                                  Text(
-                                    l.classCorrectPct(h.correctPct),
-                                    style: t.titleSmall?.copyWith(
-                                      color: h.correctPct < 50
-                                          ? c.danger
-                                          : c.verified,
-                                    ),
-                                  ),
-                                ],
+                            _HardestRow(
+                              h: h,
+                              onTap: () => openClassHardestDiscussion(
+                                context,
+                                sessionId: d.session.id,
+                                hardest: d.hardest,
+                                questionIndex: h.index,
                               ),
                             ),
                         ],
                       ),
               ),
+              if (d.hardest.isNotEmpty)
+                Text(
+                  l.classHardestOpenHint,
+                  key: const Key('class.hardest.hint'),
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
             ],
           ),
         );

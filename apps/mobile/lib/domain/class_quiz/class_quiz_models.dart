@@ -17,6 +17,10 @@ import 'package:flutter/foundation.dart';
 abstract final class ClassQuizRules {
   static const int minQuestions = 5;
   static const int maxQuestions = 20;
+
+  /// Savol soni chiplari (+ «Boshqa» — min/max ichida); standart — 10.
+  static const List<int> questionPresets = [10, 15, 20];
+  static const int defaultQuestions = 10;
   static const int minStudents = 5;
   static const int maxStudents = 200;
   static const List<int> secondsChoices = [15, 30, 45, 60];
@@ -42,7 +46,7 @@ abstract final class ClassQuizRules {
 @immutable
 class ClassQuizSettings {
   const ClassQuizSettings({
-    this.questionCount = 10,
+    this.questionCount = ClassQuizRules.defaultQuestions,
     this.studentLimit = 30,
     this.seconds = ClassQuizRules.defaultSeconds,
   });
@@ -219,6 +223,27 @@ abstract final class ClassNickname {
       }
     }
     return NicknameCheck.ok;
+  }
+
+  /// Profil to‘liq ismidan laqab taklifi (akkauntga kirgan talaba uchun
+  /// avtomatik to‘ldirish). 20 belgidan oshsa: «Ism F.» ko‘rinishi, aks holda
+  /// qirqiladi. Laqab filtridan o‘tmasa yoki bo‘sh bo‘lsa — `''` (maydon
+  /// bo‘sh qoladi, talaba o‘zi yozadi).
+  static String fromProfileName(String? fullName) {
+    final t = clean(fullName ?? '');
+    if (t.isEmpty) return '';
+    var cand = t;
+    if (cand.runes.length > ClassQuizRules.nickMax) {
+      final words = t.split(' ');
+      cand = words.length > 1
+          ? '${words.first} ${String.fromCharCode(words[1].runes.first)}.'
+          : t;
+      if (cand.runes.length > ClassQuizRules.nickMax) {
+        cand = String.fromCharCodes(cand.runes.take(ClassQuizRules.nickMax));
+      }
+      cand = cand.trim();
+    }
+    return check(cand) == NicknameCheck.ok ? cand : '';
   }
 
   /// Takror laqabga 2, 3, … qo‘shadi (20 belgidan oshmaydi).
@@ -479,6 +504,9 @@ class ClassSource {
 
   bool get isMachineTranslation => translation == 'auto_unreviewed';
 
+  /// Tarjimasi hali yo‘q: matn asl (o‘zbekcha), «tarjima kutilmoqda».
+  bool get isTranslationPending => translation == 'pending';
+
   /// Bet/joy bo‘sh yoki faqat chiziqcha bo‘lsa `null`.
   String? get cleanPage {
     final p = page.trim();
@@ -545,6 +573,7 @@ class ClassLeaderRow {
     required this.score,
     required this.correct,
     required this.rank,
+    this.avgMs,
   });
 
   factory ClassLeaderRow.fromJson(Map<String, Object?> j) => ClassLeaderRow(
@@ -553,7 +582,13 @@ class ClassLeaderRow {
     score: _int(j['score']),
     correct: _int(j['correct']),
     rank: _int(j['rank']),
+    avgMs: j['avg_ms'] is num && (j['avg_ms'] as num) > 0
+        ? (j['avg_ms'] as num).toInt()
+        : null,
   );
+
+  /// To‘g‘ri javoblar bo‘yicha o‘rtacha vaqt (ms); server yubormasa — `null`.
+  final int? avgMs;
 
   final String participantId;
   final String nickname;
@@ -732,6 +767,57 @@ class ClassHardQuestion {
   final String text;
   final int answered;
   final int correctPct;
+}
+
+/// «Qiyin savol» muhokama varaqasi uchun tafsilot (faqat ustoz, sessiya
+/// tugagach; `class_hardest_detail`). Talaba ismlari yo‘q — faqat jami.
+@immutable
+class ClassHardDetail {
+  const ClassHardDetail({
+    required this.index,
+    required this.text,
+    required this.options,
+    required this.correctIndex,
+    required this.explanation,
+    required this.source,
+    required this.answered,
+    required this.correctPct,
+    this.optionCounts = const [],
+  });
+
+  factory ClassHardDetail.fromJson(Map<String, Object?> j) {
+    final opts = [
+      for (final o in _list(j['options'])) o is Map ? _str(o['text']) : _str(o),
+    ];
+    return ClassHardDetail(
+      index: _int(j['index']),
+      text: _str(j['text']),
+      options: opts,
+      correctIndex: _int(j['correct_index']),
+      explanation: _str(j['explanation']),
+      source: ClassSource.fromJson(_map(j['source'])),
+      answered: _int(j['answered']),
+      correctPct: _int(j['correct_pct']),
+      optionCounts: [for (final c in _list(j['option_counts'])) _int(c)],
+    );
+  }
+
+  final int index;
+  final String text;
+  final List<String> options;
+  final int correctIndex;
+  final String explanation;
+  final ClassSource source;
+  final int answered;
+
+  /// To‘g‘ri javoblar foizi (0–100).
+  final int correctPct;
+
+  /// Har variantni tanlaganlar soni (A, B, C, D); bo‘lmasa — bo‘sh.
+  final List<int> optionCounts;
+
+  /// Xato foizi (talabalar nomsiz, faqat umumiy).
+  int get wrongPct => (100 - correctPct).clamp(0, 100);
 }
 
 @immutable

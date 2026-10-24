@@ -18332,6 +18332,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Max {count}'**
   String grpCountMax(int count);
+
+  /// Chip: use all questions available in the topic.
+  ///
+  /// In en, this message translates to:
+  /// **'All · {n}'**
+  String classQuestionCountAll(int n);
+
+  /// Chip: choose a custom number of questions (opens a slider).
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get classQuestionCountOther;
+
+  /// Shown when the topic has fewer than 20 questions: larger choices are disabled.
+  ///
+  /// In en, this message translates to:
+  /// **'This topic has only {n} questions, so larger choices are not available.'**
+  String classQuestionCountLimited(int n);
+
+  /// Badge: the content exists only in Uzbek (original); the translation is not ready yet. Not a machine translation.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation pending — original Uzbek text'**
+  String get classTranslationPending;
+
+  /// Hint under the hardest-questions card: tap a question to discuss it.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a question to discuss it'**
+  String get classHardestOpenHint;
+
+  /// Title of the hardest-question discussion page.
+  ///
+  /// In en, this message translates to:
+  /// **'Question discussion'**
+  String get classDiscussTitle;
+
+  /// Position among the hardest questions, e.g. 'Hard question 1 / 3'.
+  ///
+  /// In en, this message translates to:
+  /// **'Hard question {n} / {total}'**
+  String classDiscussPosition(int n, int total);
+
+  /// Share of wrong answers (no student names).
+  ///
+  /// In en, this message translates to:
+  /// **'{pct}% wrong'**
+  String classDiscussWrongPct(int pct);
+
+  /// How many students answered this question.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} answers'**
+  String classDiscussAnswered(int n);
+
+  /// Screen-reader label and badge for the correct option.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answer'**
+  String get classDiscussCorrectMark;
+
+  /// Section label: explanation of the answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Explanation'**
+  String get classDiscussExplanation;
+
+  /// Shown when a question has no explanation text.
+  ///
+  /// In en, this message translates to:
+  /// **'No explanation for this question.'**
+  String get classDiscussNoExplanation;
+
+  /// Section label: source (author, title, page).
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get classDiscussSource;
+
+  /// Button: previous hard question.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous'**
+  String get classDiscussPrev;
+
+  /// Button: next hard question.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get classDiscussNext;
+
+  /// Shown when option/explanation/source details cannot be loaded (old server or no connection).
+  ///
+  /// In en, this message translates to:
+  /// **'Details are not available right now. Showing the question text and wrong-answer share only.'**
+  String get classDiscussUnavailable;
+
+  /// Toggle: larger text for the projector.
+  ///
+  /// In en, this message translates to:
+  /// **'Large text'**
+  String get classDiscussBigFont;
+
+  /// Number of students who picked this option.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} chose this'**
+  String classDiscussPicked(int n);
+
+  /// Tooltip: close the discussion page.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get classDiscussClose;
+
+  /// Leaderboard row: correct answers out of all questions.
+  ///
+  /// In en, this message translates to:
+  /// **'{correct}/{total} correct'**
+  String classLeaderCorrect(int correct, int total);
+
+  /// Leaderboard row: average time of correct answers, seconds as text.
+  ///
+  /// In en, this message translates to:
+  /// **'avg {seconds} s'**
+  String classLeaderAvgTime(String seconds);
 }
 
 class _AppLocalizationsDelegate

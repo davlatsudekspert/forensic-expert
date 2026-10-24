@@ -10535,4 +10535,85 @@ class AppLocalizationsUz extends AppLocalizations {
   String grpCountMax(int count) {
     return 'Eng ko‘pi $count ta';
   }
+
+  @override
+  String classQuestionCountAll(int n) {
+    return 'Hammasi · $n';
+  }
+
+  @override
+  String get classQuestionCountOther => 'Boshqa';
+
+  @override
+  String classQuestionCountLimited(int n) {
+    return 'Bu mavzuda faqat $n ta savol bor, shuning uchun ko‘proq tanlab bo‘lmaydi.';
+  }
+
+  @override
+  String get classTranslationPending =>
+      'Tarjima kutilmoqda — asl o‘zbekcha matn';
+
+  @override
+  String get classHardestOpenHint => 'Muhokama uchun savolni bosing';
+
+  @override
+  String get classDiscussTitle => 'Savol muhokamasi';
+
+  @override
+  String classDiscussPosition(int n, int total) {
+    return 'Qiyin savol $n / $total';
+  }
+
+  @override
+  String classDiscussWrongPct(int pct) {
+    return '$pct% xato';
+  }
+
+  @override
+  String classDiscussAnswered(int n) {
+    return '$n ta javob';
+  }
+
+  @override
+  String get classDiscussCorrectMark => 'To‘g‘ri javob';
+
+  @override
+  String get classDiscussExplanation => 'Tushuntirish';
+
+  @override
+  String get classDiscussNoExplanation => 'Bu savol uchun tushuntirish yo‘q.';
+
+  @override
+  String get classDiscussSource => 'Manba';
+
+  @override
+  String get classDiscussPrev => 'Oldingi';
+
+  @override
+  String get classDiscussNext => 'Keyingi';
+
+  @override
+  String get classDiscussUnavailable =>
+      'Tafsilot hozir mavjud emas. Faqat savol matni va xato foizi ko‘rsatilmoqda.';
+
+  @override
+  String get classDiscussBigFont => 'Katta shrift';
+
+  @override
+  String classDiscussPicked(int n) {
+    return '$n ta tanladi';
+  }
+
+  @override
+  String get classDiscussClose => 'Yopish';
+
+  @override
+  String classLeaderCorrect(int correct, int total) {
+    return '$correct/$total to‘g‘ri';
+  }
+
+  @override
+  String classLeaderAvgTime(String seconds) {
+    return 'o‘rt. $seconds s';
+  }
 }

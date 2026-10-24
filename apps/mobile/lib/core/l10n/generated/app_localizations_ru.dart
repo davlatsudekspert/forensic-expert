@@ -10649,4 +10649,85 @@ class AppLocalizationsRu extends AppLocalizations {
   String grpCountMax(int count) {
     return 'Максимум $count';
   }
+
+  @override
+  String classQuestionCountAll(int n) {
+    return 'Все · $n';
+  }
+
+  @override
+  String get classQuestionCountOther => 'Другое';
+
+  @override
+  String classQuestionCountLimited(int n) {
+    return 'В этой теме всего $n вопросов, поэтому больше выбрать нельзя.';
+  }
+
+  @override
+  String get classTranslationPending =>
+      'Перевод ожидается — показан оригинал на узбекском';
+
+  @override
+  String get classHardestOpenHint => 'Нажмите на вопрос для обсуждения';
+
+  @override
+  String get classDiscussTitle => 'Обсуждение вопроса';
+
+  @override
+  String classDiscussPosition(int n, int total) {
+    return 'Сложный вопрос $n / $total';
+  }
+
+  @override
+  String classDiscussWrongPct(int pct) {
+    return '$pct% ошибок';
+  }
+
+  @override
+  String classDiscussAnswered(int n) {
+    return 'Ответов: $n';
+  }
+
+  @override
+  String get classDiscussCorrectMark => 'Правильный ответ';
+
+  @override
+  String get classDiscussExplanation => 'Объяснение';
+
+  @override
+  String get classDiscussNoExplanation => 'Для этого вопроса нет объяснения.';
+
+  @override
+  String get classDiscussSource => 'Источник';
+
+  @override
+  String get classDiscussPrev => 'Предыдущий';
+
+  @override
+  String get classDiscussNext => 'Следующий';
+
+  @override
+  String get classDiscussUnavailable =>
+      'Подробности сейчас недоступны. Показаны только текст вопроса и доля ошибок.';
+
+  @override
+  String get classDiscussBigFont => 'Крупный шрифт';
+
+  @override
+  String classDiscussPicked(int n) {
+    return 'Выбрали: $n';
+  }
+
+  @override
+  String get classDiscussClose => 'Закрыть';
+
+  @override
+  String classLeaderCorrect(int correct, int total) {
+    return '$correct/$total верно';
+  }
+
+  @override
+  String classLeaderAvgTime(String seconds) {
+    return 'в среднем $seconds с';
+  }
 }
