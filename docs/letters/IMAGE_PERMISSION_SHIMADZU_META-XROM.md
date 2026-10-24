@@ -1,5 +1,12 @@
 # Apparat rasmlari uchun ruxsat xatlari (2026-10-24)
 
+**YUBORILDI (2026-10-24, egasi ruxsati bilan, davlatsudekspert@gmail.com dan):**
+- Shimadzu Europa GmbH — info@shimadzu.eu (asosiy xat + «o‘zaro foyda» davomi). Javob kelmasa 14 kundan keyin
+  shimadzu.eu «Contact us → Other Inquiry» formasi va O‘zbekistondagi distribyutor orqali takrorlash.
+- ООО НПФ «Мета-хром» — m_chrom@mari-el.ru (rasmiy sayt kontakt sahifasidan; asosiy xat + davomi). Javob kelmasa
+  14 kundan keyin tel. +7 (927) 872-23-32 yoki 8 (800) 555-17-54 orqali so‘rash.
+- Javob kutilmoqda; kelgach 3-bo‘limdagi tartib.
+
 Maqsad: «Apparatlar bilan ishlash» kursida ishlab chiqaruvchining **rasmiy rasmlari** va
 **dastur skrinshotlari** (Shimadzu UV-1900 / LabSolutions UV, GCMS; Meta-Xrom «Kristallyuks-4000M» /
 NetChrom) ishlatish uchun yozma ruxsat olish. Ruxsat kelguncha ilovada faqat Wikimedia Commons (CC) va
