@@ -93,12 +93,31 @@ void main() {
     'lessons': '/home/teacher/lessons',
     'tools': '/tools',
     'profile': '/profile',
+    'pro': '/profile/pro',
   };
   for (final mode in UserMode.values) {
     for (final e in screens.entries) {
       testWidgets('${mode.name} ${e.key}', (tester) async {
+        final base = sampleLessonDecks.values.first;
+        final baseDeck = base['deck']! as Map<String, Object?>;
+        final baseSlides = (baseDeck['slides']! as List).first;
+        Map<String, Object?> deck(String id, String course) => {
+          ...base,
+          'topic_id': id,
+          'title': 'Dars $id: $course mavzusi',
+          'course': course,
+          'deck_id': '$id-deck',
+          'deck': {
+            ...baseDeck,
+            'slides': [for (var i = 0; i < 42; i++) baseSlides],
+          },
+        };
         final decks = {
-          for (final e in sampleLessonDecks.entries) e.key: e.value,
+          for (var i = 1; i <= 5; i++)
+            'toks-0$i': deck('toks-0$i', 'Toksikologik kimyo'),
+          for (var i = 1; i <= 3; i++)
+            'instr-0$i-x': deck('instr-0$i-x', 'Apparatlar bilan ishlash'),
+          'bio-01': deck('bio-01', 'Bioetika'),
         };
         await pumpApp(
           tester,

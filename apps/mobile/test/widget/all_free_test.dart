@@ -343,11 +343,12 @@ void main() {
       String route, {
       Plan? plan,
       bool teacher = true,
+      UserMode mode = UserMode.teacher,
     }) async {
       final backend = FakeClassQuizBackend(teachers: {if (teacher) 't1'});
       await pumpApp(
         tester,
-        settings: completedSettings(lang: 'uz', mode: UserMode.teacher),
+        settings: completedSettings(lang: 'uz', mode: mode),
         initialLocation: route,
         overrides: [
           classQuizServiceProvider.overrideWithValue(
@@ -369,11 +370,11 @@ void main() {
         'toks-03',
         'toks-04',
         'toks-05',
-        'instr-01-kristallyuks',
-        'instr-02-uv',
       ]) {
         expect(lockOn('lessons.row.$id'), findsOneWidget, reason: id);
       }
+      // Ustoz rejimida Apparatlar kursi ro‘yxatda yo‘q.
+      expect(find.byKey(const Key('lessons.row.instr-02-uv')), findsNothing);
     });
 
     testWidgets('qulfli dars to‘g‘ridan-to‘g‘ri havolada ham ochilmaydi', (
@@ -392,11 +393,22 @@ void main() {
       await tester.pump(const Duration(seconds: 5));
     });
 
-    testWidgets('Ustoz Pro barcha darslarni ochadi; apparatlar kursini emas', (
+    testWidgets('Ustoz Pro ustoz darslarini ochadi; apparatlar kursini emas', (
       tester,
     ) async {
       await openLessons(tester, Routes.lessons, plan: Plan.teacher);
       expect(lockOn('lessons.row.toks-05'), findsNothing);
+    });
+
+    testWidgets('Ustoz Pro Mutaxassis kursini (Apparatlar) ochmaydi', (
+      tester,
+    ) async {
+      await openLessons(
+        tester,
+        Routes.lessons,
+        plan: Plan.teacher,
+        mode: UserMode.professional,
+      );
       expect(lockOn('lessons.row.instr-02-uv'), findsOneWidget);
     });
 

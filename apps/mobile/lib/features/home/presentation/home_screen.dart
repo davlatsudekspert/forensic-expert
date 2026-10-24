@@ -286,9 +286,9 @@ class HomeScreen extends ConsumerWidget {
                   ],
                   // Mutaxassis rejimi: sudda so‘roqqa tayyorgarlik.
                   // Talabada — Kutubxonada.
-                  // Mutaxassis/ustoz: apparatlar bilan ishlash kursi
+                  // Mutaxassis: apparatlar bilan ishlash kursi
                   // (hammaga ochiq darslar) — egasi qarori, 2026-10-24.
-                  if (mode != UserMode.student) ...[
+                  if (mode == UserMode.professional) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
                       key: const Key('home.instruments'),

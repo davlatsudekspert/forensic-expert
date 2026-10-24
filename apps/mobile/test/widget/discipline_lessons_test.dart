@@ -99,13 +99,11 @@ void main() {
         find.byKey(const Key('discipline.lesson.toks-01')),
         findsOneWidget,
       );
-      expect(
-        find.byKey(const Key('discipline.lesson.instr-01')),
-        findsOneWidget,
-      );
+      // Ustoz rejimida Apparatlar kursi yo‘q (u — Mutaxassis rejimida).
+      expect(find.byKey(const Key('discipline.lesson.instr-01')), findsNothing);
       expect(find.byKey(const Key('discipline.lesson.ktp-01')), findsNothing);
       expect(find.textContaining('Toksikologik kimyo'), findsOneWidget);
-      expect(find.textContaining('Apparatlar bilan ishlash'), findsOneWidget);
+      expect(find.textContaining('Apparatlar bilan ishlash'), findsNothing);
 
       await reveal(
         tester,
@@ -223,7 +221,7 @@ void main() {
       );
       expect(
         find.byKey(const Key('discipline.lesson.instr-01')),
-        findsOneWidget,
+        mode == UserMode.teacher ? findsNothing : findsOneWidget,
       );
     });
   }

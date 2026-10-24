@@ -18,9 +18,8 @@ final lessonsServiceProvider = Provider<LessonsService>(
 /// Hamma rejimga ochiq kurs (serverda `audience = 'all'`).
 const openLessonCourse = 'Apparatlar bilan ishlash';
 
-/// Server qidiruvi: `''` — to‘liq ro‘yxat. Ustoz darslari faqat «Ustoz»
-/// rejimida ko‘rinadi: Mutaxassis/Talaba rejimida (server roli, masalan
-/// admin, bo‘lsa ham) faqat ochiq kurs qoladi.
+/// Server qidiruvi: `''` — to‘liq ro‘yxat, rejimga qarab saralangan (server
+/// roli, masalan admin, buni o‘zgartirmaydi).
 final lessonListProvider = FutureProvider.autoDispose
     .family<ClassResult<List<LessonSummary>>, String>((ref, query) async {
       final mode = ref.watch(
@@ -30,10 +29,17 @@ final lessonListProvider = FutureProvider.autoDispose
           .watch(lessonsServiceProvider)
           .list(query: query.isEmpty ? null : query);
       final items = res.value;
-      if (mode == UserMode.teacher || items == null) return res;
+      if (items == null) return res;
+      // Rejimlar aralashmaydi: Ustoz — ustoz darslari; Mutaxassis — faqat
+      // «Apparatlar bilan ishlash»; Talabada darslar yo‘q.
       return ClassResult.ok([
         for (final s in items)
-          if (s.course == openLessonCourse) s,
+          if (switch (mode) {
+            UserMode.teacher => s.course != openLessonCourse,
+            UserMode.professional => s.course == openLessonCourse,
+            _ => false,
+          })
+            s,
       ]);
     });
 
