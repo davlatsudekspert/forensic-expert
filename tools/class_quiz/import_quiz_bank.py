@@ -403,14 +403,23 @@ def main() -> int:
         print("quiz/*.json topilmadi", file=sys.stderr)
         return 2
     groups, topics, skipped, problems = convert(inputs, load_source_check(a.source_check))
-    nq = sum(len(t["questions"]) for t in topics)
+    # Ilova asseti: faqat manba bilan solishtirilgan (source.checked) savollar —
+    # tekshirilmagan savol baholanadigan oflayn rejimga kirmaydi (CLAUDE.md).
+    # Mavzu/guruh meta'si hammasi uchun qoladi (server mavzularini guruhlash uchun);
+    # server SQL (--sql) to'liq bankni oladi.
+    asset_topics = [
+        {**t, "questions": [q for q in t["questions"] if (q.get("source") or {}).get("checked")]}
+        for t in topics
+    ]
+    nq = sum(len(t["questions"]) for t in asset_topics)
     bank = {
         "format": FORMAT,
         "generated_by": "tools/class_quiz/import_quiz_bank.py",
         "source": f"{a.git_ref or 'local'}:quiz/*.json",
-        "stats": {"topics": len(topics), "questions": nq, "skipped": skipped},
+        "stats": {"topics": len(topics), "questions": nq, "skipped": skipped,
+                  "questions_server": sum(len(t["questions"]) for t in topics)},
         "groups": groups,
-        "topics": topics,
+        "topics": asset_topics,
     }
     text = json.dumps(bank, ensure_ascii=False, separators=(",", ":"), sort_keys=False) + "\n"
     out = pathlib.Path(a.out)
@@ -423,7 +432,7 @@ def main() -> int:
     for p in problems:
         print("  ! " + p)
     print(
-        f"class quiz bank: {len(topics)} mavzu, {nq} savol (uz/ru/en), "
+        f"class quiz bank: {len(topics)} mavzu, {nq} tekshirilgan savol assetda (serverda {sum(len(t['questions']) for t in topics)}), "
         f"{len(groups)} guruh, o‘tkazilgan savol: {skipped} → {os.path.relpath(out, ROOT)}"
     )
     if a.sql:
