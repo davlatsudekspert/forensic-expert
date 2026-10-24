@@ -1,14 +1,14 @@
 import 'dart:math' as math;
 
-/// «+» belgisi (reaksiya sxemasi) — foydalanuvchi matni emas.
-const _plusSign = '+';
-
 import 'package:flutter/foundation.dart' show listEquals;
 import 'package:flutter/material.dart';
 
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../domain/lessons/lesson_models.dart';
+
+/// «+» belgisi (reaksiya sxemasi) — foydalanuvchi matni emas.
+const _plusSign = '+';
 
 /// Diagramma v2 turlari: `steps`, `compare`, `tree`, `facts`, `reaction`,
 /// `cycle` (`docs/lessons/DECK_SPEC_V2.md`). Proyektor kanvasi ([size] katta,
