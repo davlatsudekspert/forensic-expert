@@ -125,3 +125,9 @@ ishidan keyin, navbat bilan (ustuvorlik: 1 → 2 → 3):
    build (ommaviy nashr YO'Q).
 5. [egasi] Cloudflare `CF_ACCOUNT_ID` va `CF_API_TOKEN` (Workers AI).
 6. [egasi] Q&A roli tasdiqlash: hozir `forensic_physician`.
+
+### Manba holati — sud tibbiyoti/bioetika decklarini boyitish uchun (2026-10-24, agent hisoboti)
+Drive’dan (`scratchpad/drive_src/pdf2/INVENTORY.md`): to‘liq — Pigolkin (2002), Pigolkin «Морф. диагностика», G‘iyosov «Huquqiy asoslar» (OCR shovqinli);
+qisman — Muhamedova (DOCX, bet yo‘q), Kharin (19-bobgacha), Simpson (1–103 bet), Iskandarov (~147K belgi);
+skaner (OCR kerak, katta fayl) — Romodanovskiy, G‘iyosov «Sud tibbiyoti» 2018, G‘iyosov «Bioetika» 2022;
+topilmadi — Baizoldanov. **Egasidan:** Baizoldanov fayli; katta PDF’larni ≤5 MB bo‘laklab Drive’ga yoki to‘g‘ridan berish (G‘iyosov 2018 — eng muhimi, 68 deck shunga tayanadi).
