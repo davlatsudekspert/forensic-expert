@@ -32,6 +32,8 @@ COURSES = {
     "2 kurs bioetika": "Bioetika",
 }
 TOKS_COURSE = "Toksikologik kimyo"
+# «Apparatlar bilan ishlash» (2026-10-24): deck fayli out/instr-NN-<id>.json, tartib = NN.
+INSTR_COURSE = "Apparatlar bilan ishlash"
 # Eski rejadagi mavzular joriy rejadan keyin turadi.
 # KTP ichida: ma'ruza (M), amaliy (A), mustaqil (MT), qo'shimcha (MR) — shu tartibda.
 KTP_PART = {"M": 0, "A": 100, "MT": 200, "MR": 300}
@@ -102,6 +104,14 @@ def main():
             d = json.loads(git_show(a.git_ref, f"out/{did}.json"))
             d.pop("mcq", None)
             decks[did] = d
+    for did in deck_ids:
+        m = re.match(r"^instr-(\d+)-", did)
+        if not m:
+            continue
+        d = json.loads(git_show(a.git_ref, f"out/{did}.json"))
+        d.pop("mcq", None)
+        decks[did] = d
+        rows.append((did, did, INSTR_COURSE, str(d.get("topic") or did), int(m.group(1)), False))
     out = []
     for did, d in sorted(decks.items()):
         out.append(
@@ -121,7 +131,7 @@ def main():
     pathlib.Path(a.out).write_text("\n".join(out) + "\n", encoding="utf-8")
     shown = [r for r in rows if not r[5]]
     print(f"lessons: {len(decks)} deck, {len(rows)} mavzu ({len(shown)} ko'rinadi) → {a.out}")
-    for c in [*dict.fromkeys(COURSES.values()), TOKS_COURSE]:
+    for c in [*dict.fromkeys(COURSES.values()), TOKS_COURSE, INSTR_COURSE]:
         print(f"  {c}: {sum(1 for r in shown if r[2] == c)}")
 
 

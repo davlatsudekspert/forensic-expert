@@ -105,6 +105,15 @@ GROUPS = [
         },
     ),
     (
+        r"^instr-",
+        "apparatlar",
+        {
+            "uz": "Apparatlar bilan ishlash",
+            "ru": "Работа на приборах",
+            "en": "Working with instruments",
+        },
+    ),
+    (
         r"^toks-",
         "toksikologik-kimyo",
         {

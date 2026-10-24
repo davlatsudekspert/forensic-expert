@@ -1,7 +1,7 @@
 -- «Darslar» slayd rasmlari (docs/lessons/DECK_SPEC_V2.md §2a).
 -- Ommaviy o'qiladigan `lesson-images` bucket: anon/authenticated faqat O'QIYDI;
 -- yozish/o'chirish — faqat service role (yuklash skripti), klient siyosati yo'q.
--- Faqat raster (PNG/JPG), 2 MB gacha. PRODUCTION'GA QO'LLANMAGAN (egasi tasdig'i kerak).
+-- Faqat raster (PNG/JPG), 2 MB gacha. Production'ga 2026-10-24 qo'llangan (egasi ruxsati bilan).
 --
 -- Rollback:
 --   drop policy if exists lesson_images_public_read on storage.objects;
@@ -19,3 +19,11 @@ create policy lesson_images_public_read on storage.objects
   using (bucket_id = 'lesson-images');
 -- insert/update/delete uchun siyosat YO'Q: RLS yoqilgan, shuning uchun anon va
 -- authenticated yoza olmaydi; service role RLS'ni chetlab o'tadi.
+
+-- Ustoz (teacher) yoki admin roli bor foydalanuvchi rasm yuklay oladi (faqat PNG/JPG, 2 MB; bucket cheklovi).
+drop policy if exists lesson_images_teacher_write on storage.objects;
+create policy lesson_images_teacher_write on storage.objects
+  for insert to authenticated
+  with check (bucket_id = 'lesson-images'
+              and (private.has_role(auth.uid(), 'teacher')
+                   or private.has_role(auth.uid(), 'identity_admin')));
