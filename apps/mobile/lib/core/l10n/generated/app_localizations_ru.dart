@@ -10878,7 +10878,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get homeInstrumentsBody =>
-      'Этанол на ГХ (Кристаллюкс), COHb на UV-1900, основы ГХ-МС: порядок работы, фото, тест';
+      'Этанол на GC (Кристаллюкс), COHb на UV-1900, основы GC-MS: порядок работы, фото, тест';
 
   @override
   String get lessonsOpenNote =>

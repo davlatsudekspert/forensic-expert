@@ -104,8 +104,14 @@ void main() {
     expect(r.value!.length, 1);
     expect((await s.list(query: 'yo‘q-yo‘q')).value, isEmpty);
     expect((await s.get('nope')).ok, isFalse);
+    // 2026-10-24: ustoz bo‘lmagan — faqat ochiq kurslar (namunada yo‘q → bo‘sh).
     final no = await FakeLessonsService(isTeacher: false).list();
-    expect(no.ok, isFalse);
+    expect(no.ok, isTrue);
+    expect(no.value, isEmpty);
+    expect(
+      (await FakeLessonsService(isTeacher: false).get('demo-toks')).ok,
+      isFalse,
+    );
   });
 
   test('adabiyot qatorida yil takrorlanmaydi', () {

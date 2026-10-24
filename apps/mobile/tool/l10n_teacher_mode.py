@@ -39,8 +39,8 @@ k("homeInstrumentsTitle", "Home tile (professional/teacher): instrument course."
   "Working with instruments", "Работа на приборах", "Apparatlar bilan ishlash")
 k("homeInstrumentsBody", "Home tile body: instrument course contents.",
   "Ethanol by GC (Kristallyuks), COHb on UV-1900, GC-MS basics: procedure, photos, test",
-  "Этанол на ГХ (Кристаллюкс), COHb на UV-1900, основы ГХ-МС: порядок работы, фото, тест",
-  "GC da etanol (Kristallyuks), UV-1900 da COHb, GX-MS asoslari: ish tartibi, rasmlar, test")
+  "Этанол на GC (Кристаллюкс), COHb на UV-1900, основы GC-MS: порядок работы, фото, тест",
+  "GC da etanol (Kristallyuks), UV-1900 da COHb, GC-MS asoslari: ish tartibi, rasmlar, test")
 k("lessonsForbidden", "Lessons: this lesson needs the teacher role (open courses are for everyone).",
   "This lesson opens with the teacher role. The «Working with instruments» course is open to everyone.",
   "Этот урок открывается с ролью преподавателя. Курс «Работа на приборах» открыт всем.",

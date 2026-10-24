@@ -10763,7 +10763,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get homeInstrumentsBody =>
-      'GC da etanol (Kristallyuks), UV-1900 da COHb, GX-MS asoslari: ish tartibi, rasmlar, test';
+      'GC da etanol (Kristallyuks), UV-1900 da COHb, GC-MS asoslari: ish tartibi, rasmlar, test';
 
   @override
   String get lessonsOpenNote =>

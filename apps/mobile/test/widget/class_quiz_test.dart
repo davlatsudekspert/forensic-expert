@@ -217,7 +217,7 @@ void main() {
       final file = w.share.shared.single;
       expect(
         file.name,
-        matches(RegExp(r'^sinf_test_[0-9]{6}_\d{4}-\d{2}-\d{2}\.csv$')),
+        matches(RegExp(r'^guruh_test_[0-9]{6}_\d{4}-\d{2}-\d{2}\.csv$')),
       );
       expect(
         file.content.split('\r\n').first,
