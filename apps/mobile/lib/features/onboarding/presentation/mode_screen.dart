@@ -61,7 +61,7 @@ class _ModeScreenState extends ConsumerState<ModeScreen> {
         for (final r in ProfessionalRole.values)
           (r.name, l.professionalRoleLabel(r)),
       ],
-      null => const <(String, String)>[],
+      UserMode.teacher || null => const <(String, String)>[],
     };
 
     return Scaffold(
@@ -112,6 +112,18 @@ class _ModeScreenState extends ConsumerState<ModeScreen> {
                   _mode = UserMode.professional;
                 }),
               ),
+              const SizedBox(height: FeSpace.sm),
+              FeChoiceCard(
+                key: const Key('mode.teacher'),
+                icon: Icons.co_present_outlined,
+                title: l.modeTeacher,
+                description: l.modeTeacherDescription,
+                selected: _mode == UserMode.teacher,
+                onTap: () => setState(() {
+                  _role = null;
+                  _mode = UserMode.teacher;
+                }),
+              ),
               // Rol ixtiyoriy — yig‘ilgan holda (ekran sodda qoladi).
               if (roles.isNotEmpty) ...[
                 const SizedBox(height: FeSpace.md),
@@ -156,6 +168,14 @@ class _ModeScreenState extends ConsumerState<ModeScreen> {
                   key: const Key('mode.proNote'),
                   icon: Icons.verified_user_outlined,
                   text: l.modeProfessionalNotVerified,
+                ),
+              ],
+              if (_mode == UserMode.teacher) ...[
+                const SizedBox(height: FeSpace.md),
+                FeBanner(
+                  key: const Key('mode.teacherNote'),
+                  icon: Icons.co_present_outlined,
+                  text: l.modeTeacherNote,
                 ),
               ],
               const SizedBox(height: FeSpace.lg),

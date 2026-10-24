@@ -257,3 +257,8 @@ Egasi: «Apple’da to‘ldirayotganda hamma davlatlarga deb yozaylik. Esingda s
 - Dars oxiridagi test — **«Guruh testi»** (kirgan talabalar, o‘z ismi bilan, o‘rinlar, qiyin savollar muhokamasi), «Sinfda test» (jonli, taxallusli) dars tugmasidan olib tashlanadi, Ustoz panelida qoladi.
 - Test savollari o‘zbekcha (`source_lang: uz`), ru/en — «tarjima kutilmoqda» (til tartibi 2026-10-12 ga muvofiq).
 - Prod’ga qo‘llandi: `class_hardest_detail` funksiyasi (additiv).
+
+## 2026-10-24 — «Ustoz» rejimi va fan sahifasida darslar (egasi topshirig‘i)
+- Foydalanish rejimi uchta: Mutaxassis, Talaba, **Ustoz** (`UserMode.teacher`). Rejim faqat ilova tuzilishini o‘zgartiradi; darslar, jonli test va guruh testlari **serverdagi `teacher` roli** bilan ochiladi (rolni admin beradi).
+- Ustoz fanni («Sud tibbiyoti», «Sud toksikologiyasi») ochganda shu fan prezentatsiyalari kurs bo‘yicha ko‘rinadi, har dars qatorida «Guruh testi» tugmasi (10/15/20 savol, QR, jonli natija, qiyin savollar). Kurs → fan bog‘lami ilovada: «Toksikologik kimyo», «Apparatlar bilan ishlash» → toksikologiya; qolgan kurslar → sud tibbiyoti.
+- «Apparatlar bilan ishlash» alohida kurs (3 dars), rasmlar faqat ruxsatli (CC Commons, o‘z sxemalar) — `lesson-images` bucket (ommaviy o‘qish; yozish — ustoz/admin, 2 MB, PNG/JPG).

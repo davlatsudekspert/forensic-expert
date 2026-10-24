@@ -58,6 +58,7 @@ class ProfileScreen extends ConsumerWidget {
     String modeLabel(UserMode? m) => switch (m) {
       UserMode.professional => l.modeProfessional,
       UserMode.student => l.modeStudent,
+      UserMode.teacher => l.modeTeacher,
       null => '—',
     };
 

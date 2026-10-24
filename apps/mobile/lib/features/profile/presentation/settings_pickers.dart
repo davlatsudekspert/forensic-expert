@@ -86,6 +86,12 @@ class ModePickerScreen extends ConsumerWidget {
         l.modeStudent,
         l.modeStudentDescription,
       ),
+      (
+        UserMode.teacher,
+        Icons.co_present_outlined,
+        l.modeTeacher,
+        l.modeTeacherDescription,
+      ),
     ];
     return Scaffold(
       appBar: AppBar(title: FeAppBarTitle(l.settingsMode)),

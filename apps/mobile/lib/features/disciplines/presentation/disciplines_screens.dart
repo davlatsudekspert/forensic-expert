@@ -3,15 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/lessons.dart' show lessonListProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/settings/app_settings.dart' show UserMode;
+import '../../../core/settings/settings_controller.dart'
+    show settingsControllerProvider;
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../../domain/lessons/lesson_models.dart';
 import '../../../domain/library/library_models.dart';
+import '../../class_quiz/presentation/teacher_panel_screen.dart'
+    show watchIsTeacher;
 import '../../home/presentation/home_screen.dart' show HomeModule;
 import '../../knowledge/knowledge_strings.dart';
 import '../discipline_strings.dart';
@@ -224,6 +231,7 @@ class DisciplineScreen extends ConsumerWidget {
                       ),
                     ],
                   ],
+                  ..._lessonsSection(context, ref, d),
                   if (ownTopics.isNotEmpty) ...[
                     FeSectionHeader(l.disciplineSourcedTopics),
                     for (final e in ownTopics)
@@ -372,4 +380,107 @@ class _NextStepTile extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Fan → «Darslar» kurslari (egasi topshirig‘i, 2026-10-24): ustoz fanni
+/// tanlaganda shu fan prezentatsiyalari va har dars ostida «Guruh testi».
+/// Kurs nomlari — server seed’idagi (tools/lessons/build_lessons_seed.py)
+/// o‘zbekcha nomlar; toksikologiya kurslari ro‘yxati, qolgani — sud tibbiyoti.
+const _toxicologyCourses = {'Toksikologik kimyo', 'Apparatlar bilan ishlash'};
+
+bool lessonCourseInDiscipline(String course, ForensicDiscipline d) {
+  final tox = _toxicologyCourses.contains(course);
+  return switch (d) {
+    ForensicDiscipline.forensicToxicology ||
+    ForensicDiscipline.forensicChemistry => tox,
+    ForensicDiscipline.forensicMedicine => !tox,
+    _ => false,
+  };
+}
+
+/// Fan sahifasidagi «Darslar: prezentatsiya va guruh testi» bo‘limi.
+/// Darslar serverda faqat ustoz roliga ochiq (`lesson_list`); «Ustoz» rejimi
+/// bo‘lib rol bo‘lmasa — rolni olish tartibiga havola.
+List<Widget> _lessonsSection(
+  BuildContext context,
+  WidgetRef ref,
+  ForensicDiscipline d,
+) {
+  if (!lessonCourseInDiscipline('Toksikologik kimyo', d) &&
+      !lessonCourseInDiscipline('Davolash ishi fakulteti', d)) {
+    return const [];
+  }
+  final l = AppLocalizations.of(context);
+  final c = FeTheme.of(context);
+  final t = Theme.of(context).textTheme;
+  final teacher = watchIsTeacher(ref);
+  final mode = ref.watch(settingsControllerProvider.select((s) => s.userMode));
+  if (!teacher) {
+    if (mode != UserMode.teacher) return const [];
+    return [
+      FeSectionHeader(l.disciplineLessonsTitle),
+      _NextStepTile(
+        key: const Key('discipline.lessonsTeacherOnly'),
+        icon: Icons.co_present_outlined,
+        title: l.disciplineLessonsTeacherOnly,
+        onTap: () => context.push(Routes.teacher),
+      ),
+    ];
+  }
+  final all = ref.watch(lessonListProvider('')).value?.value;
+  if (all == null) {
+    return [
+      FeSectionHeader(l.disciplineLessonsTitle),
+      const LinearProgressIndicator(minHeight: 2),
+    ];
+  }
+  final items = [
+    for (final s in all)
+      if (lessonCourseInDiscipline(s.course, d)) s,
+  ];
+  if (items.isEmpty) return const [];
+  final groups = LessonGrouping.group(items);
+  return [
+    FeSectionHeader(l.disciplineLessonsTitle),
+    Text(
+      l.disciplineLessonsBody(items.length),
+      key: const Key('discipline.lessonsBody'),
+      style: t.bodySmall?.copyWith(color: c.textSecondary),
+    ),
+    for (final g in groups) ...[
+      Padding(
+        padding: const EdgeInsets.only(top: FeSpace.md, bottom: FeSpace.xs),
+        child: Semantics(
+          header: true,
+          child: Text(g.course, style: t.titleSmall?.copyWith(color: c.accent)),
+        ),
+      ),
+      for (final s in g.items)
+        ListTile(
+          key: Key('discipline.lesson.${s.topicId}'),
+          contentPadding: EdgeInsets.zero,
+          dense: true,
+          leading: Icon(Icons.slideshow_rounded, color: c.accent),
+          title: Text(s.title, maxLines: 2, overflow: TextOverflow.ellipsis),
+          subtitle: Text(l.lessonsSlideCount(s.slides)),
+          trailing: IconButton(
+            key: Key('discipline.lessonTest.${s.topicId}'),
+            tooltip: l.disciplineLessonGroupTest,
+            icon: const Icon(Icons.quiz_outlined),
+            onPressed: () => context.push(Routes.groupLessonTest(s.topicId)),
+          ),
+          onTap: () => context.push(Routes.lesson(s.topicId)),
+        ),
+    ],
+    const SizedBox(height: FeSpace.xs),
+    Align(
+      alignment: AlignmentDirectional.centerStart,
+      child: TextButton.icon(
+        key: const Key('discipline.lessonsAll'),
+        onPressed: () => context.push(Routes.lessons),
+        icon: const Icon(Icons.arrow_forward_rounded),
+        label: Text(l.disciplineLessonsAll),
+      ),
+    ),
+  ];
 }

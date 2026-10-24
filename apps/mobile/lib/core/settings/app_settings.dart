@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 /// Foydalanish rejimi — faqat UI tanlovi. Professional rejim professional
 /// maqom tasdiqlanganini **anglatmaydi** (maqom — alohida, server tomonida).
-enum UserMode { professional, student }
+/// `teacher` — o‘qituvchi (egasi topshirig‘i, 2026-10-24): fan → prezentatsiya →
+/// har mavzu ostida guruh testi. Darslar serverdagi `teacher` roli bilan ochiladi.
+enum UserMode { professional, student, teacher }
 
 /// Kontrast afzalligi. `system` — OS sozlamasini hurmat qiladi
 /// (iOS «Increase Contrast», Android yuqori kontrastli matn).

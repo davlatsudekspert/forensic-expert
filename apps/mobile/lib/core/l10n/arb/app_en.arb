@@ -13900,5 +13900,21 @@
   "lessonImageZoom": "Enlarge image",
   "@lessonImageZoom": {"description": "Semantics label: tap to open the image full screen."},
   "lessonImageCredit": "Image: {credit}",
-  "@lessonImageCredit": {"description": "Author/licence line under a lesson image.", "placeholders": {"credit": {"type": "String"}}}
+  "@lessonImageCredit": {"description": "Author/licence line under a lesson image.", "placeholders": {"credit": {"type": "String"}}},
+  "modeTeacher": "Teacher",
+  "@modeTeacher": {"description": "Usage mode card: teacher."},
+  "modeTeacherDescription": "Lecturers: lecture decks by discipline, a group test after every topic, live results with places",
+  "@modeTeacherDescription": {"description": "Usage mode card: teacher, who it is for."},
+  "modeTeacherNote": "Lessons and tests open with the teacher role on the server. The role is granted by the administrator — see the note in the Teacher panel.",
+  "@modeTeacherNote": {"description": "Note under the teacher mode card: server role is required for lessons."},
+  "disciplineLessonsTitle": "Lessons: presentation and group test",
+  "@disciplineLessonsTitle": {"description": "Discipline page section: lecture decks of this discipline with a group test under each."},
+  "disciplineLessonsBody": "{count} lessons. Open a lesson — at the end, «Give a test to a group»: students join by QR, results by name with places, hard questions for discussion.",
+  "@disciplineLessonsBody": {"description": "Discipline page section hint. {count} lessons.", "placeholders": {"count": {"type": "int"}}},
+  "disciplineLessonGroupTest": "Group test",
+  "@disciplineLessonGroupTest": {"description": "Tooltip/button on a lesson row: start a group test on this topic right away."},
+  "disciplineLessonsTeacherOnly": "Lessons and group tests open with the teacher role. Open the Teacher panel to see how to get it.",
+  "@disciplineLessonsTeacherOnly": {"description": "Discipline page note for teacher mode without the server role."},
+  "disciplineLessonsAll": "All lessons",
+  "@disciplineLessonsAll": {"description": "Link at the end of the discipline lessons section: full list."}
 }

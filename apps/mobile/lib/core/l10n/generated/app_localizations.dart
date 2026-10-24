@@ -63,7 +63,8 @@ import 'app_localizations_uz.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -71,7 +72,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -83,18 +85,19 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
     Locale('ru'),
-    Locale('uz')
+    Locale('uz'),
   ];
 
   /// Brand name. Not translated.
@@ -7865,7 +7868,12 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Claims: {claims} · sources: {sources} · evidence: {level} · version {version}'**
-  String dashboardItemMeta(int claims, int sources, String level, String version);
+  String dashboardItemMeta(
+    int claims,
+    int sources,
+    String level,
+    String version,
+  );
 
   /// Queue.
   ///
@@ -18654,9 +18662,58 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Image: {credit}'**
   String lessonImageCredit(String credit);
+
+  /// Usage mode card: teacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher'**
+  String get modeTeacher;
+
+  /// Usage mode card: teacher, who it is for.
+  ///
+  /// In en, this message translates to:
+  /// **'Lecturers: lecture decks by discipline, a group test after every topic, live results with places'**
+  String get modeTeacherDescription;
+
+  /// Note under the teacher mode card: server role is required for lessons.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons and tests open with the teacher role on the server. The role is granted by the administrator — see the note in the Teacher panel.'**
+  String get modeTeacherNote;
+
+  /// Discipline page section: lecture decks of this discipline with a group test under each.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons: presentation and group test'**
+  String get disciplineLessonsTitle;
+
+  /// Discipline page section hint. {count} lessons.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} lessons. Open a lesson — at the end, «Give a test to a group»: students join by QR, results by name with places, hard questions for discussion.'**
+  String disciplineLessonsBody(int count);
+
+  /// Tooltip/button on a lesson row: start a group test on this topic right away.
+  ///
+  /// In en, this message translates to:
+  /// **'Group test'**
+  String get disciplineLessonGroupTest;
+
+  /// Discipline page note for teacher mode without the server role.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons and group tests open with the teacher role. Open the Teacher panel to see how to get it.'**
+  String get disciplineLessonsTeacherOnly;
+
+  /// Link at the end of the discipline lessons section: full list.
+  ///
+  /// In en, this message translates to:
+  /// **'All lessons'**
+  String get disciplineLessonsAll;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -18665,26 +18722,28 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'ru', 'uz'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['en', 'ru', 'uz'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'en': return AppLocalizationsEn();
-    case 'ru': return AppLocalizationsRu();
-    case 'uz': return AppLocalizationsUz();
+    case 'en':
+      return AppLocalizationsEn();
+    case 'ru':
+      return AppLocalizationsRu();
+    case 'uz':
+      return AppLocalizationsUz();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
+    'that was used.',
   );
 }

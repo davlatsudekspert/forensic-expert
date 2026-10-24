@@ -240,6 +240,9 @@ class HomeScreen extends ConsumerWidget {
     // Ustoz paneli hamma rejimda ko‘rinadi; server ustoz rolini bersa —
     // tezkor amallardan keyin (yuqorida), aks holda bo‘limlardan keyin.
     final teacher = watchIsTeacher(ref);
+    // «Ustoz» rejimi: panel kartasi yuqorida (server roli bo‘lmasa ham —
+    // ichida rolni olish tartibi yozilgan).
+    final teacherTop = teacher || mode == UserMode.teacher;
 
     // Ierarxiya: sarlavha (salom, rejim, qidiruv) → rejimga mos 4 ta tezkor
     // amal → birinchi qadamlar → bo‘limlar → davom ettirish → taklif →
@@ -262,9 +265,9 @@ class HomeScreen extends ConsumerWidget {
                 children: [
                   const SizedBox(height: FeSpace.lg),
                   _ActionGrid(actions: actions),
-                  if (teacher) ...[
+                  if (teacherTop) ...[
                     const SizedBox(height: FeSpace.sm),
-                    const _TeacherPanelCard(teacher: true),
+                    _TeacherPanelCard(teacher: teacher),
                   ],
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.md),
@@ -276,7 +279,7 @@ class HomeScreen extends ConsumerWidget {
                   const FirstStepsCard(),
                   FeSectionHeader(l.homeAreasTitle),
                   _ModuleGrid(modules: modules),
-                  if (!teacher) ...[
+                  if (!teacherTop) ...[
                     const SizedBox(height: FeSpace.sm),
                     const _TeacherPanelCard(teacher: false),
                   ],
@@ -992,7 +995,11 @@ class _HomeHero extends ConsumerWidget {
       settingsControllerProvider.select((s) => s.userMode),
     );
     final student = mode == UserMode.student;
-    final modeLabel = student ? l.modeStudent : l.modeProfessional;
+    final modeLabel = switch (mode) {
+      UserMode.student => l.modeStudent,
+      UserMode.teacher => l.modeTeacher,
+      _ => l.modeProfessional,
+    };
     const radius = BorderRadius.vertical(
       bottom: Radius.circular(FeRadius.hero),
     );
