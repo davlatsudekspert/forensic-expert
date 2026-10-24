@@ -271,3 +271,6 @@ Egasi: «Apple’da to‘ldirayotganda hamma davlatlarga deb yozaylik. Esingda s
 ## 2026-10-24 — Pro narxlari (egasi qarori, yakuniy)
 Talaba $1.49/oy, $9.99/yil; Ustoz $2.49/oy, $24.99/yil; Mutaxassis $3.49/oy, $34.99/yil (uchta alohida obuna). Admin panel: istalgan emailga Pro berish (server `admin_set_plan`, audit). Tafsilot: `docs/PRO_PLAN_2026-10-24.md`. Pro — 0.4.0 versiyasida, tekshiruvdagi 0.3.1 ga tegilmaydi.
 - (2026-10-24, kech) Pro himoya qoidalari: reja faqat o‘z rejimini ochadi (Student Pro ≠ Ustoz paneli), rejim almashtirish huquq bermaydi; 30 kunlik sinov — do‘kon intro-offer + serverda qurilma-hash (bir telefon — bir sinov, boshqa Gmail bilan takrorlanmaydi); Pro faqat server tasdig‘i bilan. `docs/PRO_PLAN_2026-10-24.md` §5.
+
+## 2026-10-24 — «Sinf» so‘zi yo‘q, hammasi «Guruh testi» (egasi qarori)
+Ilovada «Sinfda test» degan joy qolmaydi: jonli test — «Guruh testi (jonli)», muddatli mavzu testi — «Guruh testi». Kod kalitlari (`class*`) va marshrutlar o‘zgarmaydi, faqat matn (uz/ru/en, `tool/l10n_group_wording.py`). CSV fayl nomi `guruh_test_…`. Maqsad: kim bo‘lib kirsa ham bitta tushuncha — guruh.

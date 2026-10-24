@@ -11358,7 +11358,7 @@ abstract class AppLocalizations {
   /// Quick action hint.
   ///
   /// In en, this message translates to:
-  /// **'Courses, practice, class quiz'**
+  /// **'Courses, practice, group test'**
   String get homeActLearnBody;
 
   /// Quick action hint.
@@ -15978,7 +15978,7 @@ abstract class AppLocalizations {
   /// Class quiz title.
   ///
   /// In en, this message translates to:
-  /// **'Class quiz'**
+  /// **'Group test (live)'**
   String get classQuizTitle;
 
   /// Study hub card subtitle.
@@ -15996,7 +15996,7 @@ abstract class AppLocalizations {
   /// Demo adapter banner.
   ///
   /// In en, this message translates to:
-  /// **'Demo mode: data stays on this device only. A real class needs the server connection.'**
+  /// **'Demo mode: data stays on this device only. A real group test needs the server connection.'**
   String get classDemoBanner;
 
   /// Demo chip.
@@ -16008,7 +16008,7 @@ abstract class AppLocalizations {
   /// Section.
   ///
   /// In en, this message translates to:
-  /// **'Join a class'**
+  /// **'Join a group test'**
   String get classJoinSection;
 
   /// Hint.
@@ -16020,7 +16020,7 @@ abstract class AppLocalizations {
   /// Join screen title.
   ///
   /// In en, this message translates to:
-  /// **'Join class'**
+  /// **'Join group test'**
   String get classJoinTitle;
 
   /// Button.
@@ -16032,13 +16032,13 @@ abstract class AppLocalizations {
   /// Field label.
   ///
   /// In en, this message translates to:
-  /// **'Class code'**
+  /// **'Test code'**
   String get classCodeLabel;
 
   /// Screen reader.
   ///
   /// In en, this message translates to:
-  /// **'Class code {code}'**
+  /// **'Test code {code}'**
   String classCodeSpoken(String code);
 
   /// Field label.
@@ -16062,7 +16062,7 @@ abstract class AppLocalizations {
   /// Scan screen title.
   ///
   /// In en, this message translates to:
-  /// **'Scan class QR'**
+  /// **'Scan the test QR'**
   String get classScanTitle;
 
   /// Hint.
@@ -16122,7 +16122,7 @@ abstract class AppLocalizations {
   /// Section.
   ///
   /// In en, this message translates to:
-  /// **'Recent classes'**
+  /// **'Recent tests'**
   String get classRecentSection;
 
   /// Session subtitle.
@@ -16152,7 +16152,7 @@ abstract class AppLocalizations {
   /// Privacy note.
   ///
   /// In en, this message translates to:
-  /// **'The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.'**
+  /// **'The teacher sees only your name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.'**
   String get classPrivacyNote;
 
   /// Sign-in card.
@@ -16242,19 +16242,19 @@ abstract class AppLocalizations {
   /// Button.
   ///
   /// In en, this message translates to:
-  /// **'Create class'**
+  /// **'Start the test'**
   String get classCreateAction;
 
   /// Projector hint.
   ///
   /// In en, this message translates to:
-  /// **'Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:'**
+  /// **'Open FORENSIC EXPERT → Group test and enter this code, or scan the QR:'**
   String get classHostJoinHint;
 
   /// Screen reader.
   ///
   /// In en, this message translates to:
-  /// **'QR code to join the class'**
+  /// **'QR code to join the test'**
   String get classQrSemantics;
 
   /// Counter.
@@ -16284,7 +16284,7 @@ abstract class AppLocalizations {
   /// Dialog title.
   ///
   /// In en, this message translates to:
-  /// **'Remove from class?'**
+  /// **'Remove from the test?'**
   String get classKickTitle;
 
   /// Dialog body.
@@ -16404,7 +16404,7 @@ abstract class AppLocalizations {
   /// Share subject.
   ///
   /// In en, this message translates to:
-  /// **'Class quiz results'**
+  /// **'Group test results'**
   String get classCsvSubject;
 
   /// Button.
@@ -16416,7 +16416,7 @@ abstract class AppLocalizations {
   /// Retention.
   ///
   /// In en, this message translates to:
-  /// **'The class is deleted automatically {days} days after it ends.'**
+  /// **'The test is deleted automatically {days} days after it ends.'**
   String classRetentionNote(int days);
 
   /// Button.
@@ -16602,7 +16602,7 @@ abstract class AppLocalizations {
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'Class quiz will be available once the FORENSIC EXPERT server is connected.'**
+  /// **'Group tests will be available once the FORENSIC EXPERT server is connected.'**
   String get classErrNotConfigured;
 
   /// Error.
@@ -16626,7 +16626,7 @@ abstract class AppLocalizations {
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'You don’t have access to this class.'**
+  /// **'You don’t have access to this test.'**
   String get classErrForbidden;
 
   /// Error.
@@ -16638,7 +16638,7 @@ abstract class AppLocalizations {
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'No class with this code. Check it and try again.'**
+  /// **'No test with this code. Check it and try again.'**
   String get classErrNotFound;
 
   /// Error.
@@ -16650,7 +16650,7 @@ abstract class AppLocalizations {
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'You are the teacher of this class and can’t join it as a student.'**
+  /// **'You are the teacher of this test and can’t join it as a student.'**
   String get classErrOwnSession;
 
   /// Error.
@@ -16662,7 +16662,7 @@ abstract class AppLocalizations {
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'The teacher removed you from this class.'**
+  /// **'The teacher removed you from this test.'**
   String get classErrKicked;
 
   /// Error.
@@ -16674,7 +16674,7 @@ abstract class AppLocalizations {
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'This class is full.'**
+  /// **'This test is full.'**
   String get classErrFull;
 
   /// Error.
@@ -16704,7 +16704,7 @@ abstract class AppLocalizations {
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'Too many open classes. Finish one first.'**
+  /// **'Too many open tests. Finish one first.'**
   String get classErrTooManySessions;
 
   /// Error.
@@ -16776,31 +16776,31 @@ abstract class AppLocalizations {
   /// Home card subtitle for users with the teacher role.
   ///
   /// In en, this message translates to:
-  /// **'Run a class quiz and get the results as CSV'**
+  /// **'Run a group test and get the results as CSV'**
   String get teacherPanelHomeBody;
 
   /// Home card subtitle for users without the teacher role.
   ///
   /// In en, this message translates to:
-  /// **'Join a class quiz with your teacher\'s code'**
+  /// **'Join a group test with your teacher\'s code'**
   String get teacherPanelHomeBodyStudent;
 
   /// Teacher panel intro.
   ///
   /// In en, this message translates to:
-  /// **'Run a live class quiz, give a topic test to a group, and see the results.'**
+  /// **'Run a live group test, give a topic test to a group, and see the results.'**
   String get teacherPanelIntro;
 
   /// Teacher panel: live quiz tile.
   ///
   /// In en, this message translates to:
-  /// **'Class quiz (live)'**
+  /// **'Group test (live)'**
   String get teacherRunTitle;
 
   /// Teacher panel action subtitle.
   ///
   /// In en, this message translates to:
-  /// **'Pick a topic — a 6-digit code and QR appear for the class'**
+  /// **'Pick a topic — a 6-digit code and QR appear for the group'**
   String get teacherRunBody;
 
   /// Teacher panel action and screen title: past class quizzes with CSV export.
@@ -16818,7 +16818,7 @@ abstract class AppLocalizations {
   /// Teacher panel action: the student join flow.
   ///
   /// In en, this message translates to:
-  /// **'Join a class (student)'**
+  /// **'Join a group test (student)'**
   String get teacherJoinTitle;
 
   /// Teacher panel action subtitle.
@@ -17454,7 +17454,7 @@ abstract class AppLocalizations {
   /// Empty.
   ///
   /// In en, this message translates to:
-  /// **'No students yet. Show the QR or code to the class.'**
+  /// **'No students yet. Show the QR or code to the group.'**
   String get grpMembersEmpty;
 
   /// Assignment progress.
@@ -18138,7 +18138,7 @@ abstract class AppLocalizations {
   /// Choice.
   ///
   /// In en, this message translates to:
-  /// **'Live class quiz'**
+  /// **'Live group test'**
   String get grpChoiceLive;
 
   /// Choice hint.

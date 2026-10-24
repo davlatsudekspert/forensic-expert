@@ -8258,7 +8258,7 @@
   "@homeActLearnTitle": {
     "description": "Quick action."
   },
-  "homeActLearnBody": "Courses, practice, class quiz",
+  "homeActLearnBody": "Courses, practice, group test",
   "@homeActLearnBody": {
     "description": "Quick action hint."
   },
@@ -11813,7 +11813,7 @@
   "@deleteAccountAppleNote": {
     "description": "Delete-account screen note for Apple accounts: Apple re-confirmation step."
   },
-  "classQuizTitle": "Class quiz",
+  "classQuizTitle": "Group test (live)",
   "@classQuizTitle": {
     "description": "Class quiz title."
   },
@@ -11825,7 +11825,7 @@
   "@classQuizIntro": {
     "description": "Hub intro."
   },
-  "classDemoBanner": "Demo mode: data stays on this device only. A real class needs the server connection.",
+  "classDemoBanner": "Demo mode: data stays on this device only. A real group test needs the server connection.",
   "@classDemoBanner": {
     "description": "Demo adapter banner."
   },
@@ -11833,7 +11833,7 @@
   "@classDemoChip": {
     "description": "Demo chip."
   },
-  "classJoinSection": "Join a class",
+  "classJoinSection": "Join a group test",
   "@classJoinSection": {
     "description": "Section."
   },
@@ -11841,7 +11841,7 @@
   "@classJoinHint": {
     "description": "Hint."
   },
-  "classJoinTitle": "Join class",
+  "classJoinTitle": "Join group test",
   "@classJoinTitle": {
     "description": "Join screen title."
   },
@@ -11849,11 +11849,11 @@
   "@classJoinAction": {
     "description": "Button."
   },
-  "classCodeLabel": "Class code",
+  "classCodeLabel": "Test code",
   "@classCodeLabel": {
     "description": "Field label."
   },
-  "classCodeSpoken": "Class code {code}",
+  "classCodeSpoken": "Test code {code}",
   "@classCodeSpoken": {
     "description": "Screen reader.",
     "placeholders": {
@@ -11874,7 +11874,7 @@
   "@classScanAction": {
     "description": "Button."
   },
-  "classScanTitle": "Scan class QR",
+  "classScanTitle": "Scan the test QR",
   "@classScanTitle": {
     "description": "Scan screen title."
   },
@@ -11919,7 +11919,7 @@
   "@classNewTitle": {
     "description": "Screen title."
   },
-  "classRecentSection": "Recent classes",
+  "classRecentSection": "Recent tests",
   "@classRecentSection": {
     "description": "Section."
   },
@@ -11947,7 +11947,7 @@
   "@classStatusFinished": {
     "description": "Status."
   },
-  "classPrivacyNote": "The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.",
+  "classPrivacyNote": "The teacher sees only your name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.",
   "@classPrivacyNote": {
     "description": "Privacy note."
   },
@@ -12022,15 +12022,15 @@
       }
     }
   },
-  "classCreateAction": "Create class",
+  "classCreateAction": "Start the test",
   "@classCreateAction": {
     "description": "Button."
   },
-  "classHostJoinHint": "Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:",
+  "classHostJoinHint": "Open FORENSIC EXPERT → Group test and enter this code, or scan the QR:",
   "@classHostJoinHint": {
     "description": "Projector hint."
   },
-  "classQrSemantics": "QR code to join the class",
+  "classQrSemantics": "QR code to join the test",
   "@classQrSemantics": {
     "description": "Screen reader."
   },
@@ -12063,7 +12063,7 @@
   "@classStartAction": {
     "description": "Button."
   },
-  "classKickTitle": "Remove from class?",
+  "classKickTitle": "Remove from the test?",
   "@classKickTitle": {
     "description": "Dialog title."
   },
@@ -12177,7 +12177,7 @@
   "@classExportCsv": {
     "description": "Button."
   },
-  "classCsvSubject": "Class quiz results",
+  "classCsvSubject": "Group test results",
   "@classCsvSubject": {
     "description": "Share subject."
   },
@@ -12185,7 +12185,7 @@
   "@classDone": {
     "description": "Button."
   },
-  "classRetentionNote": "The class is deleted automatically {days} days after it ends.",
+  "classRetentionNote": "The test is deleted automatically {days} days after it ends.",
   "@classRetentionNote": {
     "description": "Retention.",
     "placeholders": {
@@ -12376,7 +12376,7 @@
   "@classReportSent": {
     "description": "Snackbar."
   },
-  "classErrNotConfigured": "Class quiz will be available once the FORENSIC EXPERT server is connected.",
+  "classErrNotConfigured": "Group tests will be available once the FORENSIC EXPERT server is connected.",
   "@classErrNotConfigured": {
     "description": "Error."
   },
@@ -12392,7 +12392,7 @@
   "@classErrServer": {
     "description": "Error."
   },
-  "classErrForbidden": "You don’t have access to this class.",
+  "classErrForbidden": "You don’t have access to this test.",
   "@classErrForbidden": {
     "description": "Error."
   },
@@ -12400,7 +12400,7 @@
   "@classErrBadCode": {
     "description": "Error."
   },
-  "classErrNotFound": "No class with this code. Check it and try again.",
+  "classErrNotFound": "No test with this code. Check it and try again.",
   "@classErrNotFound": {
     "description": "Error."
   },
@@ -12408,7 +12408,7 @@
   "@classErrRateLimited": {
     "description": "Error."
   },
-  "classErrOwnSession": "You are the teacher of this class and can’t join it as a student.",
+  "classErrOwnSession": "You are the teacher of this test and can’t join it as a student.",
   "@classErrOwnSession": {
     "description": "Error."
   },
@@ -12416,7 +12416,7 @@
   "@classErrFinished": {
     "description": "Error."
   },
-  "classErrKicked": "The teacher removed you from this class.",
+  "classErrKicked": "The teacher removed you from this test.",
   "@classErrKicked": {
     "description": "Error."
   },
@@ -12424,7 +12424,7 @@
   "@classErrAlreadyStarted": {
     "description": "Error."
   },
-  "classErrFull": "This class is full.",
+  "classErrFull": "This test is full.",
   "@classErrFull": {
     "description": "Error."
   },
@@ -12444,7 +12444,7 @@
   "@classErrInvalidSettings": {
     "description": "Error."
   },
-  "classErrTooManySessions": "Too many open classes. Finish one first.",
+  "classErrTooManySessions": "Too many open tests. Finish one first.",
   "@classErrTooManySessions": {
     "description": "Error."
   },
@@ -12492,23 +12492,23 @@
   "@teacherPanelTitle": {
     "description": "Home card and screen title: teacher tools for the class quiz."
   },
-  "teacherPanelHomeBody": "Run a class quiz and get the results as CSV",
+  "teacherPanelHomeBody": "Run a group test and get the results as CSV",
   "@teacherPanelHomeBody": {
     "description": "Home card subtitle for users with the teacher role."
   },
-  "teacherPanelHomeBodyStudent": "Join a class quiz with your teacher's code",
+  "teacherPanelHomeBodyStudent": "Join a group test with your teacher's code",
   "@teacherPanelHomeBodyStudent": {
     "description": "Home card subtitle for users without the teacher role."
   },
-  "teacherPanelIntro": "Run a live class quiz, give a topic test to a group, and see the results.",
+  "teacherPanelIntro": "Run a live group test, give a topic test to a group, and see the results.",
   "@teacherPanelIntro": {
     "description": "Teacher panel intro."
   },
-  "teacherRunTitle": "Class quiz (live)",
+  "teacherRunTitle": "Group test (live)",
   "@teacherRunTitle": {
     "description": "Teacher panel: live quiz tile."
   },
-  "teacherRunBody": "Pick a topic — a 6-digit code and QR appear for the class",
+  "teacherRunBody": "Pick a topic — a 6-digit code and QR appear for the group",
   "@teacherRunBody": {
     "description": "Teacher panel action subtitle."
   },
@@ -12520,7 +12520,7 @@
   "@teacherResultsBody": {
     "description": "Teacher panel action subtitle."
   },
-  "teacherJoinTitle": "Join a class (student)",
+  "teacherJoinTitle": "Join a group test (student)",
   "@teacherJoinTitle": {
     "description": "Teacher panel action: the student join flow."
   },
@@ -13021,7 +13021,7 @@
   "@grpMembersSection": {
     "description": "Section."
   },
-  "grpMembersEmpty": "No students yet. Show the QR or code to the class.",
+  "grpMembersEmpty": "No students yet. Show the QR or code to the group.",
   "@grpMembersEmpty": {
     "description": "Empty."
   },
@@ -13598,7 +13598,7 @@
   "@grpChoiceSelfHint": {
     "description": "Choice hint."
   },
-  "grpChoiceLive": "Live class quiz",
+  "grpChoiceLive": "Live group test",
   "@grpChoiceLive": {
     "description": "Choice."
   },

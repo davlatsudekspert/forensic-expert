@@ -6348,7 +6348,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeActLearnTitle => 'O‘qish';
 
   @override
-  String get homeActLearnBody => 'Kurslar, mashqlar, sinfda test';
+  String get homeActLearnBody => 'Kurslar, mashqlar, guruh testi';
 
   @override
   String get homeActGuidelinesBody => 'Fanlar bo‘yicha amaliy yo‘riqlar';
@@ -9126,7 +9126,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Bu hisob Apple orqali ochilgan, shuning uchun parol kerak emas. Tasdiqlaganingizdan so‘ng Apple o‘zingizni tasdiqlashni so‘raydi va ilovaning Apple ID’ingizga kirish huquqi bekor qilinadi.';
 
   @override
-  String get classQuizTitle => 'Sinfda test';
+  String get classQuizTitle => 'Guruh testi (jonli)';
 
   @override
   String get classQuizCardSubtitle =>
@@ -9138,30 +9138,30 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classDemoBanner =>
-      'Demo rejim: ma’lumot faqat shu qurilmada qoladi. Haqiqiy sinf uchun server ulanishi kerak.';
+      'Demo rejim: ma’lumot faqat shu qurilmada qoladi. Haqiqiy guruh testi uchun server ulanishi kerak.';
 
   @override
   String get classDemoChip => 'DEMO';
 
   @override
-  String get classJoinSection => 'Sinfga qo‘shilish';
+  String get classJoinSection => 'Guruh testiga qo‘shilish';
 
   @override
   String get classJoinHint =>
       'Ustoz ekranidagi 6 xonali kodni kiriting yoki QR kodni skanerlang.';
 
   @override
-  String get classJoinTitle => 'Sinfga qo‘shilish';
+  String get classJoinTitle => 'Guruh testiga qo‘shilish';
 
   @override
   String get classJoinAction => 'Qo‘shilish';
 
   @override
-  String get classCodeLabel => 'Sinf kodi';
+  String get classCodeLabel => 'Test kodi';
 
   @override
   String classCodeSpoken(String code) {
-    return 'Sinf kodi $code';
+    return 'Test kodi $code';
   }
 
   @override
@@ -9175,7 +9175,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get classScanAction => 'QR skanerlash';
 
   @override
-  String get classScanTitle => 'Sinf QR kodini skanerlash';
+  String get classScanTitle => 'Test QR kodini skanerlash';
 
   @override
   String get classScanHint => 'Kamerani ustoz ekranidagi QR kodga qarating.';
@@ -9210,7 +9210,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get classNewTitle => 'Test o‘tkazish';
 
   @override
-  String get classRecentSection => 'So‘nggi sinflar';
+  String get classRecentSection => 'So‘nggi testlar';
 
   @override
   String classSessionLine(String code, String status) {
@@ -9228,7 +9228,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classPrivacyNote =>
-      'Ustoz faqat laqabingizni ko‘radi. Tugagan sinflar 30 kundan keyin avtomatik o‘chiriladi. Nomaqbul laqabga shikoyat qilish mumkin, u olib tashlanadi.';
+      'Ustoz faqat ismingizni ko‘radi. Tugagan testlar 30 kundan keyin avtomatik o‘chiriladi. Nomaqbul ismga shikoyat qilish mumkin, u olib tashlanadi.';
 
   @override
   String get classSignInTitle => 'Qo‘shilish uchun hisobga kiring';
@@ -9281,14 +9281,14 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get classCreateAction => 'Sinfni yaratish';
+  String get classCreateAction => 'Testni boshlash';
 
   @override
   String get classHostJoinHint =>
-      'FORENSIC EXPERT → Sinfda test bo‘limida shu kodni kiriting yoki QR kodni skanerlang:';
+      'FORENSIC EXPERT → Guruh testi bo‘limida shu kodni kiriting yoki QR kodni skanerlang:';
 
   @override
-  String get classQrSemantics => 'Sinfga qo‘shilish QR kodi';
+  String get classQrSemantics => 'Testga qo‘shilish QR kodi';
 
   @override
   String classJoinedCount(int joined, int limit) {
@@ -9307,7 +9307,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get classStartAction => 'Boshlash';
 
   @override
-  String get classKickTitle => 'Sinfdan chiqarilsinmi?';
+  String get classKickTitle => 'Testdan chiqarilsinmi?';
 
   @override
   String classKickBody(String nickname) {
@@ -9378,14 +9378,14 @@ class AppLocalizationsUz extends AppLocalizations {
   String get classExportCsv => 'Natijani saqlash / ulashish (CSV)';
 
   @override
-  String get classCsvSubject => 'Sinf testi natijalari';
+  String get classCsvSubject => 'Guruh testi natijalari';
 
   @override
   String get classDone => 'Tayyor';
 
   @override
   String classRetentionNote(int days) {
-    return 'Sinf tugagach $days kundan keyin avtomatik o‘chiriladi.';
+    return 'Test tugagach $days kundan keyin avtomatik o‘chiriladi.';
   }
 
   @override
@@ -9501,7 +9501,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classErrNotConfigured =>
-      'Sinfda test FORENSIC EXPERT serveri ulangach ishlaydi.';
+      'Guruh testi FORENSIC EXPERT serveri ulangach ishlaydi.';
 
   @override
   String get classErrNotSignedIn => 'Avval hisobga kiring.';
@@ -9515,14 +9515,14 @@ class AppLocalizationsUz extends AppLocalizations {
       'Serverda xatolik. Birozdan so‘ng qayta urinib ko‘ring.';
 
   @override
-  String get classErrForbidden => 'Bu sinfga kirish huquqingiz yo‘q.';
+  String get classErrForbidden => 'Bu testga kirish huquqingiz yo‘q.';
 
   @override
   String get classErrBadCode => '6 xonali kodni kiriting.';
 
   @override
   String get classErrNotFound =>
-      'Bunday kodli sinf topilmadi. Kodni tekshirib, qayta urinib ko‘ring.';
+      'Bunday kodli test topilmadi. Kodni tekshirib, qayta urinib ko‘ring.';
 
   @override
   String get classErrRateLimited =>
@@ -9530,20 +9530,20 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classErrOwnSession =>
-      'Siz bu sinfning ustozisiz, talaba sifatida qo‘shila olmaysiz.';
+      'Siz bu testning ustozisiz, talaba sifatida qo‘shila olmaysiz.';
 
   @override
   String get classErrFinished => 'Bu test allaqachon tugagan.';
 
   @override
-  String get classErrKicked => 'Ustoz sizni bu sinfdan chiqargan.';
+  String get classErrKicked => 'Ustoz sizni bu testdan chiqargan.';
 
   @override
   String get classErrAlreadyStarted =>
       'Test allaqachon boshlangan — yangi talaba qo‘shila olmaydi.';
 
   @override
-  String get classErrFull => 'Sinf to‘lgan.';
+  String get classErrFull => 'Test to‘lgan.';
 
   @override
   String get classErrNickLength => 'Laqab 2–20 belgidan iborat bo‘lishi kerak.';
@@ -9560,7 +9560,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classErrTooManySessions =>
-      'Ochiq sinflar juda ko‘p. Avval birini tugating.';
+      'Ochiq testlar juda ko‘p. Avval birini tugating.';
 
   @override
   String get classErrNotEnoughQuestions =>
@@ -9601,22 +9601,22 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get teacherPanelHomeBody =>
-      'Sinfda test o‘tkazing, natijalarni CSV’da oling';
+      'Guruh testi o‘tkazing, natijalarni CSV’da oling';
 
   @override
   String get teacherPanelHomeBodyStudent =>
-      'Ustoz kodi bilan sinfda testga qo‘shiling';
+      'Ustoz kodi bilan guruh testiga qo‘shiling';
 
   @override
   String get teacherPanelIntro =>
-      'Sinfda jonli test o‘tkazing, guruhga mavzu testi bering va natijalarni ko‘ring.';
+      'Jonli guruh testi o‘tkazing, guruhga mavzu testi bering va natijalarni ko‘ring.';
 
   @override
-  String get teacherRunTitle => 'Sinfda test (jonli)';
+  String get teacherRunTitle => 'Guruh testi (jonli)';
 
   @override
   String get teacherRunBody =>
-      'Mavzuni tanlang — sinf uchun 6 xonali kod va QR chiqadi';
+      'Mavzuni tanlang — guruh uchun 6 xonali kod va QR chiqadi';
 
   @override
   String get teacherResultsTitle => 'Natijalar va CSV';
@@ -9625,7 +9625,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get teacherResultsBody => 'O‘tkazilgan testlar, reyting va CSV fayl';
 
   @override
-  String get teacherJoinTitle => 'Sinfga qo‘shilish (talaba)';
+  String get teacherJoinTitle => 'Guruh testiga qo‘shilish (talaba)';
 
   @override
   String get teacherJoinBody => 'Ustoz bergan kod yoki QR bilan';
@@ -9997,7 +9997,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpMembersEmpty =>
-      'Hozircha talaba yo‘q. Sinfga QR yoki kodni ko‘rsating.';
+      'Hozircha talaba yo‘q. Guruhga QR yoki kodni ko‘rsating.';
 
   @override
   String grpProgress(int started, int finished, int total) {
@@ -10412,7 +10412,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Shu qurilmada 10 ta savol; hech narsa yuborilmaydi';
 
   @override
-  String get grpChoiceLive => 'Sinfda jonli test';
+  String get grpChoiceLive => 'Jonli guruh testi';
 
   @override
   String get grpChoiceLiveHint => 'Ekranda kod va QR, savollar navbat bilan';

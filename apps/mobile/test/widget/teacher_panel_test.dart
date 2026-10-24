@@ -86,7 +86,7 @@ void main() {
         tester.getTopLeft(find.byKey(const Key('home.allDisciplines'))).dy,
       ),
     );
-    expect(find.text('Ustoz kodi bilan sinfda testga qo‘shiling'), findsOne);
+    expect(find.text('Ustoz kodi bilan guruh testiga qo‘shiling'), findsOne);
     await tapKey(tester, 'home.teacher');
     expect(find.byKey(const Key('teacher.notTeacherNote')), findsOneWidget);
     // Yopiq amal hech qayerga olib bormaydi.

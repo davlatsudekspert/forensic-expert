@@ -1033,10 +1033,10 @@ abstract final class ClassResultsCsv {
     return b.toString();
   }
 
-  /// `sinf_test_123456_2026-10-17.csv` — faqat ASCII.
+  /// `guruh_test_123456_2026-10-17.csv` — faqat ASCII.
   static String fileName(String code, DateTime date) {
     final d = date.toIso8601String().substring(0, 10);
     final c = code.replaceAll(RegExp(r'[^0-9]'), '');
-    return 'sinf_test_${c.isEmpty ? 'sessiya' : c}_$d.csv';
+    return 'guruh_test_${c.isEmpty ? 'sessiya' : c}_$d.csv';
   }
 }

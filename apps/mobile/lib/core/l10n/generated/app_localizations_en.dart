@@ -6358,7 +6358,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeActLearnTitle => 'Learning';
 
   @override
-  String get homeActLearnBody => 'Courses, practice, class quiz';
+  String get homeActLearnBody => 'Courses, practice, group test';
 
   @override
   String get homeActGuidelinesBody => 'Practical guidance by discipline';
@@ -9159,7 +9159,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'This account was created with Apple, so no password is needed. After you confirm, Apple will ask you to verify it is you, and the app\'s access to your Apple ID will be revoked.';
 
   @override
-  String get classQuizTitle => 'Class quiz';
+  String get classQuizTitle => 'Group test (live)';
 
   @override
   String get classQuizCardSubtitle =>
@@ -9171,30 +9171,30 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classDemoBanner =>
-      'Demo mode: data stays on this device only. A real class needs the server connection.';
+      'Demo mode: data stays on this device only. A real group test needs the server connection.';
 
   @override
   String get classDemoChip => 'DEMO';
 
   @override
-  String get classJoinSection => 'Join a class';
+  String get classJoinSection => 'Join a group test';
 
   @override
   String get classJoinHint =>
       'Enter the 6-digit code from the teacher’s screen or scan the QR.';
 
   @override
-  String get classJoinTitle => 'Join class';
+  String get classJoinTitle => 'Join group test';
 
   @override
   String get classJoinAction => 'Join';
 
   @override
-  String get classCodeLabel => 'Class code';
+  String get classCodeLabel => 'Test code';
 
   @override
   String classCodeSpoken(String code) {
-    return 'Class code $code';
+    return 'Test code $code';
   }
 
   @override
@@ -9208,7 +9208,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get classScanAction => 'Scan QR';
 
   @override
-  String get classScanTitle => 'Scan class QR';
+  String get classScanTitle => 'Scan the test QR';
 
   @override
   String get classScanHint =>
@@ -9244,7 +9244,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get classNewTitle => 'Run a quiz';
 
   @override
-  String get classRecentSection => 'Recent classes';
+  String get classRecentSection => 'Recent tests';
 
   @override
   String classSessionLine(String code, String status) {
@@ -9262,7 +9262,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classPrivacyNote =>
-      'The teacher sees only your nickname. Finished classes are deleted automatically after 30 days. Offensive nicknames can be reported and removed.';
+      'The teacher sees only your name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.';
 
   @override
   String get classSignInTitle => 'Sign in to join';
@@ -9315,14 +9315,14 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get classCreateAction => 'Create class';
+  String get classCreateAction => 'Start the test';
 
   @override
   String get classHostJoinHint =>
-      'Open FORENSIC EXPERT → Class quiz and enter this code, or scan the QR:';
+      'Open FORENSIC EXPERT → Group test and enter this code, or scan the QR:';
 
   @override
-  String get classQrSemantics => 'QR code to join the class';
+  String get classQrSemantics => 'QR code to join the test';
 
   @override
   String classJoinedCount(int joined, int limit) {
@@ -9341,7 +9341,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get classStartAction => 'Start';
 
   @override
-  String get classKickTitle => 'Remove from class?';
+  String get classKickTitle => 'Remove from the test?';
 
   @override
   String classKickBody(String nickname) {
@@ -9412,14 +9412,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get classExportCsv => 'Save / share results (CSV)';
 
   @override
-  String get classCsvSubject => 'Class quiz results';
+  String get classCsvSubject => 'Group test results';
 
   @override
   String get classDone => 'Done';
 
   @override
   String classRetentionNote(int days) {
-    return 'The class is deleted automatically $days days after it ends.';
+    return 'The test is deleted automatically $days days after it ends.';
   }
 
   @override
@@ -9535,7 +9535,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classErrNotConfigured =>
-      'Class quiz will be available once the FORENSIC EXPERT server is connected.';
+      'Group tests will be available once the FORENSIC EXPERT server is connected.';
 
   @override
   String get classErrNotSignedIn => 'Please sign in first.';
@@ -9549,34 +9549,34 @@ class AppLocalizationsEn extends AppLocalizations {
       'Something went wrong on the server. Try again in a moment.';
 
   @override
-  String get classErrForbidden => 'You don’t have access to this class.';
+  String get classErrForbidden => 'You don’t have access to this test.';
 
   @override
   String get classErrBadCode => 'Enter the 6-digit code.';
 
   @override
   String get classErrNotFound =>
-      'No class with this code. Check it and try again.';
+      'No test with this code. Check it and try again.';
 
   @override
   String get classErrRateLimited => 'Too many attempts. Try again in an hour.';
 
   @override
   String get classErrOwnSession =>
-      'You are the teacher of this class and can’t join it as a student.';
+      'You are the teacher of this test and can’t join it as a student.';
 
   @override
   String get classErrFinished => 'This quiz has already finished.';
 
   @override
-  String get classErrKicked => 'The teacher removed you from this class.';
+  String get classErrKicked => 'The teacher removed you from this test.';
 
   @override
   String get classErrAlreadyStarted =>
       'The quiz has already started — new students can’t join.';
 
   @override
-  String get classErrFull => 'This class is full.';
+  String get classErrFull => 'This test is full.';
 
   @override
   String get classErrNickLength => 'Nickname must be 2–20 characters.';
@@ -9594,7 +9594,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classErrTooManySessions =>
-      'Too many open classes. Finish one first.';
+      'Too many open tests. Finish one first.';
 
   @override
   String get classErrNotEnoughQuestions =>
@@ -9636,22 +9636,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get teacherPanelHomeBody =>
-      'Run a class quiz and get the results as CSV';
+      'Run a group test and get the results as CSV';
 
   @override
   String get teacherPanelHomeBodyStudent =>
-      'Join a class quiz with your teacher\'s code';
+      'Join a group test with your teacher\'s code';
 
   @override
   String get teacherPanelIntro =>
-      'Run a live class quiz, give a topic test to a group, and see the results.';
+      'Run a live group test, give a topic test to a group, and see the results.';
 
   @override
-  String get teacherRunTitle => 'Class quiz (live)';
+  String get teacherRunTitle => 'Group test (live)';
 
   @override
   String get teacherRunBody =>
-      'Pick a topic — a 6-digit code and QR appear for the class';
+      'Pick a topic — a 6-digit code and QR appear for the group';
 
   @override
   String get teacherResultsTitle => 'Results and CSV';
@@ -9660,7 +9660,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get teacherResultsBody => 'Past quizzes, leaderboard and a CSV file';
 
   @override
-  String get teacherJoinTitle => 'Join a class (student)';
+  String get teacherJoinTitle => 'Join a group test (student)';
 
   @override
   String get teacherJoinBody => 'With the code or QR from the teacher';
@@ -10039,7 +10039,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get grpMembersEmpty =>
-      'No students yet. Show the QR or code to the class.';
+      'No students yet. Show the QR or code to the group.';
 
   @override
   String grpProgress(int started, int finished, int total) {
@@ -10470,7 +10470,7 @@ class AppLocalizationsEn extends AppLocalizations {
       '10 questions on this device; nothing is sent';
 
   @override
-  String get grpChoiceLive => 'Live class quiz';
+  String get grpChoiceLive => 'Live group test';
 
   @override
   String get grpChoiceLiveHint =>

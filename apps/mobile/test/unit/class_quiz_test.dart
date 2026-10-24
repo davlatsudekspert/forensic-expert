@@ -203,11 +203,11 @@ void main() {
 
     test('fayl nomi ASCII va sanaga ega', () {
       final n = ClassResultsCsv.fileName('123456', DateTime(2026, 10, 17));
-      expect(n, 'sinf_test_123456_2026-10-17.csv');
+      expect(n, 'guruh_test_123456_2026-10-17.csv');
       expect(n.codeUnits.every((c) => c < 128), isTrue);
       expect(
         ClassResultsCsv.fileName('Ў-ҚҲ', DateTime(2026, 1, 2)),
-        'sinf_test_sessiya_2026-01-02.csv',
+        'guruh_test_sessiya_2026-01-02.csv',
       );
     });
   });
