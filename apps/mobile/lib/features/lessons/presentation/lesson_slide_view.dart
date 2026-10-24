@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 import '../../../core/design/theme.dart';
@@ -5,6 +7,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/lessons/lesson_models.dart';
 import 'lesson_canvas.dart';
+import 'lesson_image_view.dart';
 import 'lesson_rich_diagram.dart';
 
 enum LessonPageKind { slide, extras, references }
@@ -17,6 +20,7 @@ class LessonPage {
     required this.title,
     this.bullets = const [],
     this.diagram,
+    this.image,
     this.notes = '',
     this.sources = const [],
     this.group = 0,
@@ -31,6 +35,9 @@ class LessonPage {
   final String title;
   final List<LessonBullet> bullets;
   final LessonDiagram? diagram;
+
+  /// Faqat ishonchli hostdan (`LessonImage.tryParse`) — diagrammasiz sahifada.
+  final LessonImage? image;
   final String notes;
 
   /// Shu sahifadagi bandlarning manbalari (kitob bo‘yicha guruhlangan).
@@ -99,6 +106,9 @@ List<LessonPage> buildLessonPages(LessonDeck d, AppLocalizations l) {
         title: s.title.isEmpty ? l.lessonViewerSlideLabel(i + 1) : s.title,
         bullets: s.bullets,
         diagram: s.diagram,
+        image: s.image != null && LessonImage.isAllowedUrl(s.image!.url)
+            ? s.image
+            : null,
         notes: s.teacherNotes,
       ),
     );
@@ -141,6 +151,7 @@ List<LessonPage> buildLessonPages(LessonDeck d, AppLocalizations l) {
         title: f.baseTitle,
         bullets: [for (final p in g) ...p.bullets],
         diagram: _mergeDiagram(g),
+        image: g.map((p) => p.image).whereType<LessonImage>().firstOrNull,
         notes: f.notes,
         action: true,
       ),
@@ -194,21 +205,29 @@ class _PageBuilder {
     required String title,
     required List<LessonBullet> bullets,
     LessonDiagram? diagram,
+    LessonImage? image,
     String notes = '',
     bool action = false,
   }) {
-    LessonPage page(String t, List<LessonBullet> bs, [LessonDiagram? dg]) =>
-        LessonPage(kind: kind, title: t, bullets: bs, diagram: dg);
+    LessonPage page(
+      String t,
+      List<LessonBullet> bs, [
+      LessonDiagram? dg,
+      LessonImage? im,
+    ]) => LessonPage(kind: kind, title: t, bullets: bs, diagram: dg, image: im);
 
-    // 1) Butunligicha sig‘sa — bitta sahifa.
-    final whole = page(title, bullets, diagram);
-    if (_fits(whole, LessonCanvasMetrics.minBody, action: action)) {
+    // 1) Butunligicha sig‘sa — bitta sahifa (rasm + diagramma bir sahifada
+    // bo‘lmaydi: rasm bandlar bilan, diagramma alohida «davom» sahifasida).
+    final whole = page(title, bullets, diagram, image);
+    if ((image == null || diagram == null) &&
+        _fits(whole, LessonCanvasMetrics.minBody, action: action)) {
       return [
         LessonPage(
           kind: kind,
           title: title,
           bullets: bullets,
           diagram: diagram,
+          image: image,
           notes: notes,
           sources: _sourceGroups(bullets),
           group: group,
@@ -222,8 +241,12 @@ class _PageBuilder {
     final probe = '$title · 88/88';
     // Faqat jadval/sxema sahifasi slaydning barcha manbalarini ko‘rsatadi.
     final allSources = _sourceGroups(bullets);
-    bool fitsBullets(List<LessonBullet> bs, [LessonDiagram? dg]) => _fits(
-      page(probe, bs, dg),
+    bool fitsBullets(
+      List<LessonBullet> bs, [
+      LessonDiagram? dg,
+      LessonImage? im,
+    ]) => _fits(
+      page(probe, bs, dg, im),
       pack,
       action: action,
       sources: bs.isEmpty ? allSources : null,
@@ -233,14 +256,35 @@ class _PageBuilder {
       for (final b in bullets)
         if (fitsBullets([b])) b else ..._splitBullet(b, fitsBullets),
     ];
-    final chunks = <({List<LessonBullet> bullets, LessonDiagram? diagram})>[
-      for (final c in _paginate(atoms, fitsBullets, (b) => b.text.length))
-        (bullets: c, diagram: null),
-    ];
+    final chunks =
+        <
+          ({
+            List<LessonBullet> bullets,
+            LessonDiagram? diagram,
+            LessonImage? image,
+          })
+        >[
+          for (final c in _paginate(atoms, fitsBullets, (b) => b.text.length))
+            (bullets: c, diagram: null, image: null),
+        ];
+    if (image != null) {
+      // Rasm birinchi bandlar qismi yonida; sig‘masa — o‘z sahifasida.
+      if (chunks.isNotEmpty && fitsBullets(chunks.first.bullets, null, image)) {
+        chunks[0] = (
+          bullets: chunks.first.bullets,
+          diagram: null,
+          image: image,
+        );
+      } else {
+        chunks.insert(0, (bullets: const [], diagram: null, image: image));
+      }
+    }
     if (diagram != null) {
       final lastBullets = chunks.isEmpty ? null : chunks.last.bullets;
-      if (lastBullets != null && fitsBullets(lastBullets, diagram)) {
-        chunks.last = (bullets: lastBullets, diagram: diagram);
+      if (lastBullets != null &&
+          chunks.last.image == null &&
+          fitsBullets(lastBullets, diagram)) {
+        chunks.last = (bullets: lastBullets, diagram: diagram, image: null);
       } else if (diagram.kind == LessonDiagramKind.table &&
           !fitsBullets(const [], diagram)) {
         final rowChunks = _paginate<List<String>>(
@@ -252,10 +296,11 @@ class _PageBuilder {
           chunks.add((
             bullets: const [],
             diagram: _rows(diagram, rowChunks[i], i == rowChunks.length - 1),
+            image: null,
           ));
         }
       } else {
-        chunks.add((bullets: const [], diagram: diagram));
+        chunks.add((bullets: const [], diagram: diagram, image: null));
       }
     }
     final n = chunks.length;
@@ -267,6 +312,7 @@ class _PageBuilder {
           originalTitle: title,
           bullets: chunks[i].bullets,
           diagram: chunks[i].diagram,
+          image: chunks[i].image,
           notes: notes,
           // Faqat jadval/sxema sahifasi — slaydning manbalari (jadval shu
           // slayd manbalaridan); qolganlari — o‘z bandlarining manbalari.
@@ -440,6 +486,20 @@ class LessonSlideView extends StatelessWidget {
             ? LessonRichDiagram(diagram: page.diagram!, size: body)
             : _DiagramView(diagram: page.diagram!, size: body * 0.85);
 
+        final imageBlock = page.image == null
+            ? null
+            : Center(
+                child: LessonImageView(
+                  image: page.image!,
+                  width: math.min(w - 2 * pad, 560),
+                  height: math.min(w - 2 * pad, 560) * 0.62,
+                  captionSize: small + 3,
+                  creditSize: small,
+                  captionLines: 3,
+                  creditLines: 3,
+                ),
+              );
+
         final content = Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -467,6 +527,10 @@ class LessonSlideView extends StatelessWidget {
               )
             else ...[
               bullets,
+              if (imageBlock != null) ...[
+                SizedBox(height: body * 0.4),
+                imageBlock,
+              ],
               if (diagram != null) ...[SizedBox(height: body), diagram],
             ],
           ],

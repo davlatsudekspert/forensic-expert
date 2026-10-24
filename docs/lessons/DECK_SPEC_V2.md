@@ -8,7 +8,7 @@ qiyin savollar muhokamasi). Matn — faqat ustoz kitoblaridan, manba va bet bila
 ```
 { "topic": {...}, "slides": [Slide...], "mcq": [Mcq...], "extras": [...], "sources": [...] }
 Slide = { "title": str≤70, "bullets": [{"text": str≤160, "source": {"author","title","page"}, "uncertain": bool}] (2–5),
-          "diagram": Diagram|null, "diagram_note": str?, "teacher_notes": str }
+          "diagram": Diagram|null, "diagram_note": str?, "image": Image|null, "teacher_notes": str }
 Mcq   = { "question", "options": [4], "correct_index", "explanation", "source": {"author","title","page"} }
 ```
 Hamma matn — adabiy o‘zbek (lotin, o‘/g‘ to‘g‘ri). Raqam, birlik, formula, modda nomi — kitobdagidek.
@@ -26,6 +26,22 @@ Hamma matnlar qisqa (limitlar qavsda, belgi soni). Diagramma mazmuni ham **manba
 | `reaction` | `reagents` [≤3], `conditions?`≤40, `products` [≤3], `observation?`≤60, `caption?` | rangli reaksiyalar, cho‘kma |
 | `cycle` | `nodes` [3–6 × ≤28], `caption?` | aylanma jarayonlar (metabolizm fazalari) |
 Noma’lum kind yoki limitdan oshgan → ilova diagrammani o‘tkazib yuboradi (xatosiz), pptx jadval sifatida chizadi.
+
+## 2a. Slayd rasmi — `image` (ixtiyoriy)
+```
+"image": { "url": "https://<backend-host>/storage/v1/object/public/lesson-images/<fayl>.png",
+           "caption": str≤80, "credit": str≤120, "kind": "photo" | "scheme" }
+```
+- **Format: faqat raster — PNG yoki JPG** (SVG qo‘llab-quvvatlanmaydi: sxemalar serverga PNG qilib yuklanadi).
+- `credit` majburiy mazmun: muallif, litsenziya (masalan «CC BY-SA 4.0»), manba. Litsenziyasiz rasm qo‘yilmaydi.
+- `url`: faqat `https://` va **ilova backend hosti** (`FE_SUPABASE_URL`, Storage `lesson-images` bucket) yoki
+  `upload.wikimedia.org`. Boshqa host, `http://`, buzuq url — ilova rasmni ko‘rsatmaydi (xatosiz).
+- `caption`/`credit` limitdan uzun bo‘lsa ilova «…» bilan qisqartiradi; maydon yo‘q/buzuq → rasmsiz slayd.
+- Joylashuv: proyektorda bandlarning o‘ng tomonida (480×300 dp maydon + caption + kichik © credit), bandlar
+  bo‘lmasa — o‘rtada. **Rasm va diagramma bir sahifaga sig‘maydi**: ikkalasi bo‘lsa diagramma alohida «davom»
+  sahifasiga tushadi (rasm bandlar bilan). Telefonda — bandlar ostida. Bosilganda to‘liq ekran (pinch-zoom).
+- Rasm yuklanmasa/oflayn: «Rasm yuklanmadi» belgisi, caption va credit saqlanadi.
+- Tavsiya: 1200 px gacha kengligi, ≤ 400 KB; bir slaydga bitta rasm.
 
 ## 3. Deck talablari (enrichment)
 - 38–42 slayd; 1-slayd: reja va tayanch so‘zlar; oxirgi: «Adabiyotlar» (Yuldashev va boshqalar — manba ro‘yxatidan).

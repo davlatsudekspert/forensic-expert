@@ -13892,5 +13892,13 @@
   "grpHardestLocked": "Close the test to see the hard questions here.",
   "@grpHardestLocked": {"description": "Hint before the test is closed."},
   "grpErrNotFinished": "Hard questions appear after the test is closed.",
-  "@grpErrNotFinished": {"description": "Error: hard questions requested before the test was closed."}
+  "@grpErrNotFinished": {"description": "Error: hard questions requested before the test was closed."},
+  "lessonImageFailed": "Image failed to load",
+  "@lessonImageFailed": {"description": "Placeholder when a lesson image cannot be loaded."},
+  "lessonImageClose": "Close",
+  "@lessonImageClose": {"description": "Close button of the full-screen image."},
+  "lessonImageZoom": "Enlarge image",
+  "@lessonImageZoom": {"description": "Semantics label: tap to open the image full screen."},
+  "lessonImageCredit": "Image: {credit}",
+  "@lessonImageCredit": {"description": "Author/licence line under a lesson image.", "placeholders": {"credit": {"type": "String"}}}
 }

@@ -471,6 +471,75 @@ class LessonDiagram {
   final String observation;
 }
 
+enum LessonImageKind { photo, scheme }
+
+/// Slayd rasmi: `{"url","caption","credit","kind"}`. Faqat raster (PNG/JPG).
+///
+/// Xavfsizlik: faqat `https://` va ishonchli host (ilova backend’i —
+/// `FE_SUPABASE_URL` hosti — yoki `upload.wikimedia.org`). Boshqa host —
+/// [tryParse] null qaytaradi, rasm ko‘rsatilmaydi.
+@immutable
+class LessonImage {
+  const LessonImage({
+    required this.url,
+    this.caption = '',
+    this.credit = '',
+    this.kind = LessonImageKind.photo,
+  });
+
+  static const int maxCaption = 80;
+  static const int maxCredit = 120;
+  static const String wikimediaHost = 'upload.wikimedia.org';
+
+  /// Faqat testlar uchun: backend hosti (aks holda `FE_SUPABASE_URL`).
+  @visibleForTesting
+  static String? backendHostOverride;
+
+  static String? _backendHost() {
+    final o = backendHostOverride;
+    if (o != null) return o.isEmpty ? null : o;
+    const raw = String.fromEnvironment('FE_SUPABASE_URL');
+    if (raw.isEmpty) return null;
+    final h = Uri.tryParse(raw)?.host ?? '';
+    return h.isEmpty ? null : h.toLowerCase();
+  }
+
+  /// `https://` + (backend hosti | upload.wikimedia.org).
+  static bool isAllowedUrl(String url, {String? backendHost}) {
+    final u = Uri.tryParse(url.trim());
+    if (u == null || u.scheme != 'https' || u.host.isEmpty) return false;
+    if (u.userInfo.isNotEmpty) return false;
+    final h = u.host.toLowerCase();
+    if (h == wikimediaHost) return true;
+    final b = (backendHost ?? _backendHost())?.toLowerCase();
+    return b != null && b.isNotEmpty && h == b;
+  }
+
+  static LessonImage? tryParse(Object? raw, {String? backendHost}) {
+    if (raw is! Map) return null;
+    final url = _s(raw['url']).trim();
+    if (!isAllowedUrl(url, backendHost: backendHost)) return null;
+    String cut(Object? v, int n) {
+      final t = _s(v).trim();
+      return t.length <= n ? t : '${t.substring(0, n - 1).trimRight()}…';
+    }
+
+    return LessonImage(
+      url: url,
+      caption: cut(raw['caption'], maxCaption),
+      credit: cut(raw['credit'], maxCredit),
+      kind: _s(raw['kind']) == 'scheme'
+          ? LessonImageKind.scheme
+          : LessonImageKind.photo,
+    );
+  }
+
+  final String url;
+  final String caption;
+  final String credit;
+  final LessonImageKind kind;
+}
+
 @immutable
 class LessonSlide {
   const LessonSlide({
@@ -478,6 +547,7 @@ class LessonSlide {
     this.bullets = const [],
     this.teacherNotes = '',
     this.diagram,
+    this.image,
   });
 
   factory LessonSlide.fromJson(Object? raw) {
@@ -491,6 +561,7 @@ class LessonSlide {
       ],
       teacherNotes: _s(j['teacher_notes']),
       diagram: LessonDiagram.tryParse(j['diagram']),
+      image: LessonImage.tryParse(j['image']),
     );
   }
 
@@ -498,6 +569,9 @@ class LessonSlide {
   final List<LessonBullet> bullets;
   final String teacherNotes;
   final LessonDiagram? diagram;
+
+  /// Ixtiyoriy rasm (qurilma fotosi yoki sxema; PNG/JPG). Yo‘q/buzuq — null.
+  final LessonImage? image;
 
   /// Slayd manbalari (takrorlarsiz): «Muallif, Sarlavha, bet N».
   List<LessonSource> get sources {

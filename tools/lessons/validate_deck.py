@@ -37,6 +37,29 @@ def lst(v, lo, hi, maxlen, where, errs):
     return v
 
 
+def check_image(im, where, errs, backend_host=None):
+    """`image` maydoni (DECK_SPEC_V2 §2a): https + ishonchli host, PNG/JPG."""
+    from urllib.parse import urlparse
+    if not isinstance(im, dict):
+        errs.append(f"{where}: obyekt emas")
+        return
+    u = urlparse(str(im.get("url") or ""))
+    h = (u.hostname or "").lower()
+    ok_host = h == "upload.wikimedia.org" or (
+        h == backend_host if backend_host else h.endswith(".supabase.co"))
+    if u.scheme != "https" or u.username or not ok_host:
+        errs.append(f"{where}.url: faqat https va ishonchli host (backend/upload.wikimedia.org)")
+    if not u.path.lower().endswith((".png", ".jpg", ".jpeg")):
+        errs.append(f"{where}.url: PNG/JPG bo‘lishi kerak")
+    L(im.get("caption", ""), 80, f"{where}.caption", errs)
+    if not im.get("credit"):
+        errs.append(f"{where}.credit: muallif/litsenziya/manba kerak")
+    else:
+        L(im["credit"], 120, f"{where}.credit", errs)
+    if im.get("kind") not in ("photo", "scheme"):
+        errs.append(f"{where}.kind: photo|scheme")
+
+
 def check_diagram(d, where, errs):
     k = d.get("kind")
     if k not in LIM:
@@ -105,6 +128,8 @@ def check_deck(path, strict):
             src = b.get("source") or {}
             if not src.get("page"):
                 errs.append(f"{w}.bullets[{b_i}]: source.page yo‘q")
+        if s.get("image"):
+            check_image(s["image"], f"{w}.image", errs)
         dg = s.get("diagram")
         if dg:
             dia += 1

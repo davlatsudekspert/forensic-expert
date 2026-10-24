@@ -1,6 +1,5 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
-
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -42,16 +41,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get disclaimerTitle => 'Научный дисклеймер';
 
   @override
-  String get disclaimerBody =>
-      'Forensic Expert предназначен для профессиональной справки, обучения и научных расчётов. Приложение не заменяет валидированные лабораторные методики, институциональные протоколы, применимое законодательство и квалифицированное профессиональное суждение.';
+  String get disclaimerBody => 'Forensic Expert предназначен для профессиональной справки, обучения и научных расчётов. Приложение не заменяет валидированные лабораторные методики, институциональные протоколы, применимое законодательство и квалифицированное профессиональное суждение.';
 
   @override
-  String get disclaimerNoConclusions =>
-      'Приложение никогда не формирует экспертных заключений. Измеренная концентрация сама по себе не устанавливает причину смерти. Окончательное профессиональное суждение принадлежит квалифицированному специалисту.';
+  String get disclaimerNoConclusions => 'Приложение никогда не формирует экспертных заключений. Измеренная концентрация сама по себе не устанавливает причину смерти. Окончательное профессиональное суждение принадлежит квалифицированному специалисту.';
 
   @override
-  String get disclaimerConsult =>
-      'За медицинской консультацией, диагностикой или лечением обращайтесь к квалифицированному медицинскому специалисту.';
+  String get disclaimerConsult => 'За медицинской консультацией, диагностикой или лечением обращайтесь к квалифицированному медицинскому специалисту.';
 
   @override
   String get disclaimerAccept => 'Понятно';
@@ -60,29 +56,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get modeTitle => 'Как вы будете использовать FORENSIC EXPERT?';
 
   @override
-  String get modeSubtitle =>
-      'Главный экран подстроится под ваш выбор. Его можно изменить позже в профиле.';
+  String get modeSubtitle => 'Главный экран подстроится под ваш выбор. Его можно изменить позже в профиле.';
 
   @override
   String get modeProfessional => 'Специалист';
 
   @override
-  String get modeProfessionalDescription =>
-      'Судебные эксперты, врачи, токсикологи, химики и специалисты лабораторий';
+  String get modeProfessionalDescription => 'Судебные эксперты, врачи, токсикологи, химики и специалисты лабораторий';
 
   @override
   String get modeStudent => 'Студент';
 
   @override
-  String get modeStudentDescription =>
-      'Студенты, ординаторы и стажёры, исследователи и обучающиеся';
+  String get modeStudentDescription => 'Студенты, ординаторы и стажёры, исследователи и обучающиеся';
 
   @override
   String get modeResearch => 'Наука / преподавание';
 
   @override
-  String get modeResearchDescription =>
-      'Научная библиотека, источники и преподавание';
+  String get modeResearchDescription => 'Научная библиотека, источники и преподавание';
 
   @override
   String get navHome => 'Главная';
@@ -103,8 +95,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get searchHint => 'Поиск веществ, методов, инструментов, источников…';
 
   @override
-  String get searchUnavailable =>
-      'Поиск станет доступен после установки проверенной научной базы данных.';
+  String get searchUnavailable => 'Поиск станет доступен после установки проверенной научной базы данных.';
 
   @override
   String get moduleForensicMedicine => 'Судебная медицина';
@@ -131,8 +122,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get inDevelopmentTitle => 'Нет проверенного содержания';
 
   @override
-  String get inDevelopmentBody =>
-      'В этот раздел ещё не добавлена проверенная информация.';
+  String get inDevelopmentBody => 'В этот раздел ещё не добавлена проверенная информация.';
 
   @override
   String get unverifiedBanner => 'Информация ещё не подтверждена экспертом';
@@ -153,12 +143,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiNotConnectedTitle => 'ИИ временно недоступен';
 
   @override
-  String get aiNotConnectedBody =>
-      'Forensic AI будет отвечать только на основе проверенной внутренней базы знаний, всегда показывать источники и никогда не формировать экспертных заключений. Основная библиотека и калькуляторы работают без ИИ.';
+  String get aiNotConnectedBody => 'Forensic AI будет отвечать только на основе проверенной внутренней базы знаний, всегда показывать источники и никогда не формировать экспертных заключений. Основная библиотека и калькуляторы работают без ИИ.';
 
   @override
-  String get aiPiiWarning =>
-      'Не вводите ФИО, номера дел, паспортные данные, номера телефонов, адреса и другие персональные данные.';
+  String get aiPiiWarning => 'Не вводите ФИО, номера дел, паспортные данные, номера телефонов, адреса и другие персональные данные.';
 
   @override
   String get profileTitle => 'Профиль';
@@ -231,16 +219,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeRecentSearches => 'Недавние запросы';
 
   @override
-  String get homeEmptyRecentTools =>
-      'Здесь появятся открытые вами инструменты.';
+  String get homeEmptyRecentTools => 'Здесь появятся открытые вами инструменты.';
 
   @override
-  String get homeEmptyFavorites =>
-      'Добавляйте инструменты и записи библиотеки в избранное — они появятся здесь.';
+  String get homeEmptyFavorites => 'Добавляйте инструменты и записи библиотеки в избранное — они появятся здесь.';
 
   @override
-  String get homeEmptyRecentSearches =>
-      'Ваши запросы хранятся только на этом устройстве.';
+  String get homeEmptyRecentSearches => 'Ваши запросы хранятся только на этом устройстве.';
 
   @override
   String get homeContinueLearning => 'Продолжить обучение';
@@ -249,8 +234,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeStudyHubBody => 'Курсы, тесты, карточки и разбор случаев.';
 
   @override
-  String get homePrototypeNotice =>
-      'Демонстрационная сборка: записи с пометкой ОБРАЗЕЦ носят иллюстративный характер и не являются научным содержанием.';
+  String get homePrototypeNotice => 'Демонстрационная сборка: записи с пометкой ОБРАЗЕЦ носят иллюстративный характер и не являются научным содержанием.';
 
   @override
   String get testDataBadge => 'ОБРАЗЕЦ';
@@ -262,8 +246,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get openAction => 'Открыть';
 
   @override
-  String get toolsSubtitle =>
-      'Калькуляторы и пересчёты с формулой, допущениями и ограничениями.';
+  String get toolsSubtitle => 'Калькуляторы и пересчёты с формулой, допущениями и ограничениями.';
 
   @override
   String get toolCategoryToxicology => 'Токсикология';
@@ -275,50 +258,43 @@ class AppLocalizationsRu extends AppLocalizations {
   String get toolDilutionName => 'Разведение (C₁V₁ = C₂V₂)';
 
   @override
-  String get toolDilutionDesc =>
-      'Расчёт любого из четырёх параметров разведения.';
+  String get toolDilutionDesc => 'Расчёт любого из четырёх параметров разведения.';
 
   @override
   String get toolWidmarkName => 'Алкоголь в крови (Видмарк)';
 
   @override
-  String get toolWidmarkDesc =>
-      'Оценка с указанием допущений, неопределённости и ограничений.';
+  String get toolWidmarkDesc => 'Оценка с указанием допущений, неопределённости и ограничений.';
 
   @override
   String get toolBackCalcName => 'Обратный расчёт этанола';
 
   @override
-  String get toolBackCalcDesc =>
-      'Оценка диапазона на более ранний момент времени.';
+  String get toolBackCalcDesc => 'Оценка диапазона на более ранний момент времени.';
 
   @override
   String get toolPmiName => 'Посмертный интервал (PMI) — Хенссге';
 
   @override
-  String get toolPmiDesc =>
-      'Номограмма ректальной температуры (Henssge): оценка с 95 % границами.';
+  String get toolPmiDesc => 'Номограмма ректальной температуры (Henssge): оценка с 95 % границами.';
 
   @override
   String get toolMolarityName => 'Молярность и массовая концентрация';
 
   @override
-  String get toolMolarityDesc =>
-      'Молярная концентрация по навеске, молярной массе и объёму.';
+  String get toolMolarityDesc => 'Молярная концентрация по навеске, молярной массе и объёму.';
 
   @override
   String get toolCalibrationName => 'Калибровка и линейная регрессия';
 
   @override
-  String get toolCalibrationDesc =>
-      'Градуировочная зависимость, остатки и статистика аппроксимации.';
+  String get toolCalibrationDesc => 'Градуировочная зависимость, остатки и статистика аппроксимации.';
 
   @override
   String get toolLodName => 'LOD / LOQ';
 
   @override
-  String get toolLodDesc =>
-      'Пределы обнаружения и количественного определения по градуировке.';
+  String get toolLodDesc => 'Пределы обнаружения и количественного определения по градуировке.';
 
   @override
   String get toolStatsName => 'Описательная статистика';
@@ -330,8 +306,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get toolUnitsName => 'Пересчёт единиц концентрации';
 
   @override
-  String get toolUnitsDesc =>
-      'мг/л, мкг/мл, нг/мл, ммоль/л; массовая ↔ молярная при заданной молярной массе.';
+  String get toolUnitsDesc => 'мг/л, мкг/мл, нг/мл, ммоль/л; массовая ↔ молярная при заданной молярной массе.';
 
   @override
   String get toolEthanolUnitsName => 'Пересчёт единиц этанола';
@@ -346,8 +321,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get toolStatusPlanned => 'Запланировано';
 
   @override
-  String get toolPlannedBody =>
-      'Инструмент запланирован. Он будет добавлен только после экспертной проверки метода, формулы и источников.';
+  String get toolPlannedBody => 'Инструмент запланирован. Он будет добавлен только после экспертной проверки метода, формулы и источников.';
 
   @override
   String get favoriteAdd => 'Добавить в избранное';
@@ -404,32 +378,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcErrorPositive => 'Введите положительное число.';
 
   @override
-  String get calcErrorUnits =>
-      'Обе концентрации должны быть в совместимых единицах (массовых или молярных).';
+  String get calcErrorUnits => 'Обе концентрации должны быть в совместимых единицах (массовых или молярных).';
 
   @override
-  String get calcWarnExceeds =>
-      'Конечная концентрация выше исходной — проверьте данные.';
+  String get calcWarnExceeds => 'Конечная концентрация выше исходной — проверьте данные.';
 
   @override
-  String get calcDilutionAssumptionConservation =>
-      'При разведении количество вещества сохраняется.';
+  String get calcDilutionAssumptionConservation => 'При разведении количество вещества сохраняется.';
 
   @override
-  String get calcDilutionAssumptionMixing =>
-      'Объёмы аддитивны, смешивание полное.';
+  String get calcDilutionAssumptionMixing => 'Объёмы аддитивны, смешивание полное.';
 
   @override
-  String get calcDilutionLimitationContraction =>
-      'Не подходит при заметном уменьшении объёма при смешивании (например, концентрированный этанол и вода).';
+  String get calcDilutionLimitationContraction => 'Не подходит при заметном уменьшении объёма при смешивании (например, концентрированный этанол и вода).';
 
   @override
-  String get calcDefinitional =>
-      'Определяющее соотношение (сохранение количества вещества); литературные значения не используются.';
+  String get calcDefinitional => 'Определяющее соотношение (сохранение количества вещества); литературные значения не используются.';
 
   @override
-  String get calcNeedsReviewNotice =>
-      'Калькулятор ещё не проверен лабораторным рецензентом.';
+  String get calcNeedsReviewNotice => 'Калькулятор ещё не проверен лабораторным рецензентом.';
 
   @override
   String calcResultSemantics(String value) {
@@ -500,12 +467,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailNotReviewed => 'Не проверено';
 
   @override
-  String get detailPlaceholder =>
-      'Проверенные научные сведения для этой записи пока отсутствуют.';
+  String get detailPlaceholder => 'Проверенные научные сведения для этой записи пока отсутствуют.';
 
   @override
-  String get detailConcentrationsNote =>
-      'Концентрация сама по себе не устанавливает причину смерти. Значения будут показаны только с указанием матрицы, популяции и источников.';
+  String get detailConcentrationsNote => 'Концентрация сама по себе не устанавливает причину смерти. Значения будут показаны только с указанием матрицы, популяции и источников.';
 
   @override
   String get sourcesButton => 'Источники';
@@ -531,8 +496,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get searchNoResultsBody =>
-      'Проверьте написание или попробуйте другой язык — поддерживаются английские, русские и узбекские названия.';
+  String get searchNoResultsBody => 'Проверьте написание или попробуйте другой язык — поддерживаются английские, русские и узбекские названия.';
 
   @override
   String get searchOfflineLabel => 'На устройстве · офлайн';
@@ -541,8 +505,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get searchExternalTitle => 'Научные базы данных (онлайн)';
 
   @override
-  String get searchExternalBody =>
-      'Внешние базы (PubMed, PubChem, Crossref) в этой версии не подключены. Внешние результаты никогда не смешиваются с проверенной внутренней базой.';
+  String get searchExternalBody => 'Внешние базы (PubMed, PubChem, Crossref) в этой версии не подключены. Внешние результаты никогда не смешиваются с проверенной внутренней базой.';
 
   @override
   String get searchTypeToStart => 'Введите не менее двух символов.';
@@ -556,8 +519,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiAskTitle => 'Вопрос Forensic AI';
 
   @override
-  String get aiInputHint =>
-      'Спросите о веществах, методах или ограничениях интерпретации…';
+  String get aiInputHint => 'Спросите о веществах, методах или ограничениях интерпретации…';
 
   @override
   String get aiSend => 'Отправить';
@@ -589,8 +551,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiPreviewTitle => 'Структура ответа (демонстрация)';
 
   @override
-  String get aiPreviewNotice =>
-      'ДЕМОНСТРАЦИЯ — это не ответ ИИ и не научная рекомендация. Показано лишь, как будет устроен ответ после подключения.';
+  String get aiPreviewNotice => 'ДЕМОНСТРАЦИЯ — это не ответ ИИ и не научная рекомендация. Показано лишь, как будет устроен ответ после подключения.';
 
   @override
   String get aiSectionAvailable => 'Имеющиеся данные';
@@ -602,16 +563,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiSectionLimitations => 'Ограничения интерпретации';
 
   @override
-  String get aiSampleInternal =>
-      'Пример утверждения со ссылкой на проверенный внутренний источник.';
+  String get aiSampleInternal => 'Пример утверждения со ссылкой на проверенный внутренний источник.';
 
   @override
-  String get aiSampleExternal =>
-      'Пример утверждения из внешнего источника, не прошедшего проверку.';
+  String get aiSampleExternal => 'Пример утверждения из внешнего источника, не прошедшего проверку.';
 
   @override
-  String get aiSampleLimitation =>
-      'Пример ограничения — окончательная интерпретация требует полного контекста случая.';
+  String get aiSampleLimitation => 'Пример ограничения — окончательная интерпретация требует полного контекста случая.';
 
   @override
   String get aiEvidenceInternalVerified => 'Внутренний · подтверждено';
@@ -633,8 +591,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get aiExpertJudgment =>
-      'Окончательное профессиональное суждение принадлежит квалифицированному специалисту. Forensic AI не формирует экспертных заключений.';
+  String get aiExpertJudgment => 'Окончательное профессиональное суждение принадлежит квалифицированному специалисту. Forensic AI не формирует экспертных заключений.';
 
   @override
   String get aiReport => 'Пожаловаться на ответ';
@@ -661,8 +618,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get learnNotStarted => 'Не начато';
 
   @override
-  String get learnProgressEmpty =>
-      'Прогресс сохраняется на этом устройстве, когда вы начнёте.';
+  String get learnProgressEmpty => 'Прогресс сохраняется на этом устройстве, когда вы начнёте.';
 
   @override
   String learnLessonCount(int count) {
@@ -720,8 +676,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get contrastHigh => 'Высокий';
 
   @override
-  String get contrastSystemHint =>
-      '«Системный» следует настройкам специальных возможностей устройства.';
+  String get contrastSystemHint => '«Системный» следует настройкам специальных возможностей устройства.';
 
   @override
   String get privacyPolicy => 'Политика конфиденциальности';
@@ -742,16 +697,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get legalDraftNotice => 'Последнее обновление: 18.10.2026';
 
   @override
-  String get privacySummary =>
-      'Основная библиотека и калькуляторы работают офлайн. История поиска, прогресс и необязательный профиль (имя, организация, специальность) хранятся на вашем устройстве. Данные профиля и документы о квалификации передаются только при подаче заявки на профессиональное подтверждение, когда этот сервис будет подключён; документы хранятся конфиденциально и никогда не публикуются. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически. Фото профиля (если вы его задали) хранится только на этом устройстве.\n\nПриглашения: если вы используете код приглашения коллеги, сервер хранит только связь между аккаунтами и солёный хеш адреса вашей электронной почты (для защиты от злоупотреблений при повторном создании аккаунта). Пригласивший видит только итоговые числа — никогда ваше имя, адрес электронной почты, профиль или документы. Приложение не читает ваши контакты.\n\nПредложения и обращения: сообщение, отправленное через раздел «Предложения и обращения», необязательный скриншот (только JPEG/PNG/WebP, до 5 МБ), тип обращения и электронная почта вашего аккаунта хранятся на нашем сервере только для ответа вам и улучшения приложения. Их видит только уполномоченный администратор команды FORENSIC EXPERT; другие пользователи их никогда не видят. В ответе указывается «Команда FORENSIC EXPERT», а не имя администратора. Действия администратора записываются в журнал (без текста сообщений). Перед отправкой обращения запрашивается ваше согласие. Обращения и скриншоты не передаются третьим лицам и не используются для рекламы или обучения ИИ. При удалении аккаунта ваши обращения, сообщения и скриншоты удаляются полностью.\n\nРабочий журнал эксперта: ваши записи (название, метка дела, текст, связанные объекты и скопированные утверждения) хранятся только на этом устройстве. Они не отправляются на сервер, в телеметрию, в ИИ или другим пользователям и не попадают в резервные копии. Поделиться записью или скопировать её можно только по вашему нажатию. Журнал можно в любой момент удалить через «Рабочий журнал → Очистить весь журнал»; при удалении приложения записи тоже исчезают.';
+  String get privacySummary => 'Основная библиотека и калькуляторы работают офлайн. История поиска, прогресс и необязательный профиль (имя, организация, специальность) хранятся на вашем устройстве. Данные профиля и документы о квалификации передаются только при подаче заявки на профессиональное подтверждение, когда этот сервис будет подключён; документы хранятся конфиденциально и никогда не публикуются. В приложении нет рекламных SDK. Персональные данные и сведения о делах никогда не передаются ИИ автоматически. Фото профиля (если вы его задали) хранится только на этом устройстве.\n\nПриглашения: если вы используете код приглашения коллеги, сервер хранит только связь между аккаунтами и солёный хеш адреса вашей электронной почты (для защиты от злоупотреблений при повторном создании аккаунта). Пригласивший видит только итоговые числа — никогда ваше имя, адрес электронной почты, профиль или документы. Приложение не читает ваши контакты.\n\nПредложения и обращения: сообщение, отправленное через раздел «Предложения и обращения», необязательный скриншот (только JPEG/PNG/WebP, до 5 МБ), тип обращения и электронная почта вашего аккаунта хранятся на нашем сервере только для ответа вам и улучшения приложения. Их видит только уполномоченный администратор команды FORENSIC EXPERT; другие пользователи их никогда не видят. В ответе указывается «Команда FORENSIC EXPERT», а не имя администратора. Действия администратора записываются в журнал (без текста сообщений). Перед отправкой обращения запрашивается ваше согласие. Обращения и скриншоты не передаются третьим лицам и не используются для рекламы или обучения ИИ. При удалении аккаунта ваши обращения, сообщения и скриншоты удаляются полностью.\n\nРабочий журнал эксперта: ваши записи (название, метка дела, текст, связанные объекты и скопированные утверждения) хранятся только на этом устройстве. Они не отправляются на сервер, в телеметрию, в ИИ или другим пользователям и не попадают в резервные копии. Поделиться записью или скопировать её можно только по вашему нажатию. Журнал можно в любой момент удалить через «Рабочий журнал → Очистить весь журнал»; при удалении приложения записи тоже исчезают.';
 
   @override
-  String get aboutBody =>
-      'Профессиональное справочное, обучающее и научно-расчётное приложение для судебной экспертизы.';
+  String get aboutBody => 'Профессиональное справочное, обучающее и научно-расчётное приложение для судебной экспертизы.';
 
   @override
-  String get aboutVersions =>
-      'Версия приложения и версия научной базы данных учитываются раздельно.';
+  String get aboutVersions => 'Версия приложения и версия научной базы данных учитываются раздельно.';
 
   @override
   String get moduleHubTools => 'Инструменты раздела';
@@ -763,8 +715,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get settingsJurisdiction => 'Юрисдикция';
 
   @override
-  String get jurisdictionPickerIntro =>
-      'Научные данные международны и одинаковы для всех стран. Юрисдикция выбирает только правовой и процессуальный слой (законы, списки контролируемых веществ, национальные методики), который всегда показывается отдельно.';
+  String get jurisdictionPickerIntro => 'Научные данные международны и одинаковы для всех стран. Юрисдикция выбирает только правовой и процессуальный слой (законы, списки контролируемых веществ, национальные методики), который всегда показывается отдельно.';
 
   @override
   String get jurisdictionGroupGlobal => 'Международные и региональные';
@@ -773,26 +724,22 @@ class AppLocalizationsRu extends AppLocalizations {
   String get jurisdictionGroupCountries => 'Страны';
 
   @override
-  String get jurisdictionNoContent =>
-      'Правовой и процессуальный контент для этой юрисдикции пока не загружен. Каждая будущая запись будет содержать официальный источник, дату вступления в силу, редакцию и дату последней проверки.';
+  String get jurisdictionNoContent => 'Правовой и процессуальный контент для этой юрисдикции пока не загружен. Каждая будущая запись будет содержать официальный источник, дату вступления в силу, редакцию и дату последней проверки.';
 
   @override
   String get jurisdictionCompare => 'Сравнить юрисдикции';
 
   @override
-  String get jurisdictionCompareSoon =>
-      'Запланировано. Станет доступно, когда появится проверенный правовой контент хотя бы для двух юрисдикций.';
+  String get jurisdictionCompareSoon => 'Запланировано. Станет доступно, когда появится проверенный правовой контент хотя бы для двух юрисдикций.';
 
   @override
-  String get jurisdictionInternationalHint =>
-      'Выбрано «Международный»: здесь применимы только международные конвенции и стандарты. Выберите страну, чтобы увидеть её правовой слой.';
+  String get jurisdictionInternationalHint => 'Выбрано «Международный»: здесь применимы только международные конвенции и стандарты. Выберите страну, чтобы увидеть её правовой слой.';
 
   @override
   String get detailLayerScientific => 'Международные научные данные';
 
   @override
-  String get detailLayerScientificNote =>
-      'Не зависит от страны. Правовой статус и национальные процедуры показаны ниже отдельно.';
+  String get detailLayerScientificNote => 'Не зависит от страны. Правовой статус и национальные процедуры показаны ниже отдельно.';
 
   @override
   String detailLayerJurisdiction(String name) {
@@ -809,8 +756,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailChangeJurisdiction => 'Сменить юрисдикцию';
 
   @override
-  String get homePilotNotice =>
-      'Научная база проходит экспертную проверку. Каждая запись показана с источниками и статусом проверки и не является окончательным выводом.';
+  String get homePilotNotice => 'Научная база проходит экспертную проверку. Каждая запись показана с источниками и статусом проверки и не является окончательным выводом.';
 
   @override
   String get detailIdentity => 'Идентификаторы';
@@ -837,8 +783,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailExcerpt => 'Цитата из источника';
 
   @override
-  String get detailExcerptWithheld =>
-      'Цитата не показана: лицензия источника не разрешает повторное использование. Откройте источник.';
+  String get detailExcerptWithheld => 'Цитата не показана: лицензия источника не разрешает повторное использование. Откройте источник.';
 
   @override
   String get detailProvenance => 'Происхождение данных';
@@ -868,12 +813,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get detailTranslationDraft =>
-      'Названия переведены автоматически и ещё не проверены';
+  String get detailTranslationDraft => 'Названия переведены автоматически и ещё не проверены';
 
   @override
-  String get detailNoContentYet =>
-      'Для этого раздела пока нет контента с источниками.';
+  String get detailNoContentYet => 'Для этого раздела пока нет контента с источниками.';
 
   @override
   String detailSourceAccessed(String date) {
@@ -913,8 +856,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get legalInternationalLayer => 'Международный уровень (конвенции ООН)';
 
   @override
-  String get legalNotInListNote =>
-      'Отсутствие в этих списках не означает, что вещество не контролируется: национальное законодательство может отличаться.';
+  String get legalNotInListNote => 'Отсутствие в этих списках не означает, что вещество не контролируется: национальное законодательство может отличаться.';
 
   @override
   String legalNoNational(String name) {
@@ -922,19 +864,16 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get learnEmptyCourses =>
-      'Курсы появятся после экспертной проверки учебного контента.';
+  String get learnEmptyCourses => 'Курсы появятся после экспертной проверки учебного контента.';
 
   @override
   String get contentLoading => 'Загрузка научной базы…';
 
   @override
-  String get libraryNotInstalled =>
-      'В этой сборке научная база не установлена.';
+  String get libraryNotInstalled => 'В этой сборке научная база не установлена.';
 
   @override
-  String get aboutTrademarkPending =>
-      'Название и логотип: проверка товарного знака не завершена.';
+  String get aboutTrademarkPending => 'Название и логотип: проверка товарного знака не завершена.';
 
   @override
   String get statusDraft => 'Черновик';
@@ -991,8 +930,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get homeDbOffline =>
-      'Работает офлайн. Поиск и вопросы остаются на устройстве.';
+  String get homeDbOffline => 'Работает офлайн. Поиск и вопросы остаются на устройстве.';
 
   @override
   String get homeDbNotInstalled => 'Пакет контента не установлен.';
@@ -1038,8 +976,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reagentPreparation => 'Приготовление';
 
   @override
-  String get reagentNoRecipe =>
-      'В источниках не найден проверенный рецепт приготовления. Компоненты, количества, порядок, хранение и срок годности не показываются и не оцениваются.';
+  String get reagentNoRecipe => 'В источниках не найден проверенный рецепт приготовления. Компоненты, количества, порядок, хранение и срок годности не показываются и не оцениваются.';
 
   @override
   String get reagentIngredients => 'Компоненты';
@@ -1051,8 +988,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reagentSteps => 'Этапы';
 
   @override
-  String get reagentOrderNotStated =>
-      'Источник не указывает порядок добавления — этапы перечислены без нумерации.';
+  String get reagentOrderNotStated => 'Источник не указывает порядок добавления — этапы перечислены без нумерации.';
 
   @override
   String get reagentStorage => 'Хранение';
@@ -1076,8 +1012,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reagentOpenCalculator => 'Калькулятор приготовления раствора';
 
   @override
-  String get screeningBanner =>
-      'Результат скрининга — не подтверждённая идентификация. Положительный скрининг предварителен и требует валидированного подтверждающего метода.';
+  String get screeningBanner => 'Результат скрининга — не подтверждённая идентификация. Положительный скрининг предварителен и требует валидированного подтверждающего метода.';
 
   @override
   String get screeningAnalyte => 'Аналит';
@@ -1122,12 +1057,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get methodKindNational => 'Национальные методики';
 
   @override
-  String get methodKindSop =>
-      'СОП учреждений (стандартные операционные процедуры)';
+  String get methodKindSop => 'СОП учреждений (стандартные операционные процедуры)';
 
   @override
-  String get methodKindNote =>
-      'Типы методов не смешиваются: научный метод — не правовое требование, а СОП действует только в своём учреждении.';
+  String get methodKindNote => 'Типы методов не смешиваются: научный метод — не правовое требование, а СОП действует только в своём учреждении.';
 
   @override
   String get methodNoKindEntries => 'Записей этого типа пока нет.';
@@ -1168,8 +1101,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get evidenceTypeStandard => 'Стандарт';
 
   @override
-  String get emergingNote =>
-      'У каждой записи есть источник, дата, тип доказательства и охват. Это не новостная лента.';
+  String get emergingNote => 'У каждой записи есть источник, дата, тип доказательства и охват. Это не новостная лента.';
 
   @override
   String get emergingCatNps => 'Новые психоактивные вещества';
@@ -1268,8 +1200,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get fmTopicOdontology => 'Судебная одонтология';
 
   @override
-  String get fmTopicDisasterVictimIdentification =>
-      'Идентификация жертв катастроф';
+  String get fmTopicDisasterVictimIdentification => 'Идентификация жертв катастроф';
 
   @override
   String get fmTopicHistology => 'Судебная гистология';
@@ -1281,23 +1212,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get compareTitle => 'Сравнение юрисдикций';
 
   @override
-  String get compareTopicDrinkDrive =>
-      'Вождение в нетрезвом виде: установленный предел алкоголя';
+  String get compareTopicDrinkDrive => 'Вождение в нетрезвом виде: установленный предел алкоголя';
 
   @override
   String get compareNoData => 'Нет данных — вывод не делается';
 
   @override
-  String get compareNoTopics =>
-      'В пакете пока нет сопоставимых правовых данных.';
+  String get compareNoTopics => 'В пакете пока нет сопоставимых правовых данных.';
 
   @override
-  String get compareNotAdvice =>
-      'Справочная информация, не юридическая консультация. Сверяйтесь с действующим официальным текстом.';
+  String get compareNotAdvice => 'Справочная информация, не юридическая консультация. Сверяйтесь с действующим официальным текстом.';
 
   @override
-  String get compareNoInference =>
-      'Отсутствие данных не означает «разрешено», «не контролируется» или «запрещено».';
+  String get compareNoInference => 'Отсутствие данных не означает «разрешено», «не контролируется» или «запрещено».';
 
   @override
   String compareOverrides(String jurisdiction) {
@@ -1339,8 +1266,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get toolSolutionName => 'Приготовление раствора (необходимая масса)';
 
   @override
-  String get toolSolutionDesc =>
-      'Масса вещества для заданной концентрации и объёма: m = C·V(·M)/p. Молярную массу и чистоту вводите вы (сертификат/этикетка).';
+  String get toolSolutionDesc => 'Масса вещества для заданной концентрации и объёма: m = C·V(·M)/p. Молярную массу и чистоту вводите вы (сертификат/этикетка).';
 
   @override
   String get calcTargetConc => 'Целевая концентрация';
@@ -1355,27 +1281,22 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcMassRequired => 'Необходимая масса';
 
   @override
-  String get calcErrorMolarMass =>
-      'Для молярной концентрации введите молярную массу из сертификата или этикетки.';
+  String get calcErrorMolarMass => 'Для молярной концентрации введите молярную массу из сертификата или этикетки.';
 
   @override
   String get calcErrorPurity => 'Чистота должна быть больше 0 и не больше 1.';
 
   @override
-  String get calcSolutionAssumptionDefinition =>
-      'Расчёт по определению концентрации (без эмпирических коэффициентов).';
+  String get calcSolutionAssumptionDefinition => 'Расчёт по определению концентрации (без эмпирических коэффициентов).';
 
   @override
-  String get calcSolutionAssumptionInputs =>
-      'Молярную массу и чистоту вводит пользователь; ничего не оценивается.';
+  String get calcSolutionAssumptionInputs => 'Молярную массу и чистоту вводит пользователь; ничего не оценивается.';
 
   @override
-  String get calcSolutionLimitationRecipe =>
-      'Это не рецепт реактива: выбор вещества, порядок, хранение и стабильность — только из проверенного источника или СОП.';
+  String get calcSolutionLimitationRecipe => 'Это не рецепт реактива: выбор вещества, порядок, хранение и стабильность — только из проверенного источника или СОП.';
 
   @override
-  String get calcSolutionLimitationVolume =>
-      'Изменение объёма при растворении не учитывается.';
+  String get calcSolutionLimitationVolume => 'Изменение объёма при растворении не учитывается.';
 
   @override
   String get calcWarnPurity => 'Применена поправка на чистоту.';
@@ -1409,12 +1330,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiExperienceTutor => 'Подробно';
 
   @override
-  String get aiExperienceProfessionalHint =>
-      'Краткие ответы с источниками для специалистов.';
+  String get aiExperienceProfessionalHint => 'Краткие ответы с источниками для специалистов.';
 
   @override
-  String get aiExperienceTutorHint =>
-      'Пошаговые объяснения для обучения, всегда с источниками.';
+  String get aiExperienceTutorHint => 'Пошаговые объяснения для обучения, всегда с источниками.';
 
   @override
   String get aiFindSources => 'Найти источники офлайн';
@@ -1423,24 +1342,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiRetrievalTitle => 'Подходящие утверждения в офлайн-базе';
 
   @override
-  String get aiRetrievalNote =>
-      'Это не ответ ИИ: это результаты локального поиска, у каждого есть источник.';
+  String get aiRetrievalNote => 'Это не ответ ИИ: это результаты локального поиска, у каждого есть источник.';
 
   @override
-  String get aiNoContext =>
-      'В офлайн-базе нет надёжного контекста — ответ не даётся.';
+  String get aiNoContext => 'В офлайн-базе нет надёжного контекста — ответ не даётся.';
 
   @override
-  String get aiBlockedConclusion =>
-      'Окончательные выводы о причине или роде смерти не даются. Это решение эксперта с полными материалами дела.';
+  String get aiBlockedConclusion => 'Окончательные выводы о причине или роде смерти не даются. Это решение эксперта с полными материалами дела.';
 
   @override
-  String get aiBlockedLegal =>
-      'Юридические выводы (вина, обвинение, наказание) не даются.';
+  String get aiBlockedLegal => 'Юридические выводы (вина, обвинение, наказание) не даются.';
 
   @override
-  String get aiBlockedPii =>
-      'Удалите персональные данные перед поиском или вопросом.';
+  String get aiBlockedPii => 'Удалите персональные данные перед поиском или вопросом.';
 
   @override
   String get learnLevelAll => 'Все уровни';
@@ -1466,8 +1380,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get learnBookmarks => 'Избранное';
 
   @override
-  String get learnBookmarksEmpty =>
-      'Отметьте тему звёздочкой, чтобы найти её здесь.';
+  String get learnBookmarksEmpty => 'Отметьте тему звёздочкой, чтобы найти её здесь.';
 
   @override
   String get learnMarkComplete => 'Отметить как пройденный';
@@ -1476,15 +1389,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get learnCompleted => 'Пройден';
 
   @override
-  String get learnCourseSourceNote =>
-      'Уроки показывают исходные утверждения источников. Новый научный текст не пишется; материалы ждут экспертной проверки.';
+  String get learnCourseSourceNote => 'Уроки показывают исходные утверждения источников. Новый научный текст не пишется; материалы ждут экспертной проверки.';
 
   @override
   String get learnExam => 'Режим экзамена';
 
   @override
-  String get learnExamIntro =>
-      'Ответьте на все вопросы. Результаты и пояснения появятся только после отправки.';
+  String get learnExamIntro => 'Ответьте на все вопросы. Результаты и пояснения появятся только после отправки.';
 
   @override
   String get learnExamSubmit => 'Завершить экзамен';
@@ -1495,8 +1406,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get learnExamEmpty =>
-      'Проверенных экзаменационных вопросов пока нет. Вопросы не генерируются автоматически.';
+  String get learnExamEmpty => 'Проверенных экзаменационных вопросов пока нет. Вопросы не генерируются автоматически.';
 
   @override
   String get learnExamRetry => 'Пройти снова';
@@ -1526,8 +1436,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get group_cannabinoids => 'Каннабиноиды';
 
   @override
-  String get group_hallucinogens_dissociatives =>
-      'Галлюциногены и диссоциативы';
+  String get group_hallucinogens_dissociatives => 'Галлюциногены и диссоциативы';
 
   @override
   String get group_benzodiazepines => 'Бензодиазепины';
@@ -1563,8 +1472,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get groupAll => 'Все группы';
 
   @override
-  String get groupEditorialNote =>
-      'Группы — редакционная навигация, а не научная классификация.';
+  String get groupEditorialNote => 'Группы — редакционная навигация, а не научная классификация.';
 
   @override
   String get detailAnalyticalMethods => 'Аналитические методы (из источников)';
@@ -1573,8 +1481,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailReportedConcentrations => 'Сообщённые концентрации';
 
   @override
-  String get concentrationNotThreshold =>
-      'Значения из отдельных исследований или случаев — НЕ токсические, летальные или правовые пороги. Интерпретация зависит от образца, контекста, толерантности и посмертных изменений.';
+  String get concentrationNotThreshold => 'Значения из отдельных исследований или случаев — НЕ токсические, летальные или правовые пороги. Интерпретация зависит от образца, контекста, толерантности и посмертных изменений.';
 
   @override
   String get concentrationSpecimen => 'Образец';
@@ -1591,8 +1498,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailRelated => 'Связанные материалы';
 
   @override
-  String get relationAnalysedBy =>
-      'Анализируется методом (упомянуто в источнике)';
+  String get relationAnalysedBy => 'Анализируется методом (упомянуто в источнике)';
 
   @override
   String get relationMetabolism => 'Упомянуто вместе в источнике о метаболизме';
@@ -1620,8 +1526,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get researchTitle => 'Библиотека исследований';
 
   @override
-  String get researchNote =>
-      'Только метаданные и ссылки — полные тексты не копируются. Диссертации, тезисы и материалы конференций не приравниваются к рецензируемым статьям.';
+  String get researchNote => 'Только метаданные и ссылки — полные тексты не копируются. Диссертации, тезисы и материалы конференций не приравниваются к рецензируемым статьям.';
 
   @override
   String get researchAll => 'Все';
@@ -1724,12 +1629,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get licenseOriginalWork => 'Оригинальная работа (FORENSIC EXPERT)';
 
   @override
-  String get licenseFactualDepiction =>
-      'Оригинальное изображение фактических данных';
+  String get licenseFactualDepiction => 'Оригинальное изображение фактических данных';
 
   @override
-  String get histologyNote =>
-      'Справочная информация для специалистов. Приложение и Forensic AI не ставят гистологических диагнозов.';
+  String get histologyNote => 'Справочная информация для специалистов. Приложение и Forensic AI не ставят гистологических диагнозов.';
 
   @override
   String get fieldCaseObservation => 'Наблюдение (единичный случай)';
@@ -1858,8 +1761,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get toolPercentName => 'Процентные растворы';
 
   @override
-  String get toolPercentDesc =>
-      'Количество вещества для % (масс./об.), (об./об.) или (масс./масс.) по определению.';
+  String get toolPercentDesc => 'Количество вещества для % (масс./об.), (об./об.) или (масс./масс.) по определению.';
 
   @override
   String get calcValue => 'Значение';
@@ -1871,12 +1773,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcTo => 'В';
 
   @override
-  String get calcConvertAssumption =>
-      'Приставки единиц — определения СИ; пересчёт массовой ↔ молярной использует ρ = c · M.';
+  String get calcConvertAssumption => 'Приставки единиц — определения СИ; пересчёт массовой ↔ молярной использует ρ = c · M.';
 
   @override
-  String get calcConvertLimitation =>
-      'Молярная масса должна браться из сертификата или проверенных идентификационных данных; калькулятор её не оценивает.';
+  String get calcConvertLimitation => 'Молярная масса должна браться из сертификата или проверенных идентификационных данных; калькулятор её не оценивает.';
 
   @override
   String get calcMolarityMass => 'Навеска';
@@ -1888,8 +1788,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcMolarityResult => 'Молярная концентрация';
 
   @override
-  String get calcMolarityAssumption =>
-      'Определение молярной концентрации: c = n / V, где n = m · p / M.';
+  String get calcMolarityAssumption => 'Определение молярной концентрации: c = n / V, где n = m · p / M.';
 
   @override
   String get calcPercentBasis => 'Тип процентной концентрации';
@@ -1916,19 +1815,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcPercentSolute => 'Количество растворённого вещества';
 
   @override
-  String get calcPercentAssumption =>
-      'Определения процентной концентрации — как указано для каждого типа.';
+  String get calcPercentAssumption => 'Определения процентной концентрации — как указано для каждого типа.';
 
   @override
-  String get calcPercentLimitationBasis =>
-      'масс./об., об./об. и масс./масс. не взаимозаменяемы — используйте тип, указанный в валидированной методике или СОП.';
+  String get calcPercentLimitationBasis => 'масс./об., об./об. и масс./масс. не взаимозаменяемы — используйте тип, указанный в валидированной методике или СОП.';
 
   @override
   String get calcErrorPercent => 'Введите процент больше 0 и не более 100.';
 
   @override
-  String get calcStatsValues =>
-      'Значения (через пробел, «;» или с новой строки; десятичные 0,5 или 0.5)';
+  String get calcStatsValues => 'Значения (через пробел, «;» или с новой строки; десятичные 0,5 или 0.5)';
 
   @override
   String get calcStatsN => 'n';
@@ -1952,12 +1848,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcStatsMax => 'Максимум';
 
   @override
-  String get calcStatsAssumption =>
-      'Выборочное стандартное отклонение со знаменателем n − 1.';
+  String get calcStatsAssumption => 'Выборочное стандартное отклонение со знаменателем n − 1.';
 
   @override
-  String get calcStatsLimitation =>
-      'Проверка выбросов и нормальности не выполняется.';
+  String get calcStatsLimitation => 'Проверка выбросов и нормальности не выполняется.';
 
   @override
   String get calcStatsWarnSd => 'Для СО и КВ нужно не менее двух значений.';
@@ -1966,8 +1860,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcErrorValues => 'Введите только числовые значения.';
 
   @override
-  String get calcRegPoints =>
-      'Точки калибровки: по одной паре «x y» или «x; y» в строке';
+  String get calcRegPoints => 'Точки калибровки: по одной паре «x y» или «x; y» в строке';
 
   @override
   String get calcRegSlope => 'Наклон (b)';
@@ -1982,16 +1875,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcRegSyx => 'Остаточное СО (s_y/x)';
 
   @override
-  String get calcRegAssumptionOls =>
-      'Метод наименьших квадратов без весов, y = a + b·x.';
+  String get calcRegAssumptionOls => 'Метод наименьших квадратов без весов, y = a + b·x.';
 
   @override
-  String get calcRegLimitationRange =>
-      'Справедливо только в пределах калибровочного диапазона; взвешивание и линейность определяются валидацией методики.';
+  String get calcRegLimitationRange => 'Справедливо только в пределах калибровочного диапазона; взвешивание и линейность определяются валидацией методики.';
 
   @override
-  String get calcRegWarnFew =>
-      'Менее пяти точек калибровки — интерпретируйте с осторожностью.';
+  String get calcRegWarnFew => 'Менее пяти точек калибровки — интерпретируйте с осторожностью.';
 
   @override
   String get calcErrorPoints => 'Введите не менее трёх пар «x y» с разными x.';
@@ -2021,27 +1911,22 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcLodLoq => 'Предел количественного определения (QL = 10σ/S)';
 
   @override
-  String get calcLodAssumptionSigma =>
-      'σ оценивается одним из подходов, названных в источнике: СО холостых проб, остаточное СО или СО свободных членов.';
+  String get calcLodAssumptionSigma => 'σ оценивается одним из подходов, названных в источнике: СО холостых проб, остаточное СО или СО свободных членов.';
 
   @override
   String get calcLodAssumptionLinear => 'Отклик линеен вблизи предела.';
 
   @override
-  String get calcLodLimitationOne =>
-      'Это один из нескольких допустимых подходов; другие — визуальная оценка и отношение сигнал/шум.';
+  String get calcLodLimitationOne => 'Это один из нескольких допустимых подходов; другие — визуальная оценка и отношение сигнал/шум.';
 
   @override
-  String get calcLodLimitationVerify =>
-      'Источник требует подтверждать рассчитанные пределы анализом проб вблизи предела.';
+  String get calcLodLimitationVerify => 'Источник требует подтверждать рассчитанные пределы анализом проб вблизи предела.';
 
   @override
-  String get calcLodReference =>
-      'ICH Q2(R2) Validation of Analytical Procedures (2023) — §3.2.3.3';
+  String get calcLodReference => 'ICH Q2(R2) Validation of Analytical Procedures (2023) — §3.2.3.3';
 
   @override
-  String get calcLodReferenceNote =>
-      'Коэффициенты сверены с официальным PDF ICH Q2(R2); они не изменились по сравнению с Q2(R1) (заменён). Q2(R2) допускает также S/N и прямое подтверждение точности/прецизионности. Требуется подтверждение лабораторного рецензента (RG-25).';
+  String get calcLodReferenceNote => 'Коэффициенты сверены с официальным PDF ICH Q2(R2); они не изменились по сравнению с Q2(R1) (заменён). Q2(R2) допускает также S/N и прямое подтверждение точности/прецизионности. Требуется подтверждение лабораторного рецензента (RG-25).';
 
   @override
   String get calcUseRegression => 'Взять σ = s_y/x и S из этой регрессии';
@@ -2095,8 +1980,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeRecentlyViewed => 'Недавно просмотренные';
 
   @override
-  String get homeQuickEmpty =>
-      'Здесь появятся недавно просмотренные записи, инструменты, избранное и поиски. Они хранятся только на этом устройстве.';
+  String get homeQuickEmpty => 'Здесь появятся недавно просмотренные записи, инструменты, избранное и поиски. Они хранятся только на этом устройстве.';
 
   @override
   String homeJurisdictionChip(String name) {
@@ -2169,8 +2053,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get disc_laboratoryQuality => 'Качество и валидация в лаборатории';
 
   @override
-  String get disc_evidenceHandling =>
-      'Обращение с доказательствами и цепочка хранения';
+  String get disc_evidenceHandling => 'Обращение с доказательствами и цепочка хранения';
 
   @override
   String get disc_educationResearch => 'Образование и исследования';
@@ -2194,8 +2077,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get disciplinesTitle => 'Судебные дисциплины';
 
   @override
-  String get disciplinesIntro =>
-      'FORENSIC EXPERT охватывает эти дисциплины. Содержание добавляется постепенно и только с источниками и экспертной проверкой — пустая дисциплина означает «пока нет материалов с источниками», а не «знаний нет».';
+  String get disciplinesIntro => 'FORENSIC EXPERT охватывает эти дисциплины. Содержание добавляется постепенно и только с источниками и экспертной проверкой — пустая дисциплина означает «пока нет материалов с источниками», а не «знаний нет».';
 
   @override
   String disciplineRecords(int count) {
@@ -2212,8 +2094,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get disciplineReferenceOnly =>
-      'Только профессиональный справочный охват';
+  String get disciplineReferenceOnly => 'Только профессиональный справочный охват';
 
   @override
   String get disciplineModules => 'Модули';
@@ -2222,8 +2103,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get disciplineTopics => 'Планируемая структура тем';
 
   @override
-  String get disciplineEmpty =>
-      'В этой дисциплине пока нет контента с источниками. Записи будут добавляться только с проверяемыми источниками и экспертной проверкой.';
+  String get disciplineEmpty => 'В этой дисциплине пока нет контента с источниками. Записи будут добавляться только с проверяемыми источниками и экспертной проверкой.';
 
   @override
   String get jurisdictionsTitle => 'Право и юрисдикции';
@@ -2235,16 +2115,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get jurisdictionLayersTitle => 'Три отдельных слоя';
 
   @override
-  String get layerGlobalCore =>
-      'Глобальное научное ядро — одинаково во всех странах';
+  String get layerGlobalCore => 'Глобальное научное ядро — одинаково во всех странах';
 
   @override
-  String get layerIntlStandards =>
-      'Международные стандарты и методы — не закон, если не приняты';
+  String get layerIntlStandards => 'Международные стандарты и методы — не закон, если не приняты';
 
   @override
-  String get layerCountryLaw =>
-      'Право и процедуры страны / юрисдикции — только для выбранной юрисдикции';
+  String get layerCountryLaw => 'Право и процедуры страны / юрисдикции — только для выбранной юрисдикции';
 
   @override
   String get jurisdictionViewDetails => 'Правовой и процессуальный слой';
@@ -2256,12 +2133,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get jurisdictionSearchHint => 'Поиск страны или кода ISO';
 
   @override
-  String get jurisdictionNotVerified =>
-      'Контент для этой юрисдикции ещё не проверен. Законы других стран никогда не показываются вместо него.';
+  String get jurisdictionNotVerified => 'Контент для этой юрисдикции ещё не проверен. Законы других стран никогда не показываются вместо него.';
 
   @override
-  String get jurisdictionPilotContent =>
-      'Правовые записи · на юридической проверке';
+  String get jurisdictionPilotContent => 'Правовые записи · на юридической проверке';
 
   @override
   String get jurisdictionNoContentShort => 'Контент ещё не проверен';
@@ -2272,8 +2147,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get jurisdictionGlobalWorks =>
-      'Глобальный научный контент работает без выбора юрисдикции. Юрисдикция нужна только для законов, списков контролируемых веществ и национальных процедур.';
+  String get jurisdictionGlobalWorks => 'Глобальный научный контент работает без выбора юрисдикции. Юрисдикция нужна только для законов, списков контролируемых веществ и национальных процедур.';
 
   @override
   String get jurisdictionInstruments => 'Официальные документы';
@@ -2285,8 +2159,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get jurisdictionOwnLayer => 'Слой конкретной юрисдикции';
 
   @override
-  String get jurisdictionCountryNames =>
-      'Названия стран: Unicode CLDR. Список только позволяет выбор — это не значит, что есть правовой контент.';
+  String get jurisdictionCountryNames => 'Названия стран: Unicode CLDR. Список только позволяет выбор — это не значит, что есть правовой контент.';
 
   @override
   String get docKindLaw => 'ЗАКОН';
@@ -2313,23 +2186,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get docKindOfficial => 'ОФИЦИАЛЬНЫЙ ДОКУМЕНТ';
 
   @override
-  String get bindingLegal =>
-      'Юридически обязателен в своей юрисдикции, пока действует';
+  String get bindingLegal => 'Юридически обязателен в своей юрисдикции, пока действует';
 
   @override
-  String get bindingVoluntary =>
-      'Добровольный, если не принят законом или аккредитацией';
+  String get bindingVoluntary => 'Добровольный, если не принят законом или аккредитацией';
 
   @override
   String get bindingAdvisory => 'Рекомендательный — не обязателен юридически';
 
   @override
-  String get bindingInstitutional =>
-      'Действует только в выпустившем учреждении';
+  String get bindingInstitutional => 'Действует только в выпустившем учреждении';
 
   @override
-  String get bindingScientific =>
-      'Научное доказательство — не нормативный документ';
+  String get bindingScientific => 'Научное доказательство — не нормативный документ';
 
   @override
   String get instrNumber => 'Официальный номер';
@@ -2374,8 +2243,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get translationNone => 'Только язык оригинала';
 
   @override
-  String get libraryHubIntro =>
-      'Единый раздел научных записей. У каждой записи указаны источник и статус проверки.';
+  String get libraryHubIntro => 'Единый раздел научных записей. У каждой записи указаны источник и статус проверки.';
 
   @override
   String get libraryStandards => 'Стандарты и официальные документы';
@@ -2401,8 +2269,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get libraryGroupDocs => 'Документы и доказательства';
 
   @override
-  String get standardsIntro =>
-      'Стандарты, руководства и методики помечены по типу. Юридически обязательны только законы и нормативные акты — и только в своей юрисдикции.';
+  String get standardsIntro => 'Стандарты, руководства и методики помечены по типу. Юридически обязательны только законы и нормативные акты — и только в своей юрисдикции.';
 
   @override
   String get researchFilterPeer => 'Только рецензируемые';
@@ -2438,8 +2305,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get researchRelevance => 'Судебно-экспертная значимость';
 
   @override
-  String get relevanceUnassessed =>
-      'Ещё не оценена рецензентом (отдельно от уровня доказательности)';
+  String get relevanceUnassessed => 'Ещё не оценена рецензентом (отдельно от уровня доказательности)';
 
   @override
   String get relevanceDirect => 'Прямая';
@@ -2480,12 +2346,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get aiBlockedOfficial =>
-      'Forensic AI не составляет официальные экспертные заключения, свидетельства о смерти и окончательные выводы об интоксикации. Он может помочь найти и сравнить источники.';
+  String get aiBlockedOfficial => 'Forensic AI не составляет официальные экспертные заключения, свидетельства о смерти и окончательные выводы об интоксикации. Он может помочь найти и сравнить источники.';
 
   @override
-  String get aiJurisdictionRequired =>
-      'Это правовой или процессуальный вопрос. Сначала выберите юрисдикцию — Forensic AI никогда не предполагает её сам.';
+  String get aiJurisdictionRequired => 'Это правовой или процессуальный вопрос. Сначала выберите юрисдикцию — Forensic AI никогда не предполагает её сам.';
 
   @override
   String get aiSelectJurisdiction => 'Выбрать юрисдикцию';
@@ -2494,22 +2358,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiSectionEvidenceStatus => 'Статус доказательств';
 
   @override
-  String get aiSampleEvidenceStatus =>
-      'У каждого утверждения указаны статус проверки и уровень доказательности исходной записи.';
+  String get aiSampleEvidenceStatus => 'У каждого утверждения указаны статус проверки и уровень доказательности исходной записи.';
 
   @override
   String get aiSectionJurisdiction => 'Юрисдикция';
 
   @override
-  String get aiSampleJurisdiction =>
-      'Правовые утверждения относятся только к выбранной юрисдикции; научные — глобальны.';
+  String get aiSampleJurisdiction => 'Правовые утверждения относятся только к выбранной юрисдикции; научные — глобальны.';
 
   @override
   String get aiSectionRelated => 'Связанные записи';
 
   @override
-  String get aiSampleRelated =>
-      'Ссылки на записи о веществах, методах и исследованиях, использованные в ответе.';
+  String get aiSampleRelated => 'Ссылки на записи о веществах, методах и исследованиях, использованные в ответе.';
 
   @override
   String get tpl_overview => 'Обзор';
@@ -2575,8 +2436,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tpl_instrumentation => 'Приборное оснащение';
 
   @override
-  String get tpl_qualitativeQuantitative =>
-      'Качественное / количественное применение';
+  String get tpl_qualitativeQuantitative => 'Качественное / количественное применение';
 
   @override
   String get tpl_validation => 'Требования к валидации';
@@ -2805,8 +2665,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get roleEditor => 'Научный редактор / администратор';
 
   @override
-  String get bannerRetracted =>
-      'Источник отозван — утверждение сохранено для прозрачности, но не является актуальным доказательством.';
+  String get bannerRetracted => 'Источник отозван — утверждение сохранено для прозрачности, но не является актуальным доказательством.';
 
   @override
   String get bannerSuperseded => 'Все источники этого утверждения заменены.';
@@ -2815,15 +2674,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get bannerOutdated => 'Отмечено рецензентом как устаревшее.';
 
   @override
-  String get bannerConflict =>
-      'ПРОТИВОРЕЧИЕ ДАННЫХ — источники расходятся или перекрываются. Нажмите, чтобы сравнить.';
+  String get bannerConflict => 'ПРОТИВОРЕЧИЕ ДАННЫХ — источники расходятся или перекрываются. Нажмите, чтобы сравнить.';
 
   @override
   String get conflictsTitle => 'Противоречия данных';
 
   @override
-  String get conflictsIntro =>
-      'Противоречия показываются, а не скрываются. Разрешить их может только квалифицированный рецензент; приложение не выбирает «правильный» вариант.';
+  String get conflictsIntro => 'Противоречия показываются, а не скрываются. Разрешить их может только квалифицированный рецензент; приложение не выбирает «правильный» вариант.';
 
   @override
   String get conflictKindDirect => 'Прямое противоречие';
@@ -2919,8 +2776,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get ctxNotAssessed => 'Ещё не оценено';
 
   @override
-  String get ctxAutoMinimal =>
-      'Проверенные контекстные данные для этой записи пока отсутствуют.';
+  String get ctxAutoMinimal => 'Проверенные контекстные данные для этой записи пока отсутствуют.';
 
   @override
   String get metRelationsTitle => 'Метаболиты (связи с источниками)';
@@ -2941,8 +2797,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get metKindArtifact => 'Артефакт';
 
   @override
-  String get metRoleNote =>
-      'Роль (активный, маркер…) указывается, только если она прямо указана в источнике.';
+  String get metRoleNote => 'Роль (активный, маркер…) указывается, только если она прямо указана в источнике.';
 
   @override
   String metParentOf(String name) {
@@ -2953,8 +2808,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get specimensTitle => 'Образцы';
 
   @override
-  String get specimensIntro =>
-      'Типы образцов с утверждениями из источников и приведёнными значениями. Приведённые значения не являются порогами.';
+  String get specimensIntro => 'Типы образцов с утверждениями из источников и приведёнными значениями. Приведённые значения не являются порогами.';
 
   @override
   String get specimenAbout => 'Об образце';
@@ -2986,8 +2840,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get detailMeasuredIn => 'Образцы с приведёнными значениями';
 
   @override
-  String get detailScreenedBy =>
-      'Скрининговые тесты (скрининг ≠ подтверждение)';
+  String get detailScreenedBy => 'Скрининговые тесты (скрининг ≠ подтверждение)';
 
   @override
   String get chainTitle => 'Цепочка знаний';
@@ -2996,8 +2849,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get chainOpen => 'Показать цепочку знаний';
 
   @override
-  String get chainIntro =>
-      'У каждой связи ниже есть основание (утверждение из источника, запись официального списка или каталога). Нажмите на связь, чтобы увидеть его.';
+  String get chainIntro => 'У каждой связи ниже есть основание (утверждение из источника, запись официального списка или каталога). Нажмите на связь, чтобы увидеть его.';
 
   @override
   String get chainMetabolites => 'Метаболиты';
@@ -3062,8 +2914,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get stdTextNotReproduced =>
-      'Текст стандарта в приложении не воспроизводится.';
+  String get stdTextNotReproduced => 'Текст стандарта в приложении не воспроизводится.';
 
   @override
   String get reviewTitle => 'Статус научной проверки';
@@ -3090,19 +2941,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reviewOpenConflicts => 'Открытых противоречий данных';
 
   @override
-  String get reviewExplain =>
-      'Утверждение становится ПОДТВЕРЖДЁННЫМ только после одобрения текущей версии двумя независимыми квалифицированными рецензентами по специальности. Приложение и его авторы не могут сами отметить что-либо как проверенное.';
+  String get reviewExplain => 'Утверждение становится ПОДТВЕРЖДЁННЫМ только после одобрения текущей версии двумя независимыми квалифицированными рецензентами по специальности. Приложение и его авторы не могут сами отметить что-либо как проверенное.';
 
   @override
   String get reviewRolesTitle => 'Роли и права рецензентов';
 
   @override
-  String get reviewRoleApprove =>
-      'Может одобрять или отклонять в своей специальности';
+  String get reviewRoleApprove => 'Может одобрять или отклонять в своей специальности';
 
   @override
-  String get reviewRoleFlagOnly =>
-      'Может отмечать противоречия, устаревание и запрашивать изменения — не может одобрять';
+  String get reviewRoleFlagOnly => 'Может отмечать противоречия, устаревание и запрашивать изменения — не может одобрять';
 
   @override
   String get reviewActionsList => 'Возможные действия';
@@ -3114,8 +2962,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get libraryReview => 'Статус проверки';
 
   @override
-  String get methodPublishedNote =>
-      'Опубликованный научный метод — не валидированная методика для конкретной лаборатории.';
+  String get methodPublishedNote => 'Опубликованный научный метод — не валидированная методика для конкретной лаборатории.';
 
   @override
   String get reagentConcentration => 'Концентрация';
@@ -3133,12 +2980,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reagentPpe => 'Средства индивидуальной защиты';
 
   @override
-  String get screeningResultType =>
-      'Тип результата (качественный / полуколичественный)';
+  String get screeningResultType => 'Тип результата (качественный / полуколичественный)';
 
   @override
-  String get screeningDetectionWindow =>
-      'Окно обнаружения (зависит от условий)';
+  String get screeningDetectionWindow => 'Окно обнаружения (зависит от условий)';
 
   @override
   String get screeningInterference => 'Интерференция';
@@ -3168,16 +3013,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiRagAnswer => 'Ответ';
 
   @override
-  String get aiRagJurisdictionNotApplicable =>
-      'Не правовой вопрос — юрисдикция не применяется';
+  String get aiRagJurisdictionNotApplicable => 'Не правовой вопрос — юрисдикция не применяется';
 
   @override
-  String get aiLimNotVerified =>
-      'Данные ещё не проверены квалифицированными рецензентами.';
+  String get aiLimNotVerified => 'Данные ещё не проверены квалифицированными рецензентами.';
 
   @override
-  String get aiLimConflict =>
-      'Источники расходятся или перекрываются — см. ПРОТИВОРЕЧИЕ ДАННЫХ.';
+  String get aiLimConflict => 'Источники расходятся или перекрываются — см. ПРОТИВОРЕЧИЕ ДАННЫХ.';
 
   @override
   String aiLimRetracted(int n) {
@@ -3185,12 +3027,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get aiLimExpert =>
-      'Интерпретация конкретного случая требует квалифицированного эксперта.';
+  String get aiLimExpert => 'Интерпретация конкретного случая требует квалифицированного эксперта.';
 
   @override
-  String get aiLimMock =>
-      'Демонстрационный провайдер — реальный ответ ИИ не сформирован.';
+  String get aiLimMock => 'Демонстрационный провайдер — реальный ответ ИИ не сформирован.';
 
   @override
   String get instrOriginalTitle => 'Оригинальное название';
@@ -3275,8 +3115,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get deleteLocalData => 'Удалить данные на этом устройстве';
 
   @override
-  String get deleteLocalDataBody =>
-      'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены только с этого устройства. Научная база и аккаунт не затрагиваются — для удаления аккаунта используйте «Удалить аккаунт».';
+  String get deleteLocalDataBody => 'Закладки, история поиска, недавно просмотренные записи и прогресс уроков будут удалены только с этого устройства. Научная база и аккаунт не затрагиваются — для удаления аккаунта используйте «Удалить аккаунт».';
 
   @override
   String get deleteLocalDataConfirm => 'Удалить';
@@ -3285,16 +3124,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get deleteLocalDataDone => 'Локальные данные удалены';
 
   @override
-  String get accountOptionalNote =>
-      'Аккаунт необязателен. Офлайн-справочник работает без входа; аккаунт нужен только для облачных сервисов.';
+  String get accountOptionalNote => 'Аккаунт необязателен. Офлайн-справочник работает без входа; аккаунт нужен только для облачных сервисов.';
 
   @override
-  String get accountNotConnected =>
-      'В этой сборке сервис аккаунтов ещё не подключён. Все офлайн-функции доступны.';
+  String get accountNotConnected => 'В этой сборке сервис аккаунтов ещё не подключён. Все офлайн-функции доступны.';
 
   @override
-  String get accountTestBackend =>
-      'ТЕСТОВЫЙ сервер аккаунтов — реальные письма не отправляются, данные хранятся только в памяти.';
+  String get accountTestBackend => 'ТЕСТОВЫЙ сервер аккаунтов — реальные письма не отправляются, данные хранятся только в памяти.';
 
   @override
   String get accountSignIn => 'Войти';
@@ -3333,12 +3169,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get accountVerifyNow => 'Подтвердить почту';
 
   @override
-  String get accountTermsAccept =>
-      'Я принимаю Условия использования и Политику конфиденциальности';
+  String get accountTermsAccept => 'Я принимаю Условия использования и Политику конфиденциальности';
 
   @override
-  String get accountMinimalData =>
-      'Мы запрашиваем только эл. почту. Профессиональные, служебные и личные данные не собираются.';
+  String get accountMinimalData => 'Мы запрашиваем только эл. почту. Профессиональные, служебные и личные данные не собираются.';
 
   @override
   String get passwordRulesTitle => 'Требования к паролю';
@@ -3384,8 +3218,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get verifyResend => 'Отправить новый код';
 
   @override
-  String get verifyResent =>
-      'Если аккаунт требует подтверждения, новый код отправлен.';
+  String get verifyResent => 'Если аккаунт требует подтверждения, новый код отправлен.';
 
   @override
   String get verifyDone => 'Почта подтверждена. Аккаунт активен.';
@@ -3394,8 +3227,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get forgotTitle => 'Сброс пароля';
 
   @override
-  String get forgotBody =>
-      'Введите эл. почту аккаунта. Если аккаунт существует, мы отправим код сброса.';
+  String get forgotBody => 'Введите эл. почту аккаунта. Если аккаунт существует, мы отправим код сброса.';
 
   @override
   String get forgotSubmit => 'Отправить код сброса';
@@ -3430,15 +3262,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get authErrMismatch => 'Пароли не совпадают.';
 
   @override
-  String get authErrTerms =>
-      'Примите Условия использования и Политику конфиденциальности.';
+  String get authErrTerms => 'Примите Условия использования и Политику конфиденциальности.';
 
   @override
   String get authErrCredentials => 'Неверная эл. почта или пароль.';
 
   @override
-  String get authErrNotVerified =>
-      'Почта ещё не подтверждена. Введите отправленный код.';
+  String get authErrNotVerified => 'Почта ещё не подтверждена. Введите отправленный код.';
 
   @override
   String get authErrCodeInvalid => 'Неверный код.';
@@ -3447,28 +3277,22 @@ class AppLocalizationsRu extends AppLocalizations {
   String get authErrCodeExpired => 'Срок действия кода истёк. Запросите новый.';
 
   @override
-  String get authErrAlreadyVerified =>
-      'Эта почта уже подтверждена. Можно войти.';
+  String get authErrAlreadyVerified => 'Эта почта уже подтверждена. Можно войти.';
 
   @override
-  String get authErrTooMany =>
-      'Слишком много попыток. Подождите минуту и повторите.';
+  String get authErrTooMany => 'Слишком много попыток. Подождите минуту и повторите.';
 
   @override
-  String get authErrOffline =>
-      'Нет подключения к интернету. Офлайн-функции продолжают работать.';
+  String get authErrOffline => 'Нет подключения к интернету. Офлайн-функции продолжают работать.';
 
   @override
-  String get authErrServer =>
-      'Сервис аккаунтов временно недоступен. Повторите позже.';
+  String get authErrServer => 'Сервис аккаунтов временно недоступен. Повторите позже.';
 
   @override
-  String get authErrNotConfigured =>
-      'Сервис аккаунтов в этой сборке ещё не подключён.';
+  String get authErrNotConfigured => 'Сервис аккаунтов в этой сборке ещё не подключён.';
 
   @override
-  String get authErrRecentLogin =>
-      'Неверный пароль. Подтвердите текущий пароль, чтобы продолжить.';
+  String get authErrRecentLogin => 'Неверный пароль. Подтвердите текущий пароль, чтобы продолжить.';
 
   @override
   String get authErrNotSignedIn => 'Сначала войдите в аккаунт.';
@@ -3477,12 +3301,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get deleteAccountTitle => 'Удаление аккаунта';
 
   @override
-  String get deleteAccountBody =>
-      'Аккаунт и связанные с ним данные на наших серверах (эл. почта, сессии входа, синхронизированные данные, записи о правах) будут удалены безвозвратно. Это действие нельзя отменить.';
+  String get deleteAccountBody => 'Аккаунт и связанные с ним данные на наших серверах (эл. почта, сессии входа, синхронизированные данные, записи о правах) будут удалены безвозвратно. Это действие нельзя отменить.';
 
   @override
-  String get deleteAccountLocalNote =>
-      'Данные на этом устройстве (закладки, история) удаляются отдельно: «Удалить данные на этом устройстве».';
+  String get deleteAccountLocalNote => 'Данные на этом устройстве (закладки, история) удаляются отдельно: «Удалить данные на этом устройстве».';
 
   @override
   String get deleteAccountUnderstand => 'Я понимаю, что это нельзя отменить';
@@ -3503,8 +3325,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiDisclaimerLink => 'Оговорка об ИИ';
 
   @override
-  String get aiDisclaimerBody =>
-      'Ответы Forensic AI формируются на основе локального содержимого приложения со ссылками на источники и не являются экспертным заключением. Они могут быть неполными или ошибочными, не проверены квалифицированным рецензентом и не должны быть единственным основанием для экспертного вывода, правового решения или лечения. Всегда проверяйте указанные источники и консультируйтесь с квалифицированным экспертом.';
+  String get aiDisclaimerBody => 'Ответы Forensic AI формируются на основе локального содержимого приложения со ссылками на источники и не являются экспертным заключением. Они могут быть неполными или ошибочными, не проверены квалифицированным рецензентом и не должны быть единственным основанием для экспертного вывода, правового решения или лечения. Всегда проверяйте указанные источники и консультируйтесь с квалифицированным экспертом.';
 
   @override
   String get accountSection => 'Аккаунт';
@@ -3513,29 +3334,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get availNoDataTitle => 'Записей пока нет';
 
   @override
-  String get availNoDataBody =>
-      'В установленной научной базе для этого раздела записей нет.';
+  String get availNoDataBody => 'В установленной научной базе для этого раздела записей нет.';
 
   @override
   String get availFilterTitle => 'По выбранному фильтру ничего не найдено';
 
   @override
-  String get availFilterBody =>
-      'Нет проверенных записей, соответствующих фильтру. Сбросьте фильтр или выполните поиск по всей базе.';
+  String get availFilterBody => 'Нет проверенных записей, соответствующих фильтру. Сбросьте фильтр или выполните поиск по всей базе.';
 
   @override
   String get availNotConnectedTitle => 'Недоступно в этой версии';
 
   @override
-  String get availNotConnectedBody =>
-      'Для этой функции нужен онлайн-сервис, который в этой версии не подключён. Все офлайн-функции продолжают работать.';
+  String get availNotConnectedBody => 'Для этой функции нужен онлайн-сервис, который в этой версии не подключён. Все офлайн-функции продолжают работать.';
 
   @override
   String get availServiceTitle => 'Сервис временно недоступен';
 
   @override
-  String get availServiceBody =>
-      'Проверьте подключение и повторите позже. Офлайн-функции продолжают работать.';
+  String get availServiceBody => 'Проверьте подключение и повторите позже. Офлайн-функции продолжают работать.';
 
   @override
   String get availClearFilters => 'Сбросить фильтры';
@@ -3553,24 +3370,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiPreviewPoint1 => 'Сейчас ответы ИИ не формируются.';
 
   @override
-  String get aiPreviewPoint2 =>
-      'Это временно; остальная часть приложения работает офлайн.';
+  String get aiPreviewPoint2 => 'Это временно; остальная часть приложения работает офлайн.';
 
   @override
-  String get aiPreviewPoint3 =>
-      'Пример ниже лишь показывает, как устроен ответ.';
+  String get aiPreviewPoint3 => 'Пример ниже лишь показывает, как устроен ответ.';
 
   @override
-  String get aiPreviewPoint4 =>
-      '«Найти источники офлайн» ищет в локальной базе и работает уже сейчас.';
+  String get aiPreviewPoint4 => '«Найти источники офлайн» ищет в локальной базе и работает уже сейчас.';
 
   @override
-  String get aiSendUnavailable =>
-      'ИИ временно недоступен — отправка отключена.';
+  String get aiSendUnavailable => 'ИИ временно недоступен — отправка отключена.';
 
   @override
-  String get concWarning =>
-      'Это значение получено из отдельного случая или исследования. Его нельзя трактовать как универсальный токсический, смертельный, терапевтический или правовой порог.';
+  String get concWarning => 'Это значение получено из отдельного случая или исследования. Его нельзя трактовать как универсальный токсический, смертельный, терапевтический или правовой порог.';
 
   @override
   String get concTitle => 'Сообщаемая концентрация';
@@ -3630,8 +3442,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcEngineLabel => 'Расчётный модуль';
 
   @override
-  String get calcEngineTested =>
-      'Проверен автоматическими программными тестами — это не научная экспертиза';
+  String get calcEngineTested => 'Проверен автоматическими программными тестами — это не научная экспертиза';
 
   @override
   String get calcEngineChip => 'Модуль протестирован';
@@ -3643,8 +3454,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcInterpretationLabel => 'Интерпретация';
 
   @override
-  String get calcInterpretationValue =>
-      'Зависит от контекста — требует профессиональной оценки';
+  String get calcInterpretationValue => 'Зависит от контекста — требует профессиональной оценки';
 
   @override
   String get statusRejected => 'Отклонено';
@@ -3656,12 +3466,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get modeRoleTitle => 'Ваша роль (необязательно)';
 
   @override
-  String get modeProfessionalNotVerified =>
-      'Выбор режима «Специалист» не означает, что ваш профессиональный статус подтверждён.';
+  String get modeProfessionalNotVerified => 'Выбор режима «Специалист» не означает, что ваш профессиональный статус подтверждён.';
 
   @override
-  String get modeSwitchNote =>
-      'Режим использования меняет только устройство приложения. Он не даёт и не отменяет профессиональное подтверждение.';
+  String get modeSwitchNote => 'Режим использования меняет только устройство приложения. Он не даёт и не отменяет профессиональное подтверждение.';
 
   @override
   String get roleStudent => 'Студент';
@@ -3703,8 +3511,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get roleOdontologist => 'Судебный одонтолог';
 
   @override
-  String get roleOtherProfessional =>
-      'Другой специалист судебной экспертизы / лаборатории';
+  String get roleOtherProfessional => 'Другой специалист судебной экспертизы / лаборатории';
 
   @override
   String get specForensicMedicine => 'Судебная медицина';
@@ -3773,22 +3580,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get accountChoiceTitle => 'Пользуйтесь приложением без учётной записи';
 
   @override
-  String get accountChoiceSubtitle =>
-      'Офлайн-база, поиск и калькуляторы работают без учётной записи. Она нужна только для облачных функций.';
+  String get accountChoiceSubtitle => 'Офлайн-база, поиск и калькуляторы работают без учётной записи. Она нужна только для облачных функций.';
 
   @override
   String get accountContinueWithout => 'Продолжить без учётной записи';
 
   @override
-  String get accountContinueWithoutNote =>
-      'Учётную запись можно создать позже в профиле.';
+  String get accountContinueWithoutNote => 'Учётную запись можно создать позже в профиле.';
 
   @override
   String get accountCreateOrSignIn => 'Создать учётную запись / Войти';
 
   @override
-  String get accountCloudUnavailable =>
-      'Облачный сервис учётных записей в этой версии не подключён. Всё офлайн продолжает работать.';
+  String get accountCloudUnavailable => 'Облачный сервис учётных записей в этой версии не подключён. Всё офлайн продолжает работать.';
 
   @override
   String get accountNeededFor => 'Учётная запись нужна для';
@@ -3797,8 +3601,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get accountNeedVerification => 'Профессионального подтверждения';
 
   @override
-  String get accountNeedReviews =>
-      'Профессиональных рецензий научных материалов';
+  String get accountNeedReviews => 'Профессиональных рецензий научных материалов';
 
   @override
   String get accountNeedSync => 'Синхронизации между устройствами';
@@ -3813,8 +3616,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get accountFillProfile => 'Заполнить профиль сейчас (необязательно)';
 
   @override
-  String get profileLocalOnlyNote =>
-      'Профиль хранится на этом устройстве. На сервер он отправляется, только когда вы подаёте его на подтверждение.';
+  String get profileLocalOnlyNote => 'Профиль хранится на этом устройстве. На сервер он отправляется, только когда вы подаёте его на подтверждение.';
 
   @override
   String get profileStudentTitle => 'Профиль студента';
@@ -3835,8 +3637,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profileSectionOptional => 'Необязательно';
 
   @override
-  String get profileStudentCannotReview =>
-      'Профиль студента предназначен для обучения: он не может подтверждать научные материалы или выполнять квалифицированные рецензии.';
+  String get profileStudentCannotReview => 'Профиль студента предназначен для обучения: он не может подтверждать научные материалы или выполнять квалифицированные рецензии.';
 
   @override
   String get fieldFullName => 'ФИО';
@@ -3887,15 +3688,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get fieldWorkEmail => 'Рабочий e-mail (необязательно)';
 
   @override
-  String get fieldPrivateHelper =>
-      'Не публикуется — не отображается в открытом профиле.';
+  String get fieldPrivateHelper => 'Не публикуется — не отображается в открытом профиле.';
 
   @override
   String get fieldLicense => 'Номер регистрации / лицензии (необязательно)';
 
   @override
-  String get fieldLicenseHelper =>
-      'Только если в вашей стране он выдаётся. Не публикуется.';
+  String get fieldLicenseHelper => 'Только если в вашей стране он выдаётся. Не публикуется.';
 
   @override
   String get fieldBio => 'Краткая профессиональная биография (необязательно)';
@@ -3907,12 +3706,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get fieldProInterests => 'Профессиональные интересы (необязательно)';
 
   @override
-  String get fieldShowOrganization =>
-      'Показывать организацию в открытом профиле';
+  String get fieldShowOrganization => 'Показывать организацию в открытом профиле';
 
   @override
-  String get fieldShowOrganizationHelper =>
-      'По умолчанию выключено. Имя, специальность и страна публикуются только после подтверждения.';
+  String get fieldShowOrganizationHelper => 'По умолчанию выключено. Имя, специальность и страна публикуются только после подтверждения.';
 
   @override
   String get formRequired => 'Обязательное поле';
@@ -3957,32 +3754,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get verifSuspended => 'Временно приостановлено';
 
   @override
-  String get verifUnverifiedBody =>
-      'Вы не подавали заявку на подтверждение. Все офлайн-функции доступны и без него.';
+  String get verifUnverifiedBody => 'Вы не подавали заявку на подтверждение. Все офлайн-функции доступны и без него.';
 
   @override
-  String get verifPendingBody =>
-      'Ваша заявка ожидает проверки уполномоченным сотрудником.';
+  String get verifPendingBody => 'Ваша заявка ожидает проверки уполномоченным сотрудником.';
 
   @override
-  String get verifVerifiedBody =>
-      'Ваш профессиональный статус подтверждён уполномоченным сотрудником. Право рецензирования выдаётся отдельно по каждой специальности.';
+  String get verifVerifiedBody => 'Ваш профессиональный статус подтверждён уполномоченным сотрудником. Право рецензирования выдаётся отдельно по каждой специальности.';
 
   @override
-  String get verifChangesBody =>
-      'Нужны дополнительные сведения. Обновите профиль или документы и отправьте заявку повторно.';
+  String get verifChangesBody => 'Нужны дополнительные сведения. Обновите профиль или документы и отправьте заявку повторно.';
 
   @override
-  String get verifRejectedBody =>
-      'Заявка не одобрена. Вы можете подать новую заявку.';
+  String get verifRejectedBody => 'Заявка не одобрена. Вы можете подать новую заявку.';
 
   @override
-  String get verifSuspendedBody =>
-      'Подтверждение временно приостановлено. Право рецензирования не действует.';
+  String get verifSuspendedBody => 'Подтверждение временно приостановлено. Право рецензирования не действует.';
 
   @override
-  String get verifServiceNotConnected =>
-      'Сервис подтверждения в этой версии не подключён. Заявки пока нельзя отправить, и никто не может быть подтверждён.';
+  String get verifServiceNotConnected => 'Сервис подтверждения в этой версии не подключён. Заявки пока нельзя отправить, и никто не может быть подтверждён.';
 
   @override
   String get verifHowTitle => 'Как проходит подтверждение';
@@ -3991,20 +3781,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get verifStep1 => 'Заполните профиль специалиста.';
 
   @override
-  String get verifStep2 =>
-      'При желании приложите документ о квалификации (хранится закрыто).';
+  String get verifStep2 => 'При желании приложите документ о квалификации (хранится закрыто).';
 
   @override
-  String get verifStep3 =>
-      'Уполномоченный администратор или подтверждённый специалист той же области вручную проверяет заявку и документ. Самоподтверждение невозможно.';
+  String get verifStep3 => 'Уполномоченный администратор или подтверждённый специалист той же области вручную проверяет заявку и документ. Самоподтверждение невозможно.';
 
   @override
-  String get verifStep4 =>
-      'Право рецензирования выдаётся отдельно по каждой специальности.';
+  String get verifStep4 => 'Право рецензирования выдаётся отдельно по каждой специальности.';
 
   @override
-  String get verifHumanOnly =>
-      'Выбор режима «Специалист», указание должности, загрузка сертификата или автоматическая/ИИ-проверка никогда не дают статус подтверждённого специалиста. Документ — лишь доказательство; статус присваивается только после ручной проверки, при этом фиксируется, кто подтвердил, когда, какой документ проверен и по какой специальности.';
+  String get verifHumanOnly => 'Выбор режима «Специалист», указание должности, загрузка сертификата или автоматическая/ИИ-проверка никогда не дают статус подтверждённого специалиста. Документ — лишь доказательство; статус присваивается только после ручной проверки, при этом фиксируется, кто подтвердил, когда, какой документ проверен и по какой специальности.';
 
   @override
   String get verifApplication => 'Заявка';
@@ -4019,12 +3805,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get verifSubmitted => 'Заявка отправлена. Статус: ожидает проверки.';
 
   @override
-  String get verifSubmitUnavailable =>
-      'Отправка недоступна, пока сервис подтверждения не подключён.';
+  String get verifSubmitUnavailable => 'Отправка недоступна, пока сервис подтверждения не подключён.';
 
   @override
-  String get verifSubmitNote =>
-      'Заявка и документы передаются по зашифрованному каналу в закрытое хранилище.';
+  String get verifSubmitNote => 'Заявка и документы передаются по зашифрованному каналу в закрытое хранилище.';
 
   @override
   String proYearsExperience(int years) {
@@ -4037,8 +3821,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get proServiceNotConnected =>
-      'Облачный сервис в этой версии не подключён.';
+  String get proServiceNotConnected => 'Облачный сервис в этой версии не подключён.';
 
   @override
   String get proInvalidInput => 'Проверьте введённые данные.';
@@ -4068,16 +3851,13 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get credIntro =>
-      'Документ необязателен и лишь помогает уполномоченному сотруднику проверить заявку. Сам по себе он не даёт статус подтверждённого специалиста.';
+  String get credIntro => 'Документ необязателен и лишь помогает уполномоченному сотруднику проверить заявку. Сам по себе он не даёт статус подтверждённого специалиста.';
 
   @override
-  String get credPrivacy =>
-      'Документы конфиденциальны: они никогда не публикуются, не имеют открытой ссылки, их содержимое не записывается в журналы. Открыть их может только уполномоченный проверяющий.';
+  String get credPrivacy => 'Документы конфиденциальны: они никогда не публикуются, не имеют открытой ссылки, их содержимое не записывается в журналы. Открыть их может только уполномоченный проверяющий.';
 
   @override
-  String get credNoCaseData =>
-      'Не загружайте материалы дел, вещественные доказательства, заключения или любые конфиденциальные документы по делам. Паспорт и удостоверение личности не требуются.';
+  String get credNoCaseData => 'Не загружайте материалы дел, вещественные доказательства, заключения или любые конфиденциальные документы по делам. Паспорт и удостоверение личности не требуются.';
 
   @override
   String get credKindTitle => 'Тип документа';
@@ -4101,8 +3881,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get credTraining => 'Сертификат признанного обучения';
 
   @override
-  String get credFormats =>
-      'PDF, JPG или PNG, до 10 МБ на файл, не более 5 файлов.';
+  String get credFormats => 'PDF, JPG или PNG, до 10 МБ на файл, не более 5 файлов.';
 
   @override
   String get credChooseFile => 'Выбрать файл';
@@ -4111,12 +3890,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get credSelectedTitle => 'Выбранные документы';
 
   @override
-  String get credNotUploaded =>
-      'Не загружено: сервис подтверждения не подключён. Файлы остаются только в памяти устройства и удаляются при закрытии приложения.';
+  String get credNotUploaded => 'Не загружено: сервис подтверждения не подключён. Файлы остаются только в памяти устройства и удаляются при закрытии приложения.';
 
   @override
-  String get credWillSendOnSubmit =>
-      'Файлы будут отправлены конфиденциально вместе с заявкой.';
+  String get credWillSendOnSubmit => 'Файлы будут отправлены конфиденциально вместе с заявкой.';
 
   @override
   String get credPickFailed => 'Не удалось открыть файл.';
@@ -4137,16 +3914,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reviewSectionTitle => 'Рецензия специалиста';
 
   @override
-  String get reviewEmpty =>
-      'Этот материал ещё не рецензирован квалифицированным специалистом.';
+  String get reviewEmpty => 'Этот материал ещё не рецензирован квалифицированным специалистом.';
 
   @override
-  String get reviewWhoCanReview =>
-      'Рецензировать этот материал могут только подтверждённые специалисты с правом рецензирования в соответствующей области.';
+  String get reviewWhoCanReview => 'Рецензировать этот материал могут только подтверждённые специалисты с правом рецензирования в соответствующей области.';
 
   @override
-  String get reviewScopeNotAssigned =>
-      'Для этой записи ещё не назначена область рецензирования.';
+  String get reviewScopeNotAssigned => 'Для этой записи ещё не назначена область рецензирования.';
 
   @override
   String get reviewWrite => 'Написать рецензию';
@@ -4200,8 +3974,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reviewNote => 'Текст рецензии';
 
   @override
-  String get reviewNoteHelper =>
-      'Обоснуйте решение со ссылкой на данные. Не менее 20 символов.';
+  String get reviewNoteHelper => 'Обоснуйте решение со ссылкой на данные. Не менее 20 символов.';
 
   @override
   String get reviewNoteTooShort => 'Нужно не менее 20 символов.';
@@ -4222,8 +3995,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reviewSubmitted => 'Рецензия отправлена';
 
   @override
-  String get reviewNotVerification =>
-      'Одна рецензия не делает материал научно подтверждённым. Для подтверждения нужны независимые квалифицированные рецензии согласно политике проверки.';
+  String get reviewNotVerification => 'Одна рецензия не делает материал научно подтверждённым. Для подтверждения нужны независимые квалифицированные рецензии согласно политике проверки.';
 
   @override
   String reviewVersionNote(String version) {
@@ -4236,8 +4008,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get reviewStale =>
-      'Написана для более ранней версии — сохранена в истории; требуется повторная рецензия.';
+  String get reviewStale => 'Написана для более ранней версии — сохранена в истории; требуется повторная рецензия.';
 
   @override
   String get reviewPermAllowed => 'Вы можете рецензировать этот материал.';
@@ -4246,20 +4017,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reviewPermSignIn => 'Сначала войдите в учётную запись.';
 
   @override
-  String get reviewPermNotVerified =>
-      'Рецензии могут писать только подтверждённые специалисты.';
+  String get reviewPermNotVerified => 'Рецензии могут писать только подтверждённые специалисты.';
 
   @override
-  String get reviewPermSuspended =>
-      'Ваше подтверждение приостановлено; рецензирование недоступно.';
+  String get reviewPermSuspended => 'Ваше подтверждение приостановлено; рецензирование недоступно.';
 
   @override
-  String get reviewPermScope =>
-      'У вас нет права рецензирования в этой области.';
+  String get reviewPermScope => 'У вас нет права рецензирования в этой области.';
 
   @override
-  String get reviewPermStudentMode =>
-      'Переключитесь в режим «Специалист», чтобы писать рецензии. Подтверждение сохраняется.';
+  String get reviewPermStudentMode => 'Переключитесь в режим «Специалист», чтобы писать рецензии. Подтверждение сохраняется.';
 
   @override
   String get layerSource => 'Источник прикреплён';
@@ -4306,19 +4073,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get dashboardTitle => 'Рабочее место рецензента';
 
   @override
-  String get dashboardOnlyVerified =>
-      'Доступно только подтверждённым специалистам с правом рецензирования хотя бы в одной области.';
+  String get dashboardOnlyVerified => 'Доступно только подтверждённым специалистам с правом рецензирования хотя бы в одной области.';
 
   @override
   String get dashboardQueueEmpty => 'В этой очереди нет записей.';
 
   @override
-  String dashboardItemMeta(
-    int claims,
-    int sources,
-    String level,
-    String version,
-  ) {
+  String dashboardItemMeta(int claims, int sources, String level, String version) {
     return 'Утверждений: $claims · источников: $sources · доказательность: $level · версия $version';
   }
 
@@ -4344,8 +4105,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profileSectionData => 'Данные и конфиденциальность';
 
   @override
-  String get profileStudentVerificationNote =>
-      'Профессиональное подтверждение относится к режиму «Специалист». Смена режима не влияет на подтверждение.';
+  String get profileStudentVerificationNote => 'Профессиональное подтверждение относится к режиму «Специалист». Смена режима не влияет на подтверждение.';
 
   @override
   String get profileNotFilled => 'Профиль не заполнен';
@@ -4360,8 +4120,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get moduleHubSourced => 'Записи с источниками';
 
   @override
-  String get moduleHubSourcedNote =>
-      'Показаны с источниками и текущим статусом проверки. «Требует проверки» означает доступные материалы с источниками, ожидающие экспертной проверки, — а не отсутствие материалов.';
+  String get moduleHubSourcedNote => 'Показаны с источниками и текущим статусом проверки. «Требует проверки» означает доступные материалы с источниками, ожидающие экспертной проверки, — а не отсутствие материалов.';
 
   @override
   String get moduleHubOpenAll => 'Открыть все';
@@ -4378,19 +4137,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get researchKeyRelevance => 'Судебно-экспертное значение';
 
   @override
-  String get researchLimitationsNote =>
-      'Показаны только библиографические данные и краткое описание; полный текст доступен у издателя.';
+  String get researchLimitationsNote => 'Показаны только библиографические данные и краткое описание; полный текст доступен у издателя.';
 
   @override
   String get emailCodeTitle => 'Вход по коду из письма';
 
   @override
-  String get emailCodeRowHint =>
-      'На почту придёт 6-значный код — пароль не нужен';
+  String get emailCodeRowHint => 'На почту придёт 6-значный код — пароль не нужен';
 
   @override
-  String get emailCodeSubtitle =>
-      'Введите email. Мы отправим одноразовый 6-значный код подтверждения FORENSIC EXPERT.';
+  String get emailCodeSubtitle => 'Введите email. Мы отправим одноразовый 6-значный код подтверждения FORENSIC EXPERT.';
 
   @override
   String get emailCodeSend => 'Отправить код';
@@ -4407,8 +4163,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get emailCodeNotProfessional =>
-      'Подтверждение email выполняет вход. Оно не подтверждает профессиональный статус.';
+  String get emailCodeNotProfessional => 'Подтверждение email выполняет вход. Оно не подтверждает профессиональный статус.';
 
   @override
   String get emailCodeSignedIn => 'Email подтверждён. Вы вошли в аккаунт.';
@@ -4440,8 +4195,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get verifReceivedBody => 'Профессиональный статус проверяется.';
 
   @override
-  String get verifReceivedNote =>
-      'Статус: заявка на рассмотрении. Статус «Подтверждённый специалист» может присвоить только уполномоченный проверяющий — загрузка документов не подтверждает автоматически.';
+  String get verifReceivedNote => 'Статус: заявка на рассмотрении. Статус «Подтверждённый специалист» может присвоить только уполномоченный проверяющий — загрузка документов не подтверждает автоматически.';
 
   @override
   String get sourceDetailTitle => 'Источник';
@@ -4452,8 +4206,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get sourceNoLinkedRecords =>
-      'В офлайн-базе нет записей, ссылающихся на этот источник.';
+  String get sourceNoLinkedRecords => 'В офлайн-базе нет записей, ссылающихся на этот источник.';
 
   @override
   String get sourceNotAttached => 'Надёжный источник не прикреплён.';
@@ -4492,12 +4245,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeStatHumanVerified => 'Подтверждено экспертами';
 
   @override
-  String get homeStatPolicy =>
-      '«Подтверждено» = два независимых квалифицированных эксперта. Автоматические проверки и ИИ не учитываются.';
+  String get homeStatPolicy => '«Подтверждено» = два независимых квалифицированных эксперта. Автоматические проверки и ИИ не учитываются.';
 
   @override
-  String get aiHeroSubtitle =>
-      'Ответы только из научной базы FORENSIC EXPERT с источниками — каждое утверждение ссылается на запись и показывает статус проверки.';
+  String get aiHeroSubtitle => 'Ответы только из научной базы FORENSIC EXPERT с источниками — каждое утверждение ссылается на запись и показывает статус проверки.';
 
   @override
   String get aiStatusConnected => 'Подключено · бета';
@@ -4512,8 +4263,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralTitle => 'Пригласить коллегу';
 
   @override
-  String get referralLead =>
-      'Знаете судебного эксперта, специалиста лаборатории или студента, которому пригодится FORENSIC EXPERT? Поделитесь личным приглашением.';
+  String get referralLead => 'Знаете судебного эксперта, специалиста лаборатории или студента, которому пригодится FORENSIC EXPERT? Поделитесь личным приглашением.';
 
   @override
   String get referralYourCode => 'Ваш код приглашения';
@@ -4522,8 +4272,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralYourLink => 'Ваша ссылка-приглашение';
 
   @override
-  String get referralNoLinkNote =>
-      'Веб-ссылка появится здесь после подключения публичного сайта FORENSIC EXPERT. Пока поделитесь кодом — коллега вводит его в «Профиль → Код приглашения».';
+  String get referralNoLinkNote => 'Веб-ссылка появится здесь после подключения публичного сайта FORENSIC EXPERT. Пока поделитесь кодом — коллега вводит его в «Профиль → Код приглашения».';
 
   @override
   String get referralShare => 'Поделиться приглашением';
@@ -4547,8 +4296,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralStatPending => 'Ожидают';
 
   @override
-  String get referralPrivacyNote =>
-      'Показываются только итоговые числа. Имена, email, профили и документы коллег никогда не передаются — ни вам, ни в приглашении.';
+  String get referralPrivacyNote => 'Показываются только итоговые числа. Имена, email, профили и документы коллег никогда не передаются — ни вам, ни в приглашении.';
 
   @override
   String get referralShareSubject => 'Приглашение в FORENSIC EXPERT';
@@ -4567,16 +4315,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralSignInTitle => 'Войдите, чтобы получить приглашение';
 
   @override
-  String get referralSignInBody =>
-      'Личный код создаётся на сервере после входа по email. Весь научный контент доступен и без аккаунта.';
+  String get referralSignInBody => 'Личный код создаётся на сервере после входа по email. Весь научный контент доступен и без аккаунта.';
 
   @override
-  String get referralNotConfigured =>
-      'Приглашения станут доступны после подключения аккаунт-сервиса FORENSIC EXPERT.';
+  String get referralNotConfigured => 'Приглашения станут доступны после подключения аккаунт-сервиса FORENSIC EXPERT.';
 
   @override
-  String get referralLoadError =>
-      'Не удалось загрузить приглашение. Проверьте соединение и повторите.';
+  String get referralLoadError => 'Не удалось загрузить приглашение. Проверьте соединение и повторите.';
 
   @override
   String get referralRetry => 'Повторить';
@@ -4585,8 +4330,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralHaveCode => 'Код приглашения';
 
   @override
-  String get referralHaveCodeHint =>
-      'Получили приглашение от коллеги? Введите 8-значный код. Он действует только для новых аккаунтов.';
+  String get referralHaveCodeHint => 'Получили приглашение от коллеги? Введите 8-значный код. Он действует только для новых аккаунтов.';
 
   @override
   String get referralCodeField => 'Код приглашения';
@@ -4598,40 +4342,31 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralLinkedNote => 'Ваш аккаунт создан по приглашению коллеги.';
 
   @override
-  String get referralClaimValid =>
-      'Приглашение применено. Добро пожаловать в FORENSIC EXPERT.';
+  String get referralClaimValid => 'Приглашение применено. Добро пожаловать в FORENSIC EXPERT.';
 
   @override
-  String get referralClaimPending =>
-      'Приглашение сохранено. Оно вступит в силу после подтверждения email.';
+  String get referralClaimPending => 'Приглашение сохранено. Оно вступит в силу после подтверждения email.';
 
   @override
-  String get referralClaimInvalid =>
-      'Код не найден. Проверьте его и попробуйте снова.';
+  String get referralClaimInvalid => 'Код не найден. Проверьте его и попробуйте снова.';
 
   @override
-  String get referralClaimSelf =>
-      'Нельзя использовать собственный код приглашения.';
+  String get referralClaimSelf => 'Нельзя использовать собственный код приглашения.';
 
   @override
-  String get referralClaimAlready =>
-      'К вашему аккаунту уже привязано приглашение.';
+  String get referralClaimAlready => 'К вашему аккаунту уже привязано приглашение.';
 
   @override
-  String get referralClaimNotEligible =>
-      'Коды приглашения действуют только для новых аккаунтов.';
+  String get referralClaimNotEligible => 'Коды приглашения действуют только для новых аккаунтов.';
 
   @override
-  String get referralClaimRateLimited =>
-      'Слишком много попыток. Попробуйте позже.';
+  String get referralClaimRateLimited => 'Слишком много попыток. Попробуйте позже.';
 
   @override
-  String get referralClaimSaved =>
-      'Код сохранён. Он будет применён после входа.';
+  String get referralClaimSaved => 'Код сохранён. Он будет применён после входа.';
 
   @override
-  String get referralClaimOffline =>
-      'Нет соединения. Код сохранён и будет применён позже.';
+  String get referralClaimOffline => 'Нет соединения. Код сохранён и будет применён позже.';
 
   @override
   String get referralClaimFormat => 'Введите 8-значный код (буквы и цифры).';
@@ -4646,8 +4381,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get shareAction => 'Поделиться';
 
   @override
-  String get shareFooter =>
-      'Отправлено из FORENSIC EXPERT — научного справочника для судебных экспертов. Перед использованием сверяйтесь с первоисточником.';
+  String get shareFooter => 'Отправлено из FORENSIC EXPERT — научного справочника для судебных экспертов. Перед использованием сверяйтесь с первоисточником.';
 
   @override
   String get shareSourcesLabel => 'Источники';
@@ -4685,19 +4419,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get firstStepsHide => 'Скрыть';
 
   @override
-  String get firstStepsDone =>
-      'Всё готово. Сохранённые материалы и недавние записи остаются на этом устройстве.';
+  String get firstStepsDone => 'Всё готово. Сохранённые материалы и недавние записи остаются на этом устройстве.';
 
   @override
   String get fullTextPdf => 'Полный текст (PDF)';
 
   @override
-  String get fullTextPdfNote =>
-      'Статья открытого доступа (PubMed Central через Europe PMC). Открывается в программе просмотра PDF или браузере устройства.';
+  String get fullTextPdfNote => 'Статья открытого доступа (PubMed Central через Europe PMC). Открывается в программе просмотра PDF или браузере устройства.';
 
   @override
-  String get fullTextOpenFailed =>
-      'Не удалось открыть PDF. Проверьте соединение.';
+  String get fullTextOpenFailed => 'Не удалось открыть PDF. Проверьте соединение.';
 
   @override
   String get adminTitle => 'Админ-панель';
@@ -4741,12 +4472,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get adminStoreNote =>
-      'Здесь учитываются только зарегистрированные пользователи. Установки без регистрации видны в App Store Connect и Google Play Console.';
+  String get adminStoreNote => 'Здесь учитываются только зарегистрированные пользователи. Установки без регистрации видны в App Store Connect и Google Play Console.';
 
   @override
-  String get adminPrivacyNote =>
-      'Содержит персональные данные (email). Не пересылайте скриншоты.';
+  String get adminPrivacyNote => 'Содержит персональные данные (email). Не пересылайте скриншоты.';
 
   @override
   String get adminFailed => 'Не удалось. Проверьте соединение.';
@@ -4805,8 +4534,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcWidmarkR => 'Коэффициент распределения r';
 
   @override
-  String get calcWidmarkPeak =>
-      'Теоретический максимум (без дефицита и элиминации)';
+  String get calcWidmarkPeak => 'Теоретический максимум (без дефицита и элиминации)';
 
   @override
   String get calcWidmarkMin => 'Минимальная оценка';
@@ -4815,20 +4543,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcWidmarkMax => 'Максимальная оценка';
 
   @override
-  String get calcWidmarkAssumptionDeficit =>
-      'Резорбционный дефицит 10 % (максимум) и 30 % (минимум).';
+  String get calcWidmarkAssumptionDeficit => 'Резорбционный дефицит 10 % (максимум) и 30 % (минимум).';
 
   @override
-  String get calcWidmarkAssumptionBeta =>
-      'Элиминация 0,10 ‰/ч (максимум) и 0,20 ‰/ч (минимум) с начала употребления.';
+  String get calcWidmarkAssumptionBeta => 'Элиминация 0,10 ‰/ч (максимум) и 0,20 ‰/ч (минимум) с начала употребления.';
 
   @override
-  String get calcWidmarkAssumptionR =>
-      'r: среднее по Widmark (муж. 0,7, жен. 0,6) или по Seidl и соавт. (2000) из роста и массы.';
+  String get calcWidmarkAssumptionR => 'r: среднее по Widmark (муж. 0,7, жен. 0,6) или по Seidl и соавт. (2000) из роста и массы.';
 
   @override
-  String get calcWidmarkLimitation =>
-      'Это оценка, а не измерение. Пища, функция печени, характер употребления и лекарства меняют результат. Не заменяет измеренную концентрацию и экспертное заключение.';
+  String get calcWidmarkLimitation => 'Это оценка, а не измерение. Пища, функция печени, характер употребления и лекарства меняют результат. Не заменяет измеренную концентрацию и экспертное заключение.';
 
   @override
   String get calcBacMeasured => 'Измеренная концентрация в крови';
@@ -4837,8 +4561,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcHoursEventToSample => 'Часов от события до взятия крови';
 
   @override
-  String get calcHoursDrinkEndOptional =>
-      'Часов от окончания употребления до события (необязательно)';
+  String get calcHoursDrinkEndOptional => 'Часов от окончания употребления до события (необязательно)';
 
   @override
   String get calcBackMin => 'На момент события, минимум';
@@ -4847,28 +4570,22 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcBackMax => 'На момент события, максимум';
 
   @override
-  String get calcBackAssumptionLinear =>
-      'Элиминация линейная (нулевой порядок), к моменту события всасывание завершено.';
+  String get calcBackAssumptionLinear => 'Элиминация линейная (нулевой порядок), к моменту события всасывание завершено.';
 
   @override
-  String get calcBackAssumptionBeta =>
-      'β = 0,10–0,25 г/л/ч (10–25 мг/100 мл/ч) охватывает большинство людей (Jones 2010). Для ‰ (г/кг) β пересчитывается через плотность крови 1,055 г/мл.';
+  String get calcBackAssumptionBeta => 'β = 0,10–0,25 г/л/ч (10–25 мг/100 мл/ч) охватывает большинство людей (Jones 2010). Для ‰ (г/кг) β пересчитывается через плотность крови 1,055 г/мл.';
 
   @override
-  String get calcBackLimitation =>
-      'В течение ~2 часов после окончания употребления всасывание может продолжаться — обратный расчёт может завысить результат. Употребление после события делает расчёт недействительным.';
+  String get calcBackLimitation => 'В течение ~2 часов после окончания употребления всасывание может продолжаться — обратный расчёт может завысить результат. Употребление после события делает расчёт недействительным.';
 
   @override
-  String get calcWarnAbsorption =>
-      'Событие было менее чем через 2 часа после окончания употребления: всасывание могло не завершиться. Минимум показан без обратной экстраполяции.';
+  String get calcWarnAbsorption => 'Событие было менее чем через 2 часа после окончания употребления: всасывание могло не завершиться. Минимум показан без обратной экстраполяции.';
 
   @override
-  String get calcWarnEliminated =>
-      'К этому времени алкоголь, вероятно, полностью выведен.';
+  String get calcWarnEliminated => 'К этому времени алкоголь, вероятно, полностью выведен.';
 
   @override
-  String get calcWarnRUnusual =>
-      'Рассчитанный r вне обычного диапазона 0,45–0,85 — проверьте рост и массу.';
+  String get calcWarnRUnusual => 'Рассчитанный r вне обычного диапазона 0,45–0,85 — проверьте рост и массу.';
 
   @override
   String get calcEthanolMatrix => 'Образец';
@@ -4886,16 +4603,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcEthanolBloodHeader => 'Эквивалент для цельной крови';
 
   @override
-  String get calcEthanolAssumptionDensity =>
-      '‰ — это г/кг; для г/л используется плотность крови 1,055 г/мл.';
+  String get calcEthanolAssumptionDensity => '‰ — это г/кг; для г/л используется плотность крови 1,055 г/мл.';
 
   @override
-  String get calcEthanolAssumptionRatio =>
-      'В сыворотке больше воды, чем в крови, поэтому этанола в ней больше; по умолчанию отношение 1,2.';
+  String get calcEthanolAssumptionRatio => 'В сыворотке больше воды, чем в крови, поэтому этанола в ней больше; по умолчанию отношение 1,2.';
 
   @override
-  String get calcEthanolLimitation =>
-      'Отношение сыворотка/кровь индивидуально (около 1,1–1,3; Rainey 1993). Используйте значение, принятое в вашей лаборатории или юрисдикции.';
+  String get calcEthanolLimitation => 'Отношение сыворотка/кровь индивидуально (около 1,1–1,3; Rainey 1993). Используйте значение, принятое в вашей лаборатории или юрисдикции.';
 
   @override
   String get calcRectalTemp => 'Ректальная температура, °C';
@@ -4947,28 +4661,22 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get calcHenssgeAssumptionNormal =>
-      'Температура тела в момент смерти 37,2 °C.';
+  String get calcHenssgeAssumptionNormal => 'Температура тела в момент смерти 37,2 °C.';
 
   @override
-  String get calcHenssgeAssumptionAmbient =>
-      'Температура среды была примерно постоянной; формулы для ≤ 23 °C и > 23 °C различаются.';
+  String get calcHenssgeAssumptionAmbient => 'Температура среды была примерно постоянной; формулы для ≤ 23 °C и > 23 °C различаются.';
 
   @override
-  String get calcHenssgeAssumptionCi =>
-      '95 % границы: ±2,8 ч (≤ 23 °C), ±3,2 ч (> 23 °C), ±4,5 ч при поправочном коэффициенте.';
+  String get calcHenssgeAssumptionCi => '95 % границы: ±2,8 ч (≤ 23 °C), ±3,2 ч (> 23 °C), ±4,5 ч при поправочном коэффициенте.';
 
   @override
-  String get calcHenssgeLimitation =>
-      'Неприменимо при лихорадке, переохлаждении, источниках тепла, солнце, перемещении тела или больших изменениях температуры среды. Сочетайте с другими признаками (трупные пятна, окоченение, суправитальные реакции).';
+  String get calcHenssgeLimitation => 'Неприменимо при лихорадке, переохлаждении, источниках тепла, солнце, перемещении тела или больших изменениях температуры среды. Сочетайте с другими признаками (трупные пятна, окоченение, суправитальные реакции).';
 
   @override
-  String get calcWarnNoCooling =>
-      'Ректальная температура ≥ 37,2 °C — охлаждение не началось или была лихорадка.';
+  String get calcWarnNoCooling => 'Ректальная температура ≥ 37,2 °C — охлаждение не началось или была лихорадка.';
 
   @override
-  String get calcWarnLatePhase =>
-      'Тело близко к температуре среды — точность низкая.';
+  String get calcWarnLatePhase => 'Тело близко к температуре среды — точность низкая.';
 
   @override
   String get calcErrorWeight => 'Введите реальную массу тела.';
@@ -4980,8 +4688,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcErrorAbv => 'Крепость должна быть от 0 до 100 %.';
 
   @override
-  String get calcErrorHeight =>
-      'Рост должен быть 120–230 см, или оставьте поле пустым.';
+  String get calcErrorHeight => 'Рост должен быть 120–230 см, или оставьте поле пустым.';
 
   @override
   String get calcErrorBac => 'Введите концентрацию от 0 до 8 ‰.';
@@ -4990,23 +4697,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcErrorRatio => 'Отношение должно быть от 1,0 до 1,5.';
 
   @override
-  String get calcErrorRectal =>
-      'Ректальная температура должна быть выше температуры среды и не более 42 °C.';
+  String get calcErrorRectal => 'Ректальная температура должна быть выше температуры среды и не более 42 °C.';
 
   @override
-  String get calcErrorAmbient =>
-      'Температура среды должна быть от −20 до 35 °C.';
+  String get calcErrorAmbient => 'Температура среды должна быть от −20 до 35 °C.';
 
   @override
   String get guidelinesTitle => 'Методические руководства';
 
   @override
-  String get guidelinesSubtitle =>
-      'Независимые научно-практические руководства по дисциплинам';
+  String get guidelinesSubtitle => 'Независимые научно-практические руководства по дисциплинам';
 
   @override
-  String get guidelinesIntro =>
-      'Каждое руководство — независимый научный обзор, написанный по указанной проверенной литературе. Это не официальная методика и не заменяет аккредитованные лабораторные процедуры и законодательство вашей страны. Каждая карточка остаётся на проверке, пока её не подтвердит специалист.';
+  String get guidelinesIntro => 'Каждое руководство — независимый научный обзор, написанный по указанной проверенной литературе. Это не официальная методика и не заменяет аккредитованные лабораторные процедуры и законодательство вашей страны. Каждая карточка остаётся на проверке, пока её не подтвердит специалист.';
 
   @override
   String get guidelinesSearchHint => 'Поиск по руководствам';
@@ -5044,19 +4747,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get guidelineAreaForensicBiology => 'Судебная биология и генетика';
 
   @override
-  String get guidelineAreaMedicalCriminalistics =>
-      'Медицинская криминалистика и антропология';
+  String get guidelineAreaMedicalCriminalistics => 'Медицинская криминалистика и антропология';
 
   @override
   String get guidelineAreaOther => 'Другие дисциплины';
 
   @override
-  String get guidelineIndependentNote =>
-      'Независимый научный обзор на основе приведённой литературы. Не является официальной методикой; сверяйтесь с требованиями вашей лаборатории и юрисдикции.';
+  String get guidelineIndependentNote => 'Независимый научный обзор на основе приведённой литературы. Не является официальной методикой; сверяйтесь с требованиями вашей лаборатории и юрисдикции.';
 
   @override
-  String get guidelineTranslationDraft =>
-      'Этот перевод — черновик и ещё не проверен специалистом.';
+  String get guidelineTranslationDraft => 'Этот перевод — черновик и ещё не проверен специалистом.';
 
   @override
   String guidelineFallbackLanguage(String language) {
@@ -5087,39 +4787,31 @@ class AppLocalizationsRu extends AppLocalizations {
   String get languageNameEn => 'английский';
 
   @override
-  String get aiWorking =>
-      'Готовим ответ по источникам… Это может занять до минуты.';
+  String get aiWorking => 'Готовим ответ по источникам… Это может занять до минуты.';
 
   @override
   String get aiSearchingOffline => 'Поиск в офлайн-базе…';
 
   @override
-  String get aiNotCovered =>
-      'Источники в приложении недостаточно освещают этот вопрос, поэтому ответ со ссылками не сформирован.';
+  String get aiNotCovered => 'Источники в приложении недостаточно освещают этот вопрос, поэтому ответ со ссылками не сформирован.';
 
   @override
-  String get aiModelNoteTitle =>
-      'Комментарий ИИ (без источников — не опирайтесь на него)';
+  String get aiModelNoteTitle => 'Комментарий ИИ (без источников — не опирайтесь на него)';
 
   @override
-  String get aiAnswerRejected =>
-      'Ответ ИИ не показан: его не удалось проверить по источникам приложения.';
+  String get aiAnswerRejected => 'Ответ ИИ не показан: его не удалось проверить по источникам приложения.';
 
   @override
-  String get aiErrRateLimited =>
-      'Достигнут часовой лимит вопросов к ИИ. Повторите попытку позже.';
+  String get aiErrRateLimited => 'Достигнут часовой лимит вопросов к ИИ. Повторите попытку позже.';
 
   @override
-  String get aiErrSignIn =>
-      'Сессия истекла. Войдите снова, чтобы пользоваться ИИ.';
+  String get aiErrSignIn => 'Сессия истекла. Войдите снова, чтобы пользоваться ИИ.';
 
   @override
-  String get aiErrOffline =>
-      'Нет связи с сервисом ИИ. Проверьте подключение к интернету.';
+  String get aiErrOffline => 'Нет связи с сервисом ИИ. Проверьте подключение к интернету.';
 
   @override
-  String get aiErrServer =>
-      'Сервис ИИ временно недоступен. Повторите попытку позже.';
+  String get aiErrServer => 'Сервис ИИ временно недоступен. Повторите попытку позже.';
 
   @override
   String get aiErrNotConfigured => 'Сервис ИИ на сервере ещё не настроен.';
@@ -5179,15 +4871,13 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get homeAiEntryBody =>
-      'Задайте научный вопрос. Ответы ссылаются на источники.';
+  String get homeAiEntryBody => 'Задайте научный вопрос. Ответы ссылаются на источники.';
 
   @override
   String get homeResourcesHeading => 'Библиотека и инструменты';
 
   @override
-  String get homeLibraryBody =>
-      'Все разделы: вещества, методы, стандарты, источники';
+  String get homeLibraryBody => 'Все разделы: вещества, методы, стандарты, источники';
 
   @override
   String get homeContinueSaved => 'Продолжить и сохранённое';
@@ -5199,12 +4889,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get pubTitle => 'Публикации экспертов';
 
   @override
-  String get pubIntro =>
-      'Статьи экспертов, опубликованные после модерации. Модерация проверяет оформление, правила и персональные данные — не научную достоверность.';
+  String get pubIntro => 'Статьи экспертов, опубликованные после модерации. Модерация проверяет оформление, правила и персональные данные — не научную достоверность.';
 
   @override
-  String get pubNotVerifiedNotice =>
-      'Отправка статьи не означает, что она научно подтверждена.';
+  String get pubNotVerifiedNotice => 'Отправка статьи не означает, что она научно подтверждена.';
 
   @override
   String get pubSearchHint => 'Название, аннотация или ключевое слово';
@@ -5219,8 +4907,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get pubFilterEmpty => 'По вашему запросу статей не найдено.';
 
   @override
-  String get pubLoadFailed =>
-      'Не удалось загрузить статьи. Проверьте соединение.';
+  String get pubLoadFailed => 'Не удалось загрузить статьи. Проверьте соединение.';
 
   @override
   String get pubReload => 'Повторить';
@@ -5238,8 +4925,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get pubModeration => 'Модерация';
 
   @override
-  String get pubSignInRequired =>
-      'Войдите, чтобы отправлять статьи или жаловаться на них.';
+  String get pubSignInRequired => 'Войдите, чтобы отправлять статьи или жаловаться на них.';
 
   @override
   String get pubSignIn => 'Войти';
@@ -5378,23 +5064,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get pubFormUrl => 'Ссылка на полный текст (https://…)';
 
   @override
-  String get pubPiiWarning =>
-      'Не указывайте персональные данные: имена потерпевших или подозреваемых, номера дел, адреса, фото узнаваемых людей, медицинские документы.';
+  String get pubPiiWarning => 'Не указывайте персональные данные: имена потерпевших или подозреваемых, номера дел, адреса, фото узнаваемых людей, медицинские документы.';
 
   @override
   String get pubConfirmationsTitle => 'Обязательные подтверждения';
 
   @override
-  String get pubConfirmRights =>
-      'Я автор или имею право публиковать этот текст.';
+  String get pubConfirmRights => 'Я автор или имею право публиковать этот текст.';
 
   @override
-  String get pubConfirmConsent =>
-      'Я согласен(на), что после модерации статья будет публично доступна в FORENSIC EXPERT.';
+  String get pubConfirmConsent => 'Я согласен(на), что после модерации статья будет публично доступна в FORENSIC EXPERT.';
 
   @override
-  String get pubConfirmNoPii =>
-      'Статья не содержит персональных данных потерпевших, подозреваемых или других лиц.';
+  String get pubConfirmNoPii => 'Статья не содержит персональных данных потерпевших, подозреваемых или других лиц.';
 
   @override
   String get pubSaveDraft => 'Сохранить черновик';
@@ -5403,8 +5085,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get pubSubmitForModeration => 'Отправить на модерацию';
 
   @override
-  String get pubSubmitHint =>
-      'Чтобы отправить, заполните название, аннотацию и дисциплину и отметьте все три подтверждения.';
+  String get pubSubmitHint => 'Чтобы отправить, заполните название, аннотацию и дисциплину и отметьте все три подтверждения.';
 
   @override
   String get pubDraftSaved => 'Черновик сохранён.';
@@ -5413,8 +5094,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get pubSubmitted => 'Статья отправлена на модерацию.';
 
   @override
-  String get pubSubmitRejected =>
-      'Не отправлено: заполните обязательные поля и подтверждения.';
+  String get pubSubmitRejected => 'Не отправлено: заполните обязательные поля и подтверждения.';
 
   @override
   String get pubEditTitle => 'Редактировать черновик';
@@ -5454,15 +5134,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get pubCommentRequired => 'Для этого решения нужен комментарий.';
 
   @override
-  String get pubOwnArticle =>
-      'Это ваша статья: её должен рассмотреть другой модератор.';
+  String get pubOwnArticle => 'Это ваша статья: её должен рассмотреть другой модератор.';
 
   @override
   String get pubModerationDone => 'Обновлено.';
 
   @override
-  String get pubInvalidTransition =>
-      'Этот шаг недоступен из текущего состояния.';
+  String get pubInvalidTransition => 'Этот шаг недоступен из текущего состояния.';
 
   @override
   String get pubForbidden => 'Раздел только для модераторов.';
@@ -5474,8 +5152,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiSignInTitle => 'Войдите, чтобы задать вопрос ИИ';
 
   @override
-  String get aiSignInBody =>
-      'Сервис ИИ подключён и отвечает только по источникам приложения со ссылками. Для вопросов нужен вход в аккаунт; офлайн-поиск источников работает и без него.';
+  String get aiSignInBody => 'Сервис ИИ подключён и отвечает только по источникам приложения со ссылками. Для вопросов нужен вход в аккаунт; офлайн-поиск источников работает и без него.';
 
   @override
   String get aiSendSignIn => 'Войдите, чтобы отправлять вопросы ИИ.';
@@ -5498,12 +5175,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyTitle => 'Упражнения';
 
   @override
-  String get studyEntrySubtitle =>
-      'Карточки и самопроверка только на основе записей приложения с источниками';
+  String get studyEntrySubtitle => 'Карточки и самопроверка только на основе записей приложения с источниками';
 
   @override
-  String get studyIntro =>
-      'Каждая карточка и вопрос построены из записи или руководства, уже имеющихся в приложении, вместе с источником. Вопросы к руководствам составлены редакцией по фактам карточки. Материал, ещё не прошедший экспертную проверку, отмечен.';
+  String get studyIntro => 'Каждая карточка и вопрос построены из записи или руководства, уже имеющихся в приложении, вместе с источником. Вопросы к руководствам составлены редакцией по фактам карточки. Материал, ещё не прошедший экспертную проверку, отмечен.';
 
   @override
   String get studySectionTopics => 'Темы по дисциплинам';
@@ -5545,8 +5220,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyLoading => 'Загрузка учебного материала';
 
   @override
-  String get studyQuizUnavailable =>
-      'Слишком мало связанных вариантов для теста — только карточки';
+  String get studyQuizUnavailable => 'Слишком мало связанных вариантов для теста — только карточки';
 
   @override
   String get studyFrontTopic => 'Что говорит цитируемый источник об этой теме?';
@@ -5555,8 +5229,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyFrontSubstance => 'Какова молекулярная формула?';
 
   @override
-  String get studyFrontGuideline =>
-      'Каково краткое содержание этого руководства?';
+  String get studyFrontGuideline => 'Каково краткое содержание этого руководства?';
 
   @override
   String get studyTapToFlip => 'Нажмите на карточку, чтобы перевернуть её';
@@ -5581,8 +5254,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyBoxNew => 'Новая карточка';
 
   @override
-  String get studyQuoteLabel =>
-      'Дословная цитата из источника (на языке оригинала)';
+  String get studyQuoteLabel => 'Дословная цитата из источника (на языке оригинала)';
 
   @override
   String studyGroupLabel(String group) {
@@ -5612,8 +5284,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get studyAllCaughtUp =>
-      'Сейчас в этой колоде нечего повторять. Вернитесь позже или повторите все карточки.';
+  String get studyAllCaughtUp => 'Сейчас в этой колоде нечего повторять. Вернитесь позже или повторите все карточки.';
 
   @override
   String get studyReviewAll => 'Повторить все карточки';
@@ -5628,8 +5299,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyBackToDecks => 'К списку колод';
 
   @override
-  String get studyQuizStemTopic =>
-      'К какой теме относится эта цитата из источника?';
+  String get studyQuizStemTopic => 'К какой теме относится эта цитата из источника?';
 
   @override
   String studyQuizStemSubstance(String name) {
@@ -5637,12 +5307,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get studyQuizStemGuideline =>
-      'Какое руководство описывает это краткое содержание?';
+  String get studyQuizStemGuideline => 'Какое руководство описывает это краткое содержание?';
 
   @override
-  String get studyQuizNote =>
-      'Неверные варианты — только другие записи той же области или группы; ничего не придумано. Только тренировка — в экзамен не входит.';
+  String get studyQuizNote => 'Неверные варианты — только другие записи той же области или группы; ничего не придумано. Только тренировка — в экзамен не входит.';
 
   @override
   String studyQuizQuestionOf(int current, int total) {
@@ -5695,8 +5363,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get accountSignInEmailCode => 'Войти (код по почте)';
 
   @override
-  String get toolsReviewNote =>
-      'Расчётные модули протестированы программно. Формулы и их источники ещё не подтверждены экспертом.';
+  String get toolsReviewNote => 'Расчётные модули протестированы программно. Формулы и их источники ещё не подтверждены экспертом.';
 
   @override
   String searchAllStatus(String status) {
@@ -5721,19 +5388,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get analysisTitle => 'Анализ';
 
   @override
-  String get analysisIntro =>
-      'Какие объекты и методы — по источникам. Экспертом пока не проверено.';
+  String get analysisIntro => 'Какие объекты и методы — по источникам. Экспертом пока не проверено.';
 
   @override
   String get analysisSpecimensTitle => 'Объекты исследования';
 
   @override
-  String get analysisSpecimensNote =>
-      'Источник приводит значение в этих объектах (не пороговое).';
+  String get analysisSpecimensNote => 'Источник приводит значение в этих объектах (не пороговое).';
 
   @override
-  String get analysisNoSpecimens =>
-      'В пакете пока нет объекта исследования с источником для этого вещества.';
+  String get analysisNoSpecimens => 'В пакете пока нет объекта исследования с источником для этого вещества.';
 
   @override
   String analysisSourcedRecords(int count) {
@@ -5757,8 +5421,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get analysisScreeningTitle => 'Скрининг (предварительный)';
 
   @override
-  String get analysisScreeningNote =>
-      'Результат скрининга предварительный и должен быть подтверждён подтверждающим методом.';
+  String get analysisScreeningNote => 'Результат скрининга предварительный и должен быть подтверждён подтверждающим методом.';
 
   @override
   String analysisConfirmedBy(String methods) {
@@ -5777,12 +5440,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get analysisMethodsTitle => 'Аналитические методы';
 
   @override
-  String get analysisMethodsRoleNote =>
-      'Упомянут с этим веществом в источнике; не валидированная методика.';
+  String get analysisMethodsRoleNote => 'Упомянут с этим веществом в источнике; не валидированная методика.';
 
   @override
-  String get analysisMethodsNotPaired =>
-      'Источники не привязывают эти методы к конкретному объекту.';
+  String get analysisMethodsNotPaired => 'Источники не привязывают эти методы к конкретному объекту.';
 
   @override
   String get analysisMetabolitesTitle => 'Целевые метаболиты';
@@ -5793,30 +5454,25 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get analysisEmpty =>
-      'В пакете контента пока нет данных анализа с источниками (объекты, методы или метаболиты) для этого вещества.';
+  String get analysisEmpty => 'В пакете контента пока нет данных анализа с источниками (объекты, методы или метаболиты) для этого вещества.';
 
   @override
   String get analysisShowSource => 'Показать источник';
 
   @override
-  String get specimenSubstancesTitle =>
-      'Вещества, исследованные в этом объекте';
+  String get specimenSubstancesTitle => 'Вещества, исследованные в этом объекте';
 
   @override
-  String get specimenSubstancesNote =>
-      'Для каждого из этих веществ источник приводит значение в этом объекте.';
+  String get specimenSubstancesNote => 'Для каждого из этих веществ источник приводит значение в этом объекте.';
 
   @override
-  String get specimenSubstancesNone =>
-      'В пакете пока нет веществ, связанных с этим объектом.';
+  String get specimenSubstancesNone => 'В пакете пока нет веществ, связанных с этим объектом.';
 
   @override
   String get quoteMachineTranslation => 'Автоматический перевод — не проверен';
 
   @override
-  String get quoteMachineTranslationSemantics =>
-      'Автоматический перевод цитаты из источника, не проверен экспертом. Оригинальная цитата доступна по кнопке «Оригинал».';
+  String get quoteMachineTranslationSemantics => 'Автоматический перевод цитаты из источника, не проверен экспертом. Оригинальная цитата доступна по кнопке «Оригинал».';
 
   @override
   String quoteOriginalTitle(String title) {
@@ -5876,8 +5532,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get supTitle => 'Предложения и обращения';
 
   @override
-  String get supProfileHint =>
-      'Идеи, ошибки, научные неточности — команда отвечает здесь';
+  String get supProfileHint => 'Идеи, ошибки, научные неточности — команда отвечает здесь';
 
   @override
   String supUnreadHint(int count) {
@@ -5895,20 +5550,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get supNew => 'Новое обращение';
 
   @override
-  String get supEmpty =>
-      'Вы ещё не отправляли обращений. Поделитесь идеей, сообщите об ошибке или научной неточности — мы читаем каждое сообщение.';
+  String get supEmpty => 'Вы ещё не отправляли обращений. Поделитесь идеей, сообщите об ошибке или научной неточности — мы читаем каждое сообщение.';
 
   @override
-  String get supLoadFailed =>
-      'Не удалось загрузить обращения. Проверьте соединение.';
+  String get supLoadFailed => 'Не удалось загрузить обращения. Проверьте соединение.';
 
   @override
-  String get supUnavailable =>
-      'Для обращений нужен онлайн-сервис, он не подключён в этой сборке.';
+  String get supUnavailable => 'Для обращений нужен онлайн-сервис, он не подключён в этой сборке.';
 
   @override
-  String get supSignInRequired =>
-      'Войдите, чтобы отправить обращение и получать ответы.';
+  String get supSignInRequired => 'Войдите, чтобы отправить обращение и получать ответы.';
 
   @override
   String get supSignIn => 'Войти';
@@ -5953,8 +5604,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get supMessage => 'Сообщение';
 
   @override
-  String get supMessageHint =>
-      'Опишите, что произошло или что вы предлагаете. Не указывайте персональные данные третьих лиц и материалы дел.';
+  String get supMessageHint => 'Опишите, что произошло или что вы предлагаете. Не указывайте персональные данные третьих лиц и материалы дел.';
 
   @override
   String supRelated(String id) {
@@ -5980,12 +5630,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get supAttachment => 'Снимок экрана';
 
   @override
-  String get supPrivacyNote =>
-      'Сообщение, снимок и e-mail аккаунта хранятся на нашем сервере только для ответа вам. Их видит лишь команда FORENSIC EXPERT. Они удаляются вместе с аккаунтом.';
+  String get supPrivacyNote => 'Сообщение, снимок и e-mail аккаунта хранятся на нашем сервере только для ответа вам. Их видит лишь команда FORENSIC EXPERT. Они удаляются вместе с аккаунтом.';
 
   @override
-  String get supConsent =>
-      'Я согласен(на) на обработку этого сообщения для ответа на обращение.';
+  String get supConsent => 'Я согласен(на) на обработку этого сообщения для ответа на обращение.';
 
   @override
   String get supSend => 'Отправить';
@@ -6012,8 +5660,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get supFailed => 'Не отправлено. Проверьте соединение и повторите.';
 
   @override
-  String get supClosedNote =>
-      'Обращение закрыто. Создайте новое, если нужна помощь.';
+  String get supClosedNote => 'Обращение закрыто. Создайте новое, если нужна помощь.';
 
   @override
   String get supReplyHint => 'Напишите сообщение';
@@ -6153,12 +5800,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admStatVerified => 'Подтверждённые специалисты';
 
   @override
-  String get admModesNote =>
-      'Студенты и эксперты: нет данных — режим использования хранится только на устройстве. Вместо этого показаны профили и подтверждённые специалисты.';
+  String get admModesNote => 'Студенты и эксперты: нет данных — режим использования хранится только на устройстве. Вместо этого показаны профили и подтверждённые специалисты.';
 
   @override
-  String get admActiveNote =>
-      'Активный — вход, запуск приложения (отметка устройства) или вопрос к ИИ за период.';
+  String get admActiveNote => 'Активный — вход, запуск приложения (отметка устройства) или вопрос к ИИ за период.';
 
   @override
   String get admChart14d => 'Последние 14 дней: регистрации и вопросы к ИИ';
@@ -6179,8 +5824,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admNotAuthorizedTitle => 'Доступ запрещён';
 
   @override
-  String get admNotAuthorized =>
-      'Раздел только для администраторов. Доступ проверяется на сервере.';
+  String get admNotAuthorized => 'Раздел только для администраторов. Доступ проверяется на сервере.';
 
   @override
   String get admBackToProfile => 'Вернуться в профиль';
@@ -6215,8 +5859,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admReplySend => 'Отправить ответ';
 
   @override
-  String get admReplySent =>
-      'Ответ отправлен. Пользователь увидит его в приложении.';
+  String get admReplySent => 'Ответ отправлен. Пользователь увидит его в приложении.';
 
   @override
   String get admSetStatus => 'Изменить статус';
@@ -6326,8 +5969,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get imageAttrOriginalSchematic =>
-      'Оригинальная схема — FORENSIC EXPERT';
+  String get imageAttrOriginalSchematic => 'Оригинальная схема — FORENSIC EXPERT';
 
   @override
   String get supRelatedUnknown => 'запись в контент-пакете';
@@ -6341,16 +5983,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get disclaimerIntroTitle => 'Прежде чем начать';
 
   @override
-  String get disclaimerPointReference =>
-      'Научный справочник и учебный инструмент — экспертных заключений не выдаёт.';
+  String get disclaimerPointReference => 'Научный справочник и учебный инструмент — экспертных заключений не выдаёт.';
 
   @override
-  String get disclaimerPointLab =>
-      'Не заменяет валидированные методики, протоколы, закон и мнение специалиста.';
+  String get disclaimerPointLab => 'Не заменяет валидированные методики, протоколы, закон и мнение специалиста.';
 
   @override
-  String get disclaimerPointMedical =>
-      'По медицинским вопросам обращайтесь к квалифицированному врачу.';
+  String get disclaimerPointMedical => 'По медицинским вопросам обращайтесь к квалифицированному врачу.';
 
   @override
   String get disclaimerFullText => 'Полный текст';
@@ -6359,15 +5998,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get accountReadyTitle => 'Всё готово';
 
   @override
-  String get accountReadyBody =>
-      'Научная база, поиск и калькуляторы работают офлайн — аккаунт не нужен.';
+  String get accountReadyBody => 'Научная база, поиск и калькуляторы работают офлайн — аккаунт не нужен.';
 
   @override
   String get accountStartNow => 'Начать';
 
   @override
-  String get accountBenefitsNote =>
-      'Аккаунт добавляет профессиональное подтверждение, синхронизацию и облачный ИИ. Войти можно в любой момент в Профиле.';
+  String get accountBenefitsNote => 'Аккаунт добавляет профессиональное подтверждение, синхронизацию и облачный ИИ. Войти можно в любой момент в Профиле.';
 
   @override
   String get homeGreetingStudent => 'Что изучим сегодня?';
@@ -6403,12 +6040,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeActAiBody => 'Задайте вопрос — ответ со ссылками';
 
   @override
-  String get homeTrustNote =>
-      'База на экспертной проверке · у каждой записи указаны источник и статус';
+  String get homeTrustNote => 'База на экспертной проверке · у каждой записи указаны источник и статус';
 
   @override
-  String get profileSignInBody =>
-      'Синхронизация, подтверждение и облачный ИИ. Пароль не нужен.';
+  String get profileSignInBody => 'Синхронизация, подтверждение и облачный ИИ. Пароль не нужен.';
 
   @override
   String get profileSectionHelp => 'Помощь и сообщество';
@@ -6433,8 +6068,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcCopyResult => 'Скопировать результат';
 
   @override
-  String get calcCopied =>
-      'Результат скопирован вместе с исходными данными, формулой и версией метода.';
+  String get calcCopied => 'Результат скопирован вместе с исходными данными, формулой и версией метода.';
 
   @override
   String get calcCopyInputs => 'Исходные данные';
@@ -6446,8 +6080,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcEstimatedRange => 'Оценочный диапазон';
 
   @override
-  String get calcLodUnitNote =>
-      'DL и QL — в единицах концентрации оси x калибровки.';
+  String get calcLodUnitNote => 'DL и QL — в единицах концентрации оси x калибровки.';
 
   @override
   String get calcHenssgeFormulaLow => 'Применена: среда ≤ 23 °C';
@@ -6462,8 +6095,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get rdGlanceTitle => 'Кратко';
 
   @override
-  String get rdGlanceNote =>
-      'Из разделов ниже, с источниками. Цитаты и статус — внутри каждого раздела.';
+  String get rdGlanceNote => 'Из разделов ниже, с источниками. Цитаты и статус — внутри каждого раздела.';
 
   @override
   String get rdGlanceFormula => 'Формула';
@@ -6529,8 +6161,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get toolBeerLambertName => 'Закон Бугера–Ламберта–Бера (A = ε·l·c)';
 
   @override
-  String get toolBeerLambertDesc =>
-      'Расчёт оптической плотности, концентрации или коэффициента поглощения по A = ε·l·c — на молярной или массовой основе, с единицами.';
+  String get toolBeerLambertDesc => 'Расчёт оптической плотности, концентрации или коэффициента поглощения по A = ε·l·c — на молярной или массовой основе, с единицами.';
 
   @override
   String get calcBeerAbsorbance => 'Оптическая плотность';
@@ -6539,8 +6170,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcBeerAbsorptivityMolar => 'Молярный коэффициент поглощения';
 
   @override
-  String get calcBeerAbsorptivityMass =>
-      'Удельный (массовый) коэффициент поглощения';
+  String get calcBeerAbsorptivityMass => 'Удельный (массовый) коэффициент поглощения';
 
   @override
   String get calcBeerConcentration => 'Концентрация';
@@ -6561,36 +6191,28 @@ class AppLocalizationsRu extends AppLocalizations {
   String get calcBeerBasisMass => 'Массовый (a, г/л)';
 
   @override
-  String get calcBeerFormulaNote =>
-      'A — оптическая плотность (безразмерная); ε — молярный коэффициент поглощения, л·моль⁻¹·см⁻¹ (или a — массовый, л·г⁻¹·см⁻¹); l — толщина слоя, см; c — концентрация, моль/л (или г/л).';
+  String get calcBeerFormulaNote => 'A — оптическая плотность (безразмерная); ε — молярный коэффициент поглощения, л·моль⁻¹·см⁻¹ (или a — массовый, л·г⁻¹·см⁻¹); l — толщина слоя, см; c — концентрация, моль/л (или г/л).';
 
   @override
-  String get calcBeerErrorBasis =>
-      'Единица концентрации не соответствует основе коэффициента: с молярным ε — моль/л, с массовым a — единицы типа г/л.';
+  String get calcBeerErrorBasis => 'Единица концентрации не соответствует основе коэффициента: с молярным ε — моль/л, с массовым a — единицы типа г/л.';
 
   @override
-  String get calcBeerAssumptionDefinition =>
-      'Определительное соотношение: оптическая плотность пропорциональна толщине слоя и концентрации. Значения коэффициентов в приложение не встроены — вводите значение из собственной калибровки или проверенного источника для той же длины волны, растворителя и pH.';
+  String get calcBeerAssumptionDefinition => 'Определительное соотношение: оптическая плотность пропорциональна толщине слоя и концентрации. Значения коэффициентов в приложение не встроены — вводите значение из собственной калибровки или проверенного источника для той же длины волны, растворителя и pH.';
 
   @override
-  String get calcBeerAssumptionBlank =>
-      'A — оптическая плотность образца за вычетом холостой пробы (реагентной или матричной) при выбранной длине волны.';
+  String get calcBeerAssumptionBlank => 'A — оптическая плотность образца за вычетом холостой пробы (реагентной или матричной) при выбранной длине волны.';
 
   @override
-  String get calcBeerLimitationLinear =>
-      'Действует только в рабочем диапазоне, где линейность подтверждена калибровкой; ICH Q2(R2) §3.2.2.1 рекомендует не менее пяти концентраций по диапазону. Вне его разбавьте образец или используйте калибровочный график.';
+  String get calcBeerLimitationLinear => 'Действует только в рабочем диапазоне, где линейность подтверждена калибровкой; ICH Q2(R2) §3.2.2.1 рекомендует не менее пяти концентраций по диапазону. Вне его разбавьте образец или используйте калибровочный график.';
 
   @override
-  String get calcBeerLimitationIdentity =>
-      'Оптическая плотность не идентифицирует вещество. УФ-видимая спектрофотометрия малоспецифична; идентичность подтверждается другим методом (например, хроматографией с масс-спектрометрией).';
+  String get calcBeerLimitationIdentity => 'Оптическая плотность не идентифицирует вещество. УФ-видимая спектрофотометрия малоспецифична; идентичность подтверждается другим методом (например, хроматографией с масс-спектрометрией).';
 
   @override
-  String get calcBeerReference =>
-      'IUPAC Gold Book: «Beer–Lambert law», doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Линейность: ICH Q2(R2) (2023), §3.2.2.1.';
+  String get calcBeerReference => 'IUPAC Gold Book: «Beer–Lambert law», doi:10.1351/goldbook.B00626 · Swinehart DF. The Beer-Lambert law. J Chem Educ 1962;39(7):333, doi:10.1021/ed039p333 · Линейность: ICH Q2(R2) (2023), §3.2.2.1.';
 
   @override
-  String get calcBeerRelatedTools =>
-      'Связанные инструменты: калибровка и пределы';
+  String get calcBeerRelatedTools => 'Связанные инструменты: калибровка и пределы';
 
   @override
   String get citeCopy => 'Копировать для списка литературы';
@@ -6634,12 +6256,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get citeVerifyNote =>
-      'Приложение — справочный инструмент: перед включением в заключение сверьте каждый источник с оригиналом.';
+  String get citeVerifyNote => 'Приложение — справочный инструмент: перед включением в заключение сверьте каждый источник с оригиналом.';
 
   @override
-  String get guidelineToksAttribution =>
-      'Источник: проф. Юлдашев З.А. и соавторы, учебно-методические комплексы «Токсикологическая химия» (Ташкентский фармацевтический институт, 2025) — с разрешения автора, бесплатно для всех.';
+  String get guidelineToksAttribution => 'Источник: проф. Юлдашев З.А. и соавторы, учебно-методические комплексы «Токсикологическая химия» (Ташкентский фармацевтический институт, 2025) — с разрешения автора, бесплатно для всех.';
 
   @override
   String get studySectionTeaching => 'Учебно-методические комплексы';
@@ -6651,8 +6271,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyFrontQuestion => 'Вспомните ответ и переверните карточку';
 
   @override
-  String get studyQuizNoteAuthored =>
-      'Вопросы и неверные варианты составлены самостоятельно по фактам из карточек руководств; правильный ответ и страница указаны в цитируемом источнике.';
+  String get studyQuizNoteAuthored => 'Вопросы и неверные варианты составлены самостоятельно по фактам из карточек руководств; правильный ответ и страница указаны в цитируемом источнике.';
 
   @override
   String studySourcePages(String pages) {
@@ -6675,8 +6294,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reagentHazardGhs => 'Формулировки опасности СГС (PubChem)';
 
   @override
-  String get reagentHazardGeneral =>
-      'Общая рекомендация по безопасности (от приложения)';
+  String get reagentHazardGeneral => 'Общая рекомендация по безопасности (от приложения)';
 
   @override
   String reagentRecipeSource(String title) {
@@ -6684,8 +6302,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get reagentMachineDraft =>
-      'Перевод — автоматический черновик, специалистом не проверен. Числа перенесены из источника без изменений; сверяйте с исходным текстом ниже.';
+  String get reagentMachineDraft => 'Перевод — автоматический черновик, специалистом не проверен. Числа перенесены из источника без изменений; сверяйте с исходным текстом ниже.';
 
   @override
   String reagentVariant(String label) {
@@ -6731,15 +6348,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reagentOriginalText => 'Исходный текст (рус.)';
 
   @override
-  String get reagentOriginalHint =>
-      'Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены).';
+  String get reagentOriginalHint => 'Дословно из источника, для прослеживаемости (ошибки распознавания не исправлены).';
 
   @override
   String get reusePermissionGranted => 'С РАЗРЕШЕНИЯ ПРАВООБЛАДАТЕЛЯ';
 
   @override
-  String get guidelineGmtAttribution =>
-      'Источник: Юлдашев З.А. и соавт., «Анализ наркотических веществ. Учебное пособие» (Ташкентский фармацевтический институт, Ташкент, 2024) — с разрешения автора, бесплатно для всех.';
+  String get guidelineGmtAttribution => 'Источник: Юлдашев З.А. и соавт., «Анализ наркотических веществ. Учебное пособие» (Ташкентский фармацевтический институт, Ташкент, 2024) — с разрешения автора, бесплатно для всех.';
 
   @override
   String get studyDeckGmt => 'Анализ наркотических веществ (Юлдашев З.А.)';
@@ -6748,12 +6363,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtTitle => 'Допрос в суде: подготовка';
 
   @override
-  String get courtSubtitle =>
-      'Вопросы, которые задают эксперту о его заключении, и подготовка научно обоснованного ответа';
+  String get courtSubtitle => 'Вопросы, которые задают эксперту о его заключении, и подготовка научно обоснованного ответа';
 
   @override
-  String get courtDisclaimer =>
-      'Материал для подготовки; не юридическая консультация; заключение основывается только на собственном исследовании эксперта.';
+  String get courtDisclaimer => 'Материал для подготовки; не юридическая консультация; заключение основывается только на собственном исследовании эксперта.';
 
   @override
   String get courtSearchHint => 'Поиск по вопросам';
@@ -6807,12 +6420,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtPractice => 'Режим тренировки';
 
   @override
-  String get courtPracticeBody =>
-      'Случайный вопрос: продумайте ответ, затем откройте чек-лист.';
+  String get courtPracticeBody => 'Случайный вопрос: продумайте ответ, затем откройте чек-лист.';
 
   @override
-  String get courtPracticeThink =>
-      'Сначала подготовьте свой ответ: на какие документы и принципы вы опираетесь?';
+  String get courtPracticeThink => 'Сначала подготовьте свой ответ: на какие документы и принципы вы опираетесь?';
 
   @override
   String get courtPracticeReveal => 'Показать чек-лист';
@@ -6852,8 +6463,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtSourceUnverified => 'Источник не проверен';
 
   @override
-  String get courtSourceUnverifiedNote =>
-      'Точное место в этом источнике не подтверждено по оригинальному тексту.';
+  String get courtSourceUnverifiedNote => 'Точное место в этом источнике не подтверждено по оригинальному тексту.';
 
   @override
   String get courtFollowups => 'Дополнительные вопросы';
@@ -6932,20 +6542,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtPrinciples => 'Принципы честности';
 
   @override
-  String get courtPrinciplesBody =>
-      'Сообщать всё, говорить «не знаю», исправлять ошибки, быть независимым';
+  String get courtPrinciplesBody => 'Сообщать всё, говорить «не знаю», исправлять ошибки, быть независимым';
 
   @override
-  String get courtPrinciplesIntro =>
-      'Этот раздел никогда не учит скрывать, смягчать или искажать реальные результаты.';
+  String get courtPrinciplesIntro => 'Этот раздел никогда не учит скрывать, смягчать или искажать реальные результаты.';
 
   @override
-  String get courtJurisdictionUz =>
-      'Правовые вопросы: по законодательству Узбекистана';
+  String get courtJurisdictionUz => 'Правовые вопросы: по законодательству Узбекистана';
 
   @override
-  String get courtJurisdictionIntl =>
-      'Правовые вопросы: общие международные принципы. Выберите Узбекистан, чтобы видеть его законы.';
+  String get courtJurisdictionIntl => 'Правовые вопросы: общие международные принципы. Выберите Узбекистан, чтобы видеть его законы.';
 
   @override
   String get courtJurisdictionChange => 'Выбрать юрисдикцию';
@@ -6957,12 +6563,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtSimulator => 'Симулятор допроса в суде';
 
   @override
-  String get courtSimulatorBody =>
-      'Ответьте судье, прокурору, адвокату или другому эксперту — оценка: точность, источники, ограничения, беспристрастность.';
+  String get courtSimulatorBody => 'Ответьте судье, прокурору, адвокату или другому эксперту — оценка: точность, источники, ограничения, беспристрастность.';
 
   @override
-  String get courtSimulatorNote =>
-      'Симулятор не предрешает исход дела и не учит ложным показаниям, уклонению или сокрытию результатов.';
+  String get courtSimulatorNote => 'Симулятор не предрешает исход дела и не учит ложным показаниям, уклонению или сокрытию результатов.';
 
   @override
   String get courtRoleJudge => 'Судья';
@@ -7012,16 +6616,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtSimOpenQuestion => 'Открыть связанную карточку';
 
   @override
-  String get courtSimFreeTextNote =>
-      'Автоматическая оценка по ключевым словам, приблизительная. Научную точность сравните с образцовым ответом сами.';
+  String get courtSimFreeTextNote => 'Автоматическая оценка по ключевым словам, приблизительная. Научную точность сравните с образцовым ответом сами.';
 
   @override
-  String get courtSimFlagOverstatement =>
-      'Найдены абсолютные формулировки («100 %», «наверняка»…) — уверенность может быть завышена.';
+  String get courtSimFlagOverstatement => 'Найдены абсолютные формулировки («100 %», «наверняка»…) — уверенность может быть завышена.';
 
   @override
-  String get courtSimFlagEvasion =>
-      'Найдены уклончивые формулировки — назовите причину и то, что в вашей области.';
+  String get courtSimFlagEvasion => 'Найдены уклончивые формулировки — назовите причину и то, что в вашей области.';
 
   @override
   String get courtSimTooShort => 'Ответ слишком короткий.';
@@ -7059,8 +6660,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtDrill => 'Ролевая тренировка';
 
   @override
-  String get courtDrillBody =>
-      'Судья → прокурор → защитник → другой эксперт, по очереди';
+  String get courtDrillBody => 'Судья → прокурор → защитник → другой эксперт, по очереди';
 
   @override
   String courtDrillStep(int index, int count) {
@@ -7077,8 +6677,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtStats => 'Статистика и история';
 
   @override
-  String get courtStatsBody =>
-      'Ваши оценки и история попыток — только на этом устройстве';
+  String get courtStatsBody => 'Ваши оценки и история попыток — только на этом устройстве';
 
   @override
   String courtStatsAttempts(int count) {
@@ -7101,23 +6700,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get courtAi => 'ИИ-анализ';
 
   @override
-  String get courtAiUnavailable =>
-      'ИИ-анализ пока не подключён — скоро. Ваш ответ никуда не отправлен.';
+  String get courtAiUnavailable => 'ИИ-анализ пока не подключён — скоро. Ваш ответ никуда не отправлен.';
 
   @override
-  String get courtSimPartialUnverified =>
-      'Частично — источник не проверен: ответ опирается на источник с неподтверждённым местом.';
+  String get courtSimPartialUnverified => 'Частично — источник не проверен: ответ опирается на источник с неподтверждённым местом.';
 
   @override
-  String get courtSimReviewNote =>
-      'Оценка основана на материале, ожидающем экспертной проверки (NEEDS_REVIEW); образцовый ответ — тоже не проверенная истина.';
+  String get courtSimReviewNote => 'Оценка основана на материале, ожидающем экспертной проверки (NEEDS_REVIEW); образцовый ответ — тоже не проверенная истина.';
 
   @override
   String get glossaryTitle => 'Научный словарь';
 
   @override
-  String get glossaryIntro =>
-      'Термины на узбекском, русском и английском языках. Переводы остаются машинными черновиками, пока их не проверит терминолог.';
+  String get glossaryIntro => 'Термины на узбекском, русском и английском языках. Переводы остаются машинными черновиками, пока их не проверит терминолог.';
 
   @override
   String get glossaryFilterHint => 'Фильтр терминов (uz, ru, en)';
@@ -7129,8 +6724,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get glossaryMachineDraft => 'Машинный перевод — не проверен';
 
   @override
-  String get glossaryMachineDraftNote =>
-      'Эти переводы получены автоматически и не проверены терминологом. Используйте их для ориентира; для заключений сверяйте термин с авторитетным источником.';
+  String get glossaryMachineDraftNote => 'Эти переводы получены автоматически и не проверены терминологом. Используйте их для ориентира; для заключений сверяйте термин с авторитетным источником.';
 
   @override
   String get glossaryStatusTranslated => 'Переведено — не проверено';
@@ -7168,8 +6762,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get guidelineTerms => 'Термины';
 
   @override
-  String get guidelineTermsHint =>
-      'Нажмите на термин, чтобы увидеть его на узбекском, русском и английском.';
+  String get guidelineTermsHint => 'Нажмите на термин, чтобы увидеть его на узбекском, русском и английском.';
 
   @override
   String get studyModePractice => 'Тренировка';
@@ -7178,12 +6771,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyModeExam => 'Экзамен';
 
   @override
-  String get studyModePracticeBanner =>
-      'Режим тренировки — без оценки. После каждого ответа показано, верен ли он, почему и источник.';
+  String get studyModePracticeBanner => 'Режим тренировки — без оценки. После каждого ответа показано, верен ли он, почему и источник.';
 
   @override
-  String get studyModeExamBanner =>
-      'Экзамен с оценкой — только вопросы с авторским ключом ответа, тремя связанными неверными вариантами, пояснением и страницей или разделом источника. Ответы и пояснения — в конце.';
+  String get studyModeExamBanner => 'Экзамен с оценкой — только вопросы с авторским ключом ответа, тремя связанными неверными вариантами, пояснением и страницей или разделом источника. Ответы и пояснения — в конце.';
 
   @override
   String studyExamCount(int count) {
@@ -7202,16 +6793,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyPracticeOnly => 'Только тренировка';
 
   @override
-  String get studyExamUnavailable =>
-      'Экзамена по этому набору нет: вопросы созданы автоматически или у них нет пояснения либо страницы источника. Используйте тренировку.';
+  String get studyExamUnavailable => 'Экзамена по этому набору нет: вопросы созданы автоматически или у них нет пояснения либо страницы источника. Используйте тренировку.';
 
   @override
-  String get studyExamDraftLanguage =>
-      'Экзамен доступен на узбекском: русский перевод этих вопросов пока черновой.';
+  String get studyExamDraftLanguage => 'Экзамен доступен на узбекском: русский перевод этих вопросов пока черновой.';
 
   @override
-  String get studyQuizFlashcardsOnly =>
-      'Слишком мало связанных вариантов для теста — только карточки';
+  String get studyQuizFlashcardsOnly => 'Слишком мало связанных вариантов для теста — только карточки';
 
   @override
   String get studyTfQuestion => 'Верен ли этот ответ?';
@@ -7226,8 +6814,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyFalse => 'Неверно';
 
   @override
-  String get studyTfNote =>
-      'Если связанных неверных вариантов меньше трёх, вопрос показан в форме «Верно / Неверно».';
+  String get studyTfNote => 'Если связанных неверных вариантов меньше трёх, вопрос показан в форме «Верно / Неверно».';
 
   @override
   String studyExplainTopic(String topic) {
@@ -7251,8 +6838,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyOpenSource => 'Открыть источник';
 
   @override
-  String get studyQuoteTranslated =>
-      'Цитата из источника — машинный перевод, не проверен';
+  String get studyQuoteTranslated => 'Цитата из источника — машинный перевод, не проверен';
 
   @override
   String get studyShowOriginalQuote => 'Показать цитату на языке оригинала';
@@ -7277,12 +6863,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studyDeckMixedTopics => 'Другие темы (малые наборы объединены)';
 
   @override
-  String get studyDeckMixedSubstances =>
-      'Другие группы (малые наборы объединены)';
+  String get studyDeckMixedSubstances => 'Другие группы (малые наборы объединены)';
 
   @override
-  String get studyDeckMixedGuidelines =>
-      'Другие руководства (малые наборы объединены)';
+  String get studyDeckMixedGuidelines => 'Другие руководства (малые наборы объединены)';
 
   @override
   String get glossaryShortExplanation => 'Краткое пояснение';
@@ -7296,12 +6880,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get trStatusMachineDraft => 'Автоматический перевод — не проверен';
 
   @override
-  String get trStatusTerminologyChecked =>
-      'Автоматический перевод — термины сверены, содержание не проверено';
+  String get trStatusTerminologyChecked => 'Автоматический перевод — термины сверены, содержание не проверено';
 
   @override
-  String get trStatusClaimChecked =>
-      'Автоматический перевод — числа и единицы сверены, специалист не проверял';
+  String get trStatusClaimChecked => 'Автоматический перевод — числа и единицы сверены, специалист не проверял';
 
   @override
   String get trStatusReviewed => 'Перевод проверен специалистом';
@@ -7340,14 +6922,17 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String trLanguageName(String code) {
-    String _temp0 = intl.Intl.selectLogic(code, {
-      'en': 'английский',
-      'ru': 'русский',
-      'uz': 'узбекский',
-      'de': 'немецкий',
-      'fr': 'французский',
-      'other': '$code',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      code,
+      {
+        'en': 'английский',
+        'ru': 'русский',
+        'uz': 'узбекский',
+        'de': 'немецкий',
+        'fr': 'французский',
+        'other': '$code',
+      },
+    );
     return '$_temp0';
   }
 
@@ -7366,12 +6951,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get trTopicSummaryLabel => 'Краткое объяснение';
 
   @override
-  String get trTopicSummaryNote =>
-      'Составлено по утверждениям карточки с источниками; оригинальная цитата — ниже.';
+  String get trTopicSummaryNote => 'Составлено по утверждениям карточки с источниками; оригинальная цитата — ниже.';
 
   @override
-  String get legalTitleUnofficial =>
-      'Неофициальный перевод названия — не проверен';
+  String get legalTitleUnofficial => 'Неофициальный перевод названия — не проверен';
 
   @override
   String legalTitleOfficialIn(String language) {
@@ -7388,19 +6971,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get casebookTitle => 'Рабочий журнал эксперта';
 
   @override
-  String get casebookTileHint =>
-      'Личные заметки с ограничениями из источников — хранятся только на этом устройстве';
+  String get casebookTileHint => 'Личные заметки с ограничениями из источников — хранятся только на этом устройстве';
 
   @override
-  String get casebookPrivacyBanner =>
-      'Хранится только на этом устройстве. Ничего не отправляется на сервер, в ИИ или другим пользователям. При удалении приложения или очистке журнала данные удаляются безвозвратно. Не вносите персональные данные участников дела.';
+  String get casebookPrivacyBanner => 'Хранится только на этом устройстве. Ничего не отправляется на сервер, в ИИ или другим пользователям. При удалении приложения или очистке журнала данные удаляются безвозвратно. Не вносите персональные данные участников дела.';
 
   @override
   String get casebookEmptyTitle => 'Журнал пуст';
 
   @override
-  String get casebookEmptyBody =>
-      'Создайте запись по своей работе и добавляйте ограничения с источниками из карточек руководств. Всё остаётся на этом устройстве.';
+  String get casebookEmptyBody => 'Создайте запись по своей работе и добавляйте ограничения с источниками из карточек руководств. Всё остаётся на этом устройстве.';
 
   @override
   String get casebookNewEntry => 'Новая запись';
@@ -7415,8 +6995,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get casebookCaseRefField => 'Метка дела (необязательно)';
 
   @override
-  String get casebookCaseRefHint =>
-      'Ваша собственная метка, например внутренний номер';
+  String get casebookCaseRefHint => 'Ваша собственная метка, например внутренний номер';
 
   @override
   String get casebookDateField => 'Дата';
@@ -7434,19 +7013,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get casebookLinksTitle => 'Связанные объекты';
 
   @override
-  String get casebookLinksEmpty =>
-      'Пока нет связанных веществ, методов, карточек руководств или источников.';
+  String get casebookLinksEmpty => 'Пока нет связанных веществ, методов, карточек руководств или источников.';
 
   @override
   String get casebookAddLink => 'Связать объект';
 
   @override
-  String get casebookLinkSearchHint =>
-      'Поиск: вещество, метод, руководство, источник…';
+  String get casebookLinkSearchHint => 'Поиск: вещество, метод, руководство, источник…';
 
   @override
-  String get casebookLinkNoResults =>
-      'Ничего не найдено. Попробуйте другой запрос.';
+  String get casebookLinkNoResults => 'Ничего не найдено. Попробуйте другой запрос.';
 
   @override
   String get casebookLinkRemove => 'Убрать связь';
@@ -7455,8 +7031,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get casebookBlocksTitle => 'Утверждения с источниками';
 
   @override
-  String get casebookBlocksEmpty =>
-      'Утверждений пока нет. Добавьте ограничение или предостережение из карточки руководства — источник и раздел копируются вместе с ним.';
+  String get casebookBlocksEmpty => 'Утверждений пока нет. Добавьте ограничение или предостережение из карточки руководства — источник и раздел копируются вместе с ним.';
 
   @override
   String get casebookAddBlock => 'Добавить ограничение';
@@ -7507,8 +7082,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get casebookChooseNew => 'Новая запись';
 
   @override
-  String get casebookAiAddNote =>
-      'Этот текст ИИ будет помечен «Создано ИИ — не проверено». Сверьте его с источниками, прежде чем опираться на него.';
+  String get casebookAiAddNote => 'Этот текст ИИ будет помечен «Создано ИИ — не проверено». Сверьте его с источниками, прежде чем опираться на него.';
 
   @override
   String casebookAddedTo(String title) {
@@ -7528,12 +7102,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get casebookCopied => 'Скопировано в буфер обмена';
 
   @override
-  String get casebookExportDisclaimer =>
-      'Это личная рабочая заметка, а НЕ заключение эксперта. Утверждения скопированы из справочных материалов и не заменяют исследование реальных материалов дела.';
+  String get casebookExportDisclaimer => 'Это личная рабочая заметка, а НЕ заключение эксперта. Утверждения скопированы из справочных материалов и не заменяют исследование реальных материалов дела.';
 
   @override
-  String get casebookExportFooter =>
-      'Экспортировано из журнала FORENSIC EXPERT (хранится на устройстве автора). Проверяйте каждое утверждение по первоисточнику.';
+  String get casebookExportFooter => 'Экспортировано из журнала FORENSIC EXPERT (хранится на устройстве автора). Проверяйте каждое утверждение по первоисточнику.';
 
   @override
   String get casebookExportLinks => 'Связанные объекты';
@@ -7548,8 +7120,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get casebookDeleteEntryTitle => 'Удалить эту запись?';
 
   @override
-  String get casebookDeleteEntryBody =>
-      'Запись будет удалена с этого устройства. Отменить нельзя.';
+  String get casebookDeleteEntryBody => 'Запись будет удалена с этого устройства. Отменить нельзя.';
 
   @override
   String get casebookDeleteConfirm => 'Удалить';
@@ -7564,8 +7135,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get casebookClearTitle => 'Очистить весь журнал?';
 
   @override
-  String get casebookClearBody =>
-      'Все записи будут безвозвратно удалены с этого устройства. Они нигде больше не хранятся, поэтому восстановить их нельзя.';
+  String get casebookClearBody => 'Все записи будут безвозвратно удалены с этого устройства. Они нигде больше не хранятся, поэтому восстановить их нельзя.';
 
   @override
   String get casebookCleared => 'Журнал очищен';
@@ -7587,19 +7157,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admNavVerify => 'Заявки на верификацию';
 
   @override
-  String get admNavVerifyHint =>
-      'Проверьте заявки специалистов и примите решение';
+  String get admNavVerifyHint => 'Проверьте заявки специалистов и примите решение';
 
   @override
   String get admVfEmpty => 'Ожидающих заявок нет.';
 
   @override
-  String get admVfUnavailable =>
-      'Для верификации нужен онлайн-сервис, он не подключён в этой сборке.';
+  String get admVfUnavailable => 'Для верификации нужен онлайн-сервис, он не подключён в этой сборке.';
 
   @override
-  String get admVfLoadFailed =>
-      'Не удалось загрузить заявки. Проверьте соединение и повторите.';
+  String get admVfLoadFailed => 'Не удалось загрузить заявки. Проверьте соединение и повторите.';
 
   @override
   String admVfSubmitted(String date) {
@@ -7623,8 +7190,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admVfSelfBadge => 'Ваша собственная заявка';
 
   @override
-  String get admVfSelfNote =>
-      'Вы не можете подтвердить собственную заявку — это сделает другой уполномоченный администратор.';
+  String get admVfSelfNote => 'Вы не можете подтвердить собственную заявку — это сделает другой уполномоченный администратор.';
 
   @override
   String get admVfApplicant => 'Заявитель';
@@ -7657,16 +7223,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admVfDocs => 'Документы о квалификации';
 
   @override
-  String get admVfDocsHint =>
-      'Отметьте каждый проверенный документ. Для подтверждения нужен хотя бы один проверенный документ.';
+  String get admVfDocsHint => 'Отметьте каждый проверенный документ. Для подтверждения нужен хотя бы один проверенный документ.';
 
   @override
-  String get admVfDocsNone =>
-      'Заявитель не загрузил документов, поэтому заявку пока нельзя подтвердить.';
+  String get admVfDocsNone => 'Заявитель не загрузил документов, поэтому заявку пока нельзя подтвердить.';
 
   @override
-  String get admVfDocsNote =>
-      'Приложение показывает только сведения о документе (тип, размер, SHA-256). Сам файл проверяйте в защищённом хранилище на сервере.';
+  String get admVfDocsNote => 'Приложение показывает только сведения о документе (тип, размер, SHA-256). Сам файл проверяйте в защищённом хранилище на сервере.';
 
   @override
   String admVfDocMeta(String type, String size, String hash) {
@@ -7680,8 +7243,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admVfScope => 'Область решения';
 
   @override
-  String get admVfScopeRequired =>
-      'Выберите область специальности, к которой относится решение.';
+  String get admVfScopeRequired => 'Выберите область специальности, к которой относится решение.';
 
   @override
   String get admVfReason => 'Причина (не менее 5 символов)';
@@ -7702,8 +7264,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admVfReject => 'Отклонить';
 
   @override
-  String get admVfNoScientific =>
-      'Подтверждение личности не даёт прав научного рецензирования.';
+  String get admVfNoScientific => 'Подтверждение личности не даёт прав научного рецензирования.';
 
   @override
   String get admVfDoneVerified => 'Заявка подтверждена.';
@@ -7715,24 +7276,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admVfDoneRejected => 'Заявка отклонена.';
 
   @override
-  String get admVfErrSelf =>
-      'Вы не можете подтвердить собственную заявку — это сделает другой уполномоченный администратор.';
+  String get admVfErrSelf => 'Вы не можете подтвердить собственную заявку — это сделает другой уполномоченный администратор.';
 
   @override
-  String get admVfErrForbidden =>
-      'У вас нет полномочий подтверждать в этой области.';
+  String get admVfErrForbidden => 'У вас нет полномочий подтверждать в этой области.';
 
   @override
-  String get admVfErrNoCredential =>
-      'Отметьте проверенным хотя бы один документ.';
+  String get admVfErrNoCredential => 'Отметьте проверенным хотя бы один документ.';
 
   @override
-  String get admVfErrUnknownCredential =>
-      'Выбранный документ не принадлежит заявителю. Обновите список.';
+  String get admVfErrUnknownCredential => 'Выбранный документ не принадлежит заявителю. Обновите список.';
 
   @override
-  String get admVfErrTransition =>
-      'По этой заявке решение уже принято. Обновите список.';
+  String get admVfErrTransition => 'По этой заявке решение уже принято. Обновите список.';
 
   @override
   String get admVfErrNoApplication => 'Заявка не найдена.';
@@ -7744,8 +7300,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admVfErrSignIn => 'Войдите в аккаунт снова.';
 
   @override
-  String get admVfErrOffline =>
-      'Нет соединения. Проверьте интернет и повторите.';
+  String get admVfErrOffline => 'Нет соединения. Проверьте интернет и повторите.';
 
   @override
   String get admVfErrServer => 'Решение не сохранено. Повторите позже.';
@@ -7757,8 +7312,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get legalOpenOnline => 'Открыть полную политику в интернете';
 
   @override
-  String get legalPublishedNotice =>
-      'Это опубликованная политика. Тот же текст доступен в интернете.';
+  String get legalPublishedNotice => 'Это опубликованная политика. Тот же текст доступен в интернете.';
 
   @override
   String get detailSourcedStatement => 'По источнику (не дословная цитата)';
@@ -7770,8 +7324,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get proSearchEntry => 'Фильтры и обратный поиск';
 
   @override
-  String get proSearchIntro =>
-      'Сузьте поиск по образцу, методу, реагенту, уровню доказательности и другим признакам или перейдите от образца, метода или реагента к веществам, для которых они задокументированы.';
+  String get proSearchIntro => 'Сузьте поиск по образцу, методу, реагенту, уровню доказательности и другим признакам или перейдите от образца, метода или реагента к веществам, для которых они задокументированы.';
 
   @override
   String get proSearchHint => 'Название, синоним или «фраза»';
@@ -7833,19 +7386,22 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String proFamilyName(String code) {
-    String _temp0 = intl.Intl.selectLogic(code, {
-      'colourTest': 'Цветная (капельная) реакция',
-      'tlc': 'TLC (тонкослойная хроматография)',
-      'microcrystal': 'Микрокристаллоскопия',
-      'uvVis': 'УФ/видимая спектрофотометрия',
-      'immunoassay': 'Иммунохимический анализ',
-      'gcMs': 'GC-MS',
-      'lcMs': 'LC-MS, LC-MS/MS',
-      'hrms': 'HRMS (масс-спектрометрия высокого разрешения)',
-      'gcFid': 'GC-FID, парофазная GC',
-      'hplc': 'HPLC',
-      'other': '$code',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      code,
+      {
+        'colourTest': 'Цветная (капельная) реакция',
+        'tlc': 'TLC (тонкослойная хроматография)',
+        'microcrystal': 'Микрокристаллоскопия',
+        'uvVis': 'УФ/видимая спектрофотометрия',
+        'immunoassay': 'Иммунохимический анализ',
+        'gcMs': 'GC-MS',
+        'lcMs': 'LC-MS, LC-MS/MS',
+        'hrms': 'HRMS (масс-спектрометрия высокого разрешения)',
+        'gcFid': 'GC-FID, парофазная GC',
+        'hplc': 'HPLC',
+        'other': '$code',
+      },
+    );
     return '$_temp0';
   }
 
@@ -7866,12 +7422,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get proResultsNoneTitle => 'В пакете ничего не найдено';
 
   @override
-  String get proResultsNoneBody =>
-      'Ничего не подходит под эту комбинацию. Уберите фильтр, отключите точное совпадение или попробуйте другое написание или язык.';
+  String get proResultsNoneBody => 'Ничего не подходит под эту комбинацию. Уберите фильтр, отключите точное совпадение или попробуйте другое написание или язык.';
 
   @override
-  String get proResultsStart =>
-      'Введите название или выберите фильтр, чтобы увидеть результаты.';
+  String get proResultsStart => 'Введите название или выберите фильтр, чтобы увидеть результаты.';
 
   @override
   String get proReverseReagent => 'Реагент → вещества';
@@ -7883,8 +7437,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get proReverseMethod => 'Метод → вещества';
 
   @override
-  String get proReversePick =>
-      'Выберите, чтобы увидеть, для каких веществ в пакете есть данные.';
+  String get proReversePick => 'Выберите, чтобы увидеть, для каких веществ в пакете есть данные.';
 
   @override
   String proReverseCount(int count) {
@@ -7905,12 +7458,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get proReverseEmpty =>
-      'Для этого элемента в пакете нет задокументированных веществ.';
+  String get proReverseEmpty => 'Для этого элемента в пакете нет задокументированных веществ.';
 
   @override
-  String get proReverseNote =>
-      'Только связи, указанные в источниках. «Не найдено» не означает «невозможно».';
+  String get proReverseNote => 'Только связи, указанные в источниках. «Не найдено» не означает «невозможно».';
 
   @override
   String get proRoleAnalysed => 'анализировалось этим методом (источник)';
@@ -7922,8 +7473,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get proRoleScreened => 'скрининг этим тестом';
 
   @override
-  String get proRoleMeasured =>
-      'значение приведено для этого образца (не порог)';
+  String get proRoleMeasured => 'значение приведено для этого образца (не порог)';
 
   @override
   String proViaLabel(String names) {
@@ -7934,15 +7484,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get planEntryTitle => 'План анализа для этого вещества';
 
   @override
-  String get planEntryBody =>
-      'Образцы, предварительные тесты, подтверждение, помехи, ограничения и памятка для заключения на одной странице, с источниками.';
+  String get planEntryBody => 'Образцы, предварительные тесты, подтверждение, помехи, ограничения и памятка для заключения на одной странице, с источниками.';
 
   @override
   String get planTitle => 'План анализа';
 
   @override
-  String get planIntro =>
-      'Составлен только из утверждений с источниками, уже имеющихся в пакете. Это справочная схема, а не валидированная методика и не заключение эксперта.';
+  String get planIntro => 'Составлен только из утверждений с источниками, уже имеющихся в пакете. Это справочная схема, а не валидированная методика и не заключение эксперта.';
 
   @override
   String planSummary(int s, int p, int c, int l) {
@@ -7953,8 +7501,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get planSecSpecimens => 'Образцы и заметки о взятии';
 
   @override
-  String get planSecPresumptive =>
-      'Предварительные тесты (реагент и наблюдение)';
+  String get planSecPresumptive => 'Предварительные тесты (реагент и наблюдение)';
 
   @override
   String get planSecBench => 'TLC, микрокристаллоскопия и УФ/Вид';
@@ -7963,12 +7510,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get planSecConfirmation => 'Этап подтверждения';
 
   @override
-  String get planSecInstrumental =>
-      'Другие инструментальные методы в источниках';
+  String get planSecInstrumental => 'Другие инструментальные методы в источниках';
 
   @override
-  String get planSecInterferences =>
-      'Помехи, перекрёстная реактивность и ложные результаты';
+  String get planSecInterferences => 'Помехи, перекрёстная реактивность и ложные результаты';
 
   @override
   String get planSecLimits => 'Границы интерпретации';
@@ -7977,40 +7522,31 @@ class AppLocalizationsRu extends AppLocalizations {
   String get planSecReminder => 'Памятка для заключения';
 
   @override
-  String get planNoSpecimens =>
-      'Для этого вещества в пакете нет задокументированных образцов.';
+  String get planNoSpecimens => 'Для этого вещества в пакете нет задокументированных образцов.';
 
   @override
-  String get planNoSamplingNotes =>
-      'Для этих образцов в пакете нет заметок о взятии или консервации.';
+  String get planNoSamplingNotes => 'Для этих образцов в пакете нет заметок о взятии или консервации.';
 
   @override
-  String get planNoPresumptive =>
-      'Для этого вещества в пакете нет предварительных тестов.';
+  String get planNoPresumptive => 'Для этого вещества в пакете нет предварительных тестов.';
 
   @override
-  String get planNoReagents =>
-      'Для этого теста в пакете нет пары «реагент — ожидаемое наблюдение».';
+  String get planNoReagents => 'Для этого теста в пакете нет пары «реагент — ожидаемое наблюдение».';
 
   @override
-  String get planNoBench =>
-      'Для этого вещества в пакете нет систем TLC, микрокристаллоскопии или УФ/Вид.';
+  String get planNoBench => 'Для этого вещества в пакете нет систем TLC, микрокристаллоскопии или УФ/Вид.';
 
   @override
-  String get planNoConfirmation =>
-      'Для этого вещества в пакете нет подтверждающего метода.';
+  String get planNoConfirmation => 'Для этого вещества в пакете нет подтверждающего метода.';
 
   @override
-  String get planNoInstrumental =>
-      'Других инструментальных методов для этого вещества в пакете не упоминается.';
+  String get planNoInstrumental => 'Других инструментальных методов для этого вещества в пакете не упоминается.';
 
   @override
-  String get planNoInterferences =>
-      'Для тестов этого вещества в пакете нет помех, перекрёстной реактивности и ложных результатов.';
+  String get planNoInterferences => 'Для тестов этого вещества в пакете нет помех, перекрёстной реактивности и ложных результатов.';
 
   @override
-  String get planNoLimits =>
-      'Для этих образцов и методов в пакете нет ограничений с источником.';
+  String get planNoLimits => 'Для этих образцов и методов в пакете нет ограничений с источником.';
 
   @override
   String get planConfirmRequired => 'Требуется подтверждение';
@@ -8027,8 +7563,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get planNotDefinitive =>
-      'Источники не представляют этот тест как окончательную идентификацию.';
+  String get planNotDefinitive => 'Источники не представляют этот тест как окончательную идентификацию.';
 
   @override
   String planAbout(String name) {
@@ -8050,22 +7585,25 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String planRoleName(String role) {
-    String _temp0 = intl.Intl.selectLogic(role, {
-      'basis': 'Утверждение источника',
-      'presumptive': 'Предварительный характер',
-      'confirmationRequirement': 'Требование подтверждения',
-      'limitation': 'Ограничение',
-      'crossReactivity': 'Перекрёстная реактивность',
-      'falsePositive': 'Ложноположительный результат',
-      'falseNegative': 'Ложноотрицательный результат',
-      'interference': 'Помеха',
-      'detectionWindow': 'Окно обнаружения',
-      'use': 'Заметка о взятии / применении',
-      'principle': 'Принцип',
-      'application': 'Применение',
-      'observation': 'Ожидаемое наблюдение',
-      'other': '$role',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      role,
+      {
+        'basis': 'Утверждение источника',
+        'presumptive': 'Предварительный характер',
+        'confirmationRequirement': 'Требование подтверждения',
+        'limitation': 'Ограничение',
+        'crossReactivity': 'Перекрёстная реактивность',
+        'falsePositive': 'Ложноположительный результат',
+        'falseNegative': 'Ложноотрицательный результат',
+        'interference': 'Помеха',
+        'detectionWindow': 'Окно обнаружения',
+        'use': 'Заметка о взятии / применении',
+        'principle': 'Принцип',
+        'application': 'Применение',
+        'observation': 'Ожидаемое наблюдение',
+        'other': '$role',
+      },
+    );
     return '$_temp0';
   }
 
@@ -8086,8 +7624,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get planRemConfirmMissing =>
-      'Для тестов выше в пакете нет подтверждающего метода. Не утверждайте подтверждённую идентификацию на основании этого пакета.';
+  String get planRemConfirmMissing => 'Для тестов выше в пакете нет подтверждающего метода. Не утверждайте подтверждённую идентификацию на основании этого пакета.';
 
   @override
   String planRemNotThreshold(int count) {
@@ -8095,12 +7632,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get planRemNotPaired =>
-      'Источники не связывают методы с образцами. Не утверждайте, какой метод применялся к какому образцу, на основании этого пакета.';
+  String get planRemNotPaired => 'Источники не связывают методы с образцами. Не утверждайте, какой метод применялся к какому образцу, на основании этого пакета.';
 
   @override
-  String get planRemNothingVerified =>
-      'Ни одно утверждение здесь не проверено рецензентом-экспертом. Не выдавайте его за проверенные научные данные.';
+  String get planRemNothingVerified => 'Ни одно утверждение здесь не проверено рецензентом-экспертом. Не выдавайте его за проверенные научные данные.';
 
   @override
   String planRemConflict(int count) {
@@ -8108,12 +7643,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get planRemNoData =>
-      'В пакете нет данных об анализе этого вещества. Эта страница не может служить основанием для заключения.';
+  String get planRemNoData => 'В пакете нет данных об анализе этого вещества. Эта страница не может служить основанием для заключения.';
 
   @override
-  String get planReminderFootnote =>
-      'Основано только на признаках и ограничениях с источниками в пакете. Не добавляет новых научных утверждений и не является заключением эксперта.';
+  String get planReminderFootnote => 'Основано только на признаках и ограничениях с источниками в пакете. Не добавляет новых научных утверждений и не является заключением эксперта.';
 
   @override
   String get planCopy => 'Скопировать план со ссылками';
@@ -8127,8 +7660,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get planExportDisclaimer =>
-      'Справочная схема, составленная из утверждений с источниками в пакете контента. Не валидированная методика и не заключение эксперта; проверяйте каждое утверждение по первоисточнику.';
+  String get planExportDisclaimer => 'Справочная схема, составленная из утверждений с источниками в пакете контента. Не валидированная методика и не заключение эксперта; проверяйте каждое утверждение по первоисточнику.';
 
   @override
   String get planExportSources => 'ИСТОЧНИКИ';
@@ -8145,12 +7677,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get imageOtherSubstanceChip => 'Пример: другое вещество';
 
   @override
-  String get imageOtherSubstanceNote =>
-      'Этот рисунок взят из примера по другому веществу; он показывает принцип метода и не относится к веществу, с которого вы пришли. Название рисунка указывает показанное вещество.';
+  String get imageOtherSubstanceNote => 'Этот рисунок взят из примера по другому веществу; он показывает принцип метода и не относится к веществу, с которого вы пришли. Название рисунка указывает показанное вещество.';
 
   @override
-  String get detailMethodRecords =>
-      'Условия метода и ограничения (по источникам)';
+  String get detailMethodRecords => 'Условия метода и ограничения (по источникам)';
 
   @override
   String get claimFieldSamplePreparation => 'Подготовка пробы';
@@ -8177,12 +7707,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaTitle => 'Вопросы и ответы';
 
   @override
-  String get qaIntro =>
-      'Здесь судебные медики и судебные химики задают друг другу практические вопросы. Отвечать могут только подтверждённые специалисты.';
+  String get qaIntro => 'Здесь судебные медики и судебные химики задают друг другу практические вопросы. Отвечать могут только подтверждённые специалисты.';
 
   @override
-  String get qaNotice =>
-      'Ответ здесь — мнение коллеги, а не научный вывод и не экспертное заключение для дела.';
+  String get qaNotice => 'Ответ здесь — мнение коллеги, а не научный вывод и не экспертное заключение для дела.';
 
   @override
   String get qaUnavailable => 'Этот раздел пока недоступен.';
@@ -8203,8 +7731,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaEmpty => 'Вопросов пока нет. Задайте первый.';
 
   @override
-  String get qaLoadFailed =>
-      'Не удалось загрузить вопросы. Проверьте соединение.';
+  String get qaLoadFailed => 'Не удалось загрузить вопросы. Проверьте соединение.';
 
   @override
   String qaAnswersCount(int count) {
@@ -8301,8 +7828,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaFieldTopics => 'Темы (до 5)';
 
   @override
-  String get qaPrivacyWarning =>
-      'Никогда не пишите материалы дела: номер дела или экспертизы, имя человека, адрес, дату вместе с местом и любые другие данные, по которым можно установить личность. Опишите вопрос в общем виде. Фотографии прикрепить нельзя.';
+  String get qaPrivacyWarning => 'Никогда не пишите материалы дела: номер дела или экспертизы, имя человека, адрес, дату вместе с местом и любые другие данные, по которым можно установить личность. Опишите вопрос в общем виде. Фотографии прикрепить нельзя.';
 
   @override
   String get qaNoImages => 'К публикациям нельзя прикреплять изображения.';
@@ -8320,8 +7846,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaPosted => 'Опубликовано.';
 
   @override
-  String get qaHeldForReview =>
-      'Отправлено на проверку: текст похож на материалы дела. Его посмотрит администратор.';
+  String get qaHeldForReview => 'Отправлено на проверку: текст похож на материалы дела. Его посмотрит администратор.';
 
   @override
   String get qaFlagCaseNumber => 'номер дела или экспертизы';
@@ -8353,8 +7878,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaAnswerHint => 'Напишите ответ';
 
   @override
-  String get qaOnlyVerifiedMayAnswer =>
-      'Отвечать могут только подтверждённые специалисты. Пройдите подтверждение, чтобы участвовать.';
+  String get qaOnlyVerifiedMayAnswer => 'Отвечать могут только подтверждённые специалисты. Пройдите подтверждение, чтобы участвовать.';
 
   @override
   String get qaNoAnswers => 'Ответов пока нет.';
@@ -8372,8 +7896,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaDownvote => 'Бесполезный ответ';
 
   @override
-  String get qaOnlyVerifiedMayVote =>
-      'Голосовать могут только подтверждённые специалисты.';
+  String get qaOnlyVerifiedMayVote => 'Голосовать могут только подтверждённые специалисты.';
 
   @override
   String get qaReport => 'Пожаловаться';
@@ -8385,8 +7908,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaReportSent => 'Спасибо. Администратор посмотрит.';
 
   @override
-  String get qaReportHidden =>
-      'Скрыто до решения администратора: пожаловались три разных пользователя.';
+  String get qaReportHidden => 'Скрыто до решения администратора: пожаловались три разных пользователя.';
 
   @override
   String get qaMachineTranslation => 'Машинный перевод';
@@ -8404,12 +7926,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaVerifyTitle => 'Подтверждение специалиста';
 
   @override
-  String get qaVerifyIntro =>
-      'Отправьте фотографию или PDF вашего профессионального документа — диплома, сертификата, лицензии или удостоверения о квалификации. Проверка автоматическая.';
+  String get qaVerifyIntro => 'Отправьте фотографию или PDF вашего профессионального документа — диплома, сертификата, лицензии или удостоверения о квалификации. Проверка автоматическая.';
 
   @override
-  String get qaVerifyFileNotStored =>
-      'Файл НЕ сохраняется. Он находится только в памяти во время проверки и не попадает ни в базу, ни в хранилище, ни в журнал. Сохраняется лишь: идентификатор вашей учётной записи, роль, страна, результат и дата. Номер документа и полное имя не записываются.';
+  String get qaVerifyFileNotStored => 'Файл НЕ сохраняется. Он находится только в памяти во время проверки и не попадает ни в базу, ни в хранилище, ни в журнал. Сохраняется лишь: идентификатор вашей учётной записи, роль, страна, результат и дата. Номер документа и полное имя не записываются.';
 
   @override
   String get qaVerifyRole => 'Ваша роль';
@@ -8445,8 +7965,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaVerifyChecking => 'Проверяем документ…';
 
   @override
-  String get qaVerifyAccepted =>
-      'Подтверждено. Теперь вы можете отвечать на вопросы и голосовать.';
+  String get qaVerifyAccepted => 'Подтверждено. Теперь вы можете отвечать на вопросы и голосовать.';
 
   @override
   String qaVerifyRejected(String reason) {
@@ -8454,19 +7973,16 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get qaReasonNotACredential =>
-      'файл не похож на профессиональный документ';
+  String get qaReasonNotACredential => 'файл не похож на профессиональный документ';
 
   @override
   String get qaReasonUnreadable => 'документ не удалось прочитать';
 
   @override
-  String get qaReasonRoleMismatch =>
-      'в документе указана другая специальность, чем выбранная вами';
+  String get qaReasonRoleMismatch => 'в документе указана другая специальность, чем выбранная вами';
 
   @override
-  String get qaReasonLowConfidence =>
-      'проверка оказалась недостаточно уверенной';
+  String get qaReasonLowConfidence => 'проверка оказалась недостаточно уверенной';
 
   @override
   String get qaReasonExpired => 'срок действия документа, похоже, истёк';
@@ -8475,12 +7991,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaReasonReported => 'на профиль пожаловались другие пользователи';
 
   @override
-  String get qaVerifyBadDocument =>
-      'Выберите файл JPEG, PNG, WebP или PDF размером не более 6 МБ.';
+  String get qaVerifyBadDocument => 'Выберите файл JPEG, PNG, WebP или PDF размером не более 6 МБ.';
 
   @override
-  String get qaVerifyUnavailable =>
-      'Проверка сейчас недоступна. Попытка не израсходована.';
+  String get qaVerifyUnavailable => 'Проверка сейчас недоступна. Попытка не израсходована.';
 
   @override
   String get qaStatusUnverified => 'Не подтверждён';
@@ -8597,57 +8111,46 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaRulesTitle => 'Правила сообщества';
 
   @override
-  String get qaRulesIntro =>
-      'Этот раздел — профессиональный разговор между судебными специалистами. Всё остальное определяют два правила: никаких материалов дела и ничего, что работает против закона.';
+  String get qaRulesIntro => 'Этот раздел — профессиональный разговор между судебными специалистами. Всё остальное определяют два правила: никаких материалов дела и ничего, что работает против закона.';
 
   @override
   String get qaRulesPurposeTitle => 'Для чего этот раздел';
 
   @override
-  String get qaRulesPurposeBody =>
-      'Вопросы о методе, реактиве, объекте, приборе, интерпретации результата, стандарте или нормативном документе — в общем виде, так, как их задают на конференции, а не о конкретном деле.';
+  String get qaRulesPurposeBody => 'Вопросы о методе, реактиве, объекте, приборе, интерпретации результата, стандарте или нормативном документе — в общем виде, так, как их задают на конференции, а не о конкретном деле.';
 
   @override
   String get qaRulesGoodTitle => 'Как задать вопрос хорошо';
 
   @override
-  String get qaRulesGood1 =>
-      'Назовите вещество, метод и вид объекта. Без этого ответ будет догадкой.';
+  String get qaRulesGood1 => 'Назовите вещество, метод и вид объекта. Без этого ответ будет догадкой.';
 
   @override
-  String get qaRulesGood2 =>
-      'Напишите, что вы уже пробовали и на чём именно остановились.';
+  String get qaRulesGood2 => 'Напишите, что вы уже пробовали и на чём именно остановились.';
 
   @override
-  String get qaRulesGood3 =>
-      'Пишите числа с единицами и указывайте, по какому руководству или изданию вы работаете.';
+  String get qaRulesGood3 => 'Пишите числа с единицами и указывайте, по какому руководству или изданию вы работаете.';
 
   @override
-  String get qaRulesGood4 =>
-      'Выберите темы, чтобы вопрос увидели нужные специалисты.';
+  String get qaRulesGood4 => 'Выберите темы, чтобы вопрос увидели нужные специалисты.';
 
   @override
   String get qaRulesForbiddenTitle => 'Этого писать нельзя';
 
   @override
-  String get qaRulesForbidden1 =>
-      'Материалы дела: номер дела или экспертизы, имя человека, адрес, дата вместе с местом, фотография и любые другие данные, по которым можно установить личность.';
+  String get qaRulesForbidden1 => 'Материалы дела: номер дела или экспертизы, имя человека, адрес, дата вместе с местом, фотография и любые другие данные, по которым можно установить личность.';
 
   @override
-  String get qaRulesForbidden2 =>
-      'Материалы незавершённой экспертизы или проект заключения.';
+  String get qaRulesForbidden2 => 'Материалы незавершённой экспертизы или проект заключения.';
 
   @override
-  String get qaRulesForbidden3 =>
-      'Всё, что направлено на искажение результата: как подогнать вывод под нужный ответ, как изменить или скрыть результат, как задним числом оформить или подделать документ, как избавиться от доказательства.';
+  String get qaRulesForbidden3 => 'Всё, что направлено на искажение результата: как подогнать вывод под нужный ответ, как изменить или скрыть результат, как задним числом оформить или подделать документ, как избавиться от доказательства.';
 
   @override
-  String get qaRulesForbidden4 =>
-      'Как получить, изготовить, скрыть или применить вещество, чтобы причинить вред или избежать обнаружения.';
+  String get qaRulesForbidden4 => 'Как получить, изготовить, скрыть или применить вещество, чтобы причинить вред или избежать обнаружения.';
 
   @override
-  String get qaRulesForbidden5 =>
-      'Юридическая консультация, диагноз, лечение или доза для конкретного человека. Этот раздел — не консультация.';
+  String get qaRulesForbidden5 => 'Юридическая консультация, диагноз, лечение или доза для конкретного человека. Этот раздел — не консультация.';
 
   @override
   String get qaRulesForbidden6 => 'Реклама, спам и всё, что унижает коллегу.';
@@ -8656,31 +8159,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get qaRulesAnswerTitle => 'Ответы';
 
   @override
-  String get qaRulesAnswer1 =>
-      'Отвечать могут только подтверждённые специалисты и только в пределах того, чем они занимаются на практике.';
+  String get qaRulesAnswer1 => 'Отвечать могут только подтверждённые специалисты и только в пределах того, чем они занимаются на практике.';
 
   @override
-  String get qaRulesAnswer2 =>
-      'Опирайтесь на источник и называйте его. Где вы предполагаете — так и напишите.';
+  String get qaRulesAnswer2 => 'Опирайтесь на источник и называйте его. Где вы предполагаете — так и напишите.';
 
   @override
-  String get qaRulesAnswer3 =>
-      'Ответ здесь — мнение коллеги. Это не экспертное заключение для дела и не может на него ссылаться.';
+  String get qaRulesAnswer3 => 'Ответ здесь — мнение коллеги. Это не экспертное заключение для дела и не может на него ссылаться.';
 
   @override
   String get qaRulesEnforceTitle => 'Что будет при нарушении';
 
   @override
-  String get qaRulesEnforceBody =>
-      'Текст, похожий на материалы дела, автоматически отправляется на проверку. Жалобы трёх разных пользователей скрывают публикацию или приостанавливают подтверждение специалиста до решения администратора. Публикация, направленная против закона, удаляется вместе с подтверждением.';
+  String get qaRulesEnforceBody => 'Текст, похожий на материалы дела, автоматически отправляется на проверку. Жалобы трёх разных пользователей скрывают публикацию или приостанавливают подтверждение специалиста до решения администратора. Публикация, направленная против закона, удаляется вместе с подтверждением.';
 
   @override
-  String get provOwnWordsNote =>
-      'Содержание источника изложено своими словами; оригинальный текст не копировался. Точное место — ниже.';
+  String get provOwnWordsNote => 'Содержание источника изложено своими словами; оригинальный текст не копировался. Точное место — ниже.';
 
   @override
-  String get confirmedSourceBannerTextbook =>
-      'На основе подтверждённого источника: учебник преподавателя. Точное место указано.';
+  String get confirmedSourceBannerTextbook => 'На основе подтверждённого источника: учебник преподавателя. Точное место указано.';
 
   @override
   String get confirmedSourceChip => 'Подтверждённый источник';
@@ -8689,8 +8186,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get needsConfirmationChip => 'Требует подтверждения';
 
   @override
-  String get needsConfirmationBanner =>
-      'Из международной литературы (статья, тезис): требует подтверждения.';
+  String get needsConfirmationBanner => 'Из международной литературы (статья, тезис): требует подтверждения.';
 
   @override
   String get avatarSemantics => 'Фото профиля';
@@ -8720,8 +8216,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get avatarCancel => 'Отмена';
 
   @override
-  String get avatarDeviceOnly =>
-      'Фото хранится только на этом телефоне и не отправляется на сервер.';
+  String get avatarDeviceOnly => 'Фото хранится только на этом телефоне и не отправляется на сервер.';
 
   @override
   String get avatarError => 'Не удалось открыть фото. Выберите другое.';
@@ -8730,16 +8225,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get bookMethodsTitle => 'Методы по руководствам и учебникам';
 
   @override
-  String get bookMethodsNote =>
-      'Методы исследования из подтверждённых источников (книги преподавателя и пособия): цветные реакции, микрокристаллоскопия, TLC, УФ-спектр, подтверждающий метод. В каждой записи — полное описание, источник и точное место.';
+  String get bookMethodsNote => 'Методы исследования из подтверждённых источников (книги преподавателя и пособия): цветные реакции, микрокристаллоскопия, TLC, УФ-спектр, подтверждающий метод. В каждой записи — полное описание, источник и точное место.';
 
   @override
-  String get extraInfoTitle =>
-      'Дополнительно: научные статьи, тезисы, литература';
+  String get extraInfoTitle => 'Дополнительно: научные статьи, тезисы, литература';
 
   @override
-  String get extraInfoNote =>
-      'Эта часть — из международных источников (SWGDRUG, UNODC, статьи, тезисы). Не основной источник — требует подтверждения. Методы GC-MS, LC-MS/MS и судебно-медицинские случаи — ниже, в «Международном научном слое».';
+  String get extraInfoNote => 'Эта часть — из международных источников (SWGDRUG, UNODC, статьи, тезисы). Не основной источник — требует подтверждения. Методы GC-MS, LC-MS/MS и судебно-медицинские случаи — ниже, в «Международном научном слое».';
 
   @override
   String get litClaimsTitle => 'Данные из литературы (полностью)';
@@ -8748,31 +8240,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get analysisS1Title => '1. Экспресс-тесты (скрининг)';
 
   @override
-  String get analysisS1Note =>
-      'Быстрые предварительные пробы: иммуноанализ, тест-полоски. Результат только ориентировочный; обязательно подтверждение подтверждающим методом.';
+  String get analysisS1Note => 'Быстрые предварительные пробы: иммуноанализ, тест-полоски. Результат только ориентировочный; обязательно подтверждение подтверждающим методом.';
 
   @override
   String get analysisS2Title => '2. Качественные реакции (цветные реактивы)';
 
   @override
-  String get analysisS2Note =>
-      'Реактив, цвет, пояснение, избирательность и ложноположительные результаты. Предварительно: сам по себе не доказывает идентичность вещества.';
+  String get analysisS2Note => 'Реактив, цвет, пояснение, избирательность и ложноположительные результаты. Предварительно: сам по себе не доказывает идентичность вещества.';
 
   @override
-  String get analysisS3Title =>
-      '3. Количественное определение (GC-MS, LC-MS/MS, спектрофотометрия)';
+  String get analysisS3Title => '3. Количественное определение (GC-MS, LC-MS/MS, спектрофотометрия)';
 
   @override
-  String get analysisS3Note =>
-      'Подготовка пробы, основные параметры, LOD/LOQ (если есть в источнике) и ограничения. Числа только как в источнике; не заменяет валидированную методику лаборатории.';
+  String get analysisS3Note => 'Подготовка пробы, основные параметры, LOD/LOQ (если есть в источнике) и ограничения. Числа только как в источнике; не заменяет валидированную методику лаборатории.';
 
   @override
-  String get analysisSectionEmpty =>
-      'Для этого раздела пока нет данных с источником — нужен источник. Ничего не домысливается.';
+  String get analysisSectionEmpty => 'Для этого раздела пока нет данных с источником — нужен источник. Ничего не домысливается.';
 
   @override
-  String get trPendingTranslation =>
-      'Перевод ожидается — показан оригинал на узбекском';
+  String get trPendingTranslation => 'Перевод ожидается — показан оригинал на узбекском';
 
   @override
   String contactLine(String email) {
@@ -8783,12 +8269,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get repTitle => 'Отправить жалобу';
 
   @override
-  String get repProfileHint =>
-      'Недопустимый контент, ошибка, реклама или другое';
+  String get repProfileHint => 'Недопустимый контент, ошибка, реклама или другое';
 
   @override
-  String get repIntro =>
-      'Сообщите о недопустимом контенте, ошибке или другой проблеме. Отправить жалобу можно и без входа в аккаунт.';
+  String get repIntro => 'Сообщите о недопустимом контенте, ошибке или другой проблеме. Отправить жалобу можно и без входа в аккаунт.';
 
   @override
   String get repKindField => 'Тип';
@@ -8812,8 +8296,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get repBody => 'Что произошло?';
 
   @override
-  String get repBodyHint =>
-      'Не указывайте персональные данные, номера дел и сведения о пациентах.';
+  String get repBodyHint => 'Не указывайте персональные данные, номера дел и сведения о пациентах.';
 
   @override
   String repBodyShort(int min) {
@@ -8824,12 +8307,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get repContact => 'E-mail для ответа (необязательно)';
 
   @override
-  String get repContactHint =>
-      'Если вы не вошли в аккаунт, оставьте адрес, чтобы получить ответ.';
+  String get repContactHint => 'Если вы не вошли в аккаунт, оставьте адрес, чтобы получить ответ.';
 
   @override
-  String get repPrivacy =>
-      'Текст хранится только для рассмотрения жалобы. Для защиты от спама хранится необратимый хеш устройства или сетевого адреса, сам адрес не сохраняется.';
+  String get repPrivacy => 'Текст хранится только для рассмотрения жалобы. Для защиты от спама хранится необратимый хеш устройства или сетевого адреса, сам адрес не сохраняется.';
 
   @override
   String get repSend => 'Отправить';
@@ -8846,15 +8327,13 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get repFailed =>
-      'Не отправлено. Проверьте соединение и попробуйте снова.';
+  String get repFailed => 'Не отправлено. Проверьте соединение и попробуйте снова.';
 
   @override
   String get repSuspended => 'Аккаунт приостановлен. Напишите нам по e-mail.';
 
   @override
-  String get repUnavailable =>
-      'Сервис жалоб в этой сборке не подключён. Напишите нам по e-mail.';
+  String get repUnavailable => 'Сервис жалоб в этой сборке не подключён. Напишите нам по e-mail.';
 
   @override
   String get repMine => 'Мои жалобы';
@@ -8869,12 +8348,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get ctTitle => 'Правила сообщества';
 
   @override
-  String get ctDraft =>
-      'Этот текст — черновик, его должен проверить юрист до публичного релиза.';
+  String get ctDraft => 'Этот текст — черновик, его должен проверить юрист до публичного релиза.';
 
   @override
-  String get ctZeroTolerance =>
-      'Оскорбительный, враждебный, насильственный, незаконный контент и спам запрещены. У каждой записи есть кнопки «Пожаловаться» и «Заблокировать автора». Нарушающий правила контент может быть удалён, а аккаунт приостановлен.';
+  String get ctZeroTolerance => 'Оскорбительный, враждебный, насильственный, незаконный контент и спам запрещены. У каждой записи есть кнопки «Пожаловаться» и «Заблокировать автора». Нарушающий правила контент может быть удалён, а аккаунт приостановлен.';
 
   @override
   String get ctOpenTerms => 'Условия использования (черновик)';
@@ -8895,8 +8372,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get blkTitle => 'Заблокированные авторы';
 
   @override
-  String get blkIntro =>
-      'Записи заблокированных авторов вам не показываются. Кто они, вы также не видите.';
+  String get blkIntro => 'Записи заблокированных авторов вам не показываются. Кто они, вы также не видите.';
 
   @override
   String get blkEmpty => 'Вы никого не блокировали.';
@@ -8922,8 +8398,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get blkConfirmTitle => 'Заблокировать автора?';
 
   @override
-  String get blkConfirmBody =>
-      'Вы больше не увидите вопросы и ответы этого автора. Кто это, вам не сообщается. Отменить можно в списке заблокированных.';
+  String get blkConfirmBody => 'Вы больше не увидите вопросы и ответы этого автора. Кто это, вам не сообщается. Отменить можно в списке заблокированных.';
 
   @override
   String get blkDone => 'Автор заблокирован.';
@@ -8964,8 +8439,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admxKindAny => 'Все типы';
 
   @override
-  String get admxQaLink =>
-      'Открыть модерацию «Вопросов и ответов» (записи, на которые пожаловались трое)';
+  String get admxQaLink => 'Открыть модерацию «Вопросов и ответов» (записи, на которые пожаловались трое)';
 
   @override
   String get admxReportsEmpty => 'Жалоб нет.';
@@ -9014,8 +8488,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admxActions => 'Действия';
 
   @override
-  String get admxActionsHint =>
-      'Каждое действие проверяется сервером и записывается в журнал.';
+  String get admxActionsHint => 'Каждое действие проверяется сервером и записывается в журнал.';
 
   @override
   String get admxReason => 'Причина';
@@ -9033,8 +8506,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admxConfirm => 'Подтвердить';
 
   @override
-  String get admxSelfNote =>
-      'Нельзя менять собственную роль или приостанавливать собственный аккаунт.';
+  String get admxSelfNote => 'Нельзя менять собственную роль или приостанавливать собственный аккаунт.';
 
   @override
   String get admxModeratorGrant => 'Назначить модератором статей';
@@ -9049,12 +8521,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admxRemoveAdminTitle => 'Снять роль администратора?';
 
   @override
-  String get admxRemoveAdminBody =>
-      'Человек сразу потеряет доступ к админ-панели. Последнего администратора снять нельзя. Роль научного рецензента отдельная и здесь не меняется.';
+  String get admxRemoveAdminBody => 'Человек сразу потеряет доступ к админ-панели. Последнего администратора снять нельзя. Роль научного рецензента отдельная и здесь не меняется.';
 
   @override
-  String get admxAdminNotSuspendable =>
-      'Аккаунт администратора нельзя приостановить.';
+  String get admxAdminNotSuspendable => 'Аккаунт администратора нельзя приостановить.';
 
   @override
   String get admxSuspend => 'Приостановить аккаунт';
@@ -9066,8 +8536,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admxSuspendTitle => 'Приостановить этот аккаунт?';
 
   @override
-  String get admxSuspendConfirmBody =>
-      'Человек будет выведен из аккаунта на всех устройствах и не сможет войти, пока вы не восстановите аккаунт. Действие записывается в журнал.';
+  String get admxSuspendConfirmBody => 'Человек будет выведен из аккаунта на всех устройствах и не сможет войти, пока вы не восстановите аккаунт. Действие записывается в журнал.';
 
   @override
   String get admxRoleGranted => 'Роль назначена.';
@@ -9082,8 +8551,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admxUserNotFound => 'Пользователь не найден.';
 
   @override
-  String get admxRoleForbidden =>
-      'Эту роль нельзя назначить из приложения. Владелец делает это на сервере.';
+  String get admxRoleForbidden => 'Эту роль нельзя назначить из приложения. Владелец делает это на сервере.';
 
   @override
   String get admxEmailUnconfirmed => 'Адрес e-mail не подтверждён.';
@@ -9137,19 +8605,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admxStatBlocks => 'Блокировки';
 
   @override
-  String get admxCasebookNote =>
-      'Рабочие дневники: хранятся на устройстве, не учитываются.';
+  String get admxCasebookNote => 'Рабочие дневники: хранятся на устройстве, не учитываются.';
 
   @override
-  String get admxOnlineNote =>
-      'Сейчас в системе: недоступно (нет отслеживания активности).';
+  String get admxOnlineNote => 'Сейчас в системе: недоступно (нет отслеживания активности).';
 
   @override
   String get admxStoresTitle => 'Загрузки';
 
   @override
-  String get admxDownloadsNote =>
-      'Загрузки: сервер их не видит. Откройте консоли магазинов.';
+  String get admxDownloadsNote => 'Загрузки: сервер их не видит. Откройте консоли магазинов.';
 
   @override
   String get admxSalesNote => 'Продажи: 0 — платёжной системы нет.';
@@ -9185,8 +8650,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admActReportReopened => 'Жалоба открыта снова';
 
   @override
-  String get admActAdminBootstrap =>
-      'Назначен первый администратор (начальная настройка)';
+  String get admActAdminBootstrap => 'Назначен первый администратор (начальная настройка)';
 
   @override
   String get socialOr => 'или';
@@ -9198,35 +8662,28 @@ class AppLocalizationsRu extends AppLocalizations {
   String get socialContinueApple => 'Продолжить с Apple';
 
   @override
-  String get socialErrUnavailable =>
-      'Вход через этого провайдера сейчас недоступен. Попробуйте ещё раз или войдите по email.';
+  String get socialErrUnavailable => 'Вход через этого провайдера сейчас недоступен. Попробуйте ещё раз или войдите по email.';
 
   @override
-  String get socialTermsNote =>
-      'Продолжая, вы принимаете Условия использования и Политику конфиденциальности.';
+  String get socialTermsNote => 'Продолжая, вы принимаете Условия использования и Политику конфиденциальности.';
 
   @override
-  String get deleteAccountSocialNote =>
-      'Этот аккаунт создан через Google или Apple, пароль не нужен. Подтвердите ниже, чтобы удалить его.';
+  String get deleteAccountSocialNote => 'Этот аккаунт создан через Google или Apple, пароль не нужен. Подтвердите ниже, чтобы удалить его.';
 
   @override
-  String get deleteAccountAppleNote =>
-      'Этот аккаунт создан через Apple, пароль не нужен. После подтверждения Apple попросит подтвердить, что это вы, и доступ приложения к вашему Apple ID будет отозван.';
+  String get deleteAccountAppleNote => 'Этот аккаунт создан через Apple, пароль не нужен. После подтверждения Apple попросит подтвердить, что это вы, и доступ приложения к вашему Apple ID будет отозван.';
 
   @override
   String get classQuizTitle => 'Тест в классе';
 
   @override
-  String get classQuizCardSubtitle =>
-      'Живой тест под руководством преподавателя: вход по коду или QR';
+  String get classQuizCardSubtitle => 'Живой тест под руководством преподавателя: вход по коду или QR';
 
   @override
-  String get classQuizIntro =>
-      'Преподаватель показывает на экране 6-значный код и QR. Студенты входят под псевдонимом и отвечают на каждый вопрос до конца таймера.';
+  String get classQuizIntro => 'Преподаватель показывает на экране 6-значный код и QR. Студенты входят под псевдонимом и отвечают на каждый вопрос до конца таймера.';
 
   @override
-  String get classDemoBanner =>
-      'Демо-режим: данные хранятся только на этом устройстве. Для настоящего занятия нужно подключение к серверу.';
+  String get classDemoBanner => 'Демо-режим: данные хранятся только на этом устройстве. Для настоящего занятия нужно подключение к серверу.';
 
   @override
   String get classDemoChip => 'ДЕМО';
@@ -9235,8 +8692,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classJoinSection => 'Войти в класс';
 
   @override
-  String get classJoinHint =>
-      'Введите 6-значный код с экрана преподавателя или отсканируйте QR.';
+  String get classJoinHint => 'Введите 6-значный код с экрана преподавателя или отсканируйте QR.';
 
   @override
   String get classJoinTitle => 'Вход в класс';
@@ -9256,8 +8712,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classNickLabel => 'Псевдоним';
 
   @override
-  String get classNickHelper =>
-      '2–20 символов. Преподаватель видит только этот псевдоним — не ваше имя и не e-mail.';
+  String get classNickHelper => '2–20 символов. Преподаватель видит только этот псевдоним — не ваше имя и не e-mail.';
 
   @override
   String get classScanAction => 'Сканировать QR';
@@ -9269,12 +8724,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classScanHint => 'Наведите камеру на QR на экране преподавателя.';
 
   @override
-  String get classScanPermission =>
-      'Доступ к камере выключен. Разрешите его в настройках или введите код вручную.';
+  String get classScanPermission => 'Доступ к камере выключен. Разрешите его в настройках или введите код вручную.';
 
   @override
-  String get classScanUnavailable =>
-      'Камера здесь недоступна. Введите код вручную.';
+  String get classScanUnavailable => 'Камера здесь недоступна. Введите код вручную.';
 
   @override
   String get classScanManual => 'Ввести код вручную';
@@ -9288,8 +8741,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classTeacherSection => 'Для преподавателей';
 
   @override
-  String get classNotTeacherNote =>
-      'Тест проводит преподаватель. Роль преподавателя выдаёт команда FORENSIC EXPERT на сервере; если вы ведёте занятия, напишите нам.';
+  String get classNotTeacherNote => 'Тест проводит преподаватель. Роль преподавателя выдаёт команда FORENSIC EXPERT на сервере; если вы ведёте занятия, напишите нам.';
 
   @override
   String get classNewAction => 'Провести тест';
@@ -9315,15 +8767,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classStatusFinished => 'Завершён';
 
   @override
-  String get classPrivacyNote =>
-      'Преподаватель видит только ваш псевдоним. Завершённые занятия автоматически удаляются через 30 дней. На неприемлемые псевдонимы можно пожаловаться, их удаляют.';
+  String get classPrivacyNote => 'Преподаватель видит только ваш псевдоним. Завершённые занятия автоматически удаляются через 30 дней. На неприемлемые псевдонимы можно пожаловаться, их удаляют.';
 
   @override
   String get classSignInTitle => 'Войдите, чтобы присоединиться';
 
   @override
-  String get classSignInBody =>
-      'Ваш результат привязан к аккаунту на сервере. Другие студенты и преподаватель видят только ваш псевдоним.';
+  String get classSignInBody => 'Ваш результат привязан к аккаунту на сервере. Другие студенты и преподаватель видят только ваш псевдоним.';
 
   @override
   String get classSignInAction => 'Войти в аккаунт';
@@ -9332,8 +8782,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classTeacherOnlyTitle => 'Только для преподавателей';
 
   @override
-  String get classTeacherOnlyBody =>
-      'Этот экран доступен аккаунтам с ролью преподавателя. Это проверяет сервер.';
+  String get classTeacherOnlyBody => 'Этот экран доступен аккаунтам с ролью преподавателя. Это проверяет сервер.';
 
   @override
   String get classTopicSection => 'Тема';
@@ -9372,8 +8821,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classCreateAction => 'Создать класс';
 
   @override
-  String get classHostJoinHint =>
-      'Откройте FORENSIC EXPERT → Тест в классе и введите этот код или отсканируйте QR:';
+  String get classHostJoinHint => 'Откройте FORENSIC EXPERT → Тест в классе и введите этот код или отсканируйте QR:';
 
   @override
   String get classQrSemantics => 'QR-код для входа в класс';
@@ -9445,8 +8893,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classEndTitle => 'Завершить тест сейчас?';
 
   @override
-  String get classEndBody =>
-      'Студенты увидят свои результаты. Это нельзя отменить.';
+  String get classEndBody => 'Студенты увидят свои результаты. Это нельзя отменить.';
 
   @override
   String get classFinishedTitle => 'Тест завершён';
@@ -9494,8 +8941,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classChooseAnswer => 'Выберите ответ.';
 
   @override
-  String get classAnswerAccepted =>
-      'Ответ принят. Результат появится, когда время закончится.';
+  String get classAnswerAccepted => 'Ответ принят. Результат появится, когда время закончится.';
 
   @override
   String get classTimeUpWaiting => 'Время вышло. Проверяем ответ…';
@@ -9588,15 +9034,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classReportSent => 'Жалоба отправлена. Спасибо.';
 
   @override
-  String get classErrNotConfigured =>
-      'Тест в классе станет доступен после подключения сервера FORENSIC EXPERT.';
+  String get classErrNotConfigured => 'Тест в классе станет доступен после подключения сервера FORENSIC EXPERT.';
 
   @override
   String get classErrNotSignedIn => 'Сначала войдите в аккаунт.';
 
   @override
-  String get classErrOffline =>
-      'Нет соединения. Проверьте интернет и повторите.';
+  String get classErrOffline => 'Нет соединения. Проверьте интернет и повторите.';
 
   @override
   String get classErrServer => 'Сбой на сервере. Повторите чуть позже.';
@@ -9608,16 +9052,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classErrBadCode => 'Введите 6-значный код.';
 
   @override
-  String get classErrNotFound =>
-      'Класс с таким кодом не найден. Проверьте код и повторите.';
+  String get classErrNotFound => 'Класс с таким кодом не найден. Проверьте код и повторите.';
 
   @override
-  String get classErrRateLimited =>
-      'Слишком много попыток. Повторите через час.';
+  String get classErrRateLimited => 'Слишком много попыток. Повторите через час.';
 
   @override
-  String get classErrOwnSession =>
-      'Вы преподаватель этого класса и не можете войти как студент.';
+  String get classErrOwnSession => 'Вы преподаватель этого класса и не можете войти как студент.';
 
   @override
   String get classErrFinished => 'Этот тест уже завершён.';
@@ -9626,8 +9067,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classErrKicked => 'Преподаватель убрал вас из этого класса.';
 
   @override
-  String get classErrAlreadyStarted =>
-      'Тест уже начался — новые студенты войти не могут.';
+  String get classErrAlreadyStarted => 'Тест уже начался — новые студенты войти не могут.';
 
   @override
   String get classErrFull => 'Класс заполнен.';
@@ -9642,23 +9082,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classErrNickBlocked => 'Выберите другой псевдоним.';
 
   @override
-  String get classErrInvalidSettings =>
-      'Проверьте настройки: 5–20 вопросов, 5–200 студентов, 15/30/45/60 секунд.';
+  String get classErrInvalidSettings => 'Проверьте настройки: 5–20 вопросов, 5–200 студентов, 15/30/45/60 секунд.';
 
   @override
-  String get classErrTooManySessions =>
-      'Слишком много открытых занятий. Сначала завершите одно.';
+  String get classErrTooManySessions => 'Слишком много открытых занятий. Сначала завершите одно.';
 
   @override
-  String get classErrNotEnoughQuestions =>
-      'В этой теме слишком мало вопросов (нужно не меньше 5).';
+  String get classErrNotEnoughQuestions => 'В этой теме слишком мало вопросов (нужно не меньше 5).';
 
   @override
   String get classErrBadState => 'Сейчас это действие невозможно.';
 
   @override
-  String get classErrNoParticipants =>
-      'Дождитесь, пока войдёт хотя бы один студент.';
+  String get classErrNoParticipants => 'Дождитесь, пока войдёт хотя бы один студент.';
 
   @override
   String get classErrNotCurrent => 'Этот вопрос уже закрыт.';
@@ -9670,8 +9106,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classErrAlreadyAnswered => 'Вы уже ответили на этот вопрос.';
 
   @override
-  String get classErrNotFinished =>
-      'Результаты будут доступны после завершения теста.';
+  String get classErrNotFinished => 'Результаты будут доступны после завершения теста.';
 
   @override
   String get classErrBadReason => 'Причина слишком короткая.';
@@ -9680,30 +9115,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get unverifiedChip => 'Эксперт ещё не подтвердил';
 
   @override
-  String get legalNationalMethodsEmpty =>
-      'Национальные методики ещё не загружены.';
+  String get legalNationalMethodsEmpty => 'Национальные методики ещё не загружены.';
 
   @override
   String get teacherPanelTitle => 'Панель преподавателя';
 
   @override
-  String get teacherPanelHomeBody =>
-      'Проведите тест в классе и получите результаты в CSV';
+  String get teacherPanelHomeBody => 'Проведите тест в классе и получите результаты в CSV';
 
   @override
-  String get teacherPanelHomeBodyStudent =>
-      'Войдите в тест в классе по коду преподавателя';
+  String get teacherPanelHomeBodyStudent => 'Войдите в тест в классе по коду преподавателя';
 
   @override
-  String get teacherPanelIntro =>
-      'Проведите живой тест в классе, дайте группе тест по теме и смотрите результаты.';
+  String get teacherPanelIntro => 'Проведите живой тест в классе, дайте группе тест по теме и смотрите результаты.';
 
   @override
   String get teacherRunTitle => 'Тест в классе (живой)';
 
   @override
-  String get teacherRunBody =>
-      'Выберите тему — для класса появятся 6-значный код и QR';
+  String get teacherRunBody => 'Выберите тему — для класса появятся 6-значный код и QR';
 
   @override
   String get teacherResultsTitle => 'Результаты и CSV';
@@ -9718,12 +9148,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get teacherJoinBody => 'По коду или QR от преподавателя';
 
   @override
-  String get teacherRoleNeeded =>
-      'Нужна роль преподавателя — см. примечание ниже';
+  String get teacherRoleNeeded => 'Нужна роль преподавателя — см. примечание ниже';
 
   @override
-  String get teacherResultsEmpty =>
-      'Тестов ещё не было. Начните с «Провести тест» — результаты появятся здесь.';
+  String get teacherResultsEmpty => 'Тестов ещё не было. Начните с «Провести тест» — результаты появятся здесь.';
 
   @override
   String get disciplineNextTitle => 'Что дальше';
@@ -9744,19 +9172,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get referralHow2 => 'Коллега создаёт новый аккаунт с этим кодом.';
 
   @override
-  String get referralHow3 =>
-      'Вы видите только общие числа — без имён и данных.';
+  String get referralHow3 => 'Вы видите только общие числа — без имён и данных.';
 
   @override
   String get pubEmptyTitle => 'Статей пока нет';
 
   @override
-  String get pubEmptyBody =>
-      'Поделитесь опытом первым: кнопка «Отправить статью» внизу. После модерации статья появится здесь.';
+  String get pubEmptyBody => 'Поделитесь опытом первым: кнопка «Отправить статью» внизу. После модерации статья появится здесь.';
 
   @override
-  String get calcWarnZeroMeasured =>
-      'Этанол в образце не обнаружен (0): обратный расчёт не может показать уровень на момент события — этанол мог полностью выйти до взятия образца.';
+  String get calcWarnZeroMeasured => 'Этанол в образце не обнаружен (0): обратный расчёт не может показать уровень на момент события — этанол мог полностью выйти до взятия образца.';
 
   @override
   String get calcTechInfo => 'Техническая информация';
@@ -9799,8 +9224,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get studyExamUnavailableHub =>
-      'В наборах с отметкой «Только тренировка» экзамена нет: вопросы созданы автоматически или у них нет пояснения либо страницы источника. Для них используйте тренировку.';
+  String get studyExamUnavailableHub => 'В наборах с отметкой «Только тренировка» экзамена нет: вопросы созданы автоматически или у них нет пояснения либо страницы источника. Для них используйте тренировку.';
 
   @override
   String get studyQuizAboutPractice => 'О режиме тренировки и вариантах';
@@ -9824,8 +9248,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lessonsTitle => 'Уроки';
 
   @override
-  String get lessonsTeacherBody =>
-      'Лекционные презентации — только просмотр и проектор';
+  String get lessonsTeacherBody => 'Лекционные презентации — только просмотр и проектор';
 
   @override
   String get lessonsSearchHint => 'Поиск по урокам';
@@ -9864,8 +9287,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lessonsTranslationPending => 'перевод ожидается';
 
   @override
-  String get lessonsOriginalUzNote =>
-      'Уроки пока на узбекском — перевод ожидается.';
+  String get lessonsOriginalUzNote => 'Уроки пока на узбекском — перевод ожидается.';
 
   @override
   String get lessonViewerPrev => 'Предыдущий слайд';
@@ -9924,15 +9346,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lessonQuizStart => 'Начать тест по этой теме';
 
   @override
-  String get lessonQuizSoon =>
-      'Вопросы теста по этой теме скоро будут добавлены';
+  String get lessonQuizSoon => 'Вопросы теста по этой теме скоро будут добавлены';
 
   @override
   String get aiWebLabel => 'Из интернета — не проверено';
 
   @override
-  String get aiWebNote =>
-      'В базе знаний приложения ответа не найдено. Этот ответ получен веб-поиском и НЕ проверен экспертами. Сверьтесь с первоисточниками.';
+  String get aiWebNote => 'В базе знаний приложения ответа не найдено. Этот ответ получен веб-поиском и НЕ проверен экспертами. Сверьтесь с первоисточниками.';
 
   @override
   String get aiWebSourcesTitle => 'Веб-источники';
@@ -9944,12 +9364,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get aiWebSearching => 'Поиск в интернете…';
 
   @override
-  String get aiErrQuota =>
-      'Лимит AI-сервиса временно исчерпан. Показаны результаты из базы.';
+  String get aiErrQuota => 'Лимит AI-сервиса временно исчерпан. Показаны результаты из базы.';
 
   @override
-  String get aiErrOverloaded =>
-      'AI-сервис сейчас перегружен. Показаны результаты из базы; попробуйте через минуту.';
+  String get aiErrOverloaded => 'AI-сервис сейчас перегружен. Показаны результаты из базы; попробуйте через минуту.';
 
   @override
   String get aiWebOpenFailed => 'Не удалось открыть ссылку.';
@@ -9961,35 +9379,28 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpTitle => 'Группы и тесты по темам';
 
   @override
-  String get grpEntrySubtitle =>
-      'Группы преподавателя: тесты по темам со сроком';
+  String get grpEntrySubtitle => 'Группы преподавателя: тесты по темам со сроком';
 
   @override
-  String get grpTeacherTileBody =>
-      'Создайте группу, дайте тест по теме, следите за результатами';
+  String get grpTeacherTileBody => 'Создайте группу, дайте тест по теме, следите за результатами';
 
   @override
-  String get grpStudentTileBody =>
-      'Вступите в группу преподавателя по коду или QR';
+  String get grpStudentTileBody => 'Вступите в группу преподавателя по коду или QR';
 
   @override
-  String get grpIntro =>
-      'Преподаватель даёт группе тест по теме. Вы решаете его в удобное время до срока; баллы считает сервер.';
+  String get grpIntro => 'Преподаватель даёт группе тест по теме. Вы решаете его в удобное время до срока; баллы считает сервер.';
 
   @override
-  String get grpDemoBanner =>
-      'Демо-режим: данные только на этом устройстве. Для настоящих групп нужно подключение к серверу.';
+  String get grpDemoBanner => 'Демо-режим: данные только на этом устройстве. Для настоящих групп нужно подключение к серверу.';
 
   @override
-  String get grpPrivacyNote =>
-      'Преподаватель и ваша группа видят ваше имя и балл — e-mail никогда. Другие студенты не видят ваши ответы.';
+  String get grpPrivacyNote => 'Преподаватель и ваша группа видят ваше имя и балл — e-mail никогда. Другие студенты не видят ваши ответы.';
 
   @override
   String get grpSignInTitle => 'Войдите, чтобы вступить';
 
   @override
-  String get grpSignInBody =>
-      'Вступить в группу могут только зарегистрированные аккаунты — результат привязан к аккаунту. Приглашение сохранится, пока вы входите.';
+  String get grpSignInBody => 'Вступить в группу могут только зарегистрированные аккаунты — результат привязан к аккаунту. Приглашение сохранится, пока вы входите.';
 
   @override
   String get grpSignInAction => 'Войти';
@@ -10013,12 +9424,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpMemberSection => 'Группы, где я состою';
 
   @override
-  String get grpTeachingEmpty =>
-      'Групп пока нет. Создайте группу и покажите студентам её код или QR.';
+  String get grpTeachingEmpty => 'Групп пока нет. Создайте группу и покажите студентам её код или QR.';
 
   @override
-  String get grpMemberEmpty =>
-      'Вы ещё не вступили в группу. Попросите код у преподавателя или отсканируйте QR.';
+  String get grpMemberEmpty => 'Вы ещё не вступили в группу. Попросите код у преподавателя или отсканируйте QR.';
 
   @override
   String grpMembersCount(int count, int limit) {
@@ -10052,8 +9461,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpNameLabel => 'Название группы';
 
   @override
-  String get grpNameHelper =>
-      'Например: «4 курс, 2 группа». Студенты видят это название.';
+  String get grpNameHelper => 'Например: «4 курс, 2 группа». Студенты видят это название.';
 
   @override
   String get grpAssignAction => 'Дать тест по теме';
@@ -10062,8 +9470,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpInviteTitle => 'Код приглашения';
 
   @override
-  String get grpInviteHint =>
-      'Студенты сканируют QR или вводят код в разделе Учёба → Группы.';
+  String get grpInviteHint => 'Студенты сканируют QR или вводят код в разделе Учёба → Группы.';
 
   @override
   String get grpCopyCode => 'Копировать код';
@@ -10080,8 +9487,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpTestsSection => 'Тесты по темам';
 
   @override
-  String get grpTestsEmptyTeacher =>
-      'Тестов пока нет. Нажмите «Дать тест по теме».';
+  String get grpTestsEmptyTeacher => 'Тестов пока нет. Нажмите «Дать тест по теме».';
 
   @override
   String get grpTestsEmptyStudent => 'Преподаватель ещё не дал тест.';
@@ -10090,8 +9496,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpMembersSection => 'Студенты';
 
   @override
-  String get grpMembersEmpty =>
-      'Студентов пока нет. Покажите классу QR или код.';
+  String get grpMembersEmpty => 'Студентов пока нет. Покажите классу QR или код.';
 
   @override
   String grpProgress(int started, int finished, int total) {
@@ -10185,8 +9590,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpVariantShort => 'варианты';
 
   @override
-  String get grpVariantHelp =>
-      'Каждый студент получает свой набор из темы (определяет сервер).';
+  String get grpVariantHelp => 'Каждый студент получает свой набор из темы (определяет сервер).';
 
   @override
   String grpVariantTooFew(int available, int needed) {
@@ -10212,8 +9616,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpTestQrTitle => 'Один QR для всех';
 
   @override
-  String get grpTestQrHint =>
-      'Студенты сканируют его; имя подставляется автоматически — и тест открывается.';
+  String get grpTestQrHint => 'Студенты сканируют его; имя подставляется автоматически — и тест открывается.';
 
   @override
   String get grpBigScreen => 'Большой экран';
@@ -10242,16 +9645,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpCloseTitle => 'Закрыть тест?';
 
   @override
-  String get grpCloseBody =>
-      'Новые попытки не начнутся. Тем, кто решает, даётся 30 секунд на отправку; затем засчитываются сохранённые ответы. Правильные ответы откроются студентам.';
+  String get grpCloseBody => 'Новые попытки не начнутся. Тем, кто решает, даётся 30 секунд на отправку; затем засчитываются сохранённые ответы. Правильные ответы откроются студентам.';
 
   @override
-  String get grpClosedBanner =>
-      'Тест закрыт — правильные ответы открыты студентам.';
+  String get grpClosedBanner => 'Тест закрыт — правильные ответы открыты студентам.';
 
   @override
-  String get grpBoardHint =>
-      'FORENSIC EXPERT → Учёба → Группы: отсканируйте QR или введите код';
+  String get grpBoardHint => 'FORENSIC EXPERT → Учёба → Группы: отсканируйте QR или введите код';
 
   @override
   String get grpBoardWaiting => 'Ждём студентов…';
@@ -10262,8 +9662,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get grpRevealAfterCloseNote =>
-      'Правильные ответы откроются, когда преподаватель закроет тест.';
+  String get grpRevealAfterCloseNote => 'Правильные ответы откроются, когда преподаватель закроет тест.';
 
   @override
   String get grpJoinTitle => 'Вступить в группу';
@@ -10272,8 +9671,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpCodeLabel => 'Код группы';
 
   @override
-  String get grpCodeHelper =>
-      '8 символов. В коде нет 0, O, 1, I и L. Можно вставить ссылку.';
+  String get grpCodeHelper => '8 символов. В коде нет 0, O, 1, I и L. Можно вставить ссылку.';
 
   @override
   String get grpContinue => 'Продолжить';
@@ -10290,8 +9688,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpNickLabel => 'Ваше имя';
 
   @override
-  String get grpNickHelper =>
-      'Подставлено из профиля — при желании измените. 2–20 символов, спрашиваем один раз. Преподаватель и группа видят это имя (e-mail — никогда).';
+  String get grpNickHelper => 'Подставлено из профиля — при желании измените. 2–20 символов, спрашиваем один раз. Преподаватель и группа видят это имя (e-mail — никогда).';
 
   @override
   String get grpNickNeeded => 'Введите имя, чтобы вступить.';
@@ -10311,8 +9708,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpOwnerOpen => 'Открыть как преподаватель';
 
   @override
-  String get grpOwnerOtherAccount =>
-      'Чтобы пройти тест по-настоящему, войдите под другим (студенческим) аккаунтом.';
+  String get grpOwnerOtherAccount => 'Чтобы пройти тест по-настоящему, войдите под другим (студенческим) аккаунтом.';
 
   @override
   String get grpTestTitle => 'Тест по теме';
@@ -10345,8 +9741,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpSubmitTitle => 'Отправить ответы?';
 
   @override
-  String get grpSubmitBodyAll =>
-      'Ответы на все вопросы даны. После отправки изменить их нельзя.';
+  String get grpSubmitBodyAll => 'Ответы на все вопросы даны. После отправки изменить их нельзя.';
 
   @override
   String grpSubmitBodyLeft(int count) {
@@ -10364,12 +9759,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpSubmitAction => 'Отправить';
 
   @override
-  String get grpLateSubmitted =>
-      'Время вышло — засчитаны последние сохранённые ответы.';
+  String get grpLateSubmitted => 'Время вышло — засчитаны последние сохранённые ответы.';
 
   @override
-  String get grpPreviewBanner =>
-      'Пробный режим: так видят студенты. На сервер ничего не отправляется.';
+  String get grpPreviewBanner => 'Пробный режим: так видят студенты. На сервер ничего не отправляется.';
 
   @override
   String grpPreviewDone(int score, int total) {
@@ -10377,8 +9770,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get grpPreviewNothingSent =>
-      'На сервер ничего не отправлено — результаты студентов не изменились.';
+  String get grpPreviewNothingSent => 'На сервер ничего не отправлено — результаты студентов не изменились.';
 
   @override
   String get grpBackToGroup => 'Назад к группе';
@@ -10414,15 +9806,13 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get grpErrNotConfigured =>
-      'Группы заработают после подключения сервера FORENSIC EXPERT.';
+  String get grpErrNotConfigured => 'Группы заработают после подключения сервера FORENSIC EXPERT.';
 
   @override
   String get grpErrSessionExpired => 'Сеанс завершён. Войдите снова.';
 
   @override
-  String get grpErrOffline =>
-      'Нет подключения к интернету. Проверьте и повторите.';
+  String get grpErrOffline => 'Нет подключения к интернету. Проверьте и повторите.';
 
   @override
   String get grpErrServer => 'Сбой на сервере. Повторите чуть позже.';
@@ -10437,30 +9827,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpErrBadCode => 'Введите 8-значный код группы.';
 
   @override
-  String get grpErrCodeAmbiguous =>
-      'В кодах групп не бывает 0, O, 1, I и L. Сверьте код с экраном преподавателя: возможно, это похожая буква или цифра (например, 2 или Z, 8 или B).';
+  String get grpErrCodeAmbiguous => 'В кодах групп не бывает 0, O, 1, I и L. Сверьте код с экраном преподавателя: возможно, это похожая буква или цифра (например, 2 или Z, 8 или B).';
 
   @override
-  String get grpErrNotFound =>
-      'Группа с таким кодом не найдена. Проверьте код.';
+  String get grpErrNotFound => 'Группа с таким кодом не найдена. Проверьте код.';
 
   @override
-  String get grpErrGroupFull =>
-      'Группа заполнена (200 студентов). Сообщите преподавателю.';
+  String get grpErrGroupFull => 'Группа заполнена (200 студентов). Сообщите преподавателю.';
 
   @override
   String get grpErrNickLength => 'Имя должно содержать 2–20 символов.';
 
   @override
-  String get grpErrNickChars =>
-      'Используйте только буквы, цифры, пробелы и . _ \' - (без e-mail и ссылок).';
+  String get grpErrNickChars => 'Используйте только буквы, цифры, пробелы и . _ \' - (без e-mail и ссылок).';
 
   @override
   String get grpErrNickBlocked => 'Напишите другое имя.';
 
   @override
-  String get grpErrNickTaken =>
-      'Такое имя в группе уже есть. Добавьте первую букву фамилии.';
+  String get grpErrNickTaken => 'Такое имя в группе уже есть. Добавьте первую букву фамилии.';
 
   @override
   String get grpErrBadName => 'Название группы — от 2 до 60 символов.';
@@ -10469,8 +9854,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpErrTooManyGroups => 'У вас уже 30 групп — это максимум.';
 
   @override
-  String get grpErrInvalidSettings =>
-      'Проверьте настройки: 1–50 вопросов, время 1–180 минут.';
+  String get grpErrInvalidSettings => 'Проверьте настройки: 1–50 вопросов, время 1–180 минут.';
 
   @override
   String get grpErrBadDue => 'Срок должен быть в будущем (в пределах года).';
@@ -10484,8 +9868,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get grpErrTooManyAssignments =>
-      'В группе уже 50 открытых тестов. Сначала закройте часть.';
+  String get grpErrTooManyAssignments => 'В группе уже 50 открытых тестов. Сначала закройте часть.';
 
   @override
   String get grpErrClosed => 'Преподаватель закрыл этот тест.';
@@ -10509,15 +9892,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpChoiceAssign => 'Дать группе';
 
   @override
-  String get grpChoiceAssignHint =>
-      'Студенты решают в удобное время; результаты приходят вам';
+  String get grpChoiceAssignHint => 'Студенты решают в удобное время; результаты приходят вам';
 
   @override
   String get grpChoiceSelf => 'Пройти самому';
 
   @override
-  String get grpChoiceSelfHint =>
-      '10 вопросов на этом устройстве; ничего не отправляется';
+  String get grpChoiceSelfHint => '10 вопросов на этом устройстве; ничего не отправляется';
 
   @override
   String get grpChoiceLive => 'Живой тест в классе';
@@ -10561,8 +9942,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpTimeCustomHint => 'Минуты, от 1 до 180.';
 
   @override
-  String get grpTimeLimitHint =>
-      'Отсчитывается с момента начала у студента; когда время выйдет, ответы отправятся сами.';
+  String get grpTimeLimitHint => 'Отсчитывается с момента начала у студента; когда время выйдет, ответы отправятся сами.';
 
   @override
   String get grpOpenSection => 'Сколько тест будет открыт';
@@ -10597,8 +9977,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpMixedPrefix => 'Общий тест';
 
   @override
-  String get grpMixedIntro =>
-      'Выберите темы из одного или нескольких источников. Вопросы берутся из тем по очереди и не повторяются.';
+  String get grpMixedIntro => 'Выберите темы из одного или нескольких источников. Вопросы берутся из тем по очереди и не повторяются.';
 
   @override
   String get grpMixedSources => 'Источники';
@@ -10634,16 +10013,13 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get grpMixedPreviewNote =>
-      'Пример отбора. Сервер выбирает конкретные вопросы случайно внутри каждой темы, с тем же распределением.';
+  String get grpMixedPreviewNote => 'Пример отбора. Сервер выбирает конкретные вопросы случайно внутри каждой темы, с тем же распределением.';
 
   @override
-  String get grpPracticeBanner =>
-      'Пробное решение: на сервер ничего не отправляется.';
+  String get grpPracticeBanner => 'Пробное решение: на сервер ничего не отправляется.';
 
   @override
-  String get grpPracticeNothingSent =>
-      'Это была проба на вашем устройстве — ничего не отправлено.';
+  String get grpPracticeNothingSent => 'Это была проба на вашем устройстве — ничего не отправлено.';
 
   @override
   String grpCountMax(int count) {
@@ -10664,8 +10040,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get classTranslationPending =>
-      'Перевод ожидается — показан оригинал на узбекском';
+  String get classTranslationPending => 'Перевод ожидается — показан оригинал на узбекском';
 
   @override
   String get classHardestOpenHint => 'Нажмите на вопрос для обсуждения';
@@ -10707,8 +10082,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classDiscussNext => 'Следующий';
 
   @override
-  String get classDiscussUnavailable =>
-      'Подробности сейчас недоступны. Показаны только текст вопроса и доля ошибок.';
+  String get classDiscussUnavailable => 'Подробности сейчас недоступны. Показаны только текст вопроса и доля ошибок.';
 
   @override
   String get classDiscussBigFont => 'Крупный шрифт';
@@ -10735,8 +10109,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpLessonGroupTest => 'Дать тест группе';
 
   @override
-  String get grpLessonGroupTestHint =>
-      'Студенты входят по QR; результаты на экране по именам, с местами.';
+  String get grpLessonGroupTestHint => 'Студенты входят по QR; результаты на экране по именам, с местами.';
 
   @override
   String get grpLessonTitle => 'Тест для группы';
@@ -10748,8 +10121,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpLessonNewGroup => 'Новая группа';
 
   @override
-  String get grpLessonNoGroups =>
-      'У вас пока нет группы. Введите название — группа создастся прямо здесь.';
+  String get grpLessonNoGroups => 'У вас пока нет группы. Введите название — группа создастся прямо здесь.';
 
   @override
   String get grpLessonCreateGroup => 'Создать группу';
@@ -10776,8 +10148,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpLessonStartedTitle => 'Тест начался';
 
   @override
-  String get grpLessonStartedHint =>
-      'Студенты сканируют QR или вводят код. Они входят в группу под своим именем, и тест открывается.';
+  String get grpLessonStartedHint => 'Студенты сканируют QR или вводят код. Они входят в группу под своим именем, и тест открывается.';
 
   @override
   String get grpLessonLiveResults => 'Живые результаты';
@@ -10815,17 +10186,28 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpHardestTitle => 'Трудные вопросы';
 
   @override
-  String get grpHardestBody =>
-      'Вопросы, в которых чаще всего ошибались; выбраны автоматически. Разберите их вместе.';
+  String get grpHardestBody => 'Вопросы, в которых чаще всего ошибались; выбраны автоматически. Разберите их вместе.';
 
   @override
   String get grpHardestOpen => 'Разобрать трудные вопросы';
 
   @override
-  String get grpHardestLocked =>
-      'Закройте тест — трудные вопросы появятся здесь.';
+  String get grpHardestLocked => 'Закройте тест — трудные вопросы появятся здесь.';
 
   @override
-  String get grpErrNotFinished =>
-      'Трудные вопросы появятся после закрытия теста.';
+  String get grpErrNotFinished => 'Трудные вопросы появятся после закрытия теста.';
+
+  @override
+  String get lessonImageFailed => 'Не удалось загрузить изображение';
+
+  @override
+  String get lessonImageClose => 'Закрыть';
+
+  @override
+  String get lessonImageZoom => 'Увеличить изображение';
+
+  @override
+  String lessonImageCredit(String credit) {
+    return 'Изображение: $credit';
+  }
 }

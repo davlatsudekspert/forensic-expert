@@ -6,6 +6,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/lessons/lesson_models.dart';
+import 'lesson_image_view.dart';
 import 'lesson_rich_diagram.dart';
 import 'lesson_slide_view.dart';
 
@@ -43,6 +44,15 @@ abstract final class LessonCanvasMetrics {
   static const double actionH = 96;
   static const double sideGap = 40;
   static const double flowMaxW = 760;
+
+  /// Rasm: bandlar yonida (o‘ng ustun) yoki yolg‘iz sahifada. Rasm maydoni
+  /// balandligi qat’iy; caption/credit — qat’iy qatorlar soni.
+  static const double imageSideW = 480;
+  static const double imageSideH = 300;
+  static const double imageAloneW = 760;
+  static const double imageAloneH = 380;
+  static const double imageCaption = 20;
+  static const double imageCredit = 15;
   static const double bodyLh = 1.35;
   static const double titleLh = 1.2;
   static const double cellLh = 1.25;
@@ -195,8 +205,36 @@ abstract final class LessonCanvasLayout {
   static bool _side(LessonPage p) =>
       p.diagram?.kind == LessonDiagramKind.flow && p.bullets.isNotEmpty;
 
+  /// Rasm bandlar yonida (bandlar bor) — aks holda yolg‘iz.
+  static bool imageSide(LessonPage p) =>
+      p.image != null && p.bullets.isNotEmpty;
+
+  static double imageW(LessonPage p) => imageSide(p)
+      ? LessonCanvasMetrics.imageSideW
+      : LessonCanvasMetrics.imageAloneW;
+
+  static double imageH(LessonPage p) => imageSide(p)
+      ? LessonCanvasMetrics.imageSideH
+      : LessonCanvasMetrics.imageAloneH;
+
+  /// Rasm bloki (rasm + caption + credit) balandligi.
+  static double imageBlockHeight(LessonPage p) {
+    final im = p.image;
+    if (im == null) return 0;
+    return LessonImageView.totalHeight(
+      im,
+      height: imageH(p),
+      captionSize: LessonCanvasMetrics.imageCaption,
+      creditSize: LessonCanvasMetrics.imageCredit,
+    );
+  }
+
   static double bulletsW(LessonPage p) => _side(p)
       ? (LessonCanvasMetrics.contentW - LessonCanvasMetrics.sideGap) * 0.6
+      : imageSide(p)
+      ? LessonCanvasMetrics.contentW -
+            LessonCanvasMetrics.sideGap -
+            LessonCanvasMetrics.imageSideW
       : LessonCanvasMetrics.contentW;
 
   static double diagramW(LessonPage p) {
@@ -310,6 +348,11 @@ abstract final class LessonCanvasLayout {
   static double bodyHeight(LessonPage p, double body, LessonCanvasMeasurer m) {
     final b = bulletsHeight(p, body, m);
     final d = diagramHeight(p, body, m);
+    if (p.image != null) {
+      // Rasm sahifasida diagramma bo‘lmaydi (buildLessonPages kafolatlaydi).
+      final ih = imageBlockHeight(p);
+      return imageSide(p) ? math.max(b, ih) : ih;
+    }
     if (_side(p)) return math.max(b, d);
     if (b > 0 && d > 0) return b + LessonCanvasMetrics.diagramGap(body) + d;
     return b + d;
@@ -461,8 +504,31 @@ class LessonCanvasContent extends StatelessWidget {
             width: LessonCanvasLayout.diagramW(page),
             measurer: m,
           );
+    final img = page.image;
+    final imageBlock = img == null
+        ? null
+        : LessonImageView(
+            image: img,
+            width: LessonCanvasLayout.imageW(page),
+            height: LessonCanvasLayout.imageH(page),
+            captionSize: LessonCanvasMetrics.imageCaption,
+            creditSize: LessonCanvasMetrics.imageCredit,
+            textColor: c.textPrimary,
+            mutedColor: c.textSecondary,
+          );
     final Widget? main;
-    if (bullets != null && diagram != null) {
+    if (imageBlock != null) {
+      main = bullets == null
+          ? Align(alignment: Alignment.topCenter, child: imageBlock)
+          : Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                bullets,
+                const SizedBox(width: LessonCanvasMetrics.sideGap),
+                imageBlock,
+              ],
+            );
+    } else if (bullets != null && diagram != null) {
       main = page.diagram!.kind == LessonDiagramKind.flow
           ? Row(
               crossAxisAlignment: CrossAxisAlignment.start,
