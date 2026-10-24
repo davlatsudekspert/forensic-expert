@@ -401,6 +401,23 @@ bool lessonCourseInDiscipline(String course, ForensicDiscipline d) {
   };
 }
 
+/// Modul sahifasi (Toksikologiya) uchun shu «Darslar» bo‘limi.
+class DisciplineLessonsSection extends ConsumerWidget {
+  const DisciplineLessonsSection({super.key, required this.discipline});
+
+  final ForensicDiscipline discipline;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final items = _lessonsSection(context, ref, discipline);
+    if (items.isEmpty) return const SizedBox.shrink();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: items,
+    );
+  }
+}
+
 /// Fan sahifasidagi «Darslar: prezentatsiya va guruh testi» bo‘limi.
 /// Darslar serverda faqat ustoz roliga ochiq (`lesson_list`); «Ustoz» rejimi
 /// bo‘lib rol bo‘lmasa — rolni olish tartibiga havola.
@@ -418,6 +435,8 @@ List<Widget> _lessonsSection(
   final t = Theme.of(context).textTheme;
   final teacher = watchIsTeacher(ref);
   final mode = ref.watch(settingsControllerProvider.select((s) => s.userMode));
+  // Talaba rejimida «Darslar» bo‘limi yo‘q (Ustoz/Mutaxassis uchun).
+  if (mode == UserMode.student) return const [];
   // Server: ustoz — hamma dars; boshqa kirgan foydalanuvchi — faqat ochiq
   // kurslar (audience = 'all', masalan «Apparatlar bilan ishlash»).
   final res = ref.watch(lessonListProvider(''));

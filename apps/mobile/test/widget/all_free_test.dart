@@ -366,7 +366,7 @@ void main() {
       final backend = FakeClassQuizBackend(teachers: {if (teacher) 't1'});
       await pumpApp(
         tester,
-        settings: completedSettings(lang: 'uz'),
+        settings: completedSettings(lang: 'uz', mode: UserMode.teacher),
         initialLocation: route,
         overrides: [
           classQuizServiceProvider.overrideWithValue(
@@ -380,28 +380,31 @@ void main() {
       );
     }
 
-    testWidgets(
-      'bepul: dastlabki 3 dars ochiq, qolgani va apparatlar 2-dars qulfli',
-      (tester) async {
-        await openLessons(tester, Routes.lessons);
-        for (final id in ['toks-01', 'toks-02', 'toks-03']) {
-          expect(lockOn('lessons.row.$id'), findsNothing, reason: id);
-        }
-        for (final id in ['toks-04', 'toks-05', 'instr-02-uv']) {
-          expect(lockOn('lessons.row.$id'), findsOneWidget, reason: id);
-        }
-        // Apparatlar 1-dars — bepul namuna.
-        expect(lockOn('lessons.row.instr-01-kristallyuks'), findsNothing);
-      },
-    );
+    testWidgets('bepul: hamma dars qulfli (Pro kerak)', (tester) async {
+      await openLessons(tester, Routes.lessons);
+      for (final id in [
+        'toks-01',
+        'toks-02',
+        'toks-03',
+        'toks-04',
+        'toks-05',
+        'instr-01-kristallyuks',
+        'instr-02-uv',
+      ]) {
+        expect(lockOn('lessons.row.$id'), findsOneWidget, reason: id);
+      }
+    });
 
     testWidgets('qulfli dars to‘g‘ridan-to‘g‘ri havolada ham ochilmaydi', (
       tester,
     ) async {
       await openLessons(tester, Routes.lesson('toks-05'));
       expect(find.byKey(const Key('pro.lock.allLessons')), findsOneWidget);
-      // Bepul dars: mazmun ochiladi (oxirida faqat kontekstli taklif).
+      // Birinchi dars ham bepulda yopiq.
       await openLessons(tester, Routes.lesson('toks-01'));
+      expect(find.byKey(const Key('pro.lock.allLessons')), findsOneWidget);
+      // Ustoz Pro: mazmun ochiladi (oxirida faqat kontekstli taklif).
+      await openLessons(tester, Routes.lesson('toks-01'), plan: Plan.teacher);
       expect(find.text('Slayd'), findsWidgets);
       expect(find.byKey(const Key('lesson.quizStart')), findsOneWidget);
       await tester.pumpWidget(const SizedBox());

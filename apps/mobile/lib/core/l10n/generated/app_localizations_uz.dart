@@ -10851,11 +10851,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get proCtxAllLessons =>
-      'Siz bepul darsni ko‘rdingiz. Barcha 211 ta prezentatsiya Ustoz Pro bilan ochiladi.';
+      'Barcha 211 ta ma’ruza prezentatsiyasi va ularning testlari Ustoz Pro bilan ochiladi.';
 
   @override
   String get proCtxInstrumentsRest =>
-      'Bu bepul namunaviy dars edi. Kursning qolgan darslari Mutaxassis Pro bilan ochiladi.';
+      'Bu kursning barcha darslari va ularning testlari Mutaxassis Pro bilan ochiladi.';
 
   @override
   String get proCtxGroupLimit =>
@@ -11177,4 +11177,8 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get admProEmpty => 'Hozircha rejalar yo‘q.';
+
+  @override
+  String get studyNoGuaranteeNote =>
+      'Savollar o‘quv maqsadida, ochiq manbalar asosida tuzilgan. Rasmiy imtihonda aynan shu savollar tushishiga kafolat berilmaydi.';
 }

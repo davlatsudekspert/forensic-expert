@@ -130,8 +130,8 @@ final lessonLocksProvider = Provider.autoDispose<Map<String, ProFeature>?>((
   return computeLessonLocks(res, ent);
 });
 
-/// Sof funksiya (testlanadi): Mutaxassis — «Apparatlar» 1-dars ochiq;
-/// Ustoz — ro‘yxatdagi dastlabki [LessonAccess.freeTeacherLessons] dars.
+/// Sof funksiya (testlanadi): bepul dars yo‘q — Mutaxassis Pro
+/// «Apparatlar» kursini, Ustoz Pro Ustoz darslarini ochadi.
 Map<String, ProFeature> computeLessonLocks(
   List<LessonSummary> all,
   Entitlements ent,

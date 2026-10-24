@@ -2,6 +2,7 @@
 // rejimi (egasi topshirig‘i, 2026-10-24).
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/app/class_quiz.dart';
 import 'package:forensic_expert/app/lessons.dart';
 import 'package:forensic_expert/app/routes.dart';
@@ -35,6 +36,10 @@ Map<String, Object?> _deck(String id, String course) => {
 };
 
 void main() {
+  // Darslar Pro’da: ustoz Pro bilan ochiladi.
+  setUpAll(() => testDefaultPlan = Plan.teacher);
+  tearDownAll(() => testDefaultPlan = null);
+
   /// Elementni ko‘rinadigan va suzuvchi menyu ostida qolmaydigan joyga suradi.
   Future<void> reveal(WidgetTester tester, String code, Finder f) async {
     await tester.ensureVisible(f);
@@ -53,13 +58,16 @@ void main() {
     WidgetTester tester, {
     required String code,
     bool teacher = true,
-    UserMode mode = UserMode.professional,
+    UserMode? mode,
     Set<String> openCourses = const {'Apparatlar bilan ishlash'},
   }) async {
     final backend = FakeClassQuizBackend(teachers: {if (teacher) 't1'});
     await pumpApp(
       tester,
-      settings: completedSettings(lang: 'uz', mode: mode),
+      settings: completedSettings(
+        lang: 'uz',
+        mode: mode ?? (teacher ? UserMode.teacher : UserMode.professional),
+      ),
       initialLocation: Routes.discipline(code),
       overrides: [
         classQuizServiceProvider.overrideWithValue(
@@ -179,4 +187,44 @@ void main() {
     await open(tester, code: 'forensic_genetics');
     expect(find.byKey(const Key('discipline.lessonsBody')), findsNothing);
   });
+
+  // Toksikologiya modul sahifasi («Mavzular 1 / Moddalar» ro‘yxati): darslar
+  // shu yerda ham ko‘rinishi kerak (egasi skrinshoti, 2026-10-24).
+  for (final mode in [UserMode.teacher, UserMode.professional]) {
+    testWidgets('modul sahifasi (${mode.name}): darslar bo‘limi', (
+      tester,
+    ) async {
+      final backend = FakeClassQuizBackend(teachers: {'t1'});
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: 'uz', mode: mode),
+        initialLocation: Routes.module('toxicology'),
+        overrides: [
+          classQuizServiceProvider.overrideWithValue(
+            FakeClassQuizService(backend, userId: 't1', demo: false),
+          ),
+          lessonsServiceProvider.overrideWithValue(
+            FakeLessonsService(
+              isTeacher: true,
+              demo: false,
+              decks: {
+                'toks-01': _deck('toks-01', 'Toksikologik kimyo'),
+                'instr-01': _deck('instr-01', 'Apparatlar bilan ishlash'),
+              },
+            ),
+          ),
+        ],
+      );
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('discipline.lessonsBody')), findsOneWidget);
+      expect(
+        find.byKey(const Key('discipline.lesson.toks-01')),
+        mode == UserMode.teacher ? findsOneWidget : findsNothing,
+      );
+      expect(
+        find.byKey(const Key('discipline.lesson.instr-01')),
+        findsOneWidget,
+      );
+    });
+  }
 }

@@ -182,17 +182,17 @@ class Entitlements {
   );
 }
 
-/// Dars qulfi qoidalari (egasi: Ustoz — birinchi 3 dars; Mutaxassis —
-/// «Apparatlar bilan ishlash» faqat 1-dars).
+/// Dars qulfi qoidalari (egasi qarori, 2026-10-24): hamma dars,
+/// prezentatsiya va dars testi Pro’da — bepul darslar yo‘q. Ustoz darslari —
+/// Ustoz Pro, «Apparatlar bilan ishlash» — Mutaxassis Pro.
 abstract final class LessonAccess {
   /// Ustozga bepul ochiq darslar soni.
-  static const freeTeacherLessons = 3;
+  static const freeTeacherLessons = 0;
 
   static bool isInstrument(String topicId) => topicId.startsWith('instr-');
 
-  /// «Apparatlar bilan ishlash» 1-darsi (`instr-01…`) — bepul namuna.
-  static bool isFreeInstrumentSample(String topicId) =>
-      topicId == 'instr-01' || topicId.startsWith('instr-01-');
+  /// Bepul namuna dars yo‘q.
+  static bool isFreeInstrumentSample(String topicId) => false;
 }
 
 /// Professional kalkulyatorlar (Mutaxassis). Oddiy hisoblar bepul.

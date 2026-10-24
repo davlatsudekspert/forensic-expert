@@ -608,6 +608,13 @@ class _StudyFlashcardsScreenState extends ConsumerState<StudyFlashcardsScreen> {
           value: _index / queue.length,
           semanticsLabel: l.studyCardProgress(_index + 1, queue.length),
         ),
+        const SizedBox(height: FeSpace.xs),
+        Text(
+          l.studyNoGuaranteeNote,
+          key: const Key('study.noGuarantee'),
+          style: Theme.of(context).textTheme.bodySmall
+              ?.copyWith(color: FeTheme.of(context).textSecondary),
+        ),
         const SizedBox(height: FeSpace.sm),
         Wrap(
           spacing: FeSpace.xs,

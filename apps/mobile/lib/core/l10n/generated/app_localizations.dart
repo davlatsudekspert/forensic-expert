@@ -18870,13 +18870,13 @@ abstract class AppLocalizations {
   /// Offer at the end of a free lecture lesson.
   ///
   /// In en, this message translates to:
-  /// **'You have seen a free lesson. All 211 presentations open with Teacher Pro.'**
+  /// **'All 211 lecture presentations and their tests open with Teacher Pro.'**
   String get proCtxAllLessons;
 
   /// Offer at the end of the free instruments lesson.
   ///
   /// In en, this message translates to:
-  /// **'That was the free sample lesson. The other lessons of the course open with Expert Pro.'**
+  /// **'All lessons of this course and their tests open with Expert Pro.'**
   String get proCtxInstrumentsRest;
 
   /// Shown when a free teacher tries to create a second group.
@@ -19436,6 +19436,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No plans yet.'**
   String get admProEmpty;
+
+  /// Small note under the test start: no guarantee about real exam questions.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.'**
+  String get studyNoGuaranteeNote;
 }
 
 class _AppLocalizationsDelegate

@@ -103,13 +103,17 @@ k('proBenefitAiExtended', 'Lock card benefit.',
   'Расширенный суточный лимит ИИ',
   'AI uchun kengaytirilgan kunlik limit')
 k('proCtxAllLessons', 'Offer at the end of a free lecture lesson.',
-  'You have seen a free lesson. All 211 presentations open with Teacher Pro.',
-  'Вы посмотрели бесплатный урок. Все 211 презентаций открываются с Pro для преподавателя.',
-  'Siz bepul darsni ko‘rdingiz. Barcha 211 ta prezentatsiya Ustoz Pro bilan ochiladi.')
+  'All 211 lecture presentations and their tests open with Teacher Pro.',
+  'Все 211 презентаций лекций и тесты к ним открываются с Pro для преподавателя.',
+  'Barcha 211 ta ma’ruza prezentatsiyasi va ularning testlari Ustoz Pro bilan ochiladi.')
 k('proCtxInstrumentsRest', 'Offer at the end of the free instruments lesson.',
-  'That was the free sample lesson. The other lessons of the course open with Expert Pro.',
-  'Это был бесплатный пробный урок. Остальные уроки курса открываются с Pro для специалиста.',
-  'Bu bepul namunaviy dars edi. Kursning qolgan darslari Mutaxassis Pro bilan ochiladi.')
+  'All lessons of this course and their tests open with Expert Pro.',
+  'Все уроки этого курса и тесты к ним открываются с Pro для специалиста.',
+  'Bu kursning barcha darslari va ularning testlari Mutaxassis Pro bilan ochiladi.')
+k('studyNoGuaranteeNote', 'Small note under the test start: no guarantee about real exam questions.',
+  'Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.',
+  'Вопросы подготовлены для обучения по открытым источникам. Они не гарантируют, что такие же вопросы попадутся на официальном экзамене.',
+  'Savollar o‘quv maqsadida, ochiq manbalar asosida tuzilgan. Rasmiy imtihonda aynan shu savollar tushishiga kafolat berilmaydi.')
 k('proCtxGroupLimit', 'Shown when a free teacher tries to create a second group.',
   'The free plan includes one group. Create more groups with Teacher Pro.',
   'В бесплатном тарифе одна группа. Больше групп — с Pro для преподавателя.',

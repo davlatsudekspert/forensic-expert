@@ -10918,11 +10918,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get proCtxAllLessons =>
-      'You have seen a free lesson. All 211 presentations open with Teacher Pro.';
+      'All 211 lecture presentations and their tests open with Teacher Pro.';
 
   @override
   String get proCtxInstrumentsRest =>
-      'That was the free sample lesson. The other lessons of the course open with Expert Pro.';
+      'All lessons of this course and their tests open with Expert Pro.';
 
   @override
   String get proCtxGroupLimit =>
@@ -11245,4 +11245,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get admProEmpty => 'No plans yet.';
+
+  @override
+  String get studyNoGuaranteeNote =>
+      'Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.';
 }

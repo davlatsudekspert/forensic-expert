@@ -12720,7 +12720,9 @@
     }
   },
   "lessonsForbidden": "This lesson opens with the teacher role. The «Working with instruments» course is open to everyone.",
-  "@lessonsForbidden": {"description": "Lessons: this lesson needs the teacher role (open courses are for everyone)."},
+  "@lessonsForbidden": {
+    "description": "Lessons: this lesson needs the teacher role (open courses are for everyone)."
+  },
   "lessonsRetry": "Try again",
   "@lessonsRetry": {
     "description": "Retry button."
@@ -12885,7 +12887,9 @@
     "description": "Demo banner."
   },
   "grpPrivacyNote": "The teacher and your group see your name and score — never your e-mail. Other students don’t see your answers.",
-  "@grpPrivacyNote": {"description": "Privacy note on the group screen."},
+  "@grpPrivacyNote": {
+    "description": "Privacy note on the group screen."
+  },
   "grpSignInTitle": "Sign in to join",
   "@grpSignInTitle": {
     "description": "Sign-in card."
@@ -12943,7 +12947,14 @@
     }
   },
   "grpMyNickname": "My name: {nickname}",
-  "@grpMyNickname": {"description": "Group card: my name.", "placeholders": {"nickname": {"type": "String"}}},
+  "@grpMyNickname": {
+    "description": "Group card: my name.",
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "grpRetry": "Try again",
   "@grpRetry": {
     "description": "Button."
@@ -13197,7 +13208,9 @@
     "description": "QR card."
   },
   "grpTestQrHint": "Students scan it; their name is filled in automatically — and the test opens.",
-  "@grpTestQrHint": {"description": "Hint next to the group QR."},
+  "@grpTestQrHint": {
+    "description": "Hint next to the group QR."
+  },
   "grpBigScreen": "Big screen",
   "@grpBigScreen": {
     "description": "Button."
@@ -13300,11 +13313,17 @@
     }
   },
   "grpNickLabel": "Your name",
-  "@grpNickLabel": {"description": "Field: the student's name in the group."},
+  "@grpNickLabel": {
+    "description": "Field: the student's name in the group."
+  },
   "grpNickHelper": "Filled in from your profile — change it if you like. 2–20 characters, asked only once. The teacher and the group see this name (never your e-mail).",
-  "@grpNickHelper": {"description": "Helper under the name field."},
+  "@grpNickHelper": {
+    "description": "Helper under the name field."
+  },
   "grpNickNeeded": "Enter your name to join.",
-  "@grpNickNeeded": {"description": "Error: name needed to join."},
+  "@grpNickNeeded": {
+    "description": "Error: name needed to join."
+  },
   "grpOwnerTitle": "You are the teacher of this group",
   "@grpOwnerTitle": {
     "description": "Owner panel."
@@ -13516,15 +13535,21 @@
     "description": "Error."
   },
   "grpErrNickLength": "The name must be 2–20 characters.",
-  "@grpErrNickLength": {"description": "Error: name length."},
+  "@grpErrNickLength": {
+    "description": "Error: name length."
+  },
   "grpErrNickChars": "Use letters, digits, spaces and . _ ' - only (no e-mail or links).",
   "@grpErrNickChars": {
     "description": "Error."
   },
   "grpErrNickBlocked": "Please write a different name.",
-  "@grpErrNickBlocked": {"description": "Error: name blocked by the filter."},
+  "@grpErrNickBlocked": {
+    "description": "Error: name blocked by the filter."
+  },
   "grpErrNickTaken": "This name is already in the group. Add the first letter of your surname.",
-  "@grpErrNickTaken": {"description": "Error: name already used in the group."},
+  "@grpErrNickTaken": {
+    "description": "Error: name already used in the group."
+  },
   "grpErrBadName": "The group name must be 2–60 characters.",
   "@grpErrBadName": {
     "description": "Error."
@@ -13790,371 +13815,843 @@
     }
   },
   "classQuestionCountAll": "All · {n}",
-  "@classQuestionCountAll": {"description": "Chip: use all questions available in the topic.", "placeholders": {"n": {"type": "int"}}},
+  "@classQuestionCountAll": {
+    "description": "Chip: use all questions available in the topic.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "classQuestionCountOther": "Other",
-  "@classQuestionCountOther": {"description": "Chip: choose a custom number of questions (opens a slider)."},
+  "@classQuestionCountOther": {
+    "description": "Chip: choose a custom number of questions (opens a slider)."
+  },
   "classQuestionCountLimited": "This topic has only {n} questions, so larger choices are not available.",
-  "@classQuestionCountLimited": {"description": "Shown when the topic has fewer than 20 questions: larger choices are disabled.", "placeholders": {"n": {"type": "int"}}},
+  "@classQuestionCountLimited": {
+    "description": "Shown when the topic has fewer than 20 questions: larger choices are disabled.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "classTranslationPending": "Translation pending — original Uzbek text",
-  "@classTranslationPending": {"description": "Badge: the content exists only in Uzbek (original); the translation is not ready yet. Not a machine translation."},
+  "@classTranslationPending": {
+    "description": "Badge: the content exists only in Uzbek (original); the translation is not ready yet. Not a machine translation."
+  },
   "classHardestOpenHint": "Tap a question to discuss it",
-  "@classHardestOpenHint": {"description": "Hint under the hardest-questions card: tap a question to discuss it."},
+  "@classHardestOpenHint": {
+    "description": "Hint under the hardest-questions card: tap a question to discuss it."
+  },
   "classDiscussTitle": "Question discussion",
-  "@classDiscussTitle": {"description": "Title of the hardest-question discussion page."},
+  "@classDiscussTitle": {
+    "description": "Title of the hardest-question discussion page."
+  },
   "classDiscussPosition": "Hard question {n} / {total}",
-  "@classDiscussPosition": {"description": "Position among the hardest questions, e.g. 'Hard question 1 / 3'.", "placeholders": {"n": {"type": "int"}, "total": {"type": "int"}}},
+  "@classDiscussPosition": {
+    "description": "Position among the hardest questions, e.g. 'Hard question 1 / 3'.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "classDiscussWrongPct": "{pct}% wrong",
-  "@classDiscussWrongPct": {"description": "Share of wrong answers (no student names).", "placeholders": {"pct": {"type": "int"}}},
+  "@classDiscussWrongPct": {
+    "description": "Share of wrong answers (no student names).",
+    "placeholders": {
+      "pct": {
+        "type": "int"
+      }
+    }
+  },
   "classDiscussAnswered": "{n} answers",
-  "@classDiscussAnswered": {"description": "How many students answered this question.", "placeholders": {"n": {"type": "int"}}},
+  "@classDiscussAnswered": {
+    "description": "How many students answered this question.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "classDiscussCorrectMark": "Correct answer",
-  "@classDiscussCorrectMark": {"description": "Screen-reader label and badge for the correct option."},
+  "@classDiscussCorrectMark": {
+    "description": "Screen-reader label and badge for the correct option."
+  },
   "classDiscussExplanation": "Explanation",
-  "@classDiscussExplanation": {"description": "Section label: explanation of the answer."},
+  "@classDiscussExplanation": {
+    "description": "Section label: explanation of the answer."
+  },
   "classDiscussNoExplanation": "No explanation for this question.",
-  "@classDiscussNoExplanation": {"description": "Shown when a question has no explanation text."},
+  "@classDiscussNoExplanation": {
+    "description": "Shown when a question has no explanation text."
+  },
   "classDiscussSource": "Source",
-  "@classDiscussSource": {"description": "Section label: source (author, title, page)."},
+  "@classDiscussSource": {
+    "description": "Section label: source (author, title, page)."
+  },
   "classDiscussPrev": "Previous",
-  "@classDiscussPrev": {"description": "Button: previous hard question."},
+  "@classDiscussPrev": {
+    "description": "Button: previous hard question."
+  },
   "classDiscussNext": "Next",
-  "@classDiscussNext": {"description": "Button: next hard question."},
+  "@classDiscussNext": {
+    "description": "Button: next hard question."
+  },
   "classDiscussUnavailable": "Details are not available right now. Showing the question text and wrong-answer share only.",
-  "@classDiscussUnavailable": {"description": "Shown when option/explanation/source details cannot be loaded (old server or no connection)."},
+  "@classDiscussUnavailable": {
+    "description": "Shown when option/explanation/source details cannot be loaded (old server or no connection)."
+  },
   "classDiscussBigFont": "Large text",
-  "@classDiscussBigFont": {"description": "Toggle: larger text for the projector."},
+  "@classDiscussBigFont": {
+    "description": "Toggle: larger text for the projector."
+  },
   "classDiscussPicked": "{n} chose this",
-  "@classDiscussPicked": {"description": "Number of students who picked this option.", "placeholders": {"n": {"type": "int"}}},
+  "@classDiscussPicked": {
+    "description": "Number of students who picked this option.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "classDiscussClose": "Close",
-  "@classDiscussClose": {"description": "Tooltip: close the discussion page."},
+  "@classDiscussClose": {
+    "description": "Tooltip: close the discussion page."
+  },
   "classLeaderCorrect": "{correct}/{total} correct",
-  "@classLeaderCorrect": {"description": "Leaderboard row: correct answers out of all questions.", "placeholders": {"correct": {"type": "int"}, "total": {"type": "int"}}},
+  "@classLeaderCorrect": {
+    "description": "Leaderboard row: correct answers out of all questions.",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "classLeaderAvgTime": "avg {seconds} s",
-  "@classLeaderAvgTime": {"description": "Leaderboard row: average time of correct answers, seconds as text.", "placeholders": {"seconds": {"type": "String"}}},
+  "@classLeaderAvgTime": {
+    "description": "Leaderboard row: average time of correct answers, seconds as text.",
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
   "grpLessonGroupTest": "Give a test to a group",
-  "@grpLessonGroupTest": {"description": "Lesson test choice: primary button, give the test to a group."},
+  "@grpLessonGroupTest": {
+    "description": "Lesson test choice: primary button, give the test to a group."
+  },
   "grpLessonGroupTestHint": "Students join by QR; results appear on screen by name, with places.",
-  "@grpLessonGroupTestHint": {"description": "Lesson test choice: hint under the primary button."},
+  "@grpLessonGroupTestHint": {
+    "description": "Lesson test choice: hint under the primary button."
+  },
   "grpLessonTitle": "Group test",
-  "@grpLessonTitle": {"description": "Screen title: group test after a lesson."},
+  "@grpLessonTitle": {
+    "description": "Screen title: group test after a lesson."
+  },
   "grpLessonGroupSection": "Group",
-  "@grpLessonGroupSection": {"description": "Section: which group."},
+  "@grpLessonGroupSection": {
+    "description": "Section: which group."
+  },
   "grpLessonNewGroup": "New group",
-  "@grpLessonNewGroup": {"description": "Button: create another group inline."},
+  "@grpLessonNewGroup": {
+    "description": "Button: create another group inline."
+  },
   "grpLessonNoGroups": "You have no group yet. Type a name — the group is created right here.",
-  "@grpLessonNoGroups": {"description": "Hint when the teacher has no group yet."},
+  "@grpLessonNoGroups": {
+    "description": "Hint when the teacher has no group yet."
+  },
   "grpLessonCreateGroup": "Create group",
-  "@grpLessonCreateGroup": {"description": "Button: create the group inline."},
+  "@grpLessonCreateGroup": {
+    "description": "Button: create the group inline."
+  },
   "grpLessonCancelNew": "Pick an existing group",
-  "@grpLessonCancelNew": {"description": "Button: back to the list of groups."},
+  "@grpLessonCancelNew": {
+    "description": "Button: back to the list of groups."
+  },
   "grpLessonTopicSection": "Topic (from this lesson)",
-  "@grpLessonTopicSection": {"description": "Section: topic of the test (fixed to the lesson)."},
+  "@grpLessonTopicSection": {
+    "description": "Section: topic of the test (fixed to the lesson)."
+  },
   "grpLessonTopicFixed": "The test is built from this lesson’s topic.",
-  "@grpLessonTopicFixed": {"description": "Note under the topic: it cannot be changed here."},
+  "@grpLessonTopicFixed": {
+    "description": "Note under the topic: it cannot be changed here."
+  },
   "grpLessonNoTopic": "No test questions were found for this lesson.",
-  "@grpLessonNoTopic": {"description": "Error: no test topic for the lesson."},
+  "@grpLessonNoTopic": {
+    "description": "Error: no test topic for the lesson."
+  },
   "grpLessonStart": "Start the test",
-  "@grpLessonStart": {"description": "Button: create the test and show QR."},
+  "@grpLessonStart": {
+    "description": "Button: create the test and show QR."
+  },
   "grpLessonPickGroup": "Choose a group first.",
-  "@grpLessonPickGroup": {"description": "Error: no group chosen."},
+  "@grpLessonPickGroup": {
+    "description": "Error: no group chosen."
+  },
   "grpLessonStartedTitle": "The test has started",
-  "@grpLessonStartedTitle": {"description": "Title after the test is created."},
+  "@grpLessonStartedTitle": {
+    "description": "Title after the test is created."
+  },
   "grpLessonStartedHint": "Students scan the QR or enter the code. They join the group under their own name and the test opens.",
-  "@grpLessonStartedHint": {"description": "Hint next to the QR after the test is created."},
+  "@grpLessonStartedHint": {
+    "description": "Hint next to the QR after the test is created."
+  },
   "grpLessonLiveResults": "Live results",
-  "@grpLessonLiveResults": {"description": "Button: open the live results board."},
+  "@grpLessonLiveResults": {
+    "description": "Button: open the live results board."
+  },
   "grpLessonTeacherPanel": "Teacher panel",
-  "@grpLessonTeacherPanel": {"description": "Button: open the teacher panel of the test."},
+  "@grpLessonTeacherPanel": {
+    "description": "Button: open the teacher panel of the test."
+  },
   "grpLessonJoinLink": "Group code",
-  "@grpLessonJoinLink": {"description": "Small label above the join link."},
+  "@grpLessonJoinLink": {
+    "description": "Small label above the join link."
+  },
   "grpColRank": "Place",
-  "@grpColRank": {"description": "Board column: place."},
+  "@grpColRank": {
+    "description": "Board column: place."
+  },
   "grpColName": "Name",
-  "@grpColName": {"description": "Board column: student name."},
+  "@grpColName": {
+    "description": "Board column: student name."
+  },
   "grpColCorrect": "Correct",
-  "@grpColCorrect": {"description": "Board column: correct answers / total."},
+  "@grpColCorrect": {
+    "description": "Board column: correct answers / total."
+  },
   "grpColTime": "Time",
-  "@grpColTime": {"description": "Board column: time spent."},
+  "@grpColTime": {
+    "description": "Board column: time spent."
+  },
   "grpColState": "Status",
-  "@grpColState": {"description": "Board column: state."},
+  "@grpColState": {
+    "description": "Board column: state."
+  },
   "grpRankSpoken": "Place {rank}",
-  "@grpRankSpoken": {"description": "Screen reader: place of a student.", "placeholders": {"rank": {"type": "int"}}},
+  "@grpRankSpoken": {
+    "description": "Screen reader: place of a student.",
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      }
+    }
+  },
   "grpBoardClosed": "The test is closed",
-  "@grpBoardClosed": {"description": "Big board: banner after the test was closed."},
+  "@grpBoardClosed": {
+    "description": "Big board: banner after the test was closed."
+  },
   "grpHardestTitle": "Hard questions",
-  "@grpHardestTitle": {"description": "Block title: hardest questions after closing."},
+  "@grpHardestTitle": {
+    "description": "Block title: hardest questions after closing."
+  },
   "grpHardestBody": "The questions most students got wrong, picked automatically. Discuss them together.",
-  "@grpHardestBody": {"description": "Block body: discuss the hardest questions together."},
+  "@grpHardestBody": {
+    "description": "Block body: discuss the hardest questions together."
+  },
   "grpHardestOpen": "Discuss hard questions",
-  "@grpHardestOpen": {"description": "Button: open the discussion."},
+  "@grpHardestOpen": {
+    "description": "Button: open the discussion."
+  },
   "grpHardestLocked": "Close the test to see the hard questions here.",
-  "@grpHardestLocked": {"description": "Hint before the test is closed."},
+  "@grpHardestLocked": {
+    "description": "Hint before the test is closed."
+  },
   "grpErrNotFinished": "Hard questions appear after the test is closed.",
-  "@grpErrNotFinished": {"description": "Error: hard questions requested before the test was closed."},
+  "@grpErrNotFinished": {
+    "description": "Error: hard questions requested before the test was closed."
+  },
   "lessonImageFailed": "Image failed to load",
-  "@lessonImageFailed": {"description": "Placeholder when a lesson image cannot be loaded."},
+  "@lessonImageFailed": {
+    "description": "Placeholder when a lesson image cannot be loaded."
+  },
   "lessonImageClose": "Close",
-  "@lessonImageClose": {"description": "Close button of the full-screen image."},
+  "@lessonImageClose": {
+    "description": "Close button of the full-screen image."
+  },
   "lessonImageZoom": "Enlarge image",
-  "@lessonImageZoom": {"description": "Semantics label: tap to open the image full screen."},
+  "@lessonImageZoom": {
+    "description": "Semantics label: tap to open the image full screen."
+  },
   "lessonImageCredit": "Image: {credit}",
-  "@lessonImageCredit": {"description": "Author/licence line under a lesson image.", "placeholders": {"credit": {"type": "String"}}},
+  "@lessonImageCredit": {
+    "description": "Author/licence line under a lesson image.",
+    "placeholders": {
+      "credit": {
+        "type": "String"
+      }
+    }
+  },
   "modeTeacher": "Teacher",
-  "@modeTeacher": {"description": "Usage mode card: teacher."},
+  "@modeTeacher": {
+    "description": "Usage mode card: teacher."
+  },
   "modeTeacherDescription": "Lecturers: lecture decks by discipline, a group test after every topic, live results with places",
-  "@modeTeacherDescription": {"description": "Usage mode card: teacher, who it is for."},
+  "@modeTeacherDescription": {
+    "description": "Usage mode card: teacher, who it is for."
+  },
   "modeTeacherNote": "Lessons and tests open with the teacher role on the server. The role is granted by the administrator — see the note in the Teacher panel.",
-  "@modeTeacherNote": {"description": "Note under the teacher mode card: server role is required for lessons."},
+  "@modeTeacherNote": {
+    "description": "Note under the teacher mode card: server role is required for lessons."
+  },
   "disciplineLessonsTitle": "Lessons: presentation and group test",
-  "@disciplineLessonsTitle": {"description": "Discipline page section: lecture decks of this discipline with a group test under each."},
+  "@disciplineLessonsTitle": {
+    "description": "Discipline page section: lecture decks of this discipline with a group test under each."
+  },
   "disciplineLessonsBody": "{count} lessons. Open a lesson — at the end, «Give a test to a group»: students join by QR, results by name with places, hard questions for discussion.",
-  "@disciplineLessonsBody": {"description": "Discipline page section hint. {count} lessons.", "placeholders": {"count": {"type": "int"}}},
+  "@disciplineLessonsBody": {
+    "description": "Discipline page section hint. {count} lessons.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "disciplineLessonGroupTest": "Group test",
-  "@disciplineLessonGroupTest": {"description": "Tooltip/button on a lesson row: start a group test on this topic right away."},
+  "@disciplineLessonGroupTest": {
+    "description": "Tooltip/button on a lesson row: start a group test on this topic right away."
+  },
   "disciplineLessonsTeacherOnly": "Lessons and group tests open with the teacher role. Open the Teacher panel to see how to get it.",
-  "@disciplineLessonsTeacherOnly": {"description": "Discipline page note for teacher mode without the server role."},
+  "@disciplineLessonsTeacherOnly": {
+    "description": "Discipline page note for teacher mode without the server role."
+  },
   "disciplineLessonsAll": "All lessons",
-  "@disciplineLessonsAll": {"description": "Link at the end of the discipline lessons section: full list."},
+  "@disciplineLessonsAll": {
+    "description": "Link at the end of the discipline lessons section: full list."
+  },
   "homeInstrumentsTitle": "Working with instruments",
-  "@homeInstrumentsTitle": {"description": "Home tile (professional/teacher): instrument course."},
+  "@homeInstrumentsTitle": {
+    "description": "Home tile (professional/teacher): instrument course."
+  },
   "homeInstrumentsBody": "Ethanol by GC (Kristallyuks), COHb on UV-1900, GC-MS basics: procedure, photos, test",
-  "@homeInstrumentsBody": {"description": "Home tile body: instrument course contents."},
+  "@homeInstrumentsBody": {
+    "description": "Home tile body: instrument course contents."
+  },
   "lessonsOpenNote": "You see the open courses. Lecture decks for teaching open with the teacher role.",
-  "@lessonsOpenNote": {"description": "Lessons list note for a signed-in user without the teacher role."},
+  "@lessonsOpenNote": {
+    "description": "Lessons list note for a signed-in user without the teacher role."
+  },
   "disciplineLessonsMore": "Show {count} more lessons",
-  "@disciplineLessonsMore": {"description": "Discipline lessons: expand the rest of a course. {count} more lessons.", "placeholders": {"count": {"type": "int"}}},
+  "@disciplineLessonsMore": {
+    "description": "Discipline lessons: expand the rest of a course. {count} more lessons.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "proUnlock": "Unlock with Pro",
-  "@proUnlock": {"description": "Button on a Pro lock card: opens the Pro page."},
+  "@proUnlock": {
+    "description": "Button on a Pro lock card: opens the Pro page."
+  },
   "proTitle": "Pro plan",
-  "@proTitle": {"description": "Pro page title."},
+  "@proTitle": {
+    "description": "Pro page title."
+  },
   "proPlanStudent": "Student Pro",
-  "@proPlanStudent": {"description": "Plan name: student."},
+  "@proPlanStudent": {
+    "description": "Plan name: student."
+  },
   "proPlanTeacher": "Teacher Pro",
-  "@proPlanTeacher": {"description": "Plan name: teacher."},
+  "@proPlanTeacher": {
+    "description": "Plan name: teacher."
+  },
   "proPlanExpert": "Expert Pro",
-  "@proPlanExpert": {"description": "Plan name: expert (professional mode)."},
+  "@proPlanExpert": {
+    "description": "Plan name: expert (professional mode)."
+  },
   "proProfileRow": "Plan",
-  "@proProfileRow": {"description": "Profile row title: current plan."},
+  "@proProfileRow": {
+    "description": "Profile row title: current plan."
+  },
   "proFreeAlways": "Safety information, sources and provenance are always free.",
-  "@proFreeAlways": {"description": "Pro page and lock pages: safety/sources are always free."},
+  "@proFreeAlways": {
+    "description": "Pro page and lock pages: safety/sources are always free."
+  },
   "proBenefitFullQuizBank": "Full question bank: 4,370 questions in 211 topics",
-  "@proBenefitFullQuizBank": {"description": "Lock card benefit."},
+  "@proBenefitFullQuizBank": {
+    "description": "Lock card benefit."
+  },
   "proBenefitExamMode": "Exam mode with a review of every answer",
-  "@proBenefitExamMode": {"description": "Lock card benefit."},
+  "@proBenefitExamMode": {
+    "description": "Lock card benefit."
+  },
   "proBenefitAllFlashcards": "Flashcards for all subjects",
-  "@proBenefitAllFlashcards": {"description": "Lock card benefit."},
+  "@proBenefitAllFlashcards": {
+    "description": "Lock card benefit."
+  },
   "proBenefitErrorAnalytics": "Error analysis and statistics",
-  "@proBenefitErrorAnalytics": {"description": "Lock card benefit."},
+  "@proBenefitErrorAnalytics": {
+    "description": "Lock card benefit."
+  },
   "proBenefitOfflineDownload": "Download materials for offline study",
-  "@proBenefitOfflineDownload": {"description": "Lock card benefit."},
+  "@proBenefitOfflineDownload": {
+    "description": "Lock card benefit."
+  },
   "proBenefitAllLessons": "All 211 lecture presentations",
-  "@proBenefitAllLessons": {"description": "Lock card benefit."},
+  "@proBenefitAllLessons": {
+    "description": "Lock card benefit."
+  },
   "proBenefitUnlimitedGroupTests": "Unlimited groups and group tests of more than 10 questions",
-  "@proBenefitUnlimitedGroupTests": {"description": "Lock card benefit."},
+  "@proBenefitUnlimitedGroupTests": {
+    "description": "Lock card benefit."
+  },
   "proBenefitResultsCsv": "Export results to CSV",
-  "@proBenefitResultsCsv": {"description": "Lock card benefit."},
+  "@proBenefitResultsCsv": {
+    "description": "Lock card benefit."
+  },
   "proBenefitHardestDiscussion": "Discussion of the hardest questions",
-  "@proBenefitHardestDiscussion": {"description": "Lock card benefit."},
+  "@proBenefitHardestDiscussion": {
+    "description": "Lock card benefit."
+  },
   "proBenefitLiveTestLarge": "Live tests for large audiences",
-  "@proBenefitLiveTestLarge": {"description": "Lock card benefit."},
+  "@proBenefitLiveTestLarge": {
+    "description": "Lock card benefit."
+  },
   "proBenefitInstrumentsCourseFull": "The full «Working with instruments» course",
-  "@proBenefitInstrumentsCourseFull": {"description": "Lock card benefit."},
+  "@proBenefitInstrumentsCourseFull": {
+    "description": "Lock card benefit."
+  },
   "proBenefitProCalculators": "Professional calculators: PMI, concentration, LOD/LOQ and more",
-  "@proBenefitProCalculators": {"description": "Lock card benefit."},
+  "@proBenefitProCalculators": {
+    "description": "Lock card benefit."
+  },
   "proBenefitCaseNotebook": "Expert casebook with sourced blocks for your conclusions",
-  "@proBenefitCaseNotebook": {"description": "Lock card benefit."},
+  "@proBenefitCaseNotebook": {
+    "description": "Lock card benefit."
+  },
   "proBenefitCourtPrep": "Court testimony preparation: simulator, drills and statistics",
-  "@proBenefitCourtPrep": {"description": "Lock card benefit."},
+  "@proBenefitCourtPrep": {
+    "description": "Lock card benefit."
+  },
   "proBenefitAiExtended": "A higher daily AI limit",
-  "@proBenefitAiExtended": {"description": "Lock card benefit."},
-  "proCtxAllLessons": "You have seen a free lesson. All 211 presentations open with Teacher Pro.",
-  "@proCtxAllLessons": {"description": "Offer at the end of a free lecture lesson."},
-  "proCtxInstrumentsRest": "That was the free sample lesson. The other lessons of the course open with Expert Pro.",
-  "@proCtxInstrumentsRest": {"description": "Offer at the end of the free instruments lesson."},
+  "@proBenefitAiExtended": {
+    "description": "Lock card benefit."
+  },
+  "proCtxAllLessons": "All 211 lecture presentations and their tests open with Teacher Pro.",
+  "@proCtxAllLessons": {
+    "description": "Offer at the end of a free lecture lesson."
+  },
+  "proCtxInstrumentsRest": "All lessons of this course and their tests open with Expert Pro.",
+  "@proCtxInstrumentsRest": {
+    "description": "Offer at the end of the free instruments lesson."
+  },
   "proCtxGroupLimit": "The free plan includes one group. Create more groups with Teacher Pro.",
-  "@proCtxGroupLimit": {"description": "Shown when a free teacher tries to create a second group."},
+  "@proCtxGroupLimit": {
+    "description": "Shown when a free teacher tries to create a second group."
+  },
   "proStateFree": "Free plan",
-  "@proStateFree": {"description": "Pro page status: free plan."},
+  "@proStateFree": {
+    "description": "Pro page status: free plan."
+  },
   "proStateFreeBody": "Reference, sources and safety information are always free. Pro adds extra tools for your mode.",
-  "@proStateFreeBody": {"description": "Pro page status body for the free plan."},
+  "@proStateFreeBody": {
+    "description": "Pro page status body for the free plan."
+  },
   "proStateTrial": "{plan}: free trial",
-  "@proStateTrial": {"description": "Pro page status: trial active. {plan} is the plan name.", "placeholders": {"plan": {"type": "String"}}},
+  "@proStateTrial": {
+    "description": "Pro page status: trial active. {plan} is the plan name.",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
   "proStateActive": "{plan} is active",
-  "@proStateActive": {"description": "Pro page status: plan active. {plan} is the plan name.", "placeholders": {"plan": {"type": "String"}}},
+  "@proStateActive": {
+    "description": "Pro page status: plan active. {plan} is the plan name.",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
   "proStateUntil": "Until {date}",
-  "@proStateUntil": {"description": "Pro page: end date. {date} is a formatted date.", "placeholders": {"date": {"type": "String"}}},
+  "@proStateUntil": {
+    "description": "Pro page: end date. {date} is a formatted date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "proStateNoEnd": "No end date",
-  "@proStateNoEnd": {"description": "Pro page: plan without an end date."},
+  "@proStateNoEnd": {
+    "description": "Pro page: plan without an end date."
+  },
   "proAutoRenewOn": "Auto-renews",
-  "@proAutoRenewOn": {"description": "Pro page: subscription renews automatically."},
+  "@proAutoRenewOn": {
+    "description": "Pro page: subscription renews automatically."
+  },
   "proAutoRenewOff": "Does not renew",
-  "@proAutoRenewOff": {"description": "Pro page: subscription does not renew."},
+  "@proAutoRenewOff": {
+    "description": "Pro page: subscription does not renew."
+  },
   "proSourceStore": "Store subscription",
-  "@proSourceStore": {"description": "Plan source: store subscription."},
+  "@proSourceStore": {
+    "description": "Plan source: store subscription."
+  },
   "proSourceAdmin": "Granted by administrator",
-  "@proSourceAdmin": {"description": "Plan source: granted by an administrator."},
+  "@proSourceAdmin": {
+    "description": "Plan source: granted by an administrator."
+  },
   "proSourceTrial": "Free trial",
-  "@proSourceTrial": {"description": "Plan source: free trial."},
+  "@proSourceTrial": {
+    "description": "Plan source: free trial."
+  },
   "proOwnModeNote": "A plan unlocks features of its own mode only. Switching the mode does not unlock another plan’s features.",
-  "@proOwnModeNote": {"description": "Pro page: a plan unlocks only its own mode."},
+  "@proOwnModeNote": {
+    "description": "Pro page: a plan unlocks only its own mode."
+  },
   "proTeacherRoleNote": "The Teacher panel still requires the teacher role on the server; Pro does not grant the role.",
-  "@proTeacherRoleNote": {"description": "Pro page (teacher plan): server role is still required."},
+  "@proTeacherRoleNote": {
+    "description": "Pro page (teacher plan): server role is still required."
+  },
   "proIncludesStudent1": "Full question bank: 4,370 questions in 211 topics",
-  "@proIncludesStudent1": {"description": "Pro page: what the student plan includes, item 1."},
+  "@proIncludesStudent1": {
+    "description": "Pro page: what the student plan includes, item 1."
+  },
   "proIncludesStudent2": "Exam mode with a review of every answer",
-  "@proIncludesStudent2": {"description": "Pro page: what the student plan includes, item 2."},
+  "@proIncludesStudent2": {
+    "description": "Pro page: what the student plan includes, item 2."
+  },
   "proIncludesStudent3": "Flashcards for all subjects",
-  "@proIncludesStudent3": {"description": "Pro page: what the student plan includes, item 3."},
+  "@proIncludesStudent3": {
+    "description": "Pro page: what the student plan includes, item 3."
+  },
   "proIncludesStudent4": "Error analysis and statistics",
-  "@proIncludesStudent4": {"description": "Pro page: what the student plan includes, item 4."},
+  "@proIncludesStudent4": {
+    "description": "Pro page: what the student plan includes, item 4."
+  },
   "proIncludesTeacher1": "All 211 lecture presentations (projector mode)",
-  "@proIncludesTeacher1": {"description": "Pro page: what the teacher plan includes, item 1."},
+  "@proIncludesTeacher1": {
+    "description": "Pro page: what the teacher plan includes, item 1."
+  },
   "proIncludesTeacher2": "Unlimited groups and tests of more than 10 questions",
-  "@proIncludesTeacher2": {"description": "Pro page: what the teacher plan includes, item 2."},
+  "@proIncludesTeacher2": {
+    "description": "Pro page: what the teacher plan includes, item 2."
+  },
   "proIncludesTeacher3": "Results export to CSV",
-  "@proIncludesTeacher3": {"description": "Pro page: what the teacher plan includes, item 3."},
+  "@proIncludesTeacher3": {
+    "description": "Pro page: what the teacher plan includes, item 3."
+  },
   "proIncludesTeacher4": "Discussion of the hardest questions",
-  "@proIncludesTeacher4": {"description": "Pro page: what the teacher plan includes, item 4."},
+  "@proIncludesTeacher4": {
+    "description": "Pro page: what the teacher plan includes, item 4."
+  },
   "proIncludesExpert1": "The full «Working with instruments» course: Kristallyuks/ethanol, UV-1900/COHb, GC-MS",
-  "@proIncludesExpert1": {"description": "Pro page: what the expert plan includes, item 1."},
+  "@proIncludesExpert1": {
+    "description": "Pro page: what the expert plan includes, item 1."
+  },
   "proIncludesExpert2": "Professional calculators: PMI, concentration, LOD/LOQ and more",
-  "@proIncludesExpert2": {"description": "Pro page: what the expert plan includes, item 2."},
+  "@proIncludesExpert2": {
+    "description": "Pro page: what the expert plan includes, item 2."
+  },
   "proIncludesExpert3": "Expert casebook and court testimony preparation",
-  "@proIncludesExpert3": {"description": "Pro page: what the expert plan includes, item 3."},
+  "@proIncludesExpert3": {
+    "description": "Pro page: what the expert plan includes, item 3."
+  },
   "proIncludesExpert4": "A higher daily AI limit",
-  "@proIncludesExpert4": {"description": "Pro page: what the expert plan includes, item 4."},
+  "@proIncludesExpert4": {
+    "description": "Pro page: what the expert plan includes, item 4."
+  },
   "proGuestTitle": "Sign in to use Pro",
-  "@proGuestTitle": {"description": "Pro page for a signed-out user."},
+  "@proGuestTitle": {
+    "description": "Pro page for a signed-out user."
+  },
   "proGuestBody": "A plan is tied to your account and works on all your devices. The reference and safety information stay free without an account.",
-  "@proGuestBody": {"description": "Pro page for a signed-out user."},
+  "@proGuestBody": {
+    "description": "Pro page for a signed-out user."
+  },
   "proGuestSignIn": "Sign in with an email code",
-  "@proGuestSignIn": {"description": "Button: sign in with an email code."},
+  "@proGuestSignIn": {
+    "description": "Button: sign in with an email code."
+  },
   "proChoose": "Choose a subscription",
-  "@proChoose": {"description": "Pro page section: choose a subscription."},
+  "@proChoose": {
+    "description": "Pro page section: choose a subscription."
+  },
   "proAlreadyActive": "This plan is already active on your account.",
-  "@proAlreadyActive": {"description": "Pro page: this plan is already active."},
+  "@proAlreadyActive": {
+    "description": "Pro page: this plan is already active."
+  },
   "proStoreUnavailable": "The store is not available right now (for example on an emulator or without a store account). The price is shown in the store when you subscribe.",
-  "@proStoreUnavailable": {"description": "Pro page: store not available; price is shown in the store."},
+  "@proStoreUnavailable": {
+    "description": "Pro page: store not available; price is shown in the store."
+  },
   "proStoreNoProducts": "The store did not return this plan’s subscriptions yet. Try again later; the price is shown in the store.",
-  "@proStoreNoProducts": {"description": "Pro page: the store returned no products."},
+  "@proStoreNoProducts": {
+    "description": "Pro page: the store returned no products."
+  },
   "proMonthly": "Monthly",
-  "@proMonthly": {"description": "Subscription period."},
+  "@proMonthly": {
+    "description": "Subscription period."
+  },
   "proYearly": "Yearly",
-  "@proYearly": {"description": "Subscription period."},
+  "@proYearly": {
+    "description": "Subscription period."
+  },
   "proBuy": "Buy",
-  "@proBuy": {"description": "Button: buy the subscription."},
+  "@proBuy": {
+    "description": "Button: buy the subscription."
+  },
   "proTrialButton": "Try free for 30 days",
-  "@proTrialButton": {"description": "Button: start the free trial."},
+  "@proTrialButton": {
+    "description": "Button: start the free trial."
+  },
   "proTrialNote": "The free trial is available once per device and once per account. It ends on its own and nothing is charged.",
-  "@proTrialNote": {"description": "Pro page: trial rules."},
+  "@proTrialNote": {
+    "description": "Pro page: trial rules."
+  },
   "proRestore": "Restore purchases",
-  "@proRestore": {"description": "Button: restore purchases."},
+  "@proRestore": {
+    "description": "Button: restore purchases."
+  },
   "proFlowWorking": "Please wait…",
-  "@proFlowWorking": {"description": "Pro page: working."},
+  "@proFlowWorking": {
+    "description": "Pro page: working."
+  },
   "proFlowSuccess": "Done. Your plan is active.",
-  "@proFlowSuccess": {"description": "Pro page: success."},
+  "@proFlowSuccess": {
+    "description": "Pro page: success."
+  },
   "proFlowPending": "The purchase is waiting for approval. The plan turns on after it is confirmed.",
-  "@proFlowPending": {"description": "Pro page: purchase pending approval."},
+  "@proFlowPending": {
+    "description": "Pro page: purchase pending approval."
+  },
   "proFlowCanceled": "The purchase was cancelled. Nothing was charged.",
-  "@proFlowCanceled": {"description": "Pro page: purchase cancelled."},
+  "@proFlowCanceled": {
+    "description": "Pro page: purchase cancelled."
+  },
   "proFlowStoreNotConfigured": "Store purchase verification is not connected on the server yet. Your purchase is kept and will be checked once it is connected.",
-  "@proFlowStoreNotConfigured": {"description": "Pro page: server-side store verification is not connected."},
+  "@proFlowStoreNotConfigured": {
+    "description": "Pro page: server-side store verification is not connected."
+  },
   "proFlowInvalid": "The purchase could not be verified. If you were charged, contact support.",
-  "@proFlowInvalid": {"description": "Pro page: purchase could not be verified."},
+  "@proFlowInvalid": {
+    "description": "Pro page: purchase could not be verified."
+  },
   "proFlowOffline": "No connection. The purchase will be checked when the internet is back.",
-  "@proFlowOffline": {"description": "Pro page: no connection."},
+  "@proFlowOffline": {
+    "description": "Pro page: no connection."
+  },
   "proFlowError": "Something went wrong. Please try again.",
-  "@proFlowError": {"description": "Pro page: generic error."},
+  "@proFlowError": {
+    "description": "Pro page: generic error."
+  },
   "proFlowRestoreNothing": "No purchases to restore were found for this store account.",
-  "@proFlowRestoreNothing": {"description": "Pro page: nothing to restore."},
+  "@proFlowRestoreNothing": {
+    "description": "Pro page: nothing to restore."
+  },
   "proTrialUsedDevice": "The free trial has already been used on this device.",
-  "@proTrialUsedDevice": {"description": "Pro page: trial already used on this device."},
+  "@proTrialUsedDevice": {
+    "description": "Pro page: trial already used on this device."
+  },
   "proTrialUsedAccount": "The free trial has already been used on this account.",
-  "@proTrialUsedAccount": {"description": "Pro page: trial already used on this account."},
+  "@proTrialUsedAccount": {
+    "description": "Pro page: trial already used on this account."
+  },
   "proTrialHasPlan": "You already have an active plan, so the trial is not needed.",
-  "@proTrialHasPlan": {"description": "Pro page: user already has a plan."},
+  "@proTrialHasPlan": {
+    "description": "Pro page: user already has a plan."
+  },
   "proTrialUnavailable": "The trial cannot be offered on this device.",
-  "@proTrialUnavailable": {"description": "Pro page: trial cannot be offered on this device."},
+  "@proTrialUnavailable": {
+    "description": "Pro page: trial cannot be offered on this device."
+  },
   "proTermsTitle": "Subscription terms",
-  "@proTermsTitle": {"description": "Pro page section: subscription terms."},
+  "@proTermsTitle": {
+    "description": "Pro page section: subscription terms."
+  },
   "proTermsBody": "Subscriptions are monthly or yearly and renew automatically. The price and billing period are shown in the store before you confirm. Payment is charged to your Apple ID or Google Play account at confirmation. The subscription renews unless it is cancelled at least 24 hours before the end of the current period, and your account is charged for the next period within 24 hours before the end. You can manage or cancel it at any time in your store account settings; cancelling takes effect at the end of the paid period. A free trial or introductory offer shown by the store ends automatically.",
-  "@proTermsBody": {"description": "Pro page: Apple 3.1.2 subscription disclosure (period, price in store, auto-renewal, cancellation)."},
+  "@proTermsBody": {
+    "description": "Pro page: Apple 3.1.2 subscription disclosure (period, price in store, auto-renewal, cancellation)."
+  },
   "proCancelHowIos": "To cancel on iPhone: Settings → your name → Subscriptions → FORENSIC EXPERT → Cancel Subscription.",
-  "@proCancelHowIos": {"description": "Pro page: how to cancel on iPhone."},
+  "@proCancelHowIos": {
+    "description": "Pro page: how to cancel on iPhone."
+  },
   "proCancelHowAndroid": "To cancel on Android: Google Play → profile icon → Payments & subscriptions → Subscriptions → FORENSIC EXPERT → Cancel subscription.",
-  "@proCancelHowAndroid": {"description": "Pro page: how to cancel on Android."},
+  "@proCancelHowAndroid": {
+    "description": "Pro page: how to cancel on Android."
+  },
   "proManage": "Manage or cancel subscription",
-  "@proManage": {"description": "Button: open the store subscription settings."},
+  "@proManage": {
+    "description": "Button: open the store subscription settings."
+  },
   "proManageFailed": "Could not open the store page. Open your store account settings manually.",
-  "@proManageFailed": {"description": "Snackbar: the store page could not be opened."},
+  "@proManageFailed": {
+    "description": "Snackbar: the store page could not be opened."
+  },
   "proTermsLink": "Terms of Use",
-  "@proTermsLink": {"description": "Link: Terms of Use."},
+  "@proTermsLink": {
+    "description": "Link: Terms of Use."
+  },
   "proPrivacyLink": "Privacy Policy",
-  "@proPrivacyLink": {"description": "Link: Privacy Policy."},
+  "@proPrivacyLink": {
+    "description": "Link: Privacy Policy."
+  },
   "proOfferStudentTitle": "Study without limits",
-  "@proOfferStudentTitle": {"description": "Home: one-time soft offer for student mode."},
+  "@proOfferStudentTitle": {
+    "description": "Home: one-time soft offer for student mode."
+  },
   "proOfferStudentBody": "Student Pro opens the full question bank, exam mode, all flashcards and error analysis. A free trial, if available, is shown on the Pro page.",
-  "@proOfferStudentBody": {"description": "Home: one-time soft offer for student mode."},
+  "@proOfferStudentBody": {
+    "description": "Home: one-time soft offer for student mode."
+  },
   "proOfferTeacherTitle": "Teach with more tools",
-  "@proOfferTeacherTitle": {"description": "Home: one-time soft offer for teacher mode."},
+  "@proOfferTeacherTitle": {
+    "description": "Home: one-time soft offer for teacher mode."
+  },
   "proOfferTeacherBody": "Teacher Pro opens all 211 presentations, unlimited groups, longer tests, CSV export and discussion of the hardest questions. A free trial, if available, is shown on the Pro page.",
-  "@proOfferTeacherBody": {"description": "Home: one-time soft offer for teacher mode."},
+  "@proOfferTeacherBody": {
+    "description": "Home: one-time soft offer for teacher mode."
+  },
   "proOfferExpertTitle": "Tools for your casework",
-  "@proOfferExpertTitle": {"description": "Home: one-time soft offer for professional mode."},
+  "@proOfferExpertTitle": {
+    "description": "Home: one-time soft offer for professional mode."
+  },
   "proOfferExpertBody": "Expert Pro opens the full instruments course, professional calculators, the casebook, court testimony preparation and a higher AI limit. A free trial, if available, is shown on the Pro page.",
-  "@proOfferExpertBody": {"description": "Home: one-time soft offer for professional mode."},
+  "@proOfferExpertBody": {
+    "description": "Home: one-time soft offer for professional mode."
+  },
   "proOfferOpen": "Learn more",
-  "@proOfferOpen": {"description": "Button on the soft offer."},
+  "@proOfferOpen": {
+    "description": "Button on the soft offer."
+  },
   "proOfferDismiss": "Dismiss",
-  "@proOfferDismiss": {"description": "Tooltip: close the soft offer."},
+  "@proOfferDismiss": {
+    "description": "Tooltip: close the soft offer."
+  },
   "studyStatsTitle": "Error statistics",
-  "@studyStatsTitle": {"description": "Study hub: error statistics card (Student Pro)."},
+  "@studyStatsTitle": {
+    "description": "Study hub: error statistics card (Student Pro)."
+  },
   "studyStatsEmpty": "Review some cards first — statistics will appear here.",
-  "@studyStatsEmpty": {"description": "Study hub: no reviewed cards yet."},
+  "@studyStatsEmpty": {
+    "description": "Study hub: no reviewed cards yet."
+  },
   "studyStatsSummary": "Reviewed: {reviewed} · difficult: {weak} · mastered: {learned}",
-  "@studyStatsSummary": {"description": "Study hub: summary counts.", "placeholders": {"reviewed": {"type": "int"}, "weak": {"type": "int"}, "learned": {"type": "int"}}},
+  "@studyStatsSummary": {
+    "description": "Study hub: summary counts.",
+    "placeholders": {
+      "reviewed": {
+        "type": "int"
+      },
+      "weak": {
+        "type": "int"
+      },
+      "learned": {
+        "type": "int"
+      }
+    }
+  },
   "studyStatsWeakDeck": "{deck}: {count} difficult",
-  "@studyStatsWeakDeck": {"description": "Study hub: a deck with difficult cards. {deck} deck name, {count} number.", "placeholders": {"deck": {"type": "String"}, "count": {"type": "int"}}},
+  "@studyStatsWeakDeck": {
+    "description": "Study hub: a deck with difficult cards. {deck} deck name, {count} number.",
+    "placeholders": {
+      "deck": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "admProTitle": "Grant Pro",
-  "@admProTitle": {"description": "Admin: grant Pro screen title."},
+  "@admProTitle": {
+    "description": "Admin: grant Pro screen title."
+  },
   "admProHint": "Plan for an email, duration, list, revoke",
-  "@admProHint": {"description": "Admin: grant Pro tile hint."},
+  "@admProHint": {
+    "description": "Admin: grant Pro tile hint."
+  },
   "admProNote": "A plan granted here is recorded in the audit log with the source “administrator”. A store subscription takes precedence.",
-  "@admProNote": {"description": "Admin: grant Pro note."},
+  "@admProNote": {
+    "description": "Admin: grant Pro note."
+  },
   "admProGrantTitle": "Grant a plan",
-  "@admProGrantTitle": {"description": "Admin: section title."},
+  "@admProGrantTitle": {
+    "description": "Admin: section title."
+  },
   "admProEmail": "User email",
-  "@admProEmail": {"description": "Admin: email field."},
+  "@admProEmail": {
+    "description": "Admin: email field."
+  },
   "admProPlan": "Plan",
-  "@admProPlan": {"description": "Admin: plan choice label."},
+  "@admProPlan": {
+    "description": "Admin: plan choice label."
+  },
   "admProUntil": "Duration",
-  "@admProUntil": {"description": "Admin: duration choice label."},
+  "@admProUntil": {
+    "description": "Admin: duration choice label."
+  },
   "admProDays30": "30 days",
-  "@admProDays30": {"description": "Admin: duration."},
+  "@admProDays30": {
+    "description": "Admin: duration."
+  },
   "admProDays90": "90 days",
-  "@admProDays90": {"description": "Admin: duration."},
+  "@admProDays90": {
+    "description": "Admin: duration."
+  },
   "admProYear": "1 year",
-  "@admProYear": {"description": "Admin: duration."},
+  "@admProYear": {
+    "description": "Admin: duration."
+  },
   "admProNoLimit": "No limit",
-  "@admProNoLimit": {"description": "Admin: no end date."},
+  "@admProNoLimit": {
+    "description": "Admin: no end date."
+  },
   "admProGrant": "Grant",
-  "@admProGrant": {"description": "Admin: grant button."},
+  "@admProGrant": {
+    "description": "Admin: grant button."
+  },
   "admProRevoke": "Revoke",
-  "@admProRevoke": {"description": "Admin: revoke button/tooltip."},
+  "@admProRevoke": {
+    "description": "Admin: revoke button/tooltip."
+  },
   "admProGranted": "The plan has been granted.",
-  "@admProGranted": {"description": "Admin: result."},
+  "@admProGranted": {
+    "description": "Admin: result."
+  },
   "admProRevoked": "The plan has been revoked.",
-  "@admProRevoked": {"description": "Admin: result."},
+  "@admProRevoked": {
+    "description": "Admin: result."
+  },
   "admProNotFound": "No user with this email.",
-  "@admProNotFound": {"description": "Admin: result."},
+  "@admProNotFound": {
+    "description": "Admin: result."
+  },
   "admProInvalid": "Enter a valid email address.",
-  "@admProInvalid": {"description": "Admin: result."},
+  "@admProInvalid": {
+    "description": "Admin: result."
+  },
   "admProError": "Could not complete the request. Try again.",
-  "@admProError": {"description": "Admin: error."},
+  "@admProError": {
+    "description": "Admin: error."
+  },
   "admProListTitle": "Granted plans",
-  "@admProListTitle": {"description": "Admin: list title."},
+  "@admProListTitle": {
+    "description": "Admin: list title."
+  },
   "admProSearch": "Search by email",
-  "@admProSearch": {"description": "Admin: search hint."},
+  "@admProSearch": {
+    "description": "Admin: search hint."
+  },
   "admProEmpty": "No plans yet.",
-  "@admProEmpty": {"description": "Admin: empty list."}
+  "@admProEmpty": {
+    "description": "Admin: empty list."
+  },
+  "studyNoGuaranteeNote": "Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.",
+  "@studyNoGuaranteeNote": {
+    "description": "Small note under the test start: no guarantee about real exam questions."
+  }
 }

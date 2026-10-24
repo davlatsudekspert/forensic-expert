@@ -1,6 +1,8 @@
 import 'package:flutter/services.dart' show MethodChannel;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../core/settings/app_settings.dart' show UserMode;
+import '../core/settings/settings_controller.dart';
 import '../data/lessons/fake_lessons_service.dart';
 import '../domain/class_quiz/class_quiz_models.dart' show ClassResult;
 import '../domain/lessons/lesson_models.dart';
@@ -13,13 +15,27 @@ final lessonsServiceProvider = Provider<LessonsService>(
   (ref) => FakeLessonsService(),
 );
 
-/// Server qidiruvi: `''` — to‘liq ro‘yxat.
+/// Hamma rejimga ochiq kurs (serverda `audience = 'all'`).
+const openLessonCourse = 'Apparatlar bilan ishlash';
+
+/// Server qidiruvi: `''` — to‘liq ro‘yxat. Ustoz darslari faqat «Ustoz»
+/// rejimida ko‘rinadi: Mutaxassis/Talaba rejimida (server roli, masalan
+/// admin, bo‘lsa ham) faqat ochiq kurs qoladi.
 final lessonListProvider = FutureProvider.autoDispose
-    .family<ClassResult<List<LessonSummary>>, String>(
-      (ref, query) => ref
+    .family<ClassResult<List<LessonSummary>>, String>((ref, query) async {
+      final mode = ref.watch(
+        settingsControllerProvider.select((s) => s.userMode),
+      );
+      final res = await ref
           .watch(lessonsServiceProvider)
-          .list(query: query.isEmpty ? null : query),
-    );
+          .list(query: query.isEmpty ? null : query);
+      final items = res.value;
+      if (mode == UserMode.teacher || items == null) return res;
+      return ClassResult.ok([
+        for (final s in items)
+          if (s.course == openLessonCourse) s,
+      ]);
+    });
 
 final lessonDeckProvider = FutureProvider.autoDispose
     .family<ClassResult<LessonDeck>, String>(

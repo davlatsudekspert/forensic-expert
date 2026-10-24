@@ -1,4 +1,5 @@
-import 'package:fe_content_schema/fe_content_schema.dart' show KnowledgeArea;
+import 'package:fe_content_schema/fe_content_schema.dart'
+    show ForensicDiscipline, KnowledgeArea;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -13,6 +14,8 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
+import '../../disciplines/presentation/disciplines_screens.dart'
+    show DisciplineLessonsSection;
 import '../../knowledge/knowledge_strings.dart';
 import '../../placeholder/presentation/in_development_view.dart';
 import '../../professional/presentation/professional_widgets.dart';
@@ -146,6 +149,12 @@ class ModuleHubScreen extends ConsumerWidget {
                         child: ToolTile(tool: t),
                       ),
                   ],
+                  // Darslar (prezentatsiya + guruh testi): Ustoz/Mutaxassis
+                  // rejimida; kurslar kirish qoidasi ichida.
+                  if (category == ToolCategory.toxicology)
+                    const DisciplineLessonsSection(
+                      discipline: ForensicDiscipline.forensicToxicology,
+                    ),
                   FeSectionHeader(l.moduleHubReference),
                   if (available.isEmpty)
                     const AvailabilityStateView(

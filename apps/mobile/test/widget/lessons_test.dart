@@ -121,7 +121,10 @@ void main() {
     backend = FakeClassQuizBackend(teachers: {if (teacher) 't1'});
     await pumpApp(
       tester,
-      settings: completedSettings(lang: lang, mode: UserMode.professional),
+      settings: completedSettings(
+        lang: lang,
+        mode: teacher ? UserMode.teacher : UserMode.professional,
+      ),
       size: size,
       initialLocation: path,
       overrides: [

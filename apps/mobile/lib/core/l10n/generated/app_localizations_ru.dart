@@ -10965,11 +10965,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get proCtxAllLessons =>
-      'Вы посмотрели бесплатный урок. Все 211 презентаций открываются с Pro для преподавателя.';
+      'Все 211 презентаций лекций и тесты к ним открываются с Pro для преподавателя.';
 
   @override
   String get proCtxInstrumentsRest =>
-      'Это был бесплатный пробный урок. Остальные уроки курса открываются с Pro для специалиста.';
+      'Все уроки этого курса и тесты к ним открываются с Pro для специалиста.';
 
   @override
   String get proCtxGroupLimit =>
@@ -11291,4 +11291,8 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get admProEmpty => 'Тарифов пока нет.';
+
+  @override
+  String get studyNoGuaranteeNote =>
+      'Вопросы подготовлены для обучения по открытым источникам. Они не гарантируют, что такие же вопросы попадутся на официальном экзамене.';
 }

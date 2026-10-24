@@ -253,8 +253,23 @@ final routerProvider = Provider<GoRouter>((ref) {
         return onboardingRedirect(settings, Routes.home) ??
             (inv == null ? Routes.groups : Routes.home);
       }
-      _recordFirstStep(ref, state.matchedLocation);
-      return onboardingRedirect(settings, state.matchedLocation);
+      // Rejim chegaralari (egasi qarori, 2026-10-24): Ustoz paneli va natijalar
+      // faqat «Ustoz» rejimida; «Darslar» Talabaga yo‘q (Mutaxassis — faqat
+      // ochiq «Apparatlar» kursi, server o‘zi cheklaydi). To‘g‘ridan-to‘g‘ri
+      // havola ham Asosiyga qaytaradi.
+      final loc = state.matchedLocation;
+      final mode = settings.userMode;
+      if (mode != null &&
+          mode != UserMode.teacher &&
+          (loc == Routes.teacher || loc == Routes.teacherResults)) {
+        return Routes.home;
+      }
+      if (mode == UserMode.student &&
+          (loc == Routes.lessons || loc.startsWith('${Routes.lessons}/'))) {
+        return Routes.home;
+      }
+      _recordFirstStep(ref, loc);
+      return onboardingRedirect(settings, loc);
     },
     routes: [
       GoRoute(

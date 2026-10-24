@@ -110,21 +110,28 @@ void main() {
       _l('toks-04'),
     ];
 
-    test('bepul: apparatlar 1-dars va ustozning dastlabki 3 darsi ochiq', () {
+    test('bepul: hamma dars qulfli (bepul dars yo‘q)', () {
       final locks = computeLessonLocks(all, Entitlements.none);
-      expect(locks.keys.toSet(), {'instr-02-uv', 'toks-04'});
+      expect(locks.keys.toSet(), {
+        'instr-01-kristallyuks',
+        'instr-02-uv',
+        'toks-01',
+        'toks-02',
+        'toks-03',
+        'toks-04',
+      });
       expect(locks['instr-02-uv'], ProFeature.instrumentsCourseFull);
-      expect(locks['toks-04'], ProFeature.allLessons);
+      expect(locks['toks-01'], ProFeature.allLessons);
     });
 
     test('Ustoz Pro darslarni ochadi, apparatlar kursini emas', () {
       final locks = computeLessonLocks(all, _ent(Plan.teacher));
-      expect(locks.keys.toSet(), {'instr-02-uv'});
+      expect(locks.keys.toSet(), {'instr-01-kristallyuks', 'instr-02-uv'});
     });
 
     test('Mutaxassis Pro apparatlar kursini ochadi, ustoz darslarini emas', () {
       final locks = computeLessonLocks(all, _ent(Plan.expert));
-      expect(locks.keys.toSet(), {'toks-04'});
+      expect(locks.keys.toSet(), {'toks-01', 'toks-02', 'toks-03', 'toks-04'});
     });
   });
 }

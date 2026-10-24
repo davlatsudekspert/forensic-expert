@@ -20,8 +20,6 @@ import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
-import '../../class_quiz/presentation/teacher_panel_screen.dart'
-    show watchIsTeacher;
 import '../../pro/presentation/pro_first_offer.dart';
 import '../../referral/presentation/invite_card.dart';
 import '../../tools/tool_strings.dart';
@@ -238,12 +236,11 @@ class HomeScreen extends ConsumerWidget {
         if (!featured.contains(m) && m != HomeModule.ai) m,
     ];
     final guidelinesFeatured = actions.contains(HomeAction.guidelines);
-    // Ustoz paneli hamma rejimda ko‘rinadi; server ustoz rolini bersa —
-    // tezkor amallardan keyin (yuqorida), aks holda bo‘limlardan keyin.
-    final teacher = watchIsTeacher(ref);
-    // «Ustoz» rejimi: panel kartasi yuqorida (server roli bo‘lmasa ham —
-    // ichida rolni olish tartibi yozilgan).
-    final teacherTop = teacher || mode == UserMode.teacher;
+    // Ustoz paneli FAQAT «Ustoz» rejimida (egasi qarori, 2026-10-24): Talaba va
+    // Mutaxassis rejimida karta ham, havola ham yo‘q — server roli (masalan
+    // admin) bo‘lsa ham. Talaba guruhga «O‘qish» bo‘limidan qo‘shiladi.
+    // Ustoz rejimida server roli bo‘lmasa — ichida rolni olish tartibi yozilgan.
+    final teacherTop = mode == UserMode.teacher;
 
     // Ierarxiya: sarlavha (salom, rejim, qidiruv) → rejimga mos 4 ta tezkor
     // amal → birinchi qadamlar → bo‘limlar → davom ettirish → taklif →
@@ -266,10 +263,6 @@ class HomeScreen extends ConsumerWidget {
                 children: [
                   const SizedBox(height: FeSpace.lg),
                   _ActionGrid(actions: actions),
-                  if (teacherTop) ...[
-                    const SizedBox(height: FeSpace.sm),
-                    _TeacherPanelCard(teacher: teacher),
-                  ],
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.md),
                     FeBanner(
@@ -280,11 +273,7 @@ class HomeScreen extends ConsumerWidget {
                   const FirstStepsCard(),
                   const ProFirstOfferCard(),
                   FeSectionHeader(l.homeAreasTitle),
-                  _ModuleGrid(modules: modules),
-                  if (!teacherTop) ...[
-                    const SizedBox(height: FeSpace.sm),
-                    const _TeacherPanelCard(teacher: false),
-                  ],
+                  _ModuleGrid(modules: modules, teacherTile: teacherTop),
                   if (!guidelinesFeatured) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
@@ -493,39 +482,62 @@ class _ResourceTile extends StatelessWidget {
   }
 }
 
-/// «Ustoz paneli» kirishi: bitta bosishda panel (test o‘tkazish, natijalar
-/// va CSV, sinfga qo‘shilish). Ustoz rolida — yuqorida, oltin aksent bilan.
-class _TeacherPanelCard extends StatelessWidget {
-  const _TeacherPanelCard({required this.teacher});
-
-  final bool teacher;
+/// «Ustoz paneli» — faqat Ustoz rejimida, «Bo‘limlar» to‘rining ichida
+/// (boshqa bo‘lim plitkalari bilan bir xil ko‘rinish, oltin aksent bilan).
+class _TeacherPanelTile extends StatelessWidget {
+  const _TeacherPanelTile();
 
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
     return FeCard(
       key: const Key('home.teacher'),
+      padding: const EdgeInsets.fromLTRB(
+        FeSpace.md,
+        FeSpace.md,
+        FeSpace.sm,
+        FeSpace.md,
+      ),
       onTap: () => context.push(Routes.teacher),
-      child: _EntryLayout(
-        leading: DecoratedBox(
-          decoration: BoxDecoration(
-            color: c.accentContainer,
-            borderRadius: BorderRadius.circular(FeRadius.md),
-            border: Border.all(color: c.accentBorder),
-          ),
-          child: SizedBox.square(
-            dimension: 44,
-            child: Icon(Icons.co_present_outlined, color: c.accent, size: 24),
-          ),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(minHeight: 84),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: c.accentContainer,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: c.accentBorder),
+                  ),
+                  child: SizedBox.square(
+                    dimension: 38,
+                    child: Icon(
+                      Icons.co_present_outlined,
+                      color: c.accent,
+                      size: 21,
+                    ),
+                  ),
+                ),
+                const Spacer(),
+                Icon(
+                  Icons.arrow_outward_rounded,
+                  size: 16,
+                  color: c.textSecondary,
+                ),
+              ],
+            ),
+            const SizedBox(height: FeSpace.sm),
+            Text(
+              l.teacherPanelTitle,
+              style: Theme.of(context).textTheme.titleSmall
+                  ?.copyWith(fontWeight: FontWeight.w600, height: 1.25),
+            ),
+          ],
         ),
-        title: Text(
-          l.teacherPanelTitle,
-          style: t.titleMedium?.copyWith(fontSize: 17, height: 1.25),
-        ),
-        body: teacher ? l.teacherPanelHomeBody : l.teacherPanelHomeBodyStudent,
-        trailing: Icon(Icons.chevron_right, color: c.textSecondary),
       ),
     );
   }
@@ -855,9 +867,12 @@ class _QuickBlock extends StatelessWidget {
 }
 
 class _ModuleGrid extends StatelessWidget {
-  const _ModuleGrid({required this.modules});
+  const _ModuleGrid({required this.modules, this.teacherTile = false});
 
   final List<HomeModule> modules;
+
+  /// Faqat «Ustoz» rejimida: «Ustoz paneli» — «Bo‘limlar» to‘rining 1-plitkasi.
+  final bool teacherTile;
 
   @override
   Widget build(BuildContext context) {
@@ -870,6 +885,7 @@ class _ModuleGrid extends StatelessWidget {
         const gap = FeSpace.sm;
         // Oxirgi karta — «Barcha fanlar» (to‘r yarim bo‘sh qolmaydi).
         final cards = <Widget>[
+          if (teacherTile) const _TeacherPanelTile(),
           for (final m in modules) _ModuleCard(module: m),
           const _AllDisciplinesCard(),
         ];
