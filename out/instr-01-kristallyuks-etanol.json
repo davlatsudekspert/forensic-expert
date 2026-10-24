@@ -1,0 +1,1639 @@
+{
+ "topic": "Xromatek «Kristallyuks» gaz xromatografida etanolni aniqlash",
+ "slides": [
+  {
+   "title": "Reja va tayanch so‘zlar",
+   "bullets": [
+    {
+     "text": "Reja: etanol toksikologiyasi, GX qurilmasi, tayyorlash, namuna, o‘lchash, hisoblash, tozalash.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Maqsad: spirtlarni qon va peshobdan GSX usulida sifat va miqdor jihatdan aniqlash.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tayanch so‘zlar: dozator, kolonka, termostat, detektor, ushlanish vaqti, alkilnitrit, ichki standart.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Tayyorlash",
+     "Kalibrlash",
+     "Namuna",
+     "O‘lchash",
+     "Hisoblash",
+     "Tozalash"
+    ],
+    "caption": "Ish tartibi: darsning umumiy yo‘l xaritasi"
+   },
+   "teacher_notes": "Dars 53 (toks 188–193). Qurilma tugmalari uchun ishlab chiqaruvchi pasporti kerak; bu deckda faqat kitob usuli va ochiq ma’lumot."
+  },
+  {
+   "title": "Nega etanol GSX usulida aniqlanadi",
+   "bullets": [
+    {
+     "text": "Etil spirti farmakologik ta’siri bo‘yicha narkotik moddalar guruhiga kiradi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ichilganda qonga tez o‘tadi; 5 daqiqadan keyin qondan aniqlash mumkin.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jigarda tez oksidlanadi (90–99 % CO2 gacha), shu sababli tahlil tezlik bilan olib boriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "41"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Qonda topiladi",
+      "value": "5",
+      "unit": "daqiqadan"
+     },
+     {
+      "label": "CO2 gacha oksidlanadi",
+      "value": "90–99",
+      "unit": "%"
+     },
+     {
+      "label": "Qaynash harorati",
+      "value": "77–78,5",
+      "unit": "°C"
+     }
+    ],
+    "caption": "Etanol: kitobdagi ko‘rsatkichlar"
+   },
+   "teacher_notes": "Kitobdagi «0,2‰ o‘limga olib keladi» yozuvi xato deb belgilangan (docs/toks/kitob_ziddiyatlari.md) — slaydga kiritilmadi."
+  },
+  {
+   "title": "Etanol organizmda: yo‘l",
+   "bullets": [
+    {
+     "text": "Spirt qonga tez o‘tadi, jigarda oksidlanadi; qolgani nafas va buyrak orqali chiqadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zaharlanganda spirtning peshobdagi konsentratsiyasi qondagidan ancha ko‘p bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tahlil uchun me’da, jigar, buyrak va miya olinishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "41"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Ichilgan etanol",
+     "Qonga tez o‘tish",
+     "Jigarda oksidlanish",
+     "CO2 va suv (90–99 %)",
+     "Nafas va buyrak orqali"
+    ],
+    "caption": "Etanol yo‘li (toks 41)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "GSX nima: ikki guruh",
+   "bullets": [
+    {
+     "text": "Gaz xromatografiyasi gaz-adsorbsion va gaz-suyuqlik (GSX) xromatografiyasiga bo‘linadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gaz-suyuqlik usulida qo‘zg‘almas faza g‘ovak qattiq modda ustiga qoplangan suyuqlikdir.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ikkala usulda ham qo‘zg‘aluvchi faza gaz hisoblanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Gaz-adsorbsion",
+      "items": [
+       "Qo‘zg‘almas faza: g‘ovak qattiq modda",
+       "Qo‘zg‘aluvchi faza: gaz"
+      ]
+     },
+     {
+      "title": "Gaz-suyuqlik (GSX)",
+      "items": [
+       "Qo‘zg‘almas faza: qattiq ustidagi suyuqlik",
+       "Qo‘zg‘aluvchi faza: gaz"
+      ]
+     }
+    ],
+    "caption": "GX turlari (toks 188)"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "gc_shimadzu_gc2010.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/SHIMADZU_GC-2010_Plus_High-end_Gas_Chromatograph.jpg/960px-SHIMADZU_GC-2010_Plus_High-end_Gas_Chromatograph.jpg",
+    "caption": "Gaz xromatograf (misol): Shimadzu GC-2010 Plus, AOC-20i bilan",
+    "credit": "Dqwyy, CC0, Wikimedia Commons",
+    "kind": "photo"
+   }
+  },
+  {
+   "title": "Gaz xromatograf qismlari",
+   "bullets": [
+    {
+     "text": "Qismlar: gaz manbai, reduktor, dozator, xromatografik kolonka, termostat, detektor, yozuvchi qurilma.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gaz manbaidan reduktor orqali o‘tgan gaz (azot, argon) namuna bilan birga kolonkaga yuboriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gaz miqdori maxsus reometrlarda o‘lchanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Gaz manbai (ballon)",
+     "Reduktor",
+     "Dozator",
+     "Kolonka (termostatda)",
+     "Detektor",
+     "Yozuvchi qurilma"
+    ],
+    "caption": "GX blok-sxemasi (toks 188)"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "gc_block_uz.png",
+    "url": "https://igvzlmpgwybjdgkyowrl.supabase.co/storage/v1/object/public/lesson-images/gc_block_uz.png",
+    "caption": "Gaz xromatograf blok-sxemasi (qismlar: toks 188)",
+    "credit": "Forensic Expert, o‘z chizma",
+    "kind": "scheme"
+   }
+  },
+  {
+   "title": "Ajralish mohiyati",
+   "bullets": [
+    {
+     "text": "Aralashma isitilgan gaz oqimiga yuboriladi; suyuqlik termostatda yuqori haroratda gazga aylanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kolonkada moddalar qo‘zg‘almas va gaz fazalari orasida bir necha bor adsorbsiya va desorbsiyaga uchraydi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ajralish samaradorligi moddalarning taqsimlanish koeffitsiyentiga bog‘liq.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Yuborish",
+      "text": "Aralashma gaz oqimiga yuboriladi"
+     },
+     {
+      "title": "Bug‘lanish",
+      "text": "Suyuqlik termostatda gazga aylanadi"
+     },
+     {
+      "title": "Kolonkada ajralish",
+      "text": "Adsorbsiya va desorbsiya takrorlanadi"
+     },
+     {
+      "title": "Detektorda qayd",
+      "text": "Chiqayotgan gaz tarkibi o‘zgarishi"
+     }
+    ],
+    "caption": "GSX bosqichlari"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Kristallyuks va Xromatek: ochiq ma’lumot",
+   "bullets": [
+    {
+     "text": "«Kristallyuks-4000M» katalogi: ПИД (FID) va ЭЗД (ECD) detektorlari; to‘ldirilgan va kapillyar kolonkalar.",
+     "source": {
+      "author": "E-lab infrastructure (astanahub.com)",
+      "title": "Gazovyy khromatograf «Kristallyuks-4000M» (katalog yozuvi)",
+      "page": "katalog kartochkasi",
+      "url": "https://astanahub.com/ru/innovation-infrastructure/3794/"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Termostat: xona haroratidan +4 dan 270 °C gacha; dasturlash tezligi 0,1–120 °C/daq.",
+     "source": {
+      "author": "E-lab infrastructure (astanahub.com)",
+      "title": "Gazovyy khromatograf «Kristallyuks-4000M» (katalog yozuvi)",
+      "page": "katalog kartochkasi",
+      "url": "https://astanahub.com/ru/innovation-infrastructure/3794/"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Xromatek «Kristall 5000» seriyasi: bir asbobga 4 tagacha detektor va 3 ta bug‘latgich o‘rnatiladi (sotuvchi katalogi).",
+     "source": {
+      "author": "christmas-plus.ru (sotuvchi katalogi)",
+      "title": "Gazovyy khromatograf Khromatek Kristall 5000",
+      "page": "katalog kartochkasi",
+      "url": "https://christmas-plus.ru/catalog/analiticheskie_pribory/khromatografy/gazovyy_khromatograf_khromatek_kristall_5000"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Termostat diapazoni",
+      "value": "xona+4…270",
+      "unit": "°C"
+     },
+     {
+      "label": "Dasturlash tezligi",
+      "value": "0,1–120",
+      "unit": "°C/daq"
+     },
+     {
+      "label": "Detektorlar",
+      "value": "FID, ECD"
+     },
+     {
+      "label": "FID sezgirligi",
+      "value": "2×10⁻¹²",
+      "unit": "g C/s"
+     },
+     {
+      "label": "Kolonka turlari",
+      "value": "to‘ld./kapillyar"
+     }
+    ],
+    "caption": "«Kristallyuks-4000M» — katalog ma’lumoti"
+   },
+   "teacher_notes": "Ishlab chiqaruvchi qo‘llanmasi ochiq topilmadi. Bu qiymatlar uchinchi tomon kataloglaridan; pasport bilan tekshirilmaguncha «uncertain». «Kristallyuks» (Meta-Xrom) va «Xromatek Kristall» — turli ishlab chiqaruvchilar mahsuloti bo‘lishi mumkin; qurilma yorlig‘ini aniqlang.",
+   "diagram_note": "Ishlab chiqaruvchi pasporti bilan tekshiring"
+  },
+  {
+   "title": "Kolonka",
+   "bullets": [
+    {
+     "text": "Kolonkalar «U», spiral yoki halqa shaklida: ichki diametri 2 mm dan 12–15 mm gacha, uzunligi 2–20 m.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kolonkalar asosan shisha, mis, latun yoki po‘latdan tayyorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Spirtlarni sifat aniqlashda kolonka o‘lchami 100 × 0,6 sm.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Ko‘rsatkich",
+     "Kitobdagi qiymat"
+    ],
+    "rows": [
+     [
+      "Shakli",
+      "U, spiral, halqa"
+     ],
+     [
+      "Ichki diametri",
+      "2 dan 12–15 mm gacha"
+     ],
+     [
+      "Uzunligi",
+      "2–20 m"
+     ],
+     [
+      "Materiali",
+      "shisha, mis, latun, po‘lat"
+     ],
+     [
+      "Spirt tahlilida",
+      "100 × 0,6 sm"
+     ]
+    ],
+    "caption": "Kolonka (toks 188, 190)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Qo‘zg‘almas faza va qattiq tashuvchi",
+   "bullets": [
+    {
+     "text": "Qattiq tashuvchi: INZIM G‘IShTI-600 (0,25–0,5 mm), natriy ishqori va natriy alkilsulfatlar (0,3 g dan) bilan ishlangan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qo‘zg‘almas faza: Shostakov balzami (vinilin), qattiq fazaga nisbatan 1:5 nisbatda shimdiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qo‘zg‘aluvchi faza (gaz) — azot.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Qism",
+     "Qiymat"
+    ],
+    "rows": [
+     [
+      "Qattiq tashuvchi",
+      "INZIM G‘IShTI-600"
+     ],
+     [
+      "Zarracha o‘lchami",
+      "0,25–0,5 mm"
+     ],
+     [
+      "Qo‘zg‘almas faza",
+      "Shostakov balzami (vinilin)"
+     ],
+     [
+      "Shimdirish nisbati",
+      "1:5 (qattiq fazaga nisbatan)"
+     ],
+     [
+      "Tashuvchi gaz",
+      "azot"
+     ]
+    ],
+    "caption": "Spirt tahlili sharti (toks 190)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Detektorlar: katarometr, FID, ECD",
+   "bullets": [
+    {
+     "text": "Ko‘pchilik uchuvchi dori moddalar tahlilida gazlarning issiqlik o‘tkazuvchanligini o‘zgarishiga asoslangan katarometr ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Katarometr universal, sezgirligi alangali-ionizatsion detektorlarnikidan past (10⁻²–10⁻³), lekin oddiy.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Elektron ushlovchi detektorlar eng sezgir hisoblanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Katarometr",
+      "items": [
+       "Issiqlik o‘tkazuvchanlik o‘zgarishi",
+       "Universal, oddiy",
+       "Sezgirligi past"
+      ]
+     },
+     {
+      "title": "FID (alangali-ion.)",
+      "items": [
+       "Vodorod alangasida ionlanish",
+       "Alanga o‘tkazuvchanligi o‘zgaradi",
+       "Oqimli detektor"
+      ]
+     },
+     {
+      "title": "ECD",
+      "items": [
+       "Elektron ushlovchi",
+       "Eng sezgir detektor"
+      ]
+     }
+    ],
+    "caption": "Detektorlar (toks 189)"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "gc_aniskov.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%2B%D0%A5%D1%80%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84_%D0%B3%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9.jpg/960px-%2B%D0%A5%D1%80%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84_%D0%B3%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9.jpg",
+    "caption": "Termostat ichida ikkita alangali-ionizatsion detektor (ПИД-1, ПИД-2)",
+    "credit": "Aniskov, CC BY-SA 4.0, Wikimedia Commons",
+    "kind": "photo"
+   }
+  },
+  {
+   "title": "Xromatogramma va ushlanish vaqti",
+   "bullets": [
+    {
+     "text": "Xromatografik qog‘ozdagi egri chiziq xromatogramma deyiladi; har bir cho‘qqi ajralgan moddaga xos.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ushlanish vaqti — moddani kolonkaga yuborgandan eng ko‘p ajralib chiqquncha o‘tgan vaqt (masofa).",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sharoit bir xil saqlansa, ushlanish vaqti moddaning sifatini aniqlovchi parametrdir.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Ko‘rsatkich",
+     "Nima uchun kerak"
+    ],
+    "rows": [
+     [
+      "Ushlanish vaqti",
+      "sifat: qaysi modda"
+     ],
+     [
+      "Cho‘qqi balandligi",
+      "spirt ko‘p-ozligi (miqdor)"
+     ],
+     [
+      "Cho‘qqi asosi, yuzasi",
+      "xromatogramma tavsifi"
+     ]
+    ],
+    "caption": "Xromatogramma ko‘rsatkichlari (toks 189, 191)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Tayyorgarlik 1: dozator germetikligi",
+   "bullets": [
+    {
+     "text": "Ishdan oldin dozator blokidagi tiqinchalarning zich yopilganiga ishonch hosil qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shprits ignasi bilan modda yuboriladigan joyga sovun eritmasi surtiladi; pufakcha chiqmasa — zich.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Pufakcha hosil bo‘lsa, rezina tiqin o‘qituvchi ishtirokida almashtiriladi; tekshiruv butun mashg‘ulot davomida takrorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Sovun eritmasi",
+      "text": "Shprits ignasi bilan yuboriladigan joyga surtiladi"
+     },
+     {
+      "title": "Pufakcha yo‘q",
+      "text": "Dozator zich yopilgan"
+     },
+     {
+      "title": "Pufakcha bor",
+      "text": "Rezina tiqin almashtiriladi"
+     },
+     {
+      "title": "Takroriy nazorat",
+      "text": "Butun mashg‘ulot davomida tekshiriladi"
+     }
+    ],
+    "caption": "Germetiklikni tekshirish (toks 189–190)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Tayyorgarlik 2: mikroshprits",
+   "bullets": [
+    {
+     "text": "1 mkl li shpritslar bilan tekshiruv o‘tkaziladi: shpritsga 0,5 mkl aseton olinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aseton filtr qog‘ozga tomiziladi; igna uchida mikrotomchi hosil bo‘lib, qog‘ozda kichik nam dog‘ qoladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mikrotomchi hosil bo‘lmasa, ignani ushlab turuvchi vint burab mikroshprits qayta kalibrlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Aseton olish",
+      "text": "Shpritsga 0,5 mkl aseton"
+     },
+     {
+      "title": "Tomizish",
+      "text": "Filtr qog‘oziga tomiziladi"
+     },
+     {
+      "title": "Tekshirish",
+      "text": "Igna uchida mikrotomchi, kichik nam dog‘"
+     },
+     {
+      "title": "Tuzatish",
+      "text": "Tomchi yo‘q bo‘lsa, vint bilan qayta kalibrlash"
+     }
+    ],
+    "caption": "Mikroshprits tekshiruvi (toks 190)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Tayyorgarlik 3: sezgirlik",
+   "bullets": [
+    {
+     "text": "Xromatografga havo yuboriladi; egri chiziq maksimumi balandligi yarmiga teng bo‘lganda sezgirlik darajasi tez «100» holatga o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bunda suv egri chizig‘ining balandligi kamayadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suv bug‘i va havo tahlili mashg‘ulot boshida, o‘rtasida va oxirida tekshiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Havo yuboriladi",
+     "Maksimum ~ yarim balandlik",
+     "Sezgirlik «100» ga",
+     "Suv cho‘qqisi kamayadi",
+     "Boshi, o‘rtasi, oxirida takror"
+    ],
+    "caption": "Sezgirlikni tekshirish (toks 190)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Tahlil sharoitlari",
+   "bullets": [
+    {
+     "text": "Kolonka va detektor bloki harorati 75 °C.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tashuvchi gaz — azot, tezligi 50–60 ml/daq; detektor toki 60–100 mA.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yozish masshtabi 1:1; xromatografik qog‘oz lentasining yurish tezligi 720 mm/soat.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Kolonka, detektor T",
+      "value": "75",
+      "unit": "°C"
+     },
+     {
+      "label": "Azot tezligi",
+      "value": "50–60",
+      "unit": "ml/daq"
+     },
+     {
+      "label": "Detektor toki",
+      "value": "60–100",
+      "unit": "mA"
+     },
+     {
+      "label": "Yozish masshtabi",
+      "value": "1:1"
+     },
+     {
+      "label": "Lenta tezligi",
+      "value": "720",
+      "unit": "mm/soat"
+     }
+    ],
+    "caption": "Spirt tahlili sharti (toks 190)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Spirt va metan: sharoit taqqosi",
+   "bullets": [
+    {
+     "text": "Spirt tahlili: katarometrli GX, kolonka 100 × 0,6 sm, 75 °C, azot 50–60 ml/daq.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metan tahlili: Svet-110 xromatografi, polisorb-1 kolonka, 50 °C, bug‘latgich 150 °C, azot 30 ml/daq.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "218"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Metanda detektor alangali-ionizatsion; ushlanish vaqti 3 daqiqa.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "218"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Ko‘rsatkich",
+     "Spirt",
+     "Metan"
+    ],
+    "rows": [
+     [
+      "Detektor",
+      "katarometr",
+      "alangali-ion."
+     ],
+     [
+      "Kolonka",
+      "100 × 0,6 sm",
+      "100 mm × 3 mm"
+     ],
+     [
+      "Termostat",
+      "75 °C",
+      "50 °C"
+     ],
+     [
+      "Tashuvchi gaz",
+      "azot 50–60",
+      "azot 30 ml/daq"
+     ]
+    ],
+    "caption": "Ikki xil GSX sharti (toks 190, 218)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Spirtlarni alkilnitritga o‘tkazish",
+   "bullets": [
+    {
+     "text": "Spirtlar aralashmasi trixlorsirka kislota va natriy nitrit bilan alkilnitritlarga o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reaksiya penitsillin flakonida, rezina tiqin ostida olib boriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reaksiya tenglamasini kitob talabaga yozishni topshiradi (tenglama berilmagan).",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "reagents": [
+     "Spirtlar aralashmasi (0,5 ml)",
+     "50 % trixlorsirka kislota (0,5 ml)",
+     "30 % NaNO2 (0,25 ml)"
+    ],
+    "products": [
+     "Alkilnitritlar (gaz fazada)"
+    ],
+    "conditions": "flakon, rezina tiqin, 1 daq chayqatish",
+    "observation": "gaz fazadan 2 ml dozatorga yuboriladi",
+    "caption": "Alkilnitrit hosil qilish (toks 190)"
+   },
+   "teacher_notes": "Kitobda tenglama yozilmagan — ustoz to‘ldiradi."
+  },
+  {
+   "title": "Standart aralashmani tayyorlash",
+   "bullets": [
+    {
+     "text": "0,5 ml spirtlar aralashmasi 0,5 ml 50 % kislota saqlagan penitsillin flakoniga solinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Flakon rezina tiqin bilan yopilib, maxsus berkituvchi qurilmaga o‘rnatiladi va aralashtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shprits bilan 0,25 ml 30 % natriy nitrit yuboriladi; 1 daqiqa aralashtirilib, 2 ml gaz-havo qismi olinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Flakonga solish",
+      "text": "0,5 ml spirt + 0,5 ml 50 % kislota"
+     },
+     {
+      "title": "Yopish",
+      "text": "Rezina tiqin, berkituvchi qurilma"
+     },
+     {
+      "title": "Nitrit",
+      "text": "Shpritsda 0,25 ml 30 % NaNO2"
+     },
+     {
+      "title": "Aralashtirish",
+      "text": "1 daqiqa"
+     },
+     {
+      "title": "Gaz fazadan olish",
+      "text": "2 ml havo-gaz qismi"
+     },
+     {
+      "title": "Dozatorga yuborish",
+      "text": "Vaqt va cho‘qqilar belgilanadi"
+     }
+    ],
+    "caption": "Standart: alkilnitritlar (toks 190)"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "gc_autosampler.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gas_Chromatograph_Autosampler.jpg/960px-Gas_Chromatograph_Autosampler.jpg",
+    "caption": "Namuna flakonlari avtonamunaolgich laganbarida (misol)",
+    "credit": "Hey Paul from Sacramento, CA, USA, CC BY 2.0, Wikimedia Commons",
+    "kind": "photo"
+   }
+  },
+  {
+   "title": "Qon va peshob namunasini tayyorlash",
+   "bullets": [
+    {
+     "text": "Penitsillin flakoniga 0,5 ml 50 % trixlorsirka kislota, ustiga 0,5 ml qon yoki peshob solinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Flakon rezina tiqin bilan yopilib, fiksatorga o‘rnatiladi; 1 ml shpritsda 0,25 ml 30 % natriy nitrit yuboriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1 daqiqa chayqatiladi; 5 ml shpritsda flakon ichidagi havo-gaz qismidan 3 ml olinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Flakonga solish",
+      "text": "0,5 ml kislota + 0,5 ml qon/peshob"
+     },
+     {
+      "title": "Yopish",
+      "text": "Rezina tiqin, fiksator"
+     },
+     {
+      "title": "Aralashtirish",
+      "text": "Moddalar yaxshilab aralashtiriladi"
+     },
+     {
+      "title": "Nitrit",
+      "text": "1 ml shpritsda 0,25 ml 30 % NaNO2"
+     },
+     {
+      "title": "Chayqatish",
+      "text": "1 daqiqa"
+     },
+     {
+      "title": "Gaz fazadan olish",
+      "text": "5 ml shpritsda 3 ml"
+     }
+    ],
+    "caption": "Qon va peshob (toks 191)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Yuborish va vaqtni qayd etish",
+   "bullets": [
+    {
+     "text": "Havo-gaz aralashmasi dozator blokiga tezlik bilan yuboriladi va xromatogramma yozilishi kuzatiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yuborish bilan sekundomer ishga tushiriladi; har bir egri chiziq balandligigacha bo‘lgan vaqt belgilanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Olingan vaqt standart eritmalardan olingan vaqt bilan solishtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Dozatorga tez yuborish",
+     "Sekundomer ishga tushadi",
+     "Cho‘qqi vaqti belgilanadi",
+     "Standart vaqtlari bilan solishtirish"
+    ],
+    "caption": "O‘lchash (toks 191)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Kalibrlash va ichki standart",
+   "bullets": [
+    {
+     "text": "Talaba tanlab olingan ichki standartlar bilan aniq o‘lchov jadvalini tuzishi kerak.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Spirtlar alkilnitritlarga o‘tkaziladi va gaz fazasidan aniq olib, dozatorga yuboriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nisbiy ushlanish parametrlarini aniqlash va ichki standart tanlash nazorat savollariga kiradi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "192"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Ichki standart tanlash",
+     "Standartlarni alkilnitritga o‘tkazish",
+     "Xromatogramma olish",
+     "O‘lchov jadvalini tuzish"
+    ],
+    "caption": "Kalibrlash (toks 191)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Aniqlash mezonlari va takrorlash",
+   "bullets": [
+    {
+     "text": "Moddalar xromatogrammadagi egri chiziqlar bo‘yicha farqlanadi; ushlanish vaqti (masofa) hisoblanadi, balandligi o‘lchanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Egri chiziq balandligi spirtlarning ko‘p-ozligiga bog‘liq.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Alkilnitritlarni tekshirish uch marta takrorlanadi va maxsus jadvallarga yoziladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Maqsad",
+     "Qanday"
+    ],
+    "rows": [
+     [
+      "Sifat",
+      "ushlanish vaqti standart bilan mos"
+     ],
+     [
+      "Miqdor",
+      "cho‘qqi balandligi, o‘lchov jadvali"
+     ],
+     [
+      "Ichki standart",
+      "tanlab olinadi"
+     ],
+     [
+      "Takrorlash",
+      "3 marta"
+     ],
+     [
+      "Yozuv",
+      "ish daftari, maxsus jadval"
+     ]
+    ],
+    "caption": "Baholash (toks 190–191)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Hisoblash: kitobda nima bor",
+   "bullets": [
+    {
+     "text": "Kitobda cho‘qqi balandligi va o‘lchov jadvali bayon etilgan; aniq hisoblash formulasi berilmagan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Miqdor kalibrlash (o‘lchov) jadvali bo‘yicha aniqlanadi — formula uchun ustoz yoki uslubiy hujjat kerak.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Shubhali natija chiqsa, tekshiruv o‘qituvchi bilan birgalikda takrorlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Kitobda bor",
+      "items": [
+       "Cho‘qqi vaqti va balandligi",
+       "Ichki standart, o‘lchov jadvali",
+       "3 marta takrorlash"
+      ]
+     },
+     {
+      "title": "Kitobda yo‘q",
+      "items": [
+       "Aniq hisoblash formulasi",
+       "Qurilma tugmalari/menyusi",
+       "Aniqlash chegarasi (LOD)"
+      ]
+     }
+    ],
+    "caption": "Ustoz to‘ldiradi"
+   },
+   "teacher_notes": "Formula va qurilma menyusi uchun ustozning uslubiy hujjati yoki pasport kerak."
+  },
+  {
+   "title": "Qurilma qo‘llanmasi holati",
+   "bullets": [
+    {
+     "text": "«Kristallyuks-4000M» katalog kartochkasida ekspluatatsiya qo‘llanmasi ko‘rsatilmagan.",
+     "source": {
+      "author": "E-lab infrastructure (astanahub.com)",
+      "title": "Gazovyy khromatograf «Kristallyuks-4000M» (katalog yozuvi)",
+      "page": "katalog kartochkasi",
+      "url": "https://astanahub.com/ru/innovation-infrastructure/3794/"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shu sababli tugma va menyu bosqichlari bu deckda yozilmadi — qurilma pasportidan olinadi.",
+     "source": {
+      "author": "E-lab infrastructure (astanahub.com)",
+      "title": "Gazovyy khromatograf «Kristallyuks-4000M» (katalog yozuvi)",
+      "page": "katalog kartochkasi",
+      "url": "https://astanahub.com/ru/innovation-infrastructure/3794/"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Ilovaga qurilmaning o‘z fotosuratlari va pasport bo‘limlari keyin qo‘shiladi.",
+     "source": {
+      "author": "E-lab infrastructure (astanahub.com)",
+      "title": "Gazovyy khromatograf «Kristallyuks-4000M» (katalog yozuvi)",
+      "page": "katalog kartochkasi",
+      "url": "https://astanahub.com/ru/innovation-infrastructure/3794/"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Egasidan: qurilma yorlig‘i, boshqaruv paneli va pasport sahifalari kerak."
+  },
+  {
+   "title": "Keys: sivush moyi hidi",
+   "bullets": [
+    {
+     "text": "Kuchsiz spirtli ichimlik ichgan talabalarda ko‘ngil aynishi, qorin og‘rig‘i, bosh aylanishi, uyquchanlik kuzatilgan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "192"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zaharlanganlar nafasidan sivush moyi hidi kelgan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "192"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Vazifa: murda ichki a’zolaridan uchuvchi zaharli moddani ajratib, kimyo-toksikologik tahlil tartibini ko‘rsatish.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "192"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "7-keys (toks 192). Muammo turi / sabablar / hal etish jadvali ustoz bilan to‘ldiriladi."
+  },
+  {
+   "title": "Xulosa va nazorat savollari",
+   "bullets": [
+    {
+     "text": "GSX: kolonkada ajralish, detektorda qayd, ushlanish vaqti bo‘yicha sifat, balandlik bo‘yicha miqdor.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "192"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nazorat: xromatograf bo‘limlari, detektor ahamiyati, reduktor, xromatogramma, ushlanish davri.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "192"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nazorat: etil spirtining rezorbsiyasi va eliminatsiyasi; GSX ning boshqa usullardan afzalligi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "193"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Tayyorlash",
+     "Kalibrlash",
+     "Namuna",
+     "O‘lchash",
+     "Hisoblash",
+     "Tozalash"
+    ],
+    "caption": "Takrorlash: ish tartibi"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Adabiyotlar",
+   "bullets": [
+    {
+     "text": "Yuldashev Z.O., Umarova G.Q. Toksikologik kimyo (o‘quv-uslubiy majmua), 2025, 41, 188–193, 217–218-betlar.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188–193"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Katalog ma’lumotlari: astanahub.com E-lab (Kristallyuks-4000M); christmas-plus.ru (Xromatek Kristall 5000).",
+     "source": {
+      "author": "E-lab infrastructure (astanahub.com)",
+      "title": "Gazovyy khromatograf «Kristallyuks-4000M» (katalog yozuvi)",
+      "page": "katalog kartochkasi",
+      "url": "https://astanahub.com/ru/innovation-infrastructure/3794/"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Rasm manbalari: Wikimedia Commons (CC0, CC BY-SA 4.0, CC BY 2.0) — IMAGES.json.",
+     "source": {
+      "author": "E-lab infrastructure (astanahub.com)",
+      "title": "Gazovyy khromatograf «Kristallyuks-4000M» (katalog yozuvi)",
+      "page": "katalog kartochkasi",
+      "url": "https://astanahub.com/ru/innovation-infrastructure/3794/"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": ""
+  }
+ ],
+ "mcq": [
+  {
+   "question": "GSX usulida qo‘zg‘aluvchi faza nima?",
+   "options": [
+    "Suyuqlik",
+    "Gaz",
+    "Qattiq g‘ovak modda",
+    "Bug‘ va suyuqlik aralashmasi"
+   ],
+   "correct_index": 1,
+   "explanation": "Ikkala usulda (gaz-adsorbsion va gaz-suyuqlik) ham qo‘zg‘aluvchi faza gaz hisoblanadi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "188"
+   }
+  },
+  {
+   "question": "Gaz-suyuqlik xromatografiyasida qo‘zg‘almas faza qanday?",
+   "options": [
+    "Faqat g‘ovak qattiq modda",
+    "Faqat gaz",
+    "G‘ovak qattiq modda ustiga qoplangan suyuqlik",
+    "Filtr qog‘ozi"
+   ],
+   "correct_index": 2,
+   "explanation": "GSX da qo‘zg‘almas faza g‘ovak qattiq modda ustiga qoplangan suyuqlikdan iborat.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "188"
+   }
+  },
+  {
+   "question": "Quyidagi detektorlardan qaysi biri eng sezgir hisoblanadi?",
+   "options": [
+    "Katarometr",
+    "Elektron ushlovchi detektor",
+    "Integral detektor",
+    "Yozuvchi potensiometr"
+   ],
+   "correct_index": 1,
+   "explanation": "Kitobga ko‘ra detektorlar ichida elektron ushlovchi detektorlar eng sezgir.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "189"
+   }
+  },
+  {
+   "question": "Katarometr qanday xususiyatni o‘lchaydi?",
+   "options": [
+    "Gaz oqimidagi ionlar sonini",
+    "Gazlarning issiqlik o‘tkazuvchanligi o‘zgarishini",
+    "Alanganing rangini",
+    "Gazning bosimini"
+   ],
+   "correct_index": 1,
+   "explanation": "Katarometr gazlarning issiqlik o‘tkazuvchanligini o‘zgarishiga asoslangan konsentratsion detektor.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "189"
+   }
+  },
+  {
+   "question": "Dozator tiqinchalarining zichligi nima bilan tekshiriladi?",
+   "options": [
+    "Suv bilan",
+    "Sovun eritmasi bilan",
+    "Aseton bilan",
+    "Spirt bilan"
+   ],
+   "correct_index": 1,
+   "explanation": "Shprits ignasi bilan yuboriladigan joyga sovun eritmasi surtiladi; pufakcha chiqmasa — zich.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "190"
+   }
+  },
+  {
+   "question": "Mikroshprits tekshiruvi uchun shpritsga qancha aseton olinadi?",
+   "options": [
+    "0,5 mkl",
+    "5 mkl",
+    "0,5 ml",
+    "1 ml"
+   ],
+   "correct_index": 0,
+   "explanation": "1 mkl li shpritsga 0,5 mkl aseton olinib, filtr qog‘ozga tomiziladi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "190"
+   }
+  },
+  {
+   "question": "Spirtlarni alkilnitritga o‘tkazishda qaysi reagent ishlatiladi?",
+   "options": [
+    "30 % natriy nitrit eritmasi",
+    "10 % mis sulfat",
+    "40 % formaldegid",
+    "5 % qo‘rg‘oshin atsetati"
+   ],
+   "correct_index": 0,
+   "explanation": "Flakonga 50 % trixlorsirka kislota, so‘ng 0,25 ml 30 % natriy nitrit yuboriladi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "191"
+   }
+  },
+  {
+   "question": "Qon namunasida flakonning gaz qismidan dozatorga qancha olib yuboriladi?",
+   "options": [
+    "0,25 ml",
+    "1 ml",
+    "3 ml",
+    "10 ml"
+   ],
+   "correct_index": 2,
+   "explanation": "5 ml li shpritsda flakon ichidagi havo-gaz qismidan 3 ml olinadi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "191"
+   }
+  },
+  {
+   "question": "Kitobdagi spirt tahlili sharti bo‘yicha kolonka va detektor harorati qancha?",
+   "options": [
+    "50 °C",
+    "75 °C",
+    "150 °C",
+    "270 °C"
+   ],
+   "correct_index": 1,
+   "explanation": "Xromatografik kolonka va detektor blokining harorati 75 °C.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "190"
+   }
+  },
+  {
+   "question": "Spirt tahlilida azotning tezligi qancha?",
+   "options": [
+    "5–6 ml/daq",
+    "30 ml/daq",
+    "50–60 ml/daq",
+    "500 ml/daq"
+   ],
+   "correct_index": 2,
+   "explanation": "Qo‘zg‘aluvchi faza — azot, tezligi 50–60 ml/daq.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "190"
+   }
+  }
+ ],
+ "extras": [],
+ "sources": [
+  {
+   "author": "Yuldashev Z.O., Umarova G.Q.",
+   "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+   "page": "188–193"
+  },
+  {
+   "author": "E-lab infrastructure (astanahub.com)",
+   "title": "Gazovyy khromatograf «Kristallyuks-4000M» (katalog yozuvi)",
+   "page": "katalog kartochkasi",
+   "url": "https://astanahub.com/ru/innovation-infrastructure/3794/"
+  },
+  {
+   "author": "christmas-plus.ru (sotuvchi katalogi)",
+   "title": "Gazovyy khromatograf Khromatek Kristall 5000",
+   "page": "katalog kartochkasi",
+   "url": "https://christmas-plus.ru/catalog/analiticheskie_pribory/khromatografy/gazovyy_khromatograf_khromatek_kristall_5000"
+  }
+ ],
+ "meta": {
+  "id": "instr-01-kristallyuks-etanol",
+  "title_uz": "Xromatek «Kristallyuks» gaz xromatografida etanolni aniqlash",
+  "kind": "apparat",
+  "lang": "uz",
+  "source_lang": "uz"
+ },
+ "course": "Apparatlar bilan ishlash",
+ "lang": "uz"
+}

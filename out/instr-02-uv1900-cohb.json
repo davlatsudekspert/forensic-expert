@@ -1,0 +1,1813 @@
+{
+ "topic": "Shimadzu UV-1900 spektrofotometrida CO (COHb) ni aniqlash",
+ "slides": [
+  {
+   "title": "Reja va tayanch so‘zlar",
+   "bullets": [
+    {
+     "text": "Reja: CO zaharlanishi, COHb aniqlash usullari, UV-1900 da o‘lchash, hisoblash, tozalash.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "217"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tayanch so‘zlar: COHb, deoksigemoglobin, natriy ditionit, izobestik nuqta, Base Corr., Photometric 8l.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Maqsad: qonda COHb ni kimyoviy va fizik-kimyoviy (spektrofotometrik) usulda tahlil qilish.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "217"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Tayyorlash",
+     "Kalibrlash",
+     "Namuna",
+     "O‘lchash",
+     "Hisoblash",
+     "Tozalash"
+    ],
+    "caption": "Ish tartibi: darsning yo‘l xaritasi"
+   },
+   "teacher_notes": "Dars 59 (toks 82–85, 217–220). UV-1900 bosqichlari Shimadzu UV-1900i qo‘llanmasidan; UV-1900 va UV-1900i menyulari farq qilishi mumkin — qurilma yorlig‘ini tekshiring."
+  },
+  {
+   "title": "Qonda gemoglobin shakllari",
+   "bullets": [
+    {
+     "text": "Zaharlangan odam qonida deoksigemoglobin (Hb), oksigemoglobin (OHb) va karboksigemoglobin (COHb) bo‘lishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qisman metgemoglobin (MtHb) ham bo‘lishi mumkin; MtHb is gazi bilan birikmaydi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonda karboksigemoglobin aniqlansa, bemorning is gazi bilan zaharlanganligi isbotlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Birikma",
+     "Belgi",
+     "Izoh"
+    ],
+    "rows": [
+     [
+      "Deoksigemoglobin",
+      "Hb",
+      "kislorodsiz, COsiz"
+     ],
+     [
+      "Oksigemoglobin",
+      "OHb",
+      "kislorod bilan"
+     ],
+     [
+      "Karboksigemoglobin",
+      "COHb",
+      "is gazi bilan"
+     ],
+     [
+      "Metgemoglobin",
+      "MtHb",
+      "CO bilan birikmaydi"
+     ]
+    ],
+    "caption": "Gemoglobin shakllari (toks 82)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Is gazi gemoglobin bilan birikishi",
+   "bullets": [
+    {
+     "text": "CO gemoglobin bilan juda oson birikib, barqaror karboksigemoglobin hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Birikish tezligi kislorodnikiga nisbatan 300 marta kuchli; CO ning ajralishi esa 3600 barobar sekin.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Is gazining hidi bo‘lmagani uchun zaharlanish tez va to‘satdan ro‘y beradi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "81"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "reaction",
+    "reagents": [
+     "HbO2 (oksigemoglobin)",
+     "CO (is gazi)"
+    ],
+    "products": [
+     "HbCO (karboksigemoglobin)",
+     "O2"
+    ],
+    "observation": "CO ning birikish tezligi O2 dan 300 marta kuchli",
+    "caption": "HbO2 + CO → HbCO + O2"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "COHb miqdori va zaharlanish darajasi",
+   "bullets": [
+    {
+     "text": "COHb 20–30 % bo‘lsa kuchsiz zaharlanish; 30–35 % — o‘rtacha; 35–50 % — og‘ir.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "50–60 % da kuchli zaharlanish, tirishish, hushdan ketish; 70–80 % ga yetganda o‘lim sodir bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kitob va malaka fayli darajalari farq qiladi; slaydda kitobdagi qiymat keltirildi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "COHb, %",
+     "Daraja"
+    ],
+    "rows": [
+     [
+      "20–30",
+      "kuchsiz zaharlanish"
+     ],
+     [
+      "30–35",
+      "o‘rtacha zaharlanish"
+     ],
+     [
+      "35–50",
+      "og‘ir zaharlanish"
+     ],
+     [
+      "50–60",
+      "kuchli, tirishish, hushdan ketish"
+     ],
+     [
+      "70–80",
+      "o‘lim"
+     ]
+    ],
+    "caption": "COHb darajalari (toks 82)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "COHb aniqlash usullari",
+   "bullets": [
+    {
+     "text": "Is gazini aniqlash qondagi karboksigemoglobinni kimyoviy va fizik-kimyoviy usullar bilan aniqlashga asoslangan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fizik-kimyoviy usullar: spektroskopik, spektrofotometrik, fotometrik va gaz xromatografik.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Biologik ob’ektdan aniqlash uchun ob’ekt ezilib qoni ajratiladi, so‘ng qon tekshiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "COHb aniqlash usullari",
+    "children": [
+     {
+      "label": "Kimyoviy",
+      "items": [
+       "Rang o‘zgarishini solishtirish"
+      ]
+     },
+     {
+      "label": "Spektroskopik",
+      "items": [
+       "Fraungofer chiziqlari"
+      ]
+     },
+     {
+      "label": "Spektrofotometrik",
+      "items": [
+       "450–620 nm sohada"
+      ]
+     },
+     {
+      "label": "Fotometrik"
+     },
+     {
+      "label": "Gaz xromatografik"
+     }
+    ],
+    "caption": "Usullar (toks 82)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Spektroskopik usul",
+   "bullets": [
+    {
+     "text": "Qon spektroskopda tekshirilganda spektrning D va E sohasida Fraungofer chiziqlari ko‘rinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "COHb 564–579 va 523–536 nm sohalarda yutilish hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ammoniy sulfid ta’sirida OHb yutilishi 543–596 nm oralig‘ida keng yo‘lga birlashadi; COHb da spektr o‘zgarmaydi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Oksigemoglobin",
+      "items": [
+       "Ammoniy sulfid bilan qaytariladi",
+       "Spektrlar birlashib keng yo‘l (543–596 nm)"
+      ]
+     },
+     {
+      "title": "Karboksigemoglobin",
+      "items": [
+       "Ammoniy sulfid bilan qaytarilmaydi",
+       "Spektr o‘zgarmaydi",
+       "564–579 va 523–536 nm"
+      ]
+     }
+    ],
+    "caption": "Spektroskopik farq (toks 83)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Spektrofotometrik usul mohiyati",
+   "bullets": [
+    {
+     "text": "Usul OHb va COHb ni deoksigemoglobingacha qaytarib, optik ko‘rsatkichini aniqlashga asoslangan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Chinlik va miqdor 450–620 nm to‘lqin uzunligi sohasidagi yutilish spektrlariga asoslanib aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uch eritma tayyorlanadi: A (tekshiriluvchi qon), B (COHb + deoksi), V (faqat COHb).",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Spektr sohasi",
+      "value": "450–620",
+      "unit": "nm"
+     },
+     {
+      "label": "Qon (A eritma)",
+      "value": "1",
+      "unit": "ml"
+     },
+     {
+      "label": "Suyultirish hajmi",
+      "value": "100",
+      "unit": "ml"
+     },
+     {
+      "label": "Bufer pH",
+      "value": "7,38"
+     },
+     {
+      "label": "Kyuveta qalinligi",
+      "value": "1",
+      "unit": "sm"
+     }
+    ],
+    "caption": "Spektrofotometrik usul (toks 83–84)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "UV-1900: umumiy ma’lumot",
+   "bullets": [
+    {
+     "text": "UV-1900 seriyasi to‘lqin uzunligi diapazoni 190–1100 nm; ilovada qo‘llanma UV-1900i bo‘yicha.",
+     "source": {
+      "author": "Shimadzu Europa",
+      "title": "UV-1900 UV-Vis spektrofotometr (mahsulot sahifasi)",
+      "page": "texnik ko‘rsatkichlar",
+      "url": "https://www.shimadzu.eu/uv-1900"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Yorug‘lik manbai: WI (galogen) yoki D2 (deyteriy) lampa; holati ekran yuqorisidagi status panelida ko‘rinadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "20",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘rnatish joyi: 15–35 °C, namlik 35–80 %, to‘g‘ridan-to‘g‘ri quyosh nuri va tebranishdan xoli.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "v",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "To‘lqin diapazoni",
+      "value": "190–1100",
+      "unit": "nm"
+     },
+     {
+      "label": "Lampalar",
+      "value": "WI + D2"
+     },
+     {
+      "label": "Xona harorati",
+      "value": "15–35",
+      "unit": "°C"
+     },
+     {
+      "label": "Namlik",
+      "value": "35–80",
+      "unit": "%"
+     },
+     {
+      "label": "Massa",
+      "value": "16,6",
+      "unit": "kg"
+     }
+    ],
+    "caption": "UV-1900i: asosiy ko‘rsatkichlar"
+   },
+   "teacher_notes": "Diapazon — Shimadzu Europa sahifasi (UV-1900 seriyasi); qolgani UV-1900i Operation Guide. Menyular UV-1900 da farq qilishi mumkin.",
+   "image": {
+    "file": "uvvis_block_uz.png",
+    "url": "https://igvzlmpgwybjdgkyowrl.supabase.co/storage/v1/object/public/lesson-images/uvvis_block_uz.png",
+    "caption": "UV-Vis spektrofotometr umumiy blok-sxemasi (o‘z chizma)",
+    "credit": "Forensic Expert, o‘z chizma",
+    "kind": "scheme"
+   }
+  },
+  {
+   "title": "UV-1900i o‘lchash rejimlari",
+   "bullets": [
+    {
+     "text": "Rejim menyusida: Photometric, Spectrum, Quantitation, Kinetics, Time Course, Bio Method.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "19",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Photometric rejimi bitta yoki ko‘p to‘lqin uzunligida optik zichlik, o‘tkazuvchanlik o‘lchaydi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "21",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Spectrum rejimi to‘lqin uzunligini skanerlab spektr oladi; cho‘qqi topish va tekislash mumkin.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "21",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Rejim",
+     "Vazifa"
+    ],
+    "rows": [
+     [
+      "Photometric",
+      "1 ta to‘lqin uzunligi"
+     ],
+     [
+      "Photometric 8l",
+      "2–8 ta to‘lqin uzunligi"
+     ],
+     [
+      "Spectrum",
+      "to‘lqin skanerlash, spektr"
+     ],
+     [
+      "Quantitation",
+      "kalibrlash chizig‘i, miqdor"
+     ],
+     [
+      "Kinetics / Time Course",
+      "vaqt bo‘yicha o‘zgarish"
+     ]
+    ],
+    "caption": "UV-1900i rejimlari (Operation Guide, 19–23)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "COHb uchun qaysi rejim",
+   "bullets": [
+    {
+     "text": "Spektr 450–620 nm oralig‘ida olinadi — bu Spectrum rejimiga mos (bizning moslashtirishimiz).",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "72",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "D1 va D2 ikki to‘lqin uzunligida o‘lchanadi — Photometric 8l rejimida 2–8 to‘lqin uzunligi kiritiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "64",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Qaysi rejim qo‘llanishini ustoz va laboratoriya uslubiyoti belgilaydi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "85"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Spectrum",
+      "items": [
+       "Skanerlash diapazoni kiritiladi",
+       "Spektr real vaqtda chiziladi",
+       "Cho‘qqi topish (Peak Pick)"
+      ]
+     },
+     {
+      "title": "Photometric 8l",
+      "items": [
+       "2–8 to‘lqin uzunligi",
+       "Ketma-ket o‘lchanadi (WL1…WLn)",
+       "Natija jadvalda"
+      ]
+     }
+    ],
+    "caption": "Moslashtirish: ustoz tasdiqlaydi"
+   },
+   "teacher_notes": "Kitob rejimni qurilma bo‘yicha aytmaydi; bu slayd qo‘llanma imkoniyatlarini kitob usuli bilan moslashtirish. «uncertain».",
+   "diagram_note": "Ustoz tasdig‘i kerak"
+  },
+  {
+   "title": "Ishga tushirish",
+   "bullets": [
+    {
+     "text": "Yoqishdan oldin kyuvetalar bo‘lmasligi kerak: aks holda yorug‘lik to‘silib, tekshiruvda xato chiqishi mumkin.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "7",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yoqilgach tekshiruvlar va initsializatsiya boshlanadi; so‘ng [Mode Menu] ekrani chiqadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "18",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xavfsizlik rejimi yoqilgan bo‘lsa, initsializatsiyadan so‘ng kirish (login) ekrani chiqadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "18",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Kyuveta yo‘q",
+      "text": "Kyuveta xonasi va ushlagich bo‘sh"
+     },
+     {
+      "title": "Yoqish",
+      "text": "Quvvat tugmasi; initsializatsiya"
+     },
+     {
+      "title": "Login",
+      "text": "Xavfsizlik rejimida kirish"
+     },
+     {
+      "title": "Mode Menu",
+      "text": "Rejim tanlanadi"
+     },
+     {
+      "title": "Lampa holati",
+      "text": "WI yoki D2 status panelida"
+     }
+    ],
+    "caption": "Yoqish (Operation Guide, 7, 18, 20)"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "uv_du640.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/DU640_spectrophotometer.jpg/960px-DU640_spectrophotometer.jpg",
+    "caption": "UV-Vis spektrofotometr (misol): Beckman DU 640, umumiy ko‘rinish",
+    "credit": "TimVickers, Public domain, Wikimedia Commons",
+    "kind": "photo"
+   }
+  },
+  {
+   "title": "A, B, V eritmalar",
+   "bullets": [
+    {
+     "text": "A — tekshiriluvchi qon eritmasi; B — A ga natriy ditionit qo‘shilgan (COHb + deoksi); V — CO bilan to‘yintirilgan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "B eritmada OHb to‘liq deoksigemoglobingacha qaytariladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "V eritmada OHb to‘liq COHb ga o‘tadi; MtHb ni qaytarish uchun ditionit qo‘shilib, yana CO bilan to‘yintiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "A eritma",
+      "items": [
+       "1 ml qon, 100 ml gacha",
+       "pH 7,38 bufer yoki 0,1 % ammiak"
+      ]
+     },
+     {
+      "title": "B eritma",
+      "items": [
+       "A eritma kyuvetada",
+       "3–4 mg Na ditionit"
+      ]
+     },
+     {
+      "title": "V eritma",
+      "items": [
+       "A eritma + CO",
+       "5–7 mg Na ditionit",
+       "qayta CO bilan to‘yintirish"
+      ]
+     }
+    ],
+    "caption": "Uch eritma (toks 83)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "A eritmani tayyorlash",
+   "bullets": [
+    {
+     "text": "1 ml quyqasiz qonga 100 ml bo‘lguncha pH 7,38 fosfat bufer yoki 0,1 % ammiak eritmasi qo‘shilib aralashtiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Olingan eritma rangi tiniq bo‘lishiga ahamiyat beriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ammiak varianti: qon 100 ml li o‘lchov kolbasiga solinib, belgigacha 0,1 % ammiak bilan to‘ldiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Qon",
+      "text": "1 ml quyqasiz qon"
+     },
+     {
+      "title": "Suyultirish",
+      "text": "100 ml gacha bufer yoki 0,1 % ammiak"
+     },
+     {
+      "title": "Aralashtirish",
+      "text": "Yaxshilab aralashtiriladi"
+     },
+     {
+      "title": "Tekshirish",
+      "text": "Eritma tiniq bo‘lishi shart"
+     }
+    ],
+    "caption": "A eritma (toks 83–84)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "V eritma: CO bilan to‘yintirish",
+   "bullets": [
+    {
+     "text": "Konsentrlangan sulfat va chumoli kislotasidan CO hosil qilinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "CO 10 % ishqor (HCOOH bug‘ini tutadi), so‘ng suv (ishqordan tozalash) orqali o‘tkazilib, A eritmali idishga yuboriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keyin 5–7 mg natriy ditionit qo‘shilib, yana qo‘shimcha CO bilan to‘yintiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "83"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "H2SO4 + HCOOH → CO",
+     "10 % ishqor (HCOOH tutadi)",
+     "Suv (ishqor izidan tozalash)",
+     "A eritmali idish",
+     "5–7 mg ditionit, yana CO"
+    ],
+    "caption": "CO olish va yuborish (toks 83)"
+   },
+   "teacher_notes": "Kitobda xavfsizlik ko‘rsatmasi yo‘q: CO zaharli gaz — ustoz mo‘rili shkafda ishlashni eslatadi (bu eslatma kitobdan emas)."
+  },
+  {
+   "title": "Kyuveta va solishtiruvchi eritma",
+   "bullets": [
+    {
+     "text": "Eritma 1 sm li spektrofotometr kyuvetasiga solinadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Solishtiruvchi sifatida 0,1 % ammiak (yoki qonni suyultirgan bufer/suv) ishlatiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kyuvetaga natriy gidrosulfit kristallari qo‘shilib, qopqoqchasi yopib chayqatiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Kvars kyuveta UV sohada, plastik — ko‘rinuvchi sohada (rasm izohi Commons dan). COHb 450–620 nm ko‘rinuvchi sohada.",
+   "image": {
+    "file": "uv_cuvettes.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Spectrophotometer_cuvettes.JPG/960px-Spectrophotometer_cuvettes.JPG",
+    "caption": "Kvars (UV) va plastik (ko‘rinuvchi) kyuvetalar",
+    "credit": "Retama, CC BY-SA 4.0, Wikimedia Commons",
+    "kind": "photo"
+   }
+  },
+  {
+   "title": "Nolni o‘rnatish: Auto Zero va Base Corr.",
+   "bullets": [
+    {
+     "text": "Kyuveta bo‘limi qopqog‘i o‘lchash va nol o‘rnatish vaqtida yopiq bo‘lishi kerak.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "8",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Auto Zero — faqat belgilangan to‘lqin uzunligida; Baseline Correction — belgilangan to‘lqin uzunligi oralig‘ida tuzatish.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "8",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Birinchi o‘lchashdan oldin kyuvetaga bo‘sh (blank) namuna qo‘yilib [Auto Zero] yoki [Base Corr.] bosiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "55",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Blank qo‘yish",
+      "text": "Solishtiruvchi eritma kyuvetada"
+     },
+     {
+      "title": "Qopqoqni yopish",
+      "text": "Tashqi yorug‘lik tushmasin"
+     },
+     {
+      "title": "Photometric: Auto Zero",
+      "text": "0 Abs (100 %T) o‘rnatiladi"
+     },
+     {
+      "title": "Spectrum, 8l: Base Corr.",
+      "text": "Oraliq bo‘yicha baza chizig‘i"
+     },
+     {
+      "title": "Start",
+      "text": "O‘lchash boshlanadi"
+     }
+    ],
+    "caption": "Nol (Operation Guide, 8, 55, 68, 77)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Spectrum rejimi parametrlari",
+   "bullets": [
+    {
+     "text": "Photometric Type: Abs, %T, %R yoki Energy; Scan Range — boshlang‘ich to‘lqin uzunligi tugashidan katta bo‘lishi kerak.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "74",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Scan Speed: Survey, Fast, Medium, Slow, Very Slow; Data Interval: AUTO yoki 0,05–2,0 nm.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "74",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Nuqtalar soni 2001 tagacha; undan oshsa, interval avtomatik o‘zgartiriladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "74",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Parametr",
+     "Qo‘llanmadagi variantlar"
+    ],
+    "rows": [
+     [
+      "Photometric Type",
+      "Abs, %T, %R, Energy"
+     ],
+     [
+      "Scan Range",
+      "boshlanish > tugash (nm)"
+     ],
+     [
+      "Scan Speed",
+      "Survey…Very Slow"
+     ],
+     [
+      "Data Interval",
+      "AUTO; 0,05–2,0 nm"
+     ],
+     [
+      "Nuqtalar",
+      "≤ 2001"
+     ]
+    ],
+    "caption": "Spectrum: Scan Settings (Operation Guide, 73–74)"
+   },
+   "teacher_notes": "Qiymatlarni (masalan 620→450 nm, tezlik) ustoz/uslub belgilaydi; qo‘llanmada faqat variantlar."
+  },
+  {
+   "title": "Spektrni o‘lchash",
+   "bullets": [
+    {
+     "text": "Parametrlar o‘rnatilgach, blank bilan [Base Corr.], so‘ng [Start] bosiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "77",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘lchash vaqtida spektr real vaqtda chiziladi; to‘xtatish faqat [Stop] bilan.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "77",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘lchangach grafik kattalashtiriladi; cho‘qqi topish, tekislash, arifmetik amallar qo‘llanishi mumkin.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "78",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Parametrlar",
+      "text": "[Scan Settings], [Measurement Settings]"
+     },
+     {
+      "title": "Base Corr.",
+      "text": "Blank bilan"
+     },
+     {
+      "title": "Namuna",
+      "text": "B va V eritma kyuvetada"
+     },
+     {
+      "title": "Start",
+      "text": "Spektr real vaqtda chiziladi"
+     },
+     {
+      "title": "Ko‘rish",
+      "text": "Grafik, Peak Pick"
+     }
+    ],
+    "caption": "Spektr olish (Operation Guide, 72–78)"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "uv_insert_cuvette.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Insert_the_Cuvette.JPG/960px-Insert_the_Cuvette.JPG",
+    "caption": "Kyuvetani nur yo‘li ustiga o‘rnatish (misol)",
+    "credit": "Viv Rolfe, CC BY-SA 4.0, Wikimedia Commons",
+    "kind": "photo"
+   }
+  },
+  {
+   "title": "Kutilgan spektrlar",
+   "bullets": [
+    {
+     "text": "Deoksigemoglobin (B eritma) 557 nm da bitta maksimum hosil qiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "COHb 541 va 571 nm da ikkita maksimumga ega.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Umumiy chizmada 550, 565 va 580 nm da izobestik nuqtalar hosil bo‘lishi xarakterli.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Hb maksimumi",
+      "value": "557",
+      "unit": "nm"
+     },
+     {
+      "label": "COHb maksimumlari",
+      "value": "541 va 571",
+      "unit": "nm"
+     },
+     {
+      "label": "Izobestik nuqtalar",
+      "value": "550, 565, 580",
+      "unit": "nm"
+     }
+    ],
+    "caption": "Spektr belgilari (toks 84)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Miqdoriy o‘lchash: ikki to‘lqin uzunligi",
+   "bullets": [
+    {
+     "text": "Optik zichlik ikki monoxromatik nurda (D1, D2) o‘lchanadi: bu ikki joyda COHb va Hb farqi eng katta.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "D2 — 550 nm (izobestik nuqta) da o‘lchanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "D1 uchun 538 nm qabul qilindi; kitobning ayrim joylarida 534 nm yozilgan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "85"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "D1 to‘lqin uzunligi",
+      "value": "538",
+      "unit": "nm"
+     },
+     {
+      "label": "D2 (izobestik)",
+      "value": "550",
+      "unit": "nm"
+     },
+     {
+      "label": "Koeffitsiyent K",
+      "value": "0,372"
+     },
+     {
+      "label": "Kyuveta",
+      "value": "1",
+      "unit": "sm"
+     },
+     {
+      "label": "Ditionit (B)",
+      "value": "3–4",
+      "unit": "mg"
+     }
+    ],
+    "caption": "Miqdoriy o‘lchash (toks 84–85)"
+   },
+   "teacher_notes": "Egasi qarori: 538 nm (docs/toks/kitob_ziddiyatlari.md). Kitob 534 deb yozgan joylar ustoz izohida."
+  },
+  {
+   "title": "UV-1900i da ikki to‘lqin uzunligini o‘lchash",
+   "bullets": [
+    {
+     "text": "Photometric 8l rejimida [No. of WLs] 2 dan 8 gacha; o‘lchash [WL1], [WL2]… tartibida bajariladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "64",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Birinchi o‘lchashdan oldin blank bilan [Base Corr.] bosiladi, so‘ng [Start].",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "68",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Natijalar [Photo. Table] da; [Save Table] bilan saqlanadi, [Print] bilan chop etiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "69",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "WL1=538, WL2=550 nm kiritish — kitob qiymatlarining moslashtirilishi, ustoz tasdiqlashi kerak.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "85"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Rejim",
+      "text": "Photometric → Photometric 8l"
+     },
+     {
+      "title": "No. of WLs",
+      "text": "2 ta to‘lqin uzunligi"
+     },
+     {
+      "title": "WL1, WL2",
+      "text": "538 va 550 nm (ustoz tasdig‘i)"
+     },
+     {
+      "title": "Base Corr.",
+      "text": "Blank bilan"
+     },
+     {
+      "title": "Start",
+      "text": "Photo. Table da natija"
+     },
+     {
+      "title": "Save Table",
+      "text": "Natijani saqlash"
+     }
+    ],
+    "caption": "Photometric 8l (Operation Guide, 62–69)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Hisoblash formulasi",
+   "bullets": [
+    {
+     "text": "COHb miqdori: P = 100 − (D_COHb − D_HbCOHb)·100 / (D_HbI·K); K = 0,372.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "84"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "D_COHb — CO bilan to‘yingan V eritmaning 538 nm dagi optik zichligi; D_HbCOHb — B eritma, ditionitdan keyin.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "D_HbI — B eritmaning 550 nm (izobestik nuqta) dagi optik zichligi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "85"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Belgi",
+     "Ma’nosi"
+    ],
+    "rows": [
+     [
+      "P",
+      "COHb miqdori, %"
+     ],
+     [
+      "D_COHb",
+      "V eritma, 538 nm"
+     ],
+     [
+      "D_HbCOHb",
+      "B eritma, ditionitdan keyin"
+     ],
+     [
+      "D_HbI",
+      "B eritma, 550 nm (izobestik)"
+     ],
+     [
+      "K",
+      "koeffitsiyent 0,372"
+     ]
+    ],
+    "caption": "P = 100 − (D_COHb − D_HbCOHb)·100 / (D_HbI·K)"
+   },
+   "teacher_notes": "Formula kitob 84-betidagi tasvirdan o‘qildi (matn qatlamida yo‘q) — ustoz tasdiqlasin. Qurilma bu formulani o‘zi hisoblamaydi deb faraz qilinadi; hisob qo‘lda/jadvalda (tasdiqlanmagan).",
+   "diagram_note": "Formula tasvirdan o‘qildi"
+  },
+  {
+   "title": "Natijani baholash",
+   "bullets": [
+    {
+     "text": "Olingan natija is gazi bilan zaharlanishni sud-tibbiy baholashga xizmat qiladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonda COHb aniqlansa, bemorning is gazi bilan zaharlanganligi isbotlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Daraja: 20–30 % kuchsiz, 70–80 % — o‘lim (kitob jadvali).",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "82"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Natijani baholashda 4-slayd jadvaliga qarang."
+  },
+  {
+   "title": "Kimyoviy usullar: rang reaksiyalari",
+   "bullets": [
+    {
+     "text": "Zaharlangan va toza qon ranglari solishtiriladi: COHb saqlagan qon rangini o‘zgartirmaydi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "218"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mis sulfat: COHb li qon to‘q qizil; toza qon yashil. NaOH: toza qon qo‘ng‘ir.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "218"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Formaldegid: toza qon 5–10 daqiqada qo‘ng‘ir-qoramtir; qo‘rg‘oshin atsetati: toza qon qo‘ng‘ir.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "218"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Reaktiv",
+     "COHb li qon",
+     "Toza qon"
+    ],
+    "rows": [
+     [
+      "K3[Fe(CN)6] 1 %",
+      "qizil, o‘zgarmaydi",
+      "sarg‘ayadi"
+     ],
+     [
+      "CuSO4 10 %",
+      "to‘q qizil",
+      "yashil"
+     ],
+     [
+      "NaOH 30 %",
+      "to‘q qizil",
+      "qo‘ng‘ir"
+     ],
+     [
+      "Formaldegid 40 %",
+      "qizil, o‘zgarmaydi",
+      "qo‘ng‘ir-qoramtir"
+     ],
+     [
+      "Pb atsetat 5 %",
+      "qizil, o‘zgarmaydi",
+      "qo‘ng‘ir"
+     ]
+    ],
+    "caption": "Rang reaksiyalari (toks 218)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Usullar cheklovi",
+   "bullets": [
+    {
+     "text": "Qonda COHb borligini tasdiqlash uchun bir necha reaksiya solishtiriladi; bitta reaksiya xatoga olib kelishi mumkin.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "218"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yengil zaharlanishda reaktivlar zaharlanmagan qon kabi natija beradi; kimyoviy usullar kam COHb uchun ahamiyatsiz.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "218"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Chirigan qonda NaOH bilan yorqin qizil rang (gemoxromogen) COHb bo‘lmasa ham hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "218"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Spektrofotometriyada eritmaning optik ko‘rsatkichi 0,2 dan 1,0 gacha bo‘lishi lozim.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "108"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Kimyoviy usullar",
+      "items": [
+       "Tez, oddiy rang solishtirish",
+       "Kam miqdorda ahamiyatsiz",
+       "Chirigan qonda yolg‘on musbat"
+      ]
+     },
+     {
+      "title": "Spektrofotometriya",
+      "items": [
+       "Chinlik va miqdor beradi",
+       "Optik zichlik 0,2–1,0",
+       "Ikki to‘lqin uzunligi, formula"
+      ]
+     }
+    ],
+    "caption": "Taqqos (toks 108, 218)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Xavfsizlik va tozalash",
+   "bullets": [
+    {
+     "text": "Toksik/biologik xavfli namunalar bilan himoya qo‘lqop va ko‘zoynak taqiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "vii",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Namuna to‘kilsa, uni SDS dagi usul bo‘yicha yo‘q qilinadi; asbob ustiga reaktiv qo‘yilmaydi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "vii",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asbobni tozalashda spirt yoki erituvchi ishlatilmaydi; to‘kilgan suv qoldirilmaydi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "viii",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Qiling",
+      "items": [
+       "Qo‘lqop, ko‘zoynak taqing",
+       "To‘kilganini SDS bo‘yicha yo‘qoting",
+       "Xonani shamollating"
+      ]
+     },
+     {
+      "title": "Qilmang",
+      "items": [
+       "Asbob ustiga reaktiv qo‘ymang",
+       "Spirt/erituvchi bilan artmang",
+       "To‘kilgan suvni qoldirmang"
+      ]
+     }
+    ],
+    "caption": "Operation Guide, vii–viii"
+   },
+   "teacher_notes": "«Xonani shamollating» — qo‘llanmada yonuvchi/toksik namunalar uchun yaxshi shamollatish talabi (iv-bet)."
+  },
+  {
+   "title": "Vaziyatli masala",
+   "bullets": [
+    {
+     "text": "10 ml qon taqdim etilgan: tanada pushti dog‘lar, ichki a’zolarda qon juda suyuq, qizil-alvon rangli.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "219"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Voqea: uy hammomida vannada cho‘kib vafot etgan; qaysi zaharli modda bilan zaharlanganini aniqlang.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "219"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kimyoviy reaksiyalar natijalari «charxpalak» jadvaliga yoziladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "219"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Kitobdagi 24-keys / vaziyatli masala (toks 219). Javob kitobda berilmagan."
+  },
+  {
+   "title": "Adabiyotlar",
+   "bullets": [
+    {
+     "text": "Yuldashev Z.O., Umarova G.Q. Toksikologik kimyo (majmua), 2025, 81–85, 108, 217–220-betlar.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "81–85"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shimadzu Corporation. UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+      "page": "iv–viii, 7–8, 18–23, 55, 62–78",
+      "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shimadzu Europa: UV-1900 sahifasi (190–1100 nm).",
+     "source": {
+      "author": "Shimadzu Europa",
+      "title": "UV-1900 UV-Vis spektrofotometr (mahsulot sahifasi)",
+      "page": "texnik ko‘rsatkichlar",
+      "url": "https://www.shimadzu.eu/uv-1900"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": ""
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Qonda COHb miqdori qancha bo‘lganda o‘lim sodir bo‘ladi (kitob bo‘yicha)?",
+   "options": [
+    "20–30 %",
+    "35–50 %",
+    "50–60 %",
+    "70–80 %"
+   ],
+   "correct_index": 3,
+   "explanation": "Kitobga ko‘ra COHb 70–80 % ga yetganda o‘lim sodir bo‘ladi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "82"
+   }
+  },
+  {
+   "question": "Spektrofotometrik usulda B eritmani tayyorlash uchun qaysi qaytaruvchi ishlatiladi?",
+   "options": [
+    "Natriy ditionit",
+    "Mis sulfat",
+    "Ammoniy xlorid",
+    "Formaldegid"
+   ],
+   "correct_index": 0,
+   "explanation": "B eritma uchun kyuvetadagi A eritmaga 3–4 mg natriy ditionit qo‘shiladi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "83"
+   }
+  },
+  {
+   "question": "COHb ning yutilish spektri qaysi sohada tahlil qilinadi?",
+   "options": [
+    "200–400 nm",
+    "450–620 nm",
+    "700–900 nm",
+    "1000–1100 nm"
+   ],
+   "correct_index": 1,
+   "explanation": "Hb hosilalari 450–620 nm to‘lqin uzunligi sohasida tahlil qilinadi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "83"
+   }
+  },
+  {
+   "question": "COHb va Hb spektrlari kesishadigan (izobestik) nuqtalardan biri qaysi?",
+   "options": [
+    "450 nm",
+    "500 nm",
+    "550 nm",
+    "620 nm"
+   ],
+   "correct_index": 2,
+   "explanation": "Izobestik nuqtalar 550, 565 va 580 nm da; D2 550 nm da o‘lchanadi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "84"
+   }
+  },
+  {
+   "question": "Deoksigemoglobin spektrida nechta maksimum bor va qaysi to‘lqin uzunligida?",
+   "options": [
+    "Bitta, 557 nm",
+    "Ikkita, 541 va 571 nm",
+    "Bitta, 538 nm",
+    "Uchta, 550–580 nm"
+   ],
+   "correct_index": 0,
+   "explanation": "Deoksigemoglobin 557 nm da bitta maksimum, COHb esa 541 va 571 nm da ikkita maksimum beradi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "84"
+   }
+  },
+  {
+   "question": "Kitobdagi hisoblash formulasida koeffitsiyent K qanchaga teng?",
+   "options": [
+    "0,372",
+    "1,000",
+    "3,72",
+    "0,0372"
+   ],
+   "correct_index": 0,
+   "explanation": "Formulada K — koeffitsiyent 0,372.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "85"
+   }
+  },
+  {
+   "question": "UV-1900i qo‘llanmasida «Baseline Correction» nima?",
+   "options": [
+    "Faqat bitta to‘lqin uzunligida nol o‘rnatish",
+    "Belgilangan to‘lqin uzunligi oralig‘ida nol (baza chizig‘i) tuzatish",
+    "Lampani almashtirish",
+    "Fayl nomini o‘zgartirish"
+   ],
+   "correct_index": 1,
+   "explanation": "Faqat belgilangan to‘lqin uzunligida tuzatish — Auto Zero; oraliq bo‘yicha — Baseline Correction ([Base Corr.]).",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "8",
+    "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+   }
+  },
+  {
+   "question": "UV-1900i Photometric 8l rejimida nechta to‘lqin uzunligini o‘rnatish mumkin?",
+   "options": [
+    "1 tagacha",
+    "2 dan 8 gacha",
+    "10 dan 20 gacha",
+    "Cheksiz"
+   ],
+   "correct_index": 1,
+   "explanation": "[No. of WLs] 2 dan 8 gacha to‘lqin uzunligini belgilaydi.",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "64",
+    "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+   }
+  },
+  {
+   "question": "COHb li qonga mis sulfat qo‘shilsa nima kuzatiladi (toza qon yashil bo‘ladi)?",
+   "options": [
+    "Qon yashil bo‘ladi",
+    "To‘q qizil rang saqlanadi",
+    "Qon qo‘ng‘ir bo‘ladi",
+    "Cho‘kma tushadi"
+   ],
+   "correct_index": 1,
+   "explanation": "Karboksigemoglobin saqlagan qon to‘q qizil rangini saqlaydi, toza qon esa yashil rangga o‘tadi.",
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "218"
+   }
+  },
+  {
+   "question": "UV-1900i ni yoqishdan oldin kyuveta bo‘limida nima bo‘lishi kerak?",
+   "options": [
+    "To‘ldirilgan kyuveta",
+    "Bo‘sh — hech narsa qo‘yilmagan",
+    "Faqat kvars kyuveta",
+    "Standart eritma"
+   ],
+   "correct_index": 1,
+   "explanation": "Yoqishda kyuveta bo‘lsa, yorug‘lik to‘silib, tekshiruvda xato aniqlanishi mumkin.",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "7",
+    "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+   }
+  }
+ ],
+ "extras": [],
+ "sources": [
+  {
+   "author": "Yuldashev Z.O., Umarova G.Q.",
+   "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+   "page": "81–85"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+   "page": "7–78",
+   "url": "https://www.deq.isep.ipp.pt/deq/labinv/equipamentos/1350_Espectrofot__metro-UVVIS.pdf"
+  },
+  {
+   "author": "Shimadzu Europa",
+   "title": "UV-1900 UV-Vis spektrofotometr (mahsulot sahifasi)",
+   "page": "texnik ko‘rsatkichlar",
+   "url": "https://www.shimadzu.eu/uv-1900"
+  }
+ ],
+ "meta": {
+  "id": "instr-02-uv1900-cohb",
+  "title_uz": "Shimadzu UV-1900 spektrofotometrida CO (COHb) ni aniqlash",
+  "kind": "apparat",
+  "lang": "uz",
+  "source_lang": "uz"
+ },
+ "course": "Apparatlar bilan ishlash",
+ "lang": "uz"
+}

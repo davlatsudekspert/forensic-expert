@@ -1,0 +1,306 @@
+{
+ "topic_id": "instr-02-uv1900-cohb",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Shimadzu UV-1900 spektrofotometrida CO (COHb) ni aniqlash",
+  "ru": "Shimadzu UV-1900 spektrofotometrida CO (COHb) ni aniqlash",
+  "en": "Shimadzu UV-1900 spektrofotometrida CO (COHb) ni aniqlash"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "instr-02-uv1900-cohb-q01",
+   "question_i18n": {
+    "uz": "Qonda COHb miqdori qancha bo‘lganda o‘lim sodir bo‘ladi (kitob bo‘yicha)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "20–30 %",
+     "35–50 %",
+     "50–60 %",
+     "70–80 %"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra COHb 70–80 % ga yetganda o‘lim sodir bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q02",
+   "question_i18n": {
+    "uz": "Spektrofotometrik usulda B eritmani tayyorlash uchun qaysi qaytaruvchi ishlatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Natriy ditionit",
+     "Mis sulfat",
+     "Ammoniy xlorid",
+     "Formaldegid"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "B eritma uchun kyuvetadagi A eritmaga 3–4 mg natriy ditionit qo‘shiladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q03",
+   "question_i18n": {
+    "uz": "COHb ning yutilish spektri qaysi sohada tahlil qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "200–400 nm",
+     "450–620 nm",
+     "700–900 nm",
+     "1000–1100 nm"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Hb hosilalari 450–620 nm to‘lqin uzunligi sohasida tahlil qilinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q04",
+   "question_i18n": {
+    "uz": "COHb va Hb spektrlari kesishadigan (izobestik) nuqtalardan biri qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "450 nm",
+     "500 nm",
+     "550 nm",
+     "620 nm"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Izobestik nuqtalar 550, 565 va 580 nm da; D2 550 nm da o‘lchanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "84"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q05",
+   "question_i18n": {
+    "uz": "Deoksigemoglobin spektrida nechta maksimum bor va qaysi to‘lqin uzunligida?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bitta, 557 nm",
+     "Ikkita, 541 va 571 nm",
+     "Bitta, 538 nm",
+     "Uchta, 550–580 nm"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Deoksigemoglobin 557 nm da bitta maksimum, COHb esa 541 va 571 nm da ikkita maksimum beradi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "84"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q06",
+   "question_i18n": {
+    "uz": "Kitobdagi hisoblash formulasida koeffitsiyent K qanchaga teng?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,372",
+     "1,000",
+     "3,72",
+     "0,0372"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Formulada K — koeffitsiyent 0,372."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "85"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q07",
+   "question_i18n": {
+    "uz": "UV-1900i qo‘llanmasida «Baseline Correction» nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat bitta to‘lqin uzunligida nol o‘rnatish",
+     "Belgilangan to‘lqin uzunligi oralig‘ida nol (baza chizig‘i) tuzatish",
+     "Lampani almashtirish",
+     "Fayl nomini o‘zgartirish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Faqat belgilangan to‘lqin uzunligida tuzatish — Auto Zero; oraliq bo‘yicha — Baseline Correction ([Base Corr.])."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "8"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q08",
+   "question_i18n": {
+    "uz": "UV-1900i Photometric 8l rejimida nechta to‘lqin uzunligini o‘rnatish mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1 tagacha",
+     "2 dan 8 gacha",
+     "10 dan 20 gacha",
+     "Cheksiz"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "[No. of WLs] 2 dan 8 gacha to‘lqin uzunligini belgilaydi."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "64"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q09",
+   "question_i18n": {
+    "uz": "COHb li qonga mis sulfat qo‘shilsa nima kuzatiladi (toza qon yashil bo‘ladi)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qon yashil bo‘ladi",
+     "To‘q qizil rang saqlanadi",
+     "Qon qo‘ng‘ir bo‘ladi",
+     "Cho‘kma tushadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Karboksigemoglobin saqlagan qon to‘q qizil rangini saqlaydi, toza qon esa yashil rangga o‘tadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "218"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-02-uv1900-cohb-q10",
+   "question_i18n": {
+    "uz": "UV-1900i ni yoqishdan oldin kyuveta bo‘limida nima bo‘lishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "To‘ldirilgan kyuveta",
+     "Bo‘sh — hech narsa qo‘yilmagan",
+     "Faqat kvars kyuveta",
+     "Standart eritma"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Yoqishda kyuveta bo‘lsa, yorug‘lik to‘silib, tekshiruvda xato aniqlanishi mumkin."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019",
+    "page": "7"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.O., Umarova G.Q.",
+   "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "UV-1900i Instruction Manual (Operation Guide), 207-90563, 2019"
+  }
+ ]
+}

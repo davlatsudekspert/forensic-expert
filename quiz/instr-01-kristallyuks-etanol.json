@@ -1,0 +1,302 @@
+{
+ "topic_id": "instr-01-kristallyuks-etanol",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Xromatek «Kristallyuks» gaz xromatografida etanolni aniqlash",
+  "ru": "Xromatek «Kristallyuks» gaz xromatografida etanolni aniqlash",
+  "en": "Xromatek «Kristallyuks» gaz xromatografida etanolni aniqlash"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "instr-01-kristallyuks-etanol-q01",
+   "question_i18n": {
+    "uz": "GSX usulida qo‘zg‘aluvchi faza nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Suyuqlik",
+     "Gaz",
+     "Qattiq g‘ovak modda",
+     "Bug‘ va suyuqlik aralashmasi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ikkala usulda (gaz-adsorbsion va gaz-suyuqlik) ham qo‘zg‘aluvchi faza gaz hisoblanadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "188"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q02",
+   "question_i18n": {
+    "uz": "Gaz-suyuqlik xromatografiyasida qo‘zg‘almas faza qanday?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat g‘ovak qattiq modda",
+     "Faqat gaz",
+     "G‘ovak qattiq modda ustiga qoplangan suyuqlik",
+     "Filtr qog‘ozi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "GSX da qo‘zg‘almas faza g‘ovak qattiq modda ustiga qoplangan suyuqlikdan iborat."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "188"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q03",
+   "question_i18n": {
+    "uz": "Quyidagi detektorlardan qaysi biri eng sezgir hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Katarometr",
+     "Elektron ushlovchi detektor",
+     "Integral detektor",
+     "Yozuvchi potensiometr"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kitobga ko‘ra detektorlar ichida elektron ushlovchi detektorlar eng sezgir."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "189"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q04",
+   "question_i18n": {
+    "uz": "Katarometr qanday xususiyatni o‘lchaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Gaz oqimidagi ionlar sonini",
+     "Gazlarning issiqlik o‘tkazuvchanligi o‘zgarishini",
+     "Alanganing rangini",
+     "Gazning bosimini"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Katarometr gazlarning issiqlik o‘tkazuvchanligini o‘zgarishiga asoslangan konsentratsion detektor."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "189"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q05",
+   "question_i18n": {
+    "uz": "Dozator tiqinchalarining zichligi nima bilan tekshiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Suv bilan",
+     "Sovun eritmasi bilan",
+     "Aseton bilan",
+     "Spirt bilan"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Shprits ignasi bilan yuboriladigan joyga sovun eritmasi surtiladi; pufakcha chiqmasa — zich."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "190"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q06",
+   "question_i18n": {
+    "uz": "Mikroshprits tekshiruvi uchun shpritsga qancha aseton olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5 mkl",
+     "5 mkl",
+     "0,5 ml",
+     "1 ml"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "1 mkl li shpritsga 0,5 mkl aseton olinib, filtr qog‘ozga tomiziladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "190"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q07",
+   "question_i18n": {
+    "uz": "Spirtlarni alkilnitritga o‘tkazishda qaysi reagent ishlatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "30 % natriy nitrit eritmasi",
+     "10 % mis sulfat",
+     "40 % formaldegid",
+     "5 % qo‘rg‘oshin atsetati"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Flakonga 50 % trixlorsirka kislota, so‘ng 0,25 ml 30 % natriy nitrit yuboriladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "191"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q08",
+   "question_i18n": {
+    "uz": "Qon namunasida flakonning gaz qismidan dozatorga qancha olib yuboriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,25 ml",
+     "1 ml",
+     "3 ml",
+     "10 ml"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "5 ml li shpritsda flakon ichidagi havo-gaz qismidan 3 ml olinadi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "191"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q09",
+   "question_i18n": {
+    "uz": "Kitobdagi spirt tahlili sharti bo‘yicha kolonka va detektor harorati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50 °C",
+     "75 °C",
+     "150 °C",
+     "270 °C"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Xromatografik kolonka va detektor blokining harorati 75 °C."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "190"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-01-kristallyuks-etanol-q10",
+   "question_i18n": {
+    "uz": "Spirt tahlilida azotning tezligi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5–6 ml/daq",
+     "30 ml/daq",
+     "50–60 ml/daq",
+     "500 ml/daq"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Qo‘zg‘aluvchi faza — azot, tezligi 50–60 ml/daq."
+   },
+   "source": {
+    "author": "Yuldashev Z.O., Umarova G.Q.",
+    "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+    "page": "190"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev Z.O., Umarova G.Q.",
+   "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025"
+  }
+ ]
+}

@@ -1,0 +1,322 @@
+{
+ "topic_id": "instr-03-gcms-asoslar",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "GX-MS da ishlash usullari: asoslar",
+  "ru": "GX-MS da ishlash usullari: asoslar",
+  "en": "GX-MS da ishlash usullari: asoslar"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "instr-03-gcms-asoslar-q01",
+   "question_i18n": {
+    "uz": "GX-MS da MS qismi nima qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Moddalarni kolonkada ajratadi",
+     "Ionlarni massa/zaryad (m/z) bo‘yicha ajratib o‘lchaydi",
+     "Namunani haydaydi",
+     "Gaz bosimini o‘lchaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "MS ionlangan moddalarni vakuumda m/z bo‘yicha ajratadi va har bir ion intensivligini o‘lchaydi."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "GC/MS Basics (Shimadzu texnik yordam)",
+    "page": "How does GC/MS work?"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q02",
+   "question_i18n": {
+    "uz": "EI da odatiy elektron energiyasi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "7 eV",
+     "70 eV",
+     "700 eV",
+     "7000 eV"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "GX-MS da odatiy elektron energiyasi 70 eV; kutubxonalar shu energiyada yozilgan."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "Ionization Modes: EI (Shimadzu)",
+    "page": "Features of EI"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q03",
+   "question_i18n": {
+    "uz": "Nega ko‘p GX-MS da aynan 70 eV ishlatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kutubxona spektrlari shu energiyada yozilgan",
+     "Filament shu energiyada yonmaydi",
+     "Vakuum shu energiyada hosil bo‘ladi",
+     "Gaz shu energiyada oqadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Asosiy sabab — ko‘p kutubxonalardagi mass-spektrlar 70 eV EI da olingan."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "Ionization Modes: EI (Shimadzu)",
+    "page": "Features of EI"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q04",
+   "question_i18n": {
+    "uz": "Molekulyar ion (M⁺) nimani beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Molekulyar massani",
+     "Kolonka uzunligini",
+     "Gaz tezligini",
+     "Detektor haroratini"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Molekula parchalanmay bitta elektron yo‘qotsa, hosil bo‘lgan M⁺ molekulyar massani aniqlashga yordam beradi."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "Ionization Modes: EI (Shimadzu)",
+    "page": "Features of EI"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q05",
+   "question_i18n": {
+    "uz": "Kvadrupol analizatorda ionlar qanday ajratiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Uchish vaqti bo‘yicha",
+     "To‘rt sterjenga RF va DC kuchlanish: tebranish orbitasi massaga bog‘liq",
+     "Magnit maydonda halqa radiusi bo‘yicha",
+     "Filtr qog‘ozida"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kvadrupolda 4 sterjenga RF va DC kuchlanish beriladi; ionlar massaga qarab turlicha tebranadi."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "FAQ: measurement principles of MS (Shimadzu)",
+    "page": "Mass analyzers"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q06",
+   "question_i18n": {
+    "uz": "Qaysi rejim noma’lum moddani aniqlash uchun qulay?"
+   },
+   "options_i18n": {
+    "uz": [
+     "SIM",
+     "Full scan",
+     "Faqat SIM kvalifikatorlari",
+     "Hech biri"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Full scan barcha ionlarni yozib TIC va to‘liq spektr beradi; noma’lum modda uchun qulay."
+   },
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "1–2"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q07",
+   "question_i18n": {
+    "uz": "SIM rejimining asosiy afzalligi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Barcha ionlarni yozadi",
+     "Sezgirlik yuqori, shovqin past",
+     "Kutubxona qidiruvini bekor qiladi",
+     "Kolonka kerak emas"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "SIM faqat tanlangan ionlarni o‘lchaydi: sezgirlik yuqori, shovqin past; miqdoriy tahlilga mos."
+   },
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "1–2"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q08",
+   "question_i18n": {
+    "uz": "SIM da kvantifikator ion odatda qanday tanlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Eng kichik m/z",
+     "Spektrdagi eng ko‘p (eng intensiv) ion",
+     "Tasodifiy ion",
+     "Eng og‘ir ion"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kvantifikator odatda eng ko‘p ion; kvalifikator sifatida 2- va 3- eng ko‘p ionlar tanlanadi."
+   },
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "1–2"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q09",
+   "question_i18n": {
+    "uz": "TIC qanday hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat bitta ion intensivligidan",
+     "Bir skandagi barcha mass-spektr cho‘qqilari intensivliklarini qo‘shib",
+     "Kolonka haroratidan",
+     "Qo‘lda chizib"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "TIC bir skanga tegishli barcha mass-spektr cho‘qqilari intensivliklarini qo‘shish orqali hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "Overview of GC/MS (Shimadzu)",
+    "page": "Mass chromatogram, TIC"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "instr-03-gcms-asoslar-q10",
+   "question_i18n": {
+    "uz": "Kitobga ko‘ra qaysi moddaning mass-spektrida 58, 146, 56, 105, 77, 42, 106, 40 m/z ionlar bor?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Efedrin",
+     "Fentanil",
+     "LSD",
+     "Ketamin"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Efedrin mass-spektrida 58, 146, 56, 105, 77, 42, 106, 40 m/z cho‘qqilar hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev Z.O. va boshq.",
+    "title": "Giyohvand moddalar tahlili, 2024",
+    "page": "77"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Shimadzu Corporation",
+   "title": "GC/MS Basics (Shimadzu texnik yordam)"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "Ionization Modes: EI (Shimadzu)"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "FAQ: measurement principles of MS (Shimadzu)"
+  },
+  {
+   "author": "SCION Instruments",
+   "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "Overview of GC/MS (Shimadzu)"
+  },
+  {
+   "author": "Yuldashev Z.O. va boshq.",
+   "title": "Giyohvand moddalar tahlili, 2024"
+  }
+ ]
+}

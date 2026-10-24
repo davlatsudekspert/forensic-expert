@@ -1,0 +1,1844 @@
+{
+ "topic": "GX-MS da ishlash usullari: asoslar",
+ "slides": [
+  {
+   "title": "Reja va tayanch so‘zlar",
+   "bullets": [
+    {
+     "text": "Xromatografik usullar: YuQX, GSX, GelX, YuSSX, GX-MS, YuSSX-MS.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "10"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "GX-MS — gaz-xromato-mass-spektrometriya; YuSSX-MS — yuqori samarali suyuqlik xromatografiya-mass spektrometriya.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "4"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tayanch so‘zlar: EI, m/z, TIC, scan, SIM, ushlanish vaqti, kutubxona qidiruvi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Tayyorlash",
+      "text": "Ob’ektdan ajratib olish (ekstraksiya)"
+     },
+     {
+      "title": "Kalibrlash",
+      "text": "Ichki standart, o‘lchov jadvali"
+     },
+     {
+      "title": "Namuna",
+      "text": "Dozatorga yuborish"
+     },
+     {
+      "title": "O‘lchash",
+      "text": "Scan yoki SIM rejimi"
+     },
+     {
+      "title": "Hisoblash",
+      "text": "Cho‘qqi, kutubxona qidiruvi"
+     },
+     {
+      "title": "Natija",
+      "text": "Ish daftari va jadvalga yozish"
+     }
+    ],
+    "caption": "GX-MS ishlash tartibi (umumlashtirilgan)"
+   },
+   "teacher_notes": "Bosqichlar kitob (toks 191, 269) va Shimadzu/SCION sahifalaridan yig‘ilgan umumiy tartib. Aniq qurilma (Shimadzu GCMS) menyusi uchun foydalanuvchi qo‘llanmasi kerak."
+  },
+  {
+   "title": "GX-MS nima",
+   "bullets": [
+    {
+     "text": "GX-MS — gaz-xromato-mass-spektrometriya.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "4"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MS — GX detektorlaridan biri; boshqalardan farqi: sifat va miqdor tahlilini birga bajaradi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kolonkadan chiqqan modda ionlanadi, ionlar vakuumda massa/zaryad (m/z) bo‘yicha ajratiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "GX (FID, katarometr)",
+      "items": [
+       "Sifat — ushlanish vaqti bo‘yicha",
+       "Cho‘qqi — modda belgisi",
+       "Tuzilma haqida ma’lumot yo‘q"
+      ]
+     },
+     {
+      "title": "GX-MS",
+      "items": [
+       "Ushlanish vaqti + mass-spektr",
+       "Har cho‘qqining spektri bor",
+       "Kutubxona bilan solishtirish"
+      ]
+     }
+    ],
+    "caption": "Detektor taqqosi (toks 189; Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "GX-MS blok-sxemasi",
+   "bullets": [
+    {
+     "text": "GX qismi moddalarni ajratadi: dozator, kolonka, termostat (toks 188).",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "MS qismi ionlaydi, m/z bo‘yicha ajratadi va ion intensivligini o‘lchaydi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yakuniy natija — mass-xromatogramma va har bir cho‘qqining mass-spektri.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Overview of GC/MS (Shimadzu)",
+      "page": "Mass chromatogram, TIC",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/overview/overview_of_gcms.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Dozator",
+     "Kolonka (termostat)",
+     "Ion manbai (EI)",
+     "Massa-analizator",
+     "Detektor",
+     "Xromatogramma, spektr"
+    ],
+    "caption": "GX-MS yo‘li"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "gcms_block_uz.png",
+    "url": "https://igvzlmpgwybjdgkyowrl.supabase.co/storage/v1/object/public/lesson-images/gcms_block_uz.png",
+    "caption": "GX-MS blok-sxemasi (o‘z chizma)",
+    "credit": "Forensic Expert, o‘z chizma",
+    "kind": "scheme"
+   }
+  },
+  {
+   "title": "GX qismi: tashuvchi gaz va kolonka",
+   "bullets": [
+    {
+     "text": "Tashuvchi gaz sifatida inert gazlar: azot, geliy, argon.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kolonka U, spiral yoki halqa shaklida; uzunligi 2–20 m; shisha, mis, latun yoki po‘latdan.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ajralish kolonka zichligi, sorbent tabiati, gaz tezligi va harorat doimiyligiga bog‘liq.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Gaz manbai",
+     "Reduktor",
+     "Dozator",
+     "Kolonka",
+     "Termostat"
+    ],
+    "caption": "GX qismlari (toks 188)"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "gc_shimadzu_aoc30.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Asia_LABEX_2025_%28Bangalore_International_Exhibition_Centre%29_66.jpg/960px-Asia_LABEX_2025_%28Bangalore_International_Exhibition_Centre%29_66.jpg",
+    "caption": "Shimadzu gaz xromatograf avtoinyektor AOC-30 bilan (ko‘rgazma)",
+    "credit": "Gpkp, CC BY-SA 4.0, Wikimedia Commons",
+    "kind": "photo"
+   }
+  },
+  {
+   "title": "Namunani kiritish",
+   "bullets": [
+    {
+     "text": "Dozator tiqinchalarining zichligi sovun eritmasi bilan tekshiriladi: pufakcha chiqmasligi kerak.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mikroshpritsni tekshirish: 0,5 mkl aseton filtr qog‘oziga tomiziladi; tomchi bo‘lmasa qayta kalibrlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "190"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Namuna havo-gaz qismidan shprits bilan olinib, dozator blokiga yuboriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Tiqin tekshiruvi",
+      "text": "Sovun eritmasi, pufakcha yo‘q"
+     },
+     {
+      "title": "Mikroshprits",
+      "text": "0,5 mkl aseton sinovi"
+     },
+     {
+      "title": "Namuna olish",
+      "text": "Shpritsga olinadi"
+     },
+     {
+      "title": "Yuborish",
+      "text": "Dozator blokiga tez yuboriladi"
+     }
+    ],
+    "caption": "Kiritish (toks 190–191; GX asoslari)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Ajralish va taqsimlanish koeffitsiyenti",
+   "bullets": [
+    {
+     "text": "Moddalarning ajralish samaradorligi ularning taqsimlanish koeffitsiyentiga bog‘liq.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "188"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Taqsimlanish koeffitsiyenti K = C(suyuq) / C(gaz); K katta bo‘lsa, modda suyuq fazada uzoqroq qoladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Retention Time and Retention Index (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/retention/retention.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qaynash harorati past moddalar odatda erta chiqadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Retention Time and Retention Index (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/retention/retention.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Kichik K",
+      "items": [
+       "Suyuq fazada kam ushlanadi",
+       "Kolonkadan erta chiqadi",
+       "Odatda past qaynash harorati"
+      ]
+     },
+     {
+      "title": "Katta K",
+      "items": [
+       "Suyuq fazada uzoq qoladi",
+       "Kolonkadan kech chiqadi"
+      ]
+     }
+    ],
+    "caption": "Ushlanish va K (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Ushlanish vaqti turlari",
+   "bullets": [
+    {
+     "text": "Ushlanish vaqti — namuna yuborilgandan modda cho‘qqisigacha bo‘lgan vaqt.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Retention Time and Retention Index (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/retention/retention.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bir xil sharoitda ushlanish vaqti modda sifatini aniqlovchi parametr hisoblanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "189"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dasturlangan haroratda n-alkanlar yordamida chiziqli ushlanish indeksi (LRI) hisoblanadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Retention Time and Retention Index (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/retention/retention.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Tushuncha",
+     "Ma’nosi"
+    ],
+    "rows": [
+     [
+      "Ushlanish vaqti",
+      "yuborishdan cho‘qqigacha"
+     ],
+     [
+      "Tuzatilgan vaqt",
+      "ushlanmagan modda cho‘qqisidan farq"
+     ],
+     [
+      "Nisbiy ushlanish",
+      "taqqoslash cho‘qqisiga nisbat"
+     ],
+     [
+      "LRI",
+      "n-alkanlar orqali indeks"
+     ]
+    ],
+    "caption": "Ushlanish parametrlari (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Ion manbai: EI",
+   "bullets": [
+    {
+     "text": "EI — GX-MS da eng ko‘p ishlatiladigan ionlanish rejimi; deyarli barcha asboblarda standart.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ionization Modes: EI (Shimadzu)",
+      "page": "Features of EI",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Elektron energiyasi odatda 70 eV; ion manbai odatda taxminan 200 °C da ishlaydi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ion Source (Shimadzu)",
+      "page": "Structure of the ion source",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/source.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ion manbaida bosim asosan tashuvchi gaz bilan belgilanadi, taxminan 10⁻² Pa dan past.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ionization Modes: EI (Shimadzu)",
+      "page": "Features of EI",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Elektron energiyasi",
+      "value": "70",
+      "unit": "eV"
+     },
+     {
+      "label": "Manba harorati",
+      "value": "~200",
+      "unit": "°C"
+     },
+     {
+      "label": "Manba bosimi",
+      "value": "< ~10⁻²",
+      "unit": "Pa"
+     }
+    ],
+    "caption": "EI ion manbai (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "EI qanday ishlaydi",
+   "bullets": [
+    {
+     "text": "Qizdirilgan filamentdan chiqqan elektronlar neytral molekulalarni ionlaydi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ion Source (Shimadzu)",
+      "page": "Structure of the ion source",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/source.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Hosil bo‘lgan ionlar repeller elektrodidagi musbat kuchlanish bilan ion manbaidan itarib chiqariladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ion Source (Shimadzu)",
+      "page": "Structure of the ion source",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/source.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Manbadagi magnitlar elektronlarni yo‘naltirib, ionlanish samaradorligini oshiradi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ion Source (Shimadzu)",
+      "page": "Structure of the ion source",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/source.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Filament",
+      "text": "Qizdiriladi, elektron chiqaradi"
+     },
+     {
+      "title": "Urilish",
+      "text": "Elektron molekulaga uriladi"
+     },
+     {
+      "title": "Ion hosil bo‘lishi",
+      "text": "Molekulyar ion yoki fragmentlar"
+     },
+     {
+      "title": "Repeller",
+      "text": "Musbat kuchlanish ionlarni chiqaradi"
+     }
+    ],
+    "caption": "EI bosqichlari (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Nega 70 eV",
+   "bullets": [
+    {
+     "text": "70 eV ishlatilishining asosiy sababi: ko‘p kutubxona spektrlari shu energiyada yozilgan.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ionization Modes: EI (Shimadzu)",
+      "page": "Features of EI",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ion signali 70 eV atrofida eng kuchli; energiya pasaytirilsa, fragmentatsiya kamayadi va signal ancha pasayadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ionization Modes: EI (Shimadzu)",
+      "page": "Features of EI",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Taxminan 10 eV dan past energiyada ion hosil bo‘lmaydi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ionization Modes: EI (Shimadzu)",
+      "page": "Features of EI",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "70 eV",
+      "items": [
+       "Kutubxonalar shu energiyada",
+       "Signal eng kuchli",
+       "Takrorlanuvchi spektr"
+      ]
+     },
+     {
+      "title": "Past energiya",
+      "items": [
+       "Fragmentatsiya kam",
+       "Signal ancha past",
+       "~10 eV dan past ion yo‘q"
+      ]
+     }
+    ],
+    "caption": "Elektron energiyasi (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Molekulyar va fragment ionlar",
+   "bullets": [
+    {
+     "text": "Elektron urib chiqarilsa, molekula parchalanmay molekulyar ion (M⁺) hosil qilishi mumkin — u molekulyar massani beradi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ionization Modes: EI (Shimadzu)",
+      "page": "Features of EI",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "70 eV elektronlar molekulani parchalaydi: ortiqcha energiyadan fragment ionlar hosil bo‘ladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ionization Modes: EI (Shimadzu)",
+      "page": "Features of EI",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bog‘lar odatda zaif joyda uziladi, shu sababli fragmentlar tuzilma haqida ma’lumot beradi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Ionization Modes: EI (Shimadzu)",
+      "page": "Features of EI",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Molekulyar ion M⁺",
+      "items": [
+       "Molekula elektron yo‘qotadi",
+       "Molekulyar massani beradi"
+      ]
+     },
+     {
+      "title": "Fragment ionlar",
+      "items": [
+       "Ortiqcha energiyadan hosil",
+       "Zaif bog‘lar uziladi",
+       "Tuzilma haqida ma’lumot"
+      ]
+     },
+     {
+      "title": "Misol",
+      "items": [
+       "CH4 → CH4⁺, CH3⁺",
+       "Uzun zanjirli uglevodorod: M⁺ kam"
+      ]
+     }
+    ],
+    "caption": "EI spektri (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Massa-analizator turlari",
+   "bullets": [
+    {
+     "text": "Magnit sektorda ionlar halqa bo‘ylab uchadi; orbita radiusi massaga bog‘liq.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "FAQ: measurement principles of MS (Shimadzu)",
+      "page": "Mass analyzers",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/faq/principles/index.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kvadrupolda to‘rt sterjenga RF va DC kuchlanish beriladi; ionlar massaga qarab turlicha tebranadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "FAQ: measurement principles of MS (Shimadzu)",
+      "page": "Mass analyzers",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/faq/principles/index.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uchish vaqti (TOF) analizatorida belgilangan masofani uchish vaqti massaga bog‘liq.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "FAQ: measurement principles of MS (Shimadzu)",
+      "page": "Mass analyzers",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/faq/principles/index.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Magnit sektor",
+      "items": [
+       "Ionlar halqa orbitada",
+       "Radius massaga bog‘liq"
+      ]
+     },
+     {
+      "title": "Kvadrupol",
+      "items": [
+       "4 sterjen, RF + DC",
+       "Tebranish orbitasi massaga bog‘liq"
+      ]
+     },
+     {
+      "title": "TOF",
+      "items": [
+       "Uchish vaqti o‘lchanadi",
+       "Yengil ion oldin yetadi"
+      ]
+     }
+    ],
+    "caption": "Massa-analizatorlar (Shimadzu FAQ)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Kvadrupolning o‘rni",
+   "bullets": [
+    {
+     "text": "Magnit sektorli asbob bajara oladigan, kvadrupol bajara olmaydigan yagona ish — millimass (aniq massa) tahlili.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "FAQ: QPMS advantages (Shimadzu)",
+      "page": "Quadrupole vs magnetic",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/faq/advantages/index.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Boshqa barcha ishlarni kvadrupolli GX-MS bajara oladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "FAQ: QPMS advantages (Shimadzu)",
+      "page": "Quadrupole vs magnetic",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/faq/advantages/index.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kvadrupolli asbobni chuqur MS bilimisiz ham ishlatish oson — eng katta afzalligi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "FAQ: QPMS advantages (Shimadzu)",
+      "page": "Quadrupole vs magnetic",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/faq/advantages/index.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Magnit sektor",
+      "items": [
+       "Millimass, yuqori aniqlik",
+       "Dioksin tahlili kabi"
+      ]
+     },
+     {
+      "title": "Kvadrupol (QPMS)",
+      "items": [
+       "Boshqa ishlarning hammasi",
+       "Ishlatish oson",
+       "Keng tarqalmoqda"
+      ]
+     }
+    ],
+    "caption": "Kvadrupol afzalligi (Shimadzu FAQ)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Scan va SIM rejimlari",
+   "bullets": [
+    {
+     "text": "Full scan tanlangan massa oralig‘idagi barcha ionlarni yozadi va TIC beradi; noma’lum modda uchun qulay.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "page": "1–2",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "SIM faqat belgilangan ionlarni belgilangan ushlanish vaqtida o‘lchaydi: sezgirligi yuqori, shovqin past.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "page": "1–2",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "SIM ma’lum moddalarni miqdoriy tahlil qilishga mos.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "page": "1–2",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Scan",
+      "items": [
+       "Hamma ionlar, massa oralig‘i",
+       "TIC va to‘liq spektr",
+       "Noma’lumni aniqlash, sifat"
+      ]
+     },
+     {
+      "title": "SIM",
+      "items": [
+       "Faqat tanlangan ionlar",
+       "Sezgirlik yuqori, shovqin past",
+       "Ma’lum modda, miqdor"
+      ]
+     }
+    ],
+    "caption": "Scan va SIM (SCION texnik eslatmasi)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "SIM: ionlarni tanlash",
+   "bullets": [
+    {
+     "text": "SIM da kvantifikator va kvalifikator ionlar tanlanadi — yolg‘on musbat natijani kamaytiradi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "page": "1–2",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kvantifikator odatda spektrdagi eng ko‘p ion; kvalifikator — 2- va 3- eng ko‘p ionlar.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "page": "1–2",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sikl va dwell vaqti ma’lumot nuqtalari yetarli bo‘lishi uchun optimallanadi.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "page": "1–2",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Spektrni olish",
+      "text": "Ma’lum modda spektri va ushlanish vaqti"
+     },
+     {
+      "title": "Kvantifikator",
+      "text": "Eng ko‘p ion"
+     },
+     {
+      "title": "Kvalifikatorlar",
+      "text": "2- va 3- eng ko‘p ionlar"
+     },
+     {
+      "title": "Vaqt oynasi",
+      "text": "Moddaning ushlanish vaqti atrofida"
+     },
+     {
+      "title": "Dwell va sikl",
+      "text": "Nuqtalar yetarli bo‘lsin"
+     }
+    ],
+    "caption": "SIM sozlash (SCION texnik eslatmasi)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Natija turlari: TIC, spektr",
+   "bullets": [
+    {
+     "text": "GX-MS ning yakuniy natijasi — mass-xromatogramma.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Overview of GC/MS (Shimadzu)",
+      "page": "Mass chromatogram, TIC",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/overview/overview_of_gcms.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "TIC — bir skandagi barcha mass-spektr cho‘qqilari intensivliklarini qo‘shish orqali hosil bo‘ladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Overview of GC/MS (Shimadzu)",
+      "page": "Mass chromatogram, TIC",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/overview/overview_of_gcms.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mass-spektr nisbiy ion intensivligini m/z ga bog‘lab ko‘rsatadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Overview of GC/MS (Shimadzu)",
+      "page": "Mass chromatogram, TIC",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/overview/overview_of_gcms.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Natija",
+     "Nimani ko‘rsatadi"
+    ],
+    "rows": [
+     [
+      "Mass-xromatogramma",
+      "vaqt bo‘yicha ion intensivligi"
+     ],
+     [
+      "TIC",
+      "skandagi barcha ionlar yig‘indisi"
+     ],
+     [
+      "Mass-spektr",
+      "nisbiy intensivlik va m/z"
+     ],
+     [
+      "Ushlanish vaqti",
+      "modda qachon chiqdi"
+     ]
+    ],
+    "caption": "Natija turlari (Shimadzu)"
+   },
+   "teacher_notes": "",
+   "image": {
+    "file": "gcms_screen.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/CSIRO_ScienceImage_2603_Gas_chromatograph_mass_spectrometer_screen.jpg/960px-CSIRO_ScienceImage_2603_Gas_chromatograph_mass_spectrometer_screen.jpg",
+    "caption": "GX-MS xromatogrammasi ekranda (arxiv misoli, 1987)",
+    "credit": "Tracey Nicholls, CSIRO, CC BY 3.0, Wikimedia Commons",
+    "kind": "photo"
+   }
+  },
+  {
+   "title": "Kutubxona bilan qidiruv",
+   "bullets": [
+    {
+     "text": "Noma’lum spektr kutubxonadagi etalon spektrlar bilan solishtiriladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Library Search (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/library/library.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qidiruv foydalanuvchi belgilagan mezondan yuqori o‘xshash moddalar ro‘yxatini beradi; qarorni mutaxassis qabul qiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Library Search (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/library/library.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ushlanish indeksini birga ishlatish identifikatsiyani oson va ishonchli qiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Library Search (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/library/library.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Noma’lum cho‘qqi spektri",
+     "Etalon spektrlar bilan solishtirish",
+     "Mezondan yuqori moslar",
+     "Mutaxassis qarori",
+     "Ushlanish indeksi bilan tasdiq"
+    ],
+    "caption": "Kutubxona qidiruvi (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Identifikatsiya mezonlari",
+   "bullets": [
+    {
+     "text": "Izomerlar o‘xshash spektrga, ammo turlicha ushlanish vaqtiga ega bo‘lishi mumkin.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Library Search (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/library/library.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kutubxona ma’lumotlari odatda 70 eV EI da olingan.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Library Search (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/library/library.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Standart bilan bir xil sharoitda ushlanish vaqtlarini solishtirish mumkin.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Retention Time and Retention Index (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/retention/retention.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Mezon",
+     "Izoh"
+    ],
+    "rows": [
+     [
+      "Ushlanish vaqti",
+      "standart bilan bir xil sharoitda"
+     ],
+     [
+      "Mass-spektr",
+      "etalon spektrga o‘xshashlik"
+     ],
+     [
+      "Ushlanish indeksi",
+      "kutubxona qidiruvini kuchaytiradi"
+     ],
+     [
+      "Mutaxassis",
+      "yakuniy qarorni qabul qiladi"
+     ]
+    ],
+    "caption": "Identifikatsiya (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Misol: asosiy m/z ionlar (1)",
+   "bullets": [
+    {
+     "text": "Fentanil mass-spektrida 245, 146, 42, 189, 44, 105, 29, 43 m/z cho‘qqilar hosil bo‘ladi.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedrin: 58, 146, 56, 105, 77, 42, 106, 40 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fensiklidin: 243, 214, 200, 186, 166, 158, 84, 77 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "92"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Modda",
+     "Asosiy m/z ionlar",
+     "Bet"
+    ],
+    "rows": [
+     [
+      "Fentanil",
+      "245, 146, 42, 189, 44, 105, 29, 43",
+      "48"
+     ],
+     [
+      "Efedrin",
+      "58, 146, 56, 105, 77, 42, 106, 40",
+      "77"
+     ],
+     [
+      "Fensiklidin",
+      "243, 214, 200, 186, 166, 158, 84, 77",
+      "92"
+     ],
+     [
+      "Ketamin",
+      "180, 209, 182, 152, 181, 30, 211, 138",
+      "93"
+     ],
+     [
+      "LSD",
+      "44, 72, 207, 221, 280, 323",
+      "97"
+     ],
+     [
+      "Psilotsin",
+      "58, 204, 59, 42, 30, 146, 77, 44",
+      "100"
+     ]
+    ],
+    "caption": "Kitobdagi m/z ro‘yxatlari (gmt)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Misol: efedrin va efedron",
+   "bullets": [
+    {
+     "text": "Efedrin mass-spektri: 58, 146, 56, 105, 77, 42, 106, 40 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "77"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Efedron mass-spektri: 58, 77, 51, 56, 42, 105, 50, 43 m/z.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "78"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ikkalasida 58 m/z asosiy; qolgan ionlar tartibi va to‘plami farqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "78"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Efedrin",
+      "items": [
+       "58, 146, 56, 105",
+       "77, 42, 106, 40"
+      ]
+     },
+     {
+      "title": "Efedron",
+      "items": [
+       "58, 77, 51, 56",
+       "42, 105, 50, 43"
+      ]
+     }
+    ],
+    "caption": "m/z ro‘yxati (gmt 77–78)"
+   },
+   "teacher_notes": "Kitob ionlarni intensivlik tartibida ro‘yxatlaydi; «farqlanadi» xulosasi o‘qituvchining sharhi, uncertain."
+  },
+  {
+   "title": "GX-MS qo‘llanadigan ob’ektlar",
+   "bullets": [
+    {
+     "text": "Morfin miqdori GX-MS yoki YuSSX-MS bilan aniqlanadi; kitobda sezgirlik «10-11» deb yozilgan.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "26"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Kodein va narkotin ham GX-MS yoki YuSSX-MS usullarida aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "29"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Geksaxloran izomerlari va sintetik piretroidlar GSX, YuSSX yoki GX-MS bilan aniqlanadi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "159"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "GX-MS qo‘llanishi (kitob)",
+    "children": [
+     {
+      "label": "Opiatlar",
+      "items": [
+       "morfin",
+       "kodein",
+       "narkotin"
+      ]
+     },
+     {
+      "label": "Geroin"
+     },
+     {
+      "label": "Psixotrop",
+      "items": [
+       "fensiklidin",
+       "ketamin",
+       "LSD"
+      ]
+     },
+     {
+      "label": "Pestitsidlar",
+      "items": [
+       "geksaxloran",
+       "sintetik piretroidlar"
+      ]
+     }
+    ],
+    "caption": "Kitobdagi misollar (gmt 26–37; toks 159)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Ajratib olish misoli: peshob",
+   "bullets": [
+    {
+     "text": "25 ml peshobga 3 g NaCl qo‘shilib, pH 0,1 M NaOH bilan 8–9 ga keltiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "269"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Organik erituvchi bilan uch marta (30, 20, 20 ml) ekstraksiya qilinadi; ekstrakt Na2SO4 li filtrdan o‘tkaziladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "269"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Erituvchi rotor-vakuum asbobida 0,5 ml qolguncha haydaladi; quruq qoldiq YuQX, YuSSX yoki UB bilan tekshiriladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "269"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Peshob + NaCl",
+      "text": "25 ml peshob, 3 g NaCl"
+     },
+     {
+      "title": "pH 8–9",
+      "text": "0,1 M NaOH bilan"
+     },
+     {
+      "title": "Ekstraksiya",
+      "text": "Erituvchi 3 marta: 30, 20, 20 ml"
+     },
+     {
+      "title": "Quritish",
+      "text": "Na2SO4 li filtr"
+     },
+     {
+      "title": "Haydash",
+      "text": "Rotor-vakuum, ~0,5 ml gacha"
+     },
+     {
+      "title": "Qoldiq",
+      "text": "Quruq qoldiq tekshiriladi"
+     }
+    ],
+    "caption": "Piretroidlar uchun misol (toks 269)"
+   },
+   "teacher_notes": "Kitob bu usulni sintetik piretroidlar bo‘limida beradi; boshqa moddalar uchun sharoit farq qiladi."
+  },
+  {
+   "title": "GX harorat dasturi: piretroidlar",
+   "bullets": [
+    {
+     "text": "Kolonka: 5 % SE-30 shimdirilgan xromaton N-AW-DMCS, shisha, 130 × 0,2 sm; tashuvchi gaz azot 30 ml/daq.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "269"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Termostat 180 °C dan 220 °C gacha 1 °C/daq tezlikda dasturlanadi, so‘ng 245 °C gacha 3 °C/daq.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "270"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Detektor harorati 260 °C, injektor harorati 250 °C.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "270"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Boshlang‘ich T",
+      "value": "180",
+      "unit": "°C"
+     },
+     {
+      "label": "1-bosqich",
+      "value": "180→220",
+      "unit": "1 °C/daq"
+     },
+     {
+      "label": "2-bosqich",
+      "value": "220→245",
+      "unit": "3 °C/daq"
+     },
+     {
+      "label": "Detektor",
+      "value": "260",
+      "unit": "°C"
+     },
+     {
+      "label": "Injektor",
+      "value": "250",
+      "unit": "°C"
+     },
+     {
+      "label": "Azot",
+      "value": "30",
+      "unit": "ml/daq"
+     }
+    ],
+    "caption": "Dasturlangan harorat (toks 269–270)"
+   },
+   "teacher_notes": "Kitobda «10C/daq» va «30C/daq» yozilgan: daraja belgisi «0» bo‘lib qolgan (kitob_ziddiyatlari): 1 va 3 °C/daq. 3 °C/daq — o‘xshashlik asosida, uncertain.",
+   "diagram_note": "3 °C/daq ustoz tasdig‘i bilan"
+  },
+  {
+   "title": "Sifat va miqdor",
+   "bullets": [
+    {
+     "text": "FID ham, MS ham cho‘qqi intensivligi yoki yuzasi bo‘yicha miqdorni aniqlay oladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Overview of GC/MS (Shimadzu)",
+      "page": "Mass chromatogram, TIC",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/overview/overview_of_gcms.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kitobda: tanlab olingan ichki standartlar bilan aniq o‘lchov jadvali tuziladi.",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Cho‘qqi balandligi spirt ko‘p-ozligiga bog‘liq (GX misolida).",
+     "source": {
+      "author": "Yuldashev Z.O., Umarova G.Q.",
+      "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+      "page": "191"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "header": [
+     "Maqsad",
+     "Qanday"
+    ],
+    "rows": [
+     [
+      "Sifat",
+      "ushlanish vaqti + spektr"
+     ],
+     [
+      "Miqdor",
+      "cho‘qqi yuzasi yoki balandligi"
+     ],
+     [
+      "Kalibrlash",
+      "ichki standart, o‘lchov jadvali"
+     ],
+     [
+      "Tasdiq",
+      "kutubxona va indeks"
+     ]
+    ],
+    "caption": "Sifat va miqdor (Shimadzu; toks 191)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "GX-MS cheklovlari",
+   "bullets": [
+    {
+     "text": "Moddalar uchuvchan va termik barqaror bo‘lishi talab qilinadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Overview of GC/MS (Shimadzu)",
+      "page": "Mass chromatogram, TIC",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/overview/overview_of_gcms.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘xshash izomerlar (masalan, naftalin va azulen) yaxshi ajralmasligi mumkin; 2D-GX yoki maxsus kolonka kerak.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Overview of GC/MS (Shimadzu)",
+      "page": "Mass chromatogram, TIC",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/overview/overview_of_gcms.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Spektrlar asbob, parametr va namuna holatiga ko‘ra biroz farq qiladi; xulosani mutaxassis chiqaradi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Library Search (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/library/library.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Cheklovlar",
+      "items": [
+       "Uchuvchanlik, termik barqarorlik",
+       "Izomerlarni ajratish qiyin"
+      ]
+     },
+     {
+      "title": "Yechimlar",
+      "items": [
+       "2D-GX yoki maxsus kolonka",
+       "Ushlanish indeksi + spektr"
+      ]
+     }
+    ],
+    "caption": "Cheklov va yechim (Shimadzu)"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Qurilma sozlamalari haqida",
+   "bullets": [
+    {
+     "text": "Shimadzu GX-MS menyu va sozlamalari (tuning, harorat, ionlar) bu deckda berilmadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Ochiq texnik sahifalar umumiy printsiplarni beradi; aniq model qo‘llanmasi alohida yuklab olinadi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Ilovaga o‘z asbobingiz fotosuratlari va ekran suratlari keyin qo‘shiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Egasidan: qaysi GX-MS modeli (Shimadzu GCMS-QP?) va ish kompyuteri ekran suratlari kerak."
+  },
+  {
+   "title": "Xulosa",
+   "bullets": [
+    {
+     "text": "GX-MS: GX ajratadi, MS ionlaydi (EI, 70 eV), m/z bo‘yicha ajratadi va ion intensivligini o‘lchaydi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Scan — noma’lumni aniqlash uchun, SIM — ma’lum moddani sezgir miqdoriy tahlil uchun.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "page": "1–2",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Identifikatsiya: ushlanish vaqti + mass-spektr + kutubxona; qarorni mutaxassis qabul qiladi.",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "Library Search (Shimadzu)",
+      "page": "Qualitative methods",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/library/library.html"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Tayyorlash",
+      "text": "Ekstraksiya"
+     },
+     {
+      "title": "Kalibrlash",
+      "text": "Ichki standart"
+     },
+     {
+      "title": "Namuna",
+      "text": "Dozator"
+     },
+     {
+      "title": "O‘lchash",
+      "text": "Scan / SIM"
+     },
+     {
+      "title": "Hisoblash",
+      "text": "Kutubxona, yuza"
+     },
+     {
+      "title": "Natija",
+      "text": "Jadvalga yozish"
+     }
+    ],
+    "caption": "Takrorlash"
+   },
+   "teacher_notes": ""
+  },
+  {
+   "title": "Adabiyotlar",
+   "bullets": [
+    {
+     "text": "Yuldashev Z.O. va boshq. Giyohvand moddalar tahlili, 2024; Yuldashev Z.O., Umarova G.Q. Toksikologik kimyo, 2025.",
+     "source": {
+      "author": "Yuldashev Z.O. va boshq.",
+      "title": "Giyohvand moddalar tahlili, 2024",
+      "page": "4, 26–100"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shimadzu Corporation. GC/MS Basics; Features of EI; Ion Source; Library Search; Retention Time (ochiq texnik sahifalar).",
+     "source": {
+      "author": "Shimadzu Corporation",
+      "title": "GC/MS Basics (Shimadzu texnik yordam)",
+      "page": "How does GC/MS work?",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "SCION Instruments. Technical Note: Full Scan and SIM in a Single MSWS Method, 2026.",
+     "source": {
+      "author": "SCION Instruments",
+      "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+      "page": "1–2",
+      "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": ""
+  }
+ ],
+ "mcq": [
+  {
+   "question": "GX-MS da MS qismi nima qiladi?",
+   "options": [
+    "Moddalarni kolonkada ajratadi",
+    "Ionlarni massa/zaryad (m/z) bo‘yicha ajratib o‘lchaydi",
+    "Namunani haydaydi",
+    "Gaz bosimini o‘lchaydi"
+   ],
+   "correct_index": 1,
+   "explanation": "MS ionlangan moddalarni vakuumda m/z bo‘yicha ajratadi va har bir ion intensivligini o‘lchaydi.",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "GC/MS Basics (Shimadzu texnik yordam)",
+    "page": "How does GC/MS work?",
+    "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+   }
+  },
+  {
+   "question": "EI da odatiy elektron energiyasi qancha?",
+   "options": [
+    "7 eV",
+    "70 eV",
+    "700 eV",
+    "7000 eV"
+   ],
+   "correct_index": 1,
+   "explanation": "GX-MS da odatiy elektron energiyasi 70 eV; kutubxonalar shu energiyada yozilgan.",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "Ionization Modes: EI (Shimadzu)",
+    "page": "Features of EI",
+    "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+   }
+  },
+  {
+   "question": "Nega ko‘p GX-MS da aynan 70 eV ishlatiladi?",
+   "options": [
+    "Kutubxona spektrlari shu energiyada yozilgan",
+    "Filament shu energiyada yonmaydi",
+    "Vakuum shu energiyada hosil bo‘ladi",
+    "Gaz shu energiyada oqadi"
+   ],
+   "correct_index": 0,
+   "explanation": "Asosiy sabab — ko‘p kutubxonalardagi mass-spektrlar 70 eV EI da olingan.",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "Ionization Modes: EI (Shimadzu)",
+    "page": "Features of EI",
+    "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+   }
+  },
+  {
+   "question": "Molekulyar ion (M⁺) nimani beradi?",
+   "options": [
+    "Molekulyar massani",
+    "Kolonka uzunligini",
+    "Gaz tezligini",
+    "Detektor haroratini"
+   ],
+   "correct_index": 0,
+   "explanation": "Molekula parchalanmay bitta elektron yo‘qotsa, hosil bo‘lgan M⁺ molekulyar massani aniqlashga yordam beradi.",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "Ionization Modes: EI (Shimadzu)",
+    "page": "Features of EI",
+    "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/essental_knowledge/three_modes.html"
+   }
+  },
+  {
+   "question": "Kvadrupol analizatorda ionlar qanday ajratiladi?",
+   "options": [
+    "Uchish vaqti bo‘yicha",
+    "To‘rt sterjenga RF va DC kuchlanish: tebranish orbitasi massaga bog‘liq",
+    "Magnit maydonda halqa radiusi bo‘yicha",
+    "Filtr qog‘ozida"
+   ],
+   "correct_index": 1,
+   "explanation": "Kvadrupolda 4 sterjenga RF va DC kuchlanish beriladi; ionlar massaga qarab turlicha tebranadi.",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "FAQ: measurement principles of MS (Shimadzu)",
+    "page": "Mass analyzers",
+    "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/faq/principles/index.html"
+   }
+  },
+  {
+   "question": "Qaysi rejim noma’lum moddani aniqlash uchun qulay?",
+   "options": [
+    "SIM",
+    "Full scan",
+    "Faqat SIM kvalifikatorlari",
+    "Hech biri"
+   ],
+   "correct_index": 1,
+   "explanation": "Full scan barcha ionlarni yozib TIC va to‘liq spektr beradi; noma’lum modda uchun qulay.",
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "1–2",
+    "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+   }
+  },
+  {
+   "question": "SIM rejimining asosiy afzalligi nima?",
+   "options": [
+    "Barcha ionlarni yozadi",
+    "Sezgirlik yuqori, shovqin past",
+    "Kutubxona qidiruvini bekor qiladi",
+    "Kolonka kerak emas"
+   ],
+   "correct_index": 1,
+   "explanation": "SIM faqat tanlangan ionlarni o‘lchaydi: sezgirlik yuqori, shovqin past; miqdoriy tahlilga mos.",
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "1–2",
+    "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+   }
+  },
+  {
+   "question": "SIM da kvantifikator ion odatda qanday tanlanadi?",
+   "options": [
+    "Eng kichik m/z",
+    "Spektrdagi eng ko‘p (eng intensiv) ion",
+    "Tasodifiy ion",
+    "Eng og‘ir ion"
+   ],
+   "correct_index": 1,
+   "explanation": "Kvantifikator odatda eng ko‘p ion; kvalifikator sifatida 2- va 3- eng ko‘p ionlar tanlanadi.",
+   "source": {
+    "author": "SCION Instruments",
+    "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+    "page": "1–2",
+    "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+   }
+  },
+  {
+   "question": "TIC qanday hosil bo‘ladi?",
+   "options": [
+    "Faqat bitta ion intensivligidan",
+    "Bir skandagi barcha mass-spektr cho‘qqilari intensivliklarini qo‘shib",
+    "Kolonka haroratidan",
+    "Qo‘lda chizib"
+   ],
+   "correct_index": 1,
+   "explanation": "TIC bir skanga tegishli barcha mass-spektr cho‘qqilari intensivliklarini qo‘shish orqali hosil bo‘ladi.",
+   "source": {
+    "author": "Shimadzu Corporation",
+    "title": "Overview of GC/MS (Shimadzu)",
+    "page": "Mass chromatogram, TIC",
+    "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/overview/overview_of_gcms.html"
+   }
+  },
+  {
+   "question": "Kitobga ko‘ra qaysi moddaning mass-spektrida 58, 146, 56, 105, 77, 42, 106, 40 m/z ionlar bor?",
+   "options": [
+    "Efedrin",
+    "Fentanil",
+    "LSD",
+    "Ketamin"
+   ],
+   "correct_index": 0,
+   "explanation": "Efedrin mass-spektrida 58, 146, 56, 105, 77, 42, 106, 40 m/z cho‘qqilar hosil bo‘ladi.",
+   "source": {
+    "author": "Yuldashev Z.O. va boshq.",
+    "title": "Giyohvand moddalar tahlili, 2024",
+    "page": "77"
+   }
+  }
+ ],
+ "extras": [],
+ "sources": [
+  {
+   "author": "Yuldashev Z.O., Umarova G.Q.",
+   "title": "Toksikologik kimyo (o‘quv-uslubiy majmua), 2025",
+   "page": "188–191, 269–270"
+  },
+  {
+   "author": "Yuldashev Z.O. va boshq.",
+   "title": "Giyohvand moddalar tahlili, 2024",
+   "page": "4, 26–100"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "GC/MS Basics (Shimadzu texnik yordam)",
+   "page": "How does GC/MS work?",
+   "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry.html"
+  },
+  {
+   "author": "SCION Instruments",
+   "title": "Technical Note: Full Scan and SIM in a Single MSWS Method, April 2026",
+   "page": "1–2",
+   "url": "https://scioninstruments.com/wp-content/uploads/2026/06/Full-scan-and-SIM-in-a-single-method-MSWS-v1-2-1-1.pdf"
+  }
+ ],
+ "meta": {
+  "id": "instr-03-gcms-asoslar",
+  "title_uz": "GX-MS da ishlash usullari: asoslar",
+  "kind": "apparat",
+  "lang": "uz",
+  "source_lang": "uz"
+ },
+ "course": "Apparatlar bilan ishlash",
+ "lang": "uz"
+}
