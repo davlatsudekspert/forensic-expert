@@ -71,6 +71,17 @@ Future<void> exportClassResultsCsv(
   );
 }
 
+/// Manba satri: «Manba: muallif, sarlavha, 263-bet» (bet yo‘q — betsiz;
+/// «I bob, 1.4» kabi joy — «-bet» qo‘shilmaydi).
+String classSourceCitation(AppLocalizations l, ClassSource src) {
+  final page = src.cleanPage;
+  return page == null
+      ? l.classSourceLineNoPage(src.author, src.title)
+      : src.pageIsNumeric
+      ? l.classSourceLine(src.author, src.title, page)
+      : l.classSourceLineLocator(src.author, src.title, page);
+}
+
 /// Variant belgisi: A, B, C, D (tartib raqami bo‘yicha).
 String classOptionLetter(int i) => String.fromCharCode(0x41 + i);
 

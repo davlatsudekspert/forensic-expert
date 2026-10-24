@@ -140,6 +140,7 @@ void main() {
       await _frames(tester);
       await tester.tap(find.byKey(const Key('class.seconds')).first);
       await tester.ensureVisible(find.byKey(const Key('class.createSubmit')));
+      await tester.pump();
       await tester.tap(find.byKey(const Key('class.createSubmit')));
       await _frames(tester);
 

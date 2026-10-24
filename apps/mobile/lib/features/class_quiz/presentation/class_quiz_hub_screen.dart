@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../../app/class_quiz.dart';
+import '../../../app/professional.dart' show localProfileProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -291,6 +292,9 @@ class _ClassJoinState extends ConsumerState<ClassJoinScreen> {
         ClassCode.normalize(widget.initialCode) ??
         ref.read(pendingClassCodeProvider);
     _code = TextEditingController(text: initial ?? '');
+    // Akkauntga kirgan talaba: profil ismi taxallus maydoniga avtomatik
+    // (o‘zgartirsa bo‘ladi, filtr saqlanadi). Kirmagan — bo‘sh.
+    _nick.text = _profileNick();
     if (initial != null) {
       // Kirish ekraniga o‘tilsa kod yo‘qolmasin.
       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -299,6 +303,14 @@ class _ClassJoinState extends ConsumerState<ClassJoinScreen> {
         }
       });
     }
+  }
+
+  String _profileNick() {
+    if (!ref.read(authStateProvider).signedIn) return '';
+    final p = ref.read(localProfileProvider);
+    return ClassNickname.fromProfileName(
+      p.student?.fullName ?? p.professional?.fullName,
+    );
   }
 
   @override

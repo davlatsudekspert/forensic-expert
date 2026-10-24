@@ -182,6 +182,18 @@ class SupabaseClassQuizService implements ClassQuizService {
       );
 
   @override
+  Future<ClassResult<List<ClassHardDetail>>> hardestDetail(
+    String sessionId, {
+    int limit = 5,
+  }) async => _map(
+    await _rpc('class_hardest_detail', {..._sid(sessionId), 'p_limit': limit}),
+    (m) => [
+      for (final h in (m['items'] as List? ?? const []))
+        if (h is Map) ClassHardDetail.fromJson(h.cast<String, Object?>()),
+    ],
+  );
+
+  @override
   Future<ClassResult<ClassJoinInfo>> join({
     required String code,
     required String nickname,

@@ -104,6 +104,42 @@ GROUPS = [
             "en": "Forensic medicine · 2026 curriculum (common topics)",
         },
     ),
+    (
+        r"^toks-",
+        "toksikologik-kimyo",
+        {
+            "uz": "Toksikologik kimyo",
+            "ru": "Токсикологическая химия",
+            "en": "Toxicological chemistry",
+        },
+    ),
+    (
+        r"^ktp26-davolash-",
+        "ktp-2026-davolash",
+        {
+            "uz": "Davolash ishi fakulteti · KTP 2026",
+            "ru": "Лечебный факультет · КТП 2026",
+            "en": "General Medicine faculty · 2026 curriculum",
+        },
+    ),
+    (
+        r"^ktp26-pediatriya-",
+        "ktp-2026-pediatriya",
+        {
+            "uz": "Pediatriya fakulteti · KTP 2026",
+            "ru": "Педиатрический факультет · КТП 2026",
+            "en": "Paediatrics faculty · 2026 curriculum",
+        },
+    ),
+    (
+        r"^ktp26-stomatologiya-",
+        "ktp-2026-stomatologiya",
+        {
+            "uz": "Stomatologiya fakulteti · KTP 2026",
+            "ru": "Стоматологический факультет · КТП 2026",
+            "en": "Dentistry faculty · 2026 curriculum",
+        },
+    ),
 ]
 OTHER = (
     "boshqa",
@@ -120,9 +156,18 @@ def group_of(topic_id: str):
     return OTHER[0], len(GROUPS), OTHER[1]
 
 
+# KTP ichida: ma‘ruza (M), amaliy (A), mustaqil (MT), qo‘shimcha (MR) — shu tartibda.
+KTP_PART = {"M": 0, "A": 100, "MT": 200, "MR": 300}
+
+
 def topic_number(topic_id: str) -> int:
-    m = re.search(r"(\d+)$", topic_id)
-    return int(m.group(1)) if m else 0
+    m = re.search(r"-([A-Za-z]*)(\d+)$", topic_id)
+    if not m:
+        return 0
+    n = int(m.group(2))
+    if topic_id.startswith("ktp26-") and not topic_id.startswith("ktp26-u-"):
+        return n + KTP_PART.get(m.group(1), 0)
+    return n
 
 
 def read_inputs(src: str | None, git_ref: str | None) -> list[tuple[str, dict]]:
@@ -169,14 +214,19 @@ def convert(inputs, checked_ids=frozenset()):
     skipped = 0
     for name, d in inputs:
         tid = clean(d.get("topic_id"))
-        if not re.match(r"^[a-z0-9][a-z0-9-]{1,70}$", tid):
+        if not re.match(r"^[A-Za-z0-9][A-Za-z0-9-]{1,70}$", tid):
             problems.append(f"{name}: noto‘g‘ri topic_id {tid!r}")
             continue
         titles = {l: clean((d.get("title_i18n") or {}).get(l)) for l in LANGS}
         if not titles["uz"]:
             problems.append(f"{name}: uz sarlavha yo‘q")
             continue
-        tstatus = d.get("translation_status") or {}
+        tstatus = dict(d.get("translation_status") or {})
+        # Faqat o‘zbekcha mavzu (DECK_SPEC_V2): ru/en yo‘q → uz matn + «pending».
+        for l in LANGS[1:]:
+            if not titles[l]:
+                titles[l] = titles["uz"]
+                tstatus[l] = "pending"
         qs = []
         for q in d.get("questions") or []:
             qid = clean(q.get("id"))
@@ -184,6 +234,16 @@ def convert(inputs, checked_ids=frozenset()):
             qi = {l: clean((q.get("question_i18n") or {}).get(l)) for l in LANGS}
             ex = {l: clean((q.get("explanation_i18n") or {}).get(l)) for l in LANGS}
             opts = {l: [clean(o) for o in ((q.get("options_i18n") or {}).get(l) or [])] for l in LANGS}
+            qstatus = dict(q.get("translation_status") or tstatus)
+            # Tarjimasi yo‘q til (savol yoki variantlar yo‘q): uz matn + «pending»;
+            # tarjima to‘qilmaydi, ilova «tarjima kutilmoqda» ko‘rsatadi.
+            for l in LANGS[1:]:
+                if not qi[l] or len(opts[l]) != 4:
+                    qi[l], opts[l], ex[l] = qi["uz"], list(opts["uz"]), ex["uz"]
+                    qstatus[l] = "pending"
+                elif not ex[l]:
+                    ex[l] = ex["uz"]
+                    qstatus[l] = "pending"
             ci = q.get("correct_index")
             src = q.get("source") or {}
             page = clean(src.get("page"))
@@ -213,7 +273,6 @@ def convert(inputs, checked_ids=frozenset()):
             }
             if qid in checked_ids:
                 source["checked"] = {"method": "source_compare", "date": CHECK_DATE}
-            qstatus = q.get("translation_status") or tstatus
             qs.append(
                 {
                     "id": qid,

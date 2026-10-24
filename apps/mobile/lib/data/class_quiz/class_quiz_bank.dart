@@ -50,6 +50,10 @@ class ClassQuizBankTopicMeta {
 
   bool isMachineTranslation(String lang) =>
       translationStatus[lang] == 'auto_unreviewed';
+
+  /// Faqat o‘zbekcha yozuv: boshqa tilda asl matn + «tarjima kutilmoqda».
+  bool isTranslationPending(String lang) =>
+      lang != 'uz' && translationStatus[lang] == 'pending';
 }
 
 class ClassQuizBank {
@@ -157,8 +161,10 @@ class ClassQuizBank {
               'title': src['title'],
               'page': src['page'],
               if (src['checked'] is Map) 'checked': src['checked'],
-              if ((qs[l] ?? status[l]) == 'auto_unreviewed')
-                'translation': 'auto_unreviewed',
+              if ((qs[l] ?? status[l]) case final st?
+                  when st == 'auto_unreviewed' ||
+                      (st == 'pending' && l != 'uz'))
+                'translation': st,
             },
           });
           if (parsed == null) continue;

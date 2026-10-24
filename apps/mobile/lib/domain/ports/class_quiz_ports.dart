@@ -41,6 +41,13 @@ abstract interface class ClassQuizService {
 
   Future<ClassResult<ClassExport>> exportResults(String sessionId);
 
+  /// «Qiyin savollar» muhokamasi: variantlar, to‘g‘ri javob, izoh, manba.
+  /// Faqat ustoz, faqat sessiya tugagach (aks holda `notFinished`/`forbidden`).
+  Future<ClassResult<List<ClassHardDetail>>> hardestDetail(
+    String sessionId, {
+    int limit = 5,
+  });
+
   // ---- talaba
   Future<ClassResult<ClassJoinInfo>> join({
     required String code,
@@ -115,6 +122,11 @@ class UnconfiguredClassQuizService implements ClassQuizService {
   @override
   Future<ClassResult<ClassExport>> exportResults(String sessionId) async =>
       const ClassResult.fail(_f);
+  @override
+  Future<ClassResult<List<ClassHardDetail>>> hardestDetail(
+    String sessionId, {
+    int limit = 5,
+  }) async => const ClassResult.fail(_f);
   @override
   Future<ClassResult<ClassJoinInfo>> join({
     required String code,

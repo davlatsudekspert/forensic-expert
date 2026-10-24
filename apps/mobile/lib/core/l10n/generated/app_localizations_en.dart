@@ -10599,4 +10599,85 @@ class AppLocalizationsEn extends AppLocalizations {
   String grpCountMax(int count) {
     return 'Max $count';
   }
+
+  @override
+  String classQuestionCountAll(int n) {
+    return 'All · $n';
+  }
+
+  @override
+  String get classQuestionCountOther => 'Other';
+
+  @override
+  String classQuestionCountLimited(int n) {
+    return 'This topic has only $n questions, so larger choices are not available.';
+  }
+
+  @override
+  String get classTranslationPending =>
+      'Translation pending — original Uzbek text';
+
+  @override
+  String get classHardestOpenHint => 'Tap a question to discuss it';
+
+  @override
+  String get classDiscussTitle => 'Question discussion';
+
+  @override
+  String classDiscussPosition(int n, int total) {
+    return 'Hard question $n / $total';
+  }
+
+  @override
+  String classDiscussWrongPct(int pct) {
+    return '$pct% wrong';
+  }
+
+  @override
+  String classDiscussAnswered(int n) {
+    return '$n answers';
+  }
+
+  @override
+  String get classDiscussCorrectMark => 'Correct answer';
+
+  @override
+  String get classDiscussExplanation => 'Explanation';
+
+  @override
+  String get classDiscussNoExplanation => 'No explanation for this question.';
+
+  @override
+  String get classDiscussSource => 'Source';
+
+  @override
+  String get classDiscussPrev => 'Previous';
+
+  @override
+  String get classDiscussNext => 'Next';
+
+  @override
+  String get classDiscussUnavailable =>
+      'Details are not available right now. Showing the question text and wrong-answer share only.';
+
+  @override
+  String get classDiscussBigFont => 'Large text';
+
+  @override
+  String classDiscussPicked(int n) {
+    return '$n chose this';
+  }
+
+  @override
+  String get classDiscussClose => 'Close';
+
+  @override
+  String classLeaderCorrect(int correct, int total) {
+    return '$correct/$total correct';
+  }
+
+  @override
+  String classLeaderAvgTime(String seconds) {
+    return 'avg $seconds s';
+  }
 }

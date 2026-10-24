@@ -135,6 +135,13 @@ final classDashboardProvider = StreamProvider.autoDispose
       );
     });
 
+/// «Qiyin savollar» muhokamasi: variantlar, to‘g‘ri javob, izoh, manba
+/// (faqat ustoz, sessiya tugagach). Bir marta yuklanadi.
+final classHardestDetailProvider = FutureProvider.autoDispose
+    .family<ClassResult<List<ClassHardDetail>>, String>(
+      (ref, id) => ref.watch(classQuizServiceProvider).hardestDetail(id),
+    );
+
 /// Talaba holati: har ~2 s.
 final classStudentStateProvider = StreamProvider.autoDispose
     .family<ClassResult<ClassStudentState>, String>((ref, id) {

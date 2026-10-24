@@ -722,6 +722,54 @@ class FakeClassQuizBackend {
     );
   }
 
+  /// Server `class_hardest_detail` bilan bir xil qoidalar: faqat egasi,
+  /// faqat sessiya tugagach; laqab yo‘q, faqat savol bo‘yicha jami.
+  ClassResult<List<ClassHardDetail>> hardestDetail(
+    String user,
+    String id,
+    int limit,
+  ) {
+    final s = _owned(user, id);
+    if (s == null) return const ClassResult.fail(ClassFailure.forbidden);
+    if (s.status != ClassSessionStatus.finished) {
+      return const ClassResult.fail(ClassFailure.notFinished);
+    }
+    final out = <ClassHardDetail>[];
+    for (var i = 0; i < s.questions.length; i++) {
+      final q = s.questions[i];
+      final counts = List<int>.filled(q.options.length, 0);
+      var n = 0;
+      var ok = 0;
+      for (final p in _active(s)) {
+        final a = s.answers['${p.id}|$i'];
+        if (a == null) continue;
+        n++;
+        if (a.correct) ok++;
+        final k = q.options.indexWhere((o) => o.id == a.optionId);
+        if (k >= 0) counts[k]++;
+      }
+      if (n == 0) continue;
+      out.add(
+        ClassHardDetail(
+          index: i,
+          text: q.text,
+          options: [for (final o in q.options) o.text],
+          correctIndex: q.options.indexWhere((o) => o.id == q.correctId),
+          explanation: q.explanation,
+          source: q.source,
+          answered: n,
+          correctPct: (100 * ok / n).round(),
+          optionCounts: counts,
+        ),
+      );
+    }
+    out.sort((a, b) {
+      final c = a.correctPct.compareTo(b.correctPct);
+      return c != 0 ? c : a.index.compareTo(b.index);
+    });
+    return ClassResult.ok(out.take(limit.clamp(1, 10)).toList());
+  }
+
   ClassResult<ClassExport> export(String user, String id) {
     final s = _owned(user, id);
     if (s == null) return const ClassResult.fail(ClassFailure.forbidden);
@@ -855,6 +903,11 @@ class FakeClassQuizService implements ClassQuizService {
   @override
   Future<ClassResult<ClassExport>> exportResults(String sessionId) async =>
       backend.export(userId, sessionId);
+  @override
+  Future<ClassResult<List<ClassHardDetail>>> hardestDetail(
+    String sessionId, {
+    int limit = 5,
+  }) async => backend.hardestDetail(userId, sessionId, limit);
   @override
   Future<ClassResult<ClassJoinInfo>> join({
     required String code,

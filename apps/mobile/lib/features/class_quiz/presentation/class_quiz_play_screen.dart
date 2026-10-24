@@ -622,6 +622,22 @@ class ClassMistakeCard extends StatelessWidget {
               ],
             ),
           ],
+          if (src.isTranslationPending) ...[
+            const SizedBox(height: 2),
+            Row(
+              key: Key('class.translationPending.${item.index}'),
+              children: [
+                Icon(Icons.hourglass_empty, size: 14, color: c.textSecondary),
+                const SizedBox(width: FeSpace.xxs),
+                Flexible(
+                  child: Text(
+                    l.classTranslationPending,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                ),
+              ],
+            ),
+          ],
           if (src.isMachineTranslation) ...[
             const SizedBox(height: 2),
             Row(
