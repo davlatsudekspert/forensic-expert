@@ -277,3 +277,5 @@ Ilovada «Sinfda test» degan joy qolmaydi: jonli test — «Guruh testi (jonli)
 
 ## 2026-10-24 — Bepul sinov: 1 oy (egasi qarori)
 Free sinov muddati **30 kun** (1 oy) — har rejada; «3 oy» hech qayerda ishlatilmaydi. Bir telefon va bir akkaunt — bir marta (server `plan_claim_trial`); do‘kon intro-offer ham 1 oy.
+## 2026-10-24 — Tarjima navbati (egasi qarori)
+Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilinadi (avtomatik raqam/birlik/formula nazorati, «tekshirilmagan» belgisi), so‘ng qozoq, tojik, qirg‘iz. Ro‘yxat: `docs/ACTIVE_TASKS.md` «Navbatdagi ishlar».
