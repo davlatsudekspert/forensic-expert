@@ -27,9 +27,9 @@ on:
         description: "Upload the Play store listing graphics (icon, feature graphic, screenshots) from docs/play_store/graphics. Listing only — no track, no release."
         type: boolean
         default: false
+  # Limit va xarajatni tejash (egasi, 2026-10-24): build faqat qo'lda (workflow_dispatch)
+  # yoki versiya tegi (v*) bilan. Har push'da build YO'Q — CI (ci.yml) push'da ishlaydi.
   push:
-    branches:
-      - claude/phase-8-12-final-release
     tags:
       - "v*"
 
