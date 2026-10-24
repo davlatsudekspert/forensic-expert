@@ -130,6 +130,152 @@ final Map<String, Map<String, Object?>> sampleLessonDecks = {
             'nodes': ['So‘rilish', 'Tarqalish', 'Almashinuv', 'Chiqarilish'],
           },
         },
+        {
+          'title': 'Toksikologik tahlil bosqichlari',
+          'bullets': [
+            {
+              'text': 'Namuna: tahlil izchil bosqichlardan iborat.',
+              'source': _src,
+            },
+          ],
+          'teacher_notes': 'Har bosqichni namuna bilan tushuntiring.',
+          'diagram': {
+            'kind': 'steps',
+            'items': [
+              {
+                'title': 'Namuna olish',
+                'text': 'Ob’ekt va hajm hujjatlashtiriladi.',
+              },
+              {
+                'title': 'Ajratib olish',
+                'text': 'Moddani matritsadan ekstraksiya qilish.',
+              },
+              {
+                'title': 'Tozalash',
+                'text': 'Halaqit beruvchi aralashmalarni ketkazish.',
+              },
+              {'title': 'Aniqlash', 'text': 'Skrining va tasdiqlovchi usul.'},
+            ],
+            'caption': 'Namuna sxema',
+          },
+        },
+        {
+          'title': 'Toksikokinetika va toksikodinamika',
+          'bullets': [
+            {'text': 'Namuna: ikki yondashuvni solishtiring.', 'source': _src},
+          ],
+          'teacher_notes': '',
+          'diagram': {
+            'kind': 'compare',
+            'columns': [
+              {
+                'title': 'Toksikokinetika',
+                'items': [
+                  'Organizm moddaga nima qiladi',
+                  'So‘rilish, tarqalish',
+                  'Almashinuv, chiqarilish',
+                ],
+              },
+              {
+                'title': 'Toksikodinamika',
+                'items': [
+                  'Modda organizmga nima qiladi',
+                  'Retseptor bilan ta’sir',
+                  'Zaharli samara mexanizmi',
+                ],
+              },
+            ],
+          },
+        },
+        {
+          'title': 'Zaharlarning tasnifi',
+          'bullets': [
+            {
+              'text': 'Namuna: zaharlar ajratish usuli bo‘yicha guruhlanadi.',
+              'source': _src,
+            },
+          ],
+          'teacher_notes': '',
+          'diagram': {
+            'kind': 'tree',
+            'root': 'Zaharlar',
+            'children': [
+              {
+                'label': 'Uchuvchan',
+                'items': ['Haydash bilan ajratiladi'],
+              },
+              {
+                'label': 'Suvda eruvchan',
+                'items': ['Suv ekstrakti'],
+              },
+              {
+                'label': 'Organik erituvchida',
+                'items': ['Ekstraksiya bilan'],
+              },
+              {
+                'label': 'Metall birikmalari',
+                'items': ['Mineralizatsiya'],
+              },
+            ],
+          },
+        },
+        {
+          'title': 'Namuna ko‘rsatkichlar',
+          'bullets': [
+            {
+              'text': 'Namuna: muhim son ko‘rsatkichlari kartochkalarda.',
+              'source': _src,
+            },
+          ],
+          'teacher_notes': 'Bu qiymatlar demo uchun, haqiqiy emas.',
+          'diagram': {
+            'kind': 'facts',
+            'items': [
+              {'label': 'Namuna pH', 'value': '7,4'},
+              {'label': 'Namuna Rf', 'value': '0,52'},
+              {'label': 'Namuna cutoff', 'value': '50', 'unit': 'ng/ml'},
+              {'label': 'Namuna hajmi', 'value': '10', 'unit': 'ml'},
+            ],
+            'caption': 'Demo qiymatlar',
+          },
+        },
+        {
+          'title': 'Rangli reaksiya namunasi',
+          'bullets': [
+            {
+              'text': 'Namuna: reagent qo‘shilganda rang o‘zgaradi.',
+              'source': _src,
+            },
+          ],
+          'teacher_notes': '',
+          'diagram': {
+            'kind': 'reaction',
+            'reagents': ['Namuna eritmasi', 'Reagent A'],
+            'conditions': 'xona harorati, 2 daqiqa',
+            'products': ['Rangli kompleks'],
+            'observation': 'Eritma ko‘k rangga kiradi',
+          },
+        },
+        {
+          'title': 'Metabolizm bosqichlari sikli',
+          'bullets': [
+            {
+              'text': 'Namuna: jarayon aylanma tarzda davom etadi.',
+              'source': _src,
+            },
+          ],
+          'teacher_notes': '',
+          'diagram': {
+            'kind': 'cycle',
+            'nodes': [
+              'Qabul qilish',
+              'Biotransformatsiya',
+              'Konyugatsiya',
+              'Chiqarilish',
+            ],
+            'caption': 'Namuna sikl',
+          },
+        },
       ],
       'extras': [
         {'text': 'Namuna qiziqarli ma’lumot.', 'source': _src},

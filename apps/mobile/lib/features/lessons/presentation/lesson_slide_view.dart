@@ -5,6 +5,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/lessons/lesson_models.dart';
 import 'lesson_canvas.dart';
+import 'lesson_rich_diagram.dart';
 
 enum LessonPageKind { slide, extras, references }
 
@@ -435,6 +436,8 @@ class LessonSlideView extends StatelessWidget {
         );
         final diagram = page.diagram == null
             ? null
+            : lessonIsRichDiagram(page.diagram!.kind)
+            ? LessonRichDiagram(diagram: page.diagram!, size: body)
             : _DiagramView(diagram: page.diagram!, size: body * 0.85);
 
         final content = Column(
@@ -653,6 +656,8 @@ class _DiagramView extends StatelessWidget {
             ],
           ],
         );
+      default:
+        body = const SizedBox.shrink();
     }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
