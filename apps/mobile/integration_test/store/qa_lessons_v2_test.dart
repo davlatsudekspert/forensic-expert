@@ -111,7 +111,7 @@ void main() {
       await tester.tap(next);
       await settle(400);
       countKinds();
-      if (i % 3 == 0 || i < 4) {
+      if (i % 3 == 0 || i < 8) {
         await shot('lesson_${i.toString().padLeft(2, '0')}');
       }
     }
